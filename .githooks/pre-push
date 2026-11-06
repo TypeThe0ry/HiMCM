@@ -1,0 +1,9 @@
+#!/bin/sh
+# Local implementation of the user's instruction: push after the competition.
+release_at=1794967200
+now=$(date -u +%s)
+if [ "$now" -lt "$release_at" ]; then
+  echo 'Push deferred by project instruction until 2026-11-18 10:00 Asia/Singapore.' >&2
+  exit 1
+fi
+exit 0
