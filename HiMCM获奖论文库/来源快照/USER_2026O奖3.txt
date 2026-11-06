@@ -1,0 +1,1042 @@
+Team Control Number
+16442
+Problem Chosen
+B
+2025
+HiMCM
+Summary Sheet
+Research on Comprehensive Environmental Assessment of Sport
+Mega-Events
+As public awareness of sustainability grows, mega sporting events are facing stricter scrutiny and public
+pressure. Beyond excitement and huge economic gains, comprehensive evaluations for such events are in urgent
+need in order to strive for greener, more responsible decision making. This is especially obvious when it comes
+to the case study of Super Bowl LIX in New Orleans. Even though the NFL had taken measures to mitigate the
+environmental footprint, Super Bowl LIX still left a significant impact on the local environment.
+In this study, we primarily developed two sets of comprehensive evaluation metrics for the Super Bowl and the
+World Cup, respectively.
+Covering more than 14 contributing factors, our City Impact Evaluation Model (CIEM), which evaluates
+potential host cities for Super Bowl, is established based on 5 core indices of environmental impact: Carbon Emis-
+sion Index (CEI), Energy Consumption Index (ECI), Water Consumption Index (WCI), Air Quality Index (AQI),
+and Landfill Index (LFI). Next, we determined the weights of each index during multi-criteria decision-making
+(MCDM) by strategically combining the Analytical Hierarchy Process (AHP) and the Entropy Weight Method
+(EWM). The AHP-EWM MCDM provides an adaptable, transparent, and structured framework for weighting,
+ensuring objectivity within subjectivity while yielding a set of balanced, practical results. Finally, we utilized
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) to generate a comprehensive scoring for
+each potential host, recommending Inglewood, California, for future Super Bowl events, which has the highest
+scoring.
+To adapt CIEM to assess the eligibility of potential host countries for the World Cup, we established our
+National Impact Evaluation Model (NIEM) . NIEM encompasses 6 core indices of environmental impact: CEI
+(adapted), ECI (adapted), WCI (adapted), AQI (adapted), LFI (adapted), and a new Environmental-Industrial Index
+(EII). Similarly, NIEM employs a smart combination of both AHP and Criteria Importance Through Intercriteria
+Correlation (CRITIC) due to the interdependence between the 6 indices; the AHP-CRITIC MCDM guarantees
+transparency and objectivity within subjectivity and effectively handles the interconnections of the data. Ulti-
+mately, TOPSIS is again used to yield a composite score for each potential host country, selecting Germany with
+the highest score as the best choice for hosting future World Cup events.
+Notably, we conductedsensitivity analyses for CIEM by adjusting the AHP-to-EWM ratios and the numbers
+of participants in a Super Bowl event. First, AHP-to-EWM ratios determine which weighting method is more
+influential. By slightly fluctuating the ratio, our final scoring for the potential host cities remained approximately
+unchanged, proving CIEM to be robust and reliable. Second, the number of participants is also altered, resulting
+again in slight fluctuation in the results, further corroborating CIEM’s robustness and reliability.
+Assessing CIEM and NIEM, both integrate a relatively wide range of contributing factors that constitute
+5 and 6 indices, respectively, ensuring comprehensiveness. Moreover, both models are adaptable to a variety
+of host cities or countries. CIEM can be applied to most US states, while NIEM can be used to evaluate most
+countries across the world. Nonetheless, due to the lack of data, CIEM and NIEM are both approximation models
+based on assumptions. If enhanced with data currently unavailable, CIEM and NIEM will be considerably more
+accurate and practical.
+Keywords: Environment, sustainability, Super Bowl, the World Cup, mega-sporting event, evaluation
+Contents
+1 Introduction 3
+1.1 Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.2 Problem Restatement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+2 Assumptions with Justification 4
+3 Environmental Evaluation of Super Bowl LIX 5
+3.1 Establishment of an Environmental Footprint Framework . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+3.2 Quantitative Impact Analysis by Category . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+4 City Impact Evaluation Model (CIEM): Indices 6
+4.1 Carbon Emission Index (CEI) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+4.2 Energy Consumption Index (ECI) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+4.3 Water Consumption Index (WCI) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+4.4 Air Quality Index (AQI) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.5 Landfill Index (LFI) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+4.6 Computed City Indices Values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+5 City Impact Evaluation Model (CIEM): Weighting and Evaluation 11
+5.1 Subjective Weighting: Analytic Hierarchy Process (AHP) . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+5.2 Objective Weighting: Entropy Weight Method (EWM) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+5.3 Comprehensive Evaluation: Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) . . . 14
+5.4 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6 Sensitivity Analysis 14
+6.1 Weight parameter α sensitivity analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6.2 Number of Participants Sensitivity Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+7 National Impact Evaluation Model (NIEM) 17
+7.1 Addition and Adjustments of Indices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+7.2 Weighting . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+7.3 Comprehensive Evaluation (TOPSIS) and Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+7.4 Comparison and Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+8 NFL Host City Letter 23
+9 Strengths and Weaknesses 24
+10 AI Use Demonstration 26
+Team # 16442 Page 3 of 27
+1 Introduction
+1.1 Background
+As technology develops, an increasing amount of population is paying attention to the environmental footprint
+and sustainability behind major sporting events, trying to make the world a better place for all life. Major sporting
+events such as the Super Bowl and the World Cup generate great economic revenue, but along with great revenue,
+there are great sacrifices to the environment due to logistics, waste and energy behind the scenes. Although such
+events are made more sustainable every year, our team wants to make these events not only based on revenue,
+but also sustainability of the city held as one of the core factors to consider in planning. With this thought, we’re
+hired by Consulting Organization Making Athletics Planet positive (COMAP) , we created both the City Im-
+pact Evaluation Model (CIEM) and National Impact Evaluation model (NIEM) that assess the environmental
+footprint of the host cities and countries for the Super Bowl and the World Cup, respectively, striving for greener,
+more responsible sporting events in the years to come.
+1.2 Problem Restatement
+In this study, we aim to complete the following tasks.
+• Task 1: To analyze the environmental footprints of a specific event (Super Bowl LIX) and to identify factors
+that impact the environmental footprint of this mega sporting event by referring to existing metrics.
+• Task 2: To create a qualitative or quantitative model to determine where to hold the next Super Bowl
+based solely on environmental concerns.
+• Task 3: To apply our model in Task 2 to determine (1) which of the previously hosting cities—Inglewood
+(CA), Glendale (AZ), Las Vegas (NV), and New Orleans (LA)—should host the Super Bowl again, and
+(2) which of the three selected cities that have never hosted before represents the most sustainable and
+environmentally friendly choice.
+• Task 4: To adapt our model to assess the environmental footprint of a single-sport championship tour-
+nament (the World Cup ) and to determine the best host location while accounting for the event’s unique
+environmental challenges; to develop stratagems that minimize environmental impact during the event
+(short term) and are economically and logistically practical (long term); to compare the key environmen-
+tal factors between the Super Bowl and the single-sport championship tournament (the World Cup) and to
+provide explanations.
+• Task 5 To write a one-page persuasiveletter to the NFL committee recommending our chosen city for Super
+Bowl LXIII in 2029, emphasizing the environmental advantages of the city and its alignment with the NFL ’s
+sustainability goals.
+Team # 16442 Page 4 of 27
+Figure 1.1: Flowchart of our study
+2 Assumptions with Justification
+Assumption 1: The scale and duration of the Super Bowl are constant in all cities and all times. We assume that
+there are 80000 participants (including athletes and audiences) and a period of 3 days for simplicity[ 1].
+Justification: This makes sure that our comparison between cities is fair and consistent and that the differences in
+the model’s output are due to characteristics of the host city rather than variations in the event’s scale or duration.
+To clarify, the number of audiences for one Super Bowl event is about 70000 people, according to our research.
+Since every Super Bowl event has about the same number of audience, we simply set the maximum people in a
+Super Bowl event as 80000 people due to other faculty members and participants.
+Assumption 2: The behavior of Super Bowl participants is consistent in all cities and events.
+Justification: This makes sure the effect of the city’s infrastructures and the calculations are not affected by mul-
+tifarious personal situations.
+Assumption 3: State-level data serves as proxies for city-level environmental characteristics.
+Justification: While some variation exists within states, state-level data is considered to be comprehensive and
+standardized, which can reflect the overall environmental characteristics of the host city.
+Assumption 4: Environmental policies remain stable from 2020 to 2029, and all urban infrastructure systems
+function normally without disruptions during the event.
+Justification: This ensures that the model assesses cities based on their existing environmental governance and
+typical infrastructures, rather than being influenced by unpredictable policy changes or infrastructure failures.
+Team # 16442 Page 5 of 27
+Assumption 5: The number of audiences for a World Cup event is about 3.5 × 106[5]. The number of audi-
+ences per venue is about 6 × 104. We assume that this is the case for all World Cup events.
+Justification: These estimations are based on historical attendance data and therefore reflect a typical number of
+participants during a World Cup event. Moreover, while the actual number may deviate slightly from the assumed
+value, these estimations allows us to yield practical evaluation for different host countries.
+Assumption 6: Super Bowl LIX held in New Orleans generated a considerably low amount of landfill waste,
+making it suitable to be an ideal reference when calculating the Landfill Index (LFI).
+Justification: Super Bowl LIX took several measures to minimize landfill build-up. Indeed, it aims to divert ’at
+least 90% of waste from landfills’[ 6].
+3 Environmental Evaluation of Super Bowl LIX
+3.1 Establishment of an Environmental Footprint Framework
+Through thorough research, we have dissected the environmental impact of Super Bowl LIX into five core
+components: Carbon emissions, energy consumption, water impact, air quality, and landfill. Notably, these
+components are each based on existing metrics or evaluations.
+3.2 Quantitative Impact Analysis by Category
+• Carbon Emissions: Carbon emissions are arguably one of the major concerns when it comes to environ-
+mental impact assessment. BioMed Central (BMC), a global authority in scientific publishing, defines the
+metric carbon footprint reduction index (CaFRI) as ”a comprehensive greenness assessment tool prioritiz-
+ing carbon footprint as the primary environmental impact”[ 9], highlighting the significance of measuring
+carbon emission. Throughout our research, we roughly estimated the carbon emissions in New Orleans by
+looking at carbon emissions per capita in Louisiana[ 4]. Since there are 65,719 offline audiences, the carbon
+dioxide emission of Super Bowl LIX was about 21,660 tons[18].
+• Energy Consumption: Energy consumption, especially electricity consumption, ”is at the heart of modern
+economies” [ 8], meaning that energy consumption is also a key factor that influences the environmental
+impact of Super Bowl LIX. Looking at energy consumption per capita in Louisiana[3], we roughly estimated
+the total energy consumption to be 491,176,000,000 British thermal units (Btu)
+• Water Footprint: Water consumption also plays a crucial role when it comes to assessing the environmental
+impact of mega sporting events. ”Outdoor sports facilities use millions of gallons of water, putting pressure
+on local water supplies, as well as using hazardous pesticides can pollute soil and contaminate run-off into
+the water, threatening employees, players, and animals”[ 11]. Due to the scarcity of online data resources,
+we first used AI to conduct the estimation (we will utilize a different way to estimate when constructing our
+model). Considering drinking and restroom usage of the participants during Super Bowl LIX, we roughly
+estimated the water consumption to be about 4 million litres.
+• Air Quality: Air quality and pollution are considerably influential when assessing mega sporting events.
+According to a study on Super Bowl, ”significantly higher levels of pollution are observed on Super Bowl
+Sunday”[12][17] ”millions dying each year from exposure to and the side effects of air pollutants”. Based
+on a specific study towards the AQI caused by NFL stadiums. It points out that ozone increases significantly
+with more audiences. According to a study, the maximum AQI of an NFL event reaches 187, which is
+considerably severe for the local environment[17].
+• Landfill: The immense waste generated by mega-sporting events like the Super Bowl has a large impact
+on the environment. Landfills not only cause havoc on natural ecosystems, leading to water contamination,
+soil pollution, and air pollution, it also leads to the emission of methane, a greenhouse gas. By research,
+around 2,000 tons of food waste is generated at Super Bowl parties. Even though the proportion of landfill
+for Super Bowl LIX is just below 10%, this number is still considerably large for the amount of total trash
+produced for the state[20].
+Team # 16442 Page 6 of 27
+4 City Impact Evaluation Model (CIEM): Indices
+Symbol Description Unit
+Ai State area km2
+AQIi Air quality index in each state N/A
+ci State carbon emission per capita (per day) tCO 2e
+ei Average residential energy consumption per capita (per day) Btu
+L Total landfill generated by a single Super Bowl event kg
+pi State population N/A
+pt Total US population N/A
+ri Proportion of renewable energy (vs non-renewable) %
+ti Temperature of the host state/city in February ◦F
+T c
+i Carbon emission by transportation per capita (per day) tCO 2e
+T e
+i Average energy consumption by transportation per capita (per day) Btu
+Wci Water consumption per capita in the host city t
+Ws Total US water supply t
+Table 4.1: Symbols, Descriptions, and Units
+To perform a comprehensive evaluation for each potential host city, we established 5 key indices that measure
+5 core aspects of environmental impact: Carbon Emission Index (CEI), Energy Consumption Index (ECI),
+Water Consumption Index (WCI), Air Quality Index (AQI), and Landfill Index (LFI) . Notably, all 5 indices
+are cost-type (i.e., smaller values are more preferable).
+4.1 Carbon Emission Index (CEI)
+Carbon Emission Index (CEI) indicates the impact of carbon emission to the state. According to research,
+transportation accounts for 15% of anthropogenic greenhouse gas emissions[ 7]. Therefore, other than carbon
+emission per capita , we decided to add the effect of transportation to the calculation of CEI as well. Hence,
+CEI is calculated by the following formula:
+ICi =
+( |ti−tcomf ort|
+tmax−tmin
++ 1) × 80000 × ci + ϵ × 80000 × T c
+i
+(pi + 80000)/Ai
+(4.1)
+Where IC is the CEI.
+Notably,ti is the temperature of the state in February;tcomf ort is a constant that represents the most comfortable
+temperature for human body and has the value of 77 degrees Fahrenheit[ 10]; tmax and tmin refer to the maximum
+and minimum temperature in February, respectively. Since greater deviation from the comfort temperature of 77
+degrees F leads to the use of air conditioning or heating systems that release carbon dioxide either directly
+or indirectly, temperature also influences CEI of a city (e.g., greater difference between actual temperature ti and
+the most comfortable temperature tcomf ort results in greater carbon emission). The addition of 1 prevents IC from
+becoming 0 because of the city having the most comfortable temperature.
+Additionally, pi refers to the population of the state, and ci represents carbon emission by residents per day.
+The product of the two quantities aforesaid indicates, thus, the total emission of carbon by residents .
+Beyond that, ϵ is the quotient of the number of transportation divided by the number of audience, which is
+essentially a per-capita transport intensity (i.e., the number of transport units required per audience member).
+Thus, the product of ϵ, number of participants (80000), and average carbon emission by transportation per capita
+(T c
+i ) gives us the overall transport-related carbon footprint of all audiences.
+To obtain the coefficient of ϵ, we took the reciprocal of the average vehicle occupancy rate, which is about 3.0.
+Consequently:
+ϵ ≈ 0.33
+Team # 16442 Page 7 of 27
+Together, the numerator of the fraction on the right hand side represents the total carbon emission by the event.
+Dividing the numerator by population density ( total number of people within the state , which is the sum of the
+state population, pi, and the number of participants, 80000, over thearea of the state, the fraction would be spatial
+carbon intensity per person (i.e., how much carbon emission is associated with each unit area per person).
+To normalize the CEI and obtain S1, we subtract the sample minimum from IC and divide the difference
+aforesaid by the interquartile range, expressed as follows:
+S1 = ICi − ICmin
+IQR C
+(4.2)
+4.2 Energy Consumption Index (ECI)
+In order to measure the impact of Super Bowl on local areas, we looked at two types of energy consumption:
+annual energy consumption per capita and average energy consumption by transportation per capita. Additionally,
+we looked at the use of renewable energy in each state. The equation that calculates the Energy Consumption
+Index (ECI), which means the impact of energy consumption, is as follows:
+IEi = 80000 × ei × β + ϵ × 80000 × T e
+i
+ri
+(4.3)
+Here, ei is the annual residential energy consumption per capita, and β is a coefficient that measures how much
+more energy each person consumes during the Super Bowl session. Estimating based on data from previous major
+sporting events:
+β ≈ 0.46
+Therefore, the product of the number of participants (80,000), ei, and β gives us the total residential energy
+consumption by the participants.
+Similar to T c
+i in the carbon emission index, T e
+i refers to the average energy consumption by transportation
+per capita. ϵ, as mentioned above, is the per-capita transport intensity. Thus, the product of ϵ, the number of
+participants (80,000), and T c
+i gives the total energy consumption from transportation by the participants.
+ri represents the proportion of renewable energy within the state relative to non-renewable energy. By making
+ri the denominator, we aim to convey the idea that it is a benefit-type indicator. The greater the value of ri, the
+smaller the value of IE, indicating a more sustainable use of energy.
+Again, normalizing IE, we obtained S2:
+S2 = IEi − IEmin
+IQR E
+(4.4)
+Team # 16442 Page 8 of 27
+Figure 4.1: Energy cost due to transportation in the US
+The trend of transportation consumption in each state indicates that the increment of energy consumption due
+to transportation is decreasing with time. Therefore, we take the logarithm of the value for transportation of
+energy consumption to perform the linear regression.
+4.3 Water Consumption Index (WCI)
+Formulating IW , the Water Consumption Index (WCI), we incorporated three core factors into our equation:
+IW i = (80000 × γ + pi)Wci
+logAi
+× 1
+Ws × pi
+pt
+× 1
+pi × Wci
+(4.5)
+In a nutshell, we considered three core factors that influence the WCI: the total water consumption during a
+Super Bowl event per unit area within the state (the first fraction), the total water supply by the state (the second
+fraction), and the usual water consumption within the state (the third fraction).
+First, humans, irrespective of whether they are athletes or audiences, willconsume more water during a Super
+Bowl event. To elaborate, athletes consume more water because of intense physical activities, while audiences
+consume slightly more water because of emotional arousal (such as excitement, tension, or cheering). Interestingly,
+according to our research, athletes will consume about 2 to 3 times more water than usual during exercise, while
+audiences will consume about 1.33 times more water than usual when watching a sport[ 2][13]. Therefore, we
+established the constant γ, representing a water-consumption multiplier that shows how many times more water,
+on average, a participant uses during the event compared to their normal usage. Based on the information aforesaid
+about additional water consumption during a sporting event, we calculated gamma to be:
+γ ≈ 1.35
+The product of the number of participants (80000) and γ is thus the total water need by the sporting event .
+This sum of this value and the state population (pi) gives the total water need within the state. Multiplying the total
+water need by state water consumption per capita ( Wci), subsequently, gives the total water consumption within
+the state.
+As the area of each state is too vast and therefore is inconvenient for calculation , we take the logarithm
+of the state area ( logAi). Together, total water consumption within the state over the area gives the total water
+consumption during a Super Bowl event per unit area within the state .
+Second, we were unable to procure any data about the water supply within each state. Solving this issue, we
+used a fraction of the state population over the US population ( pi
+pt
+) to estimate the water supply needed by each
+Team # 16442 Page 9 of 27
+state. Multiplying the total water supply within the US ( Ws) by the fraction, consequently estimates the water
+supply within each state . This is the denominator, which shows that Ws × pi
+pt
+is a cost-type variable (i.e., the
+greater the water supply within the state, the smaller the WCI, which is a cost-type index as mentioned above)
+Third, the product of the state population ( pi) and the state water consumption per capita ( Wci) gives the total
+water consumption within the state . pi × Wci is a benefit-type variable, as states with higher baseline water
+consumption would be less impacted by additional water use during a Super Bowl event. Therefore, pi × Wci is
+set to be the denominator (i.e., the greater the total water consumption within the state, the smaller the WCI).
+Interestingly, the Wci can be directly canceled out from the equation, as state water consumption per capita
+data is not available online.
+Similarly, we obtained our third index ( S3) by normalizing WCI with the same method:
+S3 = IW i − IW min
+IQR W
+(4.6)
+Figure 4.2: Water consumption in the US, 2010[ 15]
+4.4 Air Quality Index (AQI)
+AQI is an index that picks the pollutant with largest impact to the air quality. The formula for calculating
+AQI is:
+AQI = max(IAQI 1, IAQI 2, IAQI 3, IAQI 4, ... ) (4.7)
+Where IAQI i stands for the air quality index of individual pollutants; the formula for IAQI i is:
+IAQI i = IAQI Hi − IAQI Lo
+BPHi − BPLo
+× (Ci − BPLo) + IAQI Lo (4.8)
+Here, Ci is the concentration measurement value of pollutant i; BPHi is the concentration limit higher than
+Ci; BPLo is the concentration limit lower than Ci in the chart; IAQI Hi is the IAQI value corresponding to
+BPHi;IAQI Lo is the IAQI value corresponding to BPLo.
+Here, we picked two substances with the most impact on AQI: ozone and PM2.5
+Notably, the overall trend of PM2.5 is decreasing, and the trend of ozone level remains constant. Therefore,
+the ozone level is presumably the highest compared to other air pollutant levels, including the level of PM2.5,
+in 2029, and therefore we will use the predicted ozone level in 2029 to calculate the AQI for each potential host
+city[17].
+Finally, we used the same method to normalize the AQI:
+Team # 16442 Page 10 of 27
+Figure 4.3: Ozone and PM2.5 Design value trends
+S4 = AQIi − AQImin
+IQR AQI
+(4.9)
+4.5 Landfill Index (LFI)
+To assess the landfill or waste generated by a Super Bowl event in a potential host city, we first looked at the
+amount of waste generated by a Super Bowl event and the state area. Additionally, we took Super Bowl LIX in
+New Orleans, which has a relatively low landfill, as a reference.
+IRi = L
+logAi
+× (eth
+i − N eth)2 (4.10)
+Here, L refers to the total landfill generated by a Super Bowl event, A the state area. Similar to WCI, we took
+the logarithm of the state area ( Ai), as the area of each state is too vast and therefore inconvenient for calculation.
+Together, the first fraction represents the landfill or waste per unit area . Again, this is a cost-type variable (i.e.,
+the greater the landfill per unit area, the greater the LFI, which is a cost-type index).
+Moreover,eth represents the environmental quality index, with a low eth representing a higher environmental
+quality, ranging from 0 to 1. By measuring the distance of the environmental quality index of other potential
+host cities from that of Super Bowl LIX in New Orleans ( N eth), we obtained a relative assessment of them.
+Again, we employed the same method for normalization:
+S5 = IRi − IRmin
+IQR R
+(4.11)
+Figure 4.4: Overall Environmental Quality Index by County 2006-2010[ 14]
+Team # 16442 Page 11 of 27
+On the graph, it is shown clearly how the environment varies across the US, demonstrating that eth is a signif-
+icant component of LFI.
+4.6 Computed City Indices Values
+Linear Regression Fitting Process
+n data points are given as (xi, yi), where i = 1, 2, . . . , n.
+1. Compute Means
+¯x = 1
+n
+n∑
+i=1
+xi, ¯y = 1
+n
+n∑
+i=1
+yi (4.12)
+2. Compute Sums of Squares
+Sxx =
+n∑
+i=1
+(xi − ¯x)2, S xy =
+n∑
+i=1
+(xi − ¯x)(yi − ¯y) (4.13)
+3. Calculate Regression Coeﬀicients
+b = Sxy
+Sxx
+, a = ¯y − b¯x (4.14)
+4. Obtain Fitted Linear Equation
+y = a + bx (4.15)
+5. Prediction for Future Value For a future xfuture:
+ypredicted = a + b · xfuture (4.16)
+Values Exhibition
+After predicting the required data for 2029, we obtained the five indices ( S1 to S5) for each of the seven cities.
+For each index, the values across the seven cities were normalized within that index . To make all 35 values
+directly comparable, nonetheless, we need to perform a global normalization across all indices and cities. The
+globally normalized data are as follows:
+Table 4.2: Normalized Values for Selected Cities
+Inglewood Glendale Las Vegas New Orleans Nashville Charlotte Chicago
+S1 0 0.036 0.178 0.416 0.128 0.059 0.453
+S2 0 0.295 0.098 0.498 0.345 0.178 0.095
+S3 0 0.395 0.792 0.975 1 0.692 0.555
+S4 0.702 0.372 0.132 0.122 0.145 0 0.278
+S5 0.228 0 0.236 0 0.258 0.884 0.25
+5 City Impact Evaluation Model (CIEM): Weighting and Evaluation
+Four cities that have hosted, which include Inglewood (CA), Glendale (AZ), Las Vegas (NV), and New
+Orleans (LA), and three NFL cities that have never hosted, which include Nashville (TN), Charlotte (NC), and
+Chicago (IL), were chosen to be assessed.
+After establishing and calculating the 5 indices (the 5 variables) of the 7 cities, we determined the weights of
+each by a strategic combination of Analytic Hierarchy Process (AHP) and Entropy Weight Method (EWM).
+5.1 Subjective Weighting: Analytic Hierarchy Process (AHP)
+The AHP decomposes the decision problem into a hierarchy and evaluates subjectively through pairwise
+comparisons, thereby calculating the weights of each indicator.
+Team # 16442 Page 12 of 27
+Judgment Matrix Construction
+Based on our subjective evaluations, we constructed the following judgment matrix for the five environmental
+indicators using the standard 1-9 scale:
+A =
+
+
+1 3 5 7 9
+1/3 1 3 5 7
+1/5 1/3 1 3 5
+1/7 1/5 1/3 1 3
+1/9 1/7 1/5 1/3 1
+
+
+(5.1)
+Indicator order: S1, S2, S3, S4, S5
+Rationale of the judgment matrix:
+Carbon emissions are weighted highest due to theirglobal climate impact and long-term irreversible effects.
+Energy consumption follows as it directly drives carbon emissions. Water resources rank third because it is more
+regional, rather than global. While air quality and landfill management address more localized environmental
+concerns, so they are assigned with least importance.
+Weight Calculation
+The normalized weights are calculated using the geometric mean method:
+wi = Mi∑
+i Mi
+, where Mi =
+( 5∏
+j=1
+aij
+)1/5
+(5.2)
+The resulting set of weights is as follows:
+Ws = [0.509, 0.264, 0.130, 0.064, 0.033]T (5.3)
+Verification: 0.509 + 0.264 + 0.130 + 0.064 + 0.033 = 1 .000
+Consistency Check
+Maximum eigenvalue: λmax = 5.141
+Consistency Index: CI = 0.036
+Consistency Ratio: CR = CI
+RI = 0.031 (where RI = 1.12 for n=5)
+Since CR = 0.031 < 0.10, the judgment matrix passes the consistency check.
+5.2 Objective Weighting: Entropy Weight Method (EWM)
+The EWM determines weights based on the information content of the data, which is objective. An indicator
+with greater data variability is assigned a higher weight.
+Data Preparation and Normalization
+Using the normalized scores S1 to S5 and applying cost-type indicator normalization:
+rij = max(xj) − xij
+max(xj) − min(xj) (5.4)
+Entropy Weight Calculation
+The normalized benefit-type matrix R is first converted to a proportion matrix P , where each element pij
+represents the proportion of the j-th indicator for the i-th city:
+Team # 16442 Page 13 of 27
+pij = rij
+∑7
+i=1 rij
+(5.5)
+The entropy weights are then calculated as follows:
+wj = 1 − ej
+∑5
+j=1(1 − ej)
+, where ej = −k
+7∑
+i=1
+pij ln(pij), k = 1/ ln(7) (5.6)
+Final EWM weights: Wo = [0.224, 0.159, 0.215, 0.148, 0.253]T
+Verification: 0.224 + 0.159 + 0.215 + 0.148 + 0.253 = 0 .999 ≈ 1.000
+EWM Calculation Results
+Table 5.1: Entropy Weights Calculation Results
+Indicator Entropy Value (ej) Difference (1 − ej) Entropy Weight (wj) Rank
+Carbon Emission Index ( S1) 0.782 0.218 0.224 2
+Energy Consumption Index (S2) 0.845 0.155 0.159 4
+Water Consumption Index (S3) 0.791 0.209 0.215 3
+AQI Index (S4) 0.856 0.144 0.148 5
+Landfill Index (S5) 0.754 0.246 0.253 1
+Total 4.028 0.972 0.999
+Strategic AHP-EWM Combination
+We combine the subjective AHP weights (Ws) and objective EWM weights (Wo) in a linear fashion:
+Wc = αWs + (1 − α)Wo, α = 0.6 (5.7)
+We set the value of α to be 0.6 (60%), meaning that Ws, the subjective AHP, is slightly more important than
+Wo, the objective EWM, because we deemed our research- and experience-based insights to have greater practical
+value.
+Table 5.2: Final Combined Weights Calculation
+Indicator AHP Weight EWM Weight Combined Weight Rank
+(Ws) (Wo) (Wc)
+CEI (S1) 0.509 0.224 0.390 1
+ECI (S2) 0.264 0.159 0.222 2
+WCI (S3 0.130 0.215 0.164 3
+AQI (S4)) 0.064 0.148 0.098 5
+LFI (S5) 0.033 0.253 0.126 4
+Total 1.000 0.999 1.000
+Verification of Combined Weights: 0.390 + 0.222 + 0.164 + 0.098 + 0.126 = 1 .000
+Team # 16442 Page 14 of 27
+Figure 5.1: Sankey Diagram of Weight Distribution across Methods
+The final weights provide a balanced assessment that incorporates both subjective judgment from AHP and
+data-driven calculation from EWM, with CEI (0.390) and ECI (0.222) being the most important factors for envi-
+ronmental sustainability evaluation.
+5.3 Comprehensive Evaluation: Technique for Order Preference by Similarity to Ideal
+Solution (TOPSIS)
+The Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) was employed to holistically
+assess the potential host cities based on the five key indices.
+First, we performed vector normalization for the 35 values (7 cities, 5 indices for each), with the 35 new
+values calculated by the following equation:
+x∗
+ij = xij√∑
+i x2
+ij
+(5.8)
+Then, in addition to our established weights, we established our Positive Ideal Solution (PIS) and Negative
+Ideal Solution (NIS) :
+wj = (w1, w2, w3, w4, w5) = (0 .390, 0.222, 0.164, 0.098, 0.126)
+P IS = (a1, a2, a3, a4, a5) = (0 , 0, 0, 0, 0)
+N IS = (b1, b2, b3, b4, b5) = (0 .689539, 0.701056, 0.532829, 0.804313, 0.876241)
+The score of each city, subsequently, was calculated by:
+si =
+√∑
+j(x∗
+ijwj − bj)2
+√∑
+j(x∗
+ijwj − bj)2 +
+√∑
+j(x∗
+ijwj − aj)2
+(5.9)
+5.4 Results
+The results are shown in Table 5.3: This shows that Inglewood, California, is the most suitable location to host
+Super Bowl LXIII due to its leading TOPSIS score of 0.7038 out of all seven cities and its exceptional performance
+in carbon emission, energy use, and water consumption .
+6 Sensitivity Analysis
+6.1 Weight parameter α sensitivity analysis
+The weight parameter α balances the subjective AHP weights and objective EWM weights in our weight
+combination process. The combined weights are given by:
+Team # 16442 Page 15 of 27
+Table 5.3: Environmental Impact Scores of Selected Cities
+City Score
+Inglewood (CA) 0.7038
+Glendale (AZ) 0.6842
+Las Vegas (NV) 0.6446
+Charlotte (NC) 0.5770
+Nashville (TN) 0.5551
+Chicago (IL) 0.4545
+New Orleans (LA) 0.4021
+Wc = αWs + (1 − α)Wo (6.1)
+where α ∈ [0, 1]. A higher α emphasizes AHP, while a lower α emphasizes EWM.
+Variation of α
+We calculate the combined weights for different values of α: 0.5, 0.6, 0.7, and 0.8. Using the previously
+calculated Ws and Wo, the combined weights Wc are as follows:
+Table 6.1: Combined Weights for Different α Values
+Indicator α = 0.5 α = 0.6 α = 0.7 α = 0.8
+Carbon Emission Index 0.367 0.390 0.413 0.436
+Energy Consumption Index 0.212 0.222 0.232 0.242
+Water Consumption Index 0.173 0.164 0.156 0.148
+AQI Index 0.106 0.098 0.090 0.082
+Landfill Index 0.143 0.126 0.109 0.092
+Total 1.001 1.000 1.000 1.000
+Impact on City Scores and Rankings
+We recomputed the TOPSIS scores for each α value using the corresponding combined weights:
+Table 6.2: TOPSIS Scores and Rankings for Different α Values
+City α = 0.5 α = 0.6 α = 0.7 α = 0.8
+Score Rank Score Rank Score Rank Score Rank
+Inglewood (CA) 0.695 1 0.704 1 0.712 1 0.720 1
+Glendale (AZ) 0.677 2 0.684 2 0.691 2 0.698 2
+Las Vegas (NV) 0.649 3 0.645 3 0.640 3 0.635 3
+Charlotte (NC) 0.580 4 0.577 4 0.574 4 0.571 4
+Nashville (TN) 0.558 5 0.555 5 0.552 5 0.549 5
+Chicago (IL) 0.458 6 0.455 6 0.451 6 0.447 6
+New Orleans (LA) 0.405 7 0.402 7 0.398 7 0.394 7
+Team # 16442 Page 16 of 27
+Figure 6.1: Weights heatmap
+ Figure 6.2: Ranking stability
+Figure 6.3: City Score Trends Across Different Al-
+pha Values
+Figure 6.4: Percentage Score Changes Relative to
+Baseline
+Analysis of Sensitivity Results
+Figure 6.1 and in Figure 6.3 indicates and illustrates that as α increases, AHP weights more in the combined
+weight, which cities with better performance on the high-priority AHP indicators (Inglewood and Glandale) show
+slight score improvements, while others show a slight decrease in score. As shown in Figure 6.4, the maximum
+score variation between different values α is 0.016 (Inglewood), representing only 3.6% relative change from
+baseline. The relative ranking of all seven cities remains completely unchanged across all α values, as shown in
+Figure 6.2.
+6.2 Number of Participants Sensitivity Analysis
+To further validate the robustness of our model, we conducted sensitivity analysis on the ”Participant Number”
+parameter, which was initially set at 80,000. We tested variations of ±10% to assess how changes in attendance
+affect the environmental impact scores and city rankings.
+Methodology
+We modified the audience parameter N in our environmental impact formulas and the key formulas affected
+by this parameter are:
+• Carbon Emission Index: IC ∝ N × ci + ϵ × N × T c
+i
+• Energy Consumption Index: IEi ∝ N × ei × β + ϵ × N × T e
+i
+• Water Consumption Index: IW ∝ N × γ + pi
+Team # 16442 Page 17 of 27
+Results
+Table 6.3: City Scores under Different Audience Scenarios
+City -10% Base +10% Rank (-10%) Rank (Base) Rank (+10%)
+(72,000) (80,000) (88,000)
+Inglewood (CA) 0.7012 0.7038 0.7063 1 1 1
+Glendale (AZ) 0.6815 0.6842 0.6868 2 2 2
+Las Vegas (NV) 0.6421 0.6446 0.6470 3 3 3
+Charlotte (NC) 0.5753 0.5770 0.5786 4 4 4
+Nashville (TN) 0.5532 0.5551 0.5569 5 5 5
+Chicago (IL) 0.4528 0.4545 0.4561 6 6 6
+New Orleans (LA) 0.4004 0.4021 0.4037 7 7 7
+Figure 6.5: City Score Trends
+ Figure 6.6: Sensitivity Coefficients
+Analysis of Sensitivity Results
+The relative ranking remains completely unchanged, demonstrating high robustness. The maximum absolute
+variation is 0.0051 (Inglewood), representing only 0.72% relative change from baseline. All sensitivity coefficients
+are below 4.1% (average 3.6%), confirms model stability.
+Sensitivity Analysis Conclusion
+This shows the stability of our results under weight variations and participant number variation, which provides
+strong evidence for the reliability of our host city recommendations. Table 6.2 and Table 6.3 clearly shows that
+Inglewood maintains its top position across all weighting scenarios, reinforcing our confidence in selecting it as
+the most environmentally sustainable choice for Super Bowl 2029.
+7 National Impact Evaluation Model (NIEM)
+Overview
+The National Impact Evaluation Model (NIEM) evaluates the environmental impact of potential host coun-
+tries for the World Cup, a single-sport championship tournament.
+The World Cup is usually hosted by a single country, which is arguably similar to the Super Bowl. Unlike
+the Super Bowl, which is a single-day event in a specific stadium, nevertheless, the World Cup is a month-long
+tournament held in several different places within the country .
+Therefore, to assess the environmental sustainability of potential host cities for the World Cup, we expanded the
+City Impact Evaluation Model (CIEM) and developed National Impact Evaluation Model (NIEM), a specialized
+evaluation model for the World Cup host countries.
+Team # 16442 Page 18 of 27
+When applying our model to potential host countries, we decided to pick 7 countries that have hosted the World
+Cup before: Qatar, Russia, Brazil, The Republic of South Africa, Germany, South Korea, and Japan .
+Notably, NIEM is essentially an extended CIEM. Specifically, we adjusted the 5 indices from CIEM and
+added a new index. Afterwards, instead of utilizing the combination of Analytical Hierarchy Process (AHP) and
+Entropy Weight Method (EWM), we melded AHP with CRiteria Importance Through Intercriteria Corre-
+lation (CRITIC) to better handle the textbfinterdependence between the indices while still ensuring objectivity
+within subjectivity. Subsequently, we employed TOPSIS again to yield a comprehensive rating for each of the
+potential host countries.
+7.1 Addition and Adjustments of Indices
+Added: Environmental-Industrial Index (EII)
+Different countries have varying degrees of industrialization, meaning they have different potentials in handling
+environmental issues. In CIEM, since all the research is based on the states in the US, the extent of industrialization
+is likely to be constant for all states. However, as we have to apply the model towards countries that have different
+degrees of industrialization from the world, an Environmental-Industrial Index (EII) is required to enhance
+NIEM’s comprehensiveness.
+Essentially, EII is a benefit-type index that exhibits the interconnection between the natural environment
+and industrial environment within a country, we first referred to Environmental Performance Index (EPI), which
+is a comprehensive rating available for most countries across the world based on their environmental performance,
+as an benefit-type indicator. Additionally, we incorporated an industrial indicator by looking at different industrial
+sectors’ total economic values within the country.
+II = EP Ii − EP Imin
+EP Imax − EP Imin
+× ii (7.1)
+Where ii represents the extent of industrialization within the country.
+ii = V alueU SD(C)
+V alueU SD(B) + V alueU SD(C) + V alueU SD(D) + V alueU SD(E) (7.2)
+Here, V alueU SD(B), V alueU SD(C), V alueU SD(D), and V alueU SD(E) refer to the total economic
+value of mining and quarrying; total manufacturing; electricity, gas, steam, and air conditioning; and water
+supply, sewerage, and waste management, respectively.
+Arguably, V alueU SD(C), as part of the industrial indicator, partially reflects how well a country can regulate
+its natural environment. Specifically, as the total economic value of manufacturing within a country increases, the
+country will have better technology and thereby regulating its natural environment more efficiently. Therefore, we
+put V alueU SD(C) on the numerator, indicating that it is a benefit-type variable.
+S6 = ILmax − ILi
+ILmax − ILmin
+(7.3)
+Adjusted: Carbon Emission Index (CEI)
+The adjusted CEI is shown as follows:
+ICi =
+( |ti−tcomf ort|
+tmax−tmin
++ 0.5) × (ci × pi + cw × pw)
+(pi + pw) × ( ξi−ξmin
+ξmax−ξmin
++ 0.5) × ( Ai−Amin
+Amax−Amin
++ 1) (7.4)
+Where ξi represents the quality of water in the country; ci represents the combination of carbon emission
+caused by residents and transportation.
+Team # 16442 Page 19 of 27
+Essentially, we added the effect of other country-specific factors into the formula. Notably, we did not use
+spatial carbon intensity per person in this formula; instead, we turned the area of the country into an insignificant
+factor by normalizing it.
+Adjusted: Energy Consumption Index (ECI)
+IEi =
+( |ti−tcomf ort|
+tmax−tmin
++ 0.5) × (pi × ei + pw × ew)
+(pi + pw) × ri × ( ξi−ξmin
+ξmax−ξmin
++ 0.5) × ( υi−υmin
+υmax−υmin
++ 1) (7.5)
+Where υi represents the energy generated by wind.
+Adjusted: Water Consumption Index
+IW i = Wci + Wcw
+( ηi−ηmin
+ηmax−ηmin
++ 1) × ( ξi−ξmin
+ξmax−ξmin
++ 1) × Wsi × ( pi−pmin
+pmax−pmin
++ 1) (7.6)
+The availability of data enables us to enhance NIEM’s reliability and accuracy.
+Here, ηi represents the availability of water in the country. We have also changed the meanings of the symbols:
+Wci refers to the total water consumed in a country;Wsi is the total water supply in a country; andWw is the average
+total water consumed in World Cup session.
+Adjusted: AQI Index
+IAQIi = (AQIi − AQIs)2 + 0.5
+( ιi−ιmin
+ιmax−ιmin
++ 1) (7.7)
+Where, ι represents the average wind speed within the country, and AQIs represents the standard AQI for
+us to perform the calculation, which we took 100 as the standard AQI value, considering the industrialization
+requirement.
+Comparing to the CIEM, there are certain changes. Specifically, we calculated the distance from each country’s
+AQI to the standard AQI, and w used the average wind speed within the country for calculation.
+Adjusted: Landfill index
+ILi =
+Lw × ( 3.5×106−pmin
+pmax−pmin
++ 1) + Li × ( pi−pmin
+pmax−pmin
++ 1) × 32
+EP Ii × logAi
+(7.8)
+Here, Lw represents the amount of trash and waste created per audience during a World Cup session;Rp represents
+the range of population within the dataset.
+Normalization
+Similarly, we used the same method in CIEM to normalize the 6 indices, obtaining Si for each country:
+Si = Ii − Imin
+IQR (7.9)
+Results of the Normalized Indices
+After predicting the required data for 2029, we obtained the six indices (S1 to S5) for each of the seven counties
+that are suitable for hosting the World Cup. The normalized data are as follows:
+Team # 16442 Page 20 of 27
+Table 7.1: Normalized Values for Selected Countries
+Germany Japan Brazil South Korea Russia South Africa Qatar
+S1 0.0000 0.1350 1.1342 0.1920 1.0662 0.3858 1.2250
+S2 0.0030 0.0000 0.0691 0.0150 0.5075 1.0000 0.2402
+S3 0.2263 0.3583 0.9585 0.1508 1.0000 0.2860 0.0000
+S4 0.0000 0.1182 0.6959 0.8946 0.4324 0.4155 1.0000
+S5 0.0000 2.2061 1.5000 1.7227 0.9939 2.0789 0.7227
+S6 1.0000 0.7321 0.5796 0.5415 0.2780 0.1693 0.1000
+7.2 Weighting
+Analytical Hierarchy Process (AHP)
+Considering the global characteristics of World Cup events, we constructed the following judgment matrix for
+the six indicators:
+A =
+
+
+1 3 5 7 9 4
+1/3 1 3 5 7 2
+1/5 1/3 1 3 5 1/2
+1/7 1/5 1/3 1 3 1/4
+1/9 1/7 1/5 1/3 1 1/6
+1/4 1/2 2 4 6 1
+
+
+(7.10)
+Indicator order: S1, S2, S3, S4, S5, S6
+Rationale of the judgment matrix:
+Carbon emissions and Energy consumption remain the highest priority due to their long term and irreversible
+global climate impacts. The new EII ranks third as it reflects comprehensive national environmental gover-
+nance. Water resources and air quality address more regional concerns, while landfill management has the most
+localized impact, so they were less prioritized.
+Weight Calculation
+The normalized weights are calculated using:
+wi = Mi∑
+i Mi
+, where Mi =
+( 6∏
+j=1
+aij
+)1/6
+(7.11)
+Resulting weights:
+Ws = [0.430, 0.229, 0.103, 0.057, 0.032, 0.148]T (7.12)
+Consistency Check: CR = CI
+RI = 0.029
+Since CR = 0.029 < 0.10, the judgment matrix passes the consistency check.
+Criteria Importance Through Intercriteria Correlation (CRITIC)
+Our 6 new, adjusted indices from NIEM are arguably more interconnected with each other than the 5 indices
+from CIEM. For instance, the EII and the LFI share the variable EPI together. Therefore, we considered the best
+way to handle such interdependence to be the use of the CRITIC method. Fittingly, CRITIC decides weights based
+on both variability (measured by standard deviation) and interdependence (measured by Pearson Correlation
+Coefficient), meaning that, other than measuring interdependence, it actually ’encompasses’ EWM as well.
+First, we utilized max-min scaling to normalize all 42 cost-type values (6 indices value for each of the 7
+different countries):
+Team # 16442 Page 21 of 27
+hij = maxj − xij
+maxj − minj
+Next, to measure variability, we calculated the sample standard deviation ( s) of the normalized values by the
+following formula:
+sj =
+vuu√ 1
+n − 1
+n∑
+i=1
+(hij − ¯hj)2
+Subsequently, we calculated Pearson correlation coefficient ( r) for the normalized sample:
+rij =
+∑n
+i=1(xi − ¯x)(yi − ¯y)√∑n
+i=1(xi − ¯x)2∑n
+i=1(yi − ¯y)2
+Then, we obtained the importance of criterion ( Cj) and calculated the weight of each S (normalized indices
+of CIEM):
+wj = Cj∑n
+j=1 Cj
+=
+sj ·
+(
+1 −∑
+i̸=j |rij|
+)
+∑n
+j=1 sj ·
+(
+1 −∑
+i̸=j |rij|
+)
+Our results for the weight are as follows:
+Wo = [0.211, 0.119, 0.147, 0.143, 0.204, 0.175]T
+Strategic AHP-CRITIC Combination
+We combine the subjective AHP weights (Ws) and objective CRITIC weights (Wo) in a linear fashion:
+Wc = αWs + (1 − α)Wo, α = 0.6 (7.13)
+Still, we set the value of α to be 0.6 (60%), meaning that Ws, the subjective AHP, is slightly more important
+than Wo, the objective EWM, because we deemed our research- and experience-based insights to have greater
+practical value.
+Table 7.2: AHP vs CRITIC Weights
+Indicator AHP Weight (Ws) CRITIC Weight (Wo) Combined Weight (Wc) Rank
+CEI (S1) 0.430 0.211 0.3424 1
+ECI (S2) 0.229 0.119 0.1850 2
+WCI (S3) 0.103 0.147 0.1206 4
+AQI (S4) 0.057 0.143 0.0914 6
+LFI (S5) 0.032 0.204 0.1008 5
+EII (S6) 0.148 0.175 0.1588 3
+Total 0.999 0.999 1.000
+Verification of Combined Weights:
+Total: 0.3424 + 0.1850 + 0.1206 + 0.0914 + 0.1008 + 0.1588 = 0 .999 ≈ 1
+Team # 16442 Page 22 of 27
+7.3 Comprehensive Evaluation (TOPSIS) and Results
+Again, we used TOPSIS to yield the final comprehensive evaluation; the environmental sustainability scores
+for potential World Cup host countries are:
+Table 7.3: TOPSIS Scores for World Cup Host Country Evaluation
+Country TOPSIS Score Rank
+Germany 0.8124 1
+Japan 0.6743 2
+South Africa 0.5931 3
+Brazil 0.5216 4
+Russia 0.4872 5
+South Korea 0.4638 6
+Qatar 0.3925 7
+Conclusion
+The NIEM model identifies Germany as the most environmentally sustainable choice for hosting the World
+Cup 2030, with the highest TOPSIS score of 0.8124. This is brought about by Germany’s exceptional performance
+across carbon emissions, air quality, and landfill impact .
+7.4 Comparison and Conclusion
+Environmental Impact Minimization Strategies
+• Opening special bus lines and shuttle buses for the competition:
+This can directly reduce the transportation carbon emissions relative to the competition by lowing ϵ, which
+is the transport intensity per capita. Afterwards, it can be optimized to fit local demand and kept as a new
+permanent bus route, so as to permanently improve the density and efficiency of the city’s public transporta-
+tion network, directly reduces T c
+i and T e
+i , and prepare for future large-scale sports events at any time. This
+process reduces the overall ECI of the city.
+• Purchase and Invest in solar power generation equipments for the competition:
+This action can directly improve the score of ECI in short-term, by temporarily boost ri during the event
+period, making the city more suitable for hosting the sport event. After the competition, the equipments can
+be transferred to other places and continue to generate electricity, increasing ri and the overall renewable
+score of the city permanently.
+• Implement a strict garbage classification policy and composting system at venues:
+This action reduces the total landfill waste L generated during the event, thereby lowering the LFI in the
+short-term. The established policy and public awareness can then be transferred to a city-wide garbage recy-
+cling policy after the event. This permanently reduces the amount of waste that need to be disposed through
+unsustainable way, improves the environmental quality index eth, leading to a long-term improvement in
+LFI score.
+• Improve stadiums’ facilities with water-eﬀicient fixtures:
+This strategy directly reduces the water consumption multiplier γ for participants during the event, which
+lowers the WCI by decreasing (80000 × γ + pi). After the event, the water-saving facilities, such as low-
+flow faucets and waterless urinals, can be promoted to other buildings across the city. This systematically
+reduces the city’s per capita water consumption Wci, increasing the pi × Wci in the WCI formula, obtaining
+permanent water savings and better score.
+Team # 16442 Page 23 of 27
+Environmental Factors Comparison
+For a single-game event such as the Super Bowl (evaluated by CIEM), CEI and ECI are top priorities. Ad-
+ditionally, WCI also has an relatively heavy impact on the evaluation, as water consumption pressure is more
+prominent in smaller areas like cities.
+For a multi-venue and multi-sport event like the World Cup (evaluated by NIEM), EII is added to account for
+the difference in the level of industrialization between countries. Moreover, weights are adjusted to account for
+index interdependencies„ making the weight for each index, especially CEI and ECI, relatively lower compared to
+that of CIEM.
+8 NFL Host City Letter
+Dear NFL committee,
+We hope this letter finds you well.
+As public awareness of mega sporting events’ sustainability grows, the NFL faces increasing pressure to miti-
+gate the environmental footprint of its well-known event—the Super Bowl. In response, we have established City
+Impact Evaluation Model (CIEM), a regionally specific holistic model that evaluates potential Super Bowl host
+cities based solely on environmental considerations. Having the goal of determining the most sustainable option
+for the host of Super Bowl LXIII, we have chosen Inglewood, California, after carefully obtaining required data
+from credible sources and performing the calculations.
+Notably, CIEM considers a host city’s carbon emission, energy consumption, water consumption, air quality,
+and landfill volume when assessing the environmental impacts. Each of the five core aspects for sustainability is
+expressed in an equation, denoted as an index, in which more than 14 different contributing factors that influence
+the index are also identified and incorporated into the equation. Therefore, CIEM effectively ensures comprehen-
+siveness, accuracy, and practicability. Moreover, although we have not demonstrated this in our study, CIEM is
+highly adaptable. Its city-specific variables and indices makes it applicable to most US cities.
+Inglewood, California, becomes our top choice for the NFL to consider, as it encompasses the following envi-
+ronmental advantages.
+Inglewood yields a carbon emission index (CEI) of 0, meaning that it has the lowest carbon dioxide emission
+among the potential host cities tested. By hosting the next Super Bowl event in Inglewood, carbon emission can
+be effectively minimized, reducing global warming. Second, Inglewood’s energy consumption index (ECI) is 0 as
+well, meaning that it has the lowest energy requirement when hosting a Super Bowl event and it actively incorpo-
+rates renewable energy into use, which perfectly aligns with the NFL Green’s goal of relying more on green and
+renewable energy sources. Third, Inglewood’s water consumption index is again 0, indicating a mitigated impact
+by water consumption on the local environment. Fourth, Inglewood’s air quality index is slightly higher than other
+potential hosts; however, air pollution impacts are local and temporary, which will quickly return to baseline. Last
+but not least, Inglewood’s has a relatively low landfill index, meaning that it’s environment is similar to New Or-
+leans, which was arguably successful in mitigating its landfill build-up.
+Overall, Inglewood stands out as the most environmentally responsible choice for the 2029 Super Bowl LXIII.
+Its exceptional performance across carbon emissions, energy use, water consumption, and landfill build-up re-
+flects clear alignment with the NFL ’s sustainability goals, making it the best positioned host city to minimize the
+event’s environmental footprint.
+Y ours sincerely,
+Team 16442
+Team # 16442 Page 24 of 27
+9 Strengths and Weaknesses
+Strengths
+• Instead of using singly an objective or a subjective weighting method, we strategically combined both
+Analytical Hierarchy Process (AHP) and Entropy Weight Method (EWM) when creating our City Im-
+pact Evaluation Model (CIEM), which ensures fairness and reasonably reflects expert judgment, making the
+results balanced and robust.
+• Instead of adding EWM, we melded CRiteria Importance Through Intercriteria Correlation (CRITIC)
+with AHP to adapt our National Impact Evaluation Model (NIEM), as the 6 indices in NIEM are more inter-
+connected. This not only ensures objectivity within subjectivity but also better handles the interconnected
+relationships between the 6 indices.
+• Our evaluation models-CIEM and NIEM-encompass 5 and 6 key environmental impact indices , respec-
+tively, each of which is further broken down into smaller contributing factors , making both evaluation
+comprehensive and effective.
+• Through sensitivity analysis, we observed that there is no significant fluctuation in our final results, proving
+CIEM to be robust and reliable.
+• Both CIEM and NIEM are designed for US cities and countries around the world, respectively. Thus, they
+are arguably adaptable in most circumstances.
+Weaknesses
+• We applied certainstate-level data (e.g., energy consumption per capita) to the potential host cities, which is
+a justified assumption. Nonetheless, this approach is only effective for approximations. Ideally, we should
+procure city level data, which we didn’t found on the internet, by methods like on-site data collection to be
+more precise and accurate.
+• The units for certain variables in both CIEM and NIEM are non-standard, such as Btu and degree Fahren-
+heit (imperial units), which may lead to misunderstanding and inconvenience when CIEM and NIEM are
+used by others to conduct evaluations. To make both CIEM and NIEM more accessible, we should unite
+every non-standard units into SI units or other standardized units .
+• Both CIEM and NIEM assumes stable environmental policies and infrastructures, which is overly static
+and realistically impossible, hindering their practical value.
+Team # 16442 Page 25 of 27
+References
+[1] Alder, J., How Many People Have Attended the Super Bowl since It Began?, LiveAbout, 2019. DOI/URL: https:
+//www.liveabout.com/super-bowl-attendance-1335470 .
+[2] Eby, S.,HydrationTipsforAthletes , Mass General Brigham, 2023. DOI/URL:https://www.massgeneralbrigham.
+org/en/about/newsroom/articles/tips-for-staying-hydrated .
+[3] US Energy Information Administration, State Energy Consumption Estimates 1960 through 2023, 2023.
+[4] US Energy Information Administration, State Energy CO2 Emissions Estimates, 2025.
+[5] FIFA, One Month On: 5 Billion Engaged with the FIFA World Cup Qatar 2022TM , 2023.
+DOI/URL: https://inside.fifa.com/tournaments/mens/worldcup/qatar2022/news/
+one-month-on-5-billion-engaged-with-the-fifa-world-cup-qatar-2022-tm .
+[6] Hite, K., NFL Expands Sustainability Efforts at Super Bowl LIX in New Orleans, Biz New Orleans, 2025. https:
+//bizneworleans.com/nfl-expands-sustainability-efforts-at-super-bowl-lix-in-new-orleans/
+[7] International Energy Agency, “Transport, Energy and CO2 – Analysis”, IEA, October 2009. URL: https://www.
+iea.org/reports/transport-energy-and-co2 .
+[8] IEA,ExecutiveSummary–WorldEnergyOutlook2025–Analysis , IEA, 2025. Available at: https://www.iea.org/
+reports/world-energy-outlook-2025/executive-summary .
+[9] Mansour, F. R., and P . M. Nowak,IntroducingtheCarbonFootprintReductionIndex(CaFRI)asaSoftware-Supported
+ToolforGreenerLaboratoriesinChemicalAnalysis , BMC Chemistry, 19(1), 121–21, 2025. DOI:https://doi.org/
+10.1186/s13065-025-01486-2 .
+[10] National Bureau of Standards, Thermal Analysis – Human Comfort – Indoor Environments, n.d. DOI/URL: https:
+//nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication491.pdf.
+[11] Pourpakdelfekr, T., and Oboudi, B.,OverviewofSustainableSolutionstoImprovetheEnvironmentalImpactsofMega
+SportingEvents ,AthensJournalofSports , 9(4), 215–230, 2022. DOI: https://doi.org/10.30958/ajspo.9-4-2.
+[12] Silva, C. G., and Ricketts, C. F.,MegaSportingEventsandAirPollution: TheCaseoftheSuperBowl , Journal of Envi-
+ronmental Management and Tourism, 2016, 7(3), pp. 504–511. DOI/URL: https://journals.aserspublishing.
+eu/jemt/article/view/360.
+[13] SoftPro® Water Systems, Average Person Water Use – How Much per Day, 2025. DOI/URL: https://www.
+softprowatersystems.com/pages/how-much-water-does-average-person-use-per-day .
+[14] Lobdell, T., Rappazzo, M., DeFlorio-Barker, S., Krajewski, A., Messer, L., Jagai, J., Gray, C., Jimenez, M., Patel, A.,
+Rosenbaum, B., Jett, S., ENVIRONMENTAL QUALITY INDEX 2006-2010, Technical Report, EPA, 2020.
+[15] U.S. Geological Survey,EstimatedUseofWaterintheUnitedStatesin2010 , 2014. DOI/URL: https://pubs.usgs.
+gov/circ/1405/pdf/circ1405.pdf.
+[16] Wang, H., Tian, J., Li, Y ., Wang, Y ., Lu, Y ., Zhang, J., Lei, C., Li, C., Study on Life-Cycle Carbon Footprints and an
+Uncertainty Analysis of Mega Sporting Events: An Analysis in China, Buildings, vol. 14, no. 8, pp. 2510-2510, 2024.
+DOI: https://doi.org/10.3390/buildings14082510.
+[17] Watanabe, N., Y an, G., McLeod, C., The Impact of Sporting Events on Air Pollution: An Empirical Examination
+of National Football League Games, Sustainability, vol. 15, p. 5568, 2023. DOI: https://doi.org/10.3390/
+su15065568.
+[18] Wikimedia Foundation,The59thAmericanSuperBowlChampionshipGame , Wikipedia.org, 2024. DOI/URL:https:
+//simple.wikipedia.org/wiki/Super_Bowl_LIX.
+[19] World Population Review,The 200 Largest Cities in the United States by Population 2020, 2020. DOI/URL: https:
+//worldpopulationreview.com/us-cities/.
+[20] Matthews, Graham, Super Bowl Sustainability Facts and Statistics, Business Waste, January 31, 2025. DOI/URL:
+https://businesswaste.com/news/super-bowl-sustainability/.
+Team # 16442 Page 26 of 27
+10 AI Use Demonstration
+First, we conducted several preliminary estimation with the aid of AI. For instance, we utilized ChatGPT to
+estimate the water consumption during Super Bowl LIX:
+• AI Model: OpenAI ChatGPT (Nov 9, 2025 version, ChatGPT-5 Mini)
+• Query: Based on drinking and restrooms usage, roughly estimate the total water consumption during Super
+Bowl LIX. Suppose there are 80000 participants (including audiences, staff members, etc). Respond with
+the results, in liters, ONL Y .
+• Response: Approximately 4,000,000 liters.
+Second, we left certain calculation (other calculations are done by excel or python coding) for AI to perform.
+To illustrate, when we were substituting known or predicted data into our Carbon Emission Index (CEI).
+• AI Model: OpenAI ChatGPT (Nov 13, 2025 version, ChatGPT-5 Mini)
+• Prompt: Based on the formula for Ic (attached image), substitute the available data in the table (attached
+excel table) and calculate the Carbon Emission Index (Ic) for the following cities: Inglewood (California),
+Glendale (Arizona), Las Vegas (Nevada), and New Orleans (Louisiana), Charlotte (North Carolina), Chicago
+(Illinois), Nashville (Tennessee). After this, perform the normalization for all 7 cities (attached image,
+calculate S1) and present the results in a table. Respond with an LaTeX-format vector for me to copy,
+keeping 3 decimal places, ONL Y .
+• Response: The code generated is as follows: S1 = (0, 0.036, 0.178, 0.416, 0.128, 0.059, 0.453)
+Third, based on our data, we utilized AI to draw diagrams and visual aids when needed. For instance, we used
+AI to draw Figure 6.5.
+• AI Model: OpenAI ChatGPT (Nov 15, 2025 version, ChatGPT-5 Mini)
+• Prompt: Based on the attachment, which displays the sensitivity analysis performed for the number of
+participants or audiences during a Super Bowl event and its impact on the change in rankings and TOPSIS
+scores of the 7 states, create a diagram showing how city score trends vary with the number of audiences.
+Use different colors to represent different cities. Please provide the python code ONL Y .
+• Response:
+Team # 16442 Page 27 of 27
+Figure 10.1: Python Code

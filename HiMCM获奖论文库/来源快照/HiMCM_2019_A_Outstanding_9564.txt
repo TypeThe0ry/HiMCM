@@ -1,0 +1,1534 @@
+Team Control Number
+9564
+Problem Chosen
+A
+2019
+HiMCM
+Summary Sheet
+Over the past decade, electronic devices have rapidly perme ated almost all aspects of our lives.
+More frequent usage has led to a higher demand in charging, bo th in private and public places. In this
+paper, we investigated how this demand in public places has i ncreased and what the costs associated
+are. We focused on two types of electric appliances, namely m obile devices and electric vehicles.
+The aim of public charging service is to help those who have pr essing charging demands and allow
+them to charge as soon as possible. Thus, we developed a dissatisfaction index , which incorporates
+these two factors, to quantify how well the demands are met.
+Our ﬁrst model used simulation to investigate the eﬀect of th e increase in charging demand on
+the dissatisfaction index of electric vehicle (EV) owners. W e used a queuing model and treated EV
+arrivals as Poisson events. In every simulation, we assigne d to each EV a battery level, battery capacity,
+and service time. Based on that, we calculated the dissatisf action index and electricity consumption
+for each EV, therefore deriving the general dissatisfaction index and associated cost.
+In our second model, we investigated the charging demands fo r personal devices, mainly smart
+phones. Firstly, we approached the problem in a macroscopic m anner, using the overall change in
+battery level of incoming and outgoing visitors to measure h ow well the demands are satisﬁed. We
+represented the battery level distribution as a matrix and m odeled the process of electricity consumption
+and charging as matrix transformations . Secondly, based on the area and compactness of the public
+place, we investigated how the number of charging facilitie s aﬀects the distance one needs to walk to
+get to the closest charging point, which is directly linked t o their satisfaction level.
+By varying the charging facility installation plan, we obta ined the relationship between satisfaction
+level and associated cost, which we presented on graphs for t he public place’s reference. On top of that,
+by changing the time-relevant parameters, we calculated th e amount of additional costs incurred if the
+public place is to maintain the same satisfaction level in tw o years’ time. In order to achieve this, we
+found that the cost in providing charging for EVs will nearly d ouble while that for mobile devices will
+increase by less than 10% (if the current demand is well satis ﬁed).
+Beyond these general models, we have provided a few additional variations , including EV fast
+charging, diﬀerent types of phone charging facilities, lap top charging, etc. to make our model more
+comprehensive.
+We tested our model in vastly diﬀerent public places, from ai rports and nature parks to schools
+and caf´ es. As the results suggest, our model is able to provid e suitable and realistic charging facility
+installation plan for them.
+Finally, we then proposed numerous initiatives to bring down the cost from multiple dimensions
+by targeting at the technological, social and behavioural a spects of the issue, and hopefully provide
+insights to future development in this area.
+HiMCM 2019 Team 9564
+Don’t charge, walk slowly!
+Team 9564 Nov 19th 2019
+Quick question: how many of you do not own
+a mobile device? Probably not many. The un-
+doubted increase in electronic device usage has
+resulted in a growing charging demand. We ex-
+pect to ﬁnd places to charge our devices even
+outside of our home, so that we can spare the
+potential disruptions caused by a dead battery.
+Indeed, most public places nowadays provide
+free charging services, from phone chargers, sock-
+ets, even charging stations for electric vehicles.
+But catering to this increasing demand is not an
+easy job: public places need to pay extra dollars
+to install these stations, and bear a long term
+electricity expenditure.
+Our team have investigated how much more
+does it cost for public places to cater to this in-
+creasing demand, and will here present you our
+ﬁndings. We focused on two main parts of this
+demand, which are mobile devices and electric
+vehicles.
+Mobile Devices The number of smart phones
+in the US is still increasing. Smart phone own-
+ership is expected to grow from 80.8% to 83.4%.
+The battery capacity of the smart phones is also
+constantly increasing to support better perfor-
+mances.
+The two main charging facilities are open
+sockets and lockable charging kiosks. In order to
+derive the exact increase in the cost, we looked
+two components: number of visitors and area of
+the space. We looked at the change in overall
+battery level of the visitors in a certain space as
+well as the time required to walk to the closest
+charging point, and use these factors to measure
+the user‘s satisfaction.
+We found that there will be an increased cost
+to provide for the charging facilities. The total
+cost is rather high, but if the charging facilities
+are suﬃcient in 2019, the increase in two years
+will not be very signiﬁcant.
+Electric Vehicles On the other hand, the in-
+fant industry of electric vehicles is ﬂourishing.
+The number of electric vehicles on the roads is
+growing at an incredible speed: currently there
+are around 1.4 million on the road, and it’s ex-
+pected to double in 2 years and increase 10 fold
+by 2030. Therefore, the charging infrastructure
+needs to be improved as well.
+Parking spots with Level 2 charging stations
+(slow charger) will become a necessity for almost
+all public places. We used a mathematical model
+to simulate the incoming of EV in one day, and
+derived the average satisfaction level based on
+whether they got a EV parking spot as well as
+their remaining battery level.
+We found that the required cost almost dou-
+bled in order for the place to achieve the same
+satisfaction level. We have also looked at the
+case of level 3 charging stations (fast charger),
+whose results are similar.
+Our suggestions In light of this increase in
+public charging demand, we have come up with
+several suggestions for government and compa-
+nies to consider.
+• Implement smart charging stations with
+dynamic power distribution capabilities;
+• Increase funding in research in battery aim-
+ing to ﬁnd more eﬃcient ones;
+• Integrate electricity generation facility into
+the charging stations.
+Can you suggest some?
+How is it relevant to us? We, as users of
+these services, may consider the costs as irrele-
+vant, since we seem to be using them for free.
+However, while we enjoy the great convenience
+brought by the improving charging infrastruc-
+ture, we need to avoid abusing them. So friendly
+reminder time:
+• Remove the device from the charging sta-
+tion once it is fully charged;
+• Use the charging station only when you
+need it and not occupy it when you have
+a decent amount of battery.
+Don’t charge, walk slowly!
+HiMCM 2019 Team 9564
+Contents
+1 Introduction 1
+2 A Qualitative Analysis of the Problem Context 1
+2.1 Scope of analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+2.2 Trend in electricity consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+2.3 Analysis of Demand, Impact and Requirements . . . . . . . . . . . . . . . . . . . . . . 2
+3 Assumptions and Deﬁnitions 2
+3.1 General Assumptions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+3.2 General Deﬁnitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+4 Cost Model for EV Charging 4
+4.1 Model Construction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+4.2 Results and Interpretation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+4.3 Adaptation to Diﬀerent Places . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+5 Cost Model for Personal Devices Charging 8
+5.1 Modelling the Need Index . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+5.2 Modelling the Impatience Index . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+5.3 Results and Interpretation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+5.4 Adaptation to Diﬀerent Places . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6 Model Testing 16
+7 Costs relevant to the customer 17
+8 Initiatives to reduce cost 18
+8.1 Smarter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+8.2 More eﬃcient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+8.3 More sustainable . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+8.4 Policies and education . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+9 Strengths & Weaknesses 19
+9.1 Strengths . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+9.2 Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+10 Conclusion and Future Work 20
+References 21
+Appendices 22
+HiMCM 2019 Team 9564 Page 1 of 34
+1 Introduction
+Over the past decade, electronic devices—from large ones su ch as electric vehicles to small ones such
+as smartphones—have rapidly permeated almost all aspects o f our lives. Together with this increasing
+ownership of electronic devices is our growing demand for ch arging.
+In light of this, many public places start to provide ”free” c harging services to satisfy this demand.
+Yet the cost for providing this service is clearly not neglig ible. This gives rise to a series of baﬄing
+questions: How much provision is enough? How much do they cost? Who are paying for them? And
+how can we reduce the cost?
+Based on analysis of the question context and extensive rese arch on past and future trend in electric-
+ity consumption, we have developed a mathematical model tha t aims to answer these questions. Our
+model analyzes the parameters of a public space (visitor ﬂow rate, operating hours, etc.) and provides
+a series of charging provision plans (mainly in terms of numb er of charging facilities) with associated
+cost, each corresponding to a certain level of user satisfac tion rate. We have also proposed special
+modiﬁcations to places with special features in order for ou r model to be more comprehensive. The
+trend is factored in our model in the manner of parameters. We have used two sets of data representing
+the year of 2019 and 2021 to see how our model respond to the dem ands of diﬀerent times, and how
+the charging provision will change with the demands. Lastly, we have also proposed some initiatives to
+reduce the costs associated with free charging provision in public spaces.
+2 A Qualitative Analysis of the Problem Context
+2.1 Scope of analysis
+We will be ﬁrst setting our scope of analysis.
+The pattern and trends of electricity consumption vary sign iﬁcantly across diﬀerent countries. A
+generic analysis of global charging demand may result in a mo del that poorly ﬁts public places in any
+particular country. Hence, we decided to base our analysis an d model on only 1 country, which we
+decided to be the United States.
+We only consider public places like airports, shopping mall s and libraries where charging is provided
+as a free side service. This means that places like independe nt charging points and roadside charging
+stations are excluded since they have no additional functio ns other than providing charging services.
+We found that most of charging services provided at public pl aces fall into two categories:
+1. Charging of battery electric vehicles (BEV, or EV for futur e reference in this paper);
+– We will not be considering plug-in hybrid electric vehicle s, since ﬁrstly, they can switch to
+gasoline and charging is not a necessity for them; and second ly, battery EV is becoming the
+future trend and is more relevant to our paper.
+2. Charging of personal devices (mainly mobile phones and la ptops).
+– For mobile phones, we will only be considering smart phones . Other types of cell phones are
+not considered, since ﬁrstly, smart phones is the current tr end and other types of cell phones
+are exiting the market; and secondly, they have drastically diﬀerent charging patterns and
+requirements on facilities.
+2.2 Trend in electricity consumption
+The ownership of electric devices is increasing constantly . The booming development in electronic
+technology in the recent decade has brought smartphones to a lmost the entire population: 4 out of 5
+Americans today, including elderly and children, own a smart phone, and this number is increasing.
+Electric vehicles, a more recent product, have also become a popular substitute for conventional vehicles
+due to its low fuel cost and environmental friendliness.
+Ownership is not the only change. Our habits in devices usage is also evolving. The consistent
+upgrade of the smart phone function allows us to serve a large r range of purposes. This change has
+witnessed a signiﬁcant increase in the average time spend on our devices. The average battery capacity
+of smart phones is also increasing gradually in order to keep up with the electricity consumption required
+for better performance.
+In our model, will be using the statistics of the years of 2019 and 2021.
+HiMCM 2019 Team 9564 Page 2 of 34
+Factor 2019 2021 % increase
+Total number of operating vehicles/ million 276.0 283.7 2.79%
+Number of EVs on the road / million 1.4 2.6 85.7%
+Percentage of EV on the road 0.507% 0.916% 80.7%
+Population in US / million 329.0 333.0 1.22%
+Number of smartphone users / million 265.9 277.8 4.48%
+Percentage smartphone ownership 80.8% 83.4% 3.22%
+Average time spent on mobile devices / min per day 223 234 4.93%
+Average phone battery capacity / mAh 3500 3800 8.57%
+2.3 Analysis of Demand, Impact and Requirements
+Electric Vehicles
+The demand for public charging of EV is pressing. Even though most EV owners may choose to
+charge their EVs at home, there are indeed frequent cases wher e they run out of battery on the go,
+which disrupts the normal functioning of the car and potenti ally cause inconvenience on the road.
+That’s why public EV charging stations are a necessary infra structure for the blooming EV industry.
+All public parking lots should equip themselves with parking spots reserved for EV, where Level 2
+charging stations (slow charging) are available. At places with large traﬃc volume, DC fast charging
+stations (fast charging) should also be available, be there EVs with urgent charging needs.
+Usually, Level 2 charging stations do not charge an additiona l fee on top of the parking fee, and
+Level 3 charging stations are free for the ﬁrst 30 minutes of c harging.
+Personal Devices
+On the other hand, as people relying more on electronic devic es in their daily life, it is also important
+to ensure that those who are running out of battery can restor e electrical energy at nearby locations,
+so that they can avoid the inconvenience brought by a dead bat tery.
+Currently there are two forms of charging points that can sat isfy such demands: open sockets for
+people who stay around, and lockable charging stations wher e people can leave their devices, each
+catering to diﬀerent type of public space. These charging po ints should be readily available within a
+short walking distance.
+3 Assumptions and Deﬁnitions
+3.1 General Assumptions
+• The electric device ownership is uniform all across the US and uniform in all types of public
+places.
+– The variation, if any, would be rather small, and currently w e do not have any more speciﬁc
+information for us to add in the detail.
+• The increase in charging demand is within the maximum capaci ty of the public place’s power
+grid.
+– There is usually spare power capacity due to expectations of potential future increase in
+energy consumption when constructing a building.
+• Visitor ﬂow rate of public places do not vary according to seas on.
+– Public places considered in our model generally do not have p eak seasons and oﬀ-peak seasons
+(E.g. airports).
+• All appliances considered in our model are not being used whil e getting charged.
+– We assume consumers will follow safety precaution guidelin es by not using their personal
+devices while charging. Moreover, people who visit a public place usually have things to do
+(E.g. shopping) so they will leave their vehicles and applia nces when getting charged.
+• During idle time (when an appliance is already fully charged but still plugged in), there will be
+no electricity consumption.
+– In reality, there is still a small amount of power output from the source even when an
+appliance is fully charged. However, due to the aforemention ed assumption that there is
+minimum usage when getting charged, the electricity wasted during idle time is negligible.
+HiMCM 2019 Team 9564 Page 3 of 34
+3.2 General Deﬁnitions
+Dissatisfaction Index
+In order to measure how well (or how badly) the demands are met , we have developed a general
+model to calculate a dissatisfaction index D, which has two components, need and impatience. The 3
+indices varies from 0 to 1, with 0 indicating the most satisﬁe d state.
+The need index D1 indicate how urgently the users need to charge, depending on the remaining
+battery level. This relationship may diﬀer for diﬀerent typ es of devices.
+The impatience index D2 indicate how long the user have to wait before accessing the c harging
+facility. A reasonable maximum waiting time will be set. The index increases proportionately with
+waiting time and reaches 1 when the waiting time is maximum.
+The dissatisfaction index will be calculated based on the ne ed index and impatience index. The
+detailed method of calculation can be found in respective se ctions.
+The dissatisfaction index of a place will be the average of al l users. We will set a benchmark for
+dissatisfaction index that a public space need to have in ord er for it to meet the demand. For places
+that wish to have a higher or lower standard, we will provide t he corresponding charging provision plan
+and associated cost for each level of satisfaction.
+Costs
+There are two types of cost that we are concerned with: the ﬁxe d costs Cf for installing the charging
+facilities, and the variable costs Cv, mainly to cover the electricity consumption, which is calc ulated on
+a yearly basis.
+Since the cost for charging facilities vary signiﬁcantly, w e will be using an average value, based on
+our research. And since the changes in these costs (including electricity unit price), if any, are far more
+diﬃcult to predict, we will be using the same set of data for bo th the year of 2019 and 2021.
+The maintenance cost is not considered in the paper, since we are only concerned with the cost borne
+by the public space and the maintenance is usually covered by the provider of the charging facilities.
+Parameters of a Public Space
+The demand for public charging is contingent on the speciﬁcs of the public space. Below are some
+key features that are relevant to the charging demand that we modeled.
+Parameter Deﬁnition
+N The average number of visitors per day
+r The number of vehicles visiting the public space per day
+T The average length of stay of each visitor (in hours)
+H The operating time of the public space (in hours)
+A The ﬂoor area of the public space (in m2)
+b% The remaining battery level of a speciﬁc EV
+q The compactness index of the public space. This will be elabo rated in Section 4.
+These values can vary signiﬁcantly from place to place, resu lting in diﬀerent requirements of charging
+services at each public place. Ideally, speciﬁc values of th ese variables should be given by each public
+place. To illustrate how our general cost model works (in Sec tion 4), we will be using a mock set of
+statistics as shown below:
+N r T / hours H / hours A / m2 q
+80,000 11,000 1.5 12 43,500 0.5
+HiMCM 2019 Team 9564 Page 4 of 34
+4 Cost Model for EV Charging
+We ﬁrst model the increase in demand for level 2 charging stat ions (slow charging), which should
+be available at all public parking lots.
+Speciﬁc Assumptions
+• All EVs will be parking at EV parking spots (if available) and ot her cars will not park at EV
+parking spots.
+– EV parking spots are only reserved for EVs.
+• The frequency at which EVs enter a public place is constant.
+– Diﬀerent public places have diﬀerent peak hours, and thus di ﬀerent rates at which EVs
+enter the place throughout the day. In order to construct a ge neralized model for all public
+places in this section, we would assume that the number of EVs e ntering a public place is
+time-independent.
+• Once parked, an EV will immediately start charging if its bat tery is not full.
+– Since the charging service is free, we assume that people wil l take advantage of it.
+Speciﬁc Variables
+Variable Deﬁnition
+me The number of EV parking spots
+re
+The number of EVs entering the public place per day, which is th e product of r
+and the percentage of EVs among all cars (0.507% in 2019 and 0.9 16% in 2021)
+X A random variable indicating the time (in hours) between the arrivals of two EVs
+l The actual length of stay of an EV
+E The amount of electricity consumed by an EV
+b% The remaining battery level of a speciﬁc EV
+Bmax The maximum battery capacity of a speciﬁc EV
+4.1 Model Construction
+We observed that the process of EV charging resembles a queui ng process. Therefore, we constructed
+a queuing model to simulate the behaviour of EVs at a public pla ce in a single day, where we varied
+the number of EV parking spots to investigate how the average dissatisfaction index of drivers and the
+cost incurred change accordingly.
+Characteristics of the EV Queuing Model
+EV Arrival Pattern By our Speciﬁc Assumption 2, The arrivals of EVs is a Poisson poi nt process
+with the average frequency of r/H arrivals per hour. Thus, the time X between the arrivals of two EVs
+follows the exponential distribution
+p(x) = re
+H e− re
+H x.
+Queuing Mechanism When each EV arrives, if there is still an available EV parking spot, it will
+immediately go to that spot, start charging and occupy the sp ot until it leaves; otherwise, it is considered
+that our system fails to serve it. In other words, in this vers ion of queuing model, customers immediately
+leave the queue and become dropouts once the server is occupi ed.
+Service Time Since charging is not the main purpose of the visitors, it is r easonable to assume that
+the EV will leave once the driver ﬁnishes his/her business at the place (e.g. shopping, exercising, etc.).
+If there is no existing distribution of length of stay provid ed, we will use the standard assumption in
+queuing theory that the lengths of stay of the drivers, l, follow an exponential distribution. Note that
+the mean of the exponential distribution p(x) = λe− λx is 1 /λ, so we can equate the average length of
+stay of visitors, T , to 1 /λ, obtaining λ = 1/T . Thus, the exponential distribution we use here is
+p(x) = 1
+T e− 1
+T x.
+HiMCM 2019 Team 9564 Page 5 of 34
+Electricity Consumption
+An EV will stop consuming electricity either when it leaves or when the battery is fully charged.
+In our queuing model, each arriving EV will be assigned a batt ery capacity since diﬀerent models
+of EVs have diﬀerent battery packs. We used the ﬁve EV models wi th the highest sales volumes to
+approximate the proportion of battery capacities of all EV m odels on the road:
+Model Battery Capacity Sales Volume Proportion in the Top 5
+Tesla Model 3 75 kWh 163971 29.30%
+Tesla Model S 100 kWh 147517 26.36%
+Nissan LEAF 62 kWh 132227 23.63%
+Tesla Model X 100 kWh 69702 12.46%
+Chevrolet Bolt 60 kWh 46211 8.26%
+Thus, we assume that about 29.3% of arriving EVs have a battery capacity of 75kWh, 26 .26% +
+12.46% = 38 .72% have a battery capacity of 100 kWh, etc.
+We also assigned to each EV an initial battery percentage b% between 0% to 100% according to a
+uniform distribution. Thus, the amount of electricity requ ired to fully charge an this EV is Bmax(1− b%).
+If this EV leaves before it’s fully charged, the electricity consumed will simply be 6 .6l, where 6.6 (in
+kW) is the average power of a Level 2 charging station. Hence, th e electricity consumed by an EV is
+E = min(Bmax(1 − b%), 6.6l).
+Costs
+The installation cost, Cf , is the number of chargers multiplied by the cost to install a Level 2
+charging station (including the charging station unit, lab or and material), which is on average $3000
+[1]. Hence,
+Cf = 3000me.
+The annual electricity bill, Cv, is the sum of electricity consumed by each EV in a day multipl ied
+by the electricity price (which is 0.11 $/kWh in the EIA 2019 report[2]) and 365. Hence,
+Cv = 365(0.11
+∑
+E) = 40 .15
+∑
+E.
+Dissatisfaction Index
+For EVs, we calculate the dissatisfaction index, D, of each individual by multiplying the need index,
+D1, and the impatience index, D2.
+The need index, D1, is determined by the remaining battery level, which signiﬁ es the extent of the
+need to be charged. If the battery level is 0-9%, charging wou ld be a must and the need index is 1
+because most EV models will start warning drivers once the ba ttery level drops to 9% [3]; from 9% to
+40%, the need index decreases from 1 to 0; if the battery is abo ve 40%, the need index is 0 (according
+to U.S. Department of Transportation[4], the average daily m iles per driver is 37, while 40% battery
+can sustain an 80-mile drive which is more than suﬃcient for t he driver to drive home and charge).
+Hence,
+D1 =
+
+
+
+1 0 ≤ b < 9
+− 1
+31 b + 40
+31 5 ≤ b < 40
+0 40 ≤ b ≤ 100
+4.2 Results and Interpretation
+Based on these rules, we simulated the queuing process (see Ap pendix for source code) to obtain the
+relationship among the number of EV parking spots, me, the dissatisfaction index, D, and the costs Cf
+and Cv. For each value of me from 1 to 15, we ran the simulation 500 times and recorded the a verage
+value of D, Cf , and Cv.
+As mentioned in Section 2, the proportion of EVs among all cars w ill change from 0.507% in 2019 to
+0.916% in 2021. Thus, by setting re as 0.916% ·r in the above model, we also obtained the relationships
+among me, D, Cf , and Cv in 2021.
+HiMCM 2019 Team 9564 Page 6 of 34
+Figure 1: The Graph of D against me
+ Figure 2: The Graph of Cv against D
+Using the parameters for our hypothetical public place (see S ection 3.2), the results are as follows:
+Figure 1 shows that as the number of charging stations increas es from 1 to 15, dissatisfaction level
+steadily decreases in both 2019 and 2021. Note that the initia l dissatisfaction level are generally quite
+low, because most drivers do not have urgent charging demand , resulting in a low need index. Hence,
+even if no charging service is provided, a large number of dri vers will still be satisﬁed. Figure 2 shows
+the amount of variable costs that will be incurred if a certai n level of dissatisfaction is to be achieved.
+The public place owner can make use of these graphs to estimat e how many charging stations they
+need to install in order to bring down the dissatisfaction in dex to a certain level (our recommended value
+is 0.05). For example, if the public place currently has 6 cha rging stations, the current dissatisfaction
+index would be 0.14. If the owner wants to further bring the di ssatisfaction level down to 0.05 in 2021,
+11 − 5 = 6 more charging stations need to be installed (from Figure 1 ), which means the amount of
+increased ﬁxed cost, Cf , would be 6 × 3000 = $18000; the annual electricity bill, Cv, will increase by
+about 80 − 30 = $50 (in thousands).
+4.3 Adaptation to Diﬀerent Places
+Most public places with a parking lot (such as shopping cente rs, parks and hospitals) can directly
+apply this model by specifying the average number of vehicle s per day and the average length of stay
+of visitors. Yet for the following two types of public places , our model can be modiﬁed to ﬁt in the
+context.
+Places with Large Car Traﬃc
+At places with large traﬃc volume (such as airports and touri st attractions), there may be more
+EVs with extremely low battery (below 9%) that needs immediat e and rapid recharge. At these places,
+DC fast charging stations also need to be provided to cater to their needs.
+To model this demand for emergency charging, we modiﬁed the f ollowing parts of our queuing
+model:
+• Instead of immediately leaving the queue when the server is o ccupied, EVs that really need
+emergency charging will queue up. Hence, the original model i s changed to a single-queue-multi-
+server queuing model, similar to the queues in gas stations.
+– EVs with extremely low battery level may not be able to drive to the next charging station.
+Hence, we assume that drivers will not take this risk.
+• EVs with more than 9% but less than 40% of battery will only char ge here if the charger is
+unoccupied.
+– These are free-riders who take advantage of free fast chargi ng. Since they are not in emer-
+gency, they will not wait if there is a queue.
+• EVs with more than or equal to 40% of battery will not appear at t he charging site.
+– They have suﬃcient battery to last for a week so will not take t he trouble to visit a charging
+station.
+HiMCM 2019 Team 9564 Page 7 of 34
+• When calculating the dissatisfaction index, only EVs with bat tery level 9% or below are considered
+– We are modeling the demand for emergency charging here. Thos e with more than 9% of
+battery do not actually need this service.
+• The impatience index, D2, is now calculated based how long a car needs to wait before ge tting
+charged. We assume D2 increases linearly from 0 to 1 when waiting time increases fr om 0 to 0.5
+h; beyond that, the impatience index will remain at 1 as the dr iver is considered to have reached
+the maximum level of impatience.
+• The charging speed is now 50kW and the installation cost is no w $21,000.
+– These are the features of a DC fast charging station [1].
+We will similarly calculate the dissatisfaction index and e lectricity consumption that correspond to
+number of fast charging stations, as well as the increase in c ost in order to meet the future demand.
+Here are the results for our hypothetical data set:
+Figure 3: The Graph of D against me
+ Figure 4: The Graph of Cv against D
+Similar to slow charging, more charging stations give highe r levels of satisfaction. We can also
+observe that in the hypothetical setting, to maintain the sa me level of satisfaction ( D = 0 .05), one
+more fast charging station will be installed, resulting in $21000 ﬁxed cost and a $10000 increase in
+variable cost.
+Workplaces
+A special feature of workplaces is that there are regular vis itors and visiting hours (such as oﬃces
+and schools). At these places, the number of EV parking spots are usually calculated based on the
+number of workers who own an EV and drive it to work. In this con text, a cost model can be more
+accurately constructed in this way:
+A simple survey can be conducted among the regular visitors t o get a rough estimate of EV own-
+ership, and set up EV parking spots accordingly (for example , provide 2 spots for every 3 EVs). For
+the amount pf electricity consumed, we can reasonably assum e that all EVs will be charged to its full
+capacity because of the long hours workers will stay at the wo rkplace. The dissatisfaction rate will not
+be calculated in this case, as the best ratio between EV and pa rking spots can be surveyed. Thus, in
+this case,
+Cf = number of EV × EV parking spot provision ratio × cost of level 2 charging station (which is
+$3000);
+Cv = number of EV × EV parking spot provision ratio × average time to charge batteries to full
+capacity (taking into account the initial battery level) × power of level 2 charging station (6.6 kW) ×
+electricity unit cost × 365.
+HiMCM 2019 Team 9564 Page 8 of 34
+5 Cost Model for Personal Devices Charging
+The charging of mobile devices at public places works diﬀeren tly from that of EVs. Not only do we
+need to consider the total number of sockets to provide, we al so need to consider where to put them
+so that it is available across the whole space. In this sectio n, we will ﬁrst investigate the relationship
+between maximum charging capacity of charging facilities a nd the need index of visitors. We will then
+investigate the relationship between the number of chargin g points (the number of locations where
+charging facilities are provided) and the impatience index .
+Speciﬁc Assumptions
+• The visitor ﬂow is constant and there are no peak hours or oﬀ-p eak hours.
+– The visitor ﬂow pattern is very diﬀerent for diﬀerent types o f public places. In order to
+construct a general model in this section, we assume a consta nt visitor ﬂow.
+• The battery level distribution of visitors arriving at the p ublic place is relatively constant.
+– The battery level of arriving visitors is generally due to th e functionalities and geographical
+features of a place (e.g. people arriving at a nature reserve may generally have low battery
+since it is far from their home), and these characteristics o f a public place are unlikely to
+change.
+• All smartphones have the same battery capacity, same rate of e lectricity consumption and same
+rate of charging at all times.
+– Diﬀerent smartphone models can have very diﬀerent battery c onsumption rate and charging
+rate. Nonetheless, when there are a large number of visitors, we can use the average battery
+consumption and charging rates to represent them as a whole.
+Speciﬁc Deﬁnitions
+Used in 5.1: Maximum Charging Capacity
+Symbol/concept Deﬁnition
+A time unit The time taken for the battery level of personal devices to de crease by 1%
+mp
+Maximum charging capacity (the maximum number of devices th at can be
+charged at this public place simultaneously)
+p The instantaneous number of visitors at this public space at any given moment
+f The number of people entering the public place in one time uni t
+LE
+A 100 × 1 column vector representing the proportion of visitors wit h each
+battery level at the public place
+Lchange
+A 100 × 1 column vector representing the change in the proportion of visitors
+with each battery level when they enter and leave the public p lace
+R A 100 × 1 column vector representing the proportion of charging rec ipients with
+each battery level among all visitors
+P A 100 × 100 diagonal matrix representing the proportion of people w ho want
+to charge with respect to each a certain battery level
+N A 100 × 100 diagonal matrix representing the need index of each batt ery level
+Mconsume A 100 × 100 matrix representing the battery consumption process
+Mcharge A 100 × 100 matrix representing the charging operation
+Mad just A 1 × 100 row vector of all ’1’s
+Used in 5.2: Number of Charging Points
+Variable Deﬁnition
+n Number of PD charging points (locations where charging facil ities are available)
+d The distance a visitor needs to walk to get to the closest char ging point
+5.1 Modelling the Need Index
+At public places, people’s phone battery levels are constan tly dropping. If no charging service is
+provided, everyone will leave the public place with a lower b attery level. Therefore, we see that the
+HiMCM 2019 Team 9564 Page 9 of 34
+requirement of public places is to provide charging service s to compensate for the loss of battery level
+while visitors stay at this place. In other words, if a visito r leaves this place with the same battery level
+as the time they entered, he/she will be considered satisﬁed and his/her need index will be 0. Thus, we
+will be calculating the need index by comparing the battery l evels of visitors entering this place against
+those leaving the place. We started by abstracting public pl aces.
+Stage 1: Abstracting Public Places
+In order to abstract public places, we disregarded the diﬀer ence
+in peak hours and oﬀ-peak hours. This enabled us to approach t he
+problem from a macroscopic point of view, perceiving public places
+as a container of people, where visitors ﬂow in and out at a con stant
+rate. The average length of stay of visitors, T , is also considered
+constant (in this section, T is time units as we earlier deﬁned).
+Due to these features, the rates at which visitors are enteri ng
+and leaving the place must be the same (so that the public plac es
+retains a steady number of visitors over time). We deﬁned thi s rate
+as f . Note that f = N/H , the daily number of visitors divided
+by daily operating hours. The relationships among f , T , and p
+are presented in the ﬁgure on the right: each visitor enters t he
+place and stays for T time units; f , the rate of ﬂow of visitors, is
+the gradient of both lines; p is the number of visitors at any given
+moment of time. Hence,
+p = T f = T N
+H (1)
+According to Statista[5], the percentage of smartphone user s
+among all people in the US is 80.8% in 2019. Hence, we estimate th at the number of smartphone users
+at the public place is 0 .808p.
+After constructing this crude model for a public place, we con tinued to add in relevant features to
+model the change in visitors’ battery level.
+Stage 2: Four Factors that Aﬀect the Current Battery Level Distributio n
+Each visitor entering the place has an initial battery level and
+we assume that the battery level of arriving visitors has a ﬁx ed
+pattern (e.g. 1% of visitors has 1% battery, 3% of visitors ha s 2%
+battery, etc.). At public places, the battery level will be c onstantly
+dropping. Some visitors may charge their phone, thus having a
+higher battery level.
+Thus, the entire process is analogous to the cooling of hot
+water in a water pipe in a cold environment, while a heater is
+placed to counter the overall cooling eﬀect (as illustrated by ﬁgure
+on the right).
+Imagine that the temperature of the water source and the
+power of the heather are kept constant. Then, we know that
+the distribution of energy level of molecules in a certain se gment
+of the pipe will also be constant at a macroscopic level. Like wise,
+the distribution of battery levels of visitors will also be c onstant at any given moment of time. We
+denote this distribution by LE, a 100 × 1 column vector representing the proportion of people with e ach
+battery level (ranging from 1% to 100% since most phones auto matically switch oﬀ when the battery
+drops to 1%). As an illustration, LE =
+( 0.02
+0.03
+...
+)
+means that 2% of the visitors have 1% of battery, 3% of
+the visitors have 2% of battery, etc. We drew the values of the entries of LE from a normal distribution,
+since the battery levels of visitors in a public place are mut ually independent and identically distributed
+randomly.
+HiMCM 2019 Team 9564 Page 10 of 34
+There are in total 4 factors that aﬀects LE at any given moment of time:
+(a) Constant battery consumption;
+(b) Charging service received by some visitors;
+(c) The arrival of new visitors, whose battery levels are gen erally higher;
+(d) The departure of visitors, whose battery levels are gene rally lower.
+Note that LE is the same at any given point of time (as we mentioned above). Hence, in each
+time unit , the net change in LE brought by the 4 factors must be 0, which means that the net cha nge
+brought by (a) and (b) is equal to that brought by (c) and (d). This means that we can measure t he
+diﬀerence in the distribution of battery levels of arriving visitors (c) and departing visitors (d)—which
+is what we want to measure—based on the diﬀerence between the impacts of battery consumption (a)
+and charging (b)—which is what we can measure.
+Stage 3: The Net Eﬀect of Battery Consumption and Charging
+We now present the exact eﬀects of battery consumption and ch arging in a single time unit.
+By its deﬁnition (see ‘Speciﬁc Deﬁnitions’ in this section) , in a single time unit,
+everyone’s battery level drops by 1%. We used a 100 × 100 matrix Mconsume, as
+shown on the right, to represent this consumption process. Wh en left multiplied
+by Mconsume (See Figure 5), each entry of LE shifts 1 unit upwards, while the ﬁrst
+entry of the new column matrix becomes the sum of the ﬁrst two e ntries of LE.
+This indicates the battery level distribution after a time u nit. Thus, the overall
+change in the proportion of visitors with each battery level caused by
+battery consumption is
+(Mconsume − I)LE,
+where I is the identity matrix.
+Figure 5: Battery Consumption
+ Figure 6: Proportion of Visitors with Charging
+Demand
+On the other hand, charging is selective. It is only provided to visitors who want to charge, and the
+number of people that can receive the service depends on the m aximum capacity of charging facilities.
+We use a 100 × 100 diagonal matrix P to model the proportion of visitors with each battery level
+who want to charge. For example, P =
+(
+p1% 0 ...
+0 p2% ...
+... ... ...
+)
+means that p1% of visitors with 1% battery
+want to charge, p2% of visitors with 2% battery want to charge, etc. This propor tion is drawn from
+the logistic distribution in ﬁgure 6. We determined the exac t shape based on the following reasoning:
+when battery level is higher than 60%, people would have very low demand for charging; as battery
+level drops, the demand for charging rises; when it drops to 1 5%, the need for charging becomes very
+high. Thus, the total number of people who want to charge is 0 .808pMad justP LE, where Mad just is a
+1 × 100 row vector whose entries are all ’1’s.
+However, not all people with this charging demand can receive charging. We also need to consider the
+availability of charging facilities. Note that the maximum n umber of devices that can receive charging
+simultaneously is m and in reality, charging facilities are subject to ineﬃcien t use (there may be fully
+charged phone left by visitors who are not back yet). We consi der the case where the facilities are only
+in eﬃcient use in 80% of the time. Assuming all visitors who nee d charging have equal opportunity
+to charge, the proportion of visitors who actually received charging among those who need charging
+HiMCM 2019 Team 9564 Page 11 of 34
+is 0.8mp
+(0.808pMad justP LE ) , and thus the proportion of charging recipients with each ba ttery level among all
+visitors is
+R =
+( 0.8mp
+0.808pMad justP LE
+)
+P LE.
+For example, R =
+( 0.007
+0.006
+...
+)
+means that the number of charging recipients with 1% battery forms 0.7%
+of p, the number of charging recipients with 2% battery forms 0.6 % of p, etc.
+In cases where 0.8mp
+(0.808pMad justP LE ) > 1, charging supply exceeds demand, and R = P LE
+Now we consider the charging speed. The most common phone char ging outlets in public places
+have the rating of 5.0V and 2.0A, and the average battery capac ity (in mAh) is approximately 3500 in
+2019. The time taken to charge 1% of the battery will thus be 35 00/(100 × 2000) = 0 .0175 h. On the
+other hand, a full phone battery can generally last for 25 hou rs with normal usage[6]. Thus, the rate
+of charging is approximately 0 .25/0.0175 ≈ 14 times of the rate of consumption. Swimilar to Mconsume,
+we can deﬁne Mcharge as a matrix whose entries 14 units above the diagonal and the l ast 14 entries of
+the last column are ’1’s and the all other entries are ’0’s. Whe n left multiplied by it, the entries of a
+100 × 1 column vector will shift 14 units downwards and the last ent ry will be come the some of the
+last 15 entries of the initial column vector. Thus, the overall change in the proportion of visitors
+with each battery level cause by charging can be represented by
+(Mcharge − I)R,
+where I is the identity matrix.
+Combining the eﬀects of battery consumption and charging, w e derive the change in the proportion
+of visitors with each battery level in a single time unit, whi ch is
+(Mconsume − I)LE + (Mcharge − I)R.
+Stage 4: Diﬀerence in Battery Levels between Arriving and Departing Visitors
+As derived in Stage 2, this change caused by consumption and ch arging must be compensated by the
+change caused by the incoming and outgoing visitor ﬂow. Howev er, in a single time unit, the resulting
+change caused by consumption and charging acts on p people, but the change caused by visitor ﬂow is
+only brought by f people. Hence, in order to compare them, a scale factor p/f is needed. By formula
+1 (in Stage 1), p/f = T . Hence, the total change in the proportion of people with each battery level in
+a time unit is
+Lchange = T · ((Mconsume − I)LE + (Mcharge − I)R).
+For example, Lchange =
+( 0.02
+...
+− 0.05
+)
+means when leaving, the number of visitors with 1% battery ha s
+increased by 0 .02p; the number of visitors with 100% battery level has decrease d by 0 .05p, as compared
+to those entering the place. Note that D1 can be negative when visitors generally leave the place
+with higher battery levels than they entered, meaning that t he public place has provided more than
+necessary.
+Stage 5: Calculating the need Index
+Now, we calculate the diﬀerence in charging demands between
+arriving visitors and departing visitors. We deﬁned a relat ionship
+between need index and the battery level of visitors. Here, th e
+need index follows a logistic distribution with respect to b attery
+level. The exact shape is determined by similar reasoning of that
+of charging demand (as mentioned in Stage 3). We used a 100 ×100
+matrix N to record the need index corresponding to each battery
+level (the structure of N is similar to that of P in Stage 3). The
+average need index of all visitors in Lchange is
+D1 = Mad justN Lchange.
+We are thereby able to investigate how D1 changes accordingly when the maximum charging capacity
+mp varies.
+HiMCM 2019 Team 9564 Page 12 of 34
+5.2 Modelling the Impatience Index
+People with charging demand for personal devices can be disp ersed across the whole public space,
+whereas charging facilities can only be found at charging po ints. Thus, it is important to ensure that
+visitors can always ﬁnd a charging point within a reasonable distance. We noticed that the number of
+charging points, n, required for visitors to always ﬁnd a charging point within d kilometers is determined
+by two geographic characteristics of the place—area A and compactness q. To derive the formula, we
+ﬁrst investigated the relationships of the variables:
+Relationship between n and A Set q and d as constants. The larger the area, the more charging
+stations we need. Therefore n is directly proportional to A.
+Relationship between n and d Set A and q as constants. Note that a charging station can serve
+everyone in the circle with radius d whose center is the charging station. Hence, it covers an area of
+d2π. In order to cover the public place, the smaller the value of d2π, the more charging stations we
+need. Hence, d2π and n have an inverse relationship.
+Relationship between n and q The compactness index, q, measures the compactness of 2D shape.
+There are many methods to estimate it, but the most accurate o ne is the measure of dispersion of
+elements of area, whose formula is q = A
+2π(σ2
+x + σ2
+y) (MACEACHREN, 1985)[7]. It measures the extent
+of dispersion of each point on the shape from the centroid. In the formula, A is the area of the shape,
+σ2
+x is the variance of the x-coordinates of all points from that o f the centroid, and σ2
+y is deﬁned similarly.
+The index can take any value in the interval (0 , 1], where 1 means being the most compact. Here are
+the compactness of some shapes measured in this way:
+1 0.9649 0.5383 0.1952
+Hence, if A and d remain constant, the smaller the value of q, the more convoluted the area is, and
+therefore more charging stations need to be put to cover the e ntire public place. Hence, n is inversely
+related to q.
+Combining the Relationships
+Combining the relationships, we have
+n = A
+qd2π .
+To test the reliability and accuracy of this formula,
+we tested it on Bold Park in Australia (more testing
+cases can be found in appendix). Its area is 437 hectares
+= 4.371 km 2 [8]; based on the map [9], we obtained q =
+0.5925; we consider the case where visitors can ﬁnd a
+charging point within 5-minute walking distance ( d =
+5/12 km). Our calculation revealed that n = 14.90 ≈ 15,
+meaning that 15 charging stations are needed.
+To test the accuracy of this result, we manually put
+charging points on the map to ﬁnd out how many charg-
+ing stations are needed. On the map below, each circle
+represents the coverage of a charging point. The radius
+of each circle (which is d) should be 5 /12 km, and we
+used the scale at the bottom left corner to obtain the
+size of the circle. As the map below shows, to cover the park, we need exactly 15 charging points,
+which shows that our formula is reasonably accurate.
+HiMCM 2019 Team 9564 Page 13 of 34
+Impatience Index
+Making d the subject of the above formula, we obtained d =
+√
+A
+qnπ . The impatience index, D2,
+increases when d increases. We assume that when the distance reaches 1.5 km, t he impatience index
+would reach its upper bound at 1. Hence,
+D2 =
+{
+2
+3 0 ≤ d ≤ 1.5
+1 d > 1.5
+As mentioned earlier, for illustration purposes here, we set A = 43500 and q = 0 .5. Then, we can
+investigate how the change in the number of charging points, n, aﬀects the impatience index, D2.
+5.3 Results and Interpretation
+Dissatisfaction Index
+We can now combine the need index D1 (which we obtained in Section 5.1), and the impatience
+index D2 (in Section 5.2) to obtain the overall dissatisfaction inde x, D using a weighted average. We
+consider the need index to be slightly more important than th e impatience index and assign to it a
+weight of 0.6, since it reﬂects one’s extent of need instead o f how quickly one’s demand is met. Hence,
+the dissatisfaction index is
+D = 0.6D1 + 0.4D2.
+Cost
+The number of working charging facility at a particular inst ant equals to 0 .8mp. The average
+charging rate of mobile devices are 5V 1A, which is 5W. Therefor e, the daily electricity consumption
+will be 0.004mp·H kWh. According to U.S. Energy Information Administration [2], t he cost of electricity
+is 0.11 $/kWh. Thus, the yearly variable cost will be
+Cv = 365 · 0.11 · 0.004mp · H.
+In cases where charging supply exceeds demands, Cv = 365 · 0.11 · 0.00404p · Mad justP LE · H
+The ﬁxed cost of installation is highly dependent on the elec tricity infrastructure as well as the
+charging provision plan (where to place the facility, which facility to choose). Thus the estimate we
+give here can only serve as a rough reference.
+In our model, the number of charging points is more relevant t o the installation cost as compared
+to the maximum charging capacity. The diﬀerence in the unit c ost of sockets with diﬀerent number of
+outlets is almost negligible compared to the cost to install one: A 2 receptacle 3 prong socket is usually
+below $5, that of a 6 receptacle below $15, whereas the average cost of installing a socket is around
+$200, including the cost of wiring, plastering and labor. The cost of installation of a charging kiosk is
+rather diﬀerent and will be discussed in Section 5.6.
+Here we will simply model the ﬁxed cost of installation based o n the number of charging points.
+Cf = 200n.
+Results
+Using the parameters of our hypothetical public place (as spe ciﬁed in Section 3.2), we varied both
+the maximum charging capacity, mp, and the number of charging points, n, to investigate how the
+dissatisfaction index, D, changes. Note that based on mp and n, we can directly calculate Cv and Cf .
+The results for 2019 is presented in ﬁgure 7 below.
+To model the case in 2021, we need to change the some parameter s ﬁrst. From the year of 2019
+to 2021, the ﬁrst main change is the proportion of smartphone owners, since smart phone ownership
+is expected to increase from 80.8% to 83.4%. Another change i s charging rate. Since phone battery
+capacity will increase from 3500 to 3800 in 2021, the time tak en to charge 1% battery will be comparative
+longer. Thus, the constant representing charging rate will decrease from 14 to 13. The results for 2021
+is presented in ﬁgure 8.
+HiMCM 2019 Team 9564 Page 14 of 34
+Figure 7: the Values of D for Each
+Combination of m and n in 2019
+Figure 8: the Values of D for Each
+Combination of m and n in 2021
+On both ﬁgures, the vertical axis represents m and the horizontal axis represents n. Each diﬀerent
+combination of m and n will determine a dissatisfaction index, represented by a co loured point on the
+plane. As shown on the color map on the right, the redder the col our, the higher the dissatisfaction
+index; the bluer the colour, the lower. As we can see, as m and n increases, D gradually decreases
+from 0.22 to 0.1. The magnitude of D is not very large in this case since not much charging demand i s
+generated in this public place. After all, visitors’ length o f stay is only 1.5 h.
+The public place owner can make use of these graphs to estimat e the maximum charging capacity
+and number of charging points they need in order to bring the d issatisfaction index down to a certain
+level. For example, if the public place currently has a maxim um charging capacity of 100 and 10
+charging points, the current dissatisfaction level would b e 0.15. If the owner wants to double both the
+charging capacity and the number of charging points to furth er bring the dissatisfaction index down
+to 0.13 in 2021, the ﬁxed cost Cf incurred will be 10 × 200 and the the annual electricity bill, Cv, will
+increase by about 365 · 0.11 · 0.004 · 100 · 12 = $192 .72.
+Although amount of charging services is freely determined by the owner of public places, based on
+the level of dissatisfaction level they aim to mitigate, we r ecommend that for the convenience of the
+public, it is best to keep the dissatisfaction level below 0. 2.
+5.4 Adaptation to Diﬀerent Places
+Sockets or Charging Kiosks?
+There are two main types of charging facilities for mobile de vices: open sockets and lockable charging
+kiosks.
+Figure 9: Open sockets
+ Figure 10: Charging Kiosks
+Which charging facility to install is mainly dependent on the mobility of the place. Mobility of a
+public space is deﬁned as the tendency for its visitor to move around. We deﬁne the mobility index
+is the ratio between the amount of time when visitors walk aro und and the total length of stay.
+Listed next page are the estimated mobility index for some ty pical public spaces.
+HiMCM 2019 Team 9564 Page 15 of 34
+Public space Library Cafe Airport Hospital Park Shopping Mall
+Mobility Index 0 0 0.6 0.8 1 1
+For places with high mobility such as shopping malls, people may not be willing to stay around
+an open socket and wait until their device is fully charged. A charging kiosk will therefore be more
+suitable. It allows users to lock their phones inside the cha rging station, go around to other places and
+retrieve it later. An 8-outlet charging kiosk typically cost s $1200, and requires a 3 prong 120V socket.
+For places with low mobility, sockets are usually provided i nstead of lockable charging stations.
+They are much cheaper (around $15 for 4 USB outlets) and less bulky compared to charging kiosk s.
+There are usually seats are provided at these area, and socke ts are attached to these seats – this may
+potentially result in a lower active index, since seats with sockets might be occupied by someone who
+is not charging, which may prevent others from accessing the facility. Walking time is less relevant for
+low mobility area, since people usually do not intentionall y move to these area to charge.
+There are exceptions as well. Parks, for example, is a large p ublic space with high mobility. Yet
+installing charging kiosks may not be suitable since it woul d be overly costly, and it may also cause
+inconvenience for people to go all the way back to retrieve th eir phones. Therefore, sockets near benches
+might be a better option for people to juice up their devices w hile they sit and chill.
+Places with a medium mobility such as airports usually incor porate features of both: there are area
+where people move around as well as area where people sit down and wait. Both types of charging
+facility can be installed in these places. The manager of the place may consider to set up more charging
+points in waiting area rather than mobile area so as to reduce cost by installing fewer charging kiosks.
+Working index
+Our general model mainly focuses on the charging demands inc urred by smartphones. On top of
+that, another personal device that incur charging demand in public spaces is laptop. Unlike smart
+phones which which people brought with them all the time, lap tops are only used in a limited number
+of spaces where people tend to do work. Therefore, we measure this tendency with a working index,
+which indicates the likeliness of a person who visit the plac e to do work on their laptop.
+We assume that working area can only be area with low mobility : it would be ridiculous for a person
+to walk around with a laptop! And laptop can only charge at 3 pro ng sockets, which has a relatively
+low cost ( $3 for two outlets).
+Listed below are the estimated working index for some typica l public spaces.
+Public space Oﬃce School Library Cafe Airport Shopping Mall
+Working Index 1.00 0.75 0.80 0.40 0.20 0
+This index is used in the part where we consider the charging r ecipients. It will be multiplied with
+p to give the total number of laptop user in the space. For examp le, the expression for laptop charging
+recipients in cafe will be
+R = 0.8mp
+0.4pP L · P LE
+Multi-storey buildings
+Our current area model (Section 5.4) only considers places i n 2D, disregarding the vertical dimension.
+For places with multiple storeys, we will be applying our are a model multiple times to each storey and
+calculate the number of charging points required at each sto rey. The impatience index will be the
+average of each storey.
+HiMCM 2019 Team 9564 Page 16 of 34
+6 Model Testing
+To test if our model generates useful and accurate results fo r diﬀerent types of public places, we
+applied it to the following cases:
+Airport Terminals Airport terminals are an ideal example of a extreme testing ca se due to their
+large numbers of daily visitors, long operating hours and lo ng average length of stay. more importantly,
+airport terminals also have the lowest compactness index am ong almost all types of places due to their
+functionality (to connect to as many aircraft as possible). We estimated this set of parameters based
+on Singapore Changi Airport [10].
+Nature Parks Nature parks are extreme cases with huge areas and relatively low number of visitors
+(as compared to its huge area). We estimated this set of param eters based on Bold Park in Australia.
+Caf´ es Caf´ es are small and compact places with a small daily visitor ﬂow. They also have low mobility
+index and medium working index.
+Schools Schools have long operating hours, medium area and number of people. More importantly,
+they are typical places with high working index. We set the pa rameters based on our own school. (The
+results we obtained here is mentioned in our one-page newspa per article.)
+For each place, we calculated the number of EV charging stati ons ( me) needed in order to achieve
+our proposed threshold of dissatisfaction index for EVs, whi ch is 0.05 as mentioned in Section 4.
+For personal devices, we calculated the maximum charging ca pacity (mp) and the number of charging
+points, n, needed to achieve our proposed threshold of 0.2. We noticed that this can be achieved by
+diﬀerent combinations of mp and n. We chose the combination that results in the lowest value of
+Cf + 3Cv, that is, the sum of ﬁxed cost plus three years of variable cos ts. This is because the charging
+services provided may not be suﬃcient after three years and n eed to be updated again due to the rapid
+growth in charging demands.
+The parameters and results are presented below:
+Place N re T /h H/h Working Index A/m2 q
+Airport 96000 500 5 (visitors)
+0.5 (drivers) 24 0.2 1.31 × 106 0.3
+Park 3000 30 5 16 0 4.37 × 106 0.59
+School 3000 NA 8 10 0.75 3.2 × 105 0.7
+Cafe 240 NA 2 12 0.4 40 0.9
+Table 1: Parameters
+Place me Cf /$ Cv/$
+Airport 11 33,000 270,000
+17 51,000 470,000
+Park 9 27,000 26,000
+14 42,000 46,000
+Table 2: Results for EVs
+Place mp n Cf /$ Cv/$
+Airport 1,449 197 394,000 394,550
+1,492 199 398,000 409,860
+Park 81 20 36,000 4,300
+88 20 42,000 4,900
+Caf´ e 6 1 2000 1100
+6 1 2000 1100
+School 591 57 114,000 126,370
+616 57 114,000 130,650
+Table 3: Results for Personal Devices
+2019
+2021
+Analysis
+Airport Terminal Based table 2, to meet the demand for EV charging, both ﬁxed an d variable cost
+would increase by more than 50%. This is a reasonable predict ion, given the large daily visitorship
+and the rapid growth in the number of EVs on the road. To satisfy the demand for personal devices
+charging, 2 more charging points and 50 more sockets need to b e provided, which is a steady growth.
+This growth rate may seem a bit small as compared to the rate of expansion of many airports. The
+main reason is that our generalized model does not consider t he rapid growth in air travel, which greatly
+increases the airport passenger ﬂow, as this growth is speci ﬁc to airports.
+HiMCM 2019 Team 9564 Page 17 of 34
+Nature Parks For EV charging, nature parks has also seen a more than 50% inc rease in costs from
+2019 to 2021 due to the rapid growth in the number EVs. However, a s compared to airport, the extent
+of costs are considerably smaller due to the a smaller visito rship. To satisfy the increase in personal
+device charging, no more charging points need to be installe d and the maximum charging capacity only
+needs to be slightly increased. Our model also suggests that the charging capacity of each charging
+point is about 81 /20 ≈ 4, which is signiﬁcantly lower than that of other places. Henc e, we suggest that
+instead of having a centralized charging stations with larg e capacities, it is better for parks to have a
+large number of charging facilities with small capacities t o cover a wider area, as this better improves
+the convenience of visitors and makes them more satisﬁed.
+Caf´ e Based on table 3, our small caf´ e with a daily visitorship of 2 40 does not need to expand their
+charging provision plan. Indeed, many caf´ es already provi des a socket per table, which is suﬃcient.
+Note that the number of charging stations is , but this does not mean that caf´ es need to install a
+charging kiosk with 6 sockets. Instead, the caf´ e itself can be viewed as a single charging point since the
+sockets are all in proximity to each other.
+School As shown in table 3, For schools, not many additional faciliti es need to be provided. Indeed,
+most students and staﬀ already own mobile phones and laptops . There is unlikely to be a large increase
+in demand in two years.
+7 Costs relevant to the customer
+Ostensibly, the public places are paying for these large amo unt of charging costs and we are enjoying
+this service for free. But is there such thing as a free lunch? According to the second law of demand,
+such an increase in cost will always be split between the prod ucers and consumers.
+Price Elasticity of Demand and supply In our ﬁrst case, we assume that providing “free” charging
+service do not aﬀect the demand for the goods this producer pr imarily produce (for example, restaurants
+primarily sell food). Hence, providing electricity and char ging service leads to an increase in the cost of
+production and hence a decrease in supply because the produc ers will be less able to provide the goods.
+As shown in ﬁgure 8, the increased cost of production is repres ented by rectangle ABCD . The blue
+section is paid by the consumers whereas the green section is paid by the producers. The proportion of
+the two areas is determined by the gradients of the demand and supply curve. The gradients, also called
+price elasticity of demand and supply, measures the degree o f responsiveness of quantity demanded and
+supplied of a good to a change in its own price. Hence, whoever i s less responsive to changes in prices
+will bear more of the cost.
+Figure 11: Market of goods with diﬀerent PED and PES
+HiMCM 2019 Team 9564 Page 18 of 34
+The Principle of Reciprocity However, the assumption that providing free charging does no t
+change the demand curve is not always true. According to the Pr inciple of Reciprocity, human have
+the tendency to give something back when they receive someth ing since we are compelled not to feel
+indebted to others. This tendency is the highest when the gif t is given without any expectation of return.
+This eﬀect makes a big diﬀerence in our second case—places li ke shopping malls where the provision of
+free charging is not a necessity and not expected to be part of their services. According to an experiment
+conducted by ChargeItSpot, one of the biggest charging stat ion companies in the U.S., in places where
+free charging station is installed, customers stay 2.3 time s longer and sales volume is boosted by 1.65
+times. Similarly, EV drivers are more likely to purchase goo ds from shopping malls where EV charging
+is provided. Hence, the producers need to take into account of the customers‘ “gratitude” in order to
+optimize the cost and eﬀect of their free charging service. G ratitude is dependent on the size of the
+“free gift” and the recipient’s income, and it indicates the tendency of recipients to return the favour.
+According to The Economics of Reciprocity, Giving and Altruism [11], the resultant eﬀect of such an
+exchange-driven action is positively correlated with the i ncome of the recipient. Hence, a higher cost
+in installing EV charging stations also brings higher resul tant reward, because this free gift is larger,
+and EV drivers have a much higher average income than normal v isitors.
+8 Initiatives to reduce cost
+In light of this increase in energy consumption in public pla ces, we propose initiatives to make
+charging infrastructure smarter, more eﬃcient and more sus tainable.
+8.1 Smarter
+We suggest implementing smart EV charging stations with the capability of dynamic power distri-
+bution. This means automatic allocation of available power capacity of a public place to newly built
+charging stations, reducing the potential extra cost of ove rshooting and grid upgrades. Moreover, the
+power supplied to individual stations can be automatically adjusted to cater to the varying energy
+demand in peak or oﬀ-peak hours, thus have the electricity bi ll under control. This initiative is proven
+to be both eﬀective and ﬁnancially viable by similar enterpr ises such as EVBOX. These companies con-
+tinue to improve their smart-charging technology so that a l arge-scale upgrade to the existing charging
+infrastructure can be made possible.
+8.2 More eﬃcient
+On 9 th Oct, 2019, the Nobel Prize in Chemistry was awarded to three sc ientists “for the devel-
+opment of lithium-ion battery” because it “laid the foundat ion of a wireless, fossil fuel-free society”.
+Although this invention is not recent, its recognition signa ls a paradigm shift in our mindset and points
+the future direction of scientiﬁc research: the pursuit of m ore and more cost-eﬃcient technology for
+energy generation, storage, transmission and consumption . Therefore, we propose the government to
+increase funding in research in relevant ﬁelds as well as to g ive subsidies for R&D of private ﬁrms so
+as to encourage reduction in energy usage and wastage in exis ting vehicles and gadgets. With these
+improvements, the annual electricity bill, Cv, is likely to decrease, reducing the variable cost of the
+increase in public charging demand.
+8.3 More sustainable
+According to our model, the large-scale installation of char ging infrastructure is inevitable in order
+to cater to the increasing public charging demand. Conseque ntly, these charging infrastructures take up
+a lot of space in this increasingly crowded world. Therefore , for maximum utilization of the public space,
+we propose integration of electricity generation into char ging stations. Solar panels can be installed on
+charging stations to collect solar energy and convert it to e lectricity. As the industry leader of electric
+vehicles and charging infrastructure, Tesla introduced Su percharger V3 in July 2019 as an essential
+component of its worldwide Supercharger network. Although c harging stations like Superchargers still
+purchase a large proportion of electricity from the grid, so lar panels still bring down the cost by a
+considerable amount. With the future development of solar pa nel technology, we believe it is possible
+HiMCM 2019 Team 9564 Page 19 of 34
+for charging stations to become completely self-sustained . This belief is attested to by Elon Musk, the
+CEO of Tesla, who suggested “the Tesla of the future could dit ch grid power” and replace it with its
+own self- sustainable energy ecosystem. With this, the price for providing a unit of electricity will drop
+drastically, reducing the variable cost, Cv.
+8.4 Policies and education
+Apart from improvements to charging infrastructure, eﬀecti ve management of charging stations can
+play an important role, too. According to a JRC-led study of EV c harging times in the Netherlands,
+61.4% of the time that electric vehicles spend connected to p ublic charging stations, they are idly
+occupying the charging spot. This results in ineﬃcient use o f public resources as well as a waste of
+electricity. To counter that, charging station operators c an charge an extra fee for every minute after
+a vehicle is fully charged. This can be easily implemented fo r personal device charging as well. We
+foresee this to eﬀectively change user behavior. Both the re duction in usage and extra fee collected can
+reduce the annual electricity bill, Cv.
+We also propose moral suasion to transform the nature of publ ic charging stations from ﬁrst-come-
+ﬁrst-serve to need-based. Public place operators can paste slogans to persuade users to allow people
+with very urgent charging needs to use the facilities ﬁrst. T his is meant to reduce user’s inclination for
+abusing the free charging facilities as some may convenient ly plug in their appliances even though they
+are almost fully charged.
+This can lead to interesting changes to the cost model as now o nly devices with a certain level of
+battery(e.g. 0 ≤ b ≤ 40) are charged. In the EV context, since cars with more than 4 0% battery do
+not contribute to dissatisfaction index( D1 = 0 for 100 ≥ b ≥ 40), the facility operator can install less
+charging stations to meet the same level of satisfaction( D = 0 .05). This is seen in Fig 13 in which
+3 less charging stations can be installed, reducing the ﬁxed cost by $9000. Moreover, total electricity
+consumption will also decrease as cars with high battery lev el will not use the facilities. This is seen in
+Fig in which when d = 0 .05, $11000 can be saved annually due to decrease in electricity co nsumption
+Both factors contribute to a decrease in Cf and Cv respectively, and hence reducing the overall cost C.
+Figure 12: The Graph of D against me
+ Figure 13: The Graph of Cv against D
+9 Strengths & Weaknesses
+9.1 Strengths
+• Our model utilizes a comprehensive list of real-life data wh ich ensures our simulation to be as
+realistic as possible
+– Using sales volumes of diﬀerent EV models to represent their f requencies of appearing and
+their respective charging speciﬁcations to simulate real- life charging, our model makes the
+results of our simulation to be very convincing.
+HiMCM 2019 Team 9564 Page 20 of 34
+• Our model is ﬂexible enough to adapt to diﬀerent public place s by capturing important features
+of public places as parameters, hence allowing simple adjus tments to be made to diﬀerentiate
+places easily.
+– Users can customize features such as operating hours, averag e lengths of stay and area to
+suit their own situations.
+• Instead of treating individuals as data points that display universal behaviour, our model takes
+into account of consumer psychology by incorporating behav ioural concepts such as impatience,
+dissatisfaction and free-ridership.This can accurately c apture real-life situations in our model
+which again ensures minimum simpliﬁcation.
+9.2 Weaknesses
+• Our model does not take into account of the eﬀect of peak hours .
+– It can possibly be improved by changing N , the variable representing daily visitor, into a
+function with respect to time. We leave this opportunity to t he user of our algorithm to
+customize according to N of a speciﬁc place.
+• Our model does not consider the battery wear level of individ ual devices, which can be a result
+of prolonged usage.
+– However, since electric vehicles have only become popular in these past 5 years, it is not
+unreasonable to assume that these batteries are all near ful l capacity.
+• Our cost model does not consider electricity grid upgrade co st due to an increase in public charging
+demand.
+– However, since this demand only takes up a small portion of ful l grid capacity (the bulky
+ones being air-conditioning, lighting, etc.), and can also be addressed using smart charging
+stations introduced in the initiative section, it is reason able to neglect this cost.
+10 Conclusion and Future Work
+In conclusion, we introduced a dissatisfaction index and ca lculated the costs of keeping the index
+at a reasonably low level. For EVs, we developed a queuing mode l in the SimPy library of python
+and ran over 75000 simulations for diﬀerent public places an d years. For personal devices, we modeled
+electricity consumption in a public place by using matrix tr ansformation. Together with the area and
+compactness index, we can calculate the dissatisfaction in dex and its corresponding cost. Obtaining
+features of diﬀerent public places and of diﬀerent time, usi ng them as inputs to our model, we were
+able to compare the diﬀerence in cost over time and space. We f ound that in order to maintain the
+same satisfaction level in 2021, the cost will stay relative ly the same for mobile devices and will double
+for EVs. We then proposed numerous initiatives to reduce the c ost from multiple angles by targeting
+at the technological, social and behavioral aspects of the i ssue.
+In the future, we can seek to use a more data-analytical appro ach, as shown by recent astonishing
+developments in the ﬁeld of machine learning. With the guidin g principle that more data reveals a
+more accurate pattern and trend, the robustness of our model can be further improved. We can also
+expand our model to consider other countries, such as China, the largest electric vehicle market in the
+world with an exponentially increasing energy consumption .
+The trend towards a fossil fuel-free society is almost irrev ersible, and there will certainly be rapid
+technological advancements coming along with it: better ba ttery design, more powerful charging facil-
+ities, or even super-eﬃcient solar panels. Therefore, our m odel will need to be constantly updated to
+catch up with the trend and hopefully, it will continue to pro vide relevant insights to future development
+in this area.
+HiMCM 2019 Team 9564 Page 21 of 34
+References
+[1] U.S. Department of Energy. Costs associated with non-res idential electric vehicle supply equipment,
+Nov 2015.
+[2] U.s. energy information administration - eia - independe nt statistics and analysis.
+[3] Fred Lambert, Fred Lambert, and Fred. Tesla quietly rele ases notiﬁcation feature to make sure
+you never run out of charge, Sep 2018.
+[4] Average annual miles per driver by age group.
+[5] Adam Cooper (IEI) and Kellen Schefter (EEI). Electric veh icle sales forecast and the charging
+infrastructure required through 2030.
+[6] Acaia Support. How long will the battery last after it’s bee n fully charged?
+[7] Alan M. Maceachren. Compactness of geographic shape: Com parison and evaluation of measures.
+Geograﬁska Annaler: Series B, Human Geography , 67(1):53–67, 1985.
+[8] Government of Western Australia. Bold park website.
+[9] Government of Western Australia. Bold park visitor map.
+[10] Facts statistics - changi airport.
+[11] Gerard-Varet Louis Andre, Serge-Christophe Kolm, and Je an Mercier Ythier. The economics of
+reciprocity, giving, and altruism . Macmillan, 2000.
+HiMCM 2019 Team 9564 Page 22 of 34
+Appendices
+Queuing model for slow charging
+from SimPy.Simulation import *
+from random import expovariate,gauss,choices,seed,uniform
+import os
+def dissatisfaction_func(battery_percentage):
+’’’
+calculate dissatisfaction based on battery percentage
+’’’
+if battery_percentage <= 0.09:
+return 1
+elif 0.09<battery_percentage<=0.40:
+return battery_percentage*-1/0.31 + 0.4/0.31
+else:
+return 0
+class Source(Process):
+def generate(self,number,meanTBA,resource,trial_num):
+for i in range (number):
+car = EV(name = ’%d’%i)
+activate(
+car, car.visit(station = resource,trial_num = trial_num)
+)
+#arrival of cars is an exponential distribution
+t = expovariate(1/meanTBA)
+yield hold,self,t
+class EV(Process):
+def visit(self,station,trial_num):
+battery_percentage = uniform(0,1)
+models = {
+’tesla_3’:(75,50),’tesla_s’:(100,50),’nissan_leaf’:(62,50),
+’tesla_x’:(100,50),’chevrolet_bolt’:(60,50)
+}
+vehicle_type = choices(
+list(models.keys()), weights = [0.292,0.264,0.236,0.125,0.083]
+)
+battery_pack = models[vehicle_type[0]][0]
+battery_level = battery_pack *battery_percentage
+charging_speed = models[vehicle_type[0]][1]
+charge_to_full_time = (battery_pack-battery_level)/charging_speed
+arrive = now()
+print("%0.2f %s arriving"%(now(),self.name))
+#if free, start charging, if busy put in queue
+#set patience to be 0
+yield (request,self,station),(hold,self,0)
+if self.acquired(station):
+#how long a person stays is an exponential distribution
+staying_time = expovariate(1/1.5)
+yield hold,self,staying_time
+#done charging
+yield release,self,station
+leave = now()
+print("%0.2f %s finished"%(now(),self.name))
+dissatisfaction = 0
+actual_charging_time = min(staying_time,charge_to_full_time)
+consumption = actual_charging_time *charging_speed
+else:
+HiMCM 2019 Team 9564 Page 23 of 34
+print(’%s not waiting anymore’%self.name)
+leave = now()
+staying_time = 0
+dissatisfaction = dissatisfaction_func(battery_percentage)
+actual_charging_time = 0
+consumption = 0
+for station_number in range (1,10):
+for trial in range (500):
+#upper bound for vehicle arrival
+max_number = 99999
+#operating hours
+max_time = 16
+#parameter for exponential distribution
+TBA = 0.296
+num_stations = station_number
+k = Resource(capacity = num_stations,name = ’charging_station’)
+initialize()
+source = Source(name = ’source’)
+activate(source,source.generate(
+number = max_number,meanTBA = TBA,
+resource = k, trial_num = trial),at= 0.0)
+simulate(until = max_time)
+HiMCM 2019 Team 9564 Page 24 of 34
+Queuing model for fast charging
+from SimPy.Simulation import *
+from random import expovariate,uniform,choices,seed
+import os
+def dissatisfaction_func(wait):
+if wait >= 0.5:
+return 1
+else:
+return wait
+class Source(Process):
+def generate(self,number,meanTBA,resource,trial_num):
+for i in range (number):
+car = EV(name = ’Car%d’%i)
+activate(
+car, car.visit(station = resource,trial_num = trial_num)
+)
+t = expovariate(1/meanTBA)
+yield hold,self,t
+class EV(Process):
+def visit(self,station,trial_num):
+battery_percentage = uniform(0,0.4)
+models = {’tesla_3’:(75,50),’tesla_s’:(100,50),
+’nissan_leaf’:(62,50),’tesla_x’:(100,50),’chevrolet_bolt’:(60,50)}
+vehicle_type = choices( list(models.keys()),
+weights = [0.292,0.264,0.236,0.125,0.083])
+battery_pack = models[vehicle_type[0]][0]
+battery_level = battery_pack *battery_percentage
+charging_speed = models[vehicle_type[0]][1]
+charging_time = (battery_pack-battery_level)/charging_speed
+arrive = now()
+print("%0.2f %s arriving"%(now(),self.name))
+if battery_percentage<=0.09:
+#<0.09 users will wait no matter what
+yield (request,self,station)
+wait = now() - arrive
+print ("%0.2f %s waited for %0.2f"%(now(),self.name,wait))
+staying_time = 0.5
+yield hold,self,staying_time #charging take place
+yield release,self,station #done charging
+leave = now()
+print("%0.2f %s finished"%(now(),self.name))
+dissatisfaction = dissatisfaction_func(wait)
+consumption = staying_time *charging_speed
+else:
+#free riders only charges when there are available spots
+yield (request,self,station),(hold,self,0)
+if self.acquired(station):
+staying_time = 0.5
+wait = 0
+yield hold,self,staying_time
+yield release,self,station #done charging
+leave = now()
+print("%0.2f %s finished"%(now(),self.name))
+dissatisfaction = 0
+consumption = staying_time *charging_speed
+for station_number in range (1,16):
+HiMCM 2019 Team 9564 Page 25 of 34
+for trial in range (500):
+os.makedirs(’%d/trial%d’%(station_number,trial))
+max_number = 9999
+max_time = 24
+TBA = 0.0667
+k = Resource(capacity = station_number,name = ’charging_station’)
+initialize()
+source = Source(name = ’source’)
+activate(source,source.generate(
+number = max_number,meanTBA = TBA,
+resource = k, trial_num = trial),at= 0.0)
+simulate(until = max_time)
+HiMCM 2019 Team 9564 Page 26 of 34
+Compactness of a public place
+clear all ; close all ; clc;
+P1 = imread(’airport3.jpg’);
+x=findCompactness(P1)
+Area=0.6968;
+number=Area/(0.42ˆ2*pi*x)
+function compactness = findCompactness(map)
+[BW,maskedRGBImage]=createMask7(map);
+A = regionprops(BW,’Area’);
+Atotal=sum([A(:).Area]);
+PixelL = regionprops(BW,’PixelList’);
+s=size(PixelL);
+coordinate=[];
+for i=1:s
+coordinate =[coordinate; PixelL(i).PixelList];
+end
+vX=var(coordinate(:,1));
+vY=var(coordinate(:,2));
+compactness=Atotal/(2*pi*(vX+vY));
+function [BW,maskedRGBImage] = createMask7(RGB)
+% createMask Threshold RGB image using auto-generated
+% code from colorThresholder app.
+% [BW,MASKEDRGBIMAGE] = createMask(RGB) thresholds image RGB
+% using auto-generated code from the colorThresholder App.
+% The colorspace and minimum/maximum values for each channel
+% of the colorspace were set in the App and result in
+% a binary mask BW and a composite image maskedRGBImage,
+% which shows the original RGB image values under the mask BW.
+% Auto-generated by colorThresholder app on 12-Nov-2019
+%------------------------------------------------------
+% Convert RGB image to chosen color space
+I = rgb2hsv(RGB);
+% Define thresholds for channel 1 based on histogram settings
+channel1Min = 0.000;
+channel1Max = 0.000;
+% Define thresholds for channel 2 based on histogram settings
+channel2Min = 0.000;
+channel2Max = 0.103;
+% Define thresholds for channel 3 based on histogram settings
+channel3Min = 0.788;
+channel3Max = 1.000;
+% Create mask based on chosen histogram thresholds
+BW = ( (I(:,:,1) >= channel1Min) | (I(:,:,1) <= channel1Max) ) & ...
+(I(:,:,2) >= channel2Min ) & (I(:,:,2) <= channel2Max) & ...
+(I(:,:,3) >= channel3Min ) & (I(:,:,3) <= channel3Max);
+% Initialize output masked image based on input image.
+maskedRGBImage = RGB;
+% Set background pixels where BW is false to zero.
+maskedRGBImage(repmat(˜BW,[1 1 3])) = 0;
+HiMCM 2019 Team 9564 Page 27 of 34
+Need index
+function [dcap,dissatisfaction]=Dis(T,owningrate,type,p,m)
+p=p*owningrate; %number of devices
+chargingrate1=10; % charging rate:consumption rate for phones
+chargingrate2=2; % charging rate:consumption rate for laptops
+t=0.1; % time unit is 0.1 hour
+Battery=(1:100); % battery level
+I=diag(ones(1,100)); % Identity matrix
+sigma=40;
+mean=50;
+if type ==1
+chargingrate=chargingrate1;
+else
+chargingrate=chargingrate2;
+end
+% distribution
+y = exp(-((Battery-mean).ˆ2)/(2*sigmaˆ2))/(sigma*(2*pi)ˆ0.5);
+%normal distribution
+L=y’/sum(y); % distribution of people’s battery level
+Dcharge=(1-1./(1+10000*exp(-0.4*Battery))).ˆ0.15;
+% proportion of people who want to charge against battery level
+dis=(1-1./(1+10000*exp(-0.3*Battery))).ˆ0.3;
+% dissatisfaction score against battery level
+ConsumeMat=circshift(I,[0,1]);
+ConsumeMat(1,1)=1; ConsumeMat(100,1)=0;
+ChargeMat=circshift(I,[0,-chargingrate]);
+ChargeMat(1:chargingrate,101-chargingrate:100)=0;
+ChargeMat(100,101-chargingrate:100)=1;
+A=diag(Dcharge);
+R=(ChargeMat-I)*A*L*m/sum(A*L*p);
+change=T/t*(ConsumeMat*L+R-L);
+changecap=T/t*(ConsumeMat*L-L);
+dcap=sum(diag(dis)*A*changecap);
+dObtained=sum(diag(dis)*A*change);
+% dnormalized=dObtained/dcap
+dissatisfaction=dObtained;
+end
+HiMCM 2019 Team 9564 Page 28 of 34
+Installation plan for personal devices charger
+function [result19,result21]=PDflow(tc)
+tc.m1=ceil(max(tc.A/50000,tc.p*tc.T/100));
+tc.m2=ceil(max(tc.A/50000,tc.p*tc.PCown));
+tc.n=ceil(tc.A/tc.compactness/20000);
+function [userate,dObtained1]=Dis2(year,T,owningrate,type,p,mMax)
+m=(1:mMax);
+p=p*owningrate; %number of devices
+if year==2019
+chargingrate1=14; % charging rate:consumption rate for phones
+else
+chargingrate1=13;
+p=p*1.03;
+end
+chargingrate2=2; % charging rate:consumption rate for laptops
+t=0.1; % time unit is 0.1 hour
+Battery=(1:100); % battery level
+I=diag(ones(1,100)); % Identity matrix
+sigma=40;
+mean=50;
+if type ==1
+chargingrate=chargingrate1;
+else
+chargingrate=chargingrate2;
+end
+% distribution
+y = exp(-((Battery-mean).ˆ2)/(2*sigmaˆ2))/(sigma*(2*pi)ˆ0.5);
+%normal distribution
+L=y’/sum(y); % distribution of people’s battery level
+Dcharge=(1-1./(1+10000*exp(-0.4*Battery))).ˆ0.15;
+% proportion of people who want to charge against battery level
+dis=(1-1./(1+10000*exp(-0.3*Battery))).ˆ0.3;
+% dissatisfaction score against battery level
+ConsumeMat=circshift(I,[0,1]);
+ConsumeMat(1,1)=1; ConsumeMat(100,1)=0;
+ChargeMat=circshift(I,[0,-chargingrate]);
+ChargeMat(1:chargingrate,101-chargingrate:100)=0;
+ChargeMat(100,101-chargingrate:100)=1;
+A=diag(Dcharge);
+R=A*L*m/sum(A*L*p);
+userate=m/sum(A*L*p);
+change=T/t*(repmat(ConsumeMat*L-L,1,mMax)+(ChargeMat-I)*R);
+%changecap=T/t*(ConsumeMat*L-L);
+%dcap=sum(diag(dis)*A*changecap);
+dObtained=diag(dis)*A*change;
+dObtained1=sum(dObtained,1);
+% figure
+% plot(dObtained1);
+end
+%impatience idx
+function IDX=Impatience(Area,compactness,nMax)
+n=(1:nMax);
+d=(Area./(compactness*n*pi)).ˆ0.5;
+IDX=(1./(1+10000*exp(-0.008*d))).ˆ0.2;
+end
+function COST(userate,m,n)
+M=(1:2*m);
+Cv= 365 *0.11*M*tc.H.*min(userate(M),1);
+N=(1:2*n);
+Cf=200*N;
+HiMCM 2019 Team 9564 Page 29 of 34
+cost=3*repmat(Cv’,1,tc.n*2)+repmat(Cf,m*2,1);
+figure
+contourf(N,M,cost)
+xlabel(’Number of charging points’)
+ylabel(’Maximum Charging Capacity’)
+title(’Cost curve’)
+colorbar;
+end
+function [a,b]=best(DD,cost)
+Ans=1000000000000000;
+[x,y]=size(DD);
+a=1;b=1;
+for i=1:x
+for j=1:y
+if DD(i,j)<=0.2
+if cost(i,j)<Ans && i>=4 *j
+a=i;
+b=j;
+Ans=cost(i,j);
+end
+end
+end
+end
+end
+year=2019;
+impatience=Impatience(tc.A,tc.compactness,tc.n*2);
+%phone charging
+[userate,p1]=Dis2(year,tc.T,tc.phoneOwn,1,tc.p,tc.m1*2);
+COST(userate,tc.m1,tc.n);
+DD1=0.6*repmat(p1’,1,tc.n*2)+0.4*repmat(impatience,tc.m1*2,1);
+figure
+contourf(1:tc.n*2,1:tc.m1*2,DD1)
+xlabel(’number of charging points’)
+ylabel(’Maximum Charging Capacity’)
+title(’Graph of dissatisfaction index (2019)’)
+colorbar;
+colormap(jet);
+[a1,b1]=best(DD1,cost);
+fix1=2000*b1;
+variable1=365*0.11*a1*tc.H*min(userate(a1),1);
+A1=0; B1=0;fix2=0;variable2=0;
+if tc.PCown>0
+[userate,p2]=Dis2(year,tc.T,tc.PCown,2,tc.p,tc.m2*2);
+COST(userate,tc.m2,tc.n);
+DD2=0.6*repmat(p2’,1,tc.n*2)+0.4*repmat(impatience,tc.m2*2,1);
+figure
+contourf(1:tc.n*2,1:tc.m2*2,DD2)
+xlabel(’number of charging points’)
+ylabel(’Maximum Charging Capacity’)
+title(’PC dissatisfaction index (2019)’)
+colorbar;
+colormap(jet);
+[A1,B1]=best(DD2,cost);
+fix2=2000*B1;
+variable2=365*0.11*A1*tc.H*min(userate(A1),1);
+end
+result19.capacity=a1+A1;
+HiMCM 2019 Team 9564 Page 30 of 34
+result19.cp=b1+B1;
+result19.fix=fix1+fix2;
+result19.variable=variable1+variable2;
+year=2021;
+%phone charging
+[userate,p1]=Dis2(year,tc.T,tc.phoneOwn,1,tc.p,tc.m1*2);
+COST(userate,tc.m1,tc.n);
+DD3=0.6*repmat(p1’,1,tc.n*2)+0.4*repmat(impatience,tc.m1*2,1);
+figure
+contourf(1:tc.n*2,1:tc.m1*2,DD3)
+xlabel(’number of charging points’)
+ylabel(’Maximum Charging Capacity’)
+title(’Graph of dissatisfaction index (2021)’)
+colorbar;
+colormap(jet);
+[a2,b2]=best(DD3,cost);
+fix3=2000*b2;
+variable3=365*0.11*a2*tc.H*min(userate(a2),1);
+A2=0; B2=0;fix4=0;variable4=0;
+if tc.PCown>0
+[userate,p2]=Dis2(year,tc.T,tc.PCown,2,tc.p,tc.m2*2);
+COST(userate,tc.m2,tc.n);
+DD4=0.6*repmat(p2’,1,tc.n*2)+0.4*repmat(impatience,tc.m2*2,1);
+figure
+contourf(1:tc.n*2,1:tc.m2*2,DD4)
+xlabel(’number of charging points’)
+ylabel(’Maximum Charging Capacity’)
+title(’PC dissatisfaction index (2019)’)
+colorbar;
+colormap(jet);
+[A2,B2]=best(DD4,cost);
+fix4=2000*B2;
+variable4=365*0.11*A2*tc.H*min(userate(A2),1);
+end
+result21.capacity=a2+A2;
+result21.cp=b2+B2;
+result21.fix=fix3+fix4;
+result21.variable=variable3+variable4;
+end
+HiMCM 2019 Team 9564 Page 31 of 34
+EV slow charging at diﬀerent public places
+Figure 14: Airport EV charging station
+Figure 15: Park EV charging station
+HiMCM 2019 Team 9564 Page 32 of 34
+Figure 16: Shopping mall EV charging station
+HiMCM 2019 Team 9564 Page 33 of 34
+EV fast charging at diﬀerent public places
+Figure 17: Airport EV fast charging station
+Figure 18: Cost of fast charging station in airport
+HiMCM 2019 Team 9564 Page 34 of 34
+Figure 19: Shopping mall fast charging station
+Figure 20: Cost of fast charging station in shopping mall

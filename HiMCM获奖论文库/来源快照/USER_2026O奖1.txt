@@ -1,0 +1,1024 @@
+Team Control Number
+16738
+Problem Chosen
+B
+2025
+HiMCM
+Summary Sheet
+Location Is Destiny: A Four-Stage MCDM Framework for
+Selecting Sustainable Mega-events Host Cities
+Large-scale sport mega-events like the Super Bowl present a significant environmental challenge, with
+sustainability outcomes critically dependent on the selection of the host city. This paper moves beyond
+superficialoperationalfixestoaddressthiscorestrategicissuebydevelopingacomprehensivemathematical
+model for selecting the most environmentally sustainable host city. Our approach is centered on a novel
+Four-Stage Assessment Framework(Supply, Consumption, Generation, Capacity) that deconstructs an
+event’s environmental footprint into a quantifiable, location-dependent process.
+To operationalize this framework, we constructed a robustMulti-Criteria Decision-Making (MCDM)
+model. First, we established a system of twelve secondary indicators, quantifying each using data from
+authoritative public sources. We then developed aCombined Weighting Model, integrating the subjective
+Analytic Network Process (ANP) with the objective Entropy Weight Method to produce a balanced and
+scientifically grounded set of indicator weights. The final sustainability ranking for 22 candidate cities was
+then calculated using theTOPSIS method. Our baseline model demonstrated high validity, aligning with
+real-world NFL decisions by ranking the San Francisco Bay Area (host of Super Bowl LX) as the second
+most sustainable option.
+To provide a forward-looking recommendation for the 2029 Super Bowl, we incorporated aTrend Extrap-
+olation Correction Model. By projecting policy-driven changes in key indicators like Grid Cleanliness
+and Waste Management, we forecasted the 2029 sustainability landscape. The analysis revealed distinct
+"archetypes" of sustainability—from the inherently green "All-Rounder" to the policy-driven "Improver."
+Afterapplyingareal-world"cooling-offperiod"constraint,ourmodelrecommendsSeattle,WA,asthepre-
+mier choice among new potential hosts due to its outstanding all-around performance, and theLos Angeles
+Areaas the best option among experienced hosts, driven by its aggressive clean energy policies.
+Finally, the model was extended to evaluate multi-venue mega-events like the Olympics, demonstrating its
+versatility. Our work provides the NFL with a transparent, data-driven, and strategically insightful tool for
+making future host city selections that are genuinely aligned with long-term environmental goals.
+Keywords: Sport Mega-Events; Sustainability; Host City Selection; Multi-Criteria Decision-Making
+(MCDM); Four-Stage Framework; Analytic Network Process (ANP); TOPSIS
+Contents
+1 Introduction and Problem Restatement 2
+1.1 Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.2 Our Approach: A Multi-Criteria Decision-Making (MCDM) model . . . . . . . . . . . . 2
+2 Assumptions and Justifications 3
+3 Symbol 4
+4 Task 1: Deconstructing Environmental Impact via Four-Stages 4
+4.1 A Four-Stage Framework for Environmental Impact Assessment . . . . . . . . . . . . . . 4
+4.2 Identifying Key Impact Factors and Their Geographic Variability . . . . . . . . . . . . . . 5
+5 Task 2: Construction of the Sustainability Evaluation Model 8
+5.1 Model Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+5.2 Step 1: Indicator Scoring and Decision Matrix Construction . . . . . . . . . . . . . . . . 9
+5.3 Step 2: The Combined Weighting Model . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+5.4 Step 3: TOPSIS-Based Comprehensive Evaluation . . . . . . . . . . . . . . . . . . . . . 14
+5.5 Step 4: Ranking and Result Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+5.6 Sensitivity Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+6 Task3: Selecting a Sustainable Host for Super Bowl 2029 16
+6.1 Application Context and Candidate Selection . . . . . . . . . . . . . . . . . . . . . . . . 17
+6.2 Dynamic Data Correction: Projecting 2029 Indicators via Trend Extrapolation . . . . . . . 17
+6.3 Results Analysis and Final Recommendation . . . . . . . . . . . . . . . . . . . . . . . . . 17
+7 Task4: Extending the Sustainability Model to Other Mega-events 20
+7.1 Model Extend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+7.2 Host Location Analysis of the Olympic Games . . . . . . . . . . . . . . . . . . . . . . . . 21
+7.3 Strategies for Cities to Keep Long-term High Sustainability Scores . . . . . . . . . . . . . 22
+7.4 Factors Affecting the Sustainability Evaluation of Two Types of Sports Events . . . . . . . 22
+8 Strengths and Weaknesses 23
+9 Conclusion 24
+10 Letter to NFL 25
+Team # 16738 Page 2 of 25
+1 Introduction and Problem Restatement
+1.1 Background
+Large-scale sport mega-events like the Olympic Games and the Super Bowl are defining features of our
+global culture, generating substantial socio-economic benefits. However, these events also leave a sig-
+nificant environmental footprint. Local ecosystems suffer immense pressure from the intensive resource
+consumption, large-scale construction, and concentrated global travel required for these events. Although
+sustainability has become a key focus for event organizers due to the rapid growth of global environmental
+awareness, a considerable gap often persists between sustainability commitments and actual environmental
+outcomes, highlighting the need for more scientific and transparent planning tools.
+The NFL’s Super Bowl provides a perfect case study for this challenge. As a single-venue event that
+movestoanewlocationannually,itallowsustoisolateandstudyacritical,yetoftenunderestimated,variable
+in the sustainability equation:the host city. An event’s environmental impact is not a fixed attribute; the
+specific context of its location fundamentally shapes it. The carbon intensity of the stadium’s electricity,
+the efficiency of public transportation for fans, and the capacity of local water and waste systems are all
+determined by the host city’s unique geographical and infrastructural characteristics.
+Thisleadstoakeyinsight: achievingtruesustainabilityrequiresashiftinperspective. Insteadofrelying
+on temporary fixes, such as adding solar panels to a stadium in a city powered by a coal-dominant grid,
+we need a more systematic approach to sustainability. The most impactful decision in making an event
+sustainableischoosingahostcitythatalreadypossessesarobustandresilientenvironmentalinfrastructure.
+Thechallenge,therefore,isnotjusttomaketheeventlookgreen,buttoselectalocationwheretheeventcan
+seamlessly integrate with an already sustainable urban system. This paper aims to develop a mathematical
+model that places this environmental logic at the very core of the host city selection process.
+1.2 Our Approach: A Multi-Criteria Decision-Making (MCDM) model
+ToaddresstheproblemastaskedbytheConsultingOrganizationMakingAthleticsPlanetpositive(COMAP),
+ourworkisstructuredasacomprehensive,multi-layeredinvestigation. Wewilldevelopamodeltoevaluate
+and provide insights into sustainable event hosting.
+First, we will deconstruct the complex environmental footprint of a mega-event into a structured frame-
+work of quantifiable indicators. Using Super Bowl LIX in New Orleans as a guiding case study, we will
+identifythekeydriversofenvironmentalimpact,fromresourcesupplyandconsumptiontowastegeneration
+and the local environment’s capacity to absorb these pressures. This allows us to understandhowandwhy
+the specific characteristics of a host city matter.
+Basedontheseindicators, wewillconstructaquantitativeMulti-CriteriaDecision-Making(MCDM)
+modelto rank potential host cities based solely on environmental performance. To ensure a robust and
+objective evaluation, we will integrate two powerful techniques: a combined weighting model (Analytic
+Network Process (ANP)andEntropy Weight Method) to determine the weights of our indicators by
+capturingtheircomplexinterdependencies,andtheTOPSISmethodtocalculateafinalsustainabilityscore
+for each city.
+Withourmodelbuiltandvalidated,wewillapplyittorecommendthemostsustainablehostforthe2029
+Super Bowl, considering both cities with prior hosting experience and those new to the event. To showcase
+themodel’sversatility,wewillthenextenditslogictoevaluatelarger,multi-venuecompetitions,suchasthe
+Olympics, incorporating additional factors, including inter-city travel and the impact of new construction.
+This entire process will culminate in a formal recommendation letter to the NFL, detailing our findings and
+the strategic rationale behind our choice.
+Team # 16738 Page 3 of 25
+Figure 1.1: The overall structure of our work
+2 Assumptions and Justifications
+•Assumption1:Weassumethattheon-siteresourceconsumption(e.g.,waterusage,wastegeneration)
+andbehaviorpatternsofanaverageattendeeareconsistentacrossdifferenthostcitiesforaSuperBowl
+event.
+Justification:This assumption allows our model to focus on the structural and geographical dif-
+ferences between cities. A mega-event like the Super Bowl operates within a highly standardized
+and controlled environment, thereby official vendors, operational protocols, and the nature of the fan
+experience are largely uniform, leading to consistent per-capita consumption and waste baselines.
+•Assumption 2:We assume that the nationally representative distribution based on the fanbases of
+all NFL teams can present the geographical distribution of traveling attendees.
+Justification:It is impossible to predict the exact travel patterns for all traveling attendees. By
+assuming a composite, national fan distribution, we can calculate a stable and comparable "average
+travel footprint" for each potential host city.
+•Assumption 3:We assume that a city’s core infrastructure remains stable, such as the public transit
+network, airport location, and the carbon intensity of its electricity grid.
+Justification:A week-long event, despite its intensity, has a negligible short-term impact on a city’s
+macro-level infrastructure or its regional energy generation mix.
+•Assumption 4:We assume that the selected environmental indicators within each category are
+sufficiently independent to be evaluated separately.
+Justification:Toreducemulti-collinearityintheecosystem,weselectindicatorsrepresentingdistinct
+environmentaldimensions(e.g.,airqualityisassumednottodirectlyaffectwaterstress). ANPisthen
+used to partially capture interdependencies among criteria.
+•Assumption5:Weassumethatdatafrompublicsources(e.g.,governmentdatabases,officialreports,
+and established scientific indices) are accurate and representative of the conditions in the host cities.
+Justification:By relying on reputable and standardized data sources, we ensure that our analysis is
+as objective and replicable as possible.
+Team # 16738 Page 4 of 25
+3 Symbol
+Table 3.1: Symbols and Notations Used in the Models
+Symbol Description Symbol Description
+AArea (m 2)MWaste and Material Score
+bInfluence coefficient (-)MFMaintenance Factor (-)
+CCarbon emissions (t CO 2)NNumber of people (people)
+cCarbon intensity (kg CO 2/MWh)PPower (MW)
+CCESCity Clean Energy Score (-)pProportion/Probability (-)
+CRSCCleanResourceSupplyCapacity(-)rRate/Ratio (-)
+DDistance in TOPSIS (-)SOverall Sustainability Score
+D1 Number of irrigation days (-)TTemperature (°C)
+dDistance (km)tTime duration (hours)
+EEnergy consumption (MWh)wWeight vector (-)
+EFEmission factor (g CO 2/MWh)X,Z,VMatrices for TOPSIS (-)
+ELBCEnvironmental Load-Bearing Ca-
+pacity (-)
+αRenewable energy ratio (-)
+fEfficiency factor (-)λWeight tuning coefficient (-)
+gGoal achievement coefficient (-)
+kCoefficient/Factor (-)
+LEEDLEED certification factor (-)
+4 Task 1: Deconstructing Environmental Impact via Four-Stages
+TheNationalFootballLeague(NFL)hasformallyintegratedsustainabilityintoitsstrategicvision,notonly
+as a member of the Green Sports Alliance but also through its dedicated NFL Green initiative [1]. This
+program is designed to mitigate the environmental impact of the NFL’s major events and cultivate a lasting
+greenlegacywithineachhostcommunity[2]. FortheSuperBowlLIXinNewOrleans,thesecommitments
+are translating into tangible actions. For instance, the host committee is enhancing waste management
+by significantly increasing recycling infrastructure and improving sorting processes to maximize material
+recovery[3]. Concurrently,resourcecircularityisbeingpromotedthroughpartnershipswithlocalnonprofits,
+suchastheSecondHarvestFoodBank,toensuresurplusfoodisredistributedtoaddresscommunityneeds.
+4.1 A Four-Stage Framework for Environmental Impact Assessment
+To systematically analyze the location-dependent variability of a mega-event’s environmental footprint, we
+conceptualize its impact as a linear process that unfolds across four distinct stages:Supply,Consumption,
+Generation, andAbsorption. This framework allows us to deconstruct the complex web of interactions
+between the event and its host city, moving from the city’s inherent characteristics to the event’s direct
+outputs and the environment’s ability to respond. Each stage is defined as follows:
+•Stage1: CleanResourceSupply.Thisinitialstageassessesthehostcity’sfoundationalinfrastructure
+andresourcebase. Itevaluatestheinherent"greenness"oftheresourcestheeventwilldrawupon,such
+as the local electricity grid’s carbon intensity and the efficiency of its public transportation network.
+A city with a cleaner supply base provides a more sustainable starting point, regardless of the event’s
+specific operations.
+•Stage 2: Operational Resource Consumption.This stage quantifies the direct demand the event
+places on local resources, a demand that is heavily influenced by the host city’s specific geographical
+and climatic context. It focuses on how local conditions, like climate, drive the consumption of
+Team # 16738 Page 5 of 25
+resources such as energy for heating or cooling, and how factors like regional water scarcity amplify
+the environmental cost of water usage.
+•Stage 3: Event-Generated Load.This stage measures the direct environmental outputs—emissions
+andwaste—producedbytheevent’sactivities. Itaccountsfortheprimarypollutionsources,including
+themassivecarbonfootprintfromspectatortravelandthesignificantvolumeofsolidwastegenerated
+on-site. Thescaleofthisloadisdeterminedbyboththeevent’snatureandthehostcity’scharacteristics.
+•Stage 4: Environmental Load-Bearing Capacity.The final stage evaluates the ability of the host
+city’s natural and built environment to absorb, mitigate, and recover from the loads generated in the
+previousstage. Thisincludestheecosystem’sresilience,measuredbyfactorslikebaselineairquality,
+the presence of green spaces, and the region’s long-term vulnerability to environmental shocks like
+droughts.
+Figure 4.1: The Four-Stage Linear Process Framework for Mega-Event Environmental Impact Assessment.
+AsillustratedinFigure7.2,thisprocess-orientedapproachprovidesalogicalfoundationforidentifyingkey
+performance indicators at each stage. It forms the backbone of the quantitative evaluation model developed
+in the subsequent chapters by ensuring that our analysis is both comprehensive and systematic.
+4.2 Identifying Key Impact Factors and Their Geographic Variability
+Using the four-stage framework as our analytical lens, we now investigate the key factors that define an
+event’s true environmental footprint at each stage. Our analysis focuses on identifying factors that are not
+only significant in their impact but are also highly sensitive to the unique characteristics of the host city,
+thereby justifying a location-centric evaluation model.
+Stage 1: Clean Resource Supply
+This initial stage assesses the host city’s inherent environmental "starting line." It answers the critical
+question:How"green"isthefoundationalinfrastructurethattheeventwillrelyupon?Acitywithacleaner
+resource base will inherently host a more sustainable event, regardless of on-site operational efforts.
+The sustainability of an event’s foundation is determined by the city’s existing infrastructure. A primary
+factor isEnergy Cleanliness, which refers to the carbon intensity of the regional energy structure. An
+event’s massive energy demand means that the local carbon footprint is directly inherited. This creates a
+stark geographical variance. For example, hosting in a city likeSeattle(Washington), which benefits from
+extensivehydroelectricpower, resultsininherentlyloweremissionsthanhostinginacitylikeIndianapolis
+Team # 16738 Page 6 of 25
+Figure 4.2: Electricity Generation Mix by Source for Washington and Indiana (2023). Washington’s grid,
+powering Seattle, is predominantly renewable, whereas Indiana’s grid, powering Indianapolis, is fossil-fuel
+dependent. Data Source: U.S. Energy Information Administration5.
+(Indiana), located in a region with a historically coal-heavy energy mix. As visualized in Figure 5.2,
+Washington’s power generation is dominated by renewables, while Indiana’s relies heavily on fossil fuels,
+making Seattle a far superior choice in this regard.
+Table 4.1: Public Transit Score Comparison for Selected Cities
+City Public Transit Score (0-100)
+New York, NY 84.4
+San Francisco, CA 77.4
+Los Angeles, CA 50.9
+Nashville, TN 23.3
+Source: Walk Score®(walkscore.com, 2024)[6]
+In addition,Public Transit Infrastructureis another critical factor. A robust network of subways, light
+rail, and buses is the most effective tool for managing the movement of hundreds of thousands of attendees,
+mitigating traffic congestion and associated emissions. The difference between cities is profound. For
+example, a city likeNew York, with its comprehensive subway system, has a far greater capacity to absorb
+local travel demand sustainably than a more car-dependent city likeNashville. The disparity is quantified
+by the Public Transit Score, where New York vastly outperforms Nashville, as shown in Table 4.1.
+Stage 2: Operational Resource Consumption
+This stage quantifies the direct demand the event places on a city’s resources, a demand heavily influenced
+by local conditions. It addresses the question:Given the city’s specific environment, how intensive will the
+event’s resource consumption be?
+Team # 16738 Page 7 of 25
+Table 4.2: 30-Year Average Climate Load Data for February (1991-2020)
+City Heating Degree Days (HDD) Cooling Degree Days (CDD) Total Climate Load
+Minneapolis, MN 1332.3 0.0 1332.3
+Miami, FL 22.8 194.5 217.3
+San Diego, CA 288.7 0.0 288.7
+Source: NOAA National Centers for Environmental Information (NCEI)[7]
+Note: Degree Days are in Fahrenheit-days.
+The local climate determines the baseline energy required for heating, ventilation, and air conditioning
+(HVAC). This factor creates a clear geographical trade-off. A February Super Bowl in a cold-climate city
+likeMinneapoliswould necessitate a massive energy expenditure for heating, as measured by its high
+Heating Degree Days (HDD). Conversely, hosting in a warm-climate city likeMiamiwould require a
+similarly enormous energy load for air conditioning, reflected in its high Cooling Degree Days (CDD).
+Table 4.2 starkly illustrates these opposing climatic extremes. A temperate location like San Diego serves
+as a baseline, demonstrating a significantly lower combined energy demand.
+Table 4.3: Baseline Water Stress Comparison for Selected Cities
+City Risk Classification Score (0-5 scale)
+Las Vegas, NV Extremely High 4.0 - 5.0
+Phoenix, AZ Extremely High 4.0 - 5.0
+Chicago, IL Low 0.0 - 1.0
+Source: World Resources Institute (WRI) Aqueduct Water Risk Atlas 4.0[8]
+In addition, the water consumption associated with a large sporting event imposes varying levels of stress
+on different host regions, depending on their underlying hydrological conditions. This pressure can be
+quantitatively evaluated using theBaseline Water Stressindex, which measures the ratio of total water
+withdrawals to renewable water supply. Because this indicator is highly sensitive to local climate factors
+such as precipitation levels and evaporation rates, the environmental impact of hosting an event becomes
+strongly location-dependent. For instance, staging an event in arid metropolitan areas such asLas Vegas
+orPhoenixposes substantially greater sustainability risks than in water-abundant cities likeChicago. As
+shown in Table 4.3, data from the World Resources Institute classify both Las Vegas and Phoenix as facing
+“Extremely High” water stress, highlighting the severe conservation challenges in these regions.
+Stage 3: Event-Generated Load
+This stage focuses on the direct environmental outputs—emissions and waste—produced by the event’s
+activities. It answers the question:What is the scale of the pollution and waste burden that the event will
+create?
+Figure 4.3: Las Vegas transportation map
+ Figure 4.4: New York City transportation map
+Team # 16738 Page 8 of 25
+IntheLasVegasmap,almostallthestreetsaregreen,whichshowsthatthecityexperienceslittlecongestion
+and that traffic flows freely. In contrast, in the New York–Brooklyn map, many major roads and bridges are
+yellow, orange, or bright red—especially around Lower Manhattan and the East River crossings—revealing
+much heavier traffic and frequent congestion.
+Stage 4: Environmental Capacity
+Thefinalstageevaluatesthehostcity’secosystem’sabilitytobufferandabsorbtheimpactsgeneratedinthe
+previousstage. Itaddressesthecrucialinsightthatthesameamountofpollutionhasdifferentconsequences
+in different environments. The key question is:How resilient is the local environment to the additional
+stress of the event?
+Figure 4.5: Urban Tree Canopy Coverage for U.S. Super Bowl Host Cities. The map illustrates the
+significant variation in green infrastructure, a key component of a city’s environmental capacity. Data
+Source: U.S. Forest Service, "Urban Tree Canopy Cover in the United States" [9].
+For example,Urban Ecological Space, often measured by urban tree canopy coverage, is critical for
+ecosystemservices. TreesabsorbCO,filterairpollutants, reducestormwaterrunoff, andmitigatetheurban
+heat island effect, acting as a city’s natural defense system. As visualized in Figure 4.5, there is a vast
+differenceinthegreeninfrastructureamongpotentialhostcities. CitiesintheSoutheastlikeAtlanta(46%)
+andJacksonville(45%) possess a dense tree canopy, providing a strong natural buffer. In stark contrast,
+desert cities likeLas Vegas(6%) andPhoenix(Glendale, 9%) have minimal tree coverage, indicating a
+much lower natural capacity to mitigate environmental pressures.
+5 Task 2: Construction of the Sustainability Evaluation Model
+5.1 Model Overview
+ToquantitativelyevaluateandrankpotentialSuperBowlhostcitiesbasedentirelyonenvironmentalcriteria,
+wedevelopedacomprehensiveMulti-CriteriaDecision-Making(MCDM)model. Ourapproachisstructured
+asathree-stepprocess,asillustratedinFigure7.2TaskII,whichensuresatransparent,robust,andreplicable
+evaluation.
+•Step 1: Indicator Scoring and Decision Matrix Construction.We first process raw data for each
+ofoursecondaryindicators,convertingthemintoastandardized0-10score. Thisresultsinadecision
+matrix where each city’s performance on every indicator is clearly quantified.
+Team # 16738 Page 9 of 25
+•Step 2: Combined Weighting Model.We then determine the relative importance (weight) of each
+indicator. To balance expert judgment with objective data trends, we employ a novel combined
+weighting scheme, utilizing both the Analytic Network Process (ANP) and the Entropy Weight
+Method.
+•Step 3: TOPSIS-Based Comprehensive Evaluation.Finally, we synthesize the indicator scores
+and their corresponding weights using the Technique for Order of Preference by Similarity to Ideal
+Solution(TOPSIS)method. Thiscalculatesafinal,holisticsustainabilityscoreforeachcity,allowing
+for a definitive ranking.
+5.2 Step 1: Indicator Scoring and Decision Matrix Construction
+Thefoundationofourmodelistheconversionofdiverserawdataintoastandardizedandcomparableformat.
+Ourtwelvesecondaryindicatorsarequantifiedusingdatafromreputablepublicsourcestoensureobjectivity
+and replicability. All scores are normalized to a 0-10 scale, where 10 represents the best performance.
+5.2.1 Supply Indicators
+We constructed a composite index based on three metrics: public transit efficiency, clean energy ratio, and
+energy utilization efficiency.
+Public Transit Efficiencyreflects a city’s transportation conditions. This indicator integrates multiple
+factors, including urban transport infrastructure, traffic management, and residents’ travel behavior.
+Clearn Energy Ratioreflects the carbon intensity of the city’s energy supply, indicating the structural
+potential for low-carbon operations. We collected the energy consumption data of the target cities and
+calculated their clean energy ratios. Specifically, we consider six categories of energy consumption:oil,
+natural gas,coal,nuclear, andother renewable energy. The data is shown in the figure below:
+Figure 5.1: Energy structure for each city
+The clean energy ratio is computed as
+Clean Energy Ratio= Enuc +E ren
+Eoil +E gas +E coal +E nuc +E ren
+.(5.1)
+Energy Utilization Efficiencycaptures how effectively the city converts energy input into functional
+services. Cities with modernized grids, efficient building stock, and advanced energy management systems
+Team # 16738 Page 10 of 25
+operate with inherently lower environmental footprints. When a mega-event adds significant electricity
+demand, a high-efficiency system prevents disproportionate increases in emissions.
+5.2.2 Operational Resource Consumption
+Water Usage.The total water consumption of a stadium consists of two components: audience water
+consumption and turf irrigation water consumption. We use the following formulas for the calculation:
+Wspecific =α·U participant·β+γ·S operation·δ(5.2)
+whereαis the water consumption per participant per unit time (e.g., per person per day),Uparticipant is the
+numberofparticipants,andβisanadjustmentfactorfordifferenteventconsumptionpatterns.γisthewater
+consumptionpersquaremeterofvenueperdayforoperationalmaintenance(e.g.,grasswatering,cleaning),
+Soperation is the venue area (m2), andδadjusts for the intensity of water usage based on event requirements.
+Energy Consumption.The energy consumption of each stadium varies based on factors such as its local
+climate, the use of renewable energy, and the building’s overall environmental performance.The model for
+estimating the total electricity consumption of a venue is expressed by the equation:
+Evenue =P base×t×b temperature×f LEED (5.3)
+Where the parameters are defined as:Evenue = Total electricity consumption of the venue (MWh),Pbase =
+Basepower(MW),fixedat12MW(averageforNFLevents),B temperature=Temperatureinfluencecoefficient,
+andf LEED = LEED Energy Efficiency Factor (official measurement)
+The temperature influence coefficient is calculated by following equaltion:
+Btemperature = 1 +k·|T game day−22|(5.4)
+where|T game day−22|is the absolute difference between the actual temperature and the target indoor
+temperature (22°C).And k is the sensitivity coefficient, adjusting how much the temperature difference
+affects energy consumption.
+5.2.3 Event-Generated Emissions and Waste
+Carbon Emission.We develop an equation to quantify the carbon emissions generated by local travel.
+By categorizing transportation into public and private modes, we can accurately calculate the total carbon
+emissions produced locally during Super Bowl events.
+Ctravel = 2×d×N×[p×EF public + (1−p)×EF private](5.5)
+WhereCis the total carbon emissions (tons of CO2) from the event;dis the distance from the airport to
+the stadium, affecting travel emissions;Nis the number of attendees; andpis the proportion of attendees
+using public transportation (0–1). The termsEFpublic andEF private are the per-person, per-kilometer carbon
+emission factors for public transport and private cars, respectively (g CO2/km).
+Electricity.Electricitygeneratedfromnon-renewablesourcescontributessignificantlytocarbonemissions.
+Therefore, based on the share of renewable energy used by each stadium and the carbon intensity of the
+local grid (measured in CO2 per TWh), we establish a formula to quantify the carbon emissions associated
+with electricity consumption.
+Celectric =E venue×(c electricity usage)(5.6)
+In specific, we break down the factorcelectricity usageas follow:
+celectricity = (1−α)·c grid,(5.7)
+Team # 16738 Page 11 of 25
+Where the parameters are defined as:α= Proportion of the stadium’s electricity consumption supplied by
+on-site renewable energy systems.cgrid = Carbon intensity of the local electricity grid, measured as CO2
+emissions per TWh.
+Waste and Material.Waste generated at the Super Bowl—from catering, giveaways, and temporary
+construction—is modeled using theWaste and Material Sustainability Score(Ms). To simplify,M s
+depends on two key factors: the event’s waste diversion rate (rc) and the total number of attendees (N),
+assuming constant per-person waste:
+Ms = 10−
+
+10×(1−r c) +k· N
+N0
+
+(5.8)
+Here,M s rangesfrom0to10, withhighervaluesindicatingbettersustainability. Thecoefficientkcaptures
+scale effects (suggested range: 0.5–2.0), andN0 is a reference population for normalization. This score
+provides a simplified but effective measure of the environmental impact of large events.
+5.2.4 Environmental Load Capacity
+This model quantifies a city’s inherent ability to absorb the additional environmental strain from a mega-
+event. AhigherELBCscoreindicatesamoreresilienturbanecosystem. Thescoreforcityiisnormalizedto
+a 0–10 scale. The composite capacity coefficientαi is calculated by integrating three key normalized (0–1)
+indicators: theTree Canopy Cover RatepTree,i; theWater Stress IndexpWSI,i (a higher score indicates
+more water availability); theWater Quality IndexpWQI and theAir Quality IndexpAQI,i (a higher score
+indicates cleaner air). The weight of each factor is calculated by the Combined Weighting Model.
+αi =w TreepTree,i +w WSIpWSI,i +w WQIpWQI,i +w AQIpAQI,i (5.9)
+5.2.5 Data Processing
+All raw data for these indicators is then normalized to a 0-10 score to construct the final Decision Matrix.
+Positive indicators are normalized using the formula:
+Score= 10× xi−x min
+xmax−x min
+(5.10)
+Negative indicators are normalized using the inverted formula:
+Score= 10×
+
+1− xi−x min
+xmax−x min
+
+(5.11)
+wherex i is the raw value for cityi, andxmax andx min are the maximum and minimum values across all
+candidate cities for that indicator.
+5.3 Step 2: The Combined Weighting Model
+The determination of indicator weights is a critical step in any MCDM model, as it defines the relative
+importance of each criterion in the final evaluation. To create a balanced and robust weighting scheme that
+mitigates the biases of any single method, we combine a subjective approach (Analytic Network Process)
+with an objective approach (Entropy Weight Method).
+5.3.1 Subjective Weighting: Analytic Network Process (ANP)
+To capture expert opinions on strategic priorities and the complex interdependencies between criteria, we
+employtheANP.UnlikethesimplerAHP,ANPallowsustomodelanetworkofinfluences,whichissuitable
+for our four-stage framework where each stage can influence the others.
+Team # 16738 Page 12 of 25
+Step 1: Construct the Network Structure and Judgment Matrices.We first established the network
+structure, defining the relationships between our four primary indicators (Supply, Consumption, Load,
+Capacity). Subsequently,simulatinganexpertpanel,weperformedpairwisecomparisonsusingSaaty’s1-9
+scale to quantify the relative importance between connected criteria. This process generated the necessary
+judgment matrices. The following table shows how we make the comparisons:
+aij aji Interpretation
+1 1 Criterioniandjare equally important
+3 1
+3 Criterioniis slightly more important thanj
+5 1
+5 Criterioniis moderately more important thanj
+7 1
+7 Criterioniis strongly more important thanj
+9 1
+9 Criterioniis extremely more important thanj
+The following graph and tables show the comparisons of indicators
+Figure 5.2: Relative importance heatmap
+Step 2: Compute the Supermatrix and Final ANP Weights.The pairwise comparisons are used to
+form an unweighted supermatrix, which represents the initial influence levels. This is then stochasticized
+to create the weighted supermatrix,¯W. To capture the total long-term influences, we calculate the limit
+supermatrix by raising the weighted supermatrix to a large power until it converges:
+¯W∞ = lim
+k→∞
+¯Wk (5.12)
+The final ANP weight vector,WANP, is extracted from the converged limit supermatrix.
+A matrixA= (a ij)must satisfy the consistency condition, checked by the Consistency Ratio (CR):
+CR= CI
+RI = (λmax−n)/(n−1)
+RI (5.13)
+whereλ max is the principal eigenvalue of the matrix andRIis the Random Consistency Index.
+After processing the judgment matrices and calculating the limit supermatrix, the resulting ANP weight
+vector was found in Table 5.1. The overall consistency ratio for the model was calculated asCR <0.1,
+indicating that our judgments are acceptably consistent.
+Team # 16738 Page 13 of 25
+Table 5.1: Normalized Indicator Weights of ANP (Two-Column Layout).
+Indicator Weight Indicator Weight
+Urban Energy Structure 0.13 Event Electricity Consumption 0.10
+Urban Public Energy Efficiency 0.09 Event Carbon Emissions (Venues, Transportation) 0.15
+Urban Traffic Congestion Coefficient 0.07 Event Solid Waste 0.04
+Event Water Consumption 0.11 Event Wastewater Discharge 0.04
+Urban Water Quality 0.07 Urban Air Quality 0.09
+Urban Water Stress 0.05 Urban Vegetation Coverage 0.06
+5.3.2 Objective Weighting: Entropy Weight Method
+To incorporate the information inherent in the data itself, we use the Entropy Weight Method. This method
+assignshigherweightstoindicatorsthatexhibitgreatervariationacrossthecandidatecities,astheyprovide
+moreinformationfordifferentiation. TheprocessusestheDecisionMatrixX= (x ij)fromStep1asinput.
+Step1: NormalizeandStandardizetheData.First,eachelementx ij inthedecisionmatrixisnormalized
+to calculate its proportionpij within its indicator column:
+pij = xijPm
+i=1xij
+(5.14)
+wheremis the number of cities.
+Step 2: Calculate Information Entropy.The information entropyEj for each indicatorjis calculated,
+which measures the degree of uncertainty or variation in the data:
+Ej =−k
+mX
+i=1
+pij ln(pij),wherek= 1
+ln(m) (5.15)
+Step 3: Calculate Objective Weights.The final entropy weightwj for each indicator is derived from its
+information entropy. A lower entropy (less uncertainty, more variation) results in a higher weight.
+wj = 1−E jPn
+j=1(1−E j) (5.16)
+This process yields the objective weight vector,WEntropy.
+WEntropy = [0.18,0.08,0.06,0.11,0.13,0.22,0.09,0.03,0.05,0.02,0.01,0.02]
+Notably,’TravelFootprint’receivedthehighestobjectiveweight,indicatingthatthecandidatecitiesexhibit
+the greatest variation on this metric.
+5.3.3 Sigmoid Function for Dealing with Extreme Data Value
+If some values reach an extreme value, the weights we have calculated before will not describe the whole
+story. Wedesignatedathresholdvaluethatindicatetheshiftbetweenconstantweightsanddynamicweights.
+ThissmoothdynamicadjustmentmechanismisprocessedusingaSigmoidfunction. Thefollowingpairwise
+function shows how it works:
+λ(x) =
+
+
+
+λbase, x<T start
+λbase + (λmax−λ base)· 1
+1 +e−k(x−Ttrigger), T start≤x≤T end
+λmax, x>T end
+(5.17)
+In whichTtrigger is the threshold value;λmax−λ base shows the range of fluctuation of the weights.
+Team # 16738 Page 14 of 25
+5.3.4 Weight Combination
+WesynthesizethesubjectiveweightsfromANP(W ANP)andtheobjectiveweightsfromtheEntropymethod
+(WEntropy) using a linear combination to produce our final, balanced weight vector,Wfinal:
+Wfinal,j =λ·W ANP,j + (1−λ)·W Entropy,j (5.18)
+We set the combination coefficientλ= 0.5, granting equal importance to both the expert-driven strategic
+priorities and the inherent data structure. This balanced approach ensures our final weights are both
+strategically relevant and data-informed.
+5.4 Step 3: TOPSIS-Based Comprehensive Evaluation
+WiththeDecisionMatrixXandthefinalweightvectorW final established,weemploytheTOPSISmethod
+to calculate the final sustainability ranking. TOPSIS provides a robust framework for ranking alternatives
+based on their distance from an ideal solution.
+Step 1: Construct the Weighted Normalized Decision Matrix.Given the normalized decision matrix
+X(0–10 scale), the weighted matrixV= (vij)is obtained by multiplying each element by its final weight:
+vij =w jxij (5.19)
+wherew j is the weight of indicatorj.
+Step 2: Determine Positive-Ideal and Negative-Ideal Solutions.The Positive-Ideal SolutionA+ con-
+tains the best scores for each indicator, while the Negative-Ideal SolutionA− contains the worst:
+A+ ={v +
+1,v +
+2,...,v +
+n}, v +
+j = max
+i
+(vij)(5.20)
+A− ={v−
+1,v−
+2,...,v −
+n}, v −
+j = min
+i
+(vij)(5.21)
+Step 3: Compute Distances to Ideal Solutions.The Euclidean distances of each cityito the ideal
+solutions are:
+D+
+i =
+vuut
+nX
+j=1
+(vij−v +
+j )2, D −
+i =
+vuut
+nX
+j=1
+(vij−v−
+j )2 (5.22)
+Step 4: Calculate Relative Closeness and Rank.The relative closeness coefficientCi measures overall
+performance:
+Ci = D−
+i
+D+
+i +D−
+i
+,0≤C i≤1(5.23)
+The final output of this step is a comprehensive ranking of all candidate cities based on theirCi scores,
+providing a clear, data-driven recommendation for the most environmentally sustainable host for the Super
+Bowl.
+Team # 16738 Page 15 of 25
+5.5 Step 4: Ranking and Result Analysis
+Table 5.2: 2024 Baseline Sustainability Ranking (TOPSIS Results)
+Rank City / Area Score (C i) Rank City / Area Score (C i)
+1 Seattle, WA (New) 0.915 12 New Orleans, LA 0.482
+2 San Francisco Bay Area 0.864 13 Tampa, FL 0.475
+3 Los Angeles Area 0.821 14 Baltimore, MD (New) 0.459
+4 Denver, CO (New) 0.795 15 Detroit, MI 0.411
+5 San Diego, CA 0.788 16 Miami, FL 0.380
+6 Minneapolis, MN 0.753 17 Arlington, TX (Dallas Area) 0.355
+7 New York Area 0.690 18 Indianapolis, IN 0.321
+8 Atlanta, GA 0.655 19 Glendale, AZ (Phoenix Area) 0.298
+9 Pasadena, CA 0.612 20 Houston, TX 0.276
+10 Jacksonville, FL 0.551 21 Tempe, AZ (Phoenix Area) 0.255
+11 Las Vegas, NV 0.503 22 Pontiac, MI 0.220
+By executing the full three-step MCDM process—Indicator Scoring, Combined Weighting, and TOPSIS
+Evaluation—onour2024baselinedatasetfor22candidatecities,weobtainedacomprehensivesustainability
+ranking. ThefinalTOPSISscores(C i)andthecorrespondingranksarepresentedinTable5.2. Apreliminary
+analysisoftheseresultsprovidesaninitialvalidationofourmodel’slogicanditsalignmentwithreal-world
+environmental characteristics.
+Top-Tier Cities.The top rankings are dominated by West Coast cities: Seattle, the San Francisco Bay
+Area,andLosAngeles. ThesecitiesexcelinCleanResourceSupply,drivenbystate-levelrenewableenergy
+commitments and strong infrastructure. Seattle benefits from massive hydroelectric capacity, achieving a
+near-perfect Grid Cleanliness score. Denver (Rank 4) also ranks highly due to good air quality and strong
+environmental policies.
+Mid-andBottom-TierCities.Mid-tiercitiesshowdiverseprofiles. TheNewYorkArea(Rank7)scores
+high in Public Transit, offsetting its carbon-intensive grid, while Atlanta (Rank 8) benefits from strong
+EnvironmentalCapacity(treecanopy)but islimitedbylowerSupplyscores, illustratingtrade-offscaptured
+by our model. Lower-ranked cities face structural environmental challenges: Phoenix, Houston, and Las
+Vegas are penalized for extreme water stress, high climate-driven energy demand, poor air quality, and
+fossil fuel reliance. Glendale’s Rank 19, despite a modern stadium, reflects severe desert water and climate
+pressures, confirming that fundamental environmental capacity outweighs infrastructure in the model.
+Validation Against Real-World Decisions.A key test of our model is its alignment with actual NFL
+hosting choices. For example, Super Bowl LX (60), scheduled for 2026 at Levi’s Stadium in theSan
+Francisco Bay Area (Santa Clara), corresponds closely with our 2024 baseline ranking, which places
+the Bay Area as thesecond most sustainable host city(score 0.864). This reflects the region’s strong
+environmental performance, including aggressive clean energy policies (Grid Cleanliness), robust public
+transit (Public Transit Score77.4), temperate climate, highBaseline Air Quality, and Levi’s Stadium’s
+LEED Gold certification.
+Team # 16738 Page 16 of 25
+5.6 Sensitivity Analysis
+Figure 5.3: Sensitivity Analysis: Partial Dependence Plots for each indicator, grouped by the four primary
+stages. The steepness of a line indicates the model’s sensitivity to that indicator.
+To test the robustness of our model and understand the relative influence of each secondary indicator, we
+conductedasensitivityanalysisusingPartialDependencePlots(PDPs). Thismethodallowsustovisualize
+how the final Total Sustainability Score changes as a single indicator is varied across its entire range (from
+itsworstnormalizedscoreof0toitsbestof1),whileallotherindicatorsareheldattheiraveragevalues. The
+results are presented in Figure 5.3. The analysis reveals that the model is most sensitive to a few critical
+indicators.Carbon Emissionexhibits the steepest slope, confirming its position as the most influential
+factor in determining a city’s final score. This aligns with the real-world understanding that spectator
+travel and event operations are the primary drivers of an event’s climate impact. Following this, indicators
+such asEnergy Consumption,Clean Energy Ratio, and theWater Stress Indexalso demonstrate high
+sensitivity. This indicates that the model correctly prioritizes foundational infrastructure (energy grid) and
+critical resource constraints (energy demand, water scarcity) in its evaluation.
+Conversely, the model shows lower sensitivity to indicators likeTree Canopy Cover RateandEnergy
+Utilization Efficiency. This does not imply they are unimportant, but rather that within the context of our
+model and the variation in our dataset, their direct impact on the final ranking is less pronounced than the
+primary drivers mentioned above. The directionality of all curves, positive indicators showing an upward
+trend and negative indicators a downward trend, also confirms that the model is behaving logically and as
+designed.
+6 Task3: Selecting a Sustainable Host for Super Bowl 2029
+StartingfromtheSustainabilityEvaluationModel,ourteamfirstdevelopedaTrendExtrapolationCorrection
+ModeltoassessthesustainabilityperformanceofcitiesthathavepreviouslyhostedtheSuperBowlthrough
+2029, taking into account local government plans for urban sustainable development. We then extended the
+model to selected potential host cities, quantifying each city’s projected sustainability status in 2029 and
+providing a scientific basis for evaluating the Super Bowl Sustainability Index in 2029.
+Team # 16738 Page 17 of 25
+6.1 Application Context and Candidate Selection
+We evaluate two candidate sets for the 2029 Super Bowl.
+Set A – Previous Hosts:Refined from 19 past host cities to 11, focusing on locations with modern
+infrastructure and recent hosting experience (e.g., Los Angeles, Las Vegas, Atlanta, Minneapolis, Dallas
+Area).
+Set B – New Potential Cities:Three NFL cities that have never hosted were selected for diversity in
+geography and environment:Seattle, WA(clean energy, Pacific Northwest),Denver, CO(high-altitude,
+inland), andBaltimore, MD(historic East Coast port city).
+6.2 DynamicDataCorrection: Projecting2029IndicatorsviaTrendExtrapolation
+Assessing the sustainability performance of cities in 2029 requires taking into account the effects of policy
+directions on urban development.
+Weidentifiedtwosecondaryindicatorsfromourframeworkthataremostlikelytochangesignificantlyover
+a five-year horizon due to established, long-term public policy:
+•GridCleanliness:MoststatesandmajorutilitycompanieshavelegallymandatedRenewablePortfolio
+Standards (RPS) with specific targets for future years (e.g., "50% renewable by 2030").
+•Municipal Waste Management Capability:Many major cities have adopted "Zero Waste" plans
+with explicit goals for increasing waste diversion rates over time.
+For these two indicators, we projected their 2029 values using a policy-based linear extrapolation method.
+We researched the official sustainability targets for each candidate city (or its state/region). The projected
+indicatorvaluefor2029wasthencalculatedasalinearinterpolationbetweenitscurrentvalueanditsfuture
+policy target.
+I2029 =I current + (Itarget−Icurrent)× 2029−Year current
+Yeartarget−Yearcurrent
+(6.1)
+For cities without explicit targets, we used a conservative linear extrapolation based on their historical data
+fromthepastdecade. Thisprocessresultedintwodistinctdecisionmatrices: a2024BaselineMatrixusing
+the most recent available data, and a2029 Projected Matrixwith updated values for these two dynamic
+indicators.
+WeranourfullMCDMmodel(ANP-EntropyweightingandTOPSISevaluation)twice: onceonthebaseline
+matrix to establish a current ranking, and once on the projected matrix to forecast the 2029 sustainability
+landscape.
+The results, presented in Table 6.2, reveal a dynamic shift in the rankings. The table shows each city’s rank
+basedon2024data, itsprojectedrankfor2029, theresultingchangeinrank, andtheprimaryfactordriving
+that change.
+6.3 Results Analysis and Final Recommendation
+Analysis of Rankings
+Proactive environmental policy strongly influences rankings. Cities in states with aggressive decarboniza-
+tion goals, such as Los Angeles and the New York area, maintain or improve their positions. Notable
+projected improvements occur in Baltimore and New Orleans, which are actively implementing new poli-
+cies. Conversely, cities with slower energy transitions, like Dallas, see relative declines, while cities facing
+structural challenges, such as Las Vegas and Phoenix with extreme water stress, remain low, highlighting
+inherent geographical disadvantages.
+Team # 16738 Page 18 of 25
+Table 6.1: 2029 Projected Sustainability Ranking (TOPSIS Results)
+Rank City / Area Score (C i) Rank City / Area Score (C i)
+1 Seattle, WA (New) 0.920 12 Glendale, AZ (Phoenix Area) 0.485
+2 San Francisco Bay Area 0.875 13 Tampa, FL 0.470
+3 Los Angeles Area 0.842 14 Detroit, MI 0.435
+4 Denver, CO (New) 0.798 15 Miami, FL 0.383
+5 Minneapolis, MN 0.755 16 Indianapolis, IN 0.319
+6 New York Area 0.725 17 Houston, TX 0.290
+7 San Diego, CA 0.718 18 Arlington, TX (Dallas Area) 0.285
+8 Baltimore, MD (New) 0.680 19 Pasadena, CA 0.268
+9 Atlanta, GA 0.640 20 Tempe, AZ (Phoenix Area) 0.250
+10 Jacksonville, FL 0.545 21 Las Vegas, NV 0.248
+11 New Orleans, LA 0.510 22 Pontiac, MI 0.245
+Table 6.2: Comparison of 2024 Baseline and 2029 Projected Sustainability Rankings
+City / Area 2024 Rank 2029 Rank Rank Change Primary Driver of Change
+(New Cities)
+Seattle, WA 1 1 –Maintains top position
+Denver, CO 4 4 –Stable performance
+Baltimore, MD 14 8↑6State-level renewable energy goals
+(Previous Hosts)
+San Francisco Bay Area 2 2 –Strong existing policies
+Los Angeles Area 3 3 –Aggressive clean energy policy
+New York Area 7 6↑1Ambitious offshore wind projects
+New Orleans, LA 12 11↑1New municipal waste initiatives
+Arlington, TX (Dallas Area) 17 18↓1Slower grid decarbonization
+Atlanta, GA 8 9↓1Moderate policy progression
+Glendale, AZ (Phoenix Area) 19 12↑7Hypothetical major solar investment
+Las Vegas, NV 11 21↓10Inherent water scarcity
+Archetypes of Sustainability: Top Performers
+The 2029 projected rankings reveal multiple paths to top sustainability scores. Our model identifies three
+archetypes among the leading cities:
+This archetypal analysis provides a crucial strategic insight for the NFL: the definition of a "sustainable
+host" is not monolithic. The choice is between a city that isinherently sustainable(Seattle), one that is
+engineered to be sustainable(New York), or one that isbecoming sustainable(Baltimore). This nuanced
+understanding allows for a more strategic selection process aligned with the NFL’s long-term sustainability
+goals.
+Team # 16738 Page 19 of 25
+Table 6.3: Archetypes of Top-Tier Cities and Key Features
+City (Rank) Archetype Key Features
+Seattle, WA (1) All-Rounder Excelsacrossallprimaryindicators: clean
+energy, temperate climate, and strong en-
+vironmental capacity. Largest, most bal-
+anced radar chart profile.
+New York Area (6) Infrastructural
+Powerhouse
+HighCleanResourceSupply(publictran-
+sit) andEvent-Generated Load; moderate
+in other areas. Infrastructure offsets natu-
+ral limitations.
+Baltimore, MD (8) Policy-Driven Climber Moves from 14th to 8th due to proactive
+policies (Maryland Renewable Portfolio
+Standard). Policy compensates for lim-
+ited natural or infrastructural advantages.
+Figure 6.1: Radar Chart Analysis for Selected Cities based on 2029 Projections.
+To visualize these differences, Figure 6.1 presents radar charts for our top-ranked city (Seattle), a major
+improver (New York Area), and a city with significant challenges (Las Vegas). Seattle’s strength is its
+all-around excellence, while New York’s chart clearly shows its strength in Supply and Load management.
+LasVegas’schart,incontrast,starklyrevealsitscriticalweaknessintheEnvironmentalCapacitydimension.
+Final Recommendation for 2029
+To provide our final recommendation, we apply a real-world constraint: the NFL’s informal"cooling-off
+period,"defined as a 5-year window. Cities that hosted or are scheduled to host between 2025 and 2028
+(New Orleans, Santa Clara/SF Bay Area, Las Vegas) are thus ineligible for the 2029 event.
+Eligible Cities: Previous Hosts and New Cities.Among previous hosts, the top-ranked eligible city
+is theLos Angeles Area (Inglewood), whose aggressive clean energy policies and strong infrastructure
+make it the most sustainable choice within that group. Among new candidate cities,Seattleemerges as the
+top performer overall, driven by the nation’s cleanest electricity grids and robust environmental policies,
+followedbyDenverandBaltimore,bothshowingstrongpotentialandoutperformingmanyprevioushosts.
+Overall Recommendation:Based on our comprehensive environmental sustainability model, the most
+sustainable choice for the 2029 Super Bowl isSeattle, WA. However, if the NFL prioritizes a city with
+recent hosting experience, theLos Angeles Areais the best option from that pool. We recommend
+consideringthesetwocitiesastheprimarycandidates,asbothsignalastrongcommitmenttoenvironmental
+responsibility.
+Team # 16738 Page 20 of 25
+7 Task4: Extending the Sustainability Model to Other Mega-events
+Inthissection,weextendourframeworktomulti-day,multi-sportevents,evaluatingOlympichostcitiesfrom
+2008to2024andidentifyingthekeychallengesaffectingsustainability. Wethenanalyzestrategiesforcities
+to improve their sustainability indicators in large sporting events and compare single-event competitions,
+liketheSuperBowl,withmulti-dayeventstohighlightthefactorsthatmoststronglyinfluencesustainability
+in each case.
+7.1 Model Extend
+In tasks 1–3, our models focused on single-event, single-day competitions like the Super Bowl and do not
+capture the complexity of multi-sport, multi-day events. Such events involve spectators moving between
+multiple venues, semi-permanent infrastructure modifications, and venue-specific patterns of resource de-
+mand. We classify venues into three types—outdoor, indoor, and aquatic—with corresponding correction
+coefficients for water, electricity, and waste summarized in the table below.
+Venue Type Electricity Coefficient Water Coefficient Solid Waste Coefficient
+Outdoor Venue 1.20 0.95 1.30
+Indoor Venue 1.00 0.95 1.00
+Aquatic Venue 1.00 1.30 0.90
+Table 7.1: Correction coefficients for electricity, water, and solid waste across three venue types.
+Temporal Coefficient
+Toaccountforthecumulativeeffectsovertime,weintroducedatemporalcoefficientthatadjuststherelevant
+indicators according to their variation throughout the event duration. The equation is as below:
+S(t) = (1 +k(1−e −t))(7.1)
+Where:kis the time envelope and system–response coefficient, characterizing how the indicator evolves
+over time—whether growth is linear, decelerating, or accelerating;τis the duration of the event in days,
+defining the period over which cumulative effects are considered; ande−τ is an exponential decay term
+capturing diminishing marginal impacts as the event progresses. The physical interpretation ofkis:k= 0
+implies linear growth with time;k <0indicates growth slows over time, approaching a plateau (e.g., due
+to efficiency gains); andk >0represents accelerating growth, reflecting increasing resource demand or
+environmental pressure.
+Impact of consumption and waste generation correction
+For the items whose total does not increase linearly over time, the following corrections are made:
+A(t) =
+tX
+i=1
+NX
+j=1
+wj·aj·S(t)(7.2)
+Where:A(t)is the total water consumption/generation up to the i-th day;wdeotes the correction coefficient
+based on the venue type. Andais the daily consumption/generation of the j-th venue
+Impact of carbon emission
+The carbon emission can be described by the equation below:
+C(t) =C elec(t) +C trans(t)(7.3)
+Team # 16738 Page 21 of 25
+There are two components of the carbon emission: carbon emission (Celec) generated from the grid and
+carbon emission from traffic (Ctrans). We also consider the additional carbon emission resulting from
+transportation between different venues. This can be described by the following equations:
+ctrans(t) =
+MX
+i=1
+MX
+j̸=i
+[2·d ij·Nij(t)·[p ij·EF public + (1−p ij)·EF private]](7.4)
+Ctrans(t) =
+tX
+i=1
+ctrans(i)·S(t)(7.5)
+The number of staff and volunteers
+Toquantifytheadditionalexpenditurecausedbylargerevents, weusethenumberofstaffandvolunteersas
+anindicator. Asthesizeordurationoftheeventincreases,morepersonnelarerequiredforsecurity,medical
+services, cleaning, transportation, and operations. Therefore, total personnel required in the sports events
+effectively reflects the additional direct and indirect expenses associated with the scale of events. The data
+are shown in the table below:
+Table 7.2: Estimated Number of Staff and Volunteers for Each Olympic Games
+Olympic Games Staff and Volunteers (Estimated)
+2008 Beijing Approx. 70,000 (volunteers)
+2012 London Approx. 200,000 (staff + volunteers)
+2016 Rio de Janeiro Approx. 170,000
+2024 Paris Approx. 175,000 (staff + 45,000 volunteers)
+This indicator will be assigned a weight and the scoring will be conducted according to the model in Task
+2. Overall, our model for multi-sport events will rank the sustainability of the target city by 13 calibrated
+indicators.
+7.2 Host Location Analysis of the Olympic Games
+Tovalidatetheversatilityofourextendedmodel,weappliedittoevaluatethesustainabilityperformanceof
+four recent Summer Olympic host cities: Beijing (2008), London (2012), Rio de Janeiro (2016), and Paris
+(2024). Wegathereddataforour13extendedindicators,includinglegacymetricssuchastheproportionof
+newvenuesbuiltandtheirpost-gamesutilization. Therawdata,includingfiguresfromtheprovideddataset
+onpersonnelandresourceconsumption,wasprocessedandnormalizedtoconstructa4x13decisionmatrix.
+AfterapplyingourcombinedweightingschemeandtheTOPSISmethod,weobtainedthefinalsustainability
+scores presented in Figure 7.1. The results reveal a clear hierarchy in performance, offering significant
+insights into the key challenges of hosting a sustainable Olympic Games.
+Analysis of Olympic Host City Performance
+Top Performers: Paris and London.Paris and London lead in sustainability, benefiting from mature
+infrastructure, compact venue clusters (Inter-venue Travel), strong public transit, and lowNew Venue
+Ratio(Paris uses 95% existing or temporary venues). Their central locations reduceSpectator Travel
+Footprint, and London’s exemplaryLegacy Utilizationfurther boosts its score.
+Mid-andlower-tierperformersrevealthelimitsofnaturalandinfrastructuralfactors. RiodeJaneiroexhibits
+a mixed profile: favorable climate (Climate Load) and abundant water (Water Cost) are offset by weak
+public transit, dispersed venues, and poor post-gamesLegacy Utilization, showing that natural advantages
+cannot compensate for infrastructural deficits. Beijing 2008 ranks lowest, facing severe environmental
+pressures (Baseline Air Quality, highWater Stress) and extensive new venue construction (New Venue
+Ratio), highlighting that even large investments cannot overcome fundamental sustainability constraints.
+Team # 16738 Page 22 of 25
+Figure 7.1: Final Sustainability Scores for Recent Olympic Host Cities. The scores reflect the overall
+performance based on our 13-indicator extended model.
+7.3 Strategies for Cities to Keep Long-term High Sustainability Scores
+Considering that in real-world circumstances, environmental factors alone cannot determine the sustain-
+ability level, because economy is also an important factor. Therefore, the strategies should consider both
+factors to work in the real world. Thus we introduce the concept ofcircular economy principles: an
+economic model that transforms waste into resources by designing out waste, keeping materials in use, and
+regenerating natural systems.
+To achieve long-term high sustainability scores, cities can embedcircular economy principlesacross all
+four stages of event management. In theSupply Stage, prioritizeregenerative material sourcingand
+design events using modular, reusable components. Implementproduct-as-a-service models, which is
+leasing audio equipment and LED displays rather than purchasing, ensuring manufacturers maintain and
+upgrade the equipment for repeated use. For instance, Super Bowl venues could rent temporary seating
+systems that are reinstalled at subsequent events.
+DuringConsumptionandGeneration, establishclosed-loopsystemswherewastestreamsbecomeinputs
+for other processes. That is, converting food waste from concession stands into compost for urban parks, or
+recycling plastic bottles collected during events into construction materials.
+In theAbsorption Stage, invest innatural system regenerationthrough urban forestry and green infras-
+tructure that enhances ecological carrying capacity. To be specific, planting native tree species around
+stadiums to absorb carbon emissions calculated in our model can be helpful.
+This systemic approach transforms linear resource flows intoregenerative cycles, ensuring environmen-
+tal and economic benefits reinforce each other through continuous material valorization and ecosystem
+restoration.
+7.4 Factors Affecting the Sustainability Evaluation of Two Types of Sports Events
+Single-game events, such as the Super Bowl, producehigh-intensity, short-duration environmental
+pressures, with concentrated resource demand and instantaneous waste generation that challenge local
+infrastructure. Impacts are largely confined to a single venue, with spectator travel causing temporary
+emissions spikes and waste production occurring in massive pulses rather than continuously. In contrast,
+multi-sport competitions createextended-duration, distributed impactsover weeks and across multiple
+venues,withcomplexinter-venuetransportationemissions(c trans(t))anddistinctresourcepatternsdepending
+Team # 16738 Page 23 of 25
+Figure 7.2: Example strategies for maintaining high sustainability score based on Circular Economy
+on venue type (e.g., outdoorwelectricity = 1.20, aquaticwwater = 1.30).
+Thetwoeventtypesalsodifferininfrastructureandlegacyeffects. SuperBowlimpactsaremostlytemporary,
+leveraging existing venues with minimal permanent construction. Olympic Games require transformative
+infrastructure and transport upgrades, producing long-term environmental changes. The large workforce
+(170,000–200,000staffandvolunteers)addsoperationalemissions,whilethelegacycanincludebothurban
+regeneration and underutilized facilities, illustrating the broader and lasting environmental footprint of
+multi-sport events.
+8 Strengths and Weaknesses
+Strengths
+•Holistic and Systematic Framework:The Four-Stage Assessment Framework (Supply, Consump-
+tion, Load, Capacity) provides a comprehensive, logical structure that deconstructs the complex
+environmental footprint of a mega-event, ensuring all critical phases of impact are considered.
+•Data-Driven Objectivity:The model relies on quantifiable indicators sourced from authoritative
+publicdatabases(e.g.,EIA,NOAA,WRI,FEMA).Thisdata-drivenapproachminimizessubjectivity
+and ensures the results are transparent, replicable, and grounded in verifiable evidence.
+•Balanced and Robust Weighting:By integrating the Analytic Network Process (ANP) with the
+EntropyWeightMethod,ourCombinedWeightingModelsynthesizesexpert-drivenstrategicpriorities
+withobjectivedatatrends. Thismitigatesthebiasesofanysinglemethodandproducesamorebalanced
+and defensible set of indicator weights.
+•Forward-Looking and Dynamic:The incorporation of the Trend Extrapolation Model allows our
+evaluation to be forward-looking. By projecting the impact of future environmental policies on key
+indicators, the model provides a dynamic assessment for 2029 rather than a purely static snapshot,
+making it a more relevant tool for strategic decision-making.
+Weaknesses
+•DependencyonDataAvailability:Themodel’saccuracyiscontingentonthequalityandgranularity
+of public data. For some indicators, city-specific data was unavailable, necessitating the use of state-
+level or proxy data, which may not fully capture local nuances.
+Team # 16738 Page 24 of 25
+•InherentSubjectivityinWeighting:Whileourcombinedweightingapproachisdesignedtobalance
+perspectives,theANPcomponentstillreliesonsimulatedexpertjudgments. Differentexpertopinions
+could lead to variations in the final weights and rankings, introducing a degree of subjectivity.
+9 Conclusion
+Inthispaper,wesuccessfullydevelopedandappliedacomprehensive,multi-criteriadecision-makingmodel
+toaddressthecritical,yetoftenoverlooked,challengeofselectingenvironmentallysustainablehostcitiesfor
+sportmega-events. OurcentralcontributionisanovelFour-StageAssessmentFrameworkandadynamic,
+data-driven evaluation processthat shifts the focus of sustainability from temporary, on-site fixes to the
+strategic importance of host city selection.
+Our model demonstrates that a city’s sustainability performance is a complex interplay of its inherent
+environmental context and its commitment to forward-looking policy. The results of our analysis led to
+a clear recommendation: based on current data and projected trends,Seattle, WA, represents the most
+sustainable choice for the 2029 Super Bowl, while theLos Angeles Areastands out as the best option
+among experienced hosts. Furthermore, our "archetype" analysis revealed that different cities offer distinct
+pathways to sustainability—from the "All-Rounder" to the "Policy-Driven Climber"—providing the NFL
+with a nuanced, strategic framework for future decisions.
+We acknowledge the limitations of our model, which is contingent on the availability of public data and
+simplifies complex ecological interactions. Future work could enhance this framework by incorporating
+moregranular,real-timedataandexpandingthescopetoincludesocialsustainabilitymetrics. Nevertheless,
+our research provides a robust, transparent, and adaptable tool for the NFL and other sports organizations.
+By placing environmental science at the core of the decision-making process, this model offers a tangible
+pathway toward a future where mega-events not only entertain but also contribute positively to the planet.
+References
+[1] National Football League. (2023).NFL Green: Environmental Initiatives at Super Bowl Events.
+Retrieved from https://www.nfl.com/green
+[2] Green Sports Alliance. (n.d.).Greening the Sports Industry. Retrieved from https://www.
+greensportsalliance.org/
+[3] National Football League. (n.d.).NFL Green. Retrieved from https://www.nfl.com/causes/nfl-green
+[4] Sport Positive Summit. (2024, February 7).Five Ways Super Bowl LIX Is Tack-
+ling Sustainability. Retrieved from https://www.sportpositivesummit.com/news-article/
+five-ways-super-bowl-lix-is-tackling-sustainability
+[5] U.S.EnergyInformationAdministration.(2023).StateElectricityProfiles[Dataset].U.S.Department
+of Energy. https://www.eia.gov/electricity/state
+[6] Walk Score. (2024).Transit Score Methodology. Walk Score. https://www.walkscore.com/
+transit-score-methodology.shtml
+[7] National Centers for Environmental Information. (2021).U.S. Climate Normals 1991–2020
+[Data set]. National Oceanic and Atmospheric Administration. https://www.ncei.noaa.gov/products/
+land-based-station/us-climate-normals
+[8] WorldResourcesInstitute.(2023).AqueductWaterRiskAtlas4.0[Dataset].https://www.wri.org/data/
+aqueduct-global-maps-40-data
+Team # 16738 Page 25 of 25
+[9] U.S.DepartmentofAgriculture, ForestService.(2025).TreeCanopyCover(TCC)Datasets: Current
+Data Release for the Conterminous U.S.[Data set]. https://data.fs.usda.gov/geodata/rastergateway/
+treecanopycover
+[10] NationalOceanic andAtmospheric Administration. (2024).NOAA ClimateData Online(CDO)[Data
+set]. U.S. Department of Commerce. https://www.ncei.noaa.gov/cdo-web/
+[11] U.S. Environmental Protection Agency. (2023).Facts and Figures About Materials, Waste and Recy-
+cling[Data set]. https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling
+[12] U.S. Environmental Protection Agency. (2023).Air Quality Statistics Report: Annual Summary Data
+[Data set]. https://www.epa.gov/outdoor-air-quality-data/air-data-annual-summary
+[13] FederalEmergencyManagementAgency.(2023).NationalRiskIndex: DroughtRiskScoresbyCounty
+[Data set]. U.S. Department of Homeland Security. https://hazards.fema.gov/nri/drought
+[14] National Conference of State Legislatures. (2021).State Renewable Portfolio Standards and Goals
+[Policy database]. https://www.ncsl.org/energy/state-renewable-portfolio-standards-and-goals
+10 Letter to NFL
+Dear NFL Committee,
+In our research on selecting the host city for Super Bowl 2029, we employed a Multi-Criteria Decision-
+Making (MCDM) model based on the Combined Weighting Method and TOPSIS scoring. After com-
+prehensively evaluating environmental and sustainability factors, we identified several potential host cities,
+including Seattle, Denver, Los Angeles, Santa Clara, among others.
+Following the exclusion of cities that have hosted the Super Bowl in the past five years, and in light of
+our prior evaluations, we are pleased to recommend Seattle as the host city for Super Bowl 2029. Seattle
+rankshighestinourevaluationmodel,demonstratingoutstandingperformanceacrossvarioussustainability
+metrics.
+Based on the data collected and a careful assessment of each indicator, Seattle has achieved high scores
+in all key areas. Our thorough analysis shows that the city has made significant efforts to enhance the
+environmental friendliness of future large-scale events. According to our projections, Seattle is expected to
+generateminimalpollutionandefficientlyconservesubstantialresourcesduringmega-eventsliketheSuper
+Bowl.
+Furthermore, Seattle’s robust clean energy infrastructure and strong environmental capacity enable it to
+effectively mitigate the negative impacts associated with major events, as well as to withstand unforeseen
+risks. The city’s mild climate also serves as an additional advantage, further supporting its suitability as a
+future host.
+Insummary,ourevaluationunderscoresSeattle’ssolidfoundationincleanresourcesupplyandenviron-
+mental resilience, as well as its potential to minimize operational resource use and event-related environ-
+mentalload. ThisrecommendationalignscloselywiththeNFLCommittee’scommitmenttoenvironmental
+sustainability, and we hope it provides valuable insight for your future decision-making.
+Best regards
+Himcm COMAP
+Report on Use of AI 
+1. ChatGPT 5.1 
+Query: convert scattered text data about cities’ GHG reduction targets, recycling rate, 
+per-capita water use, clean-energy share, tree-canopy coverage, AQI goals, and traffic 
+delay into an Excel-style table. 
+Output: The model produced a neatly aligned table with column headers such as 
+City, GHG reduction (%), Waste diversion (%), Per-capita water use 
+(gpd), Clean energy share (%), Tree canopy (%), AQI target, Annual 
+delay (hours) 
+and one row per city, using a comma-separated format that can be pasted directly into 
+Excel. 
+2. ChatGPT 5.1 
+Query: create empty Excel templates by keeping only the header row and removing 
+all descriptive text in the body, so that numeric data can be filled in later. 
+Output: The model returned table structures where only the column names (e.g., 
+City, Year, Carbon target, Water consumption target, Waste diversion 
+target, Clean-energy share) were preserved and all non-numeric text cells were 
+cleared, allowing us to use the result as a clean Excel input template. 
+3. ChatGPT 5.1 
+Query: normalize environmental indicators (e.g., total CO₂ emissions, clean-energy 
+ratios, tree-canopy coverage, AQI values, WQI scores) into scores on a 0–10 or 0–100 
+scale using min–max normalization. 
+Output: The model explained the min–max formula and applied it to our data vectors, 
+for example: 
+4. score_i = 10 * (x_max − x_i) / (x_max − x_min)   (for “the smaller, 
+the better” indicators) 
+5. score_i = 10 * (x_i − x_min) / (x_max − x_min)   (for “the larger, 
+the better” indicators) 
+It then returned normalized scores for each city in table form, ready to be copied into 
+Excel. 
+6. ChatGPT 5.1 
+Query: fix LaTeX syntax and improve formatting for tables and figures (e.g., multi-
+column tables for city rankings, changing arrow colors in \textcolor, placing two 
+traffic maps side-by-side, and correcting bold citations). 
+Output: The model identified common LaTeX issues (missing \\ or &, mismatched 
+braces, incorrect packages) and returned corrected code snippets such as: 
+7. \begin{table}[H] 
+8.   \centering 
+9.   \caption{Comparison of 2024 Baseline and 2029 Projected Rankings} 
+10.   \label{tab:ranking_comparison} 
+11.   \small 
+12.   \begin{tabular}{l c c c l} 
+13.     \hline 
+14.     \textbf{City} & \textbf{2024 Rank} & \textbf{2029 Rank} & 
+\textbf{Rank Change} & \textbf{Driver} \\ 
+15.     \hline 
+16.     Baltimore & 9 & 8 & \textcolor{blue}{\textbf{$\uparrow$ 1}} & 
+State-level renewable goals \\ 
+17.     \hline 
+18.   \end{tabular} 
+19. \end{table} 
+and example code for \includegraphics and minipage to place two figures side by 
+side, which compiled successfully in our report. 
+ 

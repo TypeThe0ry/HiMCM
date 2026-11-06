@@ -1,0 +1,73 @@
+Team 7059 HiMCM Page 1 of 26
+Tri To Have Fun!
+A Mathematic Design of Triathlons
+November 13, 2016
+2016 High School Mathematical Competition of Modeling
+Completed by
+Team 7059
+Problem A:
+Swim, Bike, and Run
+Summary Sheet
+Our team took a multifaceted approach to overcome challenges presented by organizing a
+successful triathlon. We employed mathematics, statistics, computational science, and
+real-world knowledge to examine the eﬀects of a triathlon on its participants, the hosting
+locale, and sponsors. The three conditions proposed by the triathlon supporters we kept in
+mind were: to minimize road congestion, to minimize road closure time, and minimize
+number of participants who need to be disqualiﬁed due to taking too long. We ﬁrst used
+statistics to determine reasonable divisions for triathlon participants based on race speeds.
+This was based on previous triathlon divisions and signiﬁcant diﬀerences in other classes.
+For example, the drop oﬀ in times at age 50 is statistically signiﬁcant, so we created a
+separate division for those over 50.
+To create waves, we combined divisions if their averages were not signiﬁcantly diﬀerent
+(using 95% conﬁdence intervals), and if combining them did not make the wave too large
+and congested. We were also forced to split some divisions between waves, because putting
+them all in one wave would cause that wave to be too large. For example, putting all the
+Male Youth Open triathletes in one wave would cause a wave with more than 1600 people,
+which is too large to ﬁt everybody comfortably. Then, we devised an equation for ﬁnding
+the starting time of each wave. Our equation takes congestion into account by making it so
+that the fastest swimmer from a group reaches the ﬁrst transition point after three quarters
+of the previous group has already left the transition area. So, the only passing that occurs
+between groups is between the slower quadrant of one group and the faster quadrant of
+another. After calculating the starting times, we found that this slight congestion results in
+at least three quarters of the slowest wave being able to ﬁnish the race without being
+disqualiﬁed. By doing this we were able to develop an analytical model that portrays the
+schedule of start times as well as expected ﬁnish times.
+Using this info, we were able to further model the course as a whole in a computational
+model. This allowed us to compare the congestion and ﬁnishing triathletes when we varied
+the distances of each portion of the race. We found that making the distance of each
+portion shorter decreased congestion, increased the number of participants who could
+ﬁnish, and decreased the time that the roads need to be closed. However, professional
+triathletes mostly only show up to races that have standard length. So, decreasing the
+length of each section could discourage some triathletes from competing in the race.
+Team 7059 HiMCM Page 2 of 26
+Letter to the Mayor
+Dear Mr. Mayor,
+We understand public events such as the proposed triathlon should be fun while also being
+competitive. Similarly, your concerns about enjoyment of the participants and road con-
+gestion as well as the Super Tread Race Company’s concern about promotion and class of
+the race are well understood. We have designed a system of divisions and wave start times
+that will make the triathlon as successful as possible. We were able to achieve this through
+use of an analytical model as well as a computational model that modeled start times and
+congestion, respectively.
+To be most successful, we condensed the needs of the race to have: minimal road closure
+time to keep the city moving, minimal congestion so that triathletes are not hindered, as
+many people as possible ﬁnish the race before the road closure time so that disqualiﬁcations
+of outlying participants are limited. We found that some divisions we have could be grouped
+into waves at the start, and the waves should be staggered at irregular intervals. This
+will allow for the most people to ﬁnish within the 5.5 hour time slot while also minimizing
+congestion in the course. We found that the most congested sections are the transition areas,
+followed by running. This is due to the variation in course run time that leads to assimilation
+of the preselected starting waves.
+We also recommend that the track does not overlap itself or double back over itself in order
+to minimize congestion. Finally, we believe it best that the roads are not closed until the
+ﬁrst participant of the race is expected to get out of the water. Also, we found that changing
+triathlon section length could have an impact on congestion. For example, an decrease in
+swim distance to 1500m is expected to increase congestion in the water by about a factor of
+ﬁve.
+Implementing these suggestions would allow for you, the town, the race sponsorship, and
+the general participants. We urge you take these into account in helping organize this race.
+We have enclosed a suggested schedule for his event.
+Best Regards,
+Team 7059
+Team 7059 HiMCM Page 3 of 26
+Figure 1: A complete schedule based on our model.
