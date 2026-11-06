@@ -1,0 +1,108 @@
+2021 HIMCM PROBLEM A
+Team Control Number: 11727
+November 2021
+Summary
+Considering the high costs of connecting a house to the national power grid, around 20,000 $ per mile of powerlines,
+we’re asked to evaluate a possible power alternative to relying on the grid for a 1600 ft ² home. Assuming that the
+price of sourcing power from the energy company is exorbitant. We researched different types of batteries, LFP, lead-
+acid, and AGM; citing their specific power ratings. Continuous power, instantaneous power, round-trip efficiency,
+and capacity. Subsequently, we cataloged nearly all of the appliances used by the average family and their energy
+consumption per day. To see the spread of instantaneous and continuous power dependencies for each appliance, we
+added a column. This helped us ascertain whether batteries could handle the amount of energy required for each
+load, then we transformed this theory into an applied model with a multi-layer synthesis where we could test any
+battery to any power consumption(combination of appliances). This spits out only the aptest batteries and ranks
+them by effectiveness for each factor. Next, we assessed the sustainability requirements for a home battery–finding
+that the charge rate would need to be larger than the discharge rate since there is the cumulative loss of power during
+the night. This means that the battery needs to produce as much energy consumed during the day and night in the
+daylight hours.
+Despite being given the problems going from a specific solution for the 1600 ft ² house to a generalized model
+for all energy consumption and all secondary batteries. We decided to answer the second question first because we
+could use the insight from a general model and test a sample bank of batteries for the daily consumption of the 1600
+ft² house. We decided that the Tesla Powerwall 2, a lithium-ion battery, would be the most optimal alternative to
+grid power. It has the highest capacity of the batteries we analyzed, plus it charges much faster than its lead-acid
+counterparts. It’s also a deep cycle battery, so it can run appliances for a long period of time without dropping
+voltage.
+Finally, we read about the research that Swedish scientists were doing with cement batteries. They found that
+by using a metal-coated carbon mesh, iron for anodes, and nickel for cathodes, a basic building material, cement,
+could be turned multi-purpose. It could hold a limited capacity, and namely act as the foundation for a home. The
+specifications of the rechargeable cement batteries leave much to be desired, the power density is much lower than
+other secondary batteries. Using these batteries is not viable for a small homestead like the example because there
+would need to be a lot of cement material before any sizable amount of capacity could be allocated.
+1
+November 2021
+OFF-GRID BATTERY 
+ MODEL AND EVALUATION
+As the world becomes more advanced in green and renewable energy, this also 
+drives the development of storage and batteries with Tech giants like Tesla and LG 
+Chemical taking the lead. In recent years the once seems impossible off-grid house 
+becomes more popular especially in remote areas where transmission towers and 
+electric grid does not cover. 
+This model provides the customer with a battery 
+combination that is accurate, efficient, and secure.  This 
+model first asks for the user to input their normal 
+electricity consumption based on the using time of 
+electrical appliances, as well as the maximum budget 
+that the user can take to go off-grid.  Then the system 
+uses this information and the popular choice of batteries 
+in the market, to find all the possible combinations of 
+batteries based on the different types of energy 
+consumptions, then the system goes through two filters: 
+price and capacity, as well as the ranking system of left 
+budget and extra storage, presents the customer the top 
+choice overall combinations. 
+TOT Model Of Batteries
+Cement Battery & Future
+In early 2021, Doctor Emma Zhang and Professor Luping 
+Tang from Chalmers University in Sweden  have made  a 
+breakthrough in cement battery, using gravitational force 
+to storage electricity. This is a great way to store energy in 
+terms of two ways. First, it can uses the tall concrete in the 
+city as well as the unused mine in the rural areas. Second, 
+it can generate substantial amount of energy as higher the 
+building the larger the potential energy thus greater the 
+generated electricity. It also has one major disadvantages, 
+it's not very applicable to normal civilian houses as these 
+houses don't have the height and mine in order to 
+efficiently store energy. In general, cement battery might 
+be very efficient for recharge a city, but not as efficient to 
+supply electricity to a individual house.  
+
+Team 11727 Page 2 of 21
+Contents
+1 Introduction 3
+1.1 Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.2 Problem Restatement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+2 Assumptions and Justification 3
+3 Variables and Constants 4
+3.1 Energy Consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+3.1.1 Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+3.1.2 Constants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+3.2 Battery . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+3.2.1 Constants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+4 Pre Model 6
+4.1 Energy Consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+4.1.1 Total Energy Consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+4.1.2 Instantaneous/Continuous Energy Consumption . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+4.1.3 Schedule Adopted Consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+5 Mathematical Model 7
+5.1 Model Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+5.2 Recharge rate and the number of batteries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+5.2.1 Scenario 1: Only 1 type of continuous and 1 type instantaneous battery . . . . . . . . . . . . . 10
+5.2.2 Scenario 2: Only 1 type of battery that covers both instantaneous and continuous needs. . . . 11
+5.2.3 Scenario 3: Possible to have 2 types of batteries for either continuous or instantaneous . . . . . 11
+5.2.4 Putting all of the scenarios together. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+6 Application 15
+6.1 Schedules and Energy Consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+6.2 Number of Batteries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+6.3 Price Filter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+6.4 Storage Filter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+6.5 Ranking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+7 Model Evaluation 17
+7.1 Disadvantages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+7.2 Advantages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+8 Conclusion 18
+9 Reference 18
+10 Appendix 20
+10.1 Appendix [A]: The 4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+10.2 Appendix [B]: The battery table . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+10.3 Appendix [C]: Desmos Lattice points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21

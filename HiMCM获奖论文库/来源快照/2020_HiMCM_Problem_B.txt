@@ -1,0 +1,128 @@
+ 
+2020 HiMCM 
+Problem B: Funding Biodiversity Conservation 
+ 
+Background: Thousands of species of plants and animals face threats that could result in their 
+extinction, while biodiversity conservation actions that could save them are often available. 
+Conservation managers face difficult decisions when there is limited funding for biodiversity 
+conservation. Managers need to decide which projects they should fund to best achieve their 
+objectives, not the least of which is to save the most species. This is particularly important if the 
+benefits of certain conservation actions vary across projects, the costs of these actions for 
+specific projects differ, and the available funding for these actions is considerably less than is 
+needed to support all proposed projects. 
+ 
+One issue that makes this a more difficult problem is the varying timeline and life cycle of each 
+project. Conservation projects can take years or decades, and the schedule of when costs are 
+incurred during the project can vary significantly depending on the project’s scope, location, 
+targeted species, and responsible agency. This means that budgets for conservation projects must 
+provide adequate funds for the entire lifetime of the project. Additionally, managers need to 
+closely monitor their budgets to efficiently allocate funds as demand for resources vary across 
+projects and time. For example, they need to ensure they have adequate resources available for 
+times when some projects require more funding, and take advantage of times when some projects 
+require less.  
+Objective: Determine how to efficiently invest in biodiversity conservation activities for 
+endangered and threatened species that take place over long time frames, and whose expected 
+costs change over that time. 
+HiMCM Case: Prioritize Action and Funding for Plant Conservation in Florida (USA) 
+Florida is one of the hotspots for plant biodiversity conservation, with 20% of its species 
+imperiled. Only 2% of these plant species (~64) receive protection under the US Endangered 
+Species Act (ESA), but funding is currently inadequate for protecting even this limited number 
+of species. The Florida Rare Plant Conservation Endowment (FRPCE) (see Attachment A) is a 
+trust fund spearheaded by conservation managers to provide funds over time to support research, 
+protection, and conservation of rare and imperiled plant species found in Florida. This trust fund 
+aims to generate an adequate endowment to pay for both the up-front costs of conservation and 
+the long-term costs that are currently difficult to meet with traditional fundraising campaigns. 
+ 
+Requirements:  
+1. Given the need to recover imperiled plant species in Florida and manage them into the future, 
+develop a model to advise the FRPCE Board of the minimum fundraising required for “long-
+term and reliable” funding. For the purposes of this HiMCM problem, we will limit our analysis 
+to the 48 imperiled species included in the attached data set (Attachment B). Note that each row 
+in the database indicates a recovery project for a species. 
+ 
+a. Identify and discuss relevant objectives that the FRPCE Board should consider in their 
+conservation efforts and budgeting decisions. Using these objectives, what measures 
+would you use to evaluate a proposed fundraising plan as being the “best?” 
+b. List and address some general characteristics of imperiled plant species. Indicate the 
+factors involved in these species’ protection that you will use in your decision model. 
+ 
+c. Develop a model or algorithm (or set of models or algorithms) for the FRPCE Board to
+use to determine a fundraising schedule (money required with timeline) that will 
+minimize the funds required to be raised, yet still obtain the necessary resources to 
+implement the recovery projects for our 48 species and manage them into the future. 
+2. Apply your model to recommend to the FRPCE Board a priority order of funding for the
+recovery projects that will manage balancing the funds available with the spending required on 
+these projects over time. Discuss your recommendation.  
+3. Write a one-page non-technical memo to the FRPCE Board explaining your results, and make
+recommendations based on your modeling and analysis. 
+Your PDF solution of no more than 25 total pages should include: 
+ One-page Summary Sheet.
+ Table of Contents.
+ Your complete solution.
+ One-page Memo.
+ References list.
+Note: The HiMCM Contest now has a 25 page limit. All aspects of your submission count toward the 25 
+page limit (Summary Sheet, Table of Contents, Reference List and any Appendices). 
+Attachments: 
+Attachment A: A Conservation Endowment For Imperiled Plants In Florida 
+Attachment B: HiMCM2020ProblemB_ThreatenedPlantsData.xlsx 
+Data Fields: 
+unique_id: the unique plant identifier for that species. 
+Benefit: a measure that indicates the expected relative conservation value of funding one 
+species over another. It takes into account information about how threatened a species is 
+and how easy it would be to perform the conservation actions to recover it. 
+Taxonomic Uniqueness: a measure of the uniqueness of the species; larger number 
+indicates greater uniqueness. 
+Feasibility of Success: the probability that the species will be protected from extinction 
+if all of the actions receive funding. 
+Year “n” cost: the estimated recovery cost in US dollars for each row’s species in 
+the “nth” year of that project; n ∈ {1, 2, 3, … 25}.  
+ 
+Glossary: 
+ 
+Biodiversity: the amount of diversity or variety between different plants, animals, and 
+other species in a given habitat at a particular time. 
+ 
+Biodiversity Conservation: the practice of protecting and preserving the great variety 
+of species, habitats, ecosystems, and genetic diversity on the planet.  
+ 
+Imperiled Species: those species whose populations have decreased so dramatically that 
+they are at risk of extinction. 
+ 
+Traditional Fundraising: fundraising efforts or campaigns that occur annually or on a 
+regular schedule that involve requests for donations to attain a specific total monetary 
+goal. 
+ 
+COMAP thanks researchers from Arizona and Florida for their assistance in developing this 
+project. Upon completion of HiMCM, COMAP will recognize these researchers and their 
+institutions on the HiMCM webpage and in our spring Consortium publication.  
+ 
+ 
+ 
+ 
+Attachment A    
+ 
+A Conservation Endowment for imperiled plants in Florida 
+ 
+Florida has a rich and unique natural diversity, with about 18% of native U.S. plant taxa. But 
+with ongoing threats, the number of imperiled species has increased and the State has been 
+considered a conservation priority region. Less than 5% of imperiled plant species in Florida 
+receive protection under the U.S. Endangered Species Act, and only a small portion of actions 
+needed to recover Florida plants have been financed. Because existing plant conservation 
+funding is inadequate to support research, protection, and management of imperiled plants, a 
+group of conservation specialists representing seven institutions in Florida began conversations 
+in 2015 to initiate the Florida Rare Plant Conservation Endowment (FRPCE). The FRPCE is 
+being established as a mechanism to provide long-term and reliable funding to support 
+conservation-related projects for Florida imperiled plant species and their ecosystems.  
+ 
+Excerpt from: Negron-Ortiz, V. (2019, July 27-31). A Conservation Endowment for imperiled 
+plants in Florida [Conference session]. Botany 2019 Conference: Sky Islands and Desert 
+Seas, Tucson, Arizona. The Botanical Society of America. Printed with permission from the 
+author.  
+ 
+Glossary: 
+ 
+Taxa (singular taxon): classification/taxonomic units at a given level. Plant taxonomy or 
+classification is the science of naming organisms and placing them in a hierarchical 
+structure, each level being given a name (e.g., kingdom, division (phylum), class, order, 
+family, genus, species). Taxa are arranged in hierarchy from kingdom to subspecies. 
