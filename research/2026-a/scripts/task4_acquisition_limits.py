@@ -12,7 +12,10 @@ from task4_melbourne_observed_travel import melbourne_bounds
 from task4_continuous_preferences import feasible_preferences
 
 
-def certificate(lower, upper, measured):
+def certificate(lower, upper, measured, fixed_alpha=.1, alpha_range=(.05, .2)):
+    amin, amax = alpha_range
+    if not 0 < amin <= fixed_alpha <= amax < 1:
+        raise ValueError('Fixed alpha must lie inside the interior preference range')
     lo, hi = np.asarray(lower, float), np.asarray(upper, float)
     mask = np.asarray(measured)
     if lo.ndim != 2 or lo.shape != hi.shape or lo.shape[1] != 10 or len(lo) < 2:
@@ -24,13 +27,13 @@ def certificate(lower, upper, measured):
         raise ValueError('Finite ordered utility intervals in [0,1] required')
     worst_upper = np.where(mask, lo, hi)
     best_lower = np.where(mask, hi, lo)
-    upper_scores = score(worst_upper, weights())
-    lower_scores = score(best_lower, weights())
+    upper_scores = score(worst_upper, weights(fixed_alpha))
+    lower_scores = score(best_lower, weights(fixed_alpha))
     rows = []
     for i in range(len(lo)):
         others = np.arange(len(lo)) != i
         margin = float(upper_scores[i] - lower_scores[others].max())
-        continuous = feasible_preferences(worst_upper[i], best_lower[others])
+        continuous = feasible_preferences(worst_upper[i], best_lower[others], amin, amax)
         witness = continuous['witness_alpha']
         if witness is not None:
             checked = score(np.vstack([worst_upper[i], best_lower[others]]), weights(witness))
