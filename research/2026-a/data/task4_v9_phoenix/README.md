@@ -31,3 +31,13 @@ collect_spatial.py 直接使用官方名录坐标和既有市界多边形（含�
 全州缺坐标198行/146个ID，其中包括名称带Phoenix的学校；不能默认为市外。名录缺少运营状态、学段和历史学年，当前坐标与2024届最后记录学校口径未完全对齐。因此扩大名录改善了覆盖审计，尚不证明全市毕业率，也不改写城市模型输入或宣布冠军变化。主模型公式及25城可能冠军结果仍保持上一版本。
 
 复现：collect_spatial.py（缓存成功响应，失败留状态）、audit_spatial.py（按ID合并类型与抑制区间）。验证：515实体ID唯一、响应成功、所有计数界0≤下界≤上界≤队列人数；官方别名坐标在市内同ID一致。尚未完成当前市界与历史位置的一致性验证。
+
+## 缺坐标实体的官方ID恢复
+
+recover_locations.py 从缺坐标学校中找到10个唯一NCES同名候选，逐校获取ADE FY2025 GetEntity记录，用官方leances+nces组成完整NCES学校ID，10个均与NCES2024–25记录一致。以该NCES记录中的坐标补充空间核查，而非只凭名称或邮寄城市认定。保留实体原始响应、坐标来源和ID匹配表。
+
+3所Online学校仍排除。其余7所中Roadrunner School队列被抑制；6所队列已知，新增1,199人（Trevor Browne632、Career and College Prep24、International Commerce145、Anthem Prep40、BASIS Phoenix66、Hope College and Career Readiness292）。与原空间候选按实体ID排重后，已知队列子集增至96校、16,780人；毕业人数界[10,620,13,465]，比例[63.29%,80.24%]。recover_locations.py与audit_spatial.py --include-recovered可复现，原90校输出保留供比较。
+
+学校ID验证解决了这10个实体的连接问题，未解决其他缺坐标学校、被抑制分母、私校和历史位置覆盖，因此未将子集率填为全市指标。本轮主评分输入不变，保留上一模型结果。
+
+Bogotá并行下载核查：官方镜像的问卷ZIP经requests连接关闭、网页访问超时、Chrome ERR_SOCKET_NOT_CONNECTED，未获得ZIP。SIMUR目录确认调查覆盖Bogotá及20个邻近市镇、5岁及以上人口；尚未核实高中在读字段、时长和家庭调查权重。没有拿拦截调查EODI权重说明替代家庭调查EODH方法，也没有新增通学观测。
