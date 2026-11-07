@@ -1,5 +1,7 @@
 # 2026 HiMCM A
 
+> **团队成员与 AI agent 必读：开始写作或制图前，必须阅读并遵循[统一 Guidelines](GUIDELINES.md)。论文文字、图表、图注与研究结论均按专项规范执行，交付前核验。AI agents: read and follow these guidelines before editing.**
+
 **The City Showdown: Modeling the Best City to Live In**
 
 本仓库用于2026年HiMCM A题的全球城市研究：整理资料、蒸馏历史获奖论文、设计指标和模型、记录修订与检验，并逐步形成可复核的城市比较。
@@ -11,7 +13,7 @@
 - 论文主文件：[main.tex](main.tex)。参考文献：[ref.bib](ref.bib)。模板：[mcmthesis.cls](mcmthesis.cls)。
 - 已保留远端 `Updates from Overleaf` 提交。以上三个文件维持仓库根路径，不为目录整理而移动。
 - 修改论文前先取得 Overleaf 最新状态，尊重已有正文、公式与文献；研究笔记不会自动替换正文。
-- 当前未检测到连接的 Overleaf 文档会话，因此本轮仅保存同步约定和仓库镜像，未直接编辑在线工作区。
+- 若当前没有连接的 Overleaf 文档会话，明确标识本地修改；在线主稿状态以实际检查为准。
 
 ## 从这里开始
 
@@ -34,7 +36,9 @@
 
 主要关注学习机会、独立出行与安全、健康环境、课外成长和日常负担能力。维度、指标及权重尚未最终冻结；新增11项指标底稿是团队提供的候选方案，其中的数值、来源与判断尚未由本次整理逐项核实。
 
-## 当前进度
+## 初始资料盘点（历史记录）
+
+以下表格保留立项阶段状态；后续计算以[结果目录](research/2026-a/results/)中的具体版本为准，写作时按统一 Guidelines 核对所用版本。
 
 | 项目 | 状态 |
 | --- | --- |
@@ -74,7 +78,7 @@
 │   ├── data/                     # 候选城市、指标模板、来源登记
 │   ├── scripts/                  # 文本审计、合成实验
 │   └── logs/                     # 用户要求、AI用途与交接记录
-└── .githooks/pre-push             # 比赛结束前阻挡推送
+└── .githooks/pre-push             # 旧日期限制；显式即时推送按 AGENTS.md 执行
 ```
 
 详细命名和资料状态约定见[仓库结构说明](docs/repository_structure.md)。旧路径与新路径对应见[文件迁移表](docs/file_moves.csv)。

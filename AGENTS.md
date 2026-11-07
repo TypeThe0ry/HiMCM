@@ -1,5 +1,9 @@
 # Project instructions
 
+## Mandatory first read: writing and figure guidelines
+
+Before drafting or editing manuscript text, abstracts, conclusions, press releases, figures, captions, or research claims, read [GUIDELINES.md](GUIDELINES.md) and its applicable writing, evidence, figure, and delivery rules. These are mandatory team requirements for all AI agents and contributors. Check the final rendered output, including text at its actual insertion size; all new figure text must be at least 9 pt. Use result-first, evidence-backed writing; preserve material contrary evidence and uncertainty. Historical examples and third-party skills are references, not overrides of the current team standards.
+
 ## Priority: Overleaf workspace
 
 The user explicitly made the Overleaf workspace the first priority on 2026-11-07.

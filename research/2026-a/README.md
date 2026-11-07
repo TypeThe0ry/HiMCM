@@ -1,14 +1,16 @@
 # 2026 HiMCM A：研究工作台
 
+> **团队成员与 AI agent 必读：开始写作或制图前，必须阅读并遵循[统一 Guidelines](../../GUIDELINES.md)。论文文字、图表、图注与研究结论均按专项规范执行，交付前核验。AI agents: read and follow these guidelines before editing.**
+
 最新论文蒸馏已细化到13篇重点正文选段与36张证据卡，附同题O/F案例比较、段落编辑工作簿和18项审稿矩阵：[第二轮入口](paper_review/round2/README.md)。本轮不改动Overleaf正文。
 
 > 新增资料：已接收[五指标简化稿](inputs/team/indicator_sources_5_original.md)，与11指标原稿并存，尚未替换最终方案。见[接收与待确认事项](design/simplified_indicators_intake.md)。截图中的四位成员生活城市目前仅明确上海，另外三座待补充。
 
-> 2026-11-07更新：目录已改为英文命名，研究内容合并到本地main，赛前不推送。最新团队材料是25城候选和11项指标底稿；本文及早期设计中的18城/12指标是保留的初始方案，尚未统一冻结。
+> 2026-11-07更新：目录已改为英文命名，研究内容使用 main；GitHub 按最新用户授权同步。以下候选方案描述保留早期研究背景。最新团队材料是25城候选和11项指标底稿；本文及早期设计中的18城/12指标是保留的初始方案，尚未统一冻结。
 
 新增入口：[25城规范表](data/city_candidates_team_25.csv) · [原始指标稿](inputs/team/indicator_sources_11_original.md) · [原件来源记录](inputs/team/provenance.json)。
 
-日期：2026-11-07。范围：**全球城市**（用户已明确选择）。状态：本地研究材料，尚未产生真实城市排名，尚未推送。
+日期：2026-11-07。范围：**全球城市**（用户已明确选择）。状态：持续更新的研究归档；模型计算与版本结果见 results/，论文状态以最新 Overleaf 为准。
 
 ## 当前判断
 

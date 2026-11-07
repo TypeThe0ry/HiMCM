@@ -1,5 +1,7 @@
 # 本题制图方案与获奖论文样式参考
 
+> **团队成员与 AI agent 必读：开始写作或制图前，必须阅读并遵循[统一 Guidelines](../../../GUIDELINES.md)。论文文字、图表、图注与研究结论均按专项规范执行，交付前核验。AI agents: read and follow these guidelines before editing.**
+
 [全部 guideline 与最新验收标准](GUIDELINES.md) · [真实底图地图集](cartography/index.html) · [风格指南](style_guide/STYLE_GUIDE.md)
 
 本页保留第一轮分析图的设计说明；最新地图与字号标准见上方入口。论文插入位置由主稿选用。

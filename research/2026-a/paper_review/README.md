@@ -1,5 +1,7 @@
 # 获奖论文蒸馏
 
+> **团队成员与 AI agent 必读：开始写作或制图前，必须阅读并遵循[统一 Guidelines](../../../GUIDELINES.md)。论文文字、图表、图注与研究结论均按专项规范执行，交付前核验。AI agents: read and follow these guidelines before editing.**
+
 本目录提炼结构、写作与论证方法。论文是否获奖不替代逐项核验，也不能由小样本推断获奖因果。
 
 ## 最新：第二轮细化
