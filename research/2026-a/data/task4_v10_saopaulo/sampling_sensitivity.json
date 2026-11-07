@@ -1,0 +1,39 @@
+{
+  "method": "exploratory zone-stratified household bootstrap with fixed final person weights",
+  "replicates": 2000,
+  "seed": 20261107,
+  "main_admitted": false,
+  "design_valid_confidence_interval": false,
+  "scopes": {
+    "metro": {
+      "utility_lower": 0.45179540845496896,
+      "utility_upper": 0.6199483743990571,
+      "point_lower": 0.4661981452866583,
+      "point_upper": 0.6058190403179572,
+      "households": 31904,
+      "zones": 492,
+      "singleton_zones": 0,
+      "households_with_hs": 2701,
+      "kish_weight_effective_n": 1438.9348281374603,
+      "endpoint_standard_deviation": [
+        0.007410099605983228,
+        0.007005982920836845
+      ]
+    },
+    "municipality_sao_paulo": {
+      "utility_lower": 0.4370715213136484,
+      "utility_upper": 0.6114325152264785,
+      "point_lower": 0.45602481263754036,
+      "point_upper": 0.5939637028094649,
+      "households": 21917,
+      "zones": 329,
+      "singleton_zones": 0,
+      "households_with_hs": 1648,
+      "kish_weight_effective_n": 809.9572193759385,
+      "endpoint_standard_deviation": [
+        0.009387610927502196,
+        0.009597459291355538
+      ]
+    }
+  }
+}
