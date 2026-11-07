@@ -1,0 +1,62 @@
+{
+  "source": "DfT National Travel Survey NTSQ09082",
+  "workbook_updated": "26 March 2026",
+  "geography": "England",
+  "unit": "mean minutes per education trip to and from school",
+  "notes": [
+    "Education trips of under 50 miles only",
+    "Total journey time includes travelling and waiting time",
+    "Weighted estimates; published unweighted individuals and rounded trip-thousands are not target city sample counts"
+  ],
+  "rows": [
+    {
+      "year": 2023,
+      "age": "5 to 16",
+      "mean_minutes": 18,
+      "unweighted_individuals": 1939,
+      "unweighted_trips_thousands": 12
+    },
+    {
+      "year": 2023,
+      "age": "5 to 10",
+      "mean_minutes": 14,
+      "unweighted_individuals": 913,
+      "unweighted_trips_thousands": 6
+    },
+    {
+      "year": 2023,
+      "age": "11 to 16",
+      "mean_minutes": 23,
+      "unweighted_individuals": 1026,
+      "unweighted_trips_thousands": 6
+    },
+    {
+      "year": 2024,
+      "age": "5 to 16",
+      "mean_minutes": 19,
+      "unweighted_individuals": 2259,
+      "unweighted_trips_thousands": 14
+    },
+    {
+      "year": 2024,
+      "age": "5 to 10",
+      "mean_minutes": 13,
+      "unweighted_individuals": 1114,
+      "unweighted_trips_thousands": 7
+    },
+    {
+      "year": 2024,
+      "age": "11 to 16",
+      "mean_minutes": 25,
+      "unweighted_individuals": 1145,
+      "unweighted_trips_thousands": 7
+    }
+  ],
+  "new_london_admitted_observations": 0,
+  "missing": [
+    "London-region joint filter",
+    "Exact 14\u201318 age and current upper-secondary stage",
+    "City duration distribution and person weighting"
+  ],
+  "decision": "National actual-school-trip reference only; cannot replace London utility interval"
+}

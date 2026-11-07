@@ -1,0 +1,204 @@
+{
+  "main_model_changed": false,
+  "main_admitted": false,
+  "baseline_ten_criteria": "V48 current bounds",
+  "interpretation": "Separate administrative diploma completion criterion; local credentials and accountability geography remain conditional",
+  "new_nyc_outcome": [
+    0.809422438480448,
+    0.8101320357839783
+  ],
+  "scenarios": [
+    {
+      "scenario": "county_target_outcome_unknown",
+      "outcome_weight": 0,
+      "nyc": {
+        "score_lower": 29.108848661495948,
+        "score_upper": 72.80592622514423,
+        "decision_rank": 21,
+        "max_regret": 48.42061204197574
+      },
+      "changed_ranks_vs_unknown": 0,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "nyc_counties_observed",
+      "outcome_weight": 0,
+      "nyc": {
+        "score_lower": 29.108848661495948,
+        "score_upper": 72.80592622514423,
+        "decision_rank": 21,
+        "max_regret": 48.42061204197574
+      },
+      "changed_ranks_vs_unknown": 0,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "doe_charter_excluded_reference",
+      "outcome_weight": 0,
+      "nyc": {
+        "score_lower": 29.108848661495948,
+        "score_upper": 72.80592622514423,
+        "decision_rank": 21,
+        "max_regret": 48.42061204197574
+      },
+      "changed_ranks_vs_unknown": 0,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "county_target_outcome_unknown",
+      "outcome_weight": 0.05,
+      "nyc": {
+        "score_lower": 28.357861997038288,
+        "score_upper": 73.52295093694485,
+        "decision_rank": 21,
+        "max_regret": 49.76773841195555
+      },
+      "changed_ranks_vs_unknown": 0,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "nyc_counties_observed",
+      "outcome_weight": 0.05,
+      "nyc": {
+        "score_lower": 31.82251092635027,
+        "score_upper": 73.09348027629484,
+        "decision_rank": 16,
+        "max_regret": 46.303089482643564
+      },
+      "changed_ranks_vs_unknown": 6,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "doe_charter_excluded_reference",
+      "outcome_weight": 0.05,
+      "nyc": {
+        "score_lower": 31.836088844812576,
+        "score_upper": 73.09998528702747,
+        "decision_rank": 16,
+        "max_regret": 46.289511564181254
+      },
+      "changed_ranks_vs_unknown": 6,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "county_target_outcome_unknown",
+      "outcome_weight": 0.1,
+      "nyc": {
+        "score_lower": 27.595739912047893,
+        "score_upper": 74.24986065154492,
+        "decision_rank": 21,
+        "max_regret": 51.1351529739201
+      },
+      "changed_ranks_vs_unknown": 0,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "nyc_counties_observed",
+      "outcome_weight": 0.1,
+      "nyc": {
+        "score_lower": 34.28862562754055,
+        "score_upper": 73.38929873040453,
+        "decision_rank": 4,
+        "max_regret": 44.44226725842744
+      },
+      "changed_ranks_vs_unknown": 18,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "doe_charter_excluded_reference",
+      "outcome_weight": 0.1,
+      "nyc": {
+        "score_lower": 34.31265194266054,
+        "score_upper": 73.40250477731637,
+        "decision_rank": 4,
+        "max_regret": 44.41824094330745
+      },
+      "changed_ranks_vs_unknown": 18,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "county_target_outcome_unknown",
+      "outcome_weight": 0.2,
+      "nyc": {
+        "score_lower": 26.030137264896055,
+        "score_upper": 75.74072160367183,
+        "decision_rank": 21,
+        "max_regret": 53.944607195399044
+      },
+      "changed_ranks_vs_unknown": 0,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "nyc_counties_observed",
+      "outcome_weight": 0.2,
+      "nyc": {
+        "score_lower": 38.748549722400256,
+        "score_upper": 74.00763977640602,
+        "decision_rank": 2,
+        "max_regret": 41.22619473789484
+      },
+      "changed_ranks_vs_unknown": 20,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "doe_charter_excluded_reference",
+      "outcome_weight": 0.2,
+      "nyc": {
+        "score_lower": 38.78807864769533,
+        "score_upper": 74.0349036047773,
+        "decision_rank": 2,
+        "max_regret": 41.18666581259977
+      },
+      "changed_ranks_vs_unknown": 20,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible": 25
+    }
+  ]
+}

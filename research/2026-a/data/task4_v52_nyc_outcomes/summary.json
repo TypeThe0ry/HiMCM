@@ -1,0 +1,42 @@
+{
+  "main_admitted": false,
+  "table": "GRAD_RATE_AND_OUTCOMES_2025",
+  "source_mdb_sha256": "c557ce224a5e36b7ad413534c693a59e9e5fcbfbe182e17273b395bc10ced0e3",
+  "source_rows": 224734,
+  "scope": "NYSED 2024-25 published accountability aggregates for five NYC counties: districts including homebound/OODP plus charter schools; not all resident adolescents",
+  "period": "2021 entry cohort, four-year August 2025",
+  "cohort": 78918,
+  "graduates": 63878,
+  "unknown_outcomes": 56,
+  "lower": 0.809422438480448,
+  "upper": 0.8101320357839783,
+  "interpretation": "Upper bound assigns possible diploma outcomes to arithmetic unclassified residual; this is not an official NYSED unknown-outcome category.",
+  "nyc_counties": {
+    "cohort": 78918,
+    "graduates": 63878,
+    "unknown_outcomes": 56,
+    "lower": 0.809422438480448,
+    "upper": 0.8101320357839783,
+    "interpretation": "Upper bound assigns possible diploma outcomes to arithmetic unclassified residual; this is not an official NYSED unknown-outcome category."
+  },
+  "other_period": {
+    "cohort": 78918,
+    "graduates": 61471,
+    "unknown_outcomes": 56,
+    "lower": 0.7789224258090677,
+    "upper": 0.7796320231125979,
+    "interpretation": "Upper bound assigns possible diploma outcomes to arithmetic unclassified residual; this is not an official NYSED unknown-outcome category."
+  },
+  "nysed_nyc_district_reference": {
+    "cohort": 72284,
+    "graduates": 58660
+  },
+  "doe_v18_reference": {
+    "cohort": 72283,
+    "graduates": 58660,
+    "unknown_outcomes": 49
+  },
+  "aggregation_note": "Sum only five directly published county rows. Do not sum school/borough/NRC/district tables into them or infer suppressed school outcomes.",
+  "metadata_note": "ZIP ReadMe ENROLL_CNT prose retains stale 2023/2019 dates. Actual 2024-25 record field, membership11 and 2025 Business Rules establish 2021-entry August2025 target.",
+  "residual_note": "Known listed statuses are retained; residual56 is conservatively unclassified. Official observed diploma fraction is G/N; residual-envelope interpretation is conditional."
+}
