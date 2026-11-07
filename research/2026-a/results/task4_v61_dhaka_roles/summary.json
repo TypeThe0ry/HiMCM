@@ -1,0 +1,168 @@
+{
+  "current_scenario": "v61_instructional_headcount_floor_unknown",
+  "baseline": "V60",
+  "main_admitted": false,
+  "other_unchanged_cells": 249,
+  "students_interval": [
+    140342,
+    469293
+  ],
+  "teachers_interval": [
+    0,
+    13960
+  ],
+  "sharp_headcount_bounds": false,
+  "reason": "Unidentified teaching duties and cross-institution uniqueness; 965 non-head roles are not a guaranteed count of distinct instructional teachers.",
+  "target": "Source-defined general HSC plus Alim; technical/vocational coverage unresolved",
+  "scenarios": [
+    {
+      "scenario": "v60_role_floor",
+      "dhaka_education_utility": [
+        0.029921367266954407,
+        0.598727061662597
+      ],
+      "dhaka": {
+        "decision_rank": 21,
+        "score_lower": 29.14578914551436,
+        "score_upper": 64.80372990441998,
+        "max_regret": 48.38367155795733
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v60": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "v61_instructional_headcount_floor_unknown",
+      "dhaka_education_utility": [
+        0.0,
+        0.598727061662597
+      ],
+      "dhaka": {
+        "decision_rank": 22,
+        "score_lower": 29.039934939766017,
+        "score_upper": 64.80372990441998,
+        "max_regret": 48.48952576370567
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 2,
+      "kendall_tau_vs_v60": 0.9933333333333332,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "source_scope_withdrawn",
+      "dhaka_education_utility": [
+        0.0,
+        1.0
+      ],
+      "dhaka": {
+        "decision_rank": 22,
+        "score_lower": 29.039934939766017,
+        "score_upper": 67.30200272136256,
+        "max_regret": 48.48952576370567
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 2,
+      "kendall_tau_vs_v60": 0.9933333333333332,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    }
+  ],
+  "continuous_recommendation": {
+    "alpha_range": [
+      0.05,
+      0.2
+    ],
+    "unresolved_leaves": 0,
+    "certified_winners": [
+      "Singapore"
+    ],
+    "numerical_certificate_not_formal_interval_arithmetic": true
+  }
+}

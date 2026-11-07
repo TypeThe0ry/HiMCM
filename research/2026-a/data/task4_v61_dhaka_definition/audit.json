@@ -1,0 +1,113 @@
+{
+  "counterexample_role_allocation": {
+    "Principal": {
+      "total": 1195,
+      "female": 135
+    },
+    "Vice Principal": {
+      "total": 78,
+      "female": 19
+    },
+    "Demonstrator": {
+      "total": 565,
+      "female": 416
+    },
+    "Library and Information Science": {
+      "total": 165,
+      "female": 165
+    },
+    "Junior Instructor": {
+      "total": 5,
+      "female": 5
+    },
+    "Lecturer": {
+      "total": 230,
+      "female": 230
+    }
+  },
+  "source_sha256": "14deea1e6379de7e6e9141f8bb8f2f4b713a772905cfdd1d99579ad7911010f8",
+  "source_pages_pdf": [
+    29,
+    35,
+    81,
+    82,
+    215,
+    304,
+    305,
+    573,
+    575
+  ],
+  "city_pure_hsc": {
+    "institutions": 95,
+    "roles": 2238,
+    "female_roles": 970,
+    "male_roles": 1268
+  },
+  "national_pure_hsc_roles": {
+    "Principal": {
+      "total": 1195,
+      "female": 135
+    },
+    "Vice Principal": {
+      "total": 78,
+      "female": 19
+    },
+    "Professor": {
+      "total": 144,
+      "female": 51
+    },
+    "Associate Professor": {
+      "total": 234,
+      "female": 77
+    },
+    "Assistant Professor": {
+      "total": 2110,
+      "female": 581
+    },
+    "Senior Lecturer": {
+      "total": 2057,
+      "female": 473
+    },
+    "Lecturer": {
+      "total": 17930,
+      "female": 5345
+    },
+    "Demonstrator": {
+      "total": 1678,
+      "female": 416
+    },
+    "Junior Instructor": {
+      "total": 34,
+      "female": 5
+    },
+    "Library and Information Science": {
+      "total": 440,
+      "female": 165
+    },
+    "Physical Education Teacher": {
+      "total": 690,
+      "female": 130
+    }
+  },
+  "ambiguous_instruction_roles": [
+    "Principal",
+    "Vice Principal",
+    "Demonstrator",
+    "Library and Information Science",
+    "Junior Instructor"
+  ],
+  "conditional_female_role_lower": 230,
+  "conditional_male_role_lower": 0,
+  "conditional_role_lower": 230,
+  "conditional_unique_person_lower_if_at_most_once_per_institution": 3,
+  "person_deduplication_verified": false,
+  "one_record_per_person_per_institution_verified": false,
+  "strict_instruction_headcount_lower_without_extra_assumptions": 0,
+  "date_evidence": {
+    "intro_printed2": "20.10.2024 to21.11.2024",
+    "detailed_method_printed49": "20 October2025 to21 November2025",
+    "resolved": false
+  },
+  "main_admitted": false,
+  "warning": "230 bounds eligible instructional role records under stated role classification, not unique people. 3 additionally requires within-institution uniqueness; neither assumption verified as a source-wide rule."
+}

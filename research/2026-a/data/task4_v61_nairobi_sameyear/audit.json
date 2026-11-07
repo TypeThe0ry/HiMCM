@@ -1,0 +1,32 @@
+{
+  "city": "Nairobi City",
+  "secondary_enrollment_2023": 123566,
+  "cell": "TAB 15.6!G51",
+  "original_reused": "../task4_v40_education/knbs2025_education.xlsx",
+  "source_sha256": "7d823302b501a78919cf2ae9e513580b5b39e533930cc2d3cf8c168dcc572854",
+  "teacher_lead": {
+    "source": "../task4_v45_nairobi/audit.json",
+    "year": 2023,
+    "reference": "TSC March 2023, PWPER Appendix4.6",
+    "teachers_excluding_heads": 2650,
+    "teachers_including_heads": 2851,
+    "scope": "public secondary TSC; BOM/private additional staffing unknown",
+    "raw_download_verified": false
+  },
+  "same_calendar_year": true,
+  "same_reference_date_verified": false,
+  "main_admitted": false,
+  "changed_model_cells": 0,
+  "conditional_only_utility_lower": 0.243393176418722,
+  "conditional_assumptions": [
+    "Accept teacher source transcription",
+    "Accept March staffing as subset at enrollment reference date",
+    "Accept all county secondary enrollment as complete denominator"
+  ],
+  "conclusion": "2023 calendar-year matching alone does not establish a common census; conditional lower bound is not admitted.",
+  "prior_release_confirmed": {
+    "file": "knbs2024_education.xlsx",
+    "cell": "Table 15.6!H50",
+    "students": 123566
+  }
+}
