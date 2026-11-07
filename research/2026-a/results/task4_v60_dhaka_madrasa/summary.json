@@ -1,0 +1,261 @@
+{
+  "current_scenario": "v60_general_hsc_and_alim",
+  "baseline": "V59",
+  "main_admitted": false,
+  "other_unchanged_cells": 249,
+  "students_interval": [
+    140342,
+    469293
+  ],
+  "teachers_interval": [
+    965,
+    13960
+  ],
+  "national_share_imputation": false,
+  "target": "Source-defined general HSC plus Alim; technical/vocational coverage unresolved",
+  "date_caveat": "2025 publication tables; methods report survey collection20Oct2024\u201321Nov2024. Possible carry-forward typo unresolved.",
+  "geography": "Dhaka City Corporation as labeled by BANBEIS; not Dhaka district/division; north/south boundary mapping unverified",
+  "scenarios": [
+    {
+      "scenario": "v59_general_hsc",
+      "dhaka_education_utility": [
+        0.03279524214103653,
+        0.5622274488274451
+      ],
+      "dhaka": {
+        "decision_rank": 21,
+        "score_lower": 29.15678263841583,
+        "score_upper": 64.49038270576493,
+        "max_regret": 48.37267806505585
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v59": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "expanded_scope_unknown",
+      "dhaka_education_utility": [
+        0.0,
+        1.0
+      ],
+      "dhaka": {
+        "decision_rank": 22,
+        "score_lower": 29.039934939766017,
+        "score_upper": 67.30200272136256,
+        "max_regret": 48.48952576370567
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 2,
+      "kendall_tau_vs_v59": 0.9933333333333332,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "expanded_no_stage_caps",
+      "dhaka_education_utility": [
+        0.029431798542134745,
+        0.598727061662597
+      ],
+      "dhaka": {
+        "decision_rank": 21,
+        "score_lower": 29.143930817411917,
+        "score_upper": 64.80372990441998,
+        "max_regret": 48.38552988605977
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v59": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "expanded_without_gender_cap",
+      "dhaka_education_utility": [
+        0.029911659864648447,
+        0.598727061662597
+      ],
+      "dhaka": {
+        "decision_rank": 21,
+        "score_lower": 29.145752256874403,
+        "score_upper": 64.80372990441998,
+        "max_regret": 48.38370844659728
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v59": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "v60_general_hsc_and_alim",
+      "dhaka_education_utility": [
+        0.029921367266954407,
+        0.598727061662597
+      ],
+      "dhaka": {
+        "decision_rank": 21,
+        "score_lower": 29.14578914551436,
+        "score_upper": 64.80372990441998,
+        "max_regret": 48.38367155795733
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v59": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    }
+  ],
+  "continuous_recommendation": {
+    "alpha_range": [
+      0.05,
+      0.2
+    ],
+    "unresolved_leaves": 0,
+    "certified_winners": [
+      "Singapore"
+    ],
+    "numerical_certificate_not_formal_interval_arithmetic": true
+  }
+}

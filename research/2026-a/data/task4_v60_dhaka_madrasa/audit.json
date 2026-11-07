@@ -1,0 +1,94 @@
+{
+  "source_label_year": 2025,
+  "geography": "Dhaka City Corporation as labeled by BANBEIS; not Dhaka district/division; north/south boundary mapping unverified",
+  "population": "Alim grades11\u201312 enrolled in post-primary madrasas; not all ages14\u201318 residents",
+  "date_caveat": "2025 publication tables; methods report survey collection20Oct2024\u201321Nov2024. Possible carry-forward typo unresolved.",
+  "interpretation": "National margins constrain city subsets; no national-share imputation. Administrative teacher counts lack stage allocation and FTE definition.",
+  "rows": [
+    {
+      "type": "Dakhil",
+      "management": "Private",
+      "city_students": 7246,
+      "city_girls": 3480,
+      "city_teachers": 534,
+      "national_students": 1434749,
+      "national_alim": 1562,
+      "national_alim_girls": 915,
+      "alim_lower": 0,
+      "alim_upper_without_gender": 1562,
+      "alim_upper": 1562
+    },
+    {
+      "type": "Alim",
+      "management": "Private",
+      "city_students": 12332,
+      "city_girls": 4288,
+      "city_teachers": 572,
+      "national_students": 494083,
+      "national_alim": 94028,
+      "national_alim_girls": 50931,
+      "alim_lower": 0,
+      "alim_upper_without_gender": 12332,
+      "alim_upper": 12332
+    },
+    {
+      "type": "Fazil (pass and honours combined)",
+      "management": "Private",
+      "city_students": 2507,
+      "city_girls": 775,
+      "city_teachers": 131,
+      "national_students": 592695,
+      "national_alim": 109885,
+      "national_alim_girls": 58359,
+      "alim_lower": 0,
+      "alim_upper_without_gender": 2507,
+      "alim_upper": 2507
+    },
+    {
+      "type": "Kamil",
+      "management": "Private",
+      "city_students": 24945,
+      "city_girls": 7076,
+      "city_teachers": 657,
+      "national_students": 311513,
+      "national_alim": 57661,
+      "national_alim_girls": 21520,
+      "alim_lower": 0,
+      "alim_upper_without_gender": 24945,
+      "alim_upper": 24945
+    },
+    {
+      "type": "Kamil",
+      "management": "Public",
+      "city_students": 3410,
+      "city_girls": 0,
+      "city_teachers": 50,
+      "national_students": 7057,
+      "national_alim": 1204,
+      "national_alim_girls": 157,
+      "alim_lower": 0,
+      "alim_upper_without_gender": 1204,
+      "alim_upper": 1047
+    }
+  ],
+  "added_alim_students_interval": [
+    0,
+    42393
+  ],
+  "added_alim_students_interval_without_gender": [
+    0,
+    42550
+  ],
+  "added_teachers_interval": [
+    0,
+    1944
+  ],
+  "remaining_scope": "General HSC+Alim remains incomplete for technical/vocational uppersecondary; no direct city-stage counts established.",
+  "technical_national_only": {
+    "source": "Table7.3 printed389/PDF422",
+    "higher_secondary_students": 263578,
+    "higher_secondary_teachers": 11074,
+    "mixed_technical_school_college_students": 169462,
+    "mixed_technical_school_college_teachers": 7373
+  }
+}
