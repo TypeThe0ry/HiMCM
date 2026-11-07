@@ -1,5 +1,7 @@
 # 当前模型：V63 真实高中生通学更新（2026-11-08）
 
+V67新增[联合扩张与连续偏好检验](../results/task4_v67_joint_stress/README.md)：均匀扩张ε≤0.20保持Singapore；仅该城扩张的首次失效阈值位于(0.10,0.15]，ε=0.20时连续α范围推荐Tokyo。这是指定假设情景，不修改V63实测输入。
+
 V66完成[四城新来源核查与复算](../results/task4_v66_intake/README.md)。上海2025年报引用2024年中职学生数；Phoenix新学生调查仅3—8年级；London和Bogotá仍缺可用联合记录。全部250格、排名和可能冠军保持，当前数据模型仍为V63。
 
 V65提供[统一复算入口与本轮来源核查](../results/task4_current/README.md)，由[注册表](task4_current_model.json)选择V63数据函数并核对全部250格。Phoenix、London、Bogotá本轮新增可准入高中生通学观测为0；现有区间、排名和25城可能冠军保持。

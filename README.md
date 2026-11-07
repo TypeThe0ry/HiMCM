@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| V67联合不确定性检验 | [均匀扩张仍推荐Singapore，定向扩张可转Tokyo；连续范围证书](research/2026-a/results/task4_v67_joint_stress/README.md) |
 | V66原件与人群核查 | [上海年报年份、Phoenix真实学生调查及London/Bogotá新入口；排名不变](research/2026-a/results/task4_v66_intake/README.md) |
 | 当前模型一键复算 · V65核查 | [统一入口、250格基线校验与三城新来源核查](research/2026-a/results/task4_current/README.md) |
 | 全偏好范围补数规划 V64 | [Phoenix最小有利补数3→4项；避免固定权重下的乐观规划](research/2026-a/results/task4_v64_continuous_acquisition/README.md) |
