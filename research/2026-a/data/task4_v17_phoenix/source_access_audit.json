@@ -1,0 +1,42 @@
+{
+  "accessed": "2026-11-07",
+  "new_admissible_observations": 0,
+  "main_admitted": false,
+  "raw_microdata_obtained": false,
+  "sources": [
+    {
+      "url": "https://www.nlr.gov/transportation/secure-transportation-data/tsdc-2017-nhts-arizona-add-on",
+      "evidence_type": "official webpage rendered by web tool; original HTML not archived",
+      "survey_collection": "April 2016 to April 2017",
+      "households": 2987,
+      "participants": 6081,
+      "trips": 19779,
+      "finding": "Arizona add-on catalog confirms actual survey records but excludes GPS from public full-survey package. The rendered DOWNLOAD link returned the same catalog page, not a data archive. No Phoenix administrative-city cohort extracted."
+    },
+    {
+      "url": "https://www.nlr.gov/transportation/secure-transportation-data/tsdc-spatial-data",
+      "evidence_type": "official webpage rendered by web tool; original HTML not archived",
+      "finding": "Latitude/longitude and other redacted fields require application and approved secure-portal access. Approved users can perform geographic queries and request aggregate results; sensitive data removal is prohibited. This provides a documented access route, not current access or a downloaded city estimate.",
+      "external_application_submitted": false
+    },
+    {
+      "url": "https://www.nlr.gov/transportation/secure-transportation-data/tsdc-metropolitan-travel-survey-archive",
+      "evidence_type": "official webpage rendered by web tool; original HTML not archived",
+      "finding": "Catalog lists Phoenix 1988 and 2002 raw data/documentation, with Maricopa Association of Governments as agency. Rendered raw-data links returned catalog page itself. Catalog describes detailed trip spatial data as removed. Current high-school stage fields, Phoenix city residence and weights were not verified; vintage is historical."
+    },
+    {
+      "url": "https://www.nlr.gov/media/docs/libraries/tsdc/data-elements-2017.xlsx?sfvrsn=ad09b18c_3",
+      "evidence_type": "direct HTTP request result",
+      "http_status": 403,
+      "response_bytes": 4573,
+      "content_type": "text/html; charset=UTF-8",
+      "finding": "Dictionary download did not produce XLSX. Response not treated as data."
+    },
+    {
+      "url": "https://azmag.gov/LinkClick.aspx?fileticket=GYJPWYhmVAI%3D&mid=2494&portalid=0&tabid=413",
+      "evidence_type": "official-domain search-index excerpt only; full PDF open timed out",
+      "finding": "Indexed committee minutes refer to a 2025 Household Travel Survey; this means prior shorthand that the MAG survey is definitely 2024 and not 2025 should not be treated as settled. The relationship to the documented 2024 recruitment wave, report date, microdata availability and current-school-stage fields remain unverified. No statistics are admitted from this excerpt."
+    }
+  ],
+  "conclusion": "Phoenix school-travel utility remains [0,1]. Public full-survey labels do not establish city-identifiable microdata, and restricted spatial access is not already authorized or available. No education-quality observation was added in this bounded retrieval."
+}

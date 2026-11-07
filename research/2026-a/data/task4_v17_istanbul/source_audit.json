@@ -1,0 +1,44 @@
+{
+  "accessed": "2026-11-07",
+  "main_admitted": false,
+  "new_model_observations": 0,
+  "microdata_obtained": false,
+  "metadata_archive": {
+    "repository": "https://github.com/berkorbay/ibb",
+    "commit": "848c34cdad9cd33746427d15d88ab066da1e7d02",
+    "path": "data/ibb_data_sources.rda",
+    "sha256": "ef3fa1ad60f40b7a657a25ceb9594a360e4bbebe456b43c7c6827ccd7684a9e7",
+    "bytes": 34193,
+    "type": "Historical unofficial R package catalogue metadata, not survey observations",
+    "recovered_official_report_urls": [
+      "https://data.ibb.gov.tr/dataset/6cefaa5b-bd1b-4e98-a27e-94ddac1ecd2b/resource/1f392e00-7a81-4d1b-b516-537dce61b5d0/download/istanbul-ulam-ana-plan-hanehalk-aratrmas-metadata.txt",
+      "https://data.ibb.gov.tr/dataset/6cefaa5b-bd1b-4e98-a27e-94ddac1ecd2b/resource/1fa02d91-f794-4560-8754-00b635c8efe1/download/istanbul-ulam-ana-plan-hanehalk-aratrmas.pdf"
+    ]
+  },
+  "retrieval_checks": [
+    {
+      "url": "https://data.ibb.gov.tr/api/3/action/resource_show?id=221390e6-73c1-4245-9048-ff76e1ad70eb",
+      "result": "requests ConnectTimeout, 20-second connect timeout"
+    },
+    {
+      "url": "http://data.ibb.gov.tr/api/3/action/resource_show?id=48d0eb92-b4eb-4ca4-85a5-478cb31e2473",
+      "result": "requests ConnectTimeout, 20-second connect timeout"
+    },
+    {
+      "url": "https://opendata.b40cities.org/api/3/action/package_search?q=hanehalki",
+      "result": "requests NameResolutionError"
+    },
+    {
+      "url": "https://data.ibb.gov.tr/dataset/6cefaa5b-bd1b-4e98-a27e-94ddac1ecd2b/resource/1fa02d91-f794-4560-8754-00b635c8efe1/download/istanbul-ulam-ana-plan-hanehalk-aratrmas.pdf",
+      "result": "curl exit 28, connection timed out after 5 seconds; HTTP 000, zero bytes"
+    }
+  ],
+  "scope_warning": {
+    "source": "https://www.scribd.com/document/808195184/istanbul-ulam-ana-plan-hanehalk-aratrmas",
+    "source_type": "Search-index text of a mirror of municipal OD HH 2012 analytical report; original PDF bytes not obtained",
+    "locator": "Table 2.1, typical household survey questions",
+    "short_quote": "Eğitim Durumu Bitirmiş olduğu en son okul",
+    "interpretation": "This table describes educational attainment as last completed school. It is a typical-question table, not proof of the complete released microdata schema. Do not filter lise attainment and call it current high school; current-stage variable still requires validation."
+  },
+  "next_action": "Obtain survey file and codebook from exact resource IDs; verify current enrollment stage and household/person/trip weights before calculating school travel utility."
+}
