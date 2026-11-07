@@ -1,0 +1,104 @@
+{
+  "main_model_changed": false,
+  "new_target": true,
+  "new_admitted_pooled_ptr_cells": 0,
+  "school_resource_bounds": [
+    0.0,
+    0.7896637042314737
+  ],
+  "unknown_student_mass": 0.00727985968353356,
+  "other_cities_new_target": "unknown [0,1], never copy pooled PTR point values",
+  "definition": "Student-weighted mean of f(attributed upper-stage teacher equivalents / Year12-13 pupils) in London state-funded secondary schools. November2024 school-attributed headcounts bound unknown allocation; January2025 pupil weights. Reporting-rule and two-snapshot historical index, not actual individual teacher exposure, measured FTE or current performance.",
+  "source_hashes": {
+    "manifest.json": "44dbf28763c07f40b3cc09abc467af113a39284fc63a6dbfd5135d9020ed159c",
+    "school_match.csv": "64010b6ea08ecad4eaed9d7f3a3d01ca42a63e97b75acea53c20ee0700e97be2",
+    "summary.json": "76641e94731a4204654ea42a581f07cdc873c354511637fcd99e87b14afa081e",
+    "extract.py": "79d03bd1c832629d24f2c1eb778e9375c9e8c46b2a8e6a53d2870f7da43ada9c"
+  },
+  "scenarios": [
+    {
+      "scenario": "new_target_unknown",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_same_target": 0,
+      "kendall_tau_vs_same_target": 0.9999999999999998,
+      "london": {
+        "score_lower": 30.74489906649376,
+        "score_upper": 71.6796832520236,
+        "decision_rank": 15,
+        "max_regret": 46.78456163697793
+      }
+    },
+    {
+      "scenario": "new_target_london_school_cap",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_same_target": 0,
+      "kendall_tau_vs_same_target": 0.9999999999999998,
+      "london": {
+        "score_lower": 30.74489906649376,
+        "score_upper": 70.54751519071334,
+        "decision_rank": 15,
+        "max_regret": 46.78456163697793
+      }
+    }
+  ]
+}
