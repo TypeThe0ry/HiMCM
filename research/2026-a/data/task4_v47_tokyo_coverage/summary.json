@@ -1,0 +1,54 @@
+{
+  "provider": "Tokyo Metropolitan Government School Basic Survey 2025",
+  "date": "2025-05-01",
+  "geography": "Tokyo Metropolis",
+  "baseline_students": 303468,
+  "baseline_main_duty_teachers": 19446,
+  "integrated_schools": 8,
+  "integrated_lower_course_students": 3564,
+  "added_upper_course_students": 3435,
+  "integrated_all_course_main_duty_teachers": 555,
+  "ownership": [
+    {
+      "category": "国立",
+      "schools": 2,
+      "upper_course_students": 727,
+      "all_course_main_duty_teachers": 105
+    },
+    {
+      "category": "公立",
+      "schools": 6,
+      "upper_course_students": 2708,
+      "all_course_main_duty_teachers": 450
+    }
+  ],
+  "expanded_students": 306903,
+  "added_upper_course_teacher_interval": [
+    0,
+    555
+  ],
+  "expanded_teacher_interval": [
+    19446,
+    20001
+  ],
+  "expanded_utility_interval": [
+    0.48729270138474723,
+    0.4943254278172669
+  ],
+  "baseline_utility": 0.4901051485487887,
+  "teacher_definition": "Main-duty school-assigned persons, not FTE; upper-course participation of the integrated-school pool is unreported.",
+  "coverage": "Full/part-time high-school courses plus integrated secondary upper courses; does not claim all upper-secondary programmes.",
+  "exclusions": [
+    "correspondence high-school courses",
+    "special-needs upper-secondary departments",
+    "specialized-training high-school courses"
+  ],
+  "correspondence_audit": {
+    "students": 11793,
+    "main_duty_teachers": 244,
+    "independent_schools": 4,
+    "colocated_schools": 7,
+    "admitted": false,
+    "reason": "Different course and distance-learning population; co-location and teacher attribution require separate review."
+  }
+}

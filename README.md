@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 高中覆盖修订 V47 | [Tokyo新增3435名高中部学生；教师分配保留区间](research/2026-a/results/task4_v47_tokyo_coverage/README.md) |
 | 官方资源修订 V46 | [Tokyo高中更新、大学总部下界与排名3→2](research/2026-a/results/task4_v46_tokyo/README.md) |
 | 补数能力边界 V45 | [即使全城教育与通学精确，连续偏好下仍保留25城](research/2026-a/results/task4_v45_acquisition_limits/README.md) |
 | 通学终点修订 V44 | [Melbourne核验7条未明确记录；分开数据与推断效果](research/2026-a/results/task4_v44_melbourne/README.md) |
