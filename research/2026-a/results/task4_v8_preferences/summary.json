@@ -1,0 +1,33 @@
+{
+  "evidence_version": "V7 unchanged",
+  "new_admitted_cells": 0,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "continuous_possible": 25,
+  "istanbul_travel_zero_hypothetical": {
+    "possible": true,
+    "witness_alpha": 0.17408664797583423,
+    "feasible_interval_closures": [
+      [
+        0.14817329595166845,
+        0.2
+      ]
+    ],
+    "feasible_boundary_points": [
+      0.14817329595166845,
+      0.2
+    ],
+    "partition_count": 3,
+    "tolerance": 1e-12
+  },
+  "istanbul_fixed_alpha_cutoffs": {
+    "0.05": 0.6642522607568906,
+    "0.1": 0.3521967321703821,
+    "0.15": null,
+    "0.2": null
+  },
+  "istanbul_robust_travel_cutoff": null,
+  "interpretation": "Hypothetical zero is a diagnostic only, never an observed travel value. Weight range is an explicit sensitivity assumption, not estimated preferences."
+}
