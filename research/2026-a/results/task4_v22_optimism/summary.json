@@ -1,0 +1,57 @@
+{
+  "main_admitted": false,
+  "new_phoenix_observations": 0,
+  "ranking_changes": 0,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "polynomial_tolerance": 0.0,
+  "bisection_iterations": 45,
+  "interpretation": "Common interpolation of candidate uncertainty only; rivals at lower bounds. Not probability or prediction.",
+  "source_sha256": "ae06f98e20f44645ac698a071e3432b0e63ad5a9c86fbaf1849e5eb34ceb2b03",
+  "matrices": [
+    {
+      "model": "v16_ten_criteria",
+      "age_scope": "all_age",
+      "sha256": "546dec29dd1b4975d9b1e546b74720ae98047a19073db479109918b0d9cb1b52"
+    },
+    {
+      "model": "v16_ten_criteria",
+      "age_scope": "under19",
+      "sha256": "62b288aada781ca3edcf9a3071fc9d20de0553d3ef3be006cf35afba336260ea"
+    },
+    {
+      "model": "v18_cohort_beta10",
+      "age_scope": "all_age",
+      "sha256": "28e82c4386d0899c90b904604803ff83efcaff90915a46dd143b6f5b14b6270e"
+    },
+    {
+      "model": "v18_cohort_beta10",
+      "age_scope": "under19",
+      "sha256": "cdadbefefa763c6ad29f23b6d4f71ed0f0bdf7096a74c1727ffcc6d67a5eba37"
+    }
+  ],
+  "possible_counts": [
+    {
+      "model": "v16_ten_criteria",
+      "age_scope": "all_age",
+      "possible": 25
+    },
+    {
+      "model": "v16_ten_criteria",
+      "age_scope": "under19",
+      "possible": 25
+    },
+    {
+      "model": "v18_cohort_beta10",
+      "age_scope": "all_age",
+      "possible": 25
+    },
+    {
+      "model": "v18_cohort_beta10",
+      "age_scope": "under19",
+      "possible": 25
+    }
+  ]
+}

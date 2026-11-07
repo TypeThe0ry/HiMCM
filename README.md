@@ -150,3 +150,5 @@ python3 scripts/verify_repository.py
 候选、假设、条件观测、诊断和合成实验须保持区分。引用回到原始来源，AI使用按队伍要求记录并核对。第三方论文与数据版权归原权利人。目录与迁移历史见[结构说明](docs/repository_structure.md)及[迁移表](docs/file_moves.csv)；早期交接文档反映当时状态，当前进度以本页和对应版本结果报告为准。
 
 最近更新：2026-11-07，Asia/Singapore。
+
+- [V22：可能冠军的有利假设门槛与 Phoenix 来源核验](research/2026-a/results/task4_v22_optimism/README.md)

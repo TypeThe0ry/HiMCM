@@ -1,0 +1,48 @@
+{
+  "version": "task4_v22_phoenix_historical",
+  "checked_date": "2026-11-07",
+  "admitted_high_school_commute_observations": 0,
+  "phoenix_utility_interval_action": "retain existing missing interval; no narrowing justified",
+  "independent_catalog": {
+    "provider": "ICPSR, deposited by Stacey Bricka, NuStats",
+    "study": "Maricopa Regional Household Travel Survey, 2002",
+    "doi": "10.3886/ICPSR35264.v1",
+    "url": "https://www.icpsr.umich.edu/web/ICPSR/studies/35264/datadocumentation",
+    "evidence_type": "official catalog text viewed with web tool; original archive not downloaded",
+    "households": 4018,
+    "collection_dates_catalog": "2002-02 to 2002-12",
+    "geographic_scope": "Maricopa County and a small portion of Pinal County; not administrative Phoenix alone",
+    "smallest_geographic_unit_catalog": "census tract",
+    "population": "households in metropolitan Phoenix",
+    "travel_period_hours": 48,
+    "documented_concepts": [
+      "trip purpose",
+      "departure and arrival time",
+      "education level"
+    ],
+    "current_high_school_enrolment_verified": false,
+    "city_residence_field_verified": false,
+    "weight_fields_verified": false,
+    "caveat": "Catalog flags discrepancies between depositor dates and investigator documentation; dictionary and raw fields require inspection. Education level alone does not prove current high-school attendance.",
+    "access_scope": "Catalog explicitly offers free access to ICPSR member institution users; anonymous raw download availability unverified.",
+    "processing": "ICPSR states files are distributed as deposited without ICPSR processing."
+  },
+  "nlr": {
+    "catalog_url": "https://www.nlr.gov/transportation/secure-transportation-data/tsdc-metropolitan-travel-survey-archive",
+    "web_observation": "Phoenix 1988/2002 raw-data, documentation and metadata anchors all resolve to the same catalog anchor in the parsed page; no downloadable data payload identified.",
+    "data_repository_search": "https://data.nlr.gov/search?query=Phoenix",
+    "search_observation": "HTTP 200 search shell; no Phoenix candidate download links. This is not proof the repository lacks the dataset."
+  },
+  "other_official_leads": [
+    "https://azmag.gov/Documents/113",
+    "https://azmag.gov/Portals/0/Documents/pdf/cms.resource/househould-travel-survey18728.pdf?ver=C1BBbirVV6exoHZW7tsHFg%3D%3D"
+  ],
+  "http_evidence_file": "http_audit.json",
+  "next_required_evidence": [
+    "Public raw person/household/trip files and dictionary",
+    "Current school level specifically distinguishing high school from completed education",
+    "Residence field or audited geography allowing administrative Phoenix selection",
+    "Weights, trip-chain definition and missing departure/arrival handling"
+  ],
+  "access_actions": "Public GET requests only. No account creation, restricted access requests, external messages or challenge bypass."
+}
