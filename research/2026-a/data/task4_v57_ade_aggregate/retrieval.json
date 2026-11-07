@@ -1,0 +1,28 @@
+{
+  "retrieved_date": "2026-11-07",
+  "catalogue_url": "https://www.azed.gov/accountability-research/data",
+  "catalogue_access": "official web-reader provided linked download; local HTTP403",
+  "download_url": "https://www.azed.gov/sites/default/files/2025/04/4Y-GradRate-Cohort2024.xlsx",
+  "download_results": [
+    {
+      "method": "requests HTTPS",
+      "host": "www.azed.gov",
+      "status": 403,
+      "bytes": 4552
+    },
+    {
+      "method": "requests HTTPS",
+      "host": "cms.azed.gov",
+      "status": 403,
+      "bytes": 4552
+    },
+    {
+      "method": "web-reader click official catalogue link",
+      "result": "unsupported XLSX content type"
+    }
+  ],
+  "workbook_archived": false,
+  "workbook_rows_obtained": false,
+  "later_manual_url": "https://www.azed.gov/sites/default/files/2026-09/FY27%20Graduation%2C%20Dropout%2C%20%26%20Persistence%20Tech%20Manual.pdf",
+  "later_manual_result": "HTTP403; not used for FY2024 definitions"
+}

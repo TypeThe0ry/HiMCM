@@ -1,0 +1,130 @@
+{
+  "core_version": "V53",
+  "core_changed_cells": 0,
+  "core_changed_ranks": 0,
+  "core_choice": [
+    "Singapore"
+  ],
+  "core_possible_champions": 25,
+  "target": "Public non-fully-virtual school-location administrative cohort2024; not residents or private schools",
+  "unresolved_identity_entities": [
+    6250
+  ],
+  "unique_school_entities": 19,
+  "schools_with_known_cohort": 18,
+  "known_subset_cohort": 5802,
+  "graduates_lower": 3782,
+  "nongraduates_lower": 1260,
+  "state_graduates": 74261,
+  "state_nongraduates": 20240,
+  "outcome_lower": 0.15743901423694948,
+  "outcome_upper": 0.9833158988890507,
+  "old_lower": 0.03134721225173486,
+  "old_upper": 0.996470935537545,
+  "city_bound_upgraded": false,
+  "union_admitted": false,
+  "partition_check": {
+    "known_physical_school_cohort": 5802,
+    "digital_cohort": 485,
+    "district_cohort": 6285,
+    "school_sum_minus_district": 2,
+    "necessary_condition_passed": false,
+    "refresh_all_rows_unchanged": true
+  },
+  "administrative_last_school_rule_assumed": true,
+  "complete_city_coverage_assumed": false,
+  "additional_exclusion_budget_assumed": false,
+  "all_city_quality_comparability_established": false,
+  "scenarios": [
+    {
+      "scenario": "retained_unrestricted_overlap",
+      "outcome_weight": 0.05,
+      "phoenix": {
+        "decision_rank": 24,
+        "score_lower": 26.417613050601087,
+        "score_upper": 74.22371814930779,
+        "max_regret": 51.70798735839274
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": 25
+    },
+    {
+      "scenario": "unreconciled_union_candidate",
+      "outcome_weight": 0.05,
+      "phoenix": {
+        "decision_rank": 24,
+        "score_lower": 26.67946692366669,
+        "score_upper": 74.20633937208125,
+        "max_regret": 51.44613348532714
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": 25
+    },
+    {
+      "scenario": "retained_unrestricted_overlap",
+      "outcome_weight": 0.1,
+      "phoenix": {
+        "decision_rank": 24,
+        "score_lower": 25.791263471681404,
+        "score_upper": 74.87331379999463,
+        "max_regret": 52.939629414286586
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": 25
+    },
+    {
+      "scenario": "unreconciled_union_candidate",
+      "outcome_weight": 0.1,
+      "phoenix": {
+        "decision_rank": 23,
+        "score_lower": 26.318557261997462,
+        "score_upper": 74.83940582384581,
+        "max_regret": 52.41233562397053
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": 25
+    },
+    {
+      "scenario": "retained_unrestricted_overlap",
+      "outcome_weight": 0.2,
+      "phoenix": {
+        "decision_rank": 24,
+        "score_lower": 24.484116447358026,
+        "score_upper": 76.2214982084867,
+        "max_regret": 55.49062801293707
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": 25
+    },
+    {
+      "scenario": "unreconciled_union_candidate",
+      "outcome_weight": 0.2,
+      "phoenix": {
+        "decision_rank": 23,
+        "score_lower": 25.556412335427343,
+        "score_upper": 76.15703389162704,
+        "max_regret": 54.41833212486776
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": 25
+    }
+  ]
+}
