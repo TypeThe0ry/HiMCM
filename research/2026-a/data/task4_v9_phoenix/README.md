@@ -41,3 +41,11 @@ recover_locations.py 从缺坐标学校中找到10个唯一NCES同名候选，�
 学校ID验证解决了这10个实体的连接问题，未解决其他缺坐标学校、被抑制分母、私校和历史位置覆盖，因此未将子集率填为全市指标。本轮主评分输入不变，保留上一模型结果。
 
 Bogotá并行下载核查：官方镜像的问卷ZIP经requests连接关闭、网页访问超时、Chrome ERR_SOCKET_NOT_CONNECTED，未获得ZIP。SIMUR目录确认调查覆盖Bogotá及20个邻近市镇、5岁及以上人口；尚未核实高中在读字段、时长和家庭调查权重。没有拿拦截调查EODI权重说明替代家庭调查EODH方法，也没有新增通学观测。
+
+## Correction: returned year and cohort overlap
+
+All ten recovered entity detail responses actually return fiscalYear=2026 despite requesting 2025. Identifiers match, but historical attributes are not verified. Graduation responses themselves return 2025. See entity_year_audit.json.
+
+The 2015 official technical manual permits some dual-enrolled graduates to be recorded as G at both schools. Accordingly, all preceding aggregate counts mean SCHOOL COHORT RECORDS, not demonstrated unique students. The 16,780 records and associated rate bounds describe the school-record-weighted subset only. Current-year duplication rules remain unverified.
+
+State All cohort=94,501 and graduates=74,261 are archived; comparability with cross-school summed records is unverified. The outcome-margin model is a conditional scenario, not admitted evidence.
