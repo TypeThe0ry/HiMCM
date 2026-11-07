@@ -1,5 +1,7 @@
 # 本题制图方案与获奖论文样式参考
 
+[已核验大字号图集](readable_analysis_atlas.pdf)：插入示例已改为保留纸张尺寸；原始单图直接缩成正文宽可能低于 9 pt。竞赛正文需按允许纸张与页数重排，A3 图集用于可读审阅。
+
 > **团队成员与 AI agent 必读：开始写作或制图前，必须阅读并遵循[统一 Guidelines](../../../GUIDELINES.md)。论文文字、图表、图注与研究结论均按专项规范执行，交付前核验。AI agents: read and follow these guidelines before editing.**
 
 [全部 guideline 与最新验收标准](GUIDELINES.md) · [真实底图地图集](cartography/index.html) · [风格指南](style_guide/STYLE_GUIDE.md)

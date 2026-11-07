@@ -1,5 +1,7 @@
 # 候选城市与学习设施可达性地图
 
+[已核验大字号图集](maps_with_captions.pdf)：插入示例已改为保留纸张尺寸；原始单图直接缩成正文宽可能低于 9 pt。竞赛正文需按允许纸张与页数重排，A3 图集用于可读审阅。
+
 共 6 张地图：25 座候选城市全球分布、哥本哈根／多伦多／迪拜／上海内部可达性，以及四城比较。各图提供 PDF、SVG 和 300 dpi PNG。
 
 ## 制图语言
@@ -33,3 +35,9 @@ city_map_captions.json / figure_includes.tex：英文图注与 LaTeX 插图片�
 [实际字号印刷版](print_ready_maps.pdf)：全球图及单城图用 A4 横版，四城比较及卫星面板用 A3 竖版，全部文字经 PDF 检查至少 9 pt，详见 print_audit.json。避免直接缩成双栏；窄版正文可拆出局部面板。运行 prepare_print.py 可重新检查与排版。
 
 [卫星与多源地理背景](satellite/README.md)提供同域卫星 RGB 参考及产品元数据。
+
+## 带图注的可编译图集
+
+在本目录执行 `tectonic maps_with_captions.tex` 可生成 8 页图集：7 页地图和 1 页正常字号图注。引用片段需要 `pdfpages`，每一张混合尺寸页面单独使用 `fitpaper=true`，以保持已核验字号。整页图集适合审阅；正式比赛版面按题面允许尺寸另行排版。
+
+[本轮审阅记录](../FIGURE_REVIEW.md) · [原图字号审计](../figure_font_audit.json) · [最终渲染字号审计](../rendered_figure_audit.json)

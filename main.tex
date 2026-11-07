@@ -1,3 +1,5 @@
+% Editorial review: local GitHub manuscript; see docs/reviews/manuscript_audit.md.
+% Topic integration and missing legacy figures require the current Overleaf sources.
 \documentclass{mcmthesis} 
 \mcmsetup{
     CTeX = false,  
@@ -32,7 +34,6 @@
 \usepackage{booktabs}
 \usepackage[capitalize, noabbrev]{cleveref}
 
-\usepackage{caption}
 \usepackage{subcaption}
 
 \setcounter{tocdepth}{2}
@@ -72,7 +73,9 @@
 \hyphenpenalty=500 
 
 \setlength{\LTcapwidth}{\textwidth}
+\captionsetup{font=normalsize,labelfont=bf}
 \captionsetup[table]{width=\textwidth}
+\captionsetup[subfigure]{font=normalsize}
 
 % Optional: Encoding settings
 \usepackage[T1]{fontenc}
@@ -95,11 +98,11 @@ To emphasize the ecological impact of mega-sport events, we established a compre
 
 \textbf{For Task 1}, we selected six evaluation indicators regarding environmental sustainability, including\textbf{ travel distances, air conditioning consumption, energy structures, transportation availability, and weather conditions}. Quantitative calculation expressions are established for those indicators. Among the 19 cities that have previously hosted the Super Bowl, we selected 3 new candidates: Denver CO, Nashville TN, and Seattle WA. The indicator values for the 22 cities are then calculated. The detailed results are shown in \cref{tab:final_scores}. 
 
-\textbf{For Task 2}, we created a model using the combined weighting method. \textbf{The Analytic Hierarchy Process (AHP)} and\textbf{ the entropy method} are combined to calculate the final weight matrix. Through further comparison with results from \textbf{the VIKOR method} with \textbf{the Kendall's coefficient of concordance}, the results showed a strong and statistically significant correlation, confirming the robustness and credibility of the method selected. 
+\textbf{For Task 2}, we created a model using the combined weighting method. \textbf{The Analytic Hierarchy Process (AHP)} and\textbf{ the entropy method} are combined to calculate the final weight matrix. Through further comparison with results from \textbf{the VIKOR method} with \textbf{the Kendall's rank correlation coefficient}, the results showed a strong and statistically significant correlation, indicating agreement between the two aggregation methods.
 
-\textbf{For Task 3}, we calculated the final scores according to the weights determined by the combined weighting method for the 22 candidate cities. The rankings are shown in \cref{tab:final_scores} with \textbf{Stanford CA} leading all candidates with a score of \textbf{74.066}. \textbf{Denver CO} leads the three new candidate cities with a score of $\textbf{43.435}$. 
+\textbf{For Task 3}, we calculated the final scores according to the weights determined by the combined weighting method for the 22 candidate cities. The rankings are shown in \cref{tab:final_scores} with \textbf{Stanford CA} leading all candidates with a score of \textbf{74.066}. \textbf{Denver CO} leads the three new candidate cities with a score of $\textbf{43.535}$.
 
-\textbf{For Task 4}, we identified extensions to existing indicators for different types of tournaments and applied the model to select the most environmentally sustainable Formula I Grand Prix location. \textbf{Silverstone, United Kingdom} appears as the most environmental sustainable choice with a score of $\textbf{79.981}$. We also identified strategies in \cref{subsubsec:strategies}, then applying them to Los Angeles CA and Nashville TN. Both cities show significant increases in the final scores (\cref{fig:city_score_responce_strategies}), reflecting the effectiveness of the strategies.  
+\textbf{For Task 4}, we identified extensions to existing indicators for different types of tournaments and applied the model to select the most environmentally sustainable Formula I Grand Prix location. \textbf{Silverstone, United Kingdom} appears as the most environmental sustainable choice with a score of $\textbf{79.981}$. We also identified strategies in \cref{subsubsec:strategies}, then applying them to Los Angeles CA and Nashville TN. The strategy scenarios increase the model scores for both cities (\cref{fig:city_score_responce_strategies}).
 
 \textbf{For Task 5}, we attached a letter presenting our findings and recommendations for the host city of the 2029 Super Bowl to the NFL, including advantages for selecting Stanford CA and Denver CO as the host cities. 
 
@@ -117,9 +120,9 @@ Super Bowl, Combine Weighting Method, Sustainability, AHP, VIKOR
 
 \subsection{Background Information} \label{subsec:background_info}
 
-Where a student lives can affect their education, daily life, and future opportunities. For high school students aged 14–18, a good city should offer more than strong schools. It should also be safe, affordable, and provide enough opportunities for students to explore their interests. Access to public transportation, parks, and recreational facilities can make a difference, especially for teenagers who cannot drive. As technology becomes part of everyday life, access to digital resources and opportunities to learn about AI may also matter.
+For high school students aged 14--18, city opportunities depend on both the services available and the ability to use them. Schools, public transport, parks, recreational facilities, and digital resources shape the opportunities considered in this study. Safety and affordability determine which of these opportunities students can use in daily life.
 
-However, cities differ in many ways. Some have excellent schools but high living costs, while others are affordable but offer fewer educational or recreational opportunities. These differences make it difficult to decide which city is best for high school students. To address this problem, we select a set of measurable indicators and use them to compare cities from a teenager's perspective.
+The comparison therefore concerns trade-offs among educational opportunities, access, safety, and cost. We define measurable indicators for these dimensions and use them to compare cities from a high school student's perspective.
 
 \subsection{Problem Restatement} \label{subsec:prob_restatement}
 Our task is to compare cities from a high school student's perspective. This requires us to:
@@ -141,7 +144,7 @@ Our task is to compare cities from a high school student's perspective. This req
     \centering
     \includegraphics[width=\textwidth]
     {framework.png}
-    \caption{The Workflow Regarding Model Construction and Extension}
+    \caption{Model workflow: indicator definition, weighting, ranking, and extension.}
     \label{fig:ourframework}
 \end{figure}
 
@@ -150,11 +153,11 @@ Our task is to compare cities from a high school student's perspective. This req
 
 When constructing an evaluation model for selecting the most environmentally sustainability candidate city for the 2029 Super Bowl, the following assumptions are utilized, listed below:
 
-\textbf{1. Attendee behavior and event operations remain consistent across all potential host cities.} Consistent attendee behavior and standardized event operations ensure that differences in evaluation outcomes reflect the environmental and infrastructural conditions rather than variations in fans' or organizers' behaviors. This stability ensures the focus on meaningful city-level factors that influence the overall sustainability of a potential Super Bowl. 
+\textbf{1. Common event scenario.} Attendee behaviour and event operations are held fixed across candidate host cities. The comparison therefore attributes score differences to the city-level inputs represented by the indicators.
 
-\textbf{2. Indicators evaluated are expected to be consistent across cities or states.} Uniform sustainability indicators provide a common basis for comparing host cities, ensuring that each city is accessed under the same criteria. This assumption ensures a fair and objective evaluation, reducing inconsistencies in measurement or reporting. 
+\textbf{2. Common indicator definitions.} Each candidate is evaluated using the same indicator definitions and transformations. Source units, reference periods, and city or state coverage must be harmonized before comparison.
 
-\textbf{3. Cities are expected to accommodate all fans attended.} Assuming that each city can fully accommodate all attending fans ensures city selection to be based on environmental factors of the cities rather than capacity restraints. The candidate cities are cities that have hosted a Super Bowl or that host a NFL team, thus meeting the baseline requirements for accommodating a considerable amount of fans. 
+\textbf{3. Capacity treated as a prerequisite.} The sustainability comparison assumes that each candidate can accommodate the event. Capacity feasibility is held outside the score.
 
 
 
@@ -177,11 +180,11 @@ The following table defines the different symbols utilized in the model construc
 \bottomrule
 \endlastfoot
 
-$S$S & Comprehensive score. \\
+$S$ & Comprehensive score. \\
 $A$ & Judgment matrix. \\ 
 $W$ & Weight vector. \\ 
 $x_{ij}$ & The comprehensive score of the $i$th element of the $j$th indicator. \\ 
-$x^2 = 3x + \int x^2 \, dx$ & The normalized value of $x_{ij}$. \\
+$\tilde{x}_{ij}$ & The normalized value of $x_{ij}$. \\
 $x_{max}$ & The maximum value of $x$ among the category. \\
 $x_{min}$ & The minimum value of $x$ among the category. \\
 
@@ -244,7 +247,7 @@ A\mathbf{w}^{AHP}
 where $\lambda_{\max}$ is the largest eigenvalue of the judgment matrix, $\mathbf{w}^{AHP}=(w_1^{AHP},w_2^{AHP},\ldots,w_n^{AHP})^{T}$ denotes the normalized weight vector, and $n=4$ represents the number of evaluation criteria. Each weight indicates the relative contribution of the corresponding criterion to the overall evaluation.
 
 \noindent\textbf{Step 3: Consistency Verification.}
-Since pairwise comparisons are based on subjective judgments, a consistency test is performed to ensure the reliability of the derived weights. The Consistency Index (CI) and Consistency Ratio (CR) are calculated as follows:
+The consistency test measures internal agreement among the pairwise judgments. The Consistency Index (CI) and Consistency Ratio (CR) are calculated as follows:
 
 \begin{equation}
 CI=\frac{\lambda_{\max}-n}{n-1},
@@ -254,7 +257,7 @@ CR=\frac{CI}{RI}.
 
 where $CI$ measures the consistency of the judgment matrix, $RI$ is the Random Index with a value of $0.90$ for $n=4$, and $CR$ evaluates the overall consistency of the comparisons. A judgment matrix is considered acceptable when $CR<0.10$; otherwise, the pairwise comparisons must be revised.
 
-Once the consistency requirement is satisfied, the AHP-derived weights are retained as the subjective component of the subsequent weight fusion process, where they are combined with objective weights obtained from the Entropy Weight Method (EWM).
+Once the consistency requirement is satisfied, the AHP-derived weights are retained as the subjective component of the subsequent weight fusion process, where they are combined with data-dependent weights obtained from the Entropy Weight Method (EWM).
 
 
 \subsection{Defining Sustainability Evaluation Indicators} \label{subsec:defining_indicators}
@@ -396,7 +399,7 @@ The calculated indicators reflect different sustainability features regarding ci
 
 To estimate the summed travel distance of all fans, the 50 most populous cities in the United States are considered. Seattle WA has a significant higher travel distance indicator value reflecting its northwest location, while Indianapolis IN, Nashville TN, and Arlington TX have low indicator values, reflecting the general accessibility of central US cities via air. 
 
-Differences in geographical locations also results in different climates thus different weath\ -er impacts. In general, warmer temperature and clearer weather at a location require less energy compared to being freezing and snowy. Jacksonville FL has the highest temperature during the event, thus requiring less energy to warm the stadium to a comfortable temperature. On the other hand, cities including New Orleans LA, Minneapolis MN, Paradise NV, East Rutherford NJ, and Nashville TN have low temperatures during the event, thus requiring significant more energy to heat up the stadium. 
+Differences in geographical locations also results in different climates thus different weather impacts. In general, warmer temperature and clearer weather at a location require less energy compared to being freezing and snowy. Jacksonville FL has the highest temperature during the event, thus requiring less energy to warm the stadium to a comfortable temperature. On the other hand, cities including New Orleans LA, Minneapolis MN, Paradise NV, East Rutherford NJ, and Nashville TN have low temperatures during the event, thus requiring significant more energy to heat up the stadium.
 
 Similarly, Tempe AZ has a high (positive) weather influence indicator displaying low rain and snow chances, whereas Nashville TN has a low (negative) weather influence reflecting the high chances to snow and rain at the location. Raining and snowing require extra energy costs, thus influencing the sustainability of the event. 
 
@@ -452,11 +455,11 @@ City policy affects waste processing, which has polarized environmental influenc
 
 \section{Constructing a Model for Location Selection} \label{sec:model}
 
-With the evaluation indicators calculated, the model can then be constructed based on normalized data. The combined weighting method is used. To determine the small weights, two different methods, the AHP and the entropy method, are chosen, aiming to minimize subjective biases with a mix of semi-qualitative analysis and pure quantitative analysis. The process of constructing the model is demonstrated below: 
+The model aggregates normalized indicators using a combination of AHP priorities and entropy weights. AHP represents relative importance judgments; entropy weighting represents variation across the candidate sample.
 
 \subsection{Data Normalization} \label{subsec:data_norm}
 
-With the complete and accurate data set collected, data normalization is necessary so that different indicators can be compared on the same scale, by eliminating the dimensions. The following are the formulas for data normalization: 
+Min--max normalization places each indicator on a common dimensionless scale. Benefit indicators increase with desirability; cost indicators decrease with desirability:
 
 For benefit attributes: 
 \begin{equation} \label{eq:norm_positive}
@@ -472,14 +475,14 @@ The normalized indicators are graphed in \cref{fig:indicator_maps}, with higher 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=.9\linewidth]{figures/indicators_maps.jpg}
-    \caption{Normalized Evaluation Indicators Displayed Geographically}
+    \caption{Spatial distribution of min--max normalized indicators. Higher values indicate greater desirability within each indicator.}
     \label{fig:indicator_maps}
 \end{figure}
 
 
 \subsection{Deriving the Weight Matrix for Evaluation Indicators} \label{subsec:weight_matrix}
 
-Since different indicators reflect different influences magnitudes, assigning them with different weights makes the final score more accurate. Thus, the two methods aimed to determine weights are applied, as listed below: 
+The weights determine the contribution of each normalized indicator to the score. AHP encodes pairwise importance judgments, while entropy weighting responds to variation across the candidate sample. The following sections define these two components.
 
 \subsubsection{The Analytic Hierarchy Process (AHP)} \label{subsubsec:AHP}
 
@@ -548,7 +551,7 @@ After the calculation, if the consistency ratio $\text{CR}$ is less than $0.1$, 
 
 \subsubsection{The Entropy Method} \label{subsubsec:entropy}
 
-The Entropy Method determines the importance of indicators by objectively measuring the variation each indicator contributes though the measure of their information entropy \cite{Entropy}. Higher variation means more information thus more weight. 
+Entropy weighting assigns larger weights to indicators with greater dispersion in the candidate sample, as measured by their normalized information entropy \cite{Entropy}.
 
 To utilize the entropy method, the following steps should be followed: 
 
@@ -578,7 +581,7 @@ with larger values indicating more information contribution.
 
 \subsubsection{Final Weight Matrix Calculation} \label{subsubsec:weight_combination}
 
-To determine the final weight matrix, it is reasonable to combine the results of the two methods by assigning them different importance values. This enables the final weight matrix to reflect both semi-qualitative analysis and quantitative analysis, minimizing inconsistencies due to data source inconsistencies or subjective biases. The final weight $W_\text{F}$ is combined linearly, demonstrated by the following formula: 
+The final weight vector combines the AHP priorities and entropy weights linearly. The fusion coefficients specify the contribution of each weighting rule:
 \begin{equation} \label{eq:weight_combination}
     W_\text{F} = \omega_\text{AHP} \cdot W_\text{AHP} + \omega_\text{E} \cdot W_\text{E}
 \end{equation}
@@ -598,7 +601,7 @@ After linearly combining the resulting weights from the AHP method and the entro
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/final_weight_polar.png}
-    \caption{Final Weights of Utilized Sustainability Evaluation Indicators}
+    \caption{Indicator weights after combining AHP priorities and entropy weights using the specified fusion coefficients.}
     \label{fig:final_weights}
 \end{figure}
 
@@ -664,13 +667,13 @@ The final scores calculated by the model is shown in \cref{tab:final_scores} and
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{figures/final_scores_bar_graph_super_bowl.png}
-    \caption{Environmental Evaluation Scores of Super Bowl Host Cities}
+    \caption{Weighted sustainability scores of the 22 Super Bowl host candidates. Values correspond to Table~\ref{tab:final_scores}.}
     \label{fig:final_scores}
 \end{figure}
 
-\subsection{Validating Final Scores Calculated} \label{subsec:scores_validation}
+\subsection{Comparing Rankings Across Evaluation Methods} \label{subsec:scores_validation}
 
-To validate the results concluded from the model (demonstrated in \cref{subsec:weight_matrix}), another pure mathematical method called the VIKTOR method \cite{VIKOR_Method} is introduced, aiming to cross-validate the scores calculated. 
+We compare the ranking from the weighted score with VIKOR \cite{VIKOR_Method}, a compromise-ranking method applied to the same indicators. This comparison assesses sensitivity to the aggregation rule.
 
 \subsubsection{The VIKOR Method} \label{subsubsec:VIKTOR}
 
@@ -699,7 +702,7 @@ where $S^* = \min\limits_{1 \le i \le m} S_i$, $S^- = \max\limits_{1 \le i \le m
 
 
 
-\subsubsection{Verifying with the Kendall's Coefficient of Concordance} \label{subsubsec:kendall_coeff}
+\subsubsection{Comparing Rankings with Kendall's Rank Correlation} \label{subsubsec:kendall_coeff}
 In order to establish consistency of the VIKOR-based ranking and the proposed scoring method, the Kendall's rank correlation coefficient $\tau$ is presented as the term. The value of Kendall's coefficient, when comparing the two results which are the rankings, is the level of agreement between the two result, defined as: 
 \begin{equation}
 \tau = \frac{2(C - D)}{m(m-1)},
@@ -709,11 +712,11 @@ where $C$ and $D$ denote the numbers of concordant and discordant pairs between 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.78\textwidth]{figures/Final_vs_VIKOR_Kendall_Themed.png}
-    \caption{Correlation Between Unified Sustainability Scores and VIKOR Evaluation Results}
+    \caption{Comparison of the weighted-score and VIKOR rankings for the same candidate set.}
     \label{fig:consistency_vikor_scatter}
 \end{figure}
 
-In this case, the Kendall’s tau is computed on the basis of the ranking results obtained by VIKOR approach and our scoring scheme. \textbf{The result shows a correlation coefficient of $\tau = 0.688$ with a $p$-value less than $0.01$, as reflected in \cref{fig:consistency_vikor_scatter}, indicating a statistically significant and strong positive correlation between the two ranking results.} Thus, the results of the evaluation in both methods provide rather consistent outcomes of the decision, which justifies the strength and credibility of the suggested methodology.
+In this case, the Kendall’s tau is computed on the basis of the ranking results obtained by VIKOR approach and our scoring scheme. \textbf{The result shows a correlation coefficient of $\tau = 0.688$ with a $p$-value less than $0.01$, as reflected in \cref{fig:consistency_vikor_scatter}, indicating a statistically significant and strong positive correlation between the two ranking results.} This statistic measures agreement between the two rankings under the shared inputs.
 
 
 
@@ -751,7 +754,7 @@ The candidate scores with the three candidate cities ranked on top (Stanford CA,
   \subcaptionbox{\label{fig:indicators_nashville}}{%
     \includegraphics[width=0.3\textwidth]{figures/city_indicators_data/Nashville.png}}%
   
-  \caption{Evaluation Indicator Radar Graph for Six Cities.}
+  \caption{Normalized indicator profiles for the three highest-ranked cities and the three additional candidates.}
   \label{fig:indicator_case_study}
 \end{figure}
 
@@ -765,12 +768,12 @@ One significant advantage of Stanford CA as a host city is its general low relia
 
 Another general advice is to encourage sales of reusable products. This measure will decrease the overall waste generation in the city, thus increasing the overall sustainability of the whole event. 
 
-The two mentioned strategies are applied to Los Angeles CA and Nashville TN, with results shown in \cref{fig:city_score_responce_strategies}. Both cities show significant score increases after application of those strategies, reflecting their effectiveness. 
+The strategy scenarios change the relevant inputs for Los Angeles CA and Nashville TN. The resulting model scores are compared with the baseline in \cref{fig:city_score_responce_strategies}; the differences describe the model response to the assumed changes.
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.78\textwidth]{figures/city_score_changes_reform.png}
-    \caption{Environmental Performance Changes after Application of Strategies}
+    \caption{Baseline and strategy-scenario model scores for Los Angeles and Nashville.}
     \label{fig:city_score_responce_strategies}
 \end{figure}
 
@@ -876,7 +879,7 @@ With the collected evaluation indicators, the procedures from \cref{sec:model} a
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{figures/f1_world_sustainability_map_final.png}
-    \caption{Calculated Scores of Candidate Cities Hosting the Grand Prix}
+    \caption{Model scores for the 23 Grand Prix candidates listed in the accompanying results table.}
     \label{fig:calculated_scores_f1}
 \end{figure}
 
@@ -886,30 +889,30 @@ With the collected evaluation indicators, the procedures from \cref{sec:model} a
 
 \section{Sensitivity Analysis} \label{sec:sensitivity_analysis}
 
-To further confirm the robustness and effectiveness of the model, the fusion coefficients in \cref{eq:weight_combination} are changed and the responses of the final weights are observed and recorded, demonstrated in \cref{fig:sensitivity}. 
+We vary the fusion coefficients in \cref{eq:weight_combination} and examine how the indicator weights change (\cref{fig:sensitivity}). This analysis evaluates the weight vector; changes in city ranks require a separate score and ranking calculation.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/omega_sensitivity_analysis.png}
-    \caption{Sensitivity of Final Weights to Fusion Coefficient}
+    \caption{Response of indicator weights to the AHP--entropy fusion coefficient.}
     \label{fig:sensitivity}
 \end{figure}
 
-As reflected by \cref{fig:sensitivity}, the relative weights of the sustainability evaluation indicators are not sensitive to changes in fusion coefficients, shown by the relatively stable final weight values as the fusion coefficient changes. Throughout, the eco-friendliness factor of the in-city transportation showed significant dominance, reflected by its high weight compared to other indicators. 
+Figure~\ref{fig:sensitivity} presents the weight response over the displayed fusion-coefficient range. The in-city transportation indicator receives the largest weight in the reported analysis. Recommendation stability depends on the resulting city scores and rank changes.
 
-\section{Advantages and Disadvantages of the Model} \label{sec:model_advantages_disadvantages}
+\section{Model Interpretation and Scope} \label{sec:model_advantages_disadvantages}
 
-Through the extensive applications of the model, several advantages and disadvantages are identified for future applications and improvements. 
+The model separates indicator measurement, importance judgments, and score aggregation. Its interpretation depends on the data definitions and weighting assumptions used in each application.
 
-\subsection{Advantages}
+\subsection{Interpretable Model Components}
 
-\textbf{1. The model is robust and consistent.} Two different evaluation methods are introduced to construct the model, blending semi-qualitative analysis and quantitative analysis, thus minimizing subjective biases and data collection inconsistencies. Insensitivity of the model show similar results among those two methods. A new evaluation method is then introduced and applied. Its results displayed strong correlations with the previous results, showing consistency among the methods. 
+\textbf{1. The aggregation choices are explicit.} AHP priorities and entropy weights contribute through stated fusion coefficients. The VIKOR comparison reports agreement under an alternative aggregation rule, allowing readers to distinguish agreement between methods from sensitivity to the inputs.
 
-\textbf{2. The model evaluates candidates from different perspectives.} With the variety of indicators selected and the different methods utilized, the final score is determined with diverse and independent factors.
+\textbf{2. Indicator contributions can be interpreted separately.} The score combines the six defined sustainability indicators. Examining their normalized values explains which dimensions contribute to each candidate's position.
 
-\subsection{Disadvantages}
+\subsection{Data Conditions}
 
-\textbf{1. Data sources are subject to potential biases.} Due to the difficulties on retrieving data for the indicators, estimates are used during the process. Available data might be also inconsistent. Thus, the results might be biased due to data inconsistencies.  
+\textbf{Data comparability and estimation.} Several indicator inputs are estimated. Their units, reference years, geographical coverage, and estimation rules determine how city scores can be compared. Sensitivity to these inputs is a distinct question from agreement between aggregation methods.
 
 
 

@@ -1,15 +1,6 @@
-% Optional snippets only. Require graphicx in the manuscript preamble.
-% Paths assume compilation from the repository root. Not inserted into main.tex.
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.88\textwidth]{research/2026-a/visuals/figures/01_rank_revision.pdf}
-  \caption{Rank changes in the 25-city sample after adding mean learning-facility accessibility and then a lower-tail adjustment. These are changes in the evaluation model, not changes in observed city conditions.}
-  \label{fig:access-rank-revision}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{research/2026-a/visuals/figures/03_information_bounds.pdf}
-  \caption{Feasible score intervals before and after observing the accessibility proxy, holding the model and weights fixed. Four baseline proxies receive 80\% total weight, accessibility 10\%, and the unobserved education dimension 10\%. Circles identify possible champions; the intervals are not confidence intervals.}
-  \label{fig:access-information-bounds}
-\end{figure}
+% Requires pdfpages; compile from repository root.
+% These fixed-size A3 plates preserve >=9 pt source labels.
+% Choose the pages required by the manuscript and follow competition page-format rules.
+\includepdf[pages={1,3},fitpaper=true,pagecommand={}]{research/2026-a/visuals/readable_analysis_atlas.pdf}
+% Captions: rank changes across model revisions; fixed-weight feasible score bounds.
+% Full definitions and version context: README.md and round2/CAPTIONS.md.

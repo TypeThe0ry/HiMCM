@@ -1,44 +1,20 @@
-% Copy selected PDFs into figures/. Use landscape/full-page placement to preserve >=9 pt labels.
-% See print_ready_maps.pdf and print_audit.json for verified page sizes.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{figures/01_global_candidates.pdf}
-\caption{Geographical distribution of the 25 candidate cities.}
-\label{fig:01_global_candidates}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{figures/02_copenhagen_access.pdf}
-\caption{Learning-facility walking accessibility in Copenhagen, using archived modelled mean travel times to the nearest 20 Learning POIs and retained all-age population grids. Grey roads provide current OpenStreetMap geographical context for the archived accessibility estimates. The full populated-grid footprint and selected detail use separate scales. Coverage follows the source urban-area dataset.}
-\label{fig:02_copenhagen_access}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{figures/03_toronto_access.pdf}
-\caption{Learning-facility walking accessibility in Toronto, using archived modelled mean travel times to the nearest 20 Learning POIs and retained all-age population grids. Grey roads provide current OpenStreetMap geographical context for the archived accessibility estimates. The full populated-grid footprint and selected detail use separate scales. Coverage follows the source urban-area dataset.}
-\label{fig:03_toronto_access}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{figures/04_dubai_access.pdf}
-\caption{Learning-facility walking accessibility in Dubai, using archived modelled mean travel times to the nearest 20 Learning POIs and retained all-age population grids. Grey roads provide current OpenStreetMap geographical context for the archived accessibility estimates. The full populated-grid footprint and selected detail use separate scales. Coverage follows the source urban-area dataset.}
-\label{fig:04_dubai_access}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{figures/05_shanghai_access.pdf}
-\caption{Learning-facility walking accessibility in Shanghai, using archived modelled mean travel times to the nearest 20 Learning POIs and retained all-age population grids. Grey roads provide current OpenStreetMap geographical context for the archived accessibility estimates. The full populated-grid footprint and selected detail use separate scales. Coverage follows the source urban-area dataset.}
-\label{fig:05_shanghai_access}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{figures/06_city_access_comparison.pdf}
-\caption{Learning-facility walking accessibility across four cities, using common time classes and city-specific map scales.}
-\label{fig:06_city_access_comparison}
-\end{figure}
+% Requires pdfpages. Compile from repository root or define MapAtlasDir.
+% fitpaper preserves verified A4/A3 page sizes; do not rescale to textwidth.
+\providecommand{\MapAtlasDir}{research/2026-a/visuals/cartography}
+\includepdf[pages={1},fitpaper=true,pagecommand={}]{\MapAtlasDir/print_ready_maps.pdf}
+\includepdf[pages={2},fitpaper=true,pagecommand={}]{\MapAtlasDir/print_ready_maps.pdf}
+\includepdf[pages={3},fitpaper=true,pagecommand={}]{\MapAtlasDir/print_ready_maps.pdf}
+\includepdf[pages={4},fitpaper=true,pagecommand={}]{\MapAtlasDir/print_ready_maps.pdf}
+\includepdf[pages={5},fitpaper=true,pagecommand={}]{\MapAtlasDir/print_ready_maps.pdf}
+\includepdf[pages={6},fitpaper=true,pagecommand={}]{\MapAtlasDir/print_ready_maps.pdf}
+\includepdf[pages={7},fitpaper=true,pagecommand={}]{\MapAtlasDir/print_ready_maps.pdf}
+\clearpage
+\section*{Map captions}
+\normalsize
+\noindent\textbf{Map 1.} Geographical distribution of the 25 candidate cities. Locator points follow the archived urban-area index. Coral markers identify the four accessibility case studies; the Europe inset separates nearby labels. Basemap: Natural Earth; world projection: Robinson.\par\medskip
+\noindent\textbf{Map 2.} Learning-facility accessibility in Copenhagen. Within the retained populated grids, 99.4\% of residents have modelled mean walking times to the nearest 20 learning POIs at or below 30 minutes. Colours show five time classes; the inset uses its own scale. Sources: archived Bruno et al. / SONY CSL accessibility data, OpenStreetMap and Natural Earth.\par\medskip
+\noindent\textbf{Map 3.} Learning-facility accessibility in Toronto. Within the retained populated grids, 98.2\% of residents have modelled mean walking times to the nearest 20 learning POIs at or below 30 minutes. Colours show five time classes; the inset uses its own scale. Sources: archived Bruno et al. / SONY CSL accessibility data, OpenStreetMap and Natural Earth.\par\medskip
+\noindent\textbf{Map 4.} Learning-facility accessibility in Dubai. Within the retained populated grids, 43.7\% of residents have modelled mean walking times to the nearest 20 learning POIs at or below 30 minutes. Colours show five time classes; the inset uses its own scale. Sources: archived Bruno et al. / SONY CSL accessibility data, OpenStreetMap and Natural Earth.\par\medskip
+\noindent\textbf{Map 5.} Learning-facility accessibility in Shanghai. Within the retained populated grids, 58.2\% of residents have modelled mean walking times to the nearest 20 learning POIs at or below 30 minutes. Colours show five time classes; the inset uses its own scale. Sources: archived Bruno et al. / SONY CSL accessibility data, OpenStreetMap and Natural Earth.\par\medskip
+\noindent\textbf{Map 6.} Four-city comparison of learning-facility accessibility. Identical walking-time classes support comparison of spatial patterns; each city has its own scale bar. The population-weighted shares use the retained urban population grids. Sources: Bruno et al. / SONY CSL, OpenStreetMap and Natural Earth.\par\medskip
+\noindent\textbf{Map 7.} Satellite context of the four accessibility case studies. NASA HLS S30 RGB imagery covers the same geographical extents as the accessibility panels. Acquisition dates and city-specific scales appear on the maps. The source product has 30 m pixels; the displayed images are NASA GIBS browse renderings.\par\medskip
