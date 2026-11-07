@@ -1,0 +1,44 @@
+{
+  "entity_id": 4286,
+  "nces_lea": "0406330",
+  "entity_name": "Phoenix Union High School District",
+  "requested_fiscal_year": 2025,
+  "graduation_returned_fiscal_year": 2025,
+  "entity_returned_fiscal_year": 2026,
+  "cohort_year": 2024,
+  "period": "four-year",
+  "cohort": 6285,
+  "graduates": 4813,
+  "known_non_graduates": 1472,
+  "observed_district_rate": 0.7657915672235481,
+  "published_integer_percent": 77.0,
+  "scope": "Direct PXU LEA administrative aggregate, not all Phoenix city residents or the earlier physical-school union",
+  "frontend_title_excerpt": "this.fourYearGraduationRate.barChart.title=\"Graduation Rate: \"+n.data[0].fiscalYear+\" (Cohort \"+parseInt(n.data[0].fiscalYear-1)+\")\",t=0;t<n.data.length;t++)this.fourYearGraduationRate.barChart.categoryAxis.categories.pu",
+  "fy2026_graduation_rows": 0,
+  "fact_sheet_scope": {
+    "schools": 23,
+    "digital_academies": 1,
+    "profile_label": "2024-2025"
+  },
+  "digital_academy": {
+    "entity_id": 875776,
+    "cohort": 485,
+    "graduates": 286,
+    "non_graduates": 199
+  },
+  "current_nces_district_schools": 21,
+  "subtraction_route": {
+    "admitted": false,
+    "hypothetical_graduates_lower": 4527,
+    "hypothetical_non_graduates_lower": 1273,
+    "reason": "Requires complete cohort-era excluded-school set and consistent unique-person district/school status; current NCES21 versus profile23 is unreconciled."
+  },
+  "main_admitted": false,
+  "city_bound_changed": false,
+  "limitations": [
+    "District aggregate includes broader provision, including a digital academy; no city-resident membership or physical-school-only cohort established.",
+    "No claim that all earlier city school records are disjoint or that published district counts certify their linkage.",
+    "Fact sheet enrollment25108 is not the graduation cohort denominator; its76.5% is not substituted for this exact API ratio.",
+    "FY2026 empty response is unavailable data, not zero graduates."
+  ]
+}

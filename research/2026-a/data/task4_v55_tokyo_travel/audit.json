@@ -1,0 +1,40 @@
+{
+  "survey_year": 2021,
+  "guide_revision": "2024-03",
+  "source_sheet": "c001_R3",
+  "published_dimensions": [
+    "平日／休日",
+    "都市",
+    "性別",
+    "目的種類"
+  ],
+  "geographies": [
+    "三大都市圏／中心都市",
+    "三大都市圏／周辺都市１",
+    "三大都市圏／周辺都市２",
+    "全国計",
+    "地方中心都市圏",
+    "地方中枢都市圏／中心都市",
+    "地方中枢都市圏／周辺都市",
+    "地方中核都市圏（４０万以上）／中心都市",
+    "地方中核都市圏（４０万以上）／周辺都市",
+    "地方中核都市圏（４０万未満）／中心都市",
+    "地方中核都市圏（４０万未満）／周辺都市"
+  ],
+  "exact_tokyo_city_row": false,
+  "current_upper_secondary_dimension": false,
+  "illustration_only": {
+    "geography": "三大都市圏／中心都市",
+    "sex": "男性",
+    "purpose": "通学",
+    "day": "平日",
+    "mean_minutes": 26.844338168,
+    "interpretation": "Grouped major-metropolitan central cities, all school stages; not Tokyo high-school observation"
+  },
+  "guide_notes": [
+    "Tokyo wards, Inagi and Ome are separate sampled geographies; not entire Tokyo metropolis census",
+    "Cross-table precision flag1 marks cells with fewer than70 trips; not a respondent denominator"
+  ],
+  "new_admitted_city_observations": 0,
+  "decision": "Preserve Tokyo travel interval; grouped school-trip means do not identify target geography or school stage"
+}

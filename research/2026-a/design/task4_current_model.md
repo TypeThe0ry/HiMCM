@@ -1,5 +1,7 @@
 # 当前模型：V53 高中项目覆盖与教师分配（2026-11-07）
 
+V55新增[推荐相关采集诊断](../results/task4_v55_recommendation_acquisition/README.md)：固定α=0.10，仅测本城时，Phoenix最少3格、Tokyo最少2格的有利精确结果才可能让该城唯一获推荐；教育＋通学对这两城均不足。这里的有利端点不是实测值。新增PXU学区毕业6285人中4813人的记录保留其含线上学校的范围条件；实际主模型仍V53，排名及25城可能冠军不变。
+
 V54完成[名单完整性与分母范围核查](../results/task4_v54_scope_intake/README.md)：新取得的Istanbul12校名单不能证明完整27校总体中当地为零；Shanghai中职学生与教师范围仍未配对；Phoenix校车系统没有公开城市旅时统计。主模型仍为下述V53，重算排名及25城可能冠军均不变。
 
 当前条件入口为[istanbul_coverage_bounds()](../scripts/task4_istanbul_coverage_revision.py)。Istanbul非开放教育普通、职业技术及Imam Hatip高中学生合计751598；教师T=28436+V+H，V∈[0,20156]、H∈[0,9871]，教育效用界[0.3620458724,0.5384843999]。相对原普通高中范围，第10→第15；同一扩大范围相对该项未知则第18→第15。其余249格不变，Singapore仍推荐、Phoenix第24、可能冠军25城，连续α∈[0.05,0.20]推荐证书重新通过。详见[V53对照](../results/task4_v53_istanbul_coverage/README.md)。以下版本说明保留为历史记录。
