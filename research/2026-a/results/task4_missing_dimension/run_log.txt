@@ -1,0 +1,127 @@
+{
+  "scope": "analytic omitted-dimension sensitivity, NOT observed education or youth scores",
+  "baseline_winner": "Copenhagen",
+  "observed_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "first_tie_alpha": 0.05067385817625689,
+  "first_challenger": "Dubai",
+  "unknown_utility_assumptions": "independent city-wise intervals [0,1]; no population probabilities",
+  "selected_alpha_results": [
+    {
+      "alpha": 0.0,
+      "possible_champions": [
+        "Copenhagen"
+      ],
+      "necessary_champions": [
+        "Copenhagen"
+      ]
+    },
+    {
+      "alpha": 0.05,
+      "possible_champions": [
+        "Copenhagen"
+      ],
+      "necessary_champions": [
+        "Copenhagen"
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "possible_champions": [
+        "Copenhagen",
+        "Dubai",
+        "Melbourne"
+      ],
+      "necessary_champions": []
+    },
+    {
+      "alpha": 0.2,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Copenhagen",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Cape Town",
+        "Dubai",
+        "Tokyo",
+        "Singapore",
+        "Melbourne"
+      ],
+      "necessary_champions": []
+    },
+    {
+      "alpha": 0.3,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "necessary_champions": []
+    },
+    {
+      "alpha": 0.4,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "necessary_champions": []
+    }
+  ],
+  "checks": "all 24 analytic roots matched numerical roots; crossing directions, endpoint containment, monotonicity and V0 recovery passed"
+}
+ lower_unknown_utility  upper_unknown_utility challenger  tie_alpha
+                  0.00                   1.00      Dubai   0.050674
+                  0.10                   0.90      Dubai   0.062559
+                  0.25                   0.75      Dubai   0.096594
+                  0.40                   0.60      Dubai   0.212160
