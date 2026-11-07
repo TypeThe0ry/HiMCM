@@ -1,0 +1,48 @@
+{
+  "all_london_secondary_schools": 514,
+  "positive_year12_13_schools": 411,
+  "unknown_pupil_schools": 0,
+  "total_observed_year12_13_pupils": 106046.0,
+  "positive_schools_with_numeric_teacher": 407,
+  "matched_pupils": 105274.0,
+  "missing_teacher_pupils": 772.0,
+  "matched_all_stage_teacher_headcount": 32339.0,
+  "missing_teacher_schools": [
+    {
+      "urn": "150889",
+      "school_name": "London Nautical, City of London Academy",
+      "upper_students": 181,
+      "_merge": "left_only"
+    },
+    {
+      "urn": "135584",
+      "school_name": "Ark Globe Academy",
+      "upper_students": 156,
+      "_merge": "left_only"
+    },
+    {
+      "urn": "134369",
+      "school_name": "Alec Reed Academy",
+      "upper_students": 223,
+      "_merge": "left_only"
+    },
+    {
+      "urn": "137928",
+      "school_name": "Gumley House RC Convent School, FCJ",
+      "upper_students": 212,
+      "_merge": "left_only"
+    }
+  ],
+  "grade_columns": [
+    "part-time female Year group 12",
+    "part-time female Year group 13",
+    "full-time female Year group 12",
+    "full-time female Year group 13",
+    "part-time male Year group 12",
+    "part-time male Year group 13",
+    "full-time male Year group 12",
+    "full-time male Year group 13"
+  ],
+  "main_admitted": false,
+  "limitations": "School teacher total is all stages, not dedicated sixth-form. November2024 versus January2025. Unmatched schools have no upper teacher bound; cannot infer full London PTR. Multiple teacher contracts and headcount summation require population definition."
+}

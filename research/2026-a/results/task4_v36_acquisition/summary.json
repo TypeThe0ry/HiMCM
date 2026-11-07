@@ -1,0 +1,32 @@
+{
+  "new_observations": 0,
+  "baseline": "V34 delhi_bounds; V35 rejected estimates remain unknown",
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "possible_champions": 25,
+  "choice": [
+    "Singapore"
+  ],
+  "phoenix": {
+    "city": "Phoenix",
+    "minimum_measurements": 4,
+    "minimal_bundle_count": 25,
+    "fixed_weight_minimum": 4
+  },
+  "education_travel_excludable_fixed": [
+    "Istanbul"
+  ],
+  "education_travel_excludable_all_preferences": [],
+  "input_bounds_sha256": "8a89a298c3e0f0c41c82fb27c326f0495607aedadf021034be479ef9096a047f",
+  "interpretation": "Favorable lower-endpoint exact outcomes are hypothetical feasibility certificates, not observations or guaranteed acquisition benefits. Education here is the existing pupil-teacher-ratio criterion, not a new graduation-rate criterion.",
+  "rank_changes_vs_v34": 0,
+  "changed_minimum_vs_v31": [
+    {
+      "city": "Delhi",
+      "before": 4,
+      "after": 3
+    }
+  ]
+}
