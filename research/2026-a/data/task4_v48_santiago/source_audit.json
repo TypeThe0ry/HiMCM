@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.dtpm.cl/descargas/Reporte%20Movilidad%202025.pdf",
+  "publisher": "Directorio de Transporte Público Metropolitano (DTPM), Chile",
+  "title": "Reporte de Movilidad 2025",
+  "retrieved_date": "2026-11-07",
+  "file": "mobility_report2025.pdf",
+  "bytes": 2412096,
+  "sha256": "dfe049bbcbf4b319ad5bdb4ff3be237dac5f0a6038693f80bcb393b4f67634d8",
+  "pdf_signature_valid": true,
+  "source_is_new_to_this_repository_audit": true,
+  "survey_year": 2025,
+  "scope": {
+    "geography": "34 communes of Gran Santiago; not Santiago comuna alone",
+    "survey_valid_records": 412,
+    "survey_12_to_20_age_records": 46,
+    "current_high_school_cohort_identified": false,
+    "microdata_acquired": false,
+    "current_high_school_travel_time_distribution_identified": false
+  },
+  "findings": [
+    {
+      "section": "3.1",
+      "finding": "Restricted zone-household-person sampling; random among persons present at home. 412 valid interviews; 76% conducted Tuesday-Friday 13:00–19:00; expansion/correction by socioeconomic level, sex and age."
+    },
+    {
+      "section": "3.2 / Tables 1 and 2",
+      "finding": "Participants over 12 across 34 communes. The 12–20 age bin contains 46 records; this bin cannot isolate ages 14–18 or current secondary students. Media=158 describes achieved educational level, not current school stage. Published age table labels the next bin 40–45; retain as printed, do not silently correct."
+    },
+    {
+      "section": "5",
+      "finding": "Final results fuse EM2025, EOD2012 and TELCO. Study-purpose journeys include all educational levels; cannot substitute for new high-school-specific travel observations."
+    },
+    {
+      "section": "11, printed page 23",
+      "finding": "Report recommends increasing sample to 1200 households and improving interview schedules and short-trip measurement."
+    }
+  ],
+  "admission_decision": "Context evidence only; preserve Santiago missing/high-school uncertainty bounds unchanged. No new high-school point estimate or interval is derived.",
+  "prior_eod2012_questionnaire_status": "Unresolved: no new original questionnaire verified for Estudios/Curso current-versus-completed interpretation. EM2025 attainment table does not resolve distinct EOD2012 variables.",
+  "microdata_search_status": "No released respondent microdata link located in bounded official-site search; this is not a proof that microdata do not exist.",
+  "core_model_changed": false,
+  "publication_date": "March 2026 (cover)"
+}

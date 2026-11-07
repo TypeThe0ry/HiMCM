@@ -1,0 +1,161 @@
+{
+  "source": "Existing OD2023 public research mirror, unchanged raw bytes",
+  "official_byte_identity_verified": false,
+  "main_admitted": false,
+  "raw_rows": 143038,
+  "current_school_condition": "ESTUDA=4; actual current upper-secondary enrolment",
+  "target_age_condition": "IDADE in integer years 14 through 18 inclusive",
+  "geography": "Municipality 36, IBGE 3550308, Sao Paulo residence; not metro-wide",
+  "unknown_age_students": 0,
+  "unknown_weight_students": 0,
+  "first_journey_method": "Unchanged legacy person_bound: first study-purpose journey, confirmed home origin, valid clocks/duration and weekday; unresolved remains [0,1]",
+  "bootstrap": {
+    "method": "Exploratory zone-stratified household bootstrap with fixed final person weights",
+    "seed": 20261107,
+    "replicates": 2000,
+    "paired_draws": true,
+    "design_valid_confidence_interval": false,
+    "all_households_including_zero_eligible": 21917,
+    "zones": 329
+  },
+  "layout_verification": {
+    "age_row": [
+      "48",
+      "IDADE",
+      "Idade (em anos)",
+      "163",
+      "165",
+      "3",
+      "(anos)"
+    ],
+    "current_study_rows": [
+      [
+        "51",
+        "ESTUDA",
+        "Estuda Atualmente?",
+        "168",
+        "168",
+        "1",
+        "1 - Não"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2 - Creche/Pré-Escola"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "3 - 1º Grau /Fundamental"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "4 - 2º Grau/Médio"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "5 – Superior/Universitário"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "6 - Outros"
+      ]
+    ]
+  },
+  "scopes": {
+    "all_age": {
+      "students": 1778,
+      "households_with_students": 1648,
+      "weighted_students": 454740.1902959989,
+      "ages": {
+        "14": 113,
+        "15": 373,
+        "16": 520,
+        "17": 463,
+        "18": 221,
+        "19": 31,
+        "20": 15,
+        "21": 5,
+        "22": 1,
+        "23": 2,
+        "24": 2,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 3,
+        "30": 1,
+        "31": 1,
+        "32": 1,
+        "33": 3,
+        "34": 2,
+        "36": 3,
+        "37": 1,
+        "38": 1,
+        "40": 2,
+        "41": 1,
+        "42": 1,
+        "45": 1,
+        "46": 2,
+        "48": 1,
+        "50": 1,
+        "53": 1,
+        "54": 1,
+        "62": 1,
+        "72": 1
+      },
+      "status_counts": {
+        "observed_direct_journey": 1546,
+        "no_school_journey": 214,
+        "first_school_journey_not_from_home": 18
+      },
+      "utility_lower": 0.45602481263754036,
+      "utility_upper": 0.5939637028094649,
+      "sampling_lower": 0.4370715213136484,
+      "sampling_upper": 0.6114325152264785
+    },
+    "age14_18": {
+      "students": 1690,
+      "households_with_students": 1577,
+      "weighted_students": 428006.0216419989,
+      "ages": {
+        "14": 113,
+        "15": 373,
+        "16": 520,
+        "17": 463,
+        "18": 221
+      },
+      "status_counts": {
+        "observed_direct_journey": 1489,
+        "no_school_journey": 186,
+        "first_school_journey_not_from_home": 15
+      },
+      "utility_lower": 0.4608835464984256,
+      "utility_upper": 0.5882776732955644,
+      "sampling_lower": 0.4417949654221687,
+      "sampling_upper": 0.6071350869515446
+    }
+  }
+}

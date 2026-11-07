@@ -1,6 +1,8 @@
-# 当前模型：V47 高中覆盖与教师分配区间（2026-11-07）
+# 当前模型：V48 实际高中年龄对齐（2026-11-07）
 
-当前条件入口为[tokyo_coverage_bounds()](../scripts/task4_tokyo_coverage_revision.py)：在V46上纳入Tokyo六年制中等教育学校高中部3435名学生，学生总数306903；全校555名本务教师的高中部归属未知，保留H∈[0,555]。教育效用为15(19446+H)/(306903+15(19446+H))∈[0.4872927014,0.4943254278]。Tokyo仍第2、Singapore第1、Phoenix第24，可能冠军25城；其他249格不变。见[V47覆盖及范围对照](../results/task4_v47_tokyo_coverage/README.md)。通信制等其他课程未全部纳入，跨城范围条件保留。全城教育与通学完美补数证书在V47下仍为固定权重至少20城、连续偏好25城必然保留。
+当前条件入口为[saopaulo_age_bounds()](../scripts/task4_saopaulo_age_revision.py)：在V47上将São Paulo从全年龄高中生调整为实际14—18岁当前高中在读者。原始年龄筛选得到1690人，1489人有核验通学、201人未知；同一配对家庭重抽样得到通学包络[0.4417949654,0.6071350870]。São Paulo仍第7，Singapore第1、Tokyo第2、Phoenix第24，可能冠军25城；其余249格不变。镜像来源与探索性抽样条件保留，不称设计有效置信区间。详见[V48对照](../results/task4_v48_saopaulo_age/README.md)。
+
+V47历史条件入口为[tokyo_coverage_bounds()](../scripts/task4_tokyo_coverage_revision.py)：在V46上纳入Tokyo六年制中等教育学校高中部3435名学生，学生总数306903；全校555名本务教师的高中部归属未知，保留H∈[0,555]。教育效用为15(19446+H)/(306903+15(19446+H))∈[0.4872927014,0.4943254278]。Tokyo仍第2、Singapore第1、Phoenix第24，可能冠军25城；其他249格不变。见[V47覆盖及范围对照](../results/task4_v47_tokyo_coverage/README.md)。通信制等其他课程未全部纳入，跨城范围条件保留。全城教育与通学完美补数证书在V47下仍为固定权重至少20城、连续偏好25城必然保留。
 
 V46历史条件入口为[tokyo_bounds()](../scripts/task4_tokyo_official_revision.py)：Tokyo高中师资更新为2025年303468名学生/19446名本务教师；143所获认可大学总部与同日人口形成高教资源效用下界0.500804807，上界仍1。接受总部定位规则时，Tokyo第3→第2，Singapore仍第1，Phoenix第24，可能冠军25城。原有真实高中生通学和缺失区间保留，其他248格不变。[V46对照](../results/task4_v46_tokyo/README.md)分开报告年份、资源及撤回情景，继续保留跨城范围条件。变量代码research_he_density沿用历史名称，指标不限定研究型大学，也不测科研质量。
 
@@ -41,7 +43,7 @@ $$\underline T=\min_{z_r\in\{0,1\}}\frac{A+\sum_r z_rv_ra_r}{N+\sum_r z_rv_r},\q
 $$SE(\theta)=\sqrt{\frac{9}{10}\sum_{r=1}^{10}(\theta_r-\theta)^2},\qquad
 [\max(0,\underline T-t_{9,.975}SE(\underline T)),\min(1,\overline T+t_{9,.975}SE(\overline T))].$$
 
-Sao Paulo 保留全年龄当前高中在读与镜像来源条件，Singapore 保留阶段混合条件。NYC 和 Sao Paulo 的家庭重抽样为探索性；Melbourne 为近似端点推断。城市年份、地域和学段不统一，未构造全城市联合置信区域；V23 与 V26 输出均标记 `main_admitted=false`。具体来源与审计见 [V23 报告](../results/task4_v23_roster_coverage/README.md) 和 [V26 报告](../results/task4_v26_direct_travel_scale/README.md)。
+Sao Paulo在V48使用实际14—18岁当前高中在读，保留镜像来源及探索性抽样条件，Singapore 保留阶段混合条件。NYC 和 Sao Paulo 的家庭重抽样为探索性；Melbourne 为近似端点推断。城市年份、地域和学段不统一，未构造全城市联合置信区域；V23 与 V26 输出均标记 `main_admitted=false`。具体来源与审计见 [V23 报告](../results/task4_v23_roster_coverage/README.md) 和 [V26 报告](../results/task4_v26_direct_travel_scale/README.md)。
 
 ## 评分与决策
 
