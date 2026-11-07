@@ -1,0 +1,6 @@
+# Vector exports are generated assets; retain bytes and avoid enormous path diffs.
+*.svg -diff linguist-generated=true
+*.pdf binary
+*.png binary
+*.jpg binary
+*.gz binary
