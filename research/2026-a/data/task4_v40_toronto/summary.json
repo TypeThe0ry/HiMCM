@@ -1,0 +1,48 @@
+{
+  "city_filter": "Municipality == Toronto, City of AND School Level == Secondary",
+  "schools": 156,
+  "by_board": {
+    "CS Viamonde": 4,
+    "CS catholique MonAvenir": 3,
+    "Independent Learning Centre/TVOntario": 1,
+    "Toronto CDSB": 38,
+    "Toronto DSB": 110
+  },
+  "grade_ranges": {
+    "9-12": 156
+  },
+  "achievement": {
+    "Percentage of Grade 9 Students Achieving the Provincial Standard in Mathematics": {
+      "reported_school_count": 108,
+      "missing_or_suppressed": {
+        "NA": 38,
+        "N/D": 7,
+        "N/R": 2
+      },
+      "school_equal_weight_median_percent": 55.5,
+      "student_weighted_city_rate": null,
+      "reason": "School grade/cohort test denominators not published in this table; full school enrollment is not a valid test denominator."
+    },
+    "Percentage of Students That Passed the Grade 10 OSSLT on Their First Attempt": {
+      "reported_school_count": 109,
+      "missing_or_suppressed": {
+        "N/R": 14,
+        "NA": 23,
+        "N/D": 9
+      },
+      "school_equal_weight_median_percent": 84.0,
+      "student_weighted_city_rate": null,
+      "reason": "School grade/cohort test denominators not published in this table; full school enrollment is not a valid test denominator."
+    }
+  },
+  "four_district_boards_only_school_count": 155,
+  "other_city_address_records": [
+    {
+      "board": "Independent Learning Centre/TVOntario",
+      "school": "TVO/Independent Learning Centre",
+      "school_number": "992038"
+    }
+  ],
+  "achievement_scope": "Four district boards only; excludes Independent Learning Centre/TVOntario",
+  "decision": "secondary_school_achievement_evidence_and_municipal_roster; no city PTR or pupil-weighted quality admission"
+}
