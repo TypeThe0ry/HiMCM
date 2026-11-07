@@ -1,0 +1,41 @@
+{
+  "cohort": 2024,
+  "report_fiscal_year": 2025,
+  "groups": [
+    {
+      "group": "All",
+      "school_sum": 6287,
+      "district_cohort": 6285,
+      "difference": 2,
+      "contributing_entities": 19
+    },
+    {
+      "group": "Female",
+      "school_sum": 3118,
+      "district_cohort": 3117,
+      "difference": 1,
+      "contributing_entities": 19
+    },
+    {
+      "group": "Male",
+      "school_sum": 3169,
+      "district_cohort": 3168,
+      "difference": 1,
+      "contributing_entities": 19
+    }
+  ],
+  "omitted": [
+    {
+      "entity_id": 6250,
+      "reason": "no All row; not zero"
+    },
+    {
+      "entity_id": 1002004,
+      "reason": "no All row; not zero"
+    }
+  ],
+  "within_entity_sex_sum_checks_passed": true,
+  "cause_identified": false,
+  "duplicate_person_upper_bound_identified": false,
+  "main_admitted": false
+}

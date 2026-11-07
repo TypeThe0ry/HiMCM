@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 高中覆盖与师资 V58 | [Jakarta补入职业及宗教高中；校长与教师归属保留区间](research/2026-a/results/task4_v58_jakarta_staffing/README.md) |
 | 人数核对 V57 | [同届学校合计超过学区2人；拦住未对账的排名提升](research/2026-a/results/task4_v57_school_union/README.md) |
 | 队列对账 V56 | [PXU名册差异已解释；历史排除人数保留未知](research/2026-a/results/task4_v56_pxu_exclusion/README.md) |
 | 补数优先级 V55 | [Phoenix实际学区毕业结果；本城测量改变推荐的最少组合](research/2026-a/results/task4_v55_recommendation_acquisition/README.md) |

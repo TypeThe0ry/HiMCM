@@ -1,4 +1,6 @@
-# 当前模型：V53 高中项目覆盖与教师分配（2026-11-07）
+# 当前模型：V58 高中项目覆盖与教师角色（2026-11-07）
+
+当前条件入口为[jakarta_coverage_bounds()](../scripts/task4_jakarta_staffing_revision.py)。V58在V53基础上仅修订Jakarta教育格：SMA、SMK和MA同学年公布学生N=405311；主归属教学人员T=22524+H+M，H∈[0,978]为未识别校长教学角色，M∈[0,2008]为MA额外不同教师。教育效用15T/(N+15T)∈[0.4546194617,0.4856204812]。Induk不等于FTE；noninduk任教关系按主归属目标排除，而非断言全部已在本市重复。SMA/SMK原始PDF已核验，MA仍为官方索引转录，11月/12月截面不是同日普查。其余249格和真实学生通学界保持，全部名次不变：Jakarta第18、Singapore第1、Phoenix第24；可能冠军25城，连续α∈[0.05,0.20]推荐证书通过。[本轮完整对照](../results/task4_v58_jakarta_staffing/README.md)。以下各轮说明为历史记录。
 
 V57完成[同届学校与学区人数核对](../results/task4_v57_school_union/README.md)：重取22份毕业响应后，已知实体学校5802加Digital485仍为6287，超过学区6285两人。新增必要一致性检查拦住未对账的学校集合求和；候选界虽可让毕业扩展中Phoenix第24→23，实际城市界、十指标排名及25城可能冠军均保持原样。净差2不能当作重复人数上界。
 
@@ -8,7 +10,7 @@ V55新增[推荐相关采集诊断](../results/task4_v55_recommendation_acquisit
 
 V54完成[名单完整性与分母范围核查](../results/task4_v54_scope_intake/README.md)：新取得的Istanbul12校名单不能证明完整27校总体中当地为零；Shanghai中职学生与教师范围仍未配对；Phoenix校车系统没有公开城市旅时统计。主模型仍为下述V53，重算排名及25城可能冠军均不变。
 
-当前条件入口为[istanbul_coverage_bounds()](../scripts/task4_istanbul_coverage_revision.py)。Istanbul非开放教育普通、职业技术及Imam Hatip高中学生合计751598；教师T=28436+V+H，V∈[0,20156]、H∈[0,9871]，教育效用界[0.3620458724,0.5384843999]。相对原普通高中范围，第10→第15；同一扩大范围相对该项未知则第18→第15。其余249格不变，Singapore仍推荐、Phoenix第24、可能冠军25城，连续α∈[0.05,0.20]推荐证书重新通过。详见[V53对照](../results/task4_v53_istanbul_coverage/README.md)。以下版本说明保留为历史记录。
+V53历史条件入口为[istanbul_coverage_bounds()](../scripts/task4_istanbul_coverage_revision.py)。Istanbul非开放教育普通、职业技术及Imam Hatip高中学生合计751598；教师T=28436+V+H，V∈[0,20156]、H∈[0,9871]，教育效用界[0.3620458724,0.5384843999]。相对原普通高中范围，第10→第15；同一扩大范围相对该项未知则第18→第15。其余249格不变，Singapore仍推荐、Phoenix第24、可能冠军25城，连续α∈[0.05,0.20]推荐证书重新通过。详见[V53对照](../results/task4_v53_istanbul_coverage/README.md)。以下版本说明保留为历史记录。
 
 V52新增[含特许学校的NYC毕业结果诊断](../results/task4_v52_nyc_county_outcomes/README.md)：五县毕业届78918人、63878名文凭毕业生、56名未分类残差。独立毕业维度β=0.10时，同目标结果未知→纳入官方计数使NYC第21→第4，可能冠军仍25城；旧不含特许学校表在此情景亦第4。该地方文凭与教育问责范围保持条件分析，十指标主模型及NYC第21不变。Phoenix新增三校11年级成绩不替代教师人数比。
 
