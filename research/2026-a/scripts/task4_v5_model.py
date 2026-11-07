@@ -16,6 +16,22 @@ SPEC = [('homicide_rate',False,2,True),('pm25',False,15,True),
 CITIES = pd.read_csv(ROOT/'data/city_candidates_team_25.csv').city.tolist()
 NAMES = [s[0] for s in SPEC]
 
+V5_STATUSES = {
+ 'core': {'observed', 'conditional_catalogue_lower_bound'},
+ 'air': {'conditional_monitoring_comparability'},
+ 'resources': {'observed', 'verified_inventory_lower_bound'},
+ 'education': {'observed_upper_secondary_scope_conditional',
+               'observed_preuniversity_subset_scope_conditional',
+               'observed_upper_secondary_manual_source_scope_conditional'},
+}
+
+def admitted_v5(directory, row):
+    """Only reviewed statuses enter the legacy baseline; finite is not evidence."""
+    if row.get('status') not in V5_STATUSES.get(directory, set()):return False
+    if row.get('indicator')=='upper_secondary_ptr':
+        return directory=='education' and row.get('unit')=='students_per_teacher_headcount'
+    return True
+
 def weights(aux=.1):
     return np.array([(1-aux)/8 if s[3] else aux/2 for s in SPEC])
 
@@ -33,7 +49,7 @@ def build(after=True, scale=1, strict='conditional'):
             if name not in NAMES or city not in CITIES: continue
             if not after and name!='price_income_ratio': continue
             status=str(r['status'])
-            if status.startswith(('missing','scope_mismatch')) or not np.isfinite(float(r['value'])): continue
+            if not admitted_v5(directory,r) or not np.isfinite(float(r['value'])): continue
             if strict=='no_homicide' and name=='homicide_rate': continue
             if strict in ('no_air','strict_scope') and name=='pm25': continue
             if strict in ('no_education','strict_scope') and name=='upper_secondary_ptr': continue

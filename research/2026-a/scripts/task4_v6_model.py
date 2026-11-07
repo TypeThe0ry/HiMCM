@@ -12,15 +12,20 @@ from task4_v5_model import ROOT,CITIES,NAMES,SPEC,build,score,weights,summarize
 from task4_champion_acquisition import certificates,elimination_threshold
 OUT=ROOT/'results/task4_v6'
 
+HEADCOUNT_ADMISSIONS = {
+ 'observed_general_upper_secondary_scope_conditional': 'students_per_teacher_headcount',
+ 'observed_general_upper_secondary_manual_source_scope_conditional': 'students_per_teacher_including_headmaster_headcount',
+}
+
 
 def admit_observations(lo,hi,frame,scale=1):
     lo=lo.copy();hi=hi.copy();audit=[]
     for row in frame.to_dict('records'):
         r=dict(row);status=str(r.get('status',''))
-        admissible=(status.startswith('observed_') and 'headcount' in str(r.get('unit',''))
+        admissible=(status in HEADCOUNT_ADMISSIONS and r.get('unit')==HEADCOUNT_ADMISSIONS[status]
                     and r.get('indicator')=='upper_secondary_ptr')
         if not admissible:
-            audit.append(dict(r,admitted=False,reason='Not an explicitly observed upper-secondary headcount ratio'))
+            audit.append(dict(r,admitted=False,reason='Status and exact headcount unit have not been admitted together'))
             continue
         i=CITIES.index(r['city']);j=NAMES.index(r['indicator']);x=float(r['value'])
         if not np.isfinite(x) or x<0:raise ValueError('Invalid measurement')
