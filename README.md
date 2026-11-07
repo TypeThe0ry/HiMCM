@@ -18,9 +18,10 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 最新高中通学修订 V30 | [Cape Town：真实学生、抽样误差与排名13→5](research/2026-a/results/task4_v30_cape_town/README.md) |
 | 最新教育年份对照 | [Jakarta 2025/26：分数更新与来源撤回检验](research/2026-a/results/task4_v29_education_year/README.md) |
 | 当前数学公式与补数方向 | [当前模型](research/2026-a/design/task4_current_model.md) · [Phoenix两项补数为何不足](research/2026-a/results/task4_v27_current_acquisition/README.md) |
-| 当前条件模型 V23 | [覆盖修订与排名](research/2026-a/results/task4_v23_roster_coverage/README.md) · [算法入口 current_bounds](research/2026-a/scripts/task4_roster_coverage_comparison.py) |
+| 历史条件基准 V23 | [覆盖修订与排名](research/2026-a/results/task4_v23_roster_coverage/README.md) · [算法入口 current_bounds](research/2026-a/scripts/task4_roster_coverage_comparison.py) |
 | 当前10项指标定义 | [指标规范](research/2026-a/design/task4_v5_indicator_spec.md) |
 | V6历史模型与结果 | [V6报告](research/2026-a/results/task4_v6/REPORT.md) · [结果表](research/2026-a/results/task4_v6/after_v6.csv) · [独立复核](research/2026-a/results/task4_v6_review.md) |
 | 累计证据基准 V16 | [报告](research/2026-a/results/task4_v16_combined/README.md) · [排名对照](research/2026-a/results/task4_v16_combined/ranks.csv) · [算法](research/2026-a/scripts/task4_combined_evidence.py) |
@@ -126,7 +127,7 @@ V6沿用8项主指标各0.1125、公交和泳池两项辅助各0.05的规范权�
 
 ## 使用与复现
 
-当前条件模型可运行 `python3 research/2026-a/scripts/task4_roster_coverage_comparison.py`。历史累计模型与补数策略可在本仓库根目录运行：
+当前条件模型可运行 `python3 research/2026-a/scripts/task4_cape_town_revision.py`。历史累计模型与补数策略可在本仓库根目录运行：
 
 ```sh
 python3 research/2026-a/scripts/task4_combined_evidence.py

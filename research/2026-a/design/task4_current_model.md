@@ -70,3 +70,13 @@ V23 默认十指标情景对应输出筛选 `model=v16_ten_criteria`、`nyc_age_
 ## V29：最新教育年份替换情景
 
 [同口径年份更新](../results/task4_v29_education_year/README.md)将Jakarta的SMA师生比替换为2025/26学年的186461/11983，教育效用为0.4908302977。入口为[updated_bounds()](../scripts/task4_education_year_update.py)，其余249个单元及上述公式保持。Jakarta仍第17，Singapore仍为推荐，可能冠军25城。旧基准函数保留，两个年份不取交集；来源仍是明确标记的官方索引表转录，未增加城市指标覆盖，也未据此改动论文。
+
+## V30：真实高中通学及抽样设计修订
+
+最新条件入口为 [cape_bounds()](../scripts/task4_cape_town_revision.py)，在V29上只更新Cape Town通学一格。官方GHS2023实际包含159名14—18岁、当前10—12年级且非远程学生。保留时间分箱，并用完整217个PSU、14层计算比率端点的Taylor标准误，零目标学生的PSU也参与方差计算。端点采用Bonferroni调整后的近似联合95%包络：
+
+$$[\max(0,\underline T-t_{203,.9875}SE(\underline T)),\min(1,\overline T+t_{203,.9875}SE(\overline T))] = [0.4067375294,0.7977951321].$$
+
+方差公式与抽样范围见[数据说明](../data/task4_v30_cape_town/README.md)。权重、评分和决策公式不变，其余249格不变。Cape Town得分界由[33.019656,73.255944]变为[35.638820,72.191687]，最坏遗憾决策名次13→5；9城名次变化，Kendall tau=0.946667。Singapore仍为推荐，Phoenix仍第24，可能冠军仍25城。全年龄当前高中生189人的敏感性情景同样得到Cape Town第5。
+
+这是2023年调查覆盖总体下、固定校准权重的近似推断，不覆盖学生宿舍等集体住户，也不是全城市联合置信保证；`main_admitted=false`保留。[完整前后对照](../results/task4_v30_cape_town/README.md)记录来源哈希和复现命令。证据改善了通学界与决策信息，尚未缩小可能冠军集合。
