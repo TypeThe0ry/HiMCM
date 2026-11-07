@@ -1,0 +1,87 @@
+{
+  "access_date": "2026-11-07",
+  "sources": [
+    {
+      "file": "worldbank_metadata.json",
+      "url": "https://microdata.worldbank.org/metadata/export/4553/json",
+      "status": 200,
+      "bytes": 1350848,
+      "sha256": "5d7154c77bbbbd38b1219ddd57c3708388676a26416e83bfd3dd5407fb44a1e3",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "file": "worldbank_person_dictionary.html",
+      "url": "https://microdata.worldbank.org/catalog/4553/data-dictionary/F3?file_name=nhts-2020-person",
+      "status": 200,
+      "bytes": 413330,
+      "sha256": "a9d07879872e2211d34fda2d36dd5baaf939457f3bd67931de73ab860f4132e1",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "file": "worldbank_geog_dictionary.html",
+      "url": "https://microdata.worldbank.org/catalog/4553/data-dictionary/F1?file_name=nhts-2020-geog",
+      "status": 200,
+      "bytes": 47114,
+      "sha256": "31005d4c1448b9fe7feaa33e668737a4f50aafa5d9713012fa90fa9e3d299bfa",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "file": "datafirst_access.html",
+      "url": "https://www.datafirst.uct.ac.za/Dataportal/index.php/catalog/886/get-microdata",
+      "status": 200,
+      "bytes": 24689,
+      "sha256": "f90fc424527d9c6a423f9f615020ee5d0b2f8848783808af261754396ed43b10",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "file": "statssa_metadata_challenge.html",
+      "url": "https://isibaloweb.statssa.gov.za/metadata/NHTS/2020/National%20Household%20Travel%20Survey%202020%20metadata.pdf",
+      "status": 200,
+      "bytes": 212,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "content_type": "text/html",
+      "validated": "HTML challenge; not PDF"
+    },
+    {
+      "file": "ghs2023_metadata.json",
+      "url": "https://microdata.worldbank.org/metadata/export/7839/json",
+      "status": 200,
+      "bytes": 1351497,
+      "sha256": "685a198f99fbfe421040ab4eef354ad4ecb7513390339b29c6749941b023b3d0",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "file": "ghs2023_landing.html",
+      "url": "https://isibaloweb.statssa.gov.za/pages/surveys/pss/ghs/2023/ghs2023.php",
+      "status": 200,
+      "bytes": 1163,
+      "sha256": "217ae5ade8397767b546bae76fd39e84be280ff16ba552dd514bd35027e2bfa9",
+      "content_type": "text/html",
+      "validated": "HTML Incapsula rejection; not dataset landing content"
+    },
+    {
+      "file": "nhts2020_http_landing.html",
+      "url": "http://isibaloweb.statssa.gov.za/pages/surveys/pss/nhts/2020/nhts2020.php",
+      "status": 200,
+      "bytes": 1157,
+      "sha256": "d98e3f177b5f0efa92b6f7bfecbba0ffcc61fb634dbcac79f2e33945e3c3d1ba",
+      "content_type": "text/html",
+      "validated": "HTML Incapsula rejection; not dataset landing content"
+    },
+    {
+      "file": "nhts2020_landing.html",
+      "url": "https://isibaloweb.statssa.gov.za/pages/surveys/pss/nhts/2020/nhts2020.php",
+      "bytes": 212,
+      "validated": "HTML challenge; not landing page",
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
+    },
+    {
+      "file": "ghs_datafirst_access.html",
+      "url": "https://www.datafirst.uct.ac.za/dataportal/index.php/catalog/961/get-microdata",
+      "status": 200,
+      "bytes": 23081,
+      "sha256": "16706efa02507fb58e1e1965a4052b7c92c1b5cda2402b677b5d4cc433ad8afa",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  ]
+}

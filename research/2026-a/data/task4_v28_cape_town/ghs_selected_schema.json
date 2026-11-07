@@ -1,0 +1,2716 @@
+[
+  {
+    "file_id": "F3",
+    "vid": "V308",
+    "name": "psu",
+    "var_intrvl": "contin",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "11",
+    "loc_rec_seg_no": null,
+    "labl": "Primary sampling unit",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      },
+      {
+        "value": "16010009000",
+        "type": "min",
+        "wgtd": null
+      },
+      {
+        "value": "16810112000",
+        "type": "max",
+        "wgtd": null
+      },
+      {
+        "value": "16494018814.752",
+        "type": "mean",
+        "wgtd": null
+      },
+      {
+        "value": "213694733.704",
+        "type": "stdev",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "16010009000",
+      "max": "16810112000",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V312",
+    "name": "age",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "8",
+    "loc_rec_seg_no": null,
+    "labl": "Age",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "0",
+        "labl": "0. 0",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "12",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "1",
+        "labl": "1. 1",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "17",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "2",
+        "labl": "2. 2",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "20",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "3",
+        "labl": "3. 3",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "17",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "4",
+        "labl": "4. 4",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "22",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "5",
+        "labl": "5. 5",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "6",
+        "labl": "6. 6",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "7",
+        "labl": "7. 7",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "14",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "8",
+        "labl": "8. 8",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "9",
+        "labl": "9. 9",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "16",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10",
+        "labl": "10. 10",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "15",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "11",
+        "labl": "11. 11",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "14",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "12",
+        "labl": "12. 12",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "18",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "13",
+        "labl": "13. 13",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "18",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "14",
+        "labl": "14. 14",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "15",
+        "labl": "15. 15",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "13",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "16",
+        "labl": "16. 16",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "14",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "17",
+        "labl": "17. 17",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "19",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "18",
+        "labl": "18. 18",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "14",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "19",
+        "labl": "19. 19",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "12",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "20",
+        "labl": "20. 20",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "12",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "21",
+        "labl": "21. 21",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "13",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "22",
+        "labl": "22. 22",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "18",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "23",
+        "labl": "23. 23",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "16",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "24",
+        "labl": "24. 24",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "25",
+        "labl": "25. 25",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "26",
+        "labl": "26. 26",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "15",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "27",
+        "labl": "27. 27",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "22",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "28",
+        "labl": "28. 28",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "17",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "29",
+        "labl": "29. 29",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "31",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "30",
+        "labl": "30. 30",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "22",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "31",
+        "labl": "31. 31",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "32",
+        "labl": "32. 32",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "22",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "33",
+        "labl": "33. 33",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "27",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "34",
+        "labl": "34. 34",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "18",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "35",
+        "labl": "35. 35",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "8",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "36",
+        "labl": "36. 36",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "18",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "37",
+        "labl": "37. 37",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "20",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "38",
+        "labl": "38. 38",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "16",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "39",
+        "labl": "39. 39",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "9",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "40",
+        "labl": "40. 40",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "21",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "41",
+        "labl": "41. 41",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "6",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "42",
+        "labl": "42. 42",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "13",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "43",
+        "labl": "43. 43",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "21",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "44",
+        "labl": "44. 44",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "10",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "45",
+        "labl": "45. 45",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "12",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "46",
+        "labl": "46. 46",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "12",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "47",
+        "labl": "47. 47",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "15",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "48",
+        "labl": "48. 48",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "49",
+        "labl": "49. 49",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "9",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "50",
+        "labl": "50. 50",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "10",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "51",
+        "labl": "51. 51",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "18",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "52",
+        "labl": "52. 52",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "8",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "53",
+        "labl": "53. 53",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "15",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "54",
+        "labl": "54. 54",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "16",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "55",
+        "labl": "55. 55",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "16",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "56",
+        "labl": "56. 56",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "7",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "57",
+        "labl": "57. 57",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "9",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "58",
+        "labl": "58. 58",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "12",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "59",
+        "labl": "59. 59",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "6",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "60",
+        "labl": "60. 60",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "16",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "61",
+        "labl": "61. 61",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "62",
+        "labl": "62. 62",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "63",
+        "labl": "63. 63",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "5",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "64",
+        "labl": "64. 64",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "65",
+        "labl": "65. 65",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "5",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "66",
+        "labl": "66. 66",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "9",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "67",
+        "labl": "67. 67",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "6",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "68",
+        "labl": "68. 68",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "10",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "69",
+        "labl": "69. 69",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "6",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "70",
+        "labl": "70. 70",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "7",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "71",
+        "labl": "71. 71",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "7",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "72",
+        "labl": "72. 72",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "4",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "73",
+        "labl": "73. 73",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "4",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "74",
+        "labl": "74. 74",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "2",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "75",
+        "labl": "75. 75",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "5",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "76",
+        "labl": "76. 76",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "77",
+        "labl": "77. 77",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "7",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "78",
+        "labl": "78. 78",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "4",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "79",
+        "labl": "79. 79",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "3",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "80",
+        "labl": "80. 80",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "1",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "81",
+        "labl": "81. 81",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "82",
+        "labl": "82. 82",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "3",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "83",
+        "labl": "83. 83",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "84",
+        "labl": "84. 84",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "85",
+        "labl": "85. 85",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "1",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "86",
+        "labl": "86. 86",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "87",
+        "labl": "87. 87",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "88",
+        "labl": "88. 88",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "1",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "89",
+        "labl": "89. 89",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "90",
+        "labl": "90. 90",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "91",
+        "labl": "91. 91",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "92",
+        "labl": "92. 92",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "93",
+        "labl": "93. 93",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "94",
+        "labl": "94. 94",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "95",
+        "labl": "95. 95",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "96",
+        "labl": "96. 96",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "97",
+        "labl": "97. 97",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "98",
+        "labl": "98. 98",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "99",
+        "labl": "99. 99",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "100",
+        "labl": "100. 100",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "101",
+        "labl": "101. 101",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "104",
+        "labl": "104. 104",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "105",
+        "labl": "105. 105",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "110",
+        "labl": "110. 110",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "0",
+      "max": "110",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V337",
+    "name": "edu_attend",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "17",
+    "loc_rec_seg_no": null,
+    "labl": "Currently attending educational institution",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "1. Yes",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "198",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "2",
+        "labl": "2. No",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "714",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "3",
+        "labl": "3. Do not know",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "8",
+        "labl": "8. Not applicable",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "88",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "9",
+        "labl": "9. Unspecified",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "9",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V339",
+    "name": "edu_edui",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "109",
+    "loc_rec_seg_no": null,
+    "labl": "Educational institution",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "1. Pre-school (including ECD centre, e.g. day care, cr\u00e8che, playground, nursery school or pre-primary school)",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "2",
+        "labl": "2. School (including Grade R to Grade 12 learners who attended a formal school)",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "167",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "3",
+        "labl": "3. Adult Education and Training Learning Centre (ABET/AET Centre)",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "4",
+        "labl": "4. Literacy classes (e.g. Kha Ri Gude)",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "5",
+        "labl": "5. Higher education institution (university/university of technology)",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "20",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "6",
+        "labl": "6. Technical and Vocational Education and Training (TVET) college",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "5",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "7",
+        "labl": "7. Other college",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "2",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "8",
+        "labl": "8. Home-based education/home schooling",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "3",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "9",
+        "labl": "9. Other educational institution",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "1",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "88",
+        "labl": "88. Not applicable",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "802",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "88",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V341",
+    "name": "edu_corr",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "17",
+    "loc_rec_seg_no": null,
+    "labl": "Distance learning classes",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "1. Yes",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "9",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "2",
+        "labl": "2. No",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "186",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "3",
+        "labl": "3. Do not know",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "8",
+        "labl": "8. Not applicable",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "805",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "9",
+        "labl": "9. Unspecified",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "9",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V343",
+    "name": "edu_time",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "23",
+    "loc_rec_seg_no": null,
+    "labl": "Time taken to school",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "1. Less than 15 minutes",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "89",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "2",
+        "labl": "2. 15-30 minutes",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "73",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "3",
+        "labl": "3. 31-60 minutes",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "22",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "4",
+        "labl": "4. 61-90 minutes",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "1",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "5",
+        "labl": "5. More than 90 minutes",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "1",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "6",
+        "labl": "6. Do not know",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "8",
+        "labl": "8. Not applicable",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "814",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "9",
+        "labl": "9. Unspecified",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "9",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V347",
+    "name": "edu_grde",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "28",
+    "loc_rec_seg_no": null,
+    "labl": "Current grade",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "0",
+        "labl": "0. Grade R/0",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "1",
+        "labl": "1. Grade 1",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "8",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "2",
+        "labl": "2. Grade 2",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "11",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "3",
+        "labl": "3. Grade 3",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "17",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "4",
+        "labl": "4. Grade 4",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "10",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "5",
+        "labl": "5. Grade 5",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "24",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "6",
+        "labl": "6. Grade 6",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "12",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "7",
+        "labl": "7. Grade 7",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "17",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "8",
+        "labl": "8. Grade 8",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "16",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "9",
+        "labl": "9. Grade 9",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "10",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10",
+        "labl": "10. Grade 10",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "14",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "11",
+        "labl": "11. Grade 11",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "15",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "12",
+        "labl": "12. Grade 12/Matric",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "12",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "13",
+        "labl": "13. NC(V) Level 2 (N1/NTC 1)",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "1",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "15",
+        "labl": "15. NC(V) Level 4 (N1/NTC 3)",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "88",
+        "labl": "88. Not applicable",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "833",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "0",
+      "max": "88",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V410",
+    "name": "metro_code",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "29",
+    "loc_rec_seg_no": null,
+    "labl": "Metro Code",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "1. WC - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "1000",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "2",
+        "labl": "2. WC - City of Cape Town",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "3",
+        "labl": "3. EC - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "4",
+        "labl": "4. EC - Buffalo City",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "5",
+        "labl": "5. EC - Nelson Mandela Bay",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "6",
+        "labl": "6. NC - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "7",
+        "labl": "7. FS - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "8",
+        "labl": "8. FS - Mangaung",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "9",
+        "labl": "9. KZN - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10",
+        "labl": "10. KZN - eThekwini",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "11",
+        "labl": "11. NW - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "12",
+        "labl": "12. GP - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "13",
+        "labl": "13. GP - Ekurhuleni",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "14",
+        "labl": "14. GP - City of Johannesburg",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "15",
+        "labl": "15. GP - City of Tshwane",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "16",
+        "labl": "16. MP - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "17",
+        "labl": "17. LP - Non-metro",
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "0",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "17",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V412",
+    "name": "stratum",
+    "var_intrvl": "discrete",
+    "var_dcml": null,
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "5",
+    "loc_rec_seg_no": null,
+    "labl": "Stratum",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "10101",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "46",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10102",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "138",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10103",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "69",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10104",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "47",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10105",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "102",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10106",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "44",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10107",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "31",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10108",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "83",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10109",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "115",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10110",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "48",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10111",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "154",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      },
+      {
+        "value": "10301",
+        "labl": null,
+        "is_missing": null,
+        "stats": [
+          {
+            "value": "123",
+            "type": "freq",
+            "wgtd": null
+          }
+        ]
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "character",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": null,
+      "max": null,
+      "units": null
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V417",
+    "name": "person_wgt",
+    "var_intrvl": "contin",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": null,
+    "loc_end_pos": null,
+    "loc_width": "7",
+    "loc_rec_seg_no": null,
+    "labl": "Person weight",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "1000",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      },
+      {
+        "value": "275.91",
+        "type": "min",
+        "wgtd": null
+      },
+      {
+        "value": "2707.615",
+        "type": "max",
+        "wgtd": null
+      },
+      {
+        "value": "1205.518",
+        "type": "mean",
+        "wgtd": null
+      },
+      {
+        "value": "423.575",
+        "type": "stdev",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "275.909577293",
+      "max": "2707.61542291",
+      "units": "REAL"
+    },
+    "fid": "F3"
+  }
+]

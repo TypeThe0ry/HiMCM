@@ -1,0 +1,33 @@
+[
+  {
+    "name": "ibb_household_report",
+    "url": "https://data.ibb.gov.tr/tr/dataset/6ecfaa5b-bd1b-4e98-a27e-94ddac1ecd2b/resource/1fa02d91-f794-4560-8754-00b635c8efe1/download/istanbul-ulam-ana-plan-hanehalk-aratrmas.pdf",
+    "error": "HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /tr/dataset/6ecfaa5b-bd1b-4e98-a27e-94ddac1ecd2b/resource/1fa02d91-f794-4560-8754-00b635c8efe1/download/istanbul-ulam-ana-plan-hanehalk-aratrmas.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fbc78238790>, 'Connection to data.ibb.gov.tr timed out. (connect timeout=35)'))"
+  },
+  {
+    "name": "ibb_metadata",
+    "url": "https://data.ibb.gov.tr/api/3/action/package_show?id=istanbul-ulasim-ana-plani-hanehalki-arastirmasi",
+    "error": "HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/package_show?id=istanbul-ulasim-ana-plani-hanehalki-arastirmasi (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fbc78238b80>, 'Connection to data.ibb.gov.tr timed out. (connect timeout=35)'))"
+  },
+  {
+    "name": "sump_report",
+    "url": "https://skup.istanbul/wp-content/uploads/2024/11/SKUp_Asama-I_Rapor.pdf",
+    "status": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sump_report.html",
+    "bytes": 4555,
+    "sha256": "bae07f019f7acb3316198f5aee9dce27ea09e217506e02109ff38da0d4394d1d"
+  },
+  {
+    "url": "https://openjicareport.jica.go.jp/pdf/11819281_06.pdf",
+    "status": 200,
+    "file": "jica2005_questionnaire.pdf",
+    "bytes": 2188902,
+    "sha256": "4e887afdf7b0b4369055830f335a4d2515684ef4b535210ccbb73ba847245d73"
+  },
+  {
+    "url": "https://opendata.b40cities.org/api/3/action/package_show?id=istanbul-transportation-master-plan-household-survey",
+    "error": "ConnectTimeout (25 seconds)",
+    "retrieved_at": "2026-11-07"
+  }
+]

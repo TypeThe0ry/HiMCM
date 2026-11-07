@@ -1,0 +1,77 @@
+{
+  "status": "not_admitted_no_microdata",
+  "city": "Cape Town",
+  "survey": "GHS 2023",
+  "file": "ghs-2023-person-v1",
+  "geography": {
+    "metro_code": 2
+  },
+  "current_upper_secondary_grades": {
+    "edu_grde": [
+      10,
+      11,
+      12
+    ]
+  },
+  "broader_secondary_sensitivity": {
+    "edu_grde": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "time_variable": "edu_time",
+  "time_unit": "minutes_one_direction",
+  "time_bins": {
+    "1": [
+      0,
+      15
+    ],
+    "2": [
+      15,
+      30
+    ],
+    "3": [
+      31,
+      60
+    ],
+    "4": [
+      61,
+      90
+    ],
+    "5": [
+      90,
+      null
+    ]
+  },
+  "time_missing_codes": [
+    6,
+    9
+  ],
+  "time_not_applicable_code": 8,
+  "weight": "person_wgt",
+  "do_not_drop_unresolved_missing": true,
+  "required_next_checks": [
+    "Obtain licensed/public-use person microdata through permitted provider route",
+    "Validate actual grade, attendance and distance-learning eligibility codes",
+    "Count Cape Town eligible samples and distinct households",
+    "Audit every time code and weight; bound missing weight explicitly",
+    "Estimate design uncertainty using available PSU/stratum information; report small subpopulation sample",
+    "Compute utility bounds from bin endpoints, with open upper tail lower utility zero"
+  ],
+  "numeric_observations_created": false,
+  "attendance_mask": {
+    "edu_attend": 1,
+    "edu_edui": 2
+  },
+  "in_person_eligibility": {
+    "edu_corr": 2
+  },
+  "unresolved_eligibility": "Audit edu_corr codes 3,8,9 separately; never silently drop ambiguous eligibility.",
+  "design_fields": [
+    "psu",
+    "stratum"
+  ]
+}

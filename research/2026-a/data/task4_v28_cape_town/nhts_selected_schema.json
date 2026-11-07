@@ -1,0 +1,2348 @@
+[
+  {
+    "file_id": "F1",
+    "vid": "V5",
+    "name": "Metro_code",
+    "var_intrvl": "discrete",
+    "var_dcml": null,
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "41",
+    "loc_end_pos": "42",
+    "loc_width": "2",
+    "loc_rec_seg_no": "1",
+    "labl": "Metropolitan municipality",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "character",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": null,
+      "max": null
+    },
+    "fid": "F1"
+  },
+  {
+    "file_id": "F2",
+    "vid": "V292",
+    "name": "Weight",
+    "var_intrvl": "contin",
+    "var_dcml": "8",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "412",
+    "loc_end_pos": "425",
+    "loc_width": "14",
+    "loc_rec_seg_no": "1",
+    "labl": "Household weight",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "6.4728438",
+      "max": "13304.663286"
+    },
+    "fid": "F2"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V297",
+    "name": "Age",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "44",
+    "loc_end_pos": "46",
+    "loc_width": "3",
+    "loc_rec_seg_no": "1",
+    "labl": "Age in completed years",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "0",
+        "labl": "0",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "1",
+        "labl": "1",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "2",
+        "labl": "2",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "3",
+        "labl": "3",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "4",
+        "labl": "4",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "5",
+        "labl": "5",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "6",
+        "labl": "6",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "7",
+        "labl": "7",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "8",
+        "labl": "8",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "9",
+        "labl": "9",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "10",
+        "labl": "10",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "11",
+        "labl": "11",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "12",
+        "labl": "12",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "13",
+        "labl": "13",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "14",
+        "labl": "14",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "15",
+        "labl": "15",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "16",
+        "labl": "16",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "17",
+        "labl": "17",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "18",
+        "labl": "18",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "19",
+        "labl": "19",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "20",
+        "labl": "20",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "21",
+        "labl": "21",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "22",
+        "labl": "22",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "23",
+        "labl": "23",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "24",
+        "labl": "24",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "25",
+        "labl": "25",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "26",
+        "labl": "26",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "27",
+        "labl": "27",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "28",
+        "labl": "28",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "29",
+        "labl": "29",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "30",
+        "labl": "30",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "31",
+        "labl": "31",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "32",
+        "labl": "32",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "33",
+        "labl": "33",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "34",
+        "labl": "34",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "35",
+        "labl": "35",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "36",
+        "labl": "36",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "37",
+        "labl": "37",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "38",
+        "labl": "38",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "39",
+        "labl": "39",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "40",
+        "labl": "40",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "41",
+        "labl": "41",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "42",
+        "labl": "42",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "43",
+        "labl": "43",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "44",
+        "labl": "44",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "45",
+        "labl": "45",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "46",
+        "labl": "46",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "47",
+        "labl": "47",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "48",
+        "labl": "48",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "49",
+        "labl": "49",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "50",
+        "labl": "50",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "51",
+        "labl": "51",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "52",
+        "labl": "52",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "53",
+        "labl": "53",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "54",
+        "labl": "54",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "55",
+        "labl": "55",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "56",
+        "labl": "56",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "57",
+        "labl": "57",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "58",
+        "labl": "58",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "59",
+        "labl": "59",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "60",
+        "labl": "60",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "61",
+        "labl": "61",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "62",
+        "labl": "62",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "63",
+        "labl": "63",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "64",
+        "labl": "64",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "65",
+        "labl": "65",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "66",
+        "labl": "66",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "67",
+        "labl": "67",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "68",
+        "labl": "68",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "69",
+        "labl": "69",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "70",
+        "labl": "70",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "71",
+        "labl": "71",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "72",
+        "labl": "72",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "73",
+        "labl": "73",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "74",
+        "labl": "74",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "75",
+        "labl": "75",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "76",
+        "labl": "76",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "77",
+        "labl": "77",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "78",
+        "labl": "78",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "79",
+        "labl": "79",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "80",
+        "labl": "80",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "81",
+        "labl": "81",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "82",
+        "labl": "82",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "83",
+        "labl": "83",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "84",
+        "labl": "84",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "85",
+        "labl": "85",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "86",
+        "labl": "86",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "87",
+        "labl": "87",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "88",
+        "labl": "88",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "89",
+        "labl": "89",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "90",
+        "labl": "90",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "91",
+        "labl": "91",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "92",
+        "labl": "92",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "93",
+        "labl": "93",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "94",
+        "labl": "94",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "95",
+        "labl": "95",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "96",
+        "labl": "96",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "97",
+        "labl": "97",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "98",
+        "labl": "98",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "99",
+        "labl": "99",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "100",
+        "labl": "100",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "101",
+        "labl": "101",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "102",
+        "labl": "102",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "103",
+        "labl": "103",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "104",
+        "labl": "104",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "105",
+        "labl": "105",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "106",
+        "labl": "106",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "107",
+        "labl": "107",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "108",
+        "labl": "108",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "109",
+        "labl": "109",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "112",
+        "labl": "112",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "113",
+        "labl": "113",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "116",
+        "labl": "116",
+        "is_missing": null,
+        "stats": []
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "0",
+      "max": "116"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V304",
+    "name": "Education",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "56",
+    "loc_end_pos": "57",
+    "loc_width": "2",
+    "loc_rec_seg_no": "1",
+    "labl": "Highest level of education",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "0",
+        "labl": "Grade R/0",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "1",
+        "labl": "Grade 1/Sub A/Class 1",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "2",
+        "labl": "Grade 2/Sub B/Class 2",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "3",
+        "labl": "Grade 3/Standard 1/ABET1/AET 1",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "4",
+        "labl": "Grade 4/Standard 2",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "5",
+        "labl": "Grade 5/Standard 3/AET 2",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "6",
+        "labl": "Grade 6/Standard 4",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "7",
+        "labl": "Grade 7/Standard 5/AET 3",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "8",
+        "labl": "Grade 8/Standard 6/Form 1",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "9",
+        "labl": "Grade 9/Standard 7/Form 2/AET 4",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "10",
+        "labl": "Grade 10/Standard 8/Form 3",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "11",
+        "labl": "Grade 11/Standard 9/Form 4",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "12",
+        "labl": "Grade 12/Standard 10/Form 5/Matric",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "13",
+        "labl": "NTC 1/N1",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "14",
+        "labl": "NTC 2/N2/NC (V)/Level 3",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "15",
+        "labl": "NTC 3/N3/NC (V)/Level 4",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "16",
+        "labl": "N4/NTC 4",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "17",
+        "labl": "N5/NTC 5",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "18",
+        "labl": "N6/NTC 6",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "19",
+        "labl": "Certificate with less than Grade 12/Std 10",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "20",
+        "labl": "Diploma with less than Grade 12/Std 10",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "21",
+        "labl": "Higher/National/Advanced Certificate with Grade 12/Std 10/Occupational Certificate-NQF Level 5",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "22",
+        "labl": "Diploma with Grade 12/Std 10/Occupational Certificate-NQF Level 6",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "23",
+        "labl": "Higher Diploma/Occupational Certificate(B-Tech Diploma)-NQF Level 7",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "24",
+        "labl": "Post Higher Diploma (Masters Diploma and Master\u2019s Degree)-NQF Level 9",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "25",
+        "labl": "Bachelor\u2019s Degree and post/ Occupational Certificate-NQF Level 7",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "26",
+        "labl": "Honours Degree/Postgraduate Diploma/Occupational Certificate-NQF Level 8",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "27",
+        "labl": "Doctoral Degrees (Doctoral Diploma and PhD)-NQF Level 10",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "28",
+        "labl": "Other(specify)",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "29",
+        "labl": "Do not know",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "98",
+        "labl": "No schooling",
+        "is_missing": null,
+        "stats": []
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "0",
+      "max": "98"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V305",
+    "name": "Attedu",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "58",
+    "loc_end_pos": "58",
+    "loc_width": "1",
+    "loc_rec_seg_no": "1",
+    "labl": "Educational institution attendance",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "Yes",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "2",
+        "labl": "No",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "3",
+        "labl": "Do not know",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "9",
+        "labl": "Unspecified",
+        "is_missing": null,
+        "stats": []
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "9"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V306",
+    "name": "Eduinst",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "59",
+    "loc_end_pos": "60",
+    "loc_width": "2",
+    "loc_rec_seg_no": "1",
+    "labl": "Type of educational institution",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "Pre-school (including ECD centre, e.g. day care, cr\u00e8che, play group, nursery school, or pre-primary school)",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "2",
+        "labl": "School (including Grade R to Grade 12 leaners who attend a formal school)",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "3",
+        "labl": "Adult Education and Training Learning Centre (ABET/AET Centre)",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "4",
+        "labl": "Literacy Classes (e.g. Kha ri gude)",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "5",
+        "labl": "Higher Educational Institution (University/University of Technology)",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "6",
+        "labl": "Technical and Vocational Education and Training (TVET) college",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "7",
+        "labl": "Other College",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "8",
+        "labl": "Home base educational/home schooling",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "9",
+        "labl": "Other than any of the above",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "99",
+        "labl": "Unspecified",
+        "is_missing": null,
+        "stats": []
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "99"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V423",
+    "name": "Q33NeedTrav",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "196",
+    "loc_end_pos": "196",
+    "loc_width": "1",
+    "loc_rec_seg_no": "1",
+    "labl": "Travel to educational institution on travel day",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "Yes",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "2",
+        "labl": "No",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "9",
+        "labl": "Unspecified",
+        "is_missing": null,
+        "stats": []
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "9"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V562",
+    "name": "Tot_time_travel_edu",
+    "var_intrvl": "discrete",
+    "var_dcml": "0",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "471",
+    "loc_end_pos": "473",
+    "loc_width": "3",
+    "loc_rec_seg_no": "1",
+    "labl": "Total time to travel to educational",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [
+      {
+        "value": "1",
+        "labl": "1",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "2",
+        "labl": "2",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "3",
+        "labl": "3",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "4",
+        "labl": "4",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "5",
+        "labl": "5",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "6",
+        "labl": "6",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "7",
+        "labl": "7",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "8",
+        "labl": "8",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "9",
+        "labl": "9",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "10",
+        "labl": "10",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "11",
+        "labl": "11",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "12",
+        "labl": "12",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "13",
+        "labl": "13",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "14",
+        "labl": "14",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "15",
+        "labl": "15",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "16",
+        "labl": "16",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "17",
+        "labl": "17",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "18",
+        "labl": "18",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "19",
+        "labl": "19",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "20",
+        "labl": "20",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "21",
+        "labl": "21",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "22",
+        "labl": "22",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "23",
+        "labl": "23",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "24",
+        "labl": "24",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "25",
+        "labl": "25",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "26",
+        "labl": "26",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "27",
+        "labl": "27",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "28",
+        "labl": "28",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "29",
+        "labl": "29",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "30",
+        "labl": "30",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "31",
+        "labl": "31",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "32",
+        "labl": "32",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "33",
+        "labl": "33",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "34",
+        "labl": "34",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "35",
+        "labl": "35",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "36",
+        "labl": "36",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "37",
+        "labl": "37",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "38",
+        "labl": "38",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "39",
+        "labl": "39",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "40",
+        "labl": "40",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "41",
+        "labl": "41",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "42",
+        "labl": "42",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "43",
+        "labl": "43",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "44",
+        "labl": "44",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "45",
+        "labl": "45",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "46",
+        "labl": "46",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "47",
+        "labl": "47",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "48",
+        "labl": "48",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "49",
+        "labl": "49",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "50",
+        "labl": "50",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "51",
+        "labl": "51",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "52",
+        "labl": "52",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "53",
+        "labl": "53",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "54",
+        "labl": "54",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "55",
+        "labl": "55",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "56",
+        "labl": "56",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "57",
+        "labl": "57",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "58",
+        "labl": "58",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "59",
+        "labl": "59",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "60",
+        "labl": "60",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "61",
+        "labl": "61",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "62",
+        "labl": "62",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "63",
+        "labl": "63",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "64",
+        "labl": "64",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "65",
+        "labl": "65",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "67",
+        "labl": "67",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "68",
+        "labl": "68",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "69",
+        "labl": "69",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "70",
+        "labl": "70",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "71",
+        "labl": "71",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "72",
+        "labl": "72",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "73",
+        "labl": "73",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "74",
+        "labl": "74",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "75",
+        "labl": "75",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "76",
+        "labl": "76",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "77",
+        "labl": "77",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "78",
+        "labl": "78",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "79",
+        "labl": "79",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "80",
+        "labl": "80",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "81",
+        "labl": "81",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "82",
+        "labl": "82",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "83",
+        "labl": "83",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "84",
+        "labl": "84",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "85",
+        "labl": "85",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "86",
+        "labl": "86",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "87",
+        "labl": "87",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "88",
+        "labl": "88",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "89",
+        "labl": "89",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "90",
+        "labl": "90",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "92",
+        "labl": "92",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "94",
+        "labl": "94",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "95",
+        "labl": "95",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "96",
+        "labl": "96",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "98",
+        "labl": "98",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "99",
+        "labl": "99",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "100",
+        "labl": "100",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "101",
+        "labl": "101",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "103",
+        "labl": "103",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "104",
+        "labl": "104",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "105",
+        "labl": "105",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "106",
+        "labl": "106",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "107",
+        "labl": "107",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "109",
+        "labl": "109",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "110",
+        "labl": "110",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "113",
+        "labl": "113",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "115",
+        "labl": "115",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "116",
+        "labl": "116",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "117",
+        "labl": "117",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "118",
+        "labl": "118",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "119",
+        "labl": "119",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "120",
+        "labl": "120",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "121",
+        "labl": "121",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "123",
+        "labl": "123",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "125",
+        "labl": "125",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "127",
+        "labl": "127",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "130",
+        "labl": "130",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "132",
+        "labl": "132",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "135",
+        "labl": "135",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "137",
+        "labl": "137",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "140",
+        "labl": "140",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "145",
+        "labl": "145",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "149",
+        "labl": "149",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "150",
+        "labl": "150",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "154",
+        "labl": "154",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "155",
+        "labl": "155",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "160",
+        "labl": "160",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "165",
+        "labl": "165",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "170",
+        "labl": "170",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "175",
+        "labl": "175",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "179",
+        "labl": "179",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "180",
+        "labl": "180",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "185",
+        "labl": "185",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "190",
+        "labl": "190",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "200",
+        "labl": "200",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "205",
+        "labl": "205",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "210",
+        "labl": "210",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "220",
+        "labl": "220",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "225",
+        "labl": "225",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "230",
+        "labl": "230",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "240",
+        "labl": "240",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "260",
+        "labl": "260",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "270",
+        "labl": "270",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "285",
+        "labl": "285",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "300",
+        "labl": "300",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "310",
+        "labl": "310",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "315",
+        "labl": "315",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "330",
+        "labl": "330",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "345",
+        "labl": "345",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "370",
+        "labl": "370",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "390",
+        "labl": "390",
+        "is_missing": null,
+        "stats": []
+      },
+      {
+        "value": "999",
+        "labl": "Unspecified",
+        "is_missing": null,
+        "stats": []
+      }
+    ],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "1",
+      "max": "999"
+    },
+    "fid": "F3"
+  },
+  {
+    "file_id": "F3",
+    "vid": "V566",
+    "name": "Weight",
+    "var_intrvl": "contin",
+    "var_dcml": "8",
+    "var_wgt": null,
+    "var_is_wgt": null,
+    "loc_start_pos": "488",
+    "loc_end_pos": "500",
+    "loc_width": "13",
+    "loc_rec_seg_no": "1",
+    "labl": "Person weight",
+    "var_imputation": null,
+    "var_security": null,
+    "var_resp_unit": null,
+    "var_analysis_unit": null,
+    "var_qstn_preqtxt": null,
+    "var_qstn_qstnlit": null,
+    "var_qstn_postqtxt": null,
+    "var_qstn_ivuinstr": null,
+    "var_universe": null,
+    "var_universe_clusion": null,
+    "var_sumstat": [
+      {
+        "value": "0",
+        "type": "vald",
+        "wgtd": null
+      },
+      {
+        "value": "0",
+        "type": "invd",
+        "wgtd": null
+      }
+    ],
+    "var_txt": null,
+    "var_catgry": [],
+    "var_codinstr": null,
+    "var_concept": [],
+    "var_format": {
+      "type": "numeric",
+      "schema": "other",
+      "category": null,
+      "name": null
+    },
+    "var_notes": null,
+    "var_val_range": {
+      "min": "6.4728438",
+      "max": "8514.3688272"
+    },
+    "fid": "F3"
+  }
+]
