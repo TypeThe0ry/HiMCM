@@ -1,0 +1,24 @@
+{
+  "access_date": "2026-11-07",
+  "new_admitted_observations": 0,
+  "attempts": [
+    {
+      "url": "https://www.sdp.gov.co/sites/default/files/encuestas-multiproposito/em2021_sav_0.zip",
+      "discovered_via": "https://kujane.minciencias.gov.co/Record/SANTTOMAS2_92b1d8ee16ba06f9875bc9d50ebae65b/Details",
+      "status": "requests GET ConnectTimeout, no raw bytes acquired"
+    },
+    {
+      "url": "https://datosabiertos.bogota.gov.co/en/dataset/encuesta-multiproposito-2021-sdp/resource/b3fd892e-b9f9-4f34-ac22-6cc50612eac9",
+      "status": "Official metadata readable via web tool",
+      "size_advertised": 1254896789,
+      "datastore_active": false,
+      "datastore_contains_all_records": false,
+      "license": "CC BY 4.0"
+    },
+    {
+      "url": "https://observatorio.desarrolloeconomico.gov.co/datos-multiproposito/",
+      "status": "Official indexed listing advertises2021 locality base; direct web retrieval timed out"
+    }
+  ],
+  "next_step": "Try official SDP raw ZIP in browser or wait for endpoint connectivity; main CSV is not an active CKAN datastore, so SQL filtering is not available according to published metadata."
+}

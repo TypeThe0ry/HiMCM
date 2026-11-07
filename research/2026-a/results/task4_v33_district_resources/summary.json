@@ -1,0 +1,96 @@
+{
+  "main_model_changed": false,
+  "new_observations": 0,
+  "pooled_utility": 0.6044814089033747,
+  "student_weighted_district_utility": 0.6032669110089597,
+  "aggregation_gap": 0.001214497894414949,
+  "relative_gap": 0.0020091567358841377,
+  "source_sha256": "c4d9a09a0dedd09e5ed67c3b1c100537f4aba044ab7a5abff85549b1f5e9f03e",
+  "assumption": "District school-location counts, not student home or individual teacher exposure. District-homogeneity sensitivity only; no within-district equality evidence. No citywide comparability improvement claimed.",
+  "scenarios": [
+    {
+      "scenario": "v32_pooled",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "shanghai": {
+        "score_lower": 35.412669558420035,
+        "score_upper": 66.87764749309814,
+        "decision_rank": 6,
+        "max_regret": 42.11679114505165
+      }
+    },
+    {
+      "scenario": "district_student_weighted",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "shanghai": {
+        "score_lower": 35.399888765731625,
+        "score_upper": 66.866717707753,
+        "decision_rank": 6,
+        "max_regret": 42.12957193774006
+      }
+    }
+  ]
+}
