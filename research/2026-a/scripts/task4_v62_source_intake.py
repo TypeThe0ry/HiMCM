@@ -21,6 +21,9 @@ def main():
         sources.append(dict(package=package,verified_raw_files=len(manifest)))
     gap=json.loads((ROOT/'data/task4_v62_pxu_gap/audit.json').read_text())
     assert not gap['gap_resolved'] and gap['new_admitted_observations']==0
+    for item in gap['empty_api_responses']:
+        b=(ROOT/'data/task4_v62_pxu_gap'/item['file']).read_bytes()
+        assert hashlib.sha256(b).hexdigest()==item['sha256'] and json.loads(b)==[]
     lo,hi=dhaka_role_bounds();frame,decision=summarize(lo,hi,weights())
     prior=pd.read_csv(ROOT/'results/task4_v61_dhaka_roles/ranks.csv')
     prior=prior[prior.scenario=='v61_instructional_headcount_floor_unknown'].reset_index(drop=True)

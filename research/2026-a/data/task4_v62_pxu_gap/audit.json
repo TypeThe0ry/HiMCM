@@ -28,5 +28,44 @@
   ],
   "source_page_scope_note": "The note that totals may differ between tabs is in the Enrollment section, not Graduation Rates. It cannot explain the graduation cohort discrepancy.",
   "no_duplicate_budget_inferred": true,
-  "future_action": "Obtain the cohort2024 workbook or a documented cross-level graduation aggregation rule; do not shift to another cohort without a separate historical roster."
+  "future_action": "Obtain the cohort2024 workbook or a documented cross-level graduation aggregation rule; do not shift to another cohort without a separate historical roster.",
+  "empty_api_responses": [
+    {
+      "file": "fy2026/5440.json",
+      "url": "https://azreportcards.azed.gov/api/DataApi/Graduation%20Rate?reportSection=Graduation+Rate&fiscalYear=2026&educationOrganizationId=5440",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_http_status_not_recorded": true,
+      "request_code_checked_raise_for_status": true,
+      "interpretation": "Empty list, no graduate or cohort observation; not zero pupils."
+    },
+    {
+      "file": "fy2026/5441.json",
+      "url": "https://azreportcards.azed.gov/api/DataApi/Graduation%20Rate?reportSection=Graduation+Rate&fiscalYear=2026&educationOrganizationId=5441",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_http_status_not_recorded": true,
+      "request_code_checked_raise_for_status": true,
+      "interpretation": "Empty list, no graduate or cohort observation; not zero pupils."
+    },
+    {
+      "file": "fy2026/6250.json",
+      "url": "https://azreportcards.azed.gov/api/DataApi/Graduation%20Rate?reportSection=Graduation+Rate&fiscalYear=2026&educationOrganizationId=6250",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_http_status_not_recorded": true,
+      "request_code_checked_raise_for_status": true,
+      "interpretation": "Empty list, no graduate or cohort observation; not zero pupils."
+    },
+    {
+      "file": "fy2026/88407.json",
+      "url": "https://azreportcards.azed.gov/api/DataApi/Graduation%20Rate?reportSection=Graduation+Rate&fiscalYear=2026&educationOrganizationId=88407",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "exact_http_status_not_recorded": true,
+      "request_code_checked_raise_for_status": true,
+      "interpretation": "Empty list, no graduate or cohort observation; not zero pupils."
+    }
+  ],
+  "batch_failure_note": "Four successful empty JSON responses were saved before a different request failed DNS; batch manifest was not reached. No synthetic fallback lists were written."
 }

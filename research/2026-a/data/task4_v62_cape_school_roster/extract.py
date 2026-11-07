@@ -25,8 +25,8 @@ for phase,sector in sorted({(r['Phase_PED'],r['Sector']) for r in city}):
  def count(k):return sum(float(r[k]) for r in part if r[k])
  summary.append(dict(phase=phase,sector=sector,schools=len(part),reported_learners_sum=count('Learners2025'),reported_educators_sum=count('Educators2025'),missing_learners=sum(not r['Learners2025'] for r in part),missing_educators=sum(not r['Educators2025'] for r in part),zero_learners=sum(r['Learners2025']=='0' for r in part),zero_educators=sum(r['Educators2025']=='0' for r in part)))
 with (P/'city_phase_counts.csv').open('w') as f:
- w=csv.DictWriter(f,fieldnames=list(summary[0]));w.writeheader();w.writerows(summary)
+ w=csv.DictWriter(f,fieldnames=list(summary[0]),lineterminator='\n');w.writeheader();w.writerows(summary)
 with (P/'missing_count_schools.csv').open('w') as f:
- w=csv.DictWriter(f,fieldnames=['NatEmis','Official_Institution_Name','Phase_PED','Sector','Learners2025','Educators2025']);w.writeheader();w.writerows({k:r[k] for k in w.fieldnames} for r in city if not r['Learners2025'] or not r['Educators2025'])
+ w=csv.DictWriter(f,fieldnames=['NatEmis','Official_Institution_Name','Phase_PED','Sector','Learners2025','Educators2025'],lineterminator='\n');w.writeheader();w.writerows({k:r[k] for k in w.fieldnames} for r in city if not r['Learners2025'] or not r['Educators2025'])
 result=dict(source_sha256=m['sha256'],source_rows=len(data),open_city_schools=len(city),data_years=sorted({r['DataYear'] for r in city}),groups=summary,main_admitted=False,changed_model_cells=0,reason='School phase and whole-school counts do not identify grades10–12 enrollment or teacher assignment; roster completeness and zero semantics require verification.')
 (P/'audit.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
