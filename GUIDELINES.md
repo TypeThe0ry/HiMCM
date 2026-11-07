@@ -11,7 +11,7 @@
 | 1 | [AGENTS.md](AGENTS.md) | 工作区、Overleaf、协作与同步 |
 | 2 | [写作规范](docs/guidelines/WRITING.md) | 所有论文文字、摘要、结论、新闻稿、图注 |
 | 3 | [证据与数据规范](docs/guidelines/EVIDENCE.md) | 数值、公式、排名、比较和科学主张 |
-| 4 | [图片与地图规范](research/2026-a/visuals/GUIDELINES.md) | 所有新制或修改的图表、地图、卫星面板 |
+| 4 | [图片与地图规范](docs/guidelines/FIGURES.md) | 所有新制或修改的图表、地图、卫星面板 |
 | 5 | [交付检查](docs/guidelines/CHECKLIST.md) | 合并、上传或交稿前 |
 
 普通仓库说明按其功能写清用途和路径；研究日志可保留过程。论文正文按问题与证据组织，不照搬日志。仅修改代码时阅读与其输出相关的规范。
@@ -32,13 +32,13 @@
 
 | 参考 | 用途 |
 | --- | --- |
-| [中英文反防御性写作技能](research/2026-a/visuals/guidelines/anti-defensive-writing/README.md) | 结果优先的叙述与语言编辑；本仓库证据规范约束其应用 |
-| [写作与章节功能蒸馏](research/2026-a/paper_review/writing_and_reasoning.md) | 章节职责与获奖论文实例 |
-| [段落动作与推理连接](research/2026-a/paper_review/round2/writing_mechanics.md) | 公式、验证、修订、结论的组织 |
-| [编辑工作簿](research/2026-a/paper_review/round2/editing_workbook.md) · [审稿矩阵](research/2026-a/paper_review/round2/review_matrix.csv) | 改写练习与检查 |
-| [图形风格指南](research/2026-a/visuals/style_guide/STYLE_GUIDE.md) | 不同图型的结构、配色与原例 |
-| [卫星与多源地图](research/2026-a/visuals/cartography/satellite/README.md) | 地理背景、产品日期、空间范围与复现 |
-| [题面](research/2026-a/inputs/problem_a_2026.pdf) · [评委文章](research/2026-a/inputs/judges_commentary_2025.pdf) | 任务要求与评审论述 |
+| [中英文反防御性写作技能](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/visuals/guidelines/anti-defensive-writing/README.md) | 结果优先的叙述与语言编辑；本仓库证据规范约束其应用 |
+| [写作与章节功能蒸馏](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/paper_review/writing_and_reasoning.md) | 章节职责与获奖论文实例 |
+| [段落动作与推理连接](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/paper_review/round2/writing_mechanics.md) | 公式、验证、修订、结论的组织 |
+| [编辑工作簿](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/paper_review/round2/editing_workbook.md) · [审稿矩阵](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/paper_review/round2/review_matrix.csv) | 改写练习与检查 |
+| [图形风格指南](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/visuals/style_guide/STYLE_GUIDE.md) | 不同图型的结构、配色与原例 |
+| [卫星与多源地图](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/visuals/cartography/satellite/README.md) | 地理背景、产品日期、空间范围与复现 |
+| [题面](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/inputs/problem_a_2026.pdf) · [评委文章](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/inputs/judges_commentary_2025.pdf) | 任务要求与评审论述 |
 
 ## AI agent 的最短执行流程
 

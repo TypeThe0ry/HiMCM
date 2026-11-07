@@ -1,9 +1,0 @@
-﻿topic,note_zh
-计算方式,生师比=同一国家、同一年SE.SEC.ENRL学生总数÷SE.SEC.TCHR教师总数。比率是本项目计算值，原始计数由UIS经WDI发布；不是旧SE.SEC.ENRL.TC.ZS序列的新观测。
-层级和分母,中等教育整体（ISCED 2+3），公私立，教师不限定合格教师。各国教师人数/全时当量处理可能不同；保留发布计数口径，不保证统一FTE，也不是平均班额。
-严格2023,2023年可计算生师比的国家和地区125个；有2023凶杀率的83个，与生师比交集59个。主分析优先使用严格同年完整表。
-邻近年份规则,只在2021—2025中选择同国同年的学生+教师，两者不跨年。按距2023绝对年差最小选择；距离相同优先较早年份：2023→2022→2024→2021→2025。凶杀率始终只取2023；缺失不换年。
-教育年份标记,education_year保留原始观测年；education_year_gap=教育年−2023；education_after_homicide=1表示教育数据晚于凶杀率。后于2023的数据只适合补充敏感性分析，不能当成2023观测或先验预测特征。跨年学年按结束年标记。
-缺失和状态,空白=缺失，不补零、不插值。pair_status的exact_2023/nearby_year表示两指标均有效；homicide_missing/education_missing/both_missing表示缺失。ratio_origin仅当比率存在时为derived_from_official_counts。
-UIS核对与注释,与UIS摘录按两个指标各自的国家+年份核对，数值允许1e-7相对容差（发布舍入差异）。MAGNITUDE/QUALIFIER原样保留，空白不保证不存在估计。Data reporting元数据中的NA不等于VALUE缺失。详细观测注释见uis_observation_notes.csv及raw摘录。
-范围与版本,217个国家和单列地区/经济体，排除世界银行汇总组；国家代码与2023凶杀率沿用上一版归档。旧生师比原始序列及旧版表格保留于相邻country_year_homicide_education目录，不将新派生值混填进旧序列。

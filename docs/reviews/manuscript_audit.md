@@ -31,7 +31,7 @@
 
 - 正文内部交叉引用与文献键静态检查通过。
 - Tectonic 编译已尝试，因缺失 `framework.png` 在第一个图处停止。现有根目录主稿没有获得完整渲染，因此不声明其全篇字号、页数或布局已通过。
-- 已有自制配图单独完成编译／PDF 字号核验，见 [配图审阅](../../research/2026-a/visuals/FIGURE_REVIEW.md)。
+- 已有自制配图单独完成编译／PDF 字号核验，见 [配图审阅](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/visuals/FIGURE_REVIEW.md)。
 - 两份可读图集共 20 页，PDF 可提取文字最小 9.53 pt。A3 页面用于审阅；正式参赛稿按规定纸张重排，不能直接缩小后沿用该结论。
 
 ## 获取当前 Overleaf 稿件
