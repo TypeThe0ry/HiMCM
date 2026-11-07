@@ -1,0 +1,30 @@
+{
+  "main_admitted": false,
+  "year": "2025",
+  "reported_vocational_teachers": 7273,
+  "teacher_categories": {
+    "ordinary_specialized": 4164,
+    "vocational_high": 2344,
+    "technical": 317,
+    "adult_specialized": 59,
+    "attached_classes": 389
+  },
+  "nonadult_teacher_pool": 7214,
+  "conditional_vocational_student_bounds": [
+    108950,
+    109050
+  ],
+  "conditional_combined_students": [
+    344492,
+    344592
+  ],
+  "conditional_combined_teachers": 31213,
+  "conditional_utility_lower": 0.5760365261747543,
+  "conditional_utility_upper": 0.5761074066645584,
+  "admission": "Conditional scope compatibility scenario only; retain canonical regular-high cell",
+  "conditions": [
+    "Rounded student total excludes adult-specialized programmes and covers the same nonadult categories, including technical and attached classes",
+    "Nonadult teacher pools are attributable to the same upper-secondary students; tertiary/adult teaching is not mixed",
+    "Two publications use compatible 2025 school-year snapshots and nearest 0.01 ten-thousand rounding"
+  ]
+}

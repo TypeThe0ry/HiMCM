@@ -1,0 +1,26 @@
+{
+  "new_admitted_observations": 0,
+  "source_date": "2025-07-24",
+  "finding": "PXU school notice describes opt-in My Ride K-12, student-linked routing and real-time arrival information.",
+  "missing": [
+    "Published actual travel-duration distribution",
+    "High-school stage and age response denominator",
+    "Phoenix resident coverage",
+    "All travel modes and non-rider observations"
+  ],
+  "access_action": "Read public notice only; no student account or opt-in form submitted; no external contact.",
+  "next_action": "A released deidentified administrative aggregate could be useful if stage, geography, door-to-school duration and coverage are defined. The public notice itself provides no observations.",
+  "queries": [
+    "site.pxu.org transportation student survey minutes school",
+    "site.boarddocs.com Phoenix Union survey transportation",
+    "Phoenix Union student survey travel",
+    "Phoenix Union survey results student transportation",
+    "site.pxu.org My Ride K-12 student"
+  ],
+  "excluded": [
+    "ACS working residents in school-district geography",
+    "Future contract service requirements",
+    "General national K12 parent surveys",
+    "Employee or budget surveys"
+  ]
+}
