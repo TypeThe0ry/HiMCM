@@ -1,0 +1,58 @@
+{
+  "city": "Singapore",
+  "mapping_year": 2023,
+  "observations_year": 2024,
+  "isced_programme_codes": {
+    "Secondary 3-5 Normal": "343",
+    "Secondary 3-4 Express": "343",
+    "Junior Colleges": "444"
+  },
+  "reported_secondary3_5_students": 81569,
+  "reported_normal_technical_secondary3_4": 9721,
+  "specialised_all_secondary_student_cap": 2838,
+  "students_interval": [
+    78731,
+    81569
+  ],
+  "broader_students_interval": [
+    71848,
+    81569
+  ],
+  "teachers_interval": [
+    0,
+    29605
+  ],
+  "secondary_classified_teachers_interval": [
+    0,
+    12353
+  ],
+  "secondary_classified_utility_interval": [
+    0,
+    0.7018058827539712
+  ],
+  "utility_interval": [
+    0,
+    0.8494068545502538
+  ],
+  "broader_utility_interval": [
+    0,
+    0.8607389087131219
+  ],
+  "teacher_classification_note": "2. Officers in Mixed Level schools are classified according to the level they teach or the level they are trained in.",
+  "teacher_part_time_note": "3. Include Education Officers on part-time employment scheme.",
+  "special_programme_note": "1. N(T) figures include students in Specialised Schools. These students are taking the ITE Skills Certificate (ISC) course or are in a 2-year work-study programme after completing ISC.",
+  "school_scope_note": "3. Include Government, Government-aided, Independent, Specialised Independent and Specialised schools.",
+  "source_cells": {
+    "mapping": "first sheet!A3,B14:R17",
+    "grades": "4!C14:C16 = 6!L16,L24,L32",
+    "technical": "6!L22,L30",
+    "specialised_cap": "21!S23",
+    "teacher_pool": "3!C4",
+    "secondary_classified_teacher_pool": "3!C8"
+  },
+  "scope": "Conditional entire reported MOE school Teacher pool and mapped secondary school courses; not all-city international/private-school coverage, actual upper-secondary teacher FTE, or an age14-18-only ratio.",
+  "all_city_unconditional_utility_interval": [
+    0,
+    1
+  ]
+}

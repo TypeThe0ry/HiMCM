@@ -1,0 +1,13 @@
+# Phoenix: school-stage and teacher-FTE definition audit
+
+**No new high-school-specific observation enters the model.** The new [official ASDB November 2025 board report](https://asdb.community.diligentoneplatform.com/document/311662a3-a11d-423f-ab37-d0297b2a1ae4/) provides an actual school observation and a documented change in the meaning of FTE. Original PDF bytes, full text and a page-specific extraction are preserved; [manifest.json](manifest.json) records their hashes.
+
+PDF page 3 / printed page 2 reports Phoenix Day School for the Deaf on **October 1, 2025**: **193 students**, **29.25 teacher FTE**, published student/teacher ratio **6.60**. The table above identifies this school population as **K–12**. Substitute teachers (2.00 FTE), supervising teachers (1.00), support staff and administrators are separate columns. These cannot all be silently added to the teacher column. No current-high-school-only student denominator or teacher allocation was identified in this 14-page report, so neither the schoolwide ratio nor its staffing is substituted for Phoenix high-school education.
+
+On the same page, ASDB explains that the new payroll calculation increased its reported FTE by more than 100 overall. The footnote specifies a June 2025 change to AZ360: ten-month staff previously recorded as 0.71 FTE are now recorded as 1 FTE. This is evidence of a measurement-definition break at this agency, not evidence of additional teachers or proof that every Arizona district changed its school-reporting FTE. Cross-year staffing comparison requires reconciling that definition before interpreting improvement. The underlying source footnote's typo is retained in the extracted text.
+
+The report cover says “Fiscal Data as of September 2026 and 2025”, while the November 2025 title, body and staffing-table dates refer to 2025 and earlier comparisons. This conflict is retained; the observation date above follows the explicit staffing table and student-count footnote, not the cover's inconsistent fiscal subtitle.
+
+PDF page 3 was rendered locally and visually inspected: the K–12 heading, columns, 193 / 29.25 / 6.60 row and AZ360 footnote agree with the text extraction. No unverified numbers from the separate November 2024 report were admitted. The bounded follow-up did not locate a grade-specific attachment to this report. The raw source is an audit lead, not a claim that all relevant school records have been exhausted.
+
+Run `python3 research/2026-a/data/task4_v68_phoenix/audit.py` to verify archived hashes, page count and the key page-3 fields. Actual city bounds and manuscript content are unchanged by this package.

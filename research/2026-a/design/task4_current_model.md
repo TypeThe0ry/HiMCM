@@ -1,4 +1,6 @@
-# 当前模型：V63 真实高中生通学更新（2026-11-08）
+# 当前模型：V68 Singapore高中学段修订（2026-11-08）
+
+当前入口为[singapore_stage_bounds()](../scripts/task4_singapore_stage_revision.py)。[V68原件与对照](../results/task4_v68_singapore_stage/README.md)依据UIS学制映射撤回Pre-U代理，改用MOE高中课程学生界与全部报告教师池的条件界。Singapore教育效用由[0.541549,0.587187]改为[0,0.849407]；其他249格不变。全部决策排名保持、可能冠军仍25城，连续偏好下仍推荐Singapore。范围和实际授课分配尚未完整识别，`main_admitted=false`。下列V63—V67结果为历史基线；其中旧扩张阈值与补数最小项数没有在V68上重证。
 
 V67新增[联合扩张与连续偏好检验](../results/task4_v67_joint_stress/README.md)：均匀扩张ε≤0.20保持Singapore；仅该城扩张的首次失效阈值位于(0.10,0.15]，ε=0.20时连续α范围推荐Tokyo。这是指定假设情景，不修改V63实测输入。
 
@@ -8,7 +10,7 @@ V65提供[统一复算入口与本轮来源核查](../results/task4_current/READ
 
 V64新增[连续偏好补数规划](../results/task4_v64_continuous_acquisition/README.md)：在现有矩形效用外包、仅测本城且观测足够有利的条件下，Phoenix要在整个α∈[0.05,0.20]获得推荐，最少指标数由固定权重的3增为4，Shanghai由2增为3。全25城1024组合经失败见证或区间证书检查，无未决组合。此为采集可行性诊断，不是实测结果或保证获胜；V63实际250格、名次和25城可能冠军保持。
 
-当前条件入口为[cape_2025_bounds()](../scripts/task4_cape_2025_revision.py)。Cape Town以GHS2025的182名14—18岁当前10—12年级学生更新通学，216PSU/14层重算近似抽样包络[0.3922371575,0.7798278718]。其他249格保持，全部排名不变（Cape Town第5、Phoenix第24），固定及连续偏好下可能冠军25城，Singapore连续推荐证书通过。不将两年区间相交，不把考试考生通过率混成毕业队列或教师资源。[完整对照与公式](../results/task4_v63_cape_2025/README.md)。
+V63历史条件入口为[cape_2025_bounds()](../scripts/task4_cape_2025_revision.py)。Cape Town以GHS2025的182名14—18岁当前10—12年级学生更新通学，216PSU/14层重算近似抽样包络[0.3922371575,0.7798278718]。其他249格保持，全部排名不变（Cape Town第5、Phoenix第24），固定及连续偏好下可能冠军25城，Singapore连续推荐证书通过。不将两年区间相交，不把考试考生通过率混成毕业队列或教师资源。[完整对照与公式](../results/task4_v63_cape_2025/README.md)。
 
 V62取得12份官方原件并重跑核验，当前模型仍为V61。London、Copenhagen、Cape Town新增校级数据尚未对齐高中阶段、时间或总体；Phoenix毕业差2仍未解决。全部250格、排名及25城可能冠军集合保持，连续推荐证书通过。[本轮原件与复算](../results/task4_v62_source_intake/README.md)。
 

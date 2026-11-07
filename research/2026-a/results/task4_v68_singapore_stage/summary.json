@@ -1,0 +1,456 @@
+{
+  "model_version": "V68",
+  "main_admitted": false,
+  "current_scenario": "v68_isced3_conditional",
+  "baseline": "V63; selected through V67",
+  "updated_cells": 1,
+  "other_unchanged_cells": 249,
+  "scenarios": [
+    {
+      "scenario": "v63_preuniversity_proxy",
+      "singapore_education": [
+        0.5415488461187631,
+        0.5871868583162217
+      ],
+      "singapore": {
+        "decision_rank": 1,
+        "score_lower": 49.292135846718224,
+        "score_upper": 66.70332932221606,
+        "max_regret": 28.23732485675346
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v63": 0.9999999999999998,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "v68_isced3_conditional",
+      "singapore_education": [
+        0.0,
+        0.8494068545502538
+      ],
+      "singapore": {
+        "decision_rank": 1,
+        "score_lower": 45.06271998689905,
+        "score_upper": 68.90043607654073,
+        "max_regret": 32.46674071657264
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v63": 0.9999999999999998,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "secondary_classification_assumption",
+      "singapore_education": [
+        0.0,
+        0.7018058827539712
+      ],
+      "singapore": {
+        "decision_rank": 1,
+        "score_lower": 45.06271998689905,
+        "score_upper": 67.78221482387113,
+        "max_regret": 32.46674071657264
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v63": 0.9999999999999998,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "all_normal_technical_unresolved",
+      "singapore_education": [
+        0.0,
+        0.8607389087131219
+      ],
+      "singapore": {
+        "decision_rank": 1,
+        "score_lower": 45.06271998689905,
+        "score_upper": 68.97190923230748,
+        "max_regret": 32.46674071657264
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v63": 0.9999999999999998,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "singapore_education_withdrawn",
+      "singapore_education": [
+        0.0,
+        1.0
+      ],
+      "singapore": {
+        "decision_rank": 1,
+        "score_lower": 45.06271998689905,
+        "score_upper": 69.66881947276656,
+        "max_regret": 32.46674071657264
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v63": 0.9999999999999998,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    }
+  ],
+  "all_city_exact_education_travel": {
+    "selected_cells": 50,
+    "fixed_unavoidable_cities": [
+      "Toronto",
+      "Phoenix",
+      "New York",
+      "Mexico City",
+      "Bogota",
+      "Sao Paulo",
+      "Copenhagen",
+      "Barcelona",
+      "Warsaw",
+      "Cape Town",
+      "Dubai",
+      "Delhi",
+      "Tokyo",
+      "Shanghai",
+      "Singapore",
+      "Jakarta",
+      "Melbourne"
+    ],
+    "continuous_unavoidable_cities": [
+      "Toronto",
+      "Phoenix",
+      "New York",
+      "Mexico City",
+      "Bogota",
+      "Sao Paulo",
+      "Santiago",
+      "Copenhagen",
+      "London",
+      "Barcelona",
+      "Warsaw",
+      "Athens",
+      "Nairobi",
+      "Lagos",
+      "Cape Town",
+      "Dubai",
+      "Mumbai",
+      "Delhi",
+      "Dhaka",
+      "Tokyo",
+      "Shanghai",
+      "Singapore",
+      "Jakarta",
+      "Melbourne"
+    ],
+    "interpretation": "Universal bound over exact observations within the current box, all other cells fixed. Not actual observations; not generally an attainable joint minimum."
+  },
+  "source_scope": "MOE-reported secondary course counts and all-school reported teacher pool; international schools and actual teaching allocation remain unresolved.",
+  "alpha_fixed": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "numerical_certificate_not_formal_interval_arithmetic": true
+}
