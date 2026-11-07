@@ -1,0 +1,158 @@
+{
+  "main_admitted": false,
+  "new_city_indicator_cells": 0,
+  "updated_year_cells": 1,
+  "alpha_fixed": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "method": "Replace Jakarta SMA 2024/25 by 2025/26; identical score model and all other inputs. Indexed-source withdrawal changes only Jakarta PTR; it is not a global provenance-clean analysis.",
+  "input_manifest_sha256": "ca42b7dcfebba25711a56916ac7bee22eb7c0077b8bcaf58e3f59382f69184ea",
+  "scenarios": [
+    {
+      "scenario": "baseline_2024_25",
+      "decision_choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_baseline": 0,
+      "kendall_tau_vs_baseline": 0.9999999999999998,
+      "mean_score_width": 37.91633929281759,
+      "jakarta": {
+        "score_lower": 30.565575493970286,
+        "score_upper": 70.32283492062636,
+        "max_regret": 46.9638852095014,
+        "decision_rank": 17.0
+      },
+      "jakarta_education_utility": [
+        0.48866084178425345,
+        0.48866084178425345
+      ],
+      "phoenix_rank": 24
+    },
+    {
+      "scenario": "updated_2025_26",
+      "decision_choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_baseline": 0,
+      "kendall_tau_vs_baseline": 0.9999999999999998,
+      "mean_score_width": 37.91640771834717,
+      "jakarta": {
+        "score_lower": 30.5890076446346,
+        "score_upper": 70.34797770953033,
+        "max_regret": 46.940453058837086,
+        "decision_rank": 17.0
+      },
+      "jakarta_education_utility": [
+        0.4908302977012938,
+        0.4908302977012938
+      ],
+      "phoenix_rank": 24
+    },
+    {
+      "scenario": "jakarta_indexed_source_withdrawn",
+      "decision_choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_baseline": 8,
+      "kendall_tau_vs_baseline": 0.9533333333333331,
+      "mean_score_width": 38.21762659572189,
+      "jakarta": {
+        "score_lower": 27.001261530563593,
+        "score_upper": 74.29070352982714,
+        "max_regret": 50.52819917290809,
+        "decision_rank": 24.0
+      },
+      "jakarta_education_utility": [
+        0.0,
+        1.0
+      ],
+      "phoenix_rank": 23
+    }
+  ]
+}

@@ -66,3 +66,7 @@ V23 默认十指标情景对应输出筛选 `model=v16_ten_criteria`、`nyc_age_
 表中固定 $\alpha=0.1$；连续 $\alpha\in[0.05,0.20]$ 的可能冠军可行性检验也保留全部 25 城。该结果不证明连续 $\tau$ 范围内首选始终不变。数据见 [V26 排名](../results/task4_v26_direct_travel_scale/ranks.csv)、[通学界](../results/task4_v26_direct_travel_scale/travel_bounds.csv) 与 [摘要](../results/task4_v26_direct_travel_scale/summary.json)。
 
 `include_outcome=True` 是另列的十一指标情景：原十项权重乘以 $1-\beta$，毕业结局效用 $q$ 以权重 $\beta=0.1$ 加入同一距离公式。该情景最小最大遗憾为 32.898359，Melbourne 第 5；它不属于上述十指标基准或 V26 检验。
+
+## V29：最新教育年份替换情景
+
+[同口径年份更新](../results/task4_v29_education_year/README.md)将Jakarta的SMA师生比替换为2025/26学年的186461/11983，教育效用为0.4908302977。入口为[updated_bounds()](../scripts/task4_education_year_update.py)，其余249个单元及上述公式保持。Jakarta仍第17，Singapore仍为推荐，可能冠军25城。旧基准函数保留，两个年份不取交集；来源仍是明确标记的官方索引表转录，未增加城市指标覆盖，也未据此改动论文。
