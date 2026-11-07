@@ -1,0 +1,42 @@
+{
+  "official_catalog_school_year": "2023-2024",
+  "catalog_roster_pdf_page": 139,
+  "catalog_roster_printed_page": "C-131",
+  "catalog_roster_update_date": "2023-07-21",
+  "transcription_method": "Manual visual reading of embedded-image roster; rerender original page139 to inspect. CSV join and hashes are automated.",
+  "catalog_named_school_program_count": 24,
+  "later_profile_school_program_count": 23,
+  "nces_survey_year": [
+    "2024-2025"
+  ],
+  "nces_entity_count": 21,
+  "co_located_program_count_without_separate_nces_entity": 3,
+  "programs": [
+    "Advanced Readiness at Chavez High (ARCH)",
+    "Camelback Montessori College Preparatory",
+    "Maryvale Gifted & Talented Academy"
+  ],
+  "difference_identity": "2023-24 catalog24 = NCES21 + 3co-locatedprograms; 2024-25 profile23 = catalog24 - EducatorPreparatory(closed2024)",
+  "roster_unit_discrepancy_resolved": true,
+  "all_catalog_addresses_match_current_city_verified_campuses": true,
+  "nonvirtual_nces_entities": 20,
+  "digital_excluded_nces_id": "040633003578",
+  "educator_prep_historical_campus_nces_id": "040633000538",
+  "montessori_parent_registration_confirmed": true,
+  "microprogram_graduation_accountability_linkage_confirmed": false,
+  "historical_cohort_responsibility_complete": false,
+  "conditional_graduate_count": 4527,
+  "conditional_nongraduate_count": 1273,
+  "conditional_arithmetic_provenance": "Exact outcome counts audited in task4_v55_phoenix_outcomes; source JSON retained and hashed here.",
+  "main_admitted": false,
+  "city_bound_changed": false,
+  "remaining_conditions": [
+    "District and Digital School cohorts must be linked under compatible unique-person and graduate/non-graduate status rules before status-specific subtraction.",
+    "Prove all excluded cohort responsibility is covered, including historical closed entities and off-campus or district-level special placements; current enrollment roster alone is insufficient.",
+    "Historical addresses are checked against current Phoenix municipal geometry, not a reconstructed 2023-24 boundary.",
+    "Catalog program co-location does not independently establish accountability ownership; Montessori registration evidence applies to that program only.",
+    "Inference targets schools physically in Phoenix; open enrollment means city-resident outcomes are a different target."
+  ],
+  "source_hashes_verified": 7,
+  "no_core_files_modified": true
+}

@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 队列对账 V56 | [PXU名册差异已解释；历史排除人数保留未知](research/2026-a/results/task4_v56_pxu_exclusion/README.md) |
 | 补数优先级 V55 | [Phoenix实际学区毕业结果；本城测量改变推荐的最少组合](research/2026-a/results/task4_v55_recommendation_acquisition/README.md) |
 | 范围核查 V54 | [完整名单、同口径分母与Phoenix新通学渠道；区间不收紧](research/2026-a/results/task4_v54_scope_intake/README.md) |
 | 高中覆盖修订 V53 | [Istanbul新增两类高中项目，教师分配保留区间，第10→15](research/2026-a/results/task4_v53_istanbul_coverage/README.md) |

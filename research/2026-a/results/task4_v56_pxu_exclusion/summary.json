@@ -1,0 +1,101 @@
+{
+  "main_choice": [
+    "Singapore"
+  ],
+  "main_possible_champions": 25,
+  "main_model_changed": false,
+  "city_bound_upgraded": false,
+  "main_admitted": false,
+  "baseline_ten_criteria": "V53",
+  "outcome_weight": 0.1,
+  "extra_exclusion_cap_observed": false,
+  "conditional_pxu_scenarios_require_unique_compatible_membership": true,
+  "fallback_does_not_require_pxu_compatibility": true,
+  "scenarios": [
+    {
+      "scenario": "unresolved_historical_exclusions",
+      "additional_excluded_cohort_cap": 6285,
+      "unique_graduates_lower": 655,
+      "unique_nongraduates_lower": 263,
+      "outcome_lower": 0.03134721225173486,
+      "outcome_upper": 0.996470935537545,
+      "phoenix": {
+        "score_lower": 25.791263471681404,
+        "score_upper": 74.87331379999463,
+        "decision_rank": 24,
+        "max_regret": 52.939629414286586
+      },
+      "changed_ranks_vs_unresolved": 0,
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "no_extra_exclusions_assumed",
+      "additional_excluded_cohort_cap": 0,
+      "unique_graduates_lower": 4328,
+      "unique_nongraduates_lower": 987,
+      "outcome_lower": 0.17616411592315206,
+      "outcome_upper": 0.9868833723155432,
+      "phoenix": {
+        "score_lower": 26.421357777025953,
+        "score_upper": 74.84893542203041,
+        "decision_rank": 23,
+        "max_regret": 52.309535108942036
+      },
+      "changed_ranks_vs_unresolved": 2,
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "nongraduate_gain_boundary",
+      "additional_excluded_cohort_cap": 724,
+      "unique_graduates_lower": 3604,
+      "unique_nongraduates_lower": 263,
+      "outcome_lower": 0.15114913605099817,
+      "outcome_upper": 0.996470935537545,
+      "phoenix": {
+        "score_lower": 26.285411880103933,
+        "score_upper": 74.87331379999463,
+        "decision_rank": 23,
+        "max_regret": 52.44548100586405
+      },
+      "changed_ranks_vs_unresolved": 2,
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "graduate_gain_boundary",
+      "additional_excluded_cohort_cap": 3673,
+      "unique_graduates_lower": 655,
+      "unique_nongraduates_lower": 263,
+      "outcome_lower": 0.03134721225173486,
+      "outcome_upper": 0.996470935537545,
+      "phoenix": {
+        "score_lower": 25.791263471681404,
+        "score_upper": 74.87331379999463,
+        "decision_rank": 24,
+        "max_regret": 52.939629414286586
+      },
+      "changed_ranks_vs_unresolved": 0,
+      "possible_champions": 25,
+      "continuous_possible": 25
+    },
+    {
+      "scenario": "status_compatibility_also_assumed",
+      "additional_excluded_cohort_cap": 0,
+      "unique_graduates_lower": 4527,
+      "unique_nongraduates_lower": 1273,
+      "outcome_lower": 0.18278354261719224,
+      "outcome_upper": 0.9831466624301639,
+      "phoenix": {
+        "score_lower": 26.459163030398106,
+        "score_upper": 74.83894757162349,
+        "decision_rank": 23,
+        "max_regret": 52.27172985556989
+      },
+      "changed_ranks_vs_unresolved": 2,
+      "possible_champions": 25,
+      "continuous_possible": 25
+    }
+  ]
+}
