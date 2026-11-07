@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="Description" content="Arizona School Report cards provide important information about a school or a district to parents, the public, educators, community members, researchers, and others about schools in our state. State level reports are also available that will provide the viewer with an overview of the state&#x2019;s make-up and performance through several metrics." />
+    <meta name="keywords" content="AZReportCards, AZSchoolReportCards, AZ report cards, AZ School report cards, Arizona school report cards, Arizona report cards" />
+    <title>AZ School Report Cards | Home</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@1.3.3/dist/vuetify.min.css" />
+<meta name="x-stylesheet-fallback-test" content="" class="v-navigation-drawer" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("display","block",["/css/lib/vuetify@1.3.3.min.css"], "rel=\u0022stylesheet\u0022 ");</script>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.3.914/styles/kendo.common.min.css" />
+<meta name="x-stylesheet-fallback-test" content="" class="k-common-test-class" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("opacity","0",["/css/lib/kendo.common@2021.3.914.min.css"], "rel=\u0022stylesheet\u0022 ");</script>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.3.914/styles/kendo.default.min.css" />
+<meta name="x-stylesheet-fallback-test" content="" class="k-theme-test-class" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("opacity","0",["/css/lib/kendo.default@2021.3.914.min.css"], "rel=\u0022stylesheet\u0022 ");</script>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.3.914/styles/kendo.default.mobile.min.css" />
+<meta name="x-stylesheet-fallback-test" content="" class="km-pane-wrapper" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("position","absolute",["/css/lib/kendo.default.mobile@2021.3.914.min.css"], "rel=\u0022stylesheet\u0022 ");</script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+<meta name="x-stylesheet-fallback-test" content="" class="fa-li" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("position","absolute",["/css/lib/fontawesome@5.3.1.min.css"], "rel=\u0022stylesheet\u0022 integrity=\u0022sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt\u002BY8vEf7N7fWAU\u0022 crossorigin=\u0022anonymous\u0022 ");</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.3/dist/skeleton.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
+<script>(window.Vue||document.write("\u003Cscript src=\u0022/js/lib/vue@2.5.16.min.js\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@1.3.3"></script>
+<script>(window.Vuetify||document.write("\u003Cscript src=\u0022/js/lib/vuetify@1.3.3.min.js\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://unpkg.com/axios@0.18.0/dist/axios.min.js"></script>
+<script>(window.axios||document.write("\u003Cscript src=\u0022/js/lib/axios@0.18.0.min.js\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-filters"></script>
+<script>(window.Vue2Filters||document.write("\u003Cscript src=\u0022/js/lib/vue2-filters.min.js\u0022\u003E\u003C/script\u003E"));</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.0.0/polyfill.min.js"></script>
+<script>(window._babelPolyfill||document.write("\u003Cscript src=\u0022/js/lib/polyfill@7.0.0..min.js\u0022\u003E\u003C/script\u003E"));</script>           
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022/js/lib/jquery-1.12.4.min.js\u0022\u003E\u003C/script\u003E"));</script>
+            <script src="https://kendo.cdn.telerik.com/2021.3.914/js/kendo.all.min.js"></script>
+<script>(window.kendo||document.write("\u003Cscript src=\u0022/js/lib/kendo.all@2021.3.914.min.js\u0022\u003E\u003C/script\u003E"));</script>
+            <script src="https://cdn.jsdelivr.net/npm/simple-xgrid@1.2.2/dist/simple-grid.noextra.js"></script>       
+            <script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.0/dist/tb-skeleton.js"></script>            
+            <script src="/js/lib/underscore-min.js?v=xzQ2G5y6YOjcAoUve1BIV5gRGTnoIXR_ZoZdEXuSkSs"></script>
+            <script src="/js/lib/kendo-charts-vue-wrapper.js?v=5nd7gkXSjlM0P0ZamLMf_VKdd0VTX-yvGp1MwnS8HQo"></script>
+            <script src="/js/lib/kendo-grid-vue-wrapper.js?v=B5AWRWd8bEFsCcZZzyf0ChfLBjzGmnugKS3HMzApSxY"></script>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBTR3N6KWQ"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-WBTR3N6KWQ');
+            </script>
+            
+            
+                <link rel="stylesheet" href="/css/site.min.css?v=LgRY4-BnVZOO7wZtlActBPfD18AHsO0LN72vdBbn9pU" />
+                
+            
+            <style>
+                .k-pdf-export .noExport {
+                    display: none;
+                }
+
+                .k-pdf-export .ExportPdf {
+                    display: block !important;
+                    width: 100% !important;
+                }
+
+                .ExportText {
+                    width: 97% !important;
+                }
+
+                .v-badge_badge info {
+                    height: 15px !important;
+                }
+                
+                /* === INPUT TEXT (typed text) === */
+                .headerSearchBar .v-input__control input {
+                  color: #ffffff !important;
+                  caret-color: #ffffff;
+                }
+
+                /* === PLACEHOLDER TEXT (WCAG fix) === */
+                .headerSearchBar .v-input__control input::placeholder {
+                  color: #ffffff !important;
+                  opacity: 1 !important; /* ✅ THIS fixes WCAG */
+                }
+
+                /* Safari */
+                .headerSearchBar .v-input__control input::-webkit-input-placeholder {
+                  color: #ffffff !important;
+                  opacity: 1 !important;
+                }
+
+                /* Firefox */
+                .headerSearchBar .v-input__control input::-moz-placeholder {
+                  color: #ffffff !important;
+                  opacity: 1 !important;
+                }
+
+                /* IE / old Edge */
+                .headerSearchBar .v-input__control input:-ms-input-placeholder {
+                  color: #ffffff !important;
+                }
+
+                /* === LABEL === */
+                .headerSearchBar .v-label {
+                  color: #ffffff !important;
+                }
+
+                /* Floating label (focused / value present) */
+                .headerSearchBar .v-label.v-label--active {
+                  color: #ffffff !important;
+                }
+
+                /* === ICONS === */
+                .headerSearchBar .v-icon {
+                  color: #ffffff !important;
+                }
+                
+                .headerSearchBar .v-icon {
+                  color: #ffffff !important;
+                  opacity: 1 !important;
+                }
+
+                .headerSearchBar .v-input__append-outer .v-icon,
+                .headerSearchBar .v-input__append-inner .v-icon {
+                  color: #ffffff !important;
+                  opacity: 1 !important;
+                }
+
+
+                .COVIDDisclaimerFont {
+                    font-size: 17px;
+                }
+
+                .DisclaimerBackGroundColor {
+                    background-color: #505258 !important;
+                }
+
+                .custom-label-color {
+                    font-weight: bold !important;
+                }
+
+                    .custom-label-color .v-label {
+                        font-weight: bold !important;
+                        opacity: 1;
+                    }
+            </style>
+        </head>
+
+        <body>
+
+
+            <div id="app">
+                <v-app :dark="store.darkTheme()" v-scroll="onScroll" class="background">
+
+                    <div class="appLoading" v-if="isAppLoading">Loading...</div>
+
+                    <v-toolbar dark fixed app id="appMenubar" color="primary">
+                        
+                        <v-toolbar-side-icon :class="{ attention: showAttention }" v-if="store.state.showPageMenuBar" v-on:click.stop="toggleDrawer()" color="secondaryTextColor"></v-toolbar-side-icon>
+                        <v-toolbar-title :class="{ attention: showAttention , pointer : true}" v-if="store.state.showPageMenuBar" v-on:click.stop="toggleDrawer()" color="secondaryTextColor">Navigation</v-toolbar-title>
+                        
+                        <v-toolbar-title v-on:click="windowOpen('home')" class="pointer">AZ School Report Cards </v-toolbar-title>
+
+                        <v-toolbar-title class="ml-3" style="width:100%;" slot="extension" v-if="showPageTitleInAppToolBar">
+                            <div v-show="false">{{assignRightsToAddSchool()}}</div>
+                            <v-layout row wrap class="hidden-sm-and-down">
+                                <v-flex xs6 md6>
+                                    <div class="wrapword" style="margin-top:19px">
+                                        {{store.state.pageTitle}}
+                                    </div>
+                                </v-flex>
+                                <v-flex xs2 md2 style="margin-top:5px" v-show="store.state.pageTitle != 'ReleaseNotes'">
+                                    <v-select :items="store.state.fiscalYearsList"
+                                              v-model="store.state.fiscalYear"
+                                              v-on:change="getFiscalYearData"
+                                              label="School Year" class="contrast-drop-down"
+                                              dense :light="!store.darkTheme()"
+                                              :menu-props="{dark: store.darkTheme()}"></v-select>
+                                </v-flex>
+                                <v-flex xs2 sm2 dflex v-show="store.state.AddCompare" v-if="store.state.pageTitle!='State Reports'&&store.state.isCurrentFiscalYear==true">
+                                    <v-flex xs12 sm12 dflex>
+                                        <div class="display-1 tooltip">
+                                            <i class='fa fa-plus-circle pointer' v-on:click="addSchools()" style='font-size:33px;margin-top: 17px;float:left;margin-left:70px;'></i>
+                                            <span class="tooltiptext">compare</span>
+                                        </div><br />
+                                    </v-flex>
+                                </v-flex>
+                                <v-flex xs2 sm2 dflex v-show="store.state.RemoveCompare" v-if="store.state.pageTitle!='State Reports'&&store.state.isCurrentFiscalYear==true">
+                                    <v-flex xs12 sm12 dflex>
+                                        <div class="display-1 tooltip">
+                                            <i class='fa fa-minus-circle pointer' v-on:click="removeSchools(0)" style='font-size:33px;margin-top: 17px;float:left;margin-left:70px;'></i>
+                                            <span class="tooltiptext">compare</span>
+                                        </div><br />
+                                    </v-flex>
+                                </v-flex>
+                                <v-flex xs2 sm2 dflex v-show="store.state.pageType == 'schools'">
+                                    <v-flex xs12 sm12 dflex>
+                                        <div class="display-1 tooltip">
+                                            <i class="fas fa-download pointer" style='font-size:27px;margin-right: 37px;margin-top:23px;' v-on:click="exportPdf()"></i>
+                                            <sup style="top: -1.2em;margin-left:-48px;">
+                                                <v-tooltip bottom allow-overflow>
+                                                    <v-badge color="info" slot="activator" class="toolbarbadge">
+                                                        <span slot="badge" class="noExport">!</span>
+                                                    </v-badge>
+                                                    <span>
+                                                        If you open the PDF in a browser instead of the ADOBE app for printing, you need to go to more settings, select scale as - 'Fit to page' before printing.
+                                                    </span>
+                                                </v-tooltip>
+                                            </sup>
+                                        </div>
+                                    </v-flex>
+                                </v-flex>
+                            </v-layout>
+                            <v-layout row wrap class="hidden-md-and-up">
+                                <v-flex xs9 md9>
+                                    <div class="wrapword" style="margin-top:10px">
+                                        {{store.state.pageTitle}}
+                                    </div>
+                                </v-flex>
+                                <v-flex xs3 md3 style="margin-top:5px" v-show="store.state.pageTitle != 'ReleaseNotes' ">
+                                    <v-select :items="store.state.fiscalYearsList"
+                                              v-model="store.state.fiscalYear"
+                                              v-on:change="getFiscalYearData"
+                                              label="SY" class="contrast-drop-down"
+                                              dense :light="!store.darkTheme()"
+                                              outline :menu-props="{dark: store.darkTheme()}"></v-select>
+                                </v-flex>
+                            </v-layout>
+
+                        </v-toolbar-title>
+
+                        <v-spacer></v-spacer>
+                        <v-toolbar-items class="hidden-sm-and-down"
+                                         v-for="menuItem in appMenuItems"
+                                         :key="menuItem.id">
+                            <v-btn flat :href="menuItem.link" dark>{{ menuItem.title }}</v-btn>
+                        </v-toolbar-items>
+                        <v-toolbar-items class="hidden-sm-and-down">
+                            <v-menu offset-y :dark="store.darkTheme()">
+                                <v-btn slot="activator" flat dark>
+                                    <div v-show="false">{{ store.compareCount()}}</div>
+                                    COMPARE
+                                    <img v-if="store.darkTheme()" src="/images/CompareIcon.png" alt="Compare Icon" style="margin-top: 3px; height: 30px; width: 30px; margin-left: 9px; filter: invert(100%);" />
+                                    <img v-if="!store.darkTheme()" src="/images/CompareIcon.png" alt="Compare Icon" style="margin-top:3px;height:30px; width:30px;margin-left:9px;" />
+                                    <span style="margin-bottom: 25px;margin-left: 4px;">{{store.state.entityCount+store.state.districtCount}}</span>
+                                </v-btn>
+                                <v-list>
+                                    <v-list-tile v-on:click="getComparison('Compare Schools','sm-down','entityList')">
+                                        <v-list-tile-content>
+                                            <v-list-tile-title>Compare Schools - {{store.state.entityCount}}</v-list-tile-title>
+                                        </v-list-tile-content>
+                                    </v-list-tile>
+                                    <v-list-tile v-on:click="getComparison('Compare Districts','sm-down','districtList')">
+                                        <v-list-tile-content>
+                                            <v-list-tile-title>Compare Districts - {{store.state.districtCount}}</v-list-tile-title>
+                                        </v-list-tile-content>
+                                    </v-list-tile>
+                                </v-list>
+                            </v-menu>
+                        </v-toolbar-items>
+                        <v-toolbar-items class="hidden-sm-and-down">
+                            <v-menu offset-y :dark="store.darkTheme()" v-on:click="GetSearchProminent()">
+                                <v-btn slot="activator" flat dark>
+                                    Theme
+                                </v-btn>
+                                <v-list>
+                                    <v-divider></v-divider>
+                                    <v-list-tile v-for="theme in themes" :key="theme.id"
+                                                 v-on:click="applyTheme(theme.id)">
+                                        <v-list-tile-action>
+                                            <v-icon :color="theme.id == selectedThemeId ? 'green':'grey'">check_circle</v-icon>
+                                        </v-list-tile-action>
+
+                                        <v-list-tile-content>
+                                            <v-list-tile-title v-text=" theme.title"></v-list-tile-title>
+                                        </v-list-tile-content>
+                                    </v-list-tile>
+                                </v-list>
+                            </v-menu>
+                        </v-toolbar-items>
+                        <v-toolbar-items class="hidden-sm-and-down" v-if="store.state.pageTitle!=''">
+                            <v-autocomplete id="searchText"
+                                            label="Search by school name, district name, address, city or ZIP code"
+                                            aria-label="Search schools or districts"
+                                            aria-haspopup="listbox"
+                                            aria-autocomplete="list"
+                                            :aria-expanded="false"
+                                            aria-controls="search-listbox"
+                                            class="headerSearchBar contrast-drop-down"
+                                            color="background"
+                                            style="margin-top:7px!important;font-size:20px!important"
+                                            hide-no-data
+                                            return-object
+                                            v-on:keyup.enter="searchSchoolDistrict"
+                                            v-model="searchSelectedItem"
+                                            :items="searchItems"
+                                            :loading="isSearchLoading"
+                                            item-text="searchTermDescription"
+                                            item-value="searchTermId"
+                                            :search-input.sync="search"
+                                            :append-outer-icon="searchSelectedItem ? 'search' : 'search_off'"
+                                            v-on:click:append-outer="searchSchoolDistrict"
+                                            v-on:click="autoCompleteChange($event)"
+                                            outlined :light="!store.darkTheme()"
+                                            dense :menu-props="{dark: store.darkTheme()}">                                            
+                                <template slot="item"
+                                          slot-scope="{ item, tile }"
+                                          :dark="store.darkTheme()" color="background">
+                                    <v-list-tile-avatar color="primary" v-on:click="loadSearchResult(item.searchTermTypeId, item.educationOrganizationId, item.searchTermDescription,item.type)"
+                                                        class="headline font-weight-light background--text">
+                                        {{ item.searchTermDescription.charAt(0) }}
+                                    </v-list-tile-avatar>
+                                    <v-list-tile-content v-on:click="loadSearchResult(item.searchTermTypeId, item.educationOrganizationId, item.searchTermDescription,item.type)">
+
+                                        <v-list-tile-title v-text="item.searchTermDescription"></v-list-tile-title>
+                                        <v-list-tile-sub-title v-if="item.searchTermTypeId==1">School</v-list-tile-sub-title>
+                                        <v-list-tile-sub-title v-if="item.searchTermTypeId==2">District</v-list-tile-sub-title>
+                                        <v-list-tile-sub-title v-if="item.searchTermTypeId!=1 && item.searchTermTypeId!=2">Location</v-list-tile-sub-title>
+
+                                    </v-list-tile-content>
+                                    <v-list-tile-action>
+                                        <div style="display: block;">                                            
+                                            <v-icon color="info" v-if="item.searchTermTypeId==1" title="Go to School"
+                                                    v-on:click="loadSearchResult(item.searchTermTypeId, item.educationOrganizationId, item.searchTermDescription,item.type)">
+                                                school
+                                            </v-icon>
+                                            <v-icon color="info" v-if="item.searchTermTypeId==2" title="Go to District"
+                                                    v-on:click="loadSearchResult(item.searchTermTypeId, item.educationOrganizationId, item.searchTermDescription,item.type)">
+                                                school
+                                            </v-icon>
+                                            <button v-if="(item.searchTermTypeId==1 || item.searchTermTypeId==2) && !store.isEntityInCompareList(item.educationOrganizationId, item.searchTermTypeId)&&item.type!='Private School'" v-on:click="addEntityToCompare(item.searchTermTypeId ,item.educationOrganizationId, item.searchTermDescription)">
+                                                <i class='fa fa-plus-circle pointer v-icon' title="Add to Compare"></i>
+                                            </button>
+                                            <button v-if="(item.searchTermTypeId==1 || item.searchTermTypeId==2) && store.isEntityInCompareList(item.educationOrganizationId, item.searchTermTypeId)&&item.type!='Private School'" v-on:click="removeEntityFromCompare(item.searchTermTypeId ,item.educationOrganizationId)">
+                                                <i class='fa fa-minus-circle pointer v-icon' title="Remove from Compare"></i>
+                                            </button>
+                                            <v-icon color="background" v-if="item.searchTermTypeId==3||item.searchTermTypeId==4 ">location_city</v-icon>
+                                        </div>
+                                    </v-list-tile-action>
+                                </template>
+                            </v-autocomplete>
+                        </v-toolbar-items>
+                        <v-toolbar-items class="hidden-md-and-up">
+                            <v-menu offset-y :dark="store.darkTheme()">
+                                <v-btn slot="activator" flat>
+                                    <img v-if="store.darkTheme()" src="/images/CompareIcon.png" alt="Compare Icon" style="margin-top: 3px; height: 30px; width: 30px; margin-left: 9px; filter: invert(100%);" />
+                                    <img v-if="!store.darkTheme()" src="/images/CompareIcon.png" alt="Compare Icon" style="margin-top:3px;height:30px; width:30px;margin-left:9px;" />
+                                    <span dark style="margin-bottom: 25px;margin-left: 4px;">{{store.state.entityCount+store.state.districtCount}}</span>
+                                </v-btn>
+                                <v-list>
+                                    <v-list-tile v-on:click="getComparison('Compare Schools','sm-up','entityList')">
+                                        <v-list-tile-content>
+                                            <v-list-tile-title>Compare Schools - {{store.state.entityCount}}</v-list-tile-title>
+                                        </v-list-tile-content>
+                                    </v-list-tile>
+                                    <v-list-tile v-on:click="getComparison('Compare Districts','sm-up','districtList')">
+                                        <v-list-tile-content>
+                                            <v-list-tile-title>Compare Districts - {{store.state.districtCount}}</v-list-tile-title>
+                                        </v-list-tile-content>
+                                    </v-list-tile>
+                                </v-list>
+                            </v-menu>
+                        </v-toolbar-items>
+                        <v-menu offset-y class="hidden-md-and-up" :dark="store.darkTheme()">
+                            <v-icon slot="activator">more_vert</v-icon>
+                            <v-list>
+                                <v-list-tile v-for="menuItem in appMenuItems"
+                                             :key="menuItem.id"
+                                             :href="menuItem.link">
+                                    <v-list-tile-title color="heading">{{ menuItem.title }}</v-list-tile-title>
+                                </v-list-tile>
+                                <v-subheader>Themes</v-subheader>
+                                <v-list-tile v-for="theme in themes" :key="theme.id"
+                                             v-on:click="applyTheme(theme.id)">
+                                    <v-list-tile-action>
+                                        <v-icon :color="theme.id == selectedThemeId ? 'green':'grey'">check_circle</v-icon>
+                                    </v-list-tile-action>
+
+                                    <v-list-tile-content>
+                                        <v-list-tile-title v-text="theme.title"></v-list-tile-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+
+                            </v-list>
+                        </v-menu>
+                    </v-toolbar>
+                    <v-content id="pageContent">
+
+                        <v-navigation-drawer v-model="pageMenuDrawer"
+                                             fixed
+                                             clipped
+                                             temporary :dark="store.darkTheme()" width="350">
+                            <v-list dense>
+                                <v-list-tile class="primary">
+                                    <v-list-tile-content>
+                                        <v-list-tile-title display3 class="white--text">AZ School Report Cards</v-list-tile-title>
+                                    </v-list-tile-content>
+                                    <v-list-tile-action class="hidden-md-and-up">
+                                        <v-icon color="secondaryTextColor" v-on:click="pageMenuDrawer = !pageMenuDrawer;">chevron_left</v-icon>
+                                    </v-list-tile-action>
+                                </v-list-tile>
+                                <v-divider></v-divider>
+                                <template v-for="item in store.state.pageMenu">
+                                    <div v-if="item.isActive">
+                                        <v-list-group v-if="item.subMenu.length>0"
+                                                      v-model="item.model"
+                                                      :key="item.title"
+                                                      :prepend-icon="item.icon"
+                                                      :append-icon="item.model ? 'keyboard_arrow_up' : 'keyboard_arrow_down'">
+                                            <v-list-tile slot="activator">
+                                                <v-list-tile-content>
+                                                    <v-list-tile-title>
+                                                        {{ item.title }}
+                                                    </v-list-tile-title>
+                                                </v-list-tile-content>
+                                            </v-list-tile>
+                                            <v-list-tile v-for="(child, i) in item.subMenu"
+                                                         :key="i"
+                                                         v-on:click="$vuetify.goTo(child.link, pageMenuOptions);pageMenuDrawer = !pageMenuDrawer;">
+                                                <v-list-tile-action v-if="child.icon">
+                                                    <v-icon></v-icon>
+                                                </v-list-tile-action>
+                                                <v-list-tile-content>
+                                                    <v-list-tile-title>
+                                                        {{ child.title }}
+                                                    </v-list-tile-title>
+                                                </v-list-tile-content>
+                                            </v-list-tile>
+                                        </v-list-group>
+                                        <v-list-tile v-else v-on:click="$vuetify.goTo(item.link, pageMenuOptions);pageMenuDrawer = !pageMenuDrawer;" :key="item.title">
+                                            <v-list-tile-action>
+                                                <v-icon>{{ item.icon }}</v-icon>
+                                            </v-list-tile-action>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>
+                                                    {{ item.title }}
+                                                </v-list-tile-title>
+                                            </v-list-tile-content>
+                                        </v-list-tile>
+                                    </div>
+                                </template>
+                            </v-list>
+                        </v-navigation-drawer>
+                        <v-dialog v-model="storeState.dialog"
+                                  full-width
+                                  persistent
+                                  width="300">
+                            <v-card color="primary" :dark="!store.darkTheme()" class="secondaryTextColor--text">
+                                <v-card-text>
+                                    <v-progress-linear indeterminate
+                                                       color="white"
+                                                       class="mb-0"></v-progress-linear>
+                                </v-card-text>
+                            </v-card>
+
+                        </v-dialog>
+                        <v-snackbar v-model="store.state.snackBarAlert"
+                                    v-show="store.state.category=='entityList'"
+                                    :top="true"
+                                    :color="store.state.snackBarColor"
+                                    auto-height>
+                            <v-flex v-show="store.state.snackBarColor=='green'">You added this school ( {{store.state.entityCount}} of 3 ) to your Compare list !</v-flex>
+
+                            <v-flex class="hidden-md-and-down" v-show="store.state.snackBarColor=='red'">You have already added {{store.state.entityCount}} schools to your compare list<br />Remove a school to add this one - <a v-on:click="dialog=true;store.state.errorAlert=false;getComparison('Compare Schools','sm-down','entityList')"><b>Manage Schools</b></a></v-flex>
+                            <v-flex class="hidden-md-and-up" v-show="store.state.snackBarColor=='red'">You have already added {{store.state.entityCount}} schools to your compare list <br />Remove a school to add this one - <a v-on:click="dialog=true;store.state.errorAlert=false;getComparison('Compare Schools','sm-up','entityList')"><b>Manage Schools</b></a></v-flex>
+                            <i class="fa fa-times pointer" v-on:click="store.state.snackBarAlert = false" style="font-size:17px;margin-left: 76px;" aria-hidden="true"></i>
+                        </v-snackbar>
+
+                        <v-snackbar v-model="store.state.snackBarAlert"
+                                    v-show="store.state.category=='districtList'"
+                                    :top="true"
+                                    :timeout="snackBar.timeout"
+                                    :color="store.state.snackBarColor"
+                                    auto-height>
+                            <v-flex v-show="store.state.snackBarColor=='green'">You added this district ( {{store.state.districtCount}} of 3 ) to your Compare list !</v-flex>
+                            <v-flex class="hidden-md-and-down" v-show="store.state.snackBarColor=='red'">You have already added {{store.state.districtCount}} districts to your compare list<br />Remove a district to add this one  - <a v-on:click="dialog=true;store.state.errorAlert=false;getComparison('Compare Districts','sm-down','districtList')"><b>Manage Districts</b></a></v-flex>
+                            <v-flex class="hidden-md-and-up" v-show="store.state.snackBarColor=='red'">You have already added {{store.state.districtCount}} districts to your compare list<br />Remove a district to add this one  - <a v-on:click="dialog=true;store.state.errorAlert=false;getComparison('Compare Districts','sm-up','districtList')"><b>Manage Districts</b></a></v-flex>
+                            <i class="fa fa-times pointer" v-on:click="store.state.snackBarAlert = false" style="font-size:17px;margin-left: 76px;" aria-hidden="true"></i>
+                        </v-snackbar>
+
+
+                        <div class="renderedContent">
+                            
+<home></home>
+
+
+
+
+                        </div>
+                    </v-content>
+
+                    <v-footer app id="appFooter" height="auto" class="footer">
+                        <v-container fluid class="py-5">
+                            <v-layout row>
+                                <v-flex xs3 md1>
+                                    <div style="float:right;">
+                                        <img src="/images/ADE_Seal.png" alt="ADE Logo" style="height:110px; width:104px;" />
+                                    </div>
+                                </v-flex>
+                                <v-flex xs9 md6 class="hidden-md-and-up">
+                                    <div class="subheading primary--text">Arizona Department of Education |  <a href="https://www.azed.gov/adeinfo/statement-website-accessibility" target="_blank"><span class="underline primary--text">Web Accessibility</span></a></div>
+                                    <div>
+                                        <v-icon color="secondary">place</v-icon>
+                                        <span class="primary--text">1535 West Jefferson Street, Phoenix, AZ 85007</span>
+                                    </div>
+                                    <div>
+                                        <v-icon color="secondary">phone</v-icon>
+                                        <span class="primary--text">602-542-2222</span>
+                                    </div>
+                                    <div8v>
+                                        <v-icon color="secondary" class="hoverIcons" v-on:click="windowOpen('email')">email</v-icon>
+                                        &nbsp;
+                                        <v-icon color="secondary" v-on:click="windowOpen('fb')">fab fa-facebook</v-icon>
+                                        &nbsp;
+                                        <v-icon color="secondary" v-on:click="windowOpen('twitter')">fab fa-twitter</v-icon>
+                                        &nbsp;
+                                        <v-icon color="secondary" v-on:click="windowOpen('instagram')">fab fa-instagram</v-icon>
+                                    </div8v>
+                                </v-flex>
+
+                                <v-flex xs9 md6 class="hidden-md-and-up">
+                                    <v-snackbar v-model="releaseNotesSnackBar"
+                                                :position="'fixed'"
+                                                :bottom="true"
+                                                :multi-line="true"
+                                                :right="true"
+                                                color="primary"
+                                                auto-height>
+                                        <a :href="releaseNotesItem" style="color:#fff">View Release Notes</a>
+                                    </v-snackbar>
+                                    <a :href="releaseNotesItem" class="fa-pull-right k-vertical-align-bottom">Release Notes</a>
+                                </v-flex>
+                                <v-flex xs6 md6 class="hidden-sm-and-down">
+                                    <div class="subheading primary--text">Arizona Department of Education |  <a href="https://www.azed.gov/adeinfo/statement-website-accessibility" target="_blank"><span class="underline primary--text">Web Accessibility</span></a></div>
+                                    <div>
+                                        <v-icon color="secondary">place</v-icon>
+                                        <span class="primary--text">1535 West Jefferson Street, Phoenix, AZ 85007</span>
+                                    </div>
+                                    <div>
+                                        <v-icon color="secondary">phone</v-icon>
+                                        <span class="primary--text">602-542-2222</span>
+                                    </div>
+                                    <div>
+                                        <v-icon color="secondary" class="hoverIcons" v-on:click="windowOpen('email')">email</v-icon>
+                                        &nbsp;
+                                        <v-icon color="secondary" v-on:click="windowOpen('fb')">fab fa-facebook</v-icon>
+                                        &nbsp;
+                                        <v-icon color="secondary" v-on:click="windowOpen('twitter')">fab fa-twitter</v-icon>
+                                        &nbsp;
+                                        <v-icon color="secondary" v-on:click="windowOpen('instagram')">fab fa-instagram</v-icon>
+                                    </div>
+                                </v-flex>
+                                <v-flex xs3 md3 class="hidden-sm-and-down">
+                                    <a :href="releaseNotesItem" class="fa-pull-right k-vertical-align-bottom">Release Notes</a>
+                                    <v-snackbar v-model="releaseNotesSnackBar"
+                                                :position="'fixed'"
+                                                :bottom="true"
+                                                :multi-line="true"
+                                                :right="true"
+                                                color="primary"
+                                                auto-height>
+                                        <a :href="releaseNotesItem" style="color:#fff">View Release Notes</a>
+                                    </v-snackbar>
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
+                    </v-footer>
+
+                    <v-fab-transition>
+                        <v-btn :fixed="true"
+                               dark
+                               fab
+                               bottom
+                               right
+                               small
+                               color="secondary"
+                               v-if="scrollToTop.isVisible && !store.darkTheme()"
+                               v-on:click="$vuetify.goTo(scrollToTop.target, scrollToTop.options)">
+                            <v-icon>expand_less</v-icon>
+                        </v-btn>
+                        <v-btn :fixed="true"
+                               dark
+                               fab
+                               bottom
+                               right
+                               small
+                               v-if="scrollToTop.isVisible && store.darkTheme()"
+                               v-on:click="$vuetify.goTo(scrollToTop.target, scrollToTop.options)">
+                            <v-icon>expand_less</v-icon>
+                        </v-btn>
+                    </v-fab-transition>
+
+                    <img v-if="store.darkTheme()" src="/images/CompareIcon.png" alt="Compare Icon" style="margin-top: 3px; height: 30px; width: 30px; margin-left: 9px; filter: invert(100%);" />
+                    <img v-if="!store.darkTheme()" src="/images/CompareIcon.png" alt="Compare Icon" style="margin-top:3px;height:30px; width:30px;margin-left:9px;" />
+                    <v-snackbar v-model="snackBar.show"
+                                :bottom="true"
+                                :timeout="snackBar.timeout"
+                                :color="snackBar.color"
+                                auto-height>
+                        {{ snackBar.message }}
+                        <v-btn dark
+                               flat
+                               v-on:click="snackBar.show = false">
+                            Close
+                        </v-btn>
+                    </v-snackbar>
+
+                </v-app>
+
+                <v-app id="inspire" v-show="false">
+                    <v-layout row justify-center>
+                        <v-dialog v-model="dialog" class="hidden-md-and-down" :dark="store.darkTheme()" persistent max-width="750px">
+                            <v-card>
+                                <v-card-title>
+                                    <v-flex xs12 sm10 dflex>
+                                        <div class="display-1 primary--text " style="font-size:30px!important">{{dialogtitle}}</div>
+                                    </v-flex>
+                                    <v-flex xs12 sm2 dflex>
+                                        <div>
+                                            <i class="fa fa-times pointer" v-on:click="dialog=false" style="font-size:25px;margin-left: 76px;" aria-hidden="true"></i>
+                                        </div>
+                                    </v-flex>
+                                </v-card-title>
+                                <v-divider></v-divider>
+                                <v-card-text>
+                                    <div v-for="item in ListOfEntities" v-show="!store.state.isListEmpty">
+                                        <div>
+                                            <v-layout>
+                                                <v-flex xs12 sm11 dflex>
+                                                    <span style="font-size:17px;">{{item.EntityName}}</span>
+                                                </v-flex>
+                                                <v-flex xs12 sm1 dflex>
+                                                    <i class="fa fa-times pointer" v-on:click="removeEntities(item.EntityID,dialogtitle);" aria-hidden="true"></i>
+                                                </v-flex>
+                                            </v-layout>
+                                            <v-divider style="margin-top:25px;margin-bottom:25px;"></v-divider>
+                                        </div>
+                                    </div>
+                                    <div v-show="store.state.isAlertActive">
+                                        <v-layout>
+                                            <v-layout>
+                                                <v-flex xs12 sm11 dflex>
+                                                    <span>{{store.state.dialogalertmessage}}</span>
+                                                </v-flex>
+                                                <v-divider style="margin-top:12px;margin-bottom:12px;"></v-divider>
+                                            </v-layout>
+                                        </v-layout>
+                                    </div>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-spacer style="flex-grow:0.5!important;"></v-spacer>
+                                    <v-btn id=""
+                                           round large color="primary" class="secondaryTextColor--text" :disabled="store.state.isbtndisabled"
+                                           v-on:click="navigateToComparison(dialogtitle)">
+                                        View Comparison
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+
+                        <v-dialog v-model="dialogMobile" class="hidden-md-and-up " :dark="!store.darkTheme()" fullscreen transition="dialog-bottom-transition" persistent max-width="750px">
+                            <v-card>
+                                <v-card-title>
+                                    <v-flex xs11 sm10 dflex>
+                                        <div class="display-1 primary--text " style="font-size:30px!important">{{dialogtitle}}</div>
+                                    </v-flex>
+                                    <v-flex xs1 sm2 dflex>
+                                        <div style="float:right;">
+                                            <i class="fa fa-times pointer" v-on:click="dialogMobile=false" style="font-size:25px;" aria-hidden="true"></i>
+                                        </div>
+                                    </v-flex>
+                                </v-card-title>
+                                <v-divider></v-divider>
+                                <v-card-text>
+                                    <div v-for="item in ListOfEntities" v-show="!store.state.isListEmpty">
+                                        <div>
+                                            <v-layout>
+                                                <v-flex xs11 sm11 dflex>
+                                                    <span style="font-size:17px;">{{item.EntityName}}</span>
+                                                </v-flex>
+                                                <v-flex xs1 sm1 dflex>
+                                                    <i class="fa fa-times pointer" v-on:click="removeEntities(item.EntityID,dialogtitle);" aria-hidden="true"></i>
+                                                </v-flex>
+                                            </v-layout>
+                                            <v-divider style="margin-top:25px;margin-bottom:25px;"></v-divider>
+                                        </div>
+                                    </div>
+                                    <div v-show="store.state.isAlertActive">
+                                        <v-layout>
+                                            <v-layout>
+                                                <v-flex xs12 sm11 dflex>
+                                                    <span>{{store.state.dialogalertmessage}}</span>
+                                                </v-flex>
+                                                <v-divider style="margin-top:12px;margin-bottom:12px;"></v-divider>
+                                            </v-layout>
+                                        </v-layout>
+                                    </div>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-spacer style="flex-grow:0.5!important;"></v-spacer>
+                                    <v-btn id=""
+                                           round large color="primary" class="secondaryTextColor--text" :disabled="store.state.isbtndisabled"
+                                           v-on:click="navigateToComparison(dialogtitle)">
+                                        View Comparison
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </v-layout>
+                </v-app>
+            </div>
+
+            
+
+    <template id="homeTemplate">
+
+        <div>
+
+            <v-container fluid class="pa-0">
+                <v-layout>
+                    <v-flex xs12>
+                        <v-card>
+                          <v-img
+                            height="400px"
+                            :src="'images/Banner/' + bannerImageName"
+                            class="banner-img">
+                            <v-container fill-height fluid>
+                              <v-layout
+                                fill-height
+                                align-center
+                                justify-center
+                                column
+                                class="banner-content">
+                                <h1 class="banner-title mb-3">
+                                  AZ School Report Cards
+                                </h1>
+
+                                <div class="banner-subtitle">
+                                  Arizona Department of Education's comprehensive school report card system
+                                </div>
+                              </v-layout>
+                            </v-container>
+                          </v-img>
+                        </v-card>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+
+            <v-container grid-list-md id="search">
+                <v-layout row wrap align-center>
+                    <v-flex xs12 md2>
+                    </v-flex>
+                    <v-flex xs12 md5>
+                        <v-autocomplete id="searchEntity"
+                                        class="custom-label-color"
+                                        label="Search by school name, district name, address, city or ZIP code"
+                                        clearable
+                                        hide-no-data
+                                        return-object
+                                        v-on:keyup.enter="searchSchoolDistrict"
+                                        v-model="searchSelectedItem"
+                                        :items="searchItems"
+                                        :loading="isSearchLoading"
+                                        item-text="searchTermDescription"
+                                        item-value="searchTermId"
+                                        :search-input.sync="search"
+                                        :append-outer-icon="searchSelectedItem ? 'search' : 'search_off'"
+                                        v-on:click:append-outer="searchSchoolDistrict"
+                                        v-on:click="autoCompleteChange"
+                                        :dark="store.darkTheme()" :menu-props="{dark: store.darkTheme()}">
+                            <template slot="item"
+                                      slot-scope="{ item, tile }">
+                                <v-list-tile-avatar color="primary" v-on:click="loadSearchResult(item.searchTermTypeId, item.educationOrganizationId, item.searchTermDescription,item.type)"
+                                                    class="headline font-weight-light background--text">
+                                    {{ item.searchTermDescription.charAt(0) }}
+                                </v-list-tile-avatar>
+                                <v-list-tile-content v-on:click="loadSearchResult(item.searchTermTypeId, item.educationOrganizationId, item.searchTermDescription,item.type)">
+
+                                    <v-list-tile-title v-text="item.searchTermDescription"></v-list-tile-title>
+                                    <v-list-tile-sub-title v-if="item.searchTermTypeId==1">School</v-list-tile-sub-title>
+                                    <v-list-tile-sub-title v-if="item.searchTermTypeId==2">District</v-list-tile-sub-title>
+                                    <v-list-tile-sub-title v-if="item.searchTermTypeId!=1 && item.searchTermTypeId!=2">Location</v-list-tile-sub-title>
+
+                                </v-list-tile-content>
+                                <v-list-tile-action>
+                                    <div style="display: block;">
+                                        <v-icon color="info" v-if="item.searchTermTypeId==1" title="Go to School"
+                                                v-on:click="loadSearchResult(item.searchTermTypeId, item.educationOrganizationId, item.searchTermDescription,item.type)">
+                                            school
+                                        </v-icon>
+                                        <v-icon color="info" v-if="item.searchTermTypeId==2" title="Go to District"
+                                                v-on:click="loadSearchResult(item.searchTermTypeId, item.educationOrganizationId, item.searchTermDescription,item.type)">
+                                            school
+                                        </v-icon>
+                                        <button v-if="(item.searchTermTypeId==1 || item.searchTermTypeId==2) && !store.isEntityInCompareList(item.educationOrganizationId, item.searchTermTypeId)&&item.type!='Private School'" v-on:click="addEntityToCompare(item.searchTermTypeId ,item.educationOrganizationId, item.searchTermDescription)">
+                                            <i class='fa fa-plus-circle pointer v-icon' title="Add to Compare"></i>
+                                        </button>
+                                        <button v-if="(item.searchTermTypeId==1 || item.searchTermTypeId==2) && store.isEntityInCompareList(item.educationOrganizationId, item.searchTermTypeId)&&item.type!='Private School'" v-on:click="removeEntityFromCompare(item.searchTermTypeId ,item.educationOrganizationId)">
+                                            <i class='fa fa-minus-circle pointer v-icon' title="Remove from Compare"></i>
+                                        </button>
+                                        <v-icon color="background" v-if="item.searchTermTypeId==3||item.searchTermTypeId==4 ">location_city</v-icon>
+                                    </div>
+                                </v-list-tile-action>
+                            </template>
+                        </v-autocomplete>
+                    </v-flex>
+                    <v-flex xs12 md3 sm2 d-flex>
+                        <v-btn id="browseSchoolsButton"
+                               dark round large color="primary" 
+                               style="width:fit-content"
+                               href="/search">
+                            <i aria-hidden="true" class="v-icon material-icons">place</i>
+                            Search By Location
+                        </v-btn>
+                    </v-flex>
+                    <v-flex xs12 md2 text-xs-center v-if="false">
+                        <v-btn round color="primary" v-on:click="searchSchoolDistrict">Search School/District</v-btn>
+                    </v-flex>
+                    <v-card v-show="false">
+                        <v-card-title primary-title class="layout justify-center">
+                            <div class="headline text-xs-center">{{ search }} - {{searchItems.length}}</div>
+                        </v-card-title>
+                    </v-card>
+                </v-layout>
+                <v-layout>
+                    <v-flex xs12 md4></v-flex>
+                    <v-flex xs12 md8>
+                        <b>Private schools will not have performance or other data, just the address and contact will be displayed.</b>
+                    </v-flex>
+                    <v-flex xs12 md2></v-flex>
+                </v-layout>
+            </v-container>
+
+
+            <v-container grid-list-xl class="my-2">
+                <v-layout row wrap align-center>
+                    <v-flex xs12 md4 d-flex>
+                        <div style="width:300px; text-align:center">
+                            <div class="headline text-xs-center">Browse Schools</div>
+
+                            <div class="body-1 mt-3 text-xs-left">
+                                Arizona has 2,417 public schools that are comprised of 1,561 district schools, 565 charter schools and 291 CTED school sites.
+                                The selection of a school is an important decision for Arizona families. The report cards found here assist in making those important decisions.
+                                Use the schools page to explore more about your school or search for a school that you are interested in.
+                            </div>
+                            <div class="mt-2">
+                                <v-btn id="browseSchoolsButton"
+                                       dark round large color="primary"
+                                       href="/schools">
+                                    Explore
+                                </v-btn>
+                            </div>
+                        </div>
+                    </v-flex>
+                    <v-flex xs12 md4 d-flex>
+                        <div style="width:300px; text-align:center">
+                            <div class="headline text-xs-center">Browse Districts</div>
+
+                            <div class="body-1 mt-3 text-xs-left">
+                                Currently there are 656 districts in state of Arizona that are comprised of 236 traditional districts and 420 charter districts. These entities are the strategic leadership of the
+                                schools and charter schools they oversee. Use the districts page to explore more about your school district or search for a school district
+                                that you are interested in.
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="mt-2">
+                                <v-btn id="browseDistrictsButton"
+                                       dark round large color="primary"
+                                       href="/districts">
+                                    Explore
+                                </v-btn>
+                            </div>
+                        </div>
+                    </v-flex>
+                    <v-flex xs12 md4 d-flex>
+                        <div style="width:300px; text-align:center">
+                            <div class="headline text-xs-center">State Level Reports</div>
+
+                            <div class="body-1 mt-3 text-xs-left">
+
+                                Arizona is not only a diverse state in its geographical beauty, but that diversity exists within the population.
+                                The state level reports will provide the viewer with an overview of the state’s make-up and performance through several metrics.
+                                Use the state reports page to explore more about the state goals, performance and metrics.
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="mt-2">
+                                <v-btn id="browseStateReportsButton"
+                                       dark round large color="primary"
+                                       href="/state-reports">
+                                    Explore
+                                </v-btn>
+                            </div>
+                        </div>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+
+        </div>
+    </template>
+
+
+
+            
+
+            
+
+            
+
+                <script src="/js/app.min.js?v=qumeHeToOt9O1fFit68hzuAdnOkl0uXlsukxrQBO6Eg"></script>
+                
+
+            <script charset='UTF-8'>
+                window['adrum-start-time'] = new Date().getTime();
+                (function (config) {
+                    config.appKey = 'AD-AAB-AAP-EUU';
+                    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+                    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+                    config.beaconUrlHttp = 'http://col.eum-appdynamics.com';
+                    config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
+                    config.xd = { enable: false };
+                })(window['adrum-config'] || (window['adrum-config'] = {}));
+            </script>
+            <script src='//cdn.appdynamics.com/adrum/adrum-4.5.7.1910.js'></script>
+
+            <script>
+        if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
+            //older browser. redirect them to incompatible browser page
+            window.location.href = "IncompatibleBrowser";
+        }
+        else {
+            //modern browser. start vue app
+            //var dt = "adasd";
+            new Vue({
+                el: '#app',
+                mixins: [themeMixin, commonMixin],
+                created: function () {
+                    sessionStorage.setItem('baseApiUrl', 'https://schoolreportcardsdev.azurewebsites.net/');
+                    this.commonMixin_ReportMenuSource(this.storeState.fiscalYear);
+                },
+                baseApiUrl: '',
+                data: {
+                    releaseNotesSnackBar:true,
+                    showAttention: false,
+                    dialog: false,
+                    dialogMobile: false,
+                    dialogtitle:'',
+                    pageMenuDrawer: null,
+                    ListOfEntities: [],
+                    pageMenuOptions: {
+                        duration: 300,
+                        offset: -135,
+                        easing: 'easeInOutCubic'
+                    },
+                    storeState:
+                        store.state, //store is defined in store.js. we are just referencing it here for this commponent's usage.
+                    selectedYear: 2018,
+                    isAppLoading: false,
+
+                    showPageTitleInAppToolBar: false,
+                    showCompareMenuTooBar:false,
+                    showPageMenuBar: false,
+
+                    scrollToTop: {
+                        isVisible: false,
+                        target: '#app',
+                        options: {
+                            duration: 300,
+                            offset: 0,
+                            easing: 'easeInOutCubic'
+                        }
+                    },
+                    releaseNotesItem:"/ReleaseNotes",
+                    appMenuItems: [
+                        { id: "menuItem1", title: "Home", link: "/" },
+                        { id: "menuItem2", title: "Schools", link: "/schools" },
+                        { id: "menuItem3", title: "Districts", link: "/districts" },
+                        { id: "menuItem4", title: "State Reports", link: "/state-reports" }
+                    ],
+
+                    snackBar: store.snackBar,
+                    //Search Bar starts
+                    search: null,
+                    searchSelectedItem: {},
+                    isSearchLoading: false,
+                    searchItems: []
+                },
+
+                methods: {
+                    CheckIfEntityAdded: function (entityId) {
+                        //debugger;
+                        
+                    },                    
+                    loadSubgroups: function () {
+                        //var subGroups = [];
+                        var url = '/api/DataApi/GetStudentSubGroups';
+                        window.axios.get(url, {}).then(res => {
+                            _.each(res.data, function (i, o) {
+                                var subGroupItem = {
+                                    uiDescription: i.uiDescription,
+                                    description: i.description,
+                                    shortDescription: i.shortDescription
+                                };
+                                store.state.subGroups.push(subGroupItem);
+                            });
+                        });
+                    },
+                    exportPdf: function () {
+                        store.exportPDF(store.state.pageTitle);
+                    },
+                    assignRightsToAddSchool: function () {
+                        store.assignRightsToAddSchool(store.state.educationOrganizationId, store.state.pageType == "schools" ? 'entityList' : "districtList");
+                    },
+                    addSchools: function () {
+                        store.addEntity(store.state.educationOrganizationId, store.state.pageTitle, store.state.pageType == "schools" ? 'entityList' : "districtList");
+                    },
+                    addEntityToCompare: function (searchTermTypeId, edOrgId, edOrgName) {
+                        if (searchTermTypeId == 1){
+                            store.addEntity(edOrgId, edOrgName, 'entityList');
+                            if ((store.state.snackBarColor == 'green' && new URL(location.href)).pathname.toLowerCase().indexOf("comparison/schools") > -1) {
+                                //refresh page
+                                location.reload();
+                                }
+
+                        }
+                        else {
+                            store.addEntity(edOrgId, edOrgName, 'districtList');
+                            if ((store.state.snackBarColor == 'green' && new URL(location.href)).pathname.toLowerCase().indexOf("comparison/districts") > -1) {
+                                //refresh page
+                                location.reload();
+                            }
+                        }
+                        setTimeout(() => {
+                            $("#searchText").val('');
+                        }, 1000);
+                    },
+                    removeEntityFromCompare: function (searchTermTypeId, edOrgId) {
+                        store.removeSchools(edOrgId, searchTermTypeId == 1 ? 'entityList' : "districtList");
+                        if (searchTermTypeId == 1){
+                            if ((new URL(location.href)).pathname.toLowerCase().indexOf("comparison/schools") > -1) {
+                                location.reload();
+                            }
+
+                        }
+                        else {
+                            if ((new URL(location.href)).pathname.toLowerCase().indexOf("comparison/districts") > -1) {
+                                location.reload();
+                            }
+                        }
+                        setTimeout(() => {
+                            $("#searchText").val('');
+                        }, 1000);
+                    },
+                    removeSchools: function () {
+                        store.removeSchools(store.state.educationOrganizationId, store.state.pageType == "schools" ? 'entityList' : "districtList");
+                    },
+                    getFiscalYearData: function () {
+                        sessionStorage.setItem("fiscalYear", store.state.fiscalYear);
+                        if (store.state.pageType == "schools") {
+                            window.location.href = "/schools/detail/" + store.state.educationOrganizationId;
+                        }
+                        if (store.state.pageType == "districts") {
+                            window.location.href = "/districts/detail/" + store.state.educationOrganizationId;
+                        }
+                        if (store.state.pageType == "state") {
+                            window.location.href = "/state-reports";
+                        }
+                    },
+                    onScroll: function (e) {
+                        offsetTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                        //show scollToTop button when the user scrolls the page and is down about 100 px
+                        this.scrollToTop.isVisible = offsetTop > 100;
+
+                        //show page title extension in app menu bar if user scrolled down more than 100 px.
+                        //also only if the pageTitle is set in store by the child component
+                        // change the color of the toolbar extension
+                        if (offsetTop > 0 && this.storeState.pageTitle.length > 0 && this.storeState.pageTitle != "SchoolList" && this.storeState.pageTitle != "DistrictList") {
+
+                            this.getExtensionToolBar(this.storeState.pageTitle);
+                            var toolBarExtension = document.getElementsByClassName('v-toolbar__extension');
+                            if (toolBarExtension.item(0) != null) {
+                                if (toolBarExtension.item(0).className.indexOf(' primary lighten-1') === -1) {
+                                    toolBarExtension.item(0).className += ' primary lighten-1';
+                                }
+                            }
+                        } else {
+                            this.showPageTitleInAppToolBar = false;
+                            this.showCompareMenuTooBar = false;
+                        }
+                    },
+                    getExtensionToolBar: function (pageTitle) {
+                        if (pageTitle.length == 0) {
+                            this.showPageTitleInAppToolBar = false;
+                            this.showCompareMenuTooBar = false;
+                        }
+                        else if (pageTitle == "Comparison") {
+                            this.showPageTitleInAppToolBar = false;
+                            this.showCompareMenuTooBar = true;
+                        } else {
+                            this.showPageTitleInAppToolBar = true;
+                            this.showCompareMenuTooBar = false;
+                        }
+                    },
+                    windowOpen: function (type) {
+                        switch (type) {
+                            case 'email':
+                                window.open('mailto:support@azed.gov', '_self');
+                                break;
+                            case 'fb':
+                                window.open('https://www.facebook.com/AZDeptofEducation', '_blank');
+                                break;
+                            case 'twitter':
+                                window.open('https://twitter.com/azedschools', '_blank');
+                                break;
+                            case 'instagram':
+                                window.open('https://www.instagram.com/azedschools/', '_blank');
+                                break;
+                            case 'home':
+                                window.location.href = "/Home";
+                                break;
+
+                            default:
+                        }
+                    },
+                    checkReleaseNotes: function () {
+                        if (localStorage.getItem("ReleaseNotes") == null) {
+                            localStorage.setItem("ReleaseNotes", "User");
+                            this.releaseNotesSnackBar = true;
+                        } else {
+                            this.releaseNotesSnackBar = false;
+                        }
+
+                    },
+                    navigateToComparison: function (typeOfList) {
+                        //typeOfList = typeOfList == "Compare Schools" ? "Schools" : "Districts";
+                        //window.location.href = "/Comparison/" + typeOfList;
+                        typeOfList = typeOfList == "Compare Schools" ? "Schools" : "Districts";
+                        window.location.href = "/Comparison/" + typeOfList;
+                    },
+                    fiscalYearChange: function (val) {
+                        this.selectedYear = val;
+                        store.setFiscalYear(this.selectedYear);
+                    },
+                    GetSearchProminent: () => {
+                        //debugger;
+                        if (true) {
+                            var theme = localStorage.getItem("themeId");
+                        }
+                    },
+                    getComparison: function (value, screensize, typeOfList) {
+                        if (screensize == "sm-up") {
+                            this.dialogMobile = true;
+                            this.dialog = false;
+                        } else {
+                            this.dialog = true;
+                            this.dialogMobile = false;
+                        }
+                        this.ListOfEntities = [];
+                        store.state.isListEmpty = true;
+                        this.dialogtitle = value;
+                        if (sessionStorage.getItem(typeOfList) != null && sessionStorage.getItem(typeOfList) != "[]") {
+                            store.state.isListEmpty = false;
+                            this.ListOfEntities = JSON.parse(sessionStorage.getItem(typeOfList));
+                            store.state.isAlertActive = this.ListOfEntities.length <= 2 ? true : false;
+                            store.state.isbtndisabled = this.ListOfEntities.length <= 0 ? true : false;
+
+                        } else { store.state.isbtndisabled = true; store.state.isAlertActive = true; }
+                        store.getStatusAlert(this.ListOfEntities, typeOfList);
+                    },
+                    removeEntities: function (entityID, typeOfList) {
+                        if (this.ListOfEntities.length > 0) {
+                            this.ListOfEntities = store.removefilter(this.ListOfEntities, entityID);
+                        }
+                        if (typeOfList == "Compare Schools") { store.removeSchools(entityID, 'entityList'); store.state.category = "entityList";}
+                        if (typeOfList == "Compare Districts") { store.removeSchools(entityID, 'districtList'); store.state.category = "districtList"; }
+                    },
+
+                    //Search functionality
+                    loadSearchResult: function (searchTermTypeId, edOrgId, searchTerm, type) {
+                        if (searchTermTypeId === 1 && type != "Private School") {
+                            //simulating going to school details
+                            store.showLoadingDialog(true);
+                            window.location.href = '/schools/detail/' + edOrgId;
+                        }
+                        else if (searchTermTypeId === 2) {
+                            //simulating going to school details
+                            store.showLoadingDialog(true);
+                            window.location.href = '/Districts/detail/' + edOrgId;
+                        }
+                        else {
+                            store.showLoadingDialog(true);
+                            localStorage.setItem("searchArea", searchTerm);
+                            window.location.href = '/search';
+                        }
+                        //}
+                    },
+                    searchSchoolDistrict: function (event) {
+                        this.loadSearchResult(this.searchSelectedItem && this.searchSelectedItem.searchTermTypeId,
+                            this.searchSelectedItem && this.searchSelectedItem.searchTermId, this.search, this.searchSelectedItem.type);
+                    },
+                    searchData: function (res) {
+                        this.searchItems = res.data;
+                        localStorage.setItem("sampleData", JSON.stringify(this.searchItems));
+                    },
+                    autoCompleteChange: function (event) {
+                        this.$nextTick(() => {
+                            this.search = '';
+                            this.searchSelectedItem = null;
+                        });
+                        },
+                    errorMethod: function (err) {
+                        console.log(err);
+                    },
+
+                    finally: function () {
+                        this.isSearchLoading = false;
+                    },
+                    setUpThemeColorsManually: function () {
+                        //some of the input elements are not taking in the set theme colors correctly, the below is a hack to fix those elements
+                        $('.secondaryTextColor--text input').addClass('secondaryTextColor--text');
+                    },
+                    toggleDrawer: function(){
+                        this.pageMenuDrawer = !this.pageMenuDrawer;
+                        this.showAttention = false;
+                    }
+                },
+
+                mounted: function () {
+                    var vm = this;
+                    //hide the appLoading div after the vue instance has been mounted
+                    vm.isAppLoading = false;
+                    //decide whether to show the left page nav drawer based on if child component set anything in store.state
+                    //vm.showPageMenuBar = typeof vm.storeState.pageMenu !== 'undefined' && vm.storeState.pageMenu.length > 0;
+                    if (vm.storeState.pageMenu !== 'undefined') {
+                        var pagemenu = _.find(vm.storeState.pageMenu, function (item) { return item.isActive == true; });
+                        vm.storeState.showPageMenuBar = (pagemenu == undefined && store.state.reportLevel=="") ? false : true;
+                        this.showAttention = true;
+                        this.showHint = true;
+                        setTimeout(() => {
+                            this.showAttention = false;
+                        }, 15000);
+                    }
+                    else {
+                        vm.storeState.showPageMenuBar = false;
+                        this.showAttention = false;
+                    }
+                    document.onreadystatechange = () => {
+                        if (document.readyState == "complete") {
+                            vm.setUpThemeColorsManually();
+                        }
+                    }
+                },
+                created: function () {
+                    //store.getCompareMenuExtension();
+                    this.checkReleaseNotes();
+                    this.loadSubgroups();
+                    store.getFiscalYearsList();
+                },
+                watch:{
+                    search: function (val) {
+                        // Items have already been loaded
+                        //if (this.searchItems.length > 0) return;
+                        if (val !== null && val.length > 0) {
+                            this.isSearchLoading = true;
+                            console.log("search:" + val);
+                            //Lazily load input items
+                            var url = "/api/Search/GetByName?nameToSearch='" + this.search + "'";
+                         window.axios.get(url)
+                                .then(this.searchData)
+                                .catch(this.errorMethod)
+                                .finally(this.finally);
+                        }
+                    },
+                    "store.state.pageMenu": function () {
+                        //debugger;
+                    }
+                }
+
+            });
+        }
+            </script>
+
+
+        </body>
+
+    </html>
