@@ -1,0 +1,57 @@
+{
+  "baseline": "V38 singapore_bounds",
+  "new_admitted_observations": 0,
+  "possible_champions": 25,
+  "choice": [
+    "Singapore"
+  ],
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "city": "Phoenix",
+  "input_bounds_sha256": "b04d8c506d956af31d746ba2ff07ab727b3e01b1970c6b97e2827b12ca3c9035",
+  "interpretation": "Hypothetical intervals [lo,lo+rho*(hi-lo)] require both adverse outcomes and limited residual width. Equal-width favorable intervals retain the original upper bound and cannot guarantee exclusion. Counts are distinct model criteria, not surveys or source files.",
+  "scenarios": [
+    {
+      "residual_fraction": 0,
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 25
+    },
+    {
+      "residual_fraction": 0.01,
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 25
+    },
+    {
+      "residual_fraction": 0.025,
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 25
+    },
+    {
+      "residual_fraction": 0.05,
+      "minimum_measurements": 5,
+      "minimal_bundle_count": 21
+    },
+    {
+      "residual_fraction": 0.1,
+      "minimum_measurements": 5,
+      "minimal_bundle_count": 21
+    },
+    {
+      "residual_fraction": 0.2,
+      "minimum_measurements": 5,
+      "minimal_bundle_count": 21
+    },
+    {
+      "residual_fraction": 0.5,
+      "minimum_measurements": null,
+      "minimal_bundle_count": 0
+    },
+    {
+      "residual_fraction": 1,
+      "minimum_measurements": null,
+      "minimal_bundle_count": 0
+    }
+  ]
+}

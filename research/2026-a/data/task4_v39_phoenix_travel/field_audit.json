@@ -1,0 +1,39 @@
+{
+  "file": "nlr_2017_data_elements.xlsx",
+  "fields": {
+    "EDUC": {
+      "sheet_xml": "xl/worksheets/sheet1.xml",
+      "row": 8,
+      "interpretation": "highest attained grade/degree, not current school stage"
+    },
+    "SCHTYP": {
+      "sheet_xml": "xl/worksheets/sheet1.xml",
+      "row": 25,
+      "values_sheet": "xl/worksheets/sheet2.xml",
+      "value_rows": [
+        4082,
+        4088
+      ],
+      "interpretation": "public/private versus home versus no school; not upper-secondary stage"
+    },
+    "CITY": {
+      "sheet_xml": "xl/worksheets/sheet1.xml",
+      "row": 40,
+      "table": "LOCATION",
+      "public_release_not_verified": true
+    },
+    "LATITUDE": {
+      "sheet_xml": "xl/worksheets/sheet1.xml",
+      "row": 141,
+      "table": "LOCATION",
+      "restricted_spatial_access": true
+    },
+    "LONGITUDE": {
+      "sheet_xml": "xl/worksheets/sheet1.xml",
+      "row": 152,
+      "table": "LOCATION",
+      "restricted_spatial_access": true
+    }
+  },
+  "admitted": false
+}

@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 有限精度补数 V39 | [Phoenix：5%残余区间下至少需5项](research/2026-a/results/task4_v39_finite_precision/README.md) |
 | 最新覆盖修订 V38 | [Singapore纳入748名预科学生并保留教师分配区间](research/2026-a/results/task4_v38_singapore/README.md) |
 | 校级资源诊断 V37 | [学生加权指标与缺失学校界](research/2026-a/results/task4_v37_school_resources/README.md) |
 | 最新补数诊断 V36 | [Delhi门槛4→3；London校级匹配](research/2026-a/results/task4_v36_acquisition/README.md) |
