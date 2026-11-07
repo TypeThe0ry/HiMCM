@@ -1,0 +1,46 @@
+{
+  "access_date": "2026-11-08",
+  "survey": "Bogota EODH2023, not DANE EM2021",
+  "official_landing": "https://observatorio.movilidadbogota.gov.co/publicaciones/resultados/encuesta-de-movilidad-2023",
+  "landing_state": "Parent web read succeeded; child repeat open returned502. Links resolved from successful page.",
+  "links": [
+    {
+      "kind": "questionnaires",
+      "url": "https://observatorio.movilidadbogota.gov.co/sites/default/files/2025-09/02_Formularios%20EODH.zip",
+      "advertised_contents": [
+        "Modulo D_E",
+        "Modulo A_B_C X",
+        "Tarjetas1_8"
+      ],
+      "web_result": "TimeoutError",
+      "direct_http2_result": "curl exit16 HTTP2 framing error",
+      "direct_http1_result": "curl exit52 empty reply",
+      "raw_downloaded": false
+    },
+    {
+      "kind": "raw_records_and_dictionary",
+      "url": "https://observatorio.movilidadbogota.gov.co/sites/default/files/2025-09/04_Base%20de%20datos%20sin%20procesar%20EODH_0.zip",
+      "web_result": "Timeout fetching",
+      "raw_downloaded": false
+    },
+    {
+      "kind": "processed_records",
+      "url": "https://observatorio.movilidadbogota.gov.co/sites/default/files/2025-09/05_Base%20datos%20procesada%20EODH.zip",
+      "web_result": "Timeout fetching",
+      "raw_downloaded": false
+    },
+    {
+      "kind": "results_booklet",
+      "url": "https://observatorio.movilidadbogota.gov.co/sites/default/files/2025-09/Cartilla%20Encuesta%20de%20Movilidad%202023.pdf",
+      "web_result": "Tool content-length limit; reported45322529bytes",
+      "advertised_bytes": 45322529,
+      "raw_downloaded": false
+    }
+  ],
+  "current_upper_secondary_enrollment_verified": false,
+  "absence_of_current_grade_question_verified": false,
+  "new_admitted_observations": 0,
+  "changed_model_cells": 0,
+  "main_admitted": false,
+  "next_action": "Try ordinary browser download of the now-resolved questionnaire ZIP. Inspect2023 current enrollment/grade fields before any person-trip extraction. Do not transfer EM2021 NPCHP codes or EODH2019 attainment interpretation."
+}

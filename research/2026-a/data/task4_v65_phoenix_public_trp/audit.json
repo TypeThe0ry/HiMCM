@@ -1,0 +1,27 @@
+{
+  "city": "Phoenix",
+  "decision": "exclude_from_high_school_commute",
+  "new_admissible_observations": 0,
+  "source": "https://geo.azmag.gov/arcgis/rest/services/infograph/TRPdashboard/MapServer",
+  "year": 2022,
+  "population": "regional workforce",
+  "table": "avgTripLengthMC",
+  "table_id": 1,
+  "fields": [
+    "OBJECTID",
+    "Cluster",
+    "Subregion",
+    "LiveWork",
+    "Mode",
+    "totalTrips",
+    "totalForCluster",
+    "avgMiles",
+    "avgMins",
+    "pctOfTravel"
+  ],
+  "student_count_field": null,
+  "school_site_field": null,
+  "age_or_grade_field": null,
+  "commute_minutes_field": "avgMins",
+  "reason": "Workforce aggregate average minutes do not identify high school students. totalTrips and totalForCluster are not verified student survey counts. No admissible observation is added; retain existing missing interval."
+}

@@ -1,0 +1,17 @@
+{
+  "model_version": "V63",
+  "latest_review": "V65",
+  "module": "task4_cape_2025_revision",
+  "factory": "cape_2025_bounds",
+  "baseline_ranks": "results/task4_v63_cape_2025/ranks.csv",
+  "baseline_scenario": "v63_ghs2025_age14_18",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "latest_acquisition_analysis": "results/task4_v64_continuous_acquisition/summary.json",
+  "main_admitted": false,
+  "scope": "Conditional ten-indicator evidence bounds; school stage, geography, period and survey limitations remain.",
+  "baseline_bounds": "results/task4_v63_cape_2025/utility_bounds.csv"
+}
