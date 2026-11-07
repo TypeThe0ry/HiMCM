@@ -1,0 +1,17 @@
+{
+  "scope": "Hope College and Career Readiness Academy, ADE ID969999",
+  "observed_endpoint": "/api/DataApi/Student Enrollment",
+  "observed_query_fields": [
+    "reportSection",
+    "fiscalYear",
+    "educationOrganizationId"
+  ],
+  "frontend_excerpt": "getAssessmentResults:function(){return window.axios.get(\"/api/DataApi/Student Enrollment\",{params:{reportSection:\"Student Enrollment\",fiscalYear:store.state.fiscalYear,educationOrganizationId:this.entity.educationOrganizationId}})},loadPieChartSeriesColors:function(n){var i=this,r,t;n.length>0&&(r=_.uniq(n,function(n){return n.subgroups})",
+  "chart_aggregation": "The All subgroup total is displayed as the enrollment chart count; no year-to-date calculation is performed in this frontend method.",
+  "snapshot_date_exposed": false,
+  "physical_online_scope_exposed": false,
+  "main_admission": false,
+  "previous_count_file": "../task4_v42_phoenix_coverage/hope_enrollment_fy2025.json",
+  "previous_count": 1178,
+  "reason": "Frontend routing and general guide do not establish the date, de-duplication, or program coverage of this historical API value."
+}

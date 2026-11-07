@@ -1,0 +1,42 @@
+{
+  "provider": "Tokyo Metropolitan Government, School Basic Survey 2025",
+  "education_scope": "Tokyo Metropolis national/public/private high schools, full-time and part-time regular courses; excludes correspondence courses and separately tabulated integrated secondary schools; main-duty teacher persons, not FTE",
+  "school_year_comparison": [
+    {
+      "year": 2024,
+      "date": "2024-05-01",
+      "schools": 429,
+      "students": 302411,
+      "main_duty_teachers": 19325,
+      "ptr": 15.64869340232859,
+      "utility": 0.4894172747625303
+    },
+    {
+      "year": 2025,
+      "date": "2025-05-01",
+      "schools": 430,
+      "students": 303468,
+      "main_duty_teachers": 19446,
+      "ptr": 15.605677260104907,
+      "utility": 0.4901051485487887
+    }
+  ],
+  "higher_education": {
+    "university_count": 143,
+    "ownership": {
+      "国立": 11,
+      "公立": 2,
+      "私立": 130
+    },
+    "count_location": "University headquarters, explicitly not faculty/student location",
+    "date": "2025-05-01",
+    "population": 14254039,
+    "population_vintage": "Original 2025-05-28 published estimate based on 2020 census; not a claim of latest rebased population",
+    "university_headquarters_density_per_100k": 1.0032244194084217,
+    "conditional_all_he_utility_lower": 0.5008048073339116,
+    "utility_upper": 1,
+    "finite_all_he_upper_supported": false,
+    "condition": "Accept recognized university headquarters as qualifying institutional location. Other HE types, branches and independently qualified institutions are not claimed exhausted.",
+    "not_measured": "Student seats, admissions, affordability, individual campus access, complete higher-education inventory"
+  }
+}
