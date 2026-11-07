@@ -39,3 +39,10 @@ The user explicitly made the Overleaf workspace the first priority on 2026-11-07
 - Keep the paper model understandable and concise, following the archived HiMCM judge guidance and concrete awarded-paper examples.
 - Prefer one core evaluation model, an evidence-backed revision, and focused validation. Additional methods need demonstrated value; do not add complexity to signal innovation.
 - Use `HiMCM-Overleaf/drafts/task4_paper_core.md` as the current presentation guide. Keep detailed extraction audits and exploratory algorithms in supporting material, while preserving conclusion-changing limitations in the main discussion.
+
+## Minimal manuscript edits — user instruction, 2026-11-07
+
+- Change only manuscript material strictly necessary for the explicitly requested task.
+- Do not edit other contributors' prose, equations, figures, citations, or formatting without explicit user authorization covering those changes. Do not infer that general manuscript editing or upload authorization permits rewriting their work.
+- Review the exact diff before every manuscript commit/push; preserve unrelated content and online edits. Do not perform incidental polishing or restructuring.
+- Research/model work does not authorize automatic manuscript updates. When ownership is unclear, preserve the existing content and ask before changing it.
