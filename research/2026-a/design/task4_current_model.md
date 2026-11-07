@@ -1,5 +1,7 @@
 # 当前模型：V48 实际高中年龄对齐（2026-11-07）
 
+V49新增[年份与行程目的审计](../results/task4_v49_evidence_audit/README.md)：Phoenix取得2023–24历史人数83，未用于填补2024–25；São Paulo的15条未知行程均有工作或私人事务停留，可恢复0条。重算全部名次与可能冠军不变，当前公式及V48入口继续适用。
+
 当前条件入口为[saopaulo_age_bounds()](../scripts/task4_saopaulo_age_revision.py)：在V47上将São Paulo从全年龄高中生调整为实际14—18岁当前高中在读者。原始年龄筛选得到1690人，1489人有核验通学、201人未知；同一配对家庭重抽样得到通学包络[0.4417949654,0.6071350870]。São Paulo仍第7，Singapore第1、Tokyo第2、Phoenix第24，可能冠军25城；其余249格不变。镜像来源与探索性抽样条件保留，不称设计有效置信区间。详见[V48对照](../results/task4_v48_saopaulo_age/README.md)。
 
 V47历史条件入口为[tokyo_coverage_bounds()](../scripts/task4_tokyo_coverage_revision.py)：在V46上纳入Tokyo六年制中等教育学校高中部3435名学生，学生总数306903；全校555名本务教师的高中部归属未知，保留H∈[0,555]。教育效用为15(19446+H)/(306903+15(19446+H))∈[0.4872927014,0.4943254278]。Tokyo仍第2、Singapore第1、Phoenix第24，可能冠军25城；其他249格不变。见[V47覆盖及范围对照](../results/task4_v47_tokyo_coverage/README.md)。通信制等其他课程未全部纳入，跨城范围条件保留。全城教育与通学完美补数证书在V47下仍为固定权重至少20城、连续偏好25城必然保留。

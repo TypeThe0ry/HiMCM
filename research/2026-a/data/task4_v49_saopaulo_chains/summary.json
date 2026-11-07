@@ -1,0 +1,199 @@
+{
+  "source": "Existing public research mirror of OD2023; no new official download",
+  "official_byte_identity_verified": false,
+  "scope": "Municipality 36, ESTUDA=4, actual IDADE 14..18",
+  "examined": 15,
+  "recovered": 0,
+  "intermediate_purpose_counts": {
+    "Trabalho Serviços": 8,
+    "Trabalho Comércio": 5,
+    "Assuntos Pessoais": 2
+  },
+  "preserved_status_counts": {
+    "observed_direct_journey": 1489,
+    "no_school_journey": 186,
+    "first_school_journey_not_from_home": 15
+  },
+  "model_inputs_changed": false,
+  "bootstrap_rerun": false,
+  "bootstrap_reason": "No recovered observations; V48 endpoints and all paired replicates remain unchanged by construction.",
+  "continuity_checks": {
+    "consecutive_journeys": 15,
+    "same_reported_date": 15,
+    "purpose_continuity": 15,
+    "zone_continuity": 15,
+    "clocks_match_duration": 15,
+    "times_nonoverlap": 15
+  },
+  "service_flag_note": "Layout states 1=Sim, 2=Não; these 60 DBF fields are raw 'N'. No numeric mapping or positive service inference imposed.",
+  "date_note": "Reported date equality checked; DATA calendar weekday is retained separately from DIA_SEM. No calendar recoding changes the V48 direct sample.",
+  "layout_purpose_rows": [
+    [
+      "123",
+      "MOTIVO_O",
+      "Motivo na Origem",
+      "591",
+      "592",
+      "2",
+      "1 - Trabalho Indústria"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "2 - Trabalho Comércio"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "3 - Trabalho Serviços"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "4 - Escola/Educação"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "5 - Compras"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "6 - Médico/Dentista/Saúde"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "7 - Recreação/Visitas/Lazer"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "8 - Residência"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "9 - Procurar Emprego"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "10 - Assuntos Pessoais"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "11 - Refeição"
+    ],
+    [
+      "124",
+      "MOTIVO_D",
+      "Motivo no Destino",
+      "593",
+      "594",
+      "2",
+      "idem ao anterior"
+    ]
+  ],
+  "layout_service_rows": [
+    [
+      "126",
+      "SERVIR_O",
+      "Servir Passageiro na Origem ",
+      "597",
+      "597",
+      "1",
+      "1 - Sim"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "2 - Não"
+    ],
+    [
+      "127",
+      "SERVIR_D",
+      "Servir Passageiro no Destino",
+      "598",
+      "598",
+      "1",
+      "1 - Sim"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "2 - Não"
+    ]
+  ],
+  "unchanged_v48_age14_18": {
+    "students": 1690,
+    "households_with_students": 1577,
+    "weighted_students": 428006.0216419989,
+    "ages": {
+      "14": 113,
+      "15": 373,
+      "16": 520,
+      "17": 463,
+      "18": 221
+    },
+    "status_counts": {
+      "observed_direct_journey": 1489,
+      "no_school_journey": 186,
+      "first_school_journey_not_from_home": 15
+    },
+    "utility_lower": 0.4608835464984256,
+    "utility_upper": 0.5882776732955644,
+    "sampling_lower": 0.4417949654221687,
+    "sampling_upper": 0.6071350869515446
+  }
+}
