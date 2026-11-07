@@ -1,0 +1,1166 @@
+
+  <!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<style>/* @see https://github.com/aFarkas/lazysizes#broken-image-symbol */.js img.lazyload:not([src]) { visibility: hidden; }/* @see https://github.com/aFarkas/lazysizes#automatically-setting-the-sizes-attribute */.js img.lazyloaded[data-sizes=auto] { display: block; width: 100%; }</style>
+<meta name="description" content="This Spotlight post uses geographic student and school location data to estimate commuting times for NYC’s elementary, middle, and high school students." />
+<link rel="canonical" href="https://steinhardt.nyu.edu/research-alliance/research/spotlight-nyc-schools/how-far-do-nyc-students-travel-get-school" />
+<meta property="og:site_name" content="NYU Steinhardt" />
+<meta property="og:type" content="Research" />
+<meta property="og:url" content="https://steinhardt.nyu.edu/research-alliance/research/spotlight-nyc-schools/how-far-do-nyc-students-travel-get-school" />
+<meta property="og:title" content="How Far Do NYC Students Travel to Get to School?" />
+<meta property="og:description" content="This Spotlight post uses geographic student and school location data to estimate commuting times for NYC’s elementary, middle, and high school students." />
+<meta property="og:image" content="https://steinhardt.nyu.edu/sites/default/files/styles/facebook/public/2021-01/ranycs-Travel-Time-Image-1.png?h=5b38e259&amp;itok=QLsXOiAm" />
+<meta property="og:image:url" content="https://steinhardt.nyu.edu/themes/custom/nyusteinhardt/images/og-image.jpg" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="NYU Steinhardt" />
+<meta property="og:updated_time" content="2026-09-25T12:58:03-0400" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@nyusteinhardt" />
+<meta name="twitter:description" content="This Spotlight post uses geographic student and school location data to estimate commuting times for NYC’s elementary, middle, and high school students." />
+<meta name="twitter:title" content="How Far Do NYC Students Travel to Get to School? | NYU Steinhardt" />
+<meta name="twitter:image" content="https://steinhardt.nyu.edu/sites/default/files/styles/twitter/public/2021-01/ranycs-Travel-Time-Image-1.png?h=5b38e259&amp;itok=8ZBY9XA9" />
+<meta name="msapplication-TileColor" content="#57068c" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "@id": "https://steinhardt.nyu.edu/research-alliance/research/spotlight-nyc-schools/how-far-do-nyc-students-travel-get-school",
+            "description": "This Spotlight post uses geographic student and school location data to estimate commuting times for NYC’s elementary, middle, and high school students.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "NYU Steinhardt",
+                "url": "https://steinhardt.nyu.edu/"
+            }
+        }
+    ]
+}</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/sites/default/files/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/sites/default/files/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/sites/default/files/favicons/favicon-16x16.png" />
+<link rel="manifest" href="/sites/default/files/favicons/site.webmanifest" />
+<link rel="mask-icon" href="/sites/default/files/favicons/safari-pinned-tab.svg" color="#57068c" />
+
+    <title>How Far Do NYC Students Travel to Get to School? | NYU Steinhardt</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_pJi6r4nm8pt-o4miUlpZQSEOKefS_WxMxM_3fP5ujS8.css?delta=0&amp;language=en&amp;theme=nyusteinhardt&amp;include=eJx9jF0OwyAMgy_Ez5kCpIUNCErC1t5-1bpq2steLNn-7EiMPlIb1LGruL5PUSw9Aye1tpXIJEXRLkSKbOJ_XnFTy7gwSj7ZxHNAdXCDzRxlLf1-ZR9rfj78WilANQMYVoaR5cK_iZt9zFCLZExG9mPcfABB8yj4FP9W1yjNii_A7VgO&amp;tnj1sx" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_eWpsxrhd5CaD4QOlzVpq9pEkrsQVx6zTZ2V8QmwuMBY.css?delta=1&amp;language=en&amp;theme=nyusteinhardt&amp;include=eJx9jF0OwyAMgy_Ez5kCpIUNCErC1t5-1bpq2steLNn-7EiMPlIb1LGruL5PUSw9Aye1tpXIJEXRLkSKbOJ_XnFTy7gwSj7ZxHNAdXCDzRxlLf1-ZR9rfj78WilANQMYVoaR5cK_iZt9zFCLZExG9mPcfABB8yj4FP9W1yjNii_A7VgO&amp;tnj1sx" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/26491","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJyFj11OAzEMhC-UnyMhb-ImASeObKd0OT1bBKq2D-VlpPk8smYSC8bEffLAYRrGvtSwjQqSzfvekrA2Q39hNhSXXucVkzUevuNY_2UNb-YFL4JaXQYDgh0lbljh2ljUHXdq4yNmWRMo_FpXmAvhm0GJ5ZBnH-AdbmfYHcHXHu_iTiViId6AnuBpxASBIjCr_vV4kLDGXBs1rZid7seLHjdQdNeGnxp_NHTOi_AbnJGNGA","theme":"nyusteinhardt","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"google\nnonGooglePixels\nnonGoogleScripts\nnonGoogleIframes","blocklist_classes":"customScripts\ncustomPixels","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-M3SZQS6"]},"dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":0}}},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.80000000000000004,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":[]},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetAppendNewWindowDisplay":true,"extTargetAppendNewWindowLabel":"(opens in a new window)","extTargetNoOverride":true,"extNofollow":false,"extTitleNoOverride":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"(.pdf)|(.doc)","extInclude":"","extCssExclude":".teaser__image--small, ul.main-menu, ul.secondary-nav__menu, footer.footer, ul.inline-menu","extCssInclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","extHideIcons":false,"mailtoClass":"0","telClass":"0","mailtoLabel":"(link sends email)","telLabel":"(link is a phone number)","extUseFontAwesome":false,"extIconPlacement":"append","extPreventOrphan":false,"extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","extAdditionalLinkClasses":"","extAdditionalMailtoClasses":"","extAdditionalTelClasses":"","extFaTelClasses":"fa fa-phone","allowedDomains":["steinhardt.nyu.edu"],"extExcludeNoreferrer":""}},"user":{"uid":0,"permissionsHash":"5e659327b1be463090de56e14686378a391f35da9e0d201258bc0640157f45ab"}}</script>
+<script src="/sites/default/files/js/js_UKlrmBpoO8XeBIAhcQSzQnErjeNKPc1dJTcsYRnf3Lc.js?scope=header&amp;delta=0&amp;language=en&amp;theme=nyusteinhardt&amp;include=eJxdjkEOwyAMwD4E5ElVChFlC0kFoSp7_TZph7UXS_bJURtB1LqrkFgPMkc3KrJhS-Z9p2hFxVeS4RIaMk5qsNKGR9HWHZ3GRZ6Q2tiRw09dVs1Mi2GG_MHdAz7wvMbqGF8TvnCXCcisK_It_o-9AX8kTKo&amp;tnj1sx"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?tnj1sx&amp;tnj1sx"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?tnj1sx&amp;tnj1sx"></script>
+
+  </head>
+  <body class="dark-bg">
+    <a href="#main-content" class="visually-hidden focusable skip-to-content">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3SZQS6"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+<div  class="layout-container page-research page-microsite-content">
+      
+                      
+    
+    
+  
+
+<header  class="header">
+  <div  class="header__inner">
+    <div id="logo" class="">
+      <a href="https://steinhardt.nyu.edu"><img src="https://steinhardt.nyu.edu/sites/default/files/2019-09/nyusteinhardt_logoKO-NEW.png" alt="Steinhardt School of Culture, Education, and Human Development"></a>
+    </div>
+    <div  class="header__right">
+            
+    
+            
+<button
+   class="header__search"
+      type="button"
+      role="button"
+      tabindex="0"
+      aria-label="Toggle Search"
+  >
+            
+<svg  class="header__search-icon"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="search"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#search"></use>
+</svg>
+
+          <span>Search</span>
+        </button>
+      </div><!-- right -->
+
+              <button id="toggle-expand" class="toggle-expand" aria-label="Main Navigation" aria-expanded="false">
+          <span class="toggle-expand__open">
+            
+<svg  class="toggle-expand__icon"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="bars"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#bars"></use>
+</svg>
+
+            <span class="toggle-expand__text visually-hidden">Open Main Menu</span>
+          </span>
+          <span class="toggle-expand__close">
+            
+<svg  class="toggle-expand__icon-close"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="close"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#close"></use>
+</svg>
+
+             <span class="toggle-expand__text visually-hidden">Close Main Menu</span>
+          </span>
+        </button>
+          </div><!-- inner -->
+</header>
+
+  
+            <div class="search-region">
+  <div class="search-region__overlay" role="dialog" aria-modal="true" aria-label="Search NYU Steinhardt">
+  <div class="search-region__inner">
+    
+<div  id="block-nyusteinhardt-headersearchblock" class="block">
+  
+      <h2 class="h2">Search NYU Steinhardt</h2>
+    
+      <form class="nyusteinhardt-core-header-search-form header-search-form" id="header-search-form" data-drupal-selector="nyusteinhardt-core-header-search-form" action="/search" method="get" accept-charset="UTF-8">
+  <div class="js-form-item form-item">
+      <label for="edit-header-search" class="visually-hidden form-item__label">Search</label>
+
+        <input class="header-search-input form-text form-item__textfield" aria-label="Search" data-drupal-selector="edit-header-search" type="text" id="edit-header-search" name="search" value="" size="60" maxlength="128" placeholder="Search" />
+
+
+        </div>
+
+  <div class="header-search-actions form-actions js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions-edit-submit"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit form-item__textfield" />
+
+</div>
+
+</form>
+
+
+<button
+   class="search-region__search-button-close"
+      type="button"
+      role="button"
+      tabindex="0"
+      aria-label="Close Search Overlay"
+      id="search-button-close"
+  >
+      
+<svg  class="search-region__close"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="close"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#close"></use>
+</svg>
+
+    <span class="visually-hidden">Close Search</span>
+  </button>
+
+  </div>
+
+
+    
+<svg  class="search-region__search"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="search"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#search"></use>
+</svg>
+
+
+  </div>
+</div>
+
+</div>
+
+      
+            
+  
+
+
+  
+  
+
+<div  class="site-menu">
+      <div  class="site-menu__img-wrapper">
+            <picture>
+                  <source srcset="/sites/default/files/styles/media_image_mobile/public/2019-08/14-003_NYU_277.jpg.webp?h=4b88f8a4&amp;itok=sA-mFZqM 560w, /sites/default/files/styles/short_hero_tablet/public/2019-08/14-003_NYU_277.jpg.webp?h=4b88f8a4&amp;itok=LEL8KH_E 850w, /sites/default/files/styles/short_hero/public/2019-08/14-003_NYU_277.jpg.webp?h=4b88f8a4&amp;itok=-qsPFYTu 938w, /sites/default/files/styles/short_hero_large/public/2019-08/14-003_NYU_277.jpg.webp?h=4b88f8a4&amp;itok=DvNo4Ikz 1024w, /sites/default/files/styles/1200scale/public/2019-08/14-003_NYU_277.jpg.webp?itok=olZ_Gwb2 1200w, /sites/default/files/styles/1400scale/public/2019-08/14-003_NYU_277.jpg.webp?itok=Mi1xrlKY 1400w, /sites/default/files/styles/1900scale/public/2019-08/14-003_NYU_277.jpg.webp?itok=FZo0vj0z 1900w" type="image/webp" sizes="100vw" width="850" height="300"/>
+              <source srcset="/sites/default/files/styles/media_image_mobile/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=sA-mFZqM 560w, /sites/default/files/styles/short_hero_tablet/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=LEL8KH_E 850w, /sites/default/files/styles/short_hero/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=-qsPFYTu 938w, /sites/default/files/styles/short_hero_large/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=DvNo4Ikz 1024w, /sites/default/files/styles/1200scale/public/2019-08/14-003_NYU_277.jpg?itok=olZ_Gwb2 1200w, /sites/default/files/styles/1400scale/public/2019-08/14-003_NYU_277.jpg?itok=Mi1xrlKY 1400w, /sites/default/files/styles/1900scale/public/2019-08/14-003_NYU_277.jpg?itok=FZo0vj0z 1900w" type="image/jpeg" sizes="100vw" width="850" height="300"/>
+                  <img srcset="/sites/default/files/styles/media_image_mobile/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=sA-mFZqM 560w, /sites/default/files/styles/short_hero_tablet/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=LEL8KH_E 850w, /sites/default/files/styles/short_hero/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=-qsPFYTu 938w, /sites/default/files/styles/short_hero_large/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=DvNo4Ikz 1024w, /sites/default/files/styles/1200scale/public/2019-08/14-003_NYU_277.jpg?itok=olZ_Gwb2 1200w, /sites/default/files/styles/1400scale/public/2019-08/14-003_NYU_277.jpg?itok=Mi1xrlKY 1400w, /sites/default/files/styles/1900scale/public/2019-08/14-003_NYU_277.jpg?itok=FZo0vj0z 1900w" sizes="100vw" width="560" height="315" src="/sites/default/files/styles/media_image_mobile/public/2019-08/14-003_NYU_277.jpg?h=4b88f8a4&amp;itok=sA-mFZqM" alt="" loading="lazy" />
+
+  </picture>
+
+                  <h1 class="h1 h1--large">
+        <span>
+          The Research Alliance for New York City Schools
+        </span>
+      </h1>
+          </div>
+    <div  class="site-menu__inner-img site-menu__inner-img--img-bg">
+      <div >
+                
+<div  id="block-micrositemenu" class="block">
+  
+    
+      
+
+
+
+
+    
+  
+
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<div  data-component-background="purple dark" data-component-width="wide" class="container container--section-menu container--with-bg" data-component-alignment="center" data-align-container-intro="left" data-component-spacing="one no-bottom">
+
+        
+  
+  <div  class="container__inner">
+    
+          
+    
+                          <nav  aria-label="Site Microsite Main Menu" data-section-menu="1" data-menu-mode="compact" class="section-menu">
+          <ul  class="section-menu__list">
+                                                                            
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link"
+            href="/research-alliance"
+                      ><span  class="section-menu__link-label">Home</span></a>
+        
+              </li>
+                                                                            
+      <li  class="section-menu__item section-menu__item--has-children">
+                  <a
+             class="section-menu__link"
+            href="/research-alliance/about-research-alliance-new-york-city-schools"
+                      ><span  class="section-menu__link-label">About</span></a>
+        
+                  <button
+            type="button"
+             class="section-menu__toggle"
+            aria-expanded="false"
+            aria-controls="section-menu-10804763-2-children"
+                        data-section-menu-toggle
+          >
+                        
+<svg  class="section-menu__toggle-icon"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="chevron"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#chevron"></use>
+</svg>
+
+                          <span class="visually-hidden">Toggle submenu for About</span>
+                      </button>
+          <div
+            id="section-menu-10804763-2-children"
+             class="section-menu__children"
+            hidden
+          >
+                <ul  class="section-menu__list section-menu__list--sub">
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/mission"
+                      ><span  class="section-menu__link-label">Mission</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/theory-action"
+                      ><span  class="section-menu__link-label">Theory of Action</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item section-menu__item--has-children">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/team"
+                      ><span  class="section-menu__link-label">Team</span></a>
+        
+                  <button
+            type="button"
+             class="section-menu__toggle"
+            aria-expanded="false"
+            aria-controls="section-menu-10804763-2-3-children"
+                        data-section-menu-toggle
+          >
+                        
+<svg  class="section-menu__toggle-icon"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="chevron"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#chevron"></use>
+</svg>
+
+                          <span class="visually-hidden">Toggle submenu for Team</span>
+                      </button>
+          <div
+            id="section-menu-10804763-2-3-children"
+             class="section-menu__children"
+            hidden
+          >
+                <ul  class="section-menu__list section-menu__list--sub">
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-3"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/team/executive-directors-note"
+                      ><span  class="section-menu__link-label">Executive Director</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-3"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/team-staff"
+                      ><span  class="section-menu__link-label">Staff</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-3"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/team/partners"
+                      ><span  class="section-menu__link-label">Partners</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-3"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/team/affiliates"
+                      ><span  class="section-menu__link-label">Affiliates</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-3"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/team/steering-committee"
+                      ><span  class="section-menu__link-label">Steering Committee</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-3"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/team/youth-advisory-council-yac"
+                      ><span  class="section-menu__link-label">Youth Advisory Council</span></a>
+        
+              </li>
+      </ul>
+
+          </div>
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/careers"
+                      ><span  class="section-menu__link-label">Careers</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/testimonials"
+                      ><span  class="section-menu__link-label">Testimonials</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/funders"
+                      ><span  class="section-menu__link-label">Funding</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/about-research-alliance-new-york-city-schools/frequently-asked-questions"
+                      ><span  class="section-menu__link-label">FAQ</span></a>
+        
+              </li>
+      </ul>
+
+          </div>
+              </li>
+                                                                            
+      <li  class="section-menu__item section-menu__item--has-children">
+                  <a
+             class="section-menu__link section-menu__link--active"
+            href="/research-alliance/research"
+                      ><span  class="section-menu__link-label">Research</span></a>
+        
+                  <button
+            type="button"
+             class="section-menu__toggle"
+            aria-expanded="false"
+            aria-controls="section-menu-10804763-3-children"
+                        data-section-menu-toggle
+          >
+                        
+<svg  class="section-menu__toggle-icon"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="chevron"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#chevron"></use>
+</svg>
+
+                          <span class="visually-hidden">Toggle submenu for Research</span>
+                      </button>
+          <div
+            id="section-menu-10804763-3-children"
+             class="section-menu__children"
+            hidden
+          >
+                <ul  class="section-menu__list section-menu__list--sub">
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--active section-menu__link--level-2"
+            href="/research-alliance/research/spotlight-nyc-schools"
+                      ><span  class="section-menu__link-label">Spotlight on NYC Schools</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/research/publications"
+                      ><span  class="section-menu__link-label">Publications</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/research/projects"
+                      ><span  class="section-menu__link-label">Projects</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/research/education-research-resources"
+                      ><span  class="section-menu__link-label">Resources</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/research/school-level-master-file"
+                      ><span  class="section-menu__link-label">Data Sets</span></a>
+        
+              </li>
+      </ul>
+
+          </div>
+              </li>
+                                                                            
+      <li  class="section-menu__item section-menu__item--has-children">
+                  <a
+             class="section-menu__link"
+            href="/research-alliance/news"
+                      ><span  class="section-menu__link-label">News</span></a>
+        
+                  <button
+            type="button"
+             class="section-menu__toggle"
+            aria-expanded="false"
+            aria-controls="section-menu-10804763-4-children"
+                        data-section-menu-toggle
+          >
+                        
+<svg  class="section-menu__toggle-icon"
+
+      aria-hidden="true" role="img" focusable="false" aria-label="chevron"
+  
+  
+  
+  
+  
+  >
+        <use xlink:href="/themes/custom/nyusteinhardt/dist/assets/icons.svg?v=tnhzfm#chevron"></use>
+</svg>
+
+                          <span class="visually-hidden">Toggle submenu for News</span>
+                      </button>
+          <div
+            id="section-menu-10804763-4-children"
+             class="section-menu__children"
+            hidden
+          >
+                <ul  class="section-menu__list section-menu__list--sub">
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/news/announcements"
+                      ><span  class="section-menu__link-label">Announcements</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/news/press-releases"
+                      ><span  class="section-menu__link-label">Press Releases</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/news/in-the-news"
+                      ><span  class="section-menu__link-label">In the News</span></a>
+        
+              </li>
+                                                                                          
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link section-menu__link--level-2"
+            href="/research-alliance/news/subscribe-research-alliance-new-york-city-schools-newsletter"
+                      ><span  class="section-menu__link-label">Subscribe</span></a>
+        
+              </li>
+      </ul>
+
+          </div>
+              </li>
+                                                                            
+      <li  class="section-menu__item">
+                  <a
+             class="section-menu__link"
+            href="/research-alliance/contact-us"
+                      ><span  class="section-menu__link-label">Contact Us</span></a>
+        
+              </li>
+      </ul>
+
+    </nav>
+  
+          
+      </div>
+
+        </div>
+
+
+  
+
+
+  </div>
+
+
+          </div>
+    </div>
+  </div>
+
+      
+      
+    
+    
+  
+                  <div>
+    
+<div  id="block-views-block-announcements-block-1" class="block views-element-container">
+  
+    
+        <div region="alert"><div class="js-view-dom-id-5684bdc63518b2ff22fcb007b18e7c274634bed2fb8ca9f2649c85edcb3d965a">
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+
+  </div>
+
+        
+  <main role="main"  class="main">
+    <a id="main-content" tabindex="-1"></a>
+        
+  
+    <div  class="main__inner">
+                        
+  
+
+
+
+
+
+  
+
+
+
+  
+
+  
+  
+  
+        
+  
+
+
+
+
+
+
+<div  data-component-background="white light" data-component-width="wide" data-texture="city-grid-5" data-texture-alignment="right" data-component-layout="inline" class="container container--page-header container--with-bg" data-component-alignment="right" data-align-container-intro="left" data-component-spacing="two one-bottom">
+
+  
+  <div  class="container__inner">
+                
+  
+    
+          
+    
+            <div  class="page-header page-header--default page-header--small-image">
+    
+    
+
+<h1  class="page-header__heading" >
+      How Far Do NYC Students Travel to Get to School?
+  </h1>
+
+
+
+    
+    
+      </div>
+
+    
+
+  
+      </div>
+
+        </div>
+
+        
+
+
+
+
+
+        
+              <div  class="pre-content pre-content--no-hero-image">
+              
+
+      <div data-drupal-messages-fallback class="hidden"></div>
+
+    
+    
+
+    <div class="pre-content--inner">
+      
+      
+    </div>
+  
+          </div>
+      
+      <div  class="main__inner-content">
+        
+        <div  class="main-content">
+                  
+
+
+
+<article  class="node node--research">
+
+  
+    
+
+    <div class="node-content">
+        
+<div  class="research">
+
+  
+  
+  
+  </div>
+
+    
+
+  
+
+
+
+
+
+
+
+            
+
+  
+
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<div  data-component-background="white light" data-component-width="content" class="container container--text-refresh container--with-bg" data-component-alignment="center" data-align-container-intro="center" data-component-spacing="two half-bottom">
+
+        
+  
+  <div  class="container__inner">
+    
+          
+    
+                  <div  class="text-refresh" data-text-layout="stacked">
+                                        
+
+<div  class="text-refresh__item text-refresh__item--1 text-long">
+        <p>Public school students in New York City have a wide range of educational options available to them. This includes traditional neighborhood zoned schools, magnet and Gifted &amp; Talented programs, dual language schools, charter schools, exam-based specialized high schools, and more than 750 programs (in 435 different schools) that are part of the citywide high school choice process.</p><p>Given this plethora of options across the City’s five boroughs, it is possible that many students are experiencing long commutes to school. This Spotlight post uses geographic student and school location data to estimate commuting times on foot or by public transportation for NYC’s elementary, middle, and high school students.<a href="#footnote-header">[1]</a> While not all students travel to school in this way, a large majority do.</p><p>Our findings indicate that:</p><ul><li><strong>Travel times increase with student age.</strong> If students commute to school by foot and/or public transportation, we estimate that:<ul><li>The average kindergarten student lives 10 minutes from their school;</li><li>The average 6th grader lives 17 minutes from their school.</li><li>The average 9th grader lives 31 minutes from their school.</li></ul></li><li><strong>At all levels, Black students travel significantly further</strong> to school than students from other racial/ ethnic backgrounds. For example, the average Black 6th grader lives 20 minutes from school, more than the average White (18 min), Asian (17), or Latino (15) 6th grade student. In 9th grade, the average black student lives 34 minutes from school, more than the average Asian (32), Latino (30), or White (29) 9th&nbsp;grader. Each of these commute times are in one direction only.</li><li><strong>In kindergarten and 6th grade, students attending charter schools travel much further</strong> to school than students attending traditional public schools, but the pattern reverses in high school, with charter school students attending closer to home.</li></ul><p><strong>Group differences in commuting times are driven </strong><em><strong>in part</strong></em><strong> by residential segregation.</strong> The map below illustrates geographic differences in mean travel time for 9th graders by NYC census tract.</p>
+  </div>
+
+                                                
+        </div>
+          
+      </div>
+
+        </div>
+
+  
+
+
+
+
+  
+  
+    
+
+  
+<div  data-component-width="standard" data-component-bg-color="white" data-component-title-color="purple" data-component-padding="medium" data-component-margin="none" data-component-grid-item-size="unset" class="component component--white">
+  <div  class="component__inner component__inner--no-bottom-padding">
+    
+        
+  <figure>
+    <figcaption>
+     <h2>Map: Average Minutes of Travel Time to School by Public Transportation (One Way) for 9th Grade Students, by Census Tract, 2013-2014 School Year</h2>
+    <img src="https://steinhardt.nyu.edu/sites/default/files/2021-01/ranycs-Travel-Time-Image-1.png" width="1024" height="994" border="0" alt="" />
+        <p>As reflected in the map, certain neighborhoods of the City have systematically longer commute times to school by public transportation. These include remote neighborhoods in the Bronx (e.g., Eastchester and Co-op City, Soundview and Castle Hill), Queens (College Point, Whitestone, Ozone Park), Brooklyn (Canarsie, Marine Park, East New York), and Staten Island (Bloomfield). These areas have less access to public transportation—especially subways—and families there may rely more on transportation by car or school bus, where available. Not all NYC schools offer school bus transportation, but the ones that do tend to be in neighborhoods less well served by public transport.</p>
+    </figcaption>
+</figure>
+
+
+    </div>
+</div>
+  
+
+
+
+
+
+
+
+            
+
+  
+
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<div  data-component-background="white light" data-component-width="content" class="container container--text-refresh container--with-bg" data-component-alignment="center" data-align-container-intro="center" data-component-spacing="two">
+
+        
+  
+  <div  class="container__inner">
+    
+          
+    
+                  <div  class="text-refresh" data-text-layout="stacked">
+                                        
+
+<div  class="text-refresh__item text-refresh__item--1 text-long">
+        <p><strong>Other factors, besides residential segregation, also appear to influence commute time</strong>. For instance, even after controlling for students’ residential location and charter attendance, we found that Black students experience longer commutes (although the differences between groups are smaller). Likewise, the patterns seen for students in charter schools hold even after controlling for the location of a student’s home. In 6th and 9th grade, higher-achieving students travel further to school than students who perform worse on standardized tests of math and reading.</p>
+
+<p>It is hard to know whether longer commutes are good or bad for students. On the one hand, families may be willing to send their child on a longer bus or subway ride to a school that helps them succeed. On the other hand, long commutes may take time away from schoolwork or decrease student engagement with school.</p>
+
+<p>It is worth noting that the travel times presented here are in one direction and thus apply both to and from school. Furthermore, these minutes accrue every school day and accumulate over time. An additional 2 to 5 minutes one way translates to 12 to 15 hours of additional commuting time over the course of a school year. For students at the far end of the distribution—like the 10 percent of 9th graders who travel nearly an hour or more <em>each way</em>—the commute to school is long indeed.</p>
+  </div>
+
+                                                
+        </div>
+          
+      </div>
+
+        </div>
+
+  
+
+
+
+
+
+
+
+            
+
+  
+
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<div  data-component-background="white light" data-component-width="content" class="container container--text-refresh container--with-bg" data-component-alignment="center" data-align-container-intro="center" data-component-spacing="two">
+
+        
+  
+  <div  class="container__inner">
+    
+          
+    
+                  <div  class="text-refresh" data-text-layout="stacked">
+                                        
+
+<div  class="text-refresh__item text-refresh__item--1 text-long">
+        <h2>Big Questions:</h2>
+
+<ul>
+	<li>What factors explain Black students’ longer average commuting times?</li>
+	<li>How does the availability of high-quality school options vary based on neighborhood and students’ race/ethnicity? (We begin to address this question in our <em><a href="https://www.urban.org/research/publication/school-choice-and-commuting/view/full_report">School Choice and Commuting</a></em> paper, published by the Urban Institute.)</li>
+	<li>To what extent are longer travel times driven by students’ <em>choices</em>, and to what extent are they driven by differences in the schools to which students are being <em>matched</em> by the NYC DOE? (Again, see <em><a href="https://www.urban.org/research/publication/school-choice-and-commuting/view/full_report">School Choice and Commuting</a></em>.)</li>
+	<li>What are the costs and benefits of longer commutes for students, families and communities?</li>
+</ul>
+
+<p>&nbsp;</p>
+  </div>
+
+                                                
+        </div>
+          
+      </div>
+
+        </div>
+
+  
+
+
+
+
+
+
+
+            
+
+  
+
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<div  data-component-background="white light" data-component-width="content" class="container container--text-refresh container--with-bg" data-component-alignment="center" data-align-container-intro="center" data-component-spacing="two">
+
+        
+  
+  <div  class="container__inner">
+    
+          
+    
+                  <div  class="text-refresh" data-text-layout="stacked">
+                                        
+
+<div  class="text-refresh__item text-refresh__item--1 text-long">
+        <p>This post was authored by Sean Corcoran, Associate Professor of Public Policy and Education at Vanderbilt University and Senior Technical Advisor to the Research Alliance for NYC Schools.</p>
+
+<p>&nbsp;</p>
+  </div>
+
+                                                
+        </div>
+          
+      </div>
+
+        </div>
+
+  
+
+
+
+
+
+  
+
+            
+
+  
+
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<div  data-component-background="gray-light light" data-component-width="content" class="container container--text-refresh container--with-bg" data-component-alignment="center" data-align-container-intro="center" data-component-spacing="two">
+
+        
+  
+  <div  class="container__inner">
+    
+          
+    
+                  <div  class="text-refresh" data-text-layout="stacked">
+                                        
+
+<div  class="text-refresh__item text-refresh__item--1 text-long">
+        <h4 id="footnote-header">Footnotes</h4>
+
+<p><a href="#_ednref1">[1]</a> This post highlights select findings from one in a series of studies on school choice and transportation published by the Urban Institute. The analysis focuses on kindergarten, 6th grade and 9th grade students. Travel estimates assume that students walk or take public transportation to school, an assumption that we believe holds for most NYC students. All results are for the 2013-14 academic year, the most recent year for which geocoded data was available at the time of the analysis.</p>
+
+<p>&nbsp;</p>
+
+<h5>How to Cite this Spotlight</h5>
+
+<p><span><span><span><span><span><span>Corcoran, S. 2018. "How Far Do NYC Students Travel to Get to School?" </span></span></span></span></span></span><span><span><span><span><em><span>Spotlight on NYC Schools</span></em></span></span></span></span><span><span><span><span><span><span>. Research Alliance for New York City Schools.</span></span></span></span></span></span></p>
+  </div>
+
+                                                
+        </div>
+          
+      </div>
+
+        </div>
+
+  
+
+
+
+
+  
+  
+    
+
+
+<div  data-component-width="standard" data-component-bg-color="white" data-component-title-color="purple" data-component-padding="medium" data-component-margin="none" data-component-grid-item-size="unset" class="component component--white">
+  <div  class="component__inner">
+    
+        
+  <style>
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+
+
+    </div>
+</div>
+
+
+
+        </div>
+
+</article>
+
+
+
+
+          </div>
+      </div>
+
+                  
+
+<footer  class="microsite-footer">
+  <div  class="microsite-footer__texture"></div>
+
+  <div  class="microsite-footer__inner">
+    <div  class="microsite-footer__top">
+      <p  class="microsite-footer__branding">
+        Steinhardt School of Culture,<br />Education, and Human Development
+      </p>
+
+      <ul  class="microsite-footer__links">
+        <li>
+          <a href="https://www.nyu.edu/footer/copyright-and-fair-use/digital-privacy-statement.html"  class="microsite-footer__link">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="https://www.nyu.edu/footer/accessibility.html"  class="microsite-footer__link">Accessibility</a>
+        </li>
+      </ul>
+    </div>
+
+    <p  class="microsite-footer__copyright">
+      This site, and all its contents, are Copyright &copy; 2026 by New York University. All rights reserved.
+    </p>
+
+    <p  class="microsite-footer__nondiscrimination">
+      New York University is committed to maintaining an environment that encourages and fosters respect for individual values and appropriate conduct among all persons. In all University spaces—physical and digital—programming, activities, and events are carried out in accordance with applicable law as well as University policy, which includes but is not limited to its <a href="https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/harassment-and-discrimination.html" target="_blank">Non-Discrimination and Anti-Harassment Policy</a>.
+    </p>
+  </div>
+</footer>
+
+
+          </div>
+  </main>
+
+</div>
+
+  </div>
+
+    <script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"drupalLanguage":"en","drupalCountry":"US","siteName":"NYU Steinhardt","entityCreated":"1583947528","entityType":"node","entityBundle":"research","entityId":"26491","entityTitle":"How Far Do NYC Students Travel to Get to School?","userUid":0});</script>
+
+    <script src="/sites/default/files/js/js_GFW2tZugHzJcqyTIKeBIupdQQeE7Tuwa4Rl-FdTmaow.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=nyusteinhardt&amp;include=eJxdjkEOwyAMwD4E5ElVChFlC0kFoSp7_TZph7UXS_bJURtB1LqrkFgPMkc3KrJhS-Z9p2hFxVeS4RIaMk5qsNKGR9HWHZ3GRZ6Q2tiRw09dVs1Mi2GG_MHdAz7wvMbqGF8TvnCXCcisK_It_o-9AX8kTKo&amp;tnj1sx"></script>
+<script src="//apply.steinhardt.nyu.edu/ping" async></script>
+<script src="/sites/default/files/js/js_dS1aIpw4tfXPATSlwi2BR8G8JePJi9XW2LNriYjWJpg.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=nyusteinhardt&amp;include=eJxdjkEOwyAMwD4E5ElVChFlC0kFoSp7_TZph7UXS_bJURtB1LqrkFgPMkc3KrJhS-Z9p2hFxVeS4RIaMk5qsNKGR9HWHZ3GRZ6Q2tiRw09dVs1Mi2GG_MHdAz7wvMbqGF8TvnCXCcisK_It_o-9AX8kTKo&amp;tnj1sx"></script>
+
+  </body>
+</html>
+
