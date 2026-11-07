@@ -1,0 +1,310 @@
+{
+  "main_admitted": false,
+  "baseline_matrix_sha256": "7035676c70ba6b2ae88cf6cc4a966036e5521c1ad24eae51f342f1f97768711f",
+  "outcome_weight_grid": [
+    0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "continuous_auxiliary_weight_range": [
+    0.05,
+    0.2
+  ],
+  "source_inputs": [
+    {
+      "path": "data/task4_v18_nyc_quality/graduation_summary.json",
+      "sha256": "086a8b0f41961bf61d68a5355e2d6275405816c8ccf29ada9a5a1d0bd2a0030a"
+    },
+    {
+      "path": "results/task4_v14_duplicate_budget/summary.json",
+      "sha256": "cd838600c531d77f813d324e056b153e9c4818f779628cb8f29f8f99c3c58465"
+    },
+    {
+      "path": "results/task4_v16_combined/utility_bounds.csv",
+      "sha256": "c616b4a78ee79232f0621361491f7f129539aa17400bf92daf77888629a9752b"
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "unknown_outcome",
+      "outcome_weight": 0,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 46.28203696693548,
+      "mean_score_width": 37.865699806543994,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "unknown_outcome",
+      "outcome_weight": 0.05,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 47.65864920666461,
+      "mean_score_width": 39.54258722649655,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 30.566024790349402,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "unknown_outcome",
+      "outcome_weight": 0.1,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 49.05747716571609,
+      "mean_score_width": 41.2324902306627,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "unknown_outcome",
+      "outcome_weight": 0.2,
+      "nyc_decision_rank": 19,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 51.93626326097956,
+      "mean_score_width": 44.6725618359929,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 37.449414984631865,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_unrestricted",
+      "outcome_weight": 0,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 46.28203696693548,
+      "mean_score_width": 37.865699806543994,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_unrestricted",
+      "outcome_weight": 0.05,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 47.65864920666461,
+      "mean_score_width": 39.54066547459395,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 30.566024790349402,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_unrestricted",
+      "outcome_weight": 0.1,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 49.05747716571609,
+      "mean_score_width": 41.228732647103804,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_unrestricted",
+      "outcome_weight": 0.2,
+      "nyc_decision_rank": 19,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 51.93626326097956,
+      "mean_score_width": 44.66538340531662,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 37.449414984631865,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "nyc2024_only",
+      "outcome_weight": 0,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 46.28203696693548,
+      "mean_score_width": 37.865699806543994,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "nyc2024_only",
+      "outcome_weight": 0.05,
+      "nyc_decision_rank": 10,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 43.77675215171317,
+      "mean_score_width": 39.38731134429849,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 30.566024790349402,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "nyc2024_only",
+      "outcome_weight": 0.1,
+      "nyc_decision_rank": 4,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 41.5291848006099,
+      "mean_score_width": 40.931358536058454,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "nyc2024_only",
+      "outcome_weight": 0.2,
+      "nyc_decision_rank": 2,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 37.53681716432737,
+      "mean_score_width": 44.09658399212682,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 37.449414984631865,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_nyc2024",
+      "outcome_weight": 0,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 46.28203696693548,
+      "mean_score_width": 37.865699806543994,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_nyc2024",
+      "outcome_weight": 0.05,
+      "nyc_decision_rank": 10,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 43.77675215171317,
+      "mean_score_width": 39.38538959239589,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 30.566024790349402,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_nyc2024",
+      "outcome_weight": 0.1,
+      "nyc_decision_rank": 4,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 41.5291848006099,
+      "mean_score_width": 40.92760095249957,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_nyc2024",
+      "outcome_weight": 0.2,
+      "nyc_decision_rank": 2,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 37.53681716432737,
+      "mean_score_width": 44.08940556145053,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 37.449414984631865,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_nyc2025",
+      "outcome_weight": 0,
+      "nyc_decision_rank": 18,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 46.28203696693548,
+      "mean_score_width": 37.865699806543994,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_nyc2025",
+      "outcome_weight": 0.05,
+      "nyc_decision_rank": 10,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 43.84230062418364,
+      "mean_score_width": 39.38801153129471,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 30.566024790349402,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_nyc2025",
+      "outcome_weight": 0.1,
+      "nyc_decision_rank": 4,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 41.62829915805769,
+      "mean_score_width": 40.93156552679748,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "phoenix_nyc2025",
+      "outcome_weight": 0.2,
+      "nyc_decision_rank": 2,
+      "phoenix_decision_rank": 24,
+      "nyc_score_width": 37.64357656076055,
+      "mean_score_width": 44.09367593730785,
+      "fixed_possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 37.449414984631865,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    }
+  ]
+}

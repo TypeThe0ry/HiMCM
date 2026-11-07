@@ -1,0 +1,158 @@
+{
+  "source_sha256": "d068f97e96e00ec09b7c1db3ad4914bbd5487f8eac3952c52493d3e18042e603",
+  "source_rows_validated": 48,
+  "rows": [
+    {
+      "city": "New York",
+      "cohort_entry_year": 2021,
+      "graduation_class_year": 2025,
+      "outcome_period": "4 year August",
+      "cohort": 72283,
+      "graduates": 58660,
+      "known_non_graduation": 13574,
+      "unknown_outcomes": 49,
+      "reported_rate": 0.8115324488468935,
+      "diploma_outcome_lower": 0.8115324488468935,
+      "diploma_outcome_upper": 0.8122103399139493,
+      "source_sheet": "All",
+      "source_excel_row": 2
+    },
+    {
+      "city": "New York",
+      "cohort_entry_year": 2020,
+      "graduation_class_year": 2024,
+      "outcome_period": "4 year August",
+      "cohort": 68882,
+      "graduates": 57353,
+      "known_non_graduation": 11495,
+      "unknown_outcomes": 34,
+      "reported_rate": 0.8326268110682036,
+      "diploma_outcome_lower": 0.8326268110682036,
+      "diploma_outcome_upper": 0.8331204088150751,
+      "source_sheet": "All",
+      "source_excel_row": 3
+    },
+    {
+      "city": "New York",
+      "cohort_entry_year": 2021,
+      "graduation_class_year": 2025,
+      "outcome_period": "4 year June",
+      "cohort": 72283,
+      "graduates": 56653,
+      "known_non_graduation": 15581,
+      "unknown_outcomes": 49,
+      "reported_rate": 0.7837665841207476,
+      "diploma_outcome_lower": 0.7837665841207476,
+      "diploma_outcome_upper": 0.7844444751878035,
+      "source_sheet": "All",
+      "source_excel_row": 12
+    },
+    {
+      "city": "New York",
+      "cohort_entry_year": 2020,
+      "graduation_class_year": 2024,
+      "outcome_period": "4 year June",
+      "cohort": 68882,
+      "graduates": 55435,
+      "known_non_graduation": 13413,
+      "unknown_outcomes": 34,
+      "reported_rate": 0.804782091112337,
+      "diploma_outcome_lower": 0.804782091112337,
+      "diploma_outcome_upper": 0.8052756888592085,
+      "source_sheet": "All",
+      "source_excel_row": 13
+    }
+  ],
+  "main_admitted": false,
+  "estimand": "NYC accountability cohort, charter-excluded, some out-of-district placements included; all current city residents not identified",
+  "outcome": "Local or Regents diploma within four years; June and August reported separately",
+  "missing_outcome_rule": "Nonnegative residual between cohort and listed mutually exclusive outcomes is unknown; observed diploma count is lower bound and all residual cases graduating is upper bound. Administrative reported rate itself is G/N.",
+  "limitations": [
+    "No charter or all-resident coverage weight",
+    "Some private placements paid by NYC included",
+    "NYC diploma rules differ from Arizona; this is a conditional administrative completion comparison, not harmonized learning quality",
+    "Unknown outcomes must not automatically be treated as known non-graduates",
+    "Historical COVID Regents waivers affect cross-cohort interpretation"
+  ],
+  "scopes": {
+    "2024": {
+      "year": 2024,
+      "cohort_entry_year": 2020,
+      "period": "4 year August",
+      "lower": 0.8326268110682036,
+      "upper": 0.8331204088150751,
+      "graduates": 57353,
+      "cohort": 68882,
+      "unknown_outcomes": 34,
+      "reported_rate": 0.8326268110682036,
+      "june_comparison": {
+        "city": "New York",
+        "cohort_entry_year": 2020,
+        "graduation_class_year": 2024,
+        "outcome_period": "4 year June",
+        "cohort": 68882,
+        "graduates": 55435,
+        "known_non_graduation": 13413,
+        "unknown_outcomes": 34,
+        "reported_rate": 0.804782091112337,
+        "diploma_outcome_lower": 0.804782091112337,
+        "diploma_outcome_upper": 0.8052756888592085,
+        "source_sheet": "All",
+        "source_excel_row": 13
+      }
+    },
+    "2025": {
+      "year": 2025,
+      "cohort_entry_year": 2021,
+      "period": "4 year August",
+      "lower": 0.8115324488468935,
+      "upper": 0.8122103399139493,
+      "graduates": 58660,
+      "cohort": 72283,
+      "unknown_outcomes": 49,
+      "reported_rate": 0.8115324488468935,
+      "june_comparison": {
+        "city": "New York",
+        "cohort_entry_year": 2021,
+        "graduation_class_year": 2025,
+        "outcome_period": "4 year June",
+        "cohort": 72283,
+        "graduates": 56653,
+        "known_non_graduation": 15581,
+        "unknown_outcomes": 49,
+        "reported_rate": 0.7837665841207476,
+        "diploma_outcome_lower": 0.7837665841207476,
+        "diploma_outcome_upper": 0.7844444751878035,
+        "source_sheet": "All",
+        "source_excel_row": 12
+      }
+    }
+  },
+  "source_notes": [
+    {
+      "sheet": "NOTES",
+      "row": 2,
+      "meaning": "Cohort follows first grade-9 entry; graduation is Local or Regents diploma"
+    },
+    {
+      "sheet": "NOTES",
+      "row": 9,
+      "meaning": "Charter schools excluded"
+    },
+    {
+      "sheet": "NOTES",
+      "row": 16,
+      "meaning": "Citywide cohort includes out-of-district placements; school-level sums do not reproduce it"
+    },
+    {
+      "sheet": "NOTES",
+      "row": 17,
+      "meaning": "Some students have unknown graduation outcomes, so the reported outcome categories do not always sum to cohort"
+    },
+    {
+      "sheet": "NOTES",
+      "row": 3,
+      "meaning": "Some previous cohorts revised for NYC-paid private placements with IEPs"
+    }
+  ]
+}

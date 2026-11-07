@@ -23,8 +23,12 @@ def comparison(u,v):
 
 
 def feasible_preferences(candidate,challengers,alpha_min=.05,alpha_max=.2,tol=1e-12):
+    return feasible_polynomials([comparison(candidate,r) for r in challengers],alpha_min,alpha_max,tol)
+
+
+def feasible_polynomials(polys,alpha_min=.05,alpha_max=.2,tol=1e-12):
+    """Common nonnegative region of comparison polynomials on an interval."""
     if not 0<alpha_min<=alpha_max<1:raise ValueError('Interior alpha interval required')
-    polys=[comparison(candidate,r) for r in challengers]
     cuts=[float(alpha_min),float(alpha_max)]
     for p in polys:
         q=np.trim_zeros(p,'b')

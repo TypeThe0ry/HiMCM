@@ -1,0 +1,32 @@
+{
+  "accessed": "2026-11-07",
+  "new_admissible_city_observations": 0,
+  "cohort_denominators_obtained": false,
+  "weighted_city_rate_identified": false,
+  "existing_rate_source": "../task4_school_quality_extra/ontario_board2026.xlsx",
+  "existing_rate_scope": "Ontario ministry 2020-2021 Grade 9 entry cohorts for Toronto DSB and Toronto CDSB; no denominator counts in existing file",
+  "new_method_evidence": {
+    "provider": "Hamilton-Wentworth Catholic District School Board",
+    "document": "Student Achievement and Well-Being Committee, 15 October 2024",
+    "file": "hwcdsb_graduation_method_2024.pdf",
+    "locator": "PDF page 18 (printed page 11), Appendix B; also PDF page 10 (printed page 3)",
+    "finding": "The ministry calculation follows the original Grade 9 board, including outcomes after moves to another Ontario board. Entry is restricted to ages 13-15 and first Ontario secondary enrollment. Deaths and departures from Ontario are removed. This is a provincial-method description from a different board, not Toronto cohort counts.",
+    "implication": "Do not equate the Toronto entry-board estimand with graduation-school or current-resident city estimands. Denominator-weighted pooling still requires matching entry-cohort counts; ordinary enrollment or Grade 12 counts are not replacements.",
+    "version_limit": "Describes the ministry method in October 2024; no later method-change verification was obtained."
+  },
+  "additional_sources_checked": [
+    {
+      "url": "https://www.tdsb.on.ca/Open-Data",
+      "evidence": "Official rendered page lists research/census, assessment, financial and safety data; this bounded check did not yield graduation cohort counts."
+    },
+    {
+      "url": "https://data.ontario.ca/dataset/school-board-achievements-and-progress",
+      "evidence": "Official catalogue describes rates and progress indicators. Existing downloaded workbook supplies the board rates, but no cohort denominators."
+    },
+    {
+      "url": "https://tcdsbpublishing.escribemeetings.com/filestream.ashx?DocumentId=30921",
+      "evidence": "Official indexed enrolment planning report uses secondary ADE and intake counts, not a matching graduation-cohort denominator; not downloaded or used as weights."
+    }
+  ],
+  "decision": "No weighted Toronto-wide graduation rate added. Preserve existing restricted two-English-board rate envelope and missing coverage for French boards, private schools and resident/entry-board mapping."
+}

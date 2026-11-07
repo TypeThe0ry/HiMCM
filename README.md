@@ -4,7 +4,7 @@
 
 **The City Showdown: Modeling the Best City to Live In**
 
-本仓库保存全球城市评价研究的数据、模型、结果、图表和历史论文。当前包含25城研究、V16累计证据对照和V17补数策略算法；尚未形成完整同年城市普查矩阵或最终参赛结论。
+本仓库保存全球城市评价研究的数据、模型、结果、图表和历史论文。当前包含25城研究、V16累计证据对照、V17补数策略算法和V18高中毕业队列条件分析；尚未形成完整同年城市普查矩阵或最终参赛结论。
 
 **本项目只使用 `TypeThe0ry/HiMCM` 一个仓库。** 论文、数据、代码、结果和历史论文库已合并回本目录，原研究仓库的提交历史也已合入。原始资料及本地忽略的大型生成包均保留；详见[合并核验记录](docs/reunification.md)。
 
@@ -20,6 +20,7 @@
 | V6历史模型与结果 | [V6报告](research/2026-a/results/task4_v6/REPORT.md) · [结果表](research/2026-a/results/task4_v6/after_v6.csv) · [独立复核](research/2026-a/results/task4_v6_review.md) |
 | 最新累计证据模型 V16 | [报告](research/2026-a/results/task4_v16_combined/README.md) · [排名对照](research/2026-a/results/task4_v16_combined/ranks.csv) · [算法](research/2026-a/scripts/task4_combined_evidence.py) |
 | 最新补数策略 V17 | [报告](research/2026-a/results/task4_v17_rival_acquisition/README.md) · [当前排名](research/2026-a/results/task4_v17_rival_acquisition/current_ranks.csv) · [算法](research/2026-a/scripts/task4_rival_acquisition.py) |
+| V18高中毕业队列条件分析 | [报告](research/2026-a/results/task4_v18_cohort_outcomes/README.md) · [官方NYC来源](research/2026-a/data/task4_v18_nyc_quality/README.md) · [排名与权重对照](research/2026-a/results/task4_v18_cohort_outcomes/ranks.csv) |
 | V5补数前后对照 | [V5报告](research/2026-a/results/task4_v5/REPORT.md) · [独立复核](research/2026-a/results/task4_v5_review.md) |
 | 历史设计与研究迭代 | [研究工作台](research/2026-a/README.md) · [研究设计](research/2026-a/design/research_design.md) |
 | 图表、地图与制图规范 | [制图入口](research/2026-a/visuals/README.md) · [规范](research/2026-a/visuals/GUIDELINES.md) · [地图](research/2026-a/visuals/cartography/README.md) |
@@ -76,6 +77,8 @@ HiMCM/
 V16将 Mexico City 2020年通学资料与 São Paulo 2023年高中通学资料作条件合并：São Paulo决策排名14→6、Mexico City 21→20、Phoenix仍为24；平均得分区间宽度38.0831→37.8657。仍有25个可能冠军，Singapore仍是最小最大遗憾推荐（28.1736）。来源、年份和学段条件保留，不能将决策排名解释为已确定的真实表现排名。
 
 V17在相同观测矩阵上计算竞争城市补数策略，实际排名与冠军集合不变。所有假设观测仅用于补数诊断。完整对照与验证见上方V16、V17入口。
+
+V18新增官方NYC四年毕业队列人数，保留未知结局，作为附加毕业结果维度的条件分析。该维度权重为10%时，补数使纽约决策排名18→4；可能冠军仍为25城，整体区间仍宽于原十指标模型。学段完成结果不等于教学因果质量，且不同城市归属口径尚未统一；[详见V18报告](research/2026-a/results/task4_v18_cohort_outcomes/README.md)。
 
 ### 早期版本进度快照（V5/V6）
 
