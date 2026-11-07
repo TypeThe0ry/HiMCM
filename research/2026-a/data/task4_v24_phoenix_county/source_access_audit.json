@@ -1,0 +1,38 @@
+{
+  "checked_date": "2026-11-07",
+  "new_admissible_observations": 0,
+  "maricopa_2024_cohort_counts_obtained": false,
+  "new_route": {
+    "provider": "Annie E Casey Foundation KIDS COUNT / Children Action Alliance",
+    "indicator_id": 4616,
+    "page_url": "https://datacenter.aecf.org/data/tables/4616-four-year-graduation-rates",
+    "download_url": "https://datacenter.aecf.org/rawdata.axd?ind=4616&loc=4",
+    "page_evidence": "Public browser UI exposes county selection including Maricopa, years 2000-2025, Number and Percent, and Download Raw Data. Definition is four-year adjusted-cohort diploma graduation. Page attributes underlying data to ADE.",
+    "page_last_updated": "December 2025",
+    "numerical_values_obtained": false,
+    "web_tool_download": "Returned XLSX content type but tool cannot parse or archive XLSX payload. Not proof a local workbook was obtained.",
+    "direct_request": {
+      "status": 403,
+      "bytes": 5571,
+      "content_type": "text/html; charset=UTF-8",
+      "payload_archived": false
+    },
+    "browser_download": "Normal public Download Raw Data link opened chrome-error page with ERR_BLOCKED_BY_CLIENT; no security setting altered, no bypass attempted. No downloaded workbook path obtained."
+  },
+  "github_check": {
+    "url": "https://github.com/AZMAG/gis-az-schools-data-docs",
+    "result": "Official MAG repository contains schema and documentation, not downloaded 2024 graduation cohort records. Tree inspected; schema includes assessment, county, enrollment_grade, enrollment_race, lea, schools, subgroup, title1; no graduation dataset."
+  },
+  "non_substitutes": [
+    {
+      "url": "https://nptao.arizona.edu/sites/default/files/2025-10/First-Things-First-Regional-Needs-and-Assets-2024-East-Maricopa.pdf",
+      "reason": "Published 2024 needs assessment reports Maricopa graduation counts for cohort 2022, not cohort 2024. Not admitted."
+    },
+    {
+      "url": "https://azchildren.org/wp-content/uploads/2025/02/maricopa.pdf",
+      "reason": "2024 data-book county graduation percentage is sourced to cohort 2023 and lacks same-cohort N/G; not admitted."
+    }
+  ],
+  "decision": "Retain Phoenix education interval; no county numerical replacement justified. Do not substitute a different year, a rounded rate without counts, or Maricopa High School in Pinal County.",
+  "next_required_evidence": "Actual ADE four-year cohort-2024 county N/G or an auditable mirror; historical school-to-county containment and aggregation definitions also need verification."
+}
