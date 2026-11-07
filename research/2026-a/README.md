@@ -1,5 +1,7 @@
 # 2026 HiMCM A：研究工作台
 
+> 新增资料：已接收[五指标简化稿](inputs/team/indicator_sources_5_original.md)，与11指标原稿并存，尚未替换最终方案。见[接收与待确认事项](design/simplified_indicators_intake.md)。截图中的四位成员生活城市目前仅明确上海，另外三座待补充。
+
 > 2026-11-07更新：目录已改为英文命名，研究内容合并到本地main，赛前不推送。最新团队材料是25城候选和11项指标底稿；本文及早期设计中的18城/12指标是保留的初始方案，尚未统一冻结。
 
 新增入口：[25城规范表](data/city_candidates_team_25.csv) · [原始指标稿](inputs/team/indicator_sources_11_original.md) · [原件来源记录](inputs/team/provenance.json)。
