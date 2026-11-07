@@ -1,0 +1,41 @@
+{
+  "main_admitted": false,
+  "requested_teacher_scope": "Nairobi City secondary actual teacher headcount, preferably 2023/24 or 2024/25",
+  "official_annual_report": {
+    "fiscal_year": "2024-2025",
+    "pages": 104,
+    "source_institution": "Teachers Service Commission via Parliament institutional repository",
+    "finding": "Staffing chapter reports national registration and recruitment flows; inspected tables do not supply Nairobi secondary teacher stock"
+  },
+  "historical_lead": {
+    "year": 2023,
+    "report": "PWPER",
+    "appendix": "4.6 and 4.8",
+    "printed_page": 276,
+    "pdf_page_zero_index": 309,
+    "county": "Nairobi",
+    "schools": 102,
+    "principals": 90,
+    "deputy_principals": 111,
+    "teachers": 2650,
+    "total": 2851,
+    "curriculum_based_establishment": 3792,
+    "shortage": 941,
+    "status": "Table inspected through web PDF reader at NGO mirror; no raw PDF downloaded yet, not an admitted observation",
+    "source_url": "https://www.elimuyetu.net/wp-content/uploads/2025/07/B5-REPORT-OF-THE-PRESIDENTIAL-WORKING-PARTY-ON-EDUCATION-REFORM-7th-JULY-2023-.pdf",
+    "limitations": [
+      "Public secondary TSC staff only; private and BOM staffing not identified",
+      "Report text dates staffing March 2023; not automatically compatible with end-year or 2024 enrollment",
+      "2851 includes school leaders; 3792 is CBE requirement, not actual teachers"
+    ]
+  },
+  "failed_official_pwper": {
+    "url": "https://www.education.go.ke/sites/default/files/2023-08/B5%20REPORT%20OF%20THE%20PRESIDENTIAL%20WORKING%20PARTY%20ON%20EDUCATION%20REFORM%207th%20JULY%202023%20.pdf",
+    "status": "curl connection timeout after 40 seconds; web timeout"
+  },
+  "no_model_change": true,
+  "failed_khrc_attachment": {
+    "url": "https://khrc.or.ke/storage/2024/05/SUPPORTING-AFFIDAVIT-IN-CONSTITUTIONAL-PETITION-NO.-E412-OF-2023_compressed_compressed-1.pdf",
+    "status": "curl timeout after 35 seconds; no file received"
+  }
+}
