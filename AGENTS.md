@@ -26,3 +26,7 @@ The user explicitly made the Overleaf workspace the first priority on 2026-11-07
 - `research/2026-a/` contains research inputs, design notes, candidate data and scripts.
 - `library/` contains historical awarded papers and their evidence.
 - Preserve raw user inputs byte-for-byte and retain their provenance. Keep hypotheses, unverified numbers, synthetic examples, and measured results distinguishable.
+
+## Repository split — 2026-11-07
+
+This is HiMCM-research. Research, data collection, modeling and reference figures belong here. The sibling HiMCM repository remains the manuscript repository connected to Overleaf. Root TeX/Bib/class files here are historical snapshots; make manuscript edits in HiMCM. Do not copy research or library trees into the Overleaf repository. Preserve missing-data intervals and source provenance.

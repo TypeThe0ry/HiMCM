@@ -1,0 +1,107 @@
+[
+  {
+    "cell": "D23",
+    "city": "Beijing",
+    "indicator": "pm25",
+    "original_value": 32,
+    "original_source": "doc: Beijing ecology bureau (2023)",
+    "status": "confirmed",
+    "verified_value": 32,
+    "data_year": "2023 (publication 2024-05-28; release 2024-06-04)",
+    "geography": "北京市全市行政范围",
+    "population": "不适用；环境空气监测浓度，不是人口加权暴露值",
+    "definition": "2023年北京市细颗粒物PM2.5年平均质量浓度，µg/m³，官方全市空气质量统计。",
+    "primary_urls": [
+      "https://sthjj.beijing.gov.cn/bjhrb/index/xxgk69/sthjlyzwg/1718880/1718881/1718882/436457401/index.html",
+      "https://www.beijing.gov.cn/ywdt/gzdt/202406/t20240604_3703952.html",
+      "https://www.beijing.gov.cn/ywdt/gzdt/202402/t20240201_3553219.html"
+    ],
+    "evidence": "北京市生态环境局公报入口载明发布日期2024-05-28；同局供稿的市政府公报发布说明在“生态环境质量改善成效稳固”段明确2023年PM2.5年均浓度32。2023年12月官方环境空气质量状况说明1—12月PM2.5为32，同期各区28—38。",
+    "issue": "原数值和数据年一致；表格未注明全市行政范围。公报为2024年发布，2023是观测年。尚未重算全部监测站及有效日数，不将官方发布值冒称自行聚合。",
+    "recommended_action": "保留32，补上2023年、北京市全市、官方PM2.5年均、µg/m³及直接来源。",
+    "access_date": "2026-11-07",
+    "limitations": "公报中文PDF网页工具因65,884,849 bytes超限无法读取；已读取官方发布说明并归档HTML。"
+  },
+  {
+    "cell": "T27",
+    "city": "Helsinki",
+    "indicator": "pool",
+    "original_value": 2.3,
+    "original_source": "doc: Helsinki Facts and Figures 2026 (2025)",
+    "status": "unverifiable",
+    "verified_value": null,
+    "data_year": "设施：2026版出版物列示，设施页未明确统计时点；人口：2025-12-31",
+    "geography": "Helsinki行政市，不是Helsinki Region",
+    "population": "694392 (2025-12-31; PDF p8)",
+    "definition": "源出版物p24：16处swimming halls，脚注明确含outdoor swimming pools and a sea pool；分子按场馆/地点数，不是馆内池体数。",
+    "primary_urls": [
+      "https://www.hel.fi/static/kanslia/Kaupunkitieto/26_6_24_Helsinki_Facts_and_Figures_2026_taskutilasto.pdf",
+      "https://kaupunkitieto.hel.fi/en/helsinki-facts-and-figures",
+      "https://kaupunkitieto.hel.fi/en/population"
+    ],
+    "evidence": "已下载官方48页PDF。p24列Swimming halls 16*，脚注including outdoor swimming pools and a sea pool；p8人口694392明确Dec 31, 2025。按16/694392×100000=2.3041740112，四舍五入1位小数为2.3。",
+    "issue": "2.3可复算，未发现算术错误。但16的设施统计时点未在p24明确，不能直接将出版年2026或周边段落年份推成2025；该项没有证明全部符合原表municipal or public的准入条件，也不能自动改称仅市营泳池。原始声明的精确年份/公共范围仍未完全核实。",
+    "recommended_action": "若采用此源，将指标写为“官方2026版列示的游泳馆/室外泳池/海水泳池场馆数/2025年末人口”，记录分子16、分母694392及算式；若要求同年且公共/市营统一口径，保留待核实。不要将null理解为证实2.3数值错误。",
+    "source_reproduced_value": 2.3041740112213276,
+    "numeric_status": "rounding_only",
+    "scope_status": "facility_date_and_public_ownership_not_fully_verified",
+    "access_date": "2026-11-07",
+    "limitations": "核实了官方设施总量及人口；没有逐场馆核查所有权、开放条件、在2025年的运营状态。",
+    "arithmetic_reconstruction": {
+      "numerator": 16,
+      "denominator": 694392,
+      "multiplier": 100000,
+      "value": 2.3041740112213276,
+      "meaning": "仅复算2026版列示场馆总数/2025年末人口；未确证2025公共泳池同口径密度"
+    }
+  },
+  {
+    "cell": "J40",
+    "city": "Singapore",
+    "indicator": "ptr",
+    "original_value": 12.7,
+    "original_source": "doc: Singapore MOE Education Statistics Digest 2024",
+    "status": "year_mismatch",
+    "verified_value": 12.7,
+    "data_year": "2024 (12.7); original cited ESD2024 instead reports 2023=12.6",
+    "geography": "新加坡全国（城邦教育系统）",
+    "population": "中学学生/中学教师，不使用居民人口分母",
+    "definition": "Secondary学校学生数÷教师数；包括Government、Government-aided、Independent、Specialised Independent、Specialised schools；不同于平均班额，也不同于单独Pre-University师生比。",
+    "primary_urls": [
+      "https://data.gov.sg/datasets/d_90c36efa54bc29bc7c2e946003889f53/view",
+      "https://data.gov.sg/api/action/datastore_search?resource_id=d_90c36efa54bc29bc7c2e946003889f53&limit=100",
+      "https://www.moe.gov.sg/-/media/files/about-us/education-statistics-digest-2024.pdf",
+      "https://www.moe.gov.sg/-/media/files/about-us/esd-2025.pdf"
+    ],
+    "evidence": "已归档MOE官方data.gov.sg API全部44条年度记录，record _id43 year2023 sec_students_to_teachers12.6；_id44 year2024为12.7。官方PDF搜索索引ESD2024 p(ii) “B. Ratio of Students to Teaching Staff”最后一列2023=12.6；ESD2025 p(xvi)最后一列2024=12.7。",
+    "issue": "数值12.7真实存在，原引ESD2024版本不对应；应引2024数据/ESD2025或官方API。Secondary学段不等于高中/Pre-University，不能直接与东京初中或高中混用。",
+    "recommended_action": "保留12.7时改来源为MOE官方2024 Secondary年度记录（或ESD2025），明确学段及学校覆盖；若坚持ESD2024，应使用2023 Secondary=12.6，不能同时沿用12.7。",
+    "access_date": "2026-11-07",
+    "limitations": "MOE PDF直接网页访问出现机器人验证，requests返回404 HTML；原PDF未归档。PDF数值使用官方域搜索索引核对，12.7及12.6另有成功下载的官方API原始记录独立支持。"
+  },
+  {
+    "cell": "J44",
+    "city": "Tokyo",
+    "indicator": "ptr",
+    "original_value": 15.22,
+    "original_source": "doc: Tokyo Statistical Yearbook 2024 table 17-1",
+    "status": "definition_mismatch",
+    "verified_value": 15.223741635146931,
+    "data_year": "2024-05-01 (School Basic Survey)",
+    "geography": "东京都全域；National/Public/Private合计",
+    "population": "Junior high schools在学者313944；教师(本务者/Full-time)20622",
+    "definition": "东京2024学校基本调查中学校(Junior high schools，初中)在学者÷本务教师数，而非高中、全学段、平均班额或全体教师FTE比。",
+    "primary_urls": [
+      "https://www.toukei.metro.tokyo.lg.jp/tnenkan/2024/tn24q3e017.htm",
+      "https://www.toukei.metro.tokyo.lg.jp/tnenkan/2024/tn24qv170100.csv",
+      "https://spec.api.metro.tokyo.lg.jp/spec/t000003d2000001163-9e04651448733dec7984ea26ecc79ef8-0"
+    ],
+    "evidence": "已归档官方CSV，Fiscal year2024、ClassificationTotal、Junior high schools行Number of children and students/Total=313944，Teachers(Full-time)=20622；313944/20622=15.2237416351，保留2位小数15.22。Senior high schools行302411学生、19325本务教师，另算15.6486934023。CSV脚注School Basic Survey(as of May1)。",
+    "issue": "15.22的算术和2024来源正确，但对应初中。原表ptr未给学段，项目若把它解释为高中师生比即发生学段错误；全职/本务教师headcount也不应直接称FTE。高中行是另一指标范围，不直接作为对15.22的同口径更正。",
+    "recommended_action": "将15.22明确标为“2024-05-01东京初中在学者/本务教师”；若模型目标为高中，应独立定义是否只含Senior high schools以及通信制等范围后再采用相应数据。",
+    "numeric_status": "rounding_only",
+    "alternative_senior_high_value": 15.64869340232859,
+    "access_date": "2026-11-07",
+    "limitations": "当前原表未指明学段，不能宣称其数值无条件错误；definition_mismatch指高中目标/跨城学段一致性问题。只核查表17-1分类及比值，未重建跨学段FTE。"
+  }
+]

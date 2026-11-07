@@ -1,0 +1,125 @@
+{
+  "scope": "Homicide audit source bytes and clearly labelled structured extracts; PDF originals were not downloaded",
+  "access_date": "2026-11-07",
+  "files": [
+    {
+      "file": "tokyo_2023_table20-10.csv",
+      "url": "https://www.toukei.metro.tokyo.lg.jp/tnenkan/2023/tn23qv201000.csv",
+      "final_url": "https://www.toukei.metro.tokyo.lg.jp/tnenkan/2023/tn23qv201000.csv",
+      "http_status": 200,
+      "content_type": "text/csv",
+      "bytes": 18825,
+      "sha256": "3ec35e75efdb06b0539d81362ad5af5e6c35ce901c279f2a9ad1f000a3bd6637",
+      "access_date": "2026-11-07",
+      "method": "Direct HTTPS download from already examined source URL, using system certificate store; repeated fetch only to preserve bytes",
+      "raw_source_bytes_archived": true
+    },
+    {
+      "file": "census_SUB-IP-EST2023-ANNRNK.xlsx",
+      "url": "https://www2.census.gov/programs-surveys/popest/tables/2020-2023/cities/totals/SUB-IP-EST2023-ANNRNK.xlsx",
+      "final_url": "https://www2.census.gov/programs-surveys/popest/tables/2020-2023/cities/totals/SUB-IP-EST2023-ANNRNK.xlsx",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 121961,
+      "sha256": "6414c6fdeacabb47ebdabdea71d95db37d8615678d81f9b5a6bc4caaa6215ad8",
+      "access_date": "2026-11-07",
+      "method": "Direct HTTPS download from already examined source URL, using system certificate store; repeated fetch only to preserve bytes",
+      "raw_source_bytes_archived": true
+    },
+    {
+      "file": "detroit_BOPC2023_web_text_extract.json",
+      "url": "https://detroitmi.gov/sites/detroitmi.localhost/files/2024-12/2023_BOPC.pdf",
+      "sha256": "21fc505b22a452aaf7a85a3c755c37e1cb8c2c109e156ca0335c1758a2add02d",
+      "bytes": 676,
+      "method": "Manual structured transcription from web tool PDF text; not the original PDF file",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "file": "detroit_ACS2024_DP05_primary_index_extract.json",
+      "url": "https://data.census.gov/table/ACSDP1Y2024.DP05?q=Detroit+city,+Michigan",
+      "sha256": "cc5a47a20bd1d261e6b0b54637bf6adf832bbeda69abae7419c37f47e7c8dde2",
+      "bytes": 578,
+      "method": "Manual structured transcription of official Census webpage search-index result. Direct page returned JavaScript-required text; no full table/API data file obtained",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "file": "detroit_Q1_2024_economic_report_web_text_extract.json",
+      "url": "https://detroitmi.gov/sites/detroitmi.localhost/files/2024-08/Q1%202024%20Economic%20Indicators%20Report.pdf",
+      "sha256": "47276b550e827bb75e9bbe07fbfca0fab23401827d12c890300344e929084d44",
+      "bytes": 541,
+      "method": "Manual structured transcription from web tool PDF text, no original PDF bytes",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "file": "singapore_cases_M890891_web_table_extract.json",
+      "url": "https://data.gov.sg/datasets/d_02d07531b84cd0cf2cf901fc1bf5d395/view",
+      "sha256": "6bb4b9a2e53f30001e8be5b7cdb3334cb4405c1d24768f84251eb1a0b86eb764",
+      "bytes": 528,
+      "method": "Manual structured transcription from official webpage table via web tool; not full original CSV",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "file": "singapore_victims_M890911_web_table_extract.json",
+      "url": "https://data.gov.sg/datasets/d_43bc9a5106f4264642dc38e7cc39fcd3/view",
+      "sha256": "eddd7e2643f4f006b6f5b3400c685b22388604956b503323e7ec9681284e3552",
+      "bytes": 549,
+      "method": "Manual structured transcription from official webpage table via web tool; not full original CSV",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "file": "singapore_population_M810001_web_table_extract.json",
+      "url": "https://data.gov.sg/datasets/d_3d227e5d9fdec73f3bcadce671c333a6/view",
+      "sha256": "840255266411782aafab8a48d36332a1d2d583af2aecbbbe2be716c019c7c0c9",
+      "bytes": 726,
+      "method": "Manual structured transcription from official webpage table via web tool; not full original CSV",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "file": "singapore_population_trends2023_web_pdf_extract.json",
+      "url": "https://www.singstat.gov.sg/-/media/files/publications/population/population2023.pdf",
+      "sha256": "2aa29c1c92761ad3c116b6bdf3d39001e030f4245632e516aad9e1e425d1e463",
+      "bytes": 798,
+      "method": "Manual structured transcription/paraphrase from web tool PDF text, no original PDF bytes",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "file": "tokyo_population20231001_web_text_extract.json",
+      "url": "https://www.my.metro.tokyo.lg.jp/w/000-20231031-9027889",
+      "sha256": "49187079a49c938d35952a7d2397c89d7550bb9280e871d427429a7ef54b4093",
+      "bytes": 690,
+      "method": "Manual structured transcription/paraphrase from official webpage text via web tool, not original HTML",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "file": "japan_e_stat_crime_count_definition_extract.json",
+      "url": "https://www.e-stat.go.jp/koumoku/koumoku_teigi/K",
+      "sha256": "c49a57df73450f5dc71395bcde65d5104bf72d9c71fd8ee4de592fa699c722a7",
+      "bytes": 686,
+      "method": "Manual paraphrase from official webpage definition via web tool, not original HTML",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "url": "https://detroitmi.gov/news/detroit-ends-2023-fewest-homicides-57-years-double-digit-drops-shootings-and-carjackings-thanks-dpd",
+      "file": null,
+      "status": "web_open_403_forbidden",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    },
+    {
+      "url": "https://api.census.gov/data/2024/acs/acs1?get=NAME,B01003_001E&for=place:22000&in=state:26",
+      "file": null,
+      "status": "Direct HTTPS response was Missing Key HTML, not census data; no API values claimed",
+      "raw_source_bytes_archived": false,
+      "access_date": "2026-11-07"
+    }
+  ]
+}

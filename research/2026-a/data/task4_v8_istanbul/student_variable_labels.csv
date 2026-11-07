@@ -1,0 +1,1280 @@
+excel_row,variable,label
+1,NAME,VARLABEL
+2,CNT,Country code 3-character
+84,CNTRYID,Country Identifier
+166,CNTSCHID,Intl. School ID
+167,CNTSTUID,Intl. Student ID
+168,CYC,PISA Assessment Cycle (2 digits + 2 character Assessment type - MS/FT)
+169,NatCen,National Centre 6-digit Code
+254,STRATUM,Stratum ID 5-character (cnt + original stratum ID)
+1572,SUBNATIO,Adjudicated sub-region code 7-digit code (3-digit country code + region ID + stratum ID)
+1665,REGION,REGION
+1811,OECD,OECD country
+1814,ADMINMODE,Mode of Respondent
+1817,LANGTEST_QQQ,Language of Questionnaire
+1890,LANGTEST_COG,Language of Assessment
+1962,LANGTEST_PAQ,Language of Parent Questionnaire
+2035,Option_CT,Creative Thinking Option
+2038,Option_FL,Financial Literacy Option
+2041,Option_ICTQ,ICT Questionnaire Option
+2044,Option_WBQ,Well-Being Questionnaire Option
+2047,Option_PQ,Parent Questionnaire Option
+2050,Option_TQ,Teacher Questionnaire Option
+2053,Option_UH,Une Heure Option
+2056,BOOKID,Form Identifier
+2162,ST001D01T,Student International Grade (Derived)
+2174,ST003D02T,Student (Standardized) Birth - Month
+2192,ST003D03T,Student (Standardized) Birth -Year
+2208,ST004D01T,Student (Standardized) Gender
+2216,ST250Q01JA,Which of the following are in your [home]: A room of your own
+2224,ST250Q02JA,"Which of the following are in your [home]: A computer (laptop, desktop, or tablet) that you can use for school work"
+2232,ST250Q03JA,Which of the following are in your [home]: Educational Software or Apps
+2240,ST250Q04JA,Which of the following are in your [home]: Your own [cell phone] with Internet access (e.g. smartphone)
+2248,ST250Q05JA,Which of the following are in your [home]: Internet access (e.g. Wi-fi) (excluding through smartphones)
+2256,ST250D06JA,Which of the following are in your home? <Country-specific item 1>
+2386,ST250D07JA,Which of the following are in your home? <Country-specific item 2>
+2496,ST251Q01JA,"How many of these items are there at your [home]: Cars, vans, or trucks"
+2506,ST251Q02JA,How many of these items are there at your [home]: Mopeds or motorcycles
+2516,ST251Q03JA,How many of these items are there at your [home]: Rooms with a bath or shower
+2526,ST251Q04JA,How many of these items are there at your [home]: Rooms with a [flush toilet]
+2536,ST251Q06JA,"How many of these items are there at your [home]: Musical instruments (e.g. guitar, piano, [country-specific example])"
+2546,ST251Q07JA,"How many of these items are there at your [home]: Works of art (e.g. paintings, sculptures, [country-specific example])"
+2556,ST251D08JA,How many of these items are there at your home? <Country-specific item 1>
+2776,ST251D09JA,How many of these items are there at your home? <Country-specific item 2>
+2948,ST253Q01JA,How many [digital devices] with screens are there in your [home]?
+2962,ST254Q01JA,How many of the following [digital devices] are in your [home]: Televisions
+2973,ST254Q02JA,How many of the following [digital devices] are in your [home]: Desktop computers
+2984,ST254Q03JA,How many of the following [digital devices] are in your [home]: Laptop computers or notebooks
+2995,ST254Q04JA,"How many of the following [digital devices] are in your [home]: Tablets (e.g. [iPad®], [BlackBerry® Playbook™])"
+3006,ST254Q05JA,"How many of the following [digital devices] are in your [home]: E-book readers (e.g. [Kindle™], [Kobo], [Bookeen])"
+3017,ST254Q06JA,How many of the following [digital devices] are in your [home]: [Cell phones] with Internet access (i.e. smartphones)
+3028,ST255Q01JA,How many books are there in your [home]?
+3041,ST256Q01JA,"How many of these books at [home]: Religious books (e.g. [Bible], [Example 2])"
+3052,ST256Q02JA,"How many of these books at [home]: Classical literature (e.g. [Shakespeare], [Example 2])"
+3063,ST256Q03JA,How many of these books at [home]: Contemporary literature
+3074,ST256Q06JA,How many of these books at [home]: Books on science
+3085,ST256Q07JA,"How many of these books at [home]: Books on art, music, or design"
+3096,ST256Q08JA,How many of these books at [home]: [Technical reference books]
+3107,ST256Q09JA,How many of these books at [home]: Dictionaries
+3118,ST256Q10JA,How many of these books at [home]: Books to help with your school work
+3129,ST230Q01JA,"How many siblings (including brothers, sisters, step-brothers, and step-sisters) do you have?"
+3139,ST005Q01JA,What is the [highest level of schooling] completed by your mother?
+3150,ST006Q01JA,Does your mother have any of the following qualifications: [ISCED level 8]
+3158,ST006Q02JA,Does your mother have any of the following qualifications: [ISCED level 7]
+3166,ST006Q03JA,Does your mother have any of the following qualifications: [ISCED level 6]
+3174,ST006Q04JA,Does your mother have any of the following qualifications: [ISCED level 5]
+3182,ST006Q05JA,Does your mother have any of the following qualifications: [ISCED level 4]
+3190,ST007Q01JA,What is the [highest level of schooling] completed by your father?
+3201,ST008Q01JA,Does your father have any of the following qualifications: [ISCED level 8]
+3209,ST008Q02JA,Does your father have any of the following qualifications: [ISCED level 7]
+3217,ST008Q03JA,Does your father have any of the following qualifications: [ISCED level 6]
+3225,ST008Q04JA,Does your father have any of the following qualifications: [ISCED level 5]
+3233,ST008Q05JA,Does your father have any of the following qualifications: [ISCED level 4]
+3241,ST258Q01JA,"In the past 30 days, how often did you not eat because there was not enough money to buy food?"
+3252,ST259Q01JA,Now think about where you would place your family on this scale. Where would you say your family stands at this time?
+3268,ST259Q02JA,Now think about where you would place your family on this scale. Where do you think you will stand when you are 30?
+3284,ST019AQ01T,In what country were you and your parents born? You
+3293,ST019BQ01T,In what country were you and your parents born? Mother
+3302,ST019CQ01T,In what country were you and your parents born? Father
+3311,ST021Q01TA,How old were you when you arrived in [country of test]? 
+3334,ST022Q01TA,What language do you speak at home most of the time?
+3342,ST226Q01JA,How long have you been enrolled at this school?
+3353,ST125Q01NA,How old were you when you started [ISCED 0]: Years
+3367,ST126Q01TA,How old were you when you started [ISCED 1]: Years
+3380,ST127Q01TA,Have you ever repeated a [grade]: At [ISCED 1]
+3389,ST127Q02TA,Have you ever repeated a [grade]: At [ISCED 2]
+3398,ST127Q03TA,Have you ever repeated a [grade]: At [ISCED 3]
+3407,ST260Q01JA,Have you ever missed school for more than three months in a row: At [ISCED 1]
+3416,ST260Q02JA,Have you ever missed school for more than three months in a row: At [ISCED 2]
+3425,ST260Q03JA,Have you ever missed school for more than three months in a row: At [ISCED 3]
+3434,ST261Q01JA,Why miss school for 3+ months: I was bored.
+3442,ST261Q02JA,"Why miss school for 3+ months: I was suspended for something (e.g. violence, aggression, use of drugs, drug dealing)."
+3450,ST261Q03JA,Why miss school for 3+ months: I was pregnant.
+3458,ST261Q04JA,Why miss school for 3+ months: I could not reach school because of transportation problems.
+3466,ST261Q05JA,Why miss school for 3+ months: I had to take care of a family member.
+3474,ST261Q06JA,"Why miss school for 3+ months: I had to help with work at home, the family business, or on the family land."
+3482,ST261Q07JA,Why miss school for 3+ months: I had to get work to bring money home.
+3490,ST261Q08JA,Why miss school for 3+ months: I was sick.
+3498,ST261Q09JA,Why miss school for 3+ months: I did not feel safe at school.
+3506,ST261Q10JA,Why miss school for 3+ months: I could not pay [school fees].
+3514,ST261Q11JA,"Why miss school for 3+ months: School was closed because of a natural disaster (e.g. flood, earthquake)."
+3522,ST062Q01TA,"In the last two full weeks of school, how often: I [skipped] a whole school day"
+3532,ST062Q02TA,"In the last two full weeks of school, how often: I [skipped] some classes"
+3542,ST062Q03TA,"In the last two full weeks of school, how often: I arrived late for school"
+3552,ST267Q01JA,Agree/disagree: The teachers at my school are respectful towards me.
+3562,ST267Q02JA,"Agree/disagree: If I walked into my classes upset, my teachers would be concerned about me."
+3572,ST267Q03JA,"Agree/disagree: If I came back to visit my school 3 years from now, my teachers would be excited to see me."
+3582,ST267Q04JA,Agree/disagree: I feel intimidated by the teachers at my school.
+3592,ST267Q05JA,"Agree/disagree: When my teachers ask how I am doing, they are really interested in my answer."
+3602,ST267Q06JA,Agree/disagree: The teachers at my school are friendly towards me.
+3612,ST267Q07JA,Agree/disagree: The teachers at my school are interested in students' well-being.
+3622,ST267Q08JA,Agree/disagree: The teachers at my school are mean towards me.
+3632,ST034Q01TA,Agree/disagree:  I feel like an outsider (or left out of things) at school.
+3642,ST034Q02TA,Agree/disagree:  I make friends easily at school.
+3652,ST034Q03TA,Agree/disagree:  I feel like I belong at school.
+3662,ST034Q04TA,Agree/disagree:  I feel awkward and out of place in my school.
+3672,ST034Q05TA,Agree/disagree:  Other students seem to like me.
+3682,ST034Q06TA,Agree/disagree:  I feel lonely at school.
+3692,ST038Q03NA,"In past 12 months, how often: Other students left me out of things on purpose."
+3702,ST038Q04NA,"In past 12 months, how often: Other students made fun of me."
+3712,ST038Q05NA,"In past 12 months, how often: I was threatened by other students."
+3722,ST038Q06NA,"In past 12 months, how often: Other students took away or destroyed things that belonged to me."
+3732,ST038Q07NA,"In past 12 months, how often: I got hit or pushed around by other students."
+3742,ST038Q08NA,"In past 12 months, how often: Other students spread nasty rumours about me."
+3752,ST038Q09JA,"In past 12 months, how often: I was in a physical fight on school property."
+3762,ST038Q10JA,"In past 12 months, how often: I stayed home from school because I felt unsafe."
+3772,ST038Q11JA,"In past 12 months, how often: I gave money to someone at school because they threatened me."
+3782,ST265Q01JA,Agree/disagree: I feel safe on my way to school.
+3792,ST265Q02JA,Agree/disagree: I feel safe on my way home from school.
+3802,ST265Q03JA,Agree/disagree: I feel safe in my classrooms at school.
+3812,ST265Q04JA,"Agree/disagree: I feel safe at other places at school (e.g. hallway, cafeteria, restroom)."
+3822,ST266Q01JA,Occur during past four weeks:  Our school was vandalised.
+3830,ST266Q02JA,Occur during past four weeks:  I witnessed a fight on school property in which someone got hurt.
+3838,ST266Q03JA,Occur during past four weeks:  I saw gangs in school.
+3846,ST266Q04JA,Occur during past four weeks:  I heard a student threaten to hurt another student.
+3854,ST266Q05JA,Occur during past four weeks:  I saw a student carrying a gun or knife at school.
+3862,ST294Q01JA,How many days/wk before school: Eat breakfast
+3874,ST294Q02JA,How many days/wk before school: Study for school or homework
+3886,ST294Q03JA,How many days/wk before school: Work in the household or take care of family members
+3898,ST294Q04JA,How many days/wk before school: Work for pay
+3910,ST294Q05JA,"How many days/wk before school: Exercise or practise a sport (e.g. running, cycling, aerobics, soccer, skating, [country-specific])"
+3922,ST295Q01JA,How many days/wk after school: Eat dinner
+3934,ST295Q02JA,How many days/wk after school: Study for school or homework
+3946,ST295Q03JA,How many days/wk after school: Work in the household or take care of family members
+3958,ST295Q04JA,How many days/wk after school: Work for pay
+3970,ST295Q05JA,"How many days/wk after school: Exercise or practise a sport (e.g. running, cycling, aerobics, soccer, skating, [country-specific])"
+3982,ST326Q01JA,"This school year, how many hours/day use [digital resources] for: For learning activities at school"
+3997,ST326Q02JA,"This school year, how many hours/day use [digital resources] for: For learning activities before and after school"
+4012,ST326Q03JA,"This school year, how many hours/day use [digital resources] for: For learning activities on weekends"
+4027,ST326Q04JA,"This school year, how many hours/day use [digital resources] for: For leisure at school"
+4042,ST326Q05JA,"This school year, how many hours/day use [digital resources] for: For leisure before and after school"
+4057,ST326Q06JA,"This school year, how many hours/day use [digital resources] for: For leisure on weekends"
+4072,ST326Q07JA,"This school year, how many hours/day use [digital resources] for: For learning activities at school"
+4078,ST326Q08JA,"This school year, how many hours/day use [digital resources] for: For learning activities before and after school"
+4084,ST326Q09JA,"This school year, how many hours/day use [digital resources] for: For learning activities on weekends"
+4090,ST326Q10JA,"This school year, how many hours/day use [digital resources] for: For leisure at school"
+4096,ST326Q11JA,"This school year, how many hours/day use [digital resources] for: For leisure before and after school"
+4102,ST326Q12JA,"This school year, how many hours/day use [digital resources] for: For leisure on weekends"
+4108,ST322Q01JA,How often: I turn off notifications from social networks and apps on my [digital devices] during class.
+4120,ST322Q02JA,How often: I turn off notifications from social networks and apps on my [digital devices] when I go to sleep.
+4132,ST322Q03JA,How often: I keep my [digital device] near me to answer messages when I am home.
+4144,ST322Q04JA,How often:  I have my [digital device] open in class so I can take notes or search for information.
+4156,ST322Q06JA,How often: I feel pressured to be online and answer messages when I am in class.
+4168,ST322Q07JA,How often:  I feel nervous/anxious when I don't have my [digital device] near me.
+4180,ST307Q01JA,Agree/disagree: I keep working on a task until it is finished.
+4191,ST307Q02JA,Agree/disagree: I apply additional effort when work becomes challenging.
+4202,ST307Q03JA,Agree/disagree: I finish tasks that I started even when they become boring.
+4213,ST307Q04JA,Agree/disagree: I stop when work becomes too difficult.
+4224,ST307Q05JA,Agree/disagree: I am more persistent than most people I know.
+4235,ST307Q06JA,Agree/disagree: I give up after making mistakes.
+4246,ST307Q07JA,Agree/disagree: I quit doing homework if it is too long.
+4257,ST307Q08JA,Agree/disagree: I complete tasks even when they become more difficult than I thought.
+4268,ST307Q09JA,Agree/disagree: I finish what I start.
+4279,ST307Q10JA,Agree/disagree: I give up easily.
+4290,ST309Q01JA,Agree/disagree: I am careful with what I say to others.
+4301,ST309Q02JA,Agree/disagree: I get easily distracted.
+4312,ST309Q03JA,Agree/disagree: I say the first thing that comes to my mind.
+4323,ST309Q04JA,Agree/disagree: I like to make sure there are no mistakes.
+4334,ST309Q05JA,Agree/disagree: I carefully check homework before turning it in.
+4345,ST309Q06JA,Agree/disagree: I stop to think before acting.
+4356,ST309Q07JA,Agree/disagree: I rush into activities without thinking.
+4367,ST309Q08JA,Agree/disagree: I wait for my turn to speak in class.
+4378,ST309Q09JA,Agree/disagree: I am more impulsive than most people I know.
+4389,ST309Q10JA,Agree/disagree: I think carefully before doing something.
+4400,ST301Q01JA,Agree/disagree: I am curious about many different things.
+4411,ST301Q02JA,Agree/disagree: I like to ask questions.
+4422,ST301Q03JA,Agree/disagree: I get frustrated when I have to learn the details of a topic.
+4433,ST301Q04JA,Agree/disagree: I like to know how things work.
+4444,ST301Q05JA,Agree/disagree: I love learning new things in school.
+4455,ST301Q06JA,Agree/disagree: I am more curious than most people I know.
+4466,ST301Q07JA,Agree/disagree: I like to develop hypotheses and check them based on what I observe.
+4477,ST301Q08JA,Agree/disagree: I find learning new things to be boring.
+4488,ST301Q09JA,Agree/disagree: I spend time to find more information about things that interest me.
+4499,ST301Q10JA,Agree/disagree: I like learning new things.
+4510,ST343Q01JA,Agree/disagree: I like to help others.
+4521,ST343Q02JA,Agree/disagree: I get annoyed when I have to compromise with others.
+4532,ST343Q03JA,Agree/disagree: I work well with other people.
+4543,ST343Q04JA,Agree/disagree: I start arguments with others.
+4554,ST343Q05JA,Agree/disagree: I avoid working together with other students.
+4565,ST343Q06JA,Agree/disagree: I am ready to help anybody.
+4576,ST343Q07JA,Agree/disagree: I tend to be selfish.
+4587,ST343Q08JA,Agree/disagree: I work better when I am part of a team.
+4598,ST343Q09JA,Agree/disagree: I enjoy cooperating with my classmates.
+4609,ST343Q10JA,Agree/disagree: I argue a lot.
+4620,ST311Q01JA,Agree/disagree: I do not care what happens to other people.
+4631,ST311Q02JA,Agree/disagree: I can sense how others feel.
+4642,ST311Q03JA,Agree/disagree: It is important to me that my friends are okay.
+4653,ST311Q04JA,Agree/disagree: I can see situations from my friends' perspectives.
+4664,ST311Q05JA,Agree/disagree: I ignore the feelings of others.
+4675,ST311Q06JA,Agree/disagree: I am more compassionate than most people I know.
+4686,ST311Q07JA,Agree/disagree: It is difficult for me to sense what others think.
+4697,ST311Q08JA,Agree/disagree: I predict the needs of others.
+4708,ST311Q09JA,Agree/disagree: I get upset if bad things happen to other people.
+4719,ST311Q10JA,Agree/disagree: I understand what others want.
+4730,ST315Q01JA,Agree/disagree: I am suspicious of others' intentions.
+4741,ST315Q02JA,Agree/disagree: I think most of my classmates keep their promises.
+4752,ST315Q03JA,Agree/disagree: I believe that most people are honest.
+4763,ST315Q04JA,Agree/disagree: I believe that my friends can keep my secrets.
+4774,ST315Q05JA,Agree/disagree: I think most people are selfish.
+4785,ST315Q06JA,Agree/disagree: I trust what people say.
+4796,ST315Q07JA,Agree/disagree: I think others will try to harm me.
+4807,ST315Q08JA,Agree/disagree: I am more trusting with others than most people I know.
+4818,ST315Q09JA,Agree/disagree: I believe most people are kind.
+4829,ST315Q10JA,Agree/disagree: I am willing to forgive those who have done wrong.
+4840,ST303Q01JA,Agree/disagree: I try to consider everybody's perspective before I take a position.
+4851,ST303Q02JA,Agree/disagree: I want to understand my classmates' ways of thinking.
+4862,ST303Q03JA,Agree/disagree: I can view almost all things from different angles.
+4873,ST303Q04JA,Agree/disagree: I imagine how I would feel if I were in somebody else's place.
+4884,ST303Q05JA,Agree/disagree: I think there is only one correct position in a disagreement.
+4895,ST303Q06JA,Agree/disagree: I want to understand why people behave the way they do.
+4906,ST303Q07JA,Agree/disagree: I find it difficult to anticipate what other people think.
+4917,ST303Q08JA,Agree/disagree: I try to envision how things look from my friends' points of view.
+4928,ST305Q01JA,Agree/disagree: I am comfortable with taking the lead role in a group.
+4939,ST305Q02JA,Agree/disagree: I know how to convince others to do what I want.
+4950,ST305Q03JA,Agree/disagree: I enjoy leading others.
+4961,ST305Q04JA,Agree/disagree: I keep my opinion to myself in group discussions.
+4972,ST305Q05JA,Agree/disagree: I speak up to others about things that matter to me.
+4983,ST305Q06JA,Agree/disagree: I take initiative when working with my classmates.
+4994,ST305Q07JA,Agree/disagree: I wait for others to take a lead.
+5005,ST305Q08JA,Agree/disagree: I find it hard to influence people.
+5016,ST305Q09JA,Agree/disagree: I want to be in charge.
+5027,ST305Q10JA,Agree/disagree: I like to be a leader in my class.
+5038,ST345Q01JA,Agree/disagree: I get nervous easily.
+5049,ST345Q02JA,Agree/disagree: I am more relaxed than most people I know.
+5060,ST345Q03JA,Agree/disagree: I worry about many things.
+5071,ST345Q04JA,Agree/disagree: I panic easily.
+5082,ST345Q05JA,Agree/disagree: I am able to work under pressure.
+5093,ST345Q06JA,Agree/disagree: I remain calm under stress.
+5104,ST345Q07JA,Agree/disagree: I feel nervous about approaching exams.
+5115,ST345Q08JA,Agree/disagree: I can recover quickly after something bad has happened.
+5126,ST345Q09JA,Agree/disagree: I handle stress well.
+5137,ST345Q10JA,Agree/disagree: I am afraid of many things.
+5148,ST313Q01JA,Agree/disagree: I keep my emotions under control.
+5159,ST313Q02JA,Agree/disagree: I get mad easily.
+5170,ST313Q03JA,Agree/disagree: I change my mood a lot.
+5181,ST313Q04JA,Agree/disagree: I overreact to every little thing in life.
+5192,ST313Q05JA,Agree/disagree: I stay calm even in tense situations.
+5203,ST313Q06JA,Agree/disagree: I am easily upset.
+5214,ST313Q07JA,Agree/disagree: I know how to control my feelings.
+5225,ST313Q08JA,Agree/disagree: I have unpredictable emotions.
+5236,ST313Q09JA,Agree/disagree: I am moody.
+5247,ST313Q10JA,Agree/disagree: I get frustrated quickly.
+5258,ST263Q02JA,Agree/disagree: Your intelligence is something about you that you cannot change very much.
+5268,ST263Q04JA,"Agree/disagree: Some people are just not good at mathematics, no matter how hard they study."
+5278,ST263Q06JA,"Agree/disagree: Some people are just not good in [test language], no matter how hard they study."
+5288,ST263Q08JA,Agree/disagree: Your creativity is something about you that you cannot change very much.
+5298,ST016Q01NA,"Overall, how satisfied are you with your life as a whole these days?"
+5304,ST059Q01TA,Number of [class periods] per week in mathematics
+5310,ST059Q02JA,"Total number of [class periods] per week for all subjects, including mathematics"
+5316,ST296Q01JA,How much time spent on homework in: Mathematics homework
+5328,ST296Q02JA,How much time spent on homework in: [Test language] homework
+5340,ST296Q03JA,How much time spent on homework in: [Science] homework
+5352,ST296Q04JA,"How much time spent on homework in: Total time for all homework in all subjects, including subjects not listed above"
+5364,ST272Q01JA,"On 1-10 scale, rate quality of mathematics instruction this school year? Quality of mathematics instruction?"
+5380,ST273Q01JA,How often: Students do not listen to what the teacher said.
+5390,ST273Q02JA,How often: There is noise and disorder.
+5400,ST273Q03JA,How often: The teacher has to wait a long time for students to quiet down.
+5410,ST273Q04JA,How often: Students cannot work well.
+5420,ST273Q05JA,How often: Students do not start working for a long time after the lesson begins.
+5430,ST273Q06JA,"How often: Students get distracted by using [digital resources] (e.g. smartphones, websites, apps)."
+5440,ST273Q07JA,"How often: Students get distracted by other students who are using [digital resources] (e.g. smartphones, websites, apps)."
+5450,ST270Q01JA,How often: The teacher shows an interest in every student's learning.
+5460,ST270Q02JA,How often: The teacher gives extra help when students need it.
+5470,ST270Q03JA,How often: The teacher helps students with their learning.
+5480,ST270Q04JA,How often: The teacher continues teaching until the students understand.
+5490,ST285Q01JA,How often: The teacher asked us to solve mathematics problems without computing anything.
+5501,ST285Q02JA,How often: The teacher asked us to explain how we solved a mathematics problem.
+5512,ST285Q03JA,How often: The teacher asked us to explain what assumptions we were making when solving a mathematics problem.
+5523,ST285Q04JA,How often: The teacher asked us to explain our reasoning when solving a mathematics problem.
+5534,ST285Q05JA,How often: The teacher asked us to defend our answer to a mathematics problem.
+5545,ST285Q06JA,How often: The teacher asked us to think about how new and old mathematics topics were related.
+5556,ST285Q07JA,How often: The teacher encouraged us to think about how to solve mathematics problems in different ways than demonstrated in class.
+5567,ST285Q08JA,How often: The teacher told us to keep trying even when we face difficulties with a mathematics task.
+5578,ST285Q09JA,How often: The teacher taught us to memorize rules and apply them to solve mathematics problems.
+5589,ST283Q01JA,How often: The teacher asked us to think of problems from everyday life that could be solved with new mathematics knowledge we learned.
+5600,ST283Q02JA,How often: The teacher showed us how mathematics can be useful in our everyday lives.
+5611,ST283Q03JA,How often: The teacher encouraged us to 'think mathematically'.
+5622,ST283Q04JA,How often: The teacher taught us how to use mathematical logic when approaching new situations.
+5633,ST283Q05JA,How often: The teacher showed us how some problems that look difficult can be solved more easily by understanding how the number system is organized.
+5644,ST283Q06JA,How often: The teacher gave problems from everyday life involving numbers and asked us to make a decision about the situation.
+5655,ST283Q07JA,How often: The teacher asked us how different topics are connected to a bigger mathematical idea.
+5666,ST283Q08JA,How often: The teacher encouraged us to think about how a problem from everyday life could be solved using mathematics.
+5677,ST283Q09JA,How often: The teacher explained how different mathematical ideas connect to a larger context.
+5688,ST275Q01WA,How often at school: Working out from a [train timetable] how long it would take to get from one place to another
+5698,ST275Q02WA,How often at school: Calculating how much more expensive a computer would be after adding tax
+5708,ST275Q03WA,How often at school: Calculating how many square metres of tiles you need to cover a floor
+5718,ST275Q04WA,How often at school: Understanding scientific tables presented in an article
+5728,ST275Q05WA,How often at school: Solving an equation like 6x[sup]2[/sup]+5 = 29
+5738,ST275Q06WA,"How often at school: Finding the actual distance between two places on a map with a 1?10,000 scale"
+5748,ST275Q07WA,How often at school: Solving an equation like 2(x+3) = (x+3)(x-3)
+5758,ST275Q08WA,How often at school: Calculating the power consumption of an electronic appliance per week
+5768,ST275Q09WA,How often at school: Solving an equation like 3x+5=17
+5778,ST276Q01JA,"How often at school: Extracting mathematical information from diagrams, graphs, or simulations"
+5788,ST276Q02JA,How often at school: Interpreting mathematical solutions in the context of a real-life challenge
+5798,ST276Q03JA,How often at school: Using the concept of statistical variation to make a decision
+5808,ST276Q04JA,How often at school: Identifying mathematical aspects of a real-world problem
+5818,ST276Q05JA,How often at school: Identifying constraints and assumptions behind mathematical modelling
+5828,ST276Q06JA,"How often at school: Representing a situation mathematically using variables, symbols, or diagrams"
+5838,ST276Q07JA,How often at school: Evaluating the significance of observed patterns in data
+5848,ST276Q08JA,How often at school: Coding/programming computers
+5858,ST276Q09JA,"How often at school: Working with computer mathematics systems (e.g. spreadsheets, programming software, graphing calculators)"
+5868,ST276Q10JA,How often at school: Calculating the properties of an irregularly shaped object
+5878,ST268Q01JA,Agree/disagree: Mathematics is one of my favourite subjects.
+5888,ST268Q02JA,Agree/disagree: [Test language] is one of my favourite subjects.
+5898,ST268Q03JA,Agree/disagree: [Science] is one of my favourite subjects.
+5908,ST268Q04JA,Agree/disagree: Mathematics is easy for me.
+5918,ST268Q05JA,Agree/disagree: [Test language] is easy for me.
+5928,ST268Q06JA,Agree/disagree: [Science] is easy for me.
+5938,ST268Q07JA,Agree/disagree: I want to do well in my mathematics class.
+5948,ST268Q08JA,Agree/disagree: I want to do well in my [test language] class.
+5958,ST268Q09JA,Agree/disagree: I want to do well in my [science] class.
+5968,ST290Q01WA,How confident in math tasks: Working out from a [train timetable] how long it would take to get from one place to another
+5978,ST290Q02WA,How confident in math tasks: Calculating how much more expensive a computer would be after adding tax
+5988,ST290Q03WA,How confident in math tasks: Calculating how many square metres of tiles you need to cover a floor
+5998,ST290Q04WA,How confident in math tasks: Understanding scientific tables presented in an article
+6008,ST290Q05WA,How confident in math tasks: Solving an equation like 6x[sup]2[/sup]+5=29
+6018,ST290Q06WA,"How confident in math tasks: Finding the actual distance between two places on a map with a 1?10,000 scale"
+6028,ST290Q07WA,How confident in math tasks: Solving an equation like 2(x+3) = (x+3)(x-3)
+6038,ST290Q08WA,How confident in math tasks: Calculating the power consumption of an electronic appliance per week
+6048,ST290Q09WA,How confident in math tasks: Solving an equation like 3x+5=17
+6058,ST291Q01JA,"How confident in math tasks: Extracting mathematical information from diagrams, graphs, or simulations"
+6068,ST291Q02JA,How confident in math tasks: Interpreting mathematical solutions in the context of a real-life challenge
+6078,ST291Q03JA,How confident in math tasks: Using the concept of statistical variation to make a decision
+6088,ST291Q04JA,How confident in math tasks: Identifying mathematical aspects of a real-world problem
+6098,ST291Q05JA,How confident in math tasks: Identifying constraints and assumptions behind mathematical modelling
+6108,ST291Q06JA,"How confident in math tasks: Representing a situation mathematically using variables, symbols, or diagrams"
+6118,ST291Q07JA,How confident in math tasks: Evaluating the significance of observed patterns in data
+6128,ST291Q08JA,How confident in math tasks: Coding/programming computers
+6138,ST291Q09JA,"How confident in math tasks: Working with computer mathematics systems (e.g. spreadsheets, programming software, graphing calculators)"
+6148,ST291Q10JA,How confident in math tasks: Calculating the properties of an irregularly shaped object
+6158,ST289Q01WA,How familiar are you with the following mathematical terms: Divisor
+6169,ST289Q02JA,How familiar are you with the following mathematical terms: Area of a circle
+6180,ST289Q03WA,How familiar are you with the following mathematical terms: [Subjunctive scaling]
+6191,ST289Q04JA,How familiar are you with the following mathematical terms: Congruent figures
+6202,ST289Q05WA,How familiar are you with the following mathematical terms: Linear equation
+6213,ST289Q06JA,How familiar are you with the following mathematical terms: Pythagorean theorem
+6224,ST289Q07JA,How familiar are you with the following mathematical terms: Linear inequalities
+6235,ST289Q08WA,How familiar are you with the following mathematical terms: Complex number
+6246,ST289Q09WA,How familiar are you with the following mathematical terms: Exponential function
+6257,ST289Q10WA,How familiar are you with the following mathematical terms: Probability
+6268,ST289Q11WA,How familiar are you with the following mathematical terms: [Declarative fraction]
+6279,ST289Q14JA,How familiar are you with the following mathematical terms: 3-dimensional geometry
+6290,ST293Q01JA,"This school year, how often: I actively participated in group discussions during mathematics class."
+6301,ST293Q02JA,"This school year, how often: I paid attention when my mathematics teacher was speaking."
+6312,ST293Q03JA,"This school year, how often: I put effort into my assignments for mathematics class."
+6323,ST293Q04JA,"This school year, how often: I gave up when I did not understand the mathematics material that was being taught."
+6334,ST293Q05JA,"This school year, how often: I made time to learn the material for mathematics class."
+6345,ST293Q06JA,"This school year, how often: I asked questions when I did not understand the mathematics material that was being taught."
+6356,ST293Q07JA,"This school year, how often: I lost interest during mathematics lessons."
+6367,ST293Q08JA,"This school year, how often:  I tried to connect new material to what I have learned in previous mathematics lessons."
+6378,ST293Q09JA,"This school year, how often: I started my work on mathematics assignments right away."
+6389,ST292Q01JA,Agree/disagree: I often worry that it will be difficult for me in mathematics classes.
+6399,ST292Q02JA,Agree/disagree: I get very tense when I have to do mathematics homework.
+6409,ST292Q03JA,Agree/disagree: I get very nervous doing mathematics problems.
+6419,ST292Q04JA,Agree/disagree: I feel helpless when doing a mathematics problem.
+6429,ST292Q05JA,Agree/disagree: I worry that I will get poor [marks] in mathematics.
+6439,ST292Q06JA,Agree/disagree: I feel anxious about failing in mathematics.
+6449,ST297Q01JA,[Additional math instruction] received: One-on-one tutoring with a person
+6457,ST297Q03JA,[Additional math instruction] received: Internet or computer tutoring with a programme or application
+6465,ST297Q05JA,[Additional math instruction] received: Video-recorded instruction by a person
+6473,ST297Q06JA,[Additional math instruction] received: Small group study or practice (2 to 7 students)
+6481,ST297Q07JA,[Additional math instruction] received: Large group study or practice (8 or more students)
+6489,ST297Q09JA,[Additional math instruction] received: I do not participate in [additional mathematics instruction]
+6497,ST334Q01JA,How confident about doing: Coming up with creative ideas for school projects
+6507,ST334Q02JA,How confident about doing: Being creative
+6517,ST334Q03JA,How confident about doing: Telling creative stories
+6527,ST334Q04JA,How confident about doing: Expressing your ideas creatively
+6537,ST334Q05JA,How confident about doing: Making creative drawings
+6547,ST334Q06JA,How confident about doing: Thinking of many good ideas for science experiments
+6557,ST334Q07JA,How confident about doing: Inventing new things
+6567,ST334Q08JA,How confident about doing: Thinking of many ideas for solving disagreements with people
+6577,ST334Q09JA,How confident about doing: Addressing social problems like pollution
+6587,ST334Q10JA,How confident about doing: Coming up with many good ideas for helping people in need
+6597,ST335Q01JA,Agree/disagree: My teachers give me enough time to come up with creative solutions on assignments.
+6607,ST335Q02JA,Agree/disagree: My teachers value students' creativity.
+6617,ST335Q03JA,Agree/disagree: The activities we do in my classes help me think about new ways to solve problems.
+6627,ST335Q05JA,Agree/disagree: My mathematics assignments require me to come up with different solutions for a problem.
+6637,ST335Q06JA,Agree/disagree: My teachers encourage me to come up with original answers.
+6647,ST335Q07JA,"Agree/disagree: At school, I am given a chance to express my ideas."
+6657,ST336Q01JA,Agree/disagree: My friends are open to new ideas.
+6667,ST336Q03JA,Agree/disagree: My friends and I give one another feedback about our ideas.
+6677,ST336Q04JA,Agree/disagree: My friends and I encourage each other to come up with new ideas.
+6687,ST336Q05JA,Agree/disagree: My family encourages me to try new things.
+6697,ST336Q06JA,"Agree/disagree: At home, I am encouraged to use my imagination."
+6707,ST336Q07JA,Agree/disagree: Discussions I have at home help me come up with new ideas.
+6717,ST337Q01JA,"In your school, how often participate in: Art classes/activities (e.g. painting, drawing)"
+6729,ST337Q02JA,"In your school, how often participate in: Creative writing classes/activities"
+6741,ST337Q03JA,"In your school, how often participate in: Music classes/activities (e.g. chorus, band)"
+6753,ST337Q04JA,"In your school, how often participate in: Debate [club]"
+6765,ST337Q05JA,"In your school, how often participate in: Dramatics, theatre class/activities"
+6777,ST337Q06JA,"In your school, how often participate in: Publications (e.g. newspaper, [yearbooks], literary magazine)"
+6789,ST337Q07JA,"In your school, how often participate in: Science [club]"
+6801,ST337Q08JA,"In your school, how often participate in: Computer programming classes/activities"
+6813,ST338Q01JA,"Out of school, how often participate in: Art classes/activities (e.g. painting, drawing)"
+6825,ST338Q02JA,"Out of school, how often participate in: Creative writing classes/activities"
+6837,ST338Q03JA,"Out of school, how often participate in: Music classes/activities (e.g. chorus, band)"
+6849,ST338Q04JA,"Out of school, how often participate in: Debate [club]"
+6861,ST338Q05JA,"Out of school, how often participate in: Dramatics, theatre class/activities"
+6873,ST338Q06JA,"Out of school, how often participate in: Publications (e.g. newspaper, [yearbooks], literary magazine)"
+6885,ST338Q07JA,"Out of school, how often participate in: Science [club]"
+6897,ST338Q08JA,"Out of school, how often participate in: Computer programming classes/activities"
+6909,ST339Q04JA,"Agree/disagree: Creativity can only be expressed through the arts (e.g. drawing, music, or writing)."
+6919,ST339Q06JA,Agree/disagree: It is possible to be creative in nearly any subject.
+6929,ST340Q01JA,Agree/disagree: Doing something creative satisfies me.
+6939,ST340Q02JA,Agree/disagree: I am very creative.
+6949,ST340Q03JA,Agree/disagree: I like creating stories.
+6959,ST340Q04JA,Agree/disagree: I like games that challenge my creativity.
+6969,ST340Q05JA,Agree/disagree: I enjoy projects that require creative solutions.
+6979,ST340Q06JA,Agree/disagree: I enjoy thinking about new ways to solve problems.
+6989,ST340Q07JA,Agree/disagree: I enjoy solving complex problems.
+6999,ST340Q08JA,Agree/disagree: I like school work that is challenging.
+7009,ST340Q09JA,Agree/disagree: I can suggest several solutions to problems.
+7019,ST340Q10JA,Agree/disagree: I enjoy learning new things.
+7029,ST341Q01JA,Agree/disagree: I enjoy creating art.
+7039,ST341Q02JA,Agree/disagree: I enjoy artistic activities.
+7049,ST341Q03JA,Agree/disagree: I express myself through art.
+7059,ST341Q04JA,Agree/disagree: I reflect on movies I watch.
+7069,ST341Q05JA,Agree/disagree: I see beauty in everyday things.
+7079,ST342Q01JA,Agree/disagree: I have difficulty using my imagination.
+7089,ST342Q02JA,Agree/disagree: I often get lost in thought.
+7099,ST342Q03JA,Agree/disagree: Coming up with new ideas is satisfying to me.
+7109,ST342Q04JA,Agree/disagree: I have a good imagination.
+7119,ST342Q06JA,Agree/disagree: I would get bored doing the same thing every day.
+7129,ST342Q07JA,Agree/disagree: I like to be spontaneous.
+7139,ST342Q08JA,Agree/disagree: I would like to travel to places I have never been.
+7149,ST300Q01JA,How often parents/family member: Discuss how well you are doing at school.
+7160,ST300Q02JA,How often parents/family member: Eat [the main meal] with you.
+7171,ST300Q03JA,How often parents/family member: Spend time just talking with you.
+7182,ST300Q04JA,How often parents/family member: Talk to you about the importance of [completing ISCED 3].
+7193,ST300Q05JA,How often: parents/family member: Talk to you about any problems you might have at school.
+7204,ST300Q06JA,How often parents/family member: Ask you about how well you are getting along with other students at school.
+7215,ST300Q07JA,How often parents/family member: Encourage you to get good [marks].
+7226,ST300Q08JA,How often parents/family member: Take an interest in what you are learning at school.
+7237,ST300Q09JA,How often parents/family member: Talk to you about your future education.
+7248,ST300Q10JA,How often parents/family member: Ask you what you did in school that day.
+7259,ST327Q01JA,Which of the following qualifications do you expect to complete: [ISCED level 2]
+7268,ST327Q02JA,Which of the following qualifications do you expect to complete: [ISCED level 3.3]
+7277,ST327Q03JA,Which of the following qualifications do you expect to complete: [ISCED level 3.4]
+7286,ST327Q04JA,Which of the following qualifications do you expect to complete: [ISCED level 4]
+7295,ST327Q05JA,Which of the following qualifications do you expect to complete: [ISCED level 5]
+7304,ST327Q06JA,Which of the following qualifications do you expect to complete: [ISCED level 6]
+7313,ST327Q07JA,Which of the following qualifications do you expect to complete: [ISCED level 7]
+7322,ST327Q08JA,Which of the following qualifications do you expect to complete: [ISCED level 8]
+7331,ST330Q01WA,"To learn about future study/work, have you: I did an internship."
+7340,ST330Q02WA,"To learn about future study/work, have you: I attended [job shadowing or work-site visits]."
+7349,ST330Q03WA,"To learn about future study/work, have you: I visited a [job fair]."
+7358,ST330Q04WA,"To learn about future study/work, have you: I spoke to a [career advisor] at my school."
+7367,ST330Q05WA,"To learn about future study/work, have you: I spoke to a [career advisor] outside of my school."
+7376,ST330Q06WA,"To learn about future study/work, have you: I completed a questionnaire to find out about my interests and abilities."
+7385,ST330Q07WA,"To learn about future study/work, have you: I researched the internet for information about careers."
+7394,ST330Q08WA,"To learn about future study/work, have you: I went to an organised tour in an [ISCED 3-7] institution."
+7403,ST330Q09WA,"To learn about future study/work, have you: I researched the internet for information about [ISCED 3-7] programmes."
+7412,ST330Q11WA,"To learn about future study/work, have you: I researched information on student financing (e.g. student loans or grants)."
+7421,ST330D10WA,Have you done any of the following to find out about future study or types of work? <Country-specific item>
+7566,ST324Q02JA,Agree/disagree: I worry that I am not prepared for life after [the final year of compulsory education].
+7576,ST324Q04JA,Agree/disagree: I feel well-informed about possible paths for me after [the final year of compulsory education].
+7586,ST324Q05JA,"Agree/disagree: I feel pressure from my family to follow a specific path (e.g. go to college, work in the family business, learn a trade) after [the final year of compulsory education]."
+7596,ST324Q07JA,Agree/disagree: I worry that I won't have enough money to do what I'd like to do after [the final year of compulsory education].
+7606,ST324Q10JA,Agree/disagree: School has done little to prepare me for adult life when I leave school.
+7616,ST324Q11JA,Agree/disagree: School has been a waste of time.
+7626,ST324Q12JA,Agree/disagree: School has helped give me confidence to make decisions.
+7636,ST324Q13JA,Agree/disagree: School has taught me things which could be useful in a job.
+7646,ST324Q14JA,Agree/disagree: I feel well-prepared for my future path after [the final year of compulsory education].
+7656,ST347Q01JA,"In last 3 years, did school close because: Because of COVID-19"
+7668,ST347Q02JA,"In last 3 years, did school close because: For another reason (e.g. a natural disaster, strikes or demonstrations, air pollution)"
+7680,ST348Q01JA,"During COVID closures, how often: Sent you learning materials to study on your own"
+7690,ST348Q02JA,"During COVID closures, how often: Sent you assignments"
+7700,ST348Q03JA,"During COVID closures, how often: Uploaded material on a learning management system or school learning platform (e.g. [Blackboard®], [Edmodo®], [Moodle®], [Google® Classroom™])"
+7710,ST348Q04JA,"During COVID closures, how often: Checked in with you to ensure that you were completing your assignments"
+7720,ST348Q05JA,"During COVID closures, how often: Offered live virtual classes on a video communication program (e.g. Zoom™, Skype™, Google® Meet™, Microsoft® Teams)"
+7730,ST348Q06JA,"During COVID closures, how often: Asked you to submit completed school assignments"
+7740,ST348Q07JA,"During COVID closures, how often: Gave you helpful tips about how to study on your own"
+7750,ST348Q08JA,"During COVID closures, how often: Checked in with you to ask how you were feeling"
+7760,ST349Q01JA,"During COVID closures, which of the following digital devices did you use most often for your school work?"
+7771,ST350Q01JA,"During COVID closures, how much learned compared to typical week of in person school?"
+7780,ST351Q01JA,"During COVID closures, how often use: Paper textbooks, workbooks, or worksheets"
+7790,ST351Q02JA,"During COVID closures, how often use: Digital textbooks, workbooks, or worksheets"
+7800,ST351Q03JA,"During COVID closures, how often use: Real-time lessons by a teacher from my school on a video communication program (e.g. ZoomTM, SkypeTM, Google® Meet™, Microsoft® Teams)"
+7810,ST351Q04JA,"During COVID closures, how often use: Real time lessons by a private tutor on a video communication program (e.g. Zoom™, Skype™, Google® Meet™, Microsoft® Teams)"
+7820,ST351Q05JA,"During COVID closures, how often use: Learning material my teachers sent via SMS or WhatsApp™"
+7830,ST351Q06JA,"During COVID closures, how often use: Recorded lessons or other digital material provided by teachers from my school"
+7840,ST351Q07JA,"During COVID closures, how often use: Recorded lessons or other digital material from other sources (e.g. Khan Academy®, Coursera®)"
+7850,ST351Q08JA,"During COVID closures, how often use: Lessons broadcast over television or radio"
+7860,ST352Q01JA,"During COVID closures, how often problems with: Problems with access to a digital device when I needed it"
+7870,ST352Q02JA,"During COVID closures, how often problems with: Problems with Internet access"
+7880,ST352Q03JA,"During COVID closures, how often problems with: Problems with access to school supplies (e.g. paper, pencil)"
+7890,ST352Q04JA,"During COVID closures, how often problems with: Problems with finding a quiet place to study"
+7900,ST352Q05JA,"During COVID closures, how often problems with: Problems finding time to study because I had household responsibilities"
+7910,ST352Q06JA,"During COVID closures, how often problems with: Problems with motivating myself to do school work"
+7920,ST352Q07JA,"During COVID closures, how often problems with: Problems with understanding my school assignments"
+7930,ST352Q08JA,"During COVID closures, how often problems with: Problems with finding someone who could help me with my school work"
+7940,ST353Q01JA,"During COVID closures, how often did family member: Help you with your school work"
+7950,ST353Q02JA,"During COVID closures, how often did family member: Ask you what you were learning"
+7960,ST353Q03JA,"During COVID closures, how often did family member: Help you create a learning schedule"
+7970,ST353Q04JA,"During COVID closures, how often did family member: Help you access learning materials online"
+7980,ST353Q05JA,"During COVID closures, how often did family member: Check whether you were completing your school assignments"
+7990,ST353Q06JA,"During COVID closures, how often did family member: Explain new content to you"
+8000,ST353Q07JA,"During COVID closures, how often did family member: Help you find additional learning resources"
+8010,ST353Q08JA,"During COVID closures, how often did family member: Teach you additional topics not part of your school assignments"
+8020,ST354Q01JA,"During COVID closures, agree/disagree: I felt lonely."
+8030,ST354Q02JA,"During COVID closures, agree/disagree: I enjoyed learning by myself."
+8040,ST354Q03JA,"During COVID closures, agree/disagree: My teachers were available when I needed help (e.g. through virtual office hours, email, chat)."
+8050,ST354Q04JA,"During COVID closures, agree/disagree: I felt anxious about school work."
+8060,ST354Q05JA,"During COVID closures, agree/disagree: I was motivated to learn."
+8070,ST354Q06JA,"During COVID closures, agree/disagree: I fell behind in my school work."
+8080,ST354Q07JA,"During COVID closures, agree/disagree: I improved my skills in using digital devices for learning purposes."
+8090,ST354Q08JA,"During COVID closures, agree/disagree: My teachers were well prepared to provide instruction remotely."
+8100,ST354Q09JA,"During COVID closures, agree/disagree: I was well prepared to learn on my own."
+8110,ST354Q10JA,"During COVID closures, agree/disagree: I missed sports and other physical activities organised by my school."
+8120,ST355Q01JA,"Confident can do in future: Using a learning management system or school learning platform (e.g. Blackboard®, Edmodo®, Moodle®, Google® Classroom™)"
+8130,ST355Q02JA,"Confident can do in future: Using a video communication program (e.g. Zoom™, Skype™, Google® Meet™, Microsoft® Teams)"
+8140,ST355Q03JA,Confident can do in future: : Finding learning resources online on my own
+8150,ST355Q04JA,Confident can do in future: Planning when to do school work on my own
+8160,ST355Q05JA,Confident can do in future: Motivating myself to do school work
+8170,ST355Q06JA,Confident can do in future: Focusing on school work without reminders
+8180,ST355Q07JA,Confident can do in future: Completing school work independently
+8190,ST355Q08JA,Confident can do in future: Assessing my progress with learning
+8200,ST356Q01JA,"Overall, how prepared feel for learning on own if school building closed again for extended period the future?"
+8210,ST331Q01JA,How much effort did you put into doing well on the PISA test?
+8226,ST331Q02JA,How much effort would you have invested if your results from the PISA test were counted in your [school marks]?
+8242,ST331Q03JA,How much effort did you put into giving accurate answers?
+8258,FL150Q01TA,"Have you learned to manage money in a course: At school, in a subject or course specifically about managing your money"
+8266,FL150Q02TA,Have you learned to manage money in a course: At school as part of another subject or course
+8274,FL150Q03TA,Have you learned to manage money in a course: In an activity outside school
+8282,FL164Q01HA,"In school lessons in last 12 months, have you heard of or learnt about: Interest payment"
+8291,FL164Q02HA,"In school lessons in last 12 months, have you heard of or learnt about: Compound interest"
+8300,FL164Q03HA,"In school lessons in last 12 months, have you heard of or learnt about: Exchange rate"
+8309,FL164Q04HA,"In school lessons in last 12 months, have you heard of or learnt about: Depreciation"
+8318,FL164Q05HA,"In school lessons in last 12 months, have you heard of or learnt about: Shares/stocks"
+8327,FL164Q06HA,"In school lessons in last 12 months, have you heard of or learnt about: Return on investment"
+8336,FL164Q07HA,"In school lessons in last 12 months, have you heard of or learnt about: Dividend"
+8345,FL164Q08HA,"In school lessons in last 12 months, have you heard of or learnt about: Diversification"
+8354,FL164Q09HA,"In school lessons in last 12 months, have you heard of or learnt about: Debit card"
+8363,FL164Q10HA,"In school lessons in last 12 months, have you heard of or learnt about: Bank loan"
+8372,FL164Q11HA,"In school lessons in last 12 months, have you heard of or learnt about: Pension plan"
+8381,FL164Q12HA,"In school lessons in last 12 months, have you heard of or learnt about: Budget"
+8390,FL164Q13HA,"In school lessons in last 12 months, have you heard of or learnt about: Wage"
+8399,FL164Q14HA,"In school lessons in last 12 months, have you heard of or learnt about: Entrepreneur"
+8408,FL164Q15HA,"In school lessons in last 12 months, have you heard of or learnt about: Central bank"
+8417,FL164Q16HA,"In school lessons in last 12 months, have you heard of or learnt about: Income tax"
+8426,FL166Q01HA,"In school, how often encountered: Describing the purpose and uses of money"
+8435,FL166Q02HA,"In school, how often encountered: Exploring the difference between spending money on needs and wants"
+8444,FL166Q03HA,"In school, how often encountered: Exploring ways of planning to pay an expense"
+8453,FL166Q05HA,"In school, how often encountered: Discussing the rights of consumers when dealing with financial institutions"
+8462,FL166Q06HA,"In school, how often encountered: Discussing the ways in which money invested in the stock market changes value over time"
+8471,FL166Q07HA,"In school, how often encountered: Analysing advertisements to understand how they encourage people to buy things"
+8480,FL174Q01JA,Encountered these during: During your mathematics class
+8490,FL174Q02JA,Encountered these during: During classes about social sciences ([national example])
+8500,FL174Q03JA,Encountered these during: During classes about citizenship ([civic education or 'the world around me' or other national example])
+8510,FL174Q04JA,Encountered these during: During classes about economics or business
+8520,FL174Q05JA,Encountered these during: During another class
+8530,FL174Q06JA,Encountered these during: During a one-off lesson or activity in school time from an outside visitor (not one of your teachers)
+8540,FL174Q07JA,Encountered these during: During extra-curricular activity outside of school time
+8550,FL167Q01HA,How often discuss with parents/guardians/relatives: Your spending decisions
+8560,FL167Q02HA,How often discuss with parents/guardians/relatives: Your savings decisions
+8570,FL167Q06JA,How often discuss with parents/guardians/relatives: How to use your allowance or pocket money
+8580,FL167Q03HA,How often discuss with parents/guardians/relatives: The family budget
+8590,FL167Q04HA,How often discuss with parents/guardians/relatives: Money for things you want to buy
+8600,FL167Q05HA,How often discuss with parents/guardians/relatives: News related to economics or finance
+8610,FL167Q07JA,How often discuss with parents/guardians/relatives: Shopping online
+8620,FL170Q01JA,"In last 12 months, how often get money from: An allowance or pocket money for doing chores at home"
+8631,FL170Q02JA,"In last 12 months, how often get money from: An allowance or pocket money, without having to do any chores"
+8642,FL170Q03JA,"In last 12 months, how often get money from: Working outside school hours (e.g. a holiday job, part-time work)"
+8653,FL170Q04JA,"In last 12 months, how often get money from: Working in a family business"
+8664,FL170Q05JA,"In last 12 months, how often get money from: Occasional informal jobs (e.g. baby-sitting or gardening)"
+8675,FL170Q06JA,"In last 12 months, how often get money from: Gifts from friends or relatives"
+8686,FL170Q07JA,"In last 12 months, how often get money from: Selling things (e.g. at local markets or on [eBay])"
+8697,FL159Q01HA,Agree/disagree: I can decide independently what to spend my money on.
+8707,FL159Q02HA,"Agree/disagree: I can spend small amounts of my money independently, but for larger amounts I need to ask my parents or guardians for permission."
+8717,FL159Q03HA,Agree/disagree: I need to ask my parents or guardians for permission before I spend any money on my own.
+8727,FL159Q04HA,Agree/disagree: I am responsible for my own money matters (e.g. for preventing theft).
+8737,FL160Q01HA,"When buying product, how often: Compare prices in different shops"
+8747,FL160Q02HA,"When buying product, how often: Compare prices between a shop and an online shop"
+8757,FL160Q03HA,"When buying product, how often: Buy the product without comparing prices"
+8767,FL160Q04HA,"When buying product, how often: Wait until the product gets cheaper before buying it"
+8777,FL161Q01HA,"Do you have any of the following things: An account with a [bank, building society, post office or credit union]"
+8786,FL161Q02HA,Do you have any of the following things: A payment card/debit card
+8795,FL161Q03HA,Do you have any of the following things: A mobile app to access your account
+8804,FL162Q01HA,How confident would you feel about: Making a money transfer (e.g. paying a bill)
+8814,FL162Q02HA,How confident would you feel about: Filling in forms at the bank
+8824,FL162Q03HA,How confident would you feel about: Understanding bank statements
+8834,FL162Q04HA,How confident would you feel about: Understanding a sales contract
+8844,FL162Q05HA,How confident would you feel about: Keeping track of my account balance
+8854,FL162Q06HA,How confident would you feel about: Planning my spending with consideration of my current financial situation
+8864,FL163Q01HA,Confident use digital device to: Transferring money
+8874,FL163Q02HA,Confident use digital device to: Keeping track of my balance
+8884,FL163Q03HA,Confident use digital device to: Paying with a debit card instead of using cash
+8894,FL163Q04HA,Confident use digital device to: Paying with a mobile device (e.g. mobile phone or tablet) instead of using cash
+8904,FL163Q05HA,Confident use digital device to: Ensuring the safety of sensitive information when making an electronic payment or using online banking
+8914,FL171Q01JA,How often: Checked that you were given the right change when you bought something with cash
+8925,FL171Q02JA,How often:  Felt that you did not have enough money for something you wanted to buy
+8936,FL171Q03JA,How often: Bought something online (alone or with a family member)
+8947,FL171Q04JA,How often: Made a payment using a smartphone (i.e. mobile phone with Internet access)
+8958,FL171Q05JA,How often: Made a payment using a bank card (e.g. [debit card])
+8969,FL171Q07JA,How often: Bought something that cost more money than you intended to spend
+8980,FL171Q08JA,How often:  Checked how much money you have
+8991,FL171Q09JA,How often:  Bought something because your friends have it
+9002,FL171Q10JA,How often: Sent money to other people with a smartphone (i.e. mobile phone with Internet access)
+9013,FL171Q11JA,"How often: Saved money in an account at a [bank, online bank, building society, post office or credit union]"
+9024,FL171Q12JA,How often: Saved money at home
+9035,FL169Q01HA,Agree/disagree:  I enjoy talking about money matters.
+9045,FL169Q05JA,Agree/disagree:  I know how to manage my money.
+9055,FL169Q02HA,Agree/disagree:  Young people should make their own decisions about how to spend their money.
+9065,FL169Q06JA,Agree/disagree:  I buy things according to how I feel at the moment.
+9075,FL169Q07JA,Agree/disagree:  Saving is something I do only if I have money left over.
+9085,FL169Q03HA,Agree/disagree:  Money matters are not relevant for me right now.
+9095,FL169Q04HA,Agree/disagree:  I would like to run my own business in the future.
+9105,FL169Q08JA,Agree/disagree:  I am able to work effectively towards long-term goals.
+9115,FL169Q10JA,Agree/disagree:  I make savings goals for certain things I want to buy or to do.
+9125,FL169Q11JA,Agree/disagree:  It is easier to monitor my spending when I pay by cash than when I pay with a bank card.
+9135,FL172Q01JA,Agree/disagree: My friends have a strong influence on my spending decisions.
+9145,FL172Q03JA,Agree/disagree: I want to keep up with my friends' life style.
+9155,FL172Q05JA,Agree/disagree: Sometimes I spend more than I would like when I am with my friends.
+9165,FL172Q06JA,Agree/disagree: I often buy what my friends recommend.
+9175,IC170Q01JA,How often use at school: Desktop or laptop computer
+9187,IC170Q02JA,How often use at school: Smartphone (i.e. mobile phone with internet access)
+9199,IC170Q03JA,"How often use at school: [Tablet device] (e.g. [iPad®], [Galaxy Book®],) or [e-book reader] (e.g. [Amazon Kindle™], [Kobo®])"
+9211,IC170Q04JA,How often use at school: Internet access (except on smartphones)
+9223,IC170Q05JA,"How often use at school: School portal (to consult timetable, absences, etc.)"
+9235,IC170Q06JA,"How often use at school: Educational software, games or apps, other learning tools (e.g. [CK-12™] or [Mathalicious®] online support)"
+9247,IC170Q07JA,"How often use at school: A learning management system or school learning platform (e.g. [Blackboard®], [Edmodo®], [Moodle®], [Google® Classroom™])"
+9259,IC171Q01JA,How often use out of school: Desktop or laptop computer
+9271,IC171Q02JA,How often use out of school: Smartphone (i.e. mobile phone with Internet access)
+9283,IC171Q03JA,"How often use out of school: Tablet device (e.g.iPad®, Galaxy Book®,) or e-book reader (e.g., Amazon® Kindle™, Kobo®)"
+9295,IC171Q04JA,How often use out of school: Internet access (except on smartphones)
+9307,IC171Q05JA,"How often use out of school: Educational software, games or Apps, other learning tools (e.g. CK-12™ or Mathalicious® online support)"
+9319,IC171Q06JA,"How often use out of school: Video or online games (e.g. used with game consoles such as a  Play Station 4® or Nintendo Wii®, online gaming platforms such as  Steam® or gaming Apps such as Angry Birds®)"
+9331,IC172Q01JA,Agree/disagree: There are enough [digital resources] for every student at my school.
+9341,IC172Q02JA,Agree/disagree: There are enough digital devices with access to the Internet at my school.
+9351,IC172Q03JA,Agree/disagree: The school's Internet speed is sufficient.
+9361,IC172Q04JA,Agree/disagree: [Digital resources] function properly at my school.
+9371,IC172Q05JA,Agree/disagree: [Digital resources] are easily accessible within the classroom.
+9381,IC172Q06JA,Agree/disagree: Digital learning resources available at my school make learning interesting.
+9391,IC172Q07JA,Agree/disagree: The school provides sufficient technical support to help students in their use of [digital resources].
+9401,IC172Q08JA,Agree/disagree: Teachers at my school have the necessary skills to use digital devices during instruction.
+9411,IC172Q09JA,Agree/disagree: Teachers at my school are willing to use [digital resources] for teaching.
+9421,IC173Q01JA,How often use [digital resources] in lessons in: [Test language]
+9433,IC173Q02JA,How often use [digital resources] in lessons in: [Mathematics]
+9445,IC173Q03JA,How often use [digital resources] in lessons in: [Science]
+9457,IC173Q04JA,"How often use [digital resources] in lessons in: [Computer science], [information technology], [informatics] or similar lessons."
+9469,IC174Q01JA,"How often used [digital resources] to: Create a multi-media presentation with pictures, sound or video"
+9480,IC174Q02JA,"How often used [digital resources] to: Write or edit text for a school assignment (e.g. using [Google® Docs™], [Microsoft® Word])"
+9491,IC174Q03JA,"How often used [digital resources] to: Find information online about real-world problems or phenomena (e.g. climate change, oil spills, measuring the height of a building)"
+9502,IC174Q04JA,"How often used [digital resources] to: Collect and record data (e.g. using data loggers, [Microsoft® Access™], [Google® Forms], spreadsheets)"
+9513,IC174Q05JA,How often: used [digital resources] to: Analyse data that you have collected yourself (e.g. using [Microsoft® Excel™])
+9524,IC174Q06JA,How often used [digital resources] to: Report or share your results from your own experiments or investigations
+9535,IC174Q07JA,"How often used [digital resources] to: Plan and manage work or projects (e.g. dividing tasks, managing deadlines)"
+9546,IC174Q08JA,How often used [digital resources] to: Track the progress of your own work projects
+9557,IC174Q09JA,"How often used [digital resources] to: Collaborate with other students to create digital content (e.g. presentation, etc.)"
+9568,IC174Q10JA,"How often used [digital resources] to: Play digital learning games (e.g. [Atlantis Remixed], [Duolingo®])"
+9579,IC175Q01JA,How often used [digital resources] to: Read or listen to feedback sent by my teachers regarding my work and academic results
+9590,IC175Q02JA,How often used [digital resources] to: Read or listen to feedback sent by other students on my work
+9601,IC175Q03JA,How often used [digital resources] to: Read or listen to feedback automatically selected for me by an educational software or app
+9612,IC175Q05JA,How often used [digital resources] to: Work on drill and practice exercises using an educational software or app
+9623,IC176Q01JA,How often used [digital resources] to: See my grades or results from specific assignments (e.g. homework or tests)
+9634,IC176Q02JA,How often used [digital resources] to: Browse the Internet for schoolwork (e.g. for preparing an essay or presentation)
+9645,IC176Q03JA,How often used [digital resources] to: Browse the Internet to follow up lessons (e.g. for finding explanations)
+9656,IC176Q04JA,How often used [digital resources] to: Receive or download assignments or instructions (via [digital resources]) from my teacher
+9667,IC176Q05JA,How often used [digital resources] to: Upload my work (e.g. documents or presentations) to a school portal or another platform to share materials with my teacher and/or students
+9678,IC176Q06JA,How often used [digital resources] to: Communicate with my teacher
+9689,IC176Q07JA,How often used [digital resources] to: Communicate with other students about schoolwork
+9700,IC176Q08JA,How often used [digital resources] to: Search for information on school-related activities or assignments
+9711,IC184Q01JA,How often: I use [digital resources] for simple calculations.
+9723,IC184Q02JA,How often: I use [digital resources] to solve equations.
+9735,IC184Q03JA,"How often: I use [digital resources] for simulations and modelling (e.g. [GeoGebra], [NetLogo]), virtual laboratories (e.g. [Labster])."
+9747,IC184Q04JA,"How often: I use [digital resources] for coding or algorithm activities (e.g. using [Scratch], etc.)"
+9759,IC177Q01JA,"How much time spent: Play video-games (using my smartphone, a gaming console or an online platform or apps)"
+9771,IC177Q02JA,"How much time spent: Browse social networks (e.g. [Instagram®], [Facebook®])"
+9783,IC177Q03JA,"How much time spent: Browse the Internet (excluding social networks) for fun (e.g. reading news, listening to podcasts and music or watching videos)"
+9795,IC177Q04JA,"How much time spent: Look for practical information online (e.g. find a place, book a train ticket, buy a product)"
+9807,IC177Q05JA,"How much time spent: Communicate and share digital content on social networks or any communication platform (e.g. [Facebook®], [Instagram®], [Twitter®], emails, chat)"
+9819,IC177Q06JA,"How much time spent: Read, listen to or view informational materials to learn how to do something (e.g. tutorial, podcast)"
+9831,IC177Q07JA,"How much time spent: Create or edit my own digital content (pictures, videos, music, videos, computer programs)"
+9843,IC178Q01JA,"How much time using [digital resources] to: Play video-games (using my smartphone, a gaming console or an online platform or apps)"
+9855,IC178Q02JA,"How much time using [digital resources] to: Browse social networks (e.g. Instagram®, Facebook®)"
+9867,IC178Q03JA,"How much time using [digital resources] to: Browse the Internet (excluding social networks) for fun  (e.g. reading news, listening to podcasts and music or watching videos)"
+9879,IC178Q04JA,"How much time using [digital resources] to: Look for practical information online (e.g. find a place, book a train ticket, buy a product)"
+9891,IC178Q05JA,"How much time using [digital resources] to: Communicate and share digital content on social networks or any communication platform (e.g. Facebook®, Instagram®, Twitter®, emails, chat) "
+9903,IC178Q06JA,"How much time using [digital resources] to: Read, listen to or view informational materials to learn how to do something (e.g. tutorial, podcast)"
+9915,IC178Q07JA,"How much time using [digital resources] to: Create or edit my own digital content (pictures, videos, music, videos, computer programs)"
+9927,IC179Q01JA,Agree/disagree: Students should not be allowed to bring mobile phones to class.
+9937,IC179Q02JA,Agree/disagree: Students should not be allowed to bring their own laptop (or tablet device) to class.
+9947,IC179Q03JA,Agree/disagree: Students should collaborate with teachers to decide on the rules regarding the use of digital devices during lessons.
+9957,IC179Q04JA,Agree/disagree: The school should set up filters to prevent students from going on social media.
+9967,IC179Q05JA,Agree/disagree: The school should set up filters to prevent students from playing games online.
+9977,IC179Q06JA,Agree/disagree: Teachers should monitor what students do on their laptops.
+9987,IC180Q01JA,Agree/disagree: I trust what I read online.
+9997,IC180Q02JA,Agree/disagree: When searching for information online I compare different sources.
+10007,IC180Q03JA,Agree/disagree: I check the accuracy of online information before sharing it on social networks.
+10017,IC180Q04JA,Agree/disagree: I discuss the accuracy of online information with my teachers or in class.
+10027,IC180Q05JA,Agree/disagree: I discuss the accuracy of online information with friends or other students.
+10037,IC180Q06JA,Agree/disagree: I discuss the accuracy of online information with my parents (or family).
+10047,IC180Q07JA,Agree/disagree: I try to flag wrong information when I encounter it online.
+10057,IC180Q08JA,Agree/disagree: I share made-up information on social networks without flagging its inaccuracy.
+10067,IC181Q01JA,How upset were you when: Encountering content online that was inappropriate for my age
+10078,IC181Q02JA,"How upset were you when: Encountering discriminatory content online (e.g. about race, gender, sexual orientation or physical appearance)"
+10089,IC181Q03JA,"How upset were you when: Receiving unkind, vulgar or offending messages, comments or videos"
+10100,IC181Q04JA,How upset were you when: Information about me was publicly displayed online without my consent
+10111,IC182Q01JA,Agree/disagree: I am interested in learning more about [digital resources].
+10121,IC182Q02JA,Agree/disagree: I am interested in learning [computer programming].
+10131,IC182Q03JA,Agree/disagree: I am interested in learning [digital resources] because it could be useful in a job.
+10141,IC183Q01JA,Can do with [digital resources]: Search for and find relevant information online
+10152,IC183Q02JA,Can do with [digital resources]: Assess the quality of information you found online
+10163,IC183Q03JA,Can do with [digital resources]: Share practical information with a group of students
+10174,IC183Q04JA,Can do with [digital resources]: Collaborate with other students on a group assignment
+10185,IC183Q05JA,Can do with [digital resources]: Explain to other students how to share digital content online or on a school platform
+10196,IC183Q07JA,Can do with [digital resources]: Write or edit text for a school assignment
+10207,IC183Q08JA,"Can do with [digital resources]: Collect and record data (e.g. using data loggers, [Microsoft® Access™], [Google® Forms], spreadsheets)"
+10218,IC183Q09JA,"Can do with [digital resources]: Create a multi-media presentation (with sound, pictures, or video)"
+10229,IC183Q10JA,"Can do with [digital resources]: Create, update and maintain a webpage or a blog"
+10240,IC183Q12JA,Can do with [digital resources]: Change the settings of a device or app in order to protect my data and privacy
+10251,IC183Q13JA,Can do with [digital resources]: Select the most efficient programme or app that allows me to carry out a specific task
+10262,IC183Q14JA,"Can do with [digital resources]: Create a computer program (e.g., in [Scratch®], [Python®], [Java®])"
+10273,IC183Q15JA,Can do with [digital resources]: Identify the source of an error in a software after considering a list of potential causes
+10284,IC183Q16JA,"Can do with [digital resources]: Break down a problem and represent a solution as a series of logical steps, such as an algorithm"
+10295,WB150Q01HA,How is your health?
+10305,WB151Q01HA,How much do you weigh?
+10311,WB152Q01HA,How tall are you?
+10317,WB153Q01HA,"Thinking about yourself, how much do you agree: I like my look just the way it is."
+10328,WB153Q02HA,"Thinking about yourself, how much do you agree: I consider myself to be attractive."
+10339,WB153Q03HA,"Thinking about yourself, how much do you agree: I am not concerned about my weight."
+10350,WB153Q04HA,"Thinking about yourself, how much do you agree: I like my body."
+10361,WB153Q05HA,"Thinking about yourself, how much do you agree: I like the way my clothes fit me."
+10372,WB154Q01HA,"In the past six months, how often have you had the following: Headache"
+10383,WB154Q02HA,"In the past six months, how often have you had the following: Stomach pain"
+10394,WB154Q03HA,"In the past six months, how often have you had the following: Back pain"
+10405,WB154Q04HA,"In the past six months, how often have you had the following: Feeling depressed"
+10416,WB154Q05HA,"In the past six months, how often have you had the following: Irritability or bad temper"
+10427,WB154Q06HA,"In the past six months, how often have you had the following: Feeling nervous"
+10438,WB154Q07HA,"In the past six months, how often have you had the following: Difficulties in getting to sleep"
+10449,WB154Q08HA,"In the past six months, how often have you had the following: Feeling dizzy"
+10460,WB154Q09HA,"In the past six months, how often have you had the following: Feeling anxious"
+10471,WB155Q01HA,How satisfied are you with each of the following: Your health
+10481,WB155Q02HA,How satisfied are you with each of the following: The way that you look
+10491,WB155Q03HA,How satisfied are you with each of the following: What you learn at school
+10501,WB155Q04HA,How satisfied are you with each of the following: The friends you have
+10511,WB155Q05HA,How satisfied are you with each of the following: The neighbourhood you live in
+10521,WB155Q06HA,How satisfied are you with each of the following: All the things you have
+10531,WB155Q07HA,How satisfied are you with each of the following: How you use your time
+10541,WB155Q08HA,How satisfied are you with each of the following: Your relationship with your parents/guardians
+10551,WB155Q09HA,How satisfied are you with each of the following: Your relationship with your teachers
+10561,WB155Q10HA,How satisfied are you with each of the following: Your life at school
+10571,WB156Q01HA,"At present, how many close friends do you have?"
+10577,WB158Q01HA,How many days a week do you usually spend time with your friends right after school? 
+10590,WB160Q01HA,"How often do you talk to your friends on the phone, send them text messages or have contact through social media?"
+10599,WB161Q01HA,Are your friends well accepted by your parents or guardians?
+10609,WB162Q01HA,How easy is it for you to talk to the following people about things that really bother you: Your father
+10620,WB162Q02HA,How easy is it for you to talk to the following people about things that really bother you: Your mother's partner
+10631,WB162Q03HA,How easy is it for you to talk to the following people about things that really bother you: Your mother
+10642,WB162Q04HA,How easy is it for you to talk to the following people about things that really bother you: Your father's partner
+10653,WB162Q05HA,How easy is it for you to talk to the following people about things that really bother you: Your brother(s)
+10664,WB162Q06HA,How easy is it for you to talk to the following people about things that really bother you: Your sister(s)
+10675,WB162Q07HA,How easy is it for you to talk to the following people about things that really bother you: Your close friend(s)
+10686,WB162Q08HA,How easy is it for you to talk to the following people about things that really bother you: Your teachers
+10697,WB162Q09HA,How easy is it for you to talk to the following people about things that really bother you: Other family members
+10708,WB163Q01HA,"Thinking about your parents or guardians, how often do they: Help me as much as I need"
+10717,WB163Q02HA,"Thinking about your parents or guardians, how often do they: Let me do the things I like doing"
+10726,WB163Q03HA,"Thinking about your parents or guardians, how often do they: Show that they care"
+10735,WB163Q04HA,"Thinking about your parents or guardians, how often do they: Try to understand my problems and worries"
+10744,WB163Q05HA,"Thinking about your parents or guardians, how often do they: Encourage me to make my own decisions"
+10753,WB163Q06HA,"Thinking about your parents or guardians, how often do they: Try to control everything I do"
+10762,WB163Q07HA,"Thinking about your parents or guardians, how often do they: Treat me like a baby"
+10771,WB163Q08HA,"Thinking about your parents or guardians, how often do they: Make me feel better when I am upset"
+10780,WB164Q01HA,How often do you worry about how much money your family has?
+10790,WB165Q01HA,When was the last time you attended a mathematics class at school?
+10800,WB166Q01HA,How did you feel the last time you attended a mathematics class at school: Bored
+10810,WB166Q02HA,How did you feel the last time you attended a mathematics class at school: Challenged
+10820,WB166Q03HA,How did you feel the last time you attended a mathematics class at school: Nervous or tense
+10830,WB166Q04HA,How did you feel the last time you attended a mathematics class at school: Motivated or inspired
+10840,WB167Q01HA,When was the last time you attended a [test language lesson] at school?
+10850,WB168Q01HA,How did you feel the last time you attended a [test language lesson] at school: Bored
+10860,WB168Q02HA,How did you feel the last time you attended a [test language lesson] at school: Challenged
+10870,WB168Q03HA,How did you feel the last time you attended a [test language lesson] at school: Nervous or tense
+10880,WB168Q04HA,How did you feel the last time you attended a [test language lesson] at school: Motivated or inspired
+10890,WB171Q01HA,Now think of the last time you had a break between classes at school: How did you feel: Happy
+10900,WB171Q02HA,Now think of the last time you had a break between classes at school: How did you feel: Lonely
+10910,WB171Q03HA,Now think of the last time you had a break between classes at school: How did you feel: Nervous or tense
+10920,WB171Q04HA,Now think of the last time you had a break between classes at school: How did you feel: Full of energy
+10930,WB172Q01HA,When was the last time you spent time outside your home with your friends?
+10941,WB173Q01HA,How did you feel the last time you spent time outside your home with your friends: Bored
+10951,WB173Q02HA,How did you feel the last time you spent time outside your home with your friends: Happy
+10961,WB173Q03HA,How did you feel the last time you spent time outside your home with your friends: Nervous or tense
+10971,WB173Q04HA,How did you feel the last time you spent time outside your home with your friends: Full of energy
+10981,WB176Q01HA,When was the very last time you did your homework/studied for school?
+10992,WB177Q01HA,How did you feel the last time you did your homework/studied for school: Bored
+11002,WB177Q02HA,How did you feel the last time you did your homework/studied for school: Challenged
+11012,WB177Q03HA,How did you feel the last time you did your homework/studied for school: Nervous or tense
+11022,WB177Q04HA,How did you feel the last time you did your homework/studied for school: Motivated or inspired
+11032,WB032Q01NA,"How often: Moderate physical activities for a total of at least 60 minutes per day (e.g., walking, climbing stairs, riding a bike to school, [country-specific]) "
+11046,WB032Q02NA,"How often: Vigorous physical activities for at least 20 minutes per day that made you sweat and breathe hard (e.g. running, cycling, aerobics, soccer, skating, [country-specific]) "
+11060,WB031Q01NA,"This school year, on average, on how many days do you attend physical education classes each week? "
+11074,WB178Q01HA,"The following questions refer to your day yesterday. Overall, did you feel that you accomplished something yesterday?"
+11082,WB178Q02HA,The following questions refer to your day yesterday. Were you treated with respect all day yesterday?
+11090,WB178Q03HA,The following questions refer to your day yesterday. Did you smile or laugh a lot yesterday?
+11098,WB178Q04HA,The following questions refer to your day yesterday. Did you learn or do something interesting yesterday?
+11106,WB178Q05HA,The following questions refer to your day yesterday. Did you have enough energy to get things done yesterday?
+11114,WB178Q06HA,"The following questions refer to your day yesterday. Overall, are you satisfied with how you spent your time yesterday?"
+11122,WB178Q07HA,The following questions refer to your day yesterday. Was yesterday a typical day?
+11130,PA001Q01TA,Who will complete this questionnaire? Mother or other female guardian
+11138,PA001Q02TA,Who will complete this questionnaire? Father or other male guardian
+11146,PA001Q03TA,Who will complete this questionnaire? Other
+11154,PA003Q01TA,How often someone in home does? Discuss how well my child is doing at school
+11165,PA003Q02TA,How often someone in home does? Eat [the main meal] with my child around a table
+11176,PA003Q03TA,How often someone in home does? Spend time just talking to my child
+11187,PA003Q05IA,How often someone in home does? Discuss political or social issues with my child
+11198,PA003Q18WA,How often someone in home does? Help my child with his/her mathematics homework
+11209,PA003Q19WA,"How often someone in home does? Obtain mathematics materials (e.g. applications, software, study guides etc.) for my child"
+11220,PA003Q20WA,How often someone in home does? Discuss with my child how mathematics can be applied in everyday life
+11231,PA003Q11JA,How often someone in home does? Talk to my child about the importance of [completing ISCED 3]
+11242,PA003Q12JA,How often: someone in home does? Talk to my child about any problems he/she may have at school
+11253,PA003Q13JA,How often someone in home does? Ask my child about how he/she is getting along with other students at school
+11264,PA003Q14JA,How often someone in home does? Encourage my child to get good [marks]
+11275,PA003Q15JA,How often someone in home does? Take an interest in what my child is learning at school
+11286,PA003Q16JA,How often someone in home does? Talk to my child about his/her future education
+11297,PA003Q17JA,How often someone in home does? Ask my child what he/she did in school that day
+11308,PA196Q01WA,Agree/disagree: It is important to have good mathematics knowledge and skills in order to get any good job in today's world.
+11318,PA196Q02WA,Agree/disagree: Employers generally appreciate strong mathematics knowledge and skills among their employees.
+11328,PA196Q03WA,Agree/disagree: Most jobs today require some mathematics knowledge and skills.
+11338,PA196Q04WA,Agree/disagree: It is an advantage in the job market to have good mathematics knowledge and skills.
+11348,PA197Q01WA,Please answer: Does anybody in your family (including you) work in a [mathematics-related career]?
+11356,PA197Q02WA,Please answer: Does your child show an interest in working in a [mathematics-related career]?
+11364,PA197Q03WA,Please answer: Do you expect your child will go into a [mathematics-related career]?
+11372,PA197Q04WA,Please answer: Has your child shown interest in studying mathematics after completing [secondary school]?
+11380,PA197Q05WA,Please answer: Do you expect your child will study mathematics after completing [secondary school]?
+11388,PA008Q01TA,"Last year, have you? Discussed my child’s behaviour with a teacher on my own initiative."
+11397,PA008Q02TA,"Last year, have you? Discussed my child’s behaviour on the initiative of one of his/her teachers."
+11406,PA008Q03TA,"Last year, have you? Discussed my child’s progress with a teacher on my own initiative."
+11415,PA008Q04TA,"Last year, have you? Discussed my child’s progress on the initiative of one of their teachers."
+11424,PA008Q05TA,"Last year, have you? Participated in local school government, e.g. parent council or school management committee."
+11433,PA008Q06NA,"Last year, have you? Volunteered in physical or extra-curricular activities (e.g. building maintenance, carpentry, gardening or yard work, school play, sports, field trip)"
+11442,PA008Q07NA,"Last year, have you? Volunteered to support school activities (volunteered in the school library, media centre, or canteen, assisted a teacher, appeared as a guest speaker)"
+11451,PA008Q08NA,"Last year, have you? Attended a scheduled meeting or conferences for parents."
+11460,PA008Q09NA,"Last year, have you? Talked about how to support learning at home and homework with my child’s teachers."
+11469,PA008Q10NA,"Last year, have you? Exchanged ideas on parenting, family support, or the child’s development with my child’s teachers."
+11478,PA009Q01NA,"Last year, was your participation at child’s school hindered by? The meeting times were inconvenient."
+11486,PA009Q02NA,"Last year, was your participation at child’s school hindered by? I was not able to get off from work."
+11494,PA009Q03NA,"Last year, was your participation at child’s school hindered by? I had no one to take care of my child/ children."
+11502,PA009Q04NA,"Last year, was your participation at child’s school hindered by? The way to school is unsafe."
+11510,PA009Q05NA,"Last year, was your participation at child’s school hindered by? I had problems with transportation."
+11518,PA009Q06NA,"Last year, was your participation at child’s school hindered by? I felt unwelcome at my child’s school."
+11526,PA009Q07NA,"Last year, was your participation at child’s school hindered by? I feel generally awkward in a school."
+11534,PA009Q08NA,"Last year, was your participation at child’s school hindered by? My [language skills] were not sufficient."
+11542,PA009Q09NA,"Last year, was your participation at child’s school hindered by? I think participation is not relevant for my child’s development."
+11550,PA009Q10NA,"Last year, was your participation at child’s school hindered by? I do not know how I could participate in school activities."
+11558,PA009Q11NA,"Last year, was your participation at child’s school hindered by? My child does not want me to participate."
+11566,PA007Q01TA,Agree/disagree? Most of my child’s school teachers seem competent and dedicated.
+11576,PA007Q02TA,Agree/disagree? Standards of achievement are high in my child’s school.
+11586,PA007Q03TA,Agree/disagree? I am happy with the content taught and the instructional methods used in my child’s school.
+11596,PA007Q04TA,Agree/disagree? I am satisfied with the disciplinary atmosphere in my child’s school.
+11606,PA007Q05TA,Agree/disagree? My child’s progress is carefully monitored by the school.
+11616,PA007Q06TA,Agree/disagree? My child’s school provides regular and useful information on my child’s progress.
+11626,PA007Q07TA,Agree/disagree? My child’s school does a good job in educating students.
+11636,PA007Q09NA,Agree/disagree? My child’s school provides an inviting atmosphere for parents to get involved.
+11646,PA007Q11NA,Agree/disagree? My child’s school provides effective communication between the school and families.
+11656,PA007Q12NA,Agree/disagree? My child’s school involves parents in the school’s decision-making process.
+11666,PA007Q13NA,"Agree/disagree? My child’s school offers parent education (e.g. [courses on family literacy]) or family support programmes (e.g. [to assist with health, nutrition])."
+11676,PA007Q14NA,Agree/disagree? My child’s school informs families about how to help students with homework and other school-related activities.
+11686,PA007Q15NA,Agree/disagree? My child’s school cooperates with [community services] to strengthen school programmes and student development.
+11696,PA005Q01TA,Which of the following statements best describes the schooling available to students in your location?
+11705,PA006Q01TA,"When choosing school, how important: The school is at a short distance to home."
+11715,PA006Q02TA,"When choosing school, how important: The school has a good reputation."
+11725,PA006Q03TA,"When choosing school, how important: The school offers particular courses or school subjects."
+11735,PA006Q04TA,"When choosing school, how important: The school adheres to a particular [religious philosophy]."
+11745,PA006Q05TA,"When choosing school, how important: The school has a particular approach to [pedagogy/didactics, e.g. example]."
+11755,PA006Q06TA,"When choosing school, how important: Other family members attended the school."
+11765,PA006Q07TA,"When choosing school, how important: Expenses are low (e.g. tuition, books, room and board)."
+11775,PA006Q08TA,"When choosing school, how important: The school has financial aid available, such as a school loan, scholarship, or grant."
+11785,PA006Q09TA,"When choosing school, how important: The school has an active and pleasant school climate."
+11795,PA006Q10TA,"When choosing school, how important: The academic achievements of students in the school are high."
+11805,PA006Q11TA,"When choosing school, how important: There is a safe school environment."
+11815,PA006Q12HA,"When choosing school, how important: The school has an international student body."
+11825,PA006Q13HA,"When choosing school, how important: The school offers exchange programmes with schools in other countries."
+11835,PA006Q14HA,"When choosing school, how important: The school has a focus on foreign language instruction."
+11845,PA166Q01HA,"How many languages, including the language(s) you speak at home, do you speak well enough to converse with others?"
+11855,PA167Q02HA,Agree/disagree: Immigrant children should have the same opportunities for education that other children in the country have.
+11865,PA167Q03HA,Agree/disagree: Immigrants who live in a country for several years should have the opportunity to vote in elections.
+11875,PA167Q04HA,Agree/disagree: Immigrants should have the opportunity to continue their own customs and lifestyle.
+11885,PA167Q05HA,Agree/disagree: Immigrants should have all the same rights that everyone else in the country has.
+11895,PA183Q01JA,Which qualification do you expect your child to complete? [ISCED level 2]
+11904,PA183Q02JA,Which qualification do you expect your child to complete? [ISCED level 3.3]
+11913,PA183Q03JA,Which qualification do you expect your child to complete? [ISCED level 3.4]
+11922,PA183Q04JA,Which qualification do you expect your child to complete? [ISCED level 4]
+11931,PA183Q05JA,Which qualification do you expect your child to complete? [ISCED level 5]
+11940,PA183Q06JA,Which qualification do you expect your child to complete? [ISCED level 6]
+11949,PA183Q07JA,Which qualification do you expect your child to complete? [ISCED level 7]
+11958,PA183Q08JA,Which qualification do you expect your child to complete? [ISCED level 8]
+11967,PA018Q01NA,"Prior to [grade 1 in ISCED 1], did child attend: Supervision and care (e.g. [national examples])"
+11975,PA018Q02NA,"Prior to [grade 1 in ISCED 1], did child attend: Early childhood educational development (e.g. [national examples])"
+11983,PA018Q03NA,"Prior to [grade 1 in ISCED 1], did child attend: Pre-primary education (e.g. [national examples])"
+11991,PA177Q01HA,"Prior to [grade 1 in ISCED 1], ages child attended [early childhood education and care arrangement]: Up to age 1"
+11999,PA177Q02HA,"Prior to [grade 1 in ISCED 1], ages child attended [early childhood education and care arrangement]: Age 1"
+12007,PA177Q03HA,"Prior to [grade 1 in ISCED 1], ages child attended [early childhood education and care arrangement]: Age 2"
+12015,PA177Q04HA,"Prior to [grade 1 in ISCED 1], ages child attended [early childhood education and care arrangement]: Age 3"
+12023,PA177Q05HA,"Prior to [grade 1 in ISCED 1], ages child attended [early childhood education and care arrangement]: Age 4"
+12031,PA177Q06HA,"Prior to [grade 1 in ISCED 1], ages child attended [early childhood education and care arrangement]: Age 5"
+12039,PA177Q07HA,"Prior to [grade 1 in ISCED 1], ages child attended [early childhood education and care arrangement]: Age 6"
+12047,PA177Q08HA,"Prior to [grade 1 in ISCED 1], ages child attended [early childhood education and care arrangement]: Age 7"
+12055,PA180Q01HA,What was the most important reason why your child attended an [early childhood education and care arrangement]? 
+12065,PA182Q01HA,How many hours per week did your child attend a [early childhood education and care arrangement] at age of three years? 
+12078,PA175Q01HA,"During [ISCED 1], did child attend: [Enrichment lessons] in [test language]"
+12086,PA175Q02HA,"During [ISCED 1], did child attend: [Remedial lessons] in [test language]"
+12094,PA175Q03JA,"During [ISCED 1], did child attend: [Enrichment lessons] in mathematics"
+12102,PA175Q04JA,"During [ISCED 1], did child attend: [Remedial lessons] in mathematics"
+12110,PA185Q01JA,"Agree/disagree: In our family, we encourage participating in extracurricular activities that require creativity."
+12120,PA185Q02JA,"Agree/disagree: At home, we are open to new ideas."
+12130,PA185Q03JA,"Agree/disagree: At home, we encourage trying new things"
+12140,PA185Q04JA,"Agree/disagree: At home, we encourage being imaginative."
+12150,PA185Q05JA,Agree/disagree: Discussions we have at home help with developing new ideas.
+12160,PA185Q07JA,"Agree/disagree: At home, we create works of art together (e.g. paintings, sculptures)."
+12170,PA185Q08JA,"Agree/disagree: At home, we discuss the books we are reading."
+12180,PA185Q09JA,"Agree/disagree: At home, we try to fix things that are broken."
+12190,PA185Q10JA,"Agree/disagree: At home, we discuss different solutions to social problems (e.g. unemployment, pollution)."
+12200,PA186Q01JA,"Out of school, how often child does: Art classes/activities (e.g. painting, drawing)"
+12212,PA186Q02JA,"Out of school, how often child does: Creative writing classes/activities"
+12224,PA186Q03JA,"Out of school, how often child does: Music classes/activities (e.g. chorus, band)"
+12236,PA186Q04JA,"Out of school, how often child does: Debate [club]"
+12248,PA186Q05JA,"Out of school, how often child does: Dramatics, theatre class/activities"
+12260,PA186Q06JA,"Out of school, how often child does: Publications (e.g. newspaper, [yearbooks], literary magazine)"
+12272,PA186Q07JA,"Out of school, how often child does: Science [club]"
+12284,PA186Q08JA,"Out of school, how often child does: Computer programming classes/activities"
+12296,PA187Q04JA,"Agree/disagree: Creativity can only be expressed through the arts (e.g. drawing, music, writing)."
+12306,PA187Q06JA,Agree/disagree: It is possible to be creative in nearly any subject.
+12316,PA188Q01JA,Agree/disagree: I am very creative.
+12326,PA188Q02JA,Agree/disagree: I enjoy projects that require creative solutions.
+12336,PA188Q03JA,Agree/disagree: I enjoy solving complex problems
+12346,PA188Q04JA,Agree/disagree: I enjoy learning new things.
+12356,PA188Q05JA,Agree/disagree: I enjoy artistic activities.
+12366,PA188Q06JA,Agree/disagree: I express myself through art.
+12376,PA188Q08JA,Agree/disagree: I have difficulty using my imagination.
+12386,PA188Q09JA,Agree/disagree: I have a good imagination.
+12396,PA188Q10JA,Agree/disagree: I like to be spontaneous
+12406,PA189Q01JA,Agree/disagree: My child is very creative.
+12416,PA189Q02JA,Agree/disagree: My child enjoys projects that require creative solutions.
+12426,PA189Q03JA,Agree/disagree: My child enjoys solving complex problems.
+12436,PA189Q04JA,Agree/disagree: My child enjoys learning new things.
+12446,PA189Q05JA,Agree/disagree: My child enjoys artistic activities.
+12456,PA189Q06JA,Agree/disagree: My child expresses him/herself through art.
+12466,PA189Q09JA,Agree/disagree: My child has a good imagination
+12476,PA189Q10JA,Agree/disagree: My child likes to be spontaneous.
+12486,PA194Q01JA,How many [digital devices] with screens are there in your home?
+12500,PA195Q01JA,How many books are there in your home?
+12513,PA041Q01TA,"In the last twelve months, about how much would you have paid to educational providers for services? "
+12525,PA042Q01TA,What is your annual household income?
+12537,EFFORT1,How much effort did you put into this test? (after cognitive assessment)
+12553,EFFORT2,How much effort would you have invested? (after cognitive assessment)
+12569,OCOD1,ISCO-08 Occupation code - Mother
+13194,OCOD2,ISCO-08 Occupation code - Father
+13819,OCOD3,ISCO-08 Occupation code - Self
+14444,PROGN,Unique national study programme code
+15108,AGE,Students' age
+15109,GRADE,Grade compared to modal grade in country
+15115,ISCEDP,Levels of education programmes (ISCED 2011)
+15177,IMMIG,Index on immigrant background (OECD definition)
+15186,COBN_S,Student's county of birth
+15439,COBN_M,Student mother's country of birth
+15692,COBN_F,Student father's country of birth
+15945,LANGN,Language spoken at home
+16210,REPEAT,Grade repetition
+16218,MISSSC,Missing school for more than 3 months
+16226,SKIPPING,Skipping classes or days of school
+16234,TARDYSD,Arriving late for school stricter definition
+16243,EXERPRAC,Exercise or practice a sport before or after school
+16260,STUDYHMW,Studying for school or homework before or after school
+16277,WORKPAY,Working for pay before or after school
+16294,WORKHOME,Working in household/take care of family members before or after school
+16311,EXPECEDU,Highest expected educational level
+16326,MATHPREF,Preference of Math over other core subjects
+16334,MATHEASE,Perception of Mathematics as easier than other subjects
+16342,MATHMOT,Motivation to do well in mathematics 
+16350,DURECEC,Duration in early childhood education and care
+16365,BSMJ,Expected occupation status (free response)- 4 digits
+16371,SISCO,Clear idea about future job
+16379,RELATST,Quality of student-teacher relationships (WLE)
+16385,BELONG,Sense of belonging (WLE)
+16391,BULLIED,Being bullied (WLE)
+16397,FEELSAFE,Feeling safe (WLE)
+16403,SCHRISK,School safety risks (WLE)
+16409,PERSEVAGR,Perseverance (agreement) (WLE)
+16415,CURIOAGR,Curiosity (agreement) (WLE)
+16421,COOPAGR,Cooperation (agreement) (WLE)
+16427,EMPATAGR,Empathy (agreement) (WLE)
+16433,ASSERAGR,Assertiveness (agreement) (WLE)
+16439,STRESAGR,Stress resistance (agreement) (WLE)
+16445,EMOCOAGR,Emotional control (agreement) (WLE)
+16451,GROSAGR,Growth Mindset (WLE)
+16457,INFOSEEK,Information seeking about future careers (WLE)
+16463,FAMSUP,Family support (WLE)
+16469,DISCLIM,Disciplinary climate in mathematics (WLE)
+16475,TEACHSUP,Mathematics Teacher Support (WLE)
+16481,COGACRCO,Cognitive activation in mathematics: Foster reasoning Version B (WLE)
+16487,COGACMCO,Cognitive activation in mathematics: Encourage mathematical thinking Version B (WLE)
+16493,EXPOFA,Exposure to Formal and Applied Mathematics Tasks (WLE)
+16499,EXPO21ST,Exposure to Mathematical Reasoning and 21st century mathematics tasks (WLE)
+16505,MATHEFF,Mathematics self-efficacy: formal and applied mathematics - response options reversed in 2022 (WLE)
+16511,MATHEF21,Mathematics self-efficacy: mathematical reasoning and 21st century skills (WLE)
+16517,FAMCON,Subjective familiarity with mathematics concepts (WLE)
+16523,ANXMAT,Mathematics Anxiety (WLE)
+16529,MATHPERS,Effort and Persistence in Mathematics  (WLE)
+16535,CREATEFF,Creative self-efficacy (WLE)
+16541,CREATSCH,Creative school and class environment (WLE)
+16547,CREATFAM,Creative peers and family environment (WLE)
+16553,CREATAS,Creative Activities at school (WLE)
+16559,CREATOOS,Creative Activities outside of school (WLE)
+16565,CREATOP,Creativity and Openness to Intellect TBD (WLE)
+16571,OPENART,Openness to Art and Reflection TBD (WLE)
+16577,IMAGINE,Imagination and Adventurousness TBD (WLE)
+16583,SCHSUST,School actions/activities to sustain learning  (WLE)
+16589,LEARRES,Types of learning resources used while school was closed (WLE)
+16595,PROBSELF,Problems with self-directed learning (WLE)
+16601,FAMSUPSL,Family support for self-directed learning (WLE)
+16607,FEELLAH,Feelings about learning at home (WLE)
+16613,SDLEFF,Self-directed learning self-efficacy (WLE)
+16619,MISCED,Mother’s level of education (ISCED)
+16635,FISCED,Father’s level of education (ISCED)
+16651,HISCED,Highest level of education of parents (ISCED)
+16667,PAREDINT,Index highest parental education (international years of schooling scale)
+16673,BMMJ1,Mother’s occupational status (ISEI) based on 4-digit human coded ISCO
+16679,BFMJ2,Father’s occupational status (ISEI) based on 4-digit human coded ISCO
+16685,HISEI,Highest parental occupational status (ISEI) based on 4-digit human coded ISCO
+16691,ICTRES,ICT Resources (WLE)
+16697,HOMEPOS,Home possessions (WLE)
+16703,ESCS,"Index of economic, social and cultural status"
+16709,FCFMLRTY,Familiarity with concepts of finance
+16732,FLSCHOOL,Financial education in school lessons (WLE)
+16738,FLMULTSB,"Financial education in school lessons, multiple subjects (WLE)"
+16744,FLFAMILY,Parental involvement in matters of FL (WLE)
+16750,ACCESSFP,"Access to money and financial products, sources of money (WLE)"
+16756,FLCONFIN,Confidence about financial matters (WLE)
+16762,FLCONICT,Confidence about financial matters using digital devices (WLE)
+16768,ACCESSFA,"Access to money and financial products, financial activities (WLE)"
+16774,ATTCONFM,Attitudes towards and confidence about financial matters (WLE)
+16780,FRINFLFM,Friends’ influence on financial matters (WLE)
+16786,ICTSCH,ICT availability at school  (WLE)
+16792,ICTAVSCH,Availability and Usage of ICT at School 
+16806,ICTHOME,ICT availability outside of school  (WLE)
+16812,ICTAVHOM,Availability and Usage of ICT at Home 
+16825,ICTQUAL,Quality of access to ICT (WLE)
+16831,ICTSUBJ,Subject-related ICT Use During Lessons (WLE)
+16837,ICTENQ,Use of ICT in enquiry-based learning activities (WLE)
+16843,ICTFEED,Support or feedback via ICT  (WLE)
+16849,ICTOUT,Use of ICT for school activities outside of the classroom (WLE)
+16855,ICTWKDY,Frequency of ICT activity (weekday) (WLE)
+16861,ICTWKEND,Frequency of ICT activity (weekend) (WLE)
+16867,ICTREG,Views of regulated ICT use in school (WLE)
+16873,ICTINFO,Students’ practices regarding online information (WLE)
+16879,ICTDISTR,Distress from online content and cyberbullying 
+16885,ICTEFFIC,Self-efficacy in digital competencies (WLE)
+16891,STUBMI,Body Mass Index (BMI)
+16897,BODYIMA,Body Image (WLE)
+16903,SOCONPA,Social connection to Parents (WLE)
+16909,LIFESAT,Students' Life Satisfaction across Domains (WLE)
+16915,PSYCHSYM,Psychosomatic Symptoms (WLE)
+16921,SOCCON,Social Connections: Ease of Communication About Worries and Concerns (WLE)
+16927,EXPWB,Experienced Well-being (Previous Day) (WLE)
+16933,CURSUPP,Current parental/guardian Support (WLE)
+16939,PQMIMP,Parent Attitudes Toward Mathematics (WLE)
+16945,PQMCAR,Mathematics Career (WLE)
+16951,PARINVOL,Parental Involvement (WLE)
+16957,PQSCHOOL,School quality (WLE)
+16963,PASCHPOL,School Policies for Parental Involvement  (WLE)
+16969,ATTIMMP,Parents' Attitudes towards Immigrants (WLE)
+16975,PAREXPT,Parent’s expectations in child’s career
+16990,CREATHME,Creative Home Environment (WLE)
+16996,CREATACT,Participation in creative activities outside of school (WLE)
+17002,CREATOPN,Creativity and Openness to Intellect (WLE)
+17008,CREATOR,Openness to creativity: Other’s report (WLE)
+17014,W_FSTUWT,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT WEIGHT
+17015,W_FSTURWT1,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 1
+17016,W_FSTURWT2,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 2
+17017,W_FSTURWT3,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 3
+17018,W_FSTURWT4,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 4
+17019,W_FSTURWT5,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 5
+17020,W_FSTURWT6,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 6
+17021,W_FSTURWT7,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 7
+17022,W_FSTURWT8,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 8
+17023,W_FSTURWT9,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 9
+17024,W_FSTURWT10,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 10
+17025,W_FSTURWT11,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 11
+17026,W_FSTURWT12,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 12
+17027,W_FSTURWT13,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 13
+17028,W_FSTURWT14,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 14
+17029,W_FSTURWT15,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 15
+17030,W_FSTURWT16,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 16
+17031,W_FSTURWT17,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 17
+17032,W_FSTURWT18,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 18
+17033,W_FSTURWT19,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 19
+17034,W_FSTURWT20,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 20
+17035,W_FSTURWT21,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 21
+17036,W_FSTURWT22,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 22
+17037,W_FSTURWT23,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 23
+17038,W_FSTURWT24,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 24
+17039,W_FSTURWT25,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 25
+17040,W_FSTURWT26,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 26
+17041,W_FSTURWT27,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 27
+17042,W_FSTURWT28,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 28
+17043,W_FSTURWT29,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 29
+17044,W_FSTURWT30,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 30
+17045,W_FSTURWT31,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 31
+17046,W_FSTURWT32,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 32
+17047,W_FSTURWT33,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 33
+17048,W_FSTURWT34,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 34
+17049,W_FSTURWT35,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 35
+17050,W_FSTURWT36,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 36
+17051,W_FSTURWT37,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 37
+17052,W_FSTURWT38,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 38
+17053,W_FSTURWT39,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 39
+17054,W_FSTURWT40,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 40
+17055,W_FSTURWT41,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 41
+17056,W_FSTURWT42,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 42
+17057,W_FSTURWT43,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 43
+17058,W_FSTURWT44,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 44
+17059,W_FSTURWT45,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 45
+17060,W_FSTURWT46,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 46
+17061,W_FSTURWT47,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 47
+17062,W_FSTURWT48,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 48
+17063,W_FSTURWT49,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 49
+17064,W_FSTURWT50,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 50
+17065,W_FSTURWT51,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 51
+17066,W_FSTURWT52,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 52
+17067,W_FSTURWT53,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 53
+17068,W_FSTURWT54,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 54
+17069,W_FSTURWT55,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 55
+17070,W_FSTURWT56,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 56
+17071,W_FSTURWT57,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 57
+17072,W_FSTURWT58,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 58
+17073,W_FSTURWT59,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 59
+17074,W_FSTURWT60,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 60
+17075,W_FSTURWT61,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 61
+17076,W_FSTURWT62,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 62
+17077,W_FSTURWT63,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 63
+17078,W_FSTURWT64,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 64
+17079,W_FSTURWT65,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 65
+17080,W_FSTURWT66,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 66
+17081,W_FSTURWT67,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 67
+17082,W_FSTURWT68,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 68
+17083,W_FSTURWT69,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 69
+17084,W_FSTURWT70,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 70
+17085,W_FSTURWT71,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 71
+17086,W_FSTURWT72,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 72
+17087,W_FSTURWT73,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 73
+17088,W_FSTURWT74,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 74
+17089,W_FSTURWT75,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 75
+17090,W_FSTURWT76,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 76
+17091,W_FSTURWT77,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 77
+17092,W_FSTURWT78,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 78
+17093,W_FSTURWT79,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 79
+17094,W_FSTURWT80,FINAL TRIMMED NONRESPONSE ADJUSTED STUDENT REPLICATE BRR-FAY WEIGHTS 80
+17095,UNIT,REP_BWGT: RANDOMLY ASSIGNED UNIT NUMBER
+17099,WVARSTRR,RANDOMIZED FINAL VARIANCE STRATUM (1-80)
+17100,PV1MATH,Plausible Value 1 in Mathematics
+17101,PV2MATH,Plausible Value 2 in Mathematics
+17102,PV3MATH,Plausible Value 3 in Mathematics
+17103,PV4MATH,Plausible Value 4 in Mathematics
+17104,PV5MATH,Plausible Value 5 in Mathematics
+17105,PV6MATH,Plausible Value 6 in Mathematics
+17106,PV7MATH,Plausible Value 7 in Mathematics
+17107,PV8MATH,Plausible Value 8 in Mathematics
+17108,PV9MATH,Plausible Value 9 in Mathematics
+17109,PV10MATH,Plausible Value 10 in Mathematics
+17110,PV1READ,Plausible Value 1 in Reading
+17111,PV2READ,Plausible Value 2 in Reading
+17112,PV3READ,Plausible Value 3 in Reading
+17113,PV4READ,Plausible Value 4 in Reading
+17114,PV5READ,Plausible Value 5 in Reading
+17115,PV6READ,Plausible Value 6 in Reading
+17116,PV7READ,Plausible Value 7 in Reading
+17117,PV8READ,Plausible Value 8 in Reading
+17118,PV9READ,Plausible Value 9 in Reading
+17119,PV10READ,Plausible Value 10 in Reading
+17120,PV1SCIE,Plausible Value 1 in Science
+17121,PV2SCIE,Plausible Value 2 in Science
+17122,PV3SCIE,Plausible Value 3 in Science
+17123,PV4SCIE,Plausible Value 4 in Science
+17124,PV5SCIE,Plausible Value 5 in Science
+17125,PV6SCIE,Plausible Value 6 in Science
+17126,PV7SCIE,Plausible Value 7 in Science
+17127,PV8SCIE,Plausible Value 8 in Science
+17128,PV9SCIE,Plausible Value 9 in Science
+17129,PV10SCIE,Plausible Value 10 in Science
+17130,PV1MCCR,Plausible Value 1 in Content Subscale of Mathematics - Change and Relationships
+17131,PV2MCCR,Plausible Value 2 in Content Subscale of Mathematics - Change and Relationships
+17132,PV3MCCR,Plausible Value 3 in Content Subscale of Mathematics - Change and Relationships
+17133,PV4MCCR,Plausible Value 4 in Content Subscale of Mathematics - Change and Relationships
+17134,PV5MCCR,Plausible Value 5 in Content Subscale of Mathematics - Change and Relationships
+17135,PV6MCCR,Plausible Value 6 in Content Subscale of Mathematics - Change and Relationships
+17136,PV7MCCR,Plausible Value 7 in Content Subscale of Mathematics - Change and Relationships
+17137,PV8MCCR,Plausible Value 8 in Content Subscale of Mathematics - Change and Relationships
+17138,PV9MCCR,Plausible Value 9 in Content Subscale of Mathematics - Change and Relationships
+17139,PV10MCCR,Plausible Value 10 in Content Subscale of Mathematics - Change and Relationships
+17140,PV1MCQN,Plausible Value 1 in Content Subscale of Mathematics - Quantity
+17141,PV2MCQN,Plausible Value 2 in Content Subscale of Mathematics - Quantity
+17142,PV3MCQN,Plausible Value 3 in Content Subscale of Mathematics - Quantity
+17143,PV4MCQN,Plausible Value 4 in Content Subscale of Mathematics - Quantity
+17144,PV5MCQN,Plausible Value 5 in Content Subscale of Mathematics - Quantity
+17145,PV6MCQN,Plausible Value 6 in Content Subscale of Mathematics - Quantity
+17146,PV7MCQN,Plausible Value 7 in Content Subscale of Mathematics - Quantity
+17147,PV8MCQN,Plausible Value 8 in Content Subscale of Mathematics - Quantity
+17148,PV9MCQN,Plausible Value 9 in Content Subscale of Mathematics - Quantity
+17149,PV10MCQN,Plausible Value 10 in Content Subscale of Mathematics - Quantity
+17150,PV1MCSS,Plausible Value 1 in Content Subscale of Mathematics - Space and Shape
+17151,PV2MCSS,Plausible Value 2 in Content Subscale of Mathematics - Space and Shape
+17152,PV3MCSS,Plausible Value 3 in Content Subscale of Mathematics - Space and Shape
+17153,PV4MCSS,Plausible Value 4 in Content Subscale of Mathematics - Space and Shape
+17154,PV5MCSS,Plausible Value 5 in Content Subscale of Mathematics - Space and Shape
+17155,PV6MCSS,Plausible Value 6 in Content Subscale of Mathematics - Space and Shape
+17156,PV7MCSS,Plausible Value 7 in Content Subscale of Mathematics - Space and Shape
+17157,PV8MCSS,Plausible Value 8 in Content Subscale of Mathematics - Space and Shape
+17158,PV9MCSS,Plausible Value 9 in Content Subscale of Mathematics - Space and Shape
+17159,PV10MCSS,Plausible Value 10 in Content Subscale of Mathematics - Space and Shape
+17160,PV1MCUD,Plausible Value 1 in Content Subscale of Mathematics - Uncertainty and Data
+17161,PV2MCUD,Plausible Value 2 in Content Subscale of Mathematics - Uncertainty and Data
+17162,PV3MCUD,Plausible Value 3 in Content Subscale of Mathematics - Uncertainty and Data
+17163,PV4MCUD,Plausible Value 4 in Content Subscale of Mathematics - Uncertainty and Data
+17164,PV5MCUD,Plausible Value 5 in Content Subscale of Mathematics - Uncertainty and Data
+17165,PV6MCUD,Plausible Value 6 in Content Subscale of Mathematics - Uncertainty and Data
+17166,PV7MCUD,Plausible Value 7 in Content Subscale of Mathematics - Uncertainty and Data
+17167,PV8MCUD,Plausible Value 8 in Content Subscale of Mathematics - Uncertainty and Data
+17168,PV9MCUD,Plausible Value 9 in Content Subscale of Mathematics - Uncertainty and Data
+17169,PV10MCUD,Plausible Value 10 in Content Subscale of Mathematics - Uncertainty and Data
+17170,PV1MPEM,"Plausible Value 1 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17171,PV2MPEM,"Plausible Value 2 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17172,PV3MPEM,"Plausible Value 3 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17173,PV4MPEM,"Plausible Value 4 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17174,PV5MPEM,"Plausible Value 5 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17175,PV6MPEM,"Plausible Value 6 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17176,PV7MPEM,"Plausible Value 7 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17177,PV8MPEM,"Plausible Value 8 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17178,PV9MPEM,"Plausible Value 9 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17179,PV10MPEM,"Plausible Value 10 in Process Subscale of Mathematics - Employing Mathematical Concepts, Facts, and Procedures"
+17180,PV1MPFS,Plausible Value 1 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17181,PV2MPFS,Plausible Value 2 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17182,PV3MPFS,Plausible Value 3 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17183,PV4MPFS,Plausible Value 4 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17184,PV5MPFS,Plausible Value 5 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17185,PV6MPFS,Plausible Value 6 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17186,PV7MPFS,Plausible Value 7 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17187,PV8MPFS,Plausible Value 8 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17188,PV9MPFS,Plausible Value 9 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17189,PV10MPFS,Plausible Value 10 in Process Subscale of Mathematics - Formulating Situations Mathematically
+17190,PV1MPIN,"Plausible Value 1 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17191,PV2MPIN,"Plausible Value 2 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17192,PV3MPIN,"Plausible Value 3 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17193,PV4MPIN,"Plausible Value 4 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17194,PV5MPIN,"Plausible Value 5 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17195,PV6MPIN,"Plausible Value 6 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17196,PV7MPIN,"Plausible Value 7 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17197,PV8MPIN,"Plausible Value 8 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17198,PV9MPIN,"Plausible Value 9 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17199,PV10MPIN,"Plausible Value 10 in Process Subscale of Mathematics - Interpreting, Applying, and Evaluating Mathematical Outcomes"
+17200,PV1MPRE,Plausible Value 1 in Process Subscale of Mathematics - Reasoning
+17201,PV2MPRE,Plausible Value 2 in Process Subscale of Mathematics - Reasoning
+17202,PV3MPRE,Plausible Value 3 in Process Subscale of Mathematics - Reasoning
+17203,PV4MPRE,Plausible Value 4 in Process Subscale of Mathematics - Reasoning
+17204,PV5MPRE,Plausible Value 5 in Process Subscale of Mathematics - Reasoning
+17205,PV6MPRE,Plausible Value 6 in Process Subscale of Mathematics - Reasoning
+17206,PV7MPRE,Plausible Value 7 in Process Subscale of Mathematics - Reasoning
+17207,PV8MPRE,Plausible Value 8 in Process Subscale of Mathematics - Reasoning
+17208,PV9MPRE,Plausible Value 9 in Process Subscale of Mathematics - Reasoning
+17209,PV10MPRE,Plausible Value 10 in Process Subscale of Mathematics - Reasoning
+17210,SENWT,Senate Weight (sum of 5000 per country)
+17211,VER_DAT,Date of the database creation 
