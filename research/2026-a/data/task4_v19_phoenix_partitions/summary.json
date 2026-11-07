@@ -1,0 +1,37 @@
+{
+  "main_admitted": false,
+  "school_count": 96,
+  "new_downloads": 0,
+  "previous_unique_graduates_lower": 655,
+  "previous_unique_nongraduates_lower": 263,
+  "partitions": [
+    {
+      "partition": "sex",
+      "graduates_lower": 655,
+      "nongraduates_lower": 263
+    },
+    {
+      "partition": "race_ethnicity",
+      "graduates_lower": 1056,
+      "nongraduates_lower": 279
+    }
+  ],
+  "unique_graduates_lower": 1056,
+  "unique_nongraduates_lower": 279,
+  "state_graduates": 74261,
+  "state_nongraduates": 20240,
+  "previous_quality_lower": 0.03134721225173486,
+  "previous_quality_upper": 0.996470935537545,
+  "quality_lower": 0.049586776859504134,
+  "quality_upper": 0.9962570431982828,
+  "assumptions": [
+    "Groups within each named partition are mutually exclusive and stable for a person across school records",
+    "Same cohort graduate status agrees across schools and statewide totals",
+    "Inherited Phoenix geography and public-school target conditions remain; current-vs-2024 school locations unresolved"
+  ],
+  "non_assumptions": [
+    "School records need not be disjoint",
+    "Groups need not exhaust the cohort",
+    "Different partitions are combined by maximum, never summed"
+  ]
+}

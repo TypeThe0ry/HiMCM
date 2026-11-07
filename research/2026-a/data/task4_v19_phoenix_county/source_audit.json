@@ -1,0 +1,45 @@
+{
+  "accessed": "2026-11-07",
+  "new_admissible_county_observations": 0,
+  "county_cohort_counts_obtained": false,
+  "county_search": {
+    "official_dataset_page": "https://www.azed.gov/accountability-research/data",
+    "official_public_data_page": "https://www.azed.gov/data/public-data-sets",
+    "finding": "Official report-card directory describes school, LEA and state reporting. No county Graduation Rate entity endpoint was found in the archived public app. The graduation workbook is the remaining source route.",
+    "cohort_2024_workbook_url": "https://www.azed.gov/sites/default/files/2025/04/4Y-GradRate-Cohort2024.xlsx",
+    "link_discovery": "Official URL discovered through third-party source citation at https://www.districtfacts.com/az/school/040472000372/; no third-party number admitted.",
+    "download_result": "Both www.azed.gov and cms.azed.gov returned HTTP403 HTML, not XLSX. See download_attempts.json.",
+    "rejected": "County percentages without cohort counts, older cohorts, Maricopa High School in Pinal County, and statewide counts are not a verified Maricopa2024 replacement."
+  },
+  "demographic_evidence": [
+    {
+      "url": "https://www.azed.gov/sites/default/files/2024/02/FY24%20Grad%20Drop%20and%20Persistence%20Rate%20Tech%20Manual.pdf",
+      "evidence_type": "Official-domain search-index text; full open/download403, PDF not archived",
+      "finding": "Graduation membership follows the student. Last high school of record controls attribution; the school recording graduation is treated as last school. Manual distinguishes ever-cohort EL, Homeless, Foster Care and Military Connected memberships from last-enrollment information.",
+      "limit": "This does not prove that duplicate school records have consistent demographic labels across schools or years."
+    },
+    {
+      "url": "https://www.azed.gov/sites/default/files/2021/05/ExitInstructions.pdf",
+      "evidence_type": "Official PDF text rendered by web tool, five pages; direct download403, original PDF not archived",
+      "locator": "Printed page4: Federal Reporting, race/ethnicity categories; printed pages1 and4: gender aggregation",
+      "finding": "ADE AzEDS special-education exit instructions describe seven one-category federal race/ethnicity reporting groups: Hispanic of any race, then six non-Hispanic categories including Multi-Racial. Gender totals are required to agree with the relevant unduplicated exit total.",
+      "limit": "This is2021 special-education exit guidance, not direct validation of2024 report-card graduation subgroup labels. It supports the taxonomy but cannot establish cross-school stability or complete sex coverage in the current file."
+    },
+    {
+      "url": "https://ps-compliance.powerschool-docs.com/pssis-az/latest/student-setup-azeds",
+      "evidence_type": "Primary vendor technical documentation rendered by web search",
+      "finding": "Arizona AzEDS student setup lists one Gender field with F Female and M Male and distinct federal race/ethnicity fields.",
+      "limit": "A software field definition is not proof that all2024 graduation records are complete or mutually consistent."
+    },
+    {
+      "url": "https://www.azed.gov/sites/default/files/2025/12/CNA%20Graph%20User%20Manual%202025.pdf",
+      "evidence_type": "Official 37-page PDF rendered by web tool; section10 verified in official-domain indexed text; direct requests download HTTP403 HTML, original PDF not archived",
+      "locator": "Section10 Subgroup Graduation Rates, table of contents page30",
+      "short_quote": "the ethnicity subgroups are exclusive",
+      "finding": "Graduation-specific guidance assigns a student to one ethnicity group, with multiple ethnicities reported as Two or More Races; program subgroups may overlap.",
+      "scope": "Five-year graduation rate for cohort2024 as of August15,2025, based on AzEDS. Groups below11 are redacted in this dashboard.",
+      "limit": "Stronger evidence for ethnicity reporting definitions than the2021 special-education document, but not a direct validation of the four-year FY2025 API, stable labels across duplicated school records, or complete subgroup coverage."
+    }
+  ],
+  "modeling_conclusion": "No county numeric replacement. A subgroup-overlap calculation must explicitly assume consistent mutually exclusive person-level demographic labels across the participating school records; do not sum overlapping service-program groups. Unknown or inconsistent classifications cannot be silently assigned. State Male+Female completeness is not assumed."
+}
