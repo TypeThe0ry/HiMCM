@@ -45,6 +45,6 @@
 
 每张图都有 PDF（推荐插入LaTeX）、SVG（可编辑矢量）和240 dpi PNG。图内为英文，方便用于英文参赛论文。最终排版按当前标准保证缩放后的图例和说明不少于9 pt、主标签10–11 pt；25城长图宜占半页至整页，不建议挤进小双栏。
 
-[LaTeX 插入片段](figure_inserts.tex)仅作为备选，尚未接入正文。原论文裁剪图只作为研究参考，不直接充当本队原创结果。图表输入来自本仓库归档分析，本轮只重绘，未重新核验外部数据或重新计算完整模型。
+[Overleaf 中的 LaTeX 插入片段](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894)（`research/2026-a/visuals/figure_inserts.tex`）仅作为备选，尚未接入正文。原论文裁剪图只作为研究参考，不直接充当本队原创结果。图表输入来自本仓库归档分析，本轮只重绘，未重新核验外部数据或重新计算完整模型。
 
 复现：安装 pymupdf、matplotlib、pandas、Pillow 后运行本目录 extract_reference.py、curate_reference.py、draw_figures.py。extract_reference.py 会生成约130MB的可再生图页缓存；无需为了使用六张新图将整个缓存上传 Overleaf。

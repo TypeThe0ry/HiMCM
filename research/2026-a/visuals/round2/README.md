@@ -10,7 +10,7 @@
 - [八份精选原图PDF](selected_reference_book.pdf)
 - [总览／空间／机制预览](preview_overview.jpg)
 - [排名／不确定性／矩阵预览](preview_results.jpg)
-- [可上传的图文件包](overleaf_figure_pack.zip)
+- [Overleaf 中的图文件包](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894)（`research/2026-a/visuals/round2/overleaf_figure_pack.zip`）
 
 ## 这轮的筛选依据
 
@@ -57,4 +57,4 @@
 
 安装 numpy、pandas、matplotlib、pymupdf、Pillow。依次运行 redraw.py、build_stylebook.py、package_and_check.py。survey.py仅用于重建筛选联系表。当前版本字体使用本机 Times New Roman；在其他平台复现需安装该字体或选相近衬线字体。PDF已嵌入字体，SVG文字在编辑环境需有对应字体。
 
-压缩包内有 figures/、figure_inserts.tex、CAPTIONS.md；上传到 Overleaf 后按需要引用，不自动改正文。原图摘录、参考图库和研究脚本不放进论文上传包。
+历史压缩包内有 figures/、figure_inserts.tex、CAPTIONS.md。当前 LaTeX 插入文件在[Overleaf](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894)的 `research/2026-a/visuals/round2/figure_inserts.tex`，在论文工作区按需要引用，不自动改正文。原图摘录、参考图库和研究脚本不放进论文上传包。

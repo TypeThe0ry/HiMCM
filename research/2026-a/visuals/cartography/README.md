@@ -19,7 +19,7 @@ candidate_city_locations.csv：25 城坐标。
 global_map_audit.json / city_map_audit.json：城市数量、数据覆盖和人口加权结果。
 vector_data/manifest.json：OSM 请求、时间戳和哈希。
 prepare_maps.py / draw_global.py / draw_city_maps.py：数据整理与绘图代码。
-city_map_captions.json / figure_includes.tex：英文图注与 LaTeX 插图片段。
+city_map_captions.json：英文图注；LaTeX 插图片段位于[Overleaf](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894)的 `research/2026-a/visuals/cartography/figure_includes.tex`。
 
 ## 风格文档范围
 68 篇论文、998 个候选页面已索引；19 个精选参考页面逐图查看。页面数不等于独立图片数；目录保留待分类页面，便于继续补充。
@@ -40,6 +40,6 @@ city_map_captions.json / figure_includes.tex：英文图注与 LaTeX 插图片�
 
 ## 带图注的可编译图集
 
-在本目录执行 `tectonic maps_with_captions.tex` 可生成 8 页图集：7 页地图和 1 页正常字号图注。引用片段需要 `pdfpages`，每一张混合尺寸页面单独使用 `fitpaper=true`，以保持已核验字号。整页图集适合审阅；正式比赛版面按题面允许尺寸另行排版。
+在相邻论文工作区 `HiMCM-Overleaf/research/2026-a/visuals/cartography/` 保留了 `maps_with_captions.tex` 原片段；其中转义问题需修复后再编译，现成 PDF 图集仍可审阅。引用片段需要 `pdfpages`，每一张混合尺寸页面单独使用 `fitpaper=true`，以保持已核验字号。整页图集适合审阅；正式比赛版面按题面允许尺寸另行排版。
 
 [本轮审阅记录](../FIGURE_REVIEW.md) · [原图字号审计](../figure_font_audit.json) · [最终渲染字号审计](../rendered_figure_audit.json)

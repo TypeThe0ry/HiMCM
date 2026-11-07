@@ -6,9 +6,9 @@
 
 本仓库保存全球城市评价研究的数据、模型、结果、图表和历史论文。当前包含25城真实数据研究、十指标证据区间模型、毕业结果条件分析及通学微观数据修订；尚未形成完整同年城市普查矩阵或最终参赛结论。
 
-**本项目只使用 `TypeThe0ry/HiMCM` 一个仓库。** 论文、数据、代码、结果和历史论文库已合并回本目录，原研究仓库的提交历史也已合入。原始资料及本地忽略的大型生成包均保留；详见[合并核验记录](docs/reunification.md)。
+**研究与论文分开维护。** GitHub `TypeThe0ry/HiMCM` 保存研究代码、原始数据、模型结果、图表与历史论文库；所有本队论文草稿、LaTeX、参考文献和论文模板移至相邻的 `HiMCM-Overleaf` 工作区。原始资料及本地忽略的大型生成包保留在研究仓库。
 
-**Overleaf是论文的权威工作区；GitHub `main`用于同步、版本记录和研究归档。** 根目录的 [main.tex](main.tex)、[ref.bib](ref.bib)、[mcmthesis.cls](mcmthesis.cls)保持原位。仓库镜像不等于在线实时状态；本次更新研究资料与导航，未编辑在线论文。
+**[Overleaf 项目](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894)是论文的权威工作区。** `main.tex`、`ref.bib`、`mcmthesis.cls`位于该工作区根目录，任务4正文主线位于`drafts/task4_paper_core.md`。两边分别同步各自远端；GitHub研究仓库不再作为整棵Overleaf镜像。旧GitHub论文版本保存在Overleaf的`archive/github_before_split/`中，迁移路径见[拆分记录](docs/migration/overleaf_split_2026-11-07.json)。
 
 ## 从这里开始
 
@@ -16,8 +16,8 @@
 | --- | --- |
 | A题原文、评委点评 | [题目](research/2026-a/inputs/problem_a_2026.pdf) · [2025点评](research/2026-a/inputs/judges_commentary_2025.pdf) |
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
-| 任务4精简正文主线 | [一个模型、一次修订、必要检验](research/2026-a/design/task4_paper_core.md) |
-| 通学尺度检验 | [15—60分钟：首选与全榜的区别](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
+| 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
 | 当前条件模型 V23 | [覆盖修订与排名](research/2026-a/results/task4_v23_roster_coverage/README.md) · [算法入口 current_bounds](research/2026-a/scripts/task4_roster_coverage_comparison.py) |
 | 当前10项指标定义 | [指标规范](research/2026-a/design/task4_v5_indicator_spec.md) |
 | V6历史模型与结果 | [V6报告](research/2026-a/results/task4_v6/REPORT.md) · [结果表](research/2026-a/results/task4_v6/after_v6.csv) · [独立复核](research/2026-a/results/task4_v6_review.md) |
@@ -37,7 +37,6 @@
 
 ```text
 HiMCM/
-├── main.tex / ref.bib / mcmthesis.cls  # Overleaf论文同步文件
 ├── research/2026-a/
 │   ├── inputs/       # 题面、队员原件与外部方法资料
 │   ├── data/         # 原始数据、来源清单、提取器、整理后的观测
@@ -50,6 +49,12 @@ HiMCM/
 ├── library/          # 历史论文原件、目录及来源证据
 ├── docs/             # 结构说明与迁移记录
 └── scripts/verify_repository.py  # 路径、原件与目录完整性校验
+
+HiMCM-Overleaf/                  # 相邻的独立论文工作区
+├── main.tex / ref.bib / mcmthesis.cls
+├── drafts/task4_paper_core.md    # 任务4正文主线
+├── research/2026-a/visuals/      # LaTeX插图片段与选用的论文资产
+└── archive/github_before_split/ # 拆分前GitHub论文版本
 ```
 
 研究流程是：**原始资料 → 提取与口径核验 → 观测及效用区间 → 模型 → 结果和图表 → 团队选用到Overleaf论文**。原始附件按字节保留，派生结果另存；历史版本不会被新模型覆盖。
@@ -148,7 +153,7 @@ python3 scripts/verify_repository.py
 
 ## 同步、版本与引用
 
-研究在`main`维护。用户已明确授权立即提交并推送本地最新数据、模型、结果和README；早期“赛后才推送”的约定不适用于此次发布。推送前获取并整合远端新增提交，保留Overleaf历史，不强制覆盖。本地旧日期钩子仅在此次授权推送时单次跳过，不修改钩子，不设置自动发布。
+研究在`main`维护。用户已明确授权立即提交并推送本地最新数据、模型、结果和README；早期“赛后才推送”的约定不适用于此次发布。推送前获取并整合远端新增提交，保留各自历史，不强制覆盖；论文在`HiMCM-Overleaf`单独同步，不把研究仓库整体推入Overleaf。本地旧日期钩子仅在此次授权推送时单次跳过，不修改钩子，不设置自动发布。
 
 既有[历史论文Release](https://github.com/TypeThe0ry/HiMCM/releases/tag/v2026.11.06-68papers)是早期论文库快照，最新研究请查看`main`。可再生的超大制图打包文件与底图缓存按制图目录忽略规则保留本地，已追踪图表、来源清单和重建脚本随代码同步。
 

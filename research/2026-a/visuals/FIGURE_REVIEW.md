@@ -6,7 +6,7 @@
 
 - 原插图片段把图压到正文宽，文字会降到 4.56–8.61 pt。三个插入文件现改用保留核验纸张尺寸的 pdfpages 示例。
 - 12 张早期及第二轮分析图合并为 [A3 可读图集](readable_analysis_atlas.pdf)，按最终页面核验全部嵌入文字至少 9 pt。
-- 7 张地图及卫星面板使用 [已核验地图印刷版](cartography/print_ready_maps.pdf)。[带图注 LaTeX 图集](cartography/maps_with_captions.tex)可独立编译。
+- 7 张地图及卫星面板使用 [已核验地图印刷版](cartography/print_ready_maps.pdf)。[带图注 LaTeX 图集](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894)已移至`HiMCM-Overleaf/research/2026-a/visuals/cartography/maps_with_captions.tex`；原片段按字节保留，需修复转义问题后再编译。
 - 城市地图图注直接报告最近 20 个学习设施平均步行时间不超过 30 分钟的居民人口占比，定义、分级与来源紧随结果。
 - 第二轮图注将重复否定句改为变量、情景和实验职责的正面定义，保留代理指标与模型版本的实际含义。
 - 地图图注生成模板同步更新，重新绘图后继续使用同一表述。

@@ -40,6 +40,8 @@ def main():
                     if row.get(key):
                         assert (LIBRARY / row[key]).is_file(), (filename, row[key])
 
+    migration = json.loads((ROOT / "docs/migration/overleaf_split_2026-11-07.json").read_text())
+    relocated = {item["source"] for item in migration["files"]}
     links = 0
     for document in ROOT.rglob("*.md"):
         if any(part in document.parts for part in [".git", "source_snapshots", "inputs"]):
@@ -48,7 +50,12 @@ def main():
             if "://" in target or target.startswith("#"):
                 continue
             base = ROOT if document == ROOT / "docs/migration/README.before-split.md" else document.parent
-            assert (base / target.split("#", 1)[0]).exists(), (str(document), target)
+            resolved = base / target.split("#", 1)[0]
+            historical_relocation = (
+                document == ROOT / "docs/migration/README.before-split.md"
+                and str(resolved.relative_to(ROOT)) in relocated
+            )
+            assert resolved.exists() or historical_relocation, (str(document), target)
             links += 1
 
     research = ROOT / "research/2026-a"

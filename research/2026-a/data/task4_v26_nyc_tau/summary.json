@@ -1,0 +1,158 @@
+{
+  "main_admitted": false,
+  "new_downloads": 0,
+  "year": "2010\u20132011",
+  "school_stage": "current grade9\u201312; original V21 membership retained",
+  "method": "Rebuild V21 direct and transport-stop journeys from raw archive, exp(-observed duration/tau); retain missing[0,1] and exact optional-membership extrema.",
+  "sampling_method": "Same V21 exploratory household bootstrap within county; all5766 NYC sampled households; fixed finalweights; not official design-based CI.",
+  "bootstrap_replicates": 1000,
+  "seed": 20261107,
+  "paired_draws_across_tau": true,
+  "source_audit": {
+    "households": 18965,
+    "persons": 43558,
+    "linked_trips": 143925,
+    "nyc_roster_persons": 11732,
+    "current_high_school_before_home_exclusion": 479,
+    "homeschool_high_school_excluded": 3,
+    "invalid_short_trip_key_duplicates": 34072
+  },
+  "roster_people": 603,
+  "observed_journeys": 410,
+  "missing_journeys": 193,
+  "households_resampled": 5766,
+  "sources": [
+    {
+      "path": "data/task4_v20_nyc_travel/CSV.zip",
+      "sha256": "f87c5e3953030fb66d539e2f4e36d44bd23da2b1249a6bcb9c7957a6fa9ccee4"
+    },
+    {
+      "path": "data/task4_v20_nyc_travel/download_manifest.json",
+      "sha256": "9f825d64c18e82410daa1903435a24ca71ee5d6e8e08a053dc1e4f4beb52c7da"
+    },
+    {
+      "path": "data/task4_v20_nyc_travel/extract_commute.py",
+      "sha256": "57a81374961cee2f9c7408d025ef98327383210be2903e2c0ae00dd59d667995"
+    },
+    {
+      "path": "data/task4_v21_nyc_chains/extract_chains.py",
+      "sha256": "3f36815093c2924725ec2e8febc2920bdd7eabd201c234b76cbe5f8faf866d22"
+    },
+    {
+      "path": "data/task4_v21_nyc_chains/student_journey_audit.csv",
+      "sha256": "646530f3410872d2eb02ebc08c71a04e521b1e691afe9885511b6a83d7f9186a"
+    },
+    {
+      "path": "data/task4_v21_nyc_chains/summary.json",
+      "sha256": "ae06f98e20f44645ac698a071e3432b0e63ad5a9c86fbaf1849e5eb34ceb2b03"
+    }
+  ],
+  "scenarios": [
+    {
+      "tau_minutes": 15,
+      "age_scope": "all_age",
+      "known_students": 476,
+      "optional_students": 127,
+      "utility_lower": 0.10839939167802254,
+      "utility_upper": 0.42153803545490576,
+      "sampling_lower": 0.091038205047732,
+      "sampling_upper": 0.4799737349004882
+    },
+    {
+      "tau_minutes": 15,
+      "age_scope": "under19",
+      "known_students": 460,
+      "optional_students": 33,
+      "utility_lower": 0.1223116467083675,
+      "utility_upper": 0.3650002774466057,
+      "sampling_lower": 0.10157125835268814,
+      "sampling_upper": 0.41944114735770044
+    },
+    {
+      "tau_minutes": 20,
+      "age_scope": "all_age",
+      "known_students": 476,
+      "optional_students": 127,
+      "utility_lower": 0.15279666764631988,
+      "utility_upper": 0.4667182568618335,
+      "sampling_lower": 0.13115666656481276,
+      "sampling_upper": 0.5228078461595765
+    },
+    {
+      "tau_minutes": 20,
+      "age_scope": "under19",
+      "known_students": 460,
+      "optional_students": 33,
+      "utility_lower": 0.17166028949887965,
+      "utility_upper": 0.4148008822583972,
+      "sampling_lower": 0.1465622807636537,
+      "sampling_upper": 0.466230545019712
+    },
+    {
+      "tau_minutes": 30,
+      "age_scope": "all_age",
+      "known_students": 476,
+      "optional_students": 127,
+      "utility_lower": 0.2292748682750496,
+      "utility_upper": 0.5438871634573017,
+      "sampling_lower": 0.20144152249676053,
+      "sampling_upper": 0.5931485688061938
+    },
+    {
+      "tau_minutes": 30,
+      "age_scope": "under19",
+      "known_students": 460,
+      "optional_students": 33,
+      "utility_lower": 0.25597640891030243,
+      "utility_upper": 0.49956631522193923,
+      "sampling_lower": 0.22395133875708226,
+      "sampling_upper": 0.5466442853849841
+    },
+    {
+      "tau_minutes": 45,
+      "age_scope": "all_age",
+      "known_students": 476,
+      "optional_students": 127,
+      "utility_lower": 0.3149975138174999,
+      "utility_upper": 0.6293462700635813,
+      "sampling_lower": 0.28175426451881974,
+      "sampling_upper": 0.6711824384766799
+    },
+    {
+      "tau_minutes": 45,
+      "age_scope": "under19",
+      "known_students": 460,
+      "optional_students": 33,
+      "utility_lower": 0.3495902656705217,
+      "utility_upper": 0.5933606704661144,
+      "sampling_lower": 0.3126452658506307,
+      "sampling_upper": 0.6336102151655225
+    },
+    {
+      "tau_minutes": 60,
+      "age_scope": "all_age",
+      "known_students": 476,
+      "optional_students": 127,
+      "utility_lower": 0.375786508736963,
+      "utility_upper": 0.6894440613557952,
+      "sampling_lower": 0.33861804545781293,
+      "sampling_upper": 0.7240439456135646
+    },
+    {
+      "tau_minutes": 60,
+      "age_scope": "under19",
+      "known_students": 460,
+      "optional_students": 33,
+      "utility_lower": 0.41553582364805247,
+      "utility_upper": 0.6591938910053099,
+      "sampling_lower": 0.37565921505590066,
+      "sampling_upper": 0.6942361465306011
+    }
+  ],
+  "caveats": [
+    "Historical evidence, not2026 conditions or GPS",
+    "School-purpose and grade identity retain V21 qualifications",
+    "Under19 retains unknown ages as optional; not exact14\u201318",
+    "Official design, reraking and replicateweights unavailable; exploratory sampling only"
+  ]
+}

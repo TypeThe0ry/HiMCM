@@ -1,0 +1,94 @@
+{
+  "main_admitted": false,
+  "new_downloads": 0,
+  "source_year": 2023,
+  "scope": "municipality Sao Paulo, MUNI_DOM36, current ESTUDA4 upper-secondary, all ages",
+  "method": "Observed first direct school-trip duration revalued at each tau; missing stays [0,1]; paired zone-stratified household bootstrap with fixed weights",
+  "replicates": 2000,
+  "seed": 20261107,
+  "official_design_confidence_interval": false,
+  "raw_rows": 143038,
+  "students": 1778,
+  "weighted_students": 454740.1902959989,
+  "status_counts": {
+    "observed_direct_journey": 1546,
+    "no_school_journey": 214,
+    "first_school_journey_not_from_home": 18
+  },
+  "households": 21917,
+  "households_with_hs": 1648,
+  "zones": 329,
+  "retained_source_conditions": [
+    "Public research mirror; official byte identity not verified",
+    "All-age current upper-secondary group, not exact14-18",
+    "Exploratory fixed-weight resampling, not official design-based confidence",
+    "No missing duration imputed; no changes to population, weights or journey screening"
+  ],
+  "sources": [
+    {
+      "path": "../task4_v10_saopaulo/Banco2023_divulgacao_190225.dbf.gz",
+      "sha256": "d043153c5a44fb5a970da58a7374410fc0bb8a269d13d8225527c4c6b8310422"
+    },
+    {
+      "path": "../task4_v10_saopaulo/Municipios_2023.dbf",
+      "sha256": "95acc4159feebb36b3875c5f87f529cdfdcceb973e4766e3353167def4c81723"
+    },
+    {
+      "path": "../task4_v10_saopaulo/microdata_manifest.json",
+      "sha256": "f47103a1c569a00c97ba009bb40fa84bd223fc31c7d670ebe5553b69d751de6b"
+    },
+    {
+      "path": "../task4_v10_saopaulo/extract_commute.py",
+      "sha256": "fc4480c13de0c0fa95c0f5b8e82decf37323788a5679beb97da3c668cf6983d4"
+    },
+    {
+      "path": "../task4_v10_saopaulo/sampling_sensitivity.py",
+      "sha256": "50bfef9e25972674d3c3b86f82f68cd469fbc06f0b834285da7af3af313bb637"
+    },
+    {
+      "path": "../task4_v10_saopaulo/sampling_sensitivity.json",
+      "sha256": "3bb838c7e91ebdcb3bf7f0901decb59e77cbbce6c62780e6b2677dabb722d7ed"
+    },
+    {
+      "path": "../task4_v10_saopaulo/commute_summary.json",
+      "sha256": "136ae742b3318424009db1f6f267953e4a145b0b89f72ce8c390138ea33d762c"
+    }
+  ],
+  "scenarios": [
+    {
+      "tau_minutes": 15,
+      "utility_lower": 0.28315961727353256,
+      "utility_upper": 0.421098507445457,
+      "sampling_lower": 0.2672855218986555,
+      "sampling_upper": 0.44188776371464117
+    },
+    {
+      "tau_minutes": 20,
+      "utility_lower": 0.3547932489021931,
+      "utility_upper": 0.4927321390741184,
+      "sampling_lower": 0.33738810403723624,
+      "sampling_upper": 0.5119455196900085
+    },
+    {
+      "tau_minutes": 30,
+      "utility_lower": 0.45602481263754036,
+      "utility_upper": 0.5939637028094649,
+      "sampling_lower": 0.4370715213136484,
+      "sampling_upper": 0.6114325152264785
+    },
+    {
+      "tau_minutes": 45,
+      "utility_lower": 0.5496691143315908,
+      "utility_upper": 0.6876080045035163,
+      "sampling_lower": 0.5304045739249426,
+      "sampling_upper": 0.702989393875681
+    },
+    {
+      "tau_minutes": 60,
+      "utility_lower": 0.6081880601321591,
+      "utility_upper": 0.7461269503040826,
+      "sampling_lower": 0.5893559229938747,
+      "sampling_upper": 0.7597319836862473
+    }
+  ]
+}
