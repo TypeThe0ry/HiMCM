@@ -1,0 +1,51 @@
+{
+  "main_admission": false,
+  "outcome_weight": 0.1,
+  "assumptions": [
+    "Within-school counts are unique and graduate/non-graduate status agrees with the same statewide cohort",
+    "School membership and target geography are compatible; unresolved current-vs-historical locations"
+  ],
+  "validation": "4096 synthetic overlapping membership assignments; nested bounds as multiplicity increases",
+  "scenarios": [
+    {
+      "max_multiplicity": 1,
+      "unique_graduates_lower": 10620,
+      "unique_nongraduates_lower": 3315,
+      "quality_lower": 0.34413480233311733,
+      "quality_upper": 0.9572677116634011,
+      "phoenix_rank": 22,
+      "possible_champions": 25,
+      "phoenix_width": 47.16067618633089
+    },
+    {
+      "max_multiplicity": 2,
+      "unique_graduates_lower": 5310,
+      "unique_nongraduates_lower": 1658,
+      "quality_lower": 0.20782778864970647,
+      "quality_upper": 0.978160934680383,
+      "phoenix_rank": 23,
+      "possible_champions": 25,
+      "phoenix_width": 48.216182313914885
+    },
+    {
+      "max_multiplicity": 3,
+      "unique_graduates_lower": 3540,
+      "unique_nongraduates_lower": 1105,
+      "quality_lower": 0.1488645920941968,
+      "quality_upper": 0.9853382161717485,
+      "phoenix_rank": 23,
+      "possible_champions": 25,
+      "phoenix_width": 48.57129150857001
+    },
+    {
+      "max_multiplicity": null,
+      "unique_graduates_lower": 655,
+      "unique_nongraduates_lower": 263,
+      "quality_lower": 0.03134721225173486,
+      "quality_upper": 0.996470935537545,
+      "phoenix_rank": 24,
+      "possible_champions": 25,
+      "phoenix_width": 49.08205032831323
+    }
+  ]
+}
