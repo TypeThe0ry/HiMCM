@@ -52,8 +52,25 @@ def main():
 
     research = ROOT / "research/2026-a"
     provenance = json.loads((research / "inputs/team/provenance.json").read_text())
+    original_paths = set()
     for item in provenance:
-        assert digest(ROOT / item["repository_path"]) == item["sha256"]
+        path = ROOT / item["repository_path"]
+        assert digest(path) == item["sha256"]
+        original_paths.add(path)
+    # Later team attachments retain their original names, including Chinese.
+    # Allow those exact, hash-verified originals rather than renaming inputs.
+    attachment_dir = research / "inputs/team/task4_attachments"
+    attachments = json.loads((attachment_dir / "provenance.json").read_text())
+    v5_dir = research / "inputs/team/task4_v5"
+    v5_original = json.loads((v5_dir / "manifest.json").read_text())
+    for directory, items, key in [
+        (attachment_dir, attachments, "filename"),
+        (v5_dir, [v5_original], "file"),
+    ]:
+        for item in items:
+            path = directory / item[key]
+            assert digest(path) == item["sha256"], str(path)
+            original_paths.add(path)
     with (research / "data/city_candidates_team_25.csv").open(encoding="utf-8-sig") as handle:
         candidates = list(csv.DictReader(handle))
     assert len(candidates) == 25 and len({row["city"] for row in candidates}) == 25
@@ -63,7 +80,7 @@ def main():
     assert len(template) == 216 and all(row["value"] == "" for row in template)
     assert all(json.loads((research / "design/synthetic_results.json").read_text())["checks"].values())
     assert all(
-        str(path.relative_to(ROOT)).isascii()
+        str(path.relative_to(ROOT)).isascii() or path in original_paths
         for path in ROOT.rglob("*")
         if path.is_file() and ".git" not in path.parts
     )
@@ -72,7 +89,7 @@ def main():
         "reference_pdfs": len(list((LIBRARY / "references").rglob("*.pdf"))),
         "candidate_cities": len(candidates),
         "local_markdown_links": links,
-        "original_team_inputs": len(provenance),
+        "original_team_inputs": len(original_paths),
         "status": "passed",
     }, ensure_ascii=False))
 
