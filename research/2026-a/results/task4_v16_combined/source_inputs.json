@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "path": "data/task4_v15_mexico2020/commute_summary.json",
+      "sha256": "368e0035b96f767ae39545490297c9812ae9ff1457cc786c762d4d0dd2cfd2fc"
+    },
+    {
+      "path": "data/task4_v10_saopaulo/sampling_sensitivity.json",
+      "sha256": "3bb838c7e91ebdcb3bf7f0901decb59e77cbbce6c62780e6b2677dabb722d7ed"
+    }
+  ],
+  "global_main_admission_changed": false,
+  "joint_confidence_interval": false,
+  "conditions": [
+    "Mexico2020 school-stage progression reconstruction; uncertain stage retained; unknown attendance not included",
+    "SaoPaulo2023 direct current-high-school variable; public mirror official identity unverified; exploratory household resampling",
+    "Separate city years, population scopes and age limits remain explicit; no implicit trend inference"
+  ],
+  "alpha_range": [
+    0.05,
+    0.2
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "country_economy_count": 217,
+  "excluded_aggregate_count": 49,
+  "panel_year_start": 1960,
+  "panel_year_end": 2025,
+  "panel_rows": 14322,
+  "rows_with_any_observation": 6563,
+  "rows_with_both_observations": 1846,
+  "countries_with_both_observations": 161,
+  "first_matched_year": 1990,
+  "last_matched_year": 2019,
+  "indicators": {
+    "homicide_rate_per_100k": {
+      "indicator_code": "VC.IHR.PSRC.P5",
+      "indicator_page": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5",
+      "archive": "raw/homicide_worldbank.zip",
+      "wdi_last_updated": "2026-10-08",
+      "source_organization": "UNODC Research - Data Portal – Intentional Homicide, UN Office on Drugs and Crime (UNODC)",
+      "source_note": "An intentional homicide is defined as an unlawful death inflicted upon a person with the intent to cause death or serious injury.",
+      "non_null_observations": 4065,
+      "countries_with_data": 196,
+      "first_observed_year": 1990,
+      "last_observed_year": 2023
+    },
+    "secondary_pupil_teacher_ratio": {
+      "indicator_code": "SE.SEC.ENRL.TC.ZS",
+      "indicator_page": "https://data.worldbank.org/indicator/SE.SEC.ENRL.TC.ZS",
+      "archive": "raw/secondary_pupil_teacher_worldbank.zip",
+      "wdi_last_updated": "2026-10-08",
+      "source_organization": "Stat Bulk Data Download Service, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://uis.unesco.org/bdds, publisher: UNESCO Institute for Statistics (UIS)",
+      "source_note": "Secondary school pupil-teacher ratio is the average number of pupils per teacher in secondary school.",
+      "non_null_observations": 4344,
+      "countries_with_data": 204,
+      "first_observed_year": 1970,
+      "last_observed_year": 2019
+    }
+  },
+  "validation": {
+    "raw_sha256_verified": true,
+    "unique_country_year_keys": true,
+    "all_non_null_values_equal_archived_source_strings": true,
+    "csv_roundtrip_verified": true,
+    "excel_cell_roundtrip_verified": true
+  }
+}

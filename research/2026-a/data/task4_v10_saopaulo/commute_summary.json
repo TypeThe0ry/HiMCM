@@ -1,0 +1,30 @@
+{
+  "raw_rows": 143038,
+  "cohort_definition": "ESTUDA=4, current upper-secondary enrolment; no age proxy",
+  "main_admitted": false,
+  "reason": "public research mirror; official byte identity and city-definition alignment not yet verified",
+  "scopes": {
+    "metro": {
+      "students": 2910,
+      "weighted_students": 864534.736917,
+      "status_counts": {
+        "observed_direct_journey": 2537,
+        "no_school_journey": 345,
+        "first_school_journey_not_from_home": 28
+      },
+      "utility_lower": 0.46619814528665876,
+      "utility_upper": 0.6058190403179575
+    },
+    "municipality_sao_paulo": {
+      "students": 1778,
+      "weighted_students": 454740.190296,
+      "status_counts": {
+        "observed_direct_journey": 1546,
+        "no_school_journey": 214,
+        "first_school_journey_not_from_home": 18
+      },
+      "utility_lower": 0.4560248126375397,
+      "utility_upper": 0.5939637028094641
+    }
+  }
+}

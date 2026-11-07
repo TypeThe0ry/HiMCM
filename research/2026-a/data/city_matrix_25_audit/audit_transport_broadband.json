@@ -1,0 +1,122 @@
+[
+  {
+    "cell": "P30",
+    "city": "London",
+    "indicator": "t10",
+    "original_value": 36.367,
+    "original_source": "doc: TomTom Traffic Index (2025)",
+    "status": "rounding_only",
+    "verified_value": 36.36666666666667,
+    "data_year": "2025 (annual observed driving data; edition released in 2026)",
+    "geography": "TomTom-defined London City Area (urban core); do not equate without boundary validation to the full administrative city or metro area",
+    "population": "Anonymized observed vehicle/GPS driving data across road network; not a resident or school-student survey",
+    "definition": "Average all-days 24/7 driving travel time per 10 km. TomTom calculates aggregate travel time divided by aggregate km driven over directed road segments; the 10-km value is a standardized road-network driving measure, not average home-to-school commute time. Rush-hour measures are separate.",
+    "primary_urls": [
+      "https://www.tomtom.com/traffic-index/city/london/",
+      "https://www.tomtom.com/traffic-index/about/"
+    ],
+    "evidence": "Official city page heading \"London traffic in 2025\", All days / 24/7, card Average travel time for a 10 km drive: 36 min 22 s. Conversion 36+22/60=36.366666667; rounded to 3 decimals is 36.367. Official methodology: Travel time for one kilometer = sum of all traversal times / sum of km driven; City Area and Metro Area defined separately.",
+    "issue": "数值和2025数据年相符；只有秒转分钟的正常四舍五入。原表来源缺少具体网址及City/24-7口径。若用于高中生通学时长则构念不符。",
+    "recommended_action": "保留36.367 min/10 km并补充2025、TomTom City Area、全年24/7；如希望按原展示精度，可写36 min 22 s。不要转称学生平均通学时间。",
+    "access_date": "2026-11-07",
+    "source_access_method": "TomTom official source read through web index and HTTP200 direct requests; saved complete HTML and extracted text",
+    "primary_source_archives": [
+      "evidence_transport_broadband/london.html",
+      "evidence_transport_broadband/london.txt",
+      "evidence_transport_broadband/tomtom_about.html",
+      "evidence_transport_broadband/tomtom_about.txt"
+    ],
+    "limitations": "City boundary geometry not independently digitized or validated in this audit. Publisher summary verified; raw individual GPS observations are not publicly reproduced."
+  },
+  {
+    "cell": "P44",
+    "city": "Tokyo",
+    "indicator": "t10",
+    "original_value": 27.517,
+    "original_source": "doc: TomTom Traffic Index (2025)",
+    "status": "rounding_only",
+    "verified_value": 27.516666666666666,
+    "data_year": "2025 (annual observed driving data; edition released in 2026)",
+    "geography": "TomTom-defined Tokyo City Area (urban core); do not equate without boundary validation to the full administrative city or metro area",
+    "population": "Anonymized observed vehicle/GPS driving data across road network; not a resident or school-student survey",
+    "definition": "Average all-days 24/7 driving travel time per 10 km. TomTom calculates aggregate travel time divided by aggregate km driven over directed road segments; the 10-km value is a standardized road-network driving measure, not average home-to-school commute time. Rush-hour measures are separate.",
+    "primary_urls": [
+      "https://www.tomtom.com/traffic-index/city/tokyo/",
+      "https://www.tomtom.com/traffic-index/about/"
+    ],
+    "evidence": "Official city page heading \"Tokyo traffic in 2025\", All days / 24/7, card Average travel time for a 10 km drive: 27 min 31 s. Conversion 27+31/60=27.516666667; rounded to 3 decimals is 27.517. Official methodology: Travel time for one kilometer = sum of all traversal times / sum of km driven; City Area and Metro Area defined separately.",
+    "issue": "数值和2025数据年相符；只有秒转分钟的正常四舍五入。原表来源缺少具体网址及City/24-7口径。若用于高中生通学时长则构念不符。",
+    "recommended_action": "保留27.517 min/10 km并补充2025、TomTom City Area、全年24/7；如希望按原展示精度，可写27 min 31 s。不要转称学生平均通学时间。",
+    "access_date": "2026-11-07",
+    "source_access_method": "TomTom official source read through web index and HTTP200 direct requests; saved complete HTML and extracted text",
+    "primary_source_archives": [
+      "evidence_transport_broadband/tokyo.html",
+      "evidence_transport_broadband/tokyo.txt",
+      "evidence_transport_broadband/tomtom_about.html",
+      "evidence_transport_broadband/tomtom_about.txt"
+    ],
+    "limitations": "City boundary geometry not independently digitized or validated in this audit. Publisher summary verified; raw individual GPS observations are not publicly reproduced."
+  },
+  {
+    "cell": "R38",
+    "city": "Seoul",
+    "indicator": "broadband",
+    "original_value": 238.52,
+    "original_source": "doc: Ookla Speedtest Global Index September 2026",
+    "status": "confirmed",
+    "verified_value": 238.52,
+    "data_year": "2026-09 monthly label; rolling quarter 2026-07 through 2026-09",
+    "geography": "Ookla Speedtest Global Index city entry Seoul; not country ranking; exact municipal boundary not established by retrieved methodology",
+    "population": "Speedtest measurement sample satisfying publisher Precision Threshold; not a census or representative random sample of every household/student",
+    "definition": "Median download speed (Mbps), Fixed Broadband city ranking. September 2026 is the report label; since June 2024 reported monthly values use current month plus previous two months. Official about page says fixed broadband includes mobile WiFi results; sample uses Precision Threshold with 95% confidence interval limits within ±5% of median.",
+    "primary_urls": [
+      "https://www.speedtest.net/global-index/south-korea?city=Seoul",
+      "https://www.speedtest.net/global-index/about",
+      "https://www.speedtest.net/global-index"
+    ],
+    "evidence": "Official HTTP200 city HTML: Seoul Median City Speeds Updated September 2026; Fixed Broadband Rank 34, Download 238.52 Mbps, Upload 177.41 Mbps, Latency 4 ms. Global Index fixed city list independently repeats value and rank. Official about page explicitly says monthly values use a rolling quarter including current month and previous two months; results updated mid-month for previous month.",
+    "issue": "原值、固定宽带/城市层级和2026年9月标签均获官方页面证实；原表未写三个月滚动统计窗口，不能称2026全年或仅9月单月测量值。",
+    "recommended_action": "保留238.52 Mbps；注明Ookla城市固定宽带下载中位数，September 2026版，测量滚动窗口2026年7—9月，并链接归档官方页面。",
+    "access_date": "2026-11-07",
+    "source_access_method": "Official speedtest.net HTTP200 using requests. web tool direct open failed; unofficial proxy/mirror search hits were not used as verification evidence.",
+    "primary_source_archives": [
+      "evidence_transport_broadband/seoul.html",
+      "evidence_transport_broadband/seoul.txt",
+      "evidence_transport_broadband/index.html",
+      "evidence_transport_broadband/speedtest_about.html",
+      "evidence_transport_broadband/speedtest_about.txt"
+    ],
+    "limitations": "No original individual Speedtest measurement records or publisher-defined city polygon obtained. Values verified against publisher summaries, not recomputed from raw tests. Incorrect plain-ASCII Zurich URL returns 404; successful official city parameter is Zürich (URL encoded)."
+  },
+  {
+    "cell": "R46",
+    "city": "Zurich",
+    "indicator": "broadband",
+    "original_value": 286.35,
+    "original_source": "doc: Ookla Speedtest Global Index September 2026",
+    "status": "confirmed",
+    "verified_value": 286.35,
+    "data_year": "2026-09 monthly label; rolling quarter 2026-07 through 2026-09",
+    "geography": "Ookla Speedtest Global Index city entry Zürich; not country ranking; exact municipal boundary not established by retrieved methodology",
+    "population": "Speedtest measurement sample satisfying publisher Precision Threshold; not a census or representative random sample of every household/student",
+    "definition": "Median download speed (Mbps), Fixed Broadband city ranking. September 2026 is the report label; since June 2024 reported monthly values use current month plus previous two months. Official about page says fixed broadband includes mobile WiFi results; sample uses Precision Threshold with 95% confidence interval limits within ±5% of median.",
+    "primary_urls": [
+      "https://www.speedtest.net/global-index/switzerland?city=Z%C3%BCrich",
+      "https://www.speedtest.net/global-index/about",
+      "https://www.speedtest.net/global-index"
+    ],
+    "evidence": "Official HTTP200 city HTML: Zürich Median City Speeds Updated September 2026; Fixed Broadband Rank 18, Download 286.35 Mbps, Upload 169.76 Mbps, Latency 5 ms. Global Index fixed city list independently repeats value and rank. Official about page explicitly says monthly values use a rolling quarter including current month and previous two months; results updated mid-month for previous month.",
+    "issue": "原值、固定宽带/城市层级和2026年9月标签均获官方页面证实；原表未写三个月滚动统计窗口，不能称2026全年或仅9月单月测量值。",
+    "recommended_action": "保留286.35 Mbps；注明Ookla城市固定宽带下载中位数，September 2026版，测量滚动窗口2026年7—9月，并链接归档官方页面。",
+    "access_date": "2026-11-07",
+    "source_access_method": "Official speedtest.net HTTP200 using requests. web tool direct open failed; unofficial proxy/mirror search hits were not used as verification evidence.",
+    "primary_source_archives": [
+      "evidence_transport_broadband/zurich.html",
+      "evidence_transport_broadband/zurich.txt",
+      "evidence_transport_broadband/index.html",
+      "evidence_transport_broadband/speedtest_about.html",
+      "evidence_transport_broadband/speedtest_about.txt"
+    ],
+    "limitations": "No original individual Speedtest measurement records or publisher-defined city polygon obtained. Values verified against publisher summaries, not recomputed from raw tests. Incorrect plain-ASCII Zurich URL returns 404; successful official city parameter is Zürich (URL encoded)."
+  }
+]

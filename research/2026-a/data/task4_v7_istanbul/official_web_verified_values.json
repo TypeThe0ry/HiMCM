@@ -1,0 +1,40 @@
+{
+  "population2025": {
+    "value": 15754053,
+    "year": 2025,
+    "source_url": "https://data.tuik.gov.tr/Bulten/Index?p=Adrese-Dayali-Nufus-Kayit-Sistemi-Sonuclari-2025-53899",
+    "source_title": "TÜİK ADNKS results2025; release09February2026",
+    "scope": "Istanbul province resident population at31December2025",
+    "evidence": "Official indexed release reports Istanbul population15million754thousand53; independently matched official Statistics on Children2025 table1.8",
+    "extraction": "manual_transcription_of_official_web_search_and_pdf_render; directHTMLisJSshell; PDFdownload403"
+  },
+  "university2022": {
+    "public_universities": 13,
+    "foundation_universities": 43,
+    "standalone_foundation_vocational_HEIs": 4,
+    "universities_total": 56,
+    "all_HEIs": 60,
+    "population": 15907951,
+    "year": 2022,
+    "source_url": "https://www.istka.org.tr/media/pdf/jUnXem7E05fo5rmajTVWXZ5z6X6TXelaYMoVRPn0sIkZTwcCaJTR.pdf",
+    "source_title": "ISTKA Istanbul Regional Plan2024–2028",
+    "source_locator": "section5.3.4 and Table5.5; populationFigure5.2, printed280–281",
+    "evidence": "Official full administrative aggregate citing YOK2022;13stateuniversities+43foundationuniversities+4foundationvocationalHEIs; count60 is allHEIs,56 universities",
+    "extraction": "manual_transcription_official_web_pdf_render; directdownloadHTMLchallenge; no rawPDF claimed",
+    "official_short_quote": "İstanbul’da 13 devlet üniversitesi, 43 vakıf üniversitesi ve 4 vakıf meslek yüksek okulu bulunmaktadır.",
+    "scope_resolution": "Main V5 criterion is independent highereducation institutions:13+43+4=60;56university-only is diagnostic, not main."
+  },
+  "rejected_travel2007": {
+    "value_minutes": 38.6,
+    "source_url": "https://www.ibb.gov.tr/tr-tr/kurumsal/birimler/ulasimdairebsk/documents/imp_webdesign/Calibration.pdf",
+    "source_locator": "Table2.3 printed19",
+    "reason": "Educational attainment of persons; surrounding text says persons graduated. NOT enrolled highschool student home-school trips."
+  },
+  "he_type_verification": {
+    "source_url": "https://www.yokak.gov.tr/documents/enqa/YOKAK-SAR-RAPORU-2024.pdf",
+    "source_locator": "printed page8",
+    "publisher": "Turkish Higher Education Quality Council YOKAK",
+    "verified": "Foundation vocational schools classified as highereducation institutions independent of universities or technology institutes; non-profit foundation established; distinct from affiliated vocational units",
+    "extraction": "manual_official_web_pdf_read"
+  }
+}

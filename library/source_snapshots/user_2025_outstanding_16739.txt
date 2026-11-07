@@ -1,0 +1,1060 @@
+ 
+ 
+ Quantitative Analysis of Urban Location Characteristics, Environmental Im-
+pacts, and Policy Strategy Effects on Mega Sporting Events 
+Sport mega-events create substantial social and economic value but also impose significant envi-
+ronmental costs. Therefore, it is of great importance to understand the environmental impacts of these 
+events and to explore how changes in their planning may alter these impacts. 
+Firstly, taking Super Bowl LIX in New Orleans as the baseline, 17 quantitative indicators covering 
+both environmental impacts and city location characteristics are established. Reasonable value ranges 
+and physical interpretations specified based on published literature and statistical data. In addition, 8 
+sub-criteria are introduced to capture sustainability factors relevant to multi-sport competition.  
+Secondly, the relationship between city location characteristics and environmental impacts is 
+quantitatively characterized. City features are first reduced by principal component analysis (PCA) 
+based on Pearson correlations, and a multiple linear regression model is then constructed with the 
+principal component scores as explanatory variables, yielding a PCA-based urban environmental 
+impact model. Three latent dimensions—infrastructure level (PC1), climate–geographical conditions 
+(PC2), and population density (PC3)—jointly explain about 85% of the total variance. Grid carbon 
+intensity, renewable energy share, public transit coverage, and the share of green or low-carbon travel 
+are identified as the main structural drivers of environmental performance. 
+Thirdly, an environmental impact evaluation model is developed within this multi-indicator 
+framework. ARIMA models are applied to forecast future city characteristics for U.S. cities that have 
+already hosted the Super Bowl and to project 2029 features for three NFL cities that have not yet 
+hosted—Charlotte, Buffalo, and Kansas City. The forecasted features are then input into the principal 
+component regression model to obtain future environmental indicators, which are further aggregated 
+into composite scores using the entropy-weight method. The results indicate that Santa Clara ex-
+hibits the best environmental performance among historical hosts, while Kansas City attains the high-
+est score among the three potential new hosts. 
+Fourthly, the model is extended to comprehensive mega-events such as the Summer Olympic 
+Games. Building on the single-event evaluation framework, additional indicators reflecting the sus-
+tainability of multi-venue, multi-sport events are introduced, and a composite venue evaluation 
+model based on principal component regression is developed . The results show that for single 
+events, environmental pressure is concentrated mainly in short-term peaks in water use and spectator 
+transport emissions, whereas for multi-venue, multi-sport events,  long-term effects  from Olympic 
+Village energy consumption, venue network layout, and post-event venue reuse play a more dominant 
+role. After applying the entropy-weight method to derive composite environmental scores, Los Ange-
+les emerges as the best-performing host under the comprehensive event scenario.  
+Finally, a sensitivity analysis is conducted to quantify the influence of key policy variables on 
+environmental impacts. The infrastructure investment, energy procurement, and transport-mode shifts 
+are abstracted as three policy control variables and mapped, via interpretable transfer functions, 
+to changes in city characteristics and environmental indicators. The resulting effects are then evaluated 
+using an environmental composite score within the broader assessment model, confirming the robust-
+ness of the approach.  
+Keywords：Mega sporting events; Environmental impact; PCA regression; Entropy-weight method 
+Problem Chosen 
+B 
+2025 
+HiMCM 
+Summary Sheet 
+Team Control Number 
+16739 
+Team # 16739                              Page 2 of 25 
+ 
+Contents 
+1 Introduction ................................................................................................................ 3 
+1.1 Problem Background ....................................................................................................... 3 
+1.2 Restatement of the Problem ............................................................................................. 3 
+1.3 Our work .......................................................................................................................... 3 
+2 Assumptions and Justifications ................................................................................. 4 
+3 Indicator Establishment ............................................................................................ 4 
+4 PCA-Based Multiple Linear Regression Model of Environmental Impacts ........ 6 
+4.1 Data Collection and Processing ....................................................................................... 6 
+4.2 PCA-Based Multivariate Regression ............................................................................... 7 
+4.3 Results and Analysis ........................................................................................................ 8 
+5 Multi-Indicator Environmental Impact Assessment Model Based on PCR ....... 10 
+5.1 Data Collection and Prediction ...................................................................................... 10 
+5.2 Overall Environmental Impact Score ............................................................................. 13 
+5.3 Model Results and Analysis ........................................................................................... 14 
+6 Comprehensive Venue Evaluation Model Based on PCR .................................... 16 
+6.1 Evaluation Criteria and Analysis ................................................................................... 16 
+6.2 Results of the Comprehensive-games Evaluation Model .............................................. 17 
+7 Comparative Analysis of Model Results ................................................................ 19 
+8 Sensitivity Analysis ................................................................................................... 20 
+9 Strength and Limitations ......................................................................................... 22 
+References .................................................................................................................... 23 
+A Letter to the NFL ..................................................................................................... 24 
+AI Use Report .............................................................................................................. 25 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Team # 16739                              Page 3 of 25 
+ 
+1 Introduction 
+1.1 Problem Background 
+As sport mega-events such as the Super Bowl and the Olympic Games generate substantial social 
+and economic benefits, they also produce significant environmental impacts, especially in terms of 
+energy use and carbon emissions. With the global push toward carbon neutrality and sustainable de-
+velopment, the tension between sport mega-events and environmental protection has become increas-
+ingly pronounced. 
+In recent years, organizing committees and third-party institutions have attempted to quantify the 
+environmental impacts of these events through carbon-footprint accounting and environmental rating 
+systems. However, the resulting scores are still used mainly for post-event summaries and image pro-
+motion. They are rarely incorporated into key decision stages such as host-city selection and infra-
+structure planning, so environmental impacts continue to receive insufficient weight in practice. 
+Against this background, it is necessary to construct a mathematical model that explicitly aims to 
+minimize environmental impacts and enables meaningful comparison across different potential host 
+cities. Taking the Super Bowl as a case study, this paper analyzes the structure of its environmental 
+footprint and develops an evaluation model for environmentally sustainable venue selection, providing 
+quantitative and operational decision support for organizing committees. 
+1.2 Restatement of the Problem 
+(1) Analyze the environmental impacts of the Super Bowl in New Orleans, focusing on energy, 
+emissions, water use, and waste, and show how changing the host city would affect these factors.  
+(2) Develop a model that evaluates Super Bowl host cities based on city characteristics (electricity 
+mix, climate, transport) and event parameters (attendance, energy demand, travel). 
+(3) Apply the model to historical Super Bowl hosts and select the most sustainable city for 2029, 
+while evaluating three new NFL cities. 
+(4) Extend the model to other mega-events like the Olympics, considering factors like event du-
+ration, venue networks, and international travel. 
+(5) Summarize findings in a 1–2-page letter to the NFL, recommending the most sustainable 2029 
+host city and explaining how this model aligns with their sustainability goals. 
+1.3 Our work 
+In this paper, we develop a data-driven framework for evaluating the environmental performance 
+of Super Bowl host cities. We construct a two-layer indicator system that separates event-level out-
+comes (energy use, emissions, water, and waste) from city-level drivers (climate, transport, and energy 
+mix), using New Orleans as a reference case. We apply principal component analysis (PCA) and prin-
+cipal component regression (PCR) to link city characteristics to environmental indicators. We forecast 
+city data to 2029 using ARIMA, aggregate the indicators into a sustainability score via entropy 
+weighting, and apply the model to historical Super Bowl cities and new NFL cities, ranking them on 
+environmental performance. Finally, we extend the framework to the Summer Olympics and conduct 
+sensitivity analysis on infrastructure, energy, and transport before presenting a recommendation to the 
+NFL. 
+Team # 16739                              Page 4 of 25 
+ 
+2 Assumptions and Justifications 
+To simplify the problem, we make the following basic assumptions, each of which is properly 
+justified. 
+ Assumption 1: The historical climatic conditions of each candidate city during the Super 
+Bowl period are relatively stable. 
+Justification: This assumption presupposes that while there are regional differences in tempera-
+ture and precipitation levels among candidate cities during the event period (typically February), the 
+fluctuations in their historical data fall within a reasonable range and can serve as stability parameters 
+in the model. 
+ Assumption 2: The urban population flow patterns remain stable. 
+Justification: Based on the regularities of historical data on urban population migration, this as-
+sumption holds that each candidate city maintains relatively stable population mobility characteristics 
+on an annual time scale. 
+ Assumption 3: Reasonable extrapolation can be conducted based on historical data trends. 
+Justification: Due to practical constraints on data availability, the quantitative analysis in this 
+paper is mainly constructed based on historical observation data up to 2024. We assume that the basic 
+correlation patterns between urban characteristics and environmental impacts revealed by current data, 
+the trajectory characteristics of infrastructure development, and the evolution trends of energy structure 
+will remain consistent in the short term. 
+ Assumption 4: Candidate cities can maintain system stability within the prediction period. 
+Justification: We assume that within the model’s prediction time horizon (up to 2029), none of 
+the candidate cities will experience major sudden events that could significantly alter their infrastruc-
+ture characteristics, environmental carrying capacity, or population distribution patterns. 
+3 Indicator Establishment 
+Table 1 Environmental Impact Indicators Based on the Super Bowl LIV in New Orleans 
+Category Quantitative Indicator Unit  
+Energy consumption  
+Power consumption of the venue MWh 
+Hotel electricity consumption intensity kWh 
+Use of water 
+Water for venue maintenance gallon (gal) 
+per capita water consumption gallon (gal) 
+Waste generation 
+Total amount of garbage on the competi-
+tion day ton(T) 
+Recyclability/Biodegradability Rate % 
+Greenhouse gas emis-
+sion   
+Total carbon emissions of the audience t CO₂e 
+Total transportation carbon emissions t CO₂e 
+ Materials and promotional carbon emis-
+sions t CO₂e 
+Energy consumption is at the core of the event’s environmental cost. Operating the Super Bowl—
+keeping venues and hotels supplied with power and heating—can consume over 110 million kWh of 
+Team # 16739                              Page 5 of 25 
+ 
+energy [1]. For Super Bowl LIV in New Orleans, an average February temperature of only 13°C still 
+required continuous heating to maintain comfort for 65,719 spectators and staff, leading to a substantial 
+energy load. If this demand is met mainly by fossil-fuel-based grids, it directly results in thousands of 
+tons of CO₂ emissions, making energy use one of the primary sources of the event’s environmental 
+impact. 
+Water use is mainly reflected in venue-related consumption and per-capita usage, with toilet 
+flushing being the most concentrated source. During the halftime break, roughly 90 million U.S. view-
+ers use the toilet, sending about 1.4 billion liters of water into the sewage system in a short period, 
+while on-site flushing can reach around 468,000 times per day. This brief but extreme peak stresses 
+municipal water systems and, after purification and treatment, leaves a substantial “water footprint,” 
+adding pressure to regional water cycles and ecosystems. 
+In terms of solid waste, a regular NFL game produces about 40 tons of waste, whereas the Super 
+Bowl generates nearly 60 tons [2]. The recycling/composting rate within this total is a key measure of 
+waste management performance: a low rate implies that more recoverable materials are landfilled or 
+incinerated, worsening resource loss and environmental pollution. 
+Greenhouse-gas emissions from the Super Bowl mainly come from transportation, spectator ac-
+tivities, and material promotion. Cross-regional travel by tens of thousands of spectators generates 
+roughly 35,000 tons of CO₂e, while the advertising segment alone is estimated to emit about 2 million 
+tons of CO₂—comparable to the annual emissions of around 1 million Americans. These figures show 
+that greenhouse-gas emissions are a central component of the event’s overall environmental footprint 
+and have a significant cumulative impact on climate. 
+Table 2 Urban Location Characteristics Indicators 
+Category Quantitative Indicator Unit Range 
+Climate 
+Average temperature in February ℃ [-5 ,20] 
+Average precipitation in February mm [30,130] 
+Geography 
+density of population Person/km 2 [50,4000] 
+Average travel distance of the audi-
+ence 
+Km/people 
+[200,2200] 
+Transportation 
+infrastructure 
+Public transportation coverage rate % [15,70] 
+The proportion of green transporta-
+tion 
+% 
+[5,40] 
+Local energy 
+structure 
+The proportion of renewable energy % [12,65] 
+Electricity carbon intensity kg CO 2e/kWh 0.25 ~ 0.55 
+Climate is a fundamental driver of event energy demand, so we use average February temperature 
+and precipitation as core indicators. Geographical factors shape long-distance travel patterns, captured 
+by population density and average spectator travel distance. A city’s internal transport system deter-
+mines the environmental efficiency of the “last mile,” which we measure through public-transport 
+coverage, share of green/low-carbon transport, and a traffic congestion index. Finally, the local energy 
+structure sets the carbon footprint of all electricity use, reflected by the renewable-energy share and 
+Team # 16739                              Page 6 of 25 
+ 
+grid carbon intensity. Together, these indicators highlight that the environmental footprint of a mega-
+event depends less on short-term organizational measures and more on the underlying characteristics 
+of the host city. 
+4 PCA-Based Multiple Linear Regression Model of Environmental Impacts 
+Firstly, we use Pearson correlations to build a matrix including city features and environmental 
+impact indicators to identify the linear relationships and potential multicollinearity. Secondly, we apply 
+principal component analysis (PCA) on the standardized city features matrix, replacing highly cor-
+related variables with principal-component scores. Lastly, we regress each environmental indicator 
+on the selected component scores via ordinary least squares and evaluate fit using statistics such as 
+𝑹𝟐, and RMSE. This approach provides a stable, interpretable mapping from “city features” to “envi-
+ronmental impacts” even with limited samples. 
+4.1 Data Collection and Processing 
+To further quantify the relationship between environmental impacts and city features, we use New 
+Orleans (LIV) as a baseline, and compile four recent Super Bowl hosts, as shown in the Table 3. 
+Table 3 Recent Super Bowl host cities 
+Edition Year City Venue 
+LIV 2020 Miami Hard Rock Stadium 
+LIII 2019 Atlanta Mercedes-Benz Stadium 
+LII 2018 Minneapolis U.S. Bank Stadium 
+LI 2017 Houston NRG Stadium 
+Based on host-city information listed above (let n denote the number of cities; here n=4), we 
+define the city feature variables (i.e. Table 2) as 1, , 8 pX X p  . Similarly, the environmental impact 
+indicator (i.e. Table 1) is 1, , 9qY Y q  . For convenience in subsequent steps, we stack them into data 
+matrices: 
+ 
+11 12 1 11 12 1
+21 22 2 21 22 2
+1 2 1 2
+,
+p q
+p q n p n q
+n n np n n nq
+x x x y y y
+x x x y y y
+X Y
+x x x y y y
+ 
+   
+   
+         
+   
+      
+ 
+ 
+       
+ 
+R R  
+  
+ 
+(1) 
+In the formulas, 𝑥௜௝ denotes the 𝑗-th city feature for city 𝑖, and 𝑦௜௝ denotes the 𝑗-th environ-
+mental impact indicator for city 𝑖. Since the indicators have different units and scales, we normalize 
+each column of the data matrices. 
+ 
+ij j
+ij
+j
+x xz s
+  
+ 
+(2) 
+where 𝑧௜௝ is the normalized value, 𝑥௝ the mean, and 𝑠௝ the standard deviation. The same standard-
+ization is done for Y. 
+Because multicollinearity prevents accurate estimation of regression coefficients, we adopt the 
+correlation-matrix approach, i.e., we examine the correlation matrix among variables to identify 
+collinearity. For any two normalized variables (either a city-feature or an environmental-impact vari-
+able) 𝑉௜ and 𝑉௝, the Pearson correlation coefficient 𝑟௜௝is given by: 
+Team # 16739                              Page 7 of 25 
+ 
+ ( , )i j
+ij
+i j
+Cov V Vr s s   
+(3) 
+where 𝐶𝑜𝑣൫𝑉௜, 𝑉௝൯, is the covariance between 𝑉௜ and 𝑉௝, and 𝑠௜ and 𝑠௝ are the standard deviations 
+of the respective variables. 
+The purpose of correlation analysis is to preliminarily identify which city features are most closely 
+linked to the environmental indicators and to detect whether serious multicollinearity exists among the 
+city features, thereby providing a basis for subsequent PCA-based dimensionality reduction. 
+4.2 PCA-Based Multivariate Regression 
+To quantify how city features affect different categories of environmental impacts, we employ a 
+PCA-based multivariate linear regression model. The specific steps are as follows: 
+Step1. Eigen-decompose the correlation matrix 𝑅: 
+ TR P P   
+(4) 
+where 𝛬 is the diagonal matrix composed of eigenvalues 𝜆௞ (arranged in descending order), and 𝑃 
+is the eigenvector matrix. 
+Step2. The 𝑘-th principal component (PC), a linear combination of standardized features: 
+ 
+1 1 2 2k k k pk pPC p Z p Z p Z      (5) 
+where 𝑍௝ denotes the 𝑗-th normalized city-feature column vector. 
+Step3. For all cities, the principal-component score matrix is: 
+ n pT ZP   R  
+(6) 
+where the 𝑘-th column, 𝑡௞, contains the scores of the 𝑘-th principal component across the four cities. 
+Step4. Compute the cumulative explained variance of the first 𝐾 principal components. Here, 
+we retain the PCs whose cumulative explained variance reaches at least 85%, and take these PCs as 
+the new composite city-feature factors. 
+ 
+1
+1
+100%
+K
+k
+k
+K p
+j
+j
+C
+
+
+
+
+ 
+
+
+ 
+ 
+ 
+(7) 
+Step5. Next, we use the principal-component scores as the new explanatory variables and per-
+form principal component regression (PCR) on the environmental impact indicators. Construct the 
+score matrix of the first 𝐾 principal components, augmented with an intercept. 
+ 1 1
+21 2 ( 1)
+1
+1
+1
+1
+t k
+k n K
+PC
+n nk
+t t
+t tX
+t t
+ 
+ 
+ 
+   
+ 
+ 
+
+
+   
+
+R  
+ 
+ 
+(8) 
+Step6. For a single environmental indicator, the regression model is: 
+ 
+0 1 1 11j j j K K jy t t          (9) 
+Step7. Fit the model by ordinary least squares: 
+ 1ˆ ( ) T T
+j PC PC PC jX X X y   (10) 
+Team # 16739                              Page 8 of 25 
+ 
+Step8. Finally, for each environmental indicator, compute the fitted values, the residual sum of 
+squares, and the coefficient of determination 𝑅ଶ. 
+4.3 Results and Analysis 
+In this subsection, we use simulation results to quantitatively elucidate the relationship between 
+environmental impacts and city features. 
+The correlation analysis between city features and environmental impacts is shown in Fig. 1. It 
+reveals that host-city features, such as climate, transport systems, and energy mix exhibit strong cor-
+relations with event-period outcomes including energy use, water consumption, and carbon emissions. 
+In particular, attendees’ average travel distance is strongly positively correlated with audience- and 
+transport-related  emissions, whereas public-transit coverage and the share of green/low-carbon 
+travel exert a suppressing effect on transport emissions. 
+ 
+Figure 1  Heatmap of correlations between city features and environmental impacts 
+ These patterns indicate that a host city’s transportation conditions and spatial configuration are 
+key determinants of the environmental footprint of mega-sport events like the Super Bowl. 
+  
+Figure 2 Principal components’ explained-
+variance plot 
+Figure 3 PCA loading heatmap 
+As shown in Figure 2, the first three principal components jointly explain over 85% of the total 
+variance in the city-feature variables. Therefore, we retain the top three PCs as composite city-feature 
+
+Team # 16739                              Page 9 of 25 
+ 
+indices for subsequent modeling. Figure 3 displays the loadings of each feature on the PCs: PC1 is 
+chiefly driven by population density, public-transit coverage, and the share of green/low-carbon travel, 
+and can be interpreted as a “transport & urban intensity” factor. PC2 reflects climate conditions and 
+grid carbon intensity, i.e., a “climate–energy structure” factor. PC3 has the highest loading on popula-
+tion density, confirming this as its core feature. 
+  
+Figure 4 Decomposition of principal-com-
+ponent regression coefficients 
+Figure 5 Standardized residual distributions 
+for each environmental indicator 
+Figure 4 further shows that among the three latent dimensions extracted by PCA, the infrastruc-
+ture & energy-structure component (PC1) primarily governs resource-use and waste-related indicators; 
+the climate–distance component (PC2) dominates energy use and audience-related 𝐶𝑂ଶ emissions; 
+and the mobility /density component (PC3) plays an important supplementary role in transport- and 
+audience-related 𝐶𝑂ଶ. The residual distributions in Figure 5 are centered near zero with limited dis-
+persion, indicating no systematic bias in the principal-component–based model and supporting its abil-
+ity to reasonably characterize differences in environmental performance across host cities. 
+ 
+Figure 6 Importance ranking of environmental-impact drivers 
+When considering all environmental impact indicators 𝑌ଵ − 𝑌ଽ, grid carbon intensity, the share of 
+renewable energy, and the greenness of the transport system are the location traits with the most sys-
+tem-wide influence; next in importance are temperature and the level of public transit, while precipi-
+tation and other climatic details have comparatively weak average effects. Specifically: 
+Grid carbon intensity 𝑋଼ and renewables share  𝑋ଽ rank highest in importance, indicating that 
+with the same electricity use, materials, and event operations, outcomes differ systematically under 
+
+Team # 16739                              Page 10 of 25  
+ 
+high-carbon vs. low-carbon grids. Share of green travel 𝑋଺ and public-transit coverage 𝑋ହ  also rank 
+near the top, showing that a city’s transport mode mix jointly affects multiple environmental indicators 
+(not only carbon emissions but also waste, recycling rates, water use, etc.). 
+Within climate variables, temperature 𝑋ଵ matters more than precipitation  𝑋ଶ : temperature is 
+more tightly coupled to energy consumption and water use (HVAC loads, comfort needs), so its overall 
+effect on the indicators is clear, whereas precipitation is not a core driver of cross-city differences. 
+Population density 𝑋ଷ and average spectator travel distance 𝑋ସ have mid-to-low average ef-
+fects, suggesting they are not the primary sources of variation in the environmental indicators. 
+This study employs principal component analysis (PCA) and principal component regression 
+(PCR) to systematically quantify the causal relationships between city features and the environmen-
+tal impacts of hosting mega-sport events. In the subsequent model-building stage, we will retain the 
+indicator system outlined above as the baseline reference and use a quantitative index framework to 
+characterize the events’ environmental impacts. The indicators in this section also serve as references 
+for later analyses of how differences in site features lead to variations in environmental impact. 
+5 Multi-Indicator Environmental Impact Assessment Model Based on PCR 
+In this section, we will establish a multi-indicator environmental impact assessment model based 
+on the principal component regression model presented in Section 3. Notably, as COMAP requires 
+determining which city should host the 2029 Super Bowl, the future environmental impact indicators 
+cannot be known in practice. Therefore, we first use the ARIMA model to predict the characteristic 
+indicators of different cities, then weight them with the trained regression coefficients from Section 3 
+to obtain the predicted environmental impact indicators. Finally, we apply the entropy weight method 
+to weight the predicted indicators and derive the final comprehensive score. The process is as follows: 
+ 
+Figure 7 Multi-Indicator Environmental Impact Assessment Model Based on PCR 
+ 
+5.1 Data Collection and Prediction 
+Prior to the establishment of the model, it is crucial to clarify that the core of the problem lies in 
+determining which city should host the 2029 Super Bowl. Regrettably, we do not have access to future 
+data for direct analysis. Fortunately, predictions can be made based on historical data from previous 
+
+Team # 16739                              Page 11 of 25 
+ 
+years. Therefore, we have collected the historical data regarding the local characteristic indicators of 
+the six cities that have hosted the Super Bowl, which are listed in Table 4. 
+Table 4 Cities that have hosted the Super Bowl 
+Edition Year City 
+L 2016 Atlanta 
+LIII 2019 Santa Clara 
+LVI 2022 Inglewood 
+LVII 2023 Glendale 
+LVIII 2024 Las Vegas 
+LIX 2025 New Orleans 
+ 
+We have collected cities that currently have NFL teams but have never hosted the Super Bowl. 
+There are 9 such cities in total, namely: Green Bay (home to the Green Bay Packers), Buffalo (home 
+to the Buffalo Bills), Nashville (home to the Tennessee Titans), Cincinnati (home to the Cincinnati 
+Bengals), Pittsburgh (home to the Pittsburgh Steelers), Cleveland (home to the Cleveland Browns), 
+Kansas City (home to the Kansas City Chiefs), Baltimore (home to the Baltimore Ravens), and Char-
+lotte (home to the Carolina Panthers). For the above - mentioned cities, we still need to select three 
+potential host cities. Therefore, we have gathered the historical local characteristic data of these three 
+potential cities, which are presented in Table 5. 
+Table 5 Potential Cities for Hosting the Super Bowl 
+Edition Year Potential host city 
+LXIII 2029 Santa Clara 
+LXIII 2029 Inglewood 
+LXIII 2029 Atlanta 
+Based on Assumptions 1 and 2, we can conclude that the historical climatic conditions of each 
+candidate city during the Super Bowl period are relatively stable, and the urban population flow pat-
+terns remain consistent. Therefore, we only need to use the average values of temperature, precipitation, 
+population density, and average spectator travel distance from 2015 to 2024 as proxies. For other in-
+dicators such as public transportation coverage, we will predict data for the next five years based on 
+historical data from 2015 to 2024. 
+Next, we will adopt the ARIMA model to predict the future local characteristic data of candidate 
+cities. For any city c and its local characteristic indicators m, we assume that their time series ( )cmy t  
+satisfy a specific model ( , , )ARIMA p d q, which can be generally expressed as: 
+,
+, , ,( ) ( ) ( ) ( )
+c md
+c m c m c mB y t B t        (11) 
+In the formula (1 )d d
+t ty B y   , the difference operator B is as follows: where is the lag operator, 
+( )B is the autoregressive polynomial, ( )B is the moving average polynomial, , ( )c m t is the white 
+Team # 16739                              Page 12 of 25 
+ 
+noise error, and ,c md is the difference order, which is used to ensure that the differentiated sequence 
+is stable. 
+For each sequence , 1{ ( )} T
+c m ty t   , under the given conditions , , ,( , , )c m c m c mp d q  , the parameter esti-
+mates are obtained through maximum likelihood estimation. Then, a least squares fit 1 , ,t T  is 
+used for fitting, and predictions are made 1 , ,t T T H   . We need to predict up to the year 2029. 
+Therefore H=5, there is: 
+, , ,ˆ ( ) ( )c m c m c my T H a b T H     (12) 
+For the cities that have previously hosted events, as shown in Table 4. The predictions for the 
+share of renewable energy, power carbon intensity, public transportation coverage rate, and green trans-
+portation share were made using ARIMA (1,1,0), ARIMA (0,1,0), ARIMA (0,2,0), and ARIMA (0,2,1) 
+respectively. The results are as follows: 
+ 
+  
+Figure 8 Prediction of Renewable En-
+ergy Share 
+ Figure 9 Prediction of Power Carbon 
+Intensity 
+  
+Figure 10 Prediction of Public Transpor-
+tation Coverage Rate 
+Figure 11 Prediction of Green Transpor-
+tation Share 
+Similarly, for cities that have never held such events, namely those in Table 5, we also used the 
+ARIMA model for prediction. The results are as follows: 
+
+Team # 16739                              Page 13 of 25 
+ 
+  
+Figure 12 Proportion of Renewable En-
+ergy in 2029 Forecast 
+Figure 13 Prediction of Electricity Car-
+bon Intensity in 2029 
+  
+Figure 14 Prediction of Public Transpor-
+tation Coverage in 2029 
+Figure 15 Prediction of Green Transpor-
+tation Share in 2029 
+5.2 Overall Environmental Impact Score 
+In this subsection, we employ the entropy weight method to determine the weights of environ-
+mental impact indicators, as specified in Table 1. Notably, since the environmental impact indicators 
+for the upcoming event are unavailable, we utilize the principal component regression model estab-
+lished in Section 3—substituting the predicted urban characteristic data from Subsection 4.1 into this 
+model to generate predicted values ˆ jy , which are defined as "environmental scores". Finally, weighting 
+is performed using the entropy weight method. 
+Prior to implementing the entropy weight method, it is necessary to clarify the positive and neg-
+ative attributes of indicator Y: a higher value of a positive indicator signifies a smaller environmental 
+impact, while a higher value of a negative indicator indicates a larger environmental impact. The spe-
+cific calculation steps for the comprehensive environmental impact score are outlined below: 
+Step 1. Normalize the positive and negative indicators separately, substitute the predicted urban 
+characteristic data X into the model for prediction, and obtain ˆ ˆ( ) [0,1 ]
+YY ik m nZ z   the normalized 
+matrix. 
+Step 2. Normalize each column of indicators into a "probability distribution" to characterize the 
+relative magnitude of each city’s performance on that indicator, and define a probability matrix for 
+each environmental indicator k. 
+ 
+1
+ˆ , 1, ,
+ˆ
+ik
+ik m
+iki
+zp i m
+z
+ 
+
+   
+(13) 
+
+Team # 16739                              Page 14 of 25 
+ 
+Step 3. For the k-th column of the environmental impact indicators, the information entropy is 
+defined as: 
+1
+1 ln  ,0 1ln  
+m
+k ik ik k
+i
+e p p e m 
+    
+ 
+(14) 
+Step 4. The redundancy kd is defined as follows: a larger value kd indicates greater variability in 
+indicator k and a stronger contribution to distinguishing between cities. 
+1k kd e   (15) 
+Step 5. The entropy weight of the environmental impact indicator is defined as: 
+11
+, 1
+Y
+Y
+n
+Y Y k
+k k n
+kkk
+dw w
+d 
+  
+ 
+ 
+(16) 
+Step 6. For each cityi , based on the entropy weights, calculate the weighted sum of its scoresˆikz
+across all environmental impact indicators to obtain the comprehensive entropy-weighted environmen-
+tal score. 
+1
+ˆ ˆ
+Yn
+Y Y
+i k ik
+k
+F w z
+
+  
+ 
+(17) 
+Step 7. Finally, normalizing the comprehensive scores yields: 
+ˆ ˆmin
+, 1, ,ˆ ˆmax min
+Y Y
+i r r
+i Y Y
+r r rr
+F F
+S i m
+F F
+
+ 
+
+  
+ 
+(18) 
+5.3 Model Results and Analysis 
+5.3.1 Has previously hosted the city’s scoring results 
+ 
+First, we conduct entropy weight analysis on the 9 environmental impact indicators of the 6 can-
+didate cities (Santa Clara, Inglewood, Las Vegas, Glendale, Atlanta, and New Orleans), yielding the 
+weight distribution shown in Figure 16. The results indicate that indicators such as venue water con-
+sumption, per capita water consumption, spectator carbon emissions, and transportation carbon emis-
+sions have the highest weights, followed by electricity consumption indicators related to venue and 
+hotel energy use. This suggests that among the six cities, the differences in water resource consumption 
+and spectator/transportation-related carbon emissions are the most significant, serving as key factors 
+distinguishing the environmental performance of the cities. In contrast, indicators with smaller inter-
+city differences (e.g., material carbon emissions) have lower entropy weights, exerting limited impact 
+on the comprehensive score and primarily functioning as supplementary constraints. This is highly 
+consistent with the actual situation of large-scale sports events—water resource management, spectator 
+travel, and transportation organization should be the core links of environmental control. 
+Team # 16739                              Page 15 of 25  
+ 
+  
+Figure 16 Distribution of Weighting Fac-
+tors for Environmental Impact Indicators 
+ 
+Figure 17 Final City Score 
+Building on this, we calculated the weighted sum of the 9 environmental indicators using the en-
+tropy weight method to obtain the comprehensive environmental score for each city, with the ranking 
+results presented in Figure 17. Overall, Santa Clara demonstrates the best environmental performance, 
+excelling in renewable energy share, power carbon intensity, water use control, waste management, 
+and recycling rates. It holds a particularly notable advantage in spectator and transportation carbon 
+emissions, thus achieving the highest score when environmental footprint is the sole evaluation crite-
+rion and emerging as the most suitable city to host the Super Bowl from an environmental perspective. 
+Inglewood follows closely behind: leveraging California’s relatively clean power structure and well-
+developed public transportation system, its overall environmental performance is only slightly inferior 
+to Santa Clara, making it a high-quality alternative venue. Las Vegas and Glendale fall into the middle 
+tier; while they have strengths in certain dimensions, their overall environmental load is moderately 
+higher due to elevated energy and transportation demands. Atlanta and New Orleans, however, face 
+disadvantages in most key negative indicators—characterized by high power carbon intensity, insuffi-
+cient renewable energy share, and relatively high levels of water consumption and carbon emissions. 
+Consequently, their comprehensive environmental scores are relatively low, and they are not recom-
+mended as priority host cities from a strict environmental sustainability perspective. 
+5.3.2 The result of city that has never hosted the event 
+After conducting entropy weight analysis on the 9 environmental impact indicators of three cities 
+with NFL teams but no prior Super Bowl hosting experience—Charlotte, Buffalo, and Kansas City—
+Figure 18 shows that the entropy weight coefficients of indicators such as venue water consumption, 
+per capita water consumption, spectator carbon emissions, and transportation carbon emissions are 
+significantly higher than those of other indicators. This is followed by indicators including venue/hotel 
+electricity consumption and total waste generation, while indicators with relatively small differences 
+among the three cities (e.g., material carbon emissions) have lower weights and exert limited marginal 
+impact on the final score. 
+Building on the entropy weight results in Figure 18, we calculated the weighted sum of the 9 
+environmental impact indicators to obtain the comprehensive environmental score for each of the three 
+cities, with the ranking presented in Figure 19. The results indicate that Kansas City achieves the 
+highest comprehensive environmental score, making it the optimal potential host city among the three 
+
+Team # 16739                              Page 16 of 25 
+ 
+candidates. 
+  
+Figure 18 Distribution of Weighting Fac-
+tors for Environmental Impact Indicators 
+Figure 19 Final City Score 
+ 
+6 Comprehensive Venue Evaluation Model Based on PCR 
+In this subsection, we extend the previously developed principal-component regression (PCR) 
+multi-indicator model for evaluating environmental impacts. On this basis, we incorporate the intrin-
+sic characteristics of multi-purpose venue s and sustainability-oriented impact metrics, thereby con-
+structing a PCR-based comprehensive venue evaluation model. We also identify the dominant envi-
+ronmental factor that most affects the sustainability of impacts for a single mega-sport event compared 
+with a multi-sport comprehensive event. 
+6.1 Evaluation Criteria and Analysis 
+Before building the model, we clarify the core question: we need to extend our earlier framework 
+to cover other types of sporting events. Here, we consider the Summer Olympic Games as a compre-
+hensive multi-sport event. The Summer Olympics are held every four years in July–August, with a 
+competition period of about 17 days. On top of the previous environmental-impact indicators and site 
+characteristics, we add several indicators to capture features specific to comprehensive events, as 
+shown in Tables 6 and 7. 
+Table 6. Additional environmental-impact indicators for the Summer Olympics 
+Category Quantitative indicator Unit Range 
+Energy consump-
+tion 
+Olympic Village elec-
+tricity intensity MWh 3×10 3 ~ 2×104 
+Waste generation 
+Construction & demoli-
+tion waste from facili-
+ties 
+t 5×10 4 ~ 3×105 t 
+ 
+In comprehensive events, the Olympic Village operates continuously for weeks and integrates 
+accommodation, dining, medical services, training, and offices—essentially a “small city.” Introducing 
+the indicator of Olympic Village electricity intensity  captures one of the key environmental chal-
+lenges that distinguishes week-long, multi-functional events from single-day events. 
+For events like the Olympics that require large-scale new construction or renovation of venues, 
+the Village, and supporting infrastructure, construction and demolition (C&D) waste  forms a non-
+
+Team # 16739                              Page 17 of 25 
+ 
+negligible part of the life-cycle environmental impact. By quantifying “how much was built for the 
+event” and “how much was torn down,” we incorporate resource inputs and waste into the evaluation. 
+This enables the model to assess not only operational-phase pressures but also the full life cycle  of 
+infrastructure—from groundbreaking to decommissioning—which better reflects the sustainability 
+factors of comprehensive multi-sport events. 
+Table 7. Newly added site-characteristic indicators for host cities 
+Category Quantitative indicator Unit Range 
+Climate 
+Average temperature 
+(July-August) ℃ 8 ~ 28 ℃ 
+Average precipitation 
+(July-August) mm 0 ~ 200 mm 
+Transport & Infra-
+structure 
+International airport 
+throughput million passengers 1500 ~ 12000 
+Venue construc-
+tion 
+Mean inter-venue travel 
+distance Km 5 ~ 30 km 
+In-Games venue reuse 
+rate % 40% ~ 80% 
+Post-Games venue reu-
+tilization rate % 50% ~ 95% 
+“International airport throughput” reflects a city’s node rank and carrying capacity within the 
+global air network and thus has structural significance for the environmental impacts of comprehensive 
+multi-sport events. Including it as a site characteristic helps capture system-level global accessibility—
+an environmental factor rarely considered for single-sport events that are largely fed by domestic flows. 
+Compared with single-venue events, a defining feature of comprehensive games is the high fre-
+quency of movements by athletes, officials, media, and spectators among multiple venues. Therefore, 
+the mean inter-venue travel distance becomes a key structural variable affecting transport energy use 
+and carbon emissions. 
+The in-Games venue reuse rate measures, within a single edition, the extent to which the same 
+venues are used for different events or sessions—an important indicator of scheduling efficiency and 
+spectator routing, and a practical metric for sustainability planning during the Games. 
+In contrast, the post-Games venue reutilization rate directly concerns the entire life cycle of venues. 
+Combined with long-term population and site traits, it allows analysis or proxy estimation of whether 
+and how long facilities will continue to be used after the Games. A higher reutilization rate implies 
+lower hidden costs and a stronger legacy, turning a short-term event into an ongoing environmental 
+stewardship responsibility for the host city. 
+6.2  Results of the Comprehensive-games Evaluation Model 
+This model follows the same framework as the previous section, but adds several environmental-
+impact indicators and city/site characteristics to capture the distinct features of comprehensive multi-
+sport events. We therefore present results and analysis directly. 
+Team # 16739                              Page 18 of 25 
+ 
+Figure 20 reports the loadings of site characteristics 𝑋ଵ − 𝑋ଵଶ on the first three principal com-
+ponents (PC1–PC3). PC1 loads heavily on public-transit coverage ( 𝑋ହ), share of green travel ( 𝑋଺), 
+renewables share ( 𝑋ଽ), and grid carbon intensity ( 𝑋ଽ), and can be interpreted as an “infrastructure–
+transport–energy-sustainability” dimension. PC2 reflects climate and demographic structure—e.g., 
+temperature (𝑋ଵ), precipitation ( 𝑋ଶ), and population density ( 𝑋ଷ)—i.e., a “climate/locational hetero-
+geneity” dimension. PC3 has large loadings on mean inter-venue distance ( 𝑋ଵ଴) and in-Games/post-
+Games venue reuse rates ( 𝑋ଵଵ, 𝑋ଵଶ), and is thus a “venue-network layout & resource reutilization ” 
+dimension. This structure aligns with the three major drivers of environmental impact in Olympics-
+type comprehensive events: (1) the city’s overall low-carbon infrastructure, (2) local climate–energy 
+conditions that shape heating/cooling needs, and (3) the spatial organization of the venue network and 
+the reuse potential of the Olympic Village. 
+From Figure 21, the indicators with the largest weights include operational energy use of venues 
+and the Olympic Village ( 𝑌ଵ, 𝑌ଷ), construction & demolition (C&D) waste ( 𝑌଼), and audience ( 𝑌ଽ)-
+transport-related CO₂ emissions ( 𝑌ଵ଴). These map directly to the distinct sustainability challenges of 
+comprehensive games: (i) multi-venue, weeks-long energy and water demand centered on the Vil-
+lage; (ii) materials use and embodied/carbon emissions from new builds, retrofits, and post-
+Games modifications; and (iii) multi-tier transport systems for international spectators and inter-
+venue commuting .  Entropy-weighting results indicate that, under a purely objective weighting 
+scheme, the model naturally assigns greater weight to long-term, structural pressures rather than short, 
+minor components, which directly aligns with our understanding of the environmental characteristics 
+of comprehensive events such as the Summer Olympics. 
+  
+Figure 20 PCA loading heatmap Figure 21 Weights of environmental-impact 
+indicators 
+ 
+  
+Figure 22 Final city scores Figure 23 Radar chart of multi-dimensional evalua-
+tion 
+
+Team # 16739                              Page 19 of 25 
+ 
+Figure 22 presents the bar chart of the final rankings after normalizing the composite environ-
+mental-performance scores. As shown, Los Angeles attains the highest overall score, with a clear lead 
+over the second-ranked city, while the remaining cities follow in descending order. Figure 23 uses a 
+radar chart to display the relative strengths and weaknesses of the five cities across six dimensions: 
+infrastructure, transport, environment, climate, energy, and overall performance. 
+7 Comparative Analysis of Model Results 
+By comparing the results from Sections 3–4 with those from Section 5, several structural differ-
+ences emerge between single-event mega-events such as the Super Bowl and large-scale, multi-venue 
+or multi-sport competitions such as the Summer Olympic Games. The key differentiating mechanisms 
+can be summarized as follows: 
+(1) Temporal Structure: Short-Term Peaks vs. Long-Horizon Accumulation 
+In the Super Bowl model (Sections 3–4), the entropy-weighted results assign the highest weights 
+to stadium water use, per-capita water consumption, spectator travel emissions, and transportation-
+related emissions, followed by electricity consumption for stadiums and hotels. Construction-phase 
+and long-term legacy indicators contribute almost nothing to the weighting structure. This pattern in-
+dicates that the environmental pressure of a single-event competition is dominated by short-duration, 
+peak-load consumption concentrated around game day. In contrast, in the Olympic model, indicators 
+such as Olympic Village electricity intensity and construction/demolition waste obtain significantly 
+higher entropy weights. This shift reflects that multi-venue events generate cumulative, time-extended 
+sustainability pressure, where long-horizon resource use becomes more influential than short-term op-
+erational spikes. 
+(2) Spatial Structure: Single-Venue Events vs. Multi-Venue Networks 
+In the Super Bowl model, spatially relevant factors are primarily: Average spectator travel dis-
+tance, Public transport coverage, Share of green transportation. Regression results show that these 
+variables strongly explain spectator and transportation-related carbon emissions. In the Olympic model, 
+newly added variables—average inter-venue travel distance, in-Games venue reuse rate, and post-
+Games reutilization rate—form a distinct principal component (PC3), interpreted as the “venue spatial 
+configuration and legacy utilization” dimension. This component contributes meaningfully to multiple 
+environmental indicators. This comparison highlights that for comprehensive multi-sport events, the 
+spatial network of venues, together with the multi-tier mobility system linking venues and the Olympic 
+Village, becomes a structural driver of environmental outcomes. 
+(3) Shared Core Drivers: Electricity Systems and Transport Structure 
+Across both models, a consistent result emerges: Electricity carbon intensity, Renewable-en-
+ergy share, Public transport coverage, and Green mobility proportion.All exhibit high importance 
+in both the principal component regressions and the entropy weighting scheme. These variables func-
+tion as common core determinants of environmental performance. However, the mechanisms differ. 
+For the Super Bowl, these city attributes primarily amplify or mitigate single-day carbon footprints via 
+short-term electricity demand and transportation organization. For the Olympic Games, they determine 
+not only operational emissions during the 17-day event window but also the long-term emission base-
+line for decades of venue and Olympic Village operation. 
+Team # 16739                              Page 20 of 25 
+ 
+8 Sensitivity Analysis 
+In this subsection, to characterize how infrastructure investment, energy procurement, and changes 
+in transportation modes affect the performance of cities bidding to host large-scale sports events in the 
+future, we build on the original model in Section 5. Specifically, we treat infrastructure investment, 
+energy procurement, and transportation modes as adjustable policy variables, mapping them to param-
+eterized changes in the urban characteristic matrix X and the environmental indicator matrix Y. Sub-
+sequently, we recalculate the comprehensive environmental scores under the same entropy weight sys-
+tem and compare the score differences before and after the scenario simulation to quantitatively eval-
+uate the marginal improvement effects of different policy combinations on urban sustainability and 
+bidding competitiveness. We consider a total of c candidate cities, with the original baseline urban characteristic vector 
+denoted as 1 12( , , )base base base
+c c cX X X  and the baseline environmental impact indicator vector as
+1 11( , , )base base base
+c c cY Y Y  . We aim to modify the urban characteristics and environmental indicators 
+through three types of strategy variables: infrastructure investment intensity ( ) [0,1]I
+cu  , green energy 
+procurement intensity ( ) [0,1]E
+cu  , and transportation mode transformation intensity ( ) [0,1]T
+cu  . The 
+urban characteristics and environmental indicators under the aforementioned policies are denoted as, 
+respectively. 
+( ) ( ) ( )( , , , )pol base I E T
+c X c c c cX f X u u u  (19) 
+( ) ( ) ( )( , , , , )pol base pol I E T
+c Y c c c c cY f Y X u u u  (20) 
+where all functions denote linear functions ( ), ( )x Yf f  —specifically, the strategy variables linearly 
+increase or decrease base
+cX  and base
+cY . 
+We denote the score under the baseline environmental impact indicators as ( )base base
+c cS F Y , and 
+the score after introducing the policies as ( ) ( ) ( )( ( , , ))pol pol I E T
+c c c c cS F Y u u u . Therefore, the policy-driven 
+improvement in the city’s score can be expressed as: pol base
+c c cS S S   . 
+Next, we discuss the impacts of the three types of strategies. 
+(1) Infrastructure Investment Intensity ( )I
+cu  
+ Strategies: Venue energy-saving renovation, smart water management, waste recycling facil-
+ities, and public transportation expansion. 
+ Impacts on urban characteristics X: Increasing public transportation coverage rate X 5, pro-
+portion of green transportationX 6, venue reuse rate X 11, and post-event utilization rate X 12; 
+reducing the average travel distance between venues X10. 
+ Impacts on environmental indicators Y: Reducing venue electricity consumptionY1, Olympic 
+Village electricity consumption intensity Y 3, venue-level water consumptionY 4, and waste 
+from facility construction and demolition Y8. 
+(2) Green Energy Procurement Ratio ( )E
+cu  
+ Strategies: Purchasing renewable electricity, increasing investment in local photovol-
+taic/wind power, etc. 
+ Impacts on urban characteristics X: Increasing the proportion of renewable energy in elec-
+tricityX8 and reducing power carbon intensity X9. 
+ Impacts on environmental indicators Y: Reducing venue electricity consumptionY1, hotel 
+electricity consumption Y2, and Olympic Village electricity consumption Y3. 
+(3) Transportation Mode Transformation Intensity ( )T
+cu  
+ Strategies: Rail transit connection, temporary public buses, car-free day policies, etc. 
+Team # 16739                              Page 21 of 25 
+ 
+ Impacts on urban characteristics X: Increasing public transportation coverage rateX5， and 
+proportion of green transportation X6. 
+ Impacts on environmental indicators Y: Reducing transportation carbon emissions Y10. 
+We reflect the aforementioned impacts through linear weighting to quantify the effects of the strat-
+egies. We design three sets of distinct strategies to assess how changes in infrastructure investment, 
+energy procurement, and transportation modes influence cities bidding to host large-scale sports events 
+in the future. Different combinations of strategy investment intensities are established, as shown in 
+Table 8. The simulation results under different strategies are presented as follows: 
+ 
+Table 8: Strategy Intensity Corresponding to Candidate Cities 
+City The first group of pol-
+icy intensity 
+The second group 
+of policy intensi-
+ties 
+The third group of policy in-
+tensity 
+Paris [0.4, 0.3, 0.3] [0.2, 0.3, 0.3] [0.7, 0.7, 0.6] 
+Vancouver [0.5, 0.6, 0.4] [0.2, 0.3, 0.3] [0.2, 0.3, 0.3] 
+Melbourne [0.6, 0.4, 0.3] [0.2, 0.3, 0.3] [0.2, 0.3, 0.3] 
+Tokyo [0.5, 0.3, 0.5] [0.2, 0.3, 0.3] [0.2, 0.3, 0.3] 
+Angeles [0.7, 0.7, 0.6] [0.7, 0.7, 0.6] [0.2, 0.3, 0.3] 
+ 
+By adjusting the intensity of the strategies, we find that increasing the investment intensity of the 
+corresponding strategies for a city leads to an increase in its respective urban score, which aligns with 
+our expected outcomes. In the figure below, red indicates a negative impact pol base
+c c cS S S    after 
+strategy adjustment, while green indicates that the strategies have exerted a positive effect. 
+ 
+  
+Figure 24 The increase in city scores and ranking under the first group of policy-driven 
+measures 
+  
+Figure 25 The increase in city scores and ranking under the second group of policy-driven measures 
+
+Team # 16739                              Page 22 of 25 
+ 
+  
+Figure 26 The increase in city scores and rankings under the third group of policy-driven measures 
+9 Strength and Limitations 
+The merit of our model lies in its scientifically grounded indicator system and the integration of 
+multiple analytical methods. By combining indicators for energy use, water, waste, transport emissions, 
+and the urban environment, it offers a multi-dimensional yet intuitive way to evaluate the Super Bowl’s 
+environmental impact. The PCA-based regression model mitigates multicollinearity and extracts three 
+stable principal components explaining over 85% of total variance, giving both statistical robustness 
+and clear interpretation. ARIMA forecasting combined with PCA regression allows forward-looking 
+evaluations of candidate host cities without requiring future observations, while the entropy-weight 
+method enhances objectivity by assigning greater weight to more discriminative indicators. Scenario-
+based sensitivity analysis further shows how policy changes—such as expanded renewable energy or 
+shifts in transport structure—alter projected impacts, making the framework useful for long-term sus-
+tainability planning. 
+However, the framework has limitations. The regression is calibrated on a relatively small set of 
+historical host cities, which constrains statistical power and generalizability. Several indicators rely on 
+simplified assumptions, such as multi-year climate averages and linear mobility approximations, 
+which may bias results for cities with high variability or rapid structural change. ARIMA forecasting 
+assumes stable trends and does not capture non-linear shocks from policy shifts, infrastructure up-
+grades, economic change, or extreme climate events, potentially distorting projections for 2029. The 
+assessment also focuses mainly on operational impacts, only partially accounting for embodied carbon 
+in stadium construction and long-term energy use from subsequent events, so the full life-cycle foot-
+print is understated. Finally, while entropy weighting is objective, it ignores expert judgment and may 
+underemphasize important but low-variance indicators; future work that blends objective and expert-
+based weights could improve realism and balance. 
+ 
+ 
+ 
+
+Team # 16739                              Page 23 of 25 
+ 
+References 
+[1] Martin, E., Matjias, B. Generic LCA-methodology applicable for buildings, constructions and op-
+eration services—Today practice and development needs[J]. Building and Environment, 2003, 
+38(7):919-938.  
+[2] Zhang, L., Wu, J., Liu, H. Y ., Turning green into gold: A review on the economics of green build-
+ings[J]. Journal of Cleaner Production, 2017, 188(11):2234-2245. 
+[3] Dong W., Li C., Yuan J. Research on the Mechanism of Power Supply Interruption Risk forIm-
+portant User Based on Interpretative Structural Model[J]. Journal of Service Science andManagement, 
+2017, 10(6): 537-546. 
+[4] Zhong Z. System dynamic simulation of emergent material distribution strategies in response to 
+typhoon disasters[J]. Journal of Computational Methods in Sciences and Engineering, 2022,22(6): 
+1995-2006. 
+[5] Gilmore, D.. The war on supply chain complexity. Supply Chain Digest, 2008.  
+[6] Bozarth, C.C., Warsing, D. P., Flynn, B.B. et al.. The impact of supply chain complexity on manu-
+facturing plant performance[J]. Journal of Operations Management, 2009, 27(1): 78–93. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Team # 16739                              Page 24 of 25 
+ 
+A Letter to the NFL 
+Dear Members of the NFL Super Bowl Selection Committee, 
+ 
+On behalf of the HiMCM Super Bowl Sustainability Consultants (SSC), we are honored to present 
+our recommendation for the host city of the 2029 Super Bowl. Based on a quantitative analysis focused 
+on environmental impact, our team evaluated how different cities would perform if they hosted the 
+game in 2029. 
+In our study, we compared candidate cities on key dimensions such as event-related energy use, 
+greenhouse-gas emissions, water consumption, and solid-waste generation, together with city factors 
+including climate, electricity mix, transportation options, and existing sustainability practices. Using 
+these indicators, we estimated the overall environmental footprint of a Super Bowl in each city and 
+ranked them accordingly. 
+From this comparison, we respectfully recommend Santa Clara, California as the 2029 host city. 
+Santa Clara stands out for three main reasons: 
+ Lower-carbon energy and mild climate : A relatively clean regional grid and temperate February 
+weather reduce energy demand for the stadium, hotels, and other facilities, cutting associated emis-
+sions. 
+ Efficient transportation structure: As part of a dense, transit-served metropolitan area with multiple 
+airports, Santa Clara allows more spectators to rely on shorter trips and public transport rather than 
+long-haul travel and private cars. 
+ Strong water and waste management: Established conservation measures, reclaimed-water use, and 
+advanced recycling and composting systems make ambitious water-saving and high waste-diver-
+sion targets realistic during the event week. 
+Other cities such as Las Vegas, New Orleans, and Glendale have strong football traditions and 
+valuable hosting experience. However, under consistent environmental criteria, our results indicate 
+that Santa Clara generates a smaller projected footprint while still meeting the operational needs of a 
+modern Super Bowl.     
+Selecting Santa Clara for the 2029 Super Bowl would help the NFL significantly reduce the event’s 
+environmental impact and demonstrate clear leadership in aligning elite sport with sustainability goals. 
+Thank you for your time and consideration. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Yours sincerely, 
+The HiMCM Super Bowl Sustainability Consultants (SSC) Team 
+Team # 16739                              Page 25 of 25 
+ 
+AI Use Report 
+ChatGPT 5.1 Model was used solely to polish the text. No generative AI tools were employed in the 
+creation of core content, methodology, and programming. 

@@ -1,0 +1,131 @@
+{
+  "new_observations": 0,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "changed_minimum": [
+    {
+      "city": "Toronto",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 9,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "New York",
+      "minimum_measurements": 5,
+      "minimal_bundle_count": 21,
+      "fixed_weight_minimum": 4
+    },
+    {
+      "city": "Mexico City",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Bogota",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 9,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Sao Paulo",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Santiago",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 9,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "London",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Barcelona",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 9,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Warsaw",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 9,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Athens",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Nairobi",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Cape Town",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 9,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Dubai",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 9,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Istanbul",
+      "minimum_measurements": 2,
+      "minimal_bundle_count": 6,
+      "fixed_weight_minimum": 1
+    },
+    {
+      "city": "Mumbai",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Delhi",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Dhaka",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Tokyo",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 5,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Jakarta",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 15,
+      "fixed_weight_minimum": 3
+    },
+    {
+      "city": "Melbourne",
+      "minimum_measurements": 4,
+      "minimal_bundle_count": 5,
+      "fixed_weight_minimum": 3
+    }
+  ],
+  "validation": "25 collapsed-range comparisons match fixed-weight method; robust count cannot decrease; evidence arrays unchanged",
+  "caveat": "Minimum counts assume favorable exact measurements of this city only. Outcomes are hypothetical, not guaranteed; field acquisition may yield intervals, and evidence costs are not estimated."
+}

@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "file": "raw/homicide_worldbank.zip",
+      "url": "https://api.worldbank.org/v2/en/indicator/VC.IHR.PSRC.P5?downloadformat=csv",
+      "resolved_url": "https://api.worldbank.org/v2/en/indicator/VC.IHR.PSRC.P5?downloadformat=csv",
+      "retrieved_at_utc": "2026-11-07T08:03:26.493777+00:00",
+      "bytes": 53874,
+      "sha256": "4b50cde763737bc8a87aea3abcd95dc5c7a10805dbe88f1e391da7e67bb06a43",
+      "content_type": "application/zip"
+    },
+    {
+      "file": "raw/secondary_pupil_teacher_worldbank.zip",
+      "url": "https://api.worldbank.org/v2/en/indicator/SE.SEC.ENRL.TC.ZS?downloadformat=csv",
+      "resolved_url": "https://api.worldbank.org/v2/en/indicator/SE.SEC.ENRL.TC.ZS?downloadformat=csv",
+      "retrieved_at_utc": "2026-11-07T08:03:26.329903+00:00",
+      "bytes": 43223,
+      "sha256": "65385478fd1956db414f58609ac8d9afe8aa14107ef97ccbdac9da64acd0c52b",
+      "content_type": "application/zip"
+    },
+    {
+      "file": "raw/countries_worldbank.json",
+      "url": "https://api.worldbank.org/v2/country?format=json&per_page=1000",
+      "resolved_url": "https://api.worldbank.org/v2/country?format=json&per_page=1000",
+      "retrieved_at_utc": "2026-11-07T08:03:25.853141+00:00",
+      "bytes": 113955,
+      "sha256": "99c199efc2fc2880c169eb611f5a32ba69adc0e225b83f54fe384a5d66ba2448",
+      "content_type": "application/json;charset=utf-8"
+    }
+  ]
+}

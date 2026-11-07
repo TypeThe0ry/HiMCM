@@ -1,0 +1,177 @@
+| ©2024 by COMAP | www.comap.org | www.mathmodels.org | info@comap.org | 
+2024 HiMCM 
+Problem A: To Play or not to Play: Modeling Future Olympic Games 
+The International Olympic Committee (IOC) is planning the 2032 Summer Olympics in 
+Brisbane, Australia. As the Olympics evolve, the IOC aims to keep the Games both relevant and 
+impactful by adding sports, disciplines, or events (SDEs) that resonate with modern values and 
+appeal to a global audience. Throughout Olympic history, SDEs have been introduced, removed, 
+or even reintroduced to reflect the times. For example, in 2020, Karate, Sport Climbing, Surfing, 
+and Skateboarding made their Olympic debut. However, Karate was no longer included in the 
+2024 Paris Olympics, while Breaking (also known as breakdancing) was introduced. Looking 
+forward to the 2028 Los Angeles Olympics, Flag Football, Lacrosse, and Coastal Rowing will be 
+added, while Baseball and Softball will return to be contested in the 2028 Games after a 20-year 
+absence. 
+To guide these decisions, the IOC’s Olympic Programme Commission has developed a set of 
+criteria to help ensure that each sport aligns with Olympic values.[1] IOC Criteria for Sports 
+Inclusion is summarized below: 
+● Popularity and Accessibility: Enhances the Olympic Games’ appeal and global interest
+without excessively increasing costs or logistical demands.
+● Gender Equity: Ensures that both men and women athletes have equal opportunity to
+participate.
+● Sustainability: Promotes environmental and social responsibility.
+● Inclusivity: Represents diverse cultures and promotes global participation (at least 75
+countries across four continents practicing the sport).
+● Relevance and Innovation: The sport must appeal to younger audiences, reflect modern
+trends, and incorporate innovations including physical virtual sports where appropriate
+while respecting Olympic traditions.
+● Safety and Fair Play: Maintains high standards for athlete protection and anti-doping.
+The IOC has hired your team, HiMCM Olympic Consultants (HOC), to assist in evaluating 
+which SDEs should be added (or potentially removed) from the 2032 Summer Games. Your task 
+is to create a mathematical model that evaluates SDEs against these criteria to provide well-
+reasoned recommendations. This model will be used to make quantitatively informed decisions 
+about which SDEs best fit the Olympics’ evolving vision. 
+
+| ©2024 by COMAP | www.comap.org | www.mathmodels.org | info@comap.org | 
+ 
+Your Tasks 
+1. What factors need to be considered when addressing the IOC criteria? List and describe 
+the various factors your team identifies. Note that factors may be quantitative or 
+qualitative, constant or variable, and deterministic or probabilistic. Be sure to justify 
+your choices and to include units where appropriate.  
+ 
+2. Use your factors to build a model (or set of models) to help the IOC evaluate which SDEs 
+align best with Olympic criteria.  
+ 
+3. Test your model on at least three SDEs that have been added or removed from recent 
+Olympics, namely Olympic years 2020, 2024, and 2028 and at least three SDEs that have 
+continuously been in the Olympic programme since the 1988 games or earlier. The 
+supplied data HiMCM_Olympic_Data.xlsx provides information about which sports and 
+disciplines, and number of events, have appeared in each Olympics since their modern 
+formation. Be sure to highlight the general applicability of your model by choosing a 
+diverse collection of SDEs to evaluate. Discuss how your model affirms these SDEs’ 
+current Olympic status.  
+  
+4. Identify three SDEs that could be new additions or reintroductions for the 2032 Olympics 
+in Brisbane. Make sure to identify which SDE should be considered first, second and 
+third for inclusion in the Brisbane games. Are there any SDEs that you believe have 
+potential for inclusion in an Olympic games in 2036 or beyond? 
+ 
+5. Perform sensitivity analysis to address the robustness of your model. Identify what 
+aspects of your model make an SDE score well and discuss if these represent a strength 
+or weakness of your model, especially in light of it being used as a decision-making tool. 
+ 
+6. Draft a one- to two-page letter addressed to the IOC summarizing your findings in a non-
+technical way. Explain your model’s rationale and its results for the evaluated SDEs. 
+Include your recommendations for which SDEs to add or remove and why your model 
+supports these conclusions. 
+ 
+Your PDF solution of no more than 25 total pages should include:  
+• One-page Summary Sheet. 
+• Table of Contents. 
+• Your complete solution. 
+• One- to two-page IOC letter 
+• References list. 
+• AI Use Report (If used does not count toward the 25-page limit.) 
+ 
+Note: There is no specific required minimum page length for a complete HiMCM submission. 
+You may use up to 25 total pages for all your solution work and any additional information you 
+want to include (for example: drawings, diagrams, calculations, tables). Partial solutions are 
+accepted. We permit the careful use of AI such as ChatGPT, although it is not necessary to create 
+a solution to this problem. If you choose to utilize a generative AI, you must follow the COMAP 
+AI use policy. This will result in an additional AI use report that you must add to the end of your 
+PDF solution file and does not count toward the 25 total page limit for your solution. 
+| ©2024 by COMAP | www.comap.org | www.mathmodels.org | info@comap.org | 
+ 
+NEW HiMCM/MidMCM: Online Submission Process 
+The purpose of this article is to assist and guide students and advisors participating in HiMCM/MidMCM. 
+In the article, COMAP, provides information about the new online submission process using the new 
+online submission page https://forms.comap.org/242386224483964. You will need your team's control 
+number, advisor id number and your problem choice to complete your submission. 
+Data 
+ 
+HiMCM_Olympic_Data.xlsx – Data set of current and discontinued summer program. 
+Sport and Discipline: The sports (and disciplines) make up the current and discontinued 
+Summer Olympic Games official program and are listed alphabetically according to the 
+name used by the IOC.  
+Code: Each discipline is marked with a unique 3-character identifier code by the IOC. 
+Sports Governing Body: A listing of the sports governing bodi es associated with 
+Olympic sports. 
+1896 – 2028: The four number code in each column represents the year of the associated 
+Olympic Games. Figures in each cell of the associated column indicate the number of 
+events for each sport contested at the respective Games; a bullet (•) denotes that the sport 
+was contested as a demonstration or unofficial sport.  
+ 
+Glossary 
+ 
+Deterministic: processes that have only one (predetermined) outcome. 
+International Olympic Committee (IOC): is the international, non-governmental, sports 
+governing body of the Olympic Games and the Olympic Movement. The IOC is best known as 
+the organization responsible for organizing the Summer and Winter Olympics.  
+IOC’s Olympic Programme Commission: has, among other duties, the responsibility for 
+analyzing the programmes for the Summer and Winter Olympic Games. 
+Physical virtual sport: refers to a sport that integrates physical activity with virtual or digital 
+elements, often through advanced technology like augmented reality (AR), virtual reality (VR), 
+or esports platforms. These sports combine real-world physical exertion or skill with virtual 
+settings or competitions, bridging traditional physical sports and digital interaction. One example 
+of a physical virtual sport is Zwift cycling, where athletes use stationary bikes equipped with 
+sensors to track their speed and resistance. The data is then streamed into a virtual environment 
+where cyclists "ride" through various digital courses, competing with other participants online. 
+This type of setup blends real physical cycling with a virtual competition, allowing for both 
+athletic performance and digital engagement. 
+ 
+Probabilistic: processes based on the theory of probability or that randomness plays a role in 
+predicting future events. 
+ 
+Programme: of the Olympic Games is the programme of all sports competitions established by 
+the IOC for each edition of the Olympic Games. 
+ 
+ 
+ 
+| ©2024 by COMAP | www.comap.org | www.mathmodels.org | info@comap.org | 
+ 
+SDE: Sport, Discipline, or Event 
+ 
+Sport: The IOC defines an Olympic sport as a discipline that is governed by a single 
+international sports federation (IF). A single sport may contain one or more disciplines, 
+each of which is the focus of one or more events.  
+ 
+Discipline: A branch of a sport that includes one or more events. 
+ 
+Event: A competition within a discipline that results in a ranking and awards (e.g. medals). 
+ 
+Example of the relationship between sport, discipline, and event in the Olympic 
+programme from the 2024 Paris Olympics:  
+● World Aquatics is the IF that governs the sport of aquatics 
+● Within the sport of aquatics are multiple disciplines – artistic swimming, diving, 
+marathon swimming, swimming, and water polo. 
+● Within the discipline of diving are eight medal events:  
+○ Individual 3m springboard - men & women 
+○ Individual 10m platform - men & women 
+○ Synchronized 3m springboard - men & women 
+○ Synchronized 10m platform - men & women 
+ 
+Sports governing body: A sports governing body is a sports organization that has a regulatory 
+or sanctioning function. Sports governing bodies come in various forms and have a variety of 
+regulatory functions, including disciplinary action for rule infractions and deciding on rule 
+changes in the sport that they govern. Governing bodies have different scopes. They may cover a 
+range of sports at an internationally acceptable level. An example of a sports governing body is 
+an International Federation. International Sports Federations (IFs): are international non-
+governmental organizations recognized by the (IOC) as administering one or more sports at the 
+world level. Recognized IFs must ensure that their statutes, practice and activities conform with 
+the Olympic Charter, ultimately, they are responsible for the integrity of their sport on the 
+international level. 
+ 
+Reference 
+ 
+[1] Factsheet: The programme of the Games of the Olympiad, ©International Olympic 
+Committee, June 2024.  
+Accessed online: https://stillmed.olympics.com/media/Documents/Olympic-
+Games/Factsheets/The-programme-of-the-Games-of-the-Olympiad.pdf 
+Disclaimer 
+ 
+COMAP is a non-profit organization dedicated to improving mathematics education with an 
+emphasis on increasing student proficiency in mathematical modeling. This contest problem 
+references material from the International Olympic Committee (IOC). We acknowledge and 
+respect the IOC’s ownership of this material, and it is used here solely for educational, non-
+commercial purposes to enrich learning experiences for participants. This content is not endorsed 
+by or affiliated with the IOC. 

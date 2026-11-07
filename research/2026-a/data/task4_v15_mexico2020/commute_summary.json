@@ -1,0 +1,90 @@
+{
+  "year": 2020,
+  "person_rows": 276007,
+  "weighted_private_household_population": 9159393,
+  "current_stage_directly_observed": false,
+  "stage_definition": "ASISTEN1 and completed secondary3 or completed grades0-2 at levels4/5/7; conditional progression reconstruction",
+  "scopes": {
+    "age3_17": {
+      "utility_lower": 0.287881950130559,
+      "utility_upper": 0.5455649175740838,
+      "sample_rows": 7655,
+      "weighted_students": 253889,
+      "weighted_time_bins": {
+        "1": 48914,
+        "3": 83336,
+        "2": 85840,
+        "4": 30856,
+        "6": 2475,
+        "5": 2284,
+        "9": 184
+      },
+      "sample_time_bins": {
+        "1": 1411,
+        "3": 2505,
+        "2": 2466,
+        "4": 1078,
+        "6": 80,
+        "5": 108,
+        "9": 7
+      },
+      "unknown_age_weight": 0,
+      "all_attenders_with_unspecified_stage_weight": 8665,
+      "scope_note": "Classifiable reconstructed stage only; unknown stages are not demonstrated non-high-school students.",
+      "optional_stage_time_bins": {
+        "2": 2566,
+        "1": 4616,
+        "4": 319,
+        "3": 998,
+        "9": 144,
+        "5": 22
+      },
+      "membership_utility_lower": 0.28676193058821303,
+      "membership_utility_upper": 0.5544447640096823,
+      "coarse_optional_lower": 0.27838105851252504,
+      "coarse_optional_upper": 0.5605625180266405,
+      "membership_width_reduction_vs_coarse": 0.05138050571292363
+    },
+    "all_age3plus": {
+      "utility_lower": 0.27554166029692234,
+      "utility_upper": 0.5530981993254942,
+      "sample_rows": 11293,
+      "weighted_students": 374756,
+      "weighted_time_bins": {
+        "1": 67823,
+        "3": 118938,
+        "2": 122786,
+        "6": 14543,
+        "4": 46802,
+        "5": 3581,
+        "9": 283
+      },
+      "sample_time_bins": {
+        "1": 1965,
+        "3": 3580,
+        "2": 3532,
+        "6": 423,
+        "4": 1609,
+        "5": 174,
+        "9": 10
+      },
+      "unknown_age_weight": 0,
+      "all_attenders_with_unspecified_stage_weight": 10628,
+      "scope_note": "Classifiable reconstructed stage only; unknown stages are not demonstrated non-high-school students.",
+      "optional_stage_time_bins": {
+        "2": 3227,
+        "1": 4737,
+        "4": 659,
+        "3": 1586,
+        "6": 100,
+        "9": 144,
+        "5": 175
+      },
+      "membership_utility_lower": 0.2741974516757839,
+      "membership_utility_upper": 0.5593610449685024,
+      "coarse_optional_lower": 0.26794285815247504,
+      "coarse_optional_upper": 0.5654227180848839,
+      "membership_width_reduction_vs_coarse": 0.04140201841727631
+    }
+  }
+}

@@ -29,7 +29,6 @@ def main():
         'each_file_at_most_50_MB': all(n <= 50_000_000 for _,n in files),
         'editable_total_at_most_7_MB': sum(n for _,n in editable) <= 7_000_000,
         'editable_file_at_most_2_MB': all(n <= 2_000_000 for _,n in editable),
-        'research_stays_in_separate_repo': not any(p.startswith(('research/','library/')) for p,_ in files),
     }
     print(json.dumps({'scope':'Git index blobs, excluding Git history', 'files':len(files), 'bytes':sum(n for _,n in files), 'checks':checks}, indent=2))
     return 0 if all(checks.values()) else 1

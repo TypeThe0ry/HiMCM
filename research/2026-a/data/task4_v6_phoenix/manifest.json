@@ -1,0 +1,84 @@
+[
+  {
+    "file": "nces_layer.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1?f=json",
+    "sha256": "b8b8071b610c330e747844969b814b94b5456d4125dc85cf5cffce4565eb22f0",
+    "bytes": 23478,
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "nces_arizona_secondary.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE%3D%27AZ%27+AND+GSHI%3D%2712%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=2000",
+    "sha256": "97a1b190f2387e460158c60b879626db1089debc8e9cc2abc77b0bb4e4334cc0",
+    "bytes": 1107264,
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "phoenix_boundary_service.json",
+    "url": "https://services.arcgis.com/cfKakmeHE95cgeEK/arcgis/rest/services/CityLimit/FeatureServer?f=json",
+    "sha256": "6a982c5806452316c7dca24c8e7b0c747457b2315eeddc112fe40af480d77163",
+    "bytes": 4600,
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "phoenix_boundary_layer.json",
+    "url": "https://services.arcgis.com/cfKakmeHE95cgeEK/arcgis/rest/services/CityLimit/FeatureServer/1?f=json",
+    "sha256": "fbf9bc9f6e13951589ec975fb3e79866811589b5f9efb7c0c30d8ff512ca9f79",
+    "bytes": 10775,
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "phoenix_boundary.geojson",
+    "url": "https://services.arcgis.com/cfKakmeHE95cgeEK/arcgis/rest/services/CityLimit/FeatureServer/1/query?f=geojson&where=1%3D1&outFields=%2A&outSR=4326",
+    "sha256": "bfd883feb95326b3fcc2ae5de18f66aa93a5c1c56467dba8a07c0045b502cb16",
+    "bytes": 191205,
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "trp_student_questionnaire.pdf",
+    "url": "https://www.maricopa.gov/DocumentCenter/View/40221/Sample-Student-Survey?bidId=",
+    "error": "404 Client Error: Not Found for url: https://www.maricopa.gov/DocumentCenter/View/40221/Sample-Student-Survey?bidId=",
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "trp_handbook.pdf",
+    "url": "https://www.hsd.maricopa.gov/DocumentCenter/View/72751/MCAQD-TRP-Handbook",
+    "bytes": 1712944,
+    "sha256": "d8ac0f07aa4ce2a11da274994f7e67346e5248e536bf7b3fce367e1a27fed233",
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "trp_program.html",
+    "url": "https://www.maricopa.gov/2388/Travel-Reduction-Program",
+    "bytes": 192136,
+    "sha256": "90330afc71953dfd96022ccec6601746041ef3cee5c4ae771465ba98c4bb76be",
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "trp_ordinance.html",
+    "url": "https://hsd.maricopa.gov/7778/P-7-Travel-Reduction-Program",
+    "bytes": 214652,
+    "sha256": "08685025a7f0922b3d9b60255bd55b9307ad9617f41f76521fe8f4643c958cc0",
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "mag_survey_catalog.html",
+    "url": "https://azmag.gov/Documents/113",
+    "error": "403 Client Error: Forbidden for url: https://azmag.gov/Documents/113",
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "nces_missing_fte.html",
+    "url": "https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?ID=040012101581",
+    "bytes": 18340,
+    "sha256": "eb5b797b2402feb324da1b6f1da9dad04f24aa5181f2f4f651d4a5a032790810",
+    "accessed": "2026-11-07"
+  },
+  {
+    "file": "trp_questionnaire_field_audit.json",
+    "url": "https://www.maricopa.gov/DocumentCenter/View/40221/Sample-Student-Survey?bidId=",
+    "method": "Web tool opened indexed official PDF; direct HTTP archive returned404. This is a paraphrased field audit, not original PDF bytes.",
+    "sha256": "54144cca78305fb3fe699b28b3cd26eb7c244881eba496e831842015c75e565a",
+    "accessed": "2026-11-07"
+  }
+]

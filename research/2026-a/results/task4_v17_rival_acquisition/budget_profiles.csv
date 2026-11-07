@@ -1,0 +1,173 @@
+source_city,exact_measurements,max_excluded,tied_best_bundles,example_indicators,excluded_candidates
+Toronto,0,0,1,,
+Toronto,1,0,6,homicide_rate,
+Toronto,2,0,15,homicide_rate|upper_secondary_ptr,
+Toronto,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Toronto,4,1,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,Istanbul
+Toronto,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Toronto,6,21,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Phoenix|Mexico City|Bogota|Sao Paulo|Santiago|London|Warsaw|Athens|Nairobi|Lagos|Cape Town|Dubai|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta|Melbourne
+Phoenix,0,0,1,,
+Phoenix,1,0,7,pm25,
+Phoenix,2,0,21,pm25|upper_secondary_ptr,
+Phoenix,3,0,35,pm25|upper_secondary_ptr|research_he_density,
+Phoenix,4,0,35,pm25|upper_secondary_ptr|research_he_density|public_transport_density,
+Phoenix,5,1,21,pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Phoenix,6,1,7,pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel|fixed_broadband_mbps,Istanbul
+Phoenix,7,18,1,pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel|fixed_broadband_mbps|public_pool_density,Mexico City|Bogota|Sao Paulo|Santiago|London|Athens|Nairobi|Lagos|Cape Town|Dubai|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+New York,0,0,1,,
+New York,1,0,7,homicide_rate,
+New York,2,0,21,homicide_rate|pm25,
+New York,3,0,35,homicide_rate|pm25|upper_secondary_ptr,
+New York,4,0,35,homicide_rate|pm25|upper_secondary_ptr|research_he_density,
+New York,5,1,21,homicide_rate|pm25|upper_secondary_ptr|research_he_density|public_transport_density,Istanbul
+New York,6,10,1,homicide_rate|pm25|upper_secondary_ptr|research_he_density|public_transport_density|public_pool_density,Sao Paulo|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore
+New York,7,23,1,homicide_rate|pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Toronto|Phoenix|Mexico City|Bogota|Sao Paulo|Santiago|London|Barcelona|Warsaw|Athens|Nairobi|Lagos|Cape Town|Dubai|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta|Melbourne
+Mexico City,0,0,1,,
+Mexico City,1,0,7,homicide_rate,
+Mexico City,2,0,21,homicide_rate|pm25,
+Mexico City,3,0,35,homicide_rate|pm25|upper_secondary_ptr,
+Mexico City,4,0,35,homicide_rate|pm25|upper_secondary_ptr|research_he_density,
+Mexico City,5,1,6,homicide_rate|pm25|upper_secondary_ptr|research_he_density|public_transport_density,Istanbul
+Mexico City,6,9,1,homicide_rate|pm25|upper_secondary_ptr|research_he_density|public_transport_density|public_pool_density,Sao Paulo|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Shanghai|Singapore
+Mexico City,7,14,1,homicide_rate|pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Sao Paulo|Santiago|London|Athens|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+Bogota,0,0,1,,
+Bogota,1,0,6,homicide_rate,
+Bogota,2,0,15,homicide_rate|upper_secondary_ptr,
+Bogota,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Bogota,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Bogota,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Bogota,6,15,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Mexico City|Sao Paulo|Santiago|London|Athens|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+Sao Paulo,0,0,1,,
+Sao Paulo,1,0,6,homicide_rate,
+Sao Paulo,2,0,15,homicide_rate|upper_secondary_ptr,
+Sao Paulo,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Sao Paulo,4,1,5,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,Istanbul
+Sao Paulo,5,3,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|public_pool_density,Lagos|Istanbul|Mumbai
+Sao Paulo,6,7,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Lagos|Istanbul|Mumbai|Delhi|Dhaka|Shanghai|Singapore
+Santiago,0,0,1,,
+Santiago,1,0,6,homicide_rate,
+Santiago,2,0,15,homicide_rate|upper_secondary_ptr,
+Santiago,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Santiago,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Santiago,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Santiago,6,13,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Sao Paulo|London|Athens|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+Copenhagen,0,0,1,,
+Copenhagen,1,0,6,homicide_rate,
+Copenhagen,2,0,15,homicide_rate|upper_secondary_ptr,
+Copenhagen,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Copenhagen,4,1,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,Istanbul
+Copenhagen,5,2,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Lagos|Istanbul
+Copenhagen,6,24,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Toronto|Phoenix|New York|Mexico City|Bogota|Sao Paulo|Santiago|London|Barcelona|Warsaw|Athens|Nairobi|Lagos|Cape Town|Dubai|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta|Melbourne
+London,0,0,1,,
+London,1,0,6,homicide_rate,
+London,2,0,15,homicide_rate|upper_secondary_ptr,
+London,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+London,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+London,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+London,6,11,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Sao Paulo|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+Barcelona,0,0,1,,
+Barcelona,1,0,6,homicide_rate,
+Barcelona,2,0,15,homicide_rate|upper_secondary_ptr,
+Barcelona,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Barcelona,4,1,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,Istanbul
+Barcelona,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Barcelona,6,22,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Toronto|Phoenix|Mexico City|Bogota|Sao Paulo|Santiago|London|Warsaw|Athens|Nairobi|Lagos|Cape Town|Dubai|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta|Melbourne
+Warsaw,0,0,1,,
+Warsaw,1,0,6,homicide_rate,
+Warsaw,2,0,15,homicide_rate|upper_secondary_ptr,
+Warsaw,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Warsaw,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Warsaw,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Warsaw,6,20,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Phoenix|Mexico City|Bogota|Sao Paulo|Santiago|London|Athens|Nairobi|Lagos|Cape Town|Dubai|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta|Melbourne
+Athens,0,0,1,,
+Athens,1,0,6,homicide_rate,
+Athens,2,0,15,homicide_rate|upper_secondary_ptr,
+Athens,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Athens,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Athens,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Athens,6,12,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Sao Paulo|London|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+Nairobi,0,0,1,,
+Nairobi,1,0,6,homicide_rate,
+Nairobi,2,0,15,homicide_rate|upper_secondary_ptr,
+Nairobi,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Nairobi,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Nairobi,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Nairobi,6,8,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Sao Paulo|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Shanghai|Singapore
+Lagos,0,0,1,,
+Lagos,1,0,6,homicide_rate,
+Lagos,2,0,15,homicide_rate|upper_secondary_ptr,
+Lagos,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Lagos,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Lagos,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Lagos,6,1,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Istanbul
+Cape Town,0,0,1,,
+Cape Town,1,0,6,homicide_rate,
+Cape Town,2,0,15,homicide_rate|upper_secondary_ptr,
+Cape Town,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Cape Town,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Cape Town,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Cape Town,6,16,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Mexico City|Bogota|Sao Paulo|Santiago|London|Athens|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+Dubai,0,0,1,,
+Dubai,1,0,6,homicide_rate,
+Dubai,2,0,15,homicide_rate|upper_secondary_ptr,
+Dubai,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Dubai,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Dubai,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Dubai,6,17,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Mexico City|Bogota|Sao Paulo|Santiago|London|Athens|Nairobi|Lagos|Cape Town|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+Istanbul,0,0,1,,
+Istanbul,1,0,4,homicide_rate,
+Istanbul,2,0,6,homicide_rate|public_transport_density,
+Istanbul,3,0,4,homicide_rate|public_transport_density|travel,
+Istanbul,4,0,1,homicide_rate|public_transport_density|travel|public_pool_density,
+Mumbai,0,0,1,,
+Mumbai,1,0,6,homicide_rate,
+Mumbai,2,0,15,homicide_rate|upper_secondary_ptr,
+Mumbai,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Mumbai,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Mumbai,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Mumbai,6,2,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Lagos|Istanbul
+Delhi,0,0,1,,
+Delhi,1,0,6,homicide_rate,
+Delhi,2,0,15,homicide_rate|upper_secondary_ptr,
+Delhi,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Delhi,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Delhi,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Delhi,6,6,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Lagos|Istanbul|Mumbai|Dhaka|Shanghai|Singapore
+Dhaka,0,0,1,,
+Dhaka,1,0,6,homicide_rate,
+Dhaka,2,0,15,homicide_rate|upper_secondary_ptr,
+Dhaka,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Dhaka,4,0,15,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,
+Dhaka,5,1,6,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel,Istanbul
+Dhaka,6,5,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Lagos|Istanbul|Mumbai|Shanghai|Singapore
+Tokyo,0,0,1,,
+Tokyo,1,0,5,homicide_rate,
+Tokyo,2,0,10,homicide_rate|research_he_density,
+Tokyo,3,0,10,homicide_rate|research_he_density|public_transport_density,
+Tokyo,4,1,5,homicide_rate|research_he_density|public_transport_density|travel,Istanbul
+Tokyo,5,9,1,homicide_rate|research_he_density|public_transport_density|travel|public_pool_density,Sao Paulo|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Shanghai|Singapore
+Shanghai,0,0,1,,
+Shanghai,1,0,5,homicide_rate,
+Shanghai,2,0,10,homicide_rate|research_he_density,
+Shanghai,3,0,10,homicide_rate|research_he_density|public_transport_density,
+Shanghai,4,1,5,homicide_rate|research_he_density|public_transport_density|travel,Istanbul
+Shanghai,5,4,1,homicide_rate|research_he_density|public_transport_density|travel|public_pool_density,Lagos|Istanbul|Mumbai|Singapore
+Singapore,0,0,1,,
+Singapore,1,0,4,research_he_density,
+Singapore,2,1,1,research_he_density|public_pool_density,Istanbul
+Singapore,3,1,4,research_he_density|public_transport_density|travel,Istanbul
+Singapore,4,2,1,research_he_density|public_transport_density|travel|public_pool_density,Lagos|Istanbul
+Jakarta,0,0,1,,
+Jakarta,1,0,6,homicide_rate,
+Jakarta,2,0,15,homicide_rate|research_he_density,
+Jakarta,3,0,20,homicide_rate|research_he_density|public_transport_density,
+Jakarta,4,0,15,homicide_rate|research_he_density|public_transport_density|travel,
+Jakarta,5,1,6,homicide_rate|research_he_density|public_transport_density|travel|fixed_broadband_mbps,Istanbul
+Jakarta,6,10,1,homicide_rate|research_he_density|public_transport_density|travel|fixed_broadband_mbps|public_pool_density,Sao Paulo|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore
+Melbourne,0,0,1,,
+Melbourne,1,0,6,homicide_rate,
+Melbourne,2,0,15,homicide_rate|upper_secondary_ptr,
+Melbourne,3,0,20,homicide_rate|upper_secondary_ptr|research_he_density,
+Melbourne,4,1,5,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,Istanbul
+Melbourne,5,14,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|public_pool_density,Sao Paulo|Santiago|London|Athens|Nairobi|Lagos|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta
+Melbourne,6,19,1,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density|travel|public_pool_density,Phoenix|Mexico City|Bogota|Sao Paulo|Santiago|London|Athens|Nairobi|Lagos|Cape Town|Dubai|Istanbul|Mumbai|Delhi|Dhaka|Tokyo|Shanghai|Singapore|Jakarta

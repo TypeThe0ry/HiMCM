@@ -1,0 +1,2038 @@
+ 
+ 
+For office use only 
+T1 ________________ 
+T2 ________________ 
+T3 ________________ 
+T4 ________________ 
+ 
+Team Control Number 
+8700 
+ 
+Problem Chosen 
+A 
+ 
+For office use only 
+F1 ________________ 
+F2 ________________ 
+F3 ________________ 
+F4 ________________ 
+2018 
+HiMCM 
+Summary Sheet 
+From Rollercoaster’s Indicators to “RollerOutstander” 
+Roller Coaster rankings are typically linked to solely subjective factors, such as excite-
+ment and adventure. Thus, building an objective ranking for the roller coaster requires in-
+depth evaluation of determinants of a roller coaster’s quality. To solve this problem, we build 
+a comprehensive evaluation model and apply entropy weight method to calculate the rank-
+ing of the roller coasters. We also develop concept and design of an app targeting potential 
+roller coaster players, “RollerOutstander”. We propose its user -friendly features including 
+interactive filtering and recommendation system, and select algorithms for these features. 
+In problem one, we first analyze and preprocess the data, which includes dimensionless 
+treatment, handling the outliers, and others. We also use a neural network to fill the missing 
+values of the data. The testified error of the filled data value is 3%. Next, we analyze the data 
+from the given data table and the Internet. We screen the indicators based on the principle of 
+objectiveness and quantifiability and use grey correlation analysis to screen the factors with 
+high correlation. Though the screening of indicators might limit the range of indicators we 
+use, it achieves our goal of objectiveness. Last but not least, we use entropy weight method 
+to assign objective weights to the indicators and obtain the ultimate comprehensive model 
+for roller coasters. 
+In problem 2, we calculate the top 10 ranking of roller coasters (Fig8.) using our compre-
+hensive evaluation model in problem 1. We test the stability of our model using sensitivity 
+analysis. Compared with the online rankings, our own roller coaster ranking system would 
+give a more comprehensive review of the factors, including the basic technology of the roller 
+coasters and excluding impact of the tourism industry and economy.  
+In problem 3, we design an app for the potential riders. At the model level, we establish 
+a more comprehensive indicator evaluation system and use fuzzy evaluation method to 
+quantify the descriptive indicators. At the algorithm level, we use the collaborative filtering 
+algorithm, and tag-based recommendation algorithm to generate accurate and customized 
+recommendation for our users. On the user experience level, we design the GUI of the app, 
+which helps the users take initiative action of filtering, or recommend roller coasters to the 
+users based on the system. We also designed other user-friendly features including ticket 
+booking information querying system. 
+Keywords: Neural network, Entropy weight method, Fuzzy evaluation, Grey relational 
+analysis, Collaborative filtering, Tag-based recommendation 
+Team#8700   
+RollerOutstander, your personal recommender of the roller coasters 
+ 
+Nov.19th, 2018 
+Also, the most objective ranking is available at the bottom. 
+ 
+Heartbeat, screaming, trembling, free of gravity… Roller 
+coasters are all about the excitement. Like many items, people 
+have different taste of it. It used to be a mystery to find the 
+excellent roller coaster that meets your expectation, now Rol-
+lerOutstander makes it all within a download of app. 
+ 
+The most objective ranking of roller coasters 
+has been developed as well. We look through all 
+the factors that increase the experience of excite-
+ment and provides an exceptional reference to all 
+the people who love the stimulation. Check the list 
+at the bottom if you love roller coasters to find if 
+you have taken any one of them:  
+ 
+Covering more than 300 most advanced roller 
+coasters and a great many common ones all over 
+the world, RollerOutstander automatically ana-
+lyzes your personal profile you develop by your-
+self and recommend the best roller coasters that 
+suite you well. Whichever type you may enjoy, 
+whether you are into speed, height or simply the 
+scenery, there will be a type for you on Rol-
+lerOutstander. The app will know your interest 
+better than anyone else while you may not even 
+notice. A customized recommendation list is cre-
+ated as soon as you register. 
+  
+The app is much more than that. We also build a community for those who are thrilled 
+by roller coasters. You will be able to comment on the roller coasters you take, share experi-
+ences and look for fun facts. The pricing and special account are also available. Basically, all 
+the things you may want to know are on the app.  
+ 
+It’s definitely the app you would need to look for thrilling experience. 
+  
+
+Team#8700   
+  
+
+Team#8700   
+Contents 
+1 Introduction .................................................................................................... 1 
+ Problem Background .............................................................................................. 1 
+ Literary Review ........................................................................................................ 1 
+ Our Work .................................................................................................................. 1 
+2 Defining the Variables ................................................................................. 1 
+3 General Assumption ..................................................................................... 2 
+4 Data analysis and preprocessing ................................................................ 2 
+ Data Analyzation ..................................................................................................... 2 
+ Dimensionless treatment ........................................................................................ 3 
+ Handling the outliers .............................................................................................. 3 
+ Data consistency ...................................................................................................... 3 
+ Fill missing data ....................................................................................................... 3 
+5 Roller coaster comprehensive evaluation model .................................... 7 
+ Preliminary selection of indicators ....................................................................... 7 
+ Indicator analysis and screening ........................................................................... 7 
+ Comprehensive Evaluation Model based on Entropy method ...................... 11 
+ Data dimensionality reduction based on PCA Analysis ................................. 12 
+6 Ranking Result Interpretation .................................................................. 12 
+ Calculation of rank according to our model ...................................................... 12 
+ Evaluation Model Inspection ............................................................................... 13 
+ Comparison to existing ranks of rollercoaster .................................................. 14 
+ Conclusion .............................................................................................................. 17 
+7 Designing a User-friendly APP ................................................................ 17 
+ Demand Analysis .................................................................................................. 17 
+ Key features ............................................................................................................ 18 
+8 User-Adaptive Filtering System ............................................................... 18 
+ Establishing New Evaluation Model .................................................................. 18 
+ Algorithm Procedure ............................................................................................ 20 
+Team#8700   
+9 Recommendation System (RS) ................................................................. 21 
+ User-friendly basis................................................................................................. 21 
+ Concept and Structure .......................................................................................... 21 
+ Item-based Collaborative Filtering Recommendation (ItemCF) .................... 23 
+ Tag-based Recommendation................................................................................ 25 
+10 User Experience ............................................................................................ 27 
+ User Interface Prototype ....................................................................................... 27 
+ Typical User Case .................................................................................................. 29 
+ Evaluation and Reflection .................................................................................... 29 
+11 Advantages and Disadvantages ................................................................ 30 
+References ................................................................................................................... 31 
+Appendix ..................................................................................................................... 31 
+ 
+ 
+ 
+Team#8700  Page 1 of 47 
+1 Introduction 
+ Problem Background 
+The roller coaster is an exciting recreational facility. The thrill of achieving such a high 
+speed fascinates a lot of people. The wonderful experience includes not only the adventure 
+of an unexpected journey but also the acceleration and gravitational force intertwined.  
+With the development of technology and discovery of new materials, the techniques of 
+constructing the roller coasters’ loopbacks, slopes and reversions have been more advanced. 
+The types of roller coasters have been more abundant, which bring the rollers even more 
+attractive and adventurous. 
+ Literary Review 
+The previous roller coaster rankings are basically in two types: entirely quantitative 
+ones and the ones based on the subjective judgments.  
+An example of the quantitative one is extracted from the Roller Coaster Database, which 
+was created in 1996 by Duane Marden. It outlines the rankings based on different factors: 
+speed, height, length, drop, inversions and angle. (“Record Holder”)  
+The subjective one such as the one released by ranker describes the top roller coasters 
+as “the tallest roller coasters, the fastest roller coasters, and the most thrilling roller coasters”. 
+(The Best Roller Coasters in the World)  
+ Our Work 
+Our aim is to screen out reasonable indicator and establish a comprehensive evaluation 
+model, which can practically judge the roller coasters in an objective way. In particular, we 
+will include an improved evaluation model to support the design of an app with an 
+algorithm, which can satisfy the demand of customers, and provide a subjective ranking of 
+roller coasters. 
+Our work includes the following:  
+ Analyze and process various types of data. 
+ Establish a complete indicator evaluation system. 
+ Establish an objective comprehensive evaluation model and test the stability of the 
+model. 
+ Analyze the differences and causes between our rankings and online website rankings. 
+ Improve our model and design app algorithm. 
+ Design the app interface and give a news release. 
+2 Defining the Variables 
+Symbol Description 
+u  User ID 
+,i j  Item ID 
+Team#8700  Page 2 of 47 
+U  Set of all users 
+I  Set of all items 
+ R u  Set of items recommended to user u  
+ T u  Set of items user u  interacted with in the test 
+ijw  Similarity index of item i  and j  
+This is just a few of the variable descriptions, and others will be explained in the article. 
+3 General Assumption 
+To simplify the problem, we make the following basic assumptions, each of which is 
+properly justified. 
+ The data we collect is reliable and valuable because it comes from the authoritative web-
+site related to roller coasters.  
+ We don’t consider the defects in the roller coaster design process, so we assume that the 
+design parameters are reasonable.  
+ We do not consider the psychological impact of height or rollover on passengers, so we 
+assume that the various actions of the roller coaster are within the passenger’s tolerance.  
+4 Data analysis and preprocessing 
+ Data Analyzation 
+In this section, we will analyze the data in the appendix, which will help us know the 
+methods of data preprocessing.  
+ To begin with, row one and row three in the data sheet provided (COMAP_RollerCoast-
+erData_2018.xlsx) mainly describes the name and park the roller coaster is in. It is also 
+recognized that there exists an overlap in naming, and more than one roller coaster in 
+the same park.  
+ Row 3 to 6 describes the Geographical location of the roller coaster, which are descrip-
+tive indicators. In question 3 we will utilize these indicators, yet we will not use these 
+indicators in the objective ranking system in question one. 
+ The Construction and Type will be explained in 5.2.1&5.2.2 
+ The row “Status” is the type of operating of the roller coaster, which will not affect the 
+ranking. The data will not be included in our evaluation system.  
+ The row “Year/Date Opened” provides the data of age, we regard the roller coaster that 
+is constructed near the present to have more advanced technology. It is thus a maximal 
+type of data. Also, by assuming that the design of roller coasters is safe, data in the row 
+“Height”, “Speed”, and “Length” can be utilized directly, and the total score is higher 
+if the data is larger. They are great type indices as well.  
+ Row “Inversion (YES or NO)” and “Number of Inversions” can be combined together. 
+The influence can be reflected by only the data in “Number of Inversions”. The higher 
+the value, the higher the score the rollercoaster will get through our model. This part is 
+detailed explained in 5.2.3. 
+Team#8700  Page 3 of 47 
+ The row “Drop (feet)”, “Duration(min:sec)”, “G-Force”, and “Vertical Angle (degrees)” 
+include a large amount of missing value, which are very essential factors that influence 
+the ranking. Thus, we fill the missing value in 4.5 “filling missing data” 
+ Dimensionless treatment 
+In general, each evaluation index is not commensurable because of the difference be-
+tween the unit of measure and the order of magnitude. In order to eliminate such influence 
+and correctly reflect the actual situation, we need to make indexes (e.g. height, speed, length, 
+etc.)  being dimensionless, which is the standardized treatment of index data. 
+We adopt the min-max normalization method to process the data of the indicators 
+through the dimensionless treatment: 
+min
+max min
+i i 
+i
+i i 
+F F F F F 
+    
+iF is the data which is dimensionless data of each indicator. maxiF and miniF are the max-
+imum and minimum value of the indicators respectively. 
+ Handling the outliers 
+To avoid the influence of outliers in the original dataset, we use Z-score to identify them. 
+The calculation of Z-score is by using the following formula (OSWEGO) 
+Z = Value −  Mean of Values
+Standard Deviation of Values  
+It determines how many standard deviations the value is from the mean. If the Z-score 
+of the data falls outside 3 and -3, it will be considered as an outlier. An example of an outlier 
+is the number of inversions of a roller coaster called Smiler which is 14. The Z-score is 4.52. 
+To handle this kind of outliers, we delete them and then process them in missing value 
+imputation. 
+ Data consistency 
+In a complex comprehensive evaluation problem, it may contain many types of indica-
+tors such as maximal index, minimal index. In order to facilitate the Advantages and Dis-
+advantages of its index, we changed minimal indexes into maximal indexes. 
+For a minimal index jx , the smaller value is better. To turn it into a minimal index, we 
+only need to convert the index to the reciprocal transformation or translation j j jx M x 
+where  
+1
+maxj ij i n 
+M x 
+
+ . 
+ Fill missing data 
+Because of missing information or other reasons, the data obtained from the website 
+database includes a few missing data in the height 、speed、length three indicators;  the 
+data of the four indicators of the drop, duration, G-force, and vertical angle show a large 
+scale of missing data. 
+As the degree of data missing is different, we use different processing methods.  
+Team#8700  Page 4 of 47 
+Method 1: For a small amount of missing data, we use the average for substitution. 
+Method 2: To cope with large-scale missing data, the mean substitution method does not 
+apply. A relationship between existing data and missing ones should be found to calculate 
+and substitute the missing data. After comparing several different methods, we finally de-
+cide to use BP neural networks to fill the missing data.  
+4.5.1 BP Neural Network 
+The classic BP Neural Network usually consists of three layers: input layer, hidden 
+layer, and output layer. The number of neurons in the input layer is usually relative to the 
+eigenvalues; the number of outputs is consistent with the number of categories; the number 
+of layers in the hidden layer and the number of its neurons can be customized. 
+We use a trained BP Neural Network to deal with regression. Each sample obtains out-
+puts, and the network obtains input neuron and one output neuron respectively. 
+ 
+Fig1. BP Neural Network 
+4.5.2 Feed-Forward process  
+The relation between the number of neurons in each hidden layer and input layer can 
+be described in the function as follows 
+j ij i
+i
+I W O
+ 
+  1mod 1 lj l IO sig I e   
+ijW  represents the connection weight between neuron i and neuron j  , jO  repre-
+sents the output of neuron j . modsig  is a special function which maps the arbitrary real 
+number into the (0,1)interval. 
+ 
+Fig2. Function graph 
+The modsig  function is called an activation function. In the practical application, we 
+usually place a biased neuron as an adjustable input correction, or an offset parameter for 
+each neuron in the hidden layer. We place n eigenvalues in the input neuron, the output 
+layer calculates the regressed value according to the processed value by the hidden layer.  
+
+Team#8700  Page 5 of 47 
+The steps above are called Feed-Forward process, where the inputs and outputs are 
+nearly the same with the ones in multivariable functions. 
+4.5.3 Training process 
+The current problem is how to train the neural network. 
+BP neural network training is to compare the prediction value in the feedforward as 
+well as the reference value. It also can adjust the connection weight ijW . The process is called 
+Back Propagation; the data stream is the inverse of the feedforward.  
+Step1: At first, we randomly initialize the connection weight ijW , and obtain the output of 
+each neuron from one feedforward of one certain training sample. 
+Step2:To begin with, calculate the error of output layer: 
+      mod 1j j j j j j j jE sig O T O O O T O     
+ 
+jE is the error of neuron j , jO  represents the output of neuron j , jT refers to the out-
+put of the current training sample,  modsig x   is the first derivative of the modsig  func-
+tion. 
+Step3: Calculate the error in hidden layers: 
+     mod 1j j k jk j j k jk
+l
+E sig O E W O O E W    
+ 
+If there is no reference value in the hidden layer, we use the weight in the next layer 
+ j j T O  as the weight and substitution. 
+After calculating the error we adjust ijW  and j  to: 
+ij ij j iW W E O  
+Where   is a parameter called learning rate, which usually falls in interval (0, 0.1). 
+To accelerate the learning, we use the correction matrix, which records the value in the pre-
+vious propagation process. The function is thus adjusted as:  
+ij ij j i ijW W E O C    
+ is a parameter called correction rate. The correction matrix is regenerated: 
+ij j iC E O  
+4.5.4 Convergence process 
+Each sample will renew the parameters in the whole network. We need additional con-
+ditions to stop the test. The simplest way is to set the maximum number of irritations. How-
+ever, it can’t ensure the accuracy of the results. One of the better methods is to use loss 
+function as the condition to stop training.  
+Loss function can choose the variance of each node: 
+ 
+2
+j j 
+j
+L T O
+ 
+Team#8700  Page 6 of 47 
+We usually extract a part of the results for testing to avoid meaningless iteration. When 
+the prediction error is higher than the threshold, the testing is stopped.  
+4.5.5 Error analysis about filling Data  
+In this problem, we set the inputs as Height, Speed, Length, and Number of inversions 
+which creates the.   
+We use the drop indicator as an example to demonstrate the process of verification. 
+Part of the data is extracted from the sample as the training set, and the remaining part is 
+used as testing set. 
+Step 1: Error analysis of the set as the number of iteration increases. 
+ 
+Fig3. Drop indicator neural network error analysis 
+It can be inferred from the figure that the error between the calculated value and prac-
+tical value will be reduced greatly as the number of iteration increases. When the iteration 
+reaches more than 100 thousand, the error is reduced to 3.48%, which falls within the ac-
+ceptable range, and we will consider this trained neural network to be accurate, which is 
+close to the practical results. 
+Step 2: Our goal is to obtain a viable neural network through effective iterations of the train-
+ing set. To achieve the goal, we use the test suite to testify if the difference of calculated 
+value and practical value is among the acceptable range. 
+ 
+Fig4. Neural network error comparison 
+
+Team#8700  Page 7 of 47 
+The comparison of the calculated value and test suite is demonstrated in the figure. The 
+red broken line represents the test set result, and the blue broken line represents the training 
+result. Obviously, the data calculated by the neural network is highly fitted to the actual 
+data, which further indicates that our neural network is mature, so we can use this neural 
+network to get large areas of missing data. 
+5 Roller coaster comprehensive evaluation model  
+ Preliminary selection of indicators 
+The rational indicator system is an important step in the establishment of our roller 
+coaster comprehensive evaluation model. Therefore, we need to consider whether the given 
+indicators are available, whether or not there are better and more reference indicators that 
+need to be included in the indicator system. We will do a detailed analysis of the selection 
+of indicators and the establishment of the indicator system below. 
+We use the indicator given in the problem and the ones we search on our own as the 
+preliminarily selected indicators.  
+ Table1.All indicators 
+City/Region Geographic Region Construction Type 
+Status Year/Date Opened Height Speed 
+Length Inversions (YES or NO) Number of Inversions Drop 
+Duration G Force Vertical Angle (degrees) Park 
+Sales volume Price Favorable comment Ride limit 
+ Indicator analysis and screening 
+5.2.1 Analysis of the ‘Construction’ indicator 
+We analyze the three indicators of height, length and speed of wood and steel respec-
+tively, trying to find the correlation between construction and roller coaster parameters.  
+ 
+Fig5. Data distribution analysis 
+
+Team#8700  Page 8 of 47 
+After plotting the data in three dimensions, we find that the steel roller coasters have 
+comparative advantage against the wood one, which means the design parameters can af-
+fect user experience. Furthermore, we can infer from the graph that construction factor has 
+a significant impact on the parameters of roller coasters.   
+Considering the strong correlation between “construction” and “design parameters” of 
+rollercoasters, we treat wood and steel rollercoasters separately in following evaluation. 
+5.2.2 Analysis of the ‘Type’ indicator 
+There are many types of roller coasters bringing different sensations, such as “Sit 
+Down”, “Inverted”, “Stand Up”, “Suspended”, and “Flying”  
+For example, Wing Coaster’s design is different from many traditional steel roller coast-
+ers because its train is not located above or below the track, but on the side. This design can 
+make the players feel as they are flying. Regardless the construction of rollercoasters, In-
+verted and Suspended design each gives passengers a sense of overturning.   
+Therefore, we conclude that the “type” of rollercoasters affects its ranking in two ways. 
+For one, customers have inclination or preference toward certain types. For the other, the 
+type of rollercoasters affects the stimulation of the riding experience. To take this into ac-
+count in our evaluation model, we construct a weight vector to express the importance of 
+type in the ranking of rollercoasters, noted as:  
+ = 1.00 1.15 1.10 1.10 1.20irT  
+Weight of the ith roller coaster‘s type recorded in the weight vector. The weights are 
+respectively correspondent to ”Sit Down”, ”Inverted”, ”Stand Up”, ”Suspended” and ”Fly-
+ing”.  
+In the calculation of final result, we will consider the effect of “type” factor of roller-
+coasters by applying weighted summation.  
+5.2.3 Inversions (YES or NO)& Number of Inversions 
+One of these two indicators is descriptive, and the other is numerical. They describe the 
+same situation. “Inversions (YES or NO)”, “Number of Inversion”, are representative of 
+whether there are inversion 0- 1 variables, “Number of Inversion” is the number of inver-
+sions of the track of the roller coaster, so the data in these two columns can be aggregated 
+into one numerical column.  
+5.2.4 Screening of indicators from feasibility 
+The feasibility requirements for indicators mainly include two aspects: 
+ Indicator data is easy to collect and quantify.  
+ In line with the current statistical methods, adopt sophisticated and general acknowl-
+edged indicators. 
+Based on the above feasibility requirements, we consider eliminating the following indexes:  
+Table2. Rejected Index 
+Number Rejected Index Reason for Rejection 
+1 Sales volume , Price Difficult to obtain credible data 
+2 Ride limit , Favorable comment Indicator data is difficult to quantify 
+Team#8700  Page 9 of 47 
+5.2.5 Indicator screening based on Grey Correlation Analysis 
+In this essay, we choose grey correlation to screen the indicators, which can avoid du-
+plication , to ensure the importance of our selected indicators to decision variables. 
+To begin with, the comparison object (evaluation object) and the reference number col-
+umn (evaluation criteria) are determined. Then we construct the standard sequence and the 
+comparison sequence for analysis.  
+Table 3 Reference number column & Comparison object 
+Category Indicator 
+Mathematical 
+representation 
+Reference sequence i  
+       
+ 
+1 2 
+0 0 0 0 , , ,
+i k 
+x x x x
+  
+Comparison sequence j  
+       
+ 
+1 2 
+0 1 1 1 , , ,
+j k 
+x x x x
+  
+The absolute difference between reference number column and comparison object is: 
+ 0( ) ( ) ( ) , 1, 2, ;1i i k x k x k k n i m     
+  
+ ( ) (1), (2), , ( )i i i ik n     
+  is Differential sequence 
+According to the definition above, the correlation between comparison object ix and 
+the reference number 0x  at point k  is: 
+0 0 
+0
+0 0 
+min min ( ) ( ) max max ( ) ( )
+( ( ), ( ))
+( ) ( ) max max ( ) ( )
+i i i k i k 
+i
+i i i k 
+x k x k ρ x k x k
+ξ x k x k
+x k x k ρ x k x k
+  
+
+  
+ 
+The respective correlation R is: 
+ 0 0 
+1, ( ( ), ( ))k i R x x ξ x k x kn
+ 
+According to the model above to solve the problem: 
+Step 1: Solve the initial value, let 
+        1 , 2 , 0,1, ,1
+i
+i i i i
+i
+xx x x x n i nx
+     
+ ， ，  
+Step 2: Calculate the grey correlation coefficient:  
+   
+min max
+max
+ij
+ij
+t t
+ 
+       
+which min 0 min min ( ) ( ) ii k 
+x k x k    is the minimum value of the difference sequence. 
+max 0 max max ( ) ( ) ii k 
+x k x k    is the maximum value of the difference sequence. 
+Team#8700  Page 10 of 47 
+  0 ( ) ( )ij i t x k x k    is the value of difference. 
+ is the resolution coefficient which falls within [0,1]. In this essay, it is 0.5. When  ij t  
+increases,  ij t  decreases, and vice versa. The value of  ij t  can thus demonstrates the 
+correlation between two sets of data. 
+Step 3: Criteria for correlation (Levels of Correlation Degree (in Appendix table4)) 
+ 
+Fig6. Index correlation analysis 
+Through grey correlation, we reject the following indicator which has high correlations: 
+speed, length, and drop.  
+5.2.6 Comprehensive Evaluation Index System 
+Our aim is to find some indicators which are measurable and suitable. We use them to 
+judge good or bad of roller coaster.  
+   
+Fig7. Comprehensive evaluation system 
+This comprehensive evaluation system is obtained after screening and is important for 
+our subsequent solution. 
+
+Team#8700  Page 11 of 47 
+ Comprehensive Evaluation Model based on Entropy method 
+We consider several weighting methods which include Analytic Hierarchy Process 
+(AHP), yet the method refers to the experts ‘opinion and reduces the objectivity of the eval-
+uation system. So we ultimately choose Entropy Method.  
+The principle of entropy weight method is to quantize and synthesize the information 
+of each unit to be evaluated. Entropy weight method can simplify the evaluation process 
+Step 1: Construct the primary data matrix 
+Firstly, by the above related evaluation indexes, the original data matrix can be ob-
+tained through the data of each index of roller coaster 
+11 12 1
+21 22 2
+1 2 
+j
+j
+i i ij i j 
+x x x
+x x x
+X
+x x x
+
+
+
+
+
+  
+The matrix is normalized, i.e. the ratio of the column vectors in the matrix to the sum 
+of all elements in the matrix is taken as the normalization result. The formula is as follows: 
+ 
+1
+, 1, 2, ,
+ij
+ij n
+ij
+i
+xz j m
+X
+
+
+
+ 
+where， ijz is the element after normalization 
+Step 2: Determine the entropy weight of the evaluation index  
+   
+1
+ln , 1,2, ,
+n
+j ij ij
+i
+H x k z z j m
+
+ 
+ 
+k is poundage factor which 1 lnk n   ; ijz  is the value of standardized indicator j in 
+the i evaluation unit. 
+Step 3: Convert the entropy value of evaluation index to the weight value. 
+ 
+ 
+ 
+1
+1
+, 1, 2, ,
+j
+j m
+j
+j
+H x 
+d j m
+m H x
+
+
+
+
+ 
+where 0 1 jd ，
+1
+1
+m
+j
+j
+d
+
+ .The weight value is then obtained. 
+Step 4: Add the weight value T and calculate the total score 
+6
+1
+i ij ij i
+j
+Q d z T
+
+
+ 
+ 
+ 
+ 
+Team#8700  Page 12 of 47 
+ Data dimensionality reduction based on PCA Analysis 
+Principal Component Analysis (PCA) attempts to optimize the multivariate cross-sec-
+tion data table under the principle of ensuring the least loss of data information. It can re-
+duce the dimensionality of high-dimensional variable space, and it is more objective and 
+scientific. Therefore, this paper chooses the method of principal component analysis for di-
+mensionality reduction.   
+Determining p PCs and perform statistical analysis 
+PCA converts numerous indices into several weakly correlated comprehensive indices. 
+PCs and corresponding accumulative contribution rate are given below.  
+Table 4 PCs and Corresponding Contribution Rates 
+PC Contribution Rate (%) Accumulative (%) 
+1 35.617589 35.617589 
+2 31.459494 67.077083 
+3 12.448942 79.526025 
+4 11.050469 90.576494 
+5 4.946335 95.522829 
+6 4.477171 100 
+Under accumulative variance of 90.576% we obtain 4 PCs. These 4 PCs provide 90.576% 
+information of the indices, which satisfies the principle of PCA. Hence we’ve realized the 
+dimensionality reduction of indices and simplified further calculation followed. 
+6 Ranking Result Interpretation  
+ Calculation of rank according to our model 
+We take the roller coasters with 10 highest score which we get from the comprehensive 
+model in section 5 as our top-ranking list. The ranking list is in figure 8 
+ 
+Fig8.Our rank   
+In our ranking, Kingda Ka is the NO.1 roller coaster, at the same time it is also the 
+highest roller coaster.  
+So the main features of our own ranking will be analyzed in 6.3. 
+
+Team#8700  Page 13 of 47 
+  Evaluation Model Inspection 
+We need to determine whether the sensitivity test of our comprehensive evaluation 
+model is qualified by studying whether the change of evaluation index has a significant 
+impact on the ranking of roller coasters. We examine the sensitivity of the model from the 
+following two methods. 
+Sensitivity analysis of index values can be carried out between two evaluation objects, 
+or all index values can change at the same time according to a certain percentage; it can be 
+either a single index change analysis or multiple index change analysis. In this paper, the 
+overall synchronous change of the index value is taken as an example to analyze the sensi-
+tivity of the single index value and the combined index value. 
+Assume there are i  number of roller coasters, j  number of evaluation indicators, 
+were 1 2 3, , i i i ijz z z z
+  respectively. In application 2, the weight of each index is obtained by 
+solving the result of each index are 1 2 3, , jd d d d
+  respectively ，obviously 1 2 3, , + + 1 jd d d d 
+ ，
+Evluation value iQ is： 
+1 1 2 2( ) i i i j ij irQ d z d z d z T   
+  
+For evaluation value m ，take into account the increase or decrease of all evaluation 
+objects according to each percentage, assuming changes in range jr and the new evaluation 
+value would be: 
+1 1 2 2( + (1 ) )i i i j im i j ij irQ d z d z d z r d z T     
+  
+To conduct sensitivity analysis for change of single indicator ijz . First, the original eval-
+uation results are sorted and the ordinal number of each evaluation object is marked. Then 
+set up r ’s initial value 0r and the final one , also set up step length r ，and loop , always 
+calculate the evaluation value after the varying of ijz , and then sort them again, and compare 
+the consistency between the new sort and the original one, stop the cycle once it is inconsistent, 
+the value jr at this time is the threshold of the critical point. Since the variation of jr can 
+either be increasing or decreasing, so we should calculate separately.  
+ 
+Fig9. Flowchart of the index sensitivity analysis 
+
+Team#8700  Page 14 of 47 
+The flow chart of sensitivity analysis of index values is shown in the figure. To analyze 
+the sensitivity of each indicator ijz , we first sort the original results of evaluation, and num-
+ber all the evaluation object. Then, we set the initial value of r as 0r  and the terminal value, 
+then set the step jr and circulate the ranking. Each time calculate the value of ijz and reor-
+der the ranking.  
+6.2.1 Sensitivity Model Solving and result analysis 
+The maximum standardized data in this essay is 100, when doing the indicator sensi-
+tivity analysis. As there are increases and decreases in the value of the indicators, there are 
+two sets of parameter-setting methods: when the data increases, the initial value is 0.01, the 
+step is also 0.01, and the terminal value is 100; when the data is decreasing, the initial value 
+is -0.01, the step is also -0.01, and the terminal value is -100. 
+Table5. Single indicator sensitivity result  
+Indicator variable Value Fluctuation hreshold（%） Range（%） 
+1 -4 2 6 
+2 -14 10 24 
+3 -8 11 19 
+From the above table, we can see that the sensitivity range of the roller coaster height 
+is -4%-2%, which have a higher sensitivity index, while the threshold of the built year and 
+length is -14%-10% and -8%-11 respectively, which have a lower sensitivity. 
+ 
+Fig10. Stability analysis 
+In order to observe the impact of adjusting the impact of the roller coaster height indi-
+cator on the overall score, the original score and the adjusted score map in the sensitivity 
+test were compared. The blue line is the original score and the red curve is the processed 
+score curve. From the figure, we can clearly observe that although the curve has improved 
+overall, the trend has not changed significantly. This shows that our ranking system is stable 
+and will not overly affect the overall ranking because of an indicator. 
+ Comparison to existing ranks of rollercoaster 
+We found two rankings online, the first one is a ranking created by college students at 
+University of Buffalo, the second is from ranker.com, where the public can set approve or 
+
+Team#8700  Page 15 of 47 
+disapprove of the ranking. We compare the results to the results we get from the objective 
+model. Table 6 shows the original rankings and the rankings on our own list. 
+Table6 Online Ranking 1& Online Ranking 2 
+                          
+Name 
+Online  
+Ranking 
+Our 
+Ranking 
+Name Online 
+Ranking 
+Our  
+Ranking 
+Millennium Force     1 7 Millennium Force 1 7 
+Top Thrill Dragster 2 2 Steel Vengence 2 34 
+Superman - Ride of Steel 3 77 Top Thrill Dragster 3 2 
+The Beast 4 133 Maverick 4 103 
+Oblivion 5 172 El Toro 5 244 
+Superman - the Escape 6 3 Fury 325 6 9 
+Griffon 7 43 Intimidator 305 7 11 
+Goliath 8 65 The Voyage 8 95 
+Son of Beast 9 unknown Kingda Ka 9 1 
+Superman - Ride of Steel 10 72 Apollo’s Chariot 10 76 
+There are 3 roller coasters on the list of first ranking that also exists on our own list. This 
+includes Millennium Force, Top Thrill Dragster, and Superman - the Escape. Top Thrill 
+Dragster both becomes the second place of the list. There are 4 roller coasters, Millennium 
+Force, Top Thriller Dragster, Fury 325 and Kingda Ka, exist on both the second online rank-
+ing and our own list. The well-recognized top roller coaster from the 3 rankings are Millen-
+nium Force and Top Thriller Dragster. Their information is on table 1 in the appendix. While 
+their overall score is high in our own ranking, they process impressive context which makes 
+them stand out. 
+Millennium Force was the world ’s first giga coaster, which exceeds 300 feet in height 
+and complete a full circuit. The ride is also the third roller coaster in North America. Kingda 
+Ka is the world’s tallest and second fastest roller coaster. 
+The tendency to put the roller coasters with the special figure (highest, longest, etc.) on the 
+top makes this occur.  
+The rankings share different characteristics as well. Based on the data table 2 in the 
+appendix, we create radar charts to visualize the characteristics of mean data in different 
+rankings. We will analyze their similarities and differences. 
+Table7.Mean Data for the rankings 
+Name Online Rank 1 Online Rank 2 Our Ranking 
+Year/Date Opened 1999.4 2005.85 2005.6 
+Height (feet) 235.7 238.2 346.6 
+Length (feet) 3808.1 4550.8 4465.3 
+Number of Inversions 0 0.75 0 
+G Force 3.994 3.855 3.983 
+Vertical Angle (degrees) 79.9 81.51 89.822 
+Score 0.433 0.446 0.604 
+Team#8700  Page 16 of 47 
+Table 7 shows the quantitative data of the top roller coasters from two online ranking 
+and the one we adapt from our own. To discover the different characteristics, we use radar 
+charts to visualize the difference. (Figure 11-1,2,3) 
+ 
+Fig11-1. online rank 1     Figure11-2. online rank 2      Figure11-3.our rank 
+The average age of the roller coasters in the first rankings is the largest among the three 
+rankings, which will result in a lower score in the evaluation system we created.  
+In fig11-3 , we can see that the main difference is in the number of inversions. The top 
+roller coasters in our own ranking contain no inversions, while some in the first and second 
+online ranking have inversions. The correlation of inversions and height is 0.7 as mentioned 
+in the (5.2.5). Even though in our own evaluation system, the data of inversions are great 
+type index, meaning that the larger the value, the higher the score, the construction of in-
+versions may influence the other key factors (height, for instance) and lower the overall 
+score for the roller coaster. The top roller coasters in our own evaluation system score the 
+highest in the other 5 criteria – age, vertical angle, height, G force, and length. Though the 
+number of inversions influence the key factors from the objective view, it increases the ex-
+citement of the ride of roller coaster greatly from the subjective view. This may result in the 
+variation of our objective ranking and the subjective online rankings. 
+Apart from the quantitative data above, we can also see that the top roller coasters on 
+the online rankings are mainly from United States (In Appendix table2). We didn’t consider 
+the effect of region on the ranking of the roller coaster as it doesn’t influence the actual func-
+tion directly. Still, the most roller coaster from the data set are from United States. Figure 12 
+shows the distribution of roller coasters directly based on the dataset given. The more roller 
+coasters that exists, the redder the value. The roller coasters from the data set, as noted, are 
+the ones which data exceeds the average level, and can be regarded as the top roller coasters 
+in the world.  
+ 
+Fig12. Roller coaster distribution in world region 
+Even though the U.S roller coasters have a higher possibility to dominate the top rank-
+ings, the roller coasters in the other countries which process advanced structure are ex-
+cluded for other reasons. To begin with, people would tend to give higher rankings for the 
+ones that are familiar to the majority people. As the roller coasters are distributed all over 
+
+Team#8700  Page 17 of 47 
+the U.S nations, tourists have easy access to the high-performance ones, making them fa-
+mous among a lot of people. Also, the people who do the rankings are Americans – the first 
+one is created by U.S university students and the second one is created by a website which 
+is based in Los Angeles. They might process natural bias towards the roller coasters in the 
+other countries, or lack of information as they are not familiar to them. Last but not least, 
+new roller coasters are produced each year, yet the old ones are not replaced respectively, 
+the rankings that are not so up-to-date would reserve the roller coasters that used to be the 
+most advanced ones. As we can see from the table 3 (In Appendix), most of the roller coast-
+ers are opened before the year 2000, near 20 years ago from now. Only one of them is con-
+structed in 2018.  
+                                 
+     Fig13-1                                        Fig 13-2 
+Visual impact is usually the biggest subjective determinant that influence the degree of 
+thrilling when people are evaluating the roller coaster. Complex structure and interweave 
+lines make a roller coaster more spectacular than others. Due to this reason, people are more 
+likely to treat the wooden structure as a more thrilling design (Figure 13-1,2). Hence wooden 
+structure occupied more spaces than using steel which brings people a misconception that 
+it will be more dangerous. 
+However, since our model only determine the thrilling index from objective perspec-
+tives, meaning that it won’t be influence d by a few criteria even though some of the roller 
+coaster are exceptional in these parts, especially factors like visual impact which containing 
+subjective factors. So, the ranking from our model are more accurate and objective than 
+online rankings and shows more scientific result. 
+ Conclusion 
+Our ranking is partially different and partially overlap with the rankings online. This 
+is mainly because of the different criteria we hold. In addition to the parameters that cause 
+the overlap, factors like economy, tourism industry, geographical location, advertising, and 
+so on would also drive the deviation in the result. These factors are not reflected in the eval-
+uation system which is based on the completely objective performance of the roller coasters. 
+7 Designing a User-friendly APP 
+ Demand Analysis 
+In order to design a user-friendly app, it’s crucial that we know what type of users we 
+are designing for. Next, we should figure out their core pain-points and needs regarding 
+rollercoasters. Therefore, this section will analyze of the portrait of our users as well as their 
+demand that contributes to the figuration of our approach. 
+
+Team#8700  Page 18 of 47 
+Portrait of Users 
+Because the App is relatively focused on one aspect, rollercoasters, users who initia-
+tively download the App are possibly interested in roller coasters in the first place or have 
+been recommended by their friends. Accordingly, we come to the assumption that majority 
+of our users is the young generation that actively seek for a rollercoaster experience. Because 
+the generality of target customers of rollercoasters, the age range and gender inclination are 
+not very restricted for our App, therefore we should also consider a wider context of the 
+users. Nevertheless, we can start from the typical user portrait of young customers shown 
+in the figures below, including both genders: 
+   
+Fig14.Typical User Portrait  
+Main Demand 
+To begin with, users may want to find the appropriate (accessible) roller coasters which 
+they would most likely try.   
+Besides, they’d like to explore roller coasters with different features, for interest or po-
+tential future visits as well.  
+Finally, they’re tending to share experiences and comments of rollercoasters via the 
+platform of RollerOutstander.  
+Pain Points  
+Current platforms provide limited information source and experience about the roller 
+coasters that users are not familiar with. They require users to initiatively locate rollercoast-
+ers instead of generating customized recommendations and thus create hindrance for unex-
+perienced users, which harm the experience.  
+ Key features 
+First, we include a user-adaptive filtering algorithm  that allows the user to get cus-
+tomized ranking results of rollercoasters based on their own preferences of indices. This 
+contributes to the solution for “vague meaning of ranking”. (section 7) 
+Next, in order to reach proactively to our user, we include a recommendation system. 
+This system is self- learning, and adjustable to the user’s personal profile and preferences. 
+(section 8) 
+Finally, we incorporated the key features into a user-friendly interface so as to enhance 
+the user experience using RollerOutstander. To illustrate in detail, we included a typical 
+user case and conducted reflection on our design of the App that can lead to future updates. 
+(section 9) 
+8 User-Adaptive Filtering System 
+ Establishing New Evaluation Model 
+
+Team#8700  Page 19 of 47 
+Although our model in the first question is relatively objective, but because of the ob-
+jective loss of many evaluation indicators, in a mature, intelligent roller coaster selection 
+app, the ranking order recommendation must be combined with people’s subjective will, 
+geography Location and objective conditions, such rankings are valuable for people who 
+want to ride a roller coaster. Therefore, we improved the evaluation model in the first ques-
+tion and added the fuzzy comprehensive evaluation model. 
+  
+Fig15. New comprehensive evaluation system 
+Step1：Determining factor set 
+For example, type, construction, security, peripheral integrity, etc. All these factors con-
+stitute a collection of evaluation indicator systems, namely the set of factors, recorded as: 
+ 1 2 , , , nU u u u
+  
+Step2：Confirm the comment set 
+Due to the different evaluation values of each indicator, different levels are often 
+formed. For example, the integrity of the surrounding facilities can be divided into fantastic, 
+good, medium, poor, and poor. A collection of different decisions is called a collection of 
+comments, which is recorded as: 
+ 1 2 , , , nV v v v
+  
+Step3：Determine the weight of each factor 
+Under normal circumstances, the factors in the concentration of factors play a different 
+role in the comprehensive evaluation. The comprehensive evaluation results are not only 
+related to the evaluation of various factors, but also to a large extent and the role of various 
+factors in the comprehensive evaluation, this needs to determine the weight distribution 
+between each factor, which is a fuzzy vector on it, recorded as: 
+ 1 2 , , , nA a a a
+  
+Step4：Determine the fuzzy comprehensive judgement matrix for the indicator 
+
+Team#8700  Page 20 of 47 
+For the indicator iu , the membership degree of each comment is the upper fuzzy subset 
+of V . The evaluation of the indicators is recorded as: 
+ 1 2 , , ,i i i imR r r r
+  
+The fuzzy comprehensive judgement matrix of each indicator is as follows, which is a 
+fuzzy relation matrix from U to V : 
+11 12 1
+21 22 2
+1 2 
+=
+m
+m
+n n nm
+r r r
+r r rR
+r r r
+
+
+
+
+
+
+ 
+Step5：Comprehensive Evaluation 
+For a fuzzy relation  ij n m 
+R r 
+
+ , we can obtain the fuzzy transformation 
+   :RT F U F V  using R . Then the comprehensive evaluation result B A R
+  is ob-
+tained. The comprehensive evaluation can be regarded as a fuzzy vector on V , noted as 
+ 1 2 , , , nB b b b
+ . 
+Such a fuzzy evaluation system combined with the entropy weight method constitutes 
+a comprehensive evaluation model including both subjective and objective factors, and is 
+applied to the internal ranking calculation of the app.  
+ Algorithm Procedure 
+ 
+Fig16. Algorithm flowchart 
+The users take initiative to interact with the filter algorithm, and decide on whether 
+filter the result with one or multiple factors. Based on user’s  specific demand and settings, 
+we apply the AHP model described above to calculate customized rollercoaster ranking re-
+sult and feed it to the user. 
+
+Team#8700  Page 21 of 47 
+9 Recommendation System (RS) 
+ User-friendly basis 
+The app needs to be user friendly to maintain effectiveness in its function. We define 
+“user friendly” as efficient, comprehensive, and effective. Based on these 3 features, we de-
+velop an app called “RollerOutstander” which helps the users to find the roller coaster that 
+they would be mostly likely to take a ride easily. 
+ Concept and Structure 
+9.2.1 General Concept for RS 
+Recommendation system is a tool for automatically contacting users and items. It can 
+help users find information that interests them in the environment of information overload, 
+and push information to users who are interested in them.  
+There are mainly three strategies for RS. The first strategy is to locate the items that the 
+user prefers, and then recommend similar items; the second strategy is to locate the user’s 
+similar users and then recommend the items preferred by these users; the third strategy is 
+first to spot characteristics between users and items, and then recommend the items which 
+have common characteristics with students. Various algorithms and approaches can be 
+adopted to generate recommendations for target users via either of the three approaches. 
+ 
+Fig17. Recommendation process 
+9.2.2 Recommendation System and Recommendation Engine Structure 
+ 
+Fig18. Recommendation Engine Structure 
+Recommendation via single algorithm or approach is seldom optimal, therefore several 
+recommendation engines are synthesized in one recommendation system in order to create 
+comprehensive set of recommendations. A filter and ranker then refines the initial recom-
+mendation result set and feed final recommendation result to the users. 
+Based on consideration of our specified need regarding the area and scope of the App, 
+we choose to adopt two recommendation engines – ItemCF and Tag-based Recommenda-
+tion – to recommend rollercoasters to our users. Detailed explanation of these algorithms 
+are given in section 9.3 and section 9.4. 
+
+Team#8700  Page 22 of 47 
+9.2.3 Evaluation of RS 
+Local Notation 8.3 
+ 
+Fig19. Recommendation Engine Structure 
+When evaluating a RS, part of the users is selected to form an A/B test. Recommenda-
+tion for each group are generated via different algorithms to test, and user behaviors are 
+tracked for analyzation. The graph is a typical structure of a recommendation system testing. 
+To evaluate our rollercoaster RS, we must define what’s a good RS. Merely the accuracy 
+of prediction is not sufficient for a good RS, due to its purpose not only to predict user’s 
+action. More importantly, a qualified RS should provide information that user’s not familiar 
+but likely to try, which cause new interaction possibilities and potentially level up the busi-
+ness.  
+The recall rate of the recommendation is defined as:  
+   
+ 
+u U 
+u U 
+R u T uRecall T u 
+
+
+
+
+ 
+The precision of the recommended results is defined as:  
+   
+ 
+u U 
+u U 
+R u T uPrecision R n 
+
+
+
+
+ 
+Coverage rate (coverage) describes the ability of a recommendation system to explore 
+the long tail of items. The simplest definition is the proportion of items recommended by 
+the recommendation system to the total set of items. Assuming that the user set of the sys-
+tem is U, the recommendation system recommends an item list R (u) with a length of N to 
+each user. The coverage rate of recommendation system can be calculated through the fol-
+lowing formula:  
+ n U R u 
+Coverage I
+
+  
+In order to satisfy the broad interests of users, recommendation lists need to be able to 
+cover different areas of interest, that is, recommendation results need to be diverse. Cover-
+ing most users’ interest points will increase the probability of users finding interesting items. 
+Diversity and similarity are corresponding. Assume the similarity between items 𝑖 and 𝑗 
+is defined, and the definition of diversity of the recommended list 𝑅(𝑢) of user 𝑢 is as 
+follows:  
+
+Team#8700  Page 23 of 47 
+  
+ 
+    
+, , 
+1 1 12
+iji j R u i j w
+Diversity R u
+R u R u
+
+
+
+  
+The overall diversity of recommender systems can be defined as the average of the 
+recommended list diversity of all users:  
+  
+ 
+    
+, , 
+1 1 12
+iji j R u i j w
+Diversity R u
+R u R u
+
+
+
+  
+ Item-based Collaborative Filtering Recommendation (ItemCF) 
+Table8.Local Notation  
+ N i   | 0 uiu r   
+Set of users that treat item i positively 
+uir   0,r   User u s preference of itemi  
+ujp   0,p   Prediction of user u s preference of item j  
+9.3.1 General Concept for Collaborative Filtering (CF) 
+What is Collaborative Filtering 
+Collaborative filtering is the process of filtering for information or patterns using techniques 
+involving collaboration among multiple agents, viewpoints, data sources, etc. Collabora-
+tively filtered social media can have a very large number of editors, and content improves 
+as the number of participants increases. Services like Reddit, YouTube, and Last.fm are typ-
+ical examples of CF-based media. 
+ 
+Fig20. Collaborative Filtering 
+There are two type of CF, which are User-based Collaborative Filtering (UserCF) and Item-
+based Collaborative Filtering (ItemCF). We choose ItemCF for our recommendation algo-
+rithm in consideration of their suitable applicable conditions and our specific need regard-
+ing the development and implement of RollerOutstander. 
+9.3.2 Why We Choose ItemCF 
+Our goal is to recommend rollercoasters for users. Obviously, rollercoasters are fixed 
+structures that takes a long time to design and create. Therefore, the number of high-level 
+
+Team#8700  Page 24 of 47 
+rollercoasters in the world must be a relatively stable number which only changes occasion-
+ally. Rollercoasters are huge constructions that one can serve numerous people over an ex-
+tended length of time. After comparing to the features of UserCF and ItemCF that listed 
+above, we decide to use ItemCF because it will theoretically operate much more efficiently 
+due to the relatively small number of rollercoasters to compute about. 
+Other features of ItemCF also fit our need. The market of rollercoasters should be 
+highly customized as most users want unexperienced, new adventures instead of boring, 
+obsolescence repeats. ItemCF has the strong ability to bulldoze the long tail of popularity 
+distribution, in other words, discover the proportion of rollercoasters that are not generally 
+popular or known by most rollercoaster players, therefore provide them with more individ-
+ualized and diverse recommendation.  
+For another feature, ItemCF is highly timely and can cold-start. It refines the recom-
+mendation after every behavior of the user, and can start generating recommendation since 
+the first behavior is tracked. Typical users of RollerOutstander would not use it very fre-
+quently as rollercoaster-riding is a relatively occasional recreational activity. Therefore, it’s 
+important for us to be able to generate the recommendation with the least user behavior 
+record. 
+In following sections 9.3.2 – 9.3.5 we’ll provide det ailed explanation of realization of 
+ItemCF algorithm. 
+9.3.3 Preference Index 
+Table9.Local Notation  
+𝑥𝑢𝑖𝑧  0,u   User u s amount of behavior z  related to item i  
+𝑦𝑧  0,y   The weight of behavior z  on user’s preference 
+User 𝑢’s preference of item 𝑖 can be calculated by the product of amount of behavior 
+and weight of behavior, then add all the behaviors: 
+T
+ui ui uiz z
+z
+r x y x y   
+Similarity Index 
+Then we calculate the similarity ijw  applying equation below 
+This equation is edited from the original simple equation 
+   
+ 
+ij
+N i N jw N i 
+  
+We can punish the popularity of item 𝑗 to ensure that periodical trends don’t cause too 
+much correlation between the popular item and all other items, thus obtain 
+   
+   
+ij
+N i N jw
+N i N j
+  
+ 
+ 
+Team#8700  Page 25 of 47 
+9.3.4 Preference Prediction 
+Then we can obtain the prediction of user u ’s preference of item j  by the scale prod-
+uct of correlation vector and preference vector: 
+    ,
+uj ij ui
+i N u S j k
+p w r
+
+   
+Where function  ,S j k  is defined as the set of K  items that are most similar to item j . 
+9.3.5 Improvements 
+According to conclusion of prior studies, we can increase the diversity of 
+recommendation. This method eliminates the impact of differentiated average similarity 
+between different categories of goods. 
+max
+ij
+ij
+ijj
+ww w
+   
+Another subject is the selection of constant K. By looking at prior work we can estimate 
+an empirical value 20K  . 
+ Tag-based Recommendation 
+9.4.1 Concepts of Tags and Our Rationale 
+Tags are a kind of keywords without hierarchical structure to describe information, 
+which can be used to describe the semantics of objects. (Wikipedia) Tags are generally from 
+two sources: one is from authors or experts; the other is to let ordinary users tag items, that 
+is, UGC (User Generated Content) tagging applications. UGC’s tag system is an important 
+way to express user interest and goods semantics. When a user tags an item, the tag de-
+scribes the user’s interest on the one hand, on the other hand, it expresses the semantics of 
+the item, thus connecting the user and the item.  
+Based on the given characteristics of tags, we find it suitable for recommendation of our 
+roller-coaster recommendation. First, tag is a user-friendly method to let users leave their 
+opinion and express their feeling of a roller coaster experience. Second, because the App is 
+for single type of items, rollercoasters, the variety of tags are controllable and therefore prob-
+ably converge to highlight characteristics of each rollercoaster after some accumulation of 
+user-generated tags. 
+In following sections, we explain how the Tag-based recommendation algorithm works. 
+9.4.2 Simple Algorithm 
+Table10.Local Notation  
+b  b Z   Label ID 
+ B u  B={b|lable b is used by user u} 
+ C i  C={b|lable b is used on item i} 
+ubn  n Z   Times label b  used by user u  
+bim  m Z   Times label b  used on item i  
+uip   0,p   Prediction of user 𝑢’s preference of item 𝑖 
+Team#8700  Page 26 of 47 
+To come up with a simple algorithm generating recommendation for users based on 
+their behaviors regarding tags, we can start from considering only user’s most frequently 
+used tags, and most popular items labeled this tag. 
+   
+ui ub bi
+b B u C i
+p n m
+
+   
+This formula gives the quantitative prediction of user u ’s preference of item i . 
+9.4.3 Further Improvement 
+Table11.Local Notation  
+*
+bn  
+*n Z   Number of users that have used label b  
+*
+in  *n Z   Number of users that have put label on item i  
+Punishing Hot Items 
+The prior formula tends to put excessive weight on popular labels and items, which 
+affects the diversity and novelty of recommendation. To cope with this we punish the pop-
+ularity of label b  and item i  by dividing the number of user associated with b  and i . 
+log function is used to treat user scale difference on exponential level. 
+      
+* * log 1 log 1
+ub bi
+ui
+b B u C i b i 
+n m p
+n n 
+
+  
+Data Sparsity 
+New users or items have relatively limited number of labels and are consequently un-
+likely to be recommended by the algorithm above. To deal with the data sparsity we can 
+add extra labels to the set  C i  that are relevant, in order to provide more precise recom-
+mendation. 
+The core strategy is to calculate the similarity between labels and add the labels that are 
+most similar to labels in  C i  and then add them to the set. 
+We can define similarity as cosine of angle between two vectors representing the rela-
+tionship between labels and items, which are 
+   
+1 1 
+2 2 
+3 3 ,
+b b 
+b b 
+b b b b
+bi bi
+n n 
+n n 
+n n n n where i N b N b
+n n 
+   
+       
+         
+   
+   
+       
+  
+By applying Euclidean Point Product Formula we obtain 
+cosa b a b 
+  
+ , cos b b 
+b b 
+n n sim b b n n      
+Team#8700  Page 27 of 47 
+     
+   
+2 2 
+,
+bi b i
+i N b N b
+bi b i
+i N b i N b
+n n 
+sim b b
+n n 
+
+
+
+
+ 
+
+
+ 
+Tidying of Tags 
+Labels have their user-generated nature of randomness and inaccuracy. To maintain a 
+high quality of label set for the items, labels have to be self-tidied according to several strat-
+egies. 
+First, synonyms should be combined. For example, “iron structure” and “iron made” 
+are synonym comments left by users. A dictionary of synonyms can be used to combine 
+synonyms. Simple differences such as different root in one word, or occurrence of separator 
+(for example “recommender” and “recommended”) can be detected and processed first us-
+ing simpler algorithms. 
+Second, meaningless words, such as high-frequency stop word or conjunctions, should 
+be deleted. This can be done using a preset dictionary of low-value words. Third, tags which 
+are too subjective are not valuable when generating recommendations. Forth, some specific 
+words, including abusive language or discriminative content, should be filtered out of the 
+tag set. 
+10 User Experience 
+ User Interface Prototype 
+Homepage   The home page is the most basic and important of this app it can quickly 
+guide you to access to other pages and exploring the roller coaster you like. The element 
+“recommendation” can directly show the user a list of rollercoasters that most fit to them. 
+In most cases, the content of the recommendation will be varying from people to people, 
+since the previous algorithm can according to users’ preference and taste after they use the 
+app for a period of time. At the same time, the “ranking” part below will show the contem-
+porary best rollercoaster among all the app users. The filter downward can help the user to 
+manually filter out the type of roller coaster that they required or want. 
+Preference   In the setting page of preferences, users can change their information of 
+basic preferences and "likes" manually according to what kind of roller coaster they really 
+like. The reason why this page needs to be established is because that algorithm sometimes 
+will begot inaccurate result in some extreme condition (the possibility is quite low). In those 
+cases, users can change their own preference by using this page if they want to regulate the 
+result of our algorithm. Moreover, this tool might often be using by people who want to 
+recommend roller coast to their friends. 
+Search      The option search can be found easily at the bottom of the app. It helps 
+the users find the roller coasters that they might be interested in taking a ride. To achieve 
+this goal, we include the “recommendation” button which links to the results calculated by 
+recommendation system. Another button which includes the users ’ “favorite” roller coast-
+ers is placed next to “recommendation”. They are both placed on the most obvious place of 
+the interface which help the users use them easily.  
+A “filter” is also available in the searching process. It mainly includes the information 
+that the user might want to limit the results. Among them are the geographical region, range 
+of price, and public open time. In this way, the users can find the roller coasters that fit their 
+expectation better while helping the system study the habits of the users.  
+Team#8700  Page 28 of 47 
+The historical research    is included at the bottom of the page. This help the users 
+find the information of the roller coasters that they have reviewed more quickly. The func-
+tion is mainly for convenience.  
+ 
+Homepage                Preference                  Search 
+ 
+The historical research               Location                    More 
+
+Team#8700  Page 29 of 47 
+Location   The location of the users is required for a more advanced search; thus, the 
+system will ask the users about their usual geographical location. The interface for the loca-
+tion is very concise, the only thing the users have to do is filling the blank with their home 
+city. The information can be utilized to identify the similar users (as it is also one of the 
+characteristics) and improve the recommendation system.  
+More      The “more” interface is a combination of the previous interfaces (which 
+help guide the users to enter the section they want easily without memorizing the exact 
+locations for each), and the features that really build an online community of roller coasters. 
+The users can choose to link their Facebook account to the app to share more information of 
+roller coasters easily. They can also find friends on the app. This two options satisfy users ’ 
+needs for online social interactions, and provide data for the recommendation system to 
+analyze. Usually users will share similar characteristics with the friends they have. This help 
+pinpoint the preference and taste from the view of the system, and improve the user expe-
+rience.  
+ Typical User Case 
+One of the users, Allen want to find a roller coaster which he might enjoy near to the 
+destination of his trip to Valencia, California in advance. He can find the result and the in-
+formation easily by clicking the “search “button and use the filter to find the roller coasters 
+which are open during the time he enters Valencia. He doesn ’t set a budget for himself so 
+he just ignores the option of the range of pricing. This is all the things Allen needs to do to 
+find the answer. The system analyzes the data of Allen and his friends online, and identifies 
+Allen as the user who enjoys the thrills of roller coasters. Based on the information above, 
+the system would recommend Allen with the results including Superman: Escape from 
+Krypton, one of the top- ranking roller coasters located in Valencia, California. The result 
+also provides him with the basic information about the public open time, the reflections and 
+comments of the users on RollerOutstander, and the pricing. The whole process would fin-
+ish within a few minutes as the system is really efficient. 
+ Evaluation and Reflection 
+The benefits of the recommendation system we used is that it contains the result of three 
+different method to find what the user are interested in which make the result more reliable 
+than just evaluating users’ behavior and give recommendation from one perspective. How-
+ever, the drawback of system will be the buffer period for the user means that the system 
+need time to study user’s preference. When there is a new user register for the application, 
+it can only give the user what most people are interested in instead of providing customized 
+recommendations. 
+10.3.1 Another disadvantages  
+One of the drawbacks is that the users sometimes make random choices which are not 
+correlated to their preference. This is hard to be identified by the system, which can lead to 
+the inaccurate prediction of the user’s preference, resulting in the unsatisfied recommenda-
+tion to the users and have a negative effect. The process of making the adjustments in the 
+identification of the users’ taste requires large amount of calculations. 
+ 
+Team#8700  Page 30 of 47 
+10.3.2 Reflection 
+The quality of the data is essential in the prediction of the users. Thus, the evaluation 
+model mentioned in 8.2.5 might need adjustment to ensure the quality of data the system 
+utilizes. 
+11 Advantages and Disadvantages 
+We reflected upon our modeling process and discover certain strengths and limitations 
+Strength: 
+ We build a model which is objective enough based on entropy method. We reduce 
+the dimension brought by the multiple indicators. 
+ We test the sensitivity of our evaluation model to ensure its stability.  
+ We design abundant interfaces for our app and match it with more comprehensive 
+evaluation, filtering, and recommendation mechanism. Users would have a good 
+experience in using it. 
+Possible improvements: 
+ If the data is more complete, the results of our ranking might be more accurate. 
+ The time for completion is limited, and our app is not able to realize all the func-
+tions that we designed. If there is sufficient time, it would definitely be an excellent 
+recommendation app for roller coasters. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Team#8700  Page 31 of 47 
+References 
+1. Sean M. McNee, John Riedl, and Joseph A. Konstan. 2006. Being accurate is not enough: 
+how accuracy metrics have hurt recommender systems. In CHI ’06 Extended Abstracts on Hu-
+man Factors in Computing Systems  (CHI EA ’06). ACM, New York, NY, USA, 1097-1101. 
+DOI=http://dx.doi.org/10.1145/1125451.1125659 
+2. "The Best Roller Coasters in the World." ranker, www.ranker.com/crowdranked-
+list/   best-roller-coasters.  
+3. "In-depth recommendation engine related algorithms - collaborative filtering." IBM, 21 3 
+2011,www.ibm.com/developerworks/cn/web/ 1103_zhaoct_recommstudy2/index.html?ca=drs-. 
+Karypis, George.  
+4. "Evaluation of Item- based Top- N Recommendation Algorithms."      University of Minnesota  
+5. "List of roller coaster rankings." Wikiwand, www.wikiwand.com/en/ 
+   List_of_roller_coaster_rankings. 
+Record Holders." Roller Coaster DataBase, rcdb.com/rhr.htm?m=3. 
+6. Wikipedia. en.wikipedia.org/wiki/Millennium_Force.  
+7. Xiang, Liang. Recommended System Practice (Turing Original 5). People Post  Press.  
+Tools and Software 
+Python, free distribution. 
+Paper written and generated via MicrosoftC OfficeTM 365 Word, institution certification. 
+Graph generated via MicrosoftC OfficeTM 365 Excel, institution certification and Python. 
+Xmind Zen, free trial license. 
+Calculation using Python. 
+Appendix 
+Appendix Contains: 
+Processed Raw Data 
+Our ranking and online rankings 
+Data dimensionality reduction based on PCA Analysis 
+Table1 
+The Data for well-recognized Top Roller Coaster 
+Name Kingda Ka Millennium Force 
+City/State/Region New Jersey Ohio 
+Country/Region United States United States 
+Geographic Region North America North America 
+Construction Steel Steel 
+Type Sit Down Sit Down 
+Status Operating Operating 
+Year/Date Opened 2005 2000 
+Height (feet) 456.0 310.0 
+Team#8700  Page 32 of 47 
+Length (feet) 3118.0 6595.0 
+Inversions NO NO 
+G Force 3.000197052 5.140847449 
+Vertical Angle (degrees) 90 80 
+ 
+Table2 
+Online Ranking 1 Our Ranking 
+Name Country/Region Name Country/Region 
+Superman - Ride Of Steel United States Kingda Ka United States 
+Beast United States Top Thrill Dragster United States 
+Oblivion United Kingdom Superman: Escape from 
+Krypton 
+United States 
+Griffon United States Steel Dragon 2000 Japan 
+Goliath United States Red Force Spain 
+Top Thrill Dragster United States Tower of Terror II Australia 
+Millennium Force United States Millennium Force United States 
+Superman: Escape from 
+Krypton United States Formula Rossa United Arab Emirates 
+Ride of Steel United States Fury 325 United States 
+  Leviathan Canada 
+ 
+ 
+Online Ranking 2 
+Name Country/Region 
+Steel Vengeance United States 
+Maverick United States 
+El Toro Germany 
+Voyage United States 
+Top Thrill Dragster United States 
+Millennium Force United States 
+Kingda Ka United States 
+Apollo’s Chariot United States 
+  
+Table3 
+ 
+
+Team#8700  Page 33 of 47 
+Table4 
+Table 4 Levels of Correlation Degree 
+levels 
+Ex-
+tremely 
+lost 
+Serious  
+disconnec-
+tion 
+Moderate 
+loss of as-
+sociation 
+On the 
+verge of 
+losing 
+Primary 
+associa-
+tion 
+Intermediate  
+association 
+Interme-
+diate as-
+sociation 
+Correlation 
+Degree (0，0.3) (0.3，0.5) (0.5，0.7) (0.7，0.8) (0.8 ，
+0.85) (0.85，0.9) (0.9，1.0) 
+ 
+Data dimensionality reduction based on PCA Analysis 
+ Standardization and Normalization of Raw Data 
+Assume there are m indexes and n objects to be evaluated. The value of index  i attained 
+by object j  is expressed as ija . We convert the index value ija  into standardized value 
+ija , thus we obtain 
+, 1,2, , ; 1,2, ,
+ij j
+ij
+j
+aa i n j ms
+  
+ 
+Where 
+1
+1 n
+j ij
+i
+an
+
+  ；  
+2
+1
+1 , 1, 2, ,1
+n
+j ij j
+i
+s a j mn 
+
+   
+ ， j  is the mean of index j  
+and js is the standard deviation of index j . 
+, 1,2, ,
+j j 
+j
+j
+xx j m s
+
+ 
+ Calculating Correlation Coefficient Matrix R  
+For the Correlation Coefficient Matrix  ij m m 
+R r 
+
+ , 
+1 , , 1, 2, ,1
+n
+ki kj
+k
+ij
+a a 
+r i j m n
+
+
+ 
+
+ 
+Where: 1iir  ， ij jir r  ， ijr  is the correlation index between index i  and j .  
+ Calculating Eigenvalue and Eigenvector 
+From the correlation coefficient matrix R we calculate its eigenvalues 1 2 0m     
+  
+and corresponding eigenvector 1 2 , , , mu u u
+  , where 1 2 , , ,
+T
+j j j mju u u u
+ . Eigenvectors 
+composite m index variables: 
+Team#8700  Page 34 of 47 
+1 11 1 21 2 1
+1 12 1 22 2 2
+1 1 2 2
+,
+,
+m m 
+m m 
+m m m mm m
+y u x u x u x
+y u x u x u x
+y u x u x u x
+   
+   
+   
+  
+Where: 1y  is first PCA, 1y  is the second PC, …; my  is the m th PC. 
+ Determining p PCs and perform statistical analysis 
+PCA converts numerous indices into several weakly correlated comprehensive indices. 
+PCs and corresponding accumulative contribution rate are given below.  
+Table 5 PCs and Corresponding Contribution Rates 
+PC Contribution Rate (%) Accumulative (%) 
+1 35.617589 35.617589 
+2 31.459494 67.077083 
+3 12.448942 79.526025 
+4 11.050469 90.576494 
+5 4.946335 95.522829 
+6 4.477171 100 
+Under accumulative variance of 90.576% we obtain 4 PCs. These 4 PCs provide 90.576% 
+information of the indices, which satisfies the principle of PCA. Hence we’ve realized the 
+dimensionality reduction of indices and simplified further calculation followed 
+Codes 
+BP Neural Network 
+import math 
+import random 
+import datetime 
+import pyexcel_xls as px 
+import numpy as np 
+import matplotlib.pyplot as plt 
+from collections import OrderedDict 
+ 
+random.seed(0) 
+ 
+def rand(a, b): 
+    return (b - a) * random.random() + a 
+ 
+ 
+Team#8700  Page 35 of 47 
+def make_matrix(m, n, fill=0.0): 
+    mat = []  
+    for i in range(m): 
+        mat.append([fill] * n)  
+    return mat 
+ 
+ 
+def sigmoid(x): 
+    try: 
+        return 1.0 / (1.0 + math.exp(-x)) 
+    except OverflowError: 
+        return 0.0 
+ 
+ 
+def sigmoid_derivative(x): 
+    return x * (1 - x) 
+ 
+ 
+def normalization(x, Max, Min): 
+ x = (x - Min) / (Max - Min)  
+ return x 
+ 
+ 
+class BPNeuralNetwork: 
+    def __init__(self): 
+        self.input_n = 0 
+        self.hidden_n = 0 
+        self.output_n = 0 
+        self.input_cells = []  
+        self.hidden_cells = []  
+        self.output_cells = []  
+        self.input_weights = []  
+        self.output_weights = []  
+        self.input_correction = []  
+        self.output_correction = []  
+ 
+    def errorpolyline(self, limit, errhistory): 
+        errhistory10 = np.log10(errhistory)  
+        minerr = min(errhistory10)  
+        plt.plot(errhistory10)  
+Team#8700  Page 36 of 47 
+        # plt.plot(range(0,limit+1000,1000),[minerr]*len(range(0,limit+1000,1000))) 
+ 
+        ax=plt.gca()  
+        ax.set_yticks([ -2,-1,0,1,2,minerr]) 
+        ax.set_yticklabels([u '$10^{-2}$',u'$10^{-1}$',u'$1$',u'$10^{1}$',u'$10^{2}$',str(('%.4f'%np.power(10,min-
+err)))]) 
+        ax.set_xlabel( 'Iteration') 
+        ax.set_ylabel( 'Error') 
+        ax.set_title( 'Error History') 
+        plt.savefig( 'errorhistory.png',dpi=700) 
+        plt.close()  
+ 
+    def setup(self, ni, nh, no): 
+        self.input_n = ni + 1 
+        self.hidden_n = nh  
+        self.output_n = no  
+        # init cells 
+        self.input_cells = [ 1.0] * self.input_n 
+        self.hidden_cells = [ 1.0] * self.hidden_n 
+        self.output_cells = [ 1.0] * self.output_n 
+        # init weights 
+        self.input_weights = make_matrix(self.input_n, self.hidden_n)  
+        self.output_weights = make_matrix(self.hidden_n, self.output_n)  
+        # random activate 
+        for i in range(self.input_n): 
+            for h in range(self.hidden_n): 
+                self.input_weights[i][h] = rand( -0.2, 0.2) 
+        for h in range(self.hidden_n): 
+            for o in range(self.output_n): 
+                self.output_weights[h][o] = rand( -2.0, 2.0) 
+        # init correction matrix 
+        self.input_correction = make_matrix(self.input_n, self.hidden_n)  
+        self.output_correction = make_matrix(self.hidden_n, self.output_n)  
+ 
+    def predict(self, inputs): 
+        # activate input layer 
+        for i in range(self.input_n - 1): 
+            self.input_cells[i] = inputs[i]  
+        # activate hidden layer 
+        for j in range(self.hidden_n): 
+Team#8700  Page 37 of 47 
+            total = 0.0 
+            for i in range(self.input_n): 
+                total += self.input_cells[i] * self.input_weights[i][j]  
+            self.hidden_cells[j] = sigmoid(total)  
+        # activate output layer 
+        for k in range(self.output_n): 
+            total = 0.0 
+            for j in range(self.hidden_n): 
+                total += self.hidden_cells[j] * self.output_weights[j][k]  
+            self.output_cells[k] = sigmoid(total)  
+        return self.output_cells[:] 
+ 
+    def back_propagate(self, case, label, learn, correct): 
+        # feed forward 
+        self.predict(case)  
+        # get output layer error 
+        output_deltas = [ 0.0] * self.output_n 
+        for o in range(self.output_n): 
+            error = label[o] - self.output_cells[o]  
+            output_deltas[o] = sigmoid_derivative(self.output_cells[o]) * error  
+        # get hidden layer error 
+        hidden_deltas = [ 0.0] * self.hidden_n 
+        for h in range(self.hidden_n): 
+            error = 0.0 
+            for o in range(self.output_n): 
+                error += output_deltas[o] * self.output_weights[h][o]  
+            hidden_deltas[h] = sigmoid_derivative(self.hidden_cells[h]) * error  
+        # update output weights 
+        for h in range(self.hidden_n): 
+            for o in range(self.output_n): 
+                change = output_deltas[o] * self.hidden_cells[h]  
+                self.output_weights[h][o] += learn * change + correct * self.output_correction[h][o]  
+                self.output_correction[h][o] = change  
+        # update input weights 
+        for i in range(self.input_n): 
+            for h in range(self.hidden_n): 
+                change = hidden_deltas[h] * self.input_cells[i]  
+                self.input_weights[i][h] += learn * change + correct * self.input_correction[i][h]  
+                self.input_correction[i][h] = change  
+        # get global error 
+Team#8700  Page 38 of 47 
+        error = 0.0 
+        for o in range(len(label)): 
+            error += 0.5 * (label[o] - self.output_cells[o]) ** 2 
+        return error 
+ 
+    def train(self, cases, labels, limit=100000, learn=0.05, correct=0.1): 
+        errhistory = []  
+        for j in range(limit): 
+            error = 0.0 
+            for i in range(len(cases)): 
+                label = labels[i]  
+                case = cases[i]  
+                error += self.back_propagate(case, label, learn, correct)  
+            print(j,":",error) 
+            errhistory.append(error)  
+        self.errorpolyline(limit,errhistory)  
+ 
+    def test(self): 
+        xls_data = px.get_data( r"./wood.xlsx") 
+        # xls_data = px.get_data(r"./steel.xlsx") 
+        origin_data = []  
+        train_cases = []  
+        train_labels = []  
+        check_cases = []  
+        res_start = 16 
+        res_end = 17 
+        year_max = float( "-inf") 
+        year_min = float( "inf") 
+        height_max = float( "-inf") 
+        height_min = float( "inf") 
+        speed_max = float( "-inf") 
+        speed_min = float( "inf") 
+        length_max = float( "-inf") 
+        length_min = float( "inf") 
+        inversion_max = float( "-inf") 
+        inversion_min = float( "inf") 
+        res_max = float( "-inf") 
+        res_min = float( "inf") 
+ 
+        for sheet in xls_data: 
+Team#8700  Page 39 of 47 
+            origin_data = xls_data[sheet]  
+            break 
+ 
+        for line in origin_data: 
+            if line[9] > year_max: 
+                year_max = line[ 9] 
+            if line[9] < year_min: 
+                year_min = line[ 9] 
+            if line[10] > height_max: 
+                height_max = line[ 10] 
+            if line[10] < height_min: 
+                height_min = line[ 10] 
+            if line[11] > speed_max: 
+                speed_max = line[ 11] 
+            if line[11] < speed_min: 
+                speed_min = line[ 11] 
+            if line[12] > length_max: 
+                length_max = line[ 12] 
+            if line[12] < length_min: 
+                length_min = line[ 12] 
+            if line[14] > inversion_max: 
+                inversion_max = line[ 14] 
+            if line[14] < inversion_min: 
+                inversion_min = line[ 14] 
+            if(line[res_start:res_end]): 
+                if(not isinstance(line[res_start],str)): 
+                    if line[res_start] > res_max: 
+                        res_max = line[res_start]  
+                    if line[res_start] < res_min: 
+                        res_min = line[res_start]  
+ 
+        for line in origin_data: 
+            tmp = []  
+            tmp.append(normalization(line[ 9],year_max,year_min)) 
+            tmp.append(normalization(line[ 10],height_max,height_min)) 
+            tmp.append(normalization(line[ 11],speed_max,speed_min)) 
+            tmp.append(normalization(line[ 12],length_max,length_min)) 
+            tmp.append(normalization(line[ 14],inversion_max,inversion_min)) 
+            if(line[res_start]==0): 
+                check_cases.append(tmp)  
+Team#8700  Page 40 of 47 
+            elif(line[res_start:res_end]): 
+                if(isinstance(line[res_start],str)): 
+                    check_cases.append(tmp)  
+                else:        
+                    train_cases.append(tmp)  
+                    train_labels.append([normalization(line[res_start],res_max,res_min)])  
+            else: 
+                check_cases.append(tmp)  
+         
+        self.setup( 5, 10, 1) 
+        self.train(train_cases, train_labels, 1000, 0.05, 0.1) 
+ 
+        prediect_res = []  
+        real_res = []  
+        for case in check_cases: 
+            tmp = self.predict(case)  
+            prediect_res.append(tmp[ 0]*(res_max-res_min)+res_min) 
+            print(tmp[0]*(res_max-res_min)+res_min) 
+        # print("########################") 
+        # for item in train_labels: 
+        #     real_res.append(item[0]*(res_max-res_min)+res_min)  
+        #     print(item[0]*(res_max-res_min)+res_min)  
+         
+        # minres = min(real_res) 
+        # maxres = max(real_res) 
+        # plt.plot(prediect_res,c="blue",marker="o") 
+        # plt.plot(real_res,c="red",marker="v") 
+ 
+        # ax=plt.gca() 
+        # ax.set_yticks([maxres*1.5,minres*0.5]) 
+        # ax.set_xlabel('Roller Coater') 
+        # ax.set_ylabel('Feet') 
+        # ax.set_title('Drop Feet Simulation') 
+        # plt.savefig('predictresualt.png',dpi=700) 
+        # plt.close() 
+ 
+if __name__ == '__main__': 
+    nn = BPNeuralNetwork()  
+    nn.test() 
+Team#8700  Page 41 of 47 
+Grey Correlation Analysis  
+import pandas as pd 
+import pyexcel_xls as px 
+import seaborn as sns 
+import matplotlib.pyplot as plt 
+from numpy import * 
+ 
+data = px.get_data(r"./data.xlsx") 
+df = pd.DataFrame(data['all']) 
+ 
+# drop useless data column 
+for i in range(9): 
+    df = df.drop(i, 1) 
+df = df.drop(13,1) 
+ 
+def GRA_ONE(DataFrame,m=0): 
+    gray= DataFrame  
+    #read as dataframe format 
+    gray=(gray - gray.min()) / (gray.max() - gray.min())  
+    #normalize 
+    std=gray.iloc[:,m] # standard key element 
+    ce=gray.iloc[:, 0:]# compare key element 
+    n=ce.shape[ 0] 
+    m=ce.shape[ 1] 
+ 
+    #compare with standard key element 
+    a=zeros([m,n])  
+    for i in range(m): 
+        for j in range(n): 
+            a[i,j]=abs(ce.iloc[j,i]-std[j])  
+ 
+    #get the max and min data in martix 
+    c=amax(a)  
+    d=amin(a)  
+ 
+    #calculate value 
+    result=zeros([m,n])  
+    for i in range(m): 
+        for j in range(n): 
+            result[i,j]=(d +0.5*c)/(a[i,j]+0.5*c) 
+Team#8700  Page 42 of 47 
+ 
+    #calculate mean and gray correlation 
+    result2=zeros(m)  
+    for i in range(m): 
+            result2[i]=mean(result[i,:])  
+    RT=pd.DataFrame(result2)  
+    return RT 
+ 
+def GRA(DataFrame): 
+    list_columns = [str(s) for s in range(len(DataFrame.columns)) if s not in [None]] 
+    df_local = pd.DataFrame(columns=list_columns)  
+    for i in range(len(DataFrame.columns)): 
+        df_local.iloc[:,i] = GRA_ONE(DataFrame,m=i)[ 0] 
+    return df_local 
+ 
+def ShowGRAHeatMap(DataFrame):  
+    labels = [ 'Year','Height','Speed','Length','Inversions','Drop','Duration','G Force','Vertical Angle'] 
+    colormap = plt.cm.get_cmap( 'RdBu_r') 
+    f, ax = plt.subplots(figsize = ( 14, 12)) 
+    # plt.figure(figsize=(14,12))   
+    sns.heatmap(DataFrame.astype(float),ax=ax, linewidths= 0.1,vmax=1.0, square=True, cmap=colormap, 
+linecolor='white', annot=True, xticklabels=True) 
+    ax.set_title( 'Correlation of Features', y=1.05, size=15) 
+    ax.set_xticklabels(labels,rotation= 360) 
+    ax.set_yticklabels(labels,rotation= 0) 
+    f.savefig( 'correlation_of_features.png', bbox_inches='tight', dpi=700) 
+ 
+df.columns = ['Year','Height','Speed','Length','Inversions','Drop','Duration','G Force','Vertical Angle'] 
+# calculate 
+data_wine_gra = GRA(df) 
+# show resualts 
+ShowGRAHeatMap(data_wine_gra) 
+Principal Component Analysis& AHP 
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+import pyexcel_xls as px 
+from sklearn.decomposition import PCA 
+from sklearn.preprocessing import StandardScaler 
+from sklearn.preprocessing import MinMaxScaler 
+Team#8700  Page 43 of 47 
+ 
+data = px.get_data(r"./data.xlsx") 
+df = pd.DataFrame(data['all']) 
+ 
+# drop useless data column 
+df = df.drop(0,1) 
+df = df.drop(1,1) 
+df = df.drop(2,1) 
+df = df.drop(3,1) 
+df = df.drop(4,1) 
+df = df.drop(5,1) 
+df = df.drop(6,1) 
+df = df.drop(7,1) 
+df = df.drop(8,1) 
+# df = df.drop(11,1) 
+df = df.drop(13,1) 
+# df = df.drop(15,1) 
+# df = df.drop(16,1) 
+df = df.drop(19,1) 
+df = df.drop(20,1) 
+ 
+origin_X = df.values 
+mm = MinMaxScaler() 
+X = mm.fit_transform(origin_X) 
+pca = PCA(n_components=6, whiten=False, copy=True) 
+pca.fit(X) 
+res = pca.transform(X) 
+ 
+print(pca.explained_variance_ratio_)  
+# print(pd.DataFrame(res)) 
+ 
+li = np.array(X) # convert to martix 
+li=(li-li.min())/(li.max()-li.min())    #minmax normalize 
+m, n = li.shape 
+k = 1 / np.log(m) 
+yij = li.sum(axis=0) 
+pij = li / yij 
+test = pij * np.log(pij) 
+test = np.nan_to_num(test) 
+ej = -k * (test.sum(axis=0)) 
+Team#8700  Page 44 of 47 
+wi = (1 - ej) / np.sum(1 - ej)   
+print(wi) 
+tmp = wi[1] 
+wi[1] = wi[4] 
+wi[4] = tmp 
+tmp = wi[2] 
+wi[2] = wi[8] 
+wi[8] = tmp 
+print(wi) 
+ 
+for item in X: 
+    print(sum(wi*item)) 
+Wood&Steel  3D- Comparation  
+import pandas as pd 
+import pyexcel_xls as px 
+import matplotlib.pyplot as plt 
+from mpl_toolkits.mplot3d import Axes3D 
+from numpy import * 
+ 
+data = px.get_data(r"./data.xlsx") 
+wood_data = pd.DataFrame(data['wood']) 
+steel_data = pd.DataFrame(data['steel']) 
+ 
+for i in range(10): 
+    wood_data = wood_data.drop(i, 1) 
+    steel_data = steel_data.drop(i, 1) 
+for i in range(13,19): 
+    wood_data = wood_data.drop(i, 1) 
+    steel_data = steel_data.drop(i, 1) 
+ 
+wood_data.columns = ['height', 'speed', 'length'] 
+steel_data.columns = ['height', 'speed', 'length'] 
+wood_data = wood_data.values 
+steel_data = steel_data.values 
+print(wood_data) 
+print(steel_data) 
+ 
+ax = plt.subplot(111, projection='3d') 
+ax.set_title('Wood And Steel Base Parameter') 
+ax.scatter(wood_data[:,0],wood_data[:,1],wood_data[:,2],c='red',label='wood') 
+Team#8700  Page 45 of 47 
+ax.scatter(steel_data[:,0],steel_data[:,1],steel_data[:,2],c='blue',label='steel') 
+ax.set_xlabel("height") 
+ax.set_ylabel("speed") 
+ax.set_zlabel("length") 
+plt.legend() 
+plt.show() 
+ 
+ 

@@ -1,0 +1,55 @@
+[
+  {
+    "name": "01_framework",
+    "caption": "Model construction and revision. The two experiments in Panel 4 answer different questions; the accessibility proxy does not measure high-school quality or admission eligibility.",
+    "inputs": [
+      "point_rankings.csv",
+      "summary.json"
+    ],
+    "style_reference": "2024 Team 14995, PDF p.4, Figure 1; 2024 Team 15504, PDF p.13"
+  },
+  {
+    "name": "02_spatial_access",
+    "caption": "Learning-facility accessibility in three illustrative cities. Each populated source grid is coloured by model utility. Blank space is outside retained populated grids, not necessarily water or missing facilities. Panel extents differ; local distance conversion and scale bars are approximate. Cases illustrate a stable leader (Copenhagen), upward revision (Toronto) and downward revision (Dubai), not a representative city sample.",
+    "inputs": [
+      "data/task4_access/{1958,8814,2406}_hexes.zip",
+      "learning_access_measures.csv"
+    ],
+    "style_reference": "2023 Team 13719, PDF p.15, Figure 5.6: aligned spatial panels; 2025 Team 16738, PDF p.9: shared geographical colour scale"
+  },
+  {
+    "name": "03_access_mechanism",
+    "caption": "Accessibility distributions and the lower-tail mechanism for three illustrative cities. Distributions are weighted by retained all-age population. Panel (c) varies only the normative lower-tail weight; the curves are not fitted empirical relationships. All plotted statistics were checked against the archived analysis.",
+    "inputs": [
+      "learning_access_measures.csv",
+      "three archived spatial ZIPs"
+    ],
+    "style_reference": "2023 Team 13719, PDF p.16, Figure 5.7: Times typography, thin boxed axes and navy/rose/amber lines; 2024 Team 15504, PDF p.18, Figure 8: grouped bars with direct values"
+  },
+  {
+    "name": "04_city_ranking",
+    "caption": "Conditional ranking under the five-proxy model, with all 25 cities shown. Panel (b) separates the baseline, the addition of mean learning accessibility, and the lower-tail adjustment; vertical offsets separate the three markers for each city and carry no numerical meaning. Score changes across different models are not improvements in city conditions.",
+    "inputs": [
+      "point_rankings.csv"
+    ],
+    "style_reference": "2023 Team 13719, PDF p.22, Figure 6.3: ordered bars with meaningful colour groups; 2025 Team 16739, PDF p.9, Figure 6: horizontal ranking and direct values"
+  },
+  {
+    "name": "05_evidence_uncertainty",
+    "caption": "Information gain under fixed weights: baseline proxies 80%, learning accessibility 10%, unobserved education 10%. Intervals are feasible bounds, not confidence intervals. The three possible champions after observation are Copenhagen, Dubai and Melbourne. Additional proxy-error widths are stress assumptions, not estimated errors.",
+    "inputs": [
+      "matched_information_rank_bounds.csv",
+      "proxy_error_stress.json"
+    ],
+    "style_reference": "2023 Team 13719, PDF pp.16 and 22: restrained linework, grouped panels and consistent scales"
+  },
+  {
+    "name": "06_indicator_matrix",
+    "caption": "Five proxy indicators for all 25 cities, ordered by the revised ranking. Columns retain every city; the scale is bounded from zero to one. These are oriented proxy scores, not measurements of student outcomes.",
+    "inputs": [
+      "normalized_indicators.csv",
+      "learning_access_measures.csv"
+    ],
+    "style_reference": "2025 Team 16739, PDF p.8, Figure 1: annotated cells and explicit colour scale; adapted to a horizontal five-indicator layout"
+  }
+]

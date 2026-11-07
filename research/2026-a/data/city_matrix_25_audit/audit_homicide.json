@@ -1,0 +1,96 @@
+[
+  {
+    "cell": "B26",
+    "city": "Detroit",
+    "indicator": "homicide",
+    "original_value": 39.03,
+    "original_source": "doc: Detroit PD 2023 / ACS 2024",
+    "status": "year_mismatch",
+    "verified_value": 39.79672087653857,
+    "data_year": "2023（核实的凶杀分子及所列同年替代分母）；原值为2023分子/2024分母",
+    "geography": "Detroit city, Michigan，行政市；不是Detroit都会区",
+    "population": "同年替代分母633,218：2023-07-01，Census PEP Vintage 2023；原值分母645,702：ACS 2024 1-year DP05",
+    "definition": "DPD criminal homicide受害人数（官方报告注明victim based），每10万人·年。所列verified_value仅指固定Vintage 2023人口版本下的同年重算，非2026最新修订率。",
+    "primary_urls": [
+      "https://detroitmi.gov/sites/detroitmi.localhost/files/2024-12/2023_BOPC.pdf",
+      "https://data.census.gov/table/ACSDP1Y2024.DP05?q=Detroit+city,+Michigan",
+      "https://www2.census.gov/programs-surveys/popest/tables/2020-2023/cities/totals/SUB-IP-EST2023-ANNRNK.xlsx",
+      "https://detroitmi.gov/sites/detroitmi.localhost/files/2024-08/Q1%202024%20Economic%20Indicators%20Report.pdf"
+    ],
+    "evidence": "BOPC 2023年度报告，2023 CRIME DATA / Violent Offenses Year-End Comparisons：HOMICIDE行2023为252，表后注明按受害者计数、数据初步并可修订。Census官方ACS2024 DP05搜索索引显示总人口645702；252/645702×100000=39.0272912，四舍五入为原39.03。直接下载Census原始xlsx并读取：工作表SUB-IP-EST2023-ANNRNK，第30行B30为Detroit city, Michigan，G30的2023人口为633218；252/633218×100000=39.7967209。市政府Q1 2024经济报告City of Detroit Population Estimates段独立确认Vintage2023同一633218。",
+    "issue": "原39.03的算术可复现，但分子2023与分母2024错年；分子是受害人数，不能标成252起案件。人口发布版本也必须写明。",
+    "recommended_action": "若保留2023凶杀，应采用明确版本的2023同年人口后重算；本次可复核候选39.80/10万人使用PEP Vintage2023的633218。若之后统一更近期人口vintage，应重算而非把39.80称唯一永恒正确值。保留原39.03为历史混年计算，勿继续标作纯2023率。",
+    "verification_limits": "DPD新闻网页403，改读官方BOPC PDF全文。ACS2024原表的官方搜索索引可读，但直接网页需JavaScript；Census API请求返回Missing Key，未伪称API成功。2023替代人口xlsx直接读取成功。BOPC截图请求超时，但PDF文本的犯罪表和victim based注释可读。",
+    "access_date": "2026-11-07",
+    "archived_evidence": [
+      "evidence_homicide/detroit_BOPC2023_web_text_extract.json",
+      "evidence_homicide/detroit_ACS2024_DP05_primary_index_extract.json",
+      "evidence_homicide/census_SUB-IP-EST2023-ANNRNK.xlsx",
+      "evidence_homicide/detroit_Q1_2024_economic_report_web_text_extract.json"
+    ],
+    "evidence_manifest": "evidence_homicide/manifest.json"
+  },
+  {
+    "cell": "B40",
+    "city": "Singapore",
+    "indicator": "homicide",
+    "original_value": 0.068,
+    "original_source": "doc: Singapore Police Force (2023)",
+    "status": "confirmed",
+    "verified_value": 0.06759442264899838,
+    "data_year": "2023（全年案件/受害者；人口为2023年6月底）",
+    "geography": "Singapore全国/城市国家",
+    "population": "5,917,648：2023年6月底总人口，包含公民、永久居民和通常居住的非永久居民；不是仅公民+永久居民的4,149,253",
+    "definition": "SPF记录的Murder分类：案件数和受害人数在2023年均为4；4/总人口×100000，四舍五入至三位小数。Murder是本地罪名，不把它无说明推广为包含所有culpable homicide的国际完整intentional-homicide构念。",
+    "primary_urls": [
+      "https://data.gov.sg/datasets/d_02d07531b84cd0cf2cf901fc1bf5d395/view",
+      "https://tablebuilder.singstat.gov.sg/table/TS/M890891",
+      "https://data.gov.sg/datasets/d_43bc9a5106f4264642dc38e7cc39fcd3/view",
+      "https://tablebuilder.singstat.gov.sg/table/TS/M890911",
+      "https://data.gov.sg/datasets/d_3d227e5d9fdec73f3bcadce671c333a6/view",
+      "https://www.singstat.gov.sg/-/media/files/publications/population/population2023.pdf"
+    ],
+    "evidence": "data.gov.sg官方表Cases Recorded For Selected Major Offences, Annual（SPF来源，M890891）Murder行2023列=4。另一官方表Victims Of Selected Major Offences By Sex And Broad Age Group, Annual（M890911）Total Victims Of Murder行2023列=4。官方人口表Indicators On Population, Annual（M810001）Total Population行2023列=5917648；Population Trends 2023第1章表1.1及人口定义说明为6月底通常居住总人口。4/5917648×100000≈0.0675944，三位小数0.068。",
+    "issue": "未发现所列数值错误；原来源说明遗漏人口出处及Murder的本地分类口径。全国范围在城市国家可说明使用，但需与其他城市的凶杀分类协调。",
+    "recommended_action": "保留0.068并补充年份、每10万总人口、SPF Murder分类和SingStat人口来源；保留原始分子4与分母5917648以便复算。跨国比较时明确Murder分类适用条件。",
+    "verification_limits": "通过官方data.gov.sg展示的原提供方年度表逐列读取；未声称逐个案件审查或证明所有国际故意凶杀类别全覆盖。",
+    "access_date": "2026-11-07",
+    "archived_evidence": [
+      "evidence_homicide/singapore_cases_M890891_web_table_extract.json",
+      "evidence_homicide/singapore_victims_M890911_web_table_extract.json",
+      "evidence_homicide/singapore_population_M810001_web_table_extract.json",
+      "evidence_homicide/singapore_population_trends2023_web_pdf_extract.json"
+    ],
+    "evidence_manifest": "evidence_homicide/manifest.json"
+  },
+  {
+    "cell": "B44",
+    "city": "Tokyo",
+    "indicator": "homicide",
+    "original_value": 0.667,
+    "original_source": "doc: Tokyo Statistical Yearbook 2023 table 20-10",
+    "status": "definition_mismatch",
+    "verified_value": null,
+    "data_year": "2023（认知案件全年）；分母2023-10-01推计人口",
+    "geography": "Tokyo-to东京都全域，含区部、市郡部及岛部；不是仅东京23区或Greater Tokyo都会区",
+    "population": "14,099,993，2023-10-01东京都推计总人口，以2020国势调查为基准增减推计",
+    "definition": "表20-10総数/Tokyo-to行的『凶悪犯／殺人 Homicide』94为警察认知案件数。日本犯罪统计定义把未遂并入相应既遂罪（杀人预备罪除外），并非94名死亡受害者；抢劫杀人等亦单列。",
+    "primary_urls": [
+      "https://www.toukei.metro.tokyo.lg.jp/tnenkan/2023/tn23q3e020.htm",
+      "https://www.toukei.metro.tokyo.lg.jp/tnenkan/2023/tn23qv201000.csv",
+      "https://www.my.metro.tokyo.lg.jp/w/000-20231031-9027889",
+      "https://www.e-stat.go.jp/koumoku/koumoku_teigi/K"
+    ],
+    "evidence": "直接读取东京官方CSV：第2行地域代码13000/Tokyo-to，总数89098，殺人列94；CSV末尾题名明示表20-10为令和5年(2023)，来源警视厅。东京都2023-10-31人口公告明示2023-10-01总人口14099993。94/14099993×100000=0.6666669976，三位小数为0.667。政府e-stat『K安全』K4201定义的注意事项1(3)①明确未遂罪纳入相应既遂罪，杀人预备罪例外；1(1)说明案件计数规则。因此算术正确不等于致死凶杀率可比。",
+    "issue": "原值的数字与来源可复现，但『殺人認知件数』包含未遂且按事件计数；若把它与Detroit/Singapore死亡受害者率并列为统一homicide，则存在实质口径错误。94不能标成死亡人数，亦不能自动涵盖另列的抢劫杀人/伤害致死。尚未核实同年同地理范围、统一国际定义的死亡受害者总数。",
+    "recommended_action": "统一致死凶杀指标时暂不采用0.667作可比点值，保留缺失并另存原派生值及其真实标签『2023东京都殺人认知案件率（含未遂）』。找到同年完整死亡受害者表及分类映射前，不编更正值。",
+    "verification_limits": "web工具不支持CSV内容类型，已用本地HTTPS成功读取官方原CSV；e-stat定义网页和东京都人口公告正文均可读。未从94推算未知的既遂人数，也未把全国数填入东京。",
+    "access_date": "2026-11-07",
+    "archived_evidence": [
+      "evidence_homicide/tokyo_2023_table20-10.csv",
+      "evidence_homicide/tokyo_population20231001_web_text_extract.json",
+      "evidence_homicide/japan_e_stat_crime_count_definition_extract.json"
+    ],
+    "evidence_manifest": "evidence_homicide/manifest.json"
+  }
+]

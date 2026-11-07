@@ -1,0 +1,2005 @@
+Team Control Number 
+10174 
+Problem Chosen 
+A 
+2019 
+HiMCM 
+Summary Sheet 
+ 
+The growth of personal devices, from handheld mobile phones to electric vehicles, has 
+led to an increasing demand for “free” electricity from public charging stations. In response, 
+public places like airports and coffee shops are increasing the availability of electrical outlets for 
+their visitors. However, this “free” energy is actually paid for by private businesses and the 
+government. Consequently, it is important to study the rapid growth of electricity energy 
+consumption and to understand its effects on national level, as well as investigate approaches to 
+mitigate the cost. Our objective is to develop a mathematical model to predict the economic costs 
+of increasing public electrical outlet availability over the next decade and investigate ways to 
+reduce the impact and its cost.  
+Our model consists of a continuous time-dependent function that incorporates 1) a 
+computational agent-based model to characterize the small-scale interactions between people and 
+device charging availability in a single public location and 2) an analytical model describing 
+electric vehicle charging. For the agent-based model, we explore several location-specific 
+parameters that vary across different public locations and analyze the differences in cost across 
+locations and with increasing outlet availability. We integrate our models to predict total 
+economic cost due to public charging of personal devices and provide suggested guidelines to 
+reduce cost. Our model accounts for many parameters such as the influx distribution of visitors 
+to a specific destination that is backed up by extensive research and is thus highly robust and 
+applicable to model different situations.  
+Overall, our model predicts that energy consumption due to the charging of personal 
+electronic devices and electric vehicles will increase in the coming years. For cost due to electric 
+charging of personal devices, we found that schools and airports suffer the most costs of 
+increasing demand and that public outlet density was strongly correlated to an increase in 
+electrical consumption. For low public outlet densities, we found an electricity cost for personal 
+devices to grow from $150,000 to $180,000 over a ten year period. On the other hand, for high 
+outlet density, we determined a price change from $450,000 to $525,000 per year. For electric 
+vehicles, we estimated a cost change from $50,000,000 to $400,000,000 per year between 2018 
+and 2028.  We also determined that the ideal outlet density for airports and coffee was 3 outlets 
+per 576 ft2 and 3 outlets per 144 ft2 respectively. For electric vehicles our model was able to 
+predict the total energy consumption of 2018 within 0.048 TWh. We also found that the overall 
+cost associated with publicly charging electronic devices was relatively low due to the low price 
+of generating electricity. While the associated cost of publicly funded charging is relatively 
+small, it can be further decreased through restrictions on public outlets by public area 
+management and the integration of increasingly efficient technologies in the coming years. 
+  
+Newspaper Article 
+ Personal electronic devices, from the phones and laptops we see and use everyday to the 
+slightly less ubiquitous electric cars, have become increasingly prevalent in the last few years. In 
+accordance with this increase in device presence, public areas such as airports and coffee shops 
+have begun to increase electrical charging outlets to satisfy the resulting demand. Unfortunately, 
+this “free” energy is actually paid for by business and governments. 
+We were tasked with answering the question of, “How does the cost of offering free 
+electricity change over time?” To do so, we first wanted to understand the reasons behind this 
+change in electricity cost over time. We looked into the change in the price of electricity over 
+time and change in the attendance of a location over time. Next, we identified different public 
+spaces and characterized how each location differed from the others in terms of electricity usage. 
+We settled on airports, libraries, schools, railway stations and coffee shops as the public 
+destinations we wanted to model. 
+To build our model, we wanted to understand the different factors that influence electrical 
+energy consumption: number of visitors and distribution throughout a day, number of outlets, the 
+number of personal electronic devices and corresponding energy needed. With these ideas in 
+mind, we created a Netlogo model to calculate the usage of electricity while incorporating the 
+complexity of each variable. In this agent based model, we were able to simulate the actions of 
+individuals with a set number of devices with random charge distributions and their appearance 
+in each of the destinations. While this model could incorporate the factors of energy 
+consumption for individuals in public spaces, it could not be used to model electric car energy 
+consumption.  
+We created a second model to model the consumption of electricity to charge electric cars 
+30%, a safe estimate to travel from the charging station back home. Using the time it takes to 
+charge a car battery and the average number of available charging stations, we estimated the 
+amount of energy used to charge electric cars in public during one day across the nation. With 
+this data, we calculated the average electric consumption for the United States in one year.  
+With our models, we estimated the cost of electricity for electric vehicles to be 
+$50,000,00 in 2018 and for this value to increase to 400,000,000 in 2028. We also found 
+electricity cost for personal devices to grow from $150,000 to $180,000 over the same ten year 
+period. Using other calculations and data from our model, we found that outlet density strongly 
+correlated to increase in costs of electricity and that Schools and Airports consisted of the 
+majority of public charging costs due to their large volumes.  
+With our model in hand, we advise two main methods to reduce costs associated with 
+charging electronic devices. Primarily, business and other public places can restrict access to 
+electrical outlets thereby reducing their overhead with visitors utilizing their electricity. 
+Additionally, we predict that electronics efficiency will increase in the coming years with new 
+advances in batteries and other technologies which will reduce the cost associated with charging 
+electronic devices.  
+ 
+ 
+Contents
+1 Introduction 1
+1.1 Problem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2 Problem Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+2 Methodology 2
+2.1 General Deﬁnitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.2 General Assumptions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+2.3 General Cost Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.4 Commercial Electricity Price . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.5 Personal Device Agent-Based Usage Model . . . . . . . . . . . . . . . . . . . . . 5
+2.5.1 Agent-Based Model Assumptions . . . . . . . . . . . . . . . . . . . . . . 7
+2.5.2 Capacity and Size of Destination . . . . . . . . . . . . . . . . . . . . . . . 8
+2.5.3 Public Outlet Density . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2.5.4 Destination Attendance over Time . . . . . . . . . . . . . . . . . . . . . . 9
+2.5.5 Visitor Inﬂux Distribution . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.5.6 Device Assignment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.5.7 Battery Life . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.5.8 Duration of Stay . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.6 Electric V ehicles Energy Usage Model . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.6.1 Electric V ehicles Based Assumption . . . . . . . . . . . . . . . . . . . . . 12
+2.6.2 Electric V ehicle Charger Types . . . . . . . . . . . . . . . . . . . . . . . . 13
+2.6.3 Electric V ehicle Count . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+2.6.4 Electric V ehicle to Outlet Ratio . . . . . . . . . . . . . . . . . . . . . . . . 13
+3 Results and Analysis 14
+3.1 Electrical Consumption Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.2 Cost Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.3 Electric V ehicle Cost Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.4 Strengths . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.5 Weaknesses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+4 Suggested Guidelines (Initiatives, Requirements) 18
+5 Conclusion 19
+Appendices
+Team 10174 Page 1 of 20
+1 Introduction
+1.1 Problem
+In response to the ever-increasing integration of personal electronics such as mobile phones,
+laptops, and electric vehicles in people’s daily lives, public places are expanding the availability
+of electrical outlets for their visitors. However, this expansion comes with a economic cost that
+must be accounted for. In addition, different public destinations have unique characteristics, such
+as hours of operation, distribution of visitors, and availability of outlets, which impact electricity
+consumption throughout a day. Given the potential effects of increasing public charging of personal
+devices, initiatives must be implemented to reduce the costs of such trends.
+Simply put, our objective is to model the change in public electrical charging availability and
+develop a model for the economic cost of this increase over the next decade in the United States.
+We also aim to explore how this cost varies over different destinations and ways to reduce it.
+1.2 Problem Analysis
+With the rise of personal electronic devices and the corresponding need to charge them, users
+are utilizing public charging stations more and more. Consequently, public places are faced with
+the increasing demand and need to provide public charging stations for the public. However, the
+increased energy consumption has required public places to install more outlets and resulted in
+higher electricity bills. For instance, as part of the 907 million dollar expansion of Terminal 2
+opened at San Diego International Airport, USB - enhanced power ports at every seat were added,
+leading to the addition of more than 1600 in total [1].
+Businesses and governments, thereby tax payers, are often the ones faced with the installation
+fees for the charging stations and the higher electricity bill. The median cost of installing one
+electric outlet is 193 dollars with a range from 148 to 200 dollars [2]. Electric vehicle stations
+cost even more with Level 3 chargers costing around 100000 per station [3]. Fortunately, for some
+electric vehicle charging stations, the government has offered rebates and incentives. In addition
+to the ability to qualify for public level 2 rebate, states such as Alabama have given grants to create
+charging stations. Similarly, California provides loans for the purchase and installation of charging
+stations to customers [4].
+Y et, despite the additional cost, the increasing number of electric charging stations have also
+been found to have positive effects with places having a increased guest retention rates. The aver-
+age guest stayed 17% longer at conventions and 14% longer at trade shows while guest engagement
+rates increased by 12% at trade shows[5]. Theorizing that these results are applicable across the
+board at coffee shops or other stores, the increased guest stay will lead to more goods being bought
+and higher revenues for each destination. In addition, more charging stations help alleviate the
+long waits at airports or the railway station. It also helps reduce the work on technicians and cus-
+todians who have had to deal with moving chairs and unplugged machinery from people searching
+for electrical outlets [1].
+Keeping these factors in mind, when initially developing our model, we listed out the aspects of
+the problem that we aim to address along with the sections in the paper where they are discussed:
+• How has public outlet energy consumption changed, and how will it continue to change?
+(Methods in Section 2.5; Results in Section 3.1)
+Team 10174 Page 2 of 20
+• What are the impacts on and requirements of public places with increased demands? (Section
+1.2)
+• What is the ﬁnancial cost of increasing outlet availability? How is it paid? (Methods in
+Section 2.3; Results in Section 3.2; Section 1.2)
+• How does the model change for different types of public places? (Methods in Section 2.5;
+Results in Section 3.1)
+• What can be done to reduce the costs of public energy consumption? How do these changes
+inﬂuence the model? (Section 4)
+The quantitative questions to be addressed require a mathematical model that can predict eco-
+nomic cost over a span of time, taking into account outlet availability as well as various factors
+that capture the other differences between different types of public places [and allow us to explore
+ways to reduce cost]. Thus, it is intuitive to create a model of cost where cost is a function of time
+and depends on some other factors that, too, are time-dependent.
+It is simultaneously known that the processes governing outlet availability on a location-by-
+location basis form a complex system consisting of location speciﬁcs and the number, behavior,
+and interactions of individuals within the location. To simulate such a random system, we choose
+an agent-based model. Using both the cost function and the agent-based model, we aim to in-
+tegrate large-scale changes in electricity parameters over time with small-scale human charging
+behaviors to create a robust and accurate model to predict the cost of charging personal devices in
+public places. Additionally, to model the workings and behaviors associated with electric vehicle
+charging, we created an analytical model to understand the changing cost of public electric vehi-
+cle charging based on parameters such as battery capacity and varying charger rates at different
+charger stations.
+2 Methodology
+As explained above, our objective is to create a model to estimate the cost associated with the
+use of public electric outlets for charging personal electronic devices over a ten year period specif-
+ically for the United States. Using this base model, we plan to vary various factors to explore the
+impacts of increases in public outlet availability in several common public destinations. Finally, by
+analyzing our model’s results, we will propose initiatives and guidelines to reduce the detrimental
+costs associated with the growth in energy demand associated with charging personal electronic
+devices in public locations.
+2.1 General Deﬁnitions
+Public Spaces: Areas available to the general public that do not require specialized access. Ex-
+amples include public squares, parks, beaches, libraries, coffee shops, airports, train stations, bus
+stations, malls, movie, and rest stops.
+Personal Electronic Devices: Non-commercial devices which require periodic charging to func-
+tion, including laptops, mobile phones, tablets , radios, cassette players, portable digital assistants,
+audio devices, watches with input capability, and reminder recorders.
+Team 10174 Page 3 of 20
+Destinations: Destinations are the different types of public places where a Visitor may consume
+electrical power from an outlet. Our deﬁnition for each destination we evaluate is given below:
+Airports: Public airports of any size (rather than private airports).
+Coffee Shops : Sit-down coffee shops with seating (rather than drive-through or on-the-go
+coffee shops located in larger businesses or institutions).
+Railway Terminals: Only Amtrak Stations, which are ofﬁcial United States government
+passenger railroad stations.
+Libraries: Public libraries (rather than academic libraries, school libraries, special libraries,
+Armed Forces libraries, and government libraries, since their public availability and use is
+unclear).
+Schools: Public secondary and post-secondary schools, as it is more likely that students at
+these schools have devices to charge.
+Shopping Malls: All malls open to the public, from strip malls to shopping centers.
+Ofﬁces: Company ofﬁces, which are not available to the public.
+Visitors: The people who go to each destination. For instance, for airports the visitors would be
+the people boarding the airplanes.
+Capacity: The total number of visitors a destination can hold at any given time.
+Usage/Electrical Consumption: Amount of energy consumed by personal device charging, in
+units of kWh.
+Flybys: Visitors to a certain destination who do not sit/stay at the location for prolonged periods
+of time. For example, at a coffee shop a ﬂyby would visit, buy a coffee and leave, without charging
+their devices.
+2.2 General Assumptions
+Assumption: The growth of number of US locations for each destination type of interest over the
+next 10 years is negligible.
+Justiﬁcation: The % changes in number of US locations per year for Airports, Coffee Shops,
+Railway Stations, Libraries, and Schools were found to be -0.5% (Appendix B3)[6], 0.56%
+[7], 0.125% (Appendix B2)[8], 0.011% (Appendix B4)[9], and 0.0037% (Appendix B1)[10],
+respectively. All of these values are too small to be of signiﬁcant impact in our model;
+therefore, growth in number of locations can be safely ignored.
+Assumption: Population growth over the next 10 years is inconsequential.
+Justiﬁcation: US population growth has stagnated to 0.62% per year, equating to a 6%
+growth in 10 years [11]. While this percentage is not insigniﬁcant, a majority of the growth
+can be attributed children under the age of 10 who generally do not have personal devices
+and thus do not contribute to our model.
+Assumption: The weekday operational hours are a reasonable estimate for the operational hours
+throughout the week.
+Team 10174 Page 4 of 20
+Justiﬁcation: While there may be different operational hours during the weekend compared
+to the weekday, there are more weekdays and it can act like a good approximate for the
+weekend operational hours. The difference is negligible in the long run.
+Assumption: Percentage of the population with personal electronic devices (excluding electric
+vehicles) does not change over a ten year period.
+Justiﬁcation: As discovered by the Pew Research group, personal electronic devices, specif-
+ically phones, laptops and tablets have reached market saturation and as such there has been
+no growth in recent years [12].
+Assumption: Electric efﬁciency will remain constant over the next 10 years.
+Justiﬁcation: Since we are only projecting and thereby concerned about the next ten years
+of electricity consumption and cost, we can reasonably assume that there will be no extreme
+innovations in electric efﬁciency to have a non-negligible effect on our model.
+2.3 General Cost Model
+To model the growing cost of public electricity consumption for personal devices ( C ($)) over
+time, we split C into two factors: commercial price of electricity per kilowatt hour ( P ($/kWh))
+and total electricity consumption for personal devices in the public commercial sector ( U, kWh).
+Thus, the equation governing our cost model is
+C(t) = P(t) ∗U(t) (1)
+P(t) is a relatively straightforward function of time that can be derived from data and is dis-
+cussed in Section 2.4. On the other hand, total electricity consumption by only personal devices in
+public locations U(t) is complex and depends on interactions between visitors and charging spots
+in a destination on a small scale. Thus, the agent-based model will be used in the calculation of U,
+which will be fed into Equation 1 to produce cost.
+2.4 Commercial Electricity Price
+To determine the change in commercial electricity price P over the years, we analyzed electric-
+ity prices from 2001 to 2018 in cents per kilowatt hour ( ¢/kWh) from the US Energy Information
+and Administration (See Appendix A1) [13]. From a general practical understanding of trends in
+electricity use, a logarithmic regression is the most ﬁtting. Speciﬁcally, the price of electricity has
+increased due to the cost of implementing infrastructure to support increased electricity demands.
+Over the years, as the necessary infrastructure is constructed, the change in the price of electricity
+has decreased, and thus price increases at a slower and slower rate.
+The trend of commercial electricity price ﬁtted to a trendline of Price = 359.06 ∗ ln year −
+2721.2. Using this projected trend, the future price of electricity was calculated (Table 1) By 2028,
+the commercial price of electricity is expected to reach 12.97 ¢/kWh.
+Team 10174 Page 5 of 20
+Y ear Commercial Price of Electricity ( ¢/kWh) % Change in Price
+2019 11.37500643 —
+2020 11.55280292 1.563045164
+2021 11.73051141 1.538228366
+2022 11.90813199 1.514175948
+2023 12.08566475 1.490853143
+2024 12.26310978 1.468227261
+2025 12.44046715 1.446267537
+2026 12.61773697 1.424944991
+2027 12.79491931 1.404232297
+2028 12.97201425 1.384103673
+Table 1: The forecasted commercial price of electricity from 2019 to 2028 with % change in price
+between years.
+As seen from Table 1, the percent increase in commercial price of electricity year to year is
+around 1.45% in the next 10 years. While the residential price and commercial price of electricity
+are not directly proportional, the US Energy Information Administration projected the residential
+price of electricity to increase 0.8%-1% from 2019 to 2020[14], indicating that our estimation
+produces reasonable values.
+2.5 Personal Device Agent-Based Usage Model
+This model produces U, the total electricity consumption for personal devices in the public
+commercial sector. We quantify the amount of electrical consumption from public charging outlets
+for personal electronic devices at each destination and how the energy consumption changes over
+time.
+Since outlet usage at a destination is inherently contained within a system of randomly inter-
+acting components, we develop a computational agent-based model using the NetLogo language
+to describe the relationships between visitors and the availability of outlets. Our model represents
+a single instance of any destination (e.g., a single coffee shop) by an arrangement of outlet and
+non-outlet seats (Figure 3). Throughout the course of a ”day”, a certain number of visitors “enter”
+the destination according to a visitor inﬂux distribution. A visitor may own any subset of mobile
+phone, laptop, tablet (including the empty set) with devices probabilistically assigned according to
+their prevalence within the general population.
+For each device, a random initial battery level is assigned based on the tendency that devices
+have less battery later in the day due to use. Each visitor with at least one device chooses an
+available seat (favoring outlet seats) and stays for a random duration while visitors with no devices
+represent ﬂybys who do not go to a destination to use devices (e.g., people at a coffee shop who
+simply grab coffee and go). Each device type has a constant battery drainage and charge rate;
+at each “tick” of the model, every device drains, and the device with minimum battery for every
+visitor at an outlet seat is charged (unless all devices are at 100%). A visitor leaves their seat
+when either 1) their stay duration expires or 2) they run out of battery (0%) on any one of their
+devices. The seat numbers and outlet ratios, total visitors, visitor inﬂux distribution, and visitor
+Team 10174 Page 6 of 20
+stay duration are all destination-dependent and calculated from available data and statistics, which
+are detailed in the sections following the assumptions.
+Figure 1: NetLogo Model Flowchart. Components are detailed in the following sections after
+assumptions
+(a) During the morning rush hour
+ (b) Later in the day
+Figure 2: NetLogo model for Coffee Shop. Green seats have outlets, while blue ones do not. White
+text displays remaining battery levels and remaining duration in destination.
+Team 10174 Page 7 of 20
+2.5.1 Agent-Based Model Assumptions
+Assumption: Shopping malls, parks, beaches, movie theaters, rest stops and ofﬁces have a negli-
+gible amount of public charging, and consequently an insigniﬁcant cost.
+Justiﬁcation: People do not stop to charge their personal devices while they are shopping
+since they are constantly moving and there are not many outlets publicly available. Addi-
+tionally, ofﬁces, as deﬁned in General Deﬁnitions, are not available to the public, so there
+is no possibility of public charging. For parks and beaches, there are no available charging
+outlets. Finally, for movie theaters and rest stops, despite the presence of available charging
+outlets, the time spent charging is largely negligible because people have little time to do so.
+Assumption: Charging in airports only occurs while passengers are waiting at boarding/departure
+gates. Similarly, charging in railway stations only occurs at platforms while passengers are waiting
+to board trains.
+Justiﬁcation: People are in transit at all other locations in an airport/railway station. There-
+fore, the only time travelers have to charge personal devices is when they are at gates or
+platforms.
+Assumption: The number of Canadian Amtrak riders and stations are negligible.
+Justiﬁcation: Of the total 526 Amtrak stations in North America[8], only 9 stations are
+located in Canada [15]. This accounts for only 1.71% of total Amtrak service which is a
+negligible proportion for our calculations.
+Assumption: At a school, students usually arrive between 7 and 7:30 am. There is a inconse-
+quential amount that arrive/leave school throughout the middle of a school day for appointments
+or other obligations
+Justiﬁcation: Since the average U.S. public school day begins at 7:59 am, all students will
+arrive between 7:30 am and 8 am[16]. This assumption ignores tardy arrivals and slight
+variations in student attendance over the course of a day, which are both proportionally neg-
+ligible.
+Assumption: The population of teachers is negligible when compared against the student popula-
+tion in a school.
+Justiﬁcation: The average student to teacher ratio in the American Public School system is
+16 students to 1 teacher[17]. Since teachers account for less than 6% of the total population
+in the school, it can be relatively safely assumed that students account for the vast majority
+of electricity usage for personal electronics in schools.
+Assumption: The only devices that will be charged at a public place are a mobile device, laptop,
+or a tablet.
+Justiﬁcation: As concluded by the Pew Research Center in June 2019, nearly 77% of the
+American adult population have phones, 74% have laptops, and 53% have tablets. Other
+personal devices, including radios, CD, smartwatches, and E-readers are owned by less than
+25% of the population and are not usually charged in public commercial destinations, making
+their impact on our model inconsequential[18].
+Assumption: Before noon, the percent of battery someone initially walks into a destination is a
+random value between 50% - 100%. After noon, the percent of battery is a random value between
+25% - 75%.
+Justiﬁcation: As the day progresses the battery of someone’s devices decreases as they are
+being used more.
+Team 10174 Page 8 of 20
+Assumption: The time it takes to charge the battery of a personal device is linear throughout the
+entire charging process, e.g. charging from 5% to 6% is the same amount of time from 90% to
+91%.
+Justiﬁcation: According to Electropedia, the charging percentage vs voltage of a typical
+lithium ion battery (common phone battery) is relatively linear in all stages except for the
+very beginning and end stages of charging [19].
+Assumption: A visitor will use all of their devices for the full duration at a destination.
+Justiﬁcation: This justiﬁcation is used to simplify our model and is based on the fact that
+in an increasingly connected world, multiple devices are often used in conjunction for multi-
+tasking. Furthermore, devices consume power even when not being directly used.
+Next, we describe the deﬁnitions and calculations of several important variables that change be-
+tween destinations. The ways in which the various factors change here represent our answer to
+how the model changes for different destinations.
+2.5.2 Capacity and Size of Destination
+The average capacity determines the maximum amount of people at a given destination at the
+same time. As capacity is dependent on the layout of each individual destination, we estimated
+average capacity. When lacking sufﬁcient data, we calculated capacity based on the approximation
+that there is 1 seat for every 36 ft 2 [20]. Please reference [WHICH APPENDIX] to view the
+derivations for each destination’s average capacity number.
+Destination A verage Capacity Number Square Foot
+Airports visitors 2,709 97,541
+Coffee Shops 50 - 70 guests on average 1000 - 1750
+Railway Stations 70 Visitors 2534
+Schools — Students 173,727
+Libraries 600 people 21,500
+Table 2: The average capacity number and square foot for each destination
+2.5.3 Public Outlet Density
+To determine how cost changes in relation to an increase in the number of publicly available
+outlets, we created a measure called public outlet density ( POD) that gives the number of square
+feet per 1 outlet available to the public.
+Additionally, we wanted to ﬁnd the ratio between the number of outlets that existed with a
+certain public destination and the number of seats that existed. This saturation of seats with outlets
+was thought to be a well-off metric of what a public destination might strive to increase and an
+easy-to-understand value. The number of seats that are in an establishment was determined to
+be its square footage divided by 36 sq. ft./person as this is the square feet for an occupant to ﬁt
+comfortably in an establishment.
+sq. f ootage
+pod
+sq. f ootage
+36
+= outlet
+seat ratio (2)
+Team 10174 Page 9 of 20
+In our agent-based model we varied the POD value as we believed that public destinations
+would strive to increase this value, thus making more outlets available to the public. To ﬁnd
+bounds in which to vary POD we looked at the outlet
+seat ratio. A 1 to 1 ratio for number of outlets to
+seats would be optimal and thus we found the POD value that would produce this ratio, 1
+36 , and set
+this to our upper bound. However, this upper bound was then decreased for Airports and Schools
+because it would be impossible (and undesirable in the latter case) to install so many outlets. On
+the other hand, a 0 to 1 ratio is least optimal. This gives a range of 0 to upper bound, between
+which 3 more evenly spaced POD values are evaluated; in order, the 5 levels for POD are named
+zero, low, low-mid, mid-high, and high. Note that low-mid is twice the density of low, and high
+twice the density of low-mid.
+2.5.4 Destination Attendance over Time
+Energy consumption of a particular destination was thought to be reliant on the number of that
+particular destination in the United States as well as the average number of people (v) that go to
+these destinations (d) per day. Because these two attributes are inherently correlated, we deemed
+it necessary to incorporate them into one variable describing the number of people per destination.
+To understand how this value changes over time, we differentiated it producing the equation:
+d
+dt ( v
+d ) = dv
+dt ∗ 1
+destinations − dd
+dt ∗ 1
+destinations 2 ∗ v (3)
+Looking at (site assumption) , we see that the change in the number of a particular destination
+is insigniﬁcant and thus can be reduced to 0. This makes our differential equation completely
+dependent on the ﬁrst term as the second one reduces to 0.
+dv
+dt = %∆ ∗ destination visitors
+year ∗ v
+Integrating this gives us the equation below whereI is our initial value of people per destination.
+v
+d = Ie% change ∗ t (4)
+Through our research, we were able obtain % change values for the number of attendees of a
+particular destination. For secondary schools, the % change followed a piecewise function meaning
+the % change value projected to be constant from 2016 to 2023 and then change to another value
+that would stay constant from 2023 to 2028.
+2.5.5 Visitor Inﬂux Distribution
+To develop a distribution function describing the density of people that come at a certain time at
+which a destination is operational, we researched the”peak” hours of every destination based on the
+Google Popular Times. In order to determine Google Popular Times, Google uses aggregated and
+anonymized data from users who have opted in to Google Location History and the popular times
+are based on the average popularity over the past several weeks[21]. Popular times correspond to
+the relative number of visitors who came to the destination which we can deﬁne as visitor inﬂux.
+We looked at multiple locations across the United States to ensure that the trends in popularity
+were not inﬂuenced by regional differences. Figure ?? describes one of such data points for the
+Team 10174 Page 10 of 20
+Los Angeles International Airport. Looking at airports across the nation, we noticed that airports
+tend to follow a bimodal distribution with peaks around 11 am and 8 pm.
+(a) L.A. International Airport Distribution
+(b) Normalized Airport Distribution Function
+Figure 3: The inﬂux distribution and normalized airport distribution function of the L.A. Interna-
+tional Airport.
+Once we collected visitor distributions of each destination, we devised quintic and quartic ﬁts
+to describe this distributions of people throughout the day by utilizing speciﬁc data values of time
+and number of people. We then normalized these distribution curves for any location of a speciﬁc
+destination by ensuring that the trapezoidal Riemann sum of the function was equal to 1. By doing
+so, we created a probability density function so that we could calculate the percentage of total
+visitors arriving in a given time period.
+For example, in the Airport distribution of the L.A. Internal Airport shown above, the area
+under the curve between 3 and 4 am can be calculated to be 0.0188, so approximately 1.88% of
+the total visitors come in this time frame.
+t2− t1
+2
+∑
+n=1
+f (xi) + f (xi+1)
+2 ∗ 1
+2 = normalization f actor (5)
+The process of normalization was undertaken by performing a trapezoidal Riemann sum for our
+quintic functions (for each destination) using the hours that a particular destination is operation as
+our bound and a 30 minute interval. The function was then divided by the value of the Riemann
+sum (normalization factor) as to make the new Riemann sum value 1 while maintaining the x-
+intercepts of the function.
+For the equation above t2 − t1 is equal to the working hours of a destination divided by 2 for
+the number of 30 min interval that this time span contains. Note that all students at a school come
+in from 8:00 - 8:30 as noted in our assumptions.
+Destination Working Hours
+Airport 24 Hours
+Coffee Shops 04:00 - 16:00
+Railway Stations 24 Hours
+Schools 08:00 - 15:00
+Libraries 09:00 - 18:00
+Table 3: Working Hours of each destination.
+Team 10174 Page 11 of 20
+This normalization is important as then at every 30 minute interval our model is able to retrieve
+a certain density from our normalized equation and then multiply this by the average number of
+visitors for a particular destination, thus giving us the number of people that would visit within the
+speciﬁed 30 minute interval. The calculated number of people that would visit within a speciﬁed
+30 minute interval was rounded and then they were randomly distributed across the 30 minute
+interval.
+Destination Normalized Visitor Inﬂux Distributions
+Airport y = 1
+36.648 (− 6.991 + 4143x − 0.7746x2 + 0.06206x3 − 0.002372x4 + 0.00003342x5)
+Coffee Shop y = 1
+28.395 (109.8 − 72.36x + 17.47x2 − 1.932x3 + 0.09991x4 − 0.001963x5)
+Railway Station y = 1
+36.648 (− 6.991 + 4143x − 0.7746x2 + 0.06206x3 − 0.002372x4 + 0.00003342x5)
+School y = 2
+Library y = 1
+14.307 (− 208.4 + 64.58x − 7.340x2 + 0.3651x3 − 0.006703x4)
+Table 4: Normalized Visitor Inﬂux Distributions for each destination.
+2.5.6 Device Assignment
+Based on research, we found the percentage of US adults that have a mobile phone, laptop, or
+tablet, as per our assumption regarding personal devices. These probabilities were implemented
+within our NetLogo model, as when a visitor enters the destination, they are either assigned a
+possibly empty subset of mobile phone, laptop, and tablet based on the probabilities. If a visitor is
+assigned no devices, they are considered a “ﬂyby” meaning that they are at a particular destination
+for purely commercial reasons and will not be sitting down to charge their device. The probability
+that someone had a mobile device is 0.77, laptop is 0.73, and tablet is 0.53.
+2.5.7 Battery Life
+Additionally, every device type (mobile phone, laptop, and tablet) was assigned its own lin-
+ear rate of battery drainage and charging (in % per min). Every minute in the simulation, every
+device of every visitor drains, and for the visitors at an outlet seat, their lowest-charged device is
+also charged (unless all devices are at 100% battery, in which case no charging and no electrical
+consumption occurs).
+Drainage rate ( de
+dt ) was derived from each device’s average battery life . Charging rate ( dc
+dt )
+was derived from the electrical capacity of each device’s battery as well as the electricity that each
+device’s charger can intake from an outlet per minute.
+de
+dt = 100%
+device avg. battery li f e (min) (6) dc
+dt = 100%
+device battery capacity (kW h)
+device charge rate( kW h
+min )
+(7)
+Team 10174 Page 12 of 20
+2.5.8 Duration of Stay
+Table 5 displays the range of time that an average US visitor will spend at a destination; each
+visitor is assigned a random duration of stay within the range. These values inﬂuence the time
+spent charging personal devices.
+Note that airport and railway station waiting time does not include time spent in the security
+line because of our assumption that nobody charges their phone while waiting in the security line.
+Destination Range of Stay Duration
+Airports 1 hour - 3 hours
+Coffee Shops 1.12 - 3.4 hours
+Railway Stations 30 - 45 minutes
+Schools 6.5 hours
+Libraries 0.65 - 1.42 hours
+Table 5: The range of time an average visitor spends at each destination
+2.6 Electric V ehicles Energy Usage Model
+With the rise of electric vehicles (EVs) over the past couple of decades, electric vehicles are
+a common occurrence used by people and considered a personal device. However, due to distinct
+differences between electric vehicles and other personal devices such as mobile phones or laptops,
+we considered their factors separately. A computational Python model was created in order to
+analytically calculate the EV electricity consumption and its dependence on time.
+0.3 ∗ battery capacity ∗ outlets = daily EV electricity consumption (8)
+0.3 ∗ battery capacity represents the amount of energy it takes to charge an EV battery by 30%
+per one outlet. An average battery capacity of 58.8 kwh for electric vehicles was used in order to
+simplify our model. This resulting number is then multiplied by the number of available public
+outlets to ﬁnd daily EV electricity consumption. This equation was restricted by the amount of
+charging that could occur in one day by summing up the time a charge would take.
+0.3 ∗ battery capacity
+charger wattage = charging time (9)
+Once a 24 hour limit was reached, a day was ended, and a new day would start until a 365 day
+cycle was completed. This process was done for multiple years.
+2.6.1 Electric V ehicles Based Assumption
+Assumption: An owner of an electric vehicle charges their car once a day
+Justiﬁcation: Since electric vehicle charging is cheap and common, owners tend to charge
+their car once a day, similar to phones, to prepare for the next day.
+Assumption: Charging stations are always being used.
+Team 10174 Page 13 of 20
+Justiﬁcation: Due to the high frequency of electric vehicles, low number of charging sta-
+tions, and long time to charge, charging stations are always occupied.
+Assumption: 20% of all charging for electric vehicles are done at a public charging station.
+Justiﬁcation: According to the Ofﬁce of Energy Efﬁciency and Renewable Energy, ”electric
+vehicle drivers do more than 80% of their charging at home” [22] due to the low, stable
+residential electricity rates.
+Assumption: Location of types of electric vehicle charging stations are randomly distributed
+across the country.
+Justiﬁcation: In order to simplify our model, the concentration of electric vehicle charging
+stations in locations such as California was ignored [23].
+Assumption: An electric vehicle charges 30% their battery when at a public charging station.
+Justiﬁcation: An average EV battery can handle 100 miles [24] and thus 30% of this allows
+a person to drive 30 miles. We deemed this a valid amount at a public station as an average
+person’s work commute is 30 minutes[25] and 30% would be plenty to get home where they
+can charge their car.
+2.6.2 Electric V ehicle Charger Types
+There are three different type of electric vehicle charges: DC fast, Level 1, and Level 2. Each
+is able to charge at various voltages and currents, thus charging vehicles at different rates. Our
+chosen unit was kW as our metric for measuring EV battery capacity was kWh.
+Charger Type V olts kW Relative Amounts
+Level 1 120 1.44 5.4%
+Level 2 240 9.6 79.7%
+DC Fast 480 45 14.9%
+Table 6: Charging intensity of various EV charger types [26].[27].
+2.6.3 Electric V ehicle Count
+The electric vehicle industry is booming and thus the rate at which electric cars on the road
+within the United States is increasing rapidly. By running different kinds of regressions on the data
+found for the number of electric cars in the US over time, we were able to produce the quadratic
+equation 18 , 590t2 − 418, 483t + 2 ∗ 106 with a coefﬁcient of determination of 0.9947 [28]. This
+equation is able to model the number of electric vehicles on the road in the US t years after 2000,
+as electric vehicles weren’t substantive enough to contribute to electricity consumption pre-2000.
+2.6.4 Electric V ehicle to Outlet Ratio
+A meaningful metric to consider when looking at the demand for public energy consumption,
+is the electric vehicle to outlet ratio. Similar to the previous section, various types of regressions
+were run for data over time for this ratio [28] and produced the quadratic equation 0 .1247t2 +
+0.6053t + 5.5952 with a coefﬁcient of determination of 0.9776.
+Team 10174 Page 14 of 20
+3 Results and Analysis
+3.1 Electrical Consumption Results
+We run the NetLogo simulation 100 times for each combination of Y ear and Public Outlet
+Density and plot the mean daily electrical consumption (Figure 4). Note that outlet density of 0 is
+not plotted as 0 outlets necessarily results in an electrical consumption of 0.
+(a) Airports
+ (b) Coffee Shops
+(c) Railway Stations
+(d) Schools
+(e) Libraries
+Figure 4: The forecasted daily electrical consumption (kWh) from 2018-2028 for different public
+outlet densities (colors) for each deﬁned destination (a-e).
+Several trends are revealed in these graphs. First, all trends generally follow trends in number of
+visitors over the years, which makes sense. Electrical consumption in Railway Stations and Coffee
+Team 10174 Page 15 of 20
+Shops increases as more visitors come to these destinations. Libraries experience a decrease in
+electrical consumption, and Airports and Schools remain relatively constant, again reﬂecting the
+visitor data. Secondly, Railway Stations and Libraries do not depend greatly on the public outlet
+density. This is because even under the lowest density, all visitors to each of these destinations has
+outlet access. For railway stations this is due to the low daily visitors, and for libraries is due to the
+general high availability of outlets. A similar effect is observed with only the highest two densities
+in both Airports and Coffee Shops; this means that for airports, a public outlet density of 3 outlets
+every 576 ft 2 is the minimum threshold at which every visitor throughout the day is guaranteed
+outlet access, and for coffee shops the same occurs at 3 outlets every 144 ft 2. For libraries, it
+is interesting to observe the great variability in daily electrical consumption; this is attributable
+to the visitors being condensed in the short working hours, which the random agent-based model
+simulated well. Schools showed a clear separation between each public outlet density, showing that
+even at a relatively high outlet availability, the school cannot provide an outlet for every student,
+which makes practical sense.
+3.2 Cost Results
+(a) Low POD
+ (b) Low - Mid POD
+(c) Mid - High POD
+ (d) High POD
+Figure 5: The total projected electricity cost from public charging stations for the years 2018 -
+2028, separated by the Public Outlet Density.
+To go from per-day kWh for each destination to total annual costs, we multiplied by 365 days
+and used Equation 1 to generate Figure 7. As years go on, due to increasing numbers of visitors
+Team 10174 Page 16 of 20
+to each destination, cost also increases slowly. More drastic increases in cost, from $150,000 to
+$500,000, are observed as POD increases from the Low to High setting. Additionally, it is clear
+that in all cases, School and Airport are the two destinations with the highest total annual cost.
+This is attributable to the large number of Schools in the US and the high number of visitors to
+each airport. Coffee Shops, Libraries, and Railway Stations contribute much less to the overall
+electrical cost of personal device charging. In fact, as POD increases, large contributors to cost are
+made even larger contributors; under High POD, Schools contribute to about 80% of total annual
+cost.
+(a) Low POD
+ (b) Low - Mid POD
+(c) Mid - High POD
+ (d) High POD
+Figure 6: The projected electricity cost from public charging stations for the years 2018 - 2028 for
+each individual destination, separated by the Public Outlet Density.
+In addition to analyzing total annual cost from all destinations, we also investigate annual cost
+per individual location of each destination, e.g. how much money a single coffee shop expends
+on providing personal device charging per year 6. Schools and Airports remain the highest-valued
+destinations, but Airport is now greater than School because each individual School does not ex-
+pend as much as each individual Airport, which has many more people per day. Again, cost
+increases over time and increases with POD as well, except in the cases discussed in Section ??
+where electrical consumption does not increase with POD. Overall, cost per destination increases
+by a factor of 2-3 from the low to high POD setting.
+Team 10174 Page 17 of 20
+3.3 Electric V ehicle Cost Analysis
+(a) Energy Consumption and EV to Outlet Ratio
+(b) EV Energy Consumption Cost
+Figure 7: The projected energy consumption, electric vehicle to outlet ratio, and cost for electric
+vehicles for the next 10 years.
+As per seen through our graph, our computational model was able to predict the yearly con-
+sumption of electricity from public charging of electric vehicles. This data was seen to be quite
+accurate when compared to known data for yearly consumption of electricity for EV . For the year
+2018 our model predicted a public electricity consumption of 0.618 TWh. 2.85 TWh of electricity
+were consumed in total for electricity cars, but it’s important to note that only 20% of charging
+is actually done at public charging locations [22] which provides us with a value of 0.57 TWh of
+electricity consumed through public charging.
+The graph above also shows a clear trend of the increasing cost in electricity consumption
+as time progresses which is most likely attributed to the rapidly increasing number of EVs and
+the demand for charging. Additionally, the electric vehicle to outlet ratio is also increasing over
+time but at a faster rate. Theoretically, if the vehicle to outlet ratio was able to decrease then the
+consumption of electricity by electric vehicles would be able to increase faster since the additional
+outlets could also become saturated.
+3.4 Strengths
+Our model is robust with nearly all inputs in the model and destinations statistically based
+on real-world data from trusted websites and governmental agencies such as the Department of
+Energy and U.S. Energy Information Administration. With the large data set of information we
+accumulated, our agent-based model accounts for a number of factors that determine electricity
+consumption, such as availability of outlets depending on the inﬂux of visitors to a destination
+over time, to the change in the number of destinations in a category over a series of year.
+Additionally, our agent-based model for usage allows accurate representation of the inherent
+random interactions present within any system. We can run a large sample size of 100 trials for
+every combination of outlet density and year, giving an accurate estimation of the expected cost of
+energy consumption.
+Team 10174 Page 18 of 20
+Our time-based equation allows us to take into account how factors will change over time. For
+instance, the number of visitors that go to libraries will decrease in the future as people convert
+more to electronic reading devices.
+Finally, one of the most unique aspects of our model is the ability to take account the varying
+characteristics of each destination and develop a model speciﬁcally for each destination and public
+outlet density. Rather than give a generalized cost due to public electric consumption over the years
+based on the average destination characteristics, we are able to specify the inputs. For example, the
+visitor inﬂux distribution of a school is a constant with all visitors, otherwise known as students,
+coming at the beginning of the day and not leaving. On the other hand, in a coffee shop, visitors
+may come variably throughout the day with a peak during breakfast and lunch hours.
+3.5 Weaknesses
+Our model was designed using information from the US and is not easily applicable to other
+countries. For instance, since the US is one of the most developed countries in the world, it has a
+majority of the necessary infrastructure needed for the transmission of electricity. Consequently,
+we are able to model the commercial price of electricity change for the next 10 year as a logarithmic
+function. On the other hand, the commercial price of electricity may be signiﬁcantly higher and
+increase faster for a developing country such as Albania.
+Moreover, in our research to back our data, there was an inconsistency in sources for related
+pieces of information due to speciﬁcity of information needed for different inputs. However, they
+are still a good estimate.
+Our model only considers certain public spaces as deﬁned in General Deﬁnitions. While this
+assumption was based on sound justiﬁcations, the sum of negligible contributions towards the cost
+of charging personal devices in public could impact our model.
+Our model likely overestimates electrical consumption because in reality, a large proportion of
+visitors to a coffee shop, for example, would be ﬂybys who only intend to grab coffee.
+Finally, the agent-based model does not take into account that most outlets in the US are paired,
+nor the possible impacts of tables with multiple seats or visitors arriving in groups. However, the
+model is still a good representation of the effects of limited and increasing outlets in a destination
+with non-uniformly arriving visitors.
+4 Suggested Guidelines (Initiatives, Requirements)
+As our model has shown, in the coming years, as public places continue to increase outlet avail-
+ability and demand for electricity continues to grow, electricity consumption will only increase. To
+combat this increasing cost, several measures can be taken to improve device efﬁciency and reduce
+associated costs for public places.
+Speciﬁcally, battery life can be greatly improved through research in more efﬁcient batteries
+and improved battery usage through the further development of charge recovery and low battery
+algorithms. Researchers across the world are currently tackling this problem with advances in
+Sodium and Potassium based batteries [29], and nanolithia cathode batteries[30] creating new
+batteries with increased charging capacity and energy efﬁciency. Energy efﬁciency can also be im-
+proved through the improvement of individual components within each device will bring down the
+Team 10174 Page 19 of 20
+total energy consumption of the device. For example, the optimization of energy consumption for
+hardware such as monitors, CPU’s and interfaces, will improve energy efﬁciency. Our model al-
+lows for these adjustments through the draining and charging rates of individual devices described
+in Section 2.5.7.
+Additionally, individual destinations may implement restrictions on the availability of charging
+outlets to reduce the cost associated with charging personal devices. In doing so, our model predicts
+the cost of electricity to decrease as a result of fewer outlets for visitors to use. Our model allows
+for this adjustment with variation in the POD or public outlet density described in Section 2.5.3.
+Furthermore, with the integration of electric vehicles into mainstream automobiles, it is essen-
+tial to improve the car battery efﬁciency. One of such ways is the implementation of silicon based
+electrodes which have an increased capacity of almost 20 times the value for current lithium-ion
+based batteries. Implementations of these devices in the future will reduce charging necessity and
+increase battery efﬁciency [31].
+All of these future implementations will alter our model; however, given our robust model, only
+slight changes must be made to account for these changes in the coming years. For example, to
+account for increased battery efﬁciency, our model would change the rate of depletion of charge as
+it is being used, the rate of battery replenishment, and the ranges for initial battery charge. These
+variables would need to be altered because with higher efﬁciency batteries, less charge is lost in a
+given unit of time leading to lower rate of depletion, and a higher range of initial battery charge. By
+accounting for these adjustments, our model would predict would decrease in total cost associated
+with charging personal devices in public areas.
+Finally, our model reveals an interesting pattern: decreasing public outlet availability is no use
+in reducing cost if a destination’s visitor inﬂux is so sparse that everyone will be able to use an
+outlet. In these cases, only other initiatives like increasing battery efﬁciency would effectively
+reduce costs.
+5 Conclusion
+As our world becomes more and more connected, personal electronic devices from phones
+and laptops to electric cars are becoming increasingly prevalent. A rise in electricity demand has
+accompanied the growth in personal electronic devices, creating a demand for charging stations
+and outlets. Public locations have recently began to satisfy the demands of public consumer needs
+by increasing the number of electrical outlets available to the public. In our model, we modeled
+growth by estimating the costs incurred by governmental and private business when fulﬁlling this
+demand by integrating an agent-based model and algebraic model. Since each location within the
+larger subset of public destinations is inherently different with regard to visitation hours, number
+of visitors, duration of stay, capacity to hold visitors, and number of destinations, we created a
+model to incorporate each of these factors.
+By measuring the cost of electricity over a ten year period at various public locations, we were
+able to ﬁnd that over time, the total cost of charging of personal electronic devices in public areas
+increased. We noticed that for airports and schools, there seemed to be insigniﬁcant growth in
+electrical consumption, and for railway stations and coffee shops we found that energy consump-
+tion increased; however, we also found that library consumption will decrease over time. These
+trends closely aligned with data we found regarding the change in visitors over time. To model
+Team 10174 Page 20 of 20
+increases in the number of public outlets available, we ran our model with varying public outlets
+densities and found that for railway stations and libraries, variation of public outlets showed very
+little impact since almost all visitors had access to outlets regardless of the density. At a low outlet
+density we found an electricity cost for personal devices to grow from $150,000 to $180,000 over
+a ten year period. On the other hand, for high outlet density, we determined a price change from
+$450,000 to $525,000 per year over the same period. However, for electric vehicles, we estimated
+a cost change from $50,000,000 to $400,000,000 per year between 2018 and 2028. For Airports
+and Coffee Shops, we deduced an ideal public outlet density of 3/ 576 ft 2 and 3/144ft2 respectively
+to ensure each visitor had access to at least one outlet. When comparing total cost due to energy
+consumption of all public destinations deﬁned in our model, we noticed that a majority of the con-
+tributions originated from Schools and Airports. This is likely due to the relatively vast number
+and visitor volume of schools and airports in comparison to other public areas. These destinations’
+contributions continued to increase as public outlet density increased, indicating that each of these
+destinations were more reliant on outlet density than the others. However, per-location, airports
+have the highest annual cost due to the large visitor volume.
+Another increasingly prevalent electric cost associated with personal devices is the charging of
+electric vehicles. Our model for electricity consumption of elect vehicles was found to very closely
+resemble existing data as it was able to predict electricity consumption of publicly charged electric
+vehicles within 0.048 TWh. We also saw that electric vehicle energy consumption will continue to
+increase linearly as a function of time.
+While these costs are expected to increase in the coming years, action can be taken to reduce
+the cost sustained from offering ”free” charging services at public locations. One such way is the
+restriction of the availability of outlets to the public. As can be seen in Figure 7, as POD decreases,
+cost of electric charging drastically decreases with a difference of nearly around $200,000 between
+our low and high POD metrics. Another possibility to reduce costs associated paying for electricity
+is the implementation of new technologies into the market. Speciﬁcally, new batteries such as
+sodium and potassium based batteries that have increased charge capacity, efﬁciency, and charging
+capabilities. While this may not occur in the ten year scope of our model, its impacts reducing
+the cost of electricity can easily be modelled through the implementation of an energy efﬁciency
+factor.
+Team 10174 References
+References
+[1] Harriet Baskas. Airports add outlets to serve power-parched passengers , 2013.
+https://www.usatoday.com/story/travel/flights/2013/11/20/airport-power-
+electric-outlet-charging-station/3641489/ .
+[2] improvenet. 2019 Electric Outlet Installation Cost , 2019.
+https://www.improvenet.com/r/costs-and-prices/insta ll-electrical-outlet.
+[3] Ben Holland Josh Agenbroad. RMI: What’s the true cost of EV charging stations? , 2014.
+https://www.greenbiz.com/blog/2014/05/07/rmi-whats- true-cost-ev-
+charging-stations#:~:targetText=Public%20stations%20are%20more%
+20expensive,for%20some%20features%20and%20brands.
+[4] Suzanne Guinn. EVSE Rebates and Tax Credits, by State , 2019.
+https://www.clippercreek.com/evse-rebates-and-tax-c redits-by-state/.
+[5] V eloxity. V eloxity Releases Market Research Data on Phone Charging Stations for Events,
+2019. https://veloxity.us/phone-charging-statistics-at-ev ents/.
+[6] Bureau of Transportation Statistics. Number of U.S. Airports , 2019.
+https://www.bts.gov/content/number-us-airportsa .
+[7] Nick Brown. Allegra Predicts Specialty Segment Growth in 2019 US Coffee Shop Report ,
+2018. https://www.google.com/url?q=https://dailycoffeenews.com/2018/10/
+31/allegra-predicts-specialty-segment-growth-in-201 9-us-coffee-shop-
+report/%23:~:targetText%3DIn%2520total%252C%2520there%2520are%
+2520approximately,market%2520value%2520of%2520%252445.4%2520billion&sa=
+D&ust=1573967876537000&usg=AFQjCNEioGLojEQQRWpxxclk_5r0Ms9eZg.
+[8] Bureau of Transportation Statistics. Number of Stations Served by Amtrak and Rail Transit,
+Fiscal Year, 2018. https://www.bts.gov/content/number-stations-served-
+amtrak-and-rail-transit-fiscal-year .
+[9] American Library Association. Library Statistics and Figures: Number of Public Libraries
+in the United States Over Time , 2018.
+https://libguides.ala.org/librarystatistics/numberoflibrariesovertime.
+[10] National Center for Education Statistics. Number of educational institutions, by level and
+control of institution: Selected years, 1980-81 through 2015-16 , 2018. https:
+//nces.ed.gov/programs/digest/d17/tables/dt17_105.50.asp?current=yes.
+[11] William H. Frey. US population growth hits 80-year low, capping off a year of demographic
+stagnation, 2018.
+https://www.brookings.edu/blog/the-avenue/2018/12/21/us-population-
+growth-hits-80-year-low-capping-off-a-year-of-demog raphic-stagnation/.
+Team 10174 References
+[12] Paul Hitlin. Internet, social media use and device ownership in U.S. have plateaued after
+years of growth, 2019.
+https://www.pewresearch.org/fact-tank/2018/09/28/internet-social-media-
+use-and-device-ownership-in-u-s-have-plateaued-afte r-years-of-growth/ .
+[13] U.S. Energy Information Administration. Electricity Data Browser, 2018.
+https://www.eia.gov/electricity/data/browser/#/topic/7?agg=0,1&geo=g&
+endsec=vg&linechart=ELEC.PRICE.US-ALL.A~ELEC.PRICE.US-
+RES.A~ELEC.PRICE.US-COM.A~ELEC.PRICE.US-
+IND.A&columnchart=ELEC.PRICE.US-ALL.A~ELEC.PRICE.US-
+RES.A~ELEC.PRICE.US-COM.A~ELEC.PRICE.US-IND.A&map=ELEC.PRICE.US-
+ALL.A&freq=A&ctype=linechart&ltype=pin&rtype=s&maptype=0&rse=0&pin=.
+[14] U.S. Energy Information and Administration. SHORT-TERM ENERGY OUTLOOK, 2019.
+https://www.eia.gov/outlooks/steo/.
+[15] Amtrak. Amtrak Routes and Destinations , 2019.
+https://www.amtrak.com/routes.html.
+[16] Jessica Campisi. Should the school day start later? , 2018.
+https://www.educationdive.com/news/should-the-schoo l-day-start-
+later/532961/#:~:targetText=The%20average%20U.S.%20public%20school,
+least%208%20hours%20per%20day.
+[17] Public School Review. Average Public School Student: Teacher Ratio, 2019.
+https://www.publicschoolreview.com/average-student- teacher-ratio-
+stats/national-data.
+[18] Pew Research Center. Mobile Fact Sheet, 2019.
+https://www.pewresearch.org/internet/fact-sheet/mobile/.
+[19] Electropedia. Battery Chargers and Charging Methods , 2019.
+https://www.mpoweruk.com/chargers.htm.
+[20] Rick Paulas. How to Calculate Maximum Occupancy for a Room , 2017.
+https://legalbeagle.com/6306392-calculate-maximum-o ccupancy-room.html.
+[21] Google My Business Help. Popular times, wait times, and visit duration , 2019.
+https://support.google.com/business/answer/6263531?hl=en.
+[22] Department of Energy. Charging at Home, 2019.
+https://www.energy.gov/eere/electricvehicles/charging-home.
+[23] Rick Paulas. Alternative Fuels Data Center: Electric V ehicle Charging Station Locations ,
+2017. https://afdc.energy.gov/fuels/electricity_locations.html#/find/
+nearest?fuel=ELEC.
+[24] Pod Point. How Long Does it Take to Charge an Electric Car , 2019.
+https://pod-point.com/guides/driver/how-long-to-cha rge-an-electric-car .
+Team 10174 References
+[25] convene. How Long is Too Long to Commute , 2019.
+https://convene.com/catalyst/long-commute/.
+[26] Clipper Creek. Electric V ehicle Range per hour of charging, 2019.
+https://www.clippercreek.com/wp-content/uploads/2019/10/EV-Range-Added-
+per-Hour-of-Charging-20190919.pdf .
+[27] Charge Point. Driver’s Checklist: A Quick Guide to Fast Charging , 2019.
+https://www.chargepoint.com/files/Quick_Guide_to_Fast_Charging.pdf.
+[28] EV Adoption. EV Charging Statistics, 2019.
+https://evadoption.com/ev-charging-stations-statist ics/.
+[29] Georgia Institute of Technology. Sodium- and potassium-based batteries hold promise for
+cheap energy storage, 2018.
+https://www.sciencedaily.com/releases/2018/06/180619122746.htm.
+[30] Sumangala. Latest 20 battery inventions that can change the future , 2018.
+https://www.rtoz.org/2019/01/24/latest-20-battery-i nventions-that-can-
+change-the-future/.
+[31] Lauren Goode. Batteries Still Suck, But Researchers Are Working on It , 2019.
+https://www.wired.com/story/building-a-better-batte ry/.
+Team 10174 Appendices
+Appendices
+A Commercial Price of Electricity
+Y ear Price (¢/kWh) % Change
+2001 7.92 –
+2002 7.89 -0.37878
+2003 8.03 1.774397
+2004 8.17 1.743462
+2005 8.67 6.119954
+2006 9.46 9.111880046
+2007 9.65 2.00845666
+2008 10.26 6.321243523
+2009 10.16 -0.974658869
+2010 10.19 0.295275591
+2011 10.24 0.490677134
+2012 10.09 -1.46484375
+2013 10.26 1.684836472
+2014 10.74 4.678362573
+2015 10.64 -0.93109869
+2016 10.43 -1.97368421
+2017 10.66 2.205177373
+2018 10.67 0.09380863
+Table A1: Commercial price of electricity ( ¢/kWh) 2001-2018, with % change between years
+Team 10174 Appendices
+B Number of Destinations over the year
+B.1 Public Schools
+Y ear Number of Public Schools Percent Change
+2005 26,011 –
+2006 25,929 -0.3152512399
+2007 26,647 2.7691002353
+2008 26,345 -1.1333358352
+2009 26,640 1.1197570697
+2010 26,559 -0.3040540541
+2011 26,368 -0.7191535826
+2012 26,275 -0.3527002427
+2013 26,047 -0.8677450048
+2014 26,145 0.3762429454
+2015 26,005 -0.5354752343
+Average 0.0037385057
+Table B1: Number of Public Schools and accompanying percent change over an eleven year period
+Team 10174 Appendices
+B.2 Railway Stations
+Y ear Stations % Change
+2000 515 –
+2001 512 -0.58252427
+2002 515 0.5859375
+2003 514 -0.19417476
+2004 529 2.91828794
+2005 531 0.37807183
+2006 510 -3.95480226
+2007 508 -0.39215686
+2008 510 0.39370079
+2009 511 0.19607843
+2010 512 0.19569472
+2011 511 -0.1953125
+2012 512 0.19569472
+2013 516 0.78125
+2014 518 0.3875969
+2015 521 0.57915058
+2016 525 0.76775432
+2017 527 0.38095238
+2018 526 -0.18975332
+Table B2: Number of Railways over an eighteen year period and accompanying percent changes
+Team 10174 Appendices
+B.3 Public Airports
+Y ear Public Airports % change
+2000 5,317 –
+2001 5,294 -0.43257476
+2002 5,286 -0.151114469
+2003 5,286 0
+2004 5,288 0.037835793
+2005 5,270 -0.340393343
+2006 5,233 -0.702087287
+2007 5,221 -0.229313969
+2008 5,202 -0.363914959
+2009 5,178 -0.461361015
+2010 5,175 -0.057937428
+2011 5,172 -0.057971014
+2012 5,171 -0.01933488
+2013 5,155 -0.309417908
+2014 5,145 -0.193986421
+2016 5,136 -0.174927114
+2017 5,104 -0.62305296
+2018 5,087 -0.3330721
+Table B3: Number of Public Airports in the United States of America over an eighteen year period
+and accompanying percent changes
+Team 10174 Appendices
+B.4 Public Libraries
+Y ear Number of Public Libraries % Change
+2000 9074 0.309529074
+2001 9129 0.606127397
+2002 9137 0.087632818
+2003 9211 0.809893838
+2004 9207 -0.043426338
+2005 9198 -0.097751711
+2006 9208 0.108719287
+2007 9214 0.06516073
+2008 9221 0.075971348
+2009 9225 0.043379243
+2010 8951 -2.970189702
+2011 8956 0.05585968
+2012 9082 1.406878071
+2013 9070 0.099097115
+2014 9070 -0.23099769
+2015 9068 -0.022050717
+2016 9057 -0.12130569
+Table B4: Number of Libraries over a sixteen year period and accompanying percent changes
+Team 10174 Appendices
+C Airport Terminal Data
+Table C1: A listing of the medium sized airports in the United States and their number of terminals
+Airport Terminal Num-
+ber
+Atlanta 206
+Chicago O’Hare 182
+Dallas DFW 161
+Detroit DTW 147
+Denver 136
+Washington
+Dulles
+135
+Houston Bush 130
+New Y ork
+Newark
+129
+Minneapolis 127
+Philadelphia 126
+New Y ork JFK 125
+Miami MIA 123
+Toronto 122
+Phoenix 116
+Los Angeles
+LAX
+112
+San Francisco
+SFO
+108
+Las V egas 103
+Orlando Int’l 96
+Charlotte 95
+Baltimore-
+Washington
+84
+V ancouver 81
+Salt Lake 79
+New Y ork La
+Guardia
+72
+Tampa 62
+Portland 60
+Kansas City 59
+Saint Louis 59
+Sydney 59
+Miami Ft Laud. 57
+Montreal 56
+Milwaukee 48
+Team 10174 Appendices
+Melbourne 47
+Chicago - Mid-
+way
+45
+San Diego 45
+Calgary 44
+New Orleans 44
+Washington Na-
+tional
+44
+Brisbane 34
+Edmonton 32
+Halifax 32
+Sacramento 32
+Oakland 30
+Fort Myers 28
+Miami Palm
+Beach
+28
+San Jose 28
+Houston Hobby 26
+Ottawa 26
+Austin 25
+San Antonio 24
+Reno-Tahoe 23
+Jacksonville 20
+Dallas Love 19
+Winnipeg 18
+Boston Manch-
+ester
+15
+Des Moines 15
+El Paso 15
+Sarasota-
+Bradenton
+14
+St Pete-
+Clearwater
+13
+Orlando Sanford 12
+Pensacola 12
+Team 10174 Appendices
+D Amtrak Station Size and Capacity
+Railway
+Stations
+Platforms Size Capacity
+Aberdeen,
+Maryland
+2 3294 91.5
+Albany,
+Oregon
+1 1647 45.75
+Albany-
+Rensselaer,
+NY
+2 3294 91.5
+Albion, MI 1 1647 45.75
+Alpine,TX 1 1647 45.75
+Alliance,
+OH
+1 1647 45.75
+Allensworth 1 1647 45.75
+Alexandria,
+V A
+2 3294 91.5
+Alderson,
+WV
+1 1647 45.75
+Aldershot,
+Ontario
+3 4941 137.25
+Alvarado 4 6588 183
+Alton, Illi-
+nois
+1 1647 45.75
+Altona, PA 1 1647 45.75
+Amsterdam,
+NY
+1 1647 45.75
+Anaheium,
+Ca
+2 3294 91.5
+Ann Aro-
+bor, Mi
+1 1647 45.75
+Anniston,
+AL
+1 1647 45.75
+Antioch-
+Pittsburg
+1 1647 45.75
+Arcadia
+V alley, MO
+1 1647 45.75
+Ardmore,
+Ok
+1 1647 45.75
+Ardmore,
+Pa
+2 3294 91.5
+Arkadelphia 1 1647 45.75
+Team 10174 Appendices
+Ashland,
+KY
+1 1647 45.75
+Ashland,
+V A
+2 3294 91.5
+Atlanta, Ga 2 3294 91.5
+Auburn Ca 1 1647 45.75
+Austin, TX 1 1647 45.75
+Bakersﬁeld,
+Ca
+2 3294 91.5
+Maryland,
+Baltimore
+3 4941 137.25
+Bangor, MI 1 1647 45.75
+Barstow,
+California
+1 1647 45.75
+Battle
+Creek Mi
+1 1647 45.75
+Beaumont,
+TX
+1 1647 45.75
+Fairhaven
+Stations
+1 1647 45.75
+Bellow
+Falls, VT
+1 1647 45.75
+Benson AZ 0 0 0
+Berkely CA 1 1647 45.75
+Berlin Con-
+necticut
+2 3294 91.5
+Bingnen-
+White
+1 1647 45.75
+Birmingham
+Station
+2 3294 91.5
+Uptown
+Station
+2 3294 91.5
+Back Bay 4 6588 183
+North Sta-
+tion
+9 14823 411.75
+South Sta-
+tion
+7 11529 320.25
+Union Sta-
+tion
+1 1647 45.75
+Bridgeport
+Station
+2 3294 91.5
+Godbold 1 1647 45.75
+Team 10174 Appendices
+Browning
+Station
+1 1647 45.75
+Brunswick
+Maine
+1 1647 45.75
+Buffalo-
+Depow
+1 1647 45.75
+Bufallo Ex-
+change
+1 1647 45.75
+Burbank 2 3294 91.5
+Burke Cen-
+tre
+1 1647 45.75
+Burlington 2 3294 91.5
+Burlington
+NC
+1 1647 45.75
+BWI Rail
+Station
+2 3294 91.5
+Camarillo 2 3294 91.5
+Camden 1 1647 45.75
+Carbondale 1 1647 45.75
+Carlinville 2 3294 91.5
+Carpinteria 1 1647 45.75
+Cary 2 3294 91.5
+Castleton,
+VT
+1 1647 45.75
+Centralia 1 1647 45.75
+Centralia
+Union
+Depot
+1 1647 45.75
+Illinois 1 1647 45.75
+North
+Charleston
+Station
+1 1647 45.75
+Charleston
+Station
+1 1647 45.75
+Charlotte
+Station
+1 1647 45.75
+Charlotteseville
+Union
+2 3294 91.5
+Chatsworth
+Station
+3 4941 137.25
+Chemult 1 1647 45.75
+Chicago
+Union
+30 49410 1372.5
+Team 10174 Appendices
+Chico Sta-
+tion
+1 1647 45.75
+Cincinnati
+Union
+1 1647 45.75
+Claremont
+Station
+1 1647 45.75
+Cleburne 1 1647 45.75
+Clemson 1 1647 45.75
+Cleveland 1 1647 45.75
+Clifton
+Forge
+1 1647 45.75
+Coatesville 2 3294 91.5
+Colfax 1 1647 45.75
+Columbia 1 1647 45.75
+Columbus 1 1647 45.75
+Connellsvile 1 1647 45.75
+Connersvile
+IN
+1 1647 45.75
+Corcoran 1 1647 45.75
+Cornwells 2 3294 91.5
+Crawfordsville1 1647 45.75
+Creston 2 3294 91.5
+Croton 3 4941 137.25
+Culpeper 1 1647 45.75
+Cumberland
+Station
+1 1647 45.75
+Cut Bank 1 1647 45.75
+Dallas Un-
+oin
+3 4941 137.25
+Danville 1 1647 45.75
+David CA 2 3294 91.5
+John D.
+Dingell
+2 3294 91.5
+Deerﬁeld
+Beach
+2 3294 91.5
+Del Rio 1 1647 45.75
+DeLand 1 1647 45.75
+Delray 2 3294 91.5
+Deming 0 0 0
+Denmark 1 1647 45.75
+Denver 7 11529 320.25
+Detroit 1 1647 45.75
+Team 10174 Appendices
+Detroit
+Lakes
+1 1647 45.75
+Devils
+Lake
+1 1647 45.75
+Dillon Sta-
+tion
+1 1647 45.75
+Dodge City 2 3294 91.5
+Dover
+Trans-
+portation
+Center
+1 1647 45.75
+Dowagiac 1 1647 45.75
+Downington 2 3294 91.5
+Du Quoin 1 1647 45.75
+Dunsmuir 1 1647 45.75
+Durand 1 1647 45.75
+Durham
+NH
+1 1647 45.75
+Durham
+NC
+1 1647 45.75
+Dwight
+Station
+1 1647 45.75
+Dyer
+Station
+1 1647 45.75
+East
+Glacier
+Park
+1 1647 45.75
+East Lans-
+ing
+1 1647 45.75
+Edmonds 1 1647 45.75
+Efﬁngham 1 1647 45.75
+El Paso 1 1647 45.75
+Elkhart 1 1647 45.75
+Elizabethtown2 3294 91.5
+Elko 2 3294 91.5
+Elyria 1 1647 45.75
+Emeryville 2 3294 91.5
+Ephrata 1 1647 45.75
+Erie 2 3294 91.5
+Essex 1 1647 45.75
+Essex Junc-
+tion
+1 1647 45.75
+Team 10174 Appendices
+Eugene
+Springﬁeld
+1 1647 45.75
+Everett Sta-
+tion
+2 3294 91.5
+Exeter Sta-
+tion
+1 1647 45.75
+Exton Sta-
+tion
+2 3294 91.5
+Fairﬁel-
+V acaville
+1 1647 45.75
+Fargo Sta-
+tion
+1 1647 45.75
+Fayetteville 1 1647 45.75
+Flagstaff 1 1647 45.75
+Flint 1 1647 45.75
+Florence 1 1647 45.75
+Fort Ed-
+ward
+1 1647 45.75
+Fort Laud-
+erdale
+2 3294 91.5
+Fort Madi-
+son
+2 3294 91.5
+Fort Mor-
+gan
+1 1647 45.75
+Fort Worth 2 3294 91.5
+Farmingham 2 3294 91.5
+Fraser-
+WinterPark
+1 1647 45.75
+Fredericksburg2 3294 91.5
+Freeport 1 1647 45.75
+Freemont 2 3294 91.5
+Santa Fe 2 3294 91.5
+Fullerton 3 4941 137.25
+Fulton 1 1647 45.75
+Gainesville 1 1647 45.75
+Gainesville,
+TX
+1 1647 45.75
+Galesburg 2 3294 91.5
+Gallup 1 1647 45.75
+Garden
+City
+1 1647 45.75
+Gastonia 1 1647 45.75
+Gilman 2 3294 91.5
+Team 10174 Appendices
+Glasgow 1 1647 45.75
+Glendale 2 3294 91.5
+Glenview 2 3294 91.5
+Glenwood 1 1647 45.75
+Goleta 1 1647 45.75
+Granby 1 1647 45.75
+Grand
+Forks
+2 3294 91.5
+Grand
+Junction
+2 3294 91.5
+V ernon J
+Ehlers
+1 1647 45.75
+Green
+River
+Station
+1 1647 45.75
+John W.
+Olver
+transit
+Center
+1 1647 45.75
+Greensburg
+Statoin
+2 3294 91.5
+Greenvile
+SC
+2 3294 91.5
+Greenwood 1 1647 45.75
+Grimsby 0 0 0
+Grover
+Beach
+1 1647 45.75
+Guadalupe 1 1647 45.75
+Hamlet 1 1647 45.75
+Hammond
+Station
+1 1647 45.75
+Hammond-
+Whiting
+1 1647 45.75
+Hanford 2 3294 91.5
+Harpers
+Ferry
+2 3294 91.5
+Harrisberg 4 6588 183
+Hartford
+Union
+1 1647 45.75
+Hastings 1 1647 45.75
+Hattiesburg 1 1647 45.75
+Haverhill 2 3294 91.5
+Havre 2 3294 91.5
+Team 10174 Appendices
+Hayward
+Stiation
+2 3294 91.5
+Hazlehurst 1 1647 45.75
+Helper Sta-
+tion
+1 1647 45.75
+Hermann
+Station
+1 1647 45.75
+High Point 1 1647 45.75
+Hinton 1 1647 45.75
+Holdrege 1 1647 45.75
+Holland
+Station
+1 1647 45.75
+Hollywood
+Station
+2 3294 91.5
+Holyoke 1 1647 45.75
+Homewood
+Station
+2 3294 91.5
+Hope
+Station
+1 1647 45.75
+Houston 2 3294 91.5
+Hudson
+Station
+2 3294 91.5
+Huntingdon
+Station
+1 1647 45.75
+Hunting
+WV
+1 1647 45.75
+Hutchinson
+Station
+1 1647 45.75
+Independence
+Station
+1 1647 45.75
+Indianapolis
+Station
+1 1647 45.75
+Irvine 2 3294 91.5
+Jackson 2 3294 91.5
+Jacksonville 2 3294 91.5
+Jesup 1 1647 45.75
+Johnstown 1 1647 45.75
+Joilet Il 2 3294 91.5
+Kalamazoo 2 3294 91.5
+Kankakee 1 1647 45.75
+Kannapolis 1 1647 45.75
+Kansas Sta-
+tion
+1 1647 45.75
+Team 10174 Appendices
+Kelso 1 1647 45.75
+Kewanee 2 3294 91.5
+Kingman 1 1647 45.75
+Kingston 2 3294 91.5
+Kingstree 1 1647 45.75
+Kirkwood 2 3294 91.5
+Kissimmee 2 3294 91.5
+Klamath 2 3294 91.5
+La Crosse 1 1647 45.75
+La Grange 2 3294 91.5
+Jefferson
+City MO
+1 1647 45.75
+La Junta 2 3294 91.5
+La Plata 1 1647 45.75
+Lafayette 1 1647 45.75
+Lafayette
+LA
+1 1647 45.75
+Lake
+Charles
+1 1647 45.75
+Lakeland 1 1647 45.75
+Lamar CO 1 1647 45.75
+Lamy 2 3294 91.5
+Lancaster
+Pa
+2 3294 91.5
+Lapeer 1 1647 45.75
+Las V egas 1 1647 45.75
+Latrobe 2 3294 91.5
+Laurel 1 1647 45.75
+Lawrence
+Station
+1 1647 45.75
+Icicle 1 1647 45.75
+Lee’s Sum-
+mit
+1 1647 45.75
+Lewistown 1 1647 45.75
+Lexington 1 1647 45.75
+Libby Sta-
+tion
+1 1647 45.75
+Lincoln
+Station
+1 1647 45.75
+Lincold NE 1 1647 45.75
+Little Rock 1 1647 45.75
+Lodi 1 1647 45.75
+Team 10174 Appendices
+Lompoc-
+Surf
+1 1647 45.75
+Longview 1 1647 45.75
+Lordsburg 0 0 0
+Lorton 1 1647 45.75
+Union Sta-
+tion LA
+6 9882 274.5
+Lynchburg 1 1647 45.75
+Macomd 1 1647 45.75
+Madera 1 1647 45.75
+Malta 1 1647 45.75
+Malvern 1 1647 45.75
+Manassas 2 3294 91.5
+Maricopa 1 1647 45.75
+Marks 1 1647 45.75
+Marshall 1 1647 45.75
+Table D1: Amtrak stations and corresponding platform numbers, estimated sizes and capacities
+Team 10174 Appendices
+E Destination Public Outlet Density Cost Analysis
+E.1 Library POD Cost Analysis
+Y ear P (Cents/kWH) Low POD C Low POD Low-Mid POD C Low-Mid POD High-Mid POD C High-Mid POD High POD C High POD
+2018 10.670 8.109 7836.715 8.036 7765.370 8.133 7859.168 8.095 7822.457
+2019 11.375 8.112 8357.313 8.043 8285.963 8.088 8332.743 8.068 8311.518
+2020 11.553 8.081 8455.237 8.096 8470.630 8.036 8408.439 8.114 8490.366
+2021 11.731 8.016 8516.117 8.082 8586.340 8.028 8529.388 8.078 8582.514
+2022 11.908 8.013 8641.841 8.108 8744.607 8.016 8645.345 8.114 8750.959
+2023 12.086 8.121 8889.142 8.012 8769.393 7.989 8744.227 8.106 8872.389
+2024 12.263 8.074 8967.517 8.072 8965.815 8.044 8934.764 8.077 8970.817
+2025 12.440 8.092 9117.783 8.040 9059.220 8.062 9083.600 8.063 9084.325
+2026 12.618 7.994 9135.678 8.057 9207.706 8.057 9206.969 7.985 9125.397
+2027 12.795 8.067 9348.002 8.040 9317.246 7.962 9226.741 8.038 9314.696
+2028 12.972 8.008 9408.388 7.977 9372.334 7.931 9318.092 7.940 9328.226
+Table E1: Cost of electricity at Libraries at varying POD
+E.2 Railway POD Cost Analysis
+Y ear P (Cents/kWH) Low POD C Low POD Low-Mid POD C Low-Mid POD High-Mid POD C High-Mid POD High POD C High POD
+2018 10.670 1.653 92.773 1.646 92.395 1.651 92.657 1.649 92.529
+2019 11.375 1.685 100.818 1.674 100.130 1.685 100.830 1.672 100.010
+2020 11.553 1.690 102.689 1.681 102.148 1.654 100.529 1.693 102.869
+2021 11.731 1.720 106.158 1.741 107.415 1.751 108.042 1.755 108.303
+2022 11.908 1.713 107.311 1.684 105.499 1.736 108.715 1.726 108.096
+2023 12.086 1.748 111.156 1.733 110.198 1.751 111.331 1.741 110.675
+2024 12.263 1.744 112.497 1.757 113.338 1.749 112.843 1.718 110.802
+2025 12.440 1.766 115.566 1.777 116.278 1.780 116.484 1.762 115.303
+2026 12.618 1.767 117.286 1.762 116.965 1.783 118.324 1.771 117.511
+2027 12.795 1.820 122.489 1.828 123.046 1.832 123.267 1.796 120.900
+2028 12.972 1.854 126.532 1.829 124.798 1.865 127.222 1.861 126.985
+Table E2: Cost of Electricity at Railway Stations at varying POD
+E.3 Airport POD Cost Analysis
+Y ear P (Cents/kWH) Low POD C Low POD Low-Mid POD C Low-Mid High-Mid POD C High-Mid POD High POD C High POD
+2018 10.670 93.926 50981.490 165.303 89723.782 180.507 97976.238 180.851 98162.656
+2019 11.375 94.027 54408.153 165.509 95771.247 180.439 104410.400 180.449 104415.955
+2020 11.553 94.102 55303.178 165.878 97485.220 180.372 106002.810 180.706 106199.530
+2021 11.731 94.021 56105.502 165.361 98675.759 181.045 108035.076 181.379 108234.681
+2022 11.908 94.183 57053.086 165.990 100551.471 181.130 109722.255 181.233 109784.958
+2023 12.086 94.167 57893.574 165.797 101931.494 181.357 111498.093 181.354 111495.854
+2024 12.263 93.818 58526.073 165.834 103451.439 181.166 113015.695 181.636 113309.073
+2025 12.440 94.134 59572.107 165.626 104815.880 181.668 114967.913 182.020 115190.475
+2026 12.618 94.052 60368.735 166.193 106673.278 182.007 116824.013 181.916 116765.161
+2027 12.795 94.085 61237.692 165.969 108025.274 181.538 118159.320 181.554 118169.541
+2028 12.972 94.127 62113.006 166.340 109765.429 181.873 120015.607 181.668 119880.519
+Table E3: Cost of Electricity at Airports at varying POD
+Team 10174 Appendices
+E.4 Coffee Shop POD Cost Analysis
+Y ear P (Cents/kWH) Low POD C Low POD Low-Mid POD C Low-Mid POD High-Mid POD C High-Mid POD High POD C High POD
+2018 10.670 1.861 7070.762 2.888 10975.989 3.279 12461.944 3.362 12777.717
+2019 11.375 1.882 7623.673 2.838 11497.210 3.309 13404.933 3.322 13456.474
+2020 11.553 1.791 7368.113 2.863 11778.458 3.415 14052.085 3.495 14381.698
+2021 11.731 1.929 8061.136 3.004 12549.217 3.472 14507.556 3.525 14726.733
+2022 11.908 1.868 7921.768 3.004 12739.349 3.542 15022.698 3.605 15287.842
+2023 12.086 1.852 7970.895 3.069 13208.382 3.596 15476.600 3.815 16419.369
+2024 12.263 1.930 8428.083 3.188 13923.673 3.769 16463.079 3.723 16259.018
+2025 12.440 1.950 8641.926 3.194 14152.556 3.734 16543.222 3.964 17565.005
+2026 12.618 1.936 8700.977 3.260 14648.761 3.830 17213.933 3.896 17506.398
+2027 12.795 1.926 8778.122 3.237 14751.276 3.773 17194.668 4.054 18475.583
+2028 12.972 1.949 9003.672 3.233 14936.382 3.846 17770.019 4.102 18950.906
+Table E4: Cost of electricity at Coffee Shops at varying POD
+E.5 School POD Cost Analysis
+Y ear P(Cents/kWH) Low POD C Low POD Low-Mid POD C Low-Mid POD High-Mid POD C High-Mid POD High POD C High POD
+2018 10.670 31.189 86541.061 63.044 174929.515 94.587 262454.729 119.202 330752.837
+2019 11.375 31.300 92587.186 62.762 185654.032 93.931 277853.896 119.036 352117.327
+2020 11.553 31.230 93824.145 62.522 187833.755 94.636 284316.495 120.086 360775.643
+2021 11.731 31.426 95866.410 62.304 190060.976 94.683 288832.873 121.501 370640.504
+2022 11.908 30.957 95863.907 62.844 194609.176 94.619 293008.656 123.210 381546.973
+2023 12.086 31.095 97727.882 62.362 195997.434 94.094 295725.196 123.060 386761.206
+2024 12.263 31.030 98955.193 62.583 199579.968 94.522 301433.824 122.596 390962.793
+2025 12.440 31.145 100757.086 62.137 201023.020 94.543 305860.914 120.761 390677.702
+2026 12.618 31.561 103558.036 63.053 206891.972 93.600 307123.123 120.196 394391.359
+2027 12.795 31.389 104441.328 62.580 208224.619 93.880 312368.994 119.260 396815.936
+2028 12.972 31.420 105990.557 62.567 211060.962 94.313 318153.062 118.076 398314.597
+Table E5: Cost of electricity at Schools at varying POD
+Team 10174 Appendices
+F Capacity Derivations
+For Airports, we found an average of 40.2 enplanements, the number of people boarding ﬂights,
+per departure.
+Since every departure is at a gate, the gate can hold at least 40.2 people. Using the 36 ft 2 per
+seat rule, each gate is approximately 1447.2 ft 2. Given that the average number of gates per airport
+was calculated as 67.4, an average airport is determined to be 97,541 ft 2.
+For Coffee Shops, we found statistics detailing the average attendance of coffee shops to be 68
+people per day (Insert Citation).
+For Railway stations, we estimate the average visitors based on ofﬁcial statistics of Amtrak
+stations and platforms across the nation. Using 1647 m2 per platform (CITA TION), we found an
+average railway station size of 2534 m2, which equates to approximately 70 seats. (Citation)
+For Schools, we deﬁned capacity to be equivalent to the number of visitors, since public schools
+have variable capacity and will accommodate all students necessary to guarantee a right to a free
+public education.
+For Libraries, we found an average size of 21,500 ft 2 for a community library. Using the 1 seat
+per 36 ft 2 rule, 21,500 ft 2 can comfortably host 600 people (CITA TION).
+Team 10174 Appendices
+G Agent-based Model NetLogo Code
+g l o b a l s [
+v i s i t o r s
+c a p a c i t y
+s q u a r e− f o o t a g e
+o u t l e t s
+n s e a t− c o o r d s
+n o c c u p i e d
+o s e a t− c o o r d s
+o o c c u p i e d
+e n t e r− t i c k s
+d e v i c e− l i s t
+d e v i c e− p s
+d e v i c e− d r a i n s
+d e v i c e− c h a r g e s
+d e v i c e− w a t t a g e s
+n o t− c h a r g i n g
+no− c a p a c i t y
+no− c h a r g e
+t i m e− done
+t o t a l − l a p t o p− c h a r g e− t i m e
+t o t a l − m o b i l e− c h a r g e− t i m e
+t o t a l − t a b l e t − c h a r g e− t i m e
+e n e r g y− c o n s u m p t i o n
+run − r e s u l t s
+a v e r a g e
+]
+t u r t l e s − own [
+d e v i c e s
+i n i t − b a t t s
+p e r− m i n u t e− d r a i n s
+p e r− m i n u t e− c h a r g e s
+c u r r− c h a r g i n g
+b a t t s
+s t a y
+c h a r g e− t i m e s
+r e m a i n i n g− t i m e
+a t− o u t l e t
+]
+Team 10174 Appendices
+t o− r e p o r t v i s i t o r − y e a r s [ y r ]
+r e p o r t r o u n d ( 6 8 ∗ ( ( 1 + 0 . 0 1 7 ) ˆ y r ) )
+end
+t o− r e p o r t c o f f e e − shop − d e n s i t y [ x ]
+r e p o r t ( ( 1 0 9 . 8 − 7 2 . 3 6 ∗ x + 1 7 . 4 7 ∗ x ∗ x − 1 . 9 3 2 ∗ x ∗ x ∗ x + 0 . 0 9 9 9 1 ∗
+end
+t o i n i t i a l i z e − v a r i a b l e s
+s e t v i s i t o r s v i s i t o r − y e a r s y e a r
+s e t s q u a r e − f o o t a g e 1000
+s e t c a p a c i t y r o u n d ( s q u a r e − f o o t a g e / 3 6 )
+s e t o u t l e t s o u t l e t − d e n s i t y ∗ s q u a r e− f o o t a g e
+s e t d e v i c e − l i s t [ ” l a p t o p ” ” m o b i l e ” ” t a b l e t ” ]
+s e t d e v i c e − p s [ 0 . 7 3 0 . 7 7 0 . 5 3 ]
+s e t d e v i c e − d r a i n s [ 0 . 0 0 4 7 6 0 . 0 0 1 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 7 0 . 0 0 1 6 6 6 6 6 6 6 6 6 6 66 6 6 6 7 ]
+s e t d e v i c e − c h a r g e s [ 0 . 0 1 6 4 1 0 . 0 1 8 3 5 0 . 0 0 3 8 ]
+s e t d e v i c e − w a t t a g e s [ 6 5 6 1 5 ]
+s e t t o t a l − l a p t o p− c h a r g e− t i m e 0
+s e t t o t a l − m o b i l e− c h a r g e− t i m e 0
+s e t t o t a l − t a b l e t − c h a r g e− t i m e 0
+s e t n o t − c h a r g i n g 0
+s e t no − c a p a c i t y 0
+s e t no − c h a r g e 0
+s e t t i m e − done 0
+s e t e n e r g y − c o n s u m p t i o n 0
+end
+t o s e t u p − w o r l d
+r e s i z e− w o r l d 0 40 0 40
+a s k p a t c h e s [ s e t p c o l o r 3 8 ]
+l e t xy 0
+r e p e a t max − p x c o r + 1 [
+c r t 1 [ s e t x y xy max − p y c o r s e t s h a p e ” t i l e b r i c k ” s e t c o l o r r e d ]
+c r t 1 [ s e t x y xy 0 s e t s h a p e ” t i l e b r i c k ” s e t c o l o r r e d ]
+c r t 1 [ s e t x y max − p x c o r xy s e t s h a p e ” t i l e b r i c k ” s e t c o l o r r e d ]
+c r t 1 [ s e t x y 0 xy s e t s h a p e ” t i l e b r i c k ” s e t c o l o r r e d ]
+s e t xy xy + 1
+]
+a s k t u r t l e s w i t h [ x c o r = 0 and ( y c o r = max − p y c o r / 2 o r y c o r = max − p y c o r / 
+c r t 1 [ s e t x y ( max − p x c o r / 2 − 5 ) ( max − p y c o r − 2 ) s e t s h a p e ” c l o c k ” s e t c o l 
+s e t n s e a t − c o o r d s [ ]
+s e t n o c c u p i e d [ ]
+s e t o s e a t − c o o r d s [ ]
+Team 10174 Appendices
+s e t o o c c u p i e d [ ]
+l e t s e a t s − p l a c e d 0
+l e t s e a t − x max − p x c o r / ( ( c e i l i n g s q r t c a p a c i t y ) + 1 )
+l e t x − c h a n g e s e a t − x
+l e t s e a t − y max − p y c o r / ( ( c e i l i n g s q r t c a p a c i t y ) + 1 )
+l e t y − c h a n g e s e a t − y
+r e p e a t ( c e i l i n g s q r t c a p a c i t y ) [
+s e t s e a t − y max − p y c o r / ( ( c e i l i n g s q r t c a p a c i t y ) + 1 )
+r e p e a t ( c e i l i n g s q r t c a p a c i t y ) [
+i f s e a t s − p l a c e d < o u t l e t s [
+a s k p a t c h i n t ( s e a t − x ) i n t ( s e a t − y ) [ s e t p c o l o r 6 5 ]
+s e t o s e a t − c o o r d s i n s e r t − i t e m ( l e n g t h o s e a t − c o o r d s ) ( o s e a t − c o o r d s ) ( l 
+s e t o o c c u p i e d i n s e r t − i t e m ( l e n g t h o o c c u p i e d ) ( o o c c u p i e d ) ( F a l s e )
+]
+i f s e a t s − p l a c e d >= o u t l e t s [
+a s k p a t c h i n t ( s e a t − x ) i n t ( s e a t − y ) [ s e t p c o l o r 9 5 ]
+s e t n s e a t − c o o r d s i n s e r t − i t e m ( l e n g t h n s e a t − c o o r d s ) ( n s e a t − c o o r d s ) ( l 
+s e t n o c c u p i e d i n s e r t − i t e m ( l e n g t h n o c c u p i e d ) ( n o c c u p i e d ) ( F a l s e )
+]
+s e t s e a t s − p l a c e d s e a t s − p l a c e d + 1
+i f s e a t s − p l a c e d = c a p a c i t y [ s t o p ]
+s e t s e a t − y s e a t − y + y − c h a n g e
+]
+s e t s e a t − x s e a t − x + x − c h a n g e
+]
+end
+t o s e t u p − t u r t l e
+s e t s i z e 2
+s e t x y 0 max − p y c o r / 2 − 0 . 5 + random − f l o a t 1
+s e t c o l o r 45
+s e t s h a p e ” p e r s o n ”
+l e t i 0
+s e t d e v i c e s [ ]
+s e t i n i t − b a t t s [ ]
+s e t p e r − m i n u t e− d r a i n s [ ]
+s e t p e r − m i n u t e− c h a r g e s [ ]
+s e t c h a r g e − t i m e s [ ]
+r e p e a t l e n g t h d e v i c e − p s [
+i f random − f l o a t 1 < i t e m i d e v i c e − p s [
+s e t d e v i c e s i n s e r t − i t e m ( l e n g t h d e v i c e s ) ( d e v i c e s ) ( i t e m i d e v i c e − l i s 
+s e t i n i t − b a t t s i n s e r t − i t e m ( l e n g t h i n i t − b a t t s ) ( i n i t − b a t t s ) ( p r e c i s i o 
+s e t p e r − m i n u t e− d r a i n s i n s e r t − i t e m ( l e n g t h p e r − m i n u t e− d r a i n s ) ( p e r − m i n 
+s e t p e r − m i n u t e− c h a r g e s i n s e r t − i t e m ( l e n g t h p e r − m i n u t e− c h a r g e s ) ( p e r − m 
+s e t c h a r g e − t i m e s i n s e r t − i t e m ( l e n g t h c h a r g e − t i m e s ) ( c h a r g e − t i m e s ) ( 0 )
+Team 10174 Appendices
+]
+s e t i i + 1
+]
+s e t b a t t s i n i t − b a t t s
+s e t s t a y random 67 + random 141
+i f n o t empty ? d e v i c e s [ s e t c u r r − c h a r g i n g i t e m ( p o s i t i o n min i n i t − b a t t s i n i 
+s e t l a b e l − c o l o r w h i t e
+s e t l a b e l ( word b a t t s ” , ” r e m a i n i n g − t i m e )
+end
+t o s e t u p
+c l e a r− a l l
+i n i t i a l i z e − v a r i a b l e s
+s e t u p− w o r l d
+l e t p e o p l e − p e r− 30 [ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+l e t i 0
+r e p e a t 48 [
+i f i >= 11 and i <= 32 [ s e t p e o p l e − p e r− 30 ( r e p l a c e − i t e m ( i ) ( p e o p l e − p e r−
+s e t i i + 1
+]
+s e t e n t e r − t i c k s [ ]
+s e t i 0
+r e p e a t l e n g t h p e o p l e − p e r− 30 [
+r e p e a t i t e m i p e o p l e − p e r− 30 [
+s e t e n t e r − t i c k s l p u t ( ( i ∗ 3 0 ) + random 2 9 ) e n t e r − t i c k s
+]
+s e t i i + 1
+]
+r e s e t− t i c k s
+a s k p a t c h ( max − p x c o r / 2 ) ( max − p y c o r − 2 ) [ s e t p l a b e l − c o l o r r e d s e t p l a b e l 
+end
+t o f i n d − s e a t
+i f member ? F a l s e o o c c u p i e d [
+move− t o p a t c h ( i t e m 0 i t e m ( p o s i t i o n F a l s e o o c c u p i e d ) o s e a t − c o o r d s ) ( i t e m 
+s e t o o c c u p i e d ( r e p l a c e − i t e m ( p o s i t i o n F a l s e o o c c u p i e d ) o o c c u p i e d T r u e )
+s e t a t − o u t l e t T r u e
+s e t r e m a i n i n g − t i m e s t a y
+s t o p
+]
+i f member ? F a l s e n o c c u p i e d [
+move− t o p a t c h ( i t e m 0 i t e m ( p o s i t i o n F a l s e n o c c u p i e d ) n s e a t − c o o r d s ) ( i t e m 
+s e t n o c c u p i e d ( r e p l a c e − i t e m ( p o s i t i o n F a l s e n o c c u p i e d ) n o c c u p i e d T r u e )
+s e t a t − o u t l e t F a l s e
+s e t r e m a i n i n g − t i m e s t a y
+Team 10174 Appendices
+s t o p
+]
+s e t no − c a p a c i t y no − c a p a c i t y + 1
+d i e
+end
+t o go
+l e t p p l − e n t e r l e n g t h f i l t e r [ i − > i = t i c k s ] e n t e r − t i c k s
+c r t p p l − e n t e r [ s e t u p − t u r t l e ]
+a s k t u r t l e s w i t h [ s h a p e = ” p e r s o n ” and l e n g t h d e v i c e s = 0 ] [ s e t n o t − c h a r g i 
+a s k t u r t l e s w i t h [ s h a p e = ” p e r s o n ” and x c o r = 0 ] [ f i n d − s e a t ]
+a s k t u r t l e s w i t h [ s h a p e = ” p e r s o n ” ] [ s e t b a t t s ( map [ [ b a t t pm d ] − > max ( l 
+a s k t u r t l e s w i t h [ s h a p e = ” p e r s o n ” and ( a t − o u t l e t = T r u e and n o t empty ? f i 
+a s k t u r t l e s w i t h [ s h a p e = ” p e r s o n ” and a t − o u t l e t = T r u e ] [ s e t b a t t s ( r e p l a 
+a s k t u r t l e s w i t h [ s h a p e = ” p e r s o n ” ] [ s e t l a b e l ( word ( map [ b a t t − > p r e c i s i 
+a s k t u r t l e s w i t h [ s h a p e = ” p e r s o n ” ] [ s e t r e m a i n i n g − t i m e r e m a i n i n g− t i m e − 1 
+a s k t u r t l e s w i t h [ s h a p e = ” p e r s o n ” and ( r e m a i n i n g − t i m e <= 0 o r member ? 0 b 
+i f member ? 0 b a t t s [
+s e t no − c h a r g e no − c h a r g e + 1
+]
+i f r e m a i n i n g − t i m e <= 0 [
+s e t t i m e − done t i m e − done + 1
+]
+show c h a r g e − t i m e s
+i f member ? ” l a p t o p ” d e v i c e s [
+s e t t o t a l − l a p t o p− c h a r g e− t i m e t o t a l − l a p t o p− c h a r g e− t i m e + f i r s t c h a r g e −
+]
+i f member ? ” m o b i l e ” d e v i c e s and member ? ” l a p t o p ” d e v i c e s [
+s e t t o t a l − m o b i l e− c h a r g e− t i m e t o t a l − m o b i l e− c h a r g e− t i m e + i t e m 1 c h a r g e
+]
+i f member ? ” m o b i l e ” d e v i c e s and n o t member ? ” l a p t o p ” d e v i c e s [
+s e t t o t a l − m o b i l e− c h a r g e− t i m e t o t a l − m o b i l e− c h a r g e− t i m e + f i r s t c h a r g e −
+]
+i f member ? ” t a b l e t ” d e v i c e s [
+s e t t o t a l − t a b l e t − c h a r g e− t i m e t o t a l − t a b l e t − c h a r g e− t i m e + l a s t c h a r g e − t 
+]
+i f a t − o u t l e t = T r u e [
+show ( p o s i t i o n ( l i s t [ p x c o r ] o f p a t c h − h e r e [ p y c o r ] o f p a t c h − h e r e ) o s e a 
+s e t o o c c u p i e d ( r e p l a c e − i t e m ( p o s i t i o n ( l i s t [ p x c o r ] o f p a t c h − h e r e [ p y c 
+]
+i f a t − o u t l e t = F a l s e [
+s e t n o c c u p i e d ( r e p l a c e − i t e m ( p o s i t i o n ( l i s t [ p x c o r ] o f p a t c h − h e r e [ p y 
+]
+d i e
+]
+Team 10174 Appendices
+s e t e n e r g y − c o n s u m p t i o n t o t a l− l a p t o p− c h a r g e− t i m e ∗ 60 ∗ f i r s t d e v i c e − w a t t a g 
+t i c k
+a s k p a t c h ( max − p x c o r / 2 ) ( max − p y c o r − 2 ) [ s e t p l a b e l ( word ” Time : ” i n t ( t 
+end
+t o run − one − day
+r e p e a t 1440 [ go ]
+end
+t o− r e p o r t run − one − day − r e p o r t
+r e p e a t 1440 [ go ]
+r e p o r t e n e r g y − c o n s u m p t i o n
+end
+t o run − one − day − x− t i m e s
+s e t run − r e s u l t s [ ]
+r e p e a t x − t i m e s [
+i n i t i a l i z e − v a r i a b l e s
+s e t u p− w o r l d
+l e t p e o p l e − p e r− 30 [ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+l e t i 0
+r e p e a t 48 [
+i f i >= 11 and i <= 32 [ s e t p e o p l e − p e r− 30 ( r e p l a c e − i t e m ( i ) ( p e o p l e − p e 
+s e t i i + 1
+]
+s e t e n t e r − t i c k s [ ]
+s e t i 0
+r e p e a t l e n g t h p e o p l e − p e r− 30 [
+r e p e a t i t e m i p e o p l e − p e r− 30 [
+s e t e n t e r − t i c k s l p u t ( ( i ∗ 3 0 ) + random 2 9 ) e n t e r − t i c k s
+]
+s e t i i + 1 \ u s e p a c k a g e{ l i s t i n g s }
+]
+r e s e t− t i c k s
+a s k p a t c h ( max − p x c o r / 2 ) ( max − p y c o r − 2 ) [ s e t p l a b e l − c o l o r r e d s e t p l a b 
+s e t run − r e s u l t s l p u t run − one − day − r e p o r t run − r e s u l t s
+]
+s e t a v e r a g e ( sum run − r e s u l t s ) / x − t i m e s
+end
+Team 10174 Appendices
+H Electric V ehicles Python Simulation Code
+i m p o r t numpy a s np
+i m p o r t p a n d a s a s pd
+i m p o r t random
+b a t t e r y c a p a c i t y = 5 8 . 8
+p = 0 . 2
+d e f v o r ( y e a r ) :
+x = y e a r − 2000
+r e t u r n 0 . 1 2 4 7 ∗x∗ x + 0 . 6 0 5 3 ∗ x + 5 . 5 9 5 2
+d e f n u m c a r s ( y e a r ) :
+x = y e a r − 2000
+r e t u r n 18590 ∗ x ∗ x − 418483 ∗ x + 2 e6
+y e n e r g i e s = [ ]
+f o r y r i n r a n g e ( 2 0 1 8 , 2 0 2 9 ) :
+d e n e r g i e s = [ ]
+f o r day i n r a n g e ( 3 6 5 ) :
+c e n e r g i e s = [ ]
+t i m e = 0
+f o r i i n r a n g e ( i n t ( n u m c a r s ( y r ) ) ) :
+w a t t a g e = np . random . c h o i c e ( [ 4 5 , 1 . 4 4 , 9 . 6 ] , p = [ 0 . 1 4 9 , 0 . 0 5 4 , 0 . 7 9 7 ] )
+t i m e += 0 . 3 ∗ b a t t e r y c a p a c i t y / w a t t a g e
+i f t i m e >= 2 4 :
+b r e a k
+c e n e r g i e s . a p p e n d ( 0 . 3 ∗ b a t t e r y c a p a c i t y ∗ ( n u m c a r s ( y r ) ) / ( 1 ∗ v o r ( y r 
+d e n e r g i e s . a p p e n d ( sum ( c e n e r g i e s ) )
+p r i n t ( c e n e r g i e s )
+y e n e r g i e s . a p p e n d ( sum ( d e n e r g i e s ) )

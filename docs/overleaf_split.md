@@ -1,3 +1,5 @@
+> 历史记录：此拆分方案已按用户要求撤销。当前只使用 HiMCM，见[合并记录](reunification.md)。下文描述当时操作，不是当前目录要求。
+
 # Overleaf 仓库精简 — 2026-11-07
 
 HiMCM 保持论文主仓库与原 GitHub 地址。研究材料迁入 [HiMCM-research](https://github.com/TypeThe0ry/HiMCM-research)，保留完整 Git 历史和工作区未提交的研究资料；后者按迁移快照提交，并不表示 V8 研究已经完成验证。

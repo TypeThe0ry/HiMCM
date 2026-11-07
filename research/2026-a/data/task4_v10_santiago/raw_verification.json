@@ -1,0 +1,111 @@
+{
+  "core_field_checks": [
+    {
+      "table": "hogares",
+      "field": "Comuna",
+      "rows": 18264,
+      "equal": true
+    },
+    {
+      "table": "hogares",
+      "field": "TipoDia",
+      "rows": 18264,
+      "equal": true
+    },
+    {
+      "table": "hogares",
+      "field": "Temporada",
+      "rows": 18264,
+      "equal": true
+    },
+    {
+      "table": "hogares",
+      "field": "Zona",
+      "rows": 18264,
+      "equal": true
+    },
+    {
+      "table": "personas",
+      "field": "Hogar",
+      "rows": 60054,
+      "equal": true
+    },
+    {
+      "table": "personas",
+      "field": "Estudios",
+      "rows": 60054,
+      "equal": true
+    },
+    {
+      "table": "personas",
+      "field": "Curso",
+      "rows": 60054,
+      "equal": true
+    },
+    {
+      "table": "personas",
+      "field": "Actividad",
+      "rows": 60054,
+      "equal": true
+    },
+    {
+      "table": "personas",
+      "field": "DondeEstudia",
+      "rows": 60054,
+      "equal": true
+    },
+    {
+      "table": "personas",
+      "field": "Factor_LaboralNormal",
+      "rows": 60054,
+      "equal": true
+    },
+    {
+      "table": "viajes",
+      "field": "Hogar",
+      "rows": 113591,
+      "equal": true
+    },
+    {
+      "table": "viajes",
+      "field": "Persona",
+      "rows": 113591,
+      "equal": true
+    },
+    {
+      "table": "viajes",
+      "field": "Proposito",
+      "rows": 113591,
+      "equal": true
+    },
+    {
+      "table": "viajes",
+      "field": "HoraIni",
+      "rows": 113591,
+      "equal": true
+    },
+    {
+      "table": "viajes",
+      "field": "HoraFin",
+      "rows": 113591,
+      "equal": true
+    },
+    {
+      "table": "viajes",
+      "field": "TiempoViaje",
+      "rows": 113591,
+      "equal": true
+    },
+    {
+      "table": "viajes",
+      "field": "FactorLaboralNormal",
+      "rows": 113591,
+      "equal": true
+    }
+  ],
+  "university_archive_sha256": "6dce8fb939fafc7b236654ecd511caec9069773fede6692abb579a9e7360d726",
+  "candidate_metro": 3096,
+  "candidate_santiago_comuna": 67,
+  "candidate_definition": "Actividad includes B, DondeEstudia=4, Estudios in {5,7}; provisional classification, not verified current high-school cohort",
+  "main_admission": false
+}

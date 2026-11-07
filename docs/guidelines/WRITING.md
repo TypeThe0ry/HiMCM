@@ -2,7 +2,7 @@
 
 [返回团队必读入口](../../GUIDELINES.md)
 
-本规范用于论文正文、摘要、结论、新闻稿与图注。采用 [anti-defensive-writing](https://github.com/TypeThe0ry/HiMCM-research/blob/main/research/2026-a/visuals/guidelines/anti-defensive-writing/README.md) 的结果优先原则，同时遵循[证据规范](EVIDENCE.md)。
+本规范用于论文正文、摘要、结论、新闻稿与图注。采用 [anti-defensive-writing](../../research/2026-a/visuals/guidelines/anti-defensive-writing/README.md) 的结果优先原则，同时遵循[证据规范](EVIDENCE.md)。
 
 ## 主线与段落
 

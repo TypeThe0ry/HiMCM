@@ -1,0 +1,834 @@
+Problem Chosen
+B
+2025
+HiMCM
+Summary Sheet
+Team Control Number
+16742
+Beyond the End Zone:
+Scoring Tomorrow’s Sustainability in Today’s Global Events
+Summary
+The Super Bowl is one of the most influential single-day sporting events in the
+world.It attracts massive audiences, generate significant economic benefits, and bringing
+host-city environments under an excessive amount of pressure. A significant amount
+ofenergy use, transportation emissions, water consumption, andwaste generationall
+contribute to substantial environmental impacts.In order to overcome these challenges,
+we create an extensive ecological evaluation modelto determine which city would be
+the most environmentally friendly host for the Super Bowl.
+First, we developed a multidimensional indicator system that covers six key aspects
+to measureenergy, noise, carbon emissions, water consumption, waste management,
+andurban energy coefficient. We evaluated22 candidate cities—including 19 that have
+historically hosted the Super Bowl and 3 that have never hosted the Super Bowl—
+for indicators and calculated a standardized sustainability score for each indicator in Fig-
+ure 2.Significant differences can be seen in the initial comparison, with some southern
+cities receiving lower scores due to transportation and climate limitations, whileGlen-
+dale has an overall indicator average about 0.16, andLas Vegas has an average around
+0.24, which perform exceptionally well.
+After that, we designed a hybrid weighted model thatintegrates the subjective infor-
+mation from the Analytic Hierarchy Process (AHP)andthe objective information from
+the CRITIC method. In response to our results, among historical host cities,Pontiac with
+a score of 0.77, followed by Indianapolis with a score of 0.76, and East Rutherford with
+the score of 0.74. Meanwhile,Buffalo has the best out of the three non-host cities with
+the score of 0.60. Thus, Pontiac is the best candidate to host the upcoming Super Bowl.
+To validate the applicability of our evaluation framework to other major sporting
+events, we extended it to Formula One (F1) racing by modifying existing indicators and
+introducing two new indicators:Energy Recovery System efficiency and transportation
+cost. By applying the expanded model to ten F1 candidate cities, we found thatMonaco
+achieved the highest sustainability score of 0.854, which qualifies it as the most suitable
+city for hosting F1 events among the candidates.
+Following this study, we compared the environmental characteristics of the Super
+Bowl with other major events and proposed two sustainability strategies:increasing
+public transportation servicesandinstalling temporary noise barriers. We conducted
+scenario simulations and sensitivity analyses to further evaluate the effectiveness of these
+improvement initiatives and submitted a formal proposal to the Super Bowl organizing
+committee.
+Keywords: AHP , CRITIC, Linear Combination, Super Bowl, Environmental Evaluation
+T eam # 16742 Page 2 of 26
+Contents
+1 Introduction 4
+1.1 Problem Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2 Analysis of the Problem 4
+2.1 Problem Restatement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.2 Our Work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+3 Model Assumption 6
+4 Constructing Sustainability Evaluation Indicators 7
+4.1 Symbols and Notations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+4.2 Preparing Sustainability Evaluation Indicators . . . . . . . . . . . . . . . . . 7
+4.2.1 Travel and Transportation Indicator . . . . . . . . . . . . . . . . . . . 7
+4.2.2 Noise Pollution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+4.2.3 Water consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.2.4 Climate and Geography . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.2.5 Energy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.2.6 Wastes and Follow-up arrangement . . . . . . . . . . . . . . . . . . . 10
+4.3 Calculation of Sustainability Indicators for Candidate Cities . . . . . . . . . 10
+5 Constructing Super Bowl Sustainability Evaluation Model 13
+5.1 Data Preprocessing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+5.2 Calculation of Indicator Weights . . . . . . . . . . . . . . . . . . . . . . . . . 13
+5.2.1 CRITIC Weighting Method . . . . . . . . . . . . . . . . . . . . . . . . 13
+5.2.2 Analytic Hierarchy Process (AHP) . . . . . . . . . . . . . . . . . . . . 14
+5.2.3 Weight Fusion of AHP and CRITIC . . . . . . . . . . . . . . . . . . . 15
+5.3 Score Computation and Ranking of Candidate Cities . . . . . . . . . . . . . 16
+6 Expanding the Model 17
+6.1 Modifying the Model for Other Mega-events . . . . . . . . . . . . . . . . . . 17
+T eam # 16742 Page 3 of 26
+6.2 Applying the Expanded Model . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+6.2.1 Application to Formula One (F1) . . . . . . . . . . . . . . . . . . . . . 18
+6.3 Infrastructure Improvement and Scenario Simulation . . . . . . . . . . . . . 19
+6.4 Comparative Analysis Between the Super Bowl and Other Mega-Events . . 19
+6.4.1 Infrastructure Demand . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+6.4.2 Energy usage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+6.4.3 Ecological and Urban Effects . . . . . . . . . . . . . . . . . . . . . . . 19
+6.5 Sustainability Enhancement Strategies . . . . . . . . . . . . . . . . . . . . . . 20
+6.5.1 Utilizing noise-proof barriers . . . . . . . . . . . . . . . . . . . . . . . 20
+6.5.2 Increasing public transportation service frequency . . . . . . . . . . . 20
+7 Sensitivity Analysis 20
+8 Conclusions 21
+8.1 Summary of Findings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+8.2 Implications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+8.3 Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+8.4 Final Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+9 Evaluate of the Mode 22
+9.1 Strengths . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+9.2 Limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+LETTER 24
+Reference 25
+Report On Use Of AI 26
+T eam # 16742 Page 4 of 26
+1 Introduction
+1.1 Problem Background
+The Super Bowl, which has been organized since 1967, has evolved into one of the most
+recognized single-day sporting events in the world. [1] Today, the Super Bowl has tran-
+scended from just a championship game to become a cultural event worldwide. It at-
+tracts over 100 million viewers each year and contributes billions of dollars in economic
+impact to the host cities. [2-3] The presence of visitors, massive TV broadcasts, activities,
+and business activities are contributing factors to its immense value to the economy.
+However, behind the significant economic benefits, there are some serious environ-
+mental challenges. Massive energy supplies are needed for stadium lighting, broadcast
+technology, heating and cooling systems, and other operational requirements when host-
+ing the Super Bowl. Millions of gallons of water are needed for field upkeep and turf
+grass irrigation. Transportation-related activities, including lengthy flights, local com-
+mutes, and logistics, also generate significant amounts of carbon emissions. The various
+types of waste generated during the Super Bowl also create additional pressure on local
+waste management systems. Therefore, the environmental impact of the Super Bowl is
+usually greater than most other single-day sporting events.
+The Super Bowl’s sustainability framework takes into account the host city’s geo-
+graphic circumstances, energy structure, transportation effectiveness, climate traits, eco-
+logical resilience, and water resource availability. Host cities must have excellent sus-
+tainability credentials to reduce the environmental impact of hosting the Super Bowl, so
+evaluating host cities from a comprehensive environmental perspective is the most criti-
+cal factor in the Super Bowl’s selection of a host city.
+2 Analysis of the Problem
+2.1 Problem Restatement
+To evaluate the environmental impact of hosting the Super Bowl and determine the most
+sustainable host city, the following tasks must be completed:
+•Analyze the major environmental factorsassociated with hosting a Super Bowl, in-
+cluding transportation emissions, noise pollution, water consumption, climate and
+geographic conditions, energy structure, and waste-management performance.[4-11]
+•Develop a comprehensive environmental evaluation modelby choosing relevant
+indicators, standardizing data from multiple sources, allocating weights by using
+AHP and the CRITIC method, and combining them into a single scoring system
+that quantifies the sustainability of each potential host city.[12-15]
+•Apply the modelto all cities in the U.S. that have hosted the Super Bowl and three
+additional cities with NFL teams that have never hosted the event. Determine the
+most environmentally friendly city to host the Super Bowl in 2029 by comparing the
+outcomes of each candidate.[4]
+T eam # 16742 Page 5 of 26
+•Apply the model to other major sporting eventsincluding other single-sport global
+events such as Formula One. Examine how improvements to public transportation,
+infrastructure, or energy sources impact long-term sustainability.[6-7]
+2.2 Our Work
+Our overall sustainability evaluation framework is illustrated in Figure 1.
+Figure 1: Overall sustainability evaluation framework for Super Bowl host city selection.
+We started by creating six key sustainability indicators to evaluate Super Bowl host
+cities: energy, noise, carbon emissions, water consumption, waste management, and the
+urban energy coefficient. Based on these indicators, we selected 19 historic host cities and
+three potential future host cities that have never hosted a Super Bowl before.
+Next, we collected the required data and calculated the values for each indicator for
+each city. All values are normalized to produce complete and consistent indicator scores
+for all 22 cities.
+To determine the importance of each indicator, we applied both the Analytic Hierarchy
+Process (AHP) and the Criteria Importance Through Inter-criteria Correlation (CRITIC)
+model[14], where CRITIC derives objective information from data variability and inter-
+indicator correlations, and AHP represents subjective expert behavior. After obtaining the
+weights for each method, we gave each method a 50% weight to construct a balanced and
+stable final weighting system. We then applied these weights to the normalized indicator
+scores to calculate each city’s overall sustainability score.
+According to our model, Pontiac ranks as the most environmentally sustainable host
+city among all the other historic cities, while Buffalo ranks highest among the three cities
+we chose.
+T eam # 16742 Page 6 of 26
+Subsequently, we applied two sustainability strategies and obtained a score for each
+city after implementing them, and compared the results to identify the differences. Ad-
+ditionally, We also conducted a sensitivity analysis to examine how the weight of each
+indicator changes with variations in the weights assigned to CRITIC and AHP[16].
+Lastly, we extended our model to a different large-scale sporting event, the Formula
+One (F1). To adapt the framework, we added two new indicators (Energy Recovery Sys-
+tem efficiency and transportation cost) and modified three existing ones (water, energy,
+and waste) to enhance the quality of our results. By using the same methods we have
+employed before, we calculated the various sustainability scores for five cities that have
+previously hosted Formula 1 races.
+3 Model Assumption
+To ensure consistency and fairness in our evaluation, the following basic assumptions are
+made and properly justified below:
+•Assumption 1: The number of audience remains stable across cities.
+,→Justification:Super Bowl attendance consistently remains near maximum sta-
+dium capacity (90%), meaning noise, waste, and transportation impacts are mainly
+driven by city infrastructure rather than variation in attendance.
+•Assumption 2: Transportation mode proportions reflect long-term mobility trends.
+,→Justification:A single event does not significantly alter the share of car usage,
+public transit, or air travel; therefore, transportation emissions can be evaluated
+based on the structural mobility patterns of each city[7].
+•Assumption 3: Climatic and geographic characteristics remain stable in evalua-
+tion.
+,→Justification:Environment-related indicators such as temperature, rainfall, hu-
+midity, and urban heat islands change slowly over time, allowing stable compar-
+isons in water consumption, ecological pressure, and energy demand.
+•Assumption 4: Stadium energy consumption depends on structural characteris-
+tics rather than event variation.
+,→Justification:Broadcast, HVAC, and lighting follow standardized operational
+requirements across host cities; thus, the primary environmental difference arises
+from the local electricity mix and carbon intensity[6].
+•Assumption 5: T urf-grass irrigation demand follows stable agronomic models.
+,→Justification:Hydrological coefficients (Kc, effective rainfall ratio, irrigated area)
+fluctuate minimally, so calculated irrigation demand reliably reflects local climate
+rather than measurement uncertainty[11].
+•Assumption 6: Waste-management systems reflect the city’s sustainable capacity.
+,→Justification:Although the event temporarily increases waste production, waste
+diversion and treatment efficiency are fundamentally constrained by the city’s in-
+frastructure, making them reliable sustainability indicators[4].
+T eam # 16742 Page 7 of 26
+4 Constructing Sustainability Evaluation Indicators
+This chapter introduces the environmental evaluation model used to compare possible
+Super Bowl host cities. To guarantee comparability, we processed all data after identi-
+fying the most important environmental indicators. After the indicator weights are de-
+termined, and the AHP and CRITIC techniques are used to construct a comprehensive
+scoring model.
+4.1 Symbols and Notations
+Table presents the symbols utilized in the subsequent essay, accompanied by their respec-
+tive definitions.
+Table 1: Glossary of Key Symbols for Evaluation Methodology
+Symbol Definition
+IU Inverse urban heat island coefficient.
+P Football popularity index of the host city.
+Kc Crop coefficient representing plant transpiration relative to reference
+ET0.
+βi Proportion of fans traveling by air from cityi.
+Pi Population of Super Bowl fans traveling from cityi.
+Gf Grid power factor indicating local electricity cleanliness.
+4.2 Preparing Sustainability Evaluation Indicators
+4.2.1 Travel and Transportation Indicator
+This indicator evaluates the environmental impact of transportation activities related to
+the Super Bowl, including both intracity and intercity travel of audience, members, staff,
+and media. The efficiency of transportation is one of the major contributors to carbon
+emissions which directly reflects the host city’s capacity of sustainably organizing large-
+scale events. The evaluation factors include different market shares of transportation
+modes, the average travel distance, and the number of participants. Cities with higher
+public transportation rates and shorter average travel distances are considered more sus-
+tainable. The indicator can be calculated using the following formula:
+Ein city =
+ 
+α1·EF cars +α 2·EF buses +α 3·EF subways
+
+·D avg·N(1)
+T eam # 16742 Page 8 of 26
+whereE in city is the Carbon Emission Index;α 1,α 2,α 3 are the market proportions of
+cars, buses, and subways respectively (withα 1 +α 2 +α 3 = 1);EF s represents the carbon
+emission factor of each transportation mode (inkg CO2/(km·person));D avg is the average
+travel distance to the stadium;N= 0.9×C max is the number of attendees, assuming a 90%
+attendance rate.
+The coefficientα 1,α 2,α 3 is based on the transportation use of each city.
+The flight emissions are calculated separately as:
+Sair =
+nX
+i=1
+βiPiDi (2)
+EFlights =S air×EF flights (3)
+whereβ i is the proportion of fans traveling by air from cityi;P i is the population of
+total Superbowl fans coming of cityi;D i is the average flight distance from cityito the
+host city. Typical values based on the U.S. EPA data areEF cars = 0.271,EF buses = 0.089,
+EFsubways = 0.041,EF planes = 0.18(kgCO 2/km·person).
+TheE Total is then calculated by adding up both theE in city andE Flights that generated
+from city transportation and flights.
+ETotal =E in city +E flights (4)
+TheE Flights generated by air traveling contributes to the majority of the totalETotal since
+its high carbon emission factor and the long distance it traveled. A higherE Total indicates
+less sustainable and efficient mobility.
+Typical emission factors are based on U.S. energy and transportation data[17]
+4.2.2 Noise Pollution
+This indicator quantifies the noise pollution produced by Super Bowl games and its im-
+pact on nearby residents and wildlife. A larger and more popular stadium can produce
+higher sustained noise levels, which affect both the ecological environment and the hu-
+man environment. The indicator is defined as:
+Snormal =L 0 + 10 log(0.9×C max)(5)
+Inoise =S normal·P·T(6)
+whereS normal is the Continuous Sound Level;L0 = 70dB is the baseline environmental
+noise;C max is the maximum capacity of the stadium;Pis the football popularity index in
+the host city based on fan engagement and local teams;Tis the number of event days.
+T eam # 16742 Page 9 of 26
+TheI noise reflects the accumulative noise pollution generated during the event. A
+higherI noise suggests higher environmental impact and lower ecological compatibility.
+4.2.3 Water consumption
+This indicator measures water resources consumed for turf grass irrigation, cleaning, and
+maintenance during the Super Bowl. Water resource sustainability is a key factor in eval-
+uating host cities. The calculation formula for this indicator integrates rainfall utilization
+rates and irrigation efficiency.
+W=K c·A·(1−ERC·R)(7)
+whereWis the total water usage in liters;kis the irrigation coefficient (L/m 2·year),
+indicating the amount of supplementary water requirement;K c is the crop coefficient,
+which describes the ratio of the transpiration rate of a specific plant to the reference evap-
+otranspiration (ET 0);Ais the stadium field area in m 2;Ris the rainfall utilization rate;
+ERCis the effective rainfall coefficient.
+SmallerWvalues indicate higher efficiency and better adaptation to local hydrological
+conditions.
+The irrigation model follows the FAO crop evapotranspiration standard[11].
+4.2.4 Climate and Geography
+This indicator reflects the environmental resilience and ecological structure of the city. It
+comprehensively considers the green coverage rate, ecological conservation rate, and the
+inverse of the urban heat island effect, which demonstrates the cooling capacity of the
+city’s ecosystem.
+Ueco = (1−e)·g·IU(8)
+whereeis the proportion of ecological protected areas in the city;gis the green cov-
+erage rate (%);IUis the inverse urban heat island coefficient, inversely correlated with
+variations in temperature between urban and rural areas.
+A largerU eco indicates better ecological regulation and lower vulnerability to urban
+overheating.
+Temperature and heat-island variance research informs ecological and climatic inter-
+pretations[9].
+4.2.5 Energy
+This indicator evaluates a city’s overall energy sustainability as a Super Bowl host city
+by analyzing stadium energy consumption, renewable energy use, and building energy
+impact. All of these essential elements are combined into a single composite measure
+T eam # 16742 Page 10 of 26
+referred to the Energy Pollution Waste (EPW) indicator, which demonstrates how suc-
+cessfully and sustainably the city manages the energy needs that come from the event.
+The indicator is defined as:
+EPW=
+(1−E ′
+intensity) +R′ + (1−E ′
+build)
+3 ·G f (9)
+whereE′
+intensity is the normalized stadium energy consumption intensity;E ′
+build is the
+normalized construction-related energy intensity;R′ is the normalized renewable energy
+proportion;G f is the grid power factor representing the cleanliness of the local electricity
+grid.
+A higher EPW value indicates stronger energy sustainability.
+Grid power factors and energy profiles rely on U.S. energy datasets[17].
+4.2.6 Wastes and Follow-up arrangement
+This indicator evaluates how well Super Bowl waste is recycled or used for other pur-
+poses, and how sustainability measures such as facility retrofitting or carbon offsetting
+are put into place after the game. The recycling rate is defined as:
+R= Reused+Recycled
+Total ×100%(10)
+The carbon offset ratio is:
+CO= CEoffset
+CEtotal
+×100%(11)
+The final waste sustainability score is expressed as:
+Fwaste = WRR′ +W COCO′
+WR +W CO
+(12)
+whereW R andW CO are weighting factors for recycling and carbon offset respectively.
+Historical data show Super Bowl diversion rates of 90–93%.
+A higherF waste reflects superior circular management and long-term sustainability
+commitment.
+4.3 Calculation of Sustainability Indicators for Candidate Cities
+In an effort to evaluate how well the environment performance of potential host cities we
+evaluated 22 municipalities in the U.S. of which 19 of them had previously hosted the Su-
+per Bowl and 3 had not. Table 2 below represents the values of normalized sustainability
+indicators.
+T eam # 16742 Page 11 of 26
+Table 2: Sustainability Indicator Results of 22 Candidate Cities
+City Energy Waste Noise Carbon Water Urban
+Santa Clara 0.810 0.648 0.502 0.003 0.468 0.840
+Inglewood 0.712 0.654 0.459 0.060 1.000 0.440
+Stanford 0.546 0.655 0.560 0.000 0.535 1.000
+Pasadena 0.477 0.660 0.428 0.073 0.402 0.558
+San Diego 0.399 0.646 0.401 0.075 0.535 0.600
+Buffalo 0.326 0.519 0.228 0.933 0.501 0.781
+Las Vegas 0.302 0.385 0.350 0.933 0.389 0.000
+Chicago 0.295 0.260 0.295 0.905 0.550 0.447
+Glendale 0.269 0.173 0.317 0.184 0.000 0.028
+Minneapolis 0.248 0.547 0.643 0.632 1.000 0.715
+Arlington 0.247 0.375 0.277 0.618 1.000 0.219
+Tampa 0.245 0.152 0.088 0.611 0.300 0.456
+Jacksonville 0.236 0.158 0.237 0.729 0.629 0.467
+Miami 0.215 0.160 0.000 0.481 0.629 0.210
+Philadelphia 0.201 0.249 0.195 0.991 0.550 0.626
+Atlanta 0.199 0.428 0.195 0.991 1.000 0.559
+East Rutherford 0.198 0.295 0.885 0.955 1.000 0.322
+New Orleans 0.186 0.213 0.118 0.955 1.000 0.489
+Houston 0.158 0.351 0.265 0.588 1.000 0.322
+Detroit 0.127 0.407 0.736 0.943 1.000 0.378
+Pontiac 0.125 0.396 1.000 0.944 1.000 0.378
+Indianapolis 0.000 0.299 0.827 1.000 1.000 0.572
+The sustainability performance of candidate cities shows strong spatial heterogene-
+ity due to environmental, infrastructural, and geographic differences. As illustrated in
+Figure 2, deeper blue shading corresponds to better indicator performance, visually re-
+vealing how local conditions drive disparities across cities. Specifically, the following
+influencing factors are observed:
+(1)Geographic and climatic influence
+In cities with coastal or humid climates, such as Miami, Tampa, and New Orleans,
+there is a greater consumption of water, attributed to high temperatures and irrigation
+demand. However, these cities also exhibit better noise dispersion and lower heating
+energy demands compared to cities in the north, like Buffalo and Minneapolis. These
+results demonstrate that climatic conditions are the key determinants of water demand
+and HVAC loads of buildings.
+(2)Transportation structure and regional connectivity
+T eam # 16742 Page 12 of 26
+Municipalities which are typified by limited provision of public transit, such as cities
+in the western and southeastern United States (such as Las Vegas, Jacksonville and Ar-
+lington) exhibit a strong reliance on personal automobiles, increasing carbon emissions
+that are ascribable to mobility. On the contrary, cities that are equipped with well-established
+transport systems, i.e.. Chicago and Philadelphia, regularly achieve better performance
+indicators of transport-related sustainability indices, therefore, highlighting the critical
+role of mobility infrastructures in influencing environmental performance under the cir-
+cumstances of a major sporting event like the Super Bowl.
+(3)Local energy mix and urban sustainability policies
+The states with a high percentage of clean and diversified energy resources (e.g., mu-
+nicipalities such as Santa Clara, San Diego, and Pasadena in California) have better mea-
+surements of energy cleanliness and a more desirable urban energy coefficient, which
+can be attributed to the prevalence of renewable technologies and strict energy-efficiency
+policies. On the other hand, cities that happen to be located in areas dependent on fossil
+energy, such as Detroit and Houston, have greater environmental liabilities, highlighting
+how the composition of the electricity supply has a powerful impact on energy-related
+sustainability indicators.
+Figure 2: Spatial distribution of normalized indicator values across 22 candidate Super
+Bowl host cities. Darker color indicates better sustainability performance.
+T eam # 16742 Page 13 of 26
+5 Constructing Super Bowl Sustainability Evaluation Model
+5.1 Data Preprocessing
+The evaluation of sustainability should be done by first normalizing all the raw indica-
+tor values. In this paper, data preprocessing pipeline is used in two stages to achieve
+comparability.
+X′
+ij =x max,j−x ij (13)
+wherex ij represents the original value of indicatorjfor cityi, andx max,j is the maxi-
+mum among all cities for that indicator. After this transformation, all indicators exhibit a
+consistent positive direction.
+To eliminate magnitude differences between indicator units, the values of the indica-
+tors are all normalized to the range[0,1]:
+Yij = X′
+ij−X′
+min,j
+X′
+max,j−X′
+min,j
+(14)
+whereX′
+max,j andX′
+min,j are the maximum and minimum values of the direction–corrected
+indicatorj.
+5.2 Calculation of Indicator Weights
+Since not all the indicators contribute equally towards sustainability, then taking that
+weight as equal would be biased. Thus, a hybrid weighting approach is employed: the
+Analytic Hierarchy Process (AHP) involves expert ratings, and the CRITIC algorithm rep-
+resents the objectivity of data variability. A combination of these techniques also ensures
+that the significance of indicators is well-balanced in the evaluation system.
+5.2.1 CRITIC Weighting Method
+CRITIC (CRiteria Importance Through Intercriteria Correlation) is an objective method of
+weighting, which determines the importance of indicators in terms of the contrast and in
+terms of conflict with other indicators.
+The CRITIC method quantifies objective importance from variability and inter-indicator
+conflict[14].
+STEP 1: Standardization of the Original DataTo eliminate dimensional differences
+among indicators, each indicator valuex ij (indicatorjfor alternativei) is normalized
+tor ij:
+rij = xij−min(x j)
+max(xj)−min(x j) (j= 1,2,...,m)(15)
+wheremis the number of indicators. Higher values always indicate better perfor-
+mance.
+T eam # 16742 Page 14 of 26
+STEP 2: Contrast Intensity and Correlation AnalysisThe standard deviationσ j reflects
+the amount of information and variation contained in indicatorj:
+σj =
+vuut 1
+n
+nX
+i=1
+(rij−¯rj)2 (16)
+where¯rj is the mean of indicatorj. Correlation coefficients between indicatorsjandk
+are computed as:
+ρjk =
+Pn
+i=1(rij−¯rj)(rik−¯rk)pPn
+i=1(rij−¯rj)2
+pPn
+i=1(rik−¯rk)2 (17)
+The total conflict strength of indicatorjis quantified as:
+Cj =σ j·
+mX
+k=1
+(1−ρ jk)(18)
+STEP 3: Objective Weight DeterminationIndicator weight is obtained by normalizing
+Cj:
+wj = CjPm
+k=1Ck
+(19)
+wherew j represents the final objective weight of indicatorj.The weights are given to
+those indicators that are more variable and independent.
+5.2.2 Analytic Hierarchy Process (AHP)
+The Analytic Hierarchy Process (AHP) is a multi-criteria decision-making system that
+identifies weights of the indicators based on subjective pair-wise comparisons and logical
+consistency checks.
+AHP applies expert judgment and consistency checking according to Saaty’s method-
+ology[12]
+STEP 1: Constructing the Pairwise Comparison MatrixA judgment matrixA= [a ij]m×m
+is developed, wherea ij represents the relative importance of indicatoricompared toj.
+The rating follows Saaty’s 1–9 fundamental scale as shown in Table 3:
+STEP 2: Eigenvector ComputationThe relative priorities are extracted by calculating the
+eigenvectorT= [t 1,t 2,···,t m]T corresponding to the largest eigenvalueλ max:
+AT=λ maxT(20)
+STEP 3: Normalized Weight DeterminationThe final AHP weight of indicatoriis ob-
+tained by:
+T eam # 16742 Page 15 of 26
+Table 3: Pairwise Comparison Scale for Room Rescue Factors
+Value Meaning
+aij = 1Indicatorsiandjare equally important
+aij = 3iis slightly more important thanj
+aij = 5iis moderately more important thanj
+aij = 7iis strongly more important thanj
+aij = 9iis extremely more important thanj
+aij = 1/aji Reciprocal comparison
+wi = tiPm
+k=1tk
+(21)
+STEP 4: Consistency VerificationTo ensure the rationality of expert judgments, the Con-
+sistency Index (CI) is computed:
+CI= λmax−m
+m−1 (22)
+Then the Consistency Ratio (CR) is calculated as:
+CR= CI
+RI (23)
+whereRIis theRandom Index, depending on the matrix ordermas shown in Table 4.
+Table 4: Random Index (RI) Values for Judgment Matrix of Orderm
+m1 2 3 4 5 6 7 8
+RI0.00 0.00 0.58 0.90 1.12 1.24 1.32 1.41
+The judgment matrix is considered acceptable only whenCR <0.10, indicating con-
+sistent expert cognition. Otherwise, pairwise comparisons must be revised.
+5.2.3 Weight Fusion of AHP and CRITIC
+Because the CRITIC methodology only captures objective variation of data, as compared
+to the Analytic Hierarchy Process (AHP), which captures subjective preference of decision
+makers, a single method can be used, thus producing subjective evaluation results. As a
+result, there is a composite weighting methodology to combine both subjective expertise
+and objective informational qualities. The fused weight of each indicator is then seen to
+be:
+wi =λ·w AHP
+i + (1−λ)·w CRIT IC
+i (24)
+T eam # 16742 Page 16 of 26
+wherew AHP
+i andw CRIT IC
+i represent the weights derived from AHP and CRITIC respec-
+tively, andλis the preference coefficient. In this study,λis set to 0.5 to ensure equal con-
+tribution from both sources. The comparison of subjective (AHP) and objective (CRITIC)
+weights is illustrated in Fig. 3.
+Figure 3: Comparison of AHP and CRITIC-derived indicator weights
+5.3 Score Computation and Ranking of Candidate Cities
+The weights are then calculated, and the final sustainability score of each potential host
+city is obtained using a linear weighted summation model:
+Score i =
+nX
+j=1
+wj·S ij (25)
+wherew j denotes the combined weight of indicatorj, andS ij represents the normalized
+value of indicatorjfor cityi. A higher score implies a stronger performance across envi-
+ronmental sustainability criteria.
+The resulting sustainability scores are computed and finally provided in Figure 4 in
+descending order, and the cities. The sustainability score of Pontiac is the highest, as it
+has a better environmental infrastructure and little environmental burden on the event.
+On the other hand, the city of Glendale scores the lowest in the list of assessed cities.
+Among the three cities not yet hosting a Super Bowl, Buffalo gets the first rating, and
+thus, this proves that this city has strong environmental resilience and operational matu-
+rity to become a potential host city in the predictable future.
+T eam # 16742 Page 17 of 26
+Figure 4: Final sustainability score ranking of Super Bowl candidate host cities.
+6 Expanding the Model
+6.1 Modifying the Model for Other Mega-events
+To validate the universality of our sustainability assessment system, we expanded the
+model beyond the Super Bowl to other major sporting events. Since single-game, stadium-
+based events were the focus of the original indicator framework, different major athletic
+events exhibit different patterns in energy consumption, transportation demands, infras-
+tructure dependencies, and environmental impacts. As a result, in order to guarantee
+the validity of assessment results across various scenarios, some indicators need to be
+modified.
+When modifying the model, we applied structural modifications to account for the
+features of the target event while maintaining the fundamental integrated weighting and
+composite score computation based on AHP and CRITIC methods. Some Super Bowl in-
+dicators, such as waste management, water consumption, and transportation emissions,
+needed to be modified in order to compensate for the events that have a multi-day, multi-
+venue structure. Additional indicators were added when new sources of environmental
+impact emerged, such as special energy systems, long-distance logistics, or specialized
+machinery. This ensures that the enlarged model will always be adaptable and grounded
+in science.
+T eam # 16742 Page 18 of 26
+6.2 Applying the Expanded Model
+To examine the expanded model’s sustainability performance, we applied it to a new
+large event. The application process followed the same framework used in the Super
+Bowl evaluation. In order to appropriately reflect the unique features of the new event,
+we adjusted the indicator formula, and then we normalized all indicator values. By using
+the Analytic Hierarchy Process (AHP) and the Critical Evaluation Method (CRITIC), we
+calculated the final weights. Lastly, we summarized the weighted indicator scores and
+created an overall sustainability ranking for each city.
+6.2.1 Application to Formula One (F1)
+We applied this model to Formula One (F1) racing. F1 is a global sporting event with
+unique technical, logistical, and environmental demands. F1 races take place across dif-
+ferent nations, which requires substantial global travel and specialized electric engine
+systems, in contrast to the Super Bowl, which is held in a U.S. city[6].
+To accommodate these differences, we introduce two new indicators: Energy Recov-
+ery System Efficiency (MGUK) and Transportation Index (TI). MGUK reflects the impact
+of altitude, track layout, and vehicle speed variations on kinetic energy recovery, while
+TI reflects the combined environmental burden of air, road, and sea transport used in F1
+logistics.
+After recalibrating indicator weights using the same AHP and CRITIC method, we
+compute sustainability scores for five representative F1 host cities. Monaco has the high-
+est sustainability score, according to the results, with Monza coming in second. From fac-
+tors including higher transportation emissions or unfavorable environmental conditions,
+Singapore, Melbourne, and Silverstone receive lower scores. The successful extension of
+our model to F1 demonstrates its flexibility and its ability to evaluate the sustainability of
+mega-events with fundamentally different structures.
+Figure 5: F1 host cities score
+T eam # 16742 Page 19 of 26
+Table 5: Sustainability scores of F1 host cities
+City / Model MGUK Water Transport CO 2 TIHost Energy Waste Noise Ecology
+Monaco 0.82 0.85 0.92 0.90 0.83 0.78 0.80 0.88
+Monza 0.90 0.75 0.78 0.82 0.76 0.74 0.82 0.70
+Singapore 0.85 0.65 0.80 0.70 0.90 0.68 0.75 0.80
+Melbourne 0.70 0.70 0.72 0.60 0.80 0.72 0.78 0.72
+Silverstone 0.78 0.88 0.88 0.88 0.75 0.80 0.85 0.74
+6.3 Infrastructure Improvement and Scenario Simulation
+To evaluate the practical applicability of our model, we conducted simulations involving
+potential improvements to the infrastructure. In these simulations, some indicator values
+were adjusted to reflect possible environmental solutions, such as expanding the use of
+renewable energy, increasing public transportation capacity, and reducing noise pollu-
+tion through sound barriers. The same weighting system is then used to reevaluate the
+adjusted indicators.
+Comparing the adjusted scores with the baseline results enables us to measure the suc-
+cess of each improvement and determine which tactics result in the biggest sustainability
+gains. This analysis indicates that our model holds significant potential for organizations
+planning future major sporting events, and provides decision-making practical insights.
+6.4 Comparative Analysis Between the Super Bowl and Other Mega-
+Events
+6.4.1 Infrastructure Demand
+While single-game events usually only rely on existing stadiums, multi-venue events re-
+quire more construction effort invested in, which makes construction a main issue to-
+wards environmental impact.
+6.4.2 Energy usage
+Though a single stadium also requires a very high amount of energy for lighting and
+broadcasting, multi-venue events involve more games, which will require a higher total
+energy consumption
+6.4.3 Ecological and Urban Effects
+Single-sport events usually create intense but temporary noise, traffic, and water con-
+sumption. While multi-venue events create a long-lasting environmental pressure, such
+as the change of land usage and increased urban heat island effect.
+T eam # 16742 Page 20 of 26
+6.5 Sustainability Enhancement Strategies
+6.5.1 Utilizing noise-proof barriers
+By assembling noise-proof barriers, the score that evaluates the noise pollution index will
+improve on a large scale. Assuming common noise-proof barriers will effectively cancel
+out 30 percent of the original noise level.
+6.5.2 Increasing public transportation service frequency
+Increasing the frequency of bus service will help improve the score on carbon emissions,
+as a larger proportion of people will consider taking buses, which are a more environ-
+mentally sustainable mode of transportation, when commuting to the stadium.
+7 Sensitivity Analysis
+In order to obtain the strength of the hybrid weighting scheme, a sensitivity analysis
+was performed with the fusion coefficientωvarying between 0 and 1. Whenω= 0,
+the weighting reduces to simply the objective CRITIC method, and whenω= 1, the
+weighting is fully subjective AHP . The subsequent development of the weights of the
+indicators in the range of fusion levels is illustrated in Figure 6.
+Several conclusions can be drawn:
+• The weight of carbon emission not only remains the heaviest throughout the fusion
+range, but also the contribution of carbon emission is increasing with the increasing
+subjective preferences. This fact shows that the reduction of carbon emissions is the
+most critical aspect of Super Bowl sustainability assessment.
+• The energy and waste weighted indicators share a similar situation, whereby the
+values are strongly decreasing withω, which means that the internal dimensions are
+largely objective among the different cities and as such are more heavily emphasized
+in the CRITIC methodology.
+• There are only slight differences in the parameters of water consumption, noise and
+urban energy efficiency meaning that they will not change in any way dependent
+on the weighting preference selected.
+Overall, the relative ranking of indicator importance remains consistent across differ-
+ent fusion settings, confirming that the proposed weighting framework is robust and does
+not rely excessively on subjective decision-making influence.
+T eam # 16742 Page 21 of 26
+Figure 6: Sensitivity of hybrid weights under different fusion coefficientsω.
+8 Conclusions
+8.1 Summary of Findings
+This study develops a framework for evaluating the environmental performance of the
+Super Bowl host cities. We created a ranking of 22 candidate cities by evaluating six key
+indicators: energy, noise, carbon emissions, water consumption, waste management, and
+the urban energy coefficient. We then weighted these indicators using AHP and CRITIC
+method. Our results indicate that Pontiac is the most sustainable historical host city, while
+Buffalo ranks highest among cities that have never hosted a Super Bowl before.
+This study creates a framework for evaluating the environmental sustainability of
+cities that host the Super Bowl. We created a ranking list of 22 candidate cities by evalu-
+ating six indicators: energy, noise, carbon emissions, water consumption, waste manage-
+ment, and the urban energy coefficient. We then weighted these indicators using AHP
+and CRITIC methods. Based on our results, Pontiac is the most sustainable historical host
+city, while Buffalo is ranked highest among cities that have never hosted a Super Bowl.
+8.2 Implications
+This study provides important guidance for selecting future Super Bowl host cities and
+planning their environmental strategies. Cities that performed well in our evaluation
+generally have the same characteristic of better public transportation systems, cleaner
+energy sources, and strong environmental frameworks. These characteristics can be used
+as a valuable reference for any city to help minimize the environmental impact of major
+T eam # 16742 Page 22 of 26
+sporting events.
+The extended framework in Formula 1 demonstrates that our model is highly adapt-
+able to other global events. This means that our model can be used as a decision-making
+tool for policy making, event organization, and city planning to plan sustainable invest-
+ments and promote environmentally friendly event hosting strategies.
+8.3 Key Points
+• A comprehensive sustainability indicator system has been developed based on six
+environmental indicators related to major sporting events.
+• A hybrid weighting method combining the Analytic Hierarchy Process (AHP) with
+CRITIC guaranties that both subjective expertise and objective data variability are
+integrated.
+• Pontiac and Buffalo have been selected as the most sustainable cities within their
+respective groups.
+• The model’s resilience to varying weight allocations is validated by sensitivity anal-
+ysis.
+• The model has been successfully expanded to the Formula One racing sector by
+restructuring and complementing its indicators.
+• Scenario simulations demonstrate how a city’s sustainability score can be consider-
+ably raised by improving its infrastructure, such as using more renewable energy or
+upgrading its public transit.
+8.4 Final Statement
+This study presents a flexible, scientifically rigorous, and data-driven framework that
+supports our model to evaluate the sustainability of major athletic events. The model is
+applicable to various event types and incorporates environmental indicators with hybrid
+weighting techniques. As cities increasingly pursue a greener and more sustainable strat-
+egy for hosting events, our framework combines analytical robustness and practical rele-
+vance to provide a useful tool for supporting environmentally friendly decision-making.
+It can effectively support the development of future plans and policies.
+9 Evaluate of the Mode
+9.1 Strengths
+Our model owns several obvious advantages, enabling it to be both effective and adap-
+tive in evaluating major sports events. First of all, the indicators are comprehensive, in-
+cluding six dimensions: energy, noise, carbon emission, water usage, waste, and urban
+ecology coefficient. These dimensions reflect the key environmental factors jointly. Sec-
+ondly, applying the mixed weighting method of AHP and CRITIC can ensure including
+T eam # 16742 Page 23 of 26
+both subjective experts’ opinions and objective statistical variability. The combine can
+produce a rather balanced and credible indicator weight than using any other method
+alone. Thirdly, the model is highly scalable. Through modifying and adding indicators,
+the structure can be applied to totally different major events, like Formula One(F1), but
+without losing the consistency of the methodology. Our application to the Formula One
+events further proves the flexibility and robustness of the model under different circum-
+stances, scale, and infrastructure needs. Lastly, the model supports real-world scenario
+simulation. Governments can test different sustainable development strategies by ad-
+justing specific indicators (like noise and public transport) and observing the impact on
+the final scores immediately. This makes this structure a useful decision support tool for
+urban planners and event organizers.
+9.2 Limitations
+Though the model owns so many advantages, there are still some limits that need to be
+considered/ Firstly, some of the indicators rely on variables based on simplified or es-
+timated values, but not directly measured variables, because of the limitations of data
+availability. For example, the emission levels of transportation assume common travel
+behaviors, and some of the indicators about architecture utilize normalized approxima-
+tions. These simplifications may cause a little difference between the final score driven by
+the model and the real situation. Secondly, the model evaluates the city only based on en-
+vironmental sustainability, but does not directly include economic or social dimensions.
+Although we intend to do this to clarify the scope, we may ignore some factors such as
+economic feasibility, community engagement, and long-term impacts on urban develop-
+ment. Thirdly, some of the events, especially the global events like F1, involve complex
+logistics, like intercontinental freight, specialized equipment, and coordination of multi-
+ple games. Though we have adjusted our indicators, the more specific data like detailed
+energy recovery output, cargo weight distribution, and the exact water usage during the
+repair cycle can improve the accuracy even more. Finally, though the process of weight
+distribution is robust, a certain extent of subjectivity still exists. The AHP and CRITIC
+method can balance subjectivity, but if the experts’ judgment or dataset characteristics
+vary, the weight of some indicators still may change.
+Dear Members of  the NFL Sustainability Committee,
+As environmental sustainability becomes an increasingly important concern across the broader community, our team developed an integrated
+environmental assessment model to evaluate the sustainability performance of  potential host cities for Super Bowl LXIII (2029). The focus of
+our model is exclusively on environmental impact, in alignment with the NFL’s growing emphasis on carbon reduction, renewable energy use,
+waste minimization, and city-level ecological resilience.
+Across all metrics, our model identifies Pontiac, Michigan, as the most environmentally sustainable choice for the 2029 Super Bowl.
+The Most Environmentally Sustainable
+Host City for Super Bowl LXIII
+To: NFL Sustainability Committee
+From: HiMCM Team #16742
+Based on our analysis, we strongly recommend Pontiac, Michigan, as the host city for Super Bowl LXIII
+(2029). Through the examination of  multiple aspects of  environmental pollution, Pontiac was ranked
+higher among all other contestants for the next Super Bowl. Thus, Pontiac will be a better host city for
+the Super Bowl LIX. In this way, we can minimize the environmental impact produced by this particular
+athletic event.
+Sincerely,
+Team #16742
+HiMCM 2025
+Through the various models we designed—noise pollution,
+waste emission, water consumption, urban ecolog y coefficient,
+energy consumption, and carbon emission—w e found that
+Pontiac consistently perfor ms the best across m ultiple
+environmental dimensions.
+Although Pontiac’s energy score is not the highest, its noise
+control, water consumption efficiency, and transpor tation-
+related emissions lead the ranking . These strengths prove that
+Pontiac is a better host city than New Orleans , as Pontiac’s
+shaded area is almost twice the size of  New Orleans’. P ontiac
+ends with a score of  0.77, while New Orleans ended up with a
+relatively more minor score of  0.53. T herefore, Pontiac will be
+a better option to host Super Bo wl evenets compared to New
+Orleans.
+Pontiac’s score shown in a radar diag ram
+Mathematical Models
+New Orleans’ score sho wn in a radar diag ram
+T eam # 16742 Page 24 of 26
+T eam # 16742 Page 25 of 26
+References
+[1] OAH. The History of the Super Bowl[EB/OL]. n.d. https://www.oah.org/tah/ext
+ras/the-history-of-the-super-bowl/.
+[2] StudyFinds. Super Bowl Energy Toll Revealed[EB/OL]. n.d. https://studyfinds.or
+g/super-bowl-energy-toll-revealed/.
+[3] ENERGY B S. The Power of the Super Bowl[EB/OL]. n.d. https://brilliantsourcee
+nergy.com/the-power-of-the-super-bowl-2/.
+[4] COLLINS A, FLYNN A. Measuring the environmental sustainability of sports
+events[J]. Sustainability, 2018, 10(7): 2566.
+[5] MALLEN C, ADAMS L. Environmental sustainability in sport: Current state and
+future direction[J]. International Journal of Sport Management, 2010, 11: 1-20.
+[6] SILVA C, LEAL V. Energy performance of sports stadiums: Analysis and bench-
+marking[J]. Energy and Buildings, 2021, 231: 110596.
+[7] CADAR A, POPESCU D. Carbon footprint assessment of football stadium opera-
+tions[J]. Journal of Cleaner Production, 2019, 239: 118017.
+[8] OKE T R. The energetic basis of the urban heat island[J]. Quarterly Journal of the
+Royal Meteorological Society, 1982, 108(455): 1-24.
+[9] SANTAMOURIS M. Analyzing the heat island magnitude in Asian and Australian
+cities[J]. Science of the Total Environment, 2015, 512: 582-598.
+[10] NOWAK D J, CRANE D E. Carbon storage and sequestration by urban trees in the
+USA[J]. Environmental Pollution, 2006, 116: 381-389.
+[11] ALLEN R G, PEREIRA L S, RAES D, et al. Crop evapotranspiration—guidelines for
+computing crop water requirements[J]. FAO Irrigation and Drainage Paper, 1998,
+56.
+[12] SAATY T L. The Analytic Hierarchy Process[M]. New York: McGraw-Hill, 1980.
+[13] SAATY T L. Decision making with the analytic hierarchy process[J]. International
+Journal of Services Sciences, 2008, 1(1): 83-98.
+[14] DIAKOULAKI D, MAVROTAS G, PAPAYANNAKIS L. Determining Objective
+Weights in Multiple Criteria Problems: The CRITIC Method[J]. Computers & Oper-
+ations Research, 1995, 22(7): 763-770.
+[15] ERTU ˘GRUL ˙I, KARAKA¸ SO˘GLU N. CRITIC and MCDM methods: A comprehen-
+sive review[J]. Decision Making in Manufacturing and Services, 2020, 14: 111-132.
+[16] SALTELLI A. Sensitivity Analysis for Importance Assessment[J]. Risk Analysis,
+2002, 22(3): 579-590.
+[17] Of ENERGY U D. Alternative Fuels Data Center[EB/OL]. n.d. https://afdc.energy
+.gov/data.
+T eam # 16742 Page 26 of 26
+Report On Use Of AI
+We used ChatGPT for data factor research tasks during the competition:
+In our modeling project, ChatGPT 5.0 was employed solely as a research-support tool
+to facilitate the collection of data for the indicators used in our model. Many of these
+indicators are distributed across diverse sources and often lack standardized reporting
+formats, making manual data collection time-consuming and fragmented. Importantly,
+AI was used only to locate sources and provide contextual guidance; it did not gener-
+ate any numerical data. All suggested datasets and references were independently veri-
+fied, ensuring accuracy and reliability. This approach allowed us to streamline the data
+collection process, avoid overlooking relevant indicators, and improve the overall com-
+pleteness and consistency of our modeling inputs, while all substantive decisions and
+validations remained fully under the research team’s control.
+Sample Query: “Where can I find the value of Crop coefficient?”
+Sample output: “You can find crop coefficient (Kc) values mainly in standard agron-
+omy references—most commonly FAO-56 (Allen et al., 1998) “Crop Evapotranspiration”,
+which is the global reference used in research and irrigation planning.”

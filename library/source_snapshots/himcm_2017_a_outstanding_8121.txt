@@ -1,0 +1,683 @@
+ 
+Team​ ​8121 
+Page​ ​1​ ​of​ ​26 
+2017 
+20th​ ​Annual​ ​High​ ​School​ ​Mathematical​ ​Contest​ ​in​ ​Modeling​ ​(HiMCM)​ ​Summary​ ​Sheet 
+Team​ ​Control​ ​Number:​ ​8121 
+Problem​ ​Chosen:​ ​B:​ ​Ski​ ​Slope 
+Summary: 
+Wasatch​ ​Peaks​ ​Ranch​ ​is​ ​a​ ​prime​ ​location​ ​for​ ​a​ ​ski​ ​resort.​ ​​ ​Given​ ​the​ ​magnitude​ ​of​ ​the 
+property​ ​and​ ​the​ ​randomness​ ​of​ ​nature,​ ​it​ ​is​ ​impossible​ ​to​ ​find​ ​a​ ​perfect​ ​ski​ ​resort​ ​layout.​ ​​ ​Our 
+complete​ ​ski​ ​slope​ ​design​ ​is​ ​of​ ​Olympic​ ​caliber​ ​and​ ​will​ ​compete​ ​as​ ​one​ ​of​ ​the​ ​top​ ​ski​ ​resorts​ ​in 
+all​ ​of​ ​North​ ​America. 
+Our​ ​model​ ​begins​ ​with​ ​extensive​ ​path​ ​generation​ ​which​ ​entails​ ​hundreds​ ​of​ ​trails​ ​being 
+created,​ ​covering​ ​nearly​ ​60​ ​km.​ ​A​ ​subset​ ​of​ ​these​ ​trails​ ​were​ ​chosen​ ​based​ ​on​ ​their​ ​Trail​ ​Quality 
+Index​ ​(TQI),​ ​a​ ​single​ ​value​ ​which​ ​determines​ ​the​ ​appropriateness​ ​of​ ​trails​ ​for​ ​skiers​ ​given​ ​their 
+skill​ ​level,​ ​sharpness​ ​of​ ​curves,​ ​width​ ​of​ ​narrowest​ ​point,​ ​roughness,​ ​steepness,​ ​flatness, 
+variability​ ​in​ ​directional​ ​derivatives,​ ​and​ ​points​ ​of​ ​kinetic​ ​energy​ ​loss.​ ​Using​ ​the​ ​data​ ​for​ ​the​ ​40 
+km​ ​subset​ ​of​ ​trails,​ ​we​ ​simulated​ ​120​ ​km​ ​of​ ​trails​ ​using​ ​normal​ ​distributions​ ​for​ ​each​ ​of​ ​the 
+aforementioned​ ​values.​ ​Our​ ​final​ ​design​ ​boasts​ ​more​ ​than​ ​162​ ​km​ ​of​ ​slopes​ ​with​ ​38​ ​beginner 
+trails​ ​(20.4%),​ ​74​ ​intermediate​ ​trails​ ​(39.8%),​ ​and​ ​74​ ​expert​ ​trails​ ​(39.8%).​ ​Our​ ​beginner​ ​and 
+intermediate​ ​trails​ ​have​ ​an​ ​mean​ ​TQI​ ​of​ ​3.7​ ​compared​ ​to​ ​a​ ​TQI​ ​of​ ​2.4​ ​for​ ​Whistler​ ​Blackcomb’s 
+premier​ ​ski​ ​trail.​ ​Any​ ​TQI​ ​values​ ​greater​ ​than​ ​0.5​ ​are​ ​considered​ ​acceptable. 
+The​ ​aggregate​ ​of​ ​all​ ​trails​ ​is​ ​our​ ​Wasatch​ ​Peaks​ ​Ranch​ ​ski​ ​resort​ ​design.​ ​To 
+quantitatively​ ​compare​ ​our​ ​resort​ ​with​ ​others,​ ​we​ ​created​ ​a​ ​Resort​ ​Rating​ ​system​ ​which​ ​rates​ ​the 
+resorts​ ​from​ ​0.1​ ​to​ ​10​ ​(10​ ​being​ ​the​ ​best),​ ​based​ ​on​ ​a​ ​variety​ ​of​ ​factors,​ ​including​ ​ski​ ​lifts,​ ​trail 
+density,​ ​vertical​ ​drop,​ ​and​ ​direction​ ​that​ ​the​ ​slope​ ​is​ ​facing,​ ​which​ ​is​ ​critical​ ​for​ ​snow​ ​quality. 
+Using​ ​this​ ​system,​ ​Wasatch​ ​Peaks​ ​Ranch​ ​achieved​ ​a​ ​Resort​ ​Rating​ ​score​ ​of​ ​7.44,​ ​ranking​ ​3rd 
+among​ ​16​ ​top​ ​North​ ​American​ ​ski​ ​resorts.​ ​To​ ​put​ ​this​ ​into​ ​more​ ​context,​ ​Park​ ​City​ ​Mountain, 
+known​ ​as​ ​one​ ​of​ ​the​ ​best​ ​ski​ ​resorts,​ ​and​ ​previous​ ​Winter​ ​Olympic​ ​site,​ ​received​ ​a​ ​score​ ​of​ ​8.67 
+using​ ​our​ ​rating​ ​and​ ​was​ ​ranked​ ​#1.​ ​Sugarloaf​ ​Mountain,​ ​ranked​ ​extremely​ ​poorly​ ​on 
+ZRankings.com,​ ​received​ ​a​ ​4.74.​ ​The​ ​system​ ​is​ ​proven​ ​reliable​ ​through​ ​its​ ​strong​ ​correlation 
+with​ ​existing​ ​ranking​ ​systems​ ​and​ ​its​ ​vulnerability​ ​to​ ​sensitivity​ ​analysis.  
+Our​ ​rating​ ​systems​ ​are​ ​based​ ​on​ ​weighted​ ​composite​ ​scores​ ​in​ ​the​ ​various​ ​factors​ ​we 
+incorporated,​ ​so​ ​that​ ​it​ ​truly​ ​reflects​ ​what​ ​skiers​ ​are​ ​looking​ ​for.​ ​It​ ​also​ ​incorporates​ ​logistic 
+models​ ​to​ ​make​ ​sure​ ​that​ ​ratings​ ​below​ ​the​ ​minimum​ ​and​ ​ratings​ ​above​ ​the​ ​maximum​ ​cannot 
+happen.  
+To​ ​measure​ ​Olympic​ ​compatibility​ ​and​ ​readiness,​ ​we​ ​used​ ​a​ ​similar​ ​system,​ ​which 
+resulted​ ​in​ ​our​ ​Olympic​ ​readiness​ ​score​ ​of​ ​7.8,​ ​well​ ​within​ ​the​ ​range​ ​of​ ​previous​ ​Olympic​ ​sites: 
+Squaw​ ​Valley’s​ ​7.0​ ​to​ ​Park​ ​City​ ​Mountain’s​ ​8.3. 
+ 
+Team​ ​8121 
+Page​ ​2​ ​of​ ​26 
+Dear​ ​Ms.​ ​Mogul, 
+Wasatch​ ​Peaks​ ​Ranch​ ​is​ ​a​ ​prime​ ​location​ ​for​ ​a​ ​ski​ ​resort.​ ​​ ​Given​ ​the​ ​magnitude​ ​of​ ​the 
+property​ ​and​ ​the​ ​randomness​ ​of​ ​nature,​ ​it​ ​is​ ​impossible​ ​to​ ​find​ ​a​ ​perfect​ ​ski​ ​resort​ ​layout.​ ​That 
+being​ ​said,​ ​we​ ​are​ ​pleased​ ​to​ ​be​ ​able​ ​to​ ​present​ ​to​ ​you​ ​a​ ​complete​ ​design​ ​of​ ​Olympic​ ​caliber​ ​ski 
+slopes​ ​that​ ​can​ ​compete​ ​with​ ​top​ ​ski​ ​resorts​ ​all​ ​around​ ​North​ ​America. 
+As​ ​stated​ ​previously,​ ​the​ ​size​ ​of​ ​Wasatch​ ​Peaks​ ​Ranch​ ​is​ ​much​ ​greater​ ​than​ ​that​ ​needed 
+of​ ​a​ ​ski​ ​resort.​ ​​ ​Our​ ​slopes​ ​are​ ​located​ ​in​ ​two​ ​main​ ​clusters,​ ​one​ ​in​ ​the​ ​south​ ​among​ ​Francis​ ​Peak 
+and​ ​Round​ ​Top​ ​and​ ​one​ ​in​ ​the​ ​north​ ​among​ ​Thurston​ ​Peak​ ​and​ ​Jacob’s​ ​Peak.​ ​​ ​The​ ​remaining 
+land​ ​can​ ​be​ ​utilized​ ​for​ ​commercial​ ​use​ ​or​ ​potential​ ​future​ ​Olympic​ ​village​ ​expansions. 
+ 
+Our​ ​design​ ​meets​ ​all​ ​requirements​ ​laid​ ​out​ ​in​ ​the​ ​request.​ ​​ ​The​ ​resort​ ​boasts​ ​more​ ​than 
+162​ ​km​ ​of​ ​slopes.​ ​​ ​The​ ​distribution​ ​of​ ​trails​ ​is​ ​roughly​ ​20%​ ​rated​ ​beginner,​ ​40%​ ​rated 
+intermediate,​ ​and​ ​40%​ ​rated​ ​difficult​ ​with​ ​38​ ​beginner​ ​trails​ ​(20.4%),​ ​74​ ​intermediate​ ​trails 
+(39.8%),​ ​and​ ​74​ ​expert​ ​trails​ ​(39.8%).​ ​​ ​Our​ ​design​ ​empowers​ ​skiers​ ​with​ ​trail​ ​length​ ​options 
+ranging​ ​from​ ​a​ ​beginner’s​ ​endurance​ ​to​ ​a​ ​whopping​ ​3.38​ ​kilometers​ ​for​ ​skiers​ ​looking​ ​to 
+challenge​ ​themselves.  
+To​ ​rank​ ​our​ ​ski​ ​area​ ​among​ ​other​ ​existing​ ​resorts,​ ​we​ ​created​ ​a​ ​Resort​ ​Rating​ ​system.​ ​We 
+included​ ​a​ ​multitude​ ​of​ ​factors,​ ​including​ ​the​ ​fit​ ​of​ ​the​ ​resort​ ​for​ ​beginners,​ ​intermediates,​ ​and 
+experts,​ ​the​ ​quality​ ​of​ ​the​ ​snow,​ ​the​ ​quality​ ​of​ ​proposed​ ​lifts,​ ​the​ ​steepness​ ​of​ ​the​ ​mountain 
+ 
+Team​ ​8121 
+Page​ ​3​ ​of​ ​26 
+range,​ ​and​ ​crowdedness​ ​of​ ​the​ ​trails.​ ​Using​ ​this​ ​system,​ ​and​ ​weighting​ ​the​ ​different​ ​factors​ ​based 
+on​ ​their​ ​value​ ​to​ ​the​ ​customer​ ​and​ ​potential​ ​skier,​ ​Wasatch​ ​Peaks​ ​Ranch​ ​achieved​ ​a​ ​rating​ ​of 
+7.44,​ ​on​ ​a​ ​scale​ ​from​ ​0.1​ ​to​ ​10,​ ​where​ ​(10​ ​is​ ​the​ ​best).​ ​To​ ​put​ ​this​ ​in​ ​perspective,​ ​the​ ​worst​ ​resort, 
+Silver​ ​Star,​ ​had​ ​a​ ​rating​ ​of​ ​4.47,​ ​and​ ​Vail​ ​(one​ ​of​ ​the​ ​best​ ​resorts​ ​according​ ​to​ ​ZRankings.com) 
+had​ ​a​ ​rating​ ​of​ ​7.12.  
+To​ ​measure​ ​Olympic​ ​compatibility​ ​and​ ​readiness,​ ​we​ ​used​ ​a​ ​similar​ ​system,​ ​except 
+weighed​ ​the​ ​factors​ ​differently​ ​to​ ​make​ ​an​ ​Olympic​ ​readiness​ ​rating.​ ​When​ ​comparing​ ​our 
+Olympic​ ​readiness​ ​rating​ ​of​ ​7.8​ ​to​ ​other​ ​sites​ ​previously​ ​used​ ​for​ ​the​ ​Winter​ ​Olympics,​ ​we​ ​were 
+well​ ​within​ ​the​ ​range​ ​(Squaw​ ​Valley’s​ ​7.0​ ​to​ ​Park​ ​City​ ​Mountain’s​ ​8.3).​ ​However,​ ​​ ​we​ ​should 
+still​ ​try​ ​to​ ​improve​ ​the​ ​rating,​ ​as​ ​three​ ​other​ ​sites​ ​are​ ​also​ ​above​ ​that​ ​Olympic​ ​readiness​ ​score 
+(Beaver​ ​Creek-​ ​7.8​ ​score,​ ​Big​ ​Sky​ ​Resort-​ ​8.2​ ​score,​ ​and​ ​Whistler​ ​Blackcomb-​ ​8.2​ ​score).  
+Unfortunately,​ ​we​ ​did​ ​not​ ​have​ ​the​ ​data​ ​around​ ​the​ ​actual​ ​quality​ ​of​ ​other​ ​factors,​ ​such​ ​as 
+accommodations​ ​and​ ​living,​ ​safety​ ​of​ ​lifts,​ ​etc.,​ ​which​ ​would​ ​help​ ​to​ ​make​ ​our​ ​score​ ​more 
+accurate.​ ​To​ ​better​ ​compare​ ​our​ ​resort​ ​to​ ​theirs,​ ​it​ ​would​ ​viable​ ​to​ ​have​ ​data​ ​on​ ​more​ ​of​ ​the 
+non-skiing​ ​aspects​ ​which​ ​are​ ​still​ ​inherently​ ​important​ ​to​ ​the​ ​overall​ ​ski​ ​trip.  
+Thank​ ​you​ ​for​ ​contacting​ ​us​ ​to​ ​develop​ ​the​ ​ski​ ​resort.​ ​We​ ​hope​ ​that​ ​you​ ​find​ ​the 
+flexibility​ ​and​ ​sensitivity​ ​of​ ​our​ ​model​ ​useful​ ​and​ ​applicable​ ​to​ ​not​ ​just​ ​this​ ​resort,​ ​but​ ​other 
+resorts​ ​should​ ​you​ ​choose​ ​to​ ​develop​ ​them.​ ​We​ ​are​ ​confident​ ​that​ ​presenting​ ​our​ ​design​ ​to​ ​the 
+winter​ ​sports​ ​enthusiasts​ ​you​ ​represent​ ​is​ ​a​ ​worthwhile​ ​endeavour,​ ​and​ ​that​ ​the​ ​optimization​ ​of 
+our​ ​trails​ ​can​ ​help​ ​you​ ​in​ ​future​ ​developments.  
+Thank​ ​you​ ​again​ ​for​ ​letting​ ​us​ ​create​ ​this​ ​model​ ​for​ ​you, 
+We​ ​look​ ​forward​ ​to​ ​presenting​ ​a​ ​more​ ​refined​ ​model​ ​at​ ​a​ ​later​ ​date​ ​inform​ ​your​ ​future 
+purchasing​ ​decisions. 
+Team​ ​8121 
+ 
+ 
+Team​ ​8121 
+Page​ ​4​ ​of​ ​26 
+1​ ​-​ ​Introduction 
+1.1​ ​Background 
+First​ ​Tracks​ ​Online​ ​Ski​ ​Magazine​ ​[1]​ ​describes​ ​Wasatch​ ​Peaks​ ​Ranch​ ​as​ ​what​ ​may​ ​be 
+America’s​ ​last​ ​great​ ​ski​ ​resort​ ​site.​ ​​ ​The​ ​almost​ ​13,000​ ​acre​ ​Utah​ ​ranch​ ​has​ ​great​ ​potential​ ​in 
+becoming​ ​the​ ​host​ ​of​ ​a​ ​future​ ​Winter​ ​Olympic,​ ​boasting​ ​a​ ​4750​ ​foot​ ​drop​ ​among​ ​its​ ​24​ ​peaks. 
+Ms.​ ​Mogul,​ ​an​ ​agent​ ​of​ ​a​ ​wealthy​ ​group​ ​of​ ​winter​ ​sports​ ​fans,​ ​has​ ​tasked​ ​us​ ​with​ ​identifying 
+potential​ ​ski​ ​slopes​ ​and​ ​trails​ ​on​ ​the​ ​property​ ​in​ ​order​ ​to​ ​develop​ ​Wasatch​ ​Peaks​ ​Ranch​ ​into​ ​one 
+of​ ​the​ ​top​ ​ski​ ​resorts​ ​in​ ​North​ ​America​ ​and​ ​a​ ​potential​ ​future​ ​Winter​ ​Olympics​ ​location.​ ​​ ​Ms. 
+Mogul​ ​provided​ ​us​ ​with​ ​a​ ​brochure​ ​for​ ​Wasatch​ ​Peaks​ ​Ranch,​ ​a​ ​topographic​ ​map,​ ​and​ ​a​ ​partial 
+list​ ​of​ ​North​ ​American​ ​ski​ ​resorts. 
+1.2​ ​Restatement​ ​of​ ​Problem 
+Given​ ​the​ ​subjective​ ​nature​ ​of​ ​an​ ​ideal​ ​ski​ ​area​ ​design,​ ​our​ ​team​ ​narrowed​ ​the​ ​constraints 
+to​ ​a​ ​list​ ​of​ ​essential​ ​features​ ​needed​ ​in​ ​a​ ​Winter​ ​Olympic​ ​caliber​ ​resort​ ​layout.​ ​​ ​Our​ ​design​ ​would 
+have​ ​to​ ​provide​ ​at​ ​least​ ​160​ ​km​ ​of​ ​trails,​ ​match​ ​a​ ​distribution​ ​of​ ​roughly​ ​20%​ ​rated​ ​beginner, 
+40%​ ​rated​ ​intermediate,​ ​and​ ​40%​ ​rated​ ​difficult​ ​slopes,​ ​and​ ​be​ ​Winter​ ​Olympics​ ​compatible. 
+The​ ​solution​ ​would​ ​be​ ​presented​ ​as​ ​a​ ​series​ ​of​ ​trails​ ​with​ ​ski​ ​lifts.​ ​The​ ​ski​ ​area​ ​would​ ​then​ ​need 
+to​ ​be​ ​ranked​ ​among​ ​existing​ ​North​ ​American​ ​ski​ ​resorts.​ ​​ ​The​ ​credibility​ ​of​ ​our​ ​ski​ ​area​ ​design 
+can​ ​be​ ​gauged​ ​by​ ​its​ ​rank​ ​compared​ ​to​ ​other​ ​top​ ​North​ ​American​ ​ski​ ​resorts.​ ​​ ​The​ ​credibility​ ​of 
+our​ ​ranking​ ​system​ ​can​ ​be​ ​measured​ ​by​ ​its​ ​similarity​ ​to​ ​existing​ ​rankings​ ​and​ ​its​ ​immunity​ ​to 
+sensitivity​ ​analysis.​ ​​ ​A​ ​brief​ ​report​ ​of​ ​our​ ​findings​ ​would​ ​then​ ​be​ ​written​ ​for​ ​Ms.​ ​Mogul,​ ​which 
+she​ ​would​ ​present​ ​to​ ​the​ ​group​ ​she​ ​is​ ​representing. 
+2​ ​-​ ​Definitions,​ ​Assumptions,​ ​Variables 
+2.1​ ​Definitions 
+Terms​ ​used​ ​throughout​ ​the​ ​paper​ ​are​ ​defined​ ​here. 
+ 
+Team​ ​8121 
+Page​ ​5​ ​of​ ​26 
+Slope: The​ ​snow​ ​covered​ ​downward​ ​skiable​ ​area​ ​in​ ​the​ ​resort 
+Trail: The​ ​designated​ ​recommended​ ​paths​ ​upon​ ​which​ ​trail​ ​length​ ​and​ ​difficult​ ​levels  
+are​ ​measured 
+2.2​ ​Assumptions 
+The​ ​following​ ​assumptions​ ​were​ ​necessary​ ​in​ ​our​ ​model​ ​to​ ​ensure​ ​maximum​ ​practicality​ ​and 
+usability. 
+● Our​ ​resort​ ​would​ ​not​ ​be​ ​responsible​ ​for​ ​all​ ​Winter​ ​Olympic​ ​events,​ ​but​ ​only​ ​one,​ ​such​ ​as 
+alpine​ ​skiing.​ ​​ ​As​ ​a​ ​parallel,​ ​the​ ​2018​ ​Pyeongchang​ ​Winter​ ​Olympics​ ​will​ ​have 
+Yongpyong​ ​Resort​ ​and​ ​Jeongseon​ ​Alpine​ ​Centre​ ​as​ ​the​ ​only​ ​hosts​ ​to​ ​the​ ​alpine​ ​skiing 
+events​ ​[2]. 
+● Ski​ ​trails​ ​that​ ​merge​ ​are​ ​measured​ ​as​ ​separate​ ​trails​ ​in​ ​the​ ​total​ ​trail​ ​length​ ​calculations.  
+● Existing​ ​infrastructure​ ​(roads)​ ​and​ ​problematic​ ​environmental​ ​features​ ​(rocks)​ ​do​ ​not 
+pose​ ​a​ ​significant​ ​obstacle​ ​and​ ​can​ ​be​ ​removed. 
+● Skier​ ​slope​ ​preferences​ ​are​ ​based​ ​on​ ​skill​ ​levels: 
+○ Beginners​ ​prefer​ ​wider​ ​slopes​ ​with​ ​smooth​ ​curves,​ ​smooth​ ​terrain,​ ​and​ ​a​ ​gradual 
+slope​ ​(results​ ​in​ ​less​ ​velocity).​ ​​ ​Beginners​ ​ski​ ​mainly​ ​on​ ​green​ ​circle​ ​difficulty 
+trails. 
+○ Intermediates​ ​prefer​ ​slightly​ ​narrower​ ​slopes​ ​with​ ​sharper​ ​curves,,​ ​rougher​ ​terrain, 
+and​ ​a​ ​steeper​ ​slope​ ​(results​ ​in​ ​greater​ ​velocity)​ ​when​ ​compared​ ​to​ ​beginners. 
+Intermediate​ ​ski​ ​mainly​ ​on​ ​blue​ ​square​ ​difficulty​ ​trails. 
+○ Experts​ ​prefer​ ​significantly​ ​narrower​ ​slopes​ ​with​ ​sharper​ ​curves,​ ​rougher​ ​terrain, 
+and​ ​a​ ​steeper​ ​slope​ ​(resulting​ ​in​ ​even​ ​greater​ ​velocity​ ​than​ ​intermediates). 
+Experts​ ​ski​ ​mainly​ ​on​ ​black​ ​diamond​ ​difficulty​ ​trails. 
+ 
+Team​ ​8121 
+Page​ ​6​ ​of​ ​26 
+● Olympic​ ​alpine​ ​skiing​ ​will​ ​occur​ ​primarily​ ​on​ ​our​ ​expert​ ​black​ ​diamond​ ​slopes,​ ​but​ ​will 
+still​ ​use​ ​some​ ​intermediate​ ​slopes,​ ​and​ ​rarely​ ​beginner​ ​ones​ ​(possibly​ ​for​ ​warm​ ​up). 
+● Slopes​ ​facing​ ​in​ ​a​ ​direction​ ​between​ ​North​ ​and​ ​East​ ​will​ ​have​ ​improved​ ​snow​ ​quality 
+over​ ​slopes​ ​facing​ ​the​ ​West.​ ​Southward​ ​facing​ ​slopes​ ​will​ ​have​ ​decreased​ ​snow​ ​quality. 
+3​ ​-​ ​Model​ ​Description 
+Our​ ​model​ ​consists​ ​of​ ​two​ ​parts,​ ​a​ ​Wasatch​ ​Peaks​ ​Ranch​ ​trail​ ​optimization​ ​and​ ​a​ ​North 
+American​ ​resort​ ​ranking.​ ​​ ​The​ ​parts​ ​are​ ​independent,​ ​however​ ​we​ ​utilize​ ​the​ ​data​ ​obtained​ ​from 
+the​ ​optimized​ ​trail​ ​model​ ​to​ ​compare​ ​the​ ​hypothetical​ ​Wasatch​ ​Peaks​ ​Ranch​ ​to​ ​existing​ ​resorts. 
+3.1​ ​Finding​ ​Optimal​ ​Trails 
+To​ ​find​ ​optimal​ ​trails,​ ​we​ ​created​ ​a​ ​Trail​ ​Quality​ ​Index​ ​(TQI)​ ​to​ ​gauge​ ​quality​ ​of​ ​each 
+trail.​ ​​ ​Big​ ​data​ ​was​ ​collected​ ​on​ ​a​ ​large​ ​collection​ ​of​ ​Google​ ​Earth​ ​Pro​ ​generated​ ​trails.​ ​This​ ​data 
+was​ ​narrowed​ ​down​ ​using​ ​the​ ​TQI​ ​​ ​results​ ​and​ ​requirement​ ​for​ ​varying​ ​lengths​ ​and​ ​difficulty 
+degree. 
+3.1.1​ ​Variables 
+The​ ​following​ ​variables​ ​are​ ​used​ ​within​ ​our​ ​model: 
+:D skill​ ​level​ ​constant​ ​(no​ ​unit,​ ​see​ ​below) 
+:s sharpness​ ​of​ ​curves​ ​on​ ​a​ ​trail​ ​(%​ ​of​ ​trail) 
+:w narrowest​ ​point​ ​on​ ​a​ ​trail​ ​(meters) 
+:r roughness​ ​of​ ​trail​ ​(ratio) 
+:l
+Δz  steepness ​ ​of​ ​trail​ ​(meters​ ​/​ ​meter) 
+:f flatness​ ​of​ ​trail​ ​(ratio) 
+:QR Iinterquartile​ ​range​ ​of​ ​slopes​ ​at​ ​each​ ​point​ ​on​ ​the​ ​trail​ ​(meters​ ​/meter) 
+:E energy​ ​loss​ ​(%​ ​of​ ​trail)  
+ 
+Team​ ​8121 
+Page​ ​7​ ​of​ ​26 
+3.1.2​ ​Difficulty​ ​Level​ ​Constant 
+Difficulty​ ​Rankings: 
+Green​ ​Circle Beginner ​ ​Slope D ​ ​=​ ​-1 
+Blue​ ​Square Intermediate ​ ​Slope D ​ ​=​ ​0.9 
+Black​ ​Diamond Expert ​ ​Slope D ​ ​=​ ​1 
+The​ ​difficulty​ ​levels​ ​were​ ​assigned​ ​to​ ​skill​ ​levels​ ​to​ ​reflect​ ​the​ ​Trail​ ​Quality​ ​Index 
+described​ ​below.​ ​​ ​A​ ​negative​ ​D​ ​value​ ​will​ ​decrease​ ​the​ ​TQI​ ​of​ ​difficult​ ​trails,​ ​which​ ​are 
+undesirable​ ​to​ ​beginners.​ ​​ ​A​ ​high​ ​positive​ ​D​ ​value​ ​will​ ​produce​ ​the​ ​opposite​ ​effect,​ ​raising​ ​the 
+TQI​ ​for​ ​difficult​ ​trails. 
+3.1.3​ ​Trail​ ​Quality​ ​Index​ ​(TQI) 
+The​ ​TQI​ ​measures​ ​the​ ​quality​ ​of​ ​a​ ​trail​ ​based​ ​on​ ​its​ ​difficulty​ ​level.​ ​The​ ​simplest​ ​factor 
+that​ ​would​ ​affect​ ​how​ ​well​ ​a​ ​trail​ ​is​ ​designed​ ​is​ ​its​ ​average​ ​slope.​ ​A​ ​high​ ​directional​ ​derivative​ ​is 
+desirable​ ​by​ ​expert​ ​skiers​ ​while​ ​a​ ​low​ ​average​ ​directional​ ​derivative​ ​is​ ​desirable​ ​for​ ​beginners. 
+Our​ ​TQI​ ​function​ ​is​ ​directly​ ​proportional​ ​to​ ​the​ ​average​ ​directional​ ​derivative​ ​for​ ​experts​ ​and 
+inversely​ ​proportional​ ​for​ ​beginners.​ ​​ ​This​ ​can​ ​be​ ​expressed​ ​as: 
+QI )T = ( l
+Δz D  
+where​ ​ is​ ​the​ ​change​ ​in​ ​elevation​ ​over​ ​the​ ​length​ ​of​ ​the​ ​trail​ ​and​ ​ ​ ​is​ ​the​ ​total​ ​length​ ​of​ ​thezΔ l  
+trail. 
+After​ ​accounting​ ​for​ ​average​ ​slope,​ ​our​ ​model​ ​addresses​ ​more​ ​complex​ ​factors,​ ​such​ ​as 
+roughness​ ​of​ ​terrain,​ ​ ,​ ​and​ ​sharpness​ ​of​ ​the​ ​trail,​ ​ .​ ​We​ ​measured​ ​the​ ​percent​ ​of​ ​the​ ​entire​ ​trailr s  
+that​ ​passes​ ​through​ ​rocky​ ​or​ ​tree​ ​covered​ ​terrain.​ ​​ ​The​ ​sharpness​ ​of​ ​the​ ​trail​ ​is​ ​measured​ ​as​ ​the 
+percent​ ​of​ ​the​ ​trail​ ​that​ ​comprises​ ​of​ ​a​ ​turn​ ​that​ ​has​ ​degree​ ​of​ ​curvature​ ​less​ ​than​ ​90°,​ ​an​ ​acute 
+angle.​ ​Expert​ ​skiers​ ​prefer​ ​rough​ ​terrain​ ​and​ ​increased​ ​sharpness​ ​while​ ​beginners​ ​prefer​ ​the 
+opposite.​ ​Since​ ​both​ ​these​ ​parameters​ ​can​ ​only​ ​have​ ​values​ ​from​ ​1-100,​ ​they​ ​can​ ​only​ ​add​ ​to​ ​the 
+TQI​ ​of​ ​a​ ​trail,​ ​not​ ​decrease​ ​it,​ ​so​ ​we​ ​used​ ​the​ ​ratio​ ​between​ ​the​ ​parameter​ ​value​ ​and​ ​the​ ​average 
+
+ 
+Team​ ​8121 
+Page​ ​8​ ​of​ ​26 
+value​ ​for​ ​both​ ​of​ ​those​ ​parameters. ​ ​relates​ ​to​ ​ ​ ​and​ ​ ​ ​in​ ​the​ ​same​ ​way​ ​it​ ​relates​ ​to​​ ​ .QI  T r s l
+Δz  
+Appending​ ​ ​ ​and​ ​ ​ ​to​ ​ ​  ​results​ ​in:r s QI  T  
+QI )T = ( l
+Δz D × rD × sD  
+Another​ ​factor​ ​that​ ​affects​ ​ ​  ​is​ ​the​ ​width​ ​of​ ​the​ ​trail,​ ​ .​ ​​ ​We​ ​decided​ ​to​ ​compute​ ​theQI  T w  
+narrowest​ ​part​ ​of​ ​the​ ​trail.​ ​However,​ ​unlike​ ​the​ ​previous​ ​variables​ ​that​ ​affect​ ​ ,​ ​ ​ ​isQI  T w  
+inversely​ ​proportional​ ​for​ ​expert​ ​skiers​ ​and​ ​directly​ ​proportional​ ​for​ ​beginners,​ ​meaning 
+beginners​ ​want​ ​wider​ ​trails,​ ​while​ ​experts​ ​prefer​ ​more​ ​narrow​ ​trails.​ ​ ​  ​now​ ​takes​ ​theQI  T  
+following​ ​form: 
+QI T= wD
+( ) × r ×sl
+Δz D D D
+ 
+Unlike​ ​previous​ ​inputs​ ​to​ ​ ​  ​,​ ​which​ ​are​ ​conditional​ ​to​ ​skier​ ​skill​ ​level,​ ​percent​ ​of​ ​theQI  T  
+trail​ ​that​ ​is​ ​flat​ ​( ) ​ ​​ ​and​ ​the​ ​energy​ ​loss​ ​of​ ​uphill​ ​travel​ ​( ) ​ ​will​ ​be​ ​inversely​ ​proportional​ ​tof E  
+​ ​for​ ​all​ ​expertise​ ​levels.​ ​Energy​ ​loss​ ​was​ ​determined​ ​by​ ​evaluating​ ​the​ ​percentage​ ​of​ ​theQI  T  
+trail​ ​that​ ​is​ ​going​ ​uphill.​ ​Since​ ​both​ ​these​ ​parameters​ ​can​ ​only​ ​have​ ​values​ ​from​ ​1-100,​ ​they​ ​can 
+only​ ​decrease​ ​the​ ​TQI​ ​of​ ​a​ ​trail,​ ​not​ ​add​ ​to​ ​it,​ ​so​ ​we​ ​used​ ​the​ ​ratio​ ​between​ ​a​ ​trail’s​ ​value​ ​and​ ​the 
+average​ ​value​ ​for​ ​both​ ​of​ ​those​ ​parameters​ ​to​ ​ensure​ ​that​ ​the​ ​parameters​ ​can​ ​affect​ ​the​ ​Trail 
+Quality​ ​Index​ ​positively​ ​or​ ​negatively.  
+QI  T = w  × f × ED
+( )  × r  × sl
+Δz D D D
+ 
+The​ ​final​ ​factor​ ​determined​ ​to​ ​affect​ ​the​ ​Trail​ ​Quality​ ​Index​ ​was​ ​the​ ​variability​ ​of​ ​its 
+directional​ ​derivatives​ ​in​ ​the​ ​direction​ ​of​ ​the​ ​path.​ ​This​ ​value​ ​is​ ​essentially​ ​the​ ​mathematical 
+slope​ ​of​ ​the​ ​trail​ ​at​ ​a​ ​given​ ​point​ ​on​ ​the​ ​trail,​ ​however​ ​this​ ​nomenclature​ ​is​ ​not​ ​used​ ​to​ ​avoid 
+confusion.​ ​​ ​Instantaneous​ ​change​ ​in​ ​elevation​ ​at​ ​each​ ​point​ ​on​ ​the​ ​trail​ ​will​ ​be​ ​referred​ ​to​ ​by​ ​its 
+technical​ ​term,​ ​the​ ​directional​ ​derivative​ ​in​ ​the​ ​direction​ ​of​ ​the​ ​trail.​ ​We​ ​used​ ​IQR​ ​over​ ​range​ ​as 
+a​ ​measure​ ​of​ ​variability​ ​in​ ​this​ ​case​ ​due​ ​to​ ​the​ ​interquartile​ ​ranges’​ ​resistance​ ​to​ ​outliers.​ ​We 
+ 
+Team​ ​8121 
+Page​ ​9​ ​of​ ​26 
+concluded​ ​that​ ​more​ ​variability​ ​in​ ​the​ ​directional​ ​derivatives​ ​would​ ​be​ ​detrimental​ ​to​ ​the​ ​Trail 
+Quality​ ​Index​ ​since​ ​the​ ​difficulty​ ​level​ ​does​ ​not​ ​necessarily​ ​apply​ ​to​ ​the​ ​entire​ ​trail.​ ​However, 
+Trail​ ​Quality​ ​Index​ ​should​ ​be​ ​positively​ ​affected​ ​if​ ​the​ ​directional​ ​derivatives​ ​do​ ​not​ ​vary​ ​much 
+(low​ ​IQR).​ ​​ ​As​ ​a​ ​result,​ ​ ​  ​and​ ​ ​  ​are​ ​inversely​ ​proportional.​ ​Additionally,​ ​we​ ​concludedQI  T QR I  
+that​ ​variance​ ​in​ ​directional​ ​derivatives​ ​is​ ​not​ ​as​ ​important​ ​as​ ​the​ ​other​ ​factors​ ​in​ ​TQI​ ​since​ ​a 
+relatively​ ​flat​ ​trail​ ​with​ ​one​ ​steep​ ​drop​ ​would​ ​still​ ​be​ ​a​ ​test​ ​of​ ​skill.​ ​At​ ​its​ ​current​ ​stage,​ ​Trail 
+Quality​ ​Index​ ​model​ ​looks​ ​like:  
+QI  T =
+( )  × r  × sl
+Δz D D D
+w  × f × E × IQRD 1/2  
+However,​ ​with​ ​the​ ​current​ ​scaling,​ ​our​ ​values​ ​ranged​ ​from​ ​ ​  ​to​ ​ ,​ ​so​ ​we​ ​multiplied 0 1−4 0 16  
+the​ ​TQI​ ​by​ ​ and​ ​then​ ​logarithmized​ ​the​ ​TQI​ ​to​ ​help​ ​conceptualize​ ​the​ ​scores:​ ​a​ ​number 0 12  
+between​ ​-10​ ​and​ ​10​ ​is​ ​easier​ ​to​ ​comprehend​ ​than​ ​values​ ​that​ ​are​ ​orders​ ​of​ ​magnitude​ ​different. 
+Therefore,​ ​our​ ​true​ ​final​ ​model​ ​for​ ​the​ ​Trail​ ​Quality​ ​Index​ ​is: 
+QI og(10 )T = l 2 ×
+( )  × r  × sl
+Δz D D D
+w  × f × E × IQRD 1/2  
+3.1.4 Path ​ ​Generation 
+All​ ​the​ ​data​ ​required​ ​for​ ​this​ ​model​ ​can​ ​be​ ​obtained​ ​through​ ​the​ ​Google​ ​Maps​ ​API​ ​in 
+combination​ ​with​ ​Google​ ​Earth​ ​Pro​ ​[6].​ ​We​ ​generated​ ​60​ ​km​ ​of​ ​trails​ ​using​ ​the​ ​factors​ ​defined​ ​in 
+the​ ​previous​ ​section,​ ​and​ ​eliminated​ ​approximately​ ​20​ ​km​ ​of​ ​trails​ ​based​ ​on​ ​the​ ​TQI​ ​values.​ ​The 
+following​ ​table​ ​gives​ ​data​ ​for​ ​a​ ​fall​ ​line​ ​--​ ​the​ ​absolute​ ​shortest​ ​path​ ​down​ ​the​ ​mountain​ ​--​ ​one 
+very​ ​good​ ​trail​ ​from​ ​a​ ​different​ ​Ski​ ​resort,​ ​and​ ​one​ ​of​ ​our​ ​generated​ ​paths​ ​that​ ​returned​ ​a 
+reasonably​ ​high​ ​TQI. 
+ 
+  
+ 
+Team​ ​8121 
+Page​ ​10​ ​of​ ​26 
+ 
+Name Fall​ ​Line Generated​ ​Slope Whistler​ ​Blackcomb 
+(Canada) 
+l
+Δz  
+0.2620394199 0.6465136522 0.2545933426 
+r  0.03123886039 1.09456007 1.249554416 
+s  0.05320682122 2.770024777 1.276648876 
+w  15 15 6.36 
+E  1.555555556 1 1 
+f  0.3428007942 0.1580578512 0.0554228829 
+QR I 0.1975302519 0.3787962148 0.1926055728 
+QI  T  -1.911806289 2.128190807 2.419193031 
+ 
+This​ ​information​ ​provides​ ​context​ ​to​ ​the​ ​range​ ​of​ ​solutions​ ​we​ ​can​ ​get​ ​from​ ​this​ ​model: 
+values​ ​less​ ​than​ ​0​ ​should​ ​be​ ​eliminated​ ​and​ ​positive​ ​values​ ​above​ ​2​ ​are​ ​very​ ​good​ ​trails.  
+Based​ ​on​ ​the​ ​distribution​ ​of​ ​data​ ​for​ ​the​ ​40​ ​km​ ​of​ ​trails​ ​that​ ​we​ ​generated​ ​on​ ​the​ ​map,​ ​we 
+simulated​ ​100​ ​km​ ​of​ ​remaining​ ​trails.​ ​We​ ​used​ ​the​ ​standard​ ​deviations​ ​for​ ​the​ ​directional 
+derivative​ ​at​ ​each​ ​point​ ​and​ ​random​ ​gaussian​ ​functions​ ​to​ ​simulate​ ​the​ ​changing​ ​altitude  
+ 
+Team​ ​8121 
+Page​ ​11​ ​of​ ​26 
+ 
+
+ 
+Team​ ​8121 
+Page​ ​12​ ​of​ ​26 
+ 
+Slopes​ ​were​ ​optimized​ ​to​ ​have​ ​varying​ ​length​ ​and​ ​the​ ​correct​ ​proportion​ ​of​ ​beginner, 
+intermediate,​ ​and​ ​expert​ ​trails. 
+3.2​ ​Developing​ ​a​ ​Resort​ ​Ranking​ ​System 
+We​ ​developed​ ​a​ ​resort​ ​ranking​ ​system​ ​that​ ​assigns​ ​ratings​ ​based​ ​on​ ​popular 
+characteristics.​ ​​ ​The​ ​ranking​ ​system​ ​assigns​ ​a​ ​value​ ​0.1​ ​to​ ​10​ ​to​ ​each​ ​resort,​ ​with​ ​10​ ​being​ ​the 
+best.​ ​​ ​The​ ​ranking​ ​is​ ​obtained​ ​through​ ​a​ ​weighted​ ​average​ ​of​ ​different​ ​factors​ ​which​ ​we​ ​assume 
+affect​ ​the​ ​overall​ ​rating​ ​of​ ​the​ ​resort. 
+3.2.1​ ​Inputs 
+*​ ​Note:​ ​The​ ​following​ ​ratings​ ​are​ ​assigned​ ​to​ ​whole​ ​resorts,​ ​not​ ​individual​ ​slopes. 
+:Q Snow​ ​quality​ ​rating 
+w​ ​​: Average ​ ​annual​ ​snowfall​ ​per​ ​year​ ​in​ ​meters 
+d​​ ​: Difference ​ ​in​ ​proportion​ ​of​ ​slopes​ ​facing​ ​north/east​ ​direction​ ​and​ ​those​ ​facing​ ​south 
+​ ​:L Ski​ ​lift​ ​rating 
+:P  Trail ​ ​density​ ​rating 
+:  F skill Fit​ ​of​ ​resort​ ​to​ ​specified​ ​skill​ ​level​ ​(i.e.​ ​​b​=beginner,​ ​​i=​intermediate,​ ​and​ ​​e=​expert) 
+n​ ​​: Total ​ ​number​ ​of​ ​slopes​ ​for​ ​the​ ​specified​ ​skill​ ​level 
+ 
+Team​ ​8121 
+Page​ ​13​ ​of​ ​26 
+t​ ​​: Total ​ ​length​ ​of​ ​ski​ ​trails​ ​for​ ​the​ ​specified​ ​skill​ ​level 
+S​​ ​: Steepness ​ ​rating 
+v​ ​​: Vertical ​ ​drop​ ​from​ ​max​ ​elevation​ ​to​ ​minimum​ ​elevation​ ​in​ ​meters 
+l​​ ​: Length ​ ​of​ ​all​ ​ski​ ​trails​ ​in​ ​the​ ​resort 
+U​: Resort ​ ​Rating 
+:  U skill Resort​ ​Rating​ ​specific​ ​to​ ​desirability​ ​for​ ​given​ ​skill​ ​level 
+3.2.2​ ​Weighting​ ​Inputs 
+To​ ​better​ ​understand​ ​the​ ​effectiveness​ ​of​ ​our​ ​resort​ ​design​ ​and​ ​to​ ​be​ ​able​ ​to​ ​quantitatively 
+compare​ ​it​ ​with​ ​other​ ​resorts,​ ​we​ ​incorporated​ ​a​ ​variety​ ​of​ ​factors​ ​into​ ​the​ ​“resort​ ​rating.” 
+Various​ ​skiers​ ​prefer​ ​different​ ​features​ ​in​ ​their​ ​slopes​ ​and​ ​trails;​ ​our​ ​rating​ ​system​ ​weights​ ​the 
+skier​ ​preferences​ ​based​ ​on​ ​the​ ​ratio​ ​provided​ ​by​ ​Ms.​ ​Mogul​ ​in​ ​the​ ​problem​ ​statement​ ​(20% 
+beginner,​ ​40%​ ​intermediate,​ ​40%​ ​expert). 
+.2U .4U .4U  U = 0 b + 0 i + 0 e  
+U​​ ​is​ ​our​ ​“resort​ ​rating,”​ ​and​ ​ ,​ ​ ,​ ​and​ ​ ​  ​are​ ​the​ ​desirability​ ​of​ ​the​ ​resort​ ​for​ ​skiersU b U i U e  
+of​ ​given​ ​skill​ ​levels.​ ​In​ ​general,​ ​ ​  ​depends​ ​on​ ​the​ ​snow​ ​quality,​ ​ski​ ​lifts,​ ​trail​ ​density,​ ​and​ ​fitU skill  
+rating​ ​for​ ​each​ ​respective​ ​skill​ ​level.​ ​To​ ​model​ ​this,​ ​we​ ​made​ ​ ​  ​a​ ​weighted​ ​average,​ ​withU skill  
+weights​ ​assigned​ ​based​ ​on​ ​the​ ​importance​ ​of​ ​each​ ​factor​ ​to​ ​skier​ ​desirability. 
+Factor B-Weight 
+(coefficients) 
+Snow​ ​Quality​ ​(Q) 2.5 
+Ski​ ​Lift​ ​Rating​ ​(C) 1.5 
+Trail​ ​Density​ ​(P) 2 
+Fit​ ​Rating​ ​( )  F skill  4 
+Total​ ​Weight 10 
+ 
+ 
+Team​ ​8121 
+Page​ ​14​ ​of​ ​26 
+The​ ​weighting​ ​is​ ​integrated​ ​to​ ​create​ ​our​ ​generalized​ ​ rating​ ​equation:  U skill  
+ .25 Q .15L .2P .4F Uskill = 10
+(2.5Q + 1.5L + 2C + 4 F )skill = 0 + 0 + 0 + 0 skill  
+After​ ​inputting​ ​ back​ ​into​ ​the​ ​​U​​ ​formula​ ​for​ ​each​ ​skill​ ​level​ ​(​b​=beginner,​ ​​i​=intermediate,  U skill  
+and​ ​​e=​expert)​ ​and​ ​simplifying​ ​values,​ ​we​ ​get: 
+.25Q .15L .2P .16F .16F  U = 0 + 0 + 0 + 0.08 F b + 0 i + 0 e  
+3.2.3​ ​Deriving​ ​Inputs 
+3.2.3.1​ ​Deriving​ ​Snow​ ​Quality​ ​Rating​ ​​Q​: 
+The​ ​snow​ ​quality​ ​rating​​ ​Q​​ ​is​ ​obtained​ ​through​ ​a​ ​logistic​ ​curve,​ ​which​ ​exhibits​ ​two 
+asymptotes​ ​limiting​ ​the​ ​rating​ ​to​ ​a​ ​range​ ​from​ ​0.1​ ​(​min​)​ ​and​ ​10​ ​(​max​).​ ​​ ​A​ ​generic​ ​formula​ ​for 
+quality​ ​of​ ​snow,​ ​​Q,​​ ​as​ ​a​ ​function​ ​of​ ​the​ ​factors​ ​that​ ​influence​ ​snow​ ​quality,​ ​ ​  ​can​ ​beQchange  
+modeled​ ​as: 
+  Q =  max × min
+min + (max−min) × e   −max×k ×(Q )Q change = 1
+0.1 + 9.9e   −10×k ×QQ change  
+where​ ​ is​ ​an​ ​arbitrary​ ​positive​ ​constant​ ​used​ ​to​ ​adjust​ ​the​ ​sensitivity​ ​of​ ​snow​ ​quality​ ​tokQ  
+.Qchange   
+The​ ​factors​ ​influencing​ ​snow​ ​quality,​ ​ ,​ ​​ ​can​ ​be​ ​modeled​ ​based​ ​on​ ​the​ ​amount​ ​ofQchange  
+natural​ ​snowfall​ ​and​ ​the​ ​direction​ ​the​ ​snow​ ​is​ ​facing.​ ​Snow​ ​facing​ ​south​ ​is​ ​significantly​ ​inferior 
+to​ ​that​ ​facing​ ​north​ ​or​ ​east​ ​[5],​ ​while​ ​snow​ ​facing​ ​west​ ​has​ ​no​ ​significant​ ​advantage​ ​or 
+disadvantage.​ ​If​ ​ increases​ ​proportionally​ ​to​ ​snowfall​ ​and​ ​the​ ​difference​ ​between​ ​theQchange  
+proportion​ ​of​ ​slopes​ ​facing​ ​north/east​ ​and​ ​south,​ ​then:  
+ w  Qchange =  × d  
+ 
+Team​ ​8121 
+Page​ ​15​ ​of​ ​26 
+where​ ​​w​​ ​is​ ​annual​ ​average​ ​snowfall​ ​in​ ​meters​ ​and​ ​​d​​ ​the​ ​difference​ ​in​ ​proportion​ ​of​ ​slopes​ ​facing 
+north/east​ ​and​ ​those​ ​facing​ ​south.​ ​Through​ ​adjusting​ ​of​ ​​k​​ ​and​ ​analyzing​ ​its​ ​impact​ ​on​ ​snow 
+quality​ ​​Q​,​ ​we​ ​have​ ​set​ ​​k​ ​​=​ ​0.1.​ ​​ ​This​ ​provides​ ​a​ ​significant​ ​variation​ ​between​ ​different​ ​resorts 
+snow​ ​quality.​ ​The​ ​final​ ​snow​ ​quality​ ​rating​ ​​Q​​ ​can​ ​be​ ​modeled​ ​as: 
+  Q = 1
+0.1 + 9.9e   −wd  
+3.2.3.2​ ​Deriving​ ​Fit​ ​Rating​ ​ :F skill  
+Similar​ ​to​ ​the​ ​snow​ ​quality​ ​rating,​ ​the​ ​fit​ ​rating,​ ​ ,​ ​for​ ​each​ ​different​ ​skill​ ​level​ ​isF skill  
+logistic​ ​in​ ​nature,​ ​ensuring​ ​a​ ​maximum​ ​rating​ ​of​ ​10​ ​and​ ​minimum​ ​of​ ​0.1.​ ​​ ​​ ​ can​ ​be​ ​obtainedF skill  
+through: 
+ F skill = 1
+0.1 + 9.9e   −10×k ×Fskill change  
+where​ ​ ​  ​is​ ​an​ ​arbitrary​ ​positive​ ​constant​ ​allowing​ ​us​ ​to​ ​adjust​ ​the​ ​sensitivity​ ​of​ ​fit​ ​rating​ ​tokskill  
+​ ​We​ ​set​ ​ ​  ​values​ ​such​ ​that​ ​the​ ​“average”​ ​resort​ ​would​ ​have​ ​have​ ​a​ ​rating​ ​of​ ​5​ ​inF change kskill  
+​ ​for​ ​all​ ​three​ ​skill​ ​levels.F skill  
+Skill​ ​Level: valuekskill  
+Beginner 3
+500  
+Intermediate 1
+5500  
+Expert 1
+26400  
+ 
+The​ ​factors​ ​influencing​ ​rating,​ ​ ,​ ​​ ​can​ ​be​ ​modeled​ ​as​ ​a​ ​function​ ​of​ ​the​ ​number​ ​ofF change  
+slopes​ ​and​ ​the​ ​total​ ​length​ ​of​ ​trails​ ​for​ ​that​ ​specific​ ​skill​ ​level.​ ​And​ ​if​ ​ ​  ​is​ ​directlyF change  
+proportional​ ​to​ ​those​ ​two​ ​factors,​ ​then 
+ 
+Team​ ​8121 
+Page​ ​16​ ​of​ ​26 
+ n  F change =  × t  
+where​ ​​n​​ ​is​ ​the​ ​number​ ​of​ ​slopes​ ​designated​ ​at​ ​that​ ​specified​ ​skill​ ​level​ ​and​ ​​t​​ ​the​ ​length​ ​of​ ​the 
+trails​ ​for​ ​the​ ​specified​ ​skill​ ​level.​ ​Beginners​ ​prefer​ ​less​ ​steepness​ ​than​ ​intermediates,​ ​who​ ​prefer 
+less​ ​than​ ​experts.​ ​For​ ​beginners,​ ​ ​  ​is​ ​inversely​ ​proportional​ ​to​ ​steepness​ ​modeled​ ​as:F change  
+  F change (b) = n×t
+S(v, l)  
+where​ ​​S(v,​ ​l)​​ ​is​ ​the​ ​steepness​ ​rating​ ​as​ ​a​ ​function​ ​of​ ​​v​,​ ​the​ ​vertical​ ​drop​ ​in​ ​meters,​ ​and​ ​​l​,​ ​the 
+length​ ​of​ ​all​ ​trails​ ​in​ ​meters.​ ​Since​ ​intermediates​ ​want​ ​more​ ​steepness​ ​than​ ​beginners,​ ​but​ ​less 
+than​ ​experts,​ ​ ​  ​does​ ​not​ ​change​ ​and​ ​would​ ​remain​ ​as:F change  
+ n  F change  (i) =  × t  
+For​ ​experts,​ ​ is​ ​proportional​ ​to​ ​the​ ​steepness,​ ​as​ ​they​ ​are​ ​looking​ ​for​ ​greater​ ​thrill:F change  
+ n  F change (e) =  × t (v, l)  ×S   
+To​ ​calculate​ ​steepness​ ​rating,​ ​we​ ​set​ ​the​ ​steepness​ ​inversely​ ​proportional​ ​to​ ​the​ ​length​ ​of 
+all​ ​the​ ​trails​ ​(which​ ​would​ ​reflect​ ​the​ ​length​ ​of​ ​the​ ​mountain​ ​range).​ ​Steepness​ ​rating​ ​would​ ​then 
+be: 
+(v, ) k  S l =  S l
+v  
+where​ ​ is​ ​used​ ​to​ ​adjust​ ​the​ ​ratio​ ​so​ ​that​ ​the​ ​resort​ ​with​ ​the​ ​greatest​ ​drop​ ​over​ ​the​ ​shortestkS  
+distance​ ​gets​ ​a​ ​steepness​ ​rating​ ​of​ ​approximately​ ​10.​ ​With​ ​ (as​ ​the​ ​greatest​ ​ratio​ ​was0/11  kS = 1  
+~11),​ ​steepness​ ​rating​ ​would​ ​be: 
+(v, )  S l =  11l
+10v  
+ 
+Team​ ​8121 
+Page​ ​17​ ​of​ ​26 
+For​ ​different​ ​skill​ ​levels,​ ​the​ ​fit​ ​rating,​ ​ ​ ​​isF skill  
+ F skill = 1
+0.1 + 9.9e   −10×k ×Fskill change  
+Consequently,​ ​a​ ​table​ ​of​ ​ ​ ​​values​ ​can​ ​be​ ​made:F skill  
+Skill​ ​Level kskill  F change  
+Beginner 3
+500  n × t × 11l
+10v  
+Intermediate 1
+5500   n × t  
+Expert 1
+26400  n × t × 11l
+10v  
+ 
+3.2.3.3​ ​Deriving​ ​Ski​ ​Lift​ ​Rating​ ​​L​: 
+The​ ​lift​ ​rating​ ​​L​​ ​is​ ​the​ ​ratio​ ​between​ ​the​ ​number​ ​of​ ​lifts​ ​in​ ​the​ ​resort​ ​and​ ​the​ ​number​ ​of​ ​slopes 
+(lifts​ ​per​ ​slope).​ ​​ ​Therefore,​ ​we​ ​derive: 
+5L = 2 × number of lifts
+number of slopes  
+Where​ ​25​ ​is​ ​to​ ​adjust​ ​the​ ​ratio​ ​so​ ​that​ ​the​ ​average​ ​of​ ​0.2​ ​lifts/slope​ ​gives​ ​a​ ​lift​ ​rating​ ​​L​​ ​of 
+approximately​ ​5.  
+3.2.3.4​ ​Deriving​ ​Trail​ ​Density​ ​Rating​ ​​P​: 
+The​ ​trail​ ​density​ ​rating,​ ​​P​,​ ​can​ ​be​ ​obtained​ ​in​ ​a​ ​similar​ ​fashion.​ ​​ ​We​ ​used​ ​the​ ​ratio​ ​of​ ​total​ ​length 
+of​ ​trails​ ​(in​ ​meters)​ ​to​ ​total​ ​size​ ​of​ ​skiable​ ​area​ ​(in​ ​hectares)​ ​to​ ​find​ ​the​ ​kilometers​ ​of​ ​ski​ ​trail​ ​per 
+hectare: 
+atio r= length of trails
+size of skiable area  
+ 
+Team​ ​8121 
+Page​ ​18​ ​of​ ​26 
+However,​ ​since​ ​a​ ​larger​ ​ratio​ ​of​ ​trail​ ​length​ ​to​ ​skiable​ ​area​ ​means​ ​more​ ​crowdedness,​ ​we 
+want​ ​to​ ​find​ ​the​ ​“uncrowdedness”​ ​of​ ​trails: 
+P = 1 − length of trails
+size of skiable area  
+Since​ ​that​ ​model​ ​of​ ​trail​ ​density​ ​rating​ ​gives​ ​values​ ​less​ ​than​ ​or​ ​equal​ ​to​ ​1,​ ​we​ ​add​ ​a 
+scaling​ ​factor​ ​of​ ​10,​ ​so​ ​that​ ​when​ ​there​ ​is​ ​absolutely​ ​no​ ​crowdedness​ ​(no​ ​trail​ ​in​ ​any​ ​given 
+hectares​ ​of​ ​skiable​ ​area),​ ​​ ​​P​​ ​=​ ​10.​ ​​ ​The​ ​final​ ​formula​ ​for​ ​the​ ​trail​ ​density​ ​rating​ ​is 
+0 1 )P = 1 × ( − length of trails
+size of skiable area  
+3.2.4​ ​Overall​ ​Resort​ ​Rating 
+The​ ​overall​ ​resort​ ​rating​ ​can​ ​be​ ​obtained​ ​by​ ​computing​ ​the​ ​weighted​ ​average​ ​of​ ​all​ ​skill 
+level​ ​ratings.​ ​​ ​The​ ​ratio​ ​of​ ​20%​ ​beginner,​ ​40%​ ​intermediate,​ ​and​ ​40%​ ​expert​ ​is​ ​the​ ​suggested 
+distribution​ ​of​ ​slopes​ ​given​ ​to​ ​us​ ​by​ ​Ms.​ ​Mogul.​ ​​ ​Thereupon,​ ​we​ ​created​ ​our​ ​final​ ​rating 
+equation: 
+.2U .4U .4U  U = 0 b + 0 i + 0 e  
+Adding​ ​in​ ​the​ ​equations​ ​of​ ​ as​ ​a​ ​function​ ​of​ ​snow​ ​quality​ ​rating​ ​​Q​,​ ​ski​ ​lift​ ​rating​ ​​L​,U skill  
+trail​ ​density​ ​rating​ ​​P​,​ ​and​ ​fit​ ​rating​ ​for​ ​the​ ​different​ ​levels​ ​ ​ ​​(​b​=beginner,​ ​​i=​intermediate,F skill  
+and​ ​​e=​expert),​ ​we​ ​get​ ​the​ ​following​ ​model: 
+.25Q .15L .2P .16F .16F  U = 0 + 0 + 0 + 0.08 F b + 0 i + 0 e  
+where: 
+​ ​,  Q = 1
+0.1 + 9.9e   −wd  
+, 5L = 2 × number of lifts
+number of slopes  
+ 
+Team​ ​8121 
+Page​ ​19​ ​of​ ​26 
+, 0 1 )P = 1 × ( − length of all trails
+size of skiable area  
+and, 
+ F skill = 1
+0.1 + 9.9e   −10×k ×Fskill change  
+Skill​ ​Level kskill  F change  
+ F b  3
+500  n × t × 11l
+10v  
+ F i  1
+5500   n × t  
+ F e  1
+26400  n × t × 11l
+10v  
+ 
+For​ ​quick​ ​reference: 
+:Q Snow​ ​quality​ ​rating 
+w​ ​​: Average ​ ​annual​ ​snowfall​ ​per​ ​year​ ​in​ ​meters 
+d​​ ​: Difference ​ ​in​ ​proportion​ ​of​ ​slopes​ ​facing​ ​north/east​ ​direction​ ​and​ ​those​ ​facing​ ​south 
+​ ​:L Ski​ ​lift​ ​rating 
+:P  Trail ​ ​density​ ​rating 
+:  F skill Fit​ ​of​ ​resort​ ​to​ ​specified​ ​skill​ ​level​ ​(i.e.​ ​​b​=beginner,​ ​​i=​intermediate,​ ​and​ ​​e=​expert) 
+n​ ​​: Total ​ ​number​ ​of​ ​slopes​ ​for​ ​the​ ​specified​ ​skill​ ​level 
+t​ ​​: Total ​ ​length​ ​of​ ​ski​ ​trails​ ​for​ ​the​ ​specified​ ​skill​ ​level 
+v​ ​​: Vertical ​ ​drop​ ​from​ ​max​ ​elevation​ ​to​ ​minimum​ ​elevation​ ​in​ ​meters 
+l​​ ​: Length ​ ​of​ ​all​ ​ski​ ​trails​ ​in​ ​the​ ​resort 
+U​: Resort ​ ​Rating 
+:  U skill Resort​ ​Rating​ ​specific​ ​to​ ​desirability​ ​for​ ​given​ ​skill​ ​level 
+ 
+ 
+Team​ ​8121 
+Page​ ​20​ ​of​ ​26 
+4​ ​-​ ​Analysis 
+4.1​ ​Obtaining​ ​Possible​ ​Trails 
+Optimal​ ​trails​ ​are​ ​located​ ​along​ ​the​ ​Francis​ ​Peak​ ​and​ ​Round​ ​Top​ ​and​ ​the​ ​Thurston​ ​Peak 
+and​ ​Jacob’s​ ​Peak.  
+ 
+4.1.1​ ​Obtaining​ ​Ski-ability​ ​Index​ ​Numbers 
+The​ ​trails​ ​created​ ​above​ ​were​ ​simplified​ ​using​ ​the​ ​Trail​ ​Quality​ ​Index​ ​described​ ​in​ ​the 
+model​ ​description.​ ​​ ​Here​ ​are​ ​three​ ​trails,​ ​one​ ​of​ ​each​ ​skill​ ​level,​ ​that​ ​were​ ​rated​ ​on​ ​the​ ​scale. 
+4.1.2​ ​Finalizing​ ​Trails 
+We​ ​finalized​ ​our​ ​slope​ ​design​ ​by​ ​choosing​ ​only​ ​trails​ ​that​ ​scored​ ​a​ ​3​ ​or​ ​above​ ​on​ ​the​ ​TQI. 
+The​ ​following​ ​slopes​ ​were​ ​chosen. 
+4.1.3​ ​Ski​ ​Lifts 
+In​ ​addition​ ​to​ ​the​ ​final​ ​trails,​ ​we​ ​included​ ​locations​ ​for​ ​ski​ ​lifts.​ ​​ ​This​ ​feature​ ​is​ ​essential 
+in​ ​any​ ​ski​ ​resort​ ​and​ ​should​ ​always​ ​be​ ​planned​ ​for​ ​by​ ​the​ ​trail​ ​designers. 
+ 
+ 
+ 
+Team​ ​8121 
+Page​ ​21​ ​of​ ​26 
+4.2​ ​Ranking  
+4.2.1​ ​Ranking​ ​North​ ​American​ ​Resorts 
+Using​ ​the​ ​process​ ​described​ ​in​ ​​3.2​ ​Developing​ ​a​ ​Resort​ ​Ranking​ ​System​​ ​and​ ​data​ ​from 
+[3]​ ​and​ ​[4],​ ​16​ ​prominent​ ​North​ ​American​ ​ski​ ​resorts​ ​scored​ ​the​ ​following​ ​ratings: 
+Resort Rating​ ​(0.1-10) Resort Rating​ ​(0.1-10) 
+Park​ ​City​ ​Mountain 8.67 Jackson​ ​Hole 6.25 
+Whistler​ ​Blackomb 8.46 Killington 5.96 
+Big​ ​Sky​ ​Resort 7.96 Steamboat​ ​Springs 5.62 
+Beaver​ ​Creek 7.64 Lake​ ​Louise 5.03 
+Squaw​ ​Valley 7.14 Sun​ ​Peaks 4.88 
+Vail 7.12 Sugarloaf​ ​Mountain 4.74 
+Breckenridge​ ​(USA) 6.87 Silver​ ​Star 4.47 
+Winter​ ​Park​ ​Resort 6.69  
+ 
+4.2.2​ ​Ranking​ ​Wasatch​ ​Peaks​ ​Ranch 
+The​ ​hypothetical​ ​ski​ ​resort​ ​we​ ​created​ ​on​ ​Wasatch​ ​Peaks​ ​Ranch​ ​receives​ ​the​ ​following 
+rating.​ ​​ ​This​ ​is​ ​the​ ​third​ ​highest​ ​rating​ ​in​ ​our​ ​North​ ​American​ ​ranking: 
+Resort Rating​ ​(0.1-10) 
+Wasatch​ ​Peaks​ ​Ranch 7.44 
+ 
+4.2.3​ ​Olympic​ ​Readiness 
+To​ ​create​ ​a​ ​measure​ ​of​ ​Olympic​ ​readiness,​ ​we​ ​used​ ​the​ ​same​ ​model,​ ​except​ ​weighted​ ​the 
+individual​ ​ different​ ​from​ ​our​ ​previous​ ​model,​ ​due​ ​to​ ​our​ ​assumption​ ​that​ ​for​ ​theU skills  
+ 
+Team​ ​8121 
+Page​ ​22​ ​of​ ​26 
+Olympics,​ ​expert​ ​level​ ​slopes​ ​are​ ​more​ ​important​ ​than​ ​intermediate​ ​level​ ​slopes​ ​which​ ​are​ ​more 
+important​ ​than​ ​beginner​ ​level​ ​ones.​ ​The​ ​Olympic​ ​readiness​ ​score​ ​would​ ​be:  
+U U U  U = 6
+1
+b + 6
+2
+i + 6
+3 e  
+According​ ​to​ ​this​ ​model,​ ​Wasatch​ ​Peaks​ ​Ranch​ ​has​ ​an​ ​Olympic​ ​readiness​ ​score​ ​of​ ​7.8,​ ​on 
+a​ ​scale​ ​from​ ​0.1​ ​to​ ​10​ ​(10​ ​being​ ​most​ ​ready).​ ​Two​ ​other​ ​ski​ ​resorts​ ​have​ ​been​ ​used​ ​for​ ​the 
+Olympics​ ​before:​ ​Squaw​ ​Valley​ ​and​ ​Park​ ​City​ ​Mountain.​ ​We​ ​are​ ​well​ ​above​ ​the​ ​baseline​ ​of 
+Squaw​ ​Valley’s​ ​Olympic​ ​readiness​ ​rating​ ​of​ ​7.0(the​ ​lower​ ​of​ ​the​ ​two.​ ​However,​ ​there​ ​are​ ​three 
+other​ ​resorts​ ​which​ ​also​ ​have​ ​an​ ​Olympic​ ​readiness​ ​rating​ ​above​ ​the​ ​baseline: 
+Resort Rating​ ​(0.1-10) 
+Squaw​ ​Valley 
+(Olympic) 
+7.0 
+Beaver​ ​Creek 7.8 
+Wasatch​ ​Peaks​ ​Ranch 7.8 
+Big​ ​Sky​ ​Resort 8.2 
+Whistler​ ​Blackomb 8.2 
+Park​ ​City​ ​Mountain 
+(Olympic) 
+8.3 
+ 
+5​ ​-​ ​Results​ ​and​ ​Conclusion 
+5.1​ ​Addressing​ ​the​ ​Slopes 
+Our​ ​finalized​ ​trail​ ​design​ ​is​ ​appropriate​ ​because​ ​it​ ​meets​ ​the​ ​criteria​ ​laid​ ​out​ ​in​ ​​1.2 
+Restatement​ ​of​ ​Problem.​ ​​​ ​Our​ ​design​ ​boasts​ ​more​ ​than​ ​162​ ​km​ ​of​ ​slopes..​ ​​ ​The​ ​distribution​ ​of 
+trails​ ​is​ ​roughly​ ​20%​ ​rated​ ​beginner,​ ​40%​ ​rated​ ​intermediate,​ ​and​ ​40%​ ​rated​ ​difficult​ ​with​ ​38 
+beginner​ ​trails​ ​(20.4%),​ ​74​ ​intermediate​ ​trails​ ​(39.8%),​ ​and​ ​74​ ​expert​ ​trails​ ​(39.8%).​ ​​ ​Our​ ​design 
+exhibits​ ​great​ ​variation​ ​in​ ​trail​ ​lengths,​ ​with​ ​a​ ​standard​ ​deviation​ ​of​ ​657.45​ ​meters.​ ​​ ​The​ ​design​ ​is 
+ 
+Team​ ​8121 
+Page​ ​23​ ​of​ ​26 
+Olympic​ ​compatible​ ​as​ ​it​ ​ranks​ ​similarly​ ​as​ ​previous​ ​Olympics​ ​sites​ ​when​ ​we​ ​weight​ ​the​ ​courses 
+to​ ​Olympic​ ​standard.​ ​Our​ ​resort​ ​is​ ​Olympic​ ​ready,​ ​with​ ​a​ ​score​ ​of​ ​7.8,​ ​which​ ​is​ ​greater​ ​than​ ​the 
+score​ ​of​ ​7.0​ ​from​ ​previous​ ​Olympic​ ​site​ ​Squaw​ ​Valley.  
+5.2​ ​Comparison​ ​to​ ​ZRanking 
+ZRankings.com​ ​uses​ ​the​ ​PAF​ ​algorithm,​ ​which​ ​considers​ ​over​ ​20​ ​categories,​ ​to 
+determine​ ​what​ ​ski​ ​resorts​ ​are​ ​the​ ​best​ ​[3].​ ​​ ​The​ ​categories​ ​in​ ​their​ ​system​ ​are​ ​similar​ ​to​ ​those​ ​we 
+employed,​ ​therefore​ ​comparing​ ​both​ ​ranking​ ​systems​ ​is​ ​justified.​ ​​ ​When​ ​graphing​ ​ZRanking’s 
+rank​ ​of​ ​the​ ​top​ ​North​ ​American​ ​resorts​ ​in​ ​the​ ​chart​ ​above​ ​in​ ​the​ ​ranking​ ​order​ ​we​ ​derived,​ ​we​ ​get 
+a​ ​strong​ ​correlation.​ ​​ ​This​ ​correlation​ ​in​ ​the​ ​rankings​ ​reinforces​ ​the​ ​strength​ ​of​ ​both​ ​systems. 
+ 
+This​ ​chart​ ​shows​ ​the​ ​correlation​ ​of​ ​between​ ​our​ ​ranking​ ​system​ ​and​ ​that​ ​used​ ​by​ ​ZRankings.com 
+5.3​ ​Ranking​ ​Sensitivity​ ​Analysis 
+Our​ ​ranking​ ​system,​ ​like​ ​all​ ​models,​ ​is​ ​not​ ​perfect.​ ​​ ​Our​ ​confidence​ ​in​ ​the​ ​model​ ​is​ ​high, 
+however,​ ​as​ ​sensitivity​ ​analysis​ ​shows​ ​that​ ​small​ ​changes​ ​do​ ​not​ ​significantly​ ​affect​ ​the​ ​rankings. 
+For​ ​example,​ ​snow​ ​quality​ ​is​ ​measured​ ​as: 
+ 
+ 
+Team​ ​8121 
+Page​ ​24​ ​of​ ​26 
+ 
+ 
+Annual​ ​Average 
+Snowfall​ ​in​ ​meters​ ​(​w​) 
+Difference​ ​in​ ​Proportion 
+Facing​ ​N/E​ ​and 
+Proportion​ ​Facing​ ​S​ ​(​d​) Snow​ ​Quality​ ​Rating​ ​(​Q​) 
+Actual​ ​Wasatch​ ​Values 10.20 66.7% 9.0 
+Slightly​ ​increasing​ ​​d 
+(increasing​ ​N/E​ ​facing, 
+decreasing​ ​S​ ​facing) 10.20 73.3% 9.5 
+Maxing​ ​​d 10.20 100.0% 10.0 
+Halving​ ​​d  10.20 33.3% 2.3 
+Slightly​ ​decreasing​ ​​w 9.5 66.7% 8.5 
+Doubling​ ​​w 20.00 66.7% 10.0 
+Halving​ ​​w 5 66.7% 2.2 
+ 
+Changing​ ​average​ ​annual​ ​snowfall​ ​​w​​ ​creates​ ​large​ ​changes​ ​but​ ​only​ ​when​ ​there​ ​are​ ​drastic 
+changes;​ ​otherwise,​ ​the​ ​snow​ ​quality​ ​rating​ ​changes​ ​appropriately​ ​to​ ​reflect​ ​changing​ ​snowfall. 
+Similarly,​ ​changing​ ​the​ ​​d​​ ​also​ ​can​ ​have​ ​significant​ ​change​ ​(where​ ​halving​ ​​d​​ ​will​ ​decrease​ ​rating 
+by​ ​more​ ​than​ ​half,​ ​as​ ​such​ ​a​ ​large​ ​decrease​ ​puts​ ​the​ ​difference​ ​at​ ​well​ ​below​ ​the​ ​average​ ​​d​​ ​of 
+51.6%).  
+Similarly,​ ​the​ ​fit​ ​rating​ ​ also​ ​varies​ ​as​ ​the​ ​different​ ​inputs​ ​of​ ​the​ ​number​ ​of​ ​slopes​ ​for​ ​thatF skill  
+skill​ ​level​ ​​n​,​ ​length​ ​of​ ​trails​ ​for​ ​that​ ​specific​ ​skill​ ​level​ ​(km)​ ​​t​,​ ​total​ ​length​ ​of​ ​trails​ ​(km)​ ​​l​,​ ​and 
+vertical​ ​drop​ ​(m)​ ​​v​​ ​change.​ ​For​ ​ (fit​ ​rating​ ​for​ ​beginners),​ ​the​ ​rating​ ​increases​ ​proportionallyF b  
+to​ ​​t​​ ​and​ ​​l​​ ​and​ ​inversely​ ​proportionally​ ​to​ ​​v​: 
+ F b = 1
+0.1 + 9.9e   −10×k ×n×t×b 11l
+10v
+ 
+As​ ​ ​ ​is​ ​our​ ​adjusting​ ​constant​ ​so​ ​that​ ​we​ ​can​ ​change​ ​the​ ​sensitivity​ ​of​ ​our​ ​model​ ​to​ ​​n​,​ ​​t​,​ ​​l​,​ ​andkb  
+v​.  
+ 
+Team​ ​8121 
+Page​ ​25​ ​of​ ​26 
+ 
+The​ ​chart​ ​shows​ ​the​ ​variation​ ​of​ ​ while​ ​​ ​ varies.  F b  kb  
+The​ ​above​ ​chart​ ​shows​ ​the​ ​variation​ ​of​ ​ ​  ​for​ ​different​ ​values​ ​of​ ​ .​ ​We​ ​set = ​ ​0.006​ ​​ ​in​ ​ourF b kb kb  
+calculations​ ​as​ ​for​ ​the​ ​data​ ​set​ ​we​ ​used,​ ​ =​ ​0.006​ ​gave​ ​a​ ​wide​ ​range​ ​of​ ​reasonable​ ​ ​  ​ratings.kb F b  
+Using​ ​the​ ​same​ ​optimization​ ​strategy​ ​(of​ ​getting​ ​the​ ​largest​ ​range​ ​of​ ​fit​ ​ratings​ ​for​ ​a​ ​given​ ​skill 
+level),​ ​we​ ​had​ ​ and​ ​ . ki = 1
+5500  ke = 1
+26400  
+5.4​ ​Conclusion 
+Our​ ​model​ ​is​ ​appropriate​ ​because​ ​it​ ​ranks​ ​3rd​ ​in​ ​our​ ​ranking​ ​system​ ​among​ ​top​ ​North​ ​American 
+resorts.​ ​​ ​Our​ ​design​ ​meets​ ​and​ ​exceeds​ ​all​ ​requirements​ ​and​ ​our​ ​ranking​ ​is​ ​immune​ ​to​ ​sensitivity 
+analysis.​ ​​ ​We​ ​can​ ​confidently​ ​write​ ​a​ ​letter​ ​to​ ​Ms.​ ​Mogul​ ​sharing​ ​our​ ​results. 
+ 
+ 
+  
+ 
+Team​ ​8121 
+Page​ ​26​ ​of​ ​26 
+6​ ​-​ ​Works​ ​Cited 
+[1]​ ​Media,​ ​F.​ ​T.​ ​(2015,​ ​October​ ​04).​ ​What​ ​May​ ​Be​ ​America’s​ ​Last​ ​Great​ ​Ski​ ​Resort​ ​Site​ ​Is​ ​For 
+Sale.​ ​Retrieved​ ​November​ ​19,​ ​2017,​ ​from 
+http://www.firsttracksonline.com/2015/10/07/americas-last-great-ski-resort-property-its-f
+or-sale/ 
+[2]​ ​Alpine​ ​Skiing.​ ​(n.d.).​ ​Retrieved​ ​November​ ​19,​ ​2017,​ ​from 
+https://www.pyeongchang2018.com/en/sports/alpine-skiing 
+[3]​ ​Best​ ​Ski​ ​Resorts​ ​in​ ​North​ ​America.​ ​(n.d.).​ ​Retrieved​ ​November​ ​19,​ ​2017,​ ​from 
+https://www.zrankings.com/  
+[4]​ ​COMPARISON​ ​OF​ ​WESTERN​ ​USA​ ​SKI​ ​RESORT​ ​STATISTICS:​ ​SNOWFALL, 
+VERTICAL,​ ​ELEVATION,​ ​SIZE,​ ​SPREAD​ ​OF​ ​TERRAIN​ ​&​ ​SEASON​ ​DATES​ ​[PDF]. 
+(n.d.).​ ​Alta,​ ​Utah:​ ​PowderHounds. 
+[5]​ ​Shisler,​ ​T.​ ​(2011,​ ​January​ ​20).​ ​Ask​ ​A​ ​Weatherman:​ ​What's​ ​The​ ​Best​ ​Face​ ​To​ ​Build​ ​A​ ​Ski 
+Resort​ ​On​ ​And​ ​Why?​ ​Retrieved​ ​November​ ​19,​ ​2017,​ ​from 
+https://www.onthesnow.com/news/a/15152/ask-a-weatherman--what-s-the-best-face-to-b
+uild-a-ski-resort-on-and-why- 
+[6]​ ​Google.​ ​(n.d.).​ ​[Google​ ​Earth​ ​Pro​ ​longitude,​ ​latitude,​ ​and​ ​elevation​ ​data​ ​on​ ​Wasatch​ ​Peaks 
+Ranch​ ​property].​ ​Retrieved​ ​November​ ​19,​ ​2017,​ ​from 
+https://www.google.com/earth/download/gep/agree.html  
+ 

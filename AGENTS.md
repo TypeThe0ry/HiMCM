@@ -21,11 +21,16 @@ The user explicitly made the Overleaf workspace the first priority on 2026-11-07
 - Follow the latest user publishing instruction. The user explicitly requested immediate push after the earlier instruction to wait until after the competition; the old time guard must not override that explicit authorization for the current push.
 - The legacy local pre-push date hook remains installed. An explicitly authorized immediate push may bypass it for that invocation; do not silently claim that the hook or a scheduled publication performs synchronization.
 
-## Repository layout — split on 2026-11-07
+## Repository layout
 
-- This HiMCM repository remains the manuscript repository for Overleaf.
-- Keep main.tex, ref.bib, mcmthesis.cls, used final figures and mandatory guidelines here.
-- Research, raw inputs, scripts, model outputs and the historical library live in the sibling HiMCM-research repository: https://github.com/TypeThe0ry/HiMCM-research.
-- Do not recreate research/ or library/ here. Transfer only selected final manuscript assets with provenance.
-- Before committing, run python3 scripts/check_overleaf_size.py after staging. Keep the current tree below 2,000 files and the recommended 100 MB GitHub sync size.
-- Preserve raw inputs byte-for-byte in the research archive. Distinguish hypotheses, missing-data intervals, synthetic examples and observations.
+- `research/2026-a/` contains research inputs, design notes, candidate data and scripts.
+- `library/` contains historical awarded papers and their evidence.
+- Preserve raw user inputs byte-for-byte and retain their provenance. Keep hypotheses, unverified numbers, synthetic examples, and measured results distinguishable.
+
+## Single repository — restored on 2026-11-07
+
+- The user explicitly reversed the split. Use only TypeThe0ry/HiMCM for manuscript, research, raw data, algorithms, results and library.
+- Do not recreate a sibling HiMCM-research repository or move research/library out of this repository.
+- Keep main.tex, ref.bib and mcmthesis.cls at the root; Overleaf remains the authoritative manuscript workspace.
+- Preserve raw inputs and missing-data intervals. Historical split records are provenance, not current layout instructions.
+- Report Overleaf size-check failures accurately. The user's single-repository choice takes precedence over the previous lean-tree requirement; do not silently split or delete data to pass size checks.
