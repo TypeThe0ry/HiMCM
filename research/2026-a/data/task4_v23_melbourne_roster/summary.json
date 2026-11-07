@@ -1,0 +1,367 @@
+{
+  "main_admitted": false,
+  "source_year": "2024-25",
+  "geography": "Greater Melbourne GCCSA",
+  "current_secondary_verified": true,
+  "upper_secondary_grade_verified": false,
+  "age15_19_is_not_exact14_18": true,
+  "first_journey_definition": "Earliest numeric start_time among official JTE records per person, selected before intermediate-purpose filter.",
+  "transport_purpose_whitelist": [
+    "Accompany Someone",
+    "Change Mode",
+    "Education",
+    "Pick-up or Drop-off Someone"
+  ],
+  "sources": [
+    {
+      "file": "../task4_school_commute_extra/vista_2021_2026_explanatory_document-updated-2026.pdf",
+      "url": "https://opendata.transport.vic.gov.au/dataset/174fbf40-bef0-434a-8af0-891c7f3d2323/resource/928cf922-b37d-4111-b2fb-fde0838b8620/download/vista_2021_2026_explanatory_document-updated-2026.pdf",
+      "sha256": "d5f6df10d2a73feb7fcedf92b08ba8036e58061739e2b9fbca315174bffa8b43"
+    },
+    {
+      "file": "../task4_school_commute_extra/household_vista_2024_2025.csv",
+      "url": "https://opendata.transport.vic.gov.au/dataset/174fbf40-bef0-434a-8af0-891c7f3d2323/resource/1b73f806-1565-4243-96d7-78f9002c3e8f/download/household_vista_2024_2025.csv",
+      "sha256": "946f49b0694344d5c2afb77a2e57fc66d9cfa5c12f2e8f11d63bb3f8c5f22320"
+    },
+    {
+      "file": "../task4_school_commute_extra/person_vista_2024_2025.csv",
+      "url": "https://opendata.transport.vic.gov.au/dataset/174fbf40-bef0-434a-8af0-891c7f3d2323/resource/2a38732d-04dc-4af5-8a52-f281a8ecebb7/download/person_vista_2024_2025.csv",
+      "sha256": "7e4f56444283ad4c90e0f8d015ec931af89c2a6b01407a5f116d7718c65222c7"
+    },
+    {
+      "file": "../task4_school_commute_extra/journey_to_education_vista_2024_2025.csv",
+      "url": "https://opendata.transport.vic.gov.au/dataset/174fbf40-bef0-434a-8af0-891c7f3d2323/resource/5cab66ec-8752-4982-97e5-e417c932e576/download/journey_to_education_vista_2024_2025.csv",
+      "sha256": "1f716b0f84e3c9630f682c22ad7936ba130650ca3e60d7ed0a96ffc283a1e27b"
+    },
+    {
+      "file": "../task4_school_commute_extra/vista_journey_dictionary.html",
+      "url": "https://opendata.transport.vic.gov.au/dataset/victorian-integrated-survey-of-travel-and-activity-vista/resource/5cab66ec-8752-4982-97e5-e417c932e576",
+      "sha256": "04c239562ba9e97c5574b786312caccc1bbb05d40a0aa28fb190a3a87f9dba1e"
+    },
+    {
+      "file": "../task4_school_commute_extra/vista_person_dictionary.html",
+      "url": "https://opendata.transport.vic.gov.au/dataset/victorian-integrated-survey-of-travel-and-activity-vista/resource/2a38732d-04dc-4af5-8a52-f281a8ecebb7",
+      "sha256": "12e2f8f29d5bd217c61fc0506002e0e604ce9ecb44da56aa99c5af345dc28c32"
+    },
+    {
+      "file": "../task4_school_commute_extra/vista_catalog.json",
+      "url": "https://opendata.transport.vic.gov.au/api/3/action/package_show?id=victorian-integrated-survey-of-travel-and-activity-vista",
+      "sha256": "d057d033b9fb486cc9f5ba7f89fe2d8930366a24714e625c3dfdfdb6846a702c"
+    }
+  ],
+  "scopes": {
+    "secondary_15_19": {
+      "roster_people": 171,
+      "positive_weight_people": 170,
+      "missing_weight_people": 1,
+      "no_journey_roster_people": 64,
+      "missing_weight_person_ids": [
+        "Y25H6720315P04"
+      ],
+      "variants": {
+        "official_elapsed": {
+          "observed_people": 107,
+          "unknown_people": 63,
+          "positive_person_weight_total": 128128.45537344899,
+          "unknown_person_weight": 44531.151916505994,
+          "lower": 0.36224716044213695,
+          "upper": 0.7097979975041581,
+          "jackknife": {
+            "lower": 0.2788957101992031,
+            "upper": 0.7810954732817276,
+            "endpoint_standard_errors": [
+              0.03684600328023702,
+              0.031517472326111746
+            ],
+            "replicate_endpoint_estimates": [
+              [
+                0.354626768517622,
+                0.7123579816823878
+              ],
+              [
+                0.3422054040359076,
+                0.7170070205432557
+              ],
+              [
+                0.3518304970835629,
+                0.7301965910702819
+              ],
+              [
+                0.34726131780738123,
+                0.7264143941674083
+              ],
+              [
+                0.3867287081490345,
+                0.7040564780077393
+              ],
+              [
+                0.36473702136285935,
+                0.7084343276670351
+              ],
+              [
+                0.3557521284853334,
+                0.6984163559448956
+              ],
+              [
+                0.3646670052694186,
+                0.7130500573692605
+              ],
+              [
+                0.37011213356595535,
+                0.6966398712463435
+              ],
+              [
+                0.36270136720166685,
+                0.7075812372117335
+              ]
+            ],
+            "critical_t": 2.2621571628540993,
+            "groups": 10,
+            "df": 9,
+            "method": "provider grouped jackknife variance; t endpoint envelope, nominal approximation, not provider-published CI"
+          },
+          "observed_only_person_weighted_utility": 0.5552113191638375
+        },
+        "transport_stops_only": {
+          "observed_people": 107,
+          "unknown_people": 63,
+          "positive_person_weight_total": 128128.45537344899,
+          "unknown_person_weight": 44531.151916505994,
+          "lower": 0.36224716044213695,
+          "upper": 0.7097979975041581,
+          "jackknife": {
+            "lower": 0.2788957101992031,
+            "upper": 0.7810954732817276,
+            "endpoint_standard_errors": [
+              0.03684600328023702,
+              0.031517472326111746
+            ],
+            "replicate_endpoint_estimates": [
+              [
+                0.354626768517622,
+                0.7123579816823878
+              ],
+              [
+                0.3422054040359076,
+                0.7170070205432557
+              ],
+              [
+                0.3518304970835629,
+                0.7301965910702819
+              ],
+              [
+                0.34726131780738123,
+                0.7264143941674083
+              ],
+              [
+                0.3867287081490345,
+                0.7040564780077393
+              ],
+              [
+                0.36473702136285935,
+                0.7084343276670351
+              ],
+              [
+                0.3557521284853334,
+                0.6984163559448956
+              ],
+              [
+                0.3646670052694186,
+                0.7130500573692605
+              ],
+              [
+                0.37011213356595535,
+                0.6966398712463435
+              ],
+              [
+                0.36270136720166685,
+                0.7075812372117335
+              ]
+            ],
+            "critical_t": 2.2621571628540993,
+            "groups": 10,
+            "df": 9,
+            "method": "provider grouped jackknife variance; t endpoint envelope, nominal approximation, not provider-published CI"
+          },
+          "observed_only_person_weighted_utility": 0.5552113191638375
+        }
+      },
+      "utility_lower": 0.36224716044213695,
+      "utility_upper": 0.7097979975041581,
+      "sampling_lower": 0.2788957101992031,
+      "sampling_upper": 0.7810954732817276,
+      "observed_only_person_weighted_utility": 0.5552113191638375,
+      "default_definition": "official_elapsed; includes intermediate activity dwell, unlike NYC transport-only chains",
+      "missing_weight_statement": "No missing person weight imputed or added as extra population. Official person weights are calibrated to Census targets after household nonresponse adjustments. No-weight diary records are retained for audit; their count is not an estimate of omitted population mass. Results rely on the official weighting and coverage assumptions."
+    },
+    "secondary_all_ages": {
+      "roster_people": 322,
+      "positive_weight_people": 317,
+      "missing_weight_people": 5,
+      "no_journey_roster_people": 117,
+      "missing_weight_person_ids": [
+        "Y25H6280209P05",
+        "Y25H6280317P03",
+        "Y25H6400222P05",
+        "Y25H6720315P04",
+        "Y25H6720315P05"
+      ],
+      "variants": {
+        "official_elapsed": {
+          "observed_people": 205,
+          "unknown_people": 112,
+          "positive_person_weight_total": 266030.861743429,
+          "unknown_person_weight": 97207.090506892,
+          "lower": 0.33163520790763334,
+          "upper": 0.6970330037492395,
+          "jackknife": {
+            "lower": 0.25147563526756656,
+            "upper": 0.7915756532506795,
+            "endpoint_standard_errors": [
+              0.03543501484173262,
+              0.04179313933350158
+            ],
+            "replicate_endpoint_estimates": [
+              [
+                0.3209651790087653,
+                0.7025966054356894
+              ],
+              [
+                0.32170778836823927,
+                0.7072049884764772
+              ],
+              [
+                0.31610871105044075,
+                0.7127154319404305
+              ],
+              [
+                0.3180367037806362,
+                0.7172540889846996
+              ],
+              [
+                0.3488985628561512,
+                0.6839548109020025
+              ],
+              [
+                0.3332431849479529,
+                0.7021839349373752
+              ],
+              [
+                0.32558364977664606,
+                0.690605451967085
+              ],
+              [
+                0.336454200491352,
+                0.6926009141680048
+              ],
+              [
+                0.35139648415610053,
+                0.667250412733106
+              ],
+              [
+                0.32922685368890026,
+                0.69947349211082
+              ]
+            ],
+            "critical_t": 2.2621571628540993,
+            "groups": 10,
+            "df": 9,
+            "method": "provider grouped jackknife variance; t endpoint envelope, nominal approximation, not provider-published CI"
+          },
+          "observed_only_person_weighted_utility": 0.5225875449762204
+        },
+        "transport_stops_only": {
+          "observed_people": 205,
+          "unknown_people": 112,
+          "positive_person_weight_total": 266030.861743429,
+          "unknown_person_weight": 97207.090506892,
+          "lower": 0.33163520790763334,
+          "upper": 0.6970330037492395,
+          "jackknife": {
+            "lower": 0.25147563526756656,
+            "upper": 0.7915756532506795,
+            "endpoint_standard_errors": [
+              0.03543501484173262,
+              0.04179313933350158
+            ],
+            "replicate_endpoint_estimates": [
+              [
+                0.3209651790087653,
+                0.7025966054356894
+              ],
+              [
+                0.32170778836823927,
+                0.7072049884764772
+              ],
+              [
+                0.31610871105044075,
+                0.7127154319404305
+              ],
+              [
+                0.3180367037806362,
+                0.7172540889846996
+              ],
+              [
+                0.3488985628561512,
+                0.6839548109020025
+              ],
+              [
+                0.3332431849479529,
+                0.7021839349373752
+              ],
+              [
+                0.32558364977664606,
+                0.690605451967085
+              ],
+              [
+                0.336454200491352,
+                0.6926009141680048
+              ],
+              [
+                0.35139648415610053,
+                0.667250412733106
+              ],
+              [
+                0.32922685368890026,
+                0.69947349211082
+              ]
+            ],
+            "critical_t": 2.2621571628540993,
+            "groups": 10,
+            "df": 9,
+            "method": "provider grouped jackknife variance; t endpoint envelope, nominal approximation, not provider-published CI"
+          },
+          "observed_only_person_weighted_utility": 0.5225875449762204
+        }
+      },
+      "utility_lower": 0.33163520790763334,
+      "utility_upper": 0.6970330037492395,
+      "sampling_lower": 0.25147563526756656,
+      "sampling_upper": 0.7915756532506795,
+      "observed_only_person_weighted_utility": 0.5225875449762204,
+      "default_definition": "official_elapsed; includes intermediate activity dwell, unlike NYC transport-only chains",
+      "missing_weight_statement": "No missing person weight imputed or added as extra population. Official person weights are calibrated to Census targets after household nonresponse adjustments. No-weight diary records are retained for audit; their count is not an estimate of omitted population mass. Results rely on the official weighting and coverage assumptions."
+    }
+  },
+  "city_of_melbourne_check": {
+    "secondary_weekday_people": 2,
+    "households": 1,
+    "agegroups": {
+      "15->19": 1,
+      "10->14": 1
+    },
+    "admitted_as_city_estimate": false
+  },
+  "old_journey_replication": {
+    "journeys": 108,
+    "persons": 107,
+    "households": 93,
+    "mean_exp_utility": 0.5535430424992891
+  },
+  "variance_reference": {
+    "file": "../task4_school_commute_extra/vista_2021_2026_explanatory_document-updated-2026.pdf",
+    "section": "3.5.2",
+    "formula": "variance=(R-1)/R sum_r (theta_r-theta)^2; t(df=R-1)",
+    "scope": "Official grouped replicate person weights. Endpoint mean uses same ratio functional in every replicate. Nominal approximation does not cover missing school stage, no-weight coverage, geographic transfer, measurement error, or choice of journey definition."
+  }
+}

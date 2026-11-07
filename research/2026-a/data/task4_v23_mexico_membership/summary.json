@@ -1,0 +1,154 @@
+{
+  "year": 2020,
+  "main_admitted": false,
+  "current_stage_directly_observed": false,
+  "stage_assumption": "ASISTEN1 and completed secondary3 or completed grades0-2 at levels4/5/7; conditional progression reconstruction",
+  "optional_stage_rule": "Original broad NIVACAD99 or ESCOLARI99 retained; can include known incompatible levels with unspecified grade. Conservative optional set, not established EMS attendance.",
+  "age_rule": "Age 999 is optional for both age scopes; age 0-2 excluded. Known ages retained as recorded.",
+  "new_downloads": 0,
+  "person_rows": 276007,
+  "attendance_rows": {
+    "3": 200904,
+    "1": 66451,
+    "": 8348,
+    "9": 304
+  },
+  "attendance_weight": {
+    "3": 6686851,
+    "1": 2193897,
+    "": 267942,
+    "9": 10703
+  },
+  "blank_attendance_age_counts": {
+    "2": 3006,
+    "1": 2716,
+    "0": 2626
+  },
+  "current_attender_unknown_age_stage_weights": {
+    "02:02": 25,
+    "00:00": 15,
+    "02:04": 23
+  },
+  "scopes": {
+    "age3_17": {
+      "known_sample_rows": 7655,
+      "known_weight": 253889,
+      "known_time_bins": {
+        "1": 48914,
+        "3": 83336,
+        "2": 85840,
+        "4": 30856,
+        "6": 2475,
+        "5": 2284,
+        "9": 184
+      },
+      "old_optional_sample_rows": 270,
+      "old_optional_weight": 8665,
+      "old_optional_time_bins": {
+        "2": 2566,
+        "1": 4616,
+        "4": 319,
+        "3": 998,
+        "9": 144,
+        "5": 22
+      },
+      "added_optional_sample_rows": 60,
+      "added_optional_weight": 1631,
+      "added_optional_time_bins": {
+        "": 1631
+      },
+      "added_reasons_rows": {
+        "unknown_attendance_known_age": 52,
+        "unknown_attendance_unknown_age": 8
+      },
+      "added_reasons_weight": {
+        "unknown_attendance_known_age": 1521,
+        "unknown_attendance_unknown_age": 110
+      },
+      "corrected_optional_time_bins": {
+        "2": 2566,
+        "1": 4616,
+        "4": 319,
+        "3": 998,
+        "9": 144,
+        "5": 22,
+        "": 1631
+      },
+      "before_lower": 0.28676193058821303,
+      "before_upper": 0.5544447640096823,
+      "utility_lower": 0.28494207358736334,
+      "utility_upper": 0.5572095030199781,
+      "utility_width_increase": 0.004584596011145414
+    },
+    "all_age3plus": {
+      "known_sample_rows": 11293,
+      "known_weight": 374756,
+      "known_time_bins": {
+        "1": 67823,
+        "3": 118938,
+        "2": 122786,
+        "6": 14543,
+        "4": 46802,
+        "5": 3581,
+        "9": 283
+      },
+      "old_optional_sample_rows": 327,
+      "old_optional_weight": 10628,
+      "old_optional_time_bins": {
+        "2": 3227,
+        "1": 4737,
+        "4": 659,
+        "3": 1586,
+        "6": 100,
+        "9": 144,
+        "5": 175
+      },
+      "added_optional_sample_rows": 252,
+      "added_optional_weight": 8155,
+      "added_optional_time_bins": {
+        "": 8155
+      },
+      "added_reasons_rows": {
+        "unknown_attendance_known_age": 244,
+        "unknown_attendance_unknown_age": 8
+      },
+      "added_reasons_weight": {
+        "unknown_attendance_known_age": 8045,
+        "unknown_attendance_unknown_age": 110
+      },
+      "corrected_optional_time_bins": {
+        "2": 3227,
+        "1": 4737,
+        "4": 659,
+        "3": 1586,
+        "6": 100,
+        "9": 144,
+        "5": 175,
+        "": 8155
+      },
+      "before_lower": 0.2741974516757839,
+      "before_upper": 0.5593610449685024,
+      "utility_lower": 0.26839811245924755,
+      "utility_upper": 0.568548557409171,
+      "utility_width_increase": 0.01498685165720498
+    }
+  },
+  "sources": [
+    {
+      "path": "../task4_v15_mexico2020/Censo2020_CA_cdmx_csv.zip",
+      "sha256": "204325a75339582df7df72083889f4081dd06fdb24b2551f2aedd5c2f32e1428"
+    },
+    {
+      "path": "../task4_v15_mexico2020/extract_commute.py",
+      "sha256": "c6d93fbb6571e961f611c788473a46b85ec9709c87d6e1d9b366f7a0840ed054"
+    },
+    {
+      "path": "../task4_v15_mexico2020/commute_summary.json",
+      "sha256": "368e0035b96f767ae39545490297c9812ae9ff1457cc786c762d4d0dd2cfd2fc"
+    },
+    {
+      "path": "../task4_v15_mexico2020/school_attendance_metadata.html",
+      "sha256": "9bef7ac971e68504ef2ac387c20d9371a00ff329a91c1e8d18648977da45e301"
+    }
+  ]
+}

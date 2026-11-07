@@ -1,0 +1,60 @@
+{
+  "main_admitted": false,
+  "admitted_high_school_commute_observations": 0,
+  "city": "Toronto",
+  "survey_cycle": "2022",
+  "collection_scope": "Fall 2022 and Spring 2023; released tables retain cycle label 2022",
+  "provider": "University of Toronto Data Management Group",
+  "public_tables": [
+    {
+      "file": "tts2022_pd_Toronto.csv",
+      "summary_indicators": 406,
+      "geographic_subdivisions": 16,
+      "high_school_specific_labels": [],
+      "suppressed_cells": 1159
+    },
+    {
+      "file": "tts2022_ward_Toronto.csv",
+      "summary_indicators": 406,
+      "geographic_subdivisions": 25,
+      "high_school_specific_labels": [],
+      "suppressed_cells": 2040
+    }
+  ],
+  "identical_city_total_columns": true,
+  "contextual_all_stage_totals": {
+    "Number of full-time students": 510001,
+    "Number of part-time students": 57580,
+    "Number of persons with unknown student status": 38354,
+    "Number of home-based school trips by residents in 24-hours": 712300
+  },
+  "contextual_totals_are_high_school_data": false,
+  "data_guide_findings": [
+    {
+      "pages": "55",
+      "field": "n_stu_k12",
+      "finding": "Household K-12 count includes age 5-17 fallback when school level unknown. Neither a high-school category nor purely directly reported school stage."
+    },
+    {
+      "pages": "63",
+      "field": "stu_stat",
+      "finding": "Full-time/part-time/not student/unknown; no school stage."
+    },
+    {
+      "pages": "65",
+      "field": "sch_code",
+      "finding": "School lookup could potentially distinguish schools, but guide directs users to contact DMG for detailed school list. Public CSV has no person-school records or lookup."
+    },
+    {
+      "pages": "71-75",
+      "field": "start_time",
+      "finding": "Published trip-attribute dictionary contains departure time, purpose, geography and straight-line/Manhattan distances, but no arrival-time or duration variable. Departures at consecutive activities do not identify travel duration."
+    }
+  ],
+  "decision": "Retain Toronto high-school commute interval. Do not substitute all-school trip totals, age strata, school-bus counts or modeled network time.",
+  "remaining_evidence": [
+    "Direct current high-school identity or audited current school-code lookup and person records",
+    "Actual travel duration or departure-and-arrival observations",
+    "Toronto resident selection, person/household weights and non-traveller/missing records"
+  ]
+}

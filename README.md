@@ -16,10 +16,11 @@
 | --- | --- |
 | A题原文、评委点评 | [题目](research/2026-a/inputs/problem_a_2026.pdf) · [2025点评](research/2026-a/inputs/judges_commentary_2025.pdf) |
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
+| 当前条件模型 V23 | [覆盖修订与排名](research/2026-a/results/task4_v23_roster_coverage/README.md) · [算法入口 current_bounds](research/2026-a/scripts/task4_roster_coverage_comparison.py) |
 | 当前10项指标定义 | [指标规范](research/2026-a/design/task4_v5_indicator_spec.md) |
 | V6历史模型与结果 | [V6报告](research/2026-a/results/task4_v6/REPORT.md) · [结果表](research/2026-a/results/task4_v6/after_v6.csv) · [独立复核](research/2026-a/results/task4_v6_review.md) |
-| 最新累计证据模型 V16 | [报告](research/2026-a/results/task4_v16_combined/README.md) · [排名对照](research/2026-a/results/task4_v16_combined/ranks.csv) · [算法](research/2026-a/scripts/task4_combined_evidence.py) |
-| 最新补数策略 V17 | [报告](research/2026-a/results/task4_v17_rival_acquisition/README.md) · [当前排名](research/2026-a/results/task4_v17_rival_acquisition/current_ranks.csv) · [算法](research/2026-a/scripts/task4_rival_acquisition.py) |
+| 累计证据基准 V16 | [报告](research/2026-a/results/task4_v16_combined/README.md) · [排名对照](research/2026-a/results/task4_v16_combined/ranks.csv) · [算法](research/2026-a/scripts/task4_combined_evidence.py) |
+| 补数策略 V17 | [报告](research/2026-a/results/task4_v17_rival_acquisition/README.md) · [当前排名](research/2026-a/results/task4_v17_rival_acquisition/current_ranks.csv) · [算法](research/2026-a/scripts/task4_rival_acquisition.py) |
 | V18高中毕业队列条件分析 | [报告](research/2026-a/results/task4_v18_cohort_outcomes/README.md) · [官方NYC来源](research/2026-a/data/task4_v18_nyc_quality/README.md) · [排名与权重对照](research/2026-a/results/task4_v18_cohort_outcomes/ranks.csv) |
 | V19 Phoenix分组重叠边界 | [报告](research/2026-a/results/task4_v19_partition_outcomes/README.md) · [真实分组人数与见证](research/2026-a/data/task4_v19_phoenix_partitions/README.md) |
 | V20 NYC真实通学日记 | [报告](research/2026-a/results/task4_v20_nyc_reported_travel/README.md) · [2010–2011高中生记录](research/2026-a/data/task4_v20_nyc_travel/README.md) · [2024调查未成年人覆盖审计](research/2026-a/data/task4_v20_nyc_school_survey/README.md) |
@@ -77,6 +78,8 @@ HiMCM/
 
 ## 当前进度与结论
 
+V23补回 Melbourne 名册中的未观察通学者，并为 Mexico 在读未知者保留可选成员区间。固定 NYC under19 口径，Melbourne 十指标决策排名2→4、含毕业结局情景2→5；Phoenix仍24，可能冠军仍25。区间变宽反映原有覆盖不足，不能解释为城市条件恶化。完整人口、年份与权重限制见[本轮报告](research/2026-a/results/task4_v23_roster_coverage/README.md)。
+
 V16将 Mexico City 2020年通学资料与 São Paulo 2023年高中通学资料作条件合并：São Paulo决策排名14→6、Mexico City 21→20、Phoenix仍为24；平均得分区间宽度38.0831→37.8657。仍有25个可能冠军，Singapore仍是最小最大遗憾推荐（28.1736）。来源、年份和学段条件保留，不能将决策排名解释为已确定的真实表现排名。
 
 V17在相同观测矩阵上计算竞争城市补数策略，实际排名与冠军集合不变。所有假设观测仅用于补数诊断。完整对照与验证见上方V16、V17入口。
@@ -114,7 +117,7 @@ V6沿用8项主指标各0.1125、公交和泳池两项辅助各0.05的规范权�
 
 ## 使用与复现
 
-最新累计模型与补数策略可在本仓库根目录运行：
+当前条件模型可运行 `python3 research/2026-a/scripts/task4_roster_coverage_comparison.py`。历史累计模型与补数策略可在本仓库根目录运行：
 
 ```sh
 python3 research/2026-a/scripts/task4_combined_evidence.py
