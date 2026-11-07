@@ -34,3 +34,9 @@ The user explicitly made the Overleaf workspace the first priority on 2026-11-07
 - Keep main.tex, ref.bib and mcmthesis.cls at the root; Overleaf remains the authoritative manuscript workspace.
 - Preserve raw inputs and missing-data intervals. Historical split records are provenance, not current layout instructions.
 - Report Overleaf size-check failures accurately. The user's single-repository choice takes precedence over the previous lean-tree requirement; do not silently split or delete data to pass size checks.
+
+## Task 4 presentation — user preference, 2026-11-07
+
+- Keep the paper model understandable and concise, following the archived HiMCM judge guidance and concrete awarded-paper examples.
+- Prefer one core evaluation model, an evidence-backed revision, and focused validation. Additional methods need demonstrated value; do not add complexity to signal innovation.
+- Use `research/2026-a/design/task4_paper_core.md` as the current presentation guide. Keep detailed extraction audits and exploratory algorithms in supporting material, while preserving conclusion-changing limitations in the main discussion.

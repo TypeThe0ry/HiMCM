@@ -16,6 +16,7 @@
 | --- | --- |
 | A题原文、评委点评 | [题目](research/2026-a/inputs/problem_a_2026.pdf) · [2025点评](research/2026-a/inputs/judges_commentary_2025.pdf) |
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
+| 任务4精简正文主线 | [一个模型、一次修订、必要检验](research/2026-a/design/task4_paper_core.md) |
 | 当前条件模型 V23 | [覆盖修订与排名](research/2026-a/results/task4_v23_roster_coverage/README.md) · [算法入口 current_bounds](research/2026-a/scripts/task4_roster_coverage_comparison.py) |
 | 当前10项指标定义 | [指标规范](research/2026-a/design/task4_v5_indicator_spec.md) |
 | V6历史模型与结果 | [V6报告](research/2026-a/results/task4_v6/REPORT.md) · [结果表](research/2026-a/results/task4_v6/after_v6.csv) · [独立复核](research/2026-a/results/task4_v6_review.md) |
