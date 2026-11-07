@@ -3,11 +3,14 @@
 Uniform expansion is a specified scenario, not a guarantee against arbitrary
 source errors. Unresolved rectangles are preserved; no monotone-gap assumption.
 """
+import argparse
+import hashlib
 import json
+from pathlib import Path
 import numpy as np
 import pandas as pd
 from task4_current_model import current_bounds,run as run_current
-from task4_v5_model import ROOT,CITIES,score,weights,summarize
+from task4_v5_model import ROOT,CITIES,NAMES,score,weights,summarize
 from task4_continuous_recommendation import certify
 
 
@@ -55,23 +58,57 @@ def certify_prefix(lo,hi,choice,emax=.2,amin=.05,amax=.2,max_depth=14,target=Non
     return sorted(leaves,key=lambda x:(x['epsilon_lower'],x['alpha_lower']))
 
 
-def main():
+def protect_output(out,lo,hi,config):
+    """Reject baseline changes before creating or writing any output files."""
+    out=Path(out)
+    if not out.exists() or not any(out.iterdir()):return
+    summary=out/'summary.json'
+    if not summary.exists():raise ValueError('Existing output has no verifiable baseline; choose a new directory')
+    previous=json.loads(summary.read_text())
+    digest=hashlib.sha256(np.stack([lo,hi]).astype('<f8').tobytes()).hexdigest()
+    if previous.get('model_version')!=config['model_version']:
+        raise ValueError('Refusing to overwrite a different model baseline')
+    if 'fixed_alpha' in previous:
+        previous_weights=previous
+    else:
+        baseline_summary=out/'baseline/summary.json'
+        if not baseline_summary.exists():raise ValueError('Existing output has no verifiable weight baseline')
+        previous_weights=json.loads(baseline_summary.read_text())['registry']
+    if any(previous_weights.get(k)!=config[k] for k in ('fixed_alpha','alpha_range')):
+        raise ValueError('Refusing to overwrite changed baseline weights')
+    if 'input_bounds_sha256' in previous:
+        if previous['input_bounds_sha256']!=digest:
+            raise ValueError('Refusing to overwrite changed input bounds')
+    else:
+        # Legacy results predate the explicit input digest.
+        saved=pd.read_csv(out/'baseline/utility_bounds.csv')
+        if (saved.city.tolist()!=[c for c in CITIES for _ in range(10)]
+            or saved.indicator.tolist()!=NAMES*len(CITIES)
+            or not np.allclose(saved.lower,lo.ravel(),rtol=0,atol=1e-15)
+            or not np.allclose(saved.upper,hi.ravel(),rtol=0,atol=1e-15)):
+            raise ValueError('Refusing to overwrite changed legacy baseline')
+
+
+def run(out=None,targeted_prefix_max=.05):
+    if not 0<=targeted_prefix_max<=.2:raise ValueError('Targeted prefix must lie in [0,.2]')
     lo,hi,config=current_bounds();amin,amax=config['alpha_range']
+    out=Path(out) if out is not None else ROOT/('results/task4_'+config['model_version'].lower()+'_joint_stress')
+    protect_output(out,lo,hi,config)
     base,decision=summarize(lo,hi,weights(config['fixed_alpha']))
     assert len(decision['minimax_choices'])==1
     choice=decision['minimax_choices'][0]
-    out=ROOT/'results/task4_v67_joint_stress';out.mkdir(exist_ok=True)
+    out.mkdir(parents=True,exist_ok=True)
     run_current(out/'baseline')
     leaves=certify_prefix(lo,hi,choice,amin=amin,amax=amax)
     pd.DataFrame(leaves).to_csv(out/'uniform_prefix_certificate.csv',index=False)
-    targeted_prefix=certify_prefix(lo,hi,choice,emax=.1,amin=amin,amax=amax,target=choice)
+    targeted_prefix=certify_prefix(lo,hi,choice,emax=targeted_prefix_max,amin=amin,amax=amax,target=choice)
     pd.DataFrame(targeted_prefix).to_csv(out/'targeted_prefix_certificate.csv',index=False)
     targeted_fixed=certify(*expand(lo,hi,.2,choice),amin,amax)
     for row in targeted_fixed:row['city']=None if row['winner'] is None else CITIES[row['winner']]
     pd.DataFrame(targeted_fixed).to_csv(out/'targeted_epsilon02_certificate.csv',index=False)
     frames=[];cases=[]
     for structure,target in [('uniform',None),('recommendation_city_only',choice)]:
-        for epsilon in [0,.025,.05,.1,.15,.2]:
+        for epsilon in sorted(set([0,.025,.05,.075,.1,.15,.2,targeted_prefix_max])):
             l,h=expand(lo,hi,epsilon,target)
             for alpha in sorted(set([amin,config['fixed_alpha'],amax])):
                 f,d=summarize(l,h,weights(alpha))
@@ -83,14 +120,14 @@ def main():
                     changed_ranks_fixed_baseline=int((f.decision_rank!=base.decision_rank).sum())))
                 f=f.assign(structure=structure,epsilon=epsilon,alpha=alpha);frames.append(f)
     pd.concat(frames).to_csv(out/'scenario_ranks.csv',index=False)
-    witness=next(x for x in cases if x['structure']=='recommendation_city_only' and x['epsilon']==.15 and x['alpha']==amin)
-    assert witness['baseline_choice_gap'] < -1e-8, 'Preset stress point is no longer a failure witness; review before publication'
-    result=dict(model_version=config['model_version'],scenario_only=True,admitted_cells_changed=0,
-        baseline_choice=CITIES[choice],alpha_range=[amin,amax],epsilon_range=[0,.2],
+    failures=[x for x in cases if x['structure']=='recommendation_city_only' and x['baseline_choice_gap'] < -1e-8]
+    witness=min(failures,key=lambda x:(x['epsilon'],x['alpha'])) if failures else None
+    result=dict(model_version=config['model_version'],input_bounds_sha256=hashlib.sha256(np.stack([lo,hi]).astype('<f8').tobytes()).hexdigest(),scenario_only=True,admitted_cells_changed=0,
+        baseline_choice=CITIES[choice],fixed_alpha=config['fixed_alpha'],alpha_range=[amin,amax],epsilon_range=[0,.2],
         uniform_certificate=dict(leaves=len(leaves),unresolved=sum(not x['certified'] for x in leaves),
             minimum_gap_lower=min(x['gap_lower'] for x in leaves),padding=1e-9,strict_tolerance=1e-8,
             formal_interval_arithmetic=False),
-        targeted_prefix_certificate=dict(epsilon_range=[0,.1],leaves=len(targeted_prefix),
+        targeted_prefix_certificate=dict(epsilon_range=[0,targeted_prefix_max],leaves=len(targeted_prefix),
             unresolved=sum(not x['certified'] for x in targeted_prefix),
             minimum_gap_lower=min(x['gap_lower'] for x in targeted_prefix)),
         targeted_fixed_certificate=dict(epsilon=.2,leaves=len(targeted_fixed),
@@ -101,7 +138,15 @@ def main():
         interpretation='Uniform expansion is not arbitrary-error robustness; targeted cases are hypothetical counterexamples, not measured source bias.',main_admitted=False)
     (out/'summary.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k!='scenarios'},indent=2))
-    for x in cases:
-        if x['baseline_choice_gap']<0:print(json.dumps(x))
+    return result
+
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output',type=Path,help='Output directory; defaults to current model version')
+    parser.add_argument('--targeted-prefix-max',type=float,default=.05)
+    args=parser.parse_args()
+    run(args.output,args.targeted_prefix_max)
+
 
 if __name__=='__main__':main()

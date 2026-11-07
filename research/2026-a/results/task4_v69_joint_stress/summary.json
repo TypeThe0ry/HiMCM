@@ -1,0 +1,561 @@
+{
+  "model_version": "V69",
+  "input_bounds_sha256": "5ad210d002b3f33aeceff1f0556d2e7fc7398df571158d4f383b1a5fb798f60e",
+  "scenario_only": true,
+  "admitted_cells_changed": 0,
+  "baseline_choice": "Singapore",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "epsilon_range": [
+    0,
+    0.2
+  ],
+  "uniform_certificate": {
+    "leaves": 36,
+    "unresolved": 0,
+    "minimum_gap_lower": 0.06824467416450375,
+    "padding": 1e-09,
+    "strict_tolerance": 1e-08,
+    "formal_interval_arithmetic": false
+  },
+  "targeted_prefix_certificate": {
+    "epsilon_range": [
+      0,
+      0.05
+    ],
+    "leaves": 9,
+    "unresolved": 0,
+    "minimum_gap_lower": 0.25925529991521756
+  },
+  "targeted_fixed_certificate": {
+    "epsilon": 0.2,
+    "leaves": 2,
+    "unresolved": 0,
+    "winners": [
+      "Tokyo"
+    ]
+  },
+  "targeted_failure_witness": {
+    "structure": "recommendation_city_only",
+    "epsilon": 0.075,
+    "alpha": 0.05,
+    "baseline_choice_gap": -0.9002576168383669,
+    "choices": [
+      "Tokyo"
+    ],
+    "possible_champions": 25,
+    "changed_ranks_same_alpha": 2,
+    "changed_ranks_fixed_baseline": 2
+  },
+  "scenarios": [
+    {
+      "structure": "uniform",
+      "epsilon": 0,
+      "alpha": 0.05,
+      "baseline_choice_gap": 3.7528328362164487,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0,
+      "alpha": 0.1,
+      "baseline_choice_gap": 4.749133698681661,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0,
+      "alpha": 0.2,
+      "baseline_choice_gap": 6.670777849719869,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.025,
+      "alpha": 0.05,
+      "baseline_choice_gap": 3.73121662332197,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 2,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.025,
+      "alpha": 0.1,
+      "baseline_choice_gap": 4.689892608922335,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 2,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.025,
+      "alpha": 0.2,
+      "baseline_choice_gap": 6.546583602477135,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 2,
+      "changed_ranks_fixed_baseline": 4
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.05,
+      "alpha": 0.05,
+      "baseline_choice_gap": 3.7348642816665816,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 4,
+      "changed_ranks_fixed_baseline": 4
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.05,
+      "alpha": 0.1,
+      "baseline_choice_gap": 4.65321332922575,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 4,
+      "changed_ranks_fixed_baseline": 4
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.05,
+      "alpha": 0.2,
+      "baseline_choice_gap": 6.439120429863102,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 6,
+      "changed_ranks_fixed_baseline": 8
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.075,
+      "alpha": 0.05,
+      "baseline_choice_gap": 3.76661074048652,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 8,
+      "changed_ranks_fixed_baseline": 8
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.075,
+      "alpha": 0.1,
+      "baseline_choice_gap": 4.642063521920633,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 10,
+      "changed_ranks_fixed_baseline": 10
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.075,
+      "alpha": 0.2,
+      "baseline_choice_gap": 6.3514909067252745,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 8,
+      "changed_ranks_fixed_baseline": 10
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.1,
+      "alpha": 0.05,
+      "baseline_choice_gap": 3.894507719688889,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 10,
+      "changed_ranks_fixed_baseline": 10
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.1,
+      "alpha": 0.1,
+      "baseline_choice_gap": 4.720356807300654,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 10,
+      "changed_ranks_fixed_baseline": 10
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.1,
+      "alpha": 0.2,
+      "baseline_choice_gap": 6.339520904662031,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 10,
+      "changed_ranks_fixed_baseline": 12
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.15,
+      "alpha": 0.05,
+      "baseline_choice_gap": 4.346137332577065,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 16,
+      "changed_ranks_fixed_baseline": 16
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.15,
+      "alpha": 0.1,
+      "baseline_choice_gap": 5.05996727615387,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 16,
+      "changed_ranks_fixed_baseline": 16
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.15,
+      "alpha": 0.2,
+      "baseline_choice_gap": 6.470917675272197,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 14,
+      "changed_ranks_fixed_baseline": 16
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.2,
+      "alpha": 0.05,
+      "baseline_choice_gap": 4.864763105844581,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 18,
+      "changed_ranks_fixed_baseline": 18
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.2,
+      "alpha": 0.1,
+      "baseline_choice_gap": 5.463612664704371,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 18,
+      "changed_ranks_fixed_baseline": 18
+    },
+    {
+      "structure": "uniform",
+      "epsilon": 0.2,
+      "alpha": 0.2,
+      "baseline_choice_gap": 6.656439992223902,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 15,
+      "changed_ranks_fixed_baseline": 17
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0,
+      "alpha": 0.05,
+      "baseline_choice_gap": 3.7528328362164487,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0,
+      "alpha": 0.1,
+      "baseline_choice_gap": 4.749133698681661,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0,
+      "alpha": 0.2,
+      "baseline_choice_gap": 6.670777849719869,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.025,
+      "alpha": 0.05,
+      "baseline_choice_gap": 2.210293921346363,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.025,
+      "alpha": 0.1,
+      "baseline_choice_gap": 3.2346718248274016,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.025,
+      "alpha": 0.2,
+      "baseline_choice_gap": 5.209778310991311,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.05,
+      "alpha": 0.05,
+      "baseline_choice_gap": 0.6575444024781021,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.05,
+      "alpha": 0.1,
+      "baseline_choice_gap": 1.7082410554737493,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.05,
+      "alpha": 0.2,
+      "baseline_choice_gap": 3.733631930487327,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.075,
+      "alpha": 0.05,
+      "baseline_choice_gap": -0.9002576168383669,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 2,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.075,
+      "alpha": 0.1,
+      "baseline_choice_gap": 0.17483376112200943,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 0
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.075,
+      "alpha": 0.2,
+      "baseline_choice_gap": 2.2469569801081803,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.1,
+      "alpha": 0.05,
+      "baseline_choice_gap": -2.392648712222261,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 2,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.1,
+      "alpha": 0.1,
+      "baseline_choice_gap": -1.299502139382156,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 2,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.1,
+      "alpha": 0.2,
+      "baseline_choice_gap": 0.8072249432778804,
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 0,
+      "changed_ranks_fixed_baseline": 2
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.15,
+      "alpha": 0.05,
+      "baseline_choice_gap": -4.798103983342294,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 5,
+      "changed_ranks_fixed_baseline": 5
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.15,
+      "alpha": 0.1,
+      "baseline_choice_gap": -3.699877011998204,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 4,
+      "changed_ranks_fixed_baseline": 4
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.15,
+      "alpha": 0.2,
+      "baseline_choice_gap": -1.5841443414649774,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 4,
+      "changed_ranks_fixed_baseline": 6
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.2,
+      "alpha": 0.05,
+      "baseline_choice_gap": -4.957032272348059,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 5,
+      "changed_ranks_fixed_baseline": 5
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.2,
+      "alpha": 0.1,
+      "baseline_choice_gap": -3.9245473172007266,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 4,
+      "changed_ranks_fixed_baseline": 4
+    },
+    {
+      "structure": "recommendation_city_only",
+      "epsilon": 0.2,
+      "alpha": 0.2,
+      "baseline_choice_gap": -1.942504281935797,
+      "choices": [
+        "Tokyo"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_same_alpha": 4,
+      "changed_ranks_fixed_baseline": 6
+    }
+  ],
+  "interpretation": "Uniform expansion is not arbitrary-error robustness; targeted cases are hypothetical counterexamples, not measured source bias.",
+  "main_admitted": false
+}

@@ -1,6 +1,8 @@
-# 当前模型：V68 Singapore高中学段修订（2026-11-08）
+# 当前模型：V69 Tokyo特教高中部覆盖（2026-11-08）
 
-当前入口为[singapore_stage_bounds()](../scripts/task4_singapore_stage_revision.py)。[V68原件与对照](../results/task4_v68_singapore_stage/README.md)依据UIS学制映射撤回Pre-U代理，改用MOE高中课程学生界与全部报告教师池的条件界。Singapore教育效用由[0.541549,0.587187]改为[0,0.849407]；其他249格不变。全部决策排名保持、可能冠军仍25城，连续偏好下仍推荐Singapore。范围和实际授课分配尚未完整识别，`main_admitted=false`。下列V63—V67结果为历史基线；其中旧扩张阈值与补数最小项数没有在V68上重证。
+当前入口为[tokyo_special_bounds()](../scripts/task4_tokyo_special_revision.py)。[V69原件与对照](../results/task4_v69_tokyo/README.md)补入特教高中本科学生界[5808,6017]，保留国私立专攻科与全学段教师分配未知。仅Tokyo教育格变化，效用[0.482443,0.564467]；全部排名保持、25城仍可能第一。[V69重跑压力检验](../results/task4_v69_joint_stress/README.md)中均匀扩张ε≤0.20仍推荐Singapore；只扩张推荐城时首次失效阈值位于(0.05,0.075]。这是指定假设情景，非实测误差。
+
+V68历史入口为[singapore_stage_bounds()](../scripts/task4_singapore_stage_revision.py)。[V68原件与对照](../results/task4_v68_singapore_stage/README.md)依据UIS学制映射撤回Pre-U代理，改用MOE高中课程学生界与全部报告教师池的条件界。Singapore教育效用由[0.541549,0.587187]改为[0,0.849407]；其他249格不变。全部决策排名保持、可能冠军仍25城，连续偏好下仍推荐Singapore。范围和实际授课分配尚未完整识别，`main_admitted=false`。下列V63—V67结果为历史基线；其中旧扩张阈值与补数最小项数没有在V68上重证。
 
 V67新增[联合扩张与连续偏好检验](../results/task4_v67_joint_stress/README.md)：均匀扩张ε≤0.20保持Singapore；仅该城扩张的首次失效阈值位于(0.10,0.15]，ε=0.20时连续α范围推荐Tokyo。这是指定假设情景，不修改V63实测输入。
 

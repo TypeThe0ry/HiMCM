@@ -1,0 +1,70 @@
+{
+  "city": "Tokyo",
+  "observation_date": "2025-05-01",
+  "mapping_reference": "2019/2020",
+  "mapping_sheet": "2021提出版Scope UOE (xl/worksheets/sheet3.xml)",
+  "special_high_department_total": 6063,
+  "special_public_high_department": 5854,
+  "special_public_advanced": 46,
+  "special_national_private_high_department_unclassified": 209,
+  "special_upper_students_interval": [
+    5808,
+    6017
+  ],
+  "special_all_stage_main_post_teacher_pool": 7018,
+  "special_upper_teacher_interval": [
+    0,
+    7018
+  ],
+  "external_municipal_schools": [
+    {
+      "school_id": "823010",
+      "name": "天津わかしお学校",
+      "address": "千葉県鴨川市天津1990",
+      "upper_students": 0,
+      "student_cell": "AC84",
+      "address_cell": "AX86"
+    },
+    {
+      "school_id": "823020",
+      "name": "保田しおさい学校",
+      "address": "千葉県安房郡鋸南町大六180-2",
+      "upper_students": 0,
+      "student_cell": "AC85",
+      "address_cell": "AX87"
+    },
+    {
+      "school_id": "823030",
+      "name": "館山さざなみ学校",
+      "address": "千葉県館山市洲宮768-117",
+      "upper_students": 0,
+      "student_cell": "AC86",
+      "address_cell": "AX88"
+    }
+  ],
+  "expanded_students_interval": [
+    312711,
+    312920
+  ],
+  "expanded_teachers_interval": [
+    19446,
+    27019
+  ],
+  "expanded_utility_interval": [
+    0.48244322786589705,
+    0.5644669329634149
+  ],
+  "source_cells": {
+    "all_ownership": "gk25qv1011.csv 2025 total row",
+    "public_high": "soukatsu!AB10 = ichiran1!AC87",
+    "public_advanced": "soukatsu!AL10:AN10 = ichiran1!AM87:AO87",
+    "mapping": "sheet3!G39/T39,G46/T46,G57/T57,G62/T62"
+  },
+  "scope": "Tokyo reported ordinary full/day-evening high schools, latter secondary-school course, plus special-needs honka. National/private advanced pupils and stage teacher allocation remain unknown. Teachers retain official main-post school headcount, not FTE or classroom-only teachers.",
+  "omitted": [
+    "correspondence schools",
+    "upper-secondary vocational-school courses",
+    "college-of-technology lower years",
+    "international schools outside these statutory categories"
+  ]
+}
