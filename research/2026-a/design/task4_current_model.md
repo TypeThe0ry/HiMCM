@@ -1,5 +1,7 @@
 # 当前模型：V61 授课职责与独立人数审计（2026-11-07）
 
+V62取得12份官方原件并重跑核验，当前模型仍为V61。London、Copenhagen、Cape Town新增校级数据尚未对齐高中阶段、时间或总体；Phoenix毕业差2仍未解决。全部250格、排名及25城可能冠军集合保持，连续推荐证书通过。[本轮原件与复算](../results/task4_v62_source_intake/README.md)。
+
 当前条件入口为[dhaka_role_bounds()](../scripts/task4_dhaka_role_revision.py)。原表965个非校长角色不能保证965名独立授课教师；保留职责与去重未知，Dhaka教育外包改为[0,0.5987270617]（非最紧识别集）。其他249格不变，Dhaka第21→22、New York第22→21，Singapore仍推荐、Phoenix第24；固定及连续偏好下可能冠军25城，连续推荐证书通过。原件前言2024与详细方法2025采集日期矛盾已完整记录。[完整对照与公式](../results/task4_v61_dhaka_roles/README.md)。
 
 V60历史条件入口为[dhaka_madrasa_bounds()](../scripts/task4_dhaka_madrasa_revision.py)。Dhaka补入Alim阶段，N∈[140342,469293]、T∈[965,13960]，教育效用15T/(N+15T)∈[0.0299213673,0.5987270617]。全国类别与性别边际仅约束城市子集合上限；技术职业高中及原表日期、地域条件仍未解决。其他249格不变，全部名次与V59一致，Dhaka第21、Phoenix第24；固定和连续偏好下可能冠军25城，Singapore连续推荐证书通过。[完整对照及公式](../results/task4_v60_dhaka_madrasa/README.md)。

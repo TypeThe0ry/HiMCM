@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 校级原件补充 V62 | [新增London、Copenhagen、Cape Town学校数据；保持未匹配区间](research/2026-a/results/task4_v62_source_intake/README.md) |
 | 教师人数审计 V61 | [撤回未核验的965人下界；Dhaka第21→22，保留来源上界](research/2026-a/results/task4_v61_dhaka_roles/README.md) |
 | 宗教高中覆盖 V60 | [Dhaka补入Alim计数界，排名不变；Phoenix与Lagos保留未知](research/2026-a/results/task4_v60_dhaka_madrasa/README.md) |
 | 高中阶段计数界 V59 | [Dhaka用同类总数约束学段混入；第22→21，保留未知分配](research/2026-a/results/task4_v59_dhaka_stage/README.md) |

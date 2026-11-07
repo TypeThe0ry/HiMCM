@@ -1,0 +1,62 @@
+{
+  "model": "V61 dhaka_role_bounds",
+  "new_source_packages": [
+    {
+      "package": "task4_v62_london_colleges",
+      "verified_raw_files": 4
+    },
+    {
+      "package": "task4_v62_copenhagen_education",
+      "verified_raw_files": 7
+    },
+    {
+      "package": "task4_v62_cape_school_roster",
+      "verified_raw_files": 1
+    }
+  ],
+  "changed_cells": 0,
+  "verified_unchanged_cells": 250,
+  "changed_ranks": 0,
+  "possible_champions": 25,
+  "continuous_possible_champions": [
+    "Toronto",
+    "Phoenix",
+    "New York",
+    "Mexico City",
+    "Bogota",
+    "Sao Paulo",
+    "Santiago",
+    "Copenhagen",
+    "London",
+    "Barcelona",
+    "Warsaw",
+    "Athens",
+    "Nairobi",
+    "Lagos",
+    "Cape Town",
+    "Dubai",
+    "Istanbul",
+    "Mumbai",
+    "Delhi",
+    "Dhaka",
+    "Tokyo",
+    "Shanghai",
+    "Singapore",
+    "Jakarta",
+    "Melbourne"
+  ],
+  "choice": [
+    "Singapore"
+  ],
+  "main_admitted": false,
+  "continuous_recommendation": {
+    "unresolved_leaves": 0,
+    "winners": [
+      "Singapore"
+    ],
+    "alpha_range": [
+      0.05,
+      0.2
+    ]
+  }
+}

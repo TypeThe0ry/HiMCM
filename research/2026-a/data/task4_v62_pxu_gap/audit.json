@@ -1,0 +1,32 @@
+{
+  "audit_date": "2026-11-08",
+  "target": "PXU cohort2024 four-year graduation school/LEA reconciliation",
+  "baseline_school_sum": 6287,
+  "baseline_lea_total": 6285,
+  "baseline_difference": 2,
+  "new_admitted_observations": 0,
+  "gap_resolved": false,
+  "missing_interval_changed": false,
+  "source_page": "https://www.azed.gov/accountability-research/data",
+  "checks": [
+    {
+      "url": "https://www.azed.gov/sites/default/files/2025/04/4Y-GradRate-Cohort2024.xlsx",
+      "result": "403 in web and direct requests; no original downloaded"
+    },
+    {
+      "url": "https://cms.azed.gov/sites/default/files/2025/04/4Y-GradRate-Cohort2024.xlsx",
+      "result": "403 direct request; no original downloaded"
+    },
+    {
+      "url": "https://www.azed.gov/sites/default/files/2026-09/FY27%20Graduation%2C%20Dropout%2C%20%26%20Persistence%20Tech%20Manual.pdf",
+      "result": "New currently linked technical manual located, but 403 in web and direct requests; contents not verified"
+    },
+    {
+      "url": "https://azreportcards.azed.gov/api/DataApi/Graduation%20Rate?reportSection=Graduation+Rate&fiscalYear=2026&educationOrganizationId=5437",
+      "result": "Direct API fetch failed local DNS resolution; no FY2026 response obtained"
+    }
+  ],
+  "source_page_scope_note": "The note that totals may differ between tabs is in the Enrollment section, not Graduation Rates. It cannot explain the graduation cohort discrepancy.",
+  "no_duplicate_budget_inferred": true,
+  "future_action": "Obtain the cohort2024 workbook or a documented cross-level graduation aggregation rule; do not shift to another cohort without a separate historical roster."
+}
