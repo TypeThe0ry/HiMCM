@@ -1,0 +1,486 @@
+[
+  {
+    "scope": "metro",
+    "mode": "coverage",
+    "source_interval": [
+      0.45179540845496896,
+      0.6199483743990571
+    ],
+    "main_admitted": false,
+    "share_estimated": false,
+    "baseline_rank": 14,
+    "rank_at_zero": 6,
+    "first_rank_loss_share": 0.18173760407171916,
+    "breakpoints": [
+      {
+        "share": 0.18173760407171916,
+        "tied_with": "Barcelona",
+        "target_regret": 43.30055359435526
+      },
+      {
+        "share": 0.21410999001559286,
+        "tied_with": "Toronto",
+        "target_regret": 43.42246808861701
+      },
+      {
+        "share": 0.250267418726927,
+        "tied_with": "Istanbul",
+        "target_regret": 43.55602318207429
+      },
+      {
+        "share": 0.3617292607125636,
+        "tied_with": "Bogota",
+        "target_regret": 43.949475388062766
+      },
+      {
+        "share": 0.390384718897113,
+        "tied_with": "Dubai",
+        "target_regret": 44.045967015039245
+      },
+      {
+        "share": 0.4137000161563031,
+        "tied_with": "Warsaw",
+        "target_regret": 44.123015701375785
+      },
+      {
+        "share": 0.537650187941921,
+        "tied_with": "Cape Town",
+        "target_regret": 44.50980449158593
+      },
+      {
+        "share": 0.5920090742519044,
+        "tied_with": "Santiago",
+        "target_regret": 44.66685848114228
+      }
+    ],
+    "segments": [
+      {
+        "share_lower": 0.0,
+        "share_upper": 0.18173760407171916,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 6,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.18173760407171916,
+        "share_upper": 0.21410999001559286,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 7,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.21410999001559286,
+        "share_upper": 0.250267418726927,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 8,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.250267418726927,
+        "share_upper": 0.3617292607125636,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 9,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.3617292607125636,
+        "share_upper": 0.390384718897113,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 10,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.390384718897113,
+        "share_upper": 0.4137000161563031,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 11,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.4137000161563031,
+        "share_upper": 0.537650187941921,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 12,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.537650187941921,
+        "share_upper": 0.5920090742519044,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 13,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.5920090742519044,
+        "share_upper": 1.0,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 14,
+        "possible_champions": 25
+      }
+    ],
+    "all_share_possible_champions": 25
+  },
+  {
+    "scope": "metro",
+    "mode": "contamination",
+    "source_interval": [
+      0.45179540845496896,
+      0.6199483743990571
+    ],
+    "main_admitted": false,
+    "share_estimated": false,
+    "baseline_rank": 14,
+    "rank_at_zero": 6,
+    "first_rank_loss_share": 0.13026582072009552,
+    "breakpoints": [
+      {
+        "share": 0.13026582072009552,
+        "tied_with": "Barcelona",
+        "target_regret": 43.30055359435526
+      },
+      {
+        "share": 0.149989355733364,
+        "tied_with": "Toronto",
+        "target_regret": 43.42246808861701
+      },
+      {
+        "share": 0.1709875570969969,
+        "tied_with": "Istanbul",
+        "target_regret": 43.55602318207429
+      },
+      {
+        "share": 0.22965180138073255,
+        "tied_with": "Bogota",
+        "target_regret": 43.949475388062766
+      },
+      {
+        "share": 0.24341599359891747,
+        "tied_with": "Dubai",
+        "target_regret": 44.045967015039245
+      },
+      {
+        "share": 0.25425741440329,
+        "tied_with": "Warsaw",
+        "target_regret": 44.123015701375785
+      },
+      {
+        "share": 0.3070459550061501,
+        "tied_with": "Cape Town",
+        "target_regret": 44.50980449158593
+      },
+      {
+        "share": 0.3279101422018268,
+        "tied_with": "Santiago",
+        "target_regret": 44.66685848114228
+      }
+    ],
+    "segments": [
+      {
+        "share_lower": 0.0,
+        "share_upper": 0.13026582072009552,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 6,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.13026582072009552,
+        "share_upper": 0.149989355733364,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 7,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.149989355733364,
+        "share_upper": 0.1709875570969969,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 8,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.1709875570969969,
+        "share_upper": 0.22965180138073255,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 9,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.22965180138073255,
+        "share_upper": 0.24341599359891747,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 10,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.24341599359891747,
+        "share_upper": 0.25425741440329,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 11,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.25425741440329,
+        "share_upper": 0.3070459550061501,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 12,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.3070459550061501,
+        "share_upper": 0.3279101422018268,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 13,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.3279101422018268,
+        "share_upper": 1.0,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 14,
+        "possible_champions": 25
+      }
+    ],
+    "all_share_possible_champions": 25
+  },
+  {
+    "scope": "municipality_sao_paulo",
+    "mode": "coverage",
+    "source_interval": [
+      0.4370715213136484,
+      0.6114325152264785
+    ],
+    "main_admitted": false,
+    "share_estimated": false,
+    "baseline_rank": 14,
+    "rank_at_zero": 6,
+    "first_rank_loss_share": 0.15417231422299268,
+    "breakpoints": [
+      {
+        "share": 0.15417231422299268,
+        "tied_with": "Barcelona",
+        "target_regret": 43.30055359435526
+      },
+      {
+        "share": 0.18763524790079283,
+        "tied_with": "Toronto",
+        "target_regret": 43.42246808861701
+      },
+      {
+        "share": 0.22501073332299723,
+        "tied_with": "Istanbul",
+        "target_regret": 43.55602318207429
+      },
+      {
+        "share": 0.3402274563794229,
+        "tied_with": "Bogota",
+        "target_regret": 43.949475388062766
+      },
+      {
+        "share": 0.36984824795156945,
+        "tied_with": "Dubai",
+        "target_regret": 44.045967015039245
+      },
+      {
+        "share": 0.3939489814351974,
+        "tied_with": "Warsaw",
+        "target_regret": 44.123015701375785
+      },
+      {
+        "share": 0.5220747360522784,
+        "tied_with": "Cape Town",
+        "target_regret": 44.50980449158593
+      },
+      {
+        "share": 0.5782648423528763,
+        "tied_with": "Santiago",
+        "target_regret": 44.66685848114228
+      }
+    ],
+    "segments": [
+      {
+        "share_lower": 0.0,
+        "share_upper": 0.15417231422299268,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 6,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.15417231422299268,
+        "share_upper": 0.18763524790079283,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 7,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.18763524790079283,
+        "share_upper": 0.22501073332299723,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 8,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.22501073332299723,
+        "share_upper": 0.3402274563794229,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 9,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.3402274563794229,
+        "share_upper": 0.36984824795156945,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 10,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.36984824795156945,
+        "share_upper": 0.3939489814351974,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 11,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.3939489814351974,
+        "share_upper": 0.5220747360522784,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 12,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.5220747360522784,
+        "share_upper": 0.5782648423528763,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 13,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.5782648423528763,
+        "share_upper": 1.0,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 14,
+        "possible_champions": 25
+      }
+    ],
+    "all_share_possible_champions": 25
+  },
+  {
+    "scope": "municipality_sao_paulo",
+    "mode": "contamination",
+    "source_interval": [
+      0.4370715213136484,
+      0.6114325152264785
+    ],
+    "main_admitted": false,
+    "share_estimated": false,
+    "baseline_rank": 14,
+    "rank_at_zero": 6,
+    "first_rank_loss_share": 0.10690616978653748,
+    "breakpoints": [
+      {
+        "share": 0.10690616978653748,
+        "tied_with": "Barcelona",
+        "target_regret": 43.30055359435526
+      },
+      {
+        "share": 0.12715944699467382,
+        "tied_with": "Toronto",
+        "target_regret": 43.42246808861701
+      },
+      {
+        "share": 0.1487216260261656,
+        "tied_with": "Istanbul",
+        "target_regret": 43.55602318207429
+      },
+      {
+        "share": 0.20896149686499954,
+        "tied_with": "Bogota",
+        "target_regret": 43.949475388062766
+      },
+      {
+        "share": 0.2230953729857604,
+        "tied_with": "Dubai",
+        "target_regret": 44.045967015039245
+      },
+      {
+        "share": 0.23422797678793592,
+        "tied_with": "Warsaw",
+        "target_regret": 44.123015701375785
+      },
+      {
+        "share": 0.2884343320646951,
+        "tied_with": "Cape Town",
+        "target_regret": 44.50980449158593
+      },
+      {
+        "share": 0.30985889752480433,
+        "tied_with": "Santiago",
+        "target_regret": 44.66685848114228
+      }
+    ],
+    "segments": [
+      {
+        "share_lower": 0.0,
+        "share_upper": 0.10690616978653748,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 6,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.10690616978653748,
+        "share_upper": 0.12715944699467382,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 7,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.12715944699467382,
+        "share_upper": 0.1487216260261656,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 8,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.1487216260261656,
+        "share_upper": 0.20896149686499954,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 9,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.20896149686499954,
+        "share_upper": 0.2230953729857604,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 10,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.2230953729857604,
+        "share_upper": 0.23422797678793592,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 11,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.23422797678793592,
+        "share_upper": 0.2884343320646951,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 12,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.2884343320646951,
+        "share_upper": 0.30985889752480433,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 13,
+        "possible_champions": 25
+      },
+      {
+        "share_lower": 0.30985889752480433,
+        "share_upper": 1.0,
+        "boundary_convention": "open interval; exact boundary is a competition-rank tie",
+        "sao_paulo_decision_rank": 14,
+        "possible_champions": 25
+      }
+    ],
+    "all_share_possible_champions": 25
+  }
+]
