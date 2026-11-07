@@ -1,0 +1,46 @@
+{
+  "year": 2025,
+  "status": "programme_scope_unresolved_no_model_update",
+  "new_admitted_city_counts": 0,
+  "model_cells_changed": 0,
+  "changning_district_only": {
+    "vocational_schools": 1,
+    "vocational_students_including_adult_programmes": 1716,
+    "adult_students_separately": null,
+    "note": "职校在校学生数包括职校生和成人中专学生数",
+    "not_a_city_total": true
+  },
+  "ordinary_vocational_schools_can_offer_adult_programmes": true,
+  "admissions_rule_excerpt": "本市各全日制普通中等职业学校（包括中等专业学校、职业学校、技工学校，不含五年一贯制试点学校）和独立设置且具有可持续招生能力的成人中等专业学校，经学校主管单位同意，市教委备案通过后，方可开展成人中等职业教育。",
+  "shanghai_2025_adult_secondary_student_stock": null,
+  "deducting_standalone_adult_school_teachers_sufficient": false,
+  "does_not_establish_city_bulletin_includes_adult_students": true,
+  "prior_v54_numbers_not_reestimated": {
+    "ordinary_high_students": 235542,
+    "ordinary_high_fulltime_teachers_headcount": 23999,
+    "vocational_total_teachers": 7273,
+    "adult_school_teachers": 59,
+    "conditional_nonadult_institution_teachers": 7214,
+    "rounded_vocational_students": 109000
+  },
+  "required_next_evidence": [
+    "2025 city vocational pupil stock split by regular/adult programme with coverage definitions",
+    "2025 teacher allocation to the same regular upper-secondary programme population"
+  ],
+  "verified_originals": [
+    {
+      "file": "changning2025_bulletin.html",
+      "url": "https://zwgk.shcn.gov.cn/xxgk/tjxx-tjjzdgz/2026/201/81949.html",
+      "status": 200,
+      "bytes": 191093,
+      "sha256": "15eb771902b9ce29d547c344f32e7f0b57f4aba937c3c5ef562e313ef58fbccb"
+    },
+    {
+      "file": "adult_admission2025.html",
+      "url": "https://www.shmeea.edu.cn/page/21000/20241224/18990.html",
+      "status": 200,
+      "bytes": 18033,
+      "sha256": "c1f93b898a8f8b600266a7ee2c3a1e6bcaf365d2df62d4c023a46c0483b79bdd"
+    }
+  ]
+}

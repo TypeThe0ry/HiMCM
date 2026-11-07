@@ -1,0 +1,38 @@
+{
+  "audit_date": "2026-11-08",
+  "target": "Phoenix city current high-school pupils, observed usual or diary home-to-school duration",
+  "new_admitted_observations": 0,
+  "changed_model_cells": 0,
+  "main_admitted": false,
+  "sources": [
+    {
+      "url": "https://azmag.gov/portals/0/Transportation/2025/TOOS-MAG-Final-Report.pdf",
+      "title": "MAG Regional Travel Options and Optimization Study",
+      "verified_scope": "Official indexed page37 Strategy11 proposes a future regional Schoolpool matching program for parents. A qualitative parent quotation describes time burden; no Phoenix high-school duration/denominator established in inspected passage.",
+      "access": "Web open rejected content length10546094; direct curl403; original not archived. Official indexed passage inspected.",
+      "admission": "Not an observed student-duration measurement; not a measured implemented program effect."
+    },
+    {
+      "url": "https://www.azcjc.gov/Programs/Statistical-Analysis-Center/Arizona-Youth-Survey",
+      "title": "Arizona Youth Survey",
+      "verified_scope": "Official program page identifies statewide samples of grades8,10,12 and risk/protective-factor survey; no city-stage duration cross-tab established.",
+      "access": "Official page read via web; no questionnaire or microdata obtained.",
+      "admission": "Relevant school-age respondents alone do not establish a school-travel variable or Phoenix city geography."
+    },
+    {
+      "url": "https://www.pxu.org/o/cchs/news",
+      "title": "Cactus Canyon High School news",
+      "verified_scope": "Search result lists2025 MyRide K12 enrollment instructions and2024 alumni survey link.",
+      "access": "Official index inspected; no submission or account access.",
+      "admission": "Program registration/instrument link is not a public response dataset."
+    }
+  ],
+  "retained_unknowns": [
+    "Phoenix actual high-school duration",
+    "City/stage sampling denominator",
+    "School travel-time distributions"
+  ],
+  "no_external_contact": true,
+  "no_imputation": true,
+  "search_limit": "Focused school climate/attendance and MAG youth/student channels; not an exhaustive absence claim."
+}

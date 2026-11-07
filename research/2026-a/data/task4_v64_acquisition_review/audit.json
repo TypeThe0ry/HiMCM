@@ -1,0 +1,35 @@
+{
+  "review": "Independent formulas and exhaustive subset coverage for Phoenix and Shanghai",
+  "focal": [
+    {
+      "city": "Phoenix",
+      "fixed_minimum": 3,
+      "continuous_minimum": 4,
+      "all_smaller_subsets_verified": 64,
+      "largest_negative_witness": -0.5433400710285881,
+      "certified_bundles": 25,
+      "certified_leaves": 25,
+      "minimum_certificate_gap": 0.9656737911253188
+    },
+    {
+      "city": "Shanghai",
+      "fixed_minimum": 2,
+      "continuous_minimum": 3,
+      "all_smaller_subsets_verified": 16,
+      "largest_negative_witness": -0.27078236049491977,
+      "certified_bundles": 7,
+      "certified_leaves": 7,
+      "minimum_certificate_gap": 1.8918903984166064
+    }
+  ],
+  "source_sha256": "bdd122e017f6a96df590d6014a3b3d6d3a81abc0d4193f087421f6a801a04ecb",
+  "algorithm_sha256": "f41239a64b13fd2d9fa04465054c06cd678b3ef5683d09dd16a129b9544810cd",
+  "conclusions": [
+    "Counts are city-indicator exact measurements, not data sources or collection costs.",
+    "Success assumes favorable observations jointly at upper endpoints in a rectangular outer model.",
+    "Not guaranteed observed values, actual performance champions, or identified physical joint feasibility.",
+    "All smaller subsets have strict negative witnesses; all successful certificate leaves cover the full alpha interval with target as unique minimax recommendation.",
+    "Numerical certificates use padding and tolerances, not formal interval arithmetic."
+  ],
+  "files_changed_outside_review": false
+}

@@ -1,0 +1,1025 @@
+city,size,indicators,status,witness_alpha,witness_margin,minimum_margin_bound
+Toronto,0,,excluded_by_witness,0.05,-14.935321935043554,
+Toronto,1,homicide_rate,excluded_by_witness,0.05,-6.224935985243398,
+Toronto,1,upper_secondary_ptr,excluded_by_witness,0.05,-6.224935985243398,
+Toronto,1,research_he_density,excluded_by_witness,0.05,-6.224935985243398,
+Toronto,1,public_transport_density,excluded_by_witness,0.05,-12.925869653853752,
+Toronto,1,travel,excluded_by_witness,0.05,-6.224935985243398,
+Toronto,1,public_pool_density,excluded_by_witness,0.05,-12.925869653853752,
+Toronto,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.2,-1.487032277878221,
+Toronto,2,homicide_rate|research_he_density,excluded_by_witness,0.2,-1.487032277878221,
+Toronto,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-4.570935412462525,
+Toronto,2,homicide_rate|travel,excluded_by_witness,0.2,-1.487032277878221,
+Toronto,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-4.570935412462525,
+Toronto,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.2,-1.487032277878221,
+Toronto,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-4.570935412462525,
+Toronto,2,upper_secondary_ptr|travel,excluded_by_witness,0.2,-1.487032277878221,
+Toronto,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-4.570935412462525,
+Toronto,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-4.570935412462525,
+Toronto,2,research_he_density|travel,excluded_by_witness,0.2,-1.487032277878221,
+Toronto,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-4.570935412462525,
+Toronto,2,public_transport_density|travel,excluded_by_witness,0.05,-4.570935412462525,
+Toronto,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-11.032309444005435,
+Toronto,2,travel|public_pool_density,excluded_by_witness,0.05,-4.570935412462525,
+Toronto,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,homicide_rate|upper_secondary_ptr|public_transport_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,0.47301516813032407
+Toronto,3,homicide_rate|upper_secondary_ptr|public_pool_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.47301516813032407
+Toronto,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,0.47301516813032407
+Toronto,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-2.946150101340372,
+Toronto,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.47301516813032407
+Toronto,3,upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,0.47301516813032407
+Toronto,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-2.946150101340372,
+Toronto,3,upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,research_he_density|public_transport_density|travel,certified_outer_box,,,0.47301516813032407
+Toronto,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-2.946150101340372,
+Toronto,3,research_he_density|travel|public_pool_density,certified_outer_box,,,0.47301516813032407
+Toronto,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-2.946150101340372,
+Phoenix,0,,excluded_by_witness,0.05,-22.29537952545892,
+Phoenix,1,pm25,excluded_by_witness,0.05,-12.409545023360337,
+Phoenix,1,upper_secondary_ptr,excluded_by_witness,0.05,-12.409545023360337,
+Phoenix,1,research_he_density,excluded_by_witness,0.05,-12.409545023360337,
+Phoenix,1,public_transport_density,excluded_by_witness,0.05,-19.84410791809306,
+Phoenix,1,travel,excluded_by_witness,0.05,-12.409545023360337,
+Phoenix,1,fixed_broadband_mbps,excluded_by_witness,0.05,-12.409545023360337,
+Phoenix,1,public_pool_density,excluded_by_witness,0.05,-19.84410791809306,
+Phoenix,2,pm25|upper_secondary_ptr,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,pm25|research_he_density,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,pm25|public_transport_density,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,pm25|travel,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,pm25|fixed_broadband_mbps,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,pm25|public_pool_density,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,upper_secondary_ptr|fixed_broadband_mbps,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,research_he_density|travel,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,research_he_density|fixed_broadband_mbps,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,public_transport_density|travel,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,public_transport_density|fixed_broadband_mbps,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-17.64311686225976,
+Phoenix,2,travel|fixed_broadband_mbps,excluded_by_witness,0.05,-4.8209781160689715,
+Phoenix,2,travel|public_pool_density,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,2,fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-10.70351159741373,
+Phoenix,3,pm25|upper_secondary_ptr|research_he_density,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,pm25|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,pm25|upper_secondary_ptr|travel,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,pm25|upper_secondary_ptr|fixed_broadband_mbps,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,pm25|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,pm25|research_he_density|public_transport_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,pm25|research_he_density|travel,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,pm25|research_he_density|fixed_broadband_mbps,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,pm25|research_he_density|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,pm25|public_transport_density|travel,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,pm25|public_transport_density|fixed_broadband_mbps,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,pm25|public_transport_density|public_pool_density,excluded_by_witness,0.05,-9.068090914976885,
+Phoenix,3,pm25|travel|fixed_broadband_mbps,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,pm25|travel|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,pm25|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,upper_secondary_ptr|research_he_density|travel,excluded_by_witness,0.2,-0.5433400710285881,
+Phoenix,3,upper_secondary_ptr|research_he_density|fixed_broadband_mbps,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,upper_secondary_ptr|public_transport_density|fixed_broadband_mbps,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-9.068090914976885,
+Phoenix,3,upper_secondary_ptr|travel|fixed_broadband_mbps,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,upper_secondary_ptr|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,research_he_density|public_transport_density|travel,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,research_he_density|public_transport_density|fixed_broadband_mbps,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-9.068090914976885,
+Phoenix,3,research_he_density|travel|fixed_broadband_mbps,excluded_by_witness,0.2,-0.5433400710285952,
+Phoenix,3,research_he_density|travel|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,research_he_density|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,public_transport_density|travel|fixed_broadband_mbps,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-9.068090914976885,
+Phoenix,3,public_transport_density|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-9.068090914976885,
+Phoenix,3,travel|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-3.335453229222182,
+Phoenix,4,pm25|upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,0.9656737911253259
+Phoenix,4,pm25|upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.9656737911253259
+Phoenix,4,pm25|upper_secondary_ptr|research_he_density|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,0.9656737911253259
+Phoenix,4,pm25|upper_secondary_ptr|public_transport_density|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,pm25|upper_secondary_ptr|travel|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|upper_secondary_ptr|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|research_he_density|public_transport_density|travel,certified_outer_box,,,0.9656737911253259
+Phoenix,4,pm25|research_he_density|public_transport_density|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,pm25|research_he_density|travel|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|research_he_density|travel|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|research_he_density|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|public_transport_density|travel|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253188
+Phoenix,4,pm25|public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,pm25|public_transport_density|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,pm25|travel|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,upper_secondary_ptr|research_he_density|public_transport_density|travel,certified_outer_box,,,0.9656737911253259
+Phoenix,4,upper_secondary_ptr|research_he_density|public_transport_density|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253259
+Phoenix,4,upper_secondary_ptr|research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,upper_secondary_ptr|research_he_density|travel|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253259
+Phoenix,4,upper_secondary_ptr|research_he_density|travel|public_pool_density,certified_outer_box,,,0.9656737911253259
+Phoenix,4,upper_secondary_ptr|research_he_density|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,upper_secondary_ptr|public_transport_density|travel|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253259
+Phoenix,4,upper_secondary_ptr|public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,upper_secondary_ptr|public_transport_density|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,upper_secondary_ptr|travel|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,research_he_density|public_transport_density|travel|fixed_broadband_mbps,certified_outer_box,,,0.9656737911253259
+Phoenix,4,research_he_density|public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,research_he_density|public_transport_density|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+Phoenix,4,research_he_density|travel|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.9656737911253188
+Phoenix,4,public_transport_density|travel|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-1.867196901974296,
+New York,0,,excluded_by_witness,0.05,-20.103432434720553,
+New York,1,homicide_rate,excluded_by_witness,0.05,-10.287454546047123,
+New York,1,pm25,excluded_by_witness,0.05,-10.287454546047123,
+New York,1,upper_secondary_ptr,excluded_by_witness,0.05,-10.287454546047123,
+New York,1,research_he_density,excluded_by_witness,0.05,-10.287454546047123,
+New York,1,public_transport_density,excluded_by_witness,0.05,-17.71720647378308,
+New York,1,travel,excluded_by_witness,0.05,-17.00481796037979,
+New York,1,public_pool_density,excluded_by_witness,0.05,-17.71720647378308,
+New York,2,homicide_rate|pm25,excluded_by_witness,0.05,-2.4339309754414202,
+New York,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-2.4339309754414202,
+New York,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-2.4339309754414202,
+New York,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-8.54600748195216,
+New York,2,homicide_rate|travel,excluded_by_witness,0.05,-7.823343823853698,
+New York,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-8.546007481952152,
+New York,2,pm25|upper_secondary_ptr,excluded_by_witness,0.05,-2.4339309754414202,
+New York,2,pm25|research_he_density,excluded_by_witness,0.05,-2.4339309754414202,
+New York,2,pm25|public_transport_density,excluded_by_witness,0.05,-8.54600748195216,
+New York,2,pm25|travel,excluded_by_witness,0.05,-7.823343823853698,
+New York,2,pm25|public_pool_density,excluded_by_witness,0.05,-8.546007481952152,
+New York,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-2.4339309754414202,
+New York,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-8.54600748195216,
+New York,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-7.823343823853698,
+New York,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-8.546007481952152,
+New York,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-8.54600748195216,
+New York,2,research_he_density|travel,excluded_by_witness,0.05,-7.823343823853698,
+New York,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-8.546007481952152,
+New York,2,public_transport_density|travel,excluded_by_witness,0.05,-14.843401074805428,
+New York,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-15.545846298066628,
+New York,2,travel|public_pool_density,excluded_by_witness,0.05,-14.84340107480542,
+New York,3,homicide_rate|pm25|upper_secondary_ptr,certified_outer_box,,,0.44573352573410574
+New York,3,homicide_rate|pm25|research_he_density,certified_outer_box,,,0.44573352573410574
+New York,3,homicide_rate|pm25|public_transport_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,homicide_rate|pm25|travel,excluded_by_witness,0.05,-0.02561112878193228,
+New York,3,homicide_rate|pm25|public_pool_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.44573352573410574
+New York,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,homicide_rate|upper_secondary_ptr|travel,excluded_by_witness,0.05,-0.02561112878193228,
+New York,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,homicide_rate|research_he_density|public_transport_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,homicide_rate|research_he_density|travel,excluded_by_witness,0.05,-0.02561112878193228,
+New York,3,homicide_rate|research_he_density|public_pool_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,homicide_rate|public_transport_density|travel,excluded_by_witness,0.05,-6.1251013402043455,
+New York,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.863959565004038,
+New York,3,homicide_rate|travel|public_pool_density,excluded_by_witness,0.05,-6.1251013402043455,
+New York,3,pm25|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.44573352573410574
+New York,3,pm25|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,pm25|upper_secondary_ptr|travel,excluded_by_witness,0.05,-0.02561112878193228,
+New York,3,pm25|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,pm25|research_he_density|public_transport_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,pm25|research_he_density|travel,excluded_by_witness,0.05,-0.02561112878193228,
+New York,3,pm25|research_he_density|public_pool_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,pm25|public_transport_density|travel,excluded_by_witness,0.05,-6.1251013402043455,
+New York,3,pm25|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.863959565004038,
+New York,3,pm25|travel|public_pool_density,excluded_by_witness,0.05,-6.1251013402043455,
+New York,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,upper_secondary_ptr|research_he_density|travel,excluded_by_witness,0.05,-0.02561112878193228,
+New York,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-0.8611897772303507,
+New York,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-6.1251013402043455,
+New York,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.863959565004038,
+New York,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-6.125101340204338,
+New York,3,research_he_density|public_transport_density|travel,excluded_by_witness,0.05,-6.1251013402043455,
+New York,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.863959565004038,
+New York,3,research_he_density|travel|public_pool_density,excluded_by_witness,0.05,-6.125101340204338,
+New York,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-12.83345719575965,
+Mexico City,0,,excluded_by_witness,0.05,-19.837419603048026,
+Mexico City,1,homicide_rate,excluded_by_witness,0.05,-10.027839826348341,
+Mexico City,1,pm25,excluded_by_witness,0.05,-10.027839826348341,
+Mexico City,1,upper_secondary_ptr,excluded_by_witness,0.05,-10.027839826348341,
+Mexico City,1,research_he_density,excluded_by_witness,0.05,-10.027839826348341,
+Mexico City,1,public_transport_density,excluded_by_witness,0.05,-17.458379607389787,
+Mexico City,1,travel,excluded_by_witness,0.05,-17.079842708755365,
+Mexico City,1,public_pool_density,excluded_by_witness,0.05,-17.458379607389794,
+Mexico City,2,homicide_rate|pm25,excluded_by_witness,0.05,-2.1391948891165526,
+Mexico City,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-2.1391948891165526,
+Mexico City,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-2.1391948891165526,
+Mexico City,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-8.28168392684011,
+Mexico City,2,homicide_rate|travel,excluded_by_witness,0.05,-7.887643439380518,
+Mexico City,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-8.28168392684011,
+Mexico City,2,pm25|upper_secondary_ptr,excluded_by_witness,0.05,-2.1391948891165526,
+Mexico City,2,pm25|research_he_density,excluded_by_witness,0.05,-2.1391948891165526,
+Mexico City,2,pm25|public_transport_density,excluded_by_witness,0.05,-8.28168392684011,
+Mexico City,2,pm25|travel,excluded_by_witness,0.05,-7.887643439380518,
+Mexico City,2,pm25|public_pool_density,excluded_by_witness,0.05,-8.28168392684011,
+Mexico City,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-2.1391948891165526,
+Mexico City,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-8.28168392684011,
+Mexico City,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-7.887643439380518,
+Mexico City,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-8.28168392684011,
+Mexico City,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-8.28168392684011,
+Mexico City,2,research_he_density|travel,excluded_by_witness,0.05,-7.887643439380518,
+Mexico City,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-8.28168392684011,
+Mexico City,2,public_transport_density|travel,excluded_by_witness,0.05,-14.914375833274917,
+Mexico City,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-15.290178823815737,
+Mexico City,2,travel|public_pool_density,excluded_by_witness,0.05,-14.914375833274924,
+Mexico City,3,homicide_rate|pm25|upper_secondary_ptr,certified_outer_box,,,0.6944537716799744
+Mexico City,3,homicide_rate|pm25|research_he_density,certified_outer_box,,,0.6944537716799744
+Mexico City,3,homicide_rate|pm25|public_transport_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,homicide_rate|pm25|travel,excluded_by_witness,0.05,-0.09184650603278754,
+Mexico City,3,homicide_rate|pm25|public_pool_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.6944537716799744
+Mexico City,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,homicide_rate|upper_secondary_ptr|travel,excluded_by_witness,0.05,-0.09184650603278754,
+Mexico City,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,homicide_rate|research_he_density|public_transport_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,homicide_rate|research_he_density|travel,excluded_by_witness,0.05,-0.09184650603278754,
+Mexico City,3,homicide_rate|research_he_density|public_pool_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,homicide_rate|public_transport_density|travel,excluded_by_witness,0.05,-6.189034813465987,
+Mexico City,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.593478141254565,
+Mexico City,3,homicide_rate|travel|public_pool_density,excluded_by_witness,0.05,-6.189034813465987,
+Mexico City,3,pm25|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.6944537716799744
+Mexico City,3,pm25|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,pm25|upper_secondary_ptr|travel,excluded_by_witness,0.05,-0.09184650603278754,
+Mexico City,3,pm25|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,pm25|research_he_density|public_transport_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,pm25|research_he_density|travel,excluded_by_witness,0.05,-0.09184650603278754,
+Mexico City,3,pm25|research_he_density|public_pool_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,pm25|public_transport_density|travel,excluded_by_witness,0.05,-6.189034813465987,
+Mexico City,3,pm25|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.593478141254565,
+Mexico City,3,pm25|travel|public_pool_density,excluded_by_witness,0.05,-6.189034813465987,
+Mexico City,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,upper_secondary_ptr|research_he_density|travel,excluded_by_witness,0.05,-0.09184650603278754,
+Mexico City,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-0.5547696582103683,
+Mexico City,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-6.189034813465987,
+Mexico City,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.593478141254565,
+Mexico City,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-6.189034813465987,
+Mexico City,3,research_he_density|public_transport_density|travel,excluded_by_witness,0.05,-6.189034813465987,
+Mexico City,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.593478141254565,
+Mexico City,3,research_he_density|travel|public_pool_density,excluded_by_witness,0.05,-6.189034813465987,
+Mexico City,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-12.901589852302052,
+Bogota,0,,excluded_by_witness,0.05,-15.503311352741896,
+Bogota,1,homicide_rate,excluded_by_witness,0.05,-6.876195593425351,
+Bogota,1,upper_secondary_ptr,excluded_by_witness,0.05,-6.876195593425351,
+Bogota,1,research_he_density,excluded_by_witness,0.05,-6.876195593425351,
+Bogota,1,public_transport_density,excluded_by_witness,0.05,-13.505493823846543,
+Bogota,1,travel,excluded_by_witness,0.05,-6.876195593425351,
+Bogota,1,public_pool_density,excluded_by_witness,0.05,-13.505493823846543,
+Bogota,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.1,-0.2692062657156242,
+Bogota,2,homicide_rate|research_he_density,excluded_by_witness,0.1,-0.2692062657156242,
+Bogota,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-5.248272961533559,
+Bogota,2,homicide_rate|travel,excluded_by_witness,0.1,-0.2692062657156242,
+Bogota,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-5.248272961533559,
+Bogota,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.1,-0.2692062657156242,
+Bogota,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-5.248272961533559,
+Bogota,2,upper_secondary_ptr|travel,excluded_by_witness,0.1,-0.2692062657156242,
+Bogota,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-5.248272961533559,
+Bogota,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-5.248272961533559,
+Bogota,2,research_he_density|travel,excluded_by_witness,0.1,-0.2692062657156242,
+Bogota,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-5.248272961533559,
+Bogota,2,public_transport_density|travel,excluded_by_witness,0.05,-5.248272961533559,
+Bogota,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-11.626975410780553,
+Bogota,2,travel|public_pool_density,excluded_by_witness,0.05,-5.248272961533559,
+Bogota,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,1.890369973892625
+Bogota,3,homicide_rate|upper_secondary_ptr|public_transport_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,1.890369973892625
+Bogota,3,homicide_rate|upper_secondary_ptr|public_pool_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,homicide_rate|research_he_density|travel,certified_outer_box,,,1.890369973892625
+Bogota,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,1.0129146378797955
+Bogota,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.652775468610635,
+Bogota,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,1.890369973892625
+Bogota,3,upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,1.0129146378797955
+Bogota,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.652775468610635,
+Bogota,3,upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,research_he_density|public_transport_density|travel,certified_outer_box,,,1.0129146378797955
+Bogota,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.652775468610635,
+Bogota,3,research_he_density|travel|public_pool_density,certified_outer_box,,,1.0129146378797955
+Bogota,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-3.652775468610635,
+Sao Paulo,0,,excluded_by_witness,0.05,-14.10984635230544,
+Sao Paulo,1,homicide_rate,excluded_by_witness,0.05,-5.185264495127107,
+Sao Paulo,1,upper_secondary_ptr,excluded_by_witness,0.05,-5.185264495127107,
+Sao Paulo,1,research_he_density,excluded_by_witness,0.05,-5.185264495127107,
+Sao Paulo,1,public_transport_density,excluded_by_witness,0.05,-12.061500072161643,
+Sao Paulo,1,travel,excluded_by_witness,0.05,-12.454413056418659,
+Sao Paulo,1,public_pool_density,excluded_by_witness,0.05,-12.06150007216165,
+Sao Paulo,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.2,-0.5835674204789569,
+Sao Paulo,2,homicide_rate|research_he_density,excluded_by_witness,0.2,-0.5835674204789569,
+Sao Paulo,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-3.474697611053216,
+Sao Paulo,2,homicide_rate|travel,excluded_by_witness,0.05,-3.8295452460323034,
+Sao Paulo,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-3.474697611053216,
+Sao Paulo,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.2,-0.5835674204789569,
+Sao Paulo,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-3.474697611053216,
+Sao Paulo,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-3.8295452460323034,
+Sao Paulo,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-3.474697611053216,
+Sao Paulo,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-3.474697611053216,
+Sao Paulo,2,research_he_density|travel,excluded_by_witness,0.05,-3.8295452460323034,
+Sao Paulo,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-3.474697611053216,
+Sao Paulo,2,public_transport_density|travel,excluded_by_witness,0.05,-10.504000940528876,
+Sao Paulo,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-10.126021837245574,
+Sao Paulo,2,travel|public_pool_density,excluded_by_witness,0.05,-10.504000940528876,
+Sao Paulo,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,1.6083448864323273
+Sao Paulo,3,homicide_rate|upper_secondary_ptr|public_transport_density,certified_outer_box,,,1.6083448864323273
+Sao Paulo,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,0.1416313831832383
+Sao Paulo,3,homicide_rate|upper_secondary_ptr|public_pool_density,certified_outer_box,,,1.6083448864323202
+Sao Paulo,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,1.6083448864323273
+Sao Paulo,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.1416313831832383
+Sao Paulo,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,1.6083448864323202
+Sao Paulo,3,homicide_rate|public_transport_density|travel,excluded_by_witness,0.05,-2.1431448613646324,
+Sao Paulo,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.7879445481394285,
+Sao Paulo,3,homicide_rate|travel|public_pool_density,excluded_by_witness,0.05,-2.1431448613646324,
+Sao Paulo,3,upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,1.6083448864323202
+Sao Paulo,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.1416313831832383
+Sao Paulo,3,upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,1.6083448864323202
+Sao Paulo,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-2.1431448613646324,
+Sao Paulo,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.7879445481394285,
+Sao Paulo,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-2.1431448613646182,
+Sao Paulo,3,research_he_density|public_transport_density|travel,excluded_by_witness,0.05,-2.1431448613646324,
+Sao Paulo,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.7879445481394285,
+Sao Paulo,3,research_he_density|travel|public_pool_density,excluded_by_witness,0.05,-2.1431448613646182,
+Sao Paulo,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-8.643777809123883,
+Santiago,0,,excluded_by_witness,0.05,-16.24286684265777,
+Santiago,1,homicide_rate,excluded_by_witness,0.05,-7.456433665671035,
+Santiago,1,upper_secondary_ptr,excluded_by_witness,0.05,-7.456433665671028,
+Santiago,1,research_he_density,excluded_by_witness,0.05,-7.456433665671028,
+Santiago,1,public_transport_density,excluded_by_witness,0.05,-14.193818178103008,
+Santiago,1,travel,excluded_by_witness,0.05,-7.456433665671035,
+Santiago,1,public_pool_density,excluded_by_witness,0.05,-14.193818178103008,
+Santiago,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.1,-0.7781730700173526,
+Santiago,2,homicide_rate|research_he_density,excluded_by_witness,0.1,-0.7781730700173526,
+Santiago,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-5.81360689689874,
+Santiago,2,homicide_rate|travel,excluded_by_witness,0.1,-0.7781730700173526,
+Santiago,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-5.81360689689874,
+Santiago,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.1,-0.7781730700173526,
+Santiago,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-5.813606896898747,
+Santiago,2,upper_secondary_ptr|travel,excluded_by_witness,0.1,-0.7781730700173526,
+Santiago,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-5.81360689689874,
+Santiago,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-5.813606896898747,
+Santiago,2,research_he_density|travel,excluded_by_witness,0.1,-0.7781730700173526,
+Santiago,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-5.81360689689874,
+Santiago,2,public_transport_density|travel,excluded_by_witness,0.05,-5.813606896898747,
+Santiago,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-12.275910436714781,
+Santiago,2,travel|public_pool_density,excluded_by_witness,0.05,-5.813606896898747,
+Santiago,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,1.4498254839228437
+Santiago,3,homicide_rate|upper_secondary_ptr|public_transport_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,1.4498254839228437
+Santiago,3,homicide_rate|upper_secondary_ptr|public_pool_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,homicide_rate|research_he_density|travel,certified_outer_box,,,1.4498254839228437
+Santiago,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,0.5215653769136424
+Santiago,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-4.207270435590182,
+Santiago,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,1.4498254839228437
+Santiago,3,upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,0.5215653769136424
+Santiago,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-4.207270435590189,
+Santiago,3,upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,research_he_density|public_transport_density|travel,certified_outer_box,,,0.5215653769136424
+Santiago,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-4.207270435590189,
+Santiago,3,research_he_density|travel|public_pool_density,certified_outer_box,,,0.5215653769136424
+Santiago,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-4.207270435590189,
+Copenhagen,0,,excluded_by_witness,0.05,-11.803597620713568,
+Copenhagen,1,homicide_rate,excluded_by_witness,0.05,-3.3968351140526423,
+Copenhagen,1,upper_secondary_ptr,excluded_by_witness,0.05,-3.3968351140526423,
+Copenhagen,1,research_he_density,excluded_by_witness,0.05,-3.3968351140526423,
+Copenhagen,1,public_transport_density,excluded_by_witness,0.05,-9.889736093337177,
+Copenhagen,1,travel,excluded_by_witness,0.05,-3.3968351140526423,
+Copenhagen,1,public_pool_density,excluded_by_witness,0.05,-9.889736093337177,
+Copenhagen,2,homicide_rate|upper_secondary_ptr,certified_outer_box,,,0.31496959605478736
+Copenhagen,2,homicide_rate|research_he_density,certified_outer_box,,,0.31496959605478736
+Copenhagen,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-1.7723023307319252,
+Copenhagen,2,homicide_rate|travel,certified_outer_box,,,0.31496959605478736
+Copenhagen,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-1.7723023307319252,
+Copenhagen,2,upper_secondary_ptr|research_he_density,certified_outer_box,,,0.31496959605478736
+Copenhagen,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-1.7723023307319252,
+Copenhagen,2,upper_secondary_ptr|travel,certified_outer_box,,,0.31496959605478736
+Copenhagen,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-1.7723023307319252,
+Copenhagen,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-1.7723023307319252,
+Copenhagen,2,research_he_density|travel,certified_outer_box,,,0.31496959605478736
+Copenhagen,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-1.7723023307319252,
+Copenhagen,2,public_transport_density|travel,excluded_by_witness,0.05,-1.7723023307319252,
+Copenhagen,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-8.070930162755104,
+Copenhagen,2,travel|public_pool_density,excluded_by_witness,0.05,-1.7723023307319252,
+London,0,,excluded_by_witness,0.05,-18.393435194904292,
+London,1,homicide_rate,excluded_by_witness,0.05,-8.796596014356183,
+London,1,upper_secondary_ptr,excluded_by_witness,0.05,-8.796596014356183,
+London,1,research_he_density,excluded_by_witness,0.05,-8.796596014356183,
+London,1,public_transport_density,excluded_by_witness,0.05,-16.099427456910846,
+London,1,travel,excluded_by_witness,0.05,-8.796596014356183,
+London,1,public_pool_density,excluded_by_witness,0.05,-16.099427456910846,
+London,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-0.8587592742680457,
+London,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-0.8587592742680457,
+London,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-7.055074156537643,
+London,2,homicide_rate|travel,excluded_by_witness,0.05,-0.8587592742680457,
+London,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-7.055074156537643,
+London,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-0.8587592742680457,
+London,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-7.055074156537643,
+London,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-0.8587592742680457,
+London,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-7.055074156537643,
+London,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-7.055074156537643,
+London,2,research_he_density|travel,excluded_by_witness,0.05,-0.8587592742680457,
+London,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-7.055074156537643,
+London,2,public_transport_density|travel,excluded_by_witness,0.05,-7.055074156537643,
+London,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-13.988258552619193,
+London,2,travel|public_pool_density,excluded_by_witness,0.05,-7.055074156537643,
+London,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.7067072154339371
+London,3,homicide_rate|upper_secondary_ptr|public_transport_density,certified_outer_box,,,0.22881470584500363
+London,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,0.7067072154339371
+London,3,homicide_rate|upper_secondary_ptr|public_pool_density,certified_outer_box,,,0.22881470584501074
+London,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,0.22881470584500363
+London,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.7067072154339371
+London,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,0.22881470584501074
+London,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,0.22881470584500363
+London,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-5.362970198582289,
+London,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,0.22881470584501074
+London,3,upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,0.22881470584500363
+London,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.7067072154339371
+London,3,upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,0.22881470584501074
+London,3,upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,0.22881470584500363
+London,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-5.362970198582289,
+London,3,upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,0.22881470584501074
+London,3,research_he_density|public_transport_density|travel,certified_outer_box,,,0.22881470584500363
+London,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-5.362970198582289,
+London,3,research_he_density|travel|public_pool_density,certified_outer_box,,,0.22881470584501074
+London,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-5.362970198582289,
+Barcelona,0,,excluded_by_witness,0.05,-14.810851499085274,
+Barcelona,1,homicide_rate,excluded_by_witness,0.05,-6.136841264873794,
+Barcelona,1,upper_secondary_ptr,excluded_by_witness,0.05,-6.136841264873794,
+Barcelona,1,research_he_density,excluded_by_witness,0.05,-6.136841264873794,
+Barcelona,1,public_transport_density,excluded_by_witness,0.05,-12.812249056714244,
+Barcelona,1,travel,excluded_by_witness,0.05,-6.136841264873794,
+Barcelona,1,public_pool_density,excluded_by_witness,0.05,-12.81224905671425,
+Barcelona,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.2,-1.4211276462363855,
+Barcelona,2,homicide_rate|research_he_density,excluded_by_witness,0.2,-1.4211276462363855,
+Barcelona,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-4.487191116323267,
+Barcelona,2,homicide_rate|travel,excluded_by_witness,0.2,-1.4211276462363855,
+Barcelona,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-4.487191116323267,
+Barcelona,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.2,-1.4211276462363855,
+Barcelona,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-4.487191116323267,
+Barcelona,2,upper_secondary_ptr|travel,excluded_by_witness,0.2,-1.4211276462363855,
+Barcelona,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-4.487191116323267,
+Barcelona,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-4.487191116323267,
+Barcelona,2,research_he_density|travel,excluded_by_witness,0.2,-1.4211276462363855,
+Barcelona,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-4.487191116323267,
+Barcelona,2,public_transport_density|travel,excluded_by_witness,0.05,-4.487191116323267,
+Barcelona,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-10.927395748094185,
+Barcelona,2,travel|public_pool_density,excluded_by_witness,0.05,-4.487191116323267,
+Barcelona,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,homicide_rate|upper_secondary_ptr|public_transport_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,0.5307337639636529
+Barcelona,3,homicide_rate|upper_secondary_ptr|public_pool_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.5307337639636529
+Barcelona,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,0.5307337639636529
+Barcelona,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-2.866079170653485,
+Barcelona,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.5307337639636529
+Barcelona,3,upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,0.5307337639636529
+Barcelona,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-2.866079170653485,
+Barcelona,3,upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,research_he_density|public_transport_density|travel,certified_outer_box,,,0.5307337639636529
+Barcelona,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-2.866079170653485,
+Barcelona,3,research_he_density|travel|public_pool_density,certified_outer_box,,,0.5307337639636529
+Barcelona,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-2.866079170653485,
+Warsaw,0,,excluded_by_witness,0.05,-15.659706394260539,
+Warsaw,1,homicide_rate,excluded_by_witness,0.05,-6.809700322509521,
+Warsaw,1,upper_secondary_ptr,excluded_by_witness,0.05,-11.893296674285374,
+Warsaw,1,research_he_density,excluded_by_witness,0.05,-6.809700322509521,
+Warsaw,1,public_transport_density,excluded_by_witness,0.05,-13.604255772408791,
+Warsaw,1,travel,excluded_by_witness,0.05,-6.809700322509528,
+Warsaw,1,public_pool_density,excluded_by_witness,0.05,-13.604255772408791,
+Warsaw,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-3.068961504950387,
+Warsaw,2,homicide_rate|research_he_density,excluded_by_witness,0.1,-0.07971825361843088,
+Warsaw,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-5.144119557007741,
+Warsaw,2,homicide_rate|travel,excluded_by_witness,0.1,-0.07971825361843088,
+Warsaw,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-5.144119557007741,
+Warsaw,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-3.068961504950387,
+Warsaw,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-9.904829369125416,
+Warsaw,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-3.068961504950387,
+Warsaw,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-9.904829369125416,
+Warsaw,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-5.144119557007734,
+Warsaw,2,research_he_density|travel,excluded_by_witness,0.1,-0.07971825361842377,
+Warsaw,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-5.144119557007734,
+Warsaw,2,public_transport_density|travel,excluded_by_witness,0.05,-5.144119557007734,
+Warsaw,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-11.675728774124572,
+Warsaw,2,travel|public_pool_density,excluded_by_witness,0.05,-5.144119557007734,
+Warsaw,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.08508060674001428
+Warsaw,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-1.331532626542291,
+Warsaw,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,0.08508060674001428
+Warsaw,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-1.331532626542284,
+Warsaw,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,0.015699236498747382
+Warsaw,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.015699236498747382
+Warsaw,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,0.015699236498754487
+Warsaw,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,0.015699236498747382
+Warsaw,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.511807945722886,
+Warsaw,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,0.015699236498754487
+Warsaw,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-1.331532626542291,
+Warsaw,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.08508060674001428
+Warsaw,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-1.331532626542291,
+Warsaw,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-1.331532626542291,
+Warsaw,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-8.005008771427683,
+Warsaw,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-1.331532626542291,
+Warsaw,3,research_he_density|public_transport_density|travel,certified_outer_box,,,0.015699236498747382
+Warsaw,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.511807945722893,
+Warsaw,3,research_he_density|travel|public_pool_density,certified_outer_box,,,0.015699236498754487
+Warsaw,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-3.511807945722893,
+Athens,0,,excluded_by_witness,0.05,-18.227386965499925,
+Athens,1,homicide_rate,excluded_by_witness,0.05,-8.66432089779174,
+Athens,1,upper_secondary_ptr,excluded_by_witness,0.05,-8.66432089779174,
+Athens,1,research_he_density,excluded_by_witness,0.05,-8.66432089779174,
+Athens,1,public_transport_density,excluded_by_witness,0.05,-15.945386213286298,
+Athens,1,travel,excluded_by_witness,0.05,-8.66432089779174,
+Athens,1,public_pool_density,excluded_by_witness,0.05,-15.945386213286298,
+Athens,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-0.7289157923399898,
+Athens,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-0.7289157923399898,
+Athens,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-6.925035350936952,
+Athens,2,homicide_rate|travel,excluded_by_witness,0.05,-0.7289157923399898,
+Athens,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-6.925035350936952,
+Athens,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-0.7289157923399898,
+Athens,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-6.925035350936952,
+Athens,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-0.7289157923399898,
+Athens,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-6.925035350936952,
+Athens,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-6.925035350936952,
+Athens,2,research_he_density|travel,excluded_by_witness,0.05,-0.7289157923399898,
+Athens,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-6.925035350936952,
+Athens,2,public_transport_density|travel,excluded_by_witness,0.05,-6.925035350936952,
+Athens,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-13.842828743359298,
+Athens,2,travel|public_pool_density,excluded_by_witness,0.05,-6.925035350936952,
+Athens,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.812542558497185
+Athens,3,homicide_rate|upper_secondary_ptr|public_transport_density,certified_outer_box,,,0.3538492142231604
+Athens,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,0.812542558497185
+Athens,3,homicide_rate|upper_secondary_ptr|public_pool_density,certified_outer_box,,,0.3538492142231604
+Athens,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,0.3538492142231604
+Athens,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.812542558497185
+Athens,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,0.3538492142231604
+Athens,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,0.3538492142231604
+Athens,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-5.234164704631226,
+Athens,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,0.3538492142231604
+Athens,3,upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,0.3538492142231604
+Athens,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.812542558497185
+Athens,3,upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,0.3538492142231604
+Athens,3,upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,0.3538492142231604
+Athens,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-5.234164704631226,
+Athens,3,upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,0.3538492142231604
+Athens,3,research_he_density|public_transport_density|travel,certified_outer_box,,,0.3538492142231604
+Athens,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-5.234164704631226,
+Athens,3,research_he_density|travel|public_pool_density,certified_outer_box,,,0.3538492142231604
+Athens,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-5.234164704631226,
+Nairobi,0,,excluded_by_witness,0.05,-19.92555086975718,
+Nairobi,1,homicide_rate,excluded_by_witness,0.05,-10.20368612665267,
+Nairobi,1,upper_secondary_ptr,excluded_by_witness,0.05,-10.20368612665267,
+Nairobi,1,research_he_density,excluded_by_witness,0.05,-10.20368612665267,
+Nairobi,1,public_transport_density,excluded_by_witness,0.05,-17.56818593135965,
+Nairobi,1,travel,excluded_by_witness,0.05,-10.20368612665267,
+Nairobi,1,public_pool_density,excluded_by_witness,0.05,-17.56818593135965,
+Nairobi,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-2.39687844941362,
+Nairobi,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-2.39687844941362,
+Nairobi,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-8.473930871622542,
+Nairobi,2,homicide_rate|travel,excluded_by_witness,0.05,-2.39687844941362,
+Nairobi,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-8.473930871622542,
+Nairobi,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-2.39687844941362,
+Nairobi,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-8.47393087162255,
+Nairobi,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-2.39687844941362,
+Nairobi,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-8.473930871622542,
+Nairobi,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-8.47393087162255,
+Nairobi,2,research_he_density|travel,excluded_by_witness,0.05,-2.39687844941362,
+Nairobi,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-8.473930871622542,
+Nairobi,2,public_transport_density|travel,excluded_by_witness,0.05,-8.47393087162255,
+Nairobi,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-15.419154655535586,
+Nairobi,2,travel|public_pool_density,excluded_by_witness,0.05,-8.473930871622542,
+Nairobi,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.46859140543921995
+Nairobi,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,0.46859140543921995
+Nairobi,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,homicide_rate|research_he_density|public_transport_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.46859140543921995
+Nairobi,3,homicide_rate|research_he_density|public_pool_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,homicide_rate|public_transport_density|travel,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.802319842679701,
+Nairobi,3,homicide_rate|travel|public_pool_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.46859140543921995
+Nairobi,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.802319842679701,
+Nairobi,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,research_he_density|public_transport_density|travel,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.802319842679701,
+Nairobi,3,research_he_density|travel|public_pool_density,excluded_by_witness,0.05,-0.832191757711108,
+Nairobi,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-6.802319842679701,
+Lagos,0,,excluded_by_witness,0.05,-23.376639200206576,
+Lagos,1,homicide_rate,excluded_by_witness,0.05,-12.763804038565624,
+Lagos,1,upper_secondary_ptr,excluded_by_witness,0.05,-12.763804038565624,
+Lagos,1,research_he_density,excluded_by_witness,0.05,-12.763804038565624,
+Lagos,1,public_transport_density,excluded_by_witness,0.05,-20.69474846877703,
+Lagos,1,travel,excluded_by_witness,0.05,-12.763804038565624,
+Lagos,1,public_pool_density,excluded_by_witness,0.05,-20.69474846877703,
+Lagos,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-4.821537069250674,
+Lagos,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-4.821537069250674,
+Lagos,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-10.970137263374824,
+Lagos,2,homicide_rate|travel,excluded_by_witness,0.05,-4.821537069250674,
+Lagos,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-10.970137263374824,
+Lagos,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-4.821537069250674,
+Lagos,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-10.970137263374824,
+Lagos,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-4.821537069250674,
+Lagos,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-10.970137263374824,
+Lagos,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-10.970137263374824,
+Lagos,2,research_he_density|travel,excluded_by_witness,0.05,-4.821537069250674,
+Lagos,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-10.970137263374824,
+Lagos,2,public_transport_density|travel,excluded_by_witness,0.05,-10.970137263374824,
+Lagos,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-18.321081590151643,
+Lagos,2,travel|public_pool_density,excluded_by_witness,0.05,-10.970137263374824,
+Lagos,3,homicide_rate|upper_secondary_ptr|research_he_density,excluded_by_witness,0.2,-0.47256752411448844,
+Lagos,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,homicide_rate|upper_secondary_ptr|travel,excluded_by_witness,0.2,-0.47256752411448844,
+Lagos,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-3.2734805078680864,
+Lagos,3,homicide_rate|research_he_density|public_transport_density,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,homicide_rate|research_he_density|travel,excluded_by_witness,0.2,-0.47256752411448844,
+Lagos,3,homicide_rate|research_he_density|public_pool_density,excluded_by_witness,0.05,-3.2734805078680864,
+Lagos,3,homicide_rate|public_transport_density|travel,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-9.25618904913825,
+Lagos,3,homicide_rate|travel|public_pool_density,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,upper_secondary_ptr|research_he_density|travel,excluded_by_witness,0.2,-0.47256752411448844,
+Lagos,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-9.25618904913825,
+Lagos,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,research_he_density|public_transport_density|travel,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-9.25618904913825,
+Lagos,3,research_he_density|travel|public_pool_density,excluded_by_witness,0.05,-3.2734805078680935,
+Lagos,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-9.25618904913825,
+Lagos,4,homicide_rate|upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,1.2349876442884593
+Lagos,4,homicide_rate|upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,1.2349876442884593
+Lagos,4,homicide_rate|upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,1.2349876442884522
+Lagos,4,homicide_rate|upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,1.2349876442884593
+Lagos,4,homicide_rate|upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.7438226694324115,
+Lagos,4,homicide_rate|upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,1.2349876442884522
+Lagos,4,homicide_rate|research_he_density|public_transport_density|travel,certified_outer_box,,,1.2349876442884593
+Lagos,4,homicide_rate|research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.7438226694324115,
+Lagos,4,homicide_rate|research_he_density|travel|public_pool_density,certified_outer_box,,,1.2349876442884522
+Lagos,4,homicide_rate|public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-1.7438226694324115,
+Lagos,4,upper_secondary_ptr|research_he_density|public_transport_density|travel,certified_outer_box,,,1.2349876442884522
+Lagos,4,upper_secondary_ptr|research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.7438226694324115,
+Lagos,4,upper_secondary_ptr|research_he_density|travel|public_pool_density,certified_outer_box,,,1.2349876442884522
+Lagos,4,upper_secondary_ptr|public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-1.7438226694324044,
+Lagos,4,research_he_density|public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-1.7438226694324044,
+Cape Town,0,,excluded_by_witness,0.05,-13.411408682638474,
+Cape Town,1,homicide_rate,excluded_by_witness,0.05,-4.452389112658466,
+Cape Town,1,upper_secondary_ptr,excluded_by_witness,0.05,-4.452389112658466,
+Cape Town,1,research_he_density,excluded_by_witness,0.05,-4.452389112658466,
+Cape Town,1,public_transport_density,excluded_by_witness,0.05,-11.366313496592582,
+Cape Town,1,travel,excluded_by_witness,0.05,-9.509375603281995,
+Cape Town,1,public_pool_density,excluded_by_witness,0.05,-11.366313496592582,
+Cape Town,2,homicide_rate|upper_secondary_ptr,certified_outer_box,,,0.0010212297256373404
+Cape Town,2,homicide_rate|research_he_density,certified_outer_box,,,0.0010212297256373404
+Cape Town,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-2.7206647586993142,
+Cape Town,2,homicide_rate|travel,excluded_by_witness,0.05,-1.2531664637690128,
+Cape Town,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-2.7206647586993,
+Cape Town,2,upper_secondary_ptr|research_he_density,certified_outer_box,,,0.0010212297256373404
+Cape Town,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-2.7206647586993142,
+Cape Town,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-1.2531664637689985,
+Cape Town,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-2.7206647586993,
+Cape Town,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-2.7206647586993142,
+Cape Town,2,research_he_density|travel,excluded_by_witness,0.05,-1.2531664637689985,
+Cape Town,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-2.7206647586993,
+Cape Town,2,public_transport_density|travel,excluded_by_witness,0.05,-7.686941483234811,
+Cape Town,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-9.427718695693805,
+Cape Town,2,travel|public_pool_density,excluded_by_witness,0.05,-7.686941483234811,
+Dubai,0,,excluded_by_witness,0.05,-15.596041023773182,
+Dubai,1,homicide_rate,excluded_by_witness,0.05,-6.892587920401326,
+Dubai,1,upper_secondary_ptr,excluded_by_witness,0.05,-6.892587920401326,
+Dubai,1,research_he_density,excluded_by_witness,0.05,-6.892587920401326,
+Dubai,1,public_transport_density,excluded_by_witness,0.05,-13.577910133986926,
+Dubai,1,travel,excluded_by_witness,0.05,-6.892587920401326,
+Dubai,1,public_pool_density,excluded_by_witness,0.05,-13.577910133986933,
+Dubai,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.1,-0.24436561491862818,
+Dubai,2,homicide_rate|research_he_density,excluded_by_witness,0.1,-0.24436561491862818,
+Dubai,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-5.2524885933253955,
+Dubai,2,homicide_rate|travel,excluded_by_witness,0.1,-0.24436561491862818,
+Dubai,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-5.252488593325381,
+Dubai,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.1,-0.24436561491862818,
+Dubai,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-5.2524885933253955,
+Dubai,2,upper_secondary_ptr|travel,excluded_by_witness,0.1,-0.24436561491862818,
+Dubai,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-5.252488593325381,
+Dubai,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-5.2524885933253955,
+Dubai,2,research_he_density|travel,excluded_by_witness,0.1,-0.24436561491862818,
+Dubai,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-5.252488593325381,
+Dubai,2,public_transport_density|travel,excluded_by_witness,0.05,-5.2524885933253955,
+Dubai,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-11.682045682004926,
+Dubai,2,travel|public_pool_density,excluded_by_witness,0.05,-5.252488593325381,
+Dubai,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,1.9285958771388323
+Dubai,3,homicide_rate|upper_secondary_ptr|public_transport_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,1.9285958771388323
+Dubai,3,homicide_rate|upper_secondary_ptr|public_pool_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,homicide_rate|research_he_density|travel,certified_outer_box,,,1.9285958771388323
+Dubai,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,1.0569811931825157
+Dubai,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.645322975301667,
+Dubai,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,upper_secondary_ptr|research_he_density|public_transport_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,1.9285958771388323
+Dubai,3,upper_secondary_ptr|research_he_density|public_pool_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,1.0569811931825157
+Dubai,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.645322975301667,
+Dubai,3,upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,research_he_density|public_transport_density|travel,certified_outer_box,,,1.0569811931825157
+Dubai,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.645322975301667,
+Dubai,3,research_he_density|travel|public_pool_density,certified_outer_box,,,1.0569811931825157
+Dubai,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-3.645322975301667,
+Istanbul,0,,excluded_by_witness,0.05,-16.53056373990708,
+Istanbul,1,homicide_rate,excluded_by_witness,0.05,-12.232093371363923,
+Istanbul,1,upper_secondary_ptr,excluded_by_witness,0.05,-14.61947917144272,
+Istanbul,1,public_transport_density,excluded_by_witness,0.05,-14.141923271821192,
+Istanbul,1,travel,excluded_by_witness,0.05,-6.418019250070145,
+Istanbul,1,public_pool_density,excluded_by_witness,0.05,-14.141923271821184,
+Istanbul,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-10.377681234217434,
+Istanbul,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-9.941449157242872,
+Istanbul,2,homicide_rate|travel,excluded_by_witness,0.05,-2.1467794042751933,
+Istanbul,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-9.941449157242872,
+Istanbul,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-12.361533287171703,
+Istanbul,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-4.872817461199723,
+Istanbul,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-12.36153328717171,
+Istanbul,2,public_transport_density|travel,excluded_by_witness,0.05,-4.5423495858013965,
+Istanbul,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-11.929184920084651,
+Istanbul,2,travel|public_pool_density,excluded_by_witness,0.05,-4.542349585801389,
+Istanbul,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-8.170152224652767,
+Istanbul,3,homicide_rate|upper_secondary_ptr|travel,excluded_by_witness,0.05,-0.48678499001151465,
+Istanbul,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-8.170152224652767,
+Istanbul,3,homicide_rate|public_transport_density|travel,excluded_by_witness,0.05,-0.1632054510157488,
+Istanbul,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-7.768131131451241,
+Istanbul,3,homicide_rate|travel|public_pool_density,excluded_by_witness,0.05,-0.1632054510157488,
+Istanbul,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-3.0178878052001537,
+Istanbul,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-10.243143336976793,
+Istanbul,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-3.0178878052001537,
+Istanbul,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-2.703946798382674,
+Istanbul,4,homicide_rate|upper_secondary_ptr|public_transport_density|travel,certified_outer_box,,,0.3385377956464737
+Istanbul,4,homicide_rate|upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.053349463520057,
+Istanbul,4,homicide_rate|upper_secondary_ptr|travel|public_pool_density,certified_outer_box,,,0.3385377956464737
+Istanbul,4,homicide_rate|public_transport_density|travel|public_pool_density,certified_outer_box,,,0.8358656620818934
+Istanbul,4,upper_secondary_ptr|public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-1.1872771902123205,
+Mumbai,0,,excluded_by_witness,0.05,-21.740456068115613,
+Mumbai,1,homicide_rate,excluded_by_witness,0.05,-11.609316008639588,
+Mumbai,1,upper_secondary_ptr,excluded_by_witness,0.05,-11.609316008639588,
+Mumbai,1,research_he_density,excluded_by_witness,0.05,-11.609316008639588,
+Mumbai,1,public_transport_density,excluded_by_witness,0.05,-19.233124826853164,
+Mumbai,1,travel,excluded_by_witness,0.05,-11.609316008639588,
+Mumbai,1,public_pool_density,excluded_by_witness,0.05,-19.233124826853164,
+Mumbai,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-3.7631263728231303,
+Mumbai,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-3.7631263728231303,
+Mumbai,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-9.852901975613555,
+Mumbai,2,homicide_rate|travel,excluded_by_witness,0.05,-3.7631263728231303,
+Mumbai,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-9.852901975613555,
+Mumbai,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-3.7631263728231374,
+Mumbai,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-9.852901975613563,
+Mumbai,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-3.7631263728231374,
+Mumbai,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-9.852901975613555,
+Mumbai,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-9.852901975613563,
+Mumbai,2,research_he_density|travel,excluded_by_witness,0.05,-3.7631263728231374,
+Mumbai,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-9.852901975613555,
+Mumbai,2,public_transport_density|travel,excluded_by_witness,0.05,-9.852901975613563,
+Mumbai,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-16.979906888758123,
+Mumbai,2,travel|public_pool_density,excluded_by_witness,0.05,-9.852901975613555,
+Mumbai,3,homicide_rate|upper_secondary_ptr|research_he_density,certified_outer_box,,,0.10688844575999923
+Mumbai,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,homicide_rate|upper_secondary_ptr|travel,certified_outer_box,,,0.10688844575999923
+Mumbai,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,homicide_rate|research_he_density|public_transport_density,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.10688844575999923
+Mumbai,3,homicide_rate|research_he_density|public_pool_density,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,homicide_rate|public_transport_density|travel,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-8.165637392967355,
+Mumbai,3,homicide_rate|travel|public_pool_density,excluded_by_witness,0.05,-2.2143974047184827,
+Mumbai,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,upper_secondary_ptr|research_he_density|travel,certified_outer_box,,,0.10688844575999923
+Mumbai,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-8.165637392967362,
+Mumbai,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,research_he_density|public_transport_density|travel,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-8.165637392967362,
+Mumbai,3,research_he_density|travel|public_pool_density,excluded_by_witness,0.05,-2.2143974047184756,
+Mumbai,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-8.165637392967362,
+Delhi,0,,excluded_by_witness,0.05,-16.190056267940975,
+Delhi,1,homicide_rate,excluded_by_witness,0.05,-7.007663080967667,
+Delhi,1,research_he_density,excluded_by_witness,0.05,-7.007663080967667,
+Delhi,1,public_transport_density,excluded_by_witness,0.05,-14.042755112377094,
+Delhi,1,travel,excluded_by_witness,0.05,-7.007663080967667,
+Delhi,1,public_pool_density,excluded_by_witness,0.05,-14.042755112377094,
+Delhi,2,homicide_rate|research_he_density,excluded_by_witness,0.1,-0.10542792822553793,
+Delhi,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-5.292481446450942,
+Delhi,2,homicide_rate|travel,excluded_by_witness,0.1,-0.10542792822553793,
+Delhi,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-5.292481446450935,
+Delhi,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-5.292481446450942,
+Delhi,2,research_he_density|travel,excluded_by_witness,0.1,-0.10542792822553082,
+Delhi,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-5.292481446450935,
+Delhi,2,public_transport_density|travel,excluded_by_witness,0.05,-5.292481446450942,
+Delhi,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-12.037673840983423,
+Delhi,2,travel|public_pool_density,excluded_by_witness,0.05,-5.292481446450935,
+Delhi,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,0.05547558535369035
+Delhi,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.05547558535369035
+Delhi,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,0.05547558535369035
+Delhi,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,0.05547558535369035
+Delhi,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.613557753550012,
+Delhi,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,0.05547558535369035
+Delhi,3,research_he_density|public_transport_density|travel,certified_outer_box,,,0.05547558535369035
+Delhi,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-3.613557753550012,
+Delhi,3,research_he_density|travel|public_pool_density,certified_outer_box,,,0.05547558535367614
+Delhi,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-3.613557753550012,
+Dhaka,0,,excluded_by_witness,0.05,-20.193283050664697,
+Dhaka,1,homicide_rate,excluded_by_witness,0.05,-10.550267089007363,
+Dhaka,1,upper_secondary_ptr,excluded_by_witness,0.05,-15.298813300812029,
+Dhaka,1,research_he_density,excluded_by_witness,0.05,-10.550267089007363,
+Dhaka,1,public_transport_density,excluded_by_witness,0.05,-17.85169200437001,
+Dhaka,1,travel,excluded_by_witness,0.05,-10.550267089007363,
+Dhaka,1,public_pool_density,excluded_by_witness,0.05,-17.85169200437001,
+Dhaka,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-6.277322088260377,
+Dhaka,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-2.8436893114163624,
+Dhaka,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-8.839130184266303,
+Dhaka,2,homicide_rate|travel,excluded_by_witness,0.05,-2.8436893114163624,
+Dhaka,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-8.839130184266303,
+Dhaka,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-6.277322088260377,
+Dhaka,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-13.206915374619001,
+Dhaka,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-6.277322088260377,
+Dhaka,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-13.206915374619001,
+Dhaka,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-8.839130184266303,
+Dhaka,2,research_he_density|travel,excluded_by_witness,0.05,-2.8436893114163624,
+Dhaka,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-8.839130184266303,
+Dhaka,2,public_transport_density|travel,excluded_by_witness,0.05,-8.839130184266303,
+Dhaka,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-15.718732851639373,
+Dhaka,2,travel|public_pool_density,excluded_by_witness,0.05,-8.839130184266303,
+Dhaka,3,homicide_rate|upper_secondary_ptr|research_he_density,excluded_by_witness,0.2,-1.4674967616074568,
+Dhaka,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-4.573093101879735,
+Dhaka,3,homicide_rate|upper_secondary_ptr|travel,excluded_by_witness,0.2,-1.4674967616074568,
+Dhaka,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-4.573093101879735,
+Dhaka,3,homicide_rate|research_he_density|public_transport_density,excluded_by_witness,0.05,-1.3051267651233545,
+Dhaka,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.08184008863127445
+Dhaka,3,homicide_rate|research_he_density|public_pool_density,excluded_by_witness,0.05,-1.3051267651233474,
+Dhaka,3,homicide_rate|public_transport_density|travel,excluded_by_witness,0.05,-1.3051267651233545,
+Dhaka,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-7.187249742159253,
+Dhaka,3,homicide_rate|travel|public_pool_density,excluded_by_witness,0.05,-1.3051267651233474,
+Dhaka,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-4.573093101879735,
+Dhaka,3,upper_secondary_ptr|research_he_density|travel,excluded_by_witness,0.2,-1.4674967616074568,
+Dhaka,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-4.573093101879735,
+Dhaka,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-4.573093101879735,
+Dhaka,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-11.24283613203211,
+Dhaka,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-4.573093101879735,
+Dhaka,3,research_he_density|public_transport_density|travel,excluded_by_witness,0.05,-1.3051267651233545,
+Dhaka,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-7.187249742159253,
+Dhaka,3,research_he_density|travel|public_pool_density,excluded_by_witness,0.05,-1.3051267651233474,
+Dhaka,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-7.187249742159253,
+Tokyo,0,,excluded_by_witness,0.05,-8.233758292117933,
+Tokyo,1,homicide_rate,excluded_by_witness,0.1,-0.342044609570344,
+Tokyo,1,upper_secondary_ptr,excluded_by_witness,0.05,-8.166095184563275,
+Tokyo,1,research_he_density,excluded_by_witness,0.05,-3.2827009466289496,
+Tokyo,1,public_transport_density,excluded_by_witness,0.05,-6.23143777477285,
+Tokyo,1,travel,excluded_by_witness,0.1,-0.342044609570344,
+Tokyo,1,public_pool_density,excluded_by_witness,0.05,-6.23143777477285,
+Tokyo,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.1,-0.2840151795697423,
+Tokyo,2,homicide_rate|research_he_density,certified_outer_box,,,0.4402190459139632
+Tokyo,2,homicide_rate|public_transport_density,certified_outer_box,,,0.18885439215406308
+Tokyo,2,homicide_rate|travel,certified_outer_box,,,0.18885439215406308
+Tokyo,2,homicide_rate|public_pool_density,certified_outer_box,,,0.18885439215406308
+Tokyo,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-3.224423392210042,
+Tokyo,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-6.165957426545958,
+Tokyo,2,upper_secondary_ptr|travel,excluded_by_witness,0.1,-0.2840151795697281,
+Tokyo,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-6.165957426545958,
+Tokyo,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-1.5433784080705237,
+Tokyo,2,research_he_density|travel,certified_outer_box,,,0.4402190459139632
+Tokyo,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-1.5433784080705237,
+Tokyo,2,public_transport_density|travel,certified_outer_box,,,0.18885439215406308
+Tokyo,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-4.286856384340808,
+Tokyo,2,travel|public_pool_density,certified_outer_box,,,0.18885439215406308
+Shanghai,0,,excluded_by_witness,0.05,-13.543876112896726,
+Shanghai,1,homicide_rate,excluded_by_witness,0.05,-4.771026050928349,
+Shanghai,1,research_he_density,excluded_by_witness,0.05,-4.771026050928349,
+Shanghai,1,public_transport_density,excluded_by_witness,0.05,-11.541270369883058,
+Shanghai,1,travel,excluded_by_witness,0.05,-4.771026050928349,
+Shanghai,1,public_pool_density,excluded_by_witness,0.05,-11.541270369883051,
+Shanghai,2,homicide_rate|research_he_density,excluded_by_witness,0.2,-0.27078236049491977,
+Shanghai,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-3.077818612707844,
+Shanghai,2,homicide_rate|travel,excluded_by_witness,0.2,-0.27078236049491977,
+Shanghai,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-3.07781861270783,
+Shanghai,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-3.077818612707844,
+Shanghai,2,research_he_density|travel,excluded_by_witness,0.2,-0.27078236049491977,
+Shanghai,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-3.077818612707844,
+Shanghai,2,public_transport_density|travel,excluded_by_witness,0.05,-3.077818612707844,
+Shanghai,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-9.642347437902899,
+Shanghai,2,travel|public_pool_density,excluded_by_witness,0.05,-3.077818612707844,
+Shanghai,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,1.8918903984166064
+Shanghai,3,homicide_rate|research_he_density|travel,certified_outer_box,,,1.8918903984166064
+Shanghai,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,1.8918903984166064
+Shanghai,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,1.8918903984166064
+Shanghai,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.40529329904723,
+Shanghai,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,1.8918903984166064
+Shanghai,3,research_he_density|public_transport_density|travel,certified_outer_box,,,1.8918903984166207
+Shanghai,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-1.40529329904723,
+Shanghai,3,research_he_density|travel|public_pool_density,certified_outer_box,,,1.8918903984166064
+Shanghai,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-1.40529329904723,
+Singapore,0,,certified_outer_box,,,4.046628502818429
+Jakarta,0,,excluded_by_witness,0.05,-18.96940046310744,
+Jakarta,1,homicide_rate,excluded_by_witness,0.05,-9.402117683695948,
+Jakarta,1,upper_secondary_ptr,excluded_by_witness,0.05,-18.630469689394864,
+Jakarta,1,research_he_density,excluded_by_witness,0.05,-9.402117683695948,
+Jakarta,1,public_transport_density,excluded_by_witness,0.05,-16.671949840241332,
+Jakarta,1,travel,excluded_by_witness,0.05,-9.402117683695948,
+Jakarta,1,fixed_broadband_mbps,excluded_by_witness,0.05,-9.402117683695948,
+Jakarta,1,public_pool_density,excluded_by_witness,0.05,-16.67194984024134,
+Jakarta,2,homicide_rate|upper_secondary_ptr,excluded_by_witness,0.05,-9.149744475862462,
+Jakarta,2,homicide_rate|research_he_density,excluded_by_witness,0.05,-1.5756940057653068,
+Jakarta,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-7.677908178237139,
+Jakarta,2,homicide_rate|travel,excluded_by_witness,0.05,-1.5756940057653068,
+Jakarta,2,homicide_rate|fixed_broadband_mbps,excluded_by_witness,0.05,-1.5756940057653068,
+Jakarta,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-7.677908178237139,
+Jakarta,2,upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-9.149744475862477,
+Jakarta,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-16.362215053153065,
+Jakarta,2,upper_secondary_ptr|travel,excluded_by_witness,0.05,-9.149744475862477,
+Jakarta,2,upper_secondary_ptr|fixed_broadband_mbps,excluded_by_witness,0.05,-9.149744475862477,
+Jakarta,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-16.362215053153065,
+Jakarta,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-7.677908178237153,
+Jakarta,2,research_he_density|travel,excluded_by_witness,0.05,-1.5756940057653068,
+Jakarta,2,research_he_density|fixed_broadband_mbps,excluded_by_witness,0.05,-1.5756940057653068,
+Jakarta,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-7.677908178237153,
+Jakarta,2,public_transport_density|travel,excluded_by_witness,0.05,-7.677908178237153,
+Jakarta,2,public_transport_density|fixed_broadband_mbps,excluded_by_witness,0.05,-7.677908178237153,
+Jakarta,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-14.56370534403986,
+Jakarta,2,travel|fixed_broadband_mbps,excluded_by_witness,0.05,-1.5756940057653068,
+Jakarta,2,travel|public_pool_density,excluded_by_witness,0.05,-7.677908178237153,
+Jakarta,2,fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-7.677908178237153,
+Jakarta,3,homicide_rate|upper_secondary_ptr|research_he_density,excluded_by_witness,0.05,-1.3430263795459325,
+Jakarta,3,homicide_rate|upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-7.4331029081128435,
+Jakarta,3,homicide_rate|upper_secondary_ptr|travel,excluded_by_witness,0.05,-1.3430263795459325,
+Jakarta,3,homicide_rate|upper_secondary_ptr|fixed_broadband_mbps,excluded_by_witness,0.05,-1.3430263795459254,
+Jakarta,3,homicide_rate|upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-7.4331029081128435,
+Jakarta,3,homicide_rate|research_he_density|public_transport_density,certified_outer_box,,,0.003072354623348872
+Jakarta,3,homicide_rate|research_he_density|travel,certified_outer_box,,,0.10244742530126416
+Jakarta,3,homicide_rate|research_he_density|fixed_broadband_mbps,certified_outer_box,,,0.10244742530126416
+Jakarta,3,homicide_rate|research_he_density|public_pool_density,certified_outer_box,,,0.003072354623348872
+Jakarta,3,homicide_rate|public_transport_density|travel,certified_outer_box,,,0.003072354623348872
+Jakarta,3,homicide_rate|public_transport_density|fixed_broadband_mbps,certified_outer_box,,,0.003072354623348872
+Jakarta,3,homicide_rate|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.006265141501551,
+Jakarta,3,homicide_rate|travel|fixed_broadband_mbps,certified_outer_box,,,0.10244742530126416
+Jakarta,3,homicide_rate|travel|public_pool_density,certified_outer_box,,,0.003072354623348872
+Jakarta,3,homicide_rate|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.003072354623348872
+Jakarta,3,upper_secondary_ptr|research_he_density|public_transport_density,excluded_by_witness,0.05,-7.433102908112858,
+Jakarta,3,upper_secondary_ptr|research_he_density|travel,excluded_by_witness,0.05,-1.3430263795459325,
+Jakarta,3,upper_secondary_ptr|research_he_density|fixed_broadband_mbps,excluded_by_witness,0.05,-1.3430263795459325,
+Jakarta,3,upper_secondary_ptr|research_he_density|public_pool_density,excluded_by_witness,0.05,-7.4331029081128435,
+Jakarta,3,upper_secondary_ptr|public_transport_density|travel,excluded_by_witness,0.05,-7.433102908112858,
+Jakarta,3,upper_secondary_ptr|public_transport_density|fixed_broadband_mbps,excluded_by_witness,0.05,-7.433102908112858,
+Jakarta,3,upper_secondary_ptr|public_transport_density|public_pool_density,excluded_by_witness,0.05,-14.275486174799838,
+Jakarta,3,upper_secondary_ptr|travel|fixed_broadband_mbps,excluded_by_witness,0.05,-1.3430263795459325,
+Jakarta,3,upper_secondary_ptr|travel|public_pool_density,excluded_by_witness,0.05,-7.4331029081128435,
+Jakarta,3,upper_secondary_ptr|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-7.4331029081128435,
+Jakarta,3,research_he_density|public_transport_density|travel,certified_outer_box,,,0.003072354623348872
+Jakarta,3,research_he_density|public_transport_density|fixed_broadband_mbps,certified_outer_box,,,0.003072354623348872
+Jakarta,3,research_he_density|public_transport_density|public_pool_density,excluded_by_witness,0.05,-6.006265141501558,
+Jakarta,3,research_he_density|travel|fixed_broadband_mbps,certified_outer_box,,,0.10244742530126416
+Jakarta,3,research_he_density|travel|public_pool_density,certified_outer_box,,,0.003072354623348872
+Jakarta,3,research_he_density|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.003072354623348872
+Jakarta,3,public_transport_density|travel|fixed_broadband_mbps,certified_outer_box,,,0.003072354623348872
+Jakarta,3,public_transport_density|travel|public_pool_density,excluded_by_witness,0.05,-6.006265141501558,
+Jakarta,3,public_transport_density|fixed_broadband_mbps|public_pool_density,excluded_by_witness,0.05,-6.006265141501558,
+Jakarta,3,travel|fixed_broadband_mbps|public_pool_density,certified_outer_box,,,0.003072354623348872
+Melbourne,0,,excluded_by_witness,0.05,-12.673062077243202,
+Melbourne,1,homicide_rate,excluded_by_witness,0.05,-3.86088514466838,
+Melbourne,1,upper_secondary_ptr,excluded_by_witness,0.05,-3.86088514466838,
+Melbourne,1,research_he_density,excluded_by_witness,0.05,-3.86088514466838,
+Melbourne,1,public_transport_density,excluded_by_witness,0.05,-10.67497161808339,
+Melbourne,1,travel,excluded_by_witness,0.05,-7.5731175933072805,
+Melbourne,1,public_pool_density,excluded_by_witness,0.05,-10.67497161808339,
+Melbourne,2,homicide_rate|upper_secondary_ptr,certified_outer_box,,,0.19809887372270651
+Melbourne,2,homicide_rate|research_he_density,certified_outer_box,,,0.19809887372270651
+Melbourne,2,homicide_rate|public_transport_density,excluded_by_witness,0.05,-2.1422283744210446,
+Melbourne,2,homicide_rate|travel,excluded_by_witness,0.1,-0.4266382419823671,
+Melbourne,2,homicide_rate|public_pool_density,excluded_by_witness,0.05,-2.1422283744210446,
+Melbourne,2,upper_secondary_ptr|research_he_density,certified_outer_box,,,0.19809887372270651
+Melbourne,2,upper_secondary_ptr|public_transport_density,excluded_by_witness,0.05,-2.142228374421059,
+Melbourne,2,upper_secondary_ptr|travel,excluded_by_witness,0.1,-0.4266382419823671,
+Melbourne,2,upper_secondary_ptr|public_pool_density,excluded_by_witness,0.05,-2.1422283744210446,
+Melbourne,2,research_he_density|public_transport_density,excluded_by_witness,0.05,-2.142228374421059,
+Melbourne,2,research_he_density|travel,excluded_by_witness,0.1,-0.4266382419823671,
+Melbourne,2,research_he_density|public_pool_density,excluded_by_witness,0.05,-2.1422283744210446,
+Melbourne,2,public_transport_density|travel,excluded_by_witness,0.05,-5.790584728059926,
+Melbourne,2,public_transport_density|public_pool_density,excluded_by_witness,0.05,-8.772873709338214,
+Melbourne,2,travel|public_pool_density,excluded_by_witness,0.05,-5.790584728059919,
