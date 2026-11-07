@@ -1,0 +1,981 @@
+            Further education and skills: July 2026
+                       underlying data
+
+                                Metadata specification
+
+Description
+
+This document describes the additional supporting files that accompany the ‘Further education and
+skills: July 2026’ accredited official statistics publication. It is provided to allow users to interrogate
+the data themselves.
+
+The underlying data files cover England and include Further Education and Skills learner
+participation/achievements and aim enrolment/achievement figures. Some tables also include
+further breakdowns; by provision type (e.g. education and training, tailored learning, or
+apprenticeships), by learner characteristics (e.g. age, sex, ethnicity group) or subject
+characteristics (e.g. sector subject area, level, learning aim).
+
+The Further education and skills statistics: methodology document published alongside the main
+release should be referenced alongside this data. It provides information on the data sources, their
+coverage and quality as well as explaining methodology used in producing the data.
+
+
+Annex A - Field Listing
+Annex B – How to use excel to connect to larger underlying files for your analysis
+
+
+
+The underlying data consists of the following files:
+
+    •   Achievement rates - essential skills breakdowns by provider with subtotals
+    •   Achievement rates - by provider with subtotals and provider type
+    •   Underlying data - learner participation by provision type
+    •   Underlying data – Under 19 learner participation by provision type (in development)
+    •   Underlying data - aims enrolments by provision type
+    •   Underlying data - aims achievements by provision type
+    •   Underlying data - learner demographics by provision type
+    •   Underlying data - Free Courses for Jobs Starts and Achievements on Individual Courses
+    •   Underlying data - Free Courses for Jobs course list starts by provider and academic year
+    •   Underlying data – advanced learner loans applications - top 10 qualifications
+    •   FE and skills (FES) provider participation by provision type and learner characteristic
+    •   Geography Region - starts, achievements, participation, population by age, level (2023
+        LSIP)
+                                                                          Geographic    Time
+                         File and description
+                                                                            levels     Period
+Achievement Rates - essential skills breakdowns by
+provider with subtotals
+achievement_rates_essential_skills_by_provider_with_subtotals_20
+2526_14.zip
+
+time_period : Hybrid end year
+provider_ukprn : Provider UKPRN
+provider_name : Provider name
+provision_type : Provision type (Education and Training / Tailored
+learning / Community Learning)
+age_band : Age group (Under 19 / Adults)
+regulated_qualification : Regulated learning flag
+essential_skills_subject : Essential skills subject (Maths / English /                 2022/23
+ESOL / Digital)                                                          Provider         to
+essential_skills_type : Essential skills qualification type                            2024/25
+qualification_type : Qualification type
+qualification_level : Level of qualification
+
+leavers: Total number of leavers
+completers: Number of completers
+achievers: Number of achievers
+retention_rate: Retention rate
+pass_rate: Pass rate
+achievement_rate: Achievement rate
+
+See this link for further details on how the rates are calculated :
+https://www.gov.uk/guidance/introduction-to-qualification-
+achievement-rates-qars
+
+
+
+
+                                                                                            2
+                                                                       Geographic    Time
+                         File and description
+                                                                         levels     Period
+Achievement rates - by provider with subtotals and
+provider type
+
+nf09_et_narts_provider_detailed_with_GCSE_totals.zip
+
+time_period : hybrid end year
+provider_name : Provider name
+provider_ukprn : Provider UKPRN
+provider_type: Provider type
+provision_type : Provision type (Education and Training / Tailored
+learning / Community Learning)
+age_band : Age group (Under 19 / Adults)
+regulated_qualification : Regulated learning flag                                   2022/23
+sector_subject_area_t1 : Sector subject area Tier 1                   Provider         to
+qualification_type : Qualification type                                             2024/25
+level_group : Level of qualification
+
+leavers: Total number of leavers
+completers: Number of completers
+achievers: Number of achievers
+retention_rate: Retention rate
+pass_rate: Pass rate
+achievement_rate: Achievement rate
+
+See this link for further details on how the rates are calculated :
+https://www.gov.uk/guidance/introduction-to-qualification-
+achievement-rates-qars
+
+
+
+
+                                                                                         3
+                                                                          Geographic          Time
+                        File and description
+                                                                            levels           period
+
+Underlying data - learner participation by provision type
+fes_u06_underlying_data_learner_participation_202526_10.zip
+
+academic_year: Academic year
+snapshot: Snapshot
+ukprn: Provider UKPRN
+provider_name: Provider name
+provider_type: Provider type
+learner_home_region_code: Learner region code (based on home
+postcode)
+learner_home_region: Learner region description (based on home
+postcode)
+learner_home_pcon_code: Learner parliamentary constituency
+code (based on home postcode)                                                                2020/21
+learner_home_pcon: Learner parliamentary constituency                                       (full year)
+description (based on home postcode)
+                                                                                             2021/22
+learner_home_la_code: Learner local authority code (based on             National,
+                                                                                            (full year)
+home postcode)                                                           region,
+learner_home_la: Learner local authority description (based on           local authority,
+                                                                                             2022/23
+home postcode)                                                           local authority
+                                                                                            (full year)
+                                                                         district,
+learner_home_lad_code: Learner local authority district code             parliamentary
+(based on home postcode)                                                                     2023/24
+                                                                         constituency,
+learner_home_lad: Learner local authority district description                              (full year)
+                                                                         English
+(based on home postcode)                                                 devolved
+                                                                                             2024/25
+learner_home_devolved_administration_code: Learner English               administration
+                                                                                            (full year)
+devolved area code (based on home postcode)
+learner_home_devolved_administration: Learner English                                        2025/26
+devolved area description (based on home postcode)                                          (Aug-Apr)
+age_detailed: Detailed age group
+
+
+fes_total: All age Further education and skills learner participation
+(comprises Adult (19+) Further education and skills, and under 19
+apprenticeships)
+fes_19p: Adult (19+) Further education and skills learner
+participation
+e_and_t_19p: Adult (19+) Education and training learner
+participation
+apps_total: All age Apprenticeship learner participation
+apps_19p: Adult (19+) Apprenticeship learner participation
+tailored_learning_total: Tailored learning total learner participation
+
+
+
+
+                                                                                                    4
+                                                                      Geographic     Time
+                        File and description
+                                                                        levels      Period
+
+Underlying data – Under 19 learner participation by
+provision type (provided for transparency)
+FES_underlying_data_learner_participation_under_19_202526_10.cs
+v
+
+year: Academic year
+snapshot: Snapshot
+ukprn: Provider UKPRN
+provider_name: Provider name
+provider_type: Provider type
+learner_home_region: Learner region code (based on home
+postcode)
+learner_home_region_name: Learner region description (based on
+home postcode)
+learner_home_pcon: Learner parliamentary constituency code                          2022/23
+(based on home postcode)                                                           (full year)
+learner_home_pcon_name: Learner parliamentary constituency
+description (based on home postcode)                                                2023/24
+                                                                      National
+learner_home_la: Learner local authority code (based on home                       (full year)
+postcode)
+learner_home_la_name: Learner local authority description (based                    2024/25
+on home postcode)                                                                  (full year)
+learner_home_lad: Learner local authority district code (based on                   2025/26
+home postcode)                                                                     (Aug-Apr)
+learner_home_lad_name: Learner local authority district description
+(based on home postcode)
+learner_home_devolved_administration: Learner English devolved
+area code (based on home postcode)
+learner_home_devolved_administration_name: Learner English
+devolved area description (based on home postcode)
+
+
+fes_total_u19: Under 19 further education and skills learner
+participation (including apprenticeships)
+et_part_u19: Under 19 education and training learner participation
+apps_u19: Under 19 apprenticeship learner participation
+
+
+
+
+                                                                                           5
+                                                                        Geographic          Time
+                       File and description
+                                                                          levels           Period
+Underlying data - aims enrolments by provision type
+fes_u07_underlying_data_aims_enrolments_202526_10.zip
+
+academic_year: Academic year
+snapshot: Snapshot
+ukprn: Provider UKPRN
+provider_name: Provider name
+provider_type: Provider type
+provider_type_detailed_code: Detailed provider type code
+provider_type_detailed: Detailed provider type
+delivery_region_code: Learner region code (based on delivery
+postcode)
+delivery_region: Learner region description (based on delivery
+postcode)
+delivery_pcon_code: Learner parliamentary constituency code
+(based on delivery postcode)
+delivery_pcon: Learner parliamentary constituency description
+(based on delivery postcode)
+delivery_la_code: Learner local authority code (based on delivery
+postcode)                                                              National,
+                                                                       region,
+delivery_la: Learner local authority description (based on delivery    local authority,
+postcode)                                                              local authority
+delivery_lad_code: Learner local authority district code (based on     district,           2025/26
+delivery postcode)                                                     parliamentary      (Aug-Apr)
+delivery_lad: Learner local authority district description (based on   constituency,
+delivery postcode)                                                     English
+delivery_devolved_administration_code: Learner English                 devolved
+devolved area code (based on delivery postcode)                        administration
+delivery_devolved_administration: Learner English devolved area
+description (based on delivery postcode)
+learner_home_region_code: Learner region code (based on home
+postcode)
+learner_home_region: Learner region description (based on home
+postcode)
+learner_home_pcon_code: Learner parliamentary constituency
+code (based on home postcode)
+learner_home_pcon: Learner parliamentary constituency
+description (based on home postcode)
+learner_home_la_code: Learner local authority code (based on
+home postcode)
+learner_home_la: Learner local authority description (based on
+home postcode)
+learner_home_lad_code: Learner local authority district code
+(based on home postcode)
+learner_home_lad: Learner local authority district description
+(based on home postcode)
+learner_home_devolved_administration_code: Learner English
+devolved area code (based on home postcode)
+                                                                                                6
+learner_home_devolved_administration: Learner English
+devolved area description (based on home postcode)
+age_academic_summary_with_unknowns: summary age group
+(age as at 31 August of the academic year)
+age_academic_detailed: detailed age group (age as at 31 August
+of the academic year)
+age_start_detailed: detailed age group (age at the start of the
+programme)
+notional_nvq_level: level of the learning aim
+ssa_tier_1_code: Sector subject area Tier 1 code
+ssa_tier_1: Sector subject area Tier 1 description
+ssa_tier_2_code: Sector subject area Tier 2 code
+ssa_tier_2: Sector subject area Tier 2 description
+stem: STEM flag
+learning_aim_reference: Learning aim reference number
+learning_aim_title: Learning aim title
+learning_aim_type: Learning aim type
+strand_description: The provision type of the aim. Can be
+Apprenticeship Programme; ‘Apprenticeship Component’, ’Skills
+Bootcamps Programme’, ‘Tailored Learning’, ‘Skills Bootcamps
+Component’, ‘T Level Transition Component’, ‘T Level Component’,
+‘Other Education and Training’.
+essential_skills_qualification_type: Essential skills qualification
+type
+awarding_organisation_description: Awarding organisation
+description
+htq_status: Higher technical qualification status
+source_of_funding: Source of funding flag
+
+fes_total_aim_enrolments: All age Further education and skills aim
+enrolments
+fes_19p_aim_enrolments: Adult (19+) Further education and skills
+aim enrolments
+et_total_aim_enrolments: All age Education and training aim
+enrolments
+et_19p_aim_enrolments: Adult (19+) Education and training aim
+enrolments
+apps_total_funded_aim_enrolments: All age Apprenticeship aim
+enrolments
+apps_19p_funded_aim_enrolments: Adult (19+) Apprenticeship
+aim enrolments
+tailored_learning_aim_enrolments: Tailored learning aim
+enrolments
+loan_aim_enrolments: Loan enrolments
+
+Please note:
+   •   academic age (as at 31 August) is for use with FES, ET and
+       TL enrolments. Age at start of programme is for use with
+       apprenticeship enrolments.
+
+
+                                                                      7
+•   The HTQ data here only includes learners recorded via the
+    ILR. There are additional HTQ learners recorded via HESA
+    data
+•   Essential skills qualification type is primarily the ‘Skills for life
+    type description’ recorded on the Learning Aim Reference
+    Service (LARS) with additional types included for non-
+    regulated essential skills aims not present on LARS.
+
+
+
+
+                                                                            8
+                                                                        Geographic          Time
+                       File and description
+                                                                          levels           Period
+Underlying data - aims achievements by provision type
+fes_u09_underlying_data_aims_achievements_202526_10.zip
+
+academic_year: Academic year
+snapshot: Snapshot
+ukprn: Provider UKPRN
+provider_name: Provider name
+provider_type: Provider type
+provider_type_detailed_code: Detailed provider type code
+provider_type_detailed: Detailed provider type
+delivery_region_code: Learner region code (based on delivery
+postcode)
+delivery_region: Learner region description (based on delivery
+postcode)
+delivery_pcon_code: Learner parliamentary constituency code
+(based on delivery postcode)
+delivery_pcon: Learner parliamentary constituency description
+(based on delivery postcode)
+delivery_la_code: Learner local authority code (based on delivery
+postcode)                                                              National,
+delivery_la: Learner local authority description (based on delivery    region,
+postcode)                                                              local authority,
+                                                                                           2025/26
+                                                                       local authority
+delivery_lad_code: Learner local authority district code (based on                        (Aug-Apr)
+                                                                       district,
+delivery postcode)                                                     parliamentary
+delivery_lad: Learner local authority district description (based on   constituency,
+delivery postcode)                                                     English
+delivery_devolved_administration_code: Learner English                 devolved
+devolved area code (based on delivery postcode)                        administration
+delivery_devolved_administration: Learner English devolved area
+description (based on delivery postcode)
+learner_home_region_code: Learner region code (based on home
+postcode)
+learner_home_region: Learner region description (based on home
+postcode)
+learner_home_pcon_code: Learner parliamentary constituency
+code (based on home postcode)
+learner_home_pcon: Learner parliamentary constituency
+description (based on home postcode)
+learner_home_la_code: Learner local authority code (based on
+home postcode)
+learner_home_la: Learner local authority description (based on
+home postcode)
+learner_home_lad_code: Learner local authority district code
+(based on home postcode)
+learner_home_lad: Learner local authority district description
+(based on home postcode)
+learner_home_devolved_administration_code: Learner English
+devolved area code (based on home postcode)
+                                                                                                9
+learner_home_devolved_administration: Learner English
+devolved area description (based on home postcode)
+age_youth_adult: age 19+ or under 19 (age as at 31 August of the
+academic year)
+age_summary_with_unknowns: summary age group (age as at 31
+August of the academic year)
+age_detailed: detailed age group (age as at 31 August of the
+academic year)
+notional_nvq_level: level of the learning aim
+ssa_tier_1_code: Sector subject area Tier 1 code
+ssa_tier_1: Sector subject area Tier 1 description
+ssa_tier_2_code: Sector subject area Tier 2 code
+ssa_tier_2: Sector subject area Tier 2 description
+stem: STEM flag
+learning_aim_reference: Learning aim reference number
+learning_aim_title: Learning aim title
+learning_aim_type: Learning aim type
+strand_description: The provision type of the aim. Can be
+Apprenticeship Programme; ‘Apprenticeship Component’, ’Skills
+Bootcamps Programme’, ‘Tailored Learning’, ‘Skills Bootcamps
+Component’, ‘T Level Transition Component’, ‘T Level Component’,
+‘Other Education and Training’.
+essential_skills_qualification_type: Essential skills qualification
+type
+awarding_organisation_description: Awarding organisation
+description
+htq_status: Higher technical qualification status
+source_of_funding: Source of funding flag
+
+fes_total_aim_achievements: All age Further education and skills
+aim achievements
+fes_19p_aim_achievements: Adult (19+) Further education and
+skills aim achievements
+et_total_aim_achievements: All age Education and training aim
+achievements
+et_19p_aim_achievements: Adult (19+) Education and training aim
+achievements
+apps_total_funded_aim_achievements: All age
+Apprenticeship_aim_achievements
+apps_19p_funded_aim_achievements: Adult (19+) Apprenticeship
+aim achievements
+tailored_learning_aim_achievements: Tailored learning aim
+achievements
+loan_aim_achievements: Loan achievements
+Please note:
+   • HTQ data here only includes learners recorded via the ILR.
+       There are additional HTQ learners recorded via HESA data.
+   • Essential skills qualification type is primarily the ‘Skills for life
+       type description’ recorded on the Learning Aim Reference
+       Service (LARS) with additional types included for non-
+       regulated essential skills aims not present on LARS.
+                                                                             10
+                                                                      Geographic     Time
+                        File and description
+                                                                        levels      Period
+Underlying data - learner demographics by provision type
+fes_u08_underlying_data_demographics_202526_10.csv
+
+This csv is rounded and contains pre-calculated totals. Please be
+aware when using this tool to derive further breakdowns.
+
+academic_year: Academic year
+snapshot: Snapshot
+provision_type:
+                                                                                    2020/21
+   Further Education and Skills: Further education and skills                      (full year)
+       participation (All Age)
+   Tailored Learning: Tailored learning participation                               2021/22
+   Education and Training: Education and training participation                    (full year)
+       (Adult (19+))
+   Apprenticeships: Apprenticeship participation (All Age)           National       2022/23
+                                                                                   (full year)
+age_summary_with_unknowns: Age group
+age_youth_adult: Age group (19+ or under 19)                                        2023/24
+sex: Sex                                                                           (full year)
+learning_difficulty_disability: LLDD status
+                                                                                    2024/25
+ethnicity_major: Ethnicity group
+                                                                                   (full year)
+ethnicity_minor: Ethnicity detail
+                                                                                    2025/26
+participation: Learner participation                                               (Aug-Apr)
+
+
+Please note: to get adult (19+) FES participation, or adult (19+)
+apprenticeship participation figures, the age filter must be used.
+
+
+
+
+                                                                                         11
+                                                                        Geographic     Time
+                        File and description
+                                                                          levels      Period
+Underlying data – Free Courses for Jobs Starts and
+Achievements on Individual Courses
+underlying-data-fes-free-courses-for-jobs-qualifications-2526-q3.csv
+
+qualification_reference_number: Qualification reference number
+qualification_title: Title of the qualification
+qualification_type: Type of qualification
+course_length: Indicator of whether the qualification is a short
+course
+guided_learning_hours: guided learning hours associated with the
+course                                                                               April 2021
+                                                                       National       to April
+ssa_t1: Sector subject area tier 1 description
+                                                                                       2026
+ssa_t2: Sector subject area tier 2 description
+free_courses_for_jobs_valid_from: Free courses for jobs funding
+approval start date
+free_courses_for_jobs_valid_to: Free courses for jobs funding
+approval end date
+fcfj_enrolments: Free courses for jobs total starts under the offer
+(April 21 to April 26)
+fcfj_achievements: Free courses for jobs total achievements under
+the offer (April 21 to April 26)
+
+
+
+
+                                                                                           12
+                                                                   Geographic     Time
+                       File and description
+                                                                     levels      Period
+Underlying data - Free Courses for Jobs course list starts
+by provider and academic year
+
+fes-subject-courses-for-jobs-provider-2526-q3.csv
+
+academic_year: Academic year
+                                                                                April 2021
+ukprn: Provider UKPRN                                             National       to April
+provider_name: Provider name                                                      2026
+
+provider_type: Provider type
+free_courses_for_jobs_enrolments: Total starts by any adults on
+courses from the list valid for free courses for jobs
+
+
+
+
+                                                                                     13
+                                                                             Geographic     Time
+                         File and description
+                                                                               levels      Period
+FE and skills (FES) provider participation by provision
+type and learner characteristic
+National_provider_summary_202526_10.csv
+
+academic_year: Academic year
+provider_name: Provider name
+ukprn: Provider UKPRN
+provider_type: Provider type
+age_youth_adult: academic age under 19 or 19+
+characteristic: Characteristic of learners (e.g. sex, ethnicity,
+Learning difficulty / disability, Deprivation quintile, Education, Health
+and Care Plan (EHCP) status, and high needs student)
+                                                                                           2022/23
+EHCP status reflects what has been recorded by the provider, it                           (full year)
+does not necessarily represent all those who have or have had an
+EHCP in the past. It may not be relevant to the current education or                       2023/24
+training. High needs students have agreed learning support costs            National      (full year)
+greater than £6,000, and the local authority has paid element 3 ‘top-
+up’ funding or is fully funding the student in the current year.                           2024/25
+apprenticeships: Number of learners participating in                                      (full year)
+apprenticeships
+                                                                                           2025/26
+education_and_training: Number of learners participating in
+                                                                                          (Aug-Apr)
+education and training
+tailored_learning: Number of learners participating in tailored
+learning
+community_learning: Number of learners participating in
+community learning
+
+
+Note: The Under 19 data in this file is provided for transparency
+purposes, produced to support development of the FE Provider
+Performance Dashboard. Deprivation quintile is based on the
+English indices of deprivation 2019.
+
+
+
+
+                                                                                                14
+                                                                       Geographic     Time
+                        File and description
+                                                                         levels      Period
+Underlying data – advanced learner loans applications -
+top 10 qualifications
+
+fes-adv-learner-loans-applications-top-10-qualifications-202425.csv
+
+This csv contains the top 10 advanced learner loans-funded learning
+aims per year, since the 2014/15 academic year.
+
+time_period: academic year
+time_identifier: Time unit shown (i.e. academic or calendar year)
+geographic_level: The level of geography the data represents. In
+this product it is national (England)                                                2014/15
+country_code: Country code                                                              to
+                                                                                     2024/25
+country_name: Country name                                            National         (full
+                                                                                    academic
+rank: position of learning aim
+                                                                                      years)
+learning_aim_reference: learning aim reference number
+learning_aim_title: learning aim title
+awarding_organisation_description: awarding organisation name
+notional_nvq_level: level of the learning aim
+applications_received: advanced learner loans applications
+received
+applications_approved: advanced learner loans applications
+approved
+loan_amount_awarded: loan amount awarded (£000s)
+
+
+
+
+                                                                                        15
+                                                                        Geographic      Time
+                        File and description
+                                                                          levels       Period
+Geography Region - starts, achievements, participation,
+population by age, level (2023 LSIP)
+fes-geography-population-202526-q3-lsip23.csv
+This rounded dataset is based on population estimates from NOMIS
+using LSIP boundaries as of 2023. The version in the Explore
+Education Statistics Create your own tables tool is based on the
+2025 LSIP boundaries.
+time_period: Academic year
+time_identifier: Time unit shown (i.e. academic year)
+geographic_level: The geography shown (i.e. Local skills
+improvement plan area)
+country_code: Country code
+country_name: Country name
+lsip_code: Local skills improvement plan area code (based on home
+postcode)
+                                                                                       2022/23
+lsip_name: Local skills improvement plan area description (based
+                                                                                      (full year)
+on home postcode)
+                                                                                       2023/24
+provision_type: Whether the learning covers Further education and      Local skills   (full year)
+skills, Apprenticeships, Education and training or Tailored learning   improvement
+                                                                       plan area       2024/25
+regulated_status: Regulated learning flag
+                                                                                      (full year)
+level_or_type: The provision and level of the learning. For Tailored
+                                                                                       2025/26
+learning the purpose is shown
+                                                                                      (Aug-Apr)
+age_summary: Summary age group. For participation and learner
+achievements this is age as at 31 August of the academic year. For
+apprenticeship starts it is age at start of programme.
+
+
+starts: Apprenticeship starts
+participation: Learner participation
+learner_achievements: Learner achievements
+population_estimate: population estimates
+starts_rate_per_100000_population: Apprenticeship starts per
+100,000 population
+participation_rate_per_100000_population: Learner participation
+per 100,000 population
+learner_achievements_rate_per_100000_population: Learner
+achievements per 100,000 population
+
+
+
+                                                                                              16
+Annex A – Field Listing
+Further information about the fields in the underlying data files is given below:
+
+ Variable name                                        Variable description
+ Achievers (when used in achievement rate             A count of the number of learning aims that have
+ calculations)                                        been achieved.
+ Achievement                                          A qualification or apprenticeship has successfully
+                                                      been gained.
+
+                                                      The columns used are any of the following:
+                                                      Apprenticeship 19P Aims Achievements Funded
+                                                      Only,
+                                                      Apprenticeship Under 19 Aims Achievements
+                                                      Funded Only,
+                                                      Community Learning Aims Achievements,
+                                                      Tailored learning aim achievements,
+                                                      ET 19P Aims Achievements,
+                                                      FES 19P Aims Achievements,
+                                                      FES All Age Aims Achievements
+ Achievement rate                                     Achievement rates are based on the individual
+                                                      qualification aims that were completed in the
+                                                      relevant year (Hybrid End Year). They are
+                                                      calculated as the number of aims achieved
+                                                      divided by the number started, excluding the aims
+                                                      of any learners that transferred onto another
+                                                      qualification within the same institution.
+ Age summary with unknowns                            This shows the age of the learner as at the 31st
+ Age academic summary with unknowns                   August of the reported academic year.
+
+                                                      Age categories (Under 19, 19-24, 25-49, 50+,
+                                                      Unknown)
+ Age Youth Adult                                      This shows the age of the learner as at the 31st
+ Age Band                                             August of the reported academic year.
+
+                                                      Age categories (Under 19, 19+)
+ Age Detailed                                         This shows the age of the learner as at the 31st
+ Age academic detailed                                August of the reported academic year. This is for
+                                                      use with the FES, CL, TL and ET measures. It
+                                                      also for use with apprenticeship participation
+                                                      measures.
+
+                                                      Age categories (Under 19, 19-24, 35-44, 45-59,
+                                                      60+)
+ Age start detailed                                   This shows the age of the learner at the start of
+                                                      the programme. This is for use with the
+                                                      apprenticeship enrolments measures.
+
+                                                      Age categories (Under 19, 19-24, 35-44, 45-59,
+                                                      60+)
+ Awarding organisation description                    The learning aim’s awarding organisation name.
+ Completers (when used in achievement rate            A count of the number of learning aims that have
+ calculations)                                        been completed.
+ Delivery_Region                                      Geographical breakdown based on the delivery
+ Delivery_PCON                                        postcode
+ Delivery_LA
+ Delivery_LAD                                         PCON = Parliamentary Constituency
+
+                                                                                                          17
+Delivery_Devolved_Administration                    LA = Local Authority
+                                                    LAD = Local Authority District
+
+Delivery_Region_Code                                Reference code assigned to the geographical
+Delivery_PCON_Code                                  breakdowns based on delivery postcode
+Delivery_LA_Code
+Delivery_LAD_Code
+Delivery_Devolved_Administration_Code
+Detailed Level or                                   Level of the apprenticeship (Level 2; 3; 4; 5; 6; 7).
+Apps Level Detailed
+Enrolments                                          Enrolments indicates that a learner was on a
+                                                    framework or aim during a period.
+
+                                                    The columns used are any of the following:
+                                                    Apprenticeship 19P Aims Enrolments Funded
+                                                    Only,
+                                                    Apprenticeship Under 19 Aims Enrolments
+                                                    Funded Only,
+                                                    Community Learning Aims Enrolments,
+                                                    Tailored Learning Aims Enrolments,
+                                                    ET 19P Aims Enrolments,
+                                                    FES 19P Aims Enrolments,
+                                                    FES All Age Aims Enrolments
+Ethnicity                                           Learners ethnicity (i.e. the self-declared ethnicity
+                                                    from which the Ethnicity group is derived).
+Ethnicity major                                     The self-declared ethnicity group of the learner
+                                                    (Asian/Asian British;
+                                                    Black/African/Caribbean/Black British;
+                                                    Mixed/Multiple Ethnic Group; Not App/Known;
+                                                    Other Ethnic Group; White; Totals).
+Ethnicity minor                                     African, Any other Asian Background, Any other
+                                                    Black/African/Caribbean Background, Any other
+                                                    ethnic group, Any other Mixed/multiple ethnic
+                                                    background, Any other White Background, Arab,
+                                                    Bangladeshi, Caribbean, Chinese,
+                                                    English/Welsh/Scottish/Northern Irish/ British,
+                                                    Gypsy or Irish Traveller, Indian, Not Provided,
+                                                    Pakistani, Total, White and Asian, White and
+                                                    Black Caribbean, White and Black African
+Essential skills qualification type                 Essential skills qualification type is primarily
+                                                    the ‘Skills for life type description’ recorded
+                                                    on the Learning Aim Reference Service
+                                                    (LARS) with additional types included for
+                                                    non-regulated essential skills aims not
+                                                    present on LARS.
+Free Courses for Jobs Valid to/from                 Free Courses for Jobs funding approval start and
+                                                    end dates.
+Free Courses for Jobs Total Takeup Original Offer   How many learners started a qualification on the
+                                                    original Free Courses for Jobs offer.
+Free Courses for Jobs Total Takeup Extended Offer   How many learners started a qualification on Free
+                                                    Courses for Jobs, including the extended offer for
+                                                    unemployed and low-paid workers.
+Free Courses for Jobs Total Achievements Original   How many learners achieved a qualification on
+Offer                                               the original Free Courses for Jobs offer.
+Free Courses for Jobs Total Achievements Extended   How many learners achieved a qualification on
+Offer                                               Free Courses for Jobs, including the extended
+                                                    offer for unemployed and low-paid workers.
+                                                                                                           18
+Higher technical qualification (HTQ) status         A flag for learning aim’s that are a higher technical
+                                                    qualification.
+                                                    Please note the HTQ data in this publication only
+                                                    includes learners recorded via the ILR. There are
+                                                    additional HTQ learners recorded via HESA data.
+Learner_Home_Region                                 Geographical breakdown based on the learner
+Learner_Home_PCON                                   home postcode.
+Learner_Home_LA
+Learner_Home_LAD                                    PCON = Parliamentary Constituency
+Learner_Home_Devolved_Administration                LA = Local Authority
+Learner_Home_LEP                                    LAD = Local Authority District
+                                                    CA = Combined Authority
+                                                    LEP = Local Enterprise Partnership
+Learner_Home_Region_Code                            Reference code assigned to the geographical
+Learner_Home_PCON_Code                              breakdowns based on learner home postcode
+Learner_Home_LA_Code
+Learner_Home_LAD_Code
+Learner_Home_Devolved_Administration_Code
+Learner_Home_LEP_Code
+
+Learning Aim                                        Learning Aim is a generic term which includes
+                                                    qualifications, courses and learning events under
+                                                    a general title.
+Learning Aim Reference                              Reference code for a learning aim which
+                                                    corresponds to the ILR
+Learning Aim Title                                  Title of a learning aim
+Learning Aim Type                                   The type of learning aim awarded (e.g. A Level,
+                                                    Diploma, Certificate…)
+Leavers (when used in achievement rate              The total volume of learners included, this is the
+calculations)                                       denominator used in achievement rate
+                                                    calculation.
+Level                                               Apprenticeship level (Intermediate, advanced or
+Or App Level                                        higher).
+                                                    Or FE and Skills programmes Level ( Entry
+                                                    ,1,2,3,4,5,6,7, High Level)
+Learner Participation Q1,Q2, Q3, Q4, or Full Year   Learner was in learning at any point during the
+                                                    indicated quarter or any point during the year (full
+                                                    year)
+LLDD                                                Defines if the learner self declares that they are a
+                                                    learner with a learning difficulty and/or disability.
+Notional NVQ Level                                  The Notional NVQ Level indicates the level of a
+                                                    qualification on the NVQ scale or a notional level
+                                                    where an aim has not been assigned a level on
+                                                    the National Qualifications Framework (NQF).
+
+                                                    The values used in this classification are:
+
+                                                    Level 1 and entry
+                                                    Level 2
+                                                    Level 3
+                                                    Level 4, 5 and Higher Education (HE)
+                                                    Level not specified
+Participation                                       Learner was in learning at any point during the
+                                                    year
+
+                                                    The column used are any of the following:
+                                                                                                        19
+                                 FES All Age,
+                                 FES_Total19P,
+                                 ET_19P,
+                                 CL Participation,
+                                 Apprenticeships19P,
+                                 Apprenticeships Under 19
+Pass rate                        Pass rates are based on the individual aims that
+                                 were successfully completed in the relevant year
+                                 (the Hybrid End Year). They are calculated as the
+                                 number of learning aims achieved divided by the
+                                 number successfully completed.
+Provider,                        Name of the provider
+Provider Name
+Provider Type                    Indicates the type of organisation
+                                          General FE and Tertiary College
+                                          Other
+                                          Private Sector Public Funded
+                                          Local Authority
+                                          Schools
+                                          Sixth Form College
+                                 Specialist College
+Qualification Reference Number   Reference code for a learning aim which
+                                 corresponds to the ILR
+Qualification Title              Title of Qualification
+Qualification Type               Type of Qualification (Occupational, Vocational or
+                                 Other)
+Retention rate                   Retention rates are based on the individual aims
+                                 that were successfully completed in the relevant
+                                 year (the Hybrid End Year). They are calculated
+                                 as the number of learning aims completed divided
+                                 by the number of leavers.
+Sex                              Sex of the learner.
+Short Course                     Short courses are those labelled as ‘Level three
+                                 Free Courses short qualification’ in the list of
+                                 qualifications approved for funding
+Snapshot                         The Individualised Learner Record snapshot used
+                                 to produce the data:
+                                 SN04 covers Aug to Oct, as published in January
+                                 SN06 covers Aug to Jan, as published in March
+                                 SN10 covers Aug to Apr, as published in July
+                                 SN14 covers the full finalised academic year, as
+                                 published in November
+Source of funding                Source of funding flag
+SSA Tier 1                       Sector subject area (tier 1) of the apprenticeship
+                                 standard or framework or learning aim being
+                                 studied.
+SSA Tier 1 Code                  Reference code assigned to a Sector subject area
+                                 (tier 1)
+SSA Tier 2                       The sector subject area (tier 2) of the
+                                 apprenticeship standard or framework or learning
+                                 aim being studied.
+SSA Tier 2 Code                  Reference code assigned to a Sector subject area
+                                 (tier 2)
+STEM                             STEM includes those within the following sector
+                                 subject tier 1 areas: Construction, Planning and
+
+
+                                                                                 20
+                     the Built Environment, Engineering and
+                     Manufacturing Technologies,
+                     Information and Communication Technology,
+                     Science and Mathematics.
+strand_description   The provision type of the aim. Can be
+                     Apprenticeship Programme; ‘Apprenticeship
+                     Component’, ’Skills Bootcamps Programme’,
+                     ‘Tailored Learning’, ‘Skills Bootcamps
+                     Component’, ‘T Level Transition Component’,
+                     ‘T Level Component’, ‘Other Education and
+                     Training’.
+UKPRN                The unique provider reference number as
+Or Provider UKPRN    assigned when registered on UKRLP system.
+Year                 Academic year
+
+
+
+
+                                                                   21
+Annex B – quick guide to using the underlying files on EES (EXPLORE EDUCATION
+STATISTICS)
+
+Navigate to the ‘Explore data and files’ section of this release to find several useful
+underlying and supporting files for the data on the publication.
+
+The underlying data files and meta data information can be found under the ‘All supporting
+files’ sections. Once expanded you will see a list of all the files available for you to
+download and use.
+
+Due to the size of some of these files follow these steps to download and access the data.
+
+Click the data file link you wish to view; this will automatically start a download of the file
+through your internet browser. Once this step is complete, click the file, or open your
+downloads folder on your file explorer.
+
+
+
+
+The data files will download as CSV files which you can create a connection to and build a
+pivot table for your analysis.
+
+Save the file from the downloads folder into a suitable location of your choice.
+
+In excel on the ‘Data’ tab click the ‘From Text/CSV’ button in the top ribbon of excel.
+
+
+
+
+Navigate to the folder the underlying file is saved to and select the file to ‘import’
+
+
+
+
+                                                                                                  22
+Select the option to ‘Load to’
+
+
+
+
+At the next stage it will open an ‘import data’ window.
+
+
+
+
+Select ‘PivotTable Report’. Whilst the data is loading you will see the queries and
+connections to the right side of the excel process the pivot table – bigger files can take a
+                              while.
+
+
+
+
+Once this is complete the pivots tables will be ready for you to manipulate in whichever
+way is required.
+
+
+
+
+                                                                                               23
+Top tip! When creating a pivot table
+from a large dataset tick ‘defer layout
+update’ until you have finished building
+your pivot options.
+
+
+
+
+                                      24
+

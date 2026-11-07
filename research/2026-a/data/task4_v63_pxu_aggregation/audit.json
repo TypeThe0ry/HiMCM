@@ -1,0 +1,28 @@
+{
+  "audit_date": "2026-11-08",
+  "baseline_school_cohort_sum": 6287,
+  "baseline_lea_cohort": 6285,
+  "source_fiscal_year": 2025,
+  "cohort_year": 2024,
+  "new_admitted_observations": 0,
+  "changed_model_cells": 0,
+  "gap_resolved": false,
+  "duplicate_upper_bound_identified": false,
+  "sources": [
+    {
+      "url": "https://www.azed.gov/sites/default/files/2025/08/FSI%20Business%20Rules%20SY%202024-2025%2B_0.pdf",
+      "retrieval": "Official search-index text; original PDF403",
+      "page": 19,
+      "footer": "2025\u20132026+ Federal School Improvement Business Rules 10/2/2025",
+      "finding": "Transfer students may enter both school static files, but graduation and dropout indicators are explicitly excluded from that static file and reported separately.",
+      "applicability": "Excludes use of static-file duplication as an explanation of graduation cohort difference; not a finding that graduation records are duplicate-free."
+    },
+    {
+      "url": "https://www.azed.gov/sites/default/files/2021/09/Grad%20Rate%20Training.pdf",
+      "retrieval": "Official search-index text; original PDF403",
+      "finding": "Five-year cohort training assigns concurrent enrollments to the diploma-granting school and transfers to the new school.",
+      "applicability": "Five-year rule, no actual cohort2024 four-year cross-level reconciliation; publication/effective date not verified from PDF bytes."
+    }
+  ],
+  "conclusion": "No numerical interval shrink is supported. Net difference2 is not a duplicate-count budget."
+}

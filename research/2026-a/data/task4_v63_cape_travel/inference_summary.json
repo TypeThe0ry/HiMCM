@@ -1,0 +1,75 @@
+{
+  "all_age": {
+    "n": 205,
+    "weighted_population": 239741.56668856202,
+    "point_bounds": [
+      0.42608700169296165,
+      0.7275824662815499
+    ],
+    "endpoint_standard_errors": [
+      0.015081435481654788,
+      0.021502938714991284
+    ],
+    "endpoint_97_5_percent_intervals": [
+      [
+        0.3920295965973548,
+        0.4601444067885685
+      ],
+      [
+        0.6790238065005705,
+        0.7761411260625293
+      ]
+    ],
+    "joint_95_percent_approximate_envelope": [
+      0.3920295965973548,
+      0.7761411260625293
+    ],
+    "psus_all_relevant_strata": 216,
+    "strata": 14,
+    "domain_psus": 129,
+    "degrees_of_freedom": 202,
+    "critical_value": 2.2582336500417743,
+    "method": "Stratified ultimate-cluster Taylor ratio linearization; Bonferroni two endpoint intervals",
+    "finite_population_correction": null,
+    "calibrated_weights_treated_as_fixed": true,
+    "limitations": "Approximate design-based sampling envelope, not an exact confidence set. Omits calibration estimation and FPC; conditional on recorded eligibility and survey coverage. Does not cover out-of-frame students or transportability to other years."
+  },
+  "age14_18": {
+    "n": 182,
+    "weighted_population": 214053.826686108,
+    "point_bounds": [
+      0.4271795263782596,
+      0.7294728318983578
+    ],
+    "endpoint_standard_errors": [
+      0.015473318651195002,
+      0.022298418886266776
+    ],
+    "endpoint_97_5_percent_intervals": [
+      [
+        0.3922371575223121,
+        0.46212189523420716
+      ],
+      [
+        0.6791177920266631,
+        0.7798278717700524
+      ]
+    ],
+    "joint_95_percent_approximate_envelope": [
+      0.3922371575223121,
+      0.7798278717700524
+    ],
+    "psus_all_relevant_strata": 216,
+    "strata": 14,
+    "domain_psus": 120,
+    "degrees_of_freedom": 202,
+    "critical_value": 2.2582336500417743,
+    "method": "Stratified ultimate-cluster Taylor ratio linearization; Bonferroni two endpoint intervals",
+    "finite_population_correction": null,
+    "calibrated_weights_treated_as_fixed": true,
+    "limitations": "Approximate design-based sampling envelope, not an exact confidence set. Omits calibration estimation and FPC; conditional on recorded eligibility and survey coverage. Does not cover out-of-frame students or transportability to other years."
+  },
+  "utility": "exp(-one_way_minutes/30); conservative bin closures, no within-bin imputation",
+  "unknown_time_rule": "[0,1] for any unknown time; zero optional membership verified in this wave",
+  "year_comparison": "Repeated surveys are not a matched pupil panel; no causal change or significance claim."
+}

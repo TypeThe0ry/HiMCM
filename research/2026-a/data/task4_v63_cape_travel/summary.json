@@ -1,0 +1,190 @@
+{
+  "survey": "Statistics South Africa General Household Survey 2025",
+  "geography": "City of Cape Town metropolitan municipality; metro_code=2",
+  "source_zip_sha256": "564954cacb602c3ed0b64d799627a5c09ce1c90881067c051bcfa43270ae777f",
+  "person_member": "PERSON2025.csv",
+  "national_person_n": 67748,
+  "city": {
+    "n": 3953,
+    "households": 1151,
+    "psus": 216,
+    "strata": 14,
+    "weight_sum": 4838248.356449357,
+    "missing_or_nonpositive_weight_n": 0,
+    "kish_weight_only_effective_n": 3121.6943060137955
+  },
+  "weight_variable": "person_wgt",
+  "household_variable": "uqnr",
+  "psu_variable": "psu",
+  "stratum_variable": "stratum",
+  "tau_minutes": 30.0,
+  "utility_definition": "exp(-one_way_usual_school_trip_minutes / 30)",
+  "time_bin_minutes": {
+    "1": [
+      0,
+      15
+    ],
+    "2": [
+      15,
+      30
+    ],
+    "3": [
+      30,
+      60
+    ],
+    "4": [
+      60,
+      90
+    ],
+    "5": [
+      90,
+      null
+    ]
+  },
+  "source_bin_labels": {
+    "1": "Less than 15 minutes",
+    "2": "15\u201330 minutes",
+    "3": "31\u201360 minutes",
+    "4": "61\u201390 minutes",
+    "5": "More than 90 minutes"
+  },
+  "bin_interpretation": "Conservative continuous-time closure expands code3 lower endpoint31 to30 and code4 lower endpoint61 to60, avoiding integer-minute precision assumptions. Closure bounds for <15 and >90. No within-bin distribution or midpoint assumption.",
+  "primary_population": "ages14_18",
+  "sensitivity_population": "all_ages",
+  "membership_definition": "Current attendance=1, formal school=2, current grade 10/11/12, distance institution=2. Ages14\u201318 primary, all ages sensitivity; observed ages below education-question universe5 excluded. Unknown downstream values are optional unless a known answer rules eligibility out.",
+  "missing_policy": "Unknown time including unexpected not-applicable=[0,1]. Optional eligibility=[0,1] and optional denominator. Any nonpositive/missing target weight => [0,1] because unknown weight mass is not bounded.",
+  "all_ages": {
+    "definite": {
+      "n": 205,
+      "households": 188,
+      "psus": 129,
+      "strata": 14,
+      "weight_sum": 239741.56668856204,
+      "missing_or_nonpositive_weight_n": 0,
+      "kish_weight_only_effective_n": 165.11379513268295
+    },
+    "optional": {
+      "n": 0,
+      "households": 0,
+      "psus": 0,
+      "strata": 0,
+      "weight_sum": 0,
+      "missing_or_nonpositive_weight_n": 0,
+      "kish_weight_only_effective_n": null
+    },
+    "missing_time": {
+      "n": 0,
+      "households": 0,
+      "psus": 0,
+      "strata": 0,
+      "weight_sum": 0,
+      "missing_or_nonpositive_weight_n": 0,
+      "kish_weight_only_effective_n": null
+    },
+    "time_code_counts": {
+      "1": 92,
+      "2": 78,
+      "3": 28,
+      "4": 5,
+      "5": 2
+    },
+    "grade_counts": {
+      "10": 77,
+      "11": 61,
+      "12": 67
+    },
+    "age_counts": {
+      "13": 1,
+      "14": 4,
+      "15": 19,
+      "16": 62,
+      "17": 60,
+      "18": 37,
+      "19": 17,
+      "20": 1,
+      "21": 1,
+      "23": 2,
+      "26": 1
+    },
+    "utility_lower": 0.42608700169296165,
+    "utility_upper": 0.7275824662815499,
+    "interval_type": "weighted descriptive identification interval; not confidence interval",
+    "sampling_inference_included": false
+  },
+  "ages14_18": {
+    "definite": {
+      "n": 182,
+      "households": 171,
+      "psus": 120,
+      "strata": 14,
+      "weight_sum": 214053.82668610805,
+      "missing_or_nonpositive_weight_n": 0,
+      "kish_weight_only_effective_n": 145.3191345130812
+    },
+    "optional": {
+      "n": 0,
+      "households": 0,
+      "psus": 0,
+      "strata": 0,
+      "weight_sum": 0,
+      "missing_or_nonpositive_weight_n": 0,
+      "kish_weight_only_effective_n": null
+    },
+    "missing_time": {
+      "n": 0,
+      "households": 0,
+      "psus": 0,
+      "strata": 0,
+      "weight_sum": 0,
+      "missing_or_nonpositive_weight_n": 0,
+      "kish_weight_only_effective_n": null
+    },
+    "time_code_counts": {
+      "1": 82,
+      "2": 68,
+      "3": 25,
+      "4": 5,
+      "5": 2
+    },
+    "grade_counts": {
+      "10": 75,
+      "11": 55,
+      "12": 52
+    },
+    "age_counts": {
+      "14": 4,
+      "15": 19,
+      "16": 62,
+      "17": 60,
+      "18": 37
+    },
+    "utility_lower": 0.4271795263782596,
+    "utility_upper": 0.7294728318983573,
+    "interval_type": "weighted descriptive identification interval; not confidence interval",
+    "sampling_inference_included": false
+  },
+  "actual_grade10_12_before_attendance_distance_filters": {
+    "n": 211,
+    "households": 191,
+    "psus": 130,
+    "strata": 14,
+    "weight_sum": 244899.56096795003,
+    "missing_or_nonpositive_weight_n": 0,
+    "kish_weight_only_effective_n": 168.43930572446757
+  },
+  "excluded_distance_actual_grade10_12": {
+    "n": 6,
+    "households": 4,
+    "psus": 4,
+    "strata": 3,
+    "weight_sum": 5157.994279388,
+    "missing_or_nonpositive_weight_n": 0,
+    "kish_weight_only_effective_n": 3.3388609867532497
+  },
+  "limitations": [
+    "Grouped travel time identifies an interval rather than a point.",
+    "These bounds describe the weighted sample; a separate survey-design uncertainty calculation is required for population inference.",
+    "Formal in-person school pupils in actual grades10-12; not all youth, all educational institutions, or hypothetical school accessibility.",
+    "2025 municipal residential geography and reported usual one-way travel; survey year differs from other cities."
+  ]
+}

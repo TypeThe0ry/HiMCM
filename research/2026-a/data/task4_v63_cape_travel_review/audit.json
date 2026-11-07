@@ -1,0 +1,56 @@
+{
+  "source_files": {
+    "GHS2025.zip": "564954cacb602c3ed0b64d799627a5c09ce1c90881067c051bcfa43270ae777f",
+    "metadata.pdf": "123a2f289595158208d3be8d59ec5604553cd50c3b73b79ff6c6d6bd6c075739",
+    "questionnaire.pdf": "803c3904a101434255215e704b307ae77f8f6b2a110e0a4440626fdca67a5b5a"
+  },
+  "national_person_rows": 67748,
+  "city_person_rows": 3953,
+  "target_n": 182,
+  "target_households": 171,
+  "target_psus": 120,
+  "all_city_psus": 216,
+  "strata": 14,
+  "min_psus_per_stratum": 4,
+  "degrees_of_freedom": 202,
+  "eligibility_classes": {
+    "excluded": 3771,
+    "definite": 182
+  },
+  "time_codes": {
+    "1": 82,
+    "2": 68,
+    "3": 25,
+    "4": 5,
+    "5": 2
+  },
+  "point_bounds": [
+    0.4271795263782596,
+    0.7294728318983573
+  ],
+  "endpoint_standard_errors": [
+    0.015473318651195,
+    0.022298418886266772
+  ],
+  "critical_value": 2.2582336500417743,
+  "approximate_joint95_envelope": [
+    0.3922371575223121,
+    0.779827871770052
+  ],
+  "prior_inference_function_matches": true,
+  "current_grade_verified": true,
+  "time_bin_codes_unchanged": true,
+  "city_design_strata_exclusive": true,
+  "positive_weights": true,
+  "uncertainty_limitations": [
+    "Public calibrated weights treated fixed; calibration estimation omitted.",
+    "No FPC or replicate weights supplied to this calculation.",
+    "Ultimate-cluster Taylor approximation to two-stage PPS design; not exact confidence set.",
+    "No causal inference or paired-year trend test; 2023/2025 overlap/covariance not established.",
+    "Collective student hostels excluded by source; source excludes unweightable item-nonresponse records."
+  ],
+  "metadata_notes": [
+    "Design chapter labels 2013 master sample while stratum field description refers to2006; retain documented IDs, do not infer redesign from stale field prose.",
+    "Actual design counts are recomputed from2025 public file rather than copied from2023."
+  ]
+}
