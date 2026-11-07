@@ -1,0 +1,48 @@
+[
+  {
+    "file": "arizona_ids.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27&returnIdsOnly=true",
+    "sha256": "65929444aa72dd90eb9016590b11f9ee535d7697a341ce0210d079f68bf98aa2",
+    "bytes": 13275
+  },
+  {
+    "file": "arizona_page_0.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+2028+AND+OBJECTID+%3C%3D+2527&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "a1aca0d5349f9b62729b4ddfa124d9150ef18b3aa00fc455d5fac50d5b9a8ec4",
+    "bytes": 597702
+  },
+  {
+    "file": "arizona_page_1.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+2528+AND+OBJECTID+%3C%3D+3027&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "fc64c166ae2a1f9fc926443ac45ddf816d2e5935cc13001c01e843954e9e8867",
+    "bytes": 597003
+  },
+  {
+    "file": "arizona_page_2.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+3028+AND+OBJECTID+%3C%3D+3527&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "6666f111c1796484f88e1894ff14e2d32b1ddc89918b5df651abf2288231420c",
+    "bytes": 594272
+  },
+  {
+    "file": "arizona_page_3.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+3528+AND+OBJECTID+%3C%3D+4027&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "bdd9fd45f3af2a3f4524fe57a6d575184ead5bd9be25f12557eb8ce598b7b460",
+    "bytes": 594007
+  },
+  {
+    "file": "arizona_page_4.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+4028+AND+OBJECTID+%3C%3D+4527&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "503ae2a98a245c76d2524e573debeabd52475e25a7da1a7a071065cd3be913df",
+    "bytes": 592316
+  },
+  {
+    "file": "arizona_page_5.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+4528+AND+OBJECTID+%3C%3D+100114&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "36730f49ebcb8c7f0ac907963e7ab6d94760df68ce2d63db8540ae358044f93e",
+    "bytes": 158963
+  },
+  {
+    "file": "../task4_v6_phoenix/phoenix_boundary.geojson",
+    "sha256": "bfd883feb95326b3fcc2ae5de18f66aa93a5c1c56467dba8a07c0045b502cb16"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "known_FTE_lower": 2512.9700000000003,
+  "eligible_schools": 67,
+  "non_target_fields": [
+    "PK",
+    "KG",
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G13",
+    "UG",
+    "AE"
+  ],
+  "non_target_allowed_values": [
+    0,
+    -2
+  ],
+  "missing_FTE_not_zero_filled": true,
+  "scope": "Grade9-12-only operational nonvirtual public-school records in current Phoenix boundary; teacher FTE by school, not unique teacher headcount",
+  "conditions": [
+    "NCES -2 is structural not applicable, not unknown",
+    "FTE reporting is comparable across these schools",
+    "School-level FTE allocations are additive across schools; no duplicated full FTE assignments",
+    "Current school locations valid for reporting vintage"
+  ],
+  "school_grade9_12_student_lower": 70678.0,
+  "school_grade9_12_student_upper": null,
+  "hope_alternate_FY2025_total": 1178,
+  "hope_snapshot_compatibility_verified": false,
+  "conditional_student_upper_if_compatible": 71856.0,
+  "main_admission": false
+}

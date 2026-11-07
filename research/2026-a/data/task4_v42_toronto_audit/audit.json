@@ -1,0 +1,39 @@
+{
+  "grade9": {
+    "verified_school_count": 108,
+    "Y": 12395,
+    "P": 21604,
+    "E": 23101,
+    "unknown": 1497,
+    "lower_exact": "12395/23101",
+    "upper_exact": "13892/23101",
+    "checked_binary_completion_counts": 1498,
+    "participant_rate_within_bounds": true,
+    "unmatched_count": 38,
+    "unmatched_present_in_sameyear_PE": 33,
+    "PE_record_suppression_codes": {
+      "0": 8,
+      "3": 14,
+      "1": 11
+    }
+  },
+  "osslt_first_time": {
+    "verified_school_count": 109,
+    "Y": 16775,
+    "P": 19756,
+    "E": 21180,
+    "unknown": 1424,
+    "lower_exact": "3355/4236",
+    "upper_exact": "18199/21180",
+    "checked_binary_completion_counts": 1425,
+    "participant_rate_within_bounds": true,
+    "unmatched_count": 23,
+    "unmatched_present_in_sameyear_PE": 18,
+    "PE_record_suppression_codes": {
+      "0": 2,
+      "3": 10,
+      "1": 6
+    }
+  },
+  "decision": "No numerical bug found. Conditional completion bounds only; no causal or full-city claim. Do not replace missing first-time/Grade9 records with previously-eligible results."
+}

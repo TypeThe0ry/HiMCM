@@ -1,0 +1,59 @@
+{
+  "file": "hope_enrollment_fy2025.json",
+  "sha256": "8516213b4a1756a7e8f313db6348bd9c6bbe242f16b124dbe30d39a21445cf3a",
+  "source_url": "https://azreportcards.azed.gov/api/DataApi/Student%20Enrollment?reportSection=Student%20Enrollment&fiscalYear=2025&educationOrganizationId=969999",
+  "actual_all_group_rows": [
+    {
+      "educationOrganizationId": 969999,
+      "subgroups": "All",
+      "gradeId": 15,
+      "gradeUIDescription": "ALL",
+      "fiscalYear": 2025,
+      "total": 1178,
+      "percentage": 100.0
+    },
+    {
+      "educationOrganizationId": 969999,
+      "subgroups": "All",
+      "gradeId": 9,
+      "gradeUIDescription": "Grade 9",
+      "fiscalYear": 2025,
+      "total": 19,
+      "percentage": 100.0
+    },
+    {
+      "educationOrganizationId": 969999,
+      "subgroups": "All",
+      "gradeId": 10,
+      "gradeUIDescription": "Grade 10",
+      "fiscalYear": 2025,
+      "total": 33,
+      "percentage": 100.0
+    },
+    {
+      "educationOrganizationId": 969999,
+      "subgroups": "All",
+      "gradeId": 11,
+      "gradeUIDescription": "Grade 11",
+      "fiscalYear": 2025,
+      "total": 86,
+      "percentage": 100.0
+    },
+    {
+      "educationOrganizationId": 969999,
+      "subgroups": "All",
+      "gradeId": 12,
+      "gradeUIDescription": "Grade 12",
+      "fiscalYear": 2025,
+      "total": 1040,
+      "percentage": 100.0
+    }
+  ],
+  "nces_id": "040386003535",
+  "id_crosswalk": "../task4_v9_phoenix/recovered_location_audit.csv",
+  "snapshot_compatibility_verified": false,
+  "official_october1_workbook_url": "https://www.azed.gov/sites/default/files/2025/04/Oct1EnrollmentFY2025.xlsx",
+  "download_status": "www and cms hosts both curl HTTP403; web reader recognizes xlsx contenttype but cannot parse",
+  "conditional_combined_student_total": 71856,
+  "conditional_only": true
+}

@@ -1,0 +1,106 @@
+{
+  "main_model_changed": false,
+  "new_target": "Public nonvirtual operational school-location grades9-12 attributed FTE, not all-school headcount or resident access",
+  "observed_student_lower": 70678.0,
+  "unconditional_student_upper": null,
+  "known_FTE_lower": 2512.9700000000003,
+  "hope_official_reported_count": 1178,
+  "hope_snapshot_compatibility_verified": false,
+  "conditional_student_upper": 71856.0,
+  "conditional_education_lower": 0.3440836216705439,
+  "unconditional_public_education_bounds": [
+    0,
+    1
+  ],
+  "upper_endpoint": "1 is closure when missing teacher FTE has no finite upper bound",
+  "source_hashes": {
+    "manifest.json": "176b2c31866b20dc9cb0051c4a1337ce6ab76ce908f6f7955095b0746f29f1b0",
+    "phoenix_secondary_roster.csv": "88e66be7c41d9c5756fe7db11c2caf5e4f8b8a024cf8f66d0c0d6ec97949a4ff",
+    "hope_enrollment_fy2025.json": "8516213b4a1756a7e8f313db6348bd9c6bbe242f16b124dbe30d39a21445cf3a",
+    "hope_source_audit.json": "54cf2197fe70f4dd75f76c442fd32ff673a1dde8c41a11c1d70121e164b25e2e"
+  },
+  "scenarios": [
+    {
+      "scenario": "public_target_unknown",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_vs_same_target": 0,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "phoenix": {
+        "score_lower": 27.028107595003533,
+        "score_upper": 73.58816640508734,
+        "decision_rank": 23,
+        "max_regret": 50.50135310846815
+      }
+    },
+    {
+      "scenario": "public_target_snapshot_compatibility_assumed",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "changed_ranks_vs_same_target": 4,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "phoenix": {
+        "score_lower": 29.127378756327666,
+        "score_upper": 73.58816640508734,
+        "decision_rank": 20,
+        "max_regret": 48.40208194714402
+      }
+    }
+  ]
+}
