@@ -1,0 +1,131 @@
+{
+  "year": 2020,
+  "new_downloads": 0,
+  "current_stage_directly_observed": false,
+  "stage_assumption": "Current attendance with completed secondary3 or completed grades0\u20132 at levels4/5/7; progression is conditional, not directly observed current high-school stage.",
+  "age_rule": "Known ages14\u201318 inclusive; age999 remains optional. Known nonattenders excluded; unspecified attendance/stage/grade retained as optional under prior broad stage rule.",
+  "sampling_uncertainty_included": false,
+  "person_rows": 276007,
+  "scopes": {
+    "age3_17": {
+      "known": {
+        "1": 48914,
+        "3": 83336,
+        "2": 85840,
+        "4": 30856,
+        "6": 2475,
+        "5": 2284,
+        "9": 184
+      },
+      "optional": {
+        "2": 2566,
+        "1": 4616,
+        "4": 319,
+        "": 1631,
+        "3": 998,
+        "9": 144,
+        "5": 22
+      },
+      "ages_known": {
+        "17": 89110,
+        "15": 67612,
+        "16": 85911,
+        "14": 11256
+      },
+      "ages_optional": {
+        "4": 2481,
+        "8": 553,
+        "16": 1144,
+        "9": 458,
+        "3": 1774,
+        "12": 456,
+        "10": 773,
+        "13": 510,
+        "15": 385,
+        "7": 497,
+        "17": 151,
+        "14": 90,
+        "999": 110,
+        "5": 465,
+        "6": 318,
+        "11": 131
+      },
+      "n_known": 7655,
+      "n_optional": 330,
+      "utility_lower": 0.28494207358736334,
+      "utility_upper": 0.5572095030199781,
+      "known_weight": 253889,
+      "optional_weight": 10296
+    },
+    "age14_18": {
+      "known": {
+        "1": 57079,
+        "3": 100543,
+        "2": 103238,
+        "6": 3556,
+        "4": 38136,
+        "5": 2830,
+        "9": 184
+      },
+      "optional": {
+        "1": 301,
+        "4": 303,
+        "": 689,
+        "3": 413,
+        "2": 474,
+        "5": 22
+      },
+      "ages_known": {
+        "17": 89110,
+        "15": 67612,
+        "16": 85911,
+        "18": 51677,
+        "14": 11256
+      },
+      "ages_optional": {
+        "16": 1144,
+        "18": 322,
+        "15": 385,
+        "17": 151,
+        "14": 90,
+        "999": 110
+      },
+      "n_known": 9217,
+      "n_optional": 86,
+      "utility_lower": 0.28328413016281895,
+      "utility_upper": 0.5436413055837657,
+      "known_weight": 305566,
+      "optional_weight": 2202
+    }
+  },
+  "sources": [
+    {
+      "path": "../task4_v15_mexico2020/Censo2020_CA_cdmx_csv.zip",
+      "sha256": "204325a75339582df7df72083889f4081dd06fdb24b2551f2aedd5c2f32e1428"
+    },
+    {
+      "path": "../task4_v15_mexico2020/dictionary.xlsx",
+      "sha256": "e728cdac1872be856ba15c2902a77fb6c03e60c2d98619b7ae8988cc82afb6dc"
+    },
+    {
+      "path": "../task4_v15_mexico2020/completed_grade_metadata.html",
+      "sha256": "f2dbf5a6ba4f78f485ee6eb3810a91bf1b058b26806b497f28d8e2520a240ca9"
+    },
+    {
+      "path": "../task4_v15_mexico2020/education_level_metadata.html",
+      "sha256": "c44b12ed718169154be479bd745a391feafa1efb594c1ae96c6b2578ac4bdb78"
+    },
+    {
+      "path": "../task4_v15_mexico2020/school_attendance_metadata.html",
+      "sha256": "9bef7ac971e68504ef2ac387c20d9371a00ff329a91c1e8d18648977da45e301"
+    },
+    {
+      "path": "../task4_v15_mexico2020/school_time_metadata.html",
+      "sha256": "ae2bf3e9af5a6d9503c8baeb8d13bd34fe515f77ce63890f771620ded31ce596"
+    },
+    {
+      "path": "../task4_v15_mexico2020/extract_commute.py",
+      "sha256": "c6d93fbb6571e961f611c788473a46b85ec9709c87d6e1d9b366f7a0840ed054"
+    }
+  ]
+}

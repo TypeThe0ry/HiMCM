@@ -1,0 +1,246 @@
+{
+  "model_version": "V72",
+  "baseline": "V70",
+  "main_admitted": false,
+  "unchanged_cells": 249,
+  "scenarios": [
+    {
+      "scenario": "v70_before",
+      "changed_cells": 0,
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "selected_cities": [
+        {
+          "city": "Phoenix",
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734,
+          "best_rank": 1,
+          "worst_rank": 25,
+          "possible_champion": true,
+          "necessary_champion": false,
+          "max_regret": 50.50135310846815,
+          "decision_rank": 24,
+          "scenario": "v70_before"
+        },
+        {
+          "city": "Mexico City",
+          "score_lower": 29.360768148619893,
+          "score_upper": 72.66493512945186,
+          "best_rank": 1,
+          "worst_rank": 25,
+          "possible_champion": true,
+          "necessary_champion": false,
+          "max_regret": 48.16869255485179,
+          "decision_rank": 19,
+          "scenario": "v70_before"
+        },
+        {
+          "city": "Tokyo",
+          "score_lower": 40.116441017269246,
+          "score_upper": 70.69606958276474,
+          "best_rank": 1,
+          "worst_rank": 25,
+          "possible_champion": true,
+          "necessary_champion": false,
+          "max_regret": 37.41301968620244,
+          "decision_rank": 2,
+          "scenario": "v70_before"
+        },
+        {
+          "city": "Singapore",
+          "score_lower": 43.45701449386852,
+          "score_upper": 71.59464112225425,
+          "best_rank": 1,
+          "worst_rank": 25,
+          "possible_champion": true,
+          "necessary_champion": false,
+          "max_regret": 34.072446209603164,
+          "decision_rank": 1,
+          "scenario": "v70_before"
+        }
+      ]
+    },
+    {
+      "scenario": "v72_age14_18",
+      "changed_cells": 1,
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "selected_cities": [
+        {
+          "city": "Phoenix",
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734,
+          "best_rank": 1,
+          "worst_rank": 25,
+          "possible_champion": true,
+          "necessary_champion": false,
+          "max_regret": 50.50135310846815,
+          "decision_rank": 24,
+          "scenario": "v72_age14_18"
+        },
+        {
+          "city": "Mexico City",
+          "score_lower": 29.347410161861696,
+          "score_upper": 72.50270463578079,
+          "best_rank": 1,
+          "worst_rank": 25,
+          "possible_champion": true,
+          "necessary_champion": false,
+          "max_regret": 48.18205054160999,
+          "decision_rank": 19,
+          "scenario": "v72_age14_18"
+        },
+        {
+          "city": "Tokyo",
+          "score_lower": 40.116441017269246,
+          "score_upper": 70.69606958276474,
+          "best_rank": 1,
+          "worst_rank": 25,
+          "possible_champion": true,
+          "necessary_champion": false,
+          "max_regret": 37.41301968620244,
+          "decision_rank": 2,
+          "scenario": "v72_age14_18"
+        },
+        {
+          "city": "Singapore",
+          "score_lower": 43.45701449386852,
+          "score_upper": 71.59464112225425,
+          "best_rank": 1,
+          "worst_rank": 25,
+          "possible_champion": true,
+          "necessary_champion": false,
+          "max_regret": 34.072446209603164,
+          "decision_rank": 1,
+          "scenario": "v72_age14_18"
+        }
+      ]
+    }
+  ]
+}
