@@ -23,7 +23,7 @@
 | 最新团队候选城市 | [25城规范表](research/2026-a/data/city_candidates_team_25.csv) |
 | 新增11项指标底稿 | [原始指标稿](research/2026-a/inputs/team/indicator_sources_11_original.md) |
 | 模型主线与重大修订设计 | [研究设计](research/2026-a/design/research_design.md) |
-| 写作、结构与论证经验 | [论文蒸馏](research/2026-a/paper_review/writing_and_reasoning.md) |
+| 写作、结构与论证经验 | [论文蒸馏入口](research/2026-a/paper_review/README.md) · [第二轮细化](research/2026-a/paper_review/round2/README.md) |
 | 创新方向与检验 | [创新路线](research/2026-a/design/innovation_routes.md) |
 | 全球数据口径与来源 | [数据可行性](research/2026-a/data/data_feasibility.md) · [来源登记](research/2026-a/data/source_registry.csv) |
 | 历史获奖论文 | [总目录](library/catalog.csv) · [离线索引](library/index.html) · [论文文件夹](library/papers/) |

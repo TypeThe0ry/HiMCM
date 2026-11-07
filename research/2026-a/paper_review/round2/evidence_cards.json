@@ -1,0 +1,629 @@
+[
+  {
+    "id": "R2-01",
+    "year": "2025",
+    "team": "16739",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16739.pdf",
+    "pdf_pages": [
+      1
+    ],
+    "section": "摘要",
+    "principle": "任务—方法—结果—边界",
+    "observation": "摘要按阶段说明指标、回归、未来评价、情境扩展及政策敏感性，并报告推荐对象。",
+    "interpretation": "摘要应压缩整条推理，而非只展示算法目录。",
+    "transfer_to_A": "每个主要任务写一项输出；真实结果完成后再填数值与推荐。",
+    "caveat": "原文报告不等于本轮复现；方法多并非贡献证据。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-02",
+    "year": "2018",
+    "team": "8992",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2018/outstanding/A/himcm_2018_a_outstanding_8992.pdf",
+    "pdf_pages": [
+      6
+    ],
+    "section": "数据",
+    "principle": "先暴露缺口再选择处理",
+    "observation": "先列数据特征与各字段缺失情况，再解释移除异常对象和后续插补需求。",
+    "interpretation": "数据章节可解释为什么模型必须这样设计。",
+    "transfer_to_A": "先画城市—指标覆盖表，说明是否需要代理、区间或排除。",
+    "caveat": "删样本可能有选择偏差，需记录规则与影响。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-03",
+    "year": "2018",
+    "team": "8992",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2018/outstanding/A/himcm_2018_a_outstanding_8992.pdf",
+    "pdf_pages": [
+      7
+    ],
+    "section": "假设",
+    "principle": "有理由不等于已验证",
+    "observation": "对线性和样本代表性分别列假设及理由；第6页的300/299与本页出现的200需回查一致性。",
+    "interpretation": "列出假设是透明性的起点，不是对假设的证明。",
+    "transfer_to_A": "给每条假设标明作用、可能偏差与检验；统一所有样本数。",
+    "caveat": "这里只指出所读文本的数量口径差异，不推断原作者意图。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-04",
+    "year": "2018",
+    "team": "8992",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2018/outstanding/A/himcm_2018_a_outstanding_8992.pdf",
+    "pdf_pages": [
+      8
+    ],
+    "section": "方法解释",
+    "principle": "用一个完整算例代替重复铺陈",
+    "observation": "选一个待插补变量，展示自变量、系数和筛选过程，再说明其余变量采取同类程序。",
+    "interpretation": "读者需要能跟做的代表性实例。",
+    "transfer_to_A": "完整演示一个城市的一项指标：原值、单位、变换、维度贡献。",
+    "caveat": "这不意味着接受逐步显著性筛选为本题最优方法。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-05",
+    "year": "2018",
+    "team": "8992",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2018/outstanding/A/himcm_2018_a_outstanding_8992.pdf",
+    "pdf_pages": [
+      18,
+      19
+    ],
+    "section": "敏感性",
+    "principle": "区分头部集合与精确顺序",
+    "observation": "扰动后展示前20名单，并讨论新进入对象、内部重排与头部保持。",
+    "interpretation": "稳定性有多个层次，应报告与决策相关的层次。",
+    "transfer_to_A": "同时检查冠军、前3集合和全榜顺序，而非只看分数曲线。",
+    "caveat": "仅限所测参数和范围，不能外推为普遍稳定。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-06",
+    "year": "2018",
+    "team": "8992",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2018/outstanding/A/himcm_2018_a_outstanding_8992.pdf",
+    "pdf_pages": [
+      23
+    ],
+    "section": "个性化",
+    "principle": "偏好依赖不豁免检验",
+    "observation": "个性化模型沿用基础框架，正文以依赖用户输入解释未单独安排该部分敏感性测试。",
+    "interpretation": "偏好改变时应当响应，但测量误差和极端输入仍需检验。",
+    "transfer_to_A": "分开处理合理偏好差异与录入误差，检查一致偏好、极端偏好、并列情况。",
+    "caveat": "此条是对论证范围的追问，不是认定整篇没有任何相关检查。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-07",
+    "year": "2020",
+    "team": "11135",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2020/outstanding/A/himcm_2020_a_outstanding_11135.pdf",
+    "pdf_pages": [
+      6
+    ],
+    "section": "方法结构",
+    "principle": "每一步解决一种失败",
+    "observation": "总览将不可接受选项过滤、偏好指标、权重处理和成本收益比较分成四步。",
+    "interpretation": "流程图的价值在于交代分工和接口。",
+    "transfer_to_A": "把城市资格、可比测量、价值权重与推荐分开写，说明输入输出。",
+    "caveat": "本题居住城市资格条件尚未冻结，不照搬工作资格。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-08",
+    "year": "2020",
+    "team": "11135",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2020/outstanding/A/himcm_2020_a_outstanding_11135.pdf",
+    "pdf_pages": [
+      9
+    ],
+    "section": "资格与偏好",
+    "principle": "不能用高分抵消无法参与",
+    "observation": "先用二元条件过滤工作，再计算可比指标和排名。",
+    "interpretation": "硬约束和可交换偏好属于不同数学对象。",
+    "transfer_to_A": "学校准入与预算如要作硬约束，应先说明适用人群、依据与后果。",
+    "caveat": "不要把个人不喜欢变成所有学生的资格门槛。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-09",
+    "year": "2020",
+    "team": "11135",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2020/outstanding/A/himcm_2020_a_outstanding_11135.pdf",
+    "pdf_pages": [
+      18
+    ],
+    "section": "基准比较",
+    "principle": "比较必须回答共同的问题",
+    "observation": "将按优先级逐层打破平局的简单方法，与多指标模型在一个虚构人物上比较。",
+    "interpretation": "有基准比没有好，但优越性需要独立的评价标准。",
+    "transfer_to_A": "先写两模型应满足的属性，再做多种预设案例；不按新模型偏好定义正确答案。",
+    "caveat": "一个构造案例不能证明全体用户上的准确率。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-10",
+    "year": "2020",
+    "team": "11135",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2020/outstanding/A/himcm_2020_a_outstanding_11135.pdf",
+    "pdf_pages": [
+      21
+    ],
+    "section": "敏感性",
+    "principle": "把参数变化翻译为决策翻转",
+    "observation": "说明寻找让推荐第一名改变的关键因素，并展示权重与得分关系。",
+    "interpretation": "决策临界点比笼统说波动不大更可用。",
+    "transfer_to_A": "报告哪项权重变到哪里会换首选，并保持其他权重归一规则清楚。",
+    "caveat": "实际阈值必须用本题真实输入计算，不能照搬原文。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-11",
+    "year": "2024",
+    "team": "15041",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2024/outstanding/A/himcm_2024_a_outstanding_15041.pdf",
+    "pdf_pages": [
+      6
+    ],
+    "section": "指标表",
+    "principle": "让抽象目标落地",
+    "observation": "表格同时列出目标层、子因素、量化/定性类型、单位和选择理由。",
+    "interpretation": "指标表本身应承担概念到测量的论证。",
+    "transfer_to_A": "给五项或十一项候选都补上测什么、为什么、单位、尺度、反例。",
+    "caveat": "表格完整不保证跨国可比，也不保证指标足够覆盖高中生体验。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-12",
+    "year": "2024",
+    "team": "15041",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2024/outstanding/A/himcm_2024_a_outstanding_15041.pdf",
+    "pdf_pages": [
+      5
+    ],
+    "section": "代理假设",
+    "principle": "把替代说在使用之前",
+    "observation": "将场馆容量、平台浏览量等代替难得观测的做法写成显式假设。",
+    "interpretation": "代理值必须在计算前暴露，而非藏在局限段落。",
+    "transfer_to_A": "区分行车速度与通学体验、房价比与家庭当期住房负担。",
+    "caveat": "原文的替代关系不自动可靠；要检验代理偏差。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-13",
+    "year": "2024",
+    "team": "15041",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2024/outstanding/A/himcm_2024_a_outstanding_15041.pdf",
+    "pdf_pages": [
+      17
+    ],
+    "section": "权重",
+    "principle": "公开判断来源",
+    "observation": "对子因素给出明确数值，并说明来自队伍共识。",
+    "interpretation": "主观判断公开可提高可审查性，但不会因此消失。",
+    "transfer_to_A": "若权重来自团队判断就如实写明，再探索其他合理判断。",
+    "caveat": "公开团队共识不能改写成专家调查或学生总体偏好。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-14",
+    "year": "2024",
+    "team": "15504",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2024/outstanding/A/himcm_2024_a_outstanding_15504.pdf",
+    "pdf_pages": [
+      12
+    ],
+    "section": "问题形式化",
+    "principle": "先判断输出类型",
+    "observation": "将体育项目纳入与否表述为分类问题，并把基础项、惯性项、修正项分开说明。",
+    "interpretation": "方法选择应从目标输出及可用标签产生。",
+    "transfer_to_A": "本题是规范性城市排序；没有真实冠军标签时不声称监督学习准确率。",
+    "caveat": "这里只借鉴形式化方式，不建议照搬其具体概率组合。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-15",
+    "year": "2024",
+    "team": "15504",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2024/outstanding/A/himcm_2024_a_outstanding_15504.pdf",
+    "pdf_pages": [
+      13
+    ],
+    "section": "验证协议",
+    "principle": "写出切分不等于排除泄漏",
+    "observation": "正文给出随机五折、历史时期、训练/验证与参数搜索安排。",
+    "interpretation": "可复核协议需要进一步检查依赖结构和全部处理步骤。",
+    "transfer_to_A": "若用跨城市/跨年份数据，说明每一步在哪个切分上拟合；考虑按时间或城市留出。",
+    "caveat": "不能仅凭所读段落断言发生了泄漏，需要代码与完整流程确认。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-16",
+    "year": "2024",
+    "team": "15504",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2024/outstanding/A/himcm_2024_a_outstanding_15504.pdf",
+    "pdf_pages": [
+      19,
+      20
+    ],
+    "section": "敏感性",
+    "principle": "固定模型还是重估模型",
+    "observation": "扰动输入和惯性参数后讨论准确率；文本还提到修正项对参数变化的补偿。",
+    "interpretation": "敏感性实验必须说明扰动后是否重新拟合，否则含义不同。",
+    "transfer_to_A": "固定评分规则的误差传播，与重新估计模型的适应性分开报告。",
+    "caveat": "是否在每次扰动重新估计需回查实现，当前只列必要核验项。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-17",
+    "year": "2025",
+    "team": "16442",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16442.pdf",
+    "pdf_pages": [
+      4
+    ],
+    "section": "假设",
+    "principle": "通过控制条件界定比较",
+    "observation": "固定活动规模和持续时间，使比较聚焦地点结构差异。",
+    "interpretation": "公平比较先规定哪些条件被保持一致。",
+    "transfer_to_A": "给所有城市使用同一学生生活情景或可比统计口径，并解释控制了什么。",
+    "caveat": "控制条件也可能压平真实差异，应说明结论是条件性的。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-18",
+    "year": "2025",
+    "team": "16442",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16442.pdf",
+    "pdf_pages": [
+      12
+    ],
+    "section": "赋权",
+    "principle": "计算一致性与价值合理性分开",
+    "observation": "列判断矩阵、权重和一致性检查，再接入数据离散度权重。",
+    "interpretation": "计算协议可追踪是优势，但一致性不能替代价值理由。",
+    "transfer_to_A": "分别说明数据怎样变化，以及为什么这些生活维度值得重视。",
+    "caveat": "不由此推断该文权重错误；只限制能支持的主张。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-19",
+    "year": "2025",
+    "team": "16442",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16442.pdf",
+    "pdf_pages": [
+      15,
+      16,
+      17
+    ],
+    "section": "敏感性",
+    "principle": "权重—得分—名次—解释闭环",
+    "observation": "先报告不同混合系数下的权重，再列城市得分与名次；另扰动参与人数并讨论首选。",
+    "interpretation": "检验应走到最终决策，而不是停在中间参数。",
+    "transfer_to_A": "每张敏感性表至少回答分数变多少、名次是否换、建议是否换。",
+    "caveat": "在所测范围内稳定，不等于所有合理情景下稳定。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-20",
+    "year": "2025",
+    "team": "16442",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16442.pdf",
+    "pdf_pages": [
+      18
+    ],
+    "section": "扩展",
+    "principle": "保留骨架说明变化",
+    "observation": "新任务沿用主评价框架，列出调整原指标、增加指标和更换权重处理的理由。",
+    "interpretation": "扩展要说明继承、修改与新增，避免另起一个不相干模型。",
+    "transfer_to_A": "重大修订用旧新结构对照表，指出新增信息怎样进入原模型。",
+    "caveat": "跨情境能运行不等于已证明普适有效。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-21",
+    "year": "2025",
+    "team": "16738",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16738.pdf",
+    "pdf_pages": [
+      5,
+      6
+    ],
+    "section": "指标组织",
+    "principle": "先讲现实过程再讲算法",
+    "observation": "按资源供应、消耗、产生负荷和承受能力组织指标，再进入评价。",
+    "interpretation": "算法之前的组织框架决定文章是否有自己的问题理解。",
+    "transfer_to_A": "可按学生一天或机会获得过程组织指标，但需要实际测量支撑。",
+    "caveat": "不能只换四个漂亮层名，不解释指标与层级关系。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-22",
+    "year": "2025",
+    "team": "16738",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16738.pdf",
+    "pdf_pages": [
+      13
+    ],
+    "section": "判断来源",
+    "principle": "模拟专家不能写成真实专家",
+    "observation": "正文明确描述模拟专家面板进行两两比较。",
+    "interpretation": "来源透明很关键；转述时不能把模拟意见变成外部实测证据。",
+    "transfer_to_A": "区分团队判断、文献依据、模拟偏好与真实调查。",
+    "caveat": "这里保留原文的模拟性质，不声称开展过真实专家咨询。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-23",
+    "year": "2025",
+    "team": "16738",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16738.pdf",
+    "pdf_pages": [
+      24
+    ],
+    "section": "局限",
+    "principle": "从具体代理返回适用范围",
+    "observation": "局限明确指出部分城市数据不足而借用州级或其他代理，可能遗漏本地差异。",
+    "interpretation": "局限应追溯到具体输入或假设，而不止说数据少。",
+    "transfer_to_A": "指出哪些城市、哪些指标用了较大地理尺度及可能影响。",
+    "caveat": "原文承认代理局限不等于已经量化偏差。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-24",
+    "year": "2025",
+    "team": "16739",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16739.pdf",
+    "pdf_pages": [
+      6,
+      7
+    ],
+    "section": "统计论证",
+    "principle": "拟合解释不能越过样本能力",
+    "observation": "用有限历史主办城市做特征降维和环境量映射，正文给出输入与运算步骤。",
+    "interpretation": "清楚的流程仍需说明样本规模、参数数量和外推范围。",
+    "transfer_to_A": "城市很少时优先透明的可解释计算；若回归则检查样本与验证设计。",
+    "caveat": "本轮未复现估计，不据此给出该模型的实际泛化误差。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-25",
+    "year": "2025",
+    "team": "16739",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16739.pdf",
+    "pdf_pages": [
+      20,
+      21
+    ],
+    "section": "情景",
+    "principle": "将政策讨论连接到输入",
+    "observation": "把基础设施、能源和交通策略参数化，说明作用于哪些城市特征及环境指标。",
+    "interpretation": "建议需有模型中的落点，才不成为泛泛倡议。",
+    "transfer_to_A": "若讨论改进某城市，写出改哪项输入、假设幅度和得分变化。",
+    "caveat": "设定情景内得分变好不等于政策因果效果或真实投资收益。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-26",
+    "year": "2025",
+    "team": "16739",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2025/outstanding/B/himcm_2025_b_outstanding_16739.pdf",
+    "pdf_pages": [
+      24
+    ],
+    "section": "非技术表达",
+    "principle": "把算法名换成决策理由",
+    "observation": "信件先交代比较范围，给出首选，再用能源、交通、水废物等通俗理由支持。",
+    "interpretation": "非技术文本不是删去公式，而是重组信息优先级。",
+    "transfer_to_A": "新闻稿先回答哪个城市、适合谁、为什么、何时需改选。",
+    "caveat": "其信件格式仅作表达借鉴，今年题目要求新闻稿。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-27",
+    "year": "2025",
+    "team": "16742",
+    "award": "Finalist",
+    "paper_path": "library/papers/2025/finalist/B/himcm_2025_b_finalist_16742.pdf",
+    "pdf_pages": [
+      15
+    ],
+    "section": "一致性校对",
+    "principle": "表题也属于论证的一部分",
+    "observation": "城市环保评价中的表3标题出现房间救援因素的表述。",
+    "interpretation": "正文之外的表题、符号、交叉引用也需情境一致。",
+    "transfer_to_A": "逐表核对表题与变量，避免模板残留造成读者误解。",
+    "caveat": "只记录文本不匹配，不推断来源、抄袭或奖项原因。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-28",
+    "year": "2025",
+    "team": "16742",
+    "award": "Finalist",
+    "paper_path": "library/papers/2025/finalist/B/himcm_2025_b_finalist_16742.pdf",
+    "pdf_pages": [
+      20,
+      21
+    ],
+    "section": "敏感性",
+    "principle": "中间层检查不能代替输出层",
+    "observation": "该处展示混合系数下各指标权重轨迹，并讨论权重较重的维度。",
+    "interpretation": "如果主张推荐稳健，还需要将变化继续传播到城市得分与名次。",
+    "transfer_to_A": "将权重图、城市得分图、头部城市变动表配套呈现。",
+    "caveat": "不声称该论文其他部分不存在任何验证。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-29",
+    "year": "2025",
+    "team": "17372",
+    "award": "Finalist",
+    "paper_path": "library/papers/2025/finalist/B/himcm_2025_b_finalist_17372.pdf",
+    "pdf_pages": [
+      14,
+      16,
+      17
+    ],
+    "section": "验证",
+    "principle": "方法间一致不是外部真值",
+    "observation": "用另一排序方法和Kendall相关讨论结果一致性；第16页已视觉核对。",
+    "interpretation": "这是方法间一致性证据，不能独立证明真实最佳地点。",
+    "transfer_to_A": "与替代聚合方法比较后，再做边界、误差、支配性等不同层检验。",
+    "caveat": "扫描件公式有OCR风险；统计量名称、并列处理和得分方向需另核实。",
+    "read_mode": "OCR with page16 visual cross-check"
+  },
+  {
+    "id": "R2-30",
+    "year": "2025",
+    "team": "17372",
+    "award": "Finalist",
+    "paper_path": "library/papers/2025/finalist/B/himcm_2025_b_finalist_17372.pdf",
+    "pdf_pages": [
+      21,
+      22
+    ],
+    "section": "敏感性",
+    "principle": "最终目标需要最终输出",
+    "observation": "该节改混合系数并讨论最终权重的稳定性。",
+    "interpretation": "中间权重稳定不自动推出相近城市的推荐不变。",
+    "transfer_to_A": "进一步计算各城得分、名次和首选翻转点。",
+    "caveat": "来自OCR段落审阅，不做原文数值的复算判断。",
+    "read_mode": "OCR with page16 visual cross-check"
+  },
+  {
+    "id": "R2-31",
+    "year": "2023",
+    "team": "13643",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2023/outstanding/A/himcm_2023_a_outstanding_13643.pdf",
+    "pdf_pages": [
+      9
+    ],
+    "section": "机制",
+    "principle": "参数与过程对应",
+    "observation": "生命周期分阶段，生长、散播与休眠规则对应具体条件，并在参数附近给来源。",
+    "interpretation": "复杂性应来自现实过程而不是额外命名。",
+    "transfer_to_A": "指标或模型模块都说明实际影响哪段学生体验，并把引用放在作用处。",
+    "caveat": "引用出现只说明可追踪，不代表本轮核实了每个生物学参数。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-32",
+    "year": "2023",
+    "team": "13643",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2023/outstanding/A/himcm_2023_a_outstanding_13643.pdf",
+    "pdf_pages": [
+      22
+    ],
+    "section": "情境",
+    "principle": "全局属性与地方适配分开",
+    "observation": "将全局影响因子与地点相关的局部影响因子分开，再选不同环境作比较。",
+    "interpretation": "同一对象在不同情境下可以有不同适配结果。",
+    "transfer_to_A": "将共用城市条件与学生偏好/资格情景分开，不硬称所有人同一首选。",
+    "caveat": "不能因此回避题目要求的主定义下完整排名。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-33",
+    "year": "2023",
+    "team": "13904",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2023/outstanding/B/himcm_2023_b_outstanding_13904.pdf",
+    "pdf_pages": [
+      17
+    ],
+    "section": "模型整合",
+    "principle": "上一步输出成为下一步输入",
+    "observation": "把票务收入、节约成本和运营支出转化为下一年可用资金，回到年度规划约束。",
+    "interpretation": "模块之间要有变量传递，而非只在流程图上画箭头。",
+    "transfer_to_A": "说明初始数据、评分、诊断与修订各自传递哪些量。",
+    "caveat": "运行多城案例不能单独证明所有城市的可迁移性。",
+    "read_mode": "selected PDF passages"
+  },
+  {
+    "id": "R2-34",
+    "year": "2023",
+    "team": "14323",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2023/outstanding/B/himcm_2023_b_outstanding_14323.pdf",
+    "pdf_pages": [
+      15
+    ],
+    "section": "敏感性",
+    "principle": "把不确定性转成取数优先级",
+    "observation": "逐项扰动财务参数，列输出变化并据此指出应优先准确测量的因素。",
+    "interpretation": "敏感性可以指导有限时间下的数据工作顺序。",
+    "transfer_to_A": "优先核查足以改变首选的指标，而非只搜容易取得的数据。",
+    "caveat": "用规定幅度试验得到的是条件性优先级，不是现实重要性的普遍排序。",
+    "read_mode": "PDF text; page4 visual cross-check"
+  },
+  {
+    "id": "R2-35",
+    "year": "2023",
+    "team": "14323",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2023/outstanding/B/himcm_2023_b_outstanding_14323.pdf",
+    "pdf_pages": [
+      4
+    ],
+    "section": "数值校对",
+    "principle": "获奖身份不替代算术与单位检查",
+    "observation": "原页把45.9乘以4写成193.6；普通乘法为183.6。该页已对照PDF图像确认。",
+    "interpretation": "应在源值、代入计算和报告结果之间做独立检查。",
+    "transfer_to_A": "给每项指标保留可复算样例，核对单位与全篇重复出现的结果。",
+    "caveat": "不据此否定整篇；还需回查容量、强度单位及后续计算如何使用这些数。",
+    "read_mode": "PDF text; page4 visual cross-check"
+  },
+  {
+    "id": "R2-36",
+    "year": "2023",
+    "team": "14140",
+    "award": "Outstanding",
+    "paper_path": "library/papers/2023/outstanding/A/himcm_2023_a_outstanding_14140.pdf",
+    "pdf_pages": [
+      5,
+      6,
+      8,
+      9,
+      11
+    ],
+    "section": "重大修订",
+    "principle": "由遗漏机制推动模型变化",
+    "observation": "先给简单种子散播模型，再加入不同路径机制与受密度、气候影响的存活过程。",
+    "interpretation": "修订叙事可写成原模型遗漏什么、新增结构怎样回应、输出怎样改变。",
+    "transfer_to_A": "先冻结V0并诊断，再解释V1每一项修改的必要性与代价。",
+    "caveat": "序列更复杂不等于现实更准确；仍需同输入对照与独立检验。",
+    "read_mode": "selected PDF passages"
+  }
+]
