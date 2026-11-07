@@ -1,0 +1,74 @@
+[
+  {
+    "scenario": "baseline_v7",
+    "possible_champions": 25,
+    "continuous_possible_champions": 25,
+    "changed_decision_ranks": 0,
+    "mean_score_width": 38.083135779141436,
+    "minimax_regret": 28.173587987562662,
+    "minimax_choices": [
+      "Singapore"
+    ],
+    "selected_ranks": {
+      "Phoenix": 24,
+      "Mexico City": 21,
+      "Sao Paulo": 14,
+      "Singapore": 1
+    },
+    "kendall_tau_vs_baseline": 0.9999999999999998
+  },
+  {
+    "scenario": "mexico2020_only",
+    "possible_champions": 25,
+    "continuous_possible_champions": 25,
+    "changed_decision_ranks": 2,
+    "mean_score_width": 38.08224838820452,
+    "minimax_regret": 28.173587987562662,
+    "minimax_choices": [
+      "Singapore"
+    ],
+    "selected_ranks": {
+      "Phoenix": 24,
+      "Mexico City": 20,
+      "Sao Paulo": 14,
+      "Singapore": 1
+    },
+    "kendall_tau_vs_baseline": 0.9933333333333332
+  },
+  {
+    "scenario": "combined_municipal",
+    "possible_champions": 25,
+    "continuous_possible_champions": 25,
+    "changed_decision_ranks": 11,
+    "mean_score_width": 37.865699806543994,
+    "minimax_regret": 28.173587987562662,
+    "minimax_choices": [
+      "Singapore"
+    ],
+    "selected_ranks": {
+      "Phoenix": 24,
+      "Mexico City": 20,
+      "Sao Paulo": 6,
+      "Singapore": 1
+    },
+    "kendall_tau_vs_baseline": 0.94
+  },
+  {
+    "scenario": "combined_mexico_all_age",
+    "possible_champions": 25,
+    "continuous_possible_champions": 25,
+    "changed_decision_ranks": 9,
+    "mean_score_width": 37.87205636540776,
+    "minimax_regret": 28.173587987562662,
+    "minimax_choices": [
+      "Singapore"
+    ],
+    "selected_ranks": {
+      "Phoenix": 24,
+      "Mexico City": 21,
+      "Sao Paulo": 6,
+      "Singapore": 1
+    },
+    "kendall_tau_vs_baseline": 0.9466666666666665
+  }
+]
