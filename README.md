@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 最新高中补数 V34 | [Delhi真实师资计数：排名18→14](research/2026-a/results/task4_v34_delhi_school/README.md) |
 | 分区聚合检验 V33 | [真实16区数据检验汇总偏差](research/2026-a/results/task4_v33_district_resources/README.md) |
 | 最新教育修订 V32 | [Warsaw真实分母界与Shanghai新学年](research/2026-a/results/task4_v32_school_stage/README.md) |
 | 最新补数可行性 V31 | [Phoenix四项方案的证据强度门槛](research/2026-a/results/task4_v31_acquisition/README.md) |
@@ -130,7 +131,7 @@ V6沿用8项主指标各0.1125、公交和泳池两项辅助各0.05的规范权�
 
 ## 使用与复现
 
-当前条件模型可运行 `python3 research/2026-a/scripts/task4_school_stage_revision.py`。历史累计模型与补数策略可在本仓库根目录运行：
+当前条件模型可运行 `python3 research/2026-a/scripts/task4_delhi_school_revision.py`。历史累计模型与补数策略可在本仓库根目录运行：
 
 ```sh
 python3 research/2026-a/scripts/task4_combined_evidence.py

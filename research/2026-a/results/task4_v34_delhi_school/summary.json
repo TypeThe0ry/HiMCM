@@ -1,0 +1,151 @@
+{
+  "main_admitted": false,
+  "new_city_indicator_cells": 1,
+  "primary_scenario": "participating_headcount",
+  "scope": "Delhi NCT grade11-12 all-management school pupils per participating teacher headcount; shared teachers counted once, not workload FTE. Allocation scenario is conditional sensitivity, not observed teaching hours.",
+  "sources": [
+    {
+      "file": "manifest.json",
+      "sha256": "161e35e8ba2ca71a058340989a2e498e7142716686cd5e64ae93e1dad2256080"
+    },
+    {
+      "file": "observation.json",
+      "sha256": "fbee1b86beac4c4bd442e21e7389ebffd982e29b61401699a91a521d358055be"
+    },
+    {
+      "file": "extract.py",
+      "sha256": "62181043c25533d6e5a5733386d21fcdd228f9b0d29f9bbe0e82afcbba81267e"
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "v32_before",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "delhi": {
+        "score_lower": 30.035171427259844,
+        "score_upper": 67.97066588460903,
+        "decision_rank": 18,
+        "max_regret": 47.494289276211845
+      },
+      "phoenix_rank": 24
+    },
+    {
+      "scenario": "participating_headcount",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 5,
+      "kendall_tau": 0.973333333333333,
+      "delhi": {
+        "score_lower": 32.868011011201176,
+        "score_upper": 63.89547851443059,
+        "decision_rank": 14,
+        "max_regret": 44.66144969227051
+      },
+      "phoenix_rank": 24
+    },
+    {
+      "scenario": "shared_allocation_sensitivity",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 4,
+      "kendall_tau": 0.9799999999999999,
+      "delhi": {
+        "score_lower": 32.59899014495637,
+        "score_upper": 63.89547851443059,
+        "decision_rank": 15,
+        "max_regret": 44.93047055851532
+      },
+      "phoenix_rank": 24
+    }
+  ]
+}

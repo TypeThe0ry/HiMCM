@@ -86,3 +86,9 @@ $$[\max(0,\underline T-t_{203,.9875}SE(\underline T)),\min(1,\overline T+t_{203,
 最新条件入口为[school_bounds()](../scripts/task4_school_stage_revision.py)。Shanghai以2025学年235542名普通高中学生/23999名专任教师替换旧年份。Warsaw青年普通高中87999名学生的教师分配未知，但不超过全部普通高中6080 FTE（含1 FTE发布精度保护），因此教育效用界为[0,15/(15+87999/6080)]。青年与成人教师分配保留未知，FTE与人数口径差异明确保留。
 
 两项修订只影响对应教育格。Warsaw得分上界74.317458→70.291549，排名仍13；Shanghai仍6。Singapore推荐、Cape Town第5、Phoenix第24和25个可能冠军不变。公式及权重保持上述定义，详见[V32对照](../results/task4_v32_school_stage/README.md)。
+
+## V34：Delhi当前高中任课教师人数
+
+当前条件入口为[delhi_bounds()](../scripts/task4_delhi_school_revision.py)。新增2024/25官方11–12年级学生603437/参与高中教学教师30186的精确人数比19.990624793，教育效用0.4286862578。教师含跨学段任教者，不是FTE。另以26766+3420c、c∈[0,1]作为分母检验兼教教师贡献假设，主模型仍使用实际任课人数。
+
+Delhi得分界由[30.035171,67.970666]变为[32.868011,63.895479]，决策名次18→14；兼教贡献敏感性为第15。Singapore推荐、Phoenix第24及25个可能冠军保持。其余249格和上述评分公式不变。[完整对照](../results/task4_v34_delhi_school/README.md)保留范围、验证与原件链接。
