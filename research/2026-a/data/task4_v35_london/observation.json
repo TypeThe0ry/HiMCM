@@ -1,0 +1,42 @@
+{
+  "city": "London",
+  "year": "2024/25",
+  "pupil_census": "January 2025",
+  "workforce_census": "November 2024",
+  "year12_pupils": 56499,
+  "year13_pupils": 49547,
+  "students": 106046,
+  "secondary_teacher_headcount_estimate": 38178.636360000004,
+  "secondary_teacher_fte_estimate": 36359.32545,
+  "conditional_ptr_lower": 2.7776267072520446,
+  "conditional_utility_upper": 0.8437571700097087,
+  "utility_lower": 0,
+  "main_admitted": false,
+  "requires": "Treat published workforce estimate as a containing teacher total for the later pupil census; state-funded secondary school sector only, excludes independent and FE colleges. Sixth-form teacher allocation unknown. No bound on workforce estimation error established. Workforce excludes some former FE sixth-form colleges now academies and groups multi-contract teachers by main contract; containment across pupil/workforce populations is unverified.",
+  "pupil_rows": [
+    {
+      "ncyear": "Year 12",
+      "headcount": 56499,
+      "full_time": 56498,
+      "part_time": 1
+    },
+    {
+      "ncyear": "Year 13",
+      "headcount": 49547,
+      "full_time": 49547,
+      "part_time": 0
+    }
+  ],
+  "teacher_rows": [
+    {
+      "region_name": "Inner London",
+      "hc_all_teachers": "13215.63636",
+      "fte_all_teachers": "12638.77545"
+    },
+    {
+      "region_name": "Outer London",
+      "hc_all_teachers": "24963",
+      "fte_all_teachers": "23720.55"
+    }
+  ]
+}

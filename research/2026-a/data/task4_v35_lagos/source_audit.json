@@ -1,0 +1,26 @@
+{
+  "access_date": "2026-11-07",
+  "new_admitted_observations": 0,
+  "city": "Lagos",
+  "sources": [
+    {
+      "url": "https://nssec.gov.ng/wp-content/uploads/2025/06/2024-Data-for-SSS.pdf",
+      "title": "2024 Data for Senior Secondary Schools",
+      "access": "Local and web direct retrieval HTTP403; indexed excerpts readable",
+      "limitation": "Indexed table16 uses Government Teachers wording; full context not verified, may be subject-specific. No all-teacher count admitted."
+    },
+    {
+      "url": "https://nemis.education.gov.ng/NIGERIA%20EDUCATION%20DIGEST%202022%20current.pdf",
+      "title": "Nigeria Education Digest2022",
+      "access": "Local redirects to emis.education.gov.ng then404; web direct404; indexed tables readable",
+      "limitation": "Raw PDF unavailable; indexed teacher rows need source audit. Lagos public teacher male value58122 repeats pupil age-bin value; this is a warning to inspect raw source, not proof of a typo. Other displayed rows have qualified totals exceeding all teachers; do not silently repair."
+    },
+    {
+      "url": "https://emis.education.gov.ng/portal/asc/lga/WgUVHd6LYlp/",
+      "title": "Oshodi/Isolo LGA2024 ASC portal",
+      "access": "Official page no readable body from web reader",
+      "limitation": "Indexed learner-teacher ratio lacks high-school-specific scope and is singleLGA, not allLagos"
+    }
+  ],
+  "decision": "Keep Lagos upper-secondary PTR unknown until raw table and coverage are verified. No city/state substitution or indexed numeric row is admitted."
+}

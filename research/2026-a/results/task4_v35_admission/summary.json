@@ -1,0 +1,99 @@
+{
+  "new_admitted_cells": 0,
+  "main_model_changed": false,
+  "canonical_function": "task4_delhi_school_revision.delhi_bounds",
+  "london_main_bounds": [
+    0,
+    1
+  ],
+  "inadmissible_naive_cap": 0.8437571700097087,
+  "source_hashes": {
+    "manifest.json": "c250ae703483e9d98d1fc2eef17821e35d8467209eabe8dd0abdbeeeaf8fc95b",
+    "observation.json": "dfa8f97d0e2f19ea3831a1cc8243f451a9e7bf5559b9082fadee850a3c59b8d5",
+    "extract.py": "b253e035dad42c6ee93fe36da7e1d9b83a29990a88ccdd98ecd25d55e6035ab1"
+  },
+  "scenarios": [
+    {
+      "scenario": "current_evidence_unchanged",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "london": {
+        "score_lower": 30.74489906649376,
+        "score_upper": 71.6796832520236,
+        "decision_rank": 17,
+        "max_regret": 46.78456163697793
+      }
+    },
+    {
+      "scenario": "inadmissible_naive_cap",
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "london": {
+        "score_lower": 30.74489906649376,
+        "score_upper": 70.91791420071714,
+        "decision_rank": 17,
+        "max_regret": 46.78456163697793
+      }
+    }
+  ]
+}
