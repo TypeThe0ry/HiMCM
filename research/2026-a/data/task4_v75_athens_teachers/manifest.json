@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://www.statistics.gr/documents/20181/89fa1bbb-1edb-1b2a-daf0-68db31e55130",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.statistics.gr', port=443): Max retries exceeded with url: /documents/20181/89fa1bbb-1edb-1b2a-daf0-68db31e55130 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fed2823e1c0>, 'Connection to www.statistics.gr timed out. (connect timeout=25)'))"
+  },
+  {
+    "url": "https://lms.statistics.gr/documents/20181/17831637/GreeceInFigures_2022Q4_EN.pdf/6c27bcd3-565a-1405-c091-e0a91fdbf4b8",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='lms.statistics.gr', port=443): Max retries exceeded with url: /documents/20181/17831637/GreeceInFigures_2022Q4_EN.pdf/6c27bcd3-565a-1405-c091-e0a91fdbf4b8 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fed000b4ac0>, 'Connection to lms.statistics.gr timed out. (connect timeout=25)'))"
+  },
+  {
+    "url": "https://www.statistics.gr/el/statistics/-/publication/SED23/2020",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.statistics.gr', port=443): Max retries exceeded with url: /el/statistics/-/publication/SED23/2020 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fed000bfa00>, 'Connection to www.statistics.gr timed out. (connect timeout=25)'))"
+  },
+  {
+    "url": "https://www.statistics.gr/en/statistics/-/publication/SED27/2020",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.statistics.gr', port=443): Max retries exceeded with url: /en/statistics/-/publication/SED27/2020 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fed000bfdc0>, 'Connection to www.statistics.gr timed out. (connect timeout=25)'))"
+  },
+  {
+    "url": "https://www.statistics.gr/documents/20181/75b078d9-3791-1630-fb35-26f01d482e9c",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.statistics.gr', port=443): Max retries exceeded with url: /documents/20181/75b078d9-3791-1630-fb35-26f01d482e9c (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fa81809c280>, 'Connection to www.statistics.gr timed out. (connect timeout=15)'))"
+  },
+  {
+    "file": "general2019_20_web_extract.json",
+    "url": "https://www.statistics.gr/documents/20181/75b078d9-3791-1630-fb35-26f01d482e9c",
+    "kind": "web_tool_extraction_not_original_pdf",
+    "sha256": "1cb493db78d2083f7f8a328d2b08cb8e5b85464c3bc4c6ea5afb0da908df90d4",
+    "bytes": 19037,
+    "retrieved_utc": "2026-11-07T18:10:37.039545+00:00"
+  }
+]

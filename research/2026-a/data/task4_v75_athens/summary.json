@@ -1,0 +1,93 @@
+{
+  "new_admitted_cells": 0,
+  "main_admitted": false,
+  "source_rows": {
+    "students": 27703,
+    "directory": 14181
+  },
+  "observed_year_labels": [
+    "2018",
+    "2019"
+  ],
+  "academic_year_mapping_verified": false,
+  "directory_reference_year_known": false,
+  "athens_directory_records": 468,
+  "athens_ward_labels": [
+    "1ου ΔΗΜ. ΔΙΑΜΕΡ. ΑΘΗΝΑΙΩΝ",
+    "2ου ΔΗΜ. ΔΙΑΜΕΡ. ΑΘΗΝΑΙΩΝ",
+    "3ου ΔΗΜ. ΔΙΑΜΕΡ. ΑΘΗΝΑΙΩΝ",
+    "4ου ΔΗΜ. ΔΙΑΜΕΡ. ΑΘΗΝΑΙΩΝ",
+    "5ου ΔΗΜ. ΔΙΑΜΕΡ. ΑΘΗΝΑΙΩΝ",
+    "6ου ΔΗΜ. ΔΙΑΜΕΡ. ΑΘΗΝΑΙΩΝ",
+    "7ου ΔΗΜ. ΔΙΑΜΕΡ. ΑΘΗΝΑΙΩΝ"
+  ],
+  "age14_18_identified": false,
+  "current_city_teacher_count": null,
+  "scopes": [
+    {
+      "linkage": "exact",
+      "year": "2018",
+      "matched_schools": 45,
+      "registered_pupils": 9479,
+      "by_class": {
+        "Επαγγελματικά Λύκεια": {
+          "schools": 6,
+          "pupils": 1191
+        },
+        "Λύκεια": {
+          "schools": 39,
+          "pupils": 8288
+        }
+      }
+    },
+    {
+      "linkage": "exact",
+      "year": "2019",
+      "matched_schools": 45,
+      "registered_pupils": 9454,
+      "by_class": {
+        "Επαγγελματικά Λύκεια": {
+          "schools": 6,
+          "pupils": 1064
+        },
+        "Λύκεια": {
+          "schools": 39,
+          "pupils": 8390
+        }
+      }
+    },
+    {
+      "linkage": "punctuation_only",
+      "year": "2018",
+      "matched_schools": 48,
+      "registered_pupils": 10431,
+      "by_class": {
+        "Επαγγελματικά Λύκεια": {
+          "schools": 8,
+          "pupils": 1978
+        },
+        "Λύκεια": {
+          "schools": 40,
+          "pupils": 8453
+        }
+      }
+    },
+    {
+      "linkage": "punctuation_only",
+      "year": "2019",
+      "matched_schools": 48,
+      "registered_pupils": 10406,
+      "by_class": {
+        "Επαγγελματικά Λύκεια": {
+          "schools": 8,
+          "pupils": 1840
+        },
+        "Λύκεια": {
+          "schools": 40,
+          "pupils": 8566
+        }
+      }
+    }
+  ],
+  "limitations": "Historical enrolled counts matched to undated directory. Exact or punctuation-only unique names and identical school class/subtype; no word substitutions, no imputation for unmatched schools. Not full municipal coverage, resident pupils, current education quality or a matched-year PTR."
+}

@@ -1,5 +1,7 @@
 # 当前模型：V72墨西哥城年龄口径修订（2026-11-08）
 
+V75取得[Athens完整校级原件与48校匹配子集](../results/task4_v75_sources/README.md)，但学年、目录时期与教师池仍未对齐；Phoenix补获校内项目官方说明。城市指标准入变化0，科学模型保持V72，250格与全部排名不变。
+
 V74取得[Phoenix与Toronto学校级新原件并复算](../results/task4_v74_sources/README.md)：解释PXU目录数量差异、取得Toronto教师目录与分校预算；行政队列与实际高中教师分配仍未识别。Athens学校数据下载中断，未准入。科学模型仍V72，全部输入及排名保持。
 
 V73重算[当前补数下界](../results/task4_v73_acquisition_limits/README.md)：全城教育＋通学即使精确测得，固定权重仍至少8城、连续权重并集至少21城无法排除；仅补Phoenix两项仍25城。科学模型继续V72，250格与全部排名不变。
