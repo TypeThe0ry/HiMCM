@@ -1,5 +1,7 @@
 # 当前模型：V48 实际高中年龄对齐（2026-11-07）
 
+V51新增[证据撤回审计](../results/task4_v51_evidence_withdrawal/README.md)：固定α=0.10下撤回任意单个有信息单元仍推荐Singapore，6555对中12对切换为Tokyo，最小撤回数为2。允许α∈[0.05,0.20]时，撤回Singapore凶杀率在α=0.05即可切换，最小数为1。该假设检验不认定资料错误；实际数据及25城可能冠军均不变。
+
 V50新增[连续推荐证书](../results/task4_v50_continuous_recommendation/README.md)：当前主模型在α∈[0.05,0.20]整个范围内唯一推荐Singapore，遗憾包络的保守分离余量4.0466285分，25城可能冠军不变。[Phoenix同年1180人学区上界](../results/task4_v50_phoenix_cap/README.md)在独立公校FTE目标下使Phoenix由第23至第20；保留学区包含关系条件，不替换当前主模型的第24或其教育定义。
 
 V49新增[年份与行程目的审计](../results/task4_v49_evidence_audit/README.md)：Phoenix取得2023–24历史人数83，未用于填补2024–25；São Paulo的15条未知行程均有工作或私人事务停留，可恢复0条。重算全部名次与可能冠军不变，当前公式及V48入口继续适用。

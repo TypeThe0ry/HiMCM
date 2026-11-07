@@ -1,0 +1,30 @@
+{
+  "checked_utc_date": "2026-11-07",
+  "new_admitted_observations": 0,
+  "toronto": [
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=schoolweb.tdsb.on.ca/Portals/foresthill/docs/Forest%20Hill%20CI-%20School%20Travel%20Plan%20FINAL.pdf&output=json&filter=statuscode:200&filter=mimetype:application/pdf&collapse=digest",
+      "method": "requests GET",
+      "http_status": 200,
+      "response_text": "[]",
+      "interpretation": "No PDF capture returned for this exact filtered query; not proof no archive exists"
+    },
+    {
+      "url": "https://ontarioactiveschooltravel.ca/wp-json/wp/v2/media?search=Forest&per_page=100",
+      "method": "requests GET",
+      "http_status": 403,
+      "interpretation": "No accessible alternative attachment list retrieved"
+    },
+    {
+      "url": "https://schoolweb.tdsb.on.ca/Portals/foresthill/docs/Forest%20Hill%20CI-%20School%20Travel%20Plan%20FINAL.pdf",
+      "method": "search index extraction, not original PDF",
+      "observed_school_profile": {
+        "year": "Fall2016",
+        "grades": "9–12",
+        "enrolled_students": 957
+      },
+      "interpretation": "School enrollment is not survey response count; do not use as time-question denominator"
+    }
+  ],
+  "next_action": "Switch source rather than repeat these same endpoints; only recover school survey if respondent denominator and coverage can be established. Even full single-school survey is not city representative."
+}

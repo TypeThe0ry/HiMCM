@@ -1,0 +1,87 @@
+{
+  "baseline": "V48 with V49 and V50 unchanged main inputs",
+  "admitted_cells_changed": 0,
+  "informative_cells": 115,
+  "single_changes": 0,
+  "pairs_tested": 6555,
+  "changing_pairs": 12,
+  "minimum_withdrawals_fixed_alpha010": 2,
+  "minimum_withdrawals_some_alpha005_020": 1,
+  "interpretation": "Hypothetical loss of all information in city-indicator cells, not independent source failures or observed errors",
+  "main_admitted": false,
+  "scenarios": [
+    {
+      "scenario": "baseline",
+      "alpha": 0.1,
+      "withdrawn": [],
+      "winners": [
+        "Singapore"
+      ],
+      "possible_champions": 25
+    },
+    {
+      "scenario": "singapore_safety_withdrawal",
+      "alpha": 0.1,
+      "withdrawn": [
+        {
+          "city": "Singapore",
+          "indicator": "homicide_rate"
+        }
+      ],
+      "winners": [
+        "Singapore"
+      ],
+      "possible_champions": 25
+    },
+    {
+      "scenario": "singapore_safety_withdrawal_alpha005",
+      "alpha": 0.05,
+      "withdrawn": [
+        {
+          "city": "Singapore",
+          "indicator": "homicide_rate"
+        }
+      ],
+      "winners": [
+        "Tokyo"
+      ],
+      "possible_champions": 25
+    },
+    {
+      "scenario": "first_minimum_pair",
+      "alpha": 0.1,
+      "withdrawn": [
+        {
+          "city": "Singapore",
+          "indicator": "homicide_rate"
+        },
+        {
+          "city": "Singapore",
+          "indicator": "pm25"
+        }
+      ],
+      "winners": [
+        "Tokyo"
+      ],
+      "possible_champions": 25
+    },
+    {
+      "scenario": "singapore_education_travel_withdrawal",
+      "alpha": 0.1,
+      "withdrawn": [
+        {
+          "city": "Singapore",
+          "indicator": "upper_secondary_ptr"
+        },
+        {
+          "city": "Singapore",
+          "indicator": "travel"
+        }
+      ],
+      "winners": [
+        "Singapore"
+      ],
+      "possible_champions": 25
+    }
+  ]
+}
