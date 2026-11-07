@@ -1,0 +1,41 @@
+[
+  {
+    "file": "district_service.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_District_Characteristics_Current/FeatureServer?f=json",
+    "sha256": "6b0a1b0c5e427cb4df1b35adb5e33943f832aa13d89ce6769d3d15a8a6960c70",
+    "bytes": 9863
+  },
+  {
+    "file": "district_layer.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_District_Characteristics_Current/FeatureServer/0?f=json",
+    "sha256": "9395215482a6c48be7fd8645251e11f0d8d046d8be8e0ec61f5ab0bfd90cdb2d",
+    "bytes": 17610
+  },
+  {
+    "file": "maricopa_lea_2024_25.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_District_Characteristics_Current/FeatureServer/0/query?where=LEAID%3D%270403860%27&outFields=*&returnGeometry=false&f=json",
+    "sha256": "d4c55ec3f7eb63f18cc24133fe664a027e07721fc7d050682096000a7c576c59",
+    "bytes": 249
+  },
+  {
+    "file": "office_service.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_District_Office_Locations_Current/FeatureServer?f=json",
+    "sha256": "7b291a2d96677a37113f0c99b0be83cac2a5a2e2b8601916e0130e0fbb5612ad",
+    "bytes": 6612
+  },
+  {
+    "file": "maricopa_office_2024_25.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_District_Office_Locations_Current/FeatureServer/0/query?where=LEAID%3D%270403860%27&outFields=*&returnGeometry=false&f=json",
+    "sha256": "02e3b803309e5b525b199c0736b82100917c602b6236b3aba49cd4f4d172592c",
+    "bytes": 10336
+  },
+  {
+    "file": "ccd_lea_052_2425.csv.xz",
+    "url": "https://nces.ed.gov/ccd/Data/zip/ccd_lea_052_2425_l_1a_073025.zip",
+    "sha256": "aa7a300fc0f287c162b5811da93eadf47b7465ac539c52370617b171d5f62e85",
+    "bytes": 17910372,
+    "format": "xz compressed original CSV member, byte-preserving",
+    "csv_sha256": "24fd379ed06d601e69d06931130c8e23b41e968e02645c5c07b685d4b548f5cf",
+    "source_zip_sha256": "501d72720a01c26e0e041cd3b1aa6653d0a94725ba0a1e85c42c4f183bc627ba"
+  }
+]
