@@ -82,3 +82,13 @@ The TOPSIS score, weights and possible-champion criterion above are unchanged. B
 python3 research/2026-a/data/task4_v10_saopaulo/sampling_sensitivity.py
 python3 research/2026-a/scripts/task4_saopaulo_conditional.py --sampling
 ```
+
+## Independent aggregate consistency check — 2026-11-07
+
+`crosscheck_population.py` reconstructs the workbook's population by age and residence zone using all 79,331 unique persons and their FE_PESS weights. A second public repository supplies `Tabelas_Site_OD2023_REV_190225.xlsx`, archived with its own `aggregate_manifest.json`. All **5,939 numeric cells across 527 zones** agree within 0.001 weighted persons; maximum discrepancy is 0.000039, consistent with the DBF's rounded weights. All 385 nonnumeric table cells correspond to zero reconstructed population. Age bins and zone totals are checked individually, not merely the grand total.
+
+This supports internal consistency of the raw DBF, final weights and independently mirrored published aggregates. It does not authenticate either mirror against the currently unavailable official ZIP, establish high-school sampling coverage, or resolve city-year alignment. No source gate or main observation was changed on this basis. The existing conditional rankings and sampling envelopes therefore remain the applicable results.
+
+```sh
+python3 research/2026-a/data/task4_v10_saopaulo/crosscheck_population.py
+```
