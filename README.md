@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 高中覆盖修订 V53 | [Istanbul新增两类高中项目，教师分配保留区间，第10→15](research/2026-a/results/task4_v53_istanbul_coverage/README.md) |
 | 实际教育结果 V52 | [NYC含特许学校毕业汇总与条件排名对照](research/2026-a/results/task4_v52_nyc_county_outcomes/README.md) · [Phoenix11年级成绩及通学准入](research/2026-a/results/task4_v52_intake/README.md) |
 | 证据撤回审计 V51 | [穷举115个单元及6555对：推荐依赖哪些证据](research/2026-a/results/task4_v51_evidence_withdrawal/README.md) |
 | 同年证据与连续推荐 V50 | [Phoenix有日期的人数条件上界](research/2026-a/results/task4_v50_phoenix_cap/README.md) · [Singapore整个偏好区间推荐证书](research/2026-a/results/task4_v50_continuous_recommendation/README.md) |

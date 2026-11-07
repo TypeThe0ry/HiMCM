@@ -1,0 +1,74 @@
+{
+  "city": "Istanbul",
+  "year": "2025/26",
+  "source": "Existing V6 official MEB PDF, no new survey",
+  "geography": "TR100 province; allsettlement rows coincide withcity row in source",
+  "student_scope": "Non-open general, vocational/technical and Imam Hatip upper-secondary categories; not exact age14-18",
+  "students": 751598,
+  "students_upper_nonopen": 751598,
+  "general_teachers": 28436,
+  "imam_teacher_pool": 9871,
+  "known_general_teachers": 28436,
+  "vocational_teacher_pool": 20156,
+  "imam_hatip_teacher_pool": 9871,
+  "teacher_lower": 28436,
+  "teacher_upper": 58463,
+  "utility_lower": 0.36204587238506863,
+  "utility_upper": 0.5384843998592607,
+  "old_general_students": 408480,
+  "old_general_teachers": 28436,
+  "old_general_utility": 0.5108141122368326,
+  "general_vocational_students": 679495,
+  "conditional_all_vocational_upper_teachers": {
+    "teacher_lower": 48592,
+    "teacher_upper": 58463,
+    "utility_lower": 0.492327478017235,
+    "utility_upper": 0.5384843998592607,
+    "assumption": "All vocational teacher pool attributable to upper-secondary; not independently verified"
+  },
+  "allocation_notes": [
+    "ImamHatip upper school teacher counts explicitly include lower-stage school teachers.",
+    "National table records27 vocational lower-secondary schools with556students and dashedteacherfields; officialMEB curriculum article locates this new program within vocational highschools.",
+    "No city-specific vocational upper/lower teacher allocation established. V in[0,20156] retained, without claiming all Istanbul vocational teachers teach lowersecondary.",
+    "General28436 is inherited stage-specific reportedheadcount; all counts are permanent+contractual headcount, notFTE."
+  ],
+  "programs": {
+    "general": {
+      "total_including_open": 612016,
+      "open_students": 203536,
+      "non_open_students": 408480,
+      "public_students": 309665,
+      "private_students": 98815,
+      "reported_teacher_pool": 28436,
+      "public_teachers": 17573,
+      "private_teachers": 10863,
+      "left_line": "Genel                          Toplam                   987              612 016           293 804            318 212                    28 436      17 435      355     309 665         132 041      177 624",
+      "right_line": "           17 573                8 660              632               98 815            51 640        47 175              10 863              8 775             203 536       110 123        93 413    Total                       General"
+    },
+    "vocational": {
+      "total_including_open": 281478,
+      "open_students": 10463,
+      "non_open_students": 271015,
+      "public_students": 252313,
+      "private_students": 18702,
+      "reported_teacher_pool": 20156,
+      "public_teachers": 19304,
+      "private_teachers": 852,
+      "left_line": "Mesleki ve teknik              Toplam                   437              281 478           175 800            105 678                    20 156       8 725      394     252 313         155 862       96 451",
+      "right_line": "           19 304                7 650               43               18 702            14 032         4 670                 852              1 075              10 463         5 906         4 557    Total       Vocational and technical"
+    },
+    "imam_hatip": {
+      "total_including_open": 91264,
+      "open_students": 19161,
+      "non_open_students": 72103,
+      "public_students": 72103,
+      "private_students": 0,
+      "reported_teacher_pool": 9871,
+      "public_teachers": 9871,
+      "private_teachers": 0,
+      "left_line": "İmam Hatip Liseleri            Toplam                   230               91 264             38 273            52 991                     9 871       6 799      230      72 103          28 677       43 426",
+      "right_line": "            9 871                6 799                 -                    -                -             -                    -                  -             19 161         9 596         9 565    Total      Imam Hatip High Schools"
+    }
+  },
+  "main_admitted": false
+}

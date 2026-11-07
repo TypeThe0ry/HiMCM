@@ -1,0 +1,25 @@
+{
+  "checked_date": "2026-11-07",
+  "new_admitted_observations": 0,
+  "reviewed_prior_audits": [
+    "task4_v7_phoenix",
+    "task4_v8_phoenix",
+    "task4_v39_phoenix_travel"
+  ],
+  "new_route": {
+    "identifier": "PXU RFP 1-1226",
+    "official_url": "https://procurement.opengov.com/portal/phoenixunion/projects/315454/document?projectId=1-1226",
+    "official_http_status": 403,
+    "official_pdf_acquired": false,
+    "secondary_index": "https://www.cleat.ai/government/contracts/student-transportation-services-glqm",
+    "index_claim": "Future 2027/28 transportation contract; claimed maximum travel requirement 75 minutes",
+    "admission_reason": "Unverified primary contract text; future normative service condition, not actual student duration distribution, age-qualified city-resident sample or respondent denominator."
+  },
+  "rejected_alternatives": [
+    "National K12 parent roundtrip survey does not identify Phoenix high-school students",
+    "University of Arizona commuter survey is tertiary students in Tucson, not Phoenix high school",
+    "ACS school-district commute geography measures workers, not pupil travel"
+  ],
+  "decision": "Keep Phoenix actual high-school travel utility [0,1]. No new data input.",
+  "next_action": "Use a published actual pupil-travel aggregate or microdata release identifying Phoenix residence, current grades9-12, one-way duration and denominators; do not substitute procurement caps or regional means."
+}

@@ -1,0 +1,17 @@
+{
+  "table_codes": {
+    "-1": "asterisk",
+    "-11": "asterisk"
+  },
+  "table_rule": "props.item[header.value]==-1||props.item[header.value]==-11)?\"*\":props.item[header.value] }}\n ",
+  "all_enrolled_scope": "Tested and enrolled at the school; not every testing-eligible or resident pupil",
+  "all_enrolled_tooltip": "“All Enrolled” displays the assessment results for all students that were tested and enrolled at the school.\n                                        “Partial Year Enrolled” shows the assessment results for students that were tested at the school but were only\n                                        enrolled for part of the year. “Whole Year Enrolled” shows the assessment results for students that were tested\n                                        at the school and were enrolled for the majority of the school year.",
+  "chart_rule": "getBarChartValue:function(n,t,i){var r=i?-9999:9999;if(store.state.fiscalYear>=2025){if(n.numberTested===-11||n.proficiency1===-11&&n.proficiency2===-11&&n.proficiency3===-11&&n.proficiency4===-11)return r;if(t===-11)return 0}return t===-1?r:i?t*-1:t}",
+  "chart_zero_is_display_only": true,
+  "generic_interactive_chart_title_from_fy2022": true,
+  "current_brand_mapping_verified": false,
+  "ordinary_percentage_rounding_verified": false,
+  "assessment_participation_denominator_equivalence_verified": false,
+  "new_admitted_observations": 0,
+  "consequence": "Retain special codes as unknown and keep the tested cohort separate from participation and enrollment counts."
+}

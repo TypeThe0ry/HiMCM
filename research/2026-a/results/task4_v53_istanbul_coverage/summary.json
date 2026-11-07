@@ -1,0 +1,99 @@
+{
+  "main_admitted": false,
+  "primary_scenario": "v53_broader_teacher_allocation",
+  "changed_city_indicator_cells": 1,
+  "other_cells_unchanged": 249,
+  "coverage_revision_not_same_population_precision_gain": true,
+  "continuous_recommendation_certificate": [
+    {
+      "alpha_lower": 0.05,
+      "alpha_upper": 0.2,
+      "certified": true,
+      "winner": 22,
+      "regret_gap_lower": 4.046628502818429,
+      "depth": 0
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "v48_general_only_reference",
+      "education_bounds": [
+        0.5108141122368327,
+        0.5108141122368327
+      ],
+      "istanbul": {
+        "score_lower": 33.97343752139739,
+        "score_upper": 55.09569065549489,
+        "max_regret": 43.55602318207429,
+        "decision_rank": 10
+      },
+      "changed_ranks_vs_general_only": 0,
+      "changed_ranks_vs_broader_unknown": 9,
+      "possible_champions": 25,
+      "continuous_possible": 25,
+      "choice": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "broader_target_unknown",
+      "education_bounds": [
+        0.0,
+        1.0
+      ],
+      "istanbul": {
+        "score_lower": 29.998097971680856,
+        "score_upper": 58.82176629315779,
+        "max_regret": 47.53136273179083,
+        "decision_rank": 18
+      },
+      "changed_ranks_vs_general_only": 9,
+      "changed_ranks_vs_broader_unknown": 0,
+      "possible_champions": 25,
+      "continuous_possible": 25,
+      "choice": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "v53_broader_teacher_allocation",
+      "education_bounds": [
+        0.36204587238506863,
+        0.5384843998592607
+      ],
+      "istanbul": {
+        "score_lower": 32.443479954742386,
+        "score_upper": 55.3418297450748,
+        "max_regret": 45.0859807487293,
+        "decision_rank": 15
+      },
+      "changed_ranks_vs_general_only": 6,
+      "changed_ranks_vs_broader_unknown": 4,
+      "possible_champions": 25,
+      "continuous_possible": 25,
+      "choice": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "vocational_teachers_all_upper_assumed",
+      "education_bounds": [
+        0.492327478017235,
+        0.5384843998592607
+      ],
+      "istanbul": {
+        "score_lower": 33.771761817119824,
+        "score_upper": 55.3418297450748,
+        "max_regret": 43.75769888635186,
+        "decision_rank": 10
+      },
+      "changed_ranks_vs_general_only": 0,
+      "changed_ranks_vs_broader_unknown": 9,
+      "possible_champions": 25,
+      "continuous_possible": 25,
+      "choice": [
+        "Singapore"
+      ]
+    }
+  ]
+}
