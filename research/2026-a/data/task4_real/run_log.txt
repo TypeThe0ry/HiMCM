@@ -1,0 +1,80 @@
+{
+  "source_url": "https://www.numbeo.com/quality-of-life/rankings.jsp?title=2025",
+  "source_sha256": "b5b9bc3bae7488bfe05be50420df86e74ccaf29be22447f273c1ae4d685280bf",
+  "scope": "25 real cities; four Numbeo proxy indicators; not a complete high-schooler index",
+  "city_count": 25,
+  "seed": 20261107,
+  "mc_count": 20000,
+  "grid_count": 2701,
+  "V0_winner": "Copenhagen",
+  "V1_winner": "Copenhagen",
+  "V0_winner_baseline_score": 75.03578811316338,
+  "V1_winner_baseline_score": 75.03578811316338,
+  "max_regret_before": 0.8591876466561899,
+  "max_regret_after": 0.8591876466561899,
+  "holdout_regret_before": 0.5566018436952702,
+  "holdout_regret_after": 0.5566018436952702,
+  "holdout_winner": "Copenhagen",
+  "kendall_tau_b": 0.8599999999999999,
+  "cities_changed_rank": 18,
+  "PCA_explained_variance": [
+    0.6120676068125629,
+    0.23593613236377783,
+    0.08820695977848411,
+    0.06378930104517523
+  ],
+  "hypothetical_noise_winner_counts": {
+    "Toronto": 0,
+    "Phoenix": 0,
+    "New York": 0,
+    "Mexico City": 0,
+    "Bogota": 0,
+    "Sao Paulo": 0,
+    "Santiago": 0,
+    "Copenhagen": 200,
+    "London": 0,
+    "Barcelona": 0,
+    "Warsaw": 0,
+    "Athens": 0,
+    "Nairobi": 0,
+    "Lagos": 0,
+    "Cape Town": 0,
+    "Dubai": 0,
+    "Istanbul": 0,
+    "Mumbai": 0,
+    "Delhi": 0,
+    "Dhaka": 0,
+    "Tokyo": 0,
+    "Shanghai": 0,
+    "Singapore": 0,
+    "Jakarta": 0,
+    "Melbourne": 0
+  },
+  "checks": "finite data, exact city matching, monotonicity, dominated candidate score/regret invariance passed"
+}
+       city  V0_score  V0_rank  V1_rank  rank_gain  max_tested_regret_points  holdout_max_regret_points  first_share  top3_share
+ Copenhagen 75.035788        1        1          0                  0.859188                   0.556602       0.9987     1.00000
+  Melbourne 64.979348        3        2          1                 14.371334                  14.151164       0.0000     0.73910
+      Dubai 67.761095        2        3         -1                 16.537903                  16.145880       0.0013     0.96315
+    Toronto 59.264567        8        4          4                 17.270079                  17.223050       0.0000     0.00000
+      Tokyo 60.921445        4        5         -1                 18.010232                  17.762748       0.0000     0.03780
+  Singapore 59.733931        6        6          0                 24.509135                  24.297968       0.0000     0.12470
+     Warsaw 59.879928        5        7         -2                 25.172666                  24.741384       0.0000     0.09575
+    Phoenix 59.374585        7        8         -1                 26.128804                  25.919567       0.0000     0.03950
+     Athens 52.619718       11        9          2                 28.566620                  28.447123       0.0000     0.00000
+   New York 51.742209       12       10          2                 29.517863                  29.334612       0.0000     0.00000
+  Cape Town 55.791500        9       11         -2                 30.434835                  30.178292       0.0000     0.00000
+  Barcelona 54.615858       10       12         -2                 30.651736                  30.379550       0.0000     0.00000
+     London 47.674277       14       13          1                 31.768891                  31.645668       0.0000     0.00000
+   Istanbul 47.928884       13       14         -1                 35.228036                  34.998216       0.0000     0.00000
+   Santiago 45.061347       15       15          0                 39.387784                  39.162603       0.0000     0.00000
+    Jakarta 44.513326       16       16          0                 42.573723                  42.314962       0.0000     0.00000
+     Bogota 37.889604       23       17          6                 42.679990                  42.535925       0.0000     0.00000
+    Nairobi 40.483388       19       18          1                 44.098083                  43.774964       0.0000     0.00000
+      Delhi 41.495153       18       19         -1                 45.991198                  45.637418       0.0000     0.00000
+  Sao Paulo 38.295070       20       20          0                 46.349120                  46.113916       0.0000     0.00000
+   Shanghai 42.696623       17       21         -4                 46.541758                  46.014292       0.0000     0.00000
+Mexico City 38.187821       21       22         -1                 46.662635                  46.391264       0.0000     0.00000
+      Dhaka 37.994359       22       23         -1                 49.033566                  48.743935       0.0000     0.00000
+     Mumbai 36.341227       24       24          0                 49.538066                  48.695154       0.0000     0.00000
+      Lagos 19.359488       25       25          0                 64.489884                  64.159514       0.0000     0.00000
