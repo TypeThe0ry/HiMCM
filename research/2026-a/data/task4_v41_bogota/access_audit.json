@@ -1,0 +1,33 @@
+{
+  "access_date": "2026-11-07",
+  "city": "Bogota",
+  "target_survey": "EODH2023",
+  "new_admitted_observations": 0,
+  "checks": [
+    {
+      "url": "https://observatorio.movilidadbogota.gov.co/publicaciones/resultados/encuesta-de-movilidad-2023",
+      "result": "Search index confirms raw/processed modules; web open502; curl HTTP2 framing error; HTTP1.1 empty reply. No file obtained."
+    },
+    {
+      "url": "https://www.simur.gov.co/index.php/encuestas-de-movilidad",
+      "result": "Official catalogue search readable; web open and curl HTTP403."
+    },
+    {
+      "url": "https://community.secop.gov.co/Public/Tendering/ContractDetailView/Index?AwardContractDetailId=2675496&IsFromContractNotice=True&IsFromMarketplace=False&UniqueIdentifier=CO1.PCCNTR.4232446",
+      "result": "New official procurement lead: contract2022-1972, survey2023, indexed attachment Etapa Publicacion datos SIMUR.txt and fieldwork ZIPs. First web read succeeded; follow-up and localGET403. Attachment bytes not obtained."
+    },
+    {
+      "url": "https://github.com/anyoalmanza-cmd/Bogota-mobility-analysis",
+      "result": "Public repository contains PARTE1/2 notebooks and README only; no raw microdata at root. GitHub API rate limit subsequently reached; not evidence of dataset availability."
+    }
+  ],
+  "prior_audit_distinction": "V11 is EODH2019 with attainment, not current grade; V33 describes EM2021, a different survey. EM2021 NPCHP6/NPCHP19 codes cannot be transferred to EODH2023.",
+  "remaining_requirements": [
+    "Actual household/person/journey records and corresponding2023 dictionary",
+    "Current upper-secondary enrollment, not maximum attainment alone",
+    "Bogota resident municipality restriction",
+    "School-bound trip time and missing/special codes",
+    "Appropriate person/household expansion factor and cluster design; not interchangeable trip weights"
+  ],
+  "model_action": "Retain travel[0,1]; no new utility estimate or ranking update"
+}

@@ -1,0 +1,73 @@
+{
+  "grade9": {
+    "target_school_count": 155,
+    "matched_school_count": 117,
+    "usable_school_count": 108,
+    "matched_suppression_codes": {
+      "0": 108,
+      "3": 7,
+      "1": 2
+    },
+    "unmatched_school_count": 38,
+    "success_count": 12395,
+    "fully_participating_count": 21604,
+    "participant_weighted_success_percent": 57.37363451212738,
+    "eligible_or_allstudents_count_in_usable_schools": 23101,
+    "schools_with_numeric_eligible_count": 108,
+    "numerator_field": "cntOverallM_L34",
+    "denominator_field": "cntFullyParticipating",
+    "population": "Fully participating students in matched, publicly reportable four-board Toronto secondary schools; not all city pupils",
+    "main_model_admission": false,
+    "nonparticipation_diagnostic": {
+      "status": "conditional_latent_outcome_bounds_not_official_observed_rate",
+      "target": "Same usable schools only; registered Grade9 or first-time-eligible OSSLT cohort",
+      "registered_or_eligible_E": 23101,
+      "fully_participating_P": 21604,
+      "observed_success_Y": 12395,
+      "unknown_outcome_count": 1497,
+      "lower_percent": 53.65568590104324,
+      "upper_percent": 60.13592485173802,
+      "formula": "[Y/E, (Y+E-P)/E]",
+      "assumption": "Every non/partially participating eligible student has a well-defined binary potential outcome under completion of the same assessment; observed fully participating outcomes are held fixed. No missing-at-random assumption.",
+      "excluded": "Unmatched/privacy-suppressed schools and Grade9 nonregistered pupils. OSSLT exempt counts are not added to E.",
+      "per_school_checks": "Y <= P <= E; Grade9 E=P+cntNoData; OSSLT E=P+Absent+Deferred+OSSLC+InsufficientEvidence",
+      "main_model_admission": false
+    }
+  },
+  "osslt_first_time": {
+    "target_school_count": 155,
+    "matched_school_count": 132,
+    "usable_school_count": 109,
+    "matched_suppression_codes": {
+      "0": 109,
+      "1": 14,
+      "3": 9
+    },
+    "unmatched_school_count": 23,
+    "success_count": 16775,
+    "fully_participating_count": 19756,
+    "participant_weighted_success_percent": 84.9109131403118,
+    "eligible_or_allstudents_count_in_usable_schools": 21180,
+    "schools_with_numeric_eligible_count": 109,
+    "numerator_field": "cntSuccessful",
+    "denominator_field": "cntFullyParticipating",
+    "population": "Fully participating students in matched, publicly reportable four-board Toronto secondary schools; not all city pupils",
+    "main_model_admission": false,
+    "nonparticipation_diagnostic": {
+      "status": "conditional_latent_outcome_bounds_not_official_observed_rate",
+      "target": "Same usable schools only; registered Grade9 or first-time-eligible OSSLT cohort",
+      "registered_or_eligible_E": 21180,
+      "fully_participating_P": 19756,
+      "observed_success_Y": 16775,
+      "unknown_outcome_count": 1424,
+      "lower_percent": 79.2020774315392,
+      "upper_percent": 85.92540132200189,
+      "formula": "[Y/E, (Y+E-P)/E]",
+      "assumption": "Every non/partially participating eligible student has a well-defined binary potential outcome under completion of the same assessment; observed fully participating outcomes are held fixed. No missing-at-random assumption.",
+      "excluded": "Unmatched/privacy-suppressed schools and Grade9 nonregistered pupils. OSSLT exempt counts are not added to E.",
+      "per_school_checks": "Y <= P <= E; Grade9 E=P+cntNoData; OSSLT E=P+Absent+Deferred+OSSLC+InsufficientEvidence",
+      "main_model_admission": false,
+      "separately_reported_exempt_not_added_to_E": 28
+    }
+  }
+}

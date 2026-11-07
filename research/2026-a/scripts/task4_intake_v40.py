@@ -6,9 +6,11 @@ from task4_v5_model import ROOT,CITIES,weights,summarize
 from task4_singapore_coverage_revision import singapore_bounds
 
 
-def main():
+def run(folders=('task4_v40_toronto','task4_v40_education','task4_v40_mumbai'),
+        output='results/task4_v40_intake',
+        distinction='New school-level achievement and district enrollment evidence; missing denominators, grade coverage or spatial scope block city scoring. No hypothetical values written into main inputs.'):
     sources=[]
-    for folder in ['task4_v40_toronto','task4_v40_education','task4_v40_mumbai']:
+    for folder in folders:
         path=ROOT/'data'/folder
         for r in json.loads((path/'manifest.json').read_text()):
             filename=r.get('file',r.get('existing_source_file'))
@@ -26,10 +28,10 @@ def main():
     summary=dict(baseline='V38 singapore_bounds',new_admitted_city_cells=0,changed_ranks=0,
         possible_champions=int(rank.possible_champion.sum()),choice=[CITIES[k] for k in decision['minimax_choices']],
         input_bounds_sha256=hashlib.sha256(np.stack([lo,hi]).astype('<f8').tobytes()).hexdigest(),sources=sources,
-        distinction='New school-level achievement and district enrollment evidence; missing denominators, grade coverage or spatial scope block city scoring. No hypothetical values written into main inputs.')
-    out=ROOT/'results/task4_v40_intake';out.mkdir(parents=True,exist_ok=True)
+        distinction=distinction)
+    out=ROOT/output;out.mkdir(parents=True,exist_ok=True)
     rank.to_csv(out/'ranks.csv',index=False)
     (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     print(json.dumps(summary,indent=2))
 
-if __name__=='__main__':main()
+if __name__=='__main__':run()

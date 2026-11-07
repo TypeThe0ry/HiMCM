@@ -1,0 +1,21 @@
+{
+  "baseline": "V38 singapore_bounds",
+  "new_admitted_city_cells": 0,
+  "changed_ranks": 0,
+  "possible_champions": 25,
+  "choice": [
+    "Singapore"
+  ],
+  "input_bounds_sha256": "b04d8c506d956af31d746ba2ff07ab727b3e01b1970c6b97e2827b12ca3c9035",
+  "sources": [
+    {
+      "folder": "task4_v41_toronto",
+      "manifest_sha256": "be86d0cf574a06f42c657494e09560e013f16240fa055b22fd7d903efba8ce7c"
+    },
+    {
+      "folder": "task4_v41_phoenix_education",
+      "manifest_sha256": "2e32b38d6fb4e8f57223ab753cd598371313238c112b2aefa60d8f17eee0e60b"
+    }
+  ],
+  "distinction": "New same-school Phoenix teacher counts and Toronto test denominators are observed; incomplete city coverage and incompatible educational estimands prevent main-model replacement. Missing intervals remain unchanged."
+}
