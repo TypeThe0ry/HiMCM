@@ -1,0 +1,9 @@
+﻿field,label_zh,definition_zh
+country_name,国家或地区（英文）,世界银行国家API的英文名称；包含国家和单列地区/经济体。
+wb_country_code,世界银行国家代码,世界银行三位代码；通常对应ISO3，但不保证全部为ISO标准国家代码。与year共同构成唯一键。
+year,年份,原始数据的观测年份。教育指标跨年学年按结束年份标记；不是下载年或数据库更新年。
+homicide_rate_per_100k,凶杀率（每10万人）,VC.IHR.PSRC.P5：故意杀人受害者数/人口×100000；每10万人。原始来源UNODC，经WDI发布。
+secondary_pupil_teacher_ratio,中学生师比（学生/教师）,SE.SEC.ENRL.TC.ZS：中等教育学生数/同层级教师数，学生/教师；含初中和高中整体，不是平均班额。原始来源UNESCO UIS，经WDI发布。
+data_status,数据可用状态,both=同年两项都有；homicide_only=仅凶杀率；secondary_ratio_only=仅生师比；neither=均缺失。空白是缺失，不是0。
+coverage,覆盖表,国家覆盖表列各指标及同年双指标的有效数、首末年；年度覆盖表列各年的有效国家地区数。region和income_group是下载时分类，不是历史分类。
+scope,地域与缺失处理,排除世界、区域、收入组等Aggregates汇总；国家/地区数据不能直接充当城市数据（城市国家需单独判断）。保留原值；不插值、不补零、不前向填充、不跨年配对。
