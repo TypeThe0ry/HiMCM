@@ -25,7 +25,7 @@ for row in rows:
    elif re.search(r'\bsensitiv\w*\b|\bvalidat\w*\b|\bweakness\w*\b',t,re.I):
     m=re.search(r'\bsensitiv\w*\b|\bvalidat\w*\b|\bweakness\w*\b',t,re.I);snippets.append(f'PDF PAGE {i+1}\n'+t[max(0,m.start()-150):m.start()+1500])
   notes.append(dict(year=row['year'],team=row['team'],path=row['path'],snippets=snippets))
-with (ROOT/'paper_review/corpus_feature_audit.csv').open('w',encoding='utf-8-sig',newline='') as f:w=csv.DictWriter(f,fieldnames=list(result[0]));w.writeheader();w.writerows(result)
+with (ROOT/'paper_review/corpus_feature_audit.csv').open('w',encoding='utf-8-sig',newline='') as f:w=csv.DictWriter(f,fieldnames=list(result[0]),lineterminator="\n");w.writeheader();w.writerows(result)
 (ROOT/'paper_review/paper_reading_evidence.json').write_text(json.dumps(notes,ensure_ascii=False,indent=2))
 summary={'n':len(rows),'extraction_modes':dict(collections.Counter(r['extraction_mode'] for r in result)),'keyword_presence':{k:sum(x[k] for x in result) for k in patterns},'warning':'Keyword mentions are not quality scores or evidence of award causation; scanned full text not audited.'}
 (ROOT/'paper_review/audit_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2));print(json.dumps(summary,ensure_ascii=False))
