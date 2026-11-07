@@ -4,7 +4,7 @@
 
 **The City Showdown: Modeling the Best City to Live In**
 
-本仓库保存全球城市评价研究的数据、模型、结果、图表和历史论文。当前包含25城研究、V16累计证据对照、V17补数策略算法、V18高中毕业队列条件分析和V19分组重叠边界检验；尚未形成完整同年城市普查矩阵或最终参赛结论。
+本仓库保存全球城市评价研究的数据、模型、结果、图表和历史论文。当前包含25城真实数据研究、十指标证据区间模型、毕业结果条件分析及通学微观数据修订；尚未形成完整同年城市普查矩阵或最终参赛结论。
 
 **本项目只使用 `TypeThe0ry/HiMCM` 一个仓库。** 论文、数据、代码、结果和历史论文库已合并回本目录，原研究仓库的提交历史也已合入。原始资料及本地忽略的大型生成包均保留；详见[合并核验记录](docs/reunification.md)。
 
@@ -23,6 +23,7 @@
 | V18高中毕业队列条件分析 | [报告](research/2026-a/results/task4_v18_cohort_outcomes/README.md) · [官方NYC来源](research/2026-a/data/task4_v18_nyc_quality/README.md) · [排名与权重对照](research/2026-a/results/task4_v18_cohort_outcomes/ranks.csv) |
 | V19 Phoenix分组重叠边界 | [报告](research/2026-a/results/task4_v19_partition_outcomes/README.md) · [真实分组人数与见证](research/2026-a/data/task4_v19_phoenix_partitions/README.md) |
 | V20 NYC真实通学日记 | [报告](research/2026-a/results/task4_v20_nyc_reported_travel/README.md) · [2010–2011高中生记录](research/2026-a/data/task4_v20_nyc_travel/README.md) · [2024调查未成年人覆盖审计](research/2026-a/data/task4_v20_nyc_school_survey/README.md) |
+| V21 通学链恢复 | [同口径前后对照](research/2026-a/results/task4_v21_nyc_chains/README.md) · [真实行程与筛选规则](research/2026-a/data/task4_v21_nyc_chains/README.md) |
 | V5补数前后对照 | [V5报告](research/2026-a/results/task4_v5/REPORT.md) · [独立复核](research/2026-a/results/task4_v5_review.md) |
 | 历史设计与研究迭代 | [研究工作台](research/2026-a/README.md) · [研究设计](research/2026-a/design/research_design.md) |
 | 图表、地图与制图规范 | [制图入口](research/2026-a/visuals/README.md) · [规范](research/2026-a/visuals/GUIDELINES.md) · [地图](research/2026-a/visuals/cartography/README.md) |
@@ -85,6 +86,8 @@ V18新增官方NYC四年毕业队列人数，保留未知结局，作为附加�
 V19利用Phoenix已归档96校的真实分组人数，计算允许学校记录重复的分组下界，并显式检验跨校标签一致性条件。稳定标签情景下得分区间仅缩窄约0.059分，Phoenix仍第24，可能冠军仍25；不限制标签变化时保留旧宽区间。
 
 V20取得官方2010–2011年NYC家庭出行微观记录，以当前9–12年级识别学生，并保留缺失行程、未知成员和抽样敏感性。小于19岁的条件替代情景使纽约十指标决策排名18→22、含毕业结果模型4→5，可能冠军仍25；这是历史报告行程与旧路线估计的替换对照，不是跨年趋势。2024公开调查的成人日记不能替代未成年高中生，覆盖审计已归档。
+
+V21在同一份纽约日记中恢复7名已知高中生和1名可选成员的交通停留链，只接受换乘、接客和下客；包含工作等活动的15条链保持未知。小于19岁情景的通学效用区间缩窄约7.28%，十指标纽约排名22→21，冠军集合仍25城；原有402条直接行程全部保留。
 
 ### 早期版本进度快照（V5/V6）
 

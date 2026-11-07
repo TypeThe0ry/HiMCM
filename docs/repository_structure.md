@@ -5,7 +5,7 @@
 - 根目录 `main.tex`、`ref.bib`、`mcmthesis.cls`：论文和Overleaf同步入口。
 - `research/2026-a/data/`：原始数据、来源记录和提取脚本。
 - `research/2026-a/scripts/`：模型与验证代码。
-- `research/2026-a/results/`：历次结果；累计通学证据为V16，补数策略为V17，毕业队列和分组边界条件分析见V18/V19；当前入口以根README为准。
+- `research/2026-a/results/`：历次结果；保存各版证据对照、补数策略和条件模型；最新版本与复现入口以根README为准。
 - `research/2026-a/visuals/`：图表与地图。
 - `library/`：历史获奖论文和索引。
 - `docs/`：规范、历史迁移记录与合并核验。

@@ -1,0 +1,50 @@
+{
+  "main_admitted": false,
+  "new_downloads": 0,
+  "transport_purpose_codes": [
+    4,
+    5,
+    6
+  ],
+  "recovered_known": 7,
+  "recovered_optional": 1,
+  "diagnostic_other_activity_chains": 15,
+  "unrecovered_status_counts": {
+    "reconstructed": 15,
+    "no_observed_home_departure": 3
+  },
+  "bootstrap_replicates": 1000,
+  "seed": 20261107,
+  "scopes": {
+    "all_age": {
+      "known_students": 476,
+      "optional_students": 127,
+      "membership_lower": 0.2292748682750496,
+      "membership_upper": 0.5438871634573017,
+      "sampling_lower": 0.20144152249676053,
+      "sampling_upper": 0.5931485688061938
+    },
+    "under19": {
+      "known_students": 460,
+      "optional_students": 33,
+      "membership_lower": 0.25597640891030243,
+      "membership_upper": 0.49956631522193923,
+      "sampling_lower": 0.22395133875708226,
+      "sampling_upper": 0.5466442853849841
+    }
+  },
+  "sources": [
+    {
+      "path": "data/task4_v20_nyc_travel/CSV.zip",
+      "sha256": "f87c5e3953030fb66d539e2f4e36d44bd23da2b1249a6bcb9c7957a6fa9ccee4"
+    },
+    {
+      "path": "data/task4_v20_nyc_travel/commute_summary.json",
+      "sha256": "d4a585c696d3b5d50d635d12be5d9556785dc2b23a05b4f9060bfcc1a57791d6"
+    },
+    {
+      "path": "data/task4_v20_nyc_travel/extract_commute.py",
+      "sha256": "57a81374961cee2f9c7408d025ef98327383210be2903e2c0ae00dd59d667995"
+    }
+  ]
+}

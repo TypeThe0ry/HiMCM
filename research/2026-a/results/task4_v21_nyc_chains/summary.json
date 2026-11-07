@@ -1,0 +1,151 @@
+{
+  "main_admitted": false,
+  "sources": [
+    {
+      "path": "data/task4_v20_nyc_travel/commute_summary.json",
+      "sha256": "d4a585c696d3b5d50d635d12be5d9556785dc2b23a05b4f9060bfcc1a57791d6"
+    },
+    {
+      "path": "data/task4_v21_nyc_chains/summary.json",
+      "sha256": "ae06f98e20f44645ac698a071e3432b0e63ad5a9c86fbaf1849e5eb34ceb2b03"
+    }
+  ],
+  "scenarios": [
+    {
+      "model": "v16_ten_criteria",
+      "age_scope": "all_age",
+      "version": "v20_direct_plus_unknown",
+      "travel_lower": 0.19246097998141304,
+      "travel_upper": 0.6061139081363162,
+      "nyc_decision_rank": 22,
+      "nyc_score_width": 44.611604216095884,
+      "mean_score_width": 37.79888249651041,
+      "changed_decision_ranks": 0,
+      "possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "model": "v16_ten_criteria",
+      "age_scope": "all_age",
+      "version": "v21_transport_chain_recovery",
+      "travel_lower": 0.20144152249676053,
+      "travel_upper": 0.5931485688061938,
+      "nyc_decision_rank": 22,
+      "nyc_score_width": 44.4037647319135,
+      "mean_score_width": 37.79056891714311,
+      "changed_decision_ranks": 0,
+      "possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "model": "v16_ten_criteria",
+      "age_scope": "under19",
+      "version": "v20_direct_plus_unknown",
+      "travel_lower": 0.21398055978131691,
+      "travel_upper": 0.5620075245485512,
+      "nyc_decision_rank": 22,
+      "nyc_score_width": 43.95222419610687,
+      "mean_score_width": 37.772507295710845,
+      "changed_decision_ranks": 0,
+      "possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "model": "v16_ten_criteria",
+      "age_scope": "under19",
+      "version": "v21_transport_chain_recovery",
+      "travel_lower": 0.22395133875708226,
+      "travel_upper": 0.5466442853849841,
+      "nyc_decision_rank": 21,
+      "nyc_score_width": 43.697077563648286,
+      "mean_score_width": 37.762301430412506,
+      "changed_decision_ranks": 2,
+      "possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 28.173587987562662,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "model": "v18_cohort_beta10",
+      "age_scope": "all_age",
+      "version": "v20_direct_plus_unknown",
+      "travel_lower": 0.19246097998141304,
+      "travel_upper": 0.6061139081363162,
+      "nyc_decision_rank": 5,
+      "nyc_score_width": 39.81427676827523,
+      "mean_score_width": 40.85900463120618,
+      "changed_decision_ranks": 0,
+      "possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "model": "v18_cohort_beta10",
+      "age_scope": "all_age",
+      "version": "v21_transport_chain_recovery",
+      "travel_lower": 0.20144152249676053,
+      "travel_upper": 0.5931485688061938,
+      "nyc_decision_rank": 5,
+      "nyc_score_width": 39.62517977587417,
+      "mean_score_width": 40.85144075151013,
+      "changed_decision_ranks": 0,
+      "possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "model": "v18_cohort_beta10",
+      "age_scope": "under19",
+      "version": "v20_direct_plus_unknown",
+      "travel_lower": 0.21398055978131691,
+      "travel_upper": 0.5620075245485512,
+      "nyc_decision_rank": 5,
+      "nyc_score_width": 39.209806472115794,
+      "mean_score_width": 40.8348258193598,
+      "changed_decision_ranks": 0,
+      "possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "model": "v18_cohort_beta10",
+      "age_scope": "under19",
+      "version": "v21_transport_chain_recovery",
+      "travel_lower": 0.22395133875708226,
+      "travel_upper": 0.5466442853849841,
+      "nyc_decision_rank": 5,
+      "nyc_score_width": 38.97776484572688,
+      "mean_score_width": 40.82554415430425,
+      "changed_decision_ranks": 0,
+      "possible_champions": 25,
+      "continuous_possible_champions": 25,
+      "minimax_regret": 32.89835941434996,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    }
+  ]
+}
