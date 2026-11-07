@@ -1,0 +1,172 @@
+{
+  "accessed": "2026-11-07",
+  "survey_years": "2010-2011",
+  "publication_manual": "Revised November 2013",
+  "zip_crc_check": "passed",
+  "encoding": "cp1252",
+  "current_2023_2024_rhts_release_obtained": false,
+  "current_release_search": "Official travel-surveys catalogue lists 2023 RFI takeaways and the 2010/2011 release; a 2024 procurement document describes a future survey, not a downloaded new release.",
+  "official_catalogue": "https://www.nymtc.org/20102011-regional-household-travel-survey",
+  "current_catalogue": "https://www.nymtc.org/Data-and-Modeling/Travel-Surveys",
+  "files": [
+    {
+      "zip_member": "CSV/HH_Public.csv",
+      "uncompressed_bytes": 4479269
+    },
+    {
+      "zip_member": "CSV/LINKED_Public.csv",
+      "uncompressed_bytes": 73511279
+    },
+    {
+      "zip_member": "CSV/PER_Public.csv",
+      "uncompressed_bytes": 27965358
+    },
+    {
+      "zip_member": "CSV/PLACE_Public.csv",
+      "uncompressed_bytes": 101743911
+    },
+    {
+      "zip_member": "CSV/UNLINKED_Public.csv",
+      "uncompressed_bytes": 74323668
+    },
+    {
+      "zip_member": "CSV/VEH_Public.csv",
+      "uncompressed_bytes": 1774759
+    }
+  ],
+  "field_map": {
+    "person_school_status": {
+      "file": "PER_Public.csv",
+      "manual_pdf_page": 34,
+      "field": "STUDE",
+      "csv_values": [
+        "Yes - Full Time",
+        "Yes - Part Time"
+      ],
+      "numeric_dictionary_codes": [
+        1,
+        2
+      ]
+    },
+    "person_school_level": {
+      "file": "PER_Public.csv",
+      "manual_pdf_page": 34,
+      "field": "SCHOL",
+      "csv_value": "Grade 9 to 12",
+      "numeric_dictionary_code": 4,
+      "interpretation": "current attendance, not highest completed education"
+    },
+    "home_school": {
+      "field": "SLOC",
+      "manual_pdf_page": 34,
+      "csv_values": {
+        "Yes": "home schooled",
+        "No": "not home schooled"
+      }
+    },
+    "home_county": {
+      "file": "HH_Public.csv",
+      "field": "CTFIP",
+      "manual_pdf_page": 24,
+      "nyc_codes": [
+        36005,
+        36047,
+        36061,
+        36081,
+        36085
+      ],
+      "join": "SAMPN",
+      "warning": "PER HFIPS contains decoded county labels, not numeric FIPS"
+    },
+    "school_trip": {
+      "file": "LINKED_Public.csv",
+      "manual_pdf_pages": [
+        65,
+        66,
+        67,
+        75
+      ],
+      "DTPURP_codes": [
+        12,
+        13
+      ],
+      "ORIG_HOME_yes": 1,
+      "DOW_weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "duration": "TRPDUR in minutes; validate against clock elapsed with floating tolerance",
+      "avoid": "TRPDUR_HN is modeled highway-network time; TTTSS is bicycle-only"
+    },
+    "weights": {
+      "manual_pdf_page": 17,
+      "person_statistic": "HH_WHT2",
+      "trip_pattern_statistic": "WHT_FAC3",
+      "trip_adjustment": "TOURFAC corrects GPS versus diary under-reporting; do not give multi-trip persons extra population weight"
+    },
+    "keys": {
+      "person": [
+        "SAMPN",
+        "PERNO"
+      ],
+      "linked_verified": [
+        "SAMPN",
+        "PERNO",
+        "TOUR_ID",
+        "LTRIPNO"
+      ],
+      "also_verified_unique": [
+        "PLSAM"
+      ],
+      "warning": "Manual three-field linked key SAMPN/PERNO/LTRIPNO is not unique in released CSV; LTRIPNO resets within tour"
+    },
+    "order": {
+      "diary_day_anchor": "03:00",
+      "manual_pdf_page": 10,
+      "selection": "Order by departure time relative to 03:00 or verified place sequence; do not globally sort LTRIPNO"
+    }
+  },
+  "independent_profile": {
+    "households": 18965,
+    "persons": 43558,
+    "linked_trips": 143925,
+    "nyc_current_hs": 479,
+    "home_schooled": 3,
+    "not_home_schooled": 476,
+    "nyc_current_hs_weight": 359836.430958,
+    "first_school_trip_people": 385,
+    "first_school_trip_origin_home": 366,
+    "first_school_trip_origin_home_not_home_schooled": 365,
+    "all_home_first_school_clocks_agree_at_1e_8": true,
+    "unknown_current_school_level_DK_RF": 21,
+    "unknown_current_school_level_DK_RF_weight": 10623.011214,
+    "age_categories_current_hs": {
+      "Younger than 16 years": 190,
+      "16-18 years": 273,
+      "19-24 years": 10,
+      "35-54 years": 2,
+      "Age not provided": 4
+    }
+  },
+  "limitations": [
+    "Historical release is not 2026 travel evidence",
+    "Survey sample and weights do not make a census; sampling uncertainty requires separate treatment",
+    "Diary and proxy reporting, edited/imputed records and GPS-correction issues remain",
+    "Unknown/nontravel/first school trip from elsewhere must not be silently deleted",
+    "School destinations outside NYC may remain valid for NYC resident cohort",
+    "Public release coarsens geography; no precise individual location extraction is needed"
+  ],
+  "license_note": "Public-use manual retains credits and disclaimer; describes noncommercial use. Original manual is archived alongside original ZIP.",
+  "weight_precision_check": {
+    "PER_vs_HH_max_relative_difference": 4.95748707e-08,
+    "PER_weights_constant_within_household": true,
+    "trip_weight_factor_identity": "WHT_FAC3 approximately HH_WHT2*TOURFAC for all 143925 rows",
+    "comparison_tolerance": "relative1e-7 for cross-file HH_WHT2 formatting; absolute1e-8 minutes for clock duration",
+    "actual_household_weight_sum": 7841816.936579875,
+    "manual_household_weight_control": 7841848,
+    "manual_control_difference_unresolved": true
+  }
+}

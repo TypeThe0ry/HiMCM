@@ -22,6 +22,7 @@
 | 最新补数策略 V17 | [报告](research/2026-a/results/task4_v17_rival_acquisition/README.md) · [当前排名](research/2026-a/results/task4_v17_rival_acquisition/current_ranks.csv) · [算法](research/2026-a/scripts/task4_rival_acquisition.py) |
 | V18高中毕业队列条件分析 | [报告](research/2026-a/results/task4_v18_cohort_outcomes/README.md) · [官方NYC来源](research/2026-a/data/task4_v18_nyc_quality/README.md) · [排名与权重对照](research/2026-a/results/task4_v18_cohort_outcomes/ranks.csv) |
 | V19 Phoenix分组重叠边界 | [报告](research/2026-a/results/task4_v19_partition_outcomes/README.md) · [真实分组人数与见证](research/2026-a/data/task4_v19_phoenix_partitions/README.md) |
+| V20 NYC真实通学日记 | [报告](research/2026-a/results/task4_v20_nyc_reported_travel/README.md) · [2010–2011高中生记录](research/2026-a/data/task4_v20_nyc_travel/README.md) · [2024调查未成年人覆盖审计](research/2026-a/data/task4_v20_nyc_school_survey/README.md) |
 | V5补数前后对照 | [V5报告](research/2026-a/results/task4_v5/REPORT.md) · [独立复核](research/2026-a/results/task4_v5_review.md) |
 | 历史设计与研究迭代 | [研究工作台](research/2026-a/README.md) · [研究设计](research/2026-a/design/research_design.md) |
 | 图表、地图与制图规范 | [制图入口](research/2026-a/visuals/README.md) · [规范](research/2026-a/visuals/GUIDELINES.md) · [地图](research/2026-a/visuals/cartography/README.md) |
@@ -82,6 +83,8 @@ V17在相同观测矩阵上计算竞争城市补数策略，实际排名与冠�
 V18新增官方NYC四年毕业队列人数，保留未知结局，作为附加毕业结果维度的条件分析。该维度权重为10%时，补数使纽约决策排名18→4；可能冠军仍为25城，整体区间仍宽于原十指标模型。学段完成结果不等于教学因果质量，且不同城市归属口径尚未统一；[详见V18报告](research/2026-a/results/task4_v18_cohort_outcomes/README.md)。
 
 V19利用Phoenix已归档96校的真实分组人数，计算允许学校记录重复的分组下界，并显式检验跨校标签一致性条件。稳定标签情景下得分区间仅缩窄约0.059分，Phoenix仍第24，可能冠军仍25；不限制标签变化时保留旧宽区间。
+
+V20取得官方2010–2011年NYC家庭出行微观记录，以当前9–12年级识别学生，并保留缺失行程、未知成员和抽样敏感性。小于19岁的条件替代情景使纽约十指标决策排名18→22、含毕业结果模型4→5，可能冠军仍25；这是历史报告行程与旧路线估计的替换对照，不是跨年趋势。2024公开调查的成人日记不能替代未成年高中生，覆盖审计已归档。
 
 ### 早期版本进度快照（V5/V6）
 

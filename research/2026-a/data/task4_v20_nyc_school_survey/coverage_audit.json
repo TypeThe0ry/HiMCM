@@ -1,0 +1,49 @@
+{
+  "main_admitted": false,
+  "person_rows": 8569,
+  "trip_rows": 115920,
+  "current_high_school_roster_members": 365,
+  "age_codes": {
+    "2": "5-15",
+    "3": "16-17",
+    "4": "18-24"
+  },
+  "current_school_type_code": 7,
+  "groups": [
+    {
+      "age_code": "2",
+      "is_participant": "0",
+      "persons": 113,
+      "positive_person_weights": 0,
+      "people_with_own_trips": 0,
+      "own_trip_rows": 0
+    },
+    {
+      "age_code": "3",
+      "is_participant": "0",
+      "persons": 173,
+      "positive_person_weights": 0,
+      "people_with_own_trips": 0,
+      "own_trip_rows": 0
+    },
+    {
+      "age_code": "4",
+      "is_participant": "0",
+      "persons": 44,
+      "positive_person_weights": 0,
+      "people_with_own_trips": 0,
+      "own_trip_rows": 0
+    },
+    {
+      "age_code": "4",
+      "is_participant": "1",
+      "persons": 35,
+      "positive_person_weights": 35,
+      "people_with_own_trips": 35,
+      "own_trip_rows": 1234
+    }
+  ],
+  "definition_source": "cms_dictionary_2024.xlsx, Column Information: school_type, age, is_participant, person_weight_citywide",
+  "conclusion": "All 286 current high-school minors lack own trip diaries and have zero person weights. Only35 adult high-school participants have positive person weights and own trips. These adult diaries cannot replace all-high-school travel utility.",
+  "household_companions": "Household-member accompaniment flags occur in adult trips but do not alone identify each child school destination or establish a child-weighted diary sample; not treated as independent child diaries."
+}

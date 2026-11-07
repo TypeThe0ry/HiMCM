@@ -1,0 +1,66 @@
+{
+  "main_admitted": false,
+  "year": "2010\u20132011",
+  "school_stage_directly_observed": true,
+  "raw_audit": {
+    "households": 18965,
+    "persons": 43558,
+    "linked_trips": 143925,
+    "nyc_roster_persons": 11732,
+    "current_high_school_before_home_exclusion": 479,
+    "homeschool_high_school_excluded": 3,
+    "invalid_short_trip_key_duplicates": 34072
+  },
+  "known_students": 476,
+  "optional_students": 127,
+  "known_weight": 357354.864668,
+  "optional_weight": 70738.113466,
+  "known_reason_counts": {
+    "observed_direct_home_to_school": 365,
+    "no_reported_school_trip": 92,
+    "first_school_trip_not_from_home": 19
+  },
+  "optional_reason_counts": {
+    "no_reported_school_trip": 83,
+    "observed_direct_home_to_school": 37,
+    "first_school_trip_not_from_home": 7
+  },
+  "known_age_counts": {
+    "16-18 years": 271,
+    "Younger than 16 years": 189,
+    "19-24 years": 10,
+    "Age not provided": 4,
+    "35-54 years": 2
+  },
+  "known_direct_same_school_taz": 360,
+  "known_stage_utility_lower": 0.2549815722117543,
+  "known_stage_utility_upper": 0.49531773728059025,
+  "membership_utility_lower": 0.22155083404950307,
+  "membership_utility_upper": 0.5566046144308974,
+  "sampling_envelope_lower": 0.19246097998141304,
+  "sampling_envelope_upper": 0.6061139081363162,
+  "bootstrap_replicates": 1000,
+  "seed": 20261107,
+  "nyc_households_resampled": 5766,
+  "kish_person_weight_n": 223.15769894590758,
+  "caveats": [
+    "Historical actual reported trips, not current2026 travel or GPS tracks",
+    "School-purpose codes12class/study and13other school activity define journeys; usual-school identity is not verified by these purpose codes",
+    "One first school-bound linked trip per currentgrade9\u201312 non-homeschooled NYC roster member; missing/indirect journeys remain[0,1]",
+    "Unknown attendance or stage and Other school-type membership may be optional; unknown homeschooled status is not resolved",
+    "All-age current-high-school cohort, including reported adult and unknown ages; age is not used as a proxy for school stage",
+    "Household bootstrap within county is exploratory, not official design-based confidence; fixed finalweights, no original poststratification reraking or replicateweights",
+    "Replacement alternative for2013\u201314 modeled routing estimate, not an intersection across years"
+  ],
+  "under19_alternative": {
+    "known_students": 460,
+    "optional_students": 33,
+    "known_weight": 345363.794398,
+    "optional_weight": 20043.273830000002,
+    "membership_utility_lower": 0.24716696606494293,
+    "membership_utility_upper": 0.513388652618954,
+    "sampling_envelope_lower": 0.21398055978131691,
+    "sampling_envelope_upper": 0.5620075245485512,
+    "scope": "Currentgrade9\u201312 with known age<19; unknown ages retained as optional members; no lower age cutoff inferred"
+  }
+}

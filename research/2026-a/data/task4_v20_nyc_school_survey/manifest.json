@@ -1,0 +1,68 @@
+{
+  "accessed": "2026-11-07",
+  "official_public_data": true,
+  "files": {
+    "cms_dictionary_2024.xlsx": {
+      "url": "https://data.cityofnewyork.us/api/views/i2im-iqtt/files/8e7e3c5d-3ce8-4aaa-9254-32614b5c8b17?download=true",
+      "status": 200,
+      "bytes": 170828,
+      "sha256": "836364733b93edb6f976e594919434d0d51c1e0f5e4d90d6598bb96f795a184b"
+    },
+    "cms_questionnaire_2024.pdf": {
+      "url": "https://data.cityofnewyork.us/api/views/i2im-iqtt/files/ac507733-0b88-4b26-931a-7915cc282b59?download=true",
+      "status": 200,
+      "bytes": 877136,
+      "sha256": "46a143a3a2e1a0a9e5e86ac0ad0e294ad41ccca5e7c7501779204c5624182d55"
+    },
+    "cms_user_guide_2024.pdf": {
+      "url": "https://data.cityofnewyork.us/api/views/i2im-iqtt/files/3eb5758c-5338-4de2-900a-a6020d7cb145?download=true",
+      "status": 200,
+      "bytes": 916929,
+      "sha256": "e7185e10d6d9ab0996ef802b07072e9ba1d13d3465821bdde0342049a3267c52"
+    },
+    "trip_metadata.json": {
+      "url": "https://data.cityofnewyork.us/api/views/wgnh-qwsg.json",
+      "status": 200,
+      "bytes": 129839,
+      "sha256": "5565178e0ce3e9c1946bde1fd9bc6c2238a315f5f968d71ccd8b08f064531257"
+    },
+    "person_2024.csv": {
+      "url": "https://data.cityofnewyork.us/api/v3/views/i2im-iqtt/export.csv?accessType=DOWNLOAD",
+      "bytes": 11436468,
+      "sha256": "2b0477708c440afd5aa64e70116277765479ac8abc9a64334e2a8edee8c98f17",
+      "status": 200
+    },
+    "person_metadata.json": {
+      "url": "https://data.cityofnewyork.us/api/views/i2im-iqtt.json",
+      "bytes": 204492,
+      "sha256": "14174e811b27f03781111f4d5af85081a16d8a24bd9eca14f2b8ffb0155f735e",
+      "status": 200
+    },
+    "student_questionnaire_2024.pdf": {
+      "url": "https://infohub.nyced.org/docs/default-source/default-document-library/2024-nyc-school-survey-students-questions.pdf",
+      "bytes": 193728,
+      "sha256": "cf3391e4766cfb2d8ef2fbb840a1e293c5e1e036fd1898f6bc1ca83f16a90d5f",
+      "status": 200
+    },
+    "student_questionnaire_2025.pdf": {
+      "url": "https://infohub.nyced.org/docs/default-source/default-document-library/2025-nyc-school-survey-student-questions.pdf",
+      "bytes": 254342,
+      "sha256": "25be8fe12ae8539dc0d92c4e70f583afd536e97bd0e2623fbcf026005bc2e444",
+      "status": 200
+    },
+    "trip_2024.csv.gz": {
+      "url": "https://data.cityofnewyork.us/api/v3/views/wgnh-qwsg/export.csv?accessType=DOWNLOAD",
+      "status": 200,
+      "storage": "lossless gzip; original byte hash preserved",
+      "uncompressed_bytes": 77353399,
+      "uncompressed_sha256": "d7fab48a216ec14c47380f0994998d7adffb34393a43934d77f7dae7aaf6917b",
+      "bytes": 5432424,
+      "sha256": "b50d9599c65f237e203775b9320a7c67ba5a6efd3935070ebb5604e84e9b1741"
+    }
+  },
+  "failed_direct_pdf_paths": [
+    "https://www.nyc.gov/html/dot/downloads/pdf/2024-cms-questionnaire.pdf",
+    "https://www.nyc.gov/html/dot/downloads/pdf/2024-cms-user-guide.pdf"
+  ],
+  "pdf_recovery": "Official NYC Open Data attachments downloaded successfully after direct DOT PDF links returned403"
+}
