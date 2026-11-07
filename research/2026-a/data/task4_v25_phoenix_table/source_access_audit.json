@@ -1,0 +1,66 @@
+{
+  "accessed_date": "2026-11-07",
+  "source_url": "https://datacenter.aecf.org/data/tables/4616-four-year-graduation-rates",
+  "maricopa_view_url": "https://datacenter.aecf.org/data/tables/4616-four-year-graduation-rates#detailed/5/205/false/575,1096,2545,1095,2048,574,1729,37,871,870/any/14585,10653",
+  "arizona_view_url": "https://datacenter.aecf.org/data/tables/4616-four-year-graduation-rates#detailed/2/any/false/575,1096,2545,1095,2048,574,1729,37,871,870/any/14585,10653",
+  "method": "Normal browser public UI: By County, Uncheck All, Maricopa. Visible AX/DOM table read; manual transcription. No download retry or restriction bypass.",
+  "provider": "Annie E Casey Foundation KIDS COUNT / Children Action Alliance",
+  "underlying_source_shown": "Arizona Department of Education, Research & Evaluation, Graduation Rates",
+  "page_last_updated": "December 2025",
+  "table_labels": [
+    "Number",
+    "Percent"
+  ],
+  "definition_shown": "Four-year adjusted-cohort diploma graduation rate; transfer-in/out, emigration and death adjustments.",
+  "actual_display_values_obtained": true,
+  "raw_workbook_obtained": false,
+  "original_html_archived": false,
+  "transcription_file": "visible_table_transcription.csv",
+  "transcription_sha256": "c9d5513725195375bfd3ee6f736e478b492aa2d230121b9b31b1131b1e62dee3",
+  "requested_year_observations": {
+    "displayed_year": 2024,
+    "Maricopa": {
+      "Number": 50023,
+      "Percent": 78.8
+    },
+    "Arizona": {
+      "Number": 94651,
+      "Percent": 78.4
+    }
+  },
+  "interpretation": {
+    "number_semantics_verified": false,
+    "displayed_year_to_ADE_cohort_alignment_verified": false,
+    "issue": "Number label alone does not establish graduate numerator versus cohort denominator. Arizona2024 displayed94651 differs from archived ADE FY2025 graduates74261 and cohort94501. Percent78.4 also differs from 74261/94501=78.5822%. Do not silently reconcile or relabel."
+  },
+  "comparison_archive": {
+    "path": "../task4_v9_phoenix/state_graduation_2025.json",
+    "sha256": "53263c9e1469fb62e92e7a8121d26f94a58b4001fde634ad84dc4b768e35df71",
+    "All": {
+      "fiscalYear": 2025,
+      "educationOrganizationId": 79275,
+      "numInCohort": 94501,
+      "numGraduated": 74261,
+      "gradRate": 79.0,
+      "noofRecords": 1,
+      "studentGroupDescription": "All",
+      "sortOrder": 1
+    },
+    "derived_percent": 78.58223722500291
+  },
+  "new_admitted_phoenix_observations": 0,
+  "main_admitted": false,
+  "decision": "Archive visible county evidence as a new lead; preserve Phoenix education interval until Number meaning, cohort vintage and school-county containment are verified.",
+  "definition_short_quote": "The number of students who graduate in four years with a regular high school diploma",
+  "quote_scope": "Excerpt defines graduation-rate numerator, not an explicit separate definition of the Number column.",
+  "additional_vintage_checks": {
+    "manifest": "state_vintage_requests.json",
+    "FY2024_All": {
+      "numInCohort": 92895,
+      "numGraduated": 72324,
+      "gradRate": 77.86
+    },
+    "FY2026_response": "Empty array; no All observation",
+    "finding": "The neighboring FY2024 API also does not exactly match AECF displayed2023 Number72415/Percent77.5. Do not infer a simple one-year offset resolves source differences."
+  }
+}
