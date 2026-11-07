@@ -1,0 +1,34 @@
+{
+  "access_date": "2026-11-08",
+  "survey": "Bogota EODH2023 (not DANE EM2021)",
+  "routes": [
+    {
+      "url": "https://www.simur.gov.co/index.php/encuestas-de-movilidad",
+      "result": "Official landing read successfully by web tool; 2023 download link resolved.",
+      "advertised_contents": [
+        "Questionnaires modules D/E and A/B/C/X, cards 1-8",
+        "Unprocessed modules and data dictionary",
+        "Processed household, vehicle, person, trip and stage records"
+      ]
+    },
+    {
+      "url": "https://www.simur.gov.co/sites/www.simur.gov.co/files/2024-05-21/basico/2.PublicacionSIMUR-20240521T211042Z-001.zip",
+      "discovery": "2023 Descargar link on official SIMUR landing",
+      "web_result": "HTTP403",
+      "direct_HEAD_result": "HTTP/2 403, content-type text/html, content-length3746",
+      "downloaded": false
+    },
+    {
+      "url": "https://datosabiertos.bogota.gov.co/api/3/action/package_search?q=encuesta%20movilidad&rows=100",
+      "direct_result": "urllib timeout after25seconds",
+      "web_result": "not accessible via tool",
+      "dataset_list_received": false
+    }
+  ],
+  "current_upper_secondary_enrollment_verified": false,
+  "absence_of_current_grade_question_verified": false,
+  "official_questionnaire_or_dictionary_acquired": false,
+  "new_admitted_observations": 0,
+  "changed_model_cells": 0,
+  "main_admitted": false
+}

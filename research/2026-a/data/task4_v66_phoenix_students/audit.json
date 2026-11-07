@@ -1,0 +1,40 @@
+{
+  "city": "Phoenix",
+  "admissible_observations": 0,
+  "model_input_changed": false,
+  "missing_interval_changed": false,
+  "sources": [
+    {
+      "id": "phoenix_srts_2010_2014",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7662262/",
+      "archive": "phoenix_srts_pmc.html",
+      "sample": 2751,
+      "schools": 35,
+      "grades": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "geography": "Greater Phoenix Metropolitan Area",
+      "survey_years": [
+        2010,
+        2014
+      ],
+      "decision": "exclude",
+      "reason": "Actual parent-reported student travel, but grades 3–8 only; neither high-school cohort nor Phoenix city-specific commute-time distribution."
+    },
+    {
+      "id": "maricopa_trp_fy2005",
+      "url": "https://azmemory.azlibrary.gov/nodes/view/91367",
+      "archive": "annual_report_search_response.json",
+      "evidence_level": "search-index lead only; origin access HTTP 403",
+      "candidate_student_mean_minutes": 15.0,
+      "candidate_student_miles": 6.5,
+      "decision": "do_not_admit",
+      "reason": "Original tables inaccessible; county-level old student aggregate, high-school-only eligibility and Phoenix student denominator not verified. Mean alone does not identify nonlinear commute utility."
+    }
+  ]
+}
