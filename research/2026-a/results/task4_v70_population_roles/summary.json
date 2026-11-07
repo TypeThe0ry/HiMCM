@@ -1,0 +1,566 @@
+{
+  "model_version": "V70",
+  "main_admitted": false,
+  "current_scenario": "v70_both",
+  "baseline": "V69",
+  "other_unchanged_cells": 248,
+  "alpha_fixed": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "scenarios": [
+    {
+      "scenario": "v69_before",
+      "changed_cells": 0,
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v69": 0.9999999999999998,
+      "selected_cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734,
+          "max_regret": 50.50135310846815
+        },
+        {
+          "city": "Tokyo",
+          "decision_rank": 2,
+          "score_lower": 40.31358628821739,
+          "score_upper": 70.89925451069915,
+          "max_regret": 37.2158744152543
+        },
+        {
+          "city": "Singapore",
+          "decision_rank": 1,
+          "score_lower": 45.06271998689905,
+          "score_upper": 68.90043607654073,
+          "max_regret": 32.46674071657264
+        }
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "subgroup_only",
+      "changed_cells": 1,
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v69": 0.9999999999999998,
+      "selected_cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734,
+          "max_regret": 50.50135310846815
+        },
+        {
+          "city": "Tokyo",
+          "decision_rank": 2,
+          "score_lower": 40.31358628821739,
+          "score_upper": 70.89925451069915,
+          "max_regret": 37.2158744152543
+        },
+        {
+          "city": "Singapore",
+          "decision_rank": 1,
+          "score_lower": 43.45701449386852,
+          "score_upper": 71.59464112225425,
+          "max_regret": 34.072446209603164
+        }
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "roles_only",
+      "changed_cells": 1,
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v69": 0.9999999999999998,
+      "selected_cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734,
+          "max_regret": 50.50135310846815
+        },
+        {
+          "city": "Tokyo",
+          "decision_rank": 2,
+          "score_lower": 40.116441017269246,
+          "score_upper": 70.69606958276474,
+          "max_regret": 37.41301968620244
+        },
+        {
+          "city": "Singapore",
+          "decision_rank": 1,
+          "score_lower": 45.06271998689905,
+          "score_upper": 68.90043607654073,
+          "max_regret": 32.46674071657264
+        }
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "v70_both",
+      "changed_cells": 2,
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v69": 0.9999999999999998,
+      "selected_cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734,
+          "max_regret": 50.50135310846815
+        },
+        {
+          "city": "Tokyo",
+          "decision_rank": 2,
+          "score_lower": 40.116441017269246,
+          "score_upper": 70.69606958276474,
+          "max_regret": 37.41301968620244
+        },
+        {
+          "city": "Singapore",
+          "decision_rank": 1,
+          "score_lower": 43.45701449386852,
+          "score_upper": 71.59464112225425,
+          "max_regret": 34.072446209603164
+        }
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "all_private_allocation_unknown",
+      "changed_cells": 2,
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v69": 0.9999999999999998,
+      "selected_cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734,
+          "max_regret": 50.50135310846815
+        },
+        {
+          "city": "Tokyo",
+          "decision_rank": 2,
+          "score_lower": 38.729532544592466,
+          "score_upper": 70.69606958276474,
+          "max_regret": 38.79992815887922
+        },
+        {
+          "city": "Singapore",
+          "decision_rank": 1,
+          "score_lower": 43.45701449386852,
+          "score_upper": 71.59464112225425,
+          "max_regret": 34.072446209603164
+        }
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "ignore_advanced_course_allocation",
+      "changed_cells": 2,
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v69": 0.9999999999999998,
+      "selected_cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734,
+          "max_regret": 50.50135310846815
+        },
+        {
+          "city": "Tokyo",
+          "decision_rank": 2,
+          "score_lower": 40.13716459189669,
+          "score_upper": 70.69606958276474,
+          "max_regret": 37.39229611157499
+        },
+        {
+          "city": "Singapore",
+          "decision_rank": 1,
+          "score_lower": 43.45701449386852,
+          "score_upper": 71.59464112225425,
+          "max_regret": 34.072446209603164
+        }
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved_leaves": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    }
+  ]
+}

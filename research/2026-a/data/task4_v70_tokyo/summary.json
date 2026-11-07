@@ -1,0 +1,176 @@
+{
+  "city": "Tokyo",
+  "date": "2025-05-01",
+  "selected_roles": [
+    "主幹教諭",
+    "指導教諭",
+    "教諭",
+    "助教諭",
+    "講師"
+  ],
+  "excluded_roles": [
+    "校長",
+    "副校長",
+    "教頭",
+    "養護教諭",
+    "養護助教諭",
+    "栄養教諭"
+  ],
+  "school_types": [
+    {
+      "school_type": "high",
+      "sheet": "ey0175-1",
+      "tokyo_row": 19,
+      "total_main_post": 19446,
+      "roles": {
+        "校長": 401,
+        "副校長": 348,
+        "教頭": 242,
+        "主幹教諭": 1024,
+        "指導教諭": 133,
+        "教諭": 16155,
+        "助教諭": 1,
+        "養護教諭": 471,
+        "養護助教諭": 0,
+        "栄養教諭": 1,
+        "講師": 670
+      },
+      "role_cells": {
+        "校長": "E19",
+        "副校長": "H19",
+        "教頭": "K19",
+        "主幹教諭": "N19",
+        "指導教諭": "Q19",
+        "教諭": "T19",
+        "助教諭": "W19",
+        "養護教諭": "Z19",
+        "養護助教諭": "AC19",
+        "栄養教諭": "AF19",
+        "講師": "AI19"
+      },
+      "selected_teaching_posts": 17983,
+      "excluded_posts": 1463
+    },
+    {
+      "school_type": "integrated",
+      "sheet": "188(4-1)",
+      "tokyo_row": 22,
+      "total_main_post": 555,
+      "roles": {
+        "校長": 7,
+        "副校長": 16,
+        "教頭": 0,
+        "主幹教諭": 79,
+        "指導教諭": 7,
+        "教諭": 429,
+        "助教諭": 0,
+        "養護教諭": 16,
+        "養護助教諭": 0,
+        "栄養教諭": 1,
+        "講師": 0
+      },
+      "role_cells": {
+        "校長": "F22",
+        "副校長": "I22",
+        "教頭": "L22",
+        "主幹教諭": "O22",
+        "指導教諭": "R22",
+        "教諭": "U22",
+        "助教諭": "X22",
+        "養護教諭": "AA22",
+        "養護助教諭": "AD22",
+        "栄養教諭": "AG22",
+        "講師": "AJ22"
+      },
+      "selected_teaching_posts": 515,
+      "excluded_posts": 40
+    },
+    {
+      "school_type": "special",
+      "sheet": "ey0220-1",
+      "tokyo_row": 20,
+      "total_main_post": 7018,
+      "roles": {
+        "校長": 69,
+        "副校長": 115,
+        "教頭": 4,
+        "主幹教諭": 424,
+        "指導教諭": 22,
+        "教諭": 6233,
+        "助教諭": 1,
+        "養護教諭": 146,
+        "養護助教諭": 0,
+        "栄養教諭": 4,
+        "講師": 0
+      },
+      "role_cells": {
+        "校長": "E20",
+        "副校長": "H20",
+        "教頭": "K20",
+        "主幹教諭": "N20",
+        "指導教諭": "Q20",
+        "教諭": "T20",
+        "助教諭": "W20",
+        "養護教諭": "Z20",
+        "養護助教諭": "AC20",
+        "栄養教諭": "AF20",
+        "講師": "AI20"
+      },
+      "selected_teaching_posts": 6680,
+      "excluded_posts": 338
+    }
+  ],
+  "coarse_teachers_interval": [
+    8783,
+    25178
+  ],
+  "coarse_utility_interval": [
+    0.2962792214363622,
+    0.5470457616881114
+  ],
+  "ordinary_selected_roles_by_ownership": {
+    "national": 196,
+    "public": 8587,
+    "private": 9200
+  },
+  "ordinary_advanced_students": 60,
+  "ordinary_other_students": 0,
+  "edogawa_private_selected_pool": 166,
+  "role_only_teachers_interval": [
+    17983,
+    25178
+  ],
+  "municipality_conditioned_teachers_interval": [
+    17817,
+    25178
+  ],
+  "role_only_utility_interval": [
+    0.46295040889705064,
+    0.5470457616881114
+  ],
+  "municipality_conditioned_utility_interval": [
+    0.46064549489378204,
+    0.5470457616881114
+  ],
+  "students_interval": [
+    312711,
+    312920
+  ],
+  "teachers_interval": [
+    17817,
+    25178
+  ],
+  "utility_interval": [
+    0.46064549489378204,
+    0.5470457616881114
+  ],
+  "prior_teachers_interval": [
+    19446,
+    27019
+  ],
+  "prior_utility_interval": [
+    0.48244322786589705,
+    0.5644669329634149
+  ],
+  "scope": "Named teaching-post main-duty headcounts in the existing V69 school/course coverage. Not actual classroom teaching hours, active-duty FTE, or all-city high-school coverage. The main lower bound treats selected posts outside the sole municipality/ownership cell with enrolled advanced students as honka resources; it is a statistical attribution condition, not a measured teaching allocation. Leave/substitute treatment is unchanged; managers and health/nutrition staff may also teach but are outside the selected-post definition."
+}

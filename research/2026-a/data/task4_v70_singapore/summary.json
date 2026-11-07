@@ -1,0 +1,79 @@
+{
+  "city": "Singapore",
+  "source_year": 2020,
+  "previous_mixed_stage_envelope": [
+    0.24482590214534836,
+    0.6148114161630094
+  ],
+  "secondary_whole_group_interval": [
+    0.3702522131530383,
+    0.6148114161630094
+  ],
+  "postsecondary_whole_group_interval": [
+    0.24482590214534836,
+    0.4192241445854123
+  ],
+  "secondary_counts": [
+    46434,
+    71367,
+    31872,
+    17246,
+    5568
+  ],
+  "secondary_travel_total": 172487,
+  "secondary_age_table": {
+    "Total_Total_Total": 174298,
+    "Total_10_14Years_Total": 99841,
+    "Total_15_19Years_Total": 74241,
+    "Total_20YearsandOver_Total": 215
+  },
+  "target": "Age 14-18 current upper-secondary students; no same-universe current-grade by age by travel-bin allocation available",
+  "target_mass_interval": [
+    0,
+    172487
+  ],
+  "target_mass_positive_but_no_identified_positive_lower_bound": true,
+  "revised_travel_interval": [
+    0,
+    1
+  ],
+  "counterexample_mass80000": {
+    "hypothetical": true,
+    "mass": 80000,
+    "lower": 0.23447621165954083,
+    "upper": 0.8349101015489281,
+    "lower_bin_allocation": [
+      0.0,
+      25314,
+      31872,
+      17246,
+      5568
+    ],
+    "upper_bin_allocation": [
+      46434,
+      33566,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "meaning": "Constructed subgroup assignments under published bin capacities, not observed high-school counts or trips"
+  },
+  "limits_are_infimum_supremum": true,
+  "population_exclusions": "Travel table excludes home study and students overseas at least six months; age-level table denominator is different.",
+  "classification_evidence": {
+    "census2020_pdf_page": 232,
+    "census2020_printed_page": 215,
+    "ghs2025_pdf_page": 130,
+    "ghs2025_printed_page": 115,
+    "ghs2025_definition_visually_checked": true,
+    "census_secondary": "Secondary 1 to 5 plus vocational/technical/commercial secondary courses including ITE Skills Certificate"
+  },
+  "ghs2025_not_used_as_target_observation": true,
+  "nitec_mapping": {
+    "reference_year": 2023,
+    "National_ITE_Certificate": "453",
+    "Higher_National_ITE_Certificate": "454",
+    "cells": "Sheet1!R18:R19"
+  },
+  "counterexample_scope": "Secondary is one broad group containing ordinary upper-secondary students; this does not assert all target programmes belong to Secondary. Target programme and age allocation are unresolved."
+}
