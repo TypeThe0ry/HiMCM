@@ -4,7 +4,14 @@
 
 本仓库用于2026年HiMCM A题的全球城市研究：整理资料、蒸馏历史获奖论文、设计指标和模型、记录修订与检验，并逐步形成可复核的城市比较。
 
-**当前仍处于研究与数据准备阶段，没有真实城市最终排名。全部2026研究在本次整理后合并到本地 `main`；按约定，比赛结束前不推送。**
+**Overleaf workspace 是论文工作的第一优先级。GitHub `main` 用于同步、版本记录和研究资料归档；论文进度以 Overleaf 最新内容为准。**
+
+## Overleaf 优先
+
+- 论文主文件：[main.tex](main.tex)。参考文献：[ref.bib](ref.bib)。模板：[mcmthesis.cls](mcmthesis.cls)。
+- 已保留远端 `Updates from Overleaf` 提交。以上三个文件维持仓库根路径，不为目录整理而移动。
+- 修改论文前先取得 Overleaf 最新状态，尊重已有正文、公式与文献；研究笔记不会自动替换正文。
+- 当前未检测到连接的 Overleaf 文档会话，因此本轮仅保存同步约定和仓库镜像，未直接编辑在线工作区。
 
 ## 从这里开始
 
@@ -45,6 +52,9 @@
 
 ```text
 .
+├── main.tex                      # Overleaf论文主文件
+├── ref.bib                       # Overleaf参考文献
+├── mcmthesis.cls                  # Overleaf模板
 ├── README.md                     # 当前项目入口
 ├── requirements.txt              # 论文文本审计依赖
 ├── docs/                         # 结构说明、迁移记录、历史论文接力
@@ -86,17 +96,13 @@ python3 scripts/verify_repository.py
 
 新增城市或指标后，先核实原始来源、边界、实际观测年份、年龄口径和单位，再建立单独的实测长表。不要将旧空模板直接称作已经完成的25城数据。
 
-## 本地合并与发布约定
+## 同步与发布
 
-研究分支 `research/2026-a-local` 的内容在本次整理后合并到本地 `main`；分支保留供追溯。此次没有推送、更新Release或创建定时发布。
+研究与目录整理已合并到 `main`。2026-11-07用户明确改为“推送，直接推送”，本次发布遵循这条最新指令；先前“赛后才推送”是历史约定，不再阻止此次操作。
 
-本地启用推送阻挡：
+推送前先获取并合并远端新增内容，保留 Overleaf 同步提交，不强制覆盖。Overleaf 在线工作区优先于本地草稿；未连接在线会话时，清楚区分远端同步文件和在线实时状态。
 
-```sh
-git config core.hooksPath .githooks
-```
-
-按[COMAP官方赛期](https://www.contest.comap.com/highschool/contests/himcm/instructions.html)，停止修改参赛稿为 **2026-11-18 09:00（新加坡时间）**，提交截止为 **10:00**。钩子在10:00前阻挡推送；到期只解除时间阻挡，不自动推送。其他克隆需要自行启用钩子；它不覆盖GitHub网页/API等发布方式。
+本地旧时间钩子仍存在，用户明确授权的本次推送作单次跳过；未设置自动发布。官方停止修改参赛稿与提交时间不因此改变，具体仍见[COMAP赛期说明](https://www.contest.comap.com/highschool/contests/himcm/instructions.html)。
 
 既有[历史论文Release](https://github.com/TypeThe0ry/HiMCM/releases/tag/v2026.11.06-68papers)仍保留早期目录结构，本次未更新；其中不包含本轮A题研究与新材料。
 

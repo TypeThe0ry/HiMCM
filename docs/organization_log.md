@@ -28,3 +28,7 @@
 研究与整理内容在本地合并到main，保留研究分支历史。没有推送、更新公开Release或创建定时发布。推送时间钩子保持启用；到期不自动发布。
 
 可再次运行`python3 scripts/verify_repository.py`检查文件关系与关键完整性。
+
+## 随后收到的新指令
+
+同日用户明确要求立即推送，并将Overleaf workspace设为第一优先级。已合并远端`Updates from Overleaf`，保留根目录`main.tex`、`ref.bib`、`mcmthesis.cls`，不移动或覆盖。根README与AGENTS.md记录新的优先级；前文“未推送”描述的是整理完成时的历史状态。
