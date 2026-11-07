@@ -106,7 +106,15 @@ def draw(ax,city,kind='full',small=False):
  return data,pc
 
 def save(fig,name):
- for ext in ['pdf','svg','png']:fig.savefig(O/f'{name}.{ext}',bbox_inches='tight',pad_inches=.06,facecolor='white')
+ for ext in ['pdf','svg','png']:
+  path=O/f'{name}.{ext}';fig.savefig(path,bbox_inches='tight',pad_inches=.06,facecolor='white')
+  if ext=='svg':
+   compressed=path.with_suffix('.svgz')
+   if path.stat().st_size>=50_000_000:
+    original=path.read_bytes();compressed.write_bytes(gzip.compress(original,mtime=0))
+    assert gzip.decompress(compressed.read_bytes())==original
+    path.unlink()
+   elif compressed.exists():compressed.unlink()
  plt.close(fig)
 names=['Copenhagen','Toronto','Dubai','Shanghai'];captions=[]
 for k,city in enumerate(names,2):
