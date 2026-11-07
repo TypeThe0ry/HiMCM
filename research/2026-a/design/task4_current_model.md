@@ -1,5 +1,7 @@
 # 当前模型：V72墨西哥城年龄口径修订（2026-11-08）
 
+V74取得[Phoenix与Toronto学校级新原件并复算](../results/task4_v74_sources/README.md)：解释PXU目录数量差异、取得Toronto教师目录与分校预算；行政队列与实际高中教师分配仍未识别。Athens学校数据下载中断，未准入。科学模型仍V72，全部输入及排名保持。
+
 V73重算[当前补数下界](../results/task4_v73_acquisition_limits/README.md)：全城教育＋通学即使精确测得，固定权重仍至少8城、连续权重并集至少21城无法排除；仅补Phoenix两项仍25城。科学模型继续V72，250格与全部排名不变。
 
 V72将Mexico City通学筛选改为14—18岁，保留未知资格和学段重建条件；仅1格改变，其他249格及全部排名保持，25城仍可能第一。[修订与排名](../results/task4_v72_mexico_age/README.md) · [当前压力检验](../results/task4_v72_joint_stress/README.md)。当前入口为`task4_mexico_age_revision.mexico_bounds()`；最新压力结论已在V72重跑，单城扩张首次失效括区间为(0.025,0.05]。以下为历史记录。

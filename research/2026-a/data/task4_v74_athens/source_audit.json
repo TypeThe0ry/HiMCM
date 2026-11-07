@@ -1,0 +1,23 @@
+{
+  "new_model_observations": 0,
+  "teacher_scope": "Private primary/secondary teaching staff by school type; not complete municipal teacher pool",
+  "students_catalogue_metadata_not_observation_year": true,
+  "download_results": [
+    {
+      "resource": "students_csv",
+      "expected_bytes": 8722830,
+      "received_bytes_reported_in_exception": 3456385,
+      "status": "terminal IncompleteRead; complete original not saved"
+    },
+    {
+      "resource": "students_zip",
+      "status": "terminal read timeout; complete original not saved"
+    },
+    {
+      "resource": "school_directory_zip",
+      "status": "terminal read timeout; complete original not saved"
+    }
+  ],
+  "municipal_join_completed": false,
+  "current_model_change": false
+}
