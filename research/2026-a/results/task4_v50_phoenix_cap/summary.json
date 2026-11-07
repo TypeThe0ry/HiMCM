@@ -1,0 +1,59 @@
+{
+  "main_model_changed": false,
+  "district_cap": 1180,
+  "student_upper": 71858.0,
+  "teacher_lower": 2512.9700000000003,
+  "source_representation": "Search extraction of official PDF; original PDF bytes unavailable",
+  "condition": "Hope target pupils are included in the district unduplicated October 1 count; CCD school universe and snapshot are compatible",
+  "target": "Phoenix school-location operational nonvirtual public grades9-12 with attributed teacher FTE",
+  "scenarios": [
+    {
+      "scenario": "same_public_target_unknown",
+      "phoenix_education_lower": 0.0,
+      "phoenix": {
+        "score_lower": 27.028107595003533,
+        "score_upper": 73.58816640508734,
+        "max_regret": 50.50135310846815,
+        "decision_rank": 23
+      },
+      "changed_ranks_vs_same_target": 0,
+      "possible_champions": 25,
+      "continuous_possible": 25,
+      "choice": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "chart_1178_snapshot_assumed",
+      "phoenix_education_lower": 0.3440836216705439,
+      "phoenix": {
+        "score_lower": 29.127378756327666,
+        "score_upper": 73.58816640508734,
+        "max_regret": 48.40208194714402,
+        "decision_rank": 20
+      },
+      "changed_ranks_vs_same_target": 4,
+      "possible_champions": 25,
+      "continuous_possible": 25,
+      "choice": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "documented_district_1180_coverage_conditional",
+      "phoenix_education_lower": 0.34407734005278745,
+      "phoenix": {
+        "score_lower": 29.127322406908604,
+        "score_upper": 73.58816640508734,
+        "max_regret": 48.40213829656308,
+        "decision_rank": 20
+      },
+      "changed_ranks_vs_same_target": 4,
+      "possible_champions": 25,
+      "continuous_possible": 25,
+      "choice": [
+        "Singapore"
+      ]
+    }
+  ]
+}

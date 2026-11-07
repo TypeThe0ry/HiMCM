@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 同年证据与连续推荐 V50 | [Phoenix有日期的人数条件上界](research/2026-a/results/task4_v50_phoenix_cap/README.md) · [Singapore整个偏好区间推荐证书](research/2026-a/results/task4_v50_continuous_recommendation/README.md) |
 | 证据审计 V49 | [Phoenix历史83名学生与São Paulo15条行程核验，排名及25城候选不变](research/2026-a/results/task4_v49_evidence_audit/README.md) |
 | 真实年龄修订 V48 | [São Paulo对齐1690名14—18岁高中生，保留201名未知](research/2026-a/results/task4_v48_saopaulo_age/README.md) |
 | 高中覆盖修订 V47 | [Tokyo新增3435名高中部学生；教师分配保留区间](research/2026-a/results/task4_v47_tokyo_coverage/README.md) |
