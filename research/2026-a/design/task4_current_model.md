@@ -80,3 +80,9 @@ $$[\max(0,\underline T-t_{203,.9875}SE(\underline T)),\min(1,\overline T+t_{203,
 方差公式与抽样范围见[数据说明](../data/task4_v30_cape_town/README.md)。权重、评分和决策公式不变，其余249格不变。Cape Town得分界由[33.019656,73.255944]变为[35.638820,72.191687]，最坏遗憾决策名次13→5；9城名次变化，Kendall tau=0.946667。Singapore仍为推荐，Phoenix仍第24，可能冠军仍25城。全年龄当前高中生189人的敏感性情景同样得到Cape Town第5。
 
 这是2023年调查覆盖总体下、固定校准权重的近似推断，不覆盖学生宿舍等集体住户，也不是全城市联合置信保证；`main_admitted=false`保留。[完整前后对照](../results/task4_v30_cape_town/README.md)记录来源哈希和复现命令。证据改善了通学界与决策信息，尚未缩小可能冠军集合。
+
+## V32：高中师资分母界与年份替换
+
+最新条件入口为[school_bounds()](../scripts/task4_school_stage_revision.py)。Shanghai以2025学年235542名普通高中学生/23999名专任教师替换旧年份。Warsaw青年普通高中87999名学生的教师分配未知，但不超过全部普通高中6080 FTE（含1 FTE发布精度保护），因此教育效用界为[0,15/(15+87999/6080)]。青年与成人教师分配保留未知，FTE与人数口径差异明确保留。
+
+两项修订只影响对应教育格。Warsaw得分上界74.317458→70.291549，排名仍13；Shanghai仍6。Singapore推荐、Cape Town第5、Phoenix第24和25个可能冠军不变。公式及权重保持上述定义，详见[V32对照](../results/task4_v32_school_stage/README.md)。

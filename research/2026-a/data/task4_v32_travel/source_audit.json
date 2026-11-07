@@ -1,0 +1,34 @@
+{
+  "access_date": "2026-11-07",
+  "city": "Bogota",
+  "survey": "DANE Encuesta Multiproposito 2021",
+  "new_admitted_observations": 0,
+  "catalog": "https://microdatos.dane.gov.co/index.php/catalog/743",
+  "education_dictionary": "https://microdatos.dane.gov.co/index.php/catalog/743/data-dictionary/F51",
+  "current_level": {
+    "field": "NPCHP6",
+    "code": 4,
+    "label": "Media (10-13)",
+    "url": "https://microdatos.dane.gov.co/index.php/catalog/743/variable/F51/V5008?name=NPCHP6"
+  },
+  "current_grade": "NPCHP6A",
+  "currently_studies": "NPCHP2",
+  "no_travel": "NPCHP18AO",
+  "travel_minutes": {
+    "field": "NPCHP19",
+    "definition": "Outbound to study, includes waiting and all modes",
+    "metadata_range": "5-999; sentinel codes require manual validation",
+    "url": "https://microdatos.dane.gov.co/index.php/catalog/743/variable/F51/V5044?name=NPCHP19"
+  },
+  "join_keys": [
+    "DIRECTORIO",
+    "DIRECTORIO_HOG",
+    "DIRECTORIO_PER",
+    "SECUENCIA_P",
+    "ORDEN"
+  ],
+  "download_catalog": "https://microdatos.dane.gov.co/index.php/catalog/743/get-microdata",
+  "alternate_official_resource": "https://datosabiertos.bogota.gov.co/dataset/encuesta-multiproposito-2021-sdp/resource/b3fd892e-b9f9-4f34-ac22-6cc50612eac9",
+  "alternate_csv_advertised_bytes": 1254896789,
+  "access_result": "Official dictionaries readable through web retrieval. Local DANE HTTP403; alternate Bogota CKAN connection timeout. No original microdata acquired."
+}

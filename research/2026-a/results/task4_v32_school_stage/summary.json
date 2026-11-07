@@ -1,0 +1,284 @@
+{
+  "main_admitted": false,
+  "new_city_indicator_cells": 1,
+  "updated_year_cells": 1,
+  "primary_scenario": "both",
+  "alpha": 0.1,
+  "alpha_sensitivity": [
+    0.05,
+    0.2
+  ],
+  "scope": "Regular high-school resource ratio. Warsaw youth schools with unknown teacher allocation, FTE versus other cities headcounts; conditional comparison, not direct educational attainment or causal quality.",
+  "sources": [
+    {
+      "path": "data/task4_v32_shanghai/manifest.json",
+      "sha256": "37b335857c04a7787062d62c993640c0eee0184d6459ccbff14f84d96e5cb786"
+    },
+    {
+      "path": "data/task4_v32_shanghai/extracted.json",
+      "sha256": "c4d9a09a0dedd09e5ed67c3b1c100537f4aba044ab7a5abff85549b1f5e9f03e"
+    },
+    {
+      "path": "data/task4_v32_shanghai/extract.py",
+      "sha256": "0ac24878b161782d0a63177c62c8ca1cfcf1d2436d5efb1b32b685901676f7a5"
+    },
+    {
+      "path": "data/task4_v32_education/observation.json",
+      "sha256": "940446ad90187abeadef9e2205d3f4077eaa9c7899406308c8acdb1383e69b04"
+    },
+    {
+      "path": "data/task4_v32_education/extract.py",
+      "sha256": "eb46f462685b96aa37c44889586bd018383a82ae26f3eab36bbcb1dad82aec67"
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "v30_before",
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734
+        },
+        {
+          "city": "Warsaw",
+          "decision_rank": 13,
+          "score_lower": 33.4064450020959,
+          "score_upper": 74.31745772638907
+        },
+        {
+          "city": "Cape Town",
+          "decision_rank": 5,
+          "score_lower": 35.638820300044415,
+          "score_upper": 72.19168678410185
+        },
+        {
+          "city": "Shanghai",
+          "decision_rank": 6,
+          "score_lower": 35.39542195266221,
+          "score_upper": 66.86289268115846
+        }
+      ]
+    },
+    {
+      "scenario": "shanghai_only",
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734
+        },
+        {
+          "city": "Warsaw",
+          "decision_rank": 13,
+          "score_lower": 33.4064450020959,
+          "score_upper": 74.31745772638907
+        },
+        {
+          "city": "Cape Town",
+          "decision_rank": 5,
+          "score_lower": 35.638820300044415,
+          "score_upper": 72.19168678410185
+        },
+        {
+          "city": "Shanghai",
+          "decision_rank": 6,
+          "score_lower": 35.412669558420035,
+          "score_upper": 66.87764749309814
+        }
+      ]
+    },
+    {
+      "scenario": "warsaw_only",
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734
+        },
+        {
+          "city": "Warsaw",
+          "decision_rank": 13,
+          "score_lower": 33.4064450020959,
+          "score_upper": 70.29154879228898
+        },
+        {
+          "city": "Cape Town",
+          "decision_rank": 5,
+          "score_lower": 35.638820300044415,
+          "score_upper": 72.19168678410185
+        },
+        {
+          "city": "Shanghai",
+          "decision_rank": 6,
+          "score_lower": 35.39542195266221,
+          "score_upper": 66.86289268115846
+        }
+      ]
+    },
+    {
+      "scenario": "both",
+      "choices": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "cities": [
+        {
+          "city": "Phoenix",
+          "decision_rank": 24,
+          "score_lower": 27.028107595003533,
+          "score_upper": 73.58816640508734
+        },
+        {
+          "city": "Warsaw",
+          "decision_rank": 13,
+          "score_lower": 33.4064450020959,
+          "score_upper": 70.29154879228898
+        },
+        {
+          "city": "Cape Town",
+          "decision_rank": 5,
+          "score_lower": 35.638820300044415,
+          "score_upper": 72.19168678410185
+        },
+        {
+          "city": "Shanghai",
+          "decision_rank": 6,
+          "score_lower": 35.412669558420035,
+          "score_upper": 66.87764749309814
+        }
+      ]
+    }
+  ]
+}
