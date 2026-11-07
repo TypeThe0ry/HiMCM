@@ -1,0 +1,25 @@
+{
+  "accessed": "2026-11-07",
+  "files": [
+    {
+      "file": "alevel_timeseries.json",
+      "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_326c2c38bf2db18761039c3898880a39&limit=1000",
+      "bytes": 9073,
+      "sha256": "0571fc3a84356843a0d67af8d549de909b0e20e7ea6a4a3650f908e23a15264c",
+      "source_type": "official_download"
+    },
+    {
+      "file": "alevel_metadata.html",
+      "url": "https://data.gov.sg/datasets/d_326c2c38bf2db18761039c3898880a39/view",
+      "bytes": 272843,
+      "sha256": "53f690f211ef46f7d2e3a6978efd159b20a5b2173b016617cda4575493ecc213",
+      "source_type": "official_download"
+    }
+  ],
+  "failed_original_downloads": [
+    "SEAB2024 HTML direct curl403; web tool read successful",
+    "MOE esd-2025.pdf direct404; official indexed table readable",
+    "UIS Singapore.pdf404; do not assert ISCED mapping from unavailable profile"
+  ],
+  "main_admitted": false
+}

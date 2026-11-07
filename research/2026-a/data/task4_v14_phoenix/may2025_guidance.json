@@ -1,0 +1,52 @@
+{
+  "retrieved_date": "2026-11-07",
+  "archive_kind": "structured_paraphrase_and_short_quote_of_web_reader",
+  "raw_pdf_archived": false,
+  "source_url": "https://www.azed.gov/sites/default/files/2025/05/2025%20May%20Grader.pdf",
+  "source_title": "May 2025 Grader",
+  "source_pages": 11,
+  "page_numbering": "printed page numbers equal PDF zero-based indices for cited pages",
+  "exact_quote": {
+    "printed_page": 6,
+    "text": "Students should receive a graduation code from only one school."
+  },
+  "findings": [
+    {
+      "printed_pages": [
+        6,
+        7
+      ],
+      "paraphrase": "The diploma-issuing school reports G, W7, or S7. Concurrent schools should record W1 before that graduation code. The example contrasts a diploma school with another school providing CTE courses."
+    },
+    {
+      "printed_page": 9,
+      "paraphrase": "The timeline schedules validation of fiscal-year 2024 graduate data from May 25 through July 1, 2025."
+    },
+    {
+      "printed_pages": [
+        5,
+        6
+      ],
+      "paraphrase": "Schools are advised to review both current and prior-year graduate records, using prior-year correction processes when needed."
+    }
+  ],
+  "interpretation": "Supports a one-graduation-code administrative compliance scenario relevant to FY2024 graduate validation. It does not establish that archived school aggregates are error-free, that all cohort denominators are disjoint, or that later school geography matches the graduation cohort.",
+  "download_attempts": [
+    {
+      "host": "www.azed.gov",
+      "method": "curl HTTPS",
+      "result": "HTTP403"
+    },
+    {
+      "host": "cms.azed.gov",
+      "method": "curl HTTPS",
+      "result": "HTTP403"
+    }
+  ],
+  "supporting_source": {
+    "url": "https://www.azed.gov/sites/default/files/2024/02/FY24%20Grad%20Drop%20and%20Persistence%20Rate%20Tech%20Manual.pdf",
+    "date": "2024-01-20",
+    "evidence_kind": "official_PDF_search_index",
+    "paraphrase": "Cohort membership follows the student; students remain assigned to the last high school of record. The school recording the graduation exit is the last school. The retrieved paragraph omits the dual-G exception present in the older indexed manuals, but full-document absence has not been verified."
+  }
+}
