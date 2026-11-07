@@ -1,6 +1,6 @@
-# 当前模型：V38 覆盖修订及历史对照（2026-11-07）
+# 当前模型：V44 通学终点核验及历史对照（2026-11-07）
 
-当前条件入口为 [singapore_bounds()](../scripts/task4_singapore_coverage_revision.py)：在V34上扩大Singapore预科学生覆盖，保留教师分配未知量。Singapore仍为最坏遗憾规则首选，可能冠军仍25城，最小最大遗憾为28.237325分。当前修订见本页末尾；下列V23—V34数值保留为历史对照。
+当前条件入口为 [melbourne_bounds()](../scripts/task4_melbourne_observed_travel.py)：在V38上新增实际停靠记录核验，将7个未明确中学终点的通学效用恢复为[0,1]。同一线性jackknife规则下，Melbourne通学界由[0.278896,0.781095]改为[0.239800,0.792787]，仍第4；Singapore仍为最坏遗憾首选，Phoenix仍第24，可能冠军仍25城。其余249格保持V38。详见[V44同口径对照](../results/task4_v44_melbourne/README.md)。下列V23—V39数值与入口保留为历史对照。
 
 V23十指标基准推荐 Singapore：最小最大遗憾为 28.173588 分，25 城仍全部是可能冠军。这里的推荐是在现有证据区间下选择最坏遗憾最小的城市，尚未识别唯一绩效冠军。V23 基准平均得分区间宽度为 37.916339 分；V26 直接重算五个通学尺度后首选保持，但最多 11 城的决策名次改变。
 
@@ -28,7 +28,7 @@ $$\underline T=\frac{\sum_r p_r l_r}{\sum_r p_r},\qquad
 $$\underline T=\min_{z_r\in\{0,1\}}\frac{A+\sum_r z_rv_ra_r}{N+\sum_r z_rv_r},\qquad
 \overline T=\max_{z_r\in\{0,1\}}\frac{B+\sum_r z_rv_rb_r}{N+\sum_r z_rv_r}.$$
 
-默认 NYC 为 under19、2010—11 年历史日记；Mexico 为 2020 年未成年条件范围，当前高中阶段依赖已完成学段／年级进阶假设；Melbourne 为 Greater Melbourne、Secondary 在读且 15—19 岁，尚未单独识别高中年级。Melbourne 名册中 170 名有个人权重者含 107 名有旅程和 63 名无旅程者，使用第一条教育旅程与 10 组官方个人重复权重。端点抽样包络采用
+默认 NYC 为 under19、2010—11 年历史日记；Mexico 为 2020 年未成年条件范围，当前高中阶段依赖已完成学段／年级进阶假设；Melbourne 为 Greater Melbourne、Secondary 在读且 15—19 岁，尚未单独识别高中年级。Melbourne 名册中170名有个人权重者含107名有旅程和63名无旅程者。V44进一步核验其中100个中学终点，另外7人的终点未明确，连同63名无旅程者保留[0,1]。使用第一条教育旅程与10组官方个人重复权重。端点抽样包络采用
 
 $$SE(\theta)=\sqrt{\frac{9}{10}\sum_{r=1}^{10}(\theta_r-\theta)^2},\qquad
 [\max(0,\underline T-t_{9,.975}SE(\underline T)),\min(1,\overline T+t_{9,.975}SE(\overline T))].$$

@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| 通学终点修订 V44 | [Melbourne核验7条未明确记录；分开数据与推断效果](research/2026-a/results/task4_v44_melbourne/README.md) |
 | Phoenix同年学区核查 V43 | [227条人数记录均被抑制；排名与冠军集合不变](research/2026-a/results/task4_v43_lea_audit/README.md) |
 | Phoenix完整名录 V42 | [公校师资下界与唯一未封顶分母](research/2026-a/results/task4_v42_phoenix_public/README.md) |
 | 最新匹配证据 V41 | [Toronto考试分母与Phoenix实际教师记录](research/2026-a/results/task4_v41_matched_evidence/README.md) |

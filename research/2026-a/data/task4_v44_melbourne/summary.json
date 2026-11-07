@@ -1,0 +1,463 @@
+{
+  "source": "VISTA 2024-25, official public microdata",
+  "target": "Greater Melbourne secondary students with a recorded weekday home-to-education journey; first such journey per person",
+  "geographic_scope": "ABS Greater Melbourne, not City of Melbourne municipality",
+  "exact_14_18_membership_identified": false,
+  "main_admission": false,
+  "secondary_weekday_persons": 322,
+  "persons_without_home_education_journey": 117,
+  "weekday_secondary_journeys": 208,
+  "repeated_journeys_removed": 3,
+  "weight": "person poststratification; weekday multiplier 7/5 cancels in ratios",
+  "uncertainty_method": "10 official person jackknife replicate weights; logit endpoint variance 9/10 sum squared deviations; t(9,.975) critical value. Approximate endpoint envelope, not simultaneous confidence coverage.",
+  "all_secondary": {
+    "persons": 205,
+    "input_persons": 205,
+    "persons_with_missing_or_invalid_weights": 0,
+    "strict_target_interval_if_unbounded_missing_weights": null,
+    "no_recorded_journey": 0,
+    "households": 155,
+    "age_bands": {
+      "15->19": 107,
+      "10->14": 96,
+      "20->24": 2
+    },
+    "destination_categories": {
+      "Secondary School": 190,
+      "School NEC": 7,
+      "Primary School": 6,
+      "Tertiary": 1,
+      "Bus Stop": 1
+    },
+    "verified_secondary_destination": 190,
+    "uncertain_destination_or_duration": 15,
+    "invalid_duration": 0,
+    "sum_person_weights": 168823.77123653702,
+    "duration_variable": "journey_elapsed_time",
+    "weighted_minutes_for_reported_journeys": 23.061474342401393,
+    "utility_identification_interval": [
+      0.4614479485488059,
+      0.559808979972396
+    ],
+    "endpoint_jackknife_intervals": [
+      [
+        0.3889563076347183,
+        0.5356075367625277
+      ],
+      [
+        0.5192473275672163,
+        0.5995874214213784
+      ]
+    ],
+    "sampling_envelope": [
+      0.3889563076347183,
+      0.5995874214213784
+    ],
+    "linear_sampling_envelope": [
+      0.3877170176539464,
+      0.6000209739058358
+    ],
+    "critical_value": 2.2621571628540993,
+    "endpoint_replicates": [
+      [
+        0.4765817865796018,
+        0.459286142648688,
+        0.4513556526463337,
+        0.4649870159822562,
+        0.4724418250316096,
+        0.4607784807781305,
+        0.4383973414435838,
+        0.46894472460844033,
+        0.45034619320674774,
+        0.4618615230840448
+      ],
+      [
+        0.5533574071589648,
+        0.5686245097362287,
+        0.5644092672312299,
+        0.5627500533628274,
+        0.5547991698311663,
+        0.5706839227186711,
+        0.557991307852825,
+        0.5546827502652756,
+        0.5546668487006867,
+        0.5582094074440273
+      ]
+    ]
+  },
+  "secondary_age_15_19": {
+    "persons": 107,
+    "input_persons": 107,
+    "persons_with_missing_or_invalid_weights": 0,
+    "strict_target_interval_if_unbounded_missing_weights": null,
+    "no_recorded_journey": 0,
+    "households": 93,
+    "age_bands": {
+      "15->19": 107
+    },
+    "destination_categories": {
+      "Secondary School": 100,
+      "School NEC": 3,
+      "Primary School": 3,
+      "Tertiary": 1
+    },
+    "verified_secondary_destination": 100,
+    "uncertain_destination_or_duration": 7,
+    "invalid_duration": 0,
+    "sum_person_weights": 83597.30345694302,
+    "duration_variable": "journey_elapsed_time",
+    "weighted_minutes_for_reported_journeys": 20.841113181818077,
+    "utility_identification_interval": [
+      0.5039933949893106,
+      0.5874852897623748
+    ],
+    "endpoint_jackknife_intervals": [
+      [
+        0.40949763640572245,
+        0.5982047235712884
+      ],
+      [
+        0.5389374058261737,
+        0.6343891521503298
+      ]
+    ],
+    "sampling_envelope": [
+      0.40949763640572245,
+      0.6343891521503298
+    ],
+    "linear_sampling_envelope": [
+      0.40860177975195533,
+      0.6353495683650225
+    ],
+    "critical_value": 2.2621571628540993,
+    "endpoint_replicates": [
+      [
+        0.5130344409038821,
+        0.5065371210117134,
+        0.5073021086243001,
+        0.5070241451918415,
+        0.5145390307662867,
+        0.5023021691978354,
+        0.4657093580316157,
+        0.5205527970747397,
+        0.5003459238045875,
+        0.5036041266915698
+      ],
+      [
+        0.584198754687224,
+        0.5751697884980093,
+        0.5951605021565581,
+        0.5939606560690975,
+        0.5987425144085421,
+        0.5919769150113547,
+        0.5887668100225969,
+        0.5837487028878735,
+        0.5812846231261795,
+        0.581726048875559
+      ]
+    ]
+  },
+  "all_resident_secondary": {
+    "persons": 317,
+    "input_persons": 322,
+    "persons_with_missing_or_invalid_weights": 5,
+    "strict_target_interval_if_unbounded_missing_weights": [
+      0.0,
+      1.0
+    ],
+    "no_recorded_journey": 112,
+    "households": 237,
+    "age_bands": {
+      "15->19": 170,
+      "10->14": 144,
+      "20->24": 3
+    },
+    "destination_categories": {
+      "Secondary School": 190,
+      "Missing journey": 112,
+      "School NEC": 7,
+      "Primary School": 6,
+      "Tertiary": 1,
+      "Bus Stop": 1
+    },
+    "verified_secondary_destination": 190,
+    "uncertain_destination_or_duration": 127,
+    "invalid_duration": 112,
+    "sum_person_weights": 266030.861743429,
+    "duration_variable": "journey_elapsed_time",
+    "weighted_minutes_for_reported_journeys": 23.061474342401393,
+    "utility_identification_interval": [
+      0.29283588525344145,
+      0.7206538084397509
+    ],
+    "endpoint_jackknife_intervals": [
+      [
+        0.2124317784646792,
+        0.3886544351825654
+      ],
+      [
+        0.6214445583037896,
+        0.8021410223887915
+      ]
+    ],
+    "sampling_envelope": [
+      0.2124317784646792,
+      0.8021410223887915
+    ],
+    "linear_sampling_envelope": [
+      0.20422630617567256,
+      0.8119997957954608
+    ],
+    "critical_value": 2.2621571628540993,
+    "endpoint_replicates": [
+      [
+        0.2947031995581365,
+        0.2822326206091061,
+        0.27234496729511015,
+        0.2793561153079798,
+        0.31414723971658404,
+        0.29077852250086045,
+        0.27837275379434956,
+        0.3019316020431413,
+        0.3081025788626973,
+        0.29085884674574936
+      ],
+      [
+        0.7238102569679088,
+        0.7349185534282309,
+        0.7371674794047196,
+        0.7373078337399358,
+        0.7039664896144338,
+        0.7290761182533614,
+        0.7193341172442259,
+        0.713281025301823,
+        0.695327074064153,
+        0.7217808892243043
+      ]
+    ]
+  },
+  "all_resident_secondary_age_15_19": {
+    "persons": 170,
+    "input_persons": 171,
+    "persons_with_missing_or_invalid_weights": 1,
+    "strict_target_interval_if_unbounded_missing_weights": [
+      0.0,
+      1.0
+    ],
+    "no_recorded_journey": 63,
+    "households": 143,
+    "age_bands": {
+      "15->19": 170
+    },
+    "destination_categories": {
+      "Secondary School": 100,
+      "Missing journey": 63,
+      "School NEC": 3,
+      "Primary School": 3,
+      "Tertiary": 1
+    },
+    "verified_secondary_destination": 100,
+    "uncertain_destination_or_duration": 70,
+    "invalid_duration": 63,
+    "sum_person_weights": 128128.45537344899,
+    "duration_variable": "journey_elapsed_time",
+    "weighted_minutes_for_reported_journeys": 20.841113181818077,
+    "utility_identification_interval": [
+      0.32883006868704595,
+      0.7308551226058585
+    ],
+    "endpoint_jackknife_intervals": [
+      [
+        0.24632444652143987,
+        0.4234442745893617
+      ],
+      [
+        0.663794155409321,
+        0.7887958573267304
+      ]
+    ],
+    "sampling_envelope": [
+      0.24632444652143987,
+      0.7887958573267304
+    ],
+    "linear_sampling_envelope": [
+      0.23979992183224927,
+      0.7927869308191794
+    ],
+    "critical_value": 2.2621571628540993,
+    "endpoint_replicates": [
+      [
+        0.329506007964029,
+        0.3166861892355451,
+        0.3153561913128976,
+        0.3147843807535418,
+        0.3512615076279615,
+        0.32966226669379506,
+        0.3061274206410235,
+        0.33920102485073217,
+        0.3369691012470719,
+        0.32992120094164823
+      ],
+      [
+        0.7329438386083837,
+        0.7343968385101142,
+        0.7483380416471258,
+        0.7479117224437063,
+        0.726072657450391,
+        0.7322133502318717,
+        0.7296817133719351,
+        0.7287636002163141,
+        0.7180068078687791,
+        0.7259803147679531
+      ]
+    ]
+  },
+  "secondary_age_15_19_leg_time": {
+    "persons": 107,
+    "input_persons": 107,
+    "persons_with_missing_or_invalid_weights": 0,
+    "strict_target_interval_if_unbounded_missing_weights": null,
+    "no_recorded_journey": 0,
+    "households": 93,
+    "age_bands": {
+      "15->19": 107
+    },
+    "destination_categories": {
+      "Secondary School": 100,
+      "School NEC": 3,
+      "Primary School": 3,
+      "Tertiary": 1
+    },
+    "verified_secondary_destination": 100,
+    "uncertain_destination_or_duration": 7,
+    "invalid_duration": 0,
+    "sum_person_weights": 83597.30345694302,
+    "duration_variable": "journey_travel_time",
+    "weighted_minutes_for_reported_journeys": 19.29034433313254,
+    "utility_identification_interval": [
+      0.5203320751232252,
+      0.6038239698962894
+    ],
+    "endpoint_jackknife_intervals": [
+      [
+        0.423305385446478,
+        0.6158488197188369
+      ],
+      [
+        0.5607968468841646,
+        0.6453019585778076
+      ]
+    ],
+    "sampling_envelope": [
+      0.423305385446478,
+      0.6453019585778076
+    ],
+    "linear_sampling_envelope": [
+      0.4227923371130445,
+      0.6461553044022913
+    ],
+    "critical_value": 2.2621571628540993,
+    "endpoint_replicates": [
+      [
+        0.5300261986045371,
+        0.5242359206097306,
+        0.5247911592878733,
+        0.5209722318986362,
+        0.5297880824538662,
+        0.5168726391688916,
+        0.4809194306365492,
+        0.5367769716494089,
+        0.5175121825947553,
+        0.52209315206303
+      ],
+      [
+        0.601190512387879,
+        0.5928685880960263,
+        0.6126495528201314,
+        0.6079087427758922,
+        0.6139915660961215,
+        0.606547384982411,
+        0.6039768826275305,
+        0.5999728774625426,
+        0.5984508819163471,
+        0.6002150742470193
+      ]
+    ]
+  },
+  "all_resident_secondary_age_15_19_leg_time": {
+    "persons": 170,
+    "input_persons": 171,
+    "persons_with_missing_or_invalid_weights": 1,
+    "strict_target_interval_if_unbounded_missing_weights": [
+      0.0,
+      1.0
+    ],
+    "no_recorded_journey": 63,
+    "households": 143,
+    "age_bands": {
+      "15->19": 170
+    },
+    "destination_categories": {
+      "Secondary School": 100,
+      "Missing journey": 63,
+      "School NEC": 3,
+      "Primary School": 3,
+      "Tertiary": 1
+    },
+    "verified_secondary_destination": 100,
+    "uncertain_destination_or_duration": 70,
+    "invalid_duration": 63,
+    "sum_person_weights": 128128.45537344899,
+    "duration_variable": "journey_travel_time",
+    "weighted_minutes_for_reported_journeys": 19.29034433313254,
+    "utility_identification_interval": [
+      0.33949022686393,
+      0.7415152807827425
+    ],
+    "endpoint_jackknife_intervals": [
+      [
+        0.254694467659163,
+        0.4360019846565551
+      ],
+      [
+        0.6777550039152729,
+        0.796448694162073
+      ]
+    ],
+    "sampling_envelope": [
+      0.254694467659163,
+      0.796448694162073
+    ],
+    "linear_sampling_envelope": [
+      0.24834039648032327,
+      0.8002413310202213
+    ],
+    "critical_value": 2.2621571628540993,
+    "endpoint_replicates": [
+      [
+        0.3404192835686269,
+        0.32775145013398577,
+        0.32622797818935884,
+        0.3234440074761189,
+        0.3616716117510613,
+        0.3392249053842134,
+        0.31612554546718363,
+        0.3497729719692774,
+        0.3485301003900501,
+        0.34203373364638645
+      ],
+      [
+        0.7438571142129816,
+        0.7454620994085549,
+        0.7592098285235872,
+        0.7565713491662832,
+        0.7364827615734906,
+        0.7417759889222901,
+        0.7396798381980952,
+        0.7393355473348594,
+        0.7295678070117574,
+        0.7380928474726914
+      ]
+    ]
+  }
+}

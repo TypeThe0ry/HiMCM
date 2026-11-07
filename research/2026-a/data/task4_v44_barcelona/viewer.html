@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FRESC - Enquesta de Factors de Risc en Estudiants de Secundària</title>
+        <meta name="description" content="Enquesta de salut de Barcelona">
+        <meta name="author" content="ASPB">
+
+        <link rel="shortcut icon" href="https://www.aspb.cat/wp-content/themes/aspb/images/favicon.ico" type="image/vnd.microsoft.icon"/><link rel="icon" href="https://www.aspb.cat/wp-content/themes/aspb/images/favicon.ico" type="image/x-ico"/>
+    
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css"/>
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+        <link href="app/bootstrap-4-hover-navbar.css" rel="stylesheet">
+        <link rel="stylesheet" href="app/styles.css?v=1.0">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144547213-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-144547213-1');
+        </script>
+    </head>
+
+    <body class="app start">
+
+        <section id="header" class="container">
+            <div class="row">
+
+                <div id="header_left" class="col-md-5">
+                    <a href="https://www.aspb.cat" title="ASPB - Agència de Salut Pública de Barcelona" rel="start">
+                        <img src="assets/agencia-salut-publica.png" alt="ASPB - Agència de Salut Pública de Barcelona" title="ASPB - Agència de Salut Pública de Barcelona">
+                    </a>
+                </div>
+
+                <div id="header_center" class="col-md-5">
+                    <h1 id="mainTitle"><a href="index.html">Factors de Risc en Estudiants de Secundària</a></h1>
+                </div>
+
+                <div id="header_right" class="col-md-2">
+                    <a href="https://www.aspb.cat/contacte/" target="_blank">Contacte <i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-expand-md btco-hover-menu">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" data-id="home"><i class="fas fa-home"></i> <span class="sr-only">(home)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-id="infoviz" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Eixos Temàtics
+                                </a>
+                                <ul class="dropdown-menu eixos" aria-labelledby="infoviz">
+                                </ul>
+                            </li>
+                            <li class="nav-item year-selector">
+                                <span class="year dropdown-toggle">Any</span>
+                                <ul class="dropdown-menu anys" aria-labelledby="anys">
+                                    <li class="dropdown-li"><a class="dropdown-item" data-value="2025">2025</a></li>
+                                    <li class="dropdown-li"><a class="dropdown-item" data-value="2021">2021</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-id="evolucio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Evolució Tendències
+                                </a>
+                                <ul class="dropdown-menu evolucio" aria-labelledby="evolucio">
+                                </ul>
+                            </li>
+                            <li class="nav-item about">
+                                <a class="nav-link" href="#" data-id="about">Que és l’Enquesta FRESC?</a>
+                            </li>
+                            <li class="nav-item search">
+                                <a class="nav-link search-link"><span>Cercar</span> <i class="fas fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="home" class="content">
+        	<div class="container">
+	            <div class="row">
+	                <div id="slideWrap">
+	                    <div class="slider">
+	                        <div class="ssslide" style="display: block;">
+	                            <div class="slide">
+	                                <div class="textonly">
+	                                    <h1 class="title">Que és l’Enquesta FRESC?</h1>
+	                                    <div>L'enquesta FRESC (Factors de Risc en Estudiants de SeCundària) es duu a terme periòdicament en mostres representatives dels centres educatius de la ciutat Barcelona, des de 1987. El seu objectiu és conèixer els determinants i comportaments relacionats amb la salut de la població adolescent, escolaritzada a Barcelona, i el seu impacte en les desigualtats socials en salut. <a class="seguir" href="#">(seguir llegint)</a></div>
+	                                    <button>Visualitzar les dades</button>
+                                        <div class="spacer"></div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <img class="infografia" src="assets/eixos_tematics.png" />
+	                    </div>
+	                </div>
+	            </div>
+            </div>
+			<div class="row stripe stripe1"></div>
+			<div class="row stripe stripe2"></div>
+			<div class="row stripe stripe3"></div>
+			<div class="row stripe stripe4"></div>
+			<div class="row stripe stripe5"></div>
+			<div class="row stripe stripe6"></div>
+        </section>
+
+        <section id="infoviz" class="container content">
+            <div class="row">
+
+                <div id="loading"></div>
+
+                <div id="gui">
+                    <button class="covid">COVID-19</button>
+                    <div class="suptitle"></div>
+                    <h1 class="title"></h1>
+
+                    <div class="vismenu">
+
+                        <div class="infovis">
+                        	<div class="btntitle">Visualitzacio de dades </div>
+                            <button id="btnGrafic" class="btn btn-func active" title="Gràfic"><i class="far fa-15x fa-chart-bar"></i></button>
+                            <button id="btnMap" class="btn btn-func hidden" title="Mapa"><i class="fas fa-15x fa-map-marker-alt"></i></button>
+                            <button id="btnData" class="btn btn-func" title="Dades"><i class="fas fa-15x fa-table"></i></button>
+                        </div>
+
+                        <div class="eix">
+                            <span class="btntitle">Eix desigualtat </span>
+                            <button id="btn0" class="btn btn-cat active" data-id="0">Sexe</button>
+                            <button id="btn1" class="btn btn-cat" data-id="1">Curs</button>
+                            <button id="btn2" class="btn btn-cat" data-id="2">Nivell Socioeconòmic</button>
+                            <button id="btn3" class="btn btn-cat" data-id="3">Districte del centre educatiu</button>
+                            <button id="btn4" class="btn btn-cat" data-id="4">Lloc de Naixement</button>
+                        </div>
+                    </div>
+
+                    <div id="plotDiv">
+                        <div id="plotDiv0" class="plotDiv active"></div>
+                        <div id="plotDiv1" class="plotDiv"></div>
+                        <div id="plotDiv2" class="plotDiv"></div>
+                        <div id="plotDiv3" class="plotDiv"></div>
+                        <div id="plotDiv4" class="plotDiv"></div>
+                    </div>
+
+                    <div id="plotEvolutionDiv">
+                        <div id="plotEvolutionDiv0" class="plotDiv active"></div>
+                        <div id="plotEvolutionDiv1" class="plotDiv"></div>
+                        <div id="plotEvolutionDiv2" class="plotDiv"></div>
+                        <div id="plotEvolutionDiv3" class="plotDiv"></div>
+                        <div id="plotEvolutionDiv4" class="plotDiv"></div>
+                    </div>
+
+                    <div class="socialmenu">
+                    	<span class="socialdownload">Descarregar 
+                	       <button id="btnExport" class="btn btn-func" title="Exportar"><i class="fas fa-file-download"></i></button>
+                           &nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                	    Inserir 
+                        <button id="btnEmbed" class="btn btn-func" title="Incrustar"><i class="fas fa-code"></i></button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Compartir 
+                        <button id="btnTwitter" class="btn btn-func" title="Compartir en Twitter"><i class="fab fa-twitter"></i></button>
+                        <button id="btnFacebook" class="btn btn-func" title="Compartir en Facebook"><i class="fab fa-facebook"></i></button>
+                        <span class="embed_iframe"></span>
+					</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container content">
+            <div class="row">
+
+                <h1 class="title">Que és l’Enquesta FRESC?</h1>
+
+                <p>L’enquesta FRESC (Factors de Risc en Estudiants de SeCundària) es duu a terme, periòdicament des de 1987, en mostres representatives dels centres educatius de la ciutat Barcelona. S’administra a alumnat dels següents nivells d’ensenyament secundari: 2n d’ESO (13-14 anys), 4t d’ESO (15-16 anys), 2n de Batxillerat i 2n de Cicles Formatius de Grau Mig (2n CFGM) (17-19 anys).</p>
+                <p>El seu objectiu és conèixer els determinants, comportaments i actituds relacionats amb la salut de la població adolescent, escolaritzada a la ciutat de Barcelona, així com el seu impacte en les desigualtats socials en salut. La informació obtinguda, a partir del FRESC, esdevé fonamental per orientar i avaluar polítiques i intervencions de promoció de la salut.</p>
+                <p>La informació es mostra segons diferents eixos temàtics i segons els eixos de desigualtat següents: sexe, curs (edat), nivell socioeconòmic del barri on s’ubica el centre educatiu, districte on s’ubica el centre educatiu i lloc de naixement de l’alumnat.</p>
+                <p>En aquesta web podeu trobar els principals resultats, per a l’any 2021 i per a l’any 2025, ordenats segons eixos temàtics i de desigualtat. És possible la descarrega de les visualitzacions tant en format imatge com en format taula.</p>
+                <p>Podeu trobar més informació metodològica sobre l’enquesta i sobre els seus resultats principals <a href="https://www.aspb.cat/arees/la-salut-en-xifres/enquesta-fresc/" class="seguir">a la nostra web</a>.</p>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div id="footer_middle" class="col-md-4">
+                        <a href="https://www.aspb.cat" title="ASPB - Agència de Salut Pública de Barcelona" rel="start"><img src="assets/ASPB_isotipo.png" alt="ASPB - Agència de Salut Pública de Barcelona" title="ASPB - Agència de Salut Pública de Barcelona"></a>
+                        <div class="adr">Plaça Lesseps, 1 · 08023 Barcelona</div>
+                        <div class="adr">Tel. 932 384 545 · www.aspb.cat</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                &copy; 2025 Agència de Salut Pública de Barcelona | Enquesta de Factors de Risc en Estudiants de Secundària
+			</div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="resolutionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Advertiment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Aquesta web no està optimitzada per a la seva visualització en mòbils i tauletes.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="app/sss.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-locale-es-latest.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        
+        <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.71/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.4/vfs_fonts.js"></script>
+
+        <script src="app/init.js"></script>
+        <script src="app/charts.js"></script>
+        <script src="app/tables.js"></script>
+        <script src="app/maps.js"></script>
+        <script src="app/gui.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/loadmenu.js"></script>
+        <script src="app/chartsEvolution.js"></script>
+        <script src="app/tablesEvolution.js"></script>
+        <script src="app/appEvolution.js"></script>
+        <script src="app/loadEvolution.js"></script>
+    </body>
+</html>
