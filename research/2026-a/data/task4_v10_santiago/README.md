@@ -29,3 +29,13 @@ Results: metro1954 candidate persons,65 with accepted direct-trip duration; weig
 Conditional classification,2012 vintage, geography and geocoding uncertainties prevent main-model admission. The separate task4_santiago_conditional.py scenario rerun changes no city decision rank; Santiago remains13 and25 cities remain possible champions. Its score width39.298 shrinks only to39.196 (metro scenario) or39.190 (comuna scenario). This does not establish a real model improvement. Main arrays are copied before scenario replacement and source observations stay unchanged.
 
 Verification: household/person/trip keys unique; household join many-to-one; one audit row per candidate person-day; positive observed weights; ordered utility endpoints. No absence of recorded journey is assigned zero travel time. conditional_person_audit.csv contains pseudonymous source record identifiers and weights, no names or coordinates; original archive remains source evidence.
+
+## Reported trip-chain audit
+
+The preferred conditional extractor is now audit_trip_chain.py. It chooses the day's first study-purpose departure BEFORE testing the home origin, correcting the earlier order that could skip an unconfirmed earlier study trip. Tied first departures or missing trip order stay[0,1]. Home is confirmed either by archived coordinate equality or by the immediately preceding departure being a reported return-home trip, with arrival before departure and identical destination-to-origin coordinates. No radius threshold is used. Full-day and current-cohort semantics still require the questionnaire.
+
+The chain confirms13 additional metro records and1 additional comuna record: identified durations78/1954 and2/45. Utility bounds become[0.014100,0.977592] metro and[0.017678,0.977771] comuna. These are conditional weighted missingness bounds, not population confidence intervals. Tests cover return-home chain acceptance, unconfirmed origin, tied departure, and earlier unidentified study trip; all passed.
+
+Rerun python3 research/2026-a/scripts/task4_santiago_conditional.py --chain: no decision ranks change, Santiago13, possible champions25. Comuna score width39.2984→39.1534; metro39.2984→39.1671. Main observations remain unchanged.
+
+New questionnaire lead (not yet fetched or verified): Ministry transport library catalog https://biblioteca.mtt.gob.cl/documento/28168c0a-d9d3-45b2-a1d7-25f702334b9d ; third-party directory links a report archive Drive ID13_j6G1vaG1acOuL-W5okvAEJ0aaGKO7e. Verify ownership/source and contents before relying on it; no questionnaire definition was established in this round.
