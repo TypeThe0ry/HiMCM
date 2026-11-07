@@ -1,6 +1,8 @@
-# 当前模型：V58 高中项目覆盖与教师角色（2026-11-07）
+# 当前模型：V59 高中阶段计数与人员归属（2026-11-07）
 
-当前条件入口为[jakarta_coverage_bounds()](../scripts/task4_jakarta_staffing_revision.py)。V58在V53基础上仅修订Jakarta教育格：SMA、SMK和MA同学年公布学生N=405311；主归属教学人员T=22524+H+M，H∈[0,978]为未识别校长教学角色，M∈[0,2008]为MA额外不同教师。教育效用15T/(N+15T)∈[0.4546194617,0.4856204812]。Induk不等于FTE；noninduk任教关系按主归属目标排除，而非断言全部已在本市重复。SMA/SMK原始PDF已核验，MA仍为官方索引转录，11月/12月截面不是同日普查。其余249格和真实学生通学界保持，全部名次不变：Jakarta第18、Singapore第1、Phoenix第24；可能冠军25城，连续α∈[0.05,0.20]推荐证书通过。[本轮完整对照](../results/task4_v58_jakarta_staffing/README.md)。以下各轮说明为历史记录。
+当前条件入口为[dhaka_stage_bounds()](../scripts/task4_dhaka_stage_bounds.py)。在V58上仅将Dhaka教育格由[0,1]改为[0.0327952421,0.5622274488]：BANBEIS市级学院计数与全国同类别混入上限给出高中学生N∈[140342,426900]、教师角色T∈[965,12016]，效用15T/(N+15T)。全国数只作城市子集合的污染上限，不代填全国均值。原表Dhaka City Corporation范围及2025版/方法页2024日期矛盾保留为条件，不称同日普查或完整居民覆盖。其他249格和通学界不变；Dhaka第22→21、New York21→22，Singapore仍第1、Phoenix第24；可能冠军25城，连续α∈[0.05,0.20]推荐证书通过。[完整对照](../results/task4_v59_dhaka_stage/README.md)。
+
+V58历史条件入口为[jakarta_coverage_bounds()](../scripts/task4_jakarta_staffing_revision.py)。V58在V53基础上仅修订Jakarta教育格：SMA、SMK和MA同学年公布学生N=405311；主归属教学人员T=22524+H+M，H∈[0,978]为未识别校长教学角色，M∈[0,2008]为MA额外不同教师。教育效用15T/(N+15T)∈[0.4546194617,0.4856204812]。Induk不等于FTE；noninduk任教关系按主归属目标排除，而非断言全部已在本市重复。SMA/SMK原始PDF已核验，MA仍为官方索引转录，11月/12月截面不是同日普查。其余249格和真实学生通学界保持，全部名次不变：Jakarta第18、Singapore第1、Phoenix第24；可能冠军25城，连续α∈[0.05,0.20]推荐证书通过。[本轮完整对照](../results/task4_v58_jakarta_staffing/README.md)。以下各轮说明为历史记录。
 
 V57完成[同届学校与学区人数核对](../results/task4_v57_school_union/README.md)：重取22份毕业响应后，已知实体学校5802加Digital485仍为6287，超过学区6285两人。新增必要一致性检查拦住未对账的学校集合求和；候选界虽可让毕业扩展中Phoenix第24→23，实际城市界、十指标排名及25城可能冠军均保持原样。净差2不能当作重复人数上界。
 

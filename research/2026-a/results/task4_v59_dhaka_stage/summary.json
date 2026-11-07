@@ -1,0 +1,254 @@
+{
+  "current_scenario": "v59_role_and_stage_bounds",
+  "baseline": "V58",
+  "main_admitted": false,
+  "newly_bounded_cells": 1,
+  "other_unchanged_cells": 249,
+  "date_caveat": "2025 edition and table labels; methods prints collection20Oct2024-21Nov2024. Actual census date not resolved.",
+  "geography": "Source-defined Dhaka City Corporation area; boundary crosswalk unverified",
+  "target": "General higher-secondary provision in listed college institutions, grades11-12; not all14-18residents, madrasa or technical streams",
+  "national_values_used_as_city_estimates": false,
+  "scenarios": [
+    {
+      "scenario": "v58_unknown_dhaka_education",
+      "dhaka_education_utility": [
+        0.0,
+        1.0
+      ],
+      "dhaka": {
+        "decision_rank": 22,
+        "score_lower": 29.039934939766017,
+        "score_upper": 67.30200272136256,
+        "max_regret": 48.48952576370567
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v58": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "pure_hsc_college_subset_only",
+      "dhaka_education_utility": [
+        0.4744138720481621,
+        0.4744138720481621
+      ],
+      "dhaka": {
+        "decision_rank": 16,
+        "score_lower": 32.397855177313765,
+        "score_upper": 63.694552894432704,
+        "max_regret": 45.13160552615792
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 7,
+      "kendall_tau_vs_v58": 0.9599999999999999,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "reported_roles_no_head_exclusion",
+      "dhaka_education_utility": [
+        0.07290377223271874,
+        0.5622274488274451
+      ],
+      "dhaka": {
+        "decision_rank": 20,
+        "score_lower": 29.32528068398277,
+        "score_upper": 64.49038270576493,
+        "max_regret": 48.204180019488916
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 3,
+      "kendall_tau_vs_v58": 0.9866666666666666,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "v59_role_and_stage_bounds",
+      "dhaka_education_utility": [
+        0.03279524214103653,
+        0.5622274488274451
+      ],
+      "dhaka": {
+        "decision_rank": 21,
+        "score_lower": 29.15678263841583,
+        "score_upper": 64.49038270576493,
+        "max_regret": 48.37267806505585
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 2,
+      "kendall_tau_vs_v58": 0.9933333333333332,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    },
+    {
+      "scenario": "date_or_geography_not_accepted",
+      "dhaka_education_utility": [
+        0.0,
+        1.0
+      ],
+      "dhaka": {
+        "decision_rank": 22,
+        "score_lower": 29.039934939766017,
+        "score_upper": 67.30200272136256,
+        "max_regret": 48.48952576370567
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v58": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ]
+    }
+  ],
+  "continuous_recommendation": {
+    "alpha_range": [
+      0.05,
+      0.2
+    ],
+    "unresolved_leaves": 0,
+    "certified_winners": [
+      "Singapore"
+    ],
+    "numerical_certificate_not_formal_interval_arithmetic": true
+  }
+}
