@@ -1,8 +1,12 @@
 """Guard against wrong-scenario selection and silent changes in current scores."""
 import unittest
+import tempfile
+from pathlib import Path
+from unittest.mock import patch
+from task4_travel_evidence_index import SOURCES
 import numpy as np
 import pandas as pd
-from task4_current_model import current_bounds,verify_baseline,verify_bounds
+from task4_current_model import current_bounds,verify_baseline,verify_bounds,run
 from task4_v5_model import weights,summarize,CITIES,NAMES
 
 
@@ -30,6 +34,14 @@ class CurrentModelTests(unittest.TestCase):
         before,_=summarize(lo,hi,weights());after,_=summarize(swapped,hi,weights())
         np.testing.assert_allclose(before.score_lower,after.score_lower)
         with self.assertRaises(AssertionError):verify_bounds(swapped,hi,baseline)
+
+    def test_missing_source_registration_rejected_before_writing(self):
+        incomplete={k:v for k,v in SOURCES.items() if k!='New York'}
+        with tempfile.TemporaryDirectory() as directory:
+            out=Path(directory)/'result'
+            with patch.dict(SOURCES,incomplete,clear=True):
+                with self.assertRaisesRegex(ValueError,'Informative cities differ'):run(out)
+            self.assertFalse(out.exists())
 
     def test_valid_snapshot_accepted(self):
         verify_baseline(self.frame,self.frame.copy())

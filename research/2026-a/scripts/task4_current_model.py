@@ -10,6 +10,7 @@ import pandas as pd
 from task4_v5_model import ROOT,CITIES,NAMES,weights,summarize
 from task4_continuous_preferences import feasible_preferences
 from task4_continuous_recommendation import certify
+from task4_travel_evidence_index import build_index
 REGISTRY=ROOT/'design/task4_current_model.json'
 
 
@@ -52,6 +53,7 @@ def run(out):
     bounds_file=ROOT/config['baseline_bounds'];old_bounds=pd.read_csv(bounds_file)
     old_bounds=old_bounds[old_bounds.scenario==config['baseline_scenario']].reset_index(drop=True)
     verify_bounds(lo,hi,old_bounds)
+    travel_index=build_index(lo[:,NAMES.index('travel')],hi[:,NAMES.index('travel')])
     amin,amax=config['alpha_range']
     continuous=[c for i,c in enumerate(CITIES) if feasible_preferences(hi[i],lo[np.arange(len(lo))!=i],amin,amax)['possible']]
     certificate=certify(lo,hi,amin,amax)
@@ -59,11 +61,14 @@ def run(out):
     bounds=pd.DataFrame([dict(city=c,indicator=n,lower=float(lo[i,j]),upper=float(hi[i,j])) for i,c in enumerate(CITIES) for j,n in enumerate(NAMES)])
     out.mkdir(parents=True,exist_ok=True)
     frame.to_csv(out/'ranks.csv',index=False);bounds.to_csv(out/'utility_bounds.csv',index=False)
+    travel_index.to_csv(out/'travel_evidence.csv',index=False)
     pd.DataFrame(certificate).to_csv(out/'recommendation_certificate.csv',index=False)
     result=dict(registry=config,registry_sha256=hashlib.sha256(REGISTRY.read_bytes()).hexdigest(),
         baseline_ranks_sha256=hashlib.sha256(baseline_file.read_bytes()).hexdigest(),
         baseline_bounds_sha256=hashlib.sha256(bounds_file.read_bytes()).hexdigest(),
         utility_bounds_sha256=hashlib.sha256((out/'utility_bounds.csv').read_bytes()).hexdigest(),
+        travel_evidence_sha256=hashlib.sha256((out/'travel_evidence.csv').read_bytes()).hexdigest(),
+        travel_evidence_verified=True,informative_travel_cities=int((travel_index.status=='informative_conditional').sum()),
         verified_cells=int(lo.size),baseline_matches=True,possible_champions=int(frame.possible_champion.sum()),
         continuous_possible_champions=continuous,choice=[CITIES[i] for i in decision['minimax_choices']],
         continuous_recommendation=dict(unresolved_leaves=sum(not c['certified'] for c in certificate),

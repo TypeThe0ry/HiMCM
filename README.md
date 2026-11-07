@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| V71补数核查与来源校验 | [四地新官方资料；五城当前通学界逐源校验并接入统一运行](research/2026-a/results/task4_v71_intake/README.md) |
 | V70高中子群与岗位口径 | [撤回整组通学均值代理；以官方交叉计数限定教师分配未知](research/2026-a/results/task4_v70_population_roles/README.md) |
 | V69特教高中覆盖与复核 | [Tokyo新增真实本科计数界；重算压力阈值并保护历史实验](research/2026-a/results/task4_v69_tokyo/README.md) |
 | V68高中学段修订 | [纠正Singapore预科学段代理，扩大真实未知范围；排名与25城候选保持](research/2026-a/results/task4_v68_singapore_stage/README.md) |

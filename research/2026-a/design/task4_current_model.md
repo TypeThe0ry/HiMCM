@@ -1,5 +1,7 @@
 # 当前模型：V70高中子群与岗位口径修订（2026-11-08）
 
+V71完成[四地新来源核查与当前通学索引](../results/task4_v71_intake/README.md)，科学模型仍V70。统一入口现在在写结果前核对5城有信息通学界与显式来源登记；20城保持[0,1]，250格与全部排名不变。NYC当前使用V21真实RHTS旅程，历史NYU路线估计不再是当前输入。
+
 当前入口为[revised_bounds()](../scripts/task4_population_role_revision.py)。[V70数据与六情景对照](../results/task4_v70_population_roles/README.md)撤回Singapore不适用的整组通学均值界，恢复高中子群[0,1]；Tokyo按官方岗位和60名专攻科所在地/所有制，修订教学岗位资源界T∈[17817,25178]。只有两格变化、其余248格保持，全部名次不变、25城仍可能第一。新增分箱子群算法可以接入未来同总体子群人数，避免把全体均值直接移作高中生的界。V69压力阈值与V68补数数量界为历史输入结论，本轮未重新认证。
 
 V69历史入口为[tokyo_special_bounds()](../scripts/task4_tokyo_special_revision.py)。[V69原件与对照](../results/task4_v69_tokyo/README.md)补入特教高中本科学生界[5808,6017]，保留国私立专攻科与全学段教师分配未知。仅Tokyo教育格变化，效用[0.482443,0.564467]；全部排名保持、25城仍可能第一。[V69重跑压力检验](../results/task4_v69_joint_stress/README.md)中均匀扩张ε≤0.20仍推荐Singapore；只扩张推荐城时首次失效阈值位于(0.05,0.075]。这是指定假设情景，非实测误差。
