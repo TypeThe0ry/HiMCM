@@ -2,6 +2,8 @@
 
 下载日期：2026-11-07。两个指标均来自世界银行 World Development Indicators（WDI）的官方批量CSV下载，归档标注的数据库更新日期均为 **2026-10-08**。原始统计来源分别为 UNODC 和 UNESCO Institute for Statistics（UIS）。本目录是国家级研究数据，不直接改写论文或城市指标矩阵。
 
+较新的2023年配对另见 [homicide_2023_secondary_ratio_updated](../homicide_2023_secondary_ratio_updated/)：使用已更新的官方学生数和教师数计算派生生师比，59个国家和地区可严格对应2023年凶杀率。该派生值与本目录旧官方比率序列分开保存。
+
 ## 直接使用
 
 优先打开 **[country_year_homicide_education.xlsx](country_year_homicide_education.xlsx)**，含中文表头、筛选、冻结窗格及以下工作表：
