@@ -1,0 +1,51 @@
+{
+  "city": "Toronto",
+  "checked": "2026-11-08",
+  "observations": [
+    {
+      "indicator": "homicide_rate",
+      "admission_recommendation": "qualifying official victim-count candidate",
+      "raw_count": 45,
+      "year": 2025,
+      "population": 3271830,
+      "population_date": "2025-07-01",
+      "rate_per_100000": 1.3753770825501326,
+      "geography": "City of Toronto; TPS city jurisdiction, not Toronto CMA",
+      "numerator_file": "tps_homicide2025_count.json",
+      "denominator_file": "toronto_population2025.pdf",
+      "denominator_pdf_page": 30,
+      "definition_file": "tps_open_data_documentation20261008.pdf",
+      "definition_pdf_page": 9,
+      "definition": "Official ASR-RC-TBL-002 documentation explicitly counts each deceased victim; includes first/second-degree murder and manslaughter; excludes criminal negligence, suicide, accidental and justifiable homicide. OCC_YEAR is year offence occurred.",
+      "query": "where=OCC_YEAR='2025'&returnCountOnly=true",
+      "revision_note": "Jan13 2026 official police remarks reported44; current open-data aggregate45. Use dated current count snapshot with its dataset definition, not annual-report occurrence count. Exact cause of change not established.",
+      "earlier_snapshot_url": "https://www.tps.ca/media-centre/news-releases/65024/",
+      "uncertainty_note": "Administrative recorded count; no invented sampling interval. Apply inherited utility transform unchanged. Does not quantify unreported deaths."
+    },
+    {
+      "indicator": "public_pool_inventory",
+      "year": 2025,
+      "reference_date": "2025-09-02",
+      "indoor_reported": 64,
+      "outdoor_reported": 59,
+      "reported_sum": 123,
+      "source": "pools2025.pdf",
+      "pdf_page": 1,
+      "exclusions": [
+        "85 wading pools",
+        "10 beaches"
+      ],
+      "admission_recommendation": "Do not assume123distinctvenues: indoor/outdoor colocation and tank-versus-facility semantics need resolution. Outdoor-only59candidate lower bound has explicit pool-location definition in earlier masterplan printedp33; actual2025 report repeats59. Retain broad upper bound and require reviewer approval of cross-document unit continuity.",
+      "candidate_distinct_venue_lower": 59,
+      "population": 3271830,
+      "candidate_rate_per_100000": 1.8032721748990628,
+      "pool_location_definition_file": "pool_location_definition_masterplan.pdf",
+      "pool_location_definition_printed_page": 33
+    },
+    {
+      "indicator": "upper_secondary_ptr",
+      "admission_recommendation": "no new admission",
+      "reason": "Prior V6/V74 evidence already shows city-sector coverage and actual school-level FTE gaps; new TDSB2024-25 financial facts do not resolve otherboards/private-sector and city allocation. No duplicate failed sources stored."
+    }
+  ]
+}

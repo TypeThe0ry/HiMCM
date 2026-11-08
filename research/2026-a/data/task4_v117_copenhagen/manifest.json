@@ -1,0 +1,51 @@
+[
+  {
+    "file": "raw/crime_metadata.json",
+    "url": "https://api.statbank.dk/v1/tableinfo/STRAF5?format=JSON&lang=en",
+    "bytes": 19242,
+    "sha256": "fe1078f5d11ae5e3c53be29268baf87da6a9ff4121d7a4c6a72aad50cbcbe7e6",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "raw/population_metadata.json",
+    "url": "https://api.statbank.dk/v1/tableinfo/FOLK1A?format=JSON&lang=en",
+    "bytes": 10747,
+    "sha256": "f6d7250a1b8629deafd656681fe24fb8876e14c4e3377acd2d202f26c2cc88de",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "raw/victims_release.html",
+    "url": "https://www.dst.dk/da/Statistik/udgivelser/NytHtml?cid=53910",
+    "bytes": 361254,
+    "sha256": "010cefbdbee9e7b06a8e8e6a5b79e3cb0e375c931fc5ac2579d44a8904f35f30",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "raw/crime_classification.html",
+    "url": "https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/overtraedtype?id=25db9bf3-7d7d-4fe4-b4be-68d1d2be0240",
+    "bytes": 1060431,
+    "sha256": "a93c82327ea279e54ae9e98f886dec3a964c8b8b780ed319fb264e8f5342d805",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "raw/crime_victims.csv",
+    "url": "https://api.statbank.dk/v1/data",
+    "bytes": 235,
+    "sha256": "f46f4983272e53e45d1e63d9b7c229813a5d6fb9f19cf87b42160ee653ec09cf",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "raw/population.csv",
+    "url": "https://api.statbank.dk/v1/data",
+    "bytes": 95,
+    "sha256": "193c1d53da835613c144d80c3efb7d12b9b52d4531e368713c55eafd41e30bfb",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "definition_provider_excerpt.txt",
+    "url": "https://www.ft.dk/samling/20231/almdel/REU/bilag/113/2815790/index.htm",
+    "sha256": "8da223ce083ec8c6d0531397c3403c97a07666371b7f5cd381e096235094dcf0",
+    "kind": "Exa provider text excerpt limited to15000characters, not original bytes",
+    "retrieved": "2026-11-08"
+  }
+]

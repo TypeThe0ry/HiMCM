@@ -1,10 +1,10 @@
 {
-  "model_version": "V114",
-  "latest_review": "V114",
-  "module": "task4_v114_istanbul_revision",
-  "factory": "istanbul_bounds",
-  "baseline_ranks": "results/task4_v114_istanbul_revision/baseline_ranks.csv",
-  "baseline_scenario": "v114",
+  "model_version": "V117",
+  "latest_review": "V117",
+  "module": "task4_v117_city_revision",
+  "factory": "revised_bounds",
+  "baseline_ranks": "results/task4_v117_city_revision/baseline_ranks.csv",
+  "baseline_scenario": "v117",
   "fixed_alpha": 0.1,
   "alpha_range": [
     0.05,
@@ -12,8 +12,8 @@
   ],
   "latest_acquisition_analysis": "results/task4_v109_current_acquisition/summary.json",
   "main_admitted": true,
-  "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain. Copenhagen adds four verified recognized HE legal seats/central addresses in the municipality as a partial lower bound, with July2026 population and November2026 institution snapshot; upper remains unknown. Institution presence is not student access or learning quality. Mexico City now uses EIC2025 resident age14-18 weighted school-travel bins; completed-secondary transition membership is optional, remaining current-stage interpretation conditional. Mexico sampling uses an approximate fixed-final-weight Taylor outer envelope over every legal membership prefix, retaining zero-target PSUs; FPC omitted. Coverage and current-stage assumptions remain conditional. Published sufficient moments reproduce bounds offline; raw records stay local-only. V113 adds one independently verified Singapore degree-awarding institution (UAS) to the existing partial inventory, retaining June2026 population and an unknown upper bound. Tokyo safety uses a conditional geographic/offence superset: Tokyo intentional deaths within the 2025 police reporting universe cannot exceed all Japan recorded criminal-death victims (631). This is not an observed Tokyo rate, not a bound on unreported/resident vital mortality. The strict Tokyo withdrawal arm retains [0,1]. Weights and utility transforms remain unchanged. V114 adds Istanbul 2025 partial facility inventory lower bounds: 12426 reported physical stops receiving Braille/QR signage and 24 distinct public swimming venues listed January2025. Same2025 provincial population15754053 and original density anchors; both upper bounds stay1. These measure facility supply, not teenage access or actual school travel. Istanbul safety, education and travel are unchanged.",
-  "baseline_bounds": "results/task4_v114_istanbul_revision/utility_bounds.csv",
+  "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain. Copenhagen adds four verified recognized HE legal seats/central addresses in the municipality as a partial lower bound, with July2026 population and November2026 institution snapshot; upper remains unknown. Institution presence is not student access or learning quality. Mexico City now uses EIC2025 resident age14-18 weighted school-travel bins; completed-secondary transition membership is optional, remaining current-stage interpretation conditional. Mexico sampling uses an approximate fixed-final-weight Taylor outer envelope over every legal membership prefix, retaining zero-target PSUs; FPC omitted. Coverage and current-stage assumptions remain conditional. Published sufficient moments reproduce bounds offline; raw records stay local-only. V113 adds one independently verified Singapore degree-awarding institution (UAS) to the existing partial inventory, retaining June2026 population and an unknown upper bound. Tokyo safety uses a conditional geographic/offence superset: Tokyo intentional deaths within the 2025 police reporting universe cannot exceed all Japan recorded criminal-death victims (631). This is not an observed Tokyo rate, not a bound on unreported/resident vital mortality. The strict Tokyo withdrawal arm retains [0,1]. Weights and utility transforms remain unchanged. V114 adds Istanbul 2025 partial facility inventory lower bounds: 12426 reported physical stops receiving Braille/QR signage and 24 distinct public swimming venues listed January2025. Same2025 provincial population15754053 and original density anchors; both upper bounds stay1. These measure facility supply, not teenage access or actual school travel. Istanbul safety, education and travel are unchanged. V117 adds Toronto2025 reported murder/manslaughter45 victims as a conditional upper bound on intentional-homicide count within the reported-crime universe (not a point or resident vital mortality), citypopulation3271830. Partial outdoor pool inventories Toronto59/NewYork53 and Singapore7 named public venues raise facility supply lower bounds only. Upper utilities remain1. NYCmini-pool restrictions and seasonality are not teenage accessibility. Copenhagen national49 candidate rejected for incomplete offence coverage. All Istanbul and travel cells unchanged.",
+  "baseline_bounds": "results/task4_v117_city_revision/utility_bounds.csv",
   "latest_stress_analysis": "results/task4_v98_joint_stress/summary.json",
   "latest_acquisition_analysis_model_version": "V108",
   "latest_stress_analysis_model_version": "V96",
@@ -40,8 +40,8 @@
   "latest_london_historical_bins_model_version": "V102",
   "latest_travel_scale_analysis": "results/task4_v111_travel_scale/summary.json",
   "latest_travel_scale_analysis_model_version": "V108",
-  "latest_weight_sensitivity": "results/task4_v114_ahp_mc/summary.json",
-  "latest_weight_sensitivity_model_version": "V114",
+  "latest_weight_sensitivity": "results/task4_v117_ahp_mc/summary.json",
+  "latest_weight_sensitivity_model_version": "V117",
   "latest_champion_exclusion_priority": "results/task4_v113_exclusion_priority/summary.json",
   "latest_champion_exclusion_priority_model_version": "V108"
 }

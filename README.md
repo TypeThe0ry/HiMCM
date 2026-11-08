@@ -14,6 +14,7 @@
 
 | 想了解什么 | 入口 |
 | --- | --- |
+| V117跨城市补数 | [多伦多11→3，四项真实数据准入，可能冠军仍25城](research/2026-a/results/task4_v117_city_revision/README.md) |
 | V111真实旅时敏感性 | [五尺度重算：推荐稳定，中间排名敏感](research/2026-a/results/task4_v111_intake/README.md) |
 | V110来源核查 | [修复Bogotá归档；核实印度时间日记口径，实际排名不变](research/2026-a/results/task4_v110_intake/README.md) |
 | V109补数方向与精度 | [刷新当前模型补数证书；新增Bogotá官方数据路线](research/2026-a/results/task4_v109_intake/README.md) |

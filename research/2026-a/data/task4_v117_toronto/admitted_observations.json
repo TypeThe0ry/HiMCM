@@ -1,0 +1,54 @@
+[
+  {
+    "indicator": "homicide_rate",
+    "admission_recommendation": "qualifying official victim-count candidate",
+    "raw_count": 45,
+    "year": 2025,
+    "population": 3271830,
+    "population_date": "2025-07-01",
+    "rate_per_100000": 1.3753770825501326,
+    "geography": "City of Toronto; TPS city jurisdiction, not Toronto CMA",
+    "numerator_file": "tps_homicide2025_count.json",
+    "denominator_file": "toronto_population2025.pdf",
+    "denominator_pdf_page": 30,
+    "definition_file": "tps_open_data_documentation20261008.pdf",
+    "definition_pdf_page": 9,
+    "definition": "Official ASR-RC-TBL-002 documentation explicitly counts each deceased victim; includes first/second-degree murder and manslaughter; excludes criminal negligence, suicide, accidental and justifiable homicide. OCC_YEAR is year offence occurred.",
+    "query": "where=OCC_YEAR='2025'&returnCountOnly=true",
+    "revision_note": "Jan13 2026 official police remarks reported44; current open-data aggregate45. Use dated current count snapshot with its dataset definition, not annual-report occurrence count. Exact cause of change not established.",
+    "earlier_snapshot_url": "https://www.tps.ca/media-centre/news-releases/65024/",
+    "uncertainty_note": "Administrative recorded count; no invented sampling interval. Apply inherited utility transform unchanged. Does not quantify unreported deaths.",
+    "city": "Toronto",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.5925263907074285,
+      1
+    ],
+    "sourceyear": 2025,
+    "upper_bound_only": true,
+    "point_observation": false,
+    "scope": "Reported murder and manslaughter deceased victims form a conditional offence superset for intentional homicide; no claim of observed intentional-only point rate. Population is city July2025. Unreported/resident vital mortality not bounded.",
+    "source_locator": "TPS homicide occurrence-year2025 aggregate plus official victim codebook; Toronto official population report PDFp30"
+  },
+  {
+    "city": "Toronto",
+    "indicator": "public_pool_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.6432740249219622,
+      1
+    ],
+    "raw_count": 59,
+    "population": 3271830,
+    "sourceyear": 2025,
+    "lower_bound_only": true,
+    "scope": "2025 official outdoor pool inventory only; locations unit from same municipal masterplan2017. No2025 independent address dedup; indoor overlap and other operators unknown. Not teenager access or year-round capacity.",
+    "source_locator": "2025 pool report PDFp1; municipal masterplan PDFp26 andp38 define outdoor pool locations; population PDFp30"
+  }
+]

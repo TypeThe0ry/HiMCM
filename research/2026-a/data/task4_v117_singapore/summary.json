@@ -1,0 +1,71 @@
+{
+  "city": "Singapore",
+  "indicator": "public_pool_density",
+  "year": 2025,
+  "count_lower": 7,
+  "count_upper": null,
+  "population": 6111175.0,
+  "population_scope": "2025 total population of Singapore city-state, residents plus nonresidents",
+  "density_lower": 0.11454425703731279,
+  "density_unit": "physical public swimming venues per100000 total population",
+  "utility_anchor": 1,
+  "utility_lower": 0.10277228231545953,
+  "utility_upper": 1,
+  "status": "verified_partial_public_venue_inventory_lower_bound",
+  "observation_date": "2025-04-23 article; public venue identities crosschecked against current official pages",
+  "source_url": "https://www.activesgcircle.gov.sg/read/editors-pick-must-hit-pools-in-singapore",
+  "venues": [
+    {
+      "name": "Bukit Canberra Swimming Complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/bukit-canberra-swimming-complex",
+      "postal_code": "756973"
+    },
+    {
+      "name": "Sengkang Swimming Complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/sengkang-swimming-complex",
+      "postal_code": "544964"
+    },
+    {
+      "name": "Our Tampines Hub Swimming Complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/tampines-swimming-complex",
+      "postal_code": "528523"
+    },
+    {
+      "name": "Heartbeat @ Bedok ActiveSG Pool",
+      "url": "https://www.activesgcircle.gov.sg/facilities/heartbeat-bedok-activesg-swimming-complex",
+      "postal_code": "469662"
+    },
+    {
+      "name": "Jurong West Swimming Complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/jurong-west-swimming-complex",
+      "postal_code": "648965"
+    },
+    {
+      "name": "Jurong East Swimming Complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/jurong-east-swimming-complex",
+      "postal_code": "609517"
+    },
+    {
+      "name": "Delta Swimming Complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/delta-swimming-complex",
+      "postal_code": "158790"
+    }
+  ],
+  "excluded": [
+    "SAFRA Yishun membership/guest venue",
+    "SAFRA Toa Payoh membership/guest venue",
+    "Splash @ Kidz Amaze under12 waterplay"
+  ],
+  "limitations": [
+    "Dated selected inventory, not complete city inventory or year-end open census.",
+    "Count one physical venue, not water basins, lanes or users.",
+    "No inference about teenage accessibility, school travel or neighborhood equity.",
+    "Current facility pages corroborate identity; their hours are not substituted for 2025 hours.",
+    "Main registry and existing bounds not edited by this extraction."
+  ],
+  "sha256": {
+    "task4_v117_singapore/provider_pool_sources.json": "d190cd01be5c7af053c92119ec52f5aad1f23d667615d7fca8ef65c9dae9a14b",
+    "task4_v117_singapore/provider_pool_details.json": "ccadffd08332d7ccff38bf282daa46bc9c148edc8a5bff0471f6582f21a5ee60",
+    "task4_v100_singapore/population.json": "563a2601b5bb0722fc9c00332a9aeb15622889fc8ae41535aa883420d0b4c5ab"
+  }
+}
