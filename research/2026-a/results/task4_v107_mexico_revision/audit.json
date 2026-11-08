@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "independent_scoring": true,
+  "core_scoring_functions_imported": false,
+  "bounds_verified": 1250,
+  "rank_rows_verified": 125,
+  "unchanged_other_cells_per_case": 249,
+  "withdrawal_exactly_restores_v102": true,
+  "baseline_matches_v102": true,
+  "source_endpoints_verified": true,
+  "primary_binary_input_hash_verified": true,
+  "scenarios": [
+    {
+      "scenario": "v102_2020_progression",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "2020_transition_optional",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "2025_progression",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "v107_2025_transition_optional",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "v107_withdrawn",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    }
+  ],
+  "certificate_scope": "Independent scalar TOPSIS; monotonic endpoint enclosures over continuous alpha [0.05,0.2]. Floating-point numerical certificate, not directed-rounding formal arithmetic. All25 possible champions have the shared-alpha0.1 witness.",
+  "interpretation": "Conditional weighted-sample identification bounds, not an unconditional population bound or sampling CI.",
+  "input_sha256": {
+    "utility_bounds.csv": "082a9e3c4422d84945a715f6da844c9749db35b6eac4b1115d950344f2e5d091",
+    "ranks.csv": "3bc7db05e8e945f6df213926fb8abca35a696c43cfe26036f52b18048336d335",
+    "recommendation_certificate.csv": "1f69c5d00850b1fff2ea29c3bf57d3bfa3a323fd4ee0c1caf8ba0e7454e2fa7e",
+    "summary.json": "1e68c121c2df423eb33602b23a8e2201d49b139de836d7aefd557dd08dd2608c"
+  }
+}

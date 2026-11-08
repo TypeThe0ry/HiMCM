@@ -14,6 +14,7 @@
 
 | 想了解什么 | 入口 |
 | --- | --- |
+| V107真实通学更新 | [Mexico City采用2025居民微观数据，保留学段未知；20→23](research/2026-a/results/task4_v107_intake/README.md) |
 | V106真实旅时原件 | [London Year10分箱与缺失界；Phoenix财报核验](research/2026-a/results/task4_v106_intake/README.md) |
 | V105学校覆盖核查 | [Phoenix缺教师学校104→29，完整比率仍未识别](research/2026-a/results/task4_v105_intake/README.md) |
 | V104测量精度 | [四城理想结论的精度边界；宽0.01时最少5城](research/2026-a/results/task4_v104_intake/README.md) |
@@ -38,7 +39,7 @@
 | V68高中学段修订 | [纠正Singapore预科学段代理，扩大真实未知范围；排名与25城候选保持](research/2026-a/results/task4_v68_singapore_stage/README.md) |
 | V67联合不确定性检验 | [均匀扩张仍推荐Singapore，定向扩张可转Tokyo；连续范围证书](research/2026-a/results/task4_v67_joint_stress/README.md) |
 | V66原件与人群核查 | [上海年报年份、Phoenix真实学生调查及London/Bogotá新入口；排名不变](research/2026-a/results/task4_v66_intake/README.md) |
-| 当前模型一键复算 · V102 | [统一入口、250格基线校验与当前证据](research/2026-a/results/task4_current/README.md) |
+| 当前模型一键复算 · V107 | [统一入口、250格基线校验与当前证据](research/2026-a/results/task4_current/README.md) |
 | 全偏好范围补数规划 V64 | [Phoenix最小有利补数3→4项；避免固定权重下的乐观规划](research/2026-a/results/task4_v64_continuous_acquisition/README.md) |
 | 真实高中通学更新 V63 | [Cape Town采用2025微观数据；182名学生与抽样包络重算](research/2026-a/results/task4_v63_cape_2025/README.md) |
 | 校级原件补充 V62 | [新增London、Copenhagen、Cape Town学校数据；保持未匹配区间](research/2026-a/results/task4_v62_source_intake/README.md) |

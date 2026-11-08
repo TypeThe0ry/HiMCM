@@ -1,0 +1,97 @@
+{
+  "survey_year": 2025,
+  "source_publication_year": 2026,
+  "geography": "CDMX habitual residents in sampled private dwellings, CVE_ENT09, not metropolitan area",
+  "person_rows": 442778,
+  "expanded_private_household_population": 9165819,
+  "borough_count": 16,
+  "stratum_count": 49,
+  "stratum_UPM_count": 3433,
+  "unknown_age_rows": 0,
+  "target_age_missing_field_rows": {
+    "TIE_TRASLADO_ESCU": 5277
+  },
+  "groups": {
+    "prepa_conditional": {
+      "weighted": {
+        "3": 67000,
+        "1": 27230,
+        "2": 60859,
+        "4": 27483,
+        "6": 2475,
+        "5": 2086
+      },
+      "sample": {
+        "3": 3202,
+        "1": 1336,
+        "2": 2786,
+        "4": 1475,
+        "6": 127,
+        "5": 199
+      },
+      "sample_n": 9125,
+      "expanded_n": 187133
+    },
+    "boundary3": {
+      "weighted": {
+        "1": 28410,
+        "2": 47559,
+        "3": 46610,
+        "6": 2334,
+        "4": 19001,
+        "5": 1295
+      },
+      "sample": {
+        "1": 1385,
+        "2": 2242,
+        "3": 2194,
+        "6": 122,
+        "4": 1031,
+        "5": 140
+      },
+      "sample_n": 7114,
+      "expanded_n": 145209
+    },
+    "other_optional": {
+      "weighted": {
+        "1": 380,
+        "4": 535,
+        "2": 567,
+        "3": 767,
+        "": 618,
+        "5": 74
+      },
+      "sample": {
+        "1": 20,
+        "4": 26,
+        "2": 28,
+        "3": 35,
+        "": 16,
+        "5": 8
+      },
+      "sample_n": 133,
+      "expanded_n": 2941
+    }
+  },
+  "scenarios": {
+    "legacy_progression": {
+      "known_weight": 332342,
+      "optional_weight": 2941,
+      "utility_lower": 0.26910816027888057,
+      "utility_upper": 0.526186566143634
+    },
+    "boundary3_optional": {
+      "known_weight": 187133,
+      "optional_weight": 148150,
+      "utility_lower": 0.21382386872120376,
+      "utility_upper": 0.5841000315323976
+    }
+  },
+  "time_interpretation": "Reported home-to-school duration categories; codes6,9 and blank retain [0,1]",
+  "current_stage_directly_observed": false,
+  "age_scope": "14–18 inclusive; unspecified999 optional if otherwise possibly eligible",
+  "sampling_uncertainty_included": false,
+  "weights": "official person FACTOR; ESTRATO/UPM available, no replicate-design CI estimated",
+  "main_admission": false,
+  "publication": "Only aggregate bins and counts; local-only raw ZIP excluded by gitignore"
+}

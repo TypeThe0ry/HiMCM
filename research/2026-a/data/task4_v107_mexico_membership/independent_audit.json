@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "raw_rows": 276007,
+  "groups": {
+    "conditional_classified": {
+      "sample_rows": 5590,
+      "expanded_weight": 188069
+    },
+    "transition_optional": {
+      "sample_rows": 3627,
+      "expanded_weight": 117497
+    },
+    "optional": {
+      "sample_rows": 86,
+      "expanded_weight": 2202
+    }
+  },
+  "leading_zero_grade_03_transition_rows": 3627,
+  "old_interval": [
+    0.28328413016281895,
+    0.5436413055837657
+  ],
+  "revised_interval": [
+    0.2353418806280762,
+    0.5917399093604216
+  ],
+  "exhaustive_vertices_per_endpoint": {
+    "old": 64,
+    "revised": 256
+  },
+  "max_absolute_discrepancy": 0.0,
+  "source_sha256_verified": true,
+  "holiday_last_approved_clause_verified": true,
+  "method": "Independent raw CSV predicate; exhaustive inclusion-box vertices, no production imports. Positive fixed denominator makes linear-fractional box extrema attained at vertices.",
+  "interpretation": "Removes assumed progression after completed lower secondary; does not estimate a misclassification rate. Upper-secondary levels 4/5/7 grade 0\u20132 remain conditionally interpreted. Bounds omit sampling uncertainty; optional membership has no assigned probability."
+}

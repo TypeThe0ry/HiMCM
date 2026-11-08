@@ -1,4 +1,6 @@
-# 当前模型：V102 Copenhagen高教资源下界修订（2026-11-08）
+# 当前模型：V107 Mexico City 2025通学与学段不确定性修订（2026-11-08）
+
+V107采用已核验EIC2025居民通学分箱，把已完成初中但未确认入读高中的成员保留可选。Mexico City20→23，Nairobi、New York、Dhaka各上升一位；可能冠军仍25城，Singapore连续保守推荐保持。当前入口为 `task4_mexico_2025_revision.mexico_2025_bounds()`。[五情景对照与限制](../results/task4_v107_mexico_revision/README.md)。所有既有诊断仍分别标注历史输入版本。
 
 V106取得London真实Year10历史旅时原件，以舍入和缺失约束得到[0.354259,0.686292]，但学校／年份／居民覆盖未匹配，仅做[历史子群对照](../results/task4_v106_london_historical/README.md)。Phoenix新财报和Türkiye新儿童调查也未补齐目标口径；真实输入与25城候选保持。
 
@@ -8,7 +10,7 @@ V104检验[残余测量区间](../results/task4_v104_survivor_precision/README.m
 
 V103保持真实V102输入，新增[幸存集合枚举](../results/task4_v103_survivor_search/README.md)：全城安全＋教育＋通学的连续理想补数极限，由旧算法未闭合的3—5证明为4；实际仍25城。连续补数与共享补数诊断已重算至V102，历史压力诊断仍为旧版本。[本轮记录](../results/task4_v103_intake/README.md)。
 
-V102以四所官方认可高校的市内总部／法定所在地建立部分下界，人口与机构同属2026年但日期不同。Copenhagen分数下界35.523→37.842，区间宽度减少5.52%，仍第3；全部排名、25城可能冠军和Singapore连续推荐保持。其余249格不变，撤回新增证据可精确恢复V96。当前入口为 `task4_copenhagen_institution_revision.copenhagen_bounds()`。当轮补数与压力诊断仍为历史输入；V103已更新两项补数分析，压力诊断仍保留原版本。详见[本轮记录](../results/task4_v102_intake/README.md)。
+V102以四所官方认可高校的市内总部／法定所在地建立部分下界，人口与机构同属2026年但日期不同。Copenhagen分数下界35.523→37.842，区间宽度减少5.52%，仍第3；全部排名、25城可能冠军和Singapore连续推荐保持。其余249格不变，撤回新增证据可精确恢复V96。该历史版本入口为 `task4_copenhagen_institution_revision.copenhagen_bounds()`。当轮补数与压力诊断仍为历史输入；V103已更新两项补数分析，压力诊断仍保留原版本。详见[本轮记录](../results/task4_v102_intake/README.md)。
 
 V101将[连续偏好补数分析](../results/task4_v101_current_acquisition/README.md)更新至当前V96。550个组合的身份、判定和最少项数均保持；独立核验420个证书叶，Warsaw22个组合的共同权重点裕量变化被单独记录。旧结果保护与历史版本标签校验已加入通用入口，真实输入未改。
 

@@ -1,0 +1,60 @@
+{
+  "year": 2020,
+  "person_rows": 276007,
+  "new_downloads": 0,
+  "old_utility": [
+    0.28328413016281895,
+    0.5436413055837657
+  ],
+  "revised_utility": [
+    0.2353418806280762,
+    0.5917399093604216
+  ],
+  "groups": {
+    "conditional_classified": {
+      "weighted_time_bins": {
+        "1": 31279,
+        "3": 63778,
+        "2": 64447,
+        "4": 25360,
+        "6": 1513,
+        "5": 1598,
+        "9": 94
+      },
+      "sample_rows": 5590,
+      "expanded_weight": 188069
+    },
+    "transition_optional": {
+      "weighted_time_bins": {
+        "1": 25800,
+        "2": 38791,
+        "6": 2043,
+        "3": 36765,
+        "4": 12776,
+        "5": 1232,
+        "9": 90
+      },
+      "sample_rows": 3627,
+      "expanded_weight": 117497
+    },
+    "optional": {
+      "weighted_time_bins": {
+        "1": 301,
+        "4": 303,
+        "": 689,
+        "3": 413,
+        "2": 474,
+        "5": 22
+      },
+      "sample_rows": 86,
+      "expanded_weight": 2202
+    }
+  },
+  "source_hashes": {
+    "Censo2020_CA_cdmx_csv.zip": "204325a75339582df7df72083889f4081dd06fdb24b2551f2aedd5c2f32e1428",
+    "completed_grade_metadata.html": "f2dbf5a6ba4f78f485ee6eb3810a91bf1b058b26806b497f28d8e2520a240ca9",
+    "school_attendance_metadata.html": "9bef7ac971e68504ef2ac387c20d9371a00ff329a91c1e8d18648977da45e301"
+  },
+  "scope": "Mexico City private-household residents, known ages14-18; unknown age/attendance/stage still optional. Completed-secondary3 no longer treated as definite current high school. Levels4/5/7 grades0-2 retain the earlier conditional stage interpretation.",
+  "interpretation": "Widening from removing a cross-stage progression assumption, not a new estimate of misclassification. Weighted sample identification bounds, not sampling confidence intervals. No probability is assigned to optional membership."
+}

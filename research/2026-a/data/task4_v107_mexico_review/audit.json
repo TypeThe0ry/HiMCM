@@ -1,0 +1,26 @@
+{
+  "decision": "Verified conditional aggregate descriptors; not city high-school observations",
+  "source_summary_sha256": "6e23fb9059ed05fc906a0cd0a30355499413be88322eae7619babfe7432e599a",
+  "person_rows": 442778,
+  "weighted_private_household_population": 9165819,
+  "aggregates_reproduced": true,
+  "duplicate_person_keys": false,
+  "raw_zip_gitignored": true,
+  "utility_bounds_independent_fractional_root": {
+    "legacy_progression": [
+      0.2691081602788805,
+      0.526186566143634
+    ],
+    "boundary3_optional": [
+      0.2138238687212038,
+      0.5841000315323976
+    ]
+  },
+  "limitations": [
+    "Highest completed level/grade is observed; current enrollment stage is inferred under progression restrictions. Boundary3_optional relaxes one such assumption, not all stage ambiguity.",
+    "Codes6(no travel),9 and blank retain full uncertainty; bins16/31 use conservative15/30 lower closures.",
+    "Expansion weights do not include sampling confidence intervals; ESTRATO/UPM clustered design must be respected in future variance analysis.",
+    "Residents in private households, not institutionalized population; school destination may be outside CDMX.",
+    "Only aggregate outputs are saved; person keys are used in memory for uniqueness, never published."
+  ]
+}
