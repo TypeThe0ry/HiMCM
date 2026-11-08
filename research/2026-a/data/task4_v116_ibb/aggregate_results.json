@@ -1,0 +1,772 @@
+{
+  "status": "historical_conditional_empirical_bounds_not_population_confidence_interval",
+  "year": 2012,
+  "provider": "Exa web_fetch_exa official CKAN projection; not original CSV bytes",
+  "target": "resident current LİSE student age14–18; all roster included",
+  "n_all_current_high_school": 2792,
+  "n_unknown_age_current_high_school": 0,
+  "n_datastore": 49176,
+  "n_official_report": 49176,
+  "n_unique_current_high_school": 2792,
+  "n_resident_districts": 39,
+  "weight": "kisi_agirlik",
+  "utility": "exp(-minutes/30)",
+  "clock_rule": "Turkish ÖÖ=AM ÖS=PM; strict positive same-calendar elapsed; rollover/nonpositive unknown; first EV→OKUL by diary order; 3 multiple candidates all first agrees06:00-clockorder",
+  "form_rule": "Only DOLDURULMUŞ ANKET or EKSİK AMA GEÇERLİ ANKET count as observed; EKSİK ANKET unknown",
+  "summary": {
+    "n": 2463,
+    "weight_total": 677016,
+    "n_observed": 1811,
+    "weight_observed": 499950,
+    "weight_unknown": 177066,
+    "utility_known_numerator": 214675.20461984503,
+    "utility_lower": 0.31709029715670684,
+    "utility_upper": 0.5786291677299281,
+    "conditional_observed_mean_minutes": 31.567476747674768
+  },
+  "unknown_reasons": {
+    "observed": {
+      "n": 1811,
+      "weight": 499950
+    },
+    "no_home_school_trip": {
+      "n": 419,
+      "weight": 113067
+    },
+    "missing_or_nonweekday": {
+      "n": 209,
+      "weight": 57453
+    },
+    "incomplete_unvalidated_form": {
+      "n": 23,
+      "weight": 6290
+    },
+    "nonpositive_or_rollover": {
+      "n": 1,
+      "weight": 256
+    }
+  },
+  "duration_histogram": {
+    "2": {
+      "n": 1,
+      "weight": 309
+    },
+    "3": {
+      "n": 1,
+      "weight": 539
+    },
+    "4": {
+      "n": 1,
+      "weight": 310
+    },
+    "5": {
+      "n": 106,
+      "weight": 30566
+    },
+    "8": {
+      "n": 2,
+      "weight": 577
+    },
+    "9": {
+      "n": 1,
+      "weight": 306
+    },
+    "10": {
+      "n": 219,
+      "weight": 63336
+    },
+    "15": {
+      "n": 244,
+      "weight": 66030
+    },
+    "18": {
+      "n": 1,
+      "weight": 296
+    },
+    "20": {
+      "n": 177,
+      "weight": 48308
+    },
+    "21": {
+      "n": 2,
+      "weight": 534
+    },
+    "22": {
+      "n": 4,
+      "weight": 1120
+    },
+    "25": {
+      "n": 76,
+      "weight": 18773
+    },
+    "26": {
+      "n": 1,
+      "weight": 329
+    },
+    "28": {
+      "n": 2,
+      "weight": 463
+    },
+    "30": {
+      "n": 390,
+      "weight": 107866
+    },
+    "33": {
+      "n": 1,
+      "weight": 227
+    },
+    "34": {
+      "n": 1,
+      "weight": 243
+    },
+    "35": {
+      "n": 35,
+      "weight": 9436
+    },
+    "36": {
+      "n": 1,
+      "weight": 223
+    },
+    "37": {
+      "n": 1,
+      "weight": 243
+    },
+    "38": {
+      "n": 1,
+      "weight": 215
+    },
+    "40": {
+      "n": 116,
+      "weight": 32238
+    },
+    "45": {
+      "n": 84,
+      "weight": 21764
+    },
+    "50": {
+      "n": 48,
+      "weight": 12662
+    },
+    "55": {
+      "n": 20,
+      "weight": 5886
+    },
+    "57": {
+      "n": 1,
+      "weight": 251
+    },
+    "60": {
+      "n": 133,
+      "weight": 37635
+    },
+    "62": {
+      "n": 1,
+      "weight": 313
+    },
+    "65": {
+      "n": 21,
+      "weight": 5434
+    },
+    "69": {
+      "n": 1,
+      "weight": 381
+    },
+    "70": {
+      "n": 16,
+      "weight": 4305
+    },
+    "72": {
+      "n": 1,
+      "weight": 284
+    },
+    "75": {
+      "n": 25,
+      "weight": 6718
+    },
+    "76": {
+      "n": 1,
+      "weight": 78
+    },
+    "80": {
+      "n": 12,
+      "weight": 3481
+    },
+    "85": {
+      "n": 4,
+      "weight": 965
+    },
+    "90": {
+      "n": 29,
+      "weight": 8214
+    },
+    "92": {
+      "n": 1,
+      "weight": 144
+    },
+    "95": {
+      "n": 2,
+      "weight": 508
+    },
+    "100": {
+      "n": 4,
+      "weight": 1163
+    },
+    "105": {
+      "n": 4,
+      "weight": 973
+    },
+    "110": {
+      "n": 4,
+      "weight": 1261
+    },
+    "117": {
+      "n": 1,
+      "weight": 256
+    },
+    "120": {
+      "n": 7,
+      "weight": 2702
+    },
+    "125": {
+      "n": 1,
+      "weight": 448
+    },
+    "130": {
+      "n": 1,
+      "weight": 264
+    },
+    "135": {
+      "n": 2,
+      "weight": 548
+    },
+    "150": {
+      "n": 3,
+      "weight": 825
+    }
+  },
+  "age_groups": {
+    "14–15": {
+      "n": 785,
+      "weight_total": 217085,
+      "n_observed": 637,
+      "weight_observed": 175860,
+      "weight_unknown": 41225,
+      "utility_known_numerator": 78805.26459099671,
+      "utility_lower": 0.3630157062486893,
+      "utility_upper": 0.5529182789736589,
+      "conditional_observed_mean_minutes": 29.43916183327647
+    },
+    "16–18": {
+      "n": 1678,
+      "weight_total": 459931,
+      "n_observed": 1174,
+      "weight_observed": 324090,
+      "weight_unknown": 135841,
+      "utility_known_numerator": 135869.94002884784,
+      "utility_lower": 0.2954137469073575,
+      "utility_upper": 0.5907645712701425,
+      "conditional_observed_mean_minutes": 32.72235798697893
+    }
+  },
+  "districts": [
+    {
+      "district": "Silivri",
+      "n": 36,
+      "weight_total": 8158,
+      "n_observed": 29,
+      "weight_observed": 6510,
+      "weight_unknown": 1648,
+      "utility_known_numerator": 2502.6840823830403,
+      "utility_lower": 0.3067766710447463,
+      "utility_upper": 0.50878696768608,
+      "conditional_observed_mean_minutes": 34.01996927803379
+    },
+    {
+      "district": "BÜYÜKÇEKMECE",
+      "n": 31,
+      "weight_total": 8580,
+      "n_observed": 20,
+      "weight_observed": 5890,
+      "weight_unknown": 2690,
+      "utility_known_numerator": 2231.3280716734566,
+      "utility_lower": 0.2600615468150882,
+      "utility_upper": 0.5735813603349018,
+      "conditional_observed_mean_minutes": 40.783531409168084
+    },
+    {
+      "district": "ARNAVUTKÖY",
+      "n": 32,
+      "weight_total": 6326,
+      "n_observed": 21,
+      "weight_observed": 4050,
+      "weight_unknown": 2276,
+      "utility_known_numerator": 1539.801504488363,
+      "utility_lower": 0.2434083946393239,
+      "utility_upper": 0.6031934088663237,
+      "conditional_observed_mean_minutes": 31.55925925925926
+    },
+    {
+      "district": "ESENYURT",
+      "n": 70,
+      "weight_total": 19657,
+      "n_observed": 61,
+      "weight_observed": 17335,
+      "weight_unknown": 2322,
+      "utility_known_numerator": 6638.783106692368,
+      "utility_lower": 0.3377312462070697,
+      "utility_upper": 0.45585710467987833,
+      "conditional_observed_mean_minutes": 35.12373810210557
+    },
+    {
+      "district": "BAŞAKŞEHİR",
+      "n": 73,
+      "weight_total": 19483,
+      "n_observed": 53,
+      "weight_observed": 14307,
+      "weight_unknown": 5176,
+      "utility_known_numerator": 4621.024096626144,
+      "utility_lower": 0.23718236907181356,
+      "utility_upper": 0.5028498740761764,
+      "conditional_observed_mean_minutes": 40.230796113790454
+    },
+    {
+      "district": "BEYLİKDÜZÜ",
+      "n": 43,
+      "weight_total": 12877,
+      "n_observed": 33,
+      "weight_observed": 9780,
+      "weight_unknown": 3097,
+      "utility_known_numerator": 3462.794393268952,
+      "utility_lower": 0.26891313141795076,
+      "utility_upper": 0.5094194605318748,
+      "conditional_observed_mean_minutes": 38.988752556237216
+    },
+    {
+      "district": "AVCILAR",
+      "n": 45,
+      "weight_total": 13101,
+      "n_observed": 28,
+      "weight_observed": 8043,
+      "weight_unknown": 5058,
+      "utility_known_numerator": 3381.2166456720106,
+      "utility_lower": 0.25808843948339905,
+      "utility_upper": 0.6441658381552562,
+      "conditional_observed_mean_minutes": 32.17269675494219
+    },
+    {
+      "district": "Küçükçekmece",
+      "n": 113,
+      "weight_total": 32773,
+      "n_observed": 94,
+      "weight_observed": 27582,
+      "weight_unknown": 5191,
+      "utility_known_numerator": 13145.06974457278,
+      "utility_lower": 0.4010944907262924,
+      "utility_upper": 0.5594870699836078,
+      "conditional_observed_mean_minutes": 26.856826916104705
+    },
+    {
+      "district": "BAKIRKÖY",
+      "n": 30,
+      "weight_total": 10315,
+      "n_observed": 21,
+      "weight_observed": 6859,
+      "weight_unknown": 3456,
+      "utility_known_numerator": 3304.773723755467,
+      "utility_lower": 0.32038523739752467,
+      "utility_upper": 0.655431286840084,
+      "conditional_observed_mean_minutes": 28.206006706516984
+    },
+    {
+      "district": "BAĞCILAR",
+      "n": 179,
+      "weight_total": 41708,
+      "n_observed": 138,
+      "weight_observed": 32174,
+      "weight_unknown": 9534,
+      "utility_known_numerator": 15905.308089060038,
+      "utility_lower": 0.3813490958343732,
+      "utility_upper": 0.6099383353088146,
+      "conditional_observed_mean_minutes": 24.83474233853422
+    },
+    {
+      "district": "BAHÇELİEVLER",
+      "n": 105,
+      "weight_total": 30855,
+      "n_observed": 75,
+      "weight_observed": 22236,
+      "weight_unknown": 8619,
+      "utility_known_numerator": 10626.774981830013,
+      "utility_lower": 0.3444101436340954,
+      "utility_upper": 0.623748986609302,
+      "conditional_observed_mean_minutes": 27.701430113329735
+    },
+    {
+      "district": "ESENLER",
+      "n": 107,
+      "weight_total": 24250,
+      "n_observed": 80,
+      "weight_observed": 18382,
+      "weight_unknown": 5868,
+      "utility_known_numerator": 8998.449692848078,
+      "utility_lower": 0.3710700904267249,
+      "utility_upper": 0.6130494718700239,
+      "conditional_observed_mean_minutes": 27.065281253400066
+    },
+    {
+      "district": "Güngören",
+      "n": 81,
+      "weight_total": 20301,
+      "n_observed": 53,
+      "weight_observed": 13461,
+      "weight_unknown": 6840,
+      "utility_known_numerator": 6372.790405422847,
+      "utility_lower": 0.3139150980455567,
+      "utility_upper": 0.6508443133551474,
+      "conditional_observed_mean_minutes": 25.576257336007725
+    },
+    {
+      "district": "BAYRAMPAŞA",
+      "n": 54,
+      "weight_total": 14866,
+      "n_observed": 39,
+      "weight_observed": 10778,
+      "weight_unknown": 4088,
+      "utility_known_numerator": 5876.371267518105,
+      "utility_lower": 0.39528933590193094,
+      "utility_upper": 0.6702792457633597,
+      "conditional_observed_mean_minutes": 21.853776210799776
+    },
+    {
+      "district": "EYÜP",
+      "n": 76,
+      "weight_total": 20349,
+      "n_observed": 54,
+      "weight_observed": 14448,
+      "weight_unknown": 5901,
+      "utility_known_numerator": 6961.111436002318,
+      "utility_lower": 0.34208616816562576,
+      "utility_upper": 0.6320758482481852,
+      "conditional_observed_mean_minutes": 25.5640919158361
+    },
+    {
+      "district": "Gaziosmanpaşa",
+      "n": 95,
+      "weight_total": 25074,
+      "n_observed": 62,
+      "weight_observed": 16388,
+      "weight_unknown": 8686,
+      "utility_known_numerator": 7770.508262342397,
+      "utility_lower": 0.3099030175617132,
+      "utility_upper": 0.6563176303079842,
+      "conditional_observed_mean_minutes": 28.555345374664387
+    },
+    {
+      "district": "Zeytinburnu",
+      "n": 46,
+      "weight_total": 13190,
+      "n_observed": 35,
+      "weight_observed": 10046,
+      "weight_unknown": 3144,
+      "utility_known_numerator": 5175.868418816812,
+      "utility_lower": 0.392408523033875,
+      "utility_upper": 0.6307709187882344,
+      "conditional_observed_mean_minutes": 21.300019908421262
+    },
+    {
+      "district": "Fatih",
+      "n": 89,
+      "weight_total": 22992,
+      "n_observed": 63,
+      "weight_observed": 16462,
+      "weight_unknown": 6530,
+      "utility_known_numerator": 7900.953429554703,
+      "utility_lower": 0.34363924102099436,
+      "utility_upper": 0.6276510712228036,
+      "conditional_observed_mean_minutes": 24.861681448183695
+    },
+    {
+      "district": "BEYOĞLU",
+      "n": 60,
+      "weight_total": 12966,
+      "n_observed": 45,
+      "weight_observed": 10299,
+      "weight_unknown": 2667,
+      "utility_known_numerator": 3499.585369637632,
+      "utility_lower": 0.26990477939515906,
+      "utility_upper": 0.47559658874268335,
+      "conditional_observed_mean_minutes": 38.870764151859404
+    },
+    {
+      "district": "Şişli",
+      "n": 43,
+      "weight_total": 13051,
+      "n_observed": 31,
+      "weight_observed": 9171,
+      "weight_unknown": 3880,
+      "utility_known_numerator": 4647.166849751961,
+      "utility_lower": 0.35607745381594985,
+      "utility_upper": 0.6533726802353812,
+      "conditional_observed_mean_minutes": 25.49416639406826
+    },
+    {
+      "district": "Kâğıthane",
+      "n": 78,
+      "weight_total": 21761,
+      "n_observed": 59,
+      "weight_observed": 16323,
+      "weight_unknown": 5438,
+      "utility_known_numerator": 6652.321079787021,
+      "utility_lower": 0.30569923623854695,
+      "utility_upper": 0.5555958402549065,
+      "conditional_observed_mean_minutes": 31.58733076027691
+    },
+    {
+      "district": "BEŞİKTAŞ",
+      "n": 36,
+      "weight_total": 9599,
+      "n_observed": 30,
+      "weight_observed": 8223,
+      "weight_unknown": 1376,
+      "utility_known_numerator": 3139.948612826437,
+      "utility_lower": 0.32711205467511584,
+      "utility_upper": 0.4704603201194329,
+      "conditional_observed_mean_minutes": 35.15809315335036
+    },
+    {
+      "district": "Sarıyer",
+      "n": 44,
+      "weight_total": 12520,
+      "n_observed": 33,
+      "weight_observed": 9610,
+      "weight_unknown": 2910,
+      "utility_known_numerator": 3809.802048440995,
+      "utility_lower": 0.304297288214137,
+      "utility_upper": 0.5367254032301114,
+      "conditional_observed_mean_minutes": 36.5690946930281
+    },
+    {
+      "district": "Sultangazi",
+      "n": 74,
+      "weight_total": 20726,
+      "n_observed": 56,
+      "weight_observed": 15930,
+      "weight_unknown": 4796,
+      "utility_known_numerator": 5617.006248314671,
+      "utility_lower": 0.27101255661076284,
+      "utility_upper": 0.5024127303056389,
+      "conditional_observed_mean_minutes": 39.3008160703076
+    },
+    {
+      "district": "Üsküdar",
+      "n": 77,
+      "weight_total": 25696,
+      "n_observed": 51,
+      "weight_observed": 17418,
+      "weight_unknown": 8278,
+      "utility_known_numerator": 6784.638489178238,
+      "utility_lower": 0.26403481044435856,
+      "utility_upper": 0.5861861180408716,
+      "conditional_observed_mean_minutes": 35.52273510161901
+    },
+    {
+      "district": "Kadıköy",
+      "n": 62,
+      "weight_total": 24495,
+      "n_observed": 38,
+      "weight_observed": 15878,
+      "weight_unknown": 8617,
+      "utility_known_numerator": 5462.167506874402,
+      "utility_lower": 0.22299112091750975,
+      "utility_upper": 0.5747771997090998,
+      "conditional_observed_mean_minutes": 45.56871142461267
+    },
+    {
+      "district": "Maltepe",
+      "n": 65,
+      "weight_total": 20727,
+      "n_observed": 57,
+      "weight_observed": 18111,
+      "weight_unknown": 2616,
+      "utility_known_numerator": 8798.959325094733,
+      "utility_lower": 0.4245167812560782,
+      "utility_upper": 0.5507289682585388,
+      "conditional_observed_mean_minutes": 27.406548506432554
+    },
+    {
+      "district": "Kartal",
+      "n": 87,
+      "weight_total": 24419,
+      "n_observed": 59,
+      "weight_observed": 16565,
+      "weight_unknown": 7854,
+      "utility_known_numerator": 6707.955133747806,
+      "utility_lower": 0.2747022864878908,
+      "utility_upper": 0.5963370790674395,
+      "conditional_observed_mean_minutes": 33.14971325083006
+    },
+    {
+      "district": "Pendik",
+      "n": 125,
+      "weight_total": 35825,
+      "n_observed": 94,
+      "weight_observed": 27669,
+      "weight_unknown": 8156,
+      "utility_known_numerator": 10911.993962660892,
+      "utility_lower": 0.30459159700379324,
+      "utility_upper": 0.5322538440379871,
+      "conditional_observed_mean_minutes": 33.78954786945679
+    },
+    {
+      "district": "Tuzla",
+      "n": 43,
+      "weight_total": 11682,
+      "n_observed": 34,
+      "weight_observed": 9083,
+      "weight_unknown": 2599,
+      "utility_known_numerator": 4090.7597248935836,
+      "utility_lower": 0.350176316118266,
+      "utility_upper": 0.5726553436820393,
+      "conditional_observed_mean_minutes": 27.95684245293405
+    },
+    {
+      "district": "Sultanbeyli",
+      "n": 47,
+      "weight_total": 11188,
+      "n_observed": 36,
+      "weight_observed": 8561,
+      "weight_unknown": 2627,
+      "utility_known_numerator": 3554.504929800741,
+      "utility_lower": 0.3177069118520505,
+      "utility_upper": 0.5525120602253076,
+      "conditional_observed_mean_minutes": 30.862632869991824
+    },
+    {
+      "district": "ATAŞEHİR",
+      "n": 63,
+      "weight_total": 18071,
+      "n_observed": 45,
+      "weight_observed": 12666,
+      "weight_unknown": 5405,
+      "utility_known_numerator": 4501.263768183688,
+      "utility_lower": 0.2490876967618664,
+      "utility_upper": 0.5481856990860321,
+      "conditional_observed_mean_minutes": 39.436207168798354
+    },
+    {
+      "district": "Sancaktepe",
+      "n": 45,
+      "weight_total": 11960,
+      "n_observed": 34,
+      "weight_observed": 8945,
+      "weight_unknown": 3015,
+      "utility_known_numerator": 3229.589158154591,
+      "utility_lower": 0.27003253830724006,
+      "utility_upper": 0.5221228393105846,
+      "conditional_observed_mean_minutes": 40.499720514253774
+    },
+    {
+      "district": "ÇEKMEKÖY",
+      "n": 32,
+      "weight_total": 9728,
+      "n_observed": 23,
+      "weight_observed": 7245,
+      "weight_unknown": 2483,
+      "utility_known_numerator": 3424.810146766032,
+      "utility_lower": 0.35205696410012666,
+      "utility_upper": 0.6072995627843373,
+      "conditional_observed_mean_minutes": 31.92201518288475
+    },
+    {
+      "district": "BEYKOZ",
+      "n": 48,
+      "weight_total": 12784,
+      "n_observed": 32,
+      "weight_observed": 8363,
+      "weight_unknown": 4421,
+      "utility_known_numerator": 3248.869935109273,
+      "utility_lower": 0.2541356332219394,
+      "utility_upper": 0.5999585368514763,
+      "conditional_observed_mean_minutes": 33.575869903144806
+    },
+    {
+      "district": "Ümraniye",
+      "n": 107,
+      "weight_total": 29194,
+      "n_observed": 79,
+      "weight_observed": 20719,
+      "weight_unknown": 8475,
+      "utility_known_numerator": 7851.550804780818,
+      "utility_lower": 0.26894398865454605,
+      "utility_upper": 0.5592433652387757,
+      "conditional_observed_mean_minutes": 35.24808147111347
+    },
+    {
+      "district": "POOLED_DISTRICTS_WITH_N_LT_20",
+      "n": 22,
+      "weight_total": 5769,
+      "n_observed": 16,
+      "weight_observed": 4440,
+      "weight_unknown": 1329,
+      "utility_known_numerator": 2326.700173313019,
+      "utility_lower": 0.4033108291407556,
+      "utility_upper": 0.6336800439093464,
+      "conditional_observed_mean_minutes": 26.957207207207208
+    }
+  ],
+  "optional_membership": {
+    "n_known_age": 13,
+    "weight_known_age": 3875,
+    "n_unknown_age": 2,
+    "weight_unknown_age": 612,
+    "n_total": 15,
+    "weight_total": 4487,
+    "utility_interval": [
+      0,
+      1
+    ],
+    "source": "../task4_v116_ibb_review/aggregate_controls.json",
+    "treatment": "Include all optional weight at utility 0 for lower endpoint and utility 1 for upper endpoint; denominator includes optional weight at both extremizers."
+  },
+  "historical_conditional_bounds": {
+    "year": 2012,
+    "n_known_members": 2463,
+    "n_optional_members": 15,
+    "weight_known_members": 677016,
+    "weight_optional_members": 4487,
+    "weight_maximum_denominator": 681503,
+    "weight_known_unknown_duration": 177066,
+    "utility_known_numerator": 214675.20461984503,
+    "lower": 0.31500258196933106,
+    "upper": 0.5814034635501898,
+    "interpretation": "Empirical identification bounds conditional on 2012 roster and weights; not a sampling CI or 2025 measurement."
+  },
+  "age_groups_optional_membership": {
+    "14–15": {
+      "n_optional_known_age": 5,
+      "weight_optional_known_age": 1442,
+      "n_optional_unknown_age": 2,
+      "weight_optional_unknown_age": 612,
+      "denominator_maximum": 219139,
+      "lower": 0.359613143215022,
+      "upper": 0.5571087966587267
+    },
+    "16–18": {
+      "n_optional_known_age": 8,
+      "weight_optional_known_age": 2433,
+      "n_optional_unknown_age": 2,
+      "weight_optional_unknown_age": 612,
+      "denominator_maximum": 462976,
+      "lower": 0.29347080632440525,
+      "upper": 0.5934561187380076
+    }
+  },
+  "age_groups_optional_membership_note": "Marginal bounds: the same 612 weight of unknown-age optional students may belong to either age group; it is not counted twice in the combined-city calculation. Age-group extrema cannot be assumed jointly attainable.",
+  "strict_current_year_bounds": {
+    "year": 2025,
+    "lower": 0,
+    "upper": 1,
+    "reason": "No identified 2012-to-2025 transfer or complete sampling uncertainty model."
+  },
+  "sampling_confidence_interval": null
+}

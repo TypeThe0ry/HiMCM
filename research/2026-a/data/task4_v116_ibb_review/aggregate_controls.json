@@ -1,0 +1,170 @@
+{
+  "source_year": 2012,
+  "resource_id": "a75118db-28c9-4fdf-b367-d5933b7bb810",
+  "retrieved": "2026-11-08",
+  "capture": "Independent Exa projection in memory; only aggregate counts persisted; not original CSV",
+  "age_status_stage": {
+    "14": {
+      "EVET|LİSE": {
+        "n": 250,
+        "w": 69538
+      },
+      "EVET|İLKÖĞRETİM / ORTAOKUL": {
+        "n": 550,
+        "w": 147825
+      },
+      "HAYIR|null": {
+        "n": 54,
+        "w": 14665
+      },
+      "EVET|ENGELLİ OKULU": {
+        "n": 3,
+        "w": 828
+      },
+      "null|null": {
+        "n": 1,
+        "w": 297
+      }
+    },
+    "15": {
+      "EVET|LİSE": {
+        "n": 535,
+        "w": 147547
+      },
+      "HAYIR|null": {
+        "n": 109,
+        "w": 28329
+      },
+      "EVET|ENGELLİ OKULU": {
+        "n": 1,
+        "w": 317
+      },
+      "EVET|İLKÖĞRETİM / ORTAOKUL": {
+        "n": 117,
+        "w": 30917
+      }
+    },
+    "16": {
+      "EVET|LİSE": {
+        "n": 673,
+        "w": 184947
+      },
+      "HAYIR|null": {
+        "n": 193,
+        "w": 50443
+      },
+      "EVET|DİĞER": {
+        "n": 2,
+        "w": 717
+      },
+      "EVET|İLKÖĞRETİM / ORTAOKUL": {
+        "n": 23,
+        "w": 6337
+      },
+      "EVET|ENGELLİ OKULU": {
+        "n": 1,
+        "w": 285
+      }
+    },
+    "17": {
+      "EVET|LİSE": {
+        "n": 616,
+        "w": 168019
+      },
+      "HAYIR|null": {
+        "n": 264,
+        "w": 68256
+      },
+      "EVET|İLKÖĞRETİM / ORTAOKUL": {
+        "n": 8,
+        "w": 1874
+      },
+      "EVET|ÜNİVERSİTE": {
+        "n": 2,
+        "w": 618
+      }
+    },
+    "18": {
+      "EVET|LİSE": {
+        "n": 389,
+        "w": 106965
+      },
+      "HAYIR|null": {
+        "n": 407,
+        "w": 107856
+      },
+      "EVET|ÜNİVERSİTE": {
+        "n": 99,
+        "w": 28126
+      },
+      "EVET|YÜKSEKOKUL": {
+        "n": 11,
+        "w": 3489
+      },
+      "EVET|DİĞER": {
+        "n": 1,
+        "w": 317
+      },
+      "null|null": {
+        "n": 4,
+        "w": 1114
+      },
+      "EVET|İLKÖĞRETİM / ORTAOKUL": {
+        "n": 7,
+        "w": 1339
+      }
+    }
+  },
+  "known": {
+    "count": 2463,
+    "weight": 677016
+  },
+  "null_age_rows": 21,
+  "empty_age_rows": 0,
+  "limitations": [
+    "Unknown-age coverage verified through complete NULL-first prefix, not equality-null filter. Empty-string filter returned0; source age-code audit should retain other sentinel review.",
+    "No raw rows or person identifiers retained.",
+    "These are sample-weighted roster controls, not official design confidence estimates."
+  ],
+  "optional_known_age": {
+    "count": 13,
+    "weight": 3875,
+    "definition": "Unknown student status; current student Other or Disability school (stage unspecified). Utility unknown [0,1]."
+  },
+  "null_age_status_stage": {
+    "null|null": {
+      "n": 1,
+      "w": 302
+    },
+    "HAYIR|null": {
+      "n": 18,
+      "w": 5224
+    },
+    "EVET|İLKÖĞRETİM / ORTAOKUL": {
+      "n": 1,
+      "w": 234
+    },
+    "EVET|null": {
+      "n": 1,
+      "w": 310
+    }
+  },
+  "optional_unknown_age": {
+    "count": 2,
+    "weight": 612,
+    "definition": "Unknown age and unknown enrollment/stage, conservatively optional."
+  },
+  "optional": {
+    "count": 15,
+    "weight": 4487,
+    "definition": "13 uncertain-stage/status members aged14–18 plus2 unknown-age possible members. Utility remains[0,1]."
+  },
+  "null_age_verification": {
+    "method": "sort=yasi desc; limit1000; minimal four fields only",
+    "records": 1000,
+    "leading_null_age_records": 21,
+    "remaining_nonnull_records": 979,
+    "last_age": "84",
+    "correction": "filters yasi:null returned0 because SQL equality does not match NULL. It did not establish absence."
+  }
+}

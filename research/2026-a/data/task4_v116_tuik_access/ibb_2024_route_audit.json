@@ -1,0 +1,37 @@
+{
+  "checked": "2026-11-08",
+  "finding": "Official SKUp workshop report confirms a 2024 household survey; no qualifying current-high-school journey-duration output located.",
+  "sources": [
+    {
+      "url": "https://skup.istanbul/wp-content/uploads/2025/06/Otobus-Oncelikli-Seritler-Calistay-Raporu.pdf",
+      "section": "3.2, printed page 8",
+      "event_date": "2024-12-24",
+      "retrieval": "Exa full-text extraction",
+      "verified_metadata": "Describes a 2024 household survey of 70,000 people and reports buses constitute 49% of public-transport trips.",
+      "qualification": "Not a high-school travel duration statistic; no public questionnaire/current-stage variable or microdata link established."
+    },
+    {
+      "url": "https://skup.istanbul/wp-content/uploads/2025/04/CIM4_EventReport_TR_RTP.pdf",
+      "section": "3.3 Household surveys and data collection",
+      "event_date": "2024-10-23",
+      "retrieval": "Exa full-text extraction",
+      "verified_metadata": "Survey coverage includes neighboring Kocaeli and Tekirdag, beyond Istanbul.",
+      "qualification": "Any extract must explicitly restrict Istanbul residents; survey coverage cannot be equated with city-only estimates."
+    },
+    {
+      "url": "https://data.ibb.gov.tr/en/dataset/istanbul-ulasim-ana-plani-hanehalki-arastirmasi",
+      "retrieval": "Exa full-text extraction",
+      "verified_metadata": "Metadata created 2020-01-15, updated 2023-05-18; Department of Transportation owner.",
+      "qualification": "Metadata update does not establish a 2023 survey year or a new 2024 microdata resource."
+    },
+    {
+      "url": "https://surdurulebilirulasim.istanbul/wp-content/uploads/2023/01/3Objectives.pdf",
+      "section": "Table 3, printed pages 66-67",
+      "verified_metadata": "School travel baseline 23.3 minutes explicitly references the 2012 Household Travel Survey; 15 minutes is a 2040 target.",
+      "qualification": "Neither recent-year observation nor verified current-high-school subset."
+    }
+  ],
+  "admission": false,
+  "reason": "No coexisting verified city filter, current high-school enrollment, and observed journey-duration values.",
+  "next_access_requirement": "Request public codebook/resource or custom aggregate for Istanbul-resident current upper-secondary students from the 2024 survey, with reference period, journey-time definition and weights. No request submitted."
+}

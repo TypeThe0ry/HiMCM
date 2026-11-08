@@ -1,0 +1,77 @@
+{
+  "retrieved_at": "2026-11-08",
+  "tool": "mcp__codex_apps__exa_web_fetch_exa",
+  "representation": "Provider-extracted text from official URLs; original PDF and CSV bytes were not downloaded or hashed.",
+  "source_resources": {
+    "report": "https://data.ibb.gov.tr/dataset/6cefaa5b-bd1b-4e98-a27e-94ddac1ecd2b/resource/1fa02d91-f794-4560-8754-00b635c8efe1/download/istanbul-ulam-ana-plan-hanehalk-aratrmas.pdf",
+    "responses_catalog": "https://data.ibb.gov.tr/api/3/action/package_show?id=71fc2b91-a3a5-44aa-a514-a12f6ab63595"
+  },
+  "queries": [
+    {
+      "url": "https://data.ibb.gov.tr/api/3/action/datastore_search?resource_id=a75118db-28c9-4fdf-b367-d5933b7bb810&limit=500&offset=0&sort=_id&fields=yasi%2Cilce%2Ckisi_agirlik%2Cyol_agirlik%2CseyahatGunu%2Cbasyer.1%2CvarisYeri.1%2CbaslangicSaati.1%2CvarisSaati.1%2Cbasyer.2%2CvarisYeri.2%2CbaslangicSaati.2%2CvarisSaati.2%2Cbasyer.3%2CvarisYeri.3%2CbaslangicSaati.3%2CvarisSaati.3%2Cbasyer.4%2CvarisYeri.4%2CbaslangicSaati.4%2CvarisSaati.4%2Cbasyer.5%2CvarisYeri.5%2CbaslangicSaati.5%2CvarisSaati.5%2Cbasyer.6%2CvarisYeri.6%2CbaslangicSaati.6%2CvarisSaati.6%2Cbasyer.7%2CvarisYeri.7%2CbaslangicSaati.7%2CvarisSaati.7%2Cbasyer.8%2CvarisYeri.8%2CbaslangicSaati.8%2CvarisSaati.8%2Cbasyer.9%2CvarisYeri.9%2CbaslangicSaati.9%2CvarisSaati.9%2Cbasyer.10%2CvarisYeri.10%2CbaslangicSaati.10%2CvarisSaati.10%2Cbasyer.11%2CvarisYeri.11%2CbaslangicSaati.11%2CvarisSaati.11&filters=%7B%22ogrencimi%22%3A%22EVET%22%2C%22okuduguOkulunTuru%22%3A%22L%C4%B0SE%22%7D",
+      "n_records": 500,
+      "total": 2792,
+      "sort": "_id",
+      "validation": "JSON parsed completely; resource/filter matched; sorted cross-projection age, person weight, and internal person identifiers aligned"
+    },
+    {
+      "url": "https://data.ibb.gov.tr/api/3/action/datastore_search?resource_id=a75118db-28c9-4fdf-b367-d5933b7bb810&limit=500&offset=500&sort=_id&fields=yasi%2Cilce%2Ckisi_agirlik%2Cyol_agirlik%2CseyahatGunu%2Cbasyer.1%2CvarisYeri.1%2CbaslangicSaati.1%2CvarisSaati.1%2Cbasyer.2%2CvarisYeri.2%2CbaslangicSaati.2%2CvarisSaati.2%2Cbasyer.3%2CvarisYeri.3%2CbaslangicSaati.3%2CvarisSaati.3%2Cbasyer.4%2CvarisYeri.4%2CbaslangicSaati.4%2CvarisSaati.4%2Cbasyer.5%2CvarisYeri.5%2CbaslangicSaati.5%2CvarisSaati.5%2Cbasyer.6%2CvarisYeri.6%2CbaslangicSaati.6%2CvarisSaati.6%2Cbasyer.7%2CvarisYeri.7%2CbaslangicSaati.7%2CvarisSaati.7%2Cbasyer.8%2CvarisYeri.8%2CbaslangicSaati.8%2CvarisSaati.8%2Cbasyer.9%2CvarisYeri.9%2CbaslangicSaati.9%2CvarisSaati.9%2Cbasyer.10%2CvarisYeri.10%2CbaslangicSaati.10%2CvarisSaati.10%2Cbasyer.11%2CvarisYeri.11%2CbaslangicSaati.11%2CvarisSaati.11&filters=%7B%22ogrencimi%22%3A%22EVET%22%2C%22okuduguOkulunTuru%22%3A%22L%C4%B0SE%22%7D",
+      "n_records": 500,
+      "total": 2792,
+      "sort": "_id",
+      "validation": "JSON parsed completely; resource/filter matched; sorted cross-projection age, person weight, and internal person identifiers aligned"
+    },
+    {
+      "url": "https://data.ibb.gov.tr/api/3/action/datastore_search?resource_id=a75118db-28c9-4fdf-b367-d5933b7bb810&limit=500&offset=1000&sort=_id&fields=yasi%2Cilce%2Ckisi_agirlik%2Cyol_agirlik%2CseyahatGunu%2Cbasyer.1%2CvarisYeri.1%2CbaslangicSaati.1%2CvarisSaati.1%2Cbasyer.2%2CvarisYeri.2%2CbaslangicSaati.2%2CvarisSaati.2%2Cbasyer.3%2CvarisYeri.3%2CbaslangicSaati.3%2CvarisSaati.3%2Cbasyer.4%2CvarisYeri.4%2CbaslangicSaati.4%2CvarisSaati.4%2Cbasyer.5%2CvarisYeri.5%2CbaslangicSaati.5%2CvarisSaati.5%2Cbasyer.6%2CvarisYeri.6%2CbaslangicSaati.6%2CvarisSaati.6%2Cbasyer.7%2CvarisYeri.7%2CbaslangicSaati.7%2CvarisSaati.7%2Cbasyer.8%2CvarisYeri.8%2CbaslangicSaati.8%2CvarisSaati.8%2Cbasyer.9%2CvarisYeri.9%2CbaslangicSaati.9%2CvarisSaati.9%2Cbasyer.10%2CvarisYeri.10%2CbaslangicSaati.10%2CvarisSaati.10%2Cbasyer.11%2CvarisYeri.11%2CbaslangicSaati.11%2CvarisSaati.11&filters=%7B%22ogrencimi%22%3A%22EVET%22%2C%22okuduguOkulunTuru%22%3A%22L%C4%B0SE%22%7D",
+      "n_records": 500,
+      "total": 2792,
+      "sort": "_id",
+      "validation": "JSON parsed completely; resource/filter matched; sorted cross-projection age, person weight, and internal person identifiers aligned"
+    },
+    {
+      "url": "https://data.ibb.gov.tr/api/3/action/datastore_search?resource_id=a75118db-28c9-4fdf-b367-d5933b7bb810&limit=500&offset=1500&sort=_id&fields=yasi%2Cilce%2Ckisi_agirlik%2Cyol_agirlik%2CseyahatGunu%2Cbasyer.1%2CvarisYeri.1%2CbaslangicSaati.1%2CvarisSaati.1%2Cbasyer.2%2CvarisYeri.2%2CbaslangicSaati.2%2CvarisSaati.2%2Cbasyer.3%2CvarisYeri.3%2CbaslangicSaati.3%2CvarisSaati.3%2Cbasyer.4%2CvarisYeri.4%2CbaslangicSaati.4%2CvarisSaati.4%2Cbasyer.5%2CvarisYeri.5%2CbaslangicSaati.5%2CvarisSaati.5%2Cbasyer.6%2CvarisYeri.6%2CbaslangicSaati.6%2CvarisSaati.6%2Cbasyer.7%2CvarisYeri.7%2CbaslangicSaati.7%2CvarisSaati.7%2Cbasyer.8%2CvarisYeri.8%2CbaslangicSaati.8%2CvarisSaati.8%2Cbasyer.9%2CvarisYeri.9%2CbaslangicSaati.9%2CvarisSaati.9%2Cbasyer.10%2CvarisYeri.10%2CbaslangicSaati.10%2CvarisSaati.10%2Cbasyer.11%2CvarisYeri.11%2CbaslangicSaati.11%2CvarisSaati.11&filters=%7B%22ogrencimi%22%3A%22EVET%22%2C%22okuduguOkulunTuru%22%3A%22L%C4%B0SE%22%7D",
+      "n_records": 500,
+      "total": 2792,
+      "sort": "_id",
+      "validation": "JSON parsed completely; resource/filter matched; sorted cross-projection age, person weight, and internal person identifiers aligned"
+    },
+    {
+      "url": "https://data.ibb.gov.tr/api/3/action/datastore_search?resource_id=a75118db-28c9-4fdf-b367-d5933b7bb810&limit=500&offset=2000&sort=_id&fields=yasi%2Cilce%2Ckisi_agirlik%2Cyol_agirlik%2CseyahatGunu%2Cbasyer.1%2CvarisYeri.1%2CbaslangicSaati.1%2CvarisSaati.1%2Cbasyer.2%2CvarisYeri.2%2CbaslangicSaati.2%2CvarisSaati.2%2Cbasyer.3%2CvarisYeri.3%2CbaslangicSaati.3%2CvarisSaati.3%2Cbasyer.4%2CvarisYeri.4%2CbaslangicSaati.4%2CvarisSaati.4%2Cbasyer.5%2CvarisYeri.5%2CbaslangicSaati.5%2CvarisSaati.5%2Cbasyer.6%2CvarisYeri.6%2CbaslangicSaati.6%2CvarisSaati.6%2Cbasyer.7%2CvarisYeri.7%2CbaslangicSaati.7%2CvarisSaati.7%2Cbasyer.8%2CvarisYeri.8%2CbaslangicSaati.8%2CvarisSaati.8%2Cbasyer.9%2CvarisYeri.9%2CbaslangicSaati.9%2CvarisSaati.9%2Cbasyer.10%2CvarisYeri.10%2CbaslangicSaati.10%2CvarisSaati.10%2Cbasyer.11%2CvarisYeri.11%2CbaslangicSaati.11%2CvarisSaati.11&filters=%7B%22ogrencimi%22%3A%22EVET%22%2C%22okuduguOkulunTuru%22%3A%22L%C4%B0SE%22%7D",
+      "n_records": 500,
+      "total": 2792,
+      "sort": "_id",
+      "validation": "JSON parsed completely; resource/filter matched; sorted cross-projection age, person weight, and internal person identifiers aligned"
+    },
+    {
+      "url": "https://data.ibb.gov.tr/api/3/action/datastore_search?resource_id=a75118db-28c9-4fdf-b367-d5933b7bb810&limit=500&offset=2500&sort=_id&fields=yasi%2Cilce%2Ckisi_agirlik%2Cyol_agirlik%2CseyahatGunu%2Cbasyer.1%2CvarisYeri.1%2CbaslangicSaati.1%2CvarisSaati.1%2Cbasyer.2%2CvarisYeri.2%2CbaslangicSaati.2%2CvarisSaati.2%2Cbasyer.3%2CvarisYeri.3%2CbaslangicSaati.3%2CvarisSaati.3%2Cbasyer.4%2CvarisYeri.4%2CbaslangicSaati.4%2CvarisSaati.4%2Cbasyer.5%2CvarisYeri.5%2CbaslangicSaati.5%2CvarisSaati.5%2Cbasyer.6%2CvarisYeri.6%2CbaslangicSaati.6%2CvarisSaati.6%2Cbasyer.7%2CvarisYeri.7%2CbaslangicSaati.7%2CvarisSaati.7%2Cbasyer.8%2CvarisYeri.8%2CbaslangicSaati.8%2CvarisSaati.8%2Cbasyer.9%2CvarisYeri.9%2CbaslangicSaati.9%2CvarisSaati.9%2Cbasyer.10%2CvarisYeri.10%2CbaslangicSaati.10%2CvarisSaati.10%2Cbasyer.11%2CvarisYeri.11%2CbaslangicSaati.11%2CvarisSaati.11&filters=%7B%22ogrencimi%22%3A%22EVET%22%2C%22okuduguOkulunTuru%22%3A%22L%C4%B0SE%22%7D",
+      "n_records": 292,
+      "total": 2792,
+      "sort": "_id",
+      "validation": "JSON parsed completely; resource/filter matched; sorted cross-projection age, person weight, and internal person identifiers aligned"
+    }
+  ],
+  "checks": {
+    "unique_current_high_school_persons": 2792,
+    "all_roster_api_count": 49176,
+    "official_report_roster_count": 49176,
+    "catalog_contains_all_records_flag": false,
+    "interpretation": "Exact API count corroborates report roster total, but source CSV byte equality was not established.",
+    "target_persons": 2463,
+    "target_distinct_households": 2173,
+    "missing_household_ids": 0,
+    "unknown_current_highschool_ages": 0,
+    "target_positive_weights": 2463,
+    "target_missing_weights": 0,
+    "target_resident_districts": 39,
+    "earlier_nonhome_school_trip_among_valid": 0,
+    "multiple_school_outbound_candidates": 3,
+    "n_optional_members": 15,
+    "weight_optional_members": 4487,
+    "null_age_records_full_roster": 21,
+    "null_age_potential_targets": 2,
+    "null_age_potential_target_weight": 612
+  },
+  "privacy": "Names, addresses, telephone fields never requested. Minimal individual projections, internal person and household identifiers used solely in memory; only aggregates persisted.",
+  "sampling": "Report describes two-stage clustered design with 1,031 primary clusters and 16,491 households. Design strata/PSU population frame not reconstructed; no design-valid confidence interval claimed.",
+  "remaining": "No source/design-valid 2025 transfer. Historical optional-membership bounds only; main evidence registry remains unchanged."
+}

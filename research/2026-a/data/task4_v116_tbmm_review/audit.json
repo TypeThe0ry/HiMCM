@@ -1,0 +1,35 @@
+{
+  "review": "V116 independent scope review",
+  "source_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T7/WebOnergeMetni/5e9d9f19-05ee-4077-b2cc-16de924ecaf7.pdf",
+  "accessed": "2026-11-08",
+  "retrieval": "Independent repeat request to Exa web_fetch_exa with maxCharacters=20000. Provider-extracted text, not locally acquired original PDF bytes or independent visual/OCR verification.",
+  "target_identity": "Specific second-page heading identifies Istanbul MP Elif Esen question 7/34663; not merely the grouped cover letter.",
+  "reported_context": {
+    "school_service_share_approx": 0.36,
+    "public_transport_share_approx": 0.46,
+    "population": "Students studying in Istanbul province; no high-school-only/current-grade/age or resident-origin restriction supplied.",
+    "measurement_year": "Not established separately from 2025 reply publication; 2022–2025 wording concerns vehicle inspections.",
+    "mutual_exclusivity": "Not established; no residual18% assigned to walking/cycling.",
+    "duration_statement": "Journeys exceeding60minutes appear in policy discussion about school registration areas and transport planning. No count, fraction, duration distribution, mean, or empirical maximum reported.",
+    "budget": "13.1billionTL is transport-supported primary/secondary lunch funding under2025budget, not an Istanbul journey-time measure."
+  },
+  "missing": [
+    "Current high-school stage and age14–18 cross-tab",
+    "Residence population and sampling/administrative denominator",
+    "Actual outbound journey-duration observations and missingness",
+    "District-by-age usable-access measurements"
+  ],
+  "admitted": false,
+  "new_model_observations": 0,
+  "travel_interval": [
+    0,
+    1
+  ],
+  "complete_claim_limit": "OCR contains garbled characters; shares are contextual readings only and not admitted model inputs. Inspection noncompliance percentage is unreadable and not used.",
+  "crosscheck": {
+    "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/12/Basilmis/259546ca-06fd-49ba-a1b4-f0dcf0a0a63c.pdf",
+    "retrieved_characters": 583332,
+    "finding": "Official proceedings extracted text confirms question identity in index; the actual appendix body was not independently recovered there."
+  },
+  "conclusion": "The formerly unread route is now a known scope mismatch for the model's travel criterion. Keep [0,1]; do not convert mode shares or a planning threshold to travel utility."
+}
