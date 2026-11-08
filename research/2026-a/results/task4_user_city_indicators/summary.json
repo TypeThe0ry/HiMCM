@@ -1,0 +1,69 @@
+{
+  "input": "data/task4_v117_team_intake/city_indicators.csv",
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "cities": 16,
+  "criteria": 10,
+  "uninformative_cells": 36,
+  "point_cells": 112,
+  "partial_interval_cells": 12,
+  "flags_used_for_exclusion": false,
+  "original_25_city_registry_changed": false,
+  "results": {
+    "fixed": {
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "midpoint_illustrative_first": [
+        "Dublin"
+      ],
+      "mean_score_interval_width": 18.81077309291797
+    },
+    "equal": {
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "midpoint_illustrative_first": [
+        "Dublin"
+      ],
+      "mean_score_interval_width": 22.256747622241434
+    }
+  }
+}

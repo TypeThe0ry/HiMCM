@@ -47,3 +47,7 @@ python3 research/2026-a/scripts/task4_ahp_mc_baseline.py --output research/2026-
 ```
 
 The newly supplied16-city CSV is preserved byte-for-byte at ../../data/task4_v117_team_intake/. It is reviewed separately for sources, geography, school stage and count/rate consistency. Its flags do not authorize overwriting verified observations or replacing the25-city candidate set. No Overleaf text was changed.
+
+## Subsequent user input instruction
+
+The user subsequently instructed that the supplied CSV values be used without further source verification. Those values are used unchanged in ../task4_user_city_indicators/, a separate16-city scenario with the same weight and interval rules. The25-city V117 comparison remains a separate candidate-set result; changes between the two city universes must not be described as evidence improvement.

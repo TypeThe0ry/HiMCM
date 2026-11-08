@@ -1,0 +1,161 @@
+city,indicator,input_field,submitted_value,mapped_value,submitted_flag,submitted_year,utility_lower,utility_upper,rule
+Vienna,homicide_rate,homicide_per_100k,3.91,3.91,SUSPECT,2009.0,0.338409475465313,0.338409475465313,cost a/(a+x)
+Vienna,pm25,pm25_ugm3,11.57,11.57,MODELLED,2024.0,0.5645464809936018,0.5645464809936018,cost a/(a+x)
+Vienna,cost_living_index,cli,68.3,68.3,ok,2026.0,0.5941770647653,0.5941770647653,cost a/(a+x)
+Vienna,price_income_ratio,pir,13.9,13.9,ok,2026.0,0.4184100418410042,0.4184100418410042,cost a/(a+x)
+Vienna,upper_secondary_ptr,pupil_teacher_ratio,9.4,9.4,ok,2023.0,0.6147540983606558,0.6147540983606558,cost a/(a+x)
+Vienna,research_he_density,he_per_million,21.2,2.12,ok,2026.0,0.6794871794871795,0.6794871794871795,per-million / 10 to per-100000; benefit x/(a+x)
+Vienna,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Vienna,travel,commute_min,,,,,0.0,1.0,"missing retained as [0,1]"
+Vienna,fixed_broadband_mbps,broadband_mbps,152.53,152.53,ok,2026.0,0.6040074446600404,0.6040074446600404,benefit x/(a+x)
+Vienna,public_pool_density,pools_per_100k,2.77,2.77,STALE,2008.0,0.7347480106100795,0.7347480106100795,benefit x/(a+x)
+Zurich,homicide_rate,homicide_per_100k,0.14,0.14,SUSPECT,2024.0,0.9345794392523364,0.9345794392523364,cost a/(a+x)
+Zurich,pm25,pm25_ugm3,9.32,9.32,MODELLED,2024.0,0.6167763157894737,0.6167763157894737,cost a/(a+x)
+Zurich,cost_living_index,cli,117.8,117.8,ok,2026.0,0.4591368227731864,0.4591368227731864,cost a/(a+x)
+Zurich,price_income_ratio,pir,13.2,13.2,ok,2026.0,0.4310344827586207,0.4310344827586207,cost a/(a+x)
+Zurich,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Zurich,research_he_density,he_per_million,52.2,5.220000000000001,ok,2026.0,0.8392282958199357,0.8392282958199357,per-million / 10 to per-100000; benefit x/(a+x)
+Zurich,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Zurich,travel,commute_min,39.9,39.9,ok,2024.0,0.264477261299824,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Zurich,fixed_broadband_mbps,broadband_mbps,286.35,286.35,ok,2026.0,0.7411673353177171,0.7411673353177171,benefit x/(a+x)
+Zurich,public_pool_density,pools_per_100k,,,,,0.0,1.0,"missing retained as [0,1]"
+Helsinki,homicide_rate,homicide_per_100k,1.19,1.19,ok,2024.0,0.6269592476489029,0.6269592476489029,cost a/(a+x)
+Helsinki,pm25,pm25_ugm3,5.39,5.39,MODELLED,2024.0,0.7356547327121138,0.7356547327121138,cost a/(a+x)
+Helsinki,cost_living_index,cli,71.3,71.3,ok,2026.0,0.5837711617046117,0.5837711617046117,cost a/(a+x)
+Helsinki,price_income_ratio,pir,10.4,10.4,ok,2026.0,0.4901960784313726,0.4901960784313726,cost a/(a+x)
+Helsinki,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Helsinki,research_he_density,he_per_million,21.6,2.16,ok,2026.0,0.6835443037974683,0.6835443037974683,per-million / 10 to per-100000; benefit x/(a+x)
+Helsinki,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Helsinki,travel,commute_min,34.5,34.5,ok,2018.0,0.3166367693790533,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Helsinki,fixed_broadband_mbps,broadband_mbps,154.66,154.66,ok,2026.0,0.6073195633393544,0.6073195633393544,benefit x/(a+x)
+Helsinki,public_pool_density,pools_per_100k,2.37,2.37,ok,2023.0,0.7032640949554896,0.7032640949554896,benefit x/(a+x)
+Berlin,homicide_rate,homicide_per_100k,2.1,2.1,ok,2023.0,0.48780487804878053,0.48780487804878053,cost a/(a+x)
+Berlin,pm25,pm25_ugm3,9.14,9.14,MODELLED,2024.0,0.6213753106876553,0.6213753106876553,cost a/(a+x)
+Berlin,cost_living_index,cli,68.3,68.3,ok,2026.0,0.5941770647653,0.5941770647653,cost a/(a+x)
+Berlin,price_income_ratio,pir,9.9,9.9,ok,2026.0,0.5025125628140704,0.5025125628140704,cost a/(a+x)
+Berlin,upper_secondary_ptr,pupil_teacher_ratio,12.5,12.5,ok,2025.0,0.5454545454545454,0.5454545454545454,cost a/(a+x)
+Berlin,research_he_density,he_per_million,16.8,1.6800000000000002,ok,2026.0,0.6268656716417911,0.6268656716417911,per-million / 10 to per-100000; benefit x/(a+x)
+Berlin,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Berlin,travel,commute_min,32.5,32.5,ok,2016.0,0.3384654251067422,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Berlin,fixed_broadband_mbps,broadband_mbps,102.46,102.46,ok,2026.0,0.5060752741282228,0.5060752741282228,benefit x/(a+x)
+Berlin,public_pool_density,pools_per_100k,1.53,1.53,ok,2022.0,0.6047430830039525,0.6047430830039525,benefit x/(a+x)
+London,homicide_rate,homicide_per_100k,1.59,1.59,ok,2018.0,0.5571030640668524,0.5571030640668524,cost a/(a+x)
+London,pm25,pm25_ugm3,9.99,9.99,MODELLED,2024.0,0.6002400960384153,0.6002400960384153,cost a/(a+x)
+London,cost_living_index,cli,84.7,84.7,ok,2026.0,0.5414185165132648,0.5414185165132648,cost a/(a+x)
+London,price_income_ratio,pir,11.8,11.8,ok,2026.0,0.4587155963302752,0.4587155963302752,cost a/(a+x)
+London,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+London,research_he_density,he_per_million,18.3,1.83,ok,2026.0,0.6466431095406361,0.6466431095406361,per-million / 10 to per-100000; benefit x/(a+x)
+London,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+London,travel,commute_min,43.0,43.0,STALE,2001.0,0.23851255385430242,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+London,fixed_broadband_mbps,broadband_mbps,162.59,162.59,ok,2026.0,0.6191781865265242,0.6191781865265242,benefit x/(a+x)
+London,public_pool_density,pools_per_100k,1.47,1.47,ok,2018.0,0.5951417004048584,0.5951417004048584,benefit x/(a+x)
+Amsterdam,homicide_rate,homicide_per_100k,31.67,31.67,SUSPECT,2022.0,0.0594000594000594,0.0594000594000594,cost a/(a+x)
+Amsterdam,pm25,pm25_ugm3,10.47,10.47,MODELLED,2024.0,0.5889281507656067,0.5889281507656067,cost a/(a+x)
+Amsterdam,cost_living_index,cli,76.9,76.9,ok,2026.0,0.5652911249293386,0.5652911249293386,cost a/(a+x)
+Amsterdam,price_income_ratio,pir,9.2,9.2,ok,2026.0,0.5208333333333334,0.5208333333333334,cost a/(a+x)
+Amsterdam,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Amsterdam,research_he_density,he_per_million,14.9,1.49,ok,2026.0,0.5983935742971886,0.5983935742971886,per-million / 10 to per-100000; benefit x/(a+x)
+Amsterdam,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Amsterdam,travel,commute_min,31.0,31.0,STALE,2003.0,0.3558189185373419,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Amsterdam,fixed_broadband_mbps,broadband_mbps,196.69,196.69,ok,2026.0,0.6629478580336378,0.6629478580336378,benefit x/(a+x)
+Amsterdam,public_pool_density,pools_per_100k,1.12,1.12,ok,2024.0,0.5283018867924528,0.5283018867924528,benefit x/(a+x)
+Stockholm,homicide_rate,homicide_per_100k,2.52,2.52,STALE,2004.0,0.4424778761061947,0.4424778761061947,cost a/(a+x)
+Stockholm,pm25,pm25_ugm3,4.99,4.99,MODELLED,2024.0,0.7503751875937968,0.7503751875937968,cost a/(a+x)
+Stockholm,cost_living_index,cli,74.6,74.6,ok,2026.0,0.572737686139748,0.572737686139748,cost a/(a+x)
+Stockholm,price_income_ratio,pir,13.0,13.0,ok,2026.0,0.43478260869565216,0.43478260869565216,cost a/(a+x)
+Stockholm,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Stockholm,research_he_density,he_per_million,24.0,2.4,ok,2026.0,0.7058823529411765,0.7058823529411765,per-million / 10 to per-100000; benefit x/(a+x)
+Stockholm,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Stockholm,travel,commute_min,35.0,35.0,STALE,2005.0,0.3114032239145977,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Stockholm,fixed_broadband_mbps,broadband_mbps,234.39,234.39,ok,2026.0,0.7009479948563055,0.7009479948563055,benefit x/(a+x)
+Stockholm,public_pool_density,pools_per_100k,,,,,0.0,1.0,"missing retained as [0,1]"
+Paris,homicide_rate,homicide_per_100k,1.11,1.11,ok,2020.0,0.6430868167202571,0.6430868167202571,cost a/(a+x)
+Paris,pm25,pm25_ugm3,11.16,11.16,MODELLED,2024.0,0.573394495412844,0.573394495412844,cost a/(a+x)
+Paris,cost_living_index,cli,73.3,73.3,ok,2026.0,0.5770340450086555,0.5770340450086555,cost a/(a+x)
+Paris,price_income_ratio,pir,16.2,16.2,ok,2026.0,0.3816793893129771,0.3816793893129771,cost a/(a+x)
+Paris,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Paris,research_he_density,he_per_million,46.1,4.61,ok,2026.0,0.82174688057041,0.82174688057041,per-million / 10 to per-100000; benefit x/(a+x)
+Paris,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Paris,travel,commute_min,44.0,44.0,STALE,2013.0,0.23069318225496285,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Paris,fixed_broadband_mbps,broadband_mbps,225.21,225.21,ok,2026.0,0.6925063804926047,0.6925063804926047,benefit x/(a+x)
+Paris,public_pool_density,pools_per_100k,3.27,3.27,ok,2024.0,0.7658079625292741,0.7658079625292741,benefit x/(a+x)
+Madrid,homicide_rate,homicide_per_100k,0.51,0.51,ok,2023.0,0.7968127490039841,0.7968127490039841,cost a/(a+x)
+Madrid,pm25,pm25_ugm3,10.23,10.23,MODELLED,2024.0,0.5945303210463734,0.5945303210463734,cost a/(a+x)
+Madrid,cost_living_index,cli,56.0,56.0,ok,2026.0,0.6410256410256411,0.6410256410256411,cost a/(a+x)
+Madrid,price_income_ratio,pir,13.6,13.6,ok,2026.0,0.423728813559322,0.423728813559322,cost a/(a+x)
+Madrid,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Madrid,research_he_density,he_per_million,10.5,1.05,ok,2026.0,0.5121951219512195,0.5121951219512195,per-million / 10 to per-100000; benefit x/(a+x)
+Madrid,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Madrid,travel,commute_min,31.21,31.21,STALE,2011.0,0.3533368833656501,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Madrid,fixed_broadband_mbps,broadband_mbps,279.22,279.22,ok,2026.0,0.7363008280154001,0.7363008280154001,benefit x/(a+x)
+Madrid,public_pool_density,pools_per_100k,1.11,1.11,STALE,2011.0,0.5260663507109005,0.5260663507109005,benefit x/(a+x)
+Milan,homicide_rate,homicide_per_100k,0.25,0.25,ok,2023.0,0.8888888888888888,0.8888888888888888,cost a/(a+x)
+Milan,pm25,pm25_ugm3,28.1,28.1,MODELLED,2024.0,0.3480278422273782,0.3480278422273782,cost a/(a+x)
+Milan,cost_living_index,cli,70.1,70.1,ok,2026.0,0.5878894767783657,0.5878894767783657,cost a/(a+x)
+Milan,price_income_ratio,pir,17.6,17.6,ok,2026.0,0.36231884057971014,0.36231884057971014,cost a/(a+x)
+Milan,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Milan,research_he_density,he_per_million,14.3,1.4300000000000002,ok,2026.0,0.588477366255144,0.588477366255144,per-million / 10 to per-100000; benefit x/(a+x)
+Milan,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Milan,travel,commute_min,34.8,34.8,STALE,2011.0,0.3134861808826053,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Milan,fixed_broadband_mbps,broadband_mbps,161.92,161.92,ok,2026.0,0.6182040317654246,0.6182040317654246,benefit x/(a+x)
+Milan,public_pool_density,pools_per_100k,,,,,0.0,1.0,"missing retained as [0,1]"
+Dublin,homicide_rate,homicide_per_100k,1.28,1.28,STALE,2011.0,0.6097560975609756,0.6097560975609756,cost a/(a+x)
+Dublin,pm25,pm25_ugm3,6.27,6.27,MODELLED,2024.0,0.7052186177715092,0.7052186177715092,cost a/(a+x)
+Dublin,cost_living_index,cli,72.1,72.1,ok,2026.0,0.5810575246949449,0.5810575246949449,cost a/(a+x)
+Dublin,price_income_ratio,pir,9.8,9.8,ok,2026.0,0.5050505050505051,0.5050505050505051,cost a/(a+x)
+Dublin,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Dublin,research_he_density,he_per_million,47.2,4.720000000000001,ok,2026.0,0.8251748251748252,0.8251748251748252,per-million / 10 to per-100000; benefit x/(a+x)
+Dublin,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Dublin,travel,commute_min,28.8,28.8,STALE,2011.0,0.382892885975112,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Dublin,fixed_broadband_mbps,broadband_mbps,217.3,217.3,ok,2026.0,0.6848408446265364,0.6848408446265364,benefit x/(a+x)
+Dublin,public_pool_density,pools_per_100k,1.28,1.28,STALE,2011.0,0.5614035087719298,0.5614035087719298,benefit x/(a+x)
+Oslo,homicide_rate,homicide_per_100k,1.71,1.71,STALE,2008.0,0.5390835579514824,0.5390835579514824,cost a/(a+x)
+Oslo,pm25,pm25_ugm3,7.9,7.9,MODELLED,2024.0,0.6550218340611355,0.6550218340611355,cost a/(a+x)
+Oslo,cost_living_index,cli,92.9,92.9,ok,2026.0,0.5184033177812338,0.5184033177812338,cost a/(a+x)
+Oslo,price_income_ratio,pir,9.8,9.8,ok,2026.0,0.5050505050505051,0.5050505050505051,cost a/(a+x)
+Oslo,upper_secondary_ptr,pupil_teacher_ratio,18.2,18.2,ok,2025.0,0.4518072289156626,0.4518072289156626,cost a/(a+x)
+Oslo,research_he_density,he_per_million,34.4,3.44,ok,2026.0,0.7747747747747749,0.7747747747747749,per-million / 10 to per-100000; benefit x/(a+x)
+Oslo,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Oslo,travel,commute_min,31.0,31.0,STALE,2009.0,0.3558189185373419,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Oslo,fixed_broadband_mbps,broadband_mbps,150.76,150.76,ok,2026.0,0.6012123145637263,0.6012123145637263,benefit x/(a+x)
+Oslo,public_pool_density,pools_per_100k,5.29,5.29,ok,2021.0,0.8410174880763116,0.8410174880763116,benefit x/(a+x)
+Prague,homicide_rate,homicide_per_100k,1.72,1.72,ok,2017.0,0.5376344086021506,0.5376344086021506,cost a/(a+x)
+Prague,pm25,pm25_ugm3,12.16,12.16,MODELLED,2024.0,0.5522827687776142,0.5522827687776142,cost a/(a+x)
+Prague,cost_living_index,cli,53.1,53.1,ok,2026.0,0.6531678641410843,0.6531678641410843,cost a/(a+x)
+Prague,price_income_ratio,pir,17.4,17.4,ok,2026.0,0.36496350364963503,0.36496350364963503,cost a/(a+x)
+Prague,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Prague,research_he_density,he_per_million,39.8,3.9799999999999995,ok,2026.0,0.7991967871485943,0.7991967871485943,per-million / 10 to per-100000; benefit x/(a+x)
+Prague,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Prague,travel,commute_min,38.0,38.0,STALE,2011.0,0.28176928909495835,1.0,"submitted commute mean: Jensen lower exp(-mean/30), upper 1"
+Prague,fixed_broadband_mbps,broadband_mbps,96.08,96.08,ok,2026.0,0.4900040799673603,0.4900040799673603,benefit x/(a+x)
+Prague,public_pool_density,pools_per_100k,4.86,4.86,STALE,2011.0,0.8293515358361775,0.8293515358361775,benefit x/(a+x)
+Warsaw,homicide_rate,homicide_per_100k,1.18,1.18,ok,2018.0,0.628930817610063,0.628930817610063,cost a/(a+x)
+Warsaw,pm25,pm25_ugm3,20.65,20.65,MODELLED,2024.0,0.420757363253857,0.420757363253857,cost a/(a+x)
+Warsaw,cost_living_index,cli,49.0,49.0,ok,2026.0,0.6711409395973155,0.6711409395973155,cost a/(a+x)
+Warsaw,price_income_ratio,pir,12.0,12.0,ok,2026.0,0.45454545454545453,0.45454545454545453,cost a/(a+x)
+Warsaw,upper_secondary_ptr,pupil_teacher_ratio,,,,,0.0,1.0,"missing retained as [0,1]"
+Warsaw,research_he_density,he_per_million,31.7,3.17,ok,2026.0,0.7601918465227818,0.7601918465227818,per-million / 10 to per-100000; benefit x/(a+x)
+Warsaw,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Warsaw,travel,commute_min,,,,,0.0,1.0,"missing retained as [0,1]"
+Warsaw,fixed_broadband_mbps,broadband_mbps,235.49,235.49,ok,2026.0,0.7019285224596858,0.7019285224596858,benefit x/(a+x)
+Warsaw,public_pool_density,pools_per_100k,1.83,1.83,STALE,2011.0,0.6466431095406361,0.6466431095406361,benefit x/(a+x)
+Singapore,homicide_rate,homicide_per_100k,0.07,0.07,ok,2023.0,0.9661835748792271,0.9661835748792271,cost a/(a+x)
+Singapore,pm25,pm25_ugm3,14.32,14.32,MODELLED,2024.0,0.5115961800818554,0.5115961800818554,cost a/(a+x)
+Singapore,cost_living_index,cli,89.2,89.2,ok,2026.0,0.5285412262156448,0.5285412262156448,cost a/(a+x)
+Singapore,price_income_ratio,pir,22.3,22.3,ok,2026.0,0.30959752321981426,0.30959752321981426,cost a/(a+x)
+Singapore,upper_secondary_ptr,pupil_teacher_ratio,12.7,12.7,ok,2024.0,0.5415162454873647,0.5415162454873647,cost a/(a+x)
+Singapore,research_he_density,he_per_million,19.5,1.95,ok,2026.0,0.6610169491525423,0.6610169491525423,per-million / 10 to per-100000; benefit x/(a+x)
+Singapore,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Singapore,travel,commute_min,,,,,0.0,1.0,"missing retained as [0,1]"
+Singapore,fixed_broadband_mbps,broadband_mbps,667.71,667.71,NATIONAL,2026.0,0.8697424808847091,0.8697424808847091,benefit x/(a+x)
+Singapore,public_pool_density,pools_per_100k,,,,,0.0,1.0,"missing retained as [0,1]"
+Tokyo,homicide_rate,homicide_per_100k,0.94,0.94,ok,2023.0,0.6802721088435374,0.6802721088435374,cost a/(a+x)
+Tokyo,pm25,pm25_ugm3,28.37,28.37,MODELLED,2024.0,0.3458611943739912,0.3458611943739912,cost a/(a+x)
+Tokyo,cost_living_index,cli,50.6,50.6,ok,2026.0,0.6640106241699868,0.6640106241699868,cost a/(a+x)
+Tokyo,price_income_ratio,pir,14.6,14.6,ok,2026.0,0.4065040650406504,0.4065040650406504,cost a/(a+x)
+Tokyo,upper_secondary_ptr,pupil_teacher_ratio,15.22,15.22,ok,2024.0,0.49636002647253474,0.49636002647253474,cost a/(a+x)
+Tokyo,research_he_density,he_per_million,8.5,0.85,ok,2026.0,0.45945945945945943,0.45945945945945943,per-million / 10 to per-100000; benefit x/(a+x)
+Tokyo,public_transport_density,,,,,,0.0,1.0,"transit share is not stop density; retained as [0,1]"
+Tokyo,travel,commute_min,,,,,0.0,1.0,"missing retained as [0,1]"
+Tokyo,fixed_broadband_mbps,broadband_mbps,235.46,235.46,ok,2026.0,0.7019018660943181,0.7019018660943181,benefit x/(a+x)
+Tokyo,public_pool_density,pools_per_100k,,,,,0.0,1.0,"missing retained as [0,1]"
