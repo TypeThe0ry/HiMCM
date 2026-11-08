@@ -1,0 +1,82 @@
+{
+  "stage_module": {
+    "url": "https://raw.githubusercontent.com/saramirezva/Mobility-Models-Bogota/b21e3dab606c3a135ee42db29ab1caa5b8c3bcbd/Encuesta%20de%20Movilidad%202023/EODH/CSV/Modulo_etapas.csv",
+    "bytes": 59325906,
+    "sha256": "d9cbbcf40ab2bb851167219079b63717e35152f29605325877f46645127c8078",
+    "columns": [
+      "cod_eta",
+      "cod_vj",
+      "cod_pers",
+      "cod_hg",
+      "nom_mun_hg",
+      "cod_upl_hg",
+      "cod_utam_hg",
+      "zat_hg",
+      "estra_hg",
+      "orden_eta",
+      "etapas",
+      "modo_etapa",
+      "modo_principal_vj",
+      "uso_veh_hg_cod",
+      "t_acceso_min",
+      "t_espera_min",
+      "pago_viaje",
+      "costo_viaje",
+      "modalidad_pago_vj",
+      "lugar_parqueo",
+      "t_parqueo_min",
+      "costo_parqueo",
+      "t_egreso_min",
+      "motivo_viaje",
+      "edad",
+      "sexo",
+      "genero",
+      "orien_sexual",
+      "identidad_etnica",
+      "mad_cab_familia",
+      "max_nivel_educativo",
+      "ocupación_principal",
+      "actividad_economica",
+      "condicion_discapacidad",
+      "licencia_vigente",
+      "key_viaje",
+      "key_etapa",
+      "fexp_eta"
+    ],
+    "rows": 110881,
+    "access_date": "2026-11-08",
+    "encoding": "cp1252",
+    "delimiter": ";",
+    "raw_local_path": "/tmp/bogota92_etapas.csv",
+    "source_role": "Third-party processed EODH 2023 mirror; not independently byte-verified against official release",
+    "home_origin_or_destination_flag_present": false,
+    "current_grade_field_present": false,
+    "main_model_admitted": false
+  },
+  "research_code": {
+    "url": "https://raw.githubusercontent.com/ESO-Rennes/Distancias_Emisiones_EODH/e6a968153f361faae92fde510592d8e40d226e2f/Distancias_EODH_2023_projection_reseau.Rmd",
+    "commit": "e6a968153f361faae92fde510592d8e40d226e2f",
+    "sha256": "d11550d441bfadfdea0d7aecc921c5d8fbe08e34da0f8029259233944ea83304",
+    "bytes": 77288,
+    "access_date": "2026-11-08",
+    "type": "Third-party research implementation, not official dictionary",
+    "workbook": "ANEXO 2_BASE DE DATOS EODH CON FACTORES DE EXPANSIÓN.xlsx",
+    "fields": {
+      "modulo D-E.d7": "Research code maps 1 to Hogar for initial daily location",
+      "viajes.d24": "Research code maps 1 to Hogar and 2 to Otro lugar for trip destination"
+    },
+    "line_ranges": [
+      [
+        75,
+        78
+      ],
+      [
+        159,
+        176
+      ]
+    ],
+    "raw_workbook_acquired": false,
+    "official_dictionary_acquired": false,
+    "full_source_saved_in_git": false
+  }
+}

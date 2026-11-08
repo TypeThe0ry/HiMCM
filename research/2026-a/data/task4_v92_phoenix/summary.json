@@ -1,0 +1,125 @@
+{
+  "main_admitted": false,
+  "requested_fiscal_year": 2025,
+  "candidate_schools": 71,
+  "exact_nces_matches": 70,
+  "matched_schools_with_grade11_results": 62,
+  "all_grade11_subject_rows": 187,
+  "verified_grade11_subject_rows": 184,
+  "unverified_identity": [
+    {
+      "entity_id": 6395,
+      "nces_id": "040046302884",
+      "school": "ASDB - Phoenix Day School for the Deaf"
+    }
+  ],
+  "matched_schools_without_grade11_rows": [
+    {
+      "entity_id": 6063,
+      "school": "AmeriSchools Academy - Camelback",
+      "source_grade11": 0
+    },
+    {
+      "entity_id": 78883,
+      "school": "New World Educational Center",
+      "source_grade11": 0
+    },
+    {
+      "entity_id": 920316,
+      "school": "KELLY",
+      "source_grade11": 0
+    },
+    {
+      "entity_id": 91000,
+      "school": "Great Hearts Academies - Archway Veritas",
+      "source_grade11": 0
+    },
+    {
+      "entity_id": 91775,
+      "school": "The Paideia Academy of South Phoenix",
+      "source_grade11": 0
+    },
+    {
+      "entity_id": 92350,
+      "school": "BASIS Phoenix Central Primary",
+      "source_grade11": 0
+    },
+    {
+      "entity_id": 139682,
+      "school": "BASIS Phoenix South",
+      "source_grade11": 0
+    },
+    {
+      "entity_id": 1002004,
+      "school": "Phoenix Educator Preparatory",
+      "source_grade11": 0
+    }
+  ],
+  "official_entity_returned_years": [
+    2026
+  ],
+  "fiscal_years": [
+    2025
+  ],
+  "assessment_type_labels": [
+    "AzMerit"
+  ],
+  "subject_summaries": [
+    {
+      "subject": "ELA",
+      "verified_school_rows": 62,
+      "known_denominator_rows": 56,
+      "unknown_denominator_rows": 6,
+      "sum_known_test_records": 12832,
+      "known_denominator_suppressed_rate_rows": 8,
+      "suppressed_rate_test_record_weight": 217,
+      "published_percent_weighted_index_lower": 39.78615960099751,
+      "published_percent_weighted_index_upper": 41.47724438902743,
+      "negative_number_tested_codes": {
+        "-11": 6
+      },
+      "negative_percentage_codes": {
+        "-11": 12
+      }
+    },
+    {
+      "subject": "MATH",
+      "verified_school_rows": 62,
+      "known_denominator_rows": 56,
+      "unknown_denominator_rows": 6,
+      "sum_known_test_records": 13239,
+      "known_denominator_suppressed_rate_rows": 12,
+      "suppressed_rate_test_record_weight": 529,
+      "published_percent_weighted_index_lower": 30.525115189969032,
+      "published_percent_weighted_index_upper": 34.5208852632374,
+      "negative_number_tested_codes": {
+        "-11": 6
+      },
+      "negative_percentage_codes": {
+        "-11": 16
+      }
+    },
+    {
+      "subject": "Science",
+      "verified_school_rows": 60,
+      "known_denominator_rows": 54,
+      "unknown_denominator_rows": 6,
+      "sum_known_test_records": 12479,
+      "known_denominator_suppressed_rate_rows": 15,
+      "suppressed_rate_test_record_weight": 1346,
+      "published_percent_weighted_index_lower": 18.1652375991666,
+      "published_percent_weighted_index_upper": 28.951358281913613,
+      "negative_number_tested_codes": {
+        "-11": 6
+      },
+      "negative_percentage_codes": {
+        "-11": 17,
+        "-1": 1
+      }
+    }
+  ],
+  "index_scope": "Record-count-weighted published percentage descriptor for matched rows with known tested counts only; suppressed percentages range 0\u2013100. Not an exact underlying pass rate, pass count, distinct-pupil count, all 71-school aggregate, or city estimate. Integer percentage rounding is not verified.",
+  "geographic_population": "Public school records matched by exact NCES ID to 2024\u201325 CCD current-boundary candidates; current entity endpoints return FY2026 and validate identifiers only, not historic location. Private/unmatched schools and resident catchments remain uncovered.",
+  "denominator": "ALL ENROLLED performance records describe enrolled tested pupils under V53 frontend wording. Participation-rate rows and CCD grade 11 enrollment are not merged into this denominator.",
+  "source_note": "All 142 responses acquired successfully from official public API; legacy AzMerit label preserved without ACT/AzSCI rebranding."
+}
