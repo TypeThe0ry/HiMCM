@@ -1,0 +1,34 @@
+{
+  "method": "Raw official JSON counts and annual population; longdouble scoring without model imports",
+  "source_hashes_verified": true,
+  "baseline_hash_verified": true,
+  "checked_rank_rows": 100,
+  "checked_bounds": 1000,
+  "unchanged_other_cells_each_alternative": 249,
+  "raw_count_scenarios": [
+    {
+      "year": 2023,
+      "murder_victims": 4,
+      "annual_total_population": 5917648,
+      "rate_per_100000": 0.06759442264899838
+    },
+    {
+      "year": 2024,
+      "murder_victims": 10,
+      "annual_total_population": 6036860,
+      "rate_per_100000": 0.16564902946233637
+    },
+    {
+      "year": 2025,
+      "murder_victims": 8,
+      "annual_total_population": 6111175,
+      "rate_per_100000": 0.13090772232835748
+    }
+  ],
+  "continuous_possible_city_witnesses": 100,
+  "continuous_recommendation_leaves": 8,
+  "maximum_score_or_regret_error": 2.0046464488387983e-14,
+  "maximum_certificate_gap_error": 2.5618396293225487e-14,
+  "all_rankings_unchanged": true,
+  "scope": "Local recorded-murder descriptors are source-definition alternatives, not a validated WDI/ICCS series update, teenage risk or main admission."
+}

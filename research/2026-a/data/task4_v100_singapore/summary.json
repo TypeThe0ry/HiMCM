@@ -1,0 +1,53 @@
+{
+  "main_admitted": false,
+  "admitted_cells_changed": 0,
+  "existing_homicide": {
+    "year": 2023,
+    "rate": 0.0690954942050905,
+    "utility": 0.9666059423556785,
+    "provider": "WDI / UNODC",
+    "latest_refresh": "2026-10-08"
+  },
+  "local_murder_scenarios": [
+    {
+      "year": 2023,
+      "murder_victims": 4,
+      "total_population": 5917648,
+      "murder_victims_per_100000": 0.06759442264899838,
+      "conditional_risk_utility": 0.9673076973372774
+    },
+    {
+      "year": 2024,
+      "murder_victims": 10,
+      "total_population": 6036860,
+      "murder_victims_per_100000": 0.1656490294623364,
+      "conditional_risk_utility": 0.9235106763797909
+    },
+    {
+      "year": 2025,
+      "murder_victims": 8,
+      "total_population": 6111175,
+      "murder_victims_per_100000": 0.13090772232835748,
+      "conditional_risk_utility": 0.9385671556977042
+    }
+  ],
+  "latest_wdi_missing_years": [
+    2024,
+    2025
+  ],
+  "homicide_mapping": "No verified local murder-to-ICCS intentional-homicide equivalence or inclusion mapping; separate descriptors, no main replacement or one-sided bound.",
+  "denominator_scope": "SingStat annual total population of city-state, residents plus non-residents. Not a teenage population denominator or person-time exposure of the police victim universe.",
+  "broadband": {
+    "value": 476.02,
+    "unit": "Mbps",
+    "statistic": "fixedMedian country download",
+    "period": "2026-09",
+    "aggregate_date": "2026-07-01 00:00:00",
+    "aggregation": "rolling_quarter",
+    "geography": "Singapore city-state",
+    "not_mean": 667.71,
+    "utility": 0.8263949168431651,
+    "coverage": "Publisher speedtest aggregate, not household access coverage, school access or student-specific speeds."
+  },
+  "interpretation": "Source/year sensitivity only. The count ratio is a recorded-murder descriptor; no causal or individual-risk interpretation. Broad age groups cannot identify exact current-high-school pupils."
+}

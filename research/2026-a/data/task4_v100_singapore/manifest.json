@@ -1,0 +1,58 @@
+[
+  {
+    "file": "wdi_homicide.json",
+    "url": "https://api.worldbank.org/v2/country/SGP/indicator/VC.IHR.PSRC.P5?format=json&per_page=100",
+    "bytes": 15161,
+    "sha256": "dc75e88c2f81d6c9a8846c6c23de74b3ca751c9d55c733c21ef399ebfeae38f6",
+    "access_date": "2026-11-08"
+  },
+  {
+    "file": "victims.json",
+    "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_43bc9a5106f4264642dc38e7cc39fcd3&limit=1000",
+    "bytes": 31909,
+    "sha256": "bdec91e9090725abee13e9798e20955e06fc0e2317a55ab8a4417774c67620c8",
+    "access_date": "2026-11-08"
+  },
+  {
+    "file": "population.json",
+    "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_3d227e5d9fdec73f3bcadce671c333a6&limit=1000",
+    "bytes": 35521,
+    "sha256": "563a2601b5bb0722fc9c00332a9aeb15622889fc8ae41535aa883420d0b4c5ab",
+    "access_date": "2026-11-08"
+  },
+  {
+    "file": "victims_page.html",
+    "url": "https://data.gov.sg/datasets/d_43bc9a5106f4264642dc38e7cc39fcd3/view",
+    "bytes": 360395,
+    "sha256": "d77f601280a08c817d89033f4e491cd55a326323d1d20ed467dcb44cda2729b0",
+    "access_date": "2026-11-08"
+  },
+  {
+    "file": "population_page.html",
+    "url": "https://data.gov.sg/datasets/d_3d227e5d9fdec73f3bcadce671c333a6/view",
+    "bytes": 757128,
+    "sha256": "7a66577023df79da0a5c38b5feededea193faa72f5ec28eaee732ede9451abcf",
+    "access_date": "2026-11-08"
+  },
+  {
+    "file": "wdi_indicator_metadata.json",
+    "url": "https://api.worldbank.org/v2/indicator/VC.IHR.PSRC.P5?format=json",
+    "bytes": 503,
+    "sha256": "1d0a75be08a99ba32bd5a06a7f8a57819364cbdb86e6c9b2c2056dcfe5ed07a9",
+    "access_date": "2026-11-08"
+  },
+  {
+    "file": "../task4_v5_resources/ookla_global_index.html",
+    "url": "https://www.speedtest.net/global-index",
+    "bytes": 1259560,
+    "sha256": "fe1747fc44f1273eaf43e8acda26c6c3e6ab48d4e614716a551f937446b02e9b",
+    "status": "reused_v5_original"
+  },
+  {
+    "file": "../task4_v5_core/sg_homicide_wb.json",
+    "url": "https://api.worldbank.org/v2/country/SGP/indicator/VC.IHR.PSRC.P5?format=json",
+    "bytes": 11608,
+    "sha256": "48c323c4a853a06f0ccae973964c9bc565164c7dd6b54006516cf145857fdf9b",
+    "status": "reused_v5_original"
+  }
+]

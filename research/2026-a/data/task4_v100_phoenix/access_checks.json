@@ -1,0 +1,38 @@
+{
+  "access_date": "2026-11-08",
+  "public_use_data_obtained": false,
+  "attempts": [
+    {
+      "url": "https://civilrightsdata.ed.gov/data",
+      "status": 403,
+      "method": "requests and normal Chrome UI",
+      "observation": "CloudFront request blocked"
+    },
+    {
+      "url": "https://civilrightsdata.ed.gov/assets/ocr/docs/2023-24-crdc-data.zip",
+      "status": 403,
+      "method": "requests",
+      "bytes": 919,
+      "content_type": "text/html",
+      "observation": "No ZIP downloaded"
+    },
+    {
+      "url": "https://ocrdata.ed.gov/",
+      "status": 403,
+      "method": "requests",
+      "bytes": 919,
+      "observation": "No usable HTML"
+    }
+  ],
+  "zip_url_lead": "https://raw.githubusercontent.com/jknowles/crdc-arrests/main/R/funs.R",
+  "primary_release_page": "https://www.ed.gov/laws-and-policy/civil-rights-laws/civil-rights-data-collection-crdc/civil-rights-data/civil-rights-data-collection-crdc-2023-24-school-year",
+  "urban_staff_documentation": "https://educationdata.urban.org/documentation/schools.html",
+  "urban_available_staff_years": [
+    2011,
+    2013,
+    2015,
+    2017,
+    2020,
+    2021
+  ]
+}
