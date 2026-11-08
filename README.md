@@ -14,6 +14,7 @@
 
 | 想了解什么 | 入口 |
 | --- | --- |
+| V104测量精度 | [四城理想结论的精度边界；宽0.01时最少5城](research/2026-a/results/task4_v104_intake/README.md) |
 | V103算法与证据 | [共享补数最优集合4城的证明；实际仍25城](research/2026-a/results/task4_v103_intake/README.md) |
 | V102实际补数修订 | [Copenhagen下界提高2.319分；排名和25城候选保持](research/2026-a/results/task4_v102_intake/README.md) |
 | A题原文、评委点评 | [题目](research/2026-a/inputs/problem_a_2026.pdf) · [2025点评](research/2026-a/inputs/judges_commentary_2025.pdf) |

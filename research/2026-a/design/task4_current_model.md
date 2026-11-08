@@ -1,5 +1,7 @@
 # 当前模型：V102 Copenhagen高教资源下界修订（2026-11-08）
 
+V104检验[残余测量区间](../results/task4_v104_survivor_precision/README.md)：规定效用宽度0.005时理想最少4城，0.01时最少5城；四城边界夹逼约0.00922—0.00928。实际250格与25城候选不变，Toronto新原件缺城市旅时交叉。[本轮记录](../results/task4_v104_intake/README.md)。
+
 V103保持真实V102输入，新增[幸存集合枚举](../results/task4_v103_survivor_search/README.md)：全城安全＋教育＋通学的连续理想补数极限，由旧算法未闭合的3—5证明为4；实际仍25城。连续补数与共享补数诊断已重算至V102，历史压力诊断仍为旧版本。[本轮记录](../results/task4_v103_intake/README.md)。
 
 V102以四所官方认可高校的市内总部／法定所在地建立部分下界，人口与机构同属2026年但日期不同。Copenhagen分数下界35.523→37.842，区间宽度减少5.52%，仍第3；全部排名、25城可能冠军和Singapore连续推荐保持。其余249格不变，撤回新增证据可精确恢复V96。当前入口为 `task4_copenhagen_institution_revision.copenhagen_bounds()`。当轮补数与压力诊断仍为历史输入；V103已更新两项补数分析，压力诊断仍保留原版本。详见[本轮记录](../results/task4_v102_intake/README.md)。

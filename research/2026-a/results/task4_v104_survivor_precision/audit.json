@@ -1,0 +1,220 @@
+{
+  "method": "Independent long-double adaptive endpoint score enclosures; no polynomial solver/model imports",
+  "input_hash_verified": true,
+  "summary_sha256": "8acf9be1b206187e93089d5dfb53da358e67b42bd5a0275394772acd6c6d3a07",
+  "five_set_at_delta_001": {
+    "delta": 0.01,
+    "certified_minimum": 5,
+    "keep_cities": [
+      "Phoenix",
+      "Mexico City",
+      "Copenhagen",
+      "Singapore",
+      "Jakarta"
+    ],
+    "leaves": [
+      {
+        "lower": 0.05,
+        "upper": 0.2,
+        "gap_lower": 0.26406735388314745
+      }
+    ],
+    "lower_bound_reason": "Unique feasible four-set at zero width strictly fails at delta .01; every other <=4 set already fails at zero and widening cannot restore it."
+  },
+  "prior_unique_four_set_proof_verified": true,
+  "nested_residual_intervals_verified": true,
+  "nonselected_and_original_bounds_preserved": true,
+  "feasible_threshold": 0.00921630859375,
+  "infeasible_threshold": 0.00927734375,
+  "checked_distinct_widths": 23,
+  "checks": [
+    {
+      "delta": 0.0,
+      "status": "continuous_feasibility_verified",
+      "leaves": [
+        {
+          "lower": 0.05,
+          "upper": 0.2,
+          "gap_lower": 0.35311002735437524
+        }
+      ],
+      "minimum_gap_lower": 0.35311002735437524
+    },
+    {
+      "delta": 0.001,
+      "status": "continuous_feasibility_verified",
+      "leaves": [
+        {
+          "lower": 0.05,
+          "upper": 0.2,
+          "gap_lower": 0.315262268046115
+        }
+      ],
+      "minimum_gap_lower": 0.315262268046115
+    },
+    {
+      "delta": 0.005,
+      "status": "continuous_feasibility_verified",
+      "leaves": [
+        {
+          "lower": 0.05,
+          "upper": 0.2,
+          "gap_lower": 0.16332222355047166
+        }
+      ],
+      "minimum_gap_lower": 0.16332222355047166
+    },
+    {
+      "delta": 0.0078125,
+      "status": "continuous_feasibility_verified",
+      "leaves": [
+        {
+          "lower": 0.05,
+          "upper": 0.2,
+          "gap_lower": 0.05596407743056631
+        }
+      ],
+      "minimum_gap_lower": 0.05596407743056631
+    },
+    {
+      "delta": 0.0087890625,
+      "status": "continuous_feasibility_verified",
+      "leaves": [
+        {
+          "lower": 0.05,
+          "upper": 0.2,
+          "gap_lower": 0.018585625302513613
+        }
+      ],
+      "minimum_gap_lower": 0.018585625302513613
+    },
+    {
+      "delta": 0.009033203125,
+      "status": "continuous_feasibility_verified",
+      "leaves": [
+        {
+          "lower": 0.05,
+          "upper": 0.2,
+          "gap_lower": 0.009232857558308561
+        }
+      ],
+      "minimum_gap_lower": 0.009232857558308561
+    },
+    {
+      "delta": 0.0091552734375,
+      "status": "continuous_feasibility_verified",
+      "leaves": [
+        {
+          "lower": 0.05,
+          "upper": 0.2,
+          "gap_lower": 0.004555250761770854
+        }
+      ],
+      "minimum_gap_lower": 0.004555250761770854
+    },
+    {
+      "delta": 0.00921630859375,
+      "status": "continuous_feasibility_verified",
+      "leaves": [
+        {
+          "lower": 0.05,
+          "upper": 0.2,
+          "gap_lower": 0.0022161416549707795
+        }
+      ],
+      "minimum_gap_lower": 0.0022161416549707795
+    },
+    {
+      "delta": 0.00927734375,
+      "status": "strict_failure_verified",
+      "gap": 6.158464712243197e-05,
+      "outside_city": "Mexico City"
+    },
+    {
+      "delta": 0.009765625,
+      "status": "strict_failure_verified",
+      "gap": 0.009423035404064792,
+      "outside_city": "Mexico City"
+    },
+    {
+      "delta": 0.01,
+      "status": "strict_failure_verified",
+      "gap": 0.013919220982647414,
+      "outside_city": "Mexico City"
+    },
+    {
+      "delta": 0.01171875,
+      "status": "strict_failure_verified",
+      "gap": 0.046944587647648306,
+      "outside_city": "Mexico City"
+    },
+    {
+      "delta": 0.015625,
+      "status": "strict_failure_verified",
+      "gap": 0.12235198239554071,
+      "outside_city": "Mexico City"
+    },
+    {
+      "delta": 0.02,
+      "status": "strict_failure_verified",
+      "gap": 0.060034810346342976,
+      "outside_city": "New York"
+    },
+    {
+      "delta": 0.03125,
+      "status": "strict_failure_verified",
+      "gap": 0.279848594755371,
+      "outside_city": "New York"
+    },
+    {
+      "delta": 0.05,
+      "status": "strict_failure_verified",
+      "gap": 0.6553777361069685,
+      "outside_city": "New York"
+    },
+    {
+      "delta": 0.0625,
+      "status": "strict_failure_verified",
+      "gap": 0.912176153421633,
+      "outside_city": "New York"
+    },
+    {
+      "delta": 0.1,
+      "status": "strict_failure_verified",
+      "gap": 0.15139502007690728,
+      "outside_city": "Toronto"
+    },
+    {
+      "delta": 0.125,
+      "status": "strict_failure_verified",
+      "gap": 0.682418641939231,
+      "outside_city": "Toronto"
+    },
+    {
+      "delta": 0.2,
+      "status": "strict_failure_verified",
+      "gap": 2.403919046067327,
+      "outside_city": "Toronto"
+    },
+    {
+      "delta": 0.25,
+      "status": "strict_failure_verified",
+      "gap": 3.6594579010728947,
+      "outside_city": "Toronto"
+    },
+    {
+      "delta": 0.5,
+      "status": "strict_failure_verified",
+      "gap": 14.241161457663914,
+      "outside_city": "Toronto"
+    },
+    {
+      "delta": 1.0,
+      "status": "strict_failure_verified",
+      "gap": 32.5067813720625,
+      "outside_city": "Toronto"
+    }
+  ],
+  "logic": "For prescribed widths, putting K intervals against upper endpoints maximizes their lower scores; putting outsider intervals against lower endpoints minimizes their upper scores. The point-revelation impossibility of every other <=4 set persists under widening.",
+  "limitation": "Prescribed residual width min(delta, original width), not an at-most error allowance. Numerical padded continuous enclosure, not formal interval arithmetic. Only delta .01 has an independently certified matching five-set here; other failed widths establish at least five."
+}
