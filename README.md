@@ -4,7 +4,7 @@
 
 **The City Showdown: Modeling the Best City to Live In**
 
-本仓库保存全球城市评价研究的数据、模型、结果、图表和历史论文。当前包含25城真实数据研究、十指标证据区间模型、毕业结果条件分析及通学微观数据修订；尚未形成完整同年城市普查矩阵或最终参赛结论。
+本仓库保存全球城市评价研究的数据、模型、结果、图表和历史论文。当前主分析采用用户提供的16城CSV及其缺失项补充；原25城数据研究、十指标模型和通学修订保留为历史对照；尚未形成完整同年城市普查矩阵或最终参赛结论。
 
 **研究与论文分开维护。** GitHub `TypeThe0ry/HiMCM` 保存研究代码、原始数据、模型结果、图表与历史论文库；所有本队论文草稿、LaTeX、参考文献和论文模板移至相邻的 `HiMCM-Overleaf` 工作区。原始资料及本地忽略的大型生成包保留在研究仓库。
 
@@ -14,6 +14,7 @@
 
 | 想了解什么 | 入口 |
 | --- | --- |
+| 当前主模型：16城V118 | [只补6个缺失格：平均区间缩窄4.62%，可能冠军仍16城](research/2026-a/results/task4_user_v118_revision/README.md) |
 | 用户提供的16城数据 | [按附件原值计算：Oslo保守推荐，16城仍可能第一](research/2026-a/results/task4_user_city_indicators/README.md) |
 | V117跨城市补数 | [多伦多11→3，四项真实数据准入，可能冠军仍25城](research/2026-a/results/task4_v117_city_revision/README.md) |
 | V111真实旅时敏感性 | [五尺度重算：推荐稳定，中间排名敏感](research/2026-a/results/task4_v111_intake/README.md) |

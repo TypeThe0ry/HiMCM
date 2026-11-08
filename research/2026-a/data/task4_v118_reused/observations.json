@@ -1,0 +1,67 @@
+[
+  {
+    "city": "Singapore",
+    "indicator": "public_transport_density",
+    "kind": "inventory_lower",
+    "raw_count": 5205,
+    "population": 6036900.0,
+    "utility_anchor": 50,
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.632946026302829,
+      1
+    ],
+    "scope": "LTA2026 catalogue:5205 distinct nonempty bus-stop codes, bus-only subset; no50m clustering or independent operating-status census. Uses unchanged attachment2024population.",
+    "source_hashes": {
+      "data/task4_v5_core/sg_bus_stops.geojson": "ea16db2e53038b2b3352b57cb008e484c253091367b45bc3564b6cc3fe8d491b",
+      "data/task4_v5_core/sg_bus_page.html": "bae42751082317f1675cd975cd8ebf0b808dfadc2ed24395ed108f8c4aa673d1"
+    }
+  },
+  {
+    "city": "Singapore",
+    "indicator": "public_pool_density",
+    "kind": "inventory_lower",
+    "raw_count": 7,
+    "population": 6036900.0,
+    "utility_anchor": 1,
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.10390535706333773,
+      1
+    ],
+    "scope": "Seven official named2025ActiveSG public swimming venues; partial supply inventory. Uses unchanged attachment2024population.",
+    "source_hashes": {
+      "data/task4_v117_singapore/provider_pool_sources.json": "d190cd01be5c7af053c92119ec52f5aad1f23d667615d7fca8ef65c9dae9a14b",
+      "data/task4_v117_singapore/provider_pool_details.json": "ccadffd08332d7ccff38bf282daa46bc9c148edc8a5bff0471f6582f21a5ee60"
+    }
+  },
+  {
+    "city": "Warsaw",
+    "indicator": "upper_secondary_ptr",
+    "kind": "teacher_interval",
+    "students": 119740,
+    "teacher_fte_bounds": [
+      2487.0,
+      8148.0
+    ],
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.23754337928619187,
+      0.5051248140188461
+    ],
+    "scope": "Reuse existing admitted2024/25 Warsaw six youth school-route resource bounds, allownership, school-location not residents; teacherFTE not headcount. Adult general teacher allocation and unit-rounding uncertainty retained. Fills empty attachment school-ratio slot only.",
+    "source_hashes": {
+      "data/task4_v96_warsaw/summary.json": "8b7926f50b8511dd11438721d11d4dce891466d7c217a829eadfb5a9c16e8970",
+      "data/task4_v96_warsaw/education2025.xlsx": "b3eb84d092f8b132fde58089fe8efb6f1435e6f90a511296bd58e7487cdf5798"
+    }
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "seed": 20261108,
+  "draws_per_scenario": 10000,
+  "total_draws": 60000,
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "distribution": "Dirichlet(concentration * center)",
+  "random_generator": "numpy.default_rng(SeedSequence([20261108, concentration]))",
+  "interpretation": "Conditional weight-scenario frequencies, not probabilities of actual city quality; missing intervals unchanged.",
+  "decision_rank_ties": "average ranks; recommendation ties split fractionally",
+  "scenarios": [
+    {
+      "weight_reference": "fixed",
+      "concentration": 20,
+      "top_minimax_recommendation": "Oslo",
+      "top_minimax_recommendation_frequency": 0.4346,
+      "possible_champion_count_min": 2,
+      "possible_champion_count_mean": 15.1025,
+      "possible_champion_count_max": 16
+    },
+    {
+      "weight_reference": "fixed",
+      "concentration": 100,
+      "top_minimax_recommendation": "Oslo",
+      "top_minimax_recommendation_frequency": 0.6931,
+      "possible_champion_count_min": 11,
+      "possible_champion_count_mean": 15.9621,
+      "possible_champion_count_max": 16
+    },
+    {
+      "weight_reference": "fixed",
+      "concentration": 500,
+      "top_minimax_recommendation": "Oslo",
+      "top_minimax_recommendation_frequency": 0.9541,
+      "possible_champion_count_min": 16,
+      "possible_champion_count_mean": 16.0,
+      "possible_champion_count_max": 16
+    },
+    {
+      "weight_reference": "equal",
+      "concentration": 20,
+      "top_minimax_recommendation": "Oslo",
+      "top_minimax_recommendation_frequency": 0.5376,
+      "possible_champion_count_min": 5,
+      "possible_champion_count_mean": 15.5402,
+      "possible_champion_count_max": 16
+    },
+    {
+      "weight_reference": "equal",
+      "concentration": 100,
+      "top_minimax_recommendation": "Oslo",
+      "top_minimax_recommendation_frequency": 0.736,
+      "possible_champion_count_min": 13,
+      "possible_champion_count_mean": 15.9889,
+      "possible_champion_count_max": 16
+    },
+    {
+      "weight_reference": "equal",
+      "concentration": 500,
+      "top_minimax_recommendation": "Oslo",
+      "top_minimax_recommendation_frequency": 0.9583,
+      "possible_champion_count_min": 16,
+      "possible_champion_count_mean": 16.0,
+      "possible_champion_count_max": 16
+    }
+  ],
+  "evidence_version": "V118"
+}

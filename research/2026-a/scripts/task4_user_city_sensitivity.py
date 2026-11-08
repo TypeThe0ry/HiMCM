@@ -8,11 +8,16 @@ from task4_v5_model import weights
 from task4_ahp_mc_baseline import score_many, interval_metrics, rank_metrics
 
 
-def main():
+def main(revision=False):
     seed, draws = 20261108, 10000
     original = hashlib.sha256(SOURCE.read_bytes()).hexdigest()
     source = pd.read_csv(SOURCE)
     lo,hi,_ = build(source)
+    out=OUT
+    if revision:
+        from task4_user_v118_revision import revised_bounds
+        source,lo,hi=revised_bounds()
+        out=OUT.parent/'task4_user_v118_revision'
     old_lo,old_hi = lo.copy(),hi.copy()
     rows, scenarios = [], []
     for label,center in [('fixed',weights(.1)),('equal',np.ones(10)/10)]:
@@ -39,17 +44,20 @@ def main():
                 possible_champion_count_max=int(possible.sum(axis=1).max())))
     assert np.array_equal(lo,old_lo) and np.array_equal(hi,old_hi)
     assert original == hashlib.sha256(SOURCE.read_bytes()).hexdigest()
-    OUT.mkdir(parents=True,exist_ok=True)
-    pd.DataFrame(rows).to_csv(OUT/'mc_city_summary.csv',index=False)
+    out.mkdir(parents=True,exist_ok=True)
+    pd.DataFrame(rows).to_csv(out/'mc_city_summary.csv',index=False)
     summary = dict(seed=seed,draws_per_scenario=draws,total_draws=draws*6,
         input_sha256=original,distribution='Dirichlet(concentration * center)',
         random_generator='numpy.default_rng(SeedSequence([20261108, concentration]))',
         interpretation='Conditional weight-scenario frequencies, not probabilities of actual city quality; missing intervals unchanged.',
         decision_rank_ties='average ranks; recommendation ties split fractionally',
         scenarios=scenarios)
-    (OUT/'mc_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
+    summary['evidence_version']='V118' if revision else 'attachment_baseline'
+    (out/'mc_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     print(json.dumps(summary,indent=2))
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser=argparse.ArgumentParser();parser.add_argument('--revision',action='store_true')
+    main(parser.parse_args().revision)

@@ -1,0 +1,35 @@
+[
+  {
+    "city": "Amsterdam",
+    "indicator": "upper_secondary_ptr",
+    "value": 14.6,
+    "year": 2025,
+    "reference_date": "2025-10-01",
+    "students": 48116,
+    "teacher_fte": 3288,
+    "denominator": "teaching personnel FTE (OP), not headcount",
+    "education_stage": "whole voortgezet onderwijs (secondary), not upper-secondary isolated",
+    "geography": "AMR36 Amsterdam, institution head-office assignment; separate from Groot Amsterdam excluding Amsterdam",
+    "status": "candidate_secondary_fte_scenario_only_not_admitted",
+    "source_url": "https://duo.nl/open_onderwijsdata/voortgezet-onderwijs/personeel/leerling-leraarratio-per-instelling.jsp",
+    "download_url": "https://duo.nl/open_onderwijsdata/images/leerling-leraarratio-vo-per-amr.xlsx",
+    "file": "amsterdam_duo_ratio2025.xlsx",
+    "sha256": "c1946ec256842eff16725a228cef54b069172c326e7d8add200a9a976d951f40",
+    "notes": "Use published ratio14.6; displayed counts rounded. Institution personnel cannot be split by branch/location. No national substitution. No original user values changed."
+  },
+  {
+    "city": "London",
+    "indicator": "upper_secondary_ptr",
+    "value": 15.951382057499133,
+    "year": "2025/26",
+    "students_fte": 575645.5,
+    "teachers_fte": 36087.5,
+    "schools": 514,
+    "education_stage": "state-funded secondary, not isolated upper-secondary",
+    "geography": "Inner London + Outer London",
+    "status": "candidate_secondary_fte_scenario_only_not_admitted",
+    "source_url": "https://explore-education-statistics.service.gov.uk/data-catalogue/data-set/3682ab8e-9e55-4a99-8af2-be965ddfe43b",
+    "calculation": "(186390+389255.5)/(12321.1+23766.4); use two disjoint State-funded secondary rows only, do not add nested academy subtypes",
+    "denominator": "teachers FTE qualified and unqualified; not headcount"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "city": "Zurich",
+    "indicator": "public_pool_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.6135318839372971,
+      1
+    ],
+    "raw_count": 7,
+    "population": 440935,
+    "population_year": 2025,
+    "population_source": "Existing attachment; retained without external verification or revision",
+    "sourceyear": 2026,
+    "lower_bound_only": true,
+    "density_lower": 1.5875355778062525,
+    "utility_anchor": 1,
+    "venues": [
+      "Hallenbad Altstetten",
+      "Hallenbad Bläsi",
+      "Hallenbad Bungertwies",
+      "Hallenbad City",
+      "Hallenbad Leimbach",
+      "Hallenbad Oerlikon",
+      "Wärmebad Käferberg"
+    ],
+    "source_locator": "https://www.stadt-zuerich.ch/de/stadtleben/sport-und-erholung/sport-und-badeanlagen/hallenbaeder.html",
+    "source_file": "zurich_provider_capture.json",
+    "scope": "Current official directory of seven public indoor pool venues, accessed2026-11-08;2026facilitysnapshot divided by unchanged2025attachmentpopulation. Excludes school pools, river/lake baths and outdoor venues; partial inventory.",
+    "limitations": "Facility supply only, not teenage access, continuous operation or a complete city count. Upper utility remains1."
+  },
+  {
+    "city": "Milan",
+    "indicator": "public_pool_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.5485500692302455,
+      1
+    ],
+    "raw_count": 17,
+    "population": 1399079,
+    "population_year": 2025,
+    "population_source": "Existing attachment; retained without external verification or revision",
+    "sourceyear": 2025,
+    "lower_bound_only": true,
+    "density_lower": 1.2150850666760062,
+    "utility_anchor": 1,
+    "venues": [
+      "ARIOLI VENEGONI",
+      "CAMBINI FOSSATI",
+      "CARDELLINO",
+      "CARELLA CANTU'",
+      "DE MARCHI",
+      "ISEO",
+      "MINCIO",
+      "MURAT",
+      "MUGGIANO",
+      "PARRI MENGONI",
+      "QUARTO CAGNINO",
+      "SANT’ABBONDIO",
+      "SUZZANI",
+      "BACONE",
+      "COZZI",
+      "PROCIDA",
+      "SOLARI"
+    ],
+    "source_locator": "https://www.milanosport.it/workspace/uploads/nuovi-tariffari-1-giugno-2025-agg-9-10-2025.pdf",
+    "source_file": "milan_provider_capture.json",
+    "scope": "Official public indoor swimming tariff effective2025-06-01 names13 tariff-A venues and4 tariff-B venues. Count physical facility names once; current operator directory corroborates venue identities. Partial inventory; other operators/outdoor venues unknown.",
+    "limitations": "Facility supply only, not teenage access, continuous operation or a complete city count. Upper utility remains1."
+  }
+]
