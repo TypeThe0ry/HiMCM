@@ -1,0 +1,17 @@
+weight_reference,source_city,indicator,excluded_city,direction,utility_threshold,raw_PTR_or_density_threshold,strict_rule,travel_scope
+fixed,Vienna,travel,Vienna,upper_below,0.2900493080528075,,Observed upper utility strictly below threshold,A mean alone does not supply an upper utility bound; matched bins or distribution needed
+fixed,Zurich,upper_secondary_ptr,Vienna,lower_above,0.7390737673259555,5.29567367039901,Observed lower utility strictly above threshold,
+fixed,Zurich,upper_secondary_ptr,Berlin,lower_above,0.8020943094655597,3.7010427863458983,Observed lower utility strictly above threshold,
+fixed,Zurich,upper_secondary_ptr,Amsterdam,lower_above,0.670884797600865,7.358533169392331,Observed lower utility strictly above threshold,
+fixed,Zurich,upper_secondary_ptr,Prague,lower_above,0.9862835810639541,0.2086076337383005,Observed lower utility strictly above threshold,
+fixed,Zurich,upper_secondary_ptr,Tokyo,lower_above,0.7493392759281234,5.017634844271527,Observed lower utility strictly above threshold,
+fixed,Amsterdam,upper_secondary_ptr,Amsterdam,upper_below,0.26478724707175827,41.649253942109034,Observed upper utility strictly below threshold,
+fixed,Dublin,upper_secondary_ptr,Amsterdam,lower_above,0.9734547723848075,0.4090363779843769,Observed lower utility strictly above threshold,
+fixed,Warsaw,travel,Warsaw,upper_below,0.03745369574795321,,Observed upper utility strictly below threshold,A mean alone does not supply an upper utility bound; matched bins or distribution needed
+fixed,Tokyo,travel,Tokyo,upper_below,0.2547842972194787,,Observed upper utility strictly below threshold,A mean alone does not supply an upper utility bound; matched bins or distribution needed
+equal,Vienna,public_transport_density,Vienna,upper_below,0.006719371902149884,0.338241364629128,Observed upper utility strictly below threshold,
+equal,Vienna,travel,Vienna,upper_below,0.006719371902149884,,Observed upper utility strictly below threshold,A mean alone does not supply an upper utility bound; matched bins or distribution needed
+equal,Zurich,upper_secondary_ptr,Amsterdam,lower_above,0.7599480370295724,4.73819165140668,Observed lower utility strictly above threshold,
+equal,Berlin,public_transport_density,Berlin,upper_below,0.04197658549150285,2.1907912090561195,Observed upper utility strictly below threshold,
+equal,Amsterdam,upper_secondary_ptr,Amsterdam,upper_below,0.07887007217963093,175.18620860187212,Observed upper utility strictly below threshold,
+equal,Amsterdam,public_transport_density,Amsterdam,upper_below,0.07887007217963093,4.281158922186898,Observed upper utility strictly below threshold,

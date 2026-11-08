@@ -1,0 +1,47 @@
+{
+  "version": "V126 acquisition diagnosis on frozen V124 user16",
+  "fully_missing_cells": 19,
+  "protected_nonfullymissing_cells": 141,
+  "point_cells": 112,
+  "partial_interval_cells": 29,
+  "baseline": [
+    {
+      "weight_reference": "fixed",
+      "minimax_regret": 17.36804635503932,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "mean_score_interval_width": 16.150020917288053
+    },
+    {
+      "weight_reference": "equal",
+      "minimax_regret": 16.63077901625193,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "mean_score_interval_width": 19.026621474190783
+    }
+  ],
+  "independent_score_regret_champion_evaluations": 2741,
+  "exact_resolution_VOI_cases": 38,
+  "no_MC_or_random_missing_value_completion": true,
+  "interpretation": "Conditional deterministic information limits, not observed improvement, a source availability probability or a prediction",
+  "guarantee_scope": "Guarantees condition on complete exact utility identification of one cell. A partial inventory, teacher interval or Jensen mean does not automatically satisfy that condition.",
+  "endpoint_scope": "Closed utility endpoints can be limiting raw values; ceilings need not be physically attainable",
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_v124_admissions.json": "f7431b93535eda48f1baef4b1cab99037d69b71c696f68d8608e14a2a2c67d56",
+    "design/task4_user_current_model.json": "54401845911bcfb50a4dd71592fe23ac2d9ebe268cedfa09a6de0d7599e886d2",
+    "scripts/task4_user_v124_revision.py": "77c17f5a453665cb9b91683caa7145ab6c3e217222f6b8d2fb9b0b99af684a3a",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/task4_v124_priority.py": "3f822bcbd763ae56333773829cfc4294da3b82e55c0edf249790817216125be8",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "results/task4_user_v124_revision/current_ranks.csv": "98026af3c8b38480f140d4c39f8ef5fe9d7a9a35bbb20cea6509e54c6008633a",
+    "results/task4_user_v124_revision/all_ranks.csv": "45467586f484e70af9e6aec80434b9c786eeaf90906f3799dc59b60bf78d3195",
+    "results/task4_user_v124_revision/utility_bounds.csv": "b19f372dd5e7b0c0a21aa353cac66e40b99980ddd783ddf3db7468936fe70bf3",
+    "results/task4_user_v124_revision/summary.json": "808af434f482d57f6ddf962c35de9ed36a0a05b34b88da8d2ee110ff984fdab6",
+    "results/task4_user_v124_revision/mc_city_summary.csv": "3e54ae5fd2360d0922d5b2c325af4f6cd3b284d2ac26b9876442bed78777ec13"
+  }
+}
