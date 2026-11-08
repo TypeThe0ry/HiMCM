@@ -1,0 +1,33 @@
+{
+  "main_admitted": false,
+  "new_admissible_observations": 0,
+  "checked": "2026-11-08",
+  "official_landing": "https://www.azed.gov/accountability-research/data",
+  "links_verified_by_official_web_reader": {
+    "cohort2025_four_year": "https://www.azed.gov/sites/default/files/2025/11/4Y-GradRate-Cohort2025.xlsx",
+    "cohort2024_four_year": "https://www.azed.gov/sites/default/files/2025/04/4Y-GradRate-Cohort2024.xlsx"
+  },
+  "web_reader_file_result": "Both file requests reached unsupported Excel content-type; no workbook values or bytes obtained",
+  "direct_downloads": "See retrieval.json; both HTTP403",
+  "browser_check": {
+    "browser": "Chrome",
+    "url": "https://www.azed.gov/accountability-research/data",
+    "observed_title": "Attention Required! | Cloudflare",
+    "observed_heading": "Sorry, you have been blocked",
+    "outcome": "No download; no challenge solved or access control bypass attempted"
+  },
+  "current_api_check": {
+    "url": "https://azreportcards.azed.gov/api/DataApi/Graduation%20Rate?reportSection=Graduation+Rate&fiscalYear=2026&educationOrganizationId=4286",
+    "http_status": 200,
+    "parsed_json": [],
+    "evidence_type": "observed terminal response; not archived original bytes",
+    "interpretation": "No records returned by this request; does not mean no cohort2025 data exist or zero graduates"
+  },
+  "prior_discrepancy": {
+    "school_cohort_sum": 6287,
+    "district_cohort": 6285,
+    "cohort": 2024,
+    "resolved": false,
+    "note": "No new same-cohort integer records or aggregation definition acquired. Net2 is not a bound on duplicates."
+  }
+}

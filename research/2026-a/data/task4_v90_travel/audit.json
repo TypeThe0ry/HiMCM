@@ -1,0 +1,26 @@
+{
+  "main_admitted": false,
+  "new_admissible_travel_observations": 0,
+  "survey": "Bogota EODH2023",
+  "access_date": "2026-11-08",
+  "official_landing": "https://observatorio.movilidadbogota.gov.co/publicaciones/resultados/encuesta-de-movilidad-2023",
+  "official_questionnaire_zip": "https://observatorio.movilidadbogota.gov.co/sites/default/files/2025-09/02_Formularios%20EODH.zip",
+  "official_download_result": "ConnectionError: RemoteDisconnected, remote end closed connection without response; process terminal",
+  "original_acquired": false,
+  "original_sha256": null,
+  "mirror": {
+    "url": "https://es.scribd.com/document/836488287/b-Modulo-Hogar-A-B-C-X",
+    "evidence_kind": "Manual reading of publicly visible questionnaire text on third-party mirror; not official original download",
+    "printed_heading": "Household survey Bogota and20 neighboring municipalities,2023; prepared by Consorcio Encuesta Movilidad2022 for Secretaria Distrital de Movilidad",
+    "module": "B personas",
+    "q8_quote": "¿Cuál es el máximo nivel educativo alcanzado por?",
+    "q8_semantics": "Highest educational level attained; includes incomplete/complete media(10th and11th). This is not an explicit current-grade question.",
+    "q9_semantics": "Activities during previous week include being a school student. This distinguishes activity, not current upper-secondary grade.",
+    "official_byte_identity_verified": false,
+    "mirror_original_sha256": null,
+    "not_claimed": "No claim that every2023 module lacks current-grade information; officialversion anddictionary remain unverified."
+  },
+  "interpretation": "The visible module suggests attainment-plus-school-activity ambiguity. Do not transfer2019orDANEcodes or automatically promote it to current high-school identification.",
+  "next_required": "Acquire official questionnaire version and raw dictionary; inspect any distinct current-stage variable before extracting age14-18 home-to-school journeys.",
+  "model_consequence": "Bogota travel remains [0,1]; no ranking or model change."
+}
