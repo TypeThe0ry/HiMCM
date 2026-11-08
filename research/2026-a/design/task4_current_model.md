@@ -1,5 +1,7 @@
 # 当前模型：V79 Delhi同源教学资源分配修订（2026-11-08）
 
+V80在当前V79上[重新验证补数能力](../results/task4_v80_acquisition_limits/README.md)：全城教育＋通学精确揭示后，连续偏好不可排除城市数下界21→22，新增Mumbai，变化来自V78实测修订。实际冠军集合仍25城；[Phoenix128组合阈值](../results/task4_v80_precision_frontier/README.md)重算不变。注册表已指向本轮证书，压力分析仍为V72历史输入。
+
 V79完成[Delhi校级核验与分配修订](../results/task4_v79_delhi_allocation/README.md)：N=603437，D=26766，M=3420，零高中学生学校专任Z=105；按与Mumbai相同的名义资源约定T∈[D−Z,D+M]，教育效用[0.398579,0.428686]。Delhi由13变14、Santiago由14变13，其他排名及25城可能冠军保持。仅Delhi教育格变动，当前入口`task4_delhi_allocation_revision.delhi_bounds()`。这统一同源分配处理，不代表国际FTE统计统一；旧压力与补数证书仍对应历史输入。以下为历史记录。
 
 V78使用[同源校级学生与教师分类](../results/task4_v78_mumbai_school/README.md)：N=280140，T∈[5848,6854]，教育效用[0.238460,0.268468]。仅Mumbai教育格改变，总分区间宽度减少17.6%；全部排名保持、25城仍可能第一。当前入口为`task4_mumbai_school_revision.mumbai_bounds()`，镜像字节一致性及统计覆盖条件仍保留。此前V72压力、V73补数下界、V76补数阈值为历史输入分析，本轮不沿用其证书。以下保留历史修订记录。

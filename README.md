@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| V80当前补数能力复核 | [教育＋通学补齐后仍至少22城可能第一；Phoenix阈值已重证](research/2026-a/results/task4_v80_acquisition_limits/README.md) |
 | V79同源教师分配修订 | [Delhi校级核验，统一兼教分配规则后由第13变第14](research/2026-a/results/task4_v79_delhi_allocation/README.md) |
 | V78校级教育修订 | [Mumbai真实人数形成资源分配区间，总分区间缩窄17.6%](research/2026-a/results/task4_v78_mumbai_school/README.md) |
 | V77高中人数对账 | [Mumbai逐年级统计核验与排名复算](research/2026-a/results/task4_v77_sources/README.md) |

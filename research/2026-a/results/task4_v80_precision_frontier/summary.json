@@ -1,0 +1,170 @@
+{
+  "analysis_kind": "adverse_acquisition_precision_frontier",
+  "model_version": "V79",
+  "city": "Phoenix",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "input_bounds_sha256": "90dac89c060aea44353856a6432eff3da3b564accec843cb0163748ca3e67671",
+  "new_observations": 0,
+  "admitted_cells_changed": 0,
+  "scenario_only": true,
+  "main_admitted": false,
+  "unknown_criteria": [
+    "pm25",
+    "upper_secondary_ptr",
+    "research_he_density",
+    "public_transport_density",
+    "travel",
+    "fixed_broadband_mbps",
+    "public_pool_density"
+  ],
+  "evaluated_bundles": 128,
+  "same_input_coarse_grid": [
+    {
+      "residual_fraction": 0.0,
+      "minimum_criteria": 5,
+      "minimal_bundle_count": 11
+    },
+    {
+      "residual_fraction": 0.01,
+      "minimum_criteria": 5,
+      "minimal_bundle_count": 11
+    },
+    {
+      "residual_fraction": 0.025,
+      "minimum_criteria": 5,
+      "minimal_bundle_count": 11
+    },
+    {
+      "residual_fraction": 0.05,
+      "minimum_criteria": 5,
+      "minimal_bundle_count": 11
+    },
+    {
+      "residual_fraction": 0.1,
+      "minimum_criteria": 6,
+      "minimal_bundle_count": 7
+    },
+    {
+      "residual_fraction": 0.2,
+      "minimum_criteria": 6,
+      "minimal_bundle_count": 7
+    },
+    {
+      "residual_fraction": 0.5,
+      "minimum_criteria": null,
+      "minimal_bundle_count": 0
+    },
+    {
+      "residual_fraction": 1.0,
+      "minimum_criteria": null,
+      "minimal_bundle_count": 0
+    }
+  ],
+  "bisection_iterations": 40,
+  "polynomial_tolerance": 1e-12,
+  "formal_interval_arithmetic": false,
+  "interpretation": "Hypothetical intervals anchored at existing lower endpoints. Precision alone does not ensure exclusion; favorable outcomes retain champion possibility. Counts are model criteria, not source files or acquisition costs.",
+  "frontier": [
+    {
+      "size": 0,
+      "exclusion_possible": false,
+      "largest_certified_rho": null,
+      "best_bundle": null,
+      "indistinguishable_best_bundles": [],
+      "possible_rho_for_best_bundle": null,
+      "all_bundles_possible_from_rho": 0.0,
+      "number_excludable_exact_bundles": 0
+    },
+    {
+      "size": 1,
+      "exclusion_possible": false,
+      "largest_certified_rho": null,
+      "best_bundle": null,
+      "indistinguishable_best_bundles": [],
+      "possible_rho_for_best_bundle": null,
+      "all_bundles_possible_from_rho": 0.0,
+      "number_excludable_exact_bundles": 0
+    },
+    {
+      "size": 2,
+      "exclusion_possible": false,
+      "largest_certified_rho": null,
+      "best_bundle": null,
+      "indistinguishable_best_bundles": [],
+      "possible_rho_for_best_bundle": null,
+      "all_bundles_possible_from_rho": 0.0,
+      "number_excludable_exact_bundles": 0
+    },
+    {
+      "size": 3,
+      "exclusion_possible": false,
+      "largest_certified_rho": null,
+      "best_bundle": null,
+      "indistinguishable_best_bundles": [],
+      "possible_rho_for_best_bundle": null,
+      "all_bundles_possible_from_rho": 0.0,
+      "number_excludable_exact_bundles": 0
+    },
+    {
+      "size": 4,
+      "exclusion_possible": false,
+      "largest_certified_rho": null,
+      "best_bundle": null,
+      "indistinguishable_best_bundles": [],
+      "possible_rho_for_best_bundle": null,
+      "all_bundles_possible_from_rho": 0.0,
+      "number_excludable_exact_bundles": 0
+    },
+    {
+      "size": 5,
+      "exclusion_possible": true,
+      "largest_certified_rho": 0.062202054589761246,
+      "best_bundle": "pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel",
+      "indistinguishable_best_bundles": [
+        "pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel",
+        "pm25|upper_secondary_ptr|research_he_density|public_transport_density|fixed_broadband_mbps",
+        "pm25|upper_secondary_ptr|research_he_density|travel|fixed_broadband_mbps",
+        "pm25|upper_secondary_ptr|research_he_density|travel|public_pool_density",
+        "pm25|upper_secondary_ptr|research_he_density|fixed_broadband_mbps|public_pool_density",
+        "pm25|upper_secondary_ptr|public_transport_density|travel|fixed_broadband_mbps",
+        "pm25|upper_secondary_ptr|travel|fixed_broadband_mbps|public_pool_density",
+        "pm25|research_he_density|public_transport_density|travel|fixed_broadband_mbps",
+        "pm25|research_he_density|travel|fixed_broadband_mbps|public_pool_density",
+        "upper_secondary_ptr|research_he_density|public_transport_density|travel|fixed_broadband_mbps",
+        "upper_secondary_ptr|research_he_density|travel|fixed_broadband_mbps|public_pool_density"
+      ],
+      "possible_rho_for_best_bundle": 0.06220205459067074,
+      "all_bundles_possible_from_rho": 0.06220205459067074,
+      "number_excludable_exact_bundles": 11
+    },
+    {
+      "size": 6,
+      "exclusion_possible": true,
+      "largest_certified_rho": 0.2590797466555159,
+      "best_bundle": "pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel|fixed_broadband_mbps",
+      "indistinguishable_best_bundles": [
+        "pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel|fixed_broadband_mbps",
+        "pm25|upper_secondary_ptr|research_he_density|travel|fixed_broadband_mbps|public_pool_density"
+      ],
+      "possible_rho_for_best_bundle": 0.2590797466564254,
+      "all_bundles_possible_from_rho": 0.2590797466564254,
+      "number_excludable_exact_bundles": 7
+    },
+    {
+      "size": 7,
+      "exclusion_possible": true,
+      "largest_certified_rho": 0.3854010089435178,
+      "best_bundle": "pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel|fixed_broadband_mbps|public_pool_density",
+      "indistinguishable_best_bundles": [
+        "pm25|upper_secondary_ptr|research_he_density|public_transport_density|travel|fixed_broadband_mbps|public_pool_density"
+      ],
+      "possible_rho_for_best_bundle": 0.3854010089444273,
+      "all_bundles_possible_from_rho": 0.3854010089444273,
+      "number_excludable_exact_bundles": 1
+    }
+  ]
+}
