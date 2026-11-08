@@ -1,0 +1,286 @@
+{
+  "model_version": "V102",
+  "main_admitted": false,
+  "actual_changed_cells": 0,
+  "input_bounds_sha256": "681260d6449888801aa9168356813aef684003f3e05c61db2dffb5b6b7070128",
+  "source_summary_sha256": "bc8587869a00a0dc5e9e9574df3db96a1babe9f7594ee6041adff238f91f2c40",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "published_percent": [
+    30,
+    36,
+    15,
+    7,
+    3,
+    8
+  ],
+  "published_total": 99,
+  "bin_utility_lower": [
+    0.6065306597126334,
+    0.36787944117144233,
+    0.22313016014842982,
+    0.1353352832366127,
+    0.0,
+    0.0
+  ],
+  "bin_utility_upper": [
+    1.0,
+    0.6065306597126334,
+    0.36787944117144233,
+    0.22313016014842982,
+    0.1353352832366127,
+    1.0
+  ],
+  "estimates": [
+    {
+      "utility_lower": 0.3542590672968415,
+      "utility_upper": 0.686291846667248,
+      "lower_probability_witness": [
+        0.295,
+        0.355,
+        0.15500000000000014,
+        0.075,
+        0.035,
+        0.085
+      ],
+      "upper_probability_witness": [
+        0.305,
+        0.365,
+        0.155,
+        0.06500000000000006,
+        0.025,
+        0.085
+      ],
+      "percentage_bounds": [
+        [
+          29.5,
+          30.5
+        ],
+        [
+          35.5,
+          36.5
+        ],
+        [
+          14.499999999999998,
+          15.5
+        ],
+        [
+          6.5,
+          7.5
+        ],
+        [
+          2.5,
+          3.5000000000000004
+        ],
+        [
+          7.5,
+          8.5
+        ]
+      ],
+      "rounding_points": 0.5
+    },
+    {
+      "utility_lower": 0.34894804240786204,
+      "utility_upper": 0.6956927755430289,
+      "lower_probability_witness": [
+        0.29,
+        0.35,
+        0.15000000000000013,
+        0.08,
+        0.04,
+        0.09
+      ],
+      "upper_probability_witness": [
+        0.31,
+        0.37,
+        0.15000000000000002,
+        0.06,
+        0.02,
+        0.09
+      ],
+      "percentage_bounds": [
+        [
+          28.999999999999996,
+          31.0
+        ],
+        [
+          35.0,
+          37.0
+        ],
+        [
+          14.000000000000002,
+          16.0
+        ],
+        [
+          6.0,
+          8.0
+        ],
+        [
+          2.0,
+          4.0
+        ],
+        [
+          7.000000000000001,
+          9.0
+        ]
+      ],
+      "rounding_points": 1.0
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "current_city",
+      "london_utility": [
+        0.0,
+        1.0
+      ],
+      "london": {
+        "decision_rank": 18,
+        "score_lower": 30.74489906649376,
+        "score_upper": 71.6796832520236,
+        "max_regret": 46.78456163697793
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "historic_rounding_0.5",
+      "london_utility": [
+        0.3542590672968415,
+        0.686291846667248
+      ],
+      "london": {
+        "decision_rank": 13,
+        "score_lower": 33.01327102546533,
+        "score_upper": 69.70159490359045,
+        "max_regret": 44.516189678006356
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "historic_rounding_1.0",
+      "london_utility": [
+        0.34894804240786204,
+        0.6956927755430289
+      ],
+      "london": {
+        "decision_rank": 13,
+        "score_lower": 32.966344782332634,
+        "score_upper": 69.78549987856643,
+        "max_regret": 44.56311592113905
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    }
+  ],
+  "scope": "2006 London school-location Year10 respondent subgroup, not current resident age14-18 population. Rounding envelopes are conditional; no confidence interval, counts inversion, renormalization or midpoint imputation. Main model unchanged."
+}

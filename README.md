@@ -14,6 +14,7 @@
 
 | 想了解什么 | 入口 |
 | --- | --- |
+| V106真实旅时原件 | [London Year10分箱与缺失界；Phoenix财报核验](research/2026-a/results/task4_v106_intake/README.md) |
 | V105学校覆盖核查 | [Phoenix缺教师学校104→29，完整比率仍未识别](research/2026-a/results/task4_v105_intake/README.md) |
 | V104测量精度 | [四城理想结论的精度边界；宽0.01时最少5城](research/2026-a/results/task4_v104_intake/README.md) |
 | V103算法与证据 | [共享补数最优集合4城的证明；实际仍25城](research/2026-a/results/task4_v103_intake/README.md) |

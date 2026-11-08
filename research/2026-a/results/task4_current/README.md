@@ -1,6 +1,6 @@
 # 当前模型统一复算入口（V102）
 
-当前模型V102，最新审查V105。Copenhagen四所已核验高校形成部分下界，上界未知；分数区间宽度缩小5.52%，仍第3。默认排名Singapore第1、Warsaw第8、Phoenix第16；固定及连续偏好下可能冠军均25城。
+当前模型V102，最新审查V106。Copenhagen四所已核验高校形成部分下界，上界未知；分数区间宽度缩小5.52%，仍第3。默认排名Singapore第1、Warsaw第8、Phoenix第16；固定及连续偏好下可能冠军均25城。
 
 复算：`python3 scripts/task4_current_model.py`。入口核验250格与5城通学来源。
 
@@ -9,3 +9,5 @@
 [V104精度诊断](../task4_v104_survivor_precision/README.md)：规定残余效用宽度0.01时，理想补数最优候选数为5，实际仍25。
 
 [V105真实学校核查](../task4_v105_intake/README.md)：Phoenix新版报告覆盖改善，关键人数和私校覆盖仍未知，实际排名保持。
+
+[V106真实旅时与分箱界](../task4_v106_intake/README.md)：London历史Year10对照保留舍入和缺失，未替代当前城市区间。
