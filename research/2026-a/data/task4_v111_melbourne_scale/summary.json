@@ -1,0 +1,398 @@
+{
+  "passed": true,
+  "main_admitted": false,
+  "scenarios": [
+    {
+      "city": "Melbourne",
+      "tau_minutes": 15,
+      "utility_lower": 0.14327664440085025,
+      "utility_upper": 0.7026644189829331,
+      "point_lower": 0.2091954571508226,
+      "point_upper": 0.6112205110696353
+    },
+    {
+      "city": "Melbourne",
+      "tau_minutes": 20,
+      "utility_lower": 0.18277706653098907,
+      "utility_upper": 0.7399478271744103,
+      "point_lower": 0.2586428355545867,
+      "point_upper": 0.6606678894733993
+    },
+    {
+      "city": "Melbourne",
+      "tau_minutes": 30,
+      "utility_lower": 0.23979992183224927,
+      "utility_upper": 0.7927869308191794,
+      "point_lower": 0.32883006868704595,
+      "point_upper": 0.7308551226058585
+    },
+    {
+      "city": "Melbourne",
+      "tau_minutes": 45,
+      "utility_lower": 0.2927807357092249,
+      "utility_upper": 0.8417637135945225,
+      "point_lower": 0.3934623472199123,
+      "point_upper": 0.7954874011387251
+    },
+    {
+      "city": "Melbourne",
+      "tau_minutes": 60,
+      "utility_lower": 0.3256271332043083,
+      "utility_upper": 0.8722338263415295,
+      "point_lower": 0.43335854510549243,
+      "point_upper": 0.8353835990243049
+    },
+    {
+      "city": "New York",
+      "tau_minutes": 15,
+      "utility_lower": 0.10157125835268814,
+      "utility_upper": 0.41944114735770044,
+      "point_lower": 0.1223116467083675,
+      "point_upper": 0.3650002774466057
+    },
+    {
+      "city": "New York",
+      "tau_minutes": 20,
+      "utility_lower": 0.1465622807636537,
+      "utility_upper": 0.466230545019712,
+      "point_lower": 0.17166028949887965,
+      "point_upper": 0.4148008822583972
+    },
+    {
+      "city": "New York",
+      "tau_minutes": 30,
+      "utility_lower": 0.22395133875708226,
+      "utility_upper": 0.5466442853849841,
+      "point_lower": 0.25597640891030243,
+      "point_upper": 0.49956631522193923
+    },
+    {
+      "city": "New York",
+      "tau_minutes": 45,
+      "utility_lower": 0.3126452658506307,
+      "utility_upper": 0.6336102151655225,
+      "point_lower": 0.3495902656705217,
+      "point_upper": 0.5933606704661144
+    },
+    {
+      "city": "New York",
+      "tau_minutes": 60,
+      "utility_lower": 0.37565921505590066,
+      "utility_upper": 0.6942361465306011,
+      "point_lower": 0.41553582364805247,
+      "point_upper": 0.6591938910053099
+    }
+  ],
+  "melbourne_scenarios": [
+    {
+      "tau_minutes": 15,
+      "utility_lower": 0.2091954571508226,
+      "utility_upper": 0.6112205110696353,
+      "sampling_lower": 0.14327664440085025,
+      "sampling_upper": 0.7026644189829331,
+      "endpoint_se": [
+        0.029139802411784894,
+        0.04042332222307918
+      ],
+      "endpoint_replicates": [
+        [
+          0.2109588498398153,
+          0.19793864883991305,
+          0.2029594913744883,
+          0.20427380823973745,
+          0.2260564478321587,
+          0.21016401659625109,
+          0.1895789441402941,
+          0.21764395428119304,
+          0.2122130118755774,
+          0.20905751464469513
+        ],
+        [
+          0.6143966804841701,
+          0.6156492981144821,
+          0.6359413417087166,
+          0.6374011499299017,
+          0.600867597654588,
+          0.612715100134328,
+          0.6131332368712058,
+          0.6072065296467752,
+          0.5932507184972847,
+          0.605116628471
+        ]
+      ]
+    },
+    {
+      "tau_minutes": 20,
+      "utility_lower": 0.2586428355545867,
+      "utility_upper": 0.6606678894733993,
+      "sampling_lower": 0.18277706653098907,
+      "sampling_upper": 0.7399478271744103,
+      "endpoint_se": [
+        0.033536913468859064,
+        0.03504616699618952
+      ],
+      "endpoint_replicates": [
+        [
+          0.26008850330996675,
+          0.2469909604533944,
+          0.24954938033589819,
+          0.24996650748108928,
+          0.2781183187866734,
+          0.2595932828226514,
+          0.2372156678986333,
+          0.2681004451981656,
+          0.26364705824936807,
+          0.2588842480782008
+        ],
+        [
+          0.6635263339543215,
+          0.6647016097279634,
+          0.6825312306701264,
+          0.6830938491712536,
+          0.6529294686091027,
+          0.6621443663607282,
+          0.660769960629545,
+          0.6576630205637477,
+          0.6446847648710754,
+          0.6549433619045057
+        ]
+      ]
+    },
+    {
+      "tau_minutes": 30,
+      "utility_lower": 0.32883006868704595,
+      "utility_upper": 0.7308551226058585,
+      "sampling_lower": 0.23979992183224927,
+      "sampling_upper": 0.7927869308191794,
+      "endpoint_se": [
+        0.03935630482122201,
+        0.027377323393032206
+      ],
+      "endpoint_replicates": [
+        [
+          0.329506007964029,
+          0.3166861892355451,
+          0.3153561913128976,
+          0.3147843807535418,
+          0.3512615076279615,
+          0.32966226669379506,
+          0.3061274206410235,
+          0.33920102485073217,
+          0.3369691012470719,
+          0.32992120094164823
+        ],
+        [
+          0.7329438386083837,
+          0.7343968385101142,
+          0.7483380416471258,
+          0.7479117224437063,
+          0.726072657450391,
+          0.7322133502318717,
+          0.7296817133719351,
+          0.7287636002163141,
+          0.7180068078687791,
+          0.7259803147679531
+        ]
+      ]
+    },
+    {
+      "tau_minutes": 45,
+      "utility_lower": 0.3934623472199123,
+      "utility_upper": 0.7954874011387251,
+      "sampling_lower": 0.2927807357092249,
+      "sampling_upper": 0.8417637135945225,
+      "endpoint_se": [
+        0.04450690392512793,
+        0.020456718576268983
+      ],
+      "endpoint_replicates": [
+        [
+          0.3933753314459387,
+          0.3807511063682641,
+          0.3757855416313061,
+          0.3747468343996841,
+          0.41791099037964397,
+          0.3940827817014173,
+          0.3704506685019608,
+          0.40439367036380935,
+          0.4046469715373822,
+          0.3955574283717111
+        ],
+        [
+          0.7968131620902934,
+          0.7984617556428333,
+          0.8087673919655344,
+          0.8078741760898484,
+          0.7927221402020733,
+          0.796633865239494,
+          0.7940049612328723,
+          0.7939562457293915,
+          0.7856846781590896,
+          0.791616542198016
+        ]
+      ]
+    },
+    {
+      "tau_minutes": 60,
+      "utility_lower": 0.43335854510549243,
+      "utility_upper": 0.8353835990243049,
+      "sampling_lower": 0.3256271332043083,
+      "sampling_upper": 0.8722338263415295,
+      "endpoint_se": [
+        0.04762331002911508,
+        0.016289861695874257
+      ],
+      "endpoint_replicates": [
+        [
+          0.4328503458210028,
+          0.42021081444618785,
+          0.41305980103188106,
+          0.4119426496317904,
+          0.4587497501546266,
+          0.4338044295939245,
+          0.41042202208296896,
+          0.44457910385251703,
+          0.44645482902800326,
+          0.436145467000895
+        ],
+        [
+          0.8362881764653576,
+          0.837921463720757,
+          0.8460416513661094,
+          0.8450699913219547,
+          0.833560899977056,
+          0.8363555131320014,
+          0.8339763148138806,
+          0.8341416792180989,
+          0.8274925356497105,
+          0.8322045808272
+        ]
+      ]
+    }
+  ],
+  "melbourne_scope": {
+    "input_persons": 171,
+    "complete_weight_persons": 170,
+    "unbounded_missing_weight_persons": 1,
+    "strict_full_target_interval": [
+      0,
+      1
+    ],
+    "verified_destination_and_duration": 100,
+    "uncertain_destination_or_duration": 70,
+    "no_recorded_journey": 63,
+    "age": "15\u201319, not exact14\u201318",
+    "geography": "Greater Melbourne, not City of Melbourne municipality",
+    "membership": "Current Secondary study status, weekday residents; first home-to-education journey; non-secondary/unknown destination and missing duration retained [0,1]",
+    "inference": "Same V44 linear t9 jackknife endpoint envelope,10 official replicate weights,variance factor9/10; conditional complete-weight target, not simultaneous confidence coverage"
+  },
+  "nyc_reuse": {
+    "source": "task4_v26_nyc_tau",
+    "raw_hashes_and_v21_roster_verified": true,
+    "bootstrap_rerun": false,
+    "roster": 603,
+    "observed_journeys": 410,
+    "households": 5766,
+    "known_under19": 460,
+    "optional_under19": 33,
+    "scenarios": [
+      {
+        "tau_minutes": 15,
+        "age_scope": "under19",
+        "known_students": 460,
+        "optional_students": 33,
+        "utility_lower": 0.1223116467083675,
+        "utility_upper": 0.3650002774466057,
+        "sampling_lower": 0.10157125835268814,
+        "sampling_upper": 0.41944114735770044
+      },
+      {
+        "tau_minutes": 20,
+        "age_scope": "under19",
+        "known_students": 460,
+        "optional_students": 33,
+        "utility_lower": 0.17166028949887965,
+        "utility_upper": 0.4148008822583972,
+        "sampling_lower": 0.1465622807636537,
+        "sampling_upper": 0.466230545019712
+      },
+      {
+        "tau_minutes": 30,
+        "age_scope": "under19",
+        "known_students": 460,
+        "optional_students": 33,
+        "utility_lower": 0.25597640891030243,
+        "utility_upper": 0.49956631522193923,
+        "sampling_lower": 0.22395133875708226,
+        "sampling_upper": 0.5466442853849841
+      },
+      {
+        "tau_minutes": 45,
+        "age_scope": "under19",
+        "known_students": 460,
+        "optional_students": 33,
+        "utility_lower": 0.3495902656705217,
+        "utility_upper": 0.5933606704661144,
+        "sampling_lower": 0.3126452658506307,
+        "sampling_upper": 0.6336102151655225
+      },
+      {
+        "tau_minutes": 60,
+        "age_scope": "under19",
+        "known_students": 460,
+        "optional_students": 33,
+        "utility_lower": 0.41553582364805247,
+        "utility_upper": 0.6591938910053099,
+        "sampling_lower": 0.37565921505590066,
+        "sampling_upper": 0.6942361465306011
+      }
+    ],
+    "scope": "Current grade9\u201312, under19 with unknown ages optional; historical2010\u201311; same exploratory fixed-weight county-household bootstrap, not official design CI"
+  },
+  "sources": [
+    {
+      "path": "data/task4_school_commute_extra/vista_2021_2026_explanatory_document-updated-2026.pdf",
+      "sha256": "d5f6df10d2a73feb7fcedf92b08ba8036e58061739e2b9fbca315174bffa8b43"
+    },
+    {
+      "path": "data/task4_school_commute_extra/household_vista_2024_2025.csv",
+      "sha256": "946f49b0694344d5c2afb77a2e57fc66d9cfa5c12f2e8f11d63bb3f8c5f22320"
+    },
+    {
+      "path": "data/task4_school_commute_extra/person_vista_2024_2025.csv",
+      "sha256": "7e4f56444283ad4c90e0f8d015ec931af89c2a6b01407a5f116d7718c65222c7"
+    },
+    {
+      "path": "data/task4_school_commute_extra/journey_to_education_vista_2024_2025.csv",
+      "sha256": "1f716b0f84e3c9630f682c22ad7936ba130650ca3e60d7ed0a96ffc283a1e27b"
+    },
+    {
+      "path": "data/task4_v44_melbourne/catalog.json",
+      "sha256": "d057d033b9fb486cc9f5ba7f89fe2d8930366a24714e625c3dfdfdb6846a702c"
+    },
+    {
+      "path": "data/task4_v44_melbourne/stops_vista_2024_2025.csv",
+      "sha256": "be5b44f3b28fbdd3cfda1240a52432751f7c1967b2ee11178a82fde1d38d44a5"
+    },
+    {
+      "path": "data/task4_v44_melbourne/summary.json",
+      "sha256": "a7a73b425cdebf59922132355f771c17e21066e1dff63416c8a09f786da807d4"
+    },
+    {
+      "path": "data/task4_v44_melbourne/extract.py",
+      "sha256": "baceafeab36fa98ad66f8aed44b8d497d2f9ed164aaa70952529dc3d28a68eb6"
+    },
+    {
+      "path": "data/task4_v26_nyc_tau/summary.json",
+      "sha256": "fb7921f80e526105e3b118cdd3c29c42125262e366f6cdf1139c3e0eeb35e735"
+    },
+    {
+      "path": "data/task4_v26_nyc_tau/scenarios.csv",
+      "sha256": "99ffde01e38655394751bb4c55ae4f49fb8a6f3e924c8fcf351d1e8b4a632fe1"
+    },
+    {
+      "path": "data/task4_v26_nyc_tau/extract_tau.py",
+      "sha256": "53765ccfdd6b0724aed3bcec87ac3a6f9f1a3a5f1adc471a1b5103e02223cb2e"
+    }
+  ]
+}

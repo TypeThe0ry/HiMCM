@@ -1,0 +1,158 @@
+{
+  "city": "Cape Town",
+  "survey": "GHS2025",
+  "population": "Resident formal in-person pupils in grades10-12, ages14-18",
+  "n": 182,
+  "weighted_population": 214053.826686108,
+  "psus": 216,
+  "strata": 14,
+  "domain_psus": 120,
+  "zero_target_psus": 96,
+  "degrees_of_freedom": 202,
+  "critical_value": 2.2582336500417743,
+  "tau30_matches_current": true,
+  "results": [
+    {
+      "tau_minutes": 15,
+      "point_bounds": [
+        0.21798788725792412,
+        0.6065845577215501
+      ],
+      "endpoint_standard_errors": [
+        0.012034075345709746,
+        0.031064289357076225
+      ],
+      "joint_95_percent_approximate_envelope": [
+        0.19081213336510428,
+        0.6767349812623341
+      ]
+    },
+    {
+      "tau_minutes": 20,
+      "point_bounds": [
+        0.3012710294376661,
+        0.6574700299995956
+      ],
+      "endpoint_standard_errors": [
+        0.014113402404196283,
+        0.027463238564893837
+      ],
+      "joint_95_percent_approximate_envelope": [
+        0.2693996692119296,
+        0.7194884394659639
+      ]
+    },
+    {
+      "tau_minutes": 30,
+      "point_bounds": [
+        0.42717952637825957,
+        0.7294728318983578
+      ],
+      "endpoint_standard_errors": [
+        0.015473318651195007,
+        0.022298418886266776
+      ],
+      "joint_95_percent_approximate_envelope": [
+        0.39223715752231203,
+        0.7798278717700524
+      ]
+    },
+    {
+      "tau_minutes": 45,
+      "point_bounds": [
+        0.5504034575759743,
+        0.7949954515642994
+      ],
+      "endpoint_standard_errors": [
+        0.015042676868468996,
+        0.01745058602445617
+      ],
+      "joint_95_percent_approximate_envelope": [
+        0.5164335784848926,
+        0.834402952137675
+      ]
+    },
+    {
+      "tau_minutes": 60,
+      "point_bounds": [
+        0.6299845665046458,
+        0.8351093910454739
+      ],
+      "endpoint_standard_errors": [
+        0.013991102070109366,
+        0.014366777529378868
+      ],
+      "joint_95_percent_approximate_envelope": [
+        0.5983893890087557,
+        0.8675529315049813
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "city": "Cape Town",
+      "tau_minutes": 15,
+      "utility_lower": 0.19081213336510428,
+      "utility_upper": 0.6767349812623341,
+      "point_bounds": [
+        0.21798788725792412,
+        0.6065845577215501
+      ]
+    },
+    {
+      "city": "Cape Town",
+      "tau_minutes": 20,
+      "utility_lower": 0.2693996692119296,
+      "utility_upper": 0.7194884394659639,
+      "point_bounds": [
+        0.3012710294376661,
+        0.6574700299995956
+      ]
+    },
+    {
+      "city": "Cape Town",
+      "tau_minutes": 30,
+      "utility_lower": 0.39223715752231203,
+      "utility_upper": 0.7798278717700524,
+      "point_bounds": [
+        0.42717952637825957,
+        0.7294728318983578
+      ]
+    },
+    {
+      "city": "Cape Town",
+      "tau_minutes": 45,
+      "utility_lower": 0.5164335784848926,
+      "utility_upper": 0.834402952137675,
+      "point_bounds": [
+        0.5504034575759743,
+        0.7949954515642994
+      ]
+    },
+    {
+      "city": "Cape Town",
+      "tau_minutes": 60,
+      "utility_lower": 0.5983893890087557,
+      "utility_upper": 0.8675529315049813,
+      "point_bounds": [
+        0.6299845665046458,
+        0.8351093910454739
+      ]
+    }
+  ],
+  "source_hashes": {
+    "data/task4_v63_cape_travel/manifest.json": "e8b18732e7135d5cf9957b2d480c514b225b064b65cd97f2cb32e3a67636d0b9",
+    "data/task4_v63_cape_travel/extract.py": "c77fd6a69d4d90d2e02b9e849d4e7a5fb61ff735279f7c3ceb706063a98145dd",
+    "data/task4_v63_cape_travel/inference.py": "9de2f72c08966f8e869eed70b7850b833cb066e0f3cfd7e4a4cfc3d3aebdbc0a",
+    "data/task4_v63_cape_travel/inference_summary.json": "fa3e513f8fe13e480a61d367d44ed9839f5b2187829251b9545dadec5de219c4",
+    "data/task4_v30_cape_town/inference.py": "412998ff9d6a7d17b572a3314230083ef19893c510e706e263fb7c4bb36fdd00",
+    "results/task4_v108_intake/utility_bounds.csv": "16ca425988a3e143f1dbb4e2e3d4b713500dd104ba837c6769fc767b5cfcb198",
+    "data/task4_v111_cape_scale/aggregate_moments.json": "5fea0b1f0fc81c91d14ac6ef82d4d833208f817f0d103021d060e4f8495f6682",
+    "data/task4_v111_cape_scale/derive.py": "79fa3757de67e037ae16b2c336c48ec665d873516498030d089294f4680550c4"
+  },
+  "source_zip_sha256": "564954cacb602c3ed0b64d799627a5c09ce1c90881067c051bcfa43270ae777f",
+  "method": "Same stratified-PSU Taylor ratio linearization and Bonferroni two endpoint intervals as V63; compressed six-bin moments retain zero-domain PSUs.",
+  "limitations": "Calibrated weights treated as fixed; no FPC or calibration residual adjustment. Approximate per-scale 95% endpoint envelopes, not a simultaneous band over five scales. Conservative bin closures; unknown time [0,1]; no within-bin imputation. Survey coverage/recorded eligibility conditional. Scale choice changes utility preferences, not observed travel.",
+  "main_admitted": false,
+  "new_observations": 0
+}

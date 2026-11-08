@@ -1,0 +1,75 @@
+{
+  "city": "Sao Paulo",
+  "cohort": "V48 resident age14\u201318 current HS, unchanged membership and unresolved bounds",
+  "scenarios": [
+    {
+      "city": "Sao Paulo",
+      "tau_minutes": 15,
+      "utility_lower": 0.26846520378338823,
+      "utility_upper": 0.4333777708955454,
+      "point_lower": 0.2849938483156789,
+      "point_upper": 0.41238797511281783,
+      "jensen_lower": 0.19518279147237522,
+      "jensen_upper": 0.6071350869515446,
+      "direct_width": 0.16491256711215718,
+      "jensen_width": 0.4119522954791694
+    },
+    {
+      "city": "Sao Paulo",
+      "tau_minutes": 20,
+      "utility_lower": 0.3398061716615674,
+      "utility_upper": 0.5054457592219962,
+      "point_lower": 0.3578486920323379,
+      "point_upper": 0.48524281882947756,
+      "jensen_lower": 0.29365076980920785,
+      "jensen_upper": 0.6071350869515446,
+      "direct_width": 0.1656395875604288,
+      "jensen_width": 0.31348431714233677
+    },
+    {
+      "city": "Sao Paulo",
+      "tau_minutes": 30,
+      "utility_lower": 0.4417949654221687,
+      "utility_upper": 0.6071350869515446,
+      "point_lower": 0.4608835464984256,
+      "point_upper": 0.5882776732955644,
+      "jensen_lower": 0.4417949654221687,
+      "jensen_upper": 0.6071350869515446,
+      "direct_width": 0.16534012152937594,
+      "jensen_width": 0.16534012152937594
+    },
+    {
+      "city": "Sao Paulo",
+      "tau_minutes": 45,
+      "utility_lower": 0.5365391542624709,
+      "utility_upper": 0.699520991094378,
+      "point_lower": 0.5561537098894003,
+      "point_upper": 0.6835478366865404,
+      "jensen_lower": 0.4417949654221687,
+      "jensen_upper": 0.7170072624871099,
+      "direct_width": 0.16298183683190715,
+      "jensen_width": 0.2752122970649412
+    },
+    {
+      "city": "Sao Paulo",
+      "tau_minutes": 60,
+      "utility_lower": 0.5960431719380122,
+      "utility_upper": 0.7568113433948976,
+      "point_lower": 0.6156219120745801,
+      "point_upper": 0.7430160388717182,
+      "jensen_lower": 0.4417949654221687,
+      "jensen_upper": 0.7791887364121383,
+      "direct_width": 0.1607681714568855,
+      "jensen_width": 0.3373937709899696
+    }
+  ],
+  "bootstrap": {
+    "seed": 20261107,
+    "replicates": 2000,
+    "method": "V48 zone-stratified household multinomial, fixed person weights, paired across scales",
+    "interval": "min(point lower,2.5% replicate lower); max(point upper,97.5% replicate upper)",
+    "official_design_CI": false
+  },
+  "scope": "Five discrete tau scenarios, not a continuous-scale certificate",
+  "new_observations": 0
+}

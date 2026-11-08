@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "method": "Independent stdlib CSV classification, direct PSU ratio residuals at all five scales; no six-dimensional covariance reuse",
+  "source_sha256": "564954cacb602c3ed0b64d799627a5c09ce1c90881067c051bcfa43270ae777f",
+  "scales_checked": [
+    15,
+    20,
+    30,
+    45,
+    60
+  ],
+  "n": 182,
+  "optional_n": 0,
+  "unknown_time_weight": 0,
+  "psus": 216,
+  "strata": 14,
+  "zero_target_psus": 96,
+  "maximum_absolute_endpoint_or_se_difference": 5.551115123125783e-16,
+  "tau30_matches_V63": true,
+  "no_missing_mass_dropped": true,
+  "individual_records_exported": false
+}

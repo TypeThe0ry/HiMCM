@@ -1,0 +1,472 @@
+{
+  "model_version": "V108",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "input_bounds_sha256": "01f728432522b9e3f8a5768bf1d782a8c08fe60a0e352ce6d207bb6b663ae131",
+  "main_admitted": false,
+  "new_observations": 0,
+  "source_summaries": [
+    {
+      "path": "data/task4_v111_mexico_scale/summary.json",
+      "sha256": "70bb84380a3f104f14093d6ea8f8dd26af3d32deeaeedd35e835ee0daf7e1b7f"
+    },
+    {
+      "path": "data/task4_v111_cape_scale/summary.json",
+      "sha256": "b00952a3c1a0034280a80a10a4329aa6dba71847d25f0f9a39b28d7b07445fd0"
+    },
+    {
+      "path": "data/task4_v111_saopaulo_scale/summary.json",
+      "sha256": "e829eba9a6d2a23fce6fce1929658614053d583055c15417e77403669a96d133"
+    },
+    {
+      "path": "data/task4_v111_melbourne_scale/summary.json",
+      "sha256": "64912cf8587cc343140cae2a95530f7e3d9e7c81c9873b3538405c5bed9b9c13"
+    }
+  ],
+  "scenarios": [
+    {
+      "method": "direct",
+      "tau_minutes": 15,
+      "changed_ranks": 11,
+      "kendall_tau": 0.9266666666666664,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 36.96763600859344
+    },
+    {
+      "method": "direct",
+      "tau_minutes": 20,
+      "changed_ranks": 9,
+      "kendall_tau": 0.9533333333333331,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 37.01309969781916
+    },
+    {
+      "method": "direct",
+      "tau_minutes": 30,
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 37.048559158945075
+    },
+    {
+      "method": "direct",
+      "tau_minutes": 45,
+      "changed_ranks": 9,
+      "kendall_tau": 0.9599999999999999,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 37.03490132584971
+    },
+    {
+      "method": "direct",
+      "tau_minutes": 60,
+      "changed_ranks": 10,
+      "kendall_tau": 0.94,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 36.997233036843205
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 15,
+      "changed_ranks": 12,
+      "kendall_tau": 0.9199999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 37.312394515647995
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 20,
+      "changed_ranks": 9,
+      "kendall_tau": 0.9533333333333331,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 37.229544523602065
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 30,
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 37.048559158945075
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 45,
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 37.228144956067666
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 60,
+      "changed_ranks": 0,
+      "kendall_tau": 0.9999999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      },
+      "mean_score_width": 37.31427626557353
+    }
+  ],
+  "scope": "Five prespecified time scales only; continuous certificates concern alpha, not all intermediate tau. Current memberships, missing mass and source-specific sampling procedures retained. Direct re-extraction and mean-only propagation are alternative sensitivity calculations, not interval intersections or evidence that one nominal CI contains another. Main scale remains30; no tuning to a desired winner."
+}

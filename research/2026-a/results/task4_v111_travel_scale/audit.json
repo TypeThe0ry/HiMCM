@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "mexico_prefix_ratios_and_SE_verified": 90,
+  "interval_cells_verified": 2500,
+  "rank_rows_verified": 250,
+  "unchanged_nontravel_cells_per_scenario": 225,
+  "unknown_travel_cells_preserved_per_scenario": 20,
+  "tau30_matches_v108": true,
+  "scenarios": [
+    {
+      "method": "direct",
+      "tau_minutes": 15,
+      "rank_changes": 11,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "direct",
+      "tau_minutes": 20,
+      "rank_changes": 9,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "direct",
+      "tau_minutes": 30,
+      "rank_changes": 0,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "direct",
+      "tau_minutes": 45,
+      "rank_changes": 9,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "direct",
+      "tau_minutes": 60,
+      "rank_changes": 10,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 15,
+      "rank_changes": 12,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 20,
+      "rank_changes": 9,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 30,
+      "rank_changes": 0,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 45,
+      "rank_changes": 0,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    },
+    {
+      "method": "mean_only",
+      "tau_minutes": 60,
+      "rank_changes": 0,
+      "certificate_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753489
+    }
+  ],
+  "method": "Independent longdouble scalar TOPSIS/regret, Mexico coefficient/Taylor reconstruction from hashed moments, Jensen moment bounds, endpoint-monotonic continuous-alpha certificate replay; no project scoring imports.",
+  "scope": "Five discrete tau scenarios; certificates extend only across alpha, not tau. Direct source sampling envelopes and propagated baseline envelopes are not asserted nested.",
+  "source_result_hashes": {
+    "summary.json": "ad9831b6c2fcb2878008ddc3549a4f7ba958e77c23f97349db379bb199b450c1",
+    "utility_bounds.csv": "2f890bc295b8b97d6c1e50d75fde1e7fb05b2da6d9e042186044bf2f08b3be52",
+    "ranks.csv": "b0689efa8d91a690ef15d48d63b773fa7298c9dfdf06653873aa8af87d3828c7",
+    "recommendation_certificate.csv": "32938968a2194fa0ada9c266fd480668bc829153e7a0fd80b287dea38c64e9d0"
+  }
+}

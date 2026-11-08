@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "method": "Independent math.fsum duration-histogram means and explicit sorted linear percentile interpolation; no main derive imports",
+  "checks": [
+    {
+      "tau_minutes": 15,
+      "point_bounds": [
+        0.28499384831567826,
+        0.4123879751128174
+      ],
+      "sampling_envelope": [
+        0.26846520378338823,
+        0.4333777708955454
+      ],
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "tau_minutes": 20,
+      "point_bounds": [
+        0.3578486920323374,
+        0.48524281882947645
+      ],
+      "sampling_envelope": [
+        0.3398061716615674,
+        0.5054457592219962
+      ],
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "tau_minutes": 30,
+      "point_bounds": [
+        0.4608835464984249,
+        0.588277673295564
+      ],
+      "sampling_envelope": [
+        0.4417949654221687,
+        0.6071350869515446
+      ],
+      "max_error": 7.216449660063518e-16
+    },
+    {
+      "tau_minutes": 45,
+      "point_bounds": [
+        0.5561537098893995,
+        0.6835478366865387
+      ],
+      "sampling_envelope": [
+        0.536539154262471,
+        0.699520991094378
+      ],
+      "max_error": 1.6653345369377348e-15
+    },
+    {
+      "tau_minutes": 60,
+      "point_bounds": [
+        0.6156219120745777,
+        0.7430160388717169
+      ],
+      "sampling_envelope": [
+        0.596043171938012,
+        0.7568113433948976
+      ],
+      "max_error": 2.3314683517128287e-15
+    }
+  ],
+  "source_hashes": {
+    "aggregate.json": "09c0ef4086c6c975c7aede10daefaddc69ade77f7f605f6333ccfcf919f5e03e",
+    "bootstrap_endpoints.json": "8bddaae6098803d0d91863c7eccadf5fd5ad84687d20bb10a272948a9d5fe943",
+    "../task4_v48_saopaulo_age/extract.py": "71b56f4b63c4a4f7ef2e93352eecf44096abec6c3cd9858207f08f6ede554bdc",
+    "../task4_v48_saopaulo_age/summary.json": "e293b98bb6838c267d3c4c934723a66f910fa1408468fb1d3d5b089583926656",
+    "../task4_v10_saopaulo/extract_commute.py": "fc4480c13de0c0fa95c0f5b8e82decf37323788a5679beb97da3c668cf6983d4",
+    "../task4_v10_saopaulo/Layout_BD_OD2023_190225.xlsx": "f26aea77529b77564f55e6ae60aa23e7e98306e52680bd58b4db8bb1807d93d9",
+    "../task4_v10_saopaulo/Municipios_2023.dbf": "95acc4159feebb36b3875c5f87f529cdfdcceb973e4766e3353167def4c81723"
+  },
+  "summary_sha256": "e829eba9a6d2a23fce6fce1929658614053d583055c15417e77403669a96d133",
+  "audit_script_sha256": "86427c79919088e0706b23e4a441074bd26d32510eb05ae9c6cf938d33042933",
+  "tau30_v48_and_current_v108_verified": true,
+  "raw_bootstrap_resampling_independently_verified": false,
+  "limitations": [
+    "Audit verifies released aggregate moments and bootstrap endpoint percentile calculations, not raw-record extraction or 2000 resampling draws.",
+    "Published input raw hash is inherited provenance; no new official byte-identity verification.",
+    "Exploratory fixed-weight bootstrap and per-scale intervals, not official design-valid CI or simultaneous band."
+  ]
+}
