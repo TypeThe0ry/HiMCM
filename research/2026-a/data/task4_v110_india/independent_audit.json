@@ -1,0 +1,57 @@
+{
+  "status": "passed with explicit non-admission",
+  "source_type": "Five original official public documents; independently hash-verified and parsed",
+  "pdf_pages_verified": {
+    "43": [
+      "highest level of education completed"
+    ],
+    "44": [
+      "last 365 days"
+    ],
+    "59": [
+      "48 time slots",
+      "duration of 30 minutes",
+      "4:00 AM"
+    ],
+    "60": [
+      "at most three",
+      "10 minutes or more"
+    ],
+    "61": [
+      "auto populated",
+      "combined together"
+    ],
+    "75": [
+      "only two activities"
+    ],
+    "83": [
+      "611 School/university attendance",
+      "640 Travelling time related to learning"
+    ],
+    "94": [
+      "Mumbai Suburban (22)",
+      "Mumbai (23)"
+    ]
+  },
+  "findings": [
+    "Completed educational attainment, not current grade. Principal activity reflects365-day major-time criterion, not current enrollment.",
+    "Code611 joins school and university attendance; code640 is all learning-related travel, not specifically an outward school trip.",
+    "48 half-hour slots; multiple activity records share slot bounds, and consecutive repeated patterns may be combined. Start/end are slot boundaries, not exact trip endpoints.",
+    "At most3 qualifying activities normally >=10 minutes; omission of travel is not proof of zero travel.",
+    "Mumbai districts22/23 within Maharashtra27/NSS271 confirmed; city-boundary correspondence still requires validation.",
+    "No microdata acquired, no target sample count or current city utility inferred."
+  ],
+  "limitations": [
+    "Published person-file row count is activity-record count, not verified unique respondents.",
+    "No microdata or target-city design audit; no high-school membership or single-trip utility directly identified."
+  ],
+  "reviewer": "independent phoenix102 source audit",
+  "source_hashes": {
+    "codes.xlsx": "9399c2adb482f0e71190af0141eb7485065a1e26606a42875fd7ffaf80939de9",
+    "layout.xlsx": "5f18e4f62e9ca19b859f8ed8126b99404b2e6a49644c2435856766f915c79af5",
+    "instructions.pdf": "81bccd607329bdd42c6f0c9efbb98bc9950928886dcd5fbf23a92241b97ef4c0",
+    "data_user_note.docx": "ff2c1ea35c49d40c4dedfef427cf4ef6827ef8ae8da2e8e78586e8822bacf4cf",
+    "metadata.json": "eeafc97179ea87b4bae5f800fdc76aa2f0ba07c5959e730fa34c81a5448ac4de"
+  },
+  "new_admitted_cells": 0
+}

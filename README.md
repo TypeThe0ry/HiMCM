@@ -14,6 +14,7 @@
 
 | 想了解什么 | 入口 |
 | --- | --- |
+| V110来源核查 | [修复Bogotá归档；核实印度时间日记口径，实际排名不变](research/2026-a/results/task4_v110_intake/README.md) |
 | V109补数方向与精度 | [刷新当前模型补数证书；新增Bogotá官方数据路线](research/2026-a/results/task4_v109_intake/README.md) |
 | V108抽样误差修订 | [Mexico通学区间扩大，23→24；冠军范围仍25城](research/2026-a/results/task4_v108_intake/README.md) |
 | V107真实通学更新 | [Mexico City采用2025居民微观数据，保留学段未知；20→23](research/2026-a/results/task4_v107_intake/README.md) |

@@ -26,7 +26,7 @@ The [composition dictionary](https://microdatos.dane.gov.co/index.php/catalog/90
 
 ## Remaining blockers
 
-Direct command-line requests and the ordinary Chrome download-page visit both returned a JSON `403 Forbidden` response. The web retrieval tool could render metadata and download names but not activate the download controls or supply their payload. No login, restricted-data request or access-control bypass was attempted. `web_metadata_capture.json` is explicitly a web-tool rendered response, **not original HTML or survey bytes**.
+Direct command-line requests and the ordinary Chrome download-page visit both returned a JSON `403 Forbidden` response. The web retrieval tool could render metadata and download names but not activate the download controls or supply their payload. No login, restricted-data request or access-control bypass was attempted. `web_metadata_capture.json` contains only **two unsuccessful Internal Error responses**, not substantive metadata. Earlier interactive reads supported the findings, but the V109 archive did not preserve them. V110 corrects this gap with checked successful rendered captures in `../task4_v110_bogota/`; these are still not original HTML or survey bytes.
 
 Next bounded step is acquiring the three named public modules through a functioning official download interface, then checking join uniqueness, age 14–18, current grades 10–11, residence 11001, time values/special codes, modality and positive expansion factors. Survey uncertainty requires separate design verification. The catalog has legacy metadata text (design table description says ENCV2024; export document title mentions 2023) despite its 2025 title, dates and file names; raw vintage must therefore be checked when acquired.
 

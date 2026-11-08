@@ -1,0 +1,36 @@
+{
+  "status": "passed with explicit source limitations",
+  "source_type": "Successful rendered metadata, not original HTML or microdata",
+  "key_evidence_verified": [
+    "Media (10",
+    "grados 12 y 13",
+    "trayecto de ida",
+    "sumatoria",
+    "P6040",
+    "P8586",
+    "SEGMENTO",
+    "ESTRATO2020",
+    "FEX_C",
+    "11001  |  | 7415",
+    "DBF-ECV-Educacion-2025.zip"
+  ],
+  "findings": [
+    "Current enrollment level P1088 differs from completed attainment; grades12/13 are post-grade11 normal-school teacher training.",
+    "P6167 is outward institution journey minutes summed across modes.",
+    "P8586 includes intended or confirmed enrollment in recess and flexible formal education.",
+    "7415 for MPIO11001 is all-age dictionary frequency, not an extracted high-school target sample; 6198 Media count is national metadata, not city sample.",
+    "2025 design heading versus 2024 description inconsistency remains visible and explicitly disclosed.",
+    "No acquired original module or linked person data; no city utility admission justified."
+  ],
+  "limitations": [
+    "Rendered capture is locally auditable but not full underlying HTML.",
+    "Municipality-name crosswalk, person joins, actual vintage and survey design remain unverified from microdata."
+  ],
+  "reviewer": "independent phoenix102 source audit",
+  "source_hashes": {
+    "metadata_rendered.json": "7d03f66290fa85815085c7e1ceafa493554ca2d79ea369eac1a2f008a47b487f",
+    "download_and_age_rendered.json": "a585793cdee299e31eb94dcc1fbb48ec1a2c20d2721e60a3c02ed48baa8dc74a",
+    "grade_and_municipality_rendered.json": "db2aa38bf1fa45701b0b6bcf25b2e8fe66614ea6c908b02dd5283ded7864ef15"
+  },
+  "new_admitted_cells": 0
+}
