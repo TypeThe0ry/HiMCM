@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "weight_reference": "fixed",
+      "production_scores_and_saved_V121_match": true,
+      "self_excluded_regret_rank_champion_checks": true,
+      "midpoint_collapsed_decision_equals_score_order": true,
+      "endpoint_completion_has_all160_entries_at_endpoints": true,
+      "all112_point_entries_unchanged_in_every_completion": true,
+      "strict_interior_counterexample": true,
+      "all16_model_possible_champion_witnesses": true,
+      "endpoint_witness_realizes_revised_choice_maximum_regret": true
+    },
+    {
+      "weight_reference": "equal",
+      "production_scores_and_saved_V121_match": true,
+      "self_excluded_regret_rank_champion_checks": true,
+      "midpoint_collapsed_decision_equals_score_order": true,
+      "endpoint_completion_has_all160_entries_at_endpoints": true,
+      "all112_point_entries_unchanged_in_every_completion": true,
+      "strict_interior_counterexample": true,
+      "all16_model_possible_champion_witnesses": true,
+      "endpoint_witness_realizes_revised_choice_maximum_regret": true
+    }
+  ],
+  "source_CSV_registry_saved_rank_files_and_source_hashes_unchanged": true,
+  "authoritative_V121_all160_bounds_exactly_unchanged": true,
+  "main_input_shape": [
+    16,
+    10
+  ],
+  "legacy25_used": false,
+  "output_sha256": {
+    "possible_champion_witnesses.csv": "7d0384b1c9976f77c2b2cb3a7092e3b07bef362f8ce76532bd40cebdb6a7f36e",
+    "rank_comparison.csv": "148cc8b2a4aecd7c3ce68cc16d52b16f5dc9561f5079b0afe5854a31bae89b1f",
+    "utility_inputs.csv": "dfe9d71da32ab0ad82a10ff06f41023771b56895286b32529ce9c8059d045bcd",
+    "witness_scores.csv": "afbd22461602cec389b7793a0fd0ba28e0b4ad5c03af4ba1d45ee749bb1a6044",
+    "witness_utilities.csv": "913af2d691c363b62432d52f71d16b15ca909ce6fdc3ec6c7a9a087d61e09df4"
+  }
+}

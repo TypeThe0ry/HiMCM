@@ -1,0 +1,160 @@
+{
+  "version": "V123 diagnostic; authoritative evidence remains V121 user16",
+  "comparison": "Same160 utility bounds, weights, anchors and TOPSIS score; chosen midpoint collapse versus retained intervals and minimax regret",
+  "historical_status": "Controlled formulation comparison, not a claim that a midpoint model was previously the team historical initial model",
+  "model_change": "Retain evidence uncertainty and replace a conditional point-score ordering with a conservative interval decision rule",
+  "scope": "Illustrative completions are not evidence admissions, estimated missing values or empirical counterfactual predictions",
+  "endpoint_scope": "Endpoints are legal in the declared closed rectangular utility model. Some are closures/suprema for unbounded raw quantities and need not be physically attained; no raw-population joint-attainability claim is made.",
+  "interior_scope": "All48 uncertain utilities are strictly inside their retained intervals. This removes reliance on exact boundary endpoints but remains a chosen model completion, not an observed world.",
+  "calibration_limit": "No accuracy, empirical coverage, representativeness or new-data gain is inferred from this controlled comparison",
+  "point_cells": 112,
+  "partial_interval_cells": 27,
+  "fully_missing_cells": 21,
+  "uncertain_cells_retained": 48,
+  "authoritative_model_changed": false,
+  "results": [
+    {
+      "weight_reference": "fixed",
+      "midpoint_scenario_first": "Zurich",
+      "interval_minimax_choices": [
+        "Zurich"
+      ],
+      "recommendation_changed": false,
+      "changed_city_decision_ranks": 13,
+      "kendall_tau_b": 0.6,
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "conditional_point_scenario_first_count": 1,
+      "point_scenario_certifies_a_necessary_champion": false,
+      "interval_mean_score_width": 16.18302471627777,
+      "revised_choice_max_regret": 17.36804635503932,
+      "chosen_completion_counterexamples": [
+        {
+          "scenario": "midpoint_diagnostic",
+          "first_city": "Zurich",
+          "first_score": 64.35258456449579,
+          "midpoint_first_city": "Zurich",
+          "midpoint_first_score_in_this_completion": 64.35258456449579,
+          "midpoint_first_rank_in_this_completion": 1,
+          "score_gap_first_minus_revised_choice": 0.0,
+          "completion_scope": "A chosen utility completion within the retained rectangle, not an observation"
+        },
+        {
+          "scenario": "adversarial_endpoint_Dublin",
+          "first_city": "Dublin",
+          "first_score": 70.90352791308969,
+          "midpoint_first_city": "Zurich",
+          "midpoint_first_score_in_this_completion": 53.53548155805037,
+          "midpoint_first_rank_in_this_completion": 4,
+          "score_gap_first_minus_revised_choice": 17.36804635503932,
+          "completion_scope": "A chosen utility completion within the retained rectangle, not an observation"
+        },
+        {
+          "scenario": "interior_counterexample",
+          "first_city": "Dublin",
+          "first_score": 62.31482570782293,
+          "midpoint_first_city": "Zurich",
+          "midpoint_first_score_in_this_completion": 55.54326112343906,
+          "midpoint_first_rank_in_this_completion": 13,
+          "score_gap_first_minus_revised_choice": 6.771564584383874,
+          "completion_scope": "A chosen utility completion within the retained rectangle, not an observation"
+        }
+      ]
+    },
+    {
+      "weight_reference": "equal",
+      "midpoint_scenario_first": "Zurich",
+      "interval_minimax_choices": [
+        "Zurich"
+      ],
+      "recommendation_changed": false,
+      "changed_city_decision_ranks": 15,
+      "kendall_tau_b": 0.6666666666666667,
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "conditional_point_scenario_first_count": 1,
+      "point_scenario_certifies_a_necessary_champion": false,
+      "interval_mean_score_width": 19.08646888109407,
+      "revised_choice_max_regret": 16.630779016251914,
+      "chosen_completion_counterexamples": [
+        {
+          "scenario": "midpoint_diagnostic",
+          "first_city": "Zurich",
+          "first_score": 65.91841795082695,
+          "midpoint_first_city": "Zurich",
+          "midpoint_first_score_in_this_completion": 65.91841795082695,
+          "midpoint_first_rank_in_this_completion": 1,
+          "score_gap_first_minus_revised_choice": 0.0,
+          "completion_scope": "A chosen utility completion within the retained rectangle, not an observation"
+        },
+        {
+          "scenario": "adversarial_endpoint_Dublin",
+          "first_city": "Dublin",
+          "first_score": 71.07174500198964,
+          "midpoint_first_city": "Zurich",
+          "midpoint_first_score_in_this_completion": 54.440965985737726,
+          "midpoint_first_rank_in_this_completion": 2,
+          "score_gap_first_minus_revised_choice": 16.630779016251914,
+          "completion_scope": "A chosen utility completion within the retained rectangle, not an observation"
+        },
+        {
+          "scenario": "interior_counterexample",
+          "first_city": "Dublin",
+          "first_score": 61.45870336644891,
+          "midpoint_first_city": "Zurich",
+          "midpoint_first_score_in_this_completion": 56.613465062828,
+          "midpoint_first_rank_in_this_completion": 10,
+          "score_gap_first_minus_revised_choice": 4.84523830362091,
+          "completion_scope": "A chosen utility completion within the retained rectangle, not an observation"
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_v121_admissions.json": "16211d42402ca19c6040507201ef2ea39ab5c878d9a51369b57fe232c4884b80",
+    "design/task4_user_current_model.json": "4b14d1591e66fdecd5a4f59c1734a2a0f3108c8ecd1b818dd23d8cfeecf4d381",
+    "scripts/task4_user_v121_revision.py": "2dc0d8944154364eb7046ce806f7d45b3f22626eea4dcfd2d1c17e796fd26cfc",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "results/task4_user_v121_revision/current_ranks.csv": "44b66aae1ffd132fc8aeecd8ef96e2f3ee526d1a768afcd5514488ae453fc959",
+    "results/task4_user_v121_revision/utility_bounds.csv": "459b397cad1237a06667a02bd3bb6625657e70bb6c471c52528bf6136d0857c1",
+    "results/task4_user_v121_revision/all_ranks.csv": "ff714534a334906679f2bddb13496396be8b7d3f7de9a29e1f46b5dd44c5c428",
+    "results/task4_user_v121_revision/summary.json": "51d4ad07395b142eaabf3f211b848edea97a016cc87b81e1cfc48d08375d1a21",
+    "results/task4_user_v121_revision/mc_city_summary.csv": "ed3802e08f79f8bab934de37c6edfc0edee399c5225144d89703f8105acd9324"
+  }
+}
