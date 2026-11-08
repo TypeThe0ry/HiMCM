@@ -18,6 +18,7 @@
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
 | 通学尺度直接重算 | [原始时长与分箱：五个尺度下的排名](research/2026-a/results/task4_v26_direct_travel_scale/README.md) · [上一轮保守检验](research/2026-a/results/task4_v25_travel_scale/README.md) |
+| V76补数连续阈值 | [Phoenix128组合诊断，识别粗网格遗漏的七项可行情景](research/2026-a/results/task4_v76_precision_frontier/README.md) |
 | V75完整原件与学校匹配 | [Athens两份原件校验通过、48校学生子集与Phoenix项目核查](research/2026-a/results/task4_v75_sources/README.md) |
 | V74学校级来源核查 | [Phoenix目录差异与Toronto分校师资资料；保留缺失并复算](research/2026-a/results/task4_v74_sources/README.md) |
 | V73补数能力下界 | [当前模型下补齐教育与通学仍至少21城可能第一（连续偏好）](research/2026-a/results/task4_v73_acquisition_limits/README.md) |
