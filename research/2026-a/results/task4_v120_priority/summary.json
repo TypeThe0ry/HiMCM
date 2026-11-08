@@ -1,0 +1,29 @@
+{
+  "base": "V118 user16",
+  "purpose": "Optimistic acquisition limits, not newly observed evidence or probabilities",
+  "uncertain_cells": 48,
+  "weight_references": [
+    {
+      "weight_reference": "fixed",
+      "baseline_possible_count": 16,
+      "baseline_minimax_choices": [
+        "Oslo"
+      ],
+      "best_single_cell_possible_count": 13
+    },
+    {
+      "weight_reference": "equal",
+      "baseline_possible_count": 16,
+      "baseline_minimax_choices": [
+        "Oslo"
+      ],
+      "best_single_cell_possible_count": 15
+    }
+  ],
+  "single_cell_endpoint_sufficiency": "All 16 currently possible. A focal city cannot be excluded while its lower endpoint excludes any other initially possible city; other-city exclusions are monotone in resolved utility. Minimum remaining count therefore occurs at an endpoint.",
+  "threshold_interpretation": "Closed interval ties remain possible. Strictly exceeding stated lower-utility thresholds is necessary for these particular exclusions.",
+  "input_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_v118_admissions.json": "eb3c90ee48eb8f106c00efba98f9a0d8524f2651feb750cf0e4d265a11f72da4"
+  }
+}

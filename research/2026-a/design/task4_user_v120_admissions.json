@@ -1,0 +1,131 @@
+{
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "observations": [
+    {
+      "city": "Zurich",
+      "indicator": "public_transport_density",
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.6691999234771387,
+        1
+      ],
+      "raw_count": 446,
+      "population": 440935,
+      "population_year": 2025,
+      "population_source": "Unchanged authoritative attachment; no external population recheck",
+      "sourceyear": 2025,
+      "density_per_100000_lower": 101.14869538594124,
+      "utility_anchor": 50,
+      "lower_bound_only": true,
+      "source_locator": "https://www.stadt-zuerich.ch/content/dam/vbz/de/die-vbz/zahlen-fakten/geschaeftsbericht/Z4690_VBZ_FB-2025_Web.pdf",
+      "scope": "VBZ2025 facts PDFpage6 gives446 stops on city territory, separately235agglomeration stops. Official2020 council definition distinguishes stops from usually two directional platform edges. Published aggregate stop unit accepted; no independent named-stop deduplication of2025total. Operator inventory, not all-operator completeness.",
+      "limitations": "Facility supply only, not modal share, service frequency, accessibility, equal neighborhood opportunity or teenage usage. Unknown other operators/modes keep utility upper1."
+    },
+    {
+      "city": "Helsinki",
+      "indicator": "public_transport_density",
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.05188478301237589,
+        1
+      ],
+      "raw_count": 19,
+      "population": 694392,
+      "population_year": 2025,
+      "population_source": "Unchanged authoritative attachment; no external population recheck",
+      "sourceyear": 2026,
+      "density_per_100000_lower": 2.7362066383253265,
+      "utility_anchor": 50,
+      "lower_bound_only": true,
+      "source_locator": "https://kaupunkiliikenne.fi/liikennointi/metrolla/",
+      "scope": "Current official operator explicitly partitions30metro stations into19Helsinki and11Espoo. Count19unique stations once, not line memberships or platforms. November2026snapshot; not retrospectively labeled2025. Other modes unknown.",
+      "limitations": "Facility supply only, not modal share, service frequency, accessibility, equal neighborhood opportunity or teenage usage. Unknown other operators/modes keep utility upper1."
+    },
+    {
+      "city": "Singapore",
+      "indicator": "travel",
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.21048364240400919,
+        0.6188393016393301
+      ],
+      "kind": "historical_school_stage_proxy",
+      "sourceyear": 2020,
+      "scope": "Resident school travellers in published education stages in 2020; excludes home study and overseas >=6 months. Stage means do not identify ages14-18 or2025 outcomes. All-stage denominator from Table93; unrepresented resident students retain utility[0,1]. Convex hull leaves stage mixture unknown. These are weighted household survey estimates, not complete headcounts. Conditional on published survey estimates; not a sampling confidence interval.",
+      "withdrawal": "restore[0,1]for exact14-18 or2025 interpretation"
+    },
+    {
+      "city": "Prague",
+      "indicator": "upper_secondary_ptr",
+      "kind": "teacher_interval",
+      "admissible": "conditional_upper_secondary_school_resource_fte",
+      "year": "2024/25",
+      "students": 71325,
+      "teacher_fte_bounds": [
+        6139.2,
+        6139.4
+      ],
+      "teacher_fte_central": 6139.3,
+      "ratio_central": 11.617774013323995,
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.5635292173817261,
+        0.563537230136584
+      ],
+      "scope": "Prague city-region schools; all secondary school founders, all study modes incl non-daytime/adults; subtract compulsory-school pupils and lower-gymnasium teaching FTE. Not resident-only or age14-18-specific; excludes separately reported conservatoires.",
+      "source_url": "https://csu.gov.cz/docs/107508/299702e7-bc0a-1dc2-87db-600d0303f2f4/23004225.pdf?version=1.1",
+      "source_file": "prague_csu_schools2025.pdf",
+      "source_sha256": "ac7bb14da5858475aaf212b40b4c7740ce40bfc3837f9e549e224d90ba755816",
+      "table": "3.1.3, PDF183 printed182; crosscheck6.1.18 PDF317 printed316",
+      "calculation": {
+        "students_total": 80073,
+        "compulsory_students": 8748,
+        "teacher_fte_total": 6877.1,
+        "lower_gymnasium_teacher_fte": 737.8,
+        "teacher_rounding_rule": "each published FTE rounded to0.1; difference conservatively\u00b10.1",
+        "teacher_definition": "full-time-equivalent teachers, not headcount"
+      },
+      "geography_note": "Hlavni mesto Praha row, not Stredocesky kraj; school resource geography",
+      "source_hashes": {
+        "data/task4_v120_education/prague_csu_schools2025.pdf": "ac7bb14da5858475aaf212b40b4c7740ce40bfc3837f9e549e224d90ba755816"
+      },
+      "lower_stage_alignment": "Official report PDF74 identifies compulsory schooling within secondary schools specifically as lower multi-year gymnasium years; Table3.1.3 footnote2 defines teacher exclusion as grades1-4 of8-year and1-2 of6-year gymnasium. Conservatoires are separate chapter4 and separate columns in Table6.1.18, excluded from both numerator and denominator."
+    }
+  ],
+  "source_hashes": {
+    "data/task4_v120_transport/zurich_provider_sources.json": "43ee8ba161a4ca9ff17351d419cfb69d0c907471948aeb5e74bf7c4d753c49e2",
+    "data/task4_v120_transport/vbz_facts2025.pdf": "2369a75bc9f65d18575700f9f86bdb75baff98202f08731f53ce1af10a00839d",
+    "data/task4_v120_transport/helsinki_provider_source.json": "3bd2aacb9c259da0c4243a3dc3dda971224e8a9b675bbc1770789abc46e6d6b1",
+    "data/task4_v120_transport/observations.json": "470d781c6332def1f6a0f7901e0915a59f993e6a32aad697902063a6e4dde21f",
+    "data/task4_v120_transport/manifest.json": "cd5e5b18363fe6168eb3aeb41b67addf10be79cd19804c40a9d501bf7e4d0749",
+    "data/task4_v120_transport/extract.py": "613c6d949b3b1d8bca296debe4959f2f5dc38cefb9b79d80d19d1fd20d5d1881",
+    "data/task4_v120_transport/zurich_stop_unit_definition.json": "4aabe4aaf99098372fb21b607b7139bb2b1bef0fa12592bcb6334bbeb727ad2e",
+    "data/task4_v120_singapore/cop2020sr2.pdf": "38cd51e0362abf954d22b9a7e476c4f0b64b56ac2a03e6169db41e37875abcaa",
+    "data/task4_v120_singapore/travel_table_api.json": "bc5366fc964e8a9bce27993b767711c0abb81a5ce1a9498156b6b373f0509dee",
+    "data/task4_v120_singapore/extract.py": "d85f33e79c6372e1f0f85c476053b4aae19918344e90c5872cd4f638497a7381",
+    "data/task4_v120_singapore/derived_bounds.json": "5976113766e4a40ce72e4ac64dd1f2be6637120ad27a1f45278d85ca962a054d",
+    "data/task4_v120_education/nonadmission_audit.json": "6ca4f2dc1b6ec1ee15fec15073d7bd70d74e3315490a168e4c1f17356415fe3e",
+    "data/task4_v120_education/prague_csu_schools2025.pdf": "ac7bb14da5858475aaf212b40b4c7740ce40bfc3837f9e549e224d90ba755816",
+    "data/task4_v120_education/prague_scope_definitions.txt": "7a3821f95d572ae3c33c78029bf2354b91f9eb520c5c780162ad7b991e5277df",
+    "data/task4_v120_education/prague_table3_1_3_and_teacher_crosscheck.txt": "fdee94984b873e7163bc8d608c1c34ae57901b1c2a3213ed5ae2922d061f07e0",
+    "data/task4_v120_education/helsinki_education2024.pdf": "b2609ed11cc89e560de63740f0531fae7cb5aa293e0907bbfebc80b4dde91099",
+    "data/task4_v120_education/zurich_teachers_gender2024.csv": "c02ddf59b3b620a4e12d017121244c3ce6881e7a18f12f6c18aca16c1be6645a",
+    "data/task4_v120_education/helsinki_relevant_pages.txt": "c79d095df8fcaa58ac680ec3f3692ead7996454aa0e383b32c488fc8d82e6d57",
+    "data/task4_v120_education/observations.json": "281917831db0d0697a4eac78f4ba0c7335a771eb04660c8ba129fd44b7736d8f",
+    "data/task4_v120_education/manifest.json": "efad006e259d4a9135061e4d39eb76719550914afefebf3ae92220565abb9b07",
+    "data/task4_v120_education/prague_candidate.json": "281917831db0d0697a4eac78f4ba0c7335a771eb04660c8ba129fd44b7736d8f",
+    "data/task4_v120_education/zurich_students2024.xlsx": "6234f5b6cf617af10db16c5930105df4183eade7df47564858cc5dfe010bc251"
+  }
+}

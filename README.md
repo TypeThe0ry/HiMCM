@@ -14,8 +14,9 @@
 
 | 想了解什么 | 入口 |
 | --- | --- |
-| 当前扩展：V119 | [未来改善阈值、偏好扰动与同国案例](research/2026-a/results/task4_v119_revision/README.md) |
-| 当前主模型：16城V118 | [只补6个缺失格：平均区间缩窄4.62%，可能冠军仍16城](research/2026-a/results/task4_user_v118_revision/README.md) |
+| 当前主模型：16城V120 | [四格真实补数：区间缩小5.62%，Zurich保守首选，冠军集合仍16城](research/2026-a/results/task4_user_v120_revision/README.md) |
+| 上轮扩展：V119 | [未来改善阈值、偏好扰动与同国案例](research/2026-a/results/task4_v119_revision/README.md) |
+| 上轮模型：16城V118 | [只补6个缺失格：平均区间缩窄4.62%，可能冠军仍16城](research/2026-a/results/task4_user_v118_revision/README.md) |
 | 用户提供的16城数据 | [按附件原值计算：Oslo保守推荐，16城仍可能第一](research/2026-a/results/task4_user_city_indicators/README.md) |
 | V117跨城市补数 | [多伦多11→3，四项真实数据准入，可能冠军仍25城](research/2026-a/results/task4_v117_city_revision/README.md) |
 | V111真实旅时敏感性 | [五尺度重算：推荐稳定，中间排名敏感](research/2026-a/results/task4_v111_intake/README.md) |

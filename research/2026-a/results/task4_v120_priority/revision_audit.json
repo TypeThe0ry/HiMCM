@@ -1,0 +1,136 @@
+{
+  "status": "pass",
+  "phase": "final four-cell audit",
+  "checks": [
+    {
+      "scenario": "before",
+      "changed_cells": []
+    },
+    {
+      "scenario": "only_Zurich",
+      "changed_cells": [
+        [
+          "Zurich",
+          "public_transport_density"
+        ]
+      ]
+    },
+    {
+      "scenario": "only_Helsinki",
+      "changed_cells": [
+        [
+          "Helsinki",
+          "public_transport_density"
+        ]
+      ]
+    },
+    {
+      "scenario": "only_Singapore",
+      "changed_cells": [
+        [
+          "Singapore",
+          "travel"
+        ]
+      ]
+    },
+    {
+      "scenario": "only_Prague",
+      "changed_cells": [
+        [
+          "Prague",
+          "upper_secondary_ptr"
+        ]
+      ]
+    },
+    {
+      "scenario": "after_conditional",
+      "changed_cells": [
+        [
+          "Zurich",
+          "public_transport_density"
+        ],
+        [
+          "Helsinki",
+          "public_transport_density"
+        ],
+        [
+          "Prague",
+          "upper_secondary_ptr"
+        ],
+        [
+          "Singapore",
+          "travel"
+        ]
+      ]
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "changed_cells": [
+        [
+          "Zurich",
+          "public_transport_density"
+        ],
+        [
+          "Helsinki",
+          "public_transport_density"
+        ],
+        [
+          "Prague",
+          "upper_secondary_ptr"
+        ]
+      ]
+    }
+  ],
+  "protected_nonmissing_cells_unchanged": 130,
+  "before_bounds_equal_V118": true,
+  "mc_before_exact_equal_V118_all_six_settings": true,
+  "independent_scores_regrets_ranks_champions": true,
+  "self_exclusion_explanation": [
+    {
+      "weights": "fixed",
+      "zurich_lower": 53.53548155805037,
+      "oslo_lower": 54.29593512353314,
+      "zurich_upper": 72.18378687093758,
+      "max_other_upper_for_zurich": 70.90352791308969,
+      "max_other_upper_city_for_zurich": "Dublin",
+      "zurich_regret": 17.36804635503932,
+      "oslo_regret": 17.88785174740444,
+      "minimax": "Zurich"
+    },
+    {
+      "weights": "equal",
+      "zurich_lower": 54.44096598573771,
+      "oslo_lower": 53.880735264731115,
+      "zurich_upper": 73.91065843982271,
+      "max_other_upper_for_zurich": 71.07174500198964,
+      "max_other_upper_city_for_zurich": "Dublin",
+      "zurich_regret": 16.63077901625193,
+      "oslo_regret": 20.029923175091596,
+      "minimax": "Zurich"
+    }
+  ],
+  "source_hashes": {
+    "results/task4_user_v120_revision/utility_bounds.csv": "9c2cd87412d1c15f88580620fd73d35613987a52348fa63ecc6e5a9a7969390d",
+    "results/task4_user_v120_revision/all_ranks.csv": "0954f7f091ff814f4bbcdf6a0b7af447ca0abba67c962a849bdd7733953d6f5d",
+    "results/task4_user_v120_revision/mc_city_summary.csv": "3a9048944788d58640f371bb093461ba6597233b3f23d165f3952a9aa3db7138"
+  },
+  "total_unchanged_cells": 156,
+  "Prague_formula_verified": true,
+  "mc_recommendation_frequencies_independently_recomputed_all18settings": true,
+  "final_results": [
+    {
+      "weights": "fixed",
+      "mean_width": 16.93440560207023,
+      "Zurich_rank": 1,
+      "Prague_rank": 4
+    },
+    {
+      "weights": "equal",
+      "mean_width": 19.938222372262075,
+      "Zurich_rank": 1,
+      "Prague_rank": 4
+    }
+  ],
+  "full_withdrawal_note": "Independently called revised_bounds(set()) and previous V118 factory; both input matrices restore exactly. Existing saved historical-stage withdrawal retains other3updates.",
+  "full_withdrawal_exactly_restores_V118": true
+}

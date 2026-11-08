@@ -1,0 +1,48 @@
+[
+  {
+    "city": "Zurich",
+    "indicator": "public_transport_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.6691999234771387,
+      1
+    ],
+    "raw_count": 446,
+    "population": 440935,
+    "population_year": 2025,
+    "population_source": "Unchanged authoritative attachment; no external population recheck",
+    "sourceyear": 2025,
+    "density_per_100000_lower": 101.14869538594124,
+    "utility_anchor": 50,
+    "lower_bound_only": true,
+    "source_locator": "https://www.stadt-zuerich.ch/content/dam/vbz/de/die-vbz/zahlen-fakten/geschaeftsbericht/Z4690_VBZ_FB-2025_Web.pdf",
+    "scope": "VBZ2025 facts PDFpage6 gives446 stops on city territory, separately235agglomeration stops. Official2020 council definition distinguishes stops from usually two directional platform edges. Published aggregate stop unit accepted; no independent named-stop deduplication of2025total. Operator inventory, not all-operator completeness.",
+    "limitations": "Facility supply only, not modal share, service frequency, accessibility, equal neighborhood opportunity or teenage usage. Unknown other operators/modes keep utility upper1."
+  },
+  {
+    "city": "Helsinki",
+    "indicator": "public_transport_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.05188478301237589,
+      1
+    ],
+    "raw_count": 19,
+    "population": 694392,
+    "population_year": 2025,
+    "population_source": "Unchanged authoritative attachment; no external population recheck",
+    "sourceyear": 2026,
+    "density_per_100000_lower": 2.7362066383253265,
+    "utility_anchor": 50,
+    "lower_bound_only": true,
+    "source_locator": "https://kaupunkiliikenne.fi/liikennointi/metrolla/",
+    "scope": "Current official operator explicitly partitions30metro stations into19Helsinki and11Espoo. Count19unique stations once, not line memberships or platforms. November2026snapshot; not retrospectively labeled2025. Other modes unknown.",
+    "limitations": "Facility supply only, not modal share, service frequency, accessibility, equal neighborhood opportunity or teenage usage. Unknown other operators/modes keep utility upper1."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "city": "Prague",
+    "indicator": "upper_secondary_ptr",
+    "kind": "teacher_interval",
+    "admissible": "conditional_upper_secondary_school_resource_fte",
+    "year": "2024/25",
+    "students": 71325,
+    "teacher_fte_bounds": [
+      6139.2,
+      6139.4
+    ],
+    "teacher_fte_central": 6139.3,
+    "ratio_central": 11.617774013323995,
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.5635292173817261,
+      0.563537230136584
+    ],
+    "scope": "Prague city-region schools; all secondary school founders, all study modes incl non-daytime/adults; subtract compulsory-school pupils and lower-gymnasium teaching FTE. Not resident-only or age14-18-specific; excludes separately reported conservatoires.",
+    "source_url": "https://csu.gov.cz/docs/107508/299702e7-bc0a-1dc2-87db-600d0303f2f4/23004225.pdf?version=1.1",
+    "source_file": "prague_csu_schools2025.pdf",
+    "source_sha256": "ac7bb14da5858475aaf212b40b4c7740ce40bfc3837f9e549e224d90ba755816",
+    "table": "3.1.3, PDF183 printed182; crosscheck6.1.18 PDF317 printed316",
+    "calculation": {
+      "students_total": 80073,
+      "compulsory_students": 8748,
+      "teacher_fte_total": 6877.1,
+      "lower_gymnasium_teacher_fte": 737.8,
+      "teacher_rounding_rule": "each published FTE rounded to0.1; difference conservatively\u00b10.1",
+      "teacher_definition": "full-time-equivalent teachers, not headcount"
+    },
+    "geography_note": "Hlavni mesto Praha row, not Stredocesky kraj; school resource geography",
+    "source_hashes": {
+      "data/task4_v120_education/prague_csu_schools2025.pdf": "ac7bb14da5858475aaf212b40b4c7740ce40bfc3837f9e549e224d90ba755816"
+    },
+    "lower_stage_alignment": "Official report PDF74 identifies compulsory schooling within secondary schools specifically as lower multi-year gymnasium years; Table3.1.3 footnote2 defines teacher exclusion as grades1-4 of8-year and1-2 of6-year gymnasium. Conservatoires are separate chapter4 and separate columns in Table6.1.18, excluded from both numerator and denominator."
+  }
+]

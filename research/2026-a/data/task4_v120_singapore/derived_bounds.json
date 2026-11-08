@@ -1,0 +1,74 @@
+{
+  "city": "Singapore",
+  "indicator": "travel",
+  "year": 2020,
+  "profiles": [
+    {
+      "field": "Secondary_Total",
+      "count": 172487,
+      "counts": [
+        46434,
+        71367,
+        31872,
+        17246,
+        5568
+      ],
+      "utility_lower": 0.3702472761930922,
+      "utility_upper": 0.6148199608518994,
+      "all_stage_estimate": 174298,
+      "uncovered_estimate": 1811,
+      "resident_lower": 0.36640032503065717,
+      "resident_upper": 0.6188393016393301
+    },
+    {
+      "field": "Post_Secondary_Non_Tertiary_Total",
+      "count": 55674,
+      "counts": [
+        3984,
+        16274,
+        14821,
+        14188,
+        6407
+      ],
+      "utility_lower": 0.24481173316811086,
+      "utility_upper": 0.41924886100964337,
+      "all_stage_estimate": 56663,
+      "uncovered_estimate": 989,
+      "resident_lower": 0.2405388096087956,
+      "resident_upper": 0.42943836688145387
+    },
+    {
+      "field": "PolytechnicDiploma_Total",
+      "count": 71041,
+      "counts": [
+        3509,
+        16276,
+        18692,
+        22250,
+        10314
+      ],
+      "utility_lower": 0.2153278638144602,
+      "utility_upper": 0.37470113729825305,
+      "all_stage_estimate": 72676,
+      "uncovered_estimate": 1635,
+      "resident_lower": 0.21048364240400919,
+      "resident_upper": 0.3888099310529208
+    }
+  ],
+  "stage_hull": [
+    0.21048364240400919,
+    0.6188393016393301
+  ],
+  "traveller_only_secondary_postsecondary_hull": [
+    0.24481173316811086,
+    0.6148199608518994
+  ],
+  "source_url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_e87b21cfebae1a77150eccded58ab116",
+  "pdf_url": "https://www.parliament.gov.sg/docs/default-source/default-document-library/cop2020sr2.pdf",
+  "source_sha256": {
+    "travel_table_api.json": "bc5366fc964e8a9bce27993b767711c0abb81a5ce1a9498156b6b373f0509dee",
+    "cop2020sr2.pdf": "38cd51e0362abf954d22b9a7e476c4f0b64b56ac2a03e6169db41e37875abcaa"
+  },
+  "rule": "exp(-t/30) endpoint integration, continuous bin closure, unbounded tail; rounded cell and total counts +/-0.5 propagated outward",
+  "scope": "Resident school travellers in published education stages in 2020; excludes home study and overseas >=6 months. Stage means do not identify ages14-18 or2025 outcomes. All-stage denominator from Table93; unrepresented resident students retain utility[0,1]. Convex hull leaves stage mixture unknown. These are weighted household survey estimates, not complete headcounts. Conditional on published survey estimates; not a sampling confidence interval."
+}

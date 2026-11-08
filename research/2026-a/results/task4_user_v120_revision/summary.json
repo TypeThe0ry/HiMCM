@@ -1,0 +1,391 @@
+{
+  "results": [
+    {
+      "scenario": "before",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_width": 17.942190021014284,
+      "kendall_tau": 1.0
+    },
+    {
+      "scenario": "before",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_width": 20.997104906613064,
+      "kendall_tau": 1.0
+    },
+    {
+      "scenario": "only_Zurich",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 17.780423539524325,
+      "kendall_tau": 0.9666666666666667
+    },
+    {
+      "scenario": "only_Zurich",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 20.67422110467043,
+      "kendall_tau": 0.9833333333333333
+    },
+    {
+      "scenario": "only_Helsinki",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_width": 17.929417295862116,
+      "kendall_tau": 1.0
+    },
+    {
+      "scenario": "only_Helsinki",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_width": 20.97320181810546,
+      "kendall_tau": 1.0
+    },
+    {
+      "scenario": "only_Singapore",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "mean_width": 17.643382217977233,
+      "kendall_tau": 0.9833333333333333
+    },
+    {
+      "scenario": "only_Singapore",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_width": 20.742401590850967,
+      "kendall_tau": 0.9833333333333333
+    },
+    {
+      "scenario": "only_Prague",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_width": 17.4077526117494,
+      "kendall_tau": 0.8833333333333333
+    },
+    {
+      "scenario": "only_Prague",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_width": 20.53971257847441,
+      "kendall_tau": 0.8833333333333333
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.93440560207023,
+      "kendall_tau": 0.8333333333333333
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 19.938222372262075,
+      "kendall_tau": 0.8666666666666667
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 17.23321340510728,
+      "kendall_tau": 0.8499999999999999
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 20.192925688024175,
+      "kendall_tau": 0.8666666666666667
+    }
+  ],
+  "changed_cells": 4,
+  "unchanged_cells": 156,
+  "point_cells": 112,
+  "partial_cells": 22,
+  "fully_missing_cells": 26,
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "mc_seed": 20261108,
+  "mc_draws_per_setting": 10000,
+  "scope": "Conditional mixed-year school-stage proxy arm and its explicit withdrawal; no claim of identified ages14-18 or2025 travel."
+}

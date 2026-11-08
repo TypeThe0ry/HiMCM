@@ -1,0 +1,11 @@
+# Zurich and Helsinki: city-scoped public-transport supply
+
+Zurich's original VBZ2025 factsPDF, page6, reports446 stops on city territory and separately235agglomeration stops. Only446is used. A2020official council response explicitly distinguishes Haltestellen from Haltekanten: a stop normally has two directional platform edges, with exceptions at intersections and terminals. The2025published stop total is used as an administrative aggregate in that terminology; no independent2025named-location deduplication is claimed. Shelters647, route lengths and platform counts are not substituted. This is the VBZ inventory, not proof of complete coverage of all operators.
+
+Helsinki's current official metropolitan transport operator states30metro stations, explicitly19inHelsinki and11inEspoo. Only19is used, once per station rather than once per serving line or platform. The source is a November2026snapshot, combined transparently with the unchanged2025attachment population. Other modes remain unknown.
+
+Both fill the otherwise unknown stop-density criterion, not the supplied modal-share column. Original attachment populations remain Zurich440935 and Helsinki694392. The unchanged rule is`d=count*100000/population; utility=[d/(50+d),1]`. These are facility-supply lower bounds, not observations of teenage access or service frequency; no finite inventory upper bound is established.
+
+Dublin's readily available official Luas totals cover the wider region and the central map does not establish a municipal-boundary census. No regional total was substituted for cityproper. The first Zurich CSV download endpoint returned anHTML application shell, not aCSV; it was discarded and the original annual factsPDF was used. Neither failed lead is archived as data.
+
+`vbz_facts2025.pdf` contains original downloadedPDF bytes. The remaining provider JSON files are clearly labeled Exa-extracted source text, not originalHTML/PDF bytes. `extract.py` verifies the originalPDF cell, city/agglomeration separation, stop/platform definition, Helsinki/Espoo partition and unchanged populations. It writes observations and file hashes. Run`python3 research/2026-a/data/task4_v120_transport/extract.py` from the repository root. No model, registry or existing measurements are edited.
