@@ -1,0 +1,23 @@
+{
+  "decision": "Verified sufficient moments for a labeled fixed-weight WR approximation, not the full official design variance",
+  "source_moments_sha256": "bccca90a8b323717a419c4b249ca598e4498674fdc4adadb62c110ecfb8f7b4a",
+  "person_rows": 442778,
+  "strata": 49,
+  "psus": 3433,
+  "singleton_strata": 0,
+  "degrees_freedom": 3384,
+  "zero_target_psus_retained": 586,
+  "checked_dimensions": 24,
+  "crossproduct_max_absolute_difference": 9.447740012547001e-08,
+  "checked_candidate_ratio_variances": 36,
+  "maximum_candidate_se": 0.0049668334071335295,
+  "local_raw_and_psu_files_gitignored": true,
+  "official_design": "Single-stage stratified cluster simple random sampling without replacement; full selected areas surveyed.",
+  "approximation": "Source uses final expansion weights as fixed and omits FPC. Final nonresponse adjustment does not establish calibration weights; no natural selection weights or stratum population PSU totals reconstructed.",
+  "limitations": [
+    "Only person-file observed PSUs included; wholly nonresponding sampled PSUs unknown.",
+    "Selected-extremum SE is not simultaneous confidence coverage.",
+    "Completed schooling remains a current-stage assumption.",
+    "No PSU/person IDs or dates are published by this audit."
+  ]
+}

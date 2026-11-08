@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "independent_scoring": true,
+  "core_scoring_functions_imported": false,
+  "bounds_verified": 1000,
+  "rank_rows_verified": 100,
+  "unchanged_other_cells_per_case": 249,
+  "withdrawal_exactly_restores_v107": true,
+  "baseline_matches_v107": true,
+  "source_endpoints_verified": true,
+  "inference_verified": {
+    "ratios_and_taylor_standard_errors": 36,
+    "all_nine_prefixes_per_side": true,
+    "design_df": 3384,
+    "point_outer_familywise_nesting": true,
+    "method": "Independent coefficient and quadratic-form reconstruction from hashed public moments; raw design aggregation checked separately."
+  },
+  "primary_binary_input_hash_verified": true,
+  "scenarios": [
+    {
+      "scenario": "v107_point",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "v108_outer",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "v108_familywise",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "v108_withdrawn",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    }
+  ],
+  "certificate_scope": "Independent scalar TOPSIS; monotonic endpoint enclosures over continuous alpha [0.05,0.2]. Floating-point numerical certificate, not directed-rounding formal arithmetic. All25 possible champions have the shared-alpha0.1 witness.",
+  "interpretation": "Approximate Taylor sampling outer envelope around conditional identification bounds; not a finite-sample coverage guarantee or unconditional population claim.",
+  "input_sha256": {
+    "utility_bounds.csv": "8d876fa79042522d39512f40d5266758c060615abd5ee3b7829119047f534f17",
+    "ranks.csv": "082672ea6512c01c32f2b8e58be76b61b1bca34fc5bbb47931c719deb1b4b743",
+    "recommendation_certificate.csv": "ed412c54c53161fdd9fbf6a86c9ae0c5403b8cfd530d60e190577fa8eebdc973",
+    "summary.json": "277fcb1fcaf096820c352ce2d58032445d104006f6b67738a996802d5bee0b0d",
+    "inference.json": "c17e484cd524922e901347402db8ed1fd28dbf6c9acf8bbc352950eb372cbb38"
+  }
+}
