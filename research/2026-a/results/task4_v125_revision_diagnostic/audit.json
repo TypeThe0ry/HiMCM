@@ -1,0 +1,44 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "weight_reference": "fixed",
+      "production_scores_and_saved_V124_match": true,
+      "self_excluded_regret_rank_champion_checks": true,
+      "midpoint_collapsed_decision_equals_score_order": true,
+      "endpoint_completion_has_all160_entries_at_endpoints": true,
+      "all112_point_entries_unchanged_in_every_completion": true,
+      "strict_interior_counterexample": true,
+      "all16_model_possible_champion_witnesses": true,
+      "endpoint_witness_realizes_revised_choice_maximum_regret": true
+    },
+    {
+      "weight_reference": "equal",
+      "production_scores_and_saved_V124_match": true,
+      "self_excluded_regret_rank_champion_checks": true,
+      "midpoint_collapsed_decision_equals_score_order": true,
+      "endpoint_completion_has_all160_entries_at_endpoints": true,
+      "all112_point_entries_unchanged_in_every_completion": true,
+      "strict_interior_counterexample": true,
+      "all16_model_possible_champion_witnesses": true,
+      "endpoint_witness_realizes_revised_choice_maximum_regret": true
+    }
+  ],
+  "source_CSV_registry_saved_rank_files_and_source_hashes_unchanged": true,
+  "authoritative_V124_all160_bounds_exactly_unchanged": true,
+  "V121_control_reproduces_V123_all_rank_columns": true,
+  "V121_control_csv_byte_equal": true,
+  "main_input_shape": [
+    16,
+    10
+  ],
+  "legacy25_used": false,
+  "output_sha256": {
+    "possible_champion_witnesses.csv": "7d0384b1c9976f77c2b2cb3a7092e3b07bef362f8ce76532bd40cebdb6a7f36e",
+    "rank_comparison.csv": "1c82fb663dc3debdf5a31fdd7ed24fc22911ebb5fe4455833cdc1764225f3ae7",
+    "utility_inputs.csv": "443a97decbbf652bfc9b8dacf41ecebcbb6c7ce7766721bd0aa17f1f0b88d1a3",
+    "v121_control_rank_comparison.csv": "148cc8b2a4aecd7c3ce68cc16d52b16f5dc9561f5079b0afe5854a31bae89b1f",
+    "witness_scores.csv": "73b572e4a5fe3774468e9b00394a12d9302abe1dc708956adbd2fd967cfd048e",
+    "witness_utilities.csv": "43dd96faf408980ea711e7661ead3cc054eeba28439db0acd9253b1fdc9f748c"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "extension_version": "V125",
+  "primary_evidence_version": "V124 user16",
+  "primary_data_revision": false,
+  "primary_registry": "design/task4_user_current_model.json",
+  "primary_factory": "task4_user_v124_revision.revised_bounds",
+  "city_count": 16,
+  "indicator_count": 10,
+  "modules": {
+    "preferences": {
+      "script": "scripts/task4_v125_preferences.py",
+      "results": "results/task4_v125_preferences"
+    },
+    "future": {
+      "script": "scripts/task4_v125_future.py",
+      "results": "results/task4_v125_future"
+    },
+    "method_country": {
+      "script": "scripts/task4_v125_method_country.py",
+      "results": "results/task4_v125_method_country"
+    },
+    "revision_diagnostic": {
+      "script": "scripts/task4_v125_revision_diagnostic.py",
+      "results": "results/task4_v125_revision_diagnostic"
+    }
+  },
+  "audit": "scripts/audit_task4_v125_extensions.py",
+  "audit_result": "results/task4_v125_revision/audit.json",
+  "manuscript_project": "https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894",
+  "manuscript_entry": "drafts/task4_v125_paper.tex",
+  "scope": "Controlled migration from frozen V121/V122/V123 to V124 evidence. Same criteria, weights, anchors, distributions and random streams. No data imputation, elicited AHP survey, annual prediction or certain champion. Legacy country, district and age cases remain separately versioned.",
+  "result_receipts_verified": {
+    "preferences": 27,
+    "future": 21,
+    "method_country": 26,
+    "revision_diagnostic": 20
+  },
+  "result_sha256": {
+    "results/task4_v125_preferences/audit.json": "848e27477a0dea8d7193eaf4f661abe50465c6f5d6bc48aea32c7617f35213e4",
+    "results/task4_v125_preferences/scenario_matrices.json": "3551255c7e595d98dcd1782cf6562a33fcff1511593c4ae51d864cd003988271",
+    "results/task4_v125_preferences/summary.json": "19e90776861973d2853a293baafc97433c333a0c76cf4cf38a710ff2446a0f6e",
+    "results/task4_v125_future/summary.json": "0eba0b84b59276827f7a1867c0c1596a91e8f9d781cfbd04ee64ccb53687f2e7",
+    "results/task4_v125_method_country/audit.json": "70e65d01f46079982a9c446e3bbc5e80b11aad5bc6c9716c408e709ca6c94e84",
+    "results/task4_v125_method_country/summary.json": "a04d71982dd62eac99654709513eec53b13cb7ab4cbf77a23e3ba3e1589c63a2",
+    "results/task4_v125_revision_diagnostic/audit.json": "5b45bf21a9bd54c8286217a0eeb36aa2650860a68d47586195fe622138dab01f",
+    "results/task4_v125_revision_diagnostic/summary.json": "ce36daa27d23e8195ed863763b5ec5fdf19e2141893f8000ff864f3cc382677b",
+    "results/task4_v125_revision/audit.json": "9e322d643b5c68a13f1ac950ab24ba1161c57445afcf42fd49c042f98af97022"
+  },
+  "source_hashes": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_current_model.json": "54401845911bcfb50a4dd71592fe23ac2d9ebe268cedfa09a6de0d7599e886d2",
+    "design/task4_user_v124_admissions.json": "f7431b93535eda48f1baef4b1cab99037d69b71c696f68d8608e14a2a2c67d56",
+    "scripts/audit_task4_v125_extensions.py": "4b8a396b7b07e0c6fef0cde979ec40d99d84d9ce6faa353714a7c44eb99c8285",
+    "scripts/task4_v125_preferences.py": "c969390518ddbd51ed319264669e7b84fe04dac8dabe5db43b8436859adae94b",
+    "scripts/task4_v125_future.py": "c82550da7eb621d29b0357f8ad2ef93251aadee24e3a08c83658f5a5d0f31c84",
+    "scripts/task4_v125_method_country.py": "1dd187e320e7aa2074aa70077c496a47eb398943ccbac5da6207a1e93212e112",
+    "scripts/task4_v125_revision_diagnostic.py": "4a0f58df984b416e86a1313205d838432866661f9e8764787706b117bdbdf91c"
+  }
+}

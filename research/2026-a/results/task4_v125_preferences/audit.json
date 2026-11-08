@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "main_input_shape": [
+    16,
+    10
+  ],
+  "changed_evidence_cells": 2,
+  "V121_control_exactly_matches_frozen_V122": [
+    "ranks",
+    "weights",
+    "mc_all9_settings_all144_city_rows",
+    "all160_bounds",
+    "scenario_matrices",
+    "profile_summaries"
+  ],
+  "deterministic_profile_checks": 6,
+  "independent_mc_settings": 18,
+  "draws_per_setting": 10000,
+  "explicit_fractional_tie_cases": 3,
+  "every_draw_independent_tie_credits_ranks_and_top3_checked": true,
+  "independent_quantities": [
+    "weighted norms",
+    "self-excluded regret",
+    "possible/necessary champion",
+    "tie-credit recommendation",
+    "mean rank",
+    "top3 membership"
+  ],
+  "unchanged_profiles_weights_seeds_and_draws": true,
+  "V124_baseline_ranks_and_all3_MC_settings_exactly_match": true,
+  "source_CSV_registry_legacy_files_and_hashes_unchanged": true,
+  "V124_all160_bounds_exactly_unchanged": true
+}

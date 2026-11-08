@@ -2,6 +2,8 @@
 
 > **长期goal保持active：** 用户要求持续迭代论文与论文材料，所有新增／修改文字必须使用已安装的中英文anti-defensive-writing技能。先读[长期工作计划](LONGTERM_GOAL.md)和[强制技能规则](../guidelines/ANTI_DEFENSIVE_WRITING.md)，再按当前数据与稿件权限推进；不要把单轮任务完成误记为长期goal完成。
 
+> **V125最新：** 主数据仍16城V124，偏好／未来／方法／受控修订已统一重跑并独立审计；Overleaf当前完整独立审阅稿为`drafts/task4_v125_paper.tex/.pdf`（17页主文+1页暂定AI记录）。先读[V125交接](V125_RESEARCH_UPDATE.md)和[总审计](../../research/2026-a/results/task4_v125_revision/README.md)。新tau为独立生活0.883333、fixed方法0.500000、equal修订0.650000；勿沿用旧值。Zurich仍保守推荐、教育优先Oslo、16可能冠军。控制号／完整AI史／主稿整合／公开推送选择未解决，goal保持active；以下为历史状态。
+
 > **V124最新：** 主注册表已指向16城V124，新增Madrid交通／Tokyo泳池两格真实下界；平均fixed宽度16.18302472→16.15002092（约0.204%），Zurich仍保守推荐、可能冠军仍16城。先读[V124交接](V124_RESEARCH_UPDATE.md)和[主结果](../../research/2026-a/results/task4_user_v124_revision/README.md)。Overleaf V124为三页配套材料；V123完整稿及V122扩展仍固定V121，下一轮须重跑扩展并统一全文。下方V123/V122/V121为历史记录。公开GitHub推送仍待用户选择，不擅改可见性。
 
 > **V123最新：** 主数据仍16城V121；新增[受控修订诊断与完整审阅稿交接](V123_RESEARCH_UPDATE.md)。Overleaf独立稿`drafts/task4_v123_paper.tex/.pdf`为17页主解答+1页暂定AI报告，已编译渲染；控制号/完整AI史未核实，不可直接提交。GitHub现为PUBLIC，赛期公开推送问题已询问用户，答复前暂缓本轮研究公开push、不擅改可见性。下方V122及V120/V121为历史恢复记录。

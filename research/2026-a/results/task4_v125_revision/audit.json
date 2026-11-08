@@ -1,0 +1,272 @@
+{
+  "status": "pass",
+  "immutable_baseline_commit": "8565a65",
+  "V124_all160_bounds_CSV_registry_and_primary_outputs_unchanged": true,
+  "input_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_current_model.json": "54401845911bcfb50a4dd71592fe23ac2d9ebe268cedfa09a6de0d7599e886d2",
+    "design/task4_user_v124_admissions.json": "f7431b93535eda48f1baef4b1cab99037d69b71c696f68d8608e14a2a2c67d56",
+    "results/task4_user_v124_revision/all_ranks.csv": "45467586f484e70af9e6aec80434b9c786eeaf90906f3799dc59b60bf78d3195",
+    "results/task4_user_v124_revision/current_ranks.csv": "98026af3c8b38480f140d4c39f8ef5fe9d7a9a35bbb20cea6509e54c6008633a",
+    "results/task4_user_v124_revision/mc_city_summary.csv": "3e54ae5fd2360d0922d5b2c325af4f6cd3b284d2ac26b9876442bed78777ec13",
+    "results/task4_user_v124_revision/utility_bounds.csv": "b19f372dd5e7b0c0a21aa353cac66e40b99980ddd783ddf3db7468936fe70bf3",
+    "results/task4_user_v124_revision/summary.json": "808af434f482d57f6ddf962c35de9ed36a0a05b34b88da8d2ee110ff984fdab6"
+  },
+  "preferences_independent_MC_settings": [
+    [
+      "baseline",
+      20
+    ],
+    [
+      "baseline",
+      100
+    ],
+    [
+      "baseline",
+      500
+    ],
+    [
+      "education_priority",
+      20
+    ],
+    [
+      "education_priority",
+      100
+    ],
+    [
+      "education_priority",
+      500
+    ],
+    [
+      "independent_living_priority",
+      20
+    ],
+    [
+      "independent_living_priority",
+      100
+    ],
+    [
+      "independent_living_priority",
+      500
+    ]
+  ],
+  "future_deterministic_arms": 16,
+  "future_threshold_scan_points": 3232,
+  "future_threshold_cases": 32,
+  "future_shock_independent_settings": [
+    [
+      "conditional",
+      "fixed",
+      "resource_expansion"
+    ],
+    [
+      "conditional",
+      "fixed",
+      "living_pressure"
+    ],
+    [
+      "conditional",
+      "fixed",
+      "balanced_improvement"
+    ],
+    [
+      "conditional",
+      "equal",
+      "resource_expansion"
+    ],
+    [
+      "conditional",
+      "equal",
+      "living_pressure"
+    ],
+    [
+      "conditional",
+      "equal",
+      "balanced_improvement"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "fixed",
+      "resource_expansion"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "fixed",
+      "living_pressure"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "fixed",
+      "balanced_improvement"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "equal",
+      "resource_expansion"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "equal",
+      "living_pressure"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "equal",
+      "balanced_improvement"
+    ]
+  ],
+  "future_weight_independent_settings": [
+    [
+      "conditional",
+      "fixed",
+      "baseline"
+    ],
+    [
+      "conditional",
+      "fixed",
+      "resource_expansion"
+    ],
+    [
+      "conditional",
+      "fixed",
+      "living_pressure"
+    ],
+    [
+      "conditional",
+      "fixed",
+      "balanced_improvement"
+    ],
+    [
+      "conditional",
+      "equal",
+      "baseline"
+    ],
+    [
+      "conditional",
+      "equal",
+      "resource_expansion"
+    ],
+    [
+      "conditional",
+      "equal",
+      "living_pressure"
+    ],
+    [
+      "conditional",
+      "equal",
+      "balanced_improvement"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "fixed",
+      "baseline"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "fixed",
+      "resource_expansion"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "fixed",
+      "living_pressure"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "fixed",
+      "balanced_improvement"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "equal",
+      "baseline"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "equal",
+      "resource_expansion"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "equal",
+      "living_pressure"
+    ],
+    [
+      "withdraw_historical_stage_proxy",
+      "equal",
+      "balanced_improvement"
+    ]
+  ],
+  "draws_per_setting": 10000,
+  "method_independent_cases": [
+    [
+      "V121",
+      "fixed",
+      true,
+      true
+    ],
+    [
+      "V121",
+      "equal",
+      false,
+      false
+    ],
+    [
+      "V124",
+      "fixed",
+      true,
+      true
+    ],
+    [
+      "V124",
+      "equal",
+      false,
+      false
+    ]
+  ],
+  "historical_cases_identical_to_audited_V122": [
+    "country_score_comparison.csv",
+    "country_indicator_bounds.csv",
+    "user16_country_coverage.csv",
+    "shanghai_district_resources.csv",
+    "istanbul_historical_age_groups.csv",
+    "singapore2020_secondary_exact_age_counts.csv"
+  ],
+  "diagnostic_completion_independent_references": [
+    "fixed",
+    "equal"
+  ],
+  "current_prior_historical_inventory_withdrawal_recommends_Zurich": true,
+  "result_sha256": {
+    "results/task4_v125_preferences/baseline_matrix.csv": "b0c5778d4682c51ad149ecb4656674ac71f16cb0a1fe2969cf27357f7b950bf5",
+    "results/task4_v125_preferences/control_v121_mc_city_summary.csv": "01070eb2503bac0977f2e630be3e82fab78e9f1aedbff9165e907c0963dcc225",
+    "results/task4_v125_preferences/control_v121_ranks.csv": "2e852f84a1827913726b5a4c9f6a101f2ea1b0c0ee3617042e2a73023d9d03e8",
+    "results/task4_v125_preferences/education_priority_matrix.csv": "6f4dc9b2ddf4d8c338c8b246d02e98b2d5046c3e7aaa3f1b43eb063a7bc38dea",
+    "results/task4_v125_preferences/independent_living_priority_matrix.csv": "7c22ad43c94b6bc90117c9fe2b876debb2fdb8d039ab309455ed4a1f3b771710",
+    "results/task4_v125_preferences/mc_city_summary.csv": "0eb96b800d715381cc4b33a5ada4ef541c9e28a31d5beba89314417809ca7f3e",
+    "results/task4_v125_preferences/ranks.csv": "7e2fc43e3a7b5ffdb77a51991729268e1c675c890732984e68914f5c85877496",
+    "results/task4_v125_preferences/utility_bounds.csv": "b07f5d2f05cdec2706e0b39d7e5a21380cf01c6b87f55e46adaf5214f831a21c",
+    "results/task4_v125_preferences/v122_mc_comparison.csv": "35f75392373cec70e966ad62233688d944a515de54868f958e4faa9293bf59f2",
+    "results/task4_v125_preferences/v122_rank_comparison.csv": "f1d2748ec7e509fd61e9863e199d4f930b81ca7ed506ec96f4e1ec671c3c985d",
+    "results/task4_v125_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v125_future/future_mc_city_summary.csv": "46996c94605dcc71c822daa604defa2623e709c8402a84b559e004c8d8aeb2f4",
+    "results/task4_v125_future/future_mc_city_summary_v121_comparison.csv": "0f510f9d5fdc640135eb1d5f97f860309b8e19e444a8dc9bd8a1cf218f821bfa",
+    "results/task4_v125_future/ranks.csv": "a86ad4b6a7a615076bf776a2b6f70476c654596102472179b198d92389bc9b95",
+    "results/task4_v125_future/ranks_v121_comparison.csv": "1fd4c2ec06318dee3eb2b8f93b87467eb659b15e05c0c116bab6b07df5455d0f",
+    "results/task4_v125_future/threshold_scan.csv": "756545531c401226fe769ab7fb18cc1b2e0b1a400e372ca11aec161cdbffa372",
+    "results/task4_v125_future/thresholds.csv": "705ca5493ee71629e3277c6aee5ba495b70fb4efb06c4cf5a26190f3dbeaa48f",
+    "results/task4_v125_future/thresholds_v121_comparison.csv": "867d24b43adf03e9c9d8eaa0f4c3b9f260db917b79ca893facba88e690dc1071",
+    "results/task4_v125_future/utility_bounds.csv": "1f5071910d8da21dca1579709a75f7d5a1a1cdc9df7c52f29d2580ce78cc58e2",
+    "results/task4_v125_future/weight_mc_city_summary.csv": "cd9bb32cfdd91158833820d790817279234112412672371c2eb9ba154da0ddd2",
+    "results/task4_v125_future/weight_mc_city_summary_v121_comparison.csv": "a43f73b833d923233a3273fc046e8dd6dfb5b40d660ed7895a710581abfcbc9a",
+    "results/task4_v125_method_country/country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "results/task4_v125_method_country/country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa",
+    "results/task4_v125_method_country/istanbul_historical_age_groups.csv": "b4072312d9cedb8b657c1836465f8471a1f20b96aa15d136f07f351884c2f34b",
+    "results/task4_v125_method_country/method_components.csv": "88f8c8eed7f16f4175985e30f6951119b4bf47d1053890189abb49d225010a74",
+    "results/task4_v125_method_country/method_ranks.csv": "58a1cabd7701df9357e8a317e092f40a892ef351fd04e6768fabbf4bb32ee86b",
+    "results/task4_v125_method_country/method_utility_inputs.csv": "fb05f0e9dbba53765621ca13de4add27d9281ec570b179bfeaae2311887c8343",
+    "results/task4_v125_method_country/shanghai_district_resources.csv": "1dd303f0fb9ddf7413051764b4790716717e48c7d8f94cc95467f89652e6f818",
+    "results/task4_v125_method_country/singapore2020_secondary_exact_age_counts.csv": "5569790bf18c6543454ef1c84d86faa632a53b19126fd85a1482ff859a7dc560",
+    "results/task4_v125_method_country/user16_country_coverage.csv": "5627fcafcd902d3ca9c14d80026d75c2637192d62445f61da3061a3957507e4e"
+  }
+}
