@@ -1,5 +1,7 @@
 # 当前模型：V96 Warsaw六类高中路径师资修订（2026-11-08）
 
+V98将[压力检验证书](../results/task4_v98_joint_stress/README.md)更新到当前V96输入，并修正统一结果入口遗留的V79说明。全城共同扩张与单城扩张的结论保持：前者在ε≤0.20内推荐Singapore，后者ε=0.043、α=0.05出现Tokyo反例。该检验没有收缩真实缺失区间。
+
 V97完成[共同补数情景的可达性证明](../results/task4_v97_intake/README.md)：24个当前V96案例的逐城市下界均由同一组揭示值达到；全城教育＋通学的模型内最小候选数为固定9、连续22。实际25城可能冠军及全部排名保持；Warsaw青年／成人FTE拆分尚缺官方数值，未准入二手数据。
 
 V96以[同年度官方年鉴](../results/task4_v96_intake/README.md)将Warsaw教育由普通高中条件范围扩展为六类青年高中路径、公私立学校，保留成人教师分配界。Warsaw第12→8，其他249格保持、可能冠军仍25城；仅年份更新不改变排名。[补数下界](../results/task4_v96_acquisition_limits/README.md)同步更新至V96，其余已登记诊断仍标注V91历史输入。当前入口为 `task4_warsaw_resource_revision.warsaw_bounds()`。

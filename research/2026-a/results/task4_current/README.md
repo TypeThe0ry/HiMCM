@@ -1,8 +1,8 @@
-# 当前模型统一复算入口（V79）
+# 当前模型统一复算入口（V96）
 
-当前注册模型为 **V79**，见[Delhi同源教师分配修订](../task4_v79_delhi_allocation/README.md)。Delhi教育区间更新为[0.398579,0.428686]，其他249格与V78一致；Delhi由第13变第14，Santiago由第14变第13。可能冠军仍25城，连续α∈[0.05,0.20]推荐Singapore。
+当前注册模型为 **V96**，最新审查为V98。Warsaw采用六类青年高中路径的同年度学生与教师资料，教师分配不明部分保留区间；Phoenix使用市内已观测PM2.5监测范围。默认决策排名Singapore第1、Warsaw第8、Phoenix第16，固定与连续偏好下可能冠军均为25城。
 
-本目录已刷新为V79，历史基线保留原位。V80已在V79上重算[补数下界](../task4_v80_acquisition_limits/README.md)与[精度阈值](../task4_v80_precision_frontier/README.md)；V72压力测试仍是历史输入。统一入口核验全部250格及5城通学来源。
+本目录由注册表重算，核验250个效用区间及5城通学来源。最新[压力检验](../task4_v98_joint_stress/README.md)已使用V96输入；[共同补数能力分析](../task4_v97_joint_acquisition/README.md)同样基于V96。V91补数与精度阈值分析仍是历史结果，版本由注册表分别记录。
 
 在仓库根目录运行：
 
@@ -15,15 +15,11 @@ python3 research/2026-a/scripts/test_task4_current_model.py
 
 V65的工程改进是防止误用历史模型入口。测试包含“交换两个等权指标，分数不变但数据含义错误”的反例：仅检查排名会漏过，逐格身份与数值核查会拒绝。这个改进提高复算可核查性，没有带来新的实测精度或冠军集合缩小。
 
-## V65历史来源核查
+## 数据与版本入口
 
-| 城市 | 取得或定位的资料 | 对模型的影响 |
-| --- | --- | --- |
-| Phoenix | [MAG公开TRP服务字段审计](../../data/task4_v65_phoenix_public_trp/README.md)：2022员工通勤均值，没有学生年龄或年级字段 | 新准入高中生观测0，保持缺失区间 |
-| London | [LTDS工作簿及三份官方原件](../../data/task4_v65_london_ltds/README.md)：30表，没有目标年龄、当前高中学段与到校时间联合表 | 保持区间；微观数据仍待取得与核验 |
-| Bogotá | [EODH2023官方问卷和数据入口](../../data/task4_v65_bogota_eodh/README.md)：下载受阻，未取得原问卷 | 当前年级定义仍待核验，保持区间 |
+[Warsaw师资修订](../task4_v96_warsaw_revision/README.md) · [Phoenix监测修订](../task4_v91_phoenix_monitor/README.md) · [当前通学证据索引](travel_evidence.csv)。Cape Town使用GHS2025的182名14—18岁、当前10—12年级学生；旧验证码请求已不适用。
 
-Cape Town已采用[2025年原始微观数据](../../data/task4_v63_cape_travel/README.md)，182名14—18岁当前10—12年级学生。早先GHS2023网页验证请求不影响此轮复算。Cape Town仍第5，Phoenix仍第24。所有本队论文材料继续在Overleaf维护，本轮没有修改论文。
+历史V65来源核查保留在各数据目录及Git历史中。研究更新不自动改写Overleaf论文。
 
 ## 当前公式
 
