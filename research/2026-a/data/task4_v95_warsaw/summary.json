@@ -1,0 +1,42 @@
+{
+  "main_admitted": false,
+  "school_year": "2024/2025",
+  "reference_date": "2024-09-30",
+  "city": "Warszawa",
+  "teryt": "1465011",
+  "school_stages": {
+    "Podstawowe": {
+      "published_od_rows_national": 8611,
+      "outbound": {
+        "official_total_students": 2245,
+        "published_od_rows": 46,
+        "published_od_students": 2182,
+        "unallocated_aggregate_residual": 63
+      },
+      "inbound": {
+        "official_total_students": 3649,
+        "published_od_rows": 64,
+        "published_od_students": 3545,
+        "unallocated_aggregate_residual": 104
+      }
+    },
+    "Ponadpodstawowe": {
+      "published_od_rows_national": 10583,
+      "outbound": {
+        "official_total_students": 1502,
+        "published_od_rows": 51,
+        "published_od_students": 1426,
+        "unallocated_aggregate_residual": 76
+      },
+      "inbound": {
+        "official_total_students": 27956,
+        "published_od_rows": 145,
+        "published_od_students": 27642,
+        "unallocated_aggregate_residual": 314
+      }
+    }
+  },
+  "national_upper_secondary_intermunicipal_students": 754290,
+  "suppression_rule": "Intermunicipal OD cells below 3 students are omitted; official aggregate totals are retained separately. No omitted cell is reconstructed.",
+  "scope": "Administrative residence-municipality versus school-municipality flows for children/youth schools. No travel duration, mode, individual age or within-municipality students; no observed-trip or city travel-utility inference."
+}

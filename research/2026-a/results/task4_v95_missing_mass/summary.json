@@ -1,0 +1,49 @@
+{
+  "main_admitted": false,
+  "observed_city_cells_changed": 0,
+  "subjects": [
+    {
+      "subject": "ELA",
+      "school_subject_records": 107,
+      "known_test_records": 14854.0,
+      "unknown_count_rows": 12,
+      "unknown_count_but_published_rate_rows": 2,
+      "known_mass_lower": 0.3584199542210853,
+      "known_mass_upper": 0.44425541941564567,
+      "unknown_mass_rate_lower": 0.0,
+      "unknown_mass_rate_upper": 1.0,
+      "unidentified_mass_closure_lower": 0.0,
+      "unidentified_mass_closure_upper": 1.0
+    },
+    {
+      "subject": "MATH",
+      "school_subject_records": 108,
+      "known_test_records": 15401.0,
+      "unknown_count_rows": 13,
+      "unknown_count_but_published_rate_rows": 2,
+      "known_mass_lower": 0.2698870203233556,
+      "known_mass_upper": 0.39468411142133625,
+      "unknown_mass_rate_lower": 0.0,
+      "unknown_mass_rate_upper": 1.0,
+      "unidentified_mass_closure_lower": 0.0,
+      "unidentified_mass_closure_upper": 1.0
+    },
+    {
+      "subject": "Science",
+      "school_subject_records": 104,
+      "known_test_records": 14456.0,
+      "unknown_count_rows": 12,
+      "unknown_count_but_published_rate_rows": 3,
+      "known_mass_lower": 0.16008923630326508,
+      "known_mass_upper": 0.35080589374654125,
+      "unknown_mass_rate_lower": 0.0,
+      "unknown_mass_rate_upper": 1.0,
+      "unidentified_mass_closure_lower": 0.0,
+      "unidentified_mass_closure_upper": 1.0
+    }
+  ],
+  "scenarios": 18,
+  "independent_school_weight_lp_checks": 36,
+  "maximum_lp_error": 3.3306690738754696e-16,
+  "interpretation": "Published-percentage weighted descriptor, not reconstructed pass rates. Unknown tested mass remains unidentified; nonnegative continuous weights allow conservative zero allocations. Gamma zero and one can be closure limits, not observed mass claims. No private/uncovered/resident population extrapolation or international test calibration."
+}

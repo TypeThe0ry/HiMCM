@@ -1,0 +1,67 @@
+{
+  "main_admitted": false,
+  "official_2025_programme": {
+    "source": "task4_v91_phoenix/af_business_rules_2025.txt",
+    "line_ranges": [
+      [
+        491,
+        493
+      ],
+      [
+        802,
+        844
+      ],
+      [
+        874,
+        910
+      ]
+    ],
+    "facts": [
+      "Grade 11 state assessment ACT; ELA requires valid English, Reading and Writing scores",
+      "AzSCI administered to grades5,8,11/cohort2026",
+      "A-F proficiency uses FAY and excludes RAEL; its weighted indicator is not percent proficient",
+      "FAY at multiple schools can contribute to each school accountability calculation"
+    ],
+    "scope": "These are accountability business rules, not a row-level API-to-workbook crosswalk"
+  },
+  "cut_scores_reader": {
+    "url": "https://www.azed.gov/sites/default/files/2022/07/ACT%20Cut%20Scores.pdf",
+    "original_bytes_acquired": false,
+    "reader_verified": true,
+    "document_date": "August2023; board-approvedJuly2022",
+    "ela_proficient": [
+      19,
+      24
+    ],
+    "math_proficient": [
+      19,
+      24
+    ],
+    "scope": "Arizona accountability cut scores, not internationally equated education quality"
+  },
+  "access_checks": [
+    {
+      "url": "https://cms.azed.gov/sites/default/files/2025/10/math_ela_assessmentsfy25.xlsx",
+      "outcome": "Official link resolved; direct download returned Cloudflare HTML, no workbook acquired"
+    },
+    {
+      "url": "https://cms.azed.gov/sites/default/files/2025/10/science_assessmentsfy25.xlsx",
+      "outcome": "Official link resolved through reader; workbook not acquired"
+    },
+    {
+      "url": "https://cms.azed.gov/sites/default/files/2021/08/Accountability%20Data%20Guide%20FY%2022.pdf",
+      "outcome": "Current data page link points toFY2022 guide, notFY2025 code dictionary"
+    },
+    {
+      "url": "https://www.azed.gov/sites/default/files/2024/10/2024-2025_Statewide_High_School_Assessments.pdf",
+      "outcome": "Search index describes2024\u201325 schedule; directdownloadHTML andreader404, not archived as acquiredPDF"
+    }
+  ],
+  "unresolved": [
+    "Exact FY2025 API legacy assessmentType/type1 to test-brand row crosswalk",
+    "Ordinary integer percentage rounding rule",
+    "Per-code FY2025 suppression meanings",
+    "Equality of ALL ENROLLED performance and participation API denominators"
+  ],
+  "main_cells_changed": 0
+}

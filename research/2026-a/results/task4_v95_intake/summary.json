@@ -1,0 +1,74 @@
+{
+  "registry": {
+    "model_version": "V91",
+    "latest_review": "V95",
+    "module": "task4_phoenix_monitor_revision",
+    "factory": "phoenix_monitor_bounds",
+    "baseline_ranks": "results/task4_v91_phoenix_monitor/ranks.csv",
+    "baseline_scenario": "v91_monitor_envelope",
+    "fixed_alpha": 0.1,
+    "alpha_range": [
+      0.05,
+      0.2
+    ],
+    "latest_acquisition_analysis": "results/task4_v91_current_acquisition/summary.json",
+    "main_admitted": false,
+    "scope": "Conditional ten-indicator evidence bounds. Phoenix PM2.5 is an incorporated-city observed-monitor convex mixture, not resident/high-school exposure; other source age, geography and measurement limitations remain.",
+    "baseline_bounds": "results/task4_v91_phoenix_monitor/utility_bounds.csv",
+    "latest_stress_analysis": "results/task4_v93_joint_stress/summary.json",
+    "latest_acquisition_analysis_model_version": "V91",
+    "latest_stress_analysis_model_version": "V91",
+    "latest_acquisition_limits": "results/task4_v92_acquisition_limits/summary.json",
+    "latest_acquisition_limits_model_version": "V91",
+    "latest_travel_evidence_index": "results/task4_current/travel_evidence.csv",
+    "latest_precision_frontier": "results/task4_v94_precision_frontier/summary.json",
+    "latest_precision_frontier_model_version": "V91"
+  },
+  "registry_sha256": "09b9d9bbeaf75fb8b6014056752c042a158999b9dbeeae88708eb1bd772e53bc",
+  "baseline_ranks_sha256": "d0e704f5d09553d83d11184aca08eb0833eee8d65259f997faa1697d851ee10e",
+  "baseline_bounds_sha256": "3ef80a7416cec34814e7b385799c25edb9147defc0e5ffd0ac487fd1f9bc8377",
+  "utility_bounds_sha256": "0d168b99b6796b1b49e08f76a0f7a775e7a6f805f32570a3d5a8ee8bc6e690ab",
+  "travel_evidence_sha256": "6d1d17a686b75d4bb949882d3247ed5ae3333db74f677f97ea77a16d5fdf2fcd",
+  "travel_evidence_verified": true,
+  "informative_travel_cities": 5,
+  "verified_cells": 250,
+  "baseline_matches": true,
+  "possible_champions": 25,
+  "continuous_possible_champions": [
+    "Toronto",
+    "Phoenix",
+    "New York",
+    "Mexico City",
+    "Bogota",
+    "Sao Paulo",
+    "Santiago",
+    "Copenhagen",
+    "London",
+    "Barcelona",
+    "Warsaw",
+    "Athens",
+    "Nairobi",
+    "Lagos",
+    "Cape Town",
+    "Dubai",
+    "Istanbul",
+    "Mumbai",
+    "Delhi",
+    "Dhaka",
+    "Tokyo",
+    "Shanghai",
+    "Singapore",
+    "Jakarta",
+    "Melbourne"
+  ],
+  "choice": [
+    "Singapore"
+  ],
+  "continuous_recommendation": {
+    "unresolved_leaves": 0,
+    "winners": [
+      "Singapore"
+    ]
+  },
+  "main_admitted": false
+}
