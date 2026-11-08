@@ -1,0 +1,199 @@
+{
+  "version": "V122 extension of user16 V121; no main model change",
+  "method_cases": [
+    {
+      "evidence_version": "V118",
+      "weight_reference": "fixed",
+      "topsis_midpoint_winners": [
+        "Zurich"
+      ],
+      "vikor_q_winners": [
+        "Dublin"
+      ],
+      "kendall_tau_b": 0.5166666666666667,
+      "vikor_v": 0.5,
+      "acceptable_advantage_threshold": 0.06666666666666667,
+      "first_second_Q_gap": 0.2578909877640494,
+      "acceptable_advantage": true,
+      "acceptable_stability": true,
+      "single_compromise_accepted": true,
+      "main_minimax_choices": [
+        "Oslo"
+      ],
+      "main_possible_champion_count": 16
+    },
+    {
+      "evidence_version": "V118",
+      "weight_reference": "equal",
+      "topsis_midpoint_winners": [
+        "Zurich"
+      ],
+      "vikor_q_winners": [
+        "Oslo"
+      ],
+      "kendall_tau_b": 0.7666666666666667,
+      "vikor_v": 0.5,
+      "acceptable_advantage_threshold": 0.06666666666666667,
+      "first_second_Q_gap": 0.5018637044632525,
+      "acceptable_advantage": true,
+      "acceptable_stability": true,
+      "single_compromise_accepted": true,
+      "main_minimax_choices": [
+        "Oslo"
+      ],
+      "main_possible_champion_count": 16
+    },
+    {
+      "evidence_version": "V121",
+      "weight_reference": "fixed",
+      "topsis_midpoint_winners": [
+        "Zurich"
+      ],
+      "vikor_q_winners": [
+        "Dublin"
+      ],
+      "kendall_tau_b": 0.48333333333333334,
+      "vikor_v": 0.5,
+      "acceptable_advantage_threshold": 0.06666666666666667,
+      "first_second_Q_gap": 0.21602400602977787,
+      "acceptable_advantage": true,
+      "acceptable_stability": true,
+      "single_compromise_accepted": true,
+      "main_minimax_choices": [
+        "Zurich"
+      ],
+      "main_possible_champion_count": 16
+    },
+    {
+      "evidence_version": "V121",
+      "weight_reference": "equal",
+      "topsis_midpoint_winners": [
+        "Zurich"
+      ],
+      "vikor_q_winners": [
+        "Oslo"
+      ],
+      "kendall_tau_b": 0.7666666666666667,
+      "vikor_v": 0.5,
+      "acceptable_advantage_threshold": 0.06666666666666667,
+      "first_second_Q_gap": 0.03730321227115252,
+      "acceptable_advantage": false,
+      "acceptable_stability": false,
+      "single_compromise_accepted": false,
+      "main_minimax_choices": [
+        "Zurich"
+      ],
+      "main_possible_champion_count": 16
+    }
+  ],
+  "controlled_V118_V121": [
+    {
+      "weight_reference": "fixed",
+      "changed_topsis_midpoint_ranks": 3,
+      "changed_vikor_ranks": 10,
+      "kendall_topsis_before_after": 0.9333333333333332,
+      "kendall_vikor_before_after": 0.8333333333333333
+    },
+    {
+      "weight_reference": "equal",
+      "changed_topsis_midpoint_ranks": 5,
+      "changed_vikor_ranks": 13,
+      "kendall_topsis_before_after": 0.8833333333333333,
+      "kendall_vikor_before_after": 0.8499999999999999
+    }
+  ],
+  "comparison_scope": "Same midpoint utilities and weights in each arm; fixed-ideal TOPSIS versus sample-ideal classic VIKOR v=.5. Midpoints are unobserved illustrative scenarios, not imputations or main recommendations.",
+  "historical_control_reproduces_V119": true,
+  "same_country_pairs_in_main16": 0,
+  "country_case_dataset": "Separate historical25 V117, inherited fixed weights",
+  "country_comparability": "Common indicator utility definitions/anchors and weights; retain legacy mixed vintages and spatial/stage limits. No harmonized same-year pair dataset or national causal effect.",
+  "country_pairs": [
+    {
+      "country": "United States",
+      "city_a": "Phoenix",
+      "city_b": "New York",
+      "evidence_version": "legacy25 V117; separate from user16 V121",
+      "a_score_lower": 31.39060820931906,
+      "a_score_upper": 71.68091378914416,
+      "b_score_lower": 30.217703383675584,
+      "b_score_upper": 72.80592622514423,
+      "a_necessarily_strictly_better": false,
+      "b_necessarily_strictly_better": false,
+      "a_possible_pairwise_winner": true,
+      "b_possible_pairwise_winner": true
+    },
+    {
+      "country": "India",
+      "city_a": "Mumbai",
+      "city_b": "Delhi",
+      "evidence_version": "legacy25 V117; separate from user16 V121",
+      "a_score_lower": 28.8218173040749,
+      "a_score_upper": 60.6424758195191,
+      "b_score_lower": 32.59044231172556,
+      "b_score_upper": 63.89547851443059,
+      "a_necessarily_strictly_better": false,
+      "b_necessarily_strictly_better": false,
+      "a_possible_pairwise_winner": true,
+      "b_possible_pairwise_winner": true
+    }
+  ],
+  "equity": {
+    "city": "Shanghai",
+    "year": 2025,
+    "separate_historical_case": true,
+    "districts": 16,
+    "students": 235542,
+    "teacher_headcount": 23999,
+    "pooled_utility": 0.6044814089033747,
+    "student_weighted_district_utility": 0.6032669110089597,
+    "aggregation_gap": 0.0012144978944149676,
+    "relative_gap_percent": 0.20091567358841686,
+    "district_utility_min": 0.5736194057361941,
+    "district_utility_max": 0.6576780568135036,
+    "district_ptr_min": 7.807511737089202,
+    "district_ptr_max": 11.149742930591259,
+    "bottom20_student_mass_district_utility": 0.5809535784606843,
+    "bottom20_gap_from_student_mean": 0.02231333254827539,
+    "scope": "School-location counts for regular senior-secondary pupils and full-time teacher headcount; excludes vocational, not FTE. Fractional bottom20 assumes district-homogeneous exposure, not observed individual experience or resident accessibility.",
+    "main_user16_scores_changed": false
+  },
+  "age_evidence": {
+    "istanbul_year": 2012,
+    "exact_age14_vs18_identified": false,
+    "age_groups_available": [
+      "14–15",
+      "16–18"
+    ],
+    "marginal_intervals_overlap": true,
+    "observed_mean_scope": "Only observed home-school journeys; missing-duration and optional members retained in utility bounds",
+    "joint_attainability_note": "Marginal bounds: the same 612 weight of unknown-age optional students may belong to either age group; it is not counted twice in the combined-city calculation. Age-group extrema cannot be assumed jointly attainable.",
+    "singapore_secondary_age_totals": {
+      "14 YRS": 38555,
+      "18 YRS": 165
+    },
+    "singapore_age_scope": "Age at start of2020; MOE secondary enrolment, no citizenship joint table or Census reference-day/travel coverage match",
+    "age_specific_preferences_observed": false,
+    "no_new_age_weights": true,
+    "main_user16_scores_changed": false
+  },
+  "protected_inputs_unchanged": true,
+  "input_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_current_model.json": "4b14d1591e66fdecd5a4f59c1734a2a0f3108c8ecd1b818dd23d8cfeecf4d381",
+    "design/task4_user_v121_admissions.json": "16211d42402ca19c6040507201ef2ea39ab5c878d9a51369b57fe232c4884b80",
+    "results/task4_user_v121_revision/current_ranks.csv": "44b66aae1ffd132fc8aeecd8ef96e2f3ee526d1a768afcd5514488ae453fc959",
+    "results/task4_user_v118_revision/utility_bounds.csv": "c9b1cf779d9ecdea77adc4691809926216d47e9494641718c1253889f66396fa",
+    "scripts/task4_v119_method_country.py": "9509990315af8caf3f53aaff729441754fc98de5f6dc54afb96438b5a7851942",
+    "results/task4_v119_method_country/method_ranks.csv": "01d54b7581ce008e271cb4890cce96ad4fefef57ca0ede8168dc58808d275502",
+    "results/task4_v33_district_resources/summary.json": "d4aad043001af8007da03be86c41945d539448bb4a357124c1f79e1399eecf70",
+    "results/task4_v117_city_revision/utility_bounds.csv": "ba1c2ae5ea0c0de4e2a28b07ce3a685113cc601fa89f20b417ec411d4b93fbbf",
+    "data/city_candidates_team_25.csv": "940694b23f26d18ae8090596bd2705549ccb3b047796bc3ed87ea6b1c855da69",
+    "data/task4_v32_shanghai/extracted.json": "c4d9a09a0dedd09e5ed67c3b1c100537f4aba044ab7a5abff85549b1f5e9f03e",
+    "data/task4_v32_shanghai/manifest.json": "37b335857c04a7787062d62c993640c0eee0184d6459ccbff14f84d96e5cb786",
+    "data/task4_v116_ibb/aggregate_results.json": "b85a746387cdcc7265545cee1ab1326d762b538d3ec362091e2b1195a0883f48",
+    "data/task4_v116_ibb_review/aggregate_controls.json": "88d6c8e28b9c0dd9a9571aa4903a3e71f396c0e258f8046c559452f6adca2b9e",
+    "data/task4_v71_singapore/moe_level_age_api.json": "f19c51f518e38c307ae532512dcb22e973f21ff710cbb774c13a6d69787ae994",
+    "data/task4_v71_singapore/manifest.json": "33c468c544e9d6e24570dac31809a3564d54eb2fe981dc3d4943606424e81077",
+    "visuals/cartography/city_map_audit.json": "c839b52e843ab249b07731ce48820b8531b5ca6dc2bf25373449db8fd22425e6"
+  }
+}

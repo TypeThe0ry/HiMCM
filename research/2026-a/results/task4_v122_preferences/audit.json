@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "deterministic_profile_checks": 3,
+  "ahp_properties_checked": [
+    "positive",
+    "unit diagonal",
+    "reciprocal",
+    "eigenvector recovery",
+    "rank one",
+    "multiplicative transitivity",
+    "CR near zero"
+  ],
+  "independent_mc_settings": 9,
+  "draws_per_setting": 10000,
+  "independent_mc_city_rows": 144,
+  "independent_quantities": [
+    "scores",
+    "self-excluded regret",
+    "recommendation frequency",
+    "mean rank",
+    "top3 frequency",
+    "possible/necessary champion"
+  ],
+  "V121_baseline_ranks_and_three_MC_settings_reconciled": true,
+  "historical_profile_weights_identical": true,
+  "source_hashes_unchanged": true,
+  "V121_all160_bounds_exactly_unchanged": true
+}

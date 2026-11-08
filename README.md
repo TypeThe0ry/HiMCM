@@ -12,10 +12,11 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [恢复 prompt 与当前进度](docs/handoff/RESUME_PROMPT.md)、[V121研究更新](docs/handoff/V121_RESEARCH_UPDATE.md)。包含当前16城V121权威入口、V120恢复验证、复现命令、数据约束、论文状态及后续补数方向。
+**换开发环境／交给下一个 AI：** [恢复 prompt 与当前进度](docs/handoff/RESUME_PROMPT.md)、[V122研究与独立论文更新](docs/handoff/V122_RESEARCH_UPDATE.md)。主数据仍为16城V121；V122扩展偏好、未来、方法对照及独立案例，保留原输入和主榜。
 
 | 想了解什么 | 入口 |
 | --- | --- |
+| 最新扩展：基于V121的V122 | [AHP偏好、未来压力与扰动、同国案例、公平性和成长阶段证据](research/2026-a/results/task4_v122_revision/README.md) |
 | 当前主模型：16城V121 | [五格真实补数：区间缩小4.44%，Zurich仍保守推荐，可能冠军仍16城](research/2026-a/results/task4_user_v121_revision/README.md) |
 | 上轮主模型：16城V120 | [四格真实补数：区间缩小5.62%，Zurich保守首选，冠军集合仍16城](research/2026-a/results/task4_user_v120_revision/README.md) |
 | 上轮扩展：V119 | [未来改善阈值、偏好扰动与同国案例](research/2026-a/results/task4_v119_revision/README.md) |

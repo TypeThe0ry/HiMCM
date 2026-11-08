@@ -1,0 +1,34 @@
+{
+  "extension_version": "V122",
+  "primary_evidence_version": "V121 user16",
+  "primary_data_revision": false,
+  "primary_registry": "design/task4_user_current_model.json",
+  "primary_factory": "task4_user_v121_revision.revised_bounds",
+  "modules": {
+    "preferences": {
+      "script": "scripts/task4_v122_preferences.py",
+      "results": "results/task4_v122_preferences"
+    },
+    "future": {
+      "script": "scripts/task4_v122_future.py",
+      "results": "results/task4_v122_future"
+    },
+    "method_country": {
+      "script": "scripts/task4_v122_method_country.py",
+      "results": "results/task4_v122_method_country"
+    }
+  },
+  "audit": "results/task4_v122_revision/audit.py",
+  "manuscript_project": "https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894",
+  "manuscript_entry": "drafts/task4_v122_sections.tex",
+  "scope": "Analyst preference and future stress scenarios on unchanged primary data; separate legacy country/district/age cases, no measured age preference or future forecast.",
+  "source_hashes": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_current_model.json": "4b14d1591e66fdecd5a4f59c1734a2a0f3108c8ecd1b818dd23d8cfeecf4d381",
+    "design/task4_user_v121_admissions.json": "16211d42402ca19c6040507201ef2ea39ab5c878d9a51369b57fe232c4884b80",
+    "scripts/task4_v122_preferences.py": "a7faf3e07dcad153fac8004d4e52cb77767201150765d5c51e16f89477950ed3",
+    "scripts/task4_v122_future.py": "c1bff0e19d6828e6689961c3c201799275cf31de4c215259e43fdb0c7e2c967c",
+    "scripts/task4_v122_method_country.py": "f67e7c893b0850a90b3cf9e28f227e0dbb89ad46912565eedf426b7adf16b29a",
+    "results/task4_v122_revision/audit.py": "a9a00d6908b871e78d6cb5a4afbaf68383f4f591f86606c35161b91e039ef112"
+  }
+}

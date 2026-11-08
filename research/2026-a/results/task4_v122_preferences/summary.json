@@ -1,0 +1,209 @@
+{
+  "version": "V122",
+  "input_version": "V121 user16",
+  "profiles": [
+    {
+      "profile": "baseline",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 1.0,
+      "mean_score_interval_width": 16.183024716277767,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.3686
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4334
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.5364
+        }
+      ]
+    },
+    {
+      "profile": "education_priority",
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 0.7,
+      "mean_score_interval_width": 17.087823319852394,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Singapore",
+          "most_recommended_frequency": 0.3495
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.4562
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.5835
+        }
+      ]
+    },
+    {
+      "profile": "independent_living_priority",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 0.9166666666666666,
+      "mean_score_interval_width": 22.2613986165342,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4455
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.5899
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.7986
+        }
+      ]
+    }
+  ],
+  "preference_evidence": "Analyst-designed 2x multipliers, no student survey, expert elicitation or measured age preference",
+  "ahp_interpretation": "Exact-ratio weight reconstruction; CR assesses algebraic consistency only",
+  "seed": 20261108,
+  "concentrations": [
+    20,
+    100,
+    500
+  ],
+  "draws_per_setting": 10000,
+  "total_draws": 90000,
+  "random_generator": "default_rng(SeedSequence([20261108, concentration])) reset per profile and concentration",
+  "mc_interpretation": "Weight-conditional decision frequencies, not actual winning probabilities. Evidence intervals not sampled.",
+  "ranking_policy": "Deterministic interval minimax regret remains primary; MC mean ranks are sensitivity summaries only",
+  "historical_comparison": [
+    {
+      "profile": "baseline",
+      "old_V119_input": "V118 user16",
+      "new_V122_input": "V121 user16",
+      "old_minimax_choices": [
+        "Oslo"
+      ],
+      "new_minimax_choices": [
+        "Zurich"
+      ],
+      "old_mean_score_width": 17.942190021014284,
+      "new_mean_score_width": 16.183024716277767,
+      "kendall_tau_b_between_evidence_versions": 0.6666666666666667
+    },
+    {
+      "profile": "education_priority",
+      "old_V119_input": "V118 user16",
+      "new_V122_input": "V121 user16",
+      "old_minimax_choices": [
+        "Oslo"
+      ],
+      "new_minimax_choices": [
+        "Oslo"
+      ],
+      "old_mean_score_width": 19.393611319397824,
+      "new_mean_score_width": 17.087823319852394,
+      "kendall_tau_b_between_evidence_versions": 0.7
+    },
+    {
+      "profile": "independent_living_priority",
+      "old_V119_input": "V118 user16",
+      "new_V122_input": "V121 user16",
+      "old_minimax_choices": [
+        "Oslo"
+      ],
+      "new_minimax_choices": [
+        "Zurich"
+      ],
+      "old_mean_score_width": 24.14040282730805,
+      "new_mean_score_width": 22.2613986165342,
+      "kendall_tau_b_between_evidence_versions": 0.7666666666666667
+    }
+  ],
+  "controlled_v119_comparison": "Same profile weights, seed and k100 distribution; old V119 uses V118 evidence, new V122 uses V121 evidence. k20/k500 and top3 have no old V119 counterpart.",
+  "source_hashes": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_v121_admissions.json": "16211d42402ca19c6040507201ef2ea39ab5c878d9a51369b57fe232c4884b80",
+    "scripts/task4_user_v121_revision.py": "2dc0d8944154364eb7046ce806f7d45b3f22626eea4dcfd2d1c17e796fd26cfc",
+    "results/task4_user_v121_revision/current_ranks.csv": "44b66aae1ffd132fc8aeecd8ef96e2f3ee526d1a768afcd5514488ae453fc959",
+    "results/task4_user_v121_revision/mc_city_summary.csv": "ed3802e08f79f8bab934de37c6edfc0edee399c5225144d89703f8105acd9324",
+    "results/task4_v119_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v119_preferences/ranks.csv": "510aceb74f72fad831c5e7320156ab612c51380aa85a9df83dd77f8f5c1c94fa",
+    "results/task4_v119_preferences/mc_city_summary.csv": "58341db7b96490ca8a60f40e708431b17179f8532c077630a9eab0bbf166d4fd"
+  }
+}

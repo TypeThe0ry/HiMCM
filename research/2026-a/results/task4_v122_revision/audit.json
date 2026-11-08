@@ -1,0 +1,288 @@
+{
+  "status": "pass",
+  "immutable_baseline_commit": "deae2f3",
+  "main_user16_160_bounds_and_source_CSV_registry_unchanged": true,
+  "immutable_input_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_current_model.json": "4b14d1591e66fdecd5a4f59c1734a2a0f3108c8ecd1b818dd23d8cfeecf4d381",
+    "design/task4_user_v121_admissions.json": "16211d42402ca19c6040507201ef2ea39ab5c878d9a51369b57fe232c4884b80",
+    "results/task4_user_v121_revision/current_ranks.csv": "44b66aae1ffd132fc8aeecd8ef96e2f3ee526d1a768afcd5514488ae453fc959",
+    "results/task4_user_v121_revision/utility_bounds.csv": "459b397cad1237a06667a02bd3bb6625657e70bb6c471c52528bf6136d0857c1",
+    "results/task4_user_v121_revision/all_ranks.csv": "ff714534a334906679f2bddb13496396be8b7d3f7de9a29e1f46b5dd44c5c428",
+    "results/task4_user_v121_revision/mc_city_summary.csv": "ed3802e08f79f8bab934de37c6edfc0edee399c5225144d89703f8105acd9324",
+    "results/task4_user_v121_revision/summary.json": "51d4ad07395b142eaabf3f211b848edea97a016cc87b81e1cfc48d08375d1a21"
+  },
+  "result_source_hash_receipts_verified": {
+    "preferences": 8,
+    "future": 9,
+    "method_country": 17
+  },
+  "preferences_deterministic_profiles": 3,
+  "preferences_independent_MC_settings": [
+    {
+      "profile": "baseline",
+      "concentration": 20
+    },
+    {
+      "profile": "baseline",
+      "concentration": 100
+    },
+    {
+      "profile": "baseline",
+      "concentration": 500
+    },
+    {
+      "profile": "education_priority",
+      "concentration": 20
+    },
+    {
+      "profile": "education_priority",
+      "concentration": 100
+    },
+    {
+      "profile": "education_priority",
+      "concentration": 500
+    },
+    {
+      "profile": "independent_living_priority",
+      "concentration": 20
+    },
+    {
+      "profile": "independent_living_priority",
+      "concentration": 100
+    },
+    {
+      "profile": "independent_living_priority",
+      "concentration": 500
+    }
+  ],
+  "preferences_MC_draws_per_setting": 10000,
+  "future_deterministic_scenario_reference_arms": 16,
+  "future_threshold_grid_points_checked": 3232,
+  "future_threshold_cases": [
+    {
+      "city": "Vienna",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Zurich",
+      "weight_reference": "fixed",
+      "status": "already_strict_minimax"
+    },
+    {
+      "city": "Helsinki",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Berlin",
+      "weight_reference": "fixed",
+      "status": "crossing_found"
+    },
+    {
+      "city": "London",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Amsterdam",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Stockholm",
+      "weight_reference": "fixed",
+      "status": "crossing_found"
+    },
+    {
+      "city": "Paris",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Madrid",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Milan",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Dublin",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Oslo",
+      "weight_reference": "fixed",
+      "status": "crossing_found"
+    },
+    {
+      "city": "Prague",
+      "weight_reference": "fixed",
+      "status": "crossing_found"
+    },
+    {
+      "city": "Warsaw",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Singapore",
+      "weight_reference": "fixed",
+      "status": "crossing_found"
+    },
+    {
+      "city": "Tokyo",
+      "weight_reference": "fixed",
+      "status": "not_reached"
+    },
+    {
+      "city": "Vienna",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Zurich",
+      "weight_reference": "equal",
+      "status": "already_strict_minimax"
+    },
+    {
+      "city": "Helsinki",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Berlin",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "London",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Amsterdam",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Stockholm",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Paris",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Madrid",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Milan",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Dublin",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Oslo",
+      "weight_reference": "equal",
+      "status": "crossing_found"
+    },
+    {
+      "city": "Prague",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Warsaw",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Singapore",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    },
+    {
+      "city": "Tokyo",
+      "weight_reference": "equal",
+      "status": "not_reached"
+    }
+  ],
+  "future_shock_independent_settings": 6,
+  "future_shock_draws_per_setting": 10000,
+  "future_shock_scalar_draws": [
+    0,
+    1,
+    9999
+  ],
+  "future_weight_independent_settings": 8,
+  "future_weight_baseline_matches_V121": true,
+  "method_independent_cases": [
+    {
+      "evidence_version": "V118",
+      "weight_reference": "fixed",
+      "acceptable_advantage": true,
+      "acceptable_stability": true
+    },
+    {
+      "evidence_version": "V118",
+      "weight_reference": "equal",
+      "acceptable_advantage": true,
+      "acceptable_stability": true
+    },
+    {
+      "evidence_version": "V121",
+      "weight_reference": "fixed",
+      "acceptable_advantage": true,
+      "acceptable_stability": true
+    },
+    {
+      "evidence_version": "V121",
+      "weight_reference": "equal",
+      "acceptable_advantage": false,
+      "acceptable_stability": false
+    }
+  ],
+  "historical_same_country_cases_separate_from_main16": true,
+  "shanghai_district_aggregation_and_fractional_bottom20": true,
+  "age_proxies_no_measured_preferences_or_exact14_vs18_claim": true,
+  "result_sha256": {
+    "results/task4_v122_preferences/baseline_matrix.csv": "b0c5778d4682c51ad149ecb4656674ac71f16cb0a1fe2969cf27357f7b950bf5",
+    "results/task4_v122_preferences/education_priority_matrix.csv": "6f4dc9b2ddf4d8c338c8b246d02e98b2d5046c3e7aaa3f1b43eb063a7bc38dea",
+    "results/task4_v122_preferences/independent_living_priority_matrix.csv": "7c22ad43c94b6bc90117c9fe2b876debb2fdb8d039ab309455ed4a1f3b771710",
+    "results/task4_v122_preferences/mc_city_summary.csv": "01070eb2503bac0977f2e630be3e82fab78e9f1aedbff9165e907c0963dcc225",
+    "results/task4_v122_preferences/ranks.csv": "2e852f84a1827913726b5a4c9f6a101f2ea1b0c0ee3617042e2a73023d9d03e8",
+    "results/task4_v122_preferences/utility_bounds.csv": "74a6e2fb2e014ee4e2571cf0acf461539c3a3600c72e527e0f4f8cc47cccab60",
+    "results/task4_v122_preferences/v119_mc_comparison_k100.csv": "ef5c5ecc78d662acdb2056618e321054ba91bbda6b9a70137ef8107d57ddf4a6",
+    "results/task4_v122_preferences/v119_rank_comparison.csv": "fda123ee0bcd7771b30ddf31490fa76d5bd5ef44fa0998512a04c76121936ed3",
+    "results/task4_v122_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v122_future/future_mc_city_summary.csv": "2c104b6a3d6ee583efa4bd8033c3e5089d15c61ef4a621fe758b909d3fc9d939",
+    "results/task4_v122_future/ranks.csv": "bfdc1b644497ed85eca7f1a2e29fc3cb6f735a1d648b56ffff8cea1c20d1475c",
+    "results/task4_v122_future/threshold_scan.csv": "fd04123c149e6067f91cc03c8f5d97bc2a82087ac054109d4f09882d889e7450",
+    "results/task4_v122_future/thresholds.csv": "cf5dee41133ed7a4be9e6e3ac53625ebfd2f14b2d475c651c5b7f0ac6ec8d9f9",
+    "results/task4_v122_future/utility_bounds.csv": "5501378b15388996655c06b5507e341b16d3377fe421f2cb04d48b9c6bf6e68e",
+    "results/task4_v122_future/weight_mc_city_summary.csv": "ab205ade0b37315330fc84bc0c90db964c040b57cb5da2a4ac2695589fa43b36",
+    "results/task4_v122_method_country/country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "results/task4_v122_method_country/country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa",
+    "results/task4_v122_method_country/istanbul_historical_age_groups.csv": "b4072312d9cedb8b657c1836465f8471a1f20b96aa15d136f07f351884c2f34b",
+    "results/task4_v122_method_country/method_components.csv": "ceb799a38456290b57ef44ffd774fdb305c2b4f052ac5a7bd2d7519420b66540",
+    "results/task4_v122_method_country/method_ranks.csv": "982ffe6c65dc3c4e2357b960eaa559cc7abd4eef0ad870594d7af08d3c878374",
+    "results/task4_v122_method_country/method_utility_inputs.csv": "8b4cab9e77f830e939de5acf7b701396ec78479b025031eea4ac3ead9e359a0f",
+    "results/task4_v122_method_country/shanghai_district_resources.csv": "1dd303f0fb9ddf7413051764b4790716717e48c7d8f94cc95467f89652e6f818",
+    "results/task4_v122_method_country/singapore2020_secondary_exact_age_counts.csv": "5569790bf18c6543454ef1c84d86faa632a53b19126fd85a1482ff859a7dc560",
+    "results/task4_v122_method_country/user16_country_coverage.csv": "5627fcafcd902d3ca9c14d80026d75c2637192d62445f61da3061a3957507e4e"
+  }
+}

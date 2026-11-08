@@ -1,5 +1,7 @@
 # 下一位 AI 的恢复 prompt（2026-11-08，Asia/Singapore）
 
+> **最新进度：数据仍为16城V121，模型扩展与独立论文章节已到V122。先读[V122交接](V122_RESEARCH_UPDATE.md)及[V122结果](../../research/2026-a/results/task4_v122_revision/README.md)。** Overleaf Git已认证；新增稿在`drafts/task4_v122_sections.tex/.pdf`，主稿及队友内容未改。教育优先情景推荐Oslo，基准/独立生活优先推荐Zurich；可能冠军仍16城。V121主数据注册表不改，下方V120/V121文字为恢复基线和历史上下文。
+
 > **当前已推进至16城V121。先读[V121研究交接](V121_RESEARCH_UPDATE.md)及[V121结果](../../research/2026-a/results/task4_user_v121_revision/README.md)。** 本页以下保留V120恢复基线及历史上下文，V120入口／计数不是最新主模型。当前注册表指向`task4_user_v121_revision.revised_bounds()`；五格新证据使fixed平均宽度16.93440560→16.18302472（缩小4.44%），Zurich仍保守推荐、可能冠军仍16城。V121采集诊断输入仍是补数前V120，下一轮须重新按V121计算优先级。Overleaf只读Git认证未就绪，本轮论文无修改。
 
 你接手 HiMCM 城市评价研究。先恢复现状，再继续做有证据支持的补数和模型分析。不要从零重建、重验用户已有值或把旧模型当当前模型。以下是用户已授权的工作范围及交接事实。
