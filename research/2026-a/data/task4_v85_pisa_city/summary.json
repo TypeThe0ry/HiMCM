@@ -1,0 +1,141 @@
+{
+  "city": "Bogotá",
+  "year": 2022,
+  "outcomes": [
+    {
+      "city": "Bogotá",
+      "year": 2022,
+      "subject": "mathematics",
+      "table": "Table I.B2.1",
+      "row": 27,
+      "mean": 422.6665924764541,
+      "standard_error": 4.954087374164038,
+      "normal_approx_95_lower": 412.9565812230926,
+      "normal_approx_95_upper": 432.37660372981566
+    },
+    {
+      "city": "Bogotá",
+      "year": 2022,
+      "subject": "reading",
+      "table": "Table I.B2.2",
+      "row": 27,
+      "mean": 462.1506492961261,
+      "standard_error": 5.819426197385078,
+      "normal_approx_95_lower": 450.7445739492514,
+      "normal_approx_95_upper": 473.55672464300085
+    },
+    {
+      "city": "Bogotá",
+      "year": 2022,
+      "subject": "science",
+      "table": "Table I.B2.3",
+      "row": 27,
+      "mean": 459.1599389473031,
+      "standard_error": 5.452185008195917,
+      "normal_approx_95_lower": 448.4736563312391,
+      "normal_approx_95_upper": 469.84622156336707
+    }
+  ],
+  "proficiency": [
+    {
+      "subject": "mathematics",
+      "published_level_percentages": {
+        "Below Level 1c": 0.12085389640262958,
+        "Level 1c": 2.770592481999543,
+        "Level 1b": 16.21394661499356,
+        "Level 1a": 32.70191141242363,
+        "Level 2": 27.28492164397004,
+        "Level 3": 15.081699753662122,
+        "Level 4": 4.767152591528573,
+        "Level 5": 0.9687658044162561,
+        "Level 6": 0.09015580060365165
+      },
+      "at_least_level2_percent": 48.19269559418064,
+      "aggregate_standard_error": null
+    },
+    {
+      "subject": "reading",
+      "published_level_percentages": {
+        "Below Level 1c": 0.0247291438933299,
+        "Level 1c": 0.8841255264852219,
+        "Level 1b": 6.6171575977414605,
+        "Level 1a": 20.401743783028493,
+        "Level 2": 29.99542694341777,
+        "Level 3": 25.786952274507247,
+        "Level 4": 13.229938249627205,
+        "Level 5": 2.8157941674892073,
+        "Level 6": 0.24413231381006728
+      },
+      "at_least_level2_percent": 72.0722439488515,
+      "aggregate_standard_error": null
+    },
+    {
+      "subject": "science",
+      "published_level_percentages": {
+        "Below Level 1b": 0.4978603420832459,
+        "Level 1b": 6.5766991606355125,
+        "Level 1a": 22.198041282181585,
+        "Level 2": 32.52332623800654,
+        "Level 3": 25.690570714062815,
+        "Level 4": 10.37137000809561,
+        "Level 5": 1.9688257372536278,
+        "Level 6": 0.17330651768107785
+      },
+      "at_least_level2_percent": 70.72739921509968,
+      "aggregate_standard_error": null
+    }
+  ],
+  "geography_and_grade_codebook": [
+    {
+      "row": 543,
+      "variable": "STRATUM",
+      "code": "COL01",
+      "label": "COL - stratum 01: Bogota,Urban-Public",
+      "unweighted_codebook_frequency": 1152,
+      "frequency_scope": "Bogota regional records"
+    },
+    {
+      "row": 544,
+      "variable": "STRATUM",
+      "code": "COL02",
+      "label": "COL - stratum 02: Bogota,Rural-public",
+      "unweighted_codebook_frequency": 137,
+      "frequency_scope": "Bogota regional records"
+    },
+    {
+      "row": 545,
+      "variable": "STRATUM",
+      "code": "COL03",
+      "label": "COL - stratum 03: Bogota,Private",
+      "unweighted_codebook_frequency": 697,
+      "frequency_scope": "Bogota regional records"
+    },
+    {
+      "row": 1682,
+      "variable": "REGION",
+      "code": "17001",
+      "label": "Colombia: Bogota",
+      "unweighted_codebook_frequency": 1986,
+      "frequency_scope": "Bogota regional records"
+    },
+    {
+      "row": 2163,
+      "variable": "ST001D01T",
+      "code": "10",
+      "label": "Grade 10",
+      "unweighted_codebook_frequency": 356822,
+      "frequency_scope": "International student file"
+    },
+    {
+      "row": 2164,
+      "variable": "ST001D01T",
+      "code": "11",
+      "label": "Grade 11",
+      "unweighted_codebook_frequency": 42529,
+      "frequency_scope": "International student file"
+    }
+  ],
+  "main_admitted": false,
+  "scope": "Published PISA age15 regional cohort, including lower-secondary grades; not a grade10-11-only or all14-18 estimate. Codebook frequencies are record counts, not weighted population totals. Current-grade-specific learning estimates require the joint microdata plus plausible values and replicate weights.",
+  "uncertainty": "Individual normal-approximate95% intervals derived from OECD published mean and SE; not simultaneous intervals or student score ranges. Proficiency aggregates have no derived SE because cross-level covariance is unavailable."
+}

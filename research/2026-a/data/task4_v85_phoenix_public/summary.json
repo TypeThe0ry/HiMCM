@@ -1,0 +1,38 @@
+{
+  "school_year": "2023-2024",
+  "source": "Official historical NCES EDGE MapServer, not mutable current layer",
+  "arizona_records": 2609,
+  "city_records": 533,
+  "operational_nonvirtual_possible_hs_records": 183,
+  "strict_hs_only_records": 91,
+  "grade9_12_enrollment_lower": 72562,
+  "grade9_12_enrollment_upper": 72562,
+  "missing_enrollment_upper_records": [],
+  "missing_teacher_fte_count": 104,
+  "missing_teacher_fte_file": "missing_staff_records.csv",
+  "explicit_grade_eligible_records": 145,
+  "explicit_grade_missing_fte_count": 104,
+  "ungraded_students_upper": 106,
+  "ungraded_positive_records": 38,
+  "including_possible_ungraded_student_upper": 72668,
+  "known_strict_hs_fte_contributing_records": 31,
+  "known_strict_hs_teacher_fte_lower": 2185.0,
+  "reported_nonnegative_allstage_fte_sum": 4238.93,
+  "allstage_teacher_fte_upper": null,
+  "membership_grade_conflicts": 0,
+  "hope": {
+    "nces_id": "040386003535",
+    "grade9_12": [
+      6,
+      7,
+      19,
+      51
+    ],
+    "students": 83,
+    "teacher_fte": 4,
+    "physical_address": "6401 S 16TH ST, PHOENIX"
+  },
+  "unknown_virtual_city_records": 0,
+  "main_admitted": false,
+  "interpretation": "Public records and private PSS now share2023/24year, but unknown staff, ungraded allocation, nonresponse/private coverage and current-boundary overlay remain. Known FTE lower assumes additive school-assigned instructional FTE; missing staff contributes no observed value, not an observed zero. Hope83is historical and cannot fill2024/25suppression."
+}

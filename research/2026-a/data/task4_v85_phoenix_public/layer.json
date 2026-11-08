@@ -1,0 +1,899 @@
+{
+ "extent": {
+  "ymin": -14.348923999842668,
+  "xmin": -174.1985939997133,
+  "ymax": 71.300336999952663,
+  "xmax": 145.7844299997447,
+  "spatialReference": {
+   "falseM": -100000,
+   "xyTolerance": 8.983152841195215E-9,
+   "mUnits": 10000,
+   "zUnits": 10000,
+   "latestWkid": 4269,
+   "zTolerance": 0.001,
+   "wkid": 4269,
+   "xyUnits": 999999999.99999988,
+   "mTolerance": 0.001,
+   "falseX": -400,
+   "falseY": -400,
+   "falseZ": -100000
+  }
+ },
+ "maxRecordCount": 2000,
+ "datesInUnknownTimezone": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "type": "Feature Layer",
+ "maxSelectionCount": 2000,
+ "subtypes": [],
+ "relationships": [],
+ "cimVersion": "3.7.0",
+ "isDataArchived": false,
+ "id": 1,
+ "archivingInfo": {
+  "startArchivingMoment": -1,
+  "supportsQueryWithHistoricMoment": false
+ },
+ "spatialReference": {
+  "falseM": -100000,
+  "xyTolerance": 8.983152841195215E-9,
+  "mUnits": 10000,
+  "zUnits": 10000,
+  "latestWkid": 4269,
+  "zTolerance": 0.001,
+  "wkid": 4269,
+  "xyUnits": 999999999.99999988,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "falseZ": -100000
+ },
+ "subtypeFieldName": null,
+ "supportsStatistics": true,
+ "hasLastEditTime": true,
+ "standardMaxRecordCount": 32000,
+ "isDataVersioned": false,
+ "supportsAdvancedQueries": true,
+ "parentLayer": null,
+ "subLayers": [],
+ "currentVersion": 12.1,
+ "referenceScale": 0,
+ "canScaleSymbols": false,
+ "name": "Public School Administrative Data 2023-24",
+ "displayField": "LEA_NAME",
+ "fields": [
+  {
+   "nullable": false,
+   "domain": null,
+   "name": "OBJECTID",
+   "alias": "OBJECTID",
+   "type": "esriFieldTypeOID"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "Shape",
+   "alias": "Shape",
+   "type": "esriFieldTypeGeometry"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "NCESSCH",
+   "length": 25,
+   "alias": "School ID",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "SURVYEAR",
+   "length": 25,
+   "alias": "School Year",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LEAID",
+   "length": 25,
+   "alias": "Agency ID (NCES Assigned)",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "ST_LEAID",
+   "length": 50,
+   "alias": "State Agency ID",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LEA_NAME",
+   "length": 255,
+   "alias": "Education Agency Name",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "SCH_NAME",
+   "length": 255,
+   "alias": "School Name",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LSTREET1",
+   "length": 255,
+   "alias": "Address 1",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LSTREET2",
+   "length": 255,
+   "alias": "Address 2",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LCITY",
+   "length": 255,
+   "alias": "City",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LSTATE",
+   "length": 50,
+   "alias": "State",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LZIP",
+   "length": 6,
+   "alias": "ZIP",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LZIP4",
+   "length": 5,
+   "alias": "ZIP4",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "PHONE",
+   "length": 50,
+   "alias": "Phone Number",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "CHARTER_TEXT",
+   "length": 20,
+   "alias": "Whether a Charter School",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "VIRTUAL",
+   "length": 50,
+   "alias": "Virtual School Status",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "GSLO",
+   "length": 4,
+   "alias": "Grades Offered - Lowest",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "GSHI",
+   "length": 4,
+   "alias": "Grades Offered - Highest",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "SCHOOL_LEVEL",
+   "length": 25,
+   "alias": "School Level",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "STATUS",
+   "length": 25,
+   "alias": "Status (Code)",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "SCHOOL_TYPE_TEXT",
+   "length": 255,
+   "alias": "School Type",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "SY_STATUS_TEXT",
+   "length": 100,
+   "alias": "Status (Description)",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "ULOCALE",
+   "length": 50,
+   "alias": "Locale",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "NMCNTY",
+   "length": 255,
+   "alias": "County Name",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "CNTY",
+   "length": 25,
+   "alias": "County Number",
+   "type": "esriFieldTypeString"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "TOTFRL",
+   "alias": "Free & Reduced-price Lunch Eligible",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "FRELCH",
+   "alias": "Free Lunch Eligible",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "REDLCH",
+   "alias": "Reduced-price Eligible",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "DIRECTCERT",
+   "alias": "Direct Certification Total",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "PK",
+   "alias": "PK Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "KG",
+   "alias": "KG Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G01",
+   "alias": "Grade 1 Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G02",
+   "alias": "Grade 2 Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G03",
+   "alias": "Grade 3 Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G04",
+   "alias": "Grade 4 Students ",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G05",
+   "alias": "Grade 5 Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G06",
+   "alias": "Grade 6 Students ",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G07",
+   "alias": "Grade 7 Students ",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G08",
+   "alias": "Grade 8 Students ",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G09",
+   "alias": "Grade 9 Students ",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G10",
+   "alias": "Grade 10 Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G11",
+   "alias": "Grade 11 Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G12",
+   "alias": "Grade 12 Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "G13",
+   "alias": "Grade 13 Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "UG",
+   "alias": "Ungraded Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "AE",
+   "alias": "Adult Education Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "TOTMENROL",
+   "alias": "Total Male Enrollment",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "TOTFENROL",
+   "alias": "Total Female Enrollment",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "TOTAL",
+   "alias": "Total Students (Includes AE)",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "MEMBER",
+   "alias": "Total Students (Excludes AE)",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "FTE",
+   "alias": "Teachers (FTE)",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "STUTERATIO",
+   "alias": "Student/Teacher Ratio",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "AMALM",
+   "alias": "American Indian/Alaska Native - Male",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "AMALF",
+   "alias": "American Indian/Alaska Native - Female",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "AM",
+   "alias": "American Indian/Alaska Native - All Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "ASALM",
+   "alias": "Asian - Male",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "ASALF",
+   "alias": "Asian - Female",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "AS",
+   "alias": "Asian - All Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "BLALM",
+   "alias": "Black or African American - Male",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "BLALF",
+   "alias": "Black or African American - Female",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "BL",
+   "alias": "Black  or African American - All Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "HPALM",
+   "alias": "Native Hawai'ian or Other Pacific Islander - Male",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "HPALF",
+   "alias": "Native Hawai'ian or Other Pacific Islander - Female",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "HP",
+   "alias": "Native Hawai'ian or Other Pacific Islander - All Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "HIALM",
+   "alias": "Hispanic - Male",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "HIALF",
+   "alias": "Hispanic - Female",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "HI",
+   "alias": "Hispanic - All Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "TRALM",
+   "alias": "Two or More Races - Male",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "TRALF",
+   "alias": "Two or More Races - Female",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "TR",
+   "alias": "Two or More Races - All Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "WHALM",
+   "alias": "White - Male",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "WHALF",
+   "alias": "White - Female",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "WH",
+   "alias": "White - All Students",
+   "type": "esriFieldTypeInteger"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LATCOD",
+   "alias": "Latitude",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "nullable": true,
+   "domain": null,
+   "name": "LONCOD",
+   "alias": "Longitude",
+   "type": "esriFieldTypeDouble"
+  }
+ ],
+ "maxRecordCountFactor": 1,
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "useStandardizedQueries": true,
+ "sourceSpatialReference": {
+  "falseM": -100000,
+  "xyTolerance": 8.983152841195215E-9,
+  "mUnits": 10000,
+  "zUnits": 10000,
+  "latestWkid": 4269,
+  "zTolerance": 0.001,
+  "wkid": 4269,
+  "xyUnits": 1111948722.22222209,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "falseZ": -100000
+ },
+ "description": "The National Center for Education Statistics' (NCES) Education Demographic and Geographic Estimate (EDGE) program develops annually updated point locations (latitude and longitude) for public elementary and secondary schools included in the NCES Common Core of Data (CCD). The CCD program annually collects administrative and fiscal data about all public schools, school districts, and state education agencies in the United States. The data are supplied by state education agency officials and include basic directory and contact information for schools and school districts, as well as characteristics about student demographics, number of teachers, school grade span, and various other administrative conditions. CCD school and agency point locations are derived from reported information about the physical location of schools and agency administrative offices. The point locations and administrative attributes in this data layer were developed from the 2023-2024 CCD collection. For more information about NCES school point data, see: https://nces.ed.gov/programs/edge/Geographic/SchoolLocations. For more information about these CCD attributes, as well as additional attributes not included, see: https://nces.ed.gov/ccd/files.asp.  All information contained in this file is in the public domain. Data users are advised to review NCES program documentation and feature class metadata to understand the limitations and appropriate use of these data.",
+ "canModifyLayer": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "standardMaxRecordCountNoGeometry": 32000,
+ "indexes": [
+  {
+   "name": "FDO_OBJECTID",
+   "isUnique": true,
+   "description": "",
+   "fields": "OBJECTID",
+   "isAscending": true
+  },
+  {
+   "name": "FDO_Shape",
+   "isUnique": false,
+   "description": "",
+   "fields": "Shape",
+   "isAscending": true
+  }
+ ],
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "supportsDatumTransformation": true,
+ "minScale": 0,
+ "supportsDynamicLegends": true,
+ "hasAttachments": false,
+ "advancedQueryCapabilities": {
+  "supportsStatistics": true,
+  "supportsSqlExpression": true,
+  "supportsQueryWithResultType": true,
+  "supportsTrueCurve": true,
+  "supportsOrderBy": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsSqlFormat": false,
+  "useStandardizedQueries": true,
+  "supportsLod": false,
+  "supportsQueryWithDistance": true,
+  "supportsQueryWithCacheHint": false,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsCountDistinct": true,
+  "supportsCurrentUserQueries": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithLodSR": false,
+  "supportsPagination": true,
+  "supportsMaxRecordCountFactor": false,
+  "supportsDistinct": true,
+  "supportsTimeRelation": true,
+  "supportsQueryAnalytic": false,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true
+ },
+ "subtypeField": null,
+ "supportsCoordinatesQuantization": true,
+ "capabilities": "Map,Query,Data",
+ "maxScale": 0,
+ "supportsExceedsLimitStatistics": true,
+ "defaultVisibility": true,
+ "hasMetadata": true,
+ "tileMaxRecordCount": 8000,
+ "typeIdField": null,
+ "defaultSubtypeCode": null,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "hasLabels": false,
+ "drawingInfo": {
+  "renderer": {
+   "minValue": -9,
+   "field": "MEMBER",
+   "authoringInfo": {
+    "type": "classedSize",
+    "classificationMethod": "esriClassifyManual"
+   },
+   "legendOptions": {"order": "ascendingValues"},
+   "classBreakInfos": [
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        255,
+        255,
+        255,
+        63
+       ],
+       "width": 1
+      },
+      "color": [
+       79,
+       153,
+       227,
+       255
+      ],
+      "size": 4,
+      "yoffset": 0,
+      "xoffset": 0,
+      "angle": 0,
+      "style": "esriSMSCircle",
+      "type": "esriSMS"
+     },
+     "classMaxValue": 0,
+     "label": "<0"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        255,
+        255,
+        255,
+        63
+       ],
+       "width": 1
+      },
+      "color": [
+       79,
+       153,
+       227,
+       255
+      ],
+      "size": 10,
+      "yoffset": 0,
+      "xoffset": 0,
+      "angle": 0,
+      "style": "esriSMSCircle",
+      "type": "esriSMS"
+     },
+     "classMaxValue": 1500,
+     "label": "1 - 1500"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        255,
+        255,
+        255,
+        63
+       ],
+       "width": 1
+      },
+      "color": [
+       79,
+       153,
+       227,
+       255
+      ],
+      "size": 16,
+      "yoffset": 0,
+      "xoffset": 0,
+      "angle": 0,
+      "style": "esriSMSCircle",
+      "type": "esriSMS"
+     },
+     "classMaxValue": 3000,
+     "label": "1501 - 3000"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        255,
+        255,
+        255,
+        63
+       ],
+       "width": 1
+      },
+      "color": [
+       79,
+       153,
+       227,
+       255
+      ],
+      "size": 22,
+      "yoffset": 0,
+      "xoffset": 0,
+      "angle": 0,
+      "style": "esriSMSCircle",
+      "type": "esriSMS"
+     },
+     "classMaxValue": 4500,
+     "label": "3001 - 4500"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        255,
+        255,
+        255,
+        63
+       ],
+       "width": 1
+      },
+      "color": [
+       79,
+       153,
+       227,
+       255
+      ],
+      "size": 28,
+      "yoffset": 0,
+      "xoffset": 0,
+      "angle": 0,
+      "style": "esriSMSCircle",
+      "type": "esriSMS"
+     },
+     "classMaxValue": 6000,
+     "label": "4501 - 6000"
+    },
+    {
+     "symbol": {
+      "outline": {
+       "color": [
+        255,
+        255,
+        255,
+        63
+       ],
+       "width": 1
+      },
+      "color": [
+       79,
+       153,
+       227,
+       255
+      ],
+      "size": 40,
+      "yoffset": 0,
+      "xoffset": 0,
+      "angle": 0,
+      "style": "esriSMSCircle",
+      "type": "esriSMS"
+     },
+     "classMaxValue": 23589,
+     "label": ">6000"
+    }
+   ],
+   "type": "classBreaks",
+   "classificationMethod": "esriClassifyManual"
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "geometryField": {
+  "name": "Shape",
+  "alias": "Shape",
+  "type": "esriFieldTypeGeometry"
+ },
+ "copyrightText": "NCES EDGE",
+ "geometryType": "esriGeometryPoint"
+}
