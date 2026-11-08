@@ -1,0 +1,28 @@
+{
+  "access_date": "2026-11-08",
+  "main_admitted": false,
+  "new_grade11_records": 0,
+  "official_workbooks_acquired": false,
+  "github_searches": [
+    {
+      "query": "math_ela_assessmentsfy25.xlsx",
+      "results": "Only a previous HiMCM research note was returned; no new source file"
+    },
+    {
+      "query": "science_assessmentsfy25.xlsx",
+      "results": "No result returned"
+    }
+  ],
+  "third_party_lead": {
+    "url": "https://azschoolrankings.com/data-sources",
+    "status": "Search-index excerpt mentions derived FY2025 grade11 data; live page not acquired. Local DNS resolution failed and web reader returned502.",
+    "data_acquired": false
+  },
+  "excluded_repository": {
+    "url": "https://education-data-tracker.vercel.app/data",
+    "documentation": "edc_technical_documentation_v3_1.pdf",
+    "document_page": 7,
+    "reason": "SADR Version3.1 limits assessment data to grades3\u20138; it does not supply grade11 ACT outcomes."
+  },
+  "next_needed": "Actual FY2025 workbooks with school IDs, selection labels, tested counts and suppression documentation; no participation or enrollment count substitution"
+}

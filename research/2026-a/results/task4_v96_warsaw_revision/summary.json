@@ -1,0 +1,226 @@
+{
+  "model_version": "V96",
+  "previous_model_version": "V91",
+  "main_admitted": true,
+  "admission": "Conditional complete source-defined youth-stage school resources, all ownership. Adult general teacher allocation remains unknown; one-FTE outward unit-rounding guard. Not exact age14-18 resident learning quality.",
+  "source_summary_sha256": "8b7926f50b8511dd11438721d11d4dce891466d7c217a829eadfb5a9c16e8970",
+  "changed_indicator": "Warsaw/upper_secondary_ptr only",
+  "unchanged_cells": 249,
+  "student_travel_unchanged": true,
+  "prior_scope_rollback_verified": true,
+  "strict_scope_uses_unidentified_interval": true,
+  "scenarios": [
+    {
+      "scenario": "v91_before",
+      "changed_cells": 0,
+      "changed_ranks": 0,
+      "kendall_tau_vs_before": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "warsaw": {
+        "city": "Warsaw",
+        "score_lower": 33.4064450020959,
+        "score_upper": 70.29154879228898,
+        "best_rank": 1,
+        "worst_rank": 25,
+        "possible_champion": true,
+        "necessary_champion": false,
+        "max_regret": 44.123015701375785,
+        "decision_rank": 12,
+        "scenario": "v91_before"
+      }
+    },
+    {
+      "scenario": "v96_general_year_only",
+      "changed_cells": 1,
+      "changed_ranks": 0,
+      "kendall_tau_vs_before": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "warsaw": {
+        "city": "Warsaw",
+        "score_lower": 33.4064450020959,
+        "score_upper": 70.0773989821946,
+        "best_rank": 1,
+        "worst_rank": 25,
+        "possible_champion": true,
+        "necessary_champion": false,
+        "max_regret": 44.123015701375785,
+        "decision_rank": 12,
+        "scenario": "v96_general_year_only"
+      }
+    },
+    {
+      "scenario": "v96_warsaw_resources",
+      "changed_cells": 1,
+      "changed_ranks": 5,
+      "kendall_tau_vs_before": 0.973333333333333,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "warsaw": {
+        "city": "Warsaw",
+        "score_lower": 34.709687325208655,
+        "score_upper": 70.24495964137579,
+        "best_rank": 1,
+        "worst_rank": 25,
+        "possible_champion": true,
+        "necessary_champion": false,
+        "max_regret": 42.81977337826303,
+        "decision_rank": 8,
+        "scenario": "v96_warsaw_resources"
+      }
+    },
+    {
+      "scenario": "strict_scope_withdrawal",
+      "changed_cells": 1,
+      "changed_ranks": 0,
+      "kendall_tau_vs_before": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "warsaw": {
+        "city": "Warsaw",
+        "score_lower": 33.4064450020959,
+        "score_upper": 74.31745772638907,
+        "best_rank": 1,
+        "worst_rank": 25,
+        "possible_champion": true,
+        "necessary_champion": false,
+        "max_regret": 44.123015701375785,
+        "decision_rank": 12,
+        "scenario": "strict_scope_withdrawal"
+      }
+    }
+  ]
+}

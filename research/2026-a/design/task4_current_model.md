@@ -1,4 +1,6 @@
-# 当前模型：V91 Phoenix市域监测网络区间修订（2026-11-08）
+# 当前模型：V96 Warsaw六类高中路径师资修订（2026-11-08）
+
+V96以[同年度官方年鉴](../results/task4_v96_intake/README.md)将Warsaw教育由普通高中条件范围扩展为六类青年高中路径、公私立学校，保留成人教师分配界。Warsaw第12→8，其他249格保持、可能冠军仍25城；仅年份更新不改变排名。[补数下界](../results/task4_v96_acquisition_limits/README.md)同步更新至V96，其余已登记诊断仍标注V91历史输入。当前入口为 `task4_warsaw_resource_revision.warsaw_bounds()`。
 
 V95以[Jakarta真实交叉表](../results/task4_v95_intake/README.md)将同一262人高中子群通学界宽度收窄16.85%，另单独识别14–18岁交集界；保留样本／全市范围区别。Phoenix未知测试人数显式传播，Warsaw高中通学流量原件与抑制残余归档。主模型V91、250格及25个可能冠军保持。
 

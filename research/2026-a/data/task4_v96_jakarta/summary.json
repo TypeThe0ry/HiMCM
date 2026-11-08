@@ -1,0 +1,75 @@
+{
+  "main_admitted": false,
+  "quoted_frame_year": 2022,
+  "stages": {
+    "SMP": {
+      "quoted_2022_frame_schools": 36,
+      "quoted_2022_frame_pupils": 24429,
+      "observed_schools": 12,
+      "collection_rows": 12,
+      "completed_questionnaires": 390,
+      "valid_questionnaires": 311,
+      "unusable_questionnaires": 79,
+      "valid_fraction_of_completed": 0.7974358974358975
+    },
+    "SMA": {
+      "quoted_2022_frame_schools": 13,
+      "quoted_2022_frame_pupils": 9223,
+      "observed_schools": 4,
+      "collection_rows": 4,
+      "completed_questionnaires": 124,
+      "valid_questionnaires": 119,
+      "unusable_questionnaires": 5,
+      "valid_fraction_of_completed": 0.9596774193548387
+    },
+    "SMK": {
+      "quoted_2022_frame_schools": 14,
+      "quoted_2022_frame_pupils": 11221,
+      "observed_schools": 7,
+      "collection_rows": 8,
+      "completed_questionnaires": 236,
+      "valid_questionnaires": 143,
+      "unusable_questionnaires": 93,
+      "valid_fraction_of_completed": 0.6059322033898306
+    }
+  },
+  "total_collection_rows": 24,
+  "distinct_sampled_schools": 23,
+  "total_completed": 750,
+  "total_valid": 573,
+  "total_unusable": 177,
+  "published_total_valid_percent": 76.65,
+  "recomputed_total_valid_percent": 76.4,
+  "upper_secondary_collection": {
+    "completed": 360,
+    "valid": 262,
+    "unusable": 98,
+    "valid_record_bounds": [
+      0.33928977732781934,
+      0.7944022391569291
+    ],
+    "all_collected_record_bounds": [
+      0.2469275601663574,
+      0.8503705184975429
+    ],
+    "interpretation": "Conditional completed-questionnaire record-set envelope; 98 unusable upper-secondary records retain [0,1] utility. Not all invited pupils, deduplicated pupils, age14-18, school-frame or city inference."
+  },
+  "selection": {
+    "schools": "Selected to attain stage sample sizes/proportions and geographic representation",
+    "pupils": "Method states schools chose pupils randomly; selection probabilities and frame draw details unreported",
+    "school_inclusion_probabilities_identified": false,
+    "design_weights_identified": false,
+    "invited_denominator_identified": false,
+    "unusable_record_reason_identified": false,
+    "person_deduplication_verified": false,
+    "resident_city_membership_identified": false
+  },
+  "source_pages": {
+    "frame": "chapter3 printed36",
+    "selection": "chapter3 printed38",
+    "population_sample_comparison": "chapter5 printed58",
+    "collections": "chapter5 printed59",
+    "district_representation": "chapter5 printed62",
+    "questionnaire": "appendix printed149-152"
+  }
+}

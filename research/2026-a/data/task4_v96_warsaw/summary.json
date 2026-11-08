@@ -1,0 +1,51 @@
+{
+  "main_admitted": false,
+  "school_year": "2024/25",
+  "reference_period": "Beginning of school year",
+  "geography": "Schools located in City of Warsaw",
+  "students_by_route": {
+    "special_job_training": 404,
+    "stage_I": 3900,
+    "stage_II": 480,
+    "general_youth": 87748,
+    "technical_youth": 26142,
+    "professional_general_art": 1066
+  },
+  "students_total": 119740,
+  "excluded_general_adult_students": 5754,
+  "teacher_fte_published": {
+    "stage_I_and_special": 454,
+    "stage_II": 7,
+    "general_including_adults": 5654,
+    "technical_and_art": 2029
+  },
+  "adult_general_teacher_allocation": "Unknown; youth general FTE lies between zero and the adult-inclusive general total",
+  "published_total_teacher_fte_bounds": [
+    2490,
+    8144
+  ],
+  "rounding_guard_per_cell": 1.0,
+  "teacher_fte_bounds": [
+    2487.0,
+    8148.0
+  ],
+  "utility_bounds": [
+    0.23754337928619185,
+    0.5051248140188461
+  ],
+  "rounding_scope": "Source general note14 acknowledges rounding; table publishes whole FTE. One-FTE outward guard per cell assumes unit rounding/truncation, not exact rounding direction or protection against reporting revisions.",
+  "included_ownership": "Government, local government and other legal/natural persons; public and non-public",
+  "scope": "Source-defined six post-primary youth school routes, including special and professional-art schools. Excludes general adult, post-secondary and higher education. All route ages rather than an individual age14-18 subset; school location rather than residents; teacher resources rather than learning quality.",
+  "workbook_member": "Dane w formacie Excel/Rocznik_statystyczny_Warszawy_2025_tablice/08_Edukacja.xlsx",
+  "workbook_sha256": "b3eb84d092f8b132fde58089fe8efb6f1435e6f90a511296bd58e7487cdf5798",
+  "pdf_pages": {
+    "ownership": 156,
+    "youth_routes": 157,
+    "adult_scope": 158,
+    "teacher_definition": 159,
+    "overview": 160,
+    "general_youth_adult": 165,
+    "rounding": 22
+  },
+  "source_typo_note": "English note6e says prior technical schools were3-year while Polish says4-year; current5-year definition and observed counts are unchanged."
+}
