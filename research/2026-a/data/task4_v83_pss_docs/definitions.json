@@ -1,0 +1,38 @@
+{
+  "reference_date": "around October 1, 2023",
+  "grade_enrollment": {
+    "9": "P270",
+    "10": "P280",
+    "11": "P290",
+    "12": "P300"
+  },
+  "grade_offered": {
+    "9": "P265",
+    "10": "P275",
+    "11": "P285",
+    "12": "P295"
+  },
+  "offered_codes": {
+    "1": "has students enrolled",
+    "2": "no students enrolled; paired count is valid skip"
+  },
+  "teacher_estimate": "P385 + .875*P390 + .625*P395 + .375*P400 + .125*P405",
+  "teacher_time_lower": "P385 + .75*P390 + .5*P395 + .25*P400",
+  "teacher_time_upper_closed": "P385 + P390 + .75*P395 + .5*P400 + .25*P405",
+  "teacher_scope": "K-12 and comparable ungraded teaching at this school, not stage-specific",
+  "physical_city": "PL_CIT",
+  "mailing_city": "PCITY",
+  "physical_state": "PSTANSI",
+  "latitude": "LATITUDE24",
+  "longitude": "LONGITUDE24",
+  "imputation_flags": {
+    "0": "not imputed",
+    "4": "donor imputation",
+    "5": "analyst adjustment"
+  },
+  "population_weight": "PFNLWT",
+  "replicate_weights": "REPW1 through REPW88",
+  "replication": "BRR",
+  "public_file": "22510 responding schools only; not a full enumeration",
+  "main_admitted": false
+}

@@ -1,0 +1,11 @@
+# Hope: a newer directory changes geography, not the suppressed enrollment
+
+The newly downloaded original [NCES school page](https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?ID=040386003535) lists Hope College and Career Readiness Academy at **1938 E Apache Blvd, Tempe** in its 2025/26 directory. The archived 2024/25 school record used by the [V42 Phoenix roster](../task4_v42_phoenix_coverage/README.md) places the same NCES school at **6401 S 16TH ST, Phoenix**. Both are actual source observations with different directory vintages; the newer address does not establish when the school changed location or whether the physical enrollment population moved with it.
+
+The page's membership and staffing still refer to **2024/25**. Its enrollment is marked `‡` (does not meet NCES data quality standards), and classroom staffing remains **4.00 FTE**. The original [district page](https://nces.ed.gov/ccd/districtsearch/district_detail.asp?DistrictID=0403860&ID2=0403860&Search=2&details=1) also suppresses 2024/25 total membership, so a district-containment upper bound cannot be recovered here. These successful originals improve on reader-only or cached evidence; their hashes and exact URLs are in [manifest.json](manifest.json).
+
+Dropping Hope from the historical city roster because the current directory says Tempe would incorrectly erase the only unresolved enrollment upper bound. The 2024/25 roster must retain its original geography until a same-year location correction is documented. The newer directory also cannot supply 2025/26 teacher or pupil counts by relabeling the old values. Main education bounds remain unchanged.
+
+A statewide public-school total could cap a public-school-only population, but would not establish a complete all-city population including private schools. A usable superset cap must match year, student universe and geography; the school-assigned FTE lower sum additionally retains its additivity and unit conditions.
+
+Run `python3 research/2026-a/data/task4_v83_phoenix/extract.py`. It verifies both originals, the reused V42 source hash, school identity, geography vintages, suppression symbols and retained FTE, then writes [summary.json](summary.json). Missing or suppressed membership is not treated as zero or replaced by another year's data. No model or manuscript file was changed.
