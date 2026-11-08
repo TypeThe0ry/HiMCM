@@ -1,0 +1,160 @@
+{
+  "main_admitted": false,
+  "baseline_model": "V79",
+  "source_sha256": "2f5aa27c731352ea31f22cdf614ee28ce6c523abcb06a12fc2b0f0c46be55e8f",
+  "source_manifest_sha256": "29aa3e82ab827aa2b2abfc9b9e74fc7f6a84ff046a01606fab6193c27a326ffc",
+  "conditional_geography_mapping": {
+    "Greater London": "London",
+    "Dubai emirate": "Dubai",
+    "DKI Jakarta": "Jakarta"
+  },
+  "missing_learning_cities": [
+    "Athens",
+    "Barcelona",
+    "Cape Town",
+    "Copenhagen",
+    "Delhi",
+    "Dhaka",
+    "Istanbul",
+    "Lagos",
+    "Melbourne",
+    "Mexico City",
+    "Mumbai",
+    "Nairobi",
+    "New York",
+    "Phoenix",
+    "Santiago",
+    "Sao Paulo",
+    "Shanghai",
+    "Tokyo",
+    "Toronto",
+    "Warsaw"
+  ],
+  "source": "data/task4_v87_pisa_cities/outcomes.csv",
+  "family_size": 10,
+  "normal_critical_value": 2.807033768343811,
+  "interval_scope": "Bonferroni normal approximation across ten city-domain proportions; sampling and plausible-value variance only. Missing city learning outcomes remain [0,1].",
+  "construct": "PISA-age sampled pupils in geographically identified school domains; mathematics Level2 fraction, not all14-18 city residents or causal school quality.",
+  "scenarios": [
+    {
+      "scenario": "resource_baseline",
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0
+    },
+    {
+      "scenario": "grade_ge10",
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "kendall_tau_vs_resource": 0.7466666666666665,
+      "changed_ranks_vs_resource": 16
+    },
+    {
+      "scenario": "isced3",
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "kendall_tau_vs_resource": 0.7466666666666665,
+      "changed_ranks_vs_resource": 16,
+      "kendall_tau_vs_grade": 0.9999999999999998,
+      "changed_ranks_vs_grade": 0
+    }
+  ]
+}

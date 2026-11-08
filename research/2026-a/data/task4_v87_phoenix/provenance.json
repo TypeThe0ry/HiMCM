@@ -1,0 +1,71 @@
+{
+  "review_date": "2026-11-08",
+  "status": "official_reader_transcription_only",
+  "original_acquired": false,
+  "original_sha256": null,
+  "main_admitted": false,
+  "source_url": "https://www.azed.gov/sites/default/files/2026/01/2025%20SAFR%20V2%20FINAL.pdf",
+  "source_locator": "Fiscal Year 2024-2025 Annual Report, Volume II, printed page II-318, North Star Charter School Inc., entity79701, CTDS078945000",
+  "source_method": "Search/web reader exposed official PDF page text; original download failed HTTP403. Values manually transcribed, not independently parsed from original.",
+  "records": [
+    {
+      "lea_id": "0400303",
+      "state_entity_id": "79701",
+      "measure": "teacher_year_end_fte",
+      "fiscal_year_end": 2024,
+      "value": 6.0,
+      "column": "Prior FY"
+    },
+    {
+      "lea_id": "0400303",
+      "state_entity_id": "79701",
+      "measure": "teacher_year_end_fte",
+      "fiscal_year_end": 2025,
+      "value": 6.0,
+      "column": "Current FY"
+    },
+    {
+      "lea_id": "0400303",
+      "state_entity_id": "79701",
+      "measure": "high_school_average_daily_membership",
+      "school_year": "2023-2024",
+      "value": 755.1591
+    },
+    {
+      "lea_id": "0400303",
+      "state_entity_id": "79701",
+      "measure": "fall_enrollment",
+      "fall_year": 2024,
+      "value": 233,
+      "number_of_schools": 1
+    }
+  ],
+  "admission_reason": "Year-end salary FTE is not yet definition-matched to CCD classroom-teacher snapshot; ADM is not fall enrollment. Original and full definitions not acquired; other missing LEAs persist.",
+  "next_sources": {
+    "official_index": "https://www.azed.gov/finance/data-collection-reporting-budget",
+    "fy2024_xlsx": "https://www.azed.gov/sites/default/files/2025/01/SAFR%20Digital%20Data-%20Final.xlsx",
+    "fy2024_volume2": "https://www.azed.gov/sites/default/files/2025/01/SAFR%20V2%20Final.pdf"
+  },
+  "attempts": [
+    {
+      "route": "www/cms direct curl and requests",
+      "status": "HTTP403",
+      "original_saved": false
+    },
+    {
+      "route": "web reader FY2024 XLSX",
+      "status": "unsupported XLSX content type; link resolved",
+      "original_saved": false
+    },
+    {
+      "route": "web reader FY2024 PDF",
+      "status": "initial content length too large (20644417 bytes reported), later HTTP403",
+      "original_saved": false
+    }
+  ],
+  "modality_followup": {
+    "url": "https://www.arizonapreparatoryacademy.com/",
+    "observed": "Current school website advertises on-campus, blended, and fully online study.",
+    "temporal_limit": "Current offering does not establish 2023-2024 modality or contradict a historical CCD code by itself."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "source_url": "https://webfs.oecd.org/pisa2022/STU_QQQ_SPSS.zip",
+  "source_member_sha256": "9e4eddacd25e10c145f7bfe817fc99a5b8df544536e5ea1dfd7230c988916a8c",
+  "source_archive_sha256": "24ee020cd6315d8aca52e07fd9aaef21cbf4f9e5b21601734b4ee6d0928a0905",
+  "source_archive_bytes": 682364259,
+  "baseline_manifest_sha256": "94f76dc2f9c0f2839e22da25b60c1ff5d0087bed5a2a161e62ee698ce00bbcef",
+  "derived_file": "pisa2022_city_programme_subset.csv.gz",
+  "derived_sha256": "b11a777daa78c46876e350dab9951c3418bb7df874f0d3d99797de973dcd03de",
+  "derived_bytes": 4107241,
+  "rows": 19012,
+  "selection": {
+    "Jakarta": [
+      "IDN01"
+    ],
+    "Bogota": "CNT=COL and REGION=17001",
+    "Singapore": "CNT=SGP",
+    "Dubai": [
+      "ARE11",
+      "ARE15",
+      "ARE16",
+      "ARE17",
+      "ARE18",
+      "ARE19",
+      "ARE20"
+    ],
+    "Greater London": [
+      "QUK01",
+      "QUK05",
+      "QUK09",
+      "QUK13"
+    ]
+  },
+  "stratum_labels": {
+    "ARE11": "ARE - stratum 11: Dubai,Public,MOE",
+    "ARE15": "ARE - stratum 15: Dubai,Public,Other",
+    "ARE16": "ARE - stratum 16: Dubai,Private,MOE",
+    "ARE17": "ARE - stratum 17: Dubai,Private,US",
+    "ARE18": "ARE - stratum 18: Dubai,Private,UK",
+    "ARE19": "ARE - stratum 19: Dubai,Private,Indian",
+    "ARE20": "ARE - stratum 20: Dubai,Private,Other",
+    "QUK01": "QUK - stratum 01: England / Academy / Greater London",
+    "QUK05": "QUK - stratum 05: England / Independent / Greater London",
+    "QUK09": "QUK - stratum 09: England / Maintained / Greater London",
+    "QUK13": "QUK - stratum 13: England / Selective / Greater London",
+    "IDN01": "IDN - stratum 01: DKI JAKARTA"
+  },
+  "iscedp_label": "Levels of education programmes (ISCED 2011)",
+  "iscedp_value_labels": {
+    "241.0": "241 : Lower secondary education, General, Insufficient for level completion or partial level completion, without direct",
+    "242.0": "242 : Lower secondary education, General, Sufficient for partial level completion, without direct access to upper second",
+    "243.0": "243 : Lower secondary education, General, Sufficient for level completion, without direct access to upper secondary educ",
+    "244.0": "244 : Lower secondary education, General, Sufficient for level completion, with direct access to upper secondary educati",
+    "251.0": "251 : Lower secondary education, Vocational, Insufficient for level completion or partial level completion, without dire",
+    "252.0": "252 : Lower secondary education, Vocational, Sufficient for partial level completion, without direct access to upper sec",
+    "253.0": "253 : Lower secondary education, Vocational, Sufficient for level completion, without direct access to upper secondary e",
+    "254.0": "254 : Lower secondary education, Vocational, Sufficient for level completion, with direct access to upper secondary educ",
+    "341.0": "341 : Upper secondary education, General, Insufficient for level completion or partial level completion, without direct",
+    "342.0": "342 : Upper secondary education, General, Sufficient for partial level completion, without direct access to tertiary edu",
+    "343.0": "343 : Upper secondary education, General, Sufficient for level completion, without direct access to tertiary education",
+    "344.0": "344 : Upper secondary education, General, Sufficient for level completion, with direct access to tertiary education",
+    "351.0": "351 : Upper secondary education, Vocational, Insufficient for level completion or partial level completion, without dire",
+    "352.0": "352 : Upper secondary education, Vocational, Sufficient for partial level completion, without direct access to tertiary",
+    "353.0": "353 : Upper secondary education, Vocational, Sufficient for level completion, without direct access to tertiary educatio",
+    "354.0": "354 : Upper secondary education, Vocational, Sufficient for level completion, with direct access to tertiary education"
+  },
+  "stage_rule": "300 <= ISCEDP < 400; official current programme classification, not a uniform grade threshold",
+  "scope": "School populations in PISA age cohort; Dubai sampling strata (emirate), Greater London region, Singapore city-state, Bogota region, DKI Jakarta capital region. Not all resident high-school ages.",
+  "raw_original": "Unmodified official SAV verified against V86 manifest; retained outside Git."
+}
