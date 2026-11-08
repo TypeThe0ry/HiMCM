@@ -1,0 +1,40 @@
+{
+  "city": "Singapore",
+  "indicator": "research_he_density",
+  "proposed_admission": true,
+  "source_snapshot": "2026-11-08",
+  "commenced_degree_intake": 2024,
+  "population_year": 2026,
+  "population": 6208500.0,
+  "verified_institution_count_before": 6,
+  "verified_institution_count_after": 7,
+  "density_before": 0.09664170089393573,
+  "density_after": 0.11274865104292502,
+  "utility_before": [
+    0.08812513769552764,
+    1.0
+  ],
+  "utility_after": [
+    0.10132445538105232,
+    1.0
+  ],
+  "rule": "Previously declared recognized independent HE inventory lower bound; all Singapore city-state territory; institutional central address; no new university-count definition.",
+  "new_entity": "University of the Arts Singapore",
+  "central_address": "111 Middle Road, National Design Centre, Singapore 188969",
+  "identity_scope": "UAS central degree-awarding institution counted once; LASALLE and NAFA not additionally counted; incomplete inventory remains lower bound.",
+  "education_quality_claim": false,
+  "student_access_claim": false,
+  "travel_changed": false,
+  "teacher_interval_changed": false,
+  "unchanged_method": "Fixed density anchor 1 institution/100000, inherited population denominator, weights and scoring.",
+  "inherited_source_hashes": {
+    "data/task4_v5_resources/sg_verified_university_inventory.csv": "cecbf18caaf104d22fc139be0a7d137ee127191d4cfc1adc389a60d690546539",
+    "data/task4_v5_resources/sg_population_verified_web_extract.json": "d656870a1b2d0cb18fe4075673f24b98c46ded194c224d480ebf170605d9b81c"
+  },
+  "official_moe_confirmation": "Existing ESD2025 (task4_v38_singapore/esd2025.pdf) describes UAS and AY2024 inaugural degree intake; newly downloaded MOE announcement validates degree-awarding role.",
+  "limitations": [
+    "Partial verified resource inventory, not complete city HE count.",
+    "June2026 denominator and November2026 source snapshot retained as such; not labeled2025.",
+    "No new highschool travel or stage-specific teacher allocation data obtained."
+  ]
+}

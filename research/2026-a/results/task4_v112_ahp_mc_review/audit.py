@@ -6,11 +6,11 @@ import pandas as pd
 from scipy.stats import rankdata,kendalltau
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'scripts'))
-from task4_current_model import current_bounds
+from task4_mexico_sampling_revision import mexico_sampling_bounds
 from task4_v5_model import CITIES,NAMES
 out=ROOT/'results/task4_v112_ahp_mc'
 s=json.loads((out/'summary.json').read_text())
-lo,hi,config=current_bounds()
+lo,hi=mexico_sampling_bounds()
 b=pd.read_csv(out/'utility_bounds.csv',float_precision='round_trip')
 np.testing.assert_array_equal(b.lower.to_numpy().reshape(lo.shape),lo)
 np.testing.assert_array_equal(b.upper.to_numpy().reshape(hi.shape),hi)

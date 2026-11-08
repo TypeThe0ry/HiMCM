@@ -1,0 +1,24 @@
+{
+  "model_version": "V113",
+  "single_self_exclusion_count": 0,
+  "single_max_other_exclusion": 0,
+  "changed_city_requirements": [
+    {
+      "scenario": "inherited",
+      "city": "London",
+      "minimum_hypothetical_cells_v108": 4.0,
+      "minimal_bundle_count_v108": 1,
+      "minimum_hypothetical_cells_v113": 4.0,
+      "minimal_bundle_count_v113": 9
+    },
+    {
+      "scenario": "equal",
+      "city": "Tokyo",
+      "minimum_hypothetical_cells_v108": 4.0,
+      "minimal_bundle_count_v108": 1,
+      "minimum_hypothetical_cells_v113": 5.0,
+      "minimal_bundle_count_v113": 1
+    }
+  ],
+  "scope": "Hypothetical exact endpoint revelations, not observed data or plausible outcomes. Bounds unchanged."
+}

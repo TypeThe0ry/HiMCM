@@ -1,11 +1,11 @@
 {
   "registry": {
-    "model_version": "V108",
-    "latest_review": "V111",
-    "module": "task4_mexico_sampling_revision",
-    "factory": "mexico_sampling_bounds",
-    "baseline_ranks": "results/task4_v108_mexico_sampling/ranks.csv",
-    "baseline_scenario": "v108_outer",
+    "model_version": "V113",
+    "latest_review": "V113",
+    "module": "task4_v113_evidence_revision",
+    "factory": "evidence_bounds",
+    "baseline_ranks": "results/task4_v113_evidence_revision/baseline_ranks.csv",
+    "baseline_scenario": "v113_conditional",
     "fixed_alpha": 0.1,
     "alpha_range": [
       0.05,
@@ -13,8 +13,8 @@
     ],
     "latest_acquisition_analysis": "results/task4_v109_current_acquisition/summary.json",
     "main_admitted": true,
-    "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain. Copenhagen adds four verified recognized HE legal seats/central addresses in the municipality as a partial lower bound, with July2026 population and November2026 institution snapshot; upper remains unknown. Institution presence is not student access or learning quality. Mexico City now uses EIC2025 resident age14-18 weighted school-travel bins; completed-secondary transition membership is optional, remaining current-stage interpretation conditional. Mexico sampling uses an approximate fixed-final-weight Taylor outer envelope over every legal membership prefix, retaining zero-target PSUs; FPC omitted. Coverage and current-stage assumptions remain conditional. Published sufficient moments reproduce bounds offline; raw records stay local-only.",
-    "baseline_bounds": "results/task4_v108_mexico_sampling/utility_bounds.csv",
+    "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain. Copenhagen adds four verified recognized HE legal seats/central addresses in the municipality as a partial lower bound, with July2026 population and November2026 institution snapshot; upper remains unknown. Institution presence is not student access or learning quality. Mexico City now uses EIC2025 resident age14-18 weighted school-travel bins; completed-secondary transition membership is optional, remaining current-stage interpretation conditional. Mexico sampling uses an approximate fixed-final-weight Taylor outer envelope over every legal membership prefix, retaining zero-target PSUs; FPC omitted. Coverage and current-stage assumptions remain conditional. Published sufficient moments reproduce bounds offline; raw records stay local-only. V113 adds one independently verified Singapore degree-awarding institution (UAS) to the existing partial inventory, retaining June2026 population and an unknown upper bound. Tokyo safety uses a conditional geographic/offence superset: Tokyo intentional deaths within the 2025 police reporting universe cannot exceed all Japan recorded criminal-death victims (631). This is not an observed Tokyo rate, not a bound on unreported/resident vital mortality. The strict Tokyo withdrawal arm retains [0,1]. Weights and utility transforms remain unchanged.",
+    "baseline_bounds": "results/task4_v113_evidence_revision/utility_bounds.csv",
     "latest_stress_analysis": "results/task4_v98_joint_stress/summary.json",
     "latest_acquisition_analysis_model_version": "V108",
     "latest_stress_analysis_model_version": "V96",
@@ -40,12 +40,16 @@
     "latest_london_historical_bins": "results/task4_v106_london_historical/summary.json",
     "latest_london_historical_bins_model_version": "V102",
     "latest_travel_scale_analysis": "results/task4_v111_travel_scale/summary.json",
-    "latest_travel_scale_analysis_model_version": "V108"
+    "latest_travel_scale_analysis_model_version": "V108",
+    "latest_weight_sensitivity": "results/task4_v113_ahp_mc/summary.json",
+    "latest_weight_sensitivity_model_version": "V113",
+    "latest_champion_exclusion_priority": "results/task4_v113_exclusion_priority/summary.json",
+    "latest_champion_exclusion_priority_model_version": "V108"
   },
-  "registry_sha256": "7959410046beb1a3c3e0e929848aacdc9c5b36f1f4276683e3ba16ebbe307e51",
-  "baseline_ranks_sha256": "082672ea6512c01c32f2b8e58be76b61b1bca34fc5bbb47931c719deb1b4b743",
-  "baseline_bounds_sha256": "8d876fa79042522d39512f40d5266758c060615abd5ee3b7829119047f534f17",
-  "utility_bounds_sha256": "16ca425988a3e143f1dbb4e2e3d4b713500dd104ba837c6769fc767b5cfcb198",
+  "registry_sha256": "d5dfe4a08fd36b02499ef69fc76967180036eef0166d893e6cc346459c11f4e0",
+  "baseline_ranks_sha256": "7e8f64712c08e4ca438051346a7e0d6dd9eaf29dd1dba954730738b02f570e40",
+  "baseline_bounds_sha256": "245bc168ee2d7328bca199ddcde5d698fa377d8b7111e2a552ed840f979e6a98",
+  "utility_bounds_sha256": "0057a74a7cdbc4477a171065dd5a471650e694e58b802f387aa513c630accf2f",
   "travel_evidence_sha256": "accfefca269720329c3b5b33d0a974e0ad44a514e7a3dcc0c309797f65965896",
   "travel_evidence_verified": true,
   "informative_travel_cities": 5,
@@ -83,9 +87,10 @@
     "Singapore"
   ],
   "continuous_recommendation": {
-    "unresolved_leaves": 0,
+    "unresolved_leaves": 3,
     "winners": [
-      "Singapore"
+      "Singapore",
+      "Tokyo"
     ]
   },
   "main_admitted": true

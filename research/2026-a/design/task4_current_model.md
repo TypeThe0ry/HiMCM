@@ -1,6 +1,12 @@
-# 当前模型：V107 Mexico City 2025通学与学段不确定性修订（2026-11-08）
+# 当前模型：V113 两项官方证据修订（2026-11-08）
 
-V107采用已核验EIC2025居民通学分箱，把已完成初中但未确认入读高中的成员保留可选。Mexico City20→23，Nairobi、New York、Dhaka各上升一位；可能冠军仍25城，Singapore连续保守推荐保持。当前入口为 `task4_mexico_2025_revision.mexico_2025_bounds()`。[五情景对照与限制](../results/task4_v107_mexico_revision/README.md)。所有既有诊断仍分别标注历史输入版本。
+当前入口 `task4_v113_evidence_revision.evidence_bounds()`，以注册表 JSON 为准。新加坡高校核验下界6→7；东京利用2025全国警方记录刑事死亡总数作为同一报告总体内的城市凶杀死亡宽上界，不能解释为实测东京死亡率或未报告死亡上界。严格撤回东京时仍保留[0,1]。固定权重、转换和其他248格；所有决策排名与25城可能冠军保持，新加坡最坏遗憾由34.072446降至33.990920。详见[证据修订](../results/task4_v113_evidence_revision/README.md)。
+
+V112完成等优先级AHP参照及权重蒙特卡洛；没有真实偏好调查。V113同设计重跑见[权重敏感性](../results/task4_v113_ahp_mc/summary.json)。下方是历史记录，不是当前结论。
+
+# 历史模型记录：V107 及以前
+
+V107采用已核验EIC2025居民通学分箱，把已完成初中但未确认入读高中的成员保留可选。Mexico City20→23，Nairobi、New York、Dhaka各上升一位；可能冠军仍25城，Singapore连续保守推荐保持。该历史版本入口为 `task4_mexico_2025_revision.mexico_2025_bounds()`。[五情景对照与限制](../results/task4_v107_mexico_revision/README.md)。所有既有诊断仍分别标注历史输入版本。
 
 V106取得London真实Year10历史旅时原件，以舍入和缺失约束得到[0.354259,0.686292]，但学校／年份／居民覆盖未匹配，仅做[历史子群对照](../results/task4_v106_london_historical/README.md)。Phoenix新财报和Türkiye新儿童调查也未补齐目标口径；真实输入与25城候选保持。
 

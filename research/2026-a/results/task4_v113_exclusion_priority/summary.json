@@ -1,0 +1,37 @@
+{
+  "evidence_model": "V108",
+  "input_bounds_sha256": "01f728432522b9e3f8a5768bf1d782a8c08fe60a0e352ce6d207bb6b663ae131",
+  "scenarios": [
+    "inherited",
+    "equal"
+  ],
+  "actual_admitted_cells": 0,
+  "actual_changed_bounds": 0,
+  "single_cell_exclusions": {
+    "equal": 0,
+    "inherited": 0
+  },
+  "single_cell_max_other_exclusions": {
+    "equal": 0,
+    "inherited": 0
+  },
+  "minimum_bundle_distribution": {
+    "equal": {
+      "5.0": 15,
+      "4.0": 8,
+      "3.0": 1,
+      "nan": 1
+    },
+    "inherited": {
+      "4.0": 15,
+      "3.0": 5,
+      "5.0": 3,
+      "2.0": 1,
+      "nan": 1
+    }
+  },
+  "threshold_monotonic_probe_checks": 0,
+  "interpretation": "Optimistic information acquisition for exclusion: hypothetical observed utilities at existing lower endpoints. Values are NOT data, probabilities or newly admitted bounds. Exact point observation is stronger than interval-valued evidence. Real observation may fail to exclude.",
+  "exclusion_rule": "post_upper < max_other_existing_lower - 1e-12; endpoint equality retains a possible tied champion",
+  "invariant": "All original data intervals, weights, transforms and registry remain unchanged."
+}

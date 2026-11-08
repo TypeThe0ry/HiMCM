@@ -1,0 +1,35 @@
+{
+  "city": "Tokyo",
+  "indicator": "homicide_rate",
+  "proposed_admission": true,
+  "source_year": 2025,
+  "population_year": 2025,
+  "population": 14254039,
+  "population_date": "2025-05-01",
+  "population_vintage": "Original estimate retained from V46, not rebased census",
+  "national_recorded_criminal_death_victims": 631.0,
+  "national_murder_death_victims": 232.0,
+  "raw_rate_lower": 0,
+  "raw_rate_upper": 4.426815445081917,
+  "utility_before": [
+    0,
+    1
+  ],
+  "utility_after": [
+    0.31119611525961716,
+    1
+  ],
+  "rule": "Geographic and offence-category superset: Tokyo recorded intentional-homicide deaths <= all Japan recorded criminal-death victims (excluding traffic negligence).",
+  "scope": "Conditional on recorded-crime reporting universe and criminal-death coverage. Not a Tokyo observed count or point rate; not a bound on unreported deaths or resident vital mortality.",
+  "target_geography": "Tokyo Metropolis; numerator bound is nationwide Japan",
+  "new_highschool_travel_observations": 0,
+  "unchanged": "Population denominator inherited exactly; cost anchor2, weights and TOPSIS formula unchanged.",
+  "inherited_population_summary_sha256": "6e340ca165b6141eb40fb373ec86c6573ef028d6a2770ec75e2997ae785c42ba",
+  "source_cell": "R07_053.xlsx sheet1 F6 (all criminal death victims), denominator inherited V46",
+  "limitations": [
+    "National total includes nonintentional and nonTokyo deaths, deliberately retained as broad upper bound.",
+    "No temporal correction or completeness correction inferred.",
+    "Annual2025 recordedcriminaldeaths paired with May2025 Tokyo population estimate.",
+    "Tokyo student travel remains[0,1]; selective athlete survey and daily return commute totals not admitted."
+  ]
+}

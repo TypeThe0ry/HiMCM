@@ -1,0 +1,56 @@
+{
+  "status": "passed_with_scope_condition",
+  "reviewer": "singapore_data113 independent cross-review",
+  "method": "stdlib ZIP/XML independent of extractor; PDF intro rendered as pdftotext layout",
+  "source_hashes": {
+    "R07_053.xlsx": "27254181d381a063504d1f14ab27c5bc632ace5e354536f963d0f5706d0be677",
+    "R07_ALL.pdf": "b36cf6931f04a5bed7fcebb034b3a537575eebc9b8567a711e4e03e2f0a919c9"
+  },
+  "workbook_cells": {
+    "F6": 631,
+    "F7": 232,
+    "F8": 13,
+    "F9": 34,
+    "F10": 7,
+    "F11": 0,
+    "F12": 0,
+    "F13": 26,
+    "F14": 0,
+    "F15": 53,
+    "F16": 53,
+    "F17": 0,
+    "F18": 0,
+    "F19": 0,
+    "F20": 0,
+    "F21": 13,
+    "F22": 213,
+    "F23": 8,
+    "F24": 0,
+    "F25": 0,
+    "F26": 0,
+    "F27": 29,
+    "F28": 3,
+    "F29": 0,
+    "F30": 0,
+    "F31": 0,
+    "F32": 0
+  },
+  "exclusive_category_death_sum": 631,
+  "population_from_proposal": 14254039,
+  "population_independently_rechecked": false,
+  "implied_upper_rate": 4.426815445081917,
+  "implied_utility_lower": 0.31119611525961716,
+  "checked": [
+    "F6 is death-person count rather than case count",
+    "Exclusive death rows sum631 after excluding nested assaultdeathF16",
+    "Infanticide and suicide-assistance/consent are present; total also includes negligence, so do not label631 intentionalhomicide count",
+    "PDF introduction states compilation from allprefecturalpolice and calendar years"
+  ],
+  "admission_condition": "Tokyo intentionalhomicide victim count must be within this same2025nationalpolice-recording universe. The national631 is an upper bound for a geographic/categorysubset, not a Tokyo estimate or nationalrate substituted for Tokyo.",
+  "limits": [
+    "No proof of unreported/undetected actualdeaths coverage",
+    "No harmonized ICCS fullcoverage claim",
+    "No claim of occurrence-year civilregistration comparability",
+    "Preserve unrestricted [0,1] scenario if police-recording population inclusion is not accepted"
+  ]
+}

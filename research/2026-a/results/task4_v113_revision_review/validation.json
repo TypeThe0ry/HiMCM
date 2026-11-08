@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "independent_source_arithmetic": true,
+  "pdf_death_victims_verified": 631,
+  "sg_verified_inventory_count": 7,
+  "source_scope": "Tokyo recorded-criminal-death superset conditional, strict withdrawal retained; Singapore recognized-institution supply only.",
+  "endpoint_cells_per_scenario": 250,
+  "ablation_scenarios": 4,
+  "weight_scenarios": 2,
+  "all_unchanged_except_declared_two_lower_endpoints": true,
+  "checks": [
+    {
+      "scenario": "v108",
+      "weights": "inherited",
+      "possible": 25,
+      "recommendation": "Singapore"
+    },
+    {
+      "scenario": "v108",
+      "weights": "equal",
+      "possible": 25,
+      "recommendation": "Singapore"
+    },
+    {
+      "scenario": "singapore_only_strict_tokyo",
+      "weights": "inherited",
+      "possible": 25,
+      "recommendation": "Singapore"
+    },
+    {
+      "scenario": "singapore_only_strict_tokyo",
+      "weights": "equal",
+      "possible": 25,
+      "recommendation": "Singapore"
+    },
+    {
+      "scenario": "tokyo_only_conditional",
+      "weights": "inherited",
+      "possible": 25,
+      "recommendation": "Singapore"
+    },
+    {
+      "scenario": "tokyo_only_conditional",
+      "weights": "equal",
+      "possible": 25,
+      "recommendation": "Singapore"
+    },
+    {
+      "scenario": "v113_conditional",
+      "weights": "inherited",
+      "possible": 25,
+      "recommendation": "Singapore"
+    },
+    {
+      "scenario": "v113_conditional",
+      "weights": "equal",
+      "possible": 25,
+      "recommendation": "Singapore"
+    }
+  ],
+  "source_bound_sha256": "01f728432522b9e3f8a5768bf1d782a8c08fe60a0e352ce6d207bb6b663ae131"
+}
