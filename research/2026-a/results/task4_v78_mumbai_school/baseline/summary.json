@@ -1,0 +1,74 @@
+{
+  "registry": {
+    "model_version": "V78",
+    "latest_review": "V78",
+    "module": "task4_mumbai_school_revision",
+    "factory": "mumbai_bounds",
+    "baseline_ranks": "results/task4_v78_mumbai_school/ranks.csv",
+    "baseline_scenario": "v78_school_allocation",
+    "fixed_alpha": 0.1,
+    "alpha_range": [
+      0.05,
+      0.2
+    ],
+    "latest_acquisition_analysis": "results/task4_v64_continuous_acquisition/summary.json",
+    "main_admitted": false,
+    "scope": "Conditional ten-indicator evidence bounds; school stage, geography, period and survey limitations remain.",
+    "baseline_bounds": "results/task4_v78_mumbai_school/utility_bounds.csv",
+    "latest_stress_analysis": "results/task4_v72_joint_stress/summary.json",
+    "latest_acquisition_analysis_model_version": "V63",
+    "latest_stress_analysis_model_version": "V72",
+    "latest_acquisition_limits": "results/task4_v73_acquisition_limits/summary.json",
+    "latest_acquisition_limits_model_version": "V72",
+    "latest_travel_evidence_index": "results/task4_current/travel_evidence.csv",
+    "latest_precision_frontier": "results/task4_v76_precision_frontier/summary.json",
+    "latest_precision_frontier_model_version": "V72"
+  },
+  "registry_sha256": "49865da7448a92ea9d8de4c3571a091fd2b1b9400bad0791018dd6c8ccb58de7",
+  "baseline_ranks_sha256": "63ab7882511f624dfcf9a08cde8d28c4b8416bc1c3ee2264d4bf46febbf3a3d9",
+  "baseline_bounds_sha256": "987a00220f61462f13600045fe62c794e20b6e433e34e9ce7645062e0d9ab39f",
+  "utility_bounds_sha256": "15cbc3f14e62b991083604434e5b50f7017da1c16123d59ce89e6b0dff351543",
+  "travel_evidence_sha256": "6d1d17a686b75d4bb949882d3247ed5ae3333db74f677f97ea77a16d5fdf2fcd",
+  "travel_evidence_verified": true,
+  "informative_travel_cities": 5,
+  "verified_cells": 250,
+  "baseline_matches": true,
+  "possible_champions": 25,
+  "continuous_possible_champions": [
+    "Toronto",
+    "Phoenix",
+    "New York",
+    "Mexico City",
+    "Bogota",
+    "Sao Paulo",
+    "Santiago",
+    "Copenhagen",
+    "London",
+    "Barcelona",
+    "Warsaw",
+    "Athens",
+    "Nairobi",
+    "Lagos",
+    "Cape Town",
+    "Dubai",
+    "Istanbul",
+    "Mumbai",
+    "Delhi",
+    "Dhaka",
+    "Tokyo",
+    "Shanghai",
+    "Singapore",
+    "Jakarta",
+    "Melbourne"
+  ],
+  "choice": [
+    "Singapore"
+  ],
+  "continuous_recommendation": {
+    "unresolved_leaves": 0,
+    "winners": [
+      "Singapore"
+    ]
+  },
+  "main_admitted": false
+}
