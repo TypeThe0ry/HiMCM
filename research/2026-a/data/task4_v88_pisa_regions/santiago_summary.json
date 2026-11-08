@@ -1,0 +1,62 @@
+{
+  "main_admitted": false,
+  "school_commune_code": 13101,
+  "school_commune_name": "Santiago",
+  "assessment": "SIMCE 2024 Segundo medio",
+  "source_school_records": 3000,
+  "selected_school_records": 64,
+  "source_grade": [
+    "2m"
+  ],
+  "source_year": [
+    2024
+  ],
+  "source_database_date": [
+    20250422
+  ],
+  "source_database_code": [
+    "preliminar20240422v1"
+  ],
+  "outcomes": [
+    {
+      "subject": "reading",
+      "official_commune_mean": 256.0,
+      "reported_test_takers": 6366,
+      "school_records": 64,
+      "unflagged_school_records": 63,
+      "unflagged_reported_test_takers": 6319,
+      "flagged_rbd": [
+        8499
+      ],
+      "flagged_test_takers": 47,
+      "weighted_rounded_school_mean_diagnostic_all": 256.20923656927425,
+      "weighted_rounded_school_mean_diagnostic_unflagged": 256.18104130400377,
+      "all_zero_proficiency_row_rbd": [
+        8759
+      ],
+      "all_zero_proficiency_test_takers": 8
+    },
+    {
+      "subject": "mathematics",
+      "official_commune_mean": 264.0,
+      "reported_test_takers": 6440,
+      "school_records": 64,
+      "unflagged_school_records": 63,
+      "unflagged_reported_test_takers": 6369,
+      "flagged_rbd": [
+        8499
+      ],
+      "flagged_test_takers": 71,
+      "weighted_rounded_school_mean_diagnostic_all": 264.27329192546586,
+      "weighted_rounded_school_mean_diagnostic_unflagged": 264.47699795886325,
+      "all_zero_proficiency_row_rbd": [
+        8759
+      ],
+      "all_zero_proficiency_test_takers": 9
+    }
+  ],
+  "scope": "Schools in Santiago commune13101, not metropolitan Santiago nor resident students. Current Segundo medio assessment, not all14-18 ages. National SIMCE points are not PISA points; no cross-test calibration is available. Published counts are examinees, not enrolled or resident cohort denominators.",
+  "flags": "One school RBD8499 has marca2: results not representative for reasons outside the agency. Scores remain numerical, so filtering nonmissing alone is insufficient. RBD8759 has all-three-proficiency percentages zero despite positive examinees; no percentage aggregate is produced.",
+  "aggregation": "Official commune means used directly. Weighted rounded school means are diagnostics only; publication does not establish precise aggregate inclusion or the proficiency-percentage denominator. No statistical confidence interval is inferred from rounded aggregates.",
+  "version_note": "Filenames say final; embedded codigo_bbdd remains preliminar20240422v1 and date20250422. Both preserved without silently resolving the discrepancy."
+}

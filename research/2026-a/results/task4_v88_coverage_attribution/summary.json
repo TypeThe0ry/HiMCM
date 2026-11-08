@@ -1,0 +1,116 @@
+{
+  "baseline_model": "V79",
+  "main_admitted": false,
+  "source_sha256": "2f5aa27c731352ea31f22cdf614ee28ce6c523abcb06a12fc2b0f0c46be55e8f",
+  "endpoint_ranks_sha256": "3d2fe27696ccc01525424c9ba89cd3be081bc774bfe149018d4713cebac77d52",
+  "actions": {
+    "withdraw_resource_only": [
+      "Warsaw",
+      "Istanbul",
+      "Mumbai",
+      "Delhi",
+      "Dhaka",
+      "Tokyo",
+      "Shanghai"
+    ],
+    "replace_common_measure": [
+      "Singapore",
+      "Jakarta"
+    ],
+    "add_learning_only": [
+      "Bogota",
+      "London",
+      "Dubai"
+    ]
+  },
+  "permutations": 6,
+  "states": [
+    {
+      "scenario": "resource_baseline",
+      "actions": [],
+      "possible_champions": 25,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "withdraw_resource_only",
+      "actions": [
+        0
+      ],
+      "possible_champions": 25,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "replace_common_measure",
+      "actions": [
+        1
+      ],
+      "possible_champions": 25,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "add_learning_only",
+      "actions": [
+        2
+      ],
+      "possible_champions": 25,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "withdraw_resource_only+replace_common_measure",
+      "actions": [
+        0,
+        1
+      ],
+      "possible_champions": 25,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "withdraw_resource_only+add_learning_only",
+      "actions": [
+        0,
+        2
+      ],
+      "possible_champions": 25,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "replace_common_measure+add_learning_only",
+      "actions": [
+        1,
+        2
+      ],
+      "possible_champions": 25,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    },
+    {
+      "scenario": "withdraw_resource_only+replace_common_measure+add_learning_only",
+      "actions": [
+        0,
+        1,
+        2
+      ],
+      "possible_champions": 25,
+      "minimax_choices": [
+        "Singapore"
+      ]
+    }
+  ],
+  "endpoint_validation": true,
+  "conservation_verified": true,
+  "interpretation": "Exact accounting over six orders; hybrid states mix distinct constructs and are diagnostics only. Rank units and regret-point changes are not causal effects or improvements in city conditions.",
+  "continuous_endpoint_evidence": "Endpoints reproduce V87; main-model continuous ranking separately rerun in V88 intake."
+}

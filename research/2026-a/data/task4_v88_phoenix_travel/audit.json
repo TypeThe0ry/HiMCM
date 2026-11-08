@@ -1,0 +1,58 @@
+{
+  "reviewed": "2026-11-08",
+  "main_admitted": false,
+  "new_observations": 0,
+  "prior_audits_reviewed": [
+    "task4_v7_phoenix",
+    "task4_v8_phoenix",
+    "task4_v39_phoenix_travel",
+    "task4_v53_phoenix_travel",
+    "task4_v54_phoenix_travel"
+  ],
+  "routes": [
+    {
+      "name": "MAG newer household survey committee reference",
+      "url": "https://azmag.gov/LinkClick.aspx?fileticket=GYJPWYhmVAI%3D&mid=2494&portalid=0&tabid=413",
+      "access": "Search index text references a 2025 Household Travel Survey; web open timed out, direct HTTP403",
+      "source_sha256": null,
+      "finding": "Regional travel behaviour description; no acquired Phoenix current-high-school duration table. Survey vintage not independently resolved against previously identified HTS2024."
+    },
+    {
+      "name": "FY2026 TRP annual report source locator",
+      "secondary_index": "https://poliscopic.com/documents/121141",
+      "original_url": "https://mccobagenda.databankcloud.com/AgendaOnline/Documents/DownloadFile/FY2026%20TRP%20ANNUAL%20REPORT_REV%209.11.PDF.pdf?documentType=1&isAttachment=True&isSection=False&itemId=274155&meetingId=4741&publishId=153558",
+      "access": "Original webreader and direct request HTTP403; secondary index readable",
+      "source_sha256": null,
+      "finding": "Secondary text is a countywide employee/student programme summary, not verified Phoenix high-school journey minutes; no numeric values admitted or transcribed as primary evidence."
+    },
+    {
+      "name": "FY2024 TRP former official download",
+      "url": "https://www.maricopa.gov/DocumentCenter/View/97890/FY2024-TRP-Annual-Report?bidId=",
+      "access": "Official webreader404",
+      "source_sha256": null
+    },
+    {
+      "name": "November2026 TRP agenda packet",
+      "url": "https://www.maricopa.gov/AgendaCenter/ViewFile/Agenda/_11032026-3887?packet=true",
+      "access": "Official webreader PDF5pages",
+      "source_sha256": null,
+      "finding": "Lists Tolleson Union High School District in employer plans; no school survey duration distribution, response denominator or Phoenix residence filter."
+    },
+    {
+      "name": "September2026 TRP agenda packet",
+      "url": "https://www.maricopa.gov/AgendaCenter/ViewFile/Agenda/_09152026-3851?packet=true",
+      "access": "Official webreader PDF6pages",
+      "source_sha256": null,
+      "finding": "Lists Mesa Public Schools and Notre Dame Preparatory High School in employer plans; does not supply student duration outcomes."
+    },
+    {
+      "name": "PXU actual student survey inspected as fallback",
+      "url": "https://elevateedaz.com/wp-content/uploads/2023/02/ElevateEdAZ_Fall2022DualEnrollment.pdf",
+      "access": "Publisher webreader PDF20pages",
+      "source_sha256": null,
+      "finding": "Appendix B is a dual-enrollment registration survey. No transport field found in extracted report; not a commute survey."
+    }
+  ],
+  "action_boundary": "No requests for access, emails, registrations or student linkage submitted. No raw original file acquired in this bounded search.",
+  "result": "Phoenix travel utility remains [0,1]; no current grade-and-city travel duration observation acquired."
+}

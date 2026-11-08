@@ -81,3 +81,5 @@ python3 research/2026-a/scripts/task4_current_model.py --output research/2026-a/
 ```
 
 [完整名次对照](rank_comparison.csv) · [学习成果包络](learning_intervals.csv) · [情景摘要](summary.json) · [当前主模型重跑](../task4_v87_intake/summary.json)。论文及Overleaf未改动。
+
+后续[V88数值分解](../task4_v88_coverage_attribution/README.md)区分撤回旧资源信息、共同城市指标替换及新增学习成果证据对名次变化的贡献。
