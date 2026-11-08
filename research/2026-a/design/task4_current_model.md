@@ -1,5 +1,7 @@
 # 当前模型：V79 Delhi同源教学资源分配修订（2026-11-08）
 
+V82完成[当前输入的稳健性边界细化](../results/task4_v82_joint_stress/README.md)：Singapore单城扩张的首次失效括区间缩为(0.042,0.043]，宽度比旧检查减少96%，未改变真实缺失区间。Phoenix新获同年学区学生25800与课堂教师1349.60 FTE并完成校级对账，仍不能替代全市口径。实际排名和25城可能冠军保持，注册表压力证书已更新至V79输入。
+
 V81完成[Phoenix及Barcelona来源审计与复算](../results/task4_v81_intake/README.md)：新增真实教育原件与问卷版本核验，未准入新指标。250格、排名、25城可能冠军与Singapore连续推荐均保持；模型仍为V79。
 
 V80在当前V79上[重新验证补数能力](../results/task4_v80_acquisition_limits/README.md)：全城教育＋通学精确揭示后，连续偏好不可排除城市数下界21→22，新增Mumbai，变化来自V78实测修订。实际冠军集合仍25城；[Phoenix128组合阈值](../results/task4_v80_precision_frontier/README.md)重算不变。注册表已指向本轮证书，压力分析仍为V72历史输入。

@@ -89,8 +89,11 @@ def protect_output(out,lo,hi,config):
             raise ValueError('Refusing to overwrite changed legacy baseline')
 
 
-def run(out=None,targeted_prefix_max=.05):
+def run(out=None,targeted_prefix_max=.05,extra_epsilons=()):
     if not 0<=targeted_prefix_max<=.2:raise ValueError('Targeted prefix must lie in [0,.2]')
+    extra_epsilons=tuple(extra_epsilons)
+    if any(not np.isfinite(e) or not 0<=e<=.2 for e in extra_epsilons):
+        raise ValueError('Extra epsilon values must be finite and in [0,.2]')
     lo,hi,config=current_bounds();amin,amax=config['alpha_range']
     out=Path(out) if out is not None else ROOT/('results/task4_'+config['model_version'].lower()+'_joint_stress')
     protect_output(out,lo,hi,config)
@@ -108,7 +111,7 @@ def run(out=None,targeted_prefix_max=.05):
     pd.DataFrame(targeted_fixed).to_csv(out/'targeted_epsilon02_certificate.csv',index=False)
     frames=[];cases=[]
     for structure,target in [('uniform',None),('recommendation_city_only',choice)]:
-        for epsilon in sorted(set([0,.025,.05,.075,.1,.15,.2,targeted_prefix_max])):
+        for epsilon in sorted(set([0,.025,.05,.075,.1,.15,.2,targeted_prefix_max,*extra_epsilons])):
             l,h=expand(lo,hi,epsilon,target)
             for alpha in sorted(set([amin,config['fixed_alpha'],amax])):
                 f,d=summarize(l,h,weights(alpha))
@@ -145,8 +148,9 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--output',type=Path,help='Output directory; defaults to current model version')
     parser.add_argument('--targeted-prefix-max',type=float,default=.05)
+    parser.add_argument('--extra-epsilon',type=float,action='append',default=[],help='Additional explicitly sampled expansion, repeatable; not a continuous certificate')
     args=parser.parse_args()
-    run(args.output,args.targeted_prefix_max)
+    run(args.output,args.targeted_prefix_max,args.extra_epsilon)
 
 
 if __name__=='__main__':main()

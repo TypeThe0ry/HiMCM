@@ -1,0 +1,22 @@
+{
+  "source": "https://www.azed.gov/sites/default/files/2025/07/FY26_TIA-support-guide_Final_7.18.25.pdf",
+  "source_version": "FY2026 guide, updated July2025",
+  "observed": "2026-11-08",
+  "evidence_type": "Paraphrase of web-reader text; original PDF and page rendering both unavailable (HTTP403)",
+  "findings": [
+    {
+      "page": 27,
+      "meaning": "Each assignment records grades and daily instructional periods. Multiple classes require separate position records, illustrated by one teacher assigned chemistry and biology."
+    },
+    {
+      "page": 29,
+      "meaning": "An exiting or internally transferring employee receives an end date but remains on the school site report for the fiscal year."
+    },
+    {
+      "page": 25,
+      "meaning": "Substitute teachers are entered after four consecutive weeks in the same position."
+    }
+  ],
+  "inference": "These rules motivate assignment-level deduplication and active-date filtering. They do not establish the exact cause of the V81 dashboard overlap, the FY2025 rules, or its aggregation code.",
+  "main_admitted": false
+}

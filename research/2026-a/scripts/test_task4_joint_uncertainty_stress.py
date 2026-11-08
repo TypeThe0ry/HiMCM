@@ -9,6 +9,13 @@ from task4_joint_uncertainty_stress import expand,rectangle_enclosure,certify_pr
 from task4_v5_model import score,weights
 
 class JointStressTests(unittest.TestCase):
+    def test_invalid_extra_epsilon_rejected_before_reading_inputs(self):
+        with patch('task4_joint_uncertainty_stress.current_bounds') as current:
+            for value in [-.01,.21,float('nan'),float('inf')]:
+                with self.assertRaisesRegex(ValueError,'Extra epsilon'):
+                    run(extra_epsilons=[value])
+            current.assert_not_called()
+
     def test_historical_baseline_rejected_before_any_write(self):
         lo=np.zeros((25,10));hi=np.ones((25,10))
         with tempfile.TemporaryDirectory() as folder:
