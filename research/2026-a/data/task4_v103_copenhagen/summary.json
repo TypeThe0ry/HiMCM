@@ -1,0 +1,51 @@
+{
+  "city": "Copenhagen",
+  "criterion": "travel",
+  "admitted": false,
+  "utility_interval": [
+    0,
+    1
+  ],
+  "new_actual_travel_source": {
+    "file": "eud.pdf",
+    "institution": "CeFU, Aalborg University",
+    "survey_period": "March-April2024",
+    "report_year": 2025,
+    "respondents": 1732,
+    "population": "GF2 vocational students under25",
+    "printed_figure_page": 80,
+    "pdf_page": 85,
+    "minute_categories": [
+      "<5",
+      "5-15",
+      "16-30",
+      "31-60",
+      ">60"
+    ],
+    "rounded_percentages": [
+      4,
+      18,
+      29,
+      33,
+      17
+    ],
+    "sum_rounded_percentages": 101,
+    "municipal_disaggregation_verified": false,
+    "reason_not_admitted": "National institutional survey, not Copenhagen resident or school-specific distribution; age includes19-24; multi-region institutions cannot all be geographically located."
+  },
+  "local_actual_mode_source": {
+    "file": "rysensteen.pdf",
+    "survey_year": 2010,
+    "report_year": 2011,
+    "school": "Rysensteen Gymnasium",
+    "printed_page": 33,
+    "pdf_page": 34,
+    "measure": "usual transport modes, not travel minutes",
+    "reason_not_admitted": "Historical single-school mode chart cannot identify time utility or current city target."
+  },
+  "visual_checks": [
+    "EUD PDF85 figure6.1 checked",
+    "Rysensteen PDF34 mode chart checked"
+  ],
+  "prospective_data_needed": "Age14-18/enrolled-upper-secondary, Copenhagen resident geography, reported home-school minutes, weights and denominator; or school-specific subset with defensible target share."
+}

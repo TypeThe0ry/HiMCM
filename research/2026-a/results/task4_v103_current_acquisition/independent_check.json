@@ -1,0 +1,101 @@
+{
+  "independent_method": "Longdouble from saved250bounds; independent subset enumeration; no model imports",
+  "input_hash_verified": true,
+  "baseline_v102_matches": true,
+  "checked_evaluated_bundles": 535,
+  "negative_witnesses": 331,
+  "certified_bundles": 204,
+  "continuous_certificate_leaves": 412,
+  "all25city_continuous_minimalities_verified": true,
+  "independently_enumerated_fixed_bundles": 475,
+  "maximum_numerical_discrepancy": 3.5196129864745185e-14,
+  "changed_input_cells_vs_V96": [
+    {
+      "city": "Copenhagen",
+      "indicator": "research_he_density"
+    }
+  ],
+  "changed_minimum_rows": [
+    {
+      "city": "Copenhagen",
+      "previous": {
+        "city": "Copenhagen",
+        "fixed_alpha_minimum": "1",
+        "fixed_alpha_minimal_bundles": "4",
+        "smallest_certified_continuous_bundle": "2",
+        "minimum_proved_in_outer_model": "True",
+        "unresolved_smaller_bundles": "0",
+        "certified_minimal_bundles": "14",
+        "unresolved_at_smallest_certified_size": "0"
+      },
+      "current": {
+        "city": "Copenhagen",
+        "fixed_alpha_minimum": "1",
+        "fixed_alpha_minimal_bundles": "4",
+        "smallest_certified_continuous_bundle": "1",
+        "minimum_proved_in_outer_model": "True",
+        "unresolved_smaller_bundles": "0",
+        "certified_minimal_bundles": "3",
+        "unresolved_at_smallest_certified_size": "0"
+      }
+    }
+  ],
+  "prior_bundle_count": 550,
+  "added_bundle_count": 0,
+  "removed_bundle_count": 15,
+  "shared_status_changes": [
+    {
+      "city": "Copenhagen",
+      "indicators": "homicide_rate"
+    },
+    {
+      "city": "Copenhagen",
+      "indicators": "upper_secondary_ptr"
+    },
+    {
+      "city": "Copenhagen",
+      "indicators": "travel"
+    }
+  ],
+  "previous_continuous_certificate_leaves": 420,
+  "changed_shared_point_margin_bundles": 6,
+  "shared_point_margin_changes": [
+    {
+      "city": "Copenhagen",
+      "indicators": "",
+      "minimum_margin_change": 2.015584777319864,
+      "maximum_margin_change": 2.4872762254657284
+    },
+    {
+      "city": "Copenhagen",
+      "indicators": "homicide_rate",
+      "minimum_margin_change": 2.0362573410698754,
+      "maximum_margin_change": 2.7030571709121274
+    },
+    {
+      "city": "Copenhagen",
+      "indicators": "upper_secondary_ptr",
+      "minimum_margin_change": 2.0362573410698754,
+      "maximum_margin_change": 2.7030571709121274
+    },
+    {
+      "city": "Copenhagen",
+      "indicators": "public_transport_density",
+      "minimum_margin_change": 2.0362573410698754,
+      "maximum_margin_change": 2.500890520240253
+    },
+    {
+      "city": "Copenhagen",
+      "indicators": "travel",
+      "minimum_margin_change": 2.0362573410698754,
+      "maximum_margin_change": 2.7030571709121274
+    },
+    {
+      "city": "Copenhagen",
+      "indicators": "public_pool_density",
+      "minimum_margin_change": 2.0362573410698754,
+      "maximum_margin_change": 2.500890520240253
+    }
+  ],
+  "scope": "Upper-endpoint hypothetical exact revelations only; neither observed data nor guaranteed real acquisition benefits or necessary performance champions."
+}

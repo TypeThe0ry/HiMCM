@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "model_version": "V102",
+  "input_hash_verified": true,
+  "baseline_matches_admitted_v102": true,
+  "unresolved_cases": [
+    {
+      "scenario": "both_plus_homicide_rate",
+      "mode": "continuous",
+      "lower": 3,
+      "upper": 5
+    }
+  ],
+  "lower_certificates_checked": 300,
+  "shared_completion_city_checks": 600,
+  "hypothetical_selected_cell_values_checked": 1404,
+  "positive_joint_witnesses": 312,
+  "maximum_fixed_margin_discrepancy": 3.2264121929692635e-14,
+  "minimum_count_matches": 23,
+  "method": "Independent long-double scores, direct quadratic coefficients and stable analytical roots; no project helpers.",
+  "scenario_only": true,
+  "main_admitted": false,
+  "formal_interval_arithmetic": false,
+  "input_file_sha256": {
+    "summary.json": "e1ec64c7d47c0e5f22ed6825d5f498fbc70270ddd743c22a84b7574cb0b29ea1",
+    "hypothetical_exact_values.csv": "211a79d3c7cc0d9290882e2a3f696a873ef5068a34b737eb0ad12258df9a0974",
+    "city_feasibility.json": "51c193e6b1bb37ec7ce080ef3790c4699ccbe7ea120fc0613bb8d167ecd3f0f0",
+    "unavoidable_certificates.csv": "213bd88d43f0bbd4016701d246f535431d20e2033cacd5beadf9b16d3e1fa96d",
+    "baseline/utility_bounds.csv": "8a9f270fbaad55d6a66eecc22cb37b4d522268d19f8e837b521707a64ad936e6"
+  }
+}
