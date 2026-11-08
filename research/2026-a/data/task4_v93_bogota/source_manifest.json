@@ -1,0 +1,40 @@
+{
+  "access_date": "2026-11-08",
+  "main_admitted": false,
+  "new_person_records": 0,
+  "sources": [
+    {
+      "url": "https://www.mas60datosplateados.com/documents/Anexo%20t%C3%A9cnico%20%2B60%20Datos%20Plateados.pdf",
+      "local_path": "/tmp/bogota93_annex.pdf",
+      "bytes": 384452,
+      "sha256": "727b8bf25598c91a8d03ce2daab1d337e1b3c4d6bbaab25a21fb55e87141721c",
+      "http_status": 200,
+      "page_1based": 13,
+      "role": "Third-party technical annex; locates an official technical-data ZIP, not verified raw workbook"
+    },
+    {
+      "url": "https://www.simur.gov.co/sites/www.simur.gov.co/files/2024-05-21/basico/2.PublicacionSIMUR-20240521T211042Z-001.zip",
+      "local_path": "/tmp/bogota93_publicacion_response",
+      "bytes": 3746,
+      "sha256": "77d166db3a55d51a96ef403eb1e14e44bdaece518068ab4815abd2baf65fca63",
+      "http_status": 403,
+      "content_type": "text/html",
+      "role": "Error response, not a downloaded ZIP"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ESO-Rennes/Distancias_Emisiones_EODH/e6a968153f361faae92fde510592d8e40d226e2f/Distancias_EODH_2023_projection_reseau.html",
+      "local_path": "/tmp/bogota93_research.html",
+      "bytes": 5617199,
+      "sha256": "948c7eb7a1034f23b0c920e5ccb943f5d0ebd280c00ec3e272c647c643a483fa",
+      "http_status": 200,
+      "role": "Rendered third-party research; local workbook references, no acquired raw D/E or trip records",
+      "htmlwidget_script_count": 0
+    }
+  ],
+  "landing_check": {
+    "url": "https://observatorio.movilidadbogota.gov.co/publicaciones/resultados/encuesta-de-movilidad-2023",
+    "result": "requests RemoteDisconnected; web fetch timeout/502"
+  },
+  "original_raw_workbook_acquired": false,
+  "official_dictionary_acquired": false
+}

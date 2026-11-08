@@ -1,5 +1,7 @@
 # 当前模型：V91 Phoenix市域监测网络区间修订（2026-11-08）
 
+V93将[Phoenix高中成绩覆盖](../results/task4_v93_intake/README.md)扩展到100校、296条学校—学科记录；保留未知测试人数，不替换全市师资资源指标。[压力检验](../results/task4_v93_joint_stress/README.md)已更新至当前V91，推荐失效边界仍为(0.042,0.043]。真实排名、250格及25个可能冠军保持。
+
 V92将[冠军补数能力分析](../results/task4_v92_acquisition_limits/README.md)更新到V91：教育＋通学＋PM2.5连续不可排除下界21→22，新增Phoenix；实际可能冠军仍25城。并扩展Phoenix官方11年级学校考试记录，保留受限值及范围缺口；主模型和排名未改。
 
 V91取得[官方EPA市内监测数据](../results/task4_v91_phoenix_monitor/README.md)，Phoenix PM2.5效用由未知改为[0.564421,0.680536]，对应已观测合格监测网络的条件加权量，不是人口暴露界。Phoenix第24→16，得分界宽度缩小13.47%；25个可能冠军保持。严格撤回恢复V79。[连续补数分析](../results/task4_v91_current_acquisition/README.md)同步更新，其他V79诊断保留历史版本。

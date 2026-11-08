@@ -1,0 +1,60 @@
+{
+  "main_admitted": false,
+  "new_identity_verified_schools": 40,
+  "new_schools_with_grade11": 38,
+  "new_subject_rows": 112,
+  "combined_schools_with_grade11": 100,
+  "combined_subject_rows": 296,
+  "roster_schools": 144,
+  "verified_roster_schools": 110,
+  "coverage_by_grade11": {
+    "not_positive_or_unknown_code": {
+      "roster": 2,
+      "identity_verified": 2,
+      "with_results": 1
+    },
+    "positive": {
+      "roster": 111,
+      "identity_verified": 99,
+      "with_results": 99
+    },
+    "zero": {
+      "roster": 31,
+      "identity_verified": 9,
+      "with_results": 0
+    }
+  },
+  "subjects": {
+    "ELA": {
+      "rows": 99,
+      "known_tested_count_rows": 89,
+      "known_test_record_count": 14734.0,
+      "unknown_tested_count_rows": 10,
+      "unknown_rate_rows": 41,
+      "known_count_unknown_rate_mass": 1155.0,
+      "published_percentage_descriptor_lower": 36.13390796796525,
+      "published_percentage_descriptor_upper": 43.97291977738564
+    },
+    "MATH": {
+      "rows": 100,
+      "known_tested_count_rows": 89,
+      "known_test_record_count": 15259.0,
+      "unknown_tested_count_rows": 11,
+      "unknown_rate_rows": 49,
+      "known_count_unknown_rate_mass": 1780.0,
+      "published_percentage_descriptor_lower": 27.239858444196866,
+      "published_percentage_descriptor_upper": 38.90510518382594
+    },
+    "Science": {
+      "rows": 97,
+      "known_tested_count_rows": 86,
+      "known_test_record_count": 14315.0,
+      "unknown_tested_count_rows": 11,
+      "unknown_rate_rows": 52,
+      "known_count_unknown_rate_mass": 2616.0,
+      "published_percentage_descriptor_lower": 16.166608452672023,
+      "published_percentage_descriptor_upper": 34.4411456514146
+    }
+  },
+  "scope": "Current NCES-identifier linkage to 2024-25 Phoenix-boundary CCD roster; FY2025 grade11 assessment records; not resident/citywide pass rate, no cross-city assessment calibration."
+}
