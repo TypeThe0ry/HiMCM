@@ -1,0 +1,7 @@
+weight_reference,city,raw_multiplier_range,baseline_gap_to_best_other,gap_at_50pct_cost_reduction,status,threshold_raw_multiplier,required_cost_reduction_fraction,threshold_bracket,regret_gap_at_threshold,gap_to_Oslo_at_threshold,tied_minimax_choices,strict_rule,local_crossing_verified_at_multiplier_offset
+fixed,Singapore,"[0.5, 1]",2.0069865622837355,-0.6683293123800809,crossing_found,0.6045996549206138,0.39540034507938615,"[0.6045996549206137, 0.6045996549206138]",0.0,0.0,"['Oslo', 'Singapore']",candidate regret < every other city regret - 1e-10; equality is a tied recommendation,1e-06
+fixed,Zurich,"[0.5, 1]",2.0684583114742026,-2.670156084349422,crossing_found,0.7545413970886123,0.24545860291138766,"[0.7545413970886122, 0.7545413970886123]",0.0,0.0,"['Zurich', 'Oslo']",candidate regret < every other city regret - 1e-10; equality is a tied recommendation,1e-06
+fixed,Dublin,"[0.5, 1]",3.4110035970751085,0.2832368940370671,not_reached,,,,,,,,
+equal,Singapore,"[0.5, 1]",2.945405336010154,0.5605469931010774,not_reached,,,,,,,,
+equal,Zurich,"[0.5, 1]",1.7669966722424633,-2.4348062918319258,crossing_found,0.7627061798119006,0.2372938201880994,"[0.7627061798119005, 0.7627061798119006]",7.105427357601002e-15,7.105427357601002e-15,"['Zurich', 'Oslo']",candidate regret < every other city regret - 1e-10; equality is a tied recommendation,1e-06
+equal,Dublin,"[0.5, 1]",5.004660722984212,2.2557498406461605,not_reached,,,,,,,,

@@ -1,0 +1,85 @@
+{
+  "method_dataset": "user16 V118",
+  "country_dataset": "separate25 V117",
+  "midpoint_role": "Illustration only; neither imputation nor main recommendation. Main TOPSIS interval/minimax unchanged.",
+  "comparison_scope": "Same midpoint utilities and weights. TOPSIS retains fixed0/1 ideals; classic VIKOR uses sample best/worst. Agreement does not validate missing values or establish truth.",
+  "kendall_tau_b": 0.5166666666666667,
+  "kendall_pvalue_descriptive": 0.004639144437791718,
+  "topsis_winners": [
+    "Zurich"
+  ],
+  "vikor_q_winners": [
+    "Dublin"
+  ],
+  "vikor_v": 0.5,
+  "vikor_advantage_threshold": 0.06666666666666667,
+  "vikor_first_second_Q_gap": 0.2578909877640494,
+  "acceptable_advantage": true,
+  "acceptable_stability": true,
+  "single_compromise_accepted": true,
+  "vikor_zero_denominator_rule": "Constant criteria and zero S/R range contribute zero normalized loss; ties retained.",
+  "user16_country_counts": {
+    "Austria": 1,
+    "Czechia": 1,
+    "Finland": 1,
+    "France": 1,
+    "Germany": 1,
+    "Ireland": 1,
+    "Italy": 1,
+    "Japan": 1,
+    "Netherlands": 1,
+    "Norway": 1,
+    "Poland": 1,
+    "Singapore": 1,
+    "Spain": 1,
+    "Sweden": 1,
+    "Switzerland": 1,
+    "United Kingdom": 1
+  },
+  "same_country_comparison_possible_in_user16": false,
+  "country_pairs": [
+    {
+      "country": "United States",
+      "city_a": "Phoenix",
+      "city_b": "New York",
+      "a_score_interval": [
+        31.39060820931906,
+        71.68091378914416
+      ],
+      "b_score_interval": [
+        30.217703383675584,
+        72.80592622514423
+      ],
+      "a_necessarily_strictly_better": false,
+      "b_necessarily_strictly_better": false,
+      "a_possible_pairwise_winner": true,
+      "b_possible_pairwise_winner": true,
+      "decision": "No necessary winner identified"
+    },
+    {
+      "country": "India",
+      "city_a": "Mumbai",
+      "city_b": "Delhi",
+      "a_score_interval": [
+        28.8218173040749,
+        60.6424758195191
+      ],
+      "b_score_interval": [
+        32.59044231172556,
+        63.89547851443059
+      ],
+      "a_necessarily_strictly_better": false,
+      "b_necessarily_strictly_better": false,
+      "a_possible_pairwise_winner": true,
+      "b_possible_pairwise_winner": true,
+      "decision": "No necessary winner identified"
+    }
+  ],
+  "limits": "One city per country in user16 prevents within-country comparisons or separating city and country effects. Separate25 pairs are illustrative cases, not pooled rankings or estimates of all national cities.",
+  "input_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "results/task4_user_v118_revision/utility_bounds.csv": "c9b1cf779d9ecdea77adc4691809926216d47e9494641718c1253889f66396fa",
+    "results/task4_v117_city_revision/utility_bounds.csv": "ba1c2ae5ea0c0de4e2a28b07ce3a685113cc601fa89f20b417ec411d4b93fbbf",
+    "data/city_candidates_team_25.csv": "940694b23f26d18ae8090596bd2705549ccb3b047796bc3ed87ea6b1c855da69"
+  }
+}

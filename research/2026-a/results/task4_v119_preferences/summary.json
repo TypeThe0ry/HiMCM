@@ -1,0 +1,102 @@
+{
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "v118_admissions_sha256": "eb3c90ee48eb8f106c00efba98f9a0d8524f2651feb750cf0e4d265a11f72da4",
+  "source": "Unchanged sixteen-city V118 bounds",
+  "preference_evidence": "Analyst-designed scenarios, no survey, no expert elicitation, no age-based weight claims",
+  "ahp_interpretation": "Ratio reconstruction of declared weights; CR measures internal algebraic consistency only",
+  "seed": 20261108,
+  "concentration": 100,
+  "draws_per_profile": 10000,
+  "total_draws": 30000,
+  "random_generator": "numpy.default_rng(SeedSequence([20261108,100])) reset for each profile",
+  "mc_interpretation": "Conditional scenario frequencies, not population preferences or real winning probabilities",
+  "profiles": [
+    {
+      "profile": "baseline",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "kendall_tau_b_vs_baseline": 1.0,
+      "mean_score_interval_width": 17.942190021014284,
+      "mc_most_recommended": "Oslo",
+      "mc_most_recommended_frequency": 0.6931,
+      "consistency_ratio": 0.0
+    },
+    {
+      "profile": "education_priority",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "kendall_tau_b_vs_baseline": 0.7,
+      "mean_score_interval_width": 19.393611319397827,
+      "mc_most_recommended": "Oslo",
+      "mc_most_recommended_frequency": 0.7972,
+      "consistency_ratio": 0.0
+    },
+    {
+      "profile": "independent_living_priority",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "kendall_tau_b_vs_baseline": 0.8833333333333333,
+      "mean_score_interval_width": 24.14040282730805,
+      "mc_most_recommended": "Oslo",
+      "mc_most_recommended_frequency": 0.7694,
+      "consistency_ratio": 2.649301773900448e-16
+    }
+  ]
+}
