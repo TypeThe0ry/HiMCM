@@ -1,0 +1,74 @@
+{
+  "city": "Istanbul",
+  "source_file": "../task4_v114_istanbul_travel/istanbul_liseli_profili_2011.pdf",
+  "source_sha256": "0bed69a3fc69c0f0b35d3d28edef02c09e7564d8cf298d45ca6c08288cf4e674",
+  "source_year": 2011,
+  "pages": 126,
+  "inspection": "All126pages rendered and Turkish OCR; keyword and table screening across full report; targeted visual checks PDF30,31,55,75. Not a claim of manual visual review of every page.",
+  "ocr_tool": "tesseract 5.5.3",
+  "ocr_language": "tur",
+  "render_max_dimension_px": 1800,
+  "ocr_nonempty_pages": 119,
+  "keyword_counts": {
+    "duration_or_mode": 0,
+    "transport": 2,
+    "school_residence": 0,
+    "age_or_grade": 229,
+    "geography": 18
+  },
+  "findings": [
+    {
+      "pdf_pages": [
+        30,
+        31
+      ],
+      "printed_pages": [
+        28,
+        29
+      ],
+      "finding": "School selection intentionally contrasts types and advantage levels. Planned50students each in grades9and11. Grade12 deliberately excluded because entrance-exam preparation/absence.21schools;2037questionnaires collected;2035analyzed.2100 is design/rounded participation description, not analyzed N."
+    },
+    {
+      "pdf_pages": [
+        55
+      ],
+      "printed_pages": [
+        53
+      ],
+      "table": 47,
+      "finding": "School-term living arrangement, not travel time: family1749,schooldorm87,privatedorm40,otherarrangements and missing. It does not identify home district or duration."
+    },
+    {
+      "pdf_pages": [
+        75
+      ],
+      "printed_pages": [
+        73
+      ],
+      "table": 84,
+      "finding": "Transport is a ranked allowance-expenditure category, not minutes, modes or distance. Cannot convert importance ranking to AHP pairwise values or travel utility."
+    },
+    {
+      "pdf_pages": [
+        33
+      ],
+      "printed_pages": [
+        31
+      ],
+      "finding": "Sampling deliberately emphasizes female-dominated schooltypes; report analyzes sex and schooltype variation. No usable14-vs18age/currentdistrict access table found in full-document scan."
+    }
+  ],
+  "admitted": false,
+  "new_model_observations": 0,
+  "travel_interval": [
+    0,
+    1
+  ],
+  "reasons": [
+    "No verified actual home-to-school duration variable or distribution.",
+    "Grades9/11 selected schools cannot silently represent allresident14–18students.",
+    "No reported district-by-age facility access table or suitable population expansion weights was verified.",
+    "Historical2011 period remains2011; no2025transfer made."
+  ],
+  "scope_for_future": "Useful source-design precedent for schoolstage heterogeneity and transport affordability questions, not evidence for current city travel or AHP weights."
+}

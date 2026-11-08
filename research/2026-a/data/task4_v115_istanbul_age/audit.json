@@ -1,0 +1,69 @@
+{
+  "city": "Istanbul",
+  "indicator": "travel",
+  "admitted": false,
+  "utility_before": [
+    0,
+    1
+  ],
+  "utility_after": [
+    0,
+    1
+  ],
+  "new_admitted_observations": 0,
+  "sources": [
+    {
+      "file": "devkota_highschool_locations.pdf",
+      "year": 2010,
+      "study_geography": [
+        "Besiktas",
+        "Beyoglu",
+        "Kagithane",
+        "Sisli"
+      ],
+      "school_inventory": 91,
+      "school_administration_interviews": 20,
+      "pages": {
+        "age_estimation": 36,
+        "interviews": 40,
+        "catchment": 47,
+        "limitations": 63
+      },
+      "finding": "Nearest-school network accessibility, not actual attended-school journeys; modeled walking speed5.4km/h. Age14\u201317 demand estimated from broad age bands rather than observed age-specific enrollment.",
+      "admission_reason": "Author explicitly states student travel behaviour was not captured; four-district historical modeled proximity cannot replace city actual one-way duration."
+    },
+    {
+      "file": "ozdogru2021_time_use.pdf",
+      "sample_size": 180,
+      "grades": {
+        "10": 118,
+        "11": 62
+      },
+      "age_range": [
+        15,
+        18
+      ],
+      "age_mean": 16.16,
+      "sample_scope": "Convenience sample at one public Anatolian high school in an unnamed central European-side Istanbul district",
+      "finding": "Questionnaire measures eight out-of-school activities plus other; no home-to-school duration item. Overall age range does not supply age14vs18 outcomes.",
+      "admission_reason": "No commute measure, no representative city or district comparison; behavior is not elicited importance weights.",
+      "publication_year": 2021,
+      "data_collection_year": null,
+      "date_note": "Permissions dated23.03.2015 and03.08.2015; earlier presentation2018. These do not establish the actual fieldwork date.",
+      "date_evidence_locator": {
+        "permission_dates": {
+          "pdf_page": 7,
+          "printed_page": 18
+        },
+        "earlier_presentation_note": {
+          "pdf_pages": [
+            1,
+            2
+          ],
+          "publication_note": "2018 conference version, not a fieldwork date"
+        }
+      }
+    }
+  ],
+  "model_and_weights_changed": false
+}

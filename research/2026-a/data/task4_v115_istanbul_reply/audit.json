@@ -1,0 +1,45 @@
+{
+  "city": "Istanbul",
+  "indicator": "travel",
+  "admitted": false,
+  "utility_before": [
+    0,
+    1
+  ],
+  "utility_after": [
+    0,
+    1
+  ],
+  "new_observations": 0,
+  "original_target": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T7/WebOnergeMetni/5e9d9f19-05ee-4077-b2cc-16de924ecaf7.pdf",
+  "browser_attempt": {
+    "browser": "Chrome ordinary navigation",
+    "result": "Navigation timed out; freshly inspected created tab remained about:blank. No PDF body read or downloaded; no security bypass."
+  },
+  "new_primary_routes": [
+    {
+      "url": "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/12/Basilmis/259546ca-06fd-49ba-a1b4-f0dcf0a0a63c.pdf",
+      "title": "TBMM printed proceedings, 28th term, 4th legislative year, 12th session, 4 November 2025",
+      "web_pages": 288,
+      "verified": "Official question index at PDF page67/printed189 identifies Elif Esen question7/34663 on safe school transport in Istanbul. A ministerial group cover letter mentions7/34663. The specific travel appendix was not read.",
+      "body_admissible": false,
+      "local_download": "ConnectTimeout"
+    },
+    {
+      "url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y3/T7/WebOnergeMetni/159da506-9030-4d79-8262-25984cf69068.pdf",
+      "web_pages": 8,
+      "verified": "Official grouped ministerial cover letter dated4November2025 includes7/34663 among12questionIDs and references a36pagecombinedannex. The servedPDF has8pages, so the cover cannot establish that the target transport appendix is included.",
+      "body_admissible": false,
+      "local_download": "ConnectTimeout"
+    }
+  ],
+  "source_capture_type": "Manual record of successful web metadata/index reading; not original PDF bytes or a transcription of the unread response.",
+  "missing": "Readable specific7/34663 response with age/current-stage, Istanbul population/denominator, actual outbound school duration and coverage. Question concerns and generic cover letters provide no travel estimate.",
+  "no_changes": [
+    "model registry",
+    "weights",
+    "normalization",
+    "data intervals",
+    "rankings"
+  ]
+}

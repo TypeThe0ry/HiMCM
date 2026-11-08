@@ -1,0 +1,34 @@
+{
+  "review_round": "V115",
+  "evidence_model": "V114",
+  "baseline_commit": "a0e4749",
+  "status": "verified_no_new_admission",
+  "actual_changed_cells": 0,
+  "actual_changed_ranks": 0,
+  "verified_bound_cells": 250,
+  "verified_city_ranks": 25,
+  "possible_champions": 25,
+  "istanbul_decision_rank": 7,
+  "istanbul_travel": [
+    0,
+    1
+  ],
+  "source_reviews": {
+    "survey": {
+      "sha256": "72704f2251f4a9c3038f1086a2313c7bd0eefb96373b19fc333781bfaf12ff54",
+      "path": "data/task4_v115_istanbul_survey/audit.json"
+    },
+    "age": {
+      "sha256": "9faa8c04ce5a3b5620b850c3bf39f22eac7f38417edafca6f88a12b55b2fbb27",
+      "path": "data/task4_v115_istanbul_age/audit.json"
+    },
+    "reply": {
+      "sha256": "d91b597d61f2dc8f41d62c2eac24480b1a2c1d2b72310e98deeb415566fc6664",
+      "path": "data/task4_v115_istanbul_reply/audit.json"
+    }
+  },
+  "reproduced_summary_sha256": "32914ad507add5c4175576288db75090d961d0765f05a1ea2b3c9b13527d11a5",
+  "bounds_sha256": "e69493245ddd420829818facd0133d8bbda3ae7b41556c273efce62638eb994c",
+  "monte_carlo": "Not repeated: evidence bounds and weights are unchanged; V114 results remain applicable.",
+  "unresolved": "No verified Istanbul resident current-high-school one-way duration distribution; no observed district-by-age usable-access table."
+}
