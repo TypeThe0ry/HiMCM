@@ -1,0 +1,30 @@
+{
+  "access_date": "2026-11-09",
+  "not_admitted_as_separate_observations": [
+    {
+      "quantity": "DPP2025 metro aggregate61",
+      "reason": "Line-specific table has17+24+20 appearances; Můstek/Muzeum/Florenc each repeat across serving lines. Use named station-complex deduplication, not aggregate61."
+    },
+    {
+      "quantity": "2025registered58complexes",
+      "reason": "Registration is not continuous operation: Pankrác and Českomoravská had2025long closures. Annual registered count is a cross-check, not the current candidate."
+    },
+    {
+      "quantity": "2025year-end57operating inference",
+      "reason": "Different date and omitted station (Českomoravská) from the2026snapshot (Flora). Not substituted for current evidence despite same numerical count."
+    },
+    {
+      "quantity": "Fare zoneP or wholePID regional stop totals",
+      "reason": "Administrative cityproper scope comes from official Prague-only stop list/in_prague flag. No regional total or tariff zone used to create city count."
+    },
+    {
+      "quantity": "Future MetroD construction stations",
+      "reason": "Not in existing2025A/B/C registered table or current operating A/B/C station subset."
+    }
+  ],
+  "retrieval_events": [
+    "Official annual-report web-reader failed due file size; not treated as source content.",
+    "Initial originalPDF curl download timed out at55456230/56581286bytes. Resumed transfer completed; complete original is parseable192pages andSHA-verified. Only the complete original is retained as research source, outsideGit.",
+    "A preliminary outside-Prague control used numeric in_prague0; exact official outside-page value is empty string. Exact empty-string response is archived and used; preliminary numeric0response moved to scratch and not used as evidence."
+  ]
+}

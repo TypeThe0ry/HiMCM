@@ -1,0 +1,43 @@
+[
+  {
+    "city": "Vienna",
+    "indicator": "public_transport_density",
+    "raw_count": 99,
+    "population": 2028399,
+    "population_year": 2025,
+    "sourceyear": 2026,
+    "population_source": "Unchanged original team CSV; not externally rechecked",
+    "access_date": "2026-11-09",
+    "record_date": "2026-11-08T17:50:01+01:00",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.08893284626879548,
+      1
+    ],
+    "utility_anchor": 50,
+    "density_per_100000_lower": 4.880696549347539,
+    "lower_bound_only": true,
+    "candidate_only": true,
+    "admissible": "conditional_inventory_lower_bound",
+    "historical_inventory_proxy": false,
+    "source_url": "https://www.wienerlinien.at/ogd_realtime/doku/",
+    "scope": "99 unique metro DIVA station areas in the2026 versioned operator register. Join metro route patterns through stopping positions, require municipality label Wien and points inside official Vienna polygon, and cross-match all99 with the separate official existing U-Bahn station layer. Nine explicit spelling aliases also pass coordinate checks. The broad1695-name all-mode register is rejected because it contains depot/non-passenger movements. Other public transport facilities remain uncounted.",
+    "limitations": "Current versioned static inventory with unchanged2025 population. DIVA is a provider station-area grouping, not a platform count. Pattern membership does not prove a departure on access day, service frequency, universal teenage eligibility or household access. Geometry uses source representative coordinates; uncertain/omitted areas are uncounted. This is not a2025 same-year, complete all-provider or real-time operation census; upper utility remains1.",
+    "source_files": [
+      "operator.html",
+      "ogd_schema.pdf",
+      "stop_areas.csv",
+      "lines.csv",
+      "version.csv",
+      "operator_ogd_index.html",
+      "stop_positions.csv",
+      "route_patterns.csv",
+      "wfs_capabilities.xml",
+      "vienna_boundary.geojson",
+      "review_source_ubahn_stations_original.geojson"
+    ]
+  }
+]

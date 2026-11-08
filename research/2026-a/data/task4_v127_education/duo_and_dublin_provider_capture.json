@@ -1,0 +1,13 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "# Open Onderwijsdata\nURL: https://onderwijsdata.duo.nl/datasets/functiemix/resources/8f781c95-8e1b-470f-9596-edcffc11cf0a\n\nOpen Onderwijsdata\n\n# Functiemix instellingen\n\nHet instellingenbestand is uniek per JAAR en BRIN_NUMMER. Van belang is dat het bevoegd gezag (cq. het schoolbestuur) uit een of meerdere instellingen (cq. brins) kan bestaan. Een instelling (cq. brin) kan een zogenaamd ?bovenschools brin? betreffen (d.w.z. een brin waar geen les wordt gegeven, maar dat direct onder het bevoegd gezag valt). Overigens kan een instelling (cq. brin) op haar beurt uit een of meerdere vestigingen bestaan. Echter, de personeelsgegevens worden door DUO niet op vestigingsniveau verzameld.\n\n Documentatie \n\n- CKAN API Link opent externe pagina\n- Datastore API Link opent externe pagina\n\n Voorbeelden \n\nQuery voorbeeld (eerste 5 resultaten)\n\n https://onderwijsdata.duo.nl/api/3/action/datastore_search?resource_id=8f781c95-8e1b-470f-9596-edcffc11cf0a&limit=5 \n\nQuery voorbeeld (resultaten die 'GRONINGEN' bevatten)\n\n https://onderwijsdata.duo.nl/api/3/action/datastore_search?resource_id=8f781c95-8e1b-470f-9596-edcffc11cf0a&q=GRONINGEN \n\n## Extra informatie\n\n- Laatst gewijzigd \n\n24-06-2024\n- Aangemaakt \n\n23-03-2023\n- Formaat \n\nCSV\n- Licentie \n\nCreative Commons Attribution\n\nError fetching https://prelive.oireachtas.ie/en/debates/question/2024-07-23/825/: CRAWL_LIVECRAWL_TIMEOUT\nError fetching https://duo.nl/open_onderwijsdata/voortgezet-onderwijs/personeel/leerling-leraar-ratio.jsp: CRAWL_NOT_FOUND",
+      "_meta": {
+        "searchTime": 10011.553359999787
+      }
+    }
+  ],
+  "structuredContent": null,
+  "isError": false
+}

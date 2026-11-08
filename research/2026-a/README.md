@@ -1,5 +1,7 @@
 # 2026 HiMCM A：研究工作台
 
+> **当前主分析：16城V127、10指标、112点／31部分／17全缺失；V128扩展和完整独立稿已统一该证据。** 先读[恢复入口](../../docs/handoff/RESUME_PROMPT.md)、[V127主结果](results/task4_user_v127_revision/README.md)和[V128总审](results/task4_v128_revision/README.md)。Zurich为保守推荐，可能冠军仍16城；下方25城/V5/V6/五指标文字是历史研究背景，不是当前主入口。
+
 > **团队成员与 AI agent 必读：开始写作或制图前，必须阅读并遵循[统一 Guidelines](../../GUIDELINES.md)。论文文字、图表、图注与研究结论均按专项规范执行，交付前核验。AI agents: read and follow these guidelines before editing.**
 
 最新论文蒸馏已细化到13篇重点正文选段与36张证据卡，附同题O/F案例比较、段落编辑工作簿和18项审稿矩阵：[第二轮入口](paper_review/round2/README.md)。本轮不改动Overleaf正文。

@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://pid.cz/wp-admin/admin-ajax.php",
+    "method": "POST",
+    "form": {
+      "action": "getStopTab",
+      "char": "B",
+      "in_prague": "",
+      "ajax": "true"
+    },
+    "file": "pid_outside_prague_letter_B.json",
+    "purpose": "Exact in_prague empty value taken from official outside-Prague stop-list page"
+  }
+]

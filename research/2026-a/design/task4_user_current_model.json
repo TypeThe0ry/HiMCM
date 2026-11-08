@@ -1,12 +1,12 @@
 {
   "primary_dataset": "user-provided16-city CSV",
-  "version": "V124",
-  "module": "task4_user_v124_revision",
+  "version": "V127",
+  "module": "task4_user_v127_revision",
   "factory": "revised_bounds",
   "source_csv": "data/task4_v117_team_intake/city_indicators.csv",
-  "admissions": "design/task4_user_v124_admissions.json",
-  "results": "results/task4_user_v124_revision",
+  "admissions": "design/task4_user_v127_admissions.json",
+  "results": "results/task4_user_v127_revision",
   "fixed_auxiliary_weight_total": 0.1,
-  "source_policy": "Original CSV and all139 V121 nonfullymissing bounds preserved exactly; only Madrid transport and Tokyo pool fullymissing cells supplemented. All weights, anchors and interval rules retained; legacy25 registry remains separate.",
-  "scope": "Conditional mixed-vintage resource inventory: Madrid2026 registered metro complexes and Tokyo2026 municipal indoor-pool subset. No common-year, adolescent access, survey or forecast claim; historical prior proxies remain explicitly withdrawable."
+  "source_policy": "Original CSV and all141 V124 nonfullymissing bounds preserved exactly; only Vienna/Prague transport fullymissing utilities supplemented. All weights, anchors and interval rules retained; legacy25 registry remains separate.",
+  "scope": "Conditional2026 public-metro inventory subsets:99 Vienna areas independently cross-matched to existing municipal stations,57 Prague city-listed complexes with closure/dedup checks; unchanged2025 populations. Rejected1695 all-mode register, unmatched teacher data and Vienna2001 travel are not admitted. No access, current individual travel or forecast claim."
 }

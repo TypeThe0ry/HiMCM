@@ -1,0 +1,126 @@
+{
+  "city": "Vienna",
+  "census_date": "2001-05-15",
+  "publication_year": 2005,
+  "admission_status": "historical_case_only_not_current16",
+  "primary_admissions": 0,
+  "default_historical_rule": "conservative_continuous_closure",
+  "utility": "exp(-reported_outward_minutes/30)",
+  "full_selected_schooltype_denominator": 42774,
+  "daily_binned_mass": 40604,
+  "unidentified_duration_mass": 2170,
+  "rules": {
+    "conservative_continuous_closure": {
+      "lower_minutes": [
+        0,
+        5,
+        10,
+        15,
+        30,
+        45,
+        60
+      ],
+      "upper_minutes": [
+        5,
+        10,
+        15,
+        30,
+        45,
+        60,
+        null
+      ],
+      "tail_upper": "infinite; utility lower0",
+      "stages": [
+        {
+          "school_type": "Berufsbildende mittlere Schule",
+          "lower": 0.28280799657375827,
+          "upper": 0.504196862831888,
+          "denominator": 6929,
+          "unknown_duration_mass": 450
+        },
+        {
+          "school_type": "AHS-Oberstufe",
+          "lower": 0.41427857511156796,
+          "upper": 0.6221436633097157,
+          "denominator": 19373,
+          "unknown_duration_mass": 769
+        },
+        {
+          "school_type": "Berufsbildende höhere Schule",
+          "lower": 0.28674085470395055,
+          "upper": 0.5041290541526718,
+          "denominator": 16472,
+          "unknown_duration_mass": 951
+        }
+      ],
+      "pooled_full_schooltype_enrolment_bounds": [
+        0.34386755511711437,
+        0.5575906632969581
+      ],
+      "unknown_stage_mixture_hull": [
+        0.28280799657375827,
+        0.6221436633097157
+      ]
+    },
+    "literal_published_integer_classes": {
+      "lower_minutes": [
+        1,
+        6,
+        11,
+        16,
+        31,
+        46,
+        61
+      ],
+      "upper_minutes": [
+        5,
+        10,
+        15,
+        30,
+        45,
+        60,
+        null
+      ],
+      "tail_upper": "infinite; utility lower0",
+      "stages": [
+        {
+          "school_type": "Berufsbildende mittlere Schule",
+          "lower": 0.28280799657375827,
+          "upper": 0.4897964554215824,
+          "denominator": 6929,
+          "unknown_duration_mass": 450
+        },
+        {
+          "school_type": "AHS-Oberstufe",
+          "lower": 0.41427857511156796,
+          "upper": 0.6030487058449859,
+          "denominator": 19373,
+          "unknown_duration_mass": 769
+        },
+        {
+          "school_type": "Berufsbildende höhere Schule",
+          "lower": 0.28674085470395055,
+          "upper": 0.4894944946020381,
+          "denominator": 16472,
+          "unknown_duration_mass": 951
+        }
+      ],
+      "pooled_full_schooltype_enrolment_bounds": [
+        0.34386755511711437,
+        0.5409738517098197
+      ],
+      "unknown_stage_mixture_hull": [
+        0.28280799657375827,
+        0.6030487058449859
+      ]
+    }
+  },
+  "strict_current_or_unmodelled_source_editing_error_bounds": [
+    0,
+    1
+  ],
+  "interpretation": "Bounds condition on the published2001 edited census cells and selected schooltypes, not raw unedited journeys or2025/26 residents; no sampling confidence or error calibration is claimed.",
+  "imputation": "Official definitions reconstruct/impute missing times; the number and quality of such edits are not identified by these aggregates. They are not an independently quantifiable unknown-mass count.",
+  "schooltype_scope": "BMS, AHS upper stage and BHS only; includes their full-age resident enrolments, not exact14-18 and not every secondary school setting.",
+  "mixing": "Pooled arm uses known all-age selected-schooltype proportions. Hull leaves the three-schooltype mixture unspecified; neither identifies an exact-age cohort."
+}

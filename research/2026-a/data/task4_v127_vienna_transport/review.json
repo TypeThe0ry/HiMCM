@@ -1,0 +1,1811 @@
+{
+  "status": "pass_for_99_metro_subset_only; 1695_candidate_not_admitted",
+  "review_date": "2026-11-09",
+  "reviewer": "independent education agent; parent extraction implementation not read or reused",
+  "ownership": "Only review.json and explicitly authorized review_source original response files written; no raw/model/manuscript/CSV changes",
+  "recommendation": {
+    "admissible_count_lower_bound": 99,
+    "unit": "distinct existing named passenger metro station areas, interchange counted once",
+    "scope": "Wiener Linien U1/U2/U3/U4/U6 subset within Stadt Wien boundary; conditional current infrastructure inventory",
+    "not_claimed": [
+      "all Vienna transport stops",
+      "an exact complete all-operator city total",
+      "every station open at every time",
+      "student access or travel time",
+      "2026 operating-frequency or ridership census"
+    ],
+    "full_mode_candidate_1695": "withdraw: these pattern references alone do not establish all entries as public passenger stops; depot/internal movement counterexamples remain"
+  },
+  "independent_method": "csv.DictReader joins on unique LineID/StopID/DIVA; select mode; own ray-crossing point-in-polygon in original longitude/latitude; NFKC-casefold-whitespace name counts; separate name/coordinate crosswalk to official existing-station WFS, with seven explicit aliases and no fuzzy fills",
+  "counts": {
+    "stop_areas": 2008,
+    "lines": 205,
+    "stopping_positions": 5125,
+    "pattern_rows": 87774,
+    "selected_pattern_rows": 77995,
+    "selected_position_ids": 4160,
+    "selected_unknown_position_ids": [],
+    "selected_blank_DIVA_positions": 118,
+    "selected_DIVA_values_including_blank": 1723,
+    "selected_nonblank_DIVA_areas_present": 1722,
+    "selected_inside_Wien_DIVA": 1703,
+    "selected_unique_normalized_names": 1695,
+    "metro_pattern_rows": 442,
+    "metro_positions": 222,
+    "metro_DIVA": 99,
+    "metro_unique_names": 99,
+    "metro_per_line_station_counts": {
+      "U1": 24,
+      "U2": 21,
+      "U3": 21,
+      "U4": 20,
+      "U6": 24
+    },
+    "metro_station_line_memberships": 110,
+    "official_existing_WFS_features": 99,
+    "direct_normalized_name_matches": 92,
+    "explicit_alias_matches": 7
+  },
+  "source_checks": [
+    {
+      "name": "current_stops",
+      "url": "https://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-haltestellen.csv",
+      "sha256": "4df29f44a0f14dd9fbe7bc191efea8a14947487a627615402b7f6a5e53e523aa",
+      "actual_sha256": "4df29f44a0f14dd9fbe7bc191efea8a14947487a627615402b7f6a5e53e523aa",
+      "match": true,
+      "last_modified": "Sun, 08 Nov 2026 16:51:00 GMT"
+    },
+    {
+      "name": "current_lines",
+      "url": "https://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-linien.csv",
+      "sha256": "b3555b6d86a2658fc8a47f90d4458f9a0198da5a7189dd82a581064419710f8d",
+      "actual_sha256": "b3555b6d86a2658fc8a47f90d4458f9a0198da5a7189dd82a581064419710f8d",
+      "match": true,
+      "last_modified": "Sun, 08 Nov 2026 16:50:00 GMT"
+    },
+    {
+      "name": "current_platforms",
+      "url": "https://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-steige.csv",
+      "sha256": "d5e03eb292515fdda8c32ca8286a9546fb65a2a992b852ab24acc0546a891dc8",
+      "actual_sha256": "d5e03eb292515fdda8c32ca8286a9546fb65a2a992b852ab24acc0546a891dc8",
+      "match": true,
+      "last_modified": "Sun, 08 Nov 2026 16:50:00 GMT"
+    },
+    {
+      "name": "version",
+      "url": "https://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-version.csv",
+      "sha256": "d0dc2c0a5944d151cc9fca009b904dce17088bf39e6c7d3f64b55f583986e78e",
+      "actual_sha256": "d0dc2c0a5944d151cc9fca009b904dce17088bf39e6c7d3f64b55f583986e78e",
+      "match": true,
+      "last_modified": "Sun, 08 Nov 2026 16:50:01 GMT"
+    },
+    {
+      "name": "doku",
+      "url": "https://www.wienerlinien.at/ogd_realtime/doku/",
+      "sha256": "994d0f556935b78c4b44409eb9e66d1ba02c1b910921acddc67d148823125b0f",
+      "actual_sha256": "994d0f556935b78c4b44409eb9e66d1ba02c1b910921acddc67d148823125b0f",
+      "match": true,
+      "last_modified": null
+    },
+    {
+      "name": "stop_positions",
+      "url": "https://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-haltepunkte.csv",
+      "sha256": "1468dda195d9ff4be65ad8d86286784f1e405e2847a4334d743cc5374888ab88",
+      "actual_sha256": "1468dda195d9ff4be65ad8d86286784f1e405e2847a4334d743cc5374888ab88",
+      "match": true,
+      "last_modified": "Sun, 08 Nov 2026 16:50:00 GMT"
+    },
+    {
+      "name": "patterns",
+      "url": "https://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-fahrwegverlaeufe.csv",
+      "sha256": "13f06384ecd31497b3c51a22a82c3512c98d56260e025e2595784a518d855102",
+      "actual_sha256": "13f06384ecd31497b3c51a22a82c3512c98d56260e025e2595784a518d855102",
+      "match": true,
+      "last_modified": "Sun, 08 Nov 2026 16:51:00 GMT"
+    },
+    {
+      "name": "wfs_capabilities",
+      "url": "https://data.wien.gv.at/daten/geo?service=WFS&request=GetCapabilities&version=1.1.0",
+      "sha256": "cdd7a454d30f5223c35ed02debc3bad69c68d0d66de506991c7900029a11f5bf",
+      "actual_sha256": "cdd7a454d30f5223c35ed02debc3bad69c68d0d66de506991c7900029a11f5bf",
+      "match": true,
+      "last_modified": null
+    },
+    {
+      "name": "boundary",
+      "url": "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien%3ALANDESGRENZEOGD&srsName=EPSG%3A4326&outputFormat=json",
+      "sha256": "37ee7e2a904a47f00e0272317ca3ec536a798d401e410bd04f02bdacaef5bb66",
+      "actual_sha256": "37ee7e2a904a47f00e0272317ca3ec536a798d401e410bd04f02bdacaef5bb66",
+      "match": true,
+      "last_modified": null
+    }
+  ],
+  "source_hashes": {
+    "schema.raw": "aec3b4b5de1afa46bc09f59a9aada9ff169ef1e0d18722a11cc7763d8921caee",
+    "boundary.raw": "37ee7e2a904a47f00e0272317ca3ec536a798d401e410bd04f02bdacaef5bb66",
+    "current_stops.raw": "4df29f44a0f14dd9fbe7bc191efea8a14947487a627615402b7f6a5e53e523aa",
+    "current_lines.raw": "b3555b6d86a2658fc8a47f90d4458f9a0198da5a7189dd82a581064419710f8d",
+    "stop_positions.raw": "1468dda195d9ff4be65ad8d86286784f1e405e2847a4334d743cc5374888ab88",
+    "patterns.raw": "13f06384ecd31497b3c51a22a82c3512c98d56260e025e2595784a518d855102",
+    "version.raw": "d0dc2c0a5944d151cc9fca009b904dce17088bf39e6c7d3f64b55f583986e78e",
+    "wfs_capabilities.raw": "cdd7a454d30f5223c35ed02debc3bad69c68d0d66de506991c7900029a11f5bf",
+    "stops.raw": "0b067af1b93dd08224b3549a15210fe9e8403942c47f50cbb95fce79295f9476",
+    "lines.raw": "ce6dad3f164daeeee0cf5a64df1bca958334f65504a3c9a9765a3f814a1ec432",
+    "platforms.raw": "253b0e6238882983e3237f209ace61e92c2068be7c9247ec75782a28961b62ff"
+  },
+  "review_sources": [
+    {
+      "file": "review_source_ubahn_stations_original.geojson",
+      "url": "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien%3AUBAHNHALTOGD&srsName=EPSG%3A4326&outputFormat=json",
+      "access_date": "2026-11-09",
+      "bytes": 29664,
+      "sha256": "3258ac7e6a9c993366d5be8b299ec528e85008b1ef83ad63ca8c13997da95a18",
+      "representation": "original HTTP response bytes",
+      "admitted_source": true,
+      "note": "official existing passenger-station layer"
+    },
+    {
+      "file": "review_source_city_lina_opening_original.html",
+      "url": "https://presse.wien.gv.at/presse/2026/01/16/sima-reinagl-mehr-oeffis-fuer-wien-u2-lina-loos-platz-ist-die-110-u-bahn-station",
+      "access_date": "2026-11-09",
+      "bytes": 65350,
+      "sha256": "906d508b9af45e8bf5406216eb6e9d7c2a380e4a98de9d075ad5af6967fad829",
+      "representation": "original HTTP response bytes",
+      "admitted_source": true,
+      "note": "official City of Vienna opening notice, dated 2026-01-16"
+    },
+    {
+      "file": "review_source_metro_network_failed_response_original.html",
+      "url": "https://www.wienerlinien.at/documents/2424499/7499660/2026_SVP_Website%20Passepartout.pdf/041477e1-66f8-04d3-1182-f5a3ee45bfa9?t=1768568035898",
+      "access_date": "2026-11-09",
+      "bytes": 118395,
+      "sha256": "03717965c07558c85d79e0cc1abfb9a7092b83e773942a5b5a6e40e886de194d",
+      "representation": "original HTTP response bytes",
+      "admitted_source": false,
+      "note": "HTML bot challenge, not original requested PDF/article; no statistical information accepted"
+    },
+    {
+      "file": "review_source_lina_opening_failed_response_original.html",
+      "url": "https://www.wienerlinien.at/news/u2-station-lina-loos-platz-geht-am-19-01-2026-in-betrieb",
+      "access_date": "2026-11-09",
+      "bytes": 118395,
+      "sha256": "ad84c9b936c5535a5836cee3ecffee6f5877f2ffcc9655c7305f1437b2e1d4c0",
+      "representation": "original HTTP response bytes",
+      "admitted_source": false,
+      "note": "HTML bot challenge, not original requested PDF/article; no statistical information accepted"
+    }
+  ],
+  "geography": {
+    "boundary_type": "Polygon",
+    "boundary_features": 1,
+    "boundary_CRS": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:EPSG::4326"
+      }
+    },
+    "boundary_properties": {
+      "OBJECTID": 13441,
+      "NAME_LANDK": "Wien",
+      "NAME_LANDG": "WIEN",
+      "NAME_GEMK": "Stadt Wien",
+      "NAME_GEMG": "STADT WIEN",
+      "STATAUSTRIA_LAND_KENN": 9,
+      "STATAUSTRIA_GEM_KENN": 90001,
+      "STATAUSTRIA_BEZ_KENN": 900,
+      "STATAUSTRIA_BEZ_CODE": 900,
+      "FLAECHE": 414871120.665,
+      "UMFANG": 136475.75,
+      "LU_DATE": "2026-09-01Z",
+      "SE_ANNO_CAD_DATA": null
+    },
+    "metro_all99_OGD_and_WFS_points_inside": true,
+    "OGD_municipality_id": "49000001",
+    "boundary_StatAustria_municipality_id": 90001,
+    "numeric_ids_not_joined": "Different coding schemes; city name plus independent polygon membership used instead",
+    "allmode_exclusions": {
+      "nonWien_outside": 13,
+      "Wien_but_outside": 6
+    },
+    "border_warning": "Four selected stopping positions straddle the boundary relative to area centroids. Metro subset is unaffected; full-mode centroid membership does not prove every boarding position is inside."
+  },
+  "semantic_findings": [
+    {
+      "id": "F1",
+      "severity": "material",
+      "finding": "Mode-filtered pattern file includes depot/internal operational stopping positions, so LineID mode + pattern reference is not a passenger-stop eligibility predicate.",
+      "evidence": {
+        "selected_empty_DIVA_positions": 118,
+        "examples": [
+          "Dummy Einschub Leopoldau",
+          "Dummy Einzieher Leopoldau",
+          "Hauptwerkstätte 1",
+          "Hauptwerkstätte 2",
+          "Hauptwerkstätte 3",
+          "Hauptwerkstätte 4",
+          "Hauptwerkstätte 5",
+          "Abstellplatz Stefan-Fadi",
+          "Abstellplatz der Linie 38A",
+          "Abstellplatz",
+          "Abstellplatz der Linie 13A",
+          "Abstellplatz Schleife Südbahnhof"
+        ],
+        "surviving_named_depot_area_examples": [
+          {
+            "DIVA": "60202920",
+            "PlatformText": "Betriebshof Brigittenau",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.3665948",
+            "Latitude": "48.2359760"
+          },
+          {
+            "DIVA": "60202924",
+            "PlatformText": "Raxstraße, Betriebsgarage",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.3669092",
+            "Latitude": "48.1632325"
+          },
+          {
+            "DIVA": "60202922",
+            "PlatformText": "Betriebshof Kagran",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.4348937",
+            "Latitude": "48.2449801"
+          },
+          {
+            "DIVA": "60202921",
+            "PlatformText": "Betriebshof Floridsdorf",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.3994642",
+            "Latitude": "48.2631511"
+          },
+          {
+            "DIVA": "60201888",
+            "PlatformText": "Leopoldau, Betriebsgarage",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.4303842",
+            "Latitude": "48.2802875"
+          },
+          {
+            "DIVA": "60202916",
+            "PlatformText": "Betriebshof Ottakring",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.3042877",
+            "Latitude": "48.2089240"
+          },
+          {
+            "DIVA": "60202911",
+            "PlatformText": "Betriebshof Simmering",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.4239253",
+            "Latitude": "48.1668335"
+          },
+          {
+            "DIVA": "60202915",
+            "PlatformText": "Betriebshof Rudolfsheim",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.3224516",
+            "Latitude": "48.1902247"
+          },
+          {
+            "DIVA": "60202910",
+            "PlatformText": "Betriebshof Favoriten",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.3730627",
+            "Latitude": "48.1784017"
+          },
+          {
+            "DIVA": "60202917",
+            "PlatformText": "Betriebshof Hernals",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.3211131",
+            "Latitude": "48.2224338"
+          },
+          {
+            "DIVA": "60202918",
+            "PlatformText": "Betriebshof Gürtel",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.3499041",
+            "Latitude": "48.2309138"
+          },
+          {
+            "DIVA": "60202913",
+            "PlatformText": "Betriebshof Speising",
+            "Municipality": "Wien",
+            "MunicipalityID": "49000001",
+            "Longitude": "16.2899236",
+            "Latitude": "48.1707338"
+          }
+        ]
+      },
+      "consequence": "Do not delete words and assume all remaining 1695 entries public; require independent passenger network eligibility. Named depot alone is an unresolved qualification warning, not proof that every such stop forbids passengers."
+    },
+    {
+      "id": "F2",
+      "severity": "scope",
+      "finding": "Fresh export timestamps prove the snapshot date, not live passenger operation or completeness. Realtime=1 means realtime data available; Realtime=0 means scheduled data only. Neither is an independent active-service flag."
+    },
+    {
+      "id": "F3",
+      "severity": "scope",
+      "finding": "Schema original is V1.3 dated 2022-09-06; 2026-11-08 is the data export DateValidFrom/VersionDate, not the schema publication date. Schema historical municipality comment90001 differs from current operator code49000001."
+    },
+    {
+      "id": "F4",
+      "severity": "data_quality",
+      "finding": "Full source has four orphan LineIDs and two unknown StopIDs. They are outside selected rows. Selected rows include118 blank-DIVA positions, excluded from area counts; no invented area ID or name join used.",
+      "orphan_line_ids": [
+        "150",
+        "172",
+        "681",
+        "683"
+      ],
+      "orphan_stop_ids": [
+        "129",
+        "80"
+      ]
+    },
+    {
+      "id": "F5",
+      "severity": "data_quality",
+      "finding": "Six referenced areas labelled Wien fall outside official polygon, including three implausible longitude~15 coordinates. They were excluded, so correcting them later could raise a subset count but cannot justify accepting them now."
+    },
+    {
+      "id": "F6",
+      "severity": "pass",
+      "finding": "Official existing U-Bahn station layer has99 unique Point features, separate from planning layer in archived WFS capabilities. The99 operator metro DIVAs match all99 features one-to-one,92 by normalized spelling and7 explicit aliases; no station added from S-Bahn/planned layers. Both area and WFS points are inside city polygon."
+    },
+    {
+      "id": "F7",
+      "severity": "pass",
+      "finding": "City of Vienna official January16 opening notice says Lina-Loos-Platz opens January19,2026, U2 becomes21 stations, and calls the network total110 stations. Independently recomputed per-line counts24+21+21+20+24 sum to110 while the deduplicated area union is99. Treat correspondence to station-line memberships as this review's interpretation, not a quoted methodological definition in the article. Do not replace99 unique station areas with110."
+    },
+    {
+      "id": "F8",
+      "severity": "scope",
+      "finding": "Failed network-PDF and operator-news retrievals returned Radware HTML; their bytes are archived as failed_response_original.html. No network-map original PDF was recovered or visually checked; official existing-station GeoJSON and city opening article provide the accepted independent eligibility evidence instead."
+    }
+  ],
+  "same_name_DIVA_diagnostic": {
+    "siebensterngasse": [
+      "60201088",
+      "60201237"
+    ],
+    "altmannsdorfer strasse": [
+      "60200035",
+      "60201850"
+    ],
+    "skraupstrasse": [
+      "60201268",
+      "60201772"
+    ],
+    "lieblgasse": [
+      "60200955",
+      "60200584"
+    ],
+    "märzstrasse": [
+      "60200911",
+      "60200909"
+    ],
+    "neubreitenlee": [
+      "60201004",
+      "60200922"
+    ],
+    "stock im weg": [
+      "60200401",
+      "60201326"
+    ],
+    "lafitegasse": [
+      "60200335",
+      "60200744"
+    ]
+  },
+  "metro_crosswalk": [
+    {
+      "DIVA": "60201858",
+      "OGD_name": "Aderklaaer Straße",
+      "WFS_feature_id": "UBAHNHALTOGD.407760",
+      "WFS_name": "Aderklaaer Straße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 16.619,
+      "WFS_opening_year": 2006,
+      "metro_position_names": [
+        "Aderklaaer Straße"
+      ]
+    },
+    {
+      "DIVA": "60200014",
+      "OGD_name": "Alaudagasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407769",
+      "WFS_name": "Alaudagasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 28.871,
+      "WFS_opening_year": 2017,
+      "metro_position_names": [
+        "Alaudagasse"
+      ]
+    },
+    {
+      "DIVA": "60200027",
+      "OGD_name": "Alser Straße",
+      "WFS_feature_id": "UBAHNHALTOGD.407774",
+      "WFS_name": "Alser Straße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 43.105,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Alser Straße"
+      ]
+    },
+    {
+      "DIVA": "60200031",
+      "OGD_name": "Alte Donau",
+      "WFS_feature_id": "UBAHNHALTOGD.407759",
+      "WFS_name": "Alte Donau",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 65.318,
+      "WFS_opening_year": 1982,
+      "metro_position_names": [
+        "Alte Donau"
+      ]
+    },
+    {
+      "DIVA": "60201499",
+      "OGD_name": "Alterlaa",
+      "WFS_feature_id": "UBAHNHALTOGD.407818",
+      "WFS_name": "Alterlaa",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 19.454,
+      "WFS_opening_year": 1995,
+      "metro_position_names": [
+        "Alterlaa"
+      ]
+    },
+    {
+      "DIVA": "60200033",
+      "OGD_name": "Altes Landgut",
+      "WFS_feature_id": "UBAHNHALTOGD.407770",
+      "WFS_name": "Altes Landgut",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 35.128,
+      "WFS_opening_year": 2017,
+      "metro_position_names": [
+        "Altes Landgut"
+      ]
+    },
+    {
+      "DIVA": "60200048",
+      "OGD_name": "Am Schöpfwerk",
+      "WFS_feature_id": "UBAHNHALTOGD.407734",
+      "WFS_name": "Am Schöpfwerk",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 63.83,
+      "WFS_opening_year": 1995,
+      "metro_position_names": [
+        "Am Schöpfwerk"
+      ]
+    },
+    {
+      "DIVA": "60200910",
+      "OGD_name": "Aspern Nord",
+      "WFS_feature_id": "UBAHNHALTOGD.407752",
+      "WFS_name": "Aspern Nord",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 31.983,
+      "WFS_opening_year": 2013,
+      "metro_position_names": [
+        "Aspern Nord"
+      ]
+    },
+    {
+      "DIVA": "60200299",
+      "OGD_name": "Aspernstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407748",
+      "WFS_name": "Aspernstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 14.146,
+      "WFS_opening_year": 2010,
+      "metro_position_names": [
+        "Aspernstraße"
+      ]
+    },
+    {
+      "DIVA": "60200491",
+      "OGD_name": "Bhf. Heiligenstadt",
+      "WFS_feature_id": "UBAHNHALTOGD.407739",
+      "WFS_name": "Heiligenstadt",
+      "match": "explicit semantic alias with independent coordinate support",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 71.68,
+      "WFS_opening_year": 1976,
+      "metro_position_names": [
+        "Heiligenstadt"
+      ]
+    },
+    {
+      "DIVA": "60200560",
+      "OGD_name": "Bhf. Hütteldorf",
+      "WFS_feature_id": "UBAHNHALTOGD.407731",
+      "WFS_name": "Hütteldorf",
+      "match": "explicit semantic alias with independent coordinate support",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 50.828,
+      "WFS_opening_year": 1981,
+      "metro_position_names": [
+        "Hütteldorf"
+      ]
+    },
+    {
+      "DIVA": "60201015",
+      "OGD_name": "Bhf. Meidling",
+      "WFS_feature_id": "UBAHNHALTOGD.407797",
+      "WFS_name": "Bahnhof Meidling",
+      "match": "explicit semantic alias with independent coordinate support",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 39.845,
+      "WFS_opening_year": 1995,
+      "metro_position_names": [
+        "Bahnhof Meidling"
+      ]
+    },
+    {
+      "DIVA": "60200161",
+      "OGD_name": "Braunschweiggasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407775",
+      "WFS_name": "Braunschweiggasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 27.01,
+      "WFS_opening_year": 1981,
+      "metro_position_names": [
+        "Braunschweiggasse"
+      ]
+    },
+    {
+      "DIVA": "60200188",
+      "OGD_name": "Burggasse-Stadthalle",
+      "WFS_feature_id": "UBAHNHALTOGD.407776",
+      "WFS_name": "Burggasse-Stadthalle",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 119.146,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Burggasse - Stadthalle"
+      ]
+    },
+    {
+      "DIVA": "60200234",
+      "OGD_name": "Donauinsel",
+      "WFS_feature_id": "UBAHNHALTOGD.407763",
+      "WFS_name": "Donauinsel",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 37.911,
+      "WFS_opening_year": 1982,
+      "metro_position_names": [
+        "Donauinsel"
+      ]
+    },
+    {
+      "DIVA": "60200282",
+      "OGD_name": "Donaumarina",
+      "WFS_feature_id": "UBAHNHALTOGD.407753",
+      "WFS_name": "Donaumarina",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 61.385,
+      "WFS_opening_year": 2010,
+      "metro_position_names": [
+        "Donaumarina"
+      ]
+    },
+    {
+      "DIVA": "60201278",
+      "OGD_name": "Donauspital",
+      "WFS_feature_id": "UBAHNHALTOGD.407749",
+      "WFS_name": "Donauspital",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 48.47,
+      "WFS_opening_year": 2010,
+      "metro_position_names": [
+        "Donauspital"
+      ]
+    },
+    {
+      "DIVA": "60200290",
+      "OGD_name": "Donaustadtbrücke",
+      "WFS_feature_id": "UBAHNHALTOGD.407751",
+      "WFS_name": "Donaustadtbrücke",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 2.574,
+      "WFS_opening_year": 2010,
+      "metro_position_names": [
+        "Donaustadtbrücke"
+      ]
+    },
+    {
+      "DIVA": "60200500",
+      "OGD_name": "Dresdner Straße",
+      "WFS_feature_id": "UBAHNHALTOGD.407780",
+      "WFS_name": "Dresdner Straße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 54.48,
+      "WFS_opening_year": 1996,
+      "metro_position_names": [
+        "Dresdner Straße"
+      ]
+    },
+    {
+      "DIVA": "60200425",
+      "OGD_name": "Enkplatz",
+      "WFS_feature_id": "UBAHNHALTOGD.407729",
+      "WFS_name": "Enkplatz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 56.782,
+      "WFS_opening_year": 2000,
+      "metro_position_names": [
+        "Enkplatz"
+      ]
+    },
+    {
+      "DIVA": "60200289",
+      "OGD_name": "Erdberg",
+      "WFS_feature_id": "UBAHNHALTOGD.407777",
+      "WFS_name": "Erdberg",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 15.215,
+      "WFS_opening_year": 2000,
+      "metro_position_names": [
+        "Erdberg"
+      ]
+    },
+    {
+      "DIVA": "60200285",
+      "OGD_name": "Erlaaer Straße",
+      "WFS_feature_id": "UBAHNHALTOGD.407743",
+      "WFS_name": "Erlaaer Straße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 8.072,
+      "WFS_opening_year": 1995,
+      "metro_position_names": [
+        "Erlaaer Straße"
+      ]
+    },
+    {
+      "DIVA": "60200334",
+      "OGD_name": "Floridsdorf",
+      "WFS_feature_id": "UBAHNHALTOGD.407744",
+      "WFS_name": "Floridsdorf",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 66.34,
+      "WFS_opening_year": 1996,
+      "metro_position_names": [
+        "Floridsdorf"
+      ]
+    },
+    {
+      "DIVA": "60200357",
+      "OGD_name": "Friedensbrücke",
+      "WFS_feature_id": "UBAHNHALTOGD.407738",
+      "WFS_name": "Friedensbrücke",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 104.161,
+      "WFS_opening_year": 1976,
+      "metro_position_names": [
+        "Friedensbrücke"
+      ]
+    },
+    {
+      "DIVA": "60201749",
+      "OGD_name": "Gasometer",
+      "WFS_feature_id": "UBAHNHALTOGD.407728",
+      "WFS_name": "Gasometer",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 48.228,
+      "WFS_opening_year": 2000,
+      "metro_position_names": [
+        "Gasometer"
+      ]
+    },
+    {
+      "DIVA": "60201859",
+      "OGD_name": "Großfeldsiedlung",
+      "WFS_feature_id": "UBAHNHALTOGD.407758",
+      "WFS_name": "Großfeldsiedlung",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 44.426,
+      "WFS_opening_year": 2006,
+      "metro_position_names": [
+        "Großfeldsiedlung"
+      ]
+    },
+    {
+      "DIVA": "60200436",
+      "OGD_name": "Gumpendorfer Straße",
+      "WFS_feature_id": "UBAHNHALTOGD.407779",
+      "WFS_name": "Gumpendorfer Straße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 16.031,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Gumpendorfer Straße"
+      ]
+    },
+    {
+      "DIVA": "60201705",
+      "OGD_name": "Handelskai",
+      "WFS_feature_id": "UBAHNHALTOGD.407727",
+      "WFS_name": "Handelskai",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 36.008,
+      "WFS_opening_year": 1996,
+      "metro_position_names": [
+        "Handelskai"
+      ]
+    },
+    {
+      "DIVA": "60200473",
+      "OGD_name": "Hardeggasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407750",
+      "WFS_name": "Hardeggasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 3.191,
+      "WFS_opening_year": 2010,
+      "metro_position_names": [
+        "Hardeggasse"
+      ]
+    },
+    {
+      "DIVA": "60201349",
+      "OGD_name": "Hauptbahnhof",
+      "WFS_feature_id": "UBAHNHALTOGD.407764",
+      "WFS_name": "Südtiroler Platz - Hauptbahnhof",
+      "match": "explicit semantic alias with independent coordinate support",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 300.835,
+      "WFS_opening_year": 1973,
+      "metro_position_names": [
+        "Südtiroler Platz"
+      ]
+    },
+    {
+      "DIVA": "60200487",
+      "OGD_name": "Hausfeldstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407747",
+      "WFS_name": "Hausfeldstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 70.299,
+      "WFS_opening_year": 2013,
+      "metro_position_names": [
+        "Hausfeldstraße"
+      ]
+    },
+    {
+      "DIVA": "60200506",
+      "OGD_name": "Herrengasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407781",
+      "WFS_name": "Herrengasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 36.016,
+      "WFS_opening_year": 1991,
+      "metro_position_names": [
+        "Herrengasse"
+      ]
+    },
+    {
+      "DIVA": "60200520",
+      "OGD_name": "Hietzing",
+      "WFS_feature_id": "UBAHNHALTOGD.407782",
+      "WFS_name": "Hietzing",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 90.645,
+      "WFS_opening_year": 1981,
+      "metro_position_names": [
+        "Hietzing"
+      ]
+    },
+    {
+      "DIVA": "60201035",
+      "OGD_name": "Hütteldorfer Straße",
+      "WFS_feature_id": "UBAHNHALTOGD.407799",
+      "WFS_name": "Hütteldorfer Straße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 96.304,
+      "WFS_opening_year": 1998,
+      "metro_position_names": [
+        "Hütteldorfer Straße"
+      ]
+    },
+    {
+      "DIVA": "60200606",
+      "OGD_name": "Johnstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407783",
+      "WFS_name": "Johnstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 32.805,
+      "WFS_opening_year": 1994,
+      "metro_position_names": [
+        "Johnstraße"
+      ]
+    },
+    {
+      "DIVA": "60200615",
+      "OGD_name": "Josefstädter Straße",
+      "WFS_feature_id": "UBAHNHALTOGD.407784",
+      "WFS_name": "Josefstädter Straße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 18.449,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Josefstädter Straße"
+      ]
+    },
+    {
+      "DIVA": "60201667",
+      "OGD_name": "Jägerstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407742",
+      "WFS_name": "Jägerstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 61.7,
+      "WFS_opening_year": 1996,
+      "metro_position_names": [
+        "Jägerstraße"
+      ]
+    },
+    {
+      "DIVA": "60200627",
+      "OGD_name": "Kagran",
+      "WFS_feature_id": "UBAHNHALTOGD.407766",
+      "WFS_name": "Kagran",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 77.371,
+      "WFS_opening_year": 2006,
+      "metro_position_names": [
+        "Kagran"
+      ]
+    },
+    {
+      "DIVA": "60200633",
+      "OGD_name": "Kagraner Platz",
+      "WFS_feature_id": "UBAHNHALTOGD.407765",
+      "WFS_name": "Kagraner Platz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 9.665,
+      "WFS_opening_year": 2006,
+      "metro_position_names": [
+        "Kagraner Platz"
+      ]
+    },
+    {
+      "DIVA": "60200641",
+      "OGD_name": "Kaisermühlen, VIC",
+      "WFS_feature_id": "UBAHNHALTOGD.407785",
+      "WFS_name": "Kaisermühlen-VIC",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 94.096,
+      "WFS_opening_year": 1982,
+      "metro_position_names": [
+        "Kaisermühlen-VIC"
+      ]
+    },
+    {
+      "DIVA": "60200653",
+      "OGD_name": "Kardinal-Nagl-Platz",
+      "WFS_feature_id": "UBAHNHALTOGD.407786",
+      "WFS_name": "Kardinal-Nagl-Platz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 54.355,
+      "WFS_opening_year": 1991,
+      "metro_position_names": [
+        "Kardinal-Nagl-Platz"
+      ]
+    },
+    {
+      "DIVA": "60200657",
+      "OGD_name": "Karlsplatz",
+      "WFS_feature_id": "UBAHNHALTOGD.407787",
+      "WFS_name": "Karlsplatz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 58.375,
+      "WFS_opening_year": 1978,
+      "metro_position_names": [
+        "Karlsplatz"
+      ]
+    },
+    {
+      "DIVA": "60201317",
+      "OGD_name": "Kendlerstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407809",
+      "WFS_name": "Kendlerstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 19.371,
+      "WFS_opening_year": 1998,
+      "metro_position_names": [
+        "Kendlerstraße"
+      ]
+    },
+    {
+      "DIVA": "60200666",
+      "OGD_name": "Keplerplatz",
+      "WFS_feature_id": "UBAHNHALTOGD.407788",
+      "WFS_name": "Keplerplatz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 120.79,
+      "WFS_opening_year": 1978,
+      "metro_position_names": [
+        "Keplerplatz"
+      ]
+    },
+    {
+      "DIVA": "60200670",
+      "OGD_name": "Kettenbrückengasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407789",
+      "WFS_name": "Kettenbrückengasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 78.803,
+      "WFS_opening_year": 1980,
+      "metro_position_names": [
+        "Kettenbrückengasse"
+      ]
+    },
+    {
+      "DIVA": "60201893",
+      "OGD_name": "Krieau",
+      "WFS_feature_id": "UBAHNHALTOGD.407755",
+      "WFS_name": "Krieau",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 35.124,
+      "WFS_opening_year": 2008,
+      "metro_position_names": [
+        "Krieau"
+      ]
+    },
+    {
+      "DIVA": "60200769",
+      "OGD_name": "Leopoldau",
+      "WFS_feature_id": "UBAHNHALTOGD.407757",
+      "WFS_name": "Leopoldau",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 171.646,
+      "WFS_opening_year": 2006,
+      "metro_position_names": [
+        "Leopoldau"
+      ]
+    },
+    {
+      "DIVA": "60201973",
+      "OGD_name": "Lina-Loos-Platz",
+      "WFS_feature_id": "UBAHNHALTOGD.407822",
+      "WFS_name": "Lina-Loos-Platz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 3.818,
+      "WFS_opening_year": 2026,
+      "metro_position_names": [
+        "Lina-Loos-Platz"
+      ]
+    },
+    {
+      "DIVA": "60200820",
+      "OGD_name": "Längenfeldgasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407740",
+      "WFS_name": "Längenfeldgasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 46.686,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Längenfeldgasse"
+      ]
+    },
+    {
+      "DIVA": "60200827",
+      "OGD_name": "Margaretengürtel",
+      "WFS_feature_id": "UBAHNHALTOGD.407732",
+      "WFS_name": "Margaretengürtel",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 39.853,
+      "WFS_opening_year": 1980,
+      "metro_position_names": [
+        "Margaretengürtel"
+      ]
+    },
+    {
+      "DIVA": "60200863",
+      "OGD_name": "Meidling Hauptstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407737",
+      "WFS_name": "Meidling Hauptstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 86.979,
+      "WFS_opening_year": 1980,
+      "metro_position_names": [
+        "Meidling Hauptstraße",
+        "Meidling, Hauptstraße"
+      ]
+    },
+    {
+      "DIVA": "60201892",
+      "OGD_name": "Messe-Prater",
+      "WFS_feature_id": "UBAHNHALTOGD.407756",
+      "WFS_name": "Messe Prater",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 54.493,
+      "WFS_opening_year": 2008,
+      "metro_position_names": [
+        "Messe"
+      ]
+    },
+    {
+      "DIVA": "60200874",
+      "OGD_name": "Michelbeuern-AKH",
+      "WFS_feature_id": "UBAHNHALTOGD.407792",
+      "WFS_name": "Michelbeuern-AKH",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 41.312,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Michelbeuern - AKH"
+      ]
+    },
+    {
+      "DIVA": "60200743",
+      "OGD_name": "Mitte-Landstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407791",
+      "WFS_name": "Landstraße",
+      "match": "explicit semantic alias with independent coordinate support",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 57.42,
+      "WFS_opening_year": 1991,
+      "metro_position_names": [
+        "Landstraße"
+      ]
+    },
+    {
+      "DIVA": "60200835",
+      "OGD_name": "Museumsquartier",
+      "WFS_feature_id": "UBAHNHALTOGD.407821",
+      "WFS_name": "Museumsquartier",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 6.412,
+      "WFS_opening_year": 1980,
+      "metro_position_names": [
+        "Museumsquartier"
+      ]
+    },
+    {
+      "DIVA": "60200916",
+      "OGD_name": "Nestroyplatz",
+      "WFS_feature_id": "UBAHNHALTOGD.407761",
+      "WFS_name": "Nestroyplatz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 46.094,
+      "WFS_opening_year": 1981,
+      "metro_position_names": [
+        "Nestroyplatz"
+      ]
+    },
+    {
+      "DIVA": "60200056",
+      "OGD_name": "Neubaugasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407790",
+      "WFS_name": "Neubaugasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 182.346,
+      "WFS_opening_year": 1993,
+      "metro_position_names": [
+        "Neubaugasse"
+      ]
+    },
+    {
+      "DIVA": "60201668",
+      "OGD_name": "Neue Donau",
+      "WFS_feature_id": "UBAHNHALTOGD.407726",
+      "WFS_name": "Neue Donau",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 44.27,
+      "WFS_opening_year": 1996,
+      "metro_position_names": [
+        "Neue Donau"
+      ]
+    },
+    {
+      "DIVA": "60201481",
+      "OGD_name": "Neulaa",
+      "WFS_feature_id": "UBAHNHALTOGD.407773",
+      "WFS_name": "Neulaa",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 18.099,
+      "WFS_opening_year": 2017,
+      "metro_position_names": [
+        "Neulaa"
+      ]
+    },
+    {
+      "DIVA": "60200937",
+      "OGD_name": "Niederhofstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407793",
+      "WFS_name": "Niederhofstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 31.688,
+      "WFS_opening_year": 1995,
+      "metro_position_names": [
+        "Niederhofstraße"
+      ]
+    },
+    {
+      "DIVA": "60200950",
+      "OGD_name": "Nußdorfer Straße",
+      "WFS_feature_id": "UBAHNHALTOGD.407794",
+      "WFS_name": "Nußdorfer Straße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 37.775,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Nußdorfer Straße"
+      ]
+    },
+    {
+      "DIVA": "60200956",
+      "OGD_name": "Ober St. Veit",
+      "WFS_feature_id": "UBAHNHALTOGD.407795",
+      "WFS_name": "Ober Sankt Veit",
+      "match": "explicit semantic alias with independent coordinate support",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 36.369,
+      "WFS_opening_year": 1981,
+      "metro_position_names": [
+        "Ober St. Veit"
+      ]
+    },
+    {
+      "DIVA": "60200949",
+      "OGD_name": "Oberlaa",
+      "WFS_feature_id": "UBAHNHALTOGD.407771",
+      "WFS_name": "Oberlaa",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 68.814,
+      "WFS_opening_year": 2017,
+      "metro_position_names": [
+        "Oberlaa"
+      ]
+    },
+    {
+      "DIVA": "60200981",
+      "OGD_name": "Ottakring",
+      "WFS_feature_id": "UBAHNHALTOGD.407768",
+      "WFS_name": "Ottakring",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 109.743,
+      "WFS_opening_year": 1998,
+      "metro_position_names": [
+        "Ottakring"
+      ]
+    },
+    {
+      "DIVA": "60201007",
+      "OGD_name": "Perfektastraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407796",
+      "WFS_name": "Perfektastraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 9.511,
+      "WFS_opening_year": 1995,
+      "metro_position_names": [
+        "Perfektastraße"
+      ]
+    },
+    {
+      "DIVA": "60201018",
+      "OGD_name": "Pilgramgasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407798",
+      "WFS_name": "Pilgramgasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 68.394,
+      "WFS_opening_year": 1980,
+      "metro_position_names": [
+        "Pilgramgasse"
+      ]
+    },
+    {
+      "DIVA": "60201040",
+      "OGD_name": "Praterstern",
+      "WFS_feature_id": "UBAHNHALTOGD.407800",
+      "WFS_name": "Praterstern",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 80.835,
+      "WFS_opening_year": 1982,
+      "metro_position_names": [
+        "Praterstern"
+      ]
+    },
+    {
+      "DIVA": "60201072",
+      "OGD_name": "Rathaus",
+      "WFS_feature_id": "UBAHNHALTOGD.407820",
+      "WFS_name": "Rathaus",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 27.924,
+      "WFS_opening_year": 1980,
+      "metro_position_names": [
+        "Rathaus"
+      ]
+    },
+    {
+      "DIVA": "60201860",
+      "OGD_name": "Rennbahnweg",
+      "WFS_feature_id": "UBAHNHALTOGD.407762",
+      "WFS_name": "Rennbahnweg",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 31.027,
+      "WFS_opening_year": 2006,
+      "metro_position_names": [
+        "Rennbahnweg"
+      ]
+    },
+    {
+      "DIVA": "60201095",
+      "OGD_name": "Reumannplatz",
+      "WFS_feature_id": "UBAHNHALTOGD.407767",
+      "WFS_name": "Reumannplatz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 95.317,
+      "WFS_opening_year": 1978,
+      "metro_position_names": [
+        "Reumannplatz"
+      ]
+    },
+    {
+      "DIVA": "60201104",
+      "OGD_name": "Rochusgasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407802",
+      "WFS_name": "Rochusgasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 84.341,
+      "WFS_opening_year": 1991,
+      "metro_position_names": [
+        "Rochusgasse"
+      ]
+    },
+    {
+      "DIVA": "60201124",
+      "OGD_name": "Roßauer Lände",
+      "WFS_feature_id": "UBAHNHALTOGD.407803",
+      "WFS_name": "Roßauer Lände",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 13.792,
+      "WFS_opening_year": 1978,
+      "metro_position_names": [
+        "Roßauer Lände"
+      ]
+    },
+    {
+      "DIVA": "60201199",
+      "OGD_name": "Schlachthausgasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407806",
+      "WFS_name": "Schlachthausgasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 67.056,
+      "WFS_opening_year": 1991,
+      "metro_position_names": [
+        "Schlachthausgasse"
+      ]
+    },
+    {
+      "DIVA": "60201182",
+      "OGD_name": "Schottenring",
+      "WFS_feature_id": "UBAHNHALTOGD.407804",
+      "WFS_name": "Schottenring",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 26.373,
+      "WFS_opening_year": 1978,
+      "metro_position_names": [
+        "Schottenring"
+      ]
+    },
+    {
+      "DIVA": "60201184",
+      "OGD_name": "Schottentor",
+      "WFS_feature_id": "UBAHNHALTOGD.407725",
+      "WFS_name": "Schottentor",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 72.511,
+      "WFS_opening_year": 1980,
+      "metro_position_names": [
+        "Schottentor"
+      ]
+    },
+    {
+      "DIVA": "60201198",
+      "OGD_name": "Schwedenplatz",
+      "WFS_feature_id": "UBAHNHALTOGD.407805",
+      "WFS_name": "Schwedenplatz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 35.416,
+      "WFS_opening_year": 1979,
+      "metro_position_names": [
+        "Schwedenplatz"
+      ]
+    },
+    {
+      "DIVA": "60201200",
+      "OGD_name": "Schweglerstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407807",
+      "WFS_name": "Schweglerstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 13.298,
+      "WFS_opening_year": 1994,
+      "metro_position_names": [
+        "Schweglerstraße"
+      ]
+    },
+    {
+      "DIVA": "60201211",
+      "OGD_name": "Schönbrunn",
+      "WFS_feature_id": "UBAHNHALTOGD.407733",
+      "WFS_name": "Schönbrunn",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 42.042,
+      "WFS_opening_year": 1981,
+      "metro_position_names": [
+        "Schönbrunn"
+      ]
+    },
+    {
+      "DIVA": "60200942",
+      "OGD_name": "Seestadt",
+      "WFS_feature_id": "UBAHNHALTOGD.407745",
+      "WFS_name": "Seestadt",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 15.302,
+      "WFS_opening_year": 2013,
+      "metro_position_names": [
+        "Seestadt"
+      ]
+    },
+    {
+      "DIVA": "60201235",
+      "OGD_name": "Siebenhirten",
+      "WFS_feature_id": "UBAHNHALTOGD.407741",
+      "WFS_name": "Siebenhirten",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 70.336,
+      "WFS_opening_year": 1995,
+      "metro_position_names": [
+        "Siebenhirten"
+      ]
+    },
+    {
+      "DIVA": "60201260",
+      "OGD_name": "Simmering",
+      "WFS_feature_id": "UBAHNHALTOGD.407736",
+      "WFS_name": "Simmering",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 76.398,
+      "WFS_opening_year": 2000,
+      "metro_position_names": [
+        "Simmering"
+      ]
+    },
+    {
+      "DIVA": "60201062",
+      "OGD_name": "Spittelau",
+      "WFS_feature_id": "UBAHNHALTOGD.407801",
+      "WFS_name": "Spittelau",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 5.463,
+      "WFS_opening_year": 1976,
+      "metro_position_names": [
+        "Spittelau"
+      ]
+    },
+    {
+      "DIVA": "60201894",
+      "OGD_name": "Stadion",
+      "WFS_feature_id": "UBAHNHALTOGD.407754",
+      "WFS_name": "Stadion",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 58.038,
+      "WFS_opening_year": 2008,
+      "metro_position_names": [
+        "Stadion"
+      ]
+    },
+    {
+      "DIVA": "60201299",
+      "OGD_name": "Stadlau",
+      "WFS_feature_id": "UBAHNHALTOGD.407746",
+      "WFS_name": "Stadlau",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 122.452,
+      "WFS_opening_year": 2010,
+      "metro_position_names": [
+        "Stadlau"
+      ]
+    },
+    {
+      "DIVA": "60201305",
+      "OGD_name": "Stadtpark",
+      "WFS_feature_id": "UBAHNHALTOGD.407808",
+      "WFS_name": "Stadtpark",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 47.969,
+      "WFS_opening_year": 1978,
+      "metro_position_names": [
+        "Stadtpark"
+      ]
+    },
+    {
+      "DIVA": "60201320",
+      "OGD_name": "Stephansplatz",
+      "WFS_feature_id": "UBAHNHALTOGD.407810",
+      "WFS_name": "Stephansplatz",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 12.353,
+      "WFS_opening_year": 1979,
+      "metro_position_names": [
+        "Stephansplatz"
+      ]
+    },
+    {
+      "DIVA": "60200245",
+      "OGD_name": "Stubentor",
+      "WFS_feature_id": "UBAHNHALTOGD.407735",
+      "WFS_name": "Stubentor",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 89.368,
+      "WFS_opening_year": 1991,
+      "metro_position_names": [
+        "Stubentor"
+      ]
+    },
+    {
+      "DIVA": "60201891",
+      "OGD_name": "Taborstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407730",
+      "WFS_name": "Taborstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 38.151,
+      "WFS_opening_year": 2008,
+      "metro_position_names": [
+        "Taborstraße"
+      ]
+    },
+    {
+      "DIVA": "60201366",
+      "OGD_name": "Taubstummengasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407811",
+      "WFS_name": "Taubstummengasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 6.335,
+      "WFS_opening_year": 1973,
+      "metro_position_names": [
+        "Taubstummengasse"
+      ]
+    },
+    {
+      "DIVA": "60201372",
+      "OGD_name": "Thaliastraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407812",
+      "WFS_name": "Thaliastraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 90.387,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Thaliastraße"
+      ]
+    },
+    {
+      "DIVA": "60201573",
+      "OGD_name": "Troststraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407772",
+      "WFS_name": "Troststraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 13.185,
+      "WFS_opening_year": 2017,
+      "metro_position_names": [
+        "Troststraße"
+      ]
+    },
+    {
+      "DIVA": "60201394",
+      "OGD_name": "Tscherttegasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407813",
+      "WFS_name": "Tscherttegasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 29.908,
+      "WFS_opening_year": 1995,
+      "metro_position_names": [
+        "Tscherttegasse"
+      ]
+    },
+    {
+      "DIVA": "60201404",
+      "OGD_name": "Unter St. Veit",
+      "WFS_feature_id": "UBAHNHALTOGD.407814",
+      "WFS_name": "Unter Sankt Veit",
+      "match": "explicit semantic alias with independent coordinate support",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 61.206,
+      "WFS_opening_year": 1981,
+      "metro_position_names": [
+        "Unter St. Veit"
+      ]
+    },
+    {
+      "DIVA": "60201430",
+      "OGD_name": "Volkstheater",
+      "WFS_feature_id": "UBAHNHALTOGD.407815",
+      "WFS_name": "Volkstheater",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 32.905,
+      "WFS_opening_year": 1991,
+      "metro_position_names": [
+        "Volkstheater"
+      ]
+    },
+    {
+      "DIVA": "60201433",
+      "OGD_name": "Vorgartenstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407816",
+      "WFS_name": "Vorgartenstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 79.187,
+      "WFS_opening_year": 1982,
+      "metro_position_names": [
+        "Vorgartenstraße"
+      ]
+    },
+    {
+      "DIVA": "60201468",
+      "OGD_name": "Westbahnhof",
+      "WFS_feature_id": "UBAHNHALTOGD.407817",
+      "WFS_name": "Westbahnhof",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 170.794,
+      "WFS_opening_year": 1993,
+      "metro_position_names": [
+        "Westbahnhof"
+      ]
+    },
+    {
+      "DIVA": "60201510",
+      "OGD_name": "Währinger Straße-Volksoper",
+      "WFS_feature_id": "UBAHNHALTOGD.407819",
+      "WFS_name": "Währinger Straße-Volksoper",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 37.38,
+      "WFS_opening_year": 1989,
+      "metro_position_names": [
+        "Währinger Straße - Volksoper"
+      ]
+    },
+    {
+      "DIVA": "60201530",
+      "OGD_name": "Zieglergasse",
+      "WFS_feature_id": "UBAHNHALTOGD.407724",
+      "WFS_name": "Zieglergasse",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 47.101,
+      "WFS_opening_year": 1993,
+      "metro_position_names": [
+        "Zieglergasse"
+      ]
+    },
+    {
+      "DIVA": "60200399",
+      "OGD_name": "Zippererstraße",
+      "WFS_feature_id": "UBAHNHALTOGD.407778",
+      "WFS_name": "Zippererstraße",
+      "match": "punctuation/spacing/case normalization",
+      "area_coordinate_inside": true,
+      "WFS_coordinate_inside": true,
+      "coordinate_distance_approx_m": 125.829,
+      "WFS_opening_year": 2000,
+      "metro_position_names": [
+        "Zippererstraße"
+      ]
+    }
+  ],
+  "maximum_cross_source_station_offset_approx_m": 300.835,
+  "metro_alias_policy": "Explicit conventional names/city-station aliases supported by operator stopping-position names and corresponding coordinates; Hauptbahnhof area centroid is ~301m from metro point, so do not present these coordinates as exact entrances.",
+  "old_mirror_policy": "data.wien.gv.at/csv files with Last-Modified2024-12-06 are archived diagnostics only; not joined to current2026 export",
+  "remaining_limits": [
+    "Current registration plus independently existing passenger-station classification supports a metro inventory subset; closures, service schedules and accessibility not audited.",
+    "No new population or utility anchor estimated; parent must retain original CSV population, weight and existing utility transform.",
+    "Raw files in scratch must be retained in the permanent candidate archive with these exact hashes before final admission."
+  ]
+}

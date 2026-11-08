@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "weight_reference": "fixed",
+      "production_scores_and_saved_V127_match": true,
+      "self_excluded_regret_rank_champion_checks": true,
+      "midpoint_collapsed_decision_equals_score_order": true,
+      "endpoint_completion_has_all160_entries_at_endpoints": true,
+      "all112_point_entries_unchanged_in_every_completion": true,
+      "strict_interior_counterexample": true,
+      "all16_model_possible_champion_witnesses": true,
+      "endpoint_witness_realizes_revised_choice_maximum_regret": true
+    },
+    {
+      "weight_reference": "equal",
+      "production_scores_and_saved_V127_match": true,
+      "self_excluded_regret_rank_champion_checks": true,
+      "midpoint_collapsed_decision_equals_score_order": true,
+      "endpoint_completion_has_all160_entries_at_endpoints": true,
+      "all112_point_entries_unchanged_in_every_completion": true,
+      "strict_interior_counterexample": true,
+      "all16_model_possible_champion_witnesses": true,
+      "endpoint_witness_realizes_revised_choice_maximum_regret": true
+    }
+  ],
+  "source_CSV_registry_saved_rank_files_and_source_hashes_unchanged": true,
+  "authoritative_V127_all160_bounds_exactly_unchanged": true,
+  "V121_control_reproduces_V123_all_rank_columns": true,
+  "V121_control_csv_byte_equal": true,
+  "V125_V124_to_V128_V127_actual_input_comparison": true,
+  "snapshot_hash_and_all_primary_snapshot_sources_unchanged": true,
+  "main_input_shape": [
+    16,
+    10
+  ],
+  "legacy25_used": false,
+  "output_sha256": {
+    "possible_champion_witnesses.csv": "7d0384b1c9976f77c2b2cb3a7092e3b07bef362f8ce76532bd40cebdb6a7f36e",
+    "rank_comparison.csv": "a7e11f6a55aa1bd8e2ee353e375bb0ffdc1484ebe402bcc763e0842b070b6deb",
+    "utility_inputs.csv": "bd3797c31c2758777c4dc72b47c2f9b301530d8775151711735311c279f6e207",
+    "v121_control_rank_comparison.csv": "148cc8b2a4aecd7c3ce68cc16d52b16f5dc9561f5079b0afe5854a31bae89b1f",
+    "v125_v128_rank_comparison.csv": "0142cc454c8a4388408161669ab5b4f6a5c17d3bdb8c0bdc3da390d2f9990f03",
+    "witness_scores.csv": "3d9d997530910bfbb179b2c4da02f69766bc3763539653029117a0189c32ff64",
+    "witness_utilities.csv": "061bbe9828f6e23887afe3a57a81af034f8f80f0228930538c13f722523f7f4d"
+  }
+}

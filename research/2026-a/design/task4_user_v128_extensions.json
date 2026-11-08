@@ -1,0 +1,30 @@
+{
+  "extension_version": "V128",
+  "primary_evidence_version": "V127",
+  "primary_registry": "design/task4_user_current_model.json",
+  "primary_snapshot": "design/task4_user_v127_snapshot.json",
+  "changes_primary_model": false,
+  "modules": {
+    "preferences": {
+      "script": "scripts/task4_v128_preferences.py",
+      "results": "results/task4_v128_preferences"
+    },
+    "future": {
+      "script": "scripts/task4_v128_future.py",
+      "results": "results/task4_v128_future"
+    },
+    "method_country": {
+      "script": "scripts/task4_v128_method_country.py",
+      "results": "results/task4_v128_method_country"
+    },
+    "revision_diagnostic": {
+      "script": "scripts/task4_v128_revision_diagnostic.py",
+      "results": "results/task4_v128_revision_diagnostic"
+    }
+  },
+  "independent_audit": "results/task4_v128_revision/audit.json",
+  "audit_script": "scripts/audit_task4_v128_extensions.py",
+  "manuscript_entry": "../HiMCM-Overleaf/drafts/task4_v128_paper.tex",
+  "scope": "Same indicators, weights, fixed scales and rectangle rules. New2026 Vienna/Prague metro evidence is V127; V128 migrates the existing controlled extensions without new survey/trend/probability claims. V125 remains frozen on V124.",
+  "historical_cases": "Legacy25 V117 and age/fairness examples remain separate, six CSV files byte-identical; newVienna2001 derived case not admitted to the current16-city model."
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "zurich_new_city_FTE_screen",
+    "date": "2026-11-09",
+    "city": "Zurich",
+    "query": "site.stadt-zuerich.ch Mittelschulen Lehrpersonen Vollzeitäquivalente Schüler Lehrer Verhältnis",
+    "new_entry": false,
+    "source_urls": [
+      "https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/bildung/mittelschulen-berufsbildung.html"
+    ],
+    "source_years": "No new matched pupil/teacher table recovered",
+    "geography": "Search target: Zurich municipality; results returned city pupil material and already-rejected canton/public-school staffing",
+    "stage": "Target upper-secondary only; recovered new match absent",
+    "denominator": "No city all-provider matched teacher FTE/headcount recovered",
+    "outcome": "screened_out; no repeat download",
+    "reason": "Existing V120/V124 rejection evidence covers the returned city-pupils/canton-staff routes. A different website result is not a new denominator.",
+    "admitted": false
+  },
+  {
+    "id": "dublin_parliamentary_question_33194",
+    "date": "2026-11-09",
+    "city": "Dublin",
+    "query": "site.oireachtas.ie \"Dublin\" \"pupil teacher ratio\" \"post-primary\"; exact follow-up \"33194/24\" teachers pupils post primary Dublin",
+    "new_entry": true,
+    "source_urls": [
+      "https://data.oireachtas.ie/ie/oireachtas/parliamentaryBusiness/questionsPaper/dail/2024/2024-07-23_dail-question-paper-tues_en.pdf",
+      "https://www.oireachtas.ie/en/debates/question/2024-07-23/825/",
+      "https://prelive.oireachtas.ie/en/debates/question/2024-07-23/825/"
+    ],
+    "source_years": "Question date 2024-07-23; no statistical reference year established",
+    "geography": "Dublin postal districts 1,3,7,9,11; not complete Dublin City",
+    "stage": "Post-primary requested; upper-secondary-only split not established",
+    "denominator": "Question requests students, teachers and PTR; no actual answer/denominator recovered",
+    "outcome": "not_admitted",
+    "reason": "Official question paper PDF p75 contains question825, not statistical results. Official answer endpoint inaccessible via web tool; Exa prelive timed out. Do not treat question text as observed staffing or manufacture a city total from partial postal coverage.",
+    "admitted": false
+  },
+  {
+    "id": "amsterdam_duo_institution_PTR",
+    "date": "2026-11-09",
+    "city": "Amsterdam",
+    "query": "site.duo.nl open onderwijsdata voortgezet onderwijs personeel fte vestiging leerlingen Amsterdam",
+    "new_entry": true,
+    "source_urls": [
+      "https://duo.nl/open_onderwijsdata/voortgezet-onderwijs/personeel/",
+      "https://onderwijsdata.duo.nl/datasets/functiemix/resources/8f781c95-8e1b-470f-9596-edcffc11cf0a",
+      "https://onderwijsdata.duo.nl/api/3/action/resource_show?id=8f781c95-8e1b-470f-9596-edcffc11cf0a",
+      "https://onderwijsdata.duo.nl/api/3/action/datastore_search?resource_id=8f781c95-8e1b-470f-9596-edcffc11cf0a&limit=1&q=AMSTERDAM"
+    ],
+    "source_years": "Resource metadata modified 2024-06-24; one search sample JAAR=2006, not a latest-city estimate",
+    "geography": "Institution BRIN identifier, may cover multiple campuses; Amsterdam institution address does not establish all campuses inside city",
+    "stage": "VO institution; returned sample havo/vwo, not separately identified upper-secondary years",
+    "denominator": "Instruction-staffing-size field OMVANG_FORMATIE_OP and published LEERLING_LERAAR_RATIO exist; institution-level, with no independently established city/campus/upper-secondary match or full denominator semantics",
+    "outcome": "not_admitted",
+    "reason": "Official API metadata explicitly says staff are not collected at campus level. No complete city/all-provider institution-campus closure and upper-secondary matched stage established. One historical school record is a schema witness, not an Amsterdam PTR. Stop before constructing unverified aggregate.",
+    "admitted": false
+  }
+]

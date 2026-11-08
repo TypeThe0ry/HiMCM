@@ -13,6 +13,8 @@ Before drafting or editing manuscript text, abstracts, conclusions, press releas
 
 ## Priority: Overleaf workspace
 
+Current scientific entry: **user16 V127**, with V128 controlled extensions and the independent full review `HiMCM-Overleaf/drafts/task4_v128_paper.tex/.pdf`. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
+
 The user explicitly made the Overleaf workspace the first priority on 2026-11-07.
 
 - Treat the latest Overleaf project as the authoritative manuscript workspace. The sibling `HiMCM-Overleaf` checkout tracks https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894; GitHub `TypeThe0ry/HiMCM` holds research code, data, results, and the reference library.

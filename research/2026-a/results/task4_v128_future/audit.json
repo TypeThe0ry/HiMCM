@@ -1,0 +1,184 @@
+{
+  "status": "pass",
+  "checks": {
+    "identity": true,
+    "ordinary_raw_reversibility": true,
+    "travel_moment_discrete_mixtures": 1000,
+    "sharp_endpoint_mixtures": true,
+    "singapore_invalid_power_shortcut_rejected": true,
+    "static_decisions_match_registered_helper": true,
+    "independent_raw_inversion": true,
+    "all_deterministic_unknown_cells_preserved": true,
+    "all_future_mc_draws_unknown_cells_preserved": true,
+    "adversarial_self_exclusion_and_equal_tie_credit": true,
+    "scalar_self_excluded_regret_rank_possible_and_tie_credit": true,
+    "threshold_independent_scan_points": 3232,
+    "threshold_crossing_sides": true,
+    "future_mc_independent_draws_per_setting": 3,
+    "future_mc_settings": 12,
+    "weight_mc_independent_draws_per_setting": 3,
+    "weight_mc_settings": 16,
+    "paired_mc_same_shocks_and_weights": true,
+    "weight_mc_baseline_exactly_matches_V127_both_arms_and_references": true,
+    "current_four_changed_cells_since_V121": true,
+    "current_two_changed_cells_since_V124": true,
+    "primary_snapshot_verified_before_and_after": true,
+    "all_protected_source_hashes_unchanged": true,
+    "v125_to_v128_all6tables_one_to_one_matched": true,
+    "historical_control_outputs_untouched": true
+  },
+  "v121_control": {
+    "factory": "V121",
+    "frozen_version": "V122",
+    "tables": {
+      "ranks": {
+        "rows": 256,
+        "all_columns_exact": true
+      },
+      "utility_bounds": {
+        "rows": 1280,
+        "all_columns_exact": true
+      },
+      "thresholds": {
+        "rows": 32,
+        "all_columns_exact": true
+      },
+      "threshold_scan": {
+        "rows": 3232,
+        "all_columns_exact": true
+      },
+      "future_mc_city_summary": {
+        "rows": 96,
+        "all_columns_exact": true
+      },
+      "weight_mc_city_summary": {
+        "rows": 128,
+        "all_columns_exact": true
+      }
+    },
+    "summary_scenarios_exact": true,
+    "summary_thresholds_exact": true
+  },
+  "v124_control": {
+    "factory": "V124",
+    "frozen_version": "V125",
+    "tables": {
+      "ranks": {
+        "rows": 256,
+        "all_columns_exact": true
+      },
+      "utility_bounds": {
+        "rows": 1280,
+        "all_columns_exact": true
+      },
+      "thresholds": {
+        "rows": 32,
+        "all_columns_exact": true
+      },
+      "threshold_scan": {
+        "rows": 3232,
+        "all_columns_exact": true
+      },
+      "future_mc_city_summary": {
+        "rows": 192,
+        "all_columns_exact": true
+      },
+      "weight_mc_city_summary": {
+        "rows": 256,
+        "all_columns_exact": true
+      }
+    },
+    "summary_scenarios_exact": true,
+    "summary_thresholds_exact": true
+  },
+  "primary_snapshot_sha256": "8f754bb3b666fdea8030bacf0551dea8a455bb0fc22df56c1860d4f4e747e45d",
+  "protected_files": 113,
+  "baseline_mc_checks": [
+    {
+      "evidence_arm": "conditional",
+      "weight_reference": "fixed",
+      "cities": 16,
+      "three_metrics_exact": true
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "cities": 16,
+      "three_metrics_exact": true
+    },
+    {
+      "evidence_arm": "conditional",
+      "weight_reference": "equal",
+      "cities": 16,
+      "three_metrics_exact": true
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "cities": 16,
+      "three_metrics_exact": true
+    }
+  ],
+  "matched_comparisons": {
+    "ranks": {
+      "rows": 256,
+      "keys": [
+        "evidence_arm",
+        "scenario",
+        "weight_reference",
+        "city"
+      ],
+      "one_to_one_complete_match": true
+    },
+    "utility_bounds": {
+      "rows": 1280,
+      "keys": [
+        "evidence_arm",
+        "scenario",
+        "city",
+        "indicator"
+      ],
+      "one_to_one_complete_match": true
+    },
+    "thresholds": {
+      "rows": 32,
+      "keys": [
+        "weight_reference",
+        "city"
+      ],
+      "one_to_one_complete_match": true
+    },
+    "threshold_scan": {
+      "rows": 3232,
+      "keys": [
+        "weight_reference",
+        "city",
+        "raw_multiplier"
+      ],
+      "one_to_one_complete_match": true
+    },
+    "future_mc_city_summary": {
+      "rows": 192,
+      "keys": [
+        "random_source",
+        "evidence_arm",
+        "scenario",
+        "weight_reference",
+        "city"
+      ],
+      "one_to_one_complete_match": true
+    },
+    "weight_mc_city_summary": {
+      "rows": 256,
+      "keys": [
+        "random_source",
+        "evidence_arm",
+        "scenario",
+        "weight_reference",
+        "concentration",
+        "city"
+      ],
+      "one_to_one_complete_match": true
+    }
+  }
+}
