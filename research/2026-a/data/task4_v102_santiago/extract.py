@@ -1,9 +1,18 @@
 """Descriptive EPJA subgroup only; no ranking-model admission."""
-import collections, csv, gzip, io, json
+import collections, csv, gzip, hashlib, io, json
 from pathlib import Path
 P = Path(__file__).resolve().parent
-with gzip.open(P / 'epja_desidentificado_2023.csv.gz', 'rt', encoding='utf-8-sig', newline='') as f:
-    rows = list(csv.DictReader(f, delimiter=';'))
+source = P.parent / 'local_only_epja' / 'epja_desidentificado_2023.csv.gz'
+if not source.exists():
+    raise SystemExit('Local-only source missing. Download the 2023 source URL in sources.json, verify its original_sha256, and gzip it into data/local_only_epja/. Do not publish individual records.')
+raw = gzip.decompress(source.read_bytes())
+manifest = next(x for x in json.loads((P / 'sources.json').read_text()) if x['file'].endswith('2023.csv.gz'))
+if hashlib.sha256(raw).hexdigest() != manifest['original_sha256']:
+    raise SystemExit('Source SHA256 mismatch; extraction stopped.')
+# Retain only task fields in memory after reading; publish aggregate counts only.
+fields = ['DS_COMUNA_ESTUDIANTE', 'DS_GRADO', 'TIEMPO_TRASLADO_EDUCACIONAL']
+rows = [{k: row[k] for k in fields} for row in csv.DictReader(io.StringIO(raw.decode('utf-8-sig')), delimiter=';')]
+del raw
 residents = [r for r in rows if r['DS_COMUNA_ESTUDIANTE'].strip().casefold() == 'santiago']
 secondary = [r for r in residents if 'medio' in r['DS_GRADO'].lower()]
 counts = collections.Counter(r['TIEMPO_TRASLADO_EDUCACIONAL'] or '(missing)' for r in secondary)
