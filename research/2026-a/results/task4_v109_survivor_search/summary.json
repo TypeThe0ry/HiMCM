@@ -1,0 +1,3817 @@
+{
+  "certified_minimum": 4,
+  "attained_upper_bound": 4,
+  "minimum_proved": true,
+  "successful_sets": [
+    [
+      1,
+      2,
+      22,
+      23
+    ],
+    [
+      1,
+      7,
+      22,
+      23
+    ]
+  ],
+  "records": [
+    {
+      "keep_indices": [
+        1,
+        22,
+        23
+      ],
+      "size": 3,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        0,
+        1,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "feasible_survivor_superset",
+      "exclusions": [
+        {
+          "outside_index": 0,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 3,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 2,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 4,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 5,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 6,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 7,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 8,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 9,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 10,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 11,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 12,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 13,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 14,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 15,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 16,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 17,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 18,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 19,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 20,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 3,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 21,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 5,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 24,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 3,
+          "tolerance": 1e-12
+        }
+      ]
+    },
+    {
+      "keep_indices": [
+        1,
+        3,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        4,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        5,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        6,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "feasible_survivor_superset",
+      "exclusions": [
+        {
+          "outside_index": 0,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 2,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 3,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 3,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 2,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 4,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 5,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 6,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 8,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 9,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 10,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 11,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 12,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 13,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 14,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 3,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 15,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 16,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 17,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 18,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 19,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 20,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 2,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 21,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 4,
+          "tolerance": 1e-12
+        },
+        {
+          "outside_index": 24,
+          "possible": false,
+          "witness_alpha": null,
+          "feasible_interval_closures": [],
+          "feasible_boundary_points": [],
+          "partition_count": 2,
+          "tolerance": 1e-12
+        }
+      ]
+    },
+    {
+      "keep_indices": [
+        1,
+        8,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        9,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        10,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        11,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        12,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        13,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        14,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        15,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        16,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        17,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        18,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        19,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        20,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        21,
+        22,
+        23
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    },
+    {
+      "keep_indices": [
+        1,
+        22,
+        23,
+        24
+      ],
+      "size": 4,
+      "status": "excluded_by_strict_witness",
+      "outside_index": 2,
+      "alpha": 0.19892787346145557,
+      "score_gap": 0.05806738206288031
+    }
+  ],
+  "model_version": "V108",
+  "input_bounds_sha256": "01f728432522b9e3f8a5768bf1d782a8c08fe60a0e352ce6d207bb6b663ae131",
+  "source_summary_sha256": "abbc336a9c63a00dd49a30b3cedde527c0878fa2a09a7afb243eef2188d34cc3",
+  "required_cities": [
+    "Phoenix",
+    "Singapore",
+    "Jakarta"
+  ],
+  "measured_indicators": [
+    "upper_secondary_ptr",
+    "travel",
+    "homicide_rate"
+  ],
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "fixed_alpha": 0.1,
+  "main_admitted": false,
+  "new_observations": 0,
+  "successful_city_sets": [
+    [
+      "Phoenix",
+      "New York",
+      "Singapore",
+      "Jakarta"
+    ],
+    [
+      "Phoenix",
+      "Copenhagen",
+      "Singapore",
+      "Jakarta"
+    ]
+  ],
+  "precision": [
+    {
+      "keep_indices": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "keep_cities": [
+        "Phoenix",
+        "New York",
+        "Singapore",
+        "Jakarta"
+      ],
+      "keep_size": 4,
+      "frontier": {
+        "status": "bracketed",
+        "feasible": {
+          "delta": 0.0030517578125,
+          "status": "four_set_feasible",
+          "exclusions": [
+            {
+              "outside_index": 0,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 3,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 4,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 5,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 6,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 7,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 8,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 9,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 10,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 11,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 12,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 13,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 14,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 15,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 16,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 17,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 18,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 19,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 20,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 21,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 24,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            }
+          ],
+          "uncertain": []
+        },
+        "infeasible": {
+          "delta": 0.00311279296875,
+          "status": "impossible_four_set",
+          "outside_index": 20,
+          "outside_city": "Tokyo",
+          "witness_alpha": 0.19999641899391316,
+          "strict_score_gap": 0.00020348001947212424
+        },
+        "bracket_width": 6.103515625e-05,
+        "steps": [
+          {
+            "delta": 0.5,
+            "status": "impossible_four_set",
+            "outside_index": 0,
+            "outside_city": "Toronto",
+            "witness_alpha": 0.125,
+            "strict_score_gap": 14.241161457663914
+          },
+          {
+            "delta": 0.25,
+            "status": "impossible_four_set",
+            "outside_index": 0,
+            "outside_city": "Toronto",
+            "witness_alpha": 0.14070827506534764,
+            "strict_score_gap": 3.2686174852834355
+          },
+          {
+            "delta": 0.125,
+            "status": "impossible_four_set",
+            "outside_index": 0,
+            "outside_city": "Toronto",
+            "witness_alpha": 0.18663688059749056,
+            "strict_score_gap": 0.7579572941226971
+          },
+          {
+            "delta": 0.0625,
+            "status": "impossible_four_set",
+            "outside_index": 3,
+            "outside_city": "Mexico City",
+            "witness_alpha": 0.18089656749459,
+            "strict_score_gap": 1.0270885485887007
+          },
+          {
+            "delta": 0.03125,
+            "status": "impossible_four_set",
+            "outside_index": 3,
+            "outside_city": "Mexico City",
+            "witness_alpha": 0.1912553159918838,
+            "strict_score_gap": 0.47271240446266205
+          },
+          {
+            "delta": 0.015625,
+            "status": "impossible_four_set",
+            "outside_index": 3,
+            "outside_city": "Mexico City",
+            "witness_alpha": 0.19624613387384854,
+            "strict_score_gap": 0.2034023843546109
+          },
+          {
+            "delta": 0.0078125,
+            "status": "impossible_four_set",
+            "outside_index": 3,
+            "outside_city": "Mexico City",
+            "witness_alpha": 0.19869636022049736,
+            "strict_score_gap": 0.07071476090755624
+          },
+          {
+            "delta": 0.00390625,
+            "status": "impossible_four_set",
+            "outside_index": 3,
+            "outside_city": "Mexico City",
+            "witness_alpha": 0.19991041174252314,
+            "strict_score_gap": 0.00486219199620308
+          },
+          {
+            "delta": 0.001953125,
+            "status": "four_set_feasible",
+            "exclusions": [
+              {
+                "outside_index": 0,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 3,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 4,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 5,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 6,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 7,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 8,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 9,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 10,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 11,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 12,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 13,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 14,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 15,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 16,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 17,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 18,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 19,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 20,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 21,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 24,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              }
+            ],
+            "uncertain": []
+          },
+          {
+            "delta": 0.0029296875,
+            "status": "four_set_feasible",
+            "exclusions": [
+              {
+                "outside_index": 0,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 3,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 4,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 5,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 6,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 7,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 8,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 9,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 10,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 11,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 12,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 13,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 14,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 15,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 16,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 17,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 18,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 19,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 20,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 21,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 24,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              }
+            ],
+            "uncertain": []
+          },
+          {
+            "delta": 0.00341796875,
+            "status": "impossible_four_set",
+            "outside_index": 20,
+            "outside_city": "Tokyo",
+            "witness_alpha": 0.19990312770410235,
+            "strict_score_gap": 0.0055042347645795076
+          },
+          {
+            "delta": 0.003173828125,
+            "status": "impossible_four_set",
+            "outside_index": 20,
+            "outside_city": "Tokyo",
+            "witness_alpha": 0.1999777641481439,
+            "strict_score_gap": 0.0012634748903650461
+          },
+          {
+            "delta": 0.0030517578125,
+            "status": "four_set_feasible",
+            "exclusions": [
+              {
+                "outside_index": 0,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 3,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 4,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 5,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 6,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 7,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 8,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 9,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 10,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 11,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 12,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 13,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 14,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 15,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 16,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 17,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 18,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 19,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 5,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 20,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 21,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 24,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              }
+            ],
+            "uncertain": []
+          },
+          {
+            "delta": 0.00311279296875,
+            "status": "impossible_four_set",
+            "outside_index": 20,
+            "outside_city": "Tokyo",
+            "witness_alpha": 0.19999641899391316,
+            "strict_score_gap": 0.00020348001947212424
+          }
+        ]
+      },
+      "grid": [
+        {
+          "delta": 0.0,
+          "status": "four_set_feasible",
+          "exclusions": [
+            {
+              "outside_index": 0,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 3,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 4,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 5,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 6,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 7,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 8,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 9,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 10,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 11,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 12,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 13,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 14,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 15,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 16,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 17,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 18,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 19,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 20,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 21,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 24,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            }
+          ],
+          "uncertain": []
+        },
+        {
+          "delta": 0.001,
+          "status": "four_set_feasible",
+          "exclusions": [
+            {
+              "outside_index": 0,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 3,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 4,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 5,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 6,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 7,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 8,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 9,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 10,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 11,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 12,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 13,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 14,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 15,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 16,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 17,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 18,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 19,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 20,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 21,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 5,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 24,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            }
+          ],
+          "uncertain": []
+        },
+        {
+          "delta": 0.005,
+          "status": "impossible_four_set",
+          "outside_index": 3,
+          "outside_city": "Mexico City",
+          "witness_alpha": 0.19957121466770067,
+          "strict_score_gap": 0.023267919274815085
+        },
+        {
+          "delta": 0.01,
+          "status": "impossible_four_set",
+          "outside_index": 3,
+          "outside_city": "Mexico City",
+          "witness_alpha": 0.19801328401178964,
+          "strict_score_gap": 0.10773520626520394
+        },
+        {
+          "delta": 0.02,
+          "status": "impossible_four_set",
+          "outside_index": 3,
+          "outside_city": "Mexico City",
+          "witness_alpha": 0.19486096343523737,
+          "strict_score_gap": 0.27828010972187656
+        },
+        {
+          "delta": 0.05,
+          "status": "impossible_four_set",
+          "outside_index": 3,
+          "outside_city": "Mexico City",
+          "witness_alpha": 0.18510202969715422,
+          "strict_score_gap": 0.8028170424766046
+        },
+        {
+          "delta": 0.1,
+          "status": "impossible_four_set",
+          "outside_index": 0,
+          "outside_city": "Toronto",
+          "witness_alpha": 0.1947599745643307,
+          "strict_score_gap": 0.29834127365121077
+        },
+        {
+          "delta": 0.2,
+          "status": "impossible_four_set",
+          "outside_index": 0,
+          "outside_city": "Toronto",
+          "witness_alpha": 0.1602271216770212,
+          "strict_score_gap": 2.2222347187238967
+        },
+        {
+          "delta": 1.0,
+          "status": "impossible_four_set",
+          "outside_index": 0,
+          "outside_city": "Toronto",
+          "witness_alpha": 0.125,
+          "strict_score_gap": 32.50678137206249
+        }
+      ]
+    },
+    {
+      "keep_indices": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "keep_cities": [
+        "Phoenix",
+        "Copenhagen",
+        "Singapore",
+        "Jakarta"
+      ],
+      "keep_size": 4,
+      "frontier": {
+        "status": "bracketed",
+        "feasible": {
+          "delta": 0.016845703125,
+          "status": "four_set_feasible",
+          "exclusions": [
+            {
+              "outside_index": 0,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 2,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 3,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 4,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 5,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 6,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 8,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 9,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 10,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 11,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 12,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 13,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 14,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 15,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 16,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 17,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 18,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 19,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 20,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 21,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 24,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            }
+          ],
+          "uncertain": []
+        },
+        "infeasible": {
+          "delta": 0.01690673828125,
+          "status": "impossible_four_set",
+          "outside_index": 2,
+          "outside_city": "New York",
+          "witness_alpha": 0.199996237344561,
+          "strict_score_gap": 0.00031208599642695845
+        },
+        "bracket_width": 6.103515625e-05,
+        "steps": [
+          {
+            "delta": 0.5,
+            "status": "impossible_four_set",
+            "outside_index": 0,
+            "outside_city": "Toronto",
+            "witness_alpha": 0.125,
+            "strict_score_gap": 14.241161457663914
+          },
+          {
+            "delta": 0.25,
+            "status": "impossible_four_set",
+            "outside_index": 0,
+            "outside_city": "Toronto",
+            "witness_alpha": 0.15880999720273498,
+            "strict_score_gap": 3.659457901072905
+          },
+          {
+            "delta": 0.125,
+            "status": "impossible_four_set",
+            "outside_index": 0,
+            "outside_city": "Toronto",
+            "witness_alpha": 0.19216943001466472,
+            "strict_score_gap": 0.6824186419392291
+          },
+          {
+            "delta": 0.0625,
+            "status": "impossible_four_set",
+            "outside_index": 2,
+            "outside_city": "New York",
+            "witness_alpha": 0.18914299262627948,
+            "strict_score_gap": 0.9121761534216262
+          },
+          {
+            "delta": 0.03125,
+            "status": "impossible_four_set",
+            "outside_index": 2,
+            "outside_city": "New York",
+            "witness_alpha": 0.1966399816100992,
+            "strict_score_gap": 0.2798485947553715
+          },
+          {
+            "delta": 0.015625,
+            "status": "four_set_feasible",
+            "exclusions": [
+              {
+                "outside_index": 0,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 2,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 3,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 4,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 5,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 6,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 8,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 9,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 10,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 11,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 12,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 13,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 14,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 15,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 16,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 17,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 18,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 19,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 20,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 21,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 24,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              }
+            ],
+            "uncertain": []
+          },
+          {
+            "delta": 0.0234375,
+            "status": "impossible_four_set",
+            "outside_index": 2,
+            "outside_city": "New York",
+            "witness_alpha": 0.19847455544045295,
+            "strict_score_gap": 0.12676556904717273
+          },
+          {
+            "delta": 0.01953125,
+            "status": "impossible_four_set",
+            "outside_index": 2,
+            "outside_city": "New York",
+            "witness_alpha": 0.19938601603821254,
+            "strict_score_gap": 0.05096468658594944
+          },
+          {
+            "delta": 0.017578125,
+            "status": "impossible_four_set",
+            "outside_index": 2,
+            "outside_city": "New York",
+            "witness_alpha": 0.1998402994771381,
+            "strict_score_gap": 0.013248641447432874
+          },
+          {
+            "delta": 0.0166015625,
+            "status": "four_set_feasible",
+            "exclusions": [
+              {
+                "outside_index": 0,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 2,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 3,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 4,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 5,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 6,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 8,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 9,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 10,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 11,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 12,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 13,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 14,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 15,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 16,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 17,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 18,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 19,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 20,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 21,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 24,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              }
+            ],
+            "uncertain": []
+          },
+          {
+            "delta": 0.01708984375,
+            "status": "impossible_four_set",
+            "outside_index": 2,
+            "outside_city": "New York",
+            "witness_alpha": 0.19995372008938309,
+            "strict_score_gap": 0.0038388008428569265
+          },
+          {
+            "delta": 0.016845703125,
+            "status": "four_set_feasible",
+            "exclusions": [
+              {
+                "outside_index": 0,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 2,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 3,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 4,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 5,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 6,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 8,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 9,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 10,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 11,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 12,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 13,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 14,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 15,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 16,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 17,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 18,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 19,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 4,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 20,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 21,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 2,
+                "tolerance": 1e-12
+              },
+              {
+                "outside_index": 24,
+                "possible": false,
+                "witness_alpha": null,
+                "feasible_interval_closures": [],
+                "feasible_boundary_points": [],
+                "partition_count": 3,
+                "tolerance": 1e-12
+              }
+            ],
+            "uncertain": []
+          },
+          {
+            "delta": 0.0169677734375,
+            "status": "impossible_four_set",
+            "outside_index": 2,
+            "outside_city": "New York",
+            "witness_alpha": 0.19998206586373207,
+            "strict_score_gap": 0.0014875379144214662
+          },
+          {
+            "delta": 0.01690673828125,
+            "status": "impossible_four_set",
+            "outside_index": 2,
+            "outside_city": "New York",
+            "witness_alpha": 0.199996237344561,
+            "strict_score_gap": 0.00031208599642695845
+          }
+        ]
+      },
+      "grid": [
+        {
+          "delta": 0.0,
+          "status": "four_set_feasible",
+          "exclusions": [
+            {
+              "outside_index": 0,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 2,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 3,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 4,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 5,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 6,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 8,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 9,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 10,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 11,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 12,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 13,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 14,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 15,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 16,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 17,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 18,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 19,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 20,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 21,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 24,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            }
+          ],
+          "uncertain": []
+        },
+        {
+          "delta": 0.001,
+          "status": "four_set_feasible",
+          "exclusions": [
+            {
+              "outside_index": 0,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 2,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 3,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 4,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 5,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 6,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 8,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 9,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 10,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 11,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 12,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 13,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 14,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 15,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 16,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 17,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 18,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 19,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 20,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 21,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 24,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            }
+          ],
+          "uncertain": []
+        },
+        {
+          "delta": 0.005,
+          "status": "four_set_feasible",
+          "exclusions": [
+            {
+              "outside_index": 0,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 2,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 3,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 4,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 5,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 6,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 8,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 9,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 10,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 11,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 12,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 13,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 14,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 15,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 16,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 17,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 18,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 19,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 20,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 21,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 24,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            }
+          ],
+          "uncertain": []
+        },
+        {
+          "delta": 0.01,
+          "status": "four_set_feasible",
+          "exclusions": [
+            {
+              "outside_index": 0,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 2,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 3,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 4,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 5,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 6,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 8,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 9,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 10,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 11,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 12,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 13,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 14,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 15,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 16,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 17,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 18,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 19,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 4,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 20,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 21,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 3,
+              "tolerance": 1e-12
+            },
+            {
+              "outside_index": 24,
+              "possible": false,
+              "witness_alpha": null,
+              "feasible_interval_closures": [],
+              "feasible_boundary_points": [],
+              "partition_count": 2,
+              "tolerance": 1e-12
+            }
+          ],
+          "uncertain": []
+        },
+        {
+          "delta": 0.02,
+          "status": "impossible_four_set",
+          "outside_index": 2,
+          "outside_city": "New York",
+          "witness_alpha": 0.19927684472556345,
+          "strict_score_gap": 0.06003481034635172
+        },
+        {
+          "delta": 0.05,
+          "status": "impossible_four_set",
+          "outside_index": 2,
+          "outside_city": "New York",
+          "witness_alpha": 0.192172657554022,
+          "strict_score_gap": 0.6553777361069564
+        },
+        {
+          "delta": 0.1,
+          "status": "impossible_four_set",
+          "outside_index": 0,
+          "outside_city": "Toronto",
+          "witness_alpha": 0.19825344494068003,
+          "strict_score_gap": 0.15139502007691163
+        },
+        {
+          "delta": 0.2,
+          "status": "impossible_four_set",
+          "outside_index": 0,
+          "outside_city": "Toronto",
+          "witness_alpha": 0.17277788805029498,
+          "strict_score_gap": 2.4039190460673225
+        },
+        {
+          "delta": 1.0,
+          "status": "impossible_four_set",
+          "outside_index": 0,
+          "outside_city": "Toronto",
+          "witness_alpha": 0.125,
+          "strict_score_gap": 32.50678137206249
+        }
+      ]
+    }
+  ],
+  "global_minimum_size_frontier": {
+    "feasible_width": 0.016845703125,
+    "infeasible_width": 0.01690673828125,
+    "minimum_set_size": 4,
+    "all_minimum_sets_enumerated": true
+  },
+  "width_rule": "min(delta, original width)",
+  "scope": "Hypothetical shared endpoint revelations, not observed improvements or forecast. Precision frontier is per successful minimum set; no claim of larger-set optimum without separate witness. Legacy precision status names contain four_set regardless of actual keep_size."
+}

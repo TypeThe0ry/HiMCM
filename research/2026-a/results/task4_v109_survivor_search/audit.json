@@ -1,0 +1,702 @@
+{
+  "method": "Independent long-double scores, monotone-alpha endpoint enclosures padded by 2e-9; no main scoring or polynomial solver imports",
+  "summary_sha256": "715cbc359092767d37b06021a0700cfbff6c1309730f967e7b4f52fe19e8be5a",
+  "input_bounds_sha256": "01f728432522b9e3f8a5768bf1d782a8c08fe60a0e352ce6d207bb6b663ae131",
+  "wrapper_validation": [
+    "same model/weights rerun accepted",
+    "source model_version mismatch rejected",
+    "source input_bounds_sha256 mismatch rejected",
+    "source fixed_alpha mismatch rejected",
+    "source alpha_range mismatch rejected",
+    "existing output changed weights rejected"
+  ],
+  "global_minimum_size_frontier_verified": {
+    "feasible_width": 0.016845703125,
+    "infeasible_width": 0.01690673828125,
+    "minimum_set_size": 4,
+    "all_minimum_sets_enumerated": true
+  },
+  "joint_scenarios_verified": [
+    {
+      "scenario": "all_education",
+      "mode": "fixed",
+      "lower": 25,
+      "upper": 25
+    },
+    {
+      "scenario": "all_education",
+      "mode": "continuous",
+      "lower": 25,
+      "upper": 25
+    },
+    {
+      "scenario": "all_travel",
+      "mode": "fixed",
+      "lower": 24,
+      "upper": 24
+    },
+    {
+      "scenario": "all_travel",
+      "mode": "continuous",
+      "lower": 25,
+      "upper": 25
+    },
+    {
+      "scenario": "all_education_and_travel",
+      "mode": "fixed",
+      "lower": 9,
+      "upper": 9
+    },
+    {
+      "scenario": "all_education_and_travel",
+      "mode": "continuous",
+      "lower": 22,
+      "upper": 22
+    },
+    {
+      "scenario": "phoenix_education_and_travel",
+      "mode": "fixed",
+      "lower": 25,
+      "upper": 25
+    },
+    {
+      "scenario": "phoenix_education_and_travel",
+      "mode": "continuous",
+      "lower": 25,
+      "upper": 25
+    },
+    {
+      "scenario": "both_plus_homicide_rate",
+      "mode": "fixed",
+      "lower": 1,
+      "upper": 1
+    },
+    {
+      "scenario": "both_plus_homicide_rate",
+      "mode": "continuous",
+      "lower": 3,
+      "upper": 4
+    },
+    {
+      "scenario": "both_plus_pm25",
+      "mode": "fixed",
+      "lower": 7,
+      "upper": 7
+    },
+    {
+      "scenario": "both_plus_pm25",
+      "mode": "continuous",
+      "lower": 21,
+      "upper": 21
+    },
+    {
+      "scenario": "both_plus_cost_living_index",
+      "mode": "fixed",
+      "lower": 9,
+      "upper": 9
+    },
+    {
+      "scenario": "both_plus_cost_living_index",
+      "mode": "continuous",
+      "lower": 22,
+      "upper": 22
+    },
+    {
+      "scenario": "both_plus_price_income_ratio",
+      "mode": "fixed",
+      "lower": 9,
+      "upper": 9
+    },
+    {
+      "scenario": "both_plus_price_income_ratio",
+      "mode": "continuous",
+      "lower": 22,
+      "upper": 22
+    },
+    {
+      "scenario": "both_plus_research_he_density",
+      "mode": "fixed",
+      "lower": 1,
+      "upper": 1
+    },
+    {
+      "scenario": "both_plus_research_he_density",
+      "mode": "continuous",
+      "lower": 1,
+      "upper": 1
+    },
+    {
+      "scenario": "both_plus_public_transport_density",
+      "mode": "fixed",
+      "lower": 1,
+      "upper": 1
+    },
+    {
+      "scenario": "both_plus_public_transport_density",
+      "mode": "continuous",
+      "lower": 1,
+      "upper": 1
+    },
+    {
+      "scenario": "both_plus_fixed_broadband_mbps",
+      "mode": "fixed",
+      "lower": 8,
+      "upper": 8
+    },
+    {
+      "scenario": "both_plus_fixed_broadband_mbps",
+      "mode": "continuous",
+      "lower": 21,
+      "upper": 21
+    },
+    {
+      "scenario": "both_plus_public_pool_density",
+      "mode": "fixed",
+      "lower": 1,
+      "upper": 1
+    },
+    {
+      "scenario": "both_plus_public_pool_density",
+      "mode": "continuous",
+      "lower": 1,
+      "upper": 1
+    }
+  ],
+  "enumerated_candidate_sets": 23,
+  "certified_minimum": 4,
+  "successful_sets": [
+    [
+      1,
+      2,
+      22,
+      23
+    ],
+    [
+      1,
+      7,
+      22,
+      23
+    ]
+  ],
+  "precision_checks": [
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.0,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.1075240078170324
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.001,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.07289089883793755
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.001953125,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.039845739214016684
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.0029296875,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.005952127825095021
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.0030517578125,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.0017128763542085732
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.00311279296875,
+      "status": "impossible_four_set",
+      "strict_gap": 0.00020348001947745678
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.003173828125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.0012634748903780184
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.00341796875,
+      "status": "impossible_four_set",
+      "strict_gap": 0.0055042347645783765
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.00390625,
+      "status": "impossible_four_set",
+      "strict_gap": 0.004862191996205231
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.005,
+      "status": "impossible_four_set",
+      "strict_gap": 0.023267919274803615
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.0078125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.07071476090754863
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.01,
+      "status": "impossible_four_set",
+      "strict_gap": 0.10773520626520125
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.015625,
+      "status": "impossible_four_set",
+      "strict_gap": 0.20340238435460473
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.02,
+      "status": "impossible_four_set",
+      "strict_gap": 0.2782801097218687
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.03125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.47271240446265833
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.05,
+      "status": "impossible_four_set",
+      "strict_gap": 0.8028170424765858
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.0625,
+      "status": "impossible_four_set",
+      "strict_gap": 1.027088548588707
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.1,
+      "status": "impossible_four_set",
+      "strict_gap": 0.2983412736512075
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.757957294122699
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.2,
+      "status": "impossible_four_set",
+      "strict_gap": 2.2222347187239007
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.25,
+      "status": "impossible_four_set",
+      "strict_gap": 3.268617485283434
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 0.5,
+      "status": "impossible_four_set",
+      "strict_gap": 14.241161457663914
+    },
+    {
+      "keep": [
+        1,
+        2,
+        22,
+        23
+      ],
+      "delta": 1.0,
+      "status": "impossible_four_set",
+      "strict_gap": 32.5067813720625
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.0,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.6426060372229251
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.001,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.6050028114280879
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.005,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.4540325573132761
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.01,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.26406735388314745
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.015625,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.048696614473572535
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.0166015625,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.01112712528493016
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.016845703125,
+      "status": "four_set_feasible",
+      "leaves": 1,
+      "minimum_gap_lower": 0.0017264993895560559
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.01690673828125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.0003120859964270799
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.0169677734375,
+      "status": "impossible_four_set",
+      "strict_gap": 0.0014875379144275308
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.01708984375,
+      "status": "impossible_four_set",
+      "strict_gap": 0.0038388008428586508
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.017578125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.013248641447424492
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.01953125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.050964686585963634
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.02,
+      "status": "impossible_four_set",
+      "strict_gap": 0.060034810346342976
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.0234375,
+      "status": "impossible_four_set",
+      "strict_gap": 0.12676556904718386
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.03125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.279848594755371
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.05,
+      "status": "impossible_four_set",
+      "strict_gap": 0.6553777361069685
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.0625,
+      "status": "impossible_four_set",
+      "strict_gap": 0.912176153421633
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.1,
+      "status": "impossible_four_set",
+      "strict_gap": 0.15139502007690728
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.125,
+      "status": "impossible_four_set",
+      "strict_gap": 0.682418641939231
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.2,
+      "status": "impossible_four_set",
+      "strict_gap": 2.403919046067327
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.25,
+      "status": "impossible_four_set",
+      "strict_gap": 3.6594579010728947
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 0.5,
+      "status": "impossible_four_set",
+      "strict_gap": 14.241161457663914
+    },
+    {
+      "keep": [
+        1,
+        7,
+        22,
+        23
+      ],
+      "delta": 1.0,
+      "status": "impossible_four_set",
+      "strict_gap": 32.5067813720625
+    }
+  ],
+  "scope": "Independent utility boxes, shared hypothetical revelations, prescribed residual widths; no new observations. Numerical enclosures, not formal directed interval arithmetic."
+}

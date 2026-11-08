@@ -1,0 +1,203 @@
+{
+  "passed": true,
+  "independent_method": "Longdouble from saved250bounds; independent subset enumeration; no model imports",
+  "input_hash_verified": true,
+  "baseline_v108_matches": true,
+  "checked_evaluated_bundles": 535,
+  "negative_witnesses": 331,
+  "certified_bundles": 204,
+  "continuous_certificate_leaves": 418,
+  "all25city_continuous_minimalities_verified": true,
+  "independently_enumerated_fixed_bundles": 475,
+  "maximum_numerical_discrepancy": 3.5196129864745185e-14,
+  "changed_input_cells_vs_V102": [
+    {
+      "city": "Mexico City",
+      "indicator": "travel"
+    }
+  ],
+  "changed_minimum_rows": [],
+  "prior_bundle_count": 535,
+  "added_bundle_count": 0,
+  "removed_bundle_count": 0,
+  "shared_status_changes": [],
+  "previous_continuous_certificate_leaves": 412,
+  "changed_shared_point_margin_bundles": 29,
+  "shared_point_margin_changes": [
+    {
+      "city": "Mexico City",
+      "indicators": "",
+      "minimum_margin_change": -0.5903001057539826,
+      "maximum_margin_change": -0.5163399058692576
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "homicide_rate",
+      "minimum_margin_change": -0.5132532533295724,
+      "maximum_margin_change": -0.423959944323349
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "pm25",
+      "minimum_margin_change": -0.5132532533295724,
+      "maximum_margin_change": -0.423959944323349
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "upper_secondary_ptr",
+      "minimum_margin_change": -0.5132532533295724,
+      "maximum_margin_change": -0.423959944323349
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "research_he_density",
+      "minimum_margin_change": -0.5132532533295724,
+      "maximum_margin_change": -0.423959944323349
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "public_transport_density",
+      "minimum_margin_change": -0.5573218770024996,
+      "maximum_margin_change": -0.423959944323349
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "travel",
+      "minimum_margin_change": 0.513419878367115,
+      "maximum_margin_change": 0.55879593418189
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "public_pool_density",
+      "minimum_margin_change": -0.5573218770024996,
+      "maximum_margin_change": -0.423959944323349
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "homicide_rate|pm25",
+      "minimum_margin_change": -0.5425172182154814,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "homicide_rate|upper_secondary_ptr",
+      "minimum_margin_change": -0.5425172182154814,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "homicide_rate|research_he_density",
+      "minimum_margin_change": -0.5425172182154814,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "homicide_rate|public_transport_density",
+      "minimum_margin_change": -0.5134283972993569,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "homicide_rate|travel",
+      "minimum_margin_change": 0.3683728897484735,
+      "maximum_margin_change": 0.41177379807874054
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "homicide_rate|public_pool_density",
+      "minimum_margin_change": -0.5134283972993569,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "pm25|upper_secondary_ptr",
+      "minimum_margin_change": -0.5425172182154814,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "pm25|research_he_density",
+      "minimum_margin_change": -0.5425172182154814,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "pm25|public_transport_density",
+      "minimum_margin_change": -0.5134283972993569,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "pm25|travel",
+      "minimum_margin_change": 0.3683728897484735,
+      "maximum_margin_change": 0.41177379807874054
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "pm25|public_pool_density",
+      "minimum_margin_change": -0.5134283972993569,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "upper_secondary_ptr|research_he_density",
+      "minimum_margin_change": -0.5425172182154814,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "upper_secondary_ptr|public_transport_density",
+      "minimum_margin_change": -0.5134283972993569,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "upper_secondary_ptr|travel",
+      "minimum_margin_change": 0.3683728897484735,
+      "maximum_margin_change": 0.41177379807874054
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "upper_secondary_ptr|public_pool_density",
+      "minimum_margin_change": -0.5134283972993569,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "research_he_density|public_transport_density",
+      "minimum_margin_change": -0.5134283972993569,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "research_he_density|travel",
+      "minimum_margin_change": 0.3683728897484735,
+      "maximum_margin_change": 0.41177379807874054
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "research_he_density|public_pool_density",
+      "minimum_margin_change": -0.5134283972993569,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "public_transport_density|travel",
+      "minimum_margin_change": 0.3683728897484735,
+      "maximum_margin_change": 0.5116962734975059
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "public_transport_density|public_pool_density",
+      "minimum_margin_change": -0.5361430071941122,
+      "maximum_margin_change": -0.4184129906715399
+    },
+    {
+      "city": "Mexico City",
+      "indicators": "travel|public_pool_density",
+      "minimum_margin_change": 0.3683728897484735,
+      "maximum_margin_change": 0.5116962734975059
+    }
+  ],
+  "scope": "Upper-endpoint hypothetical exact revelations only; neither observed data nor guaranteed real acquisition benefits or necessary performance champions."
+}

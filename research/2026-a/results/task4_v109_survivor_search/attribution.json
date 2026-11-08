@@ -1,0 +1,79 @@
+{
+  "scenarios": [
+    {
+      "model_version": "V102",
+      "input_bounds_sha256": "681260d6449888801aa9168356813aef684003f3e05c61db2dffb5b6b7070128",
+      "canonical_upper": 5,
+      "minimum": 4,
+      "sets": [
+        {
+          "cities": [
+            "Phoenix",
+            "Copenhagen",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.00921630859375,
+          "infeasible_width": 0.00927734375
+        }
+      ]
+    },
+    {
+      "model_version": "V107",
+      "input_bounds_sha256": "246e8bb84b0a358b03c058afe96cbc43b980ee1a5c51209712945d3511aa3b84",
+      "canonical_upper": 4,
+      "minimum": 4,
+      "sets": [
+        {
+          "cities": [
+            "Phoenix",
+            "New York",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.00225830078125,
+          "infeasible_width": 0.0023193359375
+        },
+        {
+          "cities": [
+            "Phoenix",
+            "Copenhagen",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.016845703125,
+          "infeasible_width": 0.01690673828125
+        }
+      ]
+    },
+    {
+      "model_version": "V108",
+      "input_bounds_sha256": "01f728432522b9e3f8a5768bf1d782a8c08fe60a0e352ce6d207bb6b663ae131",
+      "canonical_upper": 4,
+      "minimum": 4,
+      "sets": [
+        {
+          "cities": [
+            "Phoenix",
+            "New York",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.0030517578125,
+          "infeasible_width": 0.00311279296875
+        },
+        {
+          "cities": [
+            "Phoenix",
+            "Copenhagen",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.016845703125,
+          "infeasible_width": 0.01690673828125
+        }
+      ]
+    }
+  ],
+  "scope": "Only Mexico travel changes between these frozen inputs. V107 changes period and optional school-stage membership together; V108 adds sampling uncertainty. Wider hypothetical revelation choices do not imply improved real observations."
+}

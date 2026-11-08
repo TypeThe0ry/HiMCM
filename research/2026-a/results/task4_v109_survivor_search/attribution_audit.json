@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "scenarios": [
+    {
+      "version": "V102",
+      "input_hash_verified": true,
+      "unavoidable_cities": [
+        "Phoenix",
+        "Singapore",
+        "Jakarta"
+      ],
+      "minimum": 4,
+      "three_set_rejected": true,
+      "four_sets_enumerated": 22,
+      "successful_sets": [
+        {
+          "cities": [
+            "Phoenix",
+            "Copenhagen",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.00921630859375,
+          "infeasible_width": 0.00927734375,
+          "infeasible_outsiders": [
+            "Mexico City"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "V107",
+      "input_hash_verified": true,
+      "unavoidable_cities": [
+        "Phoenix",
+        "Singapore",
+        "Jakarta"
+      ],
+      "minimum": 4,
+      "three_set_rejected": true,
+      "four_sets_enumerated": 22,
+      "successful_sets": [
+        {
+          "cities": [
+            "Phoenix",
+            "New York",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.00225830078125,
+          "infeasible_width": 0.0023193359375,
+          "infeasible_outsiders": [
+            "Mexico City"
+          ]
+        },
+        {
+          "cities": [
+            "Phoenix",
+            "Copenhagen",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.016845703125,
+          "infeasible_width": 0.01690673828125,
+          "infeasible_outsiders": [
+            "New York"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "V108",
+      "input_hash_verified": true,
+      "unavoidable_cities": [
+        "Phoenix",
+        "Singapore",
+        "Jakarta"
+      ],
+      "minimum": 4,
+      "three_set_rejected": true,
+      "four_sets_enumerated": 22,
+      "successful_sets": [
+        {
+          "cities": [
+            "Phoenix",
+            "New York",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.0030517578125,
+          "infeasible_width": 0.00311279296875,
+          "infeasible_outsiders": [
+            "Tokyo"
+          ]
+        },
+        {
+          "cities": [
+            "Phoenix",
+            "Copenhagen",
+            "Singapore",
+            "Jakarta"
+          ],
+          "feasible_width": 0.016845703125,
+          "infeasible_width": 0.01690673828125,
+          "infeasible_outsiders": [
+            "New York"
+          ]
+        }
+      ]
+    }
+  ],
+  "input_attribution_sha256": "78fe98781557283144cf86e9e9085dbb244ae65a1a4eca89d2af32c170626762",
+  "method": "Independent longdouble TOPSIS comparison quadratics, exhaustive root-partition feasibility and mandatory-plus-four-set enumeration; finite-width completion independently reconstructed. No project algorithm imports.",
+  "qualification": "Numerical certificates, not directed-rounding formal arithmetic. Wider hypothetical revelation choices are not real data improvements; V107 combines period and membership changes and does not isolate either alone."
+}
