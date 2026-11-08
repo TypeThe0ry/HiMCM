@@ -1,0 +1,720 @@
+
+<!DOCTYPE html>
+<html lang="EN">
+
+	<head>
+		<title>Search for Public Schools</title>
+		<meta charset="UTF-8">
+		<meta NAME="description" CONTENT="The CCD School Locator was created to enable the public to find the correct name, address, telephone number, NCES ID number, urbanicity (rural, large city, etc.), and other student and teacher information for public schools as reported to NCES by state education officials in each state. ">
+		<meta name="keywords" content="Common Core of Data, CCD, Education, Elementary, Secondary, education statistics, address, telephone numbers, NCES ID, schools, locator, names and addresses">
+
+		
+		<link rel="stylesheet" type="text/css" href="/css/locatorstyles.css">
+	
+		
+		<link rel="stylesheet" type="text/css" href="/inc/schoolsearchtools/schoolSearchToolStyles.css">
+
+		
+
+	<script language='JavaScript'>
+
+
+		function phonechange()
+		{
+			if (document.SchlSearchForm.PhoneAreaCode.value.length > 2)
+			{
+				window.document.SchlSearchForm.Phone.focus();
+			}
+		}
+		
+		
+		function AboutDataPopup()
+		{
+			window.open('/ccd/commonfiles/aboutdata.asp','AboutDataPopup','width=380,height=390, screenX=0,screenY=0,top=0,left=0,scrollbars=yes,resizable=no');
+		}
+
+		function HelpPopup(pagetype)
+		{
+			window.open('help.asp?page=' + pagetype,'HelpPopup','width=380,height=390, screenX=0,screenY=0,top=0,left=0,scrollbars=yes,resizable=no');
+		}
+
+		function FederalProgInfo()
+		{
+			window.open('/ccd/commonfiles/aboutdata.asp','FedProgInfoPopup','width=380,height=390, screenX=0,screenY=0,top=0,left=0,scrollbars=yes,resizable=no');
+		}
+
+		function Browse(PopupType)
+		{
+			var that_number = window.document.SchlSearchForm.State.selectedIndex
+			State = window.document.SchlSearchForm.State.options[that_number].value
+			StateName = window.document.SchlSearchForm.State.options[that_number].text
+		
+			if (State == '')
+			{
+				alert('SEARCH TIP:\nPlease select a state, before you browse for a ' + PopupType + '.');
+				window.document.SchlSearchForm.State.focus();
+			}
+			else{
+				
+				window.open('browse_popup.asp?STABBR=' + State + '&STATENAME=' + StateName + '&PopupType=' + PopupType,'BrowsePopup','width=330,height=350, screenX=0,screenY=0,top=0,left=0,scrollbars=yes,resizable=no');
+			}
+		}
+
+
+		function formvalidation(thisform)
+		{
+
+			if ((document.SchlSearchForm.City.value == '') && (document.SchlSearchForm.Zip.value == '') && (document.SchlSearchForm.InstName.value == '') && (document.SchlSearchForm.SchoolID.value == '') && (document.SchlSearchForm.Address.value == '') && (window.document.SchlSearchForm.State.options[window.document.SchlSearchForm.State.selectedIndex].value == '') && (document.SchlSearchForm.County.value == '') && (document.SchlSearchForm.Phone.value == '') && (document.SchlSearchForm.PhoneAreaCode.value == '') && (document.SchlSearchForm.DistrictName.value == '') && (document.SchlSearchForm.DistrictID.value == ''))
+			{	
+				alert("SEARCH TIP:\nThis search tool requires at least one of the following \nfields to begin searching for public schools.\n\n  -  School Name\n  -  NCES School ID\n  -  Street Address\n  -  City\n  -  State\n  -  Zip Code\n  -  County\n  -  Phone#\n  -  District Name\n  -  District ID\n")
+				return false;
+			}
+			else
+			{
+			
+				if (((document.SchlSearchForm.Zip.value.length < 5) && (document.SchlSearchForm.Zip.value != '')) || !(document.SchlSearchForm.Zip.value >= 0))
+				{				
+					alert("SEARCH TIP:\nThis search tool requires a Zip Code to be a 5 digit number.")
+					window.document.SchlSearchForm.Zip.focus();
+					return false;
+				}
+				else if (((document.SchlSearchForm.PhoneAreaCode.value.length < 3) && (document.SchlSearchForm.PhoneAreaCode.value != '')) || !(document.SchlSearchForm.PhoneAreaCode.value >= 0))
+				{
+					alert("SEARCH TIP:\nThis search tool requires a Phone Area Code to be a 3 digit number.")
+					window.document.SchlSearchForm.PhoneAreaCode.focus();
+					return false;
+				}
+				else if (((document.SchlSearchForm.Phone.value.length < 7) && (document.SchlSearchForm.Phone.value != '')) || !(document.SchlSearchForm.Phone.value >= 0))
+				{
+					alert("SEARCH TIP:\nThis search tool requires a Phone Number to be a 7 digit number.")
+					window.document.SchlSearchForm.Phone.focus();
+					return false;
+				}
+				else if ((document.SchlSearchForm.Zip.value != '') && (window.document.SchlSearchForm.Miles.options[window.document.SchlSearchForm.Miles.selectedIndex].value != '') && (document.SchlSearchForm.City.value == '') && (document.SchlSearchForm.InstName.value == '') && (document.SchlSearchForm.SchoolID.value == '') && (document.SchlSearchForm.Address.value == '') && (window.document.SchlSearchForm.State.options[window.document.SchlSearchForm.State.selectedIndex].value == '') && (document.SchlSearchForm.County.value == '') && (document.SchlSearchForm.Phone.value == '') && (document.SchlSearchForm.PhoneAreaCode.value == '') && (document.SchlSearchForm.DistrictName.value == '') && (document.SchlSearchForm.DistrictID.value == ''))
+				{
+					temp = confirm("SEARCH TIP:\nIt is recomended that an additional search field, like State or City, be entered when searching Distance from Zip Code.\nThis will help improve the speed in which results will be returned. \n\n  -  To enter an additional search field, click CANCEL.\n  -  To continue search without an additional field, click OK.");
+					
+					if (temp == 1)
+					{
+						return true;
+					}
+					else
+					{
+						return false;
+					}
+				}
+				else if ((window.document.SchlSearchForm.State.options[window.document.SchlSearchForm.State.selectedIndex].value != '') && (document.SchlSearchForm.Zip.value == '') && (document.SchlSearchForm.City.value == '') && (document.SchlSearchForm.InstName.value == '') && (document.SchlSearchForm.SchoolID.value == '') && (document.SchlSearchForm.Address.value == '') && (document.SchlSearchForm.County.value == '') && (document.SchlSearchForm.Phone.value == '') && (document.SchlSearchForm.PhoneAreaCode.value == '') && (document.SchlSearchForm.DistrictName.value == '') && (document.SchlSearchForm.DistrictID.value == ''))
+				{
+					temp = confirm("SEARCH TIP:\nIt is recomended that an additional search field, like City, Zip, or County, be entered when searching by State only.\nThis will help improve the speed in which results will be returned, and prevent unwanted results.\n\n  -  To enter an additional search field, click CANCEL.\n  -  To continue search by State only click OK.");
+					
+					if (temp == 1)
+					{
+						return true;
+					}
+					else
+					{
+						return false;
+					}
+				}
+				else
+				{
+					return true;
+				}
+			}
+		}
+
+		function GreaterThan()
+		{
+			if (MaxValue >= MinValue)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		
+		function GetRadioValues()
+		{
+			for (i=0; i<window.document.SchlSearchForm.HiGrade.length; i++)
+			{
+				if(window.document.SchlSearchForm.HiGrade[i].checked)
+				{
+					MaxValue = Math.round(window.document.SchlSearchForm.HiGrade[i].value);
+				}
+				if(window.document.SchlSearchForm.IncGrade[i].checked)
+				{
+					IncludesValue = Math.round(window.document.SchlSearchForm.IncGrade[i].value);
+				}
+				if(window.document.SchlSearchForm.LoGrade[i].checked)
+				{
+					MinValue = Math.round(window.document.SchlSearchForm.LoGrade[i].value);
+				}		
+			}
+		}
+		
+		
+		//Function for the Grade Span Radio Buttons
+		
+		MinValue = 0;
+		MaxValue = 0;
+		IncludesValue = 0;
+		
+		function ChangeGrade(temp1,NewValueName)
+		{
+			GetRadioValues();
+		
+			if (((MinValue >= 0) || ((MaxValue <= 13) && (MaxValue >= 0))) && (temp1 == 'Inc'))
+			{
+				joe = confirm('SEARCH TIP:\nYou cannot set the Includes Grade value while the High or Low Grade values are not set to All.\n\n - To set High and Low Grade to All, and Includes Grade to ' + NewValueName + ', click OK.\n - To leave this form unchanged, click Cancel.');
+				if (joe == 1)
+				{
+					window.document.SchlSearchForm.LoGrade[0].checked = 1;
+					window.document.SchlSearchForm.HiGrade[0].checked = 1;
+					GetRadioValues();
+				}
+				else
+				{
+					window.document.SchlSearchForm.IncGrade[0].checked = 1;
+					return;
+				}
+			}
+		
+			if ((IncludesValue >= 0) && (temp1 == 'Lo'))
+			{
+				joe = confirm('SEARCH TIP:\nYou cannot set the Low Grade value while the Includes Grade value is not set to All.\n\n - To set Includes Grade to All, and Low Grade to ' + NewValueName + ', click OK.\n - To leave this form unchanged, click Cancel.');
+				if (joe == 1)
+				{
+					window.document.SchlSearchForm.IncGrade[0].checked = 1;
+					GetRadioValues();
+				}
+				else
+				{
+					window.document.SchlSearchForm.LoGrade[0].checked = 1;
+					window.document.SchlSearchForm.HiGrade[0].checked = 1;
+					return;
+				}
+			}
+			if ((IncludesValue >= 0) && (temp1 == 'Hi'))
+			{
+				joe = confirm('SEARCH TIP:\nYou cannot set the High Grade value while the Includes Grade value is not set to All.\n\n - To set Includes Grade to All, and High Grade to ' + NewValueName + ', click OK.\n - To leave this form unchanged, click Cancel.');
+				if (joe == 1)
+				{
+					window.document.SchlSearchForm.IncGrade[0].checked = 1;
+					GetRadioValues();
+				}
+				else
+				{
+					window.document.SchlSearchForm.LoGrade[0].checked = 1;
+					window.document.SchlSearchForm.HiGrade[0].checked = 1;
+					return;
+				}
+			}
+		
+			if (MaxValue == -1) { MaxValue = 13 }
+			if (MinValue == -1) { MinValue = 0 }
+		
+			if (navigator.appName == 'Microsoft Internet Explorer')
+			{
+				for (i=0; i<14; i++) 
+				{
+					var thestyle_a = eval('window.document.all.Bozo'+ i +'.style');
+			
+					if (MaxValue >= MinValue)
+					{
+						thestyle_a.backgroundColor='#88ccFF';
+						thestyle_a.color='#55aaee';
+					}
+					else
+					{
+						thestyle_a.backgroundColor='#ffffff';
+						thestyle_a.color='#000000';
+					}
+			
+			
+					if (i >= MinValue && i<(MaxValue+1))
+					{
+						thestyle_a.backgroundColor='#FFFFFF';
+						thestyle_a.color='#000000';
+					}
+					
+					if ((i == IncludesValue) && (IncludesValue > -1))
+					{
+						thestyle_a.color='#000000';
+						thestyle_a.backgroundColor='#3388FF';
+						thestyle_a.backgroundColor='#AAF0D2';
+					}
+				}
+			}
+		
+		}
+		
+	</script>
+
+	</head>
+
+
+	<body topmargin="3" bgcolor="#ffffff" OnLoad="ChangeGrade();">
+		<!-- Start Header -->
+
+<div class="headContents">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/IESfavicon_32px.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="/images/favicons/IESfavicon_128px.png">
+	<link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/IESfavicon_152px.png">
+	<link rel="icon" type="image/png" sizes="167x167" href="/images/favicons/IESfavicon_167px.png">
+	<link rel="icon" type="image/png" sizes="180x180" href="/images/favicons/IESfavicon_180px.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/IESfavicon_192px.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="/images/favicons/IESfavicon_196px.png">
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="/css/IES_Core_0004.css" rel="stylesheet" type="text/css" />
+	<link href="/css/IES_Mobile_0004.css" rel="stylesheet" type="text/css" />
+</div>
+
+	<!-- Google Tag Manager (GTM, the new way to manage tags and analytics) -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KLQ8LQNJ');
+	</script>
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLQ8LQNJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<script type="text/javascript" src="/js/customevents.js"></script>
+
+<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+	var $$i = jQuery.noConflict(true);
+	//]]>
+</script>
+<script type="text/javascript" src="/js/hfsNav.js?v=02"></script>
+<script type="text/javascript" src="/js/nav_0005.js"></script>
+<script type="text/javascript" src="/js/importBlogPosts.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+<link href="https://ies.ed.gov/sites/default/files/assets/legacy-override-nces.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ies.ed.gov/sites/default/files/assets/ies-header-footer-elements.js"></script>
+
+<div class="nces">
+
+<ies-header></ies-header>
+
+<!-- End Header -->
+
+<!-- Start Body -->
+
+
+		<div class="sfsContent">
+			
+			<form action="school_list.asp" name="SchlSearchForm" onsubmit="return formvalidation(this)">
+				<input type="hidden" name="Search" Value="1">
+
+				<div class="formContainer blue">
+					<!-- Header -->
+					<div class="formHead">
+						<a href="/ccd/schoolsearch/" class="formTitle"><h1>Search <thin>for</thin> Public Schools</h1></a>
+						
+						<a href="https://ies.ed.gov/" class="formLogo" aria-label="IES Logo"></a>
+					</div>
+	
+					<!-- Navigation -->
+					<div class="formNav">
+						<span>School Details</span>
+						
+						<div class="formNavLinks">
+							<a href="/ccd/schoolmap/">School &amp; District Navigator</a>
+							<a href="../districtsearch/">District Search</a>
+							<a href="JavaScript:AboutDataPopup();">Data Notes/Grant IDs</a>
+							<a href="JavaScript:HelpPopup('page1');">Help</a>
+						</div>
+					</div>
+	
+					<!-- Form -->
+					<div class="formBody">
+						<div class="formBodyMain">
+							<div class="formSection green">
+
+								
+								<div class="formCol">
+									<div class="formRow">
+										<span class="formCol">
+											<label for="InstName">School Name:</label>
+											<input type="text" name="InstName" id="InstName" >
+										</span>
+										<span class="formCol">
+											<label for="SchoolID">NCES School ID:</label>
+											<input type="text" name="SchoolID" id="SchoolID" >
+										</span>
+										
+									</div>
+								</div>
+
+								
+								<div class="formCol">
+									<div class="formRow">
+										<span class="formCol">
+											<label for="Address">Street Address:</label>
+											<input type="text" name="Address" id="Address" autocomplete="off"  >
+										</span>
+										<span class="formCol">
+											<label for="City">City ( <a href="javascript:Browse('city')"> Browse</a> ):</label>
+											<input type="text" name="City" id="City" >
+										</span>
+									</div>
+								</div>
+								
+								
+								<div class="formCol">
+									<div class="formRow">
+										<span class="formCol" style="flex-grow: 0;">
+											<label for="State">State:</label>
+											<select  name="State" id="State">
+											<option VALUE=''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Any State -</option>
+											<option VALUE= "01" >Alabama</option>
+											<option VALUE= "02" >Alaska</option>
+											<option VALUE= "04" >Arizona</option>
+											<option VALUE= "05" >Arkansas</option>
+											<option VALUE= "06" >California</option>
+											<option VALUE= "08" >Colorado</option>
+											<option VALUE= "09" >Connecticut</option>
+											<option VALUE= "10" >Delaware</option>
+											<option VALUE= "11" >District&nbsp;of&nbsp;Columbia</option>
+											<option VALUE= "12" >Florida</option>
+											<option VALUE= "13" >Georgia</option>
+											<option VALUE= "15" >Hawaii</option>
+											<option VALUE= "16" >Idaho</option>
+											<option VALUE= "17" >Illinois</option>
+											<option VALUE= "18" >Indiana</option>
+											<option VALUE= "19" >Iowa</option>
+											<option VALUE= "20" >Kansas</option>
+											<option VALUE= "21" >Kentucky</option>
+											<option VALUE= "22" >Louisiana</option>
+											<option VALUE= "23" >Maine</option>
+											<option VALUE= "24" >Maryland</option>
+											<option VALUE= "25" >Massachusetts</option>
+											<option VALUE= "26" >Michigan</option>
+											<option VALUE= "27" >Minnesota</option>
+											<option VALUE= "28" >Mississippi</option>
+											<option VALUE= "29" >Missouri</option>
+											<option VALUE= "30" >Montana</option>
+											<option VALUE= "31" >Nebraska</option>
+											<option VALUE= "32" >Nevada</option>
+											<option VALUE= "33" >New&nbsp;Hampshire</option>
+											<option VALUE= "34" >New&nbsp;Jersey</option>
+											<option VALUE= "35" >New&nbsp;Mexico</option>
+											<option VALUE= "36" >New&nbsp;York</option>
+											<option VALUE= "37" >North&nbsp;Carolina</option>
+											<option VALUE= "38" >North&nbsp;Dakota</option>
+											<option VALUE= "39" >Ohio</option>
+											<option VALUE= "40" >Oklahoma</option>
+											<option VALUE= "41" >Oregon</option>
+											<option VALUE= "42" >Pennsylvania</option>
+											<option VALUE= "44" >Rhode&nbsp;Island</option>
+											<option VALUE= "45" >South&nbsp;Carolina</option>
+											<option VALUE= "46" >South&nbsp;Dakota</option>
+											<option VALUE= "47" >Tennessee</option>
+											<option VALUE= "48" >Texas</option>
+											<option VALUE= "49" >Utah</option>
+											<option VALUE= "50" >Vermont</option>
+											<option VALUE= "51" >Virginia</option>
+											<option VALUE= "53" >Washington</option>
+											<option VALUE= "54" >West&nbsp;Virginia</option>
+											<option VALUE= "55" >Wisconsin</option>
+											<option VALUE= "56" >Wyoming</option>
+											<option VALUE=''>&nbsp;</option>
+											<option VALUE= "60" >American&nbsp;Samoa</option>
+											<option VALUE= "59" >Bureau of Indian Education</option>
+											<option VALUE= "63" >Department&nbsp;of&nbsp;Defense</option>
+											<option VALUE= "66" >Guam</option>
+											<option VALUE= "69" >Northern&nbsp;Mariana</option>
+											<option VALUE= "72" >Puerto&nbsp;Rico</option>
+											<option VALUE= "78" >Virgin&nbsp;Islands</option>
+											</select>
+										</span>
+										
+										<div class="formRow" style="gap: 0.5rem;">
+											<span class="formCol">
+												<label for="Zip">Zip:</label>
+												<input type="text" name="Zip" id="Zip" maxlength="5" >
+											</span>
+											
+											<span class="formCol">
+												<label for="Miles">Miles from Zip</label>
+												<select name="Miles" id="Miles">
+													<option selected> </option>
+													<option >1</option>
+													<option >5</option>
+													<option >10</option>
+													<option >15</option>
+													<option >20</option>
+													<option >30</option>
+													<option >50</option>
+													<option >100</option>
+													<option >500</option>
+												</select>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								
+								<div class="formCol">
+									<div class="formRow">
+										<span class="formCol">
+											<label for="County">County&nbsp;(
+												<a href="JavaScript:Browse('county')">Browse</a>&nbsp;):
+											</label>
+											<input type="text" name="County" id="County" >
+										</span>
+					
+										<span class="formCol">
+											<label for="Phone">Phone #:</label>
+											<span>
+												<input type="text" OnKeyUp="phonechange();" name="PhoneAreaCode" id="PhoneAreaCode" aria-label="PhoneAreaCode" size="3" maxlength="3" > - <input type="text" name="Phone" id="Phone" maxlength="7" >
+											</span>
+										</span>
+									</div>
+								</div>
+
+								
+								<div class="formCol">
+									<div class="formRow">
+										<div class="formCol">
+											<label for="DistrictName">District Name:</label>
+											<input type="text" name="DistrictName" id="DistrictName" >
+										</div>
+										<div class="formCol">
+											<label for="DistrictID">NCES District ID:</label>
+											<input type="text" name="DistrictID" id="DistrictID" >
+										</div>
+									</div>
+								</div>
+							</div>				
+							
+							<div class="formDivider">Additional Characteristics</div>
+							
+							<div class="formSection yellow">
+								<div class="formCol">
+									<span class="label">School Description:</span>
+									<div class="formRow" style="grid-template-columns: 1fr">
+										<style>
+    #dt-box {
+        padding: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 0.33rem;
+        row-gap: 0.66rem;
+
+        label {
+            display: inline-flex;
+            align-items: flex-end;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid var(--darker-color);
+            color: var(--darker-color);
+            border-radius: 0rem;
+            user-select: none;
+
+            &::before {
+                    content: "+";
+                    margin-right: 1ch;
+            }
+
+            &>input[type="checkbox"] {
+                display: none;
+            }
+
+            &:has(input:checked) {
+                background-color: var(--base-color);
+                color: white;
+
+                &::before {
+                    content: "x";
+                    margin-right: 1ch;
+                }
+            }
+        }
+    }
+</style>
+
+<div id="dt-box">
+
+        <label for='dt-Regular'>Regular
+        <input type="checkbox" name="SchoolType" value="1" id='dt-Regular' aria-label='dt-Regular' checked></label>
+
+        <label for='dt-SpecialEducation'>Special Education
+        <input type="checkbox" name="SchoolType" value="2" id='dt-SpecialEducation' aria-label='dt-SpecialEducation' checked></label>
+
+        <label for='dt-Vocational'>Vocational
+        <input type="checkbox" name="SchoolType" value="3" id='dt-Vocational' aria-label='dt-Vocational' checked></label>
+
+        <label for='dt-Other/Alternative'>Other/Alternative
+        <input type="checkbox" name="SchoolType" value="4" id='dt-Other/Alternative' aria-label='dt-Other/Alternative' checked></label>
+   
+</div>
+
+<script>
+    function orderDts() {
+        const container = document.getElementById('dt-box');
+        const labels = Array.from(container.getElementsByTagName('label'));
+
+        labels.sort((a, b) => {
+            const aChecked = a.querySelector('input[type="checkbox"]:checked');
+            const bChecked = b.querySelector('input[type="checkbox"]:checked');
+
+            if (aChecked && !bChecked) return -1;
+            if (!aChecked && bChecked) return 1;
+
+            return 0
+        })
+
+        labels.forEach(label => container.appendChild(label));
+    }
+    document.getElementById('dt-box').addEventListener('change', orderDts);
+</script>
+									</div>
+								</div>
+								<div class="formRow">
+									<div class="formCol" style="grid-template-columns: 1fr">
+										<span class="label">Specific School Type:</span>
+										<div class="formRow">
+											<span class="formRow radioItem">
+												<input type="radio" name="SpecificSchlTypes" id="typeAll" value="all" checked>
+												<label for="typeAll">All</label>
+											</span>
+											<span class="formRow radioItem">
+												<input type="radio" name="SpecificSchlTypes" id="typeCharter" value="charter" >
+												<label for="typeCharter">Charter School</label>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="formRow" style="grid-template-columns: 1fr">
+									<table border="0" style="margin-top: 6px;width: 100%;" cellspacing="0" cellpadding="0">
+										<tr>
+											<td><p align="left"><span style="font-size: 0.8rem;"><strong>Grade-Span</strong></span></td>
+											<td align="center"><span style="font-size: 0.8rem;">All</span></td>
+											<td align="center" ID="Bozo0"><span style="font-size: 0.8rem;">PK</span></td>
+											<td align="center" ID="Bozo1"><span style="font-size: 0.8rem;">KG</span></td>
+											<td align="center" ID="Bozo2"><span style="font-size: 0.8rem;">1</span></td>
+											<td align="center" ID="Bozo3"><span style="font-size: 0.8rem;">2</span></td>
+											<td align="center" ID="Bozo4"><span style="font-size: 0.8rem;">3</span></td>
+											<td align="center" ID="Bozo5"><span style="font-size: 0.8rem;">4</span></td>
+											<td align="center" ID="Bozo6"><span style="font-size: 0.8rem;">5</span></td>
+											<td align="center" ID="Bozo7"><span style="font-size: 0.8rem;">6</span></td>
+											<td align="center" ID="Bozo8"><span style="font-size: 0.8rem;">7</span></td>
+											<td align="center" ID="Bozo9"><span style="font-size: 0.8rem;">8</span></td>
+											<td align="center" ID="Bozo10"><span style="font-size: 0.8rem;">9</span></td>
+											<td align="center" ID="Bozo11"><span style="font-size: 0.8rem;">10</span></td>
+											<td align="center" ID="Bozo12"><span style="font-size: 0.8rem;">11</span></td>
+											<td align="center" ID="Bozo13"><span style="font-size: 0.8rem;">12</span></td>
+										</tr>
+										
+										<tr>
+											<td align="right" nowrap bgcolor="#FFFAEE"><span style="font-size: 0.8rem;">&nbsp;&nbsp;Includes Grade</span></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="-1" name="IncGrade" OnClick="ChangeGrade('Inc','All');" id="includesGrade-all" aria-label="includesGrade-all" checked></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="0" name="IncGrade" OnClick="ChangeGrade('Inc','PK');" id="includesGrade-pk" aria-label="includesGrade-pk" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="1" name="IncGrade" OnClick="ChangeGrade('Inc','KG');" id="includesGrade-kg" aria-label="includesGrade-kg" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="2" name="IncGrade" OnClick="ChangeGrade('Inc','1');" id="includesGrade-1" aria-label="includesGrade-1" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="3" name="IncGrade" OnClick="ChangeGrade('Inc','2');" id="includesGrade-2" aria-label="includesGrade-2" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="4" name="IncGrade" OnClick="ChangeGrade('Inc','3');" id="includesGrade-3" aria-label="includesGrade-3" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="5" name="IncGrade" OnClick="ChangeGrade('Inc','4');" id="includesGrade-4" aria-label="includesGrade-4" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="6" name="IncGrade" OnClick="ChangeGrade('Inc','5');" id="includesGrade-5" aria-label="includesGrade-5" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="7" name="IncGrade" OnClick="ChangeGrade('Inc','6');" id="includesGrade-6" aria-label="includesGrade-6" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="8" name="IncGrade" OnClick="ChangeGrade('Inc','7');" id="includesGrade-7" aria-label="includesGrade-7" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="9" name="IncGrade" OnClick="ChangeGrade('Inc','8');" id="includesGrade-8" aria-label="includesGrade-8" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="10" name="IncGrade" OnClick="ChangeGrade('Inc','9');" id="includesGrade-9" aria-label="includesGrade-9" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="11" name="IncGrade" OnClick="ChangeGrade('Inc','10');" id="includesGrade-10" aria-label="includesGrade-10" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="12" name="IncGrade" OnClick="ChangeGrade('Inc','11');" id="includesGrade-11" aria-label="includesGrade-11" ></td>
+											<td align="center" bgcolor="#FFFAEE"><input type="radio" value="13" name="IncGrade" OnClick="ChangeGrade('Inc','12');" id="includesGrade-12" aria-label="includesGrade-12" ></td>
+										</tr>
+										
+										<tr>
+											<td align="right" nowrap><span style="font-size: 0.8rem;">&nbsp;Low Grade</span></td>
+											<td align="center"><input type="radio" value="-1" name="LoGrade" OnClick="ChangeGrade('Lo','All');" id="lowGrade-all" aria-label="lowGrade-all" checked></td>
+											<td align="center"><input type="radio" value="0" name="LoGrade" OnClick="ChangeGrade('Lo','PK');" id="lowGrade-pk" aria-label="lowGrade-pk" ></td>
+											<td align="center"><input type="radio" value="1" name="LoGrade" OnClick="ChangeGrade('Lo','KG');" id="lowGrade-kg" aria-label="lowGrade-kg" ></td>
+											<td align="center"><input type="radio" value="2" name="LoGrade" OnClick="ChangeGrade('Lo','1');" id="lowGrade-1" aria-label="lowGrade-1" ></td>
+											<td align="center"><input type="radio" value="3" name="LoGrade" OnClick="ChangeGrade('Lo','2');" id="lowGrade-2" aria-label="lowGrade-2" ></td>
+											<td align="center"><input type="radio" value="4" name="LoGrade" OnClick="ChangeGrade('Lo','3');" id="lowGrade-3" aria-label="lowGrade-3" ></td>
+											<td align="center"><input type="radio" value="5" name="LoGrade" OnClick="ChangeGrade('Lo','4');" id="lowGrade-4" aria-label="lowGrade-4" ></td>
+											<td align="center"><input type="radio" value="6" name="LoGrade" OnClick="ChangeGrade('Lo','5');" id="lowGrade-5" aria-label="lowGrade-5" ></td>
+											<td align="center"><input type="radio" value="7" name="LoGrade" OnClick="ChangeGrade('Lo','6');" id="lowGrade-6" aria-label="lowGrade-6" ></td>
+											<td align="center"><input type="radio" value="8" name="LoGrade" OnClick="ChangeGrade('Lo','7');" id="lowGrade-7" aria-label="lowGrade-7" ></td>
+											<td align="center"><input type="radio" value="9" name="LoGrade" OnClick="ChangeGrade('Lo','8');" id="lowGrade-8" aria-label="lowGrade-8" ></td>
+											<td align="center"><input type="radio" value="10" name="LoGrade" OnClick="ChangeGrade('Lo','9');" id="lowGrade-9" aria-label="lowGrade-9" ></td>
+											<td align="center"><input type="radio" value="11" name="LoGrade" OnClick="ChangeGrade('Lo','10');" id="lowGrade-10" aria-label="lowGrade-10" ></td>
+											<td align="center"><input type="radio" value="12" name="LoGrade" OnClick="ChangeGrade('Lo','11');" id="lowGrade-11" aria-label="lowGrade-11" ></td>
+											<td align="center"><input type="radio" value="13" name="LoGrade" OnClick="ChangeGrade('Lo','12');" id="lowGrade-12" aria-label="lowGrade-12" ></td>
+										</tr>
+										
+										<tr>
+											<td align="right" nowrap bgcolor="#FFEBC6"><span style="font-size: 0.8rem;">&nbsp;High Grade</span></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="-1" name="HiGrade" OnClick="ChangeGrade('Hi','All');" id="highGrade-all" aria-label="highGrade-all" checked></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="0" name="HiGrade" OnClick="ChangeGrade('Hi','PK');" id="highGrade-pk" aria-label="highGrade-pk" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="1" name="HiGrade" OnClick="ChangeGrade('Hi','KG');" id="highGrade-kg" aria-label="highGrade-kg" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="2" name="HiGrade" OnClick="ChangeGrade('Hi','1');" id="highGrade-1" aria-label="highGrade-1" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="3" name="HiGrade" OnClick="ChangeGrade('Hi','2');" id="highGrade-2" aria-label="highGrade-2" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="4" name="HiGrade" OnClick="ChangeGrade('Hi','3');" id="highGrade-3" aria-label="highGrade-3" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="5" name="HiGrade" OnClick="ChangeGrade('Hi','4');" id="highGrade-4" aria-label="highGrade-4" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="6" name="HiGrade" OnClick="ChangeGrade('Hi','5');" id="highGrade-5" aria-label="highGrade-5" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="7" name="HiGrade" OnClick="ChangeGrade('Hi','6');" id="highGrade-6" aria-label="highGrade-6" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="8" name="HiGrade" OnClick="ChangeGrade('Hi','7');" id="highGrade-7" aria-label="highGrade-7" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="9" name="HiGrade" OnClick="ChangeGrade('Hi','8');" id="highGrade-8" aria-label="highGrade-8" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="10" name="HiGrade" OnClick="ChangeGrade('Hi','9');" id="highGrade-9" aria-label="highGrade-9" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="11" name="HiGrade" OnClick="ChangeGrade('Hi','10');" id="highGrade-10" aria-label="highGrade-10" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="12" name="HiGrade" OnClick="ChangeGrade('Hi','11');" id="highGrade-11" aria-label="highGrade-11" ></td>
+											<td align="center" bgcolor="#FFEBC6"><input type="radio" value="13" name="HiGrade" OnClick="ChangeGrade('Hi','12');" id="highGrade-12" aria-label="highGrade-12" ></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="formBodySide">
+							<div class="formTips">
+								<span>Search Tips:</span>
+								<div class="formTipsList">
+									<span>If you are having difficulty finding your school, try only entering the city, state, and/or a key word in the name.</span>
+									<span>Use the additional characteristics fields in conjunction with any of the School Information.</span>
+									<span>Additional Characteristics <b>should not</b> be used if you have already entered the name of a school.</span>
+								</div>
+							</div>
+
+							<div class="formControls">
+								<input type="submit" value="Search" class="button-submit">
+								<input type="button" OnClick="window.open('index.asp','_self')" value="Clear" class="button-clear">
+							</div>
+						</div>
+					</div>
+
+					<div class="formFoot">
+						<span><strong>Note</strong>:  The inclusion or exclusion of a school in this locator does NOT constitute an endorsement of the school and should NOT be used in any way to infer the accreditation status of the school.</span>
+					</div>
+
+					<div class="formBib">
+						<span><b>Source: </b><i>CCD public school data for the 2024-2025, 2025-2026 school years</i></span>
+					</div>
+					<div class="formNotes"></div>
+				</div>
+			</form>
+		</div>
+	<!-- End Body -->
+
+
+</div>
+
+
+<ies-footer></ies-footer>
+	</body>
+</html>

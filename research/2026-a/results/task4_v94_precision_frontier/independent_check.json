@@ -1,0 +1,30 @@
+{
+  "model_version": "V91",
+  "input_hash_verified": true,
+  "checked_bundles": 128,
+  "checked_bracket_endpoints": 28,
+  "classifications_match": true,
+  "matched_bundle_groups": [
+    {
+      "pm_selected": false,
+      "bundles": 64,
+      "exact_excludable_v80": 3,
+      "exact_excludable_v94": 7,
+      "common_thresholds": 3,
+      "common_threshold_direction": "increase"
+    },
+    {
+      "pm_selected": true,
+      "bundles": 64,
+      "exact_excludable_v80": 16,
+      "exact_excludable_v94": 7,
+      "common_thresholds": 7,
+      "common_threshold_direction": "decrease"
+    }
+  ],
+  "endpoint_arithmetic_ambiguities": [],
+  "independent_enlarged_bracket_padding": 2e-09,
+  "changed_exact_exclusion_classifications_vs_v80": 13,
+  "method": "Long-double direct quadratic coefficients and stable analytical roots; same 1e-12 polynomial decision tolerance. No scoring imports.",
+  "formal_interval_arithmetic": false
+}

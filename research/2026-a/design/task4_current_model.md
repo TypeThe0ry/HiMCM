@@ -1,5 +1,7 @@
 # 当前模型：V91 Phoenix市域监测网络区间修订（2026-11-08）
 
+V94完成[Phoenix剩余12校身份桥接与Jakarta真实通学子群计算](../results/task4_v94_intake/README.md)，累计108校、319条高中成绩；未强行准入全市指标。[128组补数阈值](../results/task4_v94_precision_frontier/README.md)已更新到V91，区分空气实测上下界对补数情景的相反作用。250格、排名及25个可能冠军保持。
+
 V93将[Phoenix高中成绩覆盖](../results/task4_v93_intake/README.md)扩展到100校、296条学校—学科记录；保留未知测试人数，不替换全市师资资源指标。[压力检验](../results/task4_v93_joint_stress/README.md)已更新至当前V91，推荐失效边界仍为(0.042,0.043]。真实排名、250格及25个可能冠军保持。
 
 V92将[冠军补数能力分析](../results/task4_v92_acquisition_limits/README.md)更新到V91：教育＋通学＋PM2.5连续不可排除下界21→22，新增Phoenix；实际可能冠军仍25城。并扩展Phoenix官方11年级学校考试记录，保留受限值及范围缺口；主模型和排名未改。
