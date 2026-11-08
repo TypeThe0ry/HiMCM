@@ -70,7 +70,7 @@
 | 最新补数可行性 V31 | [Phoenix四项方案的证据强度门槛](research/2026-a/results/task4_v31_acquisition/README.md) |
 | 最新高中通学修订 V30 | [Cape Town：真实学生、抽样误差与排名13→5](research/2026-a/results/task4_v30_cape_town/README.md) |
 | 最新教育年份对照 | [Jakarta 2025/26：分数更新与来源撤回检验](research/2026-a/results/task4_v29_education_year/README.md) |
-| 当前数学公式与补数方向 | [当前模型](research/2026-a/design/task4_current_model.md) · [Phoenix两项补数为何不足](research/2026-a/results/task4_v27_current_acquisition/README.md) |
+| 当前数学公式与补数方向 | [当前模型](research/2026-a/design/task4_current_model.md) · [当前连续偏好的补数条件](research/2026-a/results/task4_v101_current_acquisition/README.md) |
 | 历史条件基准 V23 | [覆盖修订与排名](research/2026-a/results/task4_v23_roster_coverage/README.md) · [算法入口 current_bounds](research/2026-a/scripts/task4_roster_coverage_comparison.py) |
 | 当前10项指标定义 | [指标规范](research/2026-a/design/task4_v5_indicator_spec.md) |
 | V6历史模型与结果 | [V6报告](research/2026-a/results/task4_v6/REPORT.md) · [结果表](research/2026-a/results/task4_v6/after_v6.csv) · [独立复核](research/2026-a/results/task4_v6_review.md) |

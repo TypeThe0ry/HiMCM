@@ -12,11 +12,18 @@ import numpy as np
 import pandas as pd
 from task4_current_model import current_bounds, verify_baseline, verify_bounds
 from task4_continuous_acquisition import search, TOL
+from task4_joint_uncertainty_stress import protect_output
 from task4_v5_model import ROOT, CITIES, NAMES, weights, summarize
 
 
 def run(out, prior_results=None, prior_model="V63"):
     lo, hi, config = current_bounds()
+    protect_output(out, lo, hi, config)
+    previous_dir = prior_results or ROOT/'results/task4_v64_continuous_acquisition'
+    prior_metadata = json.loads((previous_dir/'summary.json').read_text())
+    recorded_model = prior_metadata.get('model_version', prior_metadata.get('baseline'))
+    if recorded_model != prior_model:
+        raise ValueError('Prior model label does not match saved result metadata')
     if config['fixed_alpha'] != .1 or config['alpha_range'] != [.05, .2]:
         raise ValueError('Reused continuous search is certified only for alpha [.05,.2] and fixed .1')
     frame, decision = summarize(lo, hi, weights(config['fixed_alpha']))
@@ -31,7 +38,7 @@ def run(out, prior_results=None, prior_model="V63"):
         summaries.append(summary); evaluations.extend(rows); certificates.extend(leaves)
         print(city, summary['smallest_certified_continuous_bundle'], flush=True)
     np.testing.assert_array_equal(saved, np.stack([lo, hi]))
-    previous_path = (prior_results or ROOT/'results/task4_v64_continuous_acquisition')/'minimum_bundles.csv'
+    previous_path = previous_dir/'minimum_bundles.csv'
     previous = pd.read_csv(previous_path)
     current = pd.DataFrame(summaries)
     compared = previous.merge(current, on='city', suffixes=('_prior', '_current'), validate='one_to_one')
@@ -53,9 +60,9 @@ def run(out, prior_results=None, prior_model="V63"):
         possible_champions=int(frame.possible_champion.sum()), choice=[CITIES[i] for i in decision['minimax_choices']],
         evaluated_bundles=len(evaluations), unresolved_bundles=sum(r['status']=='unresolved' for r in evaluations),
         changed_acquisition_diagnostics=changed[['city']+[c+s for c in fields for s in ['_prior','_current']]].to_dict('records'),
-        focal_cities=[r for r in summaries if r['city'] in ['Phoenix','Delhi','Mumbai','Tokyo','Cape Town','Shanghai']],
+        focal_cities=[r for r in summaries if r['city'] in ['Phoenix','Delhi','Mumbai','Tokyo','Cape Town','Shanghai','Warsaw']],
         scope='Optimistic city-local exact revelation at current upper endpoints in the rectangular outer model. Not guaranteed observations, joint physical attainability, city quality, or a necessary performance champion.',
-        proof='The upper endpoints maximize target lower score while retaining its upper score; target regret decreases and rivals regret increases for every alpha. The same endpoint vector is favorable throughout the preference interval.',
+        proof='Relative to any other exact revelation of the selected target cells, upper endpoints do not increase target regret and do not decrease rivals regret, for every alpha. The same endpoint vector is favorable throughout the preference interval.',
         tolerances=dict(witness_negative_margin=TOL, score_padding=1e-9, certificate_positive_gap=TOL,
             max_depth=10, numerical_not_formal_interval_arithmetic=True))
     (out/'summary.json').write_text(json.dumps(result,indent=2)+'\n')
