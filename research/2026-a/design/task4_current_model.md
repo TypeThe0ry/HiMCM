@@ -1,4 +1,6 @@
-# 当前模型：V79 Delhi同源教学资源分配修订（2026-11-08）
+# 当前模型：V91 Phoenix市域监测网络区间修订（2026-11-08）
+
+V91取得[官方EPA市内监测数据](../results/task4_v91_phoenix_monitor/README.md)，Phoenix PM2.5效用由未知改为[0.564421,0.680536]，对应已观测合格监测网络的条件加权量，不是人口暴露界。Phoenix第24→16，得分界宽度缩小13.47%；25个可能冠军保持。严格撤回恢复V79。[连续补数分析](../results/task4_v91_current_acquisition/README.md)同步更新，其他V79诊断保留历史版本。
 
 V90将[连续偏好补数分析](../results/task4_v90_current_acquisition/README.md)从V64/V63更新到当前V79，Phoenix最有利连续补数需求由4项变3项，Tokyo由2项变1项。585组合、444证书独立复核，真实排名及25城可能冠军不变。注册表已更新分析版本，旧结果作为历史对照保留。
 

@@ -1,0 +1,172 @@
+{
+  "model_version": "V91",
+  "previous_model_version": "V79",
+  "main_admitted": true,
+  "admission": "Conditional incorporated-city observed-monitor mean comparison. Not population or high-school exposure.",
+  "source_summary_sha256": "a31e703b842b4603fe30f89408d8373d2cedb6b661d4c03c6c1b7bff1208e6cf",
+  "changed_indicator": "Phoenix/pm25 only",
+  "unchanged_cells": 249,
+  "student_travel_unchanged": true,
+  "strict_scope_restores_previous_model": true,
+  "scenarios": [
+    {
+      "scenario": "v79_before",
+      "changed_cells": 0,
+      "changed_ranks": 0,
+      "kendall_tau_vs_before": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "phoenix": {
+        "city": "Phoenix",
+        "score_lower": 27.028107595003533,
+        "score_upper": 73.58816640508734,
+        "best_rank": 1,
+        "worst_rank": 25,
+        "possible_champion": true,
+        "necessary_champion": false,
+        "max_regret": 50.50135310846815,
+        "decision_rank": 24,
+        "scenario": "v79_before"
+      }
+    },
+    {
+      "scenario": "v91_monitor_envelope",
+      "changed_cells": 1,
+      "changed_ranks": 9,
+      "kendall_tau_vs_before": 0.9466666666666665,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "phoenix": {
+        "city": "Phoenix",
+        "score_lower": 31.39060820931906,
+        "score_upper": 71.68091378914416,
+        "best_rank": 1,
+        "worst_rank": 25,
+        "possible_champion": true,
+        "necessary_champion": false,
+        "max_regret": 46.13885249415263,
+        "decision_rank": 16,
+        "scenario": "v91_monitor_envelope"
+      }
+    },
+    {
+      "scenario": "strict_scope_withdrawal",
+      "changed_cells": 0,
+      "changed_ranks": 0,
+      "kendall_tau_vs_before": 0.9999999999999998,
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "continuous_recommendation": [
+        "Singapore"
+      ],
+      "unresolved_leaves": 0,
+      "phoenix": {
+        "city": "Phoenix",
+        "score_lower": 27.028107595003533,
+        "score_upper": 73.58816640508734,
+        "best_rank": 1,
+        "worst_rank": 25,
+        "possible_champion": true,
+        "necessary_champion": false,
+        "max_regret": 50.50135310846815,
+        "decision_rank": 24,
+        "scenario": "strict_scope_withdrawal"
+      }
+    }
+  ]
+}

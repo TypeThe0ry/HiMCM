@@ -1,0 +1,41 @@
+{
+  "year": 2024,
+  "source_rows": 68956,
+  "source_member": "annual_conc_by_monitor_2024.csv",
+  "parameter": 88101,
+  "standard": "PM25 Annual 2024",
+  "measure": "Quarterly Means of Daily Means, micrograms/cubic meter(LC)",
+  "phoenix_sites": 6,
+  "phoenix_monitor_records": 8,
+  "all_complete_and_certified": true,
+  "observation_percent_range": [
+    93,
+    100
+  ],
+  "retained_events": "Events Included or No Events; no exceptional-event exclusions for exposure scenario",
+  "method_ambiguous_monitors": [
+    {
+      "Site Num": 9997,
+      "POC": 1
+    },
+    {
+      "Site Num": 9997,
+      "POC": 3
+    }
+  ],
+  "fully_identified_method_sites": 5,
+  "extrema_unchanged_when_mixed_method_site_omitted": true,
+  "concentration_convex_hull": [
+    7.041457,
+    11.57591
+  ],
+  "utility_convex_hull": [
+    0.5644209361034109,
+    0.6805357740189316
+  ],
+  "interpretation": "Any convex weighting of these observed complete monitor annual summaries lies in this hull. It is NOT a bound on unmonitored neighborhoods, resident/high-school population exposure, temporal change or measurement bias.",
+  "geography": "EPA City Name explicitly represents incorporated legal city. Current Phoenix boundary overlay agrees for all Arizona annual88101 candidates; untransformed published NAD83/WGS84 coordinate overlay is a secondary check, not a claim of datum/historical boundary equivalence.",
+  "weighting": "No invented spatial/population weights and no average across duplicate POCs or pollutant-standard/event rows. Repeated monitor observations affect neither convex-hull endpoint.",
+  "method_advisory": "EPA T640 advisory checked: namedoriginal236/238methods not among fullyidentified Phoenix rows. JLGsupersite has2MultipleMethodsUsed records, retained as methodambiguous; both inside extrema established by verified TEOMsites.",
+  "main_admitted": false
+}

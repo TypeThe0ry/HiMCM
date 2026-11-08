@@ -1,0 +1,37 @@
+{
+  "main_admitted": false,
+  "new_city_observations": 0,
+  "advertised_fiscal_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "active_year_returned": 2025,
+  "frontend_endpoint_discovery": {
+    "file": "../task4_v46_phoenix/app.min.js",
+    "sha256": "aae99e1de4e83adf4ed5f162b7af21cee01d9ce925d2e5e5b2e931ad004ee848",
+    "method": "getFiscalYearsList() calls /api/DataApi/GetFiscalYears; archived frontend provenance retained"
+  },
+  "interpretation": "Metadata advertises FY2025 active while directory has FY2026 records. This does not establish availability in every endpoint or disprove published cohort2025 workbook. Empty FY2026 graduation query remains unavailable, not zero/unpublished.",
+  "business_rules_findings": [
+    "FY2025 graduation-improvement compares cohort2024 four-year rate with cohort2023",
+    "Graduation inclusion text includes both FAY and non-FAY students",
+    "Concurrent enrollment diploma-school rule located under CCRI, not established as generic graduation cohort rule; not used to reconcile2-person gap"
+  ],
+  "not_acquired": [
+    {
+      "url": "https://www.azed.gov/sites/default/files/2026-09/FY27%20Graduation%2C%20Dropout%2C%20%26%20Persistence%20Tech%20Manual.pdf",
+      "result": "official web reader403; no original acquired"
+    },
+    {
+      "url": "https://mapazdashboard.arizona.edu/education-data/high-school-graduation-rates-download",
+      "result": "web reader exposed unresolved embedded node placeholders, no downloaded school cohort data"
+    }
+  ],
+  "graduation_cohort_gap": "Prior2024 school6287 versus district6285 unresolved; no numeric fill"
+}

@@ -1,0 +1,427 @@
+city,indicators,alpha_lower,alpha_upper,certified,winner,regret_gap_lower,depth
+Toronto,homicide_rate|upper_secondary_ptr,0.05,0.2,True,0,0.5660821685100004,0
+Toronto,homicide_rate|research_he_density,0.05,0.2,True,0,0.5660821685100004,0
+Toronto,homicide_rate|public_transport_density,0.05,0.125,True,0,0.6860113568543156,1
+Toronto,homicide_rate|public_transport_density,0.125,0.2,True,0,1.6245440849250983,1
+Toronto,homicide_rate|travel,0.05,0.2,True,0,0.5660821685100004,0
+Toronto,homicide_rate|public_pool_density,0.05,0.125,True,0,0.6860113568543156,1
+Toronto,homicide_rate|public_pool_density,0.125,0.2,True,0,1.6245440849250983,1
+Toronto,upper_secondary_ptr|research_he_density,0.05,0.2,True,0,0.5660821685100004,0
+Toronto,upper_secondary_ptr|public_transport_density,0.05,0.125,True,0,0.6860113568543156,1
+Toronto,upper_secondary_ptr|public_transport_density,0.125,0.2,True,0,1.6245440849250983,1
+Toronto,upper_secondary_ptr|travel,0.05,0.2,True,0,0.5660821685100004,0
+Toronto,upper_secondary_ptr|public_pool_density,0.05,0.125,True,0,0.6860113568543156,1
+Toronto,upper_secondary_ptr|public_pool_density,0.125,0.2,True,0,1.6245440849250983,1
+Toronto,research_he_density|public_transport_density,0.05,0.125,True,0,0.6860113568543156,1
+Toronto,research_he_density|public_transport_density,0.125,0.2,True,0,1.6245440849250983,1
+Toronto,research_he_density|travel,0.05,0.2,True,0,0.5660821685100004,0
+Toronto,research_he_density|public_pool_density,0.05,0.125,True,0,0.6860113568543156,1
+Toronto,research_he_density|public_pool_density,0.125,0.2,True,0,1.6245440849250983,1
+Toronto,public_transport_density|travel,0.05,0.125,True,0,0.6860113568543156,1
+Toronto,public_transport_density|travel,0.125,0.2,True,0,1.6245440849250983,1
+Toronto,travel|public_pool_density,0.05,0.125,True,0,0.6860113568543156,1
+Toronto,travel|public_pool_density,0.125,0.2,True,0,1.6245440849250983,1
+Phoenix,upper_secondary_ptr|research_he_density,0.05,0.125,True,1,1.9765833689364172,1
+Phoenix,upper_secondary_ptr|research_he_density,0.125,0.2,True,1,0.1632587217283259,1
+Phoenix,upper_secondary_ptr|travel,0.05,0.125,True,1,1.9765833689364172,1
+Phoenix,upper_secondary_ptr|travel,0.125,0.2,True,1,0.1632587217283259,1
+Phoenix,upper_secondary_ptr|fixed_broadband_mbps,0.05,0.125,True,1,1.9765833689364172,1
+Phoenix,upper_secondary_ptr|fixed_broadband_mbps,0.125,0.2,True,1,0.1632587217283188,1
+Phoenix,research_he_density|travel,0.05,0.125,True,1,1.9765833689364172,1
+Phoenix,research_he_density|travel,0.125,0.2,True,1,0.1632587217283259,1
+Phoenix,research_he_density|fixed_broadband_mbps,0.05,0.125,True,1,1.9765833689364172,1
+Phoenix,research_he_density|fixed_broadband_mbps,0.125,0.2,True,1,0.1632587217283188,1
+Phoenix,travel|fixed_broadband_mbps,0.05,0.125,True,1,1.9765833689364172,1
+Phoenix,travel|fixed_broadband_mbps,0.125,0.2,True,1,0.1632587217283188,1
+New York,homicide_rate|pm25,0.05,0.125,True,2,0.5951790716615548,1
+New York,homicide_rate|pm25,0.125,0.1625,True,2,0.4866778557052456,2
+New York,homicide_rate|pm25,0.1625,0.18125000000000002,True,2,0.441896103702895,3
+New York,homicide_rate|pm25,0.18125000000000002,0.2,True,2,0.021114598366771986,3
+New York,homicide_rate|upper_secondary_ptr,0.05,0.125,True,2,0.5951790716615548,1
+New York,homicide_rate|upper_secondary_ptr,0.125,0.1625,True,2,0.4866778557052456,2
+New York,homicide_rate|upper_secondary_ptr,0.1625,0.18125000000000002,True,2,0.441896103702895,3
+New York,homicide_rate|upper_secondary_ptr,0.18125000000000002,0.2,True,2,0.021114598366771986,3
+New York,homicide_rate|research_he_density,0.05,0.125,True,2,0.5951790716615548,1
+New York,homicide_rate|research_he_density,0.125,0.1625,True,2,0.4866778557052456,2
+New York,homicide_rate|research_he_density,0.1625,0.18125000000000002,True,2,0.441896103702895,3
+New York,homicide_rate|research_he_density,0.18125000000000002,0.2,True,2,0.021114598366771986,3
+New York,pm25|upper_secondary_ptr,0.05,0.125,True,2,0.5951790716615548,1
+New York,pm25|upper_secondary_ptr,0.125,0.1625,True,2,0.4866778557052456,2
+New York,pm25|upper_secondary_ptr,0.1625,0.18125000000000002,True,2,0.441896103702895,3
+New York,pm25|upper_secondary_ptr,0.18125000000000002,0.2,True,2,0.021114598366771986,3
+New York,pm25|research_he_density,0.05,0.125,True,2,0.5951790716615548,1
+New York,pm25|research_he_density,0.125,0.1625,True,2,0.4866778557052456,2
+New York,pm25|research_he_density,0.1625,0.18125000000000002,True,2,0.441896103702895,3
+New York,pm25|research_he_density,0.18125000000000002,0.2,True,2,0.021114598366771986,3
+New York,upper_secondary_ptr|research_he_density,0.05,0.125,True,2,0.5951790716615548,1
+New York,upper_secondary_ptr|research_he_density,0.125,0.1625,True,2,0.4866778557052456,2
+New York,upper_secondary_ptr|research_he_density,0.1625,0.18125000000000002,True,2,0.441896103702895,3
+New York,upper_secondary_ptr|research_he_density,0.18125000000000002,0.2,True,2,0.021114598366771986,3
+Mexico City,homicide_rate|pm25,0.05,0.125,True,3,0.8381276921134742,1
+Mexico City,homicide_rate|pm25,0.125,0.1625,True,3,0.7121512403579899,2
+Mexico City,homicide_rate|pm25,0.1625,0.18125000000000002,True,3,0.6591454917456829,3
+Mexico City,homicide_rate|pm25,0.18125000000000002,0.2,True,3,0.23045555187884048,3
+Mexico City,homicide_rate|upper_secondary_ptr,0.05,0.125,True,3,0.8381276921134742,1
+Mexico City,homicide_rate|upper_secondary_ptr,0.125,0.1625,True,3,0.7121512403579899,2
+Mexico City,homicide_rate|upper_secondary_ptr,0.1625,0.18125000000000002,True,3,0.6591454917456829,3
+Mexico City,homicide_rate|upper_secondary_ptr,0.18125000000000002,0.2,True,3,0.23045555187884048,3
+Mexico City,homicide_rate|research_he_density,0.05,0.125,True,3,0.8381276921134742,1
+Mexico City,homicide_rate|research_he_density,0.125,0.1625,True,3,0.7121512403579899,2
+Mexico City,homicide_rate|research_he_density,0.1625,0.18125000000000002,True,3,0.6591454917456829,3
+Mexico City,homicide_rate|research_he_density,0.18125000000000002,0.2,True,3,0.23045555187884048,3
+Mexico City,pm25|upper_secondary_ptr,0.05,0.125,True,3,0.8381276921134742,1
+Mexico City,pm25|upper_secondary_ptr,0.125,0.1625,True,3,0.7121512403579899,2
+Mexico City,pm25|upper_secondary_ptr,0.1625,0.18125000000000002,True,3,0.6591454917456829,3
+Mexico City,pm25|upper_secondary_ptr,0.18125000000000002,0.2,True,3,0.23045555187884048,3
+Mexico City,pm25|research_he_density,0.05,0.125,True,3,0.8381276921134742,1
+Mexico City,pm25|research_he_density,0.125,0.1625,True,3,0.7121512403579899,2
+Mexico City,pm25|research_he_density,0.1625,0.18125000000000002,True,3,0.6591454917456829,3
+Mexico City,pm25|research_he_density,0.18125000000000002,0.2,True,3,0.23045555187884048,3
+Mexico City,upper_secondary_ptr|research_he_density,0.05,0.125,True,3,0.8381276921134742,1
+Mexico City,upper_secondary_ptr|research_he_density,0.125,0.1625,True,3,0.7121512403579899,2
+Mexico City,upper_secondary_ptr|research_he_density,0.1625,0.18125000000000002,True,3,0.6591454917456829,3
+Mexico City,upper_secondary_ptr|research_he_density,0.18125000000000002,0.2,True,3,0.23045555187884048,3
+Bogota,homicide_rate|upper_secondary_ptr,0.05,0.2,True,4,0.004848400484853244,0
+Bogota,homicide_rate|research_he_density,0.05,0.2,True,4,0.004848400484853244,0
+Bogota,homicide_rate|public_transport_density,0.05,0.125,True,4,0.008673807783281973,1
+Bogota,homicide_rate|public_transport_density,0.125,0.2,True,4,1.0057637697076771,1
+Bogota,homicide_rate|travel,0.05,0.2,True,4,0.004848400484853244,0
+Bogota,homicide_rate|public_pool_density,0.05,0.125,True,4,0.008673807783281973,1
+Bogota,homicide_rate|public_pool_density,0.125,0.2,True,4,1.0057637697076771,1
+Bogota,upper_secondary_ptr|research_he_density,0.05,0.2,True,4,0.004848400484853244,0
+Bogota,upper_secondary_ptr|public_transport_density,0.05,0.125,True,4,0.008673807783281973,1
+Bogota,upper_secondary_ptr|public_transport_density,0.125,0.2,True,4,1.0057637697076771,1
+Bogota,upper_secondary_ptr|travel,0.05,0.2,True,4,0.004848400484853244,0
+Bogota,upper_secondary_ptr|public_pool_density,0.05,0.125,True,4,0.008673807783281973,1
+Bogota,upper_secondary_ptr|public_pool_density,0.125,0.2,True,4,1.0057637697076771,1
+Bogota,research_he_density|public_transport_density,0.05,0.125,True,4,0.008673807783281973,1
+Bogota,research_he_density|public_transport_density,0.125,0.2,True,4,1.0057637697076771,1
+Bogota,research_he_density|travel,0.05,0.2,True,4,0.004848400484853244,0
+Bogota,research_he_density|public_pool_density,0.05,0.125,True,4,0.008673807783281973,1
+Bogota,research_he_density|public_pool_density,0.125,0.2,True,4,1.0057637697076771,1
+Bogota,public_transport_density|travel,0.05,0.125,True,4,0.008673807783281973,1
+Bogota,public_transport_density|travel,0.125,0.2,True,4,1.0057637697076771,1
+Bogota,travel|public_pool_density,0.05,0.125,True,4,0.008673807783281973,1
+Bogota,travel|public_pool_density,0.125,0.2,True,4,1.0057637697076771,1
+Sao Paulo,homicide_rate|upper_secondary_ptr,0.05,0.2,True,5,1.4695470259092644,0
+Sao Paulo,homicide_rate|research_he_density,0.05,0.2,True,5,1.4695470259092644,0
+Sao Paulo,homicide_rate|public_transport_density,0.05,0.2,True,5,0.775062998417738,0
+Sao Paulo,homicide_rate|public_pool_density,0.05,0.2,True,5,0.775062998417738,0
+Sao Paulo,upper_secondary_ptr|research_he_density,0.05,0.2,True,5,1.4695470259092644,0
+Sao Paulo,upper_secondary_ptr|public_transport_density,0.05,0.2,True,5,0.775062998417738,0
+Sao Paulo,upper_secondary_ptr|public_pool_density,0.05,0.2,True,5,0.775062998417738,0
+Sao Paulo,research_he_density|public_transport_density,0.05,0.2,True,5,0.775062998417738,0
+Sao Paulo,research_he_density|public_pool_density,0.05,0.2,True,5,0.775062998417738,0
+Santiago,homicide_rate|upper_secondary_ptr,0.05,0.125,True,6,2.932593938663082,1
+Santiago,homicide_rate|upper_secondary_ptr,0.125,0.2,True,6,1.0443874609748605,1
+Santiago,homicide_rate|research_he_density,0.05,0.125,True,6,2.932593938663082,1
+Santiago,homicide_rate|research_he_density,0.125,0.2,True,6,1.0443874609748605,1
+Santiago,homicide_rate|public_transport_density,0.05,0.06875,True,6,0.18274402062544226,3
+Santiago,homicide_rate|public_transport_density,0.06875,0.0875,True,6,0.45349811026574116,3
+Santiago,homicide_rate|public_transport_density,0.0875,0.125,True,6,0.47485498939366266,2
+Santiago,homicide_rate|public_transport_density,0.125,0.2,True,6,0.49870085748371906,1
+Santiago,homicide_rate|travel,0.05,0.125,True,6,2.932593938663082,1
+Santiago,homicide_rate|travel,0.125,0.2,True,6,1.0443874609748605,1
+Santiago,homicide_rate|public_pool_density,0.05,0.06875,True,6,0.18274402062544226,3
+Santiago,homicide_rate|public_pool_density,0.06875,0.0875,True,6,0.45349811026574116,3
+Santiago,homicide_rate|public_pool_density,0.0875,0.125,True,6,0.47485498939366266,2
+Santiago,homicide_rate|public_pool_density,0.125,0.2,True,6,0.49870085748371906,1
+Santiago,upper_secondary_ptr|research_he_density,0.05,0.125,True,6,2.932593938663082,1
+Santiago,upper_secondary_ptr|research_he_density,0.125,0.2,True,6,1.0443874609748605,1
+Santiago,upper_secondary_ptr|public_transport_density,0.05,0.06875,True,6,0.18274402062543516,3
+Santiago,upper_secondary_ptr|public_transport_density,0.06875,0.0875,True,6,0.45349811026574116,3
+Santiago,upper_secondary_ptr|public_transport_density,0.0875,0.125,True,6,0.47485498939366266,2
+Santiago,upper_secondary_ptr|public_transport_density,0.125,0.2,True,6,0.49870085748371906,1
+Santiago,upper_secondary_ptr|travel,0.05,0.125,True,6,2.932593938663082,1
+Santiago,upper_secondary_ptr|travel,0.125,0.2,True,6,1.0443874609748605,1
+Santiago,upper_secondary_ptr|public_pool_density,0.05,0.06875,True,6,0.18274402062544226,3
+Santiago,upper_secondary_ptr|public_pool_density,0.06875,0.0875,True,6,0.45349811026574116,3
+Santiago,upper_secondary_ptr|public_pool_density,0.0875,0.125,True,6,0.47485498939366266,2
+Santiago,upper_secondary_ptr|public_pool_density,0.125,0.2,True,6,0.49870085748371906,1
+Santiago,research_he_density|public_transport_density,0.05,0.06875,True,6,0.18274402062543516,3
+Santiago,research_he_density|public_transport_density,0.06875,0.0875,True,6,0.45349811026574116,3
+Santiago,research_he_density|public_transport_density,0.0875,0.125,True,6,0.47485498939366266,2
+Santiago,research_he_density|public_transport_density,0.125,0.2,True,6,0.49870085748371906,1
+Santiago,research_he_density|travel,0.05,0.125,True,6,2.932593938663082,1
+Santiago,research_he_density|travel,0.125,0.2,True,6,1.0443874609748605,1
+Santiago,research_he_density|public_pool_density,0.05,0.06875,True,6,0.18274402062544226,3
+Santiago,research_he_density|public_pool_density,0.06875,0.0875,True,6,0.45349811026574116,3
+Santiago,research_he_density|public_pool_density,0.0875,0.125,True,6,0.47485498939366266,2
+Santiago,research_he_density|public_pool_density,0.125,0.2,True,6,0.49870085748371906,1
+Santiago,public_transport_density|travel,0.05,0.06875,True,6,0.18274402062543516,3
+Santiago,public_transport_density|travel,0.06875,0.0875,True,6,0.45349811026574116,3
+Santiago,public_transport_density|travel,0.0875,0.125,True,6,0.47485498939366266,2
+Santiago,public_transport_density|travel,0.125,0.2,True,6,0.49870085748371906,1
+Santiago,travel|public_pool_density,0.05,0.06875,True,6,0.18274402062543516,3
+Santiago,travel|public_pool_density,0.06875,0.0875,True,6,0.45349811026574116,3
+Santiago,travel|public_pool_density,0.0875,0.125,True,6,0.47485498939366266,2
+Santiago,travel|public_pool_density,0.125,0.2,True,6,0.49870085748371906,1
+Copenhagen,homicide_rate|upper_secondary_ptr,0.05,0.2,True,7,2.8917385072948463,0
+Copenhagen,homicide_rate|research_he_density,0.05,0.2,True,7,2.8917385072948463,0
+Copenhagen,homicide_rate|public_transport_density,0.05,0.2,True,7,2.230908188182191,0
+Copenhagen,homicide_rate|travel,0.05,0.2,True,7,2.8917385072948463,0
+Copenhagen,homicide_rate|public_pool_density,0.05,0.2,True,7,2.230908188182191,0
+Copenhagen,upper_secondary_ptr|research_he_density,0.05,0.2,True,7,2.8917385072948463,0
+Copenhagen,upper_secondary_ptr|public_transport_density,0.05,0.2,True,7,2.230908188182191,0
+Copenhagen,upper_secondary_ptr|travel,0.05,0.2,True,7,2.8917385072948463,0
+Copenhagen,upper_secondary_ptr|public_pool_density,0.05,0.2,True,7,2.230908188182191,0
+Copenhagen,research_he_density|public_transport_density,0.05,0.2,True,7,2.230908188182191,0
+Copenhagen,research_he_density|travel,0.05,0.2,True,7,2.8917385072948463,0
+Copenhagen,research_he_density|public_pool_density,0.05,0.2,True,7,2.230908188182191,0
+Copenhagen,public_transport_density|travel,0.05,0.2,True,7,2.230908188182191,0
+Copenhagen,travel|public_pool_density,0.05,0.2,True,7,2.230908188182191,0
+London,homicide_rate|upper_secondary_ptr,0.05,0.125,True,8,1.9725913511251179,1
+London,homicide_rate|upper_secondary_ptr,0.125,0.2,True,8,0.0953971694041087,1
+London,homicide_rate|research_he_density,0.05,0.125,True,8,1.9725913511251179,1
+London,homicide_rate|research_he_density,0.125,0.2,True,8,0.0953971694041087,1
+London,homicide_rate|travel,0.05,0.125,True,8,1.9725913511251179,1
+London,homicide_rate|travel,0.125,0.2,True,8,0.0953971694041087,1
+London,upper_secondary_ptr|research_he_density,0.05,0.125,True,8,1.9725913511251179,1
+London,upper_secondary_ptr|research_he_density,0.125,0.2,True,8,0.0953971694041087,1
+London,upper_secondary_ptr|travel,0.05,0.125,True,8,1.9725913511251179,1
+London,upper_secondary_ptr|travel,0.125,0.2,True,8,0.0953971694041087,1
+London,research_he_density|travel,0.05,0.125,True,8,1.9725913511251179,1
+London,research_he_density|travel,0.125,0.2,True,8,0.0953971694041087,1
+Barcelona,homicide_rate|upper_secondary_ptr,0.05,0.2,True,9,0.6319868001518358,0
+Barcelona,homicide_rate|research_he_density,0.05,0.2,True,9,0.6319868001518358,0
+Barcelona,homicide_rate|public_transport_density,0.05,0.125,True,9,0.7697556529935738,1
+Barcelona,homicide_rate|public_transport_density,0.125,0.2,True,9,1.6990571388733429,1
+Barcelona,homicide_rate|travel,0.05,0.2,True,9,0.6319868001518358,0
+Barcelona,homicide_rate|public_pool_density,0.05,0.125,True,9,0.7697556529935738,1
+Barcelona,homicide_rate|public_pool_density,0.125,0.2,True,9,1.6990571388733429,1
+Barcelona,upper_secondary_ptr|research_he_density,0.05,0.2,True,9,0.6319868001518358,0
+Barcelona,upper_secondary_ptr|public_transport_density,0.05,0.125,True,9,0.7697556529935738,1
+Barcelona,upper_secondary_ptr|public_transport_density,0.125,0.2,True,9,1.699057138873357,1
+Barcelona,upper_secondary_ptr|travel,0.05,0.2,True,9,0.6319868001518358,0
+Barcelona,upper_secondary_ptr|public_pool_density,0.05,0.125,True,9,0.7697556529935738,1
+Barcelona,upper_secondary_ptr|public_pool_density,0.125,0.2,True,9,1.6990571388733429,1
+Barcelona,research_he_density|public_transport_density,0.05,0.125,True,9,0.7697556529935738,1
+Barcelona,research_he_density|public_transport_density,0.125,0.2,True,9,1.699057138873357,1
+Barcelona,research_he_density|travel,0.05,0.2,True,9,0.6319868001518358,0
+Barcelona,research_he_density|public_pool_density,0.05,0.125,True,9,0.7697556529935738,1
+Barcelona,research_he_density|public_pool_density,0.125,0.2,True,9,1.6990571388733429,1
+Barcelona,public_transport_density|travel,0.05,0.125,True,9,0.7697556529935738,1
+Barcelona,public_transport_density|travel,0.125,0.2,True,9,1.699057138873357,1
+Barcelona,travel|public_pool_density,0.05,0.125,True,9,0.7697556529935738,1
+Barcelona,travel|public_pool_density,0.125,0.2,True,9,1.6990571388733429,1
+Warsaw,homicide_rate|research_he_density,0.05,0.2,True,10,0.10755709887600062,0
+Warsaw,homicide_rate|public_transport_density,0.05,0.125,True,10,0.11282721230909942,1
+Warsaw,homicide_rate|public_transport_density,0.125,0.2,True,10,1.1102991370428228,1
+Warsaw,homicide_rate|travel,0.05,0.2,True,10,0.10755709887600062,0
+Warsaw,homicide_rate|public_pool_density,0.05,0.125,True,10,0.11282721230909942,1
+Warsaw,homicide_rate|public_pool_density,0.125,0.2,True,10,1.1102991370428228,1
+Warsaw,research_he_density|public_transport_density,0.05,0.125,True,10,0.11282721230910653,1
+Warsaw,research_he_density|public_transport_density,0.125,0.2,True,10,1.1102991370428228,1
+Warsaw,research_he_density|travel,0.05,0.2,True,10,0.10755709887600062,0
+Warsaw,research_he_density|public_pool_density,0.05,0.125,True,10,0.11282721230910653,1
+Warsaw,research_he_density|public_pool_density,0.125,0.2,True,10,1.1102991370428228,1
+Warsaw,public_transport_density|travel,0.05,0.125,True,10,0.11282721230910653,1
+Warsaw,public_transport_density|travel,0.125,0.2,True,10,1.1102991370428228,1
+Warsaw,travel|public_pool_density,0.05,0.125,True,10,0.11282721230910653,1
+Warsaw,travel|public_pool_density,0.125,0.2,True,10,1.1102991370428228,1
+Athens,homicide_rate|upper_secondary_ptr,0.05,0.125,True,11,2.0882733223591856,1
+Athens,homicide_rate|upper_secondary_ptr,0.125,0.2,True,11,0.1991782228436989,1
+Athens,homicide_rate|research_he_density,0.05,0.125,True,11,2.0882733223591856,1
+Athens,homicide_rate|research_he_density,0.125,0.2,True,11,0.1991782228436989,1
+Athens,homicide_rate|travel,0.05,0.125,True,11,2.0882733223591856,1
+Athens,homicide_rate|travel,0.125,0.2,True,11,0.1991782228436989,1
+Athens,upper_secondary_ptr|research_he_density,0.05,0.125,True,11,2.0882733223591856,1
+Athens,upper_secondary_ptr|research_he_density,0.125,0.2,True,11,0.1991782228436989,1
+Athens,upper_secondary_ptr|travel,0.05,0.125,True,11,2.0882733223591856,1
+Athens,upper_secondary_ptr|travel,0.125,0.2,True,11,0.1991782228436989,1
+Athens,research_he_density|travel,0.05,0.125,True,11,2.0882733223591856,1
+Athens,research_he_density|travel,0.125,0.2,True,11,0.1991782228436989,1
+Nairobi,homicide_rate|upper_secondary_ptr,0.05,0.125,True,12,0.6394319481348205,1
+Nairobi,homicide_rate|upper_secondary_ptr,0.125,0.1625,True,12,0.5339388385404078,2
+Nairobi,homicide_rate|upper_secondary_ptr,0.1625,0.18125000000000002,True,12,0.4905292477865828,3
+Nairobi,homicide_rate|upper_secondary_ptr,0.18125000000000002,0.2,True,12,0.07103701084653835,3
+Nairobi,homicide_rate|research_he_density,0.05,0.125,True,12,0.6394319481348205,1
+Nairobi,homicide_rate|research_he_density,0.125,0.1625,True,12,0.5339388385404078,2
+Nairobi,homicide_rate|research_he_density,0.1625,0.18125000000000002,True,12,0.4905292477865828,3
+Nairobi,homicide_rate|research_he_density,0.18125000000000002,0.2,True,12,0.07103701084653835,3
+Nairobi,homicide_rate|travel,0.05,0.125,True,12,0.6394319481348205,1
+Nairobi,homicide_rate|travel,0.125,0.1625,True,12,0.5339388385404078,2
+Nairobi,homicide_rate|travel,0.1625,0.18125000000000002,True,12,0.4905292477865828,3
+Nairobi,homicide_rate|travel,0.18125000000000002,0.2,True,12,0.07103701084653835,3
+Nairobi,upper_secondary_ptr|research_he_density,0.05,0.125,True,12,0.6394319481348205,1
+Nairobi,upper_secondary_ptr|research_he_density,0.125,0.1625,True,12,0.5339388385404078,2
+Nairobi,upper_secondary_ptr|research_he_density,0.1625,0.18125000000000002,True,12,0.4905292477865828,3
+Nairobi,upper_secondary_ptr|research_he_density,0.18125000000000002,0.2,True,12,0.07103701084653835,3
+Nairobi,upper_secondary_ptr|travel,0.05,0.125,True,12,0.6394319481348205,1
+Nairobi,upper_secondary_ptr|travel,0.125,0.1625,True,12,0.5339388385404078,2
+Nairobi,upper_secondary_ptr|travel,0.1625,0.18125000000000002,True,12,0.4905292477865828,3
+Nairobi,upper_secondary_ptr|travel,0.18125000000000002,0.2,True,12,0.07103701084653835,3
+Nairobi,research_he_density|travel,0.05,0.125,True,12,0.6394319481348205,1
+Nairobi,research_he_density|travel,0.125,0.1625,True,12,0.5339388385404078,2
+Nairobi,research_he_density|travel,0.1625,0.18125000000000002,True,12,0.4905292477865828,3
+Nairobi,research_he_density|travel,0.18125000000000002,0.2,True,12,0.07103701084653835,3
+Lagos,homicide_rate|upper_secondary_ptr|research_he_density,0.05,0.2,True,13,1.580546922273733,0
+Lagos,homicide_rate|upper_secondary_ptr|public_transport_density,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,homicide_rate|upper_secondary_ptr|travel,0.05,0.2,True,13,1.580546922273733,0
+Lagos,homicide_rate|upper_secondary_ptr|public_pool_density,0.05,0.2,True,13,0.9762801016028675,0
+Lagos,homicide_rate|research_he_density|public_transport_density,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,homicide_rate|research_he_density|travel,0.05,0.2,True,13,1.580546922273733,0
+Lagos,homicide_rate|research_he_density|public_pool_density,0.05,0.2,True,13,0.9762801016028675,0
+Lagos,homicide_rate|public_transport_density|travel,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,homicide_rate|travel|public_pool_density,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,upper_secondary_ptr|research_he_density|public_transport_density,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,upper_secondary_ptr|research_he_density|travel,0.05,0.2,True,13,1.580546922273733,0
+Lagos,upper_secondary_ptr|research_he_density|public_pool_density,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,upper_secondary_ptr|public_transport_density|travel,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,upper_secondary_ptr|travel|public_pool_density,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,research_he_density|public_transport_density|travel,0.05,0.2,True,13,0.9762801016028604,0
+Lagos,research_he_density|travel|public_pool_density,0.05,0.2,True,13,0.9762801016028604,0
+Cape Town,homicide_rate|upper_secondary_ptr,0.05,0.2,True,14,2.078235671793358,0
+Cape Town,homicide_rate|research_he_density,0.05,0.2,True,14,2.078235671793358,0
+Cape Town,homicide_rate|public_transport_density,0.05,0.2,True,14,1.5290958507716397,0
+Cape Town,homicide_rate|travel,0.05,0.125,True,14,1.5420721345689614,1
+Cape Town,homicide_rate|travel,0.125,0.1625,True,14,1.3325409298762594,2
+Cape Town,homicide_rate|travel,0.1625,0.2,True,14,0.39417150319749084,2
+Cape Town,homicide_rate|public_pool_density,0.05,0.2,True,14,1.5290958507716539,0
+Cape Town,upper_secondary_ptr|research_he_density,0.05,0.2,True,14,2.078235671793358,0
+Cape Town,upper_secondary_ptr|public_transport_density,0.05,0.2,True,14,1.5290958507716397,0
+Cape Town,upper_secondary_ptr|travel,0.05,0.125,True,14,1.5420721345689614,1
+Cape Town,upper_secondary_ptr|travel,0.125,0.1625,True,14,1.3325409298762594,2
+Cape Town,upper_secondary_ptr|travel,0.1625,0.2,True,14,0.39417150319749084,2
+Cape Town,upper_secondary_ptr|public_pool_density,0.05,0.2,True,14,1.5290958507716539,0
+Cape Town,research_he_density|public_transport_density,0.05,0.2,True,14,1.5290958507716397,0
+Cape Town,research_he_density|travel,0.05,0.125,True,14,1.5420721345689614,1
+Cape Town,research_he_density|travel,0.125,0.1625,True,14,1.3325409298762594,2
+Cape Town,research_he_density|travel,0.1625,0.2,True,14,0.39417150319749084,2
+Cape Town,research_he_density|public_pool_density,0.05,0.2,True,14,1.5290958507716539,0
+Dubai,homicide_rate|upper_secondary_ptr,0.05,0.2,True,15,0.0073926681414846485,0
+Dubai,homicide_rate|research_he_density,0.05,0.2,True,15,0.0073926681414846485,0
+Dubai,homicide_rate|public_transport_density,0.05,0.125,True,15,0.004458175991445046,1
+Dubai,homicide_rate|public_transport_density,0.125,0.2,True,15,1.0053621295935216,1
+Dubai,homicide_rate|travel,0.05,0.2,True,15,0.0073926681414846485,0
+Dubai,homicide_rate|public_pool_density,0.05,0.125,True,15,0.004458175991459257,1
+Dubai,homicide_rate|public_pool_density,0.125,0.2,True,15,1.0053621295935216,1
+Dubai,upper_secondary_ptr|research_he_density,0.05,0.2,True,15,0.0073926681414846485,0
+Dubai,upper_secondary_ptr|public_transport_density,0.05,0.125,True,15,0.004458175991445046,1
+Dubai,upper_secondary_ptr|public_transport_density,0.125,0.2,True,15,1.0053621295935216,1
+Dubai,upper_secondary_ptr|travel,0.05,0.2,True,15,0.0073926681414846485,0
+Dubai,upper_secondary_ptr|public_pool_density,0.05,0.125,True,15,0.004458175991459257,1
+Dubai,upper_secondary_ptr|public_pool_density,0.125,0.2,True,15,1.0053621295935216,1
+Dubai,research_he_density|public_transport_density,0.05,0.125,True,15,0.004458175991445046,1
+Dubai,research_he_density|public_transport_density,0.125,0.2,True,15,1.0053621295935216,1
+Dubai,research_he_density|travel,0.05,0.2,True,15,0.0073926681414846485,0
+Dubai,research_he_density|public_pool_density,0.05,0.125,True,15,0.004458175991459257,1
+Dubai,research_he_density|public_pool_density,0.125,0.2,True,15,1.0053621295935216,1
+Dubai,public_transport_density|travel,0.05,0.125,True,15,0.004458175991445046,1
+Dubai,public_transport_density|travel,0.125,0.2,True,15,1.0053621295935216,1
+Dubai,travel|public_pool_density,0.05,0.125,True,15,0.004458175991459257,1
+Dubai,travel|public_pool_density,0.125,0.2,True,15,1.0053621295935216,1
+Istanbul,public_transport_density|travel,0.05,0.125,True,16,0.7145971835154441,1
+Istanbul,public_transport_density|travel,0.125,0.2,True,16,1.7033295822279015,1
+Istanbul,travel|public_pool_density,0.05,0.125,True,16,0.7145971835154512,1
+Istanbul,travel|public_pool_density,0.125,0.2,True,16,1.7033295822279015,1
+Mumbai,homicide_rate|research_he_density,0.05,0.125,True,17,0.8174721301393504,1
+Mumbai,homicide_rate|research_he_density,0.125,0.1625,True,17,0.6696759763703071,2
+Mumbai,homicide_rate|research_he_density,0.1625,0.18125000000000002,True,17,0.60659571806044,3
+Mumbai,homicide_rate|research_he_density,0.18125000000000002,0.2,True,17,0.16834973161751776,3
+Mumbai,homicide_rate|travel,0.05,0.125,True,17,0.8174721301393504,1
+Mumbai,homicide_rate|travel,0.125,0.1625,True,17,0.6696759763703071,2
+Mumbai,homicide_rate|travel,0.1625,0.18125000000000002,True,17,0.60659571806044,3
+Mumbai,homicide_rate|travel,0.18125000000000002,0.2,True,17,0.16834973161751776,3
+Mumbai,research_he_density|travel,0.05,0.125,True,17,0.8174721301393504,1
+Mumbai,research_he_density|travel,0.125,0.1625,True,17,0.6696759763703071,2
+Mumbai,research_he_density|travel,0.1625,0.18125000000000002,True,17,0.60659571806044,3
+Mumbai,research_he_density|travel,0.18125000000000002,0.2,True,17,0.16834973161751776,3
+Delhi,homicide_rate|research_he_density,0.05,0.125,True,18,3.3372634483963495,1
+Delhi,homicide_rate|research_he_density,0.125,0.2,True,18,1.3165868128155083,1
+Delhi,homicide_rate|public_transport_density,0.05,0.0875,True,18,0.2250993736197131,2
+Delhi,homicide_rate|public_transport_density,0.0875,0.125,True,18,0.760282611518349,2
+Delhi,homicide_rate|public_transport_density,0.125,0.2,True,18,0.7808377540794638,1
+Delhi,homicide_rate|travel,0.05,0.125,True,18,3.3372634483963495,1
+Delhi,homicide_rate|travel,0.125,0.2,True,18,1.3165868128155083,1
+Delhi,homicide_rate|public_pool_density,0.05,0.0875,True,18,0.2250993736197131,2
+Delhi,homicide_rate|public_pool_density,0.0875,0.125,True,18,0.760282611518349,2
+Delhi,homicide_rate|public_pool_density,0.125,0.2,True,18,0.7808377540794638,1
+Delhi,research_he_density|public_transport_density,0.05,0.0875,True,18,0.2250993736197131,2
+Delhi,research_he_density|public_transport_density,0.0875,0.125,True,18,0.760282611518349,2
+Delhi,research_he_density|public_transport_density,0.125,0.2,True,18,0.7808377540794638,1
+Delhi,research_he_density|travel,0.05,0.125,True,18,3.3372634483963495,1
+Delhi,research_he_density|travel,0.125,0.2,True,18,1.3165868128155083,1
+Delhi,research_he_density|public_pool_density,0.05,0.0875,True,18,0.2250993736197131,2
+Delhi,research_he_density|public_pool_density,0.0875,0.125,True,18,0.760282611518349,2
+Delhi,research_he_density|public_pool_density,0.125,0.2,True,18,0.7808377540794638,1
+Delhi,public_transport_density|travel,0.05,0.0875,True,18,0.2250993736197131,2
+Delhi,public_transport_density|travel,0.0875,0.125,True,18,0.760282611518349,2
+Delhi,public_transport_density|travel,0.125,0.2,True,18,0.7808377540794638,1
+Delhi,travel|public_pool_density,0.05,0.0875,True,18,0.2250993736197131,2
+Delhi,travel|public_pool_density,0.0875,0.125,True,18,0.760282611518349,2
+Delhi,travel|public_pool_density,0.125,0.2,True,18,0.7808377540794638,1
+Dhaka,homicide_rate|research_he_density,0.05,0.125,True,19,0.2651495349829247,1
+Dhaka,homicide_rate|research_he_density,0.125,0.1625,True,19,0.19161182684144507,2
+Dhaka,homicide_rate|research_he_density,0.1625,0.18125000000000002,True,19,0.16324283412869534,3
+Dhaka,homicide_rate|research_he_density,0.18125000000000002,0.19062500000000002,True,19,0.1512940977798536,4
+Dhaka,homicide_rate|research_he_density,0.19062500000000002,0.1953125,True,19,0.14589912788105153,5
+Dhaka,homicide_rate|research_he_density,0.1953125,0.2,True,19,0.04503155367972056,5
+Dhaka,homicide_rate|travel,0.05,0.125,True,19,0.2651495349829247,1
+Dhaka,homicide_rate|travel,0.125,0.1625,True,19,0.19161182684144507,2
+Dhaka,homicide_rate|travel,0.1625,0.18125000000000002,True,19,0.16324283412869534,3
+Dhaka,homicide_rate|travel,0.18125000000000002,0.19062500000000002,True,19,0.1512940977798536,4
+Dhaka,homicide_rate|travel,0.19062500000000002,0.1953125,True,19,0.14589912788105153,5
+Dhaka,homicide_rate|travel,0.1953125,0.2,True,19,0.04503155367972056,5
+Dhaka,research_he_density|travel,0.05,0.125,True,19,0.2651495349829247,1
+Dhaka,research_he_density|travel,0.125,0.1625,True,19,0.19161182684144507,2
+Dhaka,research_he_density|travel,0.1625,0.18125000000000002,True,19,0.16324283412869534,3
+Dhaka,research_he_density|travel,0.18125000000000002,0.19062500000000002,True,19,0.1512940977798536,4
+Dhaka,research_he_density|travel,0.19062500000000002,0.1953125,True,19,0.14589912788105153,5
+Dhaka,research_he_density|travel,0.1953125,0.2,True,19,0.04503155367972056,5
+Tokyo,homicide_rate,0.05,0.125,True,20,2.9944523101109297,1
+Tokyo,homicide_rate,0.125,0.2,True,20,0.7135583991770176,1
+Tokyo,travel,0.05,0.125,True,20,2.9944523101109297,1
+Tokyo,travel,0.125,0.2,True,20,0.7135583991770176,1
+Shanghai,homicide_rate|research_he_density,0.05,0.2,True,21,1.7823320858933016,0
+Shanghai,homicide_rate|public_transport_density,0.05,0.2,True,21,1.1719419967631097,0
+Shanghai,homicide_rate|travel,0.05,0.2,True,21,1.7823320858933016,0
+Shanghai,homicide_rate|public_pool_density,0.05,0.2,True,21,1.171941996763124,0
+Shanghai,research_he_density|public_transport_density,0.05,0.2,True,21,1.1719419967631097,0
+Shanghai,research_he_density|travel,0.05,0.2,True,21,1.7823320858933016,0
+Shanghai,research_he_density|public_pool_density,0.05,0.2,True,21,1.1719419967631097,0
+Shanghai,public_transport_density|travel,0.05,0.2,True,21,1.1719419967631097,0
+Shanghai,travel|public_pool_density,0.05,0.2,True,21,1.1719419967631097,0
+Singapore,,0.05,0.125,True,22,0.7561861589753676,1
+Singapore,,0.125,0.2,True,22,2.356997977181827,1
+Jakarta,homicide_rate|research_he_density,0.05,0.125,True,23,1.3650249399664176,1
+Jakarta,homicide_rate|research_he_density,0.125,0.1625,True,23,1.217280936657751,2
+Jakarta,homicide_rate|research_he_density,0.1625,0.2,True,23,0.33454979950820984,2
+Jakarta,homicide_rate|travel,0.05,0.125,True,23,1.3650249399664176,1
+Jakarta,homicide_rate|travel,0.125,0.1625,True,23,1.217280936657751,2
+Jakarta,homicide_rate|travel,0.1625,0.2,True,23,0.33454979950820984,2
+Jakarta,homicide_rate|fixed_broadband_mbps,0.05,0.125,True,23,1.3650249399664176,1
+Jakarta,homicide_rate|fixed_broadband_mbps,0.125,0.1625,True,23,1.217280936657751,2
+Jakarta,homicide_rate|fixed_broadband_mbps,0.1625,0.2,True,23,0.33454979950820984,2
+Jakarta,research_he_density|travel,0.05,0.125,True,23,1.3650249399664176,1
+Jakarta,research_he_density|travel,0.125,0.1625,True,23,1.217280936657751,2
+Jakarta,research_he_density|travel,0.1625,0.2,True,23,0.33454979950820984,2
+Jakarta,research_he_density|fixed_broadband_mbps,0.05,0.125,True,23,1.3650249399664176,1
+Jakarta,research_he_density|fixed_broadband_mbps,0.125,0.1625,True,23,1.217280936657751,2
+Jakarta,research_he_density|fixed_broadband_mbps,0.1625,0.2,True,23,0.33454979950820984,2
+Jakarta,travel|fixed_broadband_mbps,0.05,0.125,True,23,1.3650249399664176,1
+Jakarta,travel|fixed_broadband_mbps,0.125,0.1625,True,23,1.217280936657751,2
+Jakarta,travel|fixed_broadband_mbps,0.1625,0.2,True,23,0.33454979950820984,2
+Melbourne,homicide_rate|upper_secondary_ptr,0.05,0.2,True,24,2.536656997275621,0
+Melbourne,homicide_rate|research_he_density,0.05,0.2,True,24,2.536656997275621,0
+Melbourne,homicide_rate|public_transport_density,0.05,0.2,True,24,2.1075322350499093,0
+Melbourne,homicide_rate|travel,0.05,0.125,True,24,3.2118358592115044,1
+Melbourne,homicide_rate|travel,0.125,0.2,True,24,1.1369493585682378,1
+Melbourne,homicide_rate|public_pool_density,0.05,0.2,True,24,2.1075322350499093,0
+Melbourne,upper_secondary_ptr|research_he_density,0.05,0.2,True,24,2.536656997275628,0
+Melbourne,upper_secondary_ptr|public_transport_density,0.05,0.2,True,24,2.107532235049895,0
+Melbourne,upper_secondary_ptr|travel,0.05,0.125,True,24,3.2118358592115044,1
+Melbourne,upper_secondary_ptr|travel,0.125,0.2,True,24,1.1369493585682378,1
+Melbourne,upper_secondary_ptr|public_pool_density,0.05,0.2,True,24,2.1075322350499093,0
+Melbourne,research_he_density|public_transport_density,0.05,0.2,True,24,2.107532235049895,0
+Melbourne,research_he_density|travel,0.05,0.125,True,24,3.2118358592115044,1
+Melbourne,research_he_density|travel,0.125,0.2,True,24,1.1369493585682378,1
+Melbourne,research_he_density|public_pool_density,0.05,0.2,True,24,2.1075322350499093,0
+Melbourne,public_transport_density|travel,0.05,0.06875,True,24,0.2057661894642564,3
+Melbourne,public_transport_density|travel,0.06875,0.0875,True,24,0.4877524842911285,3
+Melbourne,public_transport_density|travel,0.0875,0.125,True,24,0.5195586443903082,2
+Melbourne,public_transport_density|travel,0.125,0.2,True,24,0.5620743471165923,1
+Melbourne,travel|public_pool_density,0.05,0.06875,True,24,0.2057661894642635,3
+Melbourne,travel|public_pool_density,0.06875,0.0875,True,24,0.4877524842911285,3
+Melbourne,travel|public_pool_density,0.0875,0.125,True,24,0.5195586443903082,2
+Melbourne,travel|public_pool_density,0.125,0.2,True,24,0.5620743471165781,1

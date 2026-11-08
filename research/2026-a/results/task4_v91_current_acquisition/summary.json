@@ -1,0 +1,103 @@
+{
+  "model_version": "V91",
+  "previous_model_version": "V79",
+  "input_bounds_sha256": "dc3fd32feb848e25c3e33eba4b0c6faa6e9e21062ebb8436b05ee415a43fff0f",
+  "previous_minimum_bundles_sha256": "17a44496912839433362c2ed71d72014cde54185d8f8b79ea43721596fcb489c",
+  "actual_changed_cells": 0,
+  "actual_changed_ranks": 0,
+  "main_admitted": false,
+  "baseline_matches": true,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "fixed_alpha": 0.1,
+  "possible_champions": 25,
+  "choice": [
+    "Singapore"
+  ],
+  "evaluated_bundles": 550,
+  "unresolved_bundles": 0,
+  "changed_acquisition_diagnostics": [
+    {
+      "city": "Phoenix",
+      "fixed_alpha_minimum_prior": 2,
+      "fixed_alpha_minimum_current": 2,
+      "smallest_certified_continuous_bundle_prior": 3,
+      "smallest_certified_continuous_bundle_current": 2,
+      "certified_minimal_bundles_prior": 30,
+      "certified_minimal_bundles_current": 6
+    }
+  ],
+  "focal_cities": [
+    {
+      "city": "Phoenix",
+      "fixed_alpha_minimum": 2,
+      "fixed_alpha_minimal_bundles": 14,
+      "smallest_certified_continuous_bundle": 2,
+      "minimum_proved_in_outer_model": true,
+      "unresolved_smaller_bundles": 0,
+      "certified_minimal_bundles": 6,
+      "unresolved_at_smallest_certified_size": 0
+    },
+    {
+      "city": "Cape Town",
+      "fixed_alpha_minimum": 1,
+      "fixed_alpha_minimal_bundles": 3,
+      "smallest_certified_continuous_bundle": 2,
+      "minimum_proved_in_outer_model": true,
+      "unresolved_smaller_bundles": 0,
+      "certified_minimal_bundles": 12,
+      "unresolved_at_smallest_certified_size": 0
+    },
+    {
+      "city": "Mumbai",
+      "fixed_alpha_minimum": 2,
+      "fixed_alpha_minimal_bundles": 3,
+      "smallest_certified_continuous_bundle": 2,
+      "minimum_proved_in_outer_model": true,
+      "unresolved_smaller_bundles": 0,
+      "certified_minimal_bundles": 3,
+      "unresolved_at_smallest_certified_size": 0
+    },
+    {
+      "city": "Delhi",
+      "fixed_alpha_minimum": 2,
+      "fixed_alpha_minimal_bundles": 9,
+      "smallest_certified_continuous_bundle": 2,
+      "minimum_proved_in_outer_model": true,
+      "unresolved_smaller_bundles": 0,
+      "certified_minimal_bundles": 9,
+      "unresolved_at_smallest_certified_size": 0
+    },
+    {
+      "city": "Tokyo",
+      "fixed_alpha_minimum": 1,
+      "fixed_alpha_minimal_bundles": 5,
+      "smallest_certified_continuous_bundle": 1,
+      "minimum_proved_in_outer_model": true,
+      "unresolved_smaller_bundles": 0,
+      "certified_minimal_bundles": 2,
+      "unresolved_at_smallest_certified_size": 0
+    },
+    {
+      "city": "Shanghai",
+      "fixed_alpha_minimum": 1,
+      "fixed_alpha_minimal_bundles": 3,
+      "smallest_certified_continuous_bundle": 2,
+      "minimum_proved_in_outer_model": true,
+      "unresolved_smaller_bundles": 0,
+      "certified_minimal_bundles": 9,
+      "unresolved_at_smallest_certified_size": 0
+    }
+  ],
+  "scope": "Optimistic city-local exact revelation at current upper endpoints in the rectangular outer model. Not guaranteed observations, joint physical attainability, city quality, or a necessary performance champion.",
+  "proof": "The upper endpoints maximize target lower score while retaining its upper score; target regret decreases and rivals regret increases for every alpha. The same endpoint vector is favorable throughout the preference interval.",
+  "tolerances": {
+    "witness_negative_margin": 1e-08,
+    "score_padding": 1e-09,
+    "certificate_positive_gap": 1e-08,
+    "max_depth": 10,
+    "numerical_not_formal_interval_arithmetic": true
+  }
+}

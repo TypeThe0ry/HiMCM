@@ -1,22 +1,22 @@
 {
   "registry": {
-    "model_version": "V79",
-    "latest_review": "V90",
-    "module": "task4_delhi_allocation_revision",
-    "factory": "delhi_bounds",
-    "baseline_ranks": "results/task4_v79_delhi_allocation/ranks.csv",
-    "baseline_scenario": "v79_school_allocation",
+    "model_version": "V91",
+    "latest_review": "V91",
+    "module": "task4_phoenix_monitor_revision",
+    "factory": "phoenix_monitor_bounds",
+    "baseline_ranks": "results/task4_v91_phoenix_monitor/ranks.csv",
+    "baseline_scenario": "v91_monitor_envelope",
     "fixed_alpha": 0.1,
     "alpha_range": [
       0.05,
       0.2
     ],
-    "latest_acquisition_analysis": "results/task4_v90_current_acquisition/summary.json",
-    "main_admitted": false,
-    "scope": "Conditional ten-indicator evidence bounds; school stage, geography, period and survey limitations remain.",
-    "baseline_bounds": "results/task4_v79_delhi_allocation/utility_bounds.csv",
+    "latest_acquisition_analysis": "results/task4_v91_current_acquisition/summary.json",
+    "main_admitted": true,
+    "scope": "Conditional ten-indicator evidence bounds. Phoenix PM2.5 is an incorporated-city observed-monitor convex mixture, not resident/high-school exposure; other source age, geography and measurement limitations remain.",
+    "baseline_bounds": "results/task4_v91_phoenix_monitor/utility_bounds.csv",
     "latest_stress_analysis": "results/task4_v82_joint_stress/summary.json",
-    "latest_acquisition_analysis_model_version": "V79",
+    "latest_acquisition_analysis_model_version": "V91",
     "latest_stress_analysis_model_version": "V79",
     "latest_acquisition_limits": "results/task4_v80_acquisition_limits/summary.json",
     "latest_acquisition_limits_model_version": "V79",
@@ -24,10 +24,10 @@
     "latest_precision_frontier": "results/task4_v80_precision_frontier/summary.json",
     "latest_precision_frontier_model_version": "V79"
   },
-  "registry_sha256": "a97a583c5fd314f9ca16bd11003915befe7a9bc4cff38ba3fd475959a849897e",
-  "baseline_ranks_sha256": "70ec00417b025310ab17ffa5569384b9dd2b8a469beb455f93820562b3b4241f",
-  "baseline_bounds_sha256": "409059f97bb5d30203b3b5855032d14cef0ff58f493b2ac6c07b6d95ad18e54d",
-  "utility_bounds_sha256": "01e396893d90c7f0110b15ec93061226417d9c7ff2a3edb34f88978396d29ae1",
+  "registry_sha256": "09a4eb31eb95edd068f8aaaddcfc623366e934e6c67f33696e3fd38d760f0878",
+  "baseline_ranks_sha256": "d0e704f5d09553d83d11184aca08eb0833eee8d65259f997faa1697d851ee10e",
+  "baseline_bounds_sha256": "3ef80a7416cec34814e7b385799c25edb9147defc0e5ffd0ac487fd1f9bc8377",
+  "utility_bounds_sha256": "0d168b99b6796b1b49e08f76a0f7a775e7a6f805f32570a3d5a8ee8bc6e690ab",
   "travel_evidence_sha256": "6d1d17a686b75d4bb949882d3247ed5ae3333db74f677f97ea77a16d5fdf2fcd",
   "travel_evidence_verified": true,
   "informative_travel_cities": 5,
@@ -70,5 +70,5 @@
       "Singapore"
     ]
   },
-  "main_admitted": false
+  "main_admitted": true
 }
