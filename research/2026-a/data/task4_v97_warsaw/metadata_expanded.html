@@ -1,0 +1,757 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	GUS - Bank Danych Lokalnych
+</title><link rel="shortcut icon" href="https://bdl.stat.gov.pl/bdl/favicon.ico" /><meta http-equiv="X-UA-Compatible" content="IE=11;IE=edge" />
+<link href="../../App_Themes/Light/LightNew.css" type="text/css" rel="stylesheet" /><link href="/bdl/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nNXBr8KEWQ6y55zZvDD0AMsLxtNZlaBT2xZRXAFAL00q5eGWB5xdqZ6RhbrQIXEXOWBnonfEx_mGDH3nwPLD6cMT4hYH0&amp;t=638841126637275692&amp;compress=2&amp;_TSM_CombinedScripts_=%3b%3b%7c637747370477927469%3a2cc223ef%3bTelerik.Web.UI%2c+Version%3d2017.3.913.45%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3apl-PL%3a03e3fdef-45f6-40a0-88ab-9645d53a0f37%3ad7e35272%3a505983de%3a3e0dfe6c%3ae7750fd8%3ae347b32f%3aa942ad92%3ab256253d%3a6e804bb4%3aa957bcf1%3ace6e779%3a21b4b2bb%3a69f99efe%3adc65d966%3ad747760e%3aba1b8630%3aca0174c4%3a9503e2d4%3affbea00e%3ab25e979b%3af2eff81c%3af7f0672f" type="text/css" rel="stylesheet" /></head>
+<body class="normal" onkeydown="return (event.keyCode!=13)">
+    <form method="post" action="#" id="aspnetForm" class="mainForm">
+<input type="hidden" name="ctl00_StyleManager_TSSM" id="ctl00_StyleManager_TSSM" value="" />
+<input type="hidden" name="ctl00_MainScriptManager_TSM" id="ctl00_MainScriptManager_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/bdl/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_MainScriptManager_TSM&amp;compress=2&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3apl-PL%3add3ac3d5-1e29-4112-8fed-529caffa8f24%3aea597d4b%3bTelerik.Web.UI%3apl-PL%3a03e3fdef-45f6-40a0-88ab-9645d53a0f37%3a16e4e7cd%3af7645509%3a22a6274a%3a24ee1bba%3af46195d3%3a874f8ea2%3ab2e06756%3a92fe8ea0%3afa31b949%3a4877f69a%3a33715776%3ac128760b%3a19620875%3a490a9d4e%3abd8f85e4%3a86526ba7%3acda80b3%3a383e4ce8%3aed16cbdc%3a1e771326%3a88144a7a%3a8c2d243e%3aeaae47ab%3a4cacbc31%3adc752f02%3a6d43f6d9%3a78e4289a%3addbfcb67%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3apl-PL%3add3ac3d5-1e29-4112-8fed-529caffa8f24%3a76254418" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2BD5E890" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="LAdzkWA5A6SEOU+/xP8KTTeVtPK9pXMjHE4zIReWHsUc6h+VEBjXZhRLpPES3k24tuLT7w4EOFMY0x22YlEo7aHhgNRTUCGN+gjust6x9WCsSuV3G23nK/yKs0Z4ByeDdj1SmlNobkka3EUR+pjigH2Wd+TXRecJf0YRCCoPf/0M3b6M" />
+    
+        <script type="text/javascript">
+                
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-75153058-1', 'auto');        
+            ga('send', 'pageview');
+                        
+            function createCookie(name, value, days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    var expires = "; expires=" + date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name + "=" + value + expires + "; path=/";
+            }
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+            function eraseCookie(name) {
+                createCookie(name, "", -1);
+            }
+            function linkButtonClicking(button, args) {
+                window.location = button.get_navigateUrl();
+                args.set_cancel(true);
+            }
+            (function ($) {
+                $(document).ready(function () {
+                    var read = readCookie("cookie-accepted");                    
+                    if (!read || read != "true") {                        
+                        createCookie("cookie-accepted", "true", 365);
+                        $("#CookieInfo").show();
+                    }
+                });
+            })($telerik.$);
+	    </script>    
+    
+
+    
+    <div id="ctl00_MainWindowMan" style="display:none;">
+	<!-- 2017.3.913.45 --><div id="ctl00_MainWindowMan_alerttemplate" style="display:none;">
+		<div class="rwDialog rwAlertDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button type="button" class="rwOkBtn" onclick="$find('{0}').close(true); return false;">##LOC[OK]##</button>
+			</div>
+		</div>
+		</div><div id="ctl00_MainWindowMan_prompttemplate" style="display:none;">
+		<div class="rwDialog rwPromptDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+				<div class="rwPromptInputContainer">
+					<script type="text/javascript">
+						function RadWindowprompt_detectenter(id, ev, input) {
+							if (!ev) ev = window.event;
+							if (ev.keyCode == 13) {
+								var but = input.parentNode.parentNode.parentNode.getElementsByTagName("button")[0];
+								if (but) {
+									if (but.click) {
+										but.click();
+									}
+									else if (but.onclick) {
+										but.focus();
+										var click = but.onclick;
+										but.onclick = null;
+										if (click) click.call(but);
+									}
+								}
+								return false;
+							}
+							else return true;
+						}
+					</script>
+					<input title="Enter Value" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" type="text" class="rwPromptInput radPreventDecorate" value="{2}" />
+				</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button type="button" class="rwOkBtn" onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value); return false;">##LOC[OK]##</button>
+				<button type="button" class="rwCancelBtn" onclick="$find('{0}').close(null); return false;">##LOC[Cancel]##</button>
+			</div>
+		</div>
+		</div><div id="ctl00_MainWindowMan_confirmtemplate" style="display:none;">
+		<div class="rwDialog rwConfirmDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button type="button" class="rwOkBtn" onclick="$find('{0}').close(true); return false;">##LOC[OK]##</button>
+				<button type="button" class="rwCancelBtn" onclick="$find('{0}').close(false); return false;">##LOC[Cancel]##</button>
+			</div>
+		</div>
+		</div><input id="ctl00_MainWindowMan_ClientState" name="ctl00_MainWindowMan_ClientState" type="hidden" />
+</div>
+    <div id="ctl00_MainFormDecorator" class="RadFormDecorator" style="display:none;">
+	<script type="text/javascript">
+//<![CDATA[
+
+if (typeof(WebForm_AutoFocus) != 'undefined' && !isWebFormAutoFocusMethodCalled)
+{   
+	var old_WebForm_AutoFocus = WebForm_AutoFocus;
+	WebForm_AutoFocus = function(arg)
+	{
+		Sys.Application.add_load(function()
+		{            
+			old_WebForm_AutoFocus(arg);
+			WebForm_AutoFocus = old_WebForm_AutoFocus;
+		});
+	}
+    var isWebFormAutoFocusMethodCalled = true;
+}
+if (typeof(Telerik) != 'undefined' && Type.isNamespace(Telerik.Web))
+{
+	if (Telerik.Web.UI.RadFormDecorator)
+	{
+		Telerik.Web.UI.RadFormDecorator.initializePage("ctl00_MainFormDecorator", "", "Default", 57343);
+	}
+}
+//]]>
+</script><input id="ctl00_MainFormDecorator_ClientState" name="ctl00_MainFormDecorator_ClientState" type="hidden" />
+</div>
+    <div id="ctl00_MainToolTipMan" class="ttipAuto" style="display:none;position:absolute;">
+	<div id="ctl00_MainToolTipManRTMPanel">
+
+	</div><input id="ctl00_MainToolTipMan_ClientState" name="ctl00_MainToolTipMan_ClientState" type="hidden" />
+</div>
+    <div id="ctl00_MainAjaxManagerSU">
+	<span id="ctl00_MainAjaxManager" style="display:none;"></span>
+</div>    
+    
+   
+    <div id="CookieInfo" style="display:none;">
+        
+            <div class="text">Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych oraz funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do twoich potrzeb. Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje.</div>
+            <div class="close">
+                <a href="#" onclick='$("#CookieInfo").hide();'>Zrozumiałem, zamknij ten komunikat</a>
+            </div>
+        
+    </div>
+    <div id="MainWrapper">
+
+        <div id="MainhHeader">
+            <div id="LinksWrapper">                
+                
+                    <div style="display:inline-block" class="dataState">
+                        <span>                                            
+                            Dane wg stanu na 2026.11.05
+                        </span>                    
+                    </div>
+                    <div class="right">                           
+                        
+                                Użytkownik: Gość                                               
+                            
+                    </div>
+                  
+            </div>
+            <div id="NavigationWrapper">
+                <div id="ctl00_MainMenu_Menu" class="RadNavigation RadNavigation_Default">
+	<div class="rnvRootGroupWrapper">
+		<ul class="rnvRootGroup rnvGroup">
+			<li class="rnvItem rnvFirst icon right"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                
+                        <a href='/bdl/logowanie' title='Logowanie'>
+                            <img src='/bdl/App_Themes/Light/ico/sign_in.png' />
+                        </a>
+                    
+            
+			</div></li><li class="rnvItem  icon right small-hidden"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='/bdl/kontakt' title='Kontakt'>
+                    <img src="/bdl/App_Themes/Light/ico/mail.png" />
+                </a>
+            
+			</div></li><li class="rnvItem  icon right small-hidden"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='/bdl/rss/PL.rss' title='RSS' target="_blank">
+                    <img src="/bdl/App_Themes/Light/ico/rss.png" />
+                </a>
+            
+			</div></li><li class="rnvItem  icon right small-hidden"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='https://www.facebook.com/BankDanychLokalnych' target="_blank" title='FB.com/BankDanychLokalnych'>
+                    <img src="/bdl/App_Themes/Light/ico/facebook.png" />
+                </a>
+            
+			</div></li><li class="rnvItem  icon right small-hidden"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='/bdl/ankieta' title='Ankieta'>
+                    <img src="/bdl/App_Themes/Light/ico/talk.png" />
+                </a>
+            
+			</div></li><li class="rnvItem  icon right"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='/BDL/metadane/metryka/3235?lang=en' title='Zmiana języka'>
+                    <img src="/bdl/img/en.png" />
+                </a>
+            
+			</div></li><li class="rnvItem  icon right"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='/BDL/metadane/metryka/3235?theme=Dark'
+                    title='Motyw ciemny'>
+                    <img src="/bdl/App_Themes/Light/ico/eye_dark.png" />
+                </a>
+            
+			</div></li><li class="rnvItem  icon right"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='/BDL/metadane/metryka/3235?theme=Dark' title='Motyw ciemny'>
+                    <img src="/bdl/App_Themes/Light/ico/eye_dark.png" />
+                </a>
+            
+			</div></li><li class="rnvItem rnvSelected icon right"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='/BDL/metadane/metryka/3235?theme=Light' title='Motyw jasny'>
+                    <img src="/bdl/App_Themes/Light/ico/eye_light.png" />
+                </a>
+            
+			</div></li><li class="rnvItem  right search medium-hidden"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <div id="ctl00_MainMenu_ctl09_SearchBox" class="RadSearchBox RadSearchBox_Default">
+					<span class="rsbInner"><input class="rsbInput radPreventDecorate rsbEmptyMessage" type="text" value="Szukaj cechy" name="ctl00_MainMenu_ctl09_SearchBox" id="ctl00_MainMenu_ctl09_SearchBox_Input" /><button class="rsbButton rsbButtonSearch" type="button"><span class="rsbIcon rsbIconSearch"><!-- &nbsp; --></span></button></span><input id="ctl00_MainMenu_ctl09_SearchBox_ClientState" name="ctl00_MainMenu_ctl09_SearchBox_ClientState" type="hidden" />
+				</div>
+            
+			</div></li><li class="rnvItem rnvSelected logo logoPL"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                <a href='/bdl/start'>
+                    Strona główna</a>
+            
+			</div></li><li class="rnvItem"><span class="rnvRootLink rnvLink"><span class="rnvText">DANE</span><span class="rnvToggle radIcon"></span></span><div class="rnvSlide">
+				<div class="radPopup rnvPopup">
+					<ul class="rnvUL">
+						<li class="rnvItem rnvFirst"><a class="rnvLink" href="/bdl/dane/podgrup/temat"><span class="rnvText">Dane według dziedzin</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/dane/teryt/jednostka"><span class="rnvText">Dane dla jednostki terytorialnej</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/obszary"><span class="rnvText">Obszary funkcjonalne</span></a></li><li class="rnvItem rnvLast"><a class="rnvLink" href="/bdl/rankingi"><span class="rnvText">Rankingi statystyczne</span></a></li>
+					</ul>
+				</div>
+			</div></li><li class="rnvItem"><span class="rnvRootLink rnvLink"><span class="rnvText">METADANE</span><span class="rnvToggle radIcon"></span></span><div class="rnvSlide">
+				<div class="radPopup rnvPopup">
+					<ul class="rnvUL">
+						<li class="rnvItem rnvFirst"><a class="rnvLink" href="/bdl/metadane"><span class="rnvText">Strona główna</span></a></li><li class="rnvItem"><span class="rnvLink"><span class="rnvText">Układ danych</span><span class="rnvToggle radIcon"></span></span><div class="rnvSlide">
+							<div class="radPopup rnvPopup">
+								<ul class="rnvUL">
+									<li class="rnvItem rnvFirst"><a class="rnvLink" href="/bdl/metadane/kategorie"><span class="rnvText">Kategorie</span></a></li><li class="rnvItem rnvLast"><a class="rnvLink" href="/bdl/metadane/cechy/szukaj"><span class="rnvText">Szukaj cechy</span></a></li>
+								</ul>
+							</div>
+						</div></li><li class="rnvItem"><span class="rnvLink"><span class="rnvText">Podział terytorialny</span><span class="rnvToggle radIcon"></span></span><div class="rnvSlide">
+							<div class="radPopup rnvPopup">
+								<ul class="rnvUL">
+									<li class="rnvItem rnvFirst"><a class="rnvLink" href="/bdl/metadane/teryt/lista"><span class="rnvText">Jednostki terytorialne</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/metadane/teryt/szukaj"><span class="rnvText">Znajdź jednostkę terytorialną</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/metadane/teryt/kod"><span class="rnvText">Kod terytorialny</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/metadane/nuts"><span class="rnvText">Jednostki statystyczne</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/metadane/teryt/miejscowosc"><span class="rnvText">Miejscowość statystyczna</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/metadane/teryt/rodzaj"><span class="rnvText">Rodzaj jednostki terytorialnej</span></a></li><li class="rnvItem rnvLast"><a class="rnvLink" href="/bdl/metadane/teryt/zmiany"><span class="rnvText">Zmiany w podziale terytorialnym</span></a></li>
+								</ul>
+							</div>
+						</div></li><li class="rnvItem"><span class="rnvLink"><span class="rnvText">Inne</span><span class="rnvToggle radIcon"></span></span><div class="rnvSlide">
+							<div class="radPopup rnvPopup">
+								<ul class="rnvUL">
+									<li class="rnvItem rnvFirst"><a class="rnvLink" href="/bdl/metadane/atrybut"><span class="rnvText">Atrybuty</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/metadane/agregaty"><span class="rnvText">Agregaty</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/metadane/jednostki"><span class="rnvText">Jednostki miary</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/metadane/pkd2004"><span class="rnvText">Klasyfikacja PKD 2004</span></a></li><li class="rnvItem rnvLast"><a class="rnvLink" href="/bdl/metadane/pkd2007"><span class="rnvText">Klasyfikacja PKD 2007</span></a></li>
+								</ul>
+							</div>
+						</div></li><li class="rnvItem rnvLast"><a class="rnvLink" href="/bdl/metadane/pojecia"><span class="rnvText">Pojęcia</span></a></li>
+					</ul>
+				</div>
+			</div></li><li class="rnvItem"><a class="rnvRootLink rnvLink" target="_blank" href="https://api.stat.gov.pl/"><span class="rnvText">API</span></a></li><li class="rnvItem"><span class="rnvRootLink rnvLink"><span class="rnvText">ARCHIWUM</span><span class="rnvToggle radIcon"></span></span><div class="rnvSlide">
+				<div class="radPopup rnvPopup">
+					<ul class="rnvUL">
+						<li class="rnvItem rnvFirst"><a class="rnvLink" href="/bdl/archiwum2011"><span class="rnvText">Archiwum wybranych tabel dla lat 2020-2021 z danymi bilansowanymi na podstawie wyników NSP 2011</span></a></li><li class="rnvItem rnvLast"><a class="rnvLink" href="/bdl/archiwum"><span class="rnvText">Archiwum kategorii LUDNOŚĆ z danymi bilansowanymi za rok 2010 na podstawie wyników NSP 2002</span></a></li>
+					</ul>
+				</div>
+			</div></li><li class="rnvItem rnvLast"><span class="rnvRootLink rnvLink"><span class="rnvText">POMOC</span><span class="rnvToggle radIcon"></span></span><div class="rnvSlide">
+				<div class="radPopup rnvPopup">
+					<ul class="rnvUL">
+						<li class="rnvItem rnvFirst"><a class="rnvLink" href="/bdl/pomoc"><span class="rnvText">Podręcznik użytkownika BDL</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/pomoc/komunikaty"><span class="rnvText">Komunikaty</span></a></li><li class="rnvItem"><a class="rnvLink" href="/bdl/pomoc/stanzasilenia"><span class="rnvText">Stan zasilenia danych</span></a></li><li class="rnvItem rnvLast"><a class="rnvLink" href="/bdl/pomoc/mapastrony"><span class="rnvText">Mapa strony</span></a></li>
+					</ul>
+				</div>
+			</div></li>
+		</ul>
+	</div><div class="rnvHiddenGroups">
+		
+	</div><input id="ctl00_MainMenu_Menu_ClientState" name="ctl00_MainMenu_Menu_ClientState" type="hidden" />
+</div>
+
+            </div>
+        </div>
+        <div id="MainTop">            
+            
+        
+                
+
+        </div>
+        <div id="MainSidebar" class="left">
+            
+    
+
+<div>
+    <div id="ctl00_SidebarPlaceHolder_MenuMetadane_MenuPanel" class="RadPanelBar RadPanelBar_Default">
+	<ul class="rpRootGroup">
+		<li class="rpItem rpFirst"><span class="rpLink rpRootLink rpExpandable rpExpanded"><img alt="" src="/bdl/App_Themes/Light/ico/data_layout.png" class="rpImage" /><span class="rpText">Układ danych</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-up"></span></span></span><div class="rpSlide" style="display:block;">
+			<div class="rpTemplate">
+				                                                            
+                    <ul class="nobullet tpad5 bpad5 rmarg13 lmarg13">
+                        <li><a href="/bdl/metadane/kategorie">Kategorie</a></li>                        
+                        <li><a href="/bdl/metadane/cechy/szukaj">Szukaj cechy</a></li>                                               
+                    </ul>                    
+                
+			</div>
+		</div></li><li class="rpItem"><span class="rpLink rpRootLink rpExpandable"><img alt="" src="/bdl/App_Themes/Light/ico/tree.png" class="rpImage" /><span class="rpText">Podział terytorialny</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-down"></span></span></span><div class="rpSlide">
+			<div class="rpTemplate">
+				
+                        <ul class="nobullet tpad5 bpad5 rmarg13 lmarg13">
+                            <li><a href="/bdl/metadane/teryt/lista">Jednostki terytorialne</a></li> 
+                            <li><a href="/bdl/metadane/teryt/szukaj">Znajdź jednostkę terytorialną</a></li> 
+                            <li><a href="/bdl/metadane/teryt/kod">Kod terytorialny</a></li>
+                            <li><a href="/bdl/metadane/nuts">Jednostki statystyczne</a></li>  
+                            <li><a href="/bdl/metadane/teryt/miejscowosc">Miejscowość statystyczna</a></li> 
+                            <li><a href="/bdl/metadane/teryt/rodzaj">Rodzaj jednostki terytorialnej</a></li> 
+                            <li><a href="/bdl/metadane/teryt/zmiany">Zmiany w podziale terytorialnym</a></li>                                                                              
+                        </ul>
+                
+			</div>
+		</div></li><li class="rpItem"><span class="rpLink rpRootLink rpExpandable"><img alt="" src="/bdl/App_Themes/Light/ico/other_documents.png" class="rpImage" /><span class="rpText">Inne</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-down"></span></span></span><div class="rpSlide">
+			<div class="rpTemplate">
+				
+                        <ul class="nobullet tpad5 bpad5 rmarg13 lmarg13">
+                            <li><a href="/bdl/metadane/atrybut">Atrybuty</a></li>
+                            <li><a href="/bdl/metadane/agregaty">Agregaty</a></li>  
+                            <li><a href="/bdl/metadane/jednostki">Jednostki miary</a></li> 
+                            <li><a href="/bdl/metadane/pkd2004">Klasyfikacja PKD 2004</a></li>  
+                            <li><a href="/bdl/metadane/pkd2007">Klasyfikacja PKD 2007</a></li>                         
+                        </ul>                        
+                
+			</div>
+		</div></li><li class="rpItem rpLast"><span class="rpLink rpRootLink rpExpandable"><img alt="" src="/bdl/App_Themes/Light/ico/concepts.png" class="rpImage" /><span class="rpText">Pojęcia</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-down"></span></span></span><div class="rpSlide">
+			<div class="rpTemplate">
+				
+                    <div class="rmarg13 lmarg13 tpad10 bpad10">
+                        
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/A">A</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/B">B</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/C">C</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/%C4%86">Ć</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/D">D</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/E">E</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/F">F</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/G">G</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/H">H</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/I">I</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/J">J</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/K">K</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/L">L</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/%C5%81">Ł</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/M">M</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/N">N</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/O">O</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/P">P</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/R">R</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/S">S</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/%C5%9A">Ś</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/T">T</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/U">U</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/W">W</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/Z">Z</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/%C5%B9">Ź</a>        
+                                </span>
+                            
+                            
+                                <span class="rmarg10">
+                                    <a href="/bdl/metadane/pojecia/%C5%BB">Ż</a>        
+                                </span>
+                            
+                    </div>
+                
+			</div>
+		</div></li>
+	</ul><input id="ctl00_SidebarPlaceHolder_MenuMetadane_MenuPanel_ClientState" name="ctl00_SidebarPlaceHolder_MenuMetadane_MenuPanel_ClientState" type="hidden" />
+</div>
+</div>
+       
+
+        </div>
+        
+        <div id="MainContent" class="right">
+            
+            
+               
+    <div class="leg">
+    <table class="lmarg10 rmarg10 tpad5 bpad5 rpad10">
+        <tr>
+            <td class="label">Kategoria</td>
+            <td>
+                SZKOLNICTWO
+                <button type="button" name="ctl00$ContentPlaceHolder$KategoriaExpandIcon$Icon" value="" id="ctl00_ContentPlaceHolder_KategoriaExpandIcon_Icon" class="RadButton RadButton_Default rbToggleButton rbRounded rbIconOnly"><span class="rbIcon p-icon rbPrimaryIcon"></span><input id="ctl00_ContentPlaceHolder_KategoriaExpandIcon_Icon_ClientState" name="ctl00_ContentPlaceHolder_KategoriaExpandIcon_Icon_ClientState" type="hidden" /></button>
+
+            </td>            
+        </tr>
+        
+        <tr>
+            <td class="label">Grupa</td>
+            <td>
+                SZKOLNICTWO OGÓLNOKSZTAŁCĄCE
+                
+            </td>            
+        </tr>
+        
+
+        <tr>
+            <td class="label">Podgrupa</td>
+            <td>
+                Nauczyciele pełnozatrudnieni i niepełnozatrudnieni w przeliczeniu na etaty
+                <button type="button" name="ctl00$ContentPlaceHolder$PodgrupaExpandIcon$Icon" value="" id="ctl00_ContentPlaceHolder_PodgrupaExpandIcon_Icon" class="RadButton RadButton_Default rbToggleButton rbRounded rbIconOnly"><span class="rbIcon p-icon rbPrimaryIcon"></span><input id="ctl00_ContentPlaceHolder_PodgrupaExpandIcon_Icon_ClientState" name="ctl00_ContentPlaceHolder_PodgrupaExpandIcon_Icon_ClientState" type="hidden" /></button>
+
+            </td>            
+        </tr>
+        
+        <!--
+        <tr>
+            <td class="label">Częstotliwość zasilania</td>
+            <td>
+                rocznie                
+            </td>            
+        </tr>
+        -->
+        <!--
+        <tr>
+            <td class="label">Źródło danych PBSSP</td>
+            <td>
+                1.27.01 Oświata i wychowanie<br/>                
+            </td>            
+        </tr>
+        -->
+        
+                <tr>
+                    <td class="label">Źródło danych PBSSP</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td class="label lpad10">Obszar</td>
+                    <td>1.27 Edukacja</td>
+                </tr>
+                <tr>
+                    <td class="label lpad10">Badanie</td>
+                    <td>1.27.01 Oświata i wychowanie</td>
+                </tr>
+                <tr>
+                    <td class="label lpad10">Zestawy danych</td>
+                    <td><a href='https://form.stat.gov.pl/formaty/badanie.php?rok-pbssp=2025&bid=89' target="_blank">https://form.stat.gov.pl/formaty/badanie.php?rok-pbssp=2025&bid=89</a></td>
+                </tr>
+                <tr>
+                    <td class="label lpad10">Cykliczność badania</td>
+                    <td>co rok</td>
+                </tr>
+                <tr>
+                    <td class="label lpad10">Prowadzący badanie</td>
+                    <td>Prezes Głównego Urzędu Statystycznego; Minister właściwy do spraw oświaty i wychowania</td>
+                </tr>
+                <tr>
+                    <td class="label lpad10">Prowadzący jednostka</td>
+                    <td>Główny Urząd Statystyczny; Ministerstwo Edukacji Narodowej</td>
+                </tr>
+            
+
+        <tr>
+            <td class="label">Osoba odpowiedzialna merytorycznie</td>
+            <td>
+                Katarzyna Rybicka, US Gdańsk, <a href='mailto:K.Rybicka@stat.gov.pl'>K.Rybicka@stat.gov.pl</a>                
+            </td>            
+        </tr>
+
+        <tr>
+            <td class="label">Ostatnia aktualizacja</td>
+            <td>
+                05.08.2026                
+            </td>            
+        </tr>
+
+    </table>
+    </div>
+
+    <div id="ctl00_ContentPlaceHolder_Panele" class="RadPanelBar RadPanelBar_Default">
+	<ul class="rpRootGroup">
+		<li class="rpItem rpFirst"><span class="rpLink rpRootLink rpExpandable rpExpanded"><span class="rpText">Opis wymiarów</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-up"></span></span></span><div class="rpSlide" style="display:block;">
+			<ul class="rpGroup rpLevel1 " style="display:block;">
+				<li class="rpItem rpFirst"><span class="rpLink rpExpandable"><span class="rpText">1. Typy szkół</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-down"></span></span></span><div class="rpSlide">
+					<div class="rpTemplate">
+						
+                            <div class="tpad10 bpad10 rpad10 lpad10">    
+                                -
+                                
+                            </div>
+                        
+					</div>
+				</div></li><li class="rpItem rpLast"><span class="rpLink rpExpandable"><span class="rpText">2. Płeć</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-down"></span></span></span><div class="rpSlide">
+					<div class="rpTemplate">
+						
+                            <div class="tpad10 bpad10 rpad10 lpad10">
+                                -
+                                
+                            </div>
+                        
+					</div>
+				</div></li>
+			</ul>
+		</div></li><li class="rpItem"><span class="rpLink rpRootLink rpExpandable"><span class="rpText">Występowanie cech w latach</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-down"></span></span></span><div class="rpSlide">
+			<div class="rpTemplate">
+				
+                    <div class="tpad10 bpad10 rpad10 lpad10">
+                        <div id="ctl00_ContentPlaceHolder_Panele_i1_cechy" class=" RadTreeList RadTreeList_Default">
+					<input id="ctl00_ContentPlaceHolder_Panele_i1_cechy_ClientState" name="ctl00_ContentPlaceHolder_Panele_i1_cechy_ClientState" type="hidden" />
+				</div>
+                    </div>
+                
+			</div>
+		</div></li><li class="rpItem rpLast"><span class="rpLink rpRootLink rpExpandable rpExpanded"><span class="rpText">Podstawowe pojęcia</span><span class="rpExpandHandle"><span class="p-icon p-i-arrow-chevron-up"></span></span></span><div class="rpSlide" style="display:block;">
+			<div class="rpTemplate">
+				
+                    <div class="tpad10 bpad10 rpad10 lpad10">
+                        
+                                Nauczyciel                                
+                                <a href="https://stat.gov.pl/metainformacje/slownik-pojec/pojecia-stosowane-w-statystyce-publicznej/236,pojecie.html?pdf=1" target="_blank"><img src="/bdl/App_Themes/Light/ico/information.png" /></a>
+                            <input id="ctl00_ContentPlaceHolder_Panele_i2_pojecia_ClientState" name="ctl00_ContentPlaceHolder_Panele_i2_pojecia_ClientState" type="hidden" /><span id="ctl00_ContentPlaceHolder_Panele_i2_pojecia" style="display:none;"></span>                        
+                    </div>
+                
+			</div>
+		</div></li>
+	</ul><input id="ctl00_ContentPlaceHolder_Panele_ClientState" name="ctl00_ContentPlaceHolder_Panele_ClientState" type="hidden" />
+</div>
+
+    <div id="ctl00_ContentPlaceHolder_tooltip" style="display:none;position:absolute;">
+	<div id="ctl00_ContentPlaceHolder_tooltipRTMPanel">
+
+	</div><input id="ctl00_ContentPlaceHolder_tooltip_ClientState" name="ctl00_ContentPlaceHolder_tooltip_ClientState" type="hidden" />
+</div>   
+
+    <div id="ctl00_ContentPlaceHolder_okno" style="display:none;">
+	<div id="ctl00_ContentPlaceHolder_okno_C" style="display:none;">
+
+	</div><input id="ctl00_ContentPlaceHolder_okno_ClientState" name="ctl00_ContentPlaceHolder_okno_ClientState" type="hidden" />
+</div>
+
+
+            
+            <div class="RadAjaxPanel" id="ctl00_ctl00_SessionTickerPanelPanel">
+	<div id="ctl00_SessionTickerPanel">
+		
+                <span id="ctl00_SessionTicker" style="display:none;"></span>
+            
+	</div>
+</div>            
+                       
+            
+        </div>
+        <div id="Clearer"></div>            
+        <div id="MainFooter">
+            
+                <a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl" target="_blank">Licencja międzynarodowa Creative Commons BY 4.0 – Uznanie autorstwa</a>
+                <span class="small">Wersja: 20250326.1322</span>
+                <div class="right">
+                    <a href="/bdl/privacy">Polityka prywatności</a>
+                    <a href="/bdl/accessibility">Deklaracja dostępności</a>
+                    <a href="#" title="Innowacyjna gospodarka"><img src='/bdl/img/ig_65x22.png'/></a>
+                    <a href="http://stat.gov.pl/" target="_blank"><img title="GUS" src='/bdl/img/gus_51x22.png'/></a>                    
+                </div>            
+            
+        </div>
+    </div>    
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl00_StyleManager_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';|637747370477927469:2cc223ef;Telerik.Web.UI, Version=2017.3.913.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4:pl-PL:03e3fdef-45f6-40a0-88ab-9645d53a0f37:d7e35272:505983de:3e0dfe6c:e7750fd8:e347b32f:a942ad92:b256253d:6e804bb4:a957bcf1:ce6e779:21b4b2bb:69f99efe:dc65d966:d747760e:ba1b8630:ca0174c4:9503e2d4:ffbea00e:b25e979b:f2eff81c:f7f0672f';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"_renderMode":2,"clientStateFieldID":"ctl00_MainWindowMan_ClientState","enableShadow":true,"formID":"aspnetForm","iconUrl":"","minimizeIconUrl":"","name":"MainWindowMan","skin":"Default","windowControls":"[]"}, null, null, $get("ctl00_MainWindowMan"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadFormDecorator, {"_renderMode":2,"clientStateFieldID":"ctl00_MainFormDecorator_ClientState","decoratedControls":57343,"enableRoundedCorners":false,"enabled":true,"skin":"Default"}, null, null, $get("ctl00_MainFormDecorator"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadToolTipManager, {"_cssClass":"ttipAuto","_manualCloseButtonText":"Close","_renderMode":2,"_updatePanelUniqueId":"ctl00$MainToolTipManRTMPanel","autoCloseDelay":5000,"autoTooltipify":true,"clientStateFieldID":"ctl00_MainToolTipMan_ClientState","formID":"aspnetForm","isToolTipFactory":true,"loadOnDemand":false,"position":23,"relativeTo":1,"skin":"Default","targetControls":"[]"}, null, null, $get("ctl00_MainToolTipMan"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[{InitControlID : "ctl00_SessionTicker",UpdatedControls : [{ControlID:"ctl00_SessionTickerPanel",PanelID:""}]}],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$MainAjaxManager","updatePanelsRenderMode":0}, null, null, $get("ctl00_MainAjaxManager"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadSearchBox, {"_emptyMessage":"Szukaj cechy","_enableAutoComplete":false,"_postBackOnSearch":true,"_postBackReference":"__doPostBack(\u0027ctl00$MainMenu$ctl09$SearchBox\u0027,\u0027arguments\u0027)","_renderMode":2,"_showAllResultsText":"Pokaż wszystkie wyniki","_skinName":"Default","_uniqueId":"ctl00$MainMenu$ctl09$SearchBox","clientStateFieldID":"ctl00_MainMenu_ctl09_SearchBox_ClientState","showLoadingIcon":false}, null, null, $get("ctl00_MainMenu_ctl09_SearchBox"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadNavigation, {"_renderMode":2,"_skin":"Default","clientStateFieldID":"ctl00_MainMenu_Menu_ClientState","nodesData":[{"text":"Login"},{"text":"Kontakt"},{"text":"Rss"},{"text":"Facebook"},{"text":"Ankieta"},{"text":"Jezyk"},{"text":"Dark"},{"text":"Dark","visible":false},{"text":"Light","visible":false,"selected":true},{},{"selected":true},{"text":"DANE","nodes":[{"text":"Dane według dziedzin","navigateUrl":"/bdl/dane/podgrup/temat"},{"text":"Dane dla jednostki terytorialnej","navigateUrl":"/bdl/dane/teryt/jednostka"},{"text":"Obszary funkcjonalne","navigateUrl":"/bdl/obszary"},{"text":"Rankingi statystyczne","navigateUrl":"/bdl/rankingi"}]},{"text":"METADANE","nodes":[{"text":"Strona główna","navigateUrl":"/bdl/metadane"},{"text":"Układ danych","nodes":[{"text":"Kategorie","navigateUrl":"/bdl/metadane/kategorie"},{"text":"Szukaj cechy","navigateUrl":"/bdl/metadane/cechy/szukaj"}]},{"text":"Podział terytorialny","nodes":[{"text":"Jednostki terytorialne","navigateUrl":"/bdl/metadane/teryt/lista"},{"text":"Znajdź jednostkę terytorialną","navigateUrl":"/bdl/metadane/teryt/szukaj"},{"text":"Kod terytorialny","navigateUrl":"/bdl/metadane/teryt/kod"},{"text":"Jednostki statystyczne","navigateUrl":"/bdl/metadane/nuts"},{"text":"Miejscowość statystyczna","navigateUrl":"/bdl/metadane/teryt/miejscowosc"},{"text":"Rodzaj jednostki terytorialnej","navigateUrl":"/bdl/metadane/teryt/rodzaj"},{"text":"Zmiany w podziale terytorialnym","navigateUrl":"/bdl/metadane/teryt/zmiany"}]},{"text":"Inne","nodes":[{"text":"Atrybuty","navigateUrl":"/bdl/metadane/atrybut"},{"text":"Agregaty","navigateUrl":"/bdl/metadane/agregaty"},{"text":"Jednostki miary","navigateUrl":"/bdl/metadane/jednostki"},{"text":"Klasyfikacja PKD 2004","navigateUrl":"/bdl/metadane/pkd2004"},{"text":"Klasyfikacja PKD 2007","navigateUrl":"/bdl/metadane/pkd2007"}]},{"text":"Pojęcia","navigateUrl":"/bdl/metadane/pojecia"}]},{"text":"API","navigateUrl":"https://api.stat.gov.pl/","target":"_blank"},{"text":"ARCHIWUM","nodes":[{"text":"Archiwum wybranych tabel dla lat 2020-2021 z danymi bilansowanymi na podstawie wyników NSP 2011","navigateUrl":"/bdl/archiwum2011"},{"text":"Archiwum kategorii LUDNOŚĆ z danymi bilansowanymi za rok 2010 na podstawie wyników NSP 2002","navigateUrl":"/bdl/archiwum"}]},{"text":"POMOC","nodes":[{"text":"Podręcznik użytkownika BDL","navigateUrl":"/bdl/pomoc"},{"text":"Komunikaty","navigateUrl":"/bdl/pomoc/komunikaty"},{"text":"Stan zasilenia danych","navigateUrl":"/bdl/pomoc/stanzasilenia"},{"text":"Mapa strony","navigateUrl":"/bdl/pomoc/mapastrony"}]}]}, null, null, $get("ctl00_MainMenu_Menu"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadPanelBar, {"_renderMode":2,"_skin":"Default","clientStateFieldID":"ctl00_SidebarPlaceHolder_MenuMetadane_MenuPanel_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"text":"Układ danych","expanded":true,"imageUrl":"/bdl/App_Themes/Light/ico/data_layout.png","templated":true,"hasContentTemplate":true},{"text":"Podział terytorialny","imageUrl":"/bdl/App_Themes/Light/ico/tree.png","templated":true,"hasContentTemplate":true},{"text":"Inne","imageUrl":"/bdl/App_Themes/Light/ico/other_documents.png","templated":true,"hasContentTemplate":true},{"text":"Pojęcia","imageUrl":"/bdl/App_Themes/Light/ico/concepts.png","templated":true,"hasContentTemplate":true}]}, null, null, $get("ctl00_SidebarPlaceHolder_MenuMetadane_MenuPanel"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadButton, {"_accessKey":"","_hasIcon":true,"_hasImage":false,"_isClientSubmit":true,"_isImageButton":false,"_postBackReference":"__doPostBack('ctl00$ContentPlaceHolder$KategoriaExpandIcon$Icon','')","_renderMode":2,"buttonType":2,"clientStateFieldID":"ctl00_ContentPlaceHolder_KategoriaExpandIcon_Icon_ClientState","iconData":{},"imageData":{},"selectedToggleStateIndex":1,"toggleStatesData":[{"primaryIconUrl":"/bdl/App_Themes/Light/ico/information_collapse.png"},{"primaryIconUrl":"/bdl/App_Themes/Light/ico/information_expand.png"}],"toggleType":1,"uniqueGroupName":"","uniqueID":"ctl00$ContentPlaceHolder$KategoriaExpandIcon$Icon"}, null, null, $get("ctl00_ContentPlaceHolder_KategoriaExpandIcon_Icon"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadButton, {"_accessKey":"","_hasIcon":true,"_hasImage":false,"_isClientSubmit":true,"_isImageButton":false,"_postBackReference":"__doPostBack('ctl00$ContentPlaceHolder$PodgrupaExpandIcon$Icon','')","_renderMode":2,"buttonType":2,"clientStateFieldID":"ctl00_ContentPlaceHolder_PodgrupaExpandIcon_Icon_ClientState","iconData":{},"imageData":{},"selectedToggleStateIndex":1,"toggleStatesData":[{"primaryIconUrl":"/bdl/App_Themes/Light/ico/information_collapse.png"},{"primaryIconUrl":"/bdl/App_Themes/Light/ico/information_expand.png"}],"toggleType":1,"uniqueGroupName":"","uniqueID":"ctl00$ContentPlaceHolder$PodgrupaExpandIcon$Icon"}, null, null, $get("ctl00_ContentPlaceHolder_PodgrupaExpandIcon_Icon"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTreeList, {"Skin":"Default","UniqueID":"ctl00$ContentPlaceHolder$Panele$i1$cechy","_clientSettings":{"_allowColumnHide":true,"_selecting":{},"_scrolling":{"_scrollTop":"","_scrollLeft":""},"_keyboardNavigationSettings":{},"_resizing":{},"_clientMessages":{"_dragToReorder":"Przeciągnij aby przeorganizować","_dragToResize":"Przeciągnij aby zmienić rozmiar","_dropHereToReorder":"Przeciągnij tutaj aby przeorganizować","_columnResizeTooltipFormatString":"Szerkość: \u003cstrong\u003e{0}\u003c/strong\u003e \u003cem\u003epixeli\u003c/em\u003e"},"_reordering":{}},"_data":{"_selectedItemStyle":"","_selectedItemStyleClass":"rtlRSel","_itemData":[{"_hIndex":{"NestedLevel":0,"LevelIndex":0},"_expanded":true,"_clientDataKeyValues":{}},{"_hIndex":{"NestedLevel":0,"LevelIndex":1},"_clientDataKeyValues":{}},{"_hIndex":{"NestedLevel":0,"LevelIndex":2},"_clientDataKeyValues":{}},{"_hIndex":{"NestedLevel":0,"LevelIndex":3},"_clientDataKeyValues":{}},{"_hIndex":{"NestedLevel":0,"LevelIndex":4},"_clientDataKeyValues":{}},{"_hIndex":{"NestedLevel":0,"LevelIndex":5},"_clientDataKeyValues":{}}],"_currentPageIndex":0,"_pageCount":1,"_pagerMode":"NextPrevAndNumeric","_clientDataKeyNames":[],"_columnsData":[{"UniqueName":"Name","ColumnType":"TreeListBoundColumn","Reorderable":true,"Resizable":true,"OrderIndex":0,"_display":true},{"UniqueName":"Info","ColumnType":"TreeListTemplateColumn","Reorderable":true,"Resizable":true,"OrderIndex":1,"_display":true},{"UniqueName":"column","ColumnType":"TreeListBoundColumn","Reorderable":true,"Resizable":true,"OrderIndex":2,"_display":true},{"UniqueName":"column1","ColumnType":"TreeListBoundColumn","Reorderable":true,"Resizable":true,"OrderIndex":3,"_display":true},{"UniqueName":"Description","ColumnType":"TreeListBoundColumn","Reorderable":true,"Resizable":true,"OrderIndex":4,"_display":true}]},"_embeddedSkin":true,"clientStateFieldID":"ctl00_ContentPlaceHolder_Panele_i1_cechy_ClientState","renderMode":2}, null, null, $get("ctl00_ContentPlaceHolder_Panele_i1_cechy"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$ContentPlaceHolder$Panele$i2$pojecia","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_ContentPlaceHolder_Panele_i2_pojecia_itemPlaceholder","DataService":{}}},"_virtualItemCount":1,"clientStateFieldID":"ctl00_ContentPlaceHolder_Panele_i2_pojecia_ClientState","renderMode":2}, null, null, $get("ctl00_ContentPlaceHolder_Panele_i2_pojecia"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadPanelBar, {"_renderMode":2,"_skin":"Default","clientStateFieldID":"ctl00_ContentPlaceHolder_Panele_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"items":[{"text":"1. Typy szkół","templated":true,"hasContentTemplate":true},{"text":"2. Płeć","templated":true,"hasContentTemplate":true}],"expanded":true},{"text":"Występowanie cech w latach","templated":true,"hasContentTemplate":true},{"text":"Podstawowe pojęcia","expanded":true,"templated":true,"hasContentTemplate":true}]}, null, null, $get("ctl00_ContentPlaceHolder_Panele"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadToolTipManager, {"_cssClass":"","_manualCloseButtonText":"Close","_renderMode":2,"_updatePanelUniqueId":"ctl00$ContentPlaceHolder$tooltipRTMPanel","autoCloseDelay":0,"clientStateFieldID":"ctl00_ContentPlaceHolder_tooltip_ClientState","formID":"aspnetForm","hideEvent":4,"isToolTipFactory":true,"loadOnDemand":true,"offsetX":50,"offsetY":0,"position":23,"relativeTo":1,"showEvent":2,"skin":"Default","targetControls":"[]","width":"600px"}, null, null, $get("ctl00_ContentPlaceHolder_tooltip"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":false,"_renderMode":2,"behaviors":36,"clientStateFieldID":"ctl00_ContentPlaceHolder_okno_ClientState","formID":"aspnetForm","height":"600px","iconUrl":"/bdl/App_Themes/Light/ico/concepts.png","minimizeIconUrl":"/bdl/App_Themes/Light/ico/concepts.png","name":"okno","skin":"Default","title":"Concept definition","visibleStatusbar":false,"width":"750px"}, null, null, $get("ctl00_ContentPlaceHolder_okno"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":300000,"uniqueID":"ctl00$SessionTicker"}, null, null, $get("ctl00_SessionTicker"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

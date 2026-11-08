@@ -1,0 +1,77 @@
+{
+  "retrieved_utc": "2026-11-08T03:19:27.289153+00:00",
+  "files": [
+    {
+      "file": "variables.response",
+      "url": "https://bdl.stat.gov.pl/api/v1/variables?subject-id=P3235&page-size=100&format=json",
+      "sha256": "308af2754d2480329d227905f7125b5de2b60583c55019289ebf7ee04853f48f",
+      "bytes": 105,
+      "source_type": "official",
+      "status": 429
+    },
+    {
+      "file": "metadata.response",
+      "url": "https://bdl.stat.gov.pl/BDL/metadane/metryka/3235",
+      "sha256": "ef8459f15d08ab2aa66fc625d86ecec54ef8ac9dca2059f0823c9c04a079a06a",
+      "bytes": 94332,
+      "source_type": "official",
+      "status": 200
+    },
+    {
+      "file": "metadata_expanded.html",
+      "url": "https://bdl.stat.gov.pl/BDL/metadane/metryka/3235",
+      "sha256": "78ca4ad31d275e6a2e3e9fd5fec885565c996d1b5d75b24c1c83531dd3c387cb",
+      "bytes": 83503,
+      "source_type": "official",
+      "status": 200
+    },
+    {
+      "file": "metadata_session_expanded.html",
+      "url": "https://bdl.stat.gov.pl/BDL/metadane/metryka/3235",
+      "sha256": "9419f01bd778695dff4911a67613858e38c3fdc53b52e6bf97b378cc84b8373b",
+      "bytes": 101390,
+      "source_type": "official",
+      "status": 200
+    },
+    {
+      "file": "metadata_split_0.html",
+      "url": "https://bdl.stat.gov.pl/BDL/metadane/metryka/3235",
+      "sha256": "1689c0a994de8f4536a1960aa84cf53d7731f443682c9ffed60ddb44b38bd136",
+      "bytes": 101390,
+      "source_type": "official",
+      "status": 200
+    },
+    {
+      "file": "metadata_split_1.html",
+      "url": "https://bdl.stat.gov.pl/BDL/metadane/metryka/3235",
+      "sha256": "4727c8a8c75674db8d31df21c91ad479d25ad2b9f5fd2709a10496409f4416b4",
+      "bytes": 108534,
+      "source_type": "official",
+      "status": 200
+    },
+    {
+      "file": "secondary_longseries.html",
+      "url": "https://longseries.com/pl/d/gus-general-secondary-schools-for-youth-excluding-special/?geo=pol",
+      "sha256": "199df9e4f8e04d299780a997ed6cdd290f2c8b91188f5fc7f6b85c91293c3ea6",
+      "bytes": 12097,
+      "source_type": "secondary_lead",
+      "status": 200
+    },
+    {
+      "file": "secondary_warsaw.html",
+      "url": "https://www.polskawliczbach.pl/Warszawa",
+      "sha256": "4f9ea935aebc98835d643507a5a1fb0f6ecb315c6c933b0cea26edfee4be7a39",
+      "bytes": 1192975,
+      "source_type": "secondary_lead",
+      "status": 200
+    },
+    {
+      "file": "panorama2025.response",
+      "url": "https://warszawa.stat.gov.pl/files/gfx/warszawa/pl/defaultaktualnosci/760/5/26/1/panorama_dzielnic_warszawy_2025v08_internet.pdf",
+      "sha256": "1077449cfdb3eb436ce9c95ab1133705001e58b285a371d5ed9e34f6626a8df4",
+      "bytes": 16360355,
+      "source_type": "official",
+      "status": 200
+    }
+  ]
+}

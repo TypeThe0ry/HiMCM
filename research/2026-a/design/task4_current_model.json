@@ -1,6 +1,6 @@
 {
   "model_version": "V96",
-  "latest_review": "V96",
+  "latest_review": "V97",
   "module": "task4_warsaw_resource_revision",
   "factory": "warsaw_bounds",
   "baseline_ranks": "results/task4_v96_warsaw_revision/ranks.csv",
@@ -11,7 +11,7 @@
     0.2
   ],
   "latest_acquisition_analysis": "results/task4_v91_current_acquisition/summary.json",
-  "main_admitted": true,
+  "main_admitted": false,
   "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain.",
   "baseline_bounds": "results/task4_v96_warsaw_revision/utility_bounds.csv",
   "latest_stress_analysis": "results/task4_v93_joint_stress/summary.json",
@@ -21,5 +21,7 @@
   "latest_acquisition_limits_model_version": "V96",
   "latest_travel_evidence_index": "results/task4_current/travel_evidence.csv",
   "latest_precision_frontier": "results/task4_v94_precision_frontier/summary.json",
-  "latest_precision_frontier_model_version": "V91"
+  "latest_precision_frontier_model_version": "V91",
+  "latest_joint_acquisition": "results/task4_v97_joint_acquisition/summary.json",
+  "latest_joint_acquisition_model_version": "V96"
 }

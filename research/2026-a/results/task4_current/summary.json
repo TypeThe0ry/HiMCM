@@ -1,7 +1,7 @@
 {
   "registry": {
     "model_version": "V96",
-    "latest_review": "V96",
+    "latest_review": "V97",
     "module": "task4_warsaw_resource_revision",
     "factory": "warsaw_bounds",
     "baseline_ranks": "results/task4_v96_warsaw_revision/ranks.csv",
@@ -12,7 +12,7 @@
       0.2
     ],
     "latest_acquisition_analysis": "results/task4_v91_current_acquisition/summary.json",
-    "main_admitted": true,
+    "main_admitted": false,
     "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain.",
     "baseline_bounds": "results/task4_v96_warsaw_revision/utility_bounds.csv",
     "latest_stress_analysis": "results/task4_v93_joint_stress/summary.json",
@@ -22,9 +22,11 @@
     "latest_acquisition_limits_model_version": "V96",
     "latest_travel_evidence_index": "results/task4_current/travel_evidence.csv",
     "latest_precision_frontier": "results/task4_v94_precision_frontier/summary.json",
-    "latest_precision_frontier_model_version": "V91"
+    "latest_precision_frontier_model_version": "V91",
+    "latest_joint_acquisition": "results/task4_v97_joint_acquisition/summary.json",
+    "latest_joint_acquisition_model_version": "V96"
   },
-  "registry_sha256": "9be75a3a315b192b1150de9c6fdacf8cd445b74210e6c7e5d092cc1dac9a92cd",
+  "registry_sha256": "e867bc90588ad5b0dfbd076588c42bf29d06c89e0f705a822ad3ed786b226e11",
   "baseline_ranks_sha256": "d7e44384d2972b168167417110725bfc4c15d7e52e68845c5077d8b0d0058681",
   "baseline_bounds_sha256": "daf9549fc3fab0e843b592251c701cd17827e1650cdc3dd801e2d7c399c3a15a",
   "utility_bounds_sha256": "b2fde46ff693a586f46beb0238c1a0779fb24da2af8fa9a7c460fd717d599acc",
@@ -70,5 +72,5 @@
       "Singapore"
     ]
   },
-  "main_admitted": true
+  "main_admitted": false
 }
