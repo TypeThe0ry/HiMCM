@@ -1,0 +1,48 @@
+{
+  "main_admitted": false,
+  "new_admissible_travel_observations": 0,
+  "reviewed_prior_rounds": [
+    "V10",
+    "V40",
+    "V48",
+    "V67"
+  ],
+  "report_file": "../task4_v10_santiago/questionnaire_reports/Informe Final Vol I.pdf",
+  "report_sha256": "bafe3f195be8c1050de41367dcc11db484c1b89a1e3d031490a6318139bdf436",
+  "report_pdf_page": 80,
+  "report_printed_page": 80,
+  "section": "4.2 Dise\u00f1o de Instrumentos EOD 2012",
+  "finding": "The report states questionnaires and other instruments are attached as separate digital annexes. The archived ZIP contains only four report PDFs, not those instruments.",
+  "archive_file": "../task4_v10_santiago/questionnaire_reports/Informe_EOD-2012_Santiago.zip",
+  "archive_sha256": "aa24bd1dac893ead25f2f2c9cff024f8ca1510f51c036f8c404559430377da7e",
+  "archive_members": [
+    "Informe Ejecutivo.pdf",
+    "Informe Difusi\u00f3n.pdf",
+    "Informe Final Vol I.pdf",
+    "Informe Final Vol II.pdf"
+  ],
+  "source_status": "Reused research-mirror reports with OSUAH/SECTRA attribution; not newly acquired official original questionnaire.",
+  "access_checks": [
+    {
+      "url": "https://www.sectra.gob.cl/info-territorial/region-metropolitana-de-santiago/",
+      "web_reader": "TimeoutError",
+      "direct_request": "ConnectTimeout"
+    },
+    {
+      "url": "https://biblioteca.mtt.gob.cl/documento/28168c0a-d9d3-45b2-a1d7-25f702334b9d",
+      "web_reader": "TimeoutError",
+      "direct_request": "ConnectTimeout"
+    },
+    {
+      "url": "https://sintia.sectra.cl/",
+      "direct_request": "ConnectionError"
+    },
+    {
+      "url": "http://sintia.sectra.cl/",
+      "direct_request": "ConnectionError"
+    }
+  ],
+  "next_required_artifact": "Separate digital annex containing the actual EOD2012 household questionnaire or interviewer instructions for Estudios and Curso.",
+  "consequence": "Current upper-secondary status remains unverified. No CASEN or census wording is transferred; Santiago travel remains [0,1].",
+  "retrieved": "2026-11-08"
+}

@@ -1,0 +1,74 @@
+{
+  "main_admitted": false,
+  "source_sha256": "4bd74e2afb066b15d5307789ed4383ac6b747530b49998f15ba5d453f6b252e5",
+  "source": "task4_v88_pisa_regions/simce2m2024_rbd_final.csv",
+  "denominator_assumption": "nalu test-takers equal the denominator of the three published proficiency percentages",
+  "rounding_assumption": "Nearest rounding to0.1percentagepoint; half ties allowed at both endpoints",
+  "aggregate_scope": "Santiago school commune13101, Segundo medio2024 listed test-takers; unknown flags/all-zero rows retained in denominator",
+  "national_compatibility": [
+    {
+      "subject": "lect",
+      "school_records": 3000,
+      "statuses": {
+        "compatible": 2936,
+        "all_zero_uninterpreted": 59,
+        "missing": 5
+      }
+    },
+    {
+      "subject": "mate",
+      "school_records": 3000,
+      "statuses": {
+        "compatible": 2938,
+        "missing": 5,
+        "all_zero_uninterpreted": 57
+      }
+    }
+  ],
+  "outcomes": [
+    {
+      "subject": "lect",
+      "schools": 64,
+      "reported_test_takers": 6366,
+      "unknown_quality_or_zero_pupils": 55,
+      "unique_reconstructed_schools": 62,
+      "omitted_unknown_cohort_fraction": 0.008639648130694313,
+      "at_least_elementary": {
+        "count_lower": 3581,
+        "count_upper": 3636,
+        "proportion_lower": 0.5625196355639334,
+        "proportion_upper": 0.5711592836946278
+      },
+      "adequate": {
+        "count_lower": 1606,
+        "count_upper": 1661,
+        "proportion_lower": 0.25227772541627397,
+        "proportion_upper": 0.26091737354696826
+      },
+      "naive_zero_and_flags_included_adequate": 0.2543583097706566,
+      "interpretation": "Conditional rounded-count bounds for listed test-takers; not sampling confidence limits, resident/enrolled cohort coverage, or cross-test proficiency equivalence."
+    },
+    {
+      "subject": "mate",
+      "schools": 64,
+      "reported_test_takers": 6440,
+      "unknown_quality_or_zero_pupils": 80,
+      "unique_reconstructed_schools": 62,
+      "omitted_unknown_cohort_fraction": 0.012422360248447204,
+      "at_least_elementary": {
+        "count_lower": 3419,
+        "count_upper": 3499,
+        "proportion_lower": 0.5309006211180124,
+        "proportion_upper": 0.5433229813664596
+      },
+      "adequate": {
+        "count_lower": 1345,
+        "count_upper": 1425,
+        "proportion_lower": 0.20885093167701863,
+        "proportion_upper": 0.22127329192546583
+      },
+      "naive_zero_and_flags_included_adequate": 0.21039254658385093,
+      "interpretation": "Conditional rounded-count bounds for listed test-takers; not sampling confidence limits, resident/enrolled cohort coverage, or cross-test proficiency equivalence."
+    }
+  ]
+}

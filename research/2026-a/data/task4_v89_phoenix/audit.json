@@ -1,0 +1,62 @@
+{
+  "main_admitted": false,
+  "retrieved": "2026-11-08",
+  "target_leas": [
+    "0400303",
+    "0400219"
+  ],
+  "new_observation": {
+    "provider": "Arizona Department of Education",
+    "source_url": "https://www.azed.gov/sites/default/files/2026/01/2025%20SAFR%20V2%20FINAL.pdf",
+    "source_kind": "official_document_web_search_reader_transcription_not_original_bytes",
+    "page": "II-116",
+    "lea": "0400219",
+    "state_entity": "79047",
+    "ctds": "078524000",
+    "name": "Career Success Schools",
+    "teacher_salary_year_end_fte": {
+      "prior_fy2024": 32.0,
+      "current_fy2025": 32.0
+    },
+    "fy2023_24_adm": {
+      "elementary": 151.0683,
+      "high_school": 1068.0014,
+      "total": 1219.0697
+    },
+    "fall2024_enrollment": 1145,
+    "school_count": 4,
+    "original_sha256": null,
+    "direct_pdf_status": 403,
+    "qualification": "Year-end salary reporting FTE at LEA level; current school-level CCD classroom-FTE definition and academic-year reference not matched. Includes K-8 and secondary schools; not allocated to high-school pupils."
+  },
+  "contrast_only": {
+    "source_url": "https://nces.ed.gov/ccd/districtsearch/district_detail.asp?ID2=0400219",
+    "source_kind": "official_NCES_web_reader",
+    "school_year": "2024-2025",
+    "all_grade_students": 1145,
+    "classroom_teacher_fte": 36.5,
+    "scope": "Different academic year and staff reporting concept, not a replacement for 2023/24 missing FTE."
+  },
+  "access_checks": [
+    {
+      "url": "https://www.ade.az.gov/sfsinbound/GeneralUpload/193485.pdf",
+      "result": "HTTP403; audit original not acquired; fiscal year unverified",
+      "sha256": null
+    },
+    {
+      "url": "https://careersuccessschools.org/board_docs/23-07-10_Proposed_FY2024_Budget_Summary.pdf",
+      "result": "HTTP200 but Content-Type text/html and HTML prefix, not a PDF; not archived as source PDF. Web reader describes proposed budget and average salaries, not teacher FTE.",
+      "sha256": null
+    },
+    {
+      "url": "https://careersuccessschools.org/board-documents/",
+      "result": "Official index confirms FY2024 and FY2025 proposed budget summaries; proposed appropriations are not observed staffing."
+    },
+    {
+      "url": "https://www.arizonapreparatoryacademy.com/board-meetings",
+      "result": "Official meeting index includes 2023/24 agendas/minutes; no complete sameyear actual teacher count obtained."
+    }
+  ],
+  "identity_exclusion": "northstarcharter.org is Eagle Idaho, not Phoenix North Star Charter School Inc.; its financial audits excluded.",
+  "admission_reason": "No verified same2023/24 school-level classroom teacher FTE aligned with target student counts; no city bound changed."
+}
