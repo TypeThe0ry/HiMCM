@@ -24,6 +24,6 @@ for code,name in mapping.items():
         r=ss[0]
         out.append(dict(candidate_school_code=code,source_year_label=year,student_name=name,directory_name=ds[0]['school_name'],student_type=r['school_type'],directory_type=ds[0]['school_subtype'],boys=int(r['registered_students_boys']),girls=int(r['registered_students_girls']),pupils=int(r['registered_students_boys'])+int(r['registered_students_girls']),status='identity_supported_across_2014_2020_but_contemporaneous_original_missing' if code!='540752' else 'abbreviation_crosswalk_unverified',admitted=False))
 with (P/'candidate_rows.csv').open('w') as f:
-    w=csv.DictWriter(f,fieldnames=list(out[0]));w.writeheader();w.writerows(out)
+    w=csv.DictWriter(f,fieldnames=list(out[0]),lineterminator='\n');w.writeheader();w.writerows(out)
 result=dict(new_admitted_cells=0,academic_year_mapping_verified=False,directory_reference_year_known=False,retained_v75_punctuation_linked_schools=48,originals_downloaded=2,identity_supported_codes=['551010','551040'],unverified_abbreviation_code='540752',candidate_pupils_by_source_label={year:sum(r['pupils'] for r in out if r['source_year_label']==year) for year in ['2018','2019']},core_bounds_changed=False)
 (P/'summary.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))
