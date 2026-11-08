@@ -1,0 +1,49 @@
+{
+  "model_version": "V96",
+  "input_bounds_sha256": "1eca7849d85a2c0881f2e662e359b1058e9f42b503fd8d0d63643d322795a2db",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "baseline_choice": "Singapore",
+  "cells": 250,
+  "admitted_cells_changed": 0,
+  "informative_cells": 117,
+  "already_unknown_cells": 133,
+  "prefix_epsilon_range": [
+    0,
+    0.2
+  ],
+  "prefix_certified_cells": 250,
+  "prefix_leaves": 1040,
+  "prefix_unresolved": 0,
+  "withdrawal_epsilon": 1.0,
+  "withdrawal_leaves": 555,
+  "withdrawal_unresolved": 4,
+  "withdrawal_cells_with_alternative_certified_winner": [
+    {
+      "city": "Singapore",
+      "indicator": "homicide_rate"
+    },
+    {
+      "city": "Singapore",
+      "indicator": "pm25"
+    },
+    {
+      "city": "Singapore",
+      "indicator": "cost_living_index"
+    },
+    {
+      "city": "Singapore",
+      "indicator": "fixed_broadband_mbps"
+    }
+  ],
+  "point_cases": 1500,
+  "failure_point_cases": 10,
+  "score_padding": 1e-09,
+  "strict_tolerance": 1e-08,
+  "max_depth": 12,
+  "main_admitted": false,
+  "interpretation": "Numerical single-cell sensitivity scenarios, not observed source errors, acquisition values, probabilities or certified behavior for epsilon between .2 and 1."
+}

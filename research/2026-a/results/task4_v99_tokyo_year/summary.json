@@ -1,0 +1,248 @@
+{
+  "model_version": "V96",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "main_admitted": false,
+  "admitted_cells_changed": 0,
+  "input_bounds_sha256": "1eca7849d85a2c0881f2e662e359b1058e9f42b503fd8d0d63643d322795a2db",
+  "source_summary_sha256": "a90e9b44bec40bd2b292e1a0f6901a9599d79376090dff205a9229f7b6b1c860",
+  "paired_year_changed_ranks": 0,
+  "paired_year_kendall_tau": 0.9999999999999998,
+  "paired_year_tokyo_lower_change": 0.00484566846140666,
+  "paired_year_tokyo_upper_change": 0.007494642790931039,
+  "unchanged_other_cells": 249,
+  "scenarios": [
+    {
+      "scenario": "v96_current",
+      "tokyo_utility": [
+        0.46064549489378204,
+        0.5470457616881114
+      ],
+      "tokyo": {
+        "decision_rank": 2,
+        "score_lower": 40.116441017269246,
+        "score_upper": 70.69606958276474,
+        "max_regret": 37.41301968620244
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "matched_narrow_2025",
+      "tokyo_utility": [
+        0.48729270138474723,
+        0.4943254278172669
+      ],
+      "tokyo": {
+        "decision_rank": 2,
+        "score_lower": 40.35778920799093,
+        "score_upper": 70.06021598500621,
+        "max_regret": 37.17167149548075
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "matched_narrow_2026",
+      "tokyo_utility": [
+        0.4878235131929934,
+        0.49493314901471985
+      ],
+      "tokyo": {
+        "decision_rank": 2,
+        "score_lower": 40.36263487645234,
+        "score_upper": 70.06771062779714,
+        "max_regret": 37.166825827019345
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    }
+  ],
+  "interpretation": "Only the matched narrow pair isolates calendar year. Both use school main-duty persons and omit special-needs coverage; V96 instead uses selected teaching roles and wider coverage. Neither scenario is an improvement or replacement of V96. 2026 is provisional."
+}

@@ -1,0 +1,80 @@
+{
+  "registry": {
+    "model_version": "V96",
+    "latest_review": "V99",
+    "module": "task4_warsaw_resource_revision",
+    "factory": "warsaw_bounds",
+    "baseline_ranks": "results/task4_v96_warsaw_revision/ranks.csv",
+    "baseline_scenario": "v96_warsaw_resources",
+    "fixed_alpha": 0.1,
+    "alpha_range": [
+      0.05,
+      0.2
+    ],
+    "latest_acquisition_analysis": "results/task4_v91_current_acquisition/summary.json",
+    "main_admitted": false,
+    "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain.",
+    "baseline_bounds": "results/task4_v96_warsaw_revision/utility_bounds.csv",
+    "latest_stress_analysis": "results/task4_v98_joint_stress/summary.json",
+    "latest_acquisition_analysis_model_version": "V91",
+    "latest_stress_analysis_model_version": "V96",
+    "latest_acquisition_limits": "results/task4_v96_acquisition_limits/summary.json",
+    "latest_acquisition_limits_model_version": "V96",
+    "latest_travel_evidence_index": "results/task4_current/travel_evidence.csv",
+    "latest_precision_frontier": "results/task4_v94_precision_frontier/summary.json",
+    "latest_precision_frontier_model_version": "V91",
+    "latest_joint_acquisition": "results/task4_v97_joint_acquisition/summary.json",
+    "latest_joint_acquisition_model_version": "V96",
+    "latest_cell_stress": "results/task4_v99_cell_stress/summary.json",
+    "latest_cell_stress_model_version": "V96",
+    "latest_tokyo_year_sensitivity": "results/task4_v99_tokyo_year/summary.json",
+    "latest_tokyo_year_sensitivity_model_version": "V96"
+  },
+  "registry_sha256": "73880abdccba889f6f88b66bf2df7b687333a47325493791a2b56b88c07ea53b",
+  "baseline_ranks_sha256": "d7e44384d2972b168167417110725bfc4c15d7e52e68845c5077d8b0d0058681",
+  "baseline_bounds_sha256": "daf9549fc3fab0e843b592251c701cd17827e1650cdc3dd801e2d7c399c3a15a",
+  "utility_bounds_sha256": "b2fde46ff693a586f46beb0238c1a0779fb24da2af8fa9a7c460fd717d599acc",
+  "travel_evidence_sha256": "6d1d17a686b75d4bb949882d3247ed5ae3333db74f677f97ea77a16d5fdf2fcd",
+  "travel_evidence_verified": true,
+  "informative_travel_cities": 5,
+  "verified_cells": 250,
+  "baseline_matches": true,
+  "possible_champions": 25,
+  "continuous_possible_champions": [
+    "Toronto",
+    "Phoenix",
+    "New York",
+    "Mexico City",
+    "Bogota",
+    "Sao Paulo",
+    "Santiago",
+    "Copenhagen",
+    "London",
+    "Barcelona",
+    "Warsaw",
+    "Athens",
+    "Nairobi",
+    "Lagos",
+    "Cape Town",
+    "Dubai",
+    "Istanbul",
+    "Mumbai",
+    "Delhi",
+    "Dhaka",
+    "Tokyo",
+    "Shanghai",
+    "Singapore",
+    "Jakarta",
+    "Melbourne"
+  ],
+  "choice": [
+    "Singapore"
+  ],
+  "continuous_recommendation": {
+    "unresolved_leaves": 0,
+    "winners": [
+      "Singapore"
+    ]
+  },
+  "main_admitted": false
+}

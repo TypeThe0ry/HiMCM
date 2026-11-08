@@ -1,6 +1,8 @@
 # 当前模型统一复算入口（V96）
 
-当前注册模型为 **V96**，最新审查为V98。Warsaw采用六类青年高中路径的同年度学生与教师资料，教师分配不明部分保留区间；Phoenix使用市内已观测PM2.5监测范围。默认决策排名Singapore第1、Warsaw第8、Phoenix第16，固定与连续偏好下可能冠军均为25城。
+当前注册模型为 **V96**，最新审查为V99。Warsaw采用六类青年高中路径的同年度学生与教师资料，教师分配不明部分保留区间；Phoenix使用市内已观测PM2.5监测范围。默认决策排名Singapore第1、Warsaw第8、Phoenix第16，固定与连续偏好下可能冠军均为25城。
+
+V99新增[单格撤回诊断](../task4_v99_cell_stress/README.md)与[Tokyo配对年份检验](../task4_v99_tokyo_year/README.md)，真实250格及排名保持。
 
 本目录由注册表重算，核验250个效用区间及5城通学来源。最新[压力检验](../task4_v98_joint_stress/README.md)已使用V96输入；[共同补数能力分析](../task4_v97_joint_acquisition/README.md)同样基于V96。V91补数与精度阈值分析仍是历史结果，版本由注册表分别记录。
 

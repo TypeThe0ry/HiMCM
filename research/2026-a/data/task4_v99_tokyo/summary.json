@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-01",
+  "geography": "Tokyo Metropolis school location",
+  "scenarios": [
+    {
+      "year": 2025,
+      "status": "final_control",
+      "ordinary_students": 303468,
+      "ordinary_main_duty_teachers": 19446,
+      "integrated_upper_students": 3435,
+      "integrated_all_stage_teachers": 555,
+      "students": 306903,
+      "teacher_bounds": [
+        19446,
+        20001
+      ],
+      "utility_bounds": [
+        0.48729270138474723,
+        0.4943254278172669
+      ]
+    },
+    {
+      "year": 2026,
+      "status": "provisional",
+      "ordinary_students": 304919,
+      "ordinary_main_duty_teachers": 19580,
+      "integrated_upper_students": 3443,
+      "integrated_all_stage_teachers": 565,
+      "students": 308362,
+      "teacher_bounds": [
+        19580,
+        20145
+      ],
+      "utility_bounds": [
+        0.4878235131929934,
+        0.49493314901471985
+      ]
+    }
+  ],
+  "main_admitted": false,
+  "admitted_cells_changed": 0,
+  "scope": "Ordinary full/part-time high schools plus integrated-secondary upper courses; same conditional coverage as V47.",
+  "exclusions": [
+    "correspondence",
+    "special-needs upper departments",
+    "specialized-training upper courses"
+  ],
+  "teacher_definition": "Main-duty school-assigned persons, not FTE; integrated upper-stage allocation unknown.",
+  "verification": "Raw hashes, integrated-school ownership sums, high-school geography/grade/sex sums and 2025 final controls checked.",
+  "interpretation": "Provisional year sensitivity only. No source for shrinking stage-allocation bounds or actual high-school commute."
+}

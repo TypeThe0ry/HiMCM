@@ -1,0 +1,556 @@
+target_city,target_indicator,city_index,indicator_index,alpha_lower,alpha_upper,certified,winner,regret_gap_lower,depth,winner_city
+Toronto,homicide_rate,0,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Toronto,homicide_rate,0,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Toronto,pm25,0,1,0.05,0.125,True,22.0,0.8496430163279598,1,Singapore
+Toronto,pm25,0,1,0.125,0.2,True,22.0,2.4449983614604136,1,Singapore
+Toronto,cost_living_index,0,2,0.05,0.125,True,22.0,0.846897175679814,1,Singapore
+Toronto,cost_living_index,0,2,0.125,0.2,True,22.0,2.4422022437561353,1,Singapore
+Toronto,price_income_ratio,0,3,0.05,0.125,True,22.0,0.9688723885459183,1,Singapore
+Toronto,price_income_ratio,0,3,0.125,0.2,True,22.0,2.5680476658299156,1,Singapore
+Toronto,upper_secondary_ptr,0,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Toronto,upper_secondary_ptr,0,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Toronto,research_he_density,0,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Toronto,research_he_density,0,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Toronto,public_transport_density,0,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Toronto,public_transport_density,0,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Toronto,travel,0,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Toronto,travel,0,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Toronto,fixed_broadband_mbps,0,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Toronto,fixed_broadband_mbps,0,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Toronto,public_pool_density,0,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Toronto,public_pool_density,0,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,homicide_rate,1,0,0.05,0.125,True,22.0,0.9999807224166801,1,Singapore
+Phoenix,homicide_rate,1,0,0.125,0.2,True,22.0,2.5999669120414737,1,Singapore
+Phoenix,pm25,1,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,pm25,1,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,cost_living_index,1,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,cost_living_index,1,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,price_income_ratio,1,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,price_income_ratio,1,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,upper_secondary_ptr,1,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,upper_secondary_ptr,1,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,research_he_density,1,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,research_he_density,1,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,public_transport_density,1,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,public_transport_density,1,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,travel,1,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,travel,1,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,fixed_broadband_mbps,1,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,fixed_broadband_mbps,1,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Phoenix,public_pool_density,1,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Phoenix,public_pool_density,1,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,homicide_rate,2,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,homicide_rate,2,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,pm25,2,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,pm25,2,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,cost_living_index,2,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,cost_living_index,2,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,price_income_ratio,2,3,0.05,0.125,True,22.0,0.8552132119825302,1,Singapore
+New York,price_income_ratio,2,3,0.125,0.2,True,22.0,2.4509102035920662,1,Singapore
+New York,upper_secondary_ptr,2,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,upper_secondary_ptr,2,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,research_he_density,2,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,research_he_density,2,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,public_transport_density,2,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,public_transport_density,2,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,travel,2,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,travel,2,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,fixed_broadband_mbps,2,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,fixed_broadband_mbps,2,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+New York,public_pool_density,2,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+New York,public_pool_density,2,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,homicide_rate,3,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,homicide_rate,3,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,pm25,3,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,pm25,3,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,cost_living_index,3,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,cost_living_index,3,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,price_income_ratio,3,3,0.05,0.125,True,22.0,0.8777937087166947,1,Singapore
+Mexico City,price_income_ratio,3,3,0.125,0.2,True,22.0,2.4745464458278477,1,Singapore
+Mexico City,upper_secondary_ptr,3,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,upper_secondary_ptr,3,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,research_he_density,3,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,research_he_density,3,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,public_transport_density,3,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,public_transport_density,3,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,travel,3,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,travel,3,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,fixed_broadband_mbps,3,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,fixed_broadband_mbps,3,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mexico City,public_pool_density,3,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mexico City,public_pool_density,3,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,homicide_rate,4,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Bogota,homicide_rate,4,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,pm25,4,1,0.05,0.125,True,22.0,0.8211774686303812,1,Singapore
+Bogota,pm25,4,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,cost_living_index,4,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Bogota,cost_living_index,4,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,price_income_ratio,4,3,0.05,0.125,True,22.0,0.9647441644493284,1,Singapore
+Bogota,price_income_ratio,4,3,0.125,0.2,True,22.0,2.56229726363258,1,Singapore
+Bogota,upper_secondary_ptr,4,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Bogota,upper_secondary_ptr,4,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,research_he_density,4,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Bogota,research_he_density,4,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,public_transport_density,4,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Bogota,public_transport_density,4,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,travel,4,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Bogota,travel,4,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,fixed_broadband_mbps,4,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Bogota,fixed_broadband_mbps,4,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Bogota,public_pool_density,4,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Bogota,public_pool_density,4,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,homicide_rate,5,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,homicide_rate,5,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,pm25,5,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,pm25,5,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,cost_living_index,5,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,cost_living_index,5,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,price_income_ratio,5,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,price_income_ratio,5,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,upper_secondary_ptr,5,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,upper_secondary_ptr,5,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,research_he_density,5,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,research_he_density,5,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,public_transport_density,5,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,public_transport_density,5,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,travel,5,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,travel,5,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,fixed_broadband_mbps,5,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,fixed_broadband_mbps,5,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Sao Paulo,public_pool_density,5,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Sao Paulo,public_pool_density,5,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Santiago,homicide_rate,6,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Santiago,homicide_rate,6,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Santiago,pm25,6,1,0.05,0.125,True,22.0,0.8677178805093462,1,Singapore
+Santiago,pm25,6,1,0.125,0.2,True,22.0,2.461203296785449,1,Singapore
+Santiago,cost_living_index,6,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Santiago,cost_living_index,6,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Santiago,price_income_ratio,6,3,0.05,0.125,True,22.0,0.8784905720406044,1,Singapore
+Santiago,price_income_ratio,6,3,0.125,0.2,True,22.0,2.4724792203532004,1,Singapore
+Santiago,upper_secondary_ptr,6,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Santiago,upper_secondary_ptr,6,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Santiago,research_he_density,6,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Santiago,research_he_density,6,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Santiago,public_transport_density,6,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Santiago,public_transport_density,6,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Santiago,travel,6,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Santiago,travel,6,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Santiago,fixed_broadband_mbps,6,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Santiago,fixed_broadband_mbps,6,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Santiago,public_pool_density,6,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Santiago,public_pool_density,6,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Copenhagen,homicide_rate,7,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Copenhagen,homicide_rate,7,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Copenhagen,pm25,7,1,0.05,0.125,True,22.0,0.9010140771688242,1,Singapore
+Copenhagen,pm25,7,1,0.125,0.2,True,22.0,2.498217485277898,1,Singapore
+Copenhagen,cost_living_index,7,2,0.05,0.125,True,22.0,0.9642365649190907,1,Singapore
+Copenhagen,cost_living_index,7,2,0.125,0.2,True,22.0,2.5628779199932623,1,Singapore
+Copenhagen,price_income_ratio,7,3,0.05,0.125,True,22.0,0.9942644485038699,1,Singapore
+Copenhagen,price_income_ratio,7,3,0.125,0.2,True,22.0,2.593887656370349,1,Singapore
+Copenhagen,upper_secondary_ptr,7,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Copenhagen,upper_secondary_ptr,7,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Copenhagen,research_he_density,7,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Copenhagen,research_he_density,7,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Copenhagen,public_transport_density,7,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Copenhagen,public_transport_density,7,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Copenhagen,travel,7,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Copenhagen,travel,7,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Copenhagen,fixed_broadband_mbps,7,8,0.05,0.125,True,22.0,0.871782201116531,1,Singapore
+Copenhagen,fixed_broadband_mbps,7,8,0.125,0.2,True,22.0,2.468750151794019,1,Singapore
+Copenhagen,public_pool_density,7,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Copenhagen,public_pool_density,7,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,homicide_rate,8,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,homicide_rate,8,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,pm25,8,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,pm25,8,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,cost_living_index,8,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,cost_living_index,8,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,price_income_ratio,8,3,0.05,0.125,True,22.0,0.8393331537242688,1,Singapore
+London,price_income_ratio,8,3,0.125,0.2,True,22.0,2.435940621849859,1,Singapore
+London,upper_secondary_ptr,8,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,upper_secondary_ptr,8,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,research_he_density,8,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,research_he_density,8,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,public_transport_density,8,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,public_transport_density,8,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,travel,8,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,travel,8,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,fixed_broadband_mbps,8,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,fixed_broadband_mbps,8,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+London,public_pool_density,8,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+London,public_pool_density,8,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Barcelona,homicide_rate,9,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Barcelona,homicide_rate,9,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Barcelona,pm25,9,1,0.05,0.125,True,22.0,0.8755166824848004,1,Singapore
+Barcelona,pm25,9,1,0.125,0.2,True,22.0,2.4713308726347023,1,Singapore
+Barcelona,cost_living_index,9,2,0.05,0.125,True,22.0,0.8272790357081306,1,Singapore
+Barcelona,cost_living_index,9,2,0.125,0.2,True,22.0,2.422223424864235,1,Singapore
+Barcelona,price_income_ratio,9,3,0.05,0.125,True,22.0,0.9724935365034497,1,Singapore
+Barcelona,price_income_ratio,9,3,0.125,0.2,True,22.0,2.571648777004903,1,Singapore
+Barcelona,upper_secondary_ptr,9,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Barcelona,upper_secondary_ptr,9,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Barcelona,research_he_density,9,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Barcelona,research_he_density,9,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Barcelona,public_transport_density,9,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Barcelona,public_transport_density,9,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Barcelona,travel,9,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Barcelona,travel,9,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Barcelona,fixed_broadband_mbps,9,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Barcelona,fixed_broadband_mbps,9,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Barcelona,public_pool_density,9,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Barcelona,public_pool_density,9,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,homicide_rate,10,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,homicide_rate,10,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,pm25,10,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,pm25,10,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,cost_living_index,10,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,cost_living_index,10,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,price_income_ratio,10,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,price_income_ratio,10,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,upper_secondary_ptr,10,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,upper_secondary_ptr,10,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,research_he_density,10,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,research_he_density,10,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,public_transport_density,10,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,public_transport_density,10,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,travel,10,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,travel,10,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,fixed_broadband_mbps,10,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,fixed_broadband_mbps,10,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Warsaw,public_pool_density,10,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Warsaw,public_pool_density,10,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,homicide_rate,11,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,homicide_rate,11,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,pm25,11,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,pm25,11,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,cost_living_index,11,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,cost_living_index,11,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,price_income_ratio,11,3,0.05,0.125,True,22.0,0.8118775517449706,1,Singapore
+Athens,price_income_ratio,11,3,0.125,0.2,True,22.0,2.4073431190717614,1,Singapore
+Athens,upper_secondary_ptr,11,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,upper_secondary_ptr,11,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,research_he_density,11,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,research_he_density,11,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,public_transport_density,11,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,public_transport_density,11,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,travel,11,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,travel,11,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,fixed_broadband_mbps,11,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,fixed_broadband_mbps,11,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Athens,public_pool_density,11,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Athens,public_pool_density,11,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,homicide_rate,12,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,homicide_rate,12,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,pm25,12,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,pm25,12,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,cost_living_index,12,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,cost_living_index,12,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,price_income_ratio,12,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,price_income_ratio,12,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,upper_secondary_ptr,12,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,upper_secondary_ptr,12,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,research_he_density,12,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,research_he_density,12,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,public_transport_density,12,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,public_transport_density,12,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,travel,12,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,travel,12,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,fixed_broadband_mbps,12,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,fixed_broadband_mbps,12,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Nairobi,public_pool_density,12,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Nairobi,public_pool_density,12,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,homicide_rate,13,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,homicide_rate,13,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,pm25,13,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,pm25,13,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,cost_living_index,13,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,cost_living_index,13,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,price_income_ratio,13,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,price_income_ratio,13,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,upper_secondary_ptr,13,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,upper_secondary_ptr,13,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,research_he_density,13,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,research_he_density,13,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,public_transport_density,13,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,public_transport_density,13,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,travel,13,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,travel,13,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,fixed_broadband_mbps,13,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,fixed_broadband_mbps,13,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Lagos,public_pool_density,13,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Lagos,public_pool_density,13,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,homicide_rate,14,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,homicide_rate,14,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,pm25,14,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,pm25,14,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,cost_living_index,14,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,cost_living_index,14,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,price_income_ratio,14,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,price_income_ratio,14,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,upper_secondary_ptr,14,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,upper_secondary_ptr,14,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,research_he_density,14,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,research_he_density,14,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,public_transport_density,14,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,public_transport_density,14,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,travel,14,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,travel,14,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Cape Town,fixed_broadband_mbps,14,8,0.05,0.125,True,22.0,0.8387685893994359,1,Singapore
+Cape Town,fixed_broadband_mbps,14,8,0.125,0.2,True,22.0,2.43889149331671,1,Singapore
+Cape Town,public_pool_density,14,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Cape Town,public_pool_density,14,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,homicide_rate,15,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,homicide_rate,15,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,pm25,15,1,0.05,0.125,True,22.0,0.9924183237550324,1,Singapore
+Dubai,pm25,15,1,0.125,0.2,True,22.0,2.591850581203353,1,Singapore
+Dubai,cost_living_index,15,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,cost_living_index,15,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,price_income_ratio,15,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,price_income_ratio,15,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,upper_secondary_ptr,15,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,upper_secondary_ptr,15,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,research_he_density,15,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,research_he_density,15,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,public_transport_density,15,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,public_transport_density,15,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,travel,15,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,travel,15,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,fixed_broadband_mbps,15,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,fixed_broadband_mbps,15,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dubai,public_pool_density,15,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dubai,public_pool_density,15,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,homicide_rate,16,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,homicide_rate,16,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,pm25,16,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,pm25,16,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,cost_living_index,16,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,cost_living_index,16,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,price_income_ratio,16,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,price_income_ratio,16,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,upper_secondary_ptr,16,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,upper_secondary_ptr,16,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,research_he_density,16,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,research_he_density,16,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,public_transport_density,16,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,public_transport_density,16,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,travel,16,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,travel,16,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,fixed_broadband_mbps,16,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,fixed_broadband_mbps,16,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Istanbul,public_pool_density,16,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Istanbul,public_pool_density,16,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,homicide_rate,17,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,homicide_rate,17,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,pm25,17,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,pm25,17,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,cost_living_index,17,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,cost_living_index,17,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,price_income_ratio,17,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,price_income_ratio,17,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,upper_secondary_ptr,17,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,upper_secondary_ptr,17,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,research_he_density,17,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,research_he_density,17,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,public_transport_density,17,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,public_transport_density,17,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,travel,17,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,travel,17,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,fixed_broadband_mbps,17,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,fixed_broadband_mbps,17,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Mumbai,public_pool_density,17,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Mumbai,public_pool_density,17,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,homicide_rate,18,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,homicide_rate,18,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,pm25,18,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,pm25,18,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,cost_living_index,18,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,cost_living_index,18,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,price_income_ratio,18,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,price_income_ratio,18,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,upper_secondary_ptr,18,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,upper_secondary_ptr,18,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,research_he_density,18,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,research_he_density,18,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,public_transport_density,18,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,public_transport_density,18,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,travel,18,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,travel,18,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,fixed_broadband_mbps,18,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,fixed_broadband_mbps,18,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Delhi,public_pool_density,18,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Delhi,public_pool_density,18,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,homicide_rate,19,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,homicide_rate,19,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,pm25,19,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,pm25,19,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,cost_living_index,19,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,cost_living_index,19,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,price_income_ratio,19,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,price_income_ratio,19,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,upper_secondary_ptr,19,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,upper_secondary_ptr,19,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,research_he_density,19,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,research_he_density,19,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,public_transport_density,19,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,public_transport_density,19,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,travel,19,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,travel,19,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,fixed_broadband_mbps,19,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,fixed_broadband_mbps,19,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Dhaka,public_pool_density,19,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Dhaka,public_pool_density,19,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Tokyo,homicide_rate,20,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Tokyo,homicide_rate,20,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Tokyo,pm25,20,1,0.05,0.2,True,22.0,2.552705344409567,0,Singapore
+Tokyo,cost_living_index,20,2,0.05,0.2,True,22.0,2.552705344409567,0,Singapore
+Tokyo,price_income_ratio,20,3,0.05,0.2,True,22.0,2.077212785626827,0,Singapore
+Tokyo,upper_secondary_ptr,20,4,0.05,0.2,True,22.0,2.552705344409567,0,Singapore
+Tokyo,research_he_density,20,5,0.05,0.2,True,22.0,2.552705344409567,0,Singapore
+Tokyo,public_transport_density,20,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Tokyo,public_transport_density,20,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Tokyo,travel,20,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Tokyo,travel,20,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Tokyo,fixed_broadband_mbps,20,8,0.05,0.2,True,22.0,2.552705344409567,0,Singapore
+Tokyo,public_pool_density,20,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Tokyo,public_pool_density,20,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,homicide_rate,21,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,homicide_rate,21,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,pm25,21,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,pm25,21,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,cost_living_index,21,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,cost_living_index,21,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,price_income_ratio,21,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,price_income_ratio,21,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,upper_secondary_ptr,21,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,upper_secondary_ptr,21,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,research_he_density,21,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,research_he_density,21,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,public_transport_density,21,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,public_transport_density,21,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,travel,21,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,travel,21,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,fixed_broadband_mbps,21,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,fixed_broadband_mbps,21,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Shanghai,public_pool_density,21,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Shanghai,public_pool_density,21,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Singapore,homicide_rate,22,0,0.05,0.125,True,20.0,0.19570736322773996,1,Tokyo
+Singapore,homicide_rate,22,0,0.125,0.1625,True,20.0,1.3153211077428608,2,Tokyo
+Singapore,homicide_rate,22,0,0.1625,0.2,True,20.0,1.1166716277200237,2,Tokyo
+Singapore,pm25,22,1,0.05,0.0875,True,20.0,0.07886678031317729,2,Tokyo
+Singapore,pm25,22,1,0.0875,0.09687499999999999,True,20.0,0.2827117268027024,4,Tokyo
+Singapore,pm25,22,1,0.09687499999999999,0.10625,True,20.0,0.04307820027298703,4,Tokyo
+Singapore,pm25,22,1,0.10625,0.10859374999999999,True,20.0,0.09558530431862522,6,Tokyo
+Singapore,pm25,22,1,0.10859374999999999,0.1109375,True,20.0,0.03595511343380764,6,Tokyo
+Singapore,pm25,22,1,0.1109375,0.112109375,True,20.0,0.02491344043439625,7,Tokyo
+Singapore,pm25,22,1,0.112109375,0.1126953125,True,20.0,0.019405017129521696,8,Tokyo
+Singapore,pm25,22,1,0.1126953125,0.11328125,True,20.0,0.004521678706915111,8,Tokyo
+Singapore,pm25,22,1,0.11328125,0.11357421875,True,20.0,0.0017731219771874862,9,Tokyo
+Singapore,pm25,22,1,0.11357421875,0.11372070312499999,True,20.0,0.0003996200531588556,10,Tokyo
+Singapore,pm25,22,1,0.11372070312499999,0.11375732421874998,True,20.0,0.0012294622020263546,12,Tokyo
+Singapore,pm25,22,1,0.11375732421874998,0.11379394531249999,True,20.0,0.00029964097258528,12,Tokyo
+Singapore,pm25,22,1,0.11379394531249999,0.11383056640625,False,,,12,
+Singapore,pm25,22,1,0.11383056640625,0.1138671875,False,,,12,
+Singapore,pm25,22,1,0.1138671875,0.11390380859374999,True,22.0,0.0003867534135011397,12,Singapore
+Singapore,pm25,22,1,0.11390380859374999,0.1139404296875,True,22.0,0.0013165212375625401,12,Singapore
+Singapore,pm25,22,1,0.1139404296875,0.114013671875,True,22.0,0.0016596539979829572,11,Singapore
+Singapore,pm25,22,1,0.114013671875,0.11416015625,True,22.0,0.00234582240836545,10,Singapore
+Singapore,pm25,22,1,0.11416015625,0.114453125,True,22.0,0.0037177707430657847,9,Singapore
+Singapore,pm25,22,1,0.114453125,0.11503906250000001,True,22.0,0.0064601131114301324,8,Singapore
+Singapore,pm25,22,1,0.11503906250000001,0.115625,True,22.0,0.021329781768365308,8,Singapore
+Singapore,pm25,22,1,0.115625,0.11796875000000001,True,22.0,0.00801270345321825,6,Singapore
+Singapore,pm25,22,1,0.11796875000000001,0.1203125,True,22.0,0.0674236471156533,6,Singapore
+Singapore,pm25,22,1,0.1203125,0.125,True,22.0,0.08912731661060747,5,Singapore
+Singapore,pm25,22,1,0.125,0.134375,True,22.0,0.13213446559385744,4,Singapore
+Singapore,pm25,22,1,0.134375,0.14375,True,22.0,0.36829166622158027,4,Singapore
+Singapore,pm25,22,1,0.14375,0.1625,True,22.0,0.4514396120835258,3,Singapore
+Singapore,pm25,22,1,0.1625,0.2,True,22.0,0.6111852659251582,2,Singapore
+Singapore,cost_living_index,22,2,0.05,0.0875,True,20.0,0.10274366645123223,2,Tokyo
+Singapore,cost_living_index,22,2,0.0875,0.09687499999999999,True,20.0,0.3057716030841817,4,Tokyo
+Singapore,cost_living_index,22,2,0.09687499999999999,0.10625,True,20.0,0.06593250675042839,4,Tokyo
+Singapore,cost_living_index,22,2,0.10625,0.1109375,True,20.0,0.02113059859851063,5,Tokyo
+Singapore,cost_living_index,22,2,0.1109375,0.112109375,True,20.0,0.04745839206950819,7,Tokyo
+Singapore,cost_living_index,22,2,0.112109375,0.11328125,True,20.0,0.01765919006220429,7,Tokyo
+Singapore,cost_living_index,22,2,0.11328125,0.1138671875,True,20.0,0.012135116576381222,8,Tokyo
+Singapore,cost_living_index,22,2,0.1138671875,0.11416015625,True,20.0,0.009376179339426471,9,Tokyo
+Singapore,cost_living_index,22,2,0.11416015625,0.114453125,True,20.0,0.0019323766792354036,9,Tokyo
+Singapore,cost_living_index,22,2,0.114453125,0.114599609375,True,20.0,0.0005543175805939882,10,Tokyo
+Singapore,cost_living_index,22,2,0.114599609375,0.11463623046874999,True,20.0,0.0013817041946211361,12,Tokyo
+Singapore,cost_living_index,22,2,0.11463623046874999,0.1146728515625,True,20.0,0.00045140152280964685,12,Tokyo
+Singapore,cost_living_index,22,2,0.1146728515625,0.11470947265625,False,,,12,
+Singapore,cost_living_index,22,2,0.11470947265625,0.11474609375,False,,,12,
+Singapore,cost_living_index,22,2,0.11474609375,0.11478271484375,True,22.0,0.00023727201080703253,12,Singapore
+Singapore,cost_living_index,22,2,0.11478271484375,0.1148193359375,True,22.0,0.0011675215098350122,12,Singapore
+Singapore,cost_living_index,22,2,0.1148193359375,0.114892578125,True,22.0,0.0015117940075910496,11,Singapore
+Singapore,cost_living_index,22,2,0.114892578125,0.11503906250000001,True,22.0,0.002200242069982039,10,Singapore
+Singapore,cost_living_index,22,2,0.11503906250000001,0.11533203125000001,True,22.0,0.0035767504175083786,9,Singapore
+Singapore,cost_living_index,22,2,0.11533203125000001,0.115625,True,22.0,0.011017150529134767,9,Singapore
+Singapore,cost_living_index,22,2,0.115625,0.11679687500000001,True,22.0,0.004387471310032254,7,Singapore
+Singapore,cost_living_index,22,2,0.11679687500000001,0.11796875000000001,True,22.0,0.034132166756059235,7,Singapore
+Singapore,cost_living_index,22,2,0.11796875000000001,0.1203125,True,22.0,0.045085603218304016,6,Singapore
+Singapore,cost_living_index,22,2,0.1203125,0.125,True,22.0,0.0668929290801259,5,Singapore
+Singapore,cost_living_index,22,2,0.125,0.134375,True,22.0,0.1101077977166085,4,Singapore
+Singapore,cost_living_index,22,2,0.134375,0.14375,True,22.0,0.34647326313920956,4,Singapore
+Singapore,cost_living_index,22,2,0.14375,0.1625,True,22.0,0.4300393865210097,3,Singapore
+Singapore,cost_living_index,22,2,0.1625,0.2,True,22.0,0.5906280760525462,2,Singapore
+Singapore,price_income_ratio,22,3,0.05,0.125,True,22.0,1.1744112213992892,1,Singapore
+Singapore,price_income_ratio,22,3,0.125,0.2,True,22.0,2.8247759196399613,1,Singapore
+Singapore,upper_secondary_ptr,22,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Singapore,upper_secondary_ptr,22,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Singapore,research_he_density,22,5,0.05,0.125,True,22.0,0.25782026073050446,1,Singapore
+Singapore,research_he_density,22,5,0.125,0.2,True,22.0,1.9075669545748468,1,Singapore
+Singapore,public_transport_density,22,6,0.05,0.06875,True,22.0,0.5436026143062804,3,Singapore
+Singapore,public_transport_density,22,6,0.06875,0.0875,True,22.0,0.5962013405606399,3,Singapore
+Singapore,public_transport_density,22,6,0.0875,0.10625,True,22.0,0.6453163838326077,3,Singapore
+Singapore,public_transport_density,22,6,0.10625,0.125,True,22.0,0.6910965584550866,3,Singapore
+Singapore,public_transport_density,22,6,0.125,0.14375,True,22.0,0.7336760516183602,3,Singapore
+Singapore,public_transport_density,22,6,0.14375,0.1625,True,22.0,0.773175528023657,3,Singapore
+Singapore,public_transport_density,22,6,0.1625,0.2,True,22.0,0.07054484378384274,2,Singapore
+Singapore,travel,22,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Singapore,travel,22,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Singapore,fixed_broadband_mbps,22,8,0.05,0.125,True,20.0,0.19570736322773996,1,Tokyo
+Singapore,fixed_broadband_mbps,22,8,0.125,0.1625,True,20.0,0.6940031151678667,2,Tokyo
+Singapore,fixed_broadband_mbps,22,8,0.1625,0.18125000000000002,True,20.0,0.42925341280384544,3,Tokyo
+Singapore,fixed_broadband_mbps,22,8,0.18125000000000002,0.19062500000000002,True,20.0,0.29944211677826615,4,Tokyo
+Singapore,fixed_broadband_mbps,22,8,0.19062500000000002,0.2,True,20.0,0.04201479782007311,4,Tokyo
+Singapore,public_pool_density,22,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Singapore,public_pool_density,22,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,homicide_rate,23,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,homicide_rate,23,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,pm25,23,1,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,pm25,23,1,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,cost_living_index,23,2,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,cost_living_index,23,2,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,price_income_ratio,23,3,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,price_income_ratio,23,3,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,upper_secondary_ptr,23,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,upper_secondary_ptr,23,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,research_he_density,23,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,research_he_density,23,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,public_transport_density,23,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,public_transport_density,23,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,travel,23,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,travel,23,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,fixed_broadband_mbps,23,8,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,fixed_broadband_mbps,23,8,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Jakarta,public_pool_density,23,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Jakarta,public_pool_density,23,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Melbourne,homicide_rate,24,0,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Melbourne,homicide_rate,24,0,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Melbourne,pm25,24,1,0.05,0.125,True,22.0,0.8083394622623388,1,Singapore
+Melbourne,pm25,24,1,0.125,0.2,True,22.0,2.409215776245752,1,Singapore
+Melbourne,cost_living_index,24,2,0.05,0.125,True,22.0,0.8289320226955113,1,Singapore
+Melbourne,cost_living_index,24,2,0.125,0.2,True,22.0,2.4299972312823215,1,Singapore
+Melbourne,price_income_ratio,24,3,0.05,0.125,True,22.0,0.8654525146241951,1,Singapore
+Melbourne,price_income_ratio,24,3,0.125,0.2,True,22.0,2.4671381218102724,1,Singapore
+Melbourne,upper_secondary_ptr,24,4,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Melbourne,upper_secondary_ptr,24,4,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Melbourne,research_he_density,24,5,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Melbourne,research_he_density,24,5,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Melbourne,public_transport_density,24,6,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Melbourne,public_transport_density,24,6,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Melbourne,travel,24,7,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Melbourne,travel,24,7,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
+Melbourne,fixed_broadband_mbps,24,8,0.05,0.125,True,22.0,0.8072358531567687,1,Singapore
+Melbourne,fixed_broadband_mbps,24,8,0.125,0.2,True,22.0,2.4081058472857464,1,Singapore
+Melbourne,public_pool_density,24,9,0.05,0.125,True,22.0,0.7561861589753676,1,Singapore
+Melbourne,public_pool_density,24,9,0.125,0.2,True,22.0,2.356997977181827,1,Singapore
