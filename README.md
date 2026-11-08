@@ -14,6 +14,7 @@
 
 | 想了解什么 | 入口 |
 | --- | --- |
+| V102实际补数修订 | [Copenhagen下界提高2.319分；排名和25城候选保持](research/2026-a/results/task4_v102_intake/README.md) |
 | A题原文、评委点评 | [题目](research/2026-a/inputs/problem_a_2026.pdf) · [2025点评](research/2026-a/inputs/judges_commentary_2025.pdf) |
 | 数据位置 | [数据导航](#数据在哪里) · [25城候选名单](research/2026-a/data/city_candidates_team_25.csv) |
 | 任务4精简正文主线 | [Overleaf：drafts/task4_paper_core.md](https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894) |
@@ -33,7 +34,7 @@
 | V68高中学段修订 | [纠正Singapore预科学段代理，扩大真实未知范围；排名与25城候选保持](research/2026-a/results/task4_v68_singapore_stage/README.md) |
 | V67联合不确定性检验 | [均匀扩张仍推荐Singapore，定向扩张可转Tokyo；连续范围证书](research/2026-a/results/task4_v67_joint_stress/README.md) |
 | V66原件与人群核查 | [上海年报年份、Phoenix真实学生调查及London/Bogotá新入口；排名不变](research/2026-a/results/task4_v66_intake/README.md) |
-| 当前模型一键复算 · V96 | [统一入口、250格基线校验与当前证据](research/2026-a/results/task4_current/README.md) |
+| 当前模型一键复算 · V102 | [统一入口、250格基线校验与当前证据](research/2026-a/results/task4_current/README.md) |
 | 全偏好范围补数规划 V64 | [Phoenix最小有利补数3→4项；避免固定权重下的乐观规划](research/2026-a/results/task4_v64_continuous_acquisition/README.md) |
 | 真实高中通学更新 V63 | [Cape Town采用2025微观数据；182名学生与抽样包络重算](research/2026-a/results/task4_v63_cape_2025/README.md) |
 | 校级原件补充 V62 | [新增London、Copenhagen、Cape Town学校数据；保持未匹配区间](research/2026-a/results/task4_v62_source_intake/README.md) |

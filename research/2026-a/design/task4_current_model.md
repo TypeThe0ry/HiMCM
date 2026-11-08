@@ -1,4 +1,6 @@
-# 当前模型：V96 Warsaw六类高中路径师资修订（2026-11-08）
+# 当前模型：V102 Copenhagen高教资源下界修订（2026-11-08）
+
+V102以四所官方认可高校的市内总部／法定所在地建立部分下界，人口与机构同属2026年但日期不同。Copenhagen分数下界35.523→37.842，区间宽度减少5.52%，仍第3；全部排名、25城可能冠军和Singapore连续推荐保持。其余249格不变，撤回新增证据可精确恢复V96。当前入口为 `task4_copenhagen_institution_revision.copenhagen_bounds()`。既有补数与压力诊断仍标注V96或V91历史输入，不能当作V102证书。详见[本轮记录](../results/task4_v102_intake/README.md)。
 
 V101将[连续偏好补数分析](../results/task4_v101_current_acquisition/README.md)更新至当前V96。550个组合的身份、判定和最少项数均保持；独立核验420个证书叶，Warsaw22个组合的共同权重点裕量变化被单独记录。旧结果保护与历史版本标签校验已加入通用入口，真实输入未改。
 
@@ -10,7 +12,7 @@ V98将[压力检验证书](../results/task4_v98_joint_stress/README.md)更新到
 
 V97完成[共同补数情景的可达性证明](../results/task4_v97_intake/README.md)：24个当前V96案例的逐城市下界均由同一组揭示值达到；全城教育＋通学的模型内最小候选数为固定9、连续22。实际25城可能冠军及全部排名保持；Warsaw青年／成人FTE拆分尚缺官方数值，未准入二手数据。
 
-V96以[同年度官方年鉴](../results/task4_v96_intake/README.md)将Warsaw教育由普通高中条件范围扩展为六类青年高中路径、公私立学校，保留成人教师分配界。Warsaw第12→8，其他249格保持、可能冠军仍25城；仅年份更新不改变排名。[补数下界](../results/task4_v96_acquisition_limits/README.md)同步更新至V96，其余已登记诊断仍标注V91历史输入。当前入口为 `task4_warsaw_resource_revision.warsaw_bounds()`。
+V96以[同年度官方年鉴](../results/task4_v96_intake/README.md)将Warsaw教育由普通高中条件范围扩展为六类青年高中路径、公私立学校，保留成人教师分配界。Warsaw第12→8，其他249格保持、可能冠军仍25城；仅年份更新不改变排名。[补数下界](../results/task4_v96_acquisition_limits/README.md)同步更新至V96，其余已登记诊断仍标注V91历史输入。该历史版本入口为 `task4_warsaw_resource_revision.warsaw_bounds()`。
 
 V95以[Jakarta真实交叉表](../results/task4_v95_intake/README.md)将同一262人高中子群通学界宽度收窄16.85%，另单独识别14–18岁交集界；保留样本／全市范围区别。Phoenix未知测试人数显式传播，Warsaw高中通学流量原件与抑制残余归档。主模型V91、250格及25个可能冠军保持。
 

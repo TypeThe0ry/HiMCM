@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "independent_scoring": true,
+  "core_scoring_functions_imported": false,
+  "bounds_verified": 750,
+  "rank_rows_verified": 75,
+  "changed_cells": 1,
+  "unchanged_other_cells": 249,
+  "withdrawal_exactly_restores_v96": true,
+  "baseline_matches_v96_intake": true,
+  "score_lower_gain": 2.318764987948313,
+  "scenarios": [
+    {
+      "scenario": "v96_before",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "v102_copenhagen_resources",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    },
+    {
+      "scenario": "copenhagen_resources_withdrawn",
+      "rank_rows_verified": 25,
+      "possible_champions_fixed": 25,
+      "continuous_possible_champion_witness_alpha": 0.1,
+      "certified_leaves": 2,
+      "minimum_certified_gap": 0.7561861589753676,
+      "winner": "Singapore"
+    }
+  ],
+  "certificate_scope": "Endpoint monotonicity enclosures over [0.05,0.2]; floating-point numerical certificate, not directed-rounding formal interval arithmetic.",
+  "input_sha256": {
+    "utility_bounds.csv": "34567ccfa686de5527b17b4cf37da07692054f1fd1b019544e1d242dc3bcb1c8",
+    "ranks.csv": "db2b74c95ae28b8c85512f2f151f942187e6e4dc2e4b36ba96dc3455695b1491",
+    "recommendation_certificate.csv": "0871f3eb5c7e05ac1d0f48591fc7f7c8e7fd8d695f1e131ca92673a5722f41a8",
+    "summary.json": "1aad12c31f08ed70b25c2df94e086e3d69c4149e42978202455fdadbe2cff144"
+  }
+}

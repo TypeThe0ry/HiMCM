@@ -1,0 +1,257 @@
+{
+  "model_version": "V102",
+  "baseline_model": "V96",
+  "main_admitted": true,
+  "primary_scenario": "v102_copenhagen_resources",
+  "changed_cells": 1,
+  "unchanged_other_cells": 249,
+  "withdrawal_restores_v96": true,
+  "input_bounds_sha256": "681260d6449888801aa9168356813aef684003f3e05c61db2dffb5b6b7070128",
+  "source_summary_sha256": "6b154d7a08ebf57a9702cf941499e28fc40f801ba26238d485985397b3412a6d",
+  "score_lower_gain": 2.3187649879483274,
+  "score_upper_change": 0.0,
+  "score_width_reduction_percent": 5.520042876983669,
+  "scenarios": [
+    {
+      "scenario": "v96_before",
+      "copenhagen_resource_utility": [
+        0.0,
+        1.0
+      ],
+      "copenhagen": {
+        "decision_rank": 3,
+        "score_lower": 35.52317488970322,
+        "score_upper": 77.52946070347168,
+        "max_regret": 40.41928739597122
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v96": 0.9999999999999998,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "v102_copenhagen_resources",
+      "copenhagen_resource_utility": [
+        0.37369591802606344,
+        1.0
+      ],
+      "copenhagen": {
+        "decision_rank": 3,
+        "score_lower": 37.84193987765155,
+        "score_upper": 77.52946070347168,
+        "max_regret": 38.10052240802289
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v96": 0.9999999999999998,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "copenhagen_resources_withdrawn",
+      "copenhagen_resource_utility": [
+        0.0,
+        1.0
+      ],
+      "copenhagen": {
+        "decision_rank": 3,
+        "score_lower": 35.52317488970322,
+        "score_upper": 77.52946070347168,
+        "max_regret": 40.41928739597122
+      },
+      "choice": [
+        "Singapore"
+      ],
+      "changed_ranks": 0,
+      "kendall_tau_vs_v96": 0.9999999999999998,
+      "possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    }
+  ],
+  "scope": "Conditional same-calendar-year recognized HE institution presence: four verified distinct legal seats/central addresses in Copenhagen municipality, November2026 source snapshot and July1 population. Not student access or learning quality; incomplete inventory leaves upper unknown.",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "numerical_certificates_not_formal_interval_arithmetic": true
+}

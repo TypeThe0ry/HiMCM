@@ -1,20 +1,20 @@
 {
   "registry": {
-    "model_version": "V96",
-    "latest_review": "V101",
-    "module": "task4_warsaw_resource_revision",
-    "factory": "warsaw_bounds",
-    "baseline_ranks": "results/task4_v96_warsaw_revision/ranks.csv",
-    "baseline_scenario": "v96_warsaw_resources",
+    "model_version": "V102",
+    "latest_review": "V102",
+    "module": "task4_copenhagen_institution_revision",
+    "factory": "copenhagen_bounds",
+    "baseline_ranks": "results/task4_v102_copenhagen_revision/ranks.csv",
+    "baseline_scenario": "v102_copenhagen_resources",
     "fixed_alpha": 0.1,
     "alpha_range": [
       0.05,
       0.2
     ],
     "latest_acquisition_analysis": "results/task4_v101_current_acquisition/summary.json",
-    "main_admitted": false,
-    "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain.",
-    "baseline_bounds": "results/task4_v96_warsaw_revision/utility_bounds.csv",
+    "main_admitted": true,
+    "scope": "Conditional ten-indicator evidence bounds. Warsaw covers all six source-defined youth upper-secondary school routes and all ownership; adult general teacher allocation retained, with one-FTE unit-rounding guard. School location and stage ages, not exact age14-18 residents. Phoenix PM2.5 remains an observed-monitor mixture, not resident exposure; other source limitations remain. Copenhagen adds four verified recognized HE legal seats/central addresses in the municipality as a partial lower bound, with July2026 population and November2026 institution snapshot; upper remains unknown. Institution presence is not student access or learning quality.",
+    "baseline_bounds": "results/task4_v102_copenhagen_revision/utility_bounds.csv",
     "latest_stress_analysis": "results/task4_v98_joint_stress/summary.json",
     "latest_acquisition_analysis_model_version": "V96",
     "latest_stress_analysis_model_version": "V96",
@@ -32,10 +32,10 @@
     "latest_singapore_source_sensitivity": "results/task4_v100_singapore_source/summary.json",
     "latest_singapore_source_sensitivity_model_version": "V96"
   },
-  "registry_sha256": "63f348cf99504cacc0623747a5afd744aec5e7427d4e3be5f410ca5194451402",
-  "baseline_ranks_sha256": "d7e44384d2972b168167417110725bfc4c15d7e52e68845c5077d8b0d0058681",
-  "baseline_bounds_sha256": "daf9549fc3fab0e843b592251c701cd17827e1650cdc3dd801e2d7c399c3a15a",
-  "utility_bounds_sha256": "b2fde46ff693a586f46beb0238c1a0779fb24da2af8fa9a7c460fd717d599acc",
+  "registry_sha256": "6c9b68ba26f8e29ebce9584dd5570a603a6af9abec307f6505262a3d4508298a",
+  "baseline_ranks_sha256": "db2b74c95ae28b8c85512f2f151f942187e6e4dc2e4b36ba96dc3455695b1491",
+  "baseline_bounds_sha256": "34567ccfa686de5527b17b4cf37da07692054f1fd1b019544e1d242dc3bcb1c8",
+  "utility_bounds_sha256": "8a9f270fbaad55d6a66eecc22cb37b4d522268d19f8e837b521707a64ad936e6",
   "travel_evidence_sha256": "6d1d17a686b75d4bb949882d3247ed5ae3333db74f677f97ea77a16d5fdf2fcd",
   "travel_evidence_verified": true,
   "informative_travel_cities": 5,
@@ -78,5 +78,5 @@
       "Singapore"
     ]
   },
-  "main_admitted": false
+  "main_admitted": true
 }
