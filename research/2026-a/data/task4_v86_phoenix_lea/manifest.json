@@ -1,0 +1,29 @@
+{
+  "provider": "NCES Common Core of Data",
+  "retrieved_utc": "2026-11-08T01:30:36.794921+00:00",
+  "year": "2023-2024",
+  "version": "1a, 073124",
+  "unit": "full-time-equivalent teachers; all grades at LEA scope",
+  "sources": [
+    {
+      "file": "ccd_lea_059_2324_l_1a_073124.zip",
+      "url": "https://nces.ed.gov/ccd/Data/zip/ccd_lea_059_2324_l_1a_073124.zip",
+      "bytes": 10318990,
+      "sha256": "cbba88c3b824744119792e1a37f11f27c88e0a757e36b519a4bbbb39842de48a"
+    },
+    {
+      "file": "SY_2023-24_LEA_Staff_Companion_2024-252.xlsx",
+      "url": "https://nces.ed.gov/ccd/xls/SY_2023-24_LEA_Staff_Companion_2024-252.xlsx",
+      "bytes": 45333,
+      "sha256": "155c07f4fa1a15aba13eb50284071bf69710c7892ee9221e8af2feaf27b72182"
+    },
+    {
+      "file": "official_catalogue.json",
+      "url": "https://nces.ed.gov/ccd/datatables/api/File/2/5/38/0/0/0",
+      "bytes": 41243,
+      "sha256": "633cb1333d6e49527ed85467f9bc32ec8d207bf0d46ca0f7a0c3704e89bb28e0"
+    }
+  ],
+  "reused_school_source": "../task4_v85_phoenix_public/arizona_page_*.json and missing_staff_records.csv",
+  "admission": "Audit only; no replacement of school FTE missing values."
+}

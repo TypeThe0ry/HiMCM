@@ -1,0 +1,204 @@
+{
+  "city": "Bogota",
+  "year": 2022,
+  "domains": {
+    "all_pisa_grades": {
+      "sample_n": 1986,
+      "schools_n": 56,
+      "weighted_population": 74034.70608999999,
+      "age_min": 15.33,
+      "age_max": 16.33,
+      "age_missing_n": 0,
+      "grade_counts": {
+        "7.0": 33,
+        "8.0": 207,
+        "9.0": 347,
+        "10.0": 1124,
+        "11.0": 275
+      },
+      "stratum_counts": {
+        "COL01": 1152,
+        "COL02": 137,
+        "COL03": 697
+      }
+    },
+    "current_grades_10_11": {
+      "sample_n": 1399,
+      "schools_n": 55,
+      "weighted_population": 50115.517439999996,
+      "age_min": 15.33,
+      "age_max": 16.33,
+      "age_missing_n": 0,
+      "grade_counts": {
+        "10.0": 1124,
+        "11.0": 275
+      },
+      "stratum_counts": {
+        "COL01": 764,
+        "COL02": 99,
+        "COL03": 536
+      },
+      "weighted_share_of_all_pisa": 0.6769192462124084
+    }
+  },
+  "outcomes": [
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "mathematics",
+      "domain": "all_pisa_grades",
+      "mean": 422.6665924764541,
+      "standard_error": 4.954087374164045,
+      "sampling_variance": 23.620398438171513,
+      "between_pv_variance": 0.8387120660728073,
+      "total_variance": 24.542981710851603,
+      "normal_approx_95_lower": 412.9565812230926,
+      "normal_approx_95_upper": 432.37660372981566
+    },
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "mathematics",
+      "domain": "current_grades_10_11",
+      "mean": 439.11592595945183,
+      "standard_error": 4.774044367683208,
+      "sampling_variance": 22.249585501398133,
+      "between_pv_variance": 0.4926492029178462,
+      "total_variance": 22.791499624607763,
+      "normal_approx_95_lower": 429.7587989987927,
+      "normal_approx_95_upper": 448.47305292011094
+    },
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "mathematics",
+      "domain": "paired_highschool_minus_all",
+      "mean": 16.44933348299775,
+      "standard_error": 2.655777134023682,
+      "sampling_variance": 6.911846313452242,
+      "between_pv_variance": 0.1284598837734544,
+      "total_variance": 7.053152185603041,
+      "normal_approx_95_lower": 11.244010300311334,
+      "normal_approx_95_upper": 21.65465666568417
+    },
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "reading",
+      "domain": "all_pisa_grades",
+      "mean": 462.150649296126,
+      "standard_error": 5.819426197385082,
+      "sampling_variance": 33.30308838154029,
+      "between_pv_variance": 0.511484441155905,
+      "total_variance": 33.86572126681179,
+      "normal_approx_95_lower": 450.7445739492512,
+      "normal_approx_95_upper": 473.5567246430008
+    },
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "reading",
+      "domain": "current_grades_10_11",
+      "mean": 482.0676794088173,
+      "standard_error": 5.441144339842645,
+      "sampling_variance": 28.505483029787605,
+      "between_pv_variance": 1.0005169974673176,
+      "total_variance": 29.606051727001656,
+      "normal_approx_95_lower": 471.40303650272574,
+      "normal_approx_95_upper": 492.73232231490886
+    },
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "reading",
+      "domain": "paired_highschool_minus_all",
+      "mean": 19.91703011269115,
+      "standard_error": 3.3349195522406485,
+      "sampling_variance": 10.528152384185292,
+      "between_pv_variance": 0.5395782143015235,
+      "total_variance": 11.121688419916968,
+      "normal_approx_95_lower": 13.38058779029948,
+      "normal_approx_95_upper": 26.453472435082823
+    },
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "science",
+      "domain": "all_pisa_grades",
+      "mean": 459.1599389473031,
+      "standard_error": 5.452185008195937,
+      "sampling_variance": 27.204344677812394,
+      "between_pv_variance": 2.292706077985583,
+      "total_variance": 29.726321363596536,
+      "normal_approx_95_lower": 448.47365633123906,
+      "normal_approx_95_upper": 469.8462215633671
+    },
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "science",
+      "domain": "current_grades_10_11",
+      "mean": 477.5988815077143,
+      "standard_error": 4.997251207365329,
+      "sampling_variance": 22.414755738357165,
+      "between_pv_variance": 2.325239901051884,
+      "total_variance": 24.972519629514238,
+      "normal_approx_95_lower": 467.8042691412782,
+      "normal_approx_95_upper": 487.39349387415035
+    },
+    {
+      "city": "Bogota",
+      "year": 2022,
+      "subject": "science",
+      "domain": "paired_highschool_minus_all",
+      "mean": 18.43894256041121,
+      "standard_error": 3.143054279423977,
+      "sampling_variance": 8.993260839142435,
+      "between_pv_variance": 0.8050266947844924,
+      "total_variance": 9.878790203405377,
+      "normal_approx_95_lower": 12.278556172740215,
+      "normal_approx_95_upper": 24.599328948082203
+    }
+  ],
+  "published_validation": [
+    {
+      "subject": "mathematics",
+      "microdata_mean": 422.6665924764541,
+      "published_mean": 422.6665924764541,
+      "mean_difference": 0.0,
+      "microdata_standard_error": 4.954087374164045,
+      "published_standard_error": 4.954087374164038,
+      "standard_error_difference": 7.105427357601002e-15
+    },
+    {
+      "subject": "reading",
+      "microdata_mean": 462.150649296126,
+      "published_mean": 462.1506492961261,
+      "mean_difference": -1.1368683772161603e-13,
+      "microdata_standard_error": 5.819426197385082,
+      "published_standard_error": 5.819426197385078,
+      "standard_error_difference": 3.552713678800501e-15
+    },
+    {
+      "subject": "science",
+      "microdata_mean": 459.1599389473031,
+      "published_mean": 459.1599389473031,
+      "mean_difference": 0.0,
+      "microdata_standard_error": 5.452185008195937,
+      "published_standard_error": 5.452185008195917,
+      "standard_error_difference": 2.042810365310288e-14
+    }
+  ],
+  "method": {
+    "plausible_values": 10,
+    "replicates": 80,
+    "fay_coefficient": 0.5,
+    "sampling_variance": "mean_m[4/80 sum_r(theta_mr-theta_m)^2]",
+    "between_pv_variance": "sample variance of 10 point estimates",
+    "total_variance": "sampling_variance + 1.1 * between_pv_variance",
+    "paired_difference": "For each PV and replicate first subtract all-grade estimate from grade10/11 estimate, then apply the same variance rules; overlapping domains retain covariance."
+  },
+  "scope": "PISA2022 sampled eligible age-cohort students in Bogota schools, restricted by current grade10 or11. Not a census of all secondary-school students, not all ages14-18, and not a causal school-quality effect. Current grade restriction selects progression as well as learning.",
+  "main_admitted": false,
+  "interval_scope": "Individual normal-approximate95% uncertainty for population means/paired differences; not simultaneous, not ranges of individual student achievement, not missing-data identified bounds."
+}
