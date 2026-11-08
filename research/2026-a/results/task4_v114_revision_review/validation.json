@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "ablation_scenarios": 4,
+  "weight_scenarios": 2,
+  "cities_per_scenario": 25,
+  "independent_formula": true,
+  "derived_observation_values": {
+    "public_transport_density": 0.6120269803125165,
+    "public_pool_density": 0.13220188351328488
+  },
+  "unchanged_non_target_cells": 248,
+  "all_upper_bounds_unchanged": true,
+  "checks": [
+    {
+      "scenario": "v113",
+      "weights": "inherited",
+      "possible": 25,
+      "recommendation": "Singapore",
+      "istanbul_rank": 15,
+      "istanbul_lower": 32.443479954742386,
+      "istanbul_upper": 55.3418297450748
+    },
+    {
+      "scenario": "v113",
+      "weights": "equal",
+      "possible": 25,
+      "recommendation": "Singapore",
+      "istanbul_rank": 15,
+      "istanbul_lower": 30.32443059733857,
+      "istanbul_upper": 58.73360595046804
+    },
+    {
+      "scenario": "transit_only",
+      "weights": "inherited",
+      "possible": 25,
+      "recommendation": "Singapore",
+      "istanbul_rank": 8,
+      "istanbul_lower": 34.774709724003735,
+      "istanbul_upper": 55.3418297450748
+    },
+    {
+      "scenario": "transit_only",
+      "weights": "equal",
+      "possible": 25,
+      "recommendation": "Singapore",
+      "istanbul_rank": 4,
+      "istanbul_lower": 34.969592904289335,
+      "istanbul_upper": 58.73360595046804
+    },
+    {
+      "scenario": "pools_only",
+      "weights": "inherited",
+      "possible": 25,
+      "recommendation": "Singapore",
+      "istanbul_rank": 14,
+      "istanbul_lower": 32.75435916837515,
+      "istanbul_upper": 55.3418297450748
+    },
+    {
+      "scenario": "pools_only",
+      "weights": "equal",
+      "possible": 25,
+      "recommendation": "Singapore",
+      "istanbul_rank": 14,
+      "istanbul_lower": 30.91128995039662,
+      "istanbul_upper": 58.73360595046804
+    },
+    {
+      "scenario": "v114",
+      "weights": "inherited",
+      "possible": 25,
+      "recommendation": "Singapore",
+      "istanbul_rank": 7,
+      "istanbul_lower": 35.10706405258306,
+      "istanbul_upper": 55.3418297450748
+    },
+    {
+      "scenario": "v114",
+      "weights": "equal",
+      "possible": 25,
+      "recommendation": "Singapore",
+      "istanbul_rank": 4,
+      "istanbul_lower": 35.63516710752446,
+      "istanbul_upper": 58.73360595046804
+    }
+  ],
+  "baseline_bounds_sha256": "305d18e77d6265a521b83cf6034d6d3fd7f8b0f7ebcabe439f08c327dba7a9e3",
+  "source_qualification": "Physical-stop inventory subset and named municipal swimming venues: lower bounds only, not teenage actual accessibility or full-year operation."
+}

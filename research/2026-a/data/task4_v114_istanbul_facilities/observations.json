@@ -1,0 +1,46 @@
+[
+  {
+    "city": "Istanbul",
+    "indicator": "public_transport_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.6120269803125165,
+      1
+    ],
+    "raw_count": 12426,
+    "population": 15754053,
+    "sourceyear": 2025,
+    "population_year": 2025,
+    "source_locator": "IETT2025 PDF pages63 and91 (printed124–125 and180–181); actual QR-equipped stop count12426 versus target7000",
+    "scope": "Actual identified physical stops across Istanbul receiving Braille/QR signage, a bus-network subset; not route occurrences, not all modes, upper unknown. Official administrative distinct-stop count accepted; no separate GTFS geocoding/dedup performed.",
+    "density_per_100000": 78.87494094376856,
+    "utility_anchor": 50,
+    "lower_bound_only": true,
+    "source_population_sha256": "39e49a0b8e46b2171a032292c7f8edb90f0b4469ec43037ba63b6f288fae793c"
+  },
+  {
+    "city": "Istanbul",
+    "indicator": "public_pool_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.13220188351328488,
+      1
+    ],
+    "raw_count": 24,
+    "population": 15754053,
+    "sourceyear": 2025,
+    "population_year": 2025,
+    "source_locator": "Official IBB article dated2025-01-01, swimming-services named venue list; manual verified rendering plus independent indexed-source crosscheck",
+    "scope": "Partial list of distinct municipal venues providing paid public swimming services as of January2025, paired with same-year December population. Not complete city inventory, not pool basins, not year-round or teenager-specific access. Other operators/venues unknown.",
+    "density_per_100000": 0.15234174977067805,
+    "utility_anchor": 1,
+    "lower_bound_only": true,
+    "source_population_sha256": "39e49a0b8e46b2171a032292c7f8edb90f0b4469ec43037ba63b6f288fae793c"
+  }
+]

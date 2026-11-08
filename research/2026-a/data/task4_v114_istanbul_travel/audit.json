@@ -1,0 +1,42 @@
+{
+  "city": "Istanbul",
+  "indicator": "travel",
+  "admitted": false,
+  "utility_before": [
+    0,
+    1
+  ],
+  "utility_after": [
+    0,
+    1
+  ],
+  "new_admitted_observations": 0,
+  "checks": [
+    {
+      "route": "TBMM written question 7/34663",
+      "date": "2025-10-02",
+      "response_date": "2025-11-04",
+      "source_url": "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T7/WebOnergeMetni/5e9d9f19-05ee-4077-b2cc-16de924ecaf7.pdf",
+      "discovery_url": "https://meclis.org/soru-onergesi/cbd04ecf-b8f0-43c6-a663-0199b897ec7d/",
+      "finding": "Question asks school-transport totals and policy for journeys exceeding 60 minutes; the latter is an unquantified concern, not a weighted high-school distribution.",
+      "response_status": "2-page scanned PDF identified through web; direct original and mirror downloads timed out; response body not read.",
+      "admission_reason": "No verified response figures, current-stage breakdown, denominator or journey distribution."
+    },
+    {
+      "route": "Vekilpedia 7/34504 grouped minister cover letter",
+      "url": "https://vekilpedia.com/soru-onergesi/7-34504-yildiz-teknik-universitesi-bunyesindeki-bazi-kulup-ve-topluluklarin-kapatilmasina-iliskin",
+      "finding": "Cover letter mentions 7/34663 but attached response concerns Yildiz Technical University clubs. It is not the school-transport appendix.",
+      "admission_reason": "Wrong appendix; no substitution."
+    },
+    {
+      "route": "Istanbul Liseli Profili 2011",
+      "file": "istanbul_liseli_profili_2011.pdf",
+      "publisher": "Genc Hayat Foundation",
+      "inspection": "TOC visually read; PDF pages55-74 (printed53-72 school/education chapter) rendered and locally OCR checked.",
+      "finding": "School choices, school attitudes and education items in checked chapter; no actual home-to-school duration distribution found there.",
+      "limitations": "OCR was a bounded chapter inspection, not proof every page lacks a time field; historical2011 data cannot automatically become2025 observations.",
+      "admission_reason": "No verified target duration or current-period transfer."
+    }
+  ],
+  "next_required": "Readable original TBMM7/34663 appendix or official current-stage-by-Istanbul household journey tabulation with first home-to-school durations, sample weights and missing-person coverage; no proxy substitution."
+}

@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "same_six_draw_hashes_as_v113": true,
+  "independent_formula": true,
+  "verified_bound_cells": 250,
+  "fully_unknown_cells": 129,
+  "nonpoint_cells": 151,
+  "ahp_not_claimed_as_elicited": true,
+  "checks": [
+    {
+      "center": "inherited_policy",
+      "concentration": 20,
+      "draws": 10000,
+      "replayed_city_draws": 250000,
+      "verified_summary_cells": 300,
+      "possible_count_range": [
+        17,
+        25
+      ],
+      "midpoint_leader": "Copenhagen",
+      "minimax_most_frequent": "Singapore"
+    },
+    {
+      "center": "inherited_policy",
+      "concentration": 100,
+      "draws": 10000,
+      "replayed_city_draws": 250000,
+      "verified_summary_cells": 300,
+      "possible_count_range": [
+        24,
+        25
+      ],
+      "midpoint_leader": "Copenhagen",
+      "minimax_most_frequent": "Singapore"
+    },
+    {
+      "center": "inherited_policy",
+      "concentration": 500,
+      "draws": 10000,
+      "replayed_city_draws": 250000,
+      "verified_summary_cells": 300,
+      "possible_count_range": [
+        25,
+        25
+      ],
+      "midpoint_leader": "Copenhagen",
+      "minimax_most_frequent": "Singapore"
+    },
+    {
+      "center": "neutral_symmetry",
+      "concentration": 20,
+      "draws": 10000,
+      "replayed_city_draws": 250000,
+      "verified_summary_cells": 300,
+      "possible_count_range": [
+        17,
+        25
+      ],
+      "midpoint_leader": "Singapore",
+      "minimax_most_frequent": "Singapore"
+    },
+    {
+      "center": "neutral_symmetry",
+      "concentration": 100,
+      "draws": 10000,
+      "replayed_city_draws": 250000,
+      "verified_summary_cells": 300,
+      "possible_count_range": [
+        25,
+        25
+      ],
+      "midpoint_leader": "Singapore",
+      "minimax_most_frequent": "Singapore"
+    },
+    {
+      "center": "neutral_symmetry",
+      "concentration": 500,
+      "draws": 10000,
+      "replayed_city_draws": 250000,
+      "verified_summary_cells": 300,
+      "possible_count_range": [
+        25,
+        25
+      ],
+      "midpoint_leader": "Singapore",
+      "minimax_most_frequent": "Singapore"
+    }
+  ],
+  "input_summary_sha256": "bd4f70a6ae8730cd2792c9217cd816496b91107c2d6a01d0c53f579791782d30",
+  "limitations": [
+    "Replays numerical sensitivity, not empirical validity of weight prior.",
+    "Midpoint scenario is not observed complete data.",
+    "Finite sampled weights do not certify full-simplex winner exclusion."
+  ]
+}

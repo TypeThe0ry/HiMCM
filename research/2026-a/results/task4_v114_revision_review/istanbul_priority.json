@@ -1,0 +1,222 @@
+{
+  "scope": "Hypothetically resolve selected Istanbul uncertain cells exactly to their CURRENT lower endpoints, leaving all other upper endpoints and all other cities unchanged. This is a best-case exclusion feasibility diagnostic, not observed data, a forecast, or a probability. Non-exclusion at these most adverse legal endpoints proves the selected bundle alone cannot exclude Istanbul under this fixed-weight rectangular-bound model.",
+  "no_model_mutation": true,
+  "scenarios": [
+    {
+      "scenario": "v113",
+      "weight_reference": "inherited",
+      "uncertain_cells": [
+        "homicide_rate",
+        "upper_secondary_ptr",
+        "public_transport_density",
+        "travel",
+        "public_pool_density"
+      ],
+      "comparator_city": "Singapore",
+      "comparator_lower_score": 43.53854061659156,
+      "original_upper_score": 55.3418297450748,
+      "tested_subsets": 31,
+      "excluding_subsets": 15,
+      "minimum_cells": 2,
+      "minimal_excluding_bundles": [
+        {
+          "cells": [
+            "homicide_rate",
+            "travel"
+          ],
+          "upper_score": 42.650626857870506,
+          "exclusion_margin": 0.887913758721055
+        },
+        {
+          "cells": [
+            "public_transport_density",
+            "travel"
+          ],
+          "upper_score": 42.558931882356205,
+          "exclusion_margin": 0.9796087342353559
+        },
+        {
+          "cells": [
+            "travel",
+            "public_pool_density"
+          ],
+          "upper_score": 42.558931882356205,
+          "exclusion_margin": 0.9796087342353559
+        },
+        {
+          "cells": [
+            "homicide_rate",
+            "upper_secondary_ptr",
+            "public_transport_density",
+            "public_pool_density"
+          ],
+          "upper_score": 42.13670301299317,
+          "exclusion_margin": 1.4018376035983877
+        }
+      ]
+    },
+    {
+      "scenario": "v113",
+      "weight_reference": "equal",
+      "uncertain_cells": [
+        "homicide_rate",
+        "upper_secondary_ptr",
+        "public_transport_density",
+        "travel",
+        "public_pool_density"
+      ],
+      "comparator_city": "Singapore",
+      "comparator_lower_score": 42.84660859966525,
+      "original_upper_score": 58.73360595046804,
+      "tested_subsets": 31,
+      "excluding_subsets": 13,
+      "minimum_cells": 3,
+      "minimal_excluding_bundles": [
+        {
+          "cells": [
+            "homicide_rate",
+            "public_transport_density",
+            "travel"
+          ],
+          "upper_score": 40.546664703868565,
+          "exclusion_margin": 2.2999438957966873
+        },
+        {
+          "cells": [
+            "homicide_rate",
+            "public_transport_density",
+            "public_pool_density"
+          ],
+          "upper_score": 40.54666470386857,
+          "exclusion_margin": 2.2999438957966802
+        },
+        {
+          "cells": [
+            "homicide_rate",
+            "travel",
+            "public_pool_density"
+          ],
+          "upper_score": 40.54666470386857,
+          "exclusion_margin": 2.2999438957966802
+        },
+        {
+          "cells": [
+            "upper_secondary_ptr",
+            "public_transport_density",
+            "travel"
+          ],
+          "upper_score": 42.48486778940224,
+          "exclusion_margin": 0.3617408102630151
+        },
+        {
+          "cells": [
+            "upper_secondary_ptr",
+            "public_transport_density",
+            "public_pool_density"
+          ],
+          "upper_score": 42.48486778940224,
+          "exclusion_margin": 0.3617408102630151
+        },
+        {
+          "cells": [
+            "upper_secondary_ptr",
+            "travel",
+            "public_pool_density"
+          ],
+          "upper_score": 42.48486778940224,
+          "exclusion_margin": 0.3617408102630151
+        },
+        {
+          "cells": [
+            "public_transport_density",
+            "travel",
+            "public_pool_density"
+          ],
+          "upper_score": 35.482517608611694,
+          "exclusion_margin": 7.364090991053558
+        }
+      ]
+    },
+    {
+      "scenario": "v114",
+      "weight_reference": "inherited",
+      "uncertain_cells": [
+        "homicide_rate",
+        "upper_secondary_ptr",
+        "public_transport_density",
+        "travel",
+        "public_pool_density"
+      ],
+      "comparator_city": "Singapore",
+      "comparator_lower_score": 43.53854061659156,
+      "original_upper_score": 55.3418297450748,
+      "tested_subsets": 31,
+      "excluding_subsets": 13,
+      "minimum_cells": 2,
+      "minimal_excluding_bundles": [
+        {
+          "cells": [
+            "homicide_rate",
+            "travel"
+          ],
+          "upper_score": 42.650626857870506,
+          "exclusion_margin": 0.887913758721055
+        },
+        {
+          "cells": [
+            "travel",
+            "public_pool_density"
+          ],
+          "upper_score": 42.97278762669929,
+          "exclusion_margin": 0.5657529898922746
+        },
+        {
+          "cells": [
+            "upper_secondary_ptr",
+            "public_transport_density",
+            "travel"
+          ],
+          "upper_score": 43.22559249420932,
+          "exclusion_margin": 0.3129481223822381
+        }
+      ]
+    },
+    {
+      "scenario": "v114",
+      "weight_reference": "equal",
+      "uncertain_cells": [
+        "homicide_rate",
+        "upper_secondary_ptr",
+        "public_transport_density",
+        "travel",
+        "public_pool_density"
+      ],
+      "comparator_city": "Singapore",
+      "comparator_lower_score": 42.84660859966525,
+      "original_upper_score": 58.73360595046804,
+      "tested_subsets": 31,
+      "excluding_subsets": 6,
+      "minimum_cells": 3,
+      "minimal_excluding_bundles": [
+        {
+          "cells": [
+            "homicide_rate",
+            "travel",
+            "public_pool_density"
+          ],
+          "upper_score": 41.245817120836286,
+          "exclusion_margin": 1.6007914788289668
+        },
+        {
+          "cells": [
+            "public_transport_density",
+            "travel",
+            "public_pool_density"
+          ],
+          "upper_score": 40.82496872837933,
+          "exclusion_margin": 2.0216398712859203
+        }
+      ]
+    }
+  ]
+}
