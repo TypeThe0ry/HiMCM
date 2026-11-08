@@ -1,0 +1,38 @@
+[
+  {
+    "city": "Madrid",
+    "indicator": "public_transport_density",
+    "raw_count": 191,
+    "population": 3527924,
+    "population_year": 2025,
+    "population_source": "Unchanged authoritative team CSV; not externally rechecked",
+    "sourceyear": 2026,
+    "record_date": "2026-05-29",
+    "access_date": "2026-11-09",
+    "lower_bound_only": true,
+    "density_per_100000_lower": 5.413948826562024,
+    "utility_after": [
+      0.09770010874891687,
+      1
+    ],
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_anchor": 50,
+    "source_url": "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer/0",
+    "source_files": [
+      "metro_stations_all.json",
+      "metro_metadata.json",
+      "metro_item.json",
+      "crtm_service.json",
+      "ine_municipality_codes.html"
+    ],
+    "candidate_only": true,
+    "admissible": "conditional_inventory_lower_bound",
+    "historical_inventory_proxy": false,
+    "scope": "CRTM metro station records tagged province28/municipality079 (Madrid city); group 240 named route-bearing records by 191 nonnull provider network-station codes. Noviciado/Plaza de España and Embajadores/Acacias are each conservatively consolidated as one linked complex. Two unnamed/no-line records and 51 outside-city records omitted. No bus, commuter rail or light-rail count is added.",
+    "limitations": "2026 registry inventory at source record date, with unchanged2025 team population; not a2025 same-year census, real-time service availability, all-provider stop inventory or teenage access measure. Temporary closures cannot be reconstructed from the registry. Unknown uncounted modes retain upper utility1. SITUACION codes are not interpreted as operating status.",
+    "extraction": "Offline extract.py with all293 source records archived; city-code mapping independently documented by INE."
+  }
+]

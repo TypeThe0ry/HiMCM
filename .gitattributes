@@ -1,2 +1,10 @@
 # Preserve original PDF bytes and keep binary documents out of text diffs.
 *.pdf binary
+# V124 archived HTTP responses and source extracts must retain exact bytes.
+research/2026-a/data/task4_v124_*/*.html binary
+research/2026-a/data/task4_v124_education/ireland_EDA82.json binary
+research/2026-a/data/task4_v124_education/*_scope_excerpt.txt binary
+research/2026-a/data/task4_v124_education/ireland_workforce_quality2026.txt binary
+research/2026-a/data/task4_v124_madrid/metro_*.json binary
+research/2026-a/data/task4_v124_madrid/crtm_*.json binary
+research/2026-a/data/task4_v124_transport/provider_capture.json binary

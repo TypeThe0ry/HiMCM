@@ -1,0 +1,74 @@
+[
+  {
+    "file": "crtm_portal.html",
+    "url": "https://datos.crtm.es/",
+    "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "education_catalogue.html",
+    "url": "https://datos.comunidad.madrid/dataset/spacm_estadisticas_profesores",
+    "error": "<urlopen error timed out>",
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "profesores_tipo.json",
+    "url": "https://datos.comunidad.madrid/catalogo/dataset/e1ca4058-9c82-4c25-b3e0-4a148b31e19c/resource/9942053b-bc8f-4be2-879d-f72ba4b8b96a/download/profesores_por_tipo_centro_y_sexo.json",
+    "error": "<urlopen error timed out>",
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "profesores_ensenanza.json",
+    "url": "https://datos.comunidad.madrid/catalogo/dataset/e1ca4058-9c82-4c25-b3e0-4a148b31e19c/resource/5a7a7de0-4e07-412f-9f5a-63de3e55ede9/download/profesores_centros_regimen_general_por_cuerpo_categoria_titularidad_centro_y_sexo.json",
+    "error": "<urlopen error timed out>",
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "metro_metadata.json",
+    "url": "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer/0?f=pjson",
+    "sha256": "f5af501fe255374474d5dda3632a531437a440e991db95db9f741941523637ee",
+    "bytes": 28083,
+    "status": 200,
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "metro_item.json",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/0a6c45e7bdd94679b67a2ae662c8838b?f=pjson",
+    "sha256": "fc7764244f17bca128b2743c0c97a5f3fc6faf6bf25a9742b08f5e0e6b951411",
+    "bytes": 1929,
+    "status": 200,
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "metro_stations_all.json",
+    "url": "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer/0/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+    "sha256": "25dc882aa5d6696cfd41ac4810492c88bc47113f3b28584e5b7cf289074c1e3f",
+    "bytes": 604782,
+    "status": 200,
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "ine_municipality_codes.html",
+    "url": "https://www.ine.es/dynt3/metadatos/RespuestaDatos.html?oper=297",
+    "sha256": "e7951e9dcdac74de5b58f38aa68273a9602f955cd9ce187dc3e872713ff0ff46",
+    "bytes": 111599,
+    "status": 200,
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "crtm_owner.json",
+    "url": "https://www.arcgis.com/sharing/rest/community/users/ConsorcioRegional?f=pjson",
+    "sha256": "dc24a1ed329719eb0031a5bb64518286e6091d468010f079f811b04f0f34ba17",
+    "bytes": 1811,
+    "status": 200,
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "crtm_service.json",
+    "url": "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer?f=pjson",
+    "sha256": "56c61a3b2fa6c699ef67df625ba1b11574e9eaad2a6e3c181687b60f3b0b4e23",
+    "bytes": 5807,
+    "status": 200,
+    "access_date": "2026-11-09"
+  }
+]

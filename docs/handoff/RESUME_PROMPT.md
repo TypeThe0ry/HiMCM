@@ -2,6 +2,8 @@
 
 > **长期goal保持active：** 用户要求持续迭代论文与论文材料，所有新增／修改文字必须使用已安装的中英文anti-defensive-writing技能。先读[长期工作计划](LONGTERM_GOAL.md)和[强制技能规则](../guidelines/ANTI_DEFENSIVE_WRITING.md)，再按当前数据与稿件权限推进；不要把单轮任务完成误记为长期goal完成。
 
+> **V124最新：** 主注册表已指向16城V124，新增Madrid交通／Tokyo泳池两格真实下界；平均fixed宽度16.18302472→16.15002092（约0.204%），Zurich仍保守推荐、可能冠军仍16城。先读[V124交接](V124_RESEARCH_UPDATE.md)和[主结果](../../research/2026-a/results/task4_user_v124_revision/README.md)。Overleaf V124为三页配套材料；V123完整稿及V122扩展仍固定V121，下一轮须重跑扩展并统一全文。下方V123/V122/V121为历史记录。公开GitHub推送仍待用户选择，不擅改可见性。
+
 > **V123最新：** 主数据仍16城V121；新增[受控修订诊断与完整审阅稿交接](V123_RESEARCH_UPDATE.md)。Overleaf独立稿`drafts/task4_v123_paper.tex/.pdf`为17页主解答+1页暂定AI报告，已编译渲染；控制号/完整AI史未核实，不可直接提交。GitHub现为PUBLIC，赛期公开推送问题已询问用户，答复前暂缓本轮研究公开push、不擅改可见性。下方V122及V120/V121为历史恢复记录。
 
 > **最新进度：数据仍为16城V121，模型扩展与独立论文章节已到V122。先读[V122交接](V122_RESEARCH_UPDATE.md)及[V122结果](../../research/2026-a/results/task4_v122_revision/README.md)。** Overleaf Git已认证；新增稿在`drafts/task4_v122_sections.tex/.pdf`，主稿及队友内容未改。教育优先情景推荐Oslo，基准/独立生活优先推荐Zurich；可能冠军仍16城。V121主数据注册表不改，下方V120/V121文字为恢复基线和历史上下文。

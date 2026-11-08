@@ -1,0 +1,55 @@
+{
+  "accessed": "2026-11-09",
+  "current_target": "V121 authoritative16-city inputs; Tokyo23specialwards, Vienna and Warsaw cityproper. No travel or transport observation admitted in this directory.",
+  "routes": [
+    {
+      "city": "Tokyo",
+      "indicator": "travel",
+      "existing_audits": ["data/task4_v55_tokyo_travel/README.md", "data/task4_v113_tokyo/README.md", "data/task4_v121_travel/nonadmission_audit.json"],
+      "outcome": "Bounded new search did not establish actual upper-secondary one-way travel time with Tokyo23specialward eligibility and a valid student denominator. Earlier2021 national city-group tables, 2018metropolitan PT and selected2025sports participants are not reintroduced. No national mean, daily roundtrip total, all-school statistic or modelled nearest-school accessibility substituted. No utility calculated."
+    },
+    {
+      "city": "Vienna",
+      "indicator": "travel",
+      "url": "https://www.statistik.at/fileadmin/publications/Volkszaehlung_2001__Schueler_und_Studenten.pdf",
+      "provider": "Statistics Austria",
+      "sourceyear": 2001,
+      "publicationyear": 2005,
+      "locator": "Table10, printed118onward: students by residence, school type and actual single-journey school commuting duration; definitions in front matter",
+      "outcome": "Original2001 census source located and downloaded successfully. Far older than current model, with school-category and missingness/commuter eligibility still requiring full extraction. Not used as a current travel observation or as a numeric bound. No2001-to-2026 stability claim.",
+      "archive": "Not redistributed inGit: source explicitly reserves online distribution rights. Local review copy only at /data/scratch/himcm-austria2001-pupils-students.pdf",
+      "original_sha256": "ac650df634fea8e0f5b4bfceae84065f61f9ec69d9af2e2e33fd7d6d2760a814"
+    },
+    {
+      "city": "Vienna",
+      "indicator": "travel",
+      "outcome": "Search also surfaced school-accessibility summaries based on computed minimum car travel from origins to nearest school. These are not observed student trips; no such value admitted. Earlier V121 safety/primary-school materials remain excluded."
+    },
+    {
+      "city": "Warsaw",
+      "indicator": "travel",
+      "existing_audit": "data/task4_v121_travel/nonadmission_audit.json",
+      "outcome": "Bounded new official-source search did not establish city upper-secondary actual duration. School origin-destination flows alone do not give durations, and earlier WBR/pooled work-university-school paths were not repeated as admissible data. No utility calculated."
+    },
+    {
+      "city": "Tokyo",
+      "indicator": "public_transport_density",
+      "url": "https://www.tokyometro.jp/corporate/enterprise/passenger_rail/transportation/passengers/index.html",
+      "sourceyear": 2025,
+      "outcome": "Official operator page inspected in provider_capture.json. Route-station total180 and same-name consolidated143 are not a proven city23ward venue subset: operator extends into Chiba/Saitama. No geographically verified station-address allowlist completed. Neither total admitted; platforms/line appearances are not counted as unique venues.",
+      "representation": "Exa provider-extracted Markdown; original shell request403, no original HTML archived."
+    },
+    {
+      "city": "Tokyo",
+      "indicator": "public_pool_density",
+      "url": "https://www.sports-tokyo-info.metro.tokyo.lg.jp/seisaku/sports_facility_r4/data/sports_facility_r07_01.pdf",
+      "landing_url": "https://www.sports-tokyo-info.metro.tokyo.lg.jp/seisaku/sports_facility_r4/",
+      "inventory_date": "2025-10-01",
+      "publication_date": "2026-03-31",
+      "locator": "Pool chapter, printed150-167, physicalPDF153-170; definitions atprinted1",
+      "outcome": "OriginalPDF download403. Provider cleanMarkdown retained transparently but rows represent basins and contain cross-row ordering ambiguities. No provider-derived55/56/57 or other city count admitted. Source-page screenshot attempts did not yield inspectable page images. Final candidate instead uses nine independent original Nerima municipal HTML files, exact venue names/addresses and explicit closure checks.",
+      "representation": "provider_capture.json is tool output, NOT originalPDF; no originalPDF hash claimed."
+    }
+  ],
+  "travel_rule_if_future_source_is_found": "Actual one-way mean may support Jensen lower exp(-mean/30), upper1; interval-bin endpoints support bounds without midpoint imputation or a finite cap on the open final tail. Student eligibility, residence/school scope and missingness must be established first."
+}

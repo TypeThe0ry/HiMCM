@@ -1,12 +1,12 @@
 {
   "primary_dataset": "user-provided16-city CSV",
-  "version": "V121",
-  "module": "task4_user_v121_revision",
+  "version": "V124",
+  "module": "task4_user_v124_revision",
   "factory": "revised_bounds",
   "source_csv": "data/task4_v117_team_intake/city_indicators.csv",
-  "admissions": "design/task4_user_v121_admissions.json",
-  "results": "results/task4_user_v121_revision",
+  "admissions": "design/task4_user_v124_admissions.json",
+  "results": "results/task4_user_v124_revision",
   "fixed_auxiliary_weight_total": 0.1,
-  "source_policy": "Existing attachment values and all V120 nonmissing bounds authoritative and unchanged; only five V120 fully missing cells supplemented; other25-city registry retained as historical comparison.",
-  "scope": "Conditional mixed-vintage school resources and facility inventories; Singapore2020 school-stage proxy and Paris/Dublin historical inventories explicitly withdrawable. No exact14-18/common-year claim."
+  "source_policy": "Original CSV and all139 V121 nonfullymissing bounds preserved exactly; only Madrid transport and Tokyo pool fullymissing cells supplemented. All weights, anchors and interval rules retained; legacy25 registry remains separate.",
+  "scope": "Conditional mixed-vintage resource inventory: Madrid2026 registered metro complexes and Tokyo2026 municipal indoor-pool subset. No common-year, adolescent access, survey or forecast claim; historical prior proxies remain explicitly withdrawable."
 }

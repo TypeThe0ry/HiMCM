@@ -1,0 +1,62 @@
+{
+  "access_date": "2026-11-09",
+  "timezone": "Asia/Singapore",
+  "sources": [
+    {
+      "file": "zurich_canton_staff.html",
+      "url": "https://www.zh.ch/de/bildung/bildungssystem/zahlen-fakten/entwicklung-des-schulpersonals-an-mittelschulen-und-berufsfachschulen.html",
+      "archive_type": "original HTTP response bytes",
+      "sha256": "62bbdd3880817bffc1262aa9d035e9de63e49c93a20687ce87aac20cf69acead"
+    },
+    {
+      "file": "zurich_canton_staff_fte.json",
+      "url": "https://www.bista.zh.ch/basicapi/zhweb/p_entwicklung_der_anzahl_vollzeiteinheiten_an_mittelschulen_und_berufsfachschulen?refreshcache=false",
+      "archive_type": "original HTTP response bytes",
+      "sha256": "e12f25d548bf29ff9dface452ae39033372b7fb04fb7ab93a099e064046d1bc7"
+    },
+    {
+      "file": "ireland_workforce_quality2026.pdf",
+      "url": "https://nationaldata.ie/media/NationalDataie/MethodologyDocumentation/Teacher_Workforce_Data_Quality_Report.pdf",
+      "archive_type": "original HTTP response bytes",
+      "sha256": "af1ea27475cd7c052f87f0f0674db0e9bffdb69f9182eef80a2a384c6761744f"
+    },
+    {
+      "file": "ireland_EDA82.json",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/EDA82/JSON-stat/2.0/en",
+      "archive_type": "original HTTP response bytes",
+      "sha256": "c605fdc59992cc07425a8309f9172902f6ccf693204fb209eb036e79cb4ee64f"
+    },
+    {
+      "file": "zurich_yearbook2011_scope_excerpt.txt",
+      "url": "https://www.stadt-zuerich.ch/content/dam/web/de/politik-verwaltung/statistik-und-daten/publikationen-dienstleistungen/publikationen/statistisches-jahrbuch-der-stadt-zuerich/2011/Statistisches-Jahrbuch-der-Stadt-Zuerich_2011.pdf",
+      "archive_type": "pdftotext -layout derived excerpt; original full book is not included because rejected for model admission",
+      "sha256": "5658b261be6bee288394a9c38b6371804a9b0c3ef3427ba2df08a4b4ddbd352b",
+      "original_sha256": "2b9adf2265b673fabc2a5f0eb3ecb66fae7370c144b47030b8f1be420899da9d",
+      "pdf_pages": [
+        310,
+        312,
+        313
+      ],
+      "original_cache": "/data/scratch/v124_zurich_yearbook2011.pdf"
+    },
+    {
+      "file": "helsinki_yearbook2024_scope_excerpt.txt",
+      "url": "https://www.hel.fi/static/kanslia/Kaupunkitieto/24_12_16_Helsingin_tilastollinen_vuosikirja_2024.pdf",
+      "archive_type": "pdftotext -layout derived excerpt; original full book is not included because rejected for model admission",
+      "sha256": "54d619333140a177e087415336762ac33c8df094acefbd6726bb85b31ba68c53",
+      "original_sha256": "f6cfe9e192de18de0c89cad6988d8a18d3a524b3577ef9cb9c0bffbc80d3e86f",
+      "pdf_pages": [
+        157,
+        158,
+        159
+      ],
+      "original_cache": "/data/scratch/v124_helsinki_yearbook2024.pdf"
+    },
+    {
+      "file": "bfs_public_teacher_table.html",
+      "url": "https://www.pxweb.bfs.admin.ch/pxweb/de/px-x-1504000000_170/px-x-1504000000_170/px-x-1504000000_170.px/",
+      "archive_type": "original HTTP response bytes",
+      "sha256": "6f1eac6f6ede426fdaef47922d5ef691062b3c3de9e72941fa631771b98d5300"
+    }
+  ]
+}

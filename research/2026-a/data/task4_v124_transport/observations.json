@@ -1,0 +1,52 @@
+[
+  {
+    "city": "Tokyo",
+    "indicator": "public_pool_density",
+    "raw_count": 5,
+    "population": 9983365,
+    "population_year": 2026,
+    "sourceyear": 2026,
+    "access_date": "2026-11-09",
+    "population_source": "Unchanged authoritative 16-city user attachment; not externally rechecked",
+    "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.04769460950753885,
+      1
+    ],
+    "density_per_100000_lower": 0.05008331359216056,
+    "utility_anchor": 1,
+    "lower_bound_only": true,
+    "source_locator": "https://www.city.nerima.tokyo.jp/shisetsu/koen/index.html",
+    "source_file": "nerima_facilities.html",
+    "source_files": [
+      "nerima_facilities.html",
+      "nakamuraminami.html",
+      "kamishakujii.html",
+      "oizumigakuen.html",
+      "hikarigaoka.html",
+      "heiwadai.html",
+      "miharadai.html",
+      "miharadai_closure.html",
+      "heiwadai_closure.html"
+    ],
+    "source_hashes": {
+      "nerima_facilities.html": "c042256dc61d589ad149c9cdaf1f59d6c45658c10fa171de4d9b43489aaa9ab8",
+      "nakamuraminami.html": "6a65e3e3e97cd46f994267cb0974a1801e097a24f232296b68443037d2536e18",
+      "kamishakujii.html": "0b25c56ad7c910a1672f290cdec650bde05b62d3d9005bf528e69d769f1d92c6",
+      "oizumigakuen.html": "f2f2fc80ca0d115e621cbf28da4bf39ec5ebc1e107dad79db28b447e2c84619d",
+      "hikarigaoka.html": "e5eef228cd9627161fce5fa662cea4797fdb4e0a5c061865c5045eb64f6bc71b",
+      "heiwadai.html": "267c3c0806ac1fa8de53e76e04968f67cd163ad684aa29845b25f23f78e41d6d",
+      "miharadai.html": "8a27b52c5ec5c172ffc4ed9fa80766a97d5a7bdf8f8571b59a42886b533a6c00",
+      "miharadai_closure.html": "dd9dba3d09c7898ea1dc152599e3ff80826d2cda8317cf70f18592086990247b",
+      "heiwadai_closure.html": "ec272df4e5d5cbaa190f4227e4985c8f51f3b26b42d97193d133430ec9a564d9"
+    },
+    "scope": "Five distinct-address Nerima municipal indoor swimming venues, wholly inside Tokyo23 special-ward scope. Other Tokyo wards/providers uncounted. Venues, not basins, swimming lanes, capacity or operators.",
+    "historical_inventory_proxy": false,
+    "extraction": "Deterministic named-venue allowlist verified against original municipal HTML index and each facility page. Closed-Heiwadai and future-Miharadai notices explicitly checked.",
+    "limitations": "Operational facility-stock subset as accessed 2026-11-09, not a complete city census or a claim that every venue is open today. Routine maintenance days and limited special sessions apply. Miharadai announces closure 2027-02-01 through 2027-05-31. Heiwadai currently closed with unknown reopening is excluded. No inference about adolescent use, within-city equity or individual accessibility. Upper utility remains1."
+  }
+]
