@@ -1,0 +1,210 @@
+{
+  "version": "V121",
+  "baseline": "V120 user16",
+  "access_date": "2026-11-08",
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "source_policy": "Submitted measurements and all V120 nonmissing bounds retained exactly; only five V120 fully missing cells supplemented. No new weight, anchor, travel imputation or finite inventory upper bound.",
+  "scope": "Mixed-vintage school-resource and facility inventories, not identified ages14-18 resident outcomes or a common-year city census. Paris inventory uses RATP2021/Apur2022; Dublin uses existing stock in the2023 plan issued2024.",
+  "observations": [
+    {
+      "city": "Stockholm",
+      "indicator": "upper_secondary_ptr",
+      "kind": "ratio_interval",
+      "ratio_bounds": [
+        16.35,
+        16.45
+      ],
+      "published_api_ratio": 16.42091405,
+      "published_period": 2025,
+      "school_year": "2025/26",
+      "utility_after": [
+        0.4769475357710652,
+        0.4784688995215311
+      ],
+      "source_hashes": {
+        "data/task4_v121_education/kolada_N17816_metadata.json": "149d3ef9e0a66552428f93475065799b3e5077b439c93d53ccece79d4d86db71",
+        "data/task4_v121_education/kolada_0180_municipality.json": "36d170c367b54075fed6931d1ad18e7c18f32f363c50ff2457510ad0cf8038ab",
+        "data/task4_v121_education/kolada_stockholm_2025.json": "ca55b9e050c8921d341e2a02541c209b6bb7a5fdf9278b4f811ca943dd26f179",
+        "data/task4_v121_education/kolada_api_documentation.html": "a82e79e04b61205110de1624f1865dbdf1e1f5038a2130897fd4566723774c60",
+        "data/task4_v121_education/skolverket_underlag_metadata.json": "4d9d69119faf9bc8788c251f0bbcfb01ba91dff15de7e30a8aa35eb154745059",
+        "data/task4_v121_education/skolverket_personal_2025_26.pdf": "0b24addc2483f6ef72eb63954fe638fc18ca6a055f504df1b721524e1a247ff6"
+      },
+      "scope": "Upper-secondary school years 1-3, schools located in Stockholm municipality, all providers, pupils per teacher FTE; 15 October snapshot. School-resource proxy, not ages14-18 resident-only measurement.",
+      "precision_rule": "API ratio 16.42091405 intentionally coarsened to 16.4 with a half-last-digit envelope [16.35,16.45]; not a confidence interval or independently identified measurement-error bound.",
+      "admissible": "conditional_school_resource_fte",
+      "candidate_file": "data/task4_v121_education/observations.json"
+    },
+    {
+      "city": "Stockholm",
+      "indicator": "public_transport_density",
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.02536090518923137,
+        1
+      ],
+      "raw_count": 13,
+      "population": 999200,
+      "population_year": 2025,
+      "population_source": "Unchanged authoritative attachment; not externally rechecked",
+      "sourceyear": 2025,
+      "reportyear": 2025,
+      "density_per_100000_lower": 1.301040832666133,
+      "utility_anchor": 50,
+      "lower_bound_only": true,
+      "source_locator": "https://meetingspublic.stockholm.se/welcome-sv/namnder-styrelser/hasselby-vallingby-stadsdelsnamnd/mote-2025-12-18/agenda/6-lagesbild-2025-samverkansoverenskommelse-mellan-hasselby-vallingby-sdf-och-lokalpolisomrade-vallingbypdf?downloadMode=open",
+      "source_file": "stockholm_vallingby_2025.pdf",
+      "source_pdf_page": 11,
+      "access_date": "2026-11-08",
+      "scope": "2025 city/police report PDF page11, printed10:13 metro stations, explicitly8 in Bromma plus5 in Hässelby-Vällingby. Previous page states both districts are within Stockholm municipality; the police area also covers Ekerö, but none of the13 is assigned to Ekerö. Stations, not directional platforms. Subset of city metro inventory, not all modes.",
+      "historical_inventory_proxy": false,
+      "extraction": "Manual figure reading with archived source-page PNG",
+      "source_hashes": {
+        "data/task4_v121_transport/stockholm_vallingby_2025.pdf": "c81adf01ea0d76c48cfc8cc62fe4899793c41a7f886c9d1a490a8da636691057"
+      },
+      "limitations": "Facility-supply subset only. Upper utility remains1 for uncounted modes/operators and incomplete inventory. Mixed vintage does not identify current complete supply, travel access or adolescent usage. Historical inventory can be withdrawn to[0,1].",
+      "admissible": "conditional_inventory_lower_bound",
+      "candidate_file": "data/task4_v121_transport/observations.json"
+    },
+    {
+      "city": "Paris",
+      "indicator": "public_transport_density",
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.1882877314337879,
+        1
+      ],
+      "raw_count": 244,
+      "population": 2103778,
+      "population_year": 2023,
+      "population_source": "Unchanged authoritative attachment; not externally rechecked",
+      "sourceyear": 2021,
+      "reportyear": 2022,
+      "density_per_100000_lower": 11.598181937447773,
+      "utility_anchor": 50,
+      "lower_bound_only": true,
+      "source_locator": "https://www.apur.org/sites/default/files/atlas_activites_paris_immobilier.pdf",
+      "source_file": "paris_apur_atlas.pdf",
+      "source_pdf_page": 37,
+      "access_date": "2026-11-08",
+      "scope": "March2022 Apur inventory PDF page37:244 metro stations inside Paris intra-muros, including58 interchange stations, distinguished from332 line stop-points. Only244 used, no addition of RER stations with unassessed interchange overlap. Underlying sources explicitly RATP2021 and Apur BDÉquipement2022. Historical inventory with unchanged2023 attachment population.",
+      "historical_inventory_proxy": true,
+      "extraction": "pdftotext assertions on original PDF",
+      "source_hashes": {
+        "data/task4_v121_transport/paris_apur_atlas.pdf": "877ca2d1926f90665c5d013f3053b8a2e1712270fb43f782ab0f3bc1c39cbf3e"
+      },
+      "limitations": "Facility-supply subset only. Upper utility remains1 for uncounted modes/operators and incomplete inventory. Mixed vintage does not identify current complete supply, travel access or adolescent usage. Historical inventory can be withdrawn to[0,1].",
+      "admissible": "conditional_inventory_lower_bound",
+      "candidate_file": "data/task4_v121_transport/observations.json"
+    },
+    {
+      "city": "Dublin",
+      "indicator": "public_transport_density",
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.060249273441327515,
+        1
+      ],
+      "raw_count": 19,
+      "population": 592713,
+      "population_year": 2022,
+      "population_source": "Unchanged authoritative attachment; not externally rechecked",
+      "sourceyear": 2023,
+      "reportyear": 2024,
+      "density_per_100000_lower": 3.2055986624217794,
+      "utility_anchor": 50,
+      "lower_bound_only": true,
+      "source_locator": "https://www.dublincity.ie/sites/default/files/2024-04/06-dublin-city-centre-transport-plan-public-transport-technical-note.pdf",
+      "source_file": "dublin_public_transport_2023.pdf",
+      "source_pdf_page": 23,
+      "access_date": "2026-11-08",
+      "scope": "2023 City Centre Transport Plan technical note, issued2024, PDF page23/printed20 Figure3-7 Existing Luas Infrastructure within Study Area. Manual inventory retains19 distinctly named tram stops plotted inside the red city-centre study boundary; full labels and exclusions in manual_figure_readings.json and source-page PNG. The city-centre study is inside the city proper, not the wider Luas region. Other plotted stops are omitted rather than assigned by assumed regional coverage.",
+      "historical_inventory_proxy": true,
+      "extraction": "Manual figure reading with archived source-page PNG",
+      "source_hashes": {
+        "data/task4_v121_transport/dublin_public_transport_2023.pdf": "be0f2fdf3c77b3714ca0294af19da00e24f07be8562ceec71dfe01a97275d4fe"
+      },
+      "limitations": "Facility-supply subset only. Upper utility remains1 for uncounted modes/operators and incomplete inventory. Mixed vintage does not identify current complete supply, travel access or adolescent usage. Historical inventory can be withdrawn to[0,1].",
+      "admissible": "conditional_inventory_lower_bound",
+      "candidate_file": "data/task4_v121_transport/observations.json"
+    },
+    {
+      "city": "Stockholm",
+      "indicator": "public_pool_density",
+      "raw_count": 13,
+      "population": 999200,
+      "population_year": 2025,
+      "sourceyear": 2026,
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.5654140570633264,
+        1
+      ],
+      "density_per_100000_lower": 1.301040832666133,
+      "lower_bound_only": true,
+      "source_url": "https://motionera.stockholm/trana-gymma-simma/simhallarna/",
+      "source_files": [
+        "stockholm_simhallarna.html",
+        "stockholm_overview.html"
+      ],
+      "accessed": "2026-11-08",
+      "scope": "Current municipal public swimming-facility subset in Stockholm. 13 distinct named facilities, excluding Vällingby closed for renovation; includes Nälstabadet, operated year-round during that renovation. Count facilities once, not individual basins. Current web snapshot with fixed attachment population.",
+      "limitations": "Not an all-provider census, not teenage accessibility or use. Unknown other providers retain upper utility 1. Page footer says updated 2025-06-18 but this is an accessed-2026 snapshot, not a reconstructed 2025 inventory.",
+      "admissible": "conditional_inventory_lower_bound",
+      "candidate_file": "data/task4_v121_pools/observations.json"
+    }
+  ],
+  "source_hashes": {
+    "data/task4_v121_education/extract.py": "0faed5b2936d551bb27a0796e6dc1f0597eb555e66f6fb764e149760a51b39f8",
+    "data/task4_v121_education/kolada_0180_municipality.json": "36d170c367b54075fed6931d1ad18e7c18f32f363c50ff2457510ad0cf8038ab",
+    "data/task4_v121_education/kolada_N17816_metadata.json": "149d3ef9e0a66552428f93475065799b3e5077b439c93d53ccece79d4d86db71",
+    "data/task4_v121_education/kolada_api_documentation.html": "a82e79e04b61205110de1624f1865dbdf1e1f5038a2130897fd4566723774c60",
+    "data/task4_v121_education/kolada_stockholm_2025.json": "ca55b9e050c8921d341e2a02541c209b6bb7a5fdf9278b4f811ca943dd26f179",
+    "data/task4_v121_education/nonadmission_audit.json": "57fe4c62875b679409c5da94efda89b61df71fd98337b5b654fcd8c9c37b6897",
+    "data/task4_v121_education/observations.json": "122d4025f2e47d1c32cf2737fe6b25b89cbee1193a6972cdff8ac85640a61b6c",
+    "data/task4_v121_education/paris_chiffres_2025.pdf": "1f1ef7991415c8a3696bac2427ccb604c2dca84497d86d5914b0147901c8a044",
+    "data/task4_v121_education/paris_relevant_pages.txt": "05e0ad25aff4592e24159cd0333bb5944c2bcb8f241e80d8e4417f04392b9c17",
+    "data/task4_v121_education/skolverket_personal_2025_26.pdf": "0b24addc2483f6ef72eb63954fe638fc18ca6a055f504df1b721524e1a247ff6",
+    "data/task4_v121_education/skolverket_underlag_metadata.json": "4d9d69119faf9bc8788c251f0bbcfb01ba91dff15de7e30a8aa35eb154745059",
+    "data/task4_v121_education/sources.json": "d2e289eba7002384da656e6401c3ca1709d2a3c71b71896021361b2ed669bb54",
+    "data/task4_v121_pools/extract.py": "f276e6fecdfa9e12701cc87cfba848eb3dc22d8a6c77f1e665609458df12fdeb",
+    "data/task4_v121_pools/facilities.json": "7886b9256337cae75b72a9b97d85aa2474c5f4ee79a4ab8a182f07728153cb41",
+    "data/task4_v121_pools/manifest.json": "f59eda3b46bf28f18111748d0581fe07e4a55327e26907684b61780d44d13773",
+    "data/task4_v121_pools/observations.json": "e56fd718a12b2619ce5385a799b91f2310371503f104a8a54eec9d3c5b9e6dcd",
+    "data/task4_v121_pools/source_text.json": "5295c98ad78742aca82b11b8c801c42a6236e6bc913aef9f123c6ac8308c2938",
+    "data/task4_v121_pools/stockholm_overview.html": "7937498154b73399b27b2e11acd467319fd5e544b8edbd657ef8beab4ea078c4",
+    "data/task4_v121_pools/stockholm_simhallarna.html": "32516caaa79e6850d34bc0ed86920bdc939dbc1560aec90f24324096fcfdba6d",
+    "data/task4_v121_transport/dublin_luas_page23.png": "1c72636c4ecbcf6626768aed0cdc9bb735310077b7e6302eb683db4e762fece1",
+    "data/task4_v121_transport/dublin_public_transport_2023.pdf": "be0f2fdf3c77b3714ca0294af19da00e24f07be8562ceec71dfe01a97275d4fe",
+    "data/task4_v121_transport/extract.py": "f577d9fa6d4f46540b52fb9dcd1d0659f1f2372e73f46448e6dc5f98086ffd08",
+    "data/task4_v121_transport/manifest.json": "b03e2aa7f18b86c9be74c47e3093d24138e312e6e6b03ebf69ffc952c4d83f35",
+    "data/task4_v121_transport/manual_figure_readings.json": "5b2b63db8b02ff69d8981d3b02fde62687d247b7680cbc367c580ed6ffece216",
+    "data/task4_v121_transport/naptan_catalogue.json": "445ef50fc6334f322268b8c49890ab747e382cb6703eaa822098dddde682498a",
+    "data/task4_v121_transport/nonadmission_audit.json": "eab4f489e353f9c2e5b8e848be78e12c322cbf6c9ab7bd0924b5812517707c03",
+    "data/task4_v121_transport/observations.json": "e29e89a301911f9472c1c3a8b6e533cbf410c57fef2fd82f8b231d2b9655ea43",
+    "data/task4_v121_transport/paris_apur_atlas.pdf": "877ca2d1926f90665c5d013f3053b8a2e1712270fb43f782ab0f3bc1c39cbf3e",
+    "data/task4_v121_transport/stockholm_vallingby_2025.pdf": "c81adf01ea0d76c48cfc8cc62fe4899793c41a7f886c9d1a490a8da636691057",
+    "data/task4_v121_transport/stockholm_vallingby_page11.png": "5415e52e7cbf4a7f057273135eebb63fa8a60c192490a74293a3d713b9863559",
+    "design/task4_user_v118_admissions.json": "eb3c90ee48eb8f106c00efba98f9a0d8524f2651feb750cf0e4d265a11f72da4",
+    "design/task4_user_v120_admissions.json": "82dd4a00b0461832373665bd342bfd1fe4c13bcbe689bef322628bf2dcf05ec7",
+    "scripts/task4_ahp_mc_baseline.py": "7b51be6f7ca47e2ea6c77fcdbb227a7611d8804eaf17d9040776edb94398f99a",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/task4_user_city_indicators.py": "7d529ee3a617a5d3399baaa8a0eb97b0bb222da0c47b75f05acffa880291ef0a",
+    "scripts/task4_user_v118_revision.py": "da0c3776e118e3fc6959ece686579118cb7acb26686f475f4584b3bc1ac9ba24",
+    "scripts/task4_user_v120_revision.py": "334919482a8be4c54f23276c54b8b9b6b59498062c2896c644dc61a38a5eee86",
+    "scripts/task4_user_v121_revision.py": "2dc0d8944154364eb7046ce806f7d45b3f22626eea4dcfd2d1c17e796fd26cfc",
+    "scripts/task4_v121_admissions.py": "042ba5fce357a88d161d059b925b73213e3ae26539b013fa78ddbf2fdca6f706",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1"
+  }
+}

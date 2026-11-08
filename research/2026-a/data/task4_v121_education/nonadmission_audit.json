@@ -1,0 +1,27 @@
+[
+  {
+    "city": "Paris",
+    "indicator": "upper_secondary_ptr",
+    "admissible": false,
+    "utility_after": [0, 1],
+    "source_file": "paris_chiffres_2025.pdf",
+    "reason": "2024 rentrée pre-bac lycée pupils (72476, public and private under contract) cannot be divided by all second-degree teachers (15940 as of2024-12-31), which include collège; teacher stage split and private-outside-contract coverage are missing. No ratio admitted."
+  },
+  {
+    "city": "Stockholm",
+    "indicator": "upper_secondary_ptr",
+    "admissible": false,
+    "route": "City2024 key indicators first search result",
+    "url": "https://meetingspublic.stockholm.se/welcome-sv/namnder-styrelser/utbildningsnamnden/mote-2025-02-20/agenda/bilaga-5-nyckeltal-2024-utbilningsnamndenpdf?downloadMode=download",
+    "reason": "13.0 pupil/teacher ratio occurs under grundskola, not upper-secondary; gymnasieskola section supplies qualification percentages. Rejected source route; different Kolada upper-secondary candidate recorded separately."
+  },
+  {
+    "city": "Stockholm",
+    "indicator": "upper_secondary_ptr",
+    "admissible": false,
+    "route": "City statistical yearbook2026, table11.4",
+    "source_url": "https://start.stockholm/globalassets/start/om-stockholms-stad/utredningar-statistik-och-fakta/statistik/arsbok/statistisk-arsbok-for-stockholm-2026.pdf",
+    "archive_status": "Nonadmitted yearbook kept in local scratch only; not a numerical input or a required reproduction dependency.",
+    "reason": "Table11.4 gives2024 pupils at all municipal and independent upper-secondary schools located in Stockholm but no teacher denominator; not used to infer a ratio or to combine with another year."
+  }
+]

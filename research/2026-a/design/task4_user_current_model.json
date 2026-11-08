@@ -1,12 +1,12 @@
 {
   "primary_dataset": "user-provided16-city CSV",
-  "version": "V120",
-  "module": "task4_user_v120_revision",
+  "version": "V121",
+  "module": "task4_user_v121_revision",
   "factory": "revised_bounds",
   "source_csv": "data/task4_v117_team_intake/city_indicators.csv",
-  "admissions": "design/task4_user_v120_admissions.json",
-  "results": "results/task4_user_v120_revision",
+  "admissions": "design/task4_user_v121_admissions.json",
+  "results": "results/task4_user_v121_revision",
   "fixed_auxiliary_weight_total": 0.1,
-  "source_policy": "Existing attachment values authoritative and unchanged; only initially missing cells supplemented; other25-city registry retained as historical comparison.",
-  "scope": "Conditional mixed-vintage input; Singapore2020 school-stage proxy explicitly withdrawable. No exact14-18/2025 claim."
+  "source_policy": "Existing attachment values and all V120 nonmissing bounds authoritative and unchanged; only five V120 fully missing cells supplemented; other25-city registry retained as historical comparison.",
+  "scope": "Conditional mixed-vintage school resources and facility inventories; Singapore2020 school-stage proxy and Paris/Dublin historical inventories explicitly withdrawable. No exact14-18/common-year claim."
 }

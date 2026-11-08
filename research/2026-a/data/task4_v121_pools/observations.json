@@ -1,0 +1,28 @@
+[
+  {
+    "city": "Stockholm",
+    "indicator": "public_pool_density",
+    "raw_count": 13,
+    "population": 999200,
+    "population_year": 2025,
+    "sourceyear": 2026,
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.5654140570633264,
+      1
+    ],
+    "density_per_100000_lower": 1.301040832666133,
+    "lower_bound_only": true,
+    "source_url": "https://motionera.stockholm/trana-gymma-simma/simhallarna/",
+    "source_files": [
+      "stockholm_simhallarna.html",
+      "stockholm_overview.html"
+    ],
+    "accessed": "2026-11-08",
+    "scope": "Current municipal public swimming-facility subset in Stockholm. 13 distinct named facilities, excluding Vällingby closed for renovation; includes Nälstabadet, operated year-round during that renovation. Count facilities once, not individual basins. Current web snapshot with fixed attachment population.",
+    "limitations": "Not an all-provider census, not teenage accessibility or use. Unknown other providers retain upper utility 1. Page footer says updated 2025-06-18 but this is an accessed-2026 snapshot, not a reconstructed 2025 inventory."
+  }
+]

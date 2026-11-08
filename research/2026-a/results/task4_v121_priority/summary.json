@@ -1,0 +1,37 @@
+{
+  "base": "V120 user16",
+  "baseline_minimax": "Zurich",
+  "baseline_possible_count": 16,
+  "fully_missing_cells": 26,
+  "baseline_references": [
+    {
+      "weight_reference": "fixed",
+      "mean_score_width": 16.93440560207023,
+      "possible_count": 16,
+      "minimax_choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "weight_reference": "equal",
+      "mean_score_width": 19.938222372262075,
+      "possible_count": 16,
+      "minimax_choices": [
+        "Zurich"
+      ]
+    }
+  ],
+  "unresolved_cells": 48,
+  "scope": "Acquisition limits only; no new observation, modified weight or CSV value",
+  "uncertain_partial_cells_not_resolved": 22,
+  "endpoint_sufficiency": "Only one city changes; its own exclusion cannot coexist with exclusion of a baseline-possible competitor. All-low and all-high corners maximize the two types respectively.",
+  "joint_threshold_scope": "Common-coordinate sufficient thresholds, not necessary thresholds for arbitrary joint evidence; strict separation needed, ties remain possible.",
+  "independent_score_regret_cases": 5715,
+  "all_nonmissing_bounds_preserved": true,
+  "input_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_v120_admissions.json": "82dd4a00b0461832373665bd342bfd1fe4c13bcbe689bef322628bf2dcf05ec7",
+    "design/task4_user_v118_admissions.json": "eb3c90ee48eb8f106c00efba98f9a0d8524f2651feb750cf0e4d265a11f72da4",
+    "scripts/task4_user_v120_revision.py": "334919482a8be4c54f23276c54b8b9b6b59498062c2896c644dc61a38a5eee86"
+  }
+}

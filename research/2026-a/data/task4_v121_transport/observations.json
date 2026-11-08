@@ -1,0 +1,98 @@
+[
+  {
+    "city": "Stockholm",
+    "indicator": "public_transport_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.02536090518923137,
+      1
+    ],
+    "raw_count": 13,
+    "population": 999200,
+    "population_year": 2025,
+    "population_source": "Unchanged authoritative attachment; not externally rechecked",
+    "sourceyear": 2025,
+    "reportyear": 2025,
+    "density_per_100000_lower": 1.301040832666133,
+    "utility_anchor": 50,
+    "lower_bound_only": true,
+    "source_locator": "https://meetingspublic.stockholm.se/welcome-sv/namnder-styrelser/hasselby-vallingby-stadsdelsnamnd/mote-2025-12-18/agenda/6-lagesbild-2025-samverkansoverenskommelse-mellan-hasselby-vallingby-sdf-och-lokalpolisomrade-vallingbypdf?downloadMode=open",
+    "source_file": "stockholm_vallingby_2025.pdf",
+    "source_pdf_page": 11,
+    "access_date": "2026-11-08",
+    "scope": "2025 city/police report PDF page11, printed10:13 metro stations, explicitly8 in Bromma plus5 in Hässelby-Vällingby. Previous page states both districts are within Stockholm municipality; the police area also covers Ekerö, but none of the13 is assigned to Ekerö. Stations, not directional platforms. Subset of city metro inventory, not all modes.",
+    "historical_inventory_proxy": false,
+    "extraction": "Manual figure reading with archived source-page PNG",
+    "source_hashes": {
+      "data/task4_v121_transport/stockholm_vallingby_2025.pdf": "c81adf01ea0d76c48cfc8cc62fe4899793c41a7f886c9d1a490a8da636691057"
+    },
+    "limitations": "Facility-supply subset only. Upper utility remains1 for uncounted modes/operators and incomplete inventory. Mixed vintage does not identify current complete supply, travel access or adolescent usage. Historical inventory can be withdrawn to[0,1]."
+  },
+  {
+    "city": "Paris",
+    "indicator": "public_transport_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.1882877314337879,
+      1
+    ],
+    "raw_count": 244,
+    "population": 2103778,
+    "population_year": 2023,
+    "population_source": "Unchanged authoritative attachment; not externally rechecked",
+    "sourceyear": 2021,
+    "reportyear": 2022,
+    "density_per_100000_lower": 11.598181937447773,
+    "utility_anchor": 50,
+    "lower_bound_only": true,
+    "source_locator": "https://www.apur.org/sites/default/files/atlas_activites_paris_immobilier.pdf",
+    "source_file": "paris_apur_atlas.pdf",
+    "source_pdf_page": 37,
+    "access_date": "2026-11-08",
+    "scope": "March2022 Apur inventory PDF page37:244 metro stations inside Paris intra-muros, including58 interchange stations, distinguished from332 line stop-points. Only244 used, no addition of RER stations with unassessed interchange overlap. Underlying sources explicitly RATP2021 and Apur BDÉquipement2022. Historical inventory with unchanged2023 attachment population.",
+    "historical_inventory_proxy": true,
+    "extraction": "pdftotext assertions on original PDF",
+    "source_hashes": {
+      "data/task4_v121_transport/paris_apur_atlas.pdf": "877ca2d1926f90665c5d013f3053b8a2e1712270fb43f782ab0f3bc1c39cbf3e"
+    },
+    "limitations": "Facility-supply subset only. Upper utility remains1 for uncounted modes/operators and incomplete inventory. Mixed vintage does not identify current complete supply, travel access or adolescent usage. Historical inventory can be withdrawn to[0,1]."
+  },
+  {
+    "city": "Dublin",
+    "indicator": "public_transport_density",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.060249273441327515,
+      1
+    ],
+    "raw_count": 19,
+    "population": 592713,
+    "population_year": 2022,
+    "population_source": "Unchanged authoritative attachment; not externally rechecked",
+    "sourceyear": 2023,
+    "reportyear": 2024,
+    "density_per_100000_lower": 3.2055986624217794,
+    "utility_anchor": 50,
+    "lower_bound_only": true,
+    "source_locator": "https://www.dublincity.ie/sites/default/files/2024-04/06-dublin-city-centre-transport-plan-public-transport-technical-note.pdf",
+    "source_file": "dublin_public_transport_2023.pdf",
+    "source_pdf_page": 23,
+    "access_date": "2026-11-08",
+    "scope": "2023 City Centre Transport Plan technical note, issued2024, PDF page23/printed20 Figure3-7 Existing Luas Infrastructure within Study Area. Manual inventory retains19 distinctly named tram stops plotted inside the red city-centre study boundary; full labels and exclusions in manual_figure_readings.json and source-page PNG. The city-centre study is inside the city proper, not the wider Luas region. Other plotted stops are omitted rather than assigned by assumed regional coverage.",
+    "historical_inventory_proxy": true,
+    "extraction": "Manual figure reading with archived source-page PNG",
+    "source_hashes": {
+      "data/task4_v121_transport/dublin_public_transport_2023.pdf": "be0f2fdf3c77b3714ca0294af19da00e24f07be8562ceec71dfe01a97275d4fe"
+    },
+    "limitations": "Facility-supply subset only. Upper utility remains1 for uncounted modes/operators and incomplete inventory. Mixed vintage does not identify current complete supply, travel access or adolescent usage. Historical inventory can be withdrawn to[0,1]."
+  }
+]

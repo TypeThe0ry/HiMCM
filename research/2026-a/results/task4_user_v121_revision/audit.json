@@ -1,0 +1,341 @@
+{
+  "status": "pass",
+  "baseline_commit": "e122d68",
+  "V120_changed_cells": 4,
+  "V120_unchanged_cells": 156,
+  "V120_protected_nonmissing_cells": 130,
+  "V121_changed_cells": [
+    [
+      "Dublin",
+      "public_transport_density"
+    ],
+    [
+      "Paris",
+      "public_transport_density"
+    ],
+    [
+      "Stockholm",
+      "public_pool_density"
+    ],
+    [
+      "Stockholm",
+      "public_transport_density"
+    ],
+    [
+      "Stockholm",
+      "upper_secondary_ptr"
+    ]
+  ],
+  "V121_protected_nonmissing_cells": 134,
+  "baseline_exact_files": {
+    "results/task4_user_v120_revision/current_ranks.csv": "78d32a7453e7637eef5d6618a5696a4655ba5f4de1daa2f59e1d12848be3727b",
+    "results/task4_user_v120_revision/all_ranks.csv": "0954f7f091ff814f4bbcdf6a0b7af447ca0abba67c962a849bdd7733953d6f5d",
+    "results/task4_user_v120_revision/utility_bounds.csv": "9c2cd87412d1c15f88580620fd73d35613987a52348fa63ecc6e5a9a7969390d",
+    "results/task4_user_v120_revision/mc_city_summary.csv": "3a9048944788d58640f371bb093461ba6597233b3f23d165f3952a9aa3db7138",
+    "results/task4_user_v120_revision/summary.json": "70b34cc4ad6a3a1e52c682c666660fb02c94d861e19bf03551487b7224ca975d"
+  },
+  "original_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "all_scenarios_independent_scores_self_excluded_regrets_ranks_champions": true,
+  "full_withdrawal_exactly_restores_V120": true,
+  "MC_independent_settings": 24,
+  "MC_checked_city_rows": 384,
+  "MC_recommendation_frequency_mean_rank_possible_frequency": true,
+  "scenario_audit": [
+    {
+      "scenario": "before",
+      "weight_reference": "fixed",
+      "mean_width": 16.93440560207023,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "before",
+      "weight_reference": "equal",
+      "mean_width": 19.938222372262075,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Dublin:public_transport_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.918803270184945,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Dublin:public_transport_density",
+      "weight_reference": "equal",
+      "mean_width": 19.909675106934216,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Paris:public_transport_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.89013888323583,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Paris:public_transport_density",
+      "weight_reference": "equal",
+      "mean_width": 19.85239676056883,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Stockholm:public_pool_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.802279806443625,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Stockholm:public_pool_density",
+      "weight_reference": "equal",
+      "mean_width": 19.688610879423045,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Stockholm:public_transport_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.92924444293118,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Stockholm:public_transport_density",
+      "weight_reference": "equal",
+      "mean_width": 19.92954298013842,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Stockholm:upper_secondary_ptr",
+      "weight_reference": "fixed",
+      "mean_width": 16.404642657676508,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "only:Stockholm:upper_secondary_ptr",
+      "weight_reference": "equal",
+      "mean_width": 19.491887424177627,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "fixed",
+      "mean_width": 16.183024716277767,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "equal",
+      "mean_width": 19.086468881094074,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Dublin:public_transport_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.198627048163054,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Dublin:public_transport_density",
+      "weight_reference": "equal",
+      "mean_width": 19.115016146421937,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Paris:public_transport_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.227291435112164,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Paris:public_transport_density",
+      "weight_reference": "equal",
+      "mean_width": 19.172294492787323,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Stockholm:public_pool_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.338191371791787,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Stockholm:public_pool_density",
+      "weight_reference": "equal",
+      "mean_width": 19.367046125387752,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Stockholm:public_transport_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.190601169394846,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Stockholm:public_transport_density",
+      "weight_reference": "equal",
+      "mean_width": 19.099847172585726,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Stockholm:upper_secondary_ptr",
+      "weight_reference": "fixed",
+      "mean_width": 16.73662014842797,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "without:Stockholm:upper_secondary_ptr",
+      "weight_reference": "equal",
+      "mean_width": 19.563513426952515,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "withdraw_all_new",
+      "weight_reference": "fixed",
+      "mean_width": 16.93440560207023,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "withdraw_all_new",
+      "weight_reference": "equal",
+      "mean_width": 19.938222372262075,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "withdraw_new_historical_inventories",
+      "weight_reference": "fixed",
+      "mean_width": 16.242893766997454,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "withdraw_new_historical_inventories",
+      "weight_reference": "equal",
+      "mean_width": 19.200841758115182,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "mean_width": 17.23321340510728,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "mean_width": 20.192925688024175,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "mean_width": 16.481832519314814,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "mean_width": 19.34117219685617,
+      "possible_count": 16,
+      "choices": [
+        "Zurich"
+      ]
+    }
+  ],
+  "output_sha256": {
+    "current_ranks.csv": "44b66aae1ffd132fc8aeecd8ef96e2f3ee526d1a768afcd5514488ae453fc959",
+    "all_ranks.csv": "ff714534a334906679f2bddb13496396be8b7d3f7de9a29e1f46b5dd44c5c428",
+    "utility_bounds.csv": "459b397cad1237a06667a02bd3bb6625657e70bb6c471c52528bf6136d0857c1",
+    "mc_city_summary.csv": "ed3802e08f79f8bab934de37c6edfc0edee399c5225144d89703f8105acd9324",
+    "summary.json": "51d4ad07395b142eaabf3f211b848edea97a016cc87b81e1cfc48d08375d1a21",
+    "task4_user_v121_admissions.json": "16211d42402ca19c6040507201ef2ea39ab5c878d9a51369b57fe232c4884b80"
+  }
+}

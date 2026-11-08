@@ -12,11 +12,12 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [恢复 prompt 与当前进度](docs/handoff/RESUME_PROMPT.md)。包含 V120 权威入口、复现命令、数据约束、论文状态及后续补数方向。
+**换开发环境／交给下一个 AI：** [恢复 prompt 与当前进度](docs/handoff/RESUME_PROMPT.md)、[V121研究更新](docs/handoff/V121_RESEARCH_UPDATE.md)。包含当前16城V121权威入口、V120恢复验证、复现命令、数据约束、论文状态及后续补数方向。
 
 | 想了解什么 | 入口 |
 | --- | --- |
-| 当前主模型：16城V120 | [四格真实补数：区间缩小5.62%，Zurich保守首选，冠军集合仍16城](research/2026-a/results/task4_user_v120_revision/README.md) |
+| 当前主模型：16城V121 | [五格真实补数：区间缩小4.44%，Zurich仍保守推荐，可能冠军仍16城](research/2026-a/results/task4_user_v121_revision/README.md) |
+| 上轮主模型：16城V120 | [四格真实补数：区间缩小5.62%，Zurich保守首选，冠军集合仍16城](research/2026-a/results/task4_user_v120_revision/README.md) |
 | 上轮扩展：V119 | [未来改善阈值、偏好扰动与同国案例](research/2026-a/results/task4_v119_revision/README.md) |
 | 上轮模型：16城V118 | [只补6个缺失格：平均区间缩窄4.62%，可能冠军仍16城](research/2026-a/results/task4_user_v118_revision/README.md) |
 | 用户提供的16城数据 | [按附件原值计算：Oslo保守推荐，16城仍可能第一](research/2026-a/results/task4_user_city_indicators/README.md) |
@@ -50,7 +51,7 @@
 | V68高中学段修订 | [纠正Singapore预科学段代理，扩大真实未知范围；排名与25城候选保持](research/2026-a/results/task4_v68_singapore_stage/README.md) |
 | V67联合不确定性检验 | [均匀扩张仍推荐Singapore，定向扩张可转Tokyo；连续范围证书](research/2026-a/results/task4_v67_joint_stress/README.md) |
 | V66原件与人群核查 | [上海年报年份、Phoenix真实学生调查及London/Bogotá新入口；排名不变](research/2026-a/results/task4_v66_intake/README.md) |
-| 当前模型一键复算 · V108 | [统一入口、250格基线校验与当前证据](research/2026-a/results/task4_current/README.md) |
+| 历史25城一键复算 · V108 | [旧统一入口、250格基线校验与历史证据](research/2026-a/results/task4_current/README.md) |
 | 全偏好范围补数规划 V64 | [Phoenix最小有利补数3→4项；避免固定权重下的乐观规划](research/2026-a/results/task4_v64_continuous_acquisition/README.md) |
 | 真实高中通学更新 V63 | [Cape Town采用2025微观数据；182名学生与抽样包络重算](research/2026-a/results/task4_v63_cape_2025/README.md) |
 | 校级原件补充 V62 | [新增London、Copenhagen、Cape Town学校数据；保持未匹配区间](research/2026-a/results/task4_v62_source_intake/README.md) |
@@ -87,7 +88,7 @@
 | 最新补数可行性 V31 | [Phoenix四项方案的证据强度门槛](research/2026-a/results/task4_v31_acquisition/README.md) |
 | 最新高中通学修订 V30 | [Cape Town：真实学生、抽样误差与排名13→5](research/2026-a/results/task4_v30_cape_town/README.md) |
 | 最新教育年份对照 | [Jakarta 2025/26：分数更新与来源撤回检验](research/2026-a/results/task4_v29_education_year/README.md) |
-| 当前数学公式与补数方向 | [当前模型](research/2026-a/design/task4_current_model.md) · [当前连续偏好的补数条件](research/2026-a/results/task4_v101_current_acquisition/README.md) |
+| 当前16城数学公式与补数方向 | [V121公式与结果](research/2026-a/results/task4_user_v121_revision/README.md) · [本轮V120基准采集诊断](research/2026-a/results/task4_v121_priority/README.md) |
 | 历史条件基准 V23 | [覆盖修订与排名](research/2026-a/results/task4_v23_roster_coverage/README.md) · [算法入口 current_bounds](research/2026-a/scripts/task4_roster_coverage_comparison.py) |
 | 当前10项指标定义 | [指标规范](research/2026-a/design/task4_v5_indicator_spec.md) |
 | V6历史模型与结果 | [V6报告](research/2026-a/results/task4_v6/REPORT.md) · [结果表](research/2026-a/results/task4_v6/after_v6.csv) · [独立复核](research/2026-a/results/task4_v6_review.md) |

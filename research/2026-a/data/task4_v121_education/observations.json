@@ -1,0 +1,29 @@
+[
+  {
+    "city": "Stockholm",
+    "indicator": "upper_secondary_ptr",
+    "kind": "ratio_interval",
+    "ratio_bounds": [
+      16.35,
+      16.45
+    ],
+    "published_api_ratio": 16.42091405,
+    "published_period": 2025,
+    "school_year": "2025/26",
+    "utility_after": [
+      0.4769475357710652,
+      0.4784688995215311
+    ],
+    "source_hashes": {
+      "data/task4_v121_education/kolada_N17816_metadata.json": "149d3ef9e0a66552428f93475065799b3e5077b439c93d53ccece79d4d86db71",
+      "data/task4_v121_education/kolada_0180_municipality.json": "36d170c367b54075fed6931d1ad18e7c18f32f363c50ff2457510ad0cf8038ab",
+      "data/task4_v121_education/kolada_stockholm_2025.json": "ca55b9e050c8921d341e2a02541c209b6bb7a5fdf9278b4f811ca943dd26f179",
+      "data/task4_v121_education/kolada_api_documentation.html": "a82e79e04b61205110de1624f1865dbdf1e1f5038a2130897fd4566723774c60",
+      "data/task4_v121_education/skolverket_underlag_metadata.json": "4d9d69119faf9bc8788c251f0bbcfb01ba91dff15de7e30a8aa35eb154745059",
+      "data/task4_v121_education/skolverket_personal_2025_26.pdf": "0b24addc2483f6ef72eb63954fe638fc18ca6a055f504df1b721524e1a247ff6"
+    },
+    "scope": "Upper-secondary school years 1-3, schools located in Stockholm municipality, all providers, pupils per teacher FTE; 15 October snapshot. School-resource proxy, not ages14-18 resident-only measurement.",
+    "precision_rule": "API ratio 16.42091405 intentionally coarsened to 16.4 with a half-last-digit envelope [16.35,16.45]; not a confidence interval or independently identified measurement-error bound.",
+    "candidate_only": true
+  }
+]

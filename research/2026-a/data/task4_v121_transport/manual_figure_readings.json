@@ -1,0 +1,27 @@
+{
+  "method": "Manual visual transcription from original PDF figures rendered with Poppler. This is not claimed to be OCR or automated map/city-boundary intersection.",
+  "Stockholm": {
+    "pdf": "stockholm_vallingby_2025.pdf",
+    "pdf_page": 11,
+    "printed_page": 10,
+    "source_page_render": "stockholm_vallingby_page11.png",
+    "figure": "Kartbild 3",
+    "unit": "unique metro stations, not platforms or route memberships",
+    "district_counts": {"Bromma": 8, "Hässelby-Vällingby": 5},
+    "city_membership_evidence": "PDF page10/printed9 explicitly says Bromma and Hässelby-Vällingby are within Stockholms stad; Ekerö is separately a municipality. Figure assigns all13 metro stations to the two city districts.",
+    "excluded": "Other modes, other city districts and regional network100-station total; future stations."
+  },
+  "Dublin": {
+    "pdf": "dublin_public_transport_2023.pdf",
+    "pdf_page": 23,
+    "printed_page": 20,
+    "source_page_render": "dublin_luas_page23.png",
+    "figure": "3-7",
+    "unit": "distinctly labeled existing tram stops, one record per name, not per platform or journey",
+    "red_line_labels": ["Museum", "Smithfield", "Four Courts", "Abbey Street", "Busaras", "Connolly", "George's Dock", "Mayor Square", "Spencer Dock", "The Point"],
+    "green_line_labels": ["Dominick Street", "Parnell Street", "O'Connell Street Upper", "O'Connell Street", "Marlborough Street", "Trinity", "Westmoreland", "Dawson Street", "St. Stephen's Green"],
+    "city_membership_evidence": "All selected markers are inside the red study boundary in the official City Centre Transport Plan figure. Section1.1 and1.2 define its subject as Dublin City Centre within the Dublin City Development Plan. No assertion that the viewport or whole regional network is within the city.",
+    "excluded": ["Heuston and Charlemont near study boundary", "All stops outside red study boundary, including Broombridge and southern line", "Stop markers without sufficiently clear labels such as Jervis", "Heavy rail, bus stops and planned MetroLink/2030 infrastructure"],
+    "name_notes": "Labels are transcribed as rendered in the source figure, not silently replaced with present-day operator names. O'Connell Street Upper and O'Connell Street have separate markers; no route/platform multiplication."
+  }
+}
