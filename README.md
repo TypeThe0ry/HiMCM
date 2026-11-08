@@ -12,6 +12,8 @@
 
 ## 从这里开始
 
+**换开发环境／交给下一个 AI：** [恢复 prompt 与当前进度](docs/handoff/RESUME_PROMPT.md)。包含 V120 权威入口、复现命令、数据约束、论文状态及后续补数方向。
+
 | 想了解什么 | 入口 |
 | --- | --- |
 | 当前主模型：16城V120 | [四格真实补数：区间缩小5.62%，Zurich保守首选，冠军集合仍16城](research/2026-a/results/task4_user_v120_revision/README.md) |
