@@ -1,0 +1,71 @@
+{
+  "baseline": "V114",
+  "certificate_type": "monotone-score endpoint certificate; no new observation",
+  "scope": "Fixed other-city cells, fixed V114 utility transforms, and each of two explicitly fixed weight vectors. No assertion for arbitrary or Monte Carlo weights.",
+  "assumptions": "Independent closed utility boxes; refinements are nested within current bounds. Endpoint attainment is mathematical, not a prediction that collected data will equal an endpoint.",
+  "formula": "C(z)=100*sqrt(sum(w*z^2))/(sqrt(sum(w*z^2))+sqrt(sum(w*(1-z)^2))). City i is possible iff upper_i >= max(lower_others).",
+  "proof": "Positive weights make C nondecreasing in every utility. The smallest attainable upper_i with travel unresolved is C(lower_i except travel=1). The largest attainable lower_i under any refinement is C(upper_i). Compare these with unchanged rival lower and upper endpoints.",
+  "registry_changed": false,
+  "input_bounds_changed": false,
+  "input_bounds_sha256": "b92ffc6451c481b15affd5ce6a56cb000e080be73ef0cc1ac93258e4218789e0",
+  "scenarios": [
+    {
+      "weight_reference": "inherited",
+      "weights": {
+        "homicide_rate": 0.1125,
+        "pm25": 0.1125,
+        "cost_living_index": 0.1125,
+        "price_income_ratio": 0.1125,
+        "upper_secondary_ptr": 0.1125,
+        "research_he_density": 0.1125,
+        "public_transport_density": 0.05,
+        "travel": 0.1125,
+        "fixed_broadband_mbps": 0.1125,
+        "public_pool_density": 0.05
+      },
+      "current_istanbul_lower": 35.107064052583056,
+      "current_istanbul_upper": 55.3418297450748,
+      "minimum_istanbul_upper_if_travel_unresolved": 44.63262593626838,
+      "maximum_rival_lower": 43.53854061659156,
+      "maximum_rival_lower_city": "Singapore",
+      "unresolved_travel_survival_margin": 1.0940853196768217,
+      "maximum_istanbul_lower_under_any_legal_refinement": 55.3418297450748,
+      "minimum_rival_upper": 60.6424758195191,
+      "minimum_rival_upper_city": "Mumbai",
+      "rival_nonexclusion_margin": 5.300646074444302,
+      "possible_champions_before": 25,
+      "possible_champions_if_travel_stays_unresolved": 25,
+      "minimum_possible_champion_count_with_istanbul_only_refinement": 24,
+      "other_cities_excludable_by_istanbul_only_refinement": []
+    },
+    {
+      "weight_reference": "equal",
+      "weights": {
+        "homicide_rate": 0.1,
+        "pm25": 0.1,
+        "cost_living_index": 0.1,
+        "price_income_ratio": 0.1,
+        "upper_secondary_ptr": 0.1,
+        "research_he_density": 0.1,
+        "public_transport_density": 0.1,
+        "travel": 0.1,
+        "fixed_broadband_mbps": 0.1,
+        "public_pool_density": 0.1
+      },
+      "current_istanbul_lower": 35.63516710752446,
+      "current_istanbul_upper": 58.73360595046804,
+      "minimum_istanbul_upper_if_travel_unresolved": 44.12269264934057,
+      "maximum_rival_lower": 42.84660859966526,
+      "maximum_rival_lower_city": "Singapore",
+      "unresolved_travel_survival_margin": 1.2760840496753119,
+      "maximum_istanbul_lower_under_any_legal_refinement": 58.73360595046804,
+      "minimum_rival_upper": 63.05901808537603,
+      "minimum_rival_upper_city": "Mumbai",
+      "rival_nonexclusion_margin": 4.325412134907992,
+      "possible_champions_before": 25,
+      "possible_champions_if_travel_stays_unresolved": 25,
+      "minimum_possible_champion_count_with_istanbul_only_refinement": 24,
+      "other_cities_excludable_by_istanbul_only_refinement": []
+    }
+  ]
+}
