@@ -18,6 +18,8 @@
 
 ## 共同要求
 
+**用户强制要求（2026-11-08）：** 所有新增／修改论文文字及研究说明必须使用 [anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill)。中文读[本地快照](research/2026-a/visuals/guidelines/anti-defensive-writing/zh/SKILL.md)，英文读[English skill](research/2026-a/visuals/guidelines/anti-defensive-writing/en/SKILL.md)。围绕已有证据支持的贡献组织叙事，删除重复辩解和实验流水账；结论所需的反例、代理口径和不确定性仍按证据规范完整保留。见[安装与执行规则](docs/guidelines/ANTI_DEFENSIVE_WRITING.md)。
+
 1. **先写有证据支持的贡献与结果。** 段落围绕一个判断，随后给出依据与解释；避免模型名堆砌、流程流水账和泛泛赞美。
 2. **主张精度与证据精度一致。** 数值可追溯到数据、脚本或结果文件；模型版本、人群、年份、地理范围和单位一致。
 3. **使用反防御性写作。** 删除重复辩解与无意义自我削弱；把影响结论的条件简洁写入相应定义、方法或结果。保留必要反例和不确定性，避免挑选结果或夸大优势。

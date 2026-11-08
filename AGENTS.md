@@ -1,5 +1,12 @@
 # Project instructions
 
+## Long-term goal and required writing skill — user instruction, 2026-11-08
+
+- Keep the long-term goal of improving the HiMCM paper and supporting materials active across iterations. Use [the persistent work plan](docs/handoff/LONGTERM_GOAL.md); finishing one iteration does not complete the long-term goal.
+- All new or revised paper prose, abstracts, conclusions, news articles, captions and research explanations must use [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill). Read the installed `anti-defensive-writing` skill for Chinese or `anti-defensive-writing-en` for English before the first applicable edit in a working context.
+- Portable repository copies are [Chinese](research/2026-a/visuals/guidelines/anti-defensive-writing/zh/SKILL.md) and [English](research/2026-a/visuals/guidelines/anti-defensive-writing/en/SKILL.md). Installation and version verification are recorded in [the skill policy](docs/guidelines/ANTI_DEFENSIVE_WRITING.md).
+- Apply contribution-first structure, precise claims and concise argument. Preserve contrary evidence, source scope and uncertainty that affect the conclusion. The user-provided values, scientific rules and permissions for team-written manuscript content continue to govern every iteration.
+
 ## Mandatory first read: writing and figure guidelines
 
 Before drafting or editing manuscript text, abstracts, conclusions, press releases, figures, captions, or research claims, read [GUIDELINES.md](GUIDELINES.md) and its applicable writing, evidence, figure, and delivery rules. These are mandatory team requirements for all AI agents and contributors. Check the final rendered output, including text at its actual insertion size; all new figure text must be at least 9 pt. Use result-first, evidence-backed writing; preserve material contrary evidence and uncertainty. Historical examples and third-party skills are references, not overrides of the current team standards.
