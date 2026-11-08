@@ -1,0 +1,67 @@
+{
+  "school_year": "2023-2024",
+  "scope": "Unweighted released private-school records within the V83 current-boundary overlay; not full city, residents or exact ages14-18",
+  "city_released_records": 76,
+  "explicit_hs_records": 33,
+  "pure_hs_records": 7,
+  "potential_hs_including_ungraded_records": 36,
+  "ungraded_records": 4,
+  "ungraded_only_additional_records": 3,
+  "explicit_hs_students": 6109,
+  "potential_ungraded_hs_students_upper": 91,
+  "relevant_flagged_possible_records": 0,
+  "mode_availability": {
+    "inperson_records": 36,
+    "virtual_records": 6,
+    "hybrid_records": 7,
+    "inperson_only_records": 29
+  },
+  "same_explicit_grade_cohort_comparison": {
+    "student_count": 6109,
+    "allstage_midpoint_teacher_fte": 888.6,
+    "naive_allstage_midpoint_utility": 0.6857186953390266,
+    "allstage_worktime_interval": [
+      867.25,
+      909.5
+    ],
+    "allstage_worktime_only_utility_interval": [
+      0.6804540283244629,
+      0.6907070349087411
+    ],
+    "hs_allocation_teacher_interval": [
+      201.25,
+      909.5
+    ],
+    "hs_allocation_utility_interval": [
+      0.3307222480896168,
+      0.6907070349087411
+    ],
+    "worktime_only_width": 0.01025300658427819,
+    "hs_allocation_width": 0.35998478681912427,
+    "width_ratio": 35.11016830625269,
+    "lower_endpoint_drop": 0.3497317802348461,
+    "interpretation": "Common explicit9-12 N. Allstage-midpoint and worktime-only calculations allocate every reported K12 teaching hour to HS and are contrast scenarios, not valid observed HS PTRs."
+  },
+  "including_potential_ungraded": {
+    "student_interval": [
+      6109.0,
+      6200.0
+    ],
+    "teacher_interval": [
+      201.25,
+      974.5
+    ],
+    "utility_outer_interval": [
+      0.32745762711864407,
+      0.705256555617205
+    ],
+    "sharp_identified_set_claimed": false,
+    "interpretation": "Broader potential-stage population; UG allocation and teacher allocation are both unknown. Rectangular outer bounds, not a sample confidence interval."
+  },
+  "main_admitted": false,
+  "city_bound_unchanged": [
+    0,
+    1
+  ],
+  "population_conditions": "Unobserved schools, nonresponse, modality shares, public/private year alignment and historical boundary remain unresolved; finite observed-subset bounds do not bound entire-city N or T."
+}
