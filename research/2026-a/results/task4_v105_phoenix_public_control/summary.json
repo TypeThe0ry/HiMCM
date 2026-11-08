@@ -1,0 +1,172 @@
+{
+  "model_version": "V102",
+  "main_admitted": false,
+  "actual_changed_cells": 0,
+  "unchanged_other_cells_per_control": 249,
+  "input_bounds_sha256": "681260d6449888801aa9168356813aef684003f3e05c61db2dffb5b6b7070128",
+  "source_summary_sha256": "32339630c6f70e883c0e81b653bfaa64e0209eb1935fe751a1ff7066782523e8",
+  "fixed_alpha": 0.1,
+  "alpha_range": [
+    0.05,
+    0.2
+  ],
+  "scenarios": [
+    {
+      "scenario": "current_all_city",
+      "phoenix_public_or_main_utility": [
+        0.0,
+        1.0
+      ],
+      "phoenix": {
+        "decision_rank": 16,
+        "score_lower": 31.39060820931906,
+        "score_upper": 71.68091378914416,
+        "max_regret": 46.13885249415263
+      },
+      "changed_ranks_vs_main": 0,
+      "kendall_tau_vs_main": 0.9999999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "public_only_2023-2024",
+      "phoenix_public_or_main_utility": [
+        0.31083144447711086,
+        1.0
+      ],
+      "phoenix": {
+        "decision_rank": 13,
+        "score_lower": 33.21512213664823,
+        "score_upper": 71.68091378914416,
+        "max_regret": 44.31433856682345
+      },
+      "changed_ranks_vs_main": 4,
+      "kendall_tau_vs_main": 0.9799999999999999,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    },
+    {
+      "scenario": "public_only_2024-2025",
+      "phoenix_public_or_main_utility": [
+        0.0,
+        1.0
+      ],
+      "phoenix": {
+        "decision_rank": 16,
+        "score_lower": 31.39060820931906,
+        "score_upper": 71.68091378914416,
+        "max_regret": 46.13885249415263
+      },
+      "changed_ranks_vs_main": 0,
+      "kendall_tau_vs_main": 0.9999999999999998,
+      "choice": [
+        "Singapore"
+      ],
+      "possible_champions": 25,
+      "continuous_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "continuous_recommendation": {
+        "unresolved": 0,
+        "winners": [
+          "Singapore"
+        ]
+      }
+    }
+  ],
+  "interpretation": "Phoenix public-only diagnostic substituted into one slot, not a comparable all-city ranking. Same coverage rules, different years and released records; not a causal year effect. Private coverage is unresolved and never mixed across years. Missing enrollment or teacher upper bounds remain unbounded."
+}

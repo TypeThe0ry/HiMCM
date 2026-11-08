@@ -1,0 +1,99 @@
+[
+  {
+    "file": "task4_v42_phoenix_coverage/arizona_ids.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27&returnIdsOnly=true",
+    "sha256": "65929444aa72dd90eb9016590b11f9ee535d7697a341ce0210d079f68bf98aa2",
+    "bytes": 13275
+  },
+  {
+    "file": "task4_v42_phoenix_coverage/arizona_page_0.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+2028+AND+OBJECTID+%3C%3D+2527&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "a1aca0d5349f9b62729b4ddfa124d9150ef18b3aa00fc455d5fac50d5b9a8ec4",
+    "bytes": 597702
+  },
+  {
+    "file": "task4_v42_phoenix_coverage/arizona_page_1.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+2528+AND+OBJECTID+%3C%3D+3027&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "fc64c166ae2a1f9fc926443ac45ddf816d2e5935cc13001c01e843954e9e8867",
+    "bytes": 597003
+  },
+  {
+    "file": "task4_v42_phoenix_coverage/arizona_page_2.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+3028+AND+OBJECTID+%3C%3D+3527&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "6666f111c1796484f88e1894ff14e2d32b1ddc89918b5df651abf2288231420c",
+    "bytes": 594272
+  },
+  {
+    "file": "task4_v42_phoenix_coverage/arizona_page_3.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+3528+AND+OBJECTID+%3C%3D+4027&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "bdd9fd45f3af2a3f4524fe57a6d575184ead5bd9be25f12557eb8ce598b7b460",
+    "bytes": 594007
+  },
+  {
+    "file": "task4_v42_phoenix_coverage/arizona_page_4.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+4028+AND+OBJECTID+%3C%3D+4527&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "503ae2a98a245c76d2524e573debeabd52475e25a7da1a7a071065cd3be913df",
+    "bytes": 592316
+  },
+  {
+    "file": "task4_v42_phoenix_coverage/arizona_page_5.json",
+    "url": "https://services1.arcgis.com/Ua5sjt3LWTPigjyD/arcgis/rest/services/School_Characteristics_Current/FeatureServer/1/query?f=json&where=LSTATE+%3D+%27AZ%27+AND+OBJECTID+%3E%3D+4528+AND+OBJECTID+%3C%3D+100114&outFields=%2A&returnGeometry=true&outSR=4326",
+    "sha256": "36730f49ebcb8c7f0ac907963e7ab6d94760df68ce2d63db8540ae358044f93e",
+    "bytes": 158963
+  },
+  {
+    "file": "task4_v85_phoenix_public/arizona_ids.json",
+    "url": "https://nces.ed.gov/opengis/rest/services/K12_School_Locations/EDGE_ADMINDATA_PUBLICSCH_2324/MapServer/1/query?f=json&where=LSTATE%3D%27AZ%27&returnIdsOnly=true",
+    "bytes": 13193,
+    "sha256": "96650bf373e47f46c2251a9f8209bee6378ea7f8c59e8c2a9a48e0ee46bec06e",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "task4_v85_phoenix_public/arizona_page_0.json",
+    "url": "https://nces.ed.gov/opengis/rest/services/K12_School_Locations/EDGE_ADMINDATA_PUBLICSCH_2324/MapServer/1/query?f=json&where=LSTATE%3D%27AZ%27+AND+OBJECTID+%3E%3D+2026+AND+OBJECTID+%3C%3D+2525&outFields=%2A&returnGeometry=true&outSR=4326",
+    "bytes": 607258,
+    "sha256": "473a60d34f1d3f7115827610f0cfa6882a8df2e04ed9adb852e83188176968f8",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "task4_v85_phoenix_public/arizona_page_1.json",
+    "url": "https://nces.ed.gov/opengis/rest/services/K12_School_Locations/EDGE_ADMINDATA_PUBLICSCH_2324/MapServer/1/query?f=json&where=LSTATE%3D%27AZ%27+AND+OBJECTID+%3E%3D+2526+AND+OBJECTID+%3C%3D+3025&outFields=%2A&returnGeometry=true&outSR=4326",
+    "bytes": 606789,
+    "sha256": "3f631143cf70b22457309b2e255ddc9895fa1e4aaf215808610bdea0acae1118",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "task4_v85_phoenix_public/arizona_page_2.json",
+    "url": "https://nces.ed.gov/opengis/rest/services/K12_School_Locations/EDGE_ADMINDATA_PUBLICSCH_2324/MapServer/1/query?f=json&where=LSTATE%3D%27AZ%27+AND+OBJECTID+%3E%3D+3026+AND+OBJECTID+%3C%3D+3525&outFields=%2A&returnGeometry=true&outSR=4326",
+    "bytes": 610037,
+    "sha256": "23ae9fea3db39f4bca5981cb44307228b02a953fb8ec96372da9c6ffe678942c",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "task4_v85_phoenix_public/arizona_page_3.json",
+    "url": "https://nces.ed.gov/opengis/rest/services/K12_School_Locations/EDGE_ADMINDATA_PUBLICSCH_2324/MapServer/1/query?f=json&where=LSTATE%3D%27AZ%27+AND+OBJECTID+%3E%3D+3526+AND+OBJECTID+%3C%3D+4025&outFields=%2A&returnGeometry=true&outSR=4326",
+    "bytes": 610306,
+    "sha256": "250d23acd05ff812ffcaaa383b99aee4df615e7a3c6b2afc87b4c5d3705423a7",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "task4_v85_phoenix_public/arizona_page_4.json",
+    "url": "https://nces.ed.gov/opengis/rest/services/K12_School_Locations/EDGE_ADMINDATA_PUBLICSCH_2324/MapServer/1/query?f=json&where=LSTATE%3D%27AZ%27+AND+OBJECTID+%3E%3D+4026+AND+OBJECTID+%3C%3D+4525&outFields=%2A&returnGeometry=true&outSR=4326",
+    "bytes": 608943,
+    "sha256": "93bb5dd63c20efc515d62c7c5a835f79485037dfb90d571f5f8d1a46adbe06bd",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "task4_v85_phoenix_public/arizona_page_5.json",
+    "url": "https://nces.ed.gov/opengis/rest/services/K12_School_Locations/EDGE_ADMINDATA_PUBLICSCH_2324/MapServer/1/query?f=json&where=LSTATE%3D%27AZ%27+AND+OBJECTID+%3E%3D+4526+AND+OBJECTID+%3C%3D+100252&outFields=%2A&returnGeometry=true&outSR=4326",
+    "bytes": 137835,
+    "sha256": "d2802b95eba28e6e3e796fce6468609acb3c2cf7ee8433c8b8567641f1f232f6",
+    "retrieved": "2026-11-08"
+  },
+  {
+    "file": "task4_v6_phoenix/phoenix_boundary.geojson",
+    "sha256": "bfd883feb95326b3fcc2ae5de18f66aa93a5c1c56467dba8a07c0045b502cb16",
+    "bytes": 191205,
+    "url": "See original V6 manifest"
+  }
+]

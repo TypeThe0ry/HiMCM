@@ -1,5 +1,7 @@
 # 当前模型：V102 Copenhagen高教资源下界修订（2026-11-08）
 
+V105完成[Phoenix双年公校控制](../results/task4_v105_phoenix_public_control/README.md)：缺FTE学校104→29，但新版Hope人数上界仍未知。旧年公校子集替入会给出第13的诊断排名，未作为全市数据准入；真实第16、25城候选与全部250格保持。
+
 V104检验[残余测量区间](../results/task4_v104_survivor_precision/README.md)：规定效用宽度0.005时理想最少4城，0.01时最少5城；四城边界夹逼约0.00922—0.00928。实际250格与25城候选不变，Toronto新原件缺城市旅时交叉。[本轮记录](../results/task4_v104_intake/README.md)。
 
 V103保持真实V102输入，新增[幸存集合枚举](../results/task4_v103_survivor_search/README.md)：全城安全＋教育＋通学的连续理想补数极限，由旧算法未闭合的3—5证明为4；实际仍25城。连续补数与共享补数诊断已重算至V102，历史压力诊断仍为旧版本。[本轮记录](../results/task4_v103_intake/README.md)。

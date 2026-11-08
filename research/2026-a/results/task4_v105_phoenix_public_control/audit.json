@@ -1,0 +1,42 @@
+{
+  "method": "Independent long-double scores, regret, ranking, tau-b pair counts and continuous endpoint enclosures; no model imports",
+  "source_hash_verified": true,
+  "input_hash_verified": true,
+  "checked_utility_rows": 750,
+  "checked_rank_rows": 75,
+  "other249cells_unchanged": true,
+  "maximum_discrepancy": 2.0046464488387983e-14,
+  "scenarios": [
+    {
+      "scenario": "current_all_city",
+      "utility": [
+        0.0,
+        1.0
+      ],
+      "phoenix_rank": 16,
+      "checked_certificate_leaves": 2,
+      "minimum_gap": 0.7561861589753489
+    },
+    {
+      "scenario": "public_only_2023-2024",
+      "utility": [
+        0.31083144447711086,
+        1.0
+      ],
+      "phoenix_rank": 13,
+      "checked_certificate_leaves": 2,
+      "minimum_gap": 0.7561861589753489
+    },
+    {
+      "scenario": "public_only_2024-2025",
+      "utility": [
+        0.0,
+        1.0
+      ],
+      "phoenix_rank": 16,
+      "checked_certificate_leaves": 2,
+      "minimum_gap": 0.7561861589753489
+    }
+  ],
+  "scope": "Public-only slot diagnostics, not equivalent all-city rankings or causal education changes; original inputs remain unchanged."
+}

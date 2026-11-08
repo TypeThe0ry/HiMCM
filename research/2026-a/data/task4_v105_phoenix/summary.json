@@ -1,0 +1,62 @@
+{
+  "control": "Identical V85 coverage and conservative grade-allocation rules, public-only, fixed current city boundary",
+  "years": [
+    {
+      "year": "2023-2024",
+      "arizona_records": 2609,
+      "city_records": 533,
+      "eligible_records": 183,
+      "explicit_eligible_records": 145,
+      "strict_hs_records": 91,
+      "grade9_12_lower": 72562,
+      "grade9_12_upper": 72562,
+      "unknown_enrollment_upper_ids": [],
+      "known_ungraded_students": 106,
+      "unknown_ungraded_records": 0,
+      "including_possible_ungraded_upper": 72668,
+      "missing_fte_records": 104,
+      "strict_missing_fte_records": 60,
+      "known_strict_fte_contributors": 31,
+      "known_strict_teacher_fte_lower": 2185.0,
+      "allstage_reported_fte_sum": 4238.930000000001,
+      "teacher_fte_upper": null,
+      "membership_grade_conflicts": 0,
+      "unknown_virtual_city_records": 0
+    },
+    {
+      "year": "2024-2025",
+      "arizona_records": 2628,
+      "city_records": 534,
+      "eligible_records": 168,
+      "explicit_eligible_records": 144,
+      "strict_hs_records": 91,
+      "grade9_12_lower": 70678,
+      "grade9_12_upper": null,
+      "unknown_enrollment_upper_ids": [
+        "040386003535"
+      ],
+      "known_ungraded_students": 81,
+      "unknown_ungraded_records": 0,
+      "including_possible_ungraded_upper": null,
+      "missing_fte_records": 29,
+      "strict_missing_fte_records": 24,
+      "known_strict_fte_contributors": 66,
+      "known_strict_teacher_fte_lower": 2508.97,
+      "allstage_reported_fte_sum": 5189.99,
+      "teacher_fte_upper": null,
+      "membership_grade_conflicts": 0,
+      "unknown_virtual_city_records": 0
+    }
+  ],
+  "matched_school_comparison": {
+    "shared_eligible_school_ids": 158,
+    "only_2023_24": 25,
+    "only_2024_25": 10,
+    "missing_to_reported_fte": 74,
+    "reported_to_missing_fte": 1
+  },
+  "main_admitted": false,
+  "private_school_data_used": false,
+  "assumptions": "School-assigned FTE additive; school-located rather than unique resident students. Missing codes retain uncertainty. No same-snapshot compatibility assumption for Hope ADE1178.",
+  "consequence": "Unknown enrollment upper and missing teachers prevent a bounded citywide public PTR; no citywide/main interval revision."
+}
