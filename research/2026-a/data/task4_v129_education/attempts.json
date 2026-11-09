@@ -1,0 +1,37 @@
+[
+  {
+    "id": "paris_depp_UAI_teacher_ETP",
+    "date": "2026-11-09",
+    "city": "Paris",
+    "route": "Official DEPP institution teacher ETP joined by UAI/year to upper-secondary pupil records, with official annuaire stage check",
+    "query": [
+      "site.data.education.gouv.fr \"lycées\" \"enseignants\" \"établissement\"",
+      "\"data.education.gouv.fr\" \"lycee\" \"effectifs\" \"dataset\""
+    ],
+    "source_years": "Teacher rentrée2024/2025; last observation2025-11-30. Pupil rentrée2025, observation2025-10-01. Annuaire row updated2026-11-07.",
+    "geography": "Teacher code_departement75 and academyParis; Henri-IV pupil communePARIS; official annuaire cityParis/75105, with separate collègeUAI",
+    "numerator": "Henri-IV UAI0750654D published lycée pupil total794 for rentrée2025; not a city total",
+    "denominator": "Same UAI/year153.65 teacherETP, whole-establishment assignment not allocated by upper-secondary vs post-bac stage",
+    "provider_scope": "Public and privé sous contrat of ministry; all providers not established, private hors contrat absent from declared scope",
+    "outcome": "not_admitted",
+    "reason": "Official annuaire same UAI post_bac=1. Teacher schema provides institution total and staff categories, no upper-stage teaching-FTE allocation. Matching UAI/year alone cannot establish matching pupil/teacher stages. Published provider scope is also not all-provider city coverage. No ratio or utility inferred.",
+    "admitted": false
+  },
+  {
+    "id": "madrid_municipal_teacher_stage_FTE",
+    "date": "2026-11-09",
+    "city": "Madrid",
+    "route": "Comunidad de Madrid municipal teacher series1902423 and teacher-data CKAN metadata",
+    "query": [
+      "site.madrid.es bachillerato profesores equivalentes tiempo completo estadistica"
+    ],
+    "source_years": "Municipal series2005–2024(P); teacher catalogue updated2026-07-22",
+    "geography": "Municipio de Madrid row explicitly distinguished from Comunidad de Madrid; catalogue covers whole region",
+    "numerator": "No new pupil numerator fetched after denominator mismatch identified",
+    "denominator": "Teacher series explicitly Educación Secundaria Obligatoria (ESO)/Bachillerato, unitNúmero; no matching upper-only FTE recovered",
+    "provider_scope": "Catalogue classifies by ownership; the fetched representation did not establish an all-provider upper-only FTE city denominator",
+    "outcome": "not_admitted",
+    "reason": "Combined lower+upper secondary teacher count cannot be divided into Bachillerato-only pupils; Número is not established FTE. Original HTTP fetches to municipal and CKAN hosts timed out; provider text kept separately, never claimed as original table bytes. Stop route without substituting allocated posts or regional values.",
+    "admitted": false
+  }
+]

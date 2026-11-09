@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "source_prefix": {
+    "bytes": 51288059,
+    "complete_lines": 4343,
+    "sha256": "95b918026cd728792354011eb1a434cd2c2a67addfb18bd3cb224f2202ede2f9",
+    "first_timestamp": "2026-11-08T14:50:31.702Z",
+    "last_timestamp": "2026-11-08T19:10:12.409Z"
+  },
+  "predecessor_prefix": {
+    "bytes": 33655049,
+    "complete_lines": 2758,
+    "sha256": "c5e76ca40be86d413b9119d1dbf35e3a6f4376d074ffbf664c9abff88de6dd3e",
+    "first_timestamp": "2026-11-08T14:50:31.702Z",
+    "last_timestamp": "2026-11-08T17:26:26.827Z"
+  },
+  "selected_messages": 66,
+  "predecessor_selected_messages": 52,
+  "added_selected_messages": 14,
+  "selected_message_counts": {
+    "user:None": 4,
+    "assistant:commentary": 53,
+    "assistant:final_answer": 9
+  },
+  "recorded_turn_model_counts": {
+    "gpt-6.1-sol": 13
+  },
+  "cli_version": "0.166.0-alpha.5.1",
+  "manifest_sha256": "b070e8792c1519c662b2ad80112b7cde7638817b13df5f64551fda9b56b0fd07",
+  "extractor_sha256": "33d2333093e3dd888ae5d19899eb0a822a0be3470075c72f962d190ed2c4ee41",
+  "verifier_sha256": "27b8d33d10a79eb6a5dddf5a7a901a055fd8dede42aac646df14aa8150707528",
+  "verified_original_prefix": true,
+  "predecessor_inventory_unchanged": true,
+  "source_lines_and_export_text_exact": true,
+  "private_export_not_published": true,
+  "protected_sha256": {
+    "data/task4_v126_ai_provenance/session_manifest.json": "a6f665b8971d85a2f2652c1402844ee5084f364467d92c5350a4d061d2b8d888",
+    "data/task4_v126_ai_provenance/verification.json": "e8ad1e090547241cd45cf1538d5f5ee55deaffb899732c184053060c745ec586",
+    "data/task4_v126_ai_provenance/tool_receipts.json": "a15f95c719e7e57fd56c8eb29c4c00623835ae7f84a78279a810379994686eb3",
+    "scripts/task4_v126_ai_provenance.py": "33d2333093e3dd888ae5d19899eb0a822a0be3470075c72f962d190ed2c4ee41",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_v127_snapshot.json": "8f754bb3b666fdea8030bacf0551dea8a455bb0fc22df56c1860d4f4e747e45d",
+    "design/task4_user_current_model.json": "081388b48392c0a9ff4c612ecbff48a1dd8a21b3a92166043d7c1a18da7be79e",
+    "design/task4_user_v127_admissions.json": "8e77c012efcff76959b1667afcbe4f6fa150ef25f65870e00716d37bcb042b4f",
+    "scripts/task4_user_v127_revision.py": "5a9409552c4af7d75f5e671127d49165ea8d8f204c26214fd64c8867ff8f5a5a",
+    "results/task4_user_v127_revision/summary.json": "03728d5f611553595ae30498336d079f7c5eaa47a719b8e1cb1159ef393018a3",
+    "results/task4_user_v127_revision/current_ranks.csv": "9ce106ae061cd3adc593fe802a9886eb0b9896b31aa5bbe7be877d0ee0e8fe6c",
+    "results/task4_user_v127_revision/all_ranks.csv": "fb0a3134d592d1b898e3a7b9814189a9d690e5fef5b0c04edd4e1fd29ac52edd",
+    "results/task4_user_v127_revision/utility_bounds.csv": "7fabe780186aa8c69653368d8ed9f281f5ba1771d16757a0cd07c7cad8b878c7",
+    "results/task4_user_v127_revision/mc_city_summary.csv": "45015d2c3007de4054c1a5078605fef418ba7b88e2924f34eb64bd0691cac1d4",
+    "results/task4_user_v127_revision/revision_audit.json": "d21e676d5c88fc2e403302167481a6970b0b23d029c50533130c0cc0099296b5"
+  },
+  "complete_team_ai_history": false,
+  "limitation": "One root session and selected visible messages only; tool-generated code/prose, tool outputs, attachments, subagent sessions and other team members remain outside this export."
+}

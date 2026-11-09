@@ -1,0 +1,91 @@
+{
+  "access_date": "2026-11-09",
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "baseline": "16-cityV127",
+  "original_source_urls": {
+    "berlin_u1.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u1",
+    "berlin_u2.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u2",
+    "berlin_u3.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u3",
+    "berlin_u4.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u4",
+    "berlin_u5.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u5",
+    "berlin_u6.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u6",
+    "berlin_u7.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u7",
+    "berlin_u8.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u8",
+    "berlin_u9.html": "https://www.bvg.de/de/verbindungen/linienuebersicht/u9",
+    "berlin_zone_definition.html": "https://www.bvg.de/de/abos-und-tickets/tarifzonen-und-tarifbestimmungen"
+  },
+  "source_hashes": {
+    "berlin_u1.html": "8719d2d6af44b2fcf2ecb4e60ce6b5a5d808d051566f2041af26e9af8b04e749",
+    "berlin_u2.html": "87f51d2e4ba193251ac8ba3ee0c79663adbda476acea7d322233bc0899b1bb57",
+    "berlin_u3.html": "acbdc22e6d890bd5bd7a9fc584c7d7cf24ae5e9586f07292991c547263d1e1aa",
+    "berlin_u4.html": "011f5e8282dd9eba6a9d1ad710f679611c70138fdd6d59fe21d414981d0605c6",
+    "berlin_u5.html": "ba77591200c0099877535e95c57a0a49b4f91799428db1e0750b440b32bd754e",
+    "berlin_u6.html": "c01a8846c0cbbda35442ab43ae8a050eb0c29f917a030eb6e6f18df342bd9a99",
+    "berlin_u7.html": "4ce9b400c97e2887df2e25c9e11d54dabeef01f926ef4cc928d2b0655c2ef15a",
+    "berlin_u8.html": "04979ab56f381636f356e3d4b52489ba004f6ee1a1d4c16cbad8d5968877793c",
+    "berlin_u9.html": "0686ce9d11321999ff4d7b0652a2a43cd21ae6811ccd84ab424aa5c911c82d4b",
+    "berlin_zone_definition.html": "7c27a0daedf89255c27e936b79002762f1e540d52aa97ce3182f98a5ccf958dc"
+  },
+  "representation": "Original HTTP-response HTML bytes; native first-party embedded JSON extracted deterministically, no AI text provider",
+  "source_schema": "pageJson.main.fgiPearlString.initialRouteData.routeSegments[*].stops[*] with official slug,title,zone and transfers.subway[*].name",
+  "identity_rule": "Unique original station slug; normalized title is bijective with slug. Repeated profile-render blocks are not counted; only one native initialRouteData object per line.",
+  "geography_rule": "Only station-level zoneA; publisher explicitly defines it as Berlin inner city through S-Bahn ring. No polygon overlay claimed; no inferred use of zoneB/C boundary.",
+  "line_checks": [
+    {
+      "line": "U1",
+      "all_profile_stops": 13,
+      "selected_zone_A_stops": 13
+    },
+    {
+      "line": "U2",
+      "all_profile_stops": 29,
+      "selected_zone_A_stops": 23
+    },
+    {
+      "line": "U3",
+      "all_profile_stops": 24,
+      "selected_zone_A_stops": 16
+    },
+    {
+      "line": "U4",
+      "all_profile_stops": 5,
+      "selected_zone_A_stops": 5
+    },
+    {
+      "line": "U5",
+      "all_profile_stops": 26,
+      "selected_zone_A_stops": 13
+    },
+    {
+      "line": "U6",
+      "all_profile_stops": 24,
+      "selected_zone_A_stops": 14
+    },
+    {
+      "line": "U7",
+      "all_profile_stops": 40,
+      "selected_zone_A_stops": 22
+    },
+    {
+      "line": "U8",
+      "all_profile_stops": 24,
+      "selected_zone_A_stops": 15
+    },
+    {
+      "line": "U9",
+      "all_profile_stops": 18,
+      "selected_zone_A_stops": 10
+    }
+  ],
+  "appearances": 131,
+  "station_complexes": 100,
+  "original_source_status": "As-accessed2026 published inventory, not an independently reconstructed2025 or real-time operation dataset",
+  "checks": {
+    "original_station_slugs": true,
+    "title_slug_bijection": true,
+    "station_level_zone_assignment": true,
+    "all_cross_line_transfers_corroborated": true,
+    "partial_inventory_only": true,
+    "original_csv_hash_unchanged": true
+  }
+}

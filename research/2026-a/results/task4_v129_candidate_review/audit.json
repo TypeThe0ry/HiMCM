@@ -1,0 +1,75 @@
+{
+  "status": "pass",
+  "source_review": "qualified conditional public-metro inventory candidate",
+  "primary_admissions": 0,
+  "registry_changed": false,
+  "station_complexes": 100,
+  "line_appearances": 131,
+  "geography": "Publisher-defined Berlin inner-city zone A; no polygon overlay claimed",
+  "observed_year": 2026,
+  "population_year": 2025,
+  "population": 3700577.0,
+  "utility_candidate": [
+    0.051274465290648025,
+    1
+  ],
+  "canonical_urls_verified": 10,
+  "source_hashes": {
+    "berlin_u1.html": "8719d2d6af44b2fcf2ecb4e60ce6b5a5d808d051566f2041af26e9af8b04e749",
+    "berlin_u2.html": "87f51d2e4ba193251ac8ba3ee0c79663adbda476acea7d322233bc0899b1bb57",
+    "berlin_u3.html": "acbdc22e6d890bd5bd7a9fc584c7d7cf24ae5e9586f07292991c547263d1e1aa",
+    "berlin_u4.html": "011f5e8282dd9eba6a9d1ad710f679611c70138fdd6d59fe21d414981d0605c6",
+    "berlin_u5.html": "ba77591200c0099877535e95c57a0a49b4f91799428db1e0750b440b32bd754e",
+    "berlin_u6.html": "c01a8846c0cbbda35442ab43ae8a050eb0c29f917a030eb6e6f18df342bd9a99",
+    "berlin_u7.html": "4ce9b400c97e2887df2e25c9e11d54dabeef01f926ef4cc928d2b0655c2ef15a",
+    "berlin_u8.html": "04979ab56f381636f356e3d4b52489ba004f6ee1a1d4c16cbad8d5968877793c",
+    "berlin_u9.html": "0686ce9d11321999ff4d7b0652a2a43cd21ae6811ccd84ab424aa5c911c82d4b",
+    "berlin_zone_definition.html": "7c27a0daedf89255c27e936b79002762f1e540d52aa97ce3182f98a5ccf958dc"
+  },
+  "candidate_files_sha256": {
+    "extract.py": "f77a9452861e5488a6a1088743a5fc86584dd30f220dabc3fe166079ef4aafab",
+    "manifest.json": "af1e26a1d819faaaea2471c0aab7374a064e2b27828a6cab490f7efe8885d3b4",
+    "observations.json": "58839524d6a8f91af246ebbb736a02f76ce9b844820662f09bb925451dc097a5",
+    "berlin_stations.json": "7df850148f42654f3409dbbd801501d5d56803948cd2b84a9302cc6cdffcff8c"
+  },
+  "native_id_name_bijection": true,
+  "interchanges_reconciled": true,
+  "independent_HTMLParser_used": true,
+  "independent_preview_checks": [
+    {
+      "weight_reference": "fixed",
+      "candidate_mean_width": 16.092069666941647,
+      "candidate_mean_width_reduction": 0.015215905383172412,
+      "candidate_relative_width_reduction_percent": 0.09446598134024545,
+      "candidate_focal_score_lower": 50.73244518836892,
+      "possible_champions": 16,
+      "conservative_choice": "Zurich"
+    },
+    {
+      "weight_reference": "equal",
+      "candidate_mean_width": 18.91937194911215,
+      "candidate_mean_width_reduction": 0.027204132748477328,
+      "candidate_relative_width_reduction_percent": 0.14358337163896567,
+      "candidate_focal_score_lower": 48.90923441664795,
+      "possible_champions": 16,
+      "conservative_choice": "Zurich"
+    }
+  ],
+  "frozen_V127_sha256": {
+    "design/task4_user_current_model.json": "081388b48392c0a9ff4c612ecbff48a1dd8a21b3a92166043d7c1a18da7be79e",
+    "design/task4_user_v127_admissions.json": "8e77c012efcff76959b1667afcbe4f6fa150ef25f65870e00716d37bcb042b4f",
+    "scripts/task4_user_v127_revision.py": "5a9409552c4af7d75f5e671127d49165ea8d8f204c26214fd64c8867ff8f5a5a",
+    "results/task4_user_v127_revision/summary.json": "03728d5f611553595ae30498336d079f7c5eaa47a719b8e1cb1159ef393018a3",
+    "results/task4_user_v127_revision/current_ranks.csv": "9ce106ae061cd3adc593fe802a9886eb0b9896b31aa5bbe7be877d0ee0e8fe6c",
+    "results/task4_user_v127_revision/all_ranks.csv": "fb0a3134d592d1b898e3a7b9814189a9d690e5fef5b0c04edd4e1fd29ac52edd",
+    "results/task4_user_v127_revision/utility_bounds.csv": "7fabe780186aa8c69653368d8ed9f281f5ba1771d16757a0cd07c7cad8b878c7",
+    "results/task4_user_v127_revision/mc_city_summary.csv": "45015d2c3007de4054c1a5078605fef418ba7b88e2924f34eb64bd0691cac1d4",
+    "results/task4_user_v127_revision/revision_audit.json": "d21e676d5c88fc2e403302167481a6970b0b23d029c50533130c0cc0099296b5",
+    "design/task4_user_v127_snapshot.json": "8f754bb3b666fdea8030bacf0551dea8a455bb0fc22df56c1860d4f4e747e45d",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c"
+  },
+  "live_registry_sha256_before_after": "081388b48392c0a9ff4c612ecbff48a1dd8a21b3a92166043d7c1a18da7be79e",
+  "live_registry_used_as_input": false,
+  "remaining_work": "Controlled admission/withdrawal audit, primary and extension reruns, and unified manuscript migration before activation. This receipt does not change the V127 primary model.",
+  "limitations": "Static as-accessed inventory; no all-station live-service, individual accessibility or universal teenage eligibility audit. Other modes and outer-city stations remain uncounted."
+}

@@ -1,6 +1,6 @@
 # 接手续做 HiMCM：当前权威状态
 
-长期goal **active**：持续优化论文及论文材料。所有新增／修改叙述必须使用已安装的 [anti-defensive-writing-Skill](../guidelines/ANTI_DEFENSIVE_WRITING.md)。先读 [AGENTS.md](../../AGENTS.md)、[GUIDELINES.md](../../GUIDELINES.md)、[长期计划](LONGTERM_GOAL.md)和[V128交接](V128_RESEARCH_UPDATE.md)。
+长期goal **active**：持续优化论文及论文材料。所有新增／修改叙述必须使用已安装的 [anti-defensive-writing-Skill](../guidelines/ANTI_DEFENSIVE_WRITING.md)。先读 [AGENTS.md](../../AGENTS.md)、[GUIDELINES.md](../../GUIDELINES.md)、[长期计划](LONGTERM_GOAL.md)和[V129交接](V129_RESEARCH_UPDATE.md)。V128完整稿与主V127继续冻结不变。
 
 ## 当前入口与结论
 
@@ -13,6 +13,7 @@
 - **Zurich仍为保守推荐，16城仍可能冠军，无必要冠军。** 教育优先改推荐Oslo，不是确定冠军或实测学生偏好。
 - 扩展入口：[V128总审](../../research/2026-a/results/task4_v128_revision/README.md)、`design/task4_user_v128_extensions.json`。教育tau .716667、方法equal tau .666667、修订fixed tau .583333；不能沿用旧.700/.750/.600。教育k100 Prague条件推荐频率5.34%→8.71%，不是实际胜率。
 - Overleaf当前完整独立稿：`/data/projects/HiMCM-Overleaf/drafts/task4_v128_paper.tex/.pdf`，20页＝18主文＋2暂定AI页。V125及更旧稿保留各自冻结证据，不覆盖。
+- V129支持材料已同步Overleaf`9a4b259`；当前17缺失格诊断及Berlin100站源审查完成，0格正式准入。131次A区线路出现去重100站，不是初步误加的141；候选效用[.0512744653,1]，若启用fixed平均宽度预计再窄0.0945%，Zurich/16可能不变。候选与已启用结果分开。
 
 ## 环境与复现
 
@@ -54,12 +55,12 @@ python drafts/check_task4_v128.py --compiler-output /data/scratch/himcm-v128-bui
 
 GitHub保存研究材料；Overleaf保存论文、LaTeX与选定资产。保留队友`main.tex/ref.bib/mcmthesis.cls`；没有具体授权不修改/替换正文，不自动更改项目主文件。共享main仍在143行缺`framework.png`，独立稿可编译。无连接文档会话时，只报告fetch后的Git镜像与实际push状态。
 
-论文头`Team Control PENDING`，真实号码仍待确认；全队AI史仍未完整。V126私有选集中52条可见消息及10个模型标识已有独立核验，截止2026-11-08 17:26UTC；原文在仓库外，不自动公开，也不冒称完整AI披露。Exa提取表示与原始HTTP分开，未猜底层模型版本。
+论文头`Team Control PENDING`，真实号码仍待确认；全队AI史仍未完整。V129把同任务私有可见选集52→66条，13个根turn模型标签已核验，截止2026-11-08 19:10:12UTC；原V126前缀及52条清单保持。V128稿继续准确声明旧17:26UTC范围，新记录另附支持材料。原文在仓库外，不自动公开，也不冒称完整AI披露。Exa提取表示与原始HTTP分开，未猜底层模型版本。
 
 当前GitHub仍PUBLIC，赛期公开发布选择未收到答复，暂缓新增公开push，不擅改可见性；本地commit正常，Overleaf按授权同步。push前重新核实际可见性、fetch并审diff，不能force。不要提交凭据、环境、缓存或56.6MB外部年报。
 
 ## 下一轮
 
-先按V127的17个全缺失格更新采集诊断；旧V126 priority固定V124的19格，不能充作当前优先级。优先真正新匹配的教师分母与真实高中通学，失败跳过；可继续官方公共交通原件的市界/乘客站资格/实体去重核对。保持V127主证据与V128全稿一致，按实际改善推进。控制号、完整团队AI史、队友稿具体整合授权及发布选择需要真实信息；单轮完成不把长期goal标完成。
+V129已按V127的17个全缺失格更新诊断；旧V126 priority仍固定V124的19格。优先把已通过独立源审查的Berlin100站候选做成下一套受控准入：保留原CSV和143个已有信息格，上界1；做单独准入／撤回、主模型MC及所有偏好／未来／方法扩展，再统一新完整稿后激活。候选包尚未被正式准入表冻结，采用时固定源哈希；不改旧V127/V128产物。继续真正新匹配的Dublin／Zurich教师分母与Warsaw真实高中通学；V129 Paris／Madrid师资和Amsterdam交通均0准入，不重复已失败口径。并行agent因服务配额终止，父级已接手最终核验；重用前先确认工具实际可用，不把旧运行意图当live进程。控制号、完整团队AI史、队友稿具体整合授权及发布选择需要真实信息；单轮完成不把长期goal标完成。
 
 历史恢复过程与旧版本结果见V120–V126各交接文件；本页当前入口优先，旧“当时最新”状态不覆盖本页。

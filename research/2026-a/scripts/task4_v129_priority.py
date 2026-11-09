@@ -1,0 +1,385 @@
+"""V127 user16 acquisition limits for its 17 completely missing utility cells.
+
+Information values condition on exact utility resolution, not on a probability
+distribution or on actually obtaining a complete, correctly scoped source.
+"""
+import hashlib
+from itertools import combinations, product
+import json
+import subprocess
+
+import numpy as np
+import pandas as pd
+
+from task4_interval_decision import interval_decision, voi_1d
+from task4_user_city_indicators import SOURCE
+from task4_user_v127_revision import MANIFEST, revised_bounds
+from task4_v124_priority import independent_scores
+from task4_v5_model import ROOT, NAMES, SPEC, score, weights
+
+OUT = ROOT/'results/task4_v129_priority'
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def independent_regrets(lower, upper):
+    return np.array([max(0., max(np.delete(upper, i))-lower[i]) for i in range(len(lower))])
+
+
+def raw_from_utility(j, x):
+    if NAMES[j] == 'travel':
+        return np.nan
+    _, benefit, anchor, _ = SPEC[j]
+    if benefit:
+        return anchor*x/(1-x) if x < 1 else np.inf
+    return anchor*(1-x)/x if x else np.inf
+
+
+def main():
+    paths = [SOURCE, MANIFEST, ROOT/'design/task4_user_current_model.json',
+        ROOT/'scripts/task4_user_v127_revision.py', ROOT/'scripts/task4_interval_decision.py',
+        ROOT/'scripts/task4_v124_priority.py', ROOT/'scripts/task4_v5_model.py',
+        *[(ROOT/'results/task4_user_v127_revision'/name) for name in
+          ['current_ranks.csv', 'all_ranks.csv', 'utility_bounds.csv', 'summary.json', 'mc_city_summary.csv']]]
+    snapshot = ROOT/'design/task4_user_v127_snapshot.json'
+    paths += [snapshot, ROOT/'design/task4_user_v128_extensions.json',
+              ROOT/'scripts/task4_v126_priority.py', ROOT/'scripts/task4_v129_priority.py']
+    for pattern in ['results/task4_user_v127_revision/**/*', 'results/task4_v128*/**/*',
+                    'results/task4_v126_priority/**/*', 'scripts/*v127*.py',
+                    'scripts/*v128*.py', 'design/*v127*.json', 'design/*v128*.json',
+                    'data/task4_v127*/**/*']:
+        paths += [p for p in ROOT.glob(pattern) if p.is_file()]
+    manifest = json.loads(MANIFEST.read_text())
+    paths += [ROOT/path for path in manifest['source_hashes']]
+    hashes = {str(p.relative_to(ROOT)): digest(p) for p in sorted(set(paths))}
+    registry_path = 'design/task4_user_current_model.json'
+    frozen_registry_bytes = subprocess.check_output([
+        'git', '-C', str(ROOT.parents[1]), 'show',
+        '59edddf:'+str((ROOT/registry_path).relative_to(ROOT.parents[1]))])
+    frozen_registry_sha = hashlib.sha256(frozen_registry_bytes).hexdigest()
+    for path, expected in json.loads(snapshot.read_text())['source_sha256'].items():
+        assert (frozen_registry_sha if path == registry_path else digest(ROOT/path)) == expected, path
+    assert digest(SOURCE) == '430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c'
+    frozen_registry = json.loads(frozen_registry_bytes)
+    live_registry = json.loads((ROOT/registry_path).read_text())
+    assert frozen_registry['version'] == 'V127' and frozen_registry['module'] == 'task4_user_v127_revision'
+    frame, lo, hi = revised_bounds(); cities = frame.city.tolist(); n = len(cities)
+    original = np.stack([lo, hi]).copy()
+    missing = (lo == 0) & (hi == 1)
+    assert n == 16 and lo.shape == (16, 10) and missing.sum() == 17
+    assert np.sum(hi > lo) == 48 and np.sum(~missing) == 143
+    saved = pd.read_csv(ROOT/'results/task4_user_v127_revision/current_ranks.csv')
+    endpoints, priorities, joints, joint_endpoints, thresholds, baselines, audit_cases = [], [], [], [], [], [], []
+    lower_only, switches, joint_audits = [], [], []
+    count = 0
+    for reference, w in [('fixed', weights(.1)), ('equal', np.ones(10)/10)]:
+        if reference == 'fixed':
+            np.testing.assert_array_equal(w, np.array([.1125]*6+[.05,.1125,.1125,.05]))
+        L, U = score(lo, w), score(hi, w)
+        base = interval_decision(L, U)
+        assert base['possible_champion'].sum() == 16 and not base['necessary_champion'].any()
+        old = saved[(saved.weight_reference == reference) & (saved.scenario == 'after_conditional')].set_index('city').loc[cities]
+        for col, expected in [('score_lower', L), ('score_upper', U), ('max_regret', base['max_regret'])]:
+            np.testing.assert_allclose(old[col], expected, atol=1e-12, rtol=0)
+        current_risk = base['minimax_regret']
+        baselines.append(dict(weight_reference=reference, minimax_regret=current_risk,
+            choices=[cities[i] for i in base['minimax_choices']], possible_count=16,
+            mean_score_interval_width=float(np.mean(U-L))))
+
+        def conditioned(i, js, values, exact=True):
+            nonlocal count
+            a, b = lo.copy(), hi.copy(); a[i, js] = values
+            if exact:
+                b[i, js] = values
+            np.testing.assert_array_equal(a[~missing], lo[~missing])
+            np.testing.assert_array_equal(b[~missing], hi[~missing])
+            l, u = score(a, w), score(b, w)
+            np.testing.assert_allclose(l, independent_scores(a, w), atol=1e-12, rtol=0)
+            np.testing.assert_allclose(u, independent_scores(b, w), atol=1e-12, rtol=0)
+            others = np.arange(n) != i
+            np.testing.assert_array_equal(l[others], L[others]); np.testing.assert_array_equal(u[others], U[others])
+            d = interval_decision(l, u)
+            np.testing.assert_allclose(d['max_regret'], independent_regrets(l, u), atol=1e-12, rtol=0)
+            p = np.array([u[k] >= max(np.delete(l, k))-1e-12 for k in range(n)])
+            np.testing.assert_array_equal(p, d['possible_champion'])
+            necessary = np.array([l[k] >= max(np.delete(u, k))-1e-12 for k in range(n)])
+            np.testing.assert_array_equal(necessary, d['necessary_champion'])
+            np.testing.assert_array_equal(d['best_rank'], [1+sum(np.delete(l, k) > u[k]+1e-12) for k in range(n)])
+            np.testing.assert_array_equal(d['worst_rank'], [1+sum(np.delete(u, k) > l[k]+1e-12) for k in range(n)])
+            rr = independent_regrets(l, u)
+            np.testing.assert_array_equal(d['minimax_choices'], np.flatnonzero(rr <= rr.min()+1e-12))
+            assert d['minimax_regret'] <= current_risk+1e-10
+            count += 1
+            return l, u, d
+
+        for i, j in zip(*np.where(missing)):
+            def callback(x):
+                l, u, _ = conditioned(i, [j], x)
+                return l, u
+            endpoint_cases = []
+            for label, x in [('lower', 0.), ('upper', 1.)]:
+                l, u, d = conditioned(i, [j], x)
+                endpoint_cases.append((l, u, d))
+                endpoints.append(dict(weight_reference=reference, city=cities[i], indicator=NAMES[j],
+                    endpoint=label, resolved_utility=x, implied_raw_PTR_or_density=raw_from_utility(j, x),
+                    possible_count=int(d['possible_champion'].sum()),
+                    excluded_cities=';'.join(cities[k] for k in range(n) if not d['possible_champion'][k]),
+                    minimax_choices=';'.join(cities[k] for k in d['minimax_choices']),
+                    minimax_regret_before=current_risk, minimax_regret_after=d['minimax_regret'],
+                    minimax_regret_reduction=current_risk-d['minimax_regret'],
+                    focal_lower=float(l[i]), focal_upper=float(u[i]),
+                    focal_score_width_reduction=float((U[i]-L[i])-(u[i]-l[i])),
+                    interpretation='Perfect utility identification at a closed endpoint; not observed evidence'))
+            voi = voi_1d(callback, i, 0., 1., baseline=(L, U))
+            # Independently optimize the one-city two-branch envelope. The
+            # focal regret decreases, best-other regret increases with x.
+            def branches(x):
+                a, b = lo.copy(), hi.copy(); a[i, j] = b[i, j] = x
+                rr = independent_regrets(independent_scores(a, w), independent_scores(b, w))
+                return float(rr[i]), float(np.delete(rr, i).min())
+            candidates = [0., 1.]
+            left, right = 0., 1.
+            if branches(0)[0] >= branches(0)[1] and branches(1)[0] <= branches(1)[1]:
+                for _ in range(60):
+                    mid = (left+right)/2; a, b = branches(mid)
+                    if a > b:
+                        left = mid
+                    else:
+                        right = mid
+                candidates += [left, right]
+                x = (left+right)/2
+                switches.append(dict(weight_reference=reference, city=cities[i], indicators=NAMES[j],
+                    acquisition='exact_utility', utility_threshold=x,
+                    raw_PTR_or_density_threshold=raw_from_utility(j, x),
+                    interpretation='Focal minimax at or above utility threshold; equality may tie. Other cells fixed.'))
+            risks = [min(branches(x)) for x in candidates]
+            worst, best = max(risks), min(min(branches(0)), min(branches(1)))
+            np.testing.assert_allclose([voi['worst_post_regret'], voi['best_post_regret']], [worst, best], atol=1e-10, rtol=0)
+            np.testing.assert_allclose([voi['guaranteed_gain'], voi['best_possible_gain']],
+                                       [current_risk-worst, current_risk-best], atol=1e-10, rtol=0)
+            optimistic_exclusions = max(16-int(case[2]['possible_champion'].sum()) for case in endpoint_cases)
+            for x in np.linspace(0, 1, 21):
+                _, _, d = conditioned(i, [j], float(x))
+                assert best-1e-10 <= d['minimax_regret'] <= worst+1e-10
+                assert 16-int(d['possible_champion'].sum()) <= optimistic_exclusions
+            priority = dict(weight_reference=reference, city=cities[i], indicator=NAMES[j],
+                guaranteed_exact_resolution_regret_reduction=voi['guaranteed_gain'],
+                best_possible_exact_resolution_regret_reduction=voi['best_possible_gain'],
+                worst_post_regret=worst, best_post_regret=best,
+                optimistic_champion_exclusions=optimistic_exclusions,
+                low_endpoint_choices=';'.join(cities[k] for k in endpoint_cases[0][2]['minimax_choices']),
+                high_endpoint_choices=';'.join(cities[k] for k in endpoint_cases[1][2]['minimax_choices']),
+                current_focal_upper=U[i], hypothetical_resolution='Exact utility in[0,1], not raw-source acquisition probability',
+                actual_partial_source_rule='Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply')
+            priorities.append(priority)
+            # Single-cell exclusion thresholds support source triage.
+            low, high = endpoint_cases
+            targets = [(k, U[k], 'lower_above') for k in range(n)
+                       if k != i and high[0][i] > U[k]+1e-12]
+            if not low[2]['possible_champion'][i]:
+                targets.append((i, max(np.delete(L, i)), 'upper_below'))
+            for k, target, direction in targets:
+                left, right = 0., 1.
+                for _ in range(50):
+                    x = (left+right)/2; l, u, _ = conditioned(i, [j], x)
+                    value = l[i] if direction == 'lower_above' else u[i]
+                    if value < target:
+                        left = x
+                    else:
+                        right = x
+                x = (left+right)/2
+                thresholds.append(dict(weight_reference=reference, source_city=cities[i], indicator=NAMES[j],
+                    excluded_city=cities[k], direction=direction, utility_threshold=x,
+                    raw_PTR_or_density_threshold=raw_from_utility(j, x),
+                    strict_rule='Observed lower utility strictly above threshold' if direction == 'lower_above' else
+                                'Observed upper utility strictly below threshold',
+                    travel_scope='A mean alone does not supply an upper utility bound; matched bins or distribution needed' if NAMES[j] == 'travel' else ''))
+            audit_cases.append(dict(weight_reference=reference, city=cities[i], indicator=NAMES[j],
+                                   independent_two_branch_value_of_information=True))
+
+        # A real inventory/mean usually yields [x,1], not exact utility x.
+        # Retain the upper bound and record conditional effects without VOI guarantees.
+        def lower_only_group(i, js, label):
+            rows = []
+            for x in np.linspace(0, 1, 21):
+                l, u, d = conditioned(i, js, float(x), exact=False)
+                row = dict(weight_reference=reference, city=cities[i],
+                    indicators=';'.join(NAMES[j] for j in js), group=label,
+                    observed_utility_lower=float(x), retained_utility_upper=1,
+                    possible_count=int(d['possible_champion'].sum()),
+                    excluded_cities=';'.join(cities[k] for k in range(n) if not d['possible_champion'][k]),
+                    minimax_choices=';'.join(cities[k] for k in d['minimax_choices']),
+                    minimax_regret_after=d['minimax_regret'],
+                    minimax_regret_reduction=current_risk-d['minimax_regret'],
+                    focal_score_lower=float(l[i]), focal_score_upper=float(u[i]),
+                    scope='Hypothetical lower-bound-only information; x=1 may be a limiting raw endpoint, not an obtainable observation')
+                lower_only.append(row); rows.append(row)
+            assert np.all(np.diff([r['minimax_regret_after'] for r in rows]) <= 1e-10)
+            assert all(cities[i] not in r['excluded_cities'].split(';') for r in rows)
+            # Other cities keep fixed regret when only the focal lower bound rises.
+            l0, u0, d0 = conditioned(i, js, 0., exact=False)
+            l1, u1, d1 = conditioned(i, js, 1., exact=False)
+            if i not in d0['minimax_choices'] and i in d1['minimax_choices']:
+                target = np.delete(independent_regrets(l0, u0), i).min()
+                left, right = 0., 1.
+                for _ in range(50):
+                    x = (left+right)/2
+                    a = lo.copy(); a[i, js] = x
+                    rr = independent_regrets(independent_scores(a, w), independent_scores(hi, w))
+                    if rr[i] > target: left = x
+                    else: right = x
+                x = (left+right)/2
+                switches.append(dict(weight_reference=reference, city=cities[i],
+                    indicators=';'.join(NAMES[j] for j in js), acquisition='lower_bound_only',
+                    utility_threshold=x,
+                    raw_PTR_or_density_threshold=raw_from_utility(js[0], x) if len(js)==1 else np.nan,
+                    interpretation='Focal minimax at or above lower-utility threshold; upper bound remains 1; equality may tie.'))
+
+        for i, j in zip(*np.where(missing)):
+            lower_only_group(i, [j], 'single')
+
+        # Same-city joint limits, retaining all already partial source cells.
+        for i, city in enumerate(cities):
+            js = np.flatnonzero(missing[i]).tolist()
+            if not js:
+                continue
+            if len(js) > 1:
+                lower_only_group(i, js, 'all_city_missing')
+            for size in range(1, len(js)+1):
+                for group in combinations(js, size):
+                    candidates = []
+                    for label, x in [('lower', 0.), ('upper', 1.)]:
+                        l, u, d = conditioned(i, list(group), x)
+                        row = dict(weight_reference=reference, city=city, indicators=';'.join(NAMES[j] for j in group),
+                            cell_count=size, all_city_full_missing_cells=(size == len(js)),
+                            endpoint=label, resolved_utility=x, possible_count=int(d['possible_champion'].sum()),
+                            excluded_cities=';'.join(cities[k] for k in range(n) if not d['possible_champion'][k]),
+                            minimax_choices=';'.join(cities[k] for k in d['minimax_choices']),
+                            minimax_regret_after=d['minimax_regret'],
+                            minimax_regret_reduction=current_risk-d['minimax_regret'],
+                            focal_lower=float(l[i]), focal_upper=float(u[i]))
+                        joint_endpoints.append(row); candidates.append(row)
+                    joints.append(dict(weight_reference=reference, city=city, indicators=candidates[0]['indicators'],
+                        cell_count=size, all_city_full_missing_cells=(size == len(js)),
+                        optimistic_champion_exclusions=max(16-r['possible_count'] for r in candidates),
+                        high_endpoint_exclusions=16-candidates[1]['possible_count'],
+                        best_endpoint_regret_reduction=max(r['minimax_regret_reduction'] for r in candidates)))
+                    # Independent mixed-coordinate probes supplement the monotone
+                    # endpoint ceiling: a joint completion need not share one x.
+                    probes = 0
+                    for values in product((0., .25, .5, .75, 1.), repeat=size):
+                        _, _, d = conditioned(i, list(group), list(values))
+                        assert 16-int(d['possible_champion'].sum()) <= joints[-1]['optimistic_champion_exclusions']
+                        assert current_risk-d['minimax_regret'] <= joints[-1]['best_endpoint_regret_reduction']+1e-10
+                        probes += 1
+                    joint_audits.append(dict(weight_reference=reference, city=city,
+                        indicators=candidates[0]['indicators'], mixed_coordinate_probes=probes))
+
+    # Check recorded recommendation crossings with independent norms/regrets on
+    # both sides, including the diagonal specified for a joint lower-bound route.
+    for row in switches:
+        w = weights(.1) if row['weight_reference'] == 'fixed' else np.ones(10)/10
+        i = cities.index(row['city']); js = [NAMES.index(x) for x in row['indicators'].split(';')]
+        x = row['utility_threshold']
+        assert 1e-7 < x < 1-1e-7
+        for shift, sign in [(-1e-7, 1), (1e-7, -1)]:
+            a, b = lo.copy(), hi.copy(); a[i, js] = x+shift
+            if row['acquisition'] == 'exact_utility': b[i, js] = x+shift
+            rr = independent_regrets(independent_scores(a, w), independent_scores(b, w))
+            assert sign*(rr[i]-np.delete(rr, i).min()) > 0
+        row['matched_mean_minutes_upper_for_Jensen_lower'] = (
+            -30*np.log(x) if js == [NAMES.index('travel')] and row['acquisition'] == 'lower_bound_only' else np.nan)
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    pr = pd.DataFrame(priorities).sort_values(['weight_reference', 'guaranteed_exact_resolution_regret_reduction',
+        'best_possible_exact_resolution_regret_reduction'], ascending=[True, False, False])
+    pr.to_csv(OUT/'priority.csv', index=False)
+    pd.DataFrame(endpoints).to_csv(OUT/'endpoint_information.csv', index=False)
+    joint = pd.DataFrame(joints).sort_values(['weight_reference', 'optimistic_champion_exclusions',
+        'best_endpoint_regret_reduction'], ascending=[True, False, False])
+    joint.to_csv(OUT/'joint_subset_limits.csv', index=False)
+    joint[joint.all_city_full_missing_cells].to_csv(OUT/'joint_priority.csv', index=False)
+    pd.DataFrame(joint_endpoints).to_csv(OUT/'joint_endpoint_information.csv', index=False)
+    pd.DataFrame(thresholds).to_csv(OUT/'exclusion_thresholds.csv', index=False)
+    pd.DataFrame(switches).to_csv(OUT/'recommendation_thresholds.csv', index=False)
+    pd.DataFrame(lower_only).to_csv(OUT/'lower_only_information.csv', index=False)
+    pd.DataFrame([dict(city=cities[i], indicator=NAMES[j]) for i, j in zip(*np.where(missing))]).to_csv(OUT/'missing_cells.csv', index=False)
+    # Parent-requested source triage only. Count identities are not yet admitted.
+    previews = []
+    i, j = cities.index('Berlin'), NAMES.index('public_transport_density')
+    count_candidate = 100
+    population = float(frame.iloc[i].population)
+    density = count_candidate/population*100000
+    utility = count_candidate/(population/2000+count_candidate)
+    assert (lo[i, j], hi[i, j]) == (0, 1)
+    for reference, w in [('fixed', weights(.1)), ('equal', np.ones(10)/10)]:
+        a = lo.copy(); a[i, j] = utility
+        l0, u = score(lo, w), score(hi, w); l1 = score(a, w)
+        np.testing.assert_allclose(l1, independent_scores(a, w), atol=1e-12, rtol=0)
+        d0, d1 = interval_decision(l0, u), interval_decision(l1, u)
+        rr = independent_regrets(independent_scores(a, w), independent_scores(hi, w))
+        np.testing.assert_allclose(rr, d1['max_regret'], atol=1e-12, rtol=0)
+        rank0 = 1+sum(d0['max_regret'] < d0['max_regret'][i]-1e-12)
+        rank1 = 1+sum(rr < rr[i]-1e-12)
+        previews.append(dict(city='Berlin', indicator=NAMES[j], candidate_count=count_candidate,
+            population_original_csv=population, candidate_density_per_100000=density,
+            assumed_utility_lower=utility, retained_utility_upper=1,
+            weight_reference=reference, focal_lower_before=l0[i], focal_lower_after=l1[i],
+            focal_upper=u[i], focal_width_before=u[i]-l0[i], focal_width_after=u[i]-l1[i],
+            focal_width_reduction=l1[i]-l0[i], focal_decision_rank_before=rank0,
+            focal_decision_rank_after=rank1, focal_max_regret_before=d0['max_regret'][i],
+            focal_max_regret_after=rr[i], global_mean_width_before=float(np.mean(u-l0)),
+            global_mean_width_after=float(np.mean(u-l1)),
+            minimax_regret_before=d0['minimax_regret'], minimax_regret_after=d1['minimax_regret'],
+            minimax_choices_before=';'.join(cities[k] for k in d0['minimax_choices']),
+            minimax_choices_after=';'.join(cities[k] for k in d1['minimax_choices']),
+            possible_count_before=int(d0['possible_champion'].sum()),
+            possible_count_after=int(d1['possible_champion'].sum()),
+            necessary_count_after=int(d1['necessary_champion'].sum()),
+            source_admission_status='unvalidated_candidate_readonly_preassessment',
+            primary_admissions=0))
+        count += 1
+    pd.DataFrame(previews).to_csv(OUT/'candidate_lower_only_previews.csv', index=False)
+    for path, expected in hashes.items():
+        assert digest(ROOT/path) == expected, path
+    _, final_l, final_u = revised_bounds()
+    np.testing.assert_array_equal(original, np.stack([final_l, final_u]))
+    summary = dict(version='V129 acquisition diagnosis on frozen V127 user16',
+        fully_missing_cells=17, protected_nonfullymissing_cells=143, point_cells=112, partial_interval_cells=31,
+        baseline=baselines, independent_score_regret_champion_evaluations=count,
+        exact_resolution_VOI_cases=len(audit_cases), no_MC_or_random_missing_value_completion=True,
+        interpretation='Conditional deterministic information limits, not observed improvement, a source availability probability or a prediction',
+        guarantee_scope='Guarantees condition on complete exact utility identification of one cell. A partial inventory, teacher interval or Jensen mean does not automatically satisfy that condition.',
+        endpoint_scope='Closed utility endpoints can be limiting raw values; ceilings need not be physically attainable',
+        frozen_registry_git_ref='59edddf', frozen_registry_sha256=frozen_registry_sha,
+        source_sha256={p: h for p, h in hashes.items() if p != registry_path})
+    old_priority = pd.read_csv(ROOT/'results/task4_v126_priority/priority.csv')
+    comparison = pr.merge(old_priority, on=['weight_reference', 'city', 'indicator'],
+                          suffixes=('_V129', '_V126'), how='outer', indicator=True)
+    comparison.to_csv(OUT/'V126_comparison.csv', index=False)
+    summary['V126_frozen_comparison'] = dict(previous_missing=19, current_missing=17,
+        removed_fullymissing_keys=[['Prague', 'public_transport_density'], ['Vienna', 'public_transport_density']],
+        current_protected_partial_cells=31,
+        interpretation='Two formerly fully unknown transport cells now have protected V127 lower bounds; they are not re-resolved in this diagnosis.')
+    (OUT/'summary.json').write_text(json.dumps(summary, indent=2)+'\n')
+    (OUT/'audit.json').write_text(json.dumps(dict(status='pass',
+        exact_resolution_cases=audit_cases, independent_evaluations=count,
+        V127_baseline_matches_saved_ranks=True, all143_nonfullymissing_cells_preserved=True,
+        current_registry_original_CSV_and_all160_bounds_unchanged=True,
+        V127_snapshot_and_all_existing_V127_V128_artifacts_byte_unchanged=True,
+        protected_file_count=len(hashes), source_hashes_before_after_match=True,
+        live_registry_version_during_audit=live_registry['version'],
+        live_registry_sha256_before=hashes[registry_path], live_registry_sha256_after=digest(ROOT/registry_path),
+        live_registry_used_as_input=False, frozen_V127_registry_matches_snapshot=True,
+        candidate_lower_only_previews=len(previews), candidate_primary_admissions=0,
+        lower_only_scenarios=len(lower_only), exact_and_lower_only_not_conflated=True,
+        recommendation_crossings_independently_checked=len(switches),
+        joint_mixed_coordinate_checks=joint_audits,
+        value_of_information_optimizer_independently_recomputed=True), indent=2)+'\n')
+    print(json.dumps(summary, indent=2)); print(pr.to_string(index=False))
+
+
+if __name__ == '__main__':
+    main()

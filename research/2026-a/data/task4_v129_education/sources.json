@@ -1,0 +1,118 @@
+[
+  {
+    "file": "paris_teacher_metadata_original.json",
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-indicateurs_personnels_etablissements2d",
+    "final_url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-indicateurs_personnels_etablissements2d",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 12219,
+    "sha256": "595e3d24aebc4e0eb469e4986a3404e77d39f8da9033d68cb87d785d15d9a7b3",
+    "access_date": "2026-11-09",
+    "representation": "original HTTP response bytes"
+  },
+  {
+    "file": "paris_teacher_sample_original.json",
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-indicateurs_personnels_etablissements2d/records?where=code_departement%3D%22075%22&limit=3",
+    "final_url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-indicateurs_personnels_etablissements2d/records?where=code_departement%3D%22075%22&limit=3",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 33,
+    "sha256": "b40a5ce424590aa2d85084c9a423d90252d3ba8a22202193a62874533698a3a3",
+    "access_date": "2026-11-09",
+    "representation": "original HTTP response bytes"
+  },
+  {
+    "file": null,
+    "url": "https://gestiona.comunidad.madrid/desvan/AccionDatosTemaMunicipal.icm?codTema=1902423",
+    "status": "fetch_failed",
+    "error": "ConnectTimeout:HTTPSConnectionPool(host='gestiona.comunidad.madrid', port=443): Max retries exceeded with url: /desvan/AccionDatosTemaMunicipal.icm?codTema=1902423 (Caused by ConnectTimeoutError(<HTTPSConnection(host='gestiona.comunidad.madrid', port=443) at 0x714cc9e09090>, 'Connection to gestiona.comunidad.madrid timed out. (connect timeout=20)'))",
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "paris_teacher_henriiv_original.json",
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-indicateurs_personnels_etablissements2d/records?where=code_departement%3D%2275%22%20and%20search(nom_de_l_etablissement%2C%22HENRI%20IV%22)&limit=10",
+    "final_url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-indicateurs_personnels_etablissements2d/records?where=code_departement%3D%2275%22%20and%20search(nom_de_l_etablissement%2C%22HENRI%20IV%22)&limit=10",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 6693,
+    "sha256": "294380b1c2992e692f5ddb7dae382b1e63731624d13b3d88663386dc2fae1f08",
+    "access_date": "2026-11-09",
+    "representation": "original HTTP response bytes"
+  },
+  {
+    "file": "paris_gt_pupil_metadata_original.json",
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_gt-effectifs-niveau-sexe-lv",
+    "final_url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_gt-effectifs-niveau-sexe-lv",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 54313,
+    "sha256": "43bfedb069930ab97dc86750fde26f1fb00392ac9c49df4a7e189f348289b41b",
+    "access_date": "2026-11-09",
+    "representation": "original HTTP response bytes"
+  },
+  {
+    "file": "paris_pro_pupil_metadata_original.json",
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_pro-effectifs-niveau-sexe-lv",
+    "final_url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_pro-effectifs-niveau-sexe-lv",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 27521,
+    "sha256": "add1f420277c9052851e84178d8a5f3f00f1c994fb7e3e3b3e47410b9367acf9",
+    "access_date": "2026-11-09",
+    "representation": "original HTTP response bytes"
+  },
+  {
+    "file": null,
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_gt-effectifs-niveau-sexe-lv/records?where=numero_lycee%3D%220750654D%22%20and%20rentree_scolaire%3D%222025%22&select=rentree_scolaire%2Cnumero_lycee%2Ccommune%2Csecteur%2Cnombre_d_eleves%2C%222ndes_gt%22%2C%221eres_g%22%2Cterminales_g&limit=2",
+    "status": "fetch_failed",
+    "error": "HTTPError:400 Client Error: Bad Request for url: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_gt-effectifs-niveau-sexe-lv/records?where=numero_lycee%3D%220750654D%22%20and%20rentree_scolaire%3D%222025%22&select=rentree_scolaire%2Cnumero_lycee%2Ccommune%2Csecteur%2Cnombre_d_eleves%2C%222ndes_gt%22%2C%221eres_g%22%2Cterminales_g&limit=2",
+    "access_date": "2026-11-09"
+  },
+  {
+    "file": "paris_pupil_henriiv_original.json",
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_gt-effectifs-niveau-sexe-lv/records?where=numero_lycee%3D%220750654D%22&limit=10",
+    "final_url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_gt-effectifs-niveau-sexe-lv/records?where=numero_lycee%3D%220750654D%22&limit=10",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 37997,
+    "sha256": "baf6f8b393fcc4dfdc67583b6e3496a2f2479ee269d1ecaf08613610f4b6a080",
+    "access_date": "2026-11-09",
+    "representation": "original HTTP API response bytes"
+  },
+  {
+    "file": "paris_annuaire_henriiv_original.json",
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-annuaire-education/records?where=identifiant_de_l_etablissement%3D%220750654D%22&limit=1",
+    "final_url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-annuaire-education/records?where=identifiant_de_l_etablissement%3D%220750654D%22&limit=1",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 2187,
+    "sha256": "bf262b7c410ba74adc5272afbbe61930889f6892c68af7e466cbcb010eab0a6f",
+    "access_date": "2026-11-09",
+    "representation": "original HTTP API response bytes"
+  },
+  {
+    "file": "madrid_provider_capture.json",
+    "url": [
+      "https://gestiona.comunidad.madrid/desvan/AccionDatosTemaMunicipal.icm?codTema=1902423",
+      "https://datos.comunidad.madrid/dataset/spacm_estadisticas_profesores"
+    ],
+    "access_date": "2026-11-09",
+    "representation": "Exa web_fetch_exa provider extraction, not original HTTP publication bytes",
+    "bytes": 5334,
+    "sha256": "0da8dc0e5cd262d2c617b17b6285b6fdaff89837c97a0b0cef200cf86b8b9860"
+  },
+  {
+    "file": null,
+    "url": "https://datos.comunidad.madrid/api/3/action/package_show?id=spacm_estadisticas_profesores",
+    "access_date": "2026-11-09",
+    "status": "fetch_failed",
+    "error": "Initial original-HTTP request connect timeout25s; no response bytes recovered"
+  },
+  {
+    "file": null,
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-lycee_gt-effectifs-niveau-sexe-lv/records?where=numero_lycee%3D%220750654D%22%20and%20rentree_scolaire%3D%222025%22&limit=2",
+    "access_date": "2026-11-09",
+    "status": 400,
+    "error": "Original HTTP returned400 for second combined-filter attempt; error body not archived; subsequent UAI-only query succeeded"
+  }
+]

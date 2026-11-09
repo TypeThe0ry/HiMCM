@@ -1,0 +1,60 @@
+{
+  "access_date": "2026-11-09",
+  "primary_admissions": 0,
+  "maps_sources": [
+    {
+      "file": "amsterdam_trammetro.html",
+      "url": "https://maps.amsterdam.nl/trammetro/",
+      "sha256": "2b410d9baaa17a06eeb002c502720419e0f6b05495cce14d98219fd4d58db2b7",
+      "representation": "archived original HTTP bytes; original response headers were not saved by the interrupted acquisition task"
+    },
+    {
+      "file": "amsterdam_map_config.js",
+      "url": "https://maps.amsterdam.nl/_maps.plus/trammetro.js?17",
+      "sha256": "45e3c1a96b80d7b2f7ce5b73c36229d33b55d90d181748885bb1dbf09ebc955e",
+      "representation": "archived original HTTP bytes; original response headers were not saved by the interrupted acquisition task"
+    },
+    {
+      "file": "amsterdam_legend.csv",
+      "url": "https://maps.amsterdam.nl/open_geodata/legenda.php?LEGENDA=trammetro",
+      "sha256": "59ea1a0f24b4d26f6c25925e6565797512eed9fb53caa379f6f4f97890127a3f",
+      "representation": "archived original HTTP bytes; original response headers were not saved by the interrupted acquisition task"
+    }
+  ],
+  "GVB_live_recheck": {
+    "requested_url": "https://reisinfo.gvb.nl/reisinformatie/haltes-en-dienstregeling",
+    "retrieved_at_UTC": "2026-11-09T01:29:41.701405+00:00",
+    "status": 403,
+    "final_url": "https://reisinfo.gvb.nl/reisinformatie/haltes-en-dienstregeling",
+    "headers": {
+      "Date": "Mon, 09 Nov 2026 01:29:41 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "7992",
+      "Connection": "close",
+      "x-azure-ref": "20261109T012941Z-15b976d644dsv22lhC1SINcuzg000000173g0000000003vx",
+      "X-Cache": "CONFIG_NOCACHE"
+    },
+    "file": "amsterdam_gvb_response_original.html",
+    "sha256": "0ba37a34205996205fd9d8d0913e01968794d970c73e7656e1f9d0fe98f049ac",
+    "bytes": 7992,
+    "admitted": false,
+    "reason": "No independently scoped current city station-complex inventory established in this route."
+  },
+  "historical_atlas": {
+    "url": "https://openresearch.amsterdam/image/2025/2/12/atlas_van_stationskwartieren_def-42732341.pdf",
+    "catalog_url": "https://openresearch.amsterdam/nl/page/116610/stationskwartieren",
+    "url_relocated_independently": true,
+    "original_retrieval_headers_saved": false,
+    "local_original": "/data/datasets/HiMCM/source_archives/task4_v129_transport/amsterdam_atlas_2024.pdf",
+    "bytes": 99647617,
+    "sha256": "d62d836bfc0aa09ea91bcf207a480e2c4c4d193ef1fd2159b2f6e658c74f188d",
+    "included_in_Git": false,
+    "reference_label": "Definitief 12-12-2024; quantitative data mainly2018/2019 according to document disclaimer",
+    "derived_text_files": {
+      "amsterdam_atlas_page3.txt": "863b9a72205c2867c6511489b84570af93ec3c7417df2dbfe2d5973f95148a05",
+      "amsterdam_atlas_page1.txt": "3e88cea8dec2010b956adddc2a2bc8b03daacfad4df94b5944d616cbf700a8c1",
+      "amsterdam_atlas_page16.txt": "fbef95a9966354998278524725dabdcf3dbfc0183768c8afc45dd3c1f9e25a07"
+    },
+    "reason_not_admitted": "Historical urban-planning atlas and regional network diagram; not a verified current city station-complex inventory. No count admitted."
+  }
+}
