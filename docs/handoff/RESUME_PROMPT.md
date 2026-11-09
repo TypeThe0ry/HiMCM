@@ -1,6 +1,6 @@
 # 接手续做HiMCM：V136主数据／V137扩展，文档V148
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V150最新补数核查](V150_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V151编译入口核验](V151_RESEARCH_UPDATE.md)、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V150最新补数核查](V150_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -48,3 +48,7 @@ results/task4_v149_readiness含39项对照、字体表、数学脚标表与独�
 ## V150 Madrid师资候选
 
 1902424取得20列2005–2024，按原注映射2004/05–2023/24；最新市1008／区域1922。三层区域／分区／市镇重复同一总体，20年汇总相等，平铺末年会得5766，不能累计当教师。Número和Bachillerato计数未建立城市全上阶段教学FTE及学生匹配；区域Régimen-General FTE比12.6也不填，0准入。provider表示有原件／图表局限，完整捕获和代码在data/task4_v150_madrid_education，独立审核results/task4_v150_madrid_education。139科学／82稿件文件保持，V136/V137及V148PDF不变，V149对照仍适用；下一轮查新匹配分母，勿重复用1008或12.6试填。
+
+## V151独立根编译入口
+
+Overleaf根新增task4_review_entry.tex，经import导入现有自有V148。本地24页零警告，与同源新直接构建24页像素同；相比存档原PDF22页像素同，8／14页细微字距差异也见于新直接构建，全文逐页文字同。原PDF f4e501...保持，未覆盖。新代理PDF和验证在drafts/task4_v151_entry_review，研究审计results/task4_v151_shared_entry。原root仍为赛事选址模板+旧25城阶段稿，17个缺图引用，不要把它当当前16城主稿；无同名原件匹配但不猜外部来源。未改任何队友正文／ref／class或项目默认主文件设置，实际在线选择未知、无connected session。选择／最终整合仍需具体授权，不能把本地根构建当提交就绪。
