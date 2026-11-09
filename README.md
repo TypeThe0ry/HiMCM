@@ -12,15 +12,15 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展为V154，当前独立完整审阅稿为V173（科学基础保持V154）：112点／34部分／14全缺失，累计22项补充，当前自有稿26页（24主文参考+2AI，主文余量1页）。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展为V154，当前独立完整审阅稿为V176（科学基础保持V154）：112点／34部分／14全缺失，累计22项补充，当前自有稿26页（24主文参考+2AI，主文余量1页）。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
 
 V154的Milan历史库存补数使固定权重平均评分区间宽度16.08933→16.06144，实际收窄0.02790分，累计收窄14.62%。[模型入口](research/2026-a/design/task4_user_current_model.json)、[扩展入口](research/2026-a/design/task4_user_current_extensions.json)、[验证](research/2026-a/results/task4_v154_transition/README.md)。
 
-当前补数诊断：[V155：14缺失格与Milan残余信息](docs/handoff/V155_RESEARCH_UPDATE.md)。Dublin教师精确信息有较大固定权重保证收益，Zurich对冠军范围更有潜力；条件保证不等于预期取数收益。主分析仍V154，当前独立稿见V168入口。
+当前补数诊断：[V155：14缺失格与Milan残余信息](docs/handoff/V155_RESEARCH_UPDATE.md)。Dublin教师精确信息有较大固定权重保证收益，Zurich对冠军范围更有潜力；条件保证不等于预期取数收益。主分析仍V154，当前独立稿见V176注册入口。
 
-当前自有稿及核对：[V168：160格配图入稿与44项清单](docs/handoff/V168_RESEARCH_UPDATE.md)。26页=24主文参考+2暂定AI、49引用；原43项状态保持，原生页眉页脚沿用用户格式，新图明确Travel burden含通勤代理。V166/V164等保留为旧稿。真实控制号、完整AI记录与最终上传等状态保持未完成。V149仅旧稿参考。
+当前自有稿及核对：[V176：MC精度解释与47项清单](docs/handoff/V176_RESEARCH_UPDATE.md)。26页=24主文参考+2暂定AI、50引用；47项核对含13项实质待办，原生页眉页脚沿用用户格式，科学V154保持。用户已明确授权本次全部上传，先前公开push暂缓解除；[完整状态与下一步](docs/handoff/SESSION_STATUS_20261109.md)。
 
-历史候选：[V159独立审阅稿](docs/handoff/V159_RESEARCH_UPDATE.md)将历史联合公平性结果写入第6.4节，24页、47引用，原稿保持；该候选后由V160澄清定义；当前自有稿为V168。
+历史候选：[V159独立审阅稿](docs/handoff/V159_RESEARCH_UPDATE.md)将历史联合公平性结果写入第6.4节，24页、47引用，原稿保持；该候选后由V160澄清定义；当前自有稿为V176。
 
 新增公平性论据：[V158历史通学差距的联合最紧界](docs/handoff/V158_RESEARCH_UPDATE.md)。最低20%与整体均值差距下界由0.161651提高为0.226686，范围保持Istanbul2012条件样本；主分析保持V154。
 
@@ -273,3 +273,5 @@ V173仅压缩[自有数据搜集问题段](research/2026-a/results/task4_v173_co
 V174新增[当前稿／主16城独立复现入口](research/2026-a/results/task4_v174_reproducibility/README.md)：干净临时副本、缓存离线双入口、26页文本及72dpi灰度同、160格／32案例复算，论文仍V173。
 
 V175为[已有MC平均名次提供成对比较界](research/2026-a/results/task4_v175_mean_rank_comparisons/README.md)：4440项中4254方向明确、186未区分，基线κ100的Oslo／Zurich仍未区分；新Zurich年度FTE原件保留口径、未准入，论文仍V173。
+
+V176将[MC数值精度解释写入自有稿](research/2026-a/results/task4_v176_mc_paper/README.md)，26页／50引用／主文余量1，其他正文保持。本次用户已明确要求全部上传；长期自动迭代仍暂停。
