@@ -7,3 +7,5 @@
 Zurich／Dublin师资各两次定向检索后停止，0数值准入；CSO全国混合阶段说明不提供Dublin城市教师包络，旧ZurichSSP手册索引不是新原件。下一步优先原率出处与匹配分子／分母、确有新原件的城市师资路线，不重复上述单纯换年人口／混合比例直接入模。
 
 科学／扩展V154、论文V176保持，187科学与615已有论文文件保持；不重跑无变化MC／论文编译。0区间收窄，Zurich保守、16可能／0必要。只新增选定支持材料，分别核GitHub/Overleaf后普通提交与push，不force，goal active。
+
+同步实证：GitHub payload`b39ac55e52ecc4701212d83c450b84ea04620d3a`、Overleaf`db73f7162ce7d3e1bbab87618e319b683a9ef1ac`均由ls-remote确认，两个HEAD=origin/main且干净；私有仅6新增支持文件。见[回执](../../research/2026-a/results/task4_v177_source_reconciliation/sync.json)，随后提交该回执。
