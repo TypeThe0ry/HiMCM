@@ -20,6 +20,8 @@
 
 当前交付核对：[V156：绑定V154的40项清单](docs/handoff/V156_RESEARCH_UPDATE.md)。47引用与22补充链已核，数学小字单列；真实控制号、完整AI记录与最终上传等状态保持未完成。V149仅旧稿参考。
 
+新增公平性论据：[V158历史通学差距的联合最紧界](docs/handoff/V158_RESEARCH_UPDATE.md)。最低20%与整体均值差距下界由0.161651提高为0.226686，范围保持Istanbul2012条件样本；主分析与正文仍V154。
+
 最新来源核验：[V157苏黎世师资范围](docs/handoff/V157_RESEARCH_UPDATE.md)。六份官方原响应已核，尚未形成可准入教学FTE；0新增入模、0区间收窄，主分析与正文仍V154。
 
 历史支持：[V148年龄联合界](docs/handoff/V148_RESEARCH_UPDATE.md)、[V149旧PDF交付清单](docs/handoff/V149_RESEARCH_UPDATE.md)、[V150 Madrid候选](docs/handoff/V150_RESEARCH_UPDATE.md)、[V151旧根代理](docs/handoff/V151_RESEARCH_UPDATE.md)、[V152历史尾部证据候选](docs/handoff/V152_RESEARCH_UPDATE.md)、[V153 Milan来源审计（已纳入V154）](docs/handoff/V153_RESEARCH_UPDATE.md)。V149不自动覆盖新稿；真实控制号、完整AI史及最终整合／上传证据仍待完成。
