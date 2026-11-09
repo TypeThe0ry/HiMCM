@@ -1,6 +1,6 @@
 # 接手续做HiMCM：V136主数据／V137扩展，文档V148
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V151编译入口核验](V151_RESEARCH_UPDATE.md)、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V150最新补数核查](V150_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V152公平性补充](V152_RESEARCH_UPDATE.md)、[V151编译入口核验](V151_RESEARCH_UPDATE.md)、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V150最新补数核查](V150_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -52,3 +52,7 @@ results/task4_v149_readiness含39项对照、字体表、数学脚标表与独�
 ## V151独立根编译入口
 
 Overleaf根新增task4_review_entry.tex，经import导入现有自有V148。本地24页零警告，与同源新直接构建24页像素同；相比存档原PDF22页像素同，8／14页细微字距差异也见于新直接构建，全文逐页文字同。原PDF f4e501...保持，未覆盖。新代理PDF和验证在drafts/task4_v151_entry_review，研究审计results/task4_v151_shared_entry。原root仍为赛事选址模板+旧25城阶段稿，17个缺图引用，不要把它当当前16城主稿；无同名原件匹配但不猜外部来源。未改任何队友正文／ref／class或项目默认主文件设置，实际在线选择未知、无connected session。选择／最终整合仍需具体授权，不能把本地根构建当提交就绪。
+
+## V152 低端通学机会
+
+2012 Istanbul保留未知旅时／可选成员，最低20%效用闭包[0,0.153351917]，整体均值减尾均值保守下界0.161650665；414独立LP及单调性证明，见results/task4_v152_tail_access。仅历史条件经验集合，非当前年／总体CI／设施使用。0准入0主评分变化，139科学／88既有稿件入口保持；Overleaf独立候选材料，未插正文。goal active。

@@ -1,0 +1,66 @@
+{
+  "iteration": "V152",
+  "city": "Istanbul",
+  "year": 2012,
+  "population": "Recovered conditional current-high-school cohort ages 14–18, with optional membership retained",
+  "provider_representation": "Exa web_fetch_exa official CKAN projection; not original CSV bytes",
+  "utility": "exp(-minutes/30)",
+  "person_weight": "kisi_agirlik",
+  "known_members": 2463,
+  "observed_members": 1811,
+  "observed_weight": 499950,
+  "known_unknown_weight": 177066,
+  "optional_weight": 4487,
+  "maximum_denominator_weight": 681503,
+  "mean_utility_closure": [
+    0.3150025819693303,
+    0.5814034635501891
+  ],
+  "lower_tail_rows": [
+    {
+      "tail_fraction": 0.1,
+      "lower_closure": 0.0,
+      "upper_closure": 0.09575799588065272,
+      "observed_only_tail": 0.08138580815920737,
+      "target_weight": 68150.3,
+      "upper_boundary_minutes": 60.0,
+      "upper_boundary_fraction": 0.7675116248173244,
+      "certified_mean_minus_tail_lower": 0.21924458608867758
+    },
+    {
+      "tail_fraction": 0.2,
+      "lower_closure": 0.0,
+      "upper_closure": 0.15335191716558141,
+      "observed_only_tail": 0.1203887147072379,
+      "target_weight": 136300.6,
+      "upper_boundary_minutes": 40.0,
+      "upper_boundary_fraction": 0.5843290526707614,
+      "certified_mean_minus_tail_lower": 0.16165066480374887
+    },
+    {
+      "tail_fraction": 0.3,
+      "lower_closure": 0.0049370279993276285,
+      "upper_closure": 0.2150718056987465,
+      "observed_only_tail": 0.16344932413287103,
+      "target_weight": 204450.9,
+      "upper_boundary_minutes": 30.0,
+      "upper_boundary_fraction": 0.4094237294420855,
+      "certified_mean_minus_tail_lower": 0.09993077627058378
+    }
+  ],
+  "endpoint_rule": "All unknown utility at 0 or 1 and all optional mass included. Bounds are closure endpoints of the retained aggregate set, not necessarily finite positive trips.",
+  "proof": "Lower-tail mean is nondecreasing in every utility. Adding a point at 0 cannot increase it; adding a point at 1 cannot decrease it. Thus optional inclusion and unknown endpoint assignment give global lower/upper bounds. Fractional boundary weight is retained.",
+  "gap_rule": "mean lower minus tail upper is a conservative lower bound on mean-minus-tail in every completion; no joint sharpness claim.",
+  "strict_2025_tail_bounds": [
+    0,
+    1
+  ],
+  "sampling_confidence_interval": null,
+  "primary_data_admissions": 0,
+  "primary_score_interval_width_reduction": 0,
+  "source_sha256": {
+    "data/task4_v116_ibb/aggregate_results.json": "b85a746387cdcc7265545cee1ab1326d762b538d3ec362091e2b1195a0883f48"
+  },
+  "generator_sha256": "e53b699190d8efd9d3b98e81696d3f77de537adf60ad6093b8441c39ba8a3904",
+  "tail_csv_sha256": "820a8ef0105da4766fe7fa0a179766be3f7395f5015b2cc9d6ee05aedba6c604"
+}
