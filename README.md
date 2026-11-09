@@ -14,11 +14,12 @@
 
 **换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V137完整稿与启用记录](docs/handoff/V137_COMPLETE_REVIEW.md)。现行主数据为16城V136（112点／33部分／15全缺失），V137扩展与22页完整独立稿已统一；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V131（文档V134）及更早稿冻结。
 
-最新文档：[V140 AI记录与交付核对](docs/handoff/V140_RESEARCH_UPDATE.md)，局部AI选集66→125、30项当前交付核对完成；主文参考20页像素保持，AI另2页，科学V136/V137和21补数保持。最新[V138采集诊断及Warsaw原件恢复](docs/handoff/V138_RESEARCH_UPDATE.md)已按V136的15格更新，0新准入；旧V132诊断冻结。新[V141通学相关源核验](docs/handoff/V141_RESEARCH_UPDATE.md)已归档Tokyo日均时间及Vienna潜在学校可达性，0准入，当前模型与论文保持。
+最新文档：[V142：16城严格内点获胜情景验证](docs/handoff/V142_RESEARCH_UPDATE.md)。32组独立复算支持16城各自仍可能领先；112点／48不确定格与主科学V136/V137保持，Madrid／Helsinki师资0准入，宽度本轮缩小0。论文仍22页、零warning；10–12页改变，19页像素保持。局部125条AI记录仍非全队史。采集优先级按[V138当前15缺失格诊断](docs/handoff/V138_RESEARCH_UPDATE.md)，[V141旅时源](docs/handoff/V141_RESEARCH_UPDATE.md)保持0准入。
+
 
 | 想了解什么 | 入口 |
 | --- | --- |
-| 最新支持：V129诊断与补数候选 | [当前17缺失格采集价值、Berlin100站独立源审查、AI记录延长](docs/handoff/V129_RESEARCH_UPDATE.md) |
+| 历史支持：V129诊断与补数候选 | [当前17缺失格采集价值、Berlin100站独立源审查、AI记录延长](docs/handoff/V129_RESEARCH_UPDATE.md) |
 | 历史扩展：基于V127的V128 | [AHP偏好、未来/权重扰动、方法/历史案例及受控修订独立总审](research/2026-a/results/task4_v128_revision/README.md) |
 | 历史主模型：16城V127 | [Vienna/Prague两格公共地铁下界：平均区间收窄0.265%，Zurich保守推荐、仍16可能冠军](research/2026-a/results/task4_user_v127_revision/README.md) |
 | 历史扩展：V122/V121 | [AHP偏好、未来压力与扰动、同国案例、公平性和成长阶段证据](research/2026-a/results/task4_v122_revision/README.md) |

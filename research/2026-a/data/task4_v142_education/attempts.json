@@ -1,0 +1,23 @@
+[
+  {
+    "city": "Madrid",
+    "url": "https://gestiona.comunidad.madrid/desvan/AccionDatosTemaMunicipal.icm?codTema=1902424",
+    "outcome": "original_connect_timeout_10_seconds",
+    "original_body_received": false,
+    "provider_discovery": "Official web-tool representation shows municipal Bachillerato-teacher series, unit N\u00famero; no FTE identification or ratio derived"
+  },
+  {
+    "city": "Madrid",
+    "url": "https://datos.comunidad.madrid/api/3/action/package_search?q=profesores&rows=5",
+    "outcome": "original_connect_timeout_10_seconds",
+    "original_body_received": false,
+    "provider_discovery": "Official teacher catalogue located at https://datos.comunidad.madrid/dataset/spacm_estadisticas_profesores; actual resource data not acquired"
+  },
+  {
+    "city": "Helsinki",
+    "url": "https://stat.fi/meta/til/ope.html",
+    "outcome": "original_metadata_retrieved",
+    "original_body_received": true,
+    "scope": "Metadata includes workplace municipality and administrative public/private sources; excludes secondary part-time hourly teachers/visiting lecturers. No matching upper-secondary teaching-FTE/pupil city aggregate obtained."
+  }
+]
