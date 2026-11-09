@@ -6,7 +6,7 @@
 
 以既有指标和真实数据持续改进论文的数据搜集、基线评价、模型修订与扩展、验证、图表、同国对比和比赛交付材料。论文应清楚说明所解决的问题、证据支持的贡献和结果的实际含义。所有新增与修改文字必须使用[反防御性写作技能](../guidelines/ANTI_DEFENSIVE_WRITING.md)。
 
-当前证据是16城×10指标V136（112点／33部分／15全缺失）；V137扩展与完整稿已统一，文档修订V143。主注册表为`research/2026-a/design/task4_user_current_model.json`。Zurich为基准保守推荐、16城仍可能冠军，教育优先情景改推荐Oslo。最新支持见[V143来源信息依赖](V143_RESEARCH_UPDATE.md)，启用记录见[V137完整稿](V137_COMPLETE_REVIEW.md)。
+当前证据是16城×10指标V136（112点／33部分／15全缺失）；V137扩展与完整稿已统一，文档修订V144。主注册表为`research/2026-a/design/task4_user_current_model.json`。Zurich为基准保守推荐、16城仍可能冠军，教育优先情景改推荐Oslo。最新支持见[V144具体原源与单点依赖](V144_RESEARCH_UPDATE.md)，启用记录见[V137完整稿](V137_COMPLETE_REVIEW.md)。
 
 GitHub保存研究资料，Overleaf保存论文和选定资产。当前独立审阅稿为`drafts/task4_v137_paper.tex/.pdf`，23页（21主文参考+2暂定AI）。旧V131及更早稿冻结。共享主稿原有`framework.png`缺失；队友正文依具体授权处理。
 
@@ -112,3 +112,7 @@ TfL原始1751对象区分站／站台／入口后，筛严格Zone1站级记录�
 ## V143：来源信息政策敏感性
 
 5组×2权重、320得分界／160城市情景独立标量复算通过。撤回28非ok点值后推荐Berlin／Paris，撤回64个2026点值仍Zurich但区间宽16.09→48.43；并集95格时均Singapore，全部16可能。原数据和现行推荐保持，清楚呈现条件依赖。自有稿5.5／表／摘要结论新闻同步，23页零warning／全页查看，139科学／39资产章节／74历史稿保护通过。下一轮核实具体高影响原源及匹配教师／通学源，goal active，见[V143交接](V143_RESEARCH_UPDATE.md)。
+
+## V144：具体原源与单点撤回
+
+CBS暂定单年／五年表、Zurich PKS行为单位的原件均取得并独立核验；不替换原点值。只将Zurich凶杀率点改为未知时推荐Singapore／Oslo，其他159格保持；Amsterdam单点撤回仍Zurich。128城市情景／256得分界通过；论文来源章、5.5、摘要结论新闻统一，仍23页／零warning／全页实看，139科学／42资产章节／74历史稿保护通过。共享main按要求尝试仍缺原framework.png。下一轮优先追溯具体率分母及匹配源，goal active，见[V144交接](V144_RESEARCH_UPDATE.md)。

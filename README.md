@@ -12,9 +12,9 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V137完整稿与启用记录](docs/handoff/V137_COMPLETE_REVIEW.md)。现行主数据为16城V136（112点／33部分／15全缺失），V137扩展与完整独立稿已统一（文档V143，23页）；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V131（文档V134）及更早稿冻结。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V137完整稿与启用记录](docs/handoff/V137_COMPLETE_REVIEW.md)。现行主数据为16城V136（112点／33部分／15全缺失），V137扩展与完整独立稿已统一（文档V144，23页）；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V131（文档V134）及更早稿冻结。
 
-最新文档：[V143：年份／来源信息依赖](docs/handoff/V143_RESEARCH_UPDATE.md)。新增5组×2权重的受控点值撤回：非ok28点改为未知后基准Berlin／等权Paris，撤回2026点值64格仍Zurich但平均区间显著变宽。原CSV与现行V136/V137保持，16可能／0必要冠军；不把标签当错误概率。自有稿5.5／表／摘要结论新闻已统一，23页零warning，全页检查完成。[V142全部16城内点见证](docs/handoff/V142_RESEARCH_UPDATE.md)、[V138采集优先级](docs/handoff/V138_RESEARCH_UPDATE.md)仍可复核。125条局部AI记录仍非全队史。
+最新文档：[V144：原始来源与单点信息依赖](docs/handoff/V144_RESEARCH_UPDATE.md)。取得CBS原单年／五年表及Zurich PKS原报告，明确受害者、行为数和人口率的区别。只把Zurich凶杀率点视为未知时推荐Singapore／Oslo，其余159格保持；现行原CSV与V136/V137仍保持，Zurich为接受原点值时的保守推荐，16可能／0必要冠军。自有稿来源章／5.5／摘要结论新闻统一，23页零warning／全页检查；[V143批量来源政策](docs/handoff/V143_RESEARCH_UPDATE.md)与[V142内点见证](docs/handoff/V142_RESEARCH_UPDATE.md)保持。共享main仍因原framework.png缺失失败，独立稿不是最终提交件。
 
 
 | 想了解什么 | 入口 |

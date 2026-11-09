@@ -13,7 +13,7 @@ Before drafting or editing manuscript text, abstracts, conclusions, press releas
 
 ## Priority: Overleaf workspace
 
-Current scientific entry: **user16 V136**, with V137 controlled extensions and the independent full review `HiMCM-Overleaf/drafts/task4_v137_paper.tex/.pdf` (documentation revision V143). The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
+Current scientific entry: **user16 V136**, with V137 controlled extensions and the independent full review `HiMCM-Overleaf/drafts/task4_v137_paper.tex/.pdf` (documentation revision V144). The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
 
 The user explicitly made the Overleaf workspace the first priority on 2026-11-07.
 
