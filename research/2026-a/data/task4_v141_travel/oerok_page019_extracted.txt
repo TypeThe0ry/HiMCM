@@ -1,0 +1,66 @@
+                                                                                      METHODIK
+
+
+
+
+1.3   Erreichbarkeitsparameter                         ist ein schulfreier Werktag in den Herbstferien
+                                                       (31.10.2023). Durch die Wahl der beiden Stichtage
+Das vorliegende Modell dient zur Ermittlung der        wird der Vergleich der ÖV-Versorgung zwischen
+Erreichbarkeit von jeder Rasterzelle zu den im         einem regulären Werktag und einem schulfreien
+Vorfeld definierten Zielen (Zentren, Schulen).         Werktag mit reduziertem ÖV-Angebot möglich.
+Dabei wird die Reisezeit von der Rasterzelle zum       Anzumerken ist, dass auf der Koralmbahnstrecke
+nächstgelegenen Ziel für die beiden Verkehrs­          zwischen Klagenfurt und Wolfsberg vom 3. April
+modi ­„Motorisierter Individualverkehr“ (MIV)          bis zum 9. Dezember 2023 aufgrund von Bauar-
+und ­„Öffentlicher Verkehr“ (ÖV) errechnet.            beiten ein Schienenersatzverkehr mit Bussen ein-
+                                                       gerichtet war und somit in den Zeitraum der Er-
+1.3.1 Motorisierter Individualverkehr                  reichbarkeitsanalyse 2023/24 gefallen ist.
+
+Das Routing zur Ermittlung der MIV-Erreichbarkeit      Die Ermittlung der ÖV-Verbindungen wird mit
+erfolgt auf dem GIP-Netzgraph (Stand April 2023),      Hilfe des OpenTripPlanner 2 (https://docs.open
+unter Verwendung von Abbiegerelationen (turn           tripplanner.org) durchgeführt. Der OpenTrip­
+uses) und Einbahnen, wie sie im GIP-Graphen zur        Planner ist ein Open Source Tool, welches für
+Verfügung stehen. Für das niederrangige Straßen-       die multimodale Routenberechnung verwendet
+netz wurden die in der GIP aufgetragenen Durch-        werden kann. In der Anwendung für die Erreich-
+schnittsgeschwindigkeiten gemäß GIP-Standard           barkeitsanalyse werden nur die Modi „Öffentli-
+herangezogen. Auf dem höherrangigen Netz (func-        cher Verkehr“ und „Fußweg“ genutzt. Als Daten-
+tional road class FRC 0 bis 4) wurden Durchschnitts-   grundlage für diese Berechnungen werden die
+geschwindigkeiten auf Basis von FCD-Daten für den      Fahrpläne im GTFS-Format sowie das Fußwe-
+Morgenverkehr an einem Werktag zwischen 7:00           genetz der GIP (Graphen Integration Plattform)
+und 9:00 Uhr verwendet. In Ergänzung zum GIP-          als routing­fähiges OSM-Netz verwendet. Das
+Netz wurden zur Anbindung der im benachbarten          Fußwe­gerouting erfolgt unter Ausschluss der
+Ausland gelegenen Zentren Teile des ausländischen      von FußgängerInnen nicht benutzbaren Teile des
+Straßennetzwerkes vom Netzwerkgraph des Ver-           Netzwerks – wie zum Beispiel Eisenbahnlinien,
+kehrsmodells Österreich übernommen. Die über           Autobahnen, Schnellstraßen und dergleichen. Im
+das Routing ermittelte reine Fahrzeit des MIV wurde    Gleichklang mit der Erreichbarkeitsanalyse 2018
+in jenen Zentren, die gemäß der Urban-Rural-Typo­      wird eine maximal zulässige Länge des ersten und
+logie der Statistik Austria in einer „hochverdich­     dritten Teils/Fußwege von 1.250 Metern Realdis-
+teten Kern­zone“ liegen, noch mit einer Parkplatz-     tanz auf dem Netzwerk festgelegt.
+suchzeit von fünf Minuten beaufschlagt. Die
+Park­platzsuchzeit wurde auch auf die im benach-       Für die Berechnung der Erreichbarkeiten von
+barten Ausland gelegenen Zentren angewandt.            ­Zentren und Schulen werden als Startpunkte die
+                                                        Koordinaten der Rasterzellen aller ­bewohnten
+Zur Berechnung und Ermittlung der Pendelver-            Rasterzellen in Österreich verwendet (Mittel-
+kehre wurden die gleichen Grundlagen verwendet.         punkt). Die fünf potentiellen nächsten Ziele je
+Einziger Unterschied bei der Berechnung ist, dass       Kategorie werden als Zielpunkte ermittelt. Diese
+die Reisezeiten die reine Fahrzeit (ohne Parksuch-      Daten dienen als Grundlage für den Router.
+zeit) widerspiegeln. Dies beruht auf der Annahme,
+dass bei der Arbeitsstätte eine gute Park-Möglich-     Im Fall der Pendelverbindungen sind sowohl
+keit besteht bzw. ein Parkplatz verfügbar ist.         Wohnort als auch Arbeitsort als 250 x 250-Meter-
+                                                       Rasterzelle bekannt und es wird der Mittelpunkt
+1.3.2 Öffentlicher Verkehr                             der Rasterzelle verwendet.
+
+Das Verkehrsangebot des Öffentlichen Verkehrs          Dem Router werden die Start- und Zielkoordina-
+wurde aus Fahrplänen von allen ÖV-Anbietern            ten übergeben und in einem ersten Schritt alle
+aus Österreich mit Stand 31. Oktober 2023 er-          Verbindungen zwischen der vorgegebenen Ab-
+mittelt. Die Daten werden im GTFS-Format von           fahrts- und Ankunftszeit berechnet. Diese Ver-
+„Mobilitätsverbünde Österreich“ (https://data.         bindungen bestehen je nach Start und Ziel aus
+mobilitaets­verbuende.at/de) frei zur Verfügung        Routen, die sich aus unterschiedlichen Kombi-
+gestellt. Aus diesen Fahrplänen wurde eine mitt-       nationen von Fußwegen (auch direkter Fußweg),
+lere gewichtete Reisezeit zum nächstgelegenen          Haltestellen und Öffentlichen Verkehrsmitteln
+Zentrum, ­Schule oder Arbeitsort (Pendelmatrix)        zusammensetzen. In einem zweiten Schritt wer-
+für zwei ­Stichtage berechnet. Der erste Stichtag      den die zumutbaren Verbindungen gefiltert. Eine
+ist ein Werktag (24.10.2023), der zweite Stichtag      zumutbare Verbindung wird wie folgt definiert:
+
+
+
+                                                                                                     17

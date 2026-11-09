@@ -1,0 +1,66 @@
+                                                                                     METHODIK
+
+
+
+
+zeit mit der Wartezeit zwischen den Umsteigehal-     Datenstand 2021 (https://www.statistik.at/statis
+testellen zusammen. Es wird angenommen, dass         tiken/arbeitsmarkt/erwerbstaetigkeit/arbeitsort-
+die Personen vom Startpunkt so losgehen, dass        und-pendeln; https://www.statistik.at/services/
+keine (Start-)Wartezeit bei der ersten Haltestelle   tools/services/regionales/regionalstatistisches-
+entsteht.                                            datenangebot). In diesem Datensatz sind der
+                                                     Wohnort und der Arbeitsort als 250 x 250-Meter-
+ÖV – Wege/Routen                                     Rasterzelle verfügbar.
+
+Der Router berechnet für jede Verbindung zwi-        Die 250 x 250-Meter-Rasterzellen erlauben keine
+schen Quell- und Zielort je nach Verfügbarkeit des   100-prozentige Aggregation analog der Gemein-
+Öffentlichen Verkehrs (Fahrplan) unterschied­        de- bzw. Bezirksgrenzen. Diese Unschärfen wur-
+liche potentielle ÖV-Wege, welche sich aus Fuß-      den zugunsten der besseren Vergleichbarkeit mit
+wegen und Fahrten mit dem ÖV zusammenset-            den von Statistik Austria publizierten Bezirks­
+zen. Eine Route besteht aus einem Fußweg vom         werten abgeglichen.
+Startpunkt zur Haltestelle, Fahrt mit einem ÖV,
+eventuelle Umstiege, Gehzeiten zwischen Halte-       Analog zu den Erreichbarkeitsberechnungen
+stellen oder Wartezeiten auf die Anschlussverbin-    für die überregionalen und regionalen Zentren
+dung, eine weitere Fahrzeit mit dem ÖV und ei-       ­w urde von AustriaTech der kürzeste Weg im öf-
+nem Fußweg zum Zielpunkt. Der Router ermittelt        fentlichen Verkehr für jede Relation geroutet.
+alle möglichen und grundsätzlichen sinnvollen         ­L ediglich für die Pendler:innen ins Ausland ste-
+Routen zwischen Startpunkt und Zielpunkt.              hen keine Arbeitsortinformationen zur Verfü-
+                                                       gung und entsprechend fehlen diese Einträge im
+ Zur Erstellung der Datengrundlagen für die Er-        ­R asterdatensatz. Sie wurden in der Analyse des
+ reichbarkeitsanalysen werden diese nach den            Pendelverkehrs auf Bezirksebene bzw. Bundes-
+ oben beschriebenen Parametern gefiltert. ÖV-           landebene ergänzt.
+ Wege, welche den Parametern nicht entsprechen,
+ werden in der Analyse somit nicht beachtet. Rou-    Für die Darstellung der Reisezeiten im MIV wur-
+ ten, welche auf Basis der vorgegebenen Parame-      den die Originaldaten von Statistik Austria ver-
+ ter zumutbar sind, werden in einem Folgeschritt     wendet, da diese das MIV-Routing mit den Ori-
+ zu gewichteten Mittelwerten (Reisezeit, Distanz)    ginaladressen durchgeführt hat, während die
+­zusammengefasst.                                    Daten, die für das ÖV-Routing zur Verfügung
+                                                     standen, auf Basis der 250 x 250-Meter-Raster ge-
+Multimodale Wege                                     neralisiert sind.
+
+Aufgrund der Anforderungen an die Grunddaten
+und die Analyse – wie z.B. Vergleichbarkeit der
+grundsätzlichen Methodik zu den früheren Ana-
+lysen – wurde auch für die ­Erreichbarkeitsanalyse
+2024 der gleiche Ansatz verwendet. Im Bereich
+des MIV wird somit der gesamte Weg mit dem
+Pkw zurückgelegt. Im Hinblick auf den ÖV beste-
+hen Wege aus einer Kombination von Fuß- und
+ÖV-Wegen. Somit werden multimodale Kombi-
+nationen – wie z.B. Park&Ride, Bike&Ride etc. –
+in dieser Berechnung und Analyse beabsichtigt
+nicht berücksichtigt. Es könnte jedoch ­zukünftig,
+aufgrund der immer größeren Verfügbarkeit an
+­Daten und ­Modellen, angedacht werden, be-
+ stimmte Verkehrsmittel-Kombinationen zu be-
+ rücksichtigen und die Berechnungen und Ana­ly­
+ sen zu erweitern.
+
+1.4   Pendelverkehr
+
+Als Grundlagen für die Berechnungen und Aus-
+wertungen zu Pendler:innen dienten die Daten
+der Pendelmatrix der Statistik Austria mit dem
+
+
+
+                                                                                                    19

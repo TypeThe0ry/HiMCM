@@ -1,0 +1,47 @@
+[
+  {
+    "city": "Tokyo",
+    "indicator": "travel",
+    "status": "not_admitted",
+    "source_yearbook_edition": 2024,
+    "source_observation_year": 2021,
+    "source_geography_label": "Tokyo-to",
+    "source_age_band": "15-19",
+    "combined_work_and_school_daily_minutes": 62,
+    "user_population": 9983365,
+    "user_population_year": 2026,
+    "user_geography_label": "city proper (official)",
+    "geographic_alignment_established": false,
+    "reason": [
+      "Daily average over a full week combines work and school trips, not a one-way high-school trip duration",
+      "Age15-19 does not identify exact14-18 high-school students; estimated530thousand is age-group population, not an enrolment or traveller denominator",
+      "Tokyo-to geography is not assumed compatible with the supplied city-proper entry",
+      "2024 yearbook label is not the2021 observation year"
+    ],
+    "no_halving_or_raw_utility_conversion": true
+  },
+  {
+    "city": "Vienna",
+    "indicator": "travel",
+    "status": "not_admitted",
+    "report_publication_year": 2024,
+    "model_transport_year": 2023,
+    "population_grid_year": 2023,
+    "school_destination_inventory_year": "2021/2022",
+    "source_measure": "modelled travel to a nearest destination in the relevant ISCED education category, not observed journeys to actually attended schools",
+    "table30_ISCED3_weighted_mean_minutes": 8.2,
+    "table31_ISCED3_reported_percentages": {
+      "walkable_class": 62.85,
+      "reachable_30min_class": 36.96,
+      "beyond_30min_class": 0.05,
+      "not_served_class": 0.13
+    },
+    "percentages_sum": 99.99,
+    "reason": [
+      "No identified actual attended-school destination or actual high-school-trip duration distribution",
+      "Route model uses grid centroids, timetable/mode assumptions and nearest destinations; individual admissions, fees and access are not established",
+      "Rounded class percentages sum99.99 and are not repaired to exact probabilities"
+    ],
+    "no_Jensen_actual_commute_bound_derived": true
+  }
+]
