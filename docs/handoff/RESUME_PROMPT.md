@@ -1,6 +1,6 @@
 # 接手续做HiMCM：V136主数据／V137扩展，文档V146
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md及[V146当前交接](V146_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V147新源核查](V147_RESEARCH_UPDATE.md)及[V146当前稿件交接](V146_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -32,3 +32,7 @@ GitHub仅研究，Overleaf仅稿件和选定资产；分别fetch并审确切diff
 实际控制号PENDING，旧18213/18214冲突不猜；全队AI史、最终整合具体授权、提交回执仍待真实资料。125条根会话局部选集及03:17UTC/2026-11-09固定截止保持，不能称完整史；私有原文不入仓库，不把后续消息塞进旧capture。
 
 下一轮只尝试真正新的匹配教师FTE／高中实际单程旅时／原率来源，或当前整稿交付要求核对；不重复V145已查8目录项和已确认的抑制／单位不匹配路线。Dublin／Zurich教师仍有高信息价值，但旧地区汇总／岗位不填；Warsaw广义学校、Tokyo全周工作学校合计、Vienna潜在最近学校路由均不替代高中实际旅时。V141完整47MB ÖROK原PDF外置，新clone需另取；V144完整原件已在Git。保留原表，失败跳过，持续按可验证改进推进，不结束长期goal。
+
+## V147新源核查
+
+新取Zurich 2025/2026学校统计及Helsinki 2025年鉴完整PDF和出版说明，0新准入。州公立教学FTE1771.6与部门雇员FTE2227不同；Helsinki学生最新行仍2024，相邻成人课时不作师资。完整原件／指定页渲染／提取器在data/task4_v147_education_refresh；独立词坐标审计scripts/audit_task4_v147_education.py核139科学／82稿件文件。Overleaf仅新增drafts/task4_v147_source_review支持回执，论文仍V146、原PDF字节保持；不重复这两页试填，下一轮需要新的匹配分母路线。

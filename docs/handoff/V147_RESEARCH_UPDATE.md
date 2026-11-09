@@ -1,0 +1,11 @@
+# V147：核查新版教育统计，保持匹配准入标准
+
+新取三份官方HTTP200响应：Zurich 2025/2026学校统计完整PDF、2026年7月出版说明HTML、Helsinki 2025统计年鉴完整PDF。原件共约10.8MB，自包含保存在data/task4_v147_education_refresh；不是旧搜索结果或provider提取代替原件。两表页已渲染实看。
+
+Zurich PDF15／印刷28–29页的2025州公立Mittelschule教学聘任2812、教学FTE1771.6，与右表部门雇员年度FTE2227分开；原表排除校长，分母不是城市全provider高中教学FTE。Helsinki PDF158／印刷157页的7.14最新行为2024年普通高中18661／职业教育47520，相邻7.15仍是成人教育课时到2021年。没有把出版年、部门雇员工作量或成人课时冒充匹配高中师资。0准入、区间改善0；不声称全世界没有适配源。
+
+独立审计scripts/audit_task4_v147_education.py从PDF词坐标按行及左右半页取数，与layout文本提取器分开；聘任×四舍五入比例与教学FTE相容，部门表另验。139科学文件、82现行／历史稿文件（含7自有章节和V146 PDF）哈希保护通过，原CSV固定SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c。主仍V136 16×10／112点33部分15全缺失、21补充；扩展V137，论文文档V146，24页。Zurich保守／16可能／0必要及教育优先Oslo保持。两目标师资格仍[0,1]，原排名按冻结哈希核验，无需重跑MC。
+
+本轮使用指定反防御性写作技能写来源说明。Overleaf只新增自有drafts/task4_v147_source_review中的精简scope／verification／retrieval／README；不改论文、数值、团队main／ref／class、旧资产或项目设置，不新制PDF、不假称重编译共享main。当前无connected session，只使用fetch后的Git镜像；共享main缺framework.png是既有未解决状态。完整科学／稿件保护回执在results/task4_v147_education/verification.json，私有正常push及本地研究commit回执sync.json。公开GitHub push继续待既有用户选择，不改可见性。
+
+长期goal active。下一轮查真正不同的学校级／城市级教学FTE分配或其他高价值缺失项；不重复V124旧序列或本轮已确认不匹配的新版合计。实际控制号、完整AI历史、共享最终稿具体授权整合及正式提交回执仍需真实资料。新版参考资料可用于后续数据章节修订，但不能因本轮找到数字就修改当前排名。
