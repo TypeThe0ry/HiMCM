@@ -18,6 +18,8 @@
 
 当前补数诊断：[V155：14缺失格与Milan残余信息](docs/handoff/V155_RESEARCH_UPDATE.md)。Dublin教师精确信息有较大固定权重保证收益，Zurich对冠军范围更有潜力；条件保证不等于预期取数收益。主与正文仍V154。
 
+当前交付核对：[V156：绑定V154的40项清单](docs/handoff/V156_RESEARCH_UPDATE.md)。47引用与22补充链已核，数学小字单列；真实控制号、完整AI记录与最终上传等状态保持未完成。V149仅旧稿参考。
+
 历史支持：[V148年龄联合界](docs/handoff/V148_RESEARCH_UPDATE.md)、[V149旧PDF交付清单](docs/handoff/V149_RESEARCH_UPDATE.md)、[V150 Madrid候选](docs/handoff/V150_RESEARCH_UPDATE.md)、[V151旧根代理](docs/handoff/V151_RESEARCH_UPDATE.md)、[V152历史尾部证据候选](docs/handoff/V152_RESEARCH_UPDATE.md)、[V153 Milan来源审计（已纳入V154）](docs/handoff/V153_RESEARCH_UPDATE.md)。V149不自动覆盖新稿；真实控制号、完整AI史及最终整合／上传证据仍待完成。
 
 以下索引保留历史版本；计算当前结果请先用V154注册表，勿从历史链接的“当前”字样推断版本。
