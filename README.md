@@ -14,6 +14,8 @@
 
 **换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V131完整稿与启用记录](docs/handoff/V131_COMPLETE_REVIEW.md)。现行主数据为16城V130（112点／32部分／16全缺失），V131扩展与20页完整独立稿已统一；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V128及更早稿冻结。
 
+最新支持：[V132现行16缺失格诊断与Warsaw来源范围](docs/handoff/V132_RESEARCH_UPDATE.md)。本轮0准入，现行模型和20页完整稿保持。
+
 | 想了解什么 | 入口 |
 | --- | --- |
 | 最新支持：V129诊断与补数候选 | [当前17缺失格采集价值、Berlin100站独立源审查、AI记录延长](docs/handoff/V129_RESEARCH_UPDATE.md) |
