@@ -1,6 +1,6 @@
 # 接手续做 HiMCM：当前权威状态
 
-长期goal **active**：持续优化论文及论文材料。所有新增／修改叙述必须使用已安装的 [anti-defensive-writing-Skill](../guidelines/ANTI_DEFENSIVE_WRITING.md)。先读 [AGENTS.md](../../AGENTS.md)、[GUIDELINES.md](../../GUIDELINES.md)、[长期计划](LONGTERM_GOAL.md)和[V129交接](V129_RESEARCH_UPDATE.md)。V128完整稿与主V127继续冻结不变。
+长期goal **active**：持续优化论文及论文材料。所有新增／修改叙述必须使用已安装的 [anti-defensive-writing-Skill](../guidelines/ANTI_DEFENSIVE_WRITING.md)。先读 [AGENTS.md](../../AGENTS.md)、[GUIDELINES.md](../../GUIDELINES.md)、[长期计划](LONGTERM_GOAL.md)和[V130交接](V130_RESEARCH_UPDATE.md)。V128完整稿与主V127继续冻结不变。
 
 ## 当前入口与结论
 
@@ -61,6 +61,6 @@ GitHub保存研究材料；Overleaf保存论文、LaTeX与选定资产。保留�
 
 ## 下一轮
 
-V129已按V127的17个全缺失格更新诊断；旧V126 priority仍固定V124的19格。优先把已通过独立源审查的Berlin100站候选做成下一套受控准入：保留原CSV和143个已有信息格，上界1；做单独准入／撤回、主模型MC及所有偏好／未来／方法扩展，再统一新完整稿后激活。候选包尚未被正式准入表冻结，采用时固定源哈希；不改旧V127/V128产物。继续真正新匹配的Dublin／Zurich教师分母与Warsaw真实高中通学；V129 Paris／Madrid师资和Amsterdam交通均0准入，不重复已失败口径。并行agent因服务配额终止，父级已接手最终核验；重用前先确认工具实际可用，不把旧运行意图当live进程。控制号、完整团队AI史、队友稿具体整合授权及发布选择需要真实信息；单轮完成不把长期goal标完成。
+V130 Berlin单格正式受控结果已审计并冻结，尚未激活；见V130交接及`design/task4_user_v130_snapshot.json`。优先以该快照迁移V131全部偏好／未来／权重与shock MC／方法和受控修订诊断，再统一完整独立稿、摘要表图与新闻。通过数值／编译／渲染检查后，更新现行注册表与扩展入口；目前live仍V127、全稿仍V128，不能提前更名。V130静态名次与冠军集合不变，fixed平均宽度收窄0.094466%，112/32/16；143个已有信息格与原CSV保持。V130新源包已被准入表固定哈希，不覆盖旧包。继续新匹配教师／通学证据，失败跳过；控制号、全队AI史、队友整合与发布选择仍待真实信息。
 
 历史恢复过程与旧版本结果见V120–V126各交接文件；本页当前入口优先，旧“当时最新”状态不覆盖本页。

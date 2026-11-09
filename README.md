@@ -12,7 +12,7 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [恢复 prompt 与当前进度](docs/handoff/RESUME_PROMPT.md)、[V129采集诊断与候选更新](docs/handoff/V129_RESEARCH_UPDATE.md)、[V128研究与完整稿](docs/handoff/V128_RESEARCH_UPDATE.md)。当前主数据为16城V127（112点／31部分／17全缺失），V128扩展及完整独立稿统一该证据；V129新增Berlin候选和支持材料尚未改变主准入。原CSV、权重、区间规则和旧稿保留。
+**换开发环境／交给下一个 AI：** [恢复 prompt 与当前进度](docs/handoff/RESUME_PROMPT.md)、[V130受控补数（待统一）](docs/handoff/V130_RESEARCH_UPDATE.md)、[V129采集诊断](docs/handoff/V129_RESEARCH_UPDATE.md)、[V128研究与完整稿](docs/handoff/V128_RESEARCH_UPDATE.md)。当前主数据为16城V127（112点／31部分／17全缺失），V128扩展及完整独立稿统一该证据；V130 Berlin单格受控补数已审计，尚未推进现行注册表，待扩展／全稿统一。原CSV、权重、区间规则和旧稿保留。
 
 | 想了解什么 | 入口 |
 | --- | --- |

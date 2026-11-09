@@ -1,0 +1,89 @@
+{
+  "version": "V130",
+  "baseline": "V127 user16",
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "source_policy": "Preserve all143 prior informative cells and all original inputs; only Berlin transport lower bound changes.",
+  "scope": "2026 static public metro inventory subset with supplied2025 population; no individual-access or live-service claim.",
+  "observations": [
+    {
+      "city": "Berlin",
+      "indicator": "public_transport_density",
+      "raw_count": 100,
+      "population": 3700577,
+      "population_year": 2025,
+      "sourceyear": 2026,
+      "access_date": "2026-11-09",
+      "population_source": "Unchanged authoritative16-city attachment; not externally rechecked",
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.051274465290648025,
+        1
+      ],
+      "utility_anchor": 50,
+      "density_per_100000_lower": 2.702281292890271,
+      "lower_bound_only": true,
+      "admission_status": "accepted_conditional_inventory_lower_bound",
+      "source_locator": "https://www.bvg.de/de/verbindungen/linienuebersicht",
+      "source_files": [
+        "berlin_u1.html",
+        "berlin_u2.html",
+        "berlin_u3.html",
+        "berlin_u4.html",
+        "berlin_u5.html",
+        "berlin_u6.html",
+        "berlin_u7.html",
+        "berlin_u8.html",
+        "berlin_u9.html",
+        "berlin_zone_definition.html"
+      ],
+      "source_hashes": {
+        "berlin_u1.html": "8719d2d6af44b2fcf2ecb4e60ce6b5a5d808d051566f2041af26e9af8b04e749",
+        "berlin_u2.html": "87f51d2e4ba193251ac8ba3ee0c79663adbda476acea7d322233bc0899b1bb57",
+        "berlin_u3.html": "acbdc22e6d890bd5bd7a9fc584c7d7cf24ae5e9586f07292991c547263d1e1aa",
+        "berlin_u4.html": "011f5e8282dd9eba6a9d1ad710f679611c70138fdd6d59fe21d414981d0605c6",
+        "berlin_u5.html": "ba77591200c0099877535e95c57a0a49b4f91799428db1e0750b440b32bd754e",
+        "berlin_u6.html": "c01a8846c0cbbda35442ab43ae8a050eb0c29f917a030eb6e6f18df342bd9a99",
+        "berlin_u7.html": "4ce9b400c97e2887df2e25c9e11d54dabeef01f926ef4cc928d2b0655c2ef15a",
+        "berlin_u8.html": "04979ab56f381636f356e3d4b52489ba004f6ee1a1d4c16cbad8d5968877793c",
+        "berlin_u9.html": "0686ce9d11321999ff4d7b0652a2a43cd21ae6811ccd84ab424aa5c911c82d4b",
+        "berlin_zone_definition.html": "7c27a0daedf89255c27e936b79002762f1e540d52aa97ce3182f98a5ccf958dc"
+      },
+      "historical_inventory_proxy": false,
+      "scope": "100unique official BVG station slugs with station-level zoneA classifier in current U1-U9 route-profile embedded objects, accessed2026-11-09. BVG explicitly defines A as Berlin inner city through S-Bahn ring; only that inner-city subset is selected. Cross-line slugs collapse131line occurrences to100station complexes. No B/C region, platform, exit or S-Bahn appearance added.",
+      "extraction": "Original official HTML __NEXT_DATA__.props.pageProps.pageJson.main.fgiPearlString.initialRouteData.routeSegments[*].stops[*]: slug,title,zone,transfers. Same-name/slug bijection and all cross-line interchange declarations asserted.",
+      "limitations": "Current published named-station inventory snapshot with unchanged2025 population; not a2025 census, complete city inventory, live operating-status audit, continuous-opening guarantee, teenage usage or accessibility measurement. Route-profile objects are not real-time disruption feeds; temporary closures/exits are not independently audited for all100. Inventory interpretation is conditional and may be withdrawn to[0,1]. Uncounted outer-city stations/modes keep upper1.",
+      "admission_decision": "Accepted conditional inventory subset after independent V129 source review"
+    }
+  ],
+  "source_hashes": {
+    "data/task4_v129_transport/amsterdam_atlas_page3.txt": "863b9a72205c2867c6511489b84570af93ec3c7417df2dbfe2d5973f95148a05",
+    "data/task4_v129_transport/berlin_u6.html": "c01a8846c0cbbda35442ab43ae8a050eb0c29f917a030eb6e6f18df342bd9a99",
+    "data/task4_v129_transport/berlin_line_checks.json": "cf5cdd67dd8dbf5cd7692cceb09ac95448b05b5f82b2ca3df7c6a161202a58b6",
+    "data/task4_v129_transport/README.md": "a6722bee2d66e208c8134c9eef752ae708d80947bd56d2993a330889fff92271",
+    "data/task4_v129_transport/observations.json": "58839524d6a8f91af246ebbb736a02f76ce9b844820662f09bb925451dc097a5",
+    "data/task4_v129_transport/manifest.json": "af1e26a1d819faaaea2471c0aab7374a064e2b27828a6cab490f7efe8885d3b4",
+    "data/task4_v129_transport/amsterdam_atlas_page1.txt": "3e88cea8dec2010b956adddc2a2bc8b03daacfad4df94b5944d616cbf700a8c1",
+    "data/task4_v129_transport/berlin_u5.html": "ba77591200c0099877535e95c57a0a49b4f91799428db1e0750b440b32bd754e",
+    "data/task4_v129_transport/berlin_u1.html": "8719d2d6af44b2fcf2ecb4e60ce6b5a5d808d051566f2041af26e9af8b04e749",
+    "data/task4_v129_transport/extract.py": "f77a9452861e5488a6a1088743a5fc86584dd30f220dabc3fe166079ef4aafab",
+    "data/task4_v129_transport/amsterdam_legend.csv": "59ea1a0f24b4d26f6c25925e6565797512eed9fb53caa379f6f4f97890127a3f",
+    "data/task4_v129_transport/berlin_u2.html": "87f51d2e4ba193251ac8ba3ee0c79663adbda476acea7d322233bc0899b1bb57",
+    "data/task4_v129_transport/berlin_stations.json": "7df850148f42654f3409dbbd801501d5d56803948cd2b84a9302cc6cdffcff8c",
+    "data/task4_v129_transport/amsterdam_nonadmission.json": "df231a19dc776b0a0689b55ba701bd0f49cd77d81c29b12e7f94e60f92a73509",
+    "data/task4_v129_transport/berlin_u9.html": "0686ce9d11321999ff4d7b0652a2a43cd21ae6811ccd84ab424aa5c911c82d4b",
+    "data/task4_v129_transport/amsterdam_trammetro.html": "2b410d9baaa17a06eeb002c502720419e0f6b05495cce14d98219fd4d58db2b7",
+    "data/task4_v129_transport/amsterdam_gvb_response_original.html": "0ba37a34205996205fd9d8d0913e01968794d970c73e7656e1f9d0fe98f049ac",
+    "data/task4_v129_transport/berlin_u8.html": "04979ab56f381636f356e3d4b52489ba004f6ee1a1d4c16cbad8d5968877793c",
+    "data/task4_v129_transport/amsterdam_map_config.js": "45e3c1a96b80d7b2f7ce5b73c36229d33b55d90d181748885bb1dbf09ebc955e",
+    "data/task4_v129_transport/amsterdam_atlas_page16.txt": "fbef95a9966354998278524725dabdcf3dbfc0183768c8afc45dd3c1f9e25a07",
+    "data/task4_v129_transport/berlin_zone_definition.html": "7c27a0daedf89255c27e936b79002762f1e540d52aa97ce3182f98a5ccf958dc",
+    "data/task4_v129_transport/berlin_u4.html": "011f5e8282dd9eba6a9d1ad710f679611c70138fdd6d59fe21d414981d0605c6",
+    "data/task4_v129_transport/berlin_u7.html": "4ce9b400c97e2887df2e25c9e11d54dabeef01f926ef4cc928d2b0655c2ef15a",
+    "data/task4_v129_transport/berlin_u3.html": "acbdc22e6d890bd5bd7a9fc584c7d7cf24ae5e9586f07292991c547263d1e1aa",
+    "results/task4_v129_candidate_review/audit.json": "af331c829db0c9d0a349a7405cb6be3a2f44c50527ef6c9bdfa7fbf31f526336",
+    "scripts/audit_task4_v129_berlin_candidate.py": "1f5529a4676727beb4aa4ab6cd08bf0215171b7f1b2798a1211520acf5d443bc"
+  }
+}
