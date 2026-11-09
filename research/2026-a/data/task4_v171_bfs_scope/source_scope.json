@@ -1,0 +1,131 @@
+{
+  "status": "official_methodology_followup_complete_no_model_admission",
+  "admitted_cells": 0,
+  "PTR_or_utility_computed": false,
+  "scope": "2024/25 SSP school-personnel census methodology for interpreting frozen V170 T8/T10 teaching FTE; STATENT is a separate statistical activity.",
+  "route_count": 3,
+  "routes": [
+    {
+      "route": "National SSP 2024/25 collection manual",
+      "status": "HTTP 200 original archived",
+      "source_file": "bfs_SSP_2024_25_manual_original.pdf",
+      "source_date": "June 2024; status 31 May 2024",
+      "findings": [
+        {
+          "pdf_pages": [
+            4,
+            5
+          ],
+          "finding": "Manual explicitly applies to school year 2024/25. SSP is linked to the pupil census through school BUR identifiers; school metadata include political municipality. This is methodological compatibility, not proof of a particular city pupil table date."
+        },
+        {
+          "pdf_pages": [
+            6,
+            7,
+            8,
+            10
+          ],
+          "finding": "Annual compulsory individual-data census covers public and private schools located in Switzerland. Cantons must organise collection including private schools and validate data; schools must capture correct and complete primary data. After unsuccessful reminders, absent or incomplete returns are to be identified in the basic dissemination."
+        },
+        {
+          "pdf_pages": [
+            8,
+            15,
+            16
+          ],
+          "finding": "Teaching personnel are directly entrusted with teaching classes, groups or individuals. Teaching activity excludes supplementary non-teaching duties; leadership is a separate personnel category. Both fixed-term and permanent employment contracts are recorded. This is not administrative FTE or a headcount proxy."
+        },
+        {
+          "pdf_pages": [
+            9,
+            10,
+            34
+          ],
+          "finding": "Includes compulsory and upper-secondary education and specified non-university tertiary provision. Programmes must total at least a semester of full-time study; full- and part-time programmes qualify. Pure distance-learning activity is excluded. Universities, non-teaching assistants and temporary replacements of an occupied post are excluded; for temporary absence the postholder is recorded, while a replacement occupying a vacant post is included."
+        },
+        {
+          "pdf_pages": [
+            10
+          ],
+          "finding": "For primary and secondary I/II, the reference date is set by each canton between the start of the school year and 31 December. Pupil and personnel dates should be coordinated as far as possible. This does not itself establish an exact common date for the Zurich city pupil table or all national-private components. Tertiary B instead collects activity anywhere in the school year."
+        },
+        {
+          "pdf_pages": [
+            15,
+            19,
+            20,
+            31
+          ],
+          "finding": "Activity is split when school, school type or personnel category changes. FTE is C.7 weekly activity workload divided by C.8 the full-time workload for that activity, with consistent units. The full-time basis may reflect age-related workload reductions. Thus SSP FTE is not the unrelated STATENT wage-model estimate, nor simply the number of actual people present that day."
+        },
+        {
+          "pdf_pages": [
+            20,
+            21
+          ],
+          "finding": "Post-compulsory general/vocational programmes use a national school-type nomenclature. Long and short gymnasium programmes must separately code compulsory and post-compulsory years."
+        },
+        {
+          "pdf_pages": [
+            22,
+            23,
+            24,
+            27,
+            28
+          ],
+          "finding": "Validation covers required fields, workload ranges, duplicates, valid school identifiers, all schools expected to submit, historical aggregate plausibility, and cantonal final controls. This is positive coverage/control evidence. It does not turn every possible reporting error into a mathematically certified upper bound."
+        }
+      ]
+    },
+    {
+      "route": "Zurich SSP collection documentation",
+      "status": "2024 manual URL HTTP 404; official live help page HTTP 200 archived",
+      "source_file": "zurich_SSP_help_original.html",
+      "failed_url": "https://www.bista.zh.ch/erhebung/de/mediaserve/2685/SSP_Handbuch_ZH_2024_V1.0.pdf",
+      "finding": "Live help page links only a 2026 manual (/erhebung/de/mediaserve/2773/SSP_Handbuch_ZH_2026_V1.0.pdf). That later manual was not substituted as evidence of the 2024 exact Zurich census date. The failed 2024 response has a receipt but no archived body."
+    },
+    {
+      "route": "Official SSP statistical-activity profile and metadata",
+      "status": "HTTP 200 web page and two-page PDF archived",
+      "source_files": [
+        "bfs_SSP_profile_page_original.html",
+        "bfs_SSP_profile_original.pdf"
+      ],
+      "source_date": "PDF listed 2 June 2025 on live official page",
+      "findings": [
+        {
+          "pdf_pages": [
+            1
+          ],
+          "finding": "Profile identifies annual compulsory individual-data census, school-level person/activity variables including workload, full-time basis and school type, and the 26 cantons harmonised to ISCED; includes upper secondary."
+        },
+        {
+          "pdf_pages": [
+            2
+          ],
+          "finding": "Corrections and nomenclature updates are made continuously with revisions back to 2010. The quality field states that the person identifier permits longitudinal analysis. It does not give a 2024/25 nonresponse rate, imputation rule or decimal-rounding convention."
+        }
+      ]
+    }
+  ],
+  "interpretation_for_V170": {
+    "positive_evidence": "V170 T8 publicly reported Zurich-canton teaching FTE and T10 national public/private teaching FTE are actual published SSP quantities. The new manual supports their teaching-unit and public/private survey perimeter; inaccessible individual records are not required simply to establish this aggregate methodology.",
+    "unallocated_stage": "The private T10 unallocated-stage FTE is included in its all-stage total. It is not a missing-teacher flag and must not be discarded merely because stage allocation is unavailable.",
+    "published_table_check": "Frozen V170 extraction inspected T1/T8/T10 footnotes and T8/T10 figures; no explicit missing-data marker was found in those selected tables. The manual says final collection gaps should be marked in basic dissemination. This combination is evidence in favour of the published coverage, not an explicit no-imputation certificate.",
+    "precision": "V170 workbook presents FTE to one decimal, and adding displayed Zurich components differs by 0.1 from its displayed total. Neither archived manual nor profile specifies numerical rounding direction or an imputation method. Do not silently treat a displayed point as an exact outward upper bound.",
+    "conditional_cover": "A canton-public all-stage quantity plus a national-private all-stage quantity is a deliberately broad candidate cover for city upper-stage teaching activity within the SSP perimeter. To admit a rigorous PTR lower bound, the parent audit must separately establish a valid city pupil subset, compatible 2024/25 dates and regular programme coverage, and an explicit treatment of publication precision. No bound is computed in this package.",
+    "not_new_pupils": "The V120/V157 Zurich city T3 stage split was already archived; this follow-up does not claim that split as a new observation.",
+    "remaining_limits": [
+      "Exact Zurich 2024 personnel snapshot date not established here.",
+      "No explicit 2024/25 imputation or no-imputation statement obtained.",
+      "No explicit one-decimal rounding convention obtained.",
+      "Pure distance learning and programmes shorter than a semester lie outside SSP; target pupil definition must match.",
+      "Absent teachers occupying posts are recorded instead of temporary replacements, so actual SSP teaching FTE means defined post/activity workload, not classroom attendance."
+    ]
+  },
+  "read_only_existing_evidence": [
+    "research/2026-a/data/task4_v170_zurich/source_scope.json",
+    "research/2026-a/data/task4_v170_zurich/bfs_staff_2024_25_original.xlsx"
+  ],
+  "statement_limit": "Methodology evidence only. No CSV, registry, interval, current result, manuscript, or remote change. No inferred guaranteed bound."
+}

@@ -1,0 +1,31 @@
+{
+  "referenced_file": "results/task4_v170_staff_coverage/comparison.json",
+  "sha256": "9064c4733a072c82398dde027bdd8f6127d0f6465385ff3995e716b7299bd2c1",
+  "source_checks": "V170 recomputed160 utility cells and32 deterministic city/weight cases; reused here after unchanged V154 snapshot hashes, not rerun in V171.",
+  "admissions_this_iteration": 0,
+  "score_width_reduction": 0,
+  "comparison": [
+    {
+      "weight_reference": "fixed",
+      "before_mean_width": 16.061435140939356,
+      "after_mean_width": 16.061435140939356,
+      "mean_width_reduction": 0,
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "weight_reference": "equal",
+      "before_mean_width": 18.860967021723695,
+      "after_mean_width": 18.8609670217237,
+      "mean_width_reduction": 0,
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    }
+  ]
+}

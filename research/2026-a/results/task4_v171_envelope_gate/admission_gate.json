@@ -1,0 +1,61 @@
+{
+  "version": "V171",
+  "primary_science": "V154",
+  "current_paper": "V168",
+  "gates": [
+    {
+      "id": "teaching_FTE_definition",
+      "status": "supported",
+      "evidence": "2024/25 manual PDF19-20: activity workload C.7 / matching full-time basis C.8; category split PDF15/31.",
+      "meaning": "Published SSP teaching FTE is distinct from persons, school leadership and the separate STATENT wage-model estimate."
+    },
+    {
+      "id": "public_private_collection_frame",
+      "status": "supported",
+      "evidence": "Manual PDF6-8 and23: compulsory public/private census and expected-school controls; unresolved collection gaps should be flagged (PDF7).",
+      "meaning": "Positive population/control evidence; not an empirical certificate of every actual target workload."
+    },
+    {
+      "id": "gymnasium_stage_coding",
+      "status": "supported",
+      "evidence": "Manual PDF21: compulsory/post-compulsory gymnasium years separately coded.",
+      "meaning": "Mixed-stage school headcounts need not be used as the teacher denominator."
+    },
+    {
+      "id": "city_student_target_subset_and_date",
+      "status": "not_established",
+      "evidence": "Re-fetched city workbook is exactly the frozen V120 source; existing V157 public upper6582/private upper1999 reused. School year2024 means2024/25, not an exact census-date certificate.",
+      "meaning": "No certified lower pupil total has been selected after adult/bridging/remote and programme/date compatibility checks."
+    },
+    {
+      "id": "numerical_upper_teacher_enclosure",
+      "status": "not_established",
+      "evidence": "V170 workbook T8/T10 has one-decimal values; inspected manual/profile supply no explicit one-sided rounding/adjustment envelope.",
+      "meaning": "No reported aggregate has been promoted to a guaranteed upper teacher total."
+    }
+  ],
+  "sufficient_relation": "If 0 <= S_lower <= S_city and 0 < T_city <= T_upper for the same target activities/date, then PTR_city >= S_lower/T_upper and cost utility <= 15*T_upper/(15*T_upper+S_lower).",
+  "subset_rule": "A certified pupil subset and teacher superset can suffice; complete exact city totals and individual personnel records are not required by this argument.",
+  "national_dates_rule": "Other cantons may have different census dates in a nonnegative nationwide private sum; that alone does not invalidate a cover. The Zurich component must contain the target Zurich activities at the matched local date.",
+  "note_on_existing_data": "These gates concern the proposed one-sided covering bound; they do not change the existing user point-value assumptions or adopt a new generic admission rule.",
+  "raw_indicator_replaced": false,
+  "pupil_lower_bound_admitted": false,
+  "teacher_upper_bound_admitted": false,
+  "city_PTR_computed": false,
+  "utility_interval_before": [
+    0,
+    1
+  ],
+  "utility_interval_after": [
+    0,
+    1
+  ],
+  "admitted_cells": 0,
+  "source_sha256": {
+    "data/task4_v171_student_scope/student_scope.json": "c08a10178a4bc9da105ac9253f9326e4228df7f278d889caf8838ee5652375ec",
+    "data/task4_v171_bfs_scope/source_scope.json": "7aa988134c7bb167f172e776f23a5b81e4aac792a5abba9ec4ec95860b7a72ca",
+    "data/task4_v170_zurich/source_scope.json": "12702518e20e327589dbcc5c08d947f36a79d3972711d15a2d5f07cdd3fab668",
+    "data/task4_v170_zurich/bfs_staff_2024_25_original.xlsx": "3b395bb02b639746c1270da4674b70971e0f488904e528e688304cd8ffccf553"
+  },
+  "next_action": "Use a genuinely matched local pupil subset and an explicit numerical enclosure before computing a candidate. Do not repeat the public-funded chart, STATENT or registry-count substitution routes."
+}

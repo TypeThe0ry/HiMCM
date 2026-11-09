@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "raw_receipts_verified": [
+    {
+      "file": "bfs_SSP_2024_25_manual_original.pdf",
+      "status": 200,
+      "sha256": "5a88f11fa5a6e0879fbfc371601088d2ad1eda52ab8ce917f3327ebaa889e2aa"
+    },
+    {
+      "file": "bfs_SSP_profile_page_original.html",
+      "status": 200,
+      "sha256": "0bfab621793a651b4a9cc1e78d117b2d187a22357470651c7df4c3f8245b7dab"
+    },
+    {
+      "file": "bfs_SSP_profile_original.pdf",
+      "status": 200,
+      "sha256": "d0d1f0c8747b8ccd19514404630a22986fd430551606af443cc0ac4d796faf83"
+    },
+    {
+      "file": "zurich_SSP_help_original.html",
+      "status": 200,
+      "sha256": "6cf071c036c1251486895cc82b3134ff4095c72c4fdf0a895eb275402fe1023f"
+    }
+  ],
+  "failed_attempts": [
+    {
+      "url": "https://www.bista.zh.ch/erhebung/de/mediaserve/2685/SSP_Handbuch_ZH_2024_V1.0.pdf",
+      "status": "failed",
+      "error": "HTTPError:404 Client Error: Not Found for url: https://www.bista.zh.ch/erhebung/de/mediaserve/2685/SSP_Handbuch_ZH_2024_V1.0.pdf"
+    }
+  ],
+  "manual_pdf_pages": 37,
+  "located_claims": {
+    "2024_25_reference_year": 4,
+    "private_school_cantonal_responsibility": 6,
+    "unresolved_gaps_disclosed": 7,
+    "census": 8,
+    "public_private": 8,
+    "upper_secondary_snapshot": 10,
+    "fte_quotient": 19,
+    "fulltime_basis": 20,
+    "gymnasium_stage_separation": 21,
+    "expected_schools": 23,
+    "activity_split": 31,
+    "distance_exclusion": 34
+  },
+  "manual_word_search_pages": {
+    "Rundung": [],
+    "gerundet": [],
+    "Imputation": [],
+    "imputiert": [],
+    "Sch\u00e4tzung": [],
+    "gesch\u00e4tzt": []
+  },
+  "admitted_cells": 0,
+  "source_scope_sha256": "7aa988134c7bb167f172e776f23a5b81e4aac792a5abba9ec4ec95860b7a72ca",
+  "extractor_sha256": "8ee9572272d21b069066c29f44c2827b1af320f8d1b69a1c1da47f18558a25dd"
+}

@@ -1,0 +1,537 @@
+{
+  "version": "V171",
+  "source_sha256": "6234f5b6cf617af10db16c5930105df4183eade7df47564858cc5dfe010bc251",
+  "extractor_sha256": "69a558fce9b492b3cd909a7bb39db7efd5cf2ca79687df67eddf8a3b04762be9",
+  "same_bytes_as_V120": true,
+  "existing_V157_stage_breakdown_reused": true,
+  "new_city_observation": false,
+  "city_landing_links_workbook": true,
+  "school_year_label": 2024,
+  "year_rule_cell": "Erläuterungen!B1",
+  "year_interpretation": "School year beginning after summer 2024 and ending summer 2025; not a 2025/26 measurement.",
+  "stage_provider_totals": [
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "pupils": 4443
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "pupils": 402
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "pupils": 6582
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "pupils": 1999
+    }
+  ],
+  "total": 13426,
+  "public_upper_secondary": 6582,
+  "private_upper_secondary": 1999,
+  "public_upper_SPF_cells": [
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Alte Sprachen",
+      "source_cell": "T_3!T60",
+      "pupils": 103
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Bildnerisches Gestalten",
+      "source_cell": "T_3!T61",
+      "pupils": 494
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Biologie und Chemie",
+      "source_cell": "T_3!T62",
+      "pupils": 584
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Eine moderne Sprache",
+      "source_cell": "T_3!T63",
+      "pupils": 1335
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Musik",
+      "source_cell": "T_3!T64",
+      "pupils": 251
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Philosophie/Pädagogik/Psychologie",
+      "source_cell": "T_3!T65",
+      "pupils": 19
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Physik und Anwendungen der\nMathematik",
+      "source_cell": "T_3!T66",
+      "pupils": 251
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Wirtschaft und Recht",
+      "source_cell": "T_3!T67",
+      "pupils": 1109
+    }
+  ],
+  "public_KME": {
+    "cell": "T_2!S12",
+    "pupils": 420,
+    "scope": "Whole school; no assumed cross-tab attribution"
+  },
+  "public_Passerelle": {
+    "cell": "T_3!T58",
+    "pupils": 66
+  },
+  "private_Passerelle_cells": [
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Passerelle Berufsmaturiät",
+      "source_cell": "T_3!T85",
+      "pupils": 133
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Passerelle Fachmaturität",
+      "source_cell": "T_3!T86",
+      "pupils": 4
+    }
+  ],
+  "pending": "Certified target subset must respect adult/bridging/remote/programme exclusions and matching school-location and census-date conventions; no student lower bound admitted just from the stage labels.",
+  "admissions": 0,
+  "rows": [
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "Gymnasium Unterstufe",
+      "source_cell": "T_3!T13",
+      "pupils": 2276
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "Gymnasium vor Wahl Schwerpunktfach",
+      "source_cell": "T_3!T14",
+      "pupils": 1035
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "Handelsmittelschule (HMS)",
+      "source_cell": "T_3!T15",
+      "pupils": 146
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "SPF Alte Sprachen",
+      "source_cell": "T_3!T20",
+      "pupils": 19
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "SPF Bildnerisches Gestalten",
+      "source_cell": "T_3!T21",
+      "pupils": 52
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "SPF Biologie und Chemie",
+      "source_cell": "T_3!T22",
+      "pupils": 45
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "SPF Eine moderne Sprache",
+      "source_cell": "T_3!T23",
+      "pupils": 282
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "SPF Musik",
+      "source_cell": "T_3!T24",
+      "pupils": 5
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "SPF Philosophie/Pädagogik/Psychologie",
+      "source_cell": "T_3!T25",
+      "pupils": 152
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "öffentlich",
+      "course": "SPF Wirtschaft und Recht",
+      "source_cell": "T_3!T26",
+      "pupils": 431
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "course": "Gymnasium Unterstufe",
+      "source_cell": "T_3!T29",
+      "pupils": 176
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "course": "Gymnasium vor Wahl Schwerpunktfach",
+      "source_cell": "T_3!T30",
+      "pupils": 55
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "course": "SPF Alte Sprachen",
+      "source_cell": "T_3!T34",
+      "pupils": 9
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "course": "SPF Bildnerisches Gestalten",
+      "source_cell": "T_3!T35",
+      "pupils": 2
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "course": "SPF Biologie und Chemie",
+      "source_cell": "T_3!T36",
+      "pupils": 46
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "course": "SPF Eine moderne Sprache",
+      "source_cell": "T_3!T37",
+      "pupils": 38
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "course": "SPF Physik und Anwendungen der\nMathematik",
+      "source_cell": "T_3!T39",
+      "pupils": 11
+    },
+    {
+      "stage": "Sekundarstufe I",
+      "provider": "privat",
+      "course": "SPF Wirtschaft und Recht",
+      "source_cell": "T_3!T40",
+      "pupils": 65
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Fachmaturität\nGesundheit/Naturwissenschaften",
+      "source_cell": "T_3!T43",
+      "pupils": 47
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Fachmaturität Kommunikation und\nInformation",
+      "source_cell": "T_3!T44",
+      "pupils": 60
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Fachmaturität Pädagogik",
+      "source_cell": "T_3!T45",
+      "pupils": 62
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Fachmittelschule Basisjahr",
+      "source_cell": "T_3!T46",
+      "pupils": 228
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Fachmittelschule Profil\nGesundheit/Naturwissenschaft",
+      "source_cell": "T_3!T47",
+      "pupils": 169
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Fachmittelschule Profil Kommunikation\nund Information",
+      "source_cell": "T_3!T48",
+      "pupils": 84
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Fachmittelschule Profil Pädagogik",
+      "source_cell": "T_3!T50",
+      "pupils": 131
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Gymnasium vor Wahl Schwerpunktfach",
+      "source_cell": "T_3!T51",
+      "pupils": 1244
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Handelsmittelschule (HMS)",
+      "source_cell": "T_3!T52",
+      "pupils": 249
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Informatikmittelschule (IMS)",
+      "source_cell": "T_3!T53",
+      "pupils": 96
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "Passerelle Berufsmaturiät",
+      "source_cell": "T_3!T58",
+      "pupils": 66
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Alte Sprachen",
+      "source_cell": "T_3!T60",
+      "pupils": 103
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Bildnerisches Gestalten",
+      "source_cell": "T_3!T61",
+      "pupils": 494
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Biologie und Chemie",
+      "source_cell": "T_3!T62",
+      "pupils": 584
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Eine moderne Sprache",
+      "source_cell": "T_3!T63",
+      "pupils": 1335
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Musik",
+      "source_cell": "T_3!T64",
+      "pupils": 251
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Philosophie/Pädagogik/Psychologie",
+      "source_cell": "T_3!T65",
+      "pupils": 19
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Physik und Anwendungen der\nMathematik",
+      "source_cell": "T_3!T66",
+      "pupils": 251
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "öffentlich",
+      "course": "SPF Wirtschaft und Recht",
+      "source_cell": "T_3!T67",
+      "pupils": 1109
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmaturität\nGesundheit/Naturwissenschaften",
+      "source_cell": "T_3!T70",
+      "pupils": 6
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmaturität Kommunikation und\nInformation",
+      "source_cell": "T_3!T71",
+      "pupils": 11
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmaturität Pädagogik",
+      "source_cell": "T_3!T72",
+      "pupils": 6
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmaturität Soziale Arbeit",
+      "source_cell": "T_3!T73",
+      "pupils": 8
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmittelschule Basisjahr",
+      "source_cell": "T_3!T74",
+      "pupils": 34
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmittelschule Profil\nGesundheit/Naturwissenschaft",
+      "source_cell": "T_3!T75",
+      "pupils": 6
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmittelschule Profil Kommunikation\nund Information",
+      "source_cell": "T_3!T76",
+      "pupils": 3
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmittelschule Profil Pädagogik",
+      "source_cell": "T_3!T78",
+      "pupils": 6
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Fachmittelschule Profil Soziale Arbeit",
+      "source_cell": "T_3!T79",
+      "pupils": 3
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Gymnasium vor Wahl Schwerpunktfach",
+      "source_cell": "T_3!T80",
+      "pupils": 20
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Passerelle Berufsmaturiät",
+      "source_cell": "T_3!T85",
+      "pupils": 133
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Passerelle Fachmaturität",
+      "source_cell": "T_3!T86",
+      "pupils": 4
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Rudolf- Steiner- Schule\n(nachobligatorisch)",
+      "source_cell": "T_3!T87",
+      "pupils": 94
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "SPF Alte Sprachen",
+      "source_cell": "T_3!T88",
+      "pupils": 28
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "SPF Bildnerisches Gestalten",
+      "source_cell": "T_3!T89",
+      "pupils": 214
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "SPF Biologie und Chemie",
+      "source_cell": "T_3!T90",
+      "pupils": 234
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "SPF Eine moderne Sprache",
+      "source_cell": "T_3!T91",
+      "pupils": 114
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "SPF Musik",
+      "source_cell": "T_3!T92",
+      "pupils": 87
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "SPF Philosophie/Pädagogik/Psychologie",
+      "source_cell": "T_3!T93",
+      "pupils": 144
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "SPF Physik und Anwendungen der\nMathematik",
+      "source_cell": "T_3!T94",
+      "pupils": 49
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "SPF Wirtschaft und Recht",
+      "source_cell": "T_3!T95",
+      "pupils": 291
+    },
+    {
+      "stage": "Sekundarstufe II",
+      "provider": "privat",
+      "course": "Schulen mit ausländischem Programm\nnachoblig.",
+      "source_cell": "T_3!T97",
+      "pupils": 504
+    }
+  ]
+}

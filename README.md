@@ -263,3 +263,5 @@ python3 scripts/verify_repository.py
 V169补充[现有模拟均值的数值精度证书](research/2026-a/results/task4_v169_mc_precision/README.md)，科学V154／当前自有稿V168保持。
 
 V170补充[师资来源覆盖与注册表核验](research/2026-a/results/task4_v170_staff_coverage/README.md)：新BFS私校FTE候选，当前模型及V168稿保持。
+
+V171补充[SSP原始定义与单侧包络准入条件](research/2026-a/results/task4_v171_envelope_gate/README.md)，当前科学V154／独立稿V168保持。
