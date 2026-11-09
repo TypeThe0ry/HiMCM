@@ -1,6 +1,6 @@
 # 接手续做HiMCM：V136主数据／V137扩展，文档V148
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V152公平性补充](V152_RESEARCH_UPDATE.md)、[V151编译入口核验](V151_RESEARCH_UPDATE.md)、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V150最新补数核查](V150_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V153补数候选与重基任务](V153_RESEARCH_UPDATE.md)、[V152公平性补充](V152_RESEARCH_UPDATE.md)、[V151编译入口核验](V151_RESEARCH_UPDATE.md)、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V150最新补数核查](V150_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -56,3 +56,7 @@ Overleaf根新增task4_review_entry.tex，经import导入现有自有V148。本�
 ## V152 低端通学机会
 
 2012 Istanbul保留未知旅时／可选成员，最低20%效用闭包[0,0.153351917]，整体均值减尾均值保守下界0.161650665；414独立LP及单调性证明，见results/task4_v152_tail_access。仅历史条件经验集合，非当前年／总体CI／设施使用。0准入0主评分变化，139科学／88既有稿件入口保持；Overleaf独立候选材料，未插正文。goal active。
+
+## V153 下一轮优先：启用前重基
+
+Milan新官方站点130条→109市内分线记录→104实体，历史日期2024-10-16；完整原件与去重在data/task4_v153_milan。候选proposed_bounds将交通密度下界0→0.129427365，固定均宽拟降0.027898418，等权拟降0.053290149，Zurich保守／16可能／0必要保持。独立审计已过，勿重搜或将候选称已启用。下一轮优先同步偏好、未来、同国对照与自有稿件，再一致启用新版本；当前V136／V137／V148／V151均保持。139科学／92论文支持原文件保持，公开push仍held，goal active。

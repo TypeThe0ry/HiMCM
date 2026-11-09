@@ -1,0 +1,35 @@
+{
+  "city": "Milan",
+  "source_date": "2024-10-16 stated in municipal layer metadata",
+  "total_station_layer_records": 130,
+  "municipal_line_station_records": 109,
+  "municipal_unique_station_hubs": 104,
+  "omitted_geography_records": 21,
+  "consolidated_interchanges": [
+    "CADORNA_FN",
+    "DUOMO",
+    "LORETO",
+    "LOTTO",
+    "SANT_AMBROGIO"
+  ],
+  "operator_map": "Original ATM schema_rete_metro.pdf, V26B label; publication date unreported; visually reviewed for five interchange pairs",
+  "geography": "Official municipal code 015146, comune Milano, and municipio 1\u20139; coordinate sanity check only, not independent boundary overlay",
+  "count_scope": "Historical metro station/hub subset; excludes access-layer entrances, bus/tram/rail inventories and unmatched geography; not a claim of present service or individual access",
+  "historical_inventory_proxy": true,
+  "lower_bound_only": true,
+  "map_visual_review": true,
+  "originals_sha256": {
+    "layers_original.json": "1096c8ba4d0368b1b0a05eb4e65a544dbba697ae4c9805398eed929e2fdad18b",
+    "stations_original.geojson": "4abdd42c5ae54eb7c07c8826c41b81b1ea54d96666b9faf10cd0b252fcd32ec0",
+    "ids_original.json": "b1c7656e93d6e00f87398f2af7c60b0309a997798759dbc0f2c86ec3c22933fb",
+    "atm_map_original.pdf": "61fe2232bc17775e2ae26b440dc05177ea9645cb1179da804d7b83ad87402497",
+    "atm_maps_original.html": "9e108d19e793c619741b39bf8e9e8137ecaac00cd8f751dfcad3c5b5800175a9"
+  },
+  "derived_sha256": {
+    "retained_line_station_records.csv": "9b69d8d572e979d4d5c440b92ad9a4406b812decf1762c6f564a6595c45c9ef1",
+    "omitted_records.csv": "056771baabb14dd648537a4e3d92a36ee122dbb28f16e5a0688e8b1963940ab9",
+    "near_pairs.csv": "e0fcc3eb4f48d59d883d2f531859f9e349f7b1b7214b24907d3848d4e0b640be",
+    "retained_hubs.csv": "6e241613e2f6b39ede4c847c76c50de9ab1f8c81ec2d8d6b492e663c14fb36bb"
+  },
+  "extractor_sha256": "2101855f6597341b73772785c3579caa23ec3a17144cd8468defc5088083df24"
+}

@@ -19,6 +19,8 @@
 
 最新补数核查：[V150：Madrid市级教师计数](docs/handoff/V150_RESEARCH_UPDATE.md)。取得20列学年末标签，最新Madrid1008／区域1922；20年分层校验通过。单位Número未建立高中教学FTE，0准入／0得分收窄；论文仍V148，V149交付对照继续适用。
 
+已验证补数候选：[V153：Milan104站／枢纽](docs/handoff/V153_RESEARCH_UPDATE.md)。新官方原件与单格试算通过审计；尚未统一启用，当前仍V136主模型／V137扩展／V148正文。
+
 公平性补充：[V152：历史通学最低20%效用](docs/handoff/V152_RESEARCH_UPDATE.md)。2012条件样本尾均值上界0.153352，整体均值与尾均值差至少0.161651；未迁移为当前年，正文仍V148。
 
 编译入口核验：[V151：独立根入口与依赖清单](docs/handoff/V151_RESEARCH_UPDATE.md)。新增task4_review_entry.tex导入当前V148，24页零警告，与同源新构建逐页一致；原PDF／队友稿／默认设置保持，在线入口未核实。

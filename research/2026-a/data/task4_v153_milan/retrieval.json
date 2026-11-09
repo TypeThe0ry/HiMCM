@@ -1,0 +1,47 @@
+[
+  {
+    "file": "layers_original.json",
+    "url": "https://gisportal.comune.milano.it/server/rest/services/D_Mobilita/ATM_Metro/MapServer/layers?f=pjson",
+    "accessed_at": "2026-11-09T07:36:05.073772+00:00",
+    "status": 200,
+    "bytes": 30315,
+    "sha256": "1096c8ba4d0368b1b0a05eb4e65a544dbba697ae4c9805398eed929e2fdad18b",
+    "representation": "original HTTP response body"
+  },
+  {
+    "file": "stations_original.geojson",
+    "url": "https://gisportal.comune.milano.it/server/rest/services/D_Mobilita/ATM_Metro/MapServer/0/query?where=1%3D1&outFields=%2A&outSR=4326&f=geojson&returnGeometry=true",
+    "accessed_at": "2026-11-09T07:36:07.246045+00:00",
+    "status": 200,
+    "bytes": 53406,
+    "sha256": "4abdd42c5ae54eb7c07c8826c41b81b1ea54d96666b9faf10cd0b252fcd32ec0",
+    "representation": "original HTTP response body"
+  },
+  {
+    "file": "ids_original.json",
+    "url": "https://gisportal.comune.milano.it/server/rest/services/D_Mobilita/ATM_Metro/MapServer/0/query?where=1%3D1&returnIdsOnly=true&f=json",
+    "accessed_at": "2026-11-09T07:36:26.753495+00:00",
+    "status": 200,
+    "bytes": 458,
+    "sha256": "b1c7656e93d6e00f87398f2af7c60b0309a997798759dbc0f2c86ec3c22933fb",
+    "representation": "original HTTP response body"
+  },
+  {
+    "file": "atm_map_original.pdf",
+    "url": "https://www.atm.it/it/AltriServizi/Trasporto/Documents/schema_rete_metro.pdf",
+    "accessed_at": "2026-11-09T07:38:07.768450+00:00",
+    "status": 200,
+    "bytes": 1792553,
+    "sha256": "61fe2232bc17775e2ae26b440dc05177ea9645cb1179da804d7b83ad87402497",
+    "representation": "original HTTP response body"
+  },
+  {
+    "file": "atm_maps_original.html",
+    "url": "https://www.atm.it/it/AltriServizi/Trasporto/Pagine/Mappe.aspx",
+    "accessed_at": "2026-11-09T07:38:11.182431+00:00",
+    "status": 200,
+    "bytes": 59037,
+    "sha256": "9e108d19e793c619741b39bf8e9e8137ecaac00cd8f751dfcad3c5b5800175a9",
+    "representation": "original HTTP response body"
+  }
+]
