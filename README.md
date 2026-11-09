@@ -12,15 +12,15 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展为V154，当前独立完整审阅稿为V176（科学基础保持V154）：112点／34部分／14全缺失，累计22项补充，当前自有稿26页（24主文参考+2AI，主文余量1页）。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展为V154，当前独立完整审阅稿为V179（科学基础保持V154）：112点／34部分／14全缺失，累计22项补充，当前自有稿26页（24主文参考+2AI，主文余量1页）。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
 
 V154的Milan历史库存补数使固定权重平均评分区间宽度16.08933→16.06144，实际收窄0.02790分，累计收窄14.62%。[模型入口](research/2026-a/design/task4_user_current_model.json)、[扩展入口](research/2026-a/design/task4_user_current_extensions.json)、[验证](research/2026-a/results/task4_v154_transition/README.md)。
 
-当前补数诊断：[V155：14缺失格与Milan残余信息](docs/handoff/V155_RESEARCH_UPDATE.md)。Dublin教师精确信息有较大固定权重保证收益，Zurich对冠军范围更有潜力；条件保证不等于预期取数收益。主分析仍V154，当前独立稿见V176注册入口。
+当前补数诊断：[V155：14缺失格与Milan残余信息](docs/handoff/V155_RESEARCH_UPDATE.md)。Dublin教师精确信息有较大固定权重保证收益，Zurich对冠军范围更有潜力；条件保证不等于预期取数收益。主分析仍V154，当前独立稿见V179注册入口。
 
-当前自有稿及核对：[V176：MC精度解释与47项清单](docs/handoff/V176_RESEARCH_UPDATE.md)。26页=24主文参考+2暂定AI、50引用；47项核对含13项实质待办，原生页眉页脚沿用用户格式，科学V154保持。用户已明确授权本次全部上传，先前公开push暂缓解除；[完整状态与下一步](docs/handoff/SESSION_STATUS_20261109.md)。
+当前自有稿及核对：[V179：AI披露更新与47项清单](docs/handoff/V179_RESEARCH_UPDATE.md)。26页=24主文参考+2暂定AI、50引用；47项核对含13项实质待办，原生页眉页脚沿用用户格式，科学V154保持。用户已明确授权本次全部上传，先前公开push暂缓解除；[完整状态与下一步](docs/handoff/SESSION_STATUS_20261109.md)。
 
-历史候选：[V159独立审阅稿](docs/handoff/V159_RESEARCH_UPDATE.md)将历史联合公平性结果写入第6.4节，24页、47引用，原稿保持；该候选后由V160澄清定义；当前自有稿为V176。
+历史候选：[V159独立审阅稿](docs/handoff/V159_RESEARCH_UPDATE.md)将历史联合公平性结果写入第6.4节，24页、47引用，原稿保持；该候选后由V160澄清定义；当前自有稿为V179。
 
 新增公平性论据：[V158历史通学差距的联合最紧界](docs/handoff/V158_RESEARCH_UPDATE.md)。最低20%与整体均值差距下界由0.161651提高为0.226686，范围保持Istanbul2012条件样本；主分析保持V154。
 
@@ -279,3 +279,5 @@ V176将[MC数值精度解释写入自有稿](research/2026-a/results/task4_v176_
 V177用户已恢复长期迭代。[新来源核查](research/2026-a/results/task4_v177_source_reconciliation/README.md)排除仅换两个指定人口即可解释Zurich原率的假设；2官方原HTML，师资0准入，科学V154／论文V176保持。
 
 V178[扩展实际AI根会话记录](research/2026-a/data/task4_v178_ai_provenance/README.md)：326可见消息＋1865工具输入，固定截止新加坡11月9日22:31，原文私存／元数据公开。科学V154／论文V176保持，全队AI史仍未完整。
+
+V179仅更新[自有AI附录](research/2026-a/results/task4_v179_ai_review/README.md)到已核326可见／1865工具输入的固定范围；前24主文参考页完整像素同，26页／50引用，科学V154保持。

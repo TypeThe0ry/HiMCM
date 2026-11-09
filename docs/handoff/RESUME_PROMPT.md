@@ -1,13 +1,13 @@
-# 恢复HiMCM：主分析／扩展V154，当前独立稿V176（用户mcmthesis格式）
+# 恢复HiMCM：主分析／扩展V154，当前独立稿V179（用户mcmthesis格式）
 
-长期goal active；用户随后恢复并明确要求继续既定数据与论文材料任务。先读AGENTS.md、GUIDELINES.md及[V178实际AI取证扩展](V178_RESEARCH_UPDATE.md)、[V177恢复与新来源核查](V177_RESEARCH_UPDATE.md)、[V176当前稿与上传](V176_RESEARCH_UPDATE.md)、[完整状态](SESSION_STATUS_20261109.md)、[V175均秩比较界与新FTE口径](V175_RESEARCH_UPDATE.md)、[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；用户随后恢复并明确要求继续既定数据与论文材料任务。先读AGENTS.md、GUIDELINES.md及[V179当前AI更新稿](V179_RESEARCH_UPDATE.md)、[V178实际AI取证扩展](V178_RESEARCH_UPDATE.md)、[V177恢复与新来源核查](V177_RESEARCH_UPDATE.md)、[V176当前稿与上传](V176_RESEARCH_UPDATE.md)、[完整状态](SESSION_STATUS_20261109.md)、[V175均秩比较界与新FTE口径](V175_RESEARCH_UPDATE.md)、[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
 - 原CSV：research/2026-a/data/task4_v117_team_intake/city_indicators.csv，SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c，保持用户值／年份／标记。
 - 主注册表：research/2026-a/design/task4_user_current_model.json，V154模块task4_user_v154_revision.revised_bounds()；22累计补充，112点／34部分／14全未知，16×10。来源快照design/task4_user_v154_snapshot.json，187项。
 - 扩展注册表：design/task4_user_current_extensions.json；scripts/task4_v154_extensions.py的preferences／future／method／diagnostics只写V154新目录。偏好矩阵、未来假设、种子与模型机制保持，历史六CSV字节保持。
-- 当前自有独立稿：research/2026-a/design/task4_user_current_review.json注册V176；相邻HiMCM-Overleaf/drafts/task4_v176_paper.tex/.pdf，build_task4_v176.py及根入口task4_v176_review_entry.tex。调用现有只读mcmthesis类，科学仍V154，未切默认主文件，V160等旧稿冻结。
+- 当前自有独立稿：research/2026-a/design/task4_user_current_review.json注册V179；相邻HiMCM-Overleaf/drafts/task4_v179_paper.tex/.pdf，build_task4_v179.py及根入口task4_v179_review_entry.tex。调用现有只读mcmthesis类，科学仍V154，未切默认主文件，V160等旧稿冻结。
 
 ## 科学状态
 
@@ -27,7 +27,7 @@ V154科学基础核验results/task4_v154_transition/verification.json：432城�
 
 GitHub仅研究，Overleaf仅稿件／选定资产，各自fetch并审确切diff、正常提交；用户2026-11-09已明确授权本次全部上传，旧公开push暂缓已解除；GitHub研究和私有Overleaf分别正常push。队友main／ref／class及项目设置保持。root main为旧赛事模板+冻结25城阶段稿，17缺图引用，不能当V154入口。
 
-采集价值诊断已重基为V155：14全缺失及Milan残余单列，见results/task4_v155_priority。Dublin教师精确信息固定保证1.066798、最有利5.785906；Zurich保证0.793974、最有利9.316221、最多排除5城。Milan交通单独精确无遗憾／冠军改善，两项仅下界全域无排除，勿重复扩名录追求缩冠军。当前稿与清单见V176注册入口，下一轮优先新教师FTE路线或结论相关证据核查；V138的15缺失格列表已过期，V149仍旧PDF。补数只找新的匹配教师FTE／高中实际单程旅时或原率来源，已有抑制／单位不符路线失败跳过。V152历史低端通学证据仍独立候选；同国／年龄／公平性继续保持对象范围。旧版本详情由各Vxxx交接与Git历史恢复，勿覆盖冻结结果。
+采集价值诊断已重基为V155：14全缺失及Milan残余单列，见results/task4_v155_priority。Dublin教师精确信息固定保证1.066798、最有利5.785906；Zurich保证0.793974、最有利9.316221、最多排除5城。Milan交通单独精确无遗憾／冠军改善，两项仅下界全域无排除，勿重复扩名录追求缩冠军。当前稿与清单见V179注册入口，下一轮优先新教师FTE路线或结论相关证据核查；V138的15缺失格列表已过期，V149仍旧PDF。补数只找新的匹配教师FTE／高中实际单程旅时或原率来源，已有抑制／单位不符路线失败跳过。V152历史低端通学证据仍独立候选；同国／年龄／公平性继续保持对象范围。旧版本详情由各Vxxx交接与Git历史恢复，勿覆盖冻结结果。
 
 V157新取六官方原响应：Enge人数非教学FTE；Stadelhofen年报全职词命中是管理员；Eurostat全国ED3 FTE含ED4且私立覆盖与元数据不一致、参考期未协调，不能作城市教师上界。V120学生T_3为Mittelschulen、含I／II阶段，非全市高中总数。0准入0收窄；下一轮跳过上述已查路线。
 
@@ -72,3 +72,5 @@ V176自有6.3解释块加入V169/V175数值保证，参考新增Hoeffding，26=2
 V177用户恢复goal。2新官方HTML：市府年末2024人口448664和CSO2026表4.3阶段口径；N1/r.14的舍入假设相容人口约689655–740741，原440935与新448664都不符，排除仅换这两年人口的解释，不校正受害者率。两城市师资各2查后停止，0准入0收窄。科学V154／论文V176、控制号PENDING保持，独立Fraction算术审计和来源／旧文件保护见V177。
 
 V178根会话AI新捕获截至14:31:18.850UTC/新加坡22:31，326可见消息(旧125保持)+1865工具输入(1749custom/116function)，74root模型标签。原文私存在/data/scratch/himcm-ai-v178，0700/0600、不入Git；元数据/哈希公开，仍不覆盖toolresults/子agent/队友/后续。29过滤+2失败保护验证，187科学/621稿/旧V140保持；当前V176AI页仍旧窗口，下一轮应只更新自有AI页，不冒称全队完整。
+
+V179现为当前自有稿：只更新AI范围与74root计数，前24页完整像素同、26=24+2/50引用/余量1；326可见消息+1865工具输入固定截止14:31:18.850UTC范围已入AI25/26，仍不完整。187科学/623旧稿保持，47清单13待办保持。旧V178取证是绑定旧V176时点，勿当新稿验收；本轮验收脚本为scripts/task4_v179_review_audit.py。
