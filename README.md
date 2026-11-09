@@ -12,9 +12,9 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V137完整稿与启用记录](docs/handoff/V137_COMPLETE_REVIEW.md)。现行主数据为16城V136（112点／33部分／15全缺失），V137扩展与22页完整独立稿已统一；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V131（文档V134）及更早稿冻结。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V137完整稿与启用记录](docs/handoff/V137_COMPLETE_REVIEW.md)。现行主数据为16城V136（112点／33部分／15全缺失），V137扩展与完整独立稿已统一（文档V143，23页）；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V131（文档V134）及更早稿冻结。
 
-最新文档：[V142：16城严格内点获胜情景验证](docs/handoff/V142_RESEARCH_UPDATE.md)。32组独立复算支持16城各自仍可能领先；112点／48不确定格与主科学V136/V137保持，Madrid／Helsinki师资0准入，宽度本轮缩小0。论文仍22页、零warning；10–12页改变，19页像素保持。局部125条AI记录仍非全队史。采集优先级按[V138当前15缺失格诊断](docs/handoff/V138_RESEARCH_UPDATE.md)，[V141旅时源](docs/handoff/V141_RESEARCH_UPDATE.md)保持0准入。
+最新文档：[V143：年份／来源信息依赖](docs/handoff/V143_RESEARCH_UPDATE.md)。新增5组×2权重的受控点值撤回：非ok28点改为未知后基准Berlin／等权Paris，撤回2026点值64格仍Zurich但平均区间显著变宽。原CSV与现行V136/V137保持，16可能／0必要冠军；不把标签当错误概率。自有稿5.5／表／摘要结论新闻已统一，23页零warning，全页检查完成。[V142全部16城内点见证](docs/handoff/V142_RESEARCH_UPDATE.md)、[V138采集优先级](docs/handoff/V138_RESEARCH_UPDATE.md)仍可复核。125条局部AI记录仍非全队史。
 
 
 | 想了解什么 | 入口 |
