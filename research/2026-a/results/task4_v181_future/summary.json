@@ -1,0 +1,821 @@
+{
+  "checks": {
+    "identity": true,
+    "ordinary_raw_reversibility": true,
+    "travel_moment_discrete_mixtures": 1000,
+    "sharp_endpoint_mixtures": true,
+    "singapore_invalid_power_shortcut_rejected": true,
+    "static_decisions_match_registered_helper": true,
+    "independent_raw_inversion": true,
+    "all_deterministic_unknown_cells_preserved": true,
+    "all_future_mc_draws_unknown_cells_preserved": true,
+    "adversarial_self_exclusion_and_equal_tie_credit": true,
+    "scalar_self_excluded_regret_rank_possible_and_tie_credit": true,
+    "threshold_independent_scan_points": 3232,
+    "threshold_crossing_sides": true,
+    "future_mc_independent_draws_per_setting": 3,
+    "future_mc_settings": 12,
+    "weight_mc_independent_draws_per_setting": 3,
+    "weight_mc_settings": 16,
+    "paired_mc_same_shocks_and_weights": true
+  },
+  "scenarios": [
+    {
+      "evidence_arm": "conditional",
+      "scenario": "baseline",
+      "weight_reference": "fixed",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 16.04938479240282
+    },
+    {
+      "evidence_arm": "conditional",
+      "scenario": "resource_expansion",
+      "weight_reference": "fixed",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 15.990326567531936
+    },
+    {
+      "evidence_arm": "conditional",
+      "scenario": "living_pressure",
+      "weight_reference": "fixed",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 16.211181031596144
+    },
+    {
+      "evidence_arm": "conditional",
+      "scenario": "balanced_improvement",
+      "weight_reference": "fixed",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 15.838475573324011
+    },
+    {
+      "evidence_arm": "conditional",
+      "scenario": "baseline",
+      "weight_reference": "equal",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 18.837940743079372
+    },
+    {
+      "evidence_arm": "conditional",
+      "scenario": "resource_expansion",
+      "weight_reference": "equal",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 18.730337332129366
+    },
+    {
+      "evidence_arm": "conditional",
+      "scenario": "living_pressure",
+      "weight_reference": "equal",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 18.95764210474978
+    },
+    {
+      "evidence_arm": "conditional",
+      "scenario": "balanced_improvement",
+      "weight_reference": "equal",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 18.66913669553627
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "scenario": "baseline",
+      "weight_reference": "fixed",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 16.34819259543987
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "scenario": "resource_expansion",
+      "weight_reference": "fixed",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 16.290014096113328
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "scenario": "living_pressure",
+      "weight_reference": "fixed",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 16.488298390230895
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "scenario": "balanced_improvement",
+      "weight_reference": "fixed",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 16.121660047639125
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "scenario": "baseline",
+      "weight_reference": "equal",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 19.092644058841465
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "scenario": "resource_expansion",
+      "weight_reference": "equal",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 18.98631303113823
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "scenario": "living_pressure",
+      "weight_reference": "equal",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 19.194024935983066
+    },
+    {
+      "evidence_arm": "withdraw_historical_stage_proxy",
+      "scenario": "balanced_improvement",
+      "weight_reference": "equal",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "mean_score_interval_width": 18.90983953888163
+    }
+  ],
+  "thresholds": [
+    {
+      "weight_reference": "fixed",
+      "city": "Vienna",
+      "baseline_gap_to_best_other": 7.295554442052065,
+      "gap_at_50pct_cost_reduction": 4.462233067994035,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Zurich",
+      "baseline_gap_to_best_other": -0.4862847137381223,
+      "gap_at_50pct_cost_reduction": -5.423405901755963,
+      "status": "already_strict_minimax",
+      "threshold_raw_multiplier": 1.0,
+      "required_cost_reduction_fraction": 0.0
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Helsinki",
+      "baseline_gap_to_best_other": 5.4070799036664425,
+      "gap_at_50pct_cost_reduction": 2.163515094816624,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Berlin",
+      "baseline_gap_to_best_other": 4.083295327529342,
+      "gap_at_50pct_cost_reduction": -1.5695871039193605,
+      "status": "crossing_found",
+      "threshold_raw_multiplier": 0.6191648729250411,
+      "required_cost_reduction_fraction": 0.3808351270749589,
+      "threshold_bracket": [
+        0.619164872925041,
+        0.6191648729250412
+      ],
+      "regret_gap_at_threshold": -7.105427357601002e-15,
+      "binding_best_other_cities": [
+        "Zurich"
+      ],
+      "strict_rule": "candidate regret is strictly below every other city regret; equality is a tied recommendation"
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "London",
+      "baseline_gap_to_best_other": 9.599542594178828,
+      "gap_at_50pct_cost_reduction": 5.864244736493205,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Amsterdam",
+      "baseline_gap_to_best_other": 12.335519612886415,
+      "gap_at_50pct_cost_reduction": 8.655875310642585,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Stockholm",
+      "baseline_gap_to_best_other": 2.6909725595874647,
+      "gap_at_50pct_cost_reduction": -2.4926725576385707,
+      "status": "crossing_found",
+      "threshold_raw_multiplier": 0.7112548896841254,
+      "required_cost_reduction_fraction": 0.2887451103158746,
+      "threshold_bracket": [
+        0.7112548896841253,
+        0.7112548896841255
+      ],
+      "regret_gap_at_threshold": 7.105427357601002e-15,
+      "binding_best_other_cities": [
+        "Zurich"
+      ],
+      "strict_rule": "candidate regret is strictly below every other city regret; equality is a tied recommendation"
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Paris",
+      "baseline_gap_to_best_other": 5.709389519906686,
+      "gap_at_50pct_cost_reduction": 2.0668247071886796,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Madrid",
+      "baseline_gap_to_best_other": 5.8115527393031385,
+      "gap_at_50pct_cost_reduction": 2.267570575473492,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Milan",
+      "baseline_gap_to_best_other": 8.742423850502774,
+      "gap_at_50pct_cost_reduction": 5.008347690220347,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Dublin",
+      "baseline_gap_to_best_other": 3.68117167927565,
+      "gap_at_50pct_cost_reduction": 0.040007441334701355,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Oslo",
+      "baseline_gap_to_best_other": 0.5198053923651216,
+      "gap_at_50pct_cost_reduction": -5.1798086034394615,
+      "status": "crossing_found",
+      "threshold_raw_multiplier": 0.9431501336963358,
+      "required_cost_reduction_fraction": 0.056849866303664176,
+      "threshold_bracket": [
+        0.9431501336963357,
+        0.9431501336963359
+      ],
+      "regret_gap_at_threshold": 0.0,
+      "binding_best_other_cities": [
+        "Zurich"
+      ],
+      "strict_rule": "candidate regret is strictly below every other city regret; equality is a tied recommendation"
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Prague",
+      "baseline_gap_to_best_other": 2.8423679948842206,
+      "gap_at_50pct_cost_reduction": -2.7808469998079772,
+      "status": "crossing_found",
+      "threshold_raw_multiplier": 0.7152619739609001,
+      "required_cost_reduction_fraction": 0.2847380260390999,
+      "threshold_bracket": [
+        0.7152619739609,
+        0.7152619739609001
+      ],
+      "regret_gap_at_threshold": 0.0,
+      "binding_best_other_cities": [
+        "Zurich"
+      ],
+      "strict_rule": "candidate regret is strictly below every other city regret; equality is a tied recommendation"
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Warsaw",
+      "baseline_gap_to_best_other": 7.318084504526688,
+      "gap_at_50pct_cost_reduction": 4.49201028210063,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Singapore",
+      "baseline_gap_to_best_other": 0.4862847137381223,
+      "gap_at_50pct_cost_reduction": -2.360846157071933,
+      "status": "crossing_found",
+      "threshold_raw_multiplier": 0.8969140956387414,
+      "required_cost_reduction_fraction": 0.10308590436125864,
+      "threshold_bracket": [
+        0.8969140956387412,
+        0.8969140956387414
+      ],
+      "regret_gap_at_threshold": 0.0,
+      "binding_best_other_cities": [
+        "Zurich"
+      ],
+      "strict_rule": "candidate regret is strictly below every other city regret; equality is a tied recommendation"
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Tokyo",
+      "baseline_gap_to_best_other": 10.856529020200675,
+      "gap_at_50pct_cost_reduction": 7.793436843730454,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Vienna",
+      "baseline_gap_to_best_other": 10.236515726278661,
+      "gap_at_50pct_cost_reduction": 7.742198536499195,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Zurich",
+      "baseline_gap_to_best_other": -3.3991441588396683,
+      "gap_at_50pct_cost_reduction": -7.933061357963737,
+      "status": "already_strict_minimax",
+      "threshold_raw_multiplier": 1.0,
+      "required_cost_reduction_fraction": 0.0
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Helsinki",
+      "baseline_gap_to_best_other": 8.875051345242355,
+      "gap_at_50pct_cost_reduction": 5.410832256140672,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Berlin",
+      "baseline_gap_to_best_other": 8.370645006922835,
+      "gap_at_50pct_cost_reduction": 3.5178243284422805,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "London",
+      "baseline_gap_to_best_other": 13.219253798503736,
+      "gap_at_50pct_cost_reduction": 9.95118400892693,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Amsterdam",
+      "baseline_gap_to_best_other": 15.75757346553241,
+      "gap_at_50pct_cost_reduction": 12.447399722873186,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Stockholm",
+      "baseline_gap_to_best_other": 7.3967637276430125,
+      "gap_at_50pct_cost_reduction": 2.975556185884045,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Paris",
+      "baseline_gap_to_best_other": 8.269992447907121,
+      "gap_at_50pct_cost_reduction": 4.249651126191743,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Madrid",
+      "baseline_gap_to_best_other": 9.843035330866911,
+      "gap_at_50pct_cost_reduction": 6.693087675506668,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Milan",
+      "baseline_gap_to_best_other": 12.210387599441852,
+      "gap_at_50pct_cost_reduction": 8.897949344927625,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Dublin",
+      "baseline_gap_to_best_other": 7.947048636578117,
+      "gap_at_50pct_cost_reduction": 4.232633721557335,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Oslo",
+      "baseline_gap_to_best_other": 3.3991441588396683,
+      "gap_at_50pct_cost_reduction": -1.4689069617089743,
+      "status": "crossing_found",
+      "threshold_raw_multiplier": 0.6287675906571804,
+      "required_cost_reduction_fraction": 0.37123240934281965,
+      "threshold_bracket": [
+        0.6287675906571802,
+        0.6287675906571804
+      ],
+      "regret_gap_at_threshold": 7.105427357601002e-15,
+      "binding_best_other_cities": [
+        "Zurich"
+      ],
+      "strict_rule": "candidate regret is strictly below every other city regret; equality is a tied recommendation"
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Prague",
+      "baseline_gap_to_best_other": 6.045653182463667,
+      "gap_at_50pct_cost_reduction": 1.2898102770337445,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Warsaw",
+      "baseline_gap_to_best_other": 10.975808301168144,
+      "gap_at_50pct_cost_reduction": 8.53399853128775,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Singapore",
+      "baseline_gap_to_best_other": 4.632406384683264,
+      "gap_at_50pct_cost_reduction": 2.1308648576775155,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Tokyo",
+      "baseline_gap_to_best_other": 16.558294646899547,
+      "gap_at_50pct_cost_reduction": 13.845099289122551,
+      "status": "not_reached",
+      "threshold_raw_multiplier": null,
+      "required_cost_reduction_fraction": null
+    }
+  ],
+  "version": "V181",
+  "primary": "V181",
+  "interpretation": "Unchanged hypothetical raw shocks and paired MC; not a fitted trend or forecast",
+  "scenario_definitions": {
+    "baseline": {},
+    "resource_expansion": {
+      "research_he_density": 0.1,
+      "public_transport_density": 0.1,
+      "public_pool_density": 0.1
+    },
+    "living_pressure": {
+      "cost_living_index": 0.1,
+      "price_income_ratio": 0.1,
+      "travel": 0.1
+    },
+    "balanced_improvement": {
+      "upper_secondary_ptr": -0.1,
+      "pm25": -0.1,
+      "travel": -0.1
+    }
+  }
+}

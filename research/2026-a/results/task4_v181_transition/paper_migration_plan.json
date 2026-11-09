@@ -1,0 +1,123 @@
+{
+  "version": "V181 staged research / future owned-paper migration plan",
+  "status": "Read-only manuscript inspection; no manuscript or registry edits",
+  "authoritative_review": "V179; primary evidence V154 until coordinated activation",
+  "authoritative_inputs": {
+    "drafts/task4_v179_paper.tex": "822fee1c07eb101b3f553370d82c6bfb4393f11fcec730435ab4f662503f6243",
+    "drafts/build_task4_v179.py": "14d591a543a0dfc8b5d1af9014ea5cb09167dab8e1295854aff1f7f0ca18669b",
+    "drafts/task4_v154_generated.tex": "d100aea75ed4a100c90954d08061edc6ba1ab3bfb6c038d88f6da584d96da430",
+    "drafts/build_task4_v154.py": "5929dd28280e0333f9b126fcdfd346a4bbbdcc06a54f5b57b3b183dc1480720c",
+    "drafts/task4_v164_front.tex": "14aa5eb5c4427218e696908d679578421a8de60a53253e6284ac1b602b0062a8",
+    "drafts/task4_v176_core.tex": "222b3285d73937217a702f248968e3ad4178883c3fd73ca9351913d0941c6ba1",
+    "drafts/task4_v164_conclusion.tex": "566d633ea1a3ab15203f1320ba78be1edbeceb96756744ada40b8aa9c363e7f4",
+    "drafts/task4_v154_news.tex": "2ee88fdb3efd80962709393fe1f711ad659a5fa7e69b335c4664fc77393e71a7",
+    "drafts/task4_v176_references.tex": "98f99a358d21384dde1da6fc20066b1e39214fca8efcc633d81609990fa87e91",
+    "drafts/task4_v179_ai.tex": "d964f1708df1c6fed8886f50be0f12662948b7635534853078d8d1dbb5def503",
+    "drafts/task4_v168_evidence_figure.tex": "3f399c7619b087509ba3503d1225683c49aef26d406ded9038e1dcd51eba8c77",
+    "drafts/task4_v168_evidence_assets/identification_matrix.pdf": "6df13cedeb39c0faaa1b017fdb021f564b5b27cdb4ceedd773e22539302c7313",
+    "drafts/task4_v172_country_figure.tex": "128111720d02bd48c4b5b4226977126a49c74e2df882031f76cab2122bf16c19",
+    "drafts/task4_v154_assets/baseline.tex": "457e4510195c9af4936f96fc5babaf3e15847032a186b7e6a77eaf56f1130de2",
+    "drafts/task4_v154_assets/revision.tex": "0474507289e15b31a61a01d1cf98eaf329818aa527469966423c9b110df81376",
+    "drafts/task4_v154_assets/preferences.tex": "770879db767db558d938f4723d5b02e3fe408476c6bc652322223df04d91056c",
+    "drafts/task4_v154_assets/vintage.tex": "b71f96f8a8044190bae41e2433364bd095eb2d142af49741ab568e0e241c90a6",
+    "drafts/task4_v154_assets/vintage_table.tex": "ebf7ec0c4aee680e62c6a4294e9c5a6bebf16c5be98d63de5f17219a47616257",
+    "drafts/task4_v154_assets/score_intervals.pdf": "1349035952a1e4b57cdae089498189d5321279ec68e9a514568ab0cfcc40df7a"
+  },
+  "build_strategy": "Create a new builder based on current V179 input graph. Regenerate numerical macros/assets from V181; retain current V164 format/front/conclusion and V176 core edits including fairness, V168 matrix, V172 country figure and V176 MC interpretation. Do not rerun V154 builder into frozen paths: it reconstructs earlier V137 prose and loses later revisions.",
+  "replacements": [
+    {
+      "artifact": "new generated.tex",
+      "source": "results/task4_user_v181_revision/current_ranks.csv and four task4_v181_* extension summaries/tables",
+      "requirements": [
+        "CurrentMeanWidth16.04938; recalculate cumulative reduction from frozen original18.81077 without rounding denominator first",
+        "LatestEvidenceChange must describe Amsterdam32 and V15416.06144->V18116.04938, not Milan104 latest",
+        "MethodComparison fixed tau0.48333333333333334, equal0.65; fixed Dublin VIKOR accepted, equal Oslo not accepted unique",
+        "PreferenceEvidenceChange can report Amsterdam baseline concentration100 mean rank15.6929->15.6505; recommendation frequency0 in both",
+        "Recompute every future threshold, deterministic ordering, preference tau and MC output from new exports even when unchanged"
+      ]
+    },
+    {
+      "artifact": "new front/core/conclusion/news",
+      "requirements": [
+        "22/twenty-two supplements ->23/twenty-three in abstract/core/news",
+        "112points34partial14unknown ->112points35partial13unknown",
+        "Remaining missing8teacher+2transit+3travel",
+        "Keep48nonpoint entries: classification shifts unknown to partial, not new point",
+        "Add concise source paragraph for conditional2026 Amsterdam mapped station groups with retained2025 population941927; no2025 inventory claim;100m screen not positional-error guarantee",
+        "Update conclusion hardcoded14.62 percent using exact source; preserve caveats and decision rule"
+      ]
+    },
+    {
+      "artifact": "new references",
+      "base": "task4_v176_references.tex",
+      "requirements": [
+        "Append verified municipality Maps inventory/metadata and CBS2025 boundary references supporting Amsterdam selection",
+        "Preserve municipal redistribution notice in selected data appendix/materials; municipality terms are not CC BY; CBS boundary CC BY4.0"
+      ]
+    },
+    {
+      "artifact": "new baseline.tex,revision.tex,preferences.tex,vintage.tex,vintage_table.tex,source_intervals.csv,score_intervals.pdf/svg/png",
+      "base_builder": "drafts/build_task4_v154.py numerical sections only",
+      "requirements": [
+        "Read V181 primary and extensions",
+        "Regenerate all source-dependent values even if rankings unchanged",
+        "Vintage prose fixed mean16.0493847924->48.4103042767 rounds16.05->48.41, rather than old16.06->48.42",
+        "Recompute interior minimum margins from V181 diagnostics",
+        "Keep historical country/age/fairness tables byte-identical"
+      ]
+    },
+    {
+      "artifact": "new evidence matrix and figure wrapper",
+      "base_research_script": "scripts/task4_v167_evidence_figure.py with V168 corrected Travel burden label",
+      "requirements": [
+        "Import V181 factory; source160rows; only Amsterdam/transit changes",
+        "Counts112/35/13,8pupil-teacher; questionmarks13cells+legend=14",
+        "Update source labels/caption fromV154 toV181",
+        "Copy selected new matrix assets to fresh Overleaf path and use new wrapper, not task4_v168_evidence_assets frozen graphic",
+        "Inserted font>=9pt; current figure10pt at6.5in"
+      ]
+    },
+    {
+      "artifact": "new AI.tex",
+      "base": "task4_v179_ai.tex",
+      "requirements": [
+        "Preserve exact frozenV178 transcript cutoff/counts and incomplete-history status",
+        "Update final validation paragraph V154 references to current checkedV181 outputs; this is not permission to extend frozen capture or claim full history"
+      ]
+    }
+  ],
+  "mc_certificate_dependencies": {
+    "frozen_certificate_script": "scripts/task4_v169_mc_precision.py",
+    "frozen_comparison_script": "scripts/task4_v175_mean_rank_comparisons.py",
+    "new_input_tables": [
+      "results/task4_v181_preferences/mc_city_summary.csv",
+      "results/task4_v181_future/future_mc_city_summary.csv",
+      "results/task4_v181_future/weight_mc_city_summary.csv"
+    ],
+    "required_actions": [
+      "Regenerate simultaneous bands and source-hash manifest for V181 exports into new directory; old V169 is bound to V154",
+      "Verify9 preference+12future-shock+16weight-only=37settings and2064base means before keeping theorem constants",
+      "With same counts/n10000, normalized Hoeffding bound remains same algebraically, but new estimates and clipped intervals must be recomputed",
+      "Regenerate37 mean-rank groups592means and4440unordered within-setting comparisons; do not carry old4254resolved/186unresolved or22unique minima without check",
+      "Baseline Oslo2.1092/Zurich2.2620 remain in observed V181 tables; difference sample-.1528 and theorem interval need identity confirmation in new certificate",
+      "Keep within-settingIID condition, shared-draw allowance, conditional MC interpretation and no real-world win probability claim"
+    ],
+    "paper_direct_block": "task4_v176_core.tex section6.3 embeds literal2.1092/2.2620/2064/37/2.38pp/.357/[-.867,.561]; changing generated macros alone does not update it"
+  },
+  "activation_gates": [
+    "Independent V181 science/extension audit",
+    "New owned paper, all figures and certificate numerically consistent",
+    "Compile local native mcmthesis/root proxy; inspect rendered pages and page count; currentmain24+AI2 leaves1mainpage",
+    "Rebind review delivery/checklist and PDF hash; keep actual controlPENDING",
+    "Only after coordinated verification advance primary/extension/review registries; preserve teammate main/ref/class/default entry",
+    "Fetch/review exact diff and push both remotes independently; Git push does not verify online compile or contest submission"
+  ],
+  "numerical_certificates_rebased_in_research": {
+    "precision": "results/task4_v181_mc_precision",
+    "mean_rank_comparisons": "results/task4_v181_mean_rank_comparisons",
+    "certified_pairs": 4255,
+    "unresolved_pairs": 185,
+    "settings_with_unique_smallest_expected_mean_rank": 22,
+    "note": "New V181 exports; replace old V169/V175 paper statistics only after final independent audit."
+  }
+}

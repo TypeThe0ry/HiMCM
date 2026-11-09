@@ -1,0 +1,127 @@
+{
+  "version": "V181",
+  "method_cases": [
+    {
+      "evidence_version": "V181",
+      "weight_reference": "fixed",
+      "topsis_midpoint_winners": [
+        "Zurich"
+      ],
+      "vikor_q_winners": [
+        "Dublin"
+      ],
+      "kendall_tau_b": 0.48333333333333334,
+      "vikor_v": 0.5,
+      "acceptable_advantage_threshold": 0.06666666666666667,
+      "first_second_Q_gap": 0.21320297449169565,
+      "acceptable_advantage": true,
+      "acceptable_stability": true,
+      "single_compromise_accepted": true,
+      "main_minimax_choices": [
+        "Zurich"
+      ],
+      "main_possible_champion_count": 16
+    },
+    {
+      "evidence_version": "V181",
+      "weight_reference": "equal",
+      "topsis_midpoint_winners": [
+        "Zurich"
+      ],
+      "vikor_q_winners": [
+        "Oslo"
+      ],
+      "kendall_tau_b": 0.65,
+      "vikor_v": 0.5,
+      "acceptable_advantage_threshold": 0.06666666666666667,
+      "first_second_Q_gap": 0.039699235353291784,
+      "acceptable_advantage": false,
+      "acceptable_stability": false,
+      "single_compromise_accepted": false,
+      "main_minimax_choices": [
+        "Zurich"
+      ],
+      "main_possible_champion_count": 16
+    }
+  ],
+  "same_country_pairs_in_main16": 0,
+  "historical_case_scope": "Original case labels, years and source scope retained verbatim; none is inserted into V136 user16. Shanghai2025, Istanbul2012 and Singapore2020 remain independent cases.",
+  "frozen_case_sha256": {
+    "country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa",
+    "country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "user16_country_coverage.csv": "5627fcafcd902d3ca9c14d80026d75c2637192d62445f61da3061a3957507e4e",
+    "shanghai_district_resources.csv": "1dd303f0fb9ddf7413051764b4790716717e48c7d8f94cc95467f89652e6f818",
+    "istanbul_historical_age_groups.csv": "b4072312d9cedb8b657c1836465f8471a1f20b96aa15d136f07f351884c2f34b",
+    "singapore2020_secondary_exact_age_counts.csv": "5569790bf18c6543454ef1c84d86faa632a53b19126fd85a1482ff859a7dc560"
+  },
+  "country_pairs": [
+    {
+      "country": "United States",
+      "city_a": "Phoenix",
+      "city_b": "New York",
+      "evidence_version": "legacy25 V117; separate from user16 V121",
+      "a_score_lower": 31.39060820931906,
+      "a_score_upper": 71.68091378914416,
+      "b_score_lower": 30.217703383675584,
+      "b_score_upper": 72.80592622514423,
+      "a_necessarily_strictly_better": false,
+      "b_necessarily_strictly_better": false,
+      "a_possible_pairwise_winner": true,
+      "b_possible_pairwise_winner": true
+    },
+    {
+      "country": "India",
+      "city_a": "Mumbai",
+      "city_b": "Delhi",
+      "evidence_version": "legacy25 V117; separate from user16 V121",
+      "a_score_lower": 28.8218173040749,
+      "a_score_upper": 60.6424758195191,
+      "b_score_lower": 32.59044231172556,
+      "b_score_upper": 63.89547851443059,
+      "a_necessarily_strictly_better": false,
+      "b_necessarily_strictly_better": false,
+      "a_possible_pairwise_winner": true,
+      "b_possible_pairwise_winner": true
+    }
+  ],
+  "country_comparability": "Common indicator utility definitions/anchors and weights; retain legacy mixed vintages and spatial/stage limits. No harmonized same-year pair dataset or national causal effect.",
+  "equity": {
+    "city": "Shanghai",
+    "year": 2025,
+    "separate_historical_case": true,
+    "districts": 16,
+    "students": 235542,
+    "teacher_headcount": 23999,
+    "pooled_utility": 0.6044814089033747,
+    "student_weighted_district_utility": 0.6032669110089597,
+    "aggregation_gap": 0.0012144978944149676,
+    "relative_gap_percent": 0.20091567358841686,
+    "district_utility_min": 0.5736194057361941,
+    "district_utility_max": 0.6576780568135036,
+    "district_ptr_min": 7.807511737089202,
+    "district_ptr_max": 11.149742930591259,
+    "bottom20_student_mass_district_utility": 0.5809535784606843,
+    "bottom20_gap_from_student_mean": 0.02231333254827539,
+    "scope": "School-location counts for regular senior-secondary pupils and full-time teacher headcount; excludes vocational, not FTE. Fractional bottom20 assumes district-homogeneous exposure, not observed individual experience or resident accessibility.",
+    "main_user16_scores_changed": false
+  },
+  "age_evidence": {
+    "istanbul_year": 2012,
+    "exact_age14_vs18_identified": false,
+    "age_groups_available": [
+      "14–15",
+      "16–18"
+    ],
+    "marginal_intervals_overlap": true,
+    "observed_mean_scope": "Only observed home-school journeys; missing-duration and optional members retained in utility bounds",
+    "joint_attainability_note": "Marginal bounds: the same 612 weight of unknown-age optional students may belong to either age group; it is not counted twice in the combined-city calculation. Age-group extrema cannot be assumed jointly attainable.",
+    "singapore_secondary_age_totals": {
+      "14 YRS": 38555,
+      "18 YRS": 165
+    },
+    "singapore_age_scope": "Age at start of2020; MOE secondary enrolment, no citizenship joint table or Census reference-day/travel coverage match",
+    "age_specific_preferences_observed": false,
+    "no_new_age_weights": true,
+    "main_user16_scores_changed": false
+  }
+}

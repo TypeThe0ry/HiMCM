@@ -1,0 +1,160 @@
+{
+  "version": "V181",
+  "revision_diagnostics": [
+    {
+      "weight_reference": "fixed",
+      "changed_city_decision_ranks": 13,
+      "kendall_tau_b": 0.5833333333333334
+    },
+    {
+      "weight_reference": "equal",
+      "changed_city_decision_ranks": 15,
+      "kendall_tau_b": 0.65
+    }
+  ],
+  "vintage_cases": [
+    {
+      "scenario": "baseline",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 0,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 16.04938479240282
+    },
+    {
+      "scenario": "pre2020_points",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 13,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "mean_interval_width": 21.124688486086583
+    },
+    {
+      "scenario": "after2025_points",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 64,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 48.41030427670947
+    },
+    {
+      "scenario": "non_ok_points",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 28,
+      "minimax_choices": [
+        "Berlin"
+      ],
+      "mean_interval_width": 29.105044216111956
+    },
+    {
+      "scenario": "union_points",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 95,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "mean_interval_width": 68.7843298210694
+    },
+    {
+      "scenario": "withdraw_Zurich_homicide",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 1,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "mean_interval_width": 16.562218912254835
+    },
+    {
+      "scenario": "withdraw_Amsterdam_homicide",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 1,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 16.680940610598093
+    },
+    {
+      "scenario": "baseline",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 0,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 18.837940743079372
+    },
+    {
+      "scenario": "pre2020_points",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 13,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 24.72149256893947
+    },
+    {
+      "scenario": "after2025_points",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 64,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 47.58457344301934
+    },
+    {
+      "scenario": "non_ok_points",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 28,
+      "minimax_choices": [
+        "Paris"
+      ],
+      "mean_interval_width": 31.55338832542915
+    },
+    {
+      "scenario": "union_points",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 95,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "mean_interval_width": 67.69300552415126
+    },
+    {
+      "scenario": "withdraw_Zurich_homicide",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 1,
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_interval_width": 19.303497320069454
+    },
+    {
+      "scenario": "withdraw_Amsterdam_homicide",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 1,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 19.403669106102797
+    }
+  ],
+  "hypothetical_rate_thresholds": [
+    {
+      "weight_reference": "fixed",
+      "rate_per100000": 0.2300179961846239
+    },
+    {
+      "weight_reference": "equal",
+      "rate_per100000": 0.9047272572671942
+    }
+  ],
+  "minimum_strict_margin_by_weight": {
+    "fixed": 4.974496094214892,
+    "equal": 5.322597403730057
+  },
+  "uncertain_cells": 48,
+  "point_cells": 112,
+  "scope": "Same established point withdrawal, midpoint diagnostic, interior witnesses and hypothetical cutoffs rebased to V181; none is observation or prediction"
+}

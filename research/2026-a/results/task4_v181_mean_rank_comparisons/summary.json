@@ -1,0 +1,27 @@
+{
+  "version": "V181",
+  "primary_science": "V181 staged",
+  "current_paper": "V179 unchanged",
+  "settings": 37,
+  "unordered_within_setting_pairs": 4440,
+  "certified_pairs": 4255,
+  "unresolved_pairs": 185,
+  "settings_with_unique_smallest_expected_mean_rank": 22,
+  "inherited_common_event_base_means": 2064,
+  "inherited_familywise_alpha": 0.05,
+  "additional_multiplicity_penalty": false,
+  "scope": "Expected mean decision ranks under declared conditional simulation laws; smaller is better. No real-world winner claim.",
+  "arithmetic": "[L_a-U_b,U_a-L_b]; strict signs use 1e-12 numerical guard",
+  "raw_draws_replayed": false,
+  "new_data_admitted": 0,
+  "model_changed": false,
+  "manuscript_changed": false,
+  "input_sha256": {
+    "results/task4_v181_mc_precision/mean_bounds.csv": "e1b381a7f01c8c008e323cac4efe23af5c16638b227b2b72b5108ccebe004259",
+    "results/task4_v181_mc_precision/summary.json": "e67196925e30f0fc95c8a457831ba1786d10f7f9de5654df28da4d0c2831ecf7",
+    "design/task4_user_current_review.json": "ae0f64e07bbc54d69ffaa04bd1fbc5599b378801846557af340a70f43fa15871",
+    "scripts/task4_v181_mean_rank_comparisons.py": "9bc90b964f96f8eee28e72e5d79907bd250548e2ed8ce239593b3c8764563c8a"
+  },
+  "science_files_unchanged": 187,
+  "existing_paper_files_unchanged": 647
+}
