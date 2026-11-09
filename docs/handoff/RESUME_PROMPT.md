@@ -1,6 +1,6 @@
-# 接手续做HiMCM：V136主数据／V137扩展，文档V145
+# 接手续做HiMCM：V136主数据／V137扩展，文档V146
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md及[V145当前交接](V145_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md及[V146当前交接](V146_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -16,12 +16,12 @@
 
 ## 论文和复核
 
-相邻/data/projects/HiMCM-Overleaf的drafts/task4_v137_paper.tex/.pdf是完整自有独立审阅稿，文件名不改、文档修订V145。23页=21主文参考+2暂定AI；新闻16–17，参考18–21，AI22–23。PDF155422字节，SHA9568008dd2faf49408c9a2c512d630d756077337c5a35a10f37c26b239cbeced。零warning，23页95dpi全页实看；与Overleaf41a91e7相比20页像素保持。原V131/V134及更早稿冻结，74历史稿受保护。
+相邻/data/projects/HiMCM-Overleaf的drafts/task4_v137_paper.tex/.pdf是完整自有独立审阅稿，文件名不改、文档修订V146。24页=22正文参考+2暂定AI；新闻16–17，参考18–22，AI23–24。PDF161143字节，SHA56161bffae0008bb25ab745e6a0408b97bcee5556b3f562c34442c7964add533。零warning，24页95dpi实看、7／22页单独检查。139科学文件／56旧资产章节／74历史稿保护通过；原V131/V134及更早稿冻结。
 
 - 研究Python .venv-v120/bin/python（3.11、numpy1.26、pandas2.3、scipy1.13）；tectonic0.17、Poppler。root账户，项目/data/projects，大原件/data/datasets，临时/data/scratch；不重建环境。
 - V136 snapshot10项、原revision_audit及V137 audit55输出冻结。启用后16静态／24×10000同流MC和撤回已通过，无新科学风险不重复全量跑。复核老审计另写recheck，不覆盖原capture。
 - 新源data/task4_v144_homicide/extract.py可从Git内原XLSX／HTML和完整lossless PDF复抽。scripts/task4_v144_homicide_sensitivity.py生成情景，audit_task4_v144_homicide.py独立核128城市情景／256得分界、全部排名、原表单位／期间。原verification保留。
-- 当前文档审计scripts/audit_task4_v145_documentation.py保护139科学／55原资产章节／74历史稿、全部7自有章节保持，2新阈值副本匹配；results/task4_v145_documentation存QA／manifest／编译／sync回执。旧V144/V143/V142交付哈希是历史，不用旧回执检验新PDF。
+- 当前文档审计scripts/audit_task4_v146_documentation.py保护139科学／56旧资产章节／74历史稿，core与references补六来源引用；results/task4_v146_documentation存QA／manifest／编译／sync回执。来源覆盖脚本task4_v146_source_coverage.py和独立审计核160格／320界，所有21补充有cite，15全缺失为8师资／4交通／3出行。旧交付哈希为历史，不检验当前PDF。
 - Overleaf builder build_task4_v137.py先核冻结源和新审计；只改叙述／来源用--refresh-manifest-only，不重生主图／宏。新PDF每轮首次authoring按PDF技能marker一次，编译捕获stdout/stderr，checker --compiler-output LOG，实际看完全部渲染才加--render-review-confirmed。
 - 权重8×.1125，transport／pools各.05；equal各.1。收益x/(a+x)，成本a/(a+x)，锚点2/15/100/10/15/1/50/travel30/100/1。travel exp(-t/30)，均值只Jensen界，分箱／未知／开尾按原规则；距离权重只乘一次。自排除竞争上界、minimax regret保守决策。MC为条件频率，偏好非学生调查，未来情景非经验趋势。
 

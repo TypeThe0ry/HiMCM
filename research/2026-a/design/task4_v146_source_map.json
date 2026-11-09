@@ -1,0 +1,196 @@
+{
+  "primary": "V136 user16",
+  "extensions": "V137",
+  "before_overleaf_commit": "024f9b6",
+  "rows": [
+    {
+      "city": "Singapore",
+      "indicator": "public_transport_density",
+      "admission_version": "V118",
+      "bibkey": "sgbus_lta",
+      "admission_manifest": "design/task4_user_v118_admissions.json",
+      "primary_url": "https://data.gov.sg/datasets/d_3f172c6feb3f4f92a2f47d93eed2908a/view",
+      "scope": "LTA2026 catalogue:5205 distinct nonempty bus-stop codes, bus-only subset; no50m clustering or independent operating-status census. Uses unchanged attachment2024population."
+    },
+    {
+      "city": "Singapore",
+      "indicator": "public_pool_density",
+      "admission_version": "V118",
+      "bibkey": "sgpool_2025",
+      "admission_manifest": "design/task4_user_v118_admissions.json",
+      "primary_url": "https://www.activesgcircle.gov.sg/read/editors-pick-must-hit-pools-in-singapore",
+      "scope": "Seven official named2025ActiveSG public swimming venues; partial supply inventory. Uses unchanged attachment2024population."
+    },
+    {
+      "city": "Warsaw",
+      "indicator": "upper_secondary_ptr",
+      "admission_version": "V118",
+      "bibkey": "warsawedu2025",
+      "admission_manifest": "design/task4_user_v118_admissions.json",
+      "primary_url": "https://new.stat.gov.pl/en/publications-portal/statistical-yearbook-warsaw-2025",
+      "scope": "Reuse existing admitted2024/25 Warsaw six youth school-route resource bounds, allownership, school-location not residents; teacherFTE not headcount. Adult general teacher allocation and unit-rounding uncertainty retained. Fills empty attachment school-ratio slot only."
+    },
+    {
+      "city": "Zurich",
+      "indicator": "public_pool_density",
+      "admission_version": "V118",
+      "bibkey": "zurichpool",
+      "admission_manifest": "design/task4_user_v118_admissions.json",
+      "primary_url": "https://www.stadt-zuerich.ch/de/stadtleben/sport-und-erholung/sport-und-badeanlagen/hallenbaeder.html",
+      "scope": "Current official directory of seven public indoor pool venues, accessed2026-11-08;2026facilitysnapshot divided by unchanged2025attachmentpopulation. Excludes school pools, river/lake baths and outdoor venues; partial inventory."
+    },
+    {
+      "city": "Milan",
+      "indicator": "public_pool_density",
+      "admission_version": "V118",
+      "bibkey": "milanpool2025",
+      "admission_manifest": "design/task4_user_v118_admissions.json",
+      "primary_url": "https://www.milanosport.it/workspace/uploads/nuovi-tariffari-1-giugno-2025-agg-9-10-2025.pdf",
+      "scope": "Official public indoor swimming tariff effective2025-06-01 names13 tariff-A venues and4 tariff-B venues. Count physical facility names once; current operator directory corroborates venue identities. Partial inventory; other operators/outdoor venues unknown."
+    },
+    {
+      "city": "Oslo",
+      "indicator": "public_transport_density",
+      "admission_version": "V118",
+      "bibkey": "oslo",
+      "admission_manifest": "design/task4_user_v118_admissions.json",
+      "primary_url": "https://geodata.bymoslo.no/arcgis/rest/services/geodata/Temadata_Publikum/MapServer/800/query?f=json&where=1%3D1&outFields=objectid%2Cnavn%2Ctransporttype%2Choldeplasstype%2Cdatakilde%2Ckopidato%2Cretning&returnGeometry=true&outSR=4326",
+      "scope": "Oslo municipality 0301; named metro stations only, platforms deduplicated by exact station name"
+    },
+    {
+      "city": "Zurich",
+      "indicator": "public_transport_density",
+      "admission_version": "V120",
+      "bibkey": "vbz",
+      "admission_manifest": "design/task4_user_v120_admissions.json",
+      "primary_url": "https://www.stadt-zuerich.ch/content/dam/vbz/de/die-vbz/zahlen-fakten/geschaeftsbericht/Z4690_VBZ_FB-2025_Web.pdf",
+      "scope": "VBZ2025 facts PDFpage6 gives446 stops on city territory, separately235agglomeration stops. Official2020 council definition distinguishes stops from usually two directional platform edges. Published aggregate stop unit accepted; no independent named-stop deduplication of2025total. Operator inventory, not all-operator completeness."
+    },
+    {
+      "city": "Helsinki",
+      "indicator": "public_transport_density",
+      "admission_version": "V120",
+      "bibkey": "helsinki",
+      "admission_manifest": "design/task4_user_v120_admissions.json",
+      "primary_url": "https://kaupunkiliikenne.fi/liikennointi/metrolla/",
+      "scope": "Current official operator explicitly partitions30metro stations into19Helsinki and11Espoo. Count19unique stations once, not line memberships or platforms. November2026snapshot; not retrospectively labeled2025. Other modes unknown."
+    },
+    {
+      "city": "Singapore",
+      "indicator": "travel",
+      "admission_version": "V120",
+      "bibkey": "singapore",
+      "admission_manifest": "design/task4_user_v120_admissions.json",
+      "primary_url": "",
+      "scope": "Resident school travellers in published education stages in 2020; excludes home study and overseas >=6 months. Stage means do not identify ages14-18 or2025 outcomes. All-stage denominator from Table93; unrepresented resident students retain utility[0,1]. Convex hull leaves stage mixture unknown. These are weighted household survey estimates, not complete headcounts. Conditional on published survey estimates; not a sampling confidence interval."
+    },
+    {
+      "city": "Prague",
+      "indicator": "upper_secondary_ptr",
+      "admission_version": "V120",
+      "bibkey": "prague",
+      "admission_manifest": "design/task4_user_v120_admissions.json",
+      "primary_url": "",
+      "scope": "Prague city-region schools; all secondary school founders, all study modes incl non-daytime/adults; subtract compulsory-school pupils and lower-gymnasium teaching FTE. Not resident-only or age14-18-specific; excludes separately reported conservatoires."
+    },
+    {
+      "city": "Stockholm",
+      "indicator": "upper_secondary_ptr",
+      "admission_version": "V121",
+      "bibkey": "kolada",
+      "admission_manifest": "design/task4_user_v121_admissions.json",
+      "primary_url": "",
+      "scope": "Upper-secondary school years 1-3, schools located in Stockholm municipality, all providers, pupils per teacher FTE; 15 October snapshot. School-resource proxy, not ages14-18 resident-only measurement."
+    },
+    {
+      "city": "Stockholm",
+      "indicator": "public_transport_density",
+      "admission_version": "V121",
+      "bibkey": "stockholmmetro2025",
+      "admission_manifest": "design/task4_user_v121_admissions.json",
+      "primary_url": "https://meetingspublic.stockholm.se/welcome-sv/namnder-styrelser/hasselby-vallingby-stadsdelsnamnd/mote-2025-12-18/agenda/6-lagesbild-2025-samverkansoverenskommelse-mellan-hasselby-vallingby-sdf-och-lokalpolisomrade-vallingbypdf?downloadMode=open",
+      "scope": "2025 city/police report PDF page11, printed10:13 metro stations, explicitly8 in Bromma plus5 in Hässelby-Vällingby. Previous page states both districts are within Stockholm municipality; the police area also covers Ekerö, but none of the13 is assigned to Ekerö. Stations, not directional platforms. Subset of city metro inventory, not all modes."
+    },
+    {
+      "city": "Paris",
+      "indicator": "public_transport_density",
+      "admission_version": "V121",
+      "bibkey": "apur",
+      "admission_manifest": "design/task4_user_v121_admissions.json",
+      "primary_url": "https://www.apur.org/sites/default/files/atlas_activites_paris_immobilier.pdf",
+      "scope": "March2022 Apur inventory PDF page37:244 metro stations inside Paris intra-muros, including58 interchange stations, distinguished from332 line stop-points. Only244 used, no addition of RER stations with unassessed interchange overlap. Underlying sources explicitly RATP2021 and Apur BDÉquipement2022. Historical inventory with unchanged2023 attachment population."
+    },
+    {
+      "city": "Dublin",
+      "indicator": "public_transport_density",
+      "admission_version": "V121",
+      "bibkey": "dublin",
+      "admission_manifest": "design/task4_user_v121_admissions.json",
+      "primary_url": "https://www.dublincity.ie/sites/default/files/2024-04/06-dublin-city-centre-transport-plan-public-transport-technical-note.pdf",
+      "scope": "2023 City Centre Transport Plan technical note, issued2024, PDF page23/printed20 Figure3-7 Existing Luas Infrastructure within Study Area. Manual inventory retains19 distinctly named tram stops plotted inside the red city-centre study boundary; full labels and exclusions in manual_figure_readings.json and source-page PNG. The city-centre study is inside the city proper, not the wider Luas region. Other plotted stops are omitted rather than assigned by assumed regional coverage."
+    },
+    {
+      "city": "Stockholm",
+      "indicator": "public_pool_density",
+      "admission_version": "V121",
+      "bibkey": "stockpool",
+      "admission_manifest": "design/task4_user_v121_admissions.json",
+      "primary_url": "",
+      "scope": "Current municipal public swimming-facility subset in Stockholm. 13 distinct named facilities, excluding Vällingby closed for renovation; includes Nälstabadet, operated year-round during that renovation. Count facilities once, not individual basins. Current web snapshot with fixed attachment population."
+    },
+    {
+      "city": "Madrid",
+      "indicator": "public_transport_density",
+      "admission_version": "V124",
+      "bibkey": "madridmetro",
+      "admission_manifest": "design/task4_user_v124_admissions.json",
+      "primary_url": "",
+      "scope": "CRTM metro station records tagged province28/municipality079 (Madrid city); group 240 named route-bearing records by 191 nonnull provider network-station codes. Noviciado/Plaza de España and Embajadores/Acacias are each conservatively consolidated as one linked complex. Two unnamed/no-line records and 51 outside-city records omitted. No bus, commuter rail or light-rail count is added."
+    },
+    {
+      "city": "Tokyo",
+      "indicator": "public_pool_density",
+      "admission_version": "V124",
+      "bibkey": "nerimapool",
+      "admission_manifest": "design/task4_user_v124_admissions.json",
+      "primary_url": "https://www.city.nerima.tokyo.jp/shisetsu/koen/index.html",
+      "scope": "Five distinct-address Nerima municipal indoor swimming venues, wholly inside Tokyo23 special-ward scope. Other Tokyo wards/providers uncounted. Venues, not basins, swimming lanes, capacity or operators."
+    },
+    {
+      "city": "Prague",
+      "indicator": "public_transport_density",
+      "admission_version": "V127",
+      "bibkey": "pidmetro",
+      "admission_manifest": "design/task4_user_v127_admissions.json",
+      "primary_url": "https://pid.cz/zastavky-pid/zastavky-v-praze/",
+      "scope": "57 unique named metro station complexes listed with A/B/C route timetables in official Prague-only PID stop-list responses (in_prague=1), accessed2026-11-09. Same named interchange counted once regardless of two serving lines. Official current Flora closure corroborates its absence; Florenc retains service with restricted exits/accessibility. Other modes/operators uncounted."
+    },
+    {
+      "city": "Vienna",
+      "indicator": "public_transport_density",
+      "admission_version": "V127",
+      "bibkey": "viennaogd",
+      "admission_manifest": "design/task4_user_v127_admissions.json",
+      "primary_url": "",
+      "scope": "99 unique metro DIVA station areas in the2026 versioned operator register. Join metro route patterns through stopping positions, require municipality label Wien and points inside official Vienna polygon, and cross-match all99 with the separate official existing U-Bahn station layer. Nine explicit spelling aliases also pass coordinate checks. The broad1695-name all-mode register is rejected because it contains depot/non-passenger movements. Other public transport facilities remain uncounted."
+    },
+    {
+      "city": "Berlin",
+      "indicator": "public_transport_density",
+      "admission_version": "V130",
+      "bibkey": "bvg",
+      "admission_manifest": "design/task4_user_v130_admissions.json",
+      "primary_url": "https://www.bvg.de/de/verbindungen/linienuebersicht",
+      "scope": "100unique official BVG station slugs with station-level zoneA classifier in current U1-U9 route-profile embedded objects, accessed2026-11-09. BVG explicitly defines A as Berlin inner city through S-Bahn ring; only that inner-city subset is selected. Cross-line slugs collapse131line occurrences to100station complexes. No B/C region, platform, exit or S-Bahn appearance added."
+    },
+    {
+      "city": "London",
+      "indicator": "public_transport_density",
+      "admission_version": "V136",
+      "bibkey": "tflinventory",
+      "admission_manifest": "design/task4_user_v136_admissions.json",
+      "primary_url": "",
+      "scope": "Exact Zone1 NaptanMetroStation objects only, point-in-ONS London region E12000007; hub dedup plus two conservative omissions. Other modes/zones remain uncounted."
+    }
+  ]
+}
