@@ -12,20 +12,13 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V137完整稿与启用记录](docs/handoff/V137_COMPLETE_REVIEW.md)。现行主数据为16城V136（112点／33部分／15全缺失），V137扩展与完整独立稿已统一（文档V148，24页）；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V131（文档V134）及更早稿冻结。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城V154主数据、受控扩展与独立完整稿已统一：112点／34部分／14全缺失，累计22项补充，24页。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
 
-最新文档：[V148：年龄组差异的联合边界](docs/handoff/V148_RESEARCH_UPDATE.md)。历史2012两组共享未知年龄质量只分配一次，差值闭包[-0.23330,0.26325]；两个有限旅时见证验证两种顺序均可行。非精确14／18岁当前差异或偏好证据。主数据不改、0准入、0主得分收窄；24页零警告，仅第14页改变，其余23页像素保持。
+本轮Milan历史库存补数使固定权重平均评分区间宽度16.08933→16.06144，实际收窄0.02790分，累计收窄14.62%。[模型入口](research/2026-a/design/task4_user_current_model.json)、[扩展入口](research/2026-a/design/task4_user_current_extensions.json)、[验证](research/2026-a/results/task4_v154_transition/README.md)。
 
+历史支持：[V148年龄联合界](docs/handoff/V148_RESEARCH_UPDATE.md)、[V149旧PDF交付清单](docs/handoff/V149_RESEARCH_UPDATE.md)、[V150 Madrid候选](docs/handoff/V150_RESEARCH_UPDATE.md)、[V151旧根代理](docs/handoff/V151_RESEARCH_UPDATE.md)、[V152历史尾部证据候选](docs/handoff/V152_RESEARCH_UPDATE.md)、[V153 Milan来源审计（已纳入V154）](docs/handoff/V153_RESEARCH_UPDATE.md)。V149不自动覆盖新稿；真实控制号、完整AI史及最终整合／上传证据仍待完成。
 
-最新补数核查：[V150：Madrid市级教师计数](docs/handoff/V150_RESEARCH_UPDATE.md)。取得20列学年末标签，最新Madrid1008／区域1922；20年分层校验通过。单位Número未建立高中教学FTE，0准入／0得分收窄；论文仍V148，V149交付对照继续适用。
-
-已验证补数候选：[V153：Milan104站／枢纽](docs/handoff/V153_RESEARCH_UPDATE.md)。新官方原件与单格试算通过审计；尚未统一启用，当前仍V136主模型／V137扩展／V148正文。
-
-公平性补充：[V152：历史通学最低20%效用](docs/handoff/V152_RESEARCH_UPDATE.md)。2012条件样本尾均值上界0.153352，整体均值与尾均值差至少0.161651；未迁移为当前年，正文仍V148。
-
-编译入口核验：[V151：独立根入口与依赖清单](docs/handoff/V151_RESEARCH_UPDATE.md)。新增task4_review_entry.tex导入当前V148，24页零警告，与同源新构建逐页一致；原PDF／队友稿／默认设置保持，在线入口未核实。
-
-当前交付核对：[V149：39项稿件与要求对照](docs/handoff/V149_RESEARCH_UPDATE.md)。四份官方原件重新获取且哈希一致；实际字号清点和46条编译引用已核。当前稿仍V148，真实控制号、完整AI记录、最终整合与上传证据待完成。
+以下索引保留历史版本；计算当前结果请先用V154注册表，勿从历史链接的“当前”字样推断版本。
 
 | 想了解什么 | 入口 |
 | --- | --- |
@@ -169,9 +162,9 @@ HiMCM-Overleaf/                  # 相邻的独立论文工作区
 
 各数据目录的`README.md`解释口径，`manifest.json`或来源清单记录URL、年份、下载状态与SHA-256，`extract_*.py`从归档原件重建`observations.csv`。下载失败、人工转录、部分名录与诊断数据分别标记。早期[source_registry.csv](research/2026-a/data/source_registry.csv)是来源规划；最新取数以各目录清单和模型准入表为准。
 
-**目前没有一张填满的25城×10指标实测矩阵。** 主模型汇合多份观测及既有学生通学证据：未知效用保留为[0,1]，部分名录提供单侧界。[V6效用长表](research/2026-a/results/task4_v6/utility_bounds.csv)列出250格更新前后的端点。[V5准入表](research/2026-a/results/task4_v5/source_admission.csv)与[V6新增准入表](research/2026-a/results/task4_v6/source_admission.csv)说明哪些证据被采用或拒绝。
+**以下为历史25城资料入口，现行16城V154见恢复入口。** 历史模型汇合多份观测及既有学生通学证据：未知效用保留为[0,1]，部分名录提供单侧界。[V6效用长表](research/2026-a/results/task4_v6/utility_bounds.csv)列出250格更新前后的端点。[V5准入表](research/2026-a/results/task4_v5/source_admission.csv)与[V6新增准入表](research/2026-a/results/task4_v6/source_admission.csv)说明哪些证据被采用或拒绝。
 
-## 当前进度与结论
+## 历史25城研究进度（V16–V23）
 
 V23补回 Melbourne 名册中的未观察通学者，并为 Mexico 在读未知者保留可选成员区间。固定 NYC under19 口径，Melbourne 十指标决策排名2→4、含毕业结局情景2→5；Phoenix仍24，可能冠军仍25。区间变宽反映原有覆盖不足，不能解释为城市条件恶化。完整人口、年份与权重限制见[本轮报告](research/2026-a/results/task4_v23_roster_coverage/README.md)。
 

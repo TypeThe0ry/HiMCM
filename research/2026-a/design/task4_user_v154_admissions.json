@@ -1,0 +1,37 @@
+{
+  "version": "V154",
+  "baseline": "V136",
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "source_hashes": {
+    "data/task4_v153_milan/extraction.json": "569b483f7b9be6e1d3094041da6ae49898a40e273a9e748c0b396135738db718",
+    "data/task4_v153_milan/extract.py": "2101855f6597341b73772785c3579caa23ec3a17144cd8468defc5088083df24",
+    "data/task4_v153_milan/retrieval.json": "e290622a2ac8e87924cd5132d1837bab08988cefd46d3a858ceaafb0589cf759",
+    "data/task4_v153_milan/layers_original.json": "1096c8ba4d0368b1b0a05eb4e65a544dbba697ae4c9805398eed929e2fdad18b",
+    "data/task4_v153_milan/stations_original.geojson": "4abdd42c5ae54eb7c07c8826c41b81b1ea54d96666b9faf10cd0b252fcd32ec0",
+    "data/task4_v153_milan/ids_original.json": "b1c7656e93d6e00f87398f2af7c60b0309a997798759dbc0f2c86ec3c22933fb",
+    "data/task4_v153_milan/atm_map_original.pdf": "61fe2232bc17775e2ae26b440dc05177ea9645cb1179da804d7b83ad87402497",
+    "data/task4_v153_milan/atm_maps_original.html": "9e108d19e793c619741b39bf8e9e8137ecaac00cd8f751dfcad3c5b5800175a9",
+    "data/task4_v153_milan/retained_line_station_records.csv": "9b69d8d572e979d4d5c440b92ad9a4406b812decf1762c6f564a6595c45c9ef1",
+    "data/task4_v153_milan/omitted_records.csv": "056771baabb14dd648537a4e3d92a36ee122dbb28f16e5a0688e8b1963940ab9",
+    "data/task4_v153_milan/near_pairs.csv": "e0fcc3eb4f48d59d883d2f531859f9e349f7b1b7214b24907d3848d4e0b640be",
+    "data/task4_v153_milan/retained_hubs.csv": "6e241613e2f6b39ede4c847c76c50de9ab1f8c81ec2d8d6b492e663c14fb36bb"
+  },
+  "observations": [
+    {
+      "city": "Milan",
+      "indicator": "public_transport_density",
+      "admission_status": "accepted_conditional_inventory_lower_bound",
+      "raw_count": 104,
+      "population": 1399079,
+      "population_year": 2025,
+      "inventory_date": "2024-10-16",
+      "historical_inventory_proxy": true,
+      "lower_bound_only": true,
+      "utility_after": [
+        0.1294273648028504,
+        1
+      ],
+      "source_scope": "Municipal station layer, code015146 and Milano, 109 line records consolidated into104 station/hubs; 21 geography-unmatched omitted"
+    }
+  ]
+}

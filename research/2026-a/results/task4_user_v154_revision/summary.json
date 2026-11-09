@@ -1,0 +1,234 @@
+{
+  "version": "V154",
+  "baseline": "V136 user16",
+  "results": [
+    {
+      "scenario": "before_V136",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.089333559065736
+    },
+    {
+      "scenario": "before_V136",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.914257170685545
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.061435140939356
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.8609670217237
+    },
+    {
+      "scenario": "withdraw_Milan_historical_inventory",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.089333559065736
+    },
+    {
+      "scenario": "withdraw_Milan_historical_inventory",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.914257170685545
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.360242943976402
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 19.115670337485795
+    }
+  ],
+  "changed_cells": 1,
+  "unchanged_cells": 159,
+  "protected_nonmissing_cells": 145,
+  "point_cells": 112,
+  "partial_cells": 34,
+  "fully_missing_cells": 14,
+  "cumulative_supplements": 22,
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "admissions_sha256": "8eb679619ac9c42b026317901a0491652d3de176045974f291626d1c70e5906a",
+  "mc_seed": 20261108,
+  "mc_draws_per_setting": 10000,
+  "scope": "Conditional mixed-vintage inventory; no user value, weight, anchor or interval rule changed; explicit Milan inventory and Singapore stage-proxy withdrawal cases"
+}

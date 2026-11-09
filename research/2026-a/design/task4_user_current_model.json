@@ -1,12 +1,14 @@
 {
   "primary_dataset": "user-provided16-city CSV",
-  "version": "V136",
-  "module": "task4_user_v136_revision",
+  "version": "V154",
+  "module": "task4_user_v154_revision",
   "factory": "revised_bounds",
   "source_csv": "data/task4_v117_team_intake/city_indicators.csv",
-  "admissions": "design/task4_user_v136_admissions.json",
-  "results": "results/task4_user_v136_revision",
+  "admissions": "design/task4_user_v154_admissions.json",
+  "results": "results/task4_user_v154_revision",
   "fixed_auxiliary_weight_total": 0.1,
-  "source_policy": "Original CSV and all 144 V130 nonfullymissing bounds preserved; only London transport lower bound added. All weights, anchors and rectangle rules retained.",
-  "scope": "21 cumulative supplements; latest 59 London station/hub entities from November 2026 static TfL inventory within ONS December 2025 London boundary, with unchanged supplied 2025 population. Conservative Zurich, 16 possible and 0 necessary champions; no individual-access, forecast or true-win-probability claim."
+  "source_policy": "Original CSV and all 159 other V136 utility entries preserved; only Milan transport lower bound added. All weights, anchors and rectangle rules retained.",
+  "scope": "22 cumulative supplements; latest 104 Milan metro station/hubs from municipal inventory dated 2024-10-16, with unchanged supplied 2025 population. Conservative Zurich, 16 possible and 0 necessary champions; historical subset withdrawal retained.",
+  "extensions_registry": "design/task4_user_current_extensions.json",
+  "snapshot": "design/task4_user_v154_snapshot.json"
 }
