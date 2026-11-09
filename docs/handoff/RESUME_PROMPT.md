@@ -1,6 +1,6 @@
 # 恢复HiMCM：主分析／扩展V154，当前独立稿V176（用户mcmthesis格式）
 
-长期goal active；用户随后恢复并明确要求继续既定数据与论文材料任务。先读AGENTS.md、GUIDELINES.md及[V177恢复与新来源核查](V177_RESEARCH_UPDATE.md)、[V176当前稿与上传](V176_RESEARCH_UPDATE.md)、[完整状态](SESSION_STATUS_20261109.md)、[V175均秩比较界与新FTE口径](V175_RESEARCH_UPDATE.md)、[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；用户随后恢复并明确要求继续既定数据与论文材料任务。先读AGENTS.md、GUIDELINES.md及[V178实际AI取证扩展](V178_RESEARCH_UPDATE.md)、[V177恢复与新来源核查](V177_RESEARCH_UPDATE.md)、[V176当前稿与上传](V176_RESEARCH_UPDATE.md)、[完整状态](SESSION_STATUS_20261109.md)、[V175均秩比较界与新FTE口径](V175_RESEARCH_UPDATE.md)、[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
@@ -70,3 +70,5 @@ V175在V169共同事件中派生4440同设定均秩差：4254方向明确、186�
 V176自有6.3解释块加入V169/V175数值保证，参考新增Hoeffding，26=24+2／50引用／22正文页像素同，187科学/596已有稿保持；47清单仅PUB-sharing按最新用户授权解除，13实质待办不变。长期goal仍暂停，先核sync.json确认这次全部上传，不自动开下一轮。
 
 V177用户恢复goal。2新官方HTML：市府年末2024人口448664和CSO2026表4.3阶段口径；N1/r.14的舍入假设相容人口约689655–740741，原440935与新448664都不符，排除仅换这两年人口的解释，不校正受害者率。两城市师资各2查后停止，0准入0收窄。科学V154／论文V176、控制号PENDING保持，独立Fraction算术审计和来源／旧文件保护见V177。
+
+V178根会话AI新捕获截至14:31:18.850UTC/新加坡22:31，326可见消息(旧125保持)+1865工具输入(1749custom/116function)，74root模型标签。原文私存在/data/scratch/himcm-ai-v178，0700/0600、不入Git；元数据/哈希公开，仍不覆盖toolresults/子agent/队友/后续。29过滤+2失败保护验证，187科学/621稿/旧V140保持；当前V176AI页仍旧窗口，下一轮应只更新自有AI页，不冒称全队完整。
