@@ -1,0 +1,50 @@
+{
+  "version": "V185 Zurich commute-source and duration-bin check",
+  "primary_science": "V181 unchanged",
+  "owned_review_at_check": "V184",
+  "primary_admissions": 0,
+  "actual_baseline_width_change": 0,
+  "successful_original_responses": 4,
+  "failed_API_routes": 2,
+  "legacy_metadata": {
+    "file": "bfs_mobility_page_original.html",
+    "title": "Lebensqualit\u00e4t in den St\u00e4dten und Agglomerationen (Agglo2012): Mobilit\u00e4t",
+    "covered_years": "2011\u20132020",
+    "reference_period_rule": "CityStatistics reference yearx uses StructuralSurvey31Dec(x\u22121)",
+    "survey_universe": "Permanentresident population15+ inprivatehouseholds, subject to stated exclusions",
+    "commuter_definition": "Employed15+ withfixed workplaceoutsidehomebuilding; missingjourneyinformation excluded",
+    "commuter_types_since_publication2021": "Inbound andinternal workcommuters;outboundnotincluded",
+    "legacy_mean_time_CI_unit": "Minutes, explicitly distinguished from percentagepoints",
+    "scope_limit": "Historicaltable metadata; not prooftheseexactdefinitions/windowapplytothe2024Eurostat39.9record"
+  },
+  "new_municipal_series": {
+    "data_file": "bfs_2026_worktime_data_original.xml",
+    "structure_file": "bfs_2026_worktime_structure_original.xml",
+    "provider": "BFS / Schweizerischer St\u00e4dteverband",
+    "dataset": "CH1.SSV,DF_SSV_LABMAR_08,2026.1.0",
+    "asset": "36503367",
+    "period": "31.12.2023",
+    "publication_date": "28.04.2026",
+    "geography": "Political municipality; code261 Z\u00fcrich",
+    "geographic_reference": "POLG",
+    "municipal_boundary_state": "06.04.2025",
+    "mean_minutes": "34.22050361",
+    "mean_unit": "MN=Minute",
+    "published_CI_value": "1.949499193",
+    "published_CI_unit": "PT=Percent",
+    "CI_label": "Confidence interval(+/-)",
+    "CI_confidence_level_established": false,
+    "CI_relative_or_absolute_conversion_verified": false,
+    "CI_unit_conflict_with_legacy_table": "Do not transfer oldminutes convention to currentpercent-codedCI"
+  },
+  "decision": "not_admitted_to_retained39_9_interval",
+  "reasons": [
+    "The current municipalseries reports34.22050361for2023, not a matching39.9for2024 greatercityrecord.",
+    "Samepopulation, surveywindow andhistoricalgeography linkage to the retainedconditionalproxy were not established.",
+    "No samepopulation/year duration-bin distribution was obtained.",
+    "A published samplingCI is not a guaranteed deterministicmeasurementerror envelope; its confidencelevel and conversion were not established here."
+  ],
+  "source_identity_checked": true,
+  "no_CSV_model_weights_bounds_registries_or_manuscript_modified": true,
+  "next_action": "Skip thesefailedPxWebAPIpaths and municipal34.2205asautomaticreplacement; requiretheexactCityStatistics2024population/window and compatiblebinsbeforeanyrefinement."
+}

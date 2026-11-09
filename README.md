@@ -289,3 +289,5 @@ V180新增[Amsterdam32个Metro站组候选](research/2026-a/results/task4_v180_a
 V181已完成Amsterdam32条件目录补充的隔离研究准入及主模型、全部既有扩展迁移，V181隔离阶段注册表保持V154／V179，现已由V182完成新稿一致性核验与统一启用。见[V181研究对比与接续](docs/handoff/V181_RESEARCH_UPDATE.md)。
 
 V183[当前信息采集优先级](docs/handoff/V183_RESEARCH_UPDATE.md)共同筛查13全缺失及35部分区间，共96个城市—指标—权重情景；新师资／旅时来源按单位及对象拒收，科学V181／论文V182保持。
+
+V185[独立来源配置与敏感性边界](docs/handoff/V185_RESEARCH_UPDATE.md)：Dublin2011居民分箱不替换原表；其他输入固定时Zurich原权重均值假设阈值约46.59分钟，等权单项变化无切换。科学V181／论文V184保持。

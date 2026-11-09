@@ -1,0 +1,89 @@
+{
+  "status": "pass",
+  "successful_original_responses": 4,
+  "city_code": "261",
+  "city_name": "Z\u00fcrich",
+  "dataset_attributes": {
+    "PERIOD": "31.12.2023",
+    "EMBARGO_DATE": "28.04.2026",
+    "LAST_UPDATE": "28.04.2026",
+    "REGION_REF": "POLG",
+    "REGION_STATE": "06.04.2025",
+    "DATASET_COMMENT": "DATASET_COMMENT"
+  },
+  "municipal_observations": [
+    {
+      "key": {
+        "STATISTICAL_OPERATION": "CI",
+        "SSV_SWISS_CITY": "261",
+        "SSV_CLASS_CITY": "6",
+        "COMMUTE_TIME": "DUR"
+      },
+      "value": "1.949499193",
+      "attributes": {
+        "UNIT_MEASURE": "PT",
+        "OBS_STATUS": "A",
+        "DECIMALS": "2"
+      }
+    },
+    {
+      "key": {
+        "STATISTICAL_OPERATION": "CI",
+        "SSV_SWISS_CITY": "261",
+        "SSV_CLASS_CITY": "6",
+        "COMMUTE_TIME": "LONG"
+      },
+      "value": "4.68552311",
+      "attributes": {
+        "UNIT_MEASURE": "PT",
+        "OBS_STATUS": "A",
+        "DECIMALS": "2"
+      }
+    },
+    {
+      "key": {
+        "STATISTICAL_OPERATION": "OBS",
+        "SSV_SWISS_CITY": "261",
+        "SSV_CLASS_CITY": "6",
+        "COMMUTE_TIME": "DUR"
+      },
+      "value": "34.22050361",
+      "attributes": {
+        "UNIT_MEASURE": "MN",
+        "OBS_STATUS": "A",
+        "DECIMALS": "2"
+      }
+    },
+    {
+      "key": {
+        "STATISTICAL_OPERATION": "OBS",
+        "SSV_SWISS_CITY": "261",
+        "SSV_CLASS_CITY": "6",
+        "COMMUTE_TIME": "LONG"
+      },
+      "value": "10.21459662",
+      "attributes": {
+        "UNIT_MEASURE": "KM",
+        "OBS_STATUS": "A",
+        "DECIMALS": "2"
+      }
+    }
+  ],
+  "mean_time_minutes": "34.22050361",
+  "CI_published_value": "1.949499193",
+  "CI_unit_code": "PT",
+  "CI_unit_label": "Percent",
+  "CI_confidence_level_explicitly_established": false,
+  "CI_conversion_applied": false,
+  "matching_original_39_9_identified": false,
+  "duration_bin_distribution_obtained": false,
+  "primary_admissions": 0,
+  "actual_baseline_width_change": 0,
+  "source_sha256": {
+    "bfs_mobility_page_original.html": "1d6cef53c4ab3fe1ff0ec1dab16fa3e9a7f51a2151f0a25141a26cfcb55dae41",
+    "bfs_2026_cities_asset_original.html": "b923a5e8145a602e94a7a08428026f190708646ce3b474b51a6d23f6bde51221",
+    "bfs_2026_worktime_data_original.xml": "740493c6efbaf48c70904dd3e02edebc49bbad6ed2718433702a0d1e0678ae29",
+    "bfs_2026_worktime_structure_original.xml": "de343af35d7639ad021bd812947d29afad30c3107fe86c6816a8a84a786af3fe"
+  },
+  "extractor_sha256": "aff60c0edf6a0d60c13271e17d9eea1a4314cf0f2a894987c14147e3e4b991d2"
+}

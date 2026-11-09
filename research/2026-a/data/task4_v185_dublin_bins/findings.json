@@ -1,0 +1,81 @@
+{
+  "version": "V185 Dublin duration source scope",
+  "current_primary": "V181 unchanged",
+  "current_paper": "V184 unchanged",
+  "primary_admissions": 0,
+  "actual_baseline_width_change": 0,
+  "routes": 2,
+  "search_queries": 6,
+  "original_successful_responses": 4,
+  "CSO_F7068": {
+    "title": "Travelling Time of Persons Usually Resident and Present in the State",
+    "provider": "Central Statistics Office, Ireland",
+    "axes": [
+      "STATISTIC",
+      "TLIST(A1)",
+      "C02199V02655",
+      "C04104V04868"
+    ],
+    "axis_sizes": [
+      9,
+      3,
+      3,
+      31
+    ],
+    "selected_census_year": "2011",
+    "selected_sex_code": "-",
+    "selected_sex_label": "Both sexes",
+    "selected_geography_code": "2ae19629-1433-13a3-e055-000000000001",
+    "selected_geography_label": "Dublin City",
+    "published_mean_minutes": 27.1,
+    "retained_team_mean_minutes": 28.8,
+    "selected_total_persons": 215384,
+    "stated_duration_persons": 199103,
+    "not_stated_persons": 16281,
+    "population_scope": "Persons aged15yearsand over atwork,excludingthoseworkingmainlyatorfromhome,usuallyresidentandpresentonthe2011censusnight;county/cityofusualresidence",
+    "original_2011_corroboration": {
+      "file": "cso2011_profile10_original.pdf",
+      "table": 6,
+      "physical_pdf_page": 43,
+      "printed_page": 42,
+      "row": "Dublin City",
+      "all_eight_count_cells_match_F7068": true,
+      "source_page_rendered_and_reviewed": true
+    },
+    "bin_counts": {
+      "Journey time < 15 mins": 34770,
+      "Journey time 15 mins - < 30 mins": 75667,
+      "Journey time 30 mins - < 45 mins": 57683,
+      "Journey time 45 mins - < 60 mins": 17420,
+      "Journey time 60 mins - < 90 mins": 11337,
+      "Journey time 90 mins and over": 2226,
+      "Journey time not stated": 16281
+    },
+    "mean_use_warning": "The reported mean is archived as given; no claim it is the mean of all215384includingunknown durations. Duration-profile analysis mustretainnotstatedmassandthe90+opentail,withoutaddinganunverifiedmomentconstraint."
+  },
+  "geography_reference": {
+    "file": "ec_cities2012_definition_original.pdf",
+    "title": "Cities in Europe: The new OECD-EC definition",
+    "issue": "RF01/2012",
+    "physical_pdf_page": 6,
+    "figure": 5,
+    "greater_city_code": "IE001K1",
+    "name": "Dublin",
+    "source_page_rendered_and_reviewed": true,
+    "limitation": "Historicalgreatercitylistonly;nopolygonorcrosswalktoIE001CorDublinCity/Fingal/SouthDublin/DunLaoghaire-Rathdowncohortsproved."
+  },
+  "four_county_diagnostic": {
+    "combined_persons": 517800,
+    "published_2011_means": {
+      "Dublin City": 27.1,
+      "D\u00fan Laoghaire-Rathdown": 28.5,
+      "Fingal": 32.1,
+      "South Dublin": 28.6
+    },
+    "stated_count_weighted_average_of_rounded_means": 28.74970320243641,
+    "interpretation": "Roundingandabsenceofaboundary/populationcrosswalkprecludeidentifyingtheEurostat28.8recordfromthisaggregation;neitheranexactmatchnoracontradictionisproved."
+  },
+  "admission_decision": "Do not intersect this resident-worker profile with retainedEurostatgreatercityworkmean28.8. It may be analysed only as an explicit separate historical resident-worker scope alternative; not current high-school data or a replacement input.",
+  "no_original_CSV_weights_anchors_bounds_registries_or_manuscript_changed": true,
+  "next_action": "Skip automaticDublinCity/greatercity/fourcountyequivalence. Only a verified same-population crosswalk or explicit separate scoped scenario can justify further use."
+}
