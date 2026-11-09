@@ -1,15 +1,40 @@
-# 恢复HiMCM：主分析／扩展V154，当前独立稿V179（用户mcmthesis格式）
+# 恢复HiMCM：主分析／扩展V181，当前自有独立稿V182
+
+先读AGENTS.md、GUIDELINES.md与[V182统一启用和下一步](V182_RESEARCH_UPDATE.md)。长期goal active。GitHub保存研究，论文在相邻HiMCM-Overleaf；所有新增／修改文字使用指定anti-defensive-writing技能，只改自有内容。
+
+## 当前权威入口
+
+- 原CSV data/task4_v117_team_intake/city_indicators.csv，SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c；16城×10指标，旧25城仅历史案例。
+- 主注册表 research/2026-a/design/task4_user_current_model.json：V181模块task4_user_v181_revision.revised_bounds()；快照design/task4_user_v181_snapshot.json；结果results/task4_user_v181_revision/。23补充、112点／35部分／13全未知。
+- 扩展注册表design/task4_user_current_extensions.json：task4_v181_extensions.py preferences/future/method/diagnostics；V181全部既有情景、权重、种子和机制保持。
+- 审阅注册表design/task4_user_current_review.json与Overleaf drafts/task4_current_review.json一致：V182，科学V181，稿drafts/task4_v182_paper.tex/.pdf，根代理task4_v182_review_entry.tex；未改默认Main、队友main/ref/class。
+- 科学审计results/task4_v181_transition/verification.json；当前稿审计results/task4_v182_review/verification.json及activation.json、sync.json；本地独立Git快照重建回执见V182交接。
+
+## 结论与规则
+
+固定均宽16.049384792，等权18.837940743；原始输入至今累计收窄14.679823561%。Zurich保守、16可能／0必要；教育优先Oslo。固定中点TOPSIS/VIKOR tau=.483333，Dublin可接受；等权tau=.65、Oslo不接受唯一解。新模拟均值界2064/37，均秩差4255明确／185未区分、22唯一最小期望设定，非现实胜率。
+
+最新Amsterdam32来自2026元数据映射Metro站组，与原2025人口941927配对，效用[64000/1005927,1]。两市界／100米筛选只是条件目录子集，非2025库存或定位精度保证。撤回精确恢复V154。V181冻结文件staged标签是创建时历史状态；当前注册表控制启用。所有原值、锚点、权重、Jensen／分箱／开放尾／矩形界／距离权重只乘一次及自排除遗憾保持；AHP非调查、未来非趋势。
+
+## 交付与下一步
+
+V18227页=25正文参考+2暂定AI，52引用、新闻18—19/AI26—27、主文余量0。原生mcmthesis／控制号PENDING／空页脚；47项交付映射13实质待办，submission_ready=false。AI选集固定2026-11-09 14:31:18.850UTC，后续及队友记录不在其中。
+
+先核V182双仓sync与独立重建回执，再重基V155采集诊断到当前13全缺失格（8师资、2交通、3旅时）。并发只追新同口径高价值证据；已失败教师路线跳过。只推各自选定内容，分别fetch审diff正常push；Git同步不等于服务器编译或比赛收件。未经具体授权不修改队友正文，不重新做旧模型／Amsterdam候选，不无限刷新AI窗口。
+
+## 冻结恢复档案（以下为历史，不作为当前入口）
+
 
 长期goal active；用户随后恢复并明确要求继续既定数据与论文材料任务。先读AGENTS.md、GUIDELINES.md及[V180新数据候选与下一轮迁移](V180_RESEARCH_UPDATE.md)、[V179当前AI更新稿](V179_RESEARCH_UPDATE.md)、[V178实际AI取证扩展](V178_RESEARCH_UPDATE.md)、[V177恢复与新来源核查](V177_RESEARCH_UPDATE.md)、[V176当前稿与上传](V176_RESEARCH_UPDATE.md)、[完整状态](SESSION_STATUS_20261109.md)、[V175均秩比较界与新FTE口径](V175_RESEARCH_UPDATE.md)、[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
-## 当前权威入口
+### 历史：当前权威入口
 
 - 原CSV：research/2026-a/data/task4_v117_team_intake/city_indicators.csv，SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c，保持用户值／年份／标记。
 - 主注册表：research/2026-a/design/task4_user_current_model.json，V154模块task4_user_v154_revision.revised_bounds()；22累计补充，112点／34部分／14全未知，16×10。来源快照design/task4_user_v154_snapshot.json，187项。
 - 扩展注册表：design/task4_user_current_extensions.json；scripts/task4_v154_extensions.py的preferences／future／method／diagnostics只写V154新目录。偏好矩阵、未来假设、种子与模型机制保持，历史六CSV字节保持。
 - 当前自有独立稿：research/2026-a/design/task4_user_current_review.json注册V179；相邻HiMCM-Overleaf/drafts/task4_v179_paper.tex/.pdf，build_task4_v179.py及根入口task4_v179_review_entry.tex。调用现有只读mcmthesis类，科学仍V154，未切默认主文件，V160等旧稿冻结。
 
-## 科学状态
+### 历史：科学状态
 
 Milan104站／枢纽来自市府2024-10-16历史库存，原件与去重见data/task4_v153_milan；109市内分线记录合5组，21地理未匹配省略。配用户2025人口1399079，交通密度锚点50，效用[0.129427365,1]。仅此下界改变，159其他格及全部上界精确保持；撤回该历史补充严格恢复V136。
 
@@ -17,13 +42,13 @@ Milan104站／枢纽来自市府2024-10-16历史库存，原件与去重见data/
 
 权重8×.1125，交通／泳池各.05；等权.1。锚点2／15／100／10／15／1／50／旅时30／100／1。收益x/(a+x)、成本a/(a+x)、旅时exp(-t/30)，Jensen／分箱／未知与开放尾规则保持。距离权重只乘一次、自排除最大遗憾。区间为声明矩形识别界，非CI或联合物理可实现证明；MC为条件频率，AHP非调查，未来非实测趋势。
 
-## 验证与交付
+### 历史：验证与交付
 
 V154科学基础核验results/task4_v154_transition/verification.json：432城市条件案例、192配对主MC汇总、48偏好基线MC、2方法案例、32内部见证；139科学／99旧稿支持文件保持。V154冻结原稿24页=22主文参考+2暂定AI；新闻16–17、AI23–24、47编译引用、零警告、全页渲染实看。新图最小插入字体约12.51pt。根代理本地24页且文字逐页一致；无connected session，未核服务器编译。
 
 旧V156清单绑定V154 PDF，40项（8技术、17范围审阅、1字号限定、4部分、5未核、3待团队、1未就绪、1未执行）；47引用与22补充链已核，167数学8pt片段单列。V149仍绑定旧V148，不可充作当前身份核对。实际控制号PENDING；旧18213/18214冲突不猜。完整全队AI史、最终主稿整合具体授权、在线编译／注册／上传收件仍待真实证据，submission_ready=false。AI局部选集固定03:17UTC/2026-11-09截止，后续继续不塞入旧capture、不称完整史。
 
-## 权限与下一步
+### 历史：权限与下一步
 
 GitHub仅研究，Overleaf仅稿件／选定资产，各自fetch并审确切diff、正常提交；用户2026-11-09已明确授权本次全部上传，旧公开push暂缓已解除；GitHub研究和私有Overleaf分别正常push。队友main／ref／class及项目设置保持。root main为旧赛事模板+冻结25城阶段稿，17缺图引用，不能当V154入口。
 

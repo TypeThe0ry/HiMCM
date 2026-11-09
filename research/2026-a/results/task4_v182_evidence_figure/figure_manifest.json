@@ -1,0 +1,83 @@
+{
+  "iteration": "V182",
+  "model": "V181 unchanged",
+  "shape": [
+    16,
+    10
+  ],
+  "counts": {
+    "point": 112,
+    "partial": 35,
+    "unknown": 13
+  },
+  "unknown_by_indicator": {
+    "travel": 3,
+    "upper_secondary_ptr": 8,
+    "public_transport_density": 2
+  },
+  "city_order": [
+    "Vienna",
+    "Zurich",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Stockholm",
+    "Paris",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Oslo",
+    "Prague",
+    "Warsaw",
+    "Singapore",
+    "Tokyo"
+  ],
+  "indicator_order": [
+    "homicide_rate",
+    "pm25",
+    "cost_living_index",
+    "price_income_ratio",
+    "upper_secondary_ptr",
+    "research_he_density",
+    "public_transport_density",
+    "travel",
+    "fixed_broadband_mbps",
+    "public_pool_density"
+  ],
+  "plot_labels": [
+    "Homicide",
+    "PM2.5",
+    "Living cost",
+    "Housing",
+    "Pupil/teacher",
+    "Research/HE",
+    "Transit",
+    "Travel burden",
+    "Broadband",
+    "Pools"
+  ],
+  "source": "Current V181 revised_bounds(); original CSV and23 supplements retained",
+  "source_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "utility_bounds_sha256": "a45b31c46f56dd72da54899ac339529f76d35729c623c704e4c9636bc62f4ab8",
+  "matrix_sha256": "ad4b65ead87da8dd40bc2fc9aa41b8600fdc0df68d632e9578a3578fc6068935",
+  "renderer_sha256": "39ec16b8a9eef726c5091edda587f5c6ad7f65928983c4e11829097f783fa1ff",
+  "admissions_sha256": "2fb26edf7f525d0a3c2aa69768c81c33b87a7dee7bde38e7e91062ba5a81b44e",
+  "figure_width_inches": 6.5,
+  "figure_height_inches": 6.2,
+  "minimum_source_font_pt": 10,
+  "intended_insertion_width_inches": 6.5,
+  "minimum_insertion_width_for9pt_inches": 5.85,
+  "png_dpi": 300,
+  "pdf_export": "Explicit vector rectangles and embedded Type3 outline fonts; RGB and grayscale review required",
+  "point_interpretation": "Retained point assumptions, not independent validation or zero measurement error",
+  "ranges_interpretation": "Identification bounds; not confidence intervals, posterior probabilities or ranking",
+  "no_new_data_admission": true,
+  "current_review": "V179 pending V182 migration",
+  "integrated_into_paper": false,
+  "output_sha256": {
+    "pdf": "92c5e5804bfd8de6c3b4912d60c045e20b0088c6b84db0dd6207056a9541ef05",
+    "svg": "06618173309ed898b8744e8a58dcd6c6b8881dc69ac0a99dfec8462a84490fda",
+    "png": "4d4b9d4a99729e8bd52def6b1f7b98244b4e24366f1c87cd92249b391a568115"
+  }
+}

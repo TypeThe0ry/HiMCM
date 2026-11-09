@@ -1,5 +1,7 @@
 # 2026 HiMCM A
 
+当前统一入口：**user16 V181科学／扩展，V182自有审阅稿**；见[V182结果、核验和下一步](docs/handoff/V182_RESEARCH_UPDATE.md)。Zurich为保守推荐，16城仍可能第一。
+
 > **团队成员与 AI agent 必读：开始写作或制图前，必须阅读并遵循[统一 Guidelines](GUIDELINES.md)。论文文字、图表、图注与研究结论均按专项规范执行，交付前核验。AI agents: read and follow these guidelines before editing.**
 
 **The City Showdown: Modeling the Best City to Live In**
@@ -12,7 +14,7 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展为V154，当前独立完整审阅稿为V179（科学基础保持V154）：112点／34部分／14全缺失，累计22项补充，当前自有稿26页（24主文参考+2AI，主文余量1页）。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V182统一启用与核验](docs/handoff/V182_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展V181、自有完整审阅稿V182：112点／35部分／13全缺失，累计23项补充；27页=25正文参考+2暂定AI，主文余量0。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
 
 V154的Milan历史库存补数使固定权重平均评分区间宽度16.08933→16.06144，实际收窄0.02790分，累计收窄14.62%。[模型入口](research/2026-a/design/task4_user_current_model.json)、[扩展入口](research/2026-a/design/task4_user_current_extensions.json)、[验证](research/2026-a/results/task4_v154_transition/README.md)。
 
@@ -282,6 +284,6 @@ V178[扩展实际AI根会话记录](research/2026-a/data/task4_v178_ai_provenanc
 
 V179仅更新[自有AI附录](research/2026-a/results/task4_v179_ai_review/README.md)到已核326可见／1865工具输入的固定范围；前24主文参考页完整像素同，26页／50引用，科学V154保持。
 
-V180新增[Amsterdam32个Metro站组候选](research/2026-a/results/task4_v180_amsterdam_candidate/README.md)：取得原始实体表及两版市界，保守筛选后候选下界.063622907；尚未入模，科学V154／论文V179保持。下一阶段完成准入和全套迁移。
+V180新增[Amsterdam32个Metro站组候选](research/2026-a/results/task4_v180_amsterdam_candidate/README.md)：取得原始实体表及两版市界，保守筛选后候选下界.063622907；V180取证时尚未入模，随后V181研究迁移、V182统一启用。
 
-V181已完成Amsterdam32条件目录补充的隔离研究准入及主模型、全部既有扩展迁移，当前注册表仍V154／V179，待新自有稿一致性核验后统一启用。见[V181研究对比与接续](docs/handoff/V181_RESEARCH_UPDATE.md)。
+V181已完成Amsterdam32条件目录补充的隔离研究准入及主模型、全部既有扩展迁移，V181隔离阶段注册表保持V154／V179，现已由V182完成新稿一致性核验与统一启用。见[V181研究对比与接续](docs/handoff/V181_RESEARCH_UPDATE.md)。
