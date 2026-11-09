@@ -1,6 +1,6 @@
 # 恢复HiMCM：主分析／扩展V154，当前独立稿V173（用户mcmthesis格式）
 
-长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
@@ -62,3 +62,5 @@ V171原始SSP2024/25手册证实公私census、教学C.7/C.8及长gym分码；ST
 V172当前自有稿同国Figure3在18页、20差异/7明确/13跨零、四旧分数保持，辅助legacy25不入主16。27=25主文参考+2AI、49引用、45清单保持44状态和14待办、余量0。187科学/551旧稿保持，24正文页像素同、原生页眉空页脚保持，见[V172交接](V172_RESEARCH_UPDATE.md)。
 
 V173仅替换自有4.2，1482→976词、全部原引用key及重要源范围保留；26=24主文参考+2AI、49引用、余量1页，矩阵8/排名10/分数图11/同国图17/新闻18–19/AI25–26。46清单保持45状态和14待办，187科学/570旧稿保持，其他正文和模板保持，见[V173交接](V173_RESEARCH_UPDATE.md)。
+
+V174已有可执行复现入口scripts/task4_v174_reproduce.py，用当前研究环境Python+外部空output-dir，在两个独立Git快照副本中only-cached重建；26页逐页文本/72dpi灰度同，160格/32案例独立复算，187科学/585旧稿保持，8异常guard通过。依赖已装工具及TeX缓存，不是冷环境或服务器验证；论文仍V173，见[V174交接](V174_RESEARCH_UPDATE.md)。

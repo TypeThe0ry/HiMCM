@@ -1,0 +1,67 @@
+{
+  "status": "fail",
+  "iteration": "V174",
+  "runner_sha256": "333a7ed8d7ecdb70e826cfd4c0b68916bcaade86f2cdf776ecfe366cb23ece13",
+  "paper_version": "V173",
+  "primary_model": "V154",
+  "paper_head": "0adb8478baddb2894f98943820f23a6b801de0ed",
+  "canonical_pdf_sha256": "3352b27b5380ba5902b1add7e4ca70652cc28ee09546e0fd83106d5dbae4ae76",
+  "environment": {
+    "python": "3.11.18",
+    "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
+    "tools": {
+      "tectonic": "Tectonic 0.17.0",
+      "pdftotext": "pdftotext version 26.01.0",
+      "pdftoppm": "pdftoppm version 26.05.0"
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2"
+    },
+    "tex_resources": "Existing local Tectonic cache required;no resource-download fallback"
+  },
+  "archive": {
+    "files": 585,
+    "git_blob_algorithm": "sha1",
+    "all_paths_and_blobs_match": true
+  },
+  "science": {
+    "utility_cells": 160,
+    "deterministic_city_weight_cases": 32,
+    "comparisons": [
+      {
+        "weight_reference": "fixed",
+        "city_cases": 16,
+        "conservative_recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0,
+        "mean_score_interval_width": 16.061435140939356
+      },
+      {
+        "weight_reference": "equal",
+        "city_cases": 16,
+        "conservative_recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0,
+        "mean_score_interval_width": 18.8609670217237
+      }
+    ],
+    "MC_rerun": false,
+    "raw_source_semantics_reaudited": false
+  },
+  "error": "RuntimeError: Command failed (1): ['tectonic', '--only-cached', '--untrusted', '-Z', 'search-path=..', '--outdir', '/data/scratch/himcm-v174-rebuild-01/work-nb9mfyqv/direct/compiled', '--keep-logs', '--keep-intermediates', '--makefile-rules', '/data/scratch/himcm-v174-rebuild-01/direct/dependencies.mk', 'task4_v173_paper.tex']\nnote: using only cached resource files\nwarning: Extra search path(s) ignored due to security\nnote: Running TeX ...\nerror: task4_v173_paper.tex:3: ! LaTeX Error: File `mcmthesis.cls' not found.\nnote: Writing `/data/scratch/himcm-v174-rebuild-01/work-nb9mfyqv/direct/compiled/task4_v173_paper.log` (357 B)\nerror: something bad happened inside XeTeX; its output follows:\n\n===============================================================================\n(task4_v173_paper.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24>\n! ! LaTeX Error: File `mcmthesis.cls' not found..\n\\@missingfileerror ...or: File `#1.#2' not found.}\n                                                  \nl.3 \\mcmsetup\n             {CTeX=false,tcn=PENDING,problem=A,sheet=true,titleinsheet=true,\nNo pages of output.\nTranscript written on task4_v173_paper.log.\n===============================================================================\nerror: the XeTeX engine had an unrecoverable error\ncaused by: halted on potentially-recoverable error as specified\n",
+  "input_protection": {
+    "scientific_files_checked": 187,
+    "paper_files_checked": 585,
+    "changed": []
+  },
+  "elapsed_seconds": 7.778,
+  "scope": "Local tools+existing TeX cache;source-defined deterministic model and exact text/72dpi rendering checks. No fresh-OS/no-cache guarantee,MC replay,source revalidation,server compile or submission-readiness claim.",
+  "submission_ready": false
+}

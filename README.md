@@ -269,3 +269,5 @@ V171补充[SSP原始定义与单侧包络准入条件](research/2026-a/results/t
 V172把同国辅助案例的四分数表替换为[20项完整差异图](research/2026-a/results/task4_v172_country_review/README.md)，7项方向明确，主16城数据与原正文保持。
 
 V173仅压缩[自有数据搜集问题段](research/2026-a/results/task4_v173_collection_review/README.md)，1482→976词、原引用键和范围保留，实际省1主文页；当前26页。
+
+V174新增[当前稿／主16城独立复现入口](research/2026-a/results/task4_v174_reproducibility/README.md)：干净临时副本、缓存离线双入口、26页文本及72dpi灰度同、160格／32案例复算，论文仍V173。
