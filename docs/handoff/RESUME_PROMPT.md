@@ -1,6 +1,6 @@
 # 接手续做HiMCM：V136主数据／V137扩展，文档V148
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V147新源核查](V147_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V150最新补数核查](V150_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -44,3 +44,7 @@ GitHub仅研究，Overleaf仅稿件和选定资产；分别fetch并审确切diff
 ## V149当前交付对照
 
 results/task4_v149_readiness含39项对照、字体表、数学脚标表与独立verification；源刷新data/task4_v149_requirements_refresh。四个2026官方响应与V123原件哈希一致；论文仍V148原PDF，未新编译／渲染／写作。技术项与范围受限／部分／未核实分开，submission_ready=false。控制号、完整AI史、最终整合、注册标识和上传／advisor入口收件仍需真实证据。字体表整数舍入12pt正文，167个8pt数学脚标单列，不作全字形证书。若后续改稿，生成新的当前对照，不拿旧哈希认证新稿。
+
+## V150 Madrid师资候选
+
+1902424取得20列2005–2024，按原注映射2004/05–2023/24；最新市1008／区域1922。三层区域／分区／市镇重复同一总体，20年汇总相等，平铺末年会得5766，不能累计当教师。Número和Bachillerato计数未建立城市全上阶段教学FTE及学生匹配；区域Régimen-General FTE比12.6也不填，0准入。provider表示有原件／图表局限，完整捕获和代码在data/task4_v150_madrid_education，独立审核results/task4_v150_madrid_education。139科学／82稿件文件保持，V136/V137及V148PDF不变，V149对照仍适用；下一轮查新匹配分母，勿重复用1008或12.6试填。
