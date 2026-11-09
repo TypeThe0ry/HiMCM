@@ -1,6 +1,6 @@
 # 接手续做HiMCM：V136主数据／V137扩展，文档V148
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V147新源核查](V147_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V149当前交付对照](V149_RESEARCH_UPDATE.md)、[V147新源核查](V147_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -40,3 +40,7 @@ GitHub仅研究，Overleaf仅稿件和选定资产；分别fetch并审确切diff
 ## V148年龄联合约束
 
 既有2012年龄组差值闭包[-0.23330,0.26325]，共享612未知年龄质量只计一次；两个有限旅时构造给+0.23842／-0.20848。源仍data/task4_v116_ibb/aggregate_results.json，原汇总／边际案例保持；scripts/task4_v148_age_contrast.py及独立audit核解析符号、5151分配点和2见证。只增自有6.4，非今天精确14／18岁、非偏好调查或抽样置信区间，0准入／0主得分收窄。
+
+## V149当前交付对照
+
+results/task4_v149_readiness含39项对照、字体表、数学脚标表与独立verification；源刷新data/task4_v149_requirements_refresh。四个2026官方响应与V123原件哈希一致；论文仍V148原PDF，未新编译／渲染／写作。技术项与范围受限／部分／未核实分开，submission_ready=false。控制号、完整AI史、最终整合、注册标识和上传／advisor入口收件仍需真实证据。字体表整数舍入12pt正文，167个8pt数学脚标单列，不作全字形证书。若后续改稿，生成新的当前对照，不拿旧哈希认证新稿。
