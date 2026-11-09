@@ -1,13 +1,13 @@
-# 恢复HiMCM：主分析／扩展V154，当前独立稿V172（用户mcmthesis格式）
+# 恢复HiMCM：主分析／扩展V154，当前独立稿V173（用户mcmthesis格式）
 
-长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V172同国图与当前稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
 - 原CSV：research/2026-a/data/task4_v117_team_intake/city_indicators.csv，SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c，保持用户值／年份／标记。
 - 主注册表：research/2026-a/design/task4_user_current_model.json，V154模块task4_user_v154_revision.revised_bounds()；22累计补充，112点／34部分／14全未知，16×10。来源快照design/task4_user_v154_snapshot.json，187项。
 - 扩展注册表：design/task4_user_current_extensions.json；scripts/task4_v154_extensions.py的preferences／future／method／diagnostics只写V154新目录。偏好矩阵、未来假设、种子与模型机制保持，历史六CSV字节保持。
-- 当前自有独立稿：research/2026-a/design/task4_user_current_review.json注册V172；相邻HiMCM-Overleaf/drafts/task4_v172_paper.tex/.pdf，build_task4_v172.py及根入口task4_v172_review_entry.tex。调用现有只读mcmthesis类，科学仍V154，未切默认主文件，V160等旧稿冻结。
+- 当前自有独立稿：research/2026-a/design/task4_user_current_review.json注册V173；相邻HiMCM-Overleaf/drafts/task4_v173_paper.tex/.pdf，build_task4_v173.py及根入口task4_v173_review_entry.tex。调用现有只读mcmthesis类，科学仍V154，未切默认主文件，V160等旧稿冻结。
 
 ## 科学状态
 
@@ -27,7 +27,7 @@ V154科学基础核验results/task4_v154_transition/verification.json：432城�
 
 GitHub仅研究，Overleaf仅稿件／选定资产，各自fetch并审确切diff、正常提交；研究公开push待既有用户选择，仍仅本地commit；私有Overleaf按授权push。队友main／ref／class及项目设置保持。root main为旧赛事模板+冻结25城阶段稿，17缺图引用，不能当V154入口。
 
-采集价值诊断已重基为V155：14全缺失及Milan残余单列，见results/task4_v155_priority。Dublin教师精确信息固定保证1.066798、最有利5.785906；Zurich保证0.793974、最有利9.316221、最多排除5城。Milan交通单独精确无遗憾／冠军改善，两项仅下界全域无排除，勿重复扩名录追求缩冠军。当前稿与清单见V172注册入口，下一轮优先新教师FTE路线或结论相关证据核查；V138的15缺失格列表已过期，V149仍旧PDF。补数只找新的匹配教师FTE／高中实际单程旅时或原率来源，已有抑制／单位不符路线失败跳过。V152历史低端通学证据仍独立候选；同国／年龄／公平性继续保持对象范围。旧版本详情由各Vxxx交接与Git历史恢复，勿覆盖冻结结果。
+采集价值诊断已重基为V155：14全缺失及Milan残余单列，见results/task4_v155_priority。Dublin教师精确信息固定保证1.066798、最有利5.785906；Zurich保证0.793974、最有利9.316221、最多排除5城。Milan交通单独精确无遗憾／冠军改善，两项仅下界全域无排除，勿重复扩名录追求缩冠军。当前稿与清单见V173注册入口，下一轮优先新教师FTE路线或结论相关证据核查；V138的15缺失格列表已过期，V149仍旧PDF。补数只找新的匹配教师FTE／高中实际单程旅时或原率来源，已有抑制／单位不符路线失败跳过。V152历史低端通学证据仍独立候选；同国／年龄／公平性继续保持对象范围。旧版本详情由各Vxxx交接与Git历史恢复，勿覆盖冻结结果。
 
 V157新取六官方原响应：Enge人数非教学FTE；Stadelhofen年报全职词命中是管理员；Eurostat全国ED3 FTE含ED4且私立覆盖与元数据不一致、参考期未协调，不能作城市教师上界。V120学生T_3为Mittelschulen、含I／II阶段，非全市高中总数。0准入0收窄；下一轮跳过上述已查路线。
 
@@ -60,3 +60,5 @@ V170取得11官方原响应：BFS2024/25完整私校FTE10242.2（含学段不可
 V171原始SSP2024/25手册证实公私census、教学C.7/C.8及长gym分码；STATENT不适用该FTE。重取城市学生xlsx与V120相同，V157分组非新观测。单侧包络可用合法学生subset/教师superset，其他州不同日并不自行否定全国非负super-cover；本地日期／目标subset及数值向外界未证，0准入0收窄。187科学／547旧稿保持，V168保持，比较引用V170不称新重算。见[V171交接](V171_RESEARCH_UPDATE.md)。
 
 V172当前自有稿同国Figure3在18页、20差异/7明确/13跨零、四旧分数保持，辅助legacy25不入主16。27=25主文参考+2AI、49引用、45清单保持44状态和14待办、余量0。187科学/551旧稿保持，24正文页像素同、原生页眉空页脚保持，见[V172交接](V172_RESEARCH_UPDATE.md)。
+
+V173仅替换自有4.2，1482→976词、全部原引用key及重要源范围保留；26=24主文参考+2AI、49引用、余量1页，矩阵8/排名10/分数图11/同国图17/新闻18–19/AI25–26。46清单保持45状态和14待办，187科学/570旧稿保持，其他正文和模板保持，见[V173交接](V173_RESEARCH_UPDATE.md)。
