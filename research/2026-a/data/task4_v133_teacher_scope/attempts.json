@@ -1,0 +1,18 @@
+[
+  {
+    "city": "Zurich",
+    "indicator": "upper_secondary_ptr",
+    "admitted": false,
+    "scope": "SSP metadata describes full canton collection including public/private schools, teaching and leadership activities. Matching public city upper-secondary pupils/teaching-FTE aggregate not recovered.",
+    "new_information": "Collection coverage is broader than the previously rejected public-financed canton chart; this does not establish publication or matched city totals.",
+    "next_gate": "Original published city-school aggregate, same stage/year/provider set, teaching FTE separated from leadership, matching pupil numerator."
+  },
+  {
+    "city": "Helsinki",
+    "indicator": "upper_secondary_ptr",
+    "admitted": false,
+    "scope": "Official OPH context says latest teacher-collection-based statistics are2019; employment-occupation reports are a separate route. No city/school/stage/FTE match recovered.",
+    "new_information": "Do not infer from teacher-collection vintage that all newer teacher-related statistics are absent. Employment counts require separate geography/stage/workforce definition checks.",
+    "next_gate": "Verify school location vs residence, upper-secondary stage, employed teachers vs other staff, FTE/headcount definition and complete same-provider pupil coverage before any ratio."
+  }
+]

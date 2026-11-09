@@ -1,6 +1,6 @@
 # 接手续做HiMCM：现行V130主数据／V131扩展与完整稿
 
-长期goal active，所有新增／修改说明使用已安装指定anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、LONGTERM_GOAL.md、V131_COMPLETE_REVIEW.md及V132_RESEARCH_UPDATE.md。前一轮实际完成完整稿统一及现行入口激活，不再把V130/V131叫待迁移候选。
+长期goal active，所有新增／修改说明使用已安装指定anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、LONGTERM_GOAL.md、V131_COMPLETE_REVIEW.md、V132_RESEARCH_UPDATE.md及V133_RESEARCH_UPDATE.md。前一轮实际完成完整稿统一及现行入口激活，不再把V130/V131叫待迁移候选。
 
 ## 当前权威入口
 
@@ -27,3 +27,5 @@ GitHub仅研究、Overleaf仅论文及选定资产。队友main/ref/class保持�
 AI当前局部选集66条=4真实请求+53进度+9完整可见答复，13根turn标签gpt-6.1-sol，客户端0.166.0-alpha.5.1，截止2026-11-08 19:10:12UTC。原文仅仓库外私存，工具载荷／代码／附件／subagent及其他队员史不覆盖；不是完整团队AI报告。实际控制号仍PENDING，旧18213/18214冲突不猜；完整AI史和具体队友主稿整合需真实信息／授权。
 
 GitHub PUBLIC发布选择仍待答，研究本地commit、暂缓新增公开push，不擅改可见性；Overleaf按授权同步，先fetch审diff不force。V132已完成现行V130的16缺失格采集诊断（旧V129仍冻结V127的17格），剩余单格主要信息值保持。下一阶段优先真正新匹配师资，Warsaw2025波次概要已确认但尚缺高中单程旅时原表；优先新匹配Dublin/Zurich教师FTE及Warsaw真实高中单程通学，失败跳过。V129 Paris/Madrid/Amsterdam拒收不重复；Vienna2001只历史案例、不移作当前。继续论文交付核对及可证实的改进，不因本轮完成结束长期goal。
+
+V133新证据：Zurich SSP原件确认公私立全州调查覆盖，未取得同城同高中教学FTE／学生公开汇总；芬兰OPH称专项采集资料最新2019，另列就业职业报告，下一次必须核其学校所在地／居住地、学段／FTE口径，不据职业名填PTR。两条0准入，不重复旧公开全州财政支持图。当前readiness脚本核完整稿20页／实际PENDING页眉／旧新各55科学输出／保护文件，最后提交仍未完成；详见results/task4_v133_readiness。
