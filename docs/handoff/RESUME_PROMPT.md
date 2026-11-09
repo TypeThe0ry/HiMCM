@@ -1,6 +1,6 @@
-# 接手续做HiMCM：V136主数据／V137扩展，文档V144
+# 接手续做HiMCM：V136主数据／V137扩展，文档V145
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md及[V144当前交接](V144_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md及[V145当前交接](V145_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -12,14 +12,16 @@
 - V144恢复具体原源：CBS2023发布的2022暂定Amsterdam单年受害者10，XLSX区域表68覆盖2018–2022；原340的来源仍未匹配。Zurich PKS2025第117页2024既遂1、2025既遂2是犯罪行为数，第118页定义独立于受害人数，未建立原0.14率分母。不制造替代率。
 - V144只撤回Zurich凶杀点utility信息时基准Singapore／等权Oslo；Amsterdam单点撤回均仍Zurich，两点撤回Singapore／Oslo。单点其他159格不动，原48非点／21补充保持，全部8组16可能／0必要。主数据未改；不要把该试验说成对28点批量结果的唯一因果归因。
 
+- V145区别有限点率变动：其他159格固定，假设点率x_Z的打平阈值基准0.2300179962（Singapore）、等权0.9047272573（Oslo）每10万人。原0.14及0.135／0.145邻近探针仍Zurich；后两者不是已知测量误差。两种数值方法及224城市情景／448得分界通过，唯一交点有单调性解释。非观测率／置信限／预测，原数据不变。新受害者范围排除90+、抑制<5、部分重复计数，8目录元数据未获匹配率，0准入；不反推小计或声称数据全无。
+
 ## 论文和复核
 
-相邻/data/projects/HiMCM-Overleaf的drafts/task4_v137_paper.tex/.pdf是完整自有独立审阅稿，文件名不改、文档修订V144。23页=21主文参考+2暂定AI；新闻16–17，参考18–21，AI22–23。PDF154783字节，SHA3caf1fa59d423c99bd78082899149de8adc686d9d635ae48751e3e1adcd94580。零warning，23页95dpi全页实看；与Overleaf39b6a35相比13页像素保持。原V131/V134及更早稿冻结，74历史稿受保护。
+相邻/data/projects/HiMCM-Overleaf的drafts/task4_v137_paper.tex/.pdf是完整自有独立审阅稿，文件名不改、文档修订V145。23页=21主文参考+2暂定AI；新闻16–17，参考18–21，AI22–23。PDF155422字节，SHA9568008dd2faf49408c9a2c512d630d756077337c5a35a10f37c26b239cbeced。零warning，23页95dpi全页实看；与Overleaf41a91e7相比20页像素保持。原V131/V134及更早稿冻结，74历史稿受保护。
 
 - 研究Python .venv-v120/bin/python（3.11、numpy1.26、pandas2.3、scipy1.13）；tectonic0.17、Poppler。root账户，项目/data/projects，大原件/data/datasets，临时/data/scratch；不重建环境。
 - V136 snapshot10项、原revision_audit及V137 audit55输出冻结。启用后16静态／24×10000同流MC和撤回已通过，无新科学风险不重复全量跑。复核老审计另写recheck，不覆盖原capture。
 - 新源data/task4_v144_homicide/extract.py可从Git内原XLSX／HTML和完整lossless PDF复抽。scripts/task4_v144_homicide_sensitivity.py生成情景，audit_task4_v144_homicide.py独立核128城市情景／256得分界、全部排名、原表单位／期间。原verification保留。
-- 当前文档审计scripts/audit_task4_v144_documentation.py保护139科学／42原资产章节／74历史稿，8选定副本匹配；results/task4_v144_documentation存QA／manifest／编译／sync回执。旧V143/V142交付哈希是历史，不用旧回执检验新PDF。
+- 当前文档审计scripts/audit_task4_v145_documentation.py保护139科学／55原资产章节／74历史稿、全部7自有章节保持，2新阈值副本匹配；results/task4_v145_documentation存QA／manifest／编译／sync回执。旧V144/V143/V142交付哈希是历史，不用旧回执检验新PDF。
 - Overleaf builder build_task4_v137.py先核冻结源和新审计；只改叙述／来源用--refresh-manifest-only，不重生主图／宏。新PDF每轮首次authoring按PDF技能marker一次，编译捕获stdout/stderr，checker --compiler-output LOG，实际看完全部渲染才加--render-review-confirmed。
 - 权重8×.1125，transport／pools各.05；equal各.1。收益x/(a+x)，成本a/(a+x)，锚点2/15/100/10/15/1/50/travel30/100/1。travel exp(-t/30)，均值只Jensen界，分箱／未知／开尾按原规则；距离权重只乘一次。自排除竞争上界、minimax regret保守决策。MC为条件频率，偏好非学生调查，未来情景非经验趋势。
 
@@ -29,4 +31,4 @@ GitHub仅研究，Overleaf仅稿件和选定资产；分别fetch并审确切diff
 
 实际控制号PENDING，旧18213/18214冲突不猜；全队AI史、最终整合具体授权、提交回执仍待真实资料。125条根会话局部选集及03:17UTC/2026-11-09固定截止保持，不能称完整史；私有原文不入仓库，不把后续消息塞进旧capture。
 
-下一轮优先追溯Zurich原凶杀率分母／统计单位、匹配城市受害者记录，再尝试真正新匹配教师FTE／高中实际单程旅时源。Dublin／Zurich教师仍有高信息价值，但旧地区汇总／岗位不填；Warsaw广义学校、Tokyo全周工作学校合计、Vienna潜在最近学校路由均不替代高中实际旅时。V141完整47MB ÖROK原PDF外置，新clone需另取；V144完整原件已在Git。保留原表，失败跳过，持续按可验证改进推进，不结束长期goal。
+下一轮只尝试真正新的匹配教师FTE／高中实际单程旅时／原率来源，或当前整稿交付要求核对；不重复V145已查8目录项和已确认的抑制／单位不匹配路线。Dublin／Zurich教师仍有高信息价值，但旧地区汇总／岗位不填；Warsaw广义学校、Tokyo全周工作学校合计、Vienna潜在最近学校路由均不替代高中实际旅时。V141完整47MB ÖROK原PDF外置，新clone需另取；V144完整原件已在Git。保留原表，失败跳过，持续按可验证改进推进，不结束长期goal。

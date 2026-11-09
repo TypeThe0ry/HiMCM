@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "victim_metadata": {
+    "geography": "Kanton Zürich",
+    "excludes_age90plus": true,
+    "suppresses_counts_below5": true,
+    "some_persons_counted_in_both_domestic_and_non_domestic_categories": true
+  },
+  "city_crime_catalogue": {
+    "name": "ktzh_pks_straftaten_tatbestandgruppe_gemeinden_stadtkreise",
+    "unit": "registered criminal acts by offence group, not matched homicide victims",
+    "note": "Dieser Datensatz weist die Anzahl polizeilich registrierter Straftaten nach Tatbestandsgruppe für die Stadtkreise der Stadt Zürich und ausgwählte Gemeinden im Kanton Zürich aus. Diese Zeitreihe besteht seit 2009.\n"
+  },
+  "bounded_search": {
+    "total_hits": 8,
+    "all_returned_hits_reviewed": true,
+    "packages": [
+      {
+        "name": "sid_stapo_sicherheitsbericht_haeusliche_gewalt_od1014",
+        "title": "Häusliche Gewalt"
+      },
+      {
+        "name": "prd_stez_bevoelkerungsbefragungen_seit2019_od4732",
+        "title": "Daten der Bevölkerungsbefragung der Stadt Zürich ab 2019"
+      },
+      {
+        "name": "prd_stez_bevoelkerungsbefragungen_seit1999_od4731",
+        "title": "Daten der Bevölkerungsbefragung der Stadt Zürich seit 1999"
+      },
+      {
+        "name": "erz_ent_ueberschwemmungsmeldungen",
+        "title": "Überschwemmungsmeldungen"
+      },
+      {
+        "name": "zuerich-1799-grundlagendaten",
+        "title": "Grundlagendaten zur Publikation «Zürich 1799»"
+      },
+      {
+        "name": "sd_sod_beziehende_sozialhilfe",
+        "title": "Bezügerinnen und Bezüger von Sozialhilfe"
+      },
+      {
+        "name": "geo_pflegezentrum",
+        "title": "Pflegezentrum"
+      },
+      {
+        "name": "gud_ds_altersbefragung",
+        "title": "Daten zur Altersbefragung 2023 der Stadt Zürich"
+      }
+    ],
+    "interpretation": "This exact catalogue query did not provide a matching annual city homicide-victim rate; this is not proof that no suitable data exist"
+  },
+  "scope_excerpts": {
+    "Opfer im Alter von 90 Jahren oder älter": "piel im Jahresbericht der Polizeilichen Kriminalstatistik, veröffentlicht wird. Opfer im Alter von 90 Jahren oder älter sind aus auswertungstechnischen Gründen nicht im Datensatz berücksichtigt; Zahlen kleiner als fünf Personen werden aus Gründen des Persönlichkeit- und Datenschutzes nicht ausgewiesen. Gewalt",
+    "Zahlen kleiner als fünf Personen": "lter sind aus auswertungstechnischen Gründen nicht im Datensatz berücksichtigt; Zahlen kleiner als fünf Personen werden aus Gründen des Persönlichkeit- und Datenschutzes nicht ausgewiesen. Gewalt betrifft beide Geschlechter Männer werden im ausserhäuslichen Umfeld Opfer, Frauen sind eher im häuslichen Umfeld ",
+    "zweimal im Datensatz erfasst": "elikts im ausserhäuslichen als auch im häuslichen Umfeld wird, wird sie dagegen zweimal im Datensatz erfasst. In Darstellungen, die zwischen den beiden Gewaltkategorien unterscheiden, ist die Zahl der Opfer höher als die Zahl der Opfer, die an anderer Stelle, zum Beispiel im Jahresbericht der Polizeilichen Kr"
+  },
+  "primary_admissions": 0,
+  "submitted_rate_denominator_established": false
+}

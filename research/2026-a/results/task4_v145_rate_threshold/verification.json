@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "independent_city_cases": 224,
+  "independent_score_bounds": 448,
+  "independent_bisections": [
+    {
+      "weight_reference": "fixed",
+      "independent_bisection_rate": 0.23001799618462715,
+      "alternative": "Singapore",
+      "sign_bracket_width": 1.9999999989472883e-08
+    },
+    {
+      "weight_reference": "equal",
+      "independent_bisection_rate": 0.904727257267196,
+      "alternative": "Oslo",
+      "sign_bracket_width": 2.0000000100495186e-08
+    }
+  ],
+  "other_159_entries_fixed_in_every_probe": true,
+  "original_source_scope_verified": true,
+  "primary_data_admissions": 0,
+  "result_sha256": {
+    "results/task4_v145_rate_threshold/probes.csv": "ca66d11de451efdc7498340c54b623974cc81c749ac562e9a8a3c298ba55e5a9",
+    "results/task4_v145_rate_threshold/summary.json": "38646860361d64f887fa7132de6dfe637a3075352c3edac2622d7ca490cc24e6"
+  },
+  "verifier_sha256": "248517f28c5d3c89044fd15cde4dec0318a26bc02fb0ea47991d4773e6fed696"
+}
