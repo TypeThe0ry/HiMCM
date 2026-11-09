@@ -1,0 +1,77 @@
+{
+  "version": "V184 Helsinki teacher scope check",
+  "current_primary": "V181 unchanged",
+  "current_review": "V182 unchanged",
+  "primary_admissions": 0,
+  "actual_score_width_change": 0,
+  "successful_original_responses": 2,
+  "routes": 2,
+  "new_search_queries": 2,
+  "city_annual": {
+    "file": "city2024_annual_original.pdf",
+    "sha256": "b2609ed11cc89e560de63740f0531fae7cb5aa293e0907bbfebc80b4dde91099",
+    "publication_label": "Toimintakertomus2024",
+    "provider": "City of Helsinki Education Division",
+    "upper_secondary_teaching_personnel": [
+      {
+        "language_service": "Finnish municipal",
+        "headcount": 684,
+        "physical_and_printed_pdf_page": 32
+      },
+      {
+        "language_service": "Swedish municipal",
+        "headcount": 103,
+        "physical_and_printed_pdf_page": 33
+      }
+    ],
+    "combined_personnel_headcount": 787,
+    "personnel_unit": "Henkil\u00f6st\u00f6m\u00e4\u00e4r\u00e4;persons,notteachingFTE",
+    "personnel_footnote": {
+      "page": 33,
+      "includes": [
+        "persons on official or work leave",
+        "substitutes",
+        "trainees",
+        "apprentices"
+      ],
+      "excludes": [
+        "part-time hourly teachers"
+      ]
+    },
+    "students": {
+      "finnish": 9374,
+      "swedish": 1377,
+      "table_page": 40,
+      "finnish_adult_degree_students_separately_reported": 216,
+      "adult_count_page": 16,
+      "reference_definition": "Weighted average of census dates20September and20January;footnote4onpage16"
+    },
+    "FTE_token_elsewhere": {
+      "page": 40,
+      "label": "Ty\u00f6pajatoiminta (nuorten m\u00e4\u00e4r\u00e4 henkil\u00f6ty\u00f6vuosina)",
+      "value": 98,
+      "scope": "Youth workshop activity in person-years,not teaching FTE"
+    },
+    "page_visual_reviewed": [
+      32,
+      33
+    ],
+    "teaching_FTE_located": false,
+    "absence_scope": "No matched upper-secondary teaching FTE identified in this report; not a claim of absence in all Helsinki publications"
+  },
+  "oph_metadata": {
+    "file": "oph_teachers_original.html",
+    "sha256": "2863b52058ce7357a7b28e4b6fb9eaca68fd10a8413c70f02e61cfd41a0badd0",
+    "guide": "Links Vipunen employed-teacher occupation/age report; teachers data collection described with latest2019 data",
+    "city_teaching_FTE_provided_on_guide": false
+  },
+  "admission_decision": "reject_for_current_city_PTR_or_FTE_envelope",
+  "reasons": [
+    "Teacher personnel headcount cannot be silently converted into actual teaching FTE.",
+    "Leave/substitute inclusion and omitted part-time hourly teachers prevent interpreting these headcounts as a matched city teaching-workload total or either unproved FTE envelope.",
+    "Municipal-service pupil weighted averages and frozenStatFin2024allcitypupil18661 are not a demonstrated matched-date numerator/denominator pair. A valid subset/superset method still needs a proved matching FTE workload and reference population.",
+    "The only Finnish person-year row located is youth workshop activity,not upper-secondary teachers."
+  ],
+  "next_action": "Skip headcount684+103 toFTE conversion and workshop98as teacher denominator; only revisit new actual teaching workload with matched population/reference period.",
+  "no_csv_weights_intervals_registries_manuscript_modified": true
+}

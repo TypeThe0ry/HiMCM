@@ -1,0 +1,205 @@
+{
+  "version": "V184 controlled commute-proxy withdrawal",
+  "primary": "V181 unchanged",
+  "paper_at_calculation": "V182",
+  "primary_admissions": 0,
+  "actual_baseline_width_change": 0,
+  "retained_input_counts": [
+    112,
+    35,
+    13
+  ],
+  "rows": 160,
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/task4_v184_dublin_commute/README.md": "0186145ce2aa13e22e9fc04bd7314bcff5e16895e55896ea942c1a38b00a828a",
+    "data/task4_v184_dublin_commute/eurostat_dublin2011_original.json": "e7422124a7745dce9924c6f575f9afc22a9151d70334b9d0cad88be38be904be",
+    "data/task4_v184_dublin_commute/findings.json": "8d3e807d27cec74e84ec6aec7584d05d8700fdff705b3f679b487cbcd2fdb75a",
+    "data/task4_v184_dublin_commute/retrievals.json": "a613782bcadb72ceab4c09ed7261df590a7e92b2cd1044b8b2690f014c542220",
+    "data/task4_v184_dublin_commute/searches.json": "6de4c46227aa8460f68f661635c3afec173239e40e1035a903f089825aa72d54",
+    "data/task4_v184_dublin_commute/urban_handbook2004_original.pdf": "caca3944aad3610ced62e6b240a383385f91f4aac466896e482697166e8f1a18",
+    "data/task4_v184_dublin_commute/verification.json": "f412bb2f02d90f0f31528fbf4f3da8643feea6742438758b670a4455309d9f84",
+    "data/task4_v184_dublin_commute/verify.py": "4ffa4c2221fc6f11343bd3c7da273de5cba563f917b9e5793dd6f41e9ce2ddc5",
+    "data/task4_v184_helsinki_teacher/README.md": "9eb1f9189308f557fe6dba934708a026d9c5f44505db6a4ac4814cd89986babc",
+    "data/task4_v184_helsinki_teacher/city2024_annual_original.pdf": "b2609ed11cc89e560de63740f0531fae7cb5aa293e0907bbfebc80b4dde91099",
+    "data/task4_v184_helsinki_teacher/findings.json": "e32825660817c27338ba7bb3200c5d4fa416a39dd0d38db16d5c409ece753afa",
+    "data/task4_v184_helsinki_teacher/oph_teachers_original.html": "2863b52058ce7357a7b28e4b6fb9eaca68fd10a8413c70f02e61cfd41a0badd0",
+    "data/task4_v184_helsinki_teacher/retrievals.json": "b889b3ca248f67efa939405dd8f0158305e1dd2f51dd272dd085588056ac3e24",
+    "data/task4_v184_helsinki_teacher/searches.json": "4f7dc356df71e2ae942dc0c678386335bbeb59b4144ee33cb25ed7bb93842726",
+    "data/task4_v184_zurich_commute/README.md": "b75c455f5b5d8ec5c90ce7050f9af7c0cfa17919db9a7c0c8f7ef234f1e180e0",
+    "data/task4_v184_zurich_commute/all_cities2024_worktime_original.json": "43ee5f04e06a1c1b9d73aceacf459530e532d6d675a3932fa9d7e93ac3af047b",
+    "data/task4_v184_zurich_commute/findings.json": "3197270c27927cc91bcefa0e1af37ecde4ec7467e91ce1cad604047e66f75c25",
+    "data/task4_v184_zurich_commute/initial_CH001C2024_urb_ctran_original.json": "a9a25d12a90b9a3e4ef2a5f76ecefb322d3ec6e41fe504cb700adb2bae12fedb",
+    "data/task4_v184_zurich_commute/retrievals.json": "2ab4317ab431d69a498637c1c2d3abde720387cc4909e26196bc91de07fd9e30",
+    "data/task4_v184_zurich_commute/searches.json": "eccf07803075aec8e62e5f5b22eb640731c731a62b7c1b062a449197df326a19",
+    "data/task4_v184_zurich_commute/urban_metadata_original.html": "adc8e45975a08e7f7cf4ef10f46d04e8e96a9391112fe40b87c6c90cb72ce743",
+    "data/task4_v184_zurich_commute/zurich_CH002C2024_urb_ctran_original.json": "3a5c749fb18efd962be0df0f7e9c333ae0d80363f3d1eab258119f1964e7f7e7",
+    "design/task4_user_current_extensions.json": "a02448ab19ec1f537f2ebb9b669da0583cceb9f6e421e1e73a1876f56ef6f548",
+    "design/task4_user_current_model.json": "474b5c3bf97d5abf46d50f9bce2667b252e439a9e70c88d5b557649d0c0e543c",
+    "scripts/task4_v184_commute_withdrawal.py": "de8ef32c4d9467babc2e21338e3ed56c31b26a9ec95fdb90ddc4ea1440fd955e"
+  },
+  "cases": [
+    {
+      "scenario": "retained_input",
+      "withdrawn_commute_proxies": [],
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.04938479240282,
+      "minimax_regret": 17.36804635503932
+    },
+    {
+      "scenario": "retained_input",
+      "withdrawn_commute_proxies": [],
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.837940743079372,
+      "minimax_regret": 16.63077901625193
+    },
+    {
+      "scenario": "withdraw_Zurich_work_commute",
+      "withdrawn_commute_proxies": [
+        "Zurich"
+      ],
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.196469303064603,
+      "minimax_regret": 17.85433106877744
+    },
+    {
+      "scenario": "withdraw_Zurich_work_commute",
+      "withdrawn_commute_proxies": [
+        "Zurich"
+      ],
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.97618638944815,
+      "minimax_regret": 18.842709358152376
+    },
+    {
+      "scenario": "withdraw_Dublin_work_commute",
+      "withdrawn_commute_proxies": [
+        "Dublin"
+      ],
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.253955444786673,
+      "minimax_regret": 17.36804635503932
+    },
+    {
+      "scenario": "withdraw_Dublin_work_commute",
+      "withdrawn_commute_proxies": [
+        "Dublin"
+      ],
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 19.012134714230875,
+      "minimax_regret": 16.63077901625193
+    },
+    {
+      "scenario": "withdraw_both_work_commute",
+      "withdrawn_commute_proxies": [
+        "Zurich",
+        "Dublin"
+      ],
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.401039955448454,
+      "minimax_regret": 17.85433106877744
+    },
+    {
+      "scenario": "withdraw_both_work_commute",
+      "withdrawn_commute_proxies": [
+        "Zurich",
+        "Dublin"
+      ],
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 19.150380360599655,
+      "minimax_regret": 18.842709358152376
+    },
+    {
+      "scenario": "withdraw_all_submitted_commute_means",
+      "withdrawn_commute_proxies": [
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague"
+      ],
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.09247972604981,
+      "minimax_regret": 17.85433106877744
+    },
+    {
+      "scenario": "withdraw_all_submitted_commute_means",
+      "withdrawn_commute_proxies": [
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague"
+      ],
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 20.597411766502354,
+      "minimax_regret": 18.842709358152376
+    }
+  ],
+  "scope": "Diagnostic evidence-policy withdrawals only; original CSV, years, flags, all active160bounds, weights, anchors and interval rules remain fixed. Matching official records do not prove the original user source chain or historical boundary. No duration-distribution tightening.",
+  "MC_rerun": false
+}

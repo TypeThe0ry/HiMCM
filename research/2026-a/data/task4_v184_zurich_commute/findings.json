@@ -1,0 +1,64 @@
+{
+  "version": "V184 Zurich commute provenance",
+  "current_primary": "V181 unchanged",
+  "current_paper": "V182 unchanged",
+  "primary_admissions": 0,
+  "actual_score_width_change": 0,
+  "supplied_input": {
+    "city": "Zurich",
+    "commute_min": 39.9,
+    "commute_min_year": 2024,
+    "commute_min_flag": "ok",
+    "population_boundary_label": "city proper (official)",
+    "original_provider_URL_supplied": false
+  },
+  "provider_matching_record": {
+    "dataset": "urb_ctran",
+    "dataset_label": "Transport - cities and greater cities",
+    "frequency": "A",
+    "indicator": "TT1019V",
+    "indicator_label": "Average time of journey to work - minutes",
+    "city_code": "CH002C",
+    "city_label": "Zurich (greater city)",
+    "period": 2024,
+    "value": 39.9,
+    "status": "e",
+    "status_label": "estimated",
+    "data_updated": "2026-11-04T23:00:00+0100",
+    "exact_observation_window": "not separately established;2024 is provider observation-period label",
+    "source_file": "zurich_CH002C2024_urb_ctran_original.json",
+    "corroborating_retained_field": {
+      "indicator": "TT1010V",
+      "label": "Share of journeys to work by public transport (rail, metro, bus, tram) -%",
+      "value": 60.41,
+      "status": "e",
+      "same_year": 2024
+    }
+  },
+  "city_dictionary_guard": {
+    "initial_requested_code": "CH001C",
+    "initial_actual_label": "Bern (greater city)",
+    "initial_TT1019V_value": 37.69,
+    "initial_status": "e",
+    "source_file": "initial_CH001C2024_urb_ctran_original.json",
+    "correct_Zurich_code_identified_from_current_all_city_dictionary": "CH002C",
+    "dictionary_file": "all_cities2024_worktime_original.json"
+  },
+  "interpretation": {
+    "numerical_provider_match": true,
+    "proven_original_CSV_lineage": false,
+    "reason_lineage_not_proven": "The supplied CSV has no original provider URL or extraction receipt; matching value/year and companion transit share authenticate a compatible provider record, not the historical chain of custody of the CSV.",
+    "geography_mismatch": "The current provider label is greater city, while only the supplied population field is labelled city proper. The CSV does not separately document commute geography; do not infer all criterion populations equal the population denominator or claim a proven original commute-geography error.",
+    "status_mismatch": "Provider marks39.9 estimated; preserve original userflagok but record providerflagseparately.",
+    "indicator_scope": "Journey to work, not a measured current high-school one-way journey distribution.",
+    "compatible_duration_bins_obtained": false,
+    "no_interval_narrowing": "A matching mean alone supplies no new duration-distribution information beyond the retained mean-based conditional interval. Do not intersect unrelated school-trip bins.",
+    "boundary_geometry_verified": false,
+    "current_label_not_period_boundary_proof": "Current categorical label does not identify the exact2024boundary polygon, country-specific survey implementation or independent historical city-code crosswalk."
+  },
+  "definition_reference": {
+    "shared_archive": "data/task4_v184_dublin_commute/urban_handbook2004_original.pdf",
+    "scope": "Historical generic Urban Audit reference defines work-location-bound journey to work/residence-work mean; not proof of the exact2024Swiss survey implementation."
+  },
+  "next_action": "Preserve39.9/year/flag and all current bounds; use matched provider geography/status as provenance clarification and test source-policy sensitivity separately if authorized. Do not repeat CH001C-as-Zurich or infer adolescent access from work commutes."
+}

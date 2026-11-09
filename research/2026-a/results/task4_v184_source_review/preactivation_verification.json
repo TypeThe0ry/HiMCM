@@ -1,0 +1,233 @@
+{
+  "version": "V184",
+  "status": "pass",
+  "primary_model": "V181",
+  "activation_status": "verified_pending_activation",
+  "total_pages": 27,
+  "main_and_references_pages": 25,
+  "main_page_margin": 0,
+  "news_pages": [
+    18,
+    19
+  ],
+  "AI_pages": [
+    26,
+    27
+  ],
+  "compiled_references": 53,
+  "prior52_references_retained": true,
+  "scientific_files_unchanged": 245,
+  "existing_manuscript_files_unchanged": 713,
+  "owned_pointer_files_changed": [],
+  "shared_main_ref_class_unchanged": true,
+  "current_model_extensions_unchanged": true,
+  "existing_figures_and_numerical_assets_byte_unchanged": true,
+  "original_user_CSV_unchanged": true,
+  "primary_admissions": 0,
+  "actual_primary_width_change": 0,
+  "possible_champions": 16,
+  "necessary_champions": 0,
+  "conservative_recommendation": "Zurich under retained baseline",
+  "independent_scalar_withdrawal_rows": 160,
+  "withdrawal_reports": [
+    {
+      "scenario": "retained_input",
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.04938479240282
+    },
+    {
+      "scenario": "retained_input",
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.83794074307937
+    },
+    {
+      "scenario": "withdraw_Zurich_work_commute",
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.196469303064603
+    },
+    {
+      "scenario": "withdraw_Zurich_work_commute",
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.976186389448145
+    },
+    {
+      "scenario": "withdraw_Dublin_work_commute",
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.25395544478667
+    },
+    {
+      "scenario": "withdraw_Dublin_work_commute",
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 19.012134714230875
+    },
+    {
+      "scenario": "withdraw_both_work_commute",
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.401039955448454
+    },
+    {
+      "scenario": "withdraw_both_work_commute",
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 19.15038036059965
+    },
+    {
+      "scenario": "withdraw_all_submitted_commute_means",
+      "weight_reference": "fixed",
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.092479726049813
+    },
+    {
+      "scenario": "withdraw_all_submitted_commute_means",
+      "weight_reference": "equal",
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 20.597411766502354
+    }
+  ],
+  "source_review": {
+    "successful_original_responses": 8,
+    "matching_Dublin_value": 28.8,
+    "matching_Zurich_value": 39.9,
+    "Dublin_status": null,
+    "Zurich_status": "e (estimated)",
+    "both_current_labels_greater_city": true,
+    "CH001C_verified_Bern": true,
+    "user_source_lineage_proven": false,
+    "historical_boundary_verified": false,
+    "school_travel_distribution_obtained": false,
+    "source_sha256": {
+      "data/task4_v184_dublin_commute/eurostat_dublin2011_original.json": "e7422124a7745dce9924c6f575f9afc22a9151d70334b9d0cad88be38be904be",
+      "data/task4_v184_dublin_commute/urban_handbook2004_original.pdf": "caca3944aad3610ced62e6b240a383385f91f4aac466896e482697166e8f1a18",
+      "data/task4_v184_dublin_commute/retrievals.json": "a613782bcadb72ceab4c09ed7261df590a7e92b2cd1044b8b2690f014c542220",
+      "data/task4_v184_dublin_commute/findings.json": "8d3e807d27cec74e84ec6aec7584d05d8700fdff705b3f679b487cbcd2fdb75a",
+      "data/task4_v184_zurich_commute/initial_CH001C2024_urb_ctran_original.json": "a9a25d12a90b9a3e4ef2a5f76ecefb322d3ec6e41fe504cb700adb2bae12fedb",
+      "data/task4_v184_zurich_commute/urban_metadata_original.html": "adc8e45975a08e7f7cf4ef10f46d04e8e96a9391112fe40b87c6c90cb72ce743",
+      "data/task4_v184_zurich_commute/all_cities2024_worktime_original.json": "43ee5f04e06a1c1b9d73aceacf459530e532d6d675a3932fa9d7e93ac3af047b",
+      "data/task4_v184_zurich_commute/zurich_CH002C2024_urb_ctran_original.json": "3a5c749fb18efd962be0df0f7e9c333ae0d80363f3d1eab258119f1964e7f7e7",
+      "data/task4_v184_zurich_commute/retrievals.json": "2ab4317ab431d69a498637c1c2d3abde720387cc4909e26196bc91de07fd9e30",
+      "data/task4_v184_zurich_commute/findings.json": "3197270c27927cc91bcefa0e1af37ecde4ec7467e91ce1cad604047e66f75c25",
+      "data/task4_v184_helsinki_teacher/city2024_annual_original.pdf": "b2609ed11cc89e560de63740f0531fae7cb5aa293e0907bbfebc80b4dde91099",
+      "data/task4_v184_helsinki_teacher/oph_teachers_original.html": "2863b52058ce7357a7b28e4b6fb9eaca68fd10a8413c70f02e61cfd41a0badd0",
+      "data/task4_v184_helsinki_teacher/retrievals.json": "b889b3ca248f67efa939405dd8f0158305e1dd2f51dd272dd085588056ac3e24",
+      "data/task4_v184_helsinki_teacher/findings.json": "e32825660817c27338ba7bb3200c5d4fa416a39dd0d38db16d5c409ece753afa"
+    }
+  },
+  "diagnostic_sha256": {
+    "scripts/task4_v184_commute_withdrawal.py": "de8ef32c4d9467babc2e21338e3ed56c31b26a9ec95fdb90ddc4ea1440fd955e",
+    "results/task4_v184_source_review/summary.json": "02bc2c773d29ebd47ec1d7ae297eca5baa6662f062156321cdea5a8022c4511f",
+    "results/task4_v184_source_review/commute_withdrawal_ranks.csv": "a089da240da7d5e17fd41c2f8996b38808d17f3507b140abb3bda8c767d07779",
+    "results/task4_v184_source_review/commute_withdrawal_bounds.csv": "c1bf0c16515c9a543a40ff81022ed207baee7a3521094f98d27376a7356ea61f"
+  },
+  "source_graph_tex_files": 17,
+  "direct_root_text_equal": true,
+  "native_header_footer_checked": true,
+  "overfull_boxes": 0,
+  "underfull_paragraphs_per_build": 2,
+  "underfull_counts": [
+    2,
+    2
+  ],
+  "requirements": 47,
+  "prior47_statuses_preserved": true,
+  "pending_gates_preserved": [
+    "PA-ai-section",
+    "U-source-quality",
+    "CI-headers",
+    "CI-control",
+    "CI-anonymity",
+    "AI-tool-disclosure",
+    "AI-complete-record",
+    "TEAM-integration",
+    "TEAM-shared-build",
+    "REG-eligibility",
+    "SUB-filename",
+    "SUB-upload",
+    "SUB-confirmation"
+  ],
+  "AI_history_complete": false,
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "default_main_setting_changed": false,
+  "pdf_bytes": 211073,
+  "pdf_sha256": "4f373582a809581b463a58e2bb3208df4fff028255d6b8cf275c45247a6c0a0f",
+  "verifier_sha256": "35929ce8f2109940ca48cfe726adfe3ac3819a4ed2cd797d4e7d09f098902a17",
+  "tex_source_sha256": {
+    "drafts/task4_v172_country_figure.tex": "128111720d02bd48c4b5b4226977126a49c74e2df882031f76cab2122bf16c19",
+    "drafts/task4_v182_assets/age_joint.tex": "5028c3cc16680250042afd8b306efcceb57db5e9f4dc950e37c4a0964247cc70",
+    "drafts/task4_v182_assets/baseline.tex": "51aa9f37cd4db98f11c8d866e38a18d37e8cdb145cc6f95c52d08a31824664b6",
+    "drafts/task4_v182_assets/indicators.tex": "f1c4b4e3a6874f5e0ecce07a7ab91b2dfe31b8ddb7f86742eee852825612bea2",
+    "drafts/task4_v182_assets/preferences.tex": "770879db767db558d938f4723d5b02e3fe408476c6bc652322223df04d91056c",
+    "drafts/task4_v182_assets/revision.tex": "63dd744464755d3301d66dbca2fe4eb832a6bd8a679ec8e498c6f91f86960007",
+    "drafts/task4_v182_assets/vintage_table.tex": "c74f373bbd3dd0ea1677ddc641b67caafe0d5c6024a4d26397b6cd30973f854b",
+    "drafts/task4_v182_evidence_figure.tex": "b49753cb47a9637e13adfc10eccff700a5bf9f2dfbcb8866592a393e98a0c64f",
+    "drafts/task4_v182_generated.tex": "c5d058664e1ad383cde092333dded125d346b9e0c4e74c365a4a528d1f319fcf",
+    "drafts/task4_v184_ai.tex": "1cb738ff97d2f98b394588ae0214d2c138bdbb164fc349696aa6c4c57ab1cd6c",
+    "drafts/task4_v184_conclusion.tex": "d7a85547af003c4352386c880e04e8839890ee27ff42589b9c3295a4672507c6",
+    "drafts/task4_v184_core.tex": "878b241776724781d1577b7e58873b4be15bcde44ee9326cedfff6268aeb238a",
+    "drafts/task4_v184_front.tex": "0dec2cb5a13dadafdef303591c731ac3e5fa96e69179b5163045b2c336d8ecb8",
+    "drafts/task4_v184_news.tex": "4f2c926d02259e962e43c908fc5cdc9edbf4d31b33c848bf2de72044e85097cc",
+    "drafts/task4_v184_paper.tex": "db8999fbb347da9f0c464f5310eeca1a5d35d5b940167318ecf2072990922f43",
+    "drafts/task4_v184_references.tex": "3e20105709d0ad8ed5d065a3a10e6af9a467c71d588a37d4832d5bf9970121ec",
+    "drafts/task4_v184_vintage.tex": "7a94101da73aabac60b1929affd51f1a68c71a1998bf967a6e0c18bf232b3b37"
+  },
+  "visual_review_scope": "All27pages covered by initialoverview and fullaffectedsource/summary/conclusion/news/reference/AIpages; finalbroad-policy changed13/14/15 re-reviewedfullsize. Other24finalpages pixel-identical to precedingreviewedversion. Noallglyph12ptclaim.",
+  "full_page_images_reviewed": [
+    1,
+    5,
+    12,
+    13,
+    14,
+    15,
+    17,
+    19,
+    25,
+    26
+  ]
+}
