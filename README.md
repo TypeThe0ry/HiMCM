@@ -275,3 +275,5 @@ V174新增[当前稿／主16城独立复现入口](research/2026-a/results/task4
 V175为[已有MC平均名次提供成对比较界](research/2026-a/results/task4_v175_mean_rank_comparisons/README.md)：4440项中4254方向明确、186未区分，基线κ100的Oslo／Zurich仍未区分；新Zurich年度FTE原件保留口径、未准入，论文仍V173。
 
 V176将[MC数值精度解释写入自有稿](research/2026-a/results/task4_v176_mc_paper/README.md)，26页／50引用／主文余量1，其他正文保持。本次用户已明确要求全部上传；长期自动迭代仍暂停。
+
+V177用户已恢复长期迭代。[新来源核查](research/2026-a/results/task4_v177_source_reconciliation/README.md)排除仅换两个指定人口即可解释Zurich原率的假设；2官方原HTML，师资0准入，科学V154／论文V176保持。

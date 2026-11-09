@@ -1,0 +1,46 @@
+{
+  "version": "V177",
+  "retained_count": "1.0",
+  "retained_rate": "0.14",
+  "retained_rate_year": "2024",
+  "retained_population_year": "2025",
+  "retained_flag": "SUSPECT",
+  "official_population_observation": "End2024 municipal population as reported by the archived release;not a crime-rate denominator certification",
+  "implied_population_for_exact_point_rate": "714285.71428571428571428571428571428571428571428571",
+  "assumed_nearest_two_decimal_rate_envelope": [
+    "0.135",
+    "0.145"
+  ],
+  "rounding_assumption_status": "Hypothetical closed outer envelope;actual supplied rounding convention unknown",
+  "compatible_population_closed_envelope": [
+    "689655.17241379310344827586206896551724137931034483",
+    "740740.74074074074074074074074074074074074074074074"
+  ],
+  "numerical_display": "Decimal values are rounded to50 significant digits;exact endpoints are count*100000/0.145 and count*100000/0.135. No boundary classification relies on display rounding.",
+  "alternatives": [
+    {
+      "population_source": "retained_2025_population",
+      "population": "440935",
+      "arithmetic_count_per100000": "0.22679079682946466032408404866930499960311610554844",
+      "implied_count_at_point_rate": "0.617309",
+      "within_assumed_rounding_envelope": false
+    },
+    {
+      "population_source": "municipal_release_end2024_population",
+      "population": "448664",
+      "arithmetic_count_per100000": "0.22288393987482837936629638214788795178574612627712",
+      "implied_count_at_point_rate": "0.6281296",
+      "within_assumed_rounding_envelope": false
+    }
+  ],
+  "conclusion": "Neither of these two specific population totals reconciles count1 with rate0.14, even under the declared rounding envelope. Original rate source, unit and denominator remain unestablished.",
+  "inference_not_made": [
+    "corrected annual city homicide-victim rate",
+    "falsehood of every alternative city definition",
+    "one-sided victim-count bound from offence counts",
+    "replacement of any user value"
+  ],
+  "primary_admissions": 0,
+  "score_interval_width_change": 0,
+  "manuscript_changed": false
+}
