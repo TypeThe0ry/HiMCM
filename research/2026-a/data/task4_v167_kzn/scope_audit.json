@@ -1,0 +1,102 @@
+{
+  "status": "pass_nonadmission_scope_audit",
+  "admitted_cells": 0,
+  "source": "Kantonsschule Zürich Nord annual report2024/2025 and official news archive",
+  "raw_sources_sha256": {
+    "kzn_annual_2024_2025_original.pdf": "f096ebfe55c9aa4efe07660f5d7a0ad9a01f9d54a1b069d55e6b488db7da4f49",
+    "kzn_news_archive_original.html": "e18760b44de3d2de6e39784971f6ca77dd8fd7bc08808cf09e806cce703304ba"
+  },
+  "retrieval_receipt_sha256": "309ad6e15418853f681199f2abd7ab729c1c4879879c44fd0c5607ec6d2d0d15",
+  "extractor_sha256": "f478e5d411f139ee78cdff95468d78be7a02d13f0deca19a52f1171881582067",
+  "pdf_pages": 39,
+  "layout": "Some PDF pages contain two printed pages; locators distinguish these",
+  "evidence": [
+    {
+      "item": "overview_teachers",
+      "pdf_page": 6,
+      "printed_page": 11,
+      "published_value": 301,
+      "published_label": "Lehrpersonen",
+      "reference_period": "annual report2024/2025; no precise teacher count date printed on this overview",
+      "not_FTE": true
+    },
+    {
+      "item": "personnel_teachers",
+      "pdf_page": 38,
+      "printed_page": 74,
+      "published_value": 284,
+      "published_unit": "Personenanzahl",
+      "published_exclusion": "exklusiv acht Schulleitende",
+      "leadership_headcounts": {
+        "rektor": 1,
+        "prorektorinnen_und_prorektoren": 7
+      },
+      "reference_date": "No explicit separate date printed in the personnel table. Preceding statistics spread has15September2024, but not assigned to this table without further evidence.",
+      "not_FTE": true
+    },
+    {
+      "item": "pupils_same_table_and_date",
+      "pdf_page": 37,
+      "printed_page": 72,
+      "reference_date": "2024-09-15",
+      "total": 2339,
+      "undergymnasium": {
+        "first_year": 225,
+        "second_year": 201,
+        "total": 426
+      },
+      "gymnasium_total_including_under": 1650,
+      "fachmittelschule_total": 689,
+      "total_and_under_share_same_explicit_date": true,
+      "overview_total_on_pdf6_also_2339": true
+    },
+    {
+      "item": "classes",
+      "pdf_page": 37,
+      "printed_page": 73,
+      "undergymnasium_classes": [
+        8,
+        8
+      ],
+      "all_classes_total": 95
+    },
+    {
+      "item": "official_archive",
+      "file": "kzn_news_archive_original.html",
+      "identifies": "Jahresbericht2024/25 news entry",
+      "linked_news_path": "/schulkultur/kulturelle-veranstaltungen/news-detailansicht/jahresbericht-2024-25"
+    }
+  ],
+  "teacher_count_reconciliation": {
+    "overview_teacher_count": 301,
+    "personnel_teacher_count_excluding_eight_leaders": 284,
+    "personnel_plus_eight_leaders": 292,
+    "difference_from_overview_after_adding_eight": 9,
+    "reconciled": false,
+    "reason": "No explicit footnote or definition explaining301 versus284+8 was recovered in the overview/personnel/statistics tables or surrounding text. Do not attribute the difference to staff turnover, dates, instrumental teachers, visitors or contract fractions without source evidence."
+  },
+  "FTE_recovery": {
+    "actual_teaching_FTE_VZE_recovered": false,
+    "upper_stage_teaching_FTE_allocation_recovered": false,
+    "explicit_fulltime_or_100percent_teacher_contracts_recovered": false,
+    "full_extract_search_term_hit_counts": {
+      "Vollzeit\\w*": 0,
+      "\\bVZE\\b": 0,
+      "\\bFTE\\b": 0,
+      "Pensum": 0,
+      "Pensen": 0,
+      "Stellenprozent\\w*": 0,
+      "Stellenplan\\w*": 0,
+      "100\\s*(?:%|Prozent)": 0,
+      "Arbeitszeit\\w*": 0,
+      "Lehrauftrag\\w*": 0
+    },
+    "scope": "No matching terms in searchable PDF text and no FTE unit in the inspected statistical/personnel tables. This is a bounded recovery finding, not a claim about undisclosed school records."
+  },
+  "decision": "No admissible teaching FTE or upper-stage allocation. Headcounts are not FTE; total teaching FTE, even if later found, cannot be assumed a lower bound for upper-only teaching when the school includes Untergymnasium.",
+  "city_coverage": "One mixed-stage school, not all Zurich providers; no city ratio or utility derived",
+  "no_teacher_load_assumption": true,
+  "no_PTR_or_utility_computed": true,
+  "no_other_school_route_expanded": true,
+  "model_or_manuscript_written": false
+}
