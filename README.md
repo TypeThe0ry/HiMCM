@@ -14,7 +14,7 @@
 
 **换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V137完整稿与启用记录](docs/handoff/V137_COMPLETE_REVIEW.md)。现行主数据为16城V136（112点／33部分／15全缺失），V137扩展与22页完整独立稿已统一；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V131（文档V134）及更早稿冻结。
 
-最新文档：[V139真实采集案例修订](docs/handoff/V139_RESEARCH_UPDATE.md)，Warsaw恢复原件与学段不匹配理由已写入现行V137数据章；科学V136/V137和21补数保持，主文参考20页，AI另2页。最新[V138采集诊断及Warsaw原件恢复](docs/handoff/V138_RESEARCH_UPDATE.md)已按V136的15格更新，0新准入；旧V132诊断冻结。
+最新文档：[V140 AI记录与交付核对](docs/handoff/V140_RESEARCH_UPDATE.md)，局部AI选集66→125、30项当前交付核对完成；主文参考20页像素保持，AI另2页，科学V136/V137和21补数保持。最新[V138采集诊断及Warsaw原件恢复](docs/handoff/V138_RESEARCH_UPDATE.md)已按V136的15格更新，0新准入；旧V132诊断冻结。
 
 | 想了解什么 | 入口 |
 | --- | --- |
