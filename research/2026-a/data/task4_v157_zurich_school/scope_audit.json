@@ -1,0 +1,137 @@
+{
+  "version": "V157",
+  "status": "new source review; no admission",
+  "primary": "V154 unchanged",
+  "student_workbook": {
+    "file": "data/task4_v120_education/zurich_students2024.xlsx",
+    "sha256": "6234f5b6cf617af10db16c5930105df4183eade7df47564858cc5dfe010bc251",
+    "population_scope": "Mittelschulen table T_3 only; not all city upper-secondary pupils or resident ages14-18; separate Berufsschulen tables are not included",
+    "year_label": 2024,
+    "year_scope": "School year beginning in2024 per Erläuterungen!B1; not relabelled as2025",
+    "total_cell": "T_3!T11",
+    "total": 13426,
+    "stage_aggregates": [
+      {
+        "stage": "Sekundarstufe I",
+        "ownership": "privat",
+        "published_numeric_sum": 402
+      },
+      {
+        "stage": "Sekundarstufe I",
+        "ownership": "öffentlich",
+        "published_numeric_sum": 4443
+      },
+      {
+        "stage": "Sekundarstufe II",
+        "ownership": "privat",
+        "published_numeric_sum": 1999
+      },
+      {
+        "stage": "Sekundarstufe II",
+        "ownership": "öffentlich",
+        "published_numeric_sum": 6582
+      }
+    ],
+    "lower_secondary": 4845,
+    "upper_secondary": 8581,
+    "numeric_cells": 59,
+    "blank_cells_preserved": 30,
+    "enge_school_total": {
+      "cell": "T_2!S14",
+      "value": 1132,
+      "scope": "All levels at that school; no school-specific stage cross-tab"
+    },
+    "stadelhofen_school_total": {
+      "cell": "T_2!S21",
+      "value": 688,
+      "scope": "All levels at that school"
+    },
+    "no_upper_secondary_only_denominator_claim": true
+  },
+  "school_sources": {
+    "enge": "Approximate150-plus teacher headcount and1100 pupils; no teaching FTE denominator established",
+    "stadelhofen": "Public2024/25 annual report86PDF pages. The sole full-time text hit onPDF63 concerns a caretaker moving toFKSZ, not teaching FTE. Contents lists directories; public file follows chronology with imprint; no usable workload table obtained.",
+    "reviewed_pdf_pages": [
+      63,
+      84
+    ],
+    "all_document_absence_not_claimed": true
+  },
+  "national_candidate": {
+    "dataset": "educ_uoe_perp02",
+    "geo": "CH",
+    "isced11": "ED3",
+    "sex": "T",
+    "time_label": "2024",
+    "unit": "NR",
+    "worktime": "TOT_FTE",
+    "observations": {
+      "TOT_SEC": {
+        "index": 45,
+        "value": 20904,
+        "status": "d"
+      },
+      "PUB": {
+        "index": 48,
+        "value": 18446,
+        "status": "d"
+      },
+      "PRV": {
+        "index": 51,
+        "value": 2459,
+        "status": "d"
+      }
+    },
+    "headcount": {
+      "index": 0,
+      "value": 33993,
+      "status": "d"
+    },
+    "full_time_headcount": {
+      "index": 30,
+      "value": 7663,
+      "status": "d"
+    },
+    "published_sector_sum_difference": 1,
+    "matching_footnotes": [
+      {
+        "sheet": "Footnotes",
+        "row": 68495,
+        "range": "A68495:K68495",
+        "text": "Breakdown unavailable, ISCED11_35 and 3, includes ISCED11_4.",
+        "selectors": [
+          "*",
+          "TOT_SEC",
+          "TOT_FTE",
+          "NR",
+          "*",
+          "T",
+          "ED3",
+          "CH",
+          2024
+        ]
+      }
+    ],
+    "country_personnel_metadata_context": "Personnel Data not covered: No data for private institutions",
+    "reference_period_match_to_city_workbook": false,
+    "all_provider_teacher_superset_proven": false,
+    "reason": "Country metadata says private-institution personnel are not covered, despite a numerical PRV series. ED3 also includes ED4. Coverage and period cannot be silently assumed consistent; no national-to-city point substitution or upper bound admitted."
+  },
+  "valid_bound_requirements": {
+    "lower_PTR": "Need verified student lower total and teacher upper superset for the same stage/providers/period",
+    "upper_PTR": "Need verified student upper superset and positive teacher lower subset for the same stage/providers/period",
+    "current_source_pairs_meet_requirements": false
+  },
+  "observations": [],
+  "primary_data_admissions": 0,
+  "primary_score_interval_width_reduction": 0,
+  "original_sha256": {
+    "enge_portrait_original.html": "41ca94fc8479ee75eea3ad25ae0b899120c4d8be70d1fea6e773f10082b7ce5d",
+    "enge_documents_original.html": "49938d48ebb5c7c6b9f44509fbf04d7d66c256f1acf697e5b62f08e806ec7f2e",
+    "stadelhofen_2024_25_original.pdf": "282a3d7b096eb7588d5feee6fd492367937d1266912b4e7241471c097f066429",
+    "eurostat_personnel_footnotes_original.xlsx": "e33d42ba8df37dc19a98f6638455c03ff7e76127d66911d29a9408511052bf22",
+    "eurostat_CH_metadata_original.html": "4933d055756bf59093f4530b3218419f46c40acb0df5a6bba77d2c2e66eefd47",
+    "eurostat_CH_ED3_2024_original.json": "efb6a78eaaa0026e3db9a232d0631fe92549b661cd9bc669a29137011eb109c6"
+  },
+  "extractor_sha256": "aec9384dd047211986bbb740ea459cbc3d236e9f83e601041d1e9045c56602fa"
+}

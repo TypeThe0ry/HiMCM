@@ -1,6 +1,6 @@
 # 恢复HiMCM：当前主分析、扩展与独立稿均V154
 
-长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
@@ -28,3 +28,5 @@ Milan104站／枢纽来自市府2024-10-16历史库存，原件与去重见data/
 GitHub仅研究，Overleaf仅稿件／选定资产，各自fetch并审确切diff、正常提交；研究公开push待既有用户选择，仍仅本地commit；私有Overleaf按授权push。队友main／ref／class及项目设置保持。root main为旧赛事模板+冻结25城阶段稿，17缺图引用，不能当V154入口。
 
 采集价值诊断已重基为V155：14全缺失及Milan残余单列，见results/task4_v155_priority。Dublin教师精确信息固定保证1.066798、最有利5.785906；Zurich保证0.793974、最有利9.316221、最多排除5城。Milan交通单独精确无遗憾／冠军改善，两项仅下界全域无排除，勿重复扩名录追求缩冠军。比赛清单已更新为V156，下一轮优先新教师FTE路线或论文实质改进；V138的15缺失格列表已过期，V149仍旧PDF。补数只找新的匹配教师FTE／高中实际单程旅时或原率来源，已有抑制／单位不符路线失败跳过。V152历史低端通学证据仍独立候选；同国／年龄／公平性继续保持对象范围。旧版本详情由各Vxxx交接与Git历史恢复，勿覆盖冻结结果。
+
+V157新取六官方原响应：Enge人数非教学FTE；Stadelhofen年报全职词命中是管理员；Eurostat全国ED3 FTE含ED4且私立覆盖与元数据不一致、参考期未协调，不能作城市教师上界。V120学生T_3为Mittelschulen、含I／II阶段，非全市高中总数。0准入0收窄；下一轮跳过上述已查路线。
