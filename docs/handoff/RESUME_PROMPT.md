@@ -1,6 +1,6 @@
-# 接手续做HiMCM：V136主数据／V137扩展，文档V146
+# 接手续做HiMCM：V136主数据／V137扩展，文档V148
 
-长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V147新源核查](V147_RESEARCH_UPDATE.md)及[V146当前稿件交接](V146_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
+长期goal active；单轮完成不结束长期目标。所有新增／修改论文和研究说明必须使用指定已安装anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、[V147新源核查](V147_RESEARCH_UPDATE.md)及[V148当前稿件交接](V148_RESEARCH_UPDATE.md)。现行已经启用，不再称待迁移，不回到旧25城主入口。
 
 ## 权威数据与结论
 
@@ -16,12 +16,12 @@
 
 ## 论文和复核
 
-相邻/data/projects/HiMCM-Overleaf的drafts/task4_v137_paper.tex/.pdf是完整自有独立审阅稿，文件名不改、文档修订V146。24页=22正文参考+2暂定AI；新闻16–17，参考18–22，AI23–24。PDF161143字节，SHA56161bffae0008bb25ab745e6a0408b97bcee5556b3f562c34442c7964add533。零warning，24页95dpi实看、7／22页单独检查。139科学文件／56旧资产章节／74历史稿保护通过；原V131/V134及更早稿冻结。
+相邻/data/projects/HiMCM-Overleaf的drafts/task4_v137_paper.tex/.pdf是自有独立审阅稿，文档修订V148。24页=22正文参考+2暂定AI；新闻16–17，参考18–22，AI23–24。PDF161754字节，SHAf4e50119defd735828ca34d4427ff54f9bc8b58750ae9f3a87a3c3dca76eb6a8。零warning，24页95dpi实看、14页单独检查。139科学／66旧资产章节／74历史稿保护通过，6其他自有章节保持，23页像素保持。旧稿冻结。
 
 - 研究Python .venv-v120/bin/python（3.11、numpy1.26、pandas2.3、scipy1.13）；tectonic0.17、Poppler。root账户，项目/data/projects，大原件/data/datasets，临时/data/scratch；不重建环境。
 - V136 snapshot10项、原revision_audit及V137 audit55输出冻结。启用后16静态／24×10000同流MC和撤回已通过，无新科学风险不重复全量跑。复核老审计另写recheck，不覆盖原capture。
 - 新源data/task4_v144_homicide/extract.py可从Git内原XLSX／HTML和完整lossless PDF复抽。scripts/task4_v144_homicide_sensitivity.py生成情景，audit_task4_v144_homicide.py独立核128城市情景／256得分界、全部排名、原表单位／期间。原verification保留。
-- 当前文档审计scripts/audit_task4_v146_documentation.py保护139科学／56旧资产章节／74历史稿，core与references补六来源引用；results/task4_v146_documentation存QA／manifest／编译／sync回执。来源覆盖脚本task4_v146_source_coverage.py和独立审计核160格／320界，所有21补充有cite，15全缺失为8师资／4交通／3出行。旧交付哈希为历史，不检验当前PDF。
+- 当前文档审计scripts/audit_task4_v148_documentation.py保护139科学／66旧资产章节／74历史稿；results/task4_v148_documentation存QA／manifest／编译／sync回执。新age_joint段及3回执由builder绑定，原V146来源覆盖21/21保持。旧交付哈希为历史，不检验当前PDF。
 - Overleaf builder build_task4_v137.py先核冻结源和新审计；只改叙述／来源用--refresh-manifest-only，不重生主图／宏。新PDF每轮首次authoring按PDF技能marker一次，编译捕获stdout/stderr，checker --compiler-output LOG，实际看完全部渲染才加--render-review-confirmed。
 - 权重8×.1125，transport／pools各.05；equal各.1。收益x/(a+x)，成本a/(a+x)，锚点2/15/100/10/15/1/50/travel30/100/1。travel exp(-t/30)，均值只Jensen界，分箱／未知／开尾按原规则；距离权重只乘一次。自排除竞争上界、minimax regret保守决策。MC为条件频率，偏好非学生调查，未来情景非经验趋势。
 
@@ -36,3 +36,7 @@ GitHub仅研究，Overleaf仅稿件和选定资产；分别fetch并审确切diff
 ## V147新源核查
 
 新取Zurich 2025/2026学校统计及Helsinki 2025年鉴完整PDF和出版说明，0新准入。州公立教学FTE1771.6与部门雇员FTE2227不同；Helsinki学生最新行仍2024，相邻成人课时不作师资。完整原件／指定页渲染／提取器在data/task4_v147_education_refresh；独立词坐标审计scripts/audit_task4_v147_education.py核139科学／82稿件文件。Overleaf仅新增drafts/task4_v147_source_review支持回执，论文仍V146、原PDF字节保持；不重复这两页试填，下一轮需要新的匹配分母路线。
+
+## V148年龄联合约束
+
+既有2012年龄组差值闭包[-0.23330,0.26325]，共享612未知年龄质量只计一次；两个有限旅时构造给+0.23842／-0.20848。源仍data/task4_v116_ibb/aggregate_results.json，原汇总／边际案例保持；scripts/task4_v148_age_contrast.py及独立audit核解析符号、5151分配点和2见证。只增自有6.4，非今天精确14／18岁、非偏好调查或抽样置信区间，0准入／0主得分收窄。
