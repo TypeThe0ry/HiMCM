@@ -1,0 +1,47 @@
+{
+  "version": "V165",
+  "source_sha256": {
+    "staff_page_original.html": "b16afca4ed23248ad52d31af660cc1f57286ddd717c63e1dee0393729700e124",
+    "survey_page_original.html": "7e1c22ef259d0e9b16cef0d52e3c1ff1a758f219e29361f22816dd5ea410b053",
+    "chart_snippet_original.html": "a90531ec4588dbe34d2a44d0f43c9e9993678b958a11ced054e554da58d1a254",
+    "chart_module_original.js": "449f7d9d30138ec805f8d66918c7e0682fd9404504e118e51ca2237dc540f50e",
+    "chart_general_original.js": "69d9f9a8c56255d53451b41b8135465fe9f4f9d9f4db885881ecd613d1c53f2c",
+    "staff_data_original.json": "92ced361d6843758c00fb03ebe5914383b0fe831b3669288b4fc35713749cbf0"
+  },
+  "publisher": "Bildungsplanung Kanton Zürich",
+  "survey": "SSP census; public and private schools; school location; 15 September",
+  "published_chart": "Teaching workload in publicly financed Mittelschulen and Berufsfachschulen in the canton",
+  "unit": "Vollzeiteinheiten; one unit is 100 employment percentage points",
+  "data_columns": [
+    "Schuljahr",
+    "Schultyp",
+    "Vollzeiteinheiten"
+  ],
+  "rows": 20,
+  "years": [
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "selected_cantonal_publicly_financed_Mittelschule_VZE": {
+    "2024/25": 1759.942307910003,
+    "2025/26": 1774.584821416001
+  },
+  "reference_day": "15 September of the school year; school year is not calendar year",
+  "provider_scope": "Publicly financed; does not establish coverage of all private schools",
+  "stage_scope": "Mittelschule includes FMS, HMS, IMS; data lack a separate Sekundarstufe II selector",
+  "geography_scope": "Canton; data have no municipality or school selector",
+  "api_statusDate": "2026-11-09T11:19:49.770",
+  "api_statusDate_interpretation": "Response metadata timestamp; not used as observation year or as a verified release date",
+  "admission": "Rejected for city all-provider upper-secondary PTR and its guaranteed denominator upper bound",
+  "reason": "A census collection frame does not expand the published chart subset; no demonstrated containment of all target city teaching FTE",
+  "primary_data_admissions": 0,
+  "primary_utility_interval_change": 0
+}

@@ -1,0 +1,217 @@
+{
+  "status": "pass_nonadmission_scope_audit",
+  "admitted_cells": 0,
+  "scope": "Two new official API routes only; not an exhaustive claim about all possible Dublin sources",
+  "raw_responses_sha256": {
+    "eurostat_dublin_education_original.json": "8c5a33cc18e7bc804cac97318dbf606cfb9a520c816dcf34a80695bb0ae70f4c",
+    "cso_wmi07_teachers_original.json": "7887306d6da99c6d0de3573dac064e4de091bc694dded60f7022a97507135061"
+  },
+  "retrieval_receipt_sha256": "b02721a7216f21225d3850df8fb7aeca5d7389f35231e68afbc55a9be7a65ac5",
+  "extractor_sha256": "5fc6a8592779de31768ee103fe7fe454420a89b1fd771e39c6ac1e8f1e2cbda3",
+  "eurostat": {
+    "dataset": "urb_ceduc",
+    "dimension_ids": [
+      "freq",
+      "indic_ur",
+      "cities",
+      "time"
+    ],
+    "sizes": [
+      1,
+      14,
+      1,
+      36
+    ],
+    "dimensions": {
+      "freq": {
+        "label": "Time frequency",
+        "category_labels": {
+          "A": "Annual"
+        }
+      },
+      "indic_ur": {
+        "label": "Urban audit indicator",
+        "category_labels": {
+          "TE1001V": "Number of children 0-4 in day care or school",
+          "TE1039V": "Share of early leavers from education and training, total -%",
+          "TE1040V": "Share of early leavers from education and training, male -%",
+          "TE1041V": "Share of early leavers from education and training, female -%",
+          "TE1026V": "Students in higher education (ISCED level 5-8 from 2014 onwards), total",
+          "TE1027V": "Students in higher education (ISCED level 5-8 from 2014 onwards), male",
+          "TE1028V": "Students in higher education (ISCED level 5-8 from 2014 onwards), female",
+          "TE2025V": "Persons (aged 25-64) with ISCED level 0, 1or 2 as the highest level of education",
+          "TE2028V": "Persons (aged 25-64) with ISCED level 3 or 4 as the highest level of education",
+          "TE2031V": "Persons aged 25-64 with ISCED level 5, 6, 7 or 8 as the highest level of education, from 2014 onwards",
+          "TE1001I": "Number of Children 0-4 in day care (publ.&priv) per 1000 children 0-4",
+          "TE1026I": "Share of students in higher education in the total population (per 1000 persons)",
+          "TE2028I": "Proportion of working age population qualified at level 3 or 4 ISCED",
+          "TE2031I": "Proportion of population aged 25-64 qualified at level 5 to 8 ISCED, from 2014 onwards"
+        }
+      },
+      "cities": {
+        "label": "Geopolitical entity (declaring)",
+        "category_labels": {
+          "IE001C": "Dublin (greater city)"
+        }
+      },
+      "time": {
+        "label": "Time",
+        "category_labels": {
+          "1990": "1990",
+          "1991": "1991",
+          "1992": "1992",
+          "1993": "1993",
+          "1994": "1994",
+          "1995": "1995",
+          "1996": "1996",
+          "1997": "1997",
+          "1998": "1998",
+          "1999": "1999",
+          "2000": "2000",
+          "2001": "2001",
+          "2002": "2002",
+          "2003": "2003",
+          "2004": "2004",
+          "2005": "2005",
+          "2006": "2006",
+          "2007": "2007",
+          "2008": "2008",
+          "2009": "2009",
+          "2010": "2010",
+          "2011": "2011",
+          "2012": "2012",
+          "2013": "2013",
+          "2014": "2014",
+          "2015": "2015",
+          "2016": "2016",
+          "2017": "2017",
+          "2018": "2018",
+          "2019": "2019",
+          "2020": "2020",
+          "2021": "2021",
+          "2022": "2022",
+          "2023": "2023",
+          "2024": "2024",
+          "2025": "2025"
+        }
+      }
+    },
+    "teacher_or_FTE_indicator_in_returned_14": false,
+    "upper_secondary_student_teacher_pair_present": false,
+    "geographic_label": "Dublin (greater city)",
+    "municipal_boundary_match_established": false,
+    "decision": "No teacher denominator in this dataset. Greater-city label is not assumed to match Dublin City municipal scope; no boundary equivalence was recovered."
+  },
+  "cso": {
+    "dataset": "WMI07",
+    "dimension_ids": [
+      "STATISTIC",
+      "TLIST(A1)",
+      "C02199V02655",
+      "C04026V04786"
+    ],
+    "sizes": [
+      2,
+      8,
+      3,
+      41
+    ],
+    "dimensions": {
+      "STATISTIC": {
+        "label": "Statistic",
+        "category_labels": {
+          "WMI07C01": "Primary Education Teachers",
+          "WMI07C02": "Secondary Education Teachers"
+        }
+      },
+      "TLIST(A1)": {
+        "label": "Year",
+        "category_labels": {
+          "2013": "2013",
+          "2018": "2018",
+          "2019": "2019",
+          "2020": "2020",
+          "2021": "2021",
+          "2022": "2022",
+          "2023": "2023",
+          "2024": "2024"
+        }
+      },
+      "C02199V02655": {
+        "label": "Sex",
+        "category_labels": {
+          "-": "Both sexes",
+          "1": "Male",
+          "2": "Female"
+        }
+      },
+      "C04026V04786": {
+        "label": "Country",
+        "category_labels": {
+          "AL": "Albania",
+          "AM": "Armenia",
+          "AT": "Austria",
+          "AZ": "Azerbaijan",
+          "BE": "Belgium",
+          "BG": "Bulgaria",
+          "BY": "Belarus",
+          "CH": "Switzerland",
+          "CY": "Cyprus",
+          "CZ": "Czechia",
+          "DE": "Germany",
+          "DK": "Denmark",
+          "EE": "Estonia",
+          "ES": "Spain",
+          "EU272020": "EU27 countries (from 2020)",
+          "FI": "Finland",
+          "FR": "France",
+          "GE": "Georgia",
+          "GR": "Greece",
+          "HR": "Croatia",
+          "HU": "Hungary",
+          "IE": "Ireland",
+          "IS": "Iceland",
+          "IT": "Italy",
+          "LT": "Lithuania",
+          "LU": "Luxembourg",
+          "LV": "Latvia",
+          "MK": "North Macedonia",
+          "MT": "Malta",
+          "NL": "Netherlands",
+          "NO": "Norway",
+          "PL": "Poland",
+          "PT": "Portugal",
+          "RO": "Romania",
+          "RS": "Serbia",
+          "SE": "Sweden",
+          "SI": "Slovenia",
+          "SK": "Slovakia",
+          "TR": "Türkiye",
+          "UA": "Ukraine",
+          "XK": "Kosovo"
+        }
+      }
+    },
+    "statistic_units": {
+      "WMI07C01": {
+        "decimals": 0,
+        "label": "Number",
+        "position": "end"
+      },
+      "WMI07C02": {
+        "decimals": 0,
+        "label": "Number",
+        "position": "end"
+      }
+    },
+    "geography_dimension": "Country",
+    "city_or_school_dimension_present": false,
+    "provider_or_upper_secondary_only_breakdown_present": false,
+    "decision": "National primary/secondary teacher series has no Dublin city denominator or matched upper-secondary/provider breakdown. No inference about FTE units is needed for this geographic rejection."
+  },
+  "interpretation": "Missing geography/stage/provider variables are not zero-valued teachers. No ratio, utility, city extrapolation or allocation-to-actual conversion is computed.",
+  "excluded_prior_routes": "No reused ETB376.1 allocation upper bound,411.8/3862 mismatched-year ratio, or private-provider exclusion substitution.",
+  "scope_inputs_written": false,
+  "model_or_manuscript_written": false,
+  "network_required_for_reproduction": false
+}
