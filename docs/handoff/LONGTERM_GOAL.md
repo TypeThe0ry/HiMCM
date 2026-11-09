@@ -192,3 +192,7 @@ V154的14全缺失及Milan交通残余完成条件信息诊断，区分Dublin保
 ## V163：Helsinki原始分子与FTE估算边界
 
 八官方原响应支持直接学生分子核查，国家AnnexIII中15.2.2!F10揭示FTE估算方法，缺一侧误差包络，不能直接当城市教师保证上界。独立原生OOXML／JSON-stat核验通过，187科学／472旧稿保持；0准入0收窄，正文V160，goal active。见[V163交接](V163_RESEARCH_UPDATE.md)。
+
+## V164：用户模板只用于自有稿
+
+使用既有只读mcmthesis类完成原生摘要、Team # / Page x of y页眉与空页脚；保留队友main/ref/class和正文。精简自有摘要／结论排除短尾页，最终25页（23主文参考+2AI）、49引用。Dublin／Finland计量区分入自有数据章节，0数据／评分变化；42项核验、187科学／474旧稿保护通过，登记号PENDING，goal active。见[V164交接](V164_RESEARCH_UPDATE.md)。

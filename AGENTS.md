@@ -13,7 +13,7 @@ Before drafting or editing manuscript text, abstracts, conclusions, press releas
 
 ## Priority: Overleaf workspace
 
-Current scientific entry: **user16 V154**, with V154 controlled extensions and the current independent full review V160 registered in `research/2026-a/design/task4_user_current_review.json`. The V136/V137 evidence and V148 review remain frozen; current extension registry is `research/2026-a/design/task4_user_current_extensions.json`. The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
+Current scientific entry: **user16 V154**, with V154 controlled extensions and the current independent full review registered in `research/2026-a/design/task4_user_current_review.json`. The V136/V137 evidence and V148 review remain frozen; current extension registry is `research/2026-a/design/task4_user_current_extensions.json`. The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
 
 The user explicitly made the Overleaf workspace the first priority on 2026-11-07.
 
@@ -55,3 +55,7 @@ The user explicitly made the Overleaf workspace the first priority on 2026-11-07
 - Do not edit other contributors' prose, equations, figures, citations, or formatting without explicit user authorization covering those changes. Do not infer that general manuscript editing or upload authorization permits rewriting their work.
 - Review the exact diff before every manuscript commit/push; preserve unrelated content and online edits. Do not perform incidental polishing or restructuring.
 - Research/model work does not authorize automatic manuscript updates. When ownership is unclear, preserve the existing content and ask before changing it.
+
+## User manuscript format — 2026-11-09
+
+Use the existing read-only mcmthesis class for owned review material, following the user-supplied format recorded in research/2026-a/design/task4_user_format_reference.json: native summary sheet, Team # running head at left, Page x of y at right, and empty footers. Preserve teammate main.tex, ref.bib, mcmthesis.cls and prose. The sample IDs18213/18214 conflict; retain PENDING until the actual registered number is verified. Current owned review version is in task4_user_current_review.json.

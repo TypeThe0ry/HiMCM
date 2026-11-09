@@ -1,13 +1,13 @@
-# 恢复HiMCM：主分析／扩展V154，当前独立稿V160
+# 恢复HiMCM：主分析／扩展V154，当前独立稿V164（用户mcmthesis格式）
 
-长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V164用户格式与当前稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
 - 原CSV：research/2026-a/data/task4_v117_team_intake/city_indicators.csv，SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c，保持用户值／年份／标记。
 - 主注册表：research/2026-a/design/task4_user_current_model.json，V154模块task4_user_v154_revision.revised_bounds()；22累计补充，112点／34部分／14全未知，16×10。来源快照design/task4_user_v154_snapshot.json，187项。
 - 扩展注册表：design/task4_user_current_extensions.json；scripts/task4_v154_extensions.py的preferences／future／method／diagnostics只写V154新目录。偏好矩阵、未来假设、种子与模型机制保持，历史六CSV字节保持。
-- 当前独立稿：research/2026-a/design/task4_user_current_review.json注册V160；相邻HiMCM-Overleaf/drafts/task4_v160_paper.tex/.pdf，build_task4_v160.py及根入口task4_v160_review_entry.tex。科学仍V154，未切默认主文件，V154/V159旧稿冻结。
+- 当前自有独立稿：research/2026-a/design/task4_user_current_review.json注册V164；相邻HiMCM-Overleaf/drafts/task4_v164_paper.tex/.pdf，build_task4_v164.py及根入口task4_v164_review_entry.tex。调用现有只读mcmthesis类，科学仍V154，未切默认主文件，V160等旧稿冻结。
 
 ## 科学状态
 
@@ -42,3 +42,5 @@ V161新核Dublin2025/26工资册：City Of Dublin ETB工资册411.8大于分配3
 V162误差诊断：固定原成员和权重，允许5%／20%已观测权重质量任意修正效用，历史均值−最低20%差距最紧下界0.200134／0.129091；质量松弛，不是学生人数比例或实际错误率。1227断点证明、8589LP+7见证LP核验。两直接API超时，原始记录来源未升级；正文V160、科学V154保持。见[V162交接](V162_RESEARCH_UPDATE.md)。
 
 V163新取Helsinki原始StatFin11c4 API：KU091一般高中2022、2023、2024年学生数分别17789、18177、18661，教育所在地、地区分类2025，不能称2025观测。Eurostat全国FTE无标记也非保证上界：国家附表15.2.2!F10明确全职／兼职及FTE估算，未取得一侧误差包络。八原响应和独立OOXML核验，0准入0收窄，科学V154／论文V160保持。见[V163交接](V163_RESEARCH_UPDATE.md)，后续跳过未经误差保障的全国上界路线。
+
+V164当前自有稿按用户附件mcmthesis格式：Letter／Palatino，摘要专页，正常页眉Team # PENDING / Page x of25，页脚空白；队友main/ref/class保持。25页=23主文参考+2暂定AI，49引用；42项映射保留原41状态及14待办。零overfull、2轻微underfull实看通过。附件18213/18214冲突不择号。187科学／474旧稿保持，其他两自有指针仅导航更新；科学V154，0评分变化。以后自有稿沿用该格式，只改自己负责内容。当前交付映射以V164为准，V160为旧稿证据。
