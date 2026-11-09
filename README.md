@@ -259,3 +259,5 @@ python3 scripts/verify_repository.py
 最近更新：2026-11-07，Asia/Singapore。
 
 - [V22：可能冠军的有利假设门槛与 Phoenix 来源核验](research/2026-a/results/task4_v22_optimism/README.md)
+
+V169补充[现有模拟均值的数值精度证书](research/2026-a/results/task4_v169_mc_precision/README.md)，科学V154／当前自有稿V168保持。
