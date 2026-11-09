@@ -19,3 +19,5 @@ CSO F7068及2011 Profile10表6（物理43／印刷42）给出Dublin City普查�
 脚本为research/2026-a/scripts/task4_v185_commute_candidate.py、audit_task4_v185.py，用仓库.venv-v120/bin/python运行；结果results/task4_v185_commute_candidate。独立核128评分／640界／202探针、8成功原件及4失败请求；245科学绑定、736已有论文文件、三个注册表和当前160格保持。无MC重跑、无未变稿编译。
 
 下一轮优先将46.59阈值按已有5.5节职责精炼入自有稿，保持25页正文参考预算及核心模型。Dublin不同人群配置只在有论证作用时作辅助，不包装为补数。跳过已查F7068／Swiss2023自动替换、旧API及Madrid失败路线。控制号、全队AI史、团队整合、在线编译／比赛回执仍待真实证据；长期goal active。
+
+双仓远端已核：GitHub载荷c0ca1a1823f445d60c40eaebad037e13d003c0d0，Overleaf e5d7ca2feddb8576e961f54da2f970dd9e913ba4；普通push且核验时工作区干净。P仅9新增支持文件、8份与研究侧逐字节一致；245科学绑定／736既有论文文件／三个注册表保持。详sync.json、delivery.json，回执另提交；未声称新稿编译、服务器编译或比赛提交，长期goal active。
