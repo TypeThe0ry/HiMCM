@@ -12,13 +12,13 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [恢复 prompt 与当前进度](docs/handoff/RESUME_PROMPT.md)、[V131扩展迁移（全稿待统一）](docs/handoff/V131_RESEARCH_UPDATE.md)、[V130受控补数](docs/handoff/V130_RESEARCH_UPDATE.md)、[V129采集诊断](docs/handoff/V129_RESEARCH_UPDATE.md)、[V128研究与完整稿](docs/handoff/V128_RESEARCH_UPDATE.md)。当前主数据为16城V127（112点／31部分／17全缺失），V128扩展及完整独立稿统一该证据；V130 Berlin单格受控补数已审计，尚未推进现行注册表，待扩展／全稿统一。原CSV、权重、区间规则和旧稿保留。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V131完整稿与启用记录](docs/handoff/V131_COMPLETE_REVIEW.md)。现行主数据为16城V130（112点／32部分／16全缺失），V131扩展与20页完整独立稿已统一；Zurich保守、16可能／0必要冠军。原CSV、权重、锚点与区间规则保持，旧V128及更早稿冻结。
 
 | 想了解什么 | 入口 |
 | --- | --- |
 | 最新支持：V129诊断与补数候选 | [当前17缺失格采集价值、Berlin100站独立源审查、AI记录延长](docs/handoff/V129_RESEARCH_UPDATE.md) |
-| 最新扩展：基于V127的V128 | [AHP偏好、未来/权重扰动、方法/历史案例及受控修订独立总审](research/2026-a/results/task4_v128_revision/README.md) |
-| 当前主模型：16城V127 | [Vienna/Prague两格公共地铁下界：平均区间收窄0.265%，Zurich保守推荐、仍16可能冠军](research/2026-a/results/task4_user_v127_revision/README.md) |
+| 历史扩展：基于V127的V128 | [AHP偏好、未来/权重扰动、方法/历史案例及受控修订独立总审](research/2026-a/results/task4_v128_revision/README.md) |
+| 历史主模型：16城V127 | [Vienna/Prague两格公共地铁下界：平均区间收窄0.265%，Zurich保守推荐、仍16可能冠军](research/2026-a/results/task4_user_v127_revision/README.md) |
 | 历史扩展：V122/V121 | [AHP偏好、未来压力与扰动、同国案例、公平性和成长阶段证据](research/2026-a/results/task4_v122_revision/README.md) |
 | 历史主模型：16城V121 | [五格真实补数：当轮区间缩小4.44%，可能冠军仍16城](research/2026-a/results/task4_user_v121_revision/README.md) |
 | 上轮主模型：16城V120 | [四格真实补数：区间缩小5.62%，Zurich保守首选，冠军集合仍16城](research/2026-a/results/task4_user_v120_revision/README.md) |

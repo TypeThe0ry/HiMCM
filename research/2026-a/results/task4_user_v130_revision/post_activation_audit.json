@@ -1,0 +1,386 @@
+{
+  "status": "pass",
+  "version": "V130 activated; original staging receipt preserved",
+  "live_registry_sha256": "8ef64426f1ce03525f9b54ea26b25cf4da6ae146d373e4a6588d987a19f3402f",
+  "changed_cells": 1,
+  "protected_nonfullymissing_cells": 143,
+  "point_cells": 112,
+  "partial_cells": 32,
+  "fully_missing_cells": 16,
+  "independent_static_cases": 16,
+  "independent_MC_cases": 24,
+  "draws_per_setting": 10000,
+  "static_checks": [
+    {
+      "scenario": "before",
+      "weight_reference": "fixed",
+      "mean_width": 16.107285572324816,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "before",
+      "weight_reference": "equal",
+      "mean_width": 18.94657608186063,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "only:Berlin:public_transport_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.092069666941644,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "only:Berlin:public_transport_density",
+      "weight_reference": "equal",
+      "mean_width": 18.919371949112154,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "without:Berlin:public_transport_density",
+      "weight_reference": "fixed",
+      "mean_width": 16.107285572324816,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "without:Berlin:public_transport_density",
+      "weight_reference": "equal",
+      "mean_width": 18.94657608186063,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "fixed",
+      "mean_width": 16.092069666941644,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "equal",
+      "mean_width": 18.919371949112154,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "withdraw_new_historical_inventories",
+      "weight_reference": "fixed",
+      "mean_width": 16.092069666941644,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "withdraw_new_historical_inventories",
+      "weight_reference": "equal",
+      "mean_width": 18.919371949112154,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "withdraw_all_new",
+      "weight_reference": "fixed",
+      "mean_width": 16.107285572324816,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "withdraw_all_new",
+      "weight_reference": "equal",
+      "mean_width": 18.94657608186063,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "mean_width": 16.406093375361863,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "mean_width": 19.201279397622727,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "mean_width": 16.39087746997869,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "mean_width": 19.174075264874247,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "necessary_count": 0
+    }
+  ],
+  "MC_checks": [
+    {
+      "scenario": "before",
+      "weight_reference": "fixed",
+      "concentration": 20
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "fixed",
+      "concentration": 20
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "concentration": 20
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "concentration": 20
+    },
+    {
+      "scenario": "before",
+      "weight_reference": "fixed",
+      "concentration": 100
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "fixed",
+      "concentration": 100
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "concentration": 100
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "concentration": 100
+    },
+    {
+      "scenario": "before",
+      "weight_reference": "fixed",
+      "concentration": 500
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "fixed",
+      "concentration": 500
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "concentration": 500
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "concentration": 500
+    },
+    {
+      "scenario": "before",
+      "weight_reference": "equal",
+      "concentration": 20
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "equal",
+      "concentration": 20
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "concentration": 20
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "concentration": 20
+    },
+    {
+      "scenario": "before",
+      "weight_reference": "equal",
+      "concentration": 100
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "equal",
+      "concentration": 100
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "concentration": 100
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "concentration": 100
+    },
+    {
+      "scenario": "before",
+      "weight_reference": "equal",
+      "concentration": 500
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "equal",
+      "concentration": 500
+    },
+    {
+      "scenario": "before_withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "concentration": 500
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "concentration": 500
+    }
+  ],
+  "full_withdrawal_restores_V127": true,
+  "before_static_and_MC_match_V127_with_tolerance": true,
+  "numerical_MC_tolerance": 1e-11,
+  "original_CSV_and_registry_unchanged": true,
+  "protected_sha256": {
+    "results/task4_v128_method_country/method_utility_inputs.csv": "24c3da78fa9ac7e09fb41d4c8d444589b0739735e40dc289e3b0c6443c440be1",
+    "results/task4_v128_method_country/v125_v128_rank_comparison.csv": "24b99a4916d265f6cc235666cd4457659bb9f2a3dda0cdfb45bfec1867e2db79",
+    "results/task4_v128_method_country/README.md": "4c373bdd9d53ffc1c4ed5dae337d36b2b1ac06205340acdf0a6acd416a2357d0",
+    "results/task4_v128_method_country/method_components.csv": "239c96bd1d9886ccbf2cc3fe24d8cdea70829bbe2b08d039b28396373b08f164",
+    "results/task4_v128_method_country/shanghai_district_resources.csv": "1dd303f0fb9ddf7413051764b4790716717e48c7d8f94cc95467f89652e6f818",
+    "results/task4_v128_method_country/country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "results/task4_v128_method_country/singapore2020_secondary_exact_age_counts.csv": "5569790bf18c6543454ef1c84d86faa632a53b19126fd85a1482ff859a7dc560",
+    "results/task4_v128_method_country/method_ranks.csv": "3c94dcb2c205e354c5b30db38ba5fefb0974c6ff6e67464b4dd290455aba0dd7",
+    "results/task4_v128_method_country/country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa",
+    "results/task4_v128_method_country/summary.json": "3c6b1be7cfc4fa2c047923d298cb147724a1f79aaedcfed8c728d11325a6517b",
+    "results/task4_v128_method_country/user16_country_coverage.csv": "5627fcafcd902d3ca9c14d80026d75c2637192d62445f61da3061a3957507e4e",
+    "results/task4_v128_method_country/istanbul_historical_age_groups.csv": "b4072312d9cedb8b657c1836465f8471a1f20b96aa15d136f07f351884c2f34b",
+    "results/task4_v128_method_country/audit.json": "156faf552efa893cd2296316a1f2e3598410288263ef35598cd2769bca842995",
+    "results/task4_v128_delivery_audit/README.md": "cb4dd7d51d1d1859a5c89a7d3830fe568991611fff85c7e3b2258df8295bc6a6",
+    "results/task4_v128_delivery_audit/final_document_qa.json": "dd9aee4aa8961a0a550cedd8d03e4e3213735b5d73ebce6986cee492a119a85d",
+    "results/task4_v128_delivery_audit/compiler_output.txt": "7474d958f896c10de07ba784fec9d3cf887ca8cac59dbdf152840f96dae82360",
+    "results/task4_v128_preferences/v125_mc_comparison.csv": "e13c81850e145d1fa310518395602185c85bf4fb47437d0ffa2e74bdcd9a74b7",
+    "results/task4_v128_preferences/control_v121_ranks.csv": "2e852f84a1827913726b5a4c9f6a101f2ea1b0c0ee3617042e2a73023d9d03e8",
+    "results/task4_v128_preferences/README.md": "dcc44ea6d980ffcef4f5794ccdcd66069051a7beee6175883ffe0b9be3d460d1",
+    "results/task4_v128_preferences/v125_rank_comparison.csv": "51434fd4d578bfdf7aecb04204670dfb499af1d941e9b1f92ad6e52cdf4c7929",
+    "results/task4_v128_preferences/scenario_matrices.json": "3551255c7e595d98dcd1782cf6562a33fcff1511593c4ae51d864cd003988271",
+    "results/task4_v128_preferences/independent_living_priority_matrix.csv": "7c22ad43c94b6bc90117c9fe2b876debb2fdb8d039ab309455ed4a1f3b771710",
+    "results/task4_v128_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v128_preferences/v122_mc_comparison.csv": "c8057037226e80bc6d4af58056353ba53bc0fc6bcb12f422093fdefee5a4c4ca",
+    "results/task4_v128_preferences/mc_city_summary.csv": "dcaa0a32befcdba6254dafbe98b2e243023de6175dd3f7501d99d50cb87240e9",
+    "results/task4_v128_preferences/control_v121_mc_city_summary.csv": "01070eb2503bac0977f2e630be3e82fab78e9f1aedbff9165e907c0963dcc225",
+    "results/task4_v128_preferences/utility_bounds.csv": "8ef82ec63db7f2eb20ef3a14cd21c38edde32532adbc1c9d26de3d2df1d9be46",
+    "results/task4_v128_preferences/education_priority_matrix.csv": "6f4dc9b2ddf4d8c338c8b246d02e98b2d5046c3e7aaa3f1b43eb063a7bc38dea",
+    "results/task4_v128_preferences/ranks.csv": "529a346df74ada767070c0268224737abc085273dbe7d7db741bc665509afda3",
+    "results/task4_v128_preferences/baseline_matrix.csv": "b0c5778d4682c51ad149ecb4656674ac71f16cb0a1fe2969cf27357f7b950bf5",
+    "results/task4_v128_preferences/summary.json": "8fca5135811c9f3a60414401bf86ce78fa82b6ed11367dc7464945b740578356",
+    "results/task4_v128_preferences/v122_rank_comparison.csv": "48562498065e1d90d53890dae10eb19611379b0881048abf16382ff91ca56b23",
+    "results/task4_v128_preferences/audit.json": "5457e4b5ff3ccf97c27f2dd3368f8fdcfae758ccaa91d2c9252b90259a94e3be",
+    "results/task4_v128_future/README.md": "e3de70020810276d04f9ccdb263f9666f69ad1a226857a2d88eda557d7281453",
+    "results/task4_v128_future/thresholds.csv": "4f7f31c140294cae2700daf5c02d3e895611c99f433c60563b30f48b835e8d16",
+    "results/task4_v128_future/thresholds_v125_comparison.csv": "476ce19674efab31a644b33f5be2017f5472caed64528f341dc9e55eac965b5f",
+    "results/task4_v128_future/weight_mc_city_summary.csv": "b3e5309701f04e989f603d383ace7bcb632c7a72f3ccef18e2e84b9a9ccd0199",
+    "results/task4_v128_future/utility_bounds.csv": "4fc9a67135fe2fc6045ecec73aca10a67386a12b04879c98b4534db0aa186293",
+    "results/task4_v128_future/ranks_v121_comparison.csv": "e01cf30026f6621a899d26be029d2089f447c8d119f147495986de6af84cf015",
+    "results/task4_v128_future/utility_bounds_v125_comparison.csv": "dcb4ed53a518e640c387f731eb333a8df91c9ded8505e76cbd927041c94a52dc",
+    "results/task4_v128_future/threshold_scan.csv": "e3ffc7275e4b20e1944a4d553ea69aadd9d05400de1bde58638e70a2cc4a0e7f",
+    "results/task4_v128_future/weight_mc_city_summary_v121_comparison.csv": "5f8ed5e2b1f45ea234fd132bb459eb20ec554f2067e86389e09a9d845c51cb76",
+    "results/task4_v128_future/threshold_scan_v125_comparison.csv": "512a2cc7a71d208d9f3812b7186bd1fb5aca0d2d2f749df96ee174ee2f7221b5",
+    "results/task4_v128_future/thresholds_v121_comparison.csv": "d5e3547bda5673c643549eb556a267db1f10a7aaad755d2ded5aa016d59774e1",
+    "results/task4_v128_future/ranks.csv": "6d970cd084ee1b15242f6498a309d5029bd74532107855e9312a66d14554ee57",
+    "results/task4_v128_future/ranks_v125_comparison.csv": "331b6ce95d86b9f1f8b31fc405109218c2e2f0779834503346a5547bae89c818",
+    "results/task4_v128_future/future_mc_city_summary.csv": "75b759fae5af54ada4b8cc65ef3eed4f1784ad8d36f4ffe822fe27315b73e12c",
+    "results/task4_v128_future/weight_mc_city_summary_v125_comparison.csv": "82169bd21882d008c3ddf002fb03ccba6bccbc0c29a01b5fba22577cb63a6c36",
+    "results/task4_v128_future/summary.json": "7a529d186c3f03dee0cd7f96aa94715d559be4b86a6530df694cad34af18289f",
+    "results/task4_v128_future/future_mc_city_summary_v125_comparison.csv": "842e1d299eb352138ec853da3c33e54076b806af51815974b362e25abd31e228",
+    "results/task4_v128_future/future_mc_city_summary_v121_comparison.csv": "8d8f956853af651508913cc705f9659367edaa240e18d17d5791403caeb6e5ec",
+    "results/task4_v128_future/audit.json": "19e8eecd0437aba702938b755eca307a1267ee8baa03d386559cfc1ab13a92bb",
+    "results/task4_v128_revision/README.md": "23ea5ed32b7d158d38f715cb028bb593414ef1cb130840e76ab9dc1c032851f0",
+    "results/task4_v128_revision/audit.json": "4e4e71e7097ea7203b67f34cbe44987a3bae2424ab242eed565666c15b5042f9",
+    "results/task4_v128_revision_diagnostic/possible_champion_witnesses.csv": "7d0384b1c9976f77c2b2cb3a7092e3b07bef362f8ce76532bd40cebdb6a7f36e",
+    "results/task4_v128_revision_diagnostic/witness_scores.csv": "3d9d997530910bfbb179b2c4da02f69766bc3763539653029117a0189c32ff64",
+    "results/task4_v128_revision_diagnostic/rank_comparison.csv": "a7e11f6a55aa1bd8e2ee353e375bb0ffdc1484ebe402bcc763e0842b070b6deb",
+    "results/task4_v128_revision_diagnostic/v125_v128_rank_comparison.csv": "0142cc454c8a4388408161669ab5b4f6a5c17d3bdb8c0bdc3da390d2f9990f03",
+    "results/task4_v128_revision_diagnostic/README.md": "68cdacb3f1e60406b9ec50f762a4fed15d3623bf34532160859f9f9504543616",
+    "results/task4_v128_revision_diagnostic/utility_inputs.csv": "bd3797c31c2758777c4dc72b47c2f9b301530d8775151711735311c279f6e207",
+    "results/task4_v128_revision_diagnostic/v121_control_rank_comparison.csv": "148cc8b2a4aecd7c3ce68cc16d52b16f5dc9561f5079b0afe5854a31bae89b1f",
+    "results/task4_v128_revision_diagnostic/summary.json": "903763325ef53c98e31367644b9a712f0ad4ae7c1ec02e63f7867f93b178fb7c",
+    "results/task4_v128_revision_diagnostic/audit.json": "ab8f4dc6abd36ff816a302a09b1598878c6da45d30eebce4d186d3f40682243d",
+    "results/task4_v128_revision_diagnostic/witness_utilities.csv": "061bbe9828f6e23887afe3a57a81af034f8f80f0228930538c13f722523f7f4d",
+    "design/task4_user_current_model.json": "081388b48392c0a9ff4c612ecbff48a1dd8a21b3a92166043d7c1a18da7be79e",
+    "design/task4_user_v127_admissions.json": "8e77c012efcff76959b1667afcbe4f6fa150ef25f65870e00716d37bcb042b4f",
+    "scripts/task4_user_v127_revision.py": "5a9409552c4af7d75f5e671127d49165ea8d8f204c26214fd64c8867ff8f5a5a",
+    "results/task4_user_v127_revision/summary.json": "03728d5f611553595ae30498336d079f7c5eaa47a719b8e1cb1159ef393018a3",
+    "results/task4_user_v127_revision/current_ranks.csv": "9ce106ae061cd3adc593fe802a9886eb0b9896b31aa5bbe7be877d0ee0e8fe6c",
+    "results/task4_user_v127_revision/all_ranks.csv": "fb0a3134d592d1b898e3a7b9814189a9d690e5fef5b0c04edd4e1fd29ac52edd",
+    "results/task4_user_v127_revision/utility_bounds.csv": "7fabe780186aa8c69653368d8ed9f281f5ba1771d16757a0cd07c7cad8b878c7",
+    "results/task4_user_v127_revision/mc_city_summary.csv": "45015d2c3007de4054c1a5078605fef418ba7b88e2924f34eb64bd0691cac1d4",
+    "results/task4_user_v127_revision/revision_audit.json": "d21e676d5c88fc2e403302167481a6970b0b23d029c50533130c0cc0099296b5"
+  },
+  "source_files_verified": 26,
+  "result_sha256": {
+    "results/task4_user_v130_revision/mc_city_summary.csv": "79e907146ea42576ef81892d405b33b1864771295510642a4a466982714f4796",
+    "results/task4_user_v130_revision/utility_bounds.csv": "95ae55b12f876ef843e62d43f8cfa6752e4da16e0aa8a4a2fa0d432082ac4528",
+    "results/task4_user_v130_revision/all_ranks.csv": "f5b8346424a40471e377e3aa8f12850dc574a44349389f27cf3f7620136edf43",
+    "results/task4_user_v130_revision/current_ranks.csv": "4a7441dfb820fa9a0b3a976b321d4b7eab66f54ce2758c41ca99f19d01dd5e61"
+  },
+  "summary_sha256": "71bf1c8ef3744b33c6aefb4cf36387f0cc9c8530037de544479fcf68154e4912",
+  "admissions_sha256": "5d0ffd46976b39e22a579f514446f39f2930cbdba7d0f6bb08867995fa85d088",
+  "audit_script_sha256": "d480f5cbd959c9a2adbd3002a4758f0a758e326c5055b243ab134372da33bcd9"
+}
