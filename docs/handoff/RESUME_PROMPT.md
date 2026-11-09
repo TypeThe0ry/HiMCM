@@ -1,6 +1,6 @@
 # 接手续做HiMCM：现行V130主数据／V131扩展与完整稿
 
-长期goal active，所有新增／修改说明使用已安装指定anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、LONGTERM_GOAL.md、V131_COMPLETE_REVIEW.md、V132_RESEARCH_UPDATE.md、V133_RESEARCH_UPDATE.md及V134_RESEARCH_UPDATE.md。前一轮实际完成完整稿统一及现行入口激活，不再把V130/V131叫待迁移候选。
+长期goal active，所有新增／修改说明使用已安装指定anti-defensive-writing中英文技能。先读AGENTS.md、GUIDELINES.md、LONGTERM_GOAL.md、V131_COMPLETE_REVIEW.md、V132_RESEARCH_UPDATE.md、V133_RESEARCH_UPDATE.md、V134_RESEARCH_UPDATE.md及V135_RESEARCH_UPDATE.md。前一轮实际完成完整稿统一及现行入口激活，不再把V130/V131叫待迁移候选。
 
 ## 当前权威入口
 
@@ -31,3 +31,5 @@ GitHub PUBLIC发布选择仍待答，研究本地commit、暂缓新增公开push
 V133新证据：Zurich SSP原件确认公私立全州调查覆盖，未取得同城同高中教学FTE／学生公开汇总；芬兰OPH称专项采集资料最新2019，另列就业职业报告，下一次必须核其学校所在地／居住地、学段／FTE口径，不据职业名填PTR。两条0准入，不重复旧公开全州财政支持图。当前readiness脚本核完整稿20页／实际PENDING页眉／旧新各55科学输出／保护文件，最后提交仍未完成；详见results/task4_v133_readiness。
 
 V134仅改当前owned V131数据章及引用：Paris Henri-IV真实UAI／2025的794学生与153.65机构ETP，2026目录post-bac只是范围提示；比率仍不准入。新PDF20页已全页渲染／零warning复核，所有旧数值资产和宏与Git dbffa4e逐字节保持。旧V131/V133文档回执是旧PDF的历史捕获，当前以results/task4_v134_documentation与Overleaf qa.documentation_revision=V134为准。文件名仍V131，因为科学版本未改；不新建整套重复论文。
+
+V135最新可操作项：London59个候选operator站／hub下界已核（62个严格Zone1站ID→省2个→Paddington合并=59实体）；新源包data/task4_v135_london，完整原API以399962字节lossless gzip入研究Git，缺外置原件也可复算，解压SHA匹配16.2MB原响应。geo用ONS2025 BFC全分辨率多polygon，不用BSC200m简化边界，岸线边缘距不当作行政外界距。候选效用[.012769306569299622,1]，原9122909人口／2025保持；若正式启用fixed平均宽度预估再窄0.0170%，London14／Zurich保守／16可能不变。目前0正式准入。优先做V136正式受控补数、撤回、主MC／全部扩展及论文迁移，源和单位门槛不满足就跳过；不要把candidate预评估直接写成现行改善。

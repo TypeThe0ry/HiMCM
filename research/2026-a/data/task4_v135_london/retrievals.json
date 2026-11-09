@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://api.tfl.gov.uk/StopPoint/Mode/tube",
+    "access_UTC": "2026-11-09T02:15:23.277511+00:00",
+    "status": 200,
+    "final_url": "https://api.tfl.gov.uk/StopPoint/Mode/tube",
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 16228439,
+    "sha256": "00cccccd18982c9c1ebd9f10366e918b158c3fd3f7d7d65b5c9f415addeb3cfe",
+    "local_original": "/data/datasets/HiMCM/source_archives/task4_v135_london/tube_stops_response_original.json",
+    "included_in_Git": false
+  },
+  {
+    "url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Regions_December_2025_Boundaries_EN_BSC/FeatureServer/0?f=pjson",
+    "status": 200,
+    "file": "ons_layer_original.json",
+    "bytes": 13440,
+    "sha256": "10a4ed74bff479ae235aba616c48b3692aaddff35b0ad9d72b6b7c002b29cb66",
+    "access_UTC": "2026-11-09T02:17:37.864735+00:00"
+  },
+  {
+    "url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Regions_December_2025_Boundaries_EN_BSC/FeatureServer/0/query?where=RGN25CD%3D%27E12000007%27&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "status": 200,
+    "file": "london_region_original.geojson",
+    "bytes": 19999,
+    "sha256": "c23b9e362ce706c27565bfb0ae04786ad1776bf80d9d9317fb1af40735a7974d",
+    "access_UTC": "2026-11-09T02:17:38.445701+00:00"
+  },
+  {
+    "url": "https://api.tfl.gov.uk/StopPoint/Meta/StopTypes",
+    "file": "stop_types_response_original.json",
+    "status": 200,
+    "bytes": 895,
+    "sha256": "838e2a4c3b60166c1076e3a1935cfb2c0b58e68fb7f150c6ec6bbaddeee519a1",
+    "access_UTC": "2026-11-09T02:19:09.998366+00:00"
+  },
+  {
+    "url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Regions_December_2025_Boundaries_EN_BFC/FeatureServer/0?f=pjson",
+    "status": 200,
+    "file": "ons_bfc_layer_original.json",
+    "bytes": 13438,
+    "sha256": "00439c9c4c24b843239fff74b52a48ecb102a578e00d18c6594cda25219ee102",
+    "access_UTC": "2026-11-09T02:21:30.661883+00:00"
+  },
+  {
+    "url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Regions_December_2025_Boundaries_EN_BFC/FeatureServer/0/query?where=RGN25CD%3D%27E12000007%27&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+    "status": 200,
+    "file": "london_region_bfc_original.geojson",
+    "bytes": 1319730,
+    "sha256": "d6f2cf37c6a3ca465f5eca4f6ea010f3a05d7739037df9a772f8e4c3e3273033",
+    "access_UTC": "2026-11-09T02:21:32.642891+00:00"
+  }
+]

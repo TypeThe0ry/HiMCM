@@ -1,0 +1,50 @@
+{
+  "status": "candidate_extracted_not_admitted",
+  "raw_objects": 1751,
+  "metro_station_objects": 272,
+  "exact_zone1_station_ids": 62,
+  "omitted": [
+    {
+      "id": "940GZZLUERB",
+      "name": "Edgware Road (Bakerloo) Underground Station",
+      "reason": "Edgware Road Bakerloo omitted as a same-name precaution; no claim that the two stations share a paid complex"
+    },
+    {
+      "id": "940GZZLUMMT",
+      "name": "Monument Underground Station",
+      "reason": "Monument omitted as a precaution about the Bank/Monument connected complex"
+    }
+  ],
+  "shared_hub_collapsed": [
+    "940GZZLUPAC",
+    "940GZZLUPAH"
+  ],
+  "candidate_entities": 59,
+  "approximate_min_boundary_margin_metres": 40.1926284576718,
+  "density_lower": 0.6467235396078159,
+  "utility_candidate": [
+    0.012769306569299622,
+    1
+  ],
+  "extraction_source": "lossless gzip fallback",
+  "external_original": {
+    "path": "/data/datasets/HiMCM/source_archives/task4_v135_london/tube_stops_response_original.json",
+    "bytes": 16228439,
+    "sha256": "00cccccd18982c9c1ebd9f10366e918b158c3fd3f7d7d65b5c9f415addeb3cfe",
+    "url": "https://api.tfl.gov.uk/StopPoint/Mode/tube",
+    "included_in_Git": false
+  },
+  "lossless_original_archive": {
+    "file": "tube_stops_original.json.gz",
+    "bytes": 399962,
+    "sha256": "5fbfbaba57186ab171ed4e022f3745f18d4eb44bf3d91d9166c4cd2fa632c59a",
+    "decompressed_sha256": "00cccccd18982c9c1ebd9f10366e918b158c3fd3f7d7d65b5c9f415addeb3cfe"
+  },
+  "source_hashes": {
+    "london_region_bfc_original.geojson": "d6f2cf37c6a3ca465f5eca4f6ea010f3a05d7739037df9a772f8e4c3e3273033",
+    "ons_bfc_layer_original.json": "00439c9c4c24b843239fff74b52a48ecb102a578e00d18c6594cda25219ee102",
+    "stop_types_response_original.json": "838e2a4c3b60166c1076e3a1935cfb2c0b58e68fb7f150c6ec6bbaddeee519a1"
+  },
+  "population_original_unchanged": true,
+  "primary_admissions": 0
+}
