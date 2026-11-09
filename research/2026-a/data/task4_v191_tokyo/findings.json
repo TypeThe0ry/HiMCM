@@ -1,0 +1,59 @@
+{
+  "version": "V191 Tokyo candidate",
+  "provider": "Tokyo Metropolitan Government Bureau of Transportation",
+  "raw_csv_encoding": "cp932",
+  "count": 38,
+  "named_stations_unique": true,
+  "addresses_unique": true,
+  "coordinate_pairs_unique": true,
+  "Tochomae_occurrences": 1,
+  "observed_ward_count": 10,
+  "observed_wards": [
+    "中央区",
+    "中野区",
+    "台東区",
+    "墨田区",
+    "文京区",
+    "新宿区",
+    "江東区",
+    "渋谷区",
+    "港区",
+    "練馬区"
+  ],
+  "minimum_station_separation_m": 409.79727324587316,
+  "nearest_pair": [
+    "新宿西口",
+    "新宿"
+  ],
+  "utility_lower": 0.0075551488587997356,
+  "utility_upper": 1,
+  "inventory_reference_year": null,
+  "catalogue_date_not_observation_date": true,
+  "primary_admissions": 0,
+  "original_CSV_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "source_hashes": {
+    "oedo_original.html": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "stationlist_original.csv": "834e1dfa2dfcb7cbaf23feb4ab84db35064ca029efed242f8dcef1779911da15",
+    "media_guide2026_response_original.html": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "api_catalog_original.html": "822ba5605d334211cc0b74f70595f15c3c1af4b83b056224a8c33333dca4ced0"
+  },
+  "not_used": [
+    {
+      "url": "https://www.kotsu.metro.tokyo.jp/subway/oedo/",
+      "status": 200,
+      "reason": "Incapsula JavaScript access shell; not requested source content; no numerical use"
+    },
+    {
+      "url": "https://catalog.data.metro.tokyo.lg.jp/api/3/action/package_show?id=t000018d0000000027",
+      "status": 403,
+      "reason": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.kotsu.metro.tokyo.jp/other/kanren/ad/pdf/media_guide_2026_02.pdf",
+      "status": 200,
+      "reason": "Incapsula JavaScript access shell; not requested source content; no numerical use"
+    }
+  ],
+  "license_catalogue_literal": "クリエイティブ・コモンズ 表示（CC BY）",
+  "limitations": "Static directory infrastructure subset; no full inventory, current operational state, actual student access, travel time, population replacement or observation-year inference. Map/2026 media-guide source requests returned access shells and supply no counts."
+}

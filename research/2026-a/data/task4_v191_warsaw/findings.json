@@ -1,0 +1,37 @@
+{
+  "version": "V191Warsawcandidate",
+  "status": "candidate_only;not_primary_admission",
+  "city": "Warsaw",
+  "indicator": "public_transport_density",
+  "line_station_appearances": 39,
+  "line_counts": {
+    "M1": 21,
+    "M2": 18
+  },
+  "shared_complex": "Świętokrzyska",
+  "station_complex_count": 38,
+  "population": 1863800,
+  "population_year": 2024,
+  "density_per100000": 2.0388453696748576,
+  "utility_lower": 0.03917929683472522,
+  "utility_upper": 1,
+  "anchor": 50,
+  "reference_time": "Operator catalogue snapshot accessed2026-11-09UTC;not a2025census",
+  "geography": "Warsaw city proper;2025fire-service report explicitly locates21M1and18M2stations within m.st.Warszawy",
+  "deduplication": "Exact official station headings;sole common nameŚwiętokrzyska merged across lines, as the official schematic intersection;no platforms/exits/STP/under-construction stations counted",
+  "native_station_IDs_available": false,
+  "native_HTML_locator_IDs_not_station_IDs": true,
+  "other_modes_unmeasured": true,
+  "complete_city_inventory_claim": false,
+  "operational_or_student_access_claim": false,
+  "map_metadata": "Official PDF labels current and planned networks separately;PDFcreation2024-05-14,uploadURL2026/02 does not redate its contents",
+  "source_scope_caveat": "Fire-service report2025 gives city scope/counts but its p5 narrative says Bródno-Bemowo completed2023;not used to establish historical opening dates. Catalogued supply does not verify access-day station openings.",
+  "source_sha256": {
+    "m1_original.html": "a75abc750a2bc7a4f113aad26fcc855a7276d97c30b7ed006ff9287e293d30c2",
+    "m2_original.html": "7fb2f2d290221db15fb4f6e725fe40558965cb7437427b70b473bc60444e30b7",
+    "network_plan_original.pdf": "c283ae5f91463bc011830d7d1ed990fd0edf32aeee8992f045641b262f9b6aa1",
+    "fire_service_2025_original.pdf": "a788454415e98fd36feffaa20598b8445707a7eb4334d81b7532f033df3f8809"
+  },
+  "original_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "primary_data_changed": false
+}
