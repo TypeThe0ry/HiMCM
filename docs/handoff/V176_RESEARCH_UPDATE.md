@@ -9,3 +9,5 @@
 [完整当前状态与下一步](SESSION_STATUS_20261109.md)、[V176结果说明](../../research/2026-a/results/task4_v176_mc_paper/README.md)。
 
 本次另对已提交V176源码完成隔离缓存重建：双入口26页文本／72dpi灰度全同、160格／32案例一致，见[回执](../../research/2026-a/results/task4_v176_mc_paper/isolated_rebuild.json)。
+
+上传实证：GitHub原53项积压及V176 payload提交`9312ca936116f736e6083aed6297068f142b2b57`已由ls-remote确认；Overleaf`667277b9a9d109614254efad0b32b7fabbaf08b5`已确认。两边普通push、工作区干净、HEAD=origin/main；见[同步](../../research/2026-a/results/task4_v176_mc_paper/sync.json)。本回执随后单独commit并push，最终答复给回执提交号。
