@@ -12,7 +12,7 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展为V154，当前独立完整审阅稿为V168（科学基础保持V154）：112点／34部分／14全缺失，累计22项补充，当前自有稿26页（24主文参考+2AI）。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展为V154，当前独立完整审阅稿为V172（科学基础保持V154）：112点／34部分／14全缺失，累计22项补充，当前自有稿27页（25主文参考+2AI，主文余量0页）。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
 
 V154的Milan历史库存补数使固定权重平均评分区间宽度16.08933→16.06144，实际收窄0.02790分，累计收窄14.62%。[模型入口](research/2026-a/design/task4_user_current_model.json)、[扩展入口](research/2026-a/design/task4_user_current_extensions.json)、[验证](research/2026-a/results/task4_v154_transition/README.md)。
 
@@ -265,3 +265,5 @@ V169补充[现有模拟均值的数值精度证书](research/2026-a/results/task
 V170补充[师资来源覆盖与注册表核验](research/2026-a/results/task4_v170_staff_coverage/README.md)：新BFS私校FTE候选，当前模型及V168稿保持。
 
 V171补充[SSP原始定义与单侧包络准入条件](research/2026-a/results/task4_v171_envelope_gate/README.md)，当前科学V154／独立稿V168保持。
+
+V172把同国辅助案例的四分数表替换为[20项完整差异图](research/2026-a/results/task4_v172_country_review/README.md)，7项方向明确，主16城数据与原正文保持。

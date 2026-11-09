@@ -1,0 +1,22 @@
+{
+  "version": "V172",
+  "source_dataset": "Frozen auxiliary legacy25 V117; never primary16",
+  "source_sha256": {
+    "results/task4_v154_method/country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "results/task4_v154_method/country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa"
+  },
+  "contrasts": 20,
+  "sign_identified": 7,
+  "unresolved": 13,
+  "figure_inches": [
+    6.5,
+    4.1
+  ],
+  "minimum_font_pt": 9.5,
+  "definition": "difference interval=[a_lower-b_upper,a_upper-b_lower]; utility scale, not score contribution or confidence interval",
+  "output_sha256": {
+    "pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
+    "svg": "0111b298f133633b57ac17592fd3582d9d166852b571fca8a5cfdbbca2ed728a",
+    "png": "40d0f3bea69e4a4a92e4c1fc2d63a2f97471f971665aa8414464a3bd7b1249b7"
+  }
+}
