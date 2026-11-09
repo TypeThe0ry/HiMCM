@@ -23,3 +23,5 @@ Zurich仍为保守推荐，16城仍可能第一、没有必要冠军；教育优
 独立Git快照重建已通过：P载荷121ff7a的700个Git对象路径／blob逐项核，两个隔离副本在本地缓存离线编译；27页逐页文本及72dpi灰度像素均与登记PDF一致，并独立复算160格／32权重城市案例。回执results/task4_v182_review/reproduction.json绑定当前PDF与输入SHA。这是已有工具及TeX缓存条件下的重建，不是冷环境或服务器验证。启用后185份旧冻结科学／657份旧论文保持，另对两个科学导航及两个论文导航做了明确更新与检查。
 
 当前可执行复现入口：仓库根运行`.venv-v120/bin/python research/2026-a/scripts/task4_v182_reproduce.py --output-dir /data/scratch/新的空目录`。旧V174 runner严格绑定V154，不用于当前版本。冻结V181快照中两个历史当前导航项由已核V181活动注册表替代检查，其余243项输入SHA严格保持；不扩大例外到数据／脚本／结果。
+
+双仓远端main已核：GitHub载荷`7e20748625f48767990d8876060ec4b3ff7355f4`；Overleaf`aa6688ebfd963b2e6f27ed8f7267d1c2878ba916`，均普通push且核验时工作区干净。登记PDF SHA `09531f5399e651cd8b406fb55159134f6ed7b404338317dc76d9a885eae7eca1`。选定5份核验／交付／复现文件与Overleaf逐字节一致；详细sync.json、delivery.json随回执提交。服务器编译与比赛提交保持未核／未执行，长期goal active。
