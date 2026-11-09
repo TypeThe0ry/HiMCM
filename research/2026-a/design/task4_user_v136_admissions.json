@@ -1,0 +1,52 @@
+{
+  "version": "V136",
+  "baseline": "V130 user16",
+  "input_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "source_policy": "Only London fullymissing transport utility lower bound added; all144 previous informative cells, all existing raw values, population denominators, weights, anchors and rectangle rules preserved.",
+  "scope": "Conditional native TfL station/hub subset with ONS London region filtering;59 entities from60 station IDs after exactZone1 selection,hub merging and two conservative omissions. No live-service or individual-access claim.",
+  "observations": [
+    {
+      "city": "London",
+      "indicator": "public_transport_density",
+      "raw_count": 59,
+      "population": 9122909,
+      "population_year": 2025,
+      "sourceyear": 2026,
+      "access_date": "2026-11-09",
+      "utility_before": [
+        0,
+        1
+      ],
+      "utility_after": [
+        0.012769306569299622,
+        1
+      ],
+      "utility_anchor": 50,
+      "lower_bound_only": true,
+      "admission_status": "accepted_conditional_inventory_lower_bound",
+      "scope": "Exact Zone1 NaptanMetroStation objects only, point-in-ONS London region E12000007; hub dedup plus two conservative omissions. Other modes/zones remain uncounted.",
+      "limitations": "Static as-accessed inventory, not real-time opening, service frequency, student eligibility or individual accessibility. ONS2025 full-resolution coastline-clipped boundary used at representative station coordinates; boundary distances are diagnostic, not accuracy guarantees. Supplied2025 population unchanged/not externally rechecked. No complete city transport census.",
+      "admission_decision": "Accepted conditional TfL native station/hub inventory after independent geometry and record review",
+      "historical_inventory_proxy": false,
+      "reference_time": "As-accessed2026 static inventory; individual object last-update dates not established."
+    }
+  ],
+  "source_hashes": {
+    "data/task4_v135_london/verification.json": "59a3fd2aa598f32dd7176b6771cf4b9dc064d249bdaa5fef19902fb2aac29ea8",
+    "data/task4_v135_london/london_region_bfc_original.geojson": "d6f2cf37c6a3ca465f5eca4f6ea010f3a05d7739037df9a772f8e4c3e3273033",
+    "data/task4_v135_london/extraction.json": "6627789da53f3802a5cea3d46f547c5b7a6bd57cc5051a4fc991d9b83d784f37",
+    "data/task4_v135_london/station_entities.json": "bdd90b43219f6c723447fe0e2e0e97c7ac2a8a2bc498d8a5a36388d33107dbe3",
+    "data/task4_v135_london/stop_types_response_original.json": "838e2a4c3b60166c1076e3a1935cfb2c0b58e68fb7f150c6ec6bbaddeee519a1",
+    "data/task4_v135_london/README.md": "aaa901f0d38a03b479e5ff2facf0e90380f66bc32a7ef50ac920558cb4225b89",
+    "data/task4_v135_london/archive_sha256.json": "f9301750529edef46480786420d93881d203c2f84ea9532df32fcd138bfbcbc2",
+    "data/task4_v135_london/tube_stops_original.json.gz": "5fbfbaba57186ab171ed4e022f3745f18d4eb44bf3d91d9166c4cd2fa632c59a",
+    "data/task4_v135_london/observations.json": "b44ad80db65744bcb1a130661e939cd5b3b52f9322731dceebe3b040b8cc3d8f",
+    "data/task4_v135_london/retrievals.json": "92d501f30ec3e961bb6b10be957a612eff1027ecc385c6b9a10f6026eff54510",
+    "data/task4_v135_london/extract.py": "b551f10f2930d9c71ca1765e4bd58e62e961c65a3fa73fa74b2df59c34f0c6c8",
+    "data/task4_v135_london/london_region_original.geojson": "c23b9e362ce706c27565bfb0ae04786ad1776bf80d9d9317fb1af40735a7974d",
+    "data/task4_v135_london/zone_search_provider.json": "93851aa0d841e21be864b9e761ffa285de5f0824cb325486abbd74ecc4411f18",
+    "data/task4_v135_london/audit.py": "aca4bad378b32515c6ca6660484c399b7c0c812003a872062ab3eea1d8289b24",
+    "data/task4_v135_london/ons_bfc_layer_original.json": "00439c9c4c24b843239fff74b52a48ecb102a578e00d18c6594cda25219ee102",
+    "data/task4_v135_london/ons_layer_original.json": "10a4ed74bff479ae235aba616c48b3692aaddff35b0ad9d72b6b7c002b29cb66"
+  }
+}

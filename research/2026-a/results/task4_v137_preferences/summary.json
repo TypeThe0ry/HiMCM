@@ -1,0 +1,400 @@
+{
+  "version": "V137",
+  "input_version": "V136 user16",
+  "control_input": "V121 user16",
+  "previous_input": "V124 user16 (frozen V125 preferences)",
+  "profiles": [
+    {
+      "profile": "baseline",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 1.0,
+      "mean_score_interval_width": 16.089333559065736,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.3682
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4333
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.5364
+        }
+      ]
+    },
+    {
+      "profile": "education_priority",
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 0.7166666666666667,
+      "mean_score_interval_width": 17.0090088050623,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Singapore",
+          "most_recommended_frequency": 0.3428
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.4295
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.5783
+        }
+      ]
+    },
+    {
+      "profile": "independent_living_priority",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 0.8833333333333333,
+      "mean_score_interval_width": 22.131114719381916,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4451
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.5899
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.7986
+        }
+      ]
+    }
+  ],
+  "preference_evidence": "Unchanged analyst-designed2x multipliers; no student survey, expert elicitation or measured age preference",
+  "ahp_interpretation": "Exact-ratio AHP reconstruction; CR checks algebraic consistency only",
+  "seed": 20261108,
+  "concentrations": [
+    20,
+    100,
+    500
+  ],
+  "draws_per_setting": 10000,
+  "total_draws": 90000,
+  "total_draws_current": 90000,
+  "total_draws_control": 90000,
+  "random_generator": "default_rng(SeedSequence([20261108, concentration])) reset per profile and concentration",
+  "mc_interpretation": "Weight-conditional recommendation frequencies, not real winning probabilities; no missing utility completion sampled",
+  "ranking_policy": "Deterministic interval minimax regret remains primary; MC mean ranks/frequencies are sensitivity summaries",
+  "controlled_v122_comparison": "V121 control exactly reproduces frozen V122 ranks, MC, weights, bounds, matrices and profile summaries. V136 differs in six utility lower bounds.",
+  "controlled_v125_comparison": "Frozen V125 matching city/profile/concentration/draw columns paired against V136; V124 bounds and all preferences verified unchanged. Four new utility lower bounds differ.",
+  "historical_comparison": [
+    {
+      "profile": "baseline",
+      "old_input": "v121",
+      "new_input": "v136",
+      "old_minimax_choices": [
+        "Zurich"
+      ],
+      "new_minimax_choices": [
+        "Zurich"
+      ],
+      "changed_decision_ranks": 2,
+      "kendall_tau_b_between_evidence_versions": 0.9833333333333333,
+      "old_mean_score_width": 16.183024716277767,
+      "new_mean_score_width": 16.089333559065736,
+      "old_tau_vs_own_baseline": 1.0,
+      "new_tau_vs_own_baseline": 1.0,
+      "changed_mc_city_rows": 47,
+      "largest_absolute_recommendation_frequency_change": 0.008799999999999995,
+      "largest_absolute_mean_rank_change": 0.42379999999999995
+    },
+    {
+      "profile": "education_priority",
+      "old_input": "v121",
+      "new_input": "v136",
+      "old_minimax_choices": [
+        "Oslo"
+      ],
+      "new_minimax_choices": [
+        "Oslo"
+      ],
+      "changed_decision_ranks": 0,
+      "kendall_tau_b_between_evidence_versions": 1.0,
+      "old_mean_score_width": 17.087823319852394,
+      "new_mean_score_width": 17.0090088050623,
+      "old_tau_vs_own_baseline": 0.7,
+      "new_tau_vs_own_baseline": 0.7166666666666667,
+      "changed_mc_city_rows": 48,
+      "largest_absolute_recommendation_frequency_change": 0.033699999999999994,
+      "largest_absolute_mean_rank_change": 0.20929999999999982
+    },
+    {
+      "profile": "independent_living_priority",
+      "old_input": "v121",
+      "new_input": "v136",
+      "old_minimax_choices": [
+        "Zurich"
+      ],
+      "new_minimax_choices": [
+        "Zurich"
+      ],
+      "changed_decision_ranks": 5,
+      "kendall_tau_b_between_evidence_versions": 0.9500000000000001,
+      "old_mean_score_width": 22.2613986165342,
+      "new_mean_score_width": 22.131114719381916,
+      "old_tau_vs_own_baseline": 0.9166666666666666,
+      "new_tau_vs_own_baseline": 0.8833333333333333,
+      "changed_mc_city_rows": 47,
+      "largest_absolute_recommendation_frequency_change": 0.0051,
+      "largest_absolute_mean_rank_change": 0.9481000000000002
+    }
+  ],
+  "previous_evidence_comparison": [
+    {
+      "profile": "baseline",
+      "old_input": "v124",
+      "new_input": "v136",
+      "old_minimax_choices": [
+        "Zurich"
+      ],
+      "new_minimax_choices": [
+        "Zurich"
+      ],
+      "changed_decision_ranks": 2,
+      "kendall_tau_b_between_evidence_versions": 0.9833333333333333,
+      "old_mean_score_width": 16.150020917288053,
+      "new_mean_score_width": 16.089333559065736,
+      "old_tau_vs_own_baseline": 1.0,
+      "new_tau_vs_own_baseline": 1.0,
+      "changed_mc_city_rows": 46,
+      "largest_absolute_recommendation_frequency_change": 0.008799999999999995,
+      "largest_absolute_mean_rank_change": 0.3682999999999996
+    },
+    {
+      "profile": "education_priority",
+      "old_input": "v124",
+      "new_input": "v136",
+      "old_minimax_choices": [
+        "Oslo"
+      ],
+      "new_minimax_choices": [
+        "Oslo"
+      ],
+      "changed_decision_ranks": 0,
+      "kendall_tau_b_between_evidence_versions": 1.0,
+      "old_mean_score_width": 17.062998718994297,
+      "new_mean_score_width": 17.0090088050623,
+      "old_tau_vs_own_baseline": 0.7,
+      "new_tau_vs_own_baseline": 0.7166666666666667,
+      "changed_mc_city_rows": 47,
+      "largest_absolute_recommendation_frequency_change": 0.033699999999999994,
+      "largest_absolute_mean_rank_change": 0.2225999999999999
+    },
+    {
+      "profile": "independent_living_priority",
+      "old_input": "v124",
+      "new_input": "v136",
+      "old_minimax_choices": [
+        "Zurich"
+      ],
+      "new_minimax_choices": [
+        "Zurich"
+      ],
+      "changed_decision_ranks": 2,
+      "kendall_tau_b_between_evidence_versions": 0.9833333333333333,
+      "old_mean_score_width": 22.217852834564763,
+      "new_mean_score_width": 22.131114719381916,
+      "old_tau_vs_own_baseline": 0.8833333333333333,
+      "new_tau_vs_own_baseline": 0.8833333333333333,
+      "changed_mc_city_rows": 47,
+      "largest_absolute_recommendation_frequency_change": 0.0051,
+      "largest_absolute_mean_rank_change": 0.6230000000000011
+    }
+  ],
+  "changed_lower_bounds_since_V121": [
+    {
+      "city": "Vienna",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.08893284626879548
+    },
+    {
+      "city": "Berlin",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.051274465290648025
+    },
+    {
+      "city": "London",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.012769306569299622
+    },
+    {
+      "city": "Madrid",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.09770010874891687
+    },
+    {
+      "city": "Prague",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.07494655127527473
+    },
+    {
+      "city": "Tokyo",
+      "indicator": "public_pool_density",
+      "before": 0.0,
+      "after": 0.04769460950753885
+    }
+  ],
+  "changed_lower_bounds_since_V124": [
+    {
+      "city": "Vienna",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.08893284626879548
+    },
+    {
+      "city": "Berlin",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.051274465290648025
+    },
+    {
+      "city": "London",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.012769306569299622
+    },
+    {
+      "city": "Prague",
+      "indicator": "public_transport_density",
+      "before": 0.0,
+      "after": 0.07494655127527473
+    }
+  ],
+  "source_hashes": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_v136_admissions.json": "5a760702ca4657dd340ad3563cf5a673566b71dd6d6ece4861df49b584ca7983",
+    "design/task4_user_v136_snapshot.json": "e928c3bad82d3f055a705b0c6c8b4484261d7dae90d40f3dd15cd00fca28fd5b",
+    "scripts/task4_v137_preferences.py": "4c392b984753e4ce29a3415722dae99cd88b8f3b02070970a3ff3b5383aa2e95",
+    "scripts/task4_user_v136_revision.py": "32b4db94bcb4c3d5af1b190734eb49129b2d82f6755b37323d0e7619e4924efe",
+    "scripts/audit_task4_v136_revision.py": "d2de346f76a4384b36c61afe2acd643fd412d483312436cdef76b10f2b2a331f",
+    "results/task4_user_v136_revision/mc_city_summary.csv": "15dd5adb530c2e8da254f8367b91d37813d5e2df475066511a41115e512087a9",
+    "results/task4_user_v136_revision/utility_bounds.csv": "1ff06f430f8bd527774f7b08f80af31864030e792e76f284c684bea18cb0d533",
+    "results/task4_user_v136_revision/all_ranks.csv": "edf11b15f04ffd0b9306efa6af72f67e7b3ae09612daedc98800cb736623ff2c",
+    "results/task4_user_v136_revision/current_ranks.csv": "8b6852a5507c98e84942178f6cbbfc2a8f68b5298afe34344438260ffa5bb03c",
+    "results/task4_user_v136_revision/summary.json": "f601c47e461297fa78cfd0cbc943ad289b4f7a5fa9561bf70074eb780c64eb50",
+    "results/task4_user_v136_revision/revision_audit.json": "93661e45cc594d2b5018668ba27f3c0bcd5c8c59d9bfa2f91b7b5eb785d04fee",
+    "scripts/task4_v125_preferences.py": "c969390518ddbd51ed319264669e7b84fe04dac8dabe5db43b8436859adae94b",
+    "scripts/task4_v122_preferences.py": "a7faf3e07dcad153fac8004d4e52cb77767201150765d5c51e16f89477950ed3",
+    "scripts/task4_user_v124_revision.py": "77c17f5a453665cb9b91683caa7145ab6c3e217222f6b8d2fb9b0b99af684a3a",
+    "scripts/task4_user_v121_revision.py": "2dc0d8944154364eb7046ce806f7d45b3f22626eea4dcfd2d1c17e796fd26cfc",
+    "scripts/task4_user_city_indicators.py": "7d529ee3a617a5d3399baaa8a0eb97b0bb222da0c47b75f05acffa880291ef0a",
+    "scripts/task4_ahp_mc_baseline.py": "7b51be6f7ca47e2ea6c77fcdbb227a7611d8804eaf17d9040776edb94398f99a",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "design/task4_user_v124_admissions.json": "f7431b93535eda48f1baef4b1cab99037d69b71c696f68d8608e14a2a2c67d56",
+    "design/task4_user_v121_admissions.json": "16211d42402ca19c6040507201ef2ea39ab5c878d9a51369b57fe232c4884b80",
+    "results/task4_v122_preferences/v119_rank_comparison.csv": "fda123ee0bcd7771b30ddf31490fa76d5bd5ef44fa0998512a04c76121936ed3",
+    "results/task4_v122_preferences/README.md": "4e5ade57ade6828c5fd4e82eb328e46495fddf407561dbc4c8270bd559cde93f",
+    "results/task4_v122_preferences/scenario_matrices.json": "3551255c7e595d98dcd1782cf6562a33fcff1511593c4ae51d864cd003988271",
+    "results/task4_v122_preferences/independent_living_priority_matrix.csv": "7c22ad43c94b6bc90117c9fe2b876debb2fdb8d039ab309455ed4a1f3b771710",
+    "results/task4_v122_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v122_preferences/mc_city_summary.csv": "01070eb2503bac0977f2e630be3e82fab78e9f1aedbff9165e907c0963dcc225",
+    "results/task4_v122_preferences/utility_bounds.csv": "74a6e2fb2e014ee4e2571cf0acf461539c3a3600c72e527e0f4f8cc47cccab60",
+    "results/task4_v122_preferences/education_priority_matrix.csv": "6f4dc9b2ddf4d8c338c8b246d02e98b2d5046c3e7aaa3f1b43eb063a7bc38dea",
+    "results/task4_v122_preferences/ranks.csv": "2e852f84a1827913726b5a4c9f6a101f2ea1b0c0ee3617042e2a73023d9d03e8",
+    "results/task4_v122_preferences/v119_mc_comparison_k100.csv": "ef5c5ecc78d662acdb2056618e321054ba91bbda6b9a70137ef8107d57ddf4a6",
+    "results/task4_v122_preferences/baseline_matrix.csv": "b0c5778d4682c51ad149ecb4656674ac71f16cb0a1fe2969cf27357f7b950bf5",
+    "results/task4_v122_preferences/summary.json": "785a0d2c3fcadd0a04ea485b2665fa1375930849e9bbebbbcb5e77a044a54200",
+    "results/task4_v122_preferences/audit.json": "e9c3eaab01b02602d5fd5af94f586e28855a34e5ef01f83ceac14e59321447e9",
+    "results/task4_v125_preferences/control_v121_ranks.csv": "2e852f84a1827913726b5a4c9f6a101f2ea1b0c0ee3617042e2a73023d9d03e8",
+    "results/task4_v125_preferences/README.md": "b23dbb3345501033d742dacdf30b3ad77e5264677d5b02d141a2118ae25b6c01",
+    "results/task4_v125_preferences/scenario_matrices.json": "3551255c7e595d98dcd1782cf6562a33fcff1511593c4ae51d864cd003988271",
+    "results/task4_v125_preferences/independent_living_priority_matrix.csv": "7c22ad43c94b6bc90117c9fe2b876debb2fdb8d039ab309455ed4a1f3b771710",
+    "results/task4_v125_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v125_preferences/v122_mc_comparison.csv": "35f75392373cec70e966ad62233688d944a515de54868f958e4faa9293bf59f2",
+    "results/task4_v125_preferences/mc_city_summary.csv": "0eb96b800d715381cc4b33a5ada4ef541c9e28a31d5beba89314417809ca7f3e",
+    "results/task4_v125_preferences/control_v121_mc_city_summary.csv": "01070eb2503bac0977f2e630be3e82fab78e9f1aedbff9165e907c0963dcc225",
+    "results/task4_v125_preferences/utility_bounds.csv": "b07f5d2f05cdec2706e0b39d7e5a21380cf01c6b87f55e46adaf5214f831a21c",
+    "results/task4_v125_preferences/education_priority_matrix.csv": "6f4dc9b2ddf4d8c338c8b246d02e98b2d5046c3e7aaa3f1b43eb063a7bc38dea",
+    "results/task4_v125_preferences/ranks.csv": "7e2fc43e3a7b5ffdb77a51991729268e1c675c890732984e68914f5c85877496",
+    "results/task4_v125_preferences/baseline_matrix.csv": "b0c5778d4682c51ad149ecb4656674ac71f16cb0a1fe2969cf27357f7b950bf5",
+    "results/task4_v125_preferences/summary.json": "19e90776861973d2853a293baafc97433c333a0c76cf4cf38a710ff2446a0f6e",
+    "results/task4_v125_preferences/v122_rank_comparison.csv": "f1d2748ec7e509fd61e9863e199d4f930b81ca7ed506ec96f4e1ec671c3c985d",
+    "results/task4_v125_preferences/audit.json": "848e27477a0dea8d7193eaf4f661abe50465c6f5d6bc48aea32c7617f35213e4"
+  }
+}

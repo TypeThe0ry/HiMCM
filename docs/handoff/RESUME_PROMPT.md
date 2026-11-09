@@ -33,3 +33,5 @@ V133新证据：Zurich SSP原件确认公私立全州调查覆盖，未取得同
 V134仅改当前owned V131数据章及引用：Paris Henri-IV真实UAI／2025的794学生与153.65机构ETP，2026目录post-bac只是范围提示；比率仍不准入。新PDF20页已全页渲染／零warning复核，所有旧数值资产和宏与Git dbffa4e逐字节保持。旧V131/V133文档回执是旧PDF的历史捕获，当前以results/task4_v134_documentation与Overleaf qa.documentation_revision=V134为准。文件名仍V131，因为科学版本未改；不新建整套重复论文。
 
 V135最新可操作项：London59个候选operator站／hub下界已核（62个严格Zone1站ID→省2个→Paddington合并=59实体）；新源包data/task4_v135_london，完整原API以399962字节lossless gzip入研究Git，缺外置原件也可复算，解压SHA匹配16.2MB原响应。geo用ONS2025 BFC全分辨率多polygon，不用BSC200m简化边界，岸线边缘距不当作行政外界距。候选效用[.012769306569299622,1]，原9122909人口／2025保持；若正式启用fixed平均宽度预估再窄0.0170%，London14／Zurich保守／16可能不变。目前0正式准入。优先做V136正式受控补数、撤回、主MC／全部扩展及论文迁移，源和单位门槛不满足就跳过；不要把candidate预评估直接写成现行改善。
+
+V136/V137最新阶段：London59实体已做受控正式补数，主16静态／24组各10000MC／完整撤回及扩展独立总审通过，112/33/15、累计21补充。V136快照design/task4_user_v136_snapshot.json，V137总审与真实V131→V137配对results/task4_v137_revision。当前registry仍V130／完整稿V131文档V134；下一步直接统一新完整独立稿V137，不重复成功全量数值测试。需要21 supplements／112-33-15、fixed新均宽16.089333559066、equal方法tau.633333、London基准k100均rank13.7607及来源段；保留Paris真实拒收案例、AI局部范围和队友根文件。编译全页检查后才激活。新V136审计已支持未来注册表推进后重放并另写recheck_audit.json，原审计不覆盖。
