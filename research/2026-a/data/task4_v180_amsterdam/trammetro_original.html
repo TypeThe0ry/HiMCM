@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Tram- en metronet</title>
+		<meta name="description" content="Interactieve kaart gemeente Amsterdam: Tram- en metronet">
+		<meta name="author" content="Gemeente Amsterdam Klaas-Bindert de Haan">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0">
+		<link rel="stylesheet" href="../_fonts/font.amsterdam.css">
+		<link rel="stylesheet" href="../_leaflet194/leaflet.rem.min.css">
+		<link rel="stylesheet" href="../_leaflet.draw/leaflet.draw.min.css">
+		<link rel="stylesheet" href="../_maps.min/maps.rem.css?5">
+		<link rel="stylesheet" href="../_maps.min.ext/leaflet.reachability.rem.css?3">		
+		<script src="../_jquery/jquery-4.0.0.rem.min.js"></script>
+		<script src="../_jquery/jquery-ui-1.14.2.rem.min.js"></script>
+		<script src="../_leaflet194/leaflet.rem.min.js"></script>
+		<script src="../_leaflet.draw/leaflet.draw.min.js?9"></script>
+		<script src="../_leaflet.draw/turf.min.js"></script>
+		<script src="../_maps.min.ext/script.ext.js?9"></script>
+		<script src="../_maps.min.ext/leaflet.pattern.js"></script>	
+		<script src="../_maps.min.ext/highcharts_11.js"></script>		
+		<script src="../_maps.min.ext/piechart.js"></script>
+		<script src="../_maps.min.ext/leaflet.reachability.rem.js?10"></script>
+		<script src="../_maps.min/maps.rem.js?16"></script>
+
+		<script src="../_maps.plus/trammetro.js?17"></script>	
+		<script>
+		// <![CDATA[
+			$(document).ready(function(){
+								deKaartsoort = 'N';deMap = '_maps.min'; deCenterX = 52.3373; deCenterY = 4.90066; deVorigeZoom = 12.25; deVorigeCenter = [52.3373,4.90066]; deSteunKleur = '#EC0000';doeReady();doeKaart(52.3373,4.90066,12.25,1,'trammetro', 1);deVast1 = true; doeLegenda('trammetro', 1);				if  (deKaartsoort == "S" && deEmbed > 0 ) $("#slidemenu").css("top", "20rem");
+				if  (deKaartsoort == "S" || deKaartsoort == "R" || deKaartsoort == "P") $("#sld").hide();
+			});
+		// ]]>
+		</script>
+	</head>
+	<body>
+		<header>
+			 <a href="#legendacontainer1" class="skip">Ga direct naar de Legenda</a> 			<div class="logo k"><img alt= "" src="../_img/andreas.svg"><a href='https://maps.amsterdam.nl/' target='_blank'>Gemeente<br>Amsterdam</a></div>
+			<h1>Tram- en metronet</h1>
+			<button type='button' id="help" class='k' title="Toelichting" aria-label="Toelichting"></button>
+						<button type='button' id="menu" class='k' title="Menu voor meer kaarten, data downloaden en kaart delen" aria-label="Menu voor meer kaarten, data downloaden en kaart delen" aria-controls="menulist" aria-expanded="false"></button>	
+			<ul id="menulist">
+				<li><a href="https://maps.amsterdam.nl" target="_blank">Meer kaarten op Maps Amsterdam</a></li>
+				<li><a href="https://maps.amsterdam.nl/open_geodata" target="_blank">Download datasets op Maps Data</a></li>
+				<li class='b'><a href="#" onclick='doeParams(); doeEmbed()'>Deel deze kaart</a></li>
+			</ul>				
+						<button type='button' id="contrast" title="Verhoog het contrast" aria-label="Verhoog het contrast" aria-pressed="false"></button>
+		</header>
+		
+				<nav></nav>
+				<main>
+						<div id="pano_container" class="min"><button type='button' id="pano_x" title="Sluit panorama" aria-label="Sluit panorama"></button><button type='button' id="pano_maxmin" title="Vergroot het panoramabeeld" aria-label="Vergroot het panoramabeeld" aria-controls='pano' aria-expanded='false'></button><div id="pano"></div><div id="pano_date"></div><div id="pano_compass"><img src="../_img/knop_panopunt.svg" alt='' class="compass"></div></div>
+			<div id="pand_container"><div class='titel'><h2>Informatie</h2><button type='button' id="pand_x" title="Sluit info" aria-label="Sluit info"></button></div><table id="pandinfo"></table></div>
+			<label class="screen-reader-text" for="adres_input">Zoek een adres of postcode</label><input id="adres_input" type="text" placeholder="Zoek een adres of postcode"><ul id="adreslijst"></ul>
+			<div id='legendacontainer1' class='legendacontainer'>
+				<div class='titel'>
+					<h2>Legenda</h2>
+					<button type='button' id="godown1" class="down" title="Legenda inklappen" aria-label="Legenda inklappen" aria-controls='legenda1' aria-expanded='true'></button>
+														</div>
+												<div id='legenda1' class='legenda'>
+					<div id="opacity1" class="opacity unselectable"><span class='opacitymelding'>Transparantieschuif</span><button type='button' id='opacityslider1' class='opacityslider' title="Verschuif de transparantie" aria-label="Verschuif de transparantie"></button><div class="clear"></div></div>
+					<div id="time1" class="opacity unselectable"><span class='opacitymelding'>Tijdanimatie</span><button type='button' id='time_stepback1' class='time_step back' title="Tijd stap terug" aria-label="Tijd stap terug"></button><button type='button' id='time_stepforward1' class='time_step time_play' title="Tijd stap vooruit" aria-label="Tijd stap vooruit"></button><button type='button' id='time_playstop1' class='time_play' title="Start de tijd" aria-label="Start de tijd"></button><button type='button' id='timeslider1' class='timeslider' title="Klik op start of stop" aria-label="Klik op start of stop"></button><span id='timecount1' class='timecount'></span><div class="clear"></div></div>
+					<div id='zoekvak'></div>
+					<table id='legendatabel1'></table>
+				</div>
+			</div>
+						<div id="kaart"></div>
+			<div id="cursorposition"></div>
+			<div id='statusposition'></div>
+						
+			<div id="waas"></div>
+			<div id="toelichting_container" class='k'>
+				<h2>Toelichting bij deze kaart</h2>
+				<button type='button' id="toelichting_x" onclick="doeToelichting('hidden')" title="Sluit de toelichting" aria-label="Sluit de toelichting"></button>
+				<div id="toelichting">
+					<h3>Over deze kaart</h3><br>
+					<div id='tekst'>Deze kaart visualiseert het netwerk van stations, haltes en lijnen van metro en tram in Amsterdam. 
+Op de kaart zijn de afzonderlijke haltes binnen een korte loopafstand samengevoegd tot 1 opstappunt.
+
+Tijdelijke omleidingen zijn niet opgenomen.<br>Deze kaart toont dus NIET de actuele routes.<br>Kijk daarvoor op de website van de <a href='https://reisinfo.gvb.nl/reisinformatie/haltes-en-dienstregeling' target='_blank'>GVB</a>
+
+Deze kaart wordt regelmatige geüpdatet. Als iets niet (meer) correct is, stellen we uw feedback zeer op prijs via onderstaand e-mailadres.</div><br><h3>Contact</h3><br>Gemeente Amsterdam - Ruimte en Duurzaamheid<br>Klaas-Bindert de Haan<br><a href='mailto:k.b.de.haan@amsterdam.nl'>k.b.de.haan@amsterdam.nl</a>					<br><br>
+					<button type='button' id='meer' onclick='doeProclaimer()' title='Over Maps Amsterdam en medegebruik' aria-label='Over Maps Amsterdam en medegebruik' aria-controls='proclaimer' aria-expanded='false'>Over Maps Amsterdam en medegebruik</button>
+					<div id='proclaimer'>
+						<h3>Over Maps Amsterdam</h3><br>
+						De website maps.amsterdam.nl <a href='https://maps.amsterdam.nl' target='_blank'>(klik voor meer kaarten)</a> wordt beheerd door de directie Ruimte en Duurzaamheid van de Gemeente Amsterdam.<br>
+						<br>
+						Wij doen ons best de informatie op deze interactieve kaart actueel, correct en toegankelijk te houden, maar kunnen dit niet garanderen. Er kunnen geen rechten worden ontleend aan de kaart.<br>
+						<br>
+						Ten opzichte van de ondergrond kan door projectieconversie een kleine verschuiving hebben plaatsgevonden.<br>
+						<br>
+						De Gemeente Amsterdam behoudt zich het auteursrecht voor op de informatie op deze kaart, inclusief beeldmerken, videomateriaal, logo's, fotomateriaal en de documenten die via deze kaart zijn te downloaden.
+						Citeren of het publiceren van een screenshot van de kaart met bronvermelding moedigen we aan, evenals linken naar deze interactieve kaart.
+						Voor vragen, opmerkingen of aanvullingen neemt u contact via het vermelde mailadres of de webpagina.
+						<br><br>
+						<h3>Open Data</h3><br>
+						De meeste datasets achter de kaarten zijn beschikbaar via <a href='https://maps.amsterdam.nl/open_geodata/' target='_blank'>Maps Data</a>.<br>
+						Meer datasets en webservices zijn te vinden op <a href='https://data.amsterdam.nl/' target='_blank'>Data en informatie</a>
+						<br><br>
+						<div id="sld"><h3>Styling met een .sld</h3><br>
+						Download hier de <span id='legenda_thema'><a href='https://maps.amsterdam.nl/open_geodata/legenda.php?LEGENDA=trammetro' target='_blank'>Legenda.csv</a></span> van deze kaart.<br>
+						In de twee laatste kolommen staan de download-link van de DATASET (geojson lnglat) en de download-link van de SLD.
+						<br><br></div>
+						<h3>Embedden en linken</h3><br>
+						Vanwege security redenen is het alleen nog mogelijk om Maps-kaarten in een iframe te embedden binnen het domein amsterdam.nl.<br>
+						Anderen kunnen een afbeelding van en een link naar de kaart opnemen in een (nieuws)artikel.
+						<br><br>
+						<h3>Parameters voor intern gebruik</h3>
+						<div id='parameters1'></div><div id='parameters2'></div><div id='parameters3'></div><div id='parameters4'></div>
+					</div>
+				</div>
+			</div>
+			<div id ='wacht'>&nbsp;</div>
+			<div id ='wachtmelding'>Even geduld ...</div>
+		</main>
+	</body>
+</html>

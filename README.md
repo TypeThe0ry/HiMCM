@@ -281,3 +281,5 @@ V177用户已恢复长期迭代。[新来源核查](research/2026-a/results/task
 V178[扩展实际AI根会话记录](research/2026-a/data/task4_v178_ai_provenance/README.md)：326可见消息＋1865工具输入，固定截止新加坡11月9日22:31，原文私存／元数据公开。科学V154／论文V176保持，全队AI史仍未完整。
 
 V179仅更新[自有AI附录](research/2026-a/results/task4_v179_ai_review/README.md)到已核326可见／1865工具输入的固定范围；前24主文参考页完整像素同，26页／50引用，科学V154保持。
+
+V180新增[Amsterdam32个Metro站组候选](research/2026-a/results/task4_v180_amsterdam_candidate/README.md)：取得原始实体表及两版市界，保守筛选后候选下界.063622907；尚未入模，科学V154／论文V179保持。下一阶段完成准入和全套迁移。

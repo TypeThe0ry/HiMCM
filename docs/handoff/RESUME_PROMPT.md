@@ -1,6 +1,6 @@
 # 恢复HiMCM：主分析／扩展V154，当前独立稿V179（用户mcmthesis格式）
 
-长期goal active；用户随后恢复并明确要求继续既定数据与论文材料任务。先读AGENTS.md、GUIDELINES.md及[V179当前AI更新稿](V179_RESEARCH_UPDATE.md)、[V178实际AI取证扩展](V178_RESEARCH_UPDATE.md)、[V177恢复与新来源核查](V177_RESEARCH_UPDATE.md)、[V176当前稿与上传](V176_RESEARCH_UPDATE.md)、[完整状态](SESSION_STATUS_20261109.md)、[V175均秩比较界与新FTE口径](V175_RESEARCH_UPDATE.md)、[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；用户随后恢复并明确要求继续既定数据与论文材料任务。先读AGENTS.md、GUIDELINES.md及[V180新数据候选与下一轮迁移](V180_RESEARCH_UPDATE.md)、[V179当前AI更新稿](V179_RESEARCH_UPDATE.md)、[V178实际AI取证扩展](V178_RESEARCH_UPDATE.md)、[V177恢复与新来源核查](V177_RESEARCH_UPDATE.md)、[V176当前稿与上传](V176_RESEARCH_UPDATE.md)、[完整状态](SESSION_STATUS_20261109.md)、[V175均秩比较界与新FTE口径](V175_RESEARCH_UPDATE.md)、[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
@@ -74,3 +74,5 @@ V177用户恢复goal。2新官方HTML：市府年末2024人口448664和CSO2026�
 V178根会话AI新捕获截至14:31:18.850UTC/新加坡22:31，326可见消息(旧125保持)+1865工具输入(1749custom/116function)，74root模型标签。原文私存在/data/scratch/himcm-ai-v178，0700/0600、不入Git；元数据/哈希公开，仍不覆盖toolresults/子agent/队友/后续。29过滤+2失败保护验证，187科学/621稿/旧V140保持；当前V176AI页仍旧窗口，下一轮应只更新自有AI页，不冒称全队完整。
 
 V179现为当前自有稿：只更新AI范围与74root计数，前24页完整像素同、26=24+2/50引用/余量1；326可见消息+1865工具输入固定截止14:31:18.850UTC范围已入AI25/26，仍不完整。187科学/623旧稿保持，47清单13待办保持。旧V178取证是绑定旧V176时点，勿当新稿验收；本轮验收脚本为scripts/task4_v179_review_audit.py。
+
+V180新Amsterdam原始Metro表：239分组点/39Metro，两版名义市界35，100米声明筛选再去164/174/196，候选32。下界.063622907上界1，预评估fixed均宽16.061435141→16.049384792，equal18.860967022→18.837940743，16可能/0必要和首选保持。当前尚0准入，科学V154/稿V179保持；下一轮优先32候选正式准入、全部扩展迁移和新稿一致性后统一启用。100米不是真实定位误差界、2026库存不改标2025。

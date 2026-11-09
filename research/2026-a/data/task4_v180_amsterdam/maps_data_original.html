@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">	
+		<title>Maps Data</title>
+		<meta name="description" content="Open Geo Data Gemeente Amsterdam">
+		<meta name="author" content="Gemeente Amsterdam Klaas-Bindert de Haan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../_fonts/font.amsterdam.css">				
+		<link rel="stylesheet" href="index.min.css?2">
+		<script src="../_jquery/jquery-4.0.0.rem.min.js"></script>
+		<script src="../_jquery/jquery-ui-1.14.2.rem.min.js"></script>
+		<script>
+			// <![CDATA[
+			var deTitelLijst = 
+			[ {value:"Bijzondere bomen | 561", label:"Bijzondere bomen "}, {value:"Niet-woonfuncties (Functiekaart) | 49", label:"Niet-woonfuncties (Functiekaart) "}, {value:"Sport - binnenlocaties | 663", label:"Sport - binnenlocaties "}, {value:"Sport - parken | 622", label:"Sport - parken "}, {value:"Sport - toestellen | 56", label:"Sport - toestellen "}, {value:"Sport - velden | 662", label:"Sport - velden "}, {value:"Sport - zwembaden | 664", label:"Sport - zwembaden "}, {value:"Uitvoeringsprogramma Stadsregie | 628", label:"Uitvoeringsprogramma Stadsregie "}, {value:"Welstand - Niveaus | 173", label:"Welstand - Niveaus "}, {value:"Welstand - Systemen | 174", label:"Welstand - Systemen "}, {value:"Welstand - Transformatie | 473", label:"Welstand - Transformatie "}, {value:"Woningbouwplannen | 142", label:"Woningbouwplannen "}, {value:"Architectuurprijzen Arcam | 396", label:"Architectuurprijzen Arcam "}, {value:"Bestemmingsplannen vervangen | 487", label:"Bestemmingsplannen vervangen "}, {value:"Bestemmingsplannen vervangen overkoepelend | 566", label:"Bestemmingsplannen vervangen overkoepelend "}, {value:"Bouwjaar blok | 362", label:"Bouwjaar blok "}, {value:"Bouwjaar pand | 447", label:"Bouwjaar pand "}, {value:"Corporatiebezit AFWC 2019 | 581", label:"Corporatiebezit AFWC 2019 "}, {value:"Corporatiebezit AFWC 2020 | 580", label:"Corporatiebezit AFWC 2020 "}, {value:"Corporatiebezit AFWC 2021 | 579", label:"Corporatiebezit AFWC 2021 "}, {value:"Corporatiebezit AFWC 2022 | 578", label:"Corporatiebezit AFWC 2022 "}, {value:"Corporatiebezit AFWC 2023 | 208", label:"Corporatiebezit AFWC 2023 "}, {value:"Corporatiebezit AFWC 2024 | 586", label:"Corporatiebezit AFWC 2024 "}, {value:"Corporatiebezit AFWC 2025 | 627", label:"Corporatiebezit AFWC 2025 "}, {value:"Functiemix | 310", label:"Functiemix "}, {value:"Functiemix buurten | 441", label:"Functiemix buurten "}, {value:"Hoogbouw - punten | 508", label:"Hoogbouw - punten "}, {value:"Hoogbouw - vlakken | 509", label:"Hoogbouw - vlakken "}, {value:"Oergeul | 242", label:"Oergeul "}, {value:"Oergeul - sonderingen | 243", label:"Oergeul - sonderingen "}, {value:"Woningwaarde 2002-2019 (zip) | 52", label:"Woningwaarde 2002-2019 (zip) "}, {value:"Woningwaarde 2020 | 393", label:"Woningwaarde 2020 "}, {value:"Woningwaarde 2021 | 399", label:"Woningwaarde 2021 "}, {value:"Woningwaarde 2022 | 472", label:"Woningwaarde 2022 "}, {value:"Woningwaarde 2023 | 589", label:"Woningwaarde 2023 "}, {value:"Woningwaarde 2024 | 596", label:"Woningwaarde 2024 "}, {value:"Woningwaarde 2025 | 641", label:"Woningwaarde 2025 "}, {value:"Zelfbouwkavels | 60", label:"Zelfbouwkavels "}, {value:"Aardgasvrij | 483", label:"Aardgasvrij "}, {value:"Aardgasvrij - initiatieven | 488", label:"Aardgasvrij - initiatieven "}, {value:"Bodemkwaliteit | 57", label:"Bodemkwaliteit "}, {value:"Groene en multifunctionele daken | 51", label:"Groene en multifunctionele daken "}, {value:"Klimaat - Droogte | 317", label:"Klimaat - Droogte "}, {value:"Klimaat - Overstroming | 318", label:"Klimaat - Overstroming "}, {value:"NO2 metingen 4-weken | 331", label:"NO2 metingen 4-weken "}, {value:"NO2 metingen jaren | 307", label:"NO2 metingen jaren "}, {value:"NO2 metingen locaties | 308", label:"NO2 metingen locaties "}, {value:"Platte daken | 588", label:"Platte daken "}, {value:"Rainproof - Hoog grondwater | 290", label:"Rainproof - Hoog grondwater "}, {value:"Rainproof - Hydro-eenheden | 289", label:"Rainproof - Hydro-eenheden "}, {value:"Rainproof - Knelpunten | 288", label:"Rainproof - Knelpunten "}, {value:"Rainproof - Polderriool | 291", label:"Rainproof - Polderriool "}, {value:"Stadswarmtekoude | 224", label:"Stadswarmtekoude "}, {value:"Windzoekgebieden | 372", label:"Windzoekgebieden "}, {value:"Windzoekgebieden - windmolens | 548", label:"Windzoekgebieden - windmolens "}, {value:"Zonnepanelen | 251", label:"Zonnepanelen "}, {value:"Zonnepanelen op erfgoed | 320", label:"Zonnepanelen op erfgoed "}, {value:"Broedende vogels | 87", label:"Broedende vogels "}, {value:"Ecologische structuur | 75", label:"Ecologische structuur "}, {value:"Ecopassages | 63", label:"Ecopassages "}, {value:"Eikenprocessierups | 493", label:"Eikenprocessierups "}, {value:"Hoofdbomenstructuur - buffer | 312", label:"Hoofdbomenstructuur - buffer "}, {value:"Hoofdgroenstructuur | 55", label:"Hoofdgroenstructuur "}, {value:"Muurflora | 106", label:"Muurflora "}, {value:"Park, plantsoen, recreatief groen | 99", label:"Park, plantsoen, recreatief groen "}, {value:"Parkvogels - aantal/vlak | 422", label:"Parkvogels - aantal/vlak "}, {value:"Parkvogels - koloniebroeders | 424", label:"Parkvogels - koloniebroeders "}, {value:"Parkvogels - rode lijst | 423", label:"Parkvogels - rode lijst "}, {value:"Ringslang - locaties | 574", label:"Ringslang - locaties "}, {value:"TAC-adviezen Hoofdgroenstructuur | 108", label:"TAC-adviezen Hoofdgroenstructuur "}, {value:"Vleermuizen - batlogger | 364", label:"Vleermuizen - batlogger "}, {value:"Vleermuizen - trajecten | 367", label:"Vleermuizen - trajecten "}, {value:"Vleermuizen - verblijfsplaatsen | 365", label:"Vleermuizen - verblijfsplaatsen "}, {value:"Vleermuizen - waarnemingen | 366", label:"Vleermuizen - waarnemingen "}, {value:"30km/u in de stad | 469", label:"30km/u in de stad "}, {value:"Fietsnetten | 395", label:"Fietsnetten "}, {value:"Langzaam Verkeer Monitoringssysteem | 431", label:"Langzaam Verkeer Monitoringssysteem "}, {value:"Milieuzones autotaxitouringcar | 659", label:"Milieuzones autotaxitouringcar "}, {value:"Milieuzones uitstootvrij bromsnorfiets | 591", label:"Milieuzones uitstootvrij bromsnorfiets "}, {value:"Milieuzones uitstootvrij pleziervaart | 658", label:"Milieuzones uitstootvrij pleziervaart "}, {value:"Milieuzones uitstootvrij vrachtbestel | 657", label:"Milieuzones uitstootvrij vrachtbestel "}, {value:"Milieuzones vrachtbestel | 660", label:"Milieuzones vrachtbestel "}, {value:"Openbare verlichting | 510", label:"Openbare verlichting "}, {value:"Parkeerdruk - buurten | 375", label:"Parkeerdruk - buurten "}, {value:"Parkeerdruk - straten | 374", label:"Parkeerdruk - straten "}, {value:"Parkeernormen Auto | 239", label:"Parkeernormen Auto "}, {value:"Plusnetten Voetgangersgebied | 84", label:"Plusnetten Voetgangersgebied "}, {value:"Plusnetten en Hoofdnetten | 233", label:"Plusnetten en Hoofdnetten "}, {value:"Tram- en metrolijnen | 648", label:"Tram- en metrolijnen "}, {value:"Tramhaltes en metrostations | 649", label:"Tramhaltes en metrostations "}, {value:"Verkeersinformatiesystemen | 182", label:"Verkeersinformatiesystemen "}, {value:"Verkeerslichten | 61", label:"Verkeerslichten "}, {value:"Verkeersprognoses | 253", label:"Verkeersprognoses "}, {value:"Zebrapaden | 590", label:"Zebrapaden "}, {value:"Amsterdam onder vuur in WOII | 100", label:"Amsterdam onder vuur in WOII "}, {value:"Beschermde stads- en dorpsgezichten | 125", label:"Beschermde stads- en dorpsgezichten "}, {value:"Cultuurhistorische verkenningen | 126", label:"Cultuurhistorische verkenningen "}, {value:"Gangen en Sloppen | 378", label:"Gangen en Sloppen "}, {value:"Groene monumenten | 504", label:"Groene monumenten "}, {value:"Historische bebouwing | 118", label:"Historische bebouwing "}, {value:"Monumenten - punt | 610", label:"Monumenten - punt "}, {value:"Monumenten - vlak | 609", label:"Monumenten - vlak "}, {value:"Ordekaart AUP Bruggen | 363", label:"Ordekaart AUP Bruggen "}, {value:"Ordekaart AUP Gebouwen | 69", label:"Ordekaart AUP Gebouwen "}, {value:"Ordekaart Centrum Bruggen | 404", label:"Ordekaart Centrum Bruggen "}, {value:"Ordekaart Centrum Gebouwen | 154", label:"Ordekaart Centrum Gebouwen "}, {value:"Ordekaart Gordel 20-40 Bruggen | 403", label:"Ordekaart Gordel 20-40 Bruggen "}, {value:"Ordekaart Gordel 20-40 Gebouwen | 401", label:"Ordekaart Gordel 20-40 Gebouwen "}, {value:"Ordekaart Ring 1900 Bruggen | 402", label:"Ordekaart Ring 1900 Bruggen "}, {value:"Ordekaart Ring 1900 Gebouwen | 400", label:"Ordekaart Ring 1900 Gebouwen "}, {value:"Ordekaart Zones Ring en Gordel | 549", label:"Ordekaart Zones Ring en Gordel "}, {value:"Wandkunst | 272", label:"Wandkunst "}, {value:"Werelderfgoed | 643", label:"Werelderfgoed "}, {value:"Aanpak Noord | 565", label:"Aanpak Noord "}, {value:"Afvalcontainers | 415", label:"Afvalcontainers "}, {value:"Barbecue | 319", label:"Barbecue "}, {value:"Buurtcompost | 228", label:"Buurtcompost "}, {value:"Gezonde MBO - aanbieders | 507", label:"Gezonde MBO - aanbieders "}, {value:"Gezonde MBO - scholen | 506", label:"Gezonde MBO - scholen "}, {value:"Honden uitren- en verbodsgebieden | 245", label:"Honden uitren- en verbodsgebieden "}, {value:"Hondenspeelplaatsen | 361", label:"Hondenspeelplaatsen "}, {value:"Kinder/stadsboerderijen | 258", label:"Kinder/stadsboerderijen "}, {value:"Kunst en cultuur | 607", label:"Kunst en cultuur "}, {value:"Maatschappelijke voorzieningen | 608", label:"Maatschappelijke voorzieningen "}, {value:"Markten | 123", label:"Markten "}, {value:"Markten - Straathandel | 405", label:"Markten - Straathandel "}, {value:"Openbare toiletten | 240", label:"Openbare toiletten "}, {value:"Stadslandbouw (locaties) | 62", label:"Stadslandbouw (locaties) "}, {value:"Stadslandbouw (terreinen) | 76", label:"Stadslandbouw (terreinen) "}, {value:"Toegankelijke speelvoorzieningen | 386", label:"Toegankelijke speelvoorzieningen "}, {value:"Tuinkorven | 440", label:"Tuinkorven "}, {value:"Verkiezingen Europarlement 2019 | 282", label:"Verkiezingen Europarlement 2019 "}, {value:"Verkiezingen Gemeenteraad 2018 | 250", label:"Verkiezingen Gemeenteraad 2018 "}, {value:"Verkiezingen Gemeenteraad 2022 | 407", label:"Verkiezingen Gemeenteraad 2022 "}, {value:"Verkiezingen Gemeenteraad 2026 | 645", label:"Verkiezingen Gemeenteraad 2026 "}, {value:"Verkiezingen Gemeenteraad 2026 Zaanstad | 585", label:"Verkiezingen Gemeenteraad 2026 Zaanstad "}, {value:"Verkiezingen Provinciale Staten 2019 | 280", label:"Verkiezingen Provinciale Staten 2019 "}, {value:"Verkiezingen Provinciale Staten 2023 | 478", label:"Verkiezingen Provinciale Staten 2023 "}, {value:"Verkiezingen Tweede Kamer 2017 | 217", label:"Verkiezingen Tweede Kamer 2017 "}, {value:"Verkiezingen Tweede Kamer 2021 | 370", label:"Verkiezingen Tweede Kamer 2021 "}, {value:"Verkiezingen Tweede Kamer 2023 | 524", label:"Verkiezingen Tweede Kamer 2023 "}, {value:"Verkiezingen Tweede Kamer 2025 | 624", label:"Verkiezingen Tweede Kamer 2025 "}, {value:"Voedselinitiatieven | 642", label:"Voedselinitiatieven "}, {value:"Vondelpark zitbanken | 248", label:"Vondelpark zitbanken "}, {value:"Winkelgebieden | 460", label:"Winkelgebieden "}, {value:"Zwemwater | 218", label:"Zwemwater "}, {value:"Amsterdam Buurten | 198", label:"Amsterdam Buurten "}, {value:"Amsterdam Buurten excl.water | 199", label:"Amsterdam Buurten excl.water "}, {value:"Amsterdam Gebieden | 204", label:"Amsterdam Gebieden "}, {value:"Amsterdam Gebieden excl.water | 205", label:"Amsterdam Gebieden excl.water "}, {value:"Amsterdam Gemeente | 541", label:"Amsterdam Gemeente "}, {value:"Amsterdam Gemeente excl.water | 652", label:"Amsterdam Gemeente excl.water "}, {value:"Amsterdam Stadsdelen | 202", label:"Amsterdam Stadsdelen "}, {value:"Amsterdam Stadsdelen excl.water | 203", label:"Amsterdam Stadsdelen excl.water "}, {value:"Amsterdam Wijken | 200", label:"Amsterdam Wijken "}, {value:"Amsterdam Wijken excl.water | 201", label:"Amsterdam Wijken excl.water "}, {value:"Hoe groot is Amsterdam | 166", label:"Hoe groot is Amsterdam "}, {value:"MRA gemeenten | 445", label:"MRA gemeenten "}, {value:"MRA gemeenten excl.water | 446", label:"MRA gemeenten excl.water "}, {value:"Postcode4-buurten | 192", label:"Postcode4-buurten "}, {value:"Postcode4-buurten excl. water | 193", label:"Postcode4-buurten excl. water "}, {value:"Postcode6 punten MRA | 461", label:"Postcode6 punten MRA "}, {value:"Postcode6-vlakken BAG | 191", label:"Postcode6-vlakken BAG "}, {value:"Straatnamen | 303", label:"Straatnamen "}, {value:"VRA Buurten | 496", label:"VRA Buurten "}, {value:"VRA Gemeenten | 490", label:"VRA Gemeenten "}, {value:"VRA Gemeenten excl.water | 491", label:"VRA Gemeenten excl.water "}, {value:"VRA Wijken | 497", label:"VRA Wijken "}];
+
+			var isTouch = is_touch_device(); function is_touch_device() {return 'ontouchstart' in window || navigator.maxTouchPoints;} 
+			var deVorigeKlik , geOpend = false;
+			function doeZoekTitel(pID) {$("#"+pID).trigger('click'); $("#menucontainer button").each(function() {if ($(this).attr('aria-expanded') == 'true') $(this).trigger('click');}); $("#"+pID).parent().prev().trigger('click');}
+			function doeTelZipLink(pTabel) {$.post("countzip.php", {TABEL : pTabel});	}
+			
+			function doeKeuze(deID) {
+				$.post("haal.meta.php",{ID:deID}, function(data) {
+					if (data) {	
+						if (deVorigeKlik) {deVorigeKlik.removeClass('klik'); deVorigeKlik.attr('aria-current', 'false');} $("#"+deID).addClass('klik'); $("#"+deID).attr('aria-current', 'true');deVorigeKlik = $("#"+deID);
+						for (n = 1; n <= 10; n++) {$("#metatabel tr:nth-of-type("+n+") td:nth-of-type(2)").html(data[n-1]);}
+						$("#excel").attr('href', 'https://maps.amsterdam.nl/open_geodata/excel.php?KAARTLAAG='+data[0]+'&THEMA='+ data[11]);
+						$("#json1").attr('href', 'https://maps.amsterdam.nl/open_geodata/geojson_lnglat.php?KAARTLAAG='+data[0]+'&THEMA='+ data[11]);
+						$("#mif").attr('href', 'https://maps.amsterdam.nl/open_geodata/mif.php?KAARTLAAG='+data[0]+'&THEMA='+ data[11]);
+						$("#mid").attr('href', 'https://maps.amsterdam.nl/open_geodata/mid.php?KAARTLAAG='+data[0]+'&THEMA='+ data[11]);
+						$("#zip").attr('href', 'https://maps.amsterdam.nl/'+data[11]+'/'+ data[12]);			
+						$("#wfs").attr('href', data[12]);
+						$("#wms").attr('href', data[12]);
+						$(".hidden_zip").hide(); $(".hidden_csv").hide(); $(".hidden_wfs").hide(); $(".hidden_wms").hide();
+						if ( data[10] == 'csv') $(".hidden_csv").show(); else if ( data[10] == 'wfs') $(".hidden_wfs").show(); else if ( data[10] == 'wms') $(".hidden_wms").show(); else $(".hidden_zip").show();
+						$("#metacontainer").show();			
+						$("#zip, #wfs, #wms").attr('onclick', 'doeTelZipLink("'+ data[0]+'")');
+					}
+				}, 'json');
+			}
+
+			function doePlus(pItem, pOpen) {
+				if (pItem != 'uit' && isTouch && !pOpen) {geOpend = false; return;} if (pItem != 'uit' && $("#"+pItem).hasClass('onderstreep')) return; if (pItem != 'uit' && geOpend) { geOpend = false; return;}
+				$("#plus").hide(); 
+				$("#n1").hide(); $("#nav1").attr('aria-expanded', 'false');
+				$("#n2").hide(); $("#nav2").attr('aria-expanded', 'false');
+				$("nav button").each(function() {$(this).removeClass('onderstreep');})
+				if (pItem != 'uit') {$("#"+pItem).attr('aria-expanded', 'true'); $("#"+pItem).addClass('onderstreep'); $("#plus ."+pItem).show(); $("#plus").css('display', 'flex'); }
+			}
+
+			$(document).ready(function() {
+				$("#plus").hide();
+				$("#zoekmap").autocomplete({source: deTitelLijst, select: function( event, ui ) {doeZoekTitel(ui.item.value.split(" | ")[1]); this.value = ""; return false;}});
+				$("#zoekmap2").autocomplete({source: deTitelLijst, select: function( event, ui ) {doeZoekTitel(ui.item.value.split(" | ")[1]); this.value = ""; return false;}});
+				$("#hoofd button.cat").each(function(){
+					$(this).click(function(){
+						if ($(this).find('span').hasClass('down')) {
+							$(this).find('span').addClass('up').removeClass('down'); $(this).attr('aria-expanded', 'true');
+							$(this).next().show(); 
+						}
+						else {
+							$(this).find('span').addClass('down').removeClass('up'); $(this).attr('aria-expanded', 'false');
+							$(this).next().hide(); 
+						}
+					});	
+				});	
+				$("nav button").each(function() {
+					$(this).on("click", function() {
+						if ($(this).hasClass('onderstreep')) {
+							if ($(this).attr('id') == 'nav1') window.open('https://maps.amsterdam.nl/open_geodata/terms.php', '_blank');
+							if ($(this).attr('id') == 'nav2') window.open('https://maps.amsterdam.nl/', '_blank');
+							doePlus("uit", false); geOpend = true;
+						}
+						else doePlus($(this).attr('id'), true);
+					});
+					$(this).on("keydown", function(event) {if (event.key === 'Escape') doePlus("uit", false);});
+				});
+				$("#zoekmap").click(function(){$("#zoekmap").val("");});
+				$("#zoekmap2").click(function(){$("#zoekmap2").val("");});
+//				$("#hoofd li.dataset").click(function() {if (deVorigeKlik) {deVorigeKlik.removeClass('klik'); deVorigeKlik.attr('aria-current', 'false');} $(this).addClass('klik'); $(this).attr('aria-current', 'true');deVorigeKlik = $(this);});
+								jQuery.ui.autocomplete.prototype._resizeMenu = function () {var ul = this.menu.element; ul.outerWidth(this.element.outerWidth()); }		
+
+				
+			});			
+		// ]]>
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class='marge'></div>
+			<div class='blad flex'>
+				<div class="logo"><img alt= "" src="/_img/andreas.svg"><a href='https://www.amsterdam.nl/' target='_blank'>Gemeente<br>Amsterdam</a></div>
+				<h1>Maps Data</h1>
+			</div>
+			<div class='marge'></div>
+		</header>
+		<nav>
+			<div class='marge'></div>
+			<div class='blad flex'>
+				<span id='buttons'>
+					<button type='button' id='nav1' onmouseover='doePlus("nav1", false)' onmouseout='doePlus("uit", false)' onfocus='doePlus("nav1", false)' onblur='doePlus("uit", false)' aria-controls='n1' aria-expanded='false'>Gebruiksvoorwaarden</button>				
+					<button type='button' id='nav2' onmouseover='doePlus("nav2", false)' onmouseout='doePlus("uit", false)' onfocus='doePlus("nav2", false)' onblur='doePlus("uit", false)' aria-controls='n2' aria-expanded='false'>Maps Amsterdam</button>
+				</span>
+				<label class="screen-reader-text" for="zoekmap">Zoek een dataset</label><input id="zoekmap" type="text" placeholder="Zoek een dataset">					
+			</div>
+			<div class='marge'></div>
+		</nav>
+		<nav id="plus">
+			<div class='marge'></div>
+			<div class='blad'>
+				<div id='n1' class="nav1">Als u een Maps Dataset van de Gemeente Amsterdam downloadt, gaat u akkoord met de Gebruiksvoorwaarden.<br>De Gebruiksvoorwaarden zijn bedoeld om de betrokkenheid van de Gemeente bij open geodata te promoten, haar positie daarin te beschermen en u op de hoogte te stellen van de mogelijkheden en beperkingen van het gebruik van de dataset.</div>			
+				<div id='n2' class="nav2">De kaartenviewer Maps Amsterdam bevat een groot aantal interactieve themakaarten vanuit de ruimtelijke sector van de Gemeente Amsterdam.</div>
+			</div>
+			<div class='marge'></div>
+		</nav>			
+
+		<main>
+			<div class='marge'></div>
+			<div class='blad flex'>
+				<div id="hoofd">
+					
+
+<button type='button' class='cat' aria-label='Nieuw & Actueel' aria-controls='cat1' aria-expanded='false'>Nieuw & Actueel<span class='updown down'></span></button>
+<ul id='cat1' style='display: none'>
+<li class='dataset' id='561' aria-current='false' tabindex='0' onclick='doeKeuze(561)' onkeypress='doeKeuze(561)' >Bijzondere bomen</li>
+<li class='dataset' id='49' aria-current='false' tabindex='0' onclick='doeKeuze(49)' onkeypress='doeKeuze(49)' >Niet-woonfuncties (Functiekaart)</li>
+<li class='dataset' id='663' aria-current='false' tabindex='0' onclick='doeKeuze(663)' onkeypress='doeKeuze(663)' >Sport - binnenlocaties</li>
+<li class='dataset' id='622' aria-current='false' tabindex='0' onclick='doeKeuze(622)' onkeypress='doeKeuze(622)' >Sport - parken</li>
+<li class='dataset' id='56' aria-current='false' tabindex='0' onclick='doeKeuze(56)' onkeypress='doeKeuze(56)' >Sport - toestellen</li>
+<li class='dataset' id='662' aria-current='false' tabindex='0' onclick='doeKeuze(662)' onkeypress='doeKeuze(662)' >Sport - velden</li>
+<li class='dataset' id='664' aria-current='false' tabindex='0' onclick='doeKeuze(664)' onkeypress='doeKeuze(664)' >Sport - zwembaden</li>
+<li class='dataset' id='628' aria-current='false' tabindex='0' onclick='doeKeuze(628)' onkeypress='doeKeuze(628)' >Uitvoeringsprogramma Stadsregie</li>
+<li class='dataset' id='173' aria-current='false' tabindex='0' onclick='doeKeuze(173)' onkeypress='doeKeuze(173)' >Welstand - Niveaus</li>
+<li class='dataset' id='174' aria-current='false' tabindex='0' onclick='doeKeuze(174)' onkeypress='doeKeuze(174)' >Welstand - Systemen</li>
+<li class='dataset' id='473' aria-current='false' tabindex='0' onclick='doeKeuze(473)' onkeypress='doeKeuze(473)' >Welstand - Transformatie</li>
+<li class='dataset' id='142' aria-current='false' tabindex='0' onclick='doeKeuze(142)' onkeypress='doeKeuze(142)' >Woningbouwplannen</li>
+</ul>
+
+<button type='button' class='cat' aria-label='Stedelijkheid & Wonen' aria-controls='cat2' aria-expanded='false'>Stedelijkheid & Wonen<span class='updown down'></span></button>
+<ul id='cat2' style='display: none'>
+<li class='dataset' id='396' aria-current='false' tabindex='0' onclick='doeKeuze(396)' onkeypress='doeKeuze(396)' >Architectuurprijzen Arcam</li>
+<li class='dataset' id='487' aria-current='false' tabindex='0' onclick='doeKeuze(487)' onkeypress='doeKeuze(487)' >Bestemmingsplannen vervangen</li>
+<li class='dataset' id='566' aria-current='false' tabindex='0' onclick='doeKeuze(566)' onkeypress='doeKeuze(566)' >Bestemmingsplannen vervangen overkoepelend</li>
+<li class='dataset' id='362' aria-current='false' tabindex='0' onclick='doeKeuze(362)' onkeypress='doeKeuze(362)' >Bouwjaar blok</li>
+<li class='dataset' id='447' aria-current='false' tabindex='0' onclick='doeKeuze(447)' onkeypress='doeKeuze(447)' >Bouwjaar pand</li>
+<li class='dataset' id='581' aria-current='false' tabindex='0' onclick='doeKeuze(581)' onkeypress='doeKeuze(581)' >Corporatiebezit AFWC 2019</li>
+<li class='dataset' id='580' aria-current='false' tabindex='0' onclick='doeKeuze(580)' onkeypress='doeKeuze(580)' >Corporatiebezit AFWC 2020</li>
+<li class='dataset' id='579' aria-current='false' tabindex='0' onclick='doeKeuze(579)' onkeypress='doeKeuze(579)' >Corporatiebezit AFWC 2021</li>
+<li class='dataset' id='578' aria-current='false' tabindex='0' onclick='doeKeuze(578)' onkeypress='doeKeuze(578)' >Corporatiebezit AFWC 2022</li>
+<li class='dataset' id='208' aria-current='false' tabindex='0' onclick='doeKeuze(208)' onkeypress='doeKeuze(208)' >Corporatiebezit AFWC 2023</li>
+<li class='dataset' id='586' aria-current='false' tabindex='0' onclick='doeKeuze(586)' onkeypress='doeKeuze(586)' >Corporatiebezit AFWC 2024</li>
+<li class='dataset' id='627' aria-current='false' tabindex='0' onclick='doeKeuze(627)' onkeypress='doeKeuze(627)' >Corporatiebezit AFWC 2025</li>
+<li class='dataset' id='310' aria-current='false' tabindex='0' onclick='doeKeuze(310)' onkeypress='doeKeuze(310)' >Functiemix</li>
+<li class='dataset' id='441' aria-current='false' tabindex='0' onclick='doeKeuze(441)' onkeypress='doeKeuze(441)' >Functiemix buurten</li>
+<li class='dataset' id='508' aria-current='false' tabindex='0' onclick='doeKeuze(508)' onkeypress='doeKeuze(508)' >Hoogbouw - punten</li>
+<li class='dataset' id='509' aria-current='false' tabindex='0' onclick='doeKeuze(509)' onkeypress='doeKeuze(509)' >Hoogbouw - vlakken</li>
+<li class='dataset' id='242' aria-current='false' tabindex='0' onclick='doeKeuze(242)' onkeypress='doeKeuze(242)' >Oergeul</li>
+<li class='dataset' id='243' aria-current='false' tabindex='0' onclick='doeKeuze(243)' onkeypress='doeKeuze(243)' >Oergeul - sonderingen</li>
+<li class='dataset' id='52' aria-current='false' tabindex='0' onclick='doeKeuze(52)' onkeypress='doeKeuze(52)' >Woningwaarde 2002-2019 (zip)</li>
+<li class='dataset' id='393' aria-current='false' tabindex='0' onclick='doeKeuze(393)' onkeypress='doeKeuze(393)' >Woningwaarde 2020</li>
+<li class='dataset' id='399' aria-current='false' tabindex='0' onclick='doeKeuze(399)' onkeypress='doeKeuze(399)' >Woningwaarde 2021</li>
+<li class='dataset' id='472' aria-current='false' tabindex='0' onclick='doeKeuze(472)' onkeypress='doeKeuze(472)' >Woningwaarde 2022</li>
+<li class='dataset' id='589' aria-current='false' tabindex='0' onclick='doeKeuze(589)' onkeypress='doeKeuze(589)' >Woningwaarde 2023</li>
+<li class='dataset' id='596' aria-current='false' tabindex='0' onclick='doeKeuze(596)' onkeypress='doeKeuze(596)' >Woningwaarde 2024</li>
+<li class='dataset' id='641' aria-current='false' tabindex='0' onclick='doeKeuze(641)' onkeypress='doeKeuze(641)' >Woningwaarde 2025</li>
+<li class='dataset' id='60' aria-current='false' tabindex='0' onclick='doeKeuze(60)' onkeypress='doeKeuze(60)' >Zelfbouwkavels</li>
+</ul>
+
+<button type='button' class='cat' aria-label='Energie & Duurzaamheid' aria-controls='cat3' aria-expanded='false'>Energie & Duurzaamheid<span class='updown down'></span></button>
+<ul id='cat3' style='display: none'>
+<li class='dataset' id='483' aria-current='false' tabindex='0' onclick='doeKeuze(483)' onkeypress='doeKeuze(483)' >Aardgasvrij</li>
+<li class='dataset' id='488' aria-current='false' tabindex='0' onclick='doeKeuze(488)' onkeypress='doeKeuze(488)' >Aardgasvrij - initiatieven</li>
+<li class='dataset' id='57' aria-current='false' tabindex='0' onclick='doeKeuze(57)' onkeypress='doeKeuze(57)' >Bodemkwaliteit</li>
+<li class='dataset' id='51' aria-current='false' tabindex='0' onclick='doeKeuze(51)' onkeypress='doeKeuze(51)' >Groene en multifunctionele daken</li>
+<li class='dataset' id='317' aria-current='false' tabindex='0' onclick='doeKeuze(317)' onkeypress='doeKeuze(317)' >Klimaat - Droogte</li>
+<li class='dataset' id='318' aria-current='false' tabindex='0' onclick='doeKeuze(318)' onkeypress='doeKeuze(318)' >Klimaat - Overstroming</li>
+<li class='dataset' id='331' aria-current='false' tabindex='0' onclick='doeKeuze(331)' onkeypress='doeKeuze(331)' >NO2 metingen 4-weken</li>
+<li class='dataset' id='307' aria-current='false' tabindex='0' onclick='doeKeuze(307)' onkeypress='doeKeuze(307)' >NO2 metingen jaren</li>
+<li class='dataset' id='308' aria-current='false' tabindex='0' onclick='doeKeuze(308)' onkeypress='doeKeuze(308)' >NO2 metingen locaties</li>
+<li class='dataset' id='588' aria-current='false' tabindex='0' onclick='doeKeuze(588)' onkeypress='doeKeuze(588)' >Platte daken</li>
+<li class='dataset' id='290' aria-current='false' tabindex='0' onclick='doeKeuze(290)' onkeypress='doeKeuze(290)' >Rainproof - Hoog grondwater</li>
+<li class='dataset' id='289' aria-current='false' tabindex='0' onclick='doeKeuze(289)' onkeypress='doeKeuze(289)' >Rainproof - Hydro-eenheden</li>
+<li class='dataset' id='288' aria-current='false' tabindex='0' onclick='doeKeuze(288)' onkeypress='doeKeuze(288)' >Rainproof - Knelpunten</li>
+<li class='dataset' id='291' aria-current='false' tabindex='0' onclick='doeKeuze(291)' onkeypress='doeKeuze(291)' >Rainproof - Polderriool</li>
+<li class='dataset' id='224' aria-current='false' tabindex='0' onclick='doeKeuze(224)' onkeypress='doeKeuze(224)' >Stadswarmtekoude</li>
+<li class='dataset' id='372' aria-current='false' tabindex='0' onclick='doeKeuze(372)' onkeypress='doeKeuze(372)' >Windzoekgebieden</li>
+<li class='dataset' id='548' aria-current='false' tabindex='0' onclick='doeKeuze(548)' onkeypress='doeKeuze(548)' >Windzoekgebieden - windmolens</li>
+<li class='dataset' id='251' aria-current='false' tabindex='0' onclick='doeKeuze(251)' onkeypress='doeKeuze(251)' >Zonnepanelen</li>
+<li class='dataset' id='320' aria-current='false' tabindex='0' onclick='doeKeuze(320)' onkeypress='doeKeuze(320)' >Zonnepanelen op erfgoed</li>
+</ul>
+
+<button type='button' class='cat' aria-label='Groen & Natuur' aria-controls='cat4' aria-expanded='false'>Groen & Natuur<span class='updown down'></span></button>
+<ul id='cat4' style='display: none'>
+<li class='dataset' id='87' aria-current='false' tabindex='0' onclick='doeKeuze(87)' onkeypress='doeKeuze(87)' >Broedende vogels</li>
+<li class='dataset' id='75' aria-current='false' tabindex='0' onclick='doeKeuze(75)' onkeypress='doeKeuze(75)' >Ecologische structuur</li>
+<li class='dataset' id='63' aria-current='false' tabindex='0' onclick='doeKeuze(63)' onkeypress='doeKeuze(63)' >Ecopassages</li>
+<li class='dataset' id='493' aria-current='false' tabindex='0' onclick='doeKeuze(493)' onkeypress='doeKeuze(493)' >Eikenprocessierups</li>
+<li class='dataset' id='312' aria-current='false' tabindex='0' onclick='doeKeuze(312)' onkeypress='doeKeuze(312)' >Hoofdbomenstructuur - buffer</li>
+<li class='dataset' id='55' aria-current='false' tabindex='0' onclick='doeKeuze(55)' onkeypress='doeKeuze(55)' >Hoofdgroenstructuur</li>
+<li class='dataset' id='106' aria-current='false' tabindex='0' onclick='doeKeuze(106)' onkeypress='doeKeuze(106)' >Muurflora</li>
+<li class='dataset' id='99' aria-current='false' tabindex='0' onclick='doeKeuze(99)' onkeypress='doeKeuze(99)' >Park, plantsoen, recreatief groen</li>
+<li class='dataset' id='422' aria-current='false' tabindex='0' onclick='doeKeuze(422)' onkeypress='doeKeuze(422)' >Parkvogels - aantal/vlak</li>
+<li class='dataset' id='424' aria-current='false' tabindex='0' onclick='doeKeuze(424)' onkeypress='doeKeuze(424)' >Parkvogels - koloniebroeders</li>
+<li class='dataset' id='423' aria-current='false' tabindex='0' onclick='doeKeuze(423)' onkeypress='doeKeuze(423)' >Parkvogels - rode lijst</li>
+<li class='dataset' id='574' aria-current='false' tabindex='0' onclick='doeKeuze(574)' onkeypress='doeKeuze(574)' >Ringslang - locaties</li>
+<li class='dataset' id='108' aria-current='false' tabindex='0' onclick='doeKeuze(108)' onkeypress='doeKeuze(108)' >TAC-adviezen Hoofdgroenstructuur</li>
+<li class='dataset' id='364' aria-current='false' tabindex='0' onclick='doeKeuze(364)' onkeypress='doeKeuze(364)' >Vleermuizen - batlogger</li>
+<li class='dataset' id='367' aria-current='false' tabindex='0' onclick='doeKeuze(367)' onkeypress='doeKeuze(367)' >Vleermuizen - trajecten</li>
+<li class='dataset' id='365' aria-current='false' tabindex='0' onclick='doeKeuze(365)' onkeypress='doeKeuze(365)' >Vleermuizen - verblijfsplaatsen</li>
+<li class='dataset' id='366' aria-current='false' tabindex='0' onclick='doeKeuze(366)' onkeypress='doeKeuze(366)' >Vleermuizen - waarnemingen</li>
+</ul>
+
+<button type='button' class='cat' aria-label='Verkeer & Infrastructuur' aria-controls='cat5' aria-expanded='false'>Verkeer & Infrastructuur<span class='updown down'></span></button>
+<ul id='cat5' style='display: none'>
+<li class='dataset' id='469' aria-current='false' tabindex='0' onclick='doeKeuze(469)' onkeypress='doeKeuze(469)' >30km/u in de stad</li>
+<li class='dataset' id='395' aria-current='false' tabindex='0' onclick='doeKeuze(395)' onkeypress='doeKeuze(395)' >Fietsnetten</li>
+<li class='dataset' id='431' aria-current='false' tabindex='0' onclick='doeKeuze(431)' onkeypress='doeKeuze(431)' >Langzaam Verkeer Monitoringssysteem</li>
+<li class='dataset' id='659' aria-current='false' tabindex='0' onclick='doeKeuze(659)' onkeypress='doeKeuze(659)' >Milieuzones autotaxitouringcar</li>
+<li class='dataset' id='591' aria-current='false' tabindex='0' onclick='doeKeuze(591)' onkeypress='doeKeuze(591)' >Milieuzones uitstootvrij bromsnorfiets</li>
+<li class='dataset' id='658' aria-current='false' tabindex='0' onclick='doeKeuze(658)' onkeypress='doeKeuze(658)' >Milieuzones uitstootvrij pleziervaart</li>
+<li class='dataset' id='657' aria-current='false' tabindex='0' onclick='doeKeuze(657)' onkeypress='doeKeuze(657)' >Milieuzones uitstootvrij vrachtbestel</li>
+<li class='dataset' id='660' aria-current='false' tabindex='0' onclick='doeKeuze(660)' onkeypress='doeKeuze(660)' >Milieuzones vrachtbestel</li>
+<li class='dataset' id='510' aria-current='false' tabindex='0' onclick='doeKeuze(510)' onkeypress='doeKeuze(510)' >Openbare verlichting</li>
+<li class='dataset' id='375' aria-current='false' tabindex='0' onclick='doeKeuze(375)' onkeypress='doeKeuze(375)' >Parkeerdruk - buurten</li>
+<li class='dataset' id='374' aria-current='false' tabindex='0' onclick='doeKeuze(374)' onkeypress='doeKeuze(374)' >Parkeerdruk - straten</li>
+<li class='dataset' id='239' aria-current='false' tabindex='0' onclick='doeKeuze(239)' onkeypress='doeKeuze(239)' >Parkeernormen Auto</li>
+<li class='dataset' id='84' aria-current='false' tabindex='0' onclick='doeKeuze(84)' onkeypress='doeKeuze(84)' >Plusnetten Voetgangersgebied</li>
+<li class='dataset' id='233' aria-current='false' tabindex='0' onclick='doeKeuze(233)' onkeypress='doeKeuze(233)' >Plusnetten en Hoofdnetten</li>
+<li class='dataset' id='648' aria-current='false' tabindex='0' onclick='doeKeuze(648)' onkeypress='doeKeuze(648)' >Tram- en metrolijnen</li>
+<li class='dataset' id='649' aria-current='false' tabindex='0' onclick='doeKeuze(649)' onkeypress='doeKeuze(649)' >Tramhaltes en metrostations</li>
+<li class='dataset' id='182' aria-current='false' tabindex='0' onclick='doeKeuze(182)' onkeypress='doeKeuze(182)' >Verkeersinformatiesystemen</li>
+<li class='dataset' id='61' aria-current='false' tabindex='0' onclick='doeKeuze(61)' onkeypress='doeKeuze(61)' >Verkeerslichten</li>
+<li class='dataset' id='253' aria-current='false' tabindex='0' onclick='doeKeuze(253)' onkeypress='doeKeuze(253)' >Verkeersprognoses</li>
+<li class='dataset' id='590' aria-current='false' tabindex='0' onclick='doeKeuze(590)' onkeypress='doeKeuze(590)' >Zebrapaden</li>
+</ul>
+
+<button type='button' class='cat' aria-label='Historie & Architectuur' aria-controls='cat6' aria-expanded='false'>Historie & Architectuur<span class='updown down'></span></button>
+<ul id='cat6' style='display: none'>
+<li class='dataset' id='100' aria-current='false' tabindex='0' onclick='doeKeuze(100)' onkeypress='doeKeuze(100)' >Amsterdam onder vuur in WOII</li>
+<li class='dataset' id='125' aria-current='false' tabindex='0' onclick='doeKeuze(125)' onkeypress='doeKeuze(125)' >Beschermde stads- en dorpsgezichten</li>
+<li class='dataset' id='126' aria-current='false' tabindex='0' onclick='doeKeuze(126)' onkeypress='doeKeuze(126)' >Cultuurhistorische verkenningen</li>
+<li class='dataset' id='378' aria-current='false' tabindex='0' onclick='doeKeuze(378)' onkeypress='doeKeuze(378)' >Gangen en Sloppen</li>
+<li class='dataset' id='504' aria-current='false' tabindex='0' onclick='doeKeuze(504)' onkeypress='doeKeuze(504)' >Groene monumenten</li>
+<li class='dataset' id='118' aria-current='false' tabindex='0' onclick='doeKeuze(118)' onkeypress='doeKeuze(118)' >Historische bebouwing</li>
+<li class='dataset' id='610' aria-current='false' tabindex='0' onclick='doeKeuze(610)' onkeypress='doeKeuze(610)' >Monumenten - punt</li>
+<li class='dataset' id='609' aria-current='false' tabindex='0' onclick='doeKeuze(609)' onkeypress='doeKeuze(609)' >Monumenten - vlak</li>
+<li class='dataset' id='363' aria-current='false' tabindex='0' onclick='doeKeuze(363)' onkeypress='doeKeuze(363)' >Ordekaart AUP Bruggen</li>
+<li class='dataset' id='69' aria-current='false' tabindex='0' onclick='doeKeuze(69)' onkeypress='doeKeuze(69)' >Ordekaart AUP Gebouwen</li>
+<li class='dataset' id='404' aria-current='false' tabindex='0' onclick='doeKeuze(404)' onkeypress='doeKeuze(404)' >Ordekaart Centrum Bruggen</li>
+<li class='dataset' id='154' aria-current='false' tabindex='0' onclick='doeKeuze(154)' onkeypress='doeKeuze(154)' >Ordekaart Centrum Gebouwen</li>
+<li class='dataset' id='403' aria-current='false' tabindex='0' onclick='doeKeuze(403)' onkeypress='doeKeuze(403)' >Ordekaart Gordel 20-40 Bruggen</li>
+<li class='dataset' id='401' aria-current='false' tabindex='0' onclick='doeKeuze(401)' onkeypress='doeKeuze(401)' >Ordekaart Gordel 20-40 Gebouwen</li>
+<li class='dataset' id='402' aria-current='false' tabindex='0' onclick='doeKeuze(402)' onkeypress='doeKeuze(402)' >Ordekaart Ring 1900 Bruggen</li>
+<li class='dataset' id='400' aria-current='false' tabindex='0' onclick='doeKeuze(400)' onkeypress='doeKeuze(400)' >Ordekaart Ring 1900 Gebouwen</li>
+<li class='dataset' id='549' aria-current='false' tabindex='0' onclick='doeKeuze(549)' onkeypress='doeKeuze(549)' >Ordekaart Zones Ring en Gordel</li>
+<li class='dataset' id='272' aria-current='false' tabindex='0' onclick='doeKeuze(272)' onkeypress='doeKeuze(272)' >Wandkunst</li>
+<li class='dataset' id='643' aria-current='false' tabindex='0' onclick='doeKeuze(643)' onkeypress='doeKeuze(643)' >Werelderfgoed</li>
+</ul>
+
+<button type='button' class='cat' aria-label='Buurt & Voorzieningen' aria-controls='cat7' aria-expanded='false'>Buurt & Voorzieningen<span class='updown down'></span></button>
+<ul id='cat7' style='display: none'>
+<li class='dataset' id='565' aria-current='false' tabindex='0' onclick='doeKeuze(565)' onkeypress='doeKeuze(565)' >Aanpak Noord</li>
+<li class='dataset' id='415' aria-current='false' tabindex='0' onclick='doeKeuze(415)' onkeypress='doeKeuze(415)' >Afvalcontainers</li>
+<li class='dataset' id='319' aria-current='false' tabindex='0' onclick='doeKeuze(319)' onkeypress='doeKeuze(319)' >Barbecue</li>
+<li class='dataset' id='228' aria-current='false' tabindex='0' onclick='doeKeuze(228)' onkeypress='doeKeuze(228)' >Buurtcompost</li>
+<li class='dataset' id='507' aria-current='false' tabindex='0' onclick='doeKeuze(507)' onkeypress='doeKeuze(507)' >Gezonde MBO - aanbieders</li>
+<li class='dataset' id='506' aria-current='false' tabindex='0' onclick='doeKeuze(506)' onkeypress='doeKeuze(506)' >Gezonde MBO - scholen</li>
+<li class='dataset' id='245' aria-current='false' tabindex='0' onclick='doeKeuze(245)' onkeypress='doeKeuze(245)' >Honden uitren- en verbodsgebieden</li>
+<li class='dataset' id='361' aria-current='false' tabindex='0' onclick='doeKeuze(361)' onkeypress='doeKeuze(361)' >Hondenspeelplaatsen</li>
+<li class='dataset' id='258' aria-current='false' tabindex='0' onclick='doeKeuze(258)' onkeypress='doeKeuze(258)' >Kinder/stadsboerderijen</li>
+<li class='dataset' id='607' aria-current='false' tabindex='0' onclick='doeKeuze(607)' onkeypress='doeKeuze(607)' >Kunst en cultuur</li>
+<li class='dataset' id='608' aria-current='false' tabindex='0' onclick='doeKeuze(608)' onkeypress='doeKeuze(608)' >Maatschappelijke voorzieningen</li>
+<li class='dataset' id='123' aria-current='false' tabindex='0' onclick='doeKeuze(123)' onkeypress='doeKeuze(123)' >Markten</li>
+<li class='dataset' id='405' aria-current='false' tabindex='0' onclick='doeKeuze(405)' onkeypress='doeKeuze(405)' >Markten - Straathandel</li>
+<li class='dataset' id='240' aria-current='false' tabindex='0' onclick='doeKeuze(240)' onkeypress='doeKeuze(240)' >Openbare toiletten</li>
+<li class='dataset' id='62' aria-current='false' tabindex='0' onclick='doeKeuze(62)' onkeypress='doeKeuze(62)' >Stadslandbouw (locaties)</li>
+<li class='dataset' id='76' aria-current='false' tabindex='0' onclick='doeKeuze(76)' onkeypress='doeKeuze(76)' >Stadslandbouw (terreinen)</li>
+<li class='dataset' id='386' aria-current='false' tabindex='0' onclick='doeKeuze(386)' onkeypress='doeKeuze(386)' >Toegankelijke speelvoorzieningen</li>
+<li class='dataset' id='440' aria-current='false' tabindex='0' onclick='doeKeuze(440)' onkeypress='doeKeuze(440)' >Tuinkorven</li>
+<li class='dataset' id='282' aria-current='false' tabindex='0' onclick='doeKeuze(282)' onkeypress='doeKeuze(282)' >Verkiezingen Europarlement 2019</li>
+<li class='dataset' id='250' aria-current='false' tabindex='0' onclick='doeKeuze(250)' onkeypress='doeKeuze(250)' >Verkiezingen Gemeenteraad 2018</li>
+<li class='dataset' id='407' aria-current='false' tabindex='0' onclick='doeKeuze(407)' onkeypress='doeKeuze(407)' >Verkiezingen Gemeenteraad 2022</li>
+<li class='dataset' id='645' aria-current='false' tabindex='0' onclick='doeKeuze(645)' onkeypress='doeKeuze(645)' >Verkiezingen Gemeenteraad 2026</li>
+<li class='dataset' id='585' aria-current='false' tabindex='0' onclick='doeKeuze(585)' onkeypress='doeKeuze(585)' >Verkiezingen Gemeenteraad 2026 Zaanstad</li>
+<li class='dataset' id='280' aria-current='false' tabindex='0' onclick='doeKeuze(280)' onkeypress='doeKeuze(280)' >Verkiezingen Provinciale Staten 2019</li>
+<li class='dataset' id='478' aria-current='false' tabindex='0' onclick='doeKeuze(478)' onkeypress='doeKeuze(478)' >Verkiezingen Provinciale Staten 2023</li>
+<li class='dataset' id='217' aria-current='false' tabindex='0' onclick='doeKeuze(217)' onkeypress='doeKeuze(217)' >Verkiezingen Tweede Kamer 2017</li>
+<li class='dataset' id='370' aria-current='false' tabindex='0' onclick='doeKeuze(370)' onkeypress='doeKeuze(370)' >Verkiezingen Tweede Kamer 2021</li>
+<li class='dataset' id='524' aria-current='false' tabindex='0' onclick='doeKeuze(524)' onkeypress='doeKeuze(524)' >Verkiezingen Tweede Kamer 2023</li>
+<li class='dataset' id='624' aria-current='false' tabindex='0' onclick='doeKeuze(624)' onkeypress='doeKeuze(624)' >Verkiezingen Tweede Kamer 2025</li>
+<li class='dataset' id='642' aria-current='false' tabindex='0' onclick='doeKeuze(642)' onkeypress='doeKeuze(642)' >Voedselinitiatieven</li>
+<li class='dataset' id='248' aria-current='false' tabindex='0' onclick='doeKeuze(248)' onkeypress='doeKeuze(248)' >Vondelpark zitbanken</li>
+<li class='dataset' id='460' aria-current='false' tabindex='0' onclick='doeKeuze(460)' onkeypress='doeKeuze(460)' >Winkelgebieden</li>
+<li class='dataset' id='218' aria-current='false' tabindex='0' onclick='doeKeuze(218)' onkeypress='doeKeuze(218)' >Zwemwater</li>
+</ul>
+
+<button type='button' class='cat' aria-label='Gebieden' aria-controls='cat8' aria-expanded='false'>Gebieden<span class='updown down'></span></button>
+<ul id='cat8' style='display: none'>
+<li class='dataset' id='198' aria-current='false' tabindex='0' onclick='doeKeuze(198)' onkeypress='doeKeuze(198)' >Amsterdam Buurten</li>
+<li class='dataset' id='199' aria-current='false' tabindex='0' onclick='doeKeuze(199)' onkeypress='doeKeuze(199)' >Amsterdam Buurten excl.water</li>
+<li class='dataset' id='204' aria-current='false' tabindex='0' onclick='doeKeuze(204)' onkeypress='doeKeuze(204)' >Amsterdam Gebieden</li>
+<li class='dataset' id='205' aria-current='false' tabindex='0' onclick='doeKeuze(205)' onkeypress='doeKeuze(205)' >Amsterdam Gebieden excl.water</li>
+<li class='dataset' id='541' aria-current='false' tabindex='0' onclick='doeKeuze(541)' onkeypress='doeKeuze(541)' >Amsterdam Gemeente</li>
+<li class='dataset' id='652' aria-current='false' tabindex='0' onclick='doeKeuze(652)' onkeypress='doeKeuze(652)' >Amsterdam Gemeente excl.water</li>
+<li class='dataset' id='202' aria-current='false' tabindex='0' onclick='doeKeuze(202)' onkeypress='doeKeuze(202)' >Amsterdam Stadsdelen</li>
+<li class='dataset' id='203' aria-current='false' tabindex='0' onclick='doeKeuze(203)' onkeypress='doeKeuze(203)' >Amsterdam Stadsdelen excl.water</li>
+<li class='dataset' id='200' aria-current='false' tabindex='0' onclick='doeKeuze(200)' onkeypress='doeKeuze(200)' >Amsterdam Wijken</li>
+<li class='dataset' id='201' aria-current='false' tabindex='0' onclick='doeKeuze(201)' onkeypress='doeKeuze(201)' >Amsterdam Wijken excl.water</li>
+<li class='dataset' id='166' aria-current='false' tabindex='0' onclick='doeKeuze(166)' onkeypress='doeKeuze(166)' >Hoe groot is Amsterdam</li>
+<li class='dataset' id='445' aria-current='false' tabindex='0' onclick='doeKeuze(445)' onkeypress='doeKeuze(445)' >MRA gemeenten</li>
+<li class='dataset' id='446' aria-current='false' tabindex='0' onclick='doeKeuze(446)' onkeypress='doeKeuze(446)' >MRA gemeenten excl.water</li>
+<li class='dataset' id='192' aria-current='false' tabindex='0' onclick='doeKeuze(192)' onkeypress='doeKeuze(192)' >Postcode4-buurten</li>
+<li class='dataset' id='193' aria-current='false' tabindex='0' onclick='doeKeuze(193)' onkeypress='doeKeuze(193)' >Postcode4-buurten excl. water</li>
+<li class='dataset' id='461' aria-current='false' tabindex='0' onclick='doeKeuze(461)' onkeypress='doeKeuze(461)' >Postcode6 punten MRA</li>
+<li class='dataset' id='191' aria-current='false' tabindex='0' onclick='doeKeuze(191)' onkeypress='doeKeuze(191)' >Postcode6-vlakken BAG</li>
+<li class='dataset' id='303' aria-current='false' tabindex='0' onclick='doeKeuze(303)' onkeypress='doeKeuze(303)' >Straatnamen</li>
+<li class='dataset' id='496' aria-current='false' tabindex='0' onclick='doeKeuze(496)' onkeypress='doeKeuze(496)' >VRA Buurten</li>
+<li class='dataset' id='490' aria-current='false' tabindex='0' onclick='doeKeuze(490)' onkeypress='doeKeuze(490)' >VRA Gemeenten</li>
+<li class='dataset' id='491' aria-current='false' tabindex='0' onclick='doeKeuze(491)' onkeypress='doeKeuze(491)' >VRA Gemeenten excl.water</li>
+<li class='dataset' id='497' aria-current='false' tabindex='0' onclick='doeKeuze(497)' onkeypress='doeKeuze(497)' >VRA Wijken</li>
+</ul>	
+				</div>
+				<div id="metacontainer">
+					<table id="metatabel">
+						<tr><td class='veld'>Dataset</td><td class='waarde wrap'>&nbsp;</td></tr>
+						<tr><td class='veld'>Deel link</td><td class='waarde wrap'>&nbsp;</td></tr>
+						<tr><td class='veld'>Attributen</td><td class='waarde wrap'>&nbsp;</td></tr>
+						<tr><td class='veld'>Aantal objecten</td><td class='waarde'>&nbsp;</td></tr>
+						<tr><td class='veld'>Actualiteit</td><td class='waarde'>&nbsp;</td></tr>
+						<tr><td class='veld'>Kaart toelichting</td><td class='waarde'>&nbsp;</td></tr>
+						<tr><td class='veld'>Extra toelichting</td><td class='waarde'>&nbsp;</td></tr>
+						<tr><td class='veld'>Bronhouder</td><td class='waarde'>&nbsp;</td></tr>
+						<tr><td class='veld'>Contact<wbr>persoon</td><td class='waarde'>&nbsp;</td></tr>
+						<tr><td class='veld'>E-mail</td><td class='waarde wrap'>&nbsp;</td></tr>
+						<tr><td class='witregel'></td><td></td></tr>					
+						<tr class="hidden_csv"><td class='veld'><strong>Copy link</strong></td><td class="waarde"><a id="json1" href="" target="_blank">geojson</a> LngLat</td></tr>
+						<tr class="hidden_csv"><td class='veld'><strong>Download</strong></td><td class="waarde"><a id="excel" href="" target="_blank">csv</a> Excel</td></tr>
+						<tr class="hidden_csv"><td class='veld'><strong>Download</strong></td><td class="waarde"><a id="mif" href="" target="_blank">mif</a>  en <a id="mid" href="" target="_blank">mid</a> MapInfo/GIS</td></tr>
+						<tr class="hidden_zip"><td class='veld'><strong>Download</strong></td><td class="waarde"><a id="zip" href="" target="_blank" onclick="">zip</a> Esri-shapes</td></tr>							
+						<tr class="hidden_wfs"><td class='veld'><strong>Copy link</strong></td><td class="waarde"><a id="wfs" href="" target="_blank">externe wfs</a></td></tr>
+						<tr class="hidden_wfs"><td></td><td class='waarde wit'>Copy paste de link in QGIS. <br>Voeg geen WFS toe, maar een Vector layer. </td></tr>
+						<tr class="hidden_wms"><td class='veld'><strong>Copy link</strong></td><td class="waarde"><a id="wms" href="" target="_blank">externe wms</a></td></tr>	
+						<tr class="hidden_wms"><td></td><td class='waarde wit'>Dit is de basis van de WMS-link, zonder parameters.<br>Bekijk de kaart - F12 - Network voor verder gebruik.</td></tr>							
+						<tr class="hidden_csv"><td></td><td class='waarde wit'>Coördinaten zijn in WGS84.<br>Maps Amsterdam voorziet niet in conversie-services, WMS of WFS en we leveren ook geen topografische achtergronden.<br>We gebruiken Map Tile Services via <a href='https://api.data.amsterdam.nl/api/'>api.data.amsterdam.nl/api</a><br><br><strong>Beste studenten,</strong><br>Lees de Gebruiksvoorwaarden:<br>"De Gemeente kan op uw verzoek geen extra gegevens toevoegen aan de dataset, de dataset updaten, of in een ander formaat of coördinatenstelsel leveren."<br>en:<br>"Historische datasets worden niet bewaard, tenzij dit vanwege het doel van de dataset is aangegeven."<br>Jullie zullen je eigen onderzoek en analyse moeten doen. <br>Wij kunnen dat niet voor jullie doen.</td></tr>							
+					</table>
+				</div>
+			</div>
+			<div class='marge'></div>				
+		</main>
+
+		<footer>
+			<div class='marge'></div>
+			<div class='blad flex'>		
+				<div><h2>Maps Data</h2>Voor studie, onderzoek of software-ontwikkeling zijn op deze pagina geografische datasets vrij beschikbaar. Als u een Maps Dataset van de Gemeente Amsterdam downloadt, gaat u akkoord met de <a href='terms.php' target='_blank'><wbr>Gebruiksvoorwaarden</a><br>De Gebruiksvoorwaarden zijn bedoeld om de betrokkenheid van de Gemeente bij open geodata te promoten, haar positie daarin te beschermen en u op de hoogte te stellen van de mogelijkheden en beperkingen van het gebruik van de dataset.<br><br>Meer datasets van de Gemeente Amsterdam vindt u wellicht op <a href='https://data.amsterdam.nl/' target='_blank'>data.amsterdam.nl</a> </div>
+				<div><h2>Contact</h2>Maps Amsterdam levert GEEN topografische ondergronden: we maken gebruik van Map Tile Services via <a href='https://api.data.amsterdam.nl/api/'>api.data.amsterdam.nl/api</a><br><br>Voor inhoudelijke opmerkingen, vragen of aanvullingen neemt u contact op met de genoemde bronhouder van de dataset.<br><br>Voor vragen over de functionele of technische werking van deze website neemt u contact op met Klaas-Bindert de Haan, ontwikkelaar van Maps Amsterdam: <a href='mailto:k.b.de.haan@amsterdam.nl' title=''>k.b.de.haan@amsterdam.nl</a>.<br><br>Voor vragen over of de levering van topografische ondergronden en luchtfoto's neemt u contact op met de afdeling Basisinformatie / het Dataplatform van de Gemeente Amsterdam via <a href='mailto:data-helpdesk@amsterdam.nl'>data-helpdesk@amsterdam.nl</a></div>
+				<div><h2>Proclaimer</h2>De Gemeente Amsterdam doet haar best de informatie in deze datasets actueel, correct en toegankelijk te houden, maar kan dit niet garanderen. U kunt bij een aantal datasets zelf toevoegingen of veranderingen doorgeven aan de genoemde bronhouder.</div>
+			</div>
+			<div class='marge'></div>			
+		</footer>	
+	</body>
+</html>

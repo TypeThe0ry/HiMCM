@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Gebruiksvoorwaarden Maps Data</title>
+		<meta name="description" content="Gebruiksvoorwaarden Maps Terms of Use Open Geo Data City of Amsterdam">
+		<meta name="author" content="Gemeente Amsterdam Klaas-Bindert de Haan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../_fonts/font.amsterdam.css">
+		<link rel="stylesheet" type="text/css" href="terms.min.css?1">
+		<script src="../_jquery/jquery-4.0.0.rem.min.js"></script>
+		<script>
+			// <![CDATA[
+			var isTouch = is_touch_device(); function is_touch_device() {return 'ontouchstart' in window || navigator.maxTouchPoints;}
+			var geOpend = false;
+			function doePlus(pItem, pOpen) {
+				if (pItem != 'uit' && isTouch && !pOpen) {geOpend = false; return;} if (pItem != 'uit' && $("#"+pItem).hasClass('onderstreep')) return; if (pItem != 'uit' && geOpend) { geOpend = false; return;}
+				$("#plus").hide(); 
+				$("#n1").hide(); $("#nav1").attr('aria-expanded', 'false');
+				$("#n2").hide(); $("#nav2").attr('aria-expanded', 'false');
+				$("nav button").each(function() {$(this).removeClass('onderstreep');})
+				if (pItem != 'uit') {$("#"+pItem).attr('aria-expanded', 'true'); $("#"+pItem).addClass('onderstreep'); $("#plus ."+pItem).show(); $("#plus").css('display', 'flex'); }
+			}
+			$(document).ready(function() {
+				$("nav button").each(function() {
+						$(this).on("click", function() {
+							if ($(this).hasClass('onderstreep')) {
+								if ($(this).attr('id') == 'nav1') window.open('https://maps.amsterdam.nl/open_geodata/', '_blank');
+								if ($(this).attr('id') == 'nav2') window.open('https://maps.amsterdam.nl/', '_blank');
+								doePlus("uit", false); geOpend = true;
+							}
+							else doePlus($(this).attr('id'), true);
+						});
+						$(this).on("keydown", function(event) {if (event.key === 'Escape') doePlus("uit", false);});
+					});	
+			});	
+			// ]]>
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class='marge'></div>
+			<div class='blad flex'>
+				<div class="logo"><img alt= "" src="/_img/andreas.svg"><a href='https://www.amsterdam.nl/' target='_blank'>Gemeente<br>Amsterdam</a></div>
+				<h1>Gebruiksvoorwaarden</h1>
+			</div>
+			<div class='marge'></div>
+		</header>
+		<nav>
+			<div class='marge'></div>
+			<div class='blad flex'>
+				<button type='button' id='nav1' onmouseover='doePlus("nav1", false)' onmouseout='doePlus("uit", false)' onfocus='doePlus("nav1", false)' onblur='doePlus("uit", false)' aria-controls='n1' aria-expanded='false'>Maps Data</button>
+				<button type='button' id='nav2' onmouseover='doePlus("nav2", false)' onmouseout='doePlus("uit", false)' onfocus='doePlus("nav2", false)' onblur='doePlus("uit", false)' aria-controls='n2' aria-expanded='false'>Maps Amsterdam</button>
+			</div>
+			<div class='marge'></div>
+		</nav>
+		<nav id="plus">
+			<div class='marge'></div>
+			<div class='blad'>
+				<div id='n1' class="nav1">Voor studie, onderzoek of software-ontwikkeling zijn geografische datasets vrij beschikbaar op de Maps Data pagina van Maps Amsterdam.</div>
+				<div id='n2' class="nav2">De kaartenviewer Maps Amsterdam bevat een groot aantal interactieve themakaarten vanuit de ruimtelijke sector van de Gemeente Amsterdam.</div>
+			</div>
+			<div class='marge'></div>
+		</nav>	
+		<main>
+			<div class='marge'></div>
+			<div class='blad flex'>
+				<div id="hoofd">
+					<div class="grijsvlak"><h1>Gebruiks<wbr>voorwaarden</h1><div>Als u een Maps Dataset van de Gemeente Amsterdam downloadt, gaat u akkoord met deze Gebruiksvoorwaarden.<br>De Gebruiksvoorwaarden zijn bedoeld om de betrokkenheid van de Gemeente bij Open Geo Data te promoten, haar positie daarin te beschermen en u op de hoogte te stellen van de mogelijkheden en beperkingen van het gebruik van de dataset.</div><br><div><a href='https://maps.amsterdam.nl/open_geodata/' target='_blank'>Maps Data</a></div><div><a href='https://maps.amsterdam.nl/' target='_blank'>Maps Amsterdam</a></div></div>
+					<h2>Licentie</h2>De Gemeente Amsterdam (hierna de Gemeente) verleent u hierbij een licentie voor het gebruiken en hergebruiken van de gedownloade dataset voor elk wettig doel. U mag de dataset zowel voor niet-commerciële als commerciële doeleinden gebruiken. U erkent hierbij dat deze licentie u geen auteursrecht of andere eigendomsrechten op de dataset geeft.
+					<h2>Garantie</h2>De gegevens in de dataset zijn door de Gemeente gegenereerd voor haar eigen toepassingen. Als het gemeentelijk proces, waarbij de dataset wordt gebruikt of waarvan de dataset een product is, komt te vervallen, dan vervalt ook de dataset. U kunt daarom geen aanspraak maken op het beschikbaar stellen van de dataset en de Gemeente geeft u geen garanties op de dataset en doet geen toezeggingen daarbij, van welke aard dan ook.<br>Daarmee bedoelen we onder andere, maar niet uitsluitend:
+						<ul>
+							<li>Hoewel redelijke inspanningen zijn verricht bij de voorbereiding van deze dataset voor uw gebruik, kan de Gemeente de volledigheid, actualiteit of nauwkeurigheid van de dataset niet garanderen.</li>
+							<li>De Gemeente kan op elk moment en van tijd tot tijd de dataset aanpassen, niet langer beschikbaar stellen of de toegang daartoe anderszins opschorten, zonder dat daarvoor een overgangstermijn in acht wordt genomen en zonder dat u daarvan persoonlijk op de hoogte wordt gesteld.</li>
+							<li>De Gemeente kan op uw verzoek geen extra gegevens toevoegen aan de dataset, de dataset updaten, of in een ander formaat of coördinatenstelsel leveren.</li>
+							<li>Historische datasets worden niet bewaard, tenzij dit vanwege het doel van de dataset is aangegeven.</li>
+							</ul>
+					<h2>Bronvermelding</h2>Bij hergebruik van de dataset is bronvermelding niet verplicht, al wordt dat wel op prijs gesteld indien mogelijk. U mag niet de indruk wekken dat de Gemeente de strekking van uw afgeleide werk onderschrijft. U mag geen officieel merkteken, embleem, logo of andere referenties van de Gemeente gebruiken zonder voorafgaande schriftelijke toestemming van de Gemeente.<br>Als u de dataset in originele of aangepaste vorm tegen betaling of gratis als dataset doorlevert of anderszins distribueert, moet u vermelden dat de originele dataset voor iedereen gratis beschikbaar is bij de Gemeente, onder deze Gebruiksvoorwaarden, die ook op de doorgeleverde dataset van toepassing zijn.
+					<h2>Aansprakelijkheid</h2>De Gemeente sluit iedere aansprakelijkheid uit voor welke directe of indirecte schade dan ook, op enige wijze ontstaan door of voortvloeiend uit elk gebruik van de dataset, waaronder ook – maar niet alleen – handelingen van een gebruiker van de dataset die zouden zijn ingegeven door ter beschikking gestelde data.
+				</div>
+				<div id="naast">
+					<div class="grijsvlak"><h2>Introductie</h2>Als u een Maps Dataset van de Gemeente Amsterdam downloadt, gaat u akkoord met deze Gebruiksvoorwaarden.<br>De Gebruiksvoorwaarden zijn bedoeld om de betrokkenheid van de Gemeente bij Open Geo Data te promoten, haar positie daarin te beschermen en u op de hoogte te stellen van de mogelijkheden en beperkingen van het gebruik van de dataset.</div>
+				</div>
+			</div>
+			<div class='marge'></div>
+		</main>
+	</body>
+</html>

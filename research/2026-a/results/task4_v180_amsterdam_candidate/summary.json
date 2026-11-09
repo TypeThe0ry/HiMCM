@@ -1,0 +1,94 @@
+{
+  "version": "V180 candidate preview",
+  "current_primary": "V154 unchanged",
+  "current_paper": "V179 unchanged",
+  "primary_admissions": 0,
+  "candidate_count": 32,
+  "nominal_inside_count": 35,
+  "declared_screen_metres": 100,
+  "utility_scope": "Conditional2026 mapped-inventory lower bound with retained2025 population;not a backdated2025 count or measured positional-error guarantee",
+  "upper_bounds_160_unchanged": true,
+  "other_159_utility_cells_unchanged": true,
+  "city_weight_scenario_rows": 96,
+  "scenarios": [
+    {
+      "scenario": "V154_baseline",
+      "weight_reference": "fixed",
+      "mean_score_interval_width": 16.061435140939356,
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "V154_baseline",
+      "weight_reference": "equal",
+      "mean_score_interval_width": 18.8609670217237,
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "candidate_screened32",
+      "weight_reference": "fixed",
+      "mean_score_interval_width": 16.04938479240282,
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "candidate_screened32",
+      "weight_reference": "equal",
+      "mean_score_interval_width": 18.837940743079372,
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "nominal35_diagnostic",
+      "weight_reference": "fixed",
+      "mean_score_interval_width": 16.04829478599855,
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "nominal35_diagnostic",
+      "weight_reference": "equal",
+      "mean_score_interval_width": 18.83583199504533,
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    }
+  ],
+  "source_sha256": {
+    "data/task4_v180_amsterdam/README.md": "105b78ffba66cc23ad36d5f49a9ebfa76e382a96a2436d54a1aade7f2ff65c53",
+    "data/task4_v180_amsterdam/cbs_boundary2025_original.geojson": "75c5069d22ce29684f374e52a9c567c6f09a138187db9770223ef82d7fed17f3",
+    "data/task4_v180_amsterdam/city2026_original.geojson": "bbc939504b5db51312f78919c4a098ea624df3f849a2ad51e037ac9834bfe8c1",
+    "data/task4_v180_amsterdam/city_metadata_original.json": "2a0b812d2d0305a5dcd350f10ebfa2a44de96ed538f73ff8f49beb5f4540e3a9",
+    "data/task4_v180_amsterdam/extract.py": "ccd91fcd9548abcf8a2ad0a29086bb4abf14d68056b45b1dd206598f043c8173",
+    "data/task4_v180_amsterdam/extraction.json": "37a35f9d133bf1522fadae2e715eb246a815c9a44e65df02a6e07507b9ea72bb",
+    "data/task4_v180_amsterdam/mapped_metro_groups.csv": "51bc243cf7c74f8a77040d6068f2c188bbb4b09b2a0e9c26be2188cbf74d226e",
+    "data/task4_v180_amsterdam/maps_data_original.html": "825868142ecb2f50b3b1cc9d7a20c48aaffe7fb80ee3ef534245576d9830b27b",
+    "data/task4_v180_amsterdam/maps_terms_original.html": "29b67e97d10035ec011d3240f4efc5ad97a1c7e85d1ea0071b91cbcdd5a7d8c7",
+    "data/task4_v180_amsterdam/pdok_capabilities_original.xml": "8956c61de487e7764e277a2cb32421d920887b6a7719eb2e2702c79b1ef35f8f",
+    "data/task4_v180_amsterdam/retrievals.json": "0f3a2c0753d330fba80508d38bcf80cfa89a3d881abe708e45a4f2edd7f55d8a",
+    "data/task4_v180_amsterdam/stops2026_original.geojson": "78a33e536dd3da305e5f62dc461e0d1322162cb0b87457a48acec5793146c731",
+    "data/task4_v180_amsterdam/stops_metadata_original.json": "391169246ade7bdc886d7a5da27066325fb50f60685bb4a8a78cfcc13869dde9",
+    "data/task4_v180_amsterdam/trammetro_original.html": "2b410d9baaa17a06eeb002c502720419e0f6b05495cce14d98219fd4d58db2b7",
+    "scripts/task4_v180_amsterdam_candidate.py": "7a5e6e6867fcb402c9da8a26e0039673427845b601832ec2e8ea325e21ecb0c4"
+  },
+  "next_gate": "Independent source/geometry/preview audit;formal admission,full extension migration and manuscript consistency before activation",
+  "MC_rerun": false
+}
