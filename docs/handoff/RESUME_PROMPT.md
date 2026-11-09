@@ -1,13 +1,13 @@
-# 恢复HiMCM：当前主分析、扩展与独立稿均V154
+# 恢复HiMCM：主分析／扩展V154，当前独立稿V160
 
-长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
 - 原CSV：research/2026-a/data/task4_v117_team_intake/city_indicators.csv，SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c，保持用户值／年份／标记。
 - 主注册表：research/2026-a/design/task4_user_current_model.json，V154模块task4_user_v154_revision.revised_bounds()；22累计补充，112点／34部分／14全未知，16×10。来源快照design/task4_user_v154_snapshot.json，187项。
 - 扩展注册表：design/task4_user_current_extensions.json；scripts/task4_v154_extensions.py的preferences／future／method／diagnostics只写V154新目录。偏好矩阵、未来假设、种子与模型机制保持，历史六CSV字节保持。
-- 论文：相邻HiMCM-Overleaf/drafts/task4_v154_paper.tex/.pdf，生成器drafts/build_task4_v154.py。根入口task4_v154_review_entry.tex；未切换项目默认主文件。旧V148稿／V151代理保持冻结。
+- 当前独立稿：research/2026-a/design/task4_user_current_review.json注册V160；相邻HiMCM-Overleaf/drafts/task4_v160_paper.tex/.pdf，build_task4_v160.py及根入口task4_v160_review_entry.tex。科学仍V154，未切默认主文件，V154/V159旧稿冻结。
 
 ## 科学状态
 
@@ -19,18 +19,20 @@ Milan104站／枢纽来自市府2024-10-16历史库存，原件与去重见data/
 
 ## 验证与交付
 
-研究results/task4_v154_transition/verification.json：432城市条件案例、192配对主MC汇总、48偏好基线MC、2方法案例、32内部见证；139科学／99旧稿支持文件保持。新PDF24页=22主文参考+2暂定AI；新闻16–17、AI23–24、47编译引用、零警告、全页渲染实看。新图最小插入字体约12.51pt。根代理本地24页且文字逐页一致；无connected session，未核服务器编译。
+V154科学基础核验results/task4_v154_transition/verification.json：432城市条件案例、192配对主MC汇总、48偏好基线MC、2方法案例、32内部见证；139科学／99旧稿支持文件保持。V154冻结原稿24页=22主文参考+2暂定AI；新闻16–17、AI23–24、47编译引用、零警告、全页渲染实看。新图最小插入字体约12.51pt。根代理本地24页且文字逐页一致；无connected session，未核服务器编译。
 
-当前交付清单为V156，绑定V154同SHA PDF，40项（8技术、17范围审阅、1字号限定、4部分、5未核、3待团队、1未就绪、1未执行）；47引用与22补充链已核，167数学8pt片段单列。V149仍绑定旧V148，不可充作当前身份核对。实际控制号PENDING；旧18213/18214冲突不猜。完整全队AI史、最终主稿整合具体授权、在线编译／注册／上传收件仍待真实证据，submission_ready=false。AI局部选集固定03:17UTC/2026-11-09截止，后续继续不塞入旧capture、不称完整史。
+旧V156清单绑定V154 PDF，40项（8技术、17范围审阅、1字号限定、4部分、5未核、3待团队、1未就绪、1未执行）；47引用与22补充链已核，167数学8pt片段单列。V149仍绑定旧V148，不可充作当前身份核对。实际控制号PENDING；旧18213/18214冲突不猜。完整全队AI史、最终主稿整合具体授权、在线编译／注册／上传收件仍待真实证据，submission_ready=false。AI局部选集固定03:17UTC/2026-11-09截止，后续继续不塞入旧capture、不称完整史。
 
 ## 权限与下一步
 
 GitHub仅研究，Overleaf仅稿件／选定资产，各自fetch并审确切diff、正常提交；研究公开push待既有用户选择，仍仅本地commit；私有Overleaf按授权push。队友main／ref／class及项目设置保持。root main为旧赛事模板+冻结25城阶段稿，17缺图引用，不能当V154入口。
 
-采集价值诊断已重基为V155：14全缺失及Milan残余单列，见results/task4_v155_priority。Dublin教师精确信息固定保证1.066798、最有利5.785906；Zurich保证0.793974、最有利9.316221、最多排除5城。Milan交通单独精确无遗憾／冠军改善，两项仅下界全域无排除，勿重复扩名录追求缩冠军。比赛清单已更新为V156，下一轮优先新教师FTE路线或论文实质改进；V138的15缺失格列表已过期，V149仍旧PDF。补数只找新的匹配教师FTE／高中实际单程旅时或原率来源，已有抑制／单位不符路线失败跳过。V152历史低端通学证据仍独立候选；同国／年龄／公平性继续保持对象范围。旧版本详情由各Vxxx交接与Git历史恢复，勿覆盖冻结结果。
+采集价值诊断已重基为V155：14全缺失及Milan残余单列，见results/task4_v155_priority。Dublin教师精确信息固定保证1.066798、最有利5.785906；Zurich保证0.793974、最有利9.316221、最多排除5城。Milan交通单独精确无遗憾／冠军改善，两项仅下界全域无排除，勿重复扩名录追求缩冠军。当前稿与清单已更新为V160，下一轮优先新教师FTE路线或结论相关证据核查；V138的15缺失格列表已过期，V149仍旧PDF。补数只找新的匹配教师FTE／高中实际单程旅时或原率来源，已有抑制／单位不符路线失败跳过。V152历史低端通学证据仍独立候选；同国／年龄／公平性继续保持对象范围。旧版本详情由各Vxxx交接与Git历史恢复，勿覆盖冻结结果。
 
 V157新取六官方原响应：Enge人数非教学FTE；Stadelhofen年报全职词命中是管理员；Eurostat全国ED3 FTE含ED4且私立覆盖与元数据不一致、参考期未协调，不能作城市教师上界。V120学生T_3为Mittelschulen、含I／II阶段，非全市高中总数。0准入0收窄；下一轮跳过上述已查路线。
 
-V158公平性候选：Istanbul2012样本联合最小均值−最低20%差距0.226685527（V152保守证书0.161650665），全部未知45分钟及可选成员纳入可达到。全域解析证明+63联合LP+独立断点/3质量LP核验。见[V158交接](V158_RESEARCH_UPDATE.md)。仅历史聚合不确定集合，不迁移当前年、不新增城市公平性排名；独立支持材料，未入正文。
+历史V158公平性证明：Istanbul2012样本联合最小均值−最低20%差距0.226685527（V152保守证书0.161650665），全部未知45分钟及可选成员纳入可达到。全域解析证明+63联合LP+独立断点/3质量LP核验。见[V158交接](V158_RESEARCH_UPDATE.md)。仅历史聚合不确定集合，不迁移当前年、不新增城市公平性排名；V158当轮独立保存，现已写入V160自有正文。
 
-V159新独立候选drafts/task4_v159_paper.tex/.pdf及根代理已核：24页、47引用、单段替换，写入V158历史最紧公平性差距。22页像素相同，第9页一行原样公式定义字距变化，第14页内容变化。187科学／443旧稿保护；当前入口仍V154，V156清单只绑定V154。候选未启用，见[V159交接](V159_RESEARCH_UPDATE.md)。
+历史V159独立候选drafts/task4_v159_paper.tex/.pdf及根代理已核：24页、47引用、单段替换，写入V158历史最紧公平性差距。22页像素相同，第9页一行原样公式定义字距变化，第14页内容变化。187科学／443旧稿保护；当轮未启用，V156清单只绑定V154；现以V160为当前独立稿。见[V159交接](V159_RESEARCH_UPDATE.md)。
+
+V160已启用当前自有独立审阅稿，科学／扩展V154不变。24页、47引用，第6.4节权重／缺失集合定义补齐；相对V159仅第14页改变。41项交付映射保留原40状态与14待完成门槛；182数学8pt片段单列，submission_ready=false。当前核对用results/task4_v160_review；V156只对应旧稿。187科学／450旧稿保持，AGENTS仅指针变化。后续优先新同口径师资或结论相关证据，不重复已失败路线。

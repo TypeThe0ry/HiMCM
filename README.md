@@ -12,19 +12,19 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城V154主数据、受控扩展与独立完整稿已统一：112点／34部分／14全缺失，累计22项补充，24页。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V154统一启用与核验](docs/handoff/V154_RESEARCH_UPDATE.md)。当前16城主数据与受控扩展为V154，当前独立完整审阅稿为V160（科学基础保持V154）：112点／34部分／14全缺失，累计22项补充，24页。Zurich保守、16可能／0必要冠军；原CSV、权重、锚点及区间规则保持。
 
 本轮Milan历史库存补数使固定权重平均评分区间宽度16.08933→16.06144，实际收窄0.02790分，累计收窄14.62%。[模型入口](research/2026-a/design/task4_user_current_model.json)、[扩展入口](research/2026-a/design/task4_user_current_extensions.json)、[验证](research/2026-a/results/task4_v154_transition/README.md)。
 
-当前补数诊断：[V155：14缺失格与Milan残余信息](docs/handoff/V155_RESEARCH_UPDATE.md)。Dublin教师精确信息有较大固定权重保证收益，Zurich对冠军范围更有潜力；条件保证不等于预期取数收益。主与正文仍V154。
+当前补数诊断：[V155：14缺失格与Milan残余信息](docs/handoff/V155_RESEARCH_UPDATE.md)。Dublin教师精确信息有较大固定权重保证收益，Zurich对冠军范围更有潜力；条件保证不等于预期取数收益。主分析仍V154，当前独立稿见V160入口。
 
-当前交付核对：[V156：绑定V154的40项清单](docs/handoff/V156_RESEARCH_UPDATE.md)。47引用与22补充链已核，数学小字单列；真实控制号、完整AI记录与最终上传等状态保持未完成。V149仅旧稿参考。
+当前独立稿及交付核对：[V160：24页审阅稿与41项清单](docs/handoff/V160_RESEARCH_UPDATE.md)。原40项状态保持，新增历史公平性定义核对；V156保留为旧稿对应清单。47引用与22补充链已核，数学小字单列；真实控制号、完整AI记录与最终上传等状态保持未完成。V149仅旧稿参考。
 
-论文候选：[V159独立审阅稿](docs/handoff/V159_RESEARCH_UPDATE.md)将历史联合公平性结果写入第6.4节，24页、47引用，原稿保持；当前入口仍V154，候选未启用。
+历史候选：[V159独立审阅稿](docs/handoff/V159_RESEARCH_UPDATE.md)将历史联合公平性结果写入第6.4节，24页、47引用，原稿保持；该候选已由V160澄清定义并启用为当前独立审阅稿。
 
-新增公平性论据：[V158历史通学差距的联合最紧界](docs/handoff/V158_RESEARCH_UPDATE.md)。最低20%与整体均值差距下界由0.161651提高为0.226686，范围保持Istanbul2012条件样本；主分析与正文仍V154。
+新增公平性论据：[V158历史通学差距的联合最紧界](docs/handoff/V158_RESEARCH_UPDATE.md)。最低20%与整体均值差距下界由0.161651提高为0.226686，范围保持Istanbul2012条件样本；主分析保持V154。
 
-最新来源核验：[V157苏黎世师资范围](docs/handoff/V157_RESEARCH_UPDATE.md)。六份官方原响应已核，尚未形成可准入教学FTE；0新增入模、0区间收窄，主分析与正文仍V154。
+最新来源核验：[V157苏黎世师资范围](docs/handoff/V157_RESEARCH_UPDATE.md)。六份官方原响应已核，尚未形成可准入教学FTE；0新增入模、0区间收窄，主分析保持V154。
 
 历史支持：[V148年龄联合界](docs/handoff/V148_RESEARCH_UPDATE.md)、[V149旧PDF交付清单](docs/handoff/V149_RESEARCH_UPDATE.md)、[V150 Madrid候选](docs/handoff/V150_RESEARCH_UPDATE.md)、[V151旧根代理](docs/handoff/V151_RESEARCH_UPDATE.md)、[V152历史尾部证据候选](docs/handoff/V152_RESEARCH_UPDATE.md)、[V153 Milan来源审计（已纳入V154）](docs/handoff/V153_RESEARCH_UPDATE.md)。V149不自动覆盖新稿；真实控制号、完整AI史及最终整合／上传证据仍待完成。
 
