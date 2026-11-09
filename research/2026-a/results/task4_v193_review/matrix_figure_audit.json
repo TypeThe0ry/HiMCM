@@ -1,0 +1,82 @@
+{
+  "iteration": "V193",
+  "model": "V192",
+  "shape": [
+    16,
+    10
+  ],
+  "counts": {
+    "point": 112,
+    "partial": 37,
+    "unknown": 11
+  },
+  "unknown_by_indicator": {
+    "travel": 3,
+    "upper_secondary_ptr": 8
+  },
+  "city_order": [
+    "Vienna",
+    "Zurich",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Stockholm",
+    "Paris",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Oslo",
+    "Prague",
+    "Warsaw",
+    "Singapore",
+    "Tokyo"
+  ],
+  "indicator_order": [
+    "homicide_rate",
+    "pm25",
+    "cost_living_index",
+    "price_income_ratio",
+    "upper_secondary_ptr",
+    "research_he_density",
+    "public_transport_density",
+    "travel",
+    "fixed_broadband_mbps",
+    "public_pool_density"
+  ],
+  "plot_labels": [
+    "Homicide",
+    "PM2.5",
+    "Living cost",
+    "Housing",
+    "Pupil/teacher",
+    "Research/HE",
+    "Transit",
+    "Travel burden",
+    "Broadband",
+    "Pools"
+  ],
+  "source": "V192 revised_bounds(); original CSV and25 supplements retained",
+  "source_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "utility_bounds_sha256": "a0edc02e7e98a9d464587b44eb779834e1de2d8be762ecefacae0409edd6e1cf",
+  "matrix_sha256": "079e87eb9eed9a2bedd91738f6035c1ab33854b525f0091ac9e5dba715156314",
+  "renderer_sha256": "a477dfd90290f0fe37a3d3dc65b00a327b2fc493f82989cca30e5545cbb50ed3",
+  "admissions_sha256": "cb874671c2a9e263359a57613ce1d14623b6ae450f61634984c0fb8598a09aed",
+  "figure_width_inches": 6.5,
+  "figure_height_inches": 6.2,
+  "minimum_source_font_pt": 10,
+  "intended_insertion_width_inches": 6.5,
+  "minimum_insertion_width_for9pt_inches": 5.85,
+  "png_dpi": 300,
+  "pdf_export": "Explicit vector rectangles and embedded Type3 outline fonts; RGB and grayscale review required",
+  "point_interpretation": "Retained point assumptions, not independent validation or zero measurement error",
+  "ranges_interpretation": "Identification bounds; not confidence intervals, posterior probabilities or ranking",
+  "renderer_changes_source_data": false,
+  "intended_review": "V193",
+  "source_state_at_creation": "V192 staged",
+  "output_sha256": {
+    "pdf": "6c2233498b38af496b2849fe43c7c33036d6b982085d18fccf5ef7435e03fc13",
+    "svg": "c05034d7d07706548fb9086183adf629b74935c53d8fc91eb05a06fd24f87136",
+    "png": "1245368968f4e573abc8a46d7376ce6f8157c2470cd0648d395431fe9be54c8b"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "fail",
+  "iteration": "V193",
+  "runner_sha256": "083361fba439f0671ffa22dc0076f429e079a1372924530089b8d99f7aa211a6",
+  "paper_version": "V193",
+  "primary_model": "V192",
+  "delivery_version": "V193",
+  "paper_head": "9b9441429b5d09adf2ccc11933666f1827df879c",
+  "research_head": "f72520e02b467bdfe603856f6789809b16e81e2a",
+  "canonical_pdf_sha256": "fb9b2d0f95f544c41f2de02e15a58673f15a8ac8efc4dcadb173f0a272474dae",
+  "source_bindings_sha256": {
+    "research/2026-a/design/task4_user_current_model.json": "66c7be04610fac6cc5b435090012e8aa4b5c82c0b93e9a9123269fbe16b2bf17",
+    "research/2026-a/design/task4_user_current_extensions.json": "717ff9d37ee53234629d7f14a5bdcb7bdf292035578c2ea934c443ce63263f70",
+    "research/2026-a/design/task4_user_current_review.json": "ce04097ee31d61ebc5d71d4709b05d2a9b0976cc0f54220b43a210c28f63f8f1",
+    "research/2026-a/design/task4_user_current_delivery.json": "b27e679770e7b24cf85e93f3d7b5e696c50e5fcbf9131f0ffbcef274d73b5791",
+    "research/2026-a/design/task4_user_v192_snapshot.json": "2e9c32051dffe00ddf635a77c349f01cafa08ffa2913a37cc34ef06ed8c775a2",
+    "research/2026-a/results/task4_v193_review/verification.json": "f2e952ec751ae652bc16fe4b146e2767cde5b0bdd34649c51d9dd4d8ec6324ff",
+    "research/2026-a/results/task4_v193_review/delivery_verification.json": "f04b272976320fa059c62d798bf4399dfa4b8be8a31506f1bb6a5bb79774a3b1"
+  },
+  "environment": {
+    "python": "3.11.18",
+    "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
+    "tools": {
+      "tectonic": "Tectonic 0.17.0",
+      "pdftotext": "pdftotext version 26.01.0",
+      "pdftoppm": "pdftoppm version 26.05.0"
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2"
+    },
+    "tex_resources": "Existing local Tectonic cache required;no resource-download fallback"
+  },
+  "archive": {
+    "files": 863,
+    "git_blob_algorithm": "sha1",
+    "all_paths_and_blobs_match": true
+  },
+  "historical_snapshot_navigation_exceptions": [],
+  "science": {
+    "utility_cells": 160,
+    "deterministic_city_weight_cases": 32,
+    "changed_transport_lower_cells": 2,
+    "other158cells_and_all_uppers_exact": true,
+    "source_population_and_count_formulas_checked": true,
+    "individual_and_joint_withdrawals_exact": true,
+    "independent_score_reduction": "Scalar math.fsum squared distances with weights once",
+    "comparisons": [
+      {
+        "weight_reference": "fixed",
+        "city_cases": 16,
+        "conservative_recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0,
+        "mean_score_interval_width": 16.03907007442162
+      },
+      {
+        "weight_reference": "equal",
+        "city_cases": 16,
+        "conservative_recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0,
+        "mean_score_interval_width": 18.81881344951466
+      }
+    ],
+    "MC_rerun": false,
+    "raw_source_semantics_reaudited": false
+  },
+  "builds": [
+    {
+      "kind": "direct",
+      "passed": false,
+      "error": "ValueError: Underfull count differs from current reviewed draft"
+    },
+    {
+      "kind": "root",
+      "passed": false,
+      "error": "ValueError: Underfull count differs from current reviewed draft"
+    }
+  ],
+  "error": "ValueError: At least one isolated offline build failed; see per-build evidence",
+  "input_protection": {
+    "scientific_files_checked": 327,
+    "paper_files_checked": 863,
+    "navigation_and_verification_files_checked": 6,
+    "changed": []
+  },
+  "elapsed_seconds": 5.122,
+  "scope": "Local tools+existing TeX cache;source-defined deterministic model and exact text/72dpi rendering checks. No fresh-OS/no-cache guarantee,MC replay,source revalidation,server compile or submission-readiness claim.",
+  "submission_ready": false
+}

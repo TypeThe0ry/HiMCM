@@ -1,4 +1,4 @@
-当前自有审阅稿为 **V189**（科学 **V181**）：[联合均值边界已进入自有5.5节](docs/handoff/V189_RESEARCH_UPDATE.md)，27页／53引用，暂用18213且注册未核。原数据及基准保持，GitHub研究与Overleaf稿件分别同步。以下旧版本记录保留其历史时点。 [当前交付清单V190](docs/handoff/V190_RESEARCH_UPDATE.md)已修正页码、锚点和0页余量；论文仍V189。 [V191两城真实车站候选](docs/handoff/V191_RESEARCH_UPDATE.md)已独审，尚待全扩展与论文一致性迁移后启用。 [V192隔离全研究](docs/handoff/V192_RESEARCH_UPDATE.md)已审计，下一步构建一致的自有V193稿并统一启用；当前入口保持。
+当前主科学／扩展为 **V192**，自有审阅稿与交付映射为 **V193**：[当前交接](docs/handoff/V193_RESEARCH_UPDATE.md)。两城补充已启用，112点／37部分／11未知，27页／56引用；Zurich保守、16可能保持。暂用18213，实际注册未核。以下旧版本记录保留历史时点。
 
 # 2026 HiMCM A
 

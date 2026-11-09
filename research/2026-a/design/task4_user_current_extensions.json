@@ -1,33 +1,33 @@
 {
-  "extension_version": "V181",
-  "primary_evidence_version": "V181",
+  "extension_version": "V192",
+  "primary_evidence_version": "V192",
   "primary_registry": "design/task4_user_current_model.json",
-  "primary_snapshot": "design/task4_user_v181_snapshot.json",
+  "primary_snapshot": "design/task4_user_v192_snapshot.json",
   "modules": {
     "preferences": {
-      "script": "scripts/task4_v181_extensions.py preferences",
-      "results": "results/task4_v181_preferences"
+      "script": "scripts/task4_v192_extensions.py preferences",
+      "results": "results/task4_v192_preferences"
     },
     "future": {
-      "script": "scripts/task4_v181_extensions.py future",
-      "results": "results/task4_v181_future"
+      "script": "scripts/task4_v192_extensions.py future",
+      "results": "results/task4_v192_future"
     },
     "method": {
-      "script": "scripts/task4_v181_extensions.py method",
-      "results": "results/task4_v181_method"
+      "script": "scripts/task4_v192_extensions.py method",
+      "results": "results/task4_v192_method"
     },
     "diagnostics": {
-      "script": "scripts/task4_v181_extensions.py diagnostics",
-      "results": "results/task4_v181_diagnostics"
+      "script": "scripts/task4_v192_extensions.py diagnostics",
+      "results": "results/task4_v192_diagnostics"
     }
   },
   "changes_primary_model": false,
-  "independent_audit": "results/task4_v181_transition/verification.json",
-  "audit_script": "scripts/audit_task4_v181.py",
-  "manuscript_entry": "../HiMCM-Overleaf/drafts/task4_v182_paper.tex",
-  "root_review_entry": "../HiMCM-Overleaf/task4_v182_review_entry.tex",
+  "independent_audit": "results/task4_v192_transition/verification.json",
+  "audit_script": "scripts/audit_task4_v192.py",
+  "manuscript_entry": "../HiMCM-Overleaf/drafts/task4_v193_paper.tex",
+  "root_review_entry": "../HiMCM-Overleaf/task4_v193_review_entry.tex",
   "activation_status": "active",
-  "supersedes": "V154 primary/extensions and V179 owned review",
+  "supersedes": "V181primary/extensions,V189ownedreviewandV190deliverymap",
   "historical_cases": "Six V137 historical country/age/fairness CSV files byte-identical; no synthetic same-country pair in the primary16; no age survey or observed future trend",
-  "paper_verification": "results/task4_v182_review/verification.json"
+  "paper_verification": "results/task4_v193_review/verification.json"
 }
