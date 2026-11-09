@@ -1,0 +1,45 @@
+{
+  "query": [
+    {
+      "code": "timeperiod_y",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      }
+    },
+    {
+      "code": "alue_23_20250101",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "KU091"
+        ]
+      }
+    },
+    {
+      "code": "ksektori_4_20150101",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "20"
+        ]
+      }
+    },
+    {
+      "code": "contentscode",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "op_4a"
+        ]
+      }
+    }
+  ],
+  "response": {
+    "format": "json-stat2"
+  }
+}

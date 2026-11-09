@@ -26,7 +26,9 @@
 
 新增扰动诊断：[V162历史公平性差距与效用测量误差](docs/handoff/V162_RESEARCH_UPDATE.md)。5%观测权重质量可任意修正时，差距下界仍0.200134；为声明情景，不估计实际错误率，正文V160保持。
 
-最新来源核验：[V161 Dublin工资册与岗位分配](docs/handoff/V161_RESEARCH_UPDATE.md)。取得实际FTE及分配额反例，学段／覆盖与参考期尚不匹配，0新增入模、0评分变化，正文保持V160。
+最新来源核验：[V163 Helsinki直接学生API与FTE估算方法](docs/handoff/V163_RESEARCH_UPDATE.md)。分子原响应已取，估算FTE尚不能作城市保证上界；0入模0收窄，正文V160保持。
+
+此前来源核验：[V161 Dublin工资册与岗位分配](docs/handoff/V161_RESEARCH_UPDATE.md)。取得实际FTE及分配额反例，学段／覆盖与参考期尚不匹配，0新增入模、0评分变化，正文保持V160。
 
 此前来源核验：[V157苏黎世师资范围](docs/handoff/V157_RESEARCH_UPDATE.md)。六份官方原响应已核，尚未形成可准入教学FTE；0新增入模、0区间收窄，主分析保持V154。
 
