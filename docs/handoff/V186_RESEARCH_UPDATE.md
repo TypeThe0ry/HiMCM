@@ -21,3 +21,5 @@ Overleaf入口drafts/task4_v186_paper.tex/.pdf，根代理task4_v186_review_entr
 真实控制号、完整团队AI记录、最终团队整合、服务器编译及比赛提交回执仍需真实证据。AI捕获窗口保持2026-11-09 14:31:18.850UTC，未扩展成全队历史。长期goal active。
 
 独立Git快照重建通过：Overleaf载荷bf603ab04f1f0887b220b84f51ba8e7d2577fd33的758文件路径／blob逐项核验，两个隔离副本依赖现有工具及TeX缓存离线编译；27页逐页文本及72dpi灰度像素一致。输入保护243科学／758论文文件无变化，独立复算当前160格／32权重城市案例。工具runner版本V182而paper_version为V186，回执reproduction.json；非冷环境或服务器验证。
+
+双仓远端已核：GitHub载荷876218b50490f578740c9c035f2a8338049cfd1f，Overleaf a9b36e06e693e5f0705ffcfb6b050823e17f8801，普通push且核验时工作区干净；PDF SHA 3d3d2d3806d8d01b947c1e07bb15d61ad113dc3cb43f033f80444c3640bddc6d。6份选定证据逐字节一致，另1份目的地README；743旧论文文件保持，仅两个导航获准更新。详sync.json、delivery.json，回执另提交。服务器编译／正式比赛提交未核或未执行，长期goal active。
