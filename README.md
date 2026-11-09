@@ -24,7 +24,9 @@
 
 新增公平性论据：[V158历史通学差距的联合最紧界](docs/handoff/V158_RESEARCH_UPDATE.md)。最低20%与整体均值差距下界由0.161651提高为0.226686，范围保持Istanbul2012条件样本；主分析保持V154。
 
-最新来源核验：[V157苏黎世师资范围](docs/handoff/V157_RESEARCH_UPDATE.md)。六份官方原响应已核，尚未形成可准入教学FTE；0新增入模、0区间收窄，主分析保持V154。
+最新来源核验：[V161 Dublin工资册与岗位分配](docs/handoff/V161_RESEARCH_UPDATE.md)。取得实际FTE及分配额反例，学段／覆盖与参考期尚不匹配，0新增入模、0评分变化，正文保持V160。
+
+此前来源核验：[V157苏黎世师资范围](docs/handoff/V157_RESEARCH_UPDATE.md)。六份官方原响应已核，尚未形成可准入教学FTE；0新增入模、0区间收窄，主分析保持V154。
 
 历史支持：[V148年龄联合界](docs/handoff/V148_RESEARCH_UPDATE.md)、[V149旧PDF交付清单](docs/handoff/V149_RESEARCH_UPDATE.md)、[V150 Madrid候选](docs/handoff/V150_RESEARCH_UPDATE.md)、[V151旧根代理](docs/handoff/V151_RESEARCH_UPDATE.md)、[V152历史尾部证据候选](docs/handoff/V152_RESEARCH_UPDATE.md)、[V153 Milan来源审计（已纳入V154）](docs/handoff/V153_RESEARCH_UPDATE.md)。V149不自动覆盖新稿；真实控制号、完整AI史及最终整合／上传证据仍待完成。
 

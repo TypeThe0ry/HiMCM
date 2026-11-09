@@ -1,0 +1,70 @@
+{
+  "iteration": "V161",
+  "status": "source scope reviewed; no admission",
+  "successful_original_responses": 3,
+  "failed_indexed_URLs": 1,
+  "payroll_reference": "Last payroll runs in November2025;2025/26 school year; report April2026",
+  "workforce_table10": {
+    "pdf_page": 14,
+    "geography": "ETB employer/catchment, not an all-provider municipal total",
+    "school_scope": "Post Primary Vocational",
+    "city_of_dublin": {
+      "allocated_FTE": 376.1,
+      "payroll_FTE": 411.8,
+      "difference_FTE": 35.7,
+      "reported_cover_percent": 100.0
+    },
+    "dublin_and_dun_laoghaire": {
+      "allocated_FTE": 1758.9,
+      "payroll_FTE": 1832.8,
+      "difference_FTE": 73.9,
+      "reported_cover_percent": 100.0
+    }
+  },
+  "workforce_table9": {
+    "pdf_page": 12,
+    "geography": "County Dublin",
+    "school_scope": "Post Primary Secondary, Community & Comprehensive; vocational ETB separate",
+    "dublin": {
+      "allocated_FTE": 6191.7,
+      "payroll_FTE": 6075.7,
+      "difference_FTE": -116.0,
+      "reported_cover_percent": 98.1
+    }
+  },
+  "annual_enrolments": {
+    "pdf_page": 18,
+    "printed_page": 16,
+    "academic_year": "2024/2025",
+    "community_college_locations": 11,
+    "full_time_students": 3862,
+    "scope": "City of Dublin ETB Community Colleges, not all city upper-secondary pupils",
+    "accessibility_text_duplicates_not_summed": true
+  },
+  "provider_exclusion": "Staff wholly employed by private schools are excluded from government/ETB payroll workforce",
+  "FET_rule": "Recognised post-primary-school employer required; FET-centre employed teachers excluded from this workforce definition",
+  "admission_gaps": [
+    "No upper-secondary teaching-stage workload split",
+    "ETB subset and county table are not a matched all-provider city denominator",
+    "2024/25 pupil table not same school year as November2025 payroll",
+    "Wholly privately employed staff excluded; all-provider teacher superset unproven"
+  ],
+  "allocation_counterexample": {
+    "payroll_minus_allocation": 35.7,
+    "payroll_exceeds_allocation": true,
+    "calculated_payroll_over_allocation_percent": 109.49215634139856,
+    "published_cover_percent": 100,
+    "claim": "Allocated posts cannot be assumed to upper-bound actual payroll FTE in this source; no unreported capping algorithm inferred"
+  },
+  "observations": [],
+  "primary_data_admissions": 0,
+  "primary_score_width_change": 0,
+  "current_model": "V154 unchanged",
+  "current_paper": "V160 unchanged",
+  "source_sha256": {
+    "workforce_2026_original.pdf": "0a608a558d13cc67cc597a86f6f525521a0ff9d8f998bb0e7989e97a2719282f",
+    "city_etb_publications_original.html": "ebd9cbf276cf23dfdd931218ee20b29b72d4cf17a039784149c75ca186149738",
+    "city_etb_2024_original.pdf": "d66a2c8e7740719d02e3447e0ec554aa3f950510c0da30c46a2783bd58210366"
+  },
+  "extractor_sha256": "e9691209ddad1a6f2acaff32a0107d81e193d517f86be92e15e62ddbe3748391"
+}
