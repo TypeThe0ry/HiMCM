@@ -1,0 +1,175 @@
+{
+  "status": "pass_source_scope_check; no city-bound admission",
+  "primary": "V154 unchanged",
+  "inspected_new_routes": 3,
+  "admitted_cells": 0,
+  "PTR_or_utility_computed": false,
+  "source_sha256": {
+    "official_staff_all_types_module_original.js": "b234020bc89a0a6030f5f0f6f2287c16db5af8aab8ba60957ca39c0c57abf350",
+    "official_staff_all_types_data_original.json": "2a8a6c3605d63082980e0ddeb9fffc6527a2e3d70a1d03747a472614145a759f",
+    "bfs_staff_2024_25_original.xlsx": "3b395bb02b639746c1270da4674b70971e0f488904e528e688304cd8ffccf553",
+    "bfs_FTE_definition_2026_original.html": "5083f5776ac8d30dae385f5907f5f2d7452341a0938ca10e95f86b0ac97765ba",
+    "bfs_staff_release_2026_original.html": "7b332439f4ecf322b4a078c6a7c751173700575cc7a25460b8bba9272dab9ed0"
+  },
+  "extractor_sha256": "1f724e23f7a9494fc8ff265d39f65b3cdb56858ebeed52183be3f581d3aad156",
+  "routes": [
+    {
+      "id": "new_all_school_types_chart",
+      "module_url": "https://api.observablehq.com/d/faf136843ba7d2aa.js?v=4",
+      "data_url": "https://www.bista.zh.ch/basicapi/zhweb/p_entwicklung_der_anzahl_vollzeiteinheiten_nach_personalkategorie_und_schultyp?refreshcache=false",
+      "title": "Entwicklung der Anzahl Vollzeiteinheiten des Schulpersonals an öffentlich finanzierten Schulen",
+      "statusDate": "2026-11-04T08:00:29.133",
+      "columns": [
+        "Schuljahr",
+        "Personalkategorie",
+        "Schultyp",
+        "Vollzeiteinheiten"
+      ],
+      "data_rows": 382,
+      "years": [
+        "2016/17",
+        "2017/18",
+        "2018/19",
+        "2019/20",
+        "2020/21",
+        "2021/22",
+        "2022/23",
+        "2023/24",
+        "2024/25",
+        "2025/26"
+      ],
+      "geography": "Kanton Zürich aggregate, no school/city selector",
+      "provider_scope": "Explicitly publicly financed schools; not all private providers",
+      "decision": "Not usable as all-provider city teacher total or covering upper bound. Different endpoint from V165, same material provider exclusion."
+    },
+    {
+      "id": "STATENT_covering_workforce_idea",
+      "source_url": "https://statistik.admin.ch/en/asset/36683267",
+      "publication_date": "2026-07-03",
+      "finding": "Official definition says STATENT FTE are model estimates based mainly on AHV wages and supplemented by other surveys.",
+      "decision": "No employment estimate treated as a guaranteed one-sided teacher-FTE envelope. No numerical STATENT teacher bound manufactured."
+    },
+    {
+      "id": "new_full_BFS_staff_workbook",
+      "release_url": "https://statistik.admin.ch/de/news/2026-0085",
+      "source_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36478952/master",
+      "release_date": "2026-04-14",
+      "represented_year": "2024/25",
+      "workbook_status": "2026-03-30",
+      "quantitative_finding": "T10 publishes teacher FTE separately for public and private schools, at national rather than canton/city geography. This is actual published private-school FTE information, not merely a survey frame.",
+      "cell_values": {
+        "T10": {
+          "F7": 8301.1,
+          "G7": 10547.7,
+          "J7": 86866.4,
+          "F11": 695.2,
+          "G11": 1767.5,
+          "I11": 3453.2,
+          "J11": 10242.2
+        },
+        "T8": {
+          "E7": 938.3,
+          "F7": 1454.3,
+          "H7": 13797.7
+        }
+      },
+      "units": {
+        "T10": "teacher VZÄ, not headcounts or school leadership",
+        "T8": "public-school teacher VZÄ by canton"
+      },
+      "relevant_labels": {
+        "public_row": "T10 A6; totals row7",
+        "private_row": "T10 A10; totals row11",
+        "general_upper": "T10 F5",
+        "vocational_upper": "T10 G5",
+        "unallocated_stage": "T10 I5",
+        "all_stages": "T10 J5"
+      },
+      "raw_XML_values": {
+        "T10": {
+          "F7": "8301.1",
+          "G7": "10547.7",
+          "J7": "86866.4",
+          "F11": "695.2",
+          "G11": "1767.5",
+          "I11": "3453.2",
+          "J11": "10242.200000000001"
+        },
+        "T8": {
+          "E7": "938.3",
+          "F7": "1454.3",
+          "H7": "13797.7"
+        }
+      },
+      "retained_sheet_titles": {
+        "T1": "Lehrkäfte nach Kanton, Bildungsstufe und Geschlecht, 2024/25 - Personen, öffentliche Schulen",
+        "T8": "Lehrkräfte nach Kanton und Bildungsstufe, 2024/25 - VZÄ, öffentliche Schulen",
+        "T10": "Lehrkräfte nach Charakter der Schule, Bildungsstufe und Arbeitsvertrag, 2024/25 - VZÄ"
+      },
+      "retained_sheet_footnotes_and_status": {
+        "T1": {
+          "A34": " © BFS, Neuenburg, 2026",
+          "A36": "Primarstufe 1-2:  Kindergarten, Eingangsstufe",
+          "A37": "1) inkl. Übergangsausbildungen Sek. I – Sek. II, Berufsmaturitäten und Zusatzausbildungen Sekundarstufe II",
+          "A39": "Stand: 30.03.2026"
+        },
+        "T8": {
+          "A33": " © BFS, Neuenburg, 2026",
+          "A35": "Primarstufe 1-2:  Kindergarten, Eingangsstufe",
+          "A36": "1) inkl. Übergangsausbildungen Sek. I – Sek. II, Berufsmaturitäten und Zusatzausbildungen Sekundarstufe II",
+          "A38": "Stand: 30.03.2026"
+        },
+        "T10": {
+          "A14": " © BFS, Neuenburg, 2026",
+          "A16": "Primarstufe 1-2:  Kindergarten, Eingangsstufe",
+          "A17": "1) inkl. Übergangsausbildungen Sek. I – Sek. II, Berufsmaturitäten und Zusatzausbildungen Sekundarstufe II",
+          "A19": "Stand: 30.03.2026"
+        }
+      },
+      "workbook_core_date_properties": {
+        "lastPrinted": "2017-05-28T15:16:42Z",
+        "created": "2009-02-16T12:28:01Z",
+        "modified": "2026-04-07T10:24:21Z"
+      },
+      "workbook_dates_interpretation": "Old workbook creation/printing dates are template metadata, not reference years; table headers2024/25 and status30March2026 retained separately.",
+      "numeric_scope_checks": {
+        "private_stage_C11_through_I11_sum": 10242.2,
+        "private_J11_total": 10242.2,
+        "private_unallocated_stage_I11_included_in_total": true,
+        "public_unallocated_stage_I7": 0.0,
+        "public_canton_T8_H7_total": 13797.7,
+        "public_canton_T8_B7_through_G7_sum": 13797.799999999997,
+        "public_total_and_displayed_component_sum_differ_by_0_1": true,
+        "difference_explanation": "Observed published-cell arithmetic; no hidden unrounded values reconstructed or specific rounding method certified."
+      },
+      "displayed_number_formats": {
+        "I7": "#,##0.0",
+        "J7": "#,##0.0",
+        "I11": "#,##0.0",
+        "J11": "#,##0.0"
+      },
+      "missing_symbols_in_inspected_sheets": {
+        "T1": {},
+        "T8": {},
+        "T10": {}
+      },
+      "completeness_and_actuality": "T10 labels published SSP teacher VZÄ by employment contract, not planned posts or school leaders. T1/T8/T10 supply no explicit missing-report, imputation or completeness certification in their footnotes. No missing symbol found in these sheets does not establish all actual target activity is covered, nor a one-sided error guarantee. Original underlying personnel records were not obtained.",
+      "matched_student_numerator_used": false,
+      "previous_V120_mixed_stage_T3_not_used": true,
+      "not_combined": {
+        "T5": "private teacher persons, not FTE",
+        "T11": "leadership FTE, not teaching",
+        "T12": "additional special-needs staff, compulsory stage"
+      },
+      "bound_status": "Potential covering-denominator ingredient only; no city envelope asserted or admitted in this bounded check.",
+      "remaining_conditions": [
+        "Prove that the relevant actual city upper-secondary teaching activities are all contained in the published public/private teacher populations, including unspecified-stage activities and any programme exclusions.",
+        "Match the exact upper-stage student population and reference year/date; no new matched city student numerator was collected here.",
+        "Check publication completeness, any estimation/allocation conventions, and source precision before calling a total a guaranteed upper bound.",
+        "Private general-upper F11 alone is not a proved city private-upper cover: other private stages/mixed or unallocated activities cannot simply be omitted."
+      ],
+      "decision": "New quantitative private+public FTE lead retained for independent coverage review; do not construct a city PTR or utility from it without those checks."
+    }
+  ],
+  "statement_limit": "These three routes do not establish that no suitable source exists elsewhere. No old source, model result, user CSV, registry or manuscript was edited."
+}

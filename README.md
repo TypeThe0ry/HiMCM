@@ -261,3 +261,5 @@ python3 scripts/verify_repository.py
 - [V22：可能冠军的有利假设门槛与 Phoenix 来源核验](research/2026-a/results/task4_v22_optimism/README.md)
 
 V169补充[现有模拟均值的数值精度证书](research/2026-a/results/task4_v169_mc_precision/README.md)，科学V154／当前自有稿V168保持。
+
+V170补充[师资来源覆盖与注册表核验](research/2026-a/results/task4_v170_staff_coverage/README.md)：新BFS私校FTE候选，当前模型及V168稿保持。

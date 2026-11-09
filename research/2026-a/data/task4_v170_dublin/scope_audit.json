@@ -1,0 +1,176 @@
+{
+  "version": "V170",
+  "city": "Dublin",
+  "indicator": "upper_secondary_ptr",
+  "admitted_cells": 0,
+  "registration": {
+    "reference_date": "2025-12-24",
+    "national_postprimary_registered": 52010,
+    "national_total_registered": 129418,
+    "route_counts_overlap": true,
+    "county_sheet_postprimary_column_sum": 52104,
+    "county_sum_minus_national_postprimary": 94,
+    "discrepancy": "County-sheet sum and national route total differ; cause not established, no reconciliation or renormalization applied.",
+    "selected_geography_rows": [
+      {
+        "label": "Co. Dublin",
+        "value": 5331,
+        "label_cell": "A34",
+        "value_cell": "B34"
+      },
+      {
+        "label": "Dublin 1",
+        "value": 18,
+        "label_cell": "A37",
+        "value_cell": "B37"
+      },
+      {
+        "label": "Dublin 10",
+        "value": 22,
+        "label_cell": "A38",
+        "value_cell": "B38"
+      },
+      {
+        "label": "Dublin 11",
+        "value": 166,
+        "label_cell": "A39",
+        "value_cell": "B39"
+      },
+      {
+        "label": "Dublin 12",
+        "value": 178,
+        "label_cell": "A40",
+        "value_cell": "B40"
+      },
+      {
+        "label": "Dublin 13",
+        "value": 162,
+        "label_cell": "A41",
+        "value_cell": "B41"
+      },
+      {
+        "label": "Dublin 14",
+        "value": 226,
+        "label_cell": "A42",
+        "value_cell": "B42"
+      },
+      {
+        "label": "Dublin 15",
+        "value": 435,
+        "label_cell": "A43",
+        "value_cell": "B43"
+      },
+      {
+        "label": "Dublin 16",
+        "value": 320,
+        "label_cell": "A44",
+        "value_cell": "B44"
+      },
+      {
+        "label": "Dublin 17",
+        "value": 23,
+        "label_cell": "A45",
+        "value_cell": "B45"
+      },
+      {
+        "label": "Dublin 18",
+        "value": 205,
+        "label_cell": "A46",
+        "value_cell": "B46"
+      },
+      {
+        "label": "Dublin 2",
+        "value": 9,
+        "label_cell": "A47",
+        "value_cell": "B47"
+      },
+      {
+        "label": "Dublin 20",
+        "value": 60,
+        "label_cell": "A48",
+        "value_cell": "B48"
+      },
+      {
+        "label": "Dublin 22",
+        "value": 124,
+        "label_cell": "A49",
+        "value_cell": "B49"
+      },
+      {
+        "label": "Dublin 24",
+        "value": 233,
+        "label_cell": "A50",
+        "value_cell": "B50"
+      },
+      {
+        "label": "Dublin 3",
+        "value": 185,
+        "label_cell": "A51",
+        "value_cell": "B51"
+      },
+      {
+        "label": "Dublin 4",
+        "value": 73,
+        "label_cell": "A52",
+        "value_cell": "B52"
+      },
+      {
+        "label": "Dublin 5",
+        "value": 221,
+        "label_cell": "A53",
+        "value_cell": "B53"
+      },
+      {
+        "label": "Dublin 6",
+        "value": 113,
+        "label_cell": "A54",
+        "value_cell": "B54"
+      },
+      {
+        "label": "Dublin 6W",
+        "value": 135,
+        "label_cell": "A55",
+        "value_cell": "B55"
+      },
+      {
+        "label": "Dublin 7",
+        "value": 161,
+        "label_cell": "A56",
+        "value_cell": "B56"
+      },
+      {
+        "label": "Dublin 8",
+        "value": 106,
+        "label_cell": "A57",
+        "value_cell": "B57"
+      },
+      {
+        "label": "Dublin 9",
+        "value": 298,
+        "label_cell": "A58",
+        "value_cell": "B58"
+      }
+    ],
+    "unit": "registered people by route; not teaching FTE",
+    "geography": "County-style field mixes Co. Dublin and Dublin postal labels; school workplace coverage not established in this workbook.",
+    "rejected": "Registration does not establish active upper-secondary city teaching FTE; do not equate the 5331 county-labelled row with the complete Dublin target."
+  },
+  "payroll": {
+    "quality_report_pdf_page": 4,
+    "reference_period_pdf_page": 6,
+    "methodology_pdf_page": 6,
+    "scope": "State-funded primary and post-primary, with private-school teachers included where DEY pays their salary.",
+    "publication": "FTE calculated at school level but not published there; DEY county/ETB aggregates and PXStat school-type aggregates.",
+    "microdata": "Methodology states microdata are not made available to users.",
+    "rejected": "No complete all-provider city senior-cycle FTE/student match or guaranteed enclosing denominator obtained."
+  },
+  "metadata_date_caution": "Quality cover: reporting period 2025-2026, edited 06/02/2026; hub lists coverage 2015-2023. Neither metadata date is a new 2025 city observation.",
+  "utility_interval_before": [
+    0,
+    1
+  ],
+  "utility_interval_after": [
+    0,
+    1
+  ]
+}

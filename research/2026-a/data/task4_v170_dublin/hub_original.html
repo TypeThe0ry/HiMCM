@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Teacher Workforce Data - NationalData.ie</title>
+
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" media="" href="/media/NationalDataie/CSS/ndi-2024.css" /> <!-- ndi-2024.css-->
+
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+  <meta name="DC.Contributor" content="Central Statistics Office" /> 
+  <meta name="DC.Creator" content=" Central Statistics Office" />
+  <meta name="DC.Date.Created" content='2026-02-05' />
+  
+  <meta name="DC.Publisher" content="Central Statistics Office" />
+  <meta name="DC.Rights" content="© Government of Ireland" />
+  <meta name="DC.Subject" content='Teacher Workforce Data' />
+  <meta name="DC.Title" content='Teacher Workforce Data' />
+  <meta name="DC.Type" content=" html,text,pdf,xls " />  
+
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCGMJZ8TRR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // Initialize with consent denied
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    });
+
+    gtag('config', 'G-VCGMJZ8TRR', {
+      'send_page_view': false,  // Prevent the initial page view
+      'anonymize_ip': true
+    });
+
+    gtag('set', {
+      'allow_google_signals': false,
+      'allow_ad_personalization_signals': false,
+      'restricted_data_processing': true
+    });
+
+  </script>
+
+<!-- Begin Cookie Consent plugin by Silktide - https://cookieconsent.insites.com/ -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+<style>
+.cc-message a:visited {
+     color: rgb(255, 255, 255)
+}
+</style>
+<script>
+
+function setCookie(cname, cvalue, exdays, domain) {
+      domain = domain || "";
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;domain=" + domain;
+    }
+
+
+window.addEventListener("load", function () {
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#35456B",
+        "text": "#ffffff"
+      },
+      "button": {
+        "background": "#6273B6",
+        "text": "#ffffff"
+      }
+    },
+    position: "bottom",
+    "static": false,
+    "type": "opt-in",
+    "revokable": false,
+    "content": {
+      "message": "<h2 class='text-light' style='margin-bottom: 10px'>Cookies</h2>This website uses cookies to improve your experience and to monitor the site traffic. Non-essential cookies are not set by default and you can choose to accept them by clicking on the 'Accept' button. To manage your cookie choices and find out more about how we use cookies visit our ",
+      "allow": "<span style='padding: 20px;font-size: 18px;'>Accept</span>",
+      "deny": "<span style='display: none'>Reject</span>",
+      "link": "<span style='font-size: 20px;font-weight: bold'>Privacy Statement</span>",
+      "href": "#",
+       "policy":  "Cookie Policy"
+    },
+    "onInitialise": function (e) {
+     if (e == "allow") {
+         gtag('consent', 'update', {
+              'analytics_storage': 'granted'
+            });
+            // Manually send the page view after consent is granted
+            gtag('event', 'page_view');
+      } else {
+//delete ga cookies
+         setCookie("_ga", "", 0, ".nationaldata.ie");
+            setCookie("_ga_VCGMJZ8TRR", "", 0, ".nationaldata.ie");
+      }     
+    },
+    "onStatusChange": function (e, t) {
+     if (e == "allow") {
+        gtag('consent', 'update', {
+              'analytics_storage': 'granted'
+            });
+            // Manually send the page view after consent is granted
+            gtag('event', 'page_view');
+            // window.location.href = window.location.pathname;
+            $("#cookie-consent-status-toggle").prop("checked", true)
+      } else {
+       setCookie("_ga", "", 0, ".nationaldata.ie");
+            setCookie("_ga_VCGMJZ8TRR", "", 0, ".nationaldata.ie");
+
+      }
+    }
+  });
+
+$(".cc-message").append();
+
+$(".cc-message").append(
+    $("<br>").get(0).outerHTML +
+    $("<br>").get(0).outerHTML +
+    $("<a>", {
+        "html": "Dismiss this message",
+        "href": "#",
+        "name": "dismiss-cookie-banner",
+        "style": "color: #ffffff"
+    }).get(0).outerHTML
+
+);
+
+$("[name=dismiss-cookie-banner]").click(function(e) {
+    e.preventDefault();
+    $(".cc-window").hide();
+});
+
+
+
+
+  $(".cc-link, #cookie-banner-privacy-statement-link").click(function (e) {
+    e.preventDefault()
+    setCookie("cookieconsent_status", "deny", 365);
+    window.location.href = "/privacystatement/"
+  });
+
+  window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VCGMJZ8TRR', { 'anonymize_ip' : true });
+      gtag('set', {'allow_google_signals': false});
+      gtag('set', {'allow_ad_personalization_signals': false});
+      gtag ( 'set', { 'restricted_data_processing': true });
+
+});
+</script>
+
+<!-- End Cookie Consent plugin -->
+</head>
+
+<body class="">
+    <header class="site-header">
+<!--        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="nav justify-content-end">
+                        <a class="nav-link" href='' title="Gaeilge">Gaeilge</a>
+                    </div> <!-- / col-->
+<!--               </div>  /row-->
+<!--            </div>  /container -->
+<!--        </div>  /top-bar wrapper-->
+        <div class="logo-bar">
+            <div class="container">
+                <div class="row">
+                    <div  class="col">
+                        <a class="brand-logo-link" href="/" rel="home" title="to homepage">
+                            <h1>
+                                <img src='/media/NationalDataie/Images/ndi-logo.png' alt="" width="343" height="85" />
+                                <span class="visually-hidden">National Data Infrastructure</span>
+                            </h1>
+                        </a>
+                    </div> <!-- /col -->
+                </div> <!-- /row-->
+            </div> <!-- /container -->
+        </div> <!-- /logo-bar -->
+    </header>
+
+        <div class="container" role="navigation">
+            <nav class="main-nav navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <!-- navigation object : nationaldata.ie main navigation -->
+                        <ul class="navbar-nav nav-fill w-100"><li class="nav-item"><span class="currentbranch0"><a href="/Standards/">Standards</a></span></li><li class="nav-item"><a href="/Skills/">Skills</a></li><li class="nav-item"><a href="/Services/">Services</a></li><li class="nav-item"><a href="/Resources/">Resources</a></li><li class="nav-item"><a href="/NewsandEvents/">News and Events</a></li></ul> <!-- /navbar nav-->
+
+                    </div> <!-- / navbar-collapse-->
+                </div> <!-- /container-fluid-->
+            </nav>
+        </div>
+
+    
+        <main id="content" class="container" tabindex="-1">
+          <div class="row justify-content-between">
+                <div class="col-md-2">
+                    <nav class="text-secondary small" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+<a href="/">Home</a></li>     <li class="breadcrumb-item"><a href="/Standards/">Standards</a></li>     <li class="breadcrumb-item"><a href="/Standards/NationalDataMethodologyHub/">National Data Methodology Hub</a></li>     <li class="breadcrumb-item"><a href="/Standards/NationalDataMethodologyHub/DepartmentofEducationandYouth/">Department of Education and Youth</a></li>     <li class="breadcrumb-item"><a href="/Standards/NationalDataMethodologyHub/DepartmentofEducationandYouth/TeacherWorkforceData/">Teacher Workforce Data</a></li>
+  </ol>
+
+                    </nav>
+                </div>
+           
+<div class="col-md-2">
+    <!-- Language switcher temporarily disabled
+    <span class="px-3 text-secondary"><a href="#" onClick="return false;">Gaeilge</a></span>
+    <span class="px-3 text-secondary"><a href="/Standards/NationalDataMethodologyHub/DepartmentofEducationandYouth/TeacherWorkforceData/">English</a></span>
+    -->
+</div>
+
+          </div>
+            <div class="row">
+                <div class="col-md-8 order-2 order-md-1">
+                  <article>
+<img src="/media/NationalDataie/Images/NDI_Methodology_Hub_Banner.png" alt="" class="img-fluid ">
+
+
+<span id="d.en.600457"></span>
+<h1 class="mt-5">Teacher Workforce Data</h1>
+
+<div class="card product-methods-item mt-5">
+  <div class="card-header">
+    <h4 class="mb-0">Product Information</h4>
+  </div>
+  
+  <div class="card-body methods-section">
+    <h6 class="card-title">Product Name:</h6>
+    <p class="card-text">
+      <a href='https://data.cso.ie/product/TAD'>Teacher Workforce Data</a>
+	
+      
+      
+	</p>
+  </div> <!-- /methods-section -->
+
+  <div class="card-body methods-section">
+    <h6 class="card-title">Product purpose:</h6>
+    <p class="card-text">It provides detailed background information on the Teacher Workforce Data tables published by the Department of Education & Youth on the Central Statistics Office’s (CSO) PX Stat Open Data platform. These tables are based on data from the DEY and ETB’s payroll systems, and the Teaching Council registration datasets. They provide data on teacher workforce counts in Irish schools funded by the state. </p>
+  </div> <!-- /methods-section -->
+
+  <div class="card-body methods-section">
+    <h6 class="card-title">Legislative Basis National:</h6>
+    <p class="card-text">
+      
+      
+      
+          
+      
+	</p>
+  </div> <!-- /methods-section -->
+
+  <div class="card-body methods-section">
+    <h6 class="card-title">Legislative Basis European:</h6>
+    <p class="card-text">
+            
+            
+          
+            
+            
+            
+            
+    </p>
+  </div> <!-- /methods-section -->
+
+  <div class="card-body methods-section">
+    <h6 class="card-title">Periodicity:</h6>
+    <p class="card-text">Annual</p>
+  </div> <!-- /methods-section -->
+
+  <div class="card-body methods-section">
+    <h6 class="card-title">Time Coverage:</h6>
+    <p class="card-text">2015 - 2023</p>
+  </div> <!-- /methods-section -->
+
+
+  <div class="card-body methods-section">
+    <h6 class="card-title">Principal External Users:</h6>
+    <p class="card-text">Government Departments, CSO, Education Working Groups, the Teaching Council, OECD, UNESCO,  Media and the General Public.</p>
+  </div> <!-- /methods-section -->
+
+
+	<div class="card-footer"><small class="text-muted">Page last updated: 06-02-2026</small></div>  
+  
+</div> <!-- closes Methological Item Div -->
+
+
+<div class="card mt-5">
+  <div class="card-header">
+    <h4 class="mb-0">Summary Quality Report</h4>
+  </div>
+  <ul class="list-group list-group-flush">    <li class="list-group-item"><a href="/media/NationalDataie/MethodologyDocumentation/Teacher_Workforce_Data_Quality_Report.pdf">Teacher Workforce Data - Quality Report</a></li>
+	</ul>
+</div><div class="card mt-5">
+  <div class="card-header">
+    <h4 class="mb-0">Methodological Documents</h4>
+  </div>
+  <ul class="list-group list-group-flush">    <li class="list-group-item"><a href="/media/NationalDataie/MethodologyDocumentation/Department_of_Education_and_Youth_Statistics_Quality_Statement.pdf">Department of Education and Youth Statistics Quality Statement</a></li>
+    <li class="list-group-item"><a href="/media/NationalDataie/MethodologyDocumentation/Department_of_Education_&_Youth_Workforce_Data_Methodology.pdf">Department of Education and Youth - Workforce Data Methodology</a></li>
+	</ul>
+</div><div class="card mt-5">
+  <div class="card-header">
+    <h4 class="mb-0">Related Content</h4>
+  </div>
+  <ul class="list-group list-group-flush"><li class="list-group-item">
+  <div>Teacher Workforce Data</div>
+  <div style="margin-top: 8px;">
+    <a href="https://data.cso.ie/product/TAD" 
+       target="_blank"
+       rel="noopener noreferrer">
+      View Data on PxStat
+    </a>
+  </div>
+</li>	</ul>
+</div>                    </article> 
+                </div><!-- /col-->
+
+								
+                <div class="col-md-3 offset-md-1 order-1 order-md-2">
+                    <aside class="main-sidebar row gy-md-5">
+                        <nav>
+    <h3>In this Section</h3>
+    <ul class="navbar-nav">
+
+<li class="nav-item"><a href="/Standards/NationalDataMethodologyHub/DepartmentofEducationandYouth/">Department of Education and Youth</a></li><li class="nav-item"><span class="currentbranch6"><a href="/Standards/NationalDataMethodologyHub/DepartmentofEducationandYouth/TeacherWorkforceData/">Teacher Workforce Data</a></span></li>    </ul>
+</nav>
+                      	<!--<p><small class="mt-1 text-body-secondary">Go to <a href="/NewsandEvents/">News and Events</a></small></p> -->
+                      
+                        <div class="card my-5 gx-0">
+	<div class="card-header">
+      <h5>Contact Details</h5>
+	</div>
+  <ul class="list-group list-group-flush">   
+    <li class="list-group-item">
+      <h6>Contact Organisation:</h6>           
+      Department of Education and Youth
+    </li>
+    <li class="list-group-item">
+      <h6>Contact Person: </h6>
+      Olwyn Bynre
+    </li>
+    <li class="list-group-item">
+      <h6>Contact Person Role: </h6>
+      Statistician
+    </li>
+    <li class="list-group-item">
+      <h6>Contact email: </h6>          
+      <a href="mailto:Statistics&#64;education&#46;gov&#46;ie" target="_top">Statistics&#64;education&#46;gov&#46;ie</a>
+    </li>
+  </ul> <!-- /list-group -->
+      
+</div> <!-- /card -->
+                   
+
+                      
+                    </aside>
+                </div> <!-- /col-->
+
+            </div> <!-- /row -->
+        </main> <!-- /container -->
+
+
+
+
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="main-footer row py-4 mt-5">
+                    <div class="contact col-md-8">
+                        <h4 class="">Contact us</h4>
+                        <div class="row">
+                            <ul class="contact-address col-md-6 list-unstyled">
+                                <li>National Data Infrastructure</li>
+                                <li>Central Statistics Office</li>
+                                <li>Skehard Road</li>
+                                <li>Cork T12 X00E</li>
+                                <li>Ireland</li>
+                            </ul>
+                            <ul class="contact-forms col-md-6 list-unstyled">
+                              	<li>Please <a href="mailto:ndi@cso.ie?subject=NationalData.ie Query">contact the CSO NDI team</a> to discuss any of the information or services featured on this website.</li>
+                                <li><a href="mailto:ndi@cso.ie">ndi@cso.ie</a></li>
+                            </ul>
+                        </div> <!-- /row-->
+                    </div> <!-- /contact col-->
+
+                    <div class="quick-links col-md-4 align-self-center">
+                        <p class="h4 display-6 text-end">Developing Data as a National Resource</p>
+<!--                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a  class="nav-link" href="">Irish Statistical System</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  class="nav-link" href="">Code of Practice</a>
+                            </li>
+                          	<li class="nav-item">
+                                <a  class="nav-link" href="">Sign up to the Code of Practice</a>
+                            </li>
+                        </ul>
+-->                    </div> <!-- end quick-links-->
+                </div> <!-- end main footer-->
+            </div> <!-- /container -->
+        </footer>
+
+        <footer class="policies-footer">
+            <div class="container">
+                <nav class="sub-nav nav justify-content-center">
+                        <a  class="nav-link" href="/Copyright/">Copyright Policy</a>
+                        <a  class="nav-link" href="/PrivacyStatement/">Privacy Statement</a>
+                        <a  class="nav-link" href="/Accessibility/">Accessibility Statement</a>
+                        <!--<a  class="nav-link" href="">Sitemap</a>-->
+                </nav>
+            </div> <!-- end policies-footer -->
+        </footer>
+
+        <footer class="byline-footer">
+            <div class="container">
+                <div class="col justify-content-center py-1">
+                    Website presented by the <a href="https://www.cso.ie">Central Statistics Office</a>, Ireland
+                </div>
+            </div> <!-- end by-line -->
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
