@@ -1,0 +1,93 @@
+{
+  "status": "pass",
+  "version": "V187 independent audit",
+  "rank_rows": 192,
+  "bound_rows": 1920,
+  "mean_rows": 144,
+  "pairwise_roots": 30,
+  "scalar_max_score_or_regret_error": 1.7763568394002505e-14,
+  "roots": [
+    {
+      "weight_reference": "fixed",
+      "independent_root": 0.07147330499127809,
+      "percentage": 7.147330499127809,
+      "tie_cities": [
+        "Zurich",
+        "Oslo"
+      ],
+      "root_gap": 0.0,
+      "below_gap": -7.27724703608601e-07,
+      "above_gap": 7.27724724924883e-07
+    },
+    {
+      "weight_reference": "equal",
+      "independent_root": 0.5142356915020831,
+      "percentage": 51.423569150208316,
+      "tie_cities": [
+        "Zurich",
+        "Oslo"
+      ],
+      "root_gap": 0.0,
+      "below_gap": -6.9716708139822e-07,
+      "above_gap": 6.971671098199295e-07
+    }
+  ],
+  "exhaustive_corner_checks": [
+    {
+      "weight_reference": "fixed",
+      "delta": 0.05,
+      "corners": 4096,
+      "independent_max_gap": -0.15620478192045084
+    },
+    {
+      "weight_reference": "fixed",
+      "delta": 0.07147330499127819,
+      "corners": 4096,
+      "independent_max_gap": 0.0
+    },
+    {
+      "weight_reference": "equal",
+      "delta": 0.05,
+      "corners": 4096,
+      "independent_max_gap": -3.0767359087599857
+    },
+    {
+      "weight_reference": "equal",
+      "delta": 0.5142356915020837,
+      "corners": 4096,
+      "independent_max_gap": 0.0
+    }
+  ],
+  "immutable_science_bindings_verified": 243,
+  "historical_mutable_navigation_bindings": [
+    "design/task4_user_current_extensions.json",
+    "design/task4_user_current_model.json"
+  ],
+  "total_snapshot_bindings": 245,
+  "original_CSV_preserved": true,
+  "active_V181_bounds_preserved": true,
+  "primary_admissions": 0,
+  "actual_baseline_width_change": 0,
+  "boundary_decision_rank_scope": "Raw exact-float ranking may split a numerical tie; all numerical regrets verified and the certified Zurich/Oslo tie is checked with tolerance 1e-10. Nonboundary decision ranks verified exactly.",
+  "proof_scope": "Analytic separability and monotonicity cover the complete declared box; corner enumeration corroborates it at the recorded radii. No empirical error model, probability, future trend or physical joint attainability is inferred.",
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_current_model.json": "474b5c3bf97d5abf46d50f9bce2667b252e439a9e70c88d5b557649d0c0e543c",
+    "design/task4_user_current_extensions.json": "a02448ab19ec1f537f2ebb9b669da0583cceb9f6e421e1e73a1876f56ef6f548",
+    "scripts/task4_v187_joint_means.py": "b667eebe107174b5063f90399b13058f2b3b2f970d45bd8b5fe62da01181bc27",
+    "scripts/task4_user_v181_revision.py": "68886cb17834b1bc2517aa84e36a13ed2affaaa1a97b311bf20c4a7479c08d61",
+    "scripts/task4_user_city_indicators.py": "7d529ee3a617a5d3399baaa8a0eb97b0bb222da0c47b75f05acffa880291ef0a",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/audit_task4_v187.py": "6a540622113ceaaebc21d9d7cc625ff36f5b7f7534645523b8556b932e773ddf",
+    "design/task4_user_v181_snapshot.json": "332d254fcddc8ff1a1d2f5d8581e329cab4239c9cdd3c7c8ae49239af2bca066"
+  },
+  "audited_output_sha256": {
+    "results/task4_v187_joint_means/corner_bounds.csv": "2794e574c8fa9346c5185074fe89ede46a79802e6752b05ed7a6bd268c7593d6",
+    "results/task4_v187_joint_means/corner_means.csv": "f1baf99fc64c73f635cacc7609ef51113fe006c96f7c472550625292593858f9",
+    "results/task4_v187_joint_means/corner_ranks.csv": "a3913ef570a7b3bd3254c324d76bf1ebc84d38d9b7c8c22bc8d7f32b1e08aa42",
+    "results/task4_v187_joint_means/pairwise_crossings.csv": "49eac4f6e1762d0d445294cea8f8bc51ff2f62ac2321baaa9963dab5c1abb5c6",
+    "results/task4_v187_joint_means/proof_review.md": "cbcde90b25b26e8cc3352133cc7223238a499105289a9fd81d2b19dc4a85d3a2",
+    "results/task4_v187_joint_means/summary.json": "c5b21e12319508371517f4d94ff802bee3aa7b9ad674621bfac710d085b41088"
+  }
+}

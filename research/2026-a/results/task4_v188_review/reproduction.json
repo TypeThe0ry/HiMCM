@@ -1,0 +1,129 @@
+{
+  "status": "pass",
+  "iteration": "V182",
+  "runner_sha256": "0f661edd01c55287e0fa99a503718203b89f9cf9b8f1d19c4a472f3f62a68481",
+  "paper_version": "V188",
+  "primary_model": "V181",
+  "paper_head": "63f8ac3c51a7a9c1c46c1149a256aa61f0f51cdb",
+  "research_head": "3ade44c3b159c71cddb033f9c767742fbec68d3e",
+  "canonical_pdf_sha256": "81005745d5e79519915199fe32476ce36f0edd86e475a905a48ce066e59386b2",
+  "source_bindings_sha256": {
+    "research/2026-a/design/task4_user_current_review.json": "1448b55aa3ebf86cc6cb642d898af56d83b36bb84ab3c01ea835ecf633ed1d2e",
+    "research/2026-a/design/task4_user_current_model.json": "474b5c3bf97d5abf46d50f9bce2667b252e439a9e70c88d5b557649d0c0e543c",
+    "research/2026-a/design/task4_user_v181_snapshot.json": "332d254fcddc8ff1a1d2f5d8581e329cab4239c9cdd3c7c8ae49239af2bca066",
+    "research/2026-a/results/task4_v188_review/verification.json": "b64c18278b165b2d733c33f102de929ff30da4674b0fe4fd98d2b6cf01dd813c"
+  },
+  "environment": {
+    "python": "3.11.18",
+    "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
+    "tools": {
+      "tectonic": "Tectonic 0.17.0",
+      "pdftotext": "pdftotext version 26.01.0",
+      "pdftoppm": "pdftoppm version 26.05.0"
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2"
+    },
+    "tex_resources": "Existing local Tectonic cache required;no resource-download fallback"
+  },
+  "archive": {
+    "files": 774,
+    "git_blob_algorithm": "sha1",
+    "all_paths_and_blobs_match": true
+  },
+  "historical_snapshot_navigation_exceptions": [
+    "design/task4_user_current_extensions.json",
+    "design/task4_user_current_model.json"
+  ],
+  "science": {
+    "utility_cells": 160,
+    "deterministic_city_weight_cases": 32,
+    "comparisons": [
+      {
+        "weight_reference": "fixed",
+        "city_cases": 16,
+        "conservative_recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0,
+        "mean_score_interval_width": 16.04938479240282
+      },
+      {
+        "weight_reference": "equal",
+        "city_cases": 16,
+        "conservative_recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0,
+        "mean_score_interval_width": 18.837940743079372
+      }
+    ],
+    "MC_rerun": false,
+    "raw_source_semantics_reaudited": false
+  },
+  "builds": [
+    {
+      "kind": "direct",
+      "passed": true,
+      "pdf_sha256": "f14a6a82b93c1dded5f85469a132cf745aeba8040ddb92b9eda933fce32fe683",
+      "text_pages_equal": true,
+      "grayscale_72dpi_pages_equal": 27,
+      "underfull_paragraphs": 2,
+      "removed_snapshot_outputs": [
+        "drafts/task4_v188_paper.pdf"
+      ],
+      "command": [
+        "tectonic",
+        "--only-cached",
+        "-Z",
+        "search-path=..",
+        "--outdir",
+        "/data/scratch/himcm_v188_independent/work-q3kuy6mc/direct/compiled",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--makefile-rules",
+        "/data/scratch/himcm_v188_independent/direct/dependencies.mk",
+        "task4_v188_paper.tex"
+      ],
+      "physical_pages": 27,
+      "native_letter_and_headers_footers_checked": true
+    },
+    {
+      "kind": "root",
+      "passed": true,
+      "pdf_sha256": "69dd5d1525bccd07e3bc4d4e385e91d5a7298a0c5901566039424cf5dacc8509",
+      "text_pages_equal": true,
+      "grayscale_72dpi_pages_equal": 27,
+      "underfull_paragraphs": 2,
+      "removed_snapshot_outputs": [
+        "drafts/task4_v188_paper.pdf"
+      ],
+      "command": [
+        "tectonic",
+        "--only-cached",
+        "--outdir",
+        "/data/scratch/himcm_v188_independent/work-q3kuy6mc/root/compiled",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--makefile-rules",
+        "/data/scratch/himcm_v188_independent/root/dependencies.mk",
+        "task4_v188_review_entry.tex"
+      ],
+      "physical_pages": 27,
+      "native_letter_and_headers_footers_checked": true
+    }
+  ],
+  "input_protection": {
+    "scientific_files_checked": 243,
+    "paper_files_checked": 774,
+    "changed": []
+  },
+  "elapsed_seconds": 5.721,
+  "scope": "Local tools+existing TeX cache;source-defined deterministic model and exact text/72dpi rendering checks. No fresh-OS/no-cache guarantee,MC replay,source revalidation,server compile or submission-readiness claim.",
+  "submission_ready": false
+}

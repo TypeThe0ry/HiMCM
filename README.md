@@ -1,3 +1,5 @@
+当前自有审阅稿为 **V188**（科学 **V181**）：按用户最新授权暂用模板编号18213，注册尚未核实。新增[V187联合均值边界](docs/handoff/V187_RESEARCH_UPDATE.md)和[V188交付](docs/handoff/V188_RESEARCH_UPDATE.md)；V187仅支持材料，未改基准或正文。以下旧版本记录保留其历史时点。
+
 # 2026 HiMCM A
 
 当前统一入口：**user16 V181科学／扩展，V186自有审阅稿**；见[V186核验和下一步](docs/handoff/V186_RESEARCH_UPDATE.md)。Zurich保守推荐、16可能冠军保持。

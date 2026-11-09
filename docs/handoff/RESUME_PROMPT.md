@@ -1,14 +1,14 @@
-# 恢复HiMCM：主分析／扩展V181，当前自有独立稿V186
+# 恢复HiMCM：主分析／扩展V181，当前自有独立稿V188
 
-先读AGENTS.md、GUIDELINES.md与[V186自有稿与单项阈值](V186_RESEARCH_UPDATE.md)。长期goal active。GitHub保存研究，论文在相邻HiMCM-Overleaf；所有新增／修改文字使用指定anti-defensive-writing技能，只改自有内容。
+先读AGENTS.md、GUIDELINES.md、[V188暂用编号](V188_RESEARCH_UPDATE.md)与[V187联合均值边界](V187_RESEARCH_UPDATE.md)。长期goal active。GitHub保存研究，论文在相邻HiMCM-Overleaf；所有新增／修改文字使用指定anti-defensive-writing技能，只改自有内容。
 
 ## 当前权威入口
 
 - 原CSV data/task4_v117_team_intake/city_indicators.csv，SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c；16城×10指标，旧25城仅历史案例。
 - 主注册表 research/2026-a/design/task4_user_current_model.json：V181模块task4_user_v181_revision.revised_bounds()；快照design/task4_user_v181_snapshot.json；结果results/task4_user_v181_revision/。23补充、112点／35部分／13全未知。
 - 扩展注册表design/task4_user_current_extensions.json：task4_v181_extensions.py preferences/future/method/diagnostics；V181全部既有情景、权重、种子和机制保持。
-- 审阅注册表design/task4_user_current_review.json与Overleaf drafts/task4_current_review.json一致：V186，科学V181，稿drafts/task4_v186_paper.tex/.pdf，根代理task4_v186_review_entry.tex；未改默认Main、队友main/ref/class。
-- 科学审计results/task4_v181_transition/verification.json；当前稿审计results/task4_v186_review/verification.json及activation.json、sync.json；本地独立Git快照重建回执见V186交接。
+- 审阅注册表design/task4_user_current_review.json与Overleaf drafts/task4_current_review.json一致：V188，科学V181，稿drafts/task4_v188_paper.tex/.pdf，根代理task4_v188_review_entry.tex；未改默认Main、队友main/ref/class。
+- 科学审计results/task4_v181_transition/verification.json；当前稿审计results/task4_v188_review/verification.json及activation.json、sync.json；本地独立Git快照重建回执见V188交接。
 
 ## 结论与规则
 
@@ -18,14 +18,16 @@
 
 ## 交付与下一步
 
-V18627页=25正文参考+2暂定AI，53引用、新闻18—19/AI26—27、主文余量0。原生mcmthesis／控制号PENDING／空页脚；47项交付映射13实质待办，submission_ready=false。AI选集固定2026-11-09 14:31:18.850UTC，后续及队友记录不在其中。
+V18827页=25正文参考+2暂定AI，53引用、新闻18—19/AI26—27、主文余量0。原生mcmthesis／显示暂用18213、真实注册未核／空页脚；47项交付映射13实质待办，submission_ready=false。AI选集固定2026-11-09 14:31:18.850UTC，后续及队友记录不在其中。
 
-先核V186双仓sync与独立重建回执，采集沿用V183已完成的96行情景（13全缺失+35部分区间）；不重复重基V155。并发只追新同口径高价值证据；已失败教师路线跳过。只推各自选定内容，分别fetch审diff正常push；Git同步不等于服务器编译或比赛收件。未经具体授权不修改队友正文，不重新做旧模型／Amsterdam候选，不无限刷新AI窗口。
+先核V188双仓sync与独立重建回执，采集沿用V183已完成的96行情景（13全缺失+35部分区间）；不重复重基V155。并发只追新同口径高价值证据；已失败教师路线跳过。只推各自选定内容，分别fetch审diff正常push；Git同步不等于服务器编译或比赛收件。未经具体授权不修改队友正文，不重新做旧模型／Amsterdam候选，不无限刷新AI窗口。
 
 本轮V184核实Eurostat匹配工作均值28.8/2011与39.9e/2024，当前greatercity标签不证明历史边界／用户抄录链；原CSV、标记及全部当前160界保持。撤回Zurich工作通勤、两项代理或全部12项用户通勤均值时，原权重推荐Singapore、等权仍Zurich；所有情景16可能。新稿已同步来源及诊断；不要把来源匹配当成高中分布或新的数值准入。CH001C当前Bern，Zurich为CH002C，按同响应字典核名。Helsinki787教学人员非FTE，98人年属青年工作坊，均跳过。详[V184](V184_RESEARCH_UPDATE.md)。
 
 
 V186已把V18546.5889516单均值边界精炼入自有5.5末段：Jensen规则和其余数据固定，原权重约46.59平局、等权全部非负均值不切换。16可能的表述仅属撤回检验，不泛化到均值参数全域。科学V181及全部数据保持，V184图／数值／摘要／结论／新闻／参考／AI文件冻结复用；当前稿V186，详[V186](V186_RESEARCH_UPDATE.md)。不要重复阈值入稿工作。
+
+V187已完成12项均值联合盒的锐边界：原权重δ*=7.1473304991%，等权51.4235691502%，均Oslo先绑定。严格小于边界时全盒Zurich唯一最小遗憾，边界可并列，超过有反例；δ非实测误差／未来趋势／概率。0新准入0基准变化，研究材料已选送Overleaf，未入正文。V188仅按用户最新授权把自有wrapper显示编号改为18213(暂用)，真实注册仍未核，全部V186正文冻结复用。下一轮在25页预算内精炼联合边界入自有5.5；不要重复单项阈值或重做联合证明。
 
 ## 冻结恢复档案（以下为历史，不作为当前入口）
 

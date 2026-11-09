@@ -1,0 +1,265 @@
+{
+  "version": "V187",
+  "primary": "V181 unchanged",
+  "paper_at_creation": "V186",
+  "primary_admissions": 0,
+  "actual_baseline_width_change": 0,
+  "box_domain": [
+    0,
+    1
+  ],
+  "means_cities": [
+    "Zurich",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Stockholm",
+    "Paris",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Oslo",
+    "Prague"
+  ],
+  "retained_nonmean_cities": [
+    "Vienna",
+    "Warsaw",
+    "Singapore",
+    "Tokyo"
+  ],
+  "thresholds": [
+    {
+      "weight_reference": "fixed",
+      "sharp_radius": 0.07147330499127819,
+      "sharp_radius_percent": 7.147330499127818,
+      "binding_rivals": [
+        "Oslo"
+      ],
+      "tie_regret": 17.589267823839343,
+      "signed_gap_at_root": 0.0,
+      "gap_below": -7.277247107140283e-07,
+      "gap_above": 7.277247107140283e-07,
+      "strict_guarantee": "Zurich is the unique minimax-regret recommendation for every mean vector in the box when delta < sharp_radius; at equality a tie is attainable; above it a counterexample exists."
+    },
+    {
+      "weight_reference": "equal",
+      "sharp_radius": 0.5142356915020837,
+      "sharp_radius_percent": 51.42356915020837,
+      "binding_rivals": [
+        "Oslo"
+      ],
+      "tie_regret": 17.746081633628535,
+      "signed_gap_at_root": 0.0,
+      "gap_below": -6.971670885036474e-07,
+      "gap_above": 6.971671098199295e-07,
+      "strict_guarantee": "Zurich is the unique minimax-regret recommendation for every mean vector in the box when delta < sharp_radius; at equality a tie is attainable; above it a counterexample exists."
+    }
+  ],
+  "cases": [
+    {
+      "weight_reference": "fixed",
+      "case": "baseline",
+      "delta": 0,
+      "worst_signed_gap": -0.4862847137381223,
+      "Zurich_strict_for_entire_box": true,
+      "corner_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 16.04938479240282
+    },
+    {
+      "weight_reference": "fixed",
+      "case": "five_percent",
+      "delta": 0.05,
+      "worst_signed_gap": -0.15620478192045084,
+      "Zurich_strict_for_entire_box": true,
+      "corner_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 15.938315897352753
+    },
+    {
+      "weight_reference": "fixed",
+      "case": "ten_percent",
+      "delta": 0.1,
+      "worst_signed_gap": 0.20776066981348862,
+      "Zurich_strict_for_entire_box": false,
+      "corner_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 15.818706367157189
+    },
+    {
+      "weight_reference": "fixed",
+      "case": "just_below",
+      "delta": 0.07147320499127818,
+      "worst_signed_gap": -7.277247107140283e-07,
+      "Zurich_strict_for_entire_box": true,
+      "corner_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 15.888018329666876
+    },
+    {
+      "weight_reference": "fixed",
+      "case": "boundary",
+      "delta": 0.07147330499127819,
+      "worst_signed_gap": 0.0,
+      "Zurich_strict_for_entire_box": false,
+      "corner_recommendation": [
+        "Zurich",
+        "Oslo"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 15.888018091714414
+    },
+    {
+      "weight_reference": "fixed",
+      "case": "just_above",
+      "delta": 0.07147340499127819,
+      "worst_signed_gap": 7.277247107140283e-07,
+      "Zurich_strict_for_entire_box": false,
+      "corner_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 15.888017853761923
+    },
+    {
+      "weight_reference": "equal",
+      "case": "baseline",
+      "delta": 0,
+      "worst_signed_gap": -3.3991441588396683,
+      "Zurich_strict_for_entire_box": true,
+      "corner_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 18.837940743079372
+    },
+    {
+      "weight_reference": "equal",
+      "case": "five_percent",
+      "delta": 0.05,
+      "worst_signed_gap": -3.076735908759993,
+      "Zurich_strict_for_entire_box": true,
+      "corner_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 18.74322538734617
+    },
+    {
+      "weight_reference": "equal",
+      "case": "ten_percent",
+      "delta": 0.1,
+      "worst_signed_gap": -2.7547145402761046,
+      "Zurich_strict_for_entire_box": true,
+      "corner_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 18.641044419323187
+    },
+    {
+      "weight_reference": "equal",
+      "case": "just_below",
+      "delta": 0.5142355915020838,
+      "worst_signed_gap": -6.971670885036474e-07,
+      "Zurich_strict_for_entire_box": true,
+      "corner_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 17.45595335399585
+    },
+    {
+      "weight_reference": "equal",
+      "case": "boundary",
+      "delta": 0.5142356915020837,
+      "worst_signed_gap": 0.0,
+      "Zurich_strict_for_entire_box": false,
+      "corner_recommendation": [
+        "Zurich",
+        "Oslo"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 17.45595298556558
+    },
+    {
+      "weight_reference": "equal",
+      "case": "just_above",
+      "delta": 0.5142357915020837,
+      "worst_signed_gap": 6.971671098199295e-07,
+      "Zurich_strict_for_entire_box": false,
+      "corner_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions_in_corner": 16,
+      "necessary_champions_in_corner": 0,
+      "corner_mean_score_width": 17.455952617135267
+    }
+  ],
+  "corner_checks": [
+    {
+      "weight_reference": "fixed",
+      "delta": 0.05,
+      "corners": 4096,
+      "max_signed_gap": -0.15620478192045084,
+      "analytic_corner_gap": -0.15620478192045084
+    },
+    {
+      "weight_reference": "fixed",
+      "delta": 0.07147330499127819,
+      "corners": 4096,
+      "max_signed_gap": 0.0,
+      "analytic_corner_gap": 0.0
+    },
+    {
+      "weight_reference": "equal",
+      "delta": 0.05,
+      "corners": 4096,
+      "max_signed_gap": -3.076735908759993,
+      "analytic_corner_gap": -3.076735908759993
+    },
+    {
+      "weight_reference": "equal",
+      "delta": 0.5142356915020837,
+      "corners": 4096,
+      "max_signed_gap": 0.0,
+      "analytic_corner_gap": 0.0
+    }
+  ],
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_current_model.json": "474b5c3bf97d5abf46d50f9bce2667b252e439a9e70c88d5b557649d0c0e543c",
+    "design/task4_user_current_extensions.json": "a02448ab19ec1f537f2ebb9b669da0583cceb9f6e421e1e73a1876f56ef6f548",
+    "scripts/task4_v187_joint_means.py": "b667eebe107174b5063f90399b13058f2b3b2f970d45bd8b5fe62da01181bc27",
+    "scripts/task4_user_v181_revision.py": "68886cb17834b1bc2517aa84e36a13ed2affaaa1a97b311bf20c4a7479c08d61",
+    "scripts/task4_user_city_indicators.py": "7d529ee3a617a5d3399baaa8a0eb97b0bb222da0c47b75f05acffa880291ef0a",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7"
+  },
+  "scope": "Declared independent relative box on twelve supplied mean minutes. Other utility entries and all upper bounds fixed; Singapore stage bins retained. Radius is an assumption, not an observed error, confidence level, probability or future trend. Box attainability concerns declared input scenarios, not proof of joint physical realization.",
+  "proof": "Upper scores constant. Each self-excluded regret depends only on its own lower score and increases with its own mean. Zurich high and all eleven other means low simultaneously maximize R_Z - min(other R). Continuity and monotonicity plus signed endpoint crossings yield the sharp radius.",
+  "baseline_mean_width": {
+    "fixed": 16.04938479240282,
+    "equal": 18.837940743079372
+  }
+}
