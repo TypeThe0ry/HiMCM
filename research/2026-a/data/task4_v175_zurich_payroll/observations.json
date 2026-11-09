@@ -1,0 +1,54 @@
+{
+  "version": "V175",
+  "source_title": "Personal- und Lohnstatistik 2024",
+  "provider": "Kanton Zürich, Finanzdirektion, Personalamt",
+  "reference_period": "calendar year 2024 for workload; 31 December 2024 for appointment counts",
+  "pdf_pages_visually_checked": [
+    3,
+    5,
+    7
+  ],
+  "observations": [
+    {
+      "pdf_page": 5,
+      "variable": "Mittelschullehrpersonal inkl. Lehrbeauftragte",
+      "value": 1826,
+      "unit": "annual VZE",
+      "published_precision": "integer rounded presentation"
+    },
+    {
+      "pdf_page": 5,
+      "variable": "Berufsschullehrpersonal inkl. Lehrbeauftragte",
+      "value": 1340,
+      "unit": "annual VZE",
+      "published_precision": "integer rounded presentation"
+    },
+    {
+      "pdf_page": 7,
+      "variable": "7301 Mittelschulen Beschäftigungsumfang Total",
+      "value": 2188.9,
+      "unit": "annual VZE",
+      "scope": "administrative group includes nonteaching categories; not a teaching-only denominator"
+    },
+    {
+      "pdf_page": 7,
+      "variable": "7301 Mittelschulen Anzahl Anstellungen Total",
+      "value": 3490,
+      "unit": "appointments at 31 December 2024",
+      "scope": "appointments, not unique persons or teaching FTE"
+    }
+  ],
+  "decision": "not admitted",
+  "reasons": [
+    "Calendar-year workload integral does not by itself upper-bound teaching FTE at an autumn census date.",
+    "Government employment-system scope is not proven to cover every Zurich-city public and private provider.",
+    "No matching city, education-stage, student subset and reference-time envelope demonstrated."
+  ],
+  "not_claimed": [
+    "observed 2025 teacher FTE",
+    "citywide exact pupil-teacher ratio",
+    "verified snapshot super-cover upper bound"
+  ],
+  "scientific_inputs_changed": false,
+  "new_data_admitted": 0
+}

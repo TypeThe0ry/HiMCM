@@ -271,3 +271,5 @@ V172把同国辅助案例的四分数表替换为[20项完整差异图](research
 V173仅压缩[自有数据搜集问题段](research/2026-a/results/task4_v173_collection_review/README.md)，1482→976词、原引用键和范围保留，实际省1主文页；当前26页。
 
 V174新增[当前稿／主16城独立复现入口](research/2026-a/results/task4_v174_reproducibility/README.md)：干净临时副本、缓存离线双入口、26页文本及72dpi灰度同、160格／32案例复算，论文仍V173。
+
+V175为[已有MC平均名次提供成对比较界](research/2026-a/results/task4_v175_mean_rank_comparisons/README.md)：4440项中4254方向明确、186未区分，基线κ100的Oslo／Zurich仍未区分；新Zurich年度FTE原件保留口径、未准入，论文仍V173。

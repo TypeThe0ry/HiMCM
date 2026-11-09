@@ -1,6 +1,6 @@
 # 恢复HiMCM：主分析／扩展V154，当前独立稿V173（用户mcmthesis格式）
 
-长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
+长期goal active；本轮完成不结束长期目标。先读AGENTS.md、GUIDELINES.md及[V175均秩比较界与新FTE口径](V175_RESEARCH_UPDATE.md)、[V174独立复现入口](V174_RESEARCH_UPDATE.md)、[V173数据段压缩与当前稿](V173_RESEARCH_UPDATE.md)、[V172同国图与旧稿](V172_RESEARCH_UPDATE.md)、[V168矩阵配图与旧稿](V168_RESEARCH_UPDATE.md)、[V166公平性误差与旧稿](V166_RESEARCH_UPDATE.md)、[V164用户格式与旧稿](V164_RESEARCH_UPDATE.md)、[V160当前稿与交付核对](V160_RESEARCH_UPDATE.md)、[V154统一启用](V154_RESEARCH_UPDATE.md)、[V155当前采集诊断](V155_RESEARCH_UPDATE.md)、[V156新稿交付核对](V156_RESEARCH_UPDATE.md)、[V157师资来源范围](V157_RESEARCH_UPDATE.md)。所有新增／修改论文和研究说明必须使用已安装Adkid-Zephyr/anti-defensive-writing-Skill；旧25城仅历史对照。
 
 ## 当前权威入口
 
@@ -64,3 +64,5 @@ V172当前自有稿同国Figure3在18页、20差异/7明确/13跨零、四旧分
 V173仅替换自有4.2，1482→976词、全部原引用key及重要源范围保留；26=24主文参考+2AI、49引用、余量1页，矩阵8/排名10/分数图11/同国图17/新闻18–19/AI25–26。46清单保持45状态和14待办，187科学/570旧稿保持，其他正文和模板保持，见[V173交接](V173_RESEARCH_UPDATE.md)。
 
 V174已有可执行复现入口scripts/task4_v174_reproduce.py，用当前研究环境Python+外部空output-dir，在两个独立Git快照副本中only-cached重建；26页逐页文本/72dpi灰度同，160格/32案例独立复算，187科学/585旧稿保持，8异常guard通过。依赖已装工具及TeX缓存，不是冷环境或服务器验证；论文仍V173，见[V174交接](V174_RESEARCH_UPDATE.md)。
+
+V175在V169共同事件中派生4440同设定均秩差：4254方向明确、186未区分，22组唯一最小；基线偏好κ100 Oslo−Zurich差−.1528的界跨零。未重放draw、不作真实胜率或更改固定权重推荐。新Zurich Personalamt2024年度教学VZE1826为全年工作量而非秋季时点上界，2原响应、PDF3/5/7实看，0准入。187科学/590已有论文保持，论文V173不变，见[V175交接](V175_RESEARCH_UPDATE.md)。
