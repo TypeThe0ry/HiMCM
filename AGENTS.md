@@ -23,6 +23,10 @@ The user explicitly made the Overleaf workspace the first priority on 2026-11-07
 - Preserve team-written manuscript content and bibliography. Research notes and synthetic examples are supporting material, not an instruction to replace the manuscript or invent empirical results.
 - If no Overleaf session is connected, report that limitation accurately and prepare clearly identified local changes instead of claiming to have edited the online workspace.
 
+## Current delivery evidence
+
+The current delivery map is registered separately in `research/2026-a/design/task4_user_current_delivery.json`, mirrored by Overleaf `drafts/task4_current_delivery.json`. It may be newer than the unchanged review PDF. Use its bound requirements and verification instead of inferring current page locations from a frozen review checklist; passage matches do not certify source quality or final team readiness.
+
 ## Git synchronization
 
 - Work on `main` unless the user requests another branch. Preserve existing branch history.

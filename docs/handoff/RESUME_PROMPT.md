@@ -10,6 +10,10 @@
 - 审阅注册表design/task4_user_current_review.json与Overleaf drafts/task4_current_review.json一致：V189，科学V181，稿drafts/task4_v189_paper.tex/.pdf，根代理task4_v189_review_entry.tex；未改默认Main、队友main/ref/class。
 - 科学审计results/task4_v181_transition/verification.json；当前稿审计results/task4_v189_review/verification.json及activation.json、sync.json；本地独立Git快照重建回执见V189交接。
 
+## 当前交付定位
+
+交付注册表design/task4_user_current_delivery.json与Overleaf drafts/task4_current_delivery.json一致：V190，绑定未改的V189PDF。使用results/task4_v190_delivery/requirements.csv与verification.json；47状态／13待办保持，58限定范围锚点已核，12行页码与0页余量修复。V189自身旧requirements是冻结历史，不作为当前定位。详[V190](V190_RESEARCH_UPDATE.md)，论文／科学仍V189／V181；不重做V187或V189。
+
 ## 结论与规则
 
 固定均宽16.049384792，等权18.837940743；原始输入至今累计收窄14.679823561%。Zurich保守、16可能／0必要；教育优先Oslo。固定中点TOPSIS/VIKOR tau=.483333，Dublin可接受；等权tau=.65、Oslo不接受唯一解。新模拟均值界2064/37，均秩差4255明确／185未区分、22唯一最小期望设定，非现实胜率。
