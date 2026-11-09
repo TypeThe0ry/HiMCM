@@ -1,0 +1,208 @@
+{
+  "version": "V192",
+  "active_primary": "V181 unchanged",
+  "paper": "V189 unchanged",
+  "scope": "Paired export comparison; numeric cells use absolute1e-12difference; retained settings and sampling libraries unchanged. This does not close source or real-world probability questions.",
+  "tables": [
+    {
+      "family": "preferences",
+      "file": "mc_city_summary.csv",
+      "rows": 144,
+      "changed_numeric_cells_over1e12": {
+        "mean_decision_rank": 109,
+        "top3_decision_frequency": 8,
+        "mean_decision_rank_change_vs_baseline": 78,
+        "top3_decision_frequency_change_vs_baseline": 9
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "preferences",
+      "file": "ranks.csv",
+      "rows": 48,
+      "changed_numeric_cells_over1e12": {
+        "score_lower": 6,
+        "max_regret": 6,
+        "decision_rank": 4,
+        "midpoint_illustrative_score": 6,
+        "baseline_decision_rank": 6,
+        "rank_change_positive_improves": 2
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "preferences",
+      "file": "weights.csv",
+      "rows": 30,
+      "changed_numeric_cells_over1e12": {},
+      "byte_equal": true
+    },
+    {
+      "family": "future",
+      "file": "future_mc_city_summary.csv",
+      "rows": 192,
+      "changed_numeric_cells_over1e12": {
+        "mean_decision_rank": 12,
+        "score_lower_change_p05": 24,
+        "score_lower_change_p50": 24,
+        "score_lower_change_p95": 24
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "future",
+      "file": "ranks.csv",
+      "rows": 256,
+      "changed_numeric_cells_over1e12": {
+        "score_lower": 32,
+        "max_regret": 32,
+        "decision_rank": 12,
+        "midpoint_illustrative_score": 32,
+        "midpoint_illustrative_rank": 4,
+        "baseline_decision_rank": 16,
+        "rank_change_positive_improves": 4,
+        "score_lower_change": 24
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "future",
+      "file": "threshold_scan.csv",
+      "rows": 3232,
+      "changed_numeric_cells_over1e12": {
+        "regret_gap_to_best_other": 404
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "future",
+      "file": "thresholds.csv",
+      "rows": 32,
+      "changed_numeric_cells_over1e12": {
+        "baseline_gap_to_best_other": 4,
+        "gap_at_50pct_cost_reduction": 4
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "future",
+      "file": "utility_bounds.csv",
+      "rows": 1280,
+      "changed_numeric_cells_over1e12": {
+        "lower": 16
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "future",
+      "file": "weight_mc_city_summary.csv",
+      "rows": 256,
+      "changed_numeric_cells_over1e12": {
+        "mean_decision_rank": 212
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "method",
+      "file": "country_indicator_bounds.csv",
+      "rows": 20,
+      "changed_numeric_cells_over1e12": {},
+      "byte_equal": true
+    },
+    {
+      "family": "method",
+      "file": "country_score_comparison.csv",
+      "rows": 2,
+      "changed_numeric_cells_over1e12": {},
+      "byte_equal": true
+    },
+    {
+      "family": "method",
+      "file": "istanbul_historical_age_groups.csv",
+      "rows": 2,
+      "changed_numeric_cells_over1e12": {},
+      "byte_equal": true
+    },
+    {
+      "family": "method",
+      "file": "method_components.csv",
+      "rows": 320,
+      "changed_numeric_cells_over1e12": {
+        "midpoint_utility": 4,
+        "vikor_weighted_relative_shortfall": 28,
+        "sample_worst": 32
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "method",
+      "file": "method_ranks.csv",
+      "rows": 32,
+      "changed_numeric_cells_over1e12": {
+        "topsis_midpoint_score": 4,
+        "vikor_S": 28,
+        "vikor_R": 6,
+        "vikor_Q": 28,
+        "main_interval_decision_rank": 2
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "method",
+      "file": "shanghai_district_resources.csv",
+      "rows": 16,
+      "changed_numeric_cells_over1e12": {},
+      "byte_equal": true
+    },
+    {
+      "family": "method",
+      "file": "singapore2020_secondary_exact_age_counts.csv",
+      "rows": 7,
+      "changed_numeric_cells_over1e12": {},
+      "byte_equal": true
+    },
+    {
+      "family": "method",
+      "file": "user16_country_coverage.csv",
+      "rows": 16,
+      "changed_numeric_cells_over1e12": {},
+      "byte_equal": true
+    },
+    {
+      "family": "diagnostics",
+      "file": "vintage_ranks.csv",
+      "rows": 224,
+      "changed_numeric_cells_over1e12": {
+        "score_lower": 28,
+        "max_regret": 28,
+        "decision_rank": 12,
+        "midpoint_illustrative_score": 28,
+        "midpoint_illustrative_rank": 2
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "diagnostics",
+      "file": "witness_cases.csv",
+      "rows": 32,
+      "changed_numeric_cells_over1e12": {
+        "strict_margin": 4
+      },
+      "byte_equal": false
+    },
+    {
+      "family": "diagnostics",
+      "file": "witness_utilities.csv",
+      "rows": 2560,
+      "changed_numeric_cells_over1e12": {
+        "utility": 32
+      },
+      "byte_equal": false
+    }
+  ],
+  "preference_weights_and_matrices_byte_equal": true,
+  "old_certified_pairs": 4255,
+  "new_certified_pairs": 4260,
+  "old_unresolved_pairs": 185,
+  "new_unresolved_pairs": 180
+}
