@@ -1,4 +1,4 @@
-当前自有审阅稿为 **V188**（科学 **V181**）：按用户最新授权暂用模板编号18213，注册尚未核实。新增[V187联合均值边界](docs/handoff/V187_RESEARCH_UPDATE.md)和[V188交付](docs/handoff/V188_RESEARCH_UPDATE.md)；V187仅支持材料，未改基准或正文。以下旧版本记录保留其历史时点。
+当前自有审阅稿为 **V189**（科学 **V181**）：[联合均值边界已进入自有5.5节](docs/handoff/V189_RESEARCH_UPDATE.md)，27页／53引用，暂用18213且注册未核。原数据及基准保持，GitHub研究与Overleaf稿件分别同步。以下旧版本记录保留其历史时点。
 
 # 2026 HiMCM A
 
