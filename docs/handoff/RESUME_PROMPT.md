@@ -1,6 +1,6 @@
 # 接手续做 HiMCM：当前权威状态
 
-长期goal **active**：持续优化论文及论文材料。所有新增／修改叙述必须使用已安装的 [anti-defensive-writing-Skill](../guidelines/ANTI_DEFENSIVE_WRITING.md)。先读 [AGENTS.md](../../AGENTS.md)、[GUIDELINES.md](../../GUIDELINES.md)、[长期计划](LONGTERM_GOAL.md)和[V130交接](V130_RESEARCH_UPDATE.md)。V128完整稿与主V127继续冻结不变。
+长期goal **active**：持续优化论文及论文材料。所有新增／修改叙述必须使用已安装的 [anti-defensive-writing-Skill](../guidelines/ANTI_DEFENSIVE_WRITING.md)。先读 [AGENTS.md](../../AGENTS.md)、[GUIDELINES.md](../../GUIDELINES.md)、[长期计划](LONGTERM_GOAL.md)和[V131交接](V131_RESEARCH_UPDATE.md)。V128完整稿与主V127继续冻结不变。
 
 ## 当前入口与结论
 
@@ -61,6 +61,8 @@ GitHub保存研究材料；Overleaf保存论文、LaTeX与选定资产。保留�
 
 ## 下一轮
 
-V130 Berlin单格正式受控结果已审计并冻结，尚未激活；见V130交接及`design/task4_user_v130_snapshot.json`。优先以该快照迁移V131全部偏好／未来／权重与shock MC／方法和受控修订诊断，再统一完整独立稿、摘要表图与新闻。通过数值／编译／渲染检查后，更新现行注册表与扩展入口；目前live仍V127、全稿仍V128，不能提前更名。V130静态名次与冠军集合不变，fixed平均宽度收窄0.094466%，112/32/16；143个已有信息格与原CSV保持。V130新源包已被准入表固定哈希，不覆盖旧包。继续新匹配教师／通学证据，失败跳过；控制号、全队AI史、队友整合与发布选择仍待真实信息。
+V130主结果与V131全部扩展已冻结并通过独立总审，当前注册表仍V127、完整稿仍V128。见V131交接、`design/task4_user_v131_extensions.json`及`results/task4_v131_revision/README.md`。下一步直接迁移新的完整独立稿，不再重跑已通过的全量数值检查：把V128_owned稿复制为V131，使用V130主结果／V131扩展重建生成表图、摘要、结论、新闻和参考中的来源范围。20份累计补数、112/32/16及新全局宽度需逐项生成核对；equal方法tau已由.666667变.6500，Berlin成本切换40.3318%→38.0835%，偏好MC新值用CSV。旧V128稿继续冻结。读PDF技能并按要求标记artifact operation，再编译／全页渲染／检查字号、页数、引用和新数字一致性；通过后才激活主注册表和扩展入口。队友根main/ref/class不得改。
+
+V130源包由准入表固定哈希，不覆盖旧源包；17格旧诊断明确冻结V127。继续真实新匹配教师／通学源，失败跳过；控制号、全队AI史、主稿具体整合及公开发布选择仍待真实信息。长期goal active。
 
 历史恢复过程与旧版本结果见V120–V126各交接文件；本页当前入口优先，旧“当时最新”状态不覆盖本页。

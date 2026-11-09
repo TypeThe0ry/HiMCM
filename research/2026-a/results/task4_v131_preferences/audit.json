@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "main_input_shape": [
+    16,
+    10
+  ],
+  "changed_evidence_cells_vs_V121": 5,
+  "changed_evidence_cells_vs_V124": 3,
+  "protected_V124_nonfullymissing_cells": 141,
+  "V121_control_exactly_matches_frozen_V122": [
+    "ranks",
+    "weights",
+    "all144_MC_rows",
+    "all160_bounds",
+    "scenario_matrices",
+    "profile_summaries"
+  ],
+  "V125_frozen_bounds_exactly_match_V124_factory": true,
+  "paired_V125_comparison_rows": {
+    "ranks": 48,
+    "mc": 144
+  },
+  "deterministic_profile_checks": 6,
+  "independent_mc_settings": 18,
+  "draws_per_setting": 10000,
+  "explicit_fractional_tie_cases": 3,
+  "every_draw_independent_tie_credits_ranks_and_top3_checked": true,
+  "independent_quantities": [
+    "weighted norms",
+    "self-excluded regret",
+    "possible/necessary champion",
+    "tie credits",
+    "mean ranks",
+    "top3"
+  ],
+  "unchanged_profiles_weights_seeds_draws": true,
+  "V130_primary_baseline_ranks_and_all3_MC_settings_exact": true,
+  "immutable_snapshot_verified_before_and_after": true,
+  "protected_source_hashes_unchanged": true,
+  "all160_V130_bounds_unchanged": true,
+  "writes_only_new_result_directory": true
+}

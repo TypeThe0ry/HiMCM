@@ -1,0 +1,34 @@
+{
+  "extension_version": "V131",
+  "primary_evidence_version": "V130",
+  "primary_registry": "design/task4_user_current_model.json",
+  "primary_snapshot": "design/task4_user_v130_snapshot.json",
+  "changes_primary_model": false,
+  "modules": {
+    "preferences": {
+      "script": "scripts/task4_v131_preferences.py",
+      "results": "results/task4_v131_preferences"
+    },
+    "future": {
+      "script": "scripts/task4_v131_future.py",
+      "results": "results/task4_v131_future"
+    },
+    "method_country": {
+      "script": "scripts/task4_v131_method_country.py",
+      "results": "results/task4_v131_method_country"
+    },
+    "revision_diagnostic": {
+      "script": "scripts/task4_v131_revision_diagnostic.py",
+      "results": "results/task4_v131_revision_diagnostic"
+    }
+  },
+  "independent_audit": "results/task4_v131_revision/audit.json",
+  "audit_script": "scripts/audit_task4_v131_extensions.py",
+  "manuscript_entry": null,
+  "scope": "Unchanged model and scenario rules on staged V130 Berlin evidence. Actual paired V128/V127 comparison is results/task4_v131_revision/paired_comparison.json. Complete manuscript migration remains pending.",
+  "historical_cases": "Legacy25 V117 and age/fairness examples remain separate, six CSV files byte-identical; newVienna2001 derived case not admitted to the current16-city model.",
+  "activation_status": "staged_not_current",
+  "live_primary_version": "V127",
+  "planned_manuscript_entry": "../HiMCM-Overleaf/drafts/task4_v131_paper.tex",
+  "frozen_complete_review": "../HiMCM-Overleaf/drafts/task4_v128_paper.tex"
+}
