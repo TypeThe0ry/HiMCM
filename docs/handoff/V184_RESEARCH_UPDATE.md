@@ -33,3 +33,5 @@ Overleaf自有入口`drafts/task4_v184_paper.tex/.pdf`、根代理`task4_v184_re
 下一轮不要重复寻找28.8/39.9的数值匹配，也不要把CH001C当Zurich。继续只找匹配人群／年份的时长分布或市域实际教学FTE；没有新口径证据就跳过。控制号、全队AI原记录、最终团队整合与在线编译／比赛提交回执仍需真实证据。长期goal active。
 
 隔离重建已通过：从Overleaf载荷08dfde6的735个Git文件／blob核验生成两个隔离副本，已有本地工具和TeX缓存离线编译；27页逐页文本及72dpi灰度像素与登记PDF一致。独立复算当前160格／32权重城市案例，输入保护243科学／735论文无变化。reproduction.json中的runner iteration V182是复现工具版本，paper_version明确V184；不作冷环境或服务器验证。
+
+双仓远端已核：GitHub载荷`fc6938bbe6ea5dae030afc1bbd27d2d1243bce55`，Overleaf`81ab5cffaefdbc24d7454f87adb8b716f5fd6899`，均普通push且核验时工作区干净；PDF SHA `4f373582a809581b463a58e2bb3208df4fff028255d6b8cf275c45247a6c0a0f`。10份选定证据逐字节一致，另1份目的地README；711旧论文文件保持、仅两导航获准更新。详sync.json、delivery.json，回执另提交；不声称在线编译或比赛提交，长期goal active。
