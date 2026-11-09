@@ -1,0 +1,22 @@
+{
+  "version": "V183 partial-interval information limits",
+  "primary": "V181 unchanged",
+  "paper": "V182 unchanged",
+  "partial_cells": 35,
+  "fully_missing_cells": 13,
+  "uncertain_cells": 48,
+  "combined_city_indicator_weight_rows": 96,
+  "partial_exact_resolution_cases": 70,
+  "independent_two_branch_optimizations": 70,
+  "interior_probes": 1470,
+  "all160_bounds_unchanged": true,
+  "primary_admissions": 0,
+  "scope": "Exact utility identification inside each retained interval, conditional on the model rectangle; not a source availability probability, attainable raw observation or guarantee for a partial count/mean.",
+  "source_sha256": {
+    "scripts/task4_v183_partial_priority.py": "1de9500dd8ab3cdff2a77a49b0878934d365de3d23ddb75a0d198871c432a7f1",
+    "scripts/task4_v183_priority.py": "236f702d4b8a24470360675d96896847098eae35037c376cf355e20aa8dc49e2",
+    "design/task4_user_v181_snapshot.json": "332d254fcddc8ff1a1d2f5d8581e329cab4239c9cdd3c7c8ae49239af2bca066",
+    "results/task4_v183_priority/priority.csv": "cded93d2e99f9b7823455e0dd6f346b17130c012966618120431d99cd07f87d1"
+  },
+  "acquisition_alignment": "Partial-source refinement must match the retained measurement, population and vintage; an unrelated school-trip distribution cannot simply narrow an existing general-commute mean proxy or replace a supplied value."
+}

@@ -1,0 +1,25 @@
+{
+  "version": "V183 partial-source provenance probe",
+  "queries": [
+    "Dublin \"28.8\" \"2011\" commuting time",
+    "Zurich \"39.9\" \"2024\" commute"
+  ],
+  "method": "Web search results only; no new original response downloaded or numerical source admitted",
+  "retained_original_rows": [
+    {
+      "city": "Dublin",
+      "commute_min": 28.8,
+      "year": 2011,
+      "flag": "STALE"
+    },
+    {
+      "city": "Zurich",
+      "commute_min": 39.9,
+      "year": 2024,
+      "flag": "ok"
+    }
+  ],
+  "outcome": "No verified original provider table matched to the retained measurement/population was recovered within these two probes. A third-party Urban Audit attribution for Dublin is an unverified navigation lead, not validation. Unrelated official aggregate results do not identify either supplied city value.",
+  "next_action": "First establish the retained source population/vintage before intersecting any duration distribution; preserve the supplied means and flags.",
+  "primary_admissions": 0
+}

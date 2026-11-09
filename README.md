@@ -287,3 +287,5 @@ V179仅更新[自有AI附录](research/2026-a/results/task4_v179_ai_review/READM
 V180新增[Amsterdam32个Metro站组候选](research/2026-a/results/task4_v180_amsterdam_candidate/README.md)：取得原始实体表及两版市界，保守筛选后候选下界.063622907；V180取证时尚未入模，随后V181研究迁移、V182统一启用。
 
 V181已完成Amsterdam32条件目录补充的隔离研究准入及主模型、全部既有扩展迁移，V181隔离阶段注册表保持V154／V179，现已由V182完成新稿一致性核验与统一启用。见[V181研究对比与接续](docs/handoff/V181_RESEARCH_UPDATE.md)。
+
+V183[当前信息采集优先级](docs/handoff/V183_RESEARCH_UPDATE.md)共同筛查13全缺失及35部分区间，共96个城市—指标—权重情景；新师资／旅时来源按单位及对象拒收，科学V181／论文V182保持。
