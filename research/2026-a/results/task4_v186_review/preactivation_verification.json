@@ -1,0 +1,100 @@
+{
+  "version": "V186",
+  "status": "pass",
+  "primary_model": "V181",
+  "activation_status": "verified_pending_activation",
+  "total_pages": 27,
+  "main_and_references_pages": 25,
+  "main_page_margin": 0,
+  "news_pages": [
+    18,
+    19
+  ],
+  "AI_pages": [
+    26,
+    27
+  ],
+  "compiled_references": 53,
+  "prior53_reference_keys_exact": true,
+  "scientific_files_unchanged": 245,
+  "existing_manuscript_files_unchanged": 745,
+  "owned_pointer_files_changed": [],
+  "original_user_CSV_and_all160bounds_unchanged": true,
+  "current_model_extensions_unchanged": true,
+  "shared_main_ref_class_unchanged": true,
+  "figures_numerical_assets_references_AI_byte_unchanged": true,
+  "primary_admissions": 0,
+  "actual_baseline_width_change": 0,
+  "threshold_checks": [
+    {
+      "weight_reference": "fixed",
+      "tie_mean_minutes": 46.58895160226924,
+      "tie_lower_utility": 0.21161957932041633,
+      "below": "Zurich",
+      "above": "Singapore",
+      "both_sides_verified": true
+    },
+    {
+      "weight_reference": "equal",
+      "no_finite_mean_crossing": true,
+      "maximum_gap": -1.1872138169392201,
+      "monotone_score_and_constant_competitor_regrets": true
+    }
+  ],
+  "edit_scope_checks": {
+    "edit_scope": "Only final5.5paragraph and two inputpaths/versioncomment",
+    "original_vintage_prefix_byte_preserved": true,
+    "threshold_scope": "OneZurichmean, Jensenlower,allotherdataandweightsfixed",
+    "sixteen_possible_scope": "Withdrawalchecks only;notwholemeanparameterdomain"
+  },
+  "direct_root_text_equal": true,
+  "native_header_footer_checked": true,
+  "new_threshold_font_extractor_size_min": 12,
+  "overfull_boxes": 0,
+  "underfull_paragraphs_per_build": 2,
+  "requirements": 47,
+  "prior47_statuses_preserved": true,
+  "pending_gates_preserved": [
+    "PA-ai-section",
+    "U-source-quality",
+    "CI-headers",
+    "CI-control",
+    "CI-anonymity",
+    "AI-tool-disclosure",
+    "AI-complete-record",
+    "TEAM-integration",
+    "TEAM-shared-build",
+    "REG-eligibility",
+    "SUB-filename",
+    "SUB-upload",
+    "SUB-confirmation"
+  ],
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "default_main_setting_changed": false,
+  "AI_history_complete": false,
+  "pdf_bytes": 211140,
+  "pdf_sha256": "3d3d2d3806d8d01b947c1e07bb15d61ad113dc3cb43f033f80444c3640bddc6d",
+  "threshold_certificate_sha256": "f9028ca43cc316ccd31b06da109c9f5c8bbd8c5b9253f0297d7e5c8d97201e9e",
+  "verifier_sha256": "c12f143aba7a441fdfe30ab079feba3430306d5d380b56598d23b7888aa0ee6f",
+  "tex_source_sha256": {
+    "drafts/task4_v172_country_figure.tex": "128111720d02bd48c4b5b4226977126a49c74e2df882031f76cab2122bf16c19",
+    "drafts/task4_v182_assets/age_joint.tex": "5028c3cc16680250042afd8b306efcceb57db5e9f4dc950e37c4a0964247cc70",
+    "drafts/task4_v182_assets/baseline.tex": "51aa9f37cd4db98f11c8d866e38a18d37e8cdb145cc6f95c52d08a31824664b6",
+    "drafts/task4_v182_assets/indicators.tex": "f1c4b4e3a6874f5e0ecce07a7ab91b2dfe31b8ddb7f86742eee852825612bea2",
+    "drafts/task4_v182_assets/preferences.tex": "770879db767db558d938f4723d5b02e3fe408476c6bc652322223df04d91056c",
+    "drafts/task4_v182_assets/revision.tex": "63dd744464755d3301d66dbca2fe4eb832a6bd8a679ec8e498c6f91f86960007",
+    "drafts/task4_v182_assets/vintage_table.tex": "c74f373bbd3dd0ea1677ddc641b67caafe0d5c6024a4d26397b6cd30973f854b",
+    "drafts/task4_v182_evidence_figure.tex": "b49753cb47a9637e13adfc10eccff700a5bf9f2dfbcb8866592a393e98a0c64f",
+    "drafts/task4_v182_generated.tex": "c5d058664e1ad383cde092333dded125d346b9e0c4e74c365a4a528d1f319fcf",
+    "drafts/task4_v184_ai.tex": "1cb738ff97d2f98b394588ae0214d2c138bdbb164fc349696aa6c4c57ab1cd6c",
+    "drafts/task4_v184_conclusion.tex": "d7a85547af003c4352386c880e04e8839890ee27ff42589b9c3295a4672507c6",
+    "drafts/task4_v184_front.tex": "0dec2cb5a13dadafdef303591c731ac3e5fa96e69179b5163045b2c336d8ecb8",
+    "drafts/task4_v184_news.tex": "4f2c926d02259e962e43c908fc5cdc9edbf4d31b33c848bf2de72044e85097cc",
+    "drafts/task4_v184_references.tex": "3e20105709d0ad8ed5d065a3a10e6af9a467c71d588a37d4832d5bf9970121ec",
+    "drafts/task4_v186_core.tex": "fd8f4c9b7ab19409f5fbe35362c0d66c8a151a3a78fadb42c2e976c6e33d68e8",
+    "drafts/task4_v186_paper.tex": "d8fb8b499a4c421dc3865ce489f1b900e24882ed3099678455202ac0fd6af3b7",
+    "drafts/task4_v186_vintage.tex": "08c7453e6e10a8fd4b3f2fc16cf002bd88659c7cfbb15fac1e13ccc96605a3fe"
+  },
+  "visual_review_scope": "All27pageoverview and fullchangedpages13\u201316 reviewed;23other85dpipages identical to frozenV184. Newparagraphreadsall16possibleonlyforwithdrawals;parameterdomainassertionseparate. Noallglyph12ptclaim."
+}

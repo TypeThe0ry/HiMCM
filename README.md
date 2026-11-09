@@ -1,6 +1,6 @@
 # 2026 HiMCM A
 
-当前统一入口：**user16 V181科学／扩展，V184自有审阅稿**；见[V184结果、核验和下一步](docs/handoff/V184_RESEARCH_UPDATE.md)。Zurich为保守推荐，16城仍可能第一。
+当前统一入口：**user16 V181科学／扩展，V186自有审阅稿**；见[V186核验和下一步](docs/handoff/V186_RESEARCH_UPDATE.md)。Zurich保守推荐、16可能冠军保持。
 
 > **团队成员与 AI agent 必读：开始写作或制图前，必须阅读并遵循[统一 Guidelines](GUIDELINES.md)。论文文字、图表、图注与研究结论均按专项规范执行，交付前核验。AI agents: read and follow these guidelines before editing.**
 
@@ -14,7 +14,7 @@
 
 ## 从这里开始
 
-**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V184来源政策与稿件核验](docs/handoff/V184_RESEARCH_UPDATE.md)。科学／既有扩展V181，自有审阅稿V184：112点／35部分／13全缺失、23补充；27页=25正文参考+2暂定AI、53引用。Zurich仍为保守推荐，16可能／0必要；单独撤回Zurich工作通勤代理或全部12项用户通勤均值，原权重改荐Singapore、等权仍Zurich。原值及基线保持。
+**换开发环境／交给下一个 AI：** [当前恢复入口](docs/handoff/RESUME_PROMPT.md)、[V186自有稿与核验](docs/handoff/V186_RESEARCH_UPDATE.md)。科学V181／稿V186，112点／35部分／13全缺失、23补充；27页=25正文参考+2暂定AI、53引用。其他输入固定，Zurich均值假设原权重平局约46.59分钟，等权单项变化无切换；该敏感性阈值已入5.5节，不改变基线。
 
 V154的Milan历史库存补数使固定权重平均评分区间宽度16.08933→16.06144，实际收窄0.02790分，累计收窄14.62%。[模型入口](research/2026-a/design/task4_user_current_model.json)、[扩展入口](research/2026-a/design/task4_user_current_extensions.json)、[验证](research/2026-a/results/task4_v154_transition/README.md)。
 
