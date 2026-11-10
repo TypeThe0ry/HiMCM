@@ -1,0 +1,16 @@
+{
+  "source_url": "https://www.hel.fi/static/kanslia/Julkaisut/2025/helsingin_kaupungin_henkilostoraportti_2024_tilastoliite.pdf",
+  "method": "curl -Ls --max-time 25, followed by pdftotext -layout",
+  "http_status": null,
+  "http_status_note": "Not captured by the original command; not inferred.",
+  "retrieval_local_file_mtime": "2026-11-10 19:02 Asia/Singapore (minute precision)",
+  "bytes": 771089,
+  "sha256": "e21d4953f33406e266098a2710df4b47563f84c12f0b4a70f7929e4f7a04f5d6",
+  "saved_as": "helsinki_personnel_statistical_appendix_2024.pdf",
+  "pdf_pages": 27,
+  "text_extraction": "pdftotext produced 66434 bytes. Search for lukio, henkil\u00f6ty\u00f6vuod, or opettaj returned no matches; the PDF is not merely a scanned image.",
+  "caveat": "No 2023 report original body was downloaded in this attempt; its information came from the web search index.",
+  "retrieval_utc": null,
+  "final_url": null,
+  "receipt_limitations": "The original request did not record HTTP status, final URL or exact UTC. The file-mtime observation is not an HTTP retrieval timestamp; no missing fields are inferred."
+}

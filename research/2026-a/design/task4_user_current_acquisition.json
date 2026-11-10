@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 19,
+    "routes": 20,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -259,5 +259,20 @@
     "Oslo_HE_roster_or_Zurich_homicide_source_provided": false,
     "user_direction": "Continue verifying other data",
     "action": "Retain original values and unresolved provenance; do not repeatedly request the same unavailable material"
+  },
+  "helsinki_staff_followup": {
+    "data": "data/current_helsinki_staff_scope",
+    "verification": "results/current_helsinki_staff_review/verification.json",
+    "verification_sha256": "6a7fda73870ae98328eeafcbfbde5471c08b6f70d22558a5fda033b03c002749",
+    "request_specification": "design/current_helsinki_teacher_request.md",
+    "request_sent": false,
+    "original_PDF_bytes": 771089,
+    "original_PDF_pages": 27,
+    "HTTP_status_or_exact_UTC_recorded": false,
+    "matched_upper_secondary_teaching_FTE_obtained": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Verified original personnel-appendix body and sector-level reporting scope do not supply the matching school teacher denominator; no ratio or bound constructed."
   }
 }

@@ -1,0 +1,11 @@
+# Helsinki teacher-resource source and request scope
+
+The new municipal personnel appendix clarifies the remaining denominator gap: its reporting units are sectors, offices/agencies and municipal enterprises. It does not identify actual upper-secondary teaching FTE in Helsinki schools. **The target utility remains [0,1], with zero new admissions and zero primary score-width reduction.**
+
+The 771,089-byte, 27-page original PDF is archived under `research/2026-a/data/current_helsinki_staff_scope/`. Page 3 explicitly states the reporting units and the 31 December 2024 snapshot, except for accumulated statistics. It also identifies changes affecting comparison before and after 2021. These personnel aggregates cannot be combined with a separate citywide pupil count as if they were a matching teacher denominator. The earlier education-yearbook, headcount and national estimated-FTE routes remain separate.
+
+The original download command did not record HTTP status, final URL or exact UTC. The receipt leaves those fields unknown; the local file-mtime observation is not promoted to an HTTP timestamp. PDF bytes, page count and the reporting-unit passage are directly checked. A failed literal keyword search was corrected by inspecting the actual text and source scope; the appendix is not an unreadable scan.
+
+`research/2026-a/design/current_helsinki_teacher_request.md` prepares a concrete **unsent** aggregate request: school-location and programme coverage, matched pupils and actual teaching FTE, public/private providers, shared staff, leave/substitutes, reference dates and missing or withheld scope. It asks for an existing publication or aggregates and methodology, not personal records. A partial denominator would require documented containment before supporting a bound; no response is implied by the template.
+
+The read-only auditor `scripts/audit_current_helsinki_staff_scope.py` verifies the source and missing receipt fields, request status, the still-unknown Helsinki cell, 548 scientific bindings, 77 supplementary bindings, ten withdrawal-evidence entries and seven paper dependencies in both checkouts. No agency message, model change, invented FTE conversion or manuscript update occurred. The selected route index now contains 20 entries; the research materials remain in GitHub and Overleaf retains the same single current main.
