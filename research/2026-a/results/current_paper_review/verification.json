@@ -3,7 +3,7 @@
   "scope": "Independent local numeric, selected text, preservation and PDF geometry audit; includes bound independent single-point withdrawal proof; excludes online compilation, visual review, source requalification and final team acceptance.",
   "v203_bindings": 548,
   "inherited_v202_bindings": 476,
-  "reference_keys": 62,
+  "reference_keys": 63,
   "point_error_source_sha256": {
     "scripts/audit_current_point_error.py": "2ae914361d09b0459ce027ab5712d5ae9c670f3ef0ebce4e803061ab9b71c997",
     "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
@@ -28,7 +28,7 @@
     "results/current_point_withdrawal/README.md": "63e3fa51c1c7254f29c0fb97407d58db9a769e8472c61dbe3dd6e6ff1973cca6",
     "results/current_point_withdrawal/verification.json": "84d384979588b7452927f55cfc689dc11be3f0c88dbabab0b792b8faf7992514"
   },
-  "owned_edit_scope": "Exact conclusion comparator clause only relative7eebfe1; all other source unchanged",
+  "owned_edit_scope": "Exact owned4.1source paragraph plus appended reference relative3a7d4ab; all other manuscript source unchanged",
   "midpoint_comparison_rank_changes": {
     "fixed": 14,
     "equal": 14
@@ -76,8 +76,8 @@
   "main_and_reference_pages": 25,
   "total_pages": 27,
   "actual_registration_verified": false,
-  "pdf_sha256": "40aaf07fdec6a08f236e7bf8b4585da3002cd90fe8e0333137e6bad506d3e280",
-  "main_sha256": "7a1c37acdb54cc5fa051db22a613a8de575f83d8a2e0fe23bcd14a9b8101b9a0",
+  "pdf_sha256": "0f42cde577c329b9346cee18e8656da9ad7c37e9b50a54e8c8c2e12d57c1c4ef",
+  "main_sha256": "2a4d814f2c28657ae343238f5a06ab3f9aa501f52bc965bda18c9b1150e6e59f",
   "oslo_source_scope_verification_sha256": "a3fcbfb9ca9ce56dbb7560b846b4c9361f340c9cbb6fc242bc186c193a46bac1",
   "oslo_source_scope_summary_sha256": "effd5d83f7b338e11fe9a57a92a20f0327fc58181c7a924a08a6420107a2347a",
   "oslo_eurostat_sha256": "877d229db8492dca33b8a58c5304cc4667a85066ff0bae457a1af47e4ecf732f",
@@ -98,5 +98,32 @@
   "assets_sha256": {
     "identification_matrix.pdf": "dfee08dabba094a88a427e4172ee4dbebed93684e9120ab312900df8aa5c56e4",
     "score_intervals.pdf": "f16bdb7d67121bc041df888593e785173bc784b4ee2f84c9d98f76d93d84240d"
-  }
+  },
+  "edition_source_sha256": {
+    "data/current_oslo_ptr_source/README.md": "10874d56f78384ec2433ac0b2d4f1b76d37882b7d4241ffaf4888b0f231fd61d",
+    "data/current_oslo_ptr_source/receipts.json": "d8a0e709d45369f4dbc60361427d1347b27909bf0566351c3d0708de0cfd0529",
+    "data/current_oslo_ptr_source/scope.json": "9d84bbf7a195f55a8812b2ece61104cc9dd6f973a55f387898c85202c160e51f",
+    "data/current_oslo_ptr_source/ssb_06942_definitions.html": "18f17721b90d16bbd2bb9eb7a10f27771ee34b62b09de98ce43a4c5c161dddd4",
+    "data/current_oslo_ptr_source/ssb_12186_metadata.json": "fc34aecd0be7eb090f3ac50f198208b8d89a5087fd64303716fef447561fe2b6",
+    "data/current_oslo_ptr_source/ssb_12609_metadata.json": "5d6b4796ce4ca5e9d1dedbe1cc44062d0cf0dab627971f7d03f9291d6849f01e",
+    "data/current_oslo_ptr_source/ssb_12609_page.html": "d24be85f75804cde2aeb30338c446785a2b78456c960d451f9c629cced2b3118",
+    "data/current_oslo_ptr_source/ssb_12609_query.json": "fdbca3487bfa7fae94eee798643e2bc336d1369e3385324178e54a7a04c6ff4d",
+    "data/current_oslo_ptr_source/ssb_12609_response.json": "d0eb6582beeae7e63fd4fbfaceaf7c84e7e41b7f9d726cea7e98623cada3da0c",
+    "data/current_oslo_cost_source/README.md": "07fbdbbb227afe2cf610a7a2875d8220a45243c0ea0212a9014877a332c0c10b",
+    "data/current_oslo_cost_source/cost-of-living_2026.html": "09f4959edae8b771566eb57d832795d4253776aaf2a2114c63e321f7be9b9b3b",
+    "data/current_oslo_cost_source/cost-of-living_current.html": "30d4e4d9f5d69d5e8f3327770bb68bcab4106600dbc645cdffb18b3826836dd3",
+    "data/current_oslo_cost_source/cost-of-living_mid.html": "f3eb608fa3dc6fb68987f0c8881da133406037485d97f0d161eb897ab62741e2",
+    "data/current_oslo_cost_source/numbeo_cost_indices_explained.html": "3c57ef2b063539ac41deb9ecdefd31c592fa12bbf095386785ac6dcdfbde9ba3",
+    "data/current_oslo_cost_source/numbeo_property_indicators_explained.html": "b05a41f38d88e194c947ebbac52510c43c3b3a17a86d17f4c0fa24eb28a58f5d",
+    "data/current_oslo_cost_source/property-investment_2026.html": "e54bbe6a8821b3c371301c179278c8d8da26bbb54261a9d007afe4315dcd00aa",
+    "data/current_oslo_cost_source/property-investment_current.html": "ec7175d68c137f335e69581633e687ad59b3cfb685c686f61c5f9d23ee6765a0",
+    "data/current_oslo_cost_source/property-investment_mid.html": "92a0176a95cd723e77680d7ccdd9cd5796aa64662800f6ffaceb3654cf865dfa",
+    "data/current_oslo_cost_source/retrieval.json": "b626621443d9a2d8fdfcac4c057476cf52f6b9a5633f5932311c8d09664668da",
+    "data/current_oslo_cost_source/scope.json": "786d11d4647e486a6c6d5d5cc64bb4d027d3fb33df514864dfdb04cb71935b2d",
+    "scripts/audit_current_oslo_cost_ptr_sources.py": "3a6da9c9edaaede65cb589b608dcd5b66c57ad729c401490f598f83057a45120",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+    "data/city_matrix_25_audit/provenance.json": "06a9c369b34af54f7ff234d49880adcccf6851a591eeaf9b010884de878607de",
+    "results/current_oslo_cost_ptr_review/verification.json": "d28a5e0ed49f00cf437629e731267616c62c851743a06aeef276f0a08c3a4de7"
+  },
+  "edition_paper_review_sha256": "edd1c0c9f4874e41f385d2e5f022095c0c10ae405008e5d760423845f6664686"
 }

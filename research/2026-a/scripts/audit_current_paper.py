@@ -27,7 +27,7 @@ def main():
   assert folder.is_dir()
  tex=(P/'main.tex').read_text(); oldtex=subprocess.check_output(['git','-C',str(P),'show','aeeac9d918f1f97d2045025fdc4079d5ae4f74ff:main.tex'],text=True)
  assert hashlib.sha256(oldtex.encode()).hexdigest()==old['protected_files'][str(P/'main.tex')]
- original=set(re.findall(r'\\bibitem\{([^}]+)\}',oldtex));current=set(re.findall(r'\\bibitem\{([^}]+)\}',tex)); assert len(original)==59 and original<current and len(current)==62 and 'osloyouth2023' in current and 'enturstop' in current,(len(original),len(current),current-original)
+ original=set(re.findall(r'\\bibitem\{([^}]+)\}',oldtex));current=set(re.findall(r'\\bibitem\{([^}]+)\}',tex)); assert len(original)==59 and original<current and len(current)==63 and 'osloyouth2023' in current and 'enturstop' in current and 'numbeooslo2026' in current,(len(original),len(current),current-original)
  prior_tex=subprocess.check_output(['git','-C',str(P),'show','faadd04:main.tex'],text=True)
  prior_refs=set(re.findall(r'\\bibitem\{([^}]+)\}',prior_tex)); assert len(prior_refs)==61 and prior_refs<=current
  assert re.search(r'tcn\s*=\s*18213',tex)
@@ -35,7 +35,25 @@ def main():
  owned_baseline=subprocess.check_output(['git','-C',str(P),'show','7eebfe1:main.tex'],text=True)
  old_conclusion=r'\TotalWidthReduction\%; the interval revision changes 14 decision ranks.'
  new_conclusion=r'\TotalWidthReduction\%; against midpoint completion, the interval revision changes 14 fixed-weight decision ranks.'
- assert owned_baseline.count(old_conclusion)==1 and tex==owned_baseline.replace(old_conclusion,new_conclusion)
+ edition_baseline=subprocess.check_output(['git','-C',str(P),'show','3a7d4ab:main.tex'],text=True)
+ assert owned_baseline.count(old_conclusion)==1 and edition_baseline==owned_baseline.replace(old_conclusion,new_conclusion)
+ edition_review=read(R/'results/current_edition_paper_review/review.json')
+ assert sha(P/'main.tex')==edition_review['current_source_sha256']=='2a4d814f2c28657ae343238f5a06ab3f9aa501f52bc965bda18c9b1150e6e59f'
+ assert hashlib.sha256(edition_baseline.encode()).hexdigest()==edition_review['baseline_source_sha256']=='7a1c37acdb54cc5fa051db22a613a8de575f83d8a2e0fe23bcd14a9b8101b9a0'
+ def source_paragraph(t):
+  start=t.index('Some supplied values lack original source URLs');end=t.index('\n\n\\begin{table}[htbp]',start);return t[start:end]
+ old_paragraph=source_paragraph(edition_baseline);new_paragraph=source_paragraph(tex)
+ new_bibitem=tex[tex.index('\\bibitem{numbeooslo2026}'):tex.index('\\end{thebibliography}')]
+ for label,text in [('old_paragraph',old_paragraph),('new_paragraph',new_paragraph),('new_bibitem',new_bibitem)]:assert hashlib.sha256(text.encode()).hexdigest()==edition_review['source_scope'][label+'_sha256']
+ assert tex==edition_baseline.replace(old_paragraph,new_paragraph).replace('\\end{thebibliography}',new_bibitem+'\\end{thebibliography}')
+ edition_prior_refs=set(re.findall(r'\\bibitem\{([^}]+)\}',edition_baseline));assert len(edition_prior_refs)==62 and current-edition_prior_refs=={'numbeooslo2026'}
+ edition_proof_path=R/'results/current_oslo_cost_ptr_review/verification.json';edition_proof=read(edition_proof_path)
+ assert sha(edition_proof_path)==edition_review['source_verification_sha256'] and edition_proof['status']=='pass scoped source review'
+ edition_paths=dict(edition_proof['source_sha256'])
+ for name,digest in edition_paths.items():assert sha(R/name)==digest,name
+ from audit_current_oslo_cost_ptr_sources import cost_sources,retained_points
+ assert cost_sources()==edition_proof['cost_sources'] and retained_points()==edition_proof['retained_points']
+ edition_paths['results/current_oslo_cost_ptr_review/verification.json']=sha(edition_proof_path)
  point_proof=read(R/'results/current_point_error/verification.json');assert point_proof['status']=='pass' and point_proof['point_cells']==112 and point_proof['unchanged_interval_cells']==48
  point_paths=dict(point_proof['source_sha256'])
  for name,digest in point_paths.items():assert sha(R/name)==digest,name
@@ -154,6 +172,9 @@ def main():
   x=re.sub(r'-\s*\n\s*','',x)
   return re.sub(r'\s+',' ',x).lower()
  summary=rendered(pages[0]);full=rendered(' '.join(pages));news=rendered(' '.join(pages[label('news-start')-1:label('news-end')]))
+ for phrase in ['supplied oslo price-to-income ratio of 9.8','archived numbeo current table','annual 2026 edition gives 11.6','neither the original extraction nor municipal-boundary equivalence is established','access date recorded as 7 november 2026']:
+  assert phrase in full,phrase
+ assert sha(pdf)==edition_review['current_pdf_sha256']
  assert 'recommend oslo under baseline weights and zurich under equal weights' in summary
  assert 'oslo is selected in all three scenarios under baseline weights' in summary
  assert 'equal weights select oslo, zurich and oslo' in summary
@@ -245,5 +266,8 @@ def main():
   else:assert '18213' in pages[0]
  assert not any(x in log for x in ['Overfull','undefined','LaTeX Warning'])
  result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; includes bound independent single-point withdrawal proof; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),point_error_source_sha256=point_paths,withdrawal_source_sha256=withdrawal_paths,owned_edit_scope='Exact conclusion comparator clause only relative7eebfe1; all other source unchanged',midpoint_comparison_rank_changes=midpoint_changes,ai_source_sha256=ai_paths,student_source_audit_sha256=sha(R/'results/current_oslo_student_review/verification.json'),student_source_sha256=student['source_sha256'],figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
+ result['owned_edit_scope']='Exact owned4.1source paragraph plus appended reference relative3a7d4ab; all other manuscript source unchanged'
+ result['edition_source_sha256']=edition_paths
+ result['edition_paper_review_sha256']=sha(R/'results/current_edition_paper_review/review.json')
  emit_report(result,args,canonical,H)
 if __name__=='__main__':main()

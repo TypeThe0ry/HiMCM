@@ -19,7 +19,7 @@ def main():
  assert sha(pdf)==sha(R.parents[1]/'paper/current/main.pdf') and sha(P/'main.tex')==sha(R.parents[1]/'paper/current/main.tex')
  total=len(pages);end=label('main-end');news=[label('news-start'),label('news-end')];assert end<=25 and total==end+2==label('LastPage')
  refs=[i+1 for i,p in enumerate(pages) if hit('References',p,True)];assert len(refs)==1;refs=refs[0]
- count=len(re.findall(r'\\bibcite\{',aux));assert count==62
+ count=len(re.findall(r'\\bibcite\{',aux));assert count==63
  prior=R/'results/current_spatial_review/requirements.csv';rows=list(csv.DictReader(prior.open()));assert len(rows)==48;anchors=[]
  updates={
  'AI-tool-disclosure':'KnownCodexandExa; preservedV178prefix plus bounded continuation42rootcontexts/197visible/1372top-levelinputs;78spawnrequests28Terra/7Luna/43omitted; requestlabels not attested servingversions',
@@ -30,14 +30,14 @@ def main():
  'PA-sample':'Retained 16-city by 10-indicator primary sample and V203 ranking table',
  'U-perturbation':'V203 Dirichlet preference and bounded future shocks; joint mean-box boundaries15.60633% fixed-Oslo and0.64834% equal-Zurich;112pointutility boxes expanded with48otherintervalsfixed;epsilon.05retainsOslo/Zurich;fixedchangebandnear.08135733;equalZurich0-.2;single-pointignorance112casesperweightchanges10fixed/35equal;countsnoterrorprobabilities;historicalmassbudgets',
  'PA-data':'25supplementedkeys;Singapore26physicalvenues(25ActiveSG+oneOCBC);old3noticewithholding23/all4withholding22;OCBCpublicper-entry,age,hoursandclosureconstraints;Zurichschool-sessionlimitsretained',
- 'PA-references':f'{count} reference keys; all61prior reference keys retained; Entur source retained',
+ 'PA-references':f'{count} reference keys; all62prior reference keys retained; Numbeo edition comparison added',
  'U-preserve':'Original CSV preserved; Oslo transit lower bound refined89to626single-modebusgroups;other159lowercellsandalluppersunchanged;weightsandanchorsunchanged',
  'U-source-quality':'Oslo2009Eurostatvalue/yearmatchnotprovenCSVlineage;Oslo-onlycommutewithdrawalZurichboth;V203626single-modebusinventory;Tvetenbruomittedprecautionarily;primaryfixedOslo/equalZurich;829all-modealternativeand89withdrawalkeptdistinct;112originalpointsnotfullycertified',
  'AI-verification':'V203fullresearchauditandcurrent-main-and-assetsaudit;source/numericprovenancebound;frozenAIcaptureunchanged',
  'U-MC-precision':'V203specifiedexportfamily2064means37settings;4440 pair intervals, 4271 certified, 169 unresolved, 23 unique minima;notalladditionalprimaryMCsettings',
  'U-spatial-visual':'Oslo99.18%andZurich99.97%retained-residentgenericLearningPOIgrids;Oslogeo-only3transparentNASAresponses;ZRrawcloudsatellite;min9ptat6.5in;notstudents/highschools/poolaccess',
  'U-matrix-visual':'Figure1V203160cells112point37partial11unknown;travelproxycaptionretained;minimum10ptat6.5in',
- 'U-collection-compression':'OwnedsourcetextaddsZurichfivepublicschoolvenuesandlimits;25distinctkeys;conciseoriginal-inputcountandMCparagraphspreserveallmaterialconditions',
+ 'U-collection-compression':'Owned4.1addsOsloPIR9.8rollingCurrentversus11.6annual2026example;extractionandboundaryunresolved;allpriorcollectionexamplesand25distinctsupplementedkeysretained',
  'CI-budget':f'{end}main/reference+2provisionalAI;{25-end}page margin',
  'CI-file':f'{pdf.stat().st_size}bytes;one current owned PDF',
  'TEAM-independent-entry':f'Single actual local main build; {total} pages; prior independent numerical audit and frozen AI window retained',

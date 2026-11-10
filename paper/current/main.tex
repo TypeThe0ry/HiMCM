@@ -182,9 +182,12 @@ We compare $M=16$ cities on $N=10$ indicators covering safety, environment,
 household costs, education and everyday resources. The initial matrix is the
 team-supplied city table \cite{teamtable}. We retain its existing values, populations, reference
 years and source flags as the agreed input, then supplement only fields empty in that original table.
-Some supplied values lack original source URLs, so their provenance remains
-the team table; official supplements do not retrospectively validate every
-supplied measurement. Table~\ref{tab:indicators} states what each variable measures.
+Some supplied values lack original source URLs. The supplied Oslo
+price-to-income ratio of 9.8 equals the value in an archived Numbeo Current
+table; its annual 2026 edition gives 11.6 \cite{numbeooslo2026}. Neither the original extraction nor
+municipal-boundary equivalence is established. The team table remains the
+provenance of these inputs; official supplements do not retrospectively validate
+them. Table~\ref{tab:indicators} states what each variable measures.
 
 \begin{table}[htbp]\centering
 \caption{Retained indicators, units and reference anchors. Supplied values are retained; supplements have explicit source scope.}\label{tab:indicators}
@@ -1017,6 +1020,10 @@ Global Imagery Browse Services WMS documentation.
 \url{https://nasa-gibs.github.io/gibs-api-docs/access-basics/}.
 \bibitem{osloyouth2023} A. Bakken. \textit{Ung i Oslo 2023: Ungdomsskolen og videreg\aa{}ende}, NOVA Rapport 6/23, OsloMet, pp.~1, 27, 33, 79--80. Vg3 is the final upper-secondary year. Survey participants: 14,667 lower-secondary (78\% response) and 10,595 upper-secondary (60\% response).
 \url{https://oda.oslomet.no/oda-xmlui/bitstream/handle/11250/3065089/NOVA-Rapport-6-2023.pdf}.
+\bibitem{numbeooslo2026} Numbeo. \textit{Property Prices Index by City},
+annual 2026 and rolling Current. Archived copies; access date recorded as 7 November 2026.
+\url{https://www.numbeo.com/property-investment/rankings.jsp?title=2026};
+\url{https://www.numbeo.com/property-investment/rankings_current.jsp}.
 \end{thebibliography}
 \label{main-end}
 \clearpage

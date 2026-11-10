@@ -1,25 +1,29 @@
 {
   "status": "pass",
-  "pdf_sha256": "40aaf07fdec6a08f236e7bf8b4585da3002cd90fe8e0333137e6bad506d3e280",
-  "render": "/data/scratch/himcm-comparator-render",
+  "pdf_sha256": "0f42cde577c329b9346cee18e8656da9ad7c37e9b50a54e8c8c2e12d57c1c4ef",
+  "render": "/data/scratch/himcm-oslo-edition-render/new",
   "reviewed": [
-    "All27pages raster/text compared to previous published PDF",
-    "Actual changed page18 viewed at96dpi"
+    "All27pages compared at96dpi and text against published3a7d4ab PDF",
+    "Changed pages4,5,25 visually inspected at96dpi"
   ],
   "changed_96dpi_pages": [
-    18
+    4,
+    5,
+    25
   ],
   "changed_text_pages": [
-    18
+    4,
+    5,
+    25
   ],
-  "other26pages_exact_96dpi_equal": true,
+  "other24pages_exact_96dpi_equal": true,
   "AI_appendix_unchanged": true,
   "all_four_figures_unchanged": true,
   "color_vision_simulation_performed": false,
   "checks": [
-    "Only exact conclusion comparator clause differs from7eebfe1",
-    "Independent midpoint/current16city rank comparisons return14changes under each weight set",
-    "27pages25plus2 and62references; native heads/emptyfooters"
+    "Only owned4.1source paragraph and appended reference differ from3a7d4ab",
+    "Price-to-income ratio9.8rollingCurrent and11.6annual2026 supported by archived publisher rows",
+    "27pages25plus2and63references; native heads/emptyfooters; no overlap/clipping in changed pages"
   ],
   "scope": "Local rendered review; online compile and final team acceptance excluded"
 }

@@ -31,10 +31,12 @@ for k in keys:bindings.update(v[k])
 require(len(bindings) in (76,77),'unexpected supplemental binding count')
 files={R/p for p in bindings}
 files.update(R/p for p in v.get('withdrawal_source_sha256',{}))
+files.update(R/p for p in v.get('edition_source_sha256',{}))
 files.update(R/p for p in json.loads((R/'design/task4_user_v203_snapshot.json').read_text())['source_sha256'])
 for name in ['current_ai_review','current_point_error','current_joint_collection','current_zurich_source_review','current_paper_review']:
  files.add(R/'results'/name/'verification.json')
 files.add(R/'results/current_joint_collection/optimal_three_cell_sets.csv')
+files.update([R/'results/current_paper_review/current_verification.json',R/'results/current_edition_paper_review/review.json',G/'paper/current/main.pdf'])
 for p in v['current_files_sha256']:
  files.add(P/p);files.add(G/'paper/current'/p)
 require(len(v['current_files_sha256'])==7,'paper dependency count')
@@ -84,4 +86,5 @@ require({p:digest(p) for p in files}==before,'protected files changed')
 require({p:state(p) for p in (G,P)}==states,'repository head or status changed')
 sources=[Path(__file__),S/'task4_audit_output.py']+[Path(c[-1]) for k,c in commands.items() if k in ('point','withdrawal','joint','zurich','paper')]+[S/'audit_current_ai_provenance.py']
 report={'status':'pass','checks':checks,'protected_files_checked':len(files),'supplemental_bindings_checked':len(bindings),'manuscript_withdrawal_binding_entries':len(v.get('withdrawal_source_sha256',{})),'paper_dependencies_per_checkout':7,'repositories_checked':2,'source_sha256':{str(p.relative_to(R)):digest(p) for p in sources}}
+report['manuscript_edition_binding_entries']=len(v.get('edition_source_sha256',{}))
 emit_report(report,args,CANONICAL,G)

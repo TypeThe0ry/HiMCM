@@ -136,12 +136,17 @@ def main():
    peer=research/registry['focused_peer_review']
    require(sha(peer)==registry['focused_peer_review_sha256'],'Focused peer review hash differs')
    peer_report=read(peer)
-   require(peer_report['resolution_verification']['new_pdf_sha256']==registry['pdf_sha256'] and peer_report['resolution_verification']['new_source_sha256']==sha(paper/'main.tex'),'Focused peer review applies to a different manuscript')
+   if registry.get('owned_source_update_review'):
+    update_path=research/registry['owned_source_update_review'];require(sha(update_path)==registry['owned_source_update_review_sha256'],'Owned source update review hash differs');update=read(update_path)
+    require(update['baseline_pdf_sha256']==peer_report['resolution_verification']['new_pdf_sha256'] and update['baseline_source_sha256']==peer_report['resolution_verification']['new_source_sha256'],'Owned source update does not continue reviewed baseline')
+    require(update['current_pdf_sha256']==registry['pdf_sha256'] and update['current_source_sha256']==sha(paper/'main.tex'),'Owned source update applies to a different manuscript');protected[str(update_path)]=sha(update_path)
+   else:
+    require(peer_report['resolution_verification']['new_pdf_sha256']==registry['pdf_sha256'] and peer_report['resolution_verification']['new_source_sha256']==sha(paper/'main.tex'),'Focused peer review applies to a different manuscript')
    protected[str(peer)]=sha(peer)
   for n,h in base.tracked_hashes(paper).items():protected[str(paper/n)]=h
   proof_path=research/registry['research_verification'];delivery_path=research/delivery['research_verification']
   expected=read(proof_path);d=read(delivery_path)
-  for bundle in ['additional_source_scope_sha256','additional_figure_inputs_sha256','additional_student_inputs_sha256','additional_ai_inputs_sha256','additional_point_error_inputs_sha256','withdrawal_source_sha256']:
+  for bundle in ['additional_source_scope_sha256','additional_figure_inputs_sha256','additional_student_inputs_sha256','additional_ai_inputs_sha256','additional_point_error_inputs_sha256','withdrawal_source_sha256','edition_source_sha256']:
    for n,h in expected.get(bundle,{}).items():
     require(sha(analysis/n)==h,'Additional reviewed input differs: '+n);protected[str(analysis/n)]=h
   require(expected['status']==d['status']=='pass' and expected['pdf_sha256']==d['pdf_sha256']==registry['pdf_sha256'],'Current paper/delivery checks not bound')

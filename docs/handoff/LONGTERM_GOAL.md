@@ -6,7 +6,7 @@
 
 以既有指标和真实数据持续改进论文的数据搜集、基线评价、模型修订与扩展、验证、图表、同国对比和比赛交付材料。论文应清楚说明所解决的问题、证据支持的贡献和结果的实际含义。所有新增与修改文字必须使用[反防御性写作技能](../guidelines/ANTI_DEFENSIVE_WRITING.md)。
 
-当前16城×10指标V203（112点／37部分／11未知），25不同补充键；单一当前稿27页25正文参考＋2AI、62引用。固定权重保守选择Oslo，等权Zurich，16可能／0必要。626个单模式公交组来源定义下界替换89站；固定均宽15.8223269533，实际较V202缩小0.133494分。见[当前模型](CURRENT_MODEL_UPDATE.md)。
+当前16城×10指标V203（112点／37部分／11未知），25不同补充键；单一当前稿27页25正文参考＋2AI、63引用。固定权重保守选择Oslo，等权Zurich，16可能／0必要。626个单模式公交组来源定义下界替换89站；固定均宽15.8223269533，实际较V202缩小0.133494分。见[当前模型](CURRENT_MODEL_UPDATE.md)。
 
 用户最新要求本地与Overleaf远程同步，Overleaf只留当前main和必需资源；GitHub paper/current/镜像、Git提交管理版本，985旧文件已逐字节归档。原类／参考库／用户数据及队友内容保持。真实注册、全队AI与比赛提交未核，12项实质待办。真实卫星与定量3D图已接入，V203采集价值已重基并独审，下一轮据新表核查匹配来源；不再复制版本稿。
 
@@ -374,3 +374,5 @@ Current6.3 adds controlled uncertainty of112point utilities while holding48prior
 Current6.3 now presents the independently checked single-point withdrawal diagnostic without adding a model or changing primary bounds. Only page15 changes;27pages25+2,62references, fourfigures and all other26pages are preserved. Current proof binds10withdrawal evidence entries alongside548science+77supplemental bindings; source-quality and full-team submission gates remain open. The long-term goal stays active.
 
 A targeted independent mathematical/source-claim review found no newly demonstrated material error in the examined scope. One conclusion clause now makes the fixed-weight midpoint comparator explicit; only page18 changes, with all other26pages and scientific inputs preserved. The review remains scoped and does not certify all raw measurements or full-team readiness. Current review registry binds its report; long-term goal remains active.
+
+The owned collection chapter now demonstrates edition checks with the supplied Oslo housing ratio:9.8matchesarchivedrollingCurrent whileannual2026gives11.6. Originalextractionandboundaryremainunresolved. Exactparagraph+newreferenceonly;27pages25+2and63refs,other24PDFpagesunchanged. Independenttargetedreview,13readonlychecksandcleanmainreproductionpass; allscientificinputsand12pendinggatespreserved. SeeCURRENT_EDITION_PAPER_UPDATE.md;long-termgoalremainsactive.
