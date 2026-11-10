@@ -1,0 +1,36 @@
+{
+  "input": {
+    "file": "../task4_v117_team_intake/city_indicators.csv",
+    "city": "Oslo",
+    "indicator": "pupil_teacher_ratio",
+    "value": 18.2,
+    "year": 2025,
+    "flag": "ok",
+    "originating_source": null
+  },
+  "source": {
+    "provider": "Statistics Norway",
+    "table": "12609",
+    "region_code": "0300",
+    "region": "Oslo kommune",
+    "metric_code": "KOSelevperlarsv0000",
+    "metric": "Pupils per contracted man-years teachers",
+    "year": 2025,
+    "value": 12.5,
+    "unit": "pupils per contracted teacher man-year",
+    "api_refperiod": "31.12",
+    "school_stage": "upper secondary education table; detailed legacy indicator also includes vocational college students in county-run schools",
+    "denominator": "contracted teacher man-years; legacy definition excludes long absence and leadership/inspector positions",
+    "geography": "Oslo municipality administrative selection; legacy indicator numerator is by school county, not student residence; no school-level linkage",
+    "providers": "legacy indicator definition covers county-run upper secondary schools, not all providers",
+    "reference_date_detail": "API metric reference period 31 December; legacy numerator recorded 1 October; denominator exact measurement date not established by examined documents",
+    "definition_caveat": "Detailed indicator definition is from older SSB table 06942; same-named indicator is relevant contextual evidence, but exact equivalence with current 12609 methodology is not independently established."
+  },
+  "assessment": {
+    "value_match": false,
+    "year_match": true,
+    "metadata_full_match": false,
+    "input_lineage_established": false,
+    "conclusion": "Official 2025 result does not match 18.2; it cannot establish or disprove the unrecorded origin of the user input. Do not substitute it."
+  }
+}

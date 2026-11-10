@@ -1,0 +1,56 @@
+{
+  "subject": {
+    "csv": "research/2026-a/data/task4_v117_team_intake/city_indicators.csv",
+    "city": "Oslo",
+    "csv_values": {
+      "cli": 92.9,
+      "cli_year": 2026,
+      "cli_flag": "ok",
+      "pir": 9.8,
+      "pir_year": 2026,
+      "pir_flag": "ok"
+    }
+  },
+  "publisher_value_match": {
+    "cli": {
+      "status": "no exact match in the checked archived editions",
+      "annual_2026": 90.2,
+      "mid_year_2026": 92.1,
+      "current_at_archive_capture": 93.0,
+      "csv": 92.9,
+      "interpretation": "The CSV CLI is not an exact value match to the archived annual 2026, 2026 Mid-Year, or Current Numbeo table."
+    },
+    "pir": {
+      "status": "exact value match to Current only",
+      "annual_2026": 11.6,
+      "mid_year_2026": 11.0,
+      "current_at_archive_capture": 9.8,
+      "csv": 9.8,
+      "interpretation": "The CSV PIR equals the archived Current value; it does not equal the archived annual 2026 or 2026 Mid-Year value."
+    }
+  },
+  "edition_and_year": {
+    "annual_2026_pages": "Tables titled Cost of Living Index by City 2026 and Property Prices Index by City 2026. The checked annual pages do not match either CSV value.",
+    "csv_year_field": "The CSV labels both values 2026 but has no edition identifier, source URL, retrieval timestamp, or extraction lineage tying them to the annual 2026 pages."
+  },
+  "definition_and_scale": {
+    "cli": "Numbeo explains the Cost of Living Index as New York City (NYC) = 100, covering consumer goods and services and excluding rent or mortgage housing costs. See numbeo_cost_indices_explained.html lines 231\u2013236.",
+    "pir": "Numbeo describes Price to Income Ratio as an apartment-purchase affordability measure. Its stated calculation assumes net family disposable income = 1.5 \u00d7 average net salary and a 90 m\u00b2 median apartment. See numbeo_property_indicators_explained.html lines 235\u2013240. It is a publisher-defined ratio, not a directly observed household median price divided by measured median family income."
+  },
+  "geography": {
+    "publisher_city_label": "Oslo, Norway",
+    "boundary_support": "The table identifies a city label only; the archived evidence does not establish boundary equivalence with the CSV population basis or model geography."
+  },
+  "csv_extraction_lineage": {
+    "status": "not established",
+    "reason": "The intake CSV stores the two values, year and flag but no source URL, table edition, row/column citation, access date, or extraction method. Publisher value matches do not recover the original extraction path."
+  },
+  "evidence_files": {
+    "annual_cli": "cost-of-living_2026.html, table t2, row at line 497; CLI column value 90.2",
+    "annual_pir": "property-investment_2026.html, table t2, row at line 1886; Price To Income Ratio value 11.6",
+    "current_cli": "cost-of-living_current.html, row at line 483; value 93.0",
+    "mid_year_cli": "cost-of-living_mid.html, row at line 530; value 92.1",
+    "current_pir": "property-investment_current.html, row at line 2435; value 9.8",
+    "mid_year_pir": "property-investment_mid.html, row at line 2010; value 11.0"
+  }
+}

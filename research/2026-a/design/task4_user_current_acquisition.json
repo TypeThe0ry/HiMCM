@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 21,
+    "routes": 24,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -289,5 +289,25 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "No-status API cells and nationally weighted/estimated/payroll totals do not prove actual all-provider teacher upper coverage; no numerical pupil/teacher bound constructed."
+  },
+  "oslo_cost_PTR_source_followup": {
+    "data": [
+      "data/current_oslo_cost_source",
+      "data/current_oslo_ptr_source"
+    ],
+    "verification": "results/current_oslo_cost_ptr_review/verification.json",
+    "verification_sha256": "d28a5e0ed49f00cf437629e731267616c62c851743a06aeef276f0a08c3a4de7",
+    "original_points_reviewed": 3,
+    "new_HTTP_response_bodies": 7,
+    "existing_archived_tables_reused": 6,
+    "PIR_publisher_value_match": "Archived rolling Current only; not annual2026",
+    "CLI_publisher_value_match_in_three_checked_editions": false,
+    "SSB_2025_Oslo_ratio": 12.5,
+    "original_PTR_retained": 18.2,
+    "original_extraction_lineages_established": 0,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Independent source values/definitions documented without certifying the original input measurement matrix or replacing user values."
   }
 }

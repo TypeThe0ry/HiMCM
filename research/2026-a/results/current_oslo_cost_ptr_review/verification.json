@@ -1,0 +1,104 @@
+{
+  "status": "pass scoped source review",
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 77,
+  "withdrawal_evidence_entries_checked": 10,
+  "paper_dependencies_each_copy": 7,
+  "current_PDF_unchanged": true,
+  "retained_points": [
+    {
+      "field": "cli",
+      "value": 92.9,
+      "year": 2026,
+      "submitted_flag": "ok",
+      "utility_unchanged": 0.5184033177812338,
+      "fixed_ignorance_stress_changes_choice": true,
+      "scope": "Previously verified [0,1] withdrawal stress; not an error finding or probability."
+    },
+    {
+      "field": "pir",
+      "value": 9.8,
+      "year": 2026,
+      "submitted_flag": "ok",
+      "utility_unchanged": 0.5050505050505051,
+      "fixed_ignorance_stress_changes_choice": true,
+      "scope": "Previously verified [0,1] withdrawal stress; not an error finding or probability."
+    },
+    {
+      "field": "pupil_teacher_ratio",
+      "value": 18.2,
+      "year": 2025,
+      "submitted_flag": "ok",
+      "utility_unchanged": 0.4518072289156626,
+      "fixed_ignorance_stress_changes_choice": true,
+      "scope": "Previously verified [0,1] withdrawal stress; not an error finding or probability."
+    }
+  ],
+  "pupil_teacher_source": {
+    "raw_receipts_checked": 5,
+    "SSB_table": "12609",
+    "region": "0300",
+    "metric": "KOSelevperlarsv0000",
+    "values": {
+      "2024": 10.9,
+      "2025": 12.5
+    },
+    "matches_original18_2": false,
+    "input_lineage_established": false,
+    "historical_definition_continuity_verified": false,
+    "scope": "Current table values and legacy coverage warning independently located; no replacement, exact current methodology continuity or input error established."
+  },
+  "cost_sources": {
+    "raw_receipts_checked": 8,
+    "copied_archived_tables": 6,
+    "new_definition_responses": 2,
+    "archived_Oslo_values": {
+      "cost-of-living": {
+        "2026": 90.2,
+        "mid": 92.1,
+        "current": 93.0
+      },
+      "property-investment": {
+        "2026": 11.6,
+        "mid": 11.0,
+        "current": 9.8
+      }
+    },
+    "CLI_exact_match_in_checked_editions": false,
+    "PIR_exact_match_only_rolling_Current": true,
+    "input_lineage_established": false,
+    "municipal_boundary_equivalence_verified": false,
+    "annual_2026_match_either_input": false,
+    "scope": "Only Oslo rows are reviewed. Reusing historical archived publisher pages does not use the old 25-city model. Original response status/times unknown for six copies; Current is an archive snapshot, not a live or annual 2026 value."
+  },
+  "original_extraction_lineages_established": 0,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_manuscript": false,
+  "source_sha256": {
+    "data/current_oslo_ptr_source/README.md": "10874d56f78384ec2433ac0b2d4f1b76d37882b7d4241ffaf4888b0f231fd61d",
+    "data/current_oslo_ptr_source/receipts.json": "d8a0e709d45369f4dbc60361427d1347b27909bf0566351c3d0708de0cfd0529",
+    "data/current_oslo_ptr_source/scope.json": "9d84bbf7a195f55a8812b2ece61104cc9dd6f973a55f387898c85202c160e51f",
+    "data/current_oslo_ptr_source/ssb_06942_definitions.html": "18f17721b90d16bbd2bb9eb7a10f27771ee34b62b09de98ce43a4c5c161dddd4",
+    "data/current_oslo_ptr_source/ssb_12186_metadata.json": "fc34aecd0be7eb090f3ac50f198208b8d89a5087fd64303716fef447561fe2b6",
+    "data/current_oslo_ptr_source/ssb_12609_metadata.json": "5d6b4796ce4ca5e9d1dedbe1cc44062d0cf0dab627971f7d03f9291d6849f01e",
+    "data/current_oslo_ptr_source/ssb_12609_page.html": "d24be85f75804cde2aeb30338c446785a2b78456c960d451f9c629cced2b3118",
+    "data/current_oslo_ptr_source/ssb_12609_query.json": "fdbca3487bfa7fae94eee798643e2bc336d1369e3385324178e54a7a04c6ff4d",
+    "data/current_oslo_ptr_source/ssb_12609_response.json": "d0eb6582beeae7e63fd4fbfaceaf7c84e7e41b7f9d726cea7e98623cada3da0c",
+    "data/current_oslo_cost_source/README.md": "07fbdbbb227afe2cf610a7a2875d8220a45243c0ea0212a9014877a332c0c10b",
+    "data/current_oslo_cost_source/cost-of-living_2026.html": "09f4959edae8b771566eb57d832795d4253776aaf2a2114c63e321f7be9b9b3b",
+    "data/current_oslo_cost_source/cost-of-living_current.html": "30d4e4d9f5d69d5e8f3327770bb68bcab4106600dbc645cdffb18b3826836dd3",
+    "data/current_oslo_cost_source/cost-of-living_mid.html": "f3eb608fa3dc6fb68987f0c8881da133406037485d97f0d161eb897ab62741e2",
+    "data/current_oslo_cost_source/numbeo_cost_indices_explained.html": "3c57ef2b063539ac41deb9ecdefd31c592fa12bbf095386785ac6dcdfbde9ba3",
+    "data/current_oslo_cost_source/numbeo_property_indicators_explained.html": "b05a41f38d88e194c947ebbac52510c43c3b3a17a86d17f4c0fa24eb28a58f5d",
+    "data/current_oslo_cost_source/property-investment_2026.html": "e54bbe6a8821b3c371301c179278c8d8da26bbb54261a9d007afe4315dcd00aa",
+    "data/current_oslo_cost_source/property-investment_current.html": "ec7175d68c137f335e69581633e687ad59b3cfb685c686f61c5f9d23ee6765a0",
+    "data/current_oslo_cost_source/property-investment_mid.html": "92a0176a95cd723e77680d7ccdd9cd5796aa64662800f6ffaceb3654cf865dfa",
+    "data/current_oslo_cost_source/retrieval.json": "b626621443d9a2d8fdfcac4c057476cf52f6b9a5633f5932311c8d09664668da",
+    "data/current_oslo_cost_source/scope.json": "786d11d4647e486a6c6d5d5cc64bb4d027d3fb33df514864dfdb04cb71935b2d",
+    "scripts/audit_current_oslo_cost_ptr_sources.py": "3a6da9c9edaaede65cb589b608dcd5b66c57ad729c401490f598f83057a45120",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+    "data/city_matrix_25_audit/provenance.json": "06a9c369b34af54f7ff234d49880adcccf6851a591eeaf9b010884de878607de"
+  },
+  "scope": "Three influential original points retained. Source differences do not prove input error. No policy, weights, intervals, CSV or paper change; no agency contact or full point-matrix certification."
+}

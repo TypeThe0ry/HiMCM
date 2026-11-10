@@ -1,0 +1,35 @@
+{
+  "query": [
+    {
+      "code": "KOKfylkesregion0000",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "0300"
+        ]
+      }
+    },
+    {
+      "code": "ContentsCode",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "KOSelevperlarsv0000"
+        ]
+      }
+    },
+    {
+      "code": "Tid",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "2024",
+          "2025"
+        ]
+      }
+    }
+  ],
+  "response": {
+    "format": "json-stat2"
+  }
+}
