@@ -57,7 +57,7 @@ The current delivery map is registered separately in `research/2026-a/design/tas
 
 - Keep the paper model understandable and concise, following the archived HiMCM judge guidance and concrete awarded-paper examples.
 - Prefer one core evaluation model, an evidence-backed revision, and focused validation. Additional methods need demonstrated value; do not add complexity to signal innovation.
-- Use `HiMCM-Overleaf/drafts/task4_paper_core.md` as the current presentation guide. Keep detailed extraction audits and exploratory algorithms in supporting material, while preserving conclusion-changing limitations in the main discussion.
+- Use the [archived presentation guide](paper/history/overleaf_before_single_main_20261110/drafts/task4_paper_core.md) for concise model presentation, and the latest Overleaf `main.tex` for the current manuscript. Keep detailed extraction audits and exploratory algorithms in supporting material, while preserving conclusion-changing limitations in the main discussion; do not recreate the old Overleaf drafts directory.
 
 ## Minimal manuscript edits — user instruction, 2026-11-07
 
