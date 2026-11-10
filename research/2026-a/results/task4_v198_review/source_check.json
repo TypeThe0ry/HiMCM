@@ -1,0 +1,26 @@
+{
+  "status": "verified_source_check",
+  "scope": "Read-only source audit for V198 claims; no model or manuscript changes.",
+  "zurich_count": {
+    "arithmetic": "12 = seven previously named directory facilities + five additional eligible-for-conditional-subset school facilities.",
+    "five_additions": ["Schulschwimmanlage Aemtler", "Schulschwimmanlage Altweg", "Schulschwimmanlage Borrweg", "Schulschwimmanlage Riedtli", "Schulschwimmanlage Tannenrauch"],
+    "excluded": {"name": "Schulschwimmanlage Kügeliloo", "reason_quote": "... bietet an einem Abend öffentliches Schwimmen für Erwachsene an.", "locator": "kuegeliloo_original.html:160 (lead); :252 (opening-hours table)", "sha256": "a22863d21b91e0560805b1009e66150c9bd5dbeacfb83cd7ed517a61a04a0686"},
+    "address_uniqueness": {"status": "13 distinct street+postal-code pairs across retained seven and all six school cards", "evidence": "school_candidates.json rows and existing_seven_addresses; source HTML contact element id=kontakt", "all_thirteen_addresses_unique": true},
+    "caveat": "This supports a conditional named municipal facility-supply subset, not all-teen access, continuous operation, or an independently verified 2025 inventory/population."
+  },
+  "school_facility_evidence": [
+    {"name": "Aemtler", "sha256": "d8e09abab452c6506c86ab10f39f2bfddeeb1d4afb23a2d74885c2cff7c74713", "public_quote": "... an drei Abenden öffentliches Schwimmen, teilweise nur für Frauen und Mädchen.", "public_locator": "aemtler_original.html:160 (stzh-text slot=lead)", "closure_quote": "Die Schulschwimmanlage ist während den Schulferien und an schulfreien Tagen geschlossen", "closure_locator": "aemtler_original.html:214 (stzh-richtext)"},
+    {"name": "Altweg", "sha256": "916f5b75efae30a908d8b6b76dc852e9c8dbf5890b67d537213cb10f9f2ef81a", "public_quote": "... bietet am Dienstag öffentliches Schwimmen.", "public_locator": "altweg_original.html:160 (stzh-text slot=lead)", "closure_quote": "Die Schulschwimmanlage ist während den Schulferien und an schulfreien Tagen geschlossen", "closure_locator": "altweg_original.html:214 (stzh-richtext)"},
+    {"name": "Borrweg", "sha256": "8220ce9f26a0422437ab962561652e323d2755fe4e876998ce03608a830776b6", "public_quote": "... bietet am Dienstag öffentliches Schwimmen.", "public_locator": "borrweg_original.html:160 (stzh-text slot=lead)", "closure_quote": "Die Schulschwimmanlage ist während den Schulferien und an schulfreien Tagen geschlossen", "closure_locator": "borrweg_original.html:214 (stzh-richtext)"},
+    {"name": "Riedtli", "sha256": "a9ade4715257329918438fcc0294dbf6ead12c2d79ee4fe4f13f499fa916faf8", "public_quote": "... an zwei Abenden öffentliches Schwimmen, teilweise nur für Frauen und Mädchen.", "public_locator": "riedtli_original.html:160 (stzh-text slot=lead)", "closure_quote": "Die Schulschwimmanlage ist während den Schulferien und an schulfreien Tagen geschlossen", "closure_locator": "riedtli_original.html:214 (stzh-richtext)"},
+    {"name": "Tannenrauch", "sha256": "269381e418257a7308c91e00b40f9c4642290eeb0ff43fe3020960ed17d12652", "public_quote": "... am Montag, Dienstag, Mittwoch und Freitag öffentliches Schwimmen.", "public_locator": "tannenrauch_original.html:160 (stzh-text slot=lead)", "closure_quote": "Die Schulschwimmanlage ist während den Schulferien und an schulfreien Tagen geschlossen", "closure_locator": "tannenrauch_original.html:214 (stzh-richtext)"}
+  ],
+  "milan_reference_date": {
+    "status": "confirmed",
+    "pdf_quote": "aggiornato al 9 settembre 2025",
+    "pdf_locator": "tariff_original.pdf, page 1, bottom-right; extracted with pdftotext -layout",
+    "pdf_sha256": "cc9401ef8833c1f0d25070db485c298b4997fe1efcfbb675aa3e66f3ff06af0a",
+    "reference": "drafts/task4_v196_references.tex:140-143 correctly says effective 1 June 2025, updated 9 September 2025; filename's agg-9-10-2025 is not evidence of October 9 update.",
+    "reference_file_sha256": "4f50622dd378fc046241c1292a5f6711e85ea900978d2c35f6e71dfb361a12c6"
+  }
+}

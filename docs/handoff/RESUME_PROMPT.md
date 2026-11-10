@@ -1,34 +1,33 @@
-# 恢复HiMCM：主科学／扩展V192，自有稿／交付V196
+# 恢复HiMCM：主科学／扩展V197，自有稿／交付V198
 
-先读AGENTS.md、GUIDELINES.md与[V196原件与窄幅修正](V196_RESEARCH_UPDATE.md)。长期goal active，GitHub保存研究，论文在相邻HiMCM-Overleaf；新增／修改文字必须使用指定anti-defensive-writing技能，只改自有内容。
+先读AGENTS.md、GUIDELINES.md与[V198统一启用](V198_RESEARCH_UPDATE.md)。长期goal active；指定反防御写作技能必用，只改自有内容。低级subagent默认Luna，高级Terra6.1，思考程度按任务选择。
 
 ## 当前权威入口
 
 - 原CSV data/task4_v117_team_intake/city_indicators.csv，SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c；16城×10指标，旧25城仅历史案例。
-- design/task4_user_current_model.json：V192模块task4_user_v192_revision.revised_bounds()；25补充，112点／37部分／11全未知（8师资、3旅时）。327不可变绑定见design/task4_user_v192_snapshot.json，不把当前导航混进科学快照。
-- design/task4_user_current_extensions.json：scripts/task4_v192_extensions.py四模块；既有权重／种子／情景保持。
-- design/task4_user_current_review.json与Overleaf drafts/task4_current_review.json一致：V196、科学V192；drafts/task4_v196_paper.tex/.pdf，根task4_v196_review_entry.tex。
-- design/task4_user_current_delivery.json与Overleaf drafts/task4_current_delivery.json一致：V196，指向results/task4_v196_review/requirements.csv和verification.json。当前47状态／13待办、58限定范围锚点；旧V190定位清单冻结。
-- 科学独审results/task4_v192_transition/verification.json；当前稿results/task4_v196_review/verification.json与visual_review.json；其余科学／完整冻结V193复现证据保留。
+- design/task4_user_current_model.json：V197模块task4_user_v197_revision.revised_bounds()；25不同补充键、112点／37部分／11全未知（8师资、3旅时），一格细化、无新填格。361不可变输入见design/task4_user_v197_snapshot.json；可变当前导航不混入科学快照。
+- design/task4_user_current_extensions.json：scripts/task4_v197_extensions.py四模块，既有权重／种子／情景不变。
+- design/task4_user_current_review.json与Overleaf drafts/task4_current_review.json一致：V198、科学V197；drafts/task4_v198_paper.tex/.pdf，根task4_v198_review_entry.tex。
+- design/task4_user_current_delivery.json与Overleaf drafts/task4_current_delivery.json一致：V198；results/task4_v198_review/requirements.csv及delivery_verification.json，47状态／13待办／58限定锚点。
+- V197科学独审results/task4_v197_transition/verification.json；V198验收results/task4_v198_review/verification.json、activation.json、visual_review.json；独立快照重建及远端回执收尾后同目录留存。
 
 ## 当前结论与来源
 
-固定均宽16.0390700744、等权18.8188134495，累计相对原输入收窄14.73465766%。Zurich保守、16可能／0必要，教育优先Oslo。原权重Warsaw11／Vienna12；教育tau.716667、区间／中点fixedtau.6；TOPSIS/VIKORtau.483333／.65，固定Dublin可接受、等权Oslo非唯一。MC族2064／37、均秩4440对中4260明确／180未区分、22唯一最小；非现实胜率。
+固定均宽16.0122119975、等权18.7644296678，原权重累计相对原输入收窄14.87743795%。Zurich保守、16可能／0必要；教育优先Oslo，tau.716667；区间／中点tau.6/.65，TOPSIS/VIKORtau.483333/.65，原权重Dublin可接受、等权Oslo非唯一。
 
-Tokyo38站来自窗口目录，库存日未知，2026目录元数据不冒充观测日；Warsaw38复合体由21／18合并，共同站一次，2026目录／2024地图／2025市域佐证分开，保留人口9983365／1863800及2026／2024年。Amsterdam32等既有源条件保持；所有原值、上下界规则、权重只乘一次和自排除遗憾保持。
+Zurich12池＝原7＋Aemtler/Altweg/Borrweg/Riedtli/Tannenrauch，成人专用Kügeliloo排除，女性／女孩泳时和假期关闭限制保留；2026捕获、库存日未知，人口440935／2025保留。不能解释为所有高中生可达或实际设施增长。Tokyo38窗口目录、Warsaw38复合体、Amsterdam32名义筛查等原条件保持；未改用户值／人口／权重／规则。Milan引用September修正保留。
 
-V193已接入V192来源诊断：单均值46.58895分钟与联合均值7.14733%／51.42357%边界保持但重新绑定；严格低于／边界并列／超过存在反例，非概率或未来趋势。撤回Zurich工作代理可改固定推荐，不称确定冠军。Eurostat数值匹配不证明CSV抄录链或高中人群；CH001C当前Bern，Zurich为CH002C。失败师资路线跳过。
+单Zurich均值边界54.05313分钟，联合12均值箱锐半径13.01105%／63.44548%，两参考首个竞争者Oslo；严格低于处处唯一、边界可并列、超过存在反例，非概率或未来趋势。撤回Zurich工作代理仍可改变原权重首选。精确边界浮点名次1/2的机器差见独审，不当数学唯一性。Eurostat数值匹配仍不证明原CSV抄录链或高中总体。
+
+主MC48设定；2064均值／37设定误差证书仅覆盖偏好／未来导出，不含全部主MC。4440均秩对4265明确／175未区分、24组唯一最小。κ100 ZH/Oslo/SG条件频率51.15/23.25/25.11%；ZH样本均秩2.0269小于Oslo2.1779，但其期望差界跨零，非现实胜率。
 
 ## 交付与下一步
 
-V196为27页（仅Milan引用October→September，26页像素同）＝25正文参考＋2暂定AI，56引用（保留53加3），新闻18—19／AI26—27，0页余量；原生页眉暂用18213、实际注册未核，空页脚。队友main／ref／class及默认Main保持。AI选集固定2026-11-09 14:31:18.850UTC，不覆盖后续和全队；submission_ready=false。
+V198为27页＝25正文参考＋2暂定AI，56引用，新闻18—19／AI26—27；0页余量。原生页眉暂用18213且实际注册未核、空页脚；队友main/ref/class／默认Main保持。共享main只读构建仍缺framework.png。AI选集冻结截止2026-11-09 14:31:18.850UTC，不覆盖后续或全队，submission_ready=false。
 
-V196直接／根代理27页文字和72dpi像素一致；V193完整Git快照重建为冻结前稿证据。当前窄幅重建／审计命令见V196交接；本地缓存不等于服务器编译。分别fetch、审diff、正常push并核远端，保持GitHub研究／Overleaf稿件分工。
+V198直接／根代理27页文本一致；独立Git快照runner为scripts/task4_v198_reproduce.py，要求P干净及外部空output-dir，本地缓存不等于服务器编译。不要重跑冻结的V198启用前保护审计来检验新导航；按当前快照runner验证已启用状态。分别fetch、审diff、正常push并核远端。
 
-V194已完成48不确定格采集价值重基（96行，11全未知／37部分），含Tokyo/Warsaw交通部分区间；独立11232标量案例通过。见[V194交接](V194_RESEARCH_UPDATE.md)。V195进一步核实Vienna隐藏脚注为最快道路模型、其他新路线无匹配观测并跳过；修复中断采集原件保护，见[V195交接](V195_RESEARCH_UPDATE.md)。下一轮按V194表只追新同口径高价值证据，不重复优先级重基、V192全研究、V193入稿或V195失败请求。保留13项实质待办的真实记录门槛，不重复旧证明或无限刷新AI窗口。
-
-
-V197已完成Zurich12池的完整隔离研究及独审，361绑定／48主MC／全部扩展通过，fixed均宽16.0122119975、equal18.7644296678，仍Zurich／16可能。当前入口仍V192／V196；下一轮按[V197交接](V197_RESEARCH_UPDATE.md)和paper_migration_plan直接从现稿做V198一致稿后启用，不重复原件采集或V197全研究。新单均值54.05313、联合13.01105%／63.44548%、均秩4265／175／24；旧“Oslo样本均秩较小”须随稿更新。保留September、限时泳池条件、原值及队友内容。
+下一轮重基V194全部48不确定格、96权重行到当前V197，不能因取得下界删掉部分区间或Zurich泳池。其后只追新同口径高价值来源，跳过V194/V195失败或不匹配路线。不要重做V197全研究／V198入稿或无限扩展AI窗口；13项实质交付门槛保留真实记录要求。
 
 ## 冻结恢复档案（以下为历史，不作为当前入口）
 
