@@ -1,0 +1,50 @@
+{
+  "teacher_rows": 339,
+  "teacher_unique_UAIs": 339,
+  "teacher_null_FTE_records": 2,
+  "GT2025_rows": 122,
+  "PRO2025_rows": 59,
+  "GT_PRO_overlap": 27,
+  "pupil_union_UAIs": 154,
+  "GT_pupils": 57460,
+  "PRO_pupils": 14167,
+  "matched_teacher_UAIs": 153,
+  "unmatched_teacher_UAIs": [
+    "0754401B"
+  ],
+  "unmatched_teacher_pupils": 117,
+  "unique_matched_teacher_FTE": "7920.09",
+  "duplicated_FTE_if_joining_GT_and_PRO_separately": "1870.52",
+  "annuaire_lycee_rows": 243,
+  "annuaire_lycee_unique_UAIs": 237,
+  "annuaire_extra_EREA_records": 3,
+  "annuaire_candidate_rows": 246,
+  "annuaire_unique_UAIs": 240,
+  "multiple_candidate_UAIs": [
+    "0750651A",
+    "0750711R",
+    "0750770E",
+    "0750787Y",
+    "0753268V",
+    "0753919C"
+  ],
+  "mixed_postbac_UAIs": [
+    "0750651A",
+    "0750711R",
+    "0750770E",
+    "0750787Y"
+  ],
+  "pupil_union_current_postbac_states": {
+    "postbac_flag": 88,
+    "no_postbac_flag": 60,
+    "unknown": 2,
+    "mixed_site_flags": 4
+  },
+  "current_HORS_CONTRAT_UAIs": 45,
+  "current_partial_contract_UAIs": 8,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "scope": "Exact UAI source joins; institution teacher FTE counted once, no PTR or ratio computed. Current site flags are not historical2025 allocations; public/contract coverage is not all-provider coverage. Missing records and subgroup nulls remain unfilled."
+}

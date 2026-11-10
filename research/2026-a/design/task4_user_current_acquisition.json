@@ -723,5 +723,40 @@
     "changes_primary_model": false,
     "changes_manuscript": false,
     "scope": "Conditional one-provider diagnostic and administrative history; no exclusion, certified inventory, relocation date or new campus census.2026quality-work approval does not grant institutional accreditation."
+  },
+  "Paris_teacher_pupil_candidate_join": {
+    "sources": "data/current_paris_teacher_join/README.md",
+    "results": "results/current_paris_teacher_join",
+    "script": "scripts/task4_current_paris_teacher_join.py",
+    "verification": "results/current_paris_teacher_join/verification.json",
+    "verification_sha256": "9bb4ffeef325911aa60ac8c8eb2202f41aaa25a1e59433a55cb29c57d7c74d73",
+    "teacher2025_UAIs": 339,
+    "pupil2025_UAIs": 154,
+    "matched_teacher_UAIs": 153,
+    "missing_teacher_UAI": "0754401B",
+    "missing_teacher_pupils": 117,
+    "GT_PRO_overlap": 27,
+    "unique_matched_institution_teacher_FTE": "7920.09",
+    "avoided_duplicate_FTE": "1870.52",
+    "annuaire_candidate_rows": 246,
+    "annuaire_distinct_UAIs": 240,
+    "multiple_candidate_UAIs": 6,
+    "mixed_site_flags": 4,
+    "current_pupil_union_flag_states": {
+      "postbac": 88,
+      "no_postbac": 60,
+      "mixed": 4,
+      "unknown": 2
+    },
+    "EREA_exact_key_matches": 3,
+    "Paris_PTR_utility": [
+      0,
+      1
+    ],
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "scope": "Expanded exact-key source review beyond V129 single-school witness; no all-provider upper-stage allocation, teacher cap, city ratio or score. Institution FTE counted once; all current site candidates preserved."
   }
 }
