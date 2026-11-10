@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "python": "3.11.18",
+  "executable": "/data/scratch/himcm-current-check-env/bin/python",
+  "platform": "Linux-7.0.0-14-generic-x86_64-with-glibc2.43",
+  "machine": "x86_64",
+  "prefix": "/data/scratch/himcm-current-check-env",
+  "base_prefix": "/root/.local/share/uv/python/cpython-3.11.18-linux-x86_64-gnu",
+  "shared_base_interpreter": true,
+  "user_site_enabled": false,
+  "inherits_system_site_packages": false,
+  "old_venv_on_sys_path": false,
+  "installed_distributions": {
+    "pytz": "2026.6",
+    "pandas": "2.3.1",
+    "cycler": "0.12.1",
+    "matplotlib": "3.9.2",
+    "pyparsing": "3.3.3",
+    "kiwisolver": "1.5.1",
+    "packaging": "26.3",
+    "fonttools": "4.68.0",
+    "python-dateutil": "4.0.0",
+    "numpy": "1.26.4",
+    "tzdata": "2026.6",
+    "contourpy": "1.3.3",
+    "pillow": "13.0.0",
+    "scipy": "1.13.1"
+  },
+  "tools": {
+    "git": {
+      "path": "/usr/bin/git",
+      "sha256": "ed8b2df973b28c0fb773b9c0dc0816d3ee2b3835bb932d9153c21417bb51b362",
+      "version": "git version 2.53.0"
+    },
+    "tectonic": {
+      "path": "/usr/local/bin/tectonic",
+      "sha256": "2b3a86250906c92ed0a3ae8aaa454ec55bd6cede8593b3e549640177f6aecaa3",
+      "version": "Tectonic 0.17.0"
+    },
+    "pdftotext": {
+      "path": "/usr/bin/pdftotext",
+      "sha256": "4f7ead0d77e5ed9016f7af415eabf65a3a9ff20d72e51c6d1437677895f3100f",
+      "version": "pdftotext version 26.01.0"
+    },
+    "pdftoppm": {
+      "path": "/usr/bin/pdftoppm",
+      "sha256": "925ad4988c1fc776a829424094900473cd68d189fe8e84c15c1221ad01a0dbb7",
+      "version": "pdftoppm version 26.01.0"
+    }
+  },
+  "sanitized_path": "/usr/local/bin:/usr/bin:/bin",
+  "profile_sha256": {
+    "README.md": "f1ce01226ec15b9423a8ee89dd8c71e65bb35178d73ea0162a9ad14f13c0516c",
+    "requirements.in": "80f62c5f21f3f244b352c89df32434d2b8ae46e06704efabff24b4097d55c004",
+    "requirements.lock": "ef643f6e28e7e187be9e26ea07aed1a5d50bd183add1028e4c60400203bae790",
+    "constraints.txt": "9edff6f89f2b8e58fdc76aa05fa4c80b7caa6750d2cf8de9f0b6bcace6d7be1a"
+  },
+  "scope": "New virtual environment packages only, same host/base interpreter and pre-existing TeX resources; not a clean OS or uncached network bootstrap.",
+  "bootstrap_tool": {
+    "path": "/usr/local/bin/uv",
+    "version": "uv 0.13.6 (x86_64-unknown-linux-gnu)",
+    "sha256": "23803452c0fbe125033054cd9ff245f1d649fb65b4b73f68429f4abda432436d",
+    "role": "Bootstrap/lock maintenance; not a Python distribution or checker runtime dependency"
+  }
+}

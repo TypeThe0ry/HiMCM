@@ -14,6 +14,8 @@
 
 ## 研究入口
 
+Current model/PDF verification: [hash-locked Python environment](research/2026-a/environment/current-check/README.md), tested in a new virtual environment without the old research environment. Native tools and an existing TeX cache remain prerequisites.
+
 [主模型注册](research/2026-a/design/task4_user_current_model.json)、[扩展注册](research/2026-a/design/task4_user_current_extensions.json)、[论文注册](research/2026-a/design/task4_user_current_review.json)、[交付注册](research/2026-a/design/task4_user_current_delivery.json)指向当前证据。完整代码、原件、计算结果和历史参考保存在 `research/2026-a/` 与 `library/`；旧25城仅为冻结辅助案例。
 
 Singapore已有26处条件场馆保持；本轮只将Oslo交通供应下界由89地铁站子集替换为626个来源定义的纯路边公交组，不相加。数据为2026登记库存，人口仍为原2025口径727797；Tveten bru因待停用疑问预防性排除，未断言关闭。112点／37部分／11未知及25个不同补充键保持。固定均宽15.9558204759降至15.8223269533，实际缩小0.133494分，累计缩小15.89%。

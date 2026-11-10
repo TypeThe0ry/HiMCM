@@ -1,5 +1,7 @@
 # Current audit workflow
 
+For the registered model and PDF reproduction, use the [locked current-check environment](../../research/2026-a/environment/current-check/README.md). It is separate from the legacy research environment used in the audit examples below; private AI files and optional workbook dependencies are not included.
+
 Run current audit scripts as checks: their default output is JSON on stdout. The AI-source, point-utility, point-withdrawal, joint-collection, Zurich-source and current-paper auditors do not replace saved evidence reports unless a report destination is explicitly selected. Python and uv may maintain their normal runtime caches; use `PYTHONDONTWRITEBYTECODE=1` to suppress Python bytecode caches.
 
 Use `.venv-v120/bin/python research/2026-a/scripts/audit_current_<name>.py` for the scientific auditors. The AI audit needs the preserved local session path and optionally the private export directory. The Zurich audit instead uses `UV_CACHE_DIR=/data/scratch/uv-cache uv run --no-project --with openpyxl==3.1.5 python research/2026-a/scripts/audit_current_zurich_source2026.py`. The current-paper auditor accepts `--build-dir` for an existing compiled build.
