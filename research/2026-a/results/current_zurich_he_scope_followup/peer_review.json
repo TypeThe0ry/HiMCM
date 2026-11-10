@@ -1,0 +1,97 @@
+{
+  "status": "pass with stated scope limits",
+  "review_type": "Independent read-only inspection of saved primary HTML, CSV, roster and verification; this file is the only output",
+  "reviewed_at_utc": "2026-11-10T19:47:08.479741+00:00",
+  "source_sha256": {
+    "data/current_zurich_he_scope_followup/README.md": "b035c7627e59e7a36471455a1fc9cb8b7c876b0cacb98f68abb6d1ebfe8a7342",
+    "data/current_zurich_he_scope_followup/accreditation_decisions.html": "37420b7b82917a708a45cbdf702371b3c633a67590144e5feeb477638a2a6353",
+    "data/current_zurich_he_scope_followup/canton_entry.html": "c05822a32f03e5f241b76cd1edb32e8ae9b5e21c2fc706c861e6415dea4babf0",
+    "data/current_zurich_he_scope_followup/canton_offerings.html": "71cc498a7426935eac13841c4b8287162cc75230c3c50674fb71902cbe8b62b1",
+    "data/current_zurich_he_scope_followup/retrievals.json": "3f9a59a7e1dc6ec8473b4598cb3c386b975ed65c79c182f65b22fc9bbc000b9f",
+    "data/current_zurich_he_scope_followup/swissuniversities.html": "52b66692ccac6423a101d24b34d342df0c283579e663034b10cfecd5a83e6b21",
+    "data/current_zurich_he_scope_followup/verify.py": "8274341f81a211a3b84234bbb2f9529ecc203e1a7b4a919e88d9ce2d03663d37",
+    "results/current_zurich_he_scope_followup/verification.json": "ad6610f23a52648d05a10879a1c51d9c690bc19ea2fb26117c6f30d0e3e7720f",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/current_all16_ror_rosters/ror_education_rosters.csv": "8b5152fac81392f3a7f9f7547df4b5954f09e4c97dc8ffc3aaa97be8ab4369d5",
+    "data/current_all16_ror_rosters/README.md": "dcab144f46de0d31e6fc215a63b9279778388930ed1ee2da2798c7ca7ae96242",
+    "results/current_all16_ror_review/verification.json": "d516aae6ec2e83c020f45ed3e4255d74ce8d037fce20a56d8405c8023f3cd377"
+  },
+  "checks": {
+    "input_arithmetic": {
+      "count": 23,
+      "population": 440935,
+      "population_year_label": "2025",
+      "density_year_label": "2026",
+      "per_million": "52.16188327077687187453933119",
+      "reported_rounded": 52.2,
+      "conclusion": "Arithmetic matches; not source validation."
+    },
+    "canton_seven": {
+      "evidence": "canton_entry.html introduction explicitly names ETHZ, UZH, ZHAW, ZHdK, PHZH, HfH, HWZ as Hochschulplatz Zürich; its analysis discusses canton-wide courses",
+      "conclusion": "Selected seven institutions, not an exhaustive canton census or city-boundary count."
+    },
+    "accreditation": {
+      "method": "Independently inspected the text of each HTML table row, its institutional-accreditation label, exact institution name and date columns; compared all eight date intervals to 2026-11-10. Seven names match canton introduction; Kalaidos is the eighth, appearing separately in canton offerings.",
+      "rows_checked": [
+        {
+          "institution": "ETH Zürich",
+          "decision": "24.09.2021",
+          "expires": "23.09.2028"
+        },
+        {
+          "institution": "HWZ Hochschule für Wirtschaft Zürich (HWZ)",
+          "decision": "22.09.2023",
+          "expires": "21.09.2030"
+        },
+        {
+          "institution": "Interkantonale Hochschule für Heilpädagogik (HfH)",
+          "decision": "08.12.2023",
+          "expires": "07.12.2030"
+        },
+        {
+          "institution": "Kalaidos Fachhochschule Schweiz",
+          "decision": "23.09.2022",
+          "expires": "22.09.2029"
+        },
+        {
+          "institution": "Pädagogische Hochschule Zürich (PHZH)",
+          "decision": "26.03.2021",
+          "expires": "25.03.2028"
+        },
+        {
+          "institution": "Universität Zürich",
+          "decision": "17.12.2021",
+          "expires": "16.12.2028"
+        },
+        {
+          "institution": "Zürcher Hochschule der Künste (ZHdK)",
+          "decision": "17.12.2021",
+          "expires": "16.12.2028"
+        },
+        {
+          "institution": "Zürcher Hochschule für Angewandte Wissenschaften (ZHAW)",
+          "decision": "18.12.2020",
+          "expires": "17.12.2027"
+        }
+      ],
+      "all_cover_2026_11_10": true,
+      "limitation": "Decision table supports institutional accreditation for that date, not address or city-boundary membership; no year-round 2026 claim."
+    },
+    "ror_and_original_23": {
+      "zurich_roster_records": 23,
+      "illustrative_non_higher_education_names": [
+        "Kantonsschule Stadelhofen",
+        "Mittelschul- und Berufsbildungsamt"
+      ],
+      "conclusion": "The independently re-counted ROR education-tag/geoname-label roster happens to equal 23, but includes non-higher-education institutions and does not establish the original extraction lineage, an accredited higher-education roster, nor municipal boundaries."
+    }
+  },
+  "new_admissions": 0,
+  "unverified": [
+    "original submitted 23 source and membership",
+    "original population source and exact boundary",
+    "complete city-boundary accredited institution count",
+    "comparability with other cities"
+  ],
+  "production_results_modified": false
+}

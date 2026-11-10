@@ -1,0 +1,56 @@
+{
+  "status": "pass scoped independent review",
+  "reviewed_at_utc": "2026-11-10T19:48:50.236138+00:00",
+  "source_sha256": {
+    "data/current_swiss_apprentice_access/README.md": "cb68cf7137627f85e139f27d88b7c7bac2d448607e235eb0bea7c7bbe551d17c",
+    "data/current_swiss_apprentice_access/access2026.html": "9e13a983a278b0aa9599fef1d8bda883c344507e635d3bdb9e577b61eeeea2a6",
+    "data/current_swiss_apprentice_access/access2026.pdf": "68a9b617772e209225410e4493c5a09b372cff698dadcfc57dd83d827f7dceb8",
+    "data/current_swiss_apprentice_access/capture.py": "166298e50f332c997b47f3612da5d26385090b11a39961f7cf5e4fc118d6ba88",
+    "data/current_swiss_apprentice_access/extract.py": "1841a8585a1558e2f820b6d22870e2a0fb773cef6064c577fc6183cc24d7c55b",
+    "data/current_swiss_apprentice_access/mobility2024.html": "9706bb7b7886b1a824339068d1ab2453c5049144f68a12ccc52e7f90ed680acb",
+    "data/current_swiss_apprentice_access/mobility2024.pdf": "a96885d8dda68336b9e685b19bf9ddf9b0f0f7f52d236052efa66a2bc6b7af68",
+    "data/current_swiss_apprentice_access/retrievals.json": "73d800a342e47d35d427e65b588878e1f8e3c6156066251b5a730c4c983ca148",
+    "results/current_swiss_apprentice_access/observations.csv": "c4bf968e65bd110846f28bb26172578efc560959e04c611a3f33e59dd387bdde",
+    "results/current_swiss_apprentice_access/summary.json": "f2eec2619f016d528c41765dc642a3715cbe58a54c899c0edeae3b200d29e1c6",
+    "results/current_swiss_apprentice_access/verification.json": "51a455cf6a7f32fdbfab0c38d89c82851a4d071357605b10db7c0b00920d1f7e"
+  },
+  "method": "Read source PDFs via pdftotext physical pages 2024 3,5,6,7 and 2026 4,5,7; independently rendered and visually inspected 2024 pages 6 and 7 and 2026 pages 4 and 5, including figure labels and notes. Inspected 16 stored observation rows and compared with source passages; checked hashes already in verification. Did not run extraction or protected-output scripts.",
+  "findings": {
+    "2024_population": "2021/22 dual apprenticeships; source p3 reports 188284 initial, 184964 after missing locations, 174868 after adult exclusion. Entry age at most 25 and adults from 25 overlap in original prose; preserve ambiguity.",
+    "2024_school": "p5 estimates fastest available vocational-school municipality in occupation, with home-canton preference; actual school is unknown. p6 states municipality-level average public-transport travel is approximate.",
+    "2024_travel": "p6 estimated one-way means ~39 employer / ~46 assigned vocational school; p7 below 60 minutes ~85% / ~77%. Both figures omit over 120 minutes, and p6/p7 state ~1.4% / 2.1% exceed 120: plotting truncation is not a hard support cap.",
+    "2026_definition": "p4 174868 ongoing dual contracts, learner not older than 25 at entry; p5 selects origins with at least one resident under 25 in ongoing 2021/22 apprenticeship. Do not silently equate boundaries. 60 minutes is an assumed one-way public-transport search radius.",
+    "2026_vacancies": "p4 says a contract is observed only if employer and learner enter a relationship; unfilled places are absent. Search-space counts are observed filled contracts, not current vacancies.",
+    "2026_examples": "p7 Olten 242 municipalities, 12704 employers, 49484 contracts, 227 occupations; Brusio 2,24,38,18. 84% of search spaces have more than 100 occupations; 4.4% of young apprentices live in spaces with fewer than 100. Denominators and strict inequalities differ.",
+    "provenance_and_scope": "16 rows match reported numbers. These national and municipality-example results describe 2021/22 data in 2024/2026 reports; they are neither Zurich-city travel-time measurements nor 2025 measurements, and do not establish exact age-14 versus age-18 differences."
+  },
+  "material_errors_found": [],
+  "primary_admissions": 0,
+  "limits": [
+    "No access to original individual-level SBG-BUR linkage, routing matrix or reproduction of EHB calculation.",
+    "Visual review limited to physical pages 2024 6-7 and 2026 4-5; other requested passages checked by text extraction."
+  ],
+  "binding_refresh": {
+    "reviewed_at_utc": "2026-11-10T19:49:44.547965+00:00",
+    "scope": "Read-only check of revised source list, saved receipts, added README, verification and existing outputs; no capture or extract script run.",
+    "change": "capture.py SOURCES now matches four saved receipt URLs including the 2024 PDF; README is included in updated verification source map.",
+    "changed_bindings": {
+      "data/current_swiss_apprentice_access/README.md": {
+        "before": null,
+        "after": "cb68cf7137627f85e139f27d88b7c7bac2d448607e235eb0bea7c7bbe551d17c"
+      },
+      "data/current_swiss_apprentice_access/capture.py": {
+        "before": "e2eb54603eccdac52cb789896a279700a207690bde9550bc07d17a49237f42ec",
+        "after": "166298e50f332c997b47f3612da5d26385090b11a39961f7cf5e4fc118d6ba88"
+      },
+      "results/current_swiss_apprentice_access/verification.json": {
+        "before": "8cc59bb57343deee579acb2b6454dfbd41a127b5f288372172666cb890f6ff96",
+        "after": "51a455cf6a7f32fdbfab0c38d89c82851a4d071357605b10db7c0b00920d1f7e"
+      }
+    },
+    "source_receipt_hashes_unchanged": true,
+    "observations_and_summary_hashes_unchanged": true,
+    "observation_rows": 16,
+    "network_access_performed": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "status": "PASS with stated scope and verifier limitations",
+  "independent_checks": {
+    "selected_rows": 40,
+    "unique_dimension_rows": 40,
+    "school_type": {
+      "Mittelschule": 14618,
+      "Heim- und Sonderschule": 275,
+      "Brückenangebot": 2160,
+      "Berufsfachschule": 46872
+    },
+    "provider": {
+      "oef": 48551,
+      "priv": 15374
+    },
+    "financing": {
+      "oef": 56594,
+      "priv": 7331
+    },
+    "private_provider_publicly_financed": 8043,
+    "total": 63925,
+    "prior_city_mittelschule_upper_secondary_sum": 8581
+  },
+  "findings": [
+    "CSV aggregation and public/private provider counts independently reproduced; financing and provider are distinct dimensions: 8043 pupils at private providers are publicly financed.",
+    "Metadata identifies education institutions in canton, not student residence; coverage is canton-wide and not municipal. The 2024 reference is 15 September, school year 2024/25. Sek II includes vocational, bridging and special-school categories and is not synonymous with Gymnasium. The overview places lower long-Gymnasium and first year of short Gymnasium in Sek I.",
+    "City 8581 is the existing 6582+1999 Mittelschulen Sek II breakdown, not an all-Sek-II city count. Its exact student date and inclusion of all target providers/programmes require separate proof.",
+    "The personnel analysis includes school and municipality identifiers in SSP but is a 2016/17–2023/24 analysis of public compulsory schooling; it does not provide the requested city Sek II FTE. Municipality in that report includes school municipalities and unified municipalities, not necessarily the administrative city.",
+    "verify.py checks receipt sizes and hashes, sums selected CSV rows, asserts school-type totals and total; it outputs provider totals but does not assert them. School-year/date/geography, adequacy of target coverage and whether original model is unchanged are hard-coded or out of scope, not independently established by that script. Script writes extraction.json and verification.json; it was inspected without executing to avoid overwriting production results.",
+    "No error in numeric aggregation or unsupported admission claim found. The candidate total is not a proven pupil upper bound until target inclusion and consistent definitions are demonstrated; no compatible city teaching-FTE lower bound established. This review does not authenticate the primary PTR or independently audit all original source lineage."
+  ],
+  "primary_ptr_certified": false,
+  "new_primary_admissions": 0,
+  "source_sha256": {
+    "data/current_zurich_ptr_matching_followup/pupils_dataset.csv": "883ef6803b2102334680f60767108f65bd7e26b72e5ed7698346dbaa381d9a20",
+    "data/current_zurich_ptr_matching_followup/pupils_overview.html": "0c4dea766349b8a2c2f11bf186ac06e010fb2cb474b484de7a81c8e9e842b525",
+    "data/current_zurich_ptr_matching_followup/dataset_524_metadata_989.Rmd": "cb30d05aa73abcfbe00ef877285623ba71f82722afa9bf36a0038a53fa392841",
+    "data/current_zurich_ptr_matching_followup/personnel_analysis.html": "7ac6733b17acb96388deba051e3e12569125caf516e17ce99477e7dc41836e64",
+    "data/current_zurich_ptr_matching_followup/retrieval.json": "b377db8c348b6a6cb2fb09ab970eed9722cf4d498b90c6982fa110e0e2379c7d",
+    "data/current_zurich_ptr_matching_followup/verify.py": "7a190bcd792ad83ef05eafc73ed6fbadcec04771d5f18541c1fc7a2e4fd9fe18",
+    "data/current_zurich_ptr_matching_followup/README.md": "d0765e78118cad2290a52c4bc8781c9ee2542673584a2f73d50078ef5695e19d",
+    "results/current_zurich_ptr_matching_followup/extraction.json": "34830e2a6d4c01f683b723783f9ea4aa0cf7f80d18bad182417a70d14b195749",
+    "results/current_zurich_ptr_matching_followup/verification.json": "f962c56de308ab7d52a265be07baeaf9ab8ac53b7c6223a34d91f7dbc075305a",
+    "results/current_zurich_ptr_matching_followup/README.md": "7a154ab13d34ad6036401f1dd66bcc4e93b4f11faa1edea8fad42a2201580164",
+    "data/task4_v171_student_scope/student_scope.json": "c08a10178a4bc9da105ac9253f9326e4228df7f278d889caf8838ee5652375ec",
+    "data/task4_v171_student_scope/README.md": "190adfea3831a20997b7fd4adec6500494bb8186e6427e76d5728ebd6636fdc7",
+    "data/current_zurich_fte_bound/README.md": "b30335404c4926fbca0ebcf7637c167667241e4279c2f5992f0905647da8ddd5"
+  }
+}

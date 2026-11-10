@@ -1,0 +1,47 @@
+{
+  "status": "pass bounded evidence overlay",
+  "primary_model": "V204 unchanged",
+  "point_records": 112,
+  "changed_records": [
+    {
+      "city": "Zurich",
+      "indicator": "research_he_density",
+      "fields": [
+        "classification",
+        "evidence",
+        "scope_detail",
+        "next_evidence_needed"
+      ]
+    }
+  ],
+  "numeric_values_years_flags_risk_fields_and_priority_order_unchanged": true,
+  "classification_counts": {
+    "not_included_in_bounded_classification": 55,
+    "publisher_value_match_scope_unverified": 43,
+    "reviewed_lineage_unresolved": 6,
+    "no_match_checked_cost_editions": 4,
+    "no_match_examined_PTR_series": 1,
+    "documented_value_match_different_stage": 2,
+    "publisher_match_different_statistic": 1
+  },
+  "source_sha256": {
+    "scripts/task4_current_zurich_source_followups.py": "0f4d841852922ae542e08f85801ef3c8286f229c30ace51640df3afb1da70643",
+    "results/task4_v204_operational_rebase/point_source_ledger/ledger.csv": "14ec386cbc9f6fc2786cf4698e819cd39704ef5753816a3d887fdef9e0f40eaa",
+    "results/task4_v204_operational_rebase/point_source_ledger/review_priority.csv": "c789453b69aa008f4917add594bae220c311345fd5364b808d3c97130e86c1ea",
+    "results/current_zurich_he_scope_followup/verification.json": "ad6610f23a52648d05a10879a1c51d9c690bc19ea2fb26117c6f30d0e3e7720f",
+    "results/current_zurich_he_scope_followup/peer_review.json": "92828c2f57aeca3a3f3cf2dc35e97bc9ab7aa98a9614839b55b46405a5b7d4d5",
+    "results/current_zurich_ptr_matching_followup/verification.json": "f962c56de308ab7d52a265be07baeaf9ab8ac53b7c6223a34d91f7dbc075305a",
+    "results/current_zurich_ptr_matching_followup/peer_review.json": "97251f1deb515c617508c08275e37c2983380fc5c9891d42a49accd91dcf42af",
+    "results/current_swiss_apprentice_access/verification.json": "51a455cf6a7f32fdbfab0c38d89c82851a4d071357605b10db7c0b00920d1f7e",
+    "results/current_swiss_apprentice_access/peer_review.json": "d55676bc5668809d5c395d17dfb97852ab99c9948135e4a756609699229ce0c5"
+  },
+  "output_sha256": {
+    "ledger.csv": "22260a0457e897a2c29a6dc3e7a8be92d4544080c84761320d5f68d67773fa96",
+    "review_priority.csv": "e0dfea8e88f2813f5ad1b12f9313da902db8fbf59a1127e1635f5d0834b68f85"
+  },
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "scope": "One reviewed-unresolved classification replaces an unclassified Zurich HE entry. New canton pupils and national apprentice context remain supporting material; no raw values or risk scores replaced."
+}

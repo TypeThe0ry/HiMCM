@@ -1,0 +1,33 @@
+{
+  "status": "pass bounded source extraction",
+  "source_sha256": {
+    "data/current_swiss_apprentice_access/README.md": "cb68cf7137627f85e139f27d88b7c7bac2d448607e235eb0bea7c7bbe551d17c",
+    "data/current_swiss_apprentice_access/access2026.html": "9e13a983a278b0aa9599fef1d8bda883c344507e635d3bdb9e577b61eeeea2a6",
+    "data/current_swiss_apprentice_access/access2026.pdf": "68a9b617772e209225410e4493c5a09b372cff698dadcfc57dd83d827f7dceb8",
+    "data/current_swiss_apprentice_access/capture.py": "166298e50f332c997b47f3612da5d26385090b11a39961f7cf5e4fc118d6ba88",
+    "data/current_swiss_apprentice_access/extract.py": "1841a8585a1558e2f820b6d22870e2a0fb773cef6064c577fc6183cc24d7c55b",
+    "data/current_swiss_apprentice_access/mobility2024.html": "9706bb7b7886b1a824339068d1ab2453c5049144f68a12ccc52e7f90ed680acb",
+    "data/current_swiss_apprentice_access/mobility2024.pdf": "a96885d8dda68336b9e685b19bf9ddf9b0f0f7f52d236052efa66a2bc6b7af68",
+    "data/current_swiss_apprentice_access/retrievals.json": "73d800a342e47d35d427e65b588878e1f8e3c6156066251b5a730c4c983ca148",
+    "design/task4_user_v204_snapshot.json": "71258047ac31c291d8304d3b1116659ac7a8e39ec2aa3bdff69a5c47d91ded52",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c"
+  },
+  "source_responses": 4,
+  "PDF_pages": {
+    "2024": 12,
+    "2026": 16
+  },
+  "extracted_observations": 16,
+  "output_sha256": {
+    "observations.csv": "c4bf968e65bd110846f28bb26172578efc560959e04c611a3f33e59dd387bdde",
+    "summary.json": "f2eec2619f016d528c41765dc642a3715cbe58a54c899c0edeae3b200d29e1c6"
+  },
+  "protected_science_files": 658,
+  "protected_paper_dependencies": 7,
+  "protected_inputs_changed": [],
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "scope": "Checks local source integrity, specified passages and numeric selections; does not reproduce underlying confidential SBG-BUR linkage or author travel matrix."
+}

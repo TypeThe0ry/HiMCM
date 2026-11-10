@@ -55,6 +55,8 @@ PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python resea
 
 ## 最近研究增量与下一步
 
+- [Zurich 来源与职业路径补充](CURRENT_ZURICH_SOURCE_FOLLOWUPS.md)：高教23的算术及八条认证范围、州SekII学生63,925与教师不匹配、学徒交通16条辅助摘录完成独立审查。0主准入／0实际收窄；当前点值台账仅将Zurich HE更新为已查但来源链未解决，风险和优先次序保持。新完整性合同为44报告／1,164绑定。
+
 - [Oslo DBH 计数定义](CURRENT_OSLO_DBH_UPDATE.md)：临时 23／25／26／27 代码方案；固定均为 Oslo，等权在 26／27 下为 Oslo。它们不是实际高校数的严格界限。
 - [历史 DBH／NOKUT 身份桥接](CURRENT_OSLO_DBH_IDENTITY_UPDATE.md)：当时27 个登记代码中匹配25 个、1404／1405 未核；身份23与授课类型23不同。该历史结果保持冻结，两项身份已由下述完成补充解决，原数值和认证等级仍保持。
 - [新的教师岗位一手资料](CURRENT_NEW_STAFF_SOURCES_UPDATE.md)：Wirtschaftsschule KV Zürich 年报约 134 个教师全职岗位；近似误差、历史学段／校址和匹配学生数未落实，不构造硬界限。Helsinki 的旧 2019 教师收集事实复用原件，不当成新数据。

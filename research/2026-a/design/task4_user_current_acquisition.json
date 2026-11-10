@@ -870,5 +870,55 @@
     "point_source_ledger": "results/task4_v204_operational_rebase/point_source_ledger",
     "scope": "Current V204 calculations; historical source classifications and their evidence remain unchanged. Frozen staging labels describe generation time."
   },
-  "historical_registry_note": "Nested pre-V204 followups and source_sha256 preserve their original V203 or earlier scopes. For current acquisition and point priorities use current_operational_rebase."
+  "historical_registry_note": "Nested pre-V204 followups and source_sha256 preserve their original V203 or earlier scopes. For current acquisition and point priorities use current_operational_rebase.",
+  "current_zurich_source_followups": {
+    "current_zurich_he_scope_followup": {
+      "verification": "results/current_zurich_he_scope_followup/verification.json",
+      "verification_sha256": "ad6610f23a52648d05a10879a1c51d9c690bc19ea2fb26117c6f30d0e3e7720f",
+      "peer_review": "results/current_zurich_he_scope_followup/peer_review.json",
+      "peer_review_sha256": "92828c2f57aeca3a3f3cf2dc35e97bc9ab7aa98a9614839b55b46405a5b7d4d5",
+      "primary_admissions": 0,
+      "actual_primary_width_reduction": 0,
+      "changes_manuscript": false
+    },
+    "current_zurich_ptr_matching_followup": {
+      "verification": "results/current_zurich_ptr_matching_followup/verification.json",
+      "verification_sha256": "f962c56de308ab7d52a265be07baeaf9ab8ac53b7c6223a34d91f7dbc075305a",
+      "peer_review": "results/current_zurich_ptr_matching_followup/peer_review.json",
+      "peer_review_sha256": "97251f1deb515c617508c08275e37c2983380fc5c9891d42a49accd91dcf42af",
+      "primary_admissions": 0,
+      "actual_primary_width_reduction": 0,
+      "changes_manuscript": false
+    },
+    "current_swiss_apprentice_access": {
+      "verification": "results/current_swiss_apprentice_access/verification.json",
+      "verification_sha256": "51a455cf6a7f32fdbfab0c38d89c82851a4d071357605b10db7c0b00920d1f7e",
+      "peer_review": "results/current_swiss_apprentice_access/peer_review.json",
+      "peer_review_sha256": "d55676bc5668809d5c395d17dfb97852ab99c9948135e4a756609699229ce0c5",
+      "primary_admissions": 0,
+      "actual_primary_width_reduction": 0,
+      "changes_manuscript": false
+    }
+  },
+  "current_point_source_ledger": {
+    "results": "results/current_zurich_source_followups",
+    "ledger": "results/current_zurich_source_followups/ledger.csv",
+    "review_priority": "results/current_zurich_source_followups/review_priority.csv",
+    "verification": "results/current_zurich_source_followups/verification.json",
+    "verification_sha256": "8cb45a9a957061dba96584590bc506f28d4e94125c24dc24598411f998a6090a",
+    "classification_counts": {
+      "not_included_in_bounded_classification": 55,
+      "publisher_value_match_scope_unverified": 43,
+      "reviewed_lineage_unresolved": 6,
+      "no_match_checked_cost_editions": 4,
+      "no_match_examined_PTR_series": 1,
+      "documented_value_match_different_stage": 2,
+      "publisher_match_different_statistic": 1
+    },
+    "point_utility_cells": 112,
+    "original_extraction_lineages_verified": 0,
+    "fully_certified_measurements": 0,
+    "primary_model": "V204 unchanged",
+    "scope": "Current source-classification overlay; one Zurich HE record reviewed but unresolved. Original numeric values and V204 risk fields/order unchanged; earlier ledger generations remain frozen."
+  }
 }

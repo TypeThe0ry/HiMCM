@@ -1,0 +1,77 @@
+{
+  "status": "PASS scoped evidence and arithmetic checks",
+  "source_sha256": {
+    "data/current_zurich_he_scope_followup/canton_entry.html": "c05822a32f03e5f241b76cd1edb32e8ae9b5e21c2fc706c861e6415dea4babf0",
+    "data/current_zurich_he_scope_followup/canton_offerings.html": "71cc498a7426935eac13841c4b8287162cc75230c3c50674fb71902cbe8b62b1",
+    "data/current_zurich_he_scope_followup/accreditation_decisions.html": "37420b7b82917a708a45cbdf702371b3c633a67590144e5feeb477638a2a6353",
+    "data/current_zurich_he_scope_followup/swissuniversities.html": "52b66692ccac6423a101d24b34d342df0c283579e663034b10cfecd5a83e6b21",
+    "data/current_zurich_he_scope_followup/retrievals.json": "3f9a59a7e1dc6ec8473b4598cb3c386b975ed65c79c182f65b22fc9bbc000b9f",
+    "data/current_zurich_he_scope_followup/verify.py": "8274341f81a211a3b84234bbb2f9529ecc203e1a7b4a919e88d9ce2d03663d37",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/current_all16_ror_rosters/ror_education_rosters.csv": "8b5152fac81392f3a7f9f7547df4b5954f09e4c97dc8ffc3aaa97be8ab4369d5",
+    "results/current_all16_ror_review/verification.json": "d516aae6ec2e83c020f45ed3e4255d74ce8d037fce20a56d8405c8023f3cd377"
+  },
+  "source_date_utc": "2026-11-10",
+  "receipt_count": 4,
+  "canton_selected_seven": [
+    "ETH Zürich",
+    "Universität Zürich",
+    "ZHAW",
+    "ZHdK",
+    "PHZH",
+    "HfH",
+    "HWZ"
+  ],
+  "institutional_accreditation_rows": [
+    {
+      "institution": "ETH Zürich",
+      "decision": "24.09.2021",
+      "expires": "23.09.2028"
+    },
+    {
+      "institution": "HWZ Hochschule für Wirtschaft Zürich (HWZ)",
+      "decision": "22.09.2023",
+      "expires": "21.09.2030"
+    },
+    {
+      "institution": "Interkantonale Hochschule für Heilpädagogik (HfH)",
+      "decision": "08.12.2023",
+      "expires": "07.12.2030"
+    },
+    {
+      "institution": "Kalaidos Fachhochschule Schweiz",
+      "decision": "23.09.2022",
+      "expires": "22.09.2029"
+    },
+    {
+      "institution": "Pädagogische Hochschule Zürich (PHZH)",
+      "decision": "26.03.2021",
+      "expires": "25.03.2028"
+    },
+    {
+      "institution": "Universität Zürich",
+      "decision": "17.12.2021",
+      "expires": "16.12.2028"
+    },
+    {
+      "institution": "Zürcher Hochschule der Künste (ZHdK)",
+      "decision": "17.12.2021",
+      "expires": "16.12.2028"
+    },
+    {
+      "institution": "Zürcher Hochschule für Angewandte Wissenschaften (ZHAW)",
+      "decision": "18.12.2020",
+      "expires": "17.12.2027"
+    }
+  ],
+  "submitted_population": 440935,
+  "submitted_population_year": "2025",
+  "submitted_he_count": 23,
+  "submitted_density_label_year": "2026",
+  "arithmetic_density_per_million": "52.16188327077687187453933119",
+  "rounds_to_submitted_value": true,
+  "original_extraction_verified": false,
+  "municipal_accredited_institution_count_verified": false,
+  "new_primary_observations_admitted": 0,
+  "note": "Seven canton-selected institutions are not a municipal count or exhaustive list. Kalaidos and FFHS appear in canton offerings; SBS is in Kloten. Exact 23 count match and arithmetic do not establish original extraction."
+}
