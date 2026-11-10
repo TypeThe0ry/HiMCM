@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 33,
+    "routes": 34,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -403,7 +403,7 @@
     "ledger": "results/current_point_source_ledger/ledger.csv",
     "review_priority": "results/current_point_source_ledger/review_priority.csv",
     "verification": "results/current_point_source_ledger/verification.json",
-    "verification_sha256": "92b28b81e4094423d51775cb3127a70a3cc22ad4afe7bfbf3aebb40673f1bc2e",
+    "verification_sha256": "42aa94d46e32f509edd1cfa257c840f2e737b0de6929abe80250843823a13ffb",
     "point_utility_cells": 112,
     "classification_counts": {
       "not_included_in_bounded_classification": 56,
@@ -546,5 +546,31 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Reported DBH institution-code definition scenarios, not true provider inventory bounds, precise student counts or a trend. No raw input or primary replacement."
+  },
+  "Oslo_DBH_NOKUT_identity_and_ledger_review": {
+    "data": "data/current_oslo_dbh_accreditation",
+    "verification": "results/current_oslo_dbh_accreditation_review/verification.json",
+    "verification_sha256": "213bf423837e70c00883a6eb7ede9c39e71d795d7a4b348a09e6baa7e9f089f1",
+    "registry_codes": 27,
+    "national_identity_matches": 25,
+    "unresolved_codes": [
+      "1404",
+      "1405"
+    ],
+    "positive_codes_per_semester": 25,
+    "identity_matches_among_positive_per_semester": 23,
+    "identity23_is_not_teaching_mode23": true,
+    "HTTP200_bodies": 6,
+    "HTTP403_bodies": 1,
+    "HTTP404_bodies": 2,
+    "connection_without_response": 1,
+    "failed_identity_admissions": 0,
+    "original25_lineage_verified": false,
+    "complete_city_inventory_verified": false,
+    "category_time_alignment_verified": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Named identity bridge and source-ledger detail refresh; original values and previous definition scenarios preserved."
   }
 }

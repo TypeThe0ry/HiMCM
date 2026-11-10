@@ -40,6 +40,13 @@ def main():
             assert followup['original_value']==float(r[field]) and followup['original_year']==int(r[field+'_year'])
             assert not followup['exact_value_match'] and not followup['original_lineage_verified'] and not followup['target_scope_verified']
         elif (city,indicator) in [('Oslo','pm25'),('Oslo','research_he_density'),('Zurich','homicide_rate')]:state='reviewed_lineage_unresolved'
+        if (city,indicator)==('Oslo','research_he_density'):
+            report=read(R/'results/current_oslo_dbh_accreditation_review/verification.json')
+            assert report['national_identity_matches']==25 and report['registry_codes_checked']==27
+            assert report['identity_matches_among_positive_each_period']==23 and report['identity23_is_not_mode23']
+            assert report['unresolved_codes']==['1404','1405'] and not report['original25_lineage_verified']
+            for n,h in report['source_sha256'].items():assert sha(R/n)==h,n
+            assert x['evidence']=='data/current_oslo_dbh_accreditation/README.md' and 'Identity23is a different set' in x['scope_detail']
         assert x['classification']==state;counts[state]+=1
         assert x['measurement_fully_certified']==x['original_extraction_lineage_verified']=='False'
         if x['evidence']:assert (R/x['evidence']).is_file()
