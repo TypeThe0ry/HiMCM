@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "scope": "Independent scalar candidate preview and narrow owned bibliography correction; no source-quality certification or admission.",
+  "scalar_score_interval_rows": 64,
+  "norm_weight_once": true,
+  "self_excluded_regret": true,
+  "other159cells_and_alluppers_unchanged": true,
+  "active160bounds_unchanged": true,
+  "immutable_science_bindings_verified": 327,
+  "primary_admissions": 0,
+  "actual_active_model_width_reduction": 0,
+  "summary": [
+    {
+      "weight_reference": "fixed",
+      "scenario": "baseline_V192",
+      "mean_width": 16.03907007442162,
+      "minimax_regret": 17.36804635503932
+    },
+    {
+      "weight_reference": "fixed",
+      "scenario": "candidate12_not_admitted",
+      "mean_width": 16.01221199746499,
+      "minimax_regret": 16.93831712373327
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "baseline_V192",
+      "mean_width": 18.81881344951466,
+      "minimax_regret": 16.63077901625193
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "candidate12_not_admitted",
+      "mean_width": 18.76442966782986,
+      "minimax_regret": 15.760638509295092
+    }
+  ],
+  "review": {
+    "only_reference_update_month_corrected": true,
+    "text_changed_pages": [
+      24
+    ],
+    "pixel_changed_pages_at72dpi": [
+      24
+    ],
+    "total_pages": 27,
+    "no_full_source_quality_claim": true
+  },
+  "source_sha256": {
+    "scripts/audit_task4_v196_candidate.py": "8f73e0bb634e33f5c639746720c416079ce22bcd02ca6a7a8e5c6d9f6e0ee88a",
+    "results/task4_v196_candidate/preview.json": "fe560c7d7add05120ab6f9639611cc725979362d89d1c51d7f1d29289799aae2",
+    "results/task4_v196_candidate/scores.csv": "654d5a86c9db69edb690da8ee085f95f18ce1812d119801d9f83940c37151e3d",
+    "scripts/task4_v196_candidate.py": "562db29105e9d0a45c5aaa511bbb6341789e8352a44c4c48c91e8d7e42d88358",
+    "results/task4_v196_review/verification.json": "0e8ad2278082ff47825ee11a8b2d786bcdba0032c58bd4c115df4b95e4e02cfc"
+  },
+  "paper_pdf_sha256": "f06f24e58ff39fe22e0a94620e614bc7b51deb2338e70eb53e081ab124aed526"
+}

@@ -1,0 +1,62 @@
+{
+  "status": "preview_only_not_admitted",
+  "base_science": "V192",
+  "old_count": 7,
+  "candidate_count": 12,
+  "population_retained": 440935,
+  "population_year_retained": 2025,
+  "old_utility_lower": 0.6135318839372971,
+  "candidate_utility_lower": 0.7312903923677659,
+  "upper_retained": 1.0,
+  "other159cells_and_alluppers_unchanged": true,
+  "baseline_partial_unknown_counts_unchanged": [
+    37,
+    11
+  ],
+  "summary": [
+    {
+      "weight_reference": "fixed",
+      "scenario": "baseline_V192",
+      "mean_score_width": 16.039070074421616,
+      "minimax_regret": 17.36804635503932,
+      "possible_count": 16,
+      "necessary_count": 0,
+      "conservative_recommendation": "Zurich"
+    },
+    {
+      "weight_reference": "fixed",
+      "scenario": "candidate12_not_admitted",
+      "mean_score_width": 16.01221199746499,
+      "minimax_regret": 16.93831712373327,
+      "possible_count": 16,
+      "necessary_count": 0,
+      "conservative_recommendation": "Zurich"
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "baseline_V192",
+      "mean_score_width": 18.81881344951466,
+      "minimax_regret": 16.63077901625193,
+      "possible_count": 16,
+      "necessary_count": 0,
+      "conservative_recommendation": "Zurich"
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "candidate12_not_admitted",
+      "mean_score_width": 18.76442966782986,
+      "minimax_regret": 15.760638509295092,
+      "possible_count": 16,
+      "necessary_count": 0,
+      "conservative_recommendation": "Zurich"
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_active_model_width_reduction": 0,
+  "scope": "Conditionalfacilitysupplysubset;restrictedpublicsessions,holidayclosuresandindividualaccessunknown. K\u00fcgelilooadult-onlyexcluded. Noforecastoruniversalteenaccessclaim.",
+  "source_sha256": {
+    "data/task4_v196_zurichpool/school_candidates.json": "5c3bcc7de234f41d97c6d63329909fdc9851c536f154e841d34042738dcdb7c0",
+    "scripts/task4_v196_candidate.py": "562db29105e9d0a45c5aaa511bbb6341789e8352a44c4c48c91e8d7e42d88358",
+    "design/task4_user_v192_snapshot.json": "2e9c32051dffe00ddf635a77c349f01cafa08ffa2913a37cc34ef06ed8c775a2"
+  }
+}

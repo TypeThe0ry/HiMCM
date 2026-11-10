@@ -1,0 +1,54 @@
+{
+  "status": "pass",
+  "role": "Evidence representation and source metadata verification; no admission or model update",
+  "named_count": 17,
+  "tariff_A_count": 13,
+  "tariff_B_count": 4,
+  "normalized_names": [
+    "ARIOLIVENEGONI",
+    "CAMBINIFOSSATI",
+    "CARDELLINO",
+    "CARELLACANTU'",
+    "DEMARCHI",
+    "ISEO",
+    "MINCIO",
+    "MURAT",
+    "MUGGIANO",
+    "PARRIMENGONI",
+    "QUARTOCAGNINO",
+    "SANT'ABBONDIO",
+    "SUZZANI",
+    "BACONE",
+    "COZZI",
+    "PROCIDA",
+    "SOLARI"
+  ],
+  "frozen_venue_set_identical": true,
+  "population_retained": 1399079,
+  "population_year_retained": 2025,
+  "utility_bound_retained": [
+    0.5485500692302455,
+    1
+  ],
+  "tariff_effective_date": "2025-06-01",
+  "printed_update_date": "2025-09-09",
+  "filename_contains": "agg-9-10-2025",
+  "date_conflict": "The URL filename does not match the printed document update month; use the printed September date for the retrieved document, without inferring a URL upload date.",
+  "original_bytes_in_frozen_V118_package": false,
+  "previous_representation": "Provider-extracted text",
+  "current_representation": "HTTP200 original PDF bytes; metadata and 17 venue names checked from PDF",
+  "visual_inspection": "Single page rendered at1800px and viewed; bottom-right date and venue lists legible",
+  "source_sha256": {
+    "tariff_original.pdf": "cc9401ef8833c1f0d25070db485c298b4997fe1efcfbb675aa3e66f3ff06af0a",
+    "retrieval.json": "737014c4c66ef8fa681e2677a6dd7abbe7deb924948a6961a4ca3038d1bf94a4",
+    "extract.py": "5aa83d467b9b5b9b04127098fb4370f35950a8546e072515e79a25c3194fa803"
+  },
+  "historical_source_sha256": {
+    "observations.json": "46e3aa1e4205c2d62a54da0247acd863dc3b1abb1e56ac0bb0760a5f874f283d",
+    "milan_provider_capture.json": "e23c110f00a0c4c88b5114e7d1c0ac23c851915b504d5395c815d24dcbe98279",
+    "manifest.json": "27c1f66df4847caf71e021af91fa232462499ad476fb2cefcaf638f66e38ca2c"
+  },
+  "primary_admissions": 0,
+  "actual_score_width_reduction": 0,
+  "limits": "Named tariff subset, not complete city inventory, current continuous operation, teenager access, or original population verification."
+}
