@@ -1,0 +1,28 @@
+{
+  "primary_model": "V200",
+  "role": "Current acquisition priorities; not new observations or active model changes",
+  "results": "results/current_priority",
+  "script": "scripts/task4_current_priority.py",
+  "audit": "results/current_priority/verification.json",
+  "source_followup_verification": "results/current_priority/source_verification.json",
+  "uncertain_cells": 48,
+  "weight_cell_rows": 96,
+  "primary_admissions": 0,
+  "actual_score_width_reduction": 0,
+  "science_and_paper_unchanged": true,
+  "source_sha256": {
+    "results/current_priority/summary.json": "f268df20ba7d98cd20710b67cae5f7572242bfb5bac691af4fb6241df02b7917",
+    "results/current_priority/verification.json": "b56cc59316afda904fbf117b9805fd0b6f36c90823eaba783e9f97b6d66f4496",
+    "results/current_priority/source_verification.json": "319e553dd5f1b7e801be7cc55f8e73c75a73dd1e6e63561dc26417f177465de8",
+    "results/current_priority/all_uncertain_priority.csv": "88220592dbea591a8f59143ba3049ebaccf7273c541e56b68310b3360f22a669"
+  },
+  "unadmitted_candidate": {
+    "venue": "OCBC Aquatic Centre",
+    "combined_inventory_count": 26,
+    "preview": "results/current_sportshub_candidate/preview.json",
+    "independent_verification": "results/current_sportshub_candidate/verification.json",
+    "migration_plan": "results/current_sportshub_candidate/migration_plan.json",
+    "candidate_count": 1,
+    "active_model_admissions": 0
+  }
+}

@@ -1,3 +1,5 @@
+本轮新增已独审、尚未准入的OCBC实体候选，可将SG库存25→26，仍Zurich／16可能。下一轮直接按[CURRENT_DATA_UPDATE.md](CURRENT_DATA_UPDATE.md)及results/current_sportshub_candidate/migration_plan.json迁移隔离V202全部研究，再在同一Overleaf main更新一致稿；不要重复名录、优先级、候选预览或先激活模型。
+
 # 恢复HiMCM：V200科学／单一当前main
 
 先读AGENTS.md、GUIDELINES.md和[V201研究与单稿整理](V201_RESEARCH_UPDATE.md)。长期goal active。所有文字必用指定反防御写作技能；低级subagent Luna，高级Terra6.1。
@@ -10,7 +12,7 @@
 
 当前地图与版面更新见[CURRENT_SPATIAL_UPDATE.md](CURRENT_SPATIAL_UPDATE.md)；审计results/current_spatial_review/current_verification.json与verification.json；当前交付同目录delivery_verification.json：48项／61锚点／12实质待办。单main本地27页全部文字及灰度像素与独审稿一致，985归档、当前镜像、原生页眉空页脚通过。服务器预览未核；真实注册、全队AI与最终比赛提交保持待验证。冻结版本审计指向归档旧路径，不按旧P目录直接重跑。
 
-居民网格卫星／定量3D图已入第16页，新闻已压成第19页一页；原数值与关键条件保留。下一轮按V200重基48不确定格采集价值，失败路线跳过。不要重复V199采集、V200全研究或V201迁移。分别fetch、审diff、commit/push并核远端HEAD。
+居民网格卫星／定量3D图已入第16页，新闻已压成第19页一页；原数值与关键条件保留。V200的48不确定格采集价值已重基并独审，入口design/task4_user_current_acquisition.json及[CURRENT_DATA_UPDATE.md](CURRENT_DATA_UPDATE.md)；两条Zurich新官方路线0准入。下一轮核查尚未失败的匹配公开来源，不重复此轮重基或新取得的2012元数据／通勤人数页，失败路线跳过。不要重复V199采集、V200全研究或V201迁移。分别fetch、审diff、commit/push并核远端HEAD。
 
 ## 冻结恢复档案（以下为历史，不作为当前入口）
 

@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "official_original_responses": 3,
+  "checks": [
+    {
+      "file": "data/current_zurich_fte/zh_custom_requests.html",
+      "sha256": "767021be2f0e51c84c72898574e9c4ebfc22c5483b4f58356b3ddf0e530fd3ff",
+      "bytes": 61459,
+      "metadata": "data/current_zurich_fte/zh_custom_requests.meta.json",
+      "metadata_sha256": "b717d2decf3cf0ab028f0063fb5a7a173aba0fdd59b390e67a1988927228c4b8"
+    },
+    {
+      "file": "data/current_zurich_travel/eurostat_ch_country_metadata.html",
+      "sha256": "2605e048e86640dca7809cca43c254ff52dff030986785e45bd82da3fa501790",
+      "bytes": 181491,
+      "metadata": "data/current_zurich_travel/retrievals.json",
+      "metadata_sha256": "f04fb2fd6dcdf4604b3d65f7c964cc8bdf02d5b8da37f6d15261f59777fa41bd"
+    },
+    {
+      "file": "data/current_zurich_travel/zurich_city_commuters.html",
+      "sha256": "40701760ceed55684c39a16de56c732388721abddc2b30a4f5618c3104e93e28",
+      "bytes": 29057,
+      "metadata": "data/current_zurich_travel/retrievals.json",
+      "metadata_sha256": "f04fb2fd6dcdf4604b3d65f7c964cc8bdf02d5b8da37f6d15261f59777fa41bd"
+    }
+  ],
+  "source_text_scope_checked": true,
+  "assessment": "Custom education statistics route does not release matched city FTE; historical country metadata and commuter-count/mode page do not establish a matched2024duration distribution.",
+  "source_admissions": 0,
+  "actual_score_width_reduction": 0,
+  "active_science": "V200 unchanged",
+  "model_original_inputs_and_current_four_registries_unchanged": true,
+  "source_requests_sent": false,
+  "limitations": "Bounded page and response verification; no claim that the authorities cannot supply other unpublished records.",
+  "audit_script_sha256": "c41b259a65c844dc9e49f4bdcc5298199841aee1a809ea31ec36796e7a6d711d"
+}

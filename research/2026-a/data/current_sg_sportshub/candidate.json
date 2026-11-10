@@ -1,0 +1,98 @@
+{
+  "candidate_physical_venues": 1,
+  "status": "candidate only; unadmitted; V200 remains 25",
+  "identity": {
+    "name": "OCBC Aquatic Centre",
+    "address": "7 Stadium Drive, Singapore 397632",
+    "distinct_from": "V199 25 venue names, addresses and postcodes and V200 admissions; no same name, address or postcode",
+    "counting": "competition pool, training pool and diving/multi-purpose pool are components of one venue"
+  },
+  "source_scope": "official operator pages captured 2026-11-10 UTC; no 2025 inventory reference date established",
+  "access": "operator describes venue as catering to general public and competition and training pools open for public swimming; individual per-entry prices are offered; conditions apply; no universal access or current opening claim",
+  "per_entry_pricing": {
+    "currency": "SGD",
+    "pairs_order": [
+      "local_resident",
+      "standard"
+    ],
+    "rates": {
+      "adult": {
+        "peak": [
+          2.2,
+          2.9
+        ],
+        "non_peak": [
+          2.0,
+          2.6
+        ]
+      },
+      "child_under_18": {
+        "peak": [
+          1.1,
+          1.4
+        ],
+        "non_peak": [
+          1.0,
+          1.3
+        ]
+      },
+      "child_valid_student_pass": {
+        "peak": [
+          1.1,
+          1.4
+        ],
+        "non_peak": [
+          1.0,
+          1.3
+        ]
+      },
+      "senior_55_plus": {
+        "peak": [
+          1.1,
+          1.4
+        ],
+        "non_peak": [
+          1.0,
+          1.3
+        ]
+      },
+      "persons_with_disabilities": {
+        "peak": [
+          1.1,
+          1.4
+        ],
+        "non_peak": [
+          1.0,
+          1.3
+        ]
+      }
+    },
+    "local_resident_eligibility": "Singapore citizens and permanent residents, valid photo ID required",
+    "peak": "Weekdays 18:00–21:30; weekends and public holidays 07:00–21:30",
+    "non_peak": "Weekdays 07:00–18:00",
+    "payment": "Visa, Mastercard or PayNow"
+  },
+  "restrictions_and_closures": {
+    "hours": "Monday and Wednesday–Sunday 07:00–21:30; closed Tuesdays for regular maintenance",
+    "age": "competition pool booking age 16 and above; training pool booking all ages; adult–child supervisory rules apply for ages 15 and below",
+    "availability": "lane availability subject to change without prior notice; pool schedule contains event closures",
+    "venue_event_closure": "2026-10-30 through 2026-11-01",
+    "competition_pool_closure": "2026-12-05 through 2026-12-28 enhancement works; training pool availability limited during same period",
+    "capture_day": "2026-11-10 was Tuesday; normal weekly closure; not an observed-open claim",
+    "conditions": "non-event conditions PDF request returned HTTP 404; precise supervisory ratios and full conditions not verified"
+  },
+  "sources": [
+    {
+      "file": "venue.html",
+      "sha256": "2622c75b60cb6795be5defea58301d295a3f5688a6d6832965a46c4031c4273c"
+    },
+    {
+      "file": "swimming.html",
+      "sha256": "346600ee3f137275adc4ce16aefaa5cb68d8698d694369be35a4bed6ae65d779"
+    },
+    {
+      "file": "conditions.pdf.json",
+      "status": 404
+    }
+  ]
+}
