@@ -23,7 +23,7 @@ Zurich12池＝原7＋Aemtler/Altweg/Borrweg/Riedtli/Tannenrauch，成人专用K�
 
 ## 交付与下一步
 
-V198为27页＝25正文参考＋2暂定AI，56引用，新闻18—19／AI26—27；0页余量。原生页眉暂用18213且实际注册未核、空页脚；队友main/ref/class／默认Main保持。共享main只读构建仍缺framework.png。AI选集冻结截止2026-11-09 14:31:18.850UTC，不覆盖后续或全队，submission_ready=false。
+V198为27页＝25正文参考＋2暂定AI，56引用，新闻18—19／AI26—27；0页余量。原生页眉暂用18213且实际注册未核、空页脚；根main已按用户最新要求接到完整自有V198；队友原main逐字节归档，ref/class保持，服务器Main设置未改。实际根main本地27页构建通过，与独立稿逐页文字及灰度像素一致；在线重编译未验证。见[入口修正](MAIN_ENTRY_20261110.md)。AI选集冻结截止2026-11-09 14:31:18.850UTC，不覆盖后续或全队，submission_ready=false。
 
 V198两个独立Git副本直接／根代理重建，27页文本及全部72dpi灰度像素一致；独立Git快照runner为scripts/task4_v198_reproduce.py，要求P干净及外部空output-dir，本地缓存不等于服务器编译。不要重跑冻结的V198启用前保护审计来检验新导航；按当前快照runner验证已启用状态。分别fetch、审diff、正常push并核远端。
 

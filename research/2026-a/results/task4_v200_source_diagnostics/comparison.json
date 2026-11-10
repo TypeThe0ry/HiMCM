@@ -1,0 +1,41 @@
+{
+  "version": "V200 staged diagnostics versus V197",
+  "threshold_changes": [
+    {
+      "weight_reference": "fixed",
+      "single_mean_status_before": "one_finite_mean_tie",
+      "single_mean_status_after": "one_finite_mean_tie",
+      "tie_mean_minutes_before": 54.053129484602266,
+      "tie_mean_minutes_after": 40.5267502360491,
+      "joint_radius_before": 0.130110523850907,
+      "joint_radius_after": 0.015708025966142996,
+      "binding_rivals_before": [
+        "Oslo"
+      ],
+      "binding_rivals_after": [
+        "Singapore"
+      ]
+    },
+    {
+      "weight_reference": "equal",
+      "single_mean_status_before": "Zurich_unique_for_all_nonnegative_means",
+      "single_mean_status_after": "Zurich_unique_for_all_nonnegative_means",
+      "tie_mean_minutes_before": null,
+      "tie_mean_minutes_after": null,
+      "joint_radius_before": 0.6344548233461832,
+      "joint_radius_after": 0.6344548233461821,
+      "binding_rivals_before": [
+        "Oslo"
+      ],
+      "binding_rivals_after": [
+        "Oslo"
+      ]
+    }
+  ],
+  "withdrawal_choices_and_possible_necessary_counts_unchanged": true,
+  "input_sha256": {
+    "results/task4_v197_source_diagnostics/summary.json": "231b101cc509f8688872a4cda4f348b34c7daf5d1daf2035e24621d5945aaf18",
+    "results/task4_v200_source_diagnostics/summary.json": "8b9e3c9618e9f42e78f14df20adf709dc353a4765589c7ea34c59078af532aaf"
+  },
+  "scope": "Same conditional input sensitivity experiment; revised Singapore pool inventory changes one lower bound. The 22-venue notice-withholding case is in the primary V200 revision, not these usual-mean source-policy diagnostics."
+}

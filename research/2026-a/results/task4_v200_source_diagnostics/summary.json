@@ -1,0 +1,388 @@
+{
+  "version": "V200 staged source diagnostics",
+  "science": "V200 staged; current active navigation is unchanged",
+  "paper_at_creation": "V198 unchanged",
+  "retained_input_counts": [
+    112,
+    37,
+    11
+  ],
+  "input_bounds_sha256": "77514d8c291cc807795c3e872de3cbb1c6cd03ef6b3a279896e21ff73e4b4eaf",
+  "withdrawal_rank_rows": 160,
+  "withdrawal_bound_rows": 800,
+  "single_mean_probe_rows": 202,
+  "joint_rank_rows": 192,
+  "joint_bound_rows": 1920,
+  "joint_mean_rows": 144,
+  "joint_pairwise_comparisons": 30,
+  "joint_finite_crossing_roots": 11,
+  "joint_corner_checks": [
+    {
+      "weight_reference": "fixed",
+      "delta": 0.05,
+      "corners": 4096,
+      "max_signed_gap": 0.1071086542390347,
+      "scalar_analytic_corner_gap": 0.1071086542390276
+    },
+    {
+      "weight_reference": "fixed",
+      "delta": 0.015708025966142996,
+      "corners": 4096,
+      "max_signed_gap": 1.4210854715202004e-14,
+      "scalar_analytic_corner_gap": 7.105427357601002e-15
+    },
+    {
+      "weight_reference": "equal",
+      "delta": 0.05,
+      "corners": 4096,
+      "max_signed_gap": -3.6900535662132867,
+      "scalar_analytic_corner_gap": -3.6900535662132867
+    },
+    {
+      "weight_reference": "equal",
+      "delta": 0.6344548233461821,
+      "corners": 4096,
+      "max_signed_gap": 0.0,
+      "scalar_analytic_corner_gap": 0.0
+    }
+  ],
+  "scalar_vs_evaluate_max_error": 1.4210854715202004e-14,
+  "withdrawal_cases": [
+    {
+      "scenario": "retained_input",
+      "weight_reference": "fixed",
+      "withdrawn_commute_proxies": [],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 15.958134470578873,
+      "minimax_regret": 16.93831712373327
+    },
+    {
+      "scenario": "retained_input",
+      "weight_reference": "equal",
+      "withdrawn_commute_proxies": [],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.66038969723218,
+      "minimax_regret": 15.760638509295092
+    },
+    {
+      "scenario": "withdraw_Zurich_work_commute",
+      "weight_reference": "fixed",
+      "withdrawn_commute_proxies": [
+        "Zurich"
+      ],
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.10640544023093,
+      "minimax_regret": 16.98909063859957
+    },
+    {
+      "scenario": "withdraw_Zurich_work_commute",
+      "weight_reference": "equal",
+      "withdrawn_commute_proxies": [
+        "Zurich"
+      ],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.801098921813214,
+      "minimax_regret": 18.011986102591656
+    },
+    {
+      "scenario": "withdraw_Dublin_work_commute",
+      "weight_reference": "fixed",
+      "withdrawn_commute_proxies": [
+        "Dublin"
+      ],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.162705122962723,
+      "minimax_regret": 16.93831712373327
+    },
+    {
+      "scenario": "withdraw_Dublin_work_commute",
+      "weight_reference": "equal",
+      "withdrawn_commute_proxies": [
+        "Dublin"
+      ],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.834583668383683,
+      "minimax_regret": 15.760638509295092
+    },
+    {
+      "scenario": "withdraw_both_work_commute",
+      "weight_reference": "fixed",
+      "withdrawn_commute_proxies": [
+        "Zurich",
+        "Dublin"
+      ],
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 16.310976092614784,
+      "minimax_regret": 16.98909063859957
+    },
+    {
+      "scenario": "withdraw_both_work_commute",
+      "weight_reference": "equal",
+      "withdrawn_commute_proxies": [
+        "Zurich",
+        "Dublin"
+      ],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.975292892964717,
+      "minimax_regret": 18.011986102591656
+    },
+    {
+      "scenario": "withdraw_all_submitted_commute_means",
+      "weight_reference": "fixed",
+      "withdrawn_commute_proxies": [
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague"
+      ],
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 18.002415863216143,
+      "minimax_regret": 16.98909063859957
+    },
+    {
+      "scenario": "withdraw_all_submitted_commute_means",
+      "weight_reference": "equal",
+      "withdrawn_commute_proxies": [
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague"
+      ],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_interval_width": 20.42232429886742,
+      "minimax_regret": 18.011986102591656
+    }
+  ],
+  "mean_thresholds": [
+    {
+      "weight_reference": "fixed",
+      "retained_mean_minutes": 39.9,
+      "gap_at_lower_utility0": 2.321561999566633,
+      "gap_at_lower_utility1": -6.012870996632415,
+      "target_lower_score": 53.91443727449012,
+      "quadratic_coefficients": [
+        -0.04146885715816103,
+        0.30793771431632205,
+        -0.0769767326432696
+      ],
+      "status": "one_finite_mean_tie",
+      "tie_lower_utility": 0.2590092057352336,
+      "tie_mean_minutes": 40.5267502360491,
+      "tie_cities": [
+        "Zurich",
+        "Singapore"
+      ],
+      "strict_rule": "With all other entries fixed, Zurich uniquely minimizes regret below the mean cutoff; a tie occurs at it; above it Zurich is excluded."
+    },
+    {
+      "weight_reference": "equal",
+      "retained_mean_minutes": 39.9,
+      "gap_at_lower_utility0": -1.586559768780674,
+      "gap_at_lower_utility1": -9.265104178243284,
+      "target_lower_score": 51.47319913061731,
+      "quadratic_coefficients": [
+        -0.012512040076773312,
+        0.22502408015354664,
+        0.04642259701756235
+      ],
+      "status": "Zurich_unique_for_all_nonnegative_means",
+      "tie_lower_utility": null,
+      "tie_mean_minutes": null,
+      "strict_rule": "For this one-mean experiment the largest gap is its negative utility0 limit, so every finite nonnegative mean retains unique Zurich."
+    }
+  ],
+  "joint_thresholds": [
+    {
+      "weight_reference": "fixed",
+      "sharp_radius": 0.015708025966142996,
+      "sharp_radius_percent": 1.5708025966142996,
+      "binding_rivals": [
+        "Singapore"
+      ],
+      "tie_regret": 16.989090638599578,
+      "gap_at0": -0.05077351486630022,
+      "gap_at1": 6.856834782085386,
+      "signed_gap_at_root": 7.105427357601002e-15,
+      "gap_below": -3.197623925643711e-07,
+      "gap_above": 3.197623570372343e-07,
+      "strict_guarantee": "Below the exact boundary Zurich uniquely minimizes regret throughout the box. At equality Zurich remains a minimax choice throughout, but a rival can tie at the worst corner. Above it an admissible counterexample exists."
+    },
+    {
+      "weight_reference": "equal",
+      "sharp_radius": 0.6344548233461821,
+      "sharp_radius_percent": 63.445482334618205,
+      "binding_rivals": [
+        "Oslo"
+      ],
+      "tie_regret": 17.06098233188755,
+      "gap_at0": -3.837907362077239,
+      "gap_at1": 2.6242691830545297,
+      "signed_gap_at_root": 0.0,
+      "gap_below": -7.1895954079082e-07,
+      "gap_above": 7.189595478962474e-07,
+      "strict_guarantee": "Below the exact boundary Zurich uniquely minimizes regret throughout the box. At equality Zurich remains a minimax choice throughout, but a rival can tie at the worst corner. Above it an admissible counterexample exists."
+    }
+  ],
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/task4_v191_tokyo/README.md": "72f4dd6bc276b6ad10394b733da981572ec678103e136a5fcffe2b6bd1aa6ce4",
+    "data/task4_v191_tokyo/api_catalog_original.html": "822ba5605d334211cc0b74f70595f15c3c1af4b83b056224a8c33333dca4ced0",
+    "data/task4_v191_tokyo/collect.py": "c80749cee0ada6d9cc26fe7037e816f539ca0d3d8c5396361802e0e46bae3f8b",
+    "data/task4_v191_tokyo/extract.py": "079094cd8f26d046b346259e258267a37e368b1a115a490771fcf0e75b68da8a",
+    "data/task4_v191_tokyo/findings.json": "447d1569d0a4651e0d4a6313473886e6636aba279ee54592ca8a83d59e142ab7",
+    "data/task4_v191_tokyo/media_guide2026_response_original.html": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "data/task4_v191_tokyo/named_stations.csv": "41071e41286231f861560836caa4085e731c897b72e4a523c663fddb9de7db45",
+    "data/task4_v191_tokyo/observations.json": "ae15b207f7abdb59b2a51c12264d4a8ec64335d558013f2f47d450895101fa4e",
+    "data/task4_v191_tokyo/oedo_original.html": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "data/task4_v191_tokyo/retrievals.json": "8ef7547dae6d2f4df28835d4cc62c505bc462d8f1b0b17593071684dd07dcab5",
+    "data/task4_v191_tokyo/stationlist_original.csv": "834e1dfa2dfcb7cbaf23feb4ab84db35064ca029efed242f8dcef1779911da15",
+    "data/task4_v191_warsaw/README.md": "2472e73fb7bb6a9b6bd8674ed2688f99924309d294740081f2dc3e4902549d1c",
+    "data/task4_v191_warsaw/collect.py": "6b76669e96bd50c9a514ab99cbf6b98e2ca95b51c3a8e6822d14af10c88c3168",
+    "data/task4_v191_warsaw/extract.py": "edabbcda057ec32132768835171c1fb3b779e0716d5d20d29079c8de4c1e80cd",
+    "data/task4_v191_warsaw/findings.json": "cad179617e8bb00320bacfb35bd1f220dfc0e5200915742014eef44714254c62",
+    "data/task4_v191_warsaw/fire_service_2025_original.pdf": "a788454415e98fd36feffaa20598b8445707a7eb4334d81b7532f033df3f8809",
+    "data/task4_v191_warsaw/fire_service_scope_extracted.txt": "2b1a8d8ae9a588343d4fb3ceb614160907746ad71d6dc7f94e364040632288f1",
+    "data/task4_v191_warsaw/m1_original.html": "a75abc750a2bc7a4f113aad26fcc855a7276d97c30b7ed006ff9287e293d30c2",
+    "data/task4_v191_warsaw/m2_original.html": "7fb2f2d290221db15fb4f6e725fe40558965cb7437427b70b473bc60444e30b7",
+    "data/task4_v191_warsaw/network_plan_original.pdf": "c283ae5f91463bc011830d7d1ed990fd0edf32aeee8992f045641b262f9b6aa1",
+    "data/task4_v191_warsaw/observations.json": "51b010fb30ac812a7b0a967e1ccbbc91300ad8efa7a752a780041b8429e61df1",
+    "data/task4_v191_warsaw/retrievals.json": "13f6eea2bf16c7a6d7636c34a3f1839012e8da24b27cdc1b5b9187d8777036a2",
+    "data/task4_v191_warsaw/station_appearances.csv": "0bf6d29fcffb196bd15b4066b1a12fe352999e54413cf269532431941a50b73f",
+    "data/task4_v191_warsaw/station_complexes.csv": "8a3e9beb8b0228172bbc3b5360c44c838aa28d6d58aee8851ad47a250f133709",
+    "data/task4_v191_warsaw/visual_check.json": "935fccd9b436a23f3630092a8c2e4918489ec5d3d53a1e4f665d35a769456e7b",
+    "data/task4_v196_zurichpool/README.md": "f00b82d3b317757c3bb86452fb372679b6a8a88e45feafc71989332acf620252",
+    "data/task4_v196_zurichpool/aemtler_original.html": "d8e09abab452c6506c86ab10f39f2bfddeeb1d4afb23a2d74885c2cff7c74713",
+    "data/task4_v196_zurichpool/altstetten_original.html": "219f3535c2d8903a02c3e2e07f72d5ec915faace4e5fb414174a43ab0ae63d41",
+    "data/task4_v196_zurichpool/altweg_original.html": "916f5b75efae30a908d8b6b76dc852e9c8dbf5890b67d537213cb10f9f2ef81a",
+    "data/task4_v196_zurichpool/blaesi_original.html": "d2e9b4eed9360dc949782ad224939769194f4c0270d9446ec4266ad519200f3b",
+    "data/task4_v196_zurichpool/borrweg_original.html": "8220ce9f26a0422437ab962561652e323d2755fe4e876998ce03608a830776b6",
+    "data/task4_v196_zurichpool/bungertwies_original.html": "f62a979443e4ad1971a8d53e9c080d4eb0e425345801c253220c37cfd7e2d0ed",
+    "data/task4_v196_zurichpool/city_original.html": "11c09b4d76cf9f2b9bd03de50d45069a2f5e3069a62a40d729271d33b088fe14",
+    "data/task4_v196_zurichpool/collect.py": "99a8d03d0eeb727fc0ef14119551c201129396b1bc603cfcd25d152e0c7138af",
+    "data/task4_v196_zurichpool/collect_existing.py": "6e37f2f78b3e2da28434f44d0cb86825873e7197ed24090af743fe964ceb6f43",
+    "data/task4_v196_zurichpool/collect_schools.py": "f014be0a05eb09afc8e4f86fca7e79bf855bee413bac9a0583501270e970b8ba",
+    "data/task4_v196_zurichpool/directory_response_original.html": "9aff4f0d34c8f06754400d38eab5677935feacfc421f473d2bc0930c13e0683e",
+    "data/task4_v196_zurichpool/existing_retrievals.json": "4e4d56d0b8617621907e668ac43d86a1ca744491e31c37e21fd0468b4bd96aa7",
+    "data/task4_v196_zurichpool/extract_schools.py": "5b35452e9597dbd5b9dd0f7b14d52006525569ad3d81d35cc2569b3742a41322",
+    "data/task4_v196_zurichpool/kaeferberg_original.html": "b01bb855e84bc59292aba12690b3773f86847fdaa90b4cd6952195065a3c2594",
+    "data/task4_v196_zurichpool/kuegeliloo_original.html": "a22863d21b91e0560805b1009e66150c9bd5dbeacfb83cd7ed517a61a04a0686",
+    "data/task4_v196_zurichpool/leimbach_original.html": "8615e96f7cf76d5e211fc84b91459b49c2c1fa52c0e699df55c16d3878b990c6",
+    "data/task4_v196_zurichpool/oerlikon_original.html": "411cafd1143ba8fe8dc3ac87c98ff4654449424e09107846cf4985a0dd9b68ef",
+    "data/task4_v196_zurichpool/retrieval.json": "efae70e2f2031e45c20be6ca351cdf85005f98ee0801a64a4a3cf2b5272e0128",
+    "data/task4_v196_zurichpool/riedtli_original.html": "a9ade4715257329918438fcc0294dbf6ead12c2d79ee4fe4f13f499fa916faf8",
+    "data/task4_v196_zurichpool/school_candidates.json": "5c3bcc7de234f41d97c6d63329909fdc9851c536f154e841d34042738dcdb7c0",
+    "data/task4_v196_zurichpool/school_retrievals.json": "1d25f0bf652086f99c0f2bcb4433edc3b97f91d11ef7706aa2e65b10c3ece5ea",
+    "data/task4_v196_zurichpool/tannenrauch_original.html": "269381e418257a7308c91e00b40f9c4642290eeb0ff43fe3020960ed17d12652",
+    "data/task4_v196_zurichpool/verification.json": "8cb84e126656f584a137701ffbd9cf8f120df99304582b058a9046a99317eaf3",
+    "data/task4_v196_zurichpool/verify.py": "2252df5d1e3b1570220af619423570a791c63a31c54d209fb24695c0f0ba0899",
+    "data/task4_v199_sgpool/README.md": "ad444f77a220518598d4b490b7148b96867cd6730d860bd35c4caa878d66f938",
+    "data/task4_v199_sgpool/active_sg_directory_page_1.html": "2f7fa2a0439ef06a086f38a816b207aa15d88ebc86a5bdd3c6a4213d78430bbe",
+    "data/task4_v199_sgpool/active_sg_directory_page_2.html": "d959843714316422f37746f5471476a6ffb7e0f98b44b05a3b29bf216599137a",
+    "data/task4_v199_sgpool/active_sg_directory_page_3.html": "c431f4dad34497dd3c27040478537be20dc1f47b13bf7a39e7dec554a2399a8a",
+    "data/task4_v199_sgpool/candidate_count.json": "ad40e336348a8fc6aab08aa48f3cbacef8e5bcf645930e9e687548ad712d4ffb",
+    "data/task4_v199_sgpool/detail_retrieval.json": "d29520937d495bc3262660ad8046d0b4a89634afbe148f6edab14919ca558441",
+    "data/task4_v199_sgpool/detail_verification.json": "c955a88ba672eb3a2003b4c1fedace94817293032cd9183e853f799da4e50c4d",
+    "data/task4_v199_sgpool/details/activesg-sport-park-teck-ghee-swimming-complex.html": "3a042ca8db7dff95c83646fade8a5b7e8e2abfb6f9c67ee83c23113eda87fa46",
+    "data/task4_v199_sgpool/details/bishan-swimming-complex.html": "8ec0f228fa3cfa4afa7f372859547c9c8da03602ecb467347f519cf5f694b9ed",
+    "data/task4_v199_sgpool/details/bukit-batok-swimming-complex.html": "33e8003592a4a77002df229c6e6c0c6fafe3e21511785caa55390090d44b8ea3",
+    "data/task4_v199_sgpool/details/bukit-canberra-swimming-complex.html": "2a32095e5fdbcc740a886967e5bd454c3e7f49b1dfb0ef910526d777b3d6c73f",
+    "data/task4_v199_sgpool/details/choa-chu-kang-swimming-complex.html": "ba01e1143331f4bbbb2cb06f9c1252189308b021b26e51f47c3ba7e997962cb9",
+    "data/task4_v199_sgpool/details/clementi-swimming-complex.html": "a96e580edd2b22852f8826fdbf70fcfb19a3637656b3f0d706509e4ab039e0b3",
+    "data/task4_v199_sgpool/details/delta-swimming-complex.html": "89fbfc3d471836e38d02bac7243360729dd874dedf5255ffee9c58c184f60749",
+    "data/task4_v199_sgpool/details/geylang-east-swimming-complex.html": "d6f73de7b173e48781d072e1d099082b87320b484133e7272dfc10a76415d4e2",
+    "data/task4_v199_sgpool/details/heartbeat-bedok-activesg-swimming-complex.html": "8cf542bb64b161dc55d721dd6180f768145b1f61584cf69722d4fc9d0f149765",
+    "data/task4_v199_sgpool/details/hougang-swimming-complex.html": "e38fa2c6de8239f9139ff20af2b072e9032d8ad003c7e6cee71bf6286da83caf",
+    "data/task4_v199_sgpool/details/jalan-besar-swimming-complex.html": "0ddb83109b935a8b94693f828938ef3812568f220de1f23cc74d3a1ac903f207",
+    "data/task4_v199_sgpool/details/jurong-east-swimming-complex.html": "01bcd68565c548e5f384c27a6ecd5590be1eb140a4921f1a94852d8dc531540d",
+    "data/task4_v199_sgpool/details/jurong-lake-gardens-pool.html": "c4fa3e152f951897387aa5a823a1ad41ab2b521676d8294e109ea2a74b6a4921",
+    "data/task4_v199_sgpool/details/jurong-west-swimming-complex.html": "9b64d223c64c795bc0afe30e15b84eae9e0b6d2a8f84bf6350aa5ef1c3ccd5b2",
+    "data/task4_v199_sgpool/details/katong-swimming-complex.html": "fc305c9c86214232283fd1aa6b914c594244a1a61fd35a385674480fa8094371",
+    "data/task4_v199_sgpool/details/moe-evans-swimming-complex.html": "3f54cf3b9f3cc73426b780c8dcc2af493e4f9583c871b9547334a44181994dd4",
+    "data/task4_v199_sgpool/details/pasir-ris-swimming-complex.html": "fc49a67f5fa2d8b76e63b6a76d012f662332559a530f02820da72efda1ec8709",
+    "data/task4_v199_sgpool/details/queenstown-swimming-complex.html": "6b671e842167a667662030efab1ab5867a18015058762ed39634ca022ca2a17b",
+    "data/task4_v199_sgpool/details/sengkang-swimming-complex.html": "a8faf2910cda25081e4bf964e9837c4ebe2c74db5b23e98c3ce40d3ebb49edd5",
+    "data/task4_v199_sgpool/details/senja-cashew-swimming-complex.html": "ea4355de69cea0f2e8f46b74fd40b33f2106523e223adaa242b2bb89c1f2643b",
+    "data/task4_v199_sgpool/details/serangoon-swimming-complex.html": "19afa687de1eee7997d8640fd72a1bfb1e7827c6d94a563527f982db39764279",
+    "data/task4_v199_sgpool/details/tampines-swimming-complex.html": "c0d407489f6c25a08cd2610eb9fe9a7963f35e8b4768ec0b10c81fd8b116f7ea",
+    "data/task4_v199_sgpool/details/woodlands-swimming-complex.html": "d7b0f6b5c69b906c2c68613693a3bc869a9781b5850031ff890f9c13a38dfe85",
+    "data/task4_v199_sgpool/details/yio-chu-kang-swimming-complex.html": "4703706fcfe953bf44636f08453d36f3518f49011c4d22919a9255c56520576c",
+    "data/task4_v199_sgpool/details/yishun-swimming-complex.html": "e2fceab4d33fd736cd0882b0f048b2fcd45a134ca3130e2dcd7ff8095e838c69",
+    "data/task4_v199_sgpool/extract.py": "349affaf25942a671fb1652a8dac29d0e6eb2ddbb9e7cae9d5c40f1aaf6c381a",
+    "data/task4_v199_sgpool/manifest.json": "a67714dd68a28c54339777c4027e3f5360834e65b4010bf05ccd09bd12adf728",
+    "data/task4_v199_sgpool/retrieval.json": "6b34086a900645762244ed5c9745a62e065c722b4ccd844f02315d01ae8c107e",
+    "data/task4_v199_sgpool/venues.json": "8f05c883a1da535ca59c2f44edf9cd47b5c89bb2d3a2621132d89a669725f6a3",
+    "design/task4_user_v181_admissions.json": "2fb26edf7f525d0a3c2aa69768c81c33b87a7dee7bde38e7e91062ba5a81b44e",
+    "design/task4_user_v181_snapshot.json": "332d254fcddc8ff1a1d2f5d8581e329cab4239c9cdd3c7c8ae49239af2bca066",
+    "design/task4_user_v192_admissions.json": "cb874671c2a9e263359a57613ce1d14623b6ae450f61634984c0fb8598a09aed",
+    "design/task4_user_v192_snapshot.json": "2e9c32051dffe00ddf635a77c349f01cafa08ffa2913a37cc34ef06ed8c775a2",
+    "design/task4_user_v200_admissions.json": "b5bd1122f7889184b2f13a408aa8dd4a134a5d43b048a518147c3fef3c7eea20",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/task4_user_city_indicators.py": "7d529ee3a617a5d3399baaa8a0eb97b0bb222da0c47b75f05acffa880291ef0a",
+    "scripts/task4_user_v181_revision.py": "68886cb17834b1bc2517aa84e36a13ed2affaaa1a97b311bf20c4a7479c08d61",
+    "scripts/task4_user_v192_revision.py": "df5bebdd6d280a3e8b7ebb3f57a7ed8ea48ccc966230fc411904bfd38f863ccf",
+    "scripts/task4_user_v197_revision.py": "06232c86e8d51105475e61195069837e18b7f8025dc5265854d4b3c613b497c0",
+    "scripts/task4_user_v200_revision.py": "7674043ca1febb4034fbe6a895ae71661945890724865282ac1d52dd0413d42e",
+    "scripts/task4_v200_source_diagnostics.py": "6f358b60a06233c659d25f81798deaa7a67ff07856c8567a057bda7eee272989",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1"
+  },
+  "scope": "Conditional input sensitivity on staged V200 user16. Original CSV values/years/flags remain. Withdrawals keep Singapore historical stage bins; one-mean and joint boxes hold all other criteria and weights fixed. No new commute observations, confidence intervals, calibrated errors, future predictions or real-world winner probabilities.",
+  "proof": "All upper scores remain constant along the joint box; self-excluded regret depends on its own lower score and increases with its own mean. Zurich high and every other finite mean low jointly maximize its regret minus the best rival. Positive Zurich regret at delta0 makes this corner gap strictly increasing. The root is sharp for the declared Cartesian box, not a proof of joint physical realization.",
+  "point_possible_champion_scope": "Sixteen possible/zero necessary is reported for evaluated withdrawal cases only, not asserted over the entire mean parameter domain.",
+  "MC_rerun": false
+}

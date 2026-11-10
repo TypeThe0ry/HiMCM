@@ -1,0 +1,154 @@
+{
+  "version": "V200",
+  "primary": "V200",
+  "profiles": [
+    {
+      "profile": "baseline",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 1.0,
+      "mean_score_interval_width": 15.958134470578873,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.3844
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4362
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4876
+        }
+      ]
+    },
+    {
+      "profile": "education_priority",
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 0.7333333333333334,
+      "mean_score_interval_width": 16.902832529526748,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Singapore",
+          "most_recommended_frequency": 0.3868
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Singapore",
+          "most_recommended_frequency": 0.5506
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Singapore",
+          "most_recommended_frequency": 0.7303
+        }
+      ]
+    },
+    {
+      "profile": "independent_living_priority",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 0.8833333333333333,
+      "mean_score_interval_width": 21.98609026185477,
+      "consistency_ratio": 2.649301773900448e-16,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4564
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.5854
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.7364
+        }
+      ]
+    }
+  ],
+  "preference_evidence": "Unchanged analyst-designed multipliers; no survey or age-specific elicitation",
+  "ahp_interpretation": "Exact ratio reconstruction; consistency is algebraic",
+  "assumptions_and_weights_exactly_match_V137": true,
+  "weights_csv_byte_exact": true,
+  "matrix_inputs_bit_exact": true,
+  "matrix_guard_perturbation_test": true,
+  "allowed_derived_diagnostic_differences": {
+    "independent_living_priority/diagnostic/lambda_max": 3.552713678800501e-15,
+    "independent_living_priority/diagnostic/CI": 3.9474596431116675e-16,
+    "independent_living_priority/diagnostic/CR": 2.649301773900448e-16
+  },
+  "maximum_derived_diagnostic_difference": 3.552713678800501e-15,
+  "derived_diagnostic_tolerance": 1e-12
+}

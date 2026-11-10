@@ -69,3 +69,7 @@ Use the existing read-only mcmthesis class for owned review material, following 
 - Use `gpt-6-luna` by default for lower-complexity subagent tasks.
 - Use `gpt-6.1-terra` for advanced subagent tasks, including complex mathematical modelling and independent scientific audits.
 - Choose reasoning effort to fit the task. Keep assignments bounded and give agents the required repository paths and context.
+
+## Current main entry correction — 2026-11-10
+
+The user explicitly requested that all owned titles, Summary and topics appear in the current Overleaf compilation. The existing root `main.tex` now imports the complete owned V198 paper. The teammate original is preserved byte-for-byte at `HiMCM-Overleaf/archive/team_main_before_owned_entry_20261110/main.tex`; `ref.bib` and `mcmthesis.cls` remain unchanged. This narrowly supersedes prior root-entry preservation instructions; it does not authorize rewriting teammate content. Server Main document settings and online compilation have not been verified. See `docs/handoff/MAIN_ENTRY_20261110.md`.
