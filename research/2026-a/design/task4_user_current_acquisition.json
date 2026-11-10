@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 36,
+    "routes": 37,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -596,5 +596,43 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Approximate occupied teacher-position source, not exact FTE or city bound; current site pages403; no headcount conversion. Private primary school report allowed. Helsinki blocked metadata not evidence."
+  },
+  "PM2_5_routing_and_criterion_block_withdrawal": {
+    "data": "data/current_all16_pm_sources",
+    "results": "results/current_pm_block_withdrawal",
+    "script": "scripts/task4_current_pm_block_withdrawal.py",
+    "audit_script": "scripts/audit_current_pm_block_withdrawal.py",
+    "verification": "results/current_pm_block_withdrawal/verification.json",
+    "verification_sha256": "4708db4ae023c8d7b6b96d1da00b5cb909c8f24eed02c4c1a44fc25dd52ee25b",
+    "historical_metadata_flow": "1.2",
+    "historical_area_codelist": "CL_FUA_CITY1.1",
+    "historical_city_FUA_pairs": 15,
+    "Singapore_historical_country_root_absent": true,
+    "new_current_v1_5_HTTP403_bodies": 2,
+    "new_PM_observations": 0,
+    "current_v1_5_code_validity_verified": false,
+    "withdrawn_PM_point_utilities": 16,
+    "other144_ranges_exactly_preserved": true,
+    "fixed_recommendation_in_withdrawal": [
+      "Zurich"
+    ],
+    "equal_recommendation_in_withdrawal": [
+      "Zurich"
+    ],
+    "decision_rank_changes": {
+      "fixed": 13,
+      "equal": 6
+    },
+    "mean_score_width_increase": {
+      "fixed": 8.353858930553406,
+      "equal": 7.364388789052754
+    },
+    "possible_champions_every_case": 16,
+    "necessary_champions_every_case": 0,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "scope": "Complete PM utility-column information withdrawal, not pollutant range/probability/shared-source error, a new observed recommendation, temporal coverage/correction or physical joint scenario. Original point values/flags/weights/rules retained."
   }
 }

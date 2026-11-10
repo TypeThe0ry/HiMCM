@@ -1,0 +1,563 @@
+{
+  "metadata_flow_version": "1.2",
+  "codelist": "CL_FUA_CITY",
+  "codelist_version": "1.1",
+  "normalization": "NFKD accent removal/casefold/whitespace; exact declared alias plus country parent hierarchy",
+  "aliases": {
+    "Vienna": [
+      "Wien"
+    ],
+    "Zurich": [
+      "Zürich"
+    ],
+    "Helsinki": [
+      "Helsinki/Helsingfors"
+    ],
+    "Milan": [
+      "Milano"
+    ],
+    "Prague": [
+      "Praha"
+    ],
+    "Warsaw": [
+      "Warszawa"
+    ]
+  },
+  "cities": [
+    {
+      "city": "Vienna",
+      "original_iso2": "AT",
+      "original_country": "Austria",
+      "original_PM_value": "11.57",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "AUT",
+      "country_root_label": "Austria",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "AT001C",
+          "label": "Wien",
+          "parent_chain": [
+            "AT001C",
+            "AT001F",
+            "AUT"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "AT001F",
+          "label": "Wien",
+          "parent_chain": [
+            "AT001F",
+            "AUT"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Zurich",
+      "original_iso2": "CH",
+      "original_country": "Switzerland",
+      "original_PM_value": "9.32",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "CHE",
+      "country_root_label": "Switzerland",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "CH002C",
+          "label": "Zürich",
+          "parent_chain": [
+            "CH002C",
+            "CH002F",
+            "CHE"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "CH002F",
+          "label": "Zürich",
+          "parent_chain": [
+            "CH002F",
+            "CHE"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Helsinki",
+      "original_iso2": "FI",
+      "original_country": "Finland",
+      "original_PM_value": "5.39",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "FIN",
+      "country_root_label": "Finland",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "FI001C",
+          "label": "Helsinki/Helsingfors",
+          "parent_chain": [
+            "FI001C",
+            "FI001F",
+            "FIN"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "FI001F",
+          "label": "Helsinki/Helsingfors",
+          "parent_chain": [
+            "FI001F",
+            "FIN"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Berlin",
+      "original_iso2": "DE",
+      "original_country": "Germany",
+      "original_PM_value": "9.14",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "DEU",
+      "country_root_label": "Germany",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "DE001C",
+          "label": "Berlin",
+          "parent_chain": [
+            "DE001C",
+            "DE001F",
+            "DEU"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "DE001F",
+          "label": "Berlin",
+          "parent_chain": [
+            "DE001F",
+            "DEU"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "London",
+      "original_iso2": "GB",
+      "original_country": "United Kingdom",
+      "original_PM_value": "9.99",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "GBR",
+      "country_root_label": "United Kingdom",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "UK001C",
+          "label": "London",
+          "parent_chain": [
+            "UK001C",
+            "UK001F",
+            "GBR"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "UK001F",
+          "label": "London",
+          "parent_chain": [
+            "UK001F",
+            "GBR"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Amsterdam",
+      "original_iso2": "NL",
+      "original_country": "Netherlands",
+      "original_PM_value": "10.47",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "NLD",
+      "country_root_label": "Netherlands",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "NL001C",
+          "label": "Amsterdam",
+          "parent_chain": [
+            "NL001C",
+            "NL001F",
+            "NLD"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "NL001F",
+          "label": "Amsterdam",
+          "parent_chain": [
+            "NL001F",
+            "NLD"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Stockholm",
+      "original_iso2": "SE",
+      "original_country": "Sweden",
+      "original_PM_value": "4.99",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "SWE",
+      "country_root_label": "Sweden",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "SE001C",
+          "label": "Stockholm",
+          "parent_chain": [
+            "SE001C",
+            "SE001F",
+            "SWE"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "SE001F",
+          "label": "Stockholm",
+          "parent_chain": [
+            "SE001F",
+            "SWE"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Paris",
+      "original_iso2": "FR",
+      "original_country": "France",
+      "original_PM_value": "11.16",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "FRA",
+      "country_root_label": "France",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "FR001C",
+          "label": "Paris",
+          "parent_chain": [
+            "FR001C",
+            "FR001F",
+            "FRA"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "FR001F",
+          "label": "Paris",
+          "parent_chain": [
+            "FR001F",
+            "FRA"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Madrid",
+      "original_iso2": "ES",
+      "original_country": "Spain",
+      "original_PM_value": "10.23",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "ESP",
+      "country_root_label": "Spain",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "ES001C",
+          "label": "Madrid",
+          "parent_chain": [
+            "ES001C",
+            "ES001F",
+            "ESP"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "ES001F",
+          "label": "Madrid",
+          "parent_chain": [
+            "ES001F",
+            "ESP"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Milan",
+      "original_iso2": "IT",
+      "original_country": "Italy",
+      "original_PM_value": "28.1",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "ITA",
+      "country_root_label": "Italy",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "IT002C",
+          "label": "Milano",
+          "parent_chain": [
+            "IT002C",
+            "IT002F",
+            "ITA"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "IT002F",
+          "label": "Milano",
+          "parent_chain": [
+            "IT002F",
+            "ITA"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Dublin",
+      "original_iso2": "IE",
+      "original_country": "Ireland",
+      "original_PM_value": "6.27",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "IRL",
+      "country_root_label": "Ireland",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "IE001C",
+          "label": "Dublin",
+          "parent_chain": [
+            "IE001C",
+            "IE001F",
+            "IRL"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "IE001F",
+          "label": "Dublin",
+          "parent_chain": [
+            "IE001F",
+            "IRL"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Oslo",
+      "original_iso2": "NO",
+      "original_country": "Norway",
+      "original_PM_value": "7.9",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "NOR",
+      "country_root_label": "Norway",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "NO001C",
+          "label": "Oslo",
+          "parent_chain": [
+            "NO001C",
+            "NO001F",
+            "NOR"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "NO001F",
+          "label": "Oslo",
+          "parent_chain": [
+            "NO001F",
+            "NOR"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Prague",
+      "original_iso2": "CZ",
+      "original_country": "Czechia",
+      "original_PM_value": "12.16",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "CZE",
+      "country_root_label": "Czechia",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "CZ001C",
+          "label": "Praha",
+          "parent_chain": [
+            "CZ001C",
+            "CZ001F",
+            "CZE"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "CZ001F",
+          "label": "Praha",
+          "parent_chain": [
+            "CZ001F",
+            "CZE"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Warsaw",
+      "original_iso2": "PL",
+      "original_country": "Poland",
+      "original_PM_value": "20.65",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "POL",
+      "country_root_label": "Poland",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "PL001C",
+          "label": "Warszawa",
+          "parent_chain": [
+            "PL001C",
+            "PL001F",
+            "POL"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "PL001F",
+          "label": "Warszawa",
+          "parent_chain": [
+            "PL001F",
+            "POL"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Singapore",
+      "original_iso2": "SG",
+      "original_country": "Singapore",
+      "original_PM_value": "14.32",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "SGP",
+      "country_root_label": null,
+      "areas": [],
+      "status": "country_root_absent_from_archived_codelist",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    },
+    {
+      "city": "Tokyo",
+      "original_iso2": "JP",
+      "original_country": "Japan",
+      "original_PM_value": "28.37",
+      "original_year": "2024",
+      "original_flag": "MODELLED",
+      "country_root": "JPN",
+      "country_root_label": "Japan",
+      "areas": [
+        {
+          "kind": "CITY",
+          "code": "JPN01C",
+          "label": "Tokyo",
+          "parent_chain": [
+            "JPN01C",
+            "JPN01F",
+            "JPN"
+          ]
+        },
+        {
+          "kind": "FUA",
+          "code": "JPN01F",
+          "label": "Tokyo",
+          "parent_chain": [
+            "JPN01F",
+            "JPN"
+          ]
+        }
+      ],
+      "status": "historical_metadata_route_only",
+      "current_v1_5_code_validity_verified": false,
+      "numeric_original_PM_verified": false
+    }
+  ],
+  "mapped_city_pairs": 15,
+  "unmapped_cities": [
+    "Singapore"
+  ],
+  "new_PM_observations": 0,
+  "source_sha256": {
+    "data/current_oslo_pm_model/structure.xml": "88905e3f8fc445ffa360c78353868628565c36eb4cbf7b9e2968f61ffa93c7c7",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/current_all16_pm_sources/map_areas.py": "2b261c7ea7d551641ed4081b739b345d4c9cd7636b8d99174d45d93f74e53d3f"
+  },
+  "scope": "Historical routing metadata only; no current version/year/value, municipal-boundary equivalence or original extraction lineage verified. Country/city labels are not original-CSV provenance."
+}

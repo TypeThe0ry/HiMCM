@@ -1,0 +1,87 @@
+{
+  "primary_model": "V203 unchanged",
+  "withdrawn_point_utilities": 16,
+  "other144_ranges_exactly_preserved": true,
+  "weights_and_anchors_preserved": true,
+  "cases": [
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.82232695332216
+    },
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.39181162388826
+    },
+    {
+      "scenario": "all_PM_points_withdrawn",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 24.176185883875565
+    },
+    {
+      "scenario": "all_PM_points_withdrawn",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 25.756200412941013
+    }
+  ],
+  "contrasts": [
+    {
+      "weight_reference": "fixed",
+      "baseline_recommendations": [
+        "Oslo"
+      ],
+      "withdrawal_recommendations": [
+        "Zurich"
+      ],
+      "recommendation_changed": true,
+      "decision_rank_changes": 13,
+      "mean_width_change": 8.353858930553406
+    },
+    {
+      "weight_reference": "equal",
+      "baseline_recommendations": [
+        "Zurich"
+      ],
+      "withdrawal_recommendations": [
+        "Zurich"
+      ],
+      "recommendation_changed": false,
+      "decision_rank_changes": 6,
+      "mean_width_change": 7.364388789052754
+    }
+  ],
+  "rank_rows": 64,
+  "bound_rows": 320,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "Criterion-block complete-information-withdrawal stress. Full [0,1] utility domain is not a pollutant concentration range, empirical error bound/distribution or probability. Product box permits independent cross-city extremes, with no common publisher/bias or physical joint plausibility assumed. Existing monotone TOPSIS/self-excluded maximum regret applies. No current OECD data, source correction, future trend or manuscript update.",
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/task4_current_pm_block_withdrawal.py": "ef08d136fa46dcb56e30c685183d7e9142f13c5f0ac68ca1cb4f70eee9fb2f71"
+  },
+  "output_sha256": {
+    "ranks.csv": "9f210f3258f53e7e59bed90128fec2d712ec0729c155641e9d7128bd2dacc0f5",
+    "bounds.csv": "df777d36d2446cffbc06a60939978009b02255765ac577379b8b03f4766e9331"
+  }
+}

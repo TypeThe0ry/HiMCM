@@ -1,0 +1,53 @@
+{
+  "status": "pass bounded PM source routing and criterion-withdrawal workflow",
+  "new_PM_observations": 0,
+  "current_v1_5_HTTP403_bodies": 2,
+  "historical_metadata_pairs": 15,
+  "current_v1_5_coverage_or_code_validity_verified": false,
+  "scalar_city_scenario_weight_cases": 64,
+  "utility_bound_rows": 320,
+  "other144_ranges_exact": true,
+  "four_outputs_reproduced_bytewise": true,
+  "fixed_primary_recommendation": [
+    "Oslo"
+  ],
+  "equal_primary_recommendation": [
+    "Zurich"
+  ],
+  "fixed_withdrawal_recommendation": [
+    "Zurich"
+  ],
+  "equal_withdrawal_recommendation": [
+    "Zurich"
+  ],
+  "decision_rank_changes": {
+    "fixed": 13,
+    "equal": 6
+  },
+  "possible_champions_every_case": 16,
+  "necessary_champions_every_case": 0,
+  "registered_reports_checked": 21,
+  "registered_live_bound_files": 296,
+  "peer_review": {
+    "requested_model": "gpt-6.1-terra; serving build not independently verified",
+    "scope": "pre-output interpretation and actual bounds/rank/mean-width/monotonicity review; root separately recomputed scalar scores",
+    "interpretation": "Information withdrawal, not a measured improvement, error distribution, common publisher/bias, physical joint scenario or new primary recommendation."
+  },
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "MC_replayed": false,
+  "server_compile_verified": false,
+  "source_sha256": {
+    "results/current_pm_block_withdrawal/verification.json": "4708db4ae023c8d7b6b96d1da00b5cb909c8f24eed02c4c1a44fc25dd52ee25b",
+    "results/current_pm_block_withdrawal/research_integrity.json": "288904ee48bb240d3d518ba190c81ffdddf6395bc7370faef09401b70a4b3cb6",
+    "results/current_pm_block_withdrawal/summary.json": "77d78e500b7effe99b0eb2f77e8ad39d57f88f2fd5b18b519f83be469c55cb59",
+    "results/current_pm_block_withdrawal/bounds.csv": "df777d36d2446cffbc06a60939978009b02255765ac577379b8b03f4766e9331",
+    "results/current_pm_block_withdrawal/ranks.csv": "9f210f3258f53e7e59bed90128fec2d712ec0729c155641e9d7128bd2dacc0f5",
+    "data/current_all16_pm_sources/area_map.json": "6a2ba7782f0ea8aa29253991d88244e39d76e5abf2e8ea435ef31f33defd0da3",
+    "design/task4_user_current_extensions.json": "246d0636e3268b3b8bbc961aa8b9dde701ff183c855c68887e9fdba97bc18748",
+    "design/task4_user_current_acquisition.json": "5d68d3d5f63cec01f32edb21b795844f984cdb7267eab3da4239bf4a7d401ce4",
+    "design/task4_current_research_integrity.json": "c3cfda38f45c8c79d7988fa8a58b58345d98197598d6a9041697a5f5e9ea2bb6"
+  }
+}

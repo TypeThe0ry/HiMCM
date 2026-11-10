@@ -1,0 +1,66 @@
+{
+  "status": "pass bounded PM routing and scalar block-withdrawal review",
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 77,
+  "withdrawal_evidence_entries_checked": 10,
+  "paper_dependencies_each_copy": 7,
+  "current_PDF_unchanged": true,
+  "edition_entries_checked": 24,
+  "historical_city_FUA_pairs_verified": 15,
+  "original_PM_numeric_source_values_verified": 0,
+  "new_PM_observations": 0,
+  "current_v1_5_code_validity_verified": false,
+  "current_v1_5_HTTP403_bodies": 2,
+  "old_Oslo_response_latest_year": 2023,
+  "source_year_not_transferred_to_current_version": true,
+  "withdrawn_PM_points": 16,
+  "other144_ranges_exact": true,
+  "utility_bound_rows_checked": 320,
+  "scalar_city_scenario_weight_cases": 64,
+  "box_expansion_monotonicity_checked": true,
+  "contrasts": [
+    {
+      "weight_reference": "fixed",
+      "baseline_recommendations": [
+        "Oslo"
+      ],
+      "withdrawal_recommendations": [
+        "Zurich"
+      ],
+      "recommendation_changed": true,
+      "decision_rank_changes": 13,
+      "mean_width_change": 8.353858930553406
+    },
+    {
+      "weight_reference": "equal",
+      "baseline_recommendations": [
+        "Zurich"
+      ],
+      "withdrawal_recommendations": [
+        "Zurich"
+      ],
+      "recommendation_changed": false,
+      "decision_rank_changes": 6,
+      "mean_width_change": 7.364388789052754
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "source_sha256": {
+    "data/current_all16_pm_sources/README.md": "18810817551b5d3d743f7311f1111a94e53f3ee616570479d290d9b3400e0c96",
+    "data/current_all16_pm_sources/area_map.json": "6a2ba7782f0ea8aa29253991d88244e39d76e5abf2e8ea435ef31f33defd0da3",
+    "data/current_all16_pm_sources/map_areas.py": "2b261c7ea7d551641ed4081b739b345d4c9cd7636b8d99174d45d93f74e53d3f",
+    "data/current_all16_pm_sources/pm_v1_5_response_http403.txt": "4dd84aefcfb860a618b9d71a9983d42cb86bdc7646f4a4bc1e9281492b3ce66e",
+    "data/current_all16_pm_sources/retrieval.json": "da9193b6107cc700018918e6c1bef8d6c9e901ca304c0c66a17cd9d092d29eab",
+    "data/current_all16_pm_sources/structure_error_http403.txt": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+    "results/current_pm_block_withdrawal/README.md": "c319cb6a5811298086410a59dbde1746ea86c8dc60253af237f9f0abb3cd161a",
+    "results/current_pm_block_withdrawal/summary.json": "77d78e500b7effe99b0eb2f77e8ad39d57f88f2fd5b18b519f83be469c55cb59",
+    "results/current_pm_block_withdrawal/bounds.csv": "df777d36d2446cffbc06a60939978009b02255765ac577379b8b03f4766e9331",
+    "results/current_pm_block_withdrawal/ranks.csv": "9f210f3258f53e7e59bed90128fec2d712ec0729c155641e9d7128bd2dacc0f5",
+    "data/current_oslo_pm_model/structure.xml": "88905e3f8fc445ffa360c78353868628565c36eb4cbf7b9e2968f61ffa93c7c7",
+    "data/current_oslo_pm_model/oslo_exposure.csv": "7fded188cc7fcc40e3990008b0c55dc905ac453bf9ef9b358d2b28a8bd301b0e",
+    "scripts/task4_current_pm_block_withdrawal.py": "ef08d136fa46dcb56e30c685183d7e9142f13c5f0ac68ca1cb4f70eee9fb2f71",
+    "scripts/audit_current_pm_block_withdrawal.py": "39c32d98d22e645ba72abd8341f5e5c5731b311b728141ed107044567ccfff57"
+  },
+  "scope": "Historical metadata and blocked current routes separated. Information-withdrawal utility box, not pollution error range/distribution/probability or original-source finding. Core model and manuscript unchanged."
+}

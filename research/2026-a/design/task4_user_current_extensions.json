@@ -274,5 +274,60 @@
       "scripts/audit_current_oslo_dbh.py": "4d53eeb08882159568487fdebb5a815e1b38b6eb059269c95fa1f159fbf2580d",
       "results/current_oslo_dbh_review/verification.json": "dd406292fbb2b8828f031aff6ff09ece3284466a9ca3bf1358781ba17db652b8"
     }
+  },
+  "PM_criterion_block_withdrawal": {
+    "data": "data/current_all16_pm_sources",
+    "results": "results/current_pm_block_withdrawal",
+    "script": "scripts/task4_current_pm_block_withdrawal.py",
+    "audit_script": "scripts/audit_current_pm_block_withdrawal.py",
+    "verification": "results/current_pm_block_withdrawal/verification.json",
+    "verification_sha256": "4708db4ae023c8d7b6b96d1da00b5cb909c8f24eed02c4c1a44fc25dd52ee25b",
+    "historical_metadata_flow": "1.2",
+    "historical_area_codelist": "CL_FUA_CITY1.1",
+    "historical_city_FUA_pairs": 15,
+    "Singapore_historical_country_root_absent": true,
+    "new_current_v1_5_HTTP403_bodies": 2,
+    "new_PM_observations": 0,
+    "current_v1_5_code_validity_verified": false,
+    "withdrawn_PM_point_utilities": 16,
+    "other144_ranges_exactly_preserved": true,
+    "fixed_recommendation_in_withdrawal": [
+      "Zurich"
+    ],
+    "equal_recommendation_in_withdrawal": [
+      "Zurich"
+    ],
+    "decision_rank_changes": {
+      "fixed": 13,
+      "equal": 6
+    },
+    "mean_score_width_increase": {
+      "fixed": 8.353858930553406,
+      "equal": 7.364388789052754
+    },
+    "possible_champions_every_case": 16,
+    "necessary_champions_every_case": 0,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "scope": "Complete PM utility-column information withdrawal, not pollutant range/probability/shared-source error, a new observed recommendation, temporal coverage/correction or physical joint scenario. Original point values/flags/weights/rules retained.",
+    "source_sha256": {
+      "data/current_all16_pm_sources/README.md": "18810817551b5d3d743f7311f1111a94e53f3ee616570479d290d9b3400e0c96",
+      "data/current_all16_pm_sources/area_map.json": "6a2ba7782f0ea8aa29253991d88244e39d76e5abf2e8ea435ef31f33defd0da3",
+      "data/current_all16_pm_sources/map_areas.py": "2b261c7ea7d551641ed4081b739b345d4c9cd7636b8d99174d45d93f74e53d3f",
+      "data/current_all16_pm_sources/pm_v1_5_response_http403.txt": "4dd84aefcfb860a618b9d71a9983d42cb86bdc7646f4a4bc1e9281492b3ce66e",
+      "data/current_all16_pm_sources/retrieval.json": "da9193b6107cc700018918e6c1bef8d6c9e901ca304c0c66a17cd9d092d29eab",
+      "data/current_all16_pm_sources/structure_error_http403.txt": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "results/current_pm_block_withdrawal/README.md": "c319cb6a5811298086410a59dbde1746ea86c8dc60253af237f9f0abb3cd161a",
+      "results/current_pm_block_withdrawal/summary.json": "77d78e500b7effe99b0eb2f77e8ad39d57f88f2fd5b18b519f83be469c55cb59",
+      "results/current_pm_block_withdrawal/bounds.csv": "df777d36d2446cffbc06a60939978009b02255765ac577379b8b03f4766e9331",
+      "results/current_pm_block_withdrawal/ranks.csv": "9f210f3258f53e7e59bed90128fec2d712ec0729c155641e9d7128bd2dacc0f5",
+      "data/current_oslo_pm_model/structure.xml": "88905e3f8fc445ffa360c78353868628565c36eb4cbf7b9e2968f61ffa93c7c7",
+      "data/current_oslo_pm_model/oslo_exposure.csv": "7fded188cc7fcc40e3990008b0c55dc905ac453bf9ef9b358d2b28a8bd301b0e",
+      "scripts/task4_current_pm_block_withdrawal.py": "ef08d136fa46dcb56e30c685183d7e9142f13c5f0ac68ca1cb4f70eee9fb2f71",
+      "scripts/audit_current_pm_block_withdrawal.py": "39c32d98d22e645ba72abd8341f5e5c5731b311b728141ed107044567ccfff57",
+      "results/current_pm_block_withdrawal/verification.json": "4708db4ae023c8d7b6b96d1da00b5cb909c8f24eed02c4c1a44fc25dd52ee25b"
+    }
   }
 }
