@@ -12,6 +12,10 @@
     {
       "figure": "score_intervals.pdf",
       "minimum_pt_at_6_5in": 12.596899224806203
+    },
+    {
+      "figure": "walktime_context.pdf",
+      "minimum_pt_at_6_5in": 9.0
     }
   ],
   "mean_score_interval_widths": {
@@ -21,11 +25,25 @@
   "main_and_reference_pages": 25,
   "total_pages": 27,
   "actual_registration_verified": false,
-  "pdf_sha256": "ce4fb81c308bcb829a5a637462bfed3e585edcb00eec1f42559e44a15206096f",
-  "main_sha256": "e982bccd51e7b601fcbb359cc1da0c49751a014841d891a4ba0d2c6e42dd79ec",
+  "pdf_sha256": "63be833fdcdbbd3e3e1e301d77e700a415d740dc550d03f10c7f59b221062628",
+  "main_sha256": "8dc9469ea4b4460490018bd762aef0640d9b7c56649c1aa771c28ea5a8909763",
   "oslo_source_scope_verification_sha256": "a3fcbfb9ca9ce56dbb7560b846b4c9361f340c9cbb6fc242bc186c193a46bac1",
   "oslo_source_scope_summary_sha256": "effd5d83f7b338e11fe9a57a92a20f0327fc58181c7a924a08a6420107a2347a",
   "oslo_eurostat_sha256": "877d229db8492dca33b8a58c5304cc4667a85066ff0bae457a1af47e4ecf732f",
+  "spatial_audit_sha256": "134eb746ee9257096a61885a8b33ff216a03d800d4e0e0e04d7ccbd659dfd1cc",
+  "spatial_source_sha256": {
+    "data/current_oslo_spatial/6494_hexes.zip": "2f21e257e76c4f4e058a3fe3f16a0d7a408d26fdce999e645b5306e7f87b8897",
+    "data/current_oslo_spatial/download.json": "ab87a031608e6b57732c9e6b48c2eb93f72bf0d5e433f49ff66a105be665bdf2",
+    "data/task4_access/city_index.json": "01d94e01fb59e8e077e119fcabcef3f25d35fdfe677c65edd9fb853b1b31fb77",
+    "data/task4_access/9808_hexes.zip": "06667b28f0b4d729ae21626d2262a2da3be969ee24607535cd5a9bf622c578b1",
+    "visuals/current_spatial/build.py": "c4dd679251d1ce17193edc687eaf64e8ddd2ba859a5fd0f5bc03f7500862cadc",
+    "visuals/current_spatial/render.py": "4d4da7d98b1fe638592ab0fd184a0df6ecf1018a8556daf9a4f0fb84a7cd54d7",
+    "visuals/current_spatial/metrics.json": "945c2ca25a4fc38c0b8979f5946753f08c25f055d07db1d9f64afb2611fb65e3",
+    "visuals/current_spatial/imagery_manifest.json": "e61b24336226383b09f5878869b4e622a351ec05e2cdb754184324a65d6d6457",
+    "visuals/current_spatial/fallback_manifest.json": "1d74de67888a19c146459a452843458ca0d51989f28b8025b1e08027563af36d",
+    "visuals/current_spatial/oslo_imagery_manifest.json": "071f304482470ef9693f97a438375fe3789fc5afce26647f12ab0e7540d9cc23",
+    "visuals/current_spatial/city_walktime.pdf": "633d2e00c7dfb15a5f7088c3e39eda50e4de4a51bf31c61dc86dedda2d01beef"
+  },
   "assets_sha256": {
     "identification_matrix.pdf": "dfee08dabba094a88a427e4172ee4dbebed93684e9120ab312900df8aa5c56e4",
     "score_intervals.pdf": "f16bdb7d67121bc041df888593e785173bc784b4ee2f84c9d98f76d93d84240d"

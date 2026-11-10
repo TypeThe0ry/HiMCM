@@ -54,5 +54,19 @@
     "admissions": "design/task4_user_v203_admissions.json",
     "source_audit": "results/current_transport_identity/bus_subset_audit.json",
     "research_audit": "results/task4_v203_transition/verification.json"
+  },
+  "auxiliary_oslo_spatial": {
+    "data": "data/current_oslo_spatial",
+    "figure": "visuals/current_spatial/city_walktime.pdf",
+    "audit": "results/current_oslo_spatial_review/verification.json",
+    "changes_primary_scores": false,
+    "Oslo_retained_residents": 686862.0905578479,
+    "Oslo_within30_share": 0.9917621782056784,
+    "scope": "GenericLearningPOIresidentgridnotstudent/highschoolaccess;inputyears/boundariesunverified"
+  },
+  "education_table_followup": {
+    "data": "data/current_zurich_education_tables",
+    "primary_admissions": 0,
+    "reason": "Twoofficialchartwrappers linkedObservablemodules;bothmodule requestsHTTP403,no numericalcityFTE/pupiltable verified"
   }
 }

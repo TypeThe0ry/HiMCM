@@ -1,0 +1,63 @@
+{
+  "status": "PASS numerical/source, font and independent figure inspection",
+  "grid_source": {
+    "Oslo": {
+      "total_cells": 4321,
+      "positive_population_cells": 1615,
+      "retained": 686862.0905578479,
+      "valid": 686862.0905578479,
+      "unknown": 0.0,
+      "within30": 681203.8430585571,
+      "share_valid": 0.9917621782056784,
+      "source_index_population": "686862.09",
+      "geography_scope": "source grid extent; no independent complete municipal boundary or population census claim"
+    },
+    "Zurich": {
+      "total_cells": 845,
+      "positive_population_cells": 703,
+      "retained": 401551.56637847703,
+      "valid": 401551.56637847703,
+      "unknown": 0.0,
+      "within30": 401412.7400657225,
+      "share_valid": 0.9996542752553387,
+      "source_index_population": "401551.57",
+      "geography_scope": "source grid extent; no independent complete municipal boundary or population census claim"
+    }
+  },
+  "oslo_source_index": {
+    "city": "oslo",
+    "lat": "59.9816",
+    "lon": "10.73864",
+    "id": "6494",
+    "pop": "686862.09",
+    "avg_bike": "5.00",
+    "avg_foot": "10.00",
+    "extra": 0
+  },
+  "author_indicator": "c_f is modelled mean walking time to 20 generic Learning POIs; source grids represent residents, not students or school access.",
+  "unknown_policy": "Positive resident weight with missing/nonfinite/nonpositive c_f is unknown; excluded from valid denominator and stated separately. Unknown=0 for both snapshots.",
+  "old_seven_pngs_hash_verified": 7,
+  "oslo_nasa_requests": 3,
+  "oslo_nasa_alpha_coverages": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "imagery_scope": "Raw NASA GIBS browse responses; request dates are not verified granule dates. Clouds remain; no AI-generated observations.",
+  "figure_svg_width_pt": 468,
+  "min_text_size_at_6_5_in_pt": 9.0,
+  "visual_inspection": "Full exported figure inspected: labels and legends are legible with no visible clipping or overlap; Zurich cloud remains visible, Oslo uses unbacked grids. Final paper insertion size must remain 6.5 inches or larger.",
+  "figure_interpretation": "Colour and extrusion height represent mean walking time on shared 0\u2013150 minute scale; not terrain or buildings.",
+  "preserved_v203_bindings": 548,
+  "commute_bound_files_checked": 22,
+  "sha256": {
+    "scripts/audit_current_oslo_spatial.py": "e31292078607b0237352d1ba797aa2298650f63884a80d0764bd311a22983bca",
+    "data/current_oslo_spatial/6494_hexes.zip": "2f21e257e76c4f4e058a3fe3f16a0d7a408d26fdce999e645b5306e7f87b8897",
+    "visuals/current_spatial/metrics.json": "945c2ca25a4fc38c0b8979f5946753f08c25f055d07db1d9f64afb2611fb65e3",
+    "visuals/current_spatial/city_walktime.pdf": "633d2e00c7dfb15a5f7088c3e39eda50e4de4a51bf31c61dc86dedda2d01beef",
+    "visuals/current_spatial/city_walktime.svg": "a2d314d14eff956c9463d5bd83806a34025da3bf1f4ed37b9e77856d63ea8948",
+    "visuals/current_spatial/city_walktime.png": "2bd95d42be91f9f39c56895fca9197a9d2dfafdf9ffef1129f111841e7052351",
+    "visuals/current_spatial/render.py": "4d4da7d98b1fe638592ab0fd184a0df6ecf1018a8556daf9a4f0fb84a7cd54d7",
+    "visuals/current_spatial/oslo_imagery_manifest.json": "071f304482470ef9693f97a438375fe3789fc5afce26647f12ab0e7540d9cc23"
+  }
+}

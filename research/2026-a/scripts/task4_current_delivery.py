@@ -8,7 +8,7 @@ def norm(s):
  return ' '.join(re.sub(r'-[ \t]*\n[ \t]*','-',s).split()).casefold()
 def hit(m,s,line=False):return any(norm(x)==norm(m) for x in s.splitlines()) if line else re.search(r'(?<!\w)'+re.escape(norm(m))+r'(?!\w)',norm(s)) is not None
 def main():
- pdf=Path('/data/scratch/himcm-current-oslo-scope-build/main.pdf');raw=subprocess.check_output(['pdftotext','-layout',str(pdf),'-'],text=True).split('\f');assert not raw[-1].strip();pages=raw[:-1];aux=Path('/data/scratch/himcm-current-oslo-scope-build/main.aux').read_text()
+ pdf=Path('/data/scratch/himcm-current-oslo-spatial-build/main.pdf');raw=subprocess.check_output(['pdftotext','-layout',str(pdf),'-'],text=True).split('\f');assert not raw[-1].strip();pages=raw[:-1];aux=Path('/data/scratch/himcm-current-oslo-spatial-build/main.aux').read_text()
  def label(n):return int(re.search(r'\\newlabel\{'+n+r'\}\{\{[^}]*\}\{(\d+)\}',aux)[1])
  total=len(pages);end=label('main-end');news=[label('news-start'),label('news-end')];assert end<=25 and total==end+2==label('LastPage')
  refs=[i+1 for i,p in enumerate(pages) if hit('References',p,True)];assert len(refs)==1;refs=refs[0]
@@ -23,6 +23,7 @@ def main():
  'U-source-quality':'Oslo2009Eurostatvalue/yearmatchnotprovenCSVlineage;Oslo-onlycommutewithdrawalZurichboth;V203626single-modebusinventory;Tvetenbruomittedprecautionarily;primaryfixedOslo/equalZurich;829all-modealternativeand89withdrawalkeptdistinct;112originalpointsnotfullycertified',
  'AI-verification':'V203fullresearchauditandcurrent-main-and-assetsaudit;source/numericprovenancebound;frozenAIcaptureunchanged',
  'U-MC-precision':'V203specifiedexportfamily2064means37settings;4440 pair intervals, 4271 certified, 169 unresolved, 23 unique minima;notalladditionalprimaryMCsettings',
+ 'U-spatial-visual':'Oslo99.18%andZurich99.97%retained-residentgenericLearningPOIgrids;Oslogeo-only3transparentNASAresponses;ZRrawcloudsatellite;min9ptat6.5in;notstudents/highschools/poolaccess',
  'U-matrix-visual':'Figure1V203160cells112point37partial11unknown;travelproxycaptionretained;minimum10ptat6.5in',
  'U-collection-compression':'OwnedsourcetextaddsZurichfivepublicschoolvenuesandlimits;25distinctkeys;conciseoriginal-inputcountandMCparagraphspreserveallmaterialconditions',
  'CI-budget':f'{end}main/reference+2provisionalAI;{25-end}page margin',
@@ -35,7 +36,7 @@ def main():
  if shared: updates['TEAM-shared-build']='Actual local root current main compiles to the independently audited PDF; clean Git rendering reproduction is recorded separately; online server compilation unverified'
  for row in rows:
   key=row['id'];markers=json.loads(row['passage_markers']);lo,hi=3,news[0]-1;line=False
-  replacements={'U-country':['The primary sample has one city per country','outside the sixteen-city ranking'], 'U-source-quality':['numerator 340','rate 0.14','626'], 'PA-best':['conservative recommendation under the stated criteria and intervals','Oslo minimizes maximum regret'], 'U-model-count':['TOPSIS is the primary score','VIKOR'], 'PA-news':['largest possible shortfall','Trying different priorities'], 'U-age':['shared unknown-age mass once','0.23842','not observed age effects'], 'U-MC-precision':['Numerical precision','2064 exported means','rank in 23 of 37 settings']}
+  replacements={'U-spatial-visual':['Walking time across retained city grids','height is not terrain','99.18%'], 'U-country':['The primary sample has one city per country','outside the sixteen-city ranking'], 'U-source-quality':['numerator 340','rate 0.14','626'], 'PA-best':['conservative recommendation under the stated criteria and intervals','Oslo minimizes maximum regret'], 'U-model-count':['TOPSIS is the primary score','VIKOR'], 'PA-news':['largest possible shortfall','Trying different priorities'], 'U-age':['shared unknown-age mass once','0.23842','not observed age effects'], 'U-MC-precision':['Numerical precision','2064 exported means','rank in 23 of 37 settings']}
   if key in replacements: markers=replacements[key]; row['passage_markers']=json.dumps(markers)
   if key=='PA-summary':lo=hi=1
   if key=='PA-toc':lo=hi=2;line=True

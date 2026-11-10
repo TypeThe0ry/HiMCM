@@ -26,3 +26,5 @@ Singapore已有26处条件场馆保持；本轮只将Oslo交通供应下界由89
 
 
 [Oslo通勤来源与单项撤回](research/2026-a/results/current_oslo_commute_scope/summary.json)：Eurostat31.0／2009是同值同年线索，当前标签greater city，未证明原CSV来源或当年边界；TØI26分钟不替换。只撤回Oslo通勤信息时，两套权重均选Zurich，16可能／0必要。此结论已写入单一当前稿；主V203和原始值保持，本轮0新增准入。
+
+当前第16页辅助图比较Oslo与Zurich：保留居民网格中，到20个通用Learning POI的模型平均步行时间不超过30分钟的份额为99.18%／99.97%。Oslo保留人口686862不替代主表727797；输入年份与完整市域覆盖未确认。Oslo三次NASA响应透明，采用几何背景；Zurich保留真实有云影像。主V203得分与16可能／0必要冠军不变。Zurich教育页面的两份官方图表包装可读取，链接的Observable模块均403，新增准入为0；失败路线跳过。

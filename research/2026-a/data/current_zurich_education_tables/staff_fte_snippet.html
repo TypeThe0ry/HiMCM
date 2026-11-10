@@ -1,0 +1,40 @@
+
+
+    
+<div id="wrapper-6af2b7ec4238d" >
+
+<div id="observablehq-linecontainer-6af2b7ec4238d"></div>
+</div>
+
+<script type="module">
+const wrapperEl = document.querySelector("#wrapper-6af2b7ec4238d");
+
+import {Runtime, Inspector, Library} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/2ebdda3eb4cd0353.js?v=4";
+
+const library = new Library();
+const main = new Runtime().module(define, name => {
+
+if (name === "linecontainer") return new Inspector(document.querySelector("#observablehq-linecontainer-6af2b7ec4238d"));
+    
+});
+
+//redefine width to the wrapper width, only if width is actually used
+if (main._scope.has('width')) {
+    main.redefine("width", library.Generators.observe(notify => {
+        let width = notify(wrapperEl.clientWidth); // initial width
+
+        function resized() {
+            let newWidth = wrapperEl.clientWidth;
+            if (newWidth !== width) {
+            notify(width = newWidth);
+            }
+        }
+
+        addEventListener("resize", resized);
+        return () => removeEventListener("resize", resized);
+    }));
+}
+
+</script>
+
