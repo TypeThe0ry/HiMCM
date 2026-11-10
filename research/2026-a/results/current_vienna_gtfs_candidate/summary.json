@@ -1,0 +1,71 @@
+{
+  "status": "candidate awaiting independent crosswalk and full integration review",
+  "service_day": "20261110",
+  "timezone": "Europe/Vienna",
+  "service_day_not_civil_day": true,
+  "active_services": 94,
+  "active_trips": 35541,
+  "counts": {
+    "stop_time_rows": 8853107,
+    "active_regular_call_rows": 627650,
+    "qualified_A_call_rows": 68682
+  },
+  "coordinate_comparison_decimal_places": 7,
+  "coordinate_comparison_is_not_accuracy_claim": true,
+  "qualified_witness_groups": 430,
+  "excluded_mixed_mode_groups": 52,
+  "candidate_DIVA_groups": 378,
+  "retained_metro_groups": 99,
+  "counts_not_added": true,
+  "population": 2028399,
+  "population_year": 2025,
+  "anchor": 50,
+  "candidate_utility_lower": 0.27151281120270476,
+  "cases": [
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "mean_width": 15.82232695332216,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "mean_width": 18.39181162388826,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "candidate_bus_subset",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "mean_width": 15.776782727425475,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "candidate_bus_subset",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "mean_width": 18.30212083359472,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "scope": "Two dated operator sources, exact global name/rounded source-coordinate crosswalk to native DIVA, ordinary A buses with regular scheduled calls; no stop-ID prefix parsing, clustering, census, real-time-service, student-access or2025uniform-snapshot claim. Conditional score improvement is not activated primary improvement."
+}

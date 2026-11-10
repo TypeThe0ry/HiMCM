@@ -758,5 +758,29 @@
     "changes_primary_model": false,
     "changes_manuscript": false,
     "scope": "Expanded exact-key source review beyond V129 single-school witness; no all-provider upper-stage allocation, teacher cap, city ratio or score. Institution FTE counted once; all current site candidates preserved."
+  },
+  "Vienna_GTFS_passenger_candidate": {
+    "status": "candidate_only; public-service eligibility and full integration pending",
+    "sources": "data/current_vienna_gtfs/README.md",
+    "script": "scripts/task4_current_vienna_gtfs_candidate.py",
+    "results": "results/current_vienna_gtfs_candidate",
+    "verification": "results/current_vienna_gtfs_candidate/verification.json",
+    "verification_sha256": "7cdcb29bafed97d267fdb41397f167dfe5b2dbe7a1d6983e965c7e1e5e3c40c0",
+    "candidate_DIVA_groups": 378,
+    "current_primary_groups": 99,
+    "service_day": "20261110",
+    "counts_not_added": true,
+    "candidate_utility_lower": 0.27151281120270476,
+    "conditional_mean_width_reduction": {
+      "fixed": 0.045544225896684054,
+      "equal": 0.08969079029353821
+    },
+    "public_service_eligibility_certified": false,
+    "nonbus_alias_screen_exhaustive": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "scope": "Structural source-position/service-day witness and scalar checks passed; no primaryactivation,2025census,realtimeoperationorstudent-access claim. Preserve frozen99subset pending scientific qualification and integration."
   }
 }
