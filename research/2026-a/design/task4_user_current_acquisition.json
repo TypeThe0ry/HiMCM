@@ -760,7 +760,7 @@
     "scope": "Expanded exact-key source review beyond V129 single-school witness; no all-provider upper-stage allocation, teacher cap, city ratio or score. Institution FTE counted once; all current site candidates preserved."
   },
   "Vienna_GTFS_passenger_candidate": {
-    "status": "candidate_only; public-service eligibility and full integration pending",
+    "status": "Historical structural candidate; public nature qualified and V204 stage audited; activation pending",
     "sources": "data/current_vienna_gtfs/README.md",
     "script": "scripts/task4_current_vienna_gtfs_candidate.py",
     "results": "results/current_vienna_gtfs_candidate",
@@ -781,6 +781,81 @@
     "actual_primary_width_reduction": 0,
     "changes_primary_model": false,
     "changes_manuscript": false,
-    "scope": "Structural source-position/service-day witness and scalar checks passed; no primaryactivation,2025census,realtimeoperationorstudent-access claim. Preserve frozen99subset pending scientific qualification and integration."
+    "scope": "Structural source-position/service-day witness and scalar checks passed; no primaryactivation,2025census,realtimeoperationorstudent-access claim. Preserve frozen99subset pending scientific qualification and integration.",
+    "creation_status_before_followup": "candidate_only; public-service eligibility and full integration pending",
+    "public_passenger_nature_supported": true,
+    "qualification_followup": "results/current_vienna_passenger_qualification/verification.json",
+    "qualification_followup_sha256": "73c2480b26b1bd0c3f60a92ef833de515cd1fee690f4d76e22f00d2bf6fb35ed"
+  },
+  "Vienna_passenger_route_qualification": {
+    "sources": "data/current_vienna_passenger_qualification/README.md",
+    "results": "results/current_vienna_passenger_qualification",
+    "verification": "results/current_vienna_passenger_qualification/verification.json",
+    "verification_sha256": "73c2480b26b1bd0c3f60a92ef833de515cd1fee690f4d76e22f00d2bf6fb35ed",
+    "public_passenger_nature_supported": true,
+    "source_defined_scheduled_supply_supported": true,
+    "witness_routes": 88,
+    "witness_groups": 378,
+    "condition_routes": 9,
+    "condition_selected_witnesses": 36,
+    "conservative_withhold_count": 342,
+    "unusable_HTML_document_responses": 14,
+    "original_PDFs_obtained": 0,
+    "trip_level_PDF_conditions_verified": false,
+    "actual_operation_verified": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false
+  },
+  "Vienna_V204_scientific_staging": {
+    "version": "V204",
+    "activation_status": "staged_not_active",
+    "current_active_primary": "V203",
+    "module": "task4_user_v204_revision",
+    "factory": "revised_bounds",
+    "admissions": "design/task4_user_v204_admissions.json",
+    "results": "results/task4_user_v204_revision",
+    "extensions": "results/task4_user_v204_extensions",
+    "scientific_verification": "results/task4_v204_transition/verification.json",
+    "scientific_verification_sha256": "91d5ca6be17d4a66e63a0ab0ee2cd485db99d03880d936d0d3f35fb57be2f3b0",
+    "snapshot": "design/task4_user_v204_snapshot.json",
+    "snapshot_sha256": "71258047ac31c291d8304d3b1116659ac7a8e39ec2aa3bdff69a5c47d91ded52",
+    "upstream_snapshot": "design/task4_user_v203_snapshot.json",
+    "upstream_snapshot_sha256": "c0d70e2288c2230bb8fbaf3aa4b54e4be3f43e47bdddea16ccf8497cc362105e",
+    "qualified_candidate_groups": 378,
+    "retained_current_groups": 99,
+    "point_partial_unknown": [
+      112,
+      37,
+      11
+    ],
+    "primary_cases": 29,
+    "primary_MC_settings": 174,
+    "draws_per_setting": 10000,
+    "independent_scalar_city_cases": 1456,
+    "simultaneous_mean_boxes": 2064,
+    "mean_rank_pairs": 4440,
+    "other159_lower_and_all160_upper_preserved": true,
+    "condition_withhold_groups": 342,
+    "conditional_fixed_mean_width": 15.776782727425475,
+    "conditional_equal_mean_width": 18.30212083359472,
+    "conditional_mean_width_reduction": {
+      "fixed": 0.045544225896684054,
+      "equal": 0.08969079029353821
+    },
+    "fixed_recommendation": [
+      "Oslo"
+    ],
+    "equal_recommendation": [
+      "Zurich"
+    ],
+    "possible_champions": 16,
+    "necessary_champions": 0,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "scope": "Fully replayed staged science, not activation. Scheduled source-defined facility supply retains reservation/season/day/detour and cross-snapshot conditions; no observed operation, universal access or empirical win probabilities. Transition navigation receipts describe pre-registration metadata, not immutable live navigation."
   }
 }
