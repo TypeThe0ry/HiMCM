@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 20,
+    "routes": 21,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -274,5 +274,20 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Verified original personnel-appendix body and sector-level reporting scope do not supply the matching school teacher denominator; no ratio or bound constructed."
+  },
+  "amsterdam_national_teacher_cap_followup": {
+    "data": "data/current_amsterdam_teacher_bound",
+    "verification": "results/current_amsterdam_teacher_review/verification.json",
+    "verification_sha256": "927ac561c09bd007d09edde8d056c3c12071c4b8cbd5376df679064c7c28c9eb",
+    "raw_bodies": 6,
+    "national_FTE_ED2": 45309,
+    "national_FTE_ED3": 46539,
+    "teacher_cap_verified": false,
+    "reference_period_alignment_verified": false,
+    "matched_pupil_subset_verified": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "No-status API cells and nationally weighted/estimated/payroll totals do not prove actual all-provider teacher upper coverage; no numerical pupil/teacher bound constructed."
   }
 }

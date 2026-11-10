@@ -1,0 +1,13 @@
+# Amsterdam national teacher-cap follow-up
+
+The reviewed national series does not establish an actual upper bound on Amsterdam's upper-secondary teaching FTE. **There are zero admissions and zero primary score-width reduction; the Amsterdam teacher-ratio utility remains [0,1].** Primary V203, the original user CSV and the current manuscript remain unchanged.
+
+Six source bodies are preserved in `research/2026-a/data/current_amsterdam_teacher_bound/`. Independent decoding of the Eurostat 2021 Netherlands FTE response gives 45,309 at ISCED 2 and 46,539 at ISCED 3. Neither cell has a status flag. Their arithmetic sum, 91,848, is a diagnostic candidate, not an admitted actual-teacher cap; absence of a flag does not prove coverage or measurement accuracy.
+
+OECD's 2023 technical notes, PDF page 422, describe estimating private-institution teachers using private enrolments and public-institution pupil–teacher ratios. The exact reference-period alignment to the returned Eurostat cells remains unproved. Separately, the current DUO FTE landing page explicitly describes missing institutional returns and national weighting. The IPTO methodology, PDF page 2, distinguishes teaching-person headcounts from payroll/function-based statistics and notes the latter's exclusion of non-payroll teachers. None of these reviewed routes provides the required complete actual upper envelope with a one-sided error guarantee.
+
+A valid bound could use a verified positive city pupil subset and a teacher superset in the same reference period: if pupils >= N_min and teachers <= T_max, pupil/teacher >= N_min/T_max. The present package establishes neither the teacher cap nor the matching city pupil subset, so no numerical utility bound is constructed. The pupil workbook was not downloaded; the personnel-footnotes workbook is archived with a byte hash but its contents were not audited.
+
+Per-request HTTP status, final URL and exact retrieval time were not captured. The receipt records these as null and distinguishes the manifest completion timestamp. The read-only auditor checks six source hashes, the API values and located methodology passages, 548 science bindings, 77 supplementary bindings, ten withdrawal-evidence entries and seven paper dependencies in both checkouts. It does not certify every source entry or prove no qualifying data exists elsewhere.
+
+The selected route index now contains 21 entries. Reopen this route with actual all-provider teaching-FTE coverage and compatible pupil evidence, rather than repeating the same weighted or payroll totals. No agency request was sent; Overleaf retains the same single current main.

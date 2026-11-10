@@ -1,0 +1,26 @@
+{
+  "decision": "no qualifying partial bound",
+  "target": "Amsterdam school-based upper-secondary pupils per teacher FTE, all target providers",
+  "observation": {
+    "source": "eurostat_nl_2021_fte.json",
+    "dataset": "educ_uoe_perp02",
+    "year": "2021",
+    "geography": "NL",
+    "sex": "T",
+    "worktime": "TOT_FTE",
+    "sector": "TOT_SEC",
+    "isced11_ED2_value_index_4": 45309,
+    "isced11_ED3_value_index_5": 46539,
+    "status_index_4": null,
+    "status_index_5": null,
+    "unverified_sum": 91848
+  },
+  "why_not_cap": "OECD 2023 technical notes PDF page 422 state private-institution teacher counts are estimated from enrolments and public-school ratios; no one-sided error bound located. DUO personnel FTE page acknowledges missing institution data and national weighting; IPTO method page 2 explains personnel not on payroll excluded from Onderwijs in cijfers. No source establishes a complete actual upper bound on target teachers.",
+  "pupil_subset": "DUO per-site 2021 pupil file identified but neither retrieved nor admitted; teacher-side failure makes partial interval unavailable.",
+  "model_change": false,
+  "year_alignment": "2021 Eurostat and OECD general methodology are not independently proven to be a single common reference-period observation; no matched school-year inference made.",
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "teacher_cap_verified": false,
+  "matched_pupil_subset_verified": false
+}
