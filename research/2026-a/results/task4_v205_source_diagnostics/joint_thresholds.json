@@ -1,0 +1,28 @@
+[
+  {
+    "weight_reference": "fixed",
+    "target": "Oslo",
+    "status": "finite_boundary",
+    "sharp_radius": 0.15606326638370066,
+    "binding_rivals": [
+      "Zurich"
+    ],
+    "gap_at_zero": -1.1863617370461697,
+    "gap_at_one": 7.447455353768802,
+    "gap_at_tested_boundary": 0.0,
+    "rule": "Target is uniquely minimax for every point below the boundary; at a finite boundary a rival ties at the worst corner; above it that corner is a counterexample."
+  },
+  {
+    "weight_reference": "equal",
+    "target": "Zurich",
+    "status": "finite_boundary",
+    "sharp_radius": 0.006483393004901084,
+    "binding_rivals": [
+      "Oslo"
+    ],
+    "gap_at_zero": -0.04521949030134209,
+    "gap_at_one": 7.123803150168904,
+    "gap_at_tested_boundary": 0.0,
+    "rule": "Target is uniquely minimax for every point below the boundary; at a finite boundary a rival ties at the worst corner; above it that corner is a counterexample."
+  }
+]

@@ -1,47 +1,48 @@
 {
-  "extension_version": "V204",
-  "primary_evidence_version": "V204",
+  "extension_version": "V205",
+  "primary_evidence_version": "V205",
   "primary_registry": "design/task4_user_current_model.json",
-  "primary_snapshot": "design/task4_user_v204_snapshot.json",
+  "primary_snapshot": "design/task4_user_v205_snapshot.json",
   "modules": {
     "preferences": {
-      "script": "scripts/task4_v204_extensions.py",
-      "results": "results/task4_user_v204_extensions/preferences"
+      "script": "scripts/task4_v205_extensions.py",
+      "results": "results/task4_user_v205_extensions/preferences"
     },
     "future": {
-      "script": "scripts/task4_v204_extensions.py",
-      "results": "results/task4_user_v204_extensions/future"
+      "script": "scripts/task4_v205_extensions.py",
+      "results": "results/task4_user_v205_extensions/future"
     },
     "method": {
-      "script": "scripts/task4_v204_extensions.py",
-      "results": "results/task4_user_v204_extensions/method"
+      "script": "scripts/task4_v205_extensions.py",
+      "results": "results/task4_user_v205_extensions/method"
     },
     "diagnostics": {
-      "script": "scripts/task4_v204_extensions.py",
-      "results": "results/task4_user_v204_extensions/diagnostics"
+      "script": "scripts/task4_v205_extensions.py",
+      "results": "results/task4_user_v205_extensions/diagnostics"
     }
   },
   "changes_primary_model": false,
-  "independent_audit": "results/task4_v204_transition/verification.json",
-  "audit_script": "scripts/audit_task4_v204.py",
+  "independent_audit": "results/task4_v205_transition/verification.json",
+  "audit_script": "scripts/audit_task4_v205.py",
   "manuscript_entry": "../HiMCM-Overleaf/main.tex",
   "root_review_entry": "../HiMCM-Overleaf/main.tex",
   "activation_status": "active_science_and_locally_reviewed_paper",
-  "supersedes": "V203 science; paper integration pending proof",
+  "supersedes": "V204 science and paper; historical staging labels describe generation time",
   "historical_cases": "Six V137 historical country/age/fairness CSV files byte-identical; no synthetic same-country pair in the primary16; no age survey or observed future trend",
   "paper_verification": "results/current_paper_review/current_verification.json",
   "shared_main_entry": "../HiMCM-Overleaf/main.tex",
   "source_scope_addendum": {
-    "script": "scripts/task4_current_oslo_commute_scope.py",
-    "results": "results/current_oslo_commute_scope",
-    "verification": "results/current_oslo_commute_scope/verification.json",
+    "script": "scripts/task4_v205_commute_scope.py",
+    "results": "results/task4_v205_commute_scope",
+    "verification": "results/task4_v205_commute_scope/verification.json",
     "changes_primary_bounds": false,
-    "MC_replayed": false
+    "MC_replayed": false,
+    "verification_sha256": "f93f1e08d707f54472ac88697a98dfdcd7c9c57d797df969b7865a7c1688a391"
   },
   "point_uncertainty_addendum": {
-    "script": "scripts/task4_current_point_error.py",
-    "results": "results/current_point_error",
-    "verification": "results/current_point_error/verification.json",
+    "script": "scripts/task4_v205_point_error.py",
+    "results": "results/task4_v205_point_error",
+    "verification": "results/task4_v205_point_error/verification.json",
     "point_cells": 112,
     "prior_interval_cells_unchanged": 48,
     "epsilon_domain": [
@@ -60,12 +61,13 @@
     "changes_primary_bounds": false,
     "MC_replayed": false,
     "calibrated_error_rate": false,
-    "scope": "Expanded uncertainty-box minimax policy, not every realized perturbed dataset or exact unique crossing"
+    "scope": "CurrentV205 expanded point-utility boxes with padded numerical enclosures/Decimal80 checks; not directed-rounding certification,rawerrorpercentage,calibrationor everyrealizeddataset.",
+    "verification_sha256": "e06145ddd09b660524ba0c463e1be9e48f2fde60db4a768e285bd633dd2cfba0"
   },
   "point_withdrawal_addendum": {
-    "script": "scripts/task4_current_point_withdrawal.py",
-    "results": "results/current_point_withdrawal",
-    "verification": "results/current_point_withdrawal/verification.json",
+    "script": "scripts/task4_v205_operational_rebase.py",
+    "results": "results/task4_v205_operational_rebase/point_withdrawal",
+    "verification": "results/task4_v205_operational_rebase/verification.json",
     "point_cells_matching_original": 112,
     "prior_interval_cells_unchanged": 48,
     "cases": 224,
@@ -88,7 +90,8 @@
       "results/current_point_withdrawal/summary.json": "73f5192cd5806cffcb28216195ababe1a9b472b647801d21ec85bc86fece2314",
       "results/current_point_withdrawal/verification.json": "84d384979588b7452927f55cfc689dc11be3f0c88dbabab0b792b8faf7992514"
     },
-    "manuscript_scope": "Owned6.3 only; current PDF verification binds this diagnostic"
+    "manuscript_scope": "Owned6.3 only; current PDF verification binds this diagnostic",
+    "verification_sha256": "7cc0e9960a4a1ec34ce8dcbfb9d1d1692dbde380188926e2f2679063a0f7750f"
   },
   "broadband_statistic_definition_sensitivity": {
     "results": "results/current_all16_broadband_review",
@@ -539,6 +542,27 @@
     },
     "changes_primary_model": false,
     "changes_manuscript": false,
-    "next_action": "Controlledresearch/paper migration assessment fromfullyauditedstage. Do not repeatcompletedunit/GTFSqualification orsourcefetch. Preserve892publicdriver-requestcondition, 57metro fallback,source-definedunit,datedsupply/mixedyearscope. Sourceandscienceproofs frozen; navigation hashes in scienceproof describepre-registrationstate."
+    "next_action": "Controlledresearch/paper migration assessment fromfullyauditedstage. Do not repeatcompletedunit/GTFSqualification orsourcefetch. Preserve892publicdriver-requestcondition, 57metro fallback,source-definedunit,datedsupply/mixedyearscope. Sourceandscienceproofs frozen; navigation hashes in scienceproof describepre-registrationstate.",
+    "current_registry_note": "Frozen pre-activation record; current science and locally reviewed manuscript nowV205."
+  },
+  "source_diagnostics_addendum": {
+    "script": "scripts/task4_v205_source_diagnostics.py",
+    "results": "results/task4_v205_source_diagnostics",
+    "verification": "results/task4_v205_source_diagnostics/verification.json",
+    "verification_sha256": "557591eb82021449a466f86d11d61225aad29b440c14eaa0e6d5cc242e48b8e5",
+    "changes_primary_bounds": false
+  },
+  "historical_ai_paper_verification_context": "PriorV204AI-only update proof remains frozen; currentV205source/science verification is bound by current paper integration. AIselectioncutoffs unchanged and laterwork notcovered.",
+  "current_paper_integration": {
+    "verification": "results/task4_v205_paper_integration/verification.json",
+    "verification_sha256": "830cbf54e0b71ce239d4d698ac80bafb6306ff409e8377a173309e75d69771e6",
+    "peer_review": "results/task4_v205_paper_integration/independent_review.json",
+    "peer_review_sha256": "12b3c0a273961a69b4733c91c6d19b64c9b081321e8f5a240bbe7401dbdf6d7d",
+    "delivery_verification": "results/current_paper_review/delivery_verification.json",
+    "delivery_verification_sha256": "57b88b687a50e4a57883acf1c2b23f2ed329c9d90234e299e92e60dfd1d2d4c5",
+    "scope": "CurrentV205localpaper; frozenpriorV204/AIonlyproofs remainhistorical.",
+    "clean_head_reproduction": "results/task4_v205_paper_integration/reproduction/report.json",
+    "clean_head_reproduction_sha256": "160ecdd52a2d08ce7781dfd5326f377ed9f599596863b4c00763dc0613927e73",
+    "receipt_scope": "Replay protected scientific and manuscript inputs; subsequent receipt registration changes metadata only. Source/plots/PDF remain identical."
   }
 }

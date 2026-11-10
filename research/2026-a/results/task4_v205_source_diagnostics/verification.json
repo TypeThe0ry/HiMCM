@@ -1,0 +1,33 @@
+{
+  "corners": 16384,
+  "targets": [
+    {
+      "reference": "fixed",
+      "target": "Oslo",
+      "radius": 0.15606326638370066,
+      "zurich_mean_tie": 28.101693367876297
+    },
+    {
+      "reference": "equal",
+      "target": "Zurich",
+      "radius": 0.006483393004901136,
+      "zurich_mean_tie": 40.4960868435348
+    }
+  ],
+  "withdrawal_cases": 5,
+  "status": "pass",
+  "scope": "Controlled V205 staging; independent numerical audit, no source admission or MC replay.",
+  "snapshot_sha256": "20d6e76bd05d51d600c4f5acd9a5c535cf6b98440c6fa791495fdced4f660110",
+  "science_bindings_checked": 773,
+  "source_sha256": {
+    "scripts/audit_task4_v205_source_diagnostics.py": "a3508b6ff5a2e5cb96e60d2bcfe85319052a93160d45516ecd4c3f71f6e9cd95",
+    "results/task4_v205_source_diagnostics/commute_withdrawal_bounds.csv": "8d18c901dcbccda4f75e93fbb293414c0222c6cbd047fc3cfeead8227e522d0f",
+    "results/task4_v205_source_diagnostics/commute_withdrawal_ranks.csv": "bdd6d3a3588576273f6ae619bd2b80df0819acdfa0edaa449810efe820968a2f",
+    "results/task4_v205_source_diagnostics/joint_cases.csv": "ca4bd5741b60eb8dd6e8e37b94b05d67ec67dc60bb9d7fb7e30c2826facccf3f",
+    "results/task4_v205_source_diagnostics/joint_pairwise_crossings.csv": "dfa9a4b934ba6b121cdf0def586d663a5322b51b741c93639deb40d57255b33a",
+    "results/task4_v205_source_diagnostics/single_mean_probes.csv": "e773c5639ff4937cb8d38bc2a43910bb7efff42b95cc74f2feb9ec68de7e6931",
+    "results/task4_v205_source_diagnostics/joint_thresholds.json": "8ff77b48aacfb6960c93afa9dc3218db052c402b0a1054734bdeed651ecd577f",
+    "results/task4_v205_source_diagnostics/mean_thresholds.json": "dfb0c15a9a27d25be0a4a5079b1537d7218d6c5e53e81182bc3878b1c78a258b",
+    "results/task4_v205_source_diagnostics/summary.json": "8a79d379dde670039181175e6595bd92762d3ba75ecf9399094c7ef1f5dc3c49"
+  }
+}

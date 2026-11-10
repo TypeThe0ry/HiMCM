@@ -1,0 +1,47 @@
+{
+  "primary_model": "V205 staged, pending activation",
+  "point_cells": 112,
+  "existing_interval_cells_held_fixed": 48,
+  "weight_references": 2,
+  "cases": 224,
+  "rank_rows": 3584,
+  "baseline": {
+    "fixed": {
+      "choices": [
+        "Oslo"
+      ],
+      "minimax_regret": 15.751955386687115,
+      "mean_width": 15.630631901373505
+    },
+    "equal": {
+      "choices": [
+        "Zurich"
+      ],
+      "minimax_regret": 15.760638509295092,
+      "mean_width": 18.01490895812737
+    }
+  },
+  "changed_recommendation_cases": {
+    "equal": 35,
+    "fixed": 10
+  },
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "Each stress replaces exactly one retained point utility by [0,1]. Ignorance is hypothetical, not evidence of an erroneous measurement, empirical error probability or a new primary model. Cases prioritize source review; they do not authorize changing the original CSV.",
+  "source_sha256": {
+    "design/task4_user_v205_admissions.json": "ac252a4af2a11058a6d11fb0706ab295222676291b1dfc052982a63c5f607f67",
+    "results/task4_v205_transition/verification.json": "7bb155b6b5b3e9d3fa3af41ad4403d46e4f58fa30c320d14c00cfeef52fea846",
+    "scripts/task4_current_priority.py": "70849b05e12041d1b56af5e131ceb1f6d82201a831d4150c9ef4168890afee0e",
+    "scripts/task4_current_point_withdrawal.py": "61fa8f87c9a77b2f87e46f85a4c22fcfda429289be88b37d743dc545cd39e711",
+    "scripts/task4_current_point_source_ledger.py": "bb3efc663c537fdb73f28e61f494c6bdbdd36ccbf2a2e39784dbc807b7bc5bfd",
+    "results/task4_v204_operational_rebase/point_withdrawal/cases.csv": "5f0d9d62224f3869a233b32c7b805894569670ed82a3106504acec6d29b76c47",
+    "results/task4_v204_operational_rebase/point_withdrawal/ranks.csv": "fe3a625c7e0d7850baa348fb98d6d4151dd223d600f2a7c2d5b32e0607b5c474",
+    "results/current_zurich_source_followups/verification.json": "8cb45a9a957061dba96584590bc506f28d4e94125c24dc24598411f998a6090a",
+    "scripts/task4_v205_operational_rebase.py": "82ec95cae21a28f75470cebb6f09712e89831da98454dfd3bb0f0d053750f4d6"
+  },
+  "output_sha256": {
+    "cases.csv": "a0cc543bce3145f1ddc9c09a79c3f7ce7bab43fb1a0183724e853acf008fde81",
+    "ranks.csv": "6b9b53687756bd4e42124f7ca9c10039201b18b5e5469b0c5bfcb0a839c86d7f"
+  },
+  "activation_status": "staged_not_active"
+}

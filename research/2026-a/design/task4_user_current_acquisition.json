@@ -1,16 +1,16 @@
 {
-  "primary_model": "V204",
-  "role": "V204 acquisition limits and bounded source followup; prior source reviews retained at their original versions",
-  "results": "results/task4_v204_operational_rebase/acquisition",
-  "script": "scripts/task4_v204_operational_rebase.py",
-  "audit": "results/task4_v204_operational_rebase/verification.json",
-  "source_followup_verification": "results/current_oslo_commute_scope/verification.json",
+  "primary_model": "V205",
+  "role": "V205 current acquisition/point-review calculations; historical followups remain frozen at generation scopes",
+  "results": "results/task4_v205_operational_rebase/acquisition",
+  "script": "scripts/task4_v205_operational_rebase.py",
+  "audit": "results/task4_v205_operational_rebase/verification.json",
+  "source_followup_verification": "results/task4_v205_commute_scope/verification.json",
   "uncertain_cells": 48,
   "weight_cell_rows": 96,
   "primary_admissions": 1,
   "actual_score_width_reduction": {
-    "fixed": 0.045544225896684054,
-    "equal": 0.08969079029353821
+    "fixed": 0.14615082605197038,
+    "equal": 0.2872118754673494
   },
   "science_and_paper_unchanged": false,
   "source_sha256": {
@@ -20,7 +20,7 @@
     "results/current_priority/previous_V202.csv": "e7224cb1627f73a9cbc3fb736ce7a1af5ec1a5e4f6ed3f5dd8eae80a56fab884",
     "results/current_oslo_commute_scope/verification.json": "a3fcbfb9ca9ce56dbb7560b846b4c9361f340c9cbb6fc242bc186c193a46bac1"
   },
-  "active_primary_model": "V204",
+  "active_primary_model": "V205",
   "priority_rebase_required": false,
   "admitted_candidate": {
     "venue": "OCBC Aquatic Centre",
@@ -863,14 +863,14 @@
     "current_registry_note": "Frozen staging record; V204 research entry now active, paper proof pending."
   },
   "current_operational_rebase": {
-    "results": "results/task4_v204_operational_rebase",
-    "verification": "results/task4_v204_operational_rebase/verification.json",
-    "verification_sha256": "e4c036d2552f99d3fa7973e0849df0df6fb07a849eb1b9eb3e9c1b94aadc9e9b",
-    "point_withdrawal": "results/task4_v204_operational_rebase/point_withdrawal",
-    "point_source_ledger": "results/task4_v204_operational_rebase/point_source_ledger",
-    "scope": "Current V204 calculations; historical source classifications and their evidence remain unchanged. Frozen staging labels describe generation time."
+    "results": "results/task4_v205_operational_rebase",
+    "verification": "results/task4_v205_operational_rebase/verification.json",
+    "verification_sha256": "7cc0e9960a4a1ec34ce8dcbfb9d1d1692dbde380188926e2f2679063a0f7750f",
+    "point_withdrawal": "results/task4_v205_operational_rebase/point_withdrawal",
+    "point_source_ledger": "results/task4_v205_operational_rebase/point_source_ledger",
+    "scope": "CurrentV205risks/priorities; 112sourceclassifications/evidencefields fromcurrentZurichoverlay retained, including6reviewed-unresolved."
   },
-  "historical_registry_note": "Nested pre-V204 followups and source_sha256 preserve their original V203 or earlier scopes. For current acquisition and point priorities use current_operational_rebase.",
+  "historical_registry_note": "NestedpreV205followups andsource_sha256 preservegeneration scope; currentcalculations usecurrent_operational_rebase andcurrent_point_source_ledger.",
   "current_zurich_source_followups": {
     "current_zurich_he_scope_followup": {
       "verification": "results/current_zurich_he_scope_followup/verification.json",
@@ -901,11 +901,11 @@
     }
   },
   "current_point_source_ledger": {
-    "results": "results/current_zurich_source_followups",
-    "ledger": "results/current_zurich_source_followups/ledger.csv",
-    "review_priority": "results/current_zurich_source_followups/review_priority.csv",
-    "verification": "results/current_zurich_source_followups/verification.json",
-    "verification_sha256": "8cb45a9a957061dba96584590bc506f28d4e94125c24dc24598411f998a6090a",
+    "results": "results/task4_v205_operational_rebase/point_source_ledger",
+    "ledger": "results/task4_v205_operational_rebase/point_source_ledger/ledger.csv",
+    "review_priority": "results/task4_v205_operational_rebase/point_source_ledger/review_priority.csv",
+    "verification": "results/task4_v205_operational_rebase/verification.json",
+    "verification_sha256": "7cc0e9960a4a1ec34ce8dcbfb9d1d1692dbde380188926e2f2679063a0f7750f",
     "classification_counts": {
       "not_included_in_bounded_classification": 55,
       "publisher_value_match_scope_unverified": 43,
@@ -918,8 +918,8 @@
     "point_utility_cells": 112,
     "original_extraction_lineages_verified": 0,
     "fully_certified_measurements": 0,
-    "primary_model": "V204 unchanged",
-    "scope": "Current source-classification overlay; one Zurich HE record reviewed but unresolved. Original numeric values and V204 risk fields/order unchanged; earlier ledger generations remain frozen."
+    "primary_model": "V205",
+    "scope": "112currentV205riskrows with currentoverlayclassifications and allsource/evidencefieldsunchanged; scientific numerical assumptions notsourcecertification."
   },
   "zurich_transit_geography_and_identifier_followup": {
     "results": "results/current_zurich_transit_boundary_followup",
@@ -1034,6 +1034,7 @@
     },
     "changes_primary_model": false,
     "changes_manuscript": false,
-    "next_action": "Controlledresearch/paper migration assessment fromfullyauditedstage. Do not repeatcompletedunit/GTFSqualification orsourcefetch. Preserve892publicdriver-requestcondition, 57metro fallback,source-definedunit,datedsupply/mixedyearscope. Sourceandscienceproofs frozen; navigation hashes in scienceproof describepre-registrationstate."
+    "next_action": "Controlledresearch/paper migration assessment fromfullyauditedstage. Do not repeatcompletedunit/GTFSqualification orsourcefetch. Preserve892publicdriver-requestcondition, 57metro fallback,source-definedunit,datedsupply/mixedyearscope. Sourceandscienceproofs frozen; navigation hashes in scienceproof describepre-registrationstate.",
+    "current_registry_note": "Frozen pre-activation record; V205nowactive. Observedoperation/universalaccess/physicalcensus notcertified."
   }
 }

@@ -1,0 +1,112 @@
+{
+  "status": "PASS; controlled source-scope check, no source admission",
+  "raw_responses": [
+    {
+      "file": "data/current_oslo_travel2009/eurostat_NO001C_2009.json",
+      "sha256": "877d229db8492dca33b8a58c5304cc4667a85066ff0bae457a1af47e4ecf732f",
+      "recorded_http_status": 200,
+      "recorded_utc": "2026-11-10T05:55:51.204652+00:00"
+    },
+    {
+      "file": "data/current_oslo_travel2009/toi_2009_key_report.pdf",
+      "sha256": "e6b2dbd98d5bb3c70e3043f6ae785288db3246065786df27cd6cdff12fbdb960",
+      "recorded_http_status": 200,
+      "recorded_utc": "2026-11-10T05:55:19.959942+00:00"
+    },
+    {
+      "file": "data/current_oslo_travel2009/toi_2009_commute_factsheet.pdf",
+      "sha256": "9967b635cc4b58acb1c1108b933930f76e7c7603b8d7e54283c86156fbd310a6",
+      "recorded_http_status": 200,
+      "recorded_utc": "2026-11-10T05:55:22.056661+00:00"
+    },
+    {
+      "file": "data/current_zurich_fte_bound/staff.html",
+      "sha256": "da2c691b78c05834913f5573110802144581888f40719f32604f208ad994a28b",
+      "recorded_http_status": 200,
+      "recorded_utc": "2026-11-10T05:55:32.362579+00:00"
+    },
+    {
+      "file": "data/current_zurich_fte_bound/survey.html",
+      "sha256": "af997ab037715a89362e7b411d88a537ff0fd7125deed53443b7fe36d349e1f5",
+      "recorded_http_status": 200,
+      "recorded_utc": "2026-11-10T05:55:34.571828+00:00"
+    },
+    {
+      "file": "data/current_zurich_fte_bound/pupils.html",
+      "sha256": "80b00e5295375992f5dfcdf3e8e39c06d20c1b371a42ccded2619a06ff4cd593",
+      "recorded_http_status": 200,
+      "recorded_utc": "2026-11-10T05:55:36.484378+00:00"
+    },
+    {
+      "file": "data/current_zurich_fte_bound/pocket.html",
+      "sha256": "0b09ac5c1988084d4d4426167469d40cf52628466fed13bcedb509ff83921106",
+      "recorded_http_status": 200,
+      "recorded_utc": "2026-11-10T05:55:38.495193+00:00"
+    }
+  ],
+  "http_utc_caveat": "Recorded metadata checked against raw bytes, not independently replayed historical HTTP responses.",
+  "eurostat": {
+    "indicator": "TT1019V",
+    "city": "NO001C",
+    "current_label": "Oslo (greater city)",
+    "year": 2009,
+    "minutes": 31,
+    "status_field_present": false,
+    "scope": "Value/year match is a source lead; original CSV lineage and 2009 boundary remain unverified."
+  },
+  "toi_2009_minutes": {
+    "Oslo_residents": 26,
+    "surrounding_municipalities": 30,
+    "scope": "Separate work-trip group means; neither replacement nor matched duration distribution."
+  },
+  "zurich_scope": "Canton-wide school personnel data do not establish a city upper-secondary teacher FTE lower bound paired with a matched pupil upper bound; no new admission.",
+  "independent_scalar_city_weight_cases": 64,
+  "comparisons": [
+    {
+      "scenario": "retained_V205",
+      "weight_reference": "fixed",
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "retained_V205",
+      "weight_reference": "equal",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_Oslo_commute_proxy",
+      "weight_reference": "fixed",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_Oslo_commute_proxy",
+      "weight_reference": "equal",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    }
+  ],
+  "science_bindings_unchanged": 773,
+  "navigation_and_manuscript_files_unchanged": 0,
+  "original_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "source_sha256": {
+    "scripts/audit_task4_v205_commute_scope.py": "50f66353b2fc62f297cea0f2e26cc9a0940c144a876350f2cdd17f624e7fc0a2",
+    "results/task4_v205_commute_scope/summary.json": "1f1f0da19a301c93f192a49654de1a192f1e5cffd381abcf4818e591b65c5548",
+    "results/task4_v205_commute_scope/ranks.csv": "1dc9cfbcc47b8f5b8567a87684151e44758b74505c495af698c8409055f104ee",
+    "results/task4_v205_commute_scope/bounds.csv": "c677e8dd46d9c3b5a9438513434cf48146fd7335b4b229929cfb6359f9ab091f",
+    "design/task4_user_v205_snapshot.json": "20d6e76bd05d51d600c4f5acd9a5c535cf6b98440c6fa791495fdced4f660110"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "status": "pass",
+  "arithmetic": "80-digit Decimal; exact binary64 input conversion, decimal weights; numerical audit, not directed-rounding interval arithmetic",
+  "endpoint_enclosures": "Nested boxes and monotone nondecreasing individual regrets; all recorded certificate endpoint inequalities checked independently",
+  "leaf_counts": {
+    "fixed": {
+      "positive_gap_leaves": 729,
+      "unresolved_leaves": 26,
+      "total": 755
+    },
+    "equal": {
+      "positive_gap_leaves": 52,
+      "unresolved_leaves": 0,
+      "total": 52
+    }
+  },
+  "minimum_positive_padded_gap": "2.96336365438629523519091127548008873958032327741074275780113124666983E-10",
+  "ranks_checked": 256,
+  "bounds_checked": 2560,
+  "witnesses_checked": 2,
+  "point_cells": 112,
+  "unchanged_interval_cells": 48,
+  "snapshot_hashes_checked": 773,
+  "supplement_hashes_checked": 0,
+  "paper_resources_and_mirror_sha256": {},
+  "fixed_unresolved_bands": [
+    [
+      0.08135732263326648,
+      0.08135732337832453
+    ],
+    [
+      0.08135732337832453,
+      0.08135732412338259
+    ],
+    [
+      0.08135732412338259,
+      0.08135732486844065
+    ],
+    [
+      0.08135732486844065,
+      0.0813573256134987
+    ],
+    [
+      0.0813573256134987,
+      0.08135732635855678
+    ],
+    [
+      0.08135732635855678,
+      0.08135732710361483
+    ],
+    [
+      0.08135732710361483,
+      0.08135732784867289
+    ],
+    [
+      0.08135732784867289,
+      0.08135732859373096
+    ],
+    [
+      0.08135732859373096,
+      0.08135732933878902
+    ],
+    [
+      0.08135732933878902,
+      0.08135733008384707
+    ],
+    [
+      0.08135733008384707,
+      0.08135733082890513
+    ],
+    [
+      0.08135733082890513,
+      0.08135733157396319
+    ],
+    [
+      0.08135733157396319,
+      0.08135733231902124
+    ],
+    [
+      0.08135733231902124,
+      0.0813573330640793
+    ],
+    [
+      0.0813573330640793,
+      0.08135733380913736
+    ],
+    [
+      0.08135733380913736,
+      0.08135733455419542
+    ],
+    [
+      0.08135733455419542,
+      0.08135733529925349
+    ],
+    [
+      0.08135733529925349,
+      0.08135733604431154
+    ],
+    [
+      0.08135733604431154,
+      0.0813573367893696
+    ],
+    [
+      0.0813573367893696,
+      0.08135733753442767
+    ],
+    [
+      0.08135733753442767,
+      0.08135733827948573
+    ],
+    [
+      0.08135733827948573,
+      0.08135733902454378
+    ],
+    [
+      0.08135733902454378,
+      0.08135733976960184
+    ],
+    [
+      0.08135733976960184,
+      0.0813573405146599
+    ],
+    [
+      0.0813573405146599,
+      0.08135734125971796
+    ],
+    [
+      0.08135734125971796,
+      0.08135734200477601
+    ]
+  ],
+  "scope": "Hypothetical additive utility radius; unresolved band does not establish unique switch, and no physical error calibration is implied.",
+  "source_sha256": {
+    "scripts/audit_task4_v205_point_error.py": "b569e1a17fa420a28044ff2dce02529f71058b40659c82bb04d7af3398a21461",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+    "scripts/task4_v205_point_error.py": "85b65a2810d8bfc5acf2178b49f103fa5750253054ca388739844df32f8a1109",
+    "results/task4_v205_point_error/summary.json": "507e6ef826b81e6d3f3a7986f2fdba5390ed0ebc64d75bb93e66ab46012d0870",
+    "results/task4_v205_point_error/leaves.csv": "db4ed8e5ee028ccedc3b65227423c3ff9ded6aba303bd4a9969dda8ed7f59683",
+    "results/task4_v205_point_error/ranks.csv": "586cb93a2e5e549678638c5c18de3caf749f6d2501eae1127c849fdce8f65aa2",
+    "results/task4_v205_point_error/bounds.csv": "dd99d436d0347dac112a27954852b83ff30c6a57db3d03ce95ec5bbc3fbdba56",
+    "results/task4_v205_point_error/switch_witnesses.csv": "5a401c96988d3893f06afa8aff9b8007363a2cf74e488d371c9537eb9076e688"
+  }
+}

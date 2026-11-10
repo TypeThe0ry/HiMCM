@@ -217,11 +217,6 @@
         "source_sha256"
       ]
     },
-    "results/current_zurich_source_followups/verification.json": {
-      "expand_source_maps": [
-        "source_sha256"
-      ]
-    },
     "results/current_v204_source_block_stress/verification.json": {
       "expand_source_maps": [
         "source_sha256"
@@ -332,10 +327,48 @@
     "results/current_prague_service_review/peer_review.json": {
       "expand_source_maps": [],
       "scope": "Independent rawGTFS service and unit review; checked digests recorded separately, fullsource files bound in V205manifest/snapshot."
+    },
+    "results/task4_v205_commute_scope/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/task4_v205_operational_rebase/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/task4_v205_paper_integration/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/task4_v205_point_error/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/task4_v205_source_diagnostics/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/task4_v205_paper_integration/independent_review.json": {
+      "expand_source_maps": [],
+      "scope": "Independent local source/visual review with explicitly recorded reviewed digests; integration proof binds its inputs."
+    },
+    "results/current_paper_review/delivery_verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/task4_v205_paper_integration/reproduction/report.json": {
+      "expand_source_maps": [],
+      "scope": "Frozen source/scalar/clean-paper-HEAD/all-page cached-build reproduction receipt; source binding and full MC audit are independently pinned elsewhere."
     }
   },
   "live_source_sha256": {
-    "design/task4_current_source_routes.csv": "b68ad2b3f818cf0ceebecf1c584cbc8c495907171cdfba88dbdd66655584e7e8"
+    "design/task4_current_source_routes.csv": "6e2e1fed1ae9b2b8840722dcb9a8c8984c621f8c216561dce77639afefc559c7"
   },
   "historical_sources": [
     {

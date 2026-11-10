@@ -1,0 +1,180 @@
+{
+  "version": "V205",
+  "revision_diagnostics": [
+    {
+      "weight_reference": "fixed",
+      "changed_city_decision_ranks": 14,
+      "kendall_tau_b": 0.5833333333333334
+    },
+    {
+      "weight_reference": "equal",
+      "changed_city_decision_ranks": 14,
+      "kendall_tau_b": 0.75
+    }
+  ],
+  "vintage_cases": [
+    {
+      "scenario": "baseline",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 0,
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_interval_width": 15.630631901373505
+    },
+    {
+      "scenario": "pre2020_points",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 13,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "mean_interval_width": 20.766083198382475
+    },
+    {
+      "scenario": "after2025_points",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 64,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 48.087353010080626
+    },
+    {
+      "scenario": "non_ok_points",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 28,
+      "minimax_choices": [
+        "Prague"
+      ],
+      "mean_interval_width": 28.7720892938042
+    },
+    {
+      "scenario": "union_points",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 95,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "mean_interval_width": 68.31006794785912
+    },
+    {
+      "scenario": "withdraw_Zurich_homicide",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 1,
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_interval_width": 16.140887001869103
+    },
+    {
+      "scenario": "withdraw_Amsterdam_homicide",
+      "weight_reference": "fixed",
+      "withdrawn_point_cells": 1,
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_interval_width": 16.26218771956878
+    },
+    {
+      "scenario": "baseline",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 0,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 18.01490895812737
+    },
+    {
+      "scenario": "pre2020_points",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 13,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 24.021780093636444
+    },
+    {
+      "scenario": "after2025_points",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 64,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 46.96758536399014
+    },
+    {
+      "scenario": "non_ok_points",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 28,
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_interval_width": 30.902149264544526
+    },
+    {
+      "scenario": "union_points",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 95,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "mean_interval_width": 66.85265942233059
+    },
+    {
+      "scenario": "withdraw_Zurich_homicide",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 1,
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "mean_interval_width": 18.477116505782654
+    },
+    {
+      "scenario": "withdraw_Amsterdam_homicide",
+      "weight_reference": "equal",
+      "withdrawn_point_cells": 1,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_interval_width": 18.580637321150796
+    }
+  ],
+  "hypothetical_rate_thresholds": [
+    {
+      "weight_reference": "fixed",
+      "status": "no_crossing_in_interval",
+      "rate_per100000": null,
+      "search_interval": [
+        0,
+        5
+      ],
+      "endpoint_gaps": [
+        0.4464707779630146,
+        8.078661007117333
+      ]
+    },
+    {
+      "weight_reference": "equal",
+      "status": "crossing_found",
+      "rate_per100000": 0.14981465791198367,
+      "search_interval": [
+        0,
+        5
+      ],
+      "endpoint_gaps": [
+        -0.6770898633001465,
+        7.800764703715068
+      ]
+    }
+  ],
+  "minimum_strict_margin_by_weight": {
+    "fixed": 2.9414999354637246,
+    "equal": 2.2221217772888266
+  },
+  "uncertain_cells": 48,
+  "point_cells": 112,
+  "scope": "Same established point withdrawal, midpoint diagnostic, interior witnesses and hypothetical cutoffs rebased to V205; none is observation or prediction",
+  "primary": "V205 staged",
+  "activation_status": "staged_not_active"
+}

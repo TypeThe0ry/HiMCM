@@ -1,0 +1,123 @@
+{
+  "status": "pass",
+  "version": "Single current main on V205",
+  "runner_sha256": "444f6beaca1970a7edf14e843acea03e1291dc419d1c00b3a792a4d75c0d1425",
+  "registered_research_integrity": {
+    "status": "pass registered research integrity",
+    "registries_checked": [
+      "design/task4_user_current_extensions.json",
+      "design/task4_user_current_acquisition.json"
+    ],
+    "contract": "design/task4_current_research_integrity.json",
+    "registry_source_maps": 7,
+    "hash_path_pairs": 89,
+    "current_reports_checked": 73,
+    "report_direct_source_maps": 66,
+    "live_bound_files": 1534,
+    "protected_files": 1538,
+    "aliases": [
+      "design/task4_user_current_acquisition.json.zurich_source_alignment.verification_sha256 -> audit"
+    ],
+    "historical_source_versions_checked": [
+      {
+        "report": "results/current_staff_duration_review/verification.json",
+        "source_path": "design/task4_current_source_routes.csv",
+        "commit": "4baa23ec09bb15bc3eae5ef17f952ec17f6d9921",
+        "sha256": "898201eec2ba124d48f90a97a92b206b2b94f8d60e9da5f261728916be3f1107"
+      }
+    ],
+    "transitive_historical_report_graphs_expanded": false,
+    "source_semantics_revalidated": false,
+    "saved_numeric_results_recomputed": false,
+    "MC_replayed": false,
+    "scope": "Registry hashes and each explicitly classified current report direct source map; upstream report bytes pinned without interpreting their historical source graphs."
+  },
+  "primary": "V205",
+  "canonical_pdf_sha256": "042d13cca43cc53453f716f36063fc491ee5051f95520c5e419e44d7b2f661ae",
+  "paper_head": "0a7ee96f1b31d39be7e10364c9221708b9c52594",
+  "research_head": "4965db51186dc554ea5e80789e0e55ba76574208",
+  "environment": {
+    "python": "3.11.18",
+    "executable": "/data/scratch/himcm-current-check-env/bin/python",
+    "tools": {
+      "tectonic": "Tectonic 0.17.0",
+      "pdftotext": "pdftotext version 26.01.0",
+      "pdftoppm": "pdftoppm version 26.05.0"
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2"
+    },
+    "TeX": "Existing local cache only"
+  },
+  "archive": {
+    "files": 11,
+    "git_blob_algorithm": "sha1",
+    "all_paths_and_blobs_match": true
+  },
+  "science": {
+    "utility_cells": 160,
+    "scalar_city_weight_cases": 32,
+    "other159_lower_and_all_uppers_exact": true,
+    "off_restores_V204": true,
+    "request_withholding": 57,
+    "source_hashes": 29,
+    "comparisons": [
+      {
+        "reference": "fixed",
+        "recommendation": [
+          "Oslo"
+        ],
+        "possible": 16,
+        "necessary": 0
+      },
+      {
+        "reference": "equal",
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible": 16,
+        "necessary": 0
+      }
+    ],
+    "source_defined_scheduled_supply_supported": true,
+    "actual_operation_verified": false,
+    "MC_replayed": false,
+    "source_semantics_reaudited": false
+  },
+  "builds": [
+    {
+      "kind": "root",
+      "passed": true,
+      "pdf_sha256": "b6c3f7a2034beab07614969905d57c39b836596b5ed2dd6f4619005131b315f5",
+      "text_pages_equal": true,
+      "grayscale_72dpi_pages_equal": 27,
+      "underfull_paragraphs": 3,
+      "removed_snapshot_outputs": [],
+      "command": [
+        "tectonic",
+        "--only-cached",
+        "--outdir",
+        "/data/scratch/himcm-v205-current-paper-reproduce-20261111/work-jdp__xd2/root/compiled",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--makefile-rules",
+        "/data/scratch/himcm-v205-current-paper-reproduce-20261111/root/dependencies.mk",
+        "main.tex"
+      ],
+      "physical_pages": 27,
+      "native_letter_and_headers_footers_checked": true
+    }
+  ],
+  "input_protection": {
+    "science_files": 773,
+    "paper_and_navigation_files": 1632,
+    "changed": []
+  },
+  "elapsed_seconds": 7.55,
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "scope": "Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and 160 cells/32 scalar cases with V204 withdrawal control; registered research file-integrity/one-hop report bindings checked separately, including an explicit historical Git version. No fresh-machine,MC/source semantic revalidation or online compile claim."
+}

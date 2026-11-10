@@ -19,7 +19,7 @@ Before drafting or editing manuscript text, abstracts, conclusions, press releas
 
 ## Priority: Overleaf workspace
 
-Current scientific entry: **user16 V204**, with V204 controlled extensions and the current independent full review registered in `research/2026-a/design/task4_user_current_review.json`. The V136/V137 evidence and V148 review remain frozen; current extension registry is `research/2026-a/design/task4_user_current_extensions.json`. The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
+Current scientific entry: **user16 V205**, with V205 controlled extensions and the current independent full review registered in `research/2026-a/design/task4_user_current_review.json`. The V136/V137 evidence and V148 review remain frozen; current extension registry is `research/2026-a/design/task4_user_current_extensions.json`. The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
 
 The user explicitly made the Overleaf workspace the first priority on 2026-11-07.
 
@@ -31,7 +31,7 @@ The user explicitly made the Overleaf workspace the first priority on 2026-11-07
 
 ## Current delivery evidence
 
-The current delivery map is registered separately in `research/2026-a/design/task4_user_current_delivery.json`, mirrored by Overleaf `drafts/task4_current_delivery.json`. It may be newer than the unchanged review PDF. Use its bound requirements and verification instead of inferring current page locations from a frozen review checklist; passage matches do not certify source quality or final team readiness.
+The current delivery map is registered in `research/2026-a/design/task4_user_current_delivery.json` in the research repository. Overleaf retains the single `main.tex` and its six required resources; no draft delivery mirror is maintained there. It may be newer than the unchanged review PDF. Use its bound requirements and verification instead of inferring current page locations from a frozen review checklist; passage matches do not certify source quality or final team readiness.
 
 ## Git synchronization
 
@@ -86,4 +86,4 @@ Keep the local paper checkout synchronized with remote Overleaf. Overleaf retain
 
 ## Current paper figure and evidence
 
-The same current main now includes the satellite/quantitative walking-time figure. The V204 review and delivery registries bind `results/current_paper_review/`; the current local paper proof preserves 25 main/reference pages plus two provisional AI pages. Keep the four current figures and seven source dependencies synchronized. The resident-grid auxiliary figure does not change primary scores or establish student/pool access. See `docs/handoff/CURRENT_SPATIAL_UPDATE.md`.
+The same current main now includes the satellite/quantitative walking-time figure. The V205 review and delivery registries bind `results/current_paper_review/`; the current local paper proof preserves 25 main/reference pages plus two provisional AI pages. Keep the four current figures and seven source dependencies synchronized. The resident-grid auxiliary figure does not change primary scores or establish student/pool access. See `docs/handoff/CURRENT_SPATIAL_UPDATE.md`.

@@ -1,0 +1,160 @@
+{
+  "status": "pass bounded independent local review",
+  "base_commit": "48f65d6c2dcdecf3dc9b5577e3d10256f21301bd",
+  "reviewed_sha256": {
+    "/data/projects/HiMCM-Overleaf/main.tex": "05b93be3af6631e8e926555615a57013ff8dd6f6baff3f7c6ce35dc5cb946a5e",
+    "/data/scratch/himcm-v205-paper-build/main.pdf": "042d13cca43cc53453f716f36063fc491ee5051f95520c5e419e44d7b2f661ae",
+    "/data/projects/HiMCM-Overleaf/figures/identification_matrix.pdf": "5030384abb7079de2817e55b0b18eced2d30bfd621757f34ad6d5aca2cda94e9",
+    "/data/projects/HiMCM-Overleaf/figures/score_intervals.pdf": "d6915ad172d49cab2342e4b8ccdd28e4e13e55d54beb30333718c9a7591cd0ee"
+  },
+  "review_evidence_sha256": {
+    "results/task4_v205_transition/verification.json": "7bb155b6b5b3e9d3fa3af41ad4403d46e4f58fa30c320d14c00cfeef52fea846",
+    "results/task4_v205_operational_rebase/verification.json": "7cc0e9960a4a1ec34ce8dcbfb9d1d1692dbde380188926e2f2679063a0f7750f",
+    "results/task4_v205_source_diagnostics/verification.json": "557591eb82021449a466f86d11d61225aad29b440c14eaa0e6d5cc242e48b8e5",
+    "results/task4_v205_point_error/verification.json": "e06145ddd09b660524ba0c463e1be9e48f2fde60db4a768e285bd633dd2cfba0",
+    "results/task4_user_v205_extensions/diagnostics/summary.json": "34c2bbfd4d81c0ac26e2c3966d6354b850e128451e17a768c31992449e86173a",
+    "results/task4_user_v205_extensions/preferences/mc_city_summary.csv": "d10dd1f27e7c4e792dbb11f0fb3d12b5de8cd6d5e4389c7b7a2436e197bdb7e8",
+    "results/task4_user_v205_extensions/mean_rank_comparisons/summary.json": "5dfb3d7053a252632dcfd65901b0222d9e6aa243985e0fe2c939acb305d501ff",
+    "results/task4_user_v205_extensions/mc_precision/summary.json": "4b355ddc52a4e092f89c72bd0ea2a7231bc0ebc662c414bcc99b8590d9689fe8",
+    "results/current_prague_source_review/peer_review.json": "5ab82f9f5758484204e64229cc128dbfd7c58e0fd064f549850a19d3154681a3",
+    "scripts/task4_apply_v205_current_paper.py": "0b54c32ac7855dde2d31985f637c0b11428a6e29b28ccbf41395972e93890a8a"
+  },
+  "scope_guard": "--check-applied passes for final source; owned changes compared against pinned base",
+  "preservation": "template class, ref.bib, two auxiliary figures and four historical macros equal pinned base; approved best-definition preserved by guard",
+  "pdf": {
+    "pages": 27,
+    "main_and_references": 25,
+    "provisional_ai_report": 2,
+    "all_page_contact_sheet_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "changed_pages_inspected_at_larger_scale": [
+      1,
+      6,
+      9,
+      11,
+      12,
+      13,
+      15,
+      22,
+      27
+    ],
+    "final_revised_page_inspected": [
+      15
+    ],
+    "new_figures_grayscale_inspected": [
+      9,
+      11
+    ],
+    "headers_and_page_numbers_checked_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "summary_sheet_page": 1,
+    "footer": "blank",
+    "visual_findings": "No observed clipping or overlap on inspected pages. Final page 15 revised wording fits.",
+    "new_figure_minimum_inserted_font_pt": {
+      "identification_matrix": 10,
+      "score_intervals": 12.5968992248062
+    },
+    "font_basis": "10pt on 6.5in source canvas inserted at 6.5in; score figure 12.5pt on 6.45in canvas inserted at 6.5in",
+    "log": "No Overfull or undefined references observed; underfull warnings do not establish a visible defect."
+  },
+  "references": {
+    "key_count": 63,
+    "keys_and_order_same_as_base": true,
+    "aux_resolved_count": 63,
+    "PID_entry": "GTFS source and public request policy cited"
+  },
+  "scientific_checks": {
+    "source_defined_prague_nodes": 942,
+    "ordinary": 50,
+    "request_dependent": 892,
+    "metro_fallback": 57,
+    "shared_ids": 47,
+    "counts_not_added": true,
+    "actual_operation_or_physical_uniqueness_not_claimed": true,
+    "non_ok_28_fixed_equal": [
+      "Prague",
+      "Oslo"
+    ],
+    "prague_conditional_percent": [
+      0.45,
+      17.65,
+      0.09
+    ],
+    "mean_rank_comparisons": [
+      4278,
+      162,
+      4440,
+      22,
+      37
+    ],
+    "mean_radius_percent": [
+      15.6063,
+      0.6483
+    ],
+    "point_radius_wording": "Padded numerical enclosures; Oslo through 0.08135, Zurich from 0.08136 with unresolved radii between; equal-weight Zurich across tested range.",
+    "point_radius_audit_limit": "80-digit Decimal numerical audit with padded endpoint checks; not directed-rounding interval arithmetic or a formal machine-roundoff certificate.",
+    "point_withdrawal_switches": {
+      "fixed": 10,
+      "equal": 35
+    },
+    "monte_carlo": "Conditional on declared simulation law, not observed win probabilities."
+  },
+  "remaining_limitations": [
+    "Local PDF and sources only; online Overleaf main-document setting and server preview not verified.",
+    "Provisional AI report and team control number require team confirmation; no claim of submission readiness."
+  ],
+  "changes_made_to_manuscript": false
+}

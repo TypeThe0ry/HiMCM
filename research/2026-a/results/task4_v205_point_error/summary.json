@@ -1,0 +1,204 @@
+{
+  "status": "computed; independent audit recorded separately",
+  "primary_model": "controlled V205 staging",
+  "point_utility_cells_widened": 112,
+  "other_interval_cells_unchanged": 48,
+  "epsilon_domain": [
+    0,
+    0.2
+  ],
+  "weights": [
+    {
+      "weight_reference": "fixed",
+      "baseline_recommendation": "Oslo",
+      "groups": [
+        {
+          "label": "Oslo",
+          "epsilon_lower": 0.0,
+          "epsilon_upper": 0.08135732263326648,
+          "leaves": 295
+        },
+        {
+          "label": "unresolved",
+          "epsilon_lower": 0.08135732263326648,
+          "epsilon_upper": 0.08135734200477601,
+          "leaves": 26
+        },
+        {
+          "label": "Zurich",
+          "epsilon_lower": 0.08135734200477601,
+          "epsilon_upper": 0.2,
+          "leaves": 434
+        }
+      ],
+      "leaves": 755,
+      "unresolved_leaves": 26,
+      "padding": 1e-09,
+      "maximum_unresolved_leaf_width": 1e-09,
+      "cases": [
+        {
+          "epsilon": 0.0,
+          "minimax_choices": [
+            "Oslo"
+          ],
+          "minimum_regret": 15.751955386687115,
+          "mean_score_interval_width": 15.630631901373505
+        },
+        {
+          "epsilon": 0.001,
+          "minimax_choices": [
+            "Oslo"
+          ],
+          "minimum_regret": 15.88917395100922,
+          "mean_score_interval_width": 15.760882137689505
+        },
+        {
+          "epsilon": 0.005,
+          "minimax_choices": [
+            "Oslo"
+          ],
+          "minimum_regret": 16.438357810383394,
+          "mean_score_interval_width": 16.282662904161338
+        },
+        {
+          "epsilon": 0.01,
+          "minimax_choices": [
+            "Oslo"
+          ],
+          "minimum_regret": 17.125475326415376,
+          "mean_score_interval_width": 16.936604326454425
+        },
+        {
+          "epsilon": 0.025,
+          "minimax_choices": [
+            "Oslo"
+          ],
+          "minimum_regret": 19.19012204912729,
+          "mean_score_interval_width": 18.90923113399373
+        },
+        {
+          "epsilon": 0.05,
+          "minimax_choices": [
+            "Oslo"
+          ],
+          "minimum_regret": 22.635983407276782,
+          "mean_score_interval_width": 22.224289441778982
+        },
+        {
+          "epsilon": 0.1,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 29.245472451457104,
+          "mean_score_interval_width": 28.923541794361483
+        },
+        {
+          "epsilon": 0.2,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 41.78245126178406,
+          "mean_score_interval_width": 42.39716258158187
+        }
+      ]
+    },
+    {
+      "weight_reference": "equal",
+      "baseline_recommendation": "Zurich",
+      "groups": [
+        {
+          "label": "Zurich",
+          "epsilon_lower": 0.0,
+          "epsilon_upper": 0.2,
+          "leaves": 52
+        }
+      ],
+      "leaves": 52,
+      "unresolved_leaves": 0,
+      "padding": 1e-09,
+      "maximum_unresolved_leaf_width": 1e-09,
+      "cases": [
+        {
+          "epsilon": 0.0,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 15.760638509295092,
+          "mean_score_interval_width": 18.01490895812737
+        },
+        {
+          "epsilon": 0.001,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 15.873170580689802,
+          "mean_score_interval_width": 18.138028745521847
+        },
+        {
+          "epsilon": 0.005,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 16.324100878355402,
+          "mean_score_interval_width": 18.63128595599983
+        },
+        {
+          "epsilon": 0.01,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 16.88953422877168,
+          "mean_score_interval_width": 19.249571345902357
+        },
+        {
+          "epsilon": 0.025,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 18.59708083244051,
+          "mean_score_interval_width": 21.115255926176275
+        },
+        {
+          "epsilon": 0.05,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 21.476841186590676,
+          "mean_score_interval_width": 24.253405890322487
+        },
+        {
+          "epsilon": 0.1,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 27.33307979238903,
+          "mean_score_interval_width": 30.604565475248453
+        },
+        {
+          "epsilon": 0.2,
+          "minimax_choices": [
+            "Zurich"
+          ],
+          "minimum_regret": 39.40425239047059,
+          "mean_score_interval_width": 43.39638957287391
+        }
+      ]
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_active_score_width_change": 0,
+  "scope": "Hypothetical independent additive uncertainty of point utilities only; not raw-value percentage, calibrated source errors, confidence intervals, probabilities, or a new primary model. Mean-derived partial travel bounds are not widened here.",
+  "interpretation": "The winner is recomputed for each expanded uncertainty box. Stability does not certify identical recommendations for every exact perturbed point dataset inside that box.",
+  "certificate": "Each regret is nondecreasing under nested boxes; endpoint regret ranges give numerical whole-interval winner certificates with padding. Unresolved bands retained; no monotone regret-difference or exact crossing assumption.",
+  "independent_verification": "results/task4_v205_point_error/verification.json",
+  "source_sha256": {
+    "design/task4_user_v205_snapshot.json": "20d6e76bd05d51d600c4f5acd9a5c535cf6b98440c6fa791495fdced4f660110",
+    "scripts/task4_v205_point_error.py": "85b65a2810d8bfc5acf2178b49f103fa5750253054ca388739844df32f8a1109"
+  },
+  "output_sha256": {
+    "leaves.csv": "db4ed8e5ee028ccedc3b65227423c3ff9ded6aba303bd4a9969dda8ed7f59683",
+    "ranks.csv": "586cb93a2e5e549678638c5c18de3caf749f6d2501eae1127c849fdce8f65aa2",
+    "bounds.csv": "dd99d436d0347dac112a27954852b83ff30c6a57db3d03ce95ec5bbc3fbdba56",
+    "switch_witnesses.csv": "5a401c96988d3893f06afa8aff9b8007363a2cf74e488d371c9537eb9076e688"
+  }
+}

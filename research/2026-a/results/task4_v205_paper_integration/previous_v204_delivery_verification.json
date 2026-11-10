@@ -1,0 +1,92 @@
+{
+  "version": "V204 manuscript delivery",
+  "status": "pass",
+  "primary_model": "V204",
+  "review_version": "current",
+  "pdf_sha256": "705c2cad07c6f1dcecddc5a8d5e33ad9ad85b789773611450a70f21b07c065bc",
+  "total_pages": 27,
+  "main_and_references_pages": 25,
+  "main_page_margin": 0,
+  "news_pages": [
+    19,
+    19
+  ],
+  "references_pages": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "AI_pages": [
+    26,
+    27
+  ],
+  "compiled_references": 63,
+  "requirements": 48,
+  "scoped_anchor_rows": 69,
+  "all_scoped_anchors_found": true,
+  "prior_statuses_preserved_except_shared_build": true,
+  "shared_build_local_verified": true,
+  "pending_count": 12,
+  "pending_ids": [
+    "PA-ai-section",
+    "U-source-quality",
+    "CI-headers",
+    "CI-control",
+    "CI-anonymity",
+    "AI-tool-disclosure",
+    "AI-complete-record",
+    "TEAM-integration",
+    "REG-eligibility",
+    "SUB-filename",
+    "SUB-upload",
+    "SUB-confirmation"
+  ],
+  "source_sha256": {
+    "results/current_spatial_review/requirements.csv": "96e0fe7d6df6b330610e06f2abf78a69855d238e8cdba047da8d81cb73c59521",
+    "scripts/task4_v204_ai_delivery.py": "07985a1eb8334dca1faed86c7f16eb34105b4a1a40898d2c8f7a0213cde33802",
+    "design/task4_user_current_model.json": "b9e7a92272dc481e351590854179fc6617695145e20f78db8adb68327f141b12",
+    "results/task4_user_v204_revision/current_ranks.csv": "46289f5d59470b2ff1beb3ddfaa74509a59ab49237e3e65770a3ff601577ecce",
+    "results/task4_user_v204_extensions/mean_rank_comparisons/summary.json": "5c2555176eee76f8bdb330e6aa1a3d1377d3a7bf64c1f79c7ba4567d4003c703",
+    "data/current_ai_continuation2/coverage_summary.json": "90376f6f9e34fa4d6aa3deade7838bb2f02ecb8d9420efa15c129c54010fb8ba",
+    "data/current_ai_continuation2/session_manifest.json": "bc677107e3176d5d3e83ca47f53e8d03e941248bfc7be616b496d173804f32cb",
+    "results/current_ai_continuation2/verification.json": "e084575439a1469dfdef17acc9128066fd77e8bc263e43177f9951611966b6f5"
+  },
+  "output_sha256": {
+    "requirements.csv": "b04ff2a027e458f87a8e2abe3f751eb57a5d2c9a4ee527724e38b4406d704b97",
+    "anchor_hits.csv": "1b616a78264c4585184386d091d18135942ff599e8b1646f5061fa75765889e5"
+  },
+  "paper_source_sha256": {
+    "main.tex": "c1d1a9c2f570c8f716ddc0966107c146a3a3fab525a5f54d1e04588018f82dac",
+    "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
+    "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
+    "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
+    "figures/identification_matrix.pdf": "222e8088b14c8b1970bf635553340c018e5b3fec85877b371621120c931e3c80",
+    "figures/score_intervals.pdf": "af7b6b385fe8d839eb9d00c0a76c40f1d9d46faf3d7ea0a9a21d1bffcb06d53c",
+    "figures/walktime_context.pdf": "633d2e00c7dfb15a5f7088c3e39eda50e4de4a51bf31c61dc86dedda2d01beef"
+  },
+  "workspace_pdf_sha256": {
+    "paper/current/main.pdf": "705c2cad07c6f1dcecddc5a8d5e33ad9ad85b789773611450a70f21b07c065bc"
+  },
+  "compiled_pdf_path": "/data/scratch/himcm-ai-continuation2-build/main.pdf",
+  "compiled_aux_path": "/data/scratch/himcm-ai-continuation2-build/main.aux",
+  "compiled_aux_sha256": "e558131b6355e4b920740b7ccab0c8c56598c535f265ae793955e49d6408e408",
+  "derived_recommendations": {
+    "fixed": [
+      "Oslo"
+    ],
+    "equal": [
+      "Zurich"
+    ]
+  },
+  "derived_country_figure": {
+    "number": "4",
+    "page": 18,
+    "text_page": 17
+  },
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "scope": "Current single main, spatial figure passage locations and preserved status gates; not proof of complete original-source validation, full-teamAI,registrationorcontestdelivery."
+}
