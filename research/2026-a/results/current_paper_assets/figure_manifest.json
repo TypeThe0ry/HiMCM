@@ -1,0 +1,82 @@
+{
+  "iteration": "current",
+  "model": "V202 staged",
+  "shape": [
+    16,
+    10
+  ],
+  "counts": {
+    "point": 112,
+    "partial": 37,
+    "unknown": 11
+  },
+  "unknown_by_indicator": {
+    "travel": 3,
+    "upper_secondary_ptr": 8
+  },
+  "city_order": [
+    "Vienna",
+    "Zurich",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Stockholm",
+    "Paris",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Oslo",
+    "Prague",
+    "Warsaw",
+    "Singapore",
+    "Tokyo"
+  ],
+  "indicator_order": [
+    "homicide_rate",
+    "pm25",
+    "cost_living_index",
+    "price_income_ratio",
+    "upper_secondary_ptr",
+    "research_he_density",
+    "public_transport_density",
+    "travel",
+    "fixed_broadband_mbps",
+    "public_pool_density"
+  ],
+  "plot_labels": [
+    "Homicide",
+    "PM2.5",
+    "Living cost",
+    "Housing",
+    "Pupil/teacher",
+    "Research/HE",
+    "Transit",
+    "Travel burden",
+    "Broadband",
+    "Pools"
+  ],
+  "source": "V202 after_conditional; original CSV and 25 supplemented keys retained",
+  "source_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "utility_bounds_sha256": "c9d1e32b473404eb9b6ba9126cd9bf6444a02588ab8119623f4351263f2cb048",
+  "matrix_sha256": "469a51506fdc935ffc398b71b74b648d12f9c27ca51504554b8608b55b3cdaa5",
+  "renderer_sha256": "a4549aaae3ca6e3b0a5679cd2e7849baac348e2fd92d927e7fd419f73673157a",
+  "admissions_sha256": "e99423e9c4cb34f61c39caf842ef9876e44d99ef9aab8eec0b55f2c0438c1b74",
+  "figure_width_inches": 6.5,
+  "figure_height_inches": 6.2,
+  "minimum_source_font_pt": 10,
+  "intended_insertion_width_inches": 6.5,
+  "minimum_insertion_width_for9pt_inches": 5.85,
+  "png_dpi": 300,
+  "pdf_export": "Explicit vector rectangles and embedded Type3 outline fonts; RGB and grayscale review required",
+  "point_interpretation": "Retained point assumptions, not independent validation or zero measurement error",
+  "ranges_interpretation": "Identification bounds; not confidence intervals, posterior probabilities or ranking",
+  "no_new_data_admission": true,
+  "current_review": "Current single main pending integration",
+  "integrated_into_paper": false,
+  "output_sha256": {
+    "pdf": "aa469ef3cc653823f076c1dd161c6a807ac33b22806c59cebf0aee752a15f0f8",
+    "svg": "71b76f65bc17a96a2b436a70644990bf3d72ce97970f673fb4b42d46ccdf3ffa",
+    "png": "9fe80015b3676ac671bc82ff65edbaae18d3fa71435b60b319d91556098ca7b1"
+  }
+}

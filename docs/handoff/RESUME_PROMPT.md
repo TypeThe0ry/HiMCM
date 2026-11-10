@@ -1,18 +1,16 @@
-本轮新增已独审、尚未准入的OCBC实体候选，可将SG库存25→26，仍Zurich／16可能。下一轮直接按[CURRENT_DATA_UPDATE.md](CURRENT_DATA_UPDATE.md)及results/current_sportshub_candidate/migration_plan.json迁移隔离V202全部研究，再在同一Overleaf main更新一致稿；不要重复名录、优先级、候选预览或先激活模型。
+# 恢复HiMCM：V202科学／单一当前main
 
-# 恢复HiMCM：V200科学／单一当前main
+先读AGENTS.md、GUIDELINES.md和[当前模型更新](CURRENT_MODEL_UPDATE.md)。长期goal active。所有文字必用指定反防御写作技能；低级subagent Luna，高级Terra6.1。
 
-先读AGENTS.md、GUIDELINES.md和[V201研究与单稿整理](V201_RESEARCH_UPDATE.md)。长期goal active。所有文字必用指定反防御写作技能；低级subagent Luna，高级Terra6.1。
+当前16城×10：design/task4_user_current_model.json与current_extensions.json登记V202；476不可变绑定，用户CSV SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c保持。112点／37部分／11全未知，25不同补充键。Singapore具名库存25ActiveSG＋1OCBC＝26，23剔除原三处告示场馆、22剔除全部四处告示场馆敏感性；非全部开放或青少年可达，保留2024人口6036900与2026捕获年份。其他159格／全部上界／权重／区间规则保持。
 
-当前16城×10：design/task4_user_current_model.json与current_extensions.json登记V200；407不可变绑定，用户CSV SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c保持。112点／37部分／11全未知，25不同补充键。Singapore具名库存7→25，22剔除告示场馆敏感性；非全部开放或青少年可达，保留2024人口6036900与2026捕获年份。其他159格／全部上界／权重／区间规则保持。
+当前论文：Overleaf只有根main.tex及四图、原类／参考库和简短说明；GitHub paper/current/镜像七个编译依赖＋PDF。27页＝25正文参考＋2暂定AI，60引用，18213暂用。所有标题／Summary／主题在实际main。用户最新要求本地与远程同步、版本控制全在GitHub；不得恢复Overleaf多版本drafts或根入口。旧985文件已逐字节转存paper/history/overleaf_before_single_main_20261110/，队友原main哈希40a63df3cb2b0e2524fbbe4f7fd19d904851bc4e2e3b7b99d50d477a4da7f0c1保持。
 
-当前论文V201：Overleaf只有根main.tex及四图、原类／参考库和简短说明；GitHub paper/current/镜像七个编译依赖＋PDF。27页＝25正文参考＋2暂定AI，59引用，18213暂用。所有标题／Summary／主题在实际main。用户最新要求本地与远程同步、版本控制全在GitHub；不得恢复Overleaf多版本drafts或根入口。旧985文件已逐字节转存paper/history/overleaf_before_single_main_20261110/，队友原main哈希40a63df3cb2b0e2524fbbe4f7fd19d904851bc4e2e3b7b99d50d477a4da7f0c1保持。
+固定均宽15.9558204759、等权18.6558156974；Zurich保守、16可能／0必要。教育优先、固定资源扩展和生活压力情景Singapore，平衡改善Zurich；κ100 ZH/Oslo/SG条件频率43.18/18.01/38.41%。单Zurich均值40.06840分钟、联合箱0.42205%／63.44548%，绑定SG／Oslo。基准期望均秩排序未由通用界区分，4260明确／180未区分、18唯一最小组。AHP非学生调查、未来非拟合趋势。
 
-固定均宽15.9581344706、等权18.6603896972；Zurich保守、16可能／0必要。教育优先和固定资源扩展Singapore；κ100 ZH/Oslo/SG条件频率43.62/18.18/37.80%。单Zurich均值40.52675分钟、联合箱1.57080%／63.44548%，绑定SG／Oslo。基准期望均秩排序未由通用界区分，4259明确／181未区分、17唯一最小组。AHP非学生调查、未来非拟合趋势。
+当前地图来源见[CURRENT_SPATIAL_UPDATE.md](CURRENT_SPATIAL_UPDATE.md)；当前审计results/current_paper_review/current_verification.json与verification.json；当前交付同目录delivery_verification.json：48项／61锚点／12实质待办。单main本地27页全部文字及灰度像素与独审稿一致，985归档、当前镜像、原生页眉空页脚通过。服务器预览未核；真实注册、全队AI与最终比赛提交保持待验证。冻结版本审计指向归档旧路径，不按旧P目录直接重跑。
 
-当前地图与版面更新见[CURRENT_SPATIAL_UPDATE.md](CURRENT_SPATIAL_UPDATE.md)；审计results/current_spatial_review/current_verification.json与verification.json；当前交付同目录delivery_verification.json：48项／61锚点／12实质待办。单main本地27页全部文字及灰度像素与独审稿一致，985归档、当前镜像、原生页眉空页脚通过。服务器预览未核；真实注册、全队AI与最终比赛提交保持待验证。冻结版本审计指向归档旧路径，不按旧P目录直接重跑。
-
-居民网格卫星／定量3D图已入第16页，新闻已压成第19页一页；原数值与关键条件保留。V200的48不确定格采集价值已重基并独审，入口design/task4_user_current_acquisition.json及[CURRENT_DATA_UPDATE.md](CURRENT_DATA_UPDATE.md)；两条Zurich新官方路线0准入。下一轮核查尚未失败的匹配公开来源，不重复此轮重基或新取得的2012元数据／通勤人数页，失败路线跳过。不要重复V199采集、V200全研究或V201迁移。分别fetch、审diff、commit/push并核远端HEAD。
+居民网格卫星／定量3D图仍在第16页，新闻第19页一页。当前476科学绑定、独立核查与交付记录见results/current_paper_review/；早期V202科学审查的staged标记保留创建时点，当前注册表决定启用状态。下一轮将旧V200的48不确定格采集价值重基至V202；OCBC已准入，不重复迁移。失败来源跳过，不发送外部联系请求。分别fetch、审diff、commit/push并核远端HEAD；在线编译预览未核。
 
 ## 冻结恢复档案（以下为历史，不作为当前入口）
 

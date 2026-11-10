@@ -1,0 +1,155 @@
+{
+  "status": "pass",
+  "version": "Single current main on V202",
+  "runner_sha256": "6a2a21a5fcbc3ac947a82ea7df24a9ad4f7ab6ecebf83af3a99f4c851f419279",
+  "primary": "V202",
+  "canonical_pdf_sha256": "722b31d658320ccdbda5c9aa617c5d0cc59fb68b443129089ba34fdd8a7aea35",
+  "paper_head": "12e1cd21f03633301156ca131299a14549d69ad2",
+  "research_head": "17aacd3c96e5e5200e4275a3eaa5ffaf035b558b",
+  "environment": {
+    "python": "3.11.18",
+    "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
+    "tools": {
+      "tectonic": "Tectonic 0.17.0",
+      "pdftotext": "pdftotext version 26.01.0",
+      "pdftoppm": "pdftoppm version 26.05.0"
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2"
+    },
+    "TeX": "Existing local cache only"
+  },
+  "archive": {
+    "files": 11,
+    "git_blob_algorithm": "sha1",
+    "all_paths_and_blobs_match": true
+  },
+  "science": {
+    "inherited_V200_checks": {
+      "inherited_V197_checks": {
+        "utility_cells": 160,
+        "deterministic_city_weight_cases": 32,
+        "changed_pool_lower_cells": 1,
+        "other159cells_and_all_uppers_exact": true,
+        "source_population_and_count_formulas_checked": true,
+        "zurich_withdrawal_restores_V192": true,
+        "V192_two_transport_changes_and_withdrawals_checked": true,
+        "independent_score_reduction": "Scalar math.fsum squared distances with weights once",
+        "comparisons": [
+          {
+            "weight_reference": "fixed",
+            "city_cases": 16,
+            "conservative_recommendation": [
+              "Zurich"
+            ],
+            "possible_champions": 16,
+            "necessary_champions": 0,
+            "mean_score_interval_width": 16.01221199746499
+          },
+          {
+            "weight_reference": "equal",
+            "city_cases": 16,
+            "conservative_recommendation": [
+              "Zurich"
+            ],
+            "possible_champions": 16,
+            "necessary_champions": 0,
+            "mean_score_interval_width": 18.76442966782986
+          }
+        ],
+        "MC_rerun": false,
+        "raw_source_semantics_reaudited": false
+      },
+      "utility_cells": 160,
+      "scalar_city_weight_cases": 32,
+      "other159_lower_and_all_uppers_exact": true,
+      "inventory_formula_and_22_sensitivity_checked": true,
+      "withdrawal_restores_V197": true,
+      "comparisons": [
+        {
+          "reference": "fixed",
+          "recommendation": [
+            "Zurich"
+          ],
+          "possible": 16,
+          "necessary": 0,
+          "mean_width": 15.958134470578873
+        },
+        {
+          "reference": "equal",
+          "recommendation": [
+            "Zurich"
+          ],
+          "possible": 16,
+          "necessary": 0,
+          "mean_width": 18.66038969723218
+        }
+      ],
+      "MC_replayed": false,
+      "source_semantics_reaudited": false
+    },
+    "utility_cells": 160,
+    "scalar_city_weight_cases": 32,
+    "other159_lower_and_all_uppers_exact": true,
+    "inventory_formula_and_23_22_sensitivities_checked": true,
+    "withdrawal_restores_V200": true,
+    "comparisons": [
+      {
+        "reference": "fixed",
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible": 16,
+        "necessary": 0,
+        "mean_width": 15.955820475866993
+      },
+      {
+        "reference": "equal",
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible": 16,
+        "necessary": 0,
+        "mean_width": 18.655815697356704
+      }
+    ],
+    "MC_replayed": false,
+    "source_semantics_reaudited": false
+  },
+  "builds": [
+    {
+      "kind": "root",
+      "passed": true,
+      "pdf_sha256": "664d4a8e8a661678bc4235c75b921e6fb20040310bcf15a21803f19826e8aac7",
+      "text_pages_equal": true,
+      "grayscale_72dpi_pages_equal": 27,
+      "underfull_paragraphs": 1,
+      "removed_snapshot_outputs": [],
+      "command": [
+        "tectonic",
+        "--only-cached",
+        "--outdir",
+        "/data/scratch/himcm-v202-current-reproduction/work-funcgp6r/root/compiled",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--makefile-rules",
+        "/data/scratch/himcm-v202-current-reproduction/root/dependencies.mk",
+        "main.tex"
+      ],
+      "physical_pages": 27,
+      "native_letter_and_headers_footers_checked": true
+    }
+  ],
+  "input_protection": {
+    "science_files": 476,
+    "paper_and_navigation_files": 25,
+    "changed": []
+  },
+  "elapsed_seconds": 8.003,
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "scope": "Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; no fresh-machine,MC/source revalidation or online compile claim."
+}

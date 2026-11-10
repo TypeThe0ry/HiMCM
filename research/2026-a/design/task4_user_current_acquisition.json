@@ -1,6 +1,6 @@
 {
   "primary_model": "V200",
-  "role": "Current acquisition priorities; not new observations or active model changes",
+  "role": "Priority diagnostic computed under preceding V200; rebase before using for next acquisition",
   "results": "results/current_priority",
   "script": "scripts/task4_current_priority.py",
   "audit": "results/current_priority/verification.json",
@@ -16,13 +16,16 @@
     "results/current_priority/source_verification.json": "319e553dd5f1b7e801be7cc55f8e73c75a73dd1e6e63561dc26417f177465de8",
     "results/current_priority/all_uncertain_priority.csv": "88220592dbea591a8f59143ba3049ebaccf7273c541e56b68310b3360f22a669"
   },
-  "unadmitted_candidate": {
+  "active_primary_model": "V202",
+  "priority_rebase_required": true,
+  "admitted_candidate": {
     "venue": "OCBC Aquatic Centre",
     "combined_inventory_count": 26,
     "preview": "results/current_sportshub_candidate/preview.json",
     "independent_verification": "results/current_sportshub_candidate/verification.json",
     "migration_plan": "results/current_sportshub_candidate/migration_plan.json",
     "candidate_count": 1,
-    "active_model_admissions": 0
+    "active_model_admissions": 1,
+    "admitted_model": "V202"
   }
 }

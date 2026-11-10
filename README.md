@@ -1,6 +1,6 @@
 # HiMCM城市评价研究与论文材料
 
-当前主分析：**16城×10指标，V200科学与受控扩展；当前自有论文V201**。Zurich是保守推荐，可能冠军仍为16城，没有确定冠军。112点／37部分／11全未知，25个不同补充键。见[当前恢复入口](docs/handoff/RESUME_PROMPT.md)和[本轮研究、单稿整理及验证](docs/handoff/V201_RESEARCH_UPDATE.md)。
+当前主分析：**16城×10指标，V202科学与受控扩展；当前自有论文current**。Zurich是保守推荐，可能冠军仍为16城，没有确定冠军。112点／37部分／11全未知，26个条件场馆键。见[当前恢复入口](docs/handoff/RESUME_PROMPT.md)和[本轮研究、单稿整理及验证](docs/handoff/V201_RESEARCH_UPDATE.md)。
 
 ## 当前论文
 
@@ -16,10 +16,10 @@
 
 [主模型注册](research/2026-a/design/task4_user_current_model.json)、[扩展注册](research/2026-a/design/task4_user_current_extensions.json)、[论文注册](research/2026-a/design/task4_user_current_review.json)、[交付注册](research/2026-a/design/task4_user_current_delivery.json)指向当前证据。完整代码、原件、计算结果和历史参考保存在 `research/2026-a/` 与 `library/`；旧25城仅为冻结辅助案例。
 
-Singapore官方25处具名泳池库存细化了已有部分格。固定权重平均评分区间由16.01221收窄到15.95813；教育优先与资源扩展情景改选Singapore，固定权重联合旅时均值稳健半径降至1.57080%。数据口径、反例和条件均已进入论文；库存不代表全部开放或青少年实际可达。
+Singapore库存纳入25处具名泳池及1处OCBC候选，共26处条件场馆；旧3处告示场馆剔除后23处，另有22处按全部4类告示剔除。评分区间宽度由15.9581344706降至15.9558204759，收窄0.002314分，累计收窄15.18%。112点／37部分／11未知不变。
 
-开始写作或制图前，阅读[AGENTS.md](AGENTS.md)、[GUIDELINES.md](GUIDELINES.md)并使用规定的反防御性写作技能。保留用户原值、权重、区间和队友内容。真实卫星及定量3D图已接入第16页，见[当前地图及验收](docs/handoff/CURRENT_SPATIAL_UPDATE.md)；下一轮重基V200数据采集价值，持续目标见[长期计划](docs/handoff/LONGTERM_GOAL.md)。
+开始写作或制图前，阅读[AGENTS.md](AGENTS.md)、[GUIDELINES.md](GUIDELINES.md)并使用规定的反防御性写作技能。保留用户原值、权重、区间和队友内容。真实卫星及定量3D图已接入第16页，见[当前地图及验收](docs/handoff/CURRENT_SPATIAL_UPDATE.md)；下一轮重基V202数据采集价值，持续目标见[长期计划](docs/handoff/LONGTERM_GOAL.md)。
 
-当前补数优先级已按V200重基，Zurich师资／旅时的完整识别保证各1.229485分；两条新Zurich官方路线尚无匹配观测，0准入。见[采集核查](docs/handoff/CURRENT_DATA_UPDATE.md)和[当前采集注册](research/2026-a/design/task4_user_current_acquisition.json)。本轮论文保持，无需新建Overleaf材料。
+当前补数优先级已按V202重基，Zurich师资／旅时完整识别保证各1.229485分；两条新Zurich官方路线尚无匹配观测，0准入。见[采集核查](docs/handoff/CURRENT_DATA_UPDATE.md)和[当前采集注册](research/2026-a/design/task4_user_current_acquisition.json)。本轮论文保持，无需新建Overleaf材料。
 
-另有已独审的OCBC Aquatic Centre额外实体候选，可形成26处SG库存，尚未启用；详见[候选与迁移计划](research/2026-a/results/current_sportshub_candidate/README.md)。当前模型和论文仍保持V200及现有唯一main。
+另有已独审的OCBC Aquatic Centre额外实体候选，可形成26处SG库存，尚未启用；详见[候选与迁移计划](research/2026-a/results/current_sportshub_candidate/README.md)。V202已条件启用；当前论文仍为唯一main，版本标记为current。固定生活成本压力情景现为Singapore，资源情景仍Zurich；sharp12平均半径0.42205%，Zurich通勤平局40.0684分钟。当前PDF为27页（25+2）、60条引用，独审见research/2026-a/results/current_paper_review。在线编译未核。

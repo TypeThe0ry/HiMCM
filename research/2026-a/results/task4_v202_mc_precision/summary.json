@@ -1,0 +1,59 @@
+{
+  "version": "V202",
+  "primary_science": "V202",
+  "current_paper": "unchanged; V202 science staged, not activated",
+  "familywise_alpha": 0.05,
+  "draws_per_setting": 10000,
+  "settings": 37,
+  "base_means": 2064,
+  "frequency_means": 1472,
+  "mean_rank_means": 592,
+  "normalized_half_width": 0.023792100139243058,
+  "frequency_half_width_percentage_points": 2.3792100139243058,
+  "mean_rank_half_width": 0.3568815020886459,
+  "tables": [
+    {
+      "family": "preferences",
+      "rows": 144,
+      "settings": 9,
+      "means": 720
+    },
+    {
+      "family": "future_shocks",
+      "rows": 192,
+      "settings": 12,
+      "means": 576
+    },
+    {
+      "family": "weights_only",
+      "rows": 256,
+      "settings": 16,
+      "means": 768
+    }
+  ],
+  "input_sha256": {
+    "results/task4_v202_preferences/mc_city_summary.csv": "9e4ca012159e9c00edb623891e406635ece1a04d83f568bc9b7eb9282d26f28e",
+    "results/task4_v202_future/future_mc_city_summary.csv": "407aa00a18c25ae1aa0ef251aee194d375c417e3bc8e17e4fbe86ee379a25244",
+    "results/task4_v202_future/weight_mc_city_summary.csv": "fbd618ddef2c416d8deab63be7f2a500d3ecb73ce292bea06f0016d95c0f7da8",
+    "scripts/task4_v202_extensions.py": "56e1d80ed3812751a07dd924d8d52c6aece8f7b69b3f16c2e086c0b28dfebe4c",
+    "scripts/task4_v125_preferences.py": "c969390518ddbd51ed319264669e7b84fe04dac8dabe5db43b8436859adae94b",
+    "scripts/task4_v122_preferences.py": "a7faf3e07dcad153fac8004d4e52cb77767201150765d5c51e16f89477950ed3",
+    "scripts/task4_v125_future.py": "c82550da7eb621d29b0357f8ad2ef93251aadee24e3a08c83658f5a5d0f31c84",
+    "scripts/task4_v122_future.py": "c1bff0e19d6828e6689961c3c201799275cf31de4c215259e43fdb0c7e2c967c",
+    "scripts/task4_ahp_mc_baseline.py": "7b51be6f7ca47e2ea6c77fcdbb227a7611d8804eaf17d9040776edb94398f99a",
+    "scripts/task4_user_v202_revision.py": "0881aa4265f752b0523365e142f3c133eedb31e90ff0aac37973e23683eb029e",
+    "design/task4_user_v202_admissions.json": "e99423e9c4cb34f61c39caf842ef9876e44d99ef9aab8eec0b55f2c0438c1b74"
+  },
+  "assumption": "Independent identically distributed replications within each declared simulation setting; intended RNG design, not an empirical independence certificate for a fixed PRNG sequence.",
+  "dependence": "Shared draws across cities and settings are permitted. The union bound does not require independence across estimated means.",
+  "scope": "Finite-sample MC integration error around expectations under the declared simulation laws and retained evidence/model; no real-world city win probabilities, forecast calibration, source error or interval coverage.",
+  "excluded": [
+    "change_vs_baseline columns (derived, not counted as base means)",
+    "score-change quantiles (not sample means)",
+    "primary V202 13 cases and 78 MC settings (separate family)"
+  ],
+  "reran_monte_carlo": false,
+  "changed_scientific_inputs": false,
+  "changed_manuscript": false,
+  "submission_ready": false
+}

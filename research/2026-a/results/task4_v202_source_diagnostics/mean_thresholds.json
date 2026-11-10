@@ -1,0 +1,38 @@
+[
+  {
+    "weight_reference": "fixed",
+    "retained_mean_minutes": 39.9,
+    "gap_at_lower_utility0": 2.358585914956727,
+    "gap_at_lower_utility1": -5.975847081242321,
+    "target_lower_score": 53.95146118988021,
+    "quadratic_coefficients": [
+      -0.04192842327828982,
+      0.30885684655657963,
+      -0.07832829954662818
+    ],
+    "status": "one_finite_mean_tie",
+    "tie_lower_utility": 0.26299684804835255,
+    "tie_mean_minutes": 40.06839694449639,
+    "tie_cities": [
+      "Zurich",
+      "Singapore"
+    ],
+    "strict_rule": "With all other entries fixed, Zurich uniquely minimizes regret below the mean cutoff; a tie occurs at it; above it Zurich is excluded."
+  },
+  {
+    "weight_reference": "equal",
+    "retained_mean_minutes": 39.9,
+    "gap_at_lower_utility0": -1.5133757707730737,
+    "gap_at_lower_utility1": -9.191920180235684,
+    "target_lower_score": 51.54638312862491,
+    "quadratic_coefficients": [
+      -0.01317330346576402,
+      0.22634660693152805,
+      0.044411119480561256
+    ],
+    "status": "Zurich_unique_for_all_nonnegative_means",
+    "tie_lower_utility": null,
+    "tie_mean_minutes": null,
+    "strict_rule": "For this one-mean experiment the largest gap is its negative utility0 limit, so every finite nonnegative mean retains unique Zurich."
+  }
+]
