@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "arithmetic": "80-digit Decimal; exact binary64 input conversion, decimal weights; numerical audit, not directed-rounding interval arithmetic",
+  "endpoint_enclosures": "Nested boxes and monotone nondecreasing individual regrets; all recorded certificate endpoint inequalities checked independently",
+  "leaf_counts": {
+    "fixed": {
+      "positive_gap_leaves": 729,
+      "unresolved_leaves": 26,
+      "total": 755
+    },
+    "equal": {
+      "positive_gap_leaves": 52,
+      "unresolved_leaves": 0,
+      "total": 52
+    }
+  },
+  "minimum_positive_padded_gap": "2.96336365438629523519091127548008873958032327741074275780113124666983E-10",
+  "ranks_checked": 256,
+  "bounds_checked": 2560,
+  "witnesses_checked": 2,
+  "point_cells": 112,
+  "unchanged_interval_cells": 48,
+  "snapshot_hashes_checked": 548,
+  "supplement_hashes_checked": 67,
+  "paper_resources_and_mirror_sha256": {
+    "main.tex": "fb9b47a81f6c6236bf277ecc420598ee5e63f317130c276eb6b5ab856de8ec22",
+    "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
+    "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
+    "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
+    "figures/identification_matrix.pdf": "dfee08dabba094a88a427e4172ee4dbebed93684e9120ab312900df8aa5c56e4",
+    "figures/score_intervals.pdf": "f16bdb7d67121bc041df888593e785173bc784b4ee2f84c9d98f76d93d84240d",
+    "figures/walktime_context.pdf": "633d2e00c7dfb15a5f7088c3e39eda50e4de4a51bf31c61dc86dedda2d01beef"
+  },
+  "fixed_unresolved_band": [
+    0.08135732263326648,
+    0.08135734200477601
+  ],
+  "scope": "Hypothetical additive utility radius; unresolved band does not establish unique switch, and no physical error calibration is implied.",
+  "source_sha256": {
+    "scripts/audit_current_point_error.py": "201955184aface0fff6c6301997d0ebce690644e99134b1f1c6fc8cad52e0686",
+    "scripts/task4_current_point_error.py": "805e9b49ff0126ee2d47c5142c6db61893bdef74d6ab53072f00812cc2b00769",
+    "results/current_point_error/summary.json": "22d0d11159018f9385b7402bbfa384c7248235695f5a5493978f76b5fdef6392",
+    "results/current_point_error/leaves.csv": "db4ed8e5ee028ccedc3b65227423c3ff9ded6aba303bd4a9969dda8ed7f59683",
+    "results/current_point_error/ranks.csv": "51d424366714d70adb53e9f010312624a3ad25f8a16c6b1d0ca534ed0ad63f0e",
+    "results/current_point_error/bounds.csv": "e2125cb6dcf7527b10ec18746f218bde280552b8cb3674ef526d7a82e15ca0fd",
+    "results/current_point_error/switch_witnesses.csv": "5a401c96988d3893f06afa8aff9b8007363a2cf74e488d371c9537eb9076e688"
+  }
+}

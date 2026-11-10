@@ -37,5 +37,29 @@
     "verification": "results/current_oslo_commute_scope/verification.json",
     "changes_primary_bounds": false,
     "MC_replayed": false
+  },
+  "point_uncertainty_addendum": {
+    "script": "scripts/task4_current_point_error.py",
+    "results": "results/current_point_error",
+    "verification": "results/current_point_error/verification.json",
+    "point_cells": 112,
+    "prior_interval_cells_unchanged": 48,
+    "epsilon_domain": [
+      0,
+      0.2
+    ],
+    "at_epsilon_0_05": {
+      "fixed": "Oslo",
+      "equal": "Zurich"
+    },
+    "fixed_unresolved_band": [
+      0.08135732263326648,
+      0.08135734200477601
+    ],
+    "equal_recommendation_on_full_domain": "Zurich",
+    "changes_primary_bounds": false,
+    "MC_replayed": false,
+    "calibrated_error_rate": false,
+    "scope": "Expanded uncertainty-box minimax policy, not every realized perturbed dataset or exact unique crossing"
   }
 }

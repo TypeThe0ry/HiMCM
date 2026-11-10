@@ -623,13 +623,8 @@ The resulting differences show how the definition of a desirable city affects
 the decision. They do not establish measured differences between fourteen- and
 eighteen-year-old students.
 
-\subsection{Perturbing weights}
-For each preference centre $w'$, we draw
-$w^{(b)}\sim\operatorname{Dirichlet}(\kappa w')$, with
-$\kappa\in\{20,100,500\}$ and 10,000 draws per setting. Every draw recomputes
-interval TOPSIS and maximum regret without filling missing values. We report
-mean decision rank, fractional first-place recommendation frequency and
-fractional top-three decision membership; ties share membership.
+\subsection{Perturbing weights and point assumptions}
+For each preference centre $w'$, 10,000 draws per setting follow $w^{(b)}\sim\operatorname{Dirichlet}(\kappa w')$, $\kappa\in\{20,100,500\}$. Each recomputes interval TOPSIS and maximum regret without filling missing values. Ties share first- and top-three membership; we report mean ranks.
 
 \begin{table}[!ht]\centering
 \caption{Conditional recommendation frequencies (\%) for selected cities at concentration 100.}
@@ -644,24 +639,19 @@ Independent living & 23.23 & 70.28 & 6.46 \\
 
 
 
-\MonteCarloInterpretation{} Oslo has the highest sample recommendation frequency.
-
-We retain minimum maximum regret as the predeclared decision rule; these
-conditional summaries describe its weight sensitivity. A low AHP consistency
-ratio checks calculation properties, not representative student opinion.
+At concentration 100, Singapore, Zurich and Oslo have mean decision ranks 2.4630, 2.5125 and 1.5680; Oslo has the highest recommendation frequency. Pairwise bounds check expected orderings. These summaries test the predeclared minimax rule; AHP consistency checks calculation, not representative student opinion.
 
 Numerical precision can be quantified separately from evidence uncertainty.
 For $n=10{,}000$ independent, identically distributed draws within each setting,
-Hoeffding's inequality and a union bound over the $m=2064$ exported means across
-37 settings give a common event of probability at least $0.95$ with error
-at most $R\sqrt{\log(2m/0.05)/(2n)}$, where the response range $R$ is 1 for
-frequencies and 15 for ranks \cite{hoeffding}.
-The resulting half-widths are 2.38 percentage points and 0.357 ranks;
-shared draws across outputs are allowed. On this event, subtracting two mean
-intervals bounds their difference. The simultaneous certificate resolves 4,271 of 4,440 pairwise mean-rank
-comparisons, leaves 169 unresolved, and certifies a unique smallest expected
-rank in 23 of 37 settings. These bounds concern integration under the declared
-simulation laws.
+Hoeffding's inequality and a union bound over $m=2064$ exported means in
+37 settings give 95\% family-wise coverage with error at most
+$R\sqrt{\log(2m/0.05)/(2n)}$, where $R=1$ for frequencies and $R=15$ for
+ranks \cite{hoeffding}. The half-widths are 2.38 percentage points and 0.357 ranks; shared draws across outputs are allowed. Subtracting intervals bounds mean differences: 4,271 of 4,440 pairwise mean-rank comparisons resolve, 169 remain unresolved, and 23 of 37 settings certify a unique smallest expected rank under the declared simulation laws.
+
+As a separate stress, widen each of the 112 point utilities $x$ to
+$[\max(0,x-\epsilon),\min(1,x+\epsilon)]$, retaining the other 48 intervals.
+At $\epsilon=0.05$, minimax selects Oslo with fixed weights and Zurich with
+equal weights. For $\epsilon\in[0,0.2]$, fixed weights certify Oslo through 0.08135 and Zurich from 0.08136; the intervening region contains unresolved radii. Equal weights select Zurich throughout. This additive utility radius is not a raw-value percentage, calibrated error or confidence interval. Each choice applies to an expanded uncertainty box, not every exact dataset inside it; primary scores are unchanged.
 
 \subsection{Within-city fairness and growth stages}
 Citywide facilities per resident measure supply. Student access additionally

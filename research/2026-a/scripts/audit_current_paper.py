@@ -5,7 +5,7 @@ import numpy as np,pandas as pd
 from task4_user_v203_revision import revised_bounds
 from task4_v5_model import NAMES,weights
 from audit_task4_v193 import values,norm
-R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-ai-build'); O=R/'results/current_paper_review'
+R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-point-error-build'); O=R/'results/current_paper_review'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def read(p):return json.loads(p.read_text())
 def frame(p):return pd.read_csv(p,float_precision='round_trip')
@@ -30,8 +30,14 @@ def main():
  prior_refs=set(re.findall(r'\\bibitem\{([^}]+)\}',prior_tex)); assert len(prior_refs)==61 and prior_refs<=current
  assert re.search(r'tcn\s*=\s*18213',tex)
  ai='\\section*{Report on Use of AI Tools}'
- pre_ai_baseline=subprocess.check_output(['git','-C',str(P),'show','d1a3996:main.tex'],text=True)
- assert tex[:tex.index(ai)]==pre_ai_baseline[:pre_ai_baseline.index(ai)]
+ owned_baseline=subprocess.check_output(['git','-C',str(P),'show','b83aeab:main.tex'],text=True)
+ start='\\subsection{Perturbing weights';end_marker='\\subsection{Within-city fairness and growth stages}'
+ assert tex[:tex.index(start)]==owned_baseline[:owned_baseline.index(start)]
+ assert tex[tex.index(end_marker):]==owned_baseline[owned_baseline.index(end_marker):]
+ point_proof=read(R/'results/current_point_error/verification.json');assert point_proof['status']=='pass' and point_proof['point_cells']==112 and point_proof['unchanged_interval_cells']==48
+ point_paths=dict(point_proof['source_sha256'])
+ for name,digest in point_paths.items():assert sha(R/name)==digest,name
+ for name in ['results/current_point_error/verification.json','results/current_point_error/README.md']:point_paths[name]=sha(R/name)
  ai_proof=read(R/'results/current_ai_review/verification.json');assert ai_proof['status']=='PASS' and ai_proof['core_science_bindings_checked']==548 and ai_proof['supplemental_bindings_checked']==61
  ai_paths={'data/current_ai_provenance/session_manifest.json':ai_proof['manifest_sha256'],'data/current_ai_provenance/README.md':ai_proof['readme_sha256'],'scripts/task4_current_ai_provenance.py':ai_proof['capture_script_sha256'],'data/task4_v178_ai_provenance/session_manifest.json':ai_proof['predecessor_manifest_sha256']}
  for name,digest in ai_paths.items():assert sha(R/name)==digest,name
@@ -185,6 +191,9 @@ def main():
   assert phrase in full,phrase
  assert 'osloyouth2023' in tex
  # Figure labels and source limitations must survive actual typesetting.
+ for phrase in ['112 point utilities','other 48 intervals','0.08135','0.08136','not every exact dataset']:
+  assert phrase in full,phrase
+ assert point_proof['fixed_unresolved_band'][0]>.08135 and point_proof['fixed_unresolved_band'][1]<.08136
  for phrase in ['99.18','99.97']:
   assert phrase in full,phrase
  figure_source=(R/'visuals/current_spatial/README.md').read_text().lower()
@@ -199,6 +208,6 @@ def main():
    top=[w for w in words if float(w.get('yMin'))<65];assert any(w.text=='Team' and 70<float(w.get('xMin'))<74 for w in top) and any(w.text=='Page' and float(w.get('xMin'))>450 for w in top) and any(w.text=='18213' for w in top);assert f'Page {i+1} of {len(pages)}' in norm(pages[i])
   else:assert '18213' in pages[0]
  assert not any(x in log for x in ['Overfull','undefined','LaTeX Warning'])
- result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),ai_source_sha256=ai_paths,student_source_audit_sha256=sha(R/'results/current_oslo_student_review/verification.json'),student_source_sha256=student['source_sha256'],figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
+ result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),point_error_source_sha256=point_paths,owned_edit_scope='Only6.3changedrelativeb83aeab; other source including AI appendix unchanged',ai_source_sha256=ai_paths,student_source_audit_sha256=sha(R/'results/current_oslo_student_review/verification.json'),student_source_sha256=student['source_sha256'],figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
  O.mkdir(exist_ok=True);(O/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

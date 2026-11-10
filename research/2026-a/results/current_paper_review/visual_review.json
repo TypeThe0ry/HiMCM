@@ -1,23 +1,24 @@
 {
   "status": "pass",
-  "pdf_sha256": "56ba7bbcf7a6ce5f466c7df6a73da13e0aa782be53d1726d065acb11845878cc",
-  "render": "/data/scratch/himcm-current-ai-render",
+  "pdf_sha256": "e241931295852da7ff3b8ecf79835a5e0598694d76f2822c0f8c377b2a83ac19",
+  "render": "/data/scratch/himcm-current-point-error-render",
   "reviewed": [
-    "All27page raster comparison with previous published PDF",
-    "Actual appendix pages26and27"
+    "all27pages raster compared to previous published PDF",
+    "Actual contents page2 and model-stress page15"
   ],
   "changed_96dpi_pages": [
-    26,
-    27
+    2,
+    15
   ],
-  "first25pages_exact_96dpi_equal": true,
+  "other25pages_exact_96dpi_equal": true,
+  "AI_appendix_unchanged": true,
   "all_four_figures_unchanged": true,
   "color_vision_simulation_performed": false,
   "checks": [
-    "Pre-AI manuscript source byte-identical to d1a3996",
-    "Native Team/Page heads and blank footers preserved",
-    "No private text export published; appendix accurately limits log windows and model labels",
-    "27pages25plus2 and62references"
+    "Only6.3 source differs from b83aeab",
+    "Independent final text audit preserves all MC conditions and numbers",
+    "Point stress is expanded-box policy, not realized-dataset or calibrated-error guarantee",
+    "27pages25plus2 and62references; native heads/emptyfooters"
   ],
-  "scope": "Local rendered review; source tool-input strings stay private, onlinecompile andfinalteamacceptance unverified"
+  "scope": "Local rendered review; onlinecompile and finalteamacceptance excluded"
 }

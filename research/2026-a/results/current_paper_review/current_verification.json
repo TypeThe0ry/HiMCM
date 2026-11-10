@@ -2,9 +2,9 @@
   "status": "pass",
   "version": "current",
   "primary_model": "V203",
-  "pdf_sha256": "56ba7bbcf7a6ce5f466c7df6a73da13e0aa782be53d1726d065acb11845878cc",
+  "pdf_sha256": "e241931295852da7ff3b8ecf79835a5e0598694d76f2822c0f8c377b2a83ac19",
   "main_entry": "main.tex",
-  "main_source_sha256": "fb9b47a81f6c6236bf277ecc420598ee5e63f317130c276eb6b5ab856de8ec22",
+  "main_source_sha256": "077e9132dccb5fbe68245b0ec7d95f877df0aa173425f2c17de00955ec95ea36",
   "total_pages": 27,
   "main_and_references_pages": 25,
   "underfull_counts": [
@@ -13,7 +13,7 @@
   ],
   "reference_keys": 62,
   "current_files_sha256": {
-    "main.tex": "fb9b47a81f6c6236bf277ecc420598ee5e63f317130c276eb6b5ab856de8ec22",
+    "main.tex": "077e9132dccb5fbe68245b0ec7d95f877df0aa173425f2c17de00955ec95ea36",
     "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
     "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
     "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
@@ -23,14 +23,14 @@
   },
   "source_mirror_files": 7,
   "single_current_tex_entry": true,
-  "independent_audit_sha256": "c0973595cfc5c47f3f55f20a290208bd10dc8a416f1e7aa5d5906b15c88077cb",
-  "delivery_audit_sha256": "c378bb34d7bac98807b203e6fb9271d01b93af7c2b5bc812c8bedd6038da754c",
-  "visual_review_sha256": "47d94f2614839b3f838e8bedd2793e86b65709f5812da94b04c2bf1c2386101a",
+  "independent_audit_sha256": "096e930e1fd0774e69c8aad8dc7fb36a3422e45ee6955af2fd8cc2ef43a04ec5",
+  "delivery_audit_sha256": "69c7e101bda8b90ad2de00d85192f5336488ebef8f0a1f989468d8174d2bc69f",
+  "visual_review_sha256": "0ac9f69c82ff9bf94b09fc30c26ca5dd8d3fe00ba4070b16454cbdb715981e02",
   "native_letter_headers_empty_footers_checked": true,
   "science_bindings_verified": 548,
   "server_compile_verified": false,
   "submission_ready": false,
-  "scope": "PrimaryV203andfirst25pages unchanged; AIappendix adds bounded197message/1372input continuation; private exports outsideGit; whole-team disclosure incomplete",
+  "scope": "V203 primary unchanged; only6.3 adds point-utility uncertainty stress; AI appendix/fourfigures unchanged; current scoped source/delivery/numeric checks separate from historical stage-protection snapshots",
   "transport_definition_alternative_disclosed": true,
   "oslo_626_source_defined_bus_lower_admitted": true,
   "default_recommendations": {
@@ -115,5 +115,16 @@
     "data/task4_v178_ai_provenance/session_manifest.json": "b74af51144b3c3e1a870a4b0743995fa100a94c1ed7b26289dc65b60fbcf8146",
     "scripts/audit_current_ai_provenance.py": "2e942ccac921c997cfcb7678d1f723968463c52ddfad28babd67692e6c353c4e",
     "results/current_ai_review/verification.json": "4c66fec6045c87d9bd7422fcd81209fc37810c4a9d6fb305187800ef0206909d"
+  },
+  "additional_point_error_inputs_sha256": {
+    "scripts/audit_current_point_error.py": "201955184aface0fff6c6301997d0ebce690644e99134b1f1c6fc8cad52e0686",
+    "scripts/task4_current_point_error.py": "805e9b49ff0126ee2d47c5142c6db61893bdef74d6ab53072f00812cc2b00769",
+    "results/current_point_error/summary.json": "22d0d11159018f9385b7402bbfa384c7248235695f5a5493978f76b5fdef6392",
+    "results/current_point_error/leaves.csv": "db4ed8e5ee028ccedc3b65227423c3ff9ded6aba303bd4a9969dda8ed7f59683",
+    "results/current_point_error/ranks.csv": "51d424366714d70adb53e9f010312624a3ad25f8a16c6b1d0ca534ed0ad63f0e",
+    "results/current_point_error/bounds.csv": "e2125cb6dcf7527b10ec18746f218bde280552b8cb3674ef526d7a82e15ca0fd",
+    "results/current_point_error/switch_witnesses.csv": "5a401c96988d3893f06afa8aff9b8007363a2cf74e488d371c9537eb9076e688",
+    "results/current_point_error/verification.json": "acdd61a9b817cc41a3092d3e1eff6c0defc3c546537f81f8bfdc5742bbeac3a9",
+    "results/current_point_error/README.md": "81dd377a57fa539fc696e883dedb0c0508a14f50f8feaf54dbc01364fafb9a13"
   }
 }
