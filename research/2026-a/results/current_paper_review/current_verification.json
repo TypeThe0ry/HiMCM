@@ -2,9 +2,9 @@
   "status": "pass",
   "version": "current",
   "primary_model": "V203",
-  "pdf_sha256": "b928b3f5d060ab43f8dcfcfd81f18c6bb8d608e6b41ace6083a8f583376dac37",
+  "pdf_sha256": "56ba7bbcf7a6ce5f466c7df6a73da13e0aa782be53d1726d065acb11845878cc",
   "main_entry": "main.tex",
-  "main_source_sha256": "96412655009925db61040dcafa494e477ddc6db1b255bf43900cdbe9a3611732",
+  "main_source_sha256": "fb9b47a81f6c6236bf277ecc420598ee5e63f317130c276eb6b5ab856de8ec22",
   "total_pages": 27,
   "main_and_references_pages": 25,
   "underfull_counts": [
@@ -13,7 +13,7 @@
   ],
   "reference_keys": 62,
   "current_files_sha256": {
-    "main.tex": "96412655009925db61040dcafa494e477ddc6db1b255bf43900cdbe9a3611732",
+    "main.tex": "fb9b47a81f6c6236bf277ecc420598ee5e63f317130c276eb6b5ab856de8ec22",
     "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
     "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
     "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
@@ -23,14 +23,14 @@
   },
   "source_mirror_files": 7,
   "single_current_tex_entry": true,
-  "independent_audit_sha256": "d58db9893e9084cd3c581a6b5eb7eae5e952dabe4eee7c3d755cfc00f9577138",
-  "delivery_audit_sha256": "397053f40e100d0d3ff68e59016635d278ad7a61fb5f9d544e3245610c0d0dce",
-  "visual_review_sha256": "cc6717abc4f93be10ee1edbf003b81684cd1588b73ad30b201310f12bd0f59b9",
+  "independent_audit_sha256": "c0973595cfc5c47f3f55f20a290208bd10dc8a416f1e7aa5d5906b15c88077cb",
+  "delivery_audit_sha256": "c378bb34d7bac98807b203e6fb9271d01b93af7c2b5bc812c8bedd6038da754c",
+  "visual_review_sha256": "47d94f2614839b3f838e8bedd2793e86b65709f5812da94b04c2bf1c2386101a",
   "native_letter_headers_empty_footers_checked": true,
   "science_bindings_verified": 548,
   "server_compile_verified": false,
   "submission_ready": false,
-  "scope": "V203core548+commute22+spatial27 unchanged; Oslo2023school-grade contextual survey evidence added;27pages62references; onlinepreview unverified",
+  "scope": "PrimaryV203andfirst25pages unchanged; AIappendix adds bounded197message/1372input continuation; private exports outsideGit; whole-team disclosure incomplete",
   "transport_definition_alternative_disclosed": true,
   "oslo_626_source_defined_bus_lower_admitted": true,
   "default_recommendations": {
@@ -107,5 +107,13 @@
     "data/current_oslo_student_stage/oda_result.txt": "4811570cc069cb0143dd83a8156caf887424ebcda2ffdd08cf54f97a72c10852",
     "data/current_oslo_student_stage/sport_participation_page33.png": "5cd124011f9e8737b77443918e4ba4dba0c29a53101a69b961aff5769419a4d0",
     "results/current_oslo_student_review/verification.json": "d6b0b21c515c1aecd28564998405be3bc2da21a5b5025d2afab016e6d7192a27"
+  },
+  "additional_ai_inputs_sha256": {
+    "data/current_ai_provenance/session_manifest.json": "52116f0444cbe24d246e7d61b79b70c3481a3c44352816535651c1b6832f9f42",
+    "data/current_ai_provenance/README.md": "cc0910e6f7f7298e900b6763780fda511a23eac4d7acb4e12e5ef9082c59b0ae",
+    "scripts/task4_current_ai_provenance.py": "d930ef9da37d1dc60671759cbbaa7a68894d35334dcfabdb434f1a055daf6b77",
+    "data/task4_v178_ai_provenance/session_manifest.json": "b74af51144b3c3e1a870a4b0743995fa100a94c1ed7b26289dc65b60fbcf8146",
+    "scripts/audit_current_ai_provenance.py": "2e942ccac921c997cfcb7678d1f723968463c52ddfad28babd67692e6c353c4e",
+    "results/current_ai_review/verification.json": "4c66fec6045c87d9bd7422fcd81209fc37810c4a9d6fb305187800ef0206909d"
   }
 }

@@ -1,0 +1,11 @@
+# Current bounded AI-use evidence
+
+The continuation inventory extends the preserved V178 root-log prefix with an authenticated window ending **10 November2026,07:26:15.500UTC**. It records42 further root turn contexts labelled `gpt-6.1-sol`,197 selected visible messages (5 genuine requests,157 commentary messages and35 final messages), and1,372 plaintext top-level assistant tool inputs. The original74-context/326-message/1,865-input V178 inventory and its private exports remain separate and unchanged. These selections are not a complete team transcript.
+
+Of78 recorded agent-spawn requests,28 specify `gpt-6.1-terra`,7 specify `gpt-6-luna`, and43 omit a model label. These are request labels, not attested serving builds or evidence of every concurrent assistant's runtime model. Top-level tool-input counts do not count nested tools inside `exec`, prove successful execution, or include subagent conversations.
+
+`session_manifest.json` publishes only metadata, inventories and hashes. The two exact selected-text exports remain outside both repositories in a mode0700 directory, with mode0600 files. Excluded source record types include reasoning, system/developer messages, tool results and injected continuations. Selected tool-input strings are unredacted and may themselves contain copied text: record-type exclusion is not a content-redaction guarantee. Private exports are not submitted or published transcripts.
+
+The source prefix is fixed by byte count, complete-line count and SHA-256. Subsequent work lies outside its cutoff. Earlier chats, attachments, subagent response sessions and teammates' records remain unaccounted for. The manifest therefore keeps `complete_team_ai_history=false` and `submission_ready=false`.
+
+Reproduce this fixed capture with `scripts/task4_current_ai_provenance.py --session /absolute/path/to/root-log.jsonl --private-output /absolute/private/directory`. The default replays the registered cutoff; `--refresh` deliberately advances it after verifying that prior private exports remain exact prefixes. Originals and all earlier scientific evidence remain unchanged. Source/header model identifiers do not certify immutable serving versions. Independent verification is recorded in `results/current_ai_review/verification.json`.

@@ -1,25 +1,23 @@
 {
   "status": "pass",
-  "pdf_sha256": "b928b3f5d060ab43f8dcfcfd81f18c6bb8d608e6b41ace6083a8f583376dac37",
-  "render": "/data/scratch/himcm-current-oslo-student-render",
+  "pdf_sha256": "56ba7bbcf7a6ce5f466c7df6a73da13e0aa782be53d1726d065acb11845878cc",
+  "render": "/data/scratch/himcm-current-ai-render",
   "reviewed": [
-    "all27pages raster compared to previous published PDF",
-    "changed page17 survey and preserved maths",
-    "changed page25 reference62"
+    "All27page raster comparison with previous published PDF",
+    "Actual appendix pages26and27"
   ],
   "changed_96dpi_pages": [
-    17,
-    25
+    26,
+    27
   ],
-  "other25pages_exact_96dpi_equal": true,
+  "first25pages_exact_96dpi_equal": true,
   "all_four_figures_unchanged": true,
-  "grayscale_checked": "Previously checked unchanged spatial figure; no new figure this iteration",
   "color_vision_simulation_performed": false,
   "checks": [
-    "Source chart percentages and questions independently reviewed",
-    "Native Letter headers and empty footers preserved",
-    "Current27pages25plus2 and62references",
-    "Existing61references retain numbers; class and external bibliography unchanged"
+    "Pre-AI manuscript source byte-identical to d1a3996",
+    "Native Team/Page heads and blank footers preserved",
+    "No private text export published; appendix accurately limits log windows and model labels",
+    "27pages25plus2 and62references"
   ],
-  "scope": "Local actual-size page review; online compilation and final team acceptance unverified"
+  "scope": "Local rendered review; source tool-input strings stay private, onlinecompile andfinalteamacceptance unverified"
 }

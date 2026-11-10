@@ -1027,8 +1027,10 @@ saved conversations and other tool records before submission.
 \textbf{OpenAI Codex}, used 8--10 November 2026. The task log records Codex
 Desktop client version \texttt{0.166.0-alpha.5.1} and model identifier
 \texttt{gpt-6.1-sol} in all 74 saved root turn contexts within the inspected prefix.
-The identifier does not expose an immutable serving build or establish the
-model used by every concurrent assistant. The assistant supported official-source
+The continuation records the same identifier in 42 further root contexts. Of 78
+subagent spawn requests, 28 specify \texttt{gpt-6.1-terra}, seven specify
+\texttt{gpt-6-luna}, and 43 omit a model or use null. These requested labels
+do not attest serving versions or establish the model of every assistant. The assistant supported official-source
 search and extraction, data-scope checks, Python calculations and audits,
 LaTeX drafting, and wording revisions. Concurrent assistant tasks prepared
 bounded evidence checks, a controlled model diagnostic and the news-article
@@ -1049,7 +1051,7 @@ uses separately downloaded Nerima municipal HTML.
 \subsection*{Recovered records and coverage}
 The supporting inventory authenticates a complete-line prefix of this root
 task log by byte count and SHA-256. It ends at 14:31:18.850 UTC on
-9 November 2026 (22:31 in Singapore); subsequent work is outside the window.
+9 November 2026 (22:31 in Singapore).
 A private export retains 326 selected visible text records: six selected
 genuine requests, 259 progress messages and 61 complete final responses.
 The original 125-record selection and its private byte prefix are preserved.
@@ -1060,13 +1062,18 @@ These preserve generated code and LaTeX where present in the calls, extending
 the evidence beyond visible messages. Recorded inputs do not establish that
 each invocation succeeded or that every nested tool ran.
 
-This capture covers one root session. It excludes tool results, attachment
-contents, subagent response sessions, other chats and other team members.
-Reasoning, system and developer messages, encrypted fields, internal metadata
-and injected continuations are excluded. Public inventories contain metadata
-and record hashes; the original log and exported text remain private and are
-not included as submission transcripts. No missing prompt or output has been
-reconstructed and labelled as an exact historical quotation.
+A continuation of the same root log ends at 07:26:15.500 UTC on 10 November
+2026. It contains 197 selected visible records: five genuine user requests,
+157 progress messages and 35 final responses; 1,372 top-level plaintext
+assistant tool-call inputs are also retained. This count excludes nested
+executions and subagent sessions; later work is outside the cutoff.
+
+Both windows exclude source-record types for reasoning, system and developer
+messages and tool results, as well as attachments, subagent sessions, other
+chats and team members. Selected tool inputs are unredacted and may contain
+copied content; excluding record types is not content redaction. The original log remains outside Git. Selected exports use directory mode 700
+and file mode 600 and are not submission transcripts. Public inventories contain metadata
+and hashes, not reconstructed quotations.
 
 \subsection*{Verification associated with this draft}
 The research calculations preserve the original city CSV and the V203 primary

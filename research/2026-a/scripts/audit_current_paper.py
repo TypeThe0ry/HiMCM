@@ -5,7 +5,7 @@ import numpy as np,pandas as pd
 from task4_user_v203_revision import revised_bounds
 from task4_v5_model import NAMES,weights
 from audit_task4_v193 import values,norm
-R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-oslo-student-build'); O=R/'results/current_paper_review'
+R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-ai-build'); O=R/'results/current_paper_review'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def read(p):return json.loads(p.read_text())
 def frame(p):return pd.read_csv(p,float_precision='round_trip')
@@ -30,7 +30,17 @@ def main():
  prior_refs=set(re.findall(r'\\bibitem\{([^}]+)\}',prior_tex)); assert len(prior_refs)==61 and prior_refs<=current
  assert re.search(r'tcn\s*=\s*18213',tex)
  ai='\\section*{Report on Use of AI Tools}'
- assert tex[tex.index(ai):]==prior_tex[prior_tex.index(ai):].replace('V202 primary','V203 primary').replace('V202 validation','V203 validation')
+ pre_ai_baseline=subprocess.check_output(['git','-C',str(P),'show','d1a3996:main.tex'],text=True)
+ assert tex[:tex.index(ai)]==pre_ai_baseline[:pre_ai_baseline.index(ai)]
+ ai_proof=read(R/'results/current_ai_review/verification.json');assert ai_proof['status']=='PASS' and ai_proof['core_science_bindings_checked']==548 and ai_proof['supplemental_bindings_checked']==61
+ ai_paths={'data/current_ai_provenance/session_manifest.json':ai_proof['manifest_sha256'],'data/current_ai_provenance/README.md':ai_proof['readme_sha256'],'scripts/task4_current_ai_provenance.py':ai_proof['capture_script_sha256'],'data/task4_v178_ai_provenance/session_manifest.json':ai_proof['predecessor_manifest_sha256']}
+ for name,digest in ai_paths.items():assert sha(R/name)==digest,name
+ for name in ['scripts/audit_current_ai_provenance.py','results/current_ai_review/verification.json']:ai_paths[name]=sha(R/name)
+ ai_manifest=read(R/'data/current_ai_provenance/session_manifest.json');assert ai_manifest['complete_team_ai_history'] is False and ai_manifest['record_exclusion_not_content_redaction'] is True
+ assert sum(ai_manifest['selected_visible_counts'].values())==ai_proof['selected_messages']==197
+ assert sum(ai_manifest['top_level_call_counts'].values())==ai_proof['assistant_calls']==1372
+ assert ai_manifest['recorded_root_model_counts']=={'gpt-6.1-sol':42}
+ assert ai_manifest['requested_spawn_model_labels']=={'(omitted/null)':43,'gpt-6.1-terra':28,'gpt-6-luna':7}
  from task4_v137_method_country import CASE_FILES
  for name in CASE_FILES:assert sha(R/'results/task4_v203_method'/name)==sha(R/'results/task4_v200_method'/name),name
  manifest=read(A/'manifest.json')
@@ -116,6 +126,10 @@ def main():
  for phrase in ['626 on-street bus stop groups','replaces the earlier subset of 89 metro stations', 'rather than being added to it','supplied 2025 population', 'restoring the earlier subset selects zurich under both baseline and equal weights', 'largest possible shortfall', 'smallest such shortfall', 'not forecasts']:
   assert phrase in news,phrase
  assert 380 <= len(re.findall(r"[a-z]+(?:['’-][a-z]+)?|\d+", news)) <= 450
+ ai_text=rendered(' '.join(pages[end:]));
+ for phrase in ['42 further root contexts','197 selected visible records','1,372 top-level','07:26:15.500 utc','excluding record types is not content redaction','original log remains outside git']:
+  assert phrase in ai_text,phrase
+ for label in ['gpt-6.1-terra','gpt-6-luna']:assert label in ai_text,label
 
  for city in ['Zurich','Oslo','Singapore']:
   row=k[k.profile.eq('baseline')&k.city.eq(city)].iloc[0];assert f'{100*row.minimax_recommendation_frequency:.2f}%' in summary
@@ -185,6 +199,6 @@ def main():
    top=[w for w in words if float(w.get('yMin'))<65];assert any(w.text=='Team' and 70<float(w.get('xMin'))<74 for w in top) and any(w.text=='Page' and float(w.get('xMin'))>450 for w in top) and any(w.text=='18213' for w in top);assert f'Page {i+1} of {len(pages)}' in norm(pages[i])
   else:assert '18213' in pages[0]
  assert not any(x in log for x in ['Overfull','undefined','LaTeX Warning'])
- result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),student_source_audit_sha256=sha(R/'results/current_oslo_student_review/verification.json'),student_source_sha256=student['source_sha256'],figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
+ result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),ai_source_sha256=ai_paths,student_source_audit_sha256=sha(R/'results/current_oslo_student_review/verification.json'),student_source_sha256=student['source_sha256'],figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
  O.mkdir(exist_ok=True);(O/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':main()
