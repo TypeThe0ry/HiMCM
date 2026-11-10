@@ -1,0 +1,52 @@
+{
+  "status": "pass scoped source review",
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 77,
+  "withdrawal_evidence_entries_checked": 10,
+  "paper_dependencies_each_copy": 7,
+  "current_PDF_unchanged": true,
+  "edition_entries_checked": 24,
+  "Vienna_original9_4_verified": false,
+  "Berlin_original12_5_verified": false,
+  "Austria_national2023_FTE_ratios": {
+    "ED3": 9.8,
+    "ED1-3": 10.3
+  },
+  "successful_response_bodies": 6,
+  "HTTP403_bodies": 1,
+  "HTTP429_bodies": 1,
+  "interrupted_download_without_body": 1,
+  "HTTP200_HTML_not_PDF": 1,
+  "Berlin_workbook_metadata_cells_checked": [
+    "A5",
+    "A11",
+    "A12",
+    "A111",
+    "A151"
+  ],
+  "unverified_index_lead_admitted": false,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "source_sha256": {
+    "data/current_vienna_ptr_point/README.md": "14e55628b6b952427fa7109e85b1350b730a36f68317b580df32b0e01045f9b9",
+    "data/current_vienna_ptr_point/austria_uoe_metadata.html": "681ecbd488ee8007cdf7f4b35abe75df346a018d2ef4e9034526c18febca062b",
+    "data/current_vienna_ptr_point/eurostat_2023.json": "7d99b1f3831229a94c0ef2fba1a4252dd1a9e2403add5d93ff570b2f29ec0650",
+    "data/current_vienna_ptr_point/eurostat_method.html": "84c4aea6fae498160a39337970a80e7145b1ed3be3520ac21a283cca005a0e5b",
+    "data/current_vienna_ptr_point/receipts.json": "2ca3c411c0df734b7e6c09e72917d2e76de4347b9d3c084482dc8be4734ab2f4",
+    "data/current_vienna_ptr_point/scope.json": "890a702247de20428c6e652d1cede652b68714ff80ecace292e6c75775759d95",
+    "data/current_vienna_ptr_point/vienna_schools.html": "023b4f5edd05719c98d67c6e0445af9102a979c7b1b83e3e0e6853abbaee1c54",
+    "data/current_berlin_ptr_point/README.md": "37c7c0a3e1320609a5876fdbd9e24e5364ed2ef1b766ff9f00c8e86cfb928cf7",
+    "data/current_berlin_ptr_point/berlin_report_http429.html": "29c64fd499ec61e71c4794ba924ad875e25f779fbbb1345fc3a9607848337b98",
+    "data/current_berlin_ptr_point/berlin_report_http429.html.receipt.json": "6267a2105fc9781016c00f6dd41e94f4ab337a7ec9dd6599b5ea698ddde6ea6c",
+    "data/current_berlin_ptr_point/bmbf_table_html_response.html": "200ae0ea6d0f2b7bd6032c8c76a5446400ef67651b4638ffa013b3e466544e54",
+    "data/current_berlin_ptr_point/bmbf_table_html_response.html.receipt.json": "34119343df991f9fd97855eaa356c70f06c3c0719e50f72b610681e60a0ba463",
+    "data/current_berlin_ptr_point/destatis_2024_25.xlsx": "41d5e061d2276177cce8a5306d15551f780a0740cca926aa2b2e4aa2b66d9aef",
+    "data/current_berlin_ptr_point/destatis_2024_25.xlsx.receipt.json": "b68d23b8cf36977de5b2297ade11b4536c0710f6fbadbc0429119248c75bb37f",
+    "data/current_berlin_ptr_point/destatis_page.html": "ebf967bbd58529e58cdc289eea74550553e298066542392d52500bbc08e5d1f9",
+    "data/current_berlin_ptr_point/destatis_page.html.receipt.json": "d0cac22054498d8cf5a16a80e865b0d48c4aedd53f466908cff243c79f57d8e2",
+    "data/current_berlin_ptr_point/scope.json": "e1f484c49c6687e72a01c2dd7f036212cf4f620b294b37966c2aec2a0ed4034a",
+    "scripts/audit_current_vienna_berlin_ptr_sources.py": "87ffc83f21fa92f1a77c30bc90e4d476f2ed9fdb159b4989e25d45dabbd57063",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3"
+  },
+  "scope": "National Austria values are not Vienna validation. Berlin person-count metadata is not a city upper-secondary FTE ratio; indexed12.5lead remains unverified. Original points unchanged; no derived ratio, missing-data admission, classroom-contact-hour requirement or paper change."
+}

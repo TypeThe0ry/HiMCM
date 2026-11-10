@@ -35,6 +35,10 @@ def main():
         elif field in ('cli','pir'):state='publisher_value_match_scope_unverified' if costs[city,field]['exact_matches'] else 'no_match_checked_cost_editions'
         elif indicator=='upper_secondary_ptr' and city in ('Tokyo','Singapore'):state='documented_value_match_different_stage'
         elif indicator=='upper_secondary_ptr' and city=='Oslo':state='no_match_examined_PTR_series'
+        elif indicator=='upper_secondary_ptr' and city in ('Vienna','Berlin'):
+            state='reviewed_lineage_unresolved';folder='current_vienna_ptr_point' if city=='Vienna' else 'current_berlin_ptr_point';followup=read(R/'data'/folder/'scope.json')
+            assert followup['original_value']==float(r[field]) and followup['original_year']==int(r[field+'_year'])
+            assert not followup['exact_value_match'] and not followup['original_lineage_verified'] and not followup['target_scope_verified']
         elif (city,indicator) in [('Oslo','pm25'),('Oslo','research_he_density'),('Zurich','homicide_rate')]:state='reviewed_lineage_unresolved'
         assert x['classification']==state;counts[state]+=1
         assert x['measurement_fully_certified']==x['original_extraction_lineage_verified']=='False'

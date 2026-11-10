@@ -1,0 +1,33 @@
+{
+  "original_value": 9.4,
+  "original_year": 2023,
+  "original_flag": "ok",
+  "original_geography": "Vienna",
+  "original_source_url": null,
+  "exact_value_match": false,
+  "original_lineage_verified": false,
+  "target_scope_verified": false,
+  "observed_records": [
+    {
+      "value": 9.8,
+      "year": 2023,
+      "geography": "Austria, national",
+      "stage": "upper secondary, ISCED 2011 ED3",
+      "teacher_unit": "full-time equivalent",
+      "provider_scope": "Eurostat UOE; year label 2023; specific school-year mapping not established by this check",
+      "source_file": "eurostat_2023.json",
+      "locator": "educ_uoe_perp04; freq=A, unit=RT, isced11=ED3, geo=AT, time=2023; value index 7"
+    },
+    {
+      "value": 10.3,
+      "year": 2023,
+      "geography": "Austria, national",
+      "stage": "primary and secondary, ISCED 2011 ED1-3",
+      "teacher_unit": "full-time equivalent",
+      "provider_scope": "Eurostat UOE; year label 2023; specific school-year mapping not established by this check",
+      "source_file": "eurostat_2023.json",
+      "locator": "educ_uoe_perp04; freq=A, unit=RT, isced11=ED1-3, geo=AT, time=2023; value index 3"
+    }
+  ],
+  "interpretation": "No 9.4 appears in the returned 2023 Austria national values across reported education categories. This neither validates nor disproves the original Vienna value or its provenance. The Vienna city route returned HTTP 403; the Austrian publication download did not complete."
+}

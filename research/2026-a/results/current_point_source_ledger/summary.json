@@ -2,9 +2,9 @@
   "primary_model": "V203 unchanged",
   "ledger_rows": 112,
   "classification_counts": {
-    "not_included_in_bounded_classification": 58,
+    "not_included_in_bounded_classification": 56,
     "publisher_value_match_scope_unverified": 43,
-    "reviewed_lineage_unresolved": 3,
+    "reviewed_lineage_unresolved": 5,
     "no_match_checked_cost_editions": 4,
     "no_match_examined_PTR_series": 1,
     "documented_value_match_different_stage": 2,
@@ -28,11 +28,14 @@
     "results/current_oslo_pm_source_review/verification.json": "08c019d418eeca42e399e10a5f459352e426a75e5c7aa97fe35b902f194d1a05",
     "data/current_oslo_he_scope/README.md": "cb6ddd3fde1d30fd4ef6ffa2c49727cfff75febb0729a942336547cbe0d3960b",
     "data/current_zurich_homicide_scope/README.md": "42e3e93ecc62a2ca3c1eecbbeeb8b22ca4ec41746a43ad7003a1c411a5f1c71b",
-    "scripts/task4_current_point_source_ledger.py": "7e1c92cde5cc5096650dba5a8a986840fd6337d21acac4ae7466748a006f7ec8"
+    "scripts/task4_current_point_source_ledger.py": "e12a17e50bbfbc31cbf218f64e3a93e7acd1f2672320094db4693ee19731d15f",
+    "data/current_vienna_ptr_point/scope.json": "890a702247de20428c6e652d1cede652b68714ff80ecace292e6c75775759d95",
+    "data/current_berlin_ptr_point/scope.json": "e1f484c49c6687e72a01c2dd7f036212cf4f620b294b37966c2aec2a0ed4034a",
+    "results/current_vienna_berlin_ptr_review/verification.json": "9fee07b5e9f3c19cc4a12e6c6816fd32ef1f8caf12f7f76383385eab2d4f4b54"
   },
   "output_sha256": {
-    "ledger.csv": "69c3733c16d4c16a9a5ce3d788b8054892e12cc4fa64cd1625ba3372d83d115c",
-    "review_priority.csv": "436c8fb6133aabe29f65501c3fc408547e60621d2209de6f07a112226ad2438c"
+    "ledger.csv": "416bd5727c6599f700300b89a8ffcf86310112412751e0b3a6bc3d1fcc966fc9",
+    "review_priority.csv": "d61b744516012276083f042e649642a8787bd5d310b15d469a9efff17debd413"
   },
   "scope": "Bounded imported evidence classification of112retainedpointUTILITYcells, not all nonemptyCSVvalues.48intervalcells and supplementary inventories remain in their existing registries. Classification is not input exclusion, source-error probability or proof of original extraction. Priority imports the existing ignorance stress, not a new scoring model or empirical error estimate."
 }
