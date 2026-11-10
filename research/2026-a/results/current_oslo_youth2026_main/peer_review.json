@@ -1,0 +1,86 @@
+{
+  "route_discovery": {
+    "requested_model": "gpt-6-luna",
+    "requested_effort": "medium",
+    "serving_build_verified": false,
+    "result": "Opened official KUDOS PDF linked from its landing page; confirmed88pages,title,author,reportnumber"
+  },
+  "independent_semantic_review": {
+    "requested_model": "gpt-6.1-terra",
+    "requested_effort": "high",
+    "serving_build_verified": false,
+    "source_physical_pages": [
+      35,
+      39,
+      80
+    ],
+    "source_values_verified": {
+      "sports_by_grade": [
+        74,
+        68,
+        57,
+        46,
+        38,
+        31
+      ],
+      "willingness": [
+        5,
+        18,
+        34,
+        43
+      ],
+      "stronger_barrier_categories": [
+        [
+          33,
+          10
+        ],
+        [
+          22,
+          22
+        ],
+        [
+          21,
+          15
+        ],
+        [
+          17,
+          13
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "findings": "Cross-sectional school grades; club nonattenders and nonexclusive reasons; displayed rounding;2018grade/district weighting; partial response counts not item denominators; apprentices/dropouts excluded. Does not resolve prior local upper report mismatch.",
+    "scope": "26selectedcells and methods independently reviewed; not entire72cell/rootvisual review or respondent microdata"
+  },
+  "root_visual_review": {
+    "physical_pages": [
+      35,
+      39
+    ],
+    "cells": 72,
+    "method": "Rendered source pages; full six-by-six grade table, eight-by-four reason table and four willingness values transcribed independently from extractor parsing"
+  },
+  "final_implementation_review": {
+    "requested_model": "gpt-6.1-terra",
+    "serving_build_verified": false,
+    "result": "scoped pass; no material parsing, arithmetic or population-scope defect identified",
+    "checked": "Raw barrier indexing reverses each eight-row category block correctly;32reasoncells match chart; grade and willingness extraction and source/results notes reviewed",
+    "audit_replayed_by_reviewer": false,
+    "whole_report_or_microdata_certified": false
+  }
+}
