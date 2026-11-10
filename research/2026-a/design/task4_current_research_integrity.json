@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "registries": [
+    "design/task4_user_current_extensions.json",
+    "design/task4_user_current_acquisition.json"
+  ],
+  "reports": {
+    "results/current_all16_broadband_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_all16_ror_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_amsterdam_teacher_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_cost_edition_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_helsinki_staff_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_london_zurich_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_oslo_cost_ptr_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_oslo_dbh_accreditation_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_oslo_dbh_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_oslo_he_crosswalk_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_oslo_pm_source_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_point_source_ledger/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_point_source_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_point_withdrawal/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_school_travel_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_staff_duration_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_staff_duration_review/workbook_verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_vienna_berlin_ptr_review/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_zurich_source_review/verification.json": {
+      "expand_source_maps": [
+        "source_hashes"
+      ]
+    }
+  },
+  "live_source_sha256": {
+    "design/task4_current_source_routes.csv": "7a33453c83c537c62d7b7f85ec0ce44bed6e7c41b412c73d98843f8639b18fae"
+  },
+  "historical_sources": [
+    {
+      "report": "results/current_staff_duration_review/verification.json",
+      "source_path": "design/task4_current_source_routes.csv",
+      "commit": "4baa23ec09bb15bc3eae5ef17f952ec17f6d9921",
+      "git_path": "research/2026-a/design/task4_current_source_routes.csv",
+      "sha256": "898201eec2ba124d48f90a97a92b206b2b94f8d60e9da5f261728916be3f1107",
+      "reason": "The source audit retains its then-current route index; current route index is bound separately."
+    }
+  ],
+  "scope": "File integrity and explicit historical version binding; no source-semantic re-audit, numeric recomputation or MC replay. Expand each classified current report direct source map once; pin upstream report bytes without recursively treating historical source graphs as current."
+}

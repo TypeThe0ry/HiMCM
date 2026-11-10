@@ -1,0 +1,214 @@
+{
+  "status": "pass",
+  "version": "Single current main on V203",
+  "runner_sha256": "afe2733e8c3c5a32f103a5e5263cfb1f148d3acac3c34db237d29a2ed53627fd",
+  "registered_research_integrity": {
+    "status": "pass registered research integrity",
+    "registries_checked": [
+      "design/task4_user_current_extensions.json",
+      "design/task4_user_current_acquisition.json"
+    ],
+    "contract": "design/task4_current_research_integrity.json",
+    "registry_source_maps": 6,
+    "hash_path_pairs": 21,
+    "current_reports_checked": 19,
+    "report_direct_source_maps": 19,
+    "live_bound_files": 268,
+    "protected_files": 272,
+    "aliases": [
+      "design/task4_user_current_acquisition.json.zurich_source_alignment.verification_sha256 -> audit"
+    ],
+    "historical_source_versions_checked": [
+      {
+        "report": "results/current_staff_duration_review/verification.json",
+        "source_path": "design/task4_current_source_routes.csv",
+        "commit": "4baa23ec09bb15bc3eae5ef17f952ec17f6d9921",
+        "sha256": "898201eec2ba124d48f90a97a92b206b2b94f8d60e9da5f261728916be3f1107"
+      }
+    ],
+    "transitive_historical_report_graphs_expanded": false,
+    "source_semantics_revalidated": false,
+    "saved_numeric_results_recomputed": false,
+    "MC_replayed": false,
+    "scope": "Registry hashes and each explicitly classified current report direct source map; upstream report bytes pinned without interpreting their historical source graphs."
+  },
+  "primary": "V203",
+  "canonical_pdf_sha256": "2c516e44017b95515bd6d8b88a272338c62c64d5f35cc401d1e194bd0d832980",
+  "paper_head": "1cbec98b3c1bd86b7f2b2f4385c749ff105167f6",
+  "research_head": "4c86526b8396d4a1b0f9b563f7a739094ba2f11e",
+  "environment": {
+    "python": "3.11.18",
+    "executable": "/data/scratch/himcm-current-check-env/bin/python",
+    "tools": {
+      "tectonic": "Tectonic 0.17.0",
+      "pdftotext": "pdftotext version 26.01.0",
+      "pdftoppm": "pdftoppm version 26.05.0"
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2"
+    },
+    "TeX": "Existing local cache only"
+  },
+  "archive": {
+    "files": 11,
+    "git_blob_algorithm": "sha1",
+    "all_paths_and_blobs_match": true
+  },
+  "science": {
+    "inherited_V202_checks": {
+      "inherited_V200_checks": {
+        "inherited_V197_checks": {
+          "utility_cells": 160,
+          "deterministic_city_weight_cases": 32,
+          "changed_pool_lower_cells": 1,
+          "other159cells_and_all_uppers_exact": true,
+          "source_population_and_count_formulas_checked": true,
+          "zurich_withdrawal_restores_V192": true,
+          "V192_two_transport_changes_and_withdrawals_checked": true,
+          "independent_score_reduction": "Scalar math.fsum squared distances with weights once",
+          "comparisons": [
+            {
+              "weight_reference": "fixed",
+              "city_cases": 16,
+              "conservative_recommendation": [
+                "Zurich"
+              ],
+              "possible_champions": 16,
+              "necessary_champions": 0,
+              "mean_score_interval_width": 16.01221199746499
+            },
+            {
+              "weight_reference": "equal",
+              "city_cases": 16,
+              "conservative_recommendation": [
+                "Zurich"
+              ],
+              "possible_champions": 16,
+              "necessary_champions": 0,
+              "mean_score_interval_width": 18.76442966782986
+            }
+          ],
+          "MC_rerun": false,
+          "raw_source_semantics_reaudited": false
+        },
+        "utility_cells": 160,
+        "scalar_city_weight_cases": 32,
+        "other159_lower_and_all_uppers_exact": true,
+        "inventory_formula_and_22_sensitivity_checked": true,
+        "withdrawal_restores_V197": true,
+        "comparisons": [
+          {
+            "reference": "fixed",
+            "recommendation": [
+              "Zurich"
+            ],
+            "possible": 16,
+            "necessary": 0,
+            "mean_width": 15.958134470578873
+          },
+          {
+            "reference": "equal",
+            "recommendation": [
+              "Zurich"
+            ],
+            "possible": 16,
+            "necessary": 0,
+            "mean_width": 18.66038969723218
+          }
+        ],
+        "MC_replayed": false,
+        "source_semantics_reaudited": false
+      },
+      "utility_cells": 160,
+      "scalar_city_weight_cases": 32,
+      "other159_lower_and_all_uppers_exact": true,
+      "inventory_formula_and_23_22_sensitivities_checked": true,
+      "withdrawal_restores_V200": true,
+      "comparisons": [
+        {
+          "reference": "fixed",
+          "recommendation": [
+            "Zurich"
+          ],
+          "possible": 16,
+          "necessary": 0,
+          "mean_width": 15.955820475866993
+        },
+        {
+          "reference": "equal",
+          "recommendation": [
+            "Zurich"
+          ],
+          "possible": 16,
+          "necessary": 0,
+          "mean_width": 18.655815697356704
+        }
+      ],
+      "MC_replayed": false,
+      "source_semantics_reaudited": false
+    },
+    "utility_cells": 160,
+    "scalar_city_weight_cases": 32,
+    "other159_lower_and_all_uppers_exact": true,
+    "source_defined_626_bus_group_formula_and_624_625_623_627_withholdings_checked": true,
+    "withdrawal_restores_V202": true,
+    "comparisons": [
+      {
+        "reference": "fixed",
+        "recommendation": [
+          "Oslo"
+        ],
+        "possible": 16,
+        "necessary": 0,
+        "mean_width": 15.822326953322161
+      },
+      {
+        "reference": "equal",
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible": 16,
+        "necessary": 0,
+        "mean_width": 18.391811623888255
+      }
+    ],
+    "MC_replayed": false,
+    "source_semantics_reaudited": false
+  },
+  "builds": [
+    {
+      "kind": "root",
+      "passed": true,
+      "pdf_sha256": "b82f0b7c7cfba57ded8451e593a2f70e4ae9a2f7fbb35063017d8a3fc18f90c8",
+      "text_pages_equal": true,
+      "grayscale_72dpi_pages_equal": 27,
+      "underfull_paragraphs": 3,
+      "removed_snapshot_outputs": [],
+      "command": [
+        "tectonic",
+        "--only-cached",
+        "--outdir",
+        "/data/scratch/himcm-current-registered-research-reproduction-20261110/work-bl2u3vgt/root/compiled",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--makefile-rules",
+        "/data/scratch/himcm-current-registered-research-reproduction-20261110/root/dependencies.mk",
+        "main.tex"
+      ],
+      "physical_pages": 27,
+      "native_letter_and_headers_footers_checked": true
+    }
+  ],
+  "input_protection": {
+    "science_files": 548,
+    "paper_and_navigation_files": 374,
+    "changed": []
+  },
+  "elapsed_seconds": 10.518,
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "scope": "Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; registered research file-integrity/one-hop report bindings checked separately, including an explicit historical Git version. No fresh-machine,MC/source semantic revalidation or online compile claim."
+}

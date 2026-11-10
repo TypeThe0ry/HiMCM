@@ -120,9 +120,10 @@ def main():
  try:
   states={str(p):dict(head=git(p,'rev-parse','HEAD'),status=git(p,'status','--porcelain')) for p in [research,paper]}
   require(not states[str(paper)]['status'],'Paper tree must be clean for exact Git archival')
-  paths=[analysis/f'design/task4_user_current_{x}.json' for x in ['model','extensions','review','delivery']]
-  model,extensions,registry,delivery=[read(p) for p in paths]
+  paths=[analysis/f'design/task4_user_current_{x}.json' for x in ['model','extensions','review','delivery','acquisition']]
+  model,extensions,registry,delivery,acquisition=[read(p) for p in paths]
   require(model['version']==extensions['extension_version']==extensions['primary_evidence_version']=='V203','Active science/extension versions differ')
+  require(acquisition['primary_model']==acquisition['active_primary_model']==model['version'],'Acquisition primary version differs')
   require(registry['version']==delivery['version']==delivery['review_version']=='current' and registry['primary_model']==delivery['primary_model']=='V203','Current owned review/delivery versions differ')
   require(registry['tex']==registry['root_entry']==registry['shared_main_entry']=='main.tex','Expected one current manuscript entry')
   require(registry['pdf_workspace']=='HiMCM' and registry['source_mirror']=='paper/current/main.tex','Expected GitHub-managed current source/PDF mirror')
@@ -132,6 +133,12 @@ def main():
   for path in paths:require(str(path.relative_to(analysis)) not in science,'Mutable registry in immutable science')
   for name,h in science.items():require(sha(analysis/name)==h,'Science hash differs: '+name)
   protected={str(p):sha(p) for p in paths}
+  from task4_current_research_bindings import verify_current_research
+  research_integrity,research_protected=verify_current_research(analysis)
+  for name,h in research_protected.items():
+   require(name not in protected or protected[name]==h,'Research binding changed during capture: '+name)
+   protected[name]=h
+  report['registered_research_integrity']=research_integrity
   if registry.get('focused_peer_review'):
    peer=research/registry['focused_peer_review']
    require(sha(peer)==registry['focused_peer_review_sha256'],'Focused peer review hash differs')
@@ -179,7 +186,7 @@ def main():
    if git(n,'rev-parse','HEAD')!=state['head'] or git(n,'status','--porcelain')!=state['status']:changed.append('git:'+n)
   report['input_protection']=dict(science_files=len(science),paper_and_navigation_files=len(protected),changed=changed)
   if changed:failure=RuntimeError('Protected inputs changed');report.update(status='fail',error=str(failure))
-  report.update(elapsed_seconds=round(time.time()-start,3),submission_ready=False,server_compile_verified=False,scope='Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; no fresh-machine,MC/source revalidation or online compile claim.')
+  report.update(elapsed_seconds=round(time.time()-start,3),submission_ready=False,server_compile_verified=False,scope='Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; registered research file-integrity/one-hop report bindings checked separately, including an explicit historical Git version. No fresh-machine,MC/source semantic revalidation or online compile claim.')
   (out/'report.json').write_text(json.dumps(report,indent=2)+'\n')
  print(json.dumps(dict(status=report['status'],report=str(out/'report.json'),error=report.get('error'))),flush=True)
  return int(failure is not None)
