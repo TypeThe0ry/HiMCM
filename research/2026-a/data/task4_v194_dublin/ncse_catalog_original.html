@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en_GB" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en_GB"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.9.16" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024-2025 School Allocations - Dataset - NCSE Open Data</title>
+
+    
+    
+
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    
+
+    
+      
+          <link rel="alternate" type="text/n3" href="https://opendata.ncse.ie/en_GB/dataset/cafceebd-37ea-4350-b1c9-8017d6d751f4.n3"/>
+          <link rel="alternate" type="text/turtle" href="https://opendata.ncse.ie/en_GB/dataset/cafceebd-37ea-4350-b1c9-8017d6d751f4.ttl"/>
+          <link rel="alternate" type="application/rdf+xml" href="https://opendata.ncse.ie/en_GB/dataset/cafceebd-37ea-4350-b1c9-8017d6d751f4.xml"/>
+          <link rel="alternate" type="application/ld+json" href="https://opendata.ncse.ie/en_GB/dataset/cafceebd-37ea-4350-b1c9-8017d6d751f4.jsonld"/>
+      
+    
+
+
+  
+    
+    
+
+      
+      
+      
+    
+
+
+    
+    
+
+
+    
+    
+
+
+  
+
+
+
+
+    
+  
+  <script>
+   (()=>{
+       var ct = 0
+       window.addEventListener(
+           "message",
+           (event) => {
+               if (event.origin !== "https://superset.opendata.ncse.ie") return;
+               // For unclear cross-origin reasons, event.source.frameElement isn't
+               // allowed, despite us running in precisely the context that *should* be
+               // allowed to acccess it.
+               // window.frames just gives us a list of the windows, so that's also
+               // not helpful.
+               // Technically, this breaks if someone tries to embed with a frame
+               // rather than an iframe. Don't.
+               for (var frame of document.getElementsByTagName('iframe')) {
+                   if (frame.contentWindow === event.source) {
+                       break;
+                   }
+               }
+               // The second condition can occur if we have a non-iframe embed
+               if (!frame || frame.contentWindow !== event.source) return;
+               
+               var height = event.data.height;
+               // Check that only height is set on event.data
+               if (!height || Object.keys(event.data).length !== 1) return;
+               // Use style.height because it overrides height=, and we've used both in
+               // various locations
+               // UNDONE -- there's a thing pushing out the height when logged in with filters
+               if (ct < 3) {
+                   ct = ct + 1;
+                   frame.style.height = height + "px";
+               }
+           }
+       )
+   })();
+  </script>
+
+  
+  <meta property="og:title" content="2024-2025 School Allocations - NCSE Open Data">
+  <meta property="og:description" content="">
+
+
+    
+    <link href="/webassets/base/2471d0b8_main.css" rel="stylesheet"/>
+<link href="/webassets/cookieconsent/cookieconsent_cd9828df.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-geoview/77c3ca23_geo-resource-styles.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-harvest/c95a0af2_harvest_css.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-scheming/728ec589_scheming_css.css" rel="stylesheet"/>
+<link href="/webassets/psbthemealt/psbthemealt_03a85442.css" rel="stylesheet"/>
+    
+  </head>
+
+  
+  <body data-site-root="https://opendata.ncse.ie/" data-locale-root="https://opendata.ncse.ie/en_GB/" >
+
+    
+    <div class="sr-only sr-only-focusable"><a href="#content">Skip to content</a></div>
+  
+
+  
+     
+
+
+
+
+<header class="navbar navbar-static-top masthead">
+    
+  <div class="container">
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button" aria-label="expand or collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    <hgroup class="header-image navbar-left">
+       
+      <a class="logo" href="/en_GB/"><img src="/img/ncse_large_2.png" alt="NCSE Open Data" title="NCSE Open Data" class="img img-responsive" /></a>
+       
+    </hgroup>
+
+    <div class="collapse navbar-collapse" id="main-navigation-toggle">
+      
+      <nav class="section navigation">
+        <ul class="nav nav-pills">
+            
+          
+          <li><a href="/en_GB/">Home</a></li><li><a href="/en_GB/dataset/">Datasets</a></li><li><a href="/en_GB/organization/">Themes</a></li><li><a href="/en_GB/about">About</a></li>
+          
+	    
+       
+          
+      
+<li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">EN/GA <span
+            class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        
+        
+        <li><a href="/en_GB/dataset/2024-2025-school-allocations">English</a></li>
+        
+        
+        
+        <li><a href="/ga/dataset/2024-2025-school-allocations">Gaeilge</a></li>
+        
+        
+    </ul>
+</li>
+      
+      
+        <li><a href="/en_GB/user/login">Log in</a></li>
+      
+        </ul>
+      </nav>
+       
+      
+      <form class="section site-search simple-input" action="/en_GB/dataset/" method="get">
+        <div class="field">
+          <label for="field-sitewide-search">Search Datasets</label>
+          <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="Search" aria-label="Search datasets"/>
+          <button class="btn-search" type="submit" aria-label="Submit"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+      
+      
+    </div>
+  </div>
+</header>
+
+  
+    <div class="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar" role="navigation" aria-label="Breadcrumb">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="/en_GB/" aria-label="Home"><i class="fa fa-home"></i><span> Home</span></a></li>
+                    
+  
+    
+    
+      
+      
+      <li><a href="/en_GB/organization/">Themes</a></li>
+      <li><a href="/en_GB/organization/resource-allocation">Resource Allocation</a></li>
+    
+    <li class="active"><a href="/en_GB/dataset/2024-2025-school-allocations">2024-2025 School Allocations</a></li>
+  
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper no-nav">
+            
+            
+            
+
+            
+
+            
+
+            
+              <div class="primary col-sm-12 col-xs-12" role="main">
+                
+                
+                  <article class="module">
+                    
+                      <header class="module-content page-header">
+                        
+                        <ul class="nav nav-tabs">
+                          
+    <li><a href="/en_GB/dataset/dashboard/2024-2025-school-allocations"><i class="fa fa-tachometer"></i> Dashboards</a></li>
+    
+  <li class="active"><a href="/en_GB/dataset/2024-2025-school-allocations"><i class="fa fa-sitemap"></i> Dataset</a></li>
+  
+
+
+                        </ul>
+                      </header>
+                    
+                    <div class="module-content">
+                      
+                      
+  
+                      
+  
+    
+    
+      
+    
+    <h1>
+      
+        2024-2025 School Allocations
+        
+        
+      
+    </h1>
+    
+    <div class="notes embedded-content">
+      <p>2024-2025 School Allocations, primary, post primary and special school figures and data.</p>
+    </div>
+  
+
+    
+    <span class="insert-comment-thread"></span>
+  
+
+  
+    
+<section id="dataset-resources" class="resources">
+  <h2>Data and Resources</h2>
+  
+    
+      <ul class="resource-list">
+        
+          
+          
+            
+
+
+
+<li class="resource-item" data-id="36b5a367-9852-42cd-a6cc-0ab0e6375c4a">
+  
+  <a class="heading" href="/en_GB/dataset/2024-2025-school-allocations/resource/36b5a367-9852-42cd-a6cc-0ab0e6375c4a" title="SNA Allocations Special Schools">
+    SNA Allocations Special Schools<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explore
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+    
+      <li>
+        <a href="/en_GB/dataset/2024-2025-school-allocations/resource/36b5a367-9852-42cd-a6cc-0ab0e6375c4a">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Preview
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://opendata.ncse.ie/dataset/cafceebd-37ea-4350-b1c9-8017d6d751f4/resource/36b5a367-9852-42cd-a6cc-0ab0e6375c4a/download/sna-allocations-special-schools.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Download
+          
+        </a>
+      </li>
+      
+      
+      
+    
+    
+        <li><a href="https://superset.opendata.ncse.ie/explore?datasource_type=table&amp;datasource_id=54" target="_blank" rel="noopener noreferrer"><i class="fa fa-area-chart"></i> Visualize</a></li>
+    
+
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+
+<li class="resource-item" data-id="f44aa2c4-9998-4dcf-9ace-405345a81b77">
+  
+  <a class="heading" href="/en_GB/dataset/2024-2025-school-allocations/resource/f44aa2c4-9998-4dcf-9ace-405345a81b77" title="SNA and SET Hour Allocations Primary Schools">
+    SNA and SET Hour Allocations Primary Schools<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explore
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+    
+      <li>
+        <a href="/en_GB/dataset/2024-2025-school-allocations/resource/f44aa2c4-9998-4dcf-9ace-405345a81b77">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Preview
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://opendata.ncse.ie/dataset/cafceebd-37ea-4350-b1c9-8017d6d751f4/resource/f44aa2c4-9998-4dcf-9ace-405345a81b77/download/sna-and-set-hour-allocations-primary-schools.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Download
+          
+        </a>
+      </li>
+      
+      
+      
+    
+    
+        <li><a href="https://superset.opendata.ncse.ie/explore?datasource_type=table&amp;datasource_id=55" target="_blank" rel="noopener noreferrer"><i class="fa fa-area-chart"></i> Visualize</a></li>
+    
+
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+
+<li class="resource-item" data-id="4b4c807b-a452-42ab-89c6-1decdcac7140">
+  
+  <a class="heading" href="/en_GB/dataset/2024-2025-school-allocations/resource/4b4c807b-a452-42ab-89c6-1decdcac7140" title="SNA and SET Hours Allocations Post Primary Schools">
+    SNA and SET Hours Allocations Post Primary Schools<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explore
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+    
+      <li>
+        <a href="/en_GB/dataset/2024-2025-school-allocations/resource/4b4c807b-a452-42ab-89c6-1decdcac7140">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Preview
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://opendata.ncse.ie/dataset/cafceebd-37ea-4350-b1c9-8017d6d751f4/resource/4b4c807b-a452-42ab-89c6-1decdcac7140/download/sna-and-set-hours-allocations-post-primary-schools.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Download
+          
+        </a>
+      </li>
+      
+      
+      
+    
+    
+        <li><a href="https://superset.opendata.ncse.ie/explore?datasource_type=table&amp;datasource_id=56" target="_blank" rel="noopener noreferrer"><i class="fa fa-area-chart"></i> Visualize</a></li>
+    
+
+    </ul>
+  </div>
+  
+  
+</li>
+          
+        
+      </ul>
+    
+    
+</section>
+  
+
+  
+    
+
+  <section class="tags">
+    
+
+
+  <ul class="tag-list well">
+    
+      <li>
+        <a class="tag" href="/en_GB/dataset/?tags=2024-2025+School+Allocations">2024-2025 School Al...</a>
+      </li>
+    
+  </ul>
+
+  </section>
+
+  
+
+  
+  <section class="additional-info">
+    <table class="table table-striped table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th scope="col">Field</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>        
+        <tr>
+          <th scope="row" class="dataset-label"> Theme </th>
+          <td >Resource Allocation</td>
+
+          
+            <tr>
+              <th scope="row" class="dataset-label"> License </th>
+              <td >Creative Commons Attribution</td>
+            </tr>
+          
+
+        <tr>
+                    <th scope="row" class="dataset-label">Title</th>
+                    <td >2024-2025 School Allocations</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Description</th>
+                    <td >2024-2025 School Allocations, primary, post primary and special school figures and data.</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Geographic coverage</th>
+                    <td >National</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Contact Person</th>
+                    <td >NCSE</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Contact Person Email</th>
+                    <td ><a href=mailto:opendata@ncse.ie>opendata@ncse.ie</a></td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Contact Person Telephone</th>
+                    <td >01 6033200</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Date dataset released</th>
+                    <td >
+  2024-07-24
+</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Date dataset updated</th>
+                    <td >
+  2024-08-01
+</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">OR: specify what period of time the dataset covers</th>
+                    <td >2024/2025</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Version</th>
+                    <td >Final</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">Language</th>
+                    <td >English</td>
+                </tr><tr>
+                    <th scope="row" class="dataset-label">State</th>
+                    <td >Approved</td>
+                </tr>
+        
+    
+      </tbody>
+    </table>
+  </section>
+  
+
+
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="footer-site">
+  <div class="container">
+    
+    <section class="footer-section">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-3 col-sm-12">
+            <img src="/img/NCSE.png" alt="derilinx logo" class="img img-responsive" />
+        </div>
+        <div class="col-xs-4 col-md-3 col-sm-4">
+            <p><a href="/en_GB/about" class="text-decoration-none">About</a></p>
+            
+<a href="https://x.com/ncseirl?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+    <p><span class="fa fa-twitter"></span>  Twitter</p>
+</a>
+<a href="https://www.youtube.com/channel/UCWS338t1Lxyrw9yO8fLxYbQ">
+    <p><span class="fa fa-youtube"></span>  YouTube</p>
+</a>
+<a href="https://www.linkedin.com/company/national-council-for-special-education/about/">
+    <p><span class="fa fa-linkedin"></span>  LinkedIn</p>
+</a>
+
+        </div>
+        <div class="col-xs-4 col-md-3 col-sm-4">
+            <p><a href="/cookie-and-privacy-policy">Cookie & Privacy Policy</a></p>
+        </div>
+        <div class="col-xs-4 col-md-3 col-sm-4">
+            <p>Powered by <a class="footer-link" href="http://ckan.org" class="text-decoration-none"><img src="/img/ckan-logo.png" alt="derilinx logo" class="img-fluid footer-logo" /></a></p>
+            <p>Site by <a class="footer-link" href="https://derilinx.com" class="text-decoration-none"><img src="/img/derilinxthumb.png" alt="derilinx logo" class="img-fluid footer-logo" /> Derilinx</a></p>
+          
+            
+            <p><a href="/en_GB/user/login">Log in</a></p>
+            
+        </div>
+    </div>
+</div>
+</section>
+    
+  </div>
+
+  
+    
+  
+</footer>
+  
+  
+  
+  
+    
+  
+  
+
+
+    
+
+
+
+    <script src="https://cdn.usefathom.com/script.js" data-site="BXSVGVMB" defer></script>
+
+
+
+  
+      
+  
+    
+
+      
+  
+
+
+    
+    
+    <link href="/webassets/vendor/f3b8236b_select2.css" rel="stylesheet"/>
+<link href="/webassets/vendor/0b01aef1_font-awesome.css" rel="stylesheet"/>
+    <script src="/webassets/vendor/d8ae4bed_jquery.js" type="text/javascript"></script>
+<script src="/webassets/vendor/fb6095a0_vendor.js" type="text/javascript"></script>
+<script src="/webassets/vendor/580fa18d_bootstrap.js" type="text/javascript"></script>
+<script src="/webassets/base/15a18f6c_main.js" type="text/javascript"></script>
+<script src="/webassets/base/54c75ef1_ckan.js" type="text/javascript"></script>
+<script src="/webassets/base/cd2c0272_tracking.js" type="text/javascript"></script>
+<script src="/webassets/cookieconsent/cookieconsent_d1fd906c.js" type="text/javascript"></script>
+  </body>
+</html>
