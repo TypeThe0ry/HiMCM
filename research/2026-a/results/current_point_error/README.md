@@ -30,3 +30,5 @@ The independent audit recomputes all807 endpoint certificates using80-digit Deci
 `leaves.csv` gives the continuous partition, `ranks.csv` the selected scenarios, `bounds.csv` their complete utility ranges, and `switch_witnesses.csv` the two numerical choices outside the unresolved band. `summary.json` binds the calculation; `verification.json` records separate independent validation. All values in these files are declared stress scenarios, not new observations. Primary admission and actual primary interval-width change are both zero.
 
 Run `.venv-v120/bin/python research/2026-a/scripts/task4_current_point_error.py`, then `.venv-v120/bin/python research/2026-a/scripts/audit_current_point_error.py`. The explicit16-city factory is used throughout; the legacy25-city stress entry is not used.
+
+Independent audit commands print JSON to stdout by default. To intentionally update this directory’s verification report, add `--output research/2026-a/results/current_point_error/verification.json --overwrite`. This delivery option does not change the stress calculation.

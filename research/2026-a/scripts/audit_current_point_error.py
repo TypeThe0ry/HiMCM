@@ -1,12 +1,19 @@
-"""Independent 80-digit scalar audit of V203 point-utility stress outputs."""
+"""Independent 80-digit scalar audit; reports to stdout without writing by default.
+
+Explicit report delivery: python audit_current_point_error.py --output /tmp/point-audit.json
+Use --overwrite to replace an existing report.
+"""
 from decimal import Decimal as D, getcontext
 from pathlib import Path
 import csv, hashlib, json
 import numpy as np
 from task4_user_v203_revision import revised_bounds
 from task4_v5_model import NAMES
+from task4_audit_output import audit_parser, check_output, emit_report
 getcontext().prec=80
 R=Path(__file__).resolve().parents[1]; O=R/'results/current_point_error'; P=R.parents[2]/'HiMCM-Overleaf'
+args=audit_parser(__doc__).parse_args()
+check_output(args,O/'verification.json',R.parents[1])
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 read=lambda n:list(csv.DictReader((O/n).open(newline='')))
 df=lambda x:D.from_float(float(x))
@@ -71,5 +78,5 @@ for row in witnesses:
 for mapping in (snapshot,extra):
  for p,h in mapping.items():assert sha(R/p)==h,p
 for p,h in paper_hashes.items():assert sha(P/p)==h and sha(R.parents[1]/'paper/current'/p)==h
-result={'status':'pass','arithmetic':'80-digit Decimal; exact binary64 input conversion, decimal weights; numerical audit, not directed-rounding interval arithmetic','endpoint_enclosures':'Nested boxes and monotone nondecreasing individual regrets; all recorded certificate endpoint inequalities checked independently','leaf_counts':counts,'minimum_positive_padded_gap':str(minimum),'ranks_checked':len(ranks),'bounds_checked':len(bounds),'witnesses_checked':len(witnesses),'point_cells':112,'unchanged_interval_cells':48,'snapshot_hashes_checked':len(snapshot),'supplement_hashes_checked':len(extra),'paper_resources_and_mirror_sha256':paper_hashes,'fixed_unresolved_band':[0.08135732263326648,0.08135734200477601],'scope':'Hypothetical additive utility radius; unresolved band does not establish unique switch, and no physical error calibration is implied.','source_sha256':{'scripts/audit_current_point_error.py':sha(Path(__file__)),'scripts/task4_current_point_error.py':sha(R/'scripts/task4_current_point_error.py'),'results/current_point_error/summary.json':sha(O/'summary.json'),**{f'results/current_point_error/{p}':sha(O/p) for p in summary['output_sha256']}}}
-(O/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+result={'status':'pass','arithmetic':'80-digit Decimal; exact binary64 input conversion, decimal weights; numerical audit, not directed-rounding interval arithmetic','endpoint_enclosures':'Nested boxes and monotone nondecreasing individual regrets; all recorded certificate endpoint inequalities checked independently','leaf_counts':counts,'minimum_positive_padded_gap':str(minimum),'ranks_checked':len(ranks),'bounds_checked':len(bounds),'witnesses_checked':len(witnesses),'point_cells':112,'unchanged_interval_cells':48,'snapshot_hashes_checked':len(snapshot),'supplement_hashes_checked':len(extra),'paper_resources_and_mirror_sha256':paper_hashes,'fixed_unresolved_band':[0.08135732263326648,0.08135734200477601],'scope':'Hypothetical additive utility radius; unresolved band does not establish unique switch, and no physical error calibration is implied.','source_sha256':{'scripts/audit_current_point_error.py':sha(Path(__file__)),'scripts/task4_audit_output.py':sha(R/'scripts/task4_audit_output.py'),'scripts/task4_current_point_error.py':sha(R/'scripts/task4_current_point_error.py'),'results/current_point_error/summary.json':sha(O/'summary.json'),**{f'results/current_point_error/{p}':sha(O/p) for p in summary['output_sha256']}}}
+emit_report(result,args,O/'verification.json',R.parents[1])

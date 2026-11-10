@@ -1,15 +1,21 @@
-"""Independently audit Zurich source captures, without changing the model.
+"""Read-only independent audit of Zurich source captures; does not change model files.
 
 From the repository root, run:
   UV_CACHE_DIR=/data/scratch/uv-cache uv run --with openpyxl==3.1.5 python research/2026-a/scripts/audit_current_zurich_source2026.py
 
-Requires uv, openpyxl (provided by uv in its ephemeral environment), and
-pdftotext; uv may need network access if the package is not cached.
+The default is stdout-only. To write the JSON report, pass --output PATH; add
+--overwrite only when intentionally replacing the selected report.
+Requires uv, openpyxl==3.1.5 (provided by uv in its ephemeral environment),
+and pdftotext; uv may need network access if the package is not cached.
 """
 import csv,hashlib,json,pathlib,re,subprocess,sys,xml.etree.ElementTree as ET
 from datetime import datetime
 import openpyxl
+from task4_audit_output import audit_parser, check_output, emit_report
 R=pathlib.Path(__file__).resolve().parents[1];G=R.parents[1];P=G.parent/'HiMCM-Overleaf';B=R/'data/current_zurich_boundary2024';D=R/'data/current_zurich_source2026'
+O=R/'results/current_zurich_source_review';CANONICAL=O/'verification.json'
+args=audit_parser(__doc__).parse_args()
+check_output(args,CANONICAL,R.parents[1])
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def read(p):return json.loads(p.read_text())
 def require(v,label):
@@ -75,5 +81,5 @@ portal=(D/'fso_city_portal.html').read_text();asset=(D/'data_asset.html').read_t
 for p,h in {**snapshot,**extra}.items():require(sha(R/p)==h,'protected binding changed during audit')
 for p,h in v['current_files_sha256'].items():require(sha(P/p)==h and sha(G/'paper/current'/p)==h,'paper changed during audit')
 out={'status':'PASS','audit_script_sha256':sha(pathlib.Path(__file__)),'environment':{'python':sys.version.split()[0],'openpyxl':openpyxl.__version__},'boundary_hashes_checked':len(body_files),'FSO_receipts_checked':len(receipts),'selected_2021_city_laus':len(sel),'selected_FSO_workbook_rows':len(found),'SDMX_observations':len(observations),'core_bindings_checked':len(snapshot),'supplemental_bindings_checked':len(extra),'paper_compile_dependencies_each_copy':7,'primary_model_admissions':0,'scope':'2021 LAU association is not a verified 2024 membership. FSO current Swiss agglomerations are not automatically GISCO CH002C. General period shift and related indicator metadata do not establish the exact 39.9-minute observation join. CI operation values have no assumed unit, confidence level, or duration-bin interpretation.','source_hashes':{str(p.relative_to(R)):sha(p) for p in [B/'SHA256SUMS',D/'retrievals.json',D/'extract.py',D/'selected_observations.json',D/'selected_variable_metadata.json',D/'selected_structure.json']}}
-O=R/'results/current_zurich_source_review';O.mkdir(exist_ok=True);(O/'verification.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
+emit_report(out,args,CANONICAL,R.parents[1])
 if __name__=='__main__':pass

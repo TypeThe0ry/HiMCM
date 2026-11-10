@@ -5,7 +5,7 @@
   "primary": "V203",
   "canonical_pdf_sha256": "e241931295852da7ff3b8ecf79835a5e0598694d76f2822c0f8c377b2a83ac19",
   "paper_head": "6e5a556b018e05a3801dab51651ee0aacc8118cf",
-  "research_head": "185c8d943d70c4949c169f4f4b402a51039f18ef",
+  "research_head": "18f2fca3a3de735165fd24161cc165f2bb3b1a31",
   "environment": {
     "python": "3.11.18",
     "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
@@ -152,7 +152,7 @@
     {
       "kind": "root",
       "passed": true,
-      "pdf_sha256": "ce74355c5f30e82bfb6eb8c7f497c8951140579728d89e32fe511d2313abfffc",
+      "pdf_sha256": "baed8fc7f5734fe8e64f7c917be52391342021946dca5e2db5f3ba1d23519ac4",
       "text_pages_equal": true,
       "grayscale_72dpi_pages_equal": 27,
       "underfull_paragraphs": 4,
@@ -161,11 +161,11 @@
         "tectonic",
         "--only-cached",
         "--outdir",
-        "/data/scratch/himcm-current-point-error-reproduction/work-xi0jn99u/root/compiled",
+        "/data/scratch/himcm-current-audit-workflow-reproduction/work-axvof43r/root/compiled",
         "--keep-logs",
         "--keep-intermediates",
         "--makefile-rules",
-        "/data/scratch/himcm-current-point-error-reproduction/root/dependencies.mk",
+        "/data/scratch/himcm-current-audit-workflow-reproduction/root/dependencies.mk",
         "main.tex"
       ],
       "physical_pages": 27,
@@ -174,10 +174,10 @@
   ],
   "input_protection": {
     "science_files": 548,
-    "paper_and_navigation_files": 101,
+    "paper_and_navigation_files": 102,
     "changed": []
   },
-  "elapsed_seconds": 9.206,
+  "elapsed_seconds": 9.124,
   "submission_ready": false,
   "server_compile_verified": false,
   "scope": "Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; no fresh-machine,MC/source revalidation or online compile claim."

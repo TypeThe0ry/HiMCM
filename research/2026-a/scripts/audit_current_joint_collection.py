@@ -1,11 +1,25 @@
-"""Independent audit of conditional cell-resolution certificates."""
+"""Read-only independent audit of conditional cell-resolution certificates.
+
+By default, prints the report to stdout and checks the derived table without
+writing files. Use --output PATH --overwrite to write the JSON report; add
+--rebuild-optimal-table to intentionally regenerate the derived CSV as well.
+"""
 import hashlib, itertools, json, math
 from pathlib import Path
 import numpy as np
 import pandas as pd
+from task4_audit_output import audit_parser, check_output, emit_report
 from task4_user_v203_revision import revised_bounds
 from task4_v5_model import NAMES
 R=Path(__file__).resolve().parents[1]; O=R/'results/current_joint_collection'
+CANONICAL=O/'verification.json'
+parser=audit_parser(__doc__)
+parser.add_argument('--rebuild-optimal-table',action='store_true',help='Explicitly regenerate optimal_three_cell_sets.csv')
+args=parser.parse_args()
+check_output(args,CANONICAL,R.parents[1])
+if args.rebuild_optimal_table:
+ if args.output is None or Path(args.output).expanduser().resolve()!=CANONICAL.resolve() or not args.overwrite:
+  parser.error('--rebuild-optimal-table requires --output pointing to this audit’s canonical verification.json and --overwrite')
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def close(a,b,tol=2e-9): assert abs(float(a)-float(b))<tol,(a,b)
 def score(x,w):
@@ -88,6 +102,11 @@ for ref,w in [('fixed',[.1125]*6+[.05,.1125,.1125,.05]),('equal',[.1]*10)]:
  assert set(sr['optimistic_targets'])==set(refplans[refplans.total_resolved_cells==best].target_city)
  close(sr['minimum_frontier_comparison_abs_gap'],min(gaps));close(sr['common_score_interval'][0],left);close(sr['common_score_interval'][1],right);close(sr['tie_target_score'],(left+right)/2)
  outputs.append(dict(weight_reference=ref,min_all_frontier_abs_gap=min(gaps),common_score_interval=[left,right],optimal_three_cell_sets=found,combinations_examined=math.comb(48,3)))
-pd.DataFrame(allsets).to_csv(O/'optimal_three_cell_sets.csv',index=False)
+table=O/'optimal_three_cell_sets.csv'
+expected_table=pd.DataFrame(allsets).to_csv(index=False).encode('utf-8')
+if args.rebuild_optimal_table:
+ table.write_bytes(expected_table)
+else:
+ assert table.read_bytes()==expected_table,'derived optimal-three-cell table differs from independently enumerated result; use --rebuild-optimal-table with --output pointing to the canonical report and --overwrite to regenerate'
 report=dict(status='pass',scope='Independent exhaustive row subset frontiers; strict interior utility witnesses and approximate tie checked in the rectangular model; no claim of raw-data realizability.',candidate_plans=32,tie_cells=320,core_hashes=len(snapshot),supplemental_hashes=67,paper_resource_hashes=7,weights=outputs,primary_output_hashes={p.name:sha(p) for p in sorted(O.glob('*.csv'))},summary_sha256=sha(O/'summary.json'),primary_collector_sha256=sha(R/'scripts/task4_current_joint_collection.py'),audit_script_sha256=sha(Path(__file__)))
-(O/'verification.json').write_text(json.dumps(report,indent=2)+'\n'); print(json.dumps(outputs,indent=2))
+emit_report(report,args,CANONICAL,R.parents[1])

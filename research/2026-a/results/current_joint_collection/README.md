@@ -55,3 +55,5 @@ Minimum optimistic resolved-cell counts, in original city order. This is an info
 | Warsaw | 11 | 13 |
 | Singapore | 13 | 11 |
 | Tokyo | 17 | 16 |
+
+The independent auditor checks the existing `optimal_three_cell_sets.csv` byte for byte and prints JSON to stdout by default. Saving a report requires `--output PATH`, with `--overwrite` for an existing file. Rebuilding the derived CSV additionally requires `--rebuild-optimal-table` and an explicit overwrite of this directory’s canonical verification report.

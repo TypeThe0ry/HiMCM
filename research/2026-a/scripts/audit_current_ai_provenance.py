@@ -1,5 +1,11 @@
-"""Independently audit bounded root-session provenance. Never print private records."""
-import argparse, collections, hashlib, json, os, pathlib, re, stat, subprocess
+"""Read-only bounded AI provenance audit; never print private records.
+
+Default: stdout only, independent of later manuscript edits. Optional
+--paper-baseline REF checks a deliberately selected pre-AI manuscript snapshot.
+Use --output PATH --overwrite only for an intentional report rebuild.
+"""
+import collections, hashlib, json, os, pathlib, re, stat, subprocess
+from task4_audit_output import audit_parser,check_output,emit_report
 R=pathlib.Path(__file__).resolve().parents[1]
 G=R.parents[1]
 M=R/'data/current_ai_provenance/session_manifest.json'
@@ -13,7 +19,7 @@ def filehash(p):
 def fail(condition,label):
  if not condition:raise RuntimeError(label)
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--session',type=pathlib.Path,required=True);ap.add_argument('--private-output',type=pathlib.Path);args=ap.parse_args()
+ ap=audit_parser(__doc__);ap.add_argument('--session',type=pathlib.Path,required=True);ap.add_argument('--private-output',type=pathlib.Path);ap.add_argument('--paper-baseline',help='Optional explicit Git revision for pre-AI body and six resource checks');args=ap.parse_args();canonical=R/'results/current_ai_review/verification.json';check_output(args,canonical,G)
  m=json.loads(M.read_text());old=json.loads(OLD.read_text());start=m['delta']['start_byte'];end=m['delta']['end_byte']
  fail(filehash(OLD)==m['predecessor_manifest_sha256'] and old['source_prefix']==m['predecessor_source_prefix'],'predecessor binding')
  fail(start==old['source_prefix']['bytes'] and end==m['source_prefix']['bytes'],'prefix bounds')
@@ -68,9 +74,14 @@ def main():
  fail(len(extra)==61,'supplemental unique binding count')
  for path,digest in extra.items():fail(filehash(R/path)==digest,'supplemental binding mismatch')
  fail(m.get('record_exclusion_not_content_redaction') is True and m.get('private_arguments_unredacted') is True and m['private_content_published'] is False and m['complete_team_ai_history'] is False and m['submission_ready'] is False,'privacy and readiness flags')
- P=G.parent/'HiMCM-Overleaf'; marker=b'\\section*{Report on Use of AI Tools}'; base=subprocess.check_output(['git','show','d1a3996:main.tex'],cwd=P); current=(P/'main.tex').read_bytes();fail(base.count(marker)==1 and current.count(marker)==1 and base.split(marker)[0]==current.split(marker)[0],'pre-AI body changed')
- resources=['mcmthesis.cls','ref.bib','figures/country_contrasts.pdf','figures/identification_matrix.pdf','figures/score_intervals.pdf','figures/walktime_context.pdf']
- for path in resources:fail(subprocess.check_output(['git','show','d1a3996:'+path],cwd=P)==(P/path).read_bytes(),'paper resource changed')
- out={'supplemental_bindings_checked':len(extra),'pre_ai_body_matches_d1a3996':True,'paper_resources_match_d1a3996':len(resources),'capture_script_sha256':m['script_sha256'],'manifest_sha256':filehash(M),'readme_sha256':filehash(M.parent/'README.md'),'predecessor_manifest_sha256':filehash(OLD),'status':'PASS','source_prefix_sha256':h.hexdigest(),'predecessor_source_prefix_sha256':h_old.hexdigest(),'delta_lines':delta,'contexts':len(seen_t),'selected_messages':len(seen_s),'assistant_calls':len(seen_c),'private_exports_checked':bool(streams),'private_export_counts':export_counts,'core_science_bindings_checked':len(science),'scope':'Root session bounded prefix and selected source record types; requested labels do not attest serving versions. Unredacted private inputs may contain copied sensitive content; no content-redaction claim. No subagent or whole-team history claim.'}
- O=R/'results/current_ai_review';O.mkdir(exist_ok=True);(O/'verification.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
+ paper_baseline=None;resources=[]
+ if args.paper_baseline:
+  P=G.parent/'HiMCM-Overleaf';marker=b'\\section*{Report on Use of AI Tools}'
+  paper_baseline=subprocess.check_output(['git','rev-parse','--verify','--end-of-options',args.paper_baseline+'^{commit}'],cwd=P,text=True).strip()
+  base=subprocess.check_output(['git','show',paper_baseline+':main.tex'],cwd=P);current=(P/'main.tex').read_bytes()
+  fail(base.count(marker)==1 and current.count(marker)==1 and base.split(marker)[0]==current.split(marker)[0],'pre-AI body differs from requested paper baseline')
+  resources=['mcmthesis.cls','ref.bib','figures/country_contrasts.pdf','figures/identification_matrix.pdf','figures/score_intervals.pdf','figures/walktime_context.pdf']
+  for path in resources:fail(subprocess.check_output(['git','show',paper_baseline+':'+path],cwd=P)==(P/path).read_bytes(),'paper resource differs from requested baseline')
+ out={'supplemental_bindings_checked':len(extra),'paper_baseline_checked':paper_baseline,'pre_ai_body_matches_requested_baseline':True if paper_baseline else None,'paper_resources_checked':len(resources),'audit_script_sha256':filehash(pathlib.Path(__file__)),'capture_script_sha256':m['script_sha256'],'manifest_sha256':filehash(M),'readme_sha256':filehash(M.parent/'README.md'),'predecessor_manifest_sha256':filehash(OLD),'status':'PASS','source_prefix_sha256':h.hexdigest(),'predecessor_source_prefix_sha256':h_old.hexdigest(),'delta_lines':delta,'contexts':len(seen_t),'selected_messages':len(seen_s),'assistant_calls':len(seen_c),'private_exports_checked':bool(streams),'private_export_counts':export_counts,'core_science_bindings_checked':len(science),'scope':'Root session bounded prefix and selected source record types; requested labels do not attest serving versions. Unredacted private inputs may contain copied sensitive content; no content-redaction claim. No subagent or whole-team history claim.'}
+ emit_report(out,args,canonical,G)
 if __name__=='__main__':main()
