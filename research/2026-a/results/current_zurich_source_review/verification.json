@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "audit_script_sha256": "3e1b8342e6e417133ea0fe9a03f0f70484881ff72a83d85c818835ac7f494289",
+  "environment": {
+    "python": "3.12.16",
+    "openpyxl": "3.1.5"
+  },
+  "boundary_hashes_checked": 12,
+  "FSO_receipts_checked": 5,
+  "selected_2021_city_laus": 22,
+  "selected_FSO_workbook_rows": 2,
+  "SDMX_observations": 12,
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 67,
+  "paper_compile_dependencies_each_copy": 7,
+  "primary_model_admissions": 0,
+  "scope": "2021 LAU association is not a verified 2024 membership. FSO current Swiss agglomerations are not automatically GISCO CH002C. General period shift and related indicator metadata do not establish the exact 39.9-minute observation join. CI operation values have no assumed unit, confidence level, or duration-bin interpretation.",
+  "source_hashes": {
+    "data/current_zurich_boundary2024/SHA256SUMS": "95d92dd0568ddd56c52e1be285c7386b57a35bd16641a28835d3f9eb235854ac",
+    "data/current_zurich_source2026/retrievals.json": "8f265fe7d2ba2ed15e393199f43c6967aceec951a37e25974d23ee0c457ddbff",
+    "data/current_zurich_source2026/extract.py": "e149044bafa64f9202d69965a7260d19934f71f667fb789bc67e7d68ddfb45c1",
+    "data/current_zurich_source2026/selected_observations.json": "1525b17d1cb65e88787a2925947edd010578dab92b21eacc4c24b1d4ee492c4d",
+    "data/current_zurich_source2026/selected_variable_metadata.json": "c96228cb045996b4e488d83bff181375c5f476ab24f436c53f9ac1575011359d",
+    "data/current_zurich_source2026/selected_structure.json": "a212071b4e92521a7500f7fafc94f96c83816278dab5704cfd548ff63fe37be6"
+  }
+}
