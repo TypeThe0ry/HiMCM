@@ -89,5 +89,44 @@
       "results/current_point_withdrawal/verification.json": "84d384979588b7452927f55cfc689dc11be3f0c88dbabab0b792b8faf7992514"
     },
     "manuscript_scope": "Owned6.3 only; current PDF verification binds this diagnostic"
+  },
+  "broadband_statistic_definition_sensitivity": {
+    "results": "results/current_all16_broadband_review",
+    "script": "scripts/task4_current_broadband_definition.py",
+    "audit": "results/current_all16_broadband_review/verification.json",
+    "primary_evidence": "V203 unchanged",
+    "original_point": 667.71,
+    "alternative_point": 476.02,
+    "changed_city_indicator": "Singapore fixed_broadband_mbps, temporary alternative only",
+    "city_fixed_median_matches": 15,
+    "Singapore_country_mean_match": 1,
+    "all_decision_ranks_unchanged_both_weights": true,
+    "recommendations": {
+      "fixed": [
+        "Oslo"
+      ],
+      "equal": [
+        "Zurich"
+      ]
+    },
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "source_sha256": {
+      "data/current_all16_broadband_fields/README.md": "3d300d8cacd3e523515fc7183248a5b97bb04a40519a3285c5c9af0e1a737663",
+      "data/current_all16_broadband_fields/comparison.csv": "dce07345faa469c8d1510f8a6a4bc97d698635af612dd016d2b94132d2206c5c",
+      "data/current_all16_broadband_fields/deterministic_offline_extract.py": "280af3c89068bae86c4edea8784b967fa76700579f8ecdea3b7c3bb1fa415649",
+      "data/current_all16_broadband_fields/summary.json": "6d3b09725aede06d8c1e0c9b01e38a383cb44e09f264bf43e1b03d09a559b566",
+      "results/current_all16_broadband_review/README.md": "b3c495fcf81c9372fa21b78b60cbcf49568c2cca162b1e8b9e8744028e01d759",
+      "results/current_all16_broadband_review/summary.json": "2ac6064df40a2157a511e7c3bc38e2dd7311baade179cdef4f4e5c557f0665f4",
+      "results/current_all16_broadband_review/bounds.csv": "f13abb60bb69f22c026a11c687c835fd176e0766f12307724ff3e3524174adac",
+      "results/current_all16_broadband_review/ranks.csv": "63571651fe1a9ab09988af28e3109df2dae061e20bd9a871d6a6107fa09fb7f9",
+      "scripts/audit_current_broadband_definition.py": "34ebc0316d70434a6bb106450b8e2c3e36fc2c39a81ded16d8e7e6f2302c8260",
+      "scripts/task4_current_broadband_definition.py": "c56e78a31132c7152c6f4387dad07ae15058a0b1df4244d501770d9758c06196",
+      "data/task4_v5_resources/ookla_global_index.html": "fe1747fc44f1273eaf43e8acda26c6c3e6ab48d4e614716a551f937446b02e9b",
+      "data/task4_v5_resources/manifest.json": "bff1974aba03afc70fd629219e316d64df175839f6c18e7f88af7f272a48b946",
+      "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+      "results/current_all16_broadband_review/verification.json": "e85eb6cbdfb80f1aee778a22fd6977b526d0fd10b2387aecbf4d31ec84fbe060"
+    },
+    "scope": "Publisher-field classification and one-point source-definition diagnostic; no source correction or primary mutation, no exact rolling-window or boundary certification, no Monte Carlo replay."
   }
 }

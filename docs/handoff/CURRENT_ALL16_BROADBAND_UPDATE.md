@@ -1,0 +1,11 @@
+# All-sixteen-city broadband fields and controlled comparison
+
+The original sixteen broadband points are now systematically classified against the same archived publisher snapshot: **15 city fixed-download medians and one Singapore country fixed-download mean**. The all-city classifier and independent JSON verification preserve missing city-mean fields as unavailable; no country row substitutes for another city's measurement. Publisher matches do not recover original extraction lineage or certify municipal geography.
+
+The source-definition alternative changes only Singapore from the retained 667.71 Mbps mean to the matching 476.02 Mbps median in temporary V203 arrays. All other 159 cells and the original CSV remain unchanged. Singapore's fixed-weight interval moves from 55.23172–63.53485 to 54.88014–63.22937; its equal-weight interval moves from 54.38530–66.13833 to 54.06416–65.88253. It remains rank 3. No city decision rank changes, fixed weights still select Oslo, equal weights still select Zurich, and both scenarios retain 16 possible and zero necessary champions.
+
+Mean score width increases by 0.00288119 fixed-weight points and 0.00408349 equal-weight points in the alternative. The improvement is complete source-field classification and quantified sensitivity, not a precision gain. Primary admissions and actual primary interval reduction are zero. The September 2026 group also exposes raw aggregate_date/global_index_date fields; these are recorded without inventing exact rolling-window boundaries or relabelling the measurements as 2025.
+
+Evidence: `research/2026-a/data/current_all16_broadband_fields/` and `research/2026-a/results/current_all16_broadband_review/`. Independent source JSON and scalar calculations verify 320 bound rows and 64 city/scenario/weight cases. The current extension and acquisition registries link the diagnostic separately from primary V203. The selected source-route index now contains 27 entries.
+
+All 548 science, 77 supplementary, ten withdrawal and 24 edition evidence entries remain intact, together with the seven manuscript dependencies in both checkouts and the current PDF. The 27-page/63-reference paper is unchanged; no extra Overleaf entry is created. Full source certification, whole-team AI records, registration and final contest delivery remain pending. The long-term goal stays active.

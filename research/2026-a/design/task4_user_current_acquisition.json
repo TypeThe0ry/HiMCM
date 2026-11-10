@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 26,
+    "routes": 27,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -335,5 +335,20 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Compatible contract teachingFTE permitted; no contact-hour conversion required. Official Jan/NovPTR reference-pair convention is not same-date measurement. Source row and broadband field verified without constructing an unsupported city interval."
+  },
+  "all16_broadband_field_review": {
+    "data": "data/current_all16_broadband_fields",
+    "results": "results/current_all16_broadband_review",
+    "verification": "results/current_all16_broadband_review/verification.json",
+    "verification_sha256": "e85eb6cbdfb80f1aee778a22fd6977b526d0fd10b2387aecbf4d31ec84fbe060",
+    "publisher_values_classified": 16,
+    "city_fixed_median_matches": 15,
+    "Singapore_country_fixed_mean_match": 1,
+    "original_extraction_lineages_established": 0,
+    "controlled_alternative": "Only Singapore 667.71 mean to476.02 median; primary unchanged",
+    "all_decision_ranks_unchanged": true,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false
   }
 }

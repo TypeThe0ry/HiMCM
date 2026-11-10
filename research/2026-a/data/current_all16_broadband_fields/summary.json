@@ -1,0 +1,182 @@
+{
+  "purpose": "Exact-value field classification of the 16 original submitted broadband values against one archived Speedtest Global Index snapshot.",
+  "input": {
+    "path": "research/2026-a/data/task4_v117_team_intake/city_indicators.csv",
+    "sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "rows": 16,
+    "lineage_note": "The original CSV contains no extraction URL; a publisher match does not establish that the original value was taken from this archive."
+  },
+  "source": {
+    "path": "research/2026-a/data/task4_v5_resources/ookla_global_index.html",
+    "url": "https://www.speedtest.net/global-index",
+    "sha256": "fe1747fc44f1273eaf43e8acda26c6c3e6ab48d4e614716a551f937446b02e9b",
+    "bytes": 1259560,
+    "manifest_sha256_matches": true,
+    "manifest_accessed": "2026-11-07",
+    "publication_label": "September 2026",
+    "rolling_period_note": "mid-month for the previous three months.",
+    "date_precision": "The page states the publication label and rolling-quarter policy; exact window boundaries are not assigned here."
+  },
+  "geography": {
+    "city_matching": "City name (explicit aliases only) and country must match before comparing values; matching is not done by value across different cities.",
+    "alias_map": {
+      "Zurich": "Zürich"
+    },
+    "singapore_fallback": "Singapore country-level row may be compared only to submitted Singapore (country-city-state), whose intake flag is NATIONAL. This is reported as a country-level fallback, not a city-row match.",
+    "other_country_rows": "Not used as substitutes for city measurements.",
+    "publisher_boundary": "The archived table does not supply municipal polygons or prove equivalence to city-proper boundaries."
+  },
+  "fields": {
+    "fixedMedian": "fixed broadband median download",
+    "fixedMean": "fixed broadband mean download",
+    "mobileMedian": "mobile broadband median download",
+    "mobileMean": "mobile broadband mean download"
+  },
+  "counts": {
+    "fixedMedian": 15,
+    "fixedMean": 1,
+    "mobileMedian": 0,
+    "mobileMean": 0,
+    "no_exact_match": 0,
+    "city_median_exact_match": 15,
+    "singapore_country_mean_fallback": 1
+  },
+  "field_row_availability": {
+    "fixedMedian": {
+      "city_rows": 15,
+      "singapore_country_fallback_rows": 1,
+      "unavailable": 0
+    },
+    "fixedMean": {
+      "city_rows": 0,
+      "singapore_country_fallback_rows": 1,
+      "unavailable": 15
+    },
+    "mobileMedian": {
+      "city_rows": 15,
+      "singapore_country_fallback_rows": 1,
+      "unavailable": 0
+    },
+    "mobileMean": {
+      "city_rows": 0,
+      "singapore_country_fallback_rows": 1,
+      "unavailable": 15
+    }
+  },
+  "matches": [
+    {
+      "city": "Vienna",
+      "field": "fixedMedian",
+      "value": "152.53",
+      "rank": 77,
+      "geography_level": "city"
+    },
+    {
+      "city": "Zurich",
+      "field": "fixedMedian",
+      "value": "286.35",
+      "rank": 18,
+      "geography_level": "city"
+    },
+    {
+      "city": "Helsinki",
+      "field": "fixedMedian",
+      "value": "154.66",
+      "rank": 76,
+      "geography_level": "city"
+    },
+    {
+      "city": "Berlin",
+      "field": "fixedMedian",
+      "value": "102.46",
+      "rank": 98,
+      "geography_level": "city"
+    },
+    {
+      "city": "London",
+      "field": "fixedMedian",
+      "value": "162.59",
+      "rank": 72,
+      "geography_level": "city"
+    },
+    {
+      "city": "Amsterdam",
+      "field": "fixedMedian",
+      "value": "196.69",
+      "rank": 59,
+      "geography_level": "city"
+    },
+    {
+      "city": "Stockholm",
+      "field": "fixedMedian",
+      "value": "234.39",
+      "rank": 38,
+      "geography_level": "city"
+    },
+    {
+      "city": "Paris",
+      "field": "fixedMedian",
+      "value": "225.21",
+      "rank": 43,
+      "geography_level": "city"
+    },
+    {
+      "city": "Madrid",
+      "field": "fixedMedian",
+      "value": "279.22",
+      "rank": 21,
+      "geography_level": "city"
+    },
+    {
+      "city": "Milan",
+      "field": "fixedMedian",
+      "value": "161.92",
+      "rank": 74,
+      "geography_level": "city"
+    },
+    {
+      "city": "Dublin",
+      "field": "fixedMedian",
+      "value": "217.30",
+      "rank": 47,
+      "geography_level": "city"
+    },
+    {
+      "city": "Oslo",
+      "field": "fixedMedian",
+      "value": "150.76",
+      "rank": 78,
+      "geography_level": "city"
+    },
+    {
+      "city": "Prague",
+      "field": "fixedMedian",
+      "value": "96.08",
+      "rank": 103,
+      "geography_level": "city"
+    },
+    {
+      "city": "Warsaw",
+      "field": "fixedMedian",
+      "value": "235.49",
+      "rank": 36,
+      "geography_level": "city"
+    },
+    {
+      "city": "Singapore",
+      "field": "fixedMean",
+      "value": "667.71",
+      "rank": 1,
+      "geography_level": "country"
+    },
+    {
+      "city": "Tokyo",
+      "field": "fixedMedian",
+      "value": "235.46",
+      "rank": 37,
+      "geography_level": "city"
+    }
+  ],
+  "mixed_field_finding": "The submitted Singapore value 667.71 exactly matches the Singapore fixed broadband mean (country-level row, rank 1); the same archived snapshot lists 476.02 for Singapore fixed broadband median. The other 15 submitted values exactly match their named city rows in fixed broadband median. This is a publisher-field classification, not proof of original CSV extraction lineage.",
+  "interpretation": "A nonmatch is an unresolved source/value match in this archived snapshot; it does not establish that the submitted value is erroneous. Blank field cells mean the corresponding city-level field was unavailable in this snapshot, not zero."
+}

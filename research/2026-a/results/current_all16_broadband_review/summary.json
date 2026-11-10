@@ -1,0 +1,111 @@
+{
+  "primary_model": "V203 unchanged",
+  "scenario": "Only Singapore broadband point uses the matching fixed-median field in a temporary copy",
+  "original_value": 667.71,
+  "alternative_value": 476.02,
+  "original_utility": 0.8697424808847091,
+  "alternative_utility": 0.8263949168431651,
+  "changed_cells": 1,
+  "other159cells_unchanged": true,
+  "rank_rows": 64,
+  "bound_rows": 320,
+  "cases": [
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.82232695332216,
+      "Singapore": {
+        "score_lower": 55.23172014772811,
+        "score_upper": 63.534852212121685,
+        "max_regret": 16.95206672320947,
+        "decision_rank": 3
+      }
+    },
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.39181162388826,
+      "Singapore": {
+        "score_lower": 54.38529656645798,
+        "score_upper": 66.1383280622485,
+        "max_regret": 19.52536187336473,
+        "decision_rank": 3
+      }
+    },
+    {
+      "scenario": "Singapore_median_alternative",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.825208148134985,
+      "Singapore": {
+        "score_lower": 54.88013564797258,
+        "score_upper": 63.22936682937137,
+        "max_regret": 17.303651222965,
+        "decision_rank": 3
+      }
+    },
+    {
+      "scenario": "Singapore_median_alternative",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.395895110349663,
+      "Singapore": {
+        "score_lower": 54.0641619173034,
+        "score_upper": 65.88252919647641,
+        "max_regret": 19.84649652251931,
+        "decision_rank": 3
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "Singapore_lower_change": -0.35158449975553197,
+      "Singapore_upper_change": -0.30548538275031234,
+      "mean_width_change": 0.0028811948128257825,
+      "recommendation_changed": false
+    },
+    {
+      "weight_reference": "equal",
+      "decision_rank_changes": 0,
+      "Singapore_lower_change": -0.3211346491545797,
+      "Singapore_upper_change": -0.25579886577209265,
+      "mean_width_change": 0.004083486461404107,
+      "recommendation_changed": false
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "source_sha256": {
+    "data/task4_v5_resources/ookla_global_index.html": "fe1747fc44f1273eaf43e8acda26c6c3e6ab48d4e614716a551f937446b02e9b",
+    "data/task4_v5_resources/manifest.json": "bff1974aba03afc70fd629219e316d64df175839f6c18e7f88af7f272a48b946",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/current_all16_broadband_fields/comparison.csv": "dce07345faa469c8d1510f8a6a4bc97d698635af612dd016d2b94132d2206c5c",
+    "data/current_all16_broadband_fields/summary.json": "6d3b09725aede06d8c1e0c9b01e38a383cb44e09f264bf43e1b03d09a559b566",
+    "scripts/task4_current_broadband_definition.py": "c56e78a31132c7152c6f4387dad07ae15058a0b1df4244d501770d9758c06196"
+  },
+  "output_sha256": {
+    "bounds.csv": "f13abb60bb69f22c026a11c687c835fd176e0766f12307724ff3e3524174adac",
+    "ranks.csv": "63571651fe1a9ab09988af28e3109df2dae061e20bd9a871d6a6107fa09fb7f9"
+  },
+  "scope": "Statistic-definition sensitivity, not a primary correction, new observation, missing-data admission, uncertainty reduction, original extraction lineage or geographic harmonization. Same fixed ideal points, weights and all other ranges retained. No Monte Carlo replay or future forecast."
+}
