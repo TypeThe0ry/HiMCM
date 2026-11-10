@@ -1,0 +1,41 @@
+{
+  "classification_suggestion": "reviewed_original_lineage_and_rate_unresolved_count_only_match",
+  "input": {
+    "path": "research/2026-a/data/task4_v117_team_intake/city_indicators.csv",
+    "sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "city": "Oslo",
+    "homicide_per_100k": 1.71,
+    "homicide_year": 2008,
+    "flag": "STALE",
+    "homicide_numerator": 12,
+    "separate_population": 727797,
+    "separate_population_year": 2025
+  },
+  "eurostat_current_extract": {
+    "extraction_files": [
+      "eurostat_offences_2008.json",
+      "eurostat_victims_2008.json"
+    ],
+    "freq": "A",
+    "cities": "NO001C",
+    "current_city_label": "Oslo (greater city)",
+    "time": "2008",
+    "unit_values": {
+      "NR": 12,
+      "P_HTHAB": 2.14
+    },
+    "victim_sex": "T",
+    "updated": "2026-04-29T11:00:00+0200"
+  },
+  "matching_and_limits": {
+    "year_match": true,
+    "count_numeric_match": true,
+    "rate_numeric_match": false,
+    "original_extraction_lineage_established": false,
+    "exact_2008_boundary_established": false,
+    "original_rate_denominator_established": false,
+    "prior_review_absence_established": false,
+    "recommended_primary_admissions": 0,
+    "input_or_model_change": false
+  }
+}

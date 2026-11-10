@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "file": "eurostat_offences_2008.json",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_hom_ocit?lang=EN&cities=NO001C&time=2008",
+      "retrieved_utc": "2026-11-10T23:08:10.568315+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 2507,
+      "sha256": "5f1dede57a72a3eaf7ce08a36dd58dbcc1a56d2e37674a19082cd3e3b5f6eb52"
+    },
+    {
+      "file": "eurostat_victims_2008.json",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_hom_vcit?lang=EN&cities=NO001C&time=2008",
+      "retrieved_utc": "2026-11-10T23:08:11.077494+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 2603,
+      "sha256": "df83803e194819343e96b828663527afced9bc4ca6f9226fa7a7f9c20c2bcd69"
+    },
+    {
+      "file": "eurostat_crime_metadata.html",
+      "url": "https://ec.europa.eu/eurostat/cache/metadata/EN/crim_sims.htm",
+      "retrieved_utc": "2026-11-10T23:08:12.679084+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 467629,
+      "sha256": "9e5399d0399ff1f55fc97944fa733c0724f366379d997bd510b6ce9ffd373bfa"
+    },
+    {
+      "file": "eurostat_guide_2008_2016.pdf",
+      "url": "https://ec.europa.eu/eurostat/documents/64346/9069646/Methodological%20Guide%202008-2016.pdf",
+      "retrieved_utc": "2026-11-10T23:08:14.024927+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "bytes": 298135,
+      "sha256": "06673518753a6122abe0290f23aa0d50e1c3770cfa5433b56b372e50f556dc7e"
+    }
+  ]
+}

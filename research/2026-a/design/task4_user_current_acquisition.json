@@ -1048,5 +1048,36 @@
     "changes_primary_model": false,
     "changes_manuscript": false,
     "next_action": "Do not convert173 teacher persons to FTE. Reopen only with actual teaching workload, matched upper-secondary population/locations,reference date and provider overlap evidence."
+  },
+  "oslo_homicide_source_followup": {
+    "verification": "results/current_oslo_homicide_lineage/verification.json",
+    "verification_sha256": "240cdb5dbdb311dfac7e9568c01e12c3d2e54afc86a63968662c8fab44141bb6",
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "data": "data/current_oslo_homicide_lineage",
+    "original_rate_preserved": 1.71,
+    "published_current_series_rate": 2.14,
+    "count_only_match": 12,
+    "original_extraction_lineage_verified": false
+  },
+  "zurich_outdoor_pool_candidate": {
+    "verification": "results/current_zurich_outdoor_preview/verification.json",
+    "verification_sha256": "738f4193abddf4de6576d8cb4f3d5053154b971304a289339e859ecd471932fb",
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "data": "data/current_zurich_outdoor_pool_route",
+    "candidate_venue_count": 16,
+    "retained_venue_count": 12,
+    "conditional_mean_width_reduction": {
+      "fixed": 0.011584628299312172,
+      "equal": 0.023077715307241675
+    },
+    "qualification_and_full_controlled_migration_pending": true,
+    "peer_review": "results/current_zurich_outdoor_preview/peer_review.json",
+    "peer_review_sha256": "7eb9a9948266bcd1cff9534e8b5fdc400fa8dc25ce713dd880f2cf7892431998"
   }
 }

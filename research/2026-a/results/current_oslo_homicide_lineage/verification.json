@@ -1,0 +1,47 @@
+{
+  "status": "pass bounded archive and JSON-stat check",
+  "source_sha256": {
+    "data/current_oslo_homicide_lineage/README.md": "0498bf3fc4cc59329f9631562495590e6885e416c7cc57f3b05ab4419877ad34",
+    "data/current_oslo_homicide_lineage/eurostat_crime_metadata.html": "9e5399d0399ff1f55fc97944fa733c0724f366379d997bd510b6ce9ffd373bfa",
+    "data/current_oslo_homicide_lineage/eurostat_guide_2008_2016.pdf": "06673518753a6122abe0290f23aa0d50e1c3770cfa5433b56b372e50f556dc7e",
+    "data/current_oslo_homicide_lineage/eurostat_offences_2008.json": "5f1dede57a72a3eaf7ce08a36dd58dbcc1a56d2e37674a19082cd3e3b5f6eb52",
+    "data/current_oslo_homicide_lineage/eurostat_victims_2008.json": "df83803e194819343e96b828663527afced9bc4ca6f9226fa7a7f9c20c2bcd69",
+    "data/current_oslo_homicide_lineage/scope.json": "a14ceeba9eb0152ae51c3eef05e2a806841d99905e0891af19a45f77d167baad",
+    "data/current_oslo_homicide_lineage/sources.json": "5d687945f531e159da6019f3276959782283b4a9448055492677ef5913a1af10",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/audit_current_oslo_homicide_lineage.py": "e51ac956ba3cd350914ddba01f5fe98de13d4cfdaed51a29fad418ba4a269d98"
+  },
+  "decoded_cells": [
+    {
+      "dataset": "CRIM_HOM_OCIT",
+      "unit": "NR",
+      "value": 12
+    },
+    {
+      "dataset": "CRIM_HOM_OCIT",
+      "unit": "P_HTHAB",
+      "value": 2.14
+    },
+    {
+      "dataset": "CRIM_HOM_VCIT",
+      "unit": "NR",
+      "value": 12
+    },
+    {
+      "dataset": "CRIM_HOM_VCIT",
+      "unit": "P_HTHAB",
+      "value": 2.14
+    }
+  ],
+  "submitted_rate": 1.71,
+  "rate_numeric_match": false,
+  "numerator_numeric_match": true,
+  "original_extraction_lineage_verified": false,
+  "historical_boundary_and_original_denominator_verified": false,
+  "independent_review": "Luna tbz_packet_check: all4 raw hashes/sizes, independent dimension decoding, original CSV and methodological guide pp11–12 checked; no issue found.",
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "scope": "Count-only current-series match, distinct offence/victim concepts. Neither a replacement rate nor proof the supplied rate is wrong. The current greater-city label does not establish the2008 boundary."
+}

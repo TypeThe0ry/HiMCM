@@ -55,6 +55,8 @@ PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python resea
 
 ## 最近研究增量与下一步
 
+- [Oslo 凶杀来源对照／Zurich 四泳池候选](CURRENT_SOURCE_CANDIDATES.md)：Eurostat 当前2008序列数量12匹配，但率2.14不匹配原1.71；历史边界／原分母未定，原值保持。四处人工泳池季节性候选与既有12地址不同；Auhof整修暂缓，Oberengstringen排除。隔离16场馆预览固定／等权均宽可减少0.01158463／0.02307772，选择仍Oslo／Zurich、16可能／0必要；本轮0准入、0实际收窄，V205与论文保持。下一步核地理／季节供给口径及完整受控迁移，不把条件预览当已更新主榜。
+
 - [TBZ 教学工作量路线](../../research/2026-a/data/current_zurich_tbz_workload_route/README.md)：官方 2024 年报 pp.33–34 的 173 为教师人数（含部门负责人），未给实际教学 FTE 或匹配的 2024/25 统计日。原 PDF、完整提取及独立核对已保存，0 准入、0 实际收窄，V205 和论文保持。没有新的匹配工作量证据，不重复此报告或换算人数。队友整理修改时可使用[团队定稿空表](TEAM_FINALIZATION.md)，按所核论文提交／PDF 对应现有 12 项待办；填表本身不关闭门槛或授权提交，填写后的身份及原始记录私存。
 
 - **V205已启用并完成本地论文迁移**：见[启用记录](CURRENT_V205_ACTIVATION.md)。773科学绑定、31主案例／186主MC／37扩展MC、当前三组敏感性及操作优先级已核；干净论文HEAD的27页文本／灰度复现通过。67→74份登记报告随新增证明核对。下一轮从V205继续，不重做已完成Prague资格／暂存；固定Oslo／等权Zurich、16可能／0必要，仍12交付待办。
