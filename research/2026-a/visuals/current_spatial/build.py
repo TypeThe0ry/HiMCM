@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,zipfile,hashlib,math,datetime,io,concurrent.futures
-import numpy as np, requests
+import numpy as np
 from PIL import Image,ImageDraw
 import matplotlib
 matplotlib.use('Agg')
@@ -25,7 +25,14 @@ for city,(id,dates) in CITIES.items():
  cities[city]=dict(polys=polys,vals=vals,pops=pops,good=good,bounds=bounds)
  records.append(dict(city=city,zip=str(f.relative_to(ROOT)),sha256=actual,total_cells=len(fs),populated_cells=len(pops),retained_residents=float(pops.sum()),valid_residents=float(pops[good].sum()),unknown_residents=float(pops[~good].sum()),within_30_residents=float(pops[good & (vals<=30)].sum()),within_30_share_of_valid=float(pops[good & (vals<=30)].sum()/pops[good].sum()),max_valid_minutes=float(vals[good].max()),bounds_3857=bounds))
 (P/'metrics.json').write_text(json.dumps(records,indent=2))
+import csv
+fields=['city','total_cells','populated_cells','retained_residents','valid_residents','unknown_residents','within_30_residents','within_30_share_of_valid','max_valid_minutes']
+with (P/'metrics.csv').open('w',newline='') as f:
+ writer=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');writer.writeheader();writer.writerows({k:r[k] for k in fields} for r in records)
 def fetch(task):
+ if (P/'imagery_manifest.json').exists():
+  raise RuntimeError('Existing acquisition archive is immutable; use a new archive directory.')
+ import requests  # Only the original acquisition helper needs an HTTP client.
  city,date=task; bb=cities[city]['bounds']; q={'SERVICE':'WMS','VERSION':'1.1.1','REQUEST':'GetMap','LAYERS':LAYER,'STYLES':'','SRS':'EPSG:3857','BBOX':','.join(map(str,bb)),'WIDTH':1000,'HEIGHT':800,'FORMAT':'image/png','TIME':date,'TRANSPARENT':'TRUE'}; req=requests.Request('GET',URL,params=q).prepare(); rec=dict(city=city,requested_date=date,product_date='not independently verified; WMS daily request',url=req.url,bounds_3857=bb,crs='EPSG:3857',pixels=[1000,800],source_resolution_m=30,retrieval_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),license='NASA imagery generally not copyrighted in US; NASA media usage guidelines apply')
  try:
   r=requests.get(req.url,timeout=70); rec['http_status']=r.status_code; r.raise_for_status(); im=Image.open(io.BytesIO(r.content)).convert('RGBA'); a=np.asarray(im); file=P/'imagery'/f'{city.lower()}_{date}.png';file.write_bytes(r.content);rec.update(path=str(file.relative_to(P)),sha256=hashlib.sha256(r.content).hexdigest(),alpha_coverage=float((a[:,:,3]>0).mean()),rgb_std=float(a[:,:,:3].std()),bytes=len(r.content))
