@@ -1,0 +1,32 @@
+{
+  "version": "V195",
+  "city": "Helsinki",
+  "indicator": "upper_secondary_ptr",
+  "bounded_new_routes": 2,
+  "failed_route": {
+    "url": "https://vos.oph.fi/rap/raportti.html",
+    "browser_result": "502 Bad Gateway",
+    "direct_result": "SSL certificate chain verification failed",
+    "certificate_verification_disabled": false,
+    "numeric_observation_obtained": false
+  },
+  "successful_route": {
+    "document": "HE143/2025",
+    "provider": "Parliament of Finland",
+    "observation_period": "end of2022",
+    "geography": "Finland",
+    "measurement": "Approximate number of persons working in both lower and upper secondary education",
+    "reported_approximate_persons": 900,
+    "reported_approximate_share_percent": 4,
+    "FTE": false,
+    "registry_classification_caveat": "Depends on municipal recording, payroll and work organization; identification not necessarily fully reliable",
+    "raw_response_type": "HTML with document text embedded in application payload",
+    "city_FTE_upper_envelope_certified": false,
+    "ratio_from_rounded_counts_computed": false
+  },
+  "admitted": false,
+  "primary_admissions": 0,
+  "actual_score_width_reduction": 0,
+  "reason": "No matched Helsinki school-location teaching FTE, matching pupil population, complete provider cover or certified numeric envelope.",
+  "model_or_manuscript_modified": false
+}

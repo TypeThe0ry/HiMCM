@@ -8,7 +8,9 @@ sources={
  'workforce_methodology_catalog_original.html':'https://nationaldata.ie/Standards/NationalDataMethodologyHub/DepartmentofEducationandYouth/TeacherWorkforceData/',
  'workforce_methodology_original.pdf':'https://nationaldata.ie/media/NationalDataie/MethodologyDocumentation/Department_of_Education_%26_Youth_Workforce_Data_Methodology.pdf',
 }
-assert not (O/'retrievals.json').exists(),'Existing raw capture must not be overwritten'
+existing=[p.name for p in [O/'retrievals.json', *[O/name for name in sources]] if p.exists()]
+if existing:
+ raise FileExistsError('Existing raw capture must not be overwritten: '+', '.join(existing))
 receipts=[]
 for name,url in sources.items():
  row=dict(file=name,url=url,attempt_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())

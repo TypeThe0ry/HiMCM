@@ -1,0 +1,24 @@
+{
+  "version": "V195",
+  "recorded_at_utc": "2026-11-10T01:01:14.157701+00:00",
+  "route_scope": "Two new official Tokyo one-way commute evidence routes; failed browser retrievals skipped, no table extracted.",
+  "routes": [
+    {
+      "url": "https://www.tokyo-pt.jp/info_provision/traffic",
+      "provider": "Tokyo Metropolitan Area Transportation Planning Council",
+      "retrieval_method": "web.open",
+      "result": "Tool reported 502 Bad Gateway; no original response bytes archived",
+      "source_table_admitted": false
+    },
+    {
+      "url": "https://www.mlit.go.jp/common/001447966.pdf",
+      "provider": "MLIT",
+      "retrieval_method": "web.open",
+      "result": "Tool reported404NotFound; no original PDF archived",
+      "source_table_admitted": false
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_score_width_reduction": 0,
+  "scope_rule": "Search snippets neither establish Tokyo23ward resident population nor supply a usable numerical distribution. No values inferred from snippets, no daily-total division by two."
+}

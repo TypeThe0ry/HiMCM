@@ -1,0 +1,11 @@
+# V195 Helsinki: no matching city teaching denominator from two new routes
+
+The bounded check adds a new official observation about the difficulty of allocating teachers between school levels. It supplies **zero admissions and zero actual score-width reduction**; Helsinki's upper-secondary PTR remains unknown.
+
+The OPH VOS report directory failed in the browser with HTTP 502 and in the direct collector with a certificate-chain verification error. No original from this route was obtained; certificate verification was retained and the route was skipped. Search listings do not constitute a numeric teacher denominator.
+
+The second route, [Parliament's HE 143/2025 document](https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2025-AK-60592), contains an embedded source passage reporting approximately 900 teachers working in both lower and upper secondary education at the end of 2022, approximately 4% of those teacher groups nationally. Its registry-identification caveat ties the classification to municipal recording, payroll and work-organization practices. These are approximate national person counts, not Helsinki teaching FTE or a certified numerical upper envelope. Dividing 900 by 4% would create a rounded national estimate, not the required bound; no such ratio is used.
+
+The ordinary visible HTML contains only the site title, but the complete archived HTTP 200 response embeds the document text in its application payload. `extract.py` locates the literal passage and checks its statements against the preserved raw response. The same passage is independently readable in the [official Finlex copy](https://www.finlex.fi/fi/hallituksen-esitykset/2025/143); this cross-check is not an archived original in this package. `retrievals.json` records actual response metadata, UTC time, size and SHA256. `scope.json` records the decision.
+
+Earlier OPH 2019 teacher-series navigation, Helsinki municipal 787 headcount, city student series and estimated national FTE were recognized as existing routes. They were not redownloaded or represented as new measurements. This iteration does not change the user CSV, V192 science, V193 paper or current navigation.
