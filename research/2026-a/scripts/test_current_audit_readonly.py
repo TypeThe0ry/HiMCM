@@ -37,6 +37,7 @@ for name in ['current_ai_review','current_point_error','current_joint_collection
  files.add(R/'results'/name/'verification.json')
 files.add(R/'results/current_joint_collection/optimal_three_cell_sets.csv')
 files.update([R/'results/current_paper_review/current_verification.json',R/'results/current_edition_paper_review/review.json',G/'paper/current/main.pdf'])
+files.add(R/'results/current_remote_definition_review/review.json')
 for p in v['current_files_sha256']:
  files.add(P/p);files.add(G/'paper/current'/p)
 require(len(v['current_files_sha256'])==7,'paper dependency count')

@@ -1,0 +1,58 @@
+{
+  "status": "resolved_by_new_remote_wording",
+  "recorded_utc": "2026-11-10T12:50:54.116194+00:00",
+  "baseline_overleaf_commit": "02e959e932be2291c55cd711976d7effeb05ebd3",
+  "baseline_source_sha256": "2a4d814f2c28657ae343238f5a06ab3f9aa501f52bc965bda18c9b1150e6e59f",
+  "baseline_pdf_sha256": "0f42cde577c329b9346cee18e8656da9ad7c37e9b50a54e8c8c2e12d57c1c4ef",
+  "remote_commit": "c27ca4fd2d40c2cc869fc19219d8b753f9fb6037",
+  "remote_source_sha256": "236a261277b35f209ff198f06c39966d3e1d2113458d60051a8395cdcfcd92ea",
+  "remote_change": "Preserved all three remote paragraph edits: abstract numbers, definition and transfer-station wording",
+  "owned_change": "Only redundant candidate-list paragraph compressed; sample size/countries/nonrepresentativeness and scope preserved; complete names remain in existing table and figures",
+  "current_source_sha256": "bad629dd767340f02da9c53a1bb2379f83c849385cd16ea129eb2dfbe00f2fd8",
+  "current_pdf_sha256": "2c516e44017b95515bd6d8b88a272338c62c64d5f35cc401d1e194bd0d832980",
+  "remote_intro": "household pressures and everyday resources. We define \"best\" as one that minimizes its worst-case shortfall behind any rival within the retained ranges. That definition favors a city that is hard to beat over one that merely looks strong once missing values are filled in. It provides a starting recommendation for the",
+  "old_intro_sha256": "60467921470ea8580b9cf5af9bc0a6d788bd1ad59a5aeb22d964ec85661addf8",
+  "remote_intro_sha256": "bc8759123300d55ca3a9a946beeabf5b8508550abb3d577224df1124567b933b",
+  "old_sample_sha256": "290c2025fbb95e9dfc84df643ba9ea8ef6a1adeebf0106bee479d99728e54df6",
+  "new_sample_sha256": "51d1b7fdf29f918970bcb56ddf03f8927d9a920c8d89486f84f07cb072a7518d",
+  "decision_comparison": {
+    "fixed": {
+      "maximin": [
+        "Oslo"
+      ],
+      "minimax_regret": [
+        "Oslo"
+      ]
+    },
+    "equal": {
+      "maximin": [
+        "Oslo"
+      ],
+      "minimax_regret": [
+        "Zurich"
+      ]
+    }
+  },
+  "semantic_issue": null,
+  "authorization_status": "user_approved_only_definition_fix; no application needed because newer remote already resolved it",
+  "proposed_replacement": "We define ``best'' as the city with the smallest maximum regret: its largest possible score shortfall from the best alternative across the retained evidence ranges.",
+  "requested_independent_reviewer_model": "gpt-6.1-terra",
+  "serving_build_verified": false,
+  "review_scope": "Focused rereview of latest remote definition, rounded abstract values and owned sampling compression; not wholepaper certification",
+  "incoming_only_build_pages": 28,
+  "incoming_only_main_reference_pages": 26,
+  "current_total_pages": 27,
+  "current_main_reference_pages": 25,
+  "changed_text_and96dpi_pages": [
+    1,
+    3,
+    6
+  ],
+  "other26pages_unchanged": null,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "Latest remote semantics resolved. All teammate wording retained; only owned sampling paragraph compressed to restore27pages. Data/weights/equations/class/bibliography/figures/AI unchanged. Numeric source and layout checks remain scoped, not final team/contest readiness.",
+  "proposed_replacement_status": "obsolete; not applied",
+  "other24pages_unchanged": true,
+  "rereview_result": "Latest remote definition matches minimax regret. Abstract Oslo56.43\u201363.90/R15.75,ZurichR16.94,SingaporeR16.95 and equalZurich matchV203. Sixteen-country sample scope and full table names preserved."
+}

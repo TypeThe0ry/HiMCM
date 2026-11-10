@@ -1,5 +1,11 @@
 # Project instructions
 
+## Collaborative Overleaf freshness — user instruction, 2026-11-10
+
+- Teammates continue editing Overleaf; fetch before each manuscript work cycle and again before commit/push. Fast-forward a clean local checkout to the newest remote main before applying owned changes.
+- If remote changes arrive during local work, preserve them and reapply only the verified in-scope local diff. Never upload an older whole manuscript over a teammate's newer version. Do not merge automatically during an audit that protects Git state.
+- The teammate plans to provide a revision document tomorrow. Use its actual contents and explicit edit scope when it arrives; do not pre-emptively rewrite their prose.
+
 ## Long-term goal and required writing skill — user instruction, 2026-11-08
 
 - Keep the long-term goal of improving the HiMCM paper and supporting materials active across iterations. Use [the persistent work plan](docs/handoff/LONGTERM_GOAL.md); finishing one iteration does not complete the long-term goal.

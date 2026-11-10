@@ -1,11 +1,11 @@
 {
   "status": "pass",
   "version": "Single current main on V203",
-  "runner_sha256": "a3abccbfcee7c00ba2ace36c1ebe4271abde5c384f82ec874994ce58a57ed805",
+  "runner_sha256": "a606b6e5eb1231d5bad5a25256c1cbdfae068d073060e0f1b8e26c958a8b1acf",
   "primary": "V203",
-  "canonical_pdf_sha256": "0f42cde577c329b9346cee18e8656da9ad7c37e9b50a54e8c8c2e12d57c1c4ef",
-  "paper_head": "02e959e932be2291c55cd711976d7effeb05ebd3",
-  "research_head": "3b1deaea322701d539144f6d9b228f87d56093e6",
+  "canonical_pdf_sha256": "2c516e44017b95515bd6d8b88a272338c62c64d5f35cc401d1e194bd0d832980",
+  "paper_head": "1cbec98b3c1bd86b7f2b2f4385c749ff105167f6",
+  "research_head": "e654580383123aa90743d9d466eb97b973ba672b",
   "environment": {
     "python": "3.11.18",
     "executable": "/data/scratch/himcm-current-check-env/bin/python",
@@ -152,7 +152,7 @@
     {
       "kind": "root",
       "passed": true,
-      "pdf_sha256": "073446646f3d23eb6caf7276e7a9c0152d9587c3cf3c5764b0f90312da86133c",
+      "pdf_sha256": "f4e1c762f7975601378e3c270fe355bb061ac0ae0ceb2a1e6f5b8e8a5e6f3485",
       "text_pages_equal": true,
       "grayscale_72dpi_pages_equal": 27,
       "underfull_paragraphs": 3,
@@ -161,11 +161,11 @@
         "tectonic",
         "--only-cached",
         "--outdir",
-        "/data/scratch/himcm-current-edition-reproduction/work-29l27po0/root/compiled",
+        "/data/scratch/himcm-current-team-update-reproduction/work-xvtqc3x3/root/compiled",
         "--keep-logs",
         "--keep-intermediates",
         "--makefile-rules",
-        "/data/scratch/himcm-current-edition-reproduction/root/dependencies.mk",
+        "/data/scratch/himcm-current-team-update-reproduction/root/dependencies.mk",
         "main.tex"
       ],
       "physical_pages": 27,
@@ -174,10 +174,10 @@
   ],
   "input_protection": {
     "science_files": 548,
-    "paper_and_navigation_files": 135,
+    "paper_and_navigation_files": 136,
     "changed": []
   },
-  "elapsed_seconds": 10.761,
+  "elapsed_seconds": 10.481,
   "submission_ready": false,
   "server_compile_verified": false,
   "scope": "Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; no fresh-machine,MC/source revalidation or online compile claim."

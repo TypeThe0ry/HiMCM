@@ -1,0 +1,38 @@
+{
+  "primary_model": "V203 unchanged",
+  "ledger_rows": 112,
+  "classification_counts": {
+    "not_included_in_bounded_classification": 58,
+    "publisher_value_match_scope_unverified": 43,
+    "reviewed_lineage_unresolved": 3,
+    "no_match_checked_cost_editions": 4,
+    "no_match_examined_PTR_series": 1,
+    "documented_value_match_different_stage": 2,
+    "publisher_match_different_statistic": 1
+  },
+  "original_extraction_lineages_verified": 0,
+  "fully_certified_measurements": 0,
+  "fixed_withdrawal_switches": 10,
+  "equal_withdrawal_switches": 35,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "results/current_point_withdrawal/cases.csv": "2bf0a71d9310bc4218b75a75a082fabbfe9d405f60571717f47c8f900938f0ba",
+    "results/current_point_withdrawal/verification.json": "84d384979588b7452927f55cfc689dc11be3f0c88dbabab0b792b8faf7992514",
+    "data/current_all16_cost_editions/comparison.csv": "33114bb6c0f16f0f8b252abae76f49ac266fe02c1d368c9ee587346e14f194e4",
+    "results/current_cost_edition_review/verification.json": "abe2d8b3716fc4f4dfb7e356a18f42afa5a599333c6218e4ff217a2477bddca5",
+    "data/current_all16_broadband_fields/comparison.csv": "dce07345faa469c8d1510f8a6a4bc97d698635af612dd016d2b94132d2206c5c",
+    "results/current_all16_broadband_review/verification.json": "e85eb6cbdfb80f1aee778a22fd6977b526d0fd10b2387aecbf4d31ec84fbe060",
+    "data/current_point_source_ledger/teacher_scope.json": "69a1c40b32509d30d1f5e435becd703907dbb541e26dedeea03cb104e5aa8f8b",
+    "results/current_oslo_pm_source_review/verification.json": "08c019d418eeca42e399e10a5f459352e426a75e5c7aa97fe35b902f194d1a05",
+    "data/current_oslo_he_scope/README.md": "cb6ddd3fde1d30fd4ef6ffa2c49727cfff75febb0729a942336547cbe0d3960b",
+    "data/current_zurich_homicide_scope/README.md": "42e3e93ecc62a2ca3c1eecbbeeb8b22ca4ec41746a43ad7003a1c411a5f1c71b",
+    "scripts/task4_current_point_source_ledger.py": "7e1c92cde5cc5096650dba5a8a986840fd6337d21acac4ae7466748a006f7ec8"
+  },
+  "output_sha256": {
+    "ledger.csv": "69c3733c16d4c16a9a5ce3d788b8054892e12cc4fa64cd1625ba3372d83d115c",
+    "review_priority.csv": "436c8fb6133aabe29f65501c3fc408547e60621d2209de6f07a112226ad2438c"
+  },
+  "scope": "Bounded imported evidence classification of112retainedpointUTILITYcells, not all nonemptyCSVvalues.48intervalcells and supplementary inventories remain in their existing registries. Classification is not input exclusion, source-error probability or proof of original extraction. Priority imports the existing ignorance stress, not a new scoring model or empirical error estimate."
+}

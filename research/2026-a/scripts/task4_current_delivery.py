@@ -43,6 +43,7 @@ def main():
  'TEAM-independent-entry':f'Single actual local main build; {total} pages; prior independent numerical audit and frozen AI window retained',
  'TEAM-shared-build':'Pending actual root current main compilation proof; online server compilation not verified'}
  proof_path=O/'verification.json'; proof=json.loads(proof_path.read_text()) if proof_path.exists() else {}
+ remote_definition=R/'results/current_remote_definition_review/review.json';definition_issue=remote_definition.exists() and json.loads(remote_definition.read_text()).get('authorization_status')=='pending_user_response'
  shared=(proof.get('status')=='pass' and proof.get('pdf_sha256')==sha(pdf) and proof.get('main_sha256')==sha(P/'main.tex') and proof.get('total_pages')==total and proof.get('main_and_reference_pages')==end)
  O.mkdir(exist_ok=True)
  if shared: updates['TEAM-shared-build']='Actual local root current main compiles to the independently audited PDF; clean Git rendering reproduction is recorded separately; online server compilation unverified'
@@ -72,6 +73,8 @@ def main():
   if key in updates:row['evidence']=updates[key]
   if key=='TEAM-shared-build' and shared: row['status']='technical_pass'; row['scope_or_remaining_action']='Local main entry verified; online server compilation and team integration remain unverified'
   if key=='PA-best':row['scope_or_remaining_action']=f"Fixed weights: {', '.join(choices['fixed'])}; equal weights: {', '.join(choices['equal'])}; conditional conservative recommendations,16 possible and zero necessary champions"
+  if key=='PA-best' and definition_issue:
+   row['status']='partial';row['scope_or_remaining_action']='Formal model remains minimaxregret/fixedOslo/equalZurich. Remote introduction suggests maximin (equalOslo); exact sentence correction awaits specific authorization. No certain champion.'
   if key=='TEAM-integration':
    row['evidence']='Single current owned main is active; teammate original is preserved in the GitHub archive'
    row['scope_or_remaining_action']='Final team acceptance and any specifically authorized teammate-text integration remain unverified'
@@ -81,7 +84,7 @@ def main():
   if key=='U-preserve': row['scope_or_remaining_action']='V203 admits only the626source-definedbusinventorylowerrefinement;otherinputsandrulespreserved'
   if key=='U-MC-precision': row['scope_or_remaining_action']='V203 simulation exports; IID within setting; no real-world winner probability or forecast calibration'
   if key=='CI-budget':row['scope_or_remaining_action']=f'{25-end}mainpagesremainunderretained25-pagebudget;notfinalsubmissioncertification'
- pending=[x['id'] for x in rows if x['status'] in {'partial','unverified','awaiting_team','not_ready','not_performed'}];assert len(pending)==(12 if shared else 13)
+ pending=[x['id'] for x in rows if x['status'] in {'partial','unverified','awaiting_team','not_ready','not_performed'}];assert len(pending)==(12 if shared else 13)+int(definition_issue)
  assert not hit('Exa','example') and hit('Exa','Exa assistance')
  for name,records in [('requirements.csv',rows),('anchor_hits.csv',anchors)]:
   with (O/name).open('w') as f:

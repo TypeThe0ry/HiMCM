@@ -1,0 +1,132 @@
+{
+  "title": "Bounded offline teacher–pupil-ratio source inventory",
+  "scope": "Five retained PTR entries from the user-provided 16-city CSV. This records what the cited local evidence supports; it does not establish original-cell lineage or model admission.",
+  "original_input": {
+    "path": "research/2026-a/data/task4_v117_team_intake/city_indicators.csv",
+    "sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "provenance_note": "The CSV has no source URLs, table/cell references, extraction rules, or denominator lineage. Its flags are contributor labels, not source validation."
+  },
+  "points": [
+    {
+      "city": "Vienna",
+      "original_value": 9.4,
+      "original_year": 2023,
+      "original_flag": "ok",
+      "original_unit": "pupils per teacher (as labeled; denominator definition unknown)",
+      "assessment": "not_assessed_in_this_bounded_ledger",
+      "match_type": null,
+      "source": null,
+      "limits": "No city-specific PTR source finding is recorded in the bounded source records examined for this ledger. This does not establish that Vienna was never reviewed."
+    },
+    {
+      "city": "Berlin",
+      "original_value": 12.5,
+      "original_year": 2025,
+      "original_flag": "ok",
+      "original_unit": "pupils per teacher (as labeled; denominator definition unknown)",
+      "assessment": "not_assessed_in_this_bounded_ledger",
+      "match_type": null,
+      "source": null,
+      "limits": "No city-specific PTR source finding is recorded in the bounded source records examined for this ledger. This does not establish that Berlin was never reviewed."
+    },
+    {
+      "city": "Oslo",
+      "original_value": 18.2,
+      "original_year": 2025,
+      "original_flag": "ok",
+      "original_unit": "pupils per teacher (as labeled; denominator definition unknown)",
+      "assessment": "reported_value_does_not_match_examined_official_2025_series",
+      "match_type": "year_and_administrative_geography_match; numerical_value_does_not_match; original lineage and full definition equivalence unestablished",
+      "source": {
+        "provider": "Statistics Norway (SSB)",
+        "table": "12609",
+        "metric_code": "KOSelevperlarsv0000",
+        "metric": "Pupils per contracted teacher man-years",
+        "value": 12.5,
+        "year": 2025,
+        "geography": "Oslo municipality (region 0300)",
+        "school_stage": "Upper-secondary education table; an examined older definition for the related indicator covers county-run upper-secondary schools and includes vocational-college students in those schools",
+        "unit": "pupils per contracted teacher man-year",
+        "denominator": "Contracted teacher man-years; the older definition excludes long absences and leadership/inspector positions",
+        "reference_period": "API metadata says 31 December; exact current numerator/denominator observation dates are not established",
+        "source_paths_and_sha256": [
+          {
+            "path": "research/2026-a/data/current_oslo_ptr_source/ssb_12609_response.json",
+            "sha256": "d0eb6582beeae7e63fd4fbfaceaf7c84e7e41b7f9d726cea7e98623cada3da0c"
+          },
+          {
+            "path": "research/2026-a/data/current_oslo_ptr_source/ssb_12609_metadata.json",
+            "sha256": "5d6b4796ce4ca5e9d1dedbe1cc44062d0cf0dab627971f7d03f9291d6849f01e"
+          },
+          {
+            "path": "research/2026-a/data/current_oslo_ptr_source/ssb_06942_definitions.html",
+            "sha256": "18f17721b90d16bbd2bb9eb7a10f27771ee34b62b09de98ce43a4c5c161dddd4"
+          }
+        ]
+      },
+      "limits": "The examined SSB value 12.5 does not identify the source of 18.2 and cannot disprove an unrecorded different source. Exact continuity between the older indicator definition and current table 12609 is not established; the older definition's provider and vocational-college scope may differ from the input's unknown scope."
+    },
+    {
+      "city": "Singapore",
+      "original_value": 12.7,
+      "original_year": 2024,
+      "original_flag": "ok",
+      "original_unit": "pupils per teacher (as labeled; denominator definition unknown)",
+      "assessment": "official_numerical_match_at_whole_secondary_scope",
+      "match_type": "numerical_match; whole-secondary source does not isolate upper secondary",
+      "source": {
+        "provider": "Singapore Ministry of Education",
+        "document": "Education Statistics Digest 2025",
+        "table": "B. Ratio of Students to Teaching Staff",
+        "printed_page": "xvi",
+        "value": 12.7,
+        "year": 2024,
+        "geography": "Singapore",
+        "school_stage": "Whole secondary",
+        "unit": "ratio of students to teaching staff; finer denominator details not specified in the cited local record",
+        "school_scope": "Government, government-aided, independent, specialised independent, and specialised schools",
+        "source_path_and_sha256": {
+          "path": "research/2026-a/data/task4_v117_team_intake/ptr_sources.json",
+          "sha256": "c47ac12e3f575b2f374f621315ba661a700f535693aff8d54588e51312d7b8a9"
+        }
+      },
+      "limits": "The source establishes a whole-secondary value, not an upper-secondary-only value. It does not by itself establish that the CSV cell was extracted from this document or define its exact teacher denominator."
+    },
+    {
+      "city": "Tokyo",
+      "original_value": 15.22,
+      "original_year": 2024,
+      "original_flag": "ok",
+      "original_unit": "pupils per teacher (as labeled; denominator definition unknown)",
+      "assessment": "official_numerical_match_to_lower_secondary_only",
+      "match_type": "numerical_match to Tokyo-to lower-secondary figure; not an upper-secondary match",
+      "source": {
+        "provider": "Statistics Bureau of Japan",
+        "document": "Statistical Observations of Prefectures 2026",
+        "pdf_page": 62,
+        "printed_page": 38,
+        "value": 15.22,
+        "year": 2024,
+        "geography": "Tokyo-to",
+        "school_stage": "Lower secondary",
+        "unit": "pupils per teacher ratio, as identified by the PTR source record",
+        "other_stage_values_in_same_record": {
+          "primary": 16.79,
+          "upper_secondary": 15.65
+        },
+        "source_paths_and_sha256": [
+          {
+            "path": "research/2026-a/data/task4_v117_team_intake/stat_japan_prefectures2026.pdf",
+            "sha256": "b69774a5f40cc223a75a99f0be7a720d8ccca0f0bb8ef54c4f243823cb7d77cf"
+          },
+          {
+            "path": "research/2026-a/data/task4_v117_team_intake/ptr_sources.json",
+            "sha256": "c47ac12e3f575b2f374f621315ba661a700f535693aff8d54588e51312d7b8a9"
+          }
+        ]
+      },
+      "limits": "The numerical match identifies a lower-secondary Tokyo-to figure, not evidence of the input cell's lineage. It is not the upper-secondary figure (15.65), and Tokyo-to is not the CSV's 23-ward population geography. The upper-secondary candidate still needs teacher-denominator and coverage checks against the intended model definition."
+    }
+  ],
+  "interpretation": "Retain the five user-authorized original entries as supplied; this ledger reports source alignment and scope only. A numerical match alone does not establish original-cell provenance, comparability, or model eligibility."
+}

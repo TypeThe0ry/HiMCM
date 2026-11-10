@@ -397,5 +397,27 @@
     "primary_admissions": 0,
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false
+  },
+  "retained_point_source_ledger": {
+    "results": "results/current_point_source_ledger",
+    "ledger": "results/current_point_source_ledger/ledger.csv",
+    "review_priority": "results/current_point_source_ledger/review_priority.csv",
+    "verification": "results/current_point_source_ledger/verification.json",
+    "verification_sha256": "c767c375801ca9bdb5eae5499d0628a6d27c3ed04033f18457a1cfb6d2877f11",
+    "point_utility_cells": 112,
+    "classification_counts": {
+      "not_included_in_bounded_classification": 58,
+      "publisher_value_match_scope_unverified": 43,
+      "reviewed_lineage_unresolved": 3,
+      "no_match_checked_cost_editions": 4,
+      "no_match_examined_PTR_series": 1,
+      "documented_value_match_different_stage": 2,
+      "publisher_match_different_statistic": 1
+    },
+    "original_extraction_lineages_verified": 0,
+    "fully_certified_measurements": 0,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "scope": "Bounded imported evidence, not an exhaustive historical source inventory.48intervalcells remain in existing registries. Existing ignorance stress supplies priorities, not error probabilities."
   }
 }
