@@ -1,0 +1,99 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="stops">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="group" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stop" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="line" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:int" name="id" use="required"/>
+                            <xs:attribute type="xs:string" name="name" use="required"/>
+                            <xs:attribute type="trafficType" name="type" use="required"/>
+                            <xs:attribute type="xs:boolean" name="isNight" use="optional"/>
+                            <xs:attribute type="xs:string" name="direction" use="required" />
+                            <xs:attribute type="xs:string" name="direction2" use="optional" />
+                            <xs:attribute type="xs:boolean" name="exitOnly" use="optional" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id" use="required"/>
+                  <xs:attribute type="xs:string" name="platform" use="optional"/>
+                  <xs:attribute type="xs:string" name="altIdosName" use="required"/>
+                  <xs:attribute type="xs:float" name="lat" use="required"/>
+                  <xs:attribute type="xs:float" name="lon" use="required"/>
+                  <xs:attribute type="xs:float" name="jtskX" use="required"/>
+                  <xs:attribute type="xs:float" name="jtskY" use="required"/>
+                  <xs:attribute type="xs:string" name="zone" use="required"/>
+                  <xs:attribute name="mainTrafficType" type="trafficTypeExtended" use="optional"/>
+                  <xs:attribute type="wheelchairAccessType" name="wheelchairAccess" use="optional"/>
+                  <xs:attribute type="xs:string" name="gtfsIds" use="required"/>
+                  <xs:attribute type="xs:boolean" name="isMetro" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="name" use="required"/>
+            <xs:attribute type="xs:string" name="districtCode" use="required"/>
+            <xs:attribute type="xs:boolean" name="isTrain" use="optional"/>
+            <xs:attribute type="xs:int" name="idosCategory" use="required"/>
+            <xs:attribute type="xs:string" name="idosName" use="required"/>
+            <xs:attribute type="xs:string" name="fullName" use="required"/>
+            <xs:attribute type="xs:string" name="uniqueName" use="required"/>
+            <xs:attribute type="xs:int" name="node" use="required"/>
+            <xs:attribute type="xs:int" name="cis" use="optional"/>
+            <xs:attribute type="xs:float" name="avgLat" use="required"/>
+            <xs:attribute type="xs:float" name="avgLon" use="required"/>
+            <xs:attribute type="xs:float" name="avgJtskX" use="required"/>
+            <xs:attribute type="xs:float" name="avgJtskY" use="required"/>
+            <xs:attribute type="xs:string" name="municipality" use="optional"/>
+            <xs:attribute name="mainTrafficType" type="trafficTypeExtended" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:dateTime" name="generatedAt" use="required" />
+      <xs:attribute type="xs:string" name="dataFormatVersion" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="wheelchairAccessType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="unknown" />
+      <xs:enumeration value="notPossible" />
+      <xs:enumeration value="possible" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="trafficType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="metro" />
+      <xs:enumeration value="tram" />
+      <xs:enumeration value="train" />
+      <xs:enumeration value="funicular" />
+      <xs:enumeration value="bus" />
+      <xs:enumeration value="ferry" />
+      <xs:enumeration value="trolleybus" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="trafficTypeExtended">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="undefined"/>
+      <xs:enumeration value="tram"/>
+      <xs:enumeration value="metroA"/>
+      <xs:enumeration value="metroB"/>
+      <xs:enumeration value="metroC"/>
+      <xs:enumeration value="metroAB"/>
+      <xs:enumeration value="metroBC"/>
+      <xs:enumeration value="metroAC"/>
+      <xs:enumeration value="train"/>
+      <xs:enumeration value="bus"/>
+      <xs:enumeration value="ferry"/>
+      <xs:enumeration value="funicular"/>
+      <xs:enumeration value="trolleybus"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

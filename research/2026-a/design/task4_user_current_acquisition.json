@@ -87,7 +87,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 55,
+    "routes": 57,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -976,5 +976,29 @@
     "changes_primary_model": false,
     "changes_manuscript": false,
     "next_action": "For one-coordinate lower-bound refinement, distinguish recommendation threshold PTRutility~0.11552655 from first identification exclusion~0.61982940. Seek verified disjoint actualcityupper-stage teachingFTE subsets and matching pupilcap; canton63925 not admitted. Do not repeat the same headcount,positionplan or allpurpose/returntrip routes."
+  },
+  "prague_bus_cross_snapshot_candidate": {
+    "sources": [
+      "results/current_prague_bus_node_candidate/README.md",
+      "data/current_prague_node_semantics/README.md",
+      "results/current_prague_bus_crosswalk/README.md"
+    ],
+    "verification": "results/current_prague_source_review/verification.json",
+    "verification_sha256": "925e0a5c740fba63a2c691cb6b2acea999d0126c6d0c2b0ae4eb9911f446412b",
+    "preview_verification": "results/current_prague_bus_candidate_preview/verification.json",
+    "preview_verification_sha256": "7bd313559ef056fea1c6a8433613b6d92c2653af7035c316955e3e0bb905f316",
+    "peer_review": "results/current_prague_source_review/peer_review.json",
+    "peer_review_sha256": "5ab82f9f5758484204e64229cc128dbfd7c58e0fd064f549850a19d3154681a3",
+    "conditional_source_defined_nodes": 942,
+    "overlapping_retained_metro_node_ids": 47,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "hypothetical_mean_width_reduction": {
+      "fixed": 0.14615082605197038,
+      "equal": 0.2872118754673494
+    },
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "next_action": "Qualification before integration: declare source-defined unit and duplicate-target handling, dated allowed public pickup/dropoff service, native stop ID bridge and municipal classification. Archived11-09 and JSON11-10 are distinct; isNight absent staysunknown. Candidate942replaces57 inpreview, neveradd. Use documented GTFSzone_region_type notfarezone; do not re-request completed city-list pages."
   }
 }

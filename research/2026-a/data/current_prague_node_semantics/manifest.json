@@ -1,0 +1,95 @@
+{
+  "scope": "Official PID semantics and selected archived timetable links; no feed download",
+  "requests": [
+    {
+      "file": "pid_opendata.html",
+      "requested_url": "https://pid.cz/o-systemu/opendata/",
+      "final_url": "https://pid.cz/o-systemu/opendata/",
+      "retrieved_utc": "2026-11-10T21:29:41.977505+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 128039,
+      "sha256": "74cec068a381592825edfab6d0fc4a7924c05a296adaa9a0dcf3ecbbda88f133"
+    },
+    {
+      "file": "pid_buses.html",
+      "requested_url": "https://pid.cz/autobusy/",
+      "final_url": "https://pid.cz/autobusy/",
+      "retrieved_utc": "2026-11-10T21:29:43.663085+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 112808,
+      "sha256": "bcf896f2166fa0c7435174eadf73894b8e37c95b2e7140bcfa18605999584b82"
+    },
+    {
+      "file": "pid_seasonal_2026.html",
+      "requested_url": "https://pid.cz/sezonni-vlaky-privozy-i-cyklobus-brdy-letos-naposledy-vyjedou-1-listopadu/",
+      "final_url": "https://pid.cz/sezonni-vlaky-privozy-i-cyklobus-brdy-letos-naposledy-vyjedou-1-listopadu/",
+      "retrieved_utc": "2026-11-10T21:29:44.877011+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 113532,
+      "sha256": "e98c4fdb0a5d76b9661d4982354dc619db70a338b47d6f050c1fe8089d8e5831"
+    },
+    {
+      "file": "pid_renumbering.html",
+      "requested_url": "https://pid.cz/precislovani-zejmena-nocnich-linek-pid/",
+      "final_url": "https://pid.cz/precislovani-zejmena-nocnich-linek-pid/",
+      "retrieved_utc": "2026-11-10T21:29:46.127164+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 104635,
+      "sha256": "b9e41c3863766e3b2ea78ae9794e8a9dc919ad6a4773ba7f8cd5e9ef956a3c42"
+    },
+    {
+      "file": "pid_calendar.html",
+      "requested_url": "https://pid.cz/jizdni-rady-podle-linek/kalendar-provozu/",
+      "final_url": "https://pid.cz/jizdni-rady-podle-linek/kalendar-provozu/",
+      "retrieved_utc": "2026-11-10T21:29:47.344646+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 125580,
+      "sha256": "46096a8277159bdb125e4d7b92db1da14625a3a6517b3fd5e960e78465e8ae6f"
+    },
+    {
+      "file": "pid_timetable_ametystova_245.html",
+      "requested_url": "https://pid.cz/zastavkove-jizdni-rady/?line=176&node=1274&inprague=1&nm=Ametystov%C3%A1",
+      "final_url": "https://pid.cz/zastavkove-jizdni-rady/?line=176&node=1274&inprague=1&nm=Ametystov%C3%A1",
+      "retrieved_utc": "2026-11-10T21:29:48.567967+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 90246,
+      "sha256": "9610404d260a3008ca636e1a0ddadfdbeb7c0c7b371a18965a55fd9038ef33cd"
+    },
+    {
+      "file": "pid_timetable_albertov_X90.html",
+      "requested_url": "https://pid.cz/zastavkove-jizdni-rady/?line=673&node=876&inprague=1&nm=Albertov",
+      "final_url": "https://pid.cz/zastavkove-jizdni-rady/?line=673&node=876&inprague=1&nm=Albertov",
+      "retrieved_utc": "2026-11-10T21:29:49.606121+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 90246,
+      "sha256": "9610404d260a3008ca636e1a0ddadfdbeb7c0c7b371a18965a55fd9038ef33cd"
+    },
+    {
+      "requested_url": "https://data.pid.cz/stops/xml/StopsByName.xsd",
+      "retrieved_utc": "2026-11-10T21:30:16.896142+00:00",
+      "status": 200,
+      "final_url": "https://data.pid.cz/stops/xml/StopsByName.xsd",
+      "content_type": null,
+      "file": "pid_stops_schema.xsd",
+      "bytes": 5388,
+      "sha256": "706b7a3a298583ebd0363ad5c12381eb392c9cfd482c75a17ed2818b4edca295"
+    },
+    {
+      "requested_url": "https://data.pid.cz/stops/json/stops.json",
+      "retrieved_utc": "2026-11-10T21:30:17.646362+00:00",
+      "status": 200,
+      "final_url": "https://data.pid.cz/stops/json/stops.json",
+      "content_type": "application/json",
+      "file": "pid_stops.json",
+      "bytes": 18804023,
+      "sha256": "f372f85b730fe86d5e12f09374cf14e0794857b96848e9b1ddcfbeaaef9849a0"
+    }
+  ]
+}
