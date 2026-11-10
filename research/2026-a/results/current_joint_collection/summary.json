@@ -1,0 +1,54 @@
+{
+  "status": "computed; independent audit recorded separately",
+  "independent_verification": "results/current_joint_collection/verification.json",
+  "primary_model": "V203 unchanged",
+  "exact_utility_cells": 48,
+  "weights": [
+    {
+      "weight_reference": "fixed",
+      "min_exact_cells": 3,
+      "optimistic_targets": [
+        "Zurich"
+      ],
+      "minimum_frontier_comparison_abs_gap": 0.019940576030975876,
+      "comparison_tolerance": 1e-10,
+      "common_score_interval": [
+        56.431831484250466,
+        60.43498305699956
+      ],
+      "tie_target_score": 58.43340727062501
+    },
+    {
+      "weight_reference": "equal",
+      "min_exact_cells": 3,
+      "optimistic_targets": [
+        "Zurich"
+      ],
+      "minimum_frontier_comparison_abs_gap": 0.008327357929438506,
+      "comparison_tolerance": 1e-10,
+      "common_score_interval": [
+        58.10480044022626,
+        61.480813589973074
+      ],
+      "tie_target_score": 59.79280701509967
+    }
+  ],
+  "certificate_plans": 32,
+  "primary_admissions": 0,
+  "actual_score_width_reduction": 0,
+  "scope": "Optimistic full utility identification inside a declared independent rectangular box, not source availability, raw-data cost, attainable integer counts or physical joint feasibility; no probabilities or guarantee for actual observations. Strictly interior utility witnesses do not prove raw-data realizability.",
+  "tie_scope": "A simultaneous tie exists by continuity within the common score interval of the rectangular model; numerical witnesses approximate it. Not an observed or predicted real-world tie.",
+  "source_sha256": {
+    "design/task4_user_current_model.json": "1583851c5570fcf6694b1820eeccc1337821a9eac2dcd9b13ff90931ed553412",
+    "design/task4_user_v203_snapshot.json": "c0d70e2288c2230bb8fbaf3aa4b54e4be3f43e47bdddea16ccf8497cc362105e",
+    "scripts/task4_current_joint_collection.py": "bf699ec61b725509947b11ba29706c414a053113c2ea487b303c5cabc8c54fab"
+  },
+  "output_sha256": {
+    "frontiers.csv": "e238316dfdb5dc1644420588b9e9e2eb991008b814f9236e8e11be2980d06db3",
+    "all_budgets.csv": "a4b1521e63eb1cd6ab27a5638daa2cec36a89beac4a218bd64bfa05a84b91465",
+    "candidate_minimums.csv": "63b894ec6ce8e4ee224c26371128d4d27361ccabad994e4acef84a70e8e1fa1c",
+    "measurements.csv": "2412b5bb85244af79ffdc616de4c68c959967f65b9ef109cdea97bdd43b61538",
+    "certificates.csv": "26a9134974751ae3a20e194e0542c6a1af5c8d3d48e8e01e85a4968eddc5b597",
+    "tie_completion.csv": "5a3c19bb48e0726c4fb1ddad68802c2d4b3febc6dcb59b43ab4927bb9b7684d8"
+  }
+}

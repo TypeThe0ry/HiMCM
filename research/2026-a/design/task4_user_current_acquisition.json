@@ -101,5 +101,36 @@
     "primary_admissions": 0,
     "changes_primary_scores": false,
     "scope": "Oslo2023 school-grade provision/participation, not exact ages or preferences"
+  },
+  "joint_collection_limits": {
+    "results": "results/current_joint_collection",
+    "script": "scripts/task4_current_joint_collection.py",
+    "audit": "results/current_joint_collection/verification.json",
+    "minimum_optimistic_exact_cells": {
+      "fixed": 3,
+      "equal": 3
+    },
+    "all_minimum_targets": [
+      "Zurich"
+    ],
+    "shared_cells_in_all_minimum_sets": [
+      "Zurich upper_secondary_ptr",
+      "Zurich travel"
+    ],
+    "minimum_sets": {
+      "fixed": 5,
+      "equal": 2
+    },
+    "Oslo_minimum_exact_cells": {
+      "fixed": 11,
+      "equal": 11
+    },
+    "primary_admissions": 0,
+    "actual_score_width_reduction": 0,
+    "scope": "Favourable utility-box existence certificates; not raw observations,source feasibility,physical joint feasibility or outcome guarantees. All-city tie remains admissible in model.",
+    "source_sha256": {
+      "results/current_joint_collection/summary.json": "b0665789b07e225a0b73c134144f6fbc801fb118e1cdd456409e7217f5350c3d",
+      "results/current_joint_collection/verification.json": "6f1c60ebb066f1bb019c763870c3025a46c81d98241d5160f7f354a179d8bfc4"
+    }
   }
 }

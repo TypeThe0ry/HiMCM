@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "scope": "Independent exhaustive row subset frontiers; strict interior utility witnesses and approximate tie checked in the rectangular model; no claim of raw-data realizability.",
+  "candidate_plans": 32,
+  "tie_cells": 320,
+  "core_hashes": 548,
+  "supplemental_hashes": 67,
+  "paper_resource_hashes": 7,
+  "weights": [
+    {
+      "weight_reference": "fixed",
+      "min_all_frontier_abs_gap": 0.019940576030975876,
+      "common_score_interval": [
+        56.431831484250466,
+        60.43498305699956
+      ],
+      "optimal_three_cell_sets": 5,
+      "combinations_examined": 17296
+    },
+    {
+      "weight_reference": "equal",
+      "min_all_frontier_abs_gap": 0.008327357929438506,
+      "common_score_interval": [
+        58.10480044022628,
+        61.480813589973074
+      ],
+      "optimal_three_cell_sets": 2,
+      "combinations_examined": 17296
+    }
+  ],
+  "primary_output_hashes": {
+    "all_budgets.csv": "a4b1521e63eb1cd6ab27a5638daa2cec36a89beac4a218bd64bfa05a84b91465",
+    "candidate_minimums.csv": "63b894ec6ce8e4ee224c26371128d4d27361ccabad994e4acef84a70e8e1fa1c",
+    "certificates.csv": "26a9134974751ae3a20e194e0542c6a1af5c8d3d48e8e01e85a4968eddc5b597",
+    "frontiers.csv": "e238316dfdb5dc1644420588b9e9e2eb991008b814f9236e8e11be2980d06db3",
+    "measurements.csv": "2412b5bb85244af79ffdc616de4c68c959967f65b9ef109cdea97bdd43b61538",
+    "optimal_three_cell_sets.csv": "667dcb1f3fcfad9b22adec64cbf9bd338be593c10efbba6c2203a6e566ba8216",
+    "tie_completion.csv": "5a3c19bb48e0726c4fb1ddad68802c2d4b3febc6dcb59b43ab4927bb9b7684d8"
+  },
+  "summary_sha256": "b0665789b07e225a0b73c134144f6fbc801fb118e1cdd456409e7217f5350c3d",
+  "primary_collector_sha256": "bf699ec61b725509947b11ba29706c414a053113c2ea487b303c5cabc8c54fab",
+  "audit_script_sha256": "f68a81b219263a297cb358df8604c37df107749361837b0b1b81c879af2d4b7e"
+}
