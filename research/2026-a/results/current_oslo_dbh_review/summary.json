@@ -1,0 +1,262 @@
+{
+  "primary_model": "V203 unchanged",
+  "definitions": {
+    "23": "positive public values in institution/study-site modes1or4, each examined semester; narrow mode screen",
+    "25": "positive public values in any mode, each examined semester",
+    "26": "campus-registry codes,2025spring/fall or2026spring",
+    "27": "campus-registry codes,2026fall"
+  },
+  "density_rule": "Count/population727797*1e6,half-up to original one-decimal precision;divide10forper100k;utilityx/(1+x). This is a labeled counterfactual, not an admitted official density.",
+  "changed_cell": "Oslo research_he_density only; other159ranges and weights fixed",
+  "cases": [
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "fixed",
+      "count": null,
+      "density_per_million": null,
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.82232695332216,
+      "Oslo_lower": 56.431831484250466,
+      "Oslo_upper": 63.90388786510506,
+      "Oslo_regret": 15.751955386687115,
+      "Oslo_rank": 1
+    },
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "equal",
+      "count": null,
+      "density_per_million": null,
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.39181162388826,
+      "Oslo_lower": 58.10480044022626,
+      "Oslo_upper": 66.11577245142246,
+      "Oslo_regret": 15.805857999596448,
+      "Oslo_rank": 2
+    },
+    {
+      "scenario": "DBH_code_count_23",
+      "weight_reference": "fixed",
+      "count": 23,
+      "density_per_million": 31.6,
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.823398205957409,
+      "Oslo_lower": 56.28900167476956,
+      "Oslo_upper": 63.77819809778813,
+      "Oslo_regret": 15.894785196168023,
+      "Oslo_rank": 1
+    },
+    {
+      "scenario": "DBH_code_count_23",
+      "weight_reference": "equal",
+      "count": 23,
+      "density_per_million": 31.6,
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.392654388716725,
+      "Oslo_lower": 57.981514895684185,
+      "Oslo_upper": 66.00597114413586,
+      "Oslo_regret": 15.929143544138526,
+      "Oslo_rank": 2
+    },
+    {
+      "scenario": "DBH_code_count_25",
+      "weight_reference": "fixed",
+      "count": 25,
+      "density_per_million": 34.4,
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.82232695332216,
+      "Oslo_lower": 56.431831484250466,
+      "Oslo_upper": 63.90388786510506,
+      "Oslo_regret": 15.751955386687115,
+      "Oslo_rank": 1
+    },
+    {
+      "scenario": "DBH_code_count_25",
+      "weight_reference": "equal",
+      "count": 25,
+      "density_per_million": 34.4,
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.39181162388826,
+      "Oslo_lower": 58.10480044022626,
+      "Oslo_upper": 66.11577245142246,
+      "Oslo_regret": 15.805857999596448,
+      "Oslo_rank": 2
+    },
+    {
+      "scenario": "DBH_code_count_26",
+      "weight_reference": "fixed",
+      "count": 26,
+      "density_per_million": 35.7,
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.821854878107345,
+      "Oslo_lower": 56.49161840647457,
+      "Oslo_upper": 63.95612158389212,
+      "Oslo_regret": 15.692168464463009,
+      "Oslo_rank": 1
+    },
+    {
+      "scenario": "DBH_code_count_26",
+      "weight_reference": "equal",
+      "count": 26,
+      "density_per_million": 35.7,
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.391435264701926,
+      "Oslo_lower": 58.156347016971345,
+      "Oslo_upper": 66.16129728118621,
+      "Oslo_regret": 15.754311422851366,
+      "Oslo_rank": 1
+    },
+    {
+      "scenario": "DBH_code_count_27",
+      "weight_reference": "fixed",
+      "count": 27,
+      "density_per_million": 37.1,
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.821363883738112,
+      "Oslo_lower": 56.55195517260994,
+      "Oslo_upper": 64.00860244011977,
+      "Oslo_regret": 15.631831698327645,
+      "Oslo_rank": 1
+    },
+    {
+      "scenario": "DBH_code_count_27",
+      "weight_reference": "equal",
+      "count": 27,
+      "density_per_million": 37.1,
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.391040897206437,
+      "Oslo_lower": 58.208331731989674,
+      "Oslo_upper": 66.20697211627675,
+      "Oslo_regret": 15.702326707833038,
+      "Oslo_rank": 1
+    }
+  ],
+  "contrasts": [
+    {
+      "scenario": "DBH_code_count_23",
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": -0.14282980948090795,
+      "Oslo_upper_change": -0.12568976731693482,
+      "mean_width_change": 0.001071252635249209
+    },
+    {
+      "scenario": "DBH_code_count_23",
+      "weight_reference": "equal",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": -0.12328554454207818,
+      "Oslo_upper_change": -0.10980130728660242,
+      "mean_width_change": 0.0008427648284659028
+    },
+    {
+      "scenario": "DBH_code_count_25",
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": 0.0,
+      "Oslo_upper_change": 0.0,
+      "mean_width_change": 0.0
+    },
+    {
+      "scenario": "DBH_code_count_25",
+      "weight_reference": "equal",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": 0.0,
+      "Oslo_upper_change": 0.0,
+      "mean_width_change": 0.0
+    },
+    {
+      "scenario": "DBH_code_count_26",
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": 0.059786922224105865,
+      "Oslo_upper_change": 0.052233718787057626,
+      "mean_width_change": -0.0004720752148141827
+    },
+    {
+      "scenario": "DBH_code_count_26",
+      "weight_reference": "equal",
+      "decision_rank_changes": 2,
+      "recommendation_changed": true,
+      "Oslo_lower_change": 0.05154657674508201,
+      "Oslo_upper_change": 0.04552482976374961,
+      "mean_width_change": -0.0003763591863332749
+    },
+    {
+      "scenario": "DBH_code_count_27",
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": 0.1201236883594703,
+      "Oslo_upper_change": 0.10471457501471093,
+      "mean_width_change": -0.0009630695840474601
+    },
+    {
+      "scenario": "DBH_code_count_27",
+      "weight_reference": "equal",
+      "decision_rank_changes": 2,
+      "recommendation_changed": true,
+      "Oslo_lower_change": 0.10353129176341014,
+      "Oslo_upper_change": 0.09119966485428677,
+      "mean_width_change": -0.000770726681821543
+    }
+  ],
+  "rank_rows": 160,
+  "bound_rows": 800,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "DBH reported-code definition sensitivity, not true-provider bounds, empirical error probabilities or future trends. No primary input replacement.",
+  "source_sha256": {
+    "data/current_oslo_dbh_campus/enrolment_summary.json": "42386bc7474012b72a1d5e0242096547bb91a70b69bf614c04595d16b69c7811",
+    "data/current_oslo_dbh_campus/enrolment_response.csv": "e332749cce1a754330c8732e3ca2730d17ead3fbf674bd4c6eb3546cc0b01d4a",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/task4_current_oslo_he_definition.py": "fef7bb6219c9a3023a5f66327f1208a00316fca4d351ba90e35e99a86d45e101"
+  },
+  "output_sha256": {
+    "ranks.csv": "1c30a5d9187c302606eb36326befdc7cf3f708a549fa8459eef62b6ca53fb2a4",
+    "bounds.csv": "7716b76106cb010f9691d19abf03d6d70a7b2f334c548eb792405ceb31831ddd"
+  }
+}

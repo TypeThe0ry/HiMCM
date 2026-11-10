@@ -188,5 +188,91 @@
       "results/current_cost_edition_review/verification.json": "abe2d8b3716fc4f4dfb7e356a18f42afa5a599333c6218e4ff217a2477bddca5"
     },
     "scope": "Publisher-edition alternatives against retainedV203, not a time trend, full-calendar measurement, input correction or precision improvement; other128ranges/weights/anchors preserved. No Monte Carlo replay or manuscript change."
+  },
+  "Oslo_HE_reported_code_definition_sensitivity": {
+    "data": "data/current_oslo_dbh_campus",
+    "results": "results/current_oslo_dbh_review",
+    "script": "scripts/task4_current_oslo_he_definition.py",
+    "audit_script": "scripts/audit_current_oslo_dbh.py",
+    "verification": "results/current_oslo_dbh_review/verification.json",
+    "verification_sha256": "dd406292fbb2b8828f031aff6ff09ece3284466a9ca3bf1358781ba17db652b8",
+    "periods": [
+      "2025spring",
+      "2025autumn",
+      "2026spring",
+      "2026autumn"
+    ],
+    "campus_registry_institution_codes": [
+      26,
+      26,
+      26,
+      27
+    ],
+    "positive_any_mode_codes": [
+      25,
+      25,
+      25,
+      25
+    ],
+    "positive_mode1_or4_codes": [
+      23,
+      23,
+      23,
+      23
+    ],
+    "candidate_counts": [
+      23,
+      25,
+      26,
+      27
+    ],
+    "fixed_recommendations": [
+      "Oslo",
+      "Oslo",
+      "Oslo",
+      "Oslo"
+    ],
+    "equal_recommendations": [
+      "Zurich",
+      "Zurich",
+      "Oslo",
+      "Oslo"
+    ],
+    "all_cases_possible_champions": 16,
+    "all_cases_necessary_champions": 0,
+    "count25_exactly_reproduces_primary": true,
+    "other159_ranges_preserved": true,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Reported DBH institution-code definition scenarios, not true provider inventory bounds, precise student counts or a trend. No raw input or primary replacement.",
+    "changes_primary_model": false,
+    "source_sha256": {
+      "data/current_oslo_dbh_campus/README.md": "f0e35a3b099266f23a5b0ea26c166d1f5571fe1e00062f834e71ba6abd1689e3",
+      "data/current_oslo_dbh_campus/api_002.csv": "d2480a1165a936aa60754255163fe035456a7ed391c486c5e3093d18a9610743",
+      "data/current_oslo_dbh_campus/api_211.csv": "b143a6f4114ca45f284c0f4560df05567393cb88d54e1e2c849654569741fcc0",
+      "data/current_oslo_dbh_campus/api_662.csv": "655aeee19c859ec1e25784f5fcaca634a665b1cff141f76be0c9df9c872aeca8",
+      "data/current_oslo_dbh_campus/campus_doc.html": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+      "data/current_oslo_dbh_campus/client.html": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+      "data/current_oslo_dbh_campus/enrolment_classified.csv": "4de10d2c86e97487e84dc8730439d305690280b07c408166741f76324194c29c",
+      "data/current_oslo_dbh_campus/enrolment_doc.html": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+      "data/current_oslo_dbh_campus/enrolment_query.json": "48a04a6974afaa5cfd705d71a418dcfad6b52aeed4707896d43da80e4865a9b2",
+      "data/current_oslo_dbh_campus/enrolment_response.csv": "e332749cce1a754330c8732e3ca2730d17ead3fbf674bd4c6eb3546cc0b01d4a",
+      "data/current_oslo_dbh_campus/enrolment_summary.json": "42386bc7474012b72a1d5e0242096547bb91a70b69bf614c04595d16b69c7811",
+      "data/current_oslo_dbh_campus/extract_campus.py": "f77535d536806268e83b957737def6320f002921212e7f3e992ea5b2bc571f4c",
+      "data/current_oslo_dbh_campus/extract_enrolment.py": "8c96bf46e4c04cea661302439583513d339e952173ec40b6953192aebc20a66a",
+      "data/current_oslo_dbh_campus/institution_doc.html": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+      "data/current_oslo_dbh_campus/oslo_campus_2025_2026.csv": "08b20f34407510a568a05e99b72d89c29e81896d14669969c29bc3d3f6406513",
+      "data/current_oslo_dbh_campus/retrieval.json": "6192af692215b6cb357e7c432dfbf45c3d0ad95ec8180aa7cc1617a7f31df22c",
+      "data/current_oslo_dbh_campus/summary.json": "cefdef354afd2d34242904c3079ce22193758c50b3fc6829d2a6c0266c63e431",
+      "results/current_oslo_dbh_review/README.md": "8de04ce570b333980793cac627bffe01e4d36bcd52d4cb9543bcdbb4a64bb0ff",
+      "results/current_oslo_dbh_review/summary.json": "d9134f87a25ee81e53e8ead9fe4b866210e6ac5da4e733121c38385a6e614e8c",
+      "results/current_oslo_dbh_review/bounds.csv": "7716b76106cb010f9691d19abf03d6d70a7b2f334c548eb792405ceb31831ddd",
+      "results/current_oslo_dbh_review/ranks.csv": "1c30a5d9187c302606eb36326befdc7cf3f708a549fa8459eef62b6ca53fb2a4",
+      "results/current_oslo_dbh_review/peer_review.json": "f32742a73b8f742f5869d691801a62059232239a9a269aab40e7453c22b6fbcd",
+      "scripts/task4_current_oslo_he_definition.py": "fef7bb6219c9a3023a5f66327f1208a00316fca4d351ba90e35e99a86d45e101",
+      "scripts/audit_current_oslo_dbh.py": "4d53eeb08882159568487fdebb5a815e1b38b6eb059269c95fa1f159fbf2580d",
+      "results/current_oslo_dbh_review/verification.json": "dd406292fbb2b8828f031aff6ff09ece3284466a9ca3bf1358781ba17db652b8"
+    }
   }
 }

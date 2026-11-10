@@ -1,0 +1,1207 @@
+Tabell id,Tabellnavn,Variabel navn,Datatype,Datalengde,Sortering,Kodefelt,Group by (forslag),Kommentar,GDPR
+60,Studenter fordelt på alder,Alder,int,,6," "," ",,0
+60,Studenter fordelt på alder,Andel av heltid,decimal,"3,2",34," ",J,,0
+60,Studenter fordelt på alder,Andel praksis,decimal,"5,2",39," ",J,,0
+60,Studenter fordelt på alder,Antall kvinner,int,,8," "," ",,0
+60,Studenter fordelt på alder,Antall menn,int,,8," "," ",,0
+60,Studenter fordelt på alder,Antall totalt,int,,7," "," ",,0
+60,Studenter fordelt på alder,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+60,Studenter fordelt på alder,Institusjonskode,char,4,1,J,J,,0
+60,Studenter fordelt på alder,Nivåkode,char,10,33,J,J,,0
+60,Studenter fordelt på alder,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+60,Studenter fordelt på alder,Organisering_kode,int,,38,J,J,,0
+60,Studenter fordelt på alder,Prosent egenfinansiering,decimal,,36," ",J,,0
+60,Studenter fordelt på alder,Semester,int,,4,J," ",Kobling: 291-Semester,0
+60,Studenter fordelt på alder,Studiepoeng,decimal,"5,2",35," ",J,,0
+60,Studenter fordelt på alder,Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+60,Studenter fordelt på alder,Studiumkode,char,12,32,J,J,,0
+60,Studenter fordelt på alder,Underv.språk,char,3,40,J,J,,0
+60,Studenter fordelt på alder,Årstall,int,,3," ",J,,0
+62,Utvekslingsavtaler,beskrivelse,varchar,100,," "," ",,0
+62,Utvekslingsavtaler,Sort,int,,," "," ",,0
+62,Utvekslingsavtaler,Utvekslingsavtale,char,60,,J,J,,0
+93,Finansieringskilder (doktorgrader),Finansieringskildekode,char,10,,J,J,Kobling: 93-Finansieringskilder (doktorgrader),0
+93,Finansieringskilder (doktorgrader),finkildenavn,varchar,100,," ",J,,0
+93,Finansieringskilder (doktorgrader),sortid,int,,," "," ",,0
+98,Kandidater med fullført program for kunstnerisk utviklingsarbeid (PKU),Antall,smallint,,4," "," ",,0
+98,Kandidater med fullført program for kunstnerisk utviklingsarbeid (PKU),Institusjonskode,char,4,1,J," ",,0
+98,Kandidater med fullført program for kunstnerisk utviklingsarbeid (PKU),Institusjonsnavn,varchar,100,3," "," ",,0
+98,Kandidater med fullført program for kunstnerisk utviklingsarbeid (PKU),Årstall,int,,2," "," ",,0
+100,Samarbeid om doktorgradsutdanning,Antall totalt,int,,6," "," ",,0
+100,Samarbeid om doktorgradsutdanning,Institusjonskode (arbeidsgiver),char,,2,J,J,Kobling: 211-Institusjon,0
+100,Samarbeid om doktorgradsutdanning,Institusjonskode (disputas),char,,4,J,J,Kobling: 211-Institusjon,0
+100,Samarbeid om doktorgradsutdanning,Årstall,int,,1," ",J,,0
+101,Avlagte doktorgrader (aggregert),Antall kvinner,int,,9," "," ",,0
+101,Avlagte doktorgrader (aggregert),Antall menn,int,,9," "," ",,0
+101,Avlagte doktorgrader (aggregert),Antall totalt,int,,8," "," ",,0
+101,Avlagte doktorgrader (aggregert),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+101,Avlagte doktorgrader (aggregert),Finansieringskildekode,char,10,7,J," ",Kobling: 93-Finansieringskilder (doktorgrader),0
+101,Avlagte doktorgrader (aggregert),Institusjonskode,char,4,1,J,J,,0
+101,Avlagte doktorgrader (aggregert),Kvalifikasjonskode,char,20,5," "," ",,0
+101,Avlagte doktorgrader (aggregert),Semester,int,,4,J," ",Kobling: 291-Semester,0
+101,Avlagte doktorgrader (aggregert),Studieprogramkode,char,12,6,J," ",Kobling: 347-Studieprogram,0
+101,Avlagte doktorgrader (aggregert),Årstall,int,,3," "," ",,0
+104,Ferdige kandidater (aggregert),Andel av heltid,decimal,"3,2",34," ",J,,0
+104,Ferdige kandidater (aggregert),Andel praksis,decimal,"5,2",39," ",J,,0
+104,Ferdige kandidater (aggregert),Antall kvinner,int,,8," "," ",,0
+104,Ferdige kandidater (aggregert),Antall menn,int,,8," "," ",,0
+104,Ferdige kandidater (aggregert),Antall totalt,int,,7," "," ",,0
+104,Ferdige kandidater (aggregert),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+104,Ferdige kandidater (aggregert),Institusjonskode,char,4,1,J,J,,0
+104,Ferdige kandidater (aggregert),Kvalifikasjonskode,char,20,5," "," ",,0
+104,Ferdige kandidater (aggregert),Nivåkode,char,10,33,J,J,,0
+104,Ferdige kandidater (aggregert),NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+104,Ferdige kandidater (aggregert),Organisering_kode,int,,38,J,J,,0
+104,Ferdige kandidater (aggregert),Prosent egenfinansiering,decimal,,36," ",J,,0
+104,Ferdige kandidater (aggregert),Semester,int,,4,J," ",Kobling: 291-Semester,0
+104,Ferdige kandidater (aggregert),Studiepoeng,decimal,"5,2",35," ",J,,0
+104,Ferdige kandidater (aggregert),Studieprogramkode,char,12,6,J," ",Kobling: 347-Studieprogram,0
+104,Ferdige kandidater (aggregert),Studiumkode,char,12,32,J,J,,0
+104,Ferdige kandidater (aggregert),Underv.språk,char,3,40,J,J,,0
+104,Ferdige kandidater (aggregert),Årstall,int,,3," ",J,,0
+110,Nye studenter,Andel av heltid,decimal,"3,2",34," ",J,,0
+110,Nye studenter,Andel praksis,decimal,"5,2",39," ",J,,0
+110,Nye studenter,Antall kvinner,int,,7," "," ",,0
+110,Nye studenter,Antall menn,int,,7," "," ",,0
+110,Nye studenter,Antall totalt,int,,6," "," ",,0
+110,Nye studenter,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+110,Nye studenter,Institusjonskode,char,4,1,J,J,,0
+110,Nye studenter,Nivåkode,char,10,33,J,J,,0
+110,Nye studenter,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+110,Nye studenter,Organisering_kode,int,,38,J,J,,0
+110,Nye studenter,Prosent egenfinansiering,decimal,,36," ",J,,0
+110,Nye studenter,Semester,int,,4,J," ",Kobling: 291-Semester,0
+110,Nye studenter,Studiepoeng,decimal,"5,2",35," ",J,,0
+110,Nye studenter,Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+110,Nye studenter,Studiumkode,char,12,32,J,J,,0
+110,Nye studenter,Underv.språk,char,3,40,J,J,,0
+110,Nye studenter,Årstall,int,,3," ",J,,0
+112,Opptak,Andel av heltid,decimal,"3,2",34," ",J,,0
+112,Opptak,Andel praksis,decimal,"5,2",39," ",J,,0
+112,Opptak,Antall kvinner,int,,7," "," ",,0
+112,Opptak,Antall menn,int,,7," "," ",,0
+112,Opptak,Antall totalt,int,,6," "," ",,0
+112,Opptak,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+112,Opptak,Institusjonskode,char,4,1,J,J,,0
+112,Opptak,Nivåkode,char,10,33,J,J,,0
+112,Opptak,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+112,Opptak,Organisering_kode,int,,38,J,J,,0
+112,Opptak,Prosent egenfinansiering,decimal,,36," ",J,,0
+112,Opptak,Semester,int,,4,J," ",Kobling: 291-Semester,0
+112,Opptak,Studiepoeng,decimal,"5,2",35," ",J,,0
+112,Opptak,Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+112,Opptak,Studiumkode,char,12,32,J,J,,0
+112,Opptak,Underv.språk,char,3,40,J,J,,0
+112,Opptak,Årstall,int,,3," ",J,,0
+113,Opptak alder,Alder,int,,11," ",J,,0
+113,Opptak alder,Andel av heltid,decimal,"3,2",32," ",J,,0
+113,Opptak alder,Andel praksis,decimal,"5,2",42," ",J,,0
+113,Opptak alder,Antall kvinner,int,,19," "," ",,1
+113,Opptak alder,Antall menn,int,,22," "," ",,1
+113,Opptak alder,Antall totalt,int,,13," "," ",,0
+113,Opptak alder,Avdelingskode,char,6,4,J,J,Kobling: 210-Avdeling,0
+113,Opptak alder,Institusjonskode,char,4,1,J,J,,0
+113,Opptak alder,Nivåkode,char,10,30,J,J,,0
+113,Opptak alder,NUS-kode,char,10,38," ",J,,0
+113,Opptak alder,Organisering_kode,int,,40,J,J,,0
+113,Opptak alder,Prosent egenfinansiering,decimal,,36," ",J,,0
+113,Opptak alder,Semester,int,,6,J," ",Kobling: 291-Semester,0
+113,Opptak alder,Studiepoeng,decimal,"5,2",34," ",J,,0
+113,Opptak alder,Studieprogramkode,char,12,10,J," ",Kobling: 347-Studieprogram,0
+113,Opptak alder,Studiumkode,char,12,28,J,J,,0
+113,Opptak alder,Underv.språk,char,3,44,J,J,,0
+113,Opptak alder,Årstall,int,,8," ",J,,0
+115,Personer i doktorgradsprogrammer (aggregert),Antall kvinner,int,,11," "," ",,0
+115,Personer i doktorgradsprogrammer (aggregert),Antall menn,int,,12," "," ",,0
+115,Personer i doktorgradsprogrammer (aggregert),Antall totalt,int,,10," "," ",,0
+115,Personer i doktorgradsprogrammer (aggregert),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+115,Personer i doktorgradsprogrammer (aggregert),Finansieringskildekode,char,10,6,J," ",Kobling: 93-Finansieringskilder (doktorgrader),0
+115,Personer i doktorgradsprogrammer (aggregert),Institusjonskode,char,4,1,J,J,,0
+115,Personer i doktorgradsprogrammer (aggregert),Semester,int,,4,J," ",Kobling: 291-Semester,0
+115,Personer i doktorgradsprogrammer (aggregert),Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+115,Personer i doktorgradsprogrammer (aggregert),Totalt antall kvinner med nye avtaler,int,,8," "," ",,0
+115,Personer i doktorgradsprogrammer (aggregert),Totalt antall menn med nye avtaler,int,,9," "," ",,0
+115,Personer i doktorgradsprogrammer (aggregert),Totalt antall personer med nye avtaler,int,,7," "," ",,0
+115,Personer i doktorgradsprogrammer (aggregert),Årstall,int,,3," "," ",,0
+118,Fullførte studieprogrammer (aggregert),Andel av heltid,decimal,"3,2",34," ",J,,0
+118,Fullførte studieprogrammer (aggregert),Andel praksis,decimal,"5,2",39," ",J,,0
+118,Fullførte studieprogrammer (aggregert),Antall kvinner,int,,7," "," ",,0
+118,Fullførte studieprogrammer (aggregert),Antall menn,int,,7," "," ",,0
+118,Fullførte studieprogrammer (aggregert),Antall totalt,int,,6," "," ",,0
+118,Fullførte studieprogrammer (aggregert),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+118,Fullførte studieprogrammer (aggregert),Institusjonskode,char,4,1,J,J,,0
+118,Fullførte studieprogrammer (aggregert),Nivåkode,char,10,33,J,J,,0
+118,Fullførte studieprogrammer (aggregert),NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+118,Fullførte studieprogrammer (aggregert),Organisering_kode,int,,38,J,J,,0
+118,Fullførte studieprogrammer (aggregert),Prosent egenfinansiering,decimal,,36," ",J,,0
+118,Fullførte studieprogrammer (aggregert),Semester,int,,4,J," ",Kobling: 291-Semester,0
+118,Fullførte studieprogrammer (aggregert),Studiepoeng,decimal,"5,2",35," ",J,,0
+118,Fullførte studieprogrammer (aggregert),Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+118,Fullførte studieprogrammer (aggregert),Studiumkode,char,12,32,J,J,,0
+118,Fullførte studieprogrammer (aggregert),Underv.språk,char,3,40,J,J,,0
+118,Fullførte studieprogrammer (aggregert),Årstall,int,,3," ",J,,0
+123,Registrerte studenter,Andel av heltid,decimal,"3,2",34," ",J,,0
+123,Registrerte studenter,Andel praksis,decimal,"5,2",39," ",J,,0
+123,Registrerte studenter,Antall kvinner,int,,8," "," ",,0
+123,Registrerte studenter,Antall menn,int,,8," "," ",,0
+123,Registrerte studenter,Antall totalt,int,,7," "," ",,0
+123,Registrerte studenter,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+123,Registrerte studenter,Institusjonskode,char,4,1,J,J,,0
+123,Registrerte studenter,Nivåkode,char,10,33,J,J,,0
+123,Registrerte studenter,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+123,Registrerte studenter,Organisering_kode,int,,38,J,J,,0
+123,Registrerte studenter,Prosent egenfinansiering,decimal,,36," ",J,,0
+123,Registrerte studenter,Semester,int,,4,J," ",Kobling: 291-Semester,0
+123,Registrerte studenter,Studentkategori,char,1,5,J," ",Kobling: 133-Studentkategorier,0
+123,Registrerte studenter,Studiepoeng,decimal,"5,2",35," ",J,,0
+123,Registrerte studenter,Studieprogramkode,char,12,6,J," ",Kobling: 347-Studieprogram,0
+123,Registrerte studenter,Studiumkode,char,12,32,J,J,,0
+123,Registrerte studenter,Underv.språk,char,3,40,J,J,,0
+123,Registrerte studenter,Årstall,int,,3," ",J,,0
+124,Registrerte studenter fordelt på studieretning og campus,Andel av heltid,decimal,"3,2",34," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Andel praksis,decimal,"5,2",39," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Antall,smallint,,13," "," ",,1
+124,Registrerte studenter fordelt på studieretning og campus,Avdelingskode,char,6,2,J," ",Kobling: 210-Avdeling,0
+124,Registrerte studenter fordelt på studieretning og campus,Institusjonskode,char,4,1,J,J,,0
+124,Registrerte studenter fordelt på studieretning og campus,Kjønn,char,1,12," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Kommunenummer campus,char,4,10," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Nivåkode,char,10,33,J," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,NUS-kode,char,10,37," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Organisering_kode,int,,38,J," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Prosent egenfinansiering,decimal,,36," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Semester,int,,4,J," ",Kobling: 291-Semester,0
+124,Registrerte studenter fordelt på studieretning og campus,Stedkode campus,varchar,10,8," ",J,,0
+124,Registrerte studenter fordelt på studieretning og campus,Stednavn campus,varchar,120,9," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Studentkategori,char,1,5,J," ",Kobling: 133-Studentkategorier,0
+124,Registrerte studenter fordelt på studieretning og campus,Studiepoeng,decimal,"5,2",35," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Studieprogramkode,char,12,6,J," ",Kobling: 347-Studieprogram,0
+124,Registrerte studenter fordelt på studieretning og campus,Studieretningkode,varchar,20,7," "," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Studiumkode,char,12,32,J," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Underv.språk,char,3,40,J," ",,0
+124,Registrerte studenter fordelt på studieretning og campus,Årstall,int,,3," ",J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Alder,int,,10," "," ",,0
+127,Fullførste studieprogrammer (aggregert) med alder,Andel av heltid,decimal,"3,2",34," ",J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Andel praksis,decimal,"5,2",39," ",J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Antall kvinner,int,,13," "," ",,0
+127,Fullførste studieprogrammer (aggregert) med alder,Antall menn,int,,16," "," ",,0
+127,Fullførste studieprogrammer (aggregert) med alder,Antall totalt,int,,12," "," ",,0
+127,Fullførste studieprogrammer (aggregert) med alder,Avdelingskode,char,6,3,J,J,Kobling: 210-Avdeling,0
+127,Fullførste studieprogrammer (aggregert) med alder,Institusjonskode,char,4,1,J,J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Nivåkode,char,10,27,J,J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+127,Fullførste studieprogrammer (aggregert) med alder,Organisering_kode,int,,38,J,J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Prosent egenfinansiering,decimal,,36," ",J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Semester,int,,7,J," ",Kobling: 291-Semester,0
+127,Fullførste studieprogrammer (aggregert) med alder,Studiepoeng,decimal,"5,2",35," ",J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Studieprogramkode,char,12,9,J," ",Kobling: 347-Studieprogram,0
+127,Fullførste studieprogrammer (aggregert) med alder,Studiumkode,char,12,24,J,J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Underv.språk,char,3,40,J,J,,0
+127,Fullførste studieprogrammer (aggregert) med alder,Årstall,int,,5," ",J,,0
+132,Søknader,Andel av heltid,decimal,"3,2",34," ",J,,0
+132,Søknader,Andel praksis,decimal,"5,2",39," ",J,,0
+132,Søknader,Antall kvinner,int,,7," "," ",,0
+132,Søknader,Antall menn,int,,7," "," ",,0
+132,Søknader,Antall totalt,int,,6," "," ",,0
+132,Søknader,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+132,Søknader,Institusjonskode,char,4,1,J,J,,0
+132,Søknader,Nivåkode,char,10,33,J,J,,0
+132,Søknader,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+132,Søknader,Organisering_kode,int,,38,J,J,,0
+132,Søknader,Prosent egenfinansiering,decimal,,36," ",J,,0
+132,Søknader,Semester,int,,4,J," ",Kobling: 291-Semester,0
+132,Søknader,Studiepoeng,decimal,"5,2",35," ",J,,0
+132,Søknader,Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+132,Søknader,Studiumkode,char,12,32,J,J,,0
+132,Søknader,Underv.språk,char,3,40,J,J,,0
+132,Søknader,Årstall,int,,3," ",J,,0
+133,Studentkategorier,Avtalenavn,char,120,," ",J,,0
+133,Studentkategorier,sortering,int,,," "," ",,0
+133,Studentkategorier,Studentkategori,char,1,,J,J,,0
+135,Utenlandske studenter,Andel av heltid,decimal,"3,2",34," ",J,,0
+135,Utenlandske studenter,Andel praksis,decimal,"5,2",39," ",J,,0
+135,Utenlandske studenter,Antall kvinner,int,,8," "," ",,0
+135,Utenlandske studenter,Antall menn,int,,8," "," ",,0
+135,Utenlandske studenter,Antall totalt,int,,7," "," ",,0
+135,Utenlandske studenter,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+135,Utenlandske studenter,Institusjonskode,char,4,1,J,J,,0
+135,Utenlandske studenter,Landkode,char,2,6,J," ",Kobling: 261-Landkoder,0
+135,Utenlandske studenter,Nivåkode,char,10,33,J,J,,0
+135,Utenlandske studenter,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+135,Utenlandske studenter,Organisering_kode,int,,38,J,J,,0
+135,Utenlandske studenter,Prosent egenfinansiering,decimal,,36," ",J,,0
+135,Utenlandske studenter,Semester,int,,4,J," ",Kobling: 291-Semester,0
+135,Utenlandske studenter,Studiepoeng,decimal,"5,2",35," ",J,,0
+135,Utenlandske studenter,Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+135,Utenlandske studenter,Studiumkode,char,12,32,J,J,,0
+135,Utenlandske studenter,Underv.språk,char,3,40,J,J,,0
+135,Utenlandske studenter,Årstall,int,,3," ",J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Andel av heltid,decimal,"3,2",34," ",J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Andel praksis,decimal,"5,2",39," ",J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Antall kvinner,int,,11," "," ",,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Antall menn,int,,11," "," ",,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Antall totalt,int,,10," "," ",,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Institusjonskode,char,4,1,J,J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Landkode,char,2,7,J," ",Kobling: 261-Landkoder,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Nivåkode,char,10,33,J,J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Organisering_kode,int,,38,J,J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Prosent egenfinansiering,decimal,,36," ",J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Semester,int,,4,J," ",Kobling: 291-Semester,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Studiepoeng,decimal,"5,2",35," ",J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Studiumkode,char,12,32,J,J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Type,char,5,6,J," ",Kobling: 436-Undernivå,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Underv.språk,char,3,40,J,J,,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Utvekslingsavtale,char,60,9,J," ",,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Utvekslingsinstitusjon,char,120,8," "," ",,0
+142,Utvekslingsstudenter og studenter under kvoteprogram (aggregert),Årstall,int,,3," ",J,,0
+208,Emner,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+208,Emner,Avdelingskode_SSB,varchar,20,3," "," ",,0
+208,Emner,Emnekode,char,20,7," "," ",,0
+208,Emner,Emnenavn,varchar,250,8," "," ",,0
+208,Emner,Fagkode,varchar,20,15," "," ",,0
+208,Emner,Fagnavn,varchar,250,16," "," ",,0
+208,Emner,Institusjonskode,char,4,1,J,J,,0
+208,Emner,Nivåkode,char,10,9,J," ",,0
+208,Emner,NUS-kode,char,10,11," "," ",NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+208,Emner,Oppgave (ny fra h2012),tinyint,,22," "," ",,0
+208,Emner,Semester,int,,5,J," ",Kobling: 291-Semester,0
+208,Emner,Status,int,,12,J," ",Kobling: 445-Status,0
+208,Emner,Studiepoeng,decimal,"5,2",10," "," ",,0
+208,Emner,Studieprogramkode,char,12,6,J," ",Kobling: 347-Studieprogram,0
+208,Emner,Underv.språk,char,3,13,J," ",,0
+208,Emner,Årstall,int,,4," "," ",,0
+210,Avdeling,Avdelingskode,char,6,3,J," ",Kobling: 210-Avdeling,0
+210,Avdeling,Avdelingskode (3 siste siffer),char,3,14," "," ",,0
+210,Avdeling,fagkode avdeling,char,3,9," "," ",,0
+210,Avdeling,fagnavn avdeling,varchar,50,10," "," ",,0
+210,Avdeling,Fakultetskode,char,3,12," "," ",,0
+210,Avdeling,Fakultetsnavn,varchar,150,13," "," ",,0
+210,Avdeling,Gyldig fra,char,5,5," "," ",,0
+210,Avdeling,Gyldig til,char,5,6," "," ",,0
+210,Avdeling,Institusjonskode,char,4,2,J,J,,0
+210,Avdeling,Nivå,int,,1,J,J,Kobling: 288-Organisasjonsnivå,0
+211,Institusjon,Adresse,varchar,255,3," "," ",,0
+211,Institusjon,Departementid,tinyint,,12,J," ",Kobling: 559-Departement,0
+211,Institusjon,Gyldig fra,char,5,5," "," ",,0
+211,Institusjon,Gyldig til,char,5,6," "," ",,0
+211,Institusjon,Institusjonskode,char,,1," "," ",,0
+211,Institusjon,Institusjonskode (sammenslått),char,,13,J," ",Kobling: 211-Institusjon,0
+211,Institusjon,Institusjonsnavn,varchar,100,2," "," ",,0
+211,Institusjon,Institusjonstypekode,char,2,10,J," ",Kobling: 287-Institusjonstyper,0
+211,Institusjon,Kortnavn,varchar,30,11," "," ",,0
+211,Institusjon,Postnummer,char,4,4," "," ",,0
+211,Institusjon,Telefax,char,10,9," "," ",,0
+211,Institusjon,Telefon,char,10,8," "," ",,0
+213,Studium,Studium,varchar,100,2," "," ",,0
+213,Studium,Studiumkode,char,12,1,J,J,,0
+219,Tilsatte - aldersintervaller,Aldersintervall,char,5,5," "," ",,0
+219,Tilsatte - aldersintervaller,Antall årsverk,float,,6," "," ",,0
+219,Tilsatte - aldersintervaller,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+219,Tilsatte - aldersintervaller,Institusjonskode,char,4,1,J,J,,0
+219,Tilsatte - aldersintervaller,Stillingskode,char,4,4,J," ",Kobling: 220-Stillingskoder,0
+219,Tilsatte - aldersintervaller,Årstall,int,,3," "," ",,0
+220,Stillingskoder,Stillingsbenevnelse,varchar,45,3," "," ",,0
+220,Stillingskoder,Stillingskategorikode,char,3,2," "," ",,0
+220,Stillingskoder,Stillingskode,char,4,1,J,J,Kobling: 220-Stillingskoder,0
+222,Alle tilsatte (Hodetelling),Antall kvinner,int,,6," "," ",,1
+222,Alle tilsatte (Hodetelling),Antall menn,int,,7," "," ",,1
+222,Alle tilsatte (Hodetelling),Antall totalt,int,,5," "," ",,1
+222,Alle tilsatte (Hodetelling),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+222,Alle tilsatte (Hodetelling),Institusjonskode,char,4,1,J,J,Kobling: 211-Institusjon,0
+222,Alle tilsatte (Hodetelling),Nivå,int,,3,J,J,Kobling: 288-Organisasjonsnivå,0
+222,Alle tilsatte (Hodetelling),Årstall,int,,4," ",J,,0
+224,Tilsatte - gjennomsnittsalder,Antall totalt,int,,5," "," ",,0
+224,Tilsatte - gjennomsnittsalder,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+224,Tilsatte - gjennomsnittsalder,Gjennomsnitt,float,,6," "," ",,0
+224,Tilsatte - gjennomsnittsalder,Institusjonskode,char,4,1,J,J,,0
+224,Tilsatte - gjennomsnittsalder,Stillingskode,char,4,4,J," ",Kobling: 220-Stillingskoder,0
+224,Tilsatte - gjennomsnittsalder,Årstall,int,,3," "," ",,0
+225,Alle tilsatte (aggregert),Ansettelse,char,1,5,J," ",Kobling: 296-Ansettelse,0
+225,Alle tilsatte (aggregert),Antall kvinner,float,,10," "," ",,0
+225,Alle tilsatte (aggregert),Antall menn,float,,10," "," ",,0
+225,Alle tilsatte (aggregert),Antall årsverk,float,,9," "," ",,0
+225,Alle tilsatte (aggregert),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+225,Alle tilsatte (aggregert),Finansieringskilde,int,,7,J," ",Kobling: 299-Finansieringskilder (tilsatte),0
+225,Alle tilsatte (aggregert),Institusjonskode,char,4,1,J,J,,0
+225,Alle tilsatte (aggregert),Stillingskode,char,4,8,J," ",Kobling: 220-Stillingskoder,0
+225,Alle tilsatte (aggregert),Stillingstype,int,,6," "," ",,0
+225,Alle tilsatte (aggregert),Åremålsstilling,bit,,8," "," ",,0
+225,Alle tilsatte (aggregert),Årstall,int,,3," "," ",,0
+226,Areal,Adresse/Navn,char,150,3," "," ",,0
+226,Areal,Brutto m2,int,,5," "," ",,0
+226,Areal,Institusjonskode,char,4,1,J," ",,0
+226,Areal,Leieforhold,char,1,4,J," ",Kobling: 230-Type leieforhold (areal),0
+226,Areal,Årstall,int,,2," "," ",,0
+230,Type leieforhold (areal),Leieforhold,char,1,1,J,J,Kobling: 230-Type leieforhold (areal),0
+230,Type leieforhold (areal),sortering,int,,3," "," ",,0
+230,Type leieforhold (areal),tekst,varchar,100,2," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Antall,smallint,,14," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Antall egenfinansiert,char,,14," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Avdelingskode,char,6,3,J," ",Kobling: 210-Avdeling,0
+250,Kandidater med uttelling i finansieringssystemet,Etterrapportert,char,,12," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Finansieringskategori,char,,9," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Fra dobbel til enkel,char,,13," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Institusjonskode,char,4,1,J," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Instkode_sammenslatt,varchar,,2," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Kvalifikasjonskode,varchar,20,6," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Prosent_egenfinansiering,char,,10," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Semester,int,,5,J," ",Kobling: 291-Semester,0
+250,Kandidater med uttelling i finansieringssystemet,Studieprogramkode,char,12,7,J," ",Kobling: 347-Studieprogram,0
+250,Kandidater med uttelling i finansieringssystemet,Studieretningkode,varchar,20,8," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Uttelling,char,,11," "," ",,0
+250,Kandidater med uttelling i finansieringssystemet,Årstall,int,,4," "," ",,0
+252,Finansieringskategorier,Finansiering,varchar,100,3," "," ",,0
+252,Finansieringskategorier,Finansierings-kategori,char,6,2,J," ",Kobling: 252-Finansieringskategorier,0
+252,Finansieringskategorier,sortering,int,,1," "," ",,0
+261,Landkoder,Kode for verdensdel,char,2,5," "," ",,0
+261,Landkoder,Land (engelsk navn),nvarchar,500,4," "," ",,0
+261,Landkoder,Land (norsk navn),varchar,60,3," "," ",,0
+261,Landkoder,Landkode,char,2,1,J,J,Kobling: 261-Landkoder,0
+261,Landkoder,Landnummer,varchar,3,6," "," ",,0
+287,Institusjonstyper,Institusjonstype,varchar,50,," "," ",,0
+287,Institusjonstyper,Institusjonstypekode,char,2,,J,J,Kobling: 287-Institusjonstyper,0
+287,Institusjonstyper,insttypenavn_kort,varchar,30,," "," ",,0
+287,Institusjonstyper,Orden,int,,," "," ",,0
+287,Institusjonstyper,sektorkode,int,,," "," ",,0
+288,Organisasjonsnivå,Beskrivelse,varchar,-1,," "," ",,0
+288,Organisasjonsnivå,Navn,varchar,200,," "," ",,0
+288,Organisasjonsnivå,Nivå,int,,,J," ",Kobling: 288-Organisasjonsnivå,0
+291,Semester,halvårid,int,,5," "," ",,0
+291,Semester,halvårnavn,varchar,50,4," "," ",,0
+291,Semester,Orden,int,,3," "," ",,0
+291,Semester,Semester,int,,1,J,J,,0
+291,Semester,semesternavn,char,20,2," "," ",,0
+296,Ansettelse,Ansettelse,char,1,1,J,J,,0
+296,Ansettelse,ansettelsestype,char,50,2," "," ",,0
+299,Finansieringskilder (tilsatte),Finansieringskilde,int,,1,J,J,,0
+299,Finansieringskilder (tilsatte),Finanstype,char,50,2," "," ",,0
+299,Finansieringskilder (tilsatte),finanstype dep,varchar,50,6," "," ",,0
+299,Finansieringskilder (tilsatte),finanstype gruppe,char,50,3," "," ",,0
+299,Finansieringskilder (tilsatte),sortering,int,,4," "," ",,0
+299,Finansieringskilder (tilsatte),sortering gruppe,int,,5," "," ",,0
+308,Karakterer (aggregert),Andel av heltid,decimal,"3,2",34," ",J,,0
+308,Karakterer (aggregert),Andel praksis,decimal,"5,2",39," ",J,,0
+308,Karakterer (aggregert),Antall kandidater kvinner,int,,10," "," ",,0
+308,Karakterer (aggregert),Antall kandidater menn,int,,11," "," ",,0
+308,Karakterer (aggregert),Antall kandidater totalt,int,,9," "," ",,0
+308,Karakterer (aggregert),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+308,Karakterer (aggregert),Emnekode,char,20,7," "," ",,0
+308,Karakterer (aggregert),Institusjonskode,char,4,1,J,J,,0
+308,Karakterer (aggregert),Karakter,char,1,8," "," ",,0
+308,Karakterer (aggregert),Nivåkode,char,10,33,J,J,,0
+308,Karakterer (aggregert),NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+308,Karakterer (aggregert),Organisering_kode,int,,38,J,J,,0
+308,Karakterer (aggregert),Prosent egenfinansiering,decimal,,36," ",J,,0
+308,Karakterer (aggregert),Semester,int,,4,J," ",Kobling: 291-Semester,0
+308,Karakterer (aggregert),Studentkategori,char,1,5,J," ",Kobling: 133-Studentkategorier,0
+308,Karakterer (aggregert),Studiepoeng,decimal,"5,2",35," ",J,,0
+308,Karakterer (aggregert),Studieprogramkode,char,12,6,J," ",Kobling: 347-Studieprogram,0
+308,Karakterer (aggregert),Studiumkode,char,12,32,J,J,,0
+308,Karakterer (aggregert),Underv.språk,char,3,40,J,J,,0
+308,Karakterer (aggregert),Årstall,int,,3," ",J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Andel av heltid,decimal,"3,2",34," ",J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Andel praksis,decimal,"5,2",39," ",J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Institusjonskode,char,4,1,J,J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Nivåkode,char,10,33,J,J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Organisering_kode,int,,38,J,J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Prosent egenfinansiering,decimal,,36," ",J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),sp_gjennomfort,decimal,"18,10",7," "," ",,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),sp_planlagt,decimal,"18,10",6," "," ",,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Studiepoeng,decimal,"5,2",35," ",J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Studiumkode,char,12,32,J,J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Underv.språk,char,3,40,J,J,,0
+335,Gjennomføring iht. avtalt utdanningsplan (aggregert),Årstall,int,,3," ",J,,0
+347,Studieprogram,Andel av heltid,decimal,"3,2",10," "," ",,0
+347,Studieprogram,Andel praksis,decimal,"5,2",15," "," ",,0
+347,Studieprogram,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+347,Studieprogram,Avdelingskode_SSB,varchar,20,3," "," ",,0
+347,Studieprogram,Finansierings-kategori,char,6,100,J," ",Kobling: 252-Finansieringskategorier,0
+347,Studieprogram,Godkjenningsdato,datetime,,24," "," ",,0
+347,Studieprogram,Godkjenningsinstans,int,,23,J," ",,0
+347,Studieprogram,Institusjonskode,char,4,1,J,J,,0
+347,Studieprogram,Kvalifikasjonskode,varchar,20,26," "," ",,0
+347,Studieprogram,Nivåkode,char,10,9,J," ",,0
+347,Studieprogram,NUS-kode,char,10,13," "," ",NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+347,Studieprogram,Nytt studietilbud,tinyint,,22," "," ",,0
+347,Studieprogram,Organisering_kode,int,,14,J," ",,0
+347,Studieprogram,Prosent egenfinansiering,decimal,,12," "," ",,0
+347,Studieprogram,Semester,int,,5,J," ",Kobling: 291-Semester,0
+347,Studieprogram,Studiepoeng,decimal,"5,2",11," "," ",,0
+347,Studieprogram,Studiepoengkrav kvalifikasjon,decimal,"5,2",27," "," ",,0
+347,Studieprogram,Studieprogramkode,char,12,6,J," ",,0
+347,Studieprogram,Studiumkode,char,12,8,J," ",,0
+347,Studieprogram,Tilbys fra,char,5,20," "," ",,0
+347,Studieprogram,Tilbys til,char,5,21," "," ",,0
+347,Studieprogram,Underv.språk,char,3,17,J," ",,0
+347,Studieprogram,Uttelling,int,,105,J," ",,0
+347,Studieprogram,Videreutd.,int,,18,J," ",Kobling: 447-Videreutdanning,0
+347,Studieprogram,Årstall,int,,4," "," ",,0
+370,Studieplasser,Antall studieplasser,int,,14," "," ",,0
+370,Studieplasser,Antall studieplasser Y-vei,int,,15," "," ",,0
+370,Studieplasser,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+370,Studieplasser,Institusjonskode,char,4,1,J,J,,0
+370,Studieplasser,Opptaksmodellkode,varchar,10,5," "," ",,0
+370,Studieplasser,Opptaksmodellnavn,varchar,120,6," "," ",,0
+370,Studieplasser,Opptakstype,char,1,11,J," ",Kobling: 469-Opptakstype,0
+370,Studieplasser,Poenggrense ordinær kvote,decimal,"6,2",13," "," ",,0
+370,Studieplasser,Poenggrense primærkvote,decimal,"6,2",12," "," ",,0
+370,Studieplasser,Semester,int,,4,J," ",Kobling: 291-Semester,0
+370,Studieplasser,Studieprogramkode,char,12,10,J," ",Kobling: 347-Studieprogram,0
+370,Studieplasser,Studietype navn,varchar,70,8," "," ",,0
+370,Studieplasser,Studietypekode,char,12,7," "," ",,0
+370,Studieplasser,Utdanningsområde,char,12,9," "," ",,0
+370,Studieplasser,Årstall,int,,3," ",J,,0
+371,Språk,Beskrivelse språk,nvarchar,500,6," "," ",,0
+371,Språk,Engelsk språknavn,nvarchar,250,5," "," ",,0
+371,Språk,iso2,char,2,3," "," ",,0
+371,Språk,Språknavn,nvarchar,250,4," "," ",,0
+371,Språk,terminologic,char,3,2," "," ",,0
+371,Språk,Underv.språk,char,3,1,J,J,,0
+373,Vitenskapelig publisering,Antall internasjonale publikasjoner,int,,8," "," ",,0
+373,Vitenskapelig publisering,Antall publikasjoner,int,,7," "," ",,0
+373,Vitenskapelig publisering,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+373,Vitenskapelig publisering,Forfatterandeler,decimal,"9,4",15," "," ",,0
+373,Vitenskapelig publisering,Forfatterandeler kvinner,decimal,"9,4",16," "," ",,0
+373,Vitenskapelig publisering,Forfatterandeler menn,decimal,,17," "," ",,0
+373,Vitenskapelig publisering,Institusjonskode,char,4,1,J,J,,0
+373,Vitenskapelig publisering,Kode for publikasjonsform,tinyint,,4,J," ",Kobling: 507-Publikasjonsform,0
+373,Vitenskapelig publisering,Kode for publiseringskanal,varchar,10,5," "," ",,0
+373,Vitenskapelig publisering,Kode for type publiseringskanal,tinyint,,6,J," ",Kobling: 508-Type publiseringskanaler,0
+373,Vitenskapelig publisering,Publiseringspoeng,decimal,,18," "," ",,0
+373,Vitenskapelig publisering,Publiseringspoeng kvinner,decimal,,19," "," ",,0
+373,Vitenskapelig publisering,Publiseringspoeng menn,decimal,,20," "," ",,0
+373,Vitenskapelig publisering,Årstall,int,,3," "," ",,0
+374,Vitenskapelig publisering - kanaler,Antall internasjonale publikasjoner,int,,14," "," ",,0
+374,Vitenskapelig publisering - kanaler,Antall publikasjoner,int,,13," "," ",,0
+374,Vitenskapelig publisering - kanaler,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+374,Vitenskapelig publisering - kanaler,Forfatterandeler,decimal,"9,4",15," "," ",,0
+374,Vitenskapelig publisering - kanaler,Forfatterandeler kvinner,decimal,"9,4",16," "," ",,0
+374,Vitenskapelig publisering - kanaler,Forfatterandeler menn,decimal,,17," "," ",,0
+374,Vitenskapelig publisering - kanaler,Institusjonskode,char,4,1,J,J,,0
+374,Vitenskapelig publisering - kanaler,Kanalnavn,varchar,,9," "," ",,0
+374,Vitenskapelig publisering - kanaler,Kode for publikasjonsform,tinyint,,4,J," ",Kobling: 507-Publikasjonsform,0
+374,Vitenskapelig publisering - kanaler,Kode for publiseringskanal,varchar,10,5," "," ",,0
+374,Vitenskapelig publisering - kanaler,Kode for type publiseringskanal,tinyint,,6,J," ",Kobling: 508-Type publiseringskanaler,0
+374,Vitenskapelig publisering - kanaler,Kvalitetsniva,tinyint,,10," "," ",,0
+374,Vitenskapelig publisering - kanaler,Publiseringspoeng,decimal,,18," "," ",,0
+374,Vitenskapelig publisering - kanaler,Publiseringspoeng kvinner,decimal,,19," "," ",,0
+374,Vitenskapelig publisering - kanaler,Publiseringspoeng menn,decimal,,20," "," ",,0
+374,Vitenskapelig publisering - kanaler,Årstall,int,,3," "," ",,0
+379,Søkertall og møtte,Akseptert tilbud,smallint,,22," "," ",,1
+379,Søkertall og møtte,Andel av heltid,decimal,"3,2",34," ",J,,0
+379,Søkertall og møtte,Andel praksis,decimal,"5,2",39," ",J,,0
+379,Søkertall og møtte,Avdelingskode,char,6,4,J,J,Kobling: 210-Avdeling,0
+379,Søkertall og møtte,Institusjonskode,char,4,1,J,J,,0
+379,Søkertall og møtte,Kjønn,char,1,9," ",J,,0
+379,Søkertall og møtte,Kvalifisert,tinyint,,12," ",J,,0
+379,Søkertall og møtte,Møtt til studiestart,smallint,,24," "," ",,1
+379,Søkertall og møtte,Nivåkode,char,10,33,J,J,,0
+379,Søkertall og møtte,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+379,Søkertall og møtte,Opptakstype,char,1,16,J," ",,1
+379,Søkertall og møtte,Organisering_kode,int,,38,J,J,,0
+379,Søkertall og møtte,Prioritet,tinyint,,14," "," ",,0
+379,Søkertall og møtte,Prosent egenfinansiering,decimal,,36," ",J,,0
+379,Søkertall og møtte,Semester,int,,7,J,J,,0
+379,Søkertall og møtte,Studiepoeng,decimal,"5,2",35," ",J,,0
+379,Søkertall og møtte,Studieprogramkode,char,12,8,J,J,,0
+379,Søkertall og møtte,Studiumkode,char,12,32,J,J,,0
+379,Søkertall og møtte,Søknadsalternativer,int,,18," "," ",Sum antall søknadvalg per person.,1
+379,Søkertall og møtte,Tilbud om opptak,int,,20," "," ",,1
+379,Søkertall og møtte,Underv.språk,char,3,40,J,J,,0
+379,Søkertall og møtte,Årstall,int,,6," ",J,,0
+390,Mottatte forretningsideer,Aktivitet,int,,4,J," ",Kobling: 395-Aktivitet (kommersialisering),0
+390,Mottatte forretningsideer,Antall totalt,int,,5," "," ",,0
+390,Mottatte forretningsideer,Institusjonskode,char,4,1,J,J,,0
+390,Mottatte forretningsideer,Type,int,,3,J," ",Kobling: 394-Type kommersialisering,0
+390,Mottatte forretningsideer,Årstall,int,,2," "," ",,0
+394,Type kommersialisering,Navn,varchar,200,2," "," ",,0
+394,Type kommersialisering,Sort,int,,3," "," ",,0
+394,Type kommersialisering,Type,int,,1,J,J,Kobling: 394-Type kommersialisering,0
+395,Aktivitet (kommersialisering),Aktivitet,int,,1,J,J,Kobling: 395-Aktivitet (kommersialisering),0
+395,Aktivitet (kommersialisering),Navn,varchar,200,2," "," ",,0
+395,Aktivitet (kommersialisering),Sort,int,,3," "," ",,0
+433,Fellesgrader,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+433,Fellesgrader,Institusjonskode,char,4,1,J,J,,0
+433,Fellesgrader,Landkode,char,2,6,J," ",Kobling: 261-Landkoder,0
+433,Fellesgrader,Samarbeidsinstitusjon,decimal,"8,0",7," "," ",,0
+433,Fellesgrader,Semester,int,,4,J," ",Kobling: 291-Semester,0
+433,Fellesgrader,Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+433,Fellesgrader,Årstall,int,,3," "," ",,0
+436,Undernivå,Beskrivelse,nvarchar,1000,3," "," ",,0
+436,Undernivå,Gamle nivåkoden,char,10,5," "," ",,0
+436,Undernivå,Hovednivåkode,nchar,4,4," "," ",,0
+436,Undernivå,Nivåkode,char,10,1,J," ",,0
+436,Undernivå,Orden,int,,6," "," ",,0
+436,Undernivå,Undernivå,varchar,100,2," "," ",,0
+444,Organisering,Orden,int,,3," ",J,,0
+444,Organisering,Organisering_kode,int,,1,J,J,,0
+445,Status,navn status,varchar,100,2," ",J,,0
+445,Status,Orden,int,,3," "," ",,0
+445,Status,Statuskode,int,,1," ",J,,0
+447,Videreutdanning,Beskrivelse type videreutd.,varchar,-1,3," "," ",,0
+447,Videreutdanning,Orden,int,,5," "," ",,0
+447,Videreutdanning,Type videreutd.,varchar,120,4," "," ",,0
+447,Videreutdanning,Videreutd.,int,,1,J,J,Kobling: 447-Videreutdanning,0
+447,Videreutdanning,Videreutdanningnavn,varchar,250,2," "," ",,0
+457,Organisasjonsenheter,Avdelingskode,char,6,4,J," ",Kobling: 210-Avdeling,0
+457,Organisasjonsenheter,Avdelingskode_SSB,varchar,20,5," "," ",,0
+457,Organisasjonsenheter,Avdelingsnavn,varchar,150,7," "," ",,0
+457,Organisasjonsenheter,Institusjonskode,char,4,3,J," ",,0
+457,Organisasjonsenheter,Organisasjonsnr,varchar,9,6," "," ",,0
+457,Organisasjonsenheter,Semester,int,,2,J,J,Kobling: 291-Semester,0
+457,Organisasjonsenheter,Årstall,int,,1," ",J,,0
+458,Kvalifikasjoner,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+458,Kvalifikasjoner,Avdelingskode_SSB,varchar,20,3," "," ",,0
+458,Kvalifikasjoner,Institusjonskode,char,4,1,J,J,,0
+458,Kvalifikasjoner,Kvalifikasjonskode,char,20,7," "," ",,0
+458,Kvalifikasjoner,Kvalifikasjonsnavn,varchar,150,8," "," ",,0
+458,Kvalifikasjoner,Nivåkode,char,10,10,J," ",,0
+458,Kvalifikasjoner,Semester,int,,5,J," ",Kobling: 291-Semester,0
+458,Kvalifikasjoner,SSBs NUS-kode,char,10,11," "," ",,0
+458,Kvalifikasjoner,Studiumkode,char,12,9,J," ",,0
+458,Kvalifikasjoner,Vitnemålsgivende/ikke-vitnemålsgivende,bit,,6," "," ",,0
+458,Kvalifikasjoner,Årstall,int,,4," "," ",,0
+460,Godkjenningsinstanser,Beskrivelse,varchar,-1,3," "," ",,0
+460,Godkjenningsinstanser,Godkjenningsinstans,int,,1,J,J,,0
+460,Godkjenningsinstanser,Navn på godkjenningsinstans,varchar,250,2," "," ",,0
+460,Godkjenningsinstanser,Orden,int,,4," "," ",,0
+461,Tilbudstype studieprogrammer,Beskrivelse av tilbudstypen,varchar,-1,3," "," ",,0
+461,Tilbudstype studieprogrammer,Justering,nvarchar,100,5," "," ",,0
+461,Tilbudstype studieprogrammer,Nytt studietilbud,tinyint,,1," ",J,,0
+461,Tilbudstype studieprogrammer,Orden,int,,4," "," ",,0
+461,Tilbudstype studieprogrammer,Tilbudstypenavn,varchar,250,2," "," ",,0
+467,Type utveksling,Innreisende/Utreisende,bit,,6," "," ",,0
+467,Type utveksling,kortnavn_utvekslingstype,varchar,50,4," "," ",,0
+467,Type utveksling,sortering,int,,5," "," ",,0
+467,Type utveksling,Type,char,5,1,J,J,Kobling: 436-Undernivå,0
+467,Type utveksling,utvekslingskode,tinyint,,2," "," ",,0
+467,Type utveksling,utvekslingstype,varchar,100,3," "," ",,0
+469,Opptakstype,Beskrivelse opptakstype,varchar,-1,3," "," ",,0
+469,Opptakstype,Opptakstype,char,1,1,J,J,Kobling: 469-Opptakstype,0
+469,Opptakstype,Opptakstype_tekst,varchar,255,2," "," ",,0
+469,Opptakstype,Orden,int,,4," "," ",,0
+486,Studieretning,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+486,Studieretning,Fagkode,varchar,20,7," "," ",,0
+486,Studieretning,Fagnavn,varchar,250,8," "," ",,0
+486,Studieretning,Institusjonskode,char,4,1,J,J,,0
+486,Studieretning,Semester,int,,4,J," ",Kobling: 291-Semester,0
+486,Studieretning,Studieretningkode,varchar,20,5," "," ",,0
+486,Studieretning,Studieretningnavn,varchar,250,6," "," ",,0
+486,Studieretning,Årstall,int,,3," "," ",,0
+507,Publikasjonsform,Kode for publikasjonsform,tinyint,,1,J,J,Kobling: 507-Publikasjonsform,0
+507,Publikasjonsform,Navn på publikasjonsform,varchar,50,2," "," ",,0
+507,Publikasjonsform,Orden,int,,3," "," ",,0
+508,Type publiseringskanaler,Kode for type publiseringskanal,tinyint,,1,J,J,Kobling: 508-Type publiseringskanaler,0
+508,Type publiseringskanaler,Navn på kanaltype,varchar,50,2," "," ",,0
+510,Kvalitetsnivå,Kode for kvalitetsnivå,tinyint,,1," ",J,,0
+510,Kvalitetsnivå,Navn på kvalitetsnivå,char,6,2," "," ",,0
+519,Fagskole,Besøksadresse,varchar,200,7," "," ",,0
+519,Fagskole,Eierforhold,char,1,13," "," ",,0
+519,Fagskole,E-post,varchar,60,12," "," ",,0
+519,Fagskole,Fagskolenummer,int,,2,J,J,Kobling: 519-Fagskole,0
+519,Fagskole,Kortnavn,varchar,30,10," "," ",,0
+519,Fagskole,Navn,varchar,200,4," "," ",,0
+519,Fagskole,Opprettet årstall,int,,14," "," ",,0
+519,Fagskole,Organisasjonsnummer,varchar,9,3," "," ",,0
+519,Fagskole,Postadresse,varchar,200,6," "," ",,0
+519,Fagskole,Postnummer,char,4,5," "," ",,0
+519,Fagskole,Telefon,char,10,9," "," ",,0
+520,Studiested (fagskoler),E-post,varchar,60,7," "," ",,0
+520,Studiested (fagskoler),Navn,varchar,200,3," "," ",,0
+520,Studiested (fagskoler),Organisasjons- eller virksomhetsnummer (tidligere bedriftsnummer),varchar,9,4," "," ",,0
+520,Studiested (fagskoler),Postadresse,varchar,200,6," "," ",,0
+520,Studiested (fagskoler),Postnummer,char,4,5," "," ",,0
+520,Studiested (fagskoler),Studiestedsnummer,int,,2," ",J,,0
+520,Studiested (fagskoler),Telefon,char,10,9," "," ",,0
+521,Utdanningstilbud (fagskoler),Andel av heltid,decimal,"3,2",9," "," ",,0
+521,Utdanningstilbud (fagskoler),Antall samlingsdager,smallint,,11," "," ",,0
+521,Utdanningstilbud (fagskoler),Fagskolenummer,int,,1,J,J,Kobling: 519-Fagskole,0
+521,Utdanningstilbud (fagskoler),Finansieringsform,smallint,,13,J," ",Kobling: 532-Finansieringsform,0
+521,Utdanningstilbud (fagskoler),Finansieringsform-spesifisering,tinyint,,19,J," ",,0
+521,Utdanningstilbud (fagskoler),Godkjenningsdato,date,,15," "," ",,0
+521,Utdanningstilbud (fagskoler),Godkjenningsinstans,smallint,,14," "," ",,0
+521,Utdanningstilbud (fagskoler),Semester,int,,5,J," ",Kobling: 291-Semester,0
+521,Utdanningstilbud (fagskoler),SSBs kode (NUS-kode),char,6,18," "," ",,0
+521,Utdanningstilbud (fagskoler),Studentbetaling-hele utdanningstilbudet,int,,12," "," ",,0
+521,Utdanningstilbud (fagskoler),Studiestedsnummer,int,,3," "," ",,0
+521,Utdanningstilbud (fagskoler),Utdanningsform,smallint,,10," "," ",,0
+521,Utdanningstilbud (fagskoler),Utdanningstilbudets fagskolepoeng,decimal,"5,2",8," "," ",,0
+521,Utdanningstilbud (fagskoler),Utdanningstilbudets kode,varchar,20,6," "," ",,0
+521,Utdanningstilbud (fagskoler),Utdanningstilbudets navn,varchar,200,7," "," ",,0
+521,Utdanningstilbud (fagskoler),Utdanningstilbudets sluttdato,date,,17," "," ",,0
+521,Utdanningstilbud (fagskoler),Utdanningstilbudets startdato,date,,16," "," ",,0
+521,Utdanningstilbud (fagskoler),Årstall,int,,4," ",J,,0
+529,Opptaksgrunnlag (fagskoler),Opptaksgrunnlag,char,3,1," ",J,,0
+530,Godkjenningsinstans (fagskoler),Godkjenningsinstans,smallint,,1," ",J,,0
+530,Godkjenningsinstans (fagskoler),Navn,varchar,30,1," "," ",,0
+531,Utdanningsform (fagskoler),Navn,varchar,30,1," "," ",,0
+531,Utdanningsform (fagskoler),Utdanningsform,smallint,,1," ",J,,0
+532,Finansieringsform (fagskoler),Finansieringsform,smallint,,1,J,J,Kobling: 532-Finansieringsform,0
+532,Finansieringsform (fagskoler),Kortnavn,varchar,60,1," "," ",,0
+532,Finansieringsform (fagskoler),Lengre navn,varchar,150,1," "," ",,0
+535,Eierforhold (fagskoler),Eierforhold,char,1,1," ",J,,0
+535,Eierforhold (fagskoler),Eierforholdtype,varchar,25,1," ",J,,0
+537,Lærlinger,Antall personer kvinner,int,,6," "," ",,0
+537,Lærlinger,Antall personer menn,int,,6," "," ",,0
+537,Lærlinger,Antall personer totalt,int,,5," "," ",,0
+537,Lærlinger,Antall årsverk kvinner,float,,8," "," ",,0
+537,Lærlinger,Antall årsverk menn,float,,8," "," ",,0
+537,Lærlinger,Antall årsverk totalt,float,,7," "," ",,0
+537,Lærlinger,Institusjonskode,char,4,1,J,J,,0
+537,Lærlinger,Stillingskode,char,4,3,J," ",Kobling: 220-Stillingskoder,0
+537,Lærlinger,Type lærefag,smallint,,4,J," ",,0
+537,Lærlinger,Årstall,int,,2," "," ",,0
+541,Emne (fagskoler),Emnekode,char,20,6," "," ",,0
+541,Emne (fagskoler),Emnenavn,varchar,250,7," "," ",,0
+541,Emne (fagskoler),Emnets fagskolepoeng,decimal,"5,2",8," "," ",,0
+541,Emne (fagskoler),Fagskolenummer,int,,1,J," ",Kobling: 519-Fagskole,0
+541,Emne (fagskoler),Semester,int,,4,J," ",Kobling: 291-Semester,0
+541,Emne (fagskoler),Studiestedsnummer,int,,2," "," ",,0
+541,Emne (fagskoler),Utdanningstilbudets kode,varchar,20,5," "," ",,0
+541,Emne (fagskoler),Årstall,int,,3," "," ",,0
+543,Videreutdanning for førskole-/barnehagelærere i barnehage,Antall 15-studiepoengsenheter,int,,7," "," ",,0
+543,Videreutdanning for førskole-/barnehagelærere i barnehage,Antall 30-studiepoengsenheter,int,,6," "," ",,0
+543,Videreutdanning for førskole-/barnehagelærere i barnehage,Antall 60-studiepoengsenheter,int,,5," "," ",,0
+543,Videreutdanning for førskole-/barnehagelærere i barnehage,Institusjonskode,char,4,1,J,J,,0
+543,Videreutdanning for førskole-/barnehagelærere i barnehage,Kode type videreutdanning,char,25,3,J," ",,0
+543,Videreutdanning for førskole-/barnehagelærere i barnehage,Årstall,int,,2," ",J,,0
+544,Videreutdanning for lærere i grunnskolen,Antall 15-studiepoengsenheter,int,,7," "," ",,0
+544,Videreutdanning for lærere i grunnskolen,Antall 30-studiepoengsenheter,int,,6," "," ",,0
+544,Videreutdanning for lærere i grunnskolen,Antall 60-studiepoengsenheter,int,,5," "," ",,0
+544,Videreutdanning for lærere i grunnskolen,Institusjonskode,char,4,1,J,J,,0
+544,Videreutdanning for lærere i grunnskolen,Kode type videreutdanning,char,25,3,J," ",,0
+544,Videreutdanning for lærere i grunnskolen,Årstall,int,,2," ",J,,0
+555,Søknader (fagskoler),Antall søknader,int,,6," "," ",,1
+555,Søknader (fagskoler),Antall søknader fra kvinnelige søkere,int,,7," "," ",,1
+555,Søknader (fagskoler),Antall søknader fra menn,int,,8," "," ",,1
+555,Søknader (fagskoler),Fagskolenummer,int,,1,J,J,Kobling: 519-Fagskole,0
+555,Søknader (fagskoler),Semester,int,,4,J," ",Kobling: 291-Semester,0
+555,Søknader (fagskoler),Studiestedsnummer,int,,2," "," ",,0
+555,Søknader (fagskoler),Utdanningstilbudets kode,varchar,20,5," "," ",,0
+555,Søknader (fagskoler),Årstall,int,,3," ",J,,0
+556,Utdanningstilbud (fagskoler),Andel av heltid,decimal,"3,2",8," "," ",,0
+556,Utdanningstilbud (fagskoler),Antall samlingsdager,smallint,,10," "," ",,0
+556,Utdanningstilbud (fagskoler),Fagskolenummer,int,,1,J," ",Kobling: 519-Fagskole,0
+556,Utdanningstilbud (fagskoler),Finansieringsform,smallint,,12,J," ",Kobling: 532-Finansieringsform,0
+556,Utdanningstilbud (fagskoler),Godkjenningsdato,date,,14," "," ",,0
+556,Utdanningstilbud (fagskoler),Godkjenningsinstans,smallint,,13," "," ",,0
+556,Utdanningstilbud (fagskoler),Semester,int,,4,J," ",Kobling: 291-Semester,0
+556,Utdanningstilbud (fagskoler),Studentbetaling-hele utdanningstilbudet,int,,11," "," ",,0
+556,Utdanningstilbud (fagskoler),Studiestedsnummer,int,,2," "," ",,0
+556,Utdanningstilbud (fagskoler),Utdanningsform,smallint,,9," "," ",,0
+556,Utdanningstilbud (fagskoler),Utdanningskode (NUS-kode),char,6,17," "," ",,0
+556,Utdanningstilbud (fagskoler),Utdanningstilbudets fagskolepoeng,decimal,"5,2",7," "," ",,0
+556,Utdanningstilbud (fagskoler),Utdanningstilbudets kode,varchar,20,5," "," ",,0
+556,Utdanningstilbud (fagskoler),Utdanningstilbudets navn,varchar,200,6," "," ",,0
+556,Utdanningstilbud (fagskoler),Utdanningstilbudets sluttdato,date,,16," "," ",,0
+556,Utdanningstilbud (fagskoler),Utdanningstilbudets startdato,date,,15," "," ",,0
+556,Utdanningstilbud (fagskoler),Årstall,int,,3," "," ",,0
+559,Departement,Departementid,tinyint,,0,J,J,Kobling: 559-Departement,0
+559,Departement,depnavn,varchar,200,0," "," ",,0
+560,Uteksaminerte grunnskolelærere - fagvalg,Antall 30-studiepoengsenheter,int,,5," "," ",,0
+560,Uteksaminerte grunnskolelærere - fagvalg,Antall 60-studiepoengsenheter,int,,6," "," ",,0
+560,Uteksaminerte grunnskolelærere - fagvalg,Antall fullført GLU mastergrad,int,,7," "," ",,0
+560,Uteksaminerte grunnskolelærere - fagvalg,GLU-type,varchar,10,3,J," ",,0
+560,Uteksaminerte grunnskolelærere - fagvalg,Institusjonskode,char,4,1,J,J,,0
+560,Uteksaminerte grunnskolelærere - fagvalg,Type fordypning,char,20,4,J," ",,0
+560,Uteksaminerte grunnskolelærere - fagvalg,Årstall,int,,2," "," ",,0
+571,Gjennomsnittlige opptakspoeng for søkere,Andel av heltid,decimal,"3,2",34," ",J,,0
+571,Gjennomsnittlige opptakspoeng for søkere,Andel praksis,decimal,"5,2",39," ",J,,0
+571,Gjennomsnittlige opptakspoeng for søkere,Avdelingskode,char,6,2,J," ",Kobling: 210-Avdeling,0
+571,Gjennomsnittlige opptakspoeng for søkere,Institusjonskode,char,4,1,J," ",,0
+571,Gjennomsnittlige opptakspoeng for søkere,Karakterpoeng,float,,16," "," ",,1
+571,Gjennomsnittlige opptakspoeng for søkere,Kjønnkode,bit,,6,J," ",,0
+571,Gjennomsnittlige opptakspoeng for søkere,Møtt til studiestart,smallint,,9," "," ",,0
+571,Gjennomsnittlige opptakspoeng for søkere,Nivåkode,char,10,33,J,J,,0
+571,Gjennomsnittlige opptakspoeng for søkere,NUS-kode,char,10,37," ",J,NUS-kode tekst hentes fra SSB sine teksttabeller hos SSB.,0
+571,Gjennomsnittlige opptakspoeng for søkere,Opptakspoeng totalt,int,,15," "," ",,1
+571,Gjennomsnittlige opptakspoeng for søkere,Opptakstype,char,1,8,J," ",Kobling: 469-Opptakstype,0
+571,Gjennomsnittlige opptakspoeng for søkere,Organisering_kode,int,,38,J,J,,0
+571,Gjennomsnittlige opptakspoeng for søkere,Prioritet,tinyint,,7," "," ",,0
+571,Gjennomsnittlige opptakspoeng for søkere,Prosent egenfinansiering,decimal,,36," ",J,,0
+571,Gjennomsnittlige opptakspoeng for søkere,Semester,int,,4,J," ",Kobling: 291-Semester,0
+571,Gjennomsnittlige opptakspoeng for søkere,Studiepoeng,decimal,"5,2",35," "," ",,0
+571,Gjennomsnittlige opptakspoeng for søkere,Studieprogramkode,char,12,5,J," ",Kobling: 347-Studieprogram,0
+571,Gjennomsnittlige opptakspoeng for søkere,Studiumkode,char,12,32,J,J,,0
+571,Gjennomsnittlige opptakspoeng for søkere,Søkere totalt,int,,17," "," ",,1
+571,Gjennomsnittlige opptakspoeng for søkere,Underv.språk,char,3,40,J,J,,0
+571,Gjennomsnittlige opptakspoeng for søkere,Årstall,int,,3," ",J,,0
+662,Campus-steder,Institusjonskode,char,4,3,J," ",,0
+662,Campus-steder,Kommunenummer campus,char,4,6," "," ",,0
+662,Campus-steder,Landkode campus,varchar,3,7," "," ",,0
+662,Campus-steder,Organisasjonsnr,varchar,9,5," "," ",,0
+662,Campus-steder,Semester,int,,2,J,J,Kobling: 291-Semester,0
+662,Campus-steder,Stedkode campus,varchar,10,8," "," ",,0
+662,Campus-steder,Stednavn campus,varchar,120,4," "," ",,0
+662,Campus-steder,Årstall,int,,1," ",J,,0
+700,Saldobalanse,Belop,float,,5," "," ",,0
+700,Saldobalanse,Kontonavn,varchar,100,6," "," ",,0
+700,Saldobalanse,Kontonr,char,5,1," "," ",,0
+700,Saldobalanse,Organisasjonsnr,varchar,9,3," "," ",,0
+700,Saldobalanse,Periode,int,,4,J," ",Kobling: 720-Regnskap periodekoder,0
+700,Saldobalanse,Årstall,int,,2," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Fane,varchar,256,6," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Institusjonskode,char,,1," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Institusjonsnavn,varchar,100,2," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Kolonneid,smallint,,11," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Kolonnenavn,varchar,,12," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Løpenr,smallint,,13," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Organisasjonsnummer,varchar,,4," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Periode,int,,5,J," ",Kobling: 720-Regnskap periodekoder,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Post,char,10,8," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Referanse,varchar,50,7," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Tekst-egendefinert,varchar,,9," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Verdi,decimal,,15," "," ",,0
+701,"Regnskapspakke statlige universiteter, høyskoler og direktorat",Årstall,int,,3," "," ",,0
+702,Regnskapspakke fagskoler,Beløp,decimal,"18,5",13," "," ",,0
+702,Regnskapspakke fagskoler,Fane,varchar,256,6," "," ",,0
+702,Regnskapspakke fagskoler,Kolonneid,smallint,,10," "," ",,0
+702,Regnskapspakke fagskoler,Kolonnenavn,varchar,,11," "," ",,0
+702,Regnskapspakke fagskoler,Løpenr,smallint,,12," "," ",,0
+702,Regnskapspakke fagskoler,Navn,varchar,200,2," "," ",,0
+702,Regnskapspakke fagskoler,Organisasjonsnummer,varchar,,3," "," ",,0
+702,Regnskapspakke fagskoler,Periode,int,,5,J," ",Kobling: 720-Regnskap periodekoder,0
+702,Regnskapspakke fagskoler,Post,char,10,8," "," ",,0
+702,Regnskapspakke fagskoler,Referanse,varchar,50,7," "," ",,0
+702,Regnskapspakke fagskoler,Skolenr,varchar,,1," "," ",,0
+702,Regnskapspakke fagskoler,Tekst-egendefinert,varchar,,9," "," ",,0
+702,Regnskapspakke fagskoler,Verdi,decimal,,14," "," ",,0
+702,Regnskapspakke fagskoler,Årstall,int,,4," "," ",,0
+703,Regnskapspakke private høyskoler,Beløp,decimal,"18,5",13," "," ",,0
+703,Regnskapspakke private høyskoler,Fane,varchar,256,6," "," ",,0
+703,Regnskapspakke private høyskoler,Institusjonskode,char,,1," "," ",,0
+703,Regnskapspakke private høyskoler,Institusjonsnavn,varchar,100,2," "," ",,0
+703,Regnskapspakke private høyskoler,Kolonneid,smallint,,10," "," ",,0
+703,Regnskapspakke private høyskoler,Kolonnenavn,varchar,,11," "," ",,0
+703,Regnskapspakke private høyskoler,Løpenr,smallint,,12," "," ",,0
+703,Regnskapspakke private høyskoler,Organisasjonsnummer,varchar,,3," "," ",,0
+703,Regnskapspakke private høyskoler,Periode,int,,5,J," ",Kobling: 720-Regnskap periodekoder,0
+703,Regnskapspakke private høyskoler,Post,char,10,8," "," ",,0
+703,Regnskapspakke private høyskoler,Referanse,varchar,50,7," "," ",,0
+703,Regnskapspakke private høyskoler,Tekst-egendefinert,varchar,,9," "," ",,0
+703,Regnskapspakke private høyskoler,Verdi,decimal,,14," "," ",,0
+703,Regnskapspakke private høyskoler,Årstall,int,,4," "," ",,0
+704,Gjennomføring og frafall (institusjonsnivå),Avdkode,varchar,,2,J,J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Frafalt,int,1,31," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Frafalt1,int,1,32," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Frafalt2,int,1,33," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Fullført normert,int,1,25," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Fullført normert1,int,1,26," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Fullført normert2,int,1,27," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Hovednivåkode,nchar,4,7," ",J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Institusjonskode,char,4,1,J,J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Kjønnkode,bit,,5,J,J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Nivåkode,char,10,6,J,J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Semester,int,,4,J,J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Startkull,int,1,21," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Studerer,int,1,28," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Studerer1,int,1,29," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Studerer2,int,1,30," "," ",,1
+704,Gjennomføring og frafall (institusjonsnivå),Studieprogramkode,char,12,8,J," ",Kobling: 347-Studieprogram,0
+704,Gjennomføring og frafall (institusjonsnivå),Studiumkode,char,12,18,J,J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Utdanningskode,char,10,19," ",J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Årstall,int,,3," ",J,,0
+704,Gjennomføring og frafall (institusjonsnivå),Årstall normert tid,int,,20," ",J,,0
+705,Gjennomføring og frafall (sektornivå),Avdkode,varchar,,2,J,J,,0
+705,Gjennomføring og frafall (sektornivå),Frafalt,int,1,31," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Frafalt1,int,1,32," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Frafalt2,int,1,33," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Fullført normert,int,1,25," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Fullført normert1,int,1,26," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Fullført normert2,int,1,27," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Hovednivåkode,nchar,4,7," ",J,,0
+705,Gjennomføring og frafall (sektornivå),Institusjonskode,char,4,1,J,J,,0
+705,Gjennomføring og frafall (sektornivå),Kjønnkode,bit,,5,J,J,,0
+705,Gjennomføring og frafall (sektornivå),Nivåkode,char,10,6,J,J,,0
+705,Gjennomføring og frafall (sektornivå),Semester,int,,4,J,J,,0
+705,Gjennomføring og frafall (sektornivå),Startkull,int,1,21," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Studerer,int,1,28," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Studerer1,int,1,29," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Studerer2,int,1,30," "," ",,1
+705,Gjennomføring og frafall (sektornivå),Studieprogramkode,char,12,8,J,J,,0
+705,Gjennomføring og frafall (sektornivå),Studiumkode,char,12,18,J,J,,0
+705,Gjennomføring og frafall (sektornivå),Utdanningskode,char,10,19," ",J,,0
+705,Gjennomføring og frafall (sektornivå),Årstall,int,,3," ",J,,0
+705,Gjennomføring og frafall (sektornivå),Årstall normert tid,int,,20," ",J,,0
+706,Gjennomføring og frafall (studiumnivå),Avdkode,varchar,,2,J,J,,0
+706,Gjennomføring og frafall (studiumnivå),Frafalt,int,1,31," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Frafalt1,int,1,32," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Frafalt2,int,1,33," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Fullført normert,int,1,25," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Fullført normert1,int,1,26," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Fullført normert2,int,1,27," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Hovednivåkode,nchar,4,7," ",J,,0
+706,Gjennomføring og frafall (studiumnivå),Institusjonskode,char,4,1,J,J,,0
+706,Gjennomføring og frafall (studiumnivå),Kjønnkode,bit,,5,J,J,,0
+706,Gjennomføring og frafall (studiumnivå),Nivåkode,char,10,6,J,J,,0
+706,Gjennomføring og frafall (studiumnivå),Semester,int,,4,J,J,,0
+706,Gjennomføring og frafall (studiumnivå),Startkull,int,1,21," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Studerer,int,1,28," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Studerer1,int,1,29," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Studerer2,int,1,30," "," ",,1
+706,Gjennomføring og frafall (studiumnivå),Studieprogramkode,char,12,8,J,J,,0
+706,Gjennomføring og frafall (studiumnivå),Studiumkode,char,12,18,J,J,,0
+706,Gjennomføring og frafall (studiumnivå),Utdanningskode,char,10,19," ",J,,0
+706,Gjennomføring og frafall (studiumnivå),Årstall,int,,3," ",J,,0
+706,Gjennomføring og frafall (studiumnivå),Årstall normert tid,int,,20," ",J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Avdkode,varchar,,2,J,J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Frafalt,int,1,31," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Frafalt1,int,1,32," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Frafalt2,int,1,33," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Fullført normert,int,1,25," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Fullført normert1,int,1,26," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Fullført normert2,int,1,27," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Hovednivåkode,nchar,4,7," ",J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Institusjonskode,char,4,1,J,J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Kjønnkode,bit,,5,J,J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Nivåkode,char,10,6,J,J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Semester,int,,4,J,J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Startkull,int,1,21," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Studerer,int,1,28," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Studerer1,int,1,29," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Studerer2,int,1,30," "," ",,1
+707,Gjennomføring og frafall (studieprogramnivå),Studieprogramkode,char,12,8,J,J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Studiumkode,char,12,18,J,J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Utdanningskode,char,10,19," ",J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Årstall,int,,3," ",J,,0
+707,Gjennomføring og frafall (studieprogramnivå),Årstall normert tid,int,,20," ",J,,0
+720,Regnskap periodekoder,Kortnavn_periode,varchar,50,4," "," ",,0
+720,Regnskap periodekoder,Navn,varchar,200,2," "," ",,0
+720,Regnskap periodekoder,Orden,int,,5," "," ",,0
+720,Regnskap periodekoder,Periode,int,,1,J," ",Kobling: 720-Regnskap periodekoder,0
+720,Regnskap periodekoder,Periodetype,int,,3," "," ",,0
+750,Styringsindikatorer,Institusjonskode,char,4,1,J," ",,0
+750,Styringsindikatorer,Nevner,char,,6," "," ",,0
+750,Styringsindikatorer,Styringparam tekst,char,,3," "," ",,0
+750,Styringsindikatorer,Styringsparam,char,,2," "," ",,0
+750,Styringsindikatorer,Teller,char,,5," "," ",,0
+750,Styringsindikatorer,Utregning,char,,8," "," ",,0
+750,Styringsindikatorer,Verdi,decimal,,7," "," ",,0
+750,Styringsindikatorer,Årstall,int,,4," "," ",,0
+850,Publiseringskanaler - forlag,Aktiv,int,,4," "," ",,0
+850,Publiseringskanaler - forlag,Forlag id,int,,1," "," ",,0
+850,Publiseringskanaler - forlag,Internasjonal tittel,nvarchar,,3," "," ",,0
+850,Publiseringskanaler - forlag,ISBN-prefix,nvarchar,,6," "," ",,0
+850,Publiseringskanaler - forlag,Land,nvarchar,,8," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2004,nvarchar,1,34," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2005,nvarchar,1,33," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2006,nvarchar,1,32," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2007,nvarchar,1,31," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2008,nvarchar,1,30," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2009,nvarchar,1,29," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2010,nvarchar,1,28," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2011,nvarchar,1,27," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2012,nvarchar,1,26," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2013,nvarchar,1,25," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2014,nvarchar,1,24," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2015,nvarchar,1,23," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2016,nvarchar,1,22," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2017,nvarchar,1,21," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2018,nvarchar,1,20," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2019,nvarchar,1,19," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2020,nvarchar,1,18," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2021,nvarchar,1,17," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2022,nvarchar,1,16," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2023,nvarchar,1,15," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2024,nvarchar,1,14," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2025,nvarchar,1,13," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2026,nvarchar,1,12," "," ",,0
+850,Publiseringskanaler - forlag,Nivå 2027,nvarchar,1,11," "," ",,0
+850,Publiseringskanaler - forlag,Original tittel,nvarchar,,2," "," ",,0
+850,Publiseringskanaler - forlag,Sist endret,nvarchar,,2," "," ",,0
+850,Publiseringskanaler - forlag,Url,nvarchar,,7," "," ",,0
+851,Publiseringskanaler - tidsskrift,Aktiv,int,,4," "," ",,0
+851,Publiseringskanaler - tidsskrift,Etablert år,nvarchar,,51," "," ",,0
+851,Publiseringskanaler - tidsskrift,Forlag,nvarchar,,54," "," ",,0
+851,Publiseringskanaler - tidsskrift,Forlag id,nvarchar,,50," "," ",,0
+851,Publiseringskanaler - tidsskrift,Internasjonal tittel,nvarchar,,3," "," ",,0
+851,Publiseringskanaler - tidsskrift,Konferanserapport,nvarchar,,58," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nedlagt år,nvarchar,,53," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2004,nvarchar,1,36," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2005,nvarchar,1,35," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2006,nvarchar,1,34," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2007,nvarchar,1,33," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2008,nvarchar,1,32," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2009,nvarchar,1,31," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2010,nvarchar,1,30," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2011,nvarchar,1,29," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2012,nvarchar,1,28," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2013,nvarchar,1,27," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2014,nvarchar,1,26," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2015,nvarchar,1,25," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2016,nvarchar,1,24," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2017,nvarchar,1,23," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2018,nvarchar,1,22," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2019,nvarchar,1,21," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2020,nvarchar,,20," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2021,nvarchar,1,19," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2022,nvarchar,1,18," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2023,nvarchar,1,17," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2024,nvarchar,1,16," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2025,nvarchar,1,15," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2026,nvarchar,1,14," "," ",,0
+851,Publiseringskanaler - tidsskrift,Nivå 2027,nvarchar,1,13," "," ",,0
+851,Publiseringskanaler - tidsskrift,NPI Fagfelt,nvarchar,,9," "," ",,0
+851,Publiseringskanaler - tidsskrift,NPI Fagområde,nvarchar,,10," "," ",,0
+851,Publiseringskanaler - tidsskrift,Online ISSN,nvarchar,,7," "," ",,0
+851,Publiseringskanaler - tidsskrift,Open Access,nvarchar,,8," "," ",,0
+851,Publiseringskanaler - tidsskrift,Original tittel,nvarchar,,2," "," ",,0
+851,Publiseringskanaler - tidsskrift,Print ISSN,nvarchar,,6," "," ",,0
+851,Publiseringskanaler - tidsskrift,Sist endret,nvarchar,,2," "," ",,0
+851,Publiseringskanaler - tidsskrift,Språk,nvarchar,,57," "," ",,0
+851,Publiseringskanaler - tidsskrift,Tidsskrift id,int,,1," "," ",,0
+851,Publiseringskanaler - tidsskrift,Url,nvarchar,,59," "," ",,0
+851,Publiseringskanaler - tidsskrift,Utgiver,nvarchar,,55," "," ",,0
+851,Publiseringskanaler - tidsskrift,Utgiverland,nvarchar,,56," "," ",,0
+852,Publiseringskanaler - forlag-nivå,Forlag id,int,,33," "," ",,0
+852,Publiseringskanaler - forlag-nivå,Internasjonal tittel,nvarchar,,37," "," ",,0
+852,Publiseringskanaler - forlag-nivå,Nivå,nvarchar,,36," "," ",,0
+852,Publiseringskanaler - forlag-nivå,År,nvarchar,,35," "," ",,0
+853,Publiseringskanaler - tidsskrift-nivå,Internasjonal tittel,nvarchar,,4," "," ",,0
+853,Publiseringskanaler - tidsskrift-nivå,Nivå,nvarchar,,3," "," ",,0
+853,Publiseringskanaler - tidsskrift-nivå,Tidsskrift id,int,,2," "," ",,0
+853,Publiseringskanaler - tidsskrift-nivå,År,nvarchar,,1," "," ",,0
+854,Tidsskrift - forgjengere og etterfølgere,Etterfølger id,nvarchar,,2," "," ",,0
+854,Tidsskrift - forgjengere og etterfølgere,Forgjenger id,nvarchar,,1," "," ",,0
+855,Erihplus_approved_list,Active,nvarchar,,4," "," ",,0
+855,Erihplus_approved_list,Country of Publication,nvarchar,,15," "," ",,0
+855,Erihplus_approved_list,ERIH PLUS Disciplines,nvarchar,,11," "," ",,0
+855,Erihplus_approved_list,International Title,nvarchar,,10," "," ",,0
+855,Erihplus_approved_list,Journal ID,int,,1," "," ",,0
+855,Erihplus_approved_list,Language,nvarchar,,13," "," ",,0
+855,Erihplus_approved_list,Last Updated,nvarchar,,23," "," ",,0
+855,Erihplus_approved_list,OECD Classifications,nvarchar,,12," "," ",,0
+855,Erihplus_approved_list,Online ISSN,nvarchar,,3," "," ",,0
+855,Erihplus_approved_list,Open Access,nvarchar,,14," "," ",,0
+855,Erihplus_approved_list,Original Title,nvarchar,,5," "," ",,0
+855,Erihplus_approved_list,Print ISSN,nvarchar,,2," "," ",,0
+855,Erihplus_approved_list,Publisher Company,nvarchar,,20," "," ",,0
+855,Erihplus_approved_list,Publisher Name,nvarchar,,21," "," ",,0
+855,Erihplus_approved_list,Url,nvarchar,,22," "," ",,0
+860,Innhold i DBH-HYU sin API-klient,Bulk tabell,char,,10," "," ",,0
+860,Innhold i DBH-HYU sin API-klient,Emne id,int,,1," "," ",,0
+860,Innhold i DBH-HYU sin API-klient,Emnenavn,varchar,250,2," "," ",,0
+860,Innhold i DBH-HYU sin API-klient,Gdpr,int,,8," "," ",,0
+860,Innhold i DBH-HYU sin API-klient,Math,int,1,12," "," ",,0
+860,Innhold i DBH-HYU sin API-klient,Tabell id,int,,4," "," ",,0
+860,Innhold i DBH-HYU sin API-klient,Tabellnavn,char,,6," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Datalengde,char,,5," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Datatype,char,,4," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,GDPR,int,1,10," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Group by (forslag),char,,8," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Kodefelt,char,,7," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Kommentar,char,,9," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Sortering,char,,6," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Tabell id,int,,1," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Tabellnavn,char,,2," "," ",,0
+861,Variabeloversikt for DBH-HYU sin API-klient,Variabel navn,char,,3," "," ",,0
+900,Studiepoeng,Avdkode emne,varchar,,20,J,J,Kobling: 210-Avdeling,0
+900,Studiepoeng,Avdkode student,varchar,,22,J,J,,0
+900,Studiepoeng,Emnekode,char,20,8," ",J,,0
+900,Studiepoeng,Finansieringskilde,char,10,9," ",J,,0
+900,Studiepoeng,Finmodekode emne,varchar,,26,J,J,Kobling: 252-Finansieringskategorier,0
+900,Studiepoeng,Finmodkode student,varchar,,25,J,J,Kobling: 252-Finansieringskategorier,0
+900,Studiepoeng,Institusjonskode,char,4,1,J,J,,0
+900,Studiepoeng,Ny produksjon egentfin,decimal,,29," "," ",,0
+900,Studiepoeng,Ny produksjon egentfin kv,decimal,,30," "," ",,0
+900,Studiepoeng,Ny produksjon ekstern,decimal,,31," "," ",,0
+900,Studiepoeng,Ny produksjon ekstern kv,decimal,,32," "," ",,0
+900,Studiepoeng,Ny produksjon totalt,decimal,,27," "," ",,0
+900,Studiepoeng,Ny produksjon totalt kv,decimal,,28," "," ",,0
+900,Studiepoeng,Progkode emne,varchar,,21,J,J,,0
+900,Studiepoeng,Progkode student,varchar,,23,J,J,,0
+900,Studiepoeng,Semester,int,,10,J,J,Kobling: 291-Semester,0
+900,Studiepoeng,Studentkategori,varchar,,24,J,J,,0
+900,Studiepoeng,Årstall,int,,2," ",J,,0
+902,Økonomiske nøkkeltall,Anleggsmidler,decimal,,36," "," ",,0
+902,Økonomiske nøkkeltall,Avregning,decimal,,32," "," ",,0
+902,Økonomiske nøkkeltall,Avsetning,decimal,,33," "," ",,0
+902,Økonomiske nøkkeltall,Bidrag annet,decimal,,18," "," ",,0
+902,Økonomiske nøkkeltall,Bidrag næringsliv,decimal,,17," "," ",,0
+902,Økonomiske nøkkeltall,Bidrag offentlige,decimal,,15," "," ",,0
+902,Økonomiske nøkkeltall,Bidrag organisasjoner,decimal,,16," "," ",,0
+902,Økonomiske nøkkeltall,Bidragsinntekter,decimal,,9," "," ",,0
+902,Økonomiske nøkkeltall,Driftsinntekter,decimal,,3," "," ",,0
+902,Økonomiske nøkkeltall,Driftskostnader,decimal,,4," "," ",,0
+902,Økonomiske nøkkeltall,Egenkapital private høyskoler,decimal,,41," "," ",,0
+902,Økonomiske nøkkeltall,Eksamensavgift private høyskoler,decimal,,39," "," ",,0
+902,Økonomiske nøkkeltall,EU,decimal,,8," "," ",,0
+902,Økonomiske nøkkeltall,Institusjonskode,char,4,1,J," ",,0
+902,Økonomiske nøkkeltall,Kortsiktig gjeld,decimal,,37," "," ",,0
+902,Økonomiske nøkkeltall,Langsiktig gjeld,decimal,,38," "," ",,0
+902,Økonomiske nøkkeltall,Lønnskostnad,decimal,,31," "," ",,0
+902,Økonomiske nøkkeltall,NFR,decimal,,6," "," ",,0
+902,Økonomiske nøkkeltall,Omløpsmidler,decimal,,35," "," ",,0
+902,Økonomiske nøkkeltall,Oppdrag annet,decimal,,22," "," ",,0
+902,Økonomiske nøkkeltall,Oppdrag næringsliv,decimal,,21," "," ",,0
+902,Økonomiske nøkkeltall,Oppdrag offentlige,decimal,,19," "," ",,0
+902,Økonomiske nøkkeltall,Oppdrag organisasjoner,decimal,,20," "," ",,0
+902,Økonomiske nøkkeltall,Oppdragsinntekter,decimal,,30," "," ",,0
+902,Økonomiske nøkkeltall,RFF,decimal,,7," "," ",,0
+902,Økonomiske nøkkeltall,Salg- og leieinntekter private høyskoler,decimal,,40," "," ",,0
+902,Økonomiske nøkkeltall,Statstilskudd,decimal,,5," "," ",,0
+902,Økonomiske nøkkeltall,Totalkapital,decimal,,34," "," ",,0
+902,Økonomiske nøkkeltall,Årstall,int,,2," "," ",,0
+905,Eksamensdata,Antall kandidater stryk,int,,18," "," ",,1
+905,Eksamensdata,Avdelingskode,char,6,2,J,J,Kobling: 210-Avdeling,0
+905,Eksamensdata,Avdelingsnavn,varchar,150,3," ",J,,0
+905,Eksamensdata,Bestått,int,,17," "," ",,1
+905,Eksamensdata,Beståtte gjentak,int,,18," "," ",,1
+905,Eksamensdata,Eksamensprod med gjentak,int,,19," "," ",,1
+905,Eksamensdata,Eksamensprod uten gjentak,int,,20," "," ",,1
+905,Eksamensdata,Emnekode,char,20,13," ",J,,0
+905,Eksamensdata,Emnenavn,varchar,250,14," ",J,,0
+905,Eksamensdata,Fakultetskode,char,3,7," ",J,,0
+905,Eksamensdata,Finansieringskategori,varchar,6,8,J,J,Kobling: 252-Finansieringskategorier,0
+905,Eksamensdata,Institusjonskode,char,4,1,J,J,,0
+905,Eksamensdata,Møtt til eksamen,int,,16," "," ",,0
+905,Eksamensdata,Nivåkode,char,10,11,J,J,,0
+905,Eksamensdata,Oppmeldt totalt,int,,15," ",J,,0
+905,Eksamensdata,Prosent egenfinansiering,decimal,,12," ",J,,0
+905,Eksamensdata,Semester,int,,6,J,J,Kobling: 291-Semester,0
+905,Eksamensdata,Studieprogramkode,char,12,9,J,J,Kobling: 347-Studieprogram,0
+905,Eksamensdata,Studieprogramnavn,varchar,250,10," ",J,,0
+905,Eksamensdata,Årstall,int,,4," ",J,,0
+906,Eksamensdata detaljert,All produksjon egenfin,decimal,,56," "," ",,0
+906,Eksamensdata detaljert,All produksjon egenfin kv,decimal,,57," "," ",,0
+906,Eksamensdata detaljert,All produksjon ekstern,decimal,,58," "," ",,0
+906,Eksamensdata detaljert,All produksjon ekstern kv,decimal,,59," "," ",,0
+906,Eksamensdata detaljert,All produksjon tot,decimal,,54," "," ",,0
+906,Eksamensdata detaljert,All produksjon tot  kv,decimal,,55," "," ",,0
+906,Eksamensdata detaljert,Antall kand. best. gjentak kvinner,int,,41," "," ",,1
+906,Eksamensdata detaljert,Antall kandidater bestått,int,,36," "," ",,1
+906,Eksamensdata detaljert,Antall kandidater bestått kvinner,int,,37," "," ",,1
+906,Eksamensdata detaljert,Antall kandidater beståtte gjentak,int,,40," "," ",,1
+906,Eksamensdata detaljert,Antall kandidater kvinner,int,,35," "," ",,1
+906,Eksamensdata detaljert,Antall kandidater stryk,int,,38," "," ",,1
+906,Eksamensdata detaljert,Antall kandidater stryk kvinner,int,,39," "," ",,1
+906,Eksamensdata detaljert,Antall kandidater totalt,int,,34," "," ",,1
+906,Eksamensdata detaljert,Avdeling student,varchar,,4," ",J,,0
+906,Eksamensdata detaljert,Avdelingskode emne,varchar,,2," ",J,,0
+906,Eksamensdata detaljert,Emnekode,char,20,6," ",J,,0
+906,Eksamensdata detaljert,Finans,decimal,"5,2",31,J,J,,0
+906,Eksamensdata detaljert,Finmodekode emne,varchar,,32,J,J,Kobling: 252-Finansieringskategorier,0
+906,Eksamensdata detaljert,Finmodkode student,varchar,,31,J,J,Kobling: 252-Finansieringskategorier,0
+906,Eksamensdata detaljert,Gjentak produksjon egenfin,decimal,,50," "," ",,0
+906,Eksamensdata detaljert,Gjentak produksjon egenfin kv,decimal,,51," "," ",,0
+906,Eksamensdata detaljert,Gjentak produksjon ekstern,decimal,,52," "," ",,0
+906,Eksamensdata detaljert,Gjentak produksjon ekstern kv,decimal,,53," "," ",,0
+906,Eksamensdata detaljert,Gjentak produksjon tot,decimal,,48," "," ",,0
+906,Eksamensdata detaljert,Gjentak produksjon tot kv,decimal,,49," "," ",,0
+906,Eksamensdata detaljert,Institusjonskode,char,4,1,J,J,,0
+906,Eksamensdata detaljert,Nivåkode,char,1,28,J," ",,0
+906,Eksamensdata detaljert,Ny produksjon egentfin,decimal,,44," "," ",,0
+906,Eksamensdata detaljert,Ny produksjon egentfin kv,decimal,,46," "," ",,0
+906,Eksamensdata detaljert,Ny produksjon ekstern,decimal,,46," "," ",,0
+906,Eksamensdata detaljert,Ny produksjon ekstern kv,decimal,,47," "," ",,0
+906,Eksamensdata detaljert,Ny produksjon totalt,decimal,,42," "," ",,0
+906,Eksamensdata detaljert,Ny produksjon totalt kv,decimal,,43," "," ",,0
+906,Eksamensdata detaljert,Program emnekode,varchar,,3," ",J,,0
+906,Eksamensdata detaljert,Semester,int,,30,J,J,Kobling: 291-Semester,0
+906,Eksamensdata detaljert,Student studieprogramkode,varchar,,5," ",J,,0
+906,Eksamensdata detaljert,Studentkategori,varchar,,32,J,J,,0
+906,Eksamensdata detaljert,Studiepoeng,float,,33," "," ",,0
+906,Eksamensdata detaljert,Årstall,int,,29," ",J,,0
+907,Kandidater med uttelling i finansieringssystemet,Antall år,decimal,,12," "," ",,0
+907,Kandidater med uttelling i finansieringssystemet,Avdkode,varchar,,2,J," ",Kobling: 210-Avdeling,0
+907,Kandidater med uttelling i finansieringssystemet,Dobbel til enkel,decimal,,13," "," ",,0
+907,Kandidater med uttelling i finansieringssystemet,Etterrapp,decimal,,11," "," ",,0
+907,Kandidater med uttelling i finansieringssystemet,Finansierings-kategori,char,6,7,J," ",Kobling: 252-Finansieringskategorier,0
+907,Kandidater med uttelling i finansieringssystemet,Institusjonskode,char,4,1,J," ",,0
+907,Kandidater med uttelling i finansieringssystemet,Instkode_sammenslatt,varchar,,9," "," ",,0
+907,Kandidater med uttelling i finansieringssystemet,Kvalifikasjonskode,varchar,20,5," "," ",,0
+907,Kandidater med uttelling i finansieringssystemet,Semester,int,,4,J," ",Kobling: 291-Semester,0
+907,Kandidater med uttelling i finansieringssystemet,Studieprogramkode,char,12,6,J," ",Kobling: 347-Studieprogram,0
+907,Kandidater med uttelling i finansieringssystemet,Totalt,decimal,,10," "," ",,0
+907,Kandidater med uttelling i finansieringssystemet,Uttelling Kode:1=Enkel 2=dobbel,varchar,,8," "," ",,0
+907,Kandidater med uttelling i finansieringssystemet,Årstall,int,,3," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,Basis,int,,6," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,Belop,float,,4," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,beskrivelse,varchar,100,3," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,Beskrivelse finmodkode,varchar,,5," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,Finansierings-kategori,char,6,2,J," ",Kobling: 252-Finansieringskategorier,0
+908,Finansieringssystemet - kostnadskategorier,Kandidater-dobbel,int,,9," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,Kandidater-enkel,int,,8," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,Sort,int,,10," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,Studiepoeng,float,,7," "," ",,0
+908,Finansieringssystemet - kostnadskategorier,Årstall,int,,1," "," ",,0
+916,API-driftsmeldinger,Beskrivelse,nvarchar,1000,3," "," ",,0
+916,API-driftsmeldinger,Context,char,,4," "," ",,0
+916,API-driftsmeldinger,Dato,char,,1," "," ",,0
+916,API-driftsmeldinger,Navn,varchar,200,2," "," ",,0
+947,Fagskolestudenter - aktive studenter,Aldersintervall,varchar,20,41," "," ",,0
+947,Fagskolestudenter - aktive studenter,Andel av heltid,decimal,"3,2",8," "," ",,0
+947,Fagskolestudenter - aktive studenter,Antall kvinner,int,,191," "," ",,1
+947,Fagskolestudenter - aktive studenter,Antall menn,int,,181," "," ",,1
+947,Fagskolestudenter - aktive studenter,Antall studenter,int,,201," "," ",,1
+947,Fagskolestudenter - aktive studenter,Eierforholdtype,varchar,25,20," "," ",,0
+947,Fagskolestudenter - aktive studenter,Fagskolens navn,varchar,200,1," ",J,,0
+947,Fagskolestudenter - aktive studenter,Fagskolenummer,int,,9," "," ",,0
+947,Fagskolestudenter - aktive studenter,Finansieringsform,varchar,60,121," "," ",,0
+947,Fagskolestudenter - aktive studenter,Finansieringsform kode,smallint,,111," "," ",,0
+947,Fagskolestudenter - aktive studenter,FKF ID,char,5,131," "," ",,0
+947,Fagskolestudenter - aktive studenter,FKF Kategori,varchar,100,141," "," ",,0
+947,Fagskolestudenter - aktive studenter,FKF Type,varchar,100,151," "," ",,0
+947,Fagskolestudenter - aktive studenter,Land for statsborgerskap,varchar,60,81," "," ",,0
+947,Fagskolestudenter - aktive studenter,Landkode for statsborgerskap,varchar,3,71," "," ",,0
+947,Fagskolestudenter - aktive studenter,Opptaksgrunnlag,varchar,50,61," "," ",,0
+947,Fagskolestudenter - aktive studenter,Opptaksgrunnlag kode,char,3,51," "," ",,0
+947,Fagskolestudenter - aktive studenter,Semester,int,,15," "," ",,0
+947,Fagskolestudenter - aktive studenter,Semesternavn,char,20,4," ",J,,0
+947,Fagskolestudenter - aktive studenter,Skolepenger for semesteret det rapporteres for,int,,13," "," ",,0
+947,Fagskolestudenter - aktive studenter,SSBs kode (NUS-kode),char,6,14," "," ",,0
+947,Fagskolestudenter - aktive studenter,Studiestedets navn,varchar,200,21," "," ",,0
+947,Fagskolestudenter - aktive studenter,Studiestedsnummer,int,,10," "," ",,0
+947,Fagskolestudenter - aktive studenter,Utdanningsform,varchar,30,102," "," ",,0
+947,Fagskolestudenter - aktive studenter,Utdanningsform kode,smallint,,101," "," ",,0
+947,Fagskolestudenter - aktive studenter,Utdanningstilbudets kode,varchar,20,11," "," ",,0
+947,Fagskolestudenter - aktive studenter,Utdanningstilbudets navn,varchar,200,2," ",J,,0
+947,Fagskolestudenter - aktive studenter,Utdanningstilbudets studiepoeng,decimal,"5,2",91," "," ",,0
+947,Fagskolestudenter - aktive studenter,Årstall,int,,3," ",J,,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Aldersintervall,varchar,20,41," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Andel av heltid,decimal,"3,2",8," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Antall kvinner,int,,191," "," ",,1
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Antall menn,int,,181," "," ",,1
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Antall studenter,int,,201," "," ",,1
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Eierforholdtype,varchar,25,20," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Fagskolens navn,varchar,200,1," ",J,,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Fagskolenummer,int,,9," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Finansieringsform,varchar,60,121," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Finansieringsform kode,smallint,,111," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,FKF ID,char,5,131," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,FKF Kategori,varchar,100,141," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,FKF Type,varchar,100,151," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Land for statsborgerskap,varchar,60,81," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Landkode for statsborgerskap,varchar,3,71," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Opptaksgrunnlag,varchar,50,61," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Opptaksgrunnlag kode,char,3,51," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Semester,int,,15," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Semesternavn,char,20,4," ",J,,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Skolepenger for semesteret det rapporteres for,int,,13," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,SSBs kode (NUS-kode),char,6,14," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Studiestedets navn,varchar,200,21," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Studiestedsnummer,int,,10," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Utdanningsform kode,smallint,,101," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Utdanningstilbudets kode,varchar,20,11," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Utdanningstilbudets navn,varchar,200,2," ",J,,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Utdanningstilbudets studiepoeng,decimal,"5,2",91," "," ",,0
+948,Fagskolestudenter - aktive studenter utenfor telletidspunkt,Årstall,int,,3," ",J,,0
+977,Studentsamskipnader – økonomirapportering,Fane,varchar,256,9," "," ",,0
+977,Studentsamskipnader – økonomirapportering,Institusjonskode,char,4,1,J," ",,0
+977,Studentsamskipnader – økonomirapportering,Institusjonsnavn,varchar,100,2," "," ",,0
+977,Studentsamskipnader – økonomirapportering,KolonneGruppeNavn,nvarchar,150,17," "," ",,0
+977,Studentsamskipnader – økonomirapportering,Kolonneid,smallint,,12," "," ",,0
+977,Studentsamskipnader – økonomirapportering,KolonneNavn,nvarchar,200,16," "," ",,0
+977,Studentsamskipnader – økonomirapportering,lopenr,decimal,,22," "," ",,0
+977,Studentsamskipnader – økonomirapportering,Organisasjonsnummer,varchar,,3," "," ",,0
+977,Studentsamskipnader – økonomirapportering,Periode,int,,5,J," ",,0
+977,Studentsamskipnader – økonomirapportering,Post,char,10,10," "," ",,0
+977,Studentsamskipnader – økonomirapportering,Referanse,varchar,50,6," "," ",,0
+977,Studentsamskipnader – økonomirapportering,Tekst-egendefinert,varchar,,11," "," ",,0
+977,Studentsamskipnader – økonomirapportering,Verdi,decimal,,23," "," ",,0
+977,Studentsamskipnader – økonomirapportering,Årstall,int,,4," "," ",,0

@@ -1,0 +1,93 @@
+{
+  "scope": {
+    "municipality_code": "0301",
+    "years": [
+      2025,
+      2026
+    ],
+    "semesters": [
+      1,
+      3
+    ],
+    "selection": "Exact municipality/year/semester filter on api_662.csv.",
+    "interpretation_limit": "These are campus registry rows for Oslo municipality. They do not establish active teaching at each location or a complete inventory of Oslo higher education."
+  },
+  "source_tables": {
+    "api_002.csv": {
+      "rows": 1206,
+      "columns": 10,
+      "sha256": "d2480a1165a936aa60754255163fe035456a7ed391c486c5e3093d18a9610743",
+      "url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=002"
+    },
+    "api_211.csv": {
+      "rows": 293,
+      "columns": 15,
+      "sha256": "b143a6f4114ca45f284c0f4560df05567393cb88d54e1e2c849654569741fcc0",
+      "url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=211"
+    },
+    "api_662.csv": {
+      "rows": 3698,
+      "columns": 10,
+      "sha256": "655aeee19c859ec1e25784f5fcaca634a665b1cff141f76be0c9df9c872aeca8",
+      "url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=662"
+    }
+  },
+  "output": {
+    "file": "oslo_campus_2025_2026.csv",
+    "rows": 146,
+    "raw_campus_columns_preserved": [
+      "Årstall",
+      "Semester",
+      "Semesternavn",
+      "Institusjonskode",
+      "Institusjonsnavn",
+      "Stednavn campus",
+      "Organisasjonsnr",
+      "Kommunenummer campus",
+      "Landkode campus",
+      "Stedkode campus"
+    ],
+    "institution_metadata_join": "Exact Institusjonskode; all matched rows retained as JSON candidates."
+  },
+  "period_counts": {
+    "2025-1": {
+      "campus_rows": 35,
+      "distinct_institution_codes": 26
+    },
+    "2025-3": {
+      "campus_rows": 36,
+      "distinct_institution_codes": 26
+    },
+    "2026-1": {
+      "campus_rows": 37,
+      "distinct_institution_codes": 26
+    },
+    "2026-3": {
+      "campus_rows": 38,
+      "distinct_institution_codes": 27
+    }
+  },
+  "institution_table_code_audit": {
+    "rows": 293,
+    "distinct_exact_codes": 293,
+    "codes_with_multiple_rows": {},
+    "ambiguous_codes_in_selected_rows": []
+  },
+  "duplicate_campus_keys": {
+    "key": [
+      "year",
+      "semester",
+      "institution_code",
+      "campus_code"
+    ],
+    "duplicates": []
+  },
+  "diagnostic_labels_only_no_exclusion": {
+    "nett": 12,
+    "online": 4,
+    "uplassert": 4
+  },
+  "excluded_inputs": [
+    "enrolment_response.csv was not read or used."
+  ]
+}

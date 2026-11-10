@@ -1,0 +1,55 @@
+{
+  "review_type": "bounded independent source and interpretation review; recorded by root from subagent findings",
+  "requested_model": "gpt-6.1-terra; serving build not independently verified",
+  "raw_extracts_examined": [
+    "data/current_oslo_dbh_campus/api_662.csv",
+    "data/current_oslo_dbh_campus/enrolment_response.csv"
+  ],
+  "raw_counts_independently_verified": {
+    "campus_rows": [
+      35,
+      36,
+      37,
+      38
+    ],
+    "registry_institution_codes": [
+      26,
+      26,
+      26,
+      27
+    ],
+    "enrolment_rows": [
+      46,
+      46,
+      56,
+      55
+    ],
+    "positive_any_mode_institution_codes": [
+      25,
+      25,
+      25,
+      25
+    ],
+    "positive_mode1_or4_institution_codes": [
+      23,
+      23,
+      23,
+      23
+    ]
+  },
+  "mode_interpretation": "1and4areinstitution/study-site labels;mode5includesgatherings;1/4isnotexhaustivephysicalactivity. Two2026rows stillusecode1.",
+  "results_reviewed": [
+    "summary.json",
+    "bounds.csv",
+    "ranks.csv"
+  ],
+  "interpretation": "FixedOsloallcases;equalZurich23/25,Oslo26/27. These are definition scenarios,nottrueinventorybounds ortrend.25baselineequalitynotoriginallineage/sameproviders. Retainedpopulationandroundingnotdemographicprecision;meanwidthshiftsnotactualuncertaintyreduction.",
+  "not_certified": [
+    "complete city provider coverage",
+    "original25source lineage",
+    "exact query privacy transformation",
+    "unrounded student counts",
+    "full manuscript or final submission readiness"
+  ],
+  "scalar_calculation": "independently verified by root auditor, not claimed as part of peer interpretation review"
+}

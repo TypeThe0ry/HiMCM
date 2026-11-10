@@ -1,0 +1,152 @@
+{
+  "status": "pass scoped DBH source and scalar definition review",
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 77,
+  "withdrawal_evidence_entries_checked": 10,
+  "paper_dependencies_each_copy": 7,
+  "current_PDF_unchanged": true,
+  "edition_entries_checked": 24,
+  "HTTP200_bodies": 4,
+  "HTTP403_error_bodies": 4,
+  "campus_rows_checked": 146,
+  "enrolment_rows_checked": 203,
+  "period_counts": [
+    [
+      35,
+      26,
+      46,
+      25,
+      23
+    ],
+    [
+      36,
+      26,
+      46,
+      25,
+      23
+    ],
+    [
+      37,
+      26,
+      56,
+      25,
+      23
+    ],
+    [
+      38,
+      27,
+      55,
+      25,
+      23
+    ]
+  ],
+  "utility_bound_rows_checked": 800,
+  "scalar_city_scenario_weight_cases": 160,
+  "count25_exactly_reproduces_primary": true,
+  "all_other159_ranges_preserved": true,
+  "contrasts": [
+    {
+      "scenario": "DBH_code_count_23",
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": -0.14282980948090795,
+      "Oslo_upper_change": -0.12568976731693482,
+      "mean_width_change": 0.001071252635249209
+    },
+    {
+      "scenario": "DBH_code_count_23",
+      "weight_reference": "equal",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": -0.12328554454207818,
+      "Oslo_upper_change": -0.10980130728660242,
+      "mean_width_change": 0.0008427648284659028
+    },
+    {
+      "scenario": "DBH_code_count_25",
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": 0.0,
+      "Oslo_upper_change": 0.0,
+      "mean_width_change": 0.0
+    },
+    {
+      "scenario": "DBH_code_count_25",
+      "weight_reference": "equal",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": 0.0,
+      "Oslo_upper_change": 0.0,
+      "mean_width_change": 0.0
+    },
+    {
+      "scenario": "DBH_code_count_26",
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": 0.059786922224105865,
+      "Oslo_upper_change": 0.052233718787057626,
+      "mean_width_change": -0.0004720752148141827
+    },
+    {
+      "scenario": "DBH_code_count_26",
+      "weight_reference": "equal",
+      "decision_rank_changes": 2,
+      "recommendation_changed": true,
+      "Oslo_lower_change": 0.05154657674508201,
+      "Oslo_upper_change": 0.04552482976374961,
+      "mean_width_change": -0.0003763591863332749
+    },
+    {
+      "scenario": "DBH_code_count_27",
+      "weight_reference": "fixed",
+      "decision_rank_changes": 0,
+      "recommendation_changed": false,
+      "Oslo_lower_change": 0.1201236883594703,
+      "Oslo_upper_change": 0.10471457501471093,
+      "mean_width_change": -0.0009630695840474601
+    },
+    {
+      "scenario": "DBH_code_count_27",
+      "weight_reference": "equal",
+      "decision_rank_changes": 2,
+      "recommendation_changed": true,
+      "Oslo_lower_change": 0.10353129176341014,
+      "Oslo_upper_change": 0.09119966485428677,
+      "mean_width_change": -0.000770726681821543
+    }
+  ],
+  "municipal_provider_inventory_verified": false,
+  "original25_lineage_verified": false,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "source_sha256": {
+    "data/current_oslo_dbh_campus/README.md": "f0e35a3b099266f23a5b0ea26c166d1f5571fe1e00062f834e71ba6abd1689e3",
+    "data/current_oslo_dbh_campus/api_002.csv": "d2480a1165a936aa60754255163fe035456a7ed391c486c5e3093d18a9610743",
+    "data/current_oslo_dbh_campus/api_211.csv": "b143a6f4114ca45f284c0f4560df05567393cb88d54e1e2c849654569741fcc0",
+    "data/current_oslo_dbh_campus/api_662.csv": "655aeee19c859ec1e25784f5fcaca634a665b1cff141f76be0c9df9c872aeca8",
+    "data/current_oslo_dbh_campus/campus_doc.html": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+    "data/current_oslo_dbh_campus/client.html": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+    "data/current_oslo_dbh_campus/enrolment_classified.csv": "4de10d2c86e97487e84dc8730439d305690280b07c408166741f76324194c29c",
+    "data/current_oslo_dbh_campus/enrolment_doc.html": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+    "data/current_oslo_dbh_campus/enrolment_query.json": "48a04a6974afaa5cfd705d71a418dcfad6b52aeed4707896d43da80e4865a9b2",
+    "data/current_oslo_dbh_campus/enrolment_response.csv": "e332749cce1a754330c8732e3ca2730d17ead3fbf674bd4c6eb3546cc0b01d4a",
+    "data/current_oslo_dbh_campus/enrolment_summary.json": "42386bc7474012b72a1d5e0242096547bb91a70b69bf614c04595d16b69c7811",
+    "data/current_oslo_dbh_campus/extract_campus.py": "f77535d536806268e83b957737def6320f002921212e7f3e992ea5b2bc571f4c",
+    "data/current_oslo_dbh_campus/extract_enrolment.py": "8c96bf46e4c04cea661302439583513d339e952173ec40b6953192aebc20a66a",
+    "data/current_oslo_dbh_campus/institution_doc.html": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+    "data/current_oslo_dbh_campus/oslo_campus_2025_2026.csv": "08b20f34407510a568a05e99b72d89c29e81896d14669969c29bc3d3f6406513",
+    "data/current_oslo_dbh_campus/retrieval.json": "6192af692215b6cb357e7c432dfbf45c3d0ad95ec8180aa7cc1617a7f31df22c",
+    "data/current_oslo_dbh_campus/summary.json": "cefdef354afd2d34242904c3079ce22193758c50b3fc6829d2a6c0266c63e431",
+    "results/current_oslo_dbh_review/README.md": "8de04ce570b333980793cac627bffe01e4d36bcd52d4cb9543bcdbb4a64bb0ff",
+    "results/current_oslo_dbh_review/summary.json": "d9134f87a25ee81e53e8ead9fe4b866210e6ac5da4e733121c38385a6e614e8c",
+    "results/current_oslo_dbh_review/bounds.csv": "7716b76106cb010f9691d19abf03d6d70a7b2f334c548eb792405ceb31831ddd",
+    "results/current_oslo_dbh_review/ranks.csv": "1c30a5d9187c302606eb36326befdc7cf3f708a549fa8459eef62b6ca53fb2a4",
+    "results/current_oslo_dbh_review/peer_review.json": "f32742a73b8f742f5869d691801a62059232239a9a269aab40e7453c22b6fbcd",
+    "scripts/task4_current_oslo_he_definition.py": "fef7bb6219c9a3023a5f66327f1208a00316fca4d351ba90e35e99a86d45e101",
+    "scripts/audit_current_oslo_dbh.py": "4d53eeb08882159568487fdebb5a815e1b38b6eb059269c95fa1f159fbf2580d"
+  },
+  "scope": "Visible public DBH code counts and one-point definition scenarios; no true-provider bounds, exact student counts, model replacement, future trend or manuscript change."
+}

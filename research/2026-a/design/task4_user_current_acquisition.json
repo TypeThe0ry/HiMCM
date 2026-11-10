@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 32,
+    "routes": 33,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -488,5 +488,63 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Identity matches to named national categories do not establish city inventory coverage. Unmatched is not ineligible. Original CSV25/34.4density and existing112point ledger retained."
+  },
+  "Oslo_DBH_campus_enrolment_and_definition_review": {
+    "data": "data/current_oslo_dbh_campus",
+    "results": "results/current_oslo_dbh_review",
+    "script": "scripts/task4_current_oslo_he_definition.py",
+    "audit_script": "scripts/audit_current_oslo_dbh.py",
+    "verification": "results/current_oslo_dbh_review/verification.json",
+    "verification_sha256": "dd406292fbb2b8828f031aff6ff09ece3284466a9ca3bf1358781ba17db652b8",
+    "periods": [
+      "2025spring",
+      "2025autumn",
+      "2026spring",
+      "2026autumn"
+    ],
+    "campus_registry_institution_codes": [
+      26,
+      26,
+      26,
+      27
+    ],
+    "positive_any_mode_codes": [
+      25,
+      25,
+      25,
+      25
+    ],
+    "positive_mode1_or4_codes": [
+      23,
+      23,
+      23,
+      23
+    ],
+    "candidate_counts": [
+      23,
+      25,
+      26,
+      27
+    ],
+    "fixed_recommendations": [
+      "Oslo",
+      "Oslo",
+      "Oslo",
+      "Oslo"
+    ],
+    "equal_recommendations": [
+      "Zurich",
+      "Zurich",
+      "Oslo",
+      "Oslo"
+    ],
+    "all_cases_possible_champions": 16,
+    "all_cases_necessary_champions": 0,
+    "count25_exactly_reproduces_primary": true,
+    "other159_ranges_preserved": true,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Reported DBH institution-code definition scenarios, not true provider inventory bounds, precise student counts or a trend. No raw input or primary replacement."
   }
 }

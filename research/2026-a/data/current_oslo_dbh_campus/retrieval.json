@@ -1,0 +1,89 @@
+[
+  {
+    "file": "client.html",
+    "requested_url": "https://dbh.hkdir.no/dbhapiklient/",
+    "requested_utc": "2026-11-10T14:02:02.512760+00:00",
+    "final_url": "https://dbh.hkdir.no/dbhapiklient/",
+    "status": 403,
+    "content_type": "text/html",
+    "bytes": 179,
+    "sha256": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5"
+  },
+  {
+    "file": "campus_doc.html",
+    "requested_url": "https://dbh.hkdir.no/datainnhold/tabell-dokumentasjon/662",
+    "requested_utc": "2026-11-10T14:02:02.513789+00:00",
+    "final_url": "https://dbh.hkdir.no/datainnhold/tabell-dokumentasjon/662",
+    "status": 403,
+    "content_type": "text/html",
+    "bytes": 179,
+    "sha256": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5"
+  },
+  {
+    "file": "enrolment_doc.html",
+    "requested_url": "https://dbh.hkdir.no/datainnhold/tabell-dokumentasjon/124",
+    "requested_utc": "2026-11-10T14:02:02.514550+00:00",
+    "final_url": "https://dbh.hkdir.no/datainnhold/tabell-dokumentasjon/124",
+    "status": 403,
+    "content_type": "text/html",
+    "bytes": 179,
+    "sha256": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5"
+  },
+  {
+    "file": "institution_doc.html",
+    "requested_url": "https://dbh.hkdir.no/datainnhold/tabell-dokumentasjon/211",
+    "requested_utc": "2026-11-10T14:02:02.515259+00:00",
+    "final_url": "https://dbh.hkdir.no/datainnhold/tabell-dokumentasjon/211",
+    "status": 403,
+    "content_type": "text/html",
+    "bytes": 179,
+    "sha256": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5"
+  },
+  {
+    "file": "api_002.csv",
+    "requested_url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=002",
+    "requested_utc": "2026-11-10T14:04:18.841680+00:00",
+    "method": "GET",
+    "final_url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=002",
+    "status": 200,
+    "content_type": "text/csv;charset=UTF-8",
+    "bytes": 88211,
+    "sha256": "d2480a1165a936aa60754255163fe035456a7ed391c486c5e3093d18a9610743"
+  },
+  {
+    "file": "api_211.csv",
+    "requested_url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=211",
+    "requested_utc": "2026-11-10T14:04:18.842465+00:00",
+    "method": "GET",
+    "final_url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=211",
+    "status": 200,
+    "content_type": "text/csv;charset=UTF-8",
+    "bytes": 47957,
+    "sha256": "b143a6f4114ca45f284c0f4560df05567393cb88d54e1e2c849654569741fcc0"
+  },
+  {
+    "file": "api_662.csv",
+    "requested_url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=662",
+    "requested_utc": "2026-11-10T14:04:18.843177+00:00",
+    "method": "GET",
+    "final_url": "https://dbh-data.dataporten-api.no/Tabeller/bulk-csv?rptNr=662",
+    "status": 200,
+    "content_type": "text/csv;charset=UTF-8",
+    "bytes": 328414,
+    "sha256": "655aeee19c859ec1e25784f5fcaca634a665b1cff141f76be0c9df9c872aeca8"
+  },
+  {
+    "requested_url": "https://dbh-data.dataporten-api.no/Tabeller/hentCSVTabellData",
+    "requested_utc": "2026-11-10T14:07:23.905986+00:00",
+    "method": "POST",
+    "request_file": "enrolment_query.json",
+    "request_body_sha256": "107caaa9c1f3cd86527aff313eb8b487183d841e6d52a87d26c839de31ff4872",
+    "public_unauthenticated": true,
+    "final_url": "https://dbh-data.dataporten-api.no/Tabeller/hentCSVTabellData",
+    "status": 200,
+    "content_type": "text/csv;charset=utf-8",
+    "file": "enrolment_response.csv",
+    "bytes": 25783,
+    "sha256": "e332749cce1a754330c8732e3ca2730d17ead3fbf674bd4c6eb3546cc0b01d4a"
+  }
+]
