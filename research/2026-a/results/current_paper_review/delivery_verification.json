@@ -1,9 +1,9 @@
 {
-  "version": "Current manuscript delivery",
+  "version": "V204 manuscript delivery",
   "status": "pass",
-  "primary_model": "V203",
+  "primary_model": "V204",
   "review_version": "current",
-  "pdf_sha256": "2c516e44017b95515bd6d8b88a272338c62c64d5f35cc401d1e194bd0d832980",
+  "pdf_sha256": "2faf685baaf4c02e71fcb26e730ad34abee5793946922c7b898853b8abf9335f",
   "total_pages": 27,
   "main_and_references_pages": 25,
   "main_page_margin": 0,
@@ -46,16 +46,30 @@
   ],
   "source_sha256": {
     "results/current_spatial_review/requirements.csv": "96e0fe7d6df6b330610e06f2abf78a69855d238e8cdba047da8d81cb73c59521",
-    "scripts/task4_current_delivery.py": "8a3489d204876361f6d28bac423fa70aed120cf3fe64064977799e966c71b31d",
-    "design/task4_user_current_model.json": "1583851c5570fcf6694b1820eeccc1337821a9eac2dcd9b13ff90931ed553412",
-    "results/task4_user_v203_revision/current_ranks.csv": "1e9fc93b6a92dd9a64a9d23679cc260f44bae8561f356f0c15c5fc483ce2a8ff",
-    "results/current_paper_review/verification.json": "559475c6fb915ad19b2f46030c4add3fd8d269238c2a3664ad30109df1db5e4c"
+    "scripts/task4_v204_delivery.py": "55a93404d4d196aa6784f711d61be0216f98ea57f0f5a6849b307befa8eb55f6",
+    "design/task4_user_current_model.json": "b9e7a92272dc481e351590854179fc6617695145e20f78db8adb68327f141b12",
+    "results/task4_user_v204_revision/current_ranks.csv": "46289f5d59470b2ff1beb3ddfaa74509a59ab49237e3e65770a3ff601577ecce",
+    "results/task4_user_v204_extensions/mean_rank_comparisons/summary.json": "5c2555176eee76f8bdb330e6aa1a3d1377d3a7bf64c1f79c7ba4567d4003c703"
   },
   "output_sha256": {
-    "requirements.csv": "ac6a5a299dd183f5327914434ed5e31f113d1953f338b8e364ae9a7749f59ef9",
-    "anchor_hits.csv": "798aa698500abf7b102d5742d650f986a0c89794563e4dad6fec9a8c46d6c8c3"
+    "requirements.csv": "e78da361657f5b51609d0b1cc19f0c819f07317b52c47b1bd4852b141f7d2aab",
+    "anchor_hits.csv": "4139af586da6445c7aa8cd5f767ec4bb755f7a1dba8f08de0c63625f93ac05f8"
   },
-  "compiled_aux_sha256": "098083b78667dfa0f4d584006ea2198bdb5ca95ef3df2c0d621523c3c2fe34e0",
+  "paper_source_sha256": {
+    "main.tex": "a383be06db1a813f6257f0eab3048fb5f3862eee6e5084a6025ef1e32b07e123",
+    "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
+    "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
+    "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
+    "figures/identification_matrix.pdf": "222e8088b14c8b1970bf635553340c018e5b3fec85877b371621120c931e3c80",
+    "figures/score_intervals.pdf": "af7b6b385fe8d839eb9d00c0a76c40f1d9d46faf3d7ea0a9a21d1bffcb06d53c",
+    "figures/walktime_context.pdf": "633d2e00c7dfb15a5f7088c3e39eda50e4de4a51bf31c61dc86dedda2d01beef"
+  },
+  "workspace_pdf_sha256": {
+    "paper/current/main.pdf": "2faf685baaf4c02e71fcb26e730ad34abee5793946922c7b898853b8abf9335f"
+  },
+  "compiled_pdf_path": "/data/scratch/himcm-v204-paper-build/main.pdf",
+  "compiled_aux_path": "/data/scratch/himcm-v204-paper-build/main.aux",
+  "compiled_aux_sha256": "e558131b6355e4b920740b7ccab0c8c56598c535f265ae793955e49d6408e408",
   "derived_recommendations": {
     "fixed": [
       "Oslo"

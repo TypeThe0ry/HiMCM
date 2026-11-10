@@ -1,0 +1,82 @@
+{
+  "iteration": "current",
+  "model": "V204 staged",
+  "shape": [
+    16,
+    10
+  ],
+  "counts": {
+    "point": 112,
+    "partial": 37,
+    "unknown": 11
+  },
+  "unknown_by_indicator": {
+    "travel": 3,
+    "upper_secondary_ptr": 8
+  },
+  "city_order": [
+    "Vienna",
+    "Zurich",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Stockholm",
+    "Paris",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Oslo",
+    "Prague",
+    "Warsaw",
+    "Singapore",
+    "Tokyo"
+  ],
+  "indicator_order": [
+    "homicide_rate",
+    "pm25",
+    "cost_living_index",
+    "price_income_ratio",
+    "upper_secondary_ptr",
+    "research_he_density",
+    "public_transport_density",
+    "travel",
+    "fixed_broadband_mbps",
+    "public_pool_density"
+  ],
+  "plot_labels": [
+    "Homicide",
+    "PM2.5",
+    "Living cost",
+    "Housing",
+    "Pupil/teacher",
+    "Research/HE",
+    "Transit",
+    "Travel burden",
+    "Broadband",
+    "Pools"
+  ],
+  "source": "V204 after_conditional; conditional bounds",
+  "source_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "utility_bounds_sha256": "d649cf577f4f6c2003558cde09b91246241ba97c4cad60850c2bebb7162580fc",
+  "matrix_sha256": "42dbbcfa627abb7f24d963dacd55d2e0e1433881dd2b98a2650b4b2ac1a1d6c7",
+  "renderer_sha256": "8318cf02156e89effb05437c081881701640ab91452bf5fb34985930b332fadb",
+  "admissions_sha256": "0ba4fb69c1c4403c5aff56c7d9bbcafd0452d2f4026d64fc6c837ae4726d086b",
+  "figure_width_inches": 6.5,
+  "figure_height_inches": 6.2,
+  "minimum_source_font_pt": 10,
+  "intended_insertion_width_inches": 6.5,
+  "minimum_insertion_width_for9pt_inches": 5.85,
+  "png_dpi": 300,
+  "pdf_export": "Explicit vector rectangles and embedded Type3 outline fonts; RGB and grayscale review required",
+  "point_interpretation": "Retained point assumptions, not independent validation or zero measurement error",
+  "ranges_interpretation": "Identification bounds; not confidence intervals, posterior probabilities or ranking",
+  "no_new_data_admission": true,
+  "current_review": "Current single main pending integration",
+  "integrated_into_paper": false,
+  "output_sha256": {
+    "pdf": "222e8088b14c8b1970bf635553340c018e5b3fec85877b371621120c931e3c80",
+    "svg": "10b03ef04c027c93e58ff2874f665430042e14e70a82359fb78792a9747647ad",
+    "png": "4d30d27d05bbe229f54027f7634c7285f731356ea15a9139c6d643665ba86b48"
+  }
+}

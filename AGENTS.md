@@ -19,7 +19,7 @@ Before drafting or editing manuscript text, abstracts, conclusions, press releas
 
 ## Priority: Overleaf workspace
 
-Current scientific entry: **user16 V203**, with V203 controlled extensions and the current independent full review registered in `research/2026-a/design/task4_user_current_review.json`. The V136/V137 evidence and V148 review remain frozen; current extension registry is `research/2026-a/design/task4_user_current_extensions.json`. The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
+Current scientific entry: **user16 V204**, with V204 controlled extensions and the current independent full review registered in `research/2026-a/design/task4_user_current_review.json`. The V136/V137 evidence and V148 review remain frozen; current extension registry is `research/2026-a/design/task4_user_current_extensions.json`. The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
 
 The user explicitly made the Overleaf workspace the first priority on 2026-11-07.
 
@@ -86,4 +86,4 @@ Keep the local paper checkout synchronized with remote Overleaf. Overleaf retain
 
 ## Current paper figure and evidence
 
-The same current main now includes the satellite/quantitative walking-time figure. Current review and delivery registries bind `results/current_paper_review/`; 27pages,63references,48requirements and12pending gates. Keep the four current figures and seven source dependencies synchronized. The resident-grid auxiliary figure does not change primary scores or establish student/pool access. See `docs/handoff/CURRENT_SPATIAL_UPDATE.md`.
+The same current main now includes the satellite/quantitative walking-time figure. The V204 review and delivery registries bind `results/current_paper_review/`; the current local paper proof preserves 25 main/reference pages plus two provisional AI pages. Keep the four current figures and seven source dependencies synchronized. The resident-grid auxiliary figure does not change primary scores or establish student/pool access. See `docs/handoff/CURRENT_SPATIAL_UPDATE.md`.

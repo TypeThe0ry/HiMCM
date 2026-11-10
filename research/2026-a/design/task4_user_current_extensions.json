@@ -1,33 +1,33 @@
 {
-  "extension_version": "V203",
-  "primary_evidence_version": "V203",
+  "extension_version": "V204",
+  "primary_evidence_version": "V204",
   "primary_registry": "design/task4_user_current_model.json",
-  "primary_snapshot": "design/task4_user_v203_snapshot.json",
+  "primary_snapshot": "design/task4_user_v204_snapshot.json",
   "modules": {
     "preferences": {
-      "script": "scripts/task4_v203_extensions.py preferences",
-      "results": "results/task4_v203_preferences"
+      "script": "scripts/task4_v204_extensions.py",
+      "results": "results/task4_user_v204_extensions/preferences"
     },
     "future": {
-      "script": "scripts/task4_v203_extensions.py future",
-      "results": "results/task4_v203_future"
+      "script": "scripts/task4_v204_extensions.py",
+      "results": "results/task4_user_v204_extensions/future"
     },
     "method": {
-      "script": "scripts/task4_v203_extensions.py method",
-      "results": "results/task4_v203_method"
+      "script": "scripts/task4_v204_extensions.py",
+      "results": "results/task4_user_v204_extensions/method"
     },
     "diagnostics": {
-      "script": "scripts/task4_v203_extensions.py diagnostics",
-      "results": "results/task4_v203_diagnostics"
+      "script": "scripts/task4_v204_extensions.py",
+      "results": "results/task4_user_v204_extensions/diagnostics"
     }
   },
   "changes_primary_model": false,
-  "independent_audit": "results/task4_v203_transition/verification.json",
-  "audit_script": "scripts/audit_task4_v203.py",
+  "independent_audit": "results/task4_v204_transition/verification.json",
+  "audit_script": "scripts/audit_task4_v204.py",
   "manuscript_entry": "../HiMCM-Overleaf/main.tex",
   "root_review_entry": "../HiMCM-Overleaf/main.tex",
-  "activation_status": "active",
-  "supersedes": "V202 science and preceding current manuscript",
+  "activation_status": "active_science_and_locally_reviewed_paper",
+  "supersedes": "V203 science; paper integration pending proof",
   "historical_cases": "Six V137 historical country/age/fairness CSV files byte-identical; no synthetic same-country pair in the primary16; no age survey or observed future trend",
   "paper_verification": "results/current_paper_review/current_verification.json",
   "shared_main_entry": "../HiMCM-Overleaf/main.tex",
@@ -448,5 +448,18 @@
     "changes_primary_model": false,
     "changes_manuscript": false,
     "scope": "Fully replayed staged science, not activation. Scheduled source-defined facility supply retains reservation/season/day/detour and cross-snapshot conditions; no observed operation, universal access or empirical win probabilities. Transition navigation receipts describe pre-registration metadata, not immutable live navigation."
+  },
+  "paper_verification_status": "V204 single main locally reviewed and bound; clean-HEAD reproduction and remote synchronization have separate receipts",
+  "operational_rebase": {
+    "results": "results/task4_v204_operational_rebase",
+    "verification": "results/task4_v204_operational_rebase/verification.json",
+    "verification_sha256": "e4c036d2552f99d3fa7973e0849df0df6fb07a849eb1b9eb3e9c1b94aadc9e9b",
+    "scope": "Rebased acquisition, point withdrawal and source ledger; audit and outputs retain original staged labels. Prior addenda remain version-specific historical records."
+  },
+  "current_owned_paper_integration": {
+    "verification": "results/task4_v204_paper_integration/verification.json",
+    "verification_sha256": "712a75b97bc17c4c771b15cca72342ec0eb2d8829b7605b3a8f5f2d8ac7de44e",
+    "assets_manifest": "results/task4_v204_paper_assets/manifest.json",
+    "assets_manifest_sha256": "af814d2eec90ba25399c010336acae9a3573c3d043e4f656a1cde94ce75e0128"
   }
 }

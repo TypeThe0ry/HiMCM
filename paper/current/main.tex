@@ -23,7 +23,7 @@ keywordsinsheet=true,titlepage=false,abstract=true}
 \author{}\date{}
 \hypersetup{pdftitle={Choosing a City for High-School Life with Incomplete Evidence},pdfauthor={}}
 \graphicspath{{./}{figures/}}
-% Current manuscript assets from V203 evidence and controlled extensions; historical cases retained.
+% Current manuscript assets from V204 evidence and controlled extensions; historical cases retained.
 \newcommand{\EquityCase}{A separate 2025 Shanghai school-location case covers 16 districts,
 235,542 regular senior-secondary pupils and 23,999 full-time teachers.
 Pooled resource utility is 0.604481 and the pupil-weighted district mean is
@@ -40,25 +40,25 @@ enrolment counts cannot be joined to resident travel cohorts without matched
 populations and reference days \cite{istanbul,sgage}.}
 \newcommand{\CountryInterpretation}{Phoenix has higher retained affordability utilities than New York. Mumbai has the higher PM$_{2.5}$ utility; Delhi leads in living-cost, housing, school-resource and broadband utilities. Both score pairs overlap. }
 \newcommand{\CaseReferences}{\bibitem{shanghai} Shanghai Municipal Education Commission. Regular secondary-school pupil and teacher tables, school year 2025. \url{https://edu.sh.gov.cn/xxgk2_zhzw_tjsj_01/20260610/890926a33cbf443d9abf07c6f65b7734.html}. \bibitem{istanbul} Istanbul Metropolitan Municipality. 2012 household transport survey, official data-portal response resource \texttt{a75118db-28c9-4fdf-b367-d5933b7bb810}; questionnaire, report and nonidentifying aggregate audit archived. \bibitem{sgage} Singapore Ministry of Education. Secondary enrolment by level and age, 2020. \url{https://data.gov.sg/datasets/d_cc84fc751ef5106d9e26cfdbf61776c8/view}.  }
-\newcommand{\CurrentMeanWidth}{15.82233}
-\newcommand{\TotalWidthReduction}{15.89}
-\newcommand{\LatestEvidenceChange}{The Oslo bus-stop subset narrows the preceding fixed-weight mean from 15.95582 to 15.82233; the subset is a 2026 inventory with the supplied population. }
+\newcommand{\CurrentMeanWidth}{15.77678}
+\newcommand{\TotalWidthReduction}{16.13}
+\newcommand{\LatestEvidenceChange}{Vienna's 2026 scheduled-stop subset replaces 99 metro areas with 378 DIVA areas, reducing fixed-weight mean width from 15.82233 to 15.77678; population remains 2025. }
 \newcommand{\RevisionRankChanges}{14}
 \newcommand{\SummaryWeightMC}{In 10,000 baseline weight perturbations at Dirichlet concentration 100, Zurich is recommended in 25.48\% of draws, compared with 57.38\% for Oslo and 17.10\% for Singapore. }
-\newcommand{\MethodComparison}{TOPSIS selects Zurich at the midpoint, whereas VIKOR selects Dublin under fixed weights; Kendall's $\tau_b=0.500$. Under equal weights, VIKOR selects Oslo and $\tau_b=0.650$. Both VIKOR choices satisfy its acceptance conditions. }
+\newcommand{\MethodComparison}{At midpoint utilities, TOPSIS selects Zurich. VIKOR's lowest $Q$ is Dublin with fixed weights ($\tau_b=0.483$) and Oslo with equal weights ($\tau_b=0.650$). Dublin meets both acceptance conditions; Oslo fails stability and is not an accepted single compromise. }
 \newcommand{\FutureDeterministic}{Fixed weights select Oslo in all three scenarios; equal weights select Oslo, Zurich and Oslo, respectively. With Singapore historical stage-travel withdrawn, these choices remain the same. All sixteen cities remain possible champions. }
 \newcommand{\FutureThresholds}{Oslo already minimizes regret at baseline. Zurich, Singapore and Stockholm reach a tie after hypothetical joint reductions in pupil--teacher ratio, PM$_{2.5}$ and travel duration of 14.149\%, 23.331\%, 43.003\%, respectively. These are hypothetical thresholds. }
 \newcommand{\FutureMonteCarlo}{Specifically, $C\sim U[0,1]$ is shared across cities and $I_i\sim U[0,1]$ varies by city, independently; $\delta_i=0.05C+0.05I_i$. The relevant raw multipliers are $1+\delta_i$ or $1-\delta_i$, and affected criteria within a city share that multiplier. With 10,000 draws per scenario, Oslo's fixed-weight recommendation frequencies are 100.00\%, 100.00\%, 100.00\% for resource expansion, living pressure and balanced improvement respectively. }
 \newcommand{\ProxyWithdrawalMC}{Repeating the same shocks after withdrawing Singapore's historical stage-travel proxy gives 100.00\%, 100.00\%, 100.00\% respectively. These paired calculations isolate dependence on that proxy while retaining the chosen shock distribution. }
-\newcommand{\PreferenceResults}{Both education and independent-living priorities retain Oslo; their decision-rank $\tau_b$ values relative to baseline are 0.750 and 0.883. All sixteen cities remain possible champions. }
-\newcommand{\PreferenceEvidenceChange}{The 2026 bus-stop subset changes the baseline evidence bounds. }
+\newcommand{\PreferenceResults}{Both education and independent-living priorities retain Oslo; their decision-rank $\tau_b$ values relative to baseline are 0.767 and 0.900. All sixteen cities remain possible champions. }
+\newcommand{\PreferenceEvidenceChange}{The 2026 Vienna scheduled-stop inventory changes the baseline evidence bounds. }
 \newcommand{\EvidenceThresholdCheck}{Berlin does not reach a tie within the tested 50\% joint reduction. }
-\newcommand{\MonteCarloInterpretation}{At concentration 100, Singapore, Zurich and Oslo have sample mean decision ranks of 2.4630, 2.5125, 1.5680, respectively. The finite-draw pairwise bounds determine which expected orderings are resolved. }
+\newcommand{\MonteCarloInterpretation}{At concentration 100, Singapore, Zurich and Oslo have sample mean decision ranks of 2.4634, 2.5167, 1.5680, respectively. The finite-draw pairwise bounds determine which expected orderings are resolved. }
 \newcommand{\MCBaseMeans}{2064 }
 \newcommand{\MCSettings}{37 }
 \newcommand{\MCPairComparisons}{4440 }
-\newcommand{\MCCertifiedPairs}{4271 }
-\newcommand{\MCUnresolvedPairs}{169 }
+\newcommand{\MCCertifiedPairs}{4274 }
+\newcommand{\MCUnresolvedPairs}{166 }
 \newcommand{\MCUniqueMinSettings}{23 }
 \newcommand{\MCFrequencyHalfWidthPP}{2.38 }
 \newcommand{\MCRankHalfWidth}{0.357 }
@@ -237,10 +237,7 @@ For a verified subset count $c$, fixed population $P$ and anchor $a$, we use
 $d=10^5c/P$ and utility $[d/(a+d),1]$, leaving uncounted providers unknown.
 Madrid's May 2026 register has 293 records, of which 242 carry city code
 28079. Omitting two unnamed records without lines and consolidating native
-station identifiers gives 191 complexes \cite{madridmetro,inecodes}. Vienna illustrates why record totals
-alone are insufficient: 1,695 named areas include unverified depot objects,
-so only 99 metro areas individually matched to existing-station geodata and
-the city polygon are retained \cite{viennaogd,viennagis}.
+station identifiers gives 191 complexes \cite{madridmetro,inecodes}. Vienna's 10 November 2026 GTFS subset replaces 99 metro areas with 378 DIVA areas, qualified by public A-route regular calls, exact name/source-coordinate matches and all-position city tests \cite{viennaogd,viennagis}.
 
 Native identifiers, verified aliases and operator interchange maps ensure that a transfer station is counted once rather than once per line. Prague retains 57 current
 metro complexes; Flora's closure explains its omission from the 58 distinct
@@ -383,7 +380,7 @@ ratios. Shading shows utility upper minus lower bounds; dots mark retained point
 assumptions and question marks identify $[0,1]$ entries. Point assumptions include
 submitted values and do not certify independent validation or zero measurement
 error. These are identification bounds under the retained source rules, not
-confidence intervals. Travel entries retain school-travel and general-commute proxy scopes. Cities follow the input order. Source: V203 utility bounds.}
+confidence intervals. Travel entries retain school-travel and general-commute proxy scopes. Cities follow the input order. Source: V204 utility bounds.}
 \label{fig:identification-matrix}
 \end{figure}
 
@@ -459,8 +456,8 @@ a conservative recommendation under the stated criteria and intervals.
 Rank & City & Score interval & Regret & Rank & City & Score interval & Regret\\\midrule
 1 & Oslo & 56.43--63.90 & 15.75 & 9 & Paris & 49.11--69.04 & 23.08 \\
 2 & Zurich & 53.97--72.18 & 16.94 & 10 & Madrid & 49.00--68.22 & 23.18 \\
-3 & Singapore & 55.23--63.53 & 16.95 & 11 & Warsaw & 47.64--63.99 & 24.54 \\
-4 & Stockholm & 52.12--64.54 & 20.06 & 12 & Vienna & 47.52--61.03 & 24.66 \\
+3 & Singapore & 55.23--63.53 & 16.95 & 11 & Vienna & 48.25--61.03 & 23.93 \\
+4 & Stockholm & 52.12--64.54 & 20.06 & 12 & Warsaw & 47.64--63.99 & 24.54 \\
 5 & Prague & 51.97--62.78 & 20.21 & 13 & Milan & 46.07--65.99 & 26.11 \\
 6 & Dublin & 51.13--70.90 & 21.05 & 14 & London & 45.22--66.12 & 26.97 \\
 7 & Berlin & 50.73--61.54 & 21.45 & 15 & Tokyo & 43.98--61.12 & 28.20 \\
@@ -473,16 +470,12 @@ Rank & City & Score interval & Regret & Rank & City & Score interval & Regret\\\
 Holding weights and formulas fixed, evidence for twenty-five distinct city--indicator cells narrows
 the average fixed-weight score interval from 18.81077 to \CurrentMeanWidth{}, a
 \TotalWidthReduction\% reduction. \LatestEvidenceChange
-The revised Oslo transport subset changes the baseline conservative recommendation. Withdrawing Singapore's historical school-stage travel proxy retains Oslo under baseline weights. Evidence improves precision and changes decisions before it
-necessarily reduces the possible-champion set.
+The revised Oslo transport subset changes the baseline conservative recommendation. Withdrawing Singapore's historical school-stage travel proxy retains Oslo under baseline weights.
 
-As a method diagnostic, TOPSIS and VIKOR use the same illustrative midpoint
-utilities and weights. VIKOR balances total and largest weighted shortfalls
-equally and uses sample best/worst values \cite{vikor}. \MethodComparison
-The midpoint comparison does not replace the interval decision in
-Equation~\ref{eq:regret}. Agreement indicates similarity within the chosen
-conventions; disagreement exposes method dependence rather than justifying a
-post-hoc choice of the preferred winner.
+At the same illustrative midpoint utilities and weights, VIKOR equally balances
+total and largest shortfalls using sample best/worst values \cite{vikor}.
+\MethodComparison This diagnostic reveals method dependence;
+Equation~\ref{eq:regret} retains TOPSIS and the evidence intervals.
 
 \begin{figure}[!ht]
 \centering
@@ -497,7 +490,7 @@ Source: frozen city matrix and admitted supplements.}
 A controlled comparison shows why evidence bounds belong in the decision.
 On the same 160 utility entries, compare the midpoint completion $z_{ij}=(\ell_{ij}+h_{ij})/2$ with the retained-interval formulation in Equation~\ref{eq:regret}. Both use identical weights, anchors and TOPSIS scores. The midpoint is a declared diagnostic scenario, rather than an estimate of missing observations or a reconstruction of the team's historical first model.
 
-The revision retains 48 non-point entries and selects the city with the smallest worst-case shortfall. Oslo is the fixed-weight recommendation, and 14 cities change decision rank under fixed weights; Kendall's $\tau_b=0.617$. With equal weights, 14 ranks change and $\tau_b=0.683$.
+The revision retains 48 non-point entries and selects the city with the smallest worst-case shortfall. Oslo is the fixed-weight recommendation, and 14 cities change decision rank under fixed weights; Kendall's $\tau_b=0.600$. With equal weights, 14 ranks change and $\tau_b=0.683$.
 
 For each target city $c$, construct a separate interior completion: set every uncertain utility to $\ell_{ij}+\alpha_i(h_{ij}-\ell_{ij})$, with $\alpha_c=0.95$ and $\alpha_i=0.05$ for $i\ne c$. All 112 point values remain fixed and all 48 uncertain values lie strictly inside their intervals. Each target ranks first under both baseline and equal weights. Across the sixteen targets, the smallest lead is 2.941 score points under baseline weights and 2.222 under equal weights. These separate completions establish feasibility in the declared utility rectangle; they carry no estimated probabilities and do not establish joint physical attainability.
 
@@ -512,19 +505,19 @@ dates, non-\texttt{ok} flags and their union, counting overlaps once.
 \caption{Recommendation after withdrawing selected submitted point information. Width is the mean baseline-weight score range on the 0--100 scale.}\label{tab:vintage}
 \begin{tabular}{l r l l r}\toprule
 Withdrawn group & Cells & Baseline & Equal & Width\\\midrule
-Retained input & 0 & Oslo & Zurich & 15.82 \\
-Before 2020 & 13 & Singapore & Zurich & 20.92 \\
-After 2025 & 64 & Zurich & Zurich & 48.23 \\
-Non-ok flags & 28 & Oslo & Oslo & 28.92 \\
-Union & 95 & Singapore & Singapore & 68.53 \\
+Retained input & 0 & Oslo & Zurich & 15.78 \\
+Before 2020 & 13 & Singapore & Zurich & 20.88 \\
+After 2025 & 64 & Zurich & Zurich & 48.20 \\
+Non-ok flags & 28 & Oslo & Oslo & 28.89 \\
+Union & 95 & Singapore & Singapore & 68.48 \\
 \bottomrule\end{tabular}\end{table}
 
 
 
 Withdrawing 28 flagged points selects Oslo under both weights; removing 13
 pre-2020 points selects Singapore or Zurich, respectively. Removing 64 post-2025
-points selects Zurich under both and widens the baseline mean range from 15.82
-to 48.23. The 95-point union selects Singapore under both. Dates and flags are
+points selects Zurich under both and widens the baseline mean range from 15.78
+to 48.20. The 95-point union selects Singapore under both. Dates and flags are
 screening criteria, not error probabilities.
 
 Withdrawing the 626 bus subset and restoring the earlier 89 metro stations
@@ -533,6 +526,8 @@ comparable units instead of the 626 bus subset selects Oslo under both weight se
 separate physical facilities or current service. Withholding the two replacement
 bus groups, the Midtstuen bus group, or both retains Oslo under baseline and
 Zurich under equal weights.
+
+Restoring Vienna's 99 metro areas preserves both choices. Seasonal, detour and callbus conditions remain unverified for individual trips. Withholding 36 selected witnesses on nine condition-bearing routes leaves 342 areas; Oslo and Zurich remain selected, without rematching.
 
 Withholding Zurich's homicide point retains Oslo under baseline weights and
 selects Oslo under equal weights; withholding Amsterdam's retains Oslo and Zurich,
@@ -633,8 +628,8 @@ Education priority & 2.65 & 71.59 & 24.78 \\
 Independent living & 23.23 & 70.28 & 6.46 \\
 \bottomrule\end{tabular}\end{table}
 
-At concentration 100, mean decision ranks are Oslo 1.5680, Zurich 2.5125 and
-Singapore 2.4630.
+At concentration 100, mean decision ranks are Oslo 1.5680, Zurich 2.5167 and
+Singapore 2.4634.
 AHP consistency checks calculation, not representative student opinion.
 
 For $n=10{,}000$ independent, identically distributed draws per setting,
@@ -642,8 +637,8 @@ Hoeffding's inequality and a union bound over $m=2064$ exported means in
 37 settings give 95\% family-wise coverage with error at most
 $R\sqrt{\log(2m/0.05)/(2n)}$: 2.38 percentage points for frequencies ($R=1$)
 and 0.357 ranks ($R=15$) \cite{hoeffding}.
-Difference intervals resolve 4,271 of 4,440 pairwise mean-rank comparisons;
-169 remain unresolved. Under the declared simulation laws, 23 of 37 settings
+Difference intervals resolve 4,274 of 4,440 pairwise mean-rank comparisons;
+166 remain unresolved. Under the declared simulation laws, 23 of 37 settings
 certify a unique smallest expected rank.
 
 Separately, widen each of the 112 point utilities $x$ to
@@ -736,10 +731,7 @@ These historical city and education scopes identify neither a necessary winner n
 \FloatBarrier
 
 \section{Conclusion and decision use}
-Oslo minimizes maximum regret under baseline weights and Zurich under equal
-weights; all sixteen cities remain possible champions. Both preference profiles
-select Oslo. Evidence supplements narrow the mean score interval by
-\TotalWidthReduction\%; against midpoint completion, the interval revision changes 14 fixed-weight decision ranks.
+Baseline weights recommend Oslo; equal weights recommend Zurich by minimax regret. All sixteen cities remain possible champions. Supplements narrow mean score-interval width by \TotalWidthReduction\%.
 
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
@@ -878,9 +870,11 @@ two stations and one station respectively, with temporal coverage unreported.
 \url{https://nationaldata.ie/media/NationalDataie/MethodologyDocumentation/Teacher_Workforce_Data_Quality_Report.pdf}.
 \bibitem{viennaogd} Wiener Linien. Versioned operator OGD files and
 \textit{Beschreibung der OGD-Dateien}, v1.3 (2022), p.~4. Export version
-8 November 2026; accessed 9 November 2026. DIVA station areas are distinguished
-from individual stopping positions.
-\url{https://www.wienerlinien.at/ogd_realtime/doku/}.
+8 November 2026; accessed 9 November 2026. DIVA areas group stopping
+positions. GTFS and passenger timetable catalogue retrieved 11 November 2026;
+GTFS service-day subset dated 10 November.
+\url{https://www.wienerlinien.at/ogd_realtime/doku/};
+\url{https://www.wienerlinien.at/fahrplaene}.
 \bibitem{viennagis} City of Vienna. Existing U-Bahn stops and Vienna boundary,
 OGD WFS layers \texttt{UBAHNHALTOGD} and \texttt{LANDESGRENZEOGD}.
 Accessed 9 November 2026; boundary record dated 1 September 2026.
@@ -1079,8 +1073,8 @@ and file mode 600 and are not submission transcripts. Public inventories contain
 and hashes, not reconstructed quotations.
 
 \subsection*{Verification associated with this draft}
-The research calculations preserve the original city CSV and the V203 primary
-evidence. The V203 validation independently recomputes weighted norms and
+The research calculations preserve the original city CSV and the V204 primary
+evidence. The V204 validation independently recomputes weighted norms and
 self-excluded competitor maxima, verifies interval membership of constructed
 completions and checks source hashes. Original provider records are kept
 separately from derived tables. Compilation and rendered-page review check the

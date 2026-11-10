@@ -1,15 +1,18 @@
 {
-  "primary_model": "V203",
-  "role": "CurrentV203acquisition limits and boundedsourcefollowup; no newprimaryobservation",
-  "results": "results/current_priority",
-  "script": "scripts/task4_current_priority.py",
-  "audit": "results/current_priority/verification.json",
+  "primary_model": "V204",
+  "role": "V204 acquisition limits and bounded source followup; prior source reviews retained at their original versions",
+  "results": "results/task4_v204_operational_rebase/acquisition",
+  "script": "scripts/task4_v204_operational_rebase.py",
+  "audit": "results/task4_v204_operational_rebase/verification.json",
   "source_followup_verification": "results/current_oslo_commute_scope/verification.json",
   "uncertain_cells": 48,
   "weight_cell_rows": 96,
-  "primary_admissions": 0,
-  "actual_score_width_reduction": 0,
-  "science_and_paper_unchanged": true,
+  "primary_admissions": 1,
+  "actual_score_width_reduction": {
+    "fixed": 0.045544225896684054,
+    "equal": 0.08969079029353821
+  },
+  "science_and_paper_unchanged": false,
   "source_sha256": {
     "results/current_priority/summary.json": "12ee47316fad02c5f405e6c9b06de0cbd598b4ff77b528a849588511126a8e3c",
     "results/current_priority/verification.json": "d9e790a31717c4cd336879105bd7a11e490878652ba50c0ca8d24c1c5d0a27c0",
@@ -17,7 +20,7 @@
     "results/current_priority/previous_V202.csv": "e7224cb1627f73a9cbc3fb736ce7a1af5ec1a5e4f6ed3f5dd8eae80a56fab884",
     "results/current_oslo_commute_scope/verification.json": "a3fcbfb9ca9ce56dbb7560b846b4c9361f340c9cbb6fc242bc186c193a46bac1"
   },
-  "active_primary_model": "V203",
+  "active_primary_model": "V204",
   "priority_rebase_required": false,
   "admitted_candidate": {
     "venue": "OCBC Aquatic Centre",
@@ -584,7 +587,7 @@
     "teacher_people": 185,
     "fulltime_mode_people": 42,
     "report_year": 2024,
-    "employer": "Wirtschaftsschule KV Zürich",
+    "employer": "Wirtschaftsschule KV Z\u00fcrich",
     "PDF_physical_page": 10,
     "printed_page": 18,
     "new_HTTP200_bodies": 2,
@@ -856,6 +859,16 @@
     "actual_primary_width_reduction": 0,
     "changes_primary_model": false,
     "changes_manuscript": false,
-    "scope": "Fully replayed staged science, not activation. Scheduled source-defined facility supply retains reservation/season/day/detour and cross-snapshot conditions; no observed operation, universal access or empirical win probabilities. Transition navigation receipts describe pre-registration metadata, not immutable live navigation."
-  }
+    "scope": "Fully replayed staged science, not activation. Scheduled source-defined facility supply retains reservation/season/day/detour and cross-snapshot conditions; no observed operation, universal access or empirical win probabilities. Transition navigation receipts describe pre-registration metadata, not immutable live navigation.",
+    "current_registry_note": "Frozen staging record; V204 research entry now active, paper proof pending."
+  },
+  "current_operational_rebase": {
+    "results": "results/task4_v204_operational_rebase",
+    "verification": "results/task4_v204_operational_rebase/verification.json",
+    "verification_sha256": "e4c036d2552f99d3fa7973e0849df0df6fb07a849eb1b9eb3e9c1b94aadc9e9b",
+    "point_withdrawal": "results/task4_v204_operational_rebase/point_withdrawal",
+    "point_source_ledger": "results/task4_v204_operational_rebase/point_source_ledger",
+    "scope": "Current V204 calculations; historical source classifications and their evidence remain unchanged. Frozen staging labels describe generation time."
+  },
+  "historical_registry_note": "Nested pre-V204 followups and source_sha256 preserve their original V203 or earlier scopes. For current acquisition and point priorities use current_operational_rebase."
 }

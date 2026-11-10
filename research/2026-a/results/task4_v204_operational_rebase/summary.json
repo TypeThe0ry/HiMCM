@@ -1,0 +1,84 @@
+{
+  "activation_status": "staged_not_active",
+  "baseline": "V203",
+  "changed_bound": {
+    "city": "Vienna",
+    "indicator": "public_transport_density",
+    "v203_lower": 0.08893284626879548,
+    "v204_lower": 0.27151281120270476,
+    "upper_unchanged": true
+  },
+  "point_cells": 112,
+  "partial_cells": 37,
+  "fully_missing_cells": 11,
+  "acquisition_rows": 96,
+  "endpoint_rows": 192,
+  "lower_only_rows": 480,
+  "withdrawal_cases": 224,
+  "withdrawal_rank_rows": 3584,
+  "ledger_rows": 112,
+  "classification_counts": {
+    "not_included_in_bounded_classification": 56,
+    "publisher_value_match_scope_unverified": 43,
+    "reviewed_lineage_unresolved": 5,
+    "no_match_checked_cost_editions": 4,
+    "documented_value_match_different_stage": 2,
+    "no_match_examined_PTR_series": 1,
+    "publisher_match_different_statistic": 1
+  },
+  "baseline_choices": [
+    {
+      "weight_reference": "fixed",
+      "mean_score_interval_width": 15.776782727425475,
+      "minimax_regret": 15.751955386687115,
+      "conservative_recommendation": "Oslo",
+      "possible_champions": 16
+    },
+    {
+      "weight_reference": "equal",
+      "mean_score_interval_width": 18.30212083359472,
+      "minimax_regret": 15.760638509295092,
+      "conservative_recommendation": "Zurich",
+      "possible_champions": 16
+    }
+  ],
+  "acquisition_changed_bound_rows": 2,
+  "acquisition_changed_priority_positions": 6,
+  "acquisition_changed_information_rows": 1,
+  "withdrawal_choice_changes_v204": {
+    "equal": 35,
+    "fixed": 10
+  },
+  "withdrawal_choice_changes_v203": {
+    "equal": 35,
+    "fixed": 10
+  },
+  "withdrawal_after_choice_changed_vs_v203": 0,
+  "withdrawal_rank_rows_changed_vs_v203": 520,
+  "source_sha256": {
+    "design/task4_user_v204_admissions.json": "0ba4fb69c1c4403c5aff56c7d9bbcafd0452d2f4026d64fc6c837ae4726d086b",
+    "results/task4_v204_transition/verification.json": "91d5ca6be17d4a66e63a0ab0ee2cd485db99d03880d936d0d3f35fb57be2f3b0",
+    "scripts/task4_current_priority.py": "70849b05e12041d1b56af5e131ceb1f6d82201a831d4150c9ef4168890afee0e",
+    "scripts/task4_current_point_withdrawal.py": "61fa8f87c9a77b2f87e46f85a4c22fcfda429289be88b37d743dc545cd39e711",
+    "scripts/task4_current_point_source_ledger.py": "bb3efc663c537fdb73f28e61f494c6bdbdd36ccbf2a2e39784dbc807b7bc5bfd",
+    "results/current_priority/all_uncertain_priority.csv": "363d944aed40bd696f993513e034543352d6f0fa9b4ce135e702188788e78bda",
+    "results/current_point_withdrawal/cases.csv": "2bf0a71d9310bc4218b75a75a082fabbfe9d405f60571717f47c8f900938f0ba",
+    "results/current_point_withdrawal/ranks.csv": "c35221ab63a8d2f1750f591fe51f4f5c2c129d0d65c728f7d982bc6f3e71e45c",
+    "results/current_point_source_ledger/ledger.csv": "a896cd907c1d7613b73d6e7edf98183636ce5624f3a871ec91353a1ebb22f43c",
+    "results/current_point_source_ledger/verification.json": "e7dd5267d1f9c1d78dc4fa6f10bc9eb003b5dc7f74320016cfc8ef015efcb048",
+    "scripts/task4_v204_operational_rebase.py": "9fb512c7af16ad08a0c139c07ee1a89f68de19d76ee6fe291bb239edf94f7c80"
+  },
+  "scope": "Conditional calculations on staged V204; acquisition assumes exact identification within retained bounds, and point withdrawal is hypothetical ignorance, not source error. Ledger evidence and source classifications remain V203 records. No activation or manuscript change.",
+  "output_sha256": {
+    "acquisition/all_uncertain_priority.csv": "95dc6efed7775d463fcc7dda33059b417aeebc7caf29fc8b6834a6a087df08c2",
+    "acquisition/comparison_v203.csv": "44e68ad2202df5bec9b6f882d95dd3ade08556646faae3bf19918ad8d9a0f3db",
+    "acquisition/endpoints.csv": "6bc03da5afac75a64926100a9f74fe0b4a227f12de4b3d51505ff8e213350c0b",
+    "acquisition/lower_only_refinements.csv": "70a141e4415aab13d5f7efa7d6d1731d7b7c065bfdff3609cf367e93181a14a9",
+    "point_source_ledger/ledger.csv": "14ec386cbc9f6fc2786cf4698e819cd39704ef5753816a3d887fdef9e0f40eaa",
+    "point_source_ledger/review_priority.csv": "c789453b69aa008f4917add594bae220c311345fd5364b808d3c97130e86c1ea",
+    "point_withdrawal/cases.csv": "5f0d9d62224f3869a233b32c7b805894569670ed82a3106504acec6d29b76c47",
+    "point_withdrawal/comparison_v203.csv": "5a81f6f680847df736c837f7f182e30f7907472115d00106255f56f1be8c0967",
+    "point_withdrawal/ranks.csv": "fe3a625c7e0d7850baa348fb98d6d4151dd223d600f2a7c2d5b32e0607b5c474",
+    "point_withdrawal/summary.json": "50f012b5d0dda2c5f4de9eec82e8bfd66fb1255f2270edc2c725f2701a948364"
+  }
+}

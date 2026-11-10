@@ -12,8 +12,8 @@
 
 | 事项 | 当前入口（均在研究仓库） |
 | --- | --- |
-| 主分析 | [主模型登记](../../research/2026-a/design/task4_user_current_model.json)；`task4_user_v203_revision.revised_bounds()` |
-| 科学冻结证据 | [V203 快照](../../research/2026-a/design/task4_user_v203_snapshot.json)；548 个绑定，继承 V202 的 476 个 |
+| 主分析 | [主模型登记](../../research/2026-a/design/task4_user_current_model.json)；`task4_user_v204_revision.revised_bounds()` |
+| 科学冻结证据 | [V204 快照](../../research/2026-a/design/task4_user_v204_snapshot.json)；110 个新绑定及冻结的 V203 548 个上游绑定 |
 | 扩展与受控诊断 | [扩展登记](../../research/2026-a/design/task4_user_current_extensions.json) |
 | 采集及来源跟进 | [采集登记](../../research/2026-a/design/task4_user_current_acquisition.json)、[已核查路线](../../research/2026-a/design/task4_current_source_routes.csv) |
 | 当前论文与交付 | [审阅登记](../../research/2026-a/design/task4_user_current_review.json)、[交付登记](../../research/2026-a/design/task4_user_current_delivery.json) |
@@ -21,20 +21,20 @@
 
 ## 必须保留的科学状态
 
-主分析是 **16 城 × 10 指标、V203**：112 个点值、37 个部分区间、11 个完全未知，25 个不同补充键。原始 [用户 CSV](../../research/2026-a/data/task4_v117_team_intake/city_indicators.csv) 的 SHA256 为 `430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c`；数值、年份、标记、人口、权重、锚点和区间规则保持。
+主分析是 **16 城 × 10 指标、V204**：112 个点值、37 个部分区间、11 个完全未知，25 个不同补充键。原始 [用户 CSV](../../research/2026-a/data/task4_v117_team_intake/city_indicators.csv) 的 SHA256 为 `430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c`；数值、年份、标记、人口、权重、锚点和区间规则保持。
 
 固定权重的保守选择为 **Oslo**，等权为 **Zurich**，仍有 **16 个可能冠军、0 个必要冠军**。固定权重为八项各 0.1125，交通／泳池各 0.05；等权各 0.1。TOPSIS 距离权重只乘一次，最大遗憾比较排除自身。保守选择不写成确定冠军，AHP 偏好不是学生调查，MC 条件频率不是现实夺冠概率，未来情景不是拟合趋势。
 
-V203 相对 V202 只将 Oslo 交通下界从原来的 89 个地铁站子集，替换为 626 个来源定义的单模式公交组；其余 159 个下界和全部上界保持。该数不与 89 相加、不代表全部公共交通；撤回及 624／625／623／627 检查见 [当前模型说明](CURRENT_MODEL_UPDATE.md)。当前工厂的历史依赖正常保留；不要将旧 25 城运行入口当成主分析。
+V203 相对 V202 只将 Oslo 交通下界从原来的 89 个地铁站子集，替换为 626 个来源定义的单模式公交组；其余 159 个下界和全部上界保持。该数不与 89 相加、不代表全部公共交通；撤回及 624／625／623／627 检查见 [当前模型说明](CURRENT_MODEL_UPDATE.md)。V204 在此基础上将 Vienna 交通下界的 99 个站区替换为 378 个来源定义、计划服务的站区；其余 159 个下界和全部上界保持。9 条线路的季节／预约／日期／绕行条件及实际执行尚未完全核实，撤回 36 个已选见证后仍有 342 个站区，选择不变。详见 [V204 科学证据](CURRENT_V204_SCIENTIFIC_STAGING.md)。当前工厂的历史依赖正常保留；不要将旧 25 城运行入口当成主分析。
 
 ## 恢复和验证
 
 从研究仓库运行。优先使用 [锁定环境说明](../../research/2026-a/environment/current-check/README.md)；本机已验证解释器是 `/data/scratch/himcm-current-check-env/bin/python`。不要用普通系统 Python 或不匹配的 `.venv` 运行模型；`.venv-v120` 是仍保留的旧兼容环境，不是唯一恢复要求。
 
-完整复现需要干净、已同步的论文 Git HEAD，以及位于两个仓库之外的**新空输出目录**。例如，确认目录不存在后运行：
+V204 完整复现需要最终论文证明、干净且已同步的论文 Git HEAD，以及位于两个仓库之外的**新空输出目录**；最终证明和独立复现须分别检查，不能由登记推断通过。例如，确认目录不存在后运行：
 
 ```bash
-env -u PYTHONPATH PYTHONNOUSERSITE=1 PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python -s research/2026-a/scripts/task4_current_reproduce.py --output-dir /data/scratch/himcm-restore-check-new
+env -u PYTHONPATH PYTHONNOUSERSITE=1 PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python -s research/2026-a/scripts/task4_v204_reproduce.py --output-dir /data/scratch/himcm-restore-check-new
 ```
 
 仅检查当前研究登记和文件绑定，可运行：
@@ -47,9 +47,11 @@ PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python resea
 
 ## 论文及待交付事项
 
-当前已核稿为 **27 页 = 25 页正文／参考文献 + 2 页暂定 AI 报告，63 条引用**。使用原 mcmthesis 类，原生 Summary Sheet、Team #／Page x of y 页眉及空页脚；18213 为用户允许的暂用控制号，真实注册号未核实。原类、参考库和队友原稿均保留。最近验证针对论文提交 `1cbec98`；每次仍须重新检查远程，不把该提交固定成永远最新。
+当前本地已核的 V204 稿为 **27 页 = 25 页正文／参考文献 + 2 页暂定 AI 报告，63 条引用**。V204 已完成必要自有稿件和两张数值图整合，独立页面审查与交付定位通过。使用原 mcmthesis 类，原生 Summary Sheet、Team #／Page x of y 页眉及空页脚；18213 为用户允许的暂用控制号，真实注册号未核实。原类、参考库和队友原稿均保留。当前论文提交和远程状态见同步回执；每次仍须重新检查远程。
 
 [48 项交付清单](../../research/2026-a/results/current_paper_review/requirements.csv) 仍有 12 项待办：完整团队 AI 披露／记录、原始点值的来源质量、真实控制号及相关页眉、身份匿名核对、最终团队稿接受、注册／资格／导师记录、最终文件名、正式上传和导师门户回执。技术排版或文件哈希通过不等于这些事项已完成；不重复索要用户已说明暂缺的 Oslo 名单或 Zurich 凶杀率来源。
+
+本轮 V204 整合、实际改善及复现证据见 [当前启用记录](CURRENT_V204_ACTIVATION.md)。
 
 ## 最近研究增量与下一步
 
@@ -64,9 +66,9 @@ PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python resea
 - [Oslo HE 身份完成与地域标记](CURRENT_OSLO_HE_IDENTITY_COMPLETION.md)：两项新官方桥接使27代码身份全对应，每期25正值代码均对应；新两者是课程获批而非机构认证。Gestalt的DBH Oslo校区与Bærum／Sandvika来源有待核差异，未剔除或纠正计数。台账只更新Oslo HE三项证据字段，主值／分类／优先级与论文保持。
 - [Oslo HE 地点差异与条件24检验](CURRENT_OSLO_HE_LOCATION_UPDATE.md)：旧DBH共22条0301历史记录与其自身Sandvika机构地址有差异；新2026报告沿用地点背景，质量工作认可不等于机构认证。临时计数24、密度33.0时所有决策名次保持，固定Oslo／等权Zurich、16／0；未修正原25或主模型。2019访谈原件403，不采纳搬迁年份。
 - [Paris 全市教师／学生连接](CURRENT_PARIS_TEACHER_JOIN_UPDATE.md)：154个学生UAI匹配153个教师记录；27个GT／PRO交集须防止重复计入1,870.52机构FTE。名录6个多校址编码、4个混合高中后课程标记保留候选集合，3个类型漏项经精确查询找到EREA记录。当前标记与2025学段分配／完整提供者覆盖仍有区别，PTR保持`[0,1]`，主值与论文保持。
-- [初始Vienna GTFS候选](CURRENT_VIENNA_GTFS_CANDIDATE.md)：378个站区通过结构核查，候选固定／等权均宽减少0.04554／0.08969分，选择仍Oslo／Zurich、16／0。该阶段的资格待办已由下一条V204暂存工作完成，初始回执保持；当前主仍99直至受控启用，勿把候选改善计成实际准入。
-- [V204科学暂存完成](CURRENT_V204_SCIENTIFIC_STAGING.md)：公开乘客目录覆盖全部88见证线路，已补齐供给口径的公众性质证据；14文档响应均为HTML非PDF，具体条件保留。V204已完成29案例／174组MC、全部扩展和独立审计，9条件线路36已选见证撤回后仍342站区、选择保持。当前主与论文仍V203；下一轮直接做受控启用／必要自有稿件整合，不重找已完成资格证据，不把暂存改善称为实际主改善。
+- [初始Vienna GTFS候选](CURRENT_VIENNA_GTFS_CANDIDATE.md)：378个站区通过结构核查，候选固定／等权均宽减少0.04554／0.08969分，选择仍Oslo／Zurich、16／0。该阶段的资格待办已由下一条V204科学工作完成，初始回执保持；主分析已登记为378。
+- [V204科学暂存完成](CURRENT_V204_SCIENTIFIC_STAGING.md)：公开乘客目录覆盖全部88见证线路，已补齐供给口径的公众性质证据；14文档响应均为HTML非PDF，具体条件保留。V204已完成29案例／174组MC、全部扩展和独立审计，9条件线路36已选见证撤回后仍342站区、选择保持。研究入口和自有论文均已整合V204；最终复现和远程状态以本轮回执为准，不重找已完成资格证据。
 
-这些增量的主数据准入和实际主模型区间收窄均为 0。下一轮先读采集登记与已核路线；请求前再按URL、资产号、文件名和提供方关键词检索历史数据／口径，当前路线表不是穷尽目录。再选可能改变结论的新匹配证据或明确的论文／交付任务。失败快速跳过；没有具体授权，不向机构人员发送消息。源绑定或路线索引有意改变时同步更新完整性合同，不改写冻结报告以消除历史差异。
+除V204的Vienna交通准入外，上述其他增量的主数据准入和实际主模型区间收窄均为0。V204固定／等权均宽分别收窄0.04554／0.08969分。下一轮先读采集登记与已核路线；请求前再按URL、资产号、文件名和提供方关键词检索历史数据／口径，当前路线表不是穷尽目录。再选可能改变结论的新匹配证据或明确的论文／交付任务。失败快速跳过；没有具体授权，不向机构人员发送消息。源绑定或路线索引有意改变时同步更新完整性合同，不改写冻结报告以消除历史差异。
 
 更早的研究、同国／年龄／公平性案例仍在各自证据入口；历史 25 城不能混入主榜单，居民／通用 POI 可达性不能表述为学生或泳池实际使用。历史恢复日志保留在 [本次整理前的 Git 版本](https://github.com/TypeThe0ry/HiMCM/blob/9c7b59d264a72c017901979111f9c3ca7a77095c/docs/handoff/RESUME_PROMPT.md)，需要具体历史时再读取。

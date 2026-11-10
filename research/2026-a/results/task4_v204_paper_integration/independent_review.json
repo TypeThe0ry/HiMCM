@@ -1,0 +1,51 @@
+{
+  "review": "independent scoped scientific and rendered candidate review",
+  "status": "pass with limitations",
+  "reviewed_candidate_pdf_absolute_path": "/data/scratch/himcm-v204-paper-build/main.pdf",
+  "reviewed_candidate_pdf_sha256": "2faf685baaf4c02e71fcb26e730ad34abee5793946922c7b898853b8abf9335f",
+  "pdf_sha_scope": "Historical candidate hash; PDF metadata may change on subsequent compilation. Source and page text hashes bind this review.",
+  "source_sha256": {
+    "/data/projects/HiMCM-Overleaf/main.tex": "a383be06db1a813f6257f0eab3048fb5f3862eee6e5084a6025ef1e32b07e123",
+    "/data/projects/HiMCM-Overleaf/ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
+    "/data/projects/HiMCM-Overleaf/mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
+    "/data/projects/HiMCM-Overleaf/figures/identification_matrix.pdf": "222e8088b14c8b1970bf635553340c018e5b3fec85877b371621120c931e3c80",
+    "/data/projects/HiMCM-Overleaf/figures/score_intervals.pdf": "af7b6b385fe8d839eb9d00c0a76c40f1d9d46faf3d7ea0a9a21d1bffcb06d53c",
+    "/data/projects/HiMCM-Overleaf/figures/walktime_context.pdf": "633d2e00c7dfb15a5f7088c3e39eda50e4de4a51bf31c61dc86dedda2d01beef",
+    "/data/projects/HiMCM-Overleaf/figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
+    "/data/projects/HiMCM/research/2026-a/results/task4_user_v204_revision/summary.json": "b4eae7b3e80366ffd376bd367cb77de963de3f1310e70d23a57e3f8ff659e93e",
+    "/data/projects/HiMCM/research/2026-a/results/task4_user_v204_revision/current_ranks.csv": "46289f5d59470b2ff1beb3ddfaa74509a59ab49237e3e65770a3ff601577ecce",
+    "/data/projects/HiMCM/research/2026-a/results/task4_user_v204_extensions/method/summary.json": "7e1c8141b134365ae52c4603a8e822b1685b95e8dfa830729e3083748e6cc8ef",
+    "/data/projects/HiMCM/research/2026-a/results/task4_v204_transition/verification.json": "91d5ca6be17d4a66e63a0ab0ee2cd485db99d03880d936d0d3f35fb57be2f3b0",
+    "/data/projects/HiMCM/research/2026-a/scripts/task4_v204_paper_assets.py": "8318cf02156e89effb05437c081881701640ab91452bf5fb34985930b332fadb"
+  },
+  "page_text_sha256": {
+    "1": "8763dea38be153e5ed7a3139b13fbc1ab5e31b8522c08367fc6780b5c25d2d61",
+    "6": "eb314b9e7fed911281ed30d83230df42d3c73da6bcc849040c472c82b088e50e",
+    "9": "a1011f9a1af75fe3f277f0e88fd8bb3a723b9df7f8b4c6c9182eed96153bf31d",
+    "11": "cc3babf3238fdc8b4514202735a959215228cd0d79462c2c3737a5afe6a1e0e3",
+    "13": "87209811e7bd91c78eb5ca1bc605c685974b86a3ea0426f43ae11667c760cffa",
+    "18": "ac687c7ad7aa9bdcc14065adef030e0c5f276b250c50fae6e439cff41fe43c13",
+    "19": "62901298a39ca6d3aa163d9248d026fc66d0bbe0a46e30014d227044b9e5d80e",
+    "25": "f141728fe292c3e3e7cef392204e802166798fdbe6ee950c0eea571fb5f78b4c",
+    "26": "12387cac7c8a59413398dc093e066ac35a23aec2cb6ec686a96e6fd8e17df0e6",
+    "27": "4d9d918445bc85a5541771db49a520f35c276f46ead935e3a7916995a3bed35b"
+  },
+  "checks": {
+    "pages": "27 pages; visual review of pages 1, 6, 9, 11, 13, 18 and 19, including visible header/footer and insertion layout. Summary page uses native summary sheet; numbered pages inspected show Team # 18213 and Page x of 27 with empty footers. Registration number remains provisional.",
+    "figure_text": "New identification matrix uses 10 pt source text at 6.5 inch source and 6.5 inch insertion; score figure uses minimum 12.5 pt source text at 6.45 inch source and 6.5 inch insertion. Both exceed 9 pt at insertion; rendering visually inspected on pages 9 and 11.",
+    "references": "63 bibitem instances including macro references; ref.bib and mcmthesis.cls unchanged relative to Overleaf HEAD.",
+    "diff": "Reviewed current main.tex diff and two modified figure assets relative to HEAD. No other Overleaf file modified in git status; no unrelated teammate prose change identified within reviewed diff.",
+    "science": "V204 current ranks and transition outputs support Vienna 378 replacing 99 and condition test 342 without rematching; mean width 15.77678; VIKOR fixed Dublin and equal Oslo lowest Q, equal fails stability and is not accepted single compromise; precision 4274 resolved and 166 unresolved. Sixteen possible champions and no necessary champion remain conditional on declared utility rectangle.",
+    "scope": "Vienna is scheduled source-defined supply, with trip conditions unverified, not observed operation or universal access. Simulations are conditional, not real-world win probabilities. The source transition receipt labels V204 staged_not_active at review; synchronize activation and proof separately."
+  },
+  "limitations": [
+    "Not a fresh independent recomputation of all V204 calculations; sampled comparison uses existing independent transition receipt and output files.",
+    "Does not certify online Overleaf compilation, actual team registration number or team submission readiness.",
+    "Only listed pages visually inspected; text fingerprints recorded for additional delivery pages."
+  ],
+  "source_whitespace_update": {
+    "previous_main_sha256": "364b36bb14995f441cfd45aa8353302e50588a6988527488a2f747847f922e8f",
+    "current_main_sha256": "a383be06db1a813f6257f0eab3048fb5f3862eee6e5084a6025ef1e32b07e123",
+    "description": "Line 473 trailing whitespace removed after candidate review; candidate PDF remains the reviewed earlier build. Pixel-identical reproduction remains to be verified separately."
+  }
+}
