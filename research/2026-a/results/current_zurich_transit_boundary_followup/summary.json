@@ -1,0 +1,62 @@
+{
+  "primary_model": "V204 unchanged",
+  "wfs_total": 3004,
+  "exact_name_records": 479,
+  "geometry_inside_records": 478,
+  "geometry_inside_with_listed_lines": 460,
+  "name_geometry_mismatches": [
+    {
+      "nhstid": "8511418",
+      "name": "Uetliberg, Bahnhof",
+      "cname": "Ringlikon",
+      "x": 2679263.0,
+      "y": 1245125.0,
+      "inside_bfs261_polygon": true,
+      "has_listed_lines": false,
+      "boundary_distance_m": 17.14822095848463
+    },
+    {
+      "nhstid": "8591128",
+      "name": "Zürich, Fernsehstudio",
+      "cname": "Zürich",
+      "x": 2684749.0,
+      "y": 1252534.0,
+      "inside_bfs261_polygon": false,
+      "has_listed_lines": true,
+      "boundary_distance_m": 24.210159657044336
+    },
+    {
+      "nhstid": "8591297",
+      "name": "Zürich, Orionstrasse",
+      "cname": "Zürich",
+      "x": 2685088.0,
+      "y": 1252379.0,
+      "inside_bfs261_polygon": false,
+      "has_listed_lines": true,
+      "boundary_distance_m": 44.39439821723619
+    }
+  ],
+  "national_municipal_query_records": 579,
+  "national_type_counts": {
+    "null": 101,
+    "ORDERLY": 473,
+    "ON_REQUEST": 5
+  },
+  "national_all_inside_polygon": true,
+  "exact_DiDok_matches_among_478": 474,
+  "unmatched_in_municipal_query": [
+    "8503044",
+    "8503449",
+    "8516661",
+    "8585407"
+  ],
+  "boundary_data_label": "30.01.2026",
+  "stop_data_label": "14.12.2025",
+  "national_scope": "Six ordered pages of municipal query, archived within two seconds; daily current publication, not an immutable national version or historical 2025 census.",
+  "geometry_scope": "Published representative points against published municipal polygon; no conversion of nominal accuracy into a hard error envelope.",
+  "identifier_scope": "Exact nhstid/number string equality for same documented DiDok namespace; no diva_nr, prefix, parent, name or proximity inference. This does not merge operational points into commercial or physical stops.",
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "baseline_446_unchanged": true,
+  "remaining_gate": "Comparable unique commercial/physical stop grouping and qualifying service; record identifiers, ORDERLY type and listed lines do not by themselves prove this."
+}

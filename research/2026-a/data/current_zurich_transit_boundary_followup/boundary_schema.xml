@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<schema
+   targetNamespace="http://mapserver.gis.umn.edu/mapserver" 
+   xmlns:ms="http://mapserver.gis.umn.edu/mapserver" 
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns="http://www.w3.org/2001/XMLSchema"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   elementFormDefault="qualified" version="0.1" >
+
+  <import namespace="http://www.opengis.net/gml/3.2"
+          schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd" />
+
+  <element name="gem_grenzen" 
+           type="ms:gem_grenzenType" 
+           substitutionGroup="gml:AbstractFeature" />
+
+  <complexType name="gem_grenzenType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:MultiSurfacePropertyType" minOccurs="0" maxOccurs="1"/>
+          <element name="geodb_oid" minOccurs="0" type="integer"/>
+          <element name="objectid" minOccurs="0" type="integer"/>
+          <element name="bfs" minOccurs="0" type="integer"/>
+          <element name="arps" minOccurs="0" type="integer"/>
+          <element name="bezirksname" minOccurs="0" type="string"/>
+          <element name="art_text" minOccurs="0" type="string"/>
+          <element name="gemeindename" minOccurs="0" type="string"/>
+          <element name="art_code" minOccurs="0" type="integer"/>
+          <element name="area_round" minOccurs="0" type="double"/>
+          <element name="gebiet_code" minOccurs="0" type="integer"/>
+          <element name="gebiet_name" minOccurs="0" type="string"/>
+          <element name="gebietstyp_code" minOccurs="0" type="integer"/>
+          <element name="gebietstyp_name" minOccurs="0" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+</schema>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>WFS Gemeindegrenzen 1:5000 Geolion</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="46tcY1jYkFAG6oGX8lgHu4WGv6Qa8VcVXecHXT8x_F6SZvxLbzblZ-xEYxZQ3KpTgOpLUYWtadcGwUA98VJHJQ" />
+
+
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon-ee0670a9.ico" />
+
+
+<link rel="stylesheet" href="/assets/application-87f76a96.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons-1c87fbef.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.min-6cae7253.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/bootstrap-102e81c4.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/choices-be9e3b18.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/dataTables.min-1f680722.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/floating-labels-bab9006e.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/pdf-62aac889.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/tom-select.default-e716344d.css" data-turbo-track="reload" />
+
+<script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-f2c14930.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+    "bootstrap": "/assets/bootstrap.bundle-38fd4746.js",
+    "choices.js": "/assets/choices.js-fdaef790.js",
+    "tom-select": "/assets/tom-select-a57dbb3e.js",
+    "@stimulus-components/rails-nested-custom-form": "/assets/rails-nested-custom-form-319a6b0e.js",
+    "controllers/application": "/assets/controllers/application-2dcdeb1c.js",
+    "controllers/attributesfromelement_controller": "/assets/controllers/attributesfromelement_controller-fd2f94db.js",
+    "controllers/attributesfromsde_controller": "/assets/controllers/attributesfromsde_controller-7d7cd858.js",
+    "controllers/darstellungdropdown_controller": "/assets/controllers/darstellungdropdown_controller-89ef0704.js",
+    "controllers/deletemxd_controller": "/assets/controllers/deletemxd_controller-6e3118a8.js",
+    "controllers/deletepdf_controller": "/assets/controllers/deletepdf_controller-ef3cf363.js",
+    "controllers/elementliste_controller": "/assets/controllers/elementliste_controller-b3e38ebf.js",
+    "controllers/elemsichtbarkeit_controller": "/assets/controllers/elemsichtbarkeit_controller-4fd47c9d.js",
+    "controllers/filepath_controller": "/assets/controllers/filepath_controller-3115d012.js",
+    "controllers/gesetzgebung_controller": "/assets/controllers/gesetzgebung_controller-08563d5c.js",
+    "controllers/image_preview_controller": "/assets/controllers/image_preview_controller-46a08cc9.js",
+    "controllers": "/assets/controllers/index-2d06300d.js",
+    "controllers/kartecheckbox_controller": "/assets/controllers/kartecheckbox_controller-302db03d.js",
+    "controllers/select_controller": "/assets/controllers/select_controller-cc049943.js",
+    "controllers/table_sort_controller": "/assets/controllers/table_sort_controller-87e5dbe4.js",
+    "controllers/tinymce_controller": "/assets/controllers/tinymce_controller-62e008b9.js",
+    "controllers/turbo_modal_controller": "/assets/controllers/turbo_modal_controller-9149811f.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-f2c14930.js">
+<link rel="modulepreload" href="/assets/turbo.min-9fd88cd5.js">
+<link rel="modulepreload" href="/assets/stimulus.min-4b1e420e.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc53fe7.js">
+<link rel="modulepreload" href="/assets/bootstrap.bundle-38fd4746.js">
+<link rel="modulepreload" href="/assets/choices.js-fdaef790.js">
+<link rel="modulepreload" href="/assets/tom-select-a57dbb3e.js">
+<link rel="modulepreload" href="/assets/rails-nested-custom-form-319a6b0e.js">
+<link rel="modulepreload" href="/assets/controllers/application-2dcdeb1c.js">
+<link rel="modulepreload" href="/assets/controllers/attributesfromelement_controller-fd2f94db.js">
+<link rel="modulepreload" href="/assets/controllers/attributesfromsde_controller-7d7cd858.js">
+<link rel="modulepreload" href="/assets/controllers/darstellungdropdown_controller-89ef0704.js">
+<link rel="modulepreload" href="/assets/controllers/deletemxd_controller-6e3118a8.js">
+<link rel="modulepreload" href="/assets/controllers/deletepdf_controller-ef3cf363.js">
+<link rel="modulepreload" href="/assets/controllers/elementliste_controller-b3e38ebf.js">
+<link rel="modulepreload" href="/assets/controllers/elemsichtbarkeit_controller-4fd47c9d.js">
+<link rel="modulepreload" href="/assets/controllers/filepath_controller-3115d012.js">
+<link rel="modulepreload" href="/assets/controllers/gesetzgebung_controller-08563d5c.js">
+<link rel="modulepreload" href="/assets/controllers/image_preview_controller-46a08cc9.js">
+<link rel="modulepreload" href="/assets/controllers/index-2d06300d.js">
+<link rel="modulepreload" href="/assets/controllers/kartecheckbox_controller-302db03d.js">
+<link rel="modulepreload" href="/assets/controllers/select_controller-cc049943.js">
+<link rel="modulepreload" href="/assets/controllers/table_sort_controller-87e5dbe4.js">
+<link rel="modulepreload" href="/assets/controllers/tinymce_controller-62e008b9.js">
+<link rel="modulepreload" href="/assets/controllers/turbo_modal_controller-9149811f.js">
+<script type="module">import "application"</script>
+
+<script>
+//<![CDATA[
+window.tinymce = window.tinymce || { base: '/assets/tinymce', suffix: '' };
+//]]>
+</script>
+<script src="/assets/tinymce/tinymce.js" data-turbo-track="reload"></script>
+<script src="/assets/tinymce/rails.js" data-turbo-track="reload"></script>
+
+
+<link rel="icon" type="image/png" href="/assets/favicon-16x16-4829a6bd.png" />
+
+<link rel="alternate" type="application/atom+xml" title="Geolion Atom Feed" href="https://geolion.zh.ch/atom" />
+<link rel="alternate" type="application/rss+xml" title="Geolion RSS Feed" href="https://geolion.zh.ch/rss" />
+
+  </head>
+
+  <body>
+
+        <div id="geotop" class="p-2">
+      <nav class="navbar navbar-dark">
+        <!-- ZH Label -->
+        <section id="label">
+          <div class="row g-2 align-items-center">
+            <div class="col-auto">
+              <a class="navbar-brand font-weight-bold " style="font-size: 50px" href="/meta">
+                <img src="/assets/zhlogo_white-9c227df4.png" />
+              </a>
+            </div>
+            <div class="col-auto navbar-brand font-weight-bold " style="font-size: 50px">
+              <div class="row g-2 align-items-center">
+              <span>
+                <div>GeoLion</div>
+                <div style="font-size: 20px"></div>
+              </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Search Box-->
+        <section id="search">
+          <form action="/meta" accept-charset="UTF-8" method="get">
+            <div class="input-group mb-3">
+              <input type="search" name="simplesearch" id="simplesearch" value="" class="form-control" size="40" placeholder="Metadaten Suche..." autocomplete="off" />
+              <button name="button" type="submit" class="btn btn-outline-secondary">
+                <i class="bi bi-search" style="color: white;"></i>
+</button>            </div>
+</form>        </section>
+
+        <section id="home" class="alt">
+          <a title="Home" href="/meta">
+            <i class="bi bi-house-door-fill" style="font-size: 2rem; color: white;"></i>
+</a>        </section>
+
+
+        <!-- Menu -->
+        <div class="btn-group">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-sm-end dropdown-menu-start">
+            <!-- Menu -->
+
+<li><h6 class="dropdown-header"><b>Dokumentation</b></h6></li>
+  <li><a class="dropdown-item" target="_blank" href="../Geolion8_Dokumentation_www.pdf">Geolion Doc</a></li>
+<li><a class="dropdown-item" href="/api-docs">API Doc</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><h6 class="dropdown-header"><b>Tools</b></h6></li>
+<li><a class="dropdown-item" target="_blank" href="https://geoconverter.infs.ch">Geoconverter (IFS)</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" target="_blank" href="https://are-zh.atlassian.net/servicedesk/customer/portal/3/group/3/create/26">Kontakt Admin</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <div class="d-flex bg-light">
+      <div class="px-3 pt-4 w-25 d-none d-sm-block">
+  <div class="pb-1" id="thumbnail">
+    <div class="p-2">
+    <a target="_blank" href="/geodatenservice/1054/image"><img class="img-thumbnail" data-image-preview-target="canvas" src="/geodatenservice/1054/thumbnail" /></a>
+</div>
+
+  </div>
+
+  <nav id="navbar-service" class="h-100 flex-column align-items-stretch pe-4 border-end">
+  <div class="d-flex sticky-top pt-3">
+    <nav class="nav nav-pills flex-column">
+
+
+          <a class="nav-link" href="#kontakt-verwalter">Verantwortlich für Metadaten</a>
+
+
+          <a class="nav-link" href="#beschreibung">Beschreibung</a>
+
+
+          <a class="nav-link" href="#geodaten">Verwendete Geodatendaten</a>
+
+
+    </nav>
+  </div>
+</nav>
+
+
+</div>
+
+      <div class="w-100">
+        <div class="flex-row py-2">  <p style="color: green"></p>
+</div>
+
+        <div class="flex-row">
+
+
+<div id="geodatenservice" class="geodatenservice-container">
+
+  <div class="row">
+
+    <div class="col-12">
+      <h1>Geoservice: WFS Gemeindegrenzen 1:5000
+      </h1>
+
+      <div data-bs-spy="scroll" data-bs-target="#navbar-service" data-bs-smooth-scroll="false" tabindex="0">
+        
+<div class="p-2">
+  <div id="kontakt-verwalter" class="card">
+
+    <div class="card-header">
+      <h5>Verantwortlich für Metadaten</h5>
+    </div>
+
+    <div class="card-body">
+      <p class="card-text">
+        
+  Amt für Raumentwicklung
+  <br>
+
+  Geoinformation
+   / Kataster
+  <br>
+
+<b>Anira  Niso</b>
+
+<br>
+
+  Stampfenbachstrasse
+   12
+  <br>
+
+  8090
+   Zürich
+  <br>
+
+<br>
+
+  Tel: +41 43 259 30 22  
+  <br>
+
+  Tel direkt: +41 43 257 41 32
+  <br>
+
+E-Mail: <a href="mailto:anira.niso.galan@bd.zh.ch">anira.niso.galan@bd.zh.ch</a>
+<br>
+
+www: <a target="_blank" href="https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html">https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html</a>
+<br>
+
+
+
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+        
+<div class="p-2 align-items-start">
+
+  <div id="beschreibung" class="card">
+
+    <div class="card-header">
+      <h5>Beschreibung</h5>
+    </div>
+
+    <div class="card-body">
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Nr</div>
+      <div card="card-text">36</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Nr</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">36</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Diensttyp</div>
+      <div card="card-text">WFS</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Diensttyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">WFS</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Bezeichnung</div>
+      <div card="card-text">WFS Gemeindegrenzen 1:5000</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Bezeichnung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">WFS Gemeindegrenzen 1:5000</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Beschreibung</div>
+      <div card="card-text">Gemeindegrenzen in Übersichtsplangenauigkeit. Es stehen drei Datensätze zur Verfügung:
+
+Gemeinden: 
+Offizieller Verlauf der Gemeindegrenzen, d.h. die Grenze der Stadt Zürich verläuft durch den Zürichsee, die Grenzen der übrigen Zürichsee- und der Greifenseegemeinden verlaufen entlang der Seeufer.
+
+Gemeinde-, Bezirks- und Kantonsgrenzen: 
+Anhand dieser Linienversion können für kartografische Zwecke Gemeinde-, Bezirks- und Kantonsgrenzen sowie Grenzen auf Seeflächen unterschieden werden. 
+
+Gemeinden mit Berücksichtigung von Seen: 
+In dieser Variante sind Zürich-, Greifen-, Pfäffiker-, Chatzen- und Türlersee voll ausgespart.
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Gemeindegrenzen in Übersichtsplangenauigkeit. Es stehen drei Datensätze zur Verfügung:
+
+Gemeinden: 
+Offizieller Verlauf der Gemeindegrenzen, d.h. die Grenze der Stadt Zürich verläuft durch den Zürichsee, die Grenzen der übrigen Zürichsee- und der Greifenseegemeinden verlaufen entlang der Seeufer.
+
+Gemeinde-, Bezirks- und Kantonsgrenzen: 
+Anhand dieser Linienversion können für kartografische Zwecke Gemeinde-, Bezirks- und Kantonsgrenzen sowie Grenzen auf Seeflächen unterschieden werden. 
+
+Gemeinden mit Berücksichtigung von Seen: 
+In dieser Variante sind Zürich-, Greifen-, Pfäffiker-, Chatzen- und Türlersee voll ausgespart.
+</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">URL</div>
+      <div card="card-text">https://maps.zh.ch/wfs/GemZHWFS</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">URL</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">https://maps.zh.ch/wfs/GemZHWFS</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Version</div>
+      <div card="card-text">1.1.0</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Version</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">1.1.0</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Publikationsdatum</div>
+      <div card="card-text">27.03.2013</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Publikationsdatum</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">27.03.2013</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geometadaten letzte Änderung</div>
+      <div card="card-text">02.10.2024</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geometadaten letzte Änderung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">02.10.2024</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Zugang</div>
+      <div card="card-text">Internet Open Data</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Zugang</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Internet Open Data</div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+        
+<div class="p-2">
+  <div id="geodaten" class="card avoid-break">
+
+    <div class="card-header">
+      <h5>Verwendete Geodatendaten</h5>
+    </div>
+
+    <div class="card-body">
+      
+<div class=" px-3">
+  <div class="row gx-0 align-items-center py-2">
+
+    <div class="col-3 d-none d-lg-block">
+      <div class="p-2">
+    <a target="_blank" href="/geodatensatz/865"><img class="img-thumbnail" data-image-preview-target="canvas" src="/geodatensatz/865/thumbnail" /></a>
+</div>
+
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <p class="card-text">
+        <strong>
+          <a target="_blank" href="/geodatensatz/865">865 Gemeindegrenzen</a>
+        </strong>
+      </p>
+      <p class="card-text">Gemeindegrenzen GIS-ZH</p>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+</div>
+      </div>
+
+      <div class="p-5 w-25 d-none d-xl-block"></div>
+    </div>
+  </body>
+
+  <footer>
+    <!-- Footer Start -->
+<div class="container-fluid header mt-5 py-5 px-sm-3 px-md-5">
+    <div class="m-0 text-center">
+        <div class="font-weight-bold">&copy; GeoLion 8.0</div>
+    </div>
+</div>
+<!-- Footer End -->
+
+  </footer>
+
+</html>

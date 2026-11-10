@@ -1,0 +1,18 @@
+{
+  "status": "pass source attribute inventory",
+  "source_sha256": {
+    "data/current_zurich_transport/kanton_zh_wfs.geojson": "9827610e3f68b8ae54b726673ff5b8b77dbf792e235b4dda4cafa7dbb1e14ef3",
+    "data/current_zurich_transport/provenance.json": "eade051b61f90fc5b3446d77fd07a8504ee9fb90109b90c2ef37117a217730b2",
+    "data/current_zurich_transport/check.py": "d08598286e8fb21adb09774dceb05ad1f2988054d5b4acc672263c9da064b13e",
+    "results/current_zurich_wfs_inventory/inventory.py": "dea4eb0f9b3288944fa46ef075eff83b718c0ec71e8f7051bfc5742318f7331f"
+  },
+  "output_sha256": {
+    "summary.json": "5d367a2e2c89976f02aad2bb9aa026bf33825784c35e8339bd8e8e10d7b80836"
+  },
+  "feature_count": 3004,
+  "exact_cname_Zurich_records": 479,
+  "missing_or_empty_linien": 17,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "Record attributes only; cname is not a municipal boundary certificate and unique IDs are not physical stop qualification."
+}

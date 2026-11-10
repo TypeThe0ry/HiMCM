@@ -1,0 +1,4328 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Gemeindegrenzen Geolion</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="_jDIh3XhmgBViVHfveV1jdRSy6vF3I1WaDnz8jhPmRaWjTQ_E765lhUkiRG_cT_hVWtQSH3pn30vkORiDD-PkQ" />
+
+
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon-ee0670a9.ico" />
+
+
+<link rel="stylesheet" href="/assets/application-87f76a96.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons-1c87fbef.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.min-6cae7253.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/bootstrap-102e81c4.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/choices-be9e3b18.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/dataTables.min-1f680722.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/floating-labels-bab9006e.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/pdf-62aac889.css" data-turbo-track="reload" />
+<link rel="stylesheet" href="/assets/tom-select.default-e716344d.css" data-turbo-track="reload" />
+
+<script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-f2c14930.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+    "bootstrap": "/assets/bootstrap.bundle-38fd4746.js",
+    "choices.js": "/assets/choices.js-fdaef790.js",
+    "tom-select": "/assets/tom-select-a57dbb3e.js",
+    "@stimulus-components/rails-nested-custom-form": "/assets/rails-nested-custom-form-319a6b0e.js",
+    "controllers/application": "/assets/controllers/application-2dcdeb1c.js",
+    "controllers/attributesfromelement_controller": "/assets/controllers/attributesfromelement_controller-fd2f94db.js",
+    "controllers/attributesfromsde_controller": "/assets/controllers/attributesfromsde_controller-7d7cd858.js",
+    "controllers/darstellungdropdown_controller": "/assets/controllers/darstellungdropdown_controller-89ef0704.js",
+    "controllers/deletemxd_controller": "/assets/controllers/deletemxd_controller-6e3118a8.js",
+    "controllers/deletepdf_controller": "/assets/controllers/deletepdf_controller-ef3cf363.js",
+    "controllers/elementliste_controller": "/assets/controllers/elementliste_controller-b3e38ebf.js",
+    "controllers/elemsichtbarkeit_controller": "/assets/controllers/elemsichtbarkeit_controller-4fd47c9d.js",
+    "controllers/filepath_controller": "/assets/controllers/filepath_controller-3115d012.js",
+    "controllers/gesetzgebung_controller": "/assets/controllers/gesetzgebung_controller-08563d5c.js",
+    "controllers/image_preview_controller": "/assets/controllers/image_preview_controller-46a08cc9.js",
+    "controllers": "/assets/controllers/index-2d06300d.js",
+    "controllers/kartecheckbox_controller": "/assets/controllers/kartecheckbox_controller-302db03d.js",
+    "controllers/select_controller": "/assets/controllers/select_controller-cc049943.js",
+    "controllers/table_sort_controller": "/assets/controllers/table_sort_controller-87e5dbe4.js",
+    "controllers/tinymce_controller": "/assets/controllers/tinymce_controller-62e008b9.js",
+    "controllers/turbo_modal_controller": "/assets/controllers/turbo_modal_controller-9149811f.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-f2c14930.js">
+<link rel="modulepreload" href="/assets/turbo.min-9fd88cd5.js">
+<link rel="modulepreload" href="/assets/stimulus.min-4b1e420e.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc53fe7.js">
+<link rel="modulepreload" href="/assets/bootstrap.bundle-38fd4746.js">
+<link rel="modulepreload" href="/assets/choices.js-fdaef790.js">
+<link rel="modulepreload" href="/assets/tom-select-a57dbb3e.js">
+<link rel="modulepreload" href="/assets/rails-nested-custom-form-319a6b0e.js">
+<link rel="modulepreload" href="/assets/controllers/application-2dcdeb1c.js">
+<link rel="modulepreload" href="/assets/controllers/attributesfromelement_controller-fd2f94db.js">
+<link rel="modulepreload" href="/assets/controllers/attributesfromsde_controller-7d7cd858.js">
+<link rel="modulepreload" href="/assets/controllers/darstellungdropdown_controller-89ef0704.js">
+<link rel="modulepreload" href="/assets/controllers/deletemxd_controller-6e3118a8.js">
+<link rel="modulepreload" href="/assets/controllers/deletepdf_controller-ef3cf363.js">
+<link rel="modulepreload" href="/assets/controllers/elementliste_controller-b3e38ebf.js">
+<link rel="modulepreload" href="/assets/controllers/elemsichtbarkeit_controller-4fd47c9d.js">
+<link rel="modulepreload" href="/assets/controllers/filepath_controller-3115d012.js">
+<link rel="modulepreload" href="/assets/controllers/gesetzgebung_controller-08563d5c.js">
+<link rel="modulepreload" href="/assets/controllers/image_preview_controller-46a08cc9.js">
+<link rel="modulepreload" href="/assets/controllers/index-2d06300d.js">
+<link rel="modulepreload" href="/assets/controllers/kartecheckbox_controller-302db03d.js">
+<link rel="modulepreload" href="/assets/controllers/select_controller-cc049943.js">
+<link rel="modulepreload" href="/assets/controllers/table_sort_controller-87e5dbe4.js">
+<link rel="modulepreload" href="/assets/controllers/tinymce_controller-62e008b9.js">
+<link rel="modulepreload" href="/assets/controllers/turbo_modal_controller-9149811f.js">
+<script type="module">import "application"</script>
+
+<script>
+//<![CDATA[
+window.tinymce = window.tinymce || { base: '/assets/tinymce', suffix: '' };
+//]]>
+</script>
+<script src="/assets/tinymce/tinymce.js" data-turbo-track="reload"></script>
+<script src="/assets/tinymce/rails.js" data-turbo-track="reload"></script>
+
+
+<link rel="icon" type="image/png" href="/assets/favicon-16x16-4829a6bd.png" />
+
+<link rel="alternate" type="application/atom+xml" title="Geolion Atom Feed" href="https://geolion.zh.ch/atom" />
+<link rel="alternate" type="application/rss+xml" title="Geolion RSS Feed" href="https://geolion.zh.ch/rss" />
+
+  </head>
+
+  <body>
+
+        <div id="geotop" class="p-2">
+      <nav class="navbar navbar-dark">
+        <!-- ZH Label -->
+        <section id="label">
+          <div class="row g-2 align-items-center">
+            <div class="col-auto">
+              <a class="navbar-brand font-weight-bold " style="font-size: 50px" href="/meta">
+                <img src="/assets/zhlogo_white-9c227df4.png" />
+              </a>
+            </div>
+            <div class="col-auto navbar-brand font-weight-bold " style="font-size: 50px">
+              <div class="row g-2 align-items-center">
+              <span>
+                <div>GeoLion</div>
+                <div style="font-size: 20px"></div>
+              </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Search Box-->
+        <section id="search">
+          <form action="/meta" accept-charset="UTF-8" method="get">
+            <div class="input-group mb-3">
+              <input type="search" name="simplesearch" id="simplesearch" value="" class="form-control" size="40" placeholder="Metadaten Suche..." autocomplete="off" />
+              <button name="button" type="submit" class="btn btn-outline-secondary">
+                <i class="bi bi-search" style="color: white;"></i>
+</button>            </div>
+</form>        </section>
+
+        <section id="home" class="alt">
+          <a title="Home" href="/meta">
+            <i class="bi bi-house-door-fill" style="font-size: 2rem; color: white;"></i>
+</a>        </section>
+
+
+        <!-- Menu -->
+        <div class="btn-group">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-sm-end dropdown-menu-start">
+            <!-- Menu -->
+
+<li><h6 class="dropdown-header"><b>Dokumentation</b></h6></li>
+  <li><a class="dropdown-item" target="_blank" href="../Geolion8_Dokumentation_www.pdf">Geolion Doc</a></li>
+<li><a class="dropdown-item" href="/api-docs">API Doc</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><h6 class="dropdown-header"><b>Tools</b></h6></li>
+<li><a class="dropdown-item" target="_blank" href="https://geoconverter.infs.ch">Geoconverter (IFS)</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" target="_blank" href="https://are-zh.atlassian.net/servicedesk/customer/portal/3/group/3/create/26">Kontakt Admin</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <div class="d-flex bg-light">
+      <div class="px-3 pt-4 w-25 d-none d-sm-block">
+  <div id="thumbnail">
+    <div class="p-2">
+    <a target="_blank" href="/geodatensatz/865/image"><img class="img-thumbnail" data-image-preview-target="canvas" src="/geodatensatz/865/thumbnail" /></a>
+</div>
+
+  </div>
+
+  <nav id="navbar-datensatz" class="h-100 flex-column align-items-stretch pe-4 border-end">
+  <div class="d-flex sticky-top pt-3">
+    <nav class="nav nav-pills flex-column">
+
+
+            <a class="nav-link" href="#kontakt">Kontakt</a>
+
+          <nav class="nav nav-pills flex-column">
+              <a class="nav-link ms-3 " href="#kontakt-datenherr">Verantwortlich für Daten</a>
+              <a class="nav-link ms-3 mb-3" href="#kontakt-verwalter">Verantwortlich für Metadaten</a>
+          </nav>
+
+
+          <a class="nav-link" href="#beschreibung">Beschreibung/Inhalt</a>
+
+
+          <a class="nav-link" href="#datenstand">Datenstand</a>
+
+
+          <a class="nav-link" href="#datenformat">Datenformat</a>
+
+
+          <a class="nav-link" href="#ausdehnung">Ausdehnung</a>
+
+
+          <a class="nav-link" href="#datenbezug">Datenbezug</a>
+
+
+          <a class="nav-link" href="#service">Services</a>
+
+
+          <a class="nav-link" href="#gesetzgebung">Gesetzgebung</a>
+
+
+          <a class="nav-link" href="#rechtliche_grundlagen">Rechtliche Grundlagen</a>
+
+
+          <a class="nav-link" href="#datenmodell">Datenmodell</a>
+
+
+          <a class="nav-link" href="#datengrundlage">Datengrundlage</a>
+
+
+            <a class="nav-link" href="#elementen">Elemente</a>
+
+          <nav class="nav nav-pills flex-column">
+              <a class="nav-link ms-3 " href="#element-95-1">95.1 - Gemeinden</a>
+              <a class="nav-link ms-3 " href="#element-95-2">95.2 - Gemeindegrenzen</a>
+              <a class="nav-link ms-3 " href="#element-95-3">95.3 - Gemeinden mit Berücksichtigung von Seen</a>
+              <a class="nav-link ms-3 " href="#element-95-4">95.4 - Kanton</a>
+              <a class="nav-link ms-3 " href="#element-95-5">95.5 - Gemeinden ohne Seen</a>
+              <a class="nav-link ms-3 mb-3" href="#element-95-6">95.6 - Bezirke</a>
+          </nav>
+
+
+    </nav>
+  </div>
+</nav>
+
+</div>
+
+      <div class="w-100">
+        <div class="flex-row py-2">  <p style="color: green"></p>
+</div>
+
+        <div class="flex-row">
+
+
+<div id="datensatz" class="datensatz-container">
+
+  <div class="row">
+
+    <div class="col-12">
+      <h1>Datensatz: Gemeindegrenzen
+      </h1>
+
+      <div data-bs-spy="scroll" data-bs-target="#navbar-datensatz" data-bs-smooth-scroll="false" tabindex="0">
+
+        
+<div id="kontakt">
+  <div class="d-block d-md-none">
+    
+<div class="p-2">
+  <div id="kontakt-datenherr" class="card">
+
+    <div class="card-header">
+      <h5>Verantwortlich für Daten</h5>
+    </div>
+
+    <div class="card-body">
+      <p class="card-text">
+        
+  Amt für Raumentwicklung
+  <br>
+
+  Geoinformation
+   / Kataster
+  <br>
+
+<b>Anira  Niso</b>
+
+<br>
+
+  Stampfenbachstrasse
+   12
+  <br>
+
+  8090
+   Zürich
+  <br>
+
+<br>
+
+  Tel: +41 43 259 30 22  
+  <br>
+
+  Tel direkt: +41 43 257 41 32
+  <br>
+
+E-Mail: <a href="mailto:anira.niso.galan@bd.zh.ch">anira.niso.galan@bd.zh.ch</a>
+<br>
+
+www: <a target="_blank" href="https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html">https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html</a>
+<br>
+
+
+
+      </p>
+    </div>
+
+  </div>
+</div>
+
+    
+<div class="p-2">
+  <div id="kontakt-verwalter" class="card">
+
+    <div class="card-header">
+      <h5>Verantwortlich für Metadaten</h5>
+    </div>
+
+    <div class="card-body">
+      <p class="card-text">
+        
+  Amt für Raumentwicklung
+  <br>
+
+  Geoinformation
+   / Kataster
+  <br>
+
+<b>Anira  Niso</b>
+
+<br>
+
+  Stampfenbachstrasse
+   12
+  <br>
+
+  8090
+   Zürich
+  <br>
+
+<br>
+
+  Tel: +41 43 259 30 22  
+  <br>
+
+  Tel direkt: +41 43 257 41 32
+  <br>
+
+E-Mail: <a href="mailto:anira.niso.galan@bd.zh.ch">anira.niso.galan@bd.zh.ch</a>
+<br>
+
+www: <a target="_blank" href="https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html">https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html</a>
+<br>
+
+
+
+      </p>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="d-none d-md-block">
+    <div class="d-flex align-items-start">
+      
+<div class="p-2">
+  <div id="kontakt-datenherr" class="card">
+
+    <div class="card-header">
+      <h5>Verantwortlich für Daten</h5>
+    </div>
+
+    <div class="card-body">
+      <p class="card-text">
+        
+  Amt für Raumentwicklung
+  <br>
+
+  Geoinformation
+   / Kataster
+  <br>
+
+<b>Anira  Niso</b>
+
+<br>
+
+  Stampfenbachstrasse
+   12
+  <br>
+
+  8090
+   Zürich
+  <br>
+
+<br>
+
+  Tel: +41 43 259 30 22  
+  <br>
+
+  Tel direkt: +41 43 257 41 32
+  <br>
+
+E-Mail: <a href="mailto:anira.niso.galan@bd.zh.ch">anira.niso.galan@bd.zh.ch</a>
+<br>
+
+www: <a target="_blank" href="https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html">https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html</a>
+<br>
+
+
+
+      </p>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="p-2">
+  <div id="kontakt-verwalter" class="card">
+
+    <div class="card-header">
+      <h5>Verantwortlich für Metadaten</h5>
+    </div>
+
+    <div class="card-body">
+      <p class="card-text">
+        
+  Amt für Raumentwicklung
+  <br>
+
+  Geoinformation
+   / Kataster
+  <br>
+
+<b>Anira  Niso</b>
+
+<br>
+
+  Stampfenbachstrasse
+   12
+  <br>
+
+  8090
+   Zürich
+  <br>
+
+<br>
+
+  Tel: +41 43 259 30 22  
+  <br>
+
+  Tel direkt: +41 43 257 41 32
+  <br>
+
+E-Mail: <a href="mailto:anira.niso.galan@bd.zh.ch">anira.niso.galan@bd.zh.ch</a>
+<br>
+
+www: <a target="_blank" href="https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html">https://www.zh.ch/de/baudirektion/amt-fuer-raumentwicklung.html</a>
+<br>
+
+
+
+      </p>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+        
+<div class="p-2 align-items-start">
+
+  <div id="beschreibung" class="card avoid-break">
+
+    <div class="card-header">
+      <h5>Beschreibung/Inhalt</h5>
+    </div>
+
+    <div class="card-body">
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">GIS-ZH Nr</div>
+      <div card="card-text">95</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">GIS-ZH Nr</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">95</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Bezeichnung</div>
+      <div card="card-text">Gemeindegrenzen</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Bezeichnung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Gemeindegrenzen</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Kurzbeschreibung</div>
+      <div card="card-text">Gemeindegrenzen GIS-ZH</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Kurzbeschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Gemeindegrenzen GIS-ZH</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Beschreibung</div>
+      <div card="card-text">Die GIS-ZH-Gemeindegrenzen werden aus den Grenzen der amtlichen Vermessung (GIS-ZH Nr. 405) aufbereitet. Die Benutzerversionen sind topologisch bereinigt, Kreisbögen sind aufgelöst, und Gemeindegrenzen an Seeufern orientieren sich an den Uferlinien.</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Die GIS-ZH-Gemeindegrenzen werden aus den Grenzen der amtlichen Vermessung (GIS-ZH Nr. 405) aufbereitet. Die Benutzerversionen sind topologisch bereinigt, Kreisbögen sind aufgelöst, und Gemeindegrenzen an Seeufern orientieren sich an den Uferlinien.</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">eCH Geokategorien / Themen</div>
+      <div card="card-text">Politische und administrative Grenzen</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">eCH Geokategorien / Themen</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Politische und administrative Grenzen</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Schlüsselwörter</div>
+      <div card="card-text">Gemeinden Gemeindegrenzen administrative Grenzen Hoheitsgrenzen </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Schlüsselwörter</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Gemeinden Gemeindegrenzen administrative Grenzen Hoheitsgrenzen </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+        
+<div class="p-2 align-items-start">
+
+  <div id="datenstand" class="card avoid-break">
+
+    <div class="card-header">
+      <h5>Datenstand</h5>
+    </div>
+
+    <div class="card-body">
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Nachführungstyp</div>
+      <div card="card-text">jährlich</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Nachführungstyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">jährlich</div>
+    </div>
+  </div>
+</div>
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Aktueller Datenstand</div>
+      <div card="card-text">30.01.2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Aktueller Datenstand</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">30.01.2026</div>
+    </div>
+  </div>
+</div>
+
+
+
+      
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Letzte Änderung der Geometadaten</div>
+      <div card="card-text">01.09.2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Letzte Änderung der Geometadaten</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">01.09.2026</div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+        
+<div class="p-2 align-items-start">
+
+  <div id="datenformat" class="card avoid-break">
+
+    <div class="card-header">
+      <h5>Datenformat</h5>
+    </div>
+
+    <div class="card-body">
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Darstellungstyp</div>
+      <div card="card-text">Vektor</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Darstellungstyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Vektor</div>
+    </div>
+  </div>
+</div>
+
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datenformat</div>
+      <div card="card-text">ESRI ArcSDE-Layer (ROFA)</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datenformat</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">ESRI ArcSDE-Layer (ROFA)</div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+        
+<div class="p-2 align-items-start">
+
+  <div id="ausdehnung" class="card avoid-break">
+
+    <div class="card-header">
+      <h5>Ausdehnung</h5>
+    </div>
+
+    <div class="card-body">
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geographisches Gebiet / Ausdehnung</div>
+      <div card="card-text">Kanton Zürich</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geographisches Gebiet / Ausdehnung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Kanton Zürich</div>
+    </div>
+  </div>
+</div>
+
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Referenzsystem</div>
+      <div card="card-text">CH1903+_LV95</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Referenzsystem</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">CH1903+_LV95</div>
+    </div>
+  </div>
+</div>
+
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Erfassungsmassstab</div>
+      <div card="card-text">1:10</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Erfassungsmassstab</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">1:10</div>
+    </div>
+  </div>
+</div>
+
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Lagegenauigkeit</div>
+      <div card="card-text">0.01 [m]</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Lagegenauigkeit</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">0.01 [m]</div>
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+        
+<div class="p-2 align-items-start">
+
+  <div id="datenbezug" class="card avoid-break">
+
+    <div class="card-header">
+      <h5>Datenbezug</h5>
+    </div>
+
+    <div class="card-body">
+
+      <div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Abgabeformat</div>
+    </div>
+
+    <div class="col-6 flex-grow-1 mb-3">
+      <div card="card-text">
+
+          <ul>
+              <li>DXF (.dxf)</li>
+              <li>ESRI File Geodatabase (.gdb)</li>
+              <li>GeoPackage (.gpkg)</li>
+              <li>Comma separated text (.csv)</li>
+              <li>ESRI Shapefile (.shp)</li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-block d-md-none">
+  <div class="row align-items-top py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Abgabeformat</div>
+      <div card="card-text">
+
+          <ul>
+              <li>DXF (.dxf)</li>
+              <li>ESRI File Geodatabase (.gdb)</li>
+              <li>GeoPackage (.gpkg)</li>
+              <li>Comma separated text (.csv)</li>
+              <li>ESRI Shapefile (.shp)</li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <div class="row">
+
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card mb-3">
+
+  <div class="card-header">
+    <h6>OGD-Daten (kostenlos)</h6>
+  </div>
+
+  <div class="card-body">
+
+    
+  <div class="text-left">
+    <ul>
+        <li>
+          <a href="https://geolion.zh.ch/geodatensatz/865#element-95-1">95.1: Gemeinden</a>
+        </li>
+        <li>
+          <a href="https://geolion.zh.ch/geodatensatz/865#element-95-2">95.2: Gemeindegrenzen</a>
+        </li>
+        <li>
+          <a href="https://geolion.zh.ch/geodatensatz/865#element-95-3">95.3: Gemeinden mit Berücksichtigung von Seen</a>
+        </li>
+        <li>
+          <a href="https://geolion.zh.ch/geodatensatz/865#element-95-4">95.4: Kanton</a>
+        </li>
+        <li>
+          <a href="https://geolion.zh.ch/geodatensatz/865#element-95-5">95.5: Gemeinden ohne Seen</a>
+        </li>
+        <li>
+          <a href="https://geolion.zh.ch/geodatensatz/865#element-95-6">95.6: Bezirke</a>
+        </li>
+    </ul>
+  </div>
+
+
+    <div class="text-center">
+        <p><a target="_blank" href="https://geo.zh.ch/maps?initialMapIds=BASISKARTEZH">Download via GIS-Browser</a></p>
+
+      <p><a target="_blank" href="../OGDZH_DatenGisBrowser_2024.pdf">Anleitung</a></p>
+    </div>
+
+  </div>
+</div> 
+
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+        
+<div class="p-2">
+  <div id="service" class="card avoid-break">
+
+    <div class="card-header">
+      <h5>Services</h5>
+    </div>
+
+    <div class="card-body">
+      
+<div class=" px-3">
+  <div class="row gx-5 align-items-center mb-3 mt-2">
+
+    <div class="col-3 d-none d-lg-block">
+      <div class="p-2">
+    <a target="_blank" href="https://wms.zh.ch/RasterWMS"><img class="img-thumbnail" data-image-preview-target="canvas" src="/geodatenservice/644/thumbnail" /></a>
+</div>
+
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <p class="card-text">
+        <strong>
+          <a target="_blank" href="/geodatenservice/644">644 WMS Basiskarten</a>
+        </strong>
+      </p>
+      <p class="card-text">Die Basiskarten beinhalten die Pixelkarten der swisstopo: 
+1:25&#39;000 
+1:50&#39;000 
+1:100&#39;00 
+1:200&#39;000 
+und 1:500&#39;000 sowie den Raster - Übersichtsplan des Kantons Zürich. </p>
+    </div>
+
+  </div>
+</div>
+
+<div class=" px-3">
+  <div class="row gx-5 align-items-center mb-3 mt-2">
+
+    <div class="col-3 d-none d-lg-block">
+      <div class="p-2">
+    <a target="_blank" href="https://wms.zh.ch/AdminZH"><img class="img-thumbnail" data-image-preview-target="canvas" src="/geodatenservice/2088/thumbnail" /></a>
+</div>
+
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <p class="card-text">
+        <strong>
+          <a target="_blank" href="/geodatenservice/2088">2088 WMS Administrative Einteilungen (OGD)</a>
+        </strong>
+      </p>
+      <p class="card-text">Administrative Einteilungen </p>
+    </div>
+
+  </div>
+</div>
+
+<div class=" px-3">
+  <div class="row gx-5 align-items-center mb-3 mt-2">
+
+    <div class="col-3 d-none d-lg-block">
+      <div class="p-2">
+    <img class="img-thumbnail" data-image-preview-target="canvas" src="/blank.png" />
+</div>
+
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <p class="card-text">
+        <strong>
+          <a target="_blank" href="/geodatenservice/2030">2030 Allgemeiner WFS für Open-Government-Data des Kantons Zürich (OGD ZH WFS)</a>
+        </strong>
+      </p>
+      <p class="card-text">WFS für Open-Government-Data des Kantons Zürich (OGD ZH WFS)</p>
+    </div>
+
+  </div>
+</div>
+
+<div class=" px-3">
+  <div class="row gx-5 align-items-center mb-3 mt-2">
+
+    <div class="col-3 d-none d-lg-block">
+      <div class="p-2">
+    <a target="_blank" href="https://maps.zh.ch/wfs/GemZHWFS"><img class="img-thumbnail" data-image-preview-target="canvas" src="/geodatenservice/1054/thumbnail" /></a>
+</div>
+
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <p class="card-text">
+        <strong>
+          <a target="_blank" href="/geodatenservice/1054">1054 WFS Gemeindegrenzen 1:5000</a>
+        </strong>
+      </p>
+      <p class="card-text">Gemeindegrenzen in Übersichtsplangenauigkeit. Es stehen drei Datensätze zur Verfügung:
+
+Gemeinden: 
+Offizieller Verlauf der Gemeindegrenzen, d.h. die Grenze der Stadt Zürich verläuft durch den Zürichsee, die Grenzen der übrigen Zürichsee- und der Greifenseegemeinden verlaufen entlang der Seeufer.
+
+Gemeinde-, Bezirks- und Kantonsgrenzen: 
+Anhand dieser Linienversion können für kartografische Zwecke Gemeinde-, Bezirks- und Kantonsgrenzen sowie Grenzen auf Seeflächen unterschieden werden. 
+
+Gemeinden mit Berücksichtigung von Seen: 
+In dieser Variante sind Zürich-, Greifen-, Pfäffiker-, Chatzen- und Türlersee voll ausgespart.
+</p>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+        
+<div class="p-2 align-items-start" id="gesetzgebung">
+
+      <div class="card avoid-break">
+
+        <div class="card-header">
+          <h5>Gesetzgebung</h5>
+        </div>
+
+        <div class="card-body">
+
+          
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Gesetzklasse</div>
+      <div card="card-text">IV Kantonsrecht / -zuständigkeit</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Gesetzklasse</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">IV Kantonsrecht / -zuständigkeit</div>
+    </div>
+  </div>
+</div>
+
+
+          
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geobasisdaten</div>
+      <div card="card-text"><a target="_blank" href="https://geobasisdaten.ch/detail/818510">36-ZH - Kantonale Kartenwerke (Übersichtsplan, Orthofotos, Luftbilder, digitale Terrainmodelle)</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geobasisdaten</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text"><a target="_blank" href="https://geobasisdaten.ch/detail/818510">36-ZH - Kantonale Kartenwerke (Übersichtsplan, Orthofotos, Luftbilder, digitale Terrainmodelle)</a></div>
+    </div>
+  </div>
+</div>
+
+
+          
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Anhang</div>
+      <div card="card-text">Anhang 2</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Anhang</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Anhang 2</div>
+    </div>
+  </div>
+</div>
+
+
+          
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datenzugang</div>
+      <div card="card-text">öffentlich zugänglich (A)</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datenzugang</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">öffentlich zugänglich (A)</div>
+    </div>
+  </div>
+</div>
+
+
+          
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Publikationsdatum</div>
+      <div card="card-text">01.11.2012</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Publikationsdatum</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">01.11.2012</div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+
+      </div>
+
+</div>
+
+
+        
+<div class="p-2 align-items-start" id="rechtliche_grundlagen">
+
+  <div class="card">
+
+    <div class="card-header">
+      <h5>Rechtliche Grundlagen</h5>
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="col-sm-3 mb-3 mb-sm-0">
+              <div class="card mb-3 text-center avoid-break">
+
+                <div class="card-header">
+                  <h6>RefNr.: LS 704.1, § 17 Abs. 2, § 21 Abs. 1</h6>
+                </div>
+
+                <div class="card-body">
+                  <p><a target="_blank" href="http://www.zhlex.zh.ch/Erlass.html?Open&amp;Ordnr=704.1">Kantonales Geoinformationsgesetz</a></p>
+
+                  <p>kantonales Gesetz</p>
+
+                    <p>Erlassdatum: 01.11.2012</p>
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+        
+<div class="p-2 align-items-start" id="datenmodell">
+
+  <div class="card avoid-break">
+
+    <div class="card-header">
+      <h5>Datenmodell</h5>
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="col-sm-3 mb-3 mb-sm-0">
+              <div class="card mb-3 text-center">
+
+                <div class="card-header">
+                  <h6>Kantonale Kartenwerke (Übersichtsplan, Orthofotos, Luftbilder, digitale Terrainmodelle) (36-ZH.1)</h6>
+                </div>
+
+                <div class="card-body">
+                  <p>Kantonales Landschaftskartenwerk</p>
+
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+        
+<div class="p-2 align-items-start">
+
+  <div id="datengrundlage" class="card">
+
+    <div class="card-header">
+      <h5>Datengrundlage</h5>
+    </div>
+
+    <div class="card-body">
+
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datengrundlage</div>
+      <div card="card-text">Datengrundlage bilden die Grenzen der Amtlichen Vermessung. Gegenüber den AV-Daten erfolgen folgende Anpassungen: Kreisbögen sind aufgelöst; Kleinst-Überlappungen, die in der AV zulässig sind, werden eliminiert; Die Grenzen sind dort, wo ein Abgleich zwischen benachbarten Gemeinden notwendig ist, im cm-Bereich nicht identisch mit den Grundstücksgrenzen der Ebene Liegenschaften; der Verlauf entlang von Seeufern orientiert sich an den tatsächlichen Seeufern. Gemeindebegrenzung im Bereich von Seeufern (Zürich- und Greifensee): Die aus den Liegenschaften der amtlichen Vermessung (GIS-ZH Nr. 447) abgeleiteten Gemeindegrenzen (GIS-ZH Nr. 405) enden entlang der Eigentumsgrenzen teils in erheblichem Abstand vom eigentlichen Seeufer (an einigen Stellen auch wenig ausserhalb des Ufers). Ziel ist es, für Abfragen und GIS-Anwendungen mit Gemeindebezug alle Landflächen einer Gemeinde zuordnen zu können. Deshalb werden die Gewässerabgrenzungen der Bodenbedeckung der amtlichen Vermessung zur Begrenzung verwendet (GIS-ZH Nr. 401, stehende Gewässer und Schilfgürtel). Die Abgrenzung wird wie folgt vorgenommen: Reichen die Flächen der Liegenschaften nicht bis an das Ufer, wird die Gemeindegrenze anhand der AV-Grenze bis an die Uferbegrenzung gemäss Bodenbedeckung gezogen und durch letztere gegen die Seeflächen begrenzt. Reichen die Flächen der Liegenschaften ausnahmsweise über das Ufer hinaus, wird analog die Uferbegrenzung gemäss Bodenbedeckung verwendet.</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datengrundlage</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Datengrundlage bilden die Grenzen der Amtlichen Vermessung. Gegenüber den AV-Daten erfolgen folgende Anpassungen: Kreisbögen sind aufgelöst; Kleinst-Überlappungen, die in der AV zulässig sind, werden eliminiert; Die Grenzen sind dort, wo ein Abgleich zwischen benachbarten Gemeinden notwendig ist, im cm-Bereich nicht identisch mit den Grundstücksgrenzen der Ebene Liegenschaften; der Verlauf entlang von Seeufern orientiert sich an den tatsächlichen Seeufern. Gemeindebegrenzung im Bereich von Seeufern (Zürich- und Greifensee): Die aus den Liegenschaften der amtlichen Vermessung (GIS-ZH Nr. 447) abgeleiteten Gemeindegrenzen (GIS-ZH Nr. 405) enden entlang der Eigentumsgrenzen teils in erheblichem Abstand vom eigentlichen Seeufer (an einigen Stellen auch wenig ausserhalb des Ufers). Ziel ist es, für Abfragen und GIS-Anwendungen mit Gemeindebezug alle Landflächen einer Gemeinde zuordnen zu können. Deshalb werden die Gewässerabgrenzungen der Bodenbedeckung der amtlichen Vermessung zur Begrenzung verwendet (GIS-ZH Nr. 401, stehende Gewässer und Schilfgürtel). Die Abgrenzung wird wie folgt vorgenommen: Reichen die Flächen der Liegenschaften nicht bis an das Ufer, wird die Gemeindegrenze anhand der AV-Grenze bis an die Uferbegrenzung gemäss Bodenbedeckung gezogen und durch letztere gegen die Seeflächen begrenzt. Reichen die Flächen der Liegenschaften ausnahmsweise über das Ufer hinaus, wird analog die Uferbegrenzung gemäss Bodenbedeckung verwendet.</div>
+    </div>
+  </div>
+</div>
+
+
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Dokumentation (PDF)</div>
+      <div card="card-text"><a target="_blank" href="/geodatensatz/865/pdf">Gemeindegrenzänderungen_ZH_2026.pdf</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Dokumentation (PDF)</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text"><a target="_blank" href="/geodatensatz/865/pdf">Gemeindegrenzänderungen_ZH_2026.pdf</a></div>
+    </div>
+  </div>
+</div>
+
+
+        
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Bemerkungen</div>
+      <div card="card-text">Für Darstellungen im A4-Format stehen grafisch vereinfachte (generalisierte) Grenzverläufe zur Verfügung (GIS-ZH Nr. 96), ebenso für Karten im Format A1 (GIS-ZH Nr. 337). Ergänzend stehen die Stadtkreise und Quartiere von Zürich und Winterthur zur Verfügung (GIS-ZH Nr. 278). Dokumentation der Änderungen seit der letzten Nachführung unter "Dokumentation (PDF)". Die Bezeichnung "UP" in den Dateinamen ist historisch begründet und inzwischen bedeutungslos (Beibehaltung zur Vermeidung von unverhältnismässigem Anpassungsaufwand). &nbsp;</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Bemerkungen</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Für Darstellungen im A4-Format stehen grafisch vereinfachte (generalisierte) Grenzverläufe zur Verfügung (GIS-ZH Nr. 96), ebenso für Karten im Format A1 (GIS-ZH Nr. 337). Ergänzend stehen die Stadtkreise und Quartiere von Zürich und Winterthur zur Verfügung (GIS-ZH Nr. 278). Dokumentation der Änderungen seit der letzten Nachführung unter "Dokumentation (PDF)". Die Bezeichnung "UP" in den Dateinamen ist historisch begründet und inzwischen bedeutungslos (Beibehaltung zur Vermeidung von unverhältnismässigem Anpassungsaufwand). &nbsp;</div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+        
+
+        
+<div class="p-2 align-items-start">
+
+  <div id="elementen" class="card">
+
+    <div class="card-header">
+      <h5>Elemente</h5>
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+
+
+
+            <div>
+              <div id="element-95-1" class="card mb-3">
+
+                <div id="element-95-1-title" class="card-header text-center">
+                  <h6>
+                    95.1 - Gemeinden
+                  </h6>
+                </div>
+
+                <div class="card-body text-left">
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+      <div card="card-text">95.1</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">95.1</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Beschreibung</div>
+      <div card="card-text"><p>Offizieller Verlauf der Gemeindegrenzen, d.h. die Grenze der Stadt Z&uuml;rich verl&auml;uft durch den Z&uuml;richsee, die Grenzen der &uuml;brigen Z&uuml;richsee- und der Greifenseegemeinden verlaufen entlang der Seeufer. Weitere Seen sind nicht ausgespart.</p>
+<p>F&uuml;r die Harmonisierung der Datenlandschaft im Kanton ZH wurden die <a href="https://github.com/statistikZH/gebietsstammdaten_zh/blob/main/Variablen.md">Gebietsstammdaten ZH </a>hinzugef&uuml;gt.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text"><p>Offizieller Verlauf der Gemeindegrenzen, d.h. die Grenze der Stadt Z&uuml;rich verl&auml;uft durch den Z&uuml;richsee, die Grenzen der &uuml;brigen Z&uuml;richsee- und der Greifenseegemeinden verlaufen entlang der Seeufer. Weitere Seen sind nicht ausgespart.</p>
+<p>F&uuml;r die Harmonisierung der Datenlandschaft im Kanton ZH wurden die <a href="https://github.com/statistikZH/gebietsstammdaten_zh/blob/main/Variablen.md">Gebietsstammdaten ZH </a>hinzugef&uuml;gt.</p></div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geometrietyp</div>
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geometrietyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">PfadFilename</div>
+      <div card="card-text">rofa.arv_basis.up_gemeinden_f</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">PfadFilename</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">rofa.arv_basis.up_gemeinden_f</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datenbezugsart</div>
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datenbezugsart</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+
+                  
+<div class="p-2 align-items-start" id="attribute_95.1">
+
+  <div class="card">
+
+    <div class="card-header">
+      <h5>Attribute</h5>
+    </div>
+
+    <div class="card-body text-left">
+      <div class="row">
+        <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">area_round</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Double</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">area_round</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Double</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">m2</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">area_round</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Double</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">m2</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Fläche der Gemeinde</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">arps</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">arps</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">arps</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindenummer ARE Raumplanung</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">1: Gemeinde, 2: Exklave einer Gemeinde, 3: zu keiner Gemeinde gehörende Seeflächen (Greifen-, Zürichsee), 4: ausserkantonale Enklave (Kloster Fahr)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Art der Fläche</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">bezirksname</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">bezirksname</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">bezirksname</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Bezirksname (die Bezirksgrenzen verlaufen im Bereich des Zürichsees in der Seemitte, siehe Datensätze 95.2 und 95.6)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindenummer (BFS-Nummer)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindename (BFS-Name)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindenummer (BFS-Nummer). Attribut für die Hamonisierung mit Gebietsstammdaten ZH (gemeinde_code)  </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindename (BFS-Name). Attribut für Hamonisierung mit Gebietsstammdaten ZH (gemeinde_name) </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Code des Gebietstyps Gemeinde gemäss Gebietsstammdaten ZH </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Name des Gebietstyps Gemeinde gemäss Gebietsstammdaten ZH  </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div>
+              <div id="element-95-2" class="card mb-3">
+
+                <div id="element-95-2-title" class="card-header text-center">
+                  <h6>
+                    95.2 - Gemeindegrenzen
+                  </h6>
+                </div>
+
+                <div class="card-body text-left">
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+      <div card="card-text">95.2</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">95.2</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Beschreibung</div>
+      <div card="card-text"><p>Gemeindegrenzen in Linienform, mit denen sich Gemeinde-, Bezirks- und Kantonsgrenzen kartografisch differenziert darstellen lassen.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text"><p>Gemeindegrenzen in Linienform, mit denen sich Gemeinde-, Bezirks- und Kantonsgrenzen kartografisch differenziert darstellen lassen.</p></div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geometrietyp</div>
+      <div card="card-text">Linie</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geometrietyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Linie</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">PfadFilename</div>
+      <div card="card-text">rofa.arv_basis.up_gemeinden_l</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">PfadFilename</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">rofa.arv_basis.up_gemeinden_l</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datenbezugsart</div>
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datenbezugsart</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+
+                  
+<div class="p-2 align-items-start" id="attribute_95.2">
+
+  <div class="card">
+
+    <div class="card-header">
+      <h5>Attribute</h5>
+    </div>
+
+    <div class="card-body text-left">
+      <div class="row">
+        <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">1: Gemeindegrenze, 2: Gemeindegrenze auf Seefläche, 3: Gemeindegrenze und Seeufer, 10: Bezirksgrenze, 11: Bezirksgrenze auf Seefläche, 20: Kantonsgrenze, 21: Kantonsgrenze auf Seefläche, 30: Landesgrenze</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Art der Linie</div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div>
+              <div id="element-95-3" class="card mb-3">
+
+                <div id="element-95-3-title" class="card-header text-center">
+                  <h6>
+                    95.3 - Gemeinden mit Berücksichtigung von Seen
+                  </h6>
+                </div>
+
+                <div class="card-body text-left">
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+      <div card="card-text">95.3</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">95.3</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Beschreibung</div>
+      <div card="card-text"><p>In dieser Variante sind Z&uuml;rich-, Greifen-, Pf&auml;ffiker-, Katzen- und T&uuml;rlersee voll ausgespart.</p>
+<p>F&uuml;r die Harmonisierung der Datenlandschaft im Kanton ZH wurden die <a href="https://github.com/statistikZH/gebietsstammdaten_zh/blob/main/Variablen.md">Gebietsstammdaten ZH </a>hinzugef&uuml;gt.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text"><p>In dieser Variante sind Z&uuml;rich-, Greifen-, Pf&auml;ffiker-, Katzen- und T&uuml;rlersee voll ausgespart.</p>
+<p>F&uuml;r die Harmonisierung der Datenlandschaft im Kanton ZH wurden die <a href="https://github.com/statistikZH/gebietsstammdaten_zh/blob/main/Variablen.md">Gebietsstammdaten ZH </a>hinzugef&uuml;gt.</p></div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geometrietyp</div>
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geometrietyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">PfadFilename</div>
+      <div card="card-text">rofa.arv_basis.up_gemeinden_seen_f</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">PfadFilename</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">rofa.arv_basis.up_gemeinden_seen_f</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datenbezugsart</div>
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datenbezugsart</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+
+                  
+<div class="p-2 align-items-start" id="attribute_95.3">
+
+  <div class="card">
+
+    <div class="card-header">
+      <h5>Attribute</h5>
+    </div>
+
+    <div class="card-body text-left">
+      <div class="row">
+        <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">area_round</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Double</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">area_round</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Double</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">m2</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">area_round</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Double</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">m2</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Fläche der Gemeinde </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">arps</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">arps</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">arps</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindenummer ARE Raumplanung </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">art_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">0: Insel (Ufenau, Lützelau), 1: Gemeinde, 2: Exklave einer Gemeinde, 3: Seefläche, 4: ausserkantonale Enklave (Kloster Fahr)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">art_text</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Art der Fläche </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">bezirksname</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">bezirksname</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">bezirksname</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Bezirksname</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindenummer (BFS-Nummer).  </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindename (BFS-Name). </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindenummer (BFS-Nummer). Attribut für die Harmonisierung mit Gebietsstammdaten ZH (gemeinde_code)   </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindename (BFS-Name). Attribut für Hamonisierung mit Gebietsstammdaten ZH (gemeinde_name) </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Code des Gebietstyps Gemeinde gemäss Gebietsstammdaten ZH</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Name des Gebietstyps Gemeinde gemäss Gebietsstammdaten ZH </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div>
+              <div id="element-95-4" class="card mb-3">
+
+                <div id="element-95-4-title" class="card-header text-center">
+                  <h6>
+                    95.4 - Kanton
+                  </h6>
+                </div>
+
+                <div class="card-body text-left">
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+      <div card="card-text">95.4</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">95.4</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Beschreibung</div>
+      <div card="card-text"><p>Kantonspolygon sowie angrenzende Partien der Nachbarskantone. &Uuml;ber das Attribut KANTON oder ABKUERZUNG kann die Auswahl des Kantons Z&uuml;rich ("ABKUERZUNG = 'ZH'") oder eine Maskierung der Umgebung f&uuml;r Kartendarstellungen ("ABKUERZUNG &lt;&gt; 'ZH'").gesteuert werden.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text"><p>Kantonspolygon sowie angrenzende Partien der Nachbarskantone. &Uuml;ber das Attribut KANTON oder ABKUERZUNG kann die Auswahl des Kantons Z&uuml;rich ("ABKUERZUNG = 'ZH'") oder eine Maskierung der Umgebung f&uuml;r Kartendarstellungen ("ABKUERZUNG &lt;&gt; 'ZH'").gesteuert werden.</p></div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geometrietyp</div>
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geometrietyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">PfadFilename</div>
+      <div card="card-text">rofa.arv_basis.up_kanton_f</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">PfadFilename</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">rofa.arv_basis.up_kanton_f</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datenbezugsart</div>
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datenbezugsart</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+
+                  
+<div class="p-2 align-items-start" id="attribute_95.4">
+
+  <div class="card">
+
+    <div class="card-header">
+      <h5>Attribute</h5>
+    </div>
+
+    <div class="card-body text-left">
+      <div class="row">
+        <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">kanton</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">kanton</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">kanton</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Name des Kantons</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">abkuerzung</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">abkuerzung</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">abkuerzung</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Kantonskürzel</div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div>
+              <div id="element-95-5" class="card mb-3">
+
+                <div id="element-95-5-title" class="card-header text-center">
+                  <h6>
+                    95.5 - Gemeinden ohne Seen
+                  </h6>
+                </div>
+
+                <div class="card-body text-left">
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+      <div card="card-text">95.5</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">95.5</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Beschreibung</div>
+      <div card="card-text"><p>F&uuml;r Fragestellungen, bei denen die Zugeh&ouml;rigkeit von Objekten auf Seefl&auml;chen zu den Gemeinden identifiziert werden muss, steht diese spezielle Anwender-Version der Gemeindedaten zur Verf&uuml;gung. Die Grenzen werden hier immer bis in die Seemitte fortgef&uuml;hrt. Objekte, die in Seen liegen, sind damit immer eindeutig einer Gemeinde zugewiesen.</p>
+<p>F&uuml;r die Harmonisierung der Datenlandschaft im Kanton ZH wurden die <a href="https://github.com/statistikZH/gebietsstammdaten_zh/blob/main/Variablen.md">Gebietsstammdaten ZH </a>hinzugef&uuml;gt.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text"><p>F&uuml;r Fragestellungen, bei denen die Zugeh&ouml;rigkeit von Objekten auf Seefl&auml;chen zu den Gemeinden identifiziert werden muss, steht diese spezielle Anwender-Version der Gemeindedaten zur Verf&uuml;gung. Die Grenzen werden hier immer bis in die Seemitte fortgef&uuml;hrt. Objekte, die in Seen liegen, sind damit immer eindeutig einer Gemeinde zugewiesen.</p>
+<p>F&uuml;r die Harmonisierung der Datenlandschaft im Kanton ZH wurden die <a href="https://github.com/statistikZH/gebietsstammdaten_zh/blob/main/Variablen.md">Gebietsstammdaten ZH </a>hinzugef&uuml;gt.</p></div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geometrietyp</div>
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geometrietyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">PfadFilename</div>
+      <div card="card-text">rofa.arv_basis.up_gemeinden_ohne_seen_f</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">PfadFilename</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">rofa.arv_basis.up_gemeinden_ohne_seen_f</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datenbezugsart</div>
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datenbezugsart</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+
+                  
+<div class="p-2 align-items-start" id="attribute_95.5">
+
+  <div class="card">
+
+    <div class="card-header">
+      <h5>Attribute</h5>
+    </div>
+
+    <div class="card-body text-left">
+      <div class="row">
+        <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">bfs</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindenummer (BFS-Nummer)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gemeindename</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindename (BFS-Name)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindenummer (BFS-Nummer). Attribut für die Harmonisierung mit Gebietsstammdaten ZH (gemeinde_code)) </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Gemeindename (BFS-Name). Attribut für Hamonisierung mit Gebietsstammdaten ZH (gemeinde_name)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Code des Gebietstyps Gemeinde gemäss Gebietsstammdaten ZH </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Name des Gebietstyps Gemeinde gemäss Gebietsstammdaten ZH </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div>
+              <div id="element-95-6" class="card mb-3">
+
+                <div id="element-95-6-title" class="card-header text-center">
+                  <h6>
+                    95.6 - Bezirke
+                  </h6>
+                </div>
+
+                <div class="card-body text-left">
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+      <div card="card-text">95.6</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">GIS-ZH Nr.</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">95.6</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Beschreibung</div>
+      <div card="card-text"><p>Bezirke des Kantons Z&uuml;rich. (W&auml;hrend die Gemeindegrenzen im Bereich des Z&uuml;richsees mit Ausnahme der Stadt Z&uuml;rich den Seeufern folgen, verlaufen die Bezirksgrenzen offiziell in der Seemitte.)</p>
+<p>F&uuml;r die Harmonisierung der Datenlandschaft im Kanton ZH wurden die <a href="https://github.com/statistikZH/gebietsstammdaten_zh/blob/main/Variablen.md">Gebietsstammdaten ZH </a>hinzugef&uuml;gt.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text"><p>Bezirke des Kantons Z&uuml;rich. (W&auml;hrend die Gemeindegrenzen im Bereich des Z&uuml;richsees mit Ausnahme der Stadt Z&uuml;rich den Seeufern folgen, verlaufen die Bezirksgrenzen offiziell in der Seemitte.)</p>
+<p>F&uuml;r die Harmonisierung der Datenlandschaft im Kanton ZH wurden die <a href="https://github.com/statistikZH/gebietsstammdaten_zh/blob/main/Variablen.md">Gebietsstammdaten ZH </a>hinzugef&uuml;gt.</p></div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Geometrietyp</div>
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Geometrietyp</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Fläche</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">PfadFilename</div>
+      <div card="card-text">rofa.arv_basis.up_bezirke_f</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">PfadFilename</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">rofa.arv_basis.up_bezirke_f</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 border-bottom">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Metadaten Sichtbarkeit</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">Internet</div>
+    </div>
+  </div>
+</div>
+
+
+                    
+<div class="d-block d-md-none avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="flex-grow-1">
+      <div class="fw-bold">Datenbezugsart</div>
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block avoid-break">
+  <div class="row align-items-start py-2 ">
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Datenbezugsart</div>
+    </div>
+
+    <div class="col-6 flex-grow-1">
+      <div card="card-text">OGD - freie Nutzung und Weitergabe</div>
+    </div>
+  </div>
+</div>
+
+
+                  
+<div class="p-2 align-items-start" id="attribute_95.6">
+
+  <div class="card">
+
+    <div class="card-header">
+      <h5>Attribute</h5>
+    </div>
+
+    <div class="card-body text-left">
+      <div class="row">
+        <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Typ</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="fw-bold">Einheit</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="fw-bold">Beschreibung</div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">bezirk</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">bezirk</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">bezirk</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Bezirksname (BFS-Name)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebiet_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Bezirksnummer (BFS-Nummer). Attribut für die Harmonisierung mit Gebietsstammdaten ZH (bezirk_code) </div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebiet_name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Bezirksname (BFS-Name). Attribut für die Harmonisierung mit Gebietsstammdaten ZH (bezirk_name)</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebietstyp_code</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">Short Integer</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Code des Gebietstyps Bezirk gemäss Gebietsstammdaten ZH</div>
+    </div>
+  </div>
+</div>
+
+            <div class="d-block d-md-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-5 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">String</div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-md-block d-lg-none">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-4 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-3 ms-2">
+      <div class="card-text"></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row align-items-top py-2 border-bottom">
+    <div class="col-2 ms-2">
+      <div class="card-text">gebietstyp_name</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text">String</div>
+    </div>
+    <div class="col-2 ms-2">
+      <div class="card-text"></div>
+    </div>
+    <div class="col-5 ms-2">
+      <div class="card-text">Name des Gebietstyps Bezirk gemäss Gebietsstammdaten ZH </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+</div>
+      </div>
+
+      <div class="p-5 w-25 d-none d-xl-block"></div>
+    </div>
+  </body>
+
+  <footer>
+    <!-- Footer Start -->
+<div class="container-fluid header mt-5 py-5 px-sm-3 px-md-5">
+    <div class="m-0 text-center">
+        <div class="font-weight-bold">&copy; GeoLion 8.0</div>
+    </div>
+</div>
+<!-- Footer End -->
+
+  </footer>
+
+</html>

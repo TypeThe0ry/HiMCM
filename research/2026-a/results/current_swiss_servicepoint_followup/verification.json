@@ -1,0 +1,26 @@
+{
+  "status": "pass bounded semantic and sample check",
+  "source_sha256": {
+    "data/current_swiss_servicepoint_followup/catalogue.json": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "data/current_swiss_servicepoint_followup/catalogue.json.receipt.json": "cdd0c2eb34810dff8db220f32c57fc9a2ec065757770aa2e67f8752c94fe8eb9",
+    "data/current_swiss_servicepoint_followup/cookbook.html": "f403274dd6c1f1403c500a818a3916810ecc012f35f1df70f93fa5c33c0ddb4c",
+    "data/current_swiss_servicepoint_followup/cookbook.html.receipt.json": "a1761ccd47369cf6d91ec711bd4349ce380082596c4ae829f8087161648dee43",
+    "data/current_swiss_servicepoint_followup/fot_stop_points.json": "8311cb1e18ad6fe94e34db4ea53cc0b1ab7f56a452d51fe66294f4836bad3127",
+    "data/current_swiss_servicepoint_followup/fot_stop_points.json.receipt.json": "6c59ff06230671178cbbdcfbd408837783343a79513a0749d0deaed9029fd2e6",
+    "data/current_zurich_transport/README.md": "e3f565275a9ff1733c1eb7e2a094360eca4119a2ab463e4c5837d9e8bdd20d35",
+    "data/current_zurich_transport/provenance.json": "eade051b61f90fc5b3446d77fd07a8504ee9fb90109b90c2ef37117a217730b2",
+    "data/current_zurich_transport/kanton_zh_wfs.geojson": "9827610e3f68b8ae54b726673ff5b8b77dbf792e235b4dda4cafa7dbb1e14ef3",
+    "data/current_swiss_servicepoint_followup/check.py": "8b087a00cd677c88cd12121b733b48ae33ba9d15bf12c2641ebf8d89c27bbbf6",
+    "data/current_swiss_servicepoint_followup/fot_description.html": "12eb16e70a9b0b870eb59b9867917856af69d194ec2569879b8cb559222de2f4",
+    "data/current_swiss_servicepoint_followup/fot_description.html.receipt.json": "9a1183c9e79c7f03d1c23ddc6e98fc87c05fc76d0b6b84e79306c905fba67535"
+  },
+  "checks": {
+    "receipts_match": true,
+    "cookbook_terms_present": true,
+    "fot_sample_rows": 5,
+    "old_wfs_receipt_matches": true
+  },
+  "admitted_increase": 0,
+  "admitted_records": 0,
+  "interpretation": "bounded semantic and sample check; no city census or acceptance decision"
+}

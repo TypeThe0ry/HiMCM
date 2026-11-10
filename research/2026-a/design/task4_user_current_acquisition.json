@@ -920,5 +920,27 @@
     "fully_certified_measurements": 0,
     "primary_model": "V204 unchanged",
     "scope": "Current source-classification overlay; one Zurich HE record reviewed but unresolved. Original numeric values and V204 risk fields/order unchanged; earlier ledger generations remain frozen."
+  },
+  "zurich_transit_geography_and_identifier_followup": {
+    "results": "results/current_zurich_transit_boundary_followup",
+    "data": "data/current_zurich_transit_boundary_followup",
+    "primary_model": "V204 unchanged",
+    "wfs_records_inside_published_municipal_polygon": 478,
+    "inside_with_listed_lines": 460,
+    "attribute_geometry_mismatches": 3,
+    "national_municipal_query_records": 579,
+    "exact_identifier_matches_among_478": 474,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Municipal geometry, ordered query coverage and exact DiDok-string reconciliation; not commercial/physical stop grouping. Existing446 and population retained. Old479 name filter is not a city census; national579 includes operating/freight-capable records. FOT list not used for routine polling.",
+    "national_semantics_verification": "results/current_swiss_servicepoint_followup/verification.json",
+    "national_semantics_verification_sha256": "605b28dbd47b7b0807e7719e5467e16f4eb4660406ff34388f5ff624178ce121",
+    "inventory_verification": "results/current_zurich_wfs_inventory/verification.json",
+    "inventory_verification_sha256": "3e72a65391931b42fd0fea01a84c00c397f05b4572bc296401e84b8a159c7e23",
+    "verification": "results/current_zurich_transit_boundary_followup/verification.json",
+    "verification_sha256": "5955c34709e7ffaaa9ef385e326994487481ea56ad4e098ce2cac9ad6f27e8f5",
+    "peer_review": "results/current_zurich_transit_boundary_followup/peer_review.json",
+    "peer_review_sha256": "64fc3642b6d3d68534376b2964a1df2c75f1ce52501a8e0ba7d4658b7cb7a7b5"
   }
 }
