@@ -2,9 +2,9 @@
   "status": "pass",
   "version": "current",
   "primary_model": "V204",
-  "pdf_sha256": "2faf685baaf4c02e71fcb26e730ad34abee5793946922c7b898853b8abf9335f",
+  "pdf_sha256": "705c2cad07c6f1dcecddc5a8d5e33ad9ad85b789773611450a70f21b07c065bc",
   "main_entry": "main.tex",
-  "main_source_sha256": "a383be06db1a813f6257f0eab3048fb5f3862eee6e5084a6025ef1e32b07e123",
+  "main_source_sha256": "c1d1a9c2f570c8f716ddc0966107c146a3a3fab525a5f54d1e04588018f82dac",
   "total_pages": 27,
   "main_and_references_pages": 25,
   "underfull_counts": [
@@ -13,7 +13,7 @@
   ],
   "reference_keys": 63,
   "current_files_sha256": {
-    "main.tex": "a383be06db1a813f6257f0eab3048fb5f3862eee6e5084a6025ef1e32b07e123",
+    "main.tex": "c1d1a9c2f570c8f716ddc0966107c146a3a3fab525a5f54d1e04588018f82dac",
     "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
     "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
     "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
@@ -24,13 +24,13 @@
   "source_mirror_files": 7,
   "single_current_tex_entry": true,
   "independent_audit_sha256": "c965caa78f4b98c7757456450bbe7d977d82afd20af1f8e5ac7be9d317ddfa9f",
-  "delivery_audit_sha256": "200d055e3b2db7070db313784ddfead40ad46cd99a2fd0db071f5b6d8281e797",
-  "visual_review_sha256": "c965caa78f4b98c7757456450bbe7d977d82afd20af1f8e5ac7be9d317ddfa9f",
+  "delivery_audit_sha256": "1292ab2d38cea1eddb05dcfdeb378f058ddd0f585cd3ccd9001d585dd88873ad",
+  "visual_review_sha256": "629c55ccdd58e78771a0357611c229ce1e7bc0b19eef9a538f875d821c2d7187",
   "native_letter_headers_empty_footers_checked": true,
   "science_bindings_verified": 658,
   "server_compile_verified": false,
   "submission_ready": false,
-  "scope": "V204 Vienna scheduled-supply refinement; 27 pages/63 references. Shared class, bibliography, auxiliary figures and approved definition preserved. Full clean-HEAD reproduction is recorded separately.",
+  "scope": "V204 science and first25 rendered pages unchanged from e325aed. Owned AI appendix adds a third authenticated root-log window; 27pages63references, private exports outside Git and incomplete team disclosure retained. Clean-HEAD reproduction recorded separately.",
   "transport_definition_alternative_disclosed": true,
   "oslo_626_source_defined_bus_lower_admitted": true,
   "default_recommendations": {
@@ -284,5 +284,15 @@
   },
   "vienna_378_scheduled_supply_lower_admitted": true,
   "v204_integration_verification": "results/task4_v204_paper_integration/verification.json",
-  "v204_integration_verification_sha256": "712a75b97bc17c4c771b15cca72342ec0eb2d8829b7605b3a8f5f2d8ac7de44e"
+  "v204_integration_verification_sha256": "712a75b97bc17c4c771b15cca72342ec0eb2d8829b7605b3a8f5f2d8ac7de44e",
+  "latest_ai_inputs_sha256": {
+    "data/current_ai_continuation2/session_manifest.json": "bc677107e3176d5d3e83ca47f53e8d03e941248bfc7be616b496d173804f32cb",
+    "data/current_ai_continuation2/coverage_summary.json": "90376f6f9e34fa4d6aa3deade7838bb2f02ecb8d9420efa15c129c54010fb8ba",
+    "data/current_ai_continuation2/README.md": "1e697be98ef8c5247cd5f072d992601f53e7188cd49796624d69dfdfc4be2b09",
+    "results/current_ai_continuation2/verification.json": "e084575439a1469dfdef17acc9128066fd77e8bc263e43177f9951611966b6f5",
+    "results/current_ai_continuation2/negative_controls.json": "7fcd3300ed3d4403b20fbb9048b5c8d645a091ebd68a84cb353b20a158d4a9ff",
+    "scripts/test_current_ai_continuation2_integrity.py": "1fc4db6b8260ac99d6f7a6200469be4cbe38838e073a694bc72ba88f624f28e5"
+  },
+  "latest_ai_paper_verification": "results/current_ai_continuation2_paper/verification.json",
+  "latest_ai_paper_verification_sha256": "ec385dfd6d1d09125c53c52222e9fb537d7eb71cd7b6130ce13ee9fe64e4ccc1"
 }

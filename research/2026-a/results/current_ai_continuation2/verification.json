@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "data/current_ai_continuation2/session_manifest.json": "bc677107e3176d5d3e83ca47f53e8d03e941248bfc7be616b496d173804f32cb",
+    "data/current_ai_provenance/session_manifest.json": "52116f0444cbe24d246e7d61b79b70c3481a3c44352816535651c1b6832f9f42",
+    "scripts/task4_current_ai_continuation2.py": "dac1e2e4a811360f3e25ea9c6bce11db4819e0b36dfd806eb4d39dfe0b0b203a",
+    "scripts/audit_current_ai_continuation2.py": "8e40cde6a580d38c5f2060d9a399558c871d3b642163feec85402655c8fac60a",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3"
+  },
+  "source_prefix_sha256": "a054fb6e8745240c8ef3c7b76264f3a197bb18a2501617b47335e38f8814cf12",
+  "predecessor_source_prefix_sha256": "93fa455c00884dbf60969c2ac2ee6ca93f6c12845e49b8b1667c27563bc87cc4",
+  "delta_lines": 12553,
+  "contexts": 51,
+  "selected_messages": 239,
+  "assistant_calls": 1367,
+  "recorded_root_model_counts": {
+    "gpt-6.1-sol": 51
+  },
+  "selected_visible_counts": {
+    "assistant:commentary": 191,
+    "assistant:final_answer": 45,
+    "user:None": 3
+  },
+  "requested_spawn_model_labels": {
+    "gpt-6.1-terra": 49,
+    "gpt-6-luna": 21
+  },
+  "private_exports_checked": true,
+  "private_export_counts": {
+    "visible_records.jsonl": 239,
+    "assistant_tool_arguments.jsonl": 1367
+  },
+  "science_bindings_checked": 658,
+  "paper_dependencies_each_copy": 7,
+  "scope": "Fixed third window of one root session. Recorded model identifiers and requested agent labels do not attest serving builds. Requests do not prove successful execution; nested calls are not counted. No subagent sessions or complete team history. Selected private inputs are unredacted; record-type exclusion does not guarantee content redaction.",
+  "paper_baseline_checked": "e325aed443f3426463801ebe08d52ce342adbfb3",
+  "pre_ai_body_matches_requested_baseline": true,
+  "paper_resources_checked": 6
+}

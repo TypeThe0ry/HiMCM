@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "data/task4_v178_ai_provenance/session_manifest.json": "b74af51144b3c3e1a870a4b0743995fa100a94c1ed7b26289dc65b60fbcf8146",
+    "data/current_ai_provenance/session_manifest.json": "52116f0444cbe24d246e7d61b79b70c3481a3c44352816535651c1b6832f9f42",
+    "data/current_ai_continuation2/session_manifest.json": "bc677107e3176d5d3e83ca47f53e8d03e941248bfc7be616b496d173804f32cb",
+    "results/current_ai_continuation2/verification.json": "e084575439a1469dfdef17acc9128066fd77e8bc263e43177f9951611966b6f5",
+    "scripts/task4_current_ai_continuation2.py": "dac1e2e4a811360f3e25ea9c6bce11db4819e0b36dfd806eb4d39dfe0b0b203a",
+    "scripts/audit_current_ai_continuation2.py": "8e40cde6a580d38c5f2060d9a399558c871d3b642163feec85402655c8fac60a"
+  },
+  "baseline_commit": "e325aed443f3426463801ebe08d52ce342adbfb3",
+  "pre_ai_body_byte_equal": true,
+  "baseline_resource_count_byte_equal": 6,
+  "paper_main_sha256": "c1d1a9c2f570c8f716ddc0966107c146a3a3fab525a5f54d1e04588018f82dac",
+  "candidate_pdf_sha256": "705c2cad07c6f1dcecddc5a8d5e33ad9ad85b789773611450a70f21b07c065bc",
+  "total_pages": 27,
+  "main_and_reference_pages": 25,
+  "ai_report_pages": [
+    26,
+    27
+  ],
+  "reference_count": 63,
+  "first_25_pages_extracted_text_matches_prior_proof": true,
+  "rendered_ai_pages_visually_reviewed": true,
+  "visual_review": "Pages 26 and 27 legible; no observed clipping or overlap; headers and page numbering present.",
+  "root_context_counts": [
+    74,
+    42,
+    51
+  ],
+  "visible_record_counts": [
+    326,
+    197,
+    239
+  ],
+  "tool_input_counts": [
+    1865,
+    1372,
+    1367
+  ],
+  "continuation_spawn_requests": 148,
+  "continuation_requested_labels": {
+    "gpt-6.1-terra": 77,
+    "gpt-6-luna": 28,
+    "omitted_or_null": 43
+  },
+  "visible_total": 762,
+  "tool_input_total": 4604,
+  "third_cutoff_utc": "2026-11-10T20:32:42.716Z",
+  "scope": "Independent review of candidate PDF and AI-only source diff against specified commit, with bounded metadata inventories. Labels are requests or recorded identifiers, not serving attestations. Counts do not establish successful nested calls; history excludes other sessions, subagents and teammates. Fingerprints do not guarantee anonymity. Online compilation and final team readiness are not established."
+}

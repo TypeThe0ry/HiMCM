@@ -1021,13 +1021,12 @@ receipts. The complete team AI history remains to be reconciled with actual
 saved conversations and other tool records before submission.
 
 \subsection*{Known tool and scope}
-\textbf{OpenAI Codex}, used 8--10 November 2026. The task log records Codex
-Desktop client version \texttt{0.166.0-alpha.5.1} and model identifier
-\texttt{gpt-6.1-sol} in all 74 saved root turn contexts within the inspected prefix.
-The continuation records the same identifier in 42 further root contexts. Of 78
-subagent spawn requests, 28 specify \texttt{gpt-6.1-terra}, seven specify
-\texttt{gpt-6-luna}, and 43 omit a model or use null. These requested labels
-do not attest serving versions or establish the model of every assistant. The assistant supported official-source
+\textbf{OpenAI Codex}, used 8--11 November 2026 (Singapore time). The session
+header records Desktop version \texttt{0.166.0-alpha.5.1}; three inspected windows
+record \texttt{gpt-6.1-sol} in 74, 42 and 51 root contexts. The two continuation
+windows record 148 subagent spawn requests: 77 specify \texttt{gpt-6.1-terra},
+28 specify \texttt{gpt-6-luna}, and 43 omit a model or use null. Recorded identifiers
+and requested labels do not attest serving versions or every assistant's model. The assistant supported official-source
 search and extraction, data-scope checks, Python calculations and audits,
 LaTeX drafting, and wording revisions. Concurrent assistant tasks prepared
 bounded evidence checks, a controlled model diagnostic and the news-article
@@ -1053,24 +1052,26 @@ A private export retains 326 selected visible text records: six selected
 genuine requests, 259 progress messages and 61 complete final responses.
 The original 125-record selection and its private byte prefix are preserved.
 
-A second private export retains 1,865 plaintext assistant tool-call inputs:
-1,749 custom-call input strings and 116 function-call argument strings.
-These preserve generated code and LaTeX where present in the calls, extending
-the evidence beyond visible messages. Recorded inputs do not establish that
-each invocation succeeded or that every nested tool ran.
+The original tool-input export retains 1,865 plaintext inputs: 1,749 custom-call
+strings and 116 function-call argument strings, including generated code and
+LaTeX where present. Recorded inputs do not prove successful execution.
 
 A continuation of the same root log ends at 07:26:15.500 UTC on 10 November
-2026. It contains 197 selected visible records: five genuine user requests,
-157 progress messages and 35 final responses; 1,372 top-level plaintext
-assistant tool-call inputs are also retained. This count excludes nested
-executions and subagent sessions; later work is outside the cutoff.
+2026. It retains 197 selected visible records and 1,372 top-level plaintext
+assistant tool-call inputs. A third window ends at 20:32:42.716 UTC that day
+(04:32 on 11 November in Singapore), adding 239 visible records: three requests
+or replies, 191 progress messages and 45 final responses; it also retains 1,367
+tool-call inputs. Across the three windows, totals are 762 selected visible
+records and 4,604 inputs. Nested executions, subagent sessions and later work
+are outside these selections.
 
-Both windows exclude source-record types for reasoning, system and developer
-messages and tool results, as well as attachments, subagent sessions, other
-chats and team members. Selected tool inputs are unredacted and may contain
-copied content; excluding record types is not content redaction. The original log remains outside Git. Selected exports use directory mode 700
-and file mode 600 and are not submission transcripts. Public inventories contain metadata
-and hashes, not reconstructed quotations.
+All three windows exclude reasoning, system/developer records, tool results,
+attachments, subagent sessions, other chats and team members. The original log
+and selected exports remain outside Git (directory mode 700, file mode 600);
+these selections are not submission transcripts. Tool inputs remain unredacted
+and may contain copied content. Public inventories retain metadata and hashes;
+older selectors contain request prefixes, while the latest uses fingerprints.
+Record exclusion does not redact content, and fingerprints do not guarantee anonymity.
 
 \subsection*{Verification associated with this draft}
 The research calculations preserve the original city CSV and the V204 primary
@@ -1083,16 +1084,10 @@ properties; they do not replace the team's responsibility to review factual
 claims, original supplied data and final authorship.
 
 \subsection*{Records required to finalize this report}
-The final report must identify every AI tool actually used, its available
-model or version, date and purpose, and associate relevant use with the text
-and references. Actual saved query and response records should be inserted
-according to the applicable COMAP policy, including its stated exceptions.
-Other team members' tools, translation use and earlier conversations remain
-to be confirmed from their records.
-
-The current in-text disclosure and references identify Codex and Exa
-assistance. Submission readiness also requires a verified Team Control Number
-in place of the review header and confirmation that this report accounts for
-the team's actual use.
+Finalization requires the team's actual AI tools, available models or versions,
+dates and purposes, with associated text and references, and saved query/response
+records according to the applicable COMAP policy and its exceptions. Other members'
+tools, translation use and earlier conversations remain unconfirmed. The registered
+Team Control Number and confirmation of complete team-use coverage are also required.
 
 \end{document}

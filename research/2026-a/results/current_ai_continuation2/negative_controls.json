@@ -1,0 +1,20 @@
+{
+  "status": "pass semantic negative controls",
+  "negative_controls": {
+    "public_body": {
+      "rejected": true,
+      "failure": "inventory schema"
+    },
+    "model_count": {
+      "rejected": true,
+      "failure": "aggregate counts"
+    }
+  },
+  "source_sha256": {
+    "scripts/test_current_ai_continuation2_integrity.py": "1fc4db6b8260ac99d6f7a6200469be4cbe38838e073a694bc72ba88f624f28e5",
+    "scripts/audit_current_ai_continuation2.py": "8e40cde6a580d38c5f2060d9a399558c871d3b642163feec85402655c8fac60a",
+    "data/current_ai_continuation2/session_manifest.json": "bc677107e3176d5d3e83ca47f53e8d03e941248bfc7be616b496d173804f32cb"
+  },
+  "private_text_published": false,
+  "scope": "Scratch metadata only. Checks schema rejection of a synthetic message body and source-derived rejection of an altered model total; fixed real manifest and private exports are not modified."
+}

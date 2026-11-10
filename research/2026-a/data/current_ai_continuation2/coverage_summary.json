@@ -1,0 +1,59 @@
+{
+  "status": "pass window-chain aggregation",
+  "windows": [
+    {
+      "manifest": "data/task4_v178_ai_provenance/session_manifest.json",
+      "start_byte": 0,
+      "end_byte": 266948392,
+      "source_prefix_sha256": "a698a0b68bed60f39328a5572cce9fc07305bafb21aa32495747f0bd983c3f30",
+      "root_contexts": 74,
+      "selected_visible_records": 326,
+      "top_level_call_inputs": 1865
+    },
+    {
+      "manifest": "data/current_ai_provenance/session_manifest.json",
+      "start_byte": 266948392,
+      "end_byte": 380482614,
+      "source_prefix_sha256": "93fa455c00884dbf60969c2ac2ee6ca93f6c12845e49b8b1667c27563bc87cc4",
+      "root_contexts": 42,
+      "selected_visible_records": 197,
+      "top_level_call_inputs": 1372
+    },
+    {
+      "manifest": "data/current_ai_continuation2/session_manifest.json",
+      "start_byte": 380482614,
+      "end_byte": 431293385,
+      "source_prefix_sha256": "a054fb6e8745240c8ef3c7b76264f3a197bb18a2501617b47335e38f8814cf12",
+      "root_contexts": 51,
+      "selected_visible_records": 239,
+      "top_level_call_inputs": 1367
+    }
+  ],
+  "root_contexts": 167,
+  "selected_visible_records": 762,
+  "top_level_call_inputs": 4604,
+  "recorded_root_model_identifiers": {
+    "gpt-6.1-sol": 167
+  },
+  "selected_visible_counts": {
+    "user:None": 14,
+    "assistant:commentary": 607,
+    "assistant:final_answer": 141
+  },
+  "spawn_request_labels_in_two_continuations": {
+    "(omitted/null)": 43,
+    "gpt-6.1-terra": 77,
+    "gpt-6-luna": 28
+  },
+  "initial_window_spawn_labels_not_counted": true,
+  "latest_cutoff_utc": "2026-11-10T20:32:42.716Z",
+  "source_sha256": {
+    "data/task4_v178_ai_provenance/session_manifest.json": "b74af51144b3c3e1a870a4b0743995fa100a94c1ed7b26289dc65b60fbcf8146",
+    "data/current_ai_provenance/session_manifest.json": "52116f0444cbe24d246e7d61b79b70c3481a3c44352816535651c1b6832f9f42",
+    "data/current_ai_continuation2/session_manifest.json": "bc677107e3176d5d3e83ca47f53e8d03e941248bfc7be616b496d173804f32cb",
+    "scripts/task4_current_ai_coverage_summary.py": "6d02be1a877f0ab09b026d88e56d9fd64ca19947f82159fa49a78d690c7e5675"
+  },
+  "complete_team_ai_history": false,
+  "submission_ready": false,
+  "scope": "Counts selected record types across three nonoverlapping byte windows; no full transcript, nested execution, serving-version, child-session or complete-team claim. Earlier public selectors contain request prefixes; new selector uses fingerprints. Exact selected record exports stay private, not a content-anonymization claim."
+}

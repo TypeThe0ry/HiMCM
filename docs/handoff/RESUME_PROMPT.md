@@ -55,6 +55,8 @@ PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python resea
 
 ## 最近研究增量与下一步
 
+- [第三段我方AI记录](../../research/2026-a/data/current_ai_continuation2/README.md)：固定截止10Nov20:32:42.716UTC（11Nov04:32SG），新增51根上下文、239选中可见记录、1,367顶层输入；三段累计167／762／4,604。仅新元数据和指纹／哈希公开，精确导出私存；旧选择器前缀不抹去、不声称匿名化。自有AI报告已同步这些范围，正文前25页及六资源保持，27页／63引用和12待办维持。最新干净论文提交复现见`results/current_ai_continuation2_paper/reproduction/report.json`；不是完整团队或子agent历史。
+
 - [Zurich交通地理和标识核对](../../research/2026-a/data/current_zurich_transit_boundary_followup/README.md)：官方市镇261多边形下旧WFS为478条内含460条有线路，名称筛选存在3条几何不一致；国家同市镇有序六页579条、旧市界内474条完整DiDok编号对应。独立复核通过，商业／物理站区去重与446单位可比仍未建立，0准入／0实际收窄。不要再把cname当市界证据、把unique/parent当商业站合并，也不要定时轮询供应方定位为手工查询的FOT列表。
 
 - [V204 成组信息撤回](../../research/2026-a/results/current_v204_source_block_stress/README.md)：成本／住房32点、宽带16点、PM16点的八子集完成独立标量和三项重算哈希后的负控。固定单撤成本或PM转Zurich，等权单撤宽带转Oslo、再联合撤回其他组转回Zurich；不是共同误差模型或现实失效概率。256城市×权重案例、1,280区间和658科学文件及两份论文依赖核对通过，主与稿件保持。
