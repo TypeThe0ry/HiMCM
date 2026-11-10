@@ -1,0 +1,87 @@
+{
+  "status": "pass reduced-endpoint certificate audit",
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 77,
+  "withdrawal_evidence_entries_checked": 10,
+  "paper_dependencies_each_copy": 7,
+  "current_PDF_unchanged": true,
+  "edition_entries_checked": 24,
+  "thresholds": 51,
+  "budget_cases": 7,
+  "successful_mass_LPs": 357,
+  "new_witness_tail_LPs": 7,
+  "maximum_endpoint_objective_difference": 4.440892098500626e-16,
+  "maximum_mass_equality_residual": 0.0,
+  "maximum_bound_violation": 0.0,
+  "maximum_new_witness_error": 8.326672684688674e-17,
+  "comparisons": [
+    {
+      "case": 0,
+      "delta": 0.0,
+      "LP_minimum": 0.22668552699248704,
+      "difference_from_frozen": 5.551115123125783e-17
+    },
+    {
+      "case": 1,
+      "delta": 0.01,
+      "LP_minimum": 0.2205831794105901,
+      "difference_from_frozen": 2.7755575615628914e-17
+    },
+    {
+      "case": 2,
+      "delta": 0.05,
+      "LP_minimum": 0.20013424491964987,
+      "difference_from_frozen": 8.326672684688674e-17
+    },
+    {
+      "case": 3,
+      "delta": 0.1,
+      "LP_minimum": 0.1771899777302203,
+      "difference_from_frozen": 2.7755575615628914e-17
+    },
+    {
+      "case": 4,
+      "delta": 0.2,
+      "LP_minimum": 0.1290908184496349,
+      "difference_from_frozen": 0.0
+    },
+    {
+      "case": 5,
+      "delta": 0.5,
+      "LP_minimum": 0.037645435045513265,
+      "difference_from_frozen": -6.938893903907228e-18
+    },
+    {
+      "case": 6,
+      "delta": 0.7842464246424643,
+      "LP_minimum": 0.0,
+      "difference_from_frozen": 0.0
+    }
+  ],
+  "output_files_bytewise_reproduced": 3,
+  "proof_scope": "Fixed fractional utility-mass edits; concavity between observed knots; alpha1/5",
+  "source_representation_upgraded": false,
+  "error_rates_estimated": false,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "MC_replayed": false,
+  "TeX_replayed": false,
+  "source_sha256": {
+    "data/task4_v116_ibb/aggregate_results.json": "b85a746387cdcc7265545cee1ab1326d762b538d3ec362091e2b1195a0883f48",
+    "results/task4_v158_joint_gap/summary.json": "5b56ef877c7d4d710dbd7a418eca1c200b137a722e38083925b959e1ed036cd1",
+    "results/task4_v162_tail_error/summary.json": "50be447ff8f3f99fa517f1ae596f776df66320c64f3a134531ac876e03fc1ae7",
+    "results/task4_v162_tail_error/witnesses.json": "7995d0da958dbc6aa150ebcffc0758bb918a461612ad53a5fbdeb33a28ca3983",
+    "results/task4_v162_tail_error/verification.json": "3e97916fe597a4e4162b8bbb44701c18a91620864ce22823b3d47afd4645fb86",
+    "results/current_tail_endpoint_review/summary.json": "4605688d59b59d9f4ef309acb1ab899246332a9c5d4eb466e441678a01dd3ff0",
+    "results/current_tail_endpoint_review/endpoint_values.csv": "53810969b7aa968607907c55955316474da720ef40cfae014f62ad72a325f2cc",
+    "results/current_tail_endpoint_review/witnesses.csv": "4e7f0e8916e4dfa3ae01aea57bad18ff7bc71444fa875033f4af47ec3ad513bf",
+    "results/current_tail_endpoint_review/README.md": "f852ed55ea3e7cf1fe51802efbe7cf5993c00cae51a7270eceda75f860e98a14",
+    "results/current_tail_endpoint_review/peer_review.json": "bedb4729e6e12fa6783ce85e285daadc0a5d815eb1f2e2a7a82215a0d83b4cf4",
+    "scripts/audit_current_tail_endpoints.py": "89d42a2bab74d1794bb5160c1c98b8cc2745e84a145896edc68da7f21d06cfb1",
+    "scripts/task4_current_tail_endpoints.py": "3d084c3851c28b50df4d60b359822793f94c345d94018c02451bf4502968c941",
+    "scripts/audit_current_oslo_cost_ptr_sources.py": "3a6da9c9edaaede65cb589b608dcd5b66c57ad729c401490f598f83057a45120",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3"
+  }
+}

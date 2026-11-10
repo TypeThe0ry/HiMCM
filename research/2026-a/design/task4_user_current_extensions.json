@@ -329,5 +329,21 @@
       "scripts/audit_current_pm_block_withdrawal.py": "39c32d98d22e645ba72abd8341f5e5c5731b311b728141ed107044567ccfff57",
       "results/current_pm_block_withdrawal/verification.json": "4708db4ae023c8d7b6b96d1da00b5cb909c8f24eed02c4c1a44fc25dd52ee25b"
     }
+  },
+  "historical_tail_endpoint_certificate": {
+    "script": "scripts/task4_current_tail_endpoints.py",
+    "results": "results/current_tail_endpoint_review",
+    "verification": "results/current_tail_endpoint_review/verification.json",
+    "verification_sha256": "a3018ab79db683972311d51d91de7949b304b3361d14305f8d909a4e2325184c",
+    "old_thresholds": 1227,
+    "endpoint_thresholds": 51,
+    "budget_cases": 7,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "source_representation_upgraded": false,
+    "MC_replayed": false,
+    "scope": "Equivalent certificate for existing Istanbul2012 fractional-mass gap; concavity on originalutilityintervals,357LP/7newwitnesschecks; no realerror/currentyear/wholeperson/sourcecertification ornewcitymodel"
   }
 }

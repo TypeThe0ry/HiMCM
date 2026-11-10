@@ -1,0 +1,24 @@
+{
+  "requested_model": "gpt-6.1-terra",
+  "requested_effort": "high",
+  "serving_build_verified": false,
+  "proof_result": "pass for fixed fractional-mass uncertainty set: min of affine functions is concave between observed utilities; min-min exchange and Nmax denominator are valid; delta0and1 and zero-gap tie condition separately checked",
+  "independent_numerics": {
+    "method": "Independent HiGHS LP implementation using locked SciPy1.13.1; no repository edits",
+    "mass_LPs": 357,
+    "frozen_witness_tail_LPs": 7,
+    "maximum_endpoint_objective_difference": 4.440892098500626e-16,
+    "maximum_frozen_minimum_difference": 8.326672684688674e-17,
+    "maximum_frozen_witness_error": 5.551115123125783e-17,
+    "mass_equality_residual": 0.0,
+    "bound_violation": 0.0
+  },
+  "scope": "Numerical residuals in double precision, not exact rational/directed-rounding certificates; source projection not original CSV; no real error-rate, current-city or whole-record sharpness claim",
+  "root_computation": "80-digit Decimal fractional-mass sorting; portable auditor separately validates newly generated witnesses",
+  "final_implementation_review": {
+    "result": "Scoped implementation/proof pass for49distinctobservedutilities; no LP rerun in this final review",
+    "generality_correction": "Reviewer identified tie-group qualification and denominator wording; root explicitly aggregated identicalutilities before genericformula, supplied sum-over-equal-utility formula and placed N denominator in initialidentity",
+    "numeric_results_affected": false,
+    "serving_build_verified": false
+  }
+}

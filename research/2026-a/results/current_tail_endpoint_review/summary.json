@@ -1,0 +1,96 @@
+{
+  "scope": "Istanbul2012 retained aggregate; fractional observed-utility mass errors only",
+  "alpha": "1/5",
+  "observed_groups": 49,
+  "observed_weight": 499950,
+  "known_unknown_weight": 177066,
+  "optional_weight": 4487,
+  "max_denominator": 681503,
+  "decimal_precision": 80,
+  "old_thresholds": 1227,
+  "endpoint_thresholds": 51,
+  "budget_cases": 7,
+  "endpoint_evaluations": 357,
+  "rows": [
+    {
+      "case": 0,
+      "delta": 0.0,
+      "delta_exact": "0",
+      "sharp_gap": "0.22668552699248695426703635947811705224409482228337544910981776273502535162431709",
+      "attaining_minutes": 45,
+      "witness_mean": "0.37444465334015007833912353733737534553981229415605192575565016785280474398680434",
+      "witness_lower_tail": "0.14775912634766312407208717785925829329571747187267647664583240511777939236248729",
+      "edited_weight": "0"
+    },
+    {
+      "case": 1,
+      "delta": 0.01,
+      "delta_exact": "1/100",
+      "sharp_gap": "0.22058317941059005368933786671685704959146023525990822363347966200964903453946122",
+      "attaining_minutes": 45,
+      "witness_mean": "0.37597024023562430348354816052769034620297094091191873212473469303414882325801834",
+      "witness_lower_tail": "0.15538706082503424979421029381083329661151070565201050849125503102449978871855714",
+      "edited_weight": "4999.5"
+    },
+    {
+      "case": 2,
+      "delta": 0.05,
+      "delta_exact": "1/20",
+      "sharp_gap": "0.20013424491964980336017582216669742890249715058501488161192271570888422294934134",
+      "attaining_minutes": 40,
+      "witness_mean": "0.39315982441063116218652290740008073654495135289870651243446577698633489692432377",
+      "witness_lower_tail": "0.19302557949098135882634708523338330764245420231369163082254306127745067397498238",
+      "edited_weight": "24997.5"
+    },
+    {
+      "case": 3,
+      "delta": 0.1,
+      "delta_exact": "1/10",
+      "sharp_gap": "0.17718997773022026244532908886085872206823561425129834097901915698749320590663123",
+      "attaining_minutes": 40,
+      "witness_mean": "0.38696518178717305723840531317028519656413629051199581945916620454839746660020067",
+      "witness_lower_tail": "0.20977520405695279479307622430942647449590067626069747848014704756090426069356943",
+      "edited_weight": "49995"
+    },
+    {
+      "case": 4,
+      "delta": 0.2,
+      "delta_exact": "1/5",
+      "sharp_gap": "0.12909081844963490731332491440180710347989352227927291172547396034321062209060508",
+      "attaining_minutes": 30,
+      "witness_mean": "0.44931778516308671772913286639557397979721909318266583025934762104346912560791517",
+      "witness_lower_tail": "0.32022696671345181041580795199376687631732557090339291853387366070025850351731007",
+      "edited_weight": "99990"
+    },
+    {
+      "case": 5,
+      "delta": 0.5,
+      "delta_exact": "1/2",
+      "sharp_gap": "0.037645435045513276306327906174844259690759217945948971911835144406642394182738860",
+      "attaining_minutes": 30,
+      "witness_mean": "0.40147489164313094424241456717361171957976230029684002681533320790058923087923032",
+      "witness_lower_tail": "0.36382945659761766793608666099876745988900308235089105490349806349394683669649145",
+      "edited_weight": "249975"
+    },
+    {
+      "case": 6,
+      "delta": 0.7842464246424643,
+      "delta_exact": "17822/22725",
+      "sharp_gap": "0E-80",
+      "attaining_minutes": 30,
+      "witness_mean": "0.36787944117144232159552377016146086744581113103176783450783680169746149574489980",
+      "witness_lower_tail": "0.36787944117144232159552377016146086744581113103176783450783680169746149574489980",
+      "edited_weight": "392084"
+    }
+  ],
+  "max_gap_difference_from_frozen_V162": 2.7755575615628914e-17,
+  "exact_zero_gap_budget": "17822/22725",
+  "source_representation_upgraded": false,
+  "error_rates_estimated": false,
+  "whole_person_sharpness_claimed": false,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "scope_note": "Concavity between observed utility knots eliminates pair-cost crossings; numerical precision is not a directed-rounding or data-accuracy certificate"
+}
