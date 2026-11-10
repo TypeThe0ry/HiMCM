@@ -1,0 +1,3 @@
+# V190 current delivery evidence map
+
+This map supersedes frozen review-checklist page locations while the paper remains V189 and the science V181. It binds the exact unchanged PDF, corrects12page mappings and zero page margin, and locates58scoped whole-word anchors. The current pointer is drafts/task4_current_delivery.json. All47requirement statuses and13pending items remain unchanged. Anchor matches locate text; the separate content review checks task coverage and claim scope, without certifying every source, all mathematics, full-team AI history, actual registration, server compilation or final submission. Full scripts and protection evidence remain in the GitHub research repository.

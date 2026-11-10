@@ -1,0 +1,20 @@
+At baseline concentration 100, Oslo has a smaller sample mean decision rank (2.1092)
+than Zurich (2.2620), while Zurich has the greater sample recommendation
+frequency and is the fixed-weight minimax choice. These summaries describe
+different features of the chosen weight distribution. We retain minimum maximum
+regret as the predeclared decision rule; weight perturbations report its
+sensitivity. A low AHP consistency ratio checks calculation properties,
+not representative student opinion.
+
+Numerical precision can be quantified separately from evidence uncertainty.
+For $n=10{,}000$ independent, identically distributed draws within each setting,
+Hoeffding's inequality and a union bound over the $m=2064$ exported means across
+37 settings give a common event of probability at least $0.95$ with error
+at most $R\sqrt{\log(2m/0.05)/(2n)}$, where the response range $R$ is 1 for
+frequencies and 15 for ranks \cite{hoeffding}.
+The resulting half-widths are 2.38 percentage points and 0.357 ranks;
+shared draws across outputs are allowed. On this event, subtracting two mean
+intervals bounds their difference. Oslo minus Zurich at baseline concentration
+100 gives $[-0.867,0.561]$, leaving their expected mean-rank order unresolved
+by this guarantee. These bounds concern integration under the declared
+simulation laws.

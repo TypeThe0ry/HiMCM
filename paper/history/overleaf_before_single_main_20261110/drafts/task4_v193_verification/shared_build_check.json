@@ -1,0 +1,30 @@
+{
+  "version": "V193 shared-entry read-only check",
+  "status": "not_ready",
+  "command": [
+    "tectonic",
+    "--only-cached",
+    "--outdir",
+    "/data/scratch/himcm_v193_shared_check",
+    "--keep-logs",
+    "--keep-intermediates",
+    "main.tex"
+  ],
+  "exit_code": 1,
+  "first_fatal_error": "main.tex:143: Unable to load picture or PDF file 'framework.png'",
+  "earlier_warnings": [
+    "Missing en-dash glyph in pplr8t",
+    "Overfull hbox3.66351pt",
+    "Native headheight too small",
+    "Unresolved references before first complete run"
+  ],
+  "scope": "Read-only local check of unchanged teammate entry; stopped at first fatal missing asset, not a full shared-manuscript diagnostic or server compilation. No team prose, assets or settings edited.",
+  "source_sha256": {
+    "main.tex": "40a63df3cb2b0e2524fbbe4f7fd19d904851bc4e2e3b7b99d50d477a4da7f0c1",
+    "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
+    "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec"
+  },
+  "log_sha256": "7c7ac10c1c6f4e7c50851bfee938d899348ed41ac3e315d2261517354a912db8",
+  "owned_review_compiles": true,
+  "submission_ready": false
+}

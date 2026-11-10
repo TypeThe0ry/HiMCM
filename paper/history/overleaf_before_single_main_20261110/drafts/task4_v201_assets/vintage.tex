@@ -1,0 +1,29 @@
+\subsection{Sensitivity to the accepted input information}\label{sec:sourcepolicy}
+The conservative choice depends on which submitted observations are accepted.
+Of the 112 retained point entries, 64 are labelled 2026, two 2025 and 46 earlier;
+28 carry non-\texttt{ok} source flags: 16 \texttt{MODELLED}, eight \texttt{STALE},
+three \texttt{SUSPECT} and one \texttt{NATIONAL}.
+For a controlled test, replace selected point utilities by $[0,1]$, keeping
+weights, all supplements and the 48 original non-point bounds unchanged.
+The groups are points dated before 2020, after 2025, non-\texttt{ok} points and
+their union. The union counts overlapping entries once.
+
+\input{task4_v201_assets/vintage_table.tex}
+
+Withdrawing the 28 flagged points changes the recommendation to Berlin under
+baseline weights and Paris under equal weights. Removing the 13 pre-2020 points
+selects Singapore under baseline weights; equal weights retain Zurich.
+Withdrawing the 64 later-dated points retains Zurich under both references,
+while widening the baseline mean range from 15.96 to 48.34. The 95-entry union
+selects Singapore under both. All sixteen cities remain possible champions
+in every case. These withdrawals test dependence on accepted information:
+the labels and date cutoffs are not calibrated error probabilities or a
+judgment that every flagged entry is wrong. The experiment preserves the
+primary data and does not reconstruct a same-year-only matrix.
+
+Withholding Zurich's homicide-rate point alone selects Singapore under baseline
+weights and Oslo under equal weights. Withholding Amsterdam's alone retains
+Zurich under both. Each single-point test keeps the other 159 entries fixed;
+no official count is inserted as an assumed replacement rate.
+
+Holding the other 159 entries fixed while varying this point rate $x_Z$, Zurich ties Singapore in maximum regret at about $x_Z=0.14951$ per 100,000 under baseline weights, and Oslo at about $x_Z=1.03432$ under equal weights. Below each respective cutoff Zurich uniquely minimizes regret; above it Zurich does not. These are hypothetical point-rate cutoffs, not observed rates or confidence limits.

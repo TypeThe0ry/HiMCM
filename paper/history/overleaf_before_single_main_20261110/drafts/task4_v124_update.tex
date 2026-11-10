@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=23mm,headheight=16pt]{geometry}
+\usepackage{amsmath,booktabs,array,microtype,fancyhdr,lastpage}
+\usepackage[hidelinks,bookmarks=false]{hyperref}
+\usepackage{url}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{Team Control PENDING}
+\fancyhead[R]{Page \thepage\ of \pageref{LastPage}}
+\hypersetup{pdftitle={Evidence update: scoped facility inventories},pdfauthor={}}
+\begin{document}
+\begin{center}{\Large\bfseries Evidence update: scoped facility inventories}\\[6pt]
+V124 companion to the independent V123 review draft
+\end{center}
+Two verified facility inventories improve precision while preserving the city
+recommendation. Madrid's registered metro subset and five public indoor pools
+in Tokyo replace two fully missing entries with lower bounds. The original
+city table, all 139 previously non-fully-missing entries, weights and utility
+anchors stay fixed. The resulting matrix contains 112 point values, 29 partial
+intervals and 19 fully missing entries.
+
+\input{task4_v124_assets/numbers.tex}
+
+The average fixed-weight score-interval width falls from \WidthBefore{} to
+\WidthAfter{}, a \WidthReduction\% reduction. Both fixed and equal reference
+weights retain their complete decision orders: Zurich remains the conservative
+recommendation, all sixteen cities remain possible champions, and no necessary
+champion is identified. Additional supply evidence narrows uncertainty without
+establishing observed improvement over time.
+
+\section*{Count facilities inside the comparison boundary}
+Madrid's regional transport authority (CRTM) publishes a station registry with
+municipality codes and network-station identifiers \cite{crtm}. The original
+293 records include 242 tagged to Madrid city (province 28, municipality 079,
+independently identified by INE \cite{ine}). Two unnamed records with no route
+information are omitted. Consolidating the remaining 240 named records by
+network-station code gives 191 metro complexes. Noviciado/Plaza de Espa\~na and
+Embajadores/Acacias are each conservatively counted once. The fifty-one
+outside-city records do not enter the count.
+
+This is a 29 May 2026 registered inventory divided by the unchanged supplied
+2025 population of 3,527,924. Its transport utility is
+$[0.09770010875,1]$ under the existing anchor 50. Other modes and providers
+remain uncounted, and the registry does not establish real-time operation.
+It therefore supplies a conditional lower bound rather than a complete
+same-year city transport census.
+
+\section*{Distinguish current closures from planned closures}
+Tokyo's retained subset consists of five municipal indoor swimming venues at
+different addresses in Nerima, one of the twenty-three special wards
+\cite{nerima}. Each facility's original municipal page confirms a 25-metre
+pool and regular opening information. The current closure of Heiwadai, with
+reopening undetermined, excludes it. Miharadai's announced February--May 2027
+closure is a future change and does not remove it from the current stock
+\cite{closures}. Counting venues once avoids adding lanes or separate basins.
+With the unchanged supplied population of 9,983,365, the existing pool anchor
+1 gives $[0.04769460951,1]$. Other wards and providers remain unknown.
+Routine maintenance days and restricted sessions mean that this stock count
+does not imply simultaneous opening or individual adolescent access.
+
+\section*{Direct further searches toward decisions}
+A separate acquisition diagnostic holds the pre-update V121 evidence fixed.
+It distinguishes reducing the possible-champion set from changing the
+conservative recommendation. An exact, correctly scoped Dublin pupil--teacher
+ratio below 17.58238 would change the fixed-weight recommendation to Dublin;
+this is a conditional threshold, not an observed ratio. Zurich remains the
+fixed-weight recommendation for an exact ratio below 175.33693 and remains
+the equal-weight choice throughout the admissible ratio range. Interval-valued
+teacher evidence requires the full two-bound decision calculation.
+
+A matched teacher denominator remains the key requirement. The inspected Zurich
+series covers canton-level publicly funded schools \cite{zurichstaff}; Dublin's
+official report says school-level FTE are not published \cite{irelandstaff}. These sources do not establish a citywide, matching
+teacher denominator. Their missing cells remain unknown; a source's existence
+alone does not make its population compatible.
+
+\section*{Controlled verification and manuscript scope}
+Independent weighted norms and explicit competitor exclusion reproduce twenty
+static comparisons and twenty-four weight-simulation settings, each with
+10,000 draws. The original random streams are retained, and the pre-update
+arm matches saved V121 results. Withdrawing both supplements restores every
+V121 utility bound. Weight-simulation frequencies remain conditional on their
+chosen distributions, rather than actual winning probabilities.
+
+This companion supplies new data-collection and baseline evidence. The V123
+complete review paper and V122 preference, future and method results retain
+their explicitly frozen V121 inputs. Their numerical claims have not been
+silently relabelled V124; integrating the new evidence requires rerunning those
+extensions and updating the paper consistently. Team control and the complete
+AI-use record remain pending, so this companion is research manuscript material,
+not a final submission. OpenAI Codex assisted extraction checks, calculation and
+writing \cite{codex}; it does not provide missing empirical observations.
+
+\begin{thebibliography}{7}
+\raggedright
+\bibitem{crtm} Consorcio Regional de Transportes de Madrid. \textit{M4 Estaciones},
+record date 29 May 2026, accessed 9 November 2026.
+\url{https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M4_Red/FeatureServer/0}.
+\bibitem{ine} Instituto Nacional de Estad\'istica. Transport statistics metadata,
+municipal classification, 2026.
+\url{https://www.ine.es/dynt3/metadatos/RespuestaDatos.html?oper=297}.
+\bibitem{nerima} Nerima City. Municipal swimming facilities and linked venue pages,
+accessed 9 November 2026.
+\url{https://www.city.nerima.tokyo.jp/shisetsu/koen/index.html}.
+\bibitem{closures} Nerima City. Heiwadai closure notice, 27 October 2026;
+Miharadai planned-closure notice, 29 September 2026.
+\url{https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/20261027.html};
+\url{https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/20260929.html}.
+\bibitem{zurichstaff} Canton of Zurich. Development of teaching staff at middle and vocational schools, 2026.
+\url{https://www.zh.ch/de/bildung/bildungssystem/zahlen-fakten/entwicklung-des-schulpersonals-an-mittelschulen-und-berufsfachschulen.html}.
+\bibitem{irelandstaff} Department of Education and Youth, Ireland. \textit{Teacher Workforce Data Quality Report}, 2026, Sections 5.2 and 8.4.
+\url{https://nationaldata.ie/media/NationalDataie/MethodologyDocumentation/Teacher_Workforce_Data_Quality_Report.pdf}.
+\bibitem{codex} OpenAI. Codex, research, calculation and writing assistance, November 2026; exact deployed model build not retained in draft metadata.
+\url{https://openai.com/codex/}.
+\end{thebibliography}
+\end{document}

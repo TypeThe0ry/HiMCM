@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "method": "Independent scalar weights-once scores, self-excluded regret, bisection and exhaustive retained integer probes before first strict recommendation",
+  "results": [
+    {
+      "weight_reference": "fixed",
+      "continuous_count_tie": 26.377779055375157,
+      "first_strict_integer": 27,
+      "gap_previous": 0.013749599476206242,
+      "gap_first": -0.022369062624022718
+    },
+    {
+      "weight_reference": "equal",
+      "continuous_count_tie": 178.1470267153802,
+      "first_strict_integer": 179,
+      "gap_previous": 0.0011563004104857555,
+      "gap_first": -0.006676946665535866
+    }
+  ],
+  "immutable_snapshot_bindings": 361,
+  "original_160_bounds_and_four_navigation_files_unchanged": true,
+  "scope": "Conditional mathematical thresholds only; not observations or admissions.",
+  "source_sha256": {
+    "results/task4_v199_priority/pool_count_thresholds.json": "6aba12d2ec5b791e9bfcf6db41665a5ac7c09b5c1fb60a2381ddca4c96e24f1a",
+    "results/task4_v199_priority/pool_count_threshold_probes.csv": "ad705a995c9e5b21968aed84208504dcac1ad5e598a0fc43e8a261d0825d3777",
+    "scripts/task4_v199_pool_threshold.py": "967569c573f37ff21a82f82cf51bef0c1dbaf2955d1b7979179f0478926bc39d",
+    "design/task4_user_v197_snapshot.json": "7e1e302f9c66a70c069a0414dee022eaf79a77658707473de9e478739303c8b0",
+    "design/task4_user_current_model.json": "a682b99bdff434cae1402afdc302ddfd7dba5a0adb2db531adb57af2922a38d1",
+    "design/task4_user_current_extensions.json": "5d9afc2b3d7a86b7e906070bb512dd9d8e6d22737b1a7c47a4d9f4f76d9430ec",
+    "design/task4_user_current_review.json": "42a19eb93570ef5b62fb59044e6708c57aa9b3828f6a1410e4b755c96d0bd640",
+    "design/task4_user_current_delivery.json": "a036a7de59d060bd6e6f1144b9d7033c26d91d2e861ccc2e52f390cf87fa9f99",
+    "scripts/audit_task4_v199_pool_threshold.py": "ea61d36bc07f68d366d82904ba9e8ebaa0121156337ecac90864f9b740512f36"
+  }
+}

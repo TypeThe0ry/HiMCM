@@ -1,0 +1,31 @@
+id,authority,requirement,status,pdf_pages,evidence,scope_or_remaining_action
+summary,Problem A,One-page summary,technical_pass,1,Summary Sheet,
+toc,Problem A,Contents,technical_pass,2,Contents,
+city_count,Problem A,At least ten ranked cities,technical_pass,9,Amsterdam,Primary factory verifies sixteen cities; no legacy25 main entry
+best_definition,Problem A,Justify the preferred city,covered,3,conservative choice,Minimax-regret definition; sixteen possible champions retained
+criteria,Problem A,Explain included and omitted criteria,covered,3,language fit,
+model_budget,user,Keep scoring model count compact,covered_scoped,3,one main quality score,TOPSIS primary and VIKOR comparison; AHP sets preferences and Monte Carlo tests sensitivity
+data_sources,Problem A / user,Document actual collection and matching,covered,7,sample base of 22,
+revision,Problem A,Explain a significant model revision,covered,10,retaining uncertain evidence,Same-evidence midpoint diagnostic versus intervals; not invented historical chronology
+news,Problem A,Nontechnical news with modelling process,technical_pass,15,common scoring yardsticks,Two pages 15-16; read as a scoped explanation
+references,Problem A,Reference list,technical_pass,17,References,
+baseline_weights,user,Weights and preference construction,covered,7,not estimated from a student survey,
+baseline_score,user,TOPSIS computation,covered,8,TOPSIS scoring calculation,
+baseline_results,user,Explain ranking results,covered,9,maximum regret,
+future,user,Future conditions,covered_scoped,11,forecast date,"Declared hypothetical changes, no fitted empirical trend"
+preferences,user,Subjective preference scenarios,covered_scoped,12,Education priority,Analyst-selected priorities; no student survey or precise age-specific weights
+perturbation,user,Perturb model inputs/weights,covered_scoped,12,Dirichlet,Frequencies condition on declared distributions
+fairness,user,Distinguish facilities from access,covered_scoped,13,Citywide facilities per resident,Shanghai district case is separate; main city totals do not identify individual access
+ages,user,Distinguish growth stages,covered_scoped,13,2012 broad groups,Historical Istanbul groups; no exact 14 versus 18 inference
+country,user,Compare cities within a country,covered_scoped,14,Every primary city belongs to a different country,Separate frozen legacy25 US/India pairs; not a within-country main16 estimate
+ai_appendix,COMAP instructions,Append AI-use report,partial,21,incomplete review record,125 selected root-session messages; tools/subagents/other team history not covered
+original_inputs,user,Preserve original CSV and scientific rules,technical_pass,,Frozen CSV/factory/anchors hashes and actual 16x10 bounds verified,No original point or partial entry re-resolved
+page_budget,COMAP instructions,Main solution page budget,technical_pass,1-20,20 main/reference pages; AI pages follow,Technical property only
+file_size,COMAP instructions,One PDF below size limit,technical_pass,1-22,148545 bytes,Final control-number filename remains unverified
+font,COMAP instructions / team,Readable text and figure size,technical_pass,all,12pt class; minimum inserted plot label 12.51297pt,Declaration and actual render checked; mathematical scripts follow TeX sizing
+team_identity,COMAP instructions,Actual control number and anonymity,unverified,all,All headers contain PENDING; no PDF author field,Obtain actual registration control number and team identity review
+full_AI_history,COMAP AI policy,Reconcile all actual AI use,unverified,21-22,Appendix explicitly incomplete; no raw/private transcript published,"Team review of all tools and actual saved input/output records, with stated policy exceptions"
+final_manuscript,team workflow,Choose and authorize final manuscript integration,awaiting_team,,Independent draft; shared main unchanged,Specific authorization for any teammate prose integration
+registration,COMAP instructions,Registration and eligibility evidence,unverified,,No receipt established by these artifacts,Use actual team/advisor registration records; no claim of nonregistration
+submission,COMAP instructions,Final upload and receipt,unverified,,No upload performed or receipt established,"Finalize identity/history and selected PDF; stop 2026-11-18 09:00 Singapore, upload by 10:00; actual authorized submission and receipt required"
+public_push,team workflow,Public research publishing choice,awaiting_team,,Existing unanswered publishing choice,No public push or visibility change inferred from this audit

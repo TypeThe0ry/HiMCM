@@ -1,0 +1,7 @@
+# V135 London candidate inventory
+
+TfL's original mode response has 1751 mixed objects, including 272 metro-station records. Selecting station-level tube records with exact Zone 1 gives 62 station IDs. Paddington's two records share one native hub; Monument and Edgware Road Bakerloo are conservatively omitted. The retained 60 IDs form 59 operator station/hub entities. All retained coordinates pass two independent checks against the ONS full-resolution 2025 London-region geometry. Boundary distances refer to a coastline-clipped layer and are not distances to the administrative outer limit or accuracy guarantees.
+
+The 59-entity candidate would give utility lower 0.0127693066 using the unchanged supplied 2025 population 9,122,909, with upper bound 1. The fixed mean width preview narrows 0.0170%; London stays 14, Zurich remains conservative and all sixteen cities remain possible champions. These are candidate conditions: zero primary admissions, no rank update and no new paper PDF in this delivery. Static published inventory is distinguished from live service and individual accessibility.
+
+The 16.2MB uncompressed API body is archived outside Git; a 399,962-byte lossless gzip is also saved in the research repository, with identical decompressed SHA-256. Hashes, request provenance and selected records remain inspectable. The next stage requires controlled admission/withdrawal and complete analysis/manuscript migration before activation. The current V134 revision of the V131 paper remains unchanged.

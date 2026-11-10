@@ -1,0 +1,62 @@
+{
+  "iteration": "V158",
+  "primary": "V154 unchanged",
+  "city": "Istanbul",
+  "year": 2012,
+  "population": "Recovered conditional current-high-school cohort ages 14–18, with optional membership retained",
+  "provider_representation": "Exa web_fetch_exa official CKAN projection; not original CSV bytes",
+  "observed_weight": 499950.0,
+  "known_unknown_weight": 177066,
+  "optional_weight": 4487,
+  "rows": [
+    {
+      "alpha": 0.1,
+      "prior_conservative_lower": 0.21924458608867758,
+      "sharp_joint_lower": 0.2552980248519064,
+      "increase_over_old_certificate": 0.03605343876322881,
+      "attaining_unknown_utility": 0.1353352832366127,
+      "attaining_minutes": 60.0,
+      "witness_mean": 0.35105602073255915,
+      "witness_lower_tail": 0.09575799588065272,
+      "optional_mass_included": 4487,
+      "denominator": 681503.0
+    },
+    {
+      "alpha": 0.2,
+      "prior_conservative_lower": 0.16165066480374887,
+      "sharp_joint_lower": 0.22668552699248706,
+      "increase_over_old_certificate": 0.06503486218873819,
+      "attaining_unknown_utility": 0.22313016014842982,
+      "attaining_minutes": 45.0,
+      "witness_mean": 0.3744446533401502,
+      "witness_lower_tail": 0.14775912634766314,
+      "optional_mass_included": 4487,
+      "denominator": 681503.0
+    },
+    {
+      "alpha": 0.3,
+      "prior_conservative_lower": 0.09993077627058378,
+      "sharp_joint_lower": 0.19509630187925164,
+      "increase_over_old_certificate": 0.09516552560866787,
+      "attaining_unknown_utility": 0.291319891133471,
+      "attaining_minutes": 37.0,
+      "witness_mean": 0.3926104577893268,
+      "witness_lower_tail": 0.19751415591007512,
+      "optional_mass_included": 4487,
+      "denominator": 681503.0
+    }
+  ],
+  "successful_joint_LPs": 63,
+  "random_completion_checks": 75,
+  "seed": 158,
+  "scope": "Sharp minimum over the retained aggregate uncertainty set; not current-city evidence or population CI",
+  "source_sha256": {
+    "data/task4_v116_ibb/aggregate_results.json": "b85a746387cdcc7265545cee1ab1326d762b538d3ec362091e2b1195a0883f48"
+  },
+  "protected_scientific_files": 187,
+  "generator_sha256": "6c1d3a406216a24ffcdd54a1e656cc90fac62e22113bc95df86c9b3a9bffdf03",
+  "primary_pdf_sha256": "0ff0e7ed47fa28a7ccc9c6e6daeda34576ddba48cba8b794c1e3ca052fc7b60b",
+  "primary_data_admissions": 0,
+  "primary_score_interval_width_reduction": 0,
+  "protected_manuscript_files": 440
+}

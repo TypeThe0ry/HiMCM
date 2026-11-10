@@ -1,0 +1,98 @@
+{
+  "iteration": "V165",
+  "research_data_root": "research/2026-a/data/",
+  "groups": {
+    "task4_v165_zurich_staff": [
+      {
+        "file": "staff_page_original.html",
+        "url": "https://www.zh.ch/de/bildung/bildungssystem/zahlen-fakten/entwicklung-des-schulpersonals-an-mittelschulen-und-berufsfachschulen.html",
+        "final_url": "https://www.zh.ch/de/bildung/bildungssystem/zahlen-fakten/entwicklung-des-schulpersonals-an-mittelschulen-und-berufsfachschulen.html",
+        "retrieved_utc": "2026-11-09T10:40:20.360327+00:00",
+        "status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 82808,
+        "sha256": "b16afca4ed23248ad52d31af660cc1f57286ddd717c63e1dee0393729700e124"
+      },
+      {
+        "file": "survey_page_original.html",
+        "url": "https://www.zh.ch/de/bildung/bildungssystem/studien-in-der-bildung/lehrpersonen-und-schulpersonal.html",
+        "final_url": "https://www.zh.ch/de/bildung/bildungssystem/studien-in-der-bildung/lehrpersonen-und-schulpersonal.html",
+        "retrieved_utc": "2026-11-09T10:40:20.361321+00:00",
+        "status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 62635,
+        "sha256": "7e1c22ef259d0e9b16cef0d52e3c1ff1a758f219e29361f22816dd5ea410b053"
+      },
+      {
+        "file": "chart_snippet_original.html",
+        "url": "https://www.zh.ch/de/bildung/bildungssystem/zahlen-fakten/entwicklung-des-schulpersonals-an-mittelschulen-und-berufsfachschulen/_jcr_content/main/singlepageapplicatio_895902676.zhweb-spa-snippet.zhweb-cache.html",
+        "final_url": "https://www.zh.ch/de/bildung/bildungssystem/zahlen-fakten/entwicklung-des-schulpersonals-an-mittelschulen-und-berufsfachschulen/_jcr_content/main/singlepageapplicatio_895902676.zhweb-spa-snippet.zhweb-cache.html",
+        "retrieved_utc": "2026-11-09T10:40:20.363464+00:00",
+        "status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "bytes": 1153,
+        "sha256": "a90531ec4588dbe34d2a44d0f43c9e9993678b958a11ced054e554da58d1a254"
+      },
+      {
+        "file": "chart_module_original.js",
+        "url": "https://api.observablehq.com/d/2ebdda3eb4cd0353.js?v=4",
+        "final_url": "https://api.observablehq.com/d/2ebdda3eb4cd0353.js?v=4",
+        "retrieved_utc": "2026-11-09T10:40:20.365234+00:00",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 3243,
+        "sha256": "449f7d9d30138ec805f8d66918c7e0682fd9404504e118e51ca2237dc540f50e"
+      },
+      {
+        "file": "chart_general_original.js",
+        "url": "https://api.observablehq.com/@bildungsplanungzh/general.js?v=4&resolutions=2ebdda3eb4cd0353@1488",
+        "final_url": "https://api.observablehq.com/@bildungsplanungzh/general.js?v=4&resolutions=2ebdda3eb4cd0353@1488",
+        "retrieved_utc": "2026-11-09T10:40:20.367870+00:00",
+        "status": 200,
+        "content_type": "application/javascript; charset=utf-8",
+        "bytes": 196301,
+        "sha256": "69d9f9a8c56255d53451b41b8135465fe9f4f9d9f4db885881ecd613d1c53f2c"
+      },
+      {
+        "file": "staff_data_original.json",
+        "url": "https://www.bista.zh.ch/basicapi/zhweb/p_entwicklung_der_anzahl_vollzeiteinheiten_an_mittelschulen_und_berufsfachschulen?refreshcache=false",
+        "final_url": "https://www.bista.zh.ch/basicapi/zhweb/p_entwicklung_der_anzahl_vollzeiteinheiten_an_mittelschulen_und_berufsfachschulen?refreshcache=false",
+        "retrieved_utc": "2026-11-09T10:40:20.369069+00:00",
+        "status": 200,
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 3872,
+        "sha256": "92ced361d6843758c00fb03ebe5914383b0fe831b3669288b4fc35713749cbf0"
+      }
+    ],
+    "task4_v165_dublin_routes": [
+      {
+        "file": "eurostat_dublin_education_original.json",
+        "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/urb_ceduc?lang=EN&cities=IE001C",
+        "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/urb_ceduc?lang=EN&cities=IE001C",
+        "retrieval_started_utc": "2026-11-09T10:39:48.850838+00:00",
+        "retrieval_finished_utc": "2026-11-09T10:39:49.400978+00:00",
+        "status": 200,
+        "content_type": "application/json",
+        "http_date": "Mon, 09 Nov 2026 10:39:49 GMT",
+        "bytes": 4849,
+        "sha256": "8c5a33cc18e7bc804cac97318dbf606cfb9a520c816dcf34a80695bb0ae70f4c",
+        "representation": "original HTTP response body bytes",
+        "retrieval_note": "Fresh retrieval for permanent archive; not claimed to be the earlier in-memory response"
+      },
+      {
+        "file": "cso_wmi07_teachers_original.json",
+        "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/WMI07/JSON-stat/2.0/en",
+        "final_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/WMI07/JSON-stat/2.0/en",
+        "retrieval_started_utc": "2026-11-09T10:39:48.851709+00:00",
+        "retrieval_finished_utc": "2026-11-09T10:39:49.825326+00:00",
+        "status": 200,
+        "content_type": "application/json",
+        "http_date": "Mon, 09 Nov 2026 10:39:49 GMT",
+        "bytes": 17541,
+        "sha256": "7887306d6da99c6d0de3573dac064e4de091bc694dded60f7022a97507135061",
+        "representation": "original HTTP response body bytes",
+        "retrieval_note": "Fresh retrieval for permanent archive; not claimed to be the earlier in-memory response"
+      }
+    ]
+  }
+}

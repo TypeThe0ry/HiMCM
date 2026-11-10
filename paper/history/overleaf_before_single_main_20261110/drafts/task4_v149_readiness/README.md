@@ -1,0 +1,11 @@
+# V149 readiness map for the unchanged V148 owned review
+
+The current artifact map contains 39 requirements with separate technical, scoped-content, partial and pending states. It is not a COMAP compliance certificate and does not declare the draft submission-ready. The paper remains documentation V148: 24 pages, 22 main/reference pages, two news pages and two provisional AI pages. No manuscript, numeric result or PDF changes in this iteration. Team content and project settings remain unchanged.
+
+Four current official responses were fetched and exactly match the V123 archived originals: instructions, Problem A, AI policy and submission walkthrough. Their URLs and original hashes accompany this map. The 46 compiled references include three generated case references; all 21 admitted supplements retain explicit core citations. The source matrix remains 112 points / 33 partial / 15 unknown. Original point treatment is not independent measurement certification.
+
+The PDF-derived font inventory reports ordinary text at rounded sizes of at least 12 and separately lists 167 8pt math-script/operator spans. Poppler rounds font sizes to integers; this is not an all-glyph 12pt certificate. The full-page visual evidence remains the V148 review bound to the unchanged PDF hash. No new PDF rendering or compilation is claimed.
+
+Final gates remain the real registered control number and identity review; complete actual team AI records; selected final manuscript and specifically authorized integration; verified registration/advisor identifiers; final control-number filename, authorized upload and portal receipt. The guide says no email confirmation is sent, so receipt must be checked through the advisor portal. The shared entry still has its recorded missing framework.png; this source-only support addition does not rebuild or modify it. Public research push remains held pending the existing user choice.
+
+The independent audit verifies artifact hashes, passage locations and preserved pending states; it does not certify writing quality, all supplied measurements or full team authorship. Code, original-source paths and the complete research record are under `research/2026-a/results/task4_v149_readiness` and the matching research scripts. No connected document session was found; synchronization uses the fetched private Git mirror.

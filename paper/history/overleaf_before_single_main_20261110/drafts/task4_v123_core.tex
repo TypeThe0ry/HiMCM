@@ -1,0 +1,345 @@
+% Generated from the owned V122 chapter contribution; do not hand-edit.
+\section{Data collection and comparability}
+\subsection{A traceable city--indicator matrix}
+We compare $M=16$ cities on $N=10$ indicators covering safety, environment,
+household costs, education and everyday resources. The initial matrix is the
+team-supplied city table \cite{teamtable}. We retain its existing values, populations, reference
+years and source flags as the agreed input, then supplement only empty cells.
+Some supplied values lack original source URLs, so their provenance remains
+the team table; official supplements do not retrospectively validate every
+supplied measurement. Table~\ref{tab:indicators} states what each variable measures.
+
+\input{task4_v123_assets/indicators.tex}
+
+The nominal reference year is 2025, but the evidence is mixed-vintage. Every
+supplement retains its actual year rather than being relabelled as 2025.
+Population denominators remain those of the supplied table. Thus a 2026 facility
+snapshot divided by a supplied 2025 population is a conditional density, not an
+observed same-year census. We do not infer that facilities are unchanged merely
+because they may change slowly. Historical inventory assumptions are evaluated
+through withdrawal scenarios.
+
+We use official statistical tables, operator inventories and municipal geodata
+to fill missing fields. For each admitted supplement, the archive records the
+provider, URL, year, geographic and population scope, units, extraction rule and
+file hash. Original PDFs and API responses are retained separately from derived
+tables. Search summaries locate evidence; numerical admission requires the
+underlying record or an explicitly identified provider capture. Values are
+converted to compatible units before utility calculation: for example, the
+supplied higher-education density per million is divided by ten to obtain the
+per-100,000 scale. Mode share is not converted into physical stop density.
+
+\subsection{Collection problems and their resolution}
+\textbf{A station is not a platform, and a network is not a city.}
+Oslo's municipal GIS represents platforms. Selecting records within the city
+boundary and consolidating names gives 89 metro stations from 186 platforms.
+Zurich's official 2025 VBZ report separately lists 446 stops on city territory
+and 235 in the surrounding area; only 446 enter the city inventory
+\cite{oslo,vbz}. A November 2026 snapshot of Helsinki's operator similarly
+distinguishes 19 metro stations in Helsinki from 11 in Espoo \cite{helsinki}.
+These are mode or operator subsets, so they supply
+lower bounds rather than complete all-operator totals. For a verified facility
+count $c$ and fixed population $P$, density is $d=10^5c/P$; utility is bounded by
+$[d/(a+d),1]$.
+
+\textbf{A list of venues can contain closed facilities.}
+Stockholm's current municipal swimming directory lists fourteen named venues,
+one of which is explicitly closed for renovation. The thirteen retained venues
+agree with the current overview; the temporary year-round replacement is
+counted once \cite{stockpool}. We count venues, not individual basins. This
+municipal subset gives a supply lower bound and leaves other providers unknown.
+Its access date is November 2026; a page-footer date is not used to reconstruct
+a 2025 inventory. Paris's 244 intra-muros metro stations come from a March 2022
+atlas using RATP 2021 and Apur 2022 sources, not a 2025 observation
+\cite{apur}. A separate withdrawal restores this historical supplement to unknown.
+
+\textbf{Pupils and teachers must refer to the same schools and stage.}
+Prague's 2024/25 tables report 80,073 secondary-school pupils and 6,877.1
+teacher full-time equivalents (FTE), including lower-gymnasium years.
+Subtracting the matching 8,748 pupils and 737.8 FTE yields 71,325 pupils and
+a rounding envelope of $[6139.2,6139.4]$ FTE \cite{prague}. The Prague
+measure includes all study modes, including adult and non-daytime cohorts.
+Stockholm's
+published city-school ratio covers upper-secondary years 1--3 and all provider
+ownership types, measured on 15 October \cite{kolada}. Its API value
+16.42091405 is conservatively represented by $[16.35,16.45]$, an intentional
+precision convention rather than a claimed measurement-error confidence interval.
+In contrast, Paris's 72,476 lyc\'ee pupils cannot be divided by its 15,940
+second-degree teachers because the teacher total includes coll\`eges
+\cite{parisedu}; that missing ratio remains unknown. FTE resource measures
+and school-location populations are distinguished from teacher headcounts and
+resident high-school outcomes.
+
+\textbf{Unavailable records and unobserved travellers are retained honestly.}
+An initial Singapore census PDF endpoint returned 404; the official Parliament
+mirror and official data API supplied the report and matching table
+\cite{singapore}. Duration bins are converted using utility at their endpoints,
+without bin midpoints or an artificial maximum duration for the open tail.
+The stage-specific total enrolment estimates exceed the travel-table estimates
+by estimated uncovered student totals of 1,811 for secondary, 989 for
+post-secondary non-tertiary and 1,635 for polytechnic. These are weighted
+survey estimates rather than complete headcounts. The uncovered mass retains
+utility $[0,1]$; unknown stage proportions are
+handled by the interval convex hull. The resulting $[0.21048,0.61884]$ is a
+2020 school-stage proxy, not an identified 2025 interval for ages 14--18.
+When Dublin raw stop downloads returned 403, no count was inferred from the
+catalogue. A later official map supported a separately documented subset of
+19 existing city-centre tram stops \cite{dublin}. A timed-out Warsaw school-travel download
+was discarded and the field left unknown. Failed retrieval does not create a
+numerical observation.
+
+The current 160 cells comprise 112 point values, 27 partial intervals and
+21 fully missing intervals. The original table had 112 points, 12 partial
+intervals and 36 fully missing cells. The fifteen supplements therefore improve
+information without replacing the team's existing measurements. Facility supply,
+general commute proxies and school resources remain distinct from adolescent
+access, school travel and learning quality.
+
+\section{Establishing the baseline evaluation model}
+\subsection{Determining indicator weights}
+We retain eight main indicators at weight 0.1125 each and two auxiliary facility
+indicators, transport stops and pools, at 0.05 each, so $\sum_jw_j=1$.
+These weights express a transparent modelling choice. They are not estimated
+from a student survey. Equal weights provide a separate reference.
+TOPSIS is the primary score; VIKOR provides a focused method comparison.
+AHP represents explicit preference scenarios \cite{saaty}, and Monte Carlo measures
+sensitivity to declared distributions. These extensions retain the same
+criteria rather than introduce unrelated ranking models.
+
+For preference multipliers $m_j>0$, we use
+\begin{equation}
+ w'_j=\frac{m_jw_j}{\sum_kw_km_k},\qquad A_{jk}=\frac{w'_j}{w'_k}.
+ \label{eq:weights}
+\end{equation}
+The principal eigenvector of $A$ recovers $w'$. With $\lambda_{\max}$ its
+largest eigenvalue, $CI=(\lambda_{\max}-N)/(N-1)$ and $CR=CI/RI_N$.
+Because this matrix is built from exact ratios, $\lambda_{\max}=N$ and
+$CR=0$ up to numerical precision. This verifies internal consistency;
+it does not establish that these are students' actual preferences.
+
+\subsection{TOPSIS scoring calculation}
+We adapt TOPSIS \cite{topsis} using fixed reference anchors to preserve a common scoring scale across evidence,
+preference and future scenarios. For benefit and cost measurements respectively,
+\begin{equation}
+ u^{+}(x)=\frac{x}{a+x},\qquad u^{-}(x)=\frac{a}{a+x}.
+\end{equation}
+Each anchor in Table~\ref{tab:indicators} is a declared reference scale, not
+an estimated optimum. Travel uses $q(t)=e^{-t/30}$ for duration $t$ in minutes.
+When only mean duration $\bar t$ is known, Jensen's inequality gives
+$\mathbb E[q(t)]\in[e^{-\bar t/30},1]$. Fully missing utilities remain $[0,1]$.
+
+For utility vector $u_i$, weighted distances from fixed worst and best points are
+\begin{equation}
+ D_i^-=\sqrt{\sum_jw_ju_{ij}^2},\qquad
+ D_i^+=\sqrt{\sum_jw_j(1-u_{ij})^2},\qquad
+ S_i=100\frac{D_i^-}{D_i^-+D_i^+}.
+\end{equation}
+Weights enter the squared distances once. Since $S_i$ increases with every
+utility, endpoints $\ell_i,h_i$ give $L_i=S(\ell_i)$ and $U_i=S(h_i)$.
+Under the retained rectangular uncertainty set, define
+\begin{equation}
+ R_i=\max\{0,\max_{k\ne i}U_k-L_i\},\qquad
+ i^*\in\arg\min_iR_i,
+ \label{eq:regret}
+\end{equation}
+\begin{equation}
+ \mathcal C=\{i:U_i\geq\max_{k\ne i}L_k\}.
+\end{equation}
+Maximum regret $R_i$ measures how far the selected city could trail another
+city. Set $\mathcal C$ retains every city that could still be first.
+The maximum excludes the selected city itself. These conditional data bounds
+are not sampling confidence intervals, and a conservative recommendation does
+not identify a uniquely best city.
+
+\subsection{Scoring results and interpretation}
+Zurich minimizes maximum regret, followed by Singapore and Oslo
+(Table~\ref{tab:baseline}). Zurich's score lower bound is below those of
+Singapore and Oslo; its own upper bound is excluded from its competitor set.
+Its regret is $70.90353-53.53548=17.36805$, whereas Oslo's is
+$72.18379-54.29594=17.88785$. All sixteen cities remain possible champions.
+The decision order expresses a conservative recommendation under the stated
+criteria and intervals.
+
+\input{task4_v123_assets/baseline.tex}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{task4_v123_assets/score_intervals.pdf}
+\caption{Current score bounds and conservative decision order for the sixteen
+cities. Intervals retain missing information; they are not confidence intervals.
+Source: frozen city matrix and admitted supplements.}
+\label{fig:intervals}
+\end{figure}
+
+Holding weights and formulas fixed, the fifteen admitted supplements narrow
+the average fixed-weight score interval from 18.81077 to 16.18302, a
+\TotalWidthReduction\% reduction. The most recent five additions alone narrow
+it by 4.44\%, moving Stockholm from thirteenth to fourth. Withdrawal of the
+two recent historical transport inventories still recommends Zurich; withdrawal
+of Singapore's historical school-stage travel proxy also preserves this
+recommendation. Evidence improves precision and changes decisions before it
+necessarily reduces the possible-champion set.
+
+As a method diagnostic, TOPSIS and VIKOR use the same illustrative midpoint
+utilities and weights. VIKOR balances total and largest weighted shortfalls
+equally and uses sample best/worst values \cite{vikor}. \MethodComparison
+The midpoint comparison does not replace the interval decision in
+Equation~\ref{eq:regret}. Agreement indicates similarity within the chosen
+conventions; disagreement exposes method dependence rather than justifying a
+post-hoc choice of the preferred winner.
+
+\FloatBarrier
+\subsection{A significant revision: retaining uncertain evidence}
+A controlled comparison shows why the evidence bounds belong in the decision.
+On the same 160 utility entries, we compare the midpoint completion
+$z_{ij}=(\ell_{ij}+h_{ij})/2$ with the retained-interval formulation in
+Equation~\ref{eq:regret}. Both use identical weights, anchors and TOPSIS scores.
+The midpoint is a declared diagnostic scenario, rather than an estimate of
+missing observations or a reconstruction of the team's historical first model.
+
+The revision retains 48 non-point entries and selects the city with the smallest
+worst-case shortfall. Zurich remains the recommendation, but thirteen cities
+change decision rank under fixed weights; Kendall's $\tau_b=0.600$.
+Dublin, Helsinki and Paris rank second, third and fourth at the midpoint,
+whereas Singapore, Oslo and Stockholm occupy those positions in the interval
+decision. With equal weights, fifteen ranks change and $\tau_b=0.667$.
+
+A constructed interior completion demonstrates the consequence. Keep the other
+cities at their utility midpoints and set each uncertain Zurich utility to
+$\ell_{ij}+0.1(h_{ij}-\ell_{ij})$. All 112 point values stay fixed, and each
+of the 48 uncertain values is strictly inside its interval. Dublin then scores
+62.31483 and Zurich 55.54326, putting Zurich thirteenth in that completion.
+At the more adverse rectangular endpoints, Dublin's 70.90353 exceeds Zurich's
+53.53548 by exactly 17.36805, realizing Zurich's model maximum regret.
+Some endpoints represent raw-scale suprema; these constructions concern the
+declared utility rectangle, rather than an observed population or a proof of
+joint physical attainability.
+
+This revision improves the interpretation of the decision: one chosen completion
+identifies a conditional first place, while the interval rule retains all sixteen
+possible champions and still selects a conservative action. It changes the
+handling of uncertainty within one scoring framework. The earlier 13.97\%
+interval-width reduction comes separately from admitted data, not from this
+controlled model comparison.
+
+\section{Model revision and extension}
+\subsection{Considering future changes}
+We examine three conditional changes while holding anchors and population
+denominators fixed. Resource expansion raises higher-education, stop and pool
+densities by 10\%. Living pressure raises living costs, housing cost ratios and
+travel durations by 10\%. Balanced improvement reduces pupil--teacher ratios,
+PM$_{2.5}$ and travel durations by 10\%. A comparable multi-year panel is not
+available, so these changes have no estimated annual rate or forecast date.
+
+For raw multiplier $r>0$, the utility transformations are
+\begin{equation}
+ T_r^{+}(u)=\frac{ru}{1-u+ru},\qquad
+ T_r^{-}(u)=\frac{u}{u+r(1-u)}.
+\end{equation}
+These increasing maps propagate raw-scale changes through benefit and cost
+intervals. For known mean travel duration, the new Jensen interval is
+$[e^{-r\bar t/30},1]$. Singapore instead has bounds $[L_q,U_q]$ on expected
+utility. With $q=e^{-t/30}$ and $t'=rt$, Jensen and $0\leq q\leq1$ give
+\begin{equation}
+ \mathbb E[q^r]\in
+ \begin{cases}
+ [L_q,U_q^r],&0<r<1,\\
+ [L_q,U_q],&r=1,\\
+ [L_q^r,U_q],&r>1.
+ \end{cases}
+ \label{eq:moment}
+\end{equation}
+Raising both endpoints to $r$ would generally misrepresent an expected utility.
+Equation~\ref{eq:moment} is an outer moment bound and need not be reversible.
+Fully missing travel remains unknown. Thus the extension accommodates the
+different information supplied by means and by travel distributions.
+
+\FutureDeterministic
+We also solve a decision boundary: holding other cities fixed, proportionally
+reduce one city's pupil--teacher ratio, PM$_{2.5}$ and travel durations until
+its maximum regret ties that of the best other city. \FutureThresholds
+These thresholds describe the model response to a specified joint change;
+they do not establish policy feasibility or a uniquely identified champion.
+
+For a separate future-shock simulation, each draw combines a common shock and
+city-specific shocks under a declared bounded distribution, with the criterion
+weights held fixed. Original data intervals are not randomly completed.
+\FutureMonteCarlo
+These are conditional stress frequencies under an uncalibrated distribution.
+Weight perturbations below answer a separate question and are not blended
+silently into the future-shock frequencies.
+
+\subsection{Considering different preferences and development situations}
+Education priority doubles the weights of the two education indicators.
+The independent living scenario doubles travel and transport-stop weights.
+Equation~\ref{eq:weights} then normalizes all weights.
+\PreferenceResults
+The resulting differences show how the definition of a desirable city affects
+the decision. They do not establish measured differences between fourteen- and
+eighteen-year-old students.
+
+\subsection{Perturbing weights}
+For each preference centre $w'$, we draw
+$w^{(b)}\sim\operatorname{Dirichlet}(\kappa w')$, with
+$\kappa\in\{20,100,500\}$ and 10,000 draws per setting. Every draw recomputes
+interval TOPSIS and maximum regret without filling missing values. We report
+mean decision rank, fractional first-place recommendation frequency and
+fractional top-three decision membership; ties share membership.
+
+\input{task4_v122_tables/preferences.tex}
+
+
+
+\MonteCarloInterpretation
+These two summaries optimize different quantities. We retain minimum maximum
+regret as the predeclared decision rule; Monte Carlo reports its sensitivity.
+Neither average ranks nor a network aggregation resolves the missing empirical
+information. A low AHP consistency ratio and repeated simulations demonstrate
+calculation properties, not representative student opinion.
+
+\subsection{Within-city fairness and growth stages}
+Citywide facilities per resident measure supply, not who can use it. Fees,
+opening hours, transport links, disability access and neighbourhood location
+can separate nominal supply from student opportunity. Without matched student
+locations and qualifying facilities, the city-level matrix cannot identify
+these access distributions.
+
+\EquityCase
+To extend the same education criterion to districts $d$, let $n_d$ be the
+matched pupil count and $r_d$ its pupil--teacher ratio. The student-weighted
+utility is $\bar u=\sum_d n_d\,15/(15+r_d)/\sum_dn_d$.
+Its difference from a citywide ratio reflects spatial aggregation, not an
+effect of any particular policy. A school-location analysis also does not locate
+resident students or establish their travel access.
+
+For future access measurement, define $a_s$ as a student's qualifying access
+measure, incorporating the relevant eligibility, price and time conditions.
+With student weights $p_s$, report the weighted mean and the bottom-20\%
+mean using fractional inclusion at the threshold. A common safety or travel
+standard could also be reported as weighted coverage. These require additional
+matched data; substituting a municipal average would not measure fairness.
+
+\AgeCase
+We therefore separate two mechanisms: age can change the observed indicators
+(travel, permissions or opportunities), and preferences can change the weights.
+An evidence-based age comparison would require $u_{ij}^{(14)}$ and
+$u_{ij}^{(18)}$ for comparable residents, then independently elicited
+$w_j^{(14)}$ and $w_j^{(18)}$ where available. The present preference scenarios
+test priorities without assigning unsupported age labels or pretending that
+all students face the same access.
+
+\section{Comparing cities within the same country}
+Every primary city belongs to a different country, so the main sample cannot
+identify within-country city contrasts. We use the existing United States and
+India cases as separately versioned examples with the same ten indicator
+definitions and scoring formula. They do not enter the sixteen-city ranking,
+and comparison within a country does not remove differences in source year,
+city boundary or educational coverage.
+
+\input{task4_v122_tables/country.tex}
+
+\CountryInterpretation
+Overlapping score intervals leave both cities possible winners within each
+pair. Dimension-specific differences are more informative than attributing
+every score difference to a national effect. No causal national explanation is
+identified by these descriptive cases.

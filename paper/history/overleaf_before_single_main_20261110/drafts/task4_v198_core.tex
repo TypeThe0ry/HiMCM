@@ -1,0 +1,412 @@
+% Owned V123 contribution rebased to V197 evidence and established controlled extensions.
+\section{Data collection and comparability}
+\subsection{A traceable city--indicator matrix}
+We compare $M=16$ cities on $N=10$ indicators covering safety, environment,
+household costs, education and everyday resources. The initial matrix is the
+team-supplied city table \cite{teamtable}. We retain its existing values, populations, reference
+years and source flags as the agreed input, then supplement only fields empty in that original table.
+Some supplied values lack original source URLs, so their provenance remains
+the team table; official supplements do not retrospectively validate every
+supplied measurement. Table~\ref{tab:indicators} states what each variable measures.
+
+\input{task4_v198_assets/indicators.tex}
+
+The nominal reference year is 2025; supplements retain their actual years and
+supplied population denominators. Matching Eurostat records give Dublin's
+28.8 minutes for 2011 and Zurich's 39.9 for 2024 as journeys to work, currently
+labelled ``greater city''; Zurich's value is flagged estimated \cite{eurostatcommute}.
+These matches establish neither the team's source lineage nor the historical
+boundary. We retain the supplied means, years and flags as conditional
+general-commute proxies. They do not identify high-school journeys.
+Mixed-year densities and historical inventories remain conditional;
+withdrawal scenarios examine their role in the decision.
+
+We use official statistical tables, operator inventories and municipal geodata
+to fill missing fields. For each admitted supplement, the archive records the
+provider, URL, year, geographic and population scope, units, extraction rule and
+file hash. Original PDFs and API responses are retained separately from derived
+tables. Search summaries locate evidence; numerical admission requires the
+underlying record or an explicitly identified provider capture. Values are
+converted to compatible units before utility calculation: for example, the
+supplied higher-education density per million is divided by ten to obtain the
+per-100,000 scale. Mode share is not converted into physical stop density.
+
+\subsection{Collection problems and their resolution}
+\textbf{Count city facilities, not platforms or entire networks.}
+Selecting Oslo's municipal GIS records within the city boundary yields 89
+metro stations after consolidating 186
+platforms; Zurich's 2025 VBZ report distinguishes 446 city stops from 235
+outside the city \cite{oslo,vbz}. Helsinki's November 2026 operator snapshot
+similarly separates 19 Helsinki stations from 11 in Espoo \cite{helsinki}.
+For a verified subset count $c$, fixed population $P$ and anchor $a$, we use
+$d=10^5c/P$ and utility $[d/(a+d),1]$, leaving uncounted providers unknown.
+Madrid's May 2026 register has 293 records, of which 242 carry city code
+28079. Omitting two unnamed records without lines and consolidating native
+station identifiers gives 191 complexes \cite{madridmetro,inecodes}. Vienna illustrates why record totals
+alone are insufficient: 1,695 named areas include unverified depot objects,
+so only 99 metro areas individually matched to existing-station geodata and
+the city polygon are retained \cite{viennaogd,viennagis}.
+
+Native identifiers, verified aliases and operator interchange maps prevent
+transfer stations from being counted once per line. Prague retains 57 current
+metro complexes; Flora's closure explains its omission from the 58 distinct
+complexes in the 2025 report, whereas Florenc's partial accessibility restriction
+does not close the whole complex \cite{pidmetro,dpp2025,floraclose}.
+Berlin's nine BVG U-Bahn profiles consolidate 131 zone-A appearances into 100
+complexes. Zone A extends through the S-Bahn ring; the retained U-Bahn subset
+leaves outer stations and other modes uncounted
+\cite{bvg}. Milan's municipal layer, distinguished from its entrance layer,
+selects records with both the Milano name and code 015146, yielding 104
+stations/hubs after five map-supported interchange consolidations;
+proximity alone does not merge stations \cite{milanmetro}.
+Tokyo's Oedo ticket-service directory lists 38 distinct stations in the 23
+wards; machine flags are not added. September 2026 updates describe the catalogue; its inventory
+date is unstated \cite{tokyooedo}. Warsaw's 21 M1 and 18 M2 entries yield 38
+complexes after merging \'Swi\k{e}tokrzyska. Its 2024 map distinguishes planned
+stations \cite{warsawmetro}; a 2025 fire report locates the lines within Warsaw
+\cite{warsawfirescope}. Counts use Tokyo's 2026 and Warsaw's 2024 populations.
+
+Amsterdam's 39 provider-grouped Metro locations give 35 inside both municipal
+2026 and CBS 2025 boundaries; a declared 100-metre nominal boundary screen
+retains 32 \cite{amsterdammetro2026,cbsboundary2025}. The screen defines a subset,
+not an accuracy guarantee. The 2026 metadata leave its inventory date unspecified.
+The retained 2025 population of 941,927 gives a conditional lower bound,
+leaving other transport supply unknown.
+
+London's inventory mixes platforms and entrances with stations. From 272
+station-level records, 62 have exact fare-zone value 1; it retains 59
+stations/hubs after two conservative omissions and
+Paddington hub consolidation; representative coordinates lie within the ONS
+December 2025 London-region boundary \cite{tflinventory,onslondon}.
+Singapore's LTA GeoJSON contributes 5,205 distinct nonempty bus-stop codes,
+without distance clustering \cite{sgbus_lta}; Stockholm's 2025 city--police
+report identifies thirteen metro stations in two districts \cite{stockholmmetro2025}.
+
+\textbf{Keep inventory dates, status and venue units explicit.}
+Milan's layer is dated 16 October 2024; Paris's 244 intra-muros metro stations
+come from a March 2022 atlas using RATP 2021 and Apur 2022 sources
+\cite{milanmetro,apur}. These historical lower-bound proxies are not relabelled
+as 2025 counts; a separate withdrawal restores the Paris supplement to unknown.
+Vienna, Berlin and London use November 2026 inventories. All retain the supplied
+population denominators, including Paris's 2023, Dublin's 2022 and
+Singapore's 2024 values. Inventory membership
+does not establish continuous operation or adolescent access.
+Stockholm's November 2026 directory retains thirteen municipal swimming venues after excluding a
+renovation closure and counting its replacement once \cite{stockpool}.
+Tokyo retains five Nerima indoor venues at distinct addresses: Heiwadai's
+current closure excludes it, while Miharadai's announced February--May 2027
+closure is not a current closure \cite{nerimapool,nerimaclose}.
+Named subsets include seven Singapore venues from April 2025, twelve Zurich
+venues captured in November 2026 and seventeen Milan indoor venues under the
+June 2025 tariff \cite{sgpool_2025,zurichpool,milanpool2025}.
+Zurich includes five distinct school pools with limited public sessions, some
+women/girls-only, closed during school holidays and non-school days; adult-only
+K\"ugeliloo is excluded. Venue supply does not establish adolescent access;
+other providers remain unknown.
+
+\textbf{Match school stages and teaching units before forming ratios.}
+Prague's 2024/25 totals are 80,073 secondary-school pupils and 6,877.1
+teacher full-time equivalents (FTE), including lower-gymnasium years. Subtracting the matching
+8,748 pupils and 737.8 FTE gives 71,325 upper-stage pupils and
+a rounding envelope of $[6139.2,6139.4]$ teacher FTE, including adult and non-daytime study modes
+\cite{prague}. Stockholm's city-school ratio covers upper-secondary years 1--3, all ownership
+types and the 15 October reference date. Its API value 16.42091405 is retained
+as $[16.35,16.45]$: a declared precision convention, not a measurement-error
+confidence interval \cite{kolada}.
+Warsaw's 2024/25 yearbook gives 119,740 pupils across six youth school routes
+by school location and all ownership types. Unknown youth allocation within
+adult-inclusive general-school FTE gives 2,490--8,144 FTE; outward one-FTE
+guards on four published cells widen this to 2,487--8,148 \cite{warsawedu2025}.
+The guards encode a unit-rounding assumption. These allocation and rounding
+bounds describe school resources, not a resident age-14--18 population or a
+statistical confidence interval.
+
+Some published denominators fail these checks. Henri-IV in Paris reports
+794 lyc\'ee pupils and 153.65 institution FTE for 2025, without upper-stage
+allocation or complete city coverage; a 2026 post-baccalaureate directory flag cannot recover
+2025 workloads \cite{deppmatch,deppdirectory}. Dublin's school-roll payroll
+FTE are unpublished \cite{irelandfte}; its November 2025 City Of Dublin ETB
+post-primary vocational subgroup has 411.8 payroll FTE against 376.1 allocated posts, so
+allocations are not a payroll ceiling \cite{irelandpayroll}.
+Finland's national FTE combines register, salary and private-provider estimation;
+without a verified one-sided error envelope it is not a guaranteed Helsinki
+teacher upper bound \cite{finlandfte}. All three city PTRs remain unknown.
+
+\textbf{Preserve incompatible rate units and supplied values.}
+Amsterdam's CBS sources give ten provisional victims in 2022 and 68 across
+2018--2022, neither matching the supplied numerator 340 \cite{cbshomicide2022}.
+Zurich's PKS lists one completed offence in 2024 and two in 2025; offences
+count criminal acts independently of victims, and the submitted rate 0.14
+still lacks a verified denominator \cite{zhpks2025}. Both original entries
+remain, with their contribution tested in Section~\ref{sec:sourcepolicy};
+we do not manufacture replacement rates from incompatible units.
+
+\textbf{Retain unobserved travellers and failed retrievals as uncertainty.}
+Singapore's initial census-PDF endpoint returned 404; the official Parliament
+mirror and API supplied the matching report and table \cite{singapore}.
+Duration-bin utility uses endpoints, no midpoints or artificial open-tail cap.
+Weighted enrolment estimates exceed travel coverage by 1,811 secondary,
+989 post-secondary non-tertiary and 1,635 polytechnic students. These are
+weighted survey estimates, not complete headcounts. Uncovered mass
+retains $[0,1]$ utility, and unknown stage shares use the interval convex hull.
+The resulting $[0.21048,0.61884]$ is a 2020 school-stage proxy, not an identified
+2025 interval for ages 14--18.
+Dublin's stop-download 403 yielded no catalogue-inferred count; a later official
+map from the 2023 plan, issued in 2024, supports nineteen existing
+city-centre tram stops \cite{dublin}.
+Warsaw's recovered 2022 survey reports a rounded 27-minute school trip for a
+city subgroup with sample base 22, but covers residents aged 15 and above
+without an upper-secondary or matched 14--18 denominator \cite{warsaw2022}.
+Its travel utility remains unknown.
+
+Figure~\ref{fig:identification-matrix} locates the remaining uncertainty.
+The 160 cells comprise 112 points, 37 partial intervals and 11 fully unknown
+entries: eight teacher-ratio and three travel entries. The original table had
+112 points, 12 partial intervals and 36 unknowns. Evidence for twenty-five distinct
+city--indicator cells fills original gaps while preserving supplied measurements.
+Facility supply, commute proxies and school resources remain distinct from
+adolescent access, school travel and learning quality.
+
+\input{task4_v198_evidence_figure.tex}
+
+\section{Establishing the baseline evaluation model}
+\subsection{Determining indicator weights}
+We retain eight main indicators at weight 0.1125 each and two auxiliary facility
+indicators, transport stops and pools, at 0.05 each, so $\sum_jw_j=1$.
+These weights express a transparent modelling choice. They are not estimated
+from a student survey. Equal weights provide a separate reference.
+TOPSIS is the primary score; VIKOR provides a focused method comparison.
+AHP represents explicit preference scenarios \cite{saaty}, and Monte Carlo measures
+sensitivity to declared distributions. These extensions retain the same
+criteria rather than introduce unrelated ranking models.
+
+For preference multipliers $m_j>0$, we use
+\begin{equation}
+ w'_j=\frac{m_jw_j}{\sum_kw_km_k},\qquad A_{jk}=\frac{w'_j}{w'_k}.
+ \label{eq:weights}
+\end{equation}
+\begin{samepage}
+The principal eigenvector of $A$ recovers $w'$. With $\lambda_{\max}$ its
+largest eigenvalue, $CI=(\lambda_{\max}-N)/(N-1)$ and $CR=CI/RI_N$.
+Because this matrix is built from exact ratios, $\lambda_{\max}=N$ and
+$CR=0$ up to numerical precision. This verifies internal consistency;
+it does not establish that these are students' actual preferences.
+\par\end{samepage}
+
+\subsection{TOPSIS scoring calculation}
+We adapt TOPSIS \cite{topsis} using fixed reference anchors to preserve a common scoring scale across evidence,
+preference and future scenarios. For benefit and cost measurements respectively,
+\begin{equation}
+ u^{+}(x)=\frac{x}{a+x},\qquad u^{-}(x)=\frac{a}{a+x}.
+\end{equation}
+Each anchor in Table~\ref{tab:indicators} is a declared reference scale, not
+an estimated optimum. Travel uses $q(t)=e^{-t/30}$ for duration $t$ in minutes.
+When only mean duration $\bar t$ is known, Jensen's inequality gives
+$\mathbb E[q(t)]\in[e^{-\bar t/30},1]$. Fully missing utilities remain $[0,1]$.
+
+For utility vector $u_i$, weighted distances from fixed worst and best points are
+\begin{equation}
+ D_i^-=\sqrt{\sum_jw_ju_{ij}^2},\qquad
+ D_i^+=\sqrt{\sum_jw_j(1-u_{ij})^2},\qquad
+ S_i=100\frac{D_i^-}{D_i^-+D_i^+}.
+\end{equation}
+Weights enter the squared distances once. Since $S_i$ increases with every
+utility, endpoints $\ell_i,h_i$ give $L_i=S(\ell_i)$ and $U_i=S(h_i)$.
+Under the retained rectangular uncertainty set, define
+\begin{equation}
+ R_i=\max\{0,\max_{k\ne i}U_k-L_i\},\qquad
+ i^*\in\arg\min_iR_i,
+ \label{eq:regret}
+\end{equation}
+\begin{equation}
+ \mathcal C=\{i:U_i\geq\max_{k\ne i}L_k\}.
+\end{equation}
+Maximum regret $R_i$ measures how far the selected city could trail another
+city. Set $\mathcal C$ retains every city that could still be first.
+The maximum excludes the selected city itself. These conditional data bounds
+are not sampling confidence intervals, and a conservative recommendation does
+not identify a uniquely best city.
+
+\subsection{Scoring results and interpretation}
+Zurich minimizes maximum regret, followed by Singapore and Oslo
+(Table~\ref{tab:baseline}). Zurich's score lower bound is below those of
+Singapore and Oslo; its own upper bound is excluded from its competitor set.
+Its regret is $70.90353-53.96521=16.93832$, whereas Oslo's is
+$72.18379-54.29594=17.88785$. All sixteen cities remain possible champions.
+The decision order expresses a conservative recommendation under the stated
+criteria and intervals.
+
+\input{task4_v198_assets/baseline.tex}
+
+
+
+Holding weights and formulas fixed, evidence for twenty-five distinct city--indicator cells narrows
+the average fixed-weight score interval from 18.81077 to \CurrentMeanWidth{}, a
+\TotalWidthReduction\% reduction. \LatestEvidenceChange
+Earlier additions improved Stockholm's decision position. Withdrawal of the historical Paris and Dublin transport inventories still recommends Zurich; withdrawal of Singapore's historical school-stage travel proxy also preserves this recommendation. Evidence improves precision and changes decisions before it
+necessarily reduces the possible-champion set.
+
+As a method diagnostic, TOPSIS and VIKOR use the same illustrative midpoint
+utilities and weights. VIKOR balances total and largest weighted shortfalls
+equally and uses sample best/worst values \cite{vikor}. \MethodComparison
+The midpoint comparison does not replace the interval decision in
+Equation~\ref{eq:regret}. Agreement indicates similarity within the chosen
+conventions; disagreement exposes method dependence rather than justifying a
+post-hoc choice of the preferred winner.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\linewidth]{task4_v198_assets/score_intervals.pdf}
+\caption{Current score bounds and conservative decision order for the sixteen
+cities. Intervals retain missing information; they are not confidence intervals.
+Source: frozen city matrix and admitted supplements.}
+\label{fig:intervals}
+\end{figure}
+
+\FloatBarrier
+\input{task4_v198_assets/revision.tex}
+
+\input{task4_v198_vintage.tex}
+
+\section{Model revision and extension}
+\subsection{Considering future changes}
+We examine three conditional changes while holding anchors and population
+denominators fixed. Resource expansion raises higher-education, stop and pool
+densities by 10\%. Living pressure raises living costs, housing cost ratios and
+travel durations by 10\%. Balanced improvement reduces pupil--teacher ratios,
+PM$_{2.5}$ and travel durations by 10\%. A comparable multi-year panel is not
+available, so these changes have no estimated annual rate or forecast date.
+
+For raw multiplier $r>0$, the utility transformations are
+\begin{equation}
+ T_r^{+}(u)=\frac{ru}{1-u+ru},\qquad
+ T_r^{-}(u)=\frac{u}{u+r(1-u)}.
+\end{equation}
+These increasing maps propagate raw-scale changes through benefit and cost
+intervals. For known mean travel duration, the new Jensen interval is
+$[e^{-r\bar t/30},1]$. Singapore instead has bounds $[L_q,U_q]$ on expected
+utility. With $q=e^{-t/30}$ and $t'=rt$, Jensen and $0\leq q\leq1$ give
+\begin{equation}
+ \mathbb E[q^r]\in
+ \begin{cases}
+ [L_q,U_q^r],&0<r<1,\\
+ [L_q,U_q],&r=1,\\
+ [L_q^r,U_q],&r>1.
+ \end{cases}
+ \label{eq:moment}
+\end{equation}
+Raising both endpoints to $r$ would generally misrepresent an expected utility.
+Equation~\ref{eq:moment} is an outer moment bound and need not be reversible.
+Fully missing travel remains unknown. Thus the extension accommodates the
+different information supplied by means and by travel distributions.
+
+\FutureDeterministic
+We also solve a decision boundary: holding other cities fixed, proportionally
+reduce one city's pupil--teacher ratio, PM$_{2.5}$ and travel durations until
+its maximum regret ties that of the best other city. \FutureThresholds
+These thresholds describe the model response to a specified joint change;
+they do not establish policy feasibility or a uniquely identified champion.
+\EvidenceThresholdCheck
+
+For a separate future-shock simulation, each draw combines a common shock and
+city-specific shocks under a declared bounded distribution, with the criterion
+weights held fixed. Original data intervals are not randomly completed.
+\FutureMonteCarlo
+\ProxyWithdrawalMC
+These are conditional stress frequencies under an uncalibrated distribution.
+Weight perturbations below answer a separate question and are not blended
+silently into the future-shock frequencies.
+
+\subsection{Considering different preferences and development situations}
+Education priority doubles the weights of the two education indicators.
+The independent living scenario doubles travel and transport-stop weights.
+Equation~\ref{eq:weights} then normalizes all weights.
+\PreferenceResults
+\PreferenceEvidenceChange
+The resulting differences show how the definition of a desirable city affects
+the decision. They do not establish measured differences between fourteen- and
+eighteen-year-old students.
+
+\subsection{Perturbing weights}
+For each preference centre $w'$, we draw
+$w^{(b)}\sim\operatorname{Dirichlet}(\kappa w')$, with
+$\kappa\in\{20,100,500\}$ and 10,000 draws per setting. Every draw recomputes
+interval TOPSIS and maximum regret without filling missing values. We report
+mean decision rank, fractional first-place recommendation frequency and
+fractional top-three decision membership; ties share membership.
+
+\input{task4_v198_assets/preferences.tex}
+
+
+
+At baseline concentration 100, Zurich has a smaller sample mean decision rank
+(2.0269) than Oslo (2.1779) and the higher sample recommendation frequency.
+We retain minimum maximum regret as the predeclared decision rule; these
+conditional summaries describe its weight sensitivity. A low AHP consistency
+ratio checks calculation properties, not representative student opinion.
+
+Numerical precision can be quantified separately from evidence uncertainty.
+For $n=10{,}000$ independent, identically distributed draws within each setting,
+Hoeffding's inequality and a union bound over the $m=2064$ exported means across
+37 settings give a common event of probability at least $0.95$ with error
+at most $R\sqrt{\log(2m/0.05)/(2n)}$, where the response range $R$ is 1 for
+frequencies and 15 for ranks \cite{hoeffding}.
+The resulting half-widths are 2.38 percentage points and 0.357 ranks;
+shared draws across outputs are allowed. On this event, subtracting two mean
+intervals bounds their difference. Oslo minus Zurich at baseline concentration
+100 gives $[-0.563,0.865]$, leaving their expected mean-rank order unresolved
+by this guarantee. These bounds concern integration under the declared
+simulation laws.
+
+\subsection{Within-city fairness and growth stages}
+Citywide facilities per resident measure supply. Student access additionally
+depends on fees, opening hours, transport, disability access and location;
+identifying its distribution requires matched students and qualifying facilities.
+
+\EquityCase
+For districts $d$ with pupil counts $n_d$ and pupil--teacher ratios $r_d$,
+the pupil-weighted utility is
+$\bar u=\sum_d n_d\,15/(15+r_d)/\sum_dn_d$.
+Its difference from pooled utility reflects aggregation; school-location data
+establish neither resident travel access nor policy effects.
+
+For Istanbul's retained 2012 high-school cohort aged 14--18, let $L_{0.2}$
+be the lowest-20\% weighted mean travel utility, with fractional boundary
+inclusion, and $\mu$ the overall mean. Unknown utilities lie in $[0,1]$; optional membership remains uncertain. Observed weight is $W=499950$; including all
+optional members gives $N_{\max}=681503$. The sharp joint bound is
+$\min(\mu-L_{0.2})=(W/N_{\max})(\mu_{\mathrm{obs}}-L_{0.2,\mathrm{obs}})=0.226686$,
+where ``obs'' denotes observed trips.
+Including all optional members and setting unknown trips to 45 minutes attains it.
+With cohort, weights and missing-data rules fixed, allowing arbitrary utility
+changes to at most 5\% or 20\% of observed weighted mass leaves sharp minimum gaps
+0.200134 or 0.129091, respectively. This fractional-mass relaxation uses declared
+error budgets, not estimated error rates or fractions of students.
+The official-portal aggregate projection, rather than original CSV bytes,
+supports these historical feasibility results, not current facility-use estimates
+\cite{istanbul}.
+
+\AgeCase
+
+\input{task4_v198_assets/age_joint.tex}
+
+Comparing exact ages fourteen and eighteen requires matched resident utilities
+$u_{ij}^{(14)},u_{ij}^{(18)}$ and separately elicited weights
+$w_j^{(14)},w_j^{(18)}$. Our analyst preference scenarios carry no age labels.
+
+\section{Comparing cities within the same country}
+Every primary city belongs to a different country, so the main sample cannot
+identify within-country city contrasts. We use the existing United States and
+India cases as frozen legacy25 V117 examples with the same ten indicator
+definitions and scoring formula \cite{legacycase}. They do not enter the sixteen-city ranking,
+and comparison within a country does not remove differences in source year,
+city boundary or educational coverage.
+
+\input{task4_v172_country_figure.tex}
+
+\CountryInterpretation
+Affordability contrasts use Numbeo's 2025 named-city aggregates
+\cite{numbeocase}; the Mumbai--Delhi air contrast uses 2021 WHO monitoring
+means \cite{whocase}. These source scopes are retained in the case source index.
+These descriptive contrasts do not identify a national causal effect.
+
+\FloatBarrier

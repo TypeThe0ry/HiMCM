@@ -1,0 +1,39 @@
+{
+  "status": "not_admitted",
+  "primary_admissions": 0,
+  "city": "Warsaw",
+  "indicator": "travel",
+  "source_is_not_WBR2025": true,
+  "fieldwork": "12 March to 30 April 2022",
+  "survey_population": "Residents of Warsaw and 69 RWS municipalities, age 15 and above",
+  "all_region_sample": 7702,
+  "all_warsaw_sample": 800,
+  "school_travel_warsaw_sample_base": 22,
+  "school_travel_region_sample_base": 408,
+  "school_stage_or_14_to_18_subgroup_not_identified": true,
+  "published_warsaw_mean_minutes": 27,
+  "mean_is_published_rounded_value_not_exact_utility": true,
+  "duration_chart_pdf_page": 64,
+  "displayed_city_percentages": [
+    19,
+    61,
+    17,
+    4
+  ],
+  "displayed_city_percentages_sum": 101,
+  "open_tail_city_percentage": "Not labelled; no exact zero or leftover probability inferred",
+  "bins": [
+    "up to 15 min",
+    "16-30 min",
+    "31-45 min",
+    "46-60 min",
+    "over 60 min"
+  ],
+  "rejection_reasons": [
+    "No published high-school-stage city duration subset or matching full target-population denominator in inspected pages",
+    "The survey excludes age 14 and does not identify exact target ages 14-18",
+    "No verified reconstruction of 2025 from the 2022 fieldwork",
+    "Displayed integer bins are rounded and not an exact probability distribution; no renormalization or zero-tail assumption"
+  ],
+  "interpretation": "Recovered original supports a historical broad school-travel record; it does not establish current high-school utility bounds. No claim that detailed target microdata do not exist."
+}

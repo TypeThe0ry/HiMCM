@@ -1,0 +1,90 @@
+{
+  "iteration": "V162",
+  "scope": "Hypothetical observed-utility errors only; fixed cohort and weights; weighted-mass relaxation, not whole-person corruption",
+  "city": "Istanbul",
+  "year": 2012,
+  "alpha": 0.2,
+  "observed_weight": 499950.0,
+  "known_unknown_weight": 177066,
+  "optional_weight": 4487,
+  "max_denominator": 681503.0,
+  "breakpoints": 1227,
+  "rows": [
+    {
+      "observed_weight_error_fraction": 0.0,
+      "editable_weight": 0.0,
+      "sharp_gap_in_fractional_mass_set": 0.22668552699248698,
+      "attaining_unknown_and_edited_utility": 0.22313016014842982,
+      "attaining_minutes": 45.0,
+      "witness_mean": 0.3744446533401501,
+      "witness_lower_tail": 0.14775912634766314
+    },
+    {
+      "observed_weight_error_fraction": 0.01,
+      "editable_weight": 4999.5,
+      "sharp_gap_in_fractional_mass_set": 0.22058317941059008,
+      "attaining_unknown_and_edited_utility": 0.22313016014842982,
+      "attaining_minutes": 45.0,
+      "witness_mean": 0.3759702402356243,
+      "witness_lower_tail": 0.15538706082503426
+    },
+    {
+      "observed_weight_error_fraction": 0.05,
+      "editable_weight": 24997.5,
+      "sharp_gap_in_fractional_mass_set": 0.2001342449196498,
+      "attaining_unknown_and_edited_utility": 0.26359713811572677,
+      "attaining_minutes": 40.0,
+      "witness_mean": 0.39315982441063113,
+      "witness_lower_tail": 0.19302557949098137
+    },
+    {
+      "observed_weight_error_fraction": 0.1,
+      "editable_weight": 49995.0,
+      "sharp_gap_in_fractional_mass_set": 0.17718997773022027,
+      "attaining_unknown_and_edited_utility": 0.26359713811572677,
+      "attaining_minutes": 40.0,
+      "witness_mean": 0.3869651817871731,
+      "witness_lower_tail": 0.2097752040569528
+    },
+    {
+      "observed_weight_error_fraction": 0.2,
+      "editable_weight": 99990.0,
+      "sharp_gap_in_fractional_mass_set": 0.1290908184496349,
+      "attaining_unknown_and_edited_utility": 0.36787944117144233,
+      "attaining_minutes": 30.0,
+      "witness_mean": 0.4493177851630868,
+      "witness_lower_tail": 0.32022696671345185
+    },
+    {
+      "observed_weight_error_fraction": 0.5,
+      "editable_weight": 249975.0,
+      "sharp_gap_in_fractional_mass_set": 0.03764543504551327,
+      "attaining_unknown_and_edited_utility": 0.36787944117144233,
+      "attaining_minutes": 30.0,
+      "witness_mean": 0.401474891643131,
+      "witness_lower_tail": 0.3638294565976177
+    },
+    {
+      "observed_weight_error_fraction": 0.7842464246424643,
+      "editable_weight": 392084.0,
+      "sharp_gap_in_fractional_mass_set": 0.0,
+      "attaining_unknown_and_edited_utility": 0.36787944117144233,
+      "attaining_minutes": 30.0,
+      "witness_mean": 0.36787944117144233,
+      "witness_lower_tail": 0.36787944117144233
+    }
+  ],
+  "zero_gap_threshold_observed_weight_fraction": 0.7842464246424643,
+  "largest_observed_utility_tie_weight": 107866.0,
+  "error_rates_estimated": false,
+  "raw_record_source_upgraded": false,
+  "source_representation": "Exa web_fetch_exa official CKAN projection; not original CSV bytes",
+  "primary_data_admissions": 0,
+  "primary_score_width_change": 0,
+  "current_model": "V154 unchanged",
+  "current_paper": "V160 unchanged",
+  "source_sha256": {
+    "data/task4_v116_ibb/aggregate_results.json": "b85a746387cdcc7265545cee1ab1326d762b538d3ec362091e2b1195a0883f48"
+  },
+  "generator_sha256": "7c426774f2db8ed0388cd7779d5c0fdc75cc6570d062e8545c5bd6c3d7e9ddd2"
+}

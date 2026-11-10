@@ -1,0 +1,57 @@
+{
+  "retrieval.json": [
+    {
+      "file": "enge_portrait_original.html",
+      "url": "https://www.ken.ch/portraet",
+      "retrieved_at": "2026-11-09T08:41:14.743036+00:00",
+      "status": 200,
+      "bytes": 34327,
+      "sha256": "41ca94fc8479ee75eea3ad25ae0b899120c4d8be70d1fea6e773f10082b7ce5d",
+      "representation": "original HTTP response body"
+    },
+    {
+      "file": "enge_documents_original.html",
+      "url": "https://www.ken.ch/service/dokumente",
+      "retrieved_at": "2026-11-09T08:41:14.744912+00:00",
+      "status": 200,
+      "bytes": 34072,
+      "sha256": "49938d48ebb5c7c6b9f44509fbf04d7d66c256f1acf697e5b62f08e806ec7f2e",
+      "representation": "original HTTP response body"
+    },
+    {
+      "file": "stadelhofen_2024_25_original.pdf",
+      "url": "https://cms.ksstadelhofen.ch/uploads/Unsere-Schule/Jahresbericht-2024_25_gesamt_DEF_Website.pdf",
+      "retrieved_at": "2026-11-09T08:41:14.748689+00:00",
+      "status": 200,
+      "bytes": 9091698,
+      "sha256": "282a3d7b096eb7588d5feee6fd492367937d1266912b4e7241471c097f066429",
+      "representation": "original HTTP response body"
+    }
+  ],
+  "eurostat_retrieval.json": {
+    "file": "eurostat_CH_ED3_2024_original.json",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/educ_uoe_perp02?geo=CH&isced11=ED3&time=2024&lang=EN",
+    "retrieved_at": "2026-11-09T08:43:49.729796+00:00",
+    "status": 200,
+    "bytes": 4562,
+    "sha256": "efb6a78eaaa0026e3db9a232d0631fe92549b661cd9bc669a29137011eb109c6"
+  },
+  "metadata_retrieval.json": [
+    {
+      "file": "eurostat_personnel_footnotes_original.xlsx",
+      "url": "https://ec.europa.eu/eurostat/cache/metadata/Annexes/educ_uoe_enr_esms_an_Footnote_PERS_2018-2024.xlsx",
+      "retrieved_at": "2026-11-09T08:45:13.355817+00:00",
+      "status": 200,
+      "bytes": 2864276,
+      "sha256": "e33d42ba8df37dc19a98f6638455c03ff7e76127d66911d29a9408511052bf22"
+    },
+    {
+      "file": "eurostat_CH_metadata_original.html",
+      "url": "https://ec.europa.eu/eurostat/cache/metadata/EN/educ_uoe_enr_esmsed_ch.htm",
+      "retrieved_at": "2026-11-09T08:45:13.356758+00:00",
+      "status": 200,
+      "bytes": 206374,
+      "sha256": "4933d055756bf59093f4530b3218419f46c40acb0df5a6bba77d2c2e66eefd47"
+    }
+  ]
+}

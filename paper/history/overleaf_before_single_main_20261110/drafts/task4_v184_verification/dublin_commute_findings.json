@@ -1,0 +1,67 @@
+{
+  "version": "V184 Dublin retained commute provenance",
+  "primary": "V181 unchanged",
+  "paper": "V182 unchanged",
+  "primary_admissions": 0,
+  "actual_score_width_change": 0,
+  "search_queries": 6,
+  "routes": [
+    "Eurostat current Urban Audit API and methodological handbook",
+    "CSO2011 commuting provenance search; no additional matching original recovered"
+  ],
+  "retained_input": {
+    "value_minutes": 28.8,
+    "year": 2011,
+    "flag": "STALE",
+    "city_scope": "city proper (official) as supplied",
+    "source": "Untouched team CSV"
+  },
+  "official_match": {
+    "provider": "Eurostat",
+    "dataset": "urb_ctran",
+    "indicator": "TT1019V",
+    "indicator_label": "Average time of journey to work - minutes",
+    "city_code": "IE001C",
+    "city_label": "Dublin (greater city)",
+    "time": 2011,
+    "frequency": "A",
+    "value_minutes": 28.8,
+    "flattened_JSONstat_index": 6,
+    "published_status_flag": null,
+    "status_interpretation": "Original response has no status block; no quality guarantee inferred",
+    "updated": "2026-11-04T23:00:00+0100",
+    "file": "eurostat_dublin2011_original.json",
+    "sha256": "e7422124a7745dce9924c6f575f9afc22a9151d70334b9d0cad88be38be904be"
+  },
+  "methodological_reference": {
+    "file": "urban_handbook2004_original.pdf",
+    "edition": 2004,
+    "physical_page": 47,
+    "printed_page": "46/87",
+    "variable_listing_physical_page": 46,
+    "definition_scope": "Historical handbook: journey to work follows the shortest residence-to-work trip including mode changes; workplace lies within specified boundary and residence may be elsewhere, including across borders.",
+    "visual_definition_page_reviewed": true,
+    "interpretation": "Historical general methodology, not independent verification of the2011Irish implementation, respondent population, original supplied table lineage or historical boundary polygon."
+  },
+  "conclusions": [
+    "An official annual2011equal-value match exists; it does not prove that the supplied value was copied from this record.",
+    "Current official IE001C label is greater city, unlike the supplied city-proper label. A2011boundary correspondence has not been established.",
+    "This is a work-journey mean, not an upper-secondary school-trip mean or age14\u201318 duration distribution.",
+    "No matched duration bins were recovered in these requests; the17indicator annual API response contains no age/duration-bin dimension.",
+    "Preserve28.8/2011/STALE and existing Jensen bounds; do not intersect unrelated city or school distributions."
+  ],
+  "source_hashes": {
+    "eurostat_dublin2011_original.json": "e7422124a7745dce9924c6f575f9afc22a9151d70334b9d0cad88be38be904be",
+    "README.md": "0186145ce2aa13e22e9fc04bd7314bcff5e16895e55896ea942c1a38b00a828a",
+    "retrievals.json": "a613782bcadb72ceab4c09ed7261df590a7e92b2cd1044b8b2690f014c542220",
+    "urban_handbook2004_original.pdf": "caca3944aad3610ced62e6b240a383385f91f4aac466896e482697166e8f1a18"
+  },
+  "search_query_texts": [
+    "site.ec.europa.eu/eurostat \"Average time of travel to work\" urban",
+    "site.ec.europa.eu \"Dublin\" \"28.8\" \"2011\"",
+    "Eurostat urb_ctran average travel work indicator code",
+    "Eurostat Urban Audit TT1012V commuting time Dublin 2011",
+    "site.ec.europa.eu/eurostat \"Dublin\" \"greater city\" \"IE001C\"",
+    "site.cso.ie \"2011\" \"Dublin\" \"28.8\" \"commut\""
+  ]
+}

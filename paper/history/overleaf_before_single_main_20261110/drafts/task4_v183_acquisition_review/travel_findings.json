@@ -1,0 +1,53 @@
+{
+  "version": "V183 bounded travel source check",
+  "primary_context": "V181 user16; V182 owned review",
+  "primary_admissions": 0,
+  "changes_to_primary_model": false,
+  "changes_to_manuscript": false,
+  "search_queries_used": 6,
+  "scope": "Two target routes Tokyo and Vienna; Warsaw known2022mixed-age route not repeated",
+  "sources": [
+    {
+      "file": "oerok2024_original.pdf",
+      "provider": "\u00d6sterreichische Raumordnungskonferenz",
+      "publication_year": 2024,
+      "transport_model_reference": 2023,
+      "school_inventory_year": "2021/2022",
+      "city": "Vienna",
+      "published_table": "Table30, printed page74, physical PDFpage76",
+      "population_scope": "ISCED3 educational accessibility, relevant age15\u201319 group",
+      "observed_cell": {
+        "row": "Wien",
+        "column": "ISCED3",
+        "value_minutes": 8.2
+      },
+      "definition": "Modelled weighted travel time to educational institutions, public transport schoolday arrival07:00\u201308:15; nearest eligible schools, not surveyed journeys to actually attended schools",
+      "method_scope_location": "Table2/school inventory printedpage14, physicalpage16; nearest-target definition in methods/summary",
+      "admission": "rejected_for_current_school_travel",
+      "reason": "Nearest-school accessibility does not identify actual upper-secondary one-way travel mean or its distribution. No verified linkage to actual school choice; do not treat8.2 as observed2025schooltrip or as a calibrated bound on current expected travel utility.",
+      "table_visual_checked": true,
+      "sha256": "f96d5a948236b5f1b11a1afb8370a3bb8b92242a5c97c0f839cafea32dfb5142"
+    },
+    {
+      "file": "tokyo2024_timeuse_original.csv",
+      "provider": "Tokyo Metropolitan Government Bureau of General Affairs Statistics Division",
+      "yearbook_edition": 2024,
+      "observation_year": 2021,
+      "city": "Tokyo-to",
+      "population_scope": "All15\u201319years, bothsexes, not an upper-secondary-school-only denominator",
+      "published_table": "2024statisticalyearbook17-19; overall average bysex/age/activity, wholeweek",
+      "observed_cell": {
+        "age": "15-19 years old",
+        "sex": "total",
+        "activity": "Commuting to and from school or work",
+        "value_minutes": 62
+      },
+      "admission": "rejected_for_current_school_travel",
+      "reason": "Combined daily school/work time across15\u201319residents and wholeweek is not actual one-way upper-secondary travel. Halving62to31would add unverified return-trip symmetry, journey frequency and school-only denominator assumptions.",
+      "encoding": "utf-8-sig",
+      "sha256": "7acbf5e614ba8939fa9114261bccd712acc5e115bffe6a3ce510e723e30a8661",
+      "year_evidence": "Original CSV footer table title on line55: Reiwa3 / DAILY AVERAGE OF FULL WEEK (2021);2024 is yearbook edition."
+    }
+  ],
+  "failed_match": "No newly admitted matched school-travel observation obtained within bounded search; retain existing unknown travel utility intervals"
+}

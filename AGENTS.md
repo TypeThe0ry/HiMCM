@@ -13,13 +13,13 @@ Before drafting or editing manuscript text, abstracts, conclusions, press releas
 
 ## Priority: Overleaf workspace
 
-Current scientific entry: **user16 V197**, with V197 controlled extensions and the current independent full review registered in `research/2026-a/design/task4_user_current_review.json`. The V136/V137 evidence and V148 review remain frozen; current extension registry is `research/2026-a/design/task4_user_current_extensions.json`. The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
+Current scientific entry: **user16 V200**, with V200 controlled extensions and the current independent full review registered in `research/2026-a/design/task4_user_current_review.json`. The V136/V137 evidence and V148 review remain frozen; current extension registry is `research/2026-a/design/task4_user_current_extensions.json`. The V131 paper (documentation V134) remains frozen. Read the current handoff before running older scripts; V125 and earlier review artifacts retain their frozen evidence. Preserve the original CSV and the explicit 16-city entry.
 
 The user explicitly made the Overleaf workspace the first priority on 2026-11-07.
 
 - Treat the latest Overleaf project as the authoritative manuscript workspace. The sibling `HiMCM-Overleaf` checkout tracks https://www.overleaf.com/project/6aeec16f3ea7a24e3d91e894; GitHub `TypeThe0ry/HiMCM` holds research code, data, results, and the reference library.
 - Before manuscript changes, inspect the current connected Overleaf workspace when available and fetch the latest commits in `HiMCM-Overleaf`. Do not claim the repository mirror is the live Overleaf state.
-- Keep all authored manuscript drafts, LaTeX sources, bibliography, and thesis class in `HiMCM-Overleaf`. Its root `main.tex`, `ref.bib`, and `mcmthesis.cls` are the manuscript entry files; do not recreate them in this research repository.
+- Keep the sole current authoritative manuscript in `HiMCM-Overleaf/main.tex` with necessary figures, existing bibliography and class. Under the latest user instruction, GitHub `paper/current/` mirrors these source files and the current PDF, and Git commits maintain manuscript history. Do not create numbered manuscript drafts or duplicate entries in Overleaf.
 - Preserve team-written manuscript content and bibliography. Research notes and synthetic examples are supporting material, not an instruction to replace the manuscript or invent empirical results.
 - If no Overleaf session is connected, report that limitation accurately and prepare clearly identified local changes instead of claiming to have edited the online workspace.
 
@@ -42,7 +42,7 @@ The current delivery map is registered separately in `research/2026-a/design/tas
 
 ## Research / manuscript split — approved on 2026-11-07
 
-- GitHub `TypeThe0ry/HiMCM` contains research code, raw data, algorithms, results, figures, and `library/` reference material.
+- GitHub `TypeThe0ry/HiMCM` contains research code, raw data, algorithms, results, figures, `library/` reference material and, under the 2026-11-10 user instruction, manuscript history plus the `paper/current/` source/PDF mirror.
 - The sibling `HiMCM-Overleaf` checkout contains all authored manuscript material, LaTeX, bibliography, and selected publication assets. Use the latest Overleaf manuscript as authoritative; older GitHub manuscript versions are retained in its `archive/github_before_split/` directory.
 - Preserve raw inputs and missing-data intervals. Earlier split and reunification records describe historical states, not current layout instructions.
 - Maintain the two remotes independently. Transfer only selected paper assets and manuscript material to Overleaf; retain full research datasets and reference PDFs here.
@@ -72,4 +72,8 @@ Use the existing read-only mcmthesis class for owned review material, following 
 
 ## Current main entry correction — 2026-11-10
 
-The user explicitly requested that all owned titles, Summary and topics appear in the current Overleaf compilation. The existing root `main.tex` now imports the complete owned V198 paper. The teammate original is preserved byte-for-byte at `HiMCM-Overleaf/archive/team_main_before_owned_entry_20261110/main.tex`; `ref.bib` and `mcmthesis.cls` remain unchanged. This narrowly supersedes prior root-entry preservation instructions; it does not authorize rewriting teammate content. Server Main document settings and online compilation have not been verified. See `docs/handoff/MAIN_ENTRY_20261110.md`.
+The user explicitly requested that all owned titles, Summary and topics appear in the current Overleaf compilation. The existing root `main.tex` now contains the complete owned current paper as a self-contained source. The teammate original is preserved byte-for-byte at `paper/history/overleaf_before_single_main_20261110/archive/team_main_before_owned_entry_20261110/main.tex`; `ref.bib` and `mcmthesis.cls` remain unchanged. This narrowly supersedes prior root-entry preservation instructions; it does not authorize rewriting teammate content. Server Main document settings and online compilation have not been verified. See `docs/handoff/MAIN_ENTRY_20261110.md`.
+
+## Single current Overleaf manuscript — latest user instruction, 2026-11-10
+
+Keep the local paper checkout synchronized with remote Overleaf. Overleaf retains only one current `main.tex` and necessary figures/resources, with short collaboration instructions. All previous drafts and entries were archived byte-for-byte to GitHub `paper/history/overleaf_before_single_main_20261110/`. Update the same current files in future iterations and use GitHub commits for version control; do not recreate numbered manuscript files, old PDFs, research copies or alternate root entries in Overleaf. GitHub `paper/current/` mirrors the current six compile dependencies plus PDF. This explicit instruction supersedes the earlier manuscript-only-in-Overleaf storage split. Preserve shared class/bibliography and other contributors’ material. Current review/delivery registries live in the research repository, not duplicate Overleaf drafts. See `docs/handoff/V201_RESEARCH_UPDATE.md`.

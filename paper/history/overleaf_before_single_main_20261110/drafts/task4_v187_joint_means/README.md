@@ -1,0 +1,3 @@
+# Joint commute-mean sensitivity support (V187)
+
+Zurich remains the unique minimax-regret recommendation throughout the declared twelve-mean box below radius7.1473304991% for baseline weights, or51.4235691502% for equal weights. At the exact boundary Oslo can tie; above it a counterexample exists. The box is a sensitivity assumption, not an observed error or future probability. Singapore stage bins, unknown travel and all other criteria are fixed. Original CSV and baseline V181 bounds are unchanged; this result is support material and has not been inserted in the V188 paper. Full code,192rankrows,1920boundrows and witness means remain in the GitHub research repository.

@@ -1,0 +1,60 @@
+{
+  "tool": "Exa web_fetch_exa",
+  "purpose": "Official-source retrieval and text extraction",
+  "internal_model_recorded": false,
+  "service_version_recorded": false,
+  "generative_model_involvement_per_call_established": false,
+  "complete_call_history": false,
+  "evidence": [
+    {
+      "path": "data/task4_v118_pools/zurich_provider_capture.json",
+      "sha256": "fa7ffcca7f94ad211b78ac3851d8471c1bc6d60fd90c9c8c143a51be6b173100",
+      "recorded_fields": {
+        "provider": "Exa web_fetch_exa",
+        "retrieved": "2026-11-08"
+      }
+    },
+    {
+      "path": "data/task4_v118_pools/milan_provider_capture.json",
+      "sha256": "e23c110f00a0c4c88b5114e7d1c0ac23c851915b504d5395c815d24dcbe98279",
+      "recorded_fields": {
+        "provider": "Exa web_fetch_exa",
+        "retrieved": "2026-11-08"
+      }
+    },
+    {
+      "path": "data/task4_v120_transport/zurich_provider_sources.json",
+      "sha256": "43ee8ba161a4ca9ff17351d419cfb69d0c907471948aeb5e74bf7c4d753c49e2",
+      "recorded_fields": {
+        "provider": "Exa web_fetch_exa",
+        "retrieved": "2026-11-08"
+      }
+    },
+    {
+      "path": "data/task4_v120_transport/helsinki_provider_source.json",
+      "sha256": "3bd2aacb9c259da0c4243a3dc3dda971224e8a9b675bbc1770789abc46e6d6b1",
+      "recorded_fields": {
+        "provider": "Exa web_fetch_exa",
+        "retrieved": "2026-11-08"
+      }
+    },
+    {
+      "path": "data/task4_v116_ibb/source_audit.json",
+      "sha256": "f8fa18e2f07b0585115ca02c2e3bcf0154fa2cfbd7bf6e04adfacd5fe329e176",
+      "recorded_fields": {
+        "tool": "mcp__codex_apps__exa_web_fetch_exa"
+      }
+    },
+    {
+      "path": "data/task4_v124_transport/provider_capture.json",
+      "sha256": "864f05c1aa010d9dc334fe2135cee15309b2b2583d4c39e2f5ffad54f0607a28",
+      "recorded_fields": {}
+    },
+    {
+      "path": "data/task4_v124_transport/manifest.json",
+      "sha256": "093e70944c6a1101415ceb3b5323a93fee2335884d3de7d6dceaeb8206fcc31d",
+      "recorded_fields": {}
+    }
+  ],
+  "interpretation": "Archived tool representations, not original PDF/HTML bytes; scope review and separate originals where available. Tokyo PDF extraction rejected, original Nerima HTML used instead."
+}

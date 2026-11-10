@@ -1,0 +1,127 @@
+\thispagestyle{fancy}
+\begin{center}
+\textbf{2026 HiMCM --- Problem A}\\[9pt]
+{\Large\bfseries Choosing a City for High-School Life\\with Incomplete Evidence}\\[12pt]
+\textbf{Summary Sheet}
+\end{center}
+A city recommendation becomes more useful when its evidence and priorities can
+be examined together. We compare sixteen cities using ten indicators of safety,
+environment, household costs, education and everyday resources. Zurich is the
+conservative recommendation under the retained team inputs and baseline or equal weights. All sixteen
+cities remain possible champions within the retained evidence bounds.
+
+The evaluation combines fixed-anchor TOPSIS with a maximum-regret decision.
+Benefit and cost utilities share fixed reference scales, allowing controlled
+comparisons across data, preference and development scenarios. Missing values
+remain intervals. We select the city with the smallest worst-case shortfall from
+a better-scoring competitor over the declared rectangular uncertainty set.
+
+Official municipal records, school statistics and operator inventories supplement
+twenty-two previously missing entries while preserving the team's original values.
+The average score-interval width falls from 18.81077 to \CurrentMeanWidth{}, a \TotalWidthReduction\%
+reduction. The resulting 160-entry matrix contains 112 point values, 34 partial
+intervals and 14 fully missing intervals. Actual reference years and source
+populations remain explicit.
+
+A controlled formulation revision retains the 48 uncertain entries rather
+than collapsing each to a midpoint. Although Zurich remains the recommendation, \RevisionRankChanges{}
+fixed-weight decision ranks change. Separate interior completions let each of the sixteen cities rank first.
+Withholding Zurich's unverified homicide-rate point alone selects Singapore
+under baseline weights and Oslo under equal weights, exposing dependence on
+accepted source information.
+
+Preferences and development conditions answer different decision questions.
+Doubling the relative emphasis on education changes the conservative choice to
+Oslo. \SummaryWeightMC{} These are conditional simulation frequencies.
+Three uniform ten-per-cent development scenarios retain Zurich; separate
+city-specific shocks reveal conditional recommendation changes without claiming
+an empirical forecast.
+
+Separate country, district and age-group cases examine what citywide totals
+leave unresolved. They distinguish facility supply from student access and
+observed broad age groups from unsupported age-specific preferences. The result
+is a practical starting choice with explicit alternatives and clear priorities
+for additional evidence.
+
+\textbf{Keywords:} high-school opportunities; TOPSIS; interval evidence;
+maximum regret; preference sensitivity.
+\clearpage
+\tableofcontents
+\clearpage
+\section{Introduction and decision scope}
+\subsection{What makes a city suitable for high-school life?}
+A useful comparison connects a student's school day with the opportunities and
+constraints around it. Safety and air quality affect the daily setting; teaching
+resources and nearby higher education describe educational supply; housing,
+living costs, transport, travel, broadband and swimming facilities describe
+household pressures and everyday resources. Our operational definition of
+``best'' is the conservative choice under these ten criteria, declared weights
+and retained evidence ranges. It provides a starting recommendation for the
+compared cities, rather than a claim about every student's experience.
+
+The study uses the sixteen cities in the frozen team matrix: Amsterdam, Berlin,
+Dublin, Helsinki, London, Madrid, Milan, Oslo, Paris, Prague, Singapore,
+Stockholm, Tokyo, Vienna, Warsaw and Zurich. This is an inherited comparison
+set across sixteen countries, not a representative sample of all world cities.
+It exceeds the problem's minimum of ten cities and spans different resource
+and cost settings. The findings concern this set; a broader claim would require
+an explicit sampling design and additional comparable observations.
+
+\subsection{Criterion selection and contribution}
+The ten indicators preserve the agreed team framework and balance education
+with the conditions that make resources usable in daily life. Their directions
+and anchors appear in Table~\ref{tab:indicators}. Counts and city averages serve
+as scoped supply or setting measures. They do not directly measure friendships,
+student wellbeing, school quality, language fit, discrimination, cultural
+participation or individual access. Those outcomes are relevant to a family's
+choice; comparable student-level observations are needed to integrate them
+without inventing measurements or double-counting existing proxies.
+
+Our central contribution is a city decision that retains incomplete evidence.
+We improve source precision, compare a point-completion benchmark with an
+interval revision, and examine preferences and future conditions without
+changing the primary indicator set. TOPSIS provides one main quality score;
+AHP structures stated priorities, Monte Carlo measures specified perturbations,
+and VIKOR supplies a focused method comparison. The extensions test the
+recommendation rather than vote among an expanding set of ranking models.
+
+AI assistance supported research retrieval, calculations, code and prose
+preparation, including Exa source retrieval and extraction \cite{openai,exa}.
+The appended use report records the known assistance
+and the outstanding documentation required before submission.
+
+\section{Assumptions and their role}
+\begin{enumerate}
+\item \textbf{Comparability follows the retained scope.} Original values and
+population denominators remain fixed. Each supplement keeps its provider,
+year, city boundary and educational population. Mixed-year densities are
+conditional comparisons; they do not create a same-year census.
+\item \textbf{Utilities are monotone on fixed scales.} More resources and less
+cost or burden improve their respective utilities. Declared anchors set the
+scale; they are neither estimated preferences nor empirical optimum values.
+\item \textbf{The score permits compensation.} Weighted distances combine
+criteria in a common utility space. The model therefore allows stronger results
+on some criteria to offset weaker results on others. A family requiring a hard
+safety or eligibility threshold should apply it separately before choosing.
+\item \textbf{The evidence set is rectangular.} Uncertain utilities vary
+independently within retained intervals. This conservative closure omits unknown
+cross-criterion and cross-city restrictions. Its possible champions and regret
+bounds are conditional on this set; they are not population probabilities.
+\item \textbf{Extensions hold the comparison basis fixed.} Scenario changes
+retain population denominators, anchors and the indicated weight rule. They
+are conditional experiments with no fitted future date or representative
+age-specific preference distribution.
+\end{enumerate}
+
+\section{Notation}
+\begin{tabular}{p{.18\linewidth}p{.75\linewidth}}
+\toprule Symbol & Meaning\\\midrule
+$M,N$ & Sixteen cities and ten indicators\\
+$w_j,a_j$ & Normalized criterion weight and fixed utility anchor\\
+$u_{ij}$ & Utility of indicator $j$ for city $i$, on $[0,1]$\\
+$\ell_{ij},h_{ij}$ & Retained lower and upper utility bounds\\
+$L_i,U_i$ & Lower and upper TOPSIS score, on $[0,100]$\\
+$R_i,\mathcal C$ & Maximum regret and set of possible champions\\
+$\kappa$ & Concentration of a declared Dirichlet weight distribution\\
+$r$ & Raw-value multiplier in a development scenario\\\bottomrule
+\end{tabular}

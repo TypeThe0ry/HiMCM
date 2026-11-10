@@ -1,0 +1,56 @@
+{
+  "version": "V181",
+  "primary_science": "V181",
+  "current_paper": "V179 (unchanged; staged scienceV181)",
+  "familywise_alpha": 0.05,
+  "draws_per_setting": 10000,
+  "settings": 37,
+  "base_means": 2064,
+  "frequency_means": 1472,
+  "mean_rank_means": 592,
+  "normalized_half_width": 0.023792100139243058,
+  "frequency_half_width_percentage_points": 2.3792100139243058,
+  "mean_rank_half_width": 0.3568815020886459,
+  "tables": [
+    {
+      "family": "preferences",
+      "rows": 144,
+      "settings": 9,
+      "means": 720
+    },
+    {
+      "family": "future_shocks",
+      "rows": 192,
+      "settings": 12,
+      "means": 576
+    },
+    {
+      "family": "weights_only",
+      "rows": 256,
+      "settings": 16,
+      "means": 768
+    }
+  ],
+  "input_sha256": {
+    "results/task4_v181_preferences/mc_city_summary.csv": "876aed965498ae31d097c6eb4a14b6f566b0493dc7cecbd59fc425178c2826ee",
+    "results/task4_v181_future/future_mc_city_summary.csv": "06682da9d9251b7458c85d76398947826acd9072ef746df34484cbefd0eb5086",
+    "results/task4_v181_future/weight_mc_city_summary.csv": "70a11a16e81808b51df03fd69bd5e21bf31a31dba9e343d4cb20823a8dfedab8",
+    "scripts/task4_v181_extensions.py": "f97a930ad02d2cb254dbb06a3defd87d0027b250a0885ed5853054c569eeeea5",
+    "scripts/task4_v125_preferences.py": "c969390518ddbd51ed319264669e7b84fe04dac8dabe5db43b8436859adae94b",
+    "scripts/task4_v122_preferences.py": "a7faf3e07dcad153fac8004d4e52cb77767201150765d5c51e16f89477950ed3",
+    "scripts/task4_v125_future.py": "c82550da7eb621d29b0357f8ad2ef93251aadee24e3a08c83658f5a5d0f31c84",
+    "scripts/task4_v122_future.py": "c1bff0e19d6828e6689961c3c201799275cf31de4c215259e43fdb0c7e2c967c",
+    "scripts/task4_ahp_mc_baseline.py": "7b51be6f7ca47e2ea6c77fcdbb227a7611d8804eaf17d9040776edb94398f99a"
+  },
+  "assumption": "Independent identically distributed replications within each declared simulation setting; intended RNG design, not an empirical independence certificate for a fixed PRNG sequence.",
+  "dependence": "Shared draws across cities and settings are permitted. The union bound does not require independence across estimated means.",
+  "scope": "Finite-sample MC integration error around expectations under the declared simulation laws and retained evidence/model; no real-world city win probabilities, forecast calibration, source error or interval coverage.",
+  "excluded": [
+    "change_vs_baseline columns (derived, not counted as base means)",
+    "score-change quantiles (not sample means)"
+  ],
+  "reran_monte_carlo": false,
+  "changed_scientific_inputs": false,
+  "changed_manuscript": false,
+  "submission_ready": false
+}

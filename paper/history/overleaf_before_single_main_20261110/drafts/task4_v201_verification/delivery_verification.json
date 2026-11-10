@@ -1,0 +1,59 @@
+{
+  "version": "V201delivery",
+  "status": "pass",
+  "primary_model": "V200",
+  "review_version": "V201",
+  "pdf_sha256": "18d5e8d535dfed46d81fc4017f0aa09e14c7134200981defc1abcdb8014f96e5",
+  "total_pages": 27,
+  "main_and_references_pages": 25,
+  "main_page_margin": 0,
+  "news_pages": [
+    18,
+    19
+  ],
+  "references_pages": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "AI_pages": [
+    26,
+    27
+  ],
+  "compiled_references": 57,
+  "requirements": 47,
+  "scoped_anchor_rows": 58,
+  "all_scoped_anchors_found": true,
+  "prior_statuses_preserved_except_shared_build": true,
+  "shared_build_local_verified": true,
+  "pending_count": 12,
+  "pending_ids": [
+    "PA-ai-section",
+    "U-source-quality",
+    "CI-headers",
+    "CI-control",
+    "CI-anonymity",
+    "AI-tool-disclosure",
+    "AI-complete-record",
+    "TEAM-integration",
+    "REG-eligibility",
+    "SUB-filename",
+    "SUB-upload",
+    "SUB-confirmation"
+  ],
+  "source_sha256": {
+    "results/task4_v198_review/requirements.csv": "b3b115bd75af5c44c895cb5471084cddbb53f492c50cc62543918b208bca0d35",
+    "scripts/task4_v201_delivery.py": "50b05adb27fdb662e5b0da62422851e32fa2fdfff199beaa9cb2c7bda9893e5d",
+    "results/task4_v201_review/main_entry_verification.json": "338c18baddfc9c8f15de5703ff97484079fff8f02b0cd44518900bf670972637"
+  },
+  "output_sha256": {
+    "requirements.csv": "3e7fb858fc12e7f39f9c71383d63b0ba2b62c78a92c1a96f724e5543e35231de",
+    "anchor_hits.csv": "17d99115ff8804b50ae20e5016c0593297dd3240700987c68445235e4f601ce8"
+  },
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "scope": "Scoped passage locations and preserved status gates; not proof of complete original-source validation, full-teamAI,registrationorcontestdelivery."
+}

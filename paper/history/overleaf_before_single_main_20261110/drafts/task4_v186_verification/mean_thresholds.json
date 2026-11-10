@@ -1,0 +1,34 @@
+[
+  {
+    "weight_reference": "fixed",
+    "retained_mean_minutes": 39.9,
+    "gap_at_lower_utility0": 1.8670674568504069,
+    "gap_at_lower_utility1": -6.470874446899849,
+    "target_lower_score": 53.04919684431225,
+    "quadratic_coefficients": [
+      -0.03112303406283024,
+      0.2872460681256605,
+      -0.059393114045759976
+    ],
+    "status": "one_finite_mean_tie",
+    "tie_lower_utility": 0.21161957932041559,
+    "tie_mean_minutes": 46.58895160226935,
+    "strict_rule": "Zurich uniquely selected below mean cutoff; tie at cutoff; above it another city minimizes regret, other data fixed."
+  },
+  {
+    "weight_reference": "equal",
+    "retained_mean_minutes": 39.9,
+    "gap_at_lower_utility0": -1.1872138169392201,
+    "gap_at_lower_utility1": -8.858382099892793,
+    "target_lower_score": 51.041821826898044,
+    "quadratic_coefficients": [
+      -0.008693065473305906,
+      0.21738613094661183,
+      0.03381702725877045
+    ],
+    "status": "Zurich_unique_for_all_nonnegative_means",
+    "tie_lower_utility": null,
+    "tie_mean_minutes": null,
+    "strict_rule": "Maximum gap occurs at utility0; it is strictlynegative, so no finite mean crosses; this is an algebraic one-input sensitivity statement."
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "status": "conditional_source_triage",
+  "base_science": "V197 unchanged",
+  "paper": "V198 unchanged",
+  "results": [
+    {
+      "weight_reference": "fixed",
+      "continuous_count_tie": 26.377779055375107,
+      "first_integer_count_for_strict_Singapore_recommendation": 27,
+      "population": 6036900,
+      "population_year": 2024,
+      "utility_upper_retained": 1.0
+    },
+    {
+      "weight_reference": "equal",
+      "continuous_count_tie": 178.14702671537952,
+      "first_integer_count_for_strict_Singapore_recommendation": 179,
+      "population": 6036900,
+      "population_year": 2024,
+      "utility_upper_retained": 1.0
+    }
+  ],
+  "other159cells_alluppers_and_weights_fixed": true,
+  "primary_admissions": 0,
+  "actual_active_model_width_reduction": 0,
+  "scope": "A verified compatible physical public-venue lower count would set only Singapore pool utility lower. Integer threshold is a deterministic model condition, not an observed count, prediction, policy feasibility or winner probability. Equality may tie; inventory/current opening and scope require independent source review.",
+  "source_sha256": {
+    "scripts/task4_v199_pool_threshold.py": "967569c573f37ff21a82f82cf51bef0c1dbaf2955d1b7979179f0478926bc39d",
+    "design/task4_user_v197_snapshot.json": "7e1e302f9c66a70c069a0414dee022eaf79a77658707473de9e478739303c8b0"
+  }
+}

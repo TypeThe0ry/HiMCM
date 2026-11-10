@@ -1,0 +1,38 @@
+% V164 owned review; user-supplied mcmthesis format, shared class unchanged.
+\documentclass{mcmthesis}
+\mcmsetup{CTeX=false,tcn=PENDING,problem=A,sheet=true,titleinsheet=true,
+keywordsinsheet=true,titlepage=false,abstract=true}
+\usepackage{palatino,microtype,ragged2e,placeins,url,xurl}
+\setlength{\headheight}{16pt}\urlstyle{same}\emergencystretch=3em\hyphenpenalty=500
+\AtBeginDocument{\setlength{\parindent}{0pt}\setlength{\parskip}{0.5\baselineskip}}
+\setlength{\tabcolsep}{5pt}
+\widowpenalty=10000\clubpenalty=10000
+\setcounter{tocdepth}{2}
+\makeatletter
+\renewcommand\tableofcontents{%
+\centerline{\rmfamily\Large\bfseries\contentsname%
+\@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+\vskip 3ex\@starttoc{toc}}
+\renewcommand{\l@section}{\def\@pnumwidth{2.3em}\def\@tocrmarg{2.3em}%
+\bfseries\@dottedtocline{1}{1.5em}{2.3em}}
+\renewcommand{\l@subsection}{\normalfont\@dottedtocline{2}{3.0em}{3.2em}}
+\renewcommand{\@dotsep}{1}
+\makeatother
+\title{Choosing a City for High-School Life with Incomplete Evidence}
+\author{}\date{}
+\hypersetup{pdftitle={Choosing a City for High-School Life with Incomplete Evidence},pdfauthor={}}
+\graphicspath{{./}{drafts/}}
+\input{task4_v154_generated.tex}
+\begin{document}
+\input{task4_v164_front.tex}
+\input{task4_v164_core.tex}
+\input{task4_v164_conclusion.tex}
+\clearpage
+\phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
+\input{task4_v154_news.tex}\label{news-end}
+\clearpage
+\phantomsection\addcontentsline{toc}{section}{References}
+\input{task4_v164_references.tex}\label{main-end}
+\clearpage
+\input{task4_v154_ai.tex}
+\end{document}

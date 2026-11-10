@@ -1,0 +1,36 @@
+{
+  "version": "V185 bounded Madrid teacher check",
+  "primary_context": "V181 unchanged",
+  "paper_context": "V184 unchanged",
+  "primary_admissions": 0,
+  "actual_score_width_change": 0,
+  "queries_used": 4,
+  "routes": 2,
+  "successful_original_responses": 0,
+  "failed_original_requests": 2,
+  "original_source_units_verified": false,
+  "validated_city_upper_secondary_PTR_or_teaching_FTE": false,
+  "admission_decision": "skip_failed_retrievals",
+  "failures": [
+    {
+      "url": "https://www.comunidad.madrid/sites/default/files/informe2024_-_capitulo_b.pdf",
+      "http_status": 504,
+      "error": "HTTP Error 504: Gateway Time-out",
+      "response_body_archived": false
+    },
+    {
+      "url": "https://estadisticas.educa.madrid.org/pdfs/Manual_Metodologico_2023_2024.pdf",
+      "http_status": null,
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+      "response_body_archived": false
+    }
+  ],
+  "scope": "The bounded search did not retrieve an original municipal upper-secondary ratio or a matched teaching-FTE denominator. This does not establish that no such data exist elsewhere.",
+  "search_lead_limits": [
+    "Regional or all-general-education ratios cannot be silently assigned to Madrid municipality upper-secondary schooling.",
+    "Search leads mentioning full-time teachers do not by themselves establish full-time-equivalent teaching workload or stage allocation.",
+    "ESO/Bachillerato/FP combined staff are not silently treated as upper-secondary teaching FTE."
+  ],
+  "next_action": "Do not repeat these two failed requests without an external availability change; only reassess a new original city/stage/workload record. No person-count-to-FTE conversion or invented ratio.",
+  "no_CSV_model_registry_manuscript_changes": true
+}

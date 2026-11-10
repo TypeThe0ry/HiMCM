@@ -1,0 +1,182 @@
+{
+  "version": "V193",
+  "status": "pass",
+  "primary_model": "V192",
+  "activation_status": "active",
+  "total_pages": 27,
+  "main_and_references_pages": 25,
+  "main_page_margin": 0,
+  "news_pages": [
+    18,
+    19
+  ],
+  "AI_pages": [
+    26,
+    27
+  ],
+  "compiled_references": 56,
+  "prior53_references_retained": true,
+  "scientific_files_unchanged": 327,
+  "existing_manuscript_files_unchanged": 816,
+  "owned_pointer_files_changed": [
+    "AGENTS.md",
+    "drafts/task4_current_delivery.json",
+    "drafts/task4_current_review.json"
+  ],
+  "shared_main_ref_class_unchanged": true,
+  "original_user_CSV_unchanged": true,
+  "point_partial_unknown": [
+    112,
+    37,
+    11
+  ],
+  "cumulative_supplements": 25,
+  "possible_champions": 16,
+  "necessary_champions": 0,
+  "conservative_recommendation": "Zurich",
+  "mean_widths": {
+    "fixed": 16.03907007442162,
+    "equal": 18.81881344951466
+  },
+  "historical_inventory_withdrawal_checks": [
+    {
+      "removed": [
+        "Paris"
+      ],
+      "weight_reference": "fixed",
+      "minimax": [
+        "Zurich"
+      ],
+      "mean_width": 16.083336793256017
+    },
+    {
+      "removed": [
+        "Dublin"
+      ],
+      "weight_reference": "fixed",
+      "minimax": [
+        "Zurich"
+      ],
+      "mean_width": 16.054672406306903
+    },
+    {
+      "removed": [
+        "Paris",
+        "Dublin"
+      ],
+      "weight_reference": "fixed",
+      "minimax": [
+        "Zurich"
+      ],
+      "mean_width": 16.098939125141303
+    },
+    {
+      "removed": [
+        "Paris"
+      ],
+      "weight_reference": "equal",
+      "minimax": [
+        "Zurich"
+      ],
+      "mean_width": 18.90463906120791
+    },
+    {
+      "removed": [
+        "Dublin"
+      ],
+      "weight_reference": "equal",
+      "minimax": [
+        "Zurich"
+      ],
+      "mean_width": 18.847360714842523
+    },
+    {
+      "removed": [
+        "Paris",
+        "Dublin"
+      ],
+      "weight_reference": "equal",
+      "minimax": [
+        "Zurich"
+      ],
+      "mean_width": 18.93318632653577
+    }
+  ],
+  "source_graph_tex_files": 17,
+  "scientific_source_identity_checked": true,
+  "direct_root_text_equal": true,
+  "native_header_footer_checked": true,
+  "display_control_number": "18213",
+  "actual_registered_number_verified": false,
+  "figure_fonts_checked": [
+    {
+      "asset": "drafts/task4_v193_assets/identification_matrix.pdf",
+      "minimum_inserted_font_pt": 10.0
+    },
+    {
+      "asset": "drafts/task4_v193_assets/score_intervals.pdf",
+      "minimum_inserted_font_pt": 12.596899224806203
+    }
+  ],
+  "new_numeric_body_font_min": 12,
+  "overfull_boxes": 0,
+  "underfull_paragraphs_per_build": [
+    2,
+    2
+  ],
+  "requirements": 47,
+  "prior47_statuses_preserved": true,
+  "pending_gates_preserved": [
+    "PA-ai-section",
+    "U-source-quality",
+    "CI-headers",
+    "CI-control",
+    "CI-anonymity",
+    "AI-tool-disclosure",
+    "AI-complete-record",
+    "TEAM-integration",
+    "TEAM-shared-build",
+    "REG-eligibility",
+    "SUB-filename",
+    "SUB-upload",
+    "SUB-confirmation"
+  ],
+  "scoped_delivery_anchors_verified": 58,
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "default_main_setting_changed": false,
+  "AI_history_complete": false,
+  "pdf_bytes": 214208,
+  "pdf_sha256": "fb9b2d0f95f544c41f2de02e15a58673f15a8ac8efc4dcadb173f0a272474dae",
+  "source_sha256": {
+    "scripts/audit_task4_v193.py": "a0a5c1940f57cf2f200a84fbff4b374719830682660e50d1473f8102864b5642",
+    "results/task4_v193_review/protected_files.json": "db5077a10a8e4b6e13b07843d2619ccc0028d5accd0a9fc37082f6d565b698e2",
+    "design/task4_user_v192_snapshot.json": "2e9c32051dffe00ddf635a77c349f01cafa08ffa2913a37cc34ef06ed8c775a2",
+    "results/task4_v192_transition/verification.json": "c93a9b1744c1fdc892a5cbc468b7c268387d8297d3accd91d8efea69aecb008b",
+    "results/task4_v192_source_diagnostics/summary.json": "f44d505aac62ca120f1407ada8676651f265057c416ceed0f8c6e1675a6380c6"
+  },
+  "tex_source_sha256": {
+    "drafts/task4_v172_country_figure.tex": "128111720d02bd48c4b5b4226977126a49c74e2df882031f76cab2122bf16c19",
+    "drafts/task4_v193_ai.tex": "2ac6a5626db1bdc22dfbafde1fa73c26423dc9ed013036d6cbab98b34aa8320b",
+    "drafts/task4_v193_assets/age_joint.tex": "5028c3cc16680250042afd8b306efcceb57db5e9f4dc950e37c4a0964247cc70",
+    "drafts/task4_v193_assets/baseline.tex": "72ac4fdc983c63061f58747a1e0e6ec17d4cc0a49cfb7a035ee48d51520348a0",
+    "drafts/task4_v193_assets/indicators.tex": "f1c4b4e3a6874f5e0ecce07a7ab91b2dfe31b8ddb7f86742eee852825612bea2",
+    "drafts/task4_v193_assets/preferences.tex": "770879db767db558d938f4723d5b02e3fe408476c6bc652322223df04d91056c",
+    "drafts/task4_v193_assets/revision.tex": "8732de6f4ad619d39e22b428936f96dc9e8a89f4f47f52b257b6def3d40bf3e3",
+    "drafts/task4_v193_assets/vintage_table.tex": "0eeaa60902677745cd8ffd5756428dbca29292abc376c5ea12693d61d0693af2",
+    "drafts/task4_v193_conclusion.tex": "d7a85547af003c4352386c880e04e8839890ee27ff42589b9c3295a4672507c6",
+    "drafts/task4_v193_core.tex": "ecf248445c412e36cfcfdd7645e0fe9cac2cfbc5837bed3ba3bea79bed9c3529",
+    "drafts/task4_v193_evidence_figure.tex": "08923a98a17877cd2a5c43745919e044e18fbcba26244e45879c5438f54f0900",
+    "drafts/task4_v193_front.tex": "071b76d9cbabfd3c80c610b78b07161a76a1370fafdbe38927967364a81a7c63",
+    "drafts/task4_v193_generated.tex": "29cf6323829c9e4862b0de6156ef3d4f3e4e3b9238df99ca4c90e49f1dd27222",
+    "drafts/task4_v193_news.tex": "ca9d076aade3237e79d44e12c36554ff0ba74852e29efe9e4820ce50854fa0ed",
+    "drafts/task4_v193_paper.tex": "b2a3ae18643d23c48625a3a9dc0944e6f736955e16a9dcb17f3c366f5f601a35",
+    "drafts/task4_v193_references.tex": "74faef702ff4260547ec6a9cbe6207e1de450616634bafa1753198c4b043205a",
+    "drafts/task4_v193_vintage.tex": "f0a76f4fd7617934972b09165b5c621629afc1022716d0897456bcc78f2fa416"
+  },
+  "delivery_sha256": {
+    "requirements.csv": "b44a60fb84f82c4dac2be1faaa53fce0cf139a6ec259e7093d226eb07929aec8",
+    "anchor_hits.csv": "c38c2cd227a4cf11ffc6c823a3cb02529b986ea0fa3482714012831587822497"
+  },
+  "visual_review_scope": "Separate parent raster review; this audit checks numeric assets, source scope, fonts, page geometry and scoped anchors, not raster appearance."
+}

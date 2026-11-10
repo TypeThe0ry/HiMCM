@@ -1,0 +1,179 @@
+% New team-review material; existing manuscript sections are preserved.
+\clearpage
+\begingroup
+\setlength{\tabcolsep}{5pt}
+\setlength{\parskip}{0.35\baselineskip}
+\section{High-school city evaluation: interim results}
+\label{sec:t4progress}
+
+Singapore is the conservative recommendation in our current comparison of
+25 cities. The model separates a decision made with incomplete information
+from a claim that one city is certainly best: all 25 cities remain possible
+score leaders within the available evidence bounds. This section reports the
+current stage of the city-evaluation study as of 8 November 2026.
+
+\subsection{A decision model that retains missing information}
+The eight main criteria describe safety, particulate air pollution, living
+cost, housing affordability, upper secondary teaching resources, the supply
+of higher education institutions, school travel time, and fixed broadband. Listed public
+transport stops and public swimming pools form two auxiliary supply criteria.
+Teaching resources measure student--teacher provision; they do not measure
+learning outcomes. Institution and facility counts measure supply, with partial
+inventories retained as lower bounds.
+
+Let $u_{ij}\in[\ell_{ij},h_{ij}]\subseteq[0,1]$ denote city $i$'s utility
+for criterion $j$. A completely unidentified value retains $[0,1]$.
+For a nonnegative measured value $x$ and fixed reference $a>0$, benefit
+criteria use $x/(a+x)$ and cost criteria use $a/(a+x)$. The reference values
+remain fixed across cities. School travel instead uses
+\begin{equation}
+ u_T(t;\tau)=\exp(-t/\tau),\qquad \tau=30\ \text{minutes},
+ \label{eq:t4travel}
+\end{equation}
+where $t$ is reported one-way duration. Time bins yield utility intervals;
+unobserved journeys retain unknown utility. The scale $\tau$ expresses the
+strength of the travel-time penalty and is tested below.
+
+Each main criterion receives weight $(1-\alpha)/8$ and each auxiliary
+criterion receives $\alpha/2$, with $\alpha=0.10$ for the reported ranking.
+We use fixed ideal utilities of zero and one:
+\begin{equation}
+ C_i(u;\alpha)=100\,
+ \frac{\sqrt{\sum_j w_j(\alpha)u_{ij}^{\,2}}}
+ {\sqrt{\sum_j w_j(\alpha)u_{ij}^{\,2}}+
+  \sqrt{\sum_j w_j(\alpha)(1-u_{ij})^2}}.
+ \label{eq:t4score}
+\end{equation}
+The score increases with every utility, so its attainable bounds in the
+rectangular evidence model are $L_i=C_i(\ell_i;\alpha)$ and
+$U_i=C_i(h_i;\alpha)$. We rank choices by their worst-case regret:
+\begin{equation}
+ R_i=\max\{0,\max_{k\ne i}U_k-L_i\},\qquad
+ i^*=\arg\min_i R_i.
+ \label{eq:t4regret}
+\end{equation}
+Thus $R_i$ asks how far choosing city $i$ could leave a student behind a
+better-scoring alternative. A city remains a possible score leader when
+$U_i\geq\max_{k\ne i}L_k$. The rectangular model permits input values to vary
+independently within their bounds; these are conditional decision statements.
+
+\clearpage
+\subsection{Current ranking and the evidence behind it}
+Table~\ref{tab:t4rank} gives the decision order. Singapore's worst-case
+regret is 34.07 score points, followed by Tokyo at 37.41. Phoenix ranks
+16th. A numerical certificate retains Singapore as the minimum-regret
+choice for every auxiliary weight $\alpha\in[0.05,0.20]$ under the current
+inputs. The overlapping score intervals leave all 25 cities as possible
+leaders; the decision order therefore expresses a conservative choice under
+uncertainty.
+
+\begin{table}[htbp]
+\centering
+\caption{Current minimum-regret ranking; smaller $R_i$ is preferred.
+Scores use the evidence bounds and $\alpha=0.10$, $\tau=30$ minutes.}
+\label{tab:t4rank}
+\begin{tabular}{rlr@{\hspace{1.2em}}rlr}
+\toprule
+Rank & City & $R_i$ & Rank & City & $R_i$\\
+\midrule
+1 & Singapore & 34.07 & 14 & Delhi & 44.94 \\
+2 & Tokyo & 37.41 & 15 & Istanbul & 45.09 \\
+3 & Copenhagen & 38.10 & 16 & Phoenix & 46.14 \\
+4 & Melbourne & 41.30 & 17 & Athens & 46.62 \\
+5 & Cape Town & 42.02 & 18 & London & 46.78 \\
+6 & Shanghai & 42.12 & 19 & Jakarta & 47.33 \\
+7 & Sao Paulo & 42.67 & 20 & Nairobi & 48.24 \\
+8 & Warsaw & 42.82 & 21 & New York & 48.42 \\
+9 & Barcelona & 43.30 & 22 & Dhaka & 48.49 \\
+10 & Toronto & 43.42 & 23 & Mumbai & 48.71 \\
+11 & Bogota & 43.95 & 24 & Mexico City & 48.75 \\
+12 & Dubai & 44.05 & 25 & Lagos & 51.58 \\
+13 & Santiago & 44.67 &  & &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Actual student-travel information currently gives informative, conditional
+intervals for five cities. New York uses a 2010--11 resident survey of
+current grades 9--12 with an under-19 age restriction; unknown ages remain optional members. Mexico City uses
+2025 private-household residents aged 14--18, with uncertain school-stage
+membership retained. S\~ao Paulo uses 2023 municipal residents aged 14--18
+in current upper-secondary education. Cape Town uses 2025 metropolitan
+residents aged 14--18 in current high-school grades. Melbourne uses
+2024--25 Greater Melbourne residents classified as Secondary, aged 15--19.
+The other 20 cities retain $[0,1]$ for travel.
+
+These sources differ in year, geography, age coverage and sampling procedure.
+The S\~ao Paulo research mirror has not been verified as byte-identical to
+the official release. Melbourne's reported interval is conditional on the
+170 students with complete person weights; another eligible student's
+unbounded missing weight leaves the strict full-group interval at $[0,1]$.
+Source definitions, utility bounds and ranking inputs accompany this section
+in the selected statistical snapshot.\footnote{Research model V108 and
+validation V111; reproducible source records and calculations:
+\url{https://github.com/TypeThe0ry/HiMCM/tree/1b35f6c/research/2026-a}.
+The accompanying snapshot is \texttt{statistics/task4\_progress\_2026-11-08/}.}
+
+\clearpage
+\subsection{A revision that accounts for sampling uncertainty}
+We added sampling uncertainty to Mexico City's 2025 time-bin interval,
+holding the data and uncertain school-stage membership rules fixed. We retain
+all 3,433 observed primary sampling units (PSUs) in 49 strata, including 586 units with
+zero contribution to the target group. For each of nine fixed membership prefixes per endpoint, a Taylor-linearized
+standard error produces a 97.5\% one-sided $t$ bound with 3,384 degrees of
+freedom; taking
+the minimum lower bound and maximum upper bound gives an approximate
+95\% outer envelope for the identified interval. Final nonresponse-adjusted
+weights are treated as fixed and finite-population corrections are omitted.
+
+\begin{table}[htbp]
+\centering
+\caption{Mexico City before and after adding sampling uncertainty.
+The other 249 city--criterion cells are unchanged.}
+\label{tab:t4revision}
+\begin{tabular}{lcc}
+\toprule
+Quantity & Before & After\\
+\midrule
+Travel utility interval & $[0.213824,0.584100]$ & $[0.207414,0.592051]$\\
+Worst-case regret & 48.7028 & 48.7469\\
+Decision rank & 23 & 24\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Mexico City moves down one place and Mumbai up one place; other ranks
+remain unchanged. This corrects the treatment of uncertainty and leaves
+25 possible leaders. School-stage interpretation and coverage remain
+conditions of the estimate; the approximation has no exact finite-sample
+coverage guarantee.
+
+\subsection{Recommendation stability and rank sensitivity}
+We re-evaluated the five informative travel sources at five prespecified
+scales, retaining their original membership, missing-data and sampling rules.
+Each scale reproduces utilities from the available duration or time-bin
+information. Kendall's $\tau_b$ compares each decision order with the
+default-scale order.
+
+\begin{table}[htbp]
+\centering
+\caption{Direct travel-scale sensitivity relative to $\tau=30$ minutes.}
+\label{tab:t4sensitivity}
+\begin{tabular}{lrrrrr}
+\toprule
+$\tau$ (minutes) & 15 & 20 & 30 & 45 & 60\\
+\midrule
+Cities changing rank & 11 & 9 & 0 & 9 & 10\\
+Kendall's $\tau_b$ & 0.9267 & 0.9533 & 1.0000 & 0.9600 & 0.9400\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Singapore remains the conservative recommendation across all five scales
+and the continuous $\alpha$ range at each scale. Cape Town ranks fourth
+to ninth and Mexico City nineteenth to twenty-fourth. All 25 cities remain
+possible leaders. Thus the recommendation is stable across the five tested
+scales while intermediate ranks vary. Values between the tested $\tau$
+settings were not continuously certified.
+\clearpage
+\endgroup

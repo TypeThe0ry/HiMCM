@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "verified_date": "2026-11-09",
+  "reviewer": "independent child agent; read-only source and private export checks",
+  "scope": "Exactly manifest-declared complete-line prefix of one explicitly authorized session; no other sessions read. Private text never printed or copied into this verification.",
+  "source_prefix": {
+    "bytes": 33655049,
+    "complete_lines": 2758,
+    "sha256": "c5e76ca40be86d413b9119d1dbf35e3a6f4376d074ffbf664c9abff88de6dd3e"
+  },
+  "script_sha256": "33d2333093e3dd888ae5d19899eb0a822a0be3470075c72f962d190ed2c4ee41",
+  "manifest_sha256": "a6f665b8971d85a2f2652c1402844ee5084f364467d92c5350a4d061d2b8d888",
+  "private_export": {
+    "records": 52,
+    "bytes": 30353,
+    "sha256": "b1b981221a026b4e6df9f6295bd7013fd1c32d7ec2cd6a75318650bfbf55e284",
+    "outside_both_repositories": true,
+    "contents_published": false
+  },
+  "recorded_turn_model_counts": {
+    "gpt-6.1-sol": 10
+  },
+  "cli_version": "0.166.0-alpha.5.1",
+  "model_provider": "custom",
+  "selected_message_counts": {
+    "user:None": 4,
+    "assistant:commentary": 41,
+    "assistant:final_answer": 7
+  },
+  "checks": {
+    "prefix_hash_and_line_boundary": true,
+    "all_event_type_counts_match": true,
+    "all10_turn_metadata_and_line_hashes_match": true,
+    "all52_selected_source_line_hashes_match": true,
+    "all52_export_record_hashes_match": true,
+    "all52_original_visible_text_parts_exact": true,
+    "export_schema_allowlisted": true,
+    "only_response_item_message_user_input_text_or_visible_assistant_output_text": true,
+    "no_tool_directed_messages": true,
+    "eligible_selection_set_exact": true,
+    "injected_or_attachment_user_wrappers_excluded": 7,
+    "reasoning_tool_system_developer_payloads_not_exported": true,
+    "immutable_serving_build_not_claimed": true,
+    "complete_team_history_not_claimed": true
+  },
+  "limitations": [
+    "Recorded model identifier and CLI version are labels in this scoped source, not an immutable serving build attestation.",
+    "Only52 selected visible messages from this prefix are covered; tool-generated code/prose, tool outputs, attachments, other sessions and other team members are outside the export.",
+    "Exclusion was verified by source event/role/content-type/phase and user-request allowlist; reasoning or tool body contents were not inspected."
+  ],
+  "issues": []
+}

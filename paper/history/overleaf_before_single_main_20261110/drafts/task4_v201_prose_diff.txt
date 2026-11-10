@@ -1,0 +1,371 @@
+--- V198/paper
++++ V201/paper
+@@ -1,4 +1,4 @@
+-% V198 owned review; provisional template number, registration unverified; user-supplied mcmthesis format, shared class unchanged.
++% V201 owned review; provisional template number, registration unverified; user-supplied mcmthesis format, shared class unchanged.
+ \documentclass{mcmthesis}
+ \mcmsetup{CTeX=false,tcn=18213,problem=A,sheet=true,titleinsheet=true,
+ keywordsinsheet=true,titlepage=false,abstract=true}
+@@ -22,17 +22,17 @@
+ \author{}\date{}
+ \hypersetup{pdftitle={Choosing a City for High-School Life with Incomplete Evidence},pdfauthor={}}
+ \graphicspath{{./}{drafts/}}
+-\input{task4_v198_generated.tex}
++\input{task4_v201_generated.tex}
+ \begin{document}
+-\input{task4_v198_front.tex}
+-\input{task4_v198_core.tex}
+-\input{task4_v198_conclusion.tex}
++\input{task4_v201_front.tex}
++\input{task4_v201_core.tex}
++\input{task4_v201_conclusion.tex}
+ \clearpage
+ \phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
+-\input{task4_v198_news.tex}\label{news-end}
++\input{task4_v201_news.tex}\label{news-end}
+ \clearpage
+ \phantomsection\addcontentsline{toc}{section}{References}
+-\input{task4_v198_references.tex}\label{main-end}
++\input{task4_v201_references.tex}\label{main-end}
+ \clearpage
+-\input{task4_v198_ai.tex}
++\input{task4_v201_ai.tex}
+ \end{document}
+
+--- V198/front
++++ V201/front
+@@ -1,50 +1,33 @@
+ \begin{abstract}
+-A city recommendation becomes more useful when its evidence and priorities can
+-be examined together. We compare sixteen cities using ten indicators of safety,
+-environment, household costs, education and everyday resources. Zurich is the
+-conservative recommendation under the retained team inputs and baseline or equal weights. All sixteen
+-cities remain possible champions within the retained evidence bounds.
++We compare sixteen cities for high-school life across ten indicators. Fixed-anchor
++TOPSIS and maximum regret recommend Zurich under baseline and equal weights;
++all sixteen remain possible champions within the retained evidence intervals.
+ 
+-The evaluation combines fixed-anchor TOPSIS with a maximum-regret decision.
+-Benefit and cost utilities share fixed reference scales, allowing controlled
+-comparisons across data, preference and development scenarios. Missing values
+-remain intervals. We select the city with the smallest worst-case shortfall from
+-a better-scoring competitor over the declared rectangular uncertainty set.
++Official records supplement 25 originally missing city--indicator entries without
++replacing team values. The mean score-interval width falls from 18.81077 to
++\CurrentMeanWidth{}, a \TotalWidthReduction\% reduction. The interval revision
++retains 48 uncertain entries and changes \RevisionRankChanges{} fixed-weight ranks
++from midpoint completion; separate interior completions let each city lead.
+ 
+-Official municipal records, school statistics and operator inventories supplement
+-twenty-five previously missing entries while preserving the team's original values.
+-The average score-interval width falls from 18.81077 to \CurrentMeanWidth{}, a \TotalWidthReduction\%
+-reduction. Actual reference years and source
+-populations remain explicit.
++Withholding Zurich's homicide point selects Singapore under baseline weights and
++Oslo under equal weights. Withdrawing its work-commute proxy selects Singapore
++under baseline weights and retains Zurich under equal weights. Doubling the
++education emphasis selects Singapore. \SummaryWeightMC{} These frequencies
++are conditional on the chosen weight distribution.
+ 
+-The interval revision retains 48 uncertain entries and Zurich's recommendation,
+-while \RevisionRankChanges{} fixed-weight ranks change from midpoint completion.
+-Separate interior completions let each city rank first. Withholding Zurich's
+-homicide point selects Singapore under baseline weights and Oslo under equal
+-weights. Separately withdrawing its work-commute proxy selects Singapore under
+-baseline weights; equal weights retain Zurich. These tests show dependence
+-on accepted inputs.
+-
+-Preferences and development conditions answer different decision questions.
+-Doubling the relative emphasis on education changes the conservative choice to
+-Oslo. \SummaryWeightMC{} These are conditional simulation frequencies.
+-Three uniform ten-per-cent development scenarios retain Zurich; separate
+-city-specific shocks reveal conditional recommendation changes without claiming
+-an empirical forecast.
+-
+-Separate country, district and age-group cases examine what citywide totals
+-leave unresolved. They distinguish facility supply from student access and
+-observed broad age groups from unsupported age-specific preferences. The result
+-is a practical starting choice with explicit alternatives and clear priorities
+-for additional evidence.
++Under uniform ten-per-cent development changes, resource expansion selects
++Singapore under baseline weights; other scenarios retain Zurich. City-specific
++shocks are illustrative, not forecasts. Country, district and age-group cases
++distinguish facility supply from student access and broad observed groups from
++unsupported age-specific preferences.
+ \begin{keywords}
+-high-school opportunities; TOPSIS; interval evidence;
+-maximum regret; preference sensitivity.
++high-school opportunities; TOPSIS; interval evidence; maximum regret; preference sensitivity.
+ \end{keywords}
+ \end{abstract}
+ \maketitle
+ \clearpage
+ \tableofcontents
++
+ \clearpage
+ \section{Introduction and decision scope}
+ \subsection{What makes a city suitable for high-school life?}
+
+--- V198/core
++++ V201/core
+@@ -1,4 +1,4 @@
+-% Owned V123 contribution rebased to V197 evidence and established controlled extensions.
++% Owned V123 contribution rebased to V200 evidence and established controlled extensions.
+ \section{Data collection and comparability}
+ \subsection{A traceable city--indicator matrix}
+ We compare $M=16$ cities on $N=10$ indicators covering safety, environment,
+@@ -9,7 +9,7 @@
+ the team table; official supplements do not retrospectively validate every
+ supplied measurement. Table~\ref{tab:indicators} states what each variable measures.
+ 
+-\input{task4_v198_assets/indicators.tex}
++\input{task4_v201_assets/indicators.tex}
+ 
+ The nominal reference year is 2025; supplements retain their actual years and
+ supplied population denominators. Matching Eurostat records give Dublin's
+@@ -96,9 +96,12 @@
+ Tokyo retains five Nerima indoor venues at distinct addresses: Heiwadai's
+ current closure excludes it, while Miharadai's announced February--May 2027
+ closure is not a current closure \cite{nerimapool,nerimaclose}.
+-Named subsets include seven Singapore venues from April 2025, twelve Zurich
+-venues captured in November 2026 and seventeen Milan indoor venues under the
+-June 2025 tariff \cite{sgpool_2025,zurichpool,milanpool2025}.
++Named subsets include 25 Singapore venues in the ActiveSG directory captured
++10 November 2026, twelve Zurich venues and seventeen Milan indoor venues under
++the June 2025 tariff \cite{sgpool_directory,sgpool_2025,zurichpool,milanpool2025}.
++The Singapore inventory counts physical venues, not currently open pools or
++teen access; four pool-specific temporary notices affect three venues. Withholding
++those three venues leaves 22 and retains Zurich under both weight references.
+ Zurich includes five distinct school pools with limited public sessions, some
+ women/girls-only, closed during school holidays and non-school days; adult-only
+ K\"ugeliloo is excluded. Venue supply does not establish adolescent access;
+@@ -167,7 +170,7 @@
+ Facility supply, commute proxies and school resources remain distinct from
+ adolescent access, school travel and learning quality.
+ 
+-\input{task4_v198_evidence_figure.tex}
++\input{task4_v201_evidence_figure.tex}
+ 
+ \section{Establishing the baseline evaluation model}
+ \subsection{Determining indicator weights}
+@@ -236,7 +239,7 @@
+ The decision order expresses a conservative recommendation under the stated
+ criteria and intervals.
+ 
+-\input{task4_v198_assets/baseline.tex}
++\input{task4_v201_assets/baseline.tex}
+ 
+ 
+ 
+@@ -256,7 +259,7 @@
+ 
+ \begin{figure}[!ht]
+ \centering
+-\includegraphics[width=\linewidth]{task4_v198_assets/score_intervals.pdf}
++\includegraphics[width=\linewidth]{task4_v201_assets/score_intervals.pdf}
+ \caption{Current score bounds and conservative decision order for the sixteen
+ cities. Intervals retain missing information; they are not confidence intervals.
+ Source: frozen city matrix and admitted supplements.}
+@@ -264,9 +267,9 @@
+ \end{figure}
+ 
+ \FloatBarrier
+-\input{task4_v198_assets/revision.tex}
+-
+-\input{task4_v198_vintage.tex}
++\input{task4_v201_assets/revision.tex}
++
++\input{task4_v201_vintage.tex}
+ 
+ \section{Model revision and extension}
+ \subsection{Considering future changes}
+@@ -335,12 +338,13 @@
+ mean decision rank, fractional first-place recommendation frequency and
+ fractional top-three decision membership; ties share membership.
+ 
+-\input{task4_v198_assets/preferences.tex}
+-
+-
+-
+-At baseline concentration 100, Zurich has a smaller sample mean decision rank
+-(2.0269) than Oslo (2.1779) and the higher sample recommendation frequency.
++\input{task4_v201_assets/preferences.tex}
++
++
++
++At baseline concentration 100, Singapore, Zurich and Oslo have sample mean
++decision ranks 2.0764, 2.1586 and 2.3354 respectively; Zurich has the highest
++sample recommendation frequency.
+ We retain minimum maximum regret as the predeclared decision rule; these
+ conditional summaries describe its weight sensitivity. A low AHP consistency
+ ratio checks calculation properties, not representative student opinion.
+@@ -353,9 +357,10 @@
+ frequencies and 15 for ranks \cite{hoeffding}.
+ The resulting half-widths are 2.38 percentage points and 0.357 ranks;
+ shared draws across outputs are allowed. On this event, subtracting two mean
+-intervals bounds their difference. Oslo minus Zurich at baseline concentration
+-100 gives $[-0.563,0.865]$, leaving their expected mean-rank order unresolved
+-by this guarantee. These bounds concern integration under the declared
++intervals bounds their difference. The simultaneous certificate resolves 4,259 of 4,440 pairwise mean-rank
++comparisons, leaves 181 unresolved, and certifies a unique smallest expected
++rank in 17 of 37 settings. The baseline top-city mean-rank ordering remains
++unresolved by this guarantee. These bounds concern integration under the declared
+ simulation laws.
+ 
+ \subsection{Within-city fairness and growth stages}
+@@ -387,7 +392,7 @@
+ 
+ \AgeCase
+ 
+-\input{task4_v198_assets/age_joint.tex}
++\input{task4_v201_assets/age_joint.tex}
+ 
+ Comparing exact ages fourteen and eighteen requires matched resident utilities
+ $u_{ij}^{(14)},u_{ij}^{(18)}$ and separately elicited weights
+
+--- V198/conclusion
++++ V201/conclusion
+@@ -1,13 +1,5 @@
+ \section{Conclusion and decision use}
+ Zurich minimizes maximum regret under baseline and equal weights; all sixteen
+-cities remain possible champions. Education priority selects Oslo. Withholding
+-Zurich's homicide point selects Singapore under baseline weights and Oslo under
+-equal weights; withdrawing its work-commute proxy selects Singapore under
+-baseline weights but retains Zurich under equal weights. Withdrawing 28 flagged points
+-selects Berlin and Paris, respectively.
+-
+-Verified supplements narrow mean score-interval width by \TotalWidthReduction\%
+-while preserving supplied values. At fixed evidence, the interval revision changes
+-13 decision ranks and allows each city to lead in a separate completion.
+-Families can use the recommendation as a starting point, then examine their
+-priorities and source bounds.
++cities remain possible champions. Education priority selects Singapore. Evidence
++supplements narrow the mean score interval by \TotalWidthReduction\%; the interval
++revision changes 13 decision ranks. Families can compare priorities and source bounds.
+
+--- V198/news
++++ V201/news
+@@ -1,6 +1,6 @@
+ \section*{A city choice built around a student's day}
+ 
+-Under the retained team inputs, Zurich is the cautious recommendation emerging from our comparison of sixteen cities for high-school life. An alternative that places greater emphasis on education points to Oslo. Together, these findings offer students and families a practical starting point: a city comparison that connects everyday opportunities with personal priorities while keeping gaps in the evidence visible.
++Under the retained team inputs, Zurich is the cautious recommendation emerging from our comparison of sixteen cities for high-school life. An alternative that places greater emphasis on education points to Singapore. Together, these findings offer students and families a practical starting point: a city comparison that connects everyday opportunities with personal priorities while keeping gaps in the evidence visible.
+ 
+ For a teenager, choosing a city involves the school day and the hours around it. Teaching resources, nearby higher education, clean air, safety, housing and living costs, transport, journey times, internet access and swimming facilities can all matter. Our study brings these ten considerations into one framework. Its purpose is to help families examine trade-offs, rather than assume that the same place will suit every student.
+ 
+@@ -19,13 +19,13 @@
+ \newpage
+ \subsection*{Students' priorities can change the recommendation}
+ 
+-In an education-focused comparison, the relative emphasis on teaching resources and the density of higher-education institutions is doubled before the priorities are balanced again. Oslo then becomes the cautious recommendation. This is an illustrative choice made by the analysts, not a finding from a student survey. It gives a family a concrete way to explore how a stronger educational emphasis changes its shortlist.
++In an education-focused comparison, the relative emphasis on teaching resources and the density of higher-education institutions is doubled before the priorities are balanced again. Singapore then becomes the cautious recommendation. This is an illustrative choice made by the analysts, not a finding from a student survey. It gives a family a concrete way to explore how a stronger educational emphasis changes its shortlist.
+ 
+ City totals also need a local check. A transport-stop inventory leaves questions about walking distance, service frequency, fares and accessible routes. A pool count leaves questions about entry fees, opening hours and which neighbourhoods the facilities serve. These are useful questions for families and city planners to investigate before treating resource supply as equal access. The study does not measure an individual student's benefit from adding a stop, teacher or pool.
+ 
+ \subsection*{Use future scenarios to ask better questions}
+ 
+-The study also examines three hypothetical changes: expanding selected resources, increasing living and travel pressures, and reducing selected educational, air-quality and travel burdens. When the affected quantities change uniformly by ten per cent, Zurich remains the cautious recommendation under both baseline and equal priorities. Repeated simulations explore what happens when the assumed changes differ across cities. They test chosen scenarios; they do not predict a future year or estimate a city's real chance of being best.
++The study also examines three hypothetical changes: expanding selected resources, increasing living and travel pressures, and reducing selected educational, air-quality and travel burdens. When the affected quantities change uniformly by ten per cent, resource expansion selects Singapore under baseline priorities; Zurich remains the recommendation in the other scenarios and under equal priorities. Repeated simulations explore what happens when the assumed changes differ across cities. They test chosen scenarios; they do not predict a future year or estimate a city's real chance of being best.
+ 
+ Checking a specific source can change the shortlist: treating Zurich's unverified homicide-rate figure as unknown points to Singapore under the original priorities and Oslo with equal priorities. Separately setting aside Zurich's general work-commute proxy also points to Singapore under the original priorities; equal priorities retain Zurich. The supplied figures remain in the baseline; these checks test which information the recommendation depends on.
+ 
+
+--- V198/vintage
++++ V201/vintage
+@@ -3,18 +3,18 @@
+ supplements and the 48 non-point bounds fixed. Test pre-2020 dates, post-2025
+ dates, non-\texttt{ok} flags and their union, counting overlaps once.
+ 
+-\input{task4_v198_assets/vintage_table.tex}
++\input{task4_v201_assets/vintage_table.tex}
+ 
+ Withdrawing 28 flagged points selects Berlin (baseline weights) or Paris
+ (equal weights); removing 13 pre-2020 points selects Singapore or Zurich,
+ respectively. Removing 64 post-2025 points retains Zurich under both,
+-widening the baseline mean range from 16.01 to 48.37; the 95-point union
++widening the baseline mean range from 15.96 to 48.34; the 95-point union
+ selects Singapore under both. All sixteen remain possible champions.
+ Dates and flags are screening criteria, not error probabilities.
+ 
+ Withholding Zurich's homicide point selects Singapore (baseline) or Oslo
+ (equal); withholding Amsterdam's retains Zurich under both. Varying only
+-Zurich's rate gives regret ties near 0.31194 and 1.15472 per 100,000,
++Zurich's rate gives regret ties near 0.14951 and 1.03432 per 100,000,
+ respectively: Zurich uniquely minimizes regret below each cutoff and is
+ excluded above. These are hypothetical rates, with other inputs fixed.
+ 
+@@ -22,7 +22,7 @@
+ supplied means selects Singapore (baseline), retaining Zurich under equal
+ weights. Dublin alone changes neither choice; these withdrawals retain sixteen
+ possible champions. Varying only Zurich's mean under Jensen bounds gives a baseline tie
+-near 54.05 minutes: Zurich below, Singapore above; equal weights retain
++near 40.53 minutes: Zurich below, Singapore above; equal weights retain
+ Zurich for every nonnegative mean, with other inputs fixed.
+ 
+ Jointly allow each of the twelve means $t_i$ to vary independently in
+@@ -30,7 +30,7 @@
+ Singapore's stage bins, unknown travel and other entries. Fixed upper scores
+ make each regret increase with its own mean: Zurich's largest mean and the
+ other eleven smallest means maximize its regret minus the best rival's.
+-The critical radii are approximately 13.01105\% (baseline) and 63.44548\% (equal).
++The critical radii are approximately 1.57080\% (baseline) and 63.44548\% (equal).
+ Below each boundary Zurich uniquely minimizes regret throughout the box;
+-at it Oslo can tie, and above it a counterexample exists.
++at it Singapore (baseline) or Oslo (equal) can tie, and above it a counterexample exists.
+ These conditional ranges are not measured errors or future probabilities.
+
+--- V198/references
++++ V201/references
+@@ -1,6 +1,7 @@
+ % Owned references rebased to V154 evidence and controlled analyses.
+ \begin{thebibliography}{99}
+ \raggedright
++\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt}\interlinepenalty=10000
+ \bibitem{teamtable} Team-supplied city-indicator table, sixteen cities.
+ Frozen input archived November 2026; original values, years and flags retained.
+ \bibitem{saaty} T. L. Saaty. The analytic hierarchy process---what it is and
+@@ -124,6 +125,9 @@
+ Data.gov.sg catalogue and GeoJSON; retrieved 7 November 2026. Archived original
+ geometry and catalogue HTML; count uses distinct nonempty native bus-stop codes.
+ \url{https://data.gov.sg/datasets/d_3f172c6feb3f4f92a2f47d93eed2908a/view}
++\bibitem{sgpool_directory} Sport Singapore, ActiveSG Circle. Swimming pool
++facility directory and 25 linked venue details, retrieved 10 November 2026.
++\url{https://www.activesgcircle.gov.sg/facilities/swimming-pools}.
+ \bibitem{sgpool_2025} Sport Singapore, ActiveSG Circle. \textit{Editors' pick:
+ must-hit pools in Singapore}, published 23 April 2025; retrieved 8 November
+ 2026. Archived provider-extracted text and linked venue details; current
+
+--- V198/ai
++++ V201/ai
+@@ -51,8 +51,8 @@
+ reconstructed and labelled as an exact historical quotation.
+ 
+ \subsection*{Verification associated with this draft}
+-The research calculations preserve the original city CSV and the V197 primary
+-evidence. The V197 validation independently recomputes weighted norms and
++The research calculations preserve the original city CSV and the V200 primary
++evidence. The V200 validation independently recomputes weighted norms and
+ self-excluded competitor maxima, verifies interval membership of constructed
+ completions and checks source hashes. Original provider records are kept
+ separately from derived tables. Compilation and rendered-page review check the
+
+--- V198/evidence_figure
++++ V201/evidence_figure
+@@ -1,14 +1,14 @@
+-% Owned identification figure integrated in V198.
++% Owned identification figure integrated in V201.
+ % Use at the full6.5in text width; do not shrink below5.85in.
+ \begin{figure}[p]
+ \centering
+-\includegraphics[width=\linewidth]{task4_v198_assets/identification_matrix.pdf}
++\includegraphics[width=\linewidth]{task4_v201_assets/identification_matrix.pdf}
+ \caption{Identification ranges in the retained sixteen-city, ten-indicator matrix.
+ Eight of the eleven fully unknown entries concern upper-secondary pupil--teacher
+ ratios. Shading shows utility upper minus lower bounds; dots mark retained point
+ assumptions and question marks identify $[0,1]$ entries. Point assumptions include
+ submitted values and do not certify independent validation or zero measurement
+ error. These are identification bounds under the retained source rules, not
+-confidence intervals. Travel entries retain school-travel and general-commute proxy scopes. Cities follow the input order. Source: V197 utility bounds.}
++confidence intervals. Travel entries retain school-travel and general-commute proxy scopes. Cities follow the input order. Source: V200 utility bounds.}
+ \label{fig:identification-matrix}
+ \end{figure}

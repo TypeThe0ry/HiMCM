@@ -1,0 +1,61 @@
+{
+  "version": "V190 independent delivery audit",
+  "status": "pass",
+  "review_version": "V189 unchanged",
+  "primary_model": "V181 unchanged",
+  "pdf_sha256": "f6a474bd61c92a36bce1ea0a365d74f80ecd66616911db78f698d3ccd3cb97a0",
+  "total_pages": 27,
+  "main_and_reference_pages": 25,
+  "main_page_margin": 0,
+  "requirements": 47,
+  "scoped_anchor_rows": 58,
+  "independent_bbox_anchor_hits_match": true,
+  "raw_heading_lines_checked": true,
+  "page_mapping_rows_corrected": 12,
+  "all47_statuses_preserved": true,
+  "pending_count": 13,
+  "pending_gates": [
+    "PA-ai-section",
+    "U-source-quality",
+    "CI-headers",
+    "CI-control",
+    "CI-anonymity",
+    "AI-tool-disclosure",
+    "AI-complete-record",
+    "TEAM-integration",
+    "TEAM-shared-build",
+    "REG-eligibility",
+    "SUB-filename",
+    "SUB-upload",
+    "SUB-confirmation"
+  ],
+  "whole_word_negative_cases_checked": [
+    "example",
+    "examination",
+    "extra",
+    "exabyte",
+    "Exa2",
+    "myExa"
+  ],
+  "unicode_and_hyphen_wrap_checks": true,
+  "paper_files_unchanged": 788,
+  "science_files_unchanged": 245,
+  "existing_research_registries_unchanged": 4,
+  "delivery_registries_equal": true,
+  "submission_ready": false,
+  "server_compile_verified": false,
+  "scope": "Locates the specified passages and verifies frozen inputs/status preservation. Does not certify every original measurement, all paper reasoning, source validity, full-team AI records, registration or final contest readiness.",
+  "source_sha256": {
+    "scripts/audit_task4_v190.py": "bf17e8da1a9b6bd9b446f1edb6b58cae3da95eccf3b0d749132721d7a64e6de0",
+    "results/task4_v190_delivery/protected_files.json": "5cad594ac1aa077850a7b237e4c06457b543bf91ed22304866d7c66dfb072efc",
+    "design/task4_user_current_delivery.json": "66f844a4de0854b3d8169593ce7d29e88d322804624292b977f13d49e3454e32",
+    "design/task4_user_current_review.json": "806dffaa92d61dbd669d2d4fd3d0e055e60cd89e23271799c1118c9a0c23c33c",
+    "results/task4_v189_review/verification.json": "194d3a4741df767b7a4673348008c570b68b868b400b280fd4bdfcc7de7d6761"
+  },
+  "audited_output_sha256": {
+    "results/task4_v190_delivery/requirements.csv": "8feeb427bf89f81abec827419570d59655baa5c4ff5f08719c611b98267366a3",
+    "results/task4_v190_delivery/anchor_hits.csv": "9cd73d085572f3d651e0c8612cf751ef48088976368e4ca478d3c93d0736ef1f",
+    "results/task4_v190_delivery/summary.json": "a8b081b4f53e2132f0351ffe5b839701037bc767ddf07f40796d620fe0624396",
+    "results/task4_v190_delivery/content_review.md": "9d267fc5b2c57c3026b7b72e672221d5274c364d06d559ecc15fc805c2c62105"
+  }
+}

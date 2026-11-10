@@ -1,0 +1,933 @@
+\documentclass{mcmthesis} 
+\mcmsetup{
+    CTeX = false,  
+    tcn = 18213, 
+    problem = A, 
+    sheet = true, 
+    titleinsheet = true, 
+    keywordsinsheet = true, 
+    titlepage = false, 
+    abstract = true
+}
+
+
+
+\usepackage{etoolbox}
+\AfterEndEnvironment{longtable}{\vspace{-2\baselineskip}}
+\usepackage{ragged2e}
+\usepackage{microtype}
+\AtBeginDocument{
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{0.5\baselineskip}
+}
+
+\usepackage{palatino}
+\usepackage{biblatex}
+
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[capitalize, noabbrev]{cleveref}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\setcounter{tocdepth}{2}
+\makeatletter
+
+% --- ToC title formatting (unchanged) ---
+\renewcommand\tableofcontents{%
+    \centerline{\rmfamily\Large\bfseries\contentsname%
+        \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+    \vskip 3ex
+    \@starttoc{toc}%
+}
+
+% --- Section entry: bold number + bold title + extra vertical spacing ---
+\renewcommand{\l@section}{%
+  \def\@pnumwidth{2.3em}%
+  \def\@tocrmarg{2.3em}%
+  \bfseries
+  \@dottedtocline{1}{1.5em}{2.3em}%
+}
+
+% --- Subsection entry: NOT bold ---
+\renewcommand{\l@subsection}{%
+  \normalfont
+  \@dottedtocline{2}{3.0em}{3.2em}%
+}
+
+% --- Make dots centered vertically ---
+\renewcommand{\@dotsep}{1} % dot density
+
+
+\makeatother
+
+
+
+\usepackage[english]{babel}
+\hyphenpenalty=500 
+
+\setlength{\LTcapwidth}{\textwidth}
+\captionsetup[table]{width=\textwidth}
+
+% Optional: Encoding settings
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+
+\title{Olympic Game}
+\author{\small Team \#18214}
+\date{November 2025}
+
+\addbibresource{ref.bib} 
+
+
+\begin{document}
+
+\begin{abstract}  
+
+To emphasize the ecological impact of mega-sport events, we established a comprehensive evaluation and location selection model. This model takes into account different factors driving positive or negative environmental impact, aiming to provide a scientific basis regarding location selection choices for mega-sports events. 
+
+\textbf{For Task 1}, we selected six evaluation indicators regarding environmental sustainability, including\textbf{ travel distances, air conditioning consumption, energy structures, transportation availability, and weather conditions}. Quantitative calculation expressions are established for those indicators. Among the 19 cities that have previously hosted the Super Bowl, we selected 3 new candidates: Denver CO, Nashville TN, and Seattle WA. The indicator values for the 22 cities are then calculated. The detailed results are shown in \cref{tab:final_scores}. 
+
+\textbf{For Task 2}, we created a model using the combined weighting method. \textbf{The Analytic Hierarchy Process (AHP)} and\textbf{ the entropy method} are combined to calculate the final weight matrix. Through further comparison with results from \textbf{the VIKOR method} with \textbf{the Kendall's coefficient of concordance}, the results showed a strong and statistically significant correlation, confirming the robustness and credibility of the method selected. 
+
+\textbf{For Task 3}, we calculated the final scores according to the weights determined by the combined weighting method for the 22 candidate cities. The rankings are shown in \cref{tab:final_scores} with \textbf{Stanford CA} leading all candidates with a score of \textbf{74.066}. \textbf{Denver CO} leads the three new candidate cities with a score of $\textbf{43.435}$. 
+
+\textbf{For Task 4}, we identified extensions to existing indicators for different types of tournaments and applied the model to select the most environmentally sustainable Formula I Grand Prix location. \textbf{Silverstone, United Kingdom} appears as the most environmental sustainable choice with a score of $\textbf{79.981}$. We also identified strategies in \cref{subsubsec:strategies}, then applying them to Los Angeles CA and Nashville TN. Both cities show significant increases in the final scores (\cref{fig:city_score_responce_strategies}), reflecting the effectiveness of the strategies.  
+
+\textbf{For Task 5}, we attached a letter presenting our findings and recommendations for the host city of the 2029 Super Bowl to the NFL, including advantages for selecting Stanford CA and Denver CO as the host cities. 
+
+\begin{keywords}  
+Super Bowl, Combine Weighting Method, Sustainability, AHP, VIKOR
+\end{keywords} 
+\end{abstract}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction} 
+\label{sec:intro}
+
+\subsection{Background Information} \label{subsec:background_info}
+
+Where a student lives can affect their education, daily life, and future opportunities. For high school students aged 14–18, a good city should offer more than strong schools. It should also be safe, affordable, and provide enough opportunities for students to explore their interests. Access to public transportation, parks, and recreational facilities can make a difference, especially for teenagers who cannot drive. As technology becomes part of everyday life, access to digital resources and opportunities to learn about AI may also matter.
+
+However, cities differ in many ways. Some have excellent schools but high living costs, while others are affordable but offer fewer educational or recreational opportunities. These differences make it difficult to decide which city is best for high school students. To address this problem, we select a set of measurable indicators and use them to compare cities from a teenager's perspective.
+
+\subsection{Problem Restatement} \label{subsec:prob_restatement}
+Our task is to compare cities from a high school student's perspective. This requires us to:
+\begin{enumerate}
+    \item Select suitable evaluation criteria, explain why they matter, and justify why some other criteria are excluded.
+    \item Collect relevant data and develop a mathematical model to rank at least ten cities. Identify the best city based on our criteria and discuss the model's limitations.
+    \item Evaluate the credibility of our ranking and make at least one major revision to the model. Explain how this revision improves the ranking.
+    \item Write a one-to-two-page non-technical news article for COMAP describing our modeling process and findings.
+\end{enumerate}
+
+
+ 
+
+\newpage
+
+\subsection{Our Work}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]
+    {framework.png}
+    \caption{The Workflow Regarding Model Construction and Extension}
+    \label{fig:ourframework}
+\end{figure}
+
+
+\section{Model Assumptions}  \label{sec:assumptions}
+
+When constructing an evaluation model for selecting the most environmentally sustainability candidate city for the 2029 Super Bowl, the following assumptions are utilized, listed below:
+
+\textbf{1. Attendee behavior and event operations remain consistent across all potential host cities.} Consistent attendee behavior and standardized event operations ensure that differences in evaluation outcomes reflect the environmental and infrastructural conditions rather than variations in fans' or organizers' behaviors. This stability ensures the focus on meaningful city-level factors that influence the overall sustainability of a potential Super Bowl. 
+
+\textbf{2. Indicators evaluated are expected to be consistent across cities or states.} Uniform sustainability indicators provide a common basis for comparing host cities, ensuring that each city is accessed under the same criteria. This assumption ensures a fair and objective evaluation, reducing inconsistencies in measurement or reporting. 
+
+\textbf{3. Cities are expected to accommodate all fans attended.} Assuming that each city can fully accommodate all attending fans ensures city selection to be based on environmental factors of the cities rather than capacity restraints. The candidate cities are cities that have hosted a Super Bowl or that host a NFL team, thus meeting the baseline requirements for accommodating a considerable amount of fans. 
+
+
+
+\section{Symbols and Notations} \label{sec:notations}
+
+The following table defines the different symbols utilized in the model construction. 
+
+
+\setlength{\tabcolsep}{8pt} 
+\begin{center}
+\begin{longtable}{cl}
+\caption{Glossary of Symbols Used During Model Construction} 
+\label{tab:symbols} \\
+
+\toprule
+\textbf{Symbol} & \textbf{Meaning} \\
+\midrule
+\endfirsthead
+
+\bottomrule
+\endlastfoot
+
+$S$S & Comprehensive score. \\
+$A$ & Judgment matrix. \\ 
+$W$ & Weight vector. \\ 
+$x_{ij}$ & The comprehensive score of the $i$th element of the $j$th indicator. \\ 
+$x^2 = 3x + \int x^2 \, dx$ & The normalized value of $x_{ij}$. \\
+$x_{max}$ & The maximum value of $x$ among the category. \\
+$x_{min}$ & The minimum value of $x$ among the category. \\
+
+\end{longtable}
+\end{center}
+
+Note: Symbols not specified in the table are defined on their first occurrence. Variants of similar symbols are denoted as different subscripts. 
+
+\section{Calculating for Sustainability Evaluation Indicators} \label{sec:indicators}
+
+To select the most environmental friendly host city of the Super Bowl, various areas highlighting sustainability should be considered. To perform a holistic review of these candidates, quantitative data is essential for comparisons. On the other hand, qualitative analysis is also crucial, highlighted by identifying and defining used evaluation indicators. 
+
+\subsection{Analytic Hierarchy Process (AHP)}
+
+The Analytic Hierarchy Process (AHP) is employed to determine the relative importance of evaluation criteria through pairwise comparisons based on expert judgment. In this study, four criteria are considered: accommodation, transportation, food, and safety. The resulting weights reflect the subjective importance of these criteria in evaluating the four candidate destinations: Beidaihe, Suzhou, Hangzhou, and Beijing. The AHP procedure consists of the following three steps.
+
+\noindent\textbf{Step 1: Constructing the Judgment Matrix.}
+A pairwise comparison matrix is constructed using Saaty's 1--9 scale to assess the relative importance of the four criteria. The scale assigns values of 1, 3, 5, 7, and 9 to represent increasing levels of importance, while intermediate values express compromises between adjacent judgments. Based on these comparisons, the judgment matrix is formulated as follows:
+
+\begin{equation}
+A =
+\begin{bmatrix}
+1 & a_{12} & a_{13} & a_{14} \\
+\frac{1}{a_{12}} & 1 & a_{23} & a_{24} \\
+\frac{1}{a_{13}} & \frac{1}{a_{23}} & 1 & a_{34} \\
+\frac{1}{a_{14}} & \frac{1}{a_{24}} & \frac{1}{a_{34}} & 1
+\end{bmatrix}.
+\end{equation}
+
+where $A$ denotes the judgment matrix and $a_{ij}$ represents the relative importance of criterion $i$ over criterion $j$, satisfying $a_{ij}=1/a_{ji}$ and $a_{ii}=1$. The interpretation of the comparison scale is summarized in Table~\ref{tab:ahp_scale}.
+
+\begin{table}[htbp]
+\centering
+\caption{Scale of Relative Importance in AHP}
+\label{tab:ahp_scale}
+\begin{tabular}{cl}
+\hline
+\textbf{Value} & \textbf{Meaning} \\
+\hline
+1 & Equally important \\
+3 & Moderately more important \\
+5 & Strongly more important \\
+7 & Very strongly more important \\
+9 & Extremely more important \\
+\hline
+\end{tabular}
+\end{table}
+
+\noindent\textbf{Step 2: Calculating the Criterion Weights.}
+After constructing the judgment matrix, the relative weights of the evaluation criteria are determined using the principal eigenvector method. Specifically, the eigenvector corresponding to the largest eigenvalue is normalized to obtain the priority weight vector, expressed as follows:
+
+\begin{equation}
+A\mathbf{w}^{AHP}
+=
+\lambda_{\max}\mathbf{w}^{AHP},
+\qquad
+\sum_{i=1}^{n}w_i^{AHP}=1.
+\end{equation}
+
+where $\lambda_{\max}$ is the largest eigenvalue of the judgment matrix, $\mathbf{w}^{AHP}=(w_1^{AHP},w_2^{AHP},\ldots,w_n^{AHP})^{T}$ denotes the normalized weight vector, and $n=4$ represents the number of evaluation criteria. Each weight indicates the relative contribution of the corresponding criterion to the overall evaluation.
+
+\noindent\textbf{Step 3: Consistency Verification.}
+Since pairwise comparisons are based on subjective judgments, a consistency test is performed to ensure the reliability of the derived weights. The Consistency Index (CI) and Consistency Ratio (CR) are calculated as follows:
+
+\begin{equation}
+CI=\frac{\lambda_{\max}-n}{n-1},
+\qquad
+CR=\frac{CI}{RI}.
+\end{equation}
+
+where $CI$ measures the consistency of the judgment matrix, $RI$ is the Random Index with a value of $0.90$ for $n=4$, and $CR$ evaluates the overall consistency of the comparisons. A judgment matrix is considered acceptable when $CR<0.10$; otherwise, the pairwise comparisons must be revised.
+
+Once the consistency requirement is satisfied, the AHP-derived weights are retained as the subjective component of the subsequent weight fusion process, where they are combined with objective weights obtained from the Entropy Weight Method (EWM).
+
+
+\subsection{Defining Sustainability Evaluation Indicators} \label{subsec:defining_indicators}
+
+Several sustainability indicators that potentially vary significantly are considered, as illustrated in \cref{fig:indicator_icons}. Those factors, ranging from travel distances to waste processing, are sensitive regarding location chosen, thus making them optimal for determining an appropriate host city. 
+
+
+\subsubsection{Travel Distances} \label{subsubsec:indicator_trav_distance}
+
+This measure approximates the total travel distance made by fans (ticket holders) to attend the event, approximated by the sizes of fan bases in different cities and ideal minimal travel distances via air, calculated with the following formula: 
+\begin{equation} \label{eq:trav_indicator}
+    S_\text{trav} = \sum^N_i \beta \cdot f_i \cdot d_i
+\end{equation}
+where $\beta$ represents the proportion of Super Bowl ticket holders per unit population; $f_i$ represents the respective populations of each city; and $d_i$ represents the average travel distance by air, in millions of miles, to the destination city. 
+
+\subsubsection{Air Conditioning Consumption} \label{subsubsec:indicator_aircon}
+
+ Since the Super Bowl is hosted in February, a large portion of energy consumption is due to extra air conditioning at different locations, making this measure significant. This measure approximates the extra energy consumption due to air conditioning in different temperature levels during the Super Bowl, calculated with the following formula: 
+\begin{equation} \label{eq:aircon}
+    S_\text{e-ac} = \kappa \cdot \Delta T
+\end{equation}
+where $\kappa$ is the total energy used per unit increase in temperature; and $\Delta T$ is the temperature difference between 26 \degree C and the average predicted temperature in the city during the event.
+
+\subsubsection{Energy Consumption on Waste Processing} \label{subsubsec:indicator_waste_processing}
+
+During Super Bowl LVIII, more than 40 tons of waste is generated. Moreover, the environmental impact of different waste processing methods vary, with recycling and composting causing the least environmental impact and incinerating causing the most. This measure quantifies the extra energy consumption due to waste processing in each city, depending on combinations of different waste processing methods applied at different cities and their respective pollution (carbon emission) factors, calculated with the following formula: 
+\begin{equation} \label{eq:waste_processing}
+    S_\text{e-wp} = W \cdot \left( \eta_I \cdot \epsilon_I + \eta_L \cdot \epsilon_L + \eta_R \cdot \epsilon_R \right)
+\end{equation}
+where $W$ is the total amount of waste consumed; $\eta$ is the percentage of each waste processing method; and $\epsilon$ is the corresponding carbon emission factor for each method. The subscripts $I$, $L$, and $R$ represents incineration, landfilling and recycling (composting) respectively.
+
+
+
+\subsubsection{Eco-friendliness of Energy Structure} \label{subsubsec:indicator_energy_structure}
+
+Considering the massive amounts of energy used during the event, the eco-friendliness of the sources of energy are thus important. This indicator represents the weighted average of the carbon emissions of different energy generation methods, calculated using the following formula: 
+\begin{equation} \label{eq:energy_structure}
+S_\text{e-ef} = 1 - \frac{\sum^M_i \alpha_i \cdot \epsilon_i} {\epsilon_{max}}
+\end{equation} where $M$ is the number of different sources of electricity generation (e.g., wind, coal, thermal, nuclear, hydro, and etc.);  $\alpha_i$ is the respective usage percentage; $\epsilon_i$ is the emission factor of the respective energy source; and $\epsilon_{max}$ represents the maximum emission factor among all energy categories.
+
+\subsubsection{Eco-friendliness of In-city Transportation} \label{subsubsec:indicator_transportation}
+
+Transporting from and back from venues within the city during the event is a natural and unavoidable demand, thus highlighting the importance of the sustainability of the in-city transportation availability. This measure approximates the eco-friendliness regarding transportation method selection (e.g., driving alone, carpooling, taking public transit, walking, or biking), calculated with the following formula:
+\begin{equation} \label{eq:transportation}
+    S_\text{t-ef} = \sum^k_i \rho_i \cdot \epsilon_i 
+\end{equation} where $\rho_i$ is the usage percentage of the respective transportation method; and $\epsilon_i$ is the respective carbon emission factor of the corresponding transportation method. 
+
+\subsubsection{Weather Conditions Impact} \label{subsubsec_indicator_weather}
+
+Weather conditions differ at locations, while delivering impacts regarding the sustainability of the event. For example, rainy days will increase disposable waterproof product usage, thus increasing the overall carbon footprint and influencing the sustainability of the event negatively. To consider potential outcomes under different weather conditions (e.g., sunny, overcast, rainy, snowy), their overall influence and probability of occurrence are measured. The factor then combines those two measurements with the following formula: 
+\begin{equation} \label{eq:weather}
+    S_\text{wea} = \sum_i ^N p_i \cdot \mu _i 
+\end{equation} 
+where $p_i$ is the respective likelihood of the specific type of weather; and $\mu_i$ is the respective influence factor of carbon emissions subjected to the weather type.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/indicators_icons.png}
+    \caption{Sustainability Evaluation Indicators Selected}
+    \label{fig:indicator_icons}
+\end{figure}
+
+
+\subsection{Calculation Results of Sustainability Evaluation Indicators} \label{subsec:indicator_calc_results}
+
+Host city candidates include the 19 cities that have previously hosted a Super Bowl and three potential candidates with existing NFL teams: \textbf{Denver, Colorado; Nashville, Tennessee; and Seattle, Washington.} The three cities are put into race to investigate the effects of different factors. The geographical distribution of those cities are represented by the home NFL teams of the cities in \cref{fig:nfl_teams_map}. 
+
+The three potential cities are selected due to their unique characteristics. Seattle, WA is selected because of the hydropower dominance in the area and large flight distances from and to other populous areas; Denver, CO is selected because of the relatively low sustainability regarding energy generation; and Nashville, TN is selected because of its low temperatures and relatively centered location. With those three extra location choices, more diverse city choices that are strong or weak in corresponding fields are brought into consideration.  
+
+With extensive data collection and appropriate approximation (based on data from Super Bowl LIX hosted by New Orleans LA) for constants and factors involved, the 22 calculated sustainability evaluation indicators are listed in \cref{tab:indicator_calc_results}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/nfl_teams_on_map.png}
+    \caption{Home Teams of Candidate Cities}
+    \label{fig:nfl_teams_map}
+\end{figure}
+
+
+% Begins longtable
+\setlength{\tabcolsep}{8pt} 
+\begin{center}
+\begin{longtable}{cl>{\ttfamily}crrrrrr}
+\caption{Calculated Evaluation Indicators of Sustainability} 
+\label{tab:indicator_calc_results} \\
+
+\toprule
+\textbf{\#} & \textbf{City} & \multicolumn{1}{c}{\textbf{State}} & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{\#} & \textbf{City} & \multicolumn{1}{c}{\textbf{State}} & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{9}{r@{\hspace{0pt}}}{\textit{Continued on next page}}\\[-0.5ex]
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+1 & Tempe & AZ & 139.3 & 6634.8 & 282 & 64.83 & 16305 & 76 \\
+2 & Glendale & AZ & 139.9 & 6634.8 & 312 & 64.83 & 17340 & 62 \\
+3 & Los Angeles & CA & 161.9 & 6429.6 & 1150 & 78.14 & 16472 & 66 \\
+4 & Pasadena & CA & 161.3 & 6840.0 & 345 & 78.14 & 17300 & 52 \\
+5 & Inglewood & CA & 162.6 & 6840.0 & 432 & 78.14 & 16833 & 63 \\
+6 & Stanford & CA & 178.8 & 6840.0 & 264 & 78.14 & 5675 & 58 \\
+7 & San Diego & CA & 160.7 & 6840.0 & 322 & 78.14 & 16906 & 65 \\
+8 & Santa Clara & CA & 177.7 & 7934.4 & 376 & 78.14 & 16842 & 48 \\
+9 & Denver & CO & 119.3 & 8755.2 & 405 & 42.43 & 16535 & 12 \\
+10 & Miami Gardens & FL & 163.4 & 16484.4 & 529 & 53.17 & 18083 & 48 \\
+11 & Jacksonville & FL & 137.1 & 2462.4 & 282 & 53.17 & 17723 & 48 \\
+12 & Atlanta  & GA & 117.6 & 6703.2 & 480 & 55.54 & 16206 & 39 \\
+13 & Indianapolis & IN & 107.4 & 10533.6 & 259 & 26.39 & 17880 & 6 \\
+14 & New Orleans & LA & 121.2 & 16552.8 & 414 & 44.10 & 15920 & 48 \\
+15 & Pontiac & MI & 117.5 & 7387.2 & 240 & 45.86 & 17186 & 0 \\
+16 & Minneapolis & MN & 118.6 & 16279.2 & 345 & 45.75 & 15459 & 4 \\
+17 & Paradise & NV & 147.4 & 16279.2 & 192 & 54.55 & 17733 & 38 \\
+18 & East Rutherford & NJ & 138.6 & 16279.2 & 470 & 65.22 & 15369 & 8 \\
+19 & Nashville & TN & 108.0 & 16279.2 & 368 & 45.86 & 17043 & -10 \\
+20 & Houston & TX & 117.4 & 6840.0 & 575 & 45.88 & 17478 & 48 \\
+21 & Arlington & TX & 108.2 & 14774.4 & 437 & 45.88 & 17402 & 37 \\
+22 & Seattle & WA & 194.9 & 12996.0 & 336 & 83.38 & 15819 & 0 \\
+
+
+\end{longtable}
+\end{center}
+% Ends longtable
+
+
+\subsection{Location Influences Displayed by Calculated Indicators} \label{subsec:indicator_insights}
+
+The calculated indicators reflect different sustainability features regarding city infrastructure and planning as well as the potential environmental impact due to their geographical locations when hosting the event. % Silhouettes for typical cities demonstrated below are shown in \cref{fig:city_skylines}.
+
+
+\subsubsection{Influence of Geographical Location} \label{subsubsec:indicator_insights_location}
+
+To estimate the summed travel distance of all fans, the 50 most populous cities in the United States are considered. Seattle WA has a significant higher travel distance indicator value reflecting its northwest location, while Indianapolis IN, Nashville TN, and Arlington TX have low indicator values, reflecting the general accessibility of central US cities via air. 
+
+Differences in geographical locations also results in different climates thus different weath\ -er impacts. In general, warmer temperature and clearer weather at a location require less energy compared to being freezing and snowy. Jacksonville FL has the highest temperature during the event, thus requiring less energy to warm the stadium to a comfortable temperature. On the other hand, cities including New Orleans LA, Minneapolis MN, Paradise NV, East Rutherford NJ, and Nashville TN have low temperatures during the event, thus requiring significant more energy to heat up the stadium. 
+
+Similarly, Tempe AZ has a high (positive) weather influence indicator displaying low rain and snow chances, whereas Nashville TN has a low (negative) weather influence reflecting the high chances to snow and rain at the location. Raining and snowing require extra energy costs, thus influencing the sustainability of the event. 
+
+\subsubsection{Influence of Energy Structure} \label{subsubsec:indicator_insights_energy}
+
+Aside from the geographical location of the candidate cities, the energy generation methods used also impacts the sustainability of the event. Different energy generation methods, ranging from clean energy including nuclear and hydropower to generation methods burning fossil fuel such as coal and natural gas, result in different degrees of environmental impact. 
+
+Among all of the generation methods, nuclear energy and wind power are the most environmental friendly if considering carbon dioxide emissions, measuring on average $12 \text{ gCO}_2$. Burning coal is on the other end of the spectrum, measuring $820 \text{ gCO}_2$ on average. 
+
+From the results, Washington has the most sustainable energy generation source, largely due to the hydropower dominance in the energy structure, benefiting Seattle as the candidate city. Conversely, Indiana has the least sustainable energy structure, with a large proportion of fossil fuel burning, thus making Indianapolis less sustainable from the energy structure perspective.  
+
+\subsubsection{Influence of City Planning and City Policy} \label{subsubsec:indicator_insights_city}
+
+Public transportation availability is a reflection of city planning. Environmental-friendly city planning in general encourages walking, biking, and taking public transit. The eco-friendliness of in-city transportation is thus determined by city planning. 
+
+Stanford CA shows the most eco-friendly in-city transit due to large proportions of the population choosing to either walk, bike or to take public transit. Dependence on driving results in massive amounts of greenhouse gas emissions, decreasing the environmental friendliness of transit, as reflected by examples such as Miami Gardens FL along with other cities with high eco-friendliness of in-city transportation indicator values. 
+
+City policy affects waste processing, which has polarized environmental influences due to differences of processing methods used and relative sizes of waste volume. Landfilling is the least environmental friendly regarding energy consumption, followed with incineration and recycling. Los Angeles CA has a high waste-processing energy consumption due to its significant high outlier waste volume. 
+
+\begin{comment}
+
+\
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}{0.23\textwidth}
+        \includegraphics[width=\linewidth]{figures/city_skylines/Los_Angeles.png}
+        \label{fig:skyline_los_angeles}
+        \caption{Los Angeles}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.23\textwidth}
+        \includegraphics[width=\linewidth]{figures/city_skylines/Seattle.png}
+        \label{fig:skyline_seattle}
+        \caption{Seattle}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.23\textwidth}
+        \includegraphics[width=\linewidth]{figures/city_skylines/Nashville.png}
+        \label{fig:skyline_nashville}
+        \caption{Nashville}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.23\textwidth}
+        \includegraphics[width=\linewidth]{figures/city_skylines/Phoenix.png}
+        \label{fig:skyline_phoenix}
+        \caption{Phoenix (Tempe)}
+    \end{subfigure}
+    \caption{Silhouette Skylines of Different Candidate City}
+    \label{fig:city_skylines}
+\end{figure}
+\end{comment}
+
+\section{Constructing a Model for Location Selection} \label{sec:model}
+
+With the evaluation indicators calculated, the model can then be constructed based on normalized data. The combined weighting method is used. To determine the small weights, two different methods, the AHP and the entropy method, are chosen, aiming to minimize subjective biases with a mix of semi-qualitative analysis and pure quantitative analysis. The process of constructing the model is demonstrated below: 
+
+\subsection{Data Normalization} \label{subsec:data_norm}
+
+With the complete and accurate data set collected, data normalization is necessary so that different indicators can be compared on the same scale, by eliminating the dimensions. The following are the formulas for data normalization: 
+
+For benefit attributes: 
+\begin{equation} \label{eq:norm_positive}
+    \tilde{x}_{ij} = \frac{x_{ij} - x_{min}}{x_{max} - x_{min}}
+\end{equation}
+For cost attributes: 
+\begin{equation} \label{eq:norm_negative}
+    \tilde{x}_{ij} = \frac{x_{max} - x_{ij}}{x_{max} - x_{min}}
+\end{equation}
+
+The normalized indicators are graphed in \cref{fig:indicator_maps}, with higher scores indicating better sustainability measures in the corresponding dimension.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.9\linewidth]{figures/indicators_maps.jpg}
+    \caption{Normalized Evaluation Indicators Displayed Geographically}
+    \label{fig:indicator_maps}
+\end{figure}
+
+
+\subsection{Deriving the Weight Matrix for Evaluation Indicators} \label{subsec:weight_matrix}
+
+Since different indicators reflect different influences magnitudes, assigning them with different weights makes the final score more accurate. Thus, the two methods aimed to determine weights are applied, as listed below: 
+
+\subsubsection{The Analytic Hierarchy Process (AHP)} \label{subsubsec:AHP}
+
+The Analytic Hierarchy Process (AHP) determines the relative importance of criteria represented as weights by utilizing pairwise comparisons based on expert judgment. The consistency of these judgments is also checked mathematically, ultimately constructing a comparison matrix. 
+
+To carry out an AHP, the following steps should be followed:
+
+\textbf{Step 1: Constructing the Judgment Matrix.} The matrix $A= \left[ a_{ij} \right]$ is constructed, with $a_{ij}$ denoting the relative ratio importance between factors $i$ and $j$. A common scale of 1-9 is used to indicate the relative importance of the factors, as demonstrated in the following table. 
+
+\setlength{\tabcolsep}{12pt} 
+\begin{center}
+\begin{longtable}{cl}
+\caption{Scales for Relative Importance between Factors} 
+\label{tab:AHP_factors} \\
+
+\toprule
+\textbf{Value} & \textbf{Meaning} \\
+\midrule
+\endfirsthead
+
+\bottomrule
+\endlastfoot
+
+$a_{ij} = 1$ & The two factors are equally important \\
+$a_{ij} = 3$ & Factor $i$ is slightly more important than factor $j$. \\
+$a_{ij} = 5$ & Factor $i$ is clearly more important than factor $j$. \\
+$a_{ij} = 7$ & Factor $i$ is much more important than factor $j$. \\
+$a_{ij} = 9$ & Factor $i$ is extremely more important than factor $j$. \\
+
+\end{longtable}
+\end{center}
+Note that $a_{ji} = 1 / a_{ij}$, where values for inverse comparisons are reciprocals of each other. 
+
+\textbf{Step 2: Calculating the Eigenvector and the Maximum Eigenvalue of the Judgment Matrix} The eigenvector $T = [t_1, t_2, \cdots, t_n]^T$ and the maximum eigenvalue $\lambda_{max}$ of the judgment matrix $A$ are computed. The eigenvector $T$ represents the relative weight of each column. The maximum eigenvalue $\lambda_{max}$ is used for consistency checking. 
+
+\textbf{Step 3: Calculating Weight Vectors.} The weight vector $W_\text{AHP} = [w_{11},w_{12},\cdots , w_{1n}]^T$ is obtained by normalizing each column, where the weights of respective columns $w_{1i}$ is calculated by the following formula: 
+\begin{equation} \label{eq:AHP_weight}
+    w_{1i} = \frac{t_i}{\sum^n_{j=1} t_j}
+\end{equation}
+where $t_i$ denotes the $i$th component of $W$. 
+
+\textbf{Step 4: Checking for Consistency.} The consistency index $\text{CI}$ and the consistency ratio $\text{CR}$ are calculated with the following formulas: 
+
+\begin{equation} \label{eq:AHP_CR}
+    \text{CR} = \frac{\text{CI}}{\text{RI}} = \frac{\lambda_{max} - n}{n-1} \cdot \frac{1}{\text{RI}}
+\end{equation}
+where the random index $\text{RI}$ is dependent of matrix size, attached in the following table. 
+
+\begin{table}[!h]
+\begin{center}
+
+\caption{Random Index ($\text{RI}$) Values for Different Matrix Sizes ($n$)}
+\label{tab:AHP_RI_values}
+\setlength{\tabcolsep}{12pt} 
+\begin{tabular}{cccccccccc}
+\toprule
+n & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+\midrule
+RI & 0.0 & 0.0 & 0.38 & 0.90 & 1.12 & 1.24 & 1.32 & 1.41 & 1.45 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+After the calculation, if the consistency ratio $\text{CR}$ is less than $0.1$, then the consistency is acceptable, confirming the calculated weight factors for each category. 
+
+\subsubsection{The Entropy Method} \label{subsubsec:entropy}
+
+The Entropy Method determines the importance of indicators by objectively measuring the variation each indicator contributes though the measure of their information entropy \cite{Entropy}. Higher variation means more information thus more weight. 
+
+To utilize the entropy method, the following steps should be followed: 
+
+\textbf{Step 1: Calculating the Proportion of Each Indicator:} To calculate the entropy according to the normalized data, the relative proportions $p$ should be calculated via the following formula:  
+\begin{equation} \label{eq:entropy_proportions}
+    p_{ij} = \frac{\tilde{x}_{ij}}{\sum^m_i x_{ij}}
+\end{equation}
+where $p_{ij}$ reflects the relative amount of information represented by the relative proportions of each factor.
+
+\textbf{Step 2: Calculating the Entropy:} With the relative proportions, the following formula is applied to calculate the entropy $E_j$: 
+\begin{equation} \label{eq:entropy_entropy_values}
+    E_j = -k \sum^m_i p_{ij} \cdot \ln(p_{ij}) 
+\end{equation}
+where $k = 1/\ln (m)$, aimed to make $E_j$ range between $[0,1]$. Larger entropy values indicate fewer information contribution.
+
+\textbf{Step 3: Calculating the Degree of Diversification:} The degree of diversification $d_j$ represents the information contained by each indicator, calculated with the following formula: 
+\begin{equation} \label{eq:entropy_deg_of_diversification}
+    d_j = 1 - E_j
+\end{equation}
+with larger values indicating more information contribution. 
+
+\textbf{Step 4: Determining the Weights:} With the degrees of diversification calculated, the weight vector $W_\text{E}=[w_{21}, w_{22}, \dots, w_{2j}]$ can then be determined with the following formula:
+\begin{equation} \label{eq:entropy_weights}
+    w_{2j} = \frac{d_j}{\sum^n_{j} dj}
+\end{equation}
+
+
+\subsubsection{Final Weight Matrix Calculation} \label{subsubsec:weight_combination}
+
+To determine the final weight matrix, it is reasonable to combine the results of the two methods by assigning them different importance values. This enables the final weight matrix to reflect both semi-qualitative analysis and quantitative analysis, minimizing inconsistencies due to data source inconsistencies or subjective biases. The final weight $W_\text{F}$ is combined linearly, demonstrated by the following formula: 
+\begin{equation} \label{eq:weight_combination}
+    W_\text{F} = \omega_\text{AHP} \cdot W_\text{AHP} + \omega_\text{E} \cdot W_\text{E}
+\end{equation}
+where $W_\text{AHP}$ and $W_\text{E}$ are the respective weighting coefficients for the two methods. 
+
+Note that $W_\text{AHP}$ and $W_\text{E}$ are positive and sum up to $100$, or $W_\text{AHP} + W_\text{E} = 100$. Therefore, the final score ranges from $0$ to $100$, with higher scores represent better candidates regarding sustainability. 
+
+\subsection{Calculating Final Scores for Candidate Cities}
+
+In order to weight slightly more expert opinions regarding relative importance levels of sustainability indicators, the set of weighting coefficients $W_\text{AHP} = 60$ and $W_\text{E} = 40$ is selected. This pair of coefficients focuses more on semi-qualitative analysis, reflected by a larger weighting coefficient selection for the AHP method. 
+
+
+\subsubsection{Resulting Weights}
+
+After linearly combining the resulting weights from the AHP method and the entropy method, the weights for the six sustainability evaluation indicators are shown in \cref{fig:final_weights}. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/final_weight_polar.png}
+    \caption{Final Weights of Utilized Sustainability Evaluation Indicators}
+    \label{fig:final_weights}
+\end{figure}
+
+\subsubsection{Model Output}
+
+The final scores calculated by the model is shown in \cref{tab:final_scores} and \cref{fig:final_scores}, with higher scores reflecting more environmentally sustainable host cities.
+
+
+% Set table column spacing
+\setlength{\tabcolsep}{8pt} 
+
+\begin{table}
+\centering
+\caption{Environmental Evaluation Scores of Candidate Cities} 
+\label{tab:final_scores}
+
+% Left minipage with first half of data
+\begin{minipage}[t]{0.44\textwidth}
+\centering
+\begin{tabular}{cl>{\ttfamily}cr}
+\toprule
+\textbf{\#} & \textbf{City} & \multicolumn{1}{c}{\textbf{State}} & \textbf{Score} \\
+\midrule
+1 & Stanford & CA & 74.066 \\
+2 & Tempe & AZ & 59.532 \\
+3 & San Diego & CA & 58.531 \\
+4 & Inglewood & CA & 57.482 \\
+5 & Pasadena & CA & 56.419 \\
+6 & Glendale & AZ & 56.126 \\
+7 & Atlanta  & GA & 55.425 \\
+8 & Jacksonville & FL & 55.232  \\
+9 & Los Angeles & CA & 55.000 \\
+10 & Santa Clara & CA & 51.622 \\
+11 & Houston & TX & 48.838 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hspace{0.04\textwidth}
+% Right minipage with second half of data  
+\begin{minipage}[t]{0.44\textwidth}
+\centering
+\begin{tabular}{cl>{\ttfamily}cr}
+\toprule
+\textbf{\#} & \textbf{City} & \multicolumn{1}{c}{\textbf{State}} & \textbf{Score} \\
+\midrule
+12 & Pontiac & MI & 46.044 \\
+13 & Denver & CO & 43.535 \\
+14 & Seattle & WA & 40.997 \\
+15 & East Rutherford & NJ & 40.915 \\
+16 & Arlington & TX & 39.791 \\
+17 & New Orleans & LA & 37.472 \\
+18 & Minneapolis & MN & 36.388 \\
+19 & Nashville & TN & 34.507 \\
+20 & Paradise & NV & 34.260 \\
+21 & Indianapolis & IN & 34.095 \\
+22 & Miami Gardens & FL & 28.227 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/final_scores_bar_graph_super_bowl.png}
+    \caption{Environmental Evaluation Scores of Super Bowl Host Cities}
+    \label{fig:final_scores}
+\end{figure}
+
+\subsection{Validating Final Scores Calculated} \label{subsec:scores_validation}
+
+To validate the results concluded from the model (demonstrated in \cref{subsec:weight_matrix}), another pure mathematical method called the VIKTOR method \cite{VIKOR_Method} is introduced, aiming to cross-validate the scores calculated. 
+
+\subsubsection{The VIKOR Method} \label{subsubsec:VIKTOR}
+
+The VIKOR method selects a compromised solution from a range of conflicting criteria\cite{VIKOR_Advantages}. In other words, the VIKOR method does not aim to find the most ideal solution, instead focusing on the one closest to ideal while being acceptable because of its balance. Thus, using this method offers a different perspective of focusing on trade-offs and compromises. 
+
+To perform the VIKOR method, the following steps should be followed: 
+
+\textbf{Step 1: Determining the Best and Worst Values of Each Indicator:} According to the attribute of each evaluation indicator, the best value $f_j^+$ and the worst value $f_j^-$ can be obtained using the following formulas:
+\begin{equation}
+f_j^+ = \max_i f_{ij}, \quad f_j^- = \min_i f_{ij} \quad j = 1,2, \dots, n
+\end{equation}
+where $f_{ij}$ is the performance value of alternative $i$ on indicator $j$.
+
+\textbf{Step 2: Calculating the Group Utility and Individual Regret:} With the best and worst indicator values, the group utility $S_i$ and individual regret $R_i$ for each alternative $i$ are calculated as:
+\begin{equation}
+S_i = \sum_{j=1}^{n} w_j \frac{f_j^+ - f_{ij}}{f_j^+ - f_j^-}, \quad
+R_i = \max_{j} \left[ w_j \frac{f_j^+ - f_{ij}}{f_j^+ - f_j^-} \right]
+\end{equation}
+where $w_j$ represents the weight of indicator $j$.
+
+\textbf{Step 3: Calculating the VIKOR Index:} The compromise ranking index $Q_i$ is calculated using the following formula:
+\begin{equation}
+Q_i = v \cdot \frac{S_i - S^*}{S^- - S^*} + (1-v) \cdot \frac{R_i - R^*}{R^- - R^*}
+\end{equation}
+where $S^* = \min\limits_{1 \le i \le m} S_i$, $S^- = \max\limits_{1 \le i \le m} S_i$, $R^* = \min\limits_{1 \le i \le m} R_i$, $R^- = \max\limits_{1 \le i \le m} R_i$, and the parameter $v \in [0,1]$ reflects the decision strategy between maximum group utility and minimum individual regret.
+
+
+
+\subsubsection{Verifying with the Kendall's Coefficient of Concordance} \label{subsubsec:kendall_coeff}
+In order to establish consistency of the VIKOR-based ranking and the proposed scoring method, the Kendall's rank correlation coefficient $\tau$ is presented as the term. The value of Kendall's coefficient, when comparing the two results which are the rankings, is the level of agreement between the two result, defined as: 
+\begin{equation}
+\tau = \frac{2(C - D)}{m(m-1)},
+\end{equation}
+where $C$ and $D$ denote the numbers of concordant and discordant pairs between the two rankings, respectively, and $m$ represents the number of evaluated alternatives. The coefficient $\tau$ ranges from $-1$ to $1$, with positive values indicating a higher level of agreement.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.78\textwidth]{figures/Final_vs_VIKOR_Kendall_Themed.png}
+    \caption{Correlation Between Unified Sustainability Scores and VIKOR Evaluation Results}
+    \label{fig:consistency_vikor_scatter}
+\end{figure}
+
+In this case, the Kendall’s tau is computed on the basis of the ranking results obtained by VIKOR approach and our scoring scheme. \textbf{The result shows a correlation coefficient of $\tau = 0.688$ with a $p$-value less than $0.01$, as reflected in \cref{fig:consistency_vikor_scatter}, indicating a statistically significant and strong positive correlation between the two ranking results.} Thus, the results of the evaluation in both methods provide rather consistent outcomes of the decision, which justifies the strength and credibility of the suggested methodology.
+
+
+
+\subsection{Insights from the Final Scores} \label{subsec:scores_insights}
+
+As shown in \cref{tab:final_scores}, \textbf{Stanford CA} has the highest score among all candidate cities, leading with a score of $\textbf{74.066}$. Among the three potential candidates, \textbf{Denver CO}  leads with a score of $\textbf{43.535}$. 
+
+To fully understand the relative importance of the evaluation indicators, six candidate cities are studied. 
+
+\subsubsection{Case Studies of Typical Candidate Cities} \label{subsubsec:city_analysis}
+
+The candidate scores with the three candidate cities ranked on top (Stanford CA, Tempe AZ, and San Diego, CA) and the three selected city (Denver CO, Seattle WA, and Nashville TN) are chosen for further investigation. 
+
+\begin{figure}[ht]
+  \centering
+  % First Row
+  \subcaptionbox{\label{fig:indicators_stanford}}{%
+    \includegraphics[width=0.3\textwidth]{figures/city_indicators_data/Stanford.png}}%
+  \hfill
+  \subcaptionbox{\label{fig:indicators_tempe}}{%
+    \includegraphics[width=0.3\textwidth]{figures/city_indicators_data/Tempe.png}}%
+  \hfill
+  \subcaptionbox{\label{fig:indicators_san_diego}}{%
+    \includegraphics[width=0.3\textwidth]{figures/city_indicators_data/San Diego.png}}%
+  
+  \vspace{0.5cm} % Vertical spacing between rows
+  
+  % Second Row
+  \subcaptionbox{\label{fig:indicators_denver}}{%
+    \includegraphics[width=0.3\textwidth]{figures/city_indicators_data/Denver.png}}%
+  \hfill
+  \subcaptionbox{\label{fig:indicators_seattle}}{%
+    \includegraphics[width=0.3\textwidth]{figures/city_indicators_data/Seattle.png}}%
+  \hfill
+  \subcaptionbox{\label{fig:indicators_nashville}}{%
+    \includegraphics[width=0.3\textwidth]{figures/city_indicators_data/Nashville.png}}%
+  
+  \caption{Evaluation Indicator Radar Graph for Six Cities.}
+  \label{fig:indicator_case_study}
+\end{figure}
+
+The top three candidates and the three new candidates are selected for this case study. As shown in \cref{fig:indicator_case_study}, the top three candidates show strengths in the majority of the six evaluation indicators, whereas the three candidates of choice all show weaknesses on three or more evaluation indicators. This reflects that the most environmentally sustainable candidate cities show their sustainability in different fields, whereas our selection choices often only show strength on a limited number of indicators.  
+
+\subsubsection{Short-term Strategies Identified for Host Cities} \label{subsubsec:strategies}
+
+With that in mind, in order to make a city more environmentally sustainable, different strategies are identified and applied. 
+
+One significant advantage of Stanford CA as a host city is its general low reliance levels on cars. Instead, high percentages of in-city transportation rely on biking, walking and taking public transportation. Thus, one strategy is to enforce traffic controls during the event while opening shuttle bus service between the stadium and hotel areas. 
+
+Another general advice is to encourage sales of reusable products. This measure will decrease the overall waste generation in the city, thus increasing the overall sustainability of the whole event. 
+
+The two mentioned strategies are applied to Los Angeles CA and Nashville TN, with results shown in \cref{fig:city_score_responce_strategies}. Both cities show significant score increases after application of those strategies, reflecting their effectiveness. 
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.78\textwidth]{figures/city_score_changes_reform.png}
+    \caption{Environmental Performance Changes after Application of Strategies}
+    \label{fig:city_score_responce_strategies}
+\end{figure}
+
+
+\section{Extended Applications of the Model} \label{sec:further_applications}
+
+The model constructed can be applied to extended mega-sport events. In general, sport mega-events can be categorized into single-sport championship tournaments and multi-sport tournaments. Single-sport tournaments have lower levels of sport infrastructure requirements, whereas multi-sport tournaments typically require different types of stadiums and courts. 
+
+\subsection{Application Methodology to Different Types of Tournaments} \label{subsec:tournament_types}
+
+While applying the model to different tournaments, a different set of evaluation indicators should be considered. In the process, the similarities and differences regarding sustainability factors delivering influence between the Super Bowl and other large-scale sporting events can be reflected through selections of indicators. 
+
+\subsubsection{Applying the Model to Single-sport Tournaments} \label{subsubsec:tournament_types_single}
+
+Single-sport tournaments are similar to the Super Bowl. However, scale differences can influence the sustainability of the event to different extents. The Super Bowl is considered as a national event, differing significantly in scale with other global events. Typical global events tend to have higher travel costs and logistical costs, while also delivering more pressure to local energy and transportation networks. 
+
+Therefore, existing indicators defined in \cref{subsec:defining_indicators} could still be reused in this scenario. Minor refinements should also be made, such as including more cities around the globe in the total travel distance of fans defined in \cref{subsubsec:indicator_trav_distance}. New indicators, such as ones taking logistical consumptions into account, should also be introduced, reflecting unique sustainability concerns regarding each event. 
+
+\subsubsection{Applying the Model to Multi-sport Tournaments} \label{subsubsec:tournament_types_multi}
+
+On the other hand, multi-sport tournaments deliver a different set of sustainability challenges. Taking the Olympics as an example, different sports are included in the tournament, requiring different venues within the host city. Thus, the availability of infrastructure and extra construction costs should be introduced as a new indicator regarding sustainability. 
+
+Despite the differences, the indicators used in \cref{subsec:defining_indicators} can still be utilized. The impacts of the events are reflected on those indicators similarly. Adjustments similar to ones mentioned previously should also be included, in order to consider the unique challenges brought by each sport mega-event. 
+
+
+\subsection{Applying the Model to the Formula I Grand Prix} \label{subsec:model_application_f1}
+
+To demonstrate applying the model on another mega-sports event, the Formula I Grand Prix is chosen. The Grand Prix is a part of a series of races making up the Formula I World Championship. During the Grand Prix week, the host city experiences increased energy usage, transportation demand, and waste generation, therefore emphasizing the importance of sustainability factors influenced by location selection. The aim of the model application is to identify the most sustainable Grand Prix location choice, while suggesting key sustainability-related advice for other host cities. 
+
+\subsubsection{Refining Sustainability Evaluation Indicators} \label{subsubsec:f1_new_indicators}
+
+To fully address the new challenges on cities brought by hosting a Grand Prix, new evaluation indicators are introduced. 
+
+Compared to the Super Bowl, the Grand Prix requires a significantly larger logistical need. Thus, larger travel distances from bases of constructors increase the overall carbon emissions of the event. The indicator regarding logistic costs is therefore introduced, calculated with the following formula: 
+\begin{equation}
+    S_\text{log} = \sum^N_i \epsilon \cdot m_i \cdot d_i 
+\end{equation}
+where $N$ represents the total number of constructors; $\epsilon$ represents the carbon emission per ton of cargo transported; $m_i$ represents the total weight of cargo for the respective constructor; and $d_i$ represents the distance from the respective constructor to the candidate city. 
+
+The Grand Prix is hosted over an extended period of time, thus bringing more pressure to the host city. These impacts are reflected on existing indicators, including the ones defined in \cref{subsubsec:indicator_waste_processing}, \cref{subsubsec:indicator_energy_structure}, and \cref{subsubsec:indicator_transportation}.
+
+Regarding candidate selection, considering the enormous costs to build a new racing circuit, only currently contracted locations (23 cities) are considered as candidates for hosting the Grand Prix. 
+
+\subsubsection{Model Output} \label{subsubsec:f1_model_output}
+
+With the collected evaluation indicators, the procedures from \cref{sec:model} are followed, ultimately concluding to the following results, demonstrated in \cref{tab:indicator_calc_results_f1} and \cref{fig:calculated_scores_f1}. 
+
+
+
+% Begins longtable
+\setlength{\tabcolsep}{12pt} 
+\begin{center}
+\begin{longtable}{cllr}
+\caption{Calculated Evaluation Indicators of Sustainability for the Grand Prix} 
+\label{tab:indicator_calc_results_f1} \\
+
+\toprule
+\textbf{\#} & \textbf{City} & \textbf{Country} & \textbf{Score}\\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{\#} & \textbf{City} & \textbf{Country} & \textbf{Score}\\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{4}{r@{\hspace{0pt}}}{\textit{Continued on next page}}\\[-0.5ex]
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+1 & Silverstone & United Kingdom & 79.981 \\
+2 & Spa & Belgium & 75.441 \\
+3 & Spielberg & Austria & 69.995 \\
+4 & Singapore & Singapore & 67.736 \\
+5 & Zandvoort & Netherlands & 67.537 \\
+6 & Budapest & Hungary & 66.409 \\
+7 & Monte Carlo & Monaco & 65.878 \\
+8 & Montreal & Canada & 63.889 \\
+9 & Imola & Italy & 62.731 \\
+10 & Barcelona & Spain & 62.148 \\
+11 & Sao Paulo & Brazil & 60.489 \\
+12 & Miami & United States & 56.791 \\
+13 & Baku & Azerbaijan & 53.588 \\
+14 & Texas & United States & 50.977 \\
+15 & Suzuka & Japan & 50.579 \\
+16 & Mexico City & Mexico & 46.678 \\
+17 & Shanghai & China & 45.984 \\
+18 & Lusail & Qatar & 45.079 \\
+19 & Jeddah & Saudi Arabia & 43.818 \\
+20 & Sakhir & Bahrain & 42.844 \\
+21 & Abu Dhabi & United Arab Emirates & 40.310 \\
+22 & Las Vegas &  United States & 39.082 \\
+23 & Melbourne & Australia & 28.907 \\
+
+
+\end{longtable}
+\end{center}
+% Ends longtable
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/f1_world_sustainability_map_final.png}
+    \caption{Calculated Scores of Candidate Cities Hosting the Grand Prix}
+    \label{fig:calculated_scores_f1}
+\end{figure}
+
+
+\textbf{Silverstone, United Kingdom} leads the other candidates with a final score of $\textbf{79.981}$, mostly because of its relative strengths regarding environmental sustainability in almost every subcategory. 
+
+
+\section{Sensitivity Analysis} \label{sec:sensitivity_analysis}
+
+To further confirm the robustness and effectiveness of the model, the fusion coefficients in \cref{eq:weight_combination} are changed and the responses of the final weights are observed and recorded, demonstrated in \cref{fig:sensitivity}. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/omega_sensitivity_analysis.png}
+    \caption{Sensitivity of Final Weights to Fusion Coefficient}
+    \label{fig:sensitivity}
+\end{figure}
+
+As reflected by \cref{fig:sensitivity}, the relative weights of the sustainability evaluation indicators are not sensitive to changes in fusion coefficients, shown by the relatively stable final weight values as the fusion coefficient changes. Throughout, the eco-friendliness factor of the in-city transportation showed significant dominance, reflected by its high weight compared to other indicators. 
+
+\section{Advantages and Disadvantages of the Model} \label{sec:model_advantages_disadvantages}
+
+Through the extensive applications of the model, several advantages and disadvantages are identified for future applications and improvements. 
+
+\subsection{Advantages}
+
+\textbf{1. The model is robust and consistent.} Two different evaluation methods are introduced to construct the model, blending semi-qualitative analysis and quantitative analysis, thus minimizing subjective biases and data collection inconsistencies. Insensitivity of the model show similar results among those two methods. A new evaluation method is then introduced and applied. Its results displayed strong correlations with the previous results, showing consistency among the methods. 
+
+\textbf{2. The model evaluates candidates from different perspectives.} With the variety of indicators selected and the different methods utilized, the final score is determined with diverse and independent factors.
+
+\subsection{Disadvantages}
+
+\textbf{1. Data sources are subject to potential biases.} Due to the difficulties on retrieving data for the indicators, estimates are used during the process. Available data might be also inconsistent. Thus, the results might be biased due to data inconsistencies.  
+
+
+
+\section{Letter to the Super Bowl Organizing Committee} 
+
+After identifying the unique advantage of the cities with the highest scores, a letter is written to the NFL Super Bowl Organizing Committee, attached below.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/letter_to_nfl.pdf}
+    \caption{Letter to the NFL Superbowl Organizing Committee}
+    \label{fig:letter}
+\end{figure}
+
+
+\input{sections/task4_stage_progress}
+\printbibliography
+
+
+
+\end{document}

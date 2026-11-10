@@ -1,0 +1,168 @@
+{
+  "iteration": "V153",
+  "status": "validated proposal; not activated",
+  "primary_version_unchanged": "V136",
+  "extensions_unchanged": "V137",
+  "paper_unchanged": "V148",
+  "city": "Milan",
+  "indicator": "public_transport_density",
+  "raw_count": 104,
+  "population": 1399079.0,
+  "population_year": 2025,
+  "inventory_date": "2024-10-16",
+  "historical_inventory_proxy": true,
+  "density_per_100000": 7.433461584370861,
+  "anchor": 50,
+  "utility_before": [
+    0,
+    1
+  ],
+  "utility_proposed": [
+    0.1294273648028504,
+    1
+  ],
+  "changed_proposed_cells": 1,
+  "unchanged_proposed_cells": 159,
+  "proposed_counts": {
+    "point": 112,
+    "partial": 34,
+    "unknown": 14
+  },
+  "comparisons": [
+    {
+      "weight_reference": "fixed",
+      "scenario": "V136_active",
+      "mean_score_interval_width": 16.089333559065736,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "milan_score_lower": 45.62694197537339,
+      "milan_score_upper": 65.99461217421445,
+      "milan_decision_rank": 13
+    },
+    {
+      "weight_reference": "fixed",
+      "scenario": "V153_proposed",
+      "mean_score_interval_width": 16.061435140939356,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "milan_score_lower": 46.07331666539549,
+      "milan_score_upper": 65.99461217421445,
+      "milan_decision_rank": 13
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "V136_active",
+      "mean_score_interval_width": 18.914257170685545,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "milan_score_lower": 44.21684944073943,
+      "milan_score_upper": 68.20674839446758,
+      "milan_decision_rank": 13
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "V153_proposed",
+      "mean_score_interval_width": 18.8609670217237,
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "milan_score_lower": 45.06949182412893,
+      "milan_score_upper": 68.20674839446758,
+      "milan_decision_rank": 13
+    }
+  ],
+  "MC_seed": 20261108,
+  "draws_per_setting": 10000,
+  "MC_scope": "Paired preference perturbations only; no random completion of missing values or real-world winning probability",
+  "active_primary_data_admissions": 0,
+  "activation_work_remaining": "Rebase current extensions and manuscript outputs as one reviewed transition; do not relabel the frozen V136/V137/V148 outputs.",
+  "source_sha256": {
+    "data/task4_v153_milan/extraction.json": "569b483f7b9be6e1d3094041da6ae49898a40e273a9e748c0b396135738db718",
+    "design/task4_user_current_model.json": "541e4e5926ae76ef60614613bc2245b4257a3b6fecfe0fb9452c9ff96c71451b",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c"
+  },
+  "result_sha256": {
+    "rank_comparison.csv": "425ca87ba9bbd052bfb847fd634227ebdb7e94eaa33ee71fa97d1e67e211fd9a",
+    "paired_weight_summary.csv": "7486089b459b502e7f80e511973b10d9860e4573aa94f90a6157bc44582c0675"
+  },
+  "generator_sha256": "ae543a6c5bd19e6d829e2a4bcaaeb99d336d88a5e9b224e4b3766bb7f902751d"
+}

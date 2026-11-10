@@ -1,0 +1,72 @@
+{
+  "version": "V180 candidate only",
+  "status": "pass",
+  "archived_original_responses_checked": 9,
+  "source_hash_bindings_checked": 15,
+  "native_objects": 239,
+  "native_modalities": {
+    "Tram": 200,
+    "Metro": 39
+  },
+  "unique_metro_ids_names_coordinates": 39,
+  "nominal_points_in_both_boundaries": 35,
+  "independently_retained_candidate_groups": 32,
+  "outside_ids": [
+    178,
+    191,
+    192,
+    213
+  ],
+  "nominal_boundary_omission_ids": [
+    164,
+    174,
+    196
+  ],
+  "independent_geometry": "Matplotlib polygon/hole membership in both longitude-latitude and projected coordinates",
+  "independent_boundary_distances": "Vectorized NumPy segment minima after the same declared offline PROJ transform",
+  "largest_distance_arithmetic_difference_metres": 9.094947017729282e-13,
+  "distance_comparison_tolerance_metres": 1e-05,
+  "projection_version": "Rel. 9.7.1, December 1st, 2025",
+  "PROJ_NETWORK": "OFF",
+  "screen_metres": 100,
+  "screen_is_analyst_selection_not_provider_accuracy_bound": true,
+  "exact_inventory_date_unreported": true,
+  "inventory_metadata_year": 2026,
+  "retained_population_year": 2025,
+  "source_unit": "Mapped Metro-designated boarding/station groups; no platform, operational-service, student-access or 2025 count claim",
+  "municipal_terms_and_redistribution_notice_checked": true,
+  "municipal_attribution_mandatory_under_terms": false,
+  "pdok_boundary_CC_BY_4": true,
+  "preview_city_weight_scenario_rows_checked": 96,
+  "independent_preview": "Scalar fsum weighted norms, self-excluded regret, rank bounds/flags and midpoint diagnostics",
+  "baseline_utility_cells_checked": 160,
+  "exact_utility_fractions": {
+    "V154_baseline": "0",
+    "candidate_screened32": "64000/1005927",
+    "nominal35_diagnostic": "10000/144561"
+  },
+  "candidate_mean_width_reduction": {
+    "fixed": 0.012050348536536859,
+    "equal": 0.02302627864433049
+  },
+  "other159_cells_and_all160_uppers_preserved": true,
+  "primary_admissions": 0,
+  "active_primary": "V154 unchanged",
+  "active_paper": "V179 unchanged",
+  "full_extension_migration_executed": false,
+  "MC_rerun": false,
+  "manuscript_changed": false,
+  "scientific_files_unchanged": 187,
+  "existing_paper_files_unchanged": 639,
+  "registries_unchanged": 3,
+  "canonical_pdf_sha256": "75822afc39e24f8e1c33b9cf666190339805b467c054b13ab3b4ca40205843ff",
+  "auditor_sha256": "a0d900ddc63601d7cb2d225c186c0252d6dd47aba259854e726e63a9569da5be",
+  "audited_output_sha256": {
+    "data/task4_v180_amsterdam/extraction.json": "37a35f9d133bf1522fadae2e715eb246a815c9a44e65df02a6e07507b9ea72bb",
+    "data/task4_v180_amsterdam/mapped_metro_groups.csv": "51bc243cf7c74f8a77040d6068f2c188bbb4b09b2a0e9c26be2188cbf74d226e",
+    "results/task4_v180_amsterdam_candidate/summary.json": "78bdad32b9e120a802260755858c6fd2d8b7d27a9267dbde5fe7c74c76e0533e",
+    "results/task4_v180_amsterdam_candidate/candidate_bounds.csv": "e834374a4d29dd3060d58cd67604ccf5dde5a66263a464f00ca6753e356d67bb",
+    "results/task4_v180_amsterdam_candidate/preview_ranks.csv": "b1329605a21597142402eb245b175c072be940266be7a08ae0a9d21059fee3d0",
+    "results/task4_v180_amsterdam_candidate/protected_files.json": "f1d5bade9ce6379617d18b39b54bbde0d9b288526fcfda092361a77d3abe6ab7"
+  }
+}

@@ -1,0 +1,9 @@
+\subsection{A significant revision: retaining uncertain evidence}
+A controlled comparison shows why evidence bounds belong in the decision.
+On the same 160 utility entries, compare the midpoint completion $z_{ij}=(\ell_{ij}+h_{ij})/2$ with the retained-interval formulation in Equation~\ref{eq:regret}. Both use identical weights, anchors and TOPSIS scores. The midpoint is a declared diagnostic scenario, rather than an estimate of missing observations or a reconstruction of the team's historical first model.
+
+The revision retains 48 non-point entries and selects the city with the smallest worst-case shortfall. Zurich remains the recommendation, but 13 cities change decision rank under fixed weights; Kendall's $\tau_b=0.600$. With equal weights, 15 ranks change and $\tau_b=0.650$.
+
+A constructed interior completion keeps other cities at their utility midpoints and sets every uncertain Zurich utility to $\ell_{ij}+0.1(h_{ij}-\ell_{ij})$. All 112 point values stay fixed, and all 48 uncertain values are strictly inside their intervals. Dublin scores 62.31483 and Zurich 55.54326, putting Zurich at decision position 13 in that completion. At adverse rectangular endpoints, Dublin's 70.90353 exceeds Zurich's 53.53548 by 17.36805, realizing Zurich's model maximum regret. Some endpoints represent raw-scale suprema; these constructions concern the declared utility rectangle, rather than an observed population or proof of joint physical attainability.
+
+This revision separates a conditional first place from a conservative action while preserving all sixteen possible champions. It changes the handling of uncertainty within one score. The \TotalWidthReduction\% interval-width reduction comes separately from admitted data, not from this controlled formulation comparison.

@@ -1,0 +1,82 @@
+{
+  "iteration": "V201",
+  "model": "V200 staged",
+  "shape": [
+    16,
+    10
+  ],
+  "counts": {
+    "point": 112,
+    "partial": 37,
+    "unknown": 11
+  },
+  "unknown_by_indicator": {
+    "travel": 3,
+    "upper_secondary_ptr": 8
+  },
+  "city_order": [
+    "Vienna",
+    "Zurich",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Stockholm",
+    "Paris",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Oslo",
+    "Prague",
+    "Warsaw",
+    "Singapore",
+    "Tokyo"
+  ],
+  "indicator_order": [
+    "homicide_rate",
+    "pm25",
+    "cost_living_index",
+    "price_income_ratio",
+    "upper_secondary_ptr",
+    "research_he_density",
+    "public_transport_density",
+    "travel",
+    "fixed_broadband_mbps",
+    "public_pool_density"
+  ],
+  "plot_labels": [
+    "Homicide",
+    "PM2.5",
+    "Living cost",
+    "Housing",
+    "Pupil/teacher",
+    "Research/HE",
+    "Transit",
+    "Travel burden",
+    "Broadband",
+    "Pools"
+  ],
+  "source": "V200 after_conditional; original CSV and 25 supplemented keys retained",
+  "source_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "utility_bounds_sha256": "4ff9aa9b1ebd77e87789a089313c95be2359fbdd969f70ba77ae9f7dddd265f5",
+  "matrix_sha256": "5cdd6e6aab679590e29e9acbe2d3284957c1e88a40f88f63b24fd99b5d349c94",
+  "renderer_sha256": "16ea1477a09533c20767b1a4a39b5b339272d72c515694a695f66894da98d430",
+  "admissions_sha256": "b5bd1122f7889184b2f13a408aa8dd4a134a5d43b048a518147c3fef3c7eea20",
+  "figure_width_inches": 6.5,
+  "figure_height_inches": 6.2,
+  "minimum_source_font_pt": 10,
+  "intended_insertion_width_inches": 6.5,
+  "minimum_insertion_width_for9pt_inches": 5.85,
+  "png_dpi": 300,
+  "pdf_export": "Explicit vector rectangles and embedded Type3 outline fonts; RGB and grayscale review required",
+  "point_interpretation": "Retained point assumptions, not independent validation or zero measurement error",
+  "ranges_interpretation": "Identification bounds; not confidence intervals, posterior probabilities or ranking",
+  "no_new_data_admission": true,
+  "current_review": "V179 pending V182 migration",
+  "integrated_into_paper": false,
+  "output_sha256": {
+    "pdf": "739da25ed21f33b34164e12fc08d7614c62d38c7e01d5d039a9f43a6453e34f4",
+    "svg": "c582770c9d7d68390800f394c1898a1e9dce07385f0556b35e50e2cfc192ff8f",
+    "png": "99dc93b0eef0028e7d5f11462537bfe6028e5d72dab9b008e43a5f81427ffdd2"
+  }
+}

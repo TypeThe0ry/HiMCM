@@ -1,0 +1,28 @@
+{
+  "version": "V175",
+  "status": "pass",
+  "independent_decimal_precision": 50,
+  "original_MC_mean_rows_checked": 592,
+  "pairwise_rows_checked": 4440,
+  "city_rows_checked": 592,
+  "setting_rows_checked": 37,
+  "certified": 4254,
+  "unresolved": 186,
+  "smallest_certified_zero_separation": "0.0027369958227082960010814116741887965178029272440",
+  "acyclic_transitive_interval_order": true,
+  "singleton_front_beats_all_15": true,
+  "scientific_files_unchanged": 187,
+  "existing_paper_files_unchanged": 590,
+  "raw_draws_replayed": false,
+  "manuscript_changed": false,
+  "output_sha256": {
+    "pairs.csv": "650c15ef66e2863f8e53d465deea398a7f41c70e3525f27ce62e0f01d4626a5f",
+    "cities.csv": "f1a96eb255f01d95e9e7815a807a2c335ae892c400d9ffb672a721aa28bf68b0",
+    "settings.csv": "51cb091d66d04ae9079403ee7d29cabba5bebbc5ef2597db42b869f2492f94bb",
+    "summary.json": "5e75597335d4ee27f59ae62499a7a9b593aaff32c9f843419c3ea268a1580c3f"
+  },
+  "audit_script_sha256": "e7f4f2bf2de09bbbffd10a995f4d08425e1dd82ab8799db9d35124b79ddc9b10",
+  "independent_agent_review": "mean_rank_review: all4440 pairs,592city records,37settings,22singleton fronts, original input hashes and187science/590paper files independently verified read-only with Decimal.",
+  "new_source_verification": "../../data/task4_v175_zurich_payroll/verification.json",
+  "submission_ready": false
+}

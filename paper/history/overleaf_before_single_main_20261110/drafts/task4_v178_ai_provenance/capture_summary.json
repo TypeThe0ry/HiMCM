@@ -1,0 +1,56 @@
+{
+  "version": "V178",
+  "scope": "One explicitly identified root session;selected visible messages and plaintext assistant function/custom-tool call arguments only",
+  "source_prefix": {
+    "bytes": 266948392,
+    "complete_lines": 17669,
+    "sha256": "a698a0b68bed60f39328a5572cce9fc07305bafb21aa32495747f0bd983c3f30",
+    "first_timestamp": "2026-11-08T14:50:31.702Z",
+    "last_timestamp": "2026-11-09T14:31:18.850Z"
+  },
+  "predecessor_source_prefix": {
+    "bytes": 110005812,
+    "complete_lines": 6542,
+    "sha256": "6791749513f650f37d86ef79cdadc3fdc88e78f9d1de37066842bef9e3d7a75e",
+    "first_timestamp": "2026-11-08T14:50:31.702Z",
+    "last_timestamp": "2026-11-09T03:17:15.271Z"
+  },
+  "old_visible_records": 125,
+  "selected_visible_records": 326,
+  "added_visible_records": 201,
+  "selected_visible_counts": {
+    "user:None": 6,
+    "assistant:commentary": 259,
+    "assistant:final_answer": 61
+  },
+  "recorded_root_model_counts": {
+    "gpt-6.1-sol": 74
+  },
+  "root_turn_contexts": 74,
+  "recorded_assistant_call_inputs": 1865,
+  "call_types": {
+    "custom_tool_call": 1749,
+    "function_call": 116
+  },
+  "private_exports": {
+    "visible_records.jsonl": {
+      "bytes": 163285,
+      "sha256": "636cf4908318652b2dcd8162584ef99cf088a744329b9508721f4107d782b6be",
+      "mode": "0o600",
+      "included_in_repository": false
+    },
+    "assistant_tool_arguments.jsonl": {
+      "bytes": 3300240,
+      "sha256": "6c2c2dce66af1f3f4ef16a4a347926f7aeb16334f858761bf0c2aba5a7f1bc1a",
+      "mode": "0o600",
+      "included_in_repository": false
+    }
+  },
+  "private_content_published": false,
+  "complete_team_ai_history": false,
+  "submission_ready": false,
+  "full_manifest_sha256": "b74af51144b3c3e1a870a4b0743995fa100a94c1ed7b26289dc65b60fbcf8146",
+  "verification_sha256": "b587ab08cf4907d04cdd9b0720c87962b6747fc61265d5b56948b5883a4d225c",
+  "primary_science": "V154 unchanged",
+  "current_paper": "V176 unchanged"
+}

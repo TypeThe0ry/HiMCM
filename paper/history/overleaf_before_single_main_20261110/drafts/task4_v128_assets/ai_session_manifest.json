@@ -1,0 +1,646 @@
+{
+  "scope": "Explicit current task only; selected genuine requests and complete visible assistant message text parts",
+  "session_metadata": {
+    "id": "01a1bba3-8ac1-7963-90bf-08d8c2fec116",
+    "timestamp": "2026-11-08T14:50:21.111Z",
+    "originator": "Codex Desktop",
+    "cli_version": "0.166.0-alpha.5.1",
+    "model_provider": "custom",
+    "source": "vscode"
+  },
+  "source_prefix": {
+    "bytes": 33655049,
+    "complete_lines": 2758,
+    "sha256": "c5e76ca40be86d413b9119d1dbf35e3a6f4376d074ffbf664c9abff88de6dd3e",
+    "first_timestamp": "2026-11-08T14:50:31.702Z",
+    "last_timestamp": "2026-11-08T17:26:26.827Z"
+  },
+  "event_type_counts": {
+    "session_meta": 1,
+    "event_msg": 1236,
+    "response_item": 1062,
+    "world_state": 9,
+    "turn_context": 10,
+    "token_usage_record": 341,
+    "inter_agent_communication_metadata": 97,
+    "compacted": 2
+  },
+  "recorded_turn_model_counts": {
+    "gpt-6.1-sol": 10
+  },
+  "turn_contexts": [
+    {
+      "line": 10,
+      "timestamp": "2026-11-08T14:50:34.306Z",
+      "turn_id": "01a1bba3-b7a1-7840-8c36-5fb6d12a0f60",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "e079e418c76a79dd0fe0ccbfc21a059d4041d3d70dac9ecc35d909b57e2c4e13"
+    },
+    {
+      "line": 622,
+      "timestamp": "2026-11-08T15:16:57.454Z",
+      "turn_id": "01a1bbbb-eb58-79c0-8b7d-39998cfbe7d8",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "716581073cb792f561c2ae31f492e2c23782da00e969239f48e0e5af0c2aa233"
+    },
+    {
+      "line": 660,
+      "timestamp": "2026-11-08T15:20:10.893Z",
+      "turn_id": "01a1bbbe-df03-7ae1-8748-048eb6935e06",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "de44edc5222eaa5552c8e499a093c786a37fbb9c3a4cbce6080a51c091eb72ce"
+    },
+    {
+      "line": 1115,
+      "timestamp": "2026-11-08T15:49:48.664Z",
+      "turn_id": "01a1bbd9-ff39-7040-8055-a8c03c22f94d",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "8353d31f1e4f128523a4910be5ac37deb417ad90f7787d5c8a73f276dda5c7d7"
+    },
+    {
+      "line": 1249,
+      "timestamp": "2026-11-08T15:58:58.540Z",
+      "turn_id": "01a1bbe2-615c-7403-92b6-b3863ff3bace",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "e0837cb5f9015a85453a5c1a382a3ad490ff94cb47cfe20fafafbfb4c5137287"
+    },
+    {
+      "line": 1347,
+      "timestamp": "2026-11-08T16:07:46.270Z",
+      "turn_id": "01a1bbe2-615c-7403-92b6-b3863ff3bace",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "4130544c2bd0fb36e6f4f721ce06999a81fdcb9f3b360092654cdac1c973de89"
+    },
+    {
+      "line": 1641,
+      "timestamp": "2026-11-08T16:19:09.441Z",
+      "turn_id": "01a1bbf4-dd69-76d3-b459-d20ba7a162e9",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "31e102b502bbe13faa7e6ec089bebf65a865c1b82f2484ab6ec49b2dd2d648e1"
+    },
+    {
+      "line": 2215,
+      "timestamp": "2026-11-08T16:49:21.367Z",
+      "turn_id": "01a1bc10-8342-7832-9609-16a03e58c11d",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "4be2e0a78f94985717560cfa1960dc23d982006358149dd3c05e825ceb1b7b06"
+    },
+    {
+      "line": 2612,
+      "timestamp": "2026-11-08T17:18:55.620Z",
+      "turn_id": "01a1bc2b-9577-7d70-beaf-68902f08af90",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "94fd990b3e4e379b385f56e693cefdc0c668d41d0eb369c9d198688c62149258"
+    },
+    {
+      "line": 2639,
+      "timestamp": "2026-11-08T17:22:53.297Z",
+      "turn_id": "01a1bc2b-9577-7d70-beaf-68902f08af90",
+      "recorded_model_identifier": "gpt-6.1-sol",
+      "source_line_sha256": "dfa8fd3c297f77f21ad7a8cced64ed37d86ac3032b8ca1e277e17e4b75b1da4b"
+    }
+  ],
+  "selected_message_counts": {
+    "user:None": 4,
+    "assistant:commentary": 41,
+    "assistant:final_answer": 7
+  },
+  "excluded_message_counts": {
+    "non_visible_or_non_text_message": 8,
+    "injected_context_or_attachment_wrapper": 7
+  },
+  "private_export": {
+    "basename": "visible_records.jsonl",
+    "bytes": 30353,
+    "sha256": "b1b981221a026b4e6df9f6295bd7013fd1c32d7ec2cd6a75318650bfbf55e284",
+    "included_in_repository": false
+  },
+  "selected_message_inventory": [
+    {
+      "line": 17,
+      "timestamp": "2026-11-08T14:50:34.352Z",
+      "role": "user",
+      "phase": null,
+      "text_parts_count": 1,
+      "text_characters": 366,
+      "source_line_sha256": "627a8ccc156ca4d662282c6b0e1c1318c7ea0c675cb74111bfab1754f947123a",
+      "exported_record_sha256": "0d83a7a648a7cd5b43c4273b2d04575f0cee16dadbc523c4ad551862a66da75d"
+    },
+    {
+      "line": 20,
+      "timestamp": "2026-11-08T14:50:37.879Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 76,
+      "source_line_sha256": "d9f334964942c673690161e8353e006bb46c80da9ddb3a6ef82d57d17df48213",
+      "exported_record_sha256": "7dd7f63a3ff33f4168656840e2765c05f14bb3e50cefa7a8f61a3d51c991a0cf"
+    },
+    {
+      "line": 48,
+      "timestamp": "2026-11-08T14:51:25.329Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 68,
+      "source_line_sha256": "be23f69408173125c93f58454f6263045cb7eb692e8545a7239b97ab9d9ba5ae",
+      "exported_record_sha256": "297cb5c0e387d032055f67e9c432800ebe6d1d0acce8e5fbe7af8bfc344025b2"
+    },
+    {
+      "line": 73,
+      "timestamp": "2026-11-08T14:51:57.685Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 95,
+      "source_line_sha256": "c5211294e53a5459b55568594ab3e570c93bcf21ca5d9900b2df6f250014453d",
+      "exported_record_sha256": "6ffee4a62bec1a98f903e118bf81047e534604cfd5b74a94700581d13ab8a34e"
+    },
+    {
+      "line": 110,
+      "timestamp": "2026-11-08T14:52:28.259Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 79,
+      "source_line_sha256": "44e4ebeea9b5890fac640f0a77a6272184c59e3ad246384823c201cc249cc22b",
+      "exported_record_sha256": "4525bf0defbb560845e3088f12f2f5a55fb17aefd60716ada73aa2318ec48e0a"
+    },
+    {
+      "line": 147,
+      "timestamp": "2026-11-08T14:53:37.052Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 227,
+      "source_line_sha256": "afd7168d79eeca31f6dd49db2ff18b5583932dc66a6f34c8ad0b64057881793a",
+      "exported_record_sha256": "ea93ab83e85acee7c5cab03784a6083497f334426c13cf8518312da03b9d8854"
+    },
+    {
+      "line": 206,
+      "timestamp": "2026-11-08T14:55:16.829Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 138,
+      "source_line_sha256": "4210120be3b8ed7853665583cb7ac105706d973208fc5f3aeb9defd1f1322d46",
+      "exported_record_sha256": "8df99a7a8560d84740f826485240e9cd2a82d89691296ec338114961c479759c"
+    },
+    {
+      "line": 295,
+      "timestamp": "2026-11-08T14:58:27.545Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 126,
+      "source_line_sha256": "7e4d5645a724e2ee39ed466f7b4c0154f4eeb420ee00c41b4911907af160b78d",
+      "exported_record_sha256": "52d8e91fe29c6ee1540d29b44f48f203227b83d095e7f03415dc8ba74f3b841a"
+    },
+    {
+      "line": 352,
+      "timestamp": "2026-11-08T15:00:16.864Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 112,
+      "source_line_sha256": "c50d51e2a496d99bb29ee073610d8d8349092c4fc03d073efebba18a5e522a2a",
+      "exported_record_sha256": "87bbef25f98d1c472c3274c07a6e1d637518342191970356df487c2e1db9a37b"
+    },
+    {
+      "line": 394,
+      "timestamp": "2026-11-08T15:01:41.268Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 110,
+      "source_line_sha256": "aa2e7db55648ad835f11da3c98a1efc4e53ac78222b182fc311609a0784476ad",
+      "exported_record_sha256": "4e6b60dfcf32398bd09b8d3f3f6be145cfffaf0c19d94db373f94d1a31e32db9"
+    },
+    {
+      "line": 525,
+      "timestamp": "2026-11-08T15:06:32.468Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 146,
+      "source_line_sha256": "e8e7c42bbe613b3a23d0168950dba40731019e101b8312a0d1d6df63edc213f0",
+      "exported_record_sha256": "ec3d4d0f4bcfca50fcc4375c7df8fba6ca5f2b6f22f3e598e0e964094b295e80"
+    },
+    {
+      "line": 557,
+      "timestamp": "2026-11-08T15:07:42.271Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 234,
+      "source_line_sha256": "932d12295cba07c142627d862b251a4cc9e776ca44ae0d8609a925d7b8566236",
+      "exported_record_sha256": "5577f2e180968cb5ee8357d319dff7ce1d75a3c664da6e089879859ed293bd52"
+    },
+    {
+      "line": 616,
+      "timestamp": "2026-11-08T15:11:56.766Z",
+      "role": "assistant",
+      "phase": "final_answer",
+      "text_parts_count": 1,
+      "text_characters": 796,
+      "source_line_sha256": "bbafc0836ae1372c441a2fcc3267bfd2bda05eee45567b9adf1e0f4a6fb43a37",
+      "exported_record_sha256": "51e3ccee468368cf61d585dedc1070321bf252cecbc7b26c29b94473a9085e17"
+    },
+    {
+      "line": 624,
+      "timestamp": "2026-11-08T15:16:57.478Z",
+      "role": "user",
+      "phase": null,
+      "text_parts_count": 1,
+      "text_characters": 32,
+      "source_line_sha256": "318584ee7cdb7ff705c407044123e2ce3bbdb46811a7279d66aa8e91fe08319f",
+      "exported_record_sha256": "3b72fbb4c240e96ce630f53cc75d80509e7f385da43badfd6691d654eddf8665"
+    },
+    {
+      "line": 627,
+      "timestamp": "2026-11-08T15:17:02.000Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 52,
+      "source_line_sha256": "3d625d8d0fcdbf36ffcf61bd9d50c20658a062013e28809a6c842632a884efc9",
+      "exported_record_sha256": "7e014f036c9d6af163df9ee24510fb5758824c79829979e7a2c6098eec9449ce"
+    },
+    {
+      "line": 654,
+      "timestamp": "2026-11-08T15:18:57.212Z",
+      "role": "assistant",
+      "phase": "final_answer",
+      "text_parts_count": 1,
+      "text_characters": 1379,
+      "source_line_sha256": "1d64e553c85d24c1e7dae6bc5b893de5c3459820c486ef08a2ef8b9ccee49884",
+      "exported_record_sha256": "2e3732cc735ba91ee51c71ce7cdc484574f6c208401a3427192ec100d705210f"
+    },
+    {
+      "line": 661,
+      "timestamp": "2026-11-08T15:20:10.908Z",
+      "role": "user",
+      "phase": null,
+      "text_parts_count": 1,
+      "text_characters": 1389,
+      "source_line_sha256": "5a5e8d1bc96019f2ab1c54a3841c8f9cc0c21490800930aba1e8c6255eb5e714",
+      "exported_record_sha256": "702eb48c751de91bfbbf315f35abcf11ebcf9cbfa26003ff05705dfb4f961c40"
+    },
+    {
+      "line": 664,
+      "timestamp": "2026-11-08T15:20:16.119Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 109,
+      "source_line_sha256": "04430e958e41c1702d87a5c5f5086f9ee2fea7592f46fbe5eaf13e63e00f774a",
+      "exported_record_sha256": "b1f484a25bb28a79bb3766f3d8ec3321efd60c057a5e1915fb862f979d12823d"
+    },
+    {
+      "line": 707,
+      "timestamp": "2026-11-08T15:22:02.593Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 148,
+      "source_line_sha256": "d42eab347fcbbda083289effb149e2efcb38b238b885232d14a4c33239eb4c34",
+      "exported_record_sha256": "2603e0031e86236816c2c5b122d87dc478ad5d754b0b18ce42fc992a3cac78e1"
+    },
+    {
+      "line": 744,
+      "timestamp": "2026-11-08T15:23:48.934Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 142,
+      "source_line_sha256": "e45c87f226b54e071d85dec3a43d6a2e1492c531ff31d78ffbb9e76ad44cc3dd",
+      "exported_record_sha256": "41a3681bf70e81bb509d4aafb66b875b8d8bd71c646a9e753db7a55ccfb76c4d"
+    },
+    {
+      "line": 802,
+      "timestamp": "2026-11-08T15:26:21.015Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 147,
+      "source_line_sha256": "6149715e706891acfadd0d55ce0d64421d8e8623e1534e194aa1a4eafeabc302",
+      "exported_record_sha256": "35beb9a571d21403a31df957a7d8685d3cc3a2fa12833a321b0e1f22868c9a57"
+    },
+    {
+      "line": 949,
+      "timestamp": "2026-11-08T15:36:40.357Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 116,
+      "source_line_sha256": "e6d3d7f2be7bddcedf266ea719d62de4a3e68d41cab0d06fb655bad62ac22d06",
+      "exported_record_sha256": "5781286f7563ac0849eb035538055c479cf9e11c2f42f898d54372c0a731b37e"
+    },
+    {
+      "line": 1002,
+      "timestamp": "2026-11-08T15:39:36.511Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 108,
+      "source_line_sha256": "4255b4965b3ba6d126ac6955cd6ec6bcf8657b8068992a524c5c18b14f29fd7f",
+      "exported_record_sha256": "9643b228d57d2feccec518359d90af18a853e791767c7fe5fad6a702974bacae"
+    },
+    {
+      "line": 1070,
+      "timestamp": "2026-11-08T15:45:48.864Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 120,
+      "source_line_sha256": "cb9c7a94a8edb9f5e956bcc9011ef2f1d7531e1ac07ede745f56ea5548e992e6",
+      "exported_record_sha256": "06b49f95ff13233c81a6f9c6ef160adace803aa3238508913a4e2b032f149c8d"
+    },
+    {
+      "line": 1109,
+      "timestamp": "2026-11-08T15:47:43.034Z",
+      "role": "assistant",
+      "phase": "final_answer",
+      "text_parts_count": 1,
+      "text_characters": 783,
+      "source_line_sha256": "9a5ec040fc28f506baf8ccda74277dc367a2360baa10ea6e3144dfe3e440b7db",
+      "exported_record_sha256": "9fcd1548be782a7fdb0fc0ce29ca62be80a8284e382d419007211322803c1e59"
+    },
+    {
+      "line": 1116,
+      "timestamp": "2026-11-08T15:49:48.689Z",
+      "role": "user",
+      "phase": null,
+      "text_parts_count": 1,
+      "text_characters": 169,
+      "source_line_sha256": "2ac7d2a5dd5ec2415a9b7c03ed3bafb4c86df69c0104e7fb557955a956c789e4",
+      "exported_record_sha256": "ab0167f3dc61facda1d065d5716f1298a97d12b14035210094003d584bf4ed3a"
+    },
+    {
+      "line": 1119,
+      "timestamp": "2026-11-08T15:49:54.113Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 71,
+      "source_line_sha256": "4fb1a56614f7dda507efff6ffebda2c34ee99e0127889fe7f6b2715bf38908f0",
+      "exported_record_sha256": "abeb7bf4823ccfbf8e3d1f1725570eba2b5408de2cacbe4e1199389854cab5e9"
+    },
+    {
+      "line": 1129,
+      "timestamp": "2026-11-08T15:50:41.420Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 105,
+      "source_line_sha256": "dd3ffd3b75e9e24e014284e0b600a9c7f47e959be6220cda23d0953c4b01fcf2",
+      "exported_record_sha256": "b269ae3ae6c2a711b51d5eb412ebec6372ce112453dac7997bcc1e224fbab7f6"
+    },
+    {
+      "line": 1170,
+      "timestamp": "2026-11-08T15:53:30.826Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 100,
+      "source_line_sha256": "cce622d5697b9b9022e867f44f452e973b4e9c290e933c817a488d882babe31c",
+      "exported_record_sha256": "24dafb8dae72bff84576f6492a94799ab64e351f5b66121659ec86cbc2fe5c8a"
+    },
+    {
+      "line": 1213,
+      "timestamp": "2026-11-08T15:57:24.439Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 88,
+      "source_line_sha256": "5431368103c09ed274e920e65088fb7c91525de03ac2d79cb8e0ff6de2575082",
+      "exported_record_sha256": "024f21bb79d07383639eba03d2ae702e441302c30d3cc59633775a928ae23b72"
+    },
+    {
+      "line": 1243,
+      "timestamp": "2026-11-08T15:58:57.687Z",
+      "role": "assistant",
+      "phase": "final_answer",
+      "text_parts_count": 1,
+      "text_characters": 372,
+      "source_line_sha256": "fccb3d92aa540c4153ab7c7007a3f4134f17c05e2cf3670ab107eaf1d177043e",
+      "exported_record_sha256": "05eb5965b70cb19fcbf84164edacf1c253e75b3c77701b3343a8eff6fe6c4570"
+    },
+    {
+      "line": 1252,
+      "timestamp": "2026-11-08T15:59:05.274Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 95,
+      "source_line_sha256": "4e0e4b8cca8cea4ba0f4eace1c7ae340fa7964ddbcae84a0c2d3c6bb0539d38e",
+      "exported_record_sha256": "8672b5a99c362114fdfc6bd0a404a3e19514a6f07f6cd85c20fe4d9a893f40fb"
+    },
+    {
+      "line": 1336,
+      "timestamp": "2026-11-08T16:04:46.812Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 276,
+      "source_line_sha256": "03139df0122c26047d5ec6c720c857da8c2a171cb35845d2f02cede9be34e081",
+      "exported_record_sha256": "73f60535117cb69e03036430480aa34bff366cb34769c2ed3999ef0d865214b5"
+    },
+    {
+      "line": 1368,
+      "timestamp": "2026-11-08T16:07:56.465Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 80,
+      "source_line_sha256": "9a7cfb2da8bb3e6793523c65a17d610844d4009ee9864f30be4c87e8c9689fdf",
+      "exported_record_sha256": "ebe5abc5f22f78d5e259af7e040eadb56aa7fb2bf1d6970f33c6a62e241b9c82"
+    },
+    {
+      "line": 1414,
+      "timestamp": "2026-11-08T16:09:06.895Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 99,
+      "source_line_sha256": "a63051b7781bbb96710777561b398bf00ad3727883b2aef34d50e0ffc38b6d15",
+      "exported_record_sha256": "b8ae263d255d6d6b9be80030a79bc59de67b1ee73b498b5679f440dcd2b7c586"
+    },
+    {
+      "line": 1508,
+      "timestamp": "2026-11-08T16:14:02.050Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 105,
+      "source_line_sha256": "b5fb2b0fd80591a73f136b79447edd74295715173e606edccd53462ff3a5b8ce",
+      "exported_record_sha256": "733fbfdb08958888f27eab681a0d36fcf8d983035cd9d23c6efc056cd385056a"
+    },
+    {
+      "line": 1620,
+      "timestamp": "2026-11-08T16:18:28.148Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 126,
+      "source_line_sha256": "e1aeb2a3d0c5168d7e1fc6484bc71d31509d12608cf3a5d9ec7131c2bb959c41",
+      "exported_record_sha256": "20e5346c89ef79f3e37ac37d72acc2ff962e038f0df795c4a9fe4098632ba549"
+    },
+    {
+      "line": 1636,
+      "timestamp": "2026-11-08T16:19:09.244Z",
+      "role": "assistant",
+      "phase": "final_answer",
+      "text_parts_count": 1,
+      "text_characters": 407,
+      "source_line_sha256": "57c0bd56a7dfcf3f350eafcfcdad91bf4d5df7bc1b09157085750c8053b24551",
+      "exported_record_sha256": "6722ceade7987c8ca137baf5df2953d5fa578b4b9e5a1f52d8977e06800ac1db"
+    },
+    {
+      "line": 1646,
+      "timestamp": "2026-11-08T16:19:25.289Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 85,
+      "source_line_sha256": "f08bdafc6671db4cd76f99e6fb327dcadc51afc64bee952ecf850a23af925eb3",
+      "exported_record_sha256": "5c5d1984dac752977373c5b6bcd90992dae3361add1b8b4c4132048384e9099e"
+    },
+    {
+      "line": 1736,
+      "timestamp": "2026-11-08T16:22:43.879Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 148,
+      "source_line_sha256": "323dc08efaf4f476f380a80eca16af279a3c03c7e3e11e3346b0da6abcfc8043",
+      "exported_record_sha256": "bf30e6ce54513f567eeaf35117eef0d602fc19853170920e663ff969a496d819"
+    },
+    {
+      "line": 1885,
+      "timestamp": "2026-11-08T16:30:07.136Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 144,
+      "source_line_sha256": "fb9084a81c325971efea1cb3c4835ebb6bdb563f8c37a86a3beb3cca19fed70e",
+      "exported_record_sha256": "a1941e717a86bf176332ad6ec8c3e50c5805481bfa8881209eb06c0b3e1ccae8"
+    },
+    {
+      "line": 2030,
+      "timestamp": "2026-11-08T16:37:27.072Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 136,
+      "source_line_sha256": "e0d12aa30e8a8cfda4066c00d5b4c8ad4bad9b3ba6e5bdb6a9b672cd2b55d571",
+      "exported_record_sha256": "0a75674a0e3d5f538c1ecae963f88c208d40f5c0e768ce934e969f7d487d4e81"
+    },
+    {
+      "line": 2129,
+      "timestamp": "2026-11-08T16:45:32.387Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 135,
+      "source_line_sha256": "f12514571cf308e596305769327188886fcb48eca4c019670f59a6bc430eed3f",
+      "exported_record_sha256": "c1665f2d241fdff8081064d884d82429bf5a02031325a9069ccb18495a7f9fc7"
+    },
+    {
+      "line": 2210,
+      "timestamp": "2026-11-08T16:49:21.156Z",
+      "role": "assistant",
+      "phase": "final_answer",
+      "text_parts_count": 1,
+      "text_characters": 343,
+      "source_line_sha256": "3bf72cb52c312cde1c3b0da180a3910e917d12611b72add088a500828d8c45fe",
+      "exported_record_sha256": "d1ab91c3d3f20426a35c275e393367e7ea32faf9e251436a4b3cc4df0fadd8af"
+    },
+    {
+      "line": 2218,
+      "timestamp": "2026-11-08T16:49:29.824Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 81,
+      "source_line_sha256": "cdf71225ae82afd25ba0b1e7dfbc34bab3d0caaacd2a7a6e41cdfd39b4711426",
+      "exported_record_sha256": "f29384463c10dfb710fa901b096991d4146d722bdbd0c26f09a7a42100b79e47"
+    },
+    {
+      "line": 2280,
+      "timestamp": "2026-11-08T16:52:19.047Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 111,
+      "source_line_sha256": "a8b0cab59691e9892664d29a286ecb48353842d0cece520284e43a582e3f73c8",
+      "exported_record_sha256": "cae5dd44fda50e3a1154ceb3e24fbcda96b73eab06b0bb96b9f2715f258ce93a"
+    },
+    {
+      "line": 2376,
+      "timestamp": "2026-11-08T16:59:47.393Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 93,
+      "source_line_sha256": "b3b7310d16f9b49e943d808e6422a50d54358b751117ecc95882632b454bf0f4",
+      "exported_record_sha256": "912047ffe365878461f2b73199d6f0a80ac6a80c35a8e947eae5103486bc96e6"
+    },
+    {
+      "line": 2479,
+      "timestamp": "2026-11-08T17:06:56.207Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 106,
+      "source_line_sha256": "6076bb63ae61311a59a3f00d308dd9d3fef083c4a9290c0d2a4219883485f99d",
+      "exported_record_sha256": "e92f7526b6f8bc47d252e3c434b18c17254ce2cd01fb92a2bd7e83a0a4e0a43e"
+    },
+    {
+      "line": 2550,
+      "timestamp": "2026-11-08T17:13:36.645Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 116,
+      "source_line_sha256": "587c2efada5cc53a152245ddaa798bf5403a4f0ad2d9a8a120016a357c9fccc2",
+      "exported_record_sha256": "1431f801b2da965e5547be4b4fd3e3d60726fd4b8ff285bfbc3e0cf1b329bd9d"
+    },
+    {
+      "line": 2606,
+      "timestamp": "2026-11-08T17:18:55.255Z",
+      "role": "assistant",
+      "phase": "final_answer",
+      "text_parts_count": 1,
+      "text_characters": 317,
+      "source_line_sha256": "d462f86dcb73cc160f43bb89dbfa6a2ca72d918965c222bed9dcba23f5920e1b",
+      "exported_record_sha256": "45cfd00ea2d1c1be2b617725a3382a1416584a4a44e6a42e2fa280ee571b0234"
+    },
+    {
+      "line": 2617,
+      "timestamp": "2026-11-08T17:19:22.320Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 81,
+      "source_line_sha256": "71172beb19455243183f79344ab62eedd83adfcb0c024d0137b419ebb4922aad",
+      "exported_record_sha256": "7717c104170077b552084ccbd69c9108824a658576615a5a5a4286e29d66290d"
+    },
+    {
+      "line": 2695,
+      "timestamp": "2026-11-08T17:24:16.261Z",
+      "role": "assistant",
+      "phase": "commentary",
+      "text_parts_count": 1,
+      "text_characters": 104,
+      "source_line_sha256": "2fe67d91ce325bbac356289d5569feceab3cfbf311d23044fc7ad5c7326fdb2a",
+      "exported_record_sha256": "735818e1cb06c7d067183c00e68f28191bb03f2115a006bae3543bedb9a5dc47"
+    }
+  ],
+  "serving_build_identified": false,
+  "complete_team_ai_history": false,
+  "model_identifier_interpretation": "Actual turn_context label, not proof of an immutable serving build or every subagent model",
+  "transcript_interpretation": "Private selected visible-message export, not complete AI interaction history: tool-generated code/prose, tool results, attachments, earlier tasks and other team members are not covered",
+  "excluded_content": "No reasoning, system/developer instructions, tool payloads, injected goal/environment/AGENTS context or attachment contents",
+  "publication_status": "Metadata inventory only; private export requires team review before any publication or submission"
+}

@@ -1,0 +1,397 @@
+{
+  "status": "pass",
+  "before": "V131 on V130",
+  "after": "V137 on staged V136",
+  "comparisons": {
+    "preference_ranks": {
+      "rows": 48,
+      "keys": [
+        "profile",
+        "city"
+      ],
+      "metrics": {
+        "score_lower": {
+          "changed_rows": 3,
+          "maximum_absolute_change": 0.06564751047339001
+        },
+        "score_upper": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "best_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "worst_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "possible_champion": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "necessary_champion": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "max_regret": {
+          "changed_rows": 3,
+          "maximum_absolute_change": 0.06564751047339001
+        },
+        "decision_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "midpoint_illustrative_score": {
+          "changed_rows": 3,
+          "maximum_absolute_change": 0.05605268211414938
+        },
+        "midpoint_illustrative_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "baseline_decision_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "rank_change_positive_improves": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        }
+      }
+    },
+    "preference_MC": {
+      "rows": 144,
+      "keys": [
+        "profile",
+        "city",
+        "concentration",
+        "draws"
+      ],
+      "metrics": {
+        "minimax_recommendation_frequency": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "mean_decision_rank": {
+          "changed_rows": 62,
+          "maximum_absolute_change": 0.07039999999999935
+        },
+        "top3_decision_frequency": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "possible_champion_frequency": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "necessary_champion_frequency": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "minimax_recommendation_frequency_change_vs_baseline": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "mean_decision_rank_change_vs_baseline": {
+          "changed_rows": 47,
+          "maximum_absolute_change": 0.04479999999999862
+        },
+        "top3_decision_frequency_change_vs_baseline": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "possible_champion_frequency_change_vs_baseline": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "necessary_champion_frequency_change_vs_baseline": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        }
+      }
+    },
+    "future_ranks": {
+      "rows": 256,
+      "keys": [
+        "evidence_arm",
+        "scenario",
+        "weight_reference",
+        "city"
+      ],
+      "metrics": {
+        "score_lower": {
+          "changed_rows": 16,
+          "maximum_absolute_change": 0.09087114221388504
+        },
+        "score_upper": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "best_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "worst_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "possible_champion": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "necessary_champion": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "max_regret": {
+          "changed_rows": 16,
+          "maximum_absolute_change": 0.09087114221388504
+        },
+        "decision_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "midpoint_illustrative_score": {
+          "changed_rows": 16,
+          "maximum_absolute_change": 0.07143047340085218
+        },
+        "midpoint_illustrative_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "baseline_decision_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "rank_change_positive_improves": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "score_lower_change": {
+          "changed_rows": 12,
+          "maximum_absolute_change": 0.009034687388123075
+        },
+        "score_upper_change": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        }
+      }
+    },
+    "future_thresholds": {
+      "rows": 32,
+      "keys": [
+        "city",
+        "weight_reference"
+      ],
+      "metrics": {
+        "baseline_gap_to_best_other": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.08183645482576196
+        },
+        "gap_at_50pct_cost_reduction": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.09254319210516826
+        },
+        "threshold_raw_multiplier": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "required_cost_reduction_fraction": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "regret_gap_at_threshold": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        }
+      }
+    },
+    "future_shock_MC": {
+      "rows": 192,
+      "keys": [
+        "evidence_arm",
+        "scenario",
+        "weight_reference",
+        "city"
+      ],
+      "metrics": {
+        "recommendation_frequency": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "possible_champion_frequency": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "mean_decision_rank": {
+          "changed_rows": 12,
+          "maximum_absolute_change": 0.08360000000000056
+        },
+        "score_lower_change_p05": {
+          "changed_rows": 12,
+          "maximum_absolute_change": 0.0019143256860227886
+        },
+        "score_lower_change_p50": {
+          "changed_rows": 12,
+          "maximum_absolute_change": 0.004486121719846636
+        },
+        "score_lower_change_p95": {
+          "changed_rows": 12,
+          "maximum_absolute_change": 0.007664982707810353
+        },
+        "score_upper_change_p05": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "score_upper_change_p50": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "score_upper_change_p95": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        }
+      }
+    },
+    "future_weight_MC": {
+      "rows": 256,
+      "keys": [
+        "evidence_arm",
+        "scenario",
+        "weight_reference",
+        "city"
+      ],
+      "metrics": {
+        "concentration": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "recommendation_frequency": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "possible_champion_frequency": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "mean_decision_rank": {
+          "changed_rows": 101,
+          "maximum_absolute_change": 0.04389999999999894
+        }
+      }
+    },
+    "methods": {
+      "rows": 32,
+      "keys": [
+        "weight_reference",
+        "city"
+      ],
+      "metrics": {
+        "topsis_midpoint_score": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.06490048956954553
+        },
+        "topsis_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "vikor_S": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.0019081452524606357
+        },
+        "vikor_R": {
+          "changed_rows": 1,
+          "maximum_absolute_change": 0.0019081452524606773
+        },
+        "vikor_Q": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.03656803691298394
+        },
+        "vikor_rank": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 1.0
+        },
+        "main_interval_decision_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        }
+      }
+    },
+    "diagnostic": {
+      "rows": 32,
+      "keys": [
+        "weight_reference",
+        "city"
+      ],
+      "metrics": {
+        "midpoint_scenario_score": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.06490048956953132
+        },
+        "midpoint_scenario_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "midpoint_collapsed_max_regret": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.06490048956953132
+        },
+        "interval_score_lower": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.08183645482576196
+        },
+        "interval_score_upper": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "interval_max_regret": {
+          "changed_rows": 2,
+          "maximum_absolute_change": 0.08183645482576196
+        },
+        "interval_decision_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "rank_change_positive_improves": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "possible_champion": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "necessary_champion": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "evidence_best_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        },
+        "evidence_worst_rank": {
+          "changed_rows": 0,
+          "maximum_absolute_change": 0.0
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "results/task4_v131_preferences/ranks.csv": "b12b42125683ed282515a45a65f981a7cc69ac1ebeaf5d63a13082e7e1c25716",
+    "results/task4_v137_preferences/ranks.csv": "94d62abc60be91bd1d720a43997d6f01e2875ece5092cb83d9d33592b5e3f337",
+    "results/task4_v131_preferences/mc_city_summary.csv": "ceb12ab0e7985e7241d4517aa715e37eb1804277698e5c2691d0a19425b1351c",
+    "results/task4_v137_preferences/mc_city_summary.csv": "0013b2ad196590d18e4db4aa1982a4f409db03c813fe8a9887dceed1f2910ad4",
+    "results/task4_v131_future/ranks.csv": "bd8bcd3f2421cae408b148caf156148265620536e8818e99a91334306e1df52b",
+    "results/task4_v137_future/ranks.csv": "d74ef29c14593c08490c18a9c9b8a511b3b0bcee6f1bc6838f45d535d30dc884",
+    "results/task4_v131_future/thresholds.csv": "0e855a363703d42073c710ccfa1d6cc9dc68eb071c5175cd6495c6d6e84f1e64",
+    "results/task4_v137_future/thresholds.csv": "8c2b7b729e27e0598ceaeaecaac6cd1e39e3aeb81e3c6f67d1b2bac7e37f72d1",
+    "results/task4_v131_future/future_mc_city_summary.csv": "ceb24520424c26ed407debac06f7523b8e32f3688e400dba142e5843d7647c12",
+    "results/task4_v137_future/future_mc_city_summary.csv": "018262ca331860cbb1818af1712dbc8281608c73285198281e7e6e563ffa7153",
+    "results/task4_v131_future/weight_mc_city_summary.csv": "751f3122721f5b36096e8d33e2be2625dc892136ed43fc85c925a581e80bb0a1",
+    "results/task4_v137_future/weight_mc_city_summary.csv": "10cc5344e8129d13f20ca53015b541594af83cbd789aa891037db77de3cccae8",
+    "results/task4_v131_method_country/method_ranks.csv": "61b40a317025afcb53b603355d01d55db37a421ad4075466ad0e6fd3a7b1f4e8",
+    "results/task4_v137_method_country/method_ranks.csv": "fb5382bea4056f814785eddca5b1e0168a87be0550e2b55f2d2276e997f7598a",
+    "results/task4_v131_revision_diagnostic/rank_comparison.csv": "ded272a4f14d8fb25a25a3f490da59fa18eef4a901daa477897364dfe8113d52",
+    "results/task4_v137_revision_diagnostic/rank_comparison.csv": "09e5e0fbe30ab757624b6a0c34c6516f94fb4323ee4e622bded6b3180d5171ab"
+  }
+}

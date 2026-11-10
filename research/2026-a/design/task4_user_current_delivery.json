@@ -1,24 +1,17 @@
 {
-  "version": "V198",
-  "review_version": "V198",
-  "primary_model": "V197",
-  "pdf": "drafts/task4_v198_paper.pdf",
-  "pdf_sha256": "85d74a4895c06ee5ad8cd65957d41db6f9f5efdde342d81c115498563cb7930b",
-  "research_requirements": "research/2026-a/results/task4_v198_review/requirements.csv",
-  "research_verification": "research/2026-a/results/task4_v198_review/delivery_verification.json",
-  "paper_requirements": "drafts/task4_v198_verification/requirements.csv",
-  "paper_verification": "drafts/task4_v198_verification/delivery_verification.json",
+  "version": "V201",
+  "review_version": "V201",
+  "primary_model": "V200",
+  "pdf": "paper/current/main.pdf",
+  "pdf_sha256": "bbf5229fea319cc6241d85e469c74131ea702641a1991bfb2847c70be5be7c9b",
+  "research_requirements": "research/2026-a/results/task4_v201_review/requirements.csv",
+  "research_verification": "research/2026-a/results/task4_v201_review/current_delivery_verification.json",
+  "paper_requirements": null,
+  "paper_verification": null,
   "requirements": 47,
-  "pending_count": 13,
+  "pending_count": 12,
   "main_page_margin": 0,
   "submission_ready": false,
-  "role": "Current scoped delivery evidence map; passage location does not certify every input or final team readiness",
   "server_compile_verified": false,
-  "main_entry_update": {
-    "entry": "main.tex",
-    "verification": "drafts/task4_v198_verification/main_entry_verification.json",
-    "local_build": "pass; 27 pages identical to owned V198",
-    "server_compile_verified": false,
-    "frozen_requirement_map": "Retained historical V198 map; shared-main build gap superseded by this supplemental verification; final team integration remains pending."
-  }
+  "role": "Current scoped delivery evidence; local main build passed, team acceptance and contest submission remain pending"
 }

@@ -1,0 +1,136 @@
+{
+  "status": "pass",
+  "iteration": "V193",
+  "runner_sha256": "ae0bd04417dac4aeebdbe8fe53da14374ed0b27ff21d0a411a6e4610d27f7df9",
+  "paper_version": "V193",
+  "primary_model": "V192",
+  "delivery_version": "V193",
+  "paper_head": "d5bbda434027a3ec59054311370da28331b417d7",
+  "research_head": "f72520e02b467bdfe603856f6789809b16e81e2a",
+  "canonical_pdf_sha256": "fb9b2d0f95f544c41f2de02e15a58673f15a8ac8efc4dcadb173f0a272474dae",
+  "source_bindings_sha256": {
+    "research/2026-a/design/task4_user_current_model.json": "66c7be04610fac6cc5b435090012e8aa4b5c82c0b93e9a9123269fbe16b2bf17",
+    "research/2026-a/design/task4_user_current_extensions.json": "717ff9d37ee53234629d7f14a5bdcb7bdf292035578c2ea934c443ce63263f70",
+    "research/2026-a/design/task4_user_current_review.json": "ce04097ee31d61ebc5d71d4709b05d2a9b0976cc0f54220b43a210c28f63f8f1",
+    "research/2026-a/design/task4_user_current_delivery.json": "b27e679770e7b24cf85e93f3d7b5e696c50e5fcbf9131f0ffbcef274d73b5791",
+    "research/2026-a/design/task4_user_v192_snapshot.json": "2e9c32051dffe00ddf635a77c349f01cafa08ffa2913a37cc34ef06ed8c775a2",
+    "research/2026-a/results/task4_v193_review/verification.json": "85c6eb2d58b87215f326af95d26bc19a75eff32e694412fba58f548f201c1b2c",
+    "research/2026-a/results/task4_v193_review/delivery_verification.json": "34c76a938630adc18019a4f10a787149fc89747b6cb8091ea98323fa2ed35858"
+  },
+  "environment": {
+    "python": "3.11.18",
+    "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
+    "tools": {
+      "tectonic": "Tectonic 0.17.0",
+      "pdftotext": "pdftotext version 26.01.0",
+      "pdftoppm": "pdftoppm version 26.05.0"
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "scipy": "1.13.1",
+      "matplotlib": "3.9.2"
+    },
+    "tex_resources": "Existing local Tectonic cache required;no resource-download fallback"
+  },
+  "archive": {
+    "files": 865,
+    "git_blob_algorithm": "sha1",
+    "all_paths_and_blobs_match": true
+  },
+  "historical_snapshot_navigation_exceptions": [],
+  "science": {
+    "utility_cells": 160,
+    "deterministic_city_weight_cases": 32,
+    "changed_transport_lower_cells": 2,
+    "other158cells_and_all_uppers_exact": true,
+    "source_population_and_count_formulas_checked": true,
+    "individual_and_joint_withdrawals_exact": true,
+    "independent_score_reduction": "Scalar math.fsum squared distances with weights once",
+    "comparisons": [
+      {
+        "weight_reference": "fixed",
+        "city_cases": 16,
+        "conservative_recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0,
+        "mean_score_interval_width": 16.03907007442162
+      },
+      {
+        "weight_reference": "equal",
+        "city_cases": 16,
+        "conservative_recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0,
+        "mean_score_interval_width": 18.81881344951466
+      }
+    ],
+    "MC_rerun": false,
+    "raw_source_semantics_reaudited": false
+  },
+  "builds": [
+    {
+      "kind": "direct",
+      "passed": true,
+      "pdf_sha256": "e3ff5859ee08537a74f8dffd8cbbb5c2576c05a2096579c5fc77c313ea8e7834",
+      "text_pages_equal": true,
+      "grayscale_72dpi_pages_equal": 27,
+      "underfull_paragraphs": 2,
+      "removed_snapshot_outputs": [
+        "drafts/task4_v193_paper.pdf"
+      ],
+      "command": [
+        "tectonic",
+        "--only-cached",
+        "-Z",
+        "search-path=..",
+        "--outdir",
+        "/data/scratch/himcm_v193_final_independent/work-9te6ss3q/direct/compiled",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--makefile-rules",
+        "/data/scratch/himcm_v193_final_independent/direct/dependencies.mk",
+        "task4_v193_paper.tex"
+      ],
+      "physical_pages": 27,
+      "native_letter_and_headers_footers_checked": true
+    },
+    {
+      "kind": "root",
+      "passed": true,
+      "pdf_sha256": "3f885a31bb0edaf6b6bd523291739adf907ae14d931972bc83d54c9b3fe2ef1c",
+      "text_pages_equal": true,
+      "grayscale_72dpi_pages_equal": 27,
+      "underfull_paragraphs": 2,
+      "removed_snapshot_outputs": [
+        "drafts/task4_v193_paper.pdf"
+      ],
+      "command": [
+        "tectonic",
+        "--only-cached",
+        "--outdir",
+        "/data/scratch/himcm_v193_final_independent/work-9te6ss3q/root/compiled",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--makefile-rules",
+        "/data/scratch/himcm_v193_final_independent/root/dependencies.mk",
+        "task4_v193_review_entry.tex"
+      ],
+      "physical_pages": 27,
+      "native_letter_and_headers_footers_checked": true
+    }
+  ],
+  "input_protection": {
+    "scientific_files_checked": 327,
+    "paper_files_checked": 865,
+    "navigation_and_verification_files_checked": 6,
+    "changed": []
+  },
+  "elapsed_seconds": 5.738,
+  "scope": "Local tools+existing TeX cache;source-defined deterministic model and exact text/72dpi rendering checks. No fresh-OS/no-cache guarantee,MC replay,source revalidation,server compile or submission-readiness claim.",
+  "submission_ready": false
+}

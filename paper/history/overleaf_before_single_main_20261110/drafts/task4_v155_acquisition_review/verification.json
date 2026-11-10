@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "version": "V155",
+  "primary": "V154 unchanged",
+  "fully_missing_cells": 14,
+  "nonfullymissing_protected_cells": 146,
+  "exact_single_cell_cases": 28,
+  "independent_score_and_decision_evaluations": 2401,
+  "residual_grid_cases": 1848,
+  "analytic_partial_information_limits": [
+    {
+      "weight_reference": "fixed",
+      "lower_only_joint_exclusion_ceiling": 0,
+      "exact_transport_exclusion_ceiling": 0,
+      "exact_transport_regret_gain_ceiling": 0,
+      "max_joint_Milan_lower": 58.61483075867011,
+      "minimum_other_upper": 60.43498305699956
+    },
+    {
+      "weight_reference": "equal",
+      "lower_only_joint_exclusion_ceiling": 0,
+      "exact_transport_exclusion_ceiling": 0,
+      "exact_transport_regret_gain_ceiling": 0,
+      "max_joint_Milan_lower": 60.01740127602317,
+      "minimum_other_upper": 61.480813589973074
+    }
+  ],
+  "current_snapshot_files_unchanged": 187,
+  "existing_manuscript_files_unchanged": 131,
+  "new_data_admissions": 0,
+  "primary_score_width_reduction": 0,
+  "primary_pdf_sha256": "0ff0e7ed47fa28a7ccc9c6e6daeda34576ddba48cba8b794c1e3ca052fc7b60b",
+  "no_MC_or_missing_value_imputation": true,
+  "result_sha256": {
+    "V138_comparison.csv": "a38e166cfb36222f1c0362e5fe9cb45d964dd9c30b6fe939c30316b50cabf679",
+    "audit.json": "11a1bd63645258867e8ad944fabf571a7ec4b8fa464ab6e92a532dfe817fa83b",
+    "endpoint_information.csv": "fd8b2ccf9f1b7853a1fab94548874d4f7a06481db725979369a1e545b9c610d5",
+    "exclusion_thresholds.csv": "31c6962e3232a0fb2048c893a131b03eb8f8730f31e84657d9b2c5ce346f0296",
+    "joint_endpoint_information.csv": "51cead0ae4ddc562a301e9dd82f7de823a9473c6c43b8bef401ce0ec82240d30",
+    "joint_priority.csv": "bc109a1cf598153fcd0aebb0b9e657d199fb66d7e7ed8576747418003ef1e508",
+    "joint_subset_limits.csv": "df1d4f084bae43c97aee10f4c5afa9f1d3e58b7312fcbbf17863336fe07cb789",
+    "lower_only_information.csv": "1c13a482dc1eb3e10c83a6a9dc841d248330dbb28e97ac111bf578af25a7a30a",
+    "milan_residual_grid.csv": "0d89a991eb68b13a9f411f6f7230281d42d7994dbaf8d307d6943c3c3d04002b",
+    "milan_residual_summary.json": "3ff9a7003d05b33ad7784e9718590a7528e799a80248b209a8c3eab897418db6",
+    "missing_cells.csv": "9f3973cadeb24cda3e30de6b21dc68e00e4606811f96196cd79e1264d74f4bff",
+    "priority.csv": "86cddbe01eb58218f10c2a1df8d53e6acc38ab445202d4e567d0dd6d27dcd95d",
+    "recommendation_thresholds.csv": "aa0b83233883e49fe45045b4081314aa2569172da5f0c988f60e7217a36aa3b2",
+    "summary.json": "7b9bc4a5249e70ad4c911c53587354943b5a05205e2ce283fd36f14a5d431a99"
+  },
+  "verifier_sha256": "32d5e24bc123677f8c3d5a66ed8d785c752e4984d06be517aadfbe78be4c45aa"
+}

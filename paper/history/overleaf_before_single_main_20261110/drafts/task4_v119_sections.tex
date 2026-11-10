@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,longtable,microtype}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\title{City Opportunities: Data, Evaluation and Model Revision}
+\author{Team working draft}
+\date{}
+\begin{document}
+\maketitle
+\noindent This standalone draft develops the evaluation chapters using the team's 16-city table and admitted supplements. It leaves the existing manuscript unchanged.
+\setcounter{section}{3}
+\section{Data collection and comparability}
+We compare $M=16$ cities using $N=10$ indicators. The team supplied the initial city table; its existing values were retained as the agreed input. The target reference year is 2025, but the available records have mixed reference years. We retain those dates rather than present the table as a same-year census. Some supplied entries lack source links, so their provenance remains that of the team table.
+
+The indicators cover homicide, PM$_{2.5}$, living costs, housing affordability, pupil--teacher resources, higher-education density, transport-stop density, commute duration, broadband speed and swimming-pool density. Higher-education counts are converted from per million to per 100,000 residents. Transit mode share is not converted into stop density: these measure different quantities. Early school leaving, although present in the supplied table, is not introduced as an eleventh criterion.
+
+We supplement missing cells with official records while keeping the existing observations fixed. Oslo's municipal GIS records contain platforms rather than unique stations. We select records within the municipal boundary and consolidate 186 metro platforms into 89 named metro stations. Because this covers only the metro subset, it supplies a lower bound on transport facilities. Similarly, Zurich's 2026 public directory identifies seven indoor pools and Milan's 2025 tariff lists 17 distinct public indoor venues; neither list establishes the total number of all qualifying pools. Singapore contributes 5,205 unique bus-stop codes and seven named ActiveSG pools. The station snapshots are from 2026; Singapore's pool records are from 2025. The supplied population denominators are retained, including Singapore's 2024 population, making the mixed-year scope explicit.
+
+Warsaw illustrates a different collection problem. Its 2024/25 education report gives 119,740 students across six youth-school routes, but some teacher resources are shared with adult education. Retaining this allocation uncertainty and published rounding gives a teacher-FTE interval of $[2487,8148]$. We convert it to a resource utility interval rather than choose an unsupported teacher count. This is an FTE resource measure, not a direct measure of learning outcomes. We exclude an Amsterdam candidate based on headquarters geography and a London candidate covering only state schools from point-value admission because their coverage does not match the required city measure.
+
+After these six additions, the 160 indicator cells comprise 112 retained point values, 18 partially bounded cells and 30 fully missing cells. Facility inventories establish available resources, not equitable access for every student. The supplied school ratios and commute means are also not established as measures specific to resident high-school students. These scope differences matter when interpreting the ranking.
+
+\section{Establishing the baseline evaluation model}
+\subsection{Determining indicator weights}
+The baseline retains the existing policy weights: $w_j=0.1125$ for eight indicators and $w_j=0.05$ for transport-stop and pool density, with $\sum_jw_j=1$. These are declared modeling choices rather than elicited student judgments. Equal weights provide a separate sensitivity reference. We use TOPSIS for the main evaluation and VIKOR for a focused method comparison; preference and uncertainty analyses extend this core.
+
+\subsection{TOPSIS scoring with incomplete observations}
+Fixed anchors make scores comparable across scenarios without moving the ideal city. For a benefit indicator, $u=x/(a+x)$; for a cost indicator, $u=a/(a+x)$. Anchors in indicator order are $2,15,100,10,15,1,50,30,100,1$, with densities expressed in their specified units. Commute duration uses a separate utility $e^{-t/30}$. When only mean duration $\bar t$ is supplied, Jensen's inequality yields $\mathbb E[e^{-t/30}]\in[e^{-\bar t/30},1]$, rather than a point estimate. Fully missing utilities remain $[0,1]$.
+
+For utility vector $u_i$, define weighted distances from the fixed worst and best points:
+\begin{equation}
+ D_i^- =\sqrt{\sum_jw_ju_{ij}^2},\qquad D_i^+=\sqrt{\sum_jw_j(1-u_{ij})^2},\qquad S_i=100\frac{D_i^-}{D_i^-+D_i^+}.
+\end{equation}
+Weights enter squared distances once. Since $S_i$ increases in every utility, utility endpoints $\ell_i,h_i$ give score bounds $L_i=S(\ell_i)$ and $U_i=S(h_i)$. Under the retained rectangular uncertainty set, define
+\begin{equation}
+ R_i=\max\{0,\max_{k\ne i}U_k-L_i\},\qquad i^*\in\arg\min_i R_i,
+ \qquad \mathcal C=\{i:U_i\geq\max_{k\ne i}L_k\}.
+\end{equation}
+$R_i$ measures the largest possible loss from recommending city $i$; $\mathcal C$ contains cities that can still rank first. Thus a conservative recommendation and an identified best city answer different questions. These bounds describe retained data uncertainty, not statistical confidence intervals.
+
+\subsection{Results and interpretation}
+Oslo minimizes maximum regret, followed by Singapore and Zurich. All 16 cities remain possible champions. The decision order in Table~\ref{tab:rank} therefore expresses a conservative recommendation, not a fully identified quality order.
+\begin{longtable}{rlrr}
+\caption{Baseline decision ranking after supplementation.}\label{tab:rank}\\
+\toprule Rank & City & Score interval & Maximum regret\\\midrule
+\endfirsthead
+\toprule Rank & City & Score interval & Maximum regret\\\midrule\endhead
+1 & Oslo & 54.30--63.90 & 17.89 \\
+2 & Singapore & 52.29--66.28 & 19.89 \\
+3 & Zurich & 50.95--72.18 & 19.96 \\
+4 & Dublin & 50.88--70.90 & 21.30 \\
+5 & Berlin & 50.49--61.54 & 21.69 \\
+6 & Helsinki & 49.20--69.84 & 22.98 \\
+7 & Madrid & 48.63--68.22 & 23.56 \\
+8 & Paris & 48.40--69.04 & 23.79 \\
+9 & Warsaw & 47.50--63.99 & 24.69 \\
+10 & Vienna & 47.19--61.03 & 25.00 \\
+11 & Prague & 46.46--66.16 & 25.73 \\
+12 & Milan & 45.63--65.99 & 26.56 \\
+13 & Stockholm & 45.41--68.89 & 26.77 \\
+14 & London & 45.17--66.12 & 27.01 \\
+15 & Tokyo & 43.81--61.12 & 28.38 \\
+16 & Amsterdam & 42.29--60.43 & 29.90 \\
+\bottomrule
+\end{longtable}
+The six evidence additions reduce average score-interval width from 18.81 to 17.94, a 4.62\% reduction. Warsaw's width decreases by 26.59\%. Singapore moves from fifth to second and Milan from fifteenth to twelfth in the decision ranking. The possible-champion set remains unchanged: improved measurement affects recommendations before it identifies a unique winner.
+
+As a method diagnostic, we apply both methods to the same illustrative utility midpoints. TOPSIS selects Zurich, whereas VIKOR selects Dublin; Kendall's $\tau_b=0.517$. VIKOR uses sample best/worst values and balances total and largest weighted shortfalls equally. Its ideal-point convention therefore differs from TOPSIS as well as its aggregation rule. This disagreement exposes method dependence. Midpoints are used only for this diagnostic and do not replace the intervals in the main recommendation.
+
+\section{Model revision and extension}
+\subsection{Considering the future}
+We examine conditional future changes using fixed anchors, weights and ideals. In a resource-expansion scenario, higher-education, stop and pool densities rise by 10\%, holding population denominators fixed. A living-pressure scenario raises living costs, housing costs and mean commute duration by 10\%. A balanced-improvement scenario reduces pupil--teacher ratios, PM$_{2.5}$ and mean commute duration by 10\%. These are analyst-defined stress scenarios, not forecasts: a comparable three-to-five-year panel is unavailable.
+
+For raw multiplier $r>0$, the corresponding utility transformations are
+\begin{equation}
+ T_r^{\rm benefit}(u)=\frac{ru}{1-u+ru},\qquad
+ T_r^{\rm cost}(u)=\frac{u}{u+r(1-u)}.
+\end{equation}
+Both maps increase in $u$, so they apply to both interval endpoints and preserve $[0,1]$ for missing values. For the present mean-only commute bounds, the revised interval is $[\ell^r,1]$. This travel rule relies on the supplied-mean construction; it is not a general transformation of expected travel utility.
+
+Oslo remains the minimax recommendation in all three scenarios under both fixed and equal weights. All 16 cities remain possible champions. Balanced improvement yields decision-rank $\tau_b=0.983$ relative to baseline; the other scenarios preserve the decision order.
+
+To make the extension actionable, we solve for a decision boundary instead of merely plotting another score. Holding other cities fixed, reduce one competitor's pupil--teacher ratio, PM$_{2.5}$ and mean commute time proportionally until its maximum regret ties Oslo's. Zurich reaches this boundary at a 24.55\% reduction under fixed weights (23.73\% under equal weights). Singapore requires 39.54\% under fixed weights and does not reach the boundary within 50\% under equal weights. Dublin does not reach it within 50\% under either weighting rule. A slightly larger reduction gives a strict minimax preference. These are conditional model thresholds, not estimated feasible policies or predictions of actual leadership; missing commute values remain missing.
+
+\subsection{Considering different preferences and development situations}
+We examine two transparent preference scenarios. Education priority doubles the relative weights of pupil--teacher resources and higher-education density. Independent-living priority doubles the relative weights of commute duration and transport-stop density. If $m_j$ denotes the chosen multiplier, then
+\begin{equation}
+ w'_j=\frac{m_jw_j}{\sum_kw_km_k},\qquad A_{jk}=\frac{w'_j}{w'_k}.
+\end{equation}
+The AHP eigenvector of $A$ recovers $w'$. Its consistency ratio is approximately zero because the matrix is constructed from exact ratios. This checks algebraic consistency; it supplies no evidence that students hold these preferences. The scenarios are not assigned to ages 14 and 18 without elicited judgments.
+
+Oslo remains first under both scenarios. Education priority moves Vienna from tenth to fifth and Berlin from fifth to third; independent-living priority moves Prague from eleventh to ninth. Their decision rankings have $\tau_b=0.700$ and $0.883$ with baseline. Preferences therefore affect intermediate recommendations even when the conservative first choice persists.
+
+\subsection{Perturbing weights while retaining missing intervals}
+For each of the three preference profiles, draw 10,000 weight vectors from $\operatorname{Dirichlet}(100w')$ and recompute interval scores and maximum-regret ranks. We retain all data intervals and report mean decision rank and recommendation frequency. Oslo is recommended in 69.31\% of baseline draws, 79.72\% of education-priority draws and 76.94\% of independent-living draws. These frequencies are conditional on the chosen weight distribution; they are not probabilities of being the true best city or estimates of population preferences.
+
+The improvement in the model is the distinction among evidence, preferences and decision sensitivity. Data additions narrow only supported bounds; preference changes reveal how the assumed priorities affect the decision; improvement thresholds quantify when that decision would change. More elaborate aggregation would not by itself resolve the missing observations.
+
+\section{Comparing cities within the same country}
+The primary table contains one city from each of 16 countries, so it cannot supply within-country comparisons. We therefore use two separate cases from the existing 25-city study, without pooling their results into the primary ranking.
+\begin{center}\begin{tabular}{llr}\toprule
+Country & City & Score interval\\\midrule
+United States & Phoenix & 31.39--71.68\\
+ & New York & 30.22--72.81\\
+India & Mumbai & 28.82--60.64\\
+ & Delhi & 32.59--63.90\\\bottomrule
+\end{tabular}\end{center}
+Phoenix has higher affordability utilities than New York. Mumbai has the higher PM$_{2.5}$ utility, while Delhi has higher living-cost, housing, student--teacher-resource and broadband utilities in the retained data. Both overall score pairs overlap; neither comparison identifies a necessary winner. These cases show dimension-specific trade-offs, not representative national effects.
+
+\section*{Reproducibility and source record}
+The unchanged team CSV and admitted source records are archived in the research repository. The source manifest links the Oslo municipal GIS and boundary records, Zurich and Milan venue captures, Singapore LTA/ActiveSG records, and Warsaw education tables to their extraction results. The supplementary research outputs contain all rankings, scenario weights, matrices and threshold calculations. The following relative paths refer to \texttt{research/2026-a/} in the research repository:
+\begin{itemize}
+\item \path{data/task4_v117_team_intake/city_indicators.csv}\\ \path{design/task4_user_v118_admissions.json}.
+\item \path{results/task4_user_v118_revision/}\\ \path{results/task4_v119_preferences/}.
+\item \path{results/task4_v119_future/}\\ \path{results/task4_v119_method_country/}.
+\end{itemize}
+\end{document}

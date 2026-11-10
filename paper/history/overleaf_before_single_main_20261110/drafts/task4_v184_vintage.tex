@@ -1,0 +1,32 @@
+\subsection{Sensitivity to the accepted input information}\label{sec:sourcepolicy}
+Point-withdrawal tests keep the primary data, weights, supplements and 48
+non-point bounds fixed, replacing selected point utilities by $[0,1]$.
+Of 112 points, 64 are dated 2026, two 2025 and 46 earlier. The 28
+non-\texttt{ok} points comprise 16 \texttt{MODELLED}, eight \texttt{STALE},
+three \texttt{SUSPECT} and one \texttt{NATIONAL}. Groups cover dates before
+2020, after 2025, non-\texttt{ok} flags and their union; overlaps count once.
+
+\input{task4_v182_assets/vintage_table.tex}
+
+Withdrawing 28 flagged points selects Berlin under baseline weights and Paris
+under equal weights. Removing 13 pre-2020 points selects Singapore under
+baseline weights and retains Zurich under equal weights. Removing 64
+later-dated points retains Zurich under both, widening the baseline mean
+range from 16.05 to 48.41. The 95-point union selects Singapore under both.
+All sixteen remain possible champions. Labels and cutoffs are not error
+probabilities or proof that flagged entries are wrong.
+
+Withholding Zurich's homicide-rate point selects Singapore under baseline
+weights and Oslo under equal weights; withholding Amsterdam's retains Zurich
+under both. Other entries remain fixed, without a replacement rate.
+Varying only Zurich's point rate gives regret ties at about 0.23002 per 100,000
+under baseline weights and 0.90473 under equal weights. Below each respective
+cutoff Zurich uniquely minimizes regret; above it Zurich does not. These are
+hypothetical cutoffs, not measured rates or confidence limits.
+
+Separately withdraw commute proxies by replacing their travel intervals with
+$[0,1]$, fixing other entries. Withholding Zurich's alone, both identified
+proxies, or all twelve supplied commute means selects Singapore under baseline
+weights; equal weights retain Zurich. Withholding Dublin's alone retains Zurich
+under both. All sixteen remain possible champions. The baseline recommendation
+therefore depends on retaining Zurich's work-commute proxy.

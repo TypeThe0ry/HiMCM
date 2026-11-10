@@ -1,0 +1,21 @@
+\subsection*{Recovered records and coverage}
+The supporting inventory authenticates a complete-line prefix of this root
+task log by byte count and SHA-256. It ends at 14:31:18.850 UTC on
+9 November 2026 (22:31 in Singapore); subsequent work is outside the window.
+A private export retains 326 selected visible text records: six selected
+genuine requests, 259 progress messages and 61 complete final responses.
+The original 125-record selection and its private byte prefix are preserved.
+
+A second private export retains 1,865 plaintext assistant tool-call inputs:
+1,749 custom-call input strings and 116 function-call argument strings.
+These preserve generated code and LaTeX where present in the calls, extending
+the evidence beyond visible messages. Recorded inputs do not establish that
+each invocation succeeded or that every nested tool ran.
+
+This capture covers one root session. It excludes tool results, attachment
+contents, subagent response sessions, other chats and other team members.
+Reasoning, system and developer messages, encrypted fields, internal metadata
+and injected continuations are excluded. Public inventories contain metadata
+and record hashes; the original log and exported text remain private and are
+not included as submission transcripts. No missing prompt or output has been
+reconstructed and labelled as an exact historical quotation.

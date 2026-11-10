@@ -1,0 +1,25 @@
+{
+  "tool": "mcp__codex_apps__exa_web_fetch_exa",
+  "request": {
+    "urls": [
+      "https://gestiona.comunidad.madrid/desvan/AccionDatosTemaMunicipal.icm?codTema=1902424",
+      "https://www.comunidad.madrid/docs/assets/2025/12/17/informe_-_capitulo_b_-_2025.pdf?VersionId=xG.t7J4_kU00tSXSmvFCUBxVcNYLgOp5"
+    ],
+    "maxCharacters": 500000
+  },
+  "saved_tool_response": "provider_capture.json",
+  "saved_response_sha256": "e1af3552843f0dfbd119a19593325ca1e540952bfb84639928c90e7246ada48d",
+  "saved_response_bytes": 256499,
+  "archive_write_time_utc": "2026-11-09T06:21:23.504633+00:00",
+  "is_error": false,
+  "text_characters": 244641,
+  "representation": "Provider-extracted text with noisy PDF charts; not original PDF/HTML bytes or an original-HTTP status.",
+  "additional_failed_tool_attempt": {
+    "url": "https://datos.comunidad.madrid/catalogo/dataset/e1ca4058-9c82-4c25-b3e0-4a148b31e19c/resource/164be5cb-8442-48b7-b67e-b0f5d9f81fdc/download/profesores_por_tipo_centro_y_sexo.csv",
+    "maxCharacters": 1000,
+    "is_error": true,
+    "reported_error_code": "INVALID_ARGUMENT",
+    "reported_failure": "CRAWL_TIMEOUT",
+    "recorded_at": "2026-11-09T06:28:33.810348+00:00"
+  }
+}

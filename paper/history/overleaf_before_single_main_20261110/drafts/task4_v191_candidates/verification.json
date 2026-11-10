@@ -1,0 +1,179 @@
+{
+  "status": "pass",
+  "version": "V191 candidate independent audit",
+  "primary": "V181 unchanged",
+  "paper": "V189 unchanged",
+  "current_delivery": "V190 unchanged",
+  "primary_admissions": 0,
+  "actual_baseline_width_change": 0,
+  "source_review": {
+    "Tokyo_count": 38,
+    "Tokyo_wards": [
+      "中央区",
+      "中野区",
+      "台東区",
+      "墨田区",
+      "文京区",
+      "新宿区",
+      "江東区",
+      "渋谷区",
+      "港区",
+      "練馬区"
+    ],
+    "Tokyo_inventory_observation_year": null,
+    "Tokyo_catalogue_dates_not_observation_dates": true,
+    "Tokyo_source_responses": 4,
+    "Tokyo_excluded_access_shells_or_errors": 3,
+    "Warsaw_M1": 21,
+    "Warsaw_M2": 18,
+    "Warsaw_common_station": "Świętokrzyska",
+    "Warsaw_complexes": 38,
+    "Warsaw_scope_pdf_page": 4,
+    "Warsaw_scope_report_year": 2025,
+    "Warsaw_source_responses": 4,
+    "Warsaw_excluded_requests": 0
+  },
+  "model_review": {
+    "rank_rows": 128,
+    "bound_rows": 640,
+    "maximum_scalar_score_or_regret_error": 1.4210854715202004e-14,
+    "profiles": [
+      {
+        "profile": "retained_V181",
+        "weight_reference": "fixed",
+        "mean_width": 16.04938479240282,
+        "conditional_width_reduction": 0.0,
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0
+      },
+      {
+        "profile": "retained_V181",
+        "weight_reference": "equal",
+        "mean_width": 18.83794074307937,
+        "conditional_width_reduction": 0.0,
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0
+      },
+      {
+        "profile": "Tokyo_candidate",
+        "weight_reference": "fixed",
+        "mean_width": 16.047893033508274,
+        "conditional_width_reduction": 0.0014917588945451143,
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0
+      },
+      {
+        "profile": "Tokyo_candidate",
+        "weight_reference": "equal",
+        "mean_width": 18.835413154145837,
+        "conditional_width_reduction": 0.002527588933531888,
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0
+      },
+      {
+        "profile": "Warsaw_candidate",
+        "weight_reference": "fixed",
+        "mean_width": 16.04056183331616,
+        "conditional_width_reduction": 0.008822959086657534,
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0
+      },
+      {
+        "profile": "Warsaw_candidate",
+        "weight_reference": "equal",
+        "mean_width": 18.821341038448193,
+        "conditional_width_reduction": 0.016599704631175882,
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0
+      },
+      {
+        "profile": "both_candidates",
+        "weight_reference": "fixed",
+        "mean_width": 16.03907007442162,
+        "conditional_width_reduction": 0.010314717981199095,
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0
+      },
+      {
+        "profile": "both_candidates",
+        "weight_reference": "equal",
+        "mean_width": 18.81881344951466,
+        "conditional_width_reduction": 0.01912729356470777,
+        "recommendation": [
+          "Zurich"
+        ],
+        "possible_champions": 16,
+        "necessary_champions": 0
+      }
+    ],
+    "all_other158cells_and_alluppers_unchanged_in_joint_preview": true,
+    "withdrawal_restores_V181": true
+  },
+  "original_CSV_preserved": true,
+  "scientific_files_unchanged": 245,
+  "paper_files_unchanged": 795,
+  "existing_registries_unchanged": 5,
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/task4_v191_tokyo/README.md": "72f4dd6bc276b6ad10394b733da981572ec678103e136a5fcffe2b6bd1aa6ce4",
+    "data/task4_v191_tokyo/api_catalog_original.html": "822ba5605d334211cc0b74f70595f15c3c1af4b83b056224a8c33333dca4ced0",
+    "data/task4_v191_tokyo/collect.py": "c80749cee0ada6d9cc26fe7037e816f539ca0d3d8c5396361802e0e46bae3f8b",
+    "data/task4_v191_tokyo/extract.py": "079094cd8f26d046b346259e258267a37e368b1a115a490771fcf0e75b68da8a",
+    "data/task4_v191_tokyo/findings.json": "447d1569d0a4651e0d4a6313473886e6636aba279ee54592ca8a83d59e142ab7",
+    "data/task4_v191_tokyo/media_guide2026_response_original.html": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "data/task4_v191_tokyo/named_stations.csv": "41071e41286231f861560836caa4085e731c897b72e4a523c663fddb9de7db45",
+    "data/task4_v191_tokyo/observations.json": "ae15b207f7abdb59b2a51c12264d4a8ec64335d558013f2f47d450895101fa4e",
+    "data/task4_v191_tokyo/oedo_original.html": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+    "data/task4_v191_tokyo/retrievals.json": "8ef7547dae6d2f4df28835d4cc62c505bc462d8f1b0b17593071684dd07dcab5",
+    "data/task4_v191_tokyo/stationlist_original.csv": "834e1dfa2dfcb7cbaf23feb4ab84db35064ca029efed242f8dcef1779911da15",
+    "data/task4_v191_warsaw/README.md": "2472e73fb7bb6a9b6bd8674ed2688f99924309d294740081f2dc3e4902549d1c",
+    "data/task4_v191_warsaw/collect.py": "6b76669e96bd50c9a514ab99cbf6b98e2ca95b51c3a8e6822d14af10c88c3168",
+    "data/task4_v191_warsaw/extract.py": "edabbcda057ec32132768835171c1fb3b779e0716d5d20d29079c8de4c1e80cd",
+    "data/task4_v191_warsaw/findings.json": "cad179617e8bb00320bacfb35bd1f220dfc0e5200915742014eef44714254c62",
+    "data/task4_v191_warsaw/fire_service_2025_original.pdf": "a788454415e98fd36feffaa20598b8445707a7eb4334d81b7532f033df3f8809",
+    "data/task4_v191_warsaw/fire_service_scope_extracted.txt": "2b1a8d8ae9a588343d4fb3ceb614160907746ad71d6dc7f94e364040632288f1",
+    "data/task4_v191_warsaw/m1_original.html": "a75abc750a2bc7a4f113aad26fcc855a7276d97c30b7ed006ff9287e293d30c2",
+    "data/task4_v191_warsaw/m2_original.html": "7fb2f2d290221db15fb4f6e725fe40558965cb7437427b70b473bc60444e30b7",
+    "data/task4_v191_warsaw/network_plan_original.pdf": "c283ae5f91463bc011830d7d1ed990fd0edf32aeee8992f045641b262f9b6aa1",
+    "data/task4_v191_warsaw/observations.json": "51b010fb30ac812a7b0a967e1ccbbc91300ad8efa7a752a780041b8429e61df1",
+    "data/task4_v191_warsaw/retrievals.json": "13f6eea2bf16c7a6d7636c34a3f1839012e8da24b27cdc1b5b9187d8777036a2",
+    "data/task4_v191_warsaw/station_appearances.csv": "0bf6d29fcffb196bd15b4066b1a12fe352999e54413cf269532431941a50b73f",
+    "data/task4_v191_warsaw/station_complexes.csv": "8a3e9beb8b0228172bbc3b5360c44c838aa28d6d58aee8851ad47a250f133709",
+    "data/task4_v191_warsaw/visual_check.json": "935fccd9b436a23f3630092a8c2e4918489ec5d3d53a1e4f665d35a769456e7b",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/task4_user_city_indicators.py": "7d529ee3a617a5d3399baaa8a0eb97b0bb222da0c47b75f05acffa880291ef0a",
+    "scripts/task4_user_v181_revision.py": "68886cb17834b1bc2517aa84e36a13ed2affaaa1a97b311bf20c4a7479c08d61",
+    "scripts/task4_v191_candidates.py": "dbf948c255619a6ecd12e24ee7557a1f9f07858dbfac2e9acc6884064f445710",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "scripts/audit_task4_v191.py": "54c377ef2717c13d746c37fc97f50a4f3431fc9b67af6a3d2a0e01d114f1a259",
+    "results/task4_v191_candidates/protected_files.json": "5a38d217e97184b983ffaa622beda29e522430b0ed8576728417067c9615d0d9"
+  },
+  "audited_output_sha256": {
+    "results/task4_v191_candidates/profile_ranks.csv": "78134c1f1d078bf4694b017b67e6ba4c52cb1fff5fbc2c156db2f7764db935b9",
+    "results/task4_v191_candidates/profile_bounds.csv": "b610d238128263d73c7e8783b09059bd7f3bad0ddd52d8290b1c9c2058fd5ba3",
+    "results/task4_v191_candidates/summary.json": "f750a840ebcacf98cc83a3265eb114d6709fe365cee0b5a7817e3f9746411f53"
+  },
+  "visual_source_scope": "Warsaw original network PDFp1 counts andp2 existing/planned schematic inspected from local rendered original;Świętokrzyska transfer and exclusion of dashed M2futureextension verified. MapfooterApril2024 not redated from2026uploadpath.",
+  "scope": "Independent parsing verifies real directory subsets, city-address/count scope and candidate arithmetic. Tokyo catalogue dates do not date the inventory. No full-allmode coverage, contemporaneous operation, student access, forecast or real-world champion probability is established. Full extensions and paper consistency remain required before primary activation."
+}

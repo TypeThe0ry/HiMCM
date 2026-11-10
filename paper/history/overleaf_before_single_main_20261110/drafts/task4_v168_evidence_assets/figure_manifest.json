@@ -1,0 +1,83 @@
+{
+  "iteration": "V168",
+  "model": "V154 unchanged",
+  "shape": [
+    16,
+    10
+  ],
+  "counts": {
+    "point": 112,
+    "partial": 34,
+    "unknown": 14
+  },
+  "unknown_by_indicator": {
+    "travel": 3,
+    "upper_secondary_ptr": 8,
+    "public_transport_density": 3
+  },
+  "city_order": [
+    "Vienna",
+    "Zurich",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Stockholm",
+    "Paris",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Oslo",
+    "Prague",
+    "Warsaw",
+    "Singapore",
+    "Tokyo"
+  ],
+  "indicator_order": [
+    "homicide_rate",
+    "pm25",
+    "cost_living_index",
+    "price_income_ratio",
+    "upper_secondary_ptr",
+    "research_he_density",
+    "public_transport_density",
+    "travel",
+    "fixed_broadband_mbps",
+    "public_pool_density"
+  ],
+  "plot_labels": [
+    "Homicide",
+    "PM2.5",
+    "Living cost",
+    "Housing",
+    "Pupil/teacher",
+    "Research/HE",
+    "Transit",
+    "Travel burden",
+    "Broadband",
+    "Pools"
+  ],
+  "source": "Current V154 revised_bounds(); original CSV and22 supplements retained",
+  "source_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "utility_bounds_sha256": "b9d28188cfa061dda03ada3b8f07053a56411833ad446171ea03f3db0987bb85",
+  "matrix_sha256": "e02f813bdf57a96dca8ecf5579240634c0c657d798f5c411a28b3b4b3969da85",
+  "figure_width_inches": 6.5,
+  "figure_height_inches": 6.2,
+  "minimum_source_font_pt": 10,
+  "intended_insertion_width_inches": 6.5,
+  "minimum_insertion_width_for9pt_inches": 5.85,
+  "png_dpi": 300,
+  "pdf_export": "Explicit vector rectangles and embedded Type3 outline fonts; RGB and grayscale review required",
+  "point_interpretation": "Retained point assumptions, not independent validation or zero measurement error",
+  "ranges_interpretation": "Identification bounds; not confidence intervals, posterior probabilities or ranking",
+  "no_new_data_admission": true,
+  "current_review": "Owned V168 review; primary V154 unchanged",
+  "integrated_into_paper": false,
+  "output_sha256": {
+    "pdf": "6df13cedeb39c0faaa1b017fdb021f564b5b27cdb4ceedd773e22539302c7313",
+    "svg": "6122a6f9442849a68a21110fbafb58a3efbad61739a2485a84c610ad48965836",
+    "png": "78fb4a0d346151497cd3fe4cd621f8f106b0fa4a22164e484d56a128e94e51ee"
+  },
+  "derived_from": "Frozen V167 figure generator",
+  "label_revision": "Travel burden includes retained school-travel and general-commute proxy scopes"
+}

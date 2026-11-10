@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "audit_scope": "Conditional native operator station/hub inventory qualified; controlled primary admission and complete analysis/paper migration pending",
+  "candidate_entities": 59,
+  "source_station_ids": 60,
+  "independent_polygon_checks": 60,
+  "primary_admissions": 0,
+  "inventory_not_live_service": true,
+  "raw_original_outside_Git": true,
+  "raw_original_sha256": "00cccccd18982c9c1ebd9f10366e918b158c3fd3f7d7d65b5c9f415addeb3cfe",
+  "lossless_original_archive_in_Git": true,
+  "source_hashes": {
+    "london_region_bfc_original.geojson": "d6f2cf37c6a3ca465f5eca4f6ea010f3a05d7739037df9a772f8e4c3e3273033",
+    "ons_bfc_layer_original.json": "00439c9c4c24b843239fff74b52a48ecb102a578e00d18c6594cda25219ee102",
+    "stop_types_response_original.json": "838e2a4c3b60166c1076e3a1935cfb2c0b58e68fb7f150c6ec6bbaddeee519a1"
+  },
+  "protected_scientific_files": 121,
+  "previews": [
+    {
+      "weight_reference": "fixed",
+      "London_score_lower_before": 45.17242019570494,
+      "London_score_lower_candidate": 45.216197921719434,
+      "mean_width_before": 16.092069666941647,
+      "mean_width_candidate": 16.08933355906574,
+      "relative_width_reduction_percent": 0.01700283389604579,
+      "conservative_choice": "Zurich",
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "London_decision_rank": 14,
+      "interpretation": "Candidate assumption only,not admitted primary evidence"
+    },
+    {
+      "weight_reference": "equal",
+      "London_score_lower_before": 43.978789170241285,
+      "London_score_lower_candidate": 44.06062562506705,
+      "mean_width_before": 18.91937194911215,
+      "mean_width_candidate": 18.91425717068554,
+      "relative_width_reduction_percent": 0.027034610030224334,
+      "conservative_choice": "Zurich",
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "London_decision_rank": 14,
+      "interpretation": "Candidate assumption only,not admitted primary evidence"
+    }
+  ],
+  "candidate_files_sha256": {
+    "extract.py": "b551f10f2930d9c71ca1765e4bd58e62e961c65a3fa73fa74b2df59c34f0c6c8",
+    "observations.json": "b44ad80db65744bcb1a130661e939cd5b3b52f9322731dceebe3b040b8cc3d8f",
+    "station_entities.json": "bdd90b43219f6c723447fe0e2e0e97c7ac2a8a2bc498d8a5a36388d33107dbe3",
+    "extraction.json": "6627789da53f3802a5cea3d46f547c5b7a6bd57cc5051a4fc991d9b83d784f37"
+  },
+  "own_script_sha256": "aca4bad378b32515c6ca6660484c399b7c0c812003a872062ab3eea1d8289b24"
+}

@@ -1,0 +1,82 @@
+{
+  "iteration": "V198",
+  "model": "V197",
+  "shape": [
+    16,
+    10
+  ],
+  "counts": {
+    "point": 112,
+    "partial": 37,
+    "unknown": 11
+  },
+  "unknown_by_indicator": {
+    "travel": 3,
+    "upper_secondary_ptr": 8
+  },
+  "city_order": [
+    "Vienna",
+    "Zurich",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Stockholm",
+    "Paris",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Oslo",
+    "Prague",
+    "Warsaw",
+    "Singapore",
+    "Tokyo"
+  ],
+  "indicator_order": [
+    "homicide_rate",
+    "pm25",
+    "cost_living_index",
+    "price_income_ratio",
+    "upper_secondary_ptr",
+    "research_he_density",
+    "public_transport_density",
+    "travel",
+    "fixed_broadband_mbps",
+    "public_pool_density"
+  ],
+  "plot_labels": [
+    "Homicide",
+    "PM2.5",
+    "Living cost",
+    "Housing",
+    "Pupil/teacher",
+    "Research/HE",
+    "Transit",
+    "Travel burden",
+    "Broadband",
+    "Pools"
+  ],
+  "source": "V197 audited utility_bounds.csv after_conditional; original CSV and 25 supplemented city-indicator keys retained",
+  "source_csv_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "utility_bounds_sha256": "1c379164292a9f1a2e0a26449c43b3b50a4a7dfd051dd11e91635f9edd2a4be6",
+  "matrix_sha256": "50b355d1ef69a88e4b8ae868606d6c1f90f32b0adbc96cd5dd749784f5c71d27",
+  "renderer_sha256": "d139406909d5b01d1288734803aa70550c811ed2b8eb07e6abd7f83301c570cd",
+  "admissions_sha256": "4852b814cf8c6584fdfa615d4a8fc5c915a3f175e1a8731a025117eba46e66a1",
+  "figure_width_inches": 6.5,
+  "figure_height_inches": 6.2,
+  "minimum_source_font_pt": 10,
+  "intended_insertion_width_inches": 6.5,
+  "minimum_insertion_width_for9pt_inches": 5.85,
+  "png_dpi": 300,
+  "pdf_export": "Explicit vector rectangles and embedded Type3 outline fonts; RGB and grayscale review required",
+  "point_interpretation": "Retained point assumptions, not independent validation or zero measurement error",
+  "ranges_interpretation": "Identification bounds; not confidence intervals, posterior probabilities or ranking",
+  "renderer_changes_source_data": false,
+  "intended_review": "V198",
+  "source_state_at_creation": "V197 staged",
+  "output_sha256": {
+    "pdf": "30e4f160211677a35cc66bcd0928a9c28cf71964a7deddf607b8f635fcdb5584",
+    "svg": "aa66e8a7cba426b1cdf08803aab466ffc7b7de7bc683947767df77f6c831c4e5",
+    "png": "89fa89dbdae3155f31465d2a35759ee558eb64cf8516e0e27c1b6240fae2b642"
+  }
+}

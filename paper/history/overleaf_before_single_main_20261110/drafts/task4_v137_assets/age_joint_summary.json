@@ -1,0 +1,51 @@
+{
+  "iteration": "V148",
+  "historical_city": "Istanbul",
+  "observation_year": 2012,
+  "age_groups": [
+    "14\u201315",
+    "16\u201318"
+  ],
+  "contrast": "person-weighted mean q for 14-15 minus mean q for 16-18; q=exp(-t/30)",
+  "uncertainty_set": "Retained V116 aggregate bounds: unknown utilities [0,1], optional membership, and one shared unknown-age pool; not all raw-record constraints or a sampling model.",
+  "shared_unknown_age_weight": 612,
+  "shared_unknown_age_persons": 2,
+  "constants": {
+    "A": 218527,
+    "B": 462364,
+    "NA": 78805.26459099671,
+    "NB": 135869.94002884784,
+    "UA": 42667,
+    "UB": 138274,
+    "CA": 97054.73540900327,
+    "CB": 188220.05997115216
+  },
+  "joint_difference_closure": [
+    -0.23330486084422097,
+    0.26324954284820545
+  ],
+  "naive_marginal_subtraction": [
+    -0.2338429755229856,
+    0.26363799033432145
+  ],
+  "width_reduction": 0.0009265621648806288,
+  "allocation_at_lower": 612,
+  "allocation_at_upper": 612,
+  "stationary_points_unconstrained": {
+    "lower": 49206.657637757104,
+    "upper": 93632.72479148276
+  },
+  "lower_derivative_at_T": -7.605913972992913e-07,
+  "upper_derivative_at_T": 1.3854932459193324e-06,
+  "endpoint_scope": "Sharp infimum/supremum in the retained aggregate set. Utility zero is a closure limit as duration tends to infinity; it is not a finite observed trip. Both feasible ordering witnesses use finite durations and strictly interior utilities.",
+  "both_orderings_feasible": true,
+  "primary_data_admissions": 0,
+  "primary_model_changed": false,
+  "exact_age14_vs18_identified": false,
+  "age_preferences_observed": false,
+  "source_sha256": {
+    "data/task4_v116_ibb/aggregate_results.json": "b85a746387cdcc7265545cee1ab1326d762b538d3ec362091e2b1195a0883f48"
+  },
+  "witnesses_sha256": "519850a82c283e22ecda6a17cd2f71ea53707b43dfb980aeeb499ba0cd928156",
+  "generator_sha256": "213915c0fe6524303bef2b9ae2bf9b7e542398d2dabd56c3ee01187f044a549c"
+}

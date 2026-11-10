@@ -1,0 +1,36 @@
+\subsection{Sensitivity to the accepted input information}\label{sec:sourcepolicy}
+Point withdrawals replace selected point utilities by $[0,1]$, keeping weights,
+supplements and the 48 non-point bounds fixed. Test pre-2020 dates, post-2025
+dates, non-\texttt{ok} flags and their union, counting overlaps once.
+
+\input{task4_v182_assets/vintage_table.tex}
+
+Withdrawing 28 flagged points selects Berlin (baseline weights) or Paris
+(equal weights); removing 13 pre-2020 points selects Singapore or Zurich,
+respectively. Removing 64 post-2025 points retains Zurich under both,
+widening the baseline mean range from 16.05 to 48.41; the 95-point union
+selects Singapore under both. All sixteen remain possible champions.
+Dates and flags are screening criteria, not error probabilities.
+
+Withholding Zurich's homicide point selects Singapore (baseline) or Oslo
+(equal); withholding Amsterdam's retains Zurich under both. Varying only
+Zurich's rate gives regret ties near 0.23002 and 0.90473 per 100,000,
+respectively: Zurich uniquely minimizes regret below each cutoff and is
+excluded above. These are hypothetical rates, with other inputs fixed.
+
+Withdrawing Zurich's commute interval, both identified proxies or all twelve
+supplied means selects Singapore (baseline), retaining Zurich under equal
+weights. Dublin alone changes neither choice; these withdrawals retain sixteen
+possible champions. Varying only Zurich's mean under Jensen bounds gives a baseline tie
+near 46.59 minutes: Zurich below, Singapore above; equal weights retain
+Zurich for every nonnegative mean, with other inputs fixed.
+
+Jointly allow each of the twelve means $t_i$ to vary independently in
+$[(1-\delta)t_i,(1+\delta)t_i]$, $0\leq\delta\leq1$; retain Jensen upper bounds,
+Singapore's stage bins, unknown travel and other entries. Fixed upper scores
+make each regret increase with its own mean: Zurich's largest mean and the
+other eleven smallest means maximize its regret minus the best rival's.
+The critical radii are approximately 7.14733\% (baseline) and 51.42357\% (equal).
+Below each boundary Zurich uniquely minimizes regret throughout the box;
+at it Oslo can tie, and above it a counterexample exists.
+These conditional ranges are not measured errors or future probabilities.

@@ -1,0 +1,51 @@
+{
+  "research_iteration": "V147",
+  "primary_data_admissions": 0,
+  "observations": [],
+  "candidates": [
+    {
+      "city": "Zurich",
+      "indicator": "upper_secondary_ptr",
+      "source_file": "zurich_2025_26_original.pdf",
+      "pdf_page": 15,
+      "printed_pages": [
+        28,
+        29
+      ],
+      "reference_year": 2025,
+      "publication_month": "2026-07",
+      "geography": "Kanton Zurich; no municipality allocation in the inspected tables",
+      "teaching_appointments_mittelschule": 2812,
+      "teaching_fte_mittelschule": 1771.6,
+      "education_department_mittelschulen_employment_fte": 2227,
+      "appointments_exclude_heads": true,
+      "department_employment_period": "accounting-year employment volume; appointment count at 31 December",
+      "status": "not_admitted",
+      "reason": "Canton public-school teaching appointments and teaching FTE do not identify all-provider city upper-secondary FTE. Separate department employment volume is another population/period, not a replacement teaching denominator.",
+      "next_required": "A city/school allocation for upper-stage teaching FTE and matched pupils, including provider coverage."
+    },
+    {
+      "city": "Helsinki",
+      "indicator": "upper_secondary_ptr",
+      "source_file": "helsinki_2025_original.pdf",
+      "pdf_page": 158,
+      "printed_page": 157,
+      "table": "7.14",
+      "latest_row_year": 2024,
+      "general_upper_secondary_students": 18661,
+      "vocational_students": 47520,
+      "adjacent_table": "7.15 adult education centres 2000-2021",
+      "adjacent_teacher_variable": "teaching hours, not teachers or FTE",
+      "status": "not_admitted",
+      "reason": "This page supplies students at different levels but no matched upper-secondary teaching FTE. The adjacent adult-education teaching hours cannot be used as that denominator; no hours-to-FTE conversion or ratio is constructed.",
+      "next_required": "Matched city upper-secondary teaching FTE, year, provider universe and general/vocational stage definition."
+    }
+  ],
+  "scope": "Claims concern these specific publication pages; they do not prove suitable data are unavailable elsewhere. Original user entries and V136 admission policy remain unchanged.",
+  "source_sha256": {
+    "zurich_2025_26_original.pdf": "ae0526b95a3c63ae3a6b2bec5933aee6a38a78e504686f65a6641923f9e96018",
+    "helsinki_2025_original.pdf": "186dab99820d0b5bf75c622881e984c85ef113e93c6d93c34ff101afde72020c",
+    "zurich_publication_original.html": "ed7583d57cef5d075da3a531d8a1e3062c97a2a28be0ea2d470db3cba638d84b"
+  },
+  "extractor_sha256": "6d0567a87d2ac0d1ac1d3dafafb29de3322eacc267802c0e5259b65d1c73f068"
+}

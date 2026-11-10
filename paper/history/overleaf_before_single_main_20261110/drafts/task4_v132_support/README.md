@@ -1,0 +1,7 @@
+# V132 acquisition support on active V130
+
+The current missing-cell diagnosis now covers 16 fully unknown cells and 144 protected cells. Berlin transport is a protected lower-bound inventory and has been removed from the former 17-cell acquisition list. Across the remaining 32 cell/reference rows, the three main perfect-information quantities match the frozen V129 diagnosis within 1e-10. Dublin and Zurich PTR remain the strongest exact-information routes; source availability is evaluated separately. The diagnosis passes 3595 independent conditioning checks, 882 lower-only scenarios, 23 recommendation boundaries and 410 mixed-coordinate probes.
+
+Warsaw's official 2025 mobility-wave summary was located, but it covers whole-working-day travel of residents above age 6 in the city/metropolitan area. No matching city upper-secondary one-way-duration table was recovered. The original transport-index HTTP request returned 202 with an empty body; the contact-page request timed out. Readable web/provider representations are archived separately. This is zero admission and does not establish that the unrecovered full report or disaggregated data do not exist.
+
+The complete V131 review and active V130 ranking remain unchanged: Zurich is the conservative baseline choice and all sixteen cities remain possible champions. This support package adds no PDF, forecast, measured student preference or invented travel time. Next acquisition requires matched pupil scope, observed one-way durations, a full denominator and explicit unknown mass.

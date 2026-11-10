@@ -1,0 +1,229 @@
+{
+  "version": "V155 acquisition diagnosis",
+  "primary": "V154 unchanged",
+  "fully_missing_cells": 14,
+  "protected_nonfullymissing_cells": 146,
+  "baseline": [
+    {
+      "weight_reference": "fixed",
+      "minimax_regret": 17.36804635503932,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "mean_score_interval_width": 16.061435140939356
+    },
+    {
+      "weight_reference": "equal",
+      "minimax_regret": 16.63077901625193,
+      "choices": [
+        "Zurich"
+      ],
+      "possible_count": 16,
+      "mean_score_interval_width": 18.8609670217237
+    }
+  ],
+  "next_teacher_targets": [
+    {
+      "weight_reference": "fixed",
+      "city": "Dublin",
+      "indicator": "upper_secondary_ptr",
+      "guaranteed_exact_resolution_regret_reduction": "1.0667981653976426",
+      "best_possible_exact_resolution_regret_reduction": "5.785906211011735",
+      "worst_post_regret": "16.301248189641676",
+      "best_post_regret": "11.582140144027584",
+      "optimistic_champion_exclusions": "1",
+      "low_endpoint_choices": "Zurich",
+      "high_endpoint_choices": "Dublin",
+      "current_focal_upper": "70.90352791308969",
+      "hypothetical_resolution": "Exact utility in[0,1], not raw-source acquisition probability",
+      "actual_partial_source_rule": "Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply"
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Zurich",
+      "indicator": "upper_secondary_ptr",
+      "guaranteed_exact_resolution_regret_reduction": "0.7939742441097692",
+      "best_possible_exact_resolution_regret_reduction": "9.31622090780592",
+      "worst_post_regret": "16.57407211092955",
+      "best_post_regret": "8.051825447233398",
+      "optimistic_champion_exclusions": "5",
+      "low_endpoint_choices": "Singapore",
+      "high_endpoint_choices": "Zurich",
+      "current_focal_upper": "72.18378687093758",
+      "hypothetical_resolution": "Exact utility in[0,1], not raw-source acquisition probability",
+      "actual_partial_source_rule": "Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply"
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Helsinki",
+      "indicator": "upper_secondary_ptr",
+      "guaranteed_exact_resolution_regret_reduction": "0.0",
+      "best_possible_exact_resolution_regret_reduction": "3.9906307529743046",
+      "worst_post_regret": "17.36804635503932",
+      "best_post_regret": "13.377415602065014",
+      "optimistic_champion_exclusions": "0",
+      "low_endpoint_choices": "Zurich",
+      "high_endpoint_choices": "Helsinki",
+      "current_focal_upper": "69.83672974769205",
+      "hypothetical_resolution": "Exact utility in[0,1], not raw-source acquisition probability",
+      "actual_partial_source_rule": "Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply"
+    },
+    {
+      "weight_reference": "fixed",
+      "city": "Madrid",
+      "indicator": "upper_secondary_ptr",
+      "guaranteed_exact_resolution_regret_reduction": "0.0",
+      "best_possible_exact_resolution_regret_reduction": "3.52298870526581",
+      "worst_post_regret": "17.36804635503932",
+      "best_post_regret": "13.845057649773509",
+      "optimistic_champion_exclusions": "0",
+      "low_endpoint_choices": "Zurich",
+      "high_endpoint_choices": "Madrid",
+      "current_focal_upper": "68.22419406430434",
+      "hypothetical_resolution": "Exact utility in[0,1], not raw-source acquisition probability",
+      "actual_partial_source_rule": "Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply"
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Dublin",
+      "indicator": "upper_secondary_ptr",
+      "guaranteed_exact_resolution_regret_reduction": "0.044370725924054",
+      "best_possible_exact_resolution_regret_reduction": "0.1693296487883913",
+      "worst_post_regret": "16.58640829032786",
+      "best_post_regret": "16.46144936746351",
+      "optimistic_champion_exclusions": "0",
+      "low_endpoint_choices": "Zurich",
+      "high_endpoint_choices": "Dublin",
+      "current_focal_upper": "71.07174500198964",
+      "hypothetical_resolution": "Exact utility in[0,1], not raw-source acquisition probability",
+      "actual_partial_source_rule": "Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply"
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Zurich",
+      "indicator": "upper_secondary_ptr",
+      "guaranteed_exact_resolution_regret_reduction": "0.0",
+      "best_possible_exact_resolution_regret_reduction": "8.524018041489079",
+      "worst_post_regret": "16.630779016251914",
+      "best_post_regret": "8.10676097476285",
+      "optimistic_champion_exclusions": "1",
+      "low_endpoint_choices": "Zurich",
+      "high_endpoint_choices": "Zurich",
+      "current_focal_upper": "73.91065843982271",
+      "hypothetical_resolution": "Exact utility in[0,1], not raw-source acquisition probability",
+      "actual_partial_source_rule": "Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply"
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Vienna",
+      "indicator": "travel",
+      "guaranteed_exact_resolution_regret_reduction": "0.0",
+      "best_possible_exact_resolution_regret_reduction": "0.0",
+      "worst_post_regret": "16.630779016251914",
+      "best_post_regret": "16.630779016251914",
+      "optimistic_champion_exclusions": "1",
+      "low_endpoint_choices": "Zurich",
+      "high_endpoint_choices": "Zurich",
+      "current_focal_upper": "63.10464239598277",
+      "hypothetical_resolution": "Exact utility in[0,1], not raw-source acquisition probability",
+      "actual_partial_source_rule": "Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply"
+    },
+    {
+      "weight_reference": "equal",
+      "city": "Helsinki",
+      "indicator": "upper_secondary_ptr",
+      "guaranteed_exact_resolution_regret_reduction": "0.0",
+      "best_possible_exact_resolution_regret_reduction": "0.0",
+      "worst_post_regret": "16.630779016251914",
+      "best_post_regret": "16.630779016251914",
+      "optimistic_champion_exclusions": "0",
+      "low_endpoint_choices": "Zurich",
+      "high_endpoint_choices": "Zurich",
+      "current_focal_upper": "70.90241535320125",
+      "hypothetical_resolution": "Exact utility in[0,1], not raw-source acquisition probability",
+      "actual_partial_source_rule": "Inventory count or matched travel mean generally raises only the lower utility; exact-resolution guarantees do not apply"
+    }
+  ],
+  "V138_comparison": {
+    "previous_missing": 15,
+    "current_missing": 14,
+    "removed_fullymissing_keys": [
+      [
+        "Milan",
+        "public_transport_density"
+      ]
+    ],
+    "remaining_paired_rows": 28,
+    "maximum_absolute_metric_changes": {
+      "guaranteed_exact_resolution_regret_reduction": 0.0,
+      "best_possible_exact_resolution_regret_reduction": 0.28876927163099,
+      "optimistic_champion_exclusions": 0.0
+    },
+    "interpretation": "Milan transport now has a protected historical inventory lower bound; its residual partial uncertainty is assessed separately, not discarded."
+  },
+  "milan_residual_cases": [
+    {
+      "weight_reference": "fixed",
+      "transport_utility_domain": [
+        0.1294273648028504,
+        1
+      ],
+      "exact_transport_VOI": {
+        "current_minimax_regret": 17.36804635503932,
+        "worst_post_regret": 17.36804635503932,
+        "best_post_regret": 17.36804635503932,
+        "guaranteed_gain": 0.0,
+        "best_possible_gain": 0.0,
+        "worst_x": 0.1294273648028504,
+        "iterations": 0,
+        "crossing_bracket_width": 0.8705726351971497
+      },
+      "joint_endpoint_best_risk_reduction": 3.7990902427718467,
+      "joint_optimistic_champion_exclusions": 1
+    },
+    {
+      "weight_reference": "equal",
+      "transport_utility_domain": [
+        0.1294273648028504,
+        1
+      ],
+      "exact_transport_VOI": {
+        "current_minimax_regret": 16.63077901625193,
+        "worst_post_regret": 16.63077901625193,
+        "best_post_regret": 16.63077901625193,
+        "guaranteed_gain": 0.0,
+        "best_possible_gain": 0.0,
+        "worst_x": 0.1294273648028504,
+        "iterations": 0,
+        "crossing_bracket_width": 0.8705726351971497
+      },
+      "joint_endpoint_best_risk_reduction": 2.7375218524523888,
+      "joint_optimistic_champion_exclusions": 1
+    }
+  ],
+  "analytic_limits": [
+    {
+      "weight_reference": "fixed",
+      "lower_only_joint_exclusion_ceiling": 0,
+      "exact_transport_exclusion_ceiling": 0,
+      "exact_transport_regret_gain_ceiling": 0,
+      "max_joint_Milan_lower": 58.61483075867011,
+      "minimum_other_upper": 60.43498305699956
+    },
+    {
+      "weight_reference": "equal",
+      "lower_only_joint_exclusion_ceiling": 0,
+      "exact_transport_exclusion_ceiling": 0,
+      "exact_transport_regret_gain_ceiling": 0,
+      "max_joint_Milan_lower": 60.01740127602317,
+      "minimum_other_upper": 61.480813589973074
+    }
+  ],
+  "new_data_admissions": 0,
+  "primary_score_width_reduction": 0,
+  "exact_information_condition": "Guarantees condition on complete exact utility identification of one cell. A partial inventory, teacher interval or Jensen mean does not automatically satisfy that condition.",
+  "interpretation": "Conditional deterministic information limits, not observed improvement, a source availability probability or a prediction",
+  "scope": "14 fully unknown cells plus a separate Milan partial-transport and PTR analysis; other33 partial cells are held fixed, not globally reoptimized",
+  "source_review_sha256": "c693dce3e045e09235de492b9d10b03959a2dfacc6f5300dbc3ff08e78977ac0"
+}

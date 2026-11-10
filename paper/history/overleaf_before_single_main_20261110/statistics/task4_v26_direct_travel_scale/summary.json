@@ -1,0 +1,278 @@
+{
+  "main_admitted": false,
+  "new_observations": 0,
+  "alpha_fixed_for_ranks": 0.1,
+  "alpha_range_for_possible_champions": [
+    0.05,
+    0.2
+  ],
+  "method": "Direct re-evaluation of retained person durations or original time bins; same scope and sampling procedures.",
+  "source_inputs": [
+    {
+      "path": "data/task4_v26_nyc_tau/summary.json",
+      "sha256": "fb7921f80e526105e3b118cdd3c29c42125262e366f6cdf1139c3e0eeb35e735"
+    },
+    {
+      "path": "data/task4_v26_saopaulo_tau/summary.json",
+      "sha256": "0d0b816aabe6e697da65ed9b9774b070673a5e95ae5450ca604dade1e5f62741"
+    },
+    {
+      "path": "data/task4_v23_mexico_membership/summary.json",
+      "sha256": "ac62d46c033a09c4bab1e5218043ce90fc3139e51ac7dd7aefe45d80026c11d6"
+    },
+    {
+      "path": "data/task4_school/sg_travel_api.json",
+      "sha256": "bc5366fc964e8a9bce27993b767711c0abb81a5ce1a9498156b6b373f0509dee"
+    },
+    {
+      "path": "data/task4_v23_melbourne_roster/summary.json",
+      "sha256": "49a9d0dec8fa46bb3beca98874d8f4379ff125b6754d9188afc3b57530f6d17a"
+    },
+    {
+      "path": "results/task4_v23_roster_coverage/utility_bounds.csv",
+      "sha256": "cbba1de4ea90ae888b5186c88253e3e2458751ad626b67e75d16e3beb5d3eee4"
+    }
+  ],
+  "scenarios": [
+    {
+      "tau_minutes": 15,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "minimax_regret": 29.470878576011515,
+      "fixed_possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_tau30": 9,
+      "changed_ranks_vs_v25": 5,
+      "kendall_tau_vs_tau30": 0.94,
+      "mean_score_width": 37.79871349001343,
+      "mean_width_change_vs_v25": -0.39408592525663266,
+      "selected_ranks": {
+        "Singapore": 1,
+        "Melbourne": 4,
+        "Sao Paulo": 11,
+        "New York": 21,
+        "Mexico City": 22,
+        "Phoenix": 24
+      }
+    },
+    {
+      "tau_minutes": 20,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "minimax_regret": 29.032836741222155,
+      "fixed_possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_tau30": 7,
+      "changed_ranks_vs_v25": 2,
+      "kendall_tau_vs_tau30": 0.9533333333333331,
+      "mean_score_width": 37.86071121379615,
+      "mean_width_change_vs_v25": -0.24580347006022407,
+      "selected_ranks": {
+        "Singapore": 1,
+        "Melbourne": 4,
+        "Sao Paulo": 9,
+        "New York": 21,
+        "Mexico City": 22,
+        "Phoenix": 24
+      }
+    },
+    {
+      "tau_minutes": 30,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "minimax_regret": 28.173587987562662,
+      "fixed_possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_tau30": 0,
+      "changed_ranks_vs_v25": 0,
+      "kendall_tau_vs_tau30": 0.9999999999999998,
+      "mean_score_width": 37.91633929281759,
+      "mean_width_change_vs_v25": 0.0,
+      "selected_ranks": {
+        "Singapore": 1,
+        "Melbourne": 4,
+        "Sao Paulo": 6,
+        "New York": 21,
+        "Mexico City": 19,
+        "Phoenix": 24
+      }
+    },
+    {
+      "tau_minutes": 45,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "minimax_regret": 27.135598134108704,
+      "fixed_possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_tau30": 9,
+      "changed_ranks_vs_v25": 8,
+      "kendall_tau_vs_tau30": 0.9666666666666665,
+      "mean_score_width": 37.919856428783135,
+      "mean_width_change_vs_v25": -0.2024470178066906,
+      "selected_ranks": {
+        "Singapore": 1,
+        "Melbourne": 2,
+        "Sao Paulo": 5,
+        "New York": 20,
+        "Mexico City": 18,
+        "Phoenix": 24
+      }
+    },
+    {
+      "tau_minutes": 60,
+      "minimax_choices": [
+        "Singapore"
+      ],
+      "minimax_regret": 26.3871043592588,
+      "fixed_possible_champions": 25,
+      "continuous_alpha_possible_champions": [
+        "Toronto",
+        "Phoenix",
+        "New York",
+        "Mexico City",
+        "Bogota",
+        "Sao Paulo",
+        "Santiago",
+        "Copenhagen",
+        "London",
+        "Barcelona",
+        "Warsaw",
+        "Athens",
+        "Nairobi",
+        "Lagos",
+        "Cape Town",
+        "Dubai",
+        "Istanbul",
+        "Mumbai",
+        "Delhi",
+        "Dhaka",
+        "Tokyo",
+        "Shanghai",
+        "Singapore",
+        "Jakarta",
+        "Melbourne"
+      ],
+      "changed_ranks_vs_tau30": 11,
+      "changed_ranks_vs_v25": 11,
+      "kendall_tau_vs_tau30": 0.9333333333333331,
+      "mean_score_width": 37.89389052432173,
+      "mean_width_change_vs_v25": -0.3287357699582998,
+      "selected_ranks": {
+        "Singapore": 1,
+        "Melbourne": 2,
+        "Sao Paulo": 5,
+        "New York": 19,
+        "Mexico City": 15,
+        "Phoenix": 24
+      }
+    }
+  ]
+}

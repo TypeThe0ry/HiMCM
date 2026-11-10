@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "iteration": "V147",
+  "source_pages_checked": [
+    {
+      "source": "zurich_2025_26_original.pdf",
+      "pdf_page": 15,
+      "printed_pages": [
+        28,
+        29
+      ]
+    },
+    {
+      "source": "helsinki_2025_original.pdf",
+      "pdf_page": 158,
+      "printed_page": 157
+    }
+  ],
+  "independent_extraction": "PDF word coordinates grouped by row and half-page; independently of layout-text assertions",
+  "extracted_rows": {
+    "teaching": "Mittelschule 63.0 % 1 771.6",
+    "appointments": "Mittelschule 3 2 812 1271 1 541 54.8",
+    "department_employment": "Mittelschulen 3 617 2 179 2 227 48 2.2",
+    "helsinki_2024_students": "2024 61 008 18 661 47 520 25 684 37 075"
+  },
+  "primary_data_admissions": 0,
+  "interval_width_reduction": 0,
+  "current_counts": {
+    "point": 112,
+    "partial": 33,
+    "unknown": 15
+  },
+  "protected_scientific_files": 139,
+  "current_documentation_revision": "V146",
+  "primary_evidence": "V136 user16",
+  "extensions": "V137",
+  "no_new_rank_simulation": "Frozen primary rankings verified by hash; this source review admits no bounds and does not rerun Monte Carlo.",
+  "verifier_sha256": "68909e4a9468db02dbbe5f2150822c7100a716979d9010bfa0a2e4f2af9cee24",
+  "visual_review": {
+    "original_source_pages_reviewed": true,
+    "files": [
+      "zurich_page15_review.png",
+      "helsinki_page158_review.png"
+    ]
+  },
+  "next_action": "Seek a new matched teaching-FTE allocation rather than reuse these mismatched aggregates; do not infer global nonexistence."
+}

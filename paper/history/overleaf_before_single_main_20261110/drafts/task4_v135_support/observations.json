@@ -1,0 +1,24 @@
+[
+  {
+    "city": "London",
+    "indicator": "public_transport_density",
+    "raw_count": 59,
+    "population": 9122909,
+    "population_year": 2025,
+    "sourceyear": 2026,
+    "access_date": "2026-11-09",
+    "utility_before": [
+      0,
+      1
+    ],
+    "utility_after": [
+      0.012769306569299622,
+      1
+    ],
+    "utility_anchor": 50,
+    "lower_bound_only": true,
+    "admission_status": "candidate_only_independent_review_and_controlled_admission_pending",
+    "scope": "Exact Zone1 NaptanMetroStation objects only, point-in-ONS London region E12000007; hub dedup plus two conservative omissions. Other modes/zones remain uncounted.",
+    "limitations": "Static as-accessed inventory, not real-time opening, service frequency, student eligibility or individual accessibility. ONS2025 full-resolution coastline-clipped boundary used at representative station coordinates; boundary distances are diagnostic, not accuracy guarantees. Supplied2025 population unchanged/not externally rechecked. No complete city transport census."
+  }
+]

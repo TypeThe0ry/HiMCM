@@ -1,0 +1,111 @@
+\subsection{Collection problems and their resolution}
+\textbf{Count city facilities, not platforms or entire networks.}
+Selecting Oslo's municipal GIS records within the city boundary yields 89
+metro stations after consolidating 186
+platforms; Zurich's 2025 VBZ report distinguishes 446 city stops from 235
+outside the city \cite{oslo,vbz}. Helsinki's November 2026 operator snapshot
+similarly separates 19 Helsinki stations from 11 in Espoo \cite{helsinki}.
+For a verified subset count $c$, fixed population $P$ and anchor $a$, we use
+$d=10^5c/P$ and utility $[d/(a+d),1]$, leaving uncounted providers unknown.
+Madrid's May 2026 register has 293 records, of which 242 carry city code
+28079. Omitting two unnamed records without lines and consolidating native
+station identifiers gives 191 complexes \cite{madridmetro,inecodes}. Vienna illustrates why record totals
+alone are insufficient: 1,695 named areas include unverified depot objects,
+so only 99 metro areas individually matched to existing-station geodata and
+the city polygon are retained \cite{viennaogd,viennagis}.
+
+Native identifiers, verified aliases and operator interchange maps prevent
+transfer stations from being counted once per line. Prague retains 57 current
+metro complexes; Flora's closure explains its omission from the 58 distinct
+complexes in the 2025 report, whereas Florenc's partial accessibility restriction
+does not close the whole complex \cite{pidmetro,dpp2025,floraclose}.
+Berlin's nine BVG U-Bahn profiles consolidate 131 zone-A appearances into 100
+complexes. Zone A extends through the S-Bahn ring; the retained U-Bahn subset
+leaves outer stations and other modes uncounted
+\cite{bvg}. Milan's municipal layer, distinguished from its entrance layer,
+selects records with both the Milano name and code 015146, yielding 104
+stations/hubs after five map-supported interchange consolidations;
+proximity alone does not merge stations \cite{milanmetro}.
+London's inventory mixes platforms and entrances with stations. From 272
+station-level records, 62 have exact fare-zone value 1; it retains 59
+stations/hubs after two conservative omissions and
+Paddington hub consolidation; representative coordinates lie within the ONS
+December 2025 London-region boundary \cite{tflinventory,onslondon}.
+Singapore's LTA GeoJSON contributes 5,205 distinct nonempty bus-stop codes,
+without distance clustering \cite{sgbus_lta}; Stockholm's 2025 city--police
+report identifies thirteen metro stations in two districts \cite{stockholmmetro2025}.
+
+\textbf{Keep inventory dates, status and venue units explicit.}
+Milan's layer is dated 16 October 2024; Paris's 244 intra-muros metro stations
+come from a March 2022 atlas using RATP 2021 and Apur 2022 sources
+\cite{milanmetro,apur}. These historical lower-bound proxies are not relabelled
+as 2025 counts; a separate withdrawal restores the Paris supplement to unknown.
+Vienna, Berlin and London use November 2026 inventories. All retain the supplied
+population denominators, including Paris's 2023, Dublin's 2022 and
+Singapore's 2024 values. Inventory membership
+does not establish continuous operation or adolescent access.
+Stockholm's November 2026 directory retains thirteen municipal swimming venues after excluding a
+renovation closure and counting its replacement once \cite{stockpool}.
+Tokyo retains five Nerima indoor venues at distinct addresses: Heiwadai's
+current closure excludes it, while Miharadai's announced February--May 2027
+closure is not a current closure \cite{nerimapool,nerimaclose}.
+Other named pool subsets contain seven Singapore venues from April 2025,
+seven Zurich indoor venues accessed in November 2026, and seventeen Milan
+indoor venues under the June 2025 tariff \cite{sgpool_2025,zurichpool,milanpool2025}.
+They count physical venues, not basins or lanes, and leave other providers unknown.
+
+\textbf{Match school stages and teaching units before forming ratios.}
+Prague's 2024/25 totals are 80,073 secondary-school pupils and 6,877.1
+teacher full-time equivalents (FTE), including lower-gymnasium years. Subtracting the matching
+8,748 pupils and 737.8 FTE gives 71,325 upper-stage pupils and
+a rounding envelope of $[6139.2,6139.4]$ teacher FTE, including adult and non-daytime study modes
+\cite{prague}. Stockholm's city-school ratio covers upper-secondary years 1--3, all ownership
+types and the 15 October reference date. Its API value 16.42091405 is retained
+as $[16.35,16.45]$: a declared precision convention, not a measurement-error
+confidence interval \cite{kolada}.
+Warsaw's 2024/25 yearbook gives 119,740 pupils across six youth school routes
+by school location and all ownership types. Unknown youth allocation within
+adult-inclusive general-school FTE gives 2,490--8,144 FTE; outward one-FTE
+guards on four published cells widen this to 2,487--8,148 \cite{warsawedu2025}.
+The guards encode a unit-rounding assumption. These allocation and rounding
+bounds describe school resources, not a resident age-14--18 population or a
+statistical confidence interval.
+
+Some published denominators fail these checks. Henri-IV in Paris reports
+794 lyc\'ee pupils and 153.65 institution FTE for 2025, without upper-stage
+allocation or complete city coverage; a 2026 post-baccalaureate directory flag cannot recover
+2025 workloads \cite{deppmatch,deppdirectory}. Dublin's school-roll payroll
+FTE are unpublished \cite{irelandfte}; its November 2025 City Of Dublin ETB
+post-primary vocational subgroup has 411.8 payroll FTE against 376.1 allocated posts, so
+allocations are not a payroll ceiling \cite{irelandpayroll}.
+Finland's national FTE combines register, salary and private-provider estimation;
+without a verified one-sided error envelope it is not a guaranteed Helsinki
+teacher upper bound \cite{finlandfte}. All three city PTRs remain unknown.
+
+\textbf{Preserve incompatible rate units and supplied values.}
+Amsterdam's CBS sources give ten provisional victims in 2022 and 68 across
+2018--2022, neither matching the supplied numerator 340 \cite{cbshomicide2022}.
+Zurich's PKS lists one completed offence in 2024 and two in 2025; offences
+count criminal acts independently of victims, and the submitted rate 0.14
+still lacks a verified denominator \cite{zhpks2025}. Both original entries
+remain, with their contribution tested in Section~\ref{sec:sourcepolicy};
+we do not manufacture replacement rates from incompatible units.
+
+\textbf{Retain unobserved travellers and failed retrievals as uncertainty.}
+Singapore's initial census-PDF endpoint returned 404; the official Parliament
+mirror and API supplied the matching report and table \cite{singapore}.
+Duration-bin utility uses endpoints, no midpoints or artificial open-tail cap.
+Weighted enrolment estimates exceed travel coverage by 1,811 secondary,
+989 post-secondary non-tertiary and 1,635 polytechnic students. These are
+weighted survey estimates, not complete headcounts. Uncovered mass
+retains $[0,1]$ utility, and unknown stage shares use the interval convex hull.
+The resulting $[0.21048,0.61884]$ is a 2020 school-stage proxy, not an identified
+2025 interval for ages 14--18.
+Dublin's stop-download 403 yielded no catalogue-inferred count; a later official
+map from the 2023 plan, issued in 2024, supports nineteen existing
+city-centre tram stops \cite{dublin}.
+Warsaw's recovered 2022 survey reports a rounded 27-minute school trip for a
+city subgroup with sample base 22, but covers residents aged 15 and above
+without an upper-secondary or matched 14--18 denominator \cite{warsaw2022}.
+Its travel utility remains unknown.
+

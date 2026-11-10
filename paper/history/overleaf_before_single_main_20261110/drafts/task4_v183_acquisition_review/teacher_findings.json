@@ -1,0 +1,59 @@
+{
+  "version": "V183 teacher source check",
+  "current_primary": "V181 unchanged",
+  "current_review": "V182 unchanged",
+  "search_queries": 4,
+  "routes": 2,
+  "primary_admissions": 0,
+  "score_width_change": 0,
+  "successful_original_responses": 1,
+  "failed_original_requests": 1,
+  "source": {
+    "provider": "Kantonsschule Hottingen",
+    "file": "hottingen_2024_25_original.pdf",
+    "sha256": "90c405bf4b6e758a53f7885eb0f11ec1cfbfa6b4302416dae09e46a4184b10bb",
+    "year_label": "2024/25",
+    "reference_label": "Stichtag15.09.;full date not printed in table",
+    "physical_pdf_page": 4,
+    "printed_pages": [
+      6,
+      7
+    ],
+    "pupils": {
+      "Gymnasium": 552,
+      "HMS": 215,
+      "IMS": 96,
+      "combined_school_total": 863
+    },
+    "teachers": {
+      "women_persons": 61,
+      "men_persons": 53,
+      "combined_persons": 114
+    },
+    "unit": "teacher persons, not published teaching FTE",
+    "scope": "one institution and its education routes; not complete Zurich city upper-secondary teaching workload",
+    "visual_source_page_reviewed": true,
+    "teaching_FTE_located": false,
+    "FTE_absence_scope": "No teaching FTE or individual workloads located in this9page report; does not prove absence elsewhere"
+  },
+  "admission_decision": "reject_for_city_PTR",
+  "reasons": [
+    "Persons cannot be silently converted into FTE; no matched teaching-workload denominator was supplied.",
+    "School-local multi-route enrolments are not a complete city upper-secondary pupil total.",
+    "The two required parts of a valid city subset/superset envelope are not both established by these figures."
+  ],
+  "dublin_route": {
+    "official_url": "https://www.gov.ie/en/department-of-education/publications/teacher-statistics/",
+    "original_status": 403,
+    "retrieval_failed_skip": true,
+    "scope": "Search returned national teacher employment categories, not a validated Dublin city upper-secondary PTR; browser-extracted search text is not an admitted original data record."
+  },
+  "next_action": "Skip Hottingen114headcount-to-FTE conversion and failed national teacher-statistics page; pursue only new matched city teaching-workload evidence.",
+  "no_weights_intervals_csv_registries_or_manuscript_changed": true,
+  "search_query_texts": [
+    "site.zh.ch Kantonsschule Hottingen Jahresbericht 2024 2025 Vollzeitstellen Lehrpersonen",
+    "site.gov.ie Dublin City post primary pupil teacher ratio teachers statistics 2025",
+    "site.ksh.ch \"2024\" \"2025\" \"Vollzeit\" Lehrer",
+    "site.oireachtas.ie Dublin \"pupil teacher ratio\" \"2025\" county post primary"
+  ]
+}

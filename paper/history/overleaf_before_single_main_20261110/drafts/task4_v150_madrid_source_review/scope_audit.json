@@ -1,0 +1,87 @@
+{
+  "iteration": "V150",
+  "primary_data_admissions": 0,
+  "observations": [],
+  "city": "Madrid",
+  "indicator": "upper_secondary_ptr",
+  "status": "not_admitted",
+  "candidate_series": {
+    "first_year_label": "2005",
+    "last_year_label": "2024 (P)",
+    "year_columns": 20,
+    "school_year_mapping": "Tables use the last year of a two-year school course; 2024 refers to 2023/24",
+    "published_unit": "Número",
+    "latest_city_count": 1008,
+    "latest_region_count": 1922,
+    "table_levels": {
+      "regional": 1,
+      "statistical_zones": 11,
+      "municipalities": 179
+    },
+    "count_cells": 3820,
+    "all_20_hierarchy_totals_agree": true,
+    "latest_flat_all_level_sum": 5766,
+    "fte_established": false
+  },
+  "report_scope": {
+    "publication_title": "Informe 2025",
+    "school_year": "2023-2024",
+    "exclusive_bachillerato_count_region": 1922,
+    "all_regimen_general_FTE_ratio_region": 12.6,
+    "PDF_original_downloaded": false,
+    "PDF_chart_cell_alignment_verified": false,
+    "numerical_admission_from_PDF_tables": false
+  },
+  "scope_reasons": [
+    "Municipal teacher-count unit is Número; actual upper-stage teaching FTE is not established.",
+    "Bachillerato alone does not identify the retained whole upper-secondary teaching-resource universe or vocational allocations.",
+    "The report describes exclusive Bachillerato teaching separately; numerical agreement alone does not prove the municipal series uses the same exclusive-stage workforce definition. Its own note does establish that labels use the final school-course year.",
+    "The reported 12.6 ratio uses regional all-Régimen-General coverage, not Madrid-city upper-secondary coverage.",
+    "Repeated geographic hierarchy levels must not be summed as distinct teachers."
+  ],
+  "representation": "Exact saved Exa tool response containing provider-extracted official HTML/PDF text; not original HTTP bodies.",
+  "source_urls": [
+    "https://gestiona.comunidad.madrid/desvan/AccionDatosTemaMunicipal.icm?codTema=1902424",
+    "https://www.comunidad.madrid/docs/assets/2025/12/17/informe_-_capitulo_b_-_2025.pdf?VersionId=xG.t7J4_kU00tSXSmvFCUBxVcNYLgOp5"
+  ],
+  "source_sha256": {
+    "provider_capture.json": "e1af3552843f0dfbd119a19593325ca1e540952bfb84639928c90e7246ada48d",
+    "provider_request_manifest.json": "8219d392c10b1ba530415e3b9de7046f6d37446434ee1ea82cc8e565483342ed",
+    "retrieval.json": "44517bffc2f1e1b336bcf4f9124aa662f3b52ad6cb8177d0cac310c7cfdea927",
+    "versioned_attempt.json": "ec33e5414e9fde2e645633ce8667fdc981e99c6965612b661d32d024a1b9c9d7"
+  },
+  "scope_witnesses": [
+    {
+      "claim": "exclusive_bach_heading",
+      "report_text_start": 158109,
+      "report_text_end": 158795,
+      "context_sha256": "70557d2c345dc8a32d5d93621f01fad3ebe01ab4b5d7d8a77b8ba5f1bec4d106"
+    },
+    {
+      "claim": "exclusive_bach_count",
+      "report_text_start": 158241,
+      "report_text_end": 158931,
+      "context_sha256": "d5545c9dfb5ef8e320e5c2a1c8adee5345a102809250752a55f75d8e123c0aa4"
+    },
+    {
+      "claim": "general_ratio_figure",
+      "report_text_start": 197640,
+      "report_text_end": 198342,
+      "context_sha256": "99feb65443d9a53859fdce6e96746af2cba2134d4ebaac489fac9bfa3f3d1919"
+    },
+    {
+      "claim": "FTE_conversion_note",
+      "report_text_start": 198734,
+      "report_text_end": 199383,
+      "context_sha256": "79001745b874bc19279af9dc610fb009b031115ba308a6422615b8dcd1b35675"
+    },
+    {
+      "claim": "region_ratio",
+      "report_text_start": 200368,
+      "report_text_end": 201014,
+      "context_sha256": "0fb5a9a48fedad3cb589faa71e14a5dd78e371f1784e6a67f7a1768200cff8dd"
+    }
+  ],
+  "extractor_sha256": "94a388a97cc7fbf2ccf5badc9d0ce1e93a023c6a784dce9db365d4db6332f9b4",
+  "next_required": "Matched city upper-secondary pupil universe and actual teaching FTE with provider/stage allocations. No headcount-to-FTE conversion or reference-year relabelling is assumed."
+}

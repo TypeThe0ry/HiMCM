@@ -1,0 +1,32 @@
+\subsection{A significant revision: retaining uncertain evidence}
+A controlled comparison shows why the evidence bounds belong in the decision.
+On the same 160 utility entries, we compare the midpoint completion
+$z_{ij}=(\ell_{ij}+h_{ij})/2$ with the retained-interval formulation in
+Equation~\ref{eq:regret}. Both use identical weights, anchors and TOPSIS scores.
+The midpoint is a declared diagnostic scenario, rather than an estimate of
+missing observations or a reconstruction of the team's historical first model.
+
+The revision retains 48 non-point entries and selects the city with the smallest
+worst-case shortfall. Zurich remains the recommendation, but thirteen cities
+change decision rank under fixed weights; Kendall's $\tau_b=0.600$.
+Dublin, Helsinki and Paris rank second, third and fourth at the midpoint,
+whereas Singapore, Oslo and Stockholm occupy those positions in the interval
+decision. With equal weights, fifteen ranks change and $\tau_b=0.667$.
+
+A constructed interior completion demonstrates the consequence. Keep the other
+cities at their utility midpoints and set each uncertain Zurich utility to
+$\ell_{ij}+0.1(h_{ij}-\ell_{ij})$. All 112 point values stay fixed, and each
+of the 48 uncertain values is strictly inside its interval. Dublin then scores
+62.31483 and Zurich 55.54326, putting Zurich thirteenth in that completion.
+At the more adverse rectangular endpoints, Dublin's 70.90353 exceeds Zurich's
+53.53548 by exactly 17.36805, realizing Zurich's model maximum regret.
+Some endpoints represent raw-scale suprema; these constructions concern the
+declared utility rectangle, rather than an observed population or a proof of
+joint physical attainability.
+
+This revision improves the interpretation of the decision: one chosen completion
+identifies a conditional first place, while the interval rule retains all sixteen
+possible champions and still selects a conservative action. It changes the
+handling of uncertainty within one scoring framework. The earlier 13.97\%
+interval-width reduction comes separately from admitted data, not from this
+controlled model comparison.

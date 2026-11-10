@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "guard_script_sha256": "791642c5bbf792d9ffaa80f52bd58d7c89e44e1ca27488bf7c8dad01a9f364f5",
+  "runner_sha256": "1505aa92ccbee5d8a2bfd7b69a5c54e37581942edd60543b847920b5ea89f91a",
+  "negative_guard_cases": 8,
+  "canonical_identity_positive_case": true,
+  "cases": [
+    {
+      "case": "canonical_pdf_identity",
+      "rejected": true,
+      "reason": "Registered canonical PDF SHA256 mismatch; no build attempted"
+    },
+    {
+      "case": "output_inside_repository",
+      "rejected": true,
+      "reason": "Output must be outside both repositories and cannot be their ancestor"
+    },
+    {
+      "case": "output_repository_ancestor",
+      "rejected": true,
+      "reason": "Output must be outside both repositories and cannot be their ancestor"
+    },
+    {
+      "case": "output_nonempty",
+      "rejected": true,
+      "reason": "Output directory must be new or empty"
+    },
+    {
+      "case": "output_symlink",
+      "rejected": true,
+      "reason": "Output directory itself cannot be a symlink"
+    },
+    {
+      "case": "archive_export-ignore",
+      "rejected": true,
+      "reason": "Archive omits tracked files (export-ignore?)"
+    },
+    {
+      "case": "archive_export-subst",
+      "rejected": true,
+      "reason": "Archive content differs from tracked blob (export-subst?): ordinary.txt"
+    },
+    {
+      "case": "archive_symlink",
+      "rejected": true,
+      "reason": "Unsupported Git tree mode (symlink/gitlink): external-link"
+    }
+  ],
+  "scope": "Temporary synthetic fixtures only;no paper/model input edits or TeX builds in this guard test"
+}

@@ -1,0 +1,111 @@
+{
+  "iteration": "V163",
+  "status": "New sources reviewed; no city teacher envelope admitted",
+  "national_teacher_FTE": {
+    "2023": {
+      "TOT_SEC": {
+        "value": 19586,
+        "flag": null
+      },
+      "PUB": {
+        "value": 15917,
+        "flag": null
+      },
+      "PRV": {
+        "value": 3670,
+        "flag": null
+      },
+      "PRV_DEP": {
+        "value": 3670,
+        "flag": null
+      },
+      "PRV_IND": {
+        "value": null,
+        "flag": "m"
+      },
+      "published_public_private_sum_minus_total": 1
+    },
+    "2024": {
+      "TOT_SEC": {
+        "value": 19825,
+        "flag": null
+      },
+      "PUB": {
+        "value": 16198,
+        "flag": null
+      },
+      "PRV": {
+        "value": 3628,
+        "flag": null
+      },
+      "PRV_DEP": {
+        "value": 3628,
+        "flag": null
+      },
+      "PRV_IND": {
+        "value": null,
+        "flag": "m"
+      },
+      "published_public_private_sum_minus_total": 1
+    }
+  },
+  "teacher_selection": {
+    "dataset": "educ_uoe_perp02",
+    "geo": "FI",
+    "isced11": "ED3",
+    "sex": "T",
+    "worktime": "TOT_FTE",
+    "unit": "NR"
+  },
+  "municipal_students": {
+    "dataset": "11c4",
+    "region_code": "KU091",
+    "region_classification": "2025",
+    "sector": "20 general upper secondary education",
+    "measure": "op_4a Students total",
+    "reference": "20September of the statistical year; qualification-syllabus students",
+    "counts": {
+      "2022": 17789,
+      "2023": 18177,
+      "2024": 18661
+    },
+    "geography": "Location of education, not residents"
+  },
+  "authoritative_variable_specific_method": {
+    "workbook": "FI_annexIII_original.xlsx",
+    "cell": "15.2.2!F10",
+    "cell_text_sha256": "49b7df6465864e903035cd0a22d87cec727de7d92c6c4b806e0d10b1c5d4cf48",
+    "short_evidence": "other variables than full-time/part-time participation and FTE numbers",
+    "conclusion": "Full-time/part-time and FTE figures use estimation from wage/salary and private-provider sources; not only untransformed register totals"
+  },
+  "yearbook_comparison": {
+    "reused_file": "data/task4_v147_education_refresh/helsinki_2025_original.pdf",
+    "sha256": "186dab99820d0b5bf75c622881e984c85ef113e93c6d93c34ff101afde72020c",
+    "pdf_page": 158,
+    "year_2022": 18177,
+    "native_API_year_2022": 17789,
+    "year_2023": 18177,
+    "native_API_year_2023": 18177,
+    "reason_for_2022_difference_not_inferred": true
+  },
+  "failed_bound_reason": "Published national FTE estimate has no verified one-sided error envelope, so national estimate >= actual Helsinki target FTE is not established; adding an arbitrary rounding unit does not bound estimation error",
+  "temporal_rule": "API time, UOE collection year, school-year start/end and census date must be distinguished; no2025 transfer assumed",
+  "national_teacher_upper_superset_verified": false,
+  "city_PTR_bound": null,
+  "observations": [],
+  "primary_data_admissions": 0,
+  "primary_score_width_change": 0,
+  "current_model": "V154 unchanged",
+  "current_paper": "V160 unchanged",
+  "source_sha256": {
+    "FI_ED3_2023_original.json": "6dde57957a63f5a8198807d5c07284712ee304d721688e3c1a8733033b0e5049",
+    "FI_ED3_2024_original.json": "ce5bfb274dce3d495cc4263ec28eb1de419f84f383816e8d9e24cce7f594c0a6",
+    "FI_metadata_original.html": "667333ac55b4df65f1051059acbb959a43504cb22719a597abe0e67cfced0ddc",
+    "FI_annexIII_original.xlsx": "dccce47045e238972db67deaa1ba8b65a235c955604c643df6586b562538f616",
+    "FI_135h_metadata_original.json": "956945e7af50bf9b04ccb1fd1e484f27b8019c4f7fbec9ca78a2c9c2992f03a8",
+    "FI_11c4_metadata_original.json": "a270fdd76218b484e042d1a77669ef0c98309bf6b2221ba7aa91bc8a7ea8ccd8",
+    "FI_11c4_students_original.json": "fecda5e26ac1af59921e1623d7ccf1261eddb3070c0ad4b42b65ee2e48d94726",
+    "FI_students_documentation_original.html": "2d220fd6158afa65579af6ff41fdaa136b96427927d7e79d47bf5f4a739b7220"
+  },
+  "extractor_sha256": "82d0d3e0b56cbf1d06db4ad34895e37ab19633774237027f8c030f219974b562"
+}

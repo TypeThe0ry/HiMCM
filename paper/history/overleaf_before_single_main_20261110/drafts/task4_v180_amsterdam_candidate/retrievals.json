@@ -1,0 +1,109 @@
+[
+  {
+    "file": "maps_data_original.html",
+    "url": "https://maps.amsterdam.nl/open_geodata/",
+    "method": "GET",
+    "body": null,
+    "final_url": "https://maps.amsterdam.nl/open_geodata/",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "accessed_utc": "2026-11-09T15:00:04.953547+00:00",
+    "bytes": 49965,
+    "sha256": "825868142ecb2f50b3b1cc9d7a20c48aaffe7fb80ee3ef534245576d9830b27b"
+  },
+  {
+    "file": "trammetro_original.html",
+    "url": "https://maps.amsterdam.nl/trammetro/",
+    "method": "GET",
+    "body": null,
+    "final_url": "https://maps.amsterdam.nl/trammetro/",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "accessed_utc": "2026-11-09T15:00:04.800092+00:00",
+    "bytes": 9188,
+    "sha256": "2b410d9baaa17a06eeb002c502720419e0f6b05495cce14d98219fd4d58db2b7"
+  },
+  {
+    "file": "stops_metadata_original.json",
+    "url": "https://maps.amsterdam.nl/open_geodata/haal.meta.php",
+    "method": "POST",
+    "body": {
+      "ID": 649
+    },
+    "final_url": "https://maps.amsterdam.nl/open_geodata/haal.meta.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "accessed_utc": "2026-11-09T15:00:04.593773+00:00",
+    "bytes": 550,
+    "sha256": "391169246ade7bdc886d7a5da27066325fb50f60685bb4a8a78cfcc13869dde9"
+  },
+  {
+    "file": "city_metadata_original.json",
+    "url": "https://maps.amsterdam.nl/open_geodata/haal.meta.php",
+    "method": "POST",
+    "body": {
+      "ID": 541
+    },
+    "final_url": "https://maps.amsterdam.nl/open_geodata/haal.meta.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "accessed_utc": "2026-11-09T15:00:04.704165+00:00",
+    "bytes": 337,
+    "sha256": "2a0b812d2d0305a5dcd350f10ebfa2a44de96ed538f73ff8f49beb5f4540e3a9"
+  },
+  {
+    "file": "stops2026_original.geojson",
+    "url": "https://maps.amsterdam.nl/open_geodata/geojson_lnglat.php?KAARTLAAG=TRAMMETRO_PUNTEN_2026&THEMA=trammetro",
+    "method": "GET",
+    "final_url": "https://maps.amsterdam.nl/open_geodata/geojson_lnglat.php?KAARTLAAG=TRAMMETRO_PUNTEN_2026&THEMA=trammetro",
+    "http_status": 200,
+    "content_type": "application/json",
+    "accessed_utc": "2026-11-09T15:00:23.106542+00:00",
+    "bytes": 56344,
+    "sha256": "78a33e536dd3da305e5f62dc461e0d1322162cb0b87457a48acec5793146c731"
+  },
+  {
+    "file": "city2026_original.geojson",
+    "url": "https://maps.amsterdam.nl/open_geodata/geojson_lnglat.php?KAARTLAAG=INDELING_GEMEENTE&THEMA=gebiedsindeling",
+    "method": "GET",
+    "final_url": "https://maps.amsterdam.nl/open_geodata/geojson_lnglat.php?KAARTLAAG=INDELING_GEMEENTE&THEMA=gebiedsindeling",
+    "http_status": 200,
+    "content_type": "application/json",
+    "accessed_utc": "2026-11-09T15:00:23.762282+00:00",
+    "bytes": 81446,
+    "sha256": "bbc939504b5db51312f78919c4a098ea624df3f849a2ad51e037ac9834bfe8c1"
+  },
+  {
+    "file": "pdok_capabilities_original.xml",
+    "url": "https://service.pdok.nl/cbs/gebiedsindelingen/2025/wfs/v1_0?request=GetCapabilities&service=WFS",
+    "method": "GET",
+    "final_url": "https://service.pdok.nl/cbs/gebiedsindelingen/2025/wfs/v1_0?request=GetCapabilities&service=WFS",
+    "http_status": 200,
+    "content_type": "text/xml; charset=UTF-8",
+    "accessed_utc": "2026-11-09T15:02:37.861592+00:00",
+    "bytes": 92969,
+    "sha256": "8956c61de487e7764e277a2cb32421d920887b6a7719eb2e2702c79b1ef35f8f"
+  },
+  {
+    "file": "cbs_boundary2025_original.geojson",
+    "url": "https://service.pdok.nl/cbs/gebiedsindelingen/2025/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typeNames=gebiedsindelingen%3Agemeente_niet_gegeneraliseerd&outputFormat=application%2Fjson&srsName=EPSG%3A4326&filter=%3Cfes%3AFilter+xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsEqualTo%3E%3Cfes%3AValueReference%3Estatcode%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3EGM0363%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsEqualTo%3E%3C%2Ffes%3AFilter%3E",
+    "method": "GET",
+    "final_url": "https://service.pdok.nl/cbs/gebiedsindelingen/2025/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typeNames=gebiedsindelingen%3Agemeente_niet_gegeneraliseerd&outputFormat=application%2Fjson&srsName=EPSG%3A4326&filter=%3Cfes%3AFilter+xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsEqualTo%3E%3Cfes%3AValueReference%3Estatcode%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3EGM0363%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsEqualTo%3E%3C%2Ffes%3AFilter%3E",
+    "http_status": 200,
+    "content_type": "application/json",
+    "accessed_utc": "2026-11-09T15:02:40.306288+00:00",
+    "bytes": 804721,
+    "sha256": "75c5069d22ce29684f374e52a9c567c6f09a138187db9770223ef82d7fed17f3"
+  },
+  {
+    "file": "maps_terms_original.html",
+    "url": "https://maps.amsterdam.nl/open_geodata/terms.php",
+    "method": "GET",
+    "final_url": "https://maps.amsterdam.nl/open_geodata/terms.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "accessed_utc": "2026-11-09T15:02:37.233170+00:00",
+    "bytes": 7283,
+    "sha256": "29b67e97d10035ec011d3240f4efc5ad97a1c7e85d1ea0071b91cbcdd5a7d8c7"
+  }
+]

@@ -1,0 +1,5 @@
+# V191 real station-subset candidates
+
+Official provider originals support38TokyoOedo named stations and38Warsaw metro complexes after merging the shared interchange. Selected named lists, candidate observations, isolated preview and independent verification are copied here; raw originals, receipts and full code remain in the GitHub research repository. Tokyo inventory date is unknown despite September2026catalogue metadata. Warsaw uses the2026directory snapshot with separate2024topology and2025city-scope support. Both retain supplied populations, density anchor50 and upper1.
+
+These are not active admissions: scienceV181, paperV189 and deliveryV190 remain unchanged. Joint preview would reduce fixed mean width16.0493847924to16.0390700744 and fully unknown cells13to11, withZurich and16possible champions unchanged. Execute the migration plan for all retained extensions, fresh numerical bindings and a consistent owned paper before activation; no completeinventory, currentopening or studentaccess claim.
