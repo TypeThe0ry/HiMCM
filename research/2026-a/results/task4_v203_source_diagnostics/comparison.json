@@ -1,0 +1,36 @@
+{
+  "scope": "V202 versus conditional V203 with Oslo transport source change; joint targets differ when baseline recommendation changes, so radii are not the same target experiment.",
+  "v202_summary_sha256": "a907a04fe05153267a46e93efd397feb239a53ad09a4577222dab3c550058586",
+  "comparisons": [
+    {
+      "weight_reference": "fixed",
+      "v202_target": "Zurich",
+      "v203_target": "Oslo",
+      "v202_single_mean_tie": 40.06839694449639,
+      "v203_single_mean_tie": 28.101693367876297,
+      "v202_joint_radius": 0.0042204747994096,
+      "v203_joint_radius": 0.15606326638370097,
+      "v202_binding_rivals": [
+        "Singapore"
+      ],
+      "v203_binding_rivals": [
+        "Zurich"
+      ]
+    },
+    {
+      "weight_reference": "equal",
+      "v202_target": "Zurich",
+      "v203_target": "Zurich",
+      "v202_single_mean_tie": null,
+      "v203_single_mean_tie": 40.4960868435348,
+      "v202_joint_radius": 0.6344548233461835,
+      "v203_joint_radius": 0.006483393004901084,
+      "v202_binding_rivals": [
+        "Oslo"
+      ],
+      "v203_binding_rivals": [
+        "Oslo"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "version": "V203 conditional source diagnostics",
+  "source_admission": "conditional; verify independent source admission before use",
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/task4_user_v203_revision.py": "9a0e3a41b194c491967f368538199e1ea26a354178a286fb8081e953d81f7d7d",
+    "scripts/task4_user_v202_revision.py": "0881aa4265f752b0523365e142f3c133eedb31e90ff0aac37973e23683eb029e",
+    "scripts/task4_v203_source_diagnostics.py": "8781851e12e8b839c3eff8b9afcbb32ed3bb7bd54ac513694a7383f4fc8b9496"
+  },
+  "changed_cell": [
+    "Oslo",
+    "public_transport_density"
+  ],
+  "old_lower": 0.19651202200934645,
+  "new_lower": 0.6323880680696051,
+  "withdrawal_cases": [
+    {
+      "scenario": "retained_input",
+      "weight_reference": "fixed",
+      "withdrawn": [],
+      "conservative_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "retained_input",
+      "weight_reference": "equal",
+      "withdrawn": [],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_Zurich_work_commute",
+      "weight_reference": "fixed",
+      "withdrawn": [
+        "Zurich"
+      ],
+      "conservative_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_Zurich_work_commute",
+      "weight_reference": "equal",
+      "withdrawn": [
+        "Zurich"
+      ],
+      "conservative_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_Dublin_work_commute",
+      "weight_reference": "fixed",
+      "withdrawn": [
+        "Dublin"
+      ],
+      "conservative_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_Dublin_work_commute",
+      "weight_reference": "equal",
+      "withdrawn": [
+        "Dublin"
+      ],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_both_work_commute",
+      "weight_reference": "fixed",
+      "withdrawn": [
+        "Zurich",
+        "Dublin"
+      ],
+      "conservative_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_both_work_commute",
+      "weight_reference": "equal",
+      "withdrawn": [
+        "Zurich",
+        "Dublin"
+      ],
+      "conservative_recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_all_submitted_commute_means",
+      "weight_reference": "fixed",
+      "withdrawn": [
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague"
+      ],
+      "conservative_recommendation": [
+        "Singapore"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "withdraw_all_submitted_commute_means",
+      "weight_reference": "equal",
+      "withdrawn": [
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague"
+      ],
+      "conservative_recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0
+    }
+  ],
+  "mean_thresholds": [
+    {
+      "weight_reference": "fixed",
+      "target": "Zurich",
+      "baseline_recommendation": "Oslo",
+      "gap_at_utility_0": 3.558697251479103,
+      "gap_at_utility_1": -4.775735744719945,
+      "retained_mean_minutes": 39.9,
+      "tie_mean_minutes": 28.101693367876297,
+      "status": "finite_tie",
+      "tie_lower_utility": 0.391909978494373
+    },
+    {
+      "weight_reference": "equal",
+      "target": "Zurich",
+      "baseline_recommendation": "Zurich",
+      "gap_at_utility_0": 2.2061281029952227,
+      "gap_at_utility_1": -5.472416306467387,
+      "retained_mean_minutes": 39.9,
+      "tie_mean_minutes": 40.4960868435348,
+      "status": "finite_tie",
+      "tie_lower_utility": 0.25927407777477174
+    }
+  ],
+  "joint_thresholds": [
+    {
+      "weight_reference": "fixed",
+      "target": "Oslo",
+      "status": "finite_boundary",
+      "sharp_radius": 0.15606326638370097,
+      "binding_rivals": [
+        "Zurich"
+      ],
+      "gap_at_zero": -1.1863617370461697,
+      "gap_at_one": 7.415200974595884,
+      "gap_at_tested_boundary": 0.0,
+      "rule": "Target is uniquely minimax for every point below the boundary; at a finite boundary a rival ties at the worst corner; above it that corner is a counterexample."
+    },
+    {
+      "weight_reference": "equal",
+      "target": "Zurich",
+      "status": "finite_boundary",
+      "sharp_radius": 0.006483393004901084,
+      "binding_rivals": [
+        "Oslo"
+      ],
+      "gap_at_zero": -0.04521949030134209,
+      "gap_at_one": 7.123803150168904,
+      "gap_at_tested_boundary": 0.0,
+      "rule": "Target is uniquely minimax for every point below the boundary; at a finite boundary a rival ties at the worst corner; above it that corner is a counterexample."
+    }
+  ],
+  "corner_checks": [
+    {
+      "weight_reference": "fixed",
+      "target": "Oslo",
+      "radius": 0.05,
+      "corners": 4096,
+      "max_signed_gap": -0.8082227834991969,
+      "analytic_corner_gap": -0.8082227834991969
+    },
+    {
+      "weight_reference": "fixed",
+      "target": "Oslo",
+      "radius": 0.15606326638370097,
+      "corners": 4096,
+      "max_signed_gap": 7.105427357601002e-15,
+      "analytic_corner_gap": 0.0
+    },
+    {
+      "weight_reference": "equal",
+      "target": "Zurich",
+      "radius": 0.05,
+      "corners": 4096,
+      "max_signed_gap": 0.3033616454042729,
+      "analytic_corner_gap": 0.3033616454042729
+    },
+    {
+      "weight_reference": "equal",
+      "target": "Zurich",
+      "radius": 0.006483393004901084,
+      "corners": 4096,
+      "max_signed_gap": 0.0,
+      "analytic_corner_gap": 0.0
+    }
+  ],
+  "total_corner_evaluations": 16384,
+  "scalar_vs_evaluate_max_error": 1.4210854715202004e-14,
+  "scope": "Original means and Singapore historical stage bins retained except stated commute withdrawals; no new commute observation, confidence interval, prediction or MC rerun. Box is a sensitivity assumption, not a claim of physically joint realization.",
+  "proof": "Upper scores are fixed. Each self-excluded regret depends only on its own lower score and increases as its own commute mean rises. Thus target high and all other means low maximize target regret minus the best rival; enumeration checks all corners and a radius grid checks monotonicity."
+}

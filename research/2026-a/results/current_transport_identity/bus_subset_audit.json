@@ -1,0 +1,31 @@
+{
+  "status": "PASS conditional candidate, no admission",
+  "independent_raw_xml_group_count": 626,
+  "all_root_and_member_id_name_mode_type_submode_quay_fields_match": true,
+  "unique_quays": 1270,
+  "mode_members_without_quays": 0,
+  "independent_mode_member_group_check": "all nonempty mode members bus and onstreetBus; all other modes excluded; every member city0301",
+  "polygon_validity_and_source_keyword_checks": "Reproduced by extract.py on all retained member centroids and nested validity; source comments recorded in observations. Validity does not establish service.",
+  "precautionary_exclusion": {
+    "root_id": "NSR:StopPlace:6109",
+    "name": "Tveten bru",
+    "reason": "Unresolved source tag asks whether discontinued or to deactivate; not a verified closure."
+  },
+  "optional_sensitivity_withholds": {
+    "rail_replacement_bus_roots": [
+      "NSR:StopPlace:317",
+      "NSR:StopPlace:668"
+    ],
+    "count_if_both_withheld": 624,
+    "midtstuen_bus_root": "NSR:StopPlace:6313",
+    "count_if_only_midtstuen_withheld": 625
+  },
+  "source_defined_inventory_condition": "Retained NSR onstreetBus groups are infrastructure records, not proof of service, universal public access, same-city comparability, or teen access. Historical 2026 snapshot with fixed 2025 population; no 89 addition.",
+  "sha256": {
+    "data/current_oslo_bus_subset/extract.py": "ad30a96f3195dc04f66ba56a85cb5da64236dd812e40c03709dc22590d62c2a8",
+    "data/current_oslo_bus_subset/bus_stop_groups.csv": "d817db2e0d912837d1ce7d79f137fc845f320d51cb79f7908ba15340f7efa89a",
+    "data/current_oslo_bus_subset/observations.json": "aeb5c982fe4a0d3721b0327eb33904dd70a49ac385a287f06371a7c836b9cb43",
+    "data/current_oslo_transport/03_Oslo_latest.zip": "63a3bef9e342a22f87f44c1229a2d9c0fe4f594b410a1383051eb11dd7f6f569",
+    "data/task4_v118_transit/oslo_boundary_raw.json": "d7414f33811a16a7c141ec9008d29b33e662531c71999c9be878770a46eec9dc"
+  }
+}

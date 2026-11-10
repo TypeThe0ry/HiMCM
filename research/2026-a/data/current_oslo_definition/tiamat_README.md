@@ -1,0 +1,518 @@
+# Tiamat ![Build](https://github.com/entur/tiamat/actions/workflows/ci.yaml/badge.svg)
+
+Tiamat is the Stop Place Register.
+It is used nationally in Norway, and other places.
+Tiamat is created with technologies like Spring Boot, Hibernate, Postgis, Jersey and Jackson.
+
+## Core functionality
+### NeTEx imports
+* Supports different pre steps and merging options for stop places, handling bad data quality.
+* Assigns unique IDs to stop places (if desired).
+* Validates incoming data against the XML schema.
+
+#### Parking fields not carried over by a merging import
+
+A `MERGE` import (the default `importType` when none is specified) that matches an *already stored*
+`Parking` starts from a copy of the stored entity and applies only a fixed set of fields from the
+incoming one: `keyValues`, `parkingType`, `centroid` and `parkingVehicleTypes`. The following fields
+are not part of that set, so on a matching `MERGE` re-import their stored values are preserved
+untouched rather than updated from the incoming data (and, importantly, they are not cleared either):
+`name`, `parkingLayout`, `totalCapacity`, `rechargingAvailable`, `secure`, `parkingPaymentProcess`,
+`parkingProperties`, `placeEquipments`, `paymentMethods`, `lighting`, `vehicleEntrances` (and their
+access modes), `infoLinks`, `availabilityConditions` and `alternativeNames`.
+
+This only affects the "already exists" branch of a merging import. A `Parking` that does not match an
+existing one is saved whole on first import, with every field intact — nothing is lost there.
+
+To update any of the fields above on an already-imported `Parking`, use `importType=INITIAL`, the
+GraphQL update mutation, or delete and re-import the parking.
+
+### NeTEx exports
+Supports exporting stop places and other entities to the http://netex-cen.eu/ format.
+There are many options for exports:
+* Asynchronous exports to google cloud storage. Asynchronous exports handles large amount of data, even if exporting thousands of stop places.
+* Synchronous exports directly returned
+* Several export parameters and filtering (ex: query or administrative polygons filtering)
+* Exports can be validated against the NeTEx schema, ensuring quality.
+
+### GraphQL API
+Tiamat provides a rich GraphQL API for stop places, topographic places, path links, tariff zones and so on, support the same parameters as the NeTEx export API.
+It also supports mutations. So you can update or create entities.
+There are also graphql processes (named functions) which allows functionality like merging quays or stop places.
+
+### A ReactJS Frontend
+A frontend for Tiamat is available. It's name is Abzu.
+See https://github.com/entur/abzu
+
+### Supports running multiple instances
+Instances coordinate through the shared PostgreSQL database, so no extra configuration is needed to run several.
+PostgreSQL advisory locks let one mutation, one import and one background stop place update run at a time across
+all instances, and the gapless ID generator keeps its state in the database.
+
+### Mapping of IDs
+After import stop places and assigning new IDs to stop places, tiamat keeps olds IDs in a mapping table.
+The mapping table between old and new IDs is available through the GraphQL API and a REST endpoint.
+
+### Automatic topographic place and tariff zone lookup
+Tiamat supports looking up and populating references to tariff zones and topographic places from polygon matches when saving a stop place.
+
+### Versioning
+Stop places and other entities are versioned. This means that you have full version history of stop places and what person that made those changes.
+Tiamat also includes a diff tool. This is used to compare and show the difference between two versions of a stop place (or other entity).
+
+
+## Build
+
+```shell
+mvn clean install
+```
+
+This builds both modules: `tiamat-core` (the reusable library, `tiamat-core/target/tiamat-core-*.jar`)
+and `tiamat-app` (the executable Spring Boot application, `tiamat-app/target/tiamat.jar`).
+
+You need the directory `/deployments/data` with rights for the user who
+performs the build.
+
+## Integration tests
+Tiamat uses testcontainers to run integration tests against a real database.  To run Testcontainers-based tests, you need a Docker-API compatible container runtime
+for more detail see https://www.testcontainers.org/supported_docker_environment/
+
+(tests run with the `test` profile; test configuration lives in `src/test/resources/application.properties`)
+
+## Configuration
+
+Tiamat ships its configuration defaults inside the jar and only needs environment-specific
+values from the outside:
+
+| File | Loaded | Contents |
+|:-----|:-------|:---------|
+| `application.properties` | always | environment-neutral defaults: JPA/Hibernate, connection pool, `spring.flyway.table`, logging, tuning |
+| `application-entur.properties` | `entur` profile | Entur/Norway constants: NeTEx profile version, NSR ID prefix list, import types |
+| `application-local.properties` | `local` profile | local development settings for running with `mvn spring-boot:run` |
+
+What must be supplied per environment/instance: active profiles, database connection,
+blobstore location, OAuth2 issuers — see the example under
+[Run with external properties file and PostgreSQL](#run-with-external-properties-file-and-postgresql).
+Values can be given as an external properties file (`spring.config.additional-location`), as
+environment variables via Spring's relaxed binding (`blobstore.gcs.bucket.name` →
+`BLOBSTORE_GCS_BUCKET_NAME`), or as `-D` system properties; env vars and system properties
+override everything shipped in the jar. Entur's own Kubernetes deployment supplies them as
+environment variables in the helm chart (`helm/tiamat`).
+
+## Running the service
+
+There are several options for running the service depending on what you need.
+
+ - [Run locally for development](#run-locally-for-development) is for people intending to maintain, modify and improve 
+   tiamat's source code
+ - [Run with external properties file and PostgreSQL](#run-with-external-properties-file-and-postgresql) for low 
+   level debugging
+
+> **Note!** Each of these configurations use unique port numbers and such, be sure to read the provided documentation 
+> and configuration files for more details.
+
+## Run locally for development
+
+Local development needs a PostgreSQL database with the PostGIS extension running, and Tiamat's Spring Boot
+application started against it with at least the `local` profile enabled.
+
+When running,
+
+ - tiamat will be available at `http://localhost:37888`
+ - PostGIS will be available at `localhost:37432`
+
+### 1. Start a PostgreSQL/PostGIS instance
+
+Start a PostgreSQL 17 instance with the PostGIS extension, matching the settings in
+[`application-local.properties`](./src/main/resources/application-local.properties) (user and password `tiamat`,
+port `37432`). For example, with plain Docker:
+
+```shell
+docker run --name tiamat-postgis -e POSTGRES_USER=tiamat -e POSTGRES_PASSWORD=tiamat -p 37432:5432 -d postgis/postgis:17-master
+```
+
+Any other way to run a matching PostgreSQL/PostGIS instance works too.
+
+### 2. Run the Service
+
+#### Available Spring Boot Profiles
+
+> **Note!** You must choose at least one of the options from each category below!
+
+> **Note!** `local` profile must always be included!
+
+##### Storage
+
+| profile                | description                                                                                                                                                     |
+|:-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `gcs-blobstore`        | GCP GCS implementation of tiamat's blob storage                                                                                                                 |
+| `local-blobstore`      | Use local directory as backing storage location.                                                                                                                |
+| `rutebanken-blobstore` | Use [`rutebanken-helpers/storage`][rutebanken-storage] based implementation for storage. Must be combined with one of the supported extra profiles (see below). |
+
+[rutebanken-storage]: https://github.com/entur/rutebanken-helpers/tree/master/storage
+
+###### Supported `rutebanken-blobstore` extra profiles
+
+If this profile is chosen, an additional implementation must be chosen to activate the underlying actual implementation.
+Supported extra profiles are
+
+| extra profile          | description                              |
+|:-----------------------|------------------------------------------|
+| `local-disk-blobstore` | Similar to `local-blobstore`.            |
+| `in-memory-blobstore`  | Entirely in-memory based implementation. |
+| `s3-blobstore`         | AWS S3 implementation.                   |
+
+**Example: Activating `in-memory-blobstore` for local development**
+```properties
+spring.profiles.active=local,rutebanken-blobstore,in-memory-blobstore,local-changelog
+```
+
+See the [`RutebankenBlobStoreServiceConfiguration`](./src/main/java/org/rutebanken/tiamat/config/RutebankenBlobStoreConfiguration.java)
+class for configuration keys and additional information.
+
+##### Changelog
+
+| profile           | description                                                        |
+|:------------------|--------------------------------------------------------------------|
+| `local-changelog` | Simple local implementation which logs the sent events to `stdout` |
+| `activemq`        | JMS based ActiveMQ implementation.                                 |
+| `google-pubsub`   | GCP PubSub implementation for publishing tiamat entity changes.    |
+
+#### Run It!
+
+**IntelliJ**: Right-click on `TiamatApplication.java` (in the `tiamat-app` module) and choose Run (or 
+Cmd+Shift+F10). Open Run -> Edit configurations, choose the correct configuration (Spring Boot -> App), and add a 
+comma separated list of desired profiles (e.g. `local,local-blobstore,activemq`) to Active profiles. Save the 
+configuration.
+
+> **Note!** Run configurations created before the multi-module split reference the old `tiamat` module and fail
+> with `ClassNotFoundException: org.rutebanken.tiamat.TiamatApplication`. Point them at `tiamat-app` instead.
+
+**Command line**: `mvn -pl tiamat-app -am spring-boot:run`
+
+Tiamat is built from the `tiamat-app` module; the reactor builds `tiamat-core` first. Running
+`mvn spring-boot:run` from the repository root does nothing — the root is an aggregator POM.
+
+## Run with external properties file and PostgreSQL
+
+The jar contains working defaults for everything except instance-specific values (see
+[Configuration](#configuration)), so an external properties file only needs to supply those.
+Example `tiamat.properties`:
+
+```properties
+# One storage profile and one changelog profile are required (see Available Spring Boot Profiles)
+spring.profiles.active=local-blobstore,local-changelog
+
+spring.datasource.url=jdbc:postgresql://localhost:5436/tiamat
+spring.datasource.username=tiamat
+spring.datasource.password=tiamat
+
+server.port=1888
+
+# Blobstore for NeTEx exports (local-blobstore profile)
+blobstore.local.folder=/tmp/local-gcs-storage/tiamat/export
+async.export.path=/tmp
+
+# OAuth2 Resource Server (e.g. local Keycloak, see Keycloak_Setup_Guide.md)
+spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:8082/realms/entur
+
+spring.cloud.gcp.pubsub.enabled=false
+
+# Optional overrides — sensible defaults ship in the jar
+# (see src/main/resources/application.properties and application-entur.properties):
+#netex.import.enabled.types=MERGE,INITIAL,ID_MATCH,MATCH
+#netex.id.valid.prefix.list={TopographicPlace:{'KVE','WOF','OSM','ENT','LAN'},TariffZone:{'*'},FareZone:{'*'},GroupOfTariffZones:{'*'}}
+#publicationDeliveryUnmarshaller.validateAgainstSchema=false
+#publicationDeliveryStreamingOutput.validateAgainstSchema=false
+#fareZone.externalVersioning=false
+#groupOfTariffZones.externalVersioning=false
+#ignoreTariffZoneImport=false
+```
+
+Start Tiamat with **spring.config.additional-location** so the file layers on top of the
+defaults shipped in the jar:
+
+`java -Dspring.config.additional-location=file:/path/to/tiamat.properties --add-opens java.base/java.lang=ALL-UNNAMED -jar tiamat-app/target/tiamat.jar`
+
+> **Note!** Using `-Dspring.config.location=` (without `additional-`) still works, but it
+> *replaces* the jar's config files entirely, so your file must then contain the complete
+> configuration — including `spring.flyway.table=schema_version`, without which Flyway
+> looks for the wrong schema history table and startup fails.
+
+## Database
+
+### HikariCP
+Tiamat is using HikariCP. Most properties should be be possible to be specified in in application.properties, like `spring.datasource.initializationFailFast=false`. More information here. https://github.com/brettwooldridge/HikariCP/wiki/Configuration
+See also http://stackoverflow.com/a/26514779
+
+## ID Generation
+### Background
+During the implementation of Tiamat was desirable to produce NeTEx IDs for stop places more or less gap less.
+The reason for this implementation was legacy systems with restrictions of maximum number of digits.
+
+### Configure ID generation
+It is possible to control whether IDs should be generated outside Tiamat or not. See the class ValidPrefixList.
+Setting the property `netex.validPrefix` tells Tiamat to generate IDs for new entities.
+Please note that it is not possible to do an initial import (see ImportType) multiple times with the same IDs.
+
+### How its all connected
+It's all initiated by an entity listener annotated with `PrePersist` on the class `IdentifiedEntity` called `IdentifiedEntityListener`.
+`NetexIdAssigner` determines if the entity already has an ID or not. `NetexIdProvider` either return a new ID or handles explicity claimed IDs if the configured prefix matches. See `ValidPrefixList` for the configuration of valid prefixes, and prefixes for IDs generated elsewhere. The `GaplessIdGeneratorService` keeps its state in the database, so all instances share it.
+
+
+## Keycloak/Auth0
+Both Tiamat and Abzu are set up to be used with Keycloak or Auth0.
+A detailed guide on how to setup Keycloak can be found [here](./Keycloak_Setup_Guide.md).
+
+## Validation for incoming and outgoing NeTEx publication delivery
+
+It is possible to configure if tiamat should validate incoming and outgoing NeTEx xml when unmarshalling or marshalling publication deliveries.
+Default values are true. Can be deactivated with setting properties to false.
+```properties
+publicationDeliveryStreamingOutput.validateAgainstSchema=false
+publicationDeliveryUnmarshaller.validateAgainstSchema=true
+```
+
+## Synchronous NeTEx export with query params
+It is possible to export stop places and topographic places directly to NeTEx format. This is the endpoint:
+https://api.dev.entur.io/stop-places/v1/netex
+
+### Query by name example:
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?q=Arne%20Garborgs%20vei
+```
+
+### Query by ids that contains the number 3115
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?q=3115
+```
+
+### Query by stop place type
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?stopPlaceType=RAIL_STATION
+```
+It is also possible with multiple types.
+
+### Query by municipality ID
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?municipalityReference=KVE:TopographicPlace:1003
+```
+
+### Query by county ID
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?countyReference=KVE:TopographicPlace:11
+```
+
+### Limit size of results
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?size=1000
+```
+
+### Page
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?page=1
+```
+
+### ID list
+You can specify a list of NSR stop place IDs to return
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?idList=NSR:StopPlace:3378&idList=NSR:StopPlace:123
+```
+
+### All Versions
+```allVersions```. Acceptable values are true or false. If set to true, all versions of matching stop places will be returned.
+If set to false, the highest version by number will be returned for matching stop places. This parameter is not enabled when using the version valitity parmaeter.
+
+### Stop places without location
+Match only stop places without location
+Use the parameter: ```withoutLocationOnly=true```
+
+### Topographic export mode
+The parameter ```topographicPlaceExportMode``` can be set to *NONE*, *RELEVANT* or *ALL*
+Relevant topographic places will be found from the exported list of stop places.
+
+### Tariff Zone export mode
+The parameter ```tariffZoneExportMode``` can be set to *NONE*, *RELEVANT* or *ALL*
+Relevant tariff zones with be found from the exported list of stop places. Because stop places can have a list of tariff zone refs.
+
+### Group of stop places export mode
+The parameter ```groupOfStopPlacesExportMode``` can be set to *NONE*, *RELEVANT* or *ALL*
+Relevant group of stop places can be found from the exported list of stop places.
+
+### MultiSurface geometry export
+The parameter ```exportMultiSurface``` controls how geometry is exported for topographic places and zones (tariff zones, fare zones).
+* ```false``` (default): Export polygon geometry. This maintains backward compatibility with existing clients.
+* ```true```: Export multiSurface geometry when available. If a zone has multiSurface geometry stored, it will be exported as multiSurface instead of polygon.
+
+Note: According to the NeTEx XSD schema, polygon and multiSurface are mutually exclusive - only one can be present per zone.
+
+```http request
+GET https://api.dev.entur.io/stop-places/v1/netex?exportMultiSurface=true
+```
+
+### Version validity
+The ```versionValidity``` parameter controls what stop places to return.
+* ALL: returns all stops in any version (See allVersions attribute), regardless of version validity
+* CURRENT: returns only stop place versions valid at the current time
+* FUTURE_CURRENT: returns only stop place versions valid at the current time, as well as versions valid in the future.
+
+### Example
+```
+https://api.dev.entur.io/stop-places/v1/netex?tariffZoneExportMode=RELEVANT&topographicPlaceExportMode=RELEVANT&groupOfStopPlacesExportMode=NONE&q=Nesbru&versionValidity=CURRENT&municipalityReference=KVE:TopographicPlace:0220
+```
+
+Returns stop places with current version validity now, matching the query 'Nesbru' and exists in municipality 0220. Fetches relevant tariff zones and topographic places.
+
+## Async NeTEx export from Tiamat
+Asynchronous export uploads exported data to google cloud storage. When initiated, you will get a job ID back.
+When the job is finished, you can download the exported data.
+
+*Most of the parameters from synchronous export works with asynchronous export as well!*
+
+### Start async export:
+```
+curl https://api.dev.entur.io/stop-places/v1/netex/export/initiate
+```
+Pro tip: Pipe the output from curl to xmllint to format the output:
+```
+curl https://api.dev.entur.io/stop-places/v1/netex/export/initiate | xmllint --format -
+```
+
+### Check job status:
+```
+curl https://api.dev.entur.io/stop-places/v1/netex/export
+```
+
+### When job is done. Download it:
+```
+curl https://api.dev.entur.io/stop-places/v1/netex/export/130116/content | zcat | xmllint --format - > export.xml
+```
+
+See also https://rutebanken.atlassian.net/browse/NRP-924
+
+## Truncate data in tiamat database
+Clean existing data in postgresql (streamline if frequently used):
+```
+TRUNCATE stop_place CASCADE;
+TRUNCATE quay CASCADE;
+TRUNCATE topographic_place CASCADE;
+```
+
+## Import data into Tiamat
+
+If you are running this from `spring:run`, then you need to make sure that you have enough memory available for the java process (in case of large data sets).
+Another issue is thread stack size, which might need to be increased when coping with really large NeTEx imports.
+Example:
+```
+export MAVEN_OPTS='-Xms256m -Xmx1712m -Xss256m -XX:NewSize=64m -XX:MaxNewSize=128m -Dfile.encoding=UTF-8'
+```
+
+### Import NeTEx file without *NSR* IDs
+This NeTEx file should not contain NSR ID. (The NSR prefix is configurable in the class ValidPrefixList)
+* Tiamat will match existing stops based on name and coordinates.
+* Tiamat will merge Quays inside stops that are close, have the same original ID and does not have too different compass bearing.
+
+Tiamat will return the modified NeTEx structure with it's own NSR IDs. Original IDs will be present in key value list on each object.
+
+```shell
+curl -XPOST -H"Content-Type: application/xml" -d@my-nice-netex-file.xml http://localhost:1997/services/stop_places/netex
+```
+
+### Importing with importType=INITIAL
+
+When importing with _importType=INITIAL_, a parallel stream will be created, spawning the original process. During import, user authorizations is checked, thus accessing SecurityContextHolder.
+By default, SecurityContextHolder use DEFAULT\_LOCAL\_STRATEGY. When using INITIAL importType, you should tell Spring to use MODE\_INHERITABLETHREADLOCAL for SecurityContextHolder, allowing Spring to duplicate Security Context in spawned threads.
+This can be done setting env variable :
+```shell
+-Dspring.security.strategy=MODE_INHERITABLETHREADLOCAL
+```
+
+If not, the application may complain about user not being authenticated if Spring tries to check authorization in a spawned process
+
+### Importing Fare Zones from FareFrame
+
+Tiamat supports importing fare zones from either SiteFrame (legacy) or FareFrame (proper NeTEx structure). Use the `fareZoneFrameSource` parameter to control the import source:
+
+**Available modes:**
+- `SITE_FRAME` (default) - Import fare zones from SiteFrame/tariffZones (backward compatible)
+- `FARE_FRAME` - Import fare zones from FareFrame/fareZones only
+
+**Examples:**
+
+```shell
+# Default mode (SITE_FRAME) - backward compatible
+curl -XPOST -H"Content-Type: application/xml" \
+  -d@my-netex-file.xml \
+  http://localhost:1888/services/stop_places/netex
+
+# Import from FareFrame only
+curl -XPOST -H"Content-Type: application/xml" \
+  -d@fareframe-data.xml \
+  "http://localhost:1888/services/stop_places/netex?fareZoneFrameSource=FARE_FRAME"
+```
+
+**Response structure:**
+- `SITE_FRAME` mode returns SiteFrame with tariffZones (existing behavior)
+- `FARE_FRAME` mode returns FareFrame with fareZones only
+
+**Note:** When using `FARE_FRAME` mode, ensure your input XML has the correct NeTEx structure with FrameDefaults before ValidBetween elements.
+
+### Combined SiteFrame and FareFrame deliveries
+
+A publication delivery may contain both a SiteFrame and a FareFrame (Nordic profile: FareZones live in the FareFrame, while the GroupOfTariffZones referencing them lives in the SiteFrame). When both frames are present:
+
+- FareZones in the FareFrame are imported first, so a GroupOfTariffZones in the SiteFrame can reference them within the same delivery.
+- Group members not supplied in the delivery are resolved against already persisted FareZones in the database. The import fails if a referenced zone cannot be resolved either way.
+
+### External versioning for GroupOfTariffZones
+
+When Tiamat acts as a replica of a master register, version numbers can be managed externally:
+
+```properties
+groupOfTariffZones.externalVersioning=false
+```
+
+When enabled:
+- Only a single version is kept per netexId, updated in place using the incoming version number.
+- After import, groups not present in the delivery are deleted (full replace semantics).
+
+The equivalent property for FareZones is `fareZone.externalVersioning`. When enabled, FareZones not present in an incoming FareFrame delivery are pruned after import.
+
+### Ignoring deprecated TariffZones on import
+
+Plain TariffZones are deprecated in favour of FareZones. To skip them during import while still importing FareZones and GroupOfTariffZones:
+
+```properties
+ignoreTariffZoneImport=false
+```
+
+## GraphQL
+GraphQL endpoint is available on
+```
+https://api.dev.entur.io/stop-places/v1/graphql
+```
+
+Tip: GraphiQL UI available on https://api.dev.entur.io/graphql-explorer/stop-places using *GraphiQL*:
+https://github.com/graphql/graphiql
+(Use e.g. `Modify Headers` for Chrome to add bearer-token for mutations)
+
+## Flyway
+To create the database for tiamat, download and use the flyway command line tool:
+https://flywaydb.org/documentation/commandline/
+
+### Migrations
+Migrations are executed when tiamat is started.
+
+### Schema changes
+Create a new file according to the flyway documentation in the folder `resources/db/migrations`.
+Commit the migration together with code changes that requires this schema change. Follow the naming convention.
+
+
+## Metrics
+
+Tiamat uses Micrometer for application metrics.
+
+## Tiamat scripts
+Various queries and scripts related to tiamat, has been collected here:
+https://github.com/entur/tiamat-scripts
+

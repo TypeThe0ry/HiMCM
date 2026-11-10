@@ -1,0 +1,33 @@
+weight_reference,city,baseline_gap_to_best_other,gap_at_50pct_cost_reduction,status,threshold_raw_multiplier,required_cost_reduction_fraction,threshold_bracket,regret_gap_at_threshold,binding_best_other_cities,strict_rule
+fixed,Vienna,8.911645410404269,6.078324036346238,not_reached,,,,,,
+fixed,Zurich,1.1863617370461554,-3.7488931049852994,crossing_found,0.8585116953662593,0.14148830463374074,"[0.8585116953662592, 0.8585116953662593]",0.0,['Oslo'],candidate regret is strictly below every other city regret; equality is a tied recommendation
+fixed,Helsinki,7.023170872018646,3.7796060631688277,not_reached,,,,,,
+fixed,Berlin,5.6993862958815455,0.046503864432843045,not_reached,,,,,,
+fixed,London,11.215633562531032,7.480335704845409,not_reached,,,,,,
+fixed,Amsterdam,13.951610581238619,10.271966278994789,not_reached,,,,,,
+fixed,Stockholm,4.307063527939668,-0.8765815892863671,crossing_found,0.5699680571881315,0.4300319428118685,"[0.5699680571881314, 0.5699680571881316]",7.105427357601002e-15,['Oslo'],candidate regret is strictly below every other city regret; equality is a tied recommendation
+fixed,Paris,7.32548048825889,3.682915675540883,not_reached,,,,,,
+fixed,Madrid,7.427643707655342,3.8836615438256956,not_reached,,,,,,
+fixed,Milan,10.358514818854978,6.624438658572551,not_reached,,,,,,
+fixed,Dublin,5.2972626476278535,2.1423831234250272,not_reached,,,,,,
+fixed,Oslo,-1.1863617370461554,-7.169360816873443,already_strict_minimax,1.0,0.0,,,,
+fixed,Prague,4.458458963236424,-1.1647560314557737,crossing_found,0.5849168306354483,0.4150831693645517,"[0.5849168306354482, 0.5849168306354484]",-7.105427357601002e-15,['Oslo'],candidate regret is strictly below every other city regret; equality is a tied recommendation
+fixed,Warsaw,8.793008127492378,5.948068280832395,not_reached,,,,,,
+fixed,Singapore,1.2001113365223546,-1.7171840063867165,crossing_found,0.7666931821387366,0.2333068178612634,"[0.7666931821387365, 0.7666931821387366]",0.0,['Oslo'],candidate regret is strictly below every other city regret; equality is a tied recommendation
+fixed,Tokyo,12.448751846240164,9.382877985814297,not_reached,,,,,,
+equal,Vienna,11.106656233235498,8.612339043456032,not_reached,,,,,,
+equal,Zurich,-0.0452194903013563,-4.582137842931701,already_strict_minimax,1.0,0.0,,,,
+equal,Helsinki,9.745191852199191,6.869179178845535,not_reached,,,,,,
+equal,Berlin,9.240785513879672,4.387964835399117,not_reached,,,,,,
+equal,London,14.089394305460573,10.821324515883767,not_reached,,,,,,
+equal,Amsterdam,16.627713972489246,13.317540229830023,not_reached,,,,,,
+equal,Stockholm,8.26690423459985,3.845696692840882,not_reached,,,,,,
+equal,Paris,9.140132954863958,5.884732682283364,not_reached,,,,,,
+equal,Madrid,10.713175837823748,7.563228182463504,not_reached,,,,,,
+equal,Milan,13.080528106398688,9.768089851884461,not_reached,,,,,,
+equal,Dublin,8.817189143534954,5.982444835441129,not_reached,,,,,,
+equal,Oslo,0.0452194903013563,-5.324258946615885,crossing_found,0.9946323771588069,0.005367622841193076,"[0.9946323771588068, 0.994632377158807]",0.0,['Zurich'],candidate regret is strictly below every other city regret; equality is a tied recommendation
+equal,Prague,6.915793689420504,2.159950783990581,not_reached,,,,,,
+equal,Warsaw,11.580353534026159,9.108886662466695,not_reached,,,,,,
+equal,Singapore,3.7647233640696385,1.1555856593559994,not_reached,,,,,,
+equal,Tokyo,17.387993730919852,14.670894255320974,not_reached,,,,,,

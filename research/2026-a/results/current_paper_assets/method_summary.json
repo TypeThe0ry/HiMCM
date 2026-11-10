@@ -1,8 +1,8 @@
 {
-  "version": "V202",
+  "version": "V203",
   "method_cases": [
     {
-      "evidence_version": "V202",
+      "evidence_version": "V203",
       "weight_reference": "fixed",
       "topsis_midpoint_winners": [
         "Zurich"
@@ -18,12 +18,12 @@
       "acceptable_stability": true,
       "single_compromise_accepted": true,
       "main_minimax_choices": [
-        "Zurich"
+        "Oslo"
       ],
       "main_possible_champion_count": 16
     },
     {
-      "evidence_version": "V202",
+      "evidence_version": "V203",
       "weight_reference": "equal",
       "topsis_midpoint_winners": [
         "Zurich"
@@ -31,13 +31,13 @@
       "vikor_q_winners": [
         "Oslo"
       ],
-      "kendall_tau_b": 0.6333333333333333,
+      "kendall_tau_b": 0.65,
       "vikor_v": 0.5,
       "acceptable_advantage_threshold": 0.06666666666666667,
-      "first_second_Q_gap": 0.05080907471041066,
-      "acceptable_advantage": false,
+      "first_second_Q_gap": 0.13992777306855705,
+      "acceptable_advantage": true,
       "acceptable_stability": true,
-      "single_compromise_accepted": false,
+      "single_compromise_accepted": true,
       "main_minimax_choices": [
         "Zurich"
       ],

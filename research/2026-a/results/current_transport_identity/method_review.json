@@ -1,0 +1,71 @@
+{
+  "conclusion": "The same evidence standard supports a conditional source-defined NSR stop-place inventory with conservative exact-name merging. A requirement for individually proven physical uniqueness for Oslo alone would be stricter than accepted VBZ 446 and selected official station-group inventories. This is conditional source-defined facility supply, not proof of a common physical-unit convention or contemporaneous service.",
+  "decision": "827 is a defensible controlled candidate after targeted eligibility and alias review, not an admitted change. The existing V202 89 lower bound remains active.",
+  "unit_rule": "Collapse NSR mode-specific StopPlaces by native parent; retain eligible bus, tram, metro, rail and water groups assigned to municipality 0301; collapse identical strip/casefold root names globally; count each resulting group once. Treat merging distant same-name locations as conservative undercount, not proof of identity.",
+  "reproduced": {
+    "parent_collapsed_roots": 829,
+    "unique_normalized_root_names": 827,
+    "same_name_groups": {
+      "trosterud": [
+        "NSR:StopPlace:5677",
+        "NSR:StopPlace:6197"
+      ],
+      "midtstuen": [
+        "NSR:StopPlace:6302",
+        "NSR:StopPlace:6313"
+      ]
+    },
+    "population": 727797,
+    "density_per_100000": 113.6305865509201,
+    "heuristic_517_admitted": false,
+    "add_89": false
+  },
+  "comparators": [
+    {
+      "city": "Zurich",
+      "count": 446,
+      "evidence": "VBZ city-territory published stop aggregate; official stop/platform distinction; no independent 2025 named-location census."
+    },
+    {
+      "city": "Paris",
+      "count": 244,
+      "evidence": "Official intra-muros metro-station aggregate counts interchanges once and distinguishes line stop-points; other modes not added."
+    },
+    {
+      "city": "Vienna",
+      "count": 99,
+      "evidence": "Operator station-area IDs cross-matched to independently mapped existing metro stations; larger multimode inventory rejected due to depot and dummy/non-passenger entries."
+    },
+    {
+      "city": "London",
+      "count": 59,
+      "evidence": "Native station/hub entities; potentially overlapping same-name or connected hubs excluded conservatively."
+    }
+  ],
+  "material_uncertainties": [
+    "Native parent relationships support multi-mode grouping; they do not guarantee all aliases were grouped or imply service frequency.",
+    "Two same-name bus/metro pairs are separate parent roots; their same-name merger does not prove either physical identity.",
+    "Two differently named cross-mode root pairs have centroids under 40m: Oslo Hjortneskaien water / Filipstad bus (~23.6m); Holbergs plass bus|tram / Radisson Blu Scandinavia bus (~37.4m). Short distance alone does not establish a common stop.",
+    "NSR describes all stops actively used by public transport as required in the registry; it does not establish that every exported record is currently served or passenger-eligible. No all-record operational status claim.",
+    "This decision does not infer interchangeable cross-city stop definitions or directly establish teen access."
+  ],
+  "pre_admission_gates": [
+    "Verify exact parent grouping, municipality and eligibility from raw snapshot and rerun the 827 count independently.",
+    "Check source details for the identified same-name pairs and the two close differently named pairs; merge or exclude a root if evidence supports overlap, and preserve unresolved judgments explicitly. Proximity alone is not an identity rule.",
+    "Review the actual exported type/mode/status fields and a targeted sample of anomalous records for depot, dummy, non-public, planned or retired facilities; remove evidenced ineligible entries. Do not require real-time service or ground-truth proof for every stop when other retained official inventories do not.",
+    "Document named administrative counting convention, export date, fixed population, uncertainty and upper bound 1; do not sum the existing 89. Complete controlled model and independent review before changing V202."
+  ],
+  "source_hashes": {
+    "data/task4_v120_transport/README.md": "c330db1d5064c6a68c8e107697eb3a79ed97545a4de5c6fe833880d71456f4e9",
+    "design/task4_user_v120_admissions.json": "82dd4a00b0461832373665bd342bfd1fe4c13bcbe689bef322628bf2dcf05ec7",
+    "data/task4_v118_transit/README.md": "2550c2be8894b2eeef54f330b2dde5473f592e677fae58d21519aaf927b461e7",
+    "data/task4_v121_transport/README.md": "8b1d65bca42f7a3a0cc5f3aefd1b112dd24b1ebb30d22d7198165184f99748be",
+    "data/task4_v127_vienna_transport/README.md": "115d9b7c6bafbe99e081ff50c3df589fca618d2f1cd74561e64adb4af4526c31",
+    "data/task4_v129_transport/README.md": "a6722bee2d66e208c8134c9eef752ae708d80947bd56d2993a330889fff92271",
+    "data/task4_v135_london/README.md": "aaa901f0d38a03b479e5ff2facf0e90380f66bc32a7ef50ac920558cb4225b89",
+    "data/current_oslo_transport/conservative_basins.csv": "7cfe7a1f51d689efef7b634f63d0e17b25971c527c0a8d3908a6cf209d009677",
+    "results/current_transport_candidate/source_verification.json": "70dd71ff1346c50083ec02eb8ed90890312945873734954ffcd9802dfc03111c",
+    "results/current_transport_candidate/verification.json": "407c6c09085533eeaac62123ecf25805b2ccce44b6cdc9204b34145ec1307340"
+  },
+  "scope": "Methodological review only; no model, raw data, manuscript, or navigation changes."
+}

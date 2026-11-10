@@ -1,33 +1,33 @@
 {
-  "extension_version": "V202",
-  "primary_evidence_version": "V202",
+  "extension_version": "V203",
+  "primary_evidence_version": "V203",
   "primary_registry": "design/task4_user_current_model.json",
-  "primary_snapshot": "design/task4_user_v202_snapshot.json",
+  "primary_snapshot": "design/task4_user_v203_snapshot.json",
   "modules": {
     "preferences": {
-      "script": "scripts/task4_v202_extensions.py preferences",
-      "results": "results/task4_v202_preferences"
+      "script": "scripts/task4_v203_extensions.py preferences",
+      "results": "results/task4_v203_preferences"
     },
     "future": {
-      "script": "scripts/task4_v202_extensions.py future",
-      "results": "results/task4_v202_future"
+      "script": "scripts/task4_v203_extensions.py future",
+      "results": "results/task4_v203_future"
     },
     "method": {
-      "script": "scripts/task4_v202_extensions.py method",
-      "results": "results/task4_v202_method"
+      "script": "scripts/task4_v203_extensions.py method",
+      "results": "results/task4_v203_method"
     },
     "diagnostics": {
-      "script": "scripts/task4_v202_extensions.py diagnostics",
-      "results": "results/task4_v202_diagnostics"
+      "script": "scripts/task4_v203_extensions.py diagnostics",
+      "results": "results/task4_v203_diagnostics"
     }
   },
   "changes_primary_model": false,
-  "independent_audit": "results/task4_v202_transition/verification.json",
-  "audit_script": "scripts/audit_task4_v202.py",
+  "independent_audit": "results/task4_v203_transition/verification.json",
+  "audit_script": "scripts/audit_task4_v203.py",
   "manuscript_entry": "../HiMCM-Overleaf/main.tex",
   "root_review_entry": "../HiMCM-Overleaf/main.tex",
   "activation_status": "active",
-  "supersedes": "V200 science and prior current manuscript",
+  "supersedes": "V202 science and preceding current manuscript",
   "historical_cases": "Six V137 historical country/age/fairness CSV files byte-identical; no synthetic same-country pair in the primary16; no age survey or observed future trend",
   "paper_verification": "results/current_paper_review/current_verification.json",
   "shared_main_entry": "../HiMCM-Overleaf/main.tex"

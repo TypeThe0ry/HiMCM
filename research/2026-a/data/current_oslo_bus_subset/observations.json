@@ -1,0 +1,115 @@
+{
+  "status": "candidate_not_admitted",
+  "count": 626,
+  "excluded_unresolved_discontinuation_tag": {
+    "id": "NSR:StopPlace:6109",
+    "name": "Tveten bru",
+    "note": "Tag asks whether discontinued or may be deactivated; exclusion is precautionary and does not assert closure."
+  },
+  "source_export_date": "2026-11-09",
+  "source_capture_utc": "2026-11-10T04:43:09.016032+00:00",
+  "population": 727797,
+  "population_year": 2025,
+  "density_per_100000": 86.01299538195403,
+  "utility_lower": 0.6323880680696051,
+  "utility_upper": 1,
+  "group_definition": "NSR parent-collapsed group; every mode-bearing member bus/onstreetBus; all members municipality 0301 and centroid inside archived polygon; root names unique after strip/casefold; no proximity merge; all quay IDs supporting metadata, not units",
+  "scope": "Conditional administrative stop-place inventory, not a claim that all are served or public/private access; 2026 source and fixed 2025 population. Do not add 89 metro stations; no admission to V202.",
+  "unique_quays": 1270,
+  "groups_without_quays": 0,
+  "nested_validity_intervals": 626,
+  "mode_bearing_members_without_quays": [],
+  "keyword_flagged_source_fields": [
+    {
+      "id": "NSR:StopPlace:5695",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:5697",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:5699",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:5721",
+      "field": "VERSION_COMMENT",
+      "value": "flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:5773",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:5853",
+      "field": "VERSION_COMMENT",
+      "value": "flyttet lokasjon på en stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:5928",
+      "field": "VERSION_COMMENT",
+      "value": "flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:5943",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stopp permanent"
+    },
+    {
+      "id": "NSR:StopPlace:59675",
+      "field": "VERSION_COMMENT",
+      "value": "flyttet lok"
+    },
+    {
+      "id": "NSR:StopPlace:5997",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stolpe til ny plassering"
+    },
+    {
+      "id": "NSR:StopPlace:6001",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:6111",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:6175",
+      "field": "VERSION_COMMENT",
+      "value": "Varig endring flytting av stopp punkt"
+    },
+    {
+      "id": "NSR:StopPlace:62942",
+      "field": "VERSION_COMMENT",
+      "value": "Flyttet stolpe"
+    },
+    {
+      "id": "NSR:StopPlace:6368",
+      "field": "VERSION_COMMENT",
+      "value": "flyttet lok"
+    }
+  ],
+  "rail_replacement_bus_member_ids": [
+    "NSR:StopPlace:317",
+    "NSR:StopPlace:668"
+  ],
+  "bus_submodes": {
+    "railReplacementBus": 2,
+    "": 635,
+    "localBus": 2
+  },
+  "suspicious_name_keyword_matches": [],
+  "sha256": {
+    "source": "63a3bef9e342a22f87f44c1229a2d9c0fe4f594b410a1383051eb11dd7f6f569",
+    "boundary": "d7414f33811a16a7c141ec9008d29b33e662531c71999c9be878770a46eec9dc",
+    "derived_csv": "d817db2e0d912837d1ce7d79f137fc845f320d51cb79f7908ba15340f7efa89a",
+    "extract_script": "ad30a96f3195dc04f66ba56a85cb5da64236dd812e40c03709dc22590d62c2a8"
+  }
+}

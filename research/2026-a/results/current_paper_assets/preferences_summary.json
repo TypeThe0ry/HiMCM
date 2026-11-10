@@ -1,11 +1,11 @@
 {
-  "version": "V202",
-  "primary": "V202",
+  "version": "V203",
+  "primary": "V203",
   "profiles": [
     {
       "profile": "baseline",
       "minimax_choices": [
-        "Zurich"
+        "Oslo"
       ],
       "possible_champions": [
         "Vienna",
@@ -27,30 +27,30 @@
       ],
       "necessary_champions": [],
       "kendall_tau_b_vs_baseline": 1.0,
-      "mean_score_interval_width": 15.955820475866993,
+      "mean_score_interval_width": 15.82232695332216,
       "consistency_ratio": 0.0,
       "mc_settings": [
         {
           "concentration": 20,
-          "most_recommended": "Zurich",
-          "most_recommended_frequency": 0.3832
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.3909
         },
         {
           "concentration": 100,
-          "most_recommended": "Zurich",
-          "most_recommended_frequency": 0.4318
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.5738
         },
         {
           "concentration": 500,
-          "most_recommended": "Zurich",
-          "most_recommended_frequency": 0.4762
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.8243
         }
       ]
     },
     {
       "profile": "education_priority",
       "minimax_choices": [
-        "Singapore"
+        "Oslo"
       ],
       "possible_champions": [
         "Vienna",
@@ -71,31 +71,31 @@
         "Tokyo"
       ],
       "necessary_champions": [],
-      "kendall_tau_b_vs_baseline": 0.7333333333333334,
-      "mean_score_interval_width": 16.900850614639445,
+      "kendall_tau_b_vs_baseline": 0.75,
+      "mean_score_interval_width": 16.791014572027294,
       "consistency_ratio": 0.0,
       "mc_settings": [
         {
           "concentration": 20,
-          "most_recommended": "Singapore",
-          "most_recommended_frequency": 0.3888
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.4403
         },
         {
           "concentration": 100,
-          "most_recommended": "Singapore",
-          "most_recommended_frequency": 0.557
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.7159
         },
         {
           "concentration": 500,
-          "most_recommended": "Singapore",
-          "most_recommended_frequency": 0.7429
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.9282
         }
       ]
     },
     {
       "profile": "independent_living_priority",
       "minimax_choices": [
-        "Zurich"
+        "Oslo"
       ],
       "possible_champions": [
         "Vienna",
@@ -117,23 +117,23 @@
       ],
       "necessary_champions": [],
       "kendall_tau_b_vs_baseline": 0.8833333333333333,
-      "mean_score_interval_width": 21.98422427370502,
+      "mean_score_interval_width": 21.764129260088666,
       "consistency_ratio": 0.0,
       "mc_settings": [
         {
           "concentration": 20,
-          "most_recommended": "Zurich",
-          "most_recommended_frequency": 0.4553
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.4986
         },
         {
           "concentration": 100,
-          "most_recommended": "Zurich",
-          "most_recommended_frequency": 0.5821
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.7028
         },
         {
           "concentration": 500,
-          "most_recommended": "Zurich",
-          "most_recommended_frequency": 0.7282
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.9227
         }
       ]
     }

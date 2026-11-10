@@ -1,0 +1,9 @@
+weight_reference,target,case,radius,gap,recommendation
+fixed,Oslo,baseline,0.0,-1.1863617370461697,['Oslo']
+fixed,Oslo,five_percent,0.05,-0.8082227834991969,['Oslo']
+fixed,Oslo,ten_percent,0.1,-0.4286634870714394,['Oslo']
+fixed,Oslo,boundary_or_limit,0.15606326638370097,0.0,"['Zurich', 'Oslo']"
+equal,Zurich,baseline,0.0,-0.04521949030134209,['Zurich']
+equal,Zurich,five_percent,0.05,0.3033616454042729,['Oslo']
+equal,Zurich,ten_percent,0.1,0.652124455584854,['Oslo']
+equal,Zurich,boundary_or_limit,0.006483393004901084,0.0,"['Zurich', 'Oslo']"

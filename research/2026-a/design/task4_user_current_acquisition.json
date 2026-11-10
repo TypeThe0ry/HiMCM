@@ -1,6 +1,6 @@
 {
   "primary_model": "V202",
-  "role": "Current V202 acquisition limits and bounded source follow-up; no new observation",
+  "role": "Priority diagnostic computed under preceding V202; rebase before next acquisition",
   "results": "results/current_priority",
   "script": "scripts/task4_current_priority.py",
   "audit": "results/current_priority/verification.json",
@@ -17,8 +17,8 @@
     "results/current_priority/all_uncertain_priority.csv": "e7224cb1627f73a9cbc3fb736ce7a1af5ec1a5e4f6ed3f5dd8eae80a56fab884",
     "results/current_priority/previous_V200.csv": "88220592dbea591a8f59143ba3049ebaccf7273c541e56b68310b3360f22a669"
   },
-  "active_primary_model": "V202",
-  "priority_rebase_required": false,
+  "active_primary_model": "V203",
+  "priority_rebase_required": true,
   "admitted_candidate": {
     "venue": "OCBC Aquatic Centre",
     "combined_inventory_count": 26,
@@ -44,5 +44,15 @@
       "Zurich"
     ],
     "next_action": "Reconcile named cross-mode physical identity and service eligibility, no arbitrary radius proof"
+  },
+  "oslo_bus_admission": {
+    "active_model": "V203",
+    "raw_count": 626,
+    "source_defined_single_mode": true,
+    "refines_lower_only": true,
+    "primary_newly_filled_cells": 0,
+    "admissions": "design/task4_user_v203_admissions.json",
+    "source_audit": "results/current_transport_identity/bus_subset_audit.json",
+    "research_audit": "results/task4_v203_transition/verification.json"
   }
 }

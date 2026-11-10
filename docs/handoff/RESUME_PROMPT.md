@@ -1,18 +1,18 @@
-# 恢复HiMCM：V202科学／单一当前main
+# 恢复HiMCM：V203科学／唯一当前main
 
-先读AGENTS.md、GUIDELINES.md和[当前模型更新](CURRENT_MODEL_UPDATE.md)。长期goal active。所有文字必用指定反防御写作技能；低级subagent Luna，高级Terra6.1。
+先读AGENTS.md、GUIDELINES.md及CURRENT_MODEL_UPDATE.md。长期goal active；全部文字必用指定反防御写作技能。简单subagent Luna，高级Terra6.1。
 
-当前16城×10：design/task4_user_current_model.json与current_extensions.json登记V202；476不可变绑定，用户CSV SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c保持。112点／37部分／11全未知，25不同补充键。Singapore具名库存25ActiveSG＋1OCBC＝26，23剔除原三处告示场馆、22剔除全部四处告示场馆敏感性；非全部开放或青少年可达，保留2024人口6036900与2026捕获年份。其他159格／全部上界／权重／区间规则保持。
+主分析16城×10、V203，入口design/task4_user_current_model.json及current_extensions.json。548不可变绑定继承V202的476；用户CSV SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c。112点／37部分／11未知，25不同补充键。只有Oslo交通下界从89改626，其他159下界、全部上界、原表、权重和规则保持；撤回精确恢复V202。
 
-当前论文：Overleaf只有根main.tex及四图、原类／参考库和简短说明；GitHub paper/current/镜像七个编译依赖＋PDF。27页＝25正文参考＋2暂定AI，61引用，18213暂用。所有标题／Summary／主题在实际main。用户最新要求本地与远程同步、版本控制全在GitHub；不得恢复Overleaf多版本drafts或根入口。旧985文件已逐字节转存paper/history/overleaf_before_single_main_20261110/，队友原main哈希40a63df3cb2b0e2524fbbe4f7fd19d904851bc4e2e3b7b99d50d477a4da7f0c1保持。
+626为原生父子合并且所有成员均bus/onstreetBus的单模式组，2026-11-09导出、固定2025人口727797；不与89相加、不称全部当前服务。Tveten bru :6109因备注疑问预防性剔除，不断言关闭。撤回两个铁路替代公交、空查询Midtstuen、全部三组分别624／625／623；结论保持。627包含疑问站仅为敏感性。829全方式行政替代仍另列，517距离聚类不准入。
 
-固定均宽15.9558204759、等权18.6558156974；Zurich保守、16可能／0必要。教育优先、固定资源扩展和生活压力情景Singapore，平衡改善Zurich；κ100 ZH/Oslo/SG条件频率43.18/18.01/38.41%。单Zurich均值40.06840分钟、联合箱0.42205%／63.44548%，绑定SG／Oslo。基准期望均秩排序未由通用界区分，4260明确／180未区分、18唯一最小组。AHP非学生调查、未来非拟合趋势。
+当前固定权重保守选择Oslo，等权Zurich，16可能／0必要。固定均宽15.8223269533、等权18.3918116239，累计收窄15.89%。偏好两方案Oslo；固定未来三情景Oslo，等权依次Oslo／Zurich／Oslo。κ100条件频率ZH25.48／Oslo57.38／SG17.10%，不是现实概率。联合12均值箱：固定目标Oslo15.6063%、等权目标Zurich0.6483%；Zurich单均值分界28.10／40.50分钟。Zurich凶杀率固定在[0,5]无切换、等权约0.14981。精度2064均值／37设置、4440对中4271明确／169未决、23组唯一期望均秩最小。AHP非学生调查，未来非拟合趋势。
 
-当前地图来源见[CURRENT_SPATIAL_UPDATE.md](CURRENT_SPATIAL_UPDATE.md)；当前审计results/current_paper_review/current_verification.json与verification.json；当前交付同目录delivery_verification.json：48项／63锚点／12实质待办。单main本地27页全部文字及灰度像素与独审稿一致，985归档、当前镜像、原生页眉空页脚通过。服务器预览未核；真实注册、全队AI与最终比赛提交保持待验证。冻结版本审计指向归档旧路径，不按旧P目录直接重跑。
+科学独审results/task4_v203_transition：18案例108组各1万次MC、1104标量、16384角点，六历史同国／年龄／公平性CSV字节保持。548科学绑定已冻结，不再改V203来源或科学结果；旧staged标签记录创建时点，当前注册表决定启用状态。当前稿验收results/current_paper_review/；重现scripts/task4_current_reproduce.py需干净P HEAD、绝对解释器/data/projects/HiMCM/.venv-v120/bin/python，不能使用系统Python或.venv。
 
-居民网格卫星／定量3D图仍在第16页，新闻第19页一页。当前476科学绑定、独立核查与交付记录见results/current_paper_review/；早期V202科学审查的staged标记保留创建时点，当前注册表决定启用状态。48不确定格采集价值已重基至V202并独审，见CURRENT_DATA_UPDATE.md与results/current_priority/verification.json；OCBC已准入，不重复迁移。Zurich性别比例页及底层CSV、全国2022通勤分布和Dublin2019–20仅学生数表均无法匹配，0准入；本轮5份新原件审查见source_followup_verification.json。下一轮跳过这些失败来源，不发送外部联系请求。分别fetch、审diff、commit/push并核远端HEAD；在线编译预览未核。
+Overleaf只有main.tex、四图、原类／参考库和简短说明；GitHub paper/current/镜像七依赖＋PDF。27=25正文参考＋2AI、61引用，18213暂用；卫星3D图16、新闻19。旧985文件与队友原main已逐字节归档；原类／参考库／队友内容不改。线上编译、真实注册、全队AI及比赛提交未核，仍12实质待办。
 
-最新交通口径对照见results/current_transport_candidate/：官方Oslo829原生行政StopPlace替代89站时两权重均转Oslo，仍16可能／0必要；实体去重与服务状态未认证，829及517启发聚类均0主准入。主V202与MC不变，新增说明已入摘要／数据／5.5。下一步定点消歧Trosterud、Midtstuen等跨方式身份及操作状态，不能把行政ID当已认证实体数。Zurich州WFS479不等于市内实体下界，原446保持。不要重复抓取本轮导出或半径聚类。
+下一轮先把V202的48格优先级重基至V203，不重复626源提取／829聚类／四站服务查询／旧师资失败路线。数据失败就跳过，不发送外部联系请求。分别fetch、审diff、commit/push并核远端HEAD；Overleaf仍只覆盖同一main，不上传研究版本稿。
 
 ## 冻结恢复档案（以下为历史，不作为当前入口）
 

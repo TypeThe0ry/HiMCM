@@ -1,36 +1,44 @@
 {
   "status": "pass",
   "version": "current",
-  "primary_model": "V202",
-  "pdf_sha256": "dcb04e48ada394192a8cd58a8c0b90f2a54d9102e58868548a82304fa672ed4f",
+  "primary_model": "V203",
+  "pdf_sha256": "5fb49a9d7752305740ccb0bc187992cd09a6e082988673855809f9e2980bc501",
   "main_entry": "main.tex",
-  "main_source_sha256": "4291a471ff653f3b25aeb48c400e389d43d2ad445ec9111e8a81a19dab5d19f0",
+  "main_source_sha256": "c6e8bab4cf48939c9a52f9a3c63e3c46d79561248eec2af143e10b39705e3454",
   "total_pages": 27,
   "main_and_references_pages": 25,
   "underfull_counts": [
-    1,
-    1
+    2,
+    2
   ],
   "reference_keys": 61,
   "current_files_sha256": {
-    "main.tex": "4291a471ff653f3b25aeb48c400e389d43d2ad445ec9111e8a81a19dab5d19f0",
+    "main.tex": "c6e8bab4cf48939c9a52f9a3c63e3c46d79561248eec2af143e10b39705e3454",
     "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
     "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
     "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
-    "figures/identification_matrix.pdf": "aa469ef3cc653823f076c1dd161c6a807ac33b22806c59cebf0aee752a15f0f8",
-    "figures/score_intervals.pdf": "91ec66c7720ae845102aa96a90837e01708981d0b20ead6820228a0d933cd1a0",
+    "figures/identification_matrix.pdf": "dfee08dabba094a88a427e4172ee4dbebed93684e9120ab312900df8aa5c56e4",
+    "figures/score_intervals.pdf": "f16bdb7d67121bc041df888593e785173bc784b4ee2f84c9d98f76d93d84240d",
     "figures/walktime_context.pdf": "6f4ff894842277139db41d2a318b5da6358e02a74525d0d588a3c384a11e99db"
   },
   "source_mirror_files": 7,
   "single_current_tex_entry": true,
-  "independent_audit_sha256": "05130f5c12080b7cb33cf14a0d96cc6f4611133b26d692b4ef05538a06a8c133",
-  "delivery_audit_sha256": "8adf595fffbe3b7c82b1bb25cb8cb3039709078d09d668d2a820c2a8f3dd87da",
-  "visual_review_sha256": "448da7f9445190b2a19ebae210d744a6be657f8c80fceee4125279ed88195829",
+  "independent_audit_sha256": "e48cd2127fbdae2315d706fb95214514a9752ac3481876ad1a3f3552b5741f63",
+  "delivery_audit_sha256": "0a645968841ca22d9555a419a68150364796db3221699959fcf9664992b9448d",
+  "visual_review_sha256": "6917dfa875626180f553a716fc72f8e2e0ed4830197a22c0fbdc6826586f55a6",
   "native_letter_headers_empty_footers_checked": true,
-  "science_bindings_verified": 476,
+  "science_bindings_verified": 548,
   "server_compile_verified": false,
   "submission_ready": false,
-  "scope": "Current main locally compiled and independently audited; clean Git build reproduction separate; not final team acceptance",
+  "scope": "Current actual main locally audited and visually reviewed;548science bindings;cleanGit reproduction separate; online preview and final team acceptance unverified",
   "transport_definition_alternative_disclosed": true,
-  "primary_89_metro_bound_unchanged": true
+  "oslo_626_source_defined_bus_lower_admitted": true,
+  "default_recommendations": {
+    "fixed": [
+      "Oslo"
+    ],
+    "equal": [
+      "Zurich"
+    ]
+  }
 }

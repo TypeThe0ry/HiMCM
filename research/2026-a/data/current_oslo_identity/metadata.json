@@ -1,0 +1,43 @@
+{
+  "url": "https://api.entur.io/journey-planner/v3/graphql",
+  "method": "POST",
+  "request_headers": {
+    "Content-Type": "application/json",
+    "ET-Client-Name": "himcm-research"
+  },
+  "request_sha256": "09e52cab16a769b78137051fa5416ec6e1fbf299449a3553413b57d9b76b0adc",
+  "response_status": 200,
+  "response_headers": {
+    "access-control-allow-credentials": "false",
+    "content-type": "application/json",
+    "date": "Tue, 10 Nov 2026 05:05:07 GMT",
+    "vary": "Accept, Accept-Encoding, Accept-Language",
+    "x-correlation-id": "85f00d10-d936-48ae-8f3e-6656e9ede479",
+    "alt-svc": "h3=\":443\"; ma=2592000",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "x-robots-tag": "none",
+    "rate-limit-allowed": "2000",
+    "rate-limit-used": "1",
+    "rate-limit-available": "1999",
+    "rate-limit-range": "PT2M",
+    "rate-limit-expiry-time": "Tue Nov 10 2026 05:07:07 GMT-0000 (GMT)",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "origin, x-requested-with, accept, ET-Client-Name, ET-Client-Id, Content-Type, X-Correlation-Id, entur-pos",
+    "access-control-max-age": "3628800",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "x-request-id": "ebc77c2e-7606-40c5-9096-6c267988e8cd",
+    "via": "1.1 google",
+    "Alt-Svc": "h3=\":443\"; ma=2592000",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked"
+  },
+  "retrieved_utc": "2026-11-10T05:05:07.849326+00:00",
+  "response_bytes": 11432,
+  "response_sha256": "3e6c74b8c251ce9f0ce746667dffc546a7dfb12f30aa1bc87c795b7e374b015f"
+}

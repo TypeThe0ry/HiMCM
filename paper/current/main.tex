@@ -23,7 +23,7 @@ keywordsinsheet=true,titlepage=false,abstract=true}
 \author{}\date{}
 \hypersetup{pdftitle={Choosing a City for High-School Life with Incomplete Evidence},pdfauthor={}}
 \graphicspath{{./}{figures/}}
-% Current manuscript assets from V202 evidence and controlled extensions; historical cases retained.
+% Current manuscript assets from V203 evidence and controlled extensions; historical cases retained.
 \newcommand{\EquityCase}{A separate 2025 Shanghai school-location case covers 16 districts,
 235,542 regular senior-secondary pupils and 23,999 full-time teachers.
 Pooled resource utility is 0.604481 and the pupil-weighted district mean is
@@ -42,35 +42,35 @@ cannot join census school-stage travel bins without matched populations and
 reference days \cite{istanbul,sgage}.}
 \newcommand{\CountryInterpretation}{Phoenix has higher retained affordability utilities than New York. Mumbai has the higher PM$_{2.5}$ utility; Delhi leads in living-cost, housing, school-resource and broadband utilities. Both score pairs overlap. }
 \newcommand{\CaseReferences}{\bibitem{shanghai} Shanghai Municipal Education Commission. Regular secondary-school pupil and teacher tables, school year 2025. \url{https://edu.sh.gov.cn/xxgk2_zhzw_tjsj_01/20260610/890926a33cbf443d9abf07c6f65b7734.html}. \bibitem{istanbul} Istanbul Metropolitan Municipality. 2012 household transport survey, official data-portal response resource \texttt{a75118db-28c9-4fdf-b367-d5933b7bb810}; questionnaire, report and nonidentifying aggregate audit archived. \bibitem{sgage} Singapore Ministry of Education. Secondary enrolment by level and age, 2020. \url{https://data.gov.sg/datasets/d_cc84fc751ef5106d9e26cfdbf61776c8/view}.  }
-\newcommand{\CurrentMeanWidth}{15.95582}
-\newcommand{\TotalWidthReduction}{15.18}
-\newcommand{\LatestEvidenceChange}{Adding OCBC Aquatic Centre to Singapore's 25-venue inventory narrows the preceding fixed-weight mean from 15.95813 to 15.95582; inventory does not establish current opening or teen access. }
-\newcommand{\RevisionRankChanges}{13}
-\newcommand{\SummaryWeightMC}{In 10,000 baseline weight perturbations at Dirichlet concentration 100, Zurich is recommended in 43.18\% of draws, compared with 18.01\% for Oslo and 38.41\% for Singapore. }
-\newcommand{\MethodComparison}{TOPSIS selects Zurich at the midpoint, whereas VIKOR selects Dublin; Kendall's $\tau_b=0.500$. Dublin satisfies VIKOR's advantage and stability conditions. Under equal weights, $\tau_b=0.633$; Oslo has the lowest VIKOR index but fails those acceptance conditions, so it is not an accepted unique compromise solution. }
-\newcommand{\FutureDeterministic}{Under fixed weights, resource expansion and living pressure select Singapore; balanced improvement retains Zurich. Equal weights retain Zurich in all three scenarios. With the Singapore historical stage-travel proxy withdrawn, Zurich remains the recommendation in all scenarios under both weights. All sixteen cities remain possible champions. }
-\newcommand{\FutureThresholds}{Singapore reaches the tie at approximately 0.297\% reduction, Oslo at 10.152\%, and Stockholm at 32.813\%. Zurich already minimizes regret at baseline. A slightly greater reduction produces a strict recommendation switch in these calculations. }
-\newcommand{\FutureMonteCarlo}{Specifically, $C\sim U[0,1]$ is shared across cities and $I_i\sim U[0,1]$ varies by city, independently; $\delta_i=0.05C+0.05I_i$. The relevant raw multipliers are $1+\delta_i$ or $1-\delta_i$, and affected criteria within a city share that multiplier. With 10,000 draws per scenario, Zurich's fixed-weight recommendation frequencies are 8.00\%, 49.64\%, 67.70\% for resource expansion, living pressure and balanced improvement respectively. }
+\newcommand{\CurrentMeanWidth}{15.82233}
+\newcommand{\TotalWidthReduction}{15.89}
+\newcommand{\LatestEvidenceChange}{The Oslo bus-stop subset narrows the preceding fixed-weight mean from 15.95582 to 15.82233; the subset is a 2026 inventory with the supplied population. }
+\newcommand{\RevisionRankChanges}{14}
+\newcommand{\SummaryWeightMC}{In 10,000 baseline weight perturbations at Dirichlet concentration 100, Zurich is recommended in 25.48\% of draws, compared with 57.38\% for Oslo and 17.10\% for Singapore. }
+\newcommand{\MethodComparison}{TOPSIS selects Zurich at the midpoint, whereas VIKOR selects Dublin under fixed weights; Kendall's $\tau_b=0.500$. Under equal weights, VIKOR selects Oslo and $\tau_b=0.650$. Both VIKOR choices satisfy its acceptance conditions. }
+\newcommand{\FutureDeterministic}{Fixed weights select Oslo in all three scenarios; equal weights select Oslo, Zurich and Oslo, respectively. With Singapore historical stage-travel withdrawn, these choices remain the same. All sixteen cities remain possible champions. }
+\newcommand{\FutureThresholds}{Oslo already minimizes regret at baseline. Zurich, Singapore and Stockholm reach a tie after hypothetical joint reductions in pupil--teacher ratio, PM$_{2.5}$ and travel duration of 14.149\%, 23.331\%, 43.003\%, respectively. These are hypothetical thresholds. }
+\newcommand{\FutureMonteCarlo}{Specifically, $C\sim U[0,1]$ is shared across cities and $I_i\sim U[0,1]$ varies by city, independently; $\delta_i=0.05C+0.05I_i$. The relevant raw multipliers are $1+\delta_i$ or $1-\delta_i$, and affected criteria within a city share that multiplier. With 10,000 draws per scenario, Oslo's fixed-weight recommendation frequencies are 100.00\%, 100.00\%, 100.00\% for resource expansion, living pressure and balanced improvement respectively. }
 \newcommand{\ProxyWithdrawalMC}{Repeating the same shocks after withdrawing Singapore's historical stage-travel proxy gives 100.00\%, 100.00\%, 100.00\% respectively. These paired calculations isolate dependence on that proxy while retaining the chosen shock distribution. }
-\newcommand{\PreferenceResults}{Education priority changes the conservative recommendation from Zurich to Singapore, with decision-rank $\tau_b=0.733$ relative to baseline. Independent-living priority retains Zurich and gives $\tau_b=0.883$. All sixteen cities remain possible champions in each profile. }
-\newcommand{\PreferenceEvidenceChange}{The additional venue retains the education-priority choice of Singapore. }
-\newcommand{\EvidenceThresholdCheck}{Berlin's hypothetical combined-cost tie threshold is 41.450\% with the current retained inputs. Scenario definitions and weights are unchanged. }
-\newcommand{\MonteCarloInterpretation}{At concentration 100, Singapore, Zurich and Oslo have sample mean decision ranks of 2.0515, 2.1651, 2.3425, respectively. The finite-draw pairwise bounds determine which expected orderings are resolved. }
+\newcommand{\PreferenceResults}{Both education and independent-living priorities retain Oslo; their decision-rank $\tau_b$ values relative to baseline are 0.750 and 0.883. All sixteen cities remain possible champions. }
+\newcommand{\PreferenceEvidenceChange}{The 2026 bus-stop subset changes the baseline evidence bounds. }
+\newcommand{\EvidenceThresholdCheck}{Berlin does not reach a tie within the tested 50\% joint reduction. }
+\newcommand{\MonteCarloInterpretation}{At concentration 100, Singapore, Zurich and Oslo have sample mean decision ranks of 2.4630, 2.5125, 1.5680, respectively. The finite-draw pairwise bounds determine which expected orderings are resolved. }
 \newcommand{\MCBaseMeans}{2064 }
 \newcommand{\MCSettings}{37 }
 \newcommand{\MCPairComparisons}{4440 }
-\newcommand{\MCCertifiedPairs}{4260 }
-\newcommand{\MCUnresolvedPairs}{180 }
-\newcommand{\MCUniqueMinSettings}{18 }
+\newcommand{\MCCertifiedPairs}{4271 }
+\newcommand{\MCUnresolvedPairs}{169 }
+\newcommand{\MCUniqueMinSettings}{23 }
 \newcommand{\MCFrequencyHalfWidthPP}{2.38 }
 \newcommand{\MCRankHalfWidth}{0.357 }
 
 \begin{document}
 \begin{abstract}
 We compare sixteen cities for high-school life across ten indicators. Fixed-anchor
-TOPSIS and maximum regret recommend Zurich under baseline and equal weights;
-all sixteen remain possible champions within the retained evidence intervals.
-An alternative Oslo transport counting definition selects Oslo under both weights.
+TOPSIS and maximum regret recommend Oslo under baseline weights and Zurich
+under equal weights; all sixteen remain possible champions within the retained
+evidence intervals. An alternative registry counting definition selects Oslo under both.
 
 Official records supplement 25 originally missing city--indicator entries without
 replacing team values. The mean score-interval width falls from 18.81077 to
@@ -78,18 +78,18 @@ replacing team values. The mean score-interval width falls from 18.81077 to
 retains 48 uncertain entries and changes \RevisionRankChanges{} fixed-weight ranks
 from midpoint completion; separate interior completions let each city lead.
 
-Withholding Zurich's homicide point selects Singapore under baseline weights and
-Oslo under equal weights. Withdrawing its work-commute proxy selects Singapore
-under baseline weights and retains Zurich under equal weights. Doubling the
-education emphasis selects Singapore. \SummaryWeightMC{} These frequencies
-are conditional on the chosen weight distribution.
+Withholding Zurich's homicide point retains Oslo under baseline weights and selects
+Oslo under equal weights. Withdrawing its work-commute proxy selects Oslo under
+both; withdrawing all twelve supplied means selects Singapore and Zurich,
+respectively. Both preference profiles select Oslo. \SummaryWeightMC{} These
+frequencies are conditional on the chosen weight distribution.
 
-Under uniform ten-per-cent development changes, Singapore is selected
-under baseline weights for resource expansion and living pressure;
-balanced improvement retains Zurich. City-specific
-shocks are illustrative, not forecasts. Country, district and age-group cases
-distinguish facility supply from student access and broad observed groups from
-unsupported age-specific preferences.
+Under uniform ten-per-cent development changes, Oslo is selected in all three
+scenarios under baseline weights; equal weights select Oslo, Zurich and Oslo.
+City-specific shocks are illustrative, not forecasts. Country, district and
+age-group cases distinguish facility supply from student access and broad
+observed groups from unsupported age-specific preferences.
+
 \begin{keywords}
 high-school opportunities; TOPSIS; interval evidence; maximum regret; preference sensitivity.
 \end{keywords}
@@ -229,15 +229,16 @@ per-100,000 scale. Mode share is not converted into physical stop density.
 
 \subsection{Collection problems and their resolution}
 \textbf{Count city facilities, not platforms or entire networks.}
-Selecting Oslo's municipal GIS records within the city boundary yields 89
-metro stations after consolidating 186
-platforms; Zurich's 2025 VBZ report distinguishes 446 city stops from 235
-outside the city \cite{oslo,vbz}. Helsinki's November 2026 operator snapshot
-similarly separates 19 Helsinki stations from 11 in Espoo \cite{helsinki}.
-Entur's 9 November 2026 Oslo registry export yields 829 mode-bearing
-administrative stop places after native parent grouping \cite{enturstop}, using
-the same population of 727,797. Used only in the check below, it is not added
-to the 89 stations.
+Entur's 9 November 2026 registry export supplies 626 Oslo bus stop groups
+under the source-defined pure on-street bus subset and native parent grouping
+\cite{enturstop}. The questioned Tveten bru entry is excluded as a precaution,
+without a confirmed closure. The 2026 inventory uses the supplied 2025 population of
+727,797; it is not a 2025 count or a count of all currently served stops. The
+alternative 829 mode-bearing registry groups use a broader counting definition;
+they are not added to the 626, which replaces the earlier 89-station metro subset. Zurich's 2025 VBZ report distinguishes 446 city
+stops from 235 outside the city \cite{oslo,vbz}. Helsinki's November 2026
+operator snapshot separates 19 Helsinki stations from 11 in Espoo \cite{helsinki}.
+
 For a verified subset count $c$, fixed population $P$ and anchor $a$, we use
 $d=10^5c/P$ and utility $[d/(a+d),1]$, leaving uncounted providers unknown.
 Madrid's May 2026 register has 293 records, of which 242 carry city code
@@ -389,7 +390,7 @@ ratios. Shading shows utility upper minus lower bounds; dots mark retained point
 assumptions and question marks identify $[0,1]$ entries. Point assumptions include
 submitted values and do not certify independent validation or zero measurement
 error. These are identification bounds under the retained source rules, not
-confidence intervals. Travel entries retain school-travel and general-commute proxy scopes. Cities follow the input order. Source: V202 utility bounds.}
+confidence intervals. Travel entries retain school-travel and general-commute proxy scopes. Cities follow the input order. Source: V203 utility bounds.}
 \label{fig:identification-matrix}
 \end{figure}
 
@@ -452,22 +453,20 @@ are not sampling confidence intervals, and a conservative recommendation does
 not identify a uniquely best city.
 
 \subsection{Scoring results and interpretation}
-Zurich minimizes maximum regret, followed by Singapore and Oslo
-(Table~\ref{tab:baseline}). Zurich's score lower bound is below those of
-Singapore and Oslo; its own upper bound is excluded from its competitor set.
-Its regret is $70.90353-53.96521=16.93832$, whereas Oslo's is
-$72.18379-54.29594=17.88785$. All sixteen cities remain possible champions.
-The decision order expresses a conservative recommendation under the stated
-criteria and intervals.
+Oslo minimizes maximum regret, followed by Zurich and Singapore
+(Table~\ref{tab:baseline}). Oslo's lower score bound is 56.43 and its maximum
+regret is 15.75; Zurich's corresponding values are 53.97 and 16.94. All sixteen
+cities remain possible champions, and none is necessary. These rankings express
+a conservative recommendation under the stated criteria and intervals.
 
 \begin{table}[!ht]\centering
 \caption{Conservative baseline decision ranks with unchanged weights.}\label{tab:baseline}
 \begingroup\setlength{\tabcolsep}{2pt}
 \begin{tabular}{rlrr@{\quad}rlrr}\toprule
 Rank & City & Score interval & Regret & Rank & City & Score interval & Regret\\\midrule
-1 & Zurich & 53.97--72.18 & 16.94 & 9 & Paris & 49.11--69.04 & 23.08 \\
-2 & Singapore & 55.23--63.53 & 16.95 & 10 & Madrid & 49.00--68.22 & 23.18 \\
-3 & Oslo & 54.30--63.90 & 17.89 & 11 & Warsaw & 47.64--63.99 & 24.54 \\
+1 & Oslo & 56.43--63.90 & 15.75 & 9 & Paris & 49.11--69.04 & 23.08 \\
+2 & Zurich & 53.97--72.18 & 16.94 & 10 & Madrid & 49.00--68.22 & 23.18 \\
+3 & Singapore & 55.23--63.53 & 16.95 & 11 & Warsaw & 47.64--63.99 & 24.54 \\
 4 & Stockholm & 52.12--64.54 & 20.06 & 12 & Vienna & 47.52--61.03 & 24.66 \\
 5 & Prague & 51.97--62.78 & 20.21 & 13 & Milan & 46.07--65.99 & 26.11 \\
 6 & Dublin & 51.13--70.90 & 21.05 & 14 & London & 45.22--66.12 & 26.97 \\
@@ -481,7 +480,7 @@ Rank & City & Score interval & Regret & Rank & City & Score interval & Regret\\\
 Holding weights and formulas fixed, evidence for twenty-five distinct city--indicator cells narrows
 the average fixed-weight score interval from 18.81077 to \CurrentMeanWidth{}, a
 \TotalWidthReduction\% reduction. \LatestEvidenceChange
-Earlier additions improved Stockholm's decision position. Withdrawal of the historical Paris and Dublin transport inventories still recommends Zurich; withdrawal of Singapore's historical school-stage travel proxy also preserves this recommendation. Evidence improves precision and changes decisions before it
+The revised Oslo transport subset changes the baseline conservative recommendation. Withdrawing Singapore's historical school-stage travel proxy retains Oslo under baseline weights. Evidence improves precision and changes decisions before it
 necessarily reduces the possible-champion set.
 
 As a method diagnostic, TOPSIS and VIKOR use the same illustrative midpoint
@@ -505,12 +504,11 @@ Source: frozen city matrix and admitted supplements.}
 A controlled comparison shows why evidence bounds belong in the decision.
 On the same 160 utility entries, compare the midpoint completion $z_{ij}=(\ell_{ij}+h_{ij})/2$ with the retained-interval formulation in Equation~\ref{eq:regret}. Both use identical weights, anchors and TOPSIS scores. The midpoint is a declared diagnostic scenario, rather than an estimate of missing observations or a reconstruction of the team's historical first model.
 
-The revision retains 48 non-point entries and selects the city with the smallest worst-case shortfall. Zurich remains the recommendation, but 13 cities change decision rank under fixed weights; Kendall's $\tau_b=0.600$. With equal weights, 14 ranks change and $\tau_b=0.650$.
+The revision retains 48 non-point entries and selects the city with the smallest worst-case shortfall. Oslo is the fixed-weight recommendation, and 14 cities change decision rank under fixed weights; Kendall's $\tau_b=0.617$. With equal weights, 14 ranks change and $\tau_b=0.683$.
 
-For each target city $c$, construct a separate interior completion: set every uncertain utility to $\ell_{ij}+\alpha_i(h_{ij}-\ell_{ij})$, with $\alpha_c=0.95$ and $\alpha_i=0.05$ for $i\ne c$. All 112 point values remain fixed and all 48 uncertain values lie strictly inside their intervals. Each target ranks first under both baseline and equal weights. Across the sixteen targets, the smallest lead is 4.153 score points under baseline weights and 4.491 under equal weights. These separate completions establish feasibility in the declared utility rectangle; they carry no estimated probabilities and do not establish joint physical attainability.
+For each target city $c$, construct a separate interior completion: set every uncertain utility to $\ell_{ij}+\alpha_i(h_{ij}-\ell_{ij})$, with $\alpha_c=0.95$ and $\alpha_i=0.05$ for $i\ne c$. All 112 point values remain fixed and all 48 uncertain values lie strictly inside their intervals. Each target ranks first under both baseline and equal weights. Across the sixteen targets, the smallest lead is 2.941 score points under baseline weights and 2.222 under equal weights. These separate completions establish feasibility in the declared utility rectangle; they carry no estimated probabilities and do not establish joint physical attainability.
 
 Retaining intervals changes the decision order while preserving sixteen possible champions. The \TotalWidthReduction\% reduction in interval width comes from admitted data, separately from this formulation comparison.
-
 
 \subsection{Sensitivity to the accepted input information}\label{sec:sourcepolicy}
 Point withdrawals replace selected point utilities by $[0,1]$, keeping weights,
@@ -521,50 +519,50 @@ dates, non-\texttt{ok} flags and their union, counting overlaps once.
 \caption{Recommendation after withdrawing selected submitted point information. Width is the mean baseline-weight score range on the 0--100 scale.}\label{tab:vintage}
 \begin{tabular}{l r l l r}\toprule
 Withdrawn group & Cells & Baseline & Equal & Width\\\midrule
-Retained input & 0 & Zurich & Zurich & 15.96 \\
-Before 2020 & 13 & Singapore & Zurich & 21.03 \\
-After 2025 & 64 & Zurich & Zurich & 48.34 \\
-Non-ok flags & 28 & Berlin & Paris & 29.03 \\
-Union & 95 & Singapore & Singapore & 68.67 \\
+Retained input & 0 & Oslo & Zurich & 15.82 \\
+Before 2020 & 13 & Singapore & Zurich & 20.92 \\
+After 2025 & 64 & Zurich & Zurich & 48.23 \\
+Non-ok flags & 28 & Oslo & Oslo & 28.92 \\
+Union & 95 & Singapore & Singapore & 68.53 \\
 \bottomrule\end{tabular}\end{table}
 
 
-Withdrawing 28 flagged points selects Berlin (baseline weights) or Paris
-(equal weights); removing 13 pre-2020 points selects Singapore or Zurich,
-respectively. Removing 64 post-2025 points retains Zurich under both,
-widening the baseline mean range from 15.96 to 48.34; the 95-point union
-selects Singapore under both. All sixteen remain possible champions.
-Dates and flags are screening criteria, not error probabilities.
 
-Conditionally treating Oslo's 829 registry groups as comparable stop units
-instead of the 89-station lower bound selects Oslo under both weight sets;
-all sixteen cities remain possible champions and none is necessary. The
-registry does not establish deduplicated physical facilities or current service,
-so the primary analysis retains the 89-station bound.
+Withdrawing 28 flagged points selects Oslo under both weights; removing 13
+pre-2020 points selects Singapore or Zurich, respectively. Removing 64 post-2025
+points selects Zurich under both and widens the baseline mean range from 15.82
+to 48.23. The 95-point union selects Singapore under both. Dates and flags are
+screening criteria, not error probabilities.
 
-Withholding Zurich's homicide point selects Singapore (baseline) or Oslo
-(equal); withholding Amsterdam's retains Zurich under both. Varying only
-Zurich's rate gives regret ties near 0.14257 and 1.01449 per 100,000,
-respectively: Zurich uniquely minimizes regret below each cutoff and is
-excluded above. These are hypothetical rates, with other inputs fixed.
+Withdrawing the 626 bus subset and restoring the earlier 89 metro stations
+selects Zurich under both weight sets. Treating 829 registry groups as
+comparable units instead of the 626 bus subset selects Oslo under both weight sets. The broader definition does not establish
+separate physical facilities or current service. Withholding the two replacement
+bus groups, the Midtstuen bus group, or both retains Oslo under baseline and
+Zurich under equal weights.
 
-Withdrawing Zurich's commute interval, both identified proxies or all twelve
-supplied means selects Singapore (baseline), retaining Zurich under equal
-weights. Dublin alone changes neither choice; these withdrawals retain sixteen
-possible champions. Varying only Zurich's mean under Jensen bounds gives a baseline tie
-near 40.07 minutes: Zurich below, Singapore above; equal weights retain
-Zurich for every nonnegative mean, with other inputs fixed.
+Withholding Zurich's homicide point retains Oslo under baseline weights and
+selects Oslo under equal weights; withholding Amsterdam's retains Oslo and Zurich,
+respectively. Varying Zurich's rate between zero and five per 100,000 does not
+change the fixed-weight selection; under equal weights the tie occurs near
+0.14981. These are hypothetical rates with other inputs fixed.
 
-Jointly allow each of the twelve means $t_i$ to vary independently in
-$[(1-\delta)t_i,(1+\delta)t_i]$, $0\leq\delta\leq1$; retain Jensen upper bounds,
-Singapore's stage bins, unknown travel and other entries. Fixed upper scores
-make each regret increase with its own mean: Zurich's largest mean and the
-other eleven smallest means maximize its regret minus the best rival's.
-The critical radii are approximately 0.42205\% (baseline) and 63.44548\% (equal).
-Below each boundary Zurich uniquely minimizes regret throughout the box;
-at it Singapore (baseline) or Oslo (equal) can tie, and above it a counterexample exists.
-These conditional ranges are not measured errors or future probabilities.
+Withdrawing Zurich's commute proxy or both identified proxies selects Oslo under
+both weights; withdrawing all twelve means selects Singapore under baseline and
+Zurich under equal weights. Dublin alone leaves the baseline choices unchanged.
+Varying only Zurich's mean gives ties at 28.10 minutes under baseline weights and
+40.50 under equal weights: Zurich is selected below each tie and excluded above.
+At the retained 39.9 minutes, the baseline selection is Oslo.
 
+Jointly vary each of the twelve means $t_i$ independently in
+$[(1-\delta)t_i,(1+\delta)t_i]$, $0\leq\delta\leq1$, retaining all other
+entries. Fixed upper scores make each regret increase with its own mean. The
+largest target mean and the other eleven smallest maximize the target's regret
+relative to the best rival. The critical radii are 15.6063\% for baseline
+winner Oslo and 0.6483\% for equal-weight winner Zurich. Below each boundary the
+respective winner uniquely minimizes regret throughout the box; at it the other
+can tie, and above it a counterexample exists. These conditional ranges are not
+measured errors or future probabilities.
 
 \section{Model revision and extension}
 \subsection{Considering future changes}
@@ -637,17 +635,17 @@ fractional top-three decision membership; ties share membership.
 \caption{Conditional recommendation frequencies (\%) for selected cities at concentration 100.}
 \begin{tabular}{lrrr}\toprule
 Preference centre & Zurich & Oslo & Singapore\\\midrule
-Baseline & 43.18 & 18.01 & 38.41 \\
-Education priority & 6.47 & 31.47 & 55.70 \\
-Independent living & 58.21 & 9.58 & 31.86 \\
+Baseline & 25.48 & 57.38 & 17.10 \\
+Education priority & 2.65 & 71.59 & 24.78 \\
+Independent living & 23.23 & 70.28 & 6.46 \\
 \bottomrule\end{tabular}\end{table}
 
 
 
 
-At baseline concentration 100, Singapore, Zurich and Oslo have sample mean
-decision ranks 2.0515, 2.1651 and 2.3425 respectively; Zurich has the highest
-sample recommendation frequency.
+
+\MonteCarloInterpretation{} Oslo has the highest sample recommendation frequency.
+
 We retain minimum maximum regret as the predeclared decision rule; these
 conditional summaries describe its weight sensitivity. A low AHP consistency
 ratio checks calculation properties, not representative student opinion.
@@ -660,10 +658,9 @@ at most $R\sqrt{\log(2m/0.05)/(2n)}$, where the response range $R$ is 1 for
 frequencies and 15 for ranks \cite{hoeffding}.
 The resulting half-widths are 2.38 percentage points and 0.357 ranks;
 shared draws across outputs are allowed. On this event, subtracting two mean
-intervals bounds their difference. The simultaneous certificate resolves 4,260 of 4,440 pairwise mean-rank
-comparisons, leaves 180 unresolved, and certifies a unique smallest expected
-rank in 18 of 37 settings. The baseline top-city mean-rank ordering remains
-unresolved by this guarantee. These bounds concern integration under the declared
+intervals bounds their difference. The simultaneous certificate resolves 4,271 of 4,440 pairwise mean-rank
+comparisons, leaves 169 unresolved, and certifies a unique smallest expected
+rank in 23 of 37 settings. These bounds concern integration under the declared
 simulation laws.
 
 \subsection{Within-city fairness and growth stages}
@@ -754,29 +751,61 @@ These historical city and education scopes identify neither a necessary winner n
 \FloatBarrier
 
 \section{Conclusion and decision use}
-Zurich minimizes maximum regret under baseline and equal weights; all sixteen
-cities remain possible champions. Education priority selects Singapore. Evidence
-supplements narrow the mean score interval by \TotalWidthReduction\%; the interval
-revision changes 13 decision ranks. Families can compare priorities and source bounds.
+Oslo minimizes maximum regret under baseline weights and Zurich under equal
+weights; all sixteen cities remain possible champions. Both preference profiles
+select Oslo. Evidence supplements narrow the mean score interval by
+\TotalWidthReduction\%; the interval revision changes 14 decision ranks.
 
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
 \section*{A city choice built around a student's day}
-Our comparison of sixteen cities across ten aspects of high-school life gives students and families a starting point for weighing everyday trade-offs. Under the retained team inputs, Zurich is the cautious recommendation; an education-focused profile points to Singapore. The priorities are analyst-designed using the Analytic Hierarchy Process (AHP), not drawn from a student survey.
+Our comparison of sixteen cities across ten aspects of high-school life gives
+families a starting point for weighing everyday trade-offs. Oslo is the cautious
+recommendation under baseline and education-priority weights; Zurich is selected
+when all ten measures receive equal weight. The priorities are analyst-designed,
+not drawn from a student survey. All sixteen cities remain possible leaders, so a
+family's choice can depend on the evidence and priorities it considers relevant.
 
-The measures cover teaching resources, higher education, air quality, safety, housing and living costs, transport stops, journey time, internet access and swimming facilities. Missing or partial figures remain ranges instead of being filled with invented averages. The recommendation compares each city's largest possible shortfall against a stronger alternative within those ranges. Zurich has the smallest such shortfall under baseline priorities and when all ten measures receive equal weight. All sixteen cities remain possible leaders; the comparison does not establish one certain winner.
+\subsection*{How the comparison works}
 
-\subsection*{Clearer records, more useful choices}
+The measures cover safety, air quality, housing and living costs, teaching
+resources, higher education, transport stops, journey time, broadband and
+swimming facilities. Their units differ: a travel time and a pool count cannot
+be compared directly. The model puts each measure on a common reference scale,
+then combines them using the stated priorities. Missing or partial figures remain
+ranges instead of being filled with invented averages.
 
-Additional evidence for twenty-five previously missing entries narrows the average city-score range by about fifteen per cent while preserving the team's original values and scoring rules. Source definitions matter too: Vienna's broad transport register includes depot objects not confirmed as passenger stops, while a cross-check confirms 99 metro station areas. Prague's city list gives 57 metro complexes when interchanges count once and a closed station is omitted. Records span different years, and some describe city resources rather than a teenager's experience.
+A single completed table could make one city look certain to win even when the
+missing information matters. We therefore compare each city's largest possible
+shortfall behind another city within the retained ranges. The cautious choice is
+the city with the smallest such shortfall. This gives families a way to discuss
+trade-offs while keeping uncertain information visible.
 
-Source checks show where a recommendation depends on a particular input. Treating Zurich's unverified homicide-rate figure as unknown points to Singapore under baseline priorities and Oslo under equal priorities. Setting aside Zurich's general work-commute proxy points to Singapore under baseline priorities, while equal priorities retain Zurich. That proxy does not describe high-school journeys; the supplied figures remain in the baseline.
+\subsection*{What new records change}
 
-Counts describe resource supply, not a student's access. A stop count does not show walking distance, service, fares or accessible routes; a pool count does not show fees, opening hours or neighbourhood reach. Families and planners can check these conditions alongside school options, budgets and daily routes.
+Additional evidence narrows the average city-score range by about sixteen per cent
+while retaining the team's original values and scoring rules. For Oslo, a 2026
+registry provides a source-defined subset of 626 on-street bus stop groups. It
+replaces the earlier subset of 89 metro stations, rather than being added to it;
+the comparison uses the supplied 2025 population. Restoring the earlier subset
+selects Zurich under both baseline and equal weights. This change shows how a
+source definition can affect a recommendation, and invites a closer look at what
+each city count includes.
 
-\subsection*{Scenarios for planning}
+The counts describe supply, not an individual student's access. A nearby stop may
+still require a suitable route, service time, fare and accessible connection. A
+pool count does not describe fees, opening hours or neighbourhood reach. Families
+can check these details alongside school options, budgets and daily routines.
 
-In hypothetical tests where affected quantities change uniformly by ten per cent, resource expansion and living pressure select Singapore under baseline priorities; Zurich remains the recommendation for balanced improvement and under equal priorities. Repeated simulations vary the assumed changes across cities. These are conditional model outcomes, not forecasts or estimates of a city's real chance of being best. A family can use the comparison to discuss priorities and identify local information needed for a decision that fits a student's routine.
+\subsection*{Trying different priorities}
+
+Both education and independent-living priority profiles select Oslo. In separate
+hypothetical ten-per-cent changes, baseline weights also select Oslo in all three
+scenarios. Equal weights select Oslo for resource expansion and balanced
+improvement, and Zurich under living pressure. These are conditional tests of the
+model, not forecasts or a city's real chance of being best. The comparison is most
+useful as a prompt to identify which priorities and local facts matter for a
+particular student.
 \label{news-end}
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{References}
@@ -1051,8 +1080,8 @@ not included as submission transcripts. No missing prompt or output has been
 reconstructed and labelled as an exact historical quotation.
 
 \subsection*{Verification associated with this draft}
-The research calculations preserve the original city CSV and the V202 primary
-evidence. The V202 validation independently recomputes weighted norms and
+The research calculations preserve the original city CSV and the V203 primary
+evidence. The V203 validation independently recomputes weighted norms and
 self-excluded competitor maxima, verifies interval membership of constructed
 completions and checks source hashes. Original provider records are kept
 separately from derived tables. Compilation and rendered-page review check the

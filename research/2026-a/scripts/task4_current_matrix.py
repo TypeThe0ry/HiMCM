@@ -29,7 +29,7 @@ def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
 def main():
-    raw=pd.read_csv(R/'results/task4_user_v202_revision/utility_bounds.csv')
+    raw=pd.read_csv(R/'results/task4_user_v203_revision/utility_bounds.csv')
     raw=raw[raw.scenario.eq('after_conditional')]
     cities=list(dict.fromkeys(raw.city)); frame=pd.DataFrame({'city':cities})
     indexed=raw.set_index(['city','indicator'])
@@ -85,7 +85,7 @@ def main():
         fig.add_artist(Line2D([x,x],[.132,.127],transform=fig.transFigure,color='black',linewidth=.5,clip_on=False))
         fig.text(x,.119,f'{tick:.1f}',ha='center',va='top',fontsize=10)
     fig.text(.59,.087,'Utility interval width (upper − lower)',ha='center',va='top',fontsize=10)
-    fig.text(.025,.033,'Dot: point assumption.  ?: unknown.  Source: V202 utility bounds.',fontsize=10)
+    fig.text(.025,.033,'Dot: point assumption.  ?: unknown.  Source: V203 utility bounds.',fontsize=10)
     for ext in ['pdf','svg','png']:
         fig.savefig(O/f'identification_matrix.{ext}',dpi=300,metadata={'Creator':'HiMCM research'} if ext!='png' else None)
     plt.close(fig)
@@ -93,13 +93,13 @@ def main():
     svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     text=subprocess.check_output(['pdftotext',str(O/'identification_matrix.pdf'),'-'],text=True)
     assert text.count('?')==12 and all(s in text for s in ['112 point','37 partial','11 unknown'])
-    result = dict(iteration='current', model='V202 staged', shape=[16,10], counts=dict(counts),
+    result = dict(iteration='current', model='V203 staged', shape=[16,10], counts=dict(counts),
                   unknown_by_indicator=dict(unknowns), city_order=frame.city.tolist(), indicator_order=NAMES,
-                  plot_labels=LABELS, source='V202 after_conditional; original CSV and 25 supplemented keys retained',
+                  plot_labels=LABELS, source='V203 after_conditional; original CSV and 25 supplemented keys retained',
                   source_csv_sha256=sha(R/'data/task4_v117_team_intake/city_indicators.csv'),
-                  utility_bounds_sha256=sha(R/'results/task4_user_v202_revision/utility_bounds.csv'),
+                  utility_bounds_sha256=sha(R/'results/task4_user_v203_revision/utility_bounds.csv'),
                   matrix_sha256=sha(O/'matrix.csv'), renderer_sha256=sha(Path(__file__)),
-                  admissions_sha256=sha(R/'design/task4_user_v202_admissions.json'), figure_width_inches=6.5, figure_height_inches=6.2,
+                  admissions_sha256=sha(R/'design/task4_user_v203_admissions.json'), figure_width_inches=6.5, figure_height_inches=6.2,
                   minimum_source_font_pt=10, intended_insertion_width_inches=6.5,
                   minimum_insertion_width_for9pt_inches=5.85, png_dpi=300,
                   pdf_export='Explicit vector rectangles and embedded Type3 outline fonts; RGB and grayscale review required',

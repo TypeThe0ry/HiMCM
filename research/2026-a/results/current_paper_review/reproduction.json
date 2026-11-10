@@ -1,11 +1,11 @@
 {
   "status": "pass",
-  "version": "Single current main on V202",
-  "runner_sha256": "6a2a21a5fcbc3ac947a82ea7df24a9ad4f7ab6ecebf83af3a99f4c851f419279",
-  "primary": "V202",
-  "canonical_pdf_sha256": "dcb04e48ada394192a8cd58a8c0b90f2a54d9102e58868548a82304fa672ed4f",
-  "paper_head": "faadd04dda0be1388c3c47f1cec73aa72578e1ac",
-  "research_head": "c77b3a272871114079affa906d4f7298f70435d6",
+  "version": "Single current main on V203",
+  "runner_sha256": "a8c6dc9afdce6ee1de116ea06670f4e36c06162d25621b5ef7a921589ee0fef0",
+  "primary": "V203",
+  "canonical_pdf_sha256": "5fb49a9d7752305740ccb0bc187992cd09a6e082988673855809f9e2980bc501",
+  "paper_head": "720aa75a81303bfa5c92eaa7e000bb58b76c27d9",
+  "research_head": "ab506948f7fdc8ba022c8e62af3aeb04ece696d5",
   "environment": {
     "python": "3.11.18",
     "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
@@ -28,46 +28,75 @@
     "all_paths_and_blobs_match": true
   },
   "science": {
-    "inherited_V200_checks": {
-      "inherited_V197_checks": {
+    "inherited_V202_checks": {
+      "inherited_V200_checks": {
+        "inherited_V197_checks": {
+          "utility_cells": 160,
+          "deterministic_city_weight_cases": 32,
+          "changed_pool_lower_cells": 1,
+          "other159cells_and_all_uppers_exact": true,
+          "source_population_and_count_formulas_checked": true,
+          "zurich_withdrawal_restores_V192": true,
+          "V192_two_transport_changes_and_withdrawals_checked": true,
+          "independent_score_reduction": "Scalar math.fsum squared distances with weights once",
+          "comparisons": [
+            {
+              "weight_reference": "fixed",
+              "city_cases": 16,
+              "conservative_recommendation": [
+                "Zurich"
+              ],
+              "possible_champions": 16,
+              "necessary_champions": 0,
+              "mean_score_interval_width": 16.01221199746499
+            },
+            {
+              "weight_reference": "equal",
+              "city_cases": 16,
+              "conservative_recommendation": [
+                "Zurich"
+              ],
+              "possible_champions": 16,
+              "necessary_champions": 0,
+              "mean_score_interval_width": 18.76442966782986
+            }
+          ],
+          "MC_rerun": false,
+          "raw_source_semantics_reaudited": false
+        },
         "utility_cells": 160,
-        "deterministic_city_weight_cases": 32,
-        "changed_pool_lower_cells": 1,
-        "other159cells_and_all_uppers_exact": true,
-        "source_population_and_count_formulas_checked": true,
-        "zurich_withdrawal_restores_V192": true,
-        "V192_two_transport_changes_and_withdrawals_checked": true,
-        "independent_score_reduction": "Scalar math.fsum squared distances with weights once",
+        "scalar_city_weight_cases": 32,
+        "other159_lower_and_all_uppers_exact": true,
+        "inventory_formula_and_22_sensitivity_checked": true,
+        "withdrawal_restores_V197": true,
         "comparisons": [
           {
-            "weight_reference": "fixed",
-            "city_cases": 16,
-            "conservative_recommendation": [
+            "reference": "fixed",
+            "recommendation": [
               "Zurich"
             ],
-            "possible_champions": 16,
-            "necessary_champions": 0,
-            "mean_score_interval_width": 16.01221199746499
+            "possible": 16,
+            "necessary": 0,
+            "mean_width": 15.958134470578873
           },
           {
-            "weight_reference": "equal",
-            "city_cases": 16,
-            "conservative_recommendation": [
+            "reference": "equal",
+            "recommendation": [
               "Zurich"
             ],
-            "possible_champions": 16,
-            "necessary_champions": 0,
-            "mean_score_interval_width": 18.76442966782986
+            "possible": 16,
+            "necessary": 0,
+            "mean_width": 18.66038969723218
           }
         ],
-        "MC_rerun": false,
-        "raw_source_semantics_reaudited": false
+        "MC_replayed": false,
+        "source_semantics_reaudited": false
       },
       "utility_cells": 160,
       "scalar_city_weight_cases": 32,
       "other159_lower_and_all_uppers_exact": true,
-      "inventory_formula_and_22_sensitivity_checked": true,
-      "withdrawal_restores_V197": true,
+      "inventory_formula_and_23_22_sensitivities_checked": true,
+      "withdrawal_restores_V200": true,
       "comparisons": [
         {
           "reference": "fixed",
@@ -76,7 +105,7 @@
           ],
           "possible": 16,
           "necessary": 0,
-          "mean_width": 15.958134470578873
+          "mean_width": 15.955820475866993
         },
         {
           "reference": "equal",
@@ -85,7 +114,7 @@
           ],
           "possible": 16,
           "necessary": 0,
-          "mean_width": 18.66038969723218
+          "mean_width": 18.655815697356704
         }
       ],
       "MC_replayed": false,
@@ -94,17 +123,17 @@
     "utility_cells": 160,
     "scalar_city_weight_cases": 32,
     "other159_lower_and_all_uppers_exact": true,
-    "inventory_formula_and_23_22_sensitivities_checked": true,
-    "withdrawal_restores_V200": true,
+    "source_defined_626_bus_group_formula_and_624_625_623_627_withholdings_checked": true,
+    "withdrawal_restores_V202": true,
     "comparisons": [
       {
         "reference": "fixed",
         "recommendation": [
-          "Zurich"
+          "Oslo"
         ],
         "possible": 16,
         "necessary": 0,
-        "mean_width": 15.955820475866993
+        "mean_width": 15.822326953322161
       },
       {
         "reference": "equal",
@@ -113,7 +142,7 @@
         ],
         "possible": 16,
         "necessary": 0,
-        "mean_width": 18.655815697356704
+        "mean_width": 18.391811623888255
       }
     ],
     "MC_replayed": false,
@@ -123,20 +152,20 @@
     {
       "kind": "root",
       "passed": true,
-      "pdf_sha256": "a51494d21e2c6733e1160c9c23ba448daef1df51467125bdc34a54faa4dbb3ef",
+      "pdf_sha256": "9255f79f3be0d82c3c6a380d6f716e17cfaad5de8ff168c41ad4e7ee19c4b3c9",
       "text_pages_equal": true,
       "grayscale_72dpi_pages_equal": 27,
-      "underfull_paragraphs": 1,
+      "underfull_paragraphs": 2,
       "removed_snapshot_outputs": [],
       "command": [
         "tectonic",
         "--only-cached",
         "--outdir",
-        "/data/scratch/himcm-current-transport-reproduction/work-cjczras6/root/compiled",
+        "/data/scratch/himcm-current-v203-reproduction/work-pf1b681b/root/compiled",
         "--keep-logs",
         "--keep-intermediates",
         "--makefile-rules",
-        "/data/scratch/himcm-current-transport-reproduction/root/dependencies.mk",
+        "/data/scratch/himcm-current-v203-reproduction/root/dependencies.mk",
         "main.tex"
       ],
       "physical_pages": 27,
@@ -144,11 +173,11 @@
     }
   ],
   "input_protection": {
-    "science_files": 476,
+    "science_files": 548,
     "paper_and_navigation_files": 25,
     "changed": []
   },
-  "elapsed_seconds": 7.372,
+  "elapsed_seconds": 9.548,
   "submission_ready": false,
   "server_compile_verified": false,
   "scope": "Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; no fresh-machine,MC/source revalidation or online compile claim."
