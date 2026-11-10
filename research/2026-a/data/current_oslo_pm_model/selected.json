@@ -1,0 +1,74 @@
+{
+  "status": "pass",
+  "dataflow": "OECD.CFE.EDS:DSD_FUA_ENV@DF_POLLUTION(1.2)",
+  "units": "micrograms per cubic metre",
+  "rows": [
+    {
+      "area": "NO001C",
+      "territorial_level": "CITY",
+      "year": 2021,
+      "source_obs_value": "8.86473671528832",
+      "display_decimals": 1,
+      "rounded_one_decimal": "8.9",
+      "status": "A"
+    },
+    {
+      "area": "NO001C",
+      "territorial_level": "CITY",
+      "year": 2022,
+      "source_obs_value": "7.379319258927695",
+      "display_decimals": 1,
+      "rounded_one_decimal": "7.4",
+      "status": "A"
+    },
+    {
+      "area": "NO001C",
+      "territorial_level": "CITY",
+      "year": 2023,
+      "source_obs_value": "8.506857989031039",
+      "display_decimals": 1,
+      "rounded_one_decimal": "8.5",
+      "status": "A"
+    },
+    {
+      "area": "NO001F",
+      "territorial_level": "FUA",
+      "year": 2021,
+      "source_obs_value": "8.459520572110804",
+      "display_decimals": 1,
+      "rounded_one_decimal": "8.5",
+      "status": "A"
+    },
+    {
+      "area": "NO001F",
+      "territorial_level": "FUA",
+      "year": 2022,
+      "source_obs_value": "6.86441319150082",
+      "display_decimals": 1,
+      "rounded_one_decimal": "6.9",
+      "status": "A"
+    },
+    {
+      "area": "NO001F",
+      "territorial_level": "FUA",
+      "year": 2023,
+      "source_obs_value": "7.934470167063854",
+      "display_decimals": 1,
+      "rounded_one_decimal": "7.9",
+      "status": "A"
+    }
+  ],
+  "source_area_labels": {
+    "NO001F": [
+      "Oslo"
+    ],
+    "NO001C": [
+      "Oslo"
+    ]
+  },
+  "latest_returned_year": 2023,
+  "returned_2024_rows": 0,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "Targeted API result only: annual CITY/FUA model exposure has no2024row here. Matching rounded2023FUA7.9 is not proof of the original2024 point source. Plume Labs grids/GHS-POP weights are publisher metadata; Oslo boundary and population-grid vintages unverified."
+}

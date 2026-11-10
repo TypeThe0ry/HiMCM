@@ -1,0 +1,28 @@
+{
+  "oslo_exposure.csv": {
+    "requested_url": "https://sdmx.oecd.org/public/rest/v1/data/OECD.CFE.EDS,DSD_FUA_ENV@DF_POLLUTION,1.2/NO001C+NO001F.A.PM25_POP_EXP.MCG_M3...?dimensionAtObservation=AllDimensions",
+    "final_url": "https://sdmx.oecd.org/public/rest/v1/data/OECD.CFE.EDS,DSD_FUA_ENV@DF_POLLUTION,1.2/NO001C+NO001F.A.PM25_POP_EXP.MCG_M3...?dimensionAtObservation=AllDimensions",
+    "retrieved_utc": "2026-11-10T10:03:36.564967+00:00",
+    "status": 200,
+    "bytes": 824,
+    "sha256": "7fded188cc7fcc40e3990008b0c55dc905ac453bf9ef9b358d2b28a8bd301b0e",
+    "headers": {
+      "Date": "Tue, 10 Nov 2026 10:03:36 GMT",
+      "Content-Type": "text/csv; charset=utf-8",
+      "Last-Modified": "2025-03-04"
+    }
+  },
+  "structure.xml": {
+    "requested_url": "https://sdmx.oecd.org/public/rest/v1/dataflow/OECD.CFE.EDS/DSD_FUA_ENV@DF_POLLUTION/1.2?references=all",
+    "final_url": "https://sdmx.oecd.org/public/rest/v1/dataflow/OECD.CFE.EDS/DSD_FUA_ENV@DF_POLLUTION/1.2?references=all",
+    "retrieved_utc": "2026-11-10T10:03:38.748016+00:00",
+    "status": 200,
+    "bytes": 2571216,
+    "sha256": "88905e3f8fc445ffa360c78353868628565c36eb4cbf7b9e2968f61ffa93c7c7",
+    "headers": {
+      "Date": "Tue, 10 Nov 2026 10:03:37 GMT",
+      "Content-Type": "application/vnd.sdmx.structure+xml; charset=utf-8; version=2.1",
+      "Last-Modified": "2025-03-04"
+    }
+  }
+}

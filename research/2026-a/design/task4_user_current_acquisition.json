@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 15,
+    "routes": 16,
     "scope": "Selected reviewed high-priority teacher/travel and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -213,5 +213,24 @@
     "primary_admissions": 0,
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false
+  },
+  "oslo_pm_source_followup": {
+    "data": [
+      "data/current_oslo_pm_stations",
+      "data/current_oslo_pm_model"
+    ],
+    "verification": "results/current_oslo_pm_source_review/verification.json",
+    "verification_sha256": "08c019d418eeca42e399e10a5f459352e426a75e5c7aa97fe35b902f194d1a05",
+    "successful_archived_responses": 5,
+    "failed_endpoint_responses": 2,
+    "2024_station_cells": 20,
+    "reported_station_values": 12,
+    "missing_station_values": 8,
+    "OECD_latest_returned_year": 2023,
+    "original2024source_lineage_verified": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Station annual means are not city population-weighted exposure; rounded2023FUA7.9 does not establish original2024point lineage."
   }
 }
