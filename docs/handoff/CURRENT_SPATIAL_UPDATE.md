@@ -9,6 +9,8 @@ Oslo作者平台网格于2026-11-10读取，共4321格、1615正人口格；保�
 
 颜色和三维高度共同编码0–150分钟步行时间，高度不是地形。图以6.5英寸原尺寸插入，文字至少9pt。Zurich NASA HLS S30/GIBS请求日期2024-06-27，具体granule采集日期未核实；云保留。Oslo三份透明响应均归档，不生成替代卫星。
 
-论文27页（25正文参考＋2暂定AI）、61引用。独立来源、数值与字号核验见 `research/2026-a/results/current_oslo_spatial_review/verification.json`；当前稿和交付核验见 `research/2026-a/results/current_paper_review/`。本轮相对前稿仅第15、16页渲染变化，其余25页相同；第16页彩色与灰度已查看，未执行色觉模拟。在线服务器编译未验证。
+论文27页（25正文参考＋2暂定AI）、62引用。独立来源、数值与字号核验见 `research/2026-a/results/current_oslo_spatial_review/verification.json`；当前稿和交付核验见 `research/2026-a/results/current_paper_review/`。空间图更新时相对其前稿仅第15、16页渲染变化，其余25页相同；第16页彩色与灰度已查看，未执行色觉模拟。在线服务器编译未验证。
 
 干净Overleaf HEAD复现入口为 `research/2026-a/scripts/task4_current_reproduce.py`，使用 `.venv-v120/bin/python` 和外部空输出目录。原始CSV、548科学绑定与22项通勤来源绑定保持。长期目标active；后续依当前V203采集价值表寻找匹配师资或真实通学分布。
+
+The later Oslo2023 student-survey integration changes only pages17and25 relative to the preceding spatial-figure PDF; all four figures remain unchanged. Current complete-paper checks are in `results/current_paper_review/`.

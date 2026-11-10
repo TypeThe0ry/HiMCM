@@ -6,7 +6,7 @@
 
 以既有指标和真实数据持续改进论文的数据搜集、基线评价、模型修订与扩展、验证、图表、同国对比和比赛交付材料。论文应清楚说明所解决的问题、证据支持的贡献和结果的实际含义。所有新增与修改文字必须使用[反防御性写作技能](../guidelines/ANTI_DEFENSIVE_WRITING.md)。
 
-当前16城×10指标V203（112点／37部分／11未知），25不同补充键；单一当前稿27页25正文参考＋2AI、61引用。固定权重保守选择Oslo，等权Zurich，16可能／0必要。626个单模式公交组来源定义下界替换89站；固定均宽15.8223269533，实际较V202缩小0.133494分。见[当前模型](CURRENT_MODEL_UPDATE.md)。
+当前16城×10指标V203（112点／37部分／11未知），25不同补充键；单一当前稿27页25正文参考＋2AI、62引用。固定权重保守选择Oslo，等权Zurich，16可能／0必要。626个单模式公交组来源定义下界替换89站；固定均宽15.8223269533，实际较V202缩小0.133494分。见[当前模型](CURRENT_MODEL_UPDATE.md)。
 
 用户最新要求本地与Overleaf远程同步，Overleaf只留当前main和必需资源；GitHub paper/current/镜像、Git提交管理版本，985旧文件已逐字节归档。原类／参考库／用户数据及队友内容保持。真实注册、全队AI与比赛提交未核，12项实质待办。真实卫星与定量3D图已接入，V203采集价值已重基并独审，下一轮据新表核查匹配来源；不再复制版本稿。
 
@@ -360,3 +360,5 @@ V203已完成受控公交子集及全部扩展核查；主分析使用626单模�
 新来源核查揭示Oslo2009通勤代理的条件依赖：单项撤回两权重均Zurich，已写当前稿；原始数据和主V203不改，实际主区间改善0。继续优先匹配总体、时点和指标定义的数据，不将同值记录或不同组均值当作来源证明或替代观测。
 
 当前第16页辅助图比较Oslo与Zurich：保留居民网格中，到20个通用Learning POI的模型平均步行时间不超过30分钟的份额为99.18%／99.97%。Oslo保留人口686862不替代主表727797；输入年份与完整市域覆盖未确认。Oslo三次NASA响应透明，采用几何背景；Zurich保留真实有云影像。主V203得分与16可能／0必要冠军不变。Zurich教育页面的两份官方图表包装可读取，链接的Observable模块均403，新增准入为0；失败路线跳过。
+
+Current main section6.4 now includes audited Oslo2023 school-grade comparisons: perceived local youth meeting-place provision66%/41% and monthly sports-club activity70%/32% (grade8/Vg3). Reference62 defines Vg3 and records survey-wide response counts; chart-specific denominators are unstated. These are cross-sectional context, not exact-age effects or model weights. PrimaryV203, originalCSV and all4figures remain;27pages25+2. Source package/audit: `data/current_oslo_student_stage`, `results/current_oslo_student_review/verification.json`.

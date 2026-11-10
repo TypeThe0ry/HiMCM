@@ -5,7 +5,7 @@ import numpy as np,pandas as pd
 from task4_user_v203_revision import revised_bounds
 from task4_v5_model import NAMES,weights
 from audit_task4_v193 import values,norm
-R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-oslo-spatial-build'); O=R/'results/current_paper_review'
+R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-oslo-student-build'); O=R/'results/current_paper_review'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def read(p):return json.loads(p.read_text())
 def frame(p):return pd.read_csv(p,float_precision='round_trip')
@@ -25,7 +25,7 @@ def main():
   assert folder.is_dir()
  tex=(P/'main.tex').read_text(); oldtex=subprocess.check_output(['git','-C',str(P),'show','aeeac9d918f1f97d2045025fdc4079d5ae4f74ff:main.tex'],text=True)
  assert hashlib.sha256(oldtex.encode()).hexdigest()==old['protected_files'][str(P/'main.tex')]
- original=set(re.findall(r'\\bibitem\{([^}]+)\}',oldtex));current=set(re.findall(r'\\bibitem\{([^}]+)\}',tex)); assert len(original)==59 and original<current and len(current)==61 and 'enturstop' in current,(len(original),len(current),current-original)
+ original=set(re.findall(r'\\bibitem\{([^}]+)\}',oldtex));current=set(re.findall(r'\\bibitem\{([^}]+)\}',tex)); assert len(original)==59 and original<current and len(current)==62 and 'osloyouth2023' in current and 'enturstop' in current,(len(original),len(current),current-original)
  prior_tex=subprocess.check_output(['git','-C',str(P),'show','faadd04:main.tex'],text=True)
  prior_refs=set(re.findall(r'\\bibitem\{([^}]+)\}',prior_tex)); assert len(prior_refs)==61 and prior_refs<=current
  assert re.search(r'tcn\s*=\s*18213',tex)
@@ -165,6 +165,11 @@ def main():
  assert 'commute proxy alone selects zurich under both weights; all sixteen remain possible champions and none is necessary' in full
  assert 'matches establish neither the team' in full and 'nor the historical boundary' in full
  assert 'oslo' in summary and 'zurich' in summary and 'oslo' in news and 'zurich' in news
+ student=read(R/'results/current_oslo_student_review/verification.json');assert student['status']=='pass scoped source review' and student['primary_admissions']==0
+ for name,digest in student['source_sha256'].items():assert sha(R/name)==digest,name
+ for phrase in ['66%','41%','70%','32%','cross-sectional']:
+  assert phrase in full,phrase
+ assert 'osloyouth2023' in tex
  # Figure labels and source limitations must survive actual typesetting.
  for phrase in ['99.18','99.97']:
   assert phrase in full,phrase
@@ -180,6 +185,6 @@ def main():
    top=[w for w in words if float(w.get('yMin'))<65];assert any(w.text=='Team' and 70<float(w.get('xMin'))<74 for w in top) and any(w.text=='Page' and float(w.get('xMin'))>450 for w in top) and any(w.text=='18213' for w in top);assert f'Page {i+1} of {len(pages)}' in norm(pages[i])
   else:assert '18213' in pages[0]
  assert not any(x in log for x in ['Overfull','undefined','LaTeX Warning'])
- result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
+ result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),student_source_audit_sha256=sha(R/'results/current_oslo_student_review/verification.json'),student_source_sha256=student['source_sha256'],figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
  O.mkdir(exist_ok=True);(O/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

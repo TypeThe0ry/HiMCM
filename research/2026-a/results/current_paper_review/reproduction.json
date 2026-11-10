@@ -1,11 +1,11 @@
 {
   "status": "pass",
   "version": "Single current main on V203",
-  "runner_sha256": "72429ea0e3131dd915bc2b610b360870fda059b3028e8ea949d58a8f49fcb668",
+  "runner_sha256": "fc252d9364626f952ccf4bb24af219abd7e2dcbd9a364ea5f972ae0ae613a5e2",
   "primary": "V203",
-  "canonical_pdf_sha256": "63be833fdcdbbd3e3e1e301d77e700a415d740dc550d03f10c7f59b221062628",
-  "paper_head": "46c135044c210061d2e640ec863c5fc26c631b40",
-  "research_head": "d46b4a2a5ee0e08de175444fc2b65f9919b14480",
+  "canonical_pdf_sha256": "b928b3f5d060ab43f8dcfcfd81f18c6bb8d608e6b41ace6083a8f583376dac37",
+  "paper_head": "d1a3996be0fab3820271570ff5f056cf79997749",
+  "research_head": "0034802f34b83b761e56060506da819393ec23a1",
   "environment": {
     "python": "3.11.18",
     "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
@@ -152,20 +152,20 @@
     {
       "kind": "root",
       "passed": true,
-      "pdf_sha256": "0a0e00dff8a058ca68ff894e942fb90432a15a04ea4e7d487343c5a68e787932",
+      "pdf_sha256": "e008f35fffcea11ccf7dd08bd27e85d36955442a1dd0a7bebea2e5e95e00d188",
       "text_pages_equal": true,
       "grayscale_72dpi_pages_equal": 27,
-      "underfull_paragraphs": 2,
+      "underfull_paragraphs": 4,
       "removed_snapshot_outputs": [],
       "command": [
         "tectonic",
         "--only-cached",
         "--outdir",
-        "/data/scratch/himcm-current-oslo-spatial-reproduction/work-66ueiooc/root/compiled",
+        "/data/scratch/himcm-current-oslo-student-reproduction/work-vsta_v6p/root/compiled",
         "--keep-logs",
         "--keep-intermediates",
         "--makefile-rules",
-        "/data/scratch/himcm-current-oslo-spatial-reproduction/root/dependencies.mk",
+        "/data/scratch/himcm-current-oslo-student-reproduction/root/dependencies.mk",
         "main.tex"
       ],
       "physical_pages": 27,
@@ -174,10 +174,10 @@
   ],
   "input_protection": {
     "science_files": 548,
-    "paper_and_navigation_files": 74,
+    "paper_and_navigation_files": 86,
     "changed": []
   },
-  "elapsed_seconds": 9.165,
+  "elapsed_seconds": 9.265,
   "submission_ready": false,
   "server_compile_verified": false,
   "scope": "Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; no fresh-machine,MC/source revalidation or online compile claim."

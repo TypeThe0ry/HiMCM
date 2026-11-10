@@ -36,10 +36,8 @@ age groups 14--15 and 16--18. Their travel-utility marginal bounds overlap:
 $[0.35961,0.55711]$ and $[0.29347,0.59346]$. Unknown durations, optional members
 and shared unknown-age mass mean these extrema need not be jointly attainable.
 They do not identify today's exact ages fourteen and eighteen. Singapore's
-2020 MOE table records 38,555 fourteen-year-olds and 165 eighteen-year-olds
-in secondary schooling. The latter is not a resident denominator; these counts
-cannot join census school-stage travel bins without matched populations and
-reference days \cite{istanbul,sgage}.}
+enrolment counts cannot be joined to resident travel cohorts without matched
+populations and reference days \cite{istanbul,sgage}.}
 \newcommand{\CountryInterpretation}{Phoenix has higher retained affordability utilities than New York. Mumbai has the higher PM$_{2.5}$ utility; Delhi leads in living-cost, housing, school-resource and broadband utilities. Both score pairs overlap. }
 \newcommand{\CaseReferences}{\bibitem{shanghai} Shanghai Municipal Education Commission. Regular secondary-school pupil and teacher tables, school year 2025. \url{https://edu.sh.gov.cn/xxgk2_zhzw_tjsj_01/20260610/890926a33cbf443d9abf07c6f65b7734.html}. \bibitem{istanbul} Istanbul Metropolitan Municipality. 2012 household transport survey, official data-portal response resource \texttt{a75118db-28c9-4fdf-b367-d5933b7bb810}; questionnaire, report and nonidentifying aggregate audit archived. \bibitem{sgage} Singapore Ministry of Education. Secondary enrolment by level and age, 2020. \url{https://data.gov.sg/datasets/d_cc84fc751ef5106d9e26cfdbf61776c8/view}.  }
 \newcommand{\CurrentMeanWidth}{15.82233}
@@ -701,29 +699,16 @@ Its difference from pooled utility reflects aggregation; school-location data
 establish neither resident travel access nor policy effects.
 \par\end{samepage}
 
-For Istanbul's retained 2012 high-school cohort aged 14--18, let $L_{0.2}$
-be the lowest-20\% weighted mean travel utility, with fractional boundary
-inclusion, and $\mu$ the overall mean. Unknown utilities lie in $[0,1]$; optional membership remains uncertain. Observed weight is $W=499950$; including all
-optional members gives $N_{\max}=681503$. The sharp joint bound is
-$\min(\mu-L_{0.2})=(W/N_{\max})(\mu_{\mathrm{obs}}-L_{0.2,\mathrm{obs}})=0.226686$,
-where ``obs'' denotes observed trips.
-Including all optional members and setting unknown trips to 45 minutes attains it.
-With cohort, weights and missing-data rules fixed, allowing arbitrary utility
-changes to at most 5\% or 20\% of observed weighted mass leaves sharp minimum gaps
-0.200134 or 0.129091, respectively. This fractional-mass relaxation uses declared
-error budgets, not estimated error rates or fractions of students.
-The official-portal aggregate projection, rather than original CSV bytes,
-supports these historical feasibility results, not current facility-use estimates
-\cite{istanbul}.
+For Istanbul's 2012 high-school cohort aged 14--18, $L_{0.2}$ is the lowest-20\% weighted mean travel utility, with fractional boundary inclusion, and $\mu$ the overall mean. Unknown utilities lie in $[0,1]$; some membership is uncertain. Observed weight $W=499950$ and all optional members give $N_{\max}=681503$. The sharp joint bound $\min(\mu-L_{0.2})=(W/N_{\max})(\mu_{\mathrm{obs}}-L_{0.2,\mathrm{obs}})=0.226686$ (``obs'' denotes observed trips) is attained by including all optional members and setting unknown trips to 45 minutes. With fixed cohort, weights and missing-data rules, arbitrary utility changes to at most 5\% or 20\% of observed weighted mass give sharp minimum gaps 0.200134 or 0.129091, respectively. These declared fractional-mass budgets are not estimated error rates or fractions of students. The official-portal aggregate projection, rather than original CSV bytes, supports these historical feasibility results, not current facility use \cite{istanbul}.
 
 \AgeCase
 
-Assigning shared unknown-age mass once gives younger-minus-older mean travel utility the joint closure $[-0.23330,0.26325]$. Two finite-duration completions use unknown utilities 0.05 and 0.95, allocate the shared mass to the younger group, and yield contrasts $+0.23842$ and $-0.20848$. Closure endpoints allow zero utility as a limit; the interior reversals are feasibility constructions for the retained 2012 aggregates, not observed age effects.
+Assigning shared unknown-age mass once gives the younger-minus-older mean travel utility joint closure $[-0.23330,0.26325]$. Two finite-duration completions allocate shared mass to the younger group and use unknown utilities 0.05 and 0.95, yielding contrasts $+0.23842$ and $-0.20848$. Zero utility is a closure limit; the interior reversals are feasible constructions for the 2012 aggregates, not observed age effects.
 
 
-Comparing exact ages fourteen and eighteen requires matched resident utilities
-$u_{ij}^{(14)},u_{ij}^{(18)}$ and separately elicited weights
-$w_j^{(14)},w_j^{(18)}$. Our analyst preference scenarios carry no age labels.
+In Oslo's January--March 2023 school survey, 66\% of grade 8 and 41\% of Vg3 respondents rated local provision of youth meeting places very or fairly good; 70\% and 32\%, respectively, reported sports-club activity at least once in the previous month \cite{osloyouth2023}. Item/grade sample sizes are unreported; these cross-sectional comparisons establish neither exact ages, preferences, causes nor access and do not enter the primary scores.
+
+Exact-age comparisons require matched resident utilities $u_{ij}^{(14)},u_{ij}^{(18)}$ and separately elicited weights $w_j^{(14)},w_j^{(18)}$; our analyst scenarios carry no age labels.
 
 \section{Comparing cities within the same country}
 The primary sample has one city per country. Frozen US and India cases use the same
@@ -1026,6 +1011,8 @@ Author-platform resident grids for Singapore and Zurich, accessed 7 November 202
 Global Imagery Browse Services WMS documentation.
 \url{https://hls.gsfc.nasa.gov/products-description/s30/};
 \url{https://nasa-gibs.github.io/gibs-api-docs/access-basics/}.
+\bibitem{osloyouth2023} A. Bakken. \textit{Ung i Oslo 2023: Ungdomsskolen og videreg\aa{}ende}, NOVA Rapport 6/23, OsloMet, pp.~1, 27, 33, 79--80. Vg3 is the final upper-secondary year. Survey participants: 14,667 lower-secondary (78\% response) and 10,595 upper-secondary (60\% response).
+\url{https://oda.oslomet.no/oda-xmlui/bitstream/handle/11250/3065089/NOVA-Rapport-6-2023.pdf}.
 \end{thebibliography}
 \label{main-end}
 \clearpage

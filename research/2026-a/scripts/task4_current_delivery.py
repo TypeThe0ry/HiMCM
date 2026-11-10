@@ -8,7 +8,7 @@ def norm(s):
  return ' '.join(re.sub(r'-[ \t]*\n[ \t]*','-',s).split()).casefold()
 def hit(m,s,line=False):return any(norm(x)==norm(m) for x in s.splitlines()) if line else re.search(r'(?<!\w)'+re.escape(norm(m))+r'(?!\w)',norm(s)) is not None
 def main():
- pdf=Path('/data/scratch/himcm-current-oslo-spatial-build/main.pdf');raw=subprocess.check_output(['pdftotext','-layout',str(pdf),'-'],text=True).split('\f');assert not raw[-1].strip();pages=raw[:-1];aux=Path('/data/scratch/himcm-current-oslo-spatial-build/main.aux').read_text()
+ pdf=Path('/data/scratch/himcm-current-oslo-student-build/main.pdf');raw=subprocess.check_output(['pdftotext','-layout',str(pdf),'-'],text=True).split('\f');assert not raw[-1].strip();pages=raw[:-1];aux=Path('/data/scratch/himcm-current-oslo-student-build/main.aux').read_text()
  def label(n):return int(re.search(r'\\newlabel\{'+n+r'\}\{\{[^}]*\}\{(\d+)\}',aux)[1])
  model_path=R/'design/task4_user_current_model.json';model=json.loads(model_path.read_text());assert model['version']=='V203'
  ranks_path=R/model['results']/'current_ranks.csv';ranks=list(csv.DictReader(ranks_path.open()))
@@ -19,9 +19,10 @@ def main():
  assert sha(pdf)==sha(R.parents[1]/'paper/current/main.pdf') and sha(P/'main.tex')==sha(R.parents[1]/'paper/current/main.tex')
  total=len(pages);end=label('main-end');news=[label('news-start'),label('news-end')];assert end<=25 and total==end+2==label('LastPage')
  refs=[i+1 for i,p in enumerate(pages) if hit('References',p,True)];assert len(refs)==1;refs=refs[0]
- count=len(re.findall(r'\\bibcite\{',aux));assert count==61
+ count=len(re.findall(r'\\bibcite\{',aux));assert count==62
  prior=R/'results/current_spatial_review/requirements.csv';rows=list(csv.DictReader(prior.open()));assert len(rows)==48;anchors=[]
  updates={
+ 'U-age': 'Retained Istanbul2012 joint feasibility proof and finite witnesses; Oslo2023 reported grade8/Vg3 meeting-place provision66/41percent and monthly sports-club activity70/32percent; cross-sectional student evidence, not exact ages',
  'U-country':f'Section7 on page{country_text_pages[0]}; Figure{country_number} on page{country_page}; frozen auxiliary four-city cases,20 contrasts,7 sign-identified; unchanged',
  'U-country-visual':f'Figure{country_number} on page{country_page}; unchanged20differences,7excludezero,4oldscore ranges;min9.5pt/source scope unchanged',
  'PA-sample':'Retained 16-city by 10-indicator primary sample and V203 ranking table',
@@ -45,7 +46,7 @@ def main():
  if shared: updates['TEAM-shared-build']='Actual local root current main compiles to the independently audited PDF; clean Git rendering reproduction is recorded separately; online server compilation unverified'
  for row in rows:
   key=row['id'];markers=json.loads(row['passage_markers']);lo,hi=3,news[0]-1;line=False
-  replacements={'U-spatial-visual':['Walking time across retained city grids','height is not terrain','99.18%'], 'U-country':['The primary sample has one city per country','outside the sixteen-city ranking'], 'U-source-quality':['numerator 340','rate 0.14','626'], 'PA-best':['conservative recommendation under the stated criteria and intervals','Oslo minimizes maximum regret'], 'U-model-count':['TOPSIS is the primary score','VIKOR'], 'PA-news':['largest possible shortfall','Trying different priorities'], 'U-age':['shared unknown-age mass once','0.23842','not observed age effects'], 'U-MC-precision':['Numerical precision','2064 exported means','rank in 23 of 37 settings']}
+  replacements={'U-spatial-visual':['Walking time across retained city grids','height is not terrain','99.18%'], 'U-country':['The primary sample has one city per country','outside the sixteen-city ranking'], 'U-source-quality':['numerator 340','rate 0.14','626'], 'PA-best':['conservative recommendation under the stated criteria and intervals','Oslo minimizes maximum regret'], 'U-model-count':['TOPSIS is the primary score','VIKOR'], 'PA-news':['largest possible shortfall','Trying different priorities'], 'U-age':['shared unknown-age mass once','0.23842','not observed age effects','local provision of youth meeting places','sports-club activity'], 'U-MC-precision':['Numerical precision','2064 exported means','rank in 23 of 37 settings']}
   if key in replacements: markers=replacements[key]; row['passage_markers']=json.dumps(markers)
   if key=='PA-summary':lo=hi=1
   if key=='PA-toc':lo=hi=2;line=True
@@ -74,6 +75,7 @@ def main():
    row['scope_or_remaining_action']='Final team acceptance and any specifically authorized teammate-text integration remain unverified'
   if key=='TEAM-independent-entry':row['requirement']='Current single main compiles locally'
   if key=='U-template-format':row['scope_or_remaining_action']='Original teammate text is archived; shared class and bibliography preserved; actual registration and online compiler settings unverified'
+  if key=='U-age':row['scope_or_remaining_action']='Oslo school-grade comparisons have unstated item/grade denominators; reported provision and participation are not causal age effects, objective access or elicited weights; original2012model remains historical'
   if key=='U-preserve': row['scope_or_remaining_action']='V203 admits only the626source-definedbusinventorylowerrefinement;otherinputsandrulespreserved'
   if key=='U-MC-precision': row['scope_or_remaining_action']='V203 simulation exports; IID within setting; no real-world winner probability or forecast calibration'
   if key=='CI-budget':row['scope_or_remaining_action']=f'{25-end}mainpagesremainunderretained25-pagebudget;notfinalsubmissioncertification'
@@ -82,6 +84,6 @@ def main():
  for name,records in [('requirements.csv',rows),('anchor_hits.csv',anchors)]:
   with (O/name).open('w') as f:
    w=csv.DictWriter(f,fieldnames=list(records[0]),lineterminator='\n');w.writeheader();w.writerows(records)
- report=dict(version='Current manuscript delivery',status='pass',primary_model='V203',review_version='current',pdf_sha256=sha(pdf),total_pages=total,main_and_references_pages=end,main_page_margin=25-end,news_pages=news,references_pages=list(range(refs,end+1)),AI_pages=[end+1,total],compiled_references=count,requirements=48,scoped_anchor_rows=len(anchors),all_scoped_anchors_found=True,prior_statuses_preserved_except_shared_build=True,shared_build_local_verified=shared,pending_count=len(pending),pending_ids=pending,source_sha256={str(p.relative_to(R)):sha(p) for p in [prior,Path(__file__),model_path,ranks_path]+([proof_path] if shared else [])},output_sha256={n:sha(O/n) for n in ['requirements.csv','anchor_hits.csv']},compiled_aux_sha256=sha(Path('/data/scratch/himcm-current-oslo-spatial-build/main.aux')),derived_recommendations=choices,derived_country_figure=dict(number=country_number,page=country_page,text_page=country_text_pages[0]),submission_ready=False,server_compile_verified=False,scope='Current single main, spatial figure passage locations and preserved status gates; not proof of complete original-source validation, full-teamAI,registrationorcontestdelivery.')
+ report=dict(version='Current manuscript delivery',status='pass',primary_model='V203',review_version='current',pdf_sha256=sha(pdf),total_pages=total,main_and_references_pages=end,main_page_margin=25-end,news_pages=news,references_pages=list(range(refs,end+1)),AI_pages=[end+1,total],compiled_references=count,requirements=48,scoped_anchor_rows=len(anchors),all_scoped_anchors_found=True,prior_statuses_preserved_except_shared_build=True,shared_build_local_verified=shared,pending_count=len(pending),pending_ids=pending,source_sha256={str(p.relative_to(R)):sha(p) for p in [prior,Path(__file__),model_path,ranks_path]+([proof_path] if shared else [])},output_sha256={n:sha(O/n) for n in ['requirements.csv','anchor_hits.csv']},compiled_aux_sha256=sha(Path('/data/scratch/himcm-current-oslo-student-build/main.aux')),derived_recommendations=choices,derived_country_figure=dict(number=country_number,page=country_page,text_page=country_text_pages[0]),submission_ready=False,server_compile_verified=False,scope='Current single main, spatial figure passage locations and preserved status gates; not proof of complete original-source validation, full-teamAI,registrationorcontestdelivery.')
  (O/'delivery_verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:report[k] for k in ['status','total_pages','main_and_references_pages','compiled_references','scoped_anchor_rows','pending_count']}))
 if __name__=='__main__':main()

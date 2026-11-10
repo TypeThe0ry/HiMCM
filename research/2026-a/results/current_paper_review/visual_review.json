@@ -1,24 +1,25 @@
 {
   "status": "pass",
-  "pdf_sha256": "63be833fdcdbbd3e3e1e301d77e700a415d740dc550d03f10c7f59b221062628",
-  "render": "/data/scratch/himcm-current-oslo-spatial-render",
+  "pdf_sha256": "b928b3f5d060ab43f8dcfcfd81f18c6bb8d608e6b41ace6083a8f583376dac37",
+  "render": "/data/scratch/himcm-current-oslo-student-render",
   "reviewed": [
-    "all27page comparison to prior raster pages",
-    "changedpage16fullcolour",
-    "page16grayscale"
+    "all27pages raster compared to previous published PDF",
+    "changed page17 survey and preserved maths",
+    "changed page25 reference62"
   ],
   "changed_96dpi_pages": [
-    15,
-    16
+    17,
+    25
   ],
   "other25pages_exact_96dpi_equal": true,
-  "grayscale_checked": true,
+  "all_four_figures_unchanged": true,
+  "grayscale_checked": "Previously checked unchanged spatial figure; no new figure this iteration",
   "color_vision_simulation_performed": false,
   "checks": [
-    "full6.5in figure min9pt",
-    "rawsatellite clouds retained; no Oslo imagery fabricated",
-    "quantitativeheightwalking notterrain",
-    "sourcepopulation/years/studentaccess qualifications visible"
+    "Source chart percentages and questions independently reviewed",
+    "Native Letter headers and empty footers preserved",
+    "Current27pages25plus2 and62references",
+    "Existing61references retain numbers; class and external bibliography unchanged"
   ],
-  "scope": "Local rendered review; colour-vision simulation, onlinepreview andfinalteamacceptance excluded"
+  "scope": "Local actual-size page review; online compilation and final team acceptance unverified"
 }

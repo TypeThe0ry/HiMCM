@@ -10,7 +10,7 @@
 
 科学独审results/task4_v203_transition：18案例108组各1万次MC、1104标量、16384角点，六历史同国／年龄／公平性CSV字节保持。548科学绑定已冻结，不再改V203来源或科学结果；旧staged标签记录创建时点，当前注册表决定启用状态。当前稿验收results/current_paper_review/；重现scripts/task4_current_reproduce.py需干净P HEAD、绝对解释器/data/projects/HiMCM/.venv-v120/bin/python，不能使用系统Python或.venv。
 
-Overleaf只有main.tex、四图、原类／参考库和简短说明；GitHub paper/current/镜像七依赖＋PDF。27=25正文参考＋2AI、61引用，18213暂用；卫星3D图16、新闻19。旧985文件与队友原main已逐字节归档；原类／参考库／队友内容不改。线上编译、真实注册、全队AI及比赛提交未核，仍12实质待办。
+Overleaf只有main.tex、四图、原类／参考库和简短说明；GitHub paper/current/镜像七依赖＋PDF。27=25正文参考＋2AI、62引用，18213暂用；卫星3D图16、新闻19。旧985文件与队友原main已逐字节归档；原类／参考库／队友内容不改。线上编译、真实注册、全队AI及比赛提交未核，仍12实质待办。
 
 48格96行采集表已按V203重基独审；固定ZurichPTR/旅时保证各1.280259，等权2.793694/2.735096，Oslo旅时最有利完整识别最多排除4/3城，非实际改善。下一轮按新表选匹配来源，不重复626源提取／829聚类／四站服务查询／旧师资失败路线。数据失败就跳过，不发送外部联系请求。分别fetch、审diff、commit/push并核远端HEAD；Overleaf仍只覆盖同一main，不上传研究版本稿。
 
@@ -109,3 +109,5 @@ V185新增CSO2011Dublin居民工作分箱独立配置：N215384、未知16281，
 `data/current_oslo_school_rvu2024` now preserves a real2024 regional school-trip duration chart: six displayed shares2/12/33/22/28/3%,n610,Figure28 printedp51. Scope is20municipalities and residents13+, not Oslo municipality or upper-secondary students; rounded chart shares do not supply exact counts or bin means. `data/current_zurich_mobility2021` preserves a city report whose84minutes is daily all-purpose travel in2021, not one-way school duration. Both are non-admissions. Source assessment and548core+49supplemental protected hashes passed in `results/current_travel_source_review/verification.json`. Do not repeat these routes as if unresolved sources; seek a published municipal/stage-specific breakdown with matched weighting and definitions. Paper, all seven Overleaf dependencies and primaryV203 stay unchanged.
 
 The selected9-route teacher/travel index is `design/task4_current_source_routes.csv`. Freudenberg's linked2023/24,2022/23 reports and2022evaluation are now archived with retrieval receipts in `data/current_freudenberg_staff`; no stage-specific teachingFTE found in extracted text, and120teacher survey invitations are not FTE. Image-only absence is unverified. No admission or score change. See `results/current_staff_source_review/verification.json`; reopen reviewed routes only with new matching evidence.
+
+Current main section6.4 now includes audited Oslo2023 school-grade comparisons: perceived local youth meeting-place provision66%/41% and monthly sports-club activity70%/32% (grade8/Vg3). Reference62 defines Vg3 and records survey-wide response counts; chart-specific denominators are unstated. These are cross-sectional context, not exact-age effects or model weights. PrimaryV203, originalCSV and all4figures remain;27pages25+2. Source package/audit: `data/current_oslo_student_stage`, `results/current_oslo_student_review/verification.json`.
