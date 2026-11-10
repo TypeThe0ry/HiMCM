@@ -1,0 +1,38 @@
+{
+  "status": "pass scoped route check",
+  "successful_archived_responses": 4,
+  "empty_HTTP202_responses": 1,
+  "pre_HTTP_TLS_failures": 3,
+  "Vienna_national_2024_count_rows": 12,
+  "target_travel_cells_unchanged": [
+    "Vienna",
+    "Warsaw",
+    "Tokyo"
+  ],
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 77,
+  "withdrawal_evidence_entries_checked": 10,
+  "paper_dependencies_each_copy": 7,
+  "source_sha256": {
+    "data/current_vienna_school_commuting/README.md": "36aa9999eb0e5ed8d3ba62ff3978f4489c8e2a5f0f8451a544d0fd5c7de4943e",
+    "data/current_vienna_school_commuting/extract.py": "9faf379a6ba953160fba13d9929d0eaba09fec65cb4fcbc509ca60732aa76831",
+    "data/current_vienna_school_commuting/landing.html": "57737f84be5b9f11b9dfa3303e9d7364f5069eaca436e10eaa741fd007b7d69f",
+    "data/current_vienna_school_commuting/retrievals.json": "07a4a7d2a2cf59f17fc99a09bc50a728666d6e86a833659863e6c6f11f13492f",
+    "data/current_vienna_school_commuting/selected_scope.json": "acc3d18ac99786ad58bde7951457dddd710f3170328c460e3fdf3a34e53484f6",
+    "data/current_vienna_school_commuting/students_2011_2024.ods": "0bebba572a4c4ac4bd14eeb85b72a65ca01e0766d2e13cebfae199ddb48a17d3",
+    "data/current_warsaw_school_travel/README.md": "ac70a2065e53900501f0d6e939d634e48c136e886cf728d042f862d4acf9a13e",
+    "data/current_warsaw_school_travel/student_flows_2024_25.html": "59896a38f70128e4f7ab49a6c07332d3d26e2185623d7a6378f8dc384d8f5569",
+    "data/current_warsaw_school_travel/student_flows_2024_25.html.receipt.json": "01d0872745c904a1099e2a33acbf88484bf0f2e1b1aa7d6ac34a82f034e6e37a",
+    "data/current_warsaw_school_travel/wbr2015_stage_iii.pdf.receipt.json": "6c5fce57b67a876a1377a6f7a8e0eb0b9174f5f6a41dd8c3805be909b08a6e00",
+    "data/current_warsaw_school_travel/wbr2025_announcement.html": "3c28ecc29ac56aadb3b466b9668f312247bd771c2afb617769ce6b87d185659a",
+    "data/current_warsaw_school_travel/wbr2025_announcement.html.receipt.json": "fb8cac241425232325a9068b995d46dc226a748cbbf25f0f75acda2b3834f2ee",
+    "data/current_tokyo_school_travel/README.md": "c7be221ec074da1380a4269c693dc2ef3c022fbaf53bb9207bd194023aa7df01",
+    "data/current_tokyo_school_travel/retrievals.json": "2706470b16777ca9828a8f2c5a9a39c5188151b0671413a4d6fdd8edb1a7922a",
+    "data/current_tokyo_school_travel/scope.json": "bae07613201726b6a390362bd4ca15d8394d1b3bf7b56b91fb1730a3b3be4108",
+    "scripts/audit_current_school_travel_routes.py": "b7f0d1fda5153ed9ca3eba528ac1ad6dea9f5106efa2407a3883faa963cd6082",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3"
+  },
+  "scope": "Verifies saved bodies, factual workbook scope, failure receipts and unchanged target cells. It does not certify index-only2015Warsaw report numbers or Tokyo handbook categories from unavailable originals, or claim that no qualifying data exists anywhere."
+}

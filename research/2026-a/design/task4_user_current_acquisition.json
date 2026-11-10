@@ -84,8 +84,8 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 16,
-    "scope": "Selected reviewed high-priority teacher/travel and retained-point source routes; not an exhaustive source inventory",
+    "routes": 19,
+    "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
   "freudenberg_staff_followup": {
@@ -232,5 +232,32 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Station annual means are not city population-weighted exposure; rounded2023FUA7.9 does not establish original2024point lineage."
+  },
+  "three_city_school_travel_followup": {
+    "data": [
+      "data/current_vienna_school_commuting",
+      "data/current_warsaw_school_travel",
+      "data/current_tokyo_school_travel"
+    ],
+    "verification": "results/current_school_travel_review/verification.json",
+    "verification_sha256": "bbd0f23dcd5980a6a41c1911cc0f4c4de337c98bfad9d02706bc2086b57f7aa0",
+    "successful_archived_responses": 4,
+    "empty_HTTP202_response": 1,
+    "pre_HTTP_TLS_failures": 3,
+    "target_cells_remain_fully_unknown": [
+      "Vienna travel",
+      "Warsaw travel",
+      "Tokyo travel"
+    ],
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "National counts and survey/flow descriptions are not one-way upper-secondary duration distributions; unavailable-original/index-only claims remain provisional."
+  },
+  "original_input_source_followup": {
+    "date": "2026-11-10",
+    "Oslo_HE_roster_or_Zurich_homicide_source_provided": false,
+    "user_direction": "Continue verifying other data",
+    "action": "Retain original values and unresolved provenance; do not repeatedly request the same unavailable material"
   }
 }

@@ -1,0 +1,9 @@
+# Vienna travel follow-up: national commuting counts are not duration data
+
+The newly archived Statistics Austria workbook supplies national school and student commuting **counts** through 2024. It does not supply a Vienna journey-time distribution or mean, so the primary Vienna travel cell remains `[0,1]`.
+
+The [official education-commuting page](https://www.statistik.at/statistiken/bevoelkerung-und-soziales/bildung/schulbesuch/pendeln-zum-ausbildungsort) links `students_2011_2024.ods`. Its single sheet groups current formal education types by within-/outside-municipality and administrative destination categories. `selected_scope.json` preserves the seven headers and twelve 2024 rows, including AHS upper stage, vocational middle and vocational higher schools. These are national counts; no Wien row occurs in this workbook. Administrative boundary categories are not minute or kilometre bins.
+
+The source note identifies the 2024 territorial reference, creation date 9 June 2026 and disclosure-control record swapping. The landing page separately classifies employed pupils/students as work commuters. Neither fact supplies the missing duration information, and no trip-time utility is derived from a commuting count. This check does not characterize every other linked municipal table or restricted database.
+
+`retrievals.json` records both successful original responses with exact URLs, UTC, bytes and hashes. Run `python research/2026-a/data/current_vienna_school_commuting/extract.py` for deterministic, read-only extraction. New admissions and actual primary score-width reduction are zero; original inputs, weights, model and manuscript remain unchanged. The earlier 2001 stage-duration case and nearest-school routing estimates remain separate and are not reused as current observations.

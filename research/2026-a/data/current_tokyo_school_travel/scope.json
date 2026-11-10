@@ -1,0 +1,38 @@
+{
+  "question": "Does the 2018 Tokyo metropolitan person-trip survey distinguish upper-secondary students beyond age bands?",
+  "survey": {
+    "name": "Sixth Tokyo Metropolitan Area Person Trip Survey",
+    "observation_period": "September-November 2018",
+    "covered_residents": "Tokyo excluding islands, Saitama, Chiba, Kanagawa, and southern Ibaraki",
+    "sampling": "Official handbook says results are expanded using regional sex-age resident population and other controls; this audit did not retrieve a target-cell weight or estimate"
+  },
+  "documented_person_categories": {
+    "age_bands_relevant": [
+      "10-14",
+      "15-19"
+    ],
+    "occupation_relevant": "Nursery/pupil/student (single generic category)",
+    "trip_purpose_relevant": "Home-to-school",
+    "school_stage_category_found": false,
+    "exact_age_14_to_18_category_found": false
+  },
+  "geography": {
+    "Tokyo_23_wards_resident_zone_possible": "Potentially aggregatable from resident zones in the custom system; no tabulation was run",
+    "Tokyo_metropolitan_area_equals_23_wards": false
+  },
+  "availability": {
+    "published_fixed_table_matching_target": false,
+    "custom_aggregation_system": "Available after user registration; not accessed",
+    "duration_cell_or_weights_obtained": false,
+    "admitted": false,
+    "decision": "No matching target tabulation or weights obtained; no admission. Reviewed aggregate age/student-purpose categories alone do not isolate upper-secondary students; other restricted-record fields are not exhaustively assessed."
+  },
+  "sources": [
+    "https://www.tokyo-pt.jp/person/04_01",
+    "https://www.tokyo-pt.jp/data/01_01",
+    "https://www.tokyo-pt.jp/data/system_general_info",
+    "https://www.tokyo-pt.jp/static/hp/file/data/tebiki.pdf"
+  ],
+  "retrievals": "retrievals.json",
+  "evidence_basis": "Official-source text extraction for route notes; raw handbook/category/survey-scope retrievals failed TLS and were not independently re-extracted from local originals"
+}
