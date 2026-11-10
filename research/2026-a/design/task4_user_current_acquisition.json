@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 9,
+    "routes": 12,
     "scope": "Selected reviewed high-priority teacher/travel routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -157,5 +157,22 @@
     "next_needed": "Observation-specific survey/source and perimeter crosswalk for Eurostat2024CH002C/TT1019V, then matched duration distribution; do not substituteSwissagg/city means or student bins",
     "verification_sha256": "382dd59bf350c1cd0e5c1a860ab86b5b1b5e1577d77e20a3e616ad143f57f436",
     "audit_script_sha256": "e680380a5553a3a40ad6b497b9f8977e217fcbaefc0ae42e57c5ff212eb60441"
+  },
+  "staff_and_duration_followup": {
+    "verification": "results/current_staff_duration_review/verification.json",
+    "verification_sha256": "6a4dd3ad8a78f391c4dad0c65d70e7fe97159cb164cc929038beeab1eb05d75d",
+    "data": [
+      "data/current_swiss_duration2024",
+      "data/current_zurich_staff_request"
+    ],
+    "new_primary_admissions": 0,
+    "actual_score_width_reduction": 0,
+    "national_duration_bins": 5,
+    "Zurich_requested_aggregate_received": false,
+    "contact_sent": false,
+    "scope": "Swiss national work-duration bins are not a city distribution; SSP activity variables and a custom-request route do not supply a city-stage teaching FTE result. Existing Dublin ETB/county payroll route remains incompatible.",
+    "next_needed": "Matched city school-location upper-secondary teaching FTE and pupils, or observation-specific Zurich work-duration bins and geography. Prepared aggregate specification remains unsent.",
+    "independent_workbook_verification": "results/current_staff_duration_review/workbook_verification.json",
+    "independent_workbook_verification_sha256": "cd481ee3310422ec1791326fe699dd31aa4f7232d97d79c3fdadd1a69d46f45a"
   }
 }

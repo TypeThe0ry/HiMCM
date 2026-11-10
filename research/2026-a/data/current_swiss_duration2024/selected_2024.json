@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "provider": "Swiss Federal Statistical Office",
+  "asset": "36351624",
+  "table": "T 11.4.4.3",
+  "sheet": "T 11.4.4.3",
+  "geography": "Switzerland (asset metadata Raumgliederung)",
+  "reference_year": 2024,
+  "selected_columns": {
+    "count_or_mean": "AV",
+    "VI_percent": "AW",
+    "share_percent": "AX"
+  },
+  "rows": [
+    {
+      "row": 15,
+      "label": "Total Pendler/-innen1 mit bekanntem Zeitbedarf für den Arbeitsweg (ein Hinweg)",
+      "count_or_mean": 3550705.97934223,
+      "reported_VI_percent": 0.41677703361558,
+      "share_percent": 100.0
+    },
+    {
+      "row": 16,
+      "label": "    0 – 15 Min.",
+      "count_or_mean": 1228123.72954793,
+      "reported_VI_percent": 0.89112158123035,
+      "share_percent": 34.5881561777595
+    },
+    {
+      "row": 17,
+      "label": "    16 – 30 Min.",
+      "count_or_mean": 1141061.12543677,
+      "reported_VI_percent": 0.92669313183389,
+      "share_percent": 32.136176075276
+    },
+    {
+      "row": 18,
+      "label": "    31 – 45 Min.",
+      "count_or_mean": 553587.876606319,
+      "reported_VI_percent": 1.38308395832731,
+      "share_percent": 15.590924166266
+    },
+    {
+      "row": 19,
+      "label": "    46 – 60 Min.",
+      "count_or_mean": 316293.018371043,
+      "reported_VI_percent": 1.86396441558979,
+      "share_percent": 8.90789100002127
+    },
+    {
+      "row": 20,
+      "label": "    Mehr als 60 Min.",
+      "count_or_mean": 311640.229380158,
+      "reported_VI_percent": 1.86738591498519,
+      "share_percent": 8.77685258067721
+    },
+    {
+      "row": 21,
+      "label": "Pendler/-innen1 mit unbekanntem Zeitbedarf für den Arbeitsweg",
+      "count_or_mean": 130637.442142306,
+      "reported_VI_percent": 2.95247760006064,
+      "share_percent": null
+    },
+    {
+      "row": 22,
+      "label": "Durchschnittlicher Zeitbedarf für den Arbeitsweg in Minuten4",
+      "count_or_mean": 30.2110445944863,
+      "reported_VI_percent": 0.46171079066057,
+      "share_percent": null
+    }
+  ],
+  "notes": {
+    "25": "VI=Vertrauensintervall; ab dem Referenzjahr 2021 werden die Vertrauensintervalle nach einer optimierten Methode berechnet; 1990 und 2000 kein Vertrauensintervall, da Vollerhebung",
+    "26": "1 Als Pendler/-innen zählen sämtliche Erwerbstätige, die einen fixen Arbeitsort ausserhalb ihres Wohngebäudes haben. Als Erwerbstätige gelten Personen ab \n15 Jahren mit Wohnsitz in der Schweiz, die mindestens eine Stunde pro Woche einer produktiven Arbeit im (Sinne der volkswirtschaftlichen Gesamtrechnung) nachgehen. Nicht berücksichtigt werden: Personen, die in Kollektivhaushalten leben; Diplomatinnen und Diplomaten, internationale Funktionärinnen und Funktionäre sowie deren Angehörige. \nDie in der Tabelle wiedergegebenen Daten beruhen auf Personenbefragungen, wobei ein Teil der befragten Personen unvollständige Angaben machte. Nebst den Pendler/-innen, wie sie auf dieser Tabelle aufgeführt sind, gibt es 2010-2012 auch Erwerbstätige mit unbekanntem Pendlerstatus (ohne Angabe ob Pendler/-innen oder Nicht-Pendler/-innen; siehe Tabelle 11.4.4.1). Die absoluten Werte dieser Tabelle stellen somit für die Jahre 2010-2012 Mindestwerte dar, zu denen in der Realität noch eine gewisse Anzahl Personen mit fehlenden Angaben hinzukommen dürfte. ",
+    "27": "2 Aufgrund von Änderungen im Bereich der Erhebungsmethode und der Gewichtung bei der Strukturerhebung können die Ergebnisse ab 2018 nur bedingt mit denen der Jahre vor 2018 verglichen werden.",
+    "28": "3 Ab der Strukturerhebung 2020 wurde die Berechnungsmethode der Länge des Arbeitsweges revidiert: Die Berechnungen werden neu mit dem topografischen Landschaftsmodell (TLM) von swisstopo und nicht mehr gemäss Teleatlas erstellt. Die Ergebnisse können daher nur bedingt mit denen der Jahre vor 2020 verglichen werden.",
+    "29": "4 Methodenwechsel im Jahr 2010. Eingeschränkte Vergleichbarkeit.",
+    "31": "Quellen: BFS – Pendlermobilität (PEND), Strukturerhebung (SE), Volkszählung (VZ)",
+    "33": "© BFS"
+  },
+  "primary_admissions": 0,
+  "actual_score_width_reduction": 0,
+  "decision": "National work-commuter survey; not Zurich CH002C incoming/internal work commuters or a matched city student distribution. Do not transfer national bins or mean to the retained city cell. Unknown-duration commuters are reported separately from known-duration shares; VI is not individual-duration support."
+}

@@ -1,0 +1,54 @@
+{
+  "decision": "not_admitted",
+  "reason": "No city-by-upper-secondary teaching FTE or matching pupil count is contained in these three sources; these establish a custom-request route and collection variables, not a downloadable result.",
+  "sources": {
+    "request_page.html": {
+      "institution": "Kanton Zürich Bildungsplanung",
+      "evidence": "Offers tailored statistical information on learners, school staff and completions; requests via bista@bi.zh.ch."
+    },
+    "survey_coverage.html": {
+      "institution": "Kanton Zürich Bildungsplanung",
+      "evidence": "SSP is a census of school staff activities at schools located in the canton, including Sekundarstufe II; data suppliers include public and private schools, school municipalities and offices; annual reference date 15 September except tertiary on 1 November."
+    },
+    "ssp_activity_35956351.pdf": {
+      "institution": "Bundesamt für Statistik",
+      "page_1": {
+        "levels": "Individual school personnel and their school activities; annual census.",
+        "activity_fields": [
+          "Identifikator der Tätigkeit",
+          "Personalkategorie",
+          "Art des Arbeitsvertrags",
+          "Diplom / Qualifikationen",
+          "Identifikator der Schule",
+          "Pensum",
+          "Basis Vollzeit",
+          "Schulart"
+        ],
+        "field_definition_note": "The source lists field names, not detailed coding, the workload-to-FTE formula, allocation rules or completeness by city and stage."
+      },
+      "page_2": {
+        "published_regionalisation": "Kantone",
+        "linkages": [
+          "ZAS",
+          "BUR"
+        ]
+      }
+    }
+  },
+  "requested_aggregate": {
+    "status": "unsent and not received",
+    "school_year": "Same specified most recent available school year for both measures; report reference dates and publication/revision date",
+    "geography": "Schools physically located in Stadt Zürich; request treatment of multi-site or cross-municipality administrative records and counts or FTE unallocated",
+    "stage": "Sekundarstufe II, explicitly identify included programmes and allocate mixed lower/upper-secondary institutions to upper-secondary teaching and pupils",
+    "providers": "Provide all providers together and public/private disaggregation if available; report exclusions and missing coverage",
+    "disclosure": "Request aggregate values and methodological notes, no personal data; provide uncertainty, withheld cells, linkability and known mismatches.",
+    "teacher_denominator": "Sum actual teaching activity FTE with workload and full-time base, exclude school leadership and non-teaching duties; explain imputation, allocation and suppression",
+    "pupil_numerator": "Number of pupils in same school year, school locations, programmes, provider coverage and study modes as teacher FTE; state snapshot, age, residency and part-time treatment"
+  },
+  "caveats": [
+    "A census of public and private suppliers does not establish that each requested city-stage cell is complete or disclosable.",
+    "School identification and workload fields do not establish that all activities can be assigned precisely by location and stage.",
+    "School-location pupil counts include pupils who live outside the city and exclude city residents enrolled elsewhere.",
+    "No number, ratio, model input, or claim of a received data response is supported by this package."
+  ]
+}
