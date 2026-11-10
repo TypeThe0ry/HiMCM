@@ -624,10 +624,13 @@ the decision. They do not establish measured differences between fourteen- and
 eighteen-year-old students.
 
 \subsection{Perturbing weights and point assumptions}
-For each preference centre $w'$, 10,000 draws per setting follow $w^{(b)}\sim\operatorname{Dirichlet}(\kappa w')$, $\kappa\in\{20,100,500\}$. Each recomputes interval TOPSIS and maximum regret without filling missing values. Ties share first- and top-three membership; we report mean ranks.
+At each preference centre $w'$, draw 10,000 weights from
+$w^{(b)}\sim\operatorname{Dirichlet}(\kappa w')$ for each $\kappa\in\{20,100,500\}$.
+Recompute interval TOPSIS and maximum regret without filling missing values;
+ties share first- and top-three membership.
 
 \begin{table}[!ht]\centering
-\caption{Conditional recommendation frequencies (\%) for selected cities at concentration 100.}
+\caption{Conditional recommendation frequencies (\%) at concentration 100.}
 \begin{tabular}{lrrr}\toprule
 Preference centre & Zurich & Oslo & Singapore\\\midrule
 Baseline & 25.48 & 57.38 & 17.10 \\
@@ -635,23 +638,34 @@ Education priority & 2.65 & 71.59 & 24.78 \\
 Independent living & 23.23 & 70.28 & 6.46 \\
 \bottomrule\end{tabular}\end{table}
 
+At concentration 100, mean decision ranks are Oslo 1.5680, Zurich 2.5125 and
+Singapore 2.4630.
+AHP consistency checks calculation, not representative student opinion.
 
-
-
-
-At concentration 100, Singapore, Zurich and Oslo have mean decision ranks 2.4630, 2.5125 and 1.5680; Oslo has the highest recommendation frequency. Pairwise bounds check expected orderings. These summaries test the predeclared minimax rule; AHP consistency checks calculation, not representative student opinion.
-
-Numerical precision can be quantified separately from evidence uncertainty.
-For $n=10{,}000$ independent, identically distributed draws within each setting,
+For $n=10{,}000$ independent, identically distributed draws per setting,
 Hoeffding's inequality and a union bound over $m=2064$ exported means in
 37 settings give 95\% family-wise coverage with error at most
-$R\sqrt{\log(2m/0.05)/(2n)}$, where $R=1$ for frequencies and $R=15$ for
-ranks \cite{hoeffding}. The half-widths are 2.38 percentage points and 0.357 ranks; shared draws across outputs are allowed. Subtracting intervals bounds mean differences: 4,271 of 4,440 pairwise mean-rank comparisons resolve, 169 remain unresolved, and 23 of 37 settings certify a unique smallest expected rank under the declared simulation laws.
+$R\sqrt{\log(2m/0.05)/(2n)}$: 2.38 percentage points for frequencies ($R=1$)
+and 0.357 ranks ($R=15$) \cite{hoeffding}.
+Difference intervals resolve 4,271 of 4,440 pairwise mean-rank comparisons;
+169 remain unresolved. Under the declared simulation laws, 23 of 37 settings
+certify a unique smallest expected rank.
 
-As a separate stress, widen each of the 112 point utilities $x$ to
+Separately, widen each of the 112 point utilities $x$ to
 $[\max(0,x-\epsilon),\min(1,x+\epsilon)]$, retaining the other 48 intervals.
 At $\epsilon=0.05$, minimax selects Oslo with fixed weights and Zurich with
-equal weights. For $\epsilon\in[0,0.2]$, fixed weights certify Oslo through 0.08135 and Zurich from 0.08136; the intervening region contains unresolved radii. Equal weights select Zurich throughout. This additive utility radius is not a raw-value percentage, calibrated error or confidence interval. Each choice applies to an expanded uncertainty box, not every exact dataset inside it; primary scores are unchanged.
+equal weights. Over $\epsilon\in[0,0.2]$, fixed weights certify Oslo through
+0.08135 and Zurich from 0.08136, with unresolved radii between; equal weights
+select Zurich throughout. This utility radius is not a raw-value percentage,
+calibrated error or confidence interval. Each choice applies to an expanded
+uncertainty box, not every exact dataset inside it; primary scores are unchanged.
+
+For source-review priorities, withdraw each point separately to $[0,1]$,
+holding the other 111 points and 48 existing intervals fixed.
+Recommendations switch in 10 of 112 fixed-weight cases (Oslo to Zurich) and
+35 of 112 equal-weight cases (Zurich to Oslo); all cases retain 16 possible
+champions and no necessary champion. These ignorance scenarios establish
+neither measurement errors nor error probabilities.
 
 \subsection{Within-city fairness and growth stages}
 Citywide facilities per resident measure supply. Student access additionally

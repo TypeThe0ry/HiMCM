@@ -30,6 +30,7 @@ bindings={}
 for k in keys:bindings.update(v[k])
 require(len(bindings) in (76,77),'unexpected supplemental binding count')
 files={R/p for p in bindings}
+files.update(R/p for p in v.get('withdrawal_source_sha256',{}))
 files.update(R/p for p in json.loads((R/'design/task4_user_v203_snapshot.json').read_text())['source_sha256'])
 for name in ['current_ai_review','current_point_error','current_joint_collection','current_zurich_source_review','current_paper_review']:
  files.add(R/'results'/name/'verification.json')
@@ -44,6 +45,7 @@ if args.private_output:ai+=['--private-output',str(args.private_output.resolve()
 commands={
  'ai':ai,
  'point':[python,str(S/'audit_current_point_error.py')],
+ 'withdrawal':[python,str(S/'audit_current_point_withdrawal.py')],
  'joint':[python,str(S/'audit_current_joint_collection.py')],
  'zurich':['uv','run','--no-project','--with','openpyxl==3.1.5','python',str(S/'audit_current_zurich_source2026.py')],
  'paper':[python,str(S/'audit_current_paper.py')],
@@ -80,6 +82,6 @@ with tempfile.TemporaryDirectory(prefix='himcm-audit-test-',dir='/data/scratch')
  require(digest(output)==written,'symlink target changed')
 require({p:digest(p) for p in files}==before,'protected files changed')
 require({p:state(p) for p in (G,P)}==states,'repository head or status changed')
-sources=[Path(__file__),S/'task4_audit_output.py']+[Path(c[-1]) for k,c in commands.items() if k in ('point','joint','zurich','paper')]+[S/'audit_current_ai_provenance.py']
-report={'status':'pass','checks':checks,'protected_files_checked':len(files),'supplemental_bindings_checked':len(bindings),'paper_dependencies_per_checkout':7,'repositories_checked':2,'source_sha256':{str(p.relative_to(R)):digest(p) for p in sources}}
+sources=[Path(__file__),S/'task4_audit_output.py']+[Path(c[-1]) for k,c in commands.items() if k in ('point','withdrawal','joint','zurich','paper')]+[S/'audit_current_ai_provenance.py']
+report={'status':'pass','checks':checks,'protected_files_checked':len(files),'supplemental_bindings_checked':len(bindings),'manuscript_withdrawal_binding_entries':len(v.get('withdrawal_source_sha256',{})),'paper_dependencies_per_checkout':7,'repositories_checked':2,'source_sha256':{str(p.relative_to(R)):digest(p) for p in sources}}
 emit_report(report,args,CANONICAL,G)

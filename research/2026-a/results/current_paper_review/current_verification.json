@@ -2,9 +2,9 @@
   "status": "pass",
   "version": "current",
   "primary_model": "V203",
-  "pdf_sha256": "e241931295852da7ff3b8ecf79835a5e0598694d76f2822c0f8c377b2a83ac19",
+  "pdf_sha256": "7c9d00a144c7d2ffec96149e9904e66aca301d85aa4a7be3ce99f0b9d55fd10a",
   "main_entry": "main.tex",
-  "main_source_sha256": "077e9132dccb5fbe68245b0ec7d95f877df0aa173425f2c17de00955ec95ea36",
+  "main_source_sha256": "cb29987df03e0fbfea9d8a598cd61eb31f9db23e8066941958b9a7a852b84571",
   "total_pages": 27,
   "main_and_references_pages": 25,
   "underfull_counts": [
@@ -13,7 +13,7 @@
   ],
   "reference_keys": 62,
   "current_files_sha256": {
-    "main.tex": "077e9132dccb5fbe68245b0ec7d95f877df0aa173425f2c17de00955ec95ea36",
+    "main.tex": "cb29987df03e0fbfea9d8a598cd61eb31f9db23e8066941958b9a7a852b84571",
     "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
     "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
     "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
@@ -23,14 +23,14 @@
   },
   "source_mirror_files": 7,
   "single_current_tex_entry": true,
-  "independent_audit_sha256": "35659fc806f0da1b5e644310860984018635cb1a5b9ead6e2b4b0f275e7b579f",
-  "delivery_audit_sha256": "387fd95e4f6a844ed7417b571a84fc7720b57147303d9a47a5815295ceb62336",
+  "independent_audit_sha256": "6885fc7dc0972298a67203637f0c5954ee654c6aed647e36b34ae50d0a91e29f",
+  "delivery_audit_sha256": "12cafdef4d054f6774f4df8420affda2b8fb755142f33bc313d90f944d26f7ab",
   "visual_review_sha256": "0ac9f69c82ff9bf94b09fc30c26ca5dd8d3fe00ba4070b16454cbdb715981e02",
   "native_letter_headers_empty_footers_checked": true,
   "science_bindings_verified": 548,
   "server_compile_verified": false,
   "submission_ready": false,
-  "scope": "V203 primary unchanged; only6.3 adds point-utility uncertainty stress; AI appendix/fourfigures unchanged; current scoped source/delivery/numeric checks separate from historical stage-protection snapshots",
+  "scope": "V203 primary unchanged; only6.3 compresses existing explanations and adds single-point ignorance stress. All26otherPDFpages/fourfigures/AIappendix unchanged;548scientific+77supplemental bindings and10withdrawal evidence entries separately verified",
   "transport_definition_alternative_disclosed": true,
   "oslo_626_source_defined_bus_lower_admitted": true,
   "default_recommendations": {
@@ -127,5 +127,17 @@
     "results/current_point_error/switch_witnesses.csv": "5a401c96988d3893f06afa8aff9b8007363a2cf74e488d371c9537eb9076e688",
     "results/current_point_error/verification.json": "aad768b456bfabbbe45ec24fc042ab5faf27ae4e21c7da35d454936f1b919083",
     "results/current_point_error/README.md": "afdf6b2e4774a7a809b4db82b90286f3a9202ea5d3e0e5184720bc3fe25cb5af"
+  },
+  "withdrawal_source_sha256": {
+    "scripts/audit_current_point_withdrawal.py": "3a28f459127d4bbdccc520af5fe40d03cf6450d09a0a9d67849e918fe6eae6db",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+    "results/current_point_withdrawal/summary.json": "73f5192cd5806cffcb28216195ababe1a9b472b647801d21ec85bc86fece2314",
+    "results/current_point_withdrawal/cases.csv": "2bf0a71d9310bc4218b75a75a082fabbfe9d405f60571717f47c8f900938f0ba",
+    "results/current_point_withdrawal/ranks.csv": "c35221ab63a8d2f1750f591fe51f4f5c2c129d0d65c728f7d982bc6f3e71e45c",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/task4_current_point_withdrawal.py": "61fa8f87c9a77b2f87e46f85a4c22fcfda429289be88b37d743dc545cd39e711",
+    "design/task4_user_v203_snapshot.json": "c0d70e2288c2230bb8fbaf3aa4b54e4be3f43e47bdddea16ccf8497cc362105e",
+    "results/current_point_withdrawal/README.md": "63e3fa51c1c7254f29c0fb97407d58db9a769e8472c61dbe3dd6e6ff1973cca6",
+    "results/current_point_withdrawal/verification.json": "84d384979588b7452927f55cfc689dc11be3f0c88dbabab0b792b8faf7992514"
   }
 }

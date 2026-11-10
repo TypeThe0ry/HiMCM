@@ -3,6 +3,7 @@
   "checks": {
     "default_ai": "pass",
     "default_point": "pass",
+    "default_withdrawal": "pass",
     "default_joint": "pass",
     "default_zurich": "pass",
     "default_paper": "pass",
@@ -14,17 +15,19 @@
     "reject_overleaf": "expected rejection",
     "reject_symlink": "expected rejection"
   },
-  "protected_files_checked": 643,
+  "protected_files_checked": 650,
   "supplemental_bindings_checked": 77,
+  "manuscript_withdrawal_binding_entries": 10,
   "paper_dependencies_per_checkout": 7,
   "repositories_checked": 2,
   "source_sha256": {
-    "scripts/test_current_audit_readonly.py": "a550da3eb1712545ab54a09dff1d4801e8a9963f72e2e58a2ea5b08590153772",
+    "scripts/test_current_audit_readonly.py": "c7d424f39bc8f742c67112e952ee91a08fc3949ff18ba31b2e5a6c33c847908c",
     "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
     "scripts/audit_current_point_error.py": "2ae914361d09b0459ce027ab5712d5ae9c670f3ef0ebce4e803061ab9b71c997",
+    "scripts/audit_current_point_withdrawal.py": "3a28f459127d4bbdccc520af5fe40d03cf6450d09a0a9d67849e918fe6eae6db",
     "scripts/audit_current_joint_collection.py": "640b95fa9c6052c5db637e0292b44865122d47dbb696a1e01d729dea64323bf5",
     "scripts/audit_current_zurich_source2026.py": "e680380a5553a3a40ad6b497b9f8977e217fcbaefc0ae42e57c5ff212eb60441",
-    "scripts/audit_current_paper.py": "1f26a219e2c6263eac706b0221089cc7546c44b75ac3eb37bd614353662550f6",
+    "scripts/audit_current_paper.py": "94b7c70d852f7833716a28f4dbfb6771ac66b12ea725acd4ad6bb503c76a1a61",
     "scripts/audit_current_ai_provenance.py": "0f15ca2cb24caba1300f31d96ed68749b2cc2de199414389f882efc32579b7dd"
   }
 }

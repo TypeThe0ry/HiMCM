@@ -1,24 +1,26 @@
 {
   "status": "pass",
-  "pdf_sha256": "e241931295852da7ff3b8ecf79835a5e0598694d76f2822c0f8c377b2a83ac19",
-  "render": "/data/scratch/himcm-current-point-error-render",
+  "pdf_sha256": "7c9d00a144c7d2ffec96149e9904e66aca301d85aa4a7be3ce99f0b9d55fd10a",
+  "render": "/data/scratch/himcm-point-withdrawal-paper-render",
   "reviewed": [
-    "all27pages raster compared to previous published PDF",
-    "Actual contents page2 and model-stress page15"
+    "All27pages raster/text compared to previous published PDF",
+    "Actual changed page15 viewed at96dpi"
   ],
   "changed_96dpi_pages": [
-    2,
     15
   ],
-  "other25pages_exact_96dpi_equal": true,
+  "changed_text_pages": [
+    15
+  ],
+  "other26pages_exact_96dpi_equal": true,
   "AI_appendix_unchanged": true,
   "all_four_figures_unchanged": true,
   "color_vision_simulation_performed": false,
   "checks": [
-    "Only6.3 source differs from b83aeab",
-    "Independent final text audit preserves all MC conditions and numbers",
-    "Point stress is expanded-box policy, not realized-dataset or calibrated-error guarantee",
+    "Only6.3 source differs from preceding Overleaf HEAD; independent guard also preserves outside6.3relativeb83aeab",
+    "224withdrawals/3584rows independently verified;10fixed/35equal switches",
+    "Original MC settings, numerical bounds and expanded-box qualifications preserved",
     "27pages25plus2 and62references; native heads/emptyfooters"
   ],
-  "scope": "Local rendered review; onlinecompile and finalteamacceptance excluded"
+  "scope": "Local rendered review; online compile and final team acceptance excluded"
 }

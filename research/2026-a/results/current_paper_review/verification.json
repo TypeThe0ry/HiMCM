@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "scope": "Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.",
+  "scope": "Independent local numeric, selected text, preservation and PDF geometry audit; includes bound independent single-point withdrawal proof; excludes online compilation, visual review, source requalification and final team acceptance.",
   "v203_bindings": 548,
   "inherited_v202_bindings": 476,
   "reference_keys": 62,
@@ -15,6 +15,18 @@
     "results/current_point_error/switch_witnesses.csv": "5a401c96988d3893f06afa8aff9b8007363a2cf74e488d371c9537eb9076e688",
     "results/current_point_error/verification.json": "aad768b456bfabbbe45ec24fc042ab5faf27ae4e21c7da35d454936f1b919083",
     "results/current_point_error/README.md": "afdf6b2e4774a7a809b4db82b90286f3a9202ea5d3e0e5184720bc3fe25cb5af"
+  },
+  "withdrawal_source_sha256": {
+    "scripts/audit_current_point_withdrawal.py": "3a28f459127d4bbdccc520af5fe40d03cf6450d09a0a9d67849e918fe6eae6db",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+    "results/current_point_withdrawal/summary.json": "73f5192cd5806cffcb28216195ababe1a9b472b647801d21ec85bc86fece2314",
+    "results/current_point_withdrawal/cases.csv": "2bf0a71d9310bc4218b75a75a082fabbfe9d405f60571717f47c8f900938f0ba",
+    "results/current_point_withdrawal/ranks.csv": "c35221ab63a8d2f1750f591fe51f4f5c2c129d0d65c728f7d982bc6f3e71e45c",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/task4_current_point_withdrawal.py": "61fa8f87c9a77b2f87e46f85a4c22fcfda429289be88b37d743dc545cd39e711",
+    "design/task4_user_v203_snapshot.json": "c0d70e2288c2230bb8fbaf3aa4b54e4be3f43e47bdddea16ccf8497cc362105e",
+    "results/current_point_withdrawal/README.md": "63e3fa51c1c7254f29c0fb97407d58db9a769e8472c61dbe3dd6e6ff1973cca6",
+    "results/current_point_withdrawal/verification.json": "84d384979588b7452927f55cfc689dc11be3f0c88dbabab0b792b8faf7992514"
   },
   "owned_edit_scope": "Only6.3changedrelativeb83aeab; other source including AI appendix unchanged",
   "ai_source_sha256": {
@@ -60,8 +72,8 @@
   "main_and_reference_pages": 25,
   "total_pages": 27,
   "actual_registration_verified": false,
-  "pdf_sha256": "e241931295852da7ff3b8ecf79835a5e0598694d76f2822c0f8c377b2a83ac19",
-  "main_sha256": "077e9132dccb5fbe68245b0ec7d95f877df0aa173425f2c17de00955ec95ea36",
+  "pdf_sha256": "7c9d00a144c7d2ffec96149e9904e66aca301d85aa4a7be3ce99f0b9d55fd10a",
+  "main_sha256": "cb29987df03e0fbfea9d8a598cd61eb31f9db23e8066941958b9a7a852b84571",
   "oslo_source_scope_verification_sha256": "a3fcbfb9ca9ce56dbb7560b846b4c9361f340c9cbb6fc242bc186c193a46bac1",
   "oslo_source_scope_summary_sha256": "effd5d83f7b338e11fe9a57a92a20f0327fc58181c7a924a08a6420107a2347a",
   "oslo_eurostat_sha256": "877d229db8492dca33b8a58c5304cc4667a85066ff0bae457a1af47e4ecf732f",
