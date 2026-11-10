@@ -57,6 +57,7 @@ PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python resea
 - [DBH／NOKUT 身份桥接](CURRENT_OSLO_DBH_IDENTITY_UPDATE.md)：27 个登记代码中匹配 25 个，1404／1405 未核；身份匹配的 23 与授课类型筛选的 23 是不同名单。112 点来源台账只更新证据说明，没有修改值、效用或认证等级。
 - [新的教师岗位一手资料](CURRENT_NEW_STAFF_SOURCES_UPDATE.md)：Wirtschaftsschule KV Zürich 年报约 134 个教师全职岗位；近似误差、历史学段／校址和匹配学生数未落实，不构造硬界限。Helsinki 的旧 2019 教师收集事实复用原件，不当成新数据。
 - [PM 整列撤回](CURRENT_PM_BLOCK_WITHDRAWAL_UPDATE.md)：临时将 16 个 PM 点扩为 `[0,1]`，其余 144 格保持；固定 Oslo 转 Zurich，等权仍 Zurich，所有案例仍 16／0。它是信息撤回压力测试，不是污染误差范围、概率或主推荐更新。新版 OECD 两个接口 403，没有取得新浓度数据；15 对代码映射仅来自旧元数据。
+- [Oslo2026 居住区调查](CURRENT_OSLO_YOUTH2026_UPDATE.md)：四份官方分学段报告核对全15区表；90格初中描述值保留、90格高中隔离，Søndre高中本区图例与封面区名错配。体育参与、供给感受和费用障碍分别记录，不据此增加公平性罚分、作跨学段或精确年龄推断。主模型／论文保持。
 
 这些增量的主数据准入和实际主模型区间收窄均为 0。下一轮先读采集登记与已核路线，再选可能改变结论的新匹配证据或明确的论文／交付任务。失败快速跳过；没有具体授权，不向机构人员发送消息。源绑定或路线索引有意改变时同步更新完整性合同，不改写冻结报告以消除历史差异。
 

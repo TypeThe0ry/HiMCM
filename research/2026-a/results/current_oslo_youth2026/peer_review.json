@@ -1,0 +1,29 @@
+{
+  "scope": "Bounded read-only independent review of resident-district identity, methods and selected duplicate tables; not full microdata or full chart audit",
+  "review_requests": [
+    {
+      "requested_model": "gpt-6.1-terra",
+      "requested_effort": "high",
+      "serving_build_verified": false,
+      "finding": "Søndre upper cover and local Alna charts mismatch; selected full-district table rows match same-stage Alna report; lower financial chart needs root visual check",
+      "disposition": "All90uppercells quarantined; root visually checked all90lower cells on physical13/21/28; no cross-stage inference"
+    },
+    {
+      "requested_model": "gpt-6-luna",
+      "requested_effort": "medium",
+      "serving_build_verified": false,
+      "finding": "All6receipts match bodybytes/SHA;4HTTP200PDFs have PDFmagic;4cataloguelinks each exactly once;project404not a successful page",
+      "disposition": "Retained failedbody/receipt and labelled failure"
+    }
+  ],
+  "source_semantics": "Descriptive published tables by self-reported residence, lowergradeweighted, voluntaryschool survey, no itemN or exactage comparison",
+  "changes_manuscript": false,
+  "changes_primary_model": false,
+  "final_bounded_review": {
+    "requested_model": "gpt-6.1-terra",
+    "serving_build_verified": false,
+    "result": "scoped pass; no material semantic mismatch identified",
+    "checked": "New extractor/auditor/source and results notes against original questionnaire definitions, residence grouping and lower-stage weighting",
+    "scope_exclusions": "Did not replay audit; all90-cell visual transcription was performed by root, not independently repeated by reviewer; no respondent microdata or full-report certification"
+  }
+}
