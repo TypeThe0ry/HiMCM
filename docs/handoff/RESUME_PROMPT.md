@@ -9,7 +9,7 @@
 - design/task4_user_current_extensions.json：scripts/task4_v197_extensions.py四模块，既有权重／种子／情景不变。
 - design/task4_user_current_review.json与Overleaf drafts/task4_current_review.json一致：V198、科学V197；drafts/task4_v198_paper.tex/.pdf，根task4_v198_review_entry.tex。
 - design/task4_user_current_delivery.json与Overleaf drafts/task4_current_delivery.json一致：V198；results/task4_v198_review/requirements.csv及delivery_verification.json，47状态／13待办／58限定锚点。
-- V197科学独审results/task4_v197_transition/verification.json；V198验收results/task4_v198_review/verification.json、activation.json、visual_review.json；独立快照重建及远端回执收尾后同目录留存。
+- V197科学独审results/task4_v197_transition/verification.json；V198验收results/task4_v198_review/verification.json、activation.json、visual_review.json；独立快照重建reproduction.json已通过；远端回执收尾后同目录留存。
 
 ## 当前结论与来源
 
@@ -25,7 +25,7 @@ Zurich12池＝原7＋Aemtler/Altweg/Borrweg/Riedtli/Tannenrauch，成人专用K�
 
 V198为27页＝25正文参考＋2暂定AI，56引用，新闻18—19／AI26—27；0页余量。原生页眉暂用18213且实际注册未核、空页脚；队友main/ref/class／默认Main保持。共享main只读构建仍缺framework.png。AI选集冻结截止2026-11-09 14:31:18.850UTC，不覆盖后续或全队，submission_ready=false。
 
-V198直接／根代理27页文本一致；独立Git快照runner为scripts/task4_v198_reproduce.py，要求P干净及外部空output-dir，本地缓存不等于服务器编译。不要重跑冻结的V198启用前保护审计来检验新导航；按当前快照runner验证已启用状态。分别fetch、审diff、正常push并核远端。
+V198两个独立Git副本直接／根代理重建，27页文本及全部72dpi灰度像素一致；独立Git快照runner为scripts/task4_v198_reproduce.py，要求P干净及外部空output-dir，本地缓存不等于服务器编译。不要重跑冻结的V198启用前保护审计来检验新导航；按当前快照runner验证已启用状态。分别fetch、审diff、正常push并核远端。
 
 下一轮重基V194全部48不确定格、96权重行到当前V197，不能因取得下界删掉部分区间或Zurich泳池。其后只追新同口径高价值来源，跳过V194/V195失败或不匹配路线。不要重做V197全研究／V198入稿或无限扩展AI窗口；13项实质交付门槛保留真实记录要求。
 
