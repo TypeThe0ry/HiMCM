@@ -1,0 +1,89 @@
+{
+  "primary_model": "V203 unchanged",
+  "hypothetical_count": 24,
+  "density_per_million": 33.0,
+  "density_rule": "24/retained population727797*1e6 rounded half-up to one decimal, then divide10 to per100k; utility x/(1+x).",
+  "assumption": "One fewer provider than the supplied25, conditional diagnostic only; no assertion that Gestalt belonged to the original25 or that24 is a verified city count.",
+  "campus_history_rows": 22,
+  "period_span": [
+    "2016spring",
+    "2026autumn"
+  ],
+  "cases": [
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.82232695332216,
+      "Oslo_lower": 56.431831484250466,
+      "Oslo_upper": 63.90388786510506,
+      "Oslo_regret": 15.751955386687115
+    },
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.39181162388826,
+      "Oslo_lower": 58.10480044022626,
+      "Oslo_upper": 66.11577245142246,
+      "Oslo_regret": 15.805857999596448
+    },
+    {
+      "scenario": "conditional_count24",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.822853168233111,
+      "Oslo_lower": 56.36297915073898,
+      "Oslo_upper": 63.8434549701688,
+      "Oslo_regret": 15.820807720198601
+    },
+    {
+      "scenario": "conditional_count24",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.392227658772555,
+      "Oslo_lower": 58.04539440249086,
+      "Oslo_upper": 66.06302297183578,
+      "Oslo_regret": 15.865264037331855
+    }
+  ],
+  "contrasts": [
+    {
+      "weight_reference": "fixed",
+      "recommendation_changed": false,
+      "decision_rank_changes": 0,
+      "Oslo_lower_change": -0.06885233351148656,
+      "Oslo_upper_change": -0.06043289493626247,
+      "mean_width_change": 0.0005262149109519498
+    },
+    {
+      "weight_reference": "equal",
+      "recommendation_changed": false,
+      "decision_rank_changes": 0,
+      "Oslo_lower_change": -0.05940603773540687,
+      "Oslo_upper_change": -0.05274947958668008,
+      "mean_width_change": 0.0004160348842958683
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "scope": "A point-relocation sensitivity, not a count correction, a source-certified interval, a provider-exclusion decision or a precision gain."
+}
