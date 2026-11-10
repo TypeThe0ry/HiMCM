@@ -1,0 +1,65 @@
+{
+  "scope": "Source-quality corroboration only; no count admission or model update",
+  "original_user_observation": {
+    "indicator": "pools_per_100k",
+    "value": 5.29,
+    "pool_point_year": 2021,
+    "helper_pool_count": 37,
+    "flag": "ok",
+    "policy": "Preserve original user point unchanged; this source package does not certify or recompute it"
+  },
+  "separate_population_input": {
+    "value": 727797,
+    "year": 2025,
+    "policy": "Preserve user-supplied population unchanged; distinct from the pool-point year; not used to infer a new rate/count"
+  },
+  "sources": [
+    {
+      "source_name": "Oslo municipality swimming-hall directory landing page",
+      "url": "https://www.oslo.kommune.no/natur-kultur-og-fritid/svommehaller-i-oslo/",
+      "http_status": 200,
+      "raw_file": "municipal_directory_original.html",
+      "sha256": "d5cb9e5ad26ae8e2bcfcb2e17e34cc4e693165e3ee4ca7aa407ad83b9b4b5db5",
+      "extraction": "Page states facilities are operated by Oslo municipality and configures its directory search; its records are fetched via the public search endpoint below.",
+      "retrieval_date_utc": "2026-11-10",
+      "exact_request_time_utc": null,
+      "archive_write_time_utc": "2026-11-10T02:00:45.878481375Z",
+      "archive_time_note": "UTC filesystem mtime from original raw file stat; not the HTTP request time."
+    },
+    {
+      "source_name": "Search response backing the official municipal swimming-hall directory",
+      "url": "https://nj4qx1mfj2-dsn.algolia.net/1/indexes/prod_oslo_kommune_no/query",
+      "method": "POST",
+      "request_body_file": "directory_search_retrieval.json",
+      "retrieved_utc": "2026-11-10T02:03:24.649753Z",
+      "http_status": 200,
+      "raw_file": "directory_search_response_original.json",
+      "sha256": "554723e195d5feadf87ddb93a17fa55ca7de56da4afee227aa8599b214247aba",
+      "scope": "Public search index configured by the archived Oslo municipality landing page; raw response returns named official venue records and linked oslokommune.no pages. It is a current directory snapshot, not an independently versioned 2021 inventory.",
+      "receipt_time_source": "Captured HTTP Date response header and post-response UTC timestamp in directory_search_retrieval.json."
+    },
+    {
+      "source_name": "Oslo municipality, Behovsplan for idrett 2025-2034",
+      "url": "https://www.oslo.kommune.no/get-file/1122656/3c643686920a04b1d511fca5aaa16f191c43d95016505073a9a76535e78eedc4/",
+      "http_status": 200,
+      "raw_file": "sports_facilities_plan_2025_2034_original.pdf",
+      "sha256": "2510956ed8073c076178f7868b4a3a0a1aa7cb13ec7d8954fb40c6ae9924d375",
+      "extraction_file": "sports_facilities_plan_extracted.txt",
+      "extraction_command": "pdftotext -layout sports_facilities_plan_2025_2034_original.pdf sports_facilities_plan_extracted.txt",
+      "relevant_scope": "Section 5.1.3: Tøyenbadet completed in 2024; Stovner bad (2026) opened; Frognerbadet rehabilitation proposed in the plan period. Not a complete named current public-pool inventory.",
+      "retrieval_date_utc": "2026-11-10",
+      "exact_request_time_utc": null,
+      "archive_write_time_utc": "2026-11-10T02:00:49.222447507Z",
+      "archive_time_note": "UTC filesystem mtime from original raw file stat; not the HTTP request time."
+    }
+  ],
+  "extraction": {
+    "script": "extract_directory.py",
+    "output": "directory_facilities_extracted.json",
+    "directory_records": 9,
+    "indoor_facilities": 8,
+    "outdoor_seasonal_facilities": 1,
+    "counting_unit": "distinct physical venue, not basin, pool area, lane, or line item"
+  },
+  "decision": "The current 2026 directory has different coverage and cannot certify the original pools_per_100k=5.29, pool_point_year=2021 observation (helper_pool_count=37, flag=ok). Preserve that user point and the separate 2025 population unchanged; do not infer a replacement rate/count. This package is corroboration only."
+}

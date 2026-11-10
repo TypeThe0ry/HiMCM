@@ -1,0 +1,936 @@
+{
+  "source": "ActiveSG Circle detail pages linked from captured swimming-pool directory",
+  "capture_date_utc": "2026-11-10",
+  "detail_page_count": 25,
+  "successful_http_200": 25,
+  "identity_consistent_count": 25,
+  "identity_comparison": "Exact H1 visible name, Address section H3 address, and six-digit postal code compared to directory card.",
+  "notice_scope": "Closure cards are retained with exact status, date/schedule, affected pool/facility, title and locator. Weekly maintenance is scheduled recurring closure, not permanent closure. Pool-specific notices do not imply venue-wide closure. No statement that absence of notice proves open. Eligibility count records only explicit adult-only/children-only/member-only wording matched in captured facility page content; absence is not proof of unrestricted access.",
+  "pages": [
+    {
+      "provider_id": "activesg-sport-park-teck-ghee-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/activesg-sport-park-teck-ghee-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:50.033921+00:00",
+      "http_status": 200,
+      "raw_file": "details/activesg-sport-park-teck-ghee-swimming-complex.html",
+      "sha256": "3a042ca8db7dff95c83646fade8a5b7e8e2abfb6f9c67ee83c23113eda87fa46",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Wed",
+          "affected_scope_from_list": "Closed for the entire day Every Wed View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • ActiveSG Sport Park @ Teck Ghee Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "ActiveSG Sport Park @ Teck Ghee Swimming Complex",
+      "detail_address": "1771 Ang Mo Kio Avenue 1 Singapore 569978",
+      "detail_postal_code": "569978"
+    },
+    {
+      "provider_id": "bishan-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/bishan-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:50.035566+00:00",
+      "http_status": 200,
+      "raw_file": "details/bishan-swimming-complex.html",
+      "sha256": "8ec0f228fa3cfa4afa7f372859547c9c8da03602ecb467347f519cf5f694b9ed",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Thu",
+          "affected_scope_from_list": "Closed for the entire day Every Thu View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Bishan Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Bishan Swimming Complex",
+      "detail_address": "1 Bishan Street 14 Singapore 579778",
+      "detail_postal_code": "579778"
+    },
+    {
+      "provider_id": "bukit-batok-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/bukit-batok-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:50.036622+00:00",
+      "http_status": 200,
+      "raw_file": "details/bukit-batok-swimming-complex.html",
+      "sha256": "33e8003592a4a77002df229c6e6c0c6fafe3e21511785caa55390090d44b8ea3",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Wed",
+          "affected_scope_from_list": "Closed for the entire day Every Wed View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Bukit Batok Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Bukit Batok Swimming Complex",
+      "detail_address": "2 Bukit Batok Street 22 Singapore 659581",
+      "detail_postal_code": "659581"
+    },
+    {
+      "provider_id": "bukit-canberra-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/bukit-canberra-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:50.037669+00:00",
+      "http_status": 200,
+      "raw_file": "details/bukit-canberra-swimming-complex.html",
+      "sha256": "2a32095e5fdbcc740a886967e5bd454c3e7f49b1dfb0ef910526d777b3d6c73f",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Wed",
+          "affected_scope_from_list": "Closed for the entire day Every Wed View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Bukit Canberra Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Bukit Canberra Swimming Complex",
+      "detail_address": "21 Canberra Link Singapore 756973",
+      "detail_postal_code": "756973"
+    },
+    {
+      "provider_id": "choa-chu-kang-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/choa-chu-kang-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:51.113192+00:00",
+      "http_status": 200,
+      "raw_file": "details/choa-chu-kang-swimming-complex.html",
+      "sha256": "ba01e1143331f4bbbb2cb06f9c1252189308b021b26e51f47c3ba7e997962cb9",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Mon",
+          "affected_scope_from_list": "Closed for the entire day Every Mon View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Choa Chu Kang Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Choa Chu Kang Swimming Complex",
+      "detail_address": "1 Choa Chu Kang Street 53 Singapore 689236",
+      "detail_postal_code": "689236"
+    },
+    {
+      "provider_id": "clementi-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/clementi-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:51.134013+00:00",
+      "http_status": 200,
+      "raw_file": "details/clementi-swimming-complex.html",
+      "sha256": "a96e580edd2b22852f8826fdbf70fcfb19a3637656b3f0d706509e4ab039e0b3",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Mon",
+          "affected_scope_from_list": "Closed for the entire day Every Mon View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Clementi Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        },
+        {
+          "status_class": "temporary-closure",
+          "displayed_status": "Temporary Closure",
+          "date_or_schedule": "14 Sep - 10 Nov 2026",
+          "affected_scope_from_list": "Training Pool 14 Sep - 10 Nov 2026 View Details",
+          "announcement_title": "Closure due to Upgrading, maintenance, urgent repair or events",
+          "short_notice": "Training Pool • Clementi Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details2\"] > h2.announcement-title",
+          "interpretation": "Facility/pool-specific notice; does not establish whole-venue closure"
+        },
+        {
+          "status_class": "temporary-closure",
+          "displayed_status": "Temporary Closure",
+          "date_or_schedule": "11 Nov - 23 Dec 2026",
+          "affected_scope_from_list": "Competition Pool 11 Nov - 23 Dec 2026 View Details",
+          "announcement_title": "Closure due to Upgrading, maintenance, urgent repair or events",
+          "short_notice": "Competition Pool • Clementi Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details3\"] > h2.announcement-title",
+          "interpretation": "Facility/pool-specific notice; does not establish whole-venue closure"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Clementi Swimming Complex",
+      "detail_address": "520 Clementi Avenue 3 Singapore 129908",
+      "detail_postal_code": "129908"
+    },
+    {
+      "provider_id": "delta-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/delta-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:51.228043+00:00",
+      "http_status": 200,
+      "raw_file": "details/delta-swimming-complex.html",
+      "sha256": "89fbfc3d471836e38d02bac7243360729dd874dedf5255ffee9c58c184f60749",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Wed",
+          "affected_scope_from_list": "Closed for the entire day Every Wed View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Delta Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Delta Swimming Complex",
+      "detail_address": "900 Tiong Bahru Road Singapore 158790",
+      "detail_postal_code": "158790"
+    },
+    {
+      "provider_id": "geylang-east-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/geylang-east-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:51.396972+00:00",
+      "http_status": 200,
+      "raw_file": "details/geylang-east-swimming-complex.html",
+      "sha256": "d6f73de7b173e48781d072e1d099082b87320b484133e7272dfc10a76415d4e2",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Mon",
+          "affected_scope_from_list": "Closed for the entire day Every Mon View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Geylang East Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Geylang East Swimming Complex",
+      "detail_address": "601 Aljunied Avenue 1 Singapore 389862",
+      "detail_postal_code": "389862"
+    },
+    {
+      "provider_id": "heartbeat-bedok-activesg-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/heartbeat-bedok-activesg-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:51.979083+00:00",
+      "http_status": 200,
+      "raw_file": "details/heartbeat-bedok-activesg-swimming-complex.html",
+      "sha256": "8cf542bb64b161dc55d721dd6180f768145b1f61584cf69722d4fc9d0f149765",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Thu",
+          "affected_scope_from_list": "Closed for the entire day Every Thu View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Heartbeat @ Bedok ActiveSG Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Heartbeat @ Bedok ActiveSG Swimming Complex",
+      "detail_address": "Level 5 Heartbeat@Bedok, 11 Bedok North Street 1 Singapore 469662",
+      "detail_postal_code": "469662"
+    },
+    {
+      "provider_id": "hougang-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/hougang-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:52.298005+00:00",
+      "http_status": 200,
+      "raw_file": "details/hougang-swimming-complex.html",
+      "sha256": "e38fa2c6de8239f9139ff20af2b072e9032d8ad003c7e6cee71bf6286da83caf",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Tue",
+          "affected_scope_from_list": "Closed for the entire day Every Tue View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Hougang Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Hougang Swimming Complex",
+      "detail_address": "95 Hougang Avenue 4 Singapore 538830",
+      "detail_postal_code": "538830"
+    },
+    {
+      "provider_id": "jalan-besar-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/jalan-besar-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:52.383231+00:00",
+      "http_status": 200,
+      "raw_file": "details/jalan-besar-swimming-complex.html",
+      "sha256": "0ddb83109b935a8b94693f828938ef3812568f220de1f23cc74d3a1ac903f207",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Tue",
+          "affected_scope_from_list": "Closed for the entire day Every Tue View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Jalan Besar Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Jalan Besar Swimming Complex",
+      "detail_address": "100 Tyrwhitt Road Singapore 207542",
+      "detail_postal_code": "207542"
+    },
+    {
+      "provider_id": "jurong-east-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/jurong-east-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:52.837081+00:00",
+      "http_status": 200,
+      "raw_file": "details/jurong-east-swimming-complex.html",
+      "sha256": "01bcd68565c548e5f384c27a6ecd5590be1eb140a4921f1a94852d8dc531540d",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Mon",
+          "affected_scope_from_list": "Closed for the entire day Every Mon View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Jurong East Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        },
+        {
+          "status_class": "temporary-closure",
+          "displayed_status": "Temporary Closure",
+          "date_or_schedule": "5 Apr 2025 - 31 Dec 2026",
+          "affected_scope_from_list": "Competition Pool 5 Apr 2025 - 31 Dec 2026 View Details",
+          "announcement_title": "Closure due to Upgrading, maintenance, urgent repair or events",
+          "short_notice": "Competition Pool • Jurong East Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details2\"] > h2.announcement-title",
+          "interpretation": "Facility/pool-specific notice; does not establish whole-venue closure"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [
+        {
+          "kind": "partial_access_banner",
+          "exact_text": "Partial Facility Access Some areas are not accessible due to maintenance or repairs",
+          "locator": "<div class=\"partially-closed\">"
+        }
+      ],
+      "detail_name": "Jurong East Swimming Complex",
+      "detail_address": "21 Jurong East Street 31 Singapore 609517",
+      "detail_postal_code": "609517"
+    },
+    {
+      "provider_id": "jurong-lake-gardens-pool",
+      "url": "https://www.activesgcircle.gov.sg/facilities/jurong-lake-gardens-pool",
+      "attempt_utc": "2026-11-10T02:07:53.483854+00:00",
+      "http_status": 200,
+      "raw_file": "details/jurong-lake-gardens-pool.html",
+      "sha256": "c4fa3e152f951897387aa5a823a1ad41ab2b521676d8294e109ea2a74b6a4921",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Thu",
+          "affected_scope_from_list": "Closed for the entire day Every Thu View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Jurong Lake Gardens Pool",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Jurong Lake Gardens Pool",
+      "detail_address": "30 Yuan Ching Road Singapore 618664",
+      "detail_postal_code": "618664"
+    },
+    {
+      "provider_id": "jurong-west-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/jurong-west-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:53.494683+00:00",
+      "http_status": 200,
+      "raw_file": "details/jurong-west-swimming-complex.html",
+      "sha256": "9b64d223c64c795bc0afe30e15b84eae9e0b6d2a8f84bf6350aa5ef1c3ccd5b2",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Tue",
+          "affected_scope_from_list": "Closed for the entire day Every Tue View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Jurong West Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Jurong West Swimming Complex",
+      "detail_address": "20 Jurong West Street 93 Singapore 648965",
+      "detail_postal_code": "648965"
+    },
+    {
+      "provider_id": "katong-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/katong-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:53.626751+00:00",
+      "http_status": 200,
+      "raw_file": "details/katong-swimming-complex.html",
+      "sha256": "fc305c9c86214232283fd1aa6b914c594244a1a61fd35a385674480fa8094371",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Tue",
+          "affected_scope_from_list": "Closed for the entire day Every Tue View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Katong Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        },
+        {
+          "status_class": "temporary-closure",
+          "displayed_status": "Temporary Closure",
+          "date_or_schedule": "9 Oct - 18 Dec 2026",
+          "affected_scope_from_list": "Competition Pool 9 Oct - 18 Dec 2026 View Details",
+          "announcement_title": "Closure due to Upgrading, maintenance, urgent repair or events",
+          "short_notice": "Competition Pool • Katong Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details2\"] > h2.announcement-title",
+          "interpretation": "Facility/pool-specific notice; does not establish whole-venue closure"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Katong Swimming Complex",
+      "detail_address": "111 Wilkinson Road Singapore 436752",
+      "detail_postal_code": "436752"
+    },
+    {
+      "provider_id": "moe-evans-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/moe-evans-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:53.831506+00:00",
+      "http_status": 200,
+      "raw_file": "details/moe-evans-swimming-complex.html",
+      "sha256": "3f54cf3b9f3cc73426b780c8dcc2af493e4f9583c871b9547334a44181994dd4",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Mon",
+          "affected_scope_from_list": "Closed for the entire day Every Mon View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • MOE (Evans) Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "MOE (Evans) Swimming Complex",
+      "detail_address": "21 Evans Road Singapore 259366",
+      "detail_postal_code": "259366"
+    },
+    {
+      "provider_id": "pasir-ris-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/pasir-ris-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:54.564316+00:00",
+      "http_status": 200,
+      "raw_file": "details/pasir-ris-swimming-complex.html",
+      "sha256": "fc49a67f5fa2d8b76e63b6a76d012f662332559a530f02820da72efda1ec8709",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Wed",
+          "affected_scope_from_list": "Closed for the entire day Every Wed View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Pasir Ris Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Pasir Ris Swimming Complex",
+      "detail_address": "120 Pasir Ris Central Singapore 519640",
+      "detail_postal_code": "519640"
+    },
+    {
+      "provider_id": "queenstown-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/queenstown-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:54.698798+00:00",
+      "http_status": 200,
+      "raw_file": "details/queenstown-swimming-complex.html",
+      "sha256": "6b671e842167a667662030efab1ab5867a18015058762ed39634ca022ca2a17b",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Tue",
+          "affected_scope_from_list": "Closed for the entire day Every Tue View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Queenstown Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Queenstown Swimming Complex",
+      "detail_address": "473 Stirling Road Singapore 148948",
+      "detail_postal_code": "148948"
+    },
+    {
+      "provider_id": "sengkang-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/sengkang-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:54.871985+00:00",
+      "http_status": 200,
+      "raw_file": "details/sengkang-swimming-complex.html",
+      "sha256": "a8faf2910cda25081e4bf964e9837c4ebe2c74db5b23e98c3ce40d3ebb49edd5",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Mon",
+          "affected_scope_from_list": "Closed for the entire day Every Mon View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Sengkang Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Sengkang Swimming Complex",
+      "detail_address": "57 Anchorvale Road Singapore 544964",
+      "detail_postal_code": "544964"
+    },
+    {
+      "provider_id": "senja-cashew-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/senja-cashew-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:54.976541+00:00",
+      "http_status": 200,
+      "raw_file": "details/senja-cashew-swimming-complex.html",
+      "sha256": "ea4355de69cea0f2e8f46b74fd40b33f2106523e223adaa242b2bb89c1f2643b",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Wed",
+          "affected_scope_from_list": "Closed for the entire day Every Wed View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Senja-Cashew Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Senja-Cashew Swimming Complex",
+      "detail_address": "101 Bukit Panjang Road Singapore 679910",
+      "detail_postal_code": "679910"
+    },
+    {
+      "provider_id": "serangoon-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/serangoon-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:55.559243+00:00",
+      "http_status": 200,
+      "raw_file": "details/serangoon-swimming-complex.html",
+      "sha256": "19afa687de1eee7997d8640fd72a1bfb1e7827c6d94a563527f982db39764279",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Thu",
+          "affected_scope_from_list": "Closed for the entire day Every Thu View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Serangoon Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Serangoon Swimming Complex",
+      "detail_address": "35 Yio Chu Kang Road Singapore 545552",
+      "detail_postal_code": "545552"
+    },
+    {
+      "provider_id": "tampines-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/tampines-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:55.715874+00:00",
+      "http_status": 200,
+      "raw_file": "details/tampines-swimming-complex.html",
+      "sha256": "c0d407489f6c25a08cd2610eb9fe9a7963f35e8b4768ec0b10c81fd8b116f7ea",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Tue",
+          "affected_scope_from_list": "Closed for the entire day Every Tue View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Tampines Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Tampines Swimming Complex",
+      "detail_address": "Level 6 Our Tampines Hub, 1 Tampines Walk Singapore 528523",
+      "detail_postal_code": "528523"
+    },
+    {
+      "provider_id": "woodlands-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/woodlands-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:55.990247+00:00",
+      "http_status": 200,
+      "raw_file": "details/woodlands-swimming-complex.html",
+      "sha256": "d7b0f6b5c69b906c2c68613693a3bc869a9781b5850031ff890f9c13a38dfe85",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Thu",
+          "affected_scope_from_list": "Closed for the entire day Every Thu View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Woodlands Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Woodlands Swimming Complex",
+      "detail_address": "3 Woodlands Street 13 Singapore 738600",
+      "detail_postal_code": "738600"
+    },
+    {
+      "provider_id": "yio-chu-kang-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/yio-chu-kang-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:56.144974+00:00",
+      "http_status": 200,
+      "raw_file": "details/yio-chu-kang-swimming-complex.html",
+      "sha256": "4703706fcfe953bf44636f08453d36f3518f49011c4d22919a9255c56520576c",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Thu",
+          "affected_scope_from_list": "Closed for the entire day Every Thu View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Yio Chu Kang Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Yio Chu Kang Swimming Complex",
+      "detail_address": "202 Ang Mo Kio Avenue 9 Singapore 569771",
+      "detail_postal_code": "569771"
+    },
+    {
+      "provider_id": "yishun-swimming-complex",
+      "url": "https://www.activesgcircle.gov.sg/facilities/yishun-swimming-complex",
+      "attempt_utc": "2026-11-10T02:07:56.591170+00:00",
+      "http_status": 200,
+      "raw_file": "details/yishun-swimming-complex.html",
+      "sha256": "e2fceab4d33fd736cd0882b0f048b2fcd45a134ca3130e2dcd7ff8095e838c69",
+      "identity_check": {
+        "name_matches_catalog": true,
+        "address_matches_catalog": true,
+        "postal_code_matches_catalog": true,
+        "locators": {
+          "name": "H1 page title",
+          "address": "H2 \"Address\" > first H3 link"
+        }
+      },
+      "closure_notices": [
+        {
+          "status_class": "weekly-maintenance",
+          "displayed_status": "Weekly Maintenance",
+          "date_or_schedule": "Every Wed",
+          "affected_scope_from_list": "Closed for the entire day Every Wed View Details",
+          "announcement_title": "Closure due to Weekly Maintenance",
+          "short_notice": "Closed for the entire day • Yishun Swimming Complex",
+          "expanded_notice_text": null,
+          "locator": "H2 \"Closure Announcements\" > .announcement-card[data-toggle=\"view_details1\"] > h2.announcement-title",
+          "interpretation": "Recurring weekly maintenance"
+        }
+      ],
+      "explicit_eligibility_notices": [],
+      "other_access_or_closure_notices": [],
+      "detail_name": "Yishun Swimming Complex",
+      "detail_address": "351 Yishun Avenue 3 Singapore 769057",
+      "detail_postal_code": "769057"
+    }
+  ]
+}

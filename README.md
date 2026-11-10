@@ -1,5 +1,7 @@
 当前主科学／扩展为 **V197**，自有审阅稿与交付映射为 **V198**：[当前交接](docs/handoff/V198_RESEARCH_UPDATE.md)。Zurich泳池子集7→12已启用，仍112点／37部分／11未知、25个补充键；27页／56引用。Zurich保守、16可能保持；暂用18213，实际注册未核。以下旧版本记录保留历史时点。
 
+下一轮研究支持见[V199：采集重基与Singapore目录候选](docs/handoff/V199_RESEARCH_UPDATE.md)，尚未接入当前V197／V198。
+
 # 2026 HiMCM A
 
 当前统一入口：**user16 V181科学／扩展，V186自有审阅稿**；见[V186核验和下一步](docs/handoff/V186_RESEARCH_UPDATE.md)。Zurich保守推荐、16可能冠军保持。

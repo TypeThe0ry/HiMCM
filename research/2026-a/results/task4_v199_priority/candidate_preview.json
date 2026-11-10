@@ -1,0 +1,100 @@
+{
+  "status": "preview_only_not_admitted",
+  "base_science": "V197 unchanged",
+  "paper": "V198 unchanged",
+  "population_retained": 6036900,
+  "population_year_retained": 2024,
+  "source_capture": "2026-11-10",
+  "source_inventory_reference_date": "unstated;8Nov2026isdisplayedpageupdatemetadata",
+  "catalog_count": 25,
+  "withheld_pool_specific_notice_venues": [
+    "clementi-swimming-complex",
+    "jurong-east-swimming-complex",
+    "katong-swimming-complex"
+  ],
+  "summaries": [
+    {
+      "scenario": "retained_V197",
+      "weight_reference": "fixed",
+      "count": 7,
+      "utility_lower": 0.10390535706333773,
+      "mean_score_width": 16.01221199746499,
+      "minimax_regret": 16.93831712373327,
+      "Singapore_regret_gap_to_best_other": 0.9160139450441704,
+      "conservative_recommendation": "Zurich",
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "retained_V197",
+      "weight_reference": "equal",
+      "count": 7,
+      "utility_lower": 0.10390535706333773,
+      "mean_score_width": 18.76442966782986,
+      "minimax_regret": 15.760638509295092,
+      "Singapore_regret_gap_to_best_other": 5.502546891640087,
+      "conservative_recommendation": "Zurich",
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "inventory25_partial_closure_flags",
+      "weight_reference": "fixed",
+      "count": 25,
+      "utility_lower": 0.29284634937740867,
+      "mean_score_width": 15.958134470578873,
+      "minimax_regret": 16.93831712373327,
+      "Singapore_regret_gap_to_best_other": 0.05077351486630022,
+      "conservative_recommendation": "Zurich",
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "inventory25_partial_closure_flags",
+      "weight_reference": "equal",
+      "count": 25,
+      "utility_lower": 0.29284634937740867,
+      "mean_score_width": 18.66038969723218,
+      "minimax_regret": 15.760638509295092,
+      "Singapore_regret_gap_to_best_other": 3.837907362077239,
+      "conservative_recommendation": "Zurich",
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "withhold3_notice_venues22",
+      "weight_reference": "fixed",
+      "count": 22,
+      "utility_lower": 0.267090774441841,
+      "mean_score_width": 15.965436188791646,
+      "minimax_regret": 16.93831712373327,
+      "Singapore_regret_gap_to_best_other": 0.16760100627067231,
+      "conservative_recommendation": "Zurich",
+      "possible_count": 16,
+      "necessary_count": 0
+    },
+    {
+      "scenario": "withhold3_notice_venues22",
+      "weight_reference": "equal",
+      "count": 22,
+      "utility_lower": 0.267090774441841,
+      "mean_score_width": 18.674765024769343,
+      "minimax_regret": 15.760638509295092,
+      "Singapore_regret_gap_to_best_other": 4.067912602671868,
+      "conservative_recommendation": "Zurich",
+      "possible_count": 16,
+      "necessary_count": 0
+    }
+  ],
+  "other159cells_alluppers_and_weights_unchanged": true,
+  "primary_admissions": 0,
+  "actual_active_model_width_reduction": 0,
+  "scope": "Physical public-venue inventory and separate sensitivity withholding three venues with basin-specific notices. Neither arm establishes a current-open/access count; withholding does not label those whole venues closed. No union with historical article, 2025 census, personal accessibility or winner probability.",
+  "source_sha256": {
+    "scripts/task4_v199_candidate.py": "7837004df12c1ab7d813d91cc55179fa931d6cbe634c4aa7647f7a4e7bb98c38",
+    "data/task4_v199_sgpool/venues.json": "8f05c883a1da535ca59c2f44edf9cd47b5c89bb2d3a2621132d89a669725f6a3",
+    "data/task4_v199_sgpool/candidate_count.json": "ad40e336348a8fc6aab08aa48f3cbacef8e5bcf645930e9e687548ad712d4ffb",
+    "data/task4_v199_sgpool/detail_verification.json": "c955a88ba672eb3a2003b4c1fedace94817293032cd9183e853f799da4e50c4d",
+    "design/task4_user_v197_snapshot.json": "7e1e302f9c66a70c069a0414dee022eaf79a77658707473de9e478739303c8b0"
+  }
+}
