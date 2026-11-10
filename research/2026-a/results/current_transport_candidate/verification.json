@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "Independent scalar recomputation against revised V202 bounds and frozen preview; no new source admission.",
+  "city_weight_scenario_cases": 256,
+  "source_bindings_verified": 476,
+  "xml_csv_all_fields_rows": 1257,
+  "oslo_0301_references": 1256,
+  "scenario_counts": [
+    89,
+    517,
+    829,
+    226,
+    227,
+    639,
+    640
+  ],
+  "first_strict_integer_counts": {
+    "fixed": 227,
+    "equal": 640
+  },
+  "threshold_neighbor_gaps": {
+    "fixed_226": 0.0038365246553695442,
+    "fixed_227": -0.00136787542454897,
+    "fixed_639": -1.2078121892281217,
+    "fixed_640": -1.2094368149224834,
+    "equal_226": 2.421487299937283,
+    "equal_227": 2.4111504211227484,
+    "equal_639": 0.002642362749540439,
+    "equal_640": -0.0005811976525507134
+  },
+  "all_scenarios_possible_champions": 16,
+  "all_scenarios_necessary_champions": 0,
+  "interpretation": "829 is a conditional NSR administrative inventory, not a proven physical-facility lower bound. 517 is an unvalidated clustering heuristic and is not admitted. Neither is added to 89. V202 remains active.",
+  "scope_limitation": "No claim that paper or navigation files stayed unchanged during audit; preview binds their historical hashes. HTTP capture metadata is not independent evidence of live status.",
+  "sha256": {
+    "scripts/audit_current_transport_candidate.py": "ea716d338aa5b9cf4e420ea84aa89c86307f9e82091166b76b0e5ba9e157ce89",
+    "results/current_transport_candidate/preview.json": "9977822a409bb5076b40f9ea613146c37adf0407dbbeac5aa6a0ba13336d37e2",
+    "results/current_transport_candidate/scores.csv": "b9837b8206496619c4d703752e975f8ea68664419bb1815a48268046b9c56425",
+    "data/current_oslo_transport/03_Oslo_latest.zip": "63a3bef9e342a22f87f44c1229a2d9c0fe4f594b410a1383051eb11dd7f6f569",
+    "data/current_oslo_transport/native_stopplaces.csv": "c04d6c107f70ca9891e746d63bb5170516e1470557a4509b63bbc5c5f33f4fab",
+    "data/current_oslo_transport/semantics_nsr.html": "85b2b77ffb40e8b25e516594db6a2dcc6cfaff26bf8f90def40b872ce6068b73",
+    "data/current_oslo_transport/semantics_nsr_metadata.json": "c68c422b2c1736de947f036d95469bded9c334d1401d950c5e741569f08173a5",
+    "data/current_oslo_transport/semantics_n801_metadata.json": "f7510503431544c1f1fc8b7654dce4be5f077486038d8de9516bec8baf040745"
+  }
+}

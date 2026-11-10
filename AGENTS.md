@@ -80,4 +80,4 @@ Keep the local paper checkout synchronized with remote Overleaf. Overleaf retain
 
 ## Current paper figure and evidence
 
-The same current main now includes the satellite/quantitative walking-time figure. Current review and delivery registries bind `results/current_paper_review/`; 27pages,60references,48requirements and12pending gates. Keep the four current figures and seven source dependencies synchronized. The resident-grid auxiliary figure does not change primary scores or establish student/pool access. See `docs/handoff/CURRENT_SPATIAL_UPDATE.md`.
+The same current main now includes the satellite/quantitative walking-time figure. Current review and delivery registries bind `results/current_paper_review/`; 27pages,61references,48requirements and12pending gates. Keep the four current figures and seven source dependencies synchronized. The resident-grid auxiliary figure does not change primary scores or establish student/pool access. See `docs/handoff/CURRENT_SPATIAL_UPDATE.md`.

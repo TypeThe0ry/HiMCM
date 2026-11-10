@@ -70,6 +70,7 @@ reference days \cite{istanbul,sgage}.}
 We compare sixteen cities for high-school life across ten indicators. Fixed-anchor
 TOPSIS and maximum regret recommend Zurich under baseline and equal weights;
 all sixteen remain possible champions within the retained evidence intervals.
+An alternative Oslo transport counting definition selects Oslo under both weights.
 
 Official records supplement 25 originally missing city--indicator entries without
 replacing team values. The mean score-interval width falls from 18.81077 to
@@ -233,6 +234,10 @@ metro stations after consolidating 186
 platforms; Zurich's 2025 VBZ report distinguishes 446 city stops from 235
 outside the city \cite{oslo,vbz}. Helsinki's November 2026 operator snapshot
 similarly separates 19 Helsinki stations from 11 in Espoo \cite{helsinki}.
+Entur's 9 November 2026 Oslo registry export yields 829 mode-bearing
+administrative stop places after native parent grouping \cite{enturstop}, using
+the same population of 727,797. Used only in the check below, it is not added
+to the 89 stations.
 For a verified subset count $c$, fixed population $P$ and anchor $a$, we use
 $d=10^5c/P$ and utility $[d/(a+d),1]$, leaving uncounted providers unknown.
 Madrid's May 2026 register has 293 records, of which 242 carry city code
@@ -414,8 +419,7 @@ it does not establish that these are students' actual preferences.
 \par\end{samepage}
 
 \subsection{TOPSIS scoring calculation}
-We adapt TOPSIS \cite{topsis} using fixed reference anchors to preserve a common scoring scale across evidence,
-preference and future scenarios. For benefit and cost measurements respectively,
+Fixed-anchor TOPSIS \cite{topsis} gives benefit and cost utilities, respectively:
 \begin{equation}
  u^{+}(x)=\frac{x}{a+x},\qquad u^{-}(x)=\frac{a}{a+x}.
 \end{equation}
@@ -531,6 +535,12 @@ respectively. Removing 64 post-2025 points retains Zurich under both,
 widening the baseline mean range from 15.96 to 48.34; the 95-point union
 selects Singapore under both. All sixteen remain possible champions.
 Dates and flags are screening criteria, not error probabilities.
+
+Conditionally treating Oslo's 829 registry groups as comparable stop units
+instead of the 89-station lower bound selects Oslo under both weight sets;
+all sixteen cities remain possible champions and none is necessary. The
+registry does not establish deduplicated physical facilities or current service,
+so the primary analysis retains the 89-station bound.
 
 Withholding Zurich's homicide point selects Singapore (baseline) or Oslo
 (equal); withholding Amsterdam's retains Zurich under both. Varying only
@@ -718,12 +728,8 @@ $u_{ij}^{(14)},u_{ij}^{(18)}$ and separately elicited weights
 $w_j^{(14)},w_j^{(18)}$. Our analyst preference scenarios carry no age labels.
 
 \section{Comparing cities within the same country}
-Every primary city belongs to a different country, so the main sample cannot
-identify within-country city contrasts. We use the existing United States and
-India cases as frozen legacy25 V117 examples with the same ten indicator
-definitions and scoring formula \cite{legacycase}. They do not enter the sixteen-city ranking,
-and comparison within a country does not remove differences in source year,
-city boundary or educational coverage.
+The primary sample has one city per country. Frozen US and India cases use the same
+ten indicators and scoring formula, outside the sixteen-city ranking \cite{legacycase}.
 
 % Owned auxiliary figure; no primary16 data or old manuscript edits.
 \begin{figure}[!ht]
@@ -743,10 +749,7 @@ neither pair identifies a necessary overall winner \cite{legacycase,numbeocase,w
 
 
 \CountryInterpretation
-Affordability uses Numbeo's 2025 named-city aggregates \cite{numbeocase};
-Mumbai--Delhi air uses 2021 WHO monitoring means \cite{whocase}.
-The retained historical city and education scopes identify neither a necessary
-winner nor a national causal effect.
+These historical city and education scopes identify neither a necessary winner nor a national causal effect.
 
 \FloatBarrier
 
@@ -796,6 +799,7 @@ methods: A comparative analysis of VIKOR and TOPSIS.
 \bibitem{oslo} City of Oslo, municipal transport GIS, layer 800; Norwegian
 Mapping Authority, municipality 0301 boundary. Accessed November 2026.
 \url{https://geodata.bymoslo.no/arcgis/rest/services/geodata/Temadata_Publikum/MapServer/800}.
+\bibitem{enturstop} Entur. National Stop Place Registry, Oslo export dated 9 November 2026; NeTEx stop-place and parent-group definitions. \url{https://developer.entur.org/pages-nsr-nsr/}; \url{https://enturas.atlassian.net/wiki/plugins/viewsource/viewpagesrc.action?pageId=3846668311}.
 \bibitem{vbz} Verkehrsbetriebe Z\"urich. \textit{Zahlen und Fakten 2025}, p.~6.
 \url{https://www.stadt-zuerich.ch/content/dam/vbz/de/die-vbz/zahlen-fakten/geschaeftsbericht/Z4690_VBZ_FB-2025_Web.pdf}.
 \bibitem{helsinki} Metropolitan Area Transport Ltd. \textit{Metrolla}.

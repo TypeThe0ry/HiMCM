@@ -8,19 +8,19 @@ def norm(s):
  return ' '.join(re.sub(r'-[ \t]*\n[ \t]*','-',s).split()).casefold()
 def hit(m,s,line=False):return any(norm(x)==norm(m) for x in s.splitlines()) if line else re.search(r'(?<!\w)'+re.escape(norm(m))+r'(?!\w)',norm(s)) is not None
 def main():
- pdf=Path('/data/scratch/himcm-v202-current-build/main.pdf');raw=subprocess.check_output(['pdftotext','-layout',str(pdf),'-'],text=True).split('\f');assert not raw[-1].strip();pages=raw[:-1];aux=Path('/data/scratch/himcm-v202-current-build/main.aux').read_text()
+ pdf=Path('/data/scratch/himcm-current-transport-build/main.pdf');raw=subprocess.check_output(['pdftotext','-layout',str(pdf),'-'],text=True).split('\f');assert not raw[-1].strip();pages=raw[:-1];aux=Path('/data/scratch/himcm-current-transport-build/main.aux').read_text()
  def label(n):return int(re.search(r'\\newlabel\{'+n+r'\}\{\{[^}]*\}\{(\d+)\}',aux)[1])
  total=len(pages);end=label('main-end');news=[label('news-start'),label('news-end')];assert end<=25 and total==end+2==label('LastPage')
  refs=[i+1 for i,p in enumerate(pages) if hit('References',p,True)];assert len(refs)==1;refs=refs[0]
- count=len(re.findall(r'\\bibcite\{',aux));assert count==60
+ count=len(re.findall(r'\\bibcite\{',aux));assert count==61
  prior=R/'results/current_spatial_review/requirements.csv';rows=list(csv.DictReader(prior.open()));assert len(rows)==48;anchors=[]
  updates={
  'PA-sample':'Retained 16-city by 10-indicator primary sample and V202 ranking table',
  'U-perturbation':'V202 Dirichlet preference and bounded future shocks; joint mean-box boundaries 0.42205% fixed and 63.44548% equal; historical utility-only mass budgets',
  'PA-data':'25supplementedkeys;Singapore26physicalvenues(25ActiveSG+oneOCBC);old3noticewithholding23/all4withholding22;OCBCpublicper-entry,age,hoursandclosureconstraints;Zurichschool-sessionlimitsretained',
- 'PA-references':f'{count} reference keys; OCBC operator reference added; all59prior keys retained',
+ 'PA-references':f'{count} reference keys; Entur stop-unit reference added; all60prior keys retained',
  'U-preserve':'Original CSV preserved; Singapore pool inventory lower bound refined 25 to 26 venues from V200; other 159 cells and all upper bounds unchanged; weights and anchors unchanged',
- 'U-source-quality':'V202source-diagnosticsandcurrent-main-sourceaudit;Zurich12namedsubsetfromoriginalHTMLwithaccessrestrictions;112originalpointsnotfullycertified',
+ 'U-source-quality':'V202source-diagnostics;829NSRadministrative-stopalternativechangesrecommendationtoboth-weightOslo;89physicalsubsetretained;112originalpointsnotfullycertified',
  'AI-verification':'V202fullresearchauditandcurrent-main-and-assetsaudit;source/numericprovenancebound;frozenAIcaptureunchanged',
  'U-MC-precision':'V202specifiedexportfamily2064means37settings;4440 pair intervals, 4260 certified, 180 unresolved, 18 unique minima;notalladditionalprimaryMCsettings',
  'U-matrix-visual':'Figure1V202160cells112point37partial11unknown;travelproxycaptionretained;minimum10ptat6.5in',
@@ -35,7 +35,7 @@ def main():
  if shared: updates['TEAM-shared-build']='Actual local root current main compiles to the independently audited PDF; clean Git rendering reproduction is recorded separately; online server compilation unverified'
  for row in rows:
   key=row['id'];markers=json.loads(row['passage_markers']);lo,hi=3,news[0]-1;line=False
-  replacements={'PA-best':['conservative recommendation under the stated criteria and intervals','Zurich minimizes maximum regret'], 'U-model-count':['TOPSIS is the primary score','VIKOR'], 'PA-news':['largest possible shortfall','Scenarios for planning'], 'U-age':['shared unknown-age mass once','0.23842','not observed age effects'], 'U-MC-precision':['Numerical precision','2064 exported means','city mean-rank ordering remains unresolved']}
+  replacements={'U-country':['The primary sample has one city per country','outside the sixteen-city ranking'], 'U-source-quality':['numerator 340','rate 0.14','Conditionally treating Oslo','deduplicated physical facilities'], 'PA-best':['conservative recommendation under the stated criteria and intervals','Zurich minimizes maximum regret'], 'U-model-count':['TOPSIS is the primary score','VIKOR'], 'PA-news':['largest possible shortfall','Scenarios for planning'], 'U-age':['shared unknown-age mass once','0.23842','not observed age effects'], 'U-MC-precision':['Numerical precision','2064 exported means','city mean-rank ordering remains unresolved']}
   if key in replacements: markers=replacements[key]; row['passage_markers']=json.dumps(markers)
   if key=='PA-summary':lo=hi=1
   if key=='PA-toc':lo=hi=2;line=True

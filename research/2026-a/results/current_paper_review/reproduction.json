@@ -3,9 +3,9 @@
   "version": "Single current main on V202",
   "runner_sha256": "6a2a21a5fcbc3ac947a82ea7df24a9ad4f7ab6ecebf83af3a99f4c851f419279",
   "primary": "V202",
-  "canonical_pdf_sha256": "722b31d658320ccdbda5c9aa617c5d0cc59fb68b443129089ba34fdd8a7aea35",
-  "paper_head": "12e1cd21f03633301156ca131299a14549d69ad2",
-  "research_head": "17aacd3c96e5e5200e4275a3eaa5ffaf035b558b",
+  "canonical_pdf_sha256": "dcb04e48ada394192a8cd58a8c0b90f2a54d9102e58868548a82304fa672ed4f",
+  "paper_head": "faadd04dda0be1388c3c47f1cec73aa72578e1ac",
+  "research_head": "c77b3a272871114079affa906d4f7298f70435d6",
   "environment": {
     "python": "3.11.18",
     "executable": "/data/projects/HiMCM/.venv-v120/bin/python",
@@ -123,7 +123,7 @@
     {
       "kind": "root",
       "passed": true,
-      "pdf_sha256": "664d4a8e8a661678bc4235c75b921e6fb20040310bcf15a21803f19826e8aac7",
+      "pdf_sha256": "a51494d21e2c6733e1160c9c23ba448daef1df51467125bdc34a54faa4dbb3ef",
       "text_pages_equal": true,
       "grayscale_72dpi_pages_equal": 27,
       "underfull_paragraphs": 1,
@@ -132,11 +132,11 @@
         "tectonic",
         "--only-cached",
         "--outdir",
-        "/data/scratch/himcm-v202-current-reproduction/work-funcgp6r/root/compiled",
+        "/data/scratch/himcm-current-transport-reproduction/work-cjczras6/root/compiled",
         "--keep-logs",
         "--keep-intermediates",
         "--makefile-rules",
-        "/data/scratch/himcm-v202-current-reproduction/root/dependencies.mk",
+        "/data/scratch/himcm-current-transport-reproduction/root/dependencies.mk",
         "main.tex"
       ],
       "physical_pages": 27,
@@ -148,7 +148,7 @@
     "paper_and_navigation_files": 25,
     "changed": []
   },
-  "elapsed_seconds": 8.003,
+  "elapsed_seconds": 7.372,
   "submission_ready": false,
   "server_compile_verified": false,
   "scope": "Single current main from exact tracked paper HEAD, local cached-TeX build, all-page text/render equality and160cells/32scalarcases plus inherited controls; no fresh-machine,MC/source revalidation or online compile claim."

@@ -1,0 +1,42 @@
+{
+  "status": "source_and_computation_audit_complete; no admission",
+  "oslo": {
+    "source_sha256": "63a3bef9e342a22f87f44c1229a2d9c0fe4f594b410a1383051eb11dd7f6f569",
+    "http_status_and_utc_are_recorded_metadata_not_independently_replayed": true,
+    "records": 1257,
+    "municipality_reference_records": 1256,
+    "native_mode_bearing_parent_collapsed_roots": 829,
+    "missing_parent_excluded": 0,
+    "polygon_checked_centroids": 1256,
+    "outside_polygon_centroids": 0,
+    "outside_polygon_ids": [],
+    "same_name_cross_mode_separate_roots": {
+      "Trosterud": [
+        "NSR:StopPlace:5677",
+        "NSR:StopPlace:6197"
+      ],
+      "Midtstuen": [
+        "NSR:StopPlace:6302",
+        "NSR:StopPlace:6313"
+      ]
+    },
+    "native_density_per_100000": 113.90538845309887,
+    "heuristic_clusters": 517,
+    "heuristic_density_per_100000": 71.03629171321124,
+    "population": 727797,
+    "decision": "517 is diagnostic only; proximity/name clusters lack a validated physical-stop definition and polygon findings require review. Native parent-collapsed count is a conditional administrative StopPlace count, not platform count or a proven one-to-one physical facility count. No addition to existing 89.",
+    "native_semantics_source": "https://enturas.atlassian.net/wiki/plugins/viewsource/viewpagesrc.action?pageId=3846668311",
+    "registry_source": "https://developer.entur.org/pages-nsr-nsr/"
+  },
+  "zurich": {
+    "source_sha256": "9827610e3f68b8ae54b726673ff5b8b77dbf792e235b4dda4cafa7dbb1e14ef3",
+    "http_status_and_utc_are_recorded_metadata_not_independently_replayed": true,
+    "total_features": 3004,
+    "cname_exact_Zürich": 479,
+    "no_listed_lines": 17,
+    "population": 440935,
+    "existing_vbz_count": 446,
+    "existing_density_per_100000": 101.14869538594124,
+    "decision": "Reject substitution or addition: cname is not a validated city polygon and raw identifiers do not establish comparable unique physical stops or active service; no proven increase over 446."
+  }
+}

@@ -29,5 +29,20 @@
     "active_model_admissions": 1,
     "admitted_model": "V202"
   },
-  "historical_source_verification": "results/current_priority/source_verification.json"
+  "historical_source_verification": "results/current_priority/source_verification.json",
+  "transport_definition_sensitivity": {
+    "results": "results/current_transport_candidate",
+    "source_verification": "results/current_transport_candidate/source_verification.json",
+    "numeric_verification": "results/current_transport_candidate/verification.json",
+    "primary_admissions": 0,
+    "physical_lower_bound_unchanged": 89,
+    "administrative_alternative": 829,
+    "recommendation_in_alternative_both_weights": [
+      "Oslo"
+    ],
+    "primary_recommendation": [
+      "Zurich"
+    ],
+    "next_action": "Reconcile named cross-mode physical identity and service eligibility, no arbitrary radius proof"
+  }
 }

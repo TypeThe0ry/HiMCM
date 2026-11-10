@@ -1,0 +1,253 @@
+{
+  "status": "isolated_definition_sensitivity_not_admitted",
+  "active_science": "V202 unchanged",
+  "primary_admissions": 0,
+  "actual_active_width_reduction": 0,
+  "source_capture_date": "2026-11-10T04:43:09.016032+00:00",
+  "population": 727797,
+  "retained_active_metro_count": 89,
+  "native_root_count": 829,
+  "unvalidated_cluster_count": 517,
+  "unit_warning": "Native root groups are administrative registry units; 250m/name clusters are a separate heuristic and not certified physical-stop lower bounds. No new count is summed with89.",
+  "comparisons": [
+    {
+      "scenario": "active_metro_subset89",
+      "count": 89,
+      "weight_reference": "fixed",
+      "utility_lower": 0.19651202200934645,
+      "mean_score_width": 15.955820475866993,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 0.9495346236711697
+    },
+    {
+      "scenario": "distance_name_clusters_unvalidated",
+      "count": 517,
+      "weight_reference": "fixed",
+      "utility_lower": 0.5869007609843813,
+      "mean_score_width": 15.835303579651299,
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": -0.9787357157799406
+    },
+    {
+      "scenario": "native_registry_roots",
+      "count": 829,
+      "weight_reference": "fixed",
+      "utility_lower": 0.6949459656458618,
+      "mean_score_width": 15.805029375404713,
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": -1.4631229837253201
+    },
+    {
+      "scenario": "withdraw_new_inventory",
+      "count": 89,
+      "weight_reference": "fixed",
+      "utility_lower": 0.19651202200934645,
+      "mean_score_width": 15.955820475866993,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 0.9495346236711697
+    },
+    {
+      "scenario": "below_fixed_integer_switch",
+      "count": 226,
+      "weight_reference": "fixed",
+      "utility_lower": 0.3831167565267584,
+      "mean_score_width": 15.896714344678506,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 0.0038365246553695442
+    },
+    {
+      "scenario": "above_fixed_integer_switch",
+      "count": 227,
+      "weight_reference": "fixed",
+      "utility_lower": 0.3841607314961876,
+      "mean_score_width": 15.89638906967351,
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": -0.00136787542454897
+    },
+    {
+      "scenario": "below_equal_integer_switch",
+      "count": 639,
+      "weight_reference": "fixed",
+      "utility_lower": 0.6371532114167087,
+      "mean_score_width": 15.820986300060788,
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": -1.2078121892281217
+    },
+    {
+      "scenario": "above_equal_integer_switch",
+      "count": 640,
+      "weight_reference": "fixed",
+      "utility_lower": 0.6375146491403264,
+      "mean_score_width": 15.82088476095489,
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": -1.2094368149224834
+    },
+    {
+      "scenario": "active_metro_subset89",
+      "count": 89,
+      "weight_reference": "equal",
+      "utility_lower": 0.19651202200934645,
+      "mean_score_width": 18.655815697356704,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 4.269284665796505
+    },
+    {
+      "scenario": "distance_name_clusters_unvalidated",
+      "count": 517,
+      "weight_reference": "equal",
+      "utility_lower": 0.5869007609843813,
+      "mean_score_width": 18.41764778775888,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 0.4585981122313427
+    },
+    {
+      "scenario": "native_registry_roots",
+      "count": 829,
+      "weight_reference": "equal",
+      "utility_lower": 0.6949459656458618,
+      "mean_score_width": 18.357639646392073,
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": -0.5015321496375833
+    },
+    {
+      "scenario": "withdraw_new_inventory",
+      "count": 89,
+      "weight_reference": "equal",
+      "utility_lower": 0.19651202200934645,
+      "mean_score_width": 18.655815697356704,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 4.269284665796505
+    },
+    {
+      "scenario": "below_fixed_integer_switch",
+      "count": 226,
+      "weight_reference": "equal",
+      "utility_lower": 0.3831167565267584,
+      "mean_score_width": 18.540328361990504,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 2.421487299937283
+    },
+    {
+      "scenario": "above_fixed_integer_switch",
+      "count": 227,
+      "weight_reference": "equal",
+      "utility_lower": 0.3841607314961876,
+      "mean_score_width": 18.539682307064595,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 2.4111504211227484
+    },
+    {
+      "scenario": "below_equal_integer_switch",
+      "count": 639,
+      "weight_reference": "equal",
+      "utility_lower": 0.6371532114167087,
+      "mean_score_width": 18.38915055341627,
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": 0.002642362749540439
+    },
+    {
+      "scenario": "above_equal_integer_switch",
+      "count": 640,
+      "weight_reference": "equal",
+      "utility_lower": 0.6375146491403264,
+      "mean_score_width": 18.388949080891138,
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "Oslo_regret_gap_to_best_other": -0.0005811976525507134
+    }
+  ],
+  "thresholds": [
+    {
+      "weight_reference": "fixed",
+      "tie_count_equivalent": 226.7368160524848,
+      "first_strict_integer_count": 227,
+      "scope": "Only Oslo transport lower bound changes; conditional on treating count as comparable stop units. Not an observed inventory or collection target probability."
+    },
+    {
+      "weight_reference": "equal",
+      "tie_count_equivalent": 639.8195365812657,
+      "first_strict_integer_count": 640,
+      "scope": "Only Oslo transport lower bound changes; conditional on treating count as comparable stop units. Not an observed inventory or collection target probability."
+    }
+  ],
+  "independent_scalar_city_weight_cases": 256,
+  "science_bindings_verified": 476,
+  "other159lower_all160uppers_originalCSV_and_paper_preserved": true,
+  "source_sha256": {
+    "scripts/task4_current_transport_candidate.py": "7c55c97e19cba84f126acdb1833c5c21c0f3f4407717a3071b2eee52ec64e0d0",
+    "data/current_oslo_transport/03_Oslo_latest.zip": "63a3bef9e342a22f87f44c1229a2d9c0fe4f594b410a1383051eb11dd7f6f569",
+    "data/current_oslo_transport/download.json": "4261d3b48c71e2978c16e21907a72682ed595ab41cf237dbec7ea66a2cc9e049",
+    "data/current_oslo_transport/candidate.json": "0448d78e853419e3bacfcab3389ad0dc816ff11b93d0c912082eba12da7bbaac",
+    "data/current_oslo_transport/summary.json": "54695f6c3f237c812d8ec96c74aa1232295147b245024e49b02977427c7fde1c",
+    "data/current_oslo_transport/conservative_basins.csv": "7cfe7a1f51d689efef7b634f63d0e17b25971c527c0a8d3908a6cf209d009677",
+    "data/current_oslo_transport/native_stopplaces.csv": "c04d6c107f70ca9891e746d63bb5170516e1470557a4509b63bbc5c5f33f4fab",
+    "design/task4_user_v202_snapshot.json": "d80bc652d20d5641f810bfe67bad71ad82a9b11c201a7ce334386bebe4803281",
+    "design/task4_user_current_model.json": "962437b6755a022463df73bb400e8811b2f731a4890749a6368e88703089e697",
+    "design/task4_user_current_extensions.json": "ca9fd0d9aa7237a3c912e6520b61f1d19098a978dc4a955f375311ea4290706f",
+    "design/task4_user_current_review.json": "541355b808850b391cdb3e034bea71c12ead5df3470d3aa54acd3c4e2233f647",
+    "design/task4_user_current_delivery.json": "b8dc908f626186417af89ea2d6fcbb4e108e77663e329636618afbf2cecfa2bd"
+  }
+}

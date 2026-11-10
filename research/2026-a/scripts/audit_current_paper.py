@@ -5,7 +5,7 @@ import numpy as np,pandas as pd
 from task4_user_v202_revision import revised_bounds
 from task4_v5_model import NAMES,weights
 from audit_task4_v193 import values,norm
-R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-v202-current-build'); O=R/'results/current_paper_review'
+R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-transport-build'); O=R/'results/current_paper_review'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def read(p):return json.loads(p.read_text())
 def frame(p):return pd.read_csv(p,float_precision='round_trip')
@@ -16,9 +16,9 @@ def main():
  for n,h in old['v200_bindings'].items():assert snapshot['source_sha256'][n]==h
  for n in ['ref.bib','mcmthesis.cls','figures/country_contrasts.pdf','figures/walktime_context.pdf']:
   p=P/n;assert sha(p)==old['protected_files'][str(p)],n
- tex=(P/'main.tex').read_text(); oldtex=subprocess.check_output(['git','-C',str(P),'show','HEAD:main.tex'],text=True)
+ tex=(P/'main.tex').read_text(); oldtex=subprocess.check_output(['git','-C',str(P),'show','aeeac9d918f1f97d2045025fdc4079d5ae4f74ff:main.tex'],text=True)
  assert hashlib.sha256(oldtex.encode()).hexdigest()==old['protected_files'][str(P/'main.tex')]
- original=set(re.findall(r'\\bibitem\{([^}]+)\}',oldtex));current=set(re.findall(r'\\bibitem\{([^}]+)\}',tex)); assert len(original)==59 and original<current and len(current)==60,(len(original),len(current),current-original)
+ original=set(re.findall(r'\\bibitem\{([^}]+)\}',oldtex));current=set(re.findall(r'\\bibitem\{([^}]+)\}',tex)); assert len(original)==59 and original<current and len(current)==61,(len(original),len(current),current-original)
  assert re.search(r'tcn\s*=\s*18213',tex)
  ai='\\section*{Report on Use of AI Tools}'
  assert tex[tex.index(ai):]==oldtex[oldtex.index(ai):].replace('V200 primary','V202 primary').replace('V200 validation','V202 validation')
@@ -104,6 +104,17 @@ def main():
  for scenario in ['resource_expansion','living_pressure','balanced_improvement']:
   row=mc[mc.weight_reference.eq('fixed')&mc.city.eq('Zurich')&mc.evidence_arm.eq('conditional')&mc.scenario.eq(scenario)].iloc[0];assert f'{100*row.recommendation_frequency:.2f}%' in full
  for value in ['4,260','4,440','180 unresolved','18 of 37','0.42205%','63.44548%','40.07 minutes']:assert value in full,value
+ # A separate registry counting definition is disclosed without changing primary V202.
+ alternative=read(R/'results/current_transport_candidate/preview.json')
+ assert alternative['active_science']=='V202 unchanged' and alternative['primary_admissions']==0
+ transport_check=read(R/'results/current_transport_candidate/verification.json')
+ assert transport_check['status']=='PASS' and transport_check['city_weight_scenario_cases']==256 and transport_check['source_bindings_verified']==476
+ for ref in ['fixed','equal']:
+  row=next(v for v in alternative['comparisons'] if v['scenario']=='native_registry_roots' and v['weight_reference']==ref)
+  assert row['count']==829 and row['recommendation']==['Oslo'] and row['possible_champions']==16 and row['necessary_champions']==0
+ assert 'an alternative oslo transport counting definition selects oslo under both weights' in summary
+ assert '829' in full and '89' in full and 'administrative' in full
+ assert 'enturstop' in tex and '517' not in tex
  refs=set(re.findall(r'\\bibcite\{([^}]+)\}',aux));assert refs==current
  cited={k.strip() for g in re.findall(r'\\cite\{([^}]+)\}',tex) for k in g.split(',')};assert cited<=refs,cited-refs
  nodes=ET.fromstring(subprocess.check_output(['pdftotext','-bbox',str(pdf),'-'])).findall('.//{*}page');assert len(nodes)==len(pages)
@@ -113,6 +124,6 @@ def main():
    top=[w for w in words if float(w.get('yMin'))<65];assert any(w.text=='Team' and 70<float(w.get('xMin'))<74 for w in top) and any(w.text=='Page' and float(w.get('xMin'))>450 for w in top) and any(w.text=='18213' for w in top);assert f'Page {i+1} of {len(pages)}' in norm(pages[i])
   else:assert '18213' in pages[0]
  assert not any(x in log for x in ['Overfull','undefined','LaTeX Warning'])
- result=dict(status='pass',scope='Independent local numerical, selected text, preservation, and PDF geometry audit; excludes server compilation, visual review, independent requalification of sources and final team acceptance.',v202_bindings=476,inherited_v200_bindings=407,rendered_summary_method_and_news_scenarios_checked=True,rendered_mc_and_threshold_values_checked=True,reference_keys=len(current),new_reference_keys=sorted(current-original),figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
+ result=dict(status='pass',scope='Independent local numerical, selected text, preservation, and PDF geometry audit; excludes server compilation, visual review, independent requalification of sources and final team acceptance.',v202_bindings=476,inherited_v200_bindings=407,rendered_summary_method_and_news_scenarios_checked=True,rendered_mc_and_threshold_values_checked=True,reference_keys=len(current),new_reference_keys=sorted(current-original),figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,transport_definition_alternative_disclosed=True,primary_89_metro_bound_unchanged=True,transport_preview_sha256=sha(R/'results/current_transport_candidate/preview.json'),transport_source_audit_sha256=sha(R/'results/current_transport_candidate/source_verification.json'),transport_numeric_audit_sha256=sha(R/'results/current_transport_candidate/verification.json'),pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
  O.mkdir(exist_ok=True);(O/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':main()
