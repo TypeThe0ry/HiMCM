@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "city": "Oslo",
+  "indicator": "fixed_broadband_mbps",
+  "publisher_value": 150.76,
+  "units": "Mbps",
+  "published_measure_field": "fixedMedian",
+  "published_city_rank": 78,
+  "publication_label": "September 2026",
+  "source_url": "https://www.speedtest.net/global-index",
+  "archive_access_date": "2026-11-07",
+  "archive_file": "data/task4_v5_resources/ookla_global_index.html",
+  "archived_row_html": "<tr class=\"data-result results\" data-index-number=\"78\">\n                                  <td class=\"rank actual-rank\">78</td>\n                                  <td class=\"rank rank-change\"><span class=\"tooltip negative\"title=\"Down 2 places since last month\">-2</span></td>\n                                  <td class=\"country\">\n                                    <a href=\"/global-index/norway?city=Oslo#fixed\">Oslo</a>, <span class=\"country_display\">Norway</span>\n                                  </td>\n                  \n                  \n                                  <td class=\"speed\">150.76</td>\n                                </tr>",
+  "source_sha256": {
+    "data/task4_v5_resources/ookla_global_index.html": "fe1747fc44f1273eaf43e8acda26c6c3e6ab48d4e614716a551f937446b02e9b",
+    "data/task4_v5_resources/manifest.json": "bff1974aba03afc70fd629219e316d64df175839f6c18e7f88af7f272a48b946",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c"
+  },
+  "source_footer": "Results are updated mid-month for the previous three months.",
+  "submitted_value_matches_publisher": true,
+  "original_extraction_lineage_verified": false,
+  "municipal_boundary_equivalence_verified": false,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "Exact value and published field/month match in an authenticated publisher archive; this does not prove the original CSV extraction route, sampling representativeness or city-proper boundary. The publication label is 2026, not a 2025 observation."
+}

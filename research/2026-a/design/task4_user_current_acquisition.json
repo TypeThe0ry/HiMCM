@@ -84,8 +84,8 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 12,
-    "scope": "Selected reviewed high-priority teacher/travel routes; not an exhaustive source inventory",
+    "routes": 15,
+    "scope": "Selected reviewed high-priority teacher/travel and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
   "freudenberg_staff_followup": {
@@ -189,5 +189,29 @@
     "primary_admissions": 0,
     "actual_score_width_reduction": 0,
     "scope": "Extreme single-point ignorance stress does not establish any measurement error or authorize a change to user inputs."
+  },
+  "retained_point_source_followup": {
+    "verification": "results/current_point_source_review/verification.json",
+    "verification_sha256": "4cb09a9cc37ec8ff442f5c9717396609666ec9ffbc753b75f47cbb0a5f8c9df0",
+    "data": [
+      "data/current_oslo_he_scope",
+      "data/current_oslo_broadband_scope",
+      "data/current_zurich_homicide_scope"
+    ],
+    "new_raw_responses": 6,
+    "exact_publisher_value_matches": 1,
+    "broadband_match": {
+      "city": "Oslo",
+      "Mbps": 150.76,
+      "field": "fixedMedian",
+      "publication_label": "September 2026",
+      "original_extraction_lineage_verified": false,
+      "municipal_boundary_equivalence_verified": false
+    },
+    "Oslo_original_25_entity_roster_verified": false,
+    "Zurich_original_0_14_rate_definition_verified": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false
   }
 }

@@ -1,0 +1,9 @@
+# Oslo broadband: publisher-value and field match
+
+The retained **150.76 Mbps** matches the Oslo row in the already archived official Speedtest Global Index, under the **fixed broadband median** field and the **September 2026** publication label. This resolves the statistic label and publication month for one matching publisher record. The original CSV has no extraction URL, so the match does not establish its historical extraction route or certify every aspect of the city measurement.
+
+`extract.py` checks the original publisher HTML against its existing manifest, isolates `column-fixedMedian`, locates the exact Oslo fixed-network link, and reads rank 78 and speed 150.76. It also checks the submitted value and year. The full source remains at `data/task4_v5_resources/ookla_global_index.html` relative to `research/2026-a`; it is not duplicated here. Its manifest records the official URL and access date, 7 November 2026. `publisher_match.json` binds those inputs and preserves the selected row and labels.
+
+The archived footer describes updates in the middle of the month for the previous three months. Treat September 2026 as the publication label and retain that rolling-period qualification; do not present the value as a 2025 annual observation. Neither the page row nor the original CSV provides a polygon demonstrating equivalence to the municipal boundary. A publisher city statistic is not a representative measurement of student or school broadband access.
+
+The exact publisher-value match strengthens source documentation without changing a measurement. It is not a new admission, a correction, an uncertainty-width reduction or proof that the original user extracted this page. Run `python research/2026-a/data/current_oslo_broadband_scope/extract.py` to print the deterministic extraction. The source HTML, original CSV and all model and manuscript files remain unchanged.

@@ -1,0 +1,13 @@
+# Source follow-up for influential retained points
+
+The retained Oslo broadband value now has an exact match to a specific publisher field and publication label: **150.76 Mbps, fixed broadband median, September 2026**, in the existing official Ookla archive. The original extraction route and municipal-boundary equivalence remain unproved. This is stronger source documentation for one point, with **zero new primary admissions and zero primary interval-width reduction**.
+
+The independent check uses HTMLParser to locate the Oslo row inside `column-fixedMedian`, separately from the extractor's regular expressions. It verifies the source manifest, original CSV value/year and rolling three-month footer. The publication label is not a 2025 annual observation. See `research/2026-a/data/current_oslo_broadband_scope/`.
+
+Six newly saved official response bodies support two further scope checks. NOKUT's national institution categories and January 2026 count of 49 do not establish the original 25-entity Oslo inventory. Programme accreditation, institutional accreditation, campuses and distinct institutions must remain separate; no eligible city roster was obtained. See `research/2026-a/data/current_oslo_he_scope/`.
+
+Zurich's municipal release gives 448,664 residents at the end of 2024. The police catalogue calculates offence frequency per 1,000 using a prior-year federal permanent-population series; equivalence to that municipal series is not established. Its archived grouped CSV has 8,190 records over 2009–2022 and 13 broad offence groups, without a homicide-specific category. The earlier city police report supplies registered completed offences, not an established victim count. These sources do not connect the original 0.14 rate to a verified definition and denominator. No substitute rate is admitted. See `research/2026-a/data/current_zurich_homicide_scope/`.
+
+`research/2026-a/scripts/audit_current_point_sources.py` verifies response receipts, the independent broadband parse, national versus city scope, grouped CSV years/categories and compressed/decompressed historical police-report hashes. It also checks 548 frozen scientific bindings, 77 supplementary bindings and seven paper dependencies in both checkouts. Saved results are in `research/2026-a/results/current_point_source_review/verification.json`.
+
+The next source work needs an actual Oslo institution roster and compatible counting criteria, or the original Zurich rate's numerator, denominator and definition. A matching publisher number does not close those gaps or certify all 112 points. V203, the user CSV, weights, current manuscript and its figures remain unchanged. No additional Overleaf version is created.
