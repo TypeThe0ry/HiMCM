@@ -1,0 +1,302 @@
+{
+  "version": "V204",
+  "cases": [
+    {
+      "case": "retained_V204",
+      "groups": [],
+      "withdrawn_points": 0,
+      "weight_reference": "fixed",
+      "choices": [
+        "Oslo"
+      ],
+      "choice_max_regret": 15.751955386687115,
+      "mean_width": 15.776782727425475,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    },
+    {
+      "case": "retained_V204",
+      "groups": [],
+      "withdrawn_points": 0,
+      "weight_reference": "equal",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 15.760638509295092,
+      "mean_width": 18.30212083359472,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    },
+    {
+      "case": "cost_housing",
+      "groups": [
+        "cost_housing"
+      ],
+      "withdrawn_points": 32,
+      "weight_reference": "fixed",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 32.32248348093871,
+      "mean_width": 32.60879453007106,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": true
+    },
+    {
+      "case": "cost_housing",
+      "groups": [
+        "cost_housing"
+      ],
+      "withdrawn_points": 32,
+      "weight_reference": "equal",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 30.96750655329035,
+      "mean_width": 33.30365561007183,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    },
+    {
+      "case": "broadband",
+      "groups": [
+        "broadband"
+      ],
+      "withdrawn_points": 16,
+      "weight_reference": "fixed",
+      "choices": [
+        "Oslo"
+      ],
+      "choice_max_regret": 23.6249685445718,
+      "mean_width": 24.02563780668639,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    },
+    {
+      "case": "broadband",
+      "groups": [
+        "broadband"
+      ],
+      "withdrawn_points": 16,
+      "weight_reference": "equal",
+      "choices": [
+        "Oslo"
+      ],
+      "choice_max_regret": 23.001424180407007,
+      "mean_width": 25.569736091311555,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": true
+    },
+    {
+      "case": "pm",
+      "groups": [
+        "pm"
+      ],
+      "withdrawn_points": 16,
+      "weight_reference": "fixed",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 24.089934465442226,
+      "mean_width": 24.137854419530804,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": true
+    },
+    {
+      "case": "pm",
+      "groups": [
+        "pm"
+      ],
+      "withdrawn_points": 16,
+      "weight_reference": "equal",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 23.058211184182127,
+      "mean_width": 25.679273806141502,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    },
+    {
+      "case": "cost_housing+broadband",
+      "groups": [
+        "cost_housing",
+        "broadband"
+      ],
+      "withdrawn_points": 48,
+      "weight_reference": "fixed",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 40.08286809811346,
+      "mean_width": 40.25668481610619,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": true
+    },
+    {
+      "case": "cost_housing+broadband",
+      "groups": [
+        "cost_housing",
+        "broadband"
+      ],
+      "withdrawn_points": 48,
+      "weight_reference": "equal",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 37.86165731946267,
+      "mean_width": 40.17403903823678,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    },
+    {
+      "case": "cost_housing+pm",
+      "groups": [
+        "cost_housing",
+        "pm"
+      ],
+      "withdrawn_points": 48,
+      "weight_reference": "fixed",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 40.882955864658534,
+      "mean_width": 40.69508901618153,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": true
+    },
+    {
+      "case": "cost_housing+pm",
+      "groups": [
+        "cost_housing",
+        "pm"
+      ],
+      "withdrawn_points": 48,
+      "weight_reference": "equal",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 38.89651317107248,
+      "mean_width": 40.59713837132018,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    },
+    {
+      "case": "broadband+pm",
+      "groups": [
+        "broadband",
+        "pm"
+      ],
+      "withdrawn_points": 32,
+      "weight_reference": "fixed",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 31.78586381364341,
+      "mean_width": 31.83104490538017,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": true
+    },
+    {
+      "case": "broadband+pm",
+      "groups": [
+        "broadband",
+        "pm"
+      ],
+      "withdrawn_points": 32,
+      "weight_reference": "equal",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 30.58729331703872,
+      "mean_width": 32.545964438535435,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    },
+    {
+      "case": "cost_housing+broadband+pm",
+      "groups": [
+        "cost_housing",
+        "broadband",
+        "pm"
+      ],
+      "withdrawn_points": 64,
+      "weight_reference": "fixed",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 49.137720320581124,
+      "mean_width": 48.77117150504941,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": true
+    },
+    {
+      "case": "cost_housing+broadband+pm",
+      "groups": [
+        "cost_housing",
+        "broadband",
+        "pm"
+      ],
+      "withdrawn_points": 64,
+      "weight_reference": "equal",
+      "choices": [
+        "Zurich"
+      ],
+      "choice_max_regret": 47.300080048162485,
+      "mean_width": 47.82713622173506,
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "choice_changed_from_retained": false
+    }
+  ],
+  "inclusion_minimal_choice_changing_group_sets": {
+    "fixed": [
+      [
+        "cost_housing"
+      ],
+      [
+        "pm"
+      ]
+    ],
+    "equal": [
+      [
+        "broadband"
+      ]
+    ]
+  },
+  "rank_rows": 256,
+  "bounds_rows": 1280,
+  "source_map_rows": 64,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "interpretation": "Stress of complete information withdrawal over predefined blocks. [0,1] is the anchored utility domain; rectangular cross-city extremes are not assumed physically joint or probable. Inclusion-minimal sets are defined among these three blocks, not an error tolerance or real-world failure probability. No new data, primary change, manuscript edit, or primary interval narrowing.",
+  "input_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/task4_current_v204_source_block_stress.py": "a1f7f3cc7f3b09626bf1ed2a7d98b86def9fbf189ccbd6ecea09f34fe8133cd8",
+    "results/task4_user_v204_revision/utility_bounds.csv": "d649cf577f4f6c2003558cde09b91246241ba97c4cad60850c2bebb7162580fc",
+    "design/task4_user_v204_admissions.json": "0ba4fb69c1c4403c5aff56c7d9bbcafd0452d2f4026d64fc6c837ae4726d086b",
+    "results/current_cost_edition_review/edition_values.csv": "e160c4b753bf0ea51a70a11d949876de6f0ea5883fdd51fb1b82a374e48402ff",
+    "data/current_all16_broadband_fields/comparison.csv": "dce07345faa469c8d1510f8a6a4bc97d698635af612dd016d2b94132d2206c5c"
+  },
+  "output_sha256": {
+    "ranks.csv": "8c7bd3cab50b4319f3b2abf3c8c822922b2e9df67c78852beac95c38456bde9f",
+    "bounds.csv": "9b34433ae0b771eb401cbd801c9f6bd28bdd12f83d90b71d4abb257b2a349b6d",
+    "source_map.csv": "be1ed4dcedda02341845552d216ea98e375bc2c58b56b6994632bc2445e4311e",
+    "case_manifest.json": "5224167c9a469d81573d7ff5a5d16f2a1b036420a43b6fb653b654999b5d3867"
+  }
+}

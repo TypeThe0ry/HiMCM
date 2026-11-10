@@ -55,6 +55,8 @@ PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python resea
 
 ## 最近研究增量与下一步
 
+- [V204 成组信息撤回](../../research/2026-a/results/current_v204_source_block_stress/README.md)：成本／住房32点、宽带16点、PM16点的八子集完成独立标量和三项重算哈希后的负控。固定单撤成本或PM转Zurich，等权单撤宽带转Oslo、再联合撤回其他组转回Zurich；不是共同误差模型或现实失效概率。256城市×权重案例、1,280区间和658科学文件及两份论文依赖核对通过，主与稿件保持。
+
 - [Zurich 来源与职业路径补充](CURRENT_ZURICH_SOURCE_FOLLOWUPS.md)：高教23的算术及八条认证范围、州SekII学生63,925与教师不匹配、学徒交通16条辅助摘录完成独立审查。0主准入／0实际收窄；当前点值台账仅将Zurich HE更新为已查但来源链未解决，风险和优先次序保持。新完整性合同为44报告／1,164绑定。
 
 - [Oslo DBH 计数定义](CURRENT_OSLO_DBH_UPDATE.md)：临时 23／25／26／27 代码方案；固定均为 Oslo，等权在 26／27 下为 Oslo。它们不是实际高校数的严格界限。

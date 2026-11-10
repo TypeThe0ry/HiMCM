@@ -461,5 +461,25 @@
     "verification_sha256": "712a75b97bc17c4c771b15cca72342ec0eb2d8829b7605b3a8f5f2d8ac7de44e",
     "assets_manifest": "results/task4_v204_paper_assets/manifest.json",
     "assets_manifest_sha256": "af814d2eec90ba25399c010336acae9a3573c3d043e4f656a1cde94ce75e0128"
+  },
+  "source_block_information_withdrawal": {
+    "results": "results/current_v204_source_block_stress",
+    "script": "scripts/task4_current_v204_source_block_stress.py",
+    "verification": "results/current_v204_source_block_stress/verification.json",
+    "verification_sha256": "5534019a67820c95d911d7f39d95c8571a0b244474e401ebc3e86000aecdb145",
+    "primary_evidence_version": "V204 unchanged",
+    "predefined_blocks": {
+      "cost_housing": 32,
+      "broadband": 16,
+      "pm": 16
+    },
+    "subsets": 8,
+    "city_weight_cases": 256,
+    "bounds": 1280,
+    "source_map_rows": 64,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Conditional complete information withdrawal, not common-error/correlation estimation or realistic failure probability. Fixed choice changes for cost_housing or pm; equal choice changes for broadband alone and returns to Zurich in larger combinations. Existing main and four extension modules retained."
   }
 }

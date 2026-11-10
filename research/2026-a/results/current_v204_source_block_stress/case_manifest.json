@@ -1,0 +1,180 @@
+{
+  "version": "V204",
+  "group_definitions": {
+    "cost_housing": {
+      "indicators": [
+        "cost_living_index",
+        "price_income_ratio"
+      ],
+      "point_count": 32,
+      "evidence": "results/current_cost_edition_review/edition_values.csv"
+    },
+    "broadband": {
+      "indicators": [
+        "fixed_broadband_mbps"
+      ],
+      "point_count": 16,
+      "evidence": "data/current_all16_broadband_fields/comparison.csv"
+    },
+    "pm": {
+      "indicators": [
+        "pm25"
+      ],
+      "point_count": 16,
+      "evidence": "data/task4_v117_team_intake/city_indicators.csv"
+    }
+  },
+  "combinations": [
+    {
+      "case": "retained_V204",
+      "groups": [],
+      "indicators": [],
+      "withdrawn_points": 0,
+      "weight_references": [
+        "fixed",
+        "equal"
+      ]
+    },
+    {
+      "case": "cost_housing",
+      "groups": [
+        "cost_housing"
+      ],
+      "indicators": [
+        "cost_living_index",
+        "price_income_ratio"
+      ],
+      "withdrawn_points": 32,
+      "weight_references": [
+        "fixed",
+        "equal"
+      ]
+    },
+    {
+      "case": "broadband",
+      "groups": [
+        "broadband"
+      ],
+      "indicators": [
+        "fixed_broadband_mbps"
+      ],
+      "withdrawn_points": 16,
+      "weight_references": [
+        "fixed",
+        "equal"
+      ]
+    },
+    {
+      "case": "pm",
+      "groups": [
+        "pm"
+      ],
+      "indicators": [
+        "pm25"
+      ],
+      "withdrawn_points": 16,
+      "weight_references": [
+        "fixed",
+        "equal"
+      ]
+    },
+    {
+      "case": "cost_housing+broadband",
+      "groups": [
+        "cost_housing",
+        "broadband"
+      ],
+      "indicators": [
+        "cost_living_index",
+        "price_income_ratio",
+        "fixed_broadband_mbps"
+      ],
+      "withdrawn_points": 48,
+      "weight_references": [
+        "fixed",
+        "equal"
+      ]
+    },
+    {
+      "case": "cost_housing+pm",
+      "groups": [
+        "cost_housing",
+        "pm"
+      ],
+      "indicators": [
+        "cost_living_index",
+        "price_income_ratio",
+        "pm25"
+      ],
+      "withdrawn_points": 48,
+      "weight_references": [
+        "fixed",
+        "equal"
+      ]
+    },
+    {
+      "case": "broadband+pm",
+      "groups": [
+        "broadband",
+        "pm"
+      ],
+      "indicators": [
+        "fixed_broadband_mbps",
+        "pm25"
+      ],
+      "withdrawn_points": 32,
+      "weight_references": [
+        "fixed",
+        "equal"
+      ]
+    },
+    {
+      "case": "cost_housing+broadband+pm",
+      "groups": [
+        "cost_housing",
+        "broadband",
+        "pm"
+      ],
+      "indicators": [
+        "cost_living_index",
+        "price_income_ratio",
+        "fixed_broadband_mbps",
+        "pm25"
+      ],
+      "withdrawn_points": 64,
+      "weight_references": [
+        "fixed",
+        "equal"
+      ]
+    }
+  ],
+  "weight_references": {
+    "fixed": {
+      "homicide_rate": 0.1125,
+      "pm25": 0.1125,
+      "cost_living_index": 0.1125,
+      "price_income_ratio": 0.1125,
+      "upper_secondary_ptr": 0.1125,
+      "research_he_density": 0.1125,
+      "public_transport_density": 0.05,
+      "travel": 0.1125,
+      "fixed_broadband_mbps": 0.1125,
+      "public_pool_density": 0.05
+    },
+    "equal": {
+      "homicide_rate": 0.1,
+      "pm25": 0.1,
+      "cost_living_index": 0.1,
+      "price_income_ratio": 0.1,
+      "upper_secondary_ptr": 0.1,
+      "research_he_density": 0.1,
+      "public_transport_density": 0.1,
+      "travel": 0.1,
+      "fixed_broadband_mbps": 0.1,
+      "public_pool_density": 0.1
+    }
+  },
+  "construction": "Selected point utility intervals replaced with [0,1]; all other V204 bounds, anchors, weights, and decision rules unchanged.",
+  "evidence_qualification": "Candidate source groupings only: original CSV extraction lineage is unconfirmed. No verified shared source, common error, joint physical plausibility, error tolerance, or failure probability is assumed.",
+  "prior_single_group_work": "PM block withdrawal, broadband field alternative and cost edition alternatives were V203 analyses; this is a V204 joint information-withdrawal analysis, not a rerun of V203."
+}
