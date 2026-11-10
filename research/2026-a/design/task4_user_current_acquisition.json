@@ -81,5 +81,18 @@
     "Zurich_scope": "2021citydailyall-purposetime;notone-wayschoolduration",
     "next_needed": "Publicly released Oslo-municipality upper-secondary trip-duration distribution or matched Zurich one-way school data; separate weighting and observation definitions required",
     "verification": "results/current_travel_source_review/verification.json"
+  },
+  "source_route_index": {
+    "file": "design/task4_current_source_routes.csv",
+    "routes": 9,
+    "scope": "Selected reviewed high-priority teacher/travel routes; not an exhaustive source inventory",
+    "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
+  },
+  "freudenberg_staff_followup": {
+    "data": "data/current_freudenberg_staff",
+    "primary_admissions": 0,
+    "actual_score_width_reduction": 0,
+    "scope": "No stage-specific actual teaching FTE found in extractable linked reports/evaluation; image-only absence not established",
+    "verification": "results/current_staff_source_review/verification.json"
   }
 }
