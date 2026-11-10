@@ -1,0 +1,107 @@
+{
+  "status": "pass conditional numerical thresholds, subject to boundary tolerance",
+  "independent_scalar_city_cases": 608,
+  "thresholds_found_by_bisection": [
+    {
+      "weight": "fixed",
+      "indicator": "upper_secondary_ptr",
+      "event": "recommendation_tie",
+      "city": null,
+      "root": 0.11552654679301028,
+      "function_residual": 7.105427357601002e-15
+    },
+    {
+      "weight": "fixed",
+      "indicator": "upper_secondary_ptr",
+      "event": "possible_champion_boundary",
+      "city": "Vienna",
+      "root": 0.6846225559399266,
+      "function_residual": 7.105427357601002e-15
+    },
+    {
+      "weight": "fixed",
+      "indicator": "upper_secondary_ptr",
+      "event": "possible_champion_boundary",
+      "city": "Berlin",
+      "root": 0.7436958738702879,
+      "function_residual": 1.4210854715202004e-14
+    },
+    {
+      "weight": "fixed",
+      "indicator": "upper_secondary_ptr",
+      "event": "possible_champion_boundary",
+      "city": "Amsterdam",
+      "root": 0.619829402306652,
+      "function_residual": 1.4210854715202004e-14
+    },
+    {
+      "weight": "fixed",
+      "indicator": "upper_secondary_ptr",
+      "event": "possible_champion_boundary",
+      "city": "Prague",
+      "root": 0.9096762588973106,
+      "function_residual": 0.0
+    },
+    {
+      "weight": "fixed",
+      "indicator": "upper_secondary_ptr",
+      "event": "possible_champion_boundary",
+      "city": "Tokyo",
+      "root": 0.6943028073065998,
+      "function_residual": -7.105427357601002e-15
+    },
+    {
+      "weight": "fixed",
+      "indicator": "travel",
+      "event": "recommendation_tie",
+      "city": null,
+      "root": 0.3919099784943727,
+      "function_residual": 7.105427357601002e-15
+    },
+    {
+      "weight": "equal",
+      "indicator": "upper_secondary_ptr",
+      "event": "possible_champion_boundary",
+      "city": "Vienna",
+      "root": 0.8566757727412491,
+      "function_residual": 0.0
+    },
+    {
+      "weight": "equal",
+      "indicator": "upper_secondary_ptr",
+      "event": "possible_champion_boundary",
+      "city": "Berlin",
+      "root": 0.8434821682708074,
+      "function_residual": -7.105427357601002e-15
+    },
+    {
+      "weight": "equal",
+      "indicator": "upper_secondary_ptr",
+      "event": "possible_champion_boundary",
+      "city": "Amsterdam",
+      "root": 0.6388338582801296,
+      "function_residual": 7.105427357601002e-15
+    }
+  ],
+  "max_absolute_score_error": 1.4210854715202004e-14,
+  "max_absolute_regret_error": 1.4210854715202004e-14,
+  "max_absolute_root_error": 1.9984014443252818e-15,
+  "max_absolute_ptr_or_fte_error": 1.04046193882823e-09,
+  "recorded_source_and_output_hashes_match": true,
+  "checked_sha256": {
+    "scripts/task4_current_zurich_acquisition_targets.py": "ae69899a310816a4d3ad6221f4bc09c13077df539b6c9c5b1a0deb4853ff33ea",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/task4_user_v204_revision.py": "98212495822c17a7424507c8d6384eda20c3f254d8803114b042d3ef04a070c0",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "data/current_zurich_ptr_matching_followup/pupils_dataset.csv": "883ef6803b2102334680f60767108f65bd7e26b72e5ed7698346dbaa381d9a20",
+    "results/current_zurich_ptr_matching_followup/extraction.json": "34830e2a6d4c01f683b723783f9ea4aa0cf7f80d18bad182417a70d14b195749",
+    "results/current_zurich_acquisition_targets/thresholds.csv": "01925d689c1739800b973abecd984027ec272548045c9d57bb3b3dc1c898e1d5",
+    "results/current_zurich_acquisition_targets/city_cases.csv": "1f57f1d1e07a2827f67013384db456a1b81c49ee5eacfbcceeaaadad40fc6aa8",
+    "results/current_zurich_acquisition_targets/verification.json": "9457def7ee2743e3af1446e109c5513bcf5decbf938c4062ba450fe0754ff35d",
+    "results/current_zurich_acquisition_targets/README.md": "e73046076d9f604a8062853f82b1abcfe8c9aa6b132dec7d653edda5d8336818"
+  },
+  "proof": "With nonnegative weights increasing Zurich utility increases its lower score monotonically; upper scores are fixed. Its exclusive regret falls, all other city regrets stay fixed, so its gap against the best other action is nonincreasing and a strict sign-changing crossing is unique where the score is strictly increasing. Another city remains possible exactly while its upper score is at least the greatest competing lower score; only the Zurich lower score moves. The independently enumerated sign crossings identify all interior boundaries. Exact observed identification would change upper as well as lower and is not covered.",
+  "boundary_caveat": "Mathematical equality admits ties; interval_decision uses 1e-12 score tolerance for possible/necessary status while decision_rank uses exact floating-point regret ranks. Thus at or extremely near a root rank output can pick one side due to rounding and strict exclusion occurs only past the implemented tolerance; below/above 1e-6 probes are not a certificate of bit-exact boundary classification.",
+  "scope": "Conditional sensitivity targets only, not observed data, actual acquisition, a forecast, or a primary update. 63925 is canton pupils and is not an admitted city pupil upper bound; FTE conversion requires verified stage/provider/geography/date matching and a valid target pupil upper bound, plus a lower bound on matching teaching activity. Travel utility target does not determine a mean, trip distribution, or school population. No upstream scientific validity audit; source hash checks establish only file identity.",
+  "final_wording_review": "README and producer report distinguish mathematical equality, floating-point and tolerance behavior, conditional acquisition rather than observed or exact identification, and lack of inference of travel mean. Rounded-up illustrative FTE targets 556.642636 and 6948.213037 exceed corresponding unrounded roots; source admissions and scientific feasibility remain unverified."
+}

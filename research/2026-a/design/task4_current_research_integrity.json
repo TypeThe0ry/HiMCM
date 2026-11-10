@@ -285,10 +285,24 @@
     "results/current_two_city_transit_ceiling/peer_review.json": {
       "expand_source_maps": [],
       "scope": "Bounded independent scalar and continuous-box review; explicit digests recorded as review evidence, producer source bindings expanded separately."
+    },
+    "results/current_zurich_target_routes/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_zurich_acquisition_targets/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_zurich_acquisition_targets/peer_review.json": {
+      "expand_source_maps": [],
+      "scope": "Independent scalar and bisection review; direct reviewed digests recorded separately; producer source maps expanded."
     }
   },
   "live_source_sha256": {
-    "design/task4_current_source_routes.csv": "e2a71df00028ddfc54af26f25992a5b2b683b36b67be14b68a47e037fe294863"
+    "design/task4_current_source_routes.csv": "6bae425f1424c2c3675739631f649c7e1f94cb1ccf423cec5c171716ede4667f"
   },
   "historical_sources": [
     {

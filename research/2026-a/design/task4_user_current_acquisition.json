@@ -87,7 +87,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 53,
+    "routes": 55,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -959,5 +959,22 @@
     "changes_primary_model": false,
     "changes_manuscript": false,
     "next_action": "Bounded routes closed pending HSL physical-area semantics or authorized Dublin populated feed. Joint transit lower-bound refinement alone cannot change choices or16/0 under retained V204 inputs. Prioritize matched decision-relevant education/travel evidence."
+  },
+  "zurich_decision_relevant_targets": {
+    "sources": [
+      "data/current_zurich_vocational_workload_route/README.md",
+      "data/current_zurich_schooltrip_route/README.md"
+    ],
+    "verification": "results/current_zurich_target_routes/verification.json",
+    "verification_sha256": "eae8d83511923e55060758993e39f9ecc65bc64e904519da4ce9039bf968d155",
+    "target_verification": "results/current_zurich_acquisition_targets/verification.json",
+    "target_verification_sha256": "9457def7ee2743e3af1446e109c5513bcf5decbf938c4062ba450fe0754ff35d",
+    "peer_review": "results/current_zurich_acquisition_targets/peer_review.json",
+    "peer_review_sha256": "f3f3af15b2df02c8b52188a872c329d3055687af8b91c229acbb4abb901748fd",
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "next_action": "For one-coordinate lower-bound refinement, distinguish recommendation threshold PTRutility~0.11552655 from first identification exclusion~0.61982940. Seek verified disjoint actualcityupper-stage teachingFTE subsets and matching pupilcap; canton63925 not admitted. Do not repeat the same headcount,positionplan or allpurpose/returntrip routes."
   }
 }

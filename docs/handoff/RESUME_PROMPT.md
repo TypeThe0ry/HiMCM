@@ -55,6 +55,8 @@ PYTHONDONTWRITEBYTECODE=1 /data/scratch/himcm-current-check-env/bin/python resea
 
 ## 最近研究增量与下一步
 
+- [Zurich条件采集门槛](../../research/2026-a/results/current_zurich_acquisition_targets/README.md)：独立608城市案例／10阈值核对通过。仅提高Zurich一个下界、其他上下界与权重保持时，固定权重PTR效用约0.11552655为推荐交叉，而约0.61982940才首次排除Amsterdam；出行效用推荐交叉约0.39190998。63,925州学生若另证为有效上界，则严格超过556.642636的匹配市内教学FTE下界是向上取整后的条件采集目标，不是已取得教师数或已准入界；首次缩小冠军集合需更强证据。新职业学校和通学路线11份原始响应均已离线复核，但人数／岗位计划不是实际FTE，教育目的旅程包含返程／大学／课程，未得到同人群单程分布。0准入／0实际收窄，主科学与论文保持。继续寻找互不重复、日期和学段匹配的教学工作量，不重复这些原件。
+
 - [Helsinki／Dublin交通路线与采集上限](../../research/2026-a/results/current_two_city_transit_ceiling/README.md)：HSL原生area表完成ETag／范围／CRC和ID完整性核对，但物理站区含义、市界和逐日服务尚未成立；Dublin两个官方GTFS链接403后跳过。34份原始响应、离线复现及658科学文件绑定核对通过，0准入／0实际收窄。独立128城市案例及单调性证明：只提高这两城交通下界，即使同时放宽至效用1，固定Oslo／等权Zurich、16可能／0必要均保持；不是有限站数或实际改善。减少这两项的后续采集投入，优先匹配的教育和出行证据；主模型与队友稿件保持。
 
 - [第三段我方AI记录](../../research/2026-a/data/current_ai_continuation2/README.md)：固定截止10Nov20:32:42.716UTC（11Nov04:32SG），新增51根上下文、239选中可见记录、1,367顶层输入；三段累计167／762／4,604。仅新元数据和指纹／哈希公开，精确导出私存；旧选择器前缀不抹去、不声称匿名化。自有AI报告已同步这些范围，正文前25页及六资源保持，27页／63引用和12待办维持。最新干净论文提交复现见`results/current_ai_continuation2_paper/reproduction/report.json`；不是完整团队或子agent历史。

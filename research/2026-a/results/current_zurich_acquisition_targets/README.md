@@ -1,0 +1,18 @@
+# Zurich evidence targets: recommendation and identification differ
+
+A defensible Zurich lower bound can change the conservative recommendation before it eliminates any possible champion. With all other V204 utilities, every upper bound and the fixed weights retained, the pupil–teacher utility lower bound reaches a mathematical regret tie with Oslo at **0.115526546793**. The first possible-champion exclusion requires a strictly larger lower bound than **0.619829402307**, where Zurich's lower score meets Amsterdam's upper score. The first threshold therefore does not identify a unique champion. Equal weights already recommend Zurich.
+
+| Lower-bound evidence only | Fixed-weight recommendation boundary | First possible-champion exclusion boundary |
+| --- | --- | --- |
+| Zurich pupil–teacher utility | 0.115526546793 | 0.619829402307 (Amsterdam) |
+| Zurich travel utility | 0.391909978494 | None through the relaxed endpoint 1 |
+
+For equal weights, the first PTR exclusion boundary is 0.638833858280 (Amsterdam); travel alone produces no exclusion through utility 1. `thresholds.csv` records all ten reachable interior boundaries, including later exclusions. No scenario makes a city a necessary champion. These statements cover increasing one specified lower bound at a time, with all other inputs fixed; exact identification, which also changes its upper bound, is a different acquisition outcome.
+
+The PTR transform `u=15/(15+PTR)` converts the fixed-weight recommendation boundary to a conditional PTR upper bound of 114.840287071642. If the published 2024/25 cantonal 63,925 pupils were proved to cover the intended city upper-secondary population, disjoint actual city teaching workloads with a combined conservative FTE lower bound strictly above 556.642636 would cross that recommendation boundary. The same loose pupil cap would require over 6,948.213037 FTE for the first possible-champion exclusion. These displayed sufficient FTE targets are rounded upward; the unrounded numerical boundaries are retained in the CSV. These are planning calculations, not assertions that those workloads exist or that the canton total is an admitted city bound. Target inclusion, teaching duties, school location, stage, provider coverage, reference period and outward numerical precision must all be established before using any such pair. Teacher headcounts, authorised posts and approximate employer figures do not supply the required lower bound.
+
+The travel threshold concerns a bound on expected travel utility for the retained population. It cannot be inverted to infer the actual mean, a trip-duration distribution, student ages or school trips. A new municipal school-trip sample would need its own declared population and scope rather than silently constraining the retained greater-city work-commute proxy.
+
+`city_cases.csv` contains 608 city rows: retained and relaxed endpoints for four indicator/weight settings plus evaluations 0.000001 below, at and above each of ten roots. A separate scalar/bisection review is recorded in `peer_review.json`. Equality is a mathematical boundary: raw floating-point regret ranks need not display the exact tie; champion flags use the model's 0.000000000001 score tolerance. Interpret the shown strict crossings outside that numerical band. The saved ±0.000001 checks are well outside it.
+
+Reproduce `scripts/task4_current_zurich_acquisition_targets.py` in a scratch checkout with an absent output directory, using the locked current-check Python environment. The producer refuses to overwrite this output. The original CSV and primary utility arrays are retained. **Actual admissions and primary score-width reduction are both zero.**
