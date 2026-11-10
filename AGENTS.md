@@ -63,3 +63,9 @@ The current delivery map is registered separately in `research/2026-a/design/tas
 ## User manuscript format — 2026-11-09
 
 Use the existing read-only mcmthesis class for owned review material, following the user-supplied format recorded in research/2026-a/design/task4_user_format_reference.json: native summary sheet, Team # running head at left, Page x of y at right, and empty footers. Preserve teammate main.tex, ref.bib, mcmthesis.cls and prose. The sample IDs18213/18214 conflict. On2026-11-10 the user authorized provisional use of the latest template: display mcmsetup tcn18213 in the owned review; retain actual registration as unverified and replace the display number when confirmed. Current owned review version is in task4_user_current_review.json.
+
+## Subagent model selection — user instruction, 2026-11-10
+
+- Use `gpt-6-luna` by default for lower-complexity subagent tasks.
+- Use `gpt-6.1-terra` for advanced subagent tasks, including complex mathematical modelling and independent scientific audits.
+- Choose reasoning effort to fit the task. Keep assignments bounded and give agents the required repository paths and context.

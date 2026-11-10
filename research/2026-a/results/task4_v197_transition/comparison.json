@@ -1,0 +1,861 @@
+{
+  "version": "V197 staged transition",
+  "active_primary": "V192",
+  "active_paper": "V196",
+  "activation_performed": false,
+  "primary_rank_changes": {
+    "decision_rank": 0,
+    "possible_champion": 0,
+    "necessary_champion": 0,
+    "midpoint_illustrative_rank": 0
+  },
+  "primary_comparisons": [
+    {
+      "scenario": "before_V192",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.039070074421616
+    },
+    {
+      "scenario": "before_V192",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.81881344951466
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.01221199746499
+    },
+    {
+      "scenario": "after_conditional",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.76442966782986
+    },
+    {
+      "scenario": "withdraw_Zurich_pool_refinement",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.039070074421616
+    },
+    {
+      "scenario": "withdraw_Zurich_pool_refinement",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.81881344951466
+    },
+    {
+      "scenario": "withdraw_Tokyo_inventory",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.013703756359536
+    },
+    {
+      "scenario": "withdraw_Tokyo_inventory",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.76695725676339
+    },
+    {
+      "scenario": "withdraw_Warsaw_inventory",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.02103495655165
+    },
+    {
+      "scenario": "withdraw_Warsaw_inventory",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.781029372461035
+    },
+    {
+      "scenario": "withdraw_both_inventory",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.022526715446194
+    },
+    {
+      "scenario": "withdraw_both_inventory",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.783556961394567
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.311019800502038
+    },
+    {
+      "scenario": "withdraw_historical_stage_proxy",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 19.019132983591955
+    },
+    {
+      "scenario": "withdraw_Amsterdam_mapped_inventory",
+      "weight_reference": "fixed",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 16.024262346001528
+    },
+    {
+      "scenario": "withdraw_Amsterdam_mapped_inventory",
+      "weight_reference": "equal",
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "mean_width": 18.787455946474186
+    }
+  ],
+  "extension_tables": {
+    "preferences/mc_city_summary.csv": {
+      "rows": 144,
+      "numeric_changes": {
+        "minimax_recommendation_frequency": {
+          "rows": 42,
+          "max_absolute_change": 0.15300000000000002,
+          "min_change": -0.08030000000000001,
+          "max_change": 0.15300000000000002
+        },
+        "mean_decision_rank": {
+          "rows": 92,
+          "max_absolute_change": 0.27479999999999993,
+          "min_change": -0.27479999999999993,
+          "max_change": 0.12220000000000031
+        },
+        "top3_decision_frequency": {
+          "rows": 63,
+          "max_absolute_change": 0.05589999999999999,
+          "min_change": -0.045599999999999974,
+          "max_change": 0.05589999999999999
+        },
+        "possible_champion_frequency": {
+          "rows": 52,
+          "max_absolute_change": 0.008199999999999985,
+          "min_change": -0.008199999999999985,
+          "max_change": -9.999999999998899e-05
+        },
+        "minimax_recommendation_frequency_change_vs_baseline": {
+          "rows": 30,
+          "max_absolute_change": 0.14870000000000005,
+          "min_change": -0.14870000000000005,
+          "max_change": 0.0776
+        },
+        "mean_decision_rank_change_vs_baseline": {
+          "rows": 64,
+          "max_absolute_change": 0.15760000000000018,
+          "min_change": -0.11240000000000028,
+          "max_change": 0.15760000000000018
+        },
+        "top3_decision_frequency_change_vs_baseline": {
+          "rows": 45,
+          "max_absolute_change": 0.04169999999999985,
+          "min_change": -0.04129999999999989,
+          "max_change": 0.04169999999999985
+        },
+        "possible_champion_frequency_change_vs_baseline": {
+          "rows": 40,
+          "max_absolute_change": 0.007299999999999973,
+          "min_change": 0.00019999999999997797,
+          "max_change": 0.007299999999999973
+        }
+      }
+    },
+    "preferences/ranks.csv": {
+      "rows": 48,
+      "numeric_changes": {
+        "score_lower": {
+          "rows": 3,
+          "max_absolute_change": 0.4297292313060481,
+          "min_change": 0.33679799342166206,
+          "max_change": 0.4297292313060481
+        },
+        "max_regret": {
+          "rows": 3,
+          "max_absolute_change": 0.4297292313060481,
+          "min_change": -0.4297292313060481,
+          "max_change": -0.33679799342166206
+        },
+        "midpoint_illustrative_score": {
+          "rows": 3,
+          "max_absolute_change": 0.19742962348000503,
+          "min_change": 0.16106555415689172,
+          "max_change": 0.19742962348000503
+        }
+      }
+    },
+    "preferences/weights.csv": {
+      "rows": 30,
+      "numeric_changes": {}
+    },
+    "future/future_mc_city_summary.csv": {
+      "rows": 192,
+      "numeric_changes": {
+        "recommendation_frequency": {
+          "rows": 9,
+          "max_absolute_change": 0.03149999999999997,
+          "min_change": -0.0252,
+          "max_change": 0.03149999999999997
+        },
+        "mean_decision_rank": {
+          "rows": 9,
+          "max_absolute_change": 0.03420000000000001,
+          "min_change": -0.03420000000000001,
+          "max_change": 0.026100000000000012
+        },
+        "score_lower_change_p05": {
+          "rows": 12,
+          "max_absolute_change": 0.00704847610895705,
+          "min_change": -0.00704847610895705,
+          "max_change": 0.0002844377155096084
+        },
+        "score_lower_change_p50": {
+          "rows": 12,
+          "max_absolute_change": 0.022311718679581816,
+          "min_change": -0.022311718679581816,
+          "max_change": 0.0008947550494156076
+        },
+        "score_lower_change_p95": {
+          "rows": 12,
+          "max_absolute_change": 0.03688325433539852,
+          "min_change": -0.03688325433539852,
+          "max_change": 0.0014661410675785302
+        }
+      }
+    },
+    "future/ranks.csv": {
+      "rows": 256,
+      "numeric_changes": {
+        "score_lower": {
+          "rows": 16,
+          "max_absolute_change": 0.8718824763198612,
+          "min_change": 0.4095765290822939,
+          "max_change": 0.8718824763198612
+        },
+        "max_regret": {
+          "rows": 16,
+          "max_absolute_change": 0.8718824763198612,
+          "min_change": -0.8718824763198612,
+          "max_change": -0.4095765290822939
+        },
+        "midpoint_illustrative_score": {
+          "rows": 16,
+          "max_absolute_change": 0.3889589697842126,
+          "min_change": 0.186432289295837,
+          "max_change": 0.3889589697842126
+        },
+        "score_lower_change": {
+          "rows": 12,
+          "max_absolute_change": 0.04406782192355507,
+          "min_change": -0.04406782192355507,
+          "max_change": 0.0017419693630245092
+        }
+      }
+    },
+    "future/threshold_scan.csv": {
+      "rows": 3232,
+      "numeric_changes": {
+        "regret_gap_to_best_other": {
+          "rows": 3219,
+          "max_absolute_change": 0.874473834770022,
+          "min_change": -0.874473834770022,
+          "max_change": 0.8701405069568366
+        }
+      }
+    },
+    "future/thresholds.csv": {
+      "rows": 32,
+      "numeric_changes": {
+        "threshold_bracket": {
+          "rows": 6,
+          "max_absolute_change": 0.08374178188258508,
+          "encoding": "two_numeric_endpoints_JSON"
+        },
+        "baseline_gap_to_best_other": {
+          "rows": 32,
+          "max_absolute_change": 0.8701405069568366,
+          "min_change": -0.8701405069568366,
+          "max_change": 0.8701405069568366
+        },
+        "gap_at_50pct_cost_reduction": {
+          "rows": 31,
+          "max_absolute_change": 0.8731416604631121,
+          "min_change": -0.8731416604631121,
+          "max_change": 0.8701405069568366
+        },
+        "threshold_raw_multiplier": {
+          "rows": 6,
+          "max_absolute_change": 0.08374178188258519,
+          "min_change": -0.08374178188258519,
+          "max_change": -0.03366295759758087
+        },
+        "required_cost_reduction_fraction": {
+          "rows": 6,
+          "max_absolute_change": 0.08374178188258519,
+          "min_change": 0.03366295759758087,
+          "max_change": 0.08374178188258519
+        },
+        "regret_gap_at_threshold": {
+          "rows": 4,
+          "max_absolute_change": 1.4210854715202004e-14,
+          "min_change": -1.4210854715202004e-14,
+          "max_change": 7.105427357601002e-15
+        }
+      }
+    },
+    "future/utility_bounds.csv": {
+      "rows": 1280,
+      "numeric_changes": {
+        "lower": {
+          "rows": 8,
+          "max_absolute_change": 0.11775850843046887,
+          "min_change": 0.11372949354701722,
+          "max_change": 0.11775850843046887
+        }
+      }
+    },
+    "future/weight_mc_city_summary.csv": {
+      "rows": 256,
+      "numeric_changes": {
+        "recommendation_frequency": {
+          "rows": 67,
+          "max_absolute_change": 0.07840000000000003,
+          "min_change": -0.06389999999999996,
+          "max_change": 0.07840000000000003
+        },
+        "possible_champion_frequency": {
+          "rows": 70,
+          "max_absolute_change": 0.025500000000000078,
+          "min_change": -0.025500000000000078,
+          "max_change": -9.999999999998899e-05
+        },
+        "mean_decision_rank": {
+          "rows": 138,
+          "max_absolute_change": 0.23999999999999977,
+          "min_change": -0.23999999999999977,
+          "max_change": 0.0687000000000002
+        }
+      }
+    },
+    "method/country_indicator_bounds.csv": {
+      "rows": 20,
+      "numeric_changes": {}
+    },
+    "method/country_score_comparison.csv": {
+      "rows": 2,
+      "numeric_changes": {}
+    },
+    "method/istanbul_historical_age_groups.csv": {
+      "rows": 2,
+      "numeric_changes": {}
+    },
+    "method/method_components.csv": {
+      "rows": 320,
+      "numeric_changes": {
+        "midpoint_utility": {
+          "rows": 2,
+          "max_absolute_change": 0.05887925421523432,
+          "min_change": 0.05887925421523432,
+          "max_change": 0.05887925421523432
+        },
+        "vikor_weighted_relative_shortfall": {
+          "rows": 30,
+          "max_absolute_change": 0.010799106570755845,
+          "min_change": -0.010799106570755845,
+          "max_change": 0.007205342316339851
+        },
+        "sample_best": {
+          "rows": 32,
+          "max_absolute_change": 0.02462770810757131,
+          "min_change": 0.02462770810757131,
+          "max_change": 0.02462770810757131
+        }
+      }
+    },
+    "method/method_ranks.csv": {
+      "rows": 32,
+      "numeric_changes": {
+        "topsis_midpoint_score": {
+          "rows": 2,
+          "max_absolute_change": 0.3889589697842126,
+          "min_change": 0.19742962348000503,
+          "max_change": 0.3889589697842126
+        },
+        "vikor_S": {
+          "rows": 30,
+          "max_absolute_change": 0.010799106570755834,
+          "min_change": -0.010799106570755834,
+          "max_change": 0.007205342316339847
+        },
+        "vikor_R": {
+          "rows": 1,
+          "max_absolute_change": 5.041137716453592e-05,
+          "min_change": 5.041137716453592e-05,
+          "max_change": 5.041137716453592e-05
+        },
+        "vikor_Q": {
+          "rows": 28,
+          "max_absolute_change": 0.020735321971378465,
+          "min_change": -0.009961950242343365,
+          "max_change": 0.020735321971378465
+        },
+        "vikor_rank": {
+          "rows": 4,
+          "max_absolute_change": 1.0,
+          "min_change": -1.0,
+          "max_change": 1.0
+        }
+      }
+    },
+    "method/shanghai_district_resources.csv": {
+      "rows": 16,
+      "numeric_changes": {}
+    },
+    "method/singapore2020_secondary_exact_age_counts.csv": {
+      "rows": 7,
+      "numeric_changes": {}
+    },
+    "method/user16_country_coverage.csv": {
+      "rows": 16,
+      "numeric_changes": {}
+    },
+    "diagnostics/vintage_ranks.csv": {
+      "rows": 224,
+      "numeric_changes": {
+        "score_lower": {
+          "rows": 14,
+          "max_absolute_change": 1.6691353455533076,
+          "min_change": 0.4297292313060481,
+          "max_change": 1.6691353455533076
+        },
+        "max_regret": {
+          "rows": 14,
+          "max_absolute_change": 1.6691353455533147,
+          "min_change": -1.6691353455533147,
+          "max_change": -0.4297292313060481
+        },
+        "decision_rank": {
+          "rows": 10,
+          "max_absolute_change": 1.0,
+          "min_change": -1.0,
+          "max_change": 1.0
+        },
+        "midpoint_illustrative_score": {
+          "rows": 14,
+          "max_absolute_change": 0.4608080651451303,
+          "min_change": 0.19742962348000503,
+          "max_change": 0.4608080651451303
+        },
+        "midpoint_illustrative_rank": {
+          "rows": 2,
+          "max_absolute_change": 1.0,
+          "min_change": -1.0,
+          "max_change": 1.0
+        }
+      }
+    },
+    "diagnostics/witness_cases.csv": {
+      "rows": 32,
+      "numeric_changes": {
+        "strict_margin": {
+          "rows": 32,
+          "max_absolute_change": 0.8318018273667107,
+          "min_change": -0.8318018273667107,
+          "max_change": 0.019075024706779686
+        }
+      }
+    },
+    "diagnostics/witness_utilities.csv": {
+      "rows": 2560,
+      "numeric_changes": {
+        "utility": {
+          "rows": 16,
+          "max_absolute_change": 0.11187058300894537,
+          "min_change": 0.005887925421523499,
+          "max_change": 0.11187058300894537
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "results/task4_v192_preferences/mc_city_summary.csv": "eb0528feb335338fcf2b9e570c92d3e56377252c8bed90209b1ff529d5ab01d6",
+    "results/task4_v197_preferences/mc_city_summary.csv": "eff7e164a7bcfef24302c34e4d8d460c169637ed0da32bc3822ddb033460bfd4",
+    "results/task4_v192_preferences/ranks.csv": "c6898fa44b47ae217342523d20d607a8f07474b7d261867c9bbdf808acd52d45",
+    "results/task4_v197_preferences/ranks.csv": "0effd821086a3ae5f1748797bfd066a980c58b2c168ff87a9ee81f6cbbfd2be6",
+    "results/task4_v192_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v197_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v192_future/future_mc_city_summary.csv": "459869436df938a970e0f0881b9e39748d6f50d344f67c3c887c8721ce37b334",
+    "results/task4_v197_future/future_mc_city_summary.csv": "4b274ef5b03d99f040e69bb0bc8558b6c5cb2c5a77ded2d1581e1ac178e634df",
+    "results/task4_v192_future/ranks.csv": "3481774d230734e713361edae74cb87d1d4efe94df96f27902cdd7e37ed57dcc",
+    "results/task4_v197_future/ranks.csv": "343865fe323cb6c5fcdfd63c47992eaaeae7a2c08973a634313474a4c63b6ba6",
+    "results/task4_v192_future/threshold_scan.csv": "88fe1625083569074322c55bfed908caf58527d6892448889925a42fb4c132bd",
+    "results/task4_v197_future/threshold_scan.csv": "5bdbbbf475722eacf4265ef7ed00da11dfb54dbd103f5302acf6c718ef3c165a",
+    "results/task4_v192_future/thresholds.csv": "291bfeca2f469a4e6a7b9d7319016edf84557928514a6a15ceee9caca95b9f0f",
+    "results/task4_v197_future/thresholds.csv": "4b229e548d31f7977f762f3adb312579596b12624703abe6ddce554e07a4c605",
+    "results/task4_v192_future/utility_bounds.csv": "0ee6abde5cec1a54aac8b4b1aacc03cb625142f9d36f73b4b146af520e0d3b29",
+    "results/task4_v197_future/utility_bounds.csv": "222d686178eb8939501c704971dfd7fbbcd39c185bdaef94718d08a78f2c724c",
+    "results/task4_v192_future/weight_mc_city_summary.csv": "50162dd1498a505ccf23ffdf3c6a8d8175c7c4c5e6a4b1383c1f41f1022ccc40",
+    "results/task4_v197_future/weight_mc_city_summary.csv": "1c6b8a0d351615db624db85d367a170fa09b622bb94081928eef0681ec7f7f69",
+    "results/task4_v192_method/country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "results/task4_v197_method/country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "results/task4_v192_method/country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa",
+    "results/task4_v197_method/country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa",
+    "results/task4_v192_method/istanbul_historical_age_groups.csv": "b4072312d9cedb8b657c1836465f8471a1f20b96aa15d136f07f351884c2f34b",
+    "results/task4_v197_method/istanbul_historical_age_groups.csv": "b4072312d9cedb8b657c1836465f8471a1f20b96aa15d136f07f351884c2f34b",
+    "results/task4_v192_method/method_components.csv": "8a18626b656de2efdeba3b4a9a615e32f03bf88bc9cf930d0493a6b6ee76da02",
+    "results/task4_v197_method/method_components.csv": "ab934cff30fab2977f4c0ad475cd7eaf3b5884e525bddda7173c039ac51829dc",
+    "results/task4_v192_method/method_ranks.csv": "84be4fa5805b71fca9760234608f372b9e03ad9d0c80c8d3f365adb0692539b4",
+    "results/task4_v197_method/method_ranks.csv": "012d1b8cb7c4b374b81feb283d69ccf663a546712092e49167c1ccbefb6de267",
+    "results/task4_v192_method/shanghai_district_resources.csv": "1dd303f0fb9ddf7413051764b4790716717e48c7d8f94cc95467f89652e6f818",
+    "results/task4_v197_method/shanghai_district_resources.csv": "1dd303f0fb9ddf7413051764b4790716717e48c7d8f94cc95467f89652e6f818",
+    "results/task4_v192_method/singapore2020_secondary_exact_age_counts.csv": "5569790bf18c6543454ef1c84d86faa632a53b19126fd85a1482ff859a7dc560",
+    "results/task4_v197_method/singapore2020_secondary_exact_age_counts.csv": "5569790bf18c6543454ef1c84d86faa632a53b19126fd85a1482ff859a7dc560",
+    "results/task4_v192_method/user16_country_coverage.csv": "5627fcafcd902d3ca9c14d80026d75c2637192d62445f61da3061a3957507e4e",
+    "results/task4_v197_method/user16_country_coverage.csv": "5627fcafcd902d3ca9c14d80026d75c2637192d62445f61da3061a3957507e4e",
+    "results/task4_v192_diagnostics/vintage_ranks.csv": "26f6b1f1cf1b2d343dd3922395f13d9f5576f434033c7dea292a701fb3ebd3ad",
+    "results/task4_v197_diagnostics/vintage_ranks.csv": "34f855c350161feaba7dcfd8459a7a95769c954b58ea1af18214741c37713424",
+    "results/task4_v192_diagnostics/witness_cases.csv": "942e1c71b341541e6d6a88e85aede1efb8f35237e070da368897f96cf8c0b3b2",
+    "results/task4_v197_diagnostics/witness_cases.csv": "9d6aad84824b9cc858861121e4bacab389d844d653b6e7f7eb0fc69a8fd69df2",
+    "results/task4_v192_diagnostics/witness_utilities.csv": "d7212e5740194fd4bdbb8f0ab3a4aa1ae46274c930e78c445d1aaa7ce74171ae",
+    "results/task4_v197_diagnostics/witness_utilities.csv": "d6e1ec2737791accb7a7608284a4fe4cf35025a4897c47339fa79369b45864be",
+    "design/task4_user_v197_admissions.json": "4852b814cf8c6584fdfa615d4a8fc5c915a3f175e1a8731a025117eba46e66a1",
+    "results/task4_user_v197_revision/summary.json": "768f982797131a3f059a8c6586f1343f77ad1fd3bce69491c8756c1b6721620b",
+    "results/task4_user_v197_revision/current_ranks.csv": "64e2316b11299c31a448b9d568c16c532a8053b727276107e291ac284c551102"
+  }
+}

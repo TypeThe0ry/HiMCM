@@ -1,0 +1,32 @@
+[
+  {
+    "weight_reference": "fixed",
+    "sharp_radius": 0.130110523850907,
+    "sharp_radius_percent": 13.011052385090698,
+    "binding_rivals": [
+      "Oslo"
+    ],
+    "tie_regret": 17.327530663804993,
+    "gap_at0": -0.9160139450441704,
+    "gap_at1": 6.856834782085386,
+    "signed_gap_at_root": 7.105427357601002e-15,
+    "gap_below": -7.326777833327469e-07,
+    "gap_above": 7.326777833327469e-07,
+    "strict_guarantee": "Below the exact boundary Zurich uniquely minimizes regret throughout the box. At equality Zurich remains a minimax choice throughout, but a rival can tie at the worst corner. Above it an admissible counterexample exists."
+  },
+  {
+    "weight_reference": "equal",
+    "sharp_radius": 0.6344548233461832,
+    "sharp_radius_percent": 63.44548233461832,
+    "binding_rivals": [
+      "Oslo"
+    ],
+    "tie_regret": 17.06098233188755,
+    "gap_at0": -4.269284665796505,
+    "gap_at1": 2.6242691830545297,
+    "signed_gap_at_root": 0.0,
+    "gap_below": -7.189595478962474e-07,
+    "gap_above": 7.189595692125295e-07,
+    "strict_guarantee": "Below the exact boundary Zurich uniquely minimizes regret throughout the box. At equality Zurich remains a minimax choice throughout, but a rival can tie at the worst corner. Above it an admissible counterexample exists."
+  }
+]

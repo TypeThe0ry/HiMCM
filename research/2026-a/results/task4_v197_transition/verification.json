@@ -1,0 +1,207 @@
+{
+  "version": "V197 staged research",
+  "status": "pass",
+  "activation_status": "staged_not_active",
+  "current_primary": "V192",
+  "current_paper": "V196",
+  "current_delivery": "V196",
+  "changed_lower_cells": 1,
+  "other159_cells_and_all160_uppers_exact": true,
+  "withdrawals_exact": true,
+  "point_partial_unknown": [
+    112,
+    37,
+    11
+  ],
+  "cumulative_supplements": 25,
+  "extension_structure_tables": 20,
+  "independent_scalar_city_cases": 784,
+  "independent_primary_MC_rows": 768,
+  "primary_MC_settings_replayed": 48,
+  "independent_preference_MC_rows": 144,
+  "independent_future_shock_MC_rows": 192,
+  "independent_future_weight_MC_rows": 256,
+  "draws_per_setting": 10000,
+  "paired_seeds_profiles_and_scenarios_preserved": true,
+  "independent_future_threshold_scan_points": 3232,
+  "threshold_crossing_sides_verified": true,
+  "historical_csvs_byte_identical": 6,
+  "interior_witness_weight_cases": 32,
+  "scientific_files_unchanged": 327,
+  "existing_paper_files_unchanged": 876,
+  "registries_unchanged": 5,
+  "immutable_snapshot_bindings": 361,
+  "manuscript_changed": false,
+  "independent_raw_future_transform": true,
+  "future_shock_quantiles_verified": true,
+  "precision_and_mean_rank_audit": {
+    "base_means": 2064,
+    "settings": 37,
+    "familywise_alpha": 0.05,
+    "derived_pairs": 4440,
+    "certified_pairs": 4265,
+    "unresolved_pairs": 175,
+    "unique_minimum_settings": 24
+  },
+  "source_diagnostics": {
+    "withdrawal_ranks": 160,
+    "withdrawal_bounds": 800,
+    "single_probes": 202,
+    "joint_ranks": 192,
+    "joint_bounds": 1920,
+    "joint_mean_vectors": 144,
+    "pairwise_crossings": 30,
+    "independent_corners": 16384,
+    "roots": [
+      {
+        "weight_reference": "fixed",
+        "joint_sharp_radius": 0.13011052385090618,
+        "single_mean_minutes": 54.053129484602266,
+        "binding_rivals": [
+          "Oslo"
+        ]
+      },
+      {
+        "weight_reference": "equal",
+        "joint_sharp_radius": 0.6344548233461832,
+        "single_mean_minutes": null,
+        "binding_rivals": [
+          "Oslo"
+        ]
+      }
+    ],
+    "boundary_rank_rows": [
+      {
+        "weight_reference": "fixed",
+        "case": "boundary",
+        "city": "Zurich",
+        "exported_decision_rank": 1,
+        "independent_tolerance_rank": 1,
+        "allowed_machine_tie_rank_range": [
+          1,
+          2
+        ],
+        "exported_regret_gap_to_Zurich": 0.0,
+        "independent_regret_gap_to_Zurich": 0.0,
+        "regret_absolute_difference": 0.0
+      },
+      {
+        "weight_reference": "fixed",
+        "case": "boundary",
+        "city": "Oslo",
+        "exported_decision_rank": 2,
+        "independent_tolerance_rank": 1,
+        "allowed_machine_tie_rank_range": [
+          1,
+          2
+        ],
+        "exported_regret_gap_to_Zurich": 7.105427357601002e-15,
+        "independent_regret_gap_to_Zurich": -7.105427357601002e-15,
+        "regret_absolute_difference": 1.4210854715202004e-14
+      },
+      {
+        "weight_reference": "equal",
+        "case": "boundary",
+        "city": "Zurich",
+        "exported_decision_rank": 2,
+        "independent_tolerance_rank": 1,
+        "allowed_machine_tie_rank_range": [
+          1,
+          2
+        ],
+        "exported_regret_gap_to_Zurich": 0.0,
+        "independent_regret_gap_to_Zurich": 0.0,
+        "regret_absolute_difference": 0.0
+      },
+      {
+        "weight_reference": "equal",
+        "case": "boundary",
+        "city": "Oslo",
+        "exported_decision_rank": 1,
+        "independent_tolerance_rank": 1,
+        "allowed_machine_tie_rank_range": [
+          1,
+          2
+        ],
+        "exported_regret_gap_to_Zurich": -7.105427357601002e-15,
+        "independent_regret_gap_to_Zurich": 0.0,
+        "regret_absolute_difference": 7.105427357601002e-15
+      }
+    ],
+    "boundary_rank_scope": "Only exact-root exported decision_rank may select either ordering inside an independently verified1e-12 regret tie; scores/regrets/closed-form boundary/tie recommendation checked independently. All nonboundary ranks strict.",
+    "sharpness_scope": "Declared continuous box via monotone separable self-excluded regrets; strict below, tie attainable at equality, counterexample above; not physical attainability or probability."
+  },
+  "source_counts": {
+    "original_details": 13,
+    "distinct_addresses": 13,
+    "candidate_venues": 12,
+    "additional_venues": 5,
+    "adult_only_excluded": true,
+    "individual_teen_access_certified": false
+  },
+  "source_sha256": {
+    "design/task4_user_v197_admissions.json": "4852b814cf8c6584fdfa615d4a8fc5c915a3f175e1a8731a025117eba46e66a1",
+    "scripts/audit_task4_v197.py": "bbc9c9a569368b2992f1cac47d6c5acaaf0155c9961ed08763983c9dfb511032",
+    "design/task4_user_v197_snapshot.json": "7e1e302f9c66a70c069a0414dee022eaf79a77658707473de9e478739303c8b0",
+    "scripts/task4_user_v197_revision.py": "06232c86e8d51105475e61195069837e18b7f8025dc5265854d4b3c613b497c0",
+    "scripts/task4_v197_extensions.py": "b72f56add157eab5506c9cbec5dd34f01b5ffb87fb9239040890d9320951d101",
+    "scripts/task4_v197_mc_precision.py": "ff46e11147b1073453f6a3914ced1ba073200ead48db59e20f152c6ceba8a408",
+    "scripts/task4_v197_mean_rank_comparisons.py": "c58f087de234a76c6062839e990349e1c88112b64d2f8b5cecc0e314cd48fe40",
+    "scripts/task4_v197_source_diagnostics.py": "2861fb05ec463f78dcf4cd454d1ccb820b716bb394a987cf714bc6853680a39e",
+    "scripts/audit_task4_v192.py": "3e18ad25dd5ec6f8e097ef834cc05684df84904d9bd4033e0b5ac9ab59ef6e46",
+    "scripts/audit_task4_v180_amsterdam.py": "a0d900ddc63601d7cb2d225c186c0252d6dd47aba259854e726e63a9569da5be"
+  },
+  "result_sha256": {
+    "results/task4_user_v197_revision/all_ranks.csv": "f772b6ef46f92e7ec4c06d7c42a5a6504d51199e72e35073392f3ecf6d3a3f5f",
+    "results/task4_user_v197_revision/current_ranks.csv": "64e2316b11299c31a448b9d568c16c532a8053b727276107e291ac284c551102",
+    "results/task4_user_v197_revision/mc_city_summary.csv": "f8f1fcdad25fee41d68a7e8c6f05391922c9f1e3bf773b07663e408783567d2d",
+    "results/task4_user_v197_revision/summary.json": "768f982797131a3f059a8c6586f1343f77ad1fd3bce69491c8756c1b6721620b",
+    "results/task4_user_v197_revision/utility_bounds.csv": "1c379164292a9f1a2e0a26449c43b3b50a4a7dfd051dd11e91635f9edd2a4be6",
+    "results/task4_v197_preferences/mc_city_summary.csv": "eff7e164a7bcfef24302c34e4d8d460c169637ed0da32bc3822ddb033460bfd4",
+    "results/task4_v197_preferences/ranks.csv": "0effd821086a3ae5f1748797bfd066a980c58b2c168ff87a9ee81f6cbbfd2be6",
+    "results/task4_v197_preferences/scenario_matrices.json": "3551255c7e595d98dcd1782cf6562a33fcff1511593c4ae51d864cd003988271",
+    "results/task4_v197_preferences/summary.json": "6ef82dccf5b53404c9ff1ec9416983a03ac07093af70dda077d2908f64173da9",
+    "results/task4_v197_preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_v197_future/future_mc_city_summary.csv": "4b274ef5b03d99f040e69bb0bc8558b6c5cb2c5a77ded2d1581e1ac178e634df",
+    "results/task4_v197_future/ranks.csv": "343865fe323cb6c5fcdfd63c47992eaaeae7a2c08973a634313474a4c63b6ba6",
+    "results/task4_v197_future/summary.json": "8b8fb163dbef68c113466dbe7ec2a971a877cd3e77ca2d14240527482bf73595",
+    "results/task4_v197_future/threshold_scan.csv": "5bdbbbf475722eacf4265ef7ed00da11dfb54dbd103f5302acf6c718ef3c165a",
+    "results/task4_v197_future/thresholds.csv": "4b229e548d31f7977f762f3adb312579596b12624703abe6ddce554e07a4c605",
+    "results/task4_v197_future/utility_bounds.csv": "222d686178eb8939501c704971dfd7fbbcd39c185bdaef94718d08a78f2c724c",
+    "results/task4_v197_future/weight_mc_city_summary.csv": "1c6b8a0d351615db624db85d367a170fa09b622bb94081928eef0681ec7f7f69",
+    "results/task4_v197_method/country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "results/task4_v197_method/country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa",
+    "results/task4_v197_method/istanbul_historical_age_groups.csv": "b4072312d9cedb8b657c1836465f8471a1f20b96aa15d136f07f351884c2f34b",
+    "results/task4_v197_method/method_components.csv": "ab934cff30fab2977f4c0ad475cd7eaf3b5884e525bddda7173c039ac51829dc",
+    "results/task4_v197_method/method_ranks.csv": "012d1b8cb7c4b374b81feb283d69ccf663a546712092e49167c1ccbefb6de267",
+    "results/task4_v197_method/shanghai_district_resources.csv": "1dd303f0fb9ddf7413051764b4790716717e48c7d8f94cc95467f89652e6f818",
+    "results/task4_v197_method/singapore2020_secondary_exact_age_counts.csv": "5569790bf18c6543454ef1c84d86faa632a53b19126fd85a1482ff859a7dc560",
+    "results/task4_v197_method/summary.json": "b791e8ca26b8453ba6031e484ed8955a94f94542ab026d6047007962d50a96a6",
+    "results/task4_v197_method/user16_country_coverage.csv": "5627fcafcd902d3ca9c14d80026d75c2637192d62445f61da3061a3957507e4e",
+    "results/task4_v197_diagnostics/summary.json": "9a8d01984d3949b2b95c85706f9557311de8efdea8f1d83715ed05a5324df3c2",
+    "results/task4_v197_diagnostics/vintage_ranks.csv": "34f855c350161feaba7dcfd8459a7a95769c954b58ea1af18214741c37713424",
+    "results/task4_v197_diagnostics/witness_cases.csv": "9d6aad84824b9cc858861121e4bacab389d844d653b6e7f7eb0fc69a8fd69df2",
+    "results/task4_v197_diagnostics/witness_utilities.csv": "d6e1ec2737791accb7a7608284a4fe4cf35025a4897c47339fa79369b45864be",
+    "results/task4_v197_mc_precision/mean_bounds.csv": "de1baf97d561610e794083d2173a5bf6ce561625e3917ea800d28d119245a23b",
+    "results/task4_v197_mc_precision/published_examples.csv": "cf3ad6e32cb0ff43a67308e4d841be6d1c79c9c08c518535fb07734844d23d47",
+    "results/task4_v197_mc_precision/summary.json": "a16ffc69d2deef6434c2715f7c95eeda41d30e10c9f798b8a8b36899ebc6896e",
+    "results/task4_v197_mean_rank_comparisons/cities.csv": "2e4d0753f3a79bca91f9b0de93dec048a6b2f956f2557bb1e3160ff7cd5fe7fe",
+    "results/task4_v197_mean_rank_comparisons/pairs.csv": "7aa2a9a8b11efda32ef7556f5a4f93dee86d428bab9ec3ef043fb70d361728fa",
+    "results/task4_v197_mean_rank_comparisons/protected_files.json": "df84a87ef3645018622a35c45fffad01fa4150d9a23773eb8d27dbd2a4f6764c",
+    "results/task4_v197_mean_rank_comparisons/settings.csv": "eff3c861d93dab0ac2015233c17512b79e167828d0bc5958304f9753d467d9a3",
+    "results/task4_v197_mean_rank_comparisons/summary.json": "3cfd8c9309541739b3eadff54cb453c9d04563b9955054556565b5a37cfda2ad",
+    "results/task4_v197_source_diagnostics/README.md": "7a5b93f25d93952d20104bb1ec5be079f05bd5a031f15e9afed08520c2eb4919",
+    "results/task4_v197_source_diagnostics/commute_withdrawal_bounds.csv": "a9a6526ea092374d05f9a44f4653c74099e1d3f212aefec19bb1fc43e815eee8",
+    "results/task4_v197_source_diagnostics/commute_withdrawal_ranks.csv": "c440142a9e17b32878b6fe0824b3f393056aa270766c78cb37c71136aba83415",
+    "results/task4_v197_source_diagnostics/comparison.json": "056192ad879a5e7a34357dfed29e5c3b31bd5cce1bf2f4e32a252ec2ae8cc78f",
+    "results/task4_v197_source_diagnostics/joint_corner_bounds.csv": "9507c9fac4b3ffad5fd8508b011b50d3be51bce3ff68a80c68cc81645935117f",
+    "results/task4_v197_source_diagnostics/joint_corner_means.csv": "ff12b33864b891616cce85503bbb87f2607fe1b0cbffb2b89c0a81ccffe1088b",
+    "results/task4_v197_source_diagnostics/joint_corner_ranks.csv": "24406a8fca4096145762aac2bf314dfc9dd067d7504bc46d408998beb21d3bab",
+    "results/task4_v197_source_diagnostics/joint_pairwise_crossings.csv": "e09b3ade19cabe732c92595df206b919f0fef98dca8123b50364f18856160314",
+    "results/task4_v197_source_diagnostics/joint_thresholds.json": "aea703e80b535ce5a4ceeccadfad8280f39b1ffe3fb373545c6160c9a8883300",
+    "results/task4_v197_source_diagnostics/mean_thresholds.json": "216b72d4c6e0626694af18903bbe9190a769f161deb68585121b2361e1c48c86",
+    "results/task4_v197_source_diagnostics/retained_bounds.csv": "9e62410d3efb7916f59acc81a18481c07bb86ab5da41f5f768d18b5d7255969e",
+    "results/task4_v197_source_diagnostics/single_mean_probes.csv": "e6ecb40fd0c831608d1afab7e2ab42ec4733d51549099ac0771a61a8ba9d66ea",
+    "results/task4_v197_source_diagnostics/summary.json": "231b101cc509f8688872a4cda4f348b34c7daf5d1daf2035e24621d5945aaf18"
+  }
+}

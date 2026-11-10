@@ -1,0 +1,144 @@
+{
+  "version": "V197",
+  "primary": "V197",
+  "profiles": [
+    {
+      "profile": "baseline",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 1.0,
+      "mean_score_interval_width": 16.01221199746499,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4085
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.5115
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.6894
+        }
+      ]
+    },
+    {
+      "profile": "education_priority",
+      "minimax_choices": [
+        "Oslo"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 0.7166666666666667,
+      "mean_score_interval_width": 16.949502201440037,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Singapore",
+          "most_recommended_frequency": 0.3359
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.4123
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Oslo",
+          "most_recommended_frequency": 0.5756
+        }
+      ]
+    },
+    {
+      "profile": "independent_living_priority",
+      "minimax_choices": [
+        "Zurich"
+      ],
+      "possible_champions": [
+        "Vienna",
+        "Zurich",
+        "Helsinki",
+        "Berlin",
+        "London",
+        "Amsterdam",
+        "Stockholm",
+        "Paris",
+        "Madrid",
+        "Milan",
+        "Dublin",
+        "Oslo",
+        "Prague",
+        "Warsaw",
+        "Singapore",
+        "Tokyo"
+      ],
+      "necessary_champions": [],
+      "kendall_tau_b_vs_baseline": 0.8833333333333333,
+      "mean_score_interval_width": 22.029209829460385,
+      "consistency_ratio": 0.0,
+      "mc_settings": [
+        {
+          "concentration": 20,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.4782
+        },
+        {
+          "concentration": 100,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.6604
+        },
+        {
+          "concentration": 500,
+          "most_recommended": "Zurich",
+          "most_recommended_frequency": 0.8811
+        }
+      ]
+    }
+  ],
+  "preference_evidence": "Unchanged analyst-designed multipliers; no survey or age-specific elicitation",
+  "ahp_interpretation": "Exact ratio reconstruction; consistency is algebraic",
+  "assumptions_and_weights_exactly_match_V137": true
+}

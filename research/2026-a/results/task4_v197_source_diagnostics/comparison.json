@@ -1,0 +1,43 @@
+{
+  "version": "V197 staged diagnostics versus V192",
+  "status": "pass",
+  "threshold_changes": [
+    {
+      "weight_reference": "fixed",
+      "single_mean_status_before": "one_finite_mean_tie",
+      "single_mean_status_after": "one_finite_mean_tie",
+      "tie_mean_minutes_before": 46.58895160226913,
+      "tie_mean_minutes_after": 54.053129484602266,
+      "joint_radius_before": 0.07147330499127809,
+      "joint_radius_after": 0.130110523850907,
+      "binding_rivals_before": [
+        "Oslo"
+      ],
+      "binding_rivals_after": [
+        "Oslo"
+      ]
+    },
+    {
+      "weight_reference": "equal",
+      "single_mean_status_before": "Zurich_unique_for_all_nonnegative_means",
+      "single_mean_status_after": "Zurich_unique_for_all_nonnegative_means",
+      "tie_mean_minutes_before": null,
+      "tie_mean_minutes_after": null,
+      "joint_radius_before": 0.5142356915020831,
+      "joint_radius_after": 0.6344548233461832,
+      "binding_rivals_before": [
+        "Oslo"
+      ],
+      "binding_rivals_after": [
+        "Oslo"
+      ]
+    }
+  ],
+  "withdrawal_choices_and_possible_necessary_counts_unchanged": true,
+  "all_declared_input_hashes_verified": true,
+  "comparison_scope": "A stronger retained Zurich pool lower bound changes robustness thresholds under the same one-mean and Cartesian twelve-mean experiments. Radii are deterministic conditional boundaries, not calibrated error probabilities or joint physical feasibility.",
+  "input_sha256": {
+    "results/task4_v192_source_diagnostics/summary.json": "f44d505aac62ca120f1407ada8676651f265057c416ceed0f8c6e1675a6380c6",
+    "results/task4_v197_source_diagnostics/summary.json": "231b101cc509f8688872a4cda4f348b34c7daf5d1daf2035e24621d5945aaf18"
+  }
+}

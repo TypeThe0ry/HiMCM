@@ -1,0 +1,173 @@
+{
+  "version": "V197 staged science to V198 owned review",
+  "activation_performed": false,
+  "active_primary": "V192",
+  "active_review": "V196",
+  "active_delivery": "V196",
+  "new_science": "V197 staged_not_active",
+  "new_owned_review": "V198 planned",
+  "authoritative_inputs": {
+    "drafts/task4_v193_paper.tex": "b2a3ae18643d23c48625a3a9dc0944e6f736955e16a9dcb17f3c366f5f601a35",
+    "drafts/task4_v193_generated.tex": "29cf6323829c9e4862b0de6156ef3d4f3e4e3b9238df99ca4c90e49f1dd27222",
+    "drafts/task4_v193_front.tex": "071b76d9cbabfd3c80c610b78b07161a76a1370fafdbe38927967364a81a7c63",
+    "drafts/task4_v193_core.tex": "ecf248445c412e36cfcfdd7645e0fe9cac2cfbc5837bed3ba3bea79bed9c3529",
+    "drafts/task4_v193_assets/indicators.tex": "f1c4b4e3a6874f5e0ecce07a7ab91b2dfe31b8ddb7f86742eee852825612bea2",
+    "drafts/task4_v193_evidence_figure.tex": "08923a98a17877cd2a5c43745919e044e18fbcba26244e45879c5438f54f0900",
+    "drafts/task4_v193_assets/baseline.tex": "72ac4fdc983c63061f58747a1e0e6ec17d4cc0a49cfb7a035ee48d51520348a0",
+    "drafts/task4_v193_assets/revision.tex": "8732de6f4ad619d39e22b428936f96dc9e8a89f4f47f52b257b6def3d40bf3e3",
+    "drafts/task4_v193_vintage.tex": "f0a76f4fd7617934972b09165b5c621629afc1022716d0897456bcc78f2fa416",
+    "drafts/task4_v193_assets/vintage_table.tex": "0eeaa60902677745cd8ffd5756428dbca29292abc376c5ea12693d61d0693af2",
+    "drafts/task4_v193_assets/preferences.tex": "770879db767db558d938f4723d5b02e3fe408476c6bc652322223df04d91056c",
+    "drafts/task4_v193_assets/age_joint.tex": "5028c3cc16680250042afd8b306efcceb57db5e9f4dc950e37c4a0964247cc70",
+    "drafts/task4_v172_country_figure.tex": "128111720d02bd48c4b5b4226977126a49c74e2df882031f76cab2122bf16c19",
+    "drafts/task4_v193_conclusion.tex": "d7a85547af003c4352386c880e04e8839890ee27ff42589b9c3295a4672507c6",
+    "drafts/task4_v193_news.tex": "ca9d076aade3237e79d44e12c36554ff0ba74852e29efe9e4820ce50854fa0ed",
+    "drafts/task4_v193_references.tex": "74faef702ff4260547ec6a9cbe6207e1de450616634bafa1753198c4b043205a",
+    "drafts/task4_v193_ai.tex": "2ac6a5626db1bdc22dfbafde1fa73c26423dc9ed013036d6cbab98b34aa8320b",
+    "drafts/task4_v196_paper.tex": "e84bb1688a5b7e70cc88c55cf861cf97f5f046c4e24432c01cfa5363fe8062bd",
+    "drafts/task4_v196_references.tex": "4f50622dd378fc046241c1292a5f6711e85ea900978d2c35f6e71dfb361a12c6",
+    "drafts/build_task4_v196.py": "de42f14717566961677c332a9d5e77bfcddd2be0370fea2a0f64644f5424ddfc",
+    "drafts/build_task4_v193_assets.py": "bf411e6bb140db39e3284bc8a9ce0beb691fc820e2afa5d58131ecf72e96ac1b"
+  },
+  "base_PDF": "drafts/task4_v196_paper.pdf",
+  "base_PDF_sha256": "f06f24e58ff39fe22e0a94620e614bc7b51deb2338e70eb53e081ab124aed526",
+  "immutable_snapshot": "design/task4_user_v197_snapshot.json",
+  "immutable_snapshot_sha256": "7e1e302f9c66a70c069a0414dee022eaf79a77658707473de9e478739303c8b0",
+  "scientific_audit_required_before_activation": true,
+  "numeric_updates": {
+    "unique_supplemented_city_indicator_keys": 25,
+    "newly_filled_cells": 0,
+    "refined_existing_partial_cells": 1,
+    "point_partial_unknown": [
+      112,
+      37,
+      11
+    ],
+    "Zurich_pool_count_before_after": [
+      7,
+      12
+    ],
+    "pool_utility_lower_before_after": [
+      0.6135318839372971,
+      0.7312903923677659
+    ],
+    "fixed_width_before_after": [
+      16.039070074421616,
+      16.01221199746499
+    ],
+    "equal_width_before_after": [
+      18.81881344951466,
+      18.76442966782986
+    ],
+    "cumulative_fixed_width_reduction_percent": 14.877437953395988,
+    "mean_rank_certified_unresolved_unique": [
+      [
+        4260,
+        180,
+        22
+      ],
+      [
+        4265,
+        175,
+        24
+      ]
+    ],
+    "baseline_kappa100_cities": [
+      "Zurich",
+      "Oslo",
+      "Singapore"
+    ],
+    "baseline_kappa100_recommendation_frequency_before_after": [
+      [
+        0.4333,
+        0.2792,
+        0.2823
+      ],
+      [
+        0.5115,
+        0.2325,
+        0.2511
+      ]
+    ],
+    "baseline_kappa100_mean_rank_before_after": [
+      [
+        2.262,
+        2.1092,
+        2.6104
+      ],
+      [
+        2.0269,
+        2.1779,
+        2.6744
+      ]
+    ],
+    "single_Zurich_mean_boundary_minutes": [
+      46.58895160226913,
+      54.053129484602266
+    ],
+    "joint_mean_radii_before_after": [
+      [
+        0.07147330499127809,
+        0.5142356915020831
+      ],
+      [
+        0.130110523850907,
+        0.6344548233461832
+      ]
+    ],
+    "education_priority_city": "Oslo",
+    "education_tau": 0.7166666666666667,
+    "interval_midpoint_tau": [
+      0.6,
+      0.65
+    ],
+    "TOPSIS_VIKOR_tau": [
+      0.48333333333333334,
+      0.65
+    ],
+    "all_primary_decision_and_midpoint_ranks_unchanged": true,
+    "possible_necessary": [
+      16,
+      0
+    ],
+    "primary_MC_settings": 48,
+    "precision_mean_family_settings": [
+      2064,
+      37
+    ],
+    "precision_scope": "Preference/futureexports;newprimary48settingsnotinthiscertificate",
+    "baseline_kappa100_Oslo_Zurich_pair": {
+      "family": "preferences",
+      "setting": "{\"concentration\": \"100\", \"profile\": \"baseline\"}",
+      "city_a": "Oslo",
+      "city_b": "Zurich",
+      "sample_mean_a": 2.1779,
+      "sample_mean_b": 2.0269,
+      "gap_a_minus_b": 0.1510000000000002,
+      "gap_lower": -0.5627630041772913,
+      "gap_upper": 0.8647630041772918,
+      "classification": "unresolved"
+    }
+  },
+  "required_prose_actions": [
+    "CurrentV196entryreusesV193body/assets;copythelatestbody,notoldV182text. PreserveSeptemberdatecorrectioninV196references.",
+    "Replacepoolsubsetseven\u2192twelveanddescribeoriginal7plusfivepublicschoolvenues;K\u00fcgelilooadultonlyexcluded;partialwomen/girlssessionsandholiday/non-schooldayclosuresretained.",
+    "25isuniquesupplementedcity/indicatorkeys;doNOTcallthis26supplementsornewlyfilledcell.",
+    "Rebuildnewmatrixandscoreplots/tablesfromV197although112/37/11andallrankpositionsstayunchanged. Allnewfiguretext>=9ptatinsertionsize.",
+    "Updateallnumericmacrosfromactualresultsincludingfuturethresholds,shocks,sourcewithdrawals,homicidethresholds,witnessmarginsandmeanrankcertificates;doNOTinheritoldMCphrasing.",
+    "CRITICAL: literalcorelines339\u2013340andMonteCarloInterpretationmacrocurrentlyclaimOslobettermean;newempiricalmeanZurich2.0269<Oslo2.1779,whilefinite-drawpairboundstillmustbecheckedbeforeanyexpected-orderclaim.",
+    "PreferenceEvidenceChangecurrentlydescribespriorstationdirectorytransition;newpoolrefinementdoesnotchangeeducationtau. Presentcurrentcontrolledcomparisonwithoutimplyingnewelicitation.",
+    "vintageparagraphsinherit16.04,46.59,7.14733%,51.42357%;recomputeallwithdrawnmeansandcriticalradiiandupdateonlyownedtext.",
+    "Preservestrictbelow/at-tie/above-existscounterexamplequantifiers;jointmeanradiusisneithermeasurementprobabilitynorforecast.",
+    "AIdisclosurewindowandcountsremainfrozen/incomplete;onlyversionlabelsifnecessary.",
+    "Main/ref/class/teamprose/defaultMainunchanged;newreviewmustfit25main-referencepagesplus2provisionalAI,refsretainkeys."
+  ],
+  "review_requirements": [
+    "Independentdirect/rootbuildsandcurrentread-onlysharedmaincheck",
+    "Currentreview/deliverymirrorsmustbindnewPDFandanchors;preserve13pendinggates",
+    "Onlyafterfullscience+paperconsistencyactivatecurrentregistriesandpushbothnormally"
+  ],
+  "rollback": "revised_bounds(include_zurich_pool=False)exactlyrestoresV192. All159othercells/alluppersunchanged.",
+  "research_verification_sha256": "50aa95f379f19e017a0fae3ae2f74129bd453d88eed7b70feb1c0768cb0994f5",
+  "scientific_audit_status": "pass"
+}
