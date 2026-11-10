@@ -1,0 +1,39 @@
+{
+  "status": "pass bounded new staffing source and current binding check",
+  "source_audit": "results/current_new_staff_sources/verification.json",
+  "source_audit_sha256": "7aa5924ad6e8fdb21c6113875bfc511105a0ec3f67728c700b948822992a7979",
+  "registered_integrity": "results/current_new_staff_sources/research_integrity.json",
+  "registered_integrity_sha256": "29d619b79eb2f207275c3fefe797f789fcd6b6f0f046275ac9228d6a87df89b8",
+  "current_reports_checked": 20,
+  "live_bound_files": 283,
+  "new_source_HTTP200": 2,
+  "new_source_HTTP403": 3,
+  "teacher_fulltime_positions_approx": 134,
+  "teacher_people": 185,
+  "teacher_fulltime_mode_people": 42,
+  "teacher_hard_lower_bound_constructed": false,
+  "city_ratio_constructed": false,
+  "private_primary_reports_allowed": true,
+  "contact_hours_conversion_required": false,
+  "derived_scopes_reproduced_bytewise": true,
+  "peer_review": {
+    "requested_model": "gpt-6.1-terra; serving build not independently verified",
+    "scope": "primary source and interpretation review",
+    "resolution": "Pupil count is numerator in pupil/teacher ratio; field renamed matched_pupil_count_obtained. Approximation and historical scope preserved; no forced private-provider/contact-hour exclusion."
+  },
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "server_compile_verified": false,
+  "source_sha256": {
+    "results/current_new_staff_sources/verification.json": "7aa5924ad6e8fdb21c6113875bfc511105a0ec3f67728c700b948822992a7979",
+    "results/current_new_staff_sources/research_integrity.json": "29d619b79eb2f207275c3fefe797f789fcd6b6f0f046275ac9228d6a87df89b8",
+    "results/current_new_staff_sources/README.md": "4df42364c3a879852b07468224c5710eecb35dc25c46d567dc9a9092ab558192",
+    "data/current_zurich_kv_staff/scope.json": "8ac04eb1153af7b5c427a0beb2a62e6496de840abf7627a677471c3b3680a134",
+    "data/current_helsinki_teacher_metadata/scope.json": "b3df01705e10a0fcb463521ce6f8dd36ce08377cd02dec389bcab0ef0ed04682",
+    "design/task4_current_research_integrity.json": "c0602a652adb2d4429cbb9d2fe75b9ee82ec4e7f3e0b8890e977ec32f4cdedf5",
+    "design/task4_user_current_acquisition.json": "dbe55f1a31745250a2d53d373750947675d2a0aae333a490fc419fd18ec93ebb",
+    "design/task4_current_source_routes.csv": "f6569e76829b961029738259d3273fa649daa26f70d177f6cf4dbc6383c770e2"
+  }
+}

@@ -1,6 +1,6 @@
 # Current registered-research integrity and paper reproduction
 
-The current reproducer now verifies the research additions alongside the V203 model and sole current manuscript. It checks268live hash-bound files,19current audit reports and one explicitly pinned historical source version. The full27-page rebuild matches the canonical paper's text and72dpi grayscale render on every page, with native page layout and headers/footers checked. Neither research inputs nor either checkout changed during validation.
+The recorded full-workflow run below verifies the research additions alongside the V203 model and sole current manuscript. It checks268live hash-bound files,19current audit reports and one explicitly pinned historical source version. The full27-page rebuild matches the canonical paper's text and72dpi grayscale render on every page, with native page layout and headers/footers checked. Neither research inputs nor either checkout changed during validation.
 
 | Verification | Result |
 | --- | --- |
@@ -11,6 +11,8 @@ The current reproducer now verifies the research additions alongside the V203 mo
 | Historical source |Route CSV at commit4baa23ec09bb15bc3eae5ef17f952ec17f6d9921verified separately from its current counterpart|
 | Current scientific check |160utility cells/32city-weight scalar cases plus inherited controls|
 | Local manuscript rebuild |27pages, all text and rendered pages equal; original canonical PDF unchanged|
+
+The newer staffing-source registration is checked in `../current_new_staff_sources/research_integrity.json` (20reports); the figures above describe this earlier full-paper run, not fixed required file counts.
 
 ## Check and reproduce
 

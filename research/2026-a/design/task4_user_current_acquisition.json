@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 34,
+    "routes": 36,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -572,5 +572,29 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Named identity bridge and source-ledger detail refresh; original values and previous definition scenarios preserved."
+  },
+  "Zurich_KV_and_Helsinki_teacher_metadata_followup": {
+    "data": [
+      "data/current_zurich_kv_staff",
+      "data/current_helsinki_teacher_metadata"
+    ],
+    "verification": "results/current_new_staff_sources/verification.json",
+    "verification_sha256": "7aa5924ad6e8fdb21c6113875bfc511105a0ec3f67728c700b948822992a7979",
+    "approximate_teacher_fulltime_positions": 134,
+    "teacher_people": 185,
+    "fulltime_mode_people": 42,
+    "report_year": 2024,
+    "employer": "Wirtschaftsschule KV Zürich",
+    "PDF_physical_page": 10,
+    "printed_page": 18,
+    "new_HTTP200_bodies": 2,
+    "new_HTTP403_bodies": 3,
+    "teacher_lower_bound_constructed": false,
+    "current_Helsinki_FTE_found": false,
+    "Helsinki2019_scope_reused_not_new": true,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Approximate occupied teacher-position source, not exact FTE or city bound; current site pages403; no headcount conversion. Private primary school report allowed. Helsinki blocked metadata not evidence."
   }
 }
