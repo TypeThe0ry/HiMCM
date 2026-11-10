@@ -1,0 +1,7 @@
+# Zurich city mobility report: daily time is not school-trip duration
+
+**Primary admission: 0.** The official city-hosted *Städtevergleich Mobilität 2021* provides comparable city mobility summaries, but the reviewed time measure is domestic daily travel across purposes. It is not a distribution of individual school-trip durations and does not identify the retained Zurich 39.9-minute commute proxy.
+
+Printed page15, Figure18 reports Zurich daily travel times of101,95 and84minutes for2010,2015 and2021, including waiting and transfers within Switzerland. Figure17 reports2.69 trips per resident per day for2021. These are separate daily mobility summaries; none is substituted for the primary travel input. Page41 describes the microcensus as sampling residents aged6 and above. Page5 explains that2021 mobility remained affected by the pandemic. The publication date is October2023, separate from observation year2021.
+
+`city_report.pdf` preserves the downloaded original; `retrieval.json` records its URL, HTTP status, UTC retrieval time, headers, bytes and SHA-256. `report.txt` is the derived `pdftotext -layout` transcription. Page15 was rendered and visually inspected to verify the chart labels and units. `scope.json` records the reviewed observations and the non-admission decision. This bounded assessment does not claim that a more detailed school-trip dataset is unavailable elsewhere.

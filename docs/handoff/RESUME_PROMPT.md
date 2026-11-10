@@ -103,3 +103,7 @@ V183采集优先级已重基：results/task4_v183_priority含13全缺失+35部�
 V185新增CSO2011Dublin居民工作分箱独立配置：N215384、未知16281，效用[.3004782081,.5743128308]不嵌套原界，不取交不替换。只变Zurich均值保持其余输入，原权重阈值46.5889516023分钟，等权所有非负均值无切换。独立128评分／640界／202探针通过，科学V181/稿V184保持，0主准入。下一轮优先精炼此阈值入自有5.5节，不把不同人群配置称精度改善。Swiss34.2205为2023政治市镇，CI1.9495单位PT且级别/换算未核，禁套旧分钟规则；Madrid504/DNS失败跳过。详[V185](V185_RESEARCH_UPDATE.md)。
 
 当前第16页辅助图比较Oslo与Zurich：保留居民网格中，到20个通用Learning POI的模型平均步行时间不超过30分钟的份额为99.18%／99.97%。Oslo保留人口686862不替代主表727797；输入年份与完整市域覆盖未确认。Oslo三次NASA响应透明，采用几何背景；Zurich保留真实有云影像。主V203得分与16可能／0必要冠军不变。Zurich教育页面的两份官方图表包装可读取，链接的Observable模块均403，新增准入为0；失败路线跳过。
+
+## Current travel-source follow-up
+
+`data/current_oslo_school_rvu2024` now preserves a real2024 regional school-trip duration chart: six displayed shares2/12/33/22/28/3%,n610,Figure28 printedp51. Scope is20municipalities and residents13+, not Oslo municipality or upper-secondary students; rounded chart shares do not supply exact counts or bin means. `data/current_zurich_mobility2021` preserves a city report whose84minutes is daily all-purpose travel in2021, not one-way school duration. Both are non-admissions. Source assessment and548core+49supplemental protected hashes passed in `results/current_travel_source_review/verification.json`. Do not repeat these routes as if unresolved sources; seek a published municipal/stage-specific breakdown with matched weighting and definitions. Paper, all seven Overleaf dependencies and primaryV203 stay unchanged.
