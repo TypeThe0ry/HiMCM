@@ -20,6 +20,9 @@ Singapore已有26处条件场馆保持；本轮只将Oslo交通供应下界由89
 
 开始写作或制图前，阅读[AGENTS.md](AGENTS.md)、[GUIDELINES.md](GUIDELINES.md)并使用规定的反防御性写作技能。保留用户原值、权重、区间和队友内容。真实卫星及定量3D图已接入第16页，见[当前地图及验收](docs/handoff/CURRENT_SPATIAL_UPDATE.md)；V202数据采集价值已重基，持续目标见[长期计划](docs/handoff/LONGTERM_GOAL.md)。
 
-[当前采集表](research/2026-a/design/task4_user_current_acquisition.json)的数值优先级仍计算于V202，需要以V203重基后用于下一轮，不能沿用旧Zurich优先排序。本轮626子集、原始身份／服务查询与独审见[来源记录](research/2026-a/data/current_oslo_bus_subset/observations.json)及[完整研究审查](research/2026-a/results/task4_v203_transition/verification.json)。
+[当前采集表](research/2026-a/design/task4_user_current_acquisition.json)已按V203重基并独审：固定Zurich师资／旅时完整精确识别保证各1.280259分，等权分别2.793694／2.735096；Oslo旅时最有利完整识别可排除4／3可能冠军。这些是条件信息极限，不是已实现的收益或部分补数保证。
 
-偏好两方案均选Oslo；固定未来三情景也均选Oslo，等权依次为Oslo、Zurich、Oslo。这些是分析者偏好与假想变化，不是调查结果或预测。主基准仍16可能／0必要冠军，VIKOR与中点评分的差异保持公开。当前单稿27页（25+2）、61引用，在线编译未核。下一步按V203重基采集价值，不重复本轮公交子集提取及未能匹配的历史来源。
+偏好两方案均选Oslo；固定未来三情景也均选Oslo，等权依次为Oslo、Zurich、Oslo。这些是分析者偏好与假想变化，不是调查结果或预测。主基准仍16可能／0必要冠军，VIKOR与中点评分的差异保持公开。当前单稿27页（25+2）、61引用，在线编译未核。下一步依V203新表选择尚未失败的匹配来源，不重复已核查路线。
+
+
+[Oslo通勤来源与单项撤回](research/2026-a/results/current_oslo_commute_scope/summary.json)：Eurostat31.0／2009是同值同年线索，当前标签greater city，未证明原CSV来源或当年边界；TØI26分钟不替换。只撤回Oslo通勤信息时，两套权重均选Zurich，16可能／0必要。此结论已写入单一当前稿；主V203和原始值保持，本轮0新增准入。

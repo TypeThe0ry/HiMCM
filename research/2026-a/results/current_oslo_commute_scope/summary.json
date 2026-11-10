@@ -1,0 +1,89 @@
+{
+  "status": "controlled_source_scope_check_primary_unchanged",
+  "primary_model": "V203",
+  "original_mean": 31,
+  "original_mean_year": 2009,
+  "original_mean_flag": "STALE",
+  "original_CSV_sha256": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+  "source_lineage": "Eurostatvalue/yearmatch is a source lead, not proof of original CSV lineage or historical boundary. Independent TOI2009mean26 is not substituted.",
+  "comparisons": [
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "fixed",
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_width": 15.82232695332216
+    },
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "equal",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_width": 18.39181162388826
+    },
+    {
+      "scenario": "withdraw_Oslo_commute_proxy",
+      "weight_reference": "fixed",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_width": 16.072916621306206
+    },
+    {
+      "scenario": "withdraw_Oslo_commute_proxy",
+      "weight_reference": "equal",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_score_width": 18.62592226014618
+    }
+  ],
+  "changed_lower_cells": 1,
+  "all_other_bounds_preserved": true,
+  "primary_admissions": 0,
+  "actual_active_width_reduction": 0,
+  "MC_replayed": false,
+  "source_sha256": {
+    "scripts/task4_current_oslo_commute_scope.py": "36e3b6f0229257f5fa112c72218eaf7f14c314e35ab2b8adb6f5a52002b1909e",
+    "design/task4_user_v203_snapshot.json": "c0d70e2288c2230bb8fbaf3aa4b54e4be3f43e47bdddea16ccf8497cc362105e",
+    "data/current_oslo_travel2009/toi_2009_key_report.pdf.metadata.json": "a742cc15d04b142e1defa8e94d5e2adfd656b221d0a1f54d9ed960f26fa57910",
+    "data/current_oslo_travel2009/capture.py": "7c1a4846566499e6fe5faa1b497d8520f4a2b768288504e7e1299bc9216a5892",
+    "data/current_oslo_travel2009/eurostat_metadata.json": "5fdf9aa8d338133fc321744054433a16103d9b2a612e2af19e0ee97e3582d4f6",
+    "data/current_oslo_travel2009/README.md": "3d6e46d6ce71ae9b30d12d1df6411f93ac3e15fc9c96c14afed55ddd0d62d644",
+    "data/current_oslo_travel2009/toi_2009_commute_factsheet.pdf": "9967b635cc4b58acb1c1108b933930f76e7c7603b8d7e54283c86156fbd310a6",
+    "data/current_oslo_travel2009/eurostat_NO001C_2009.json": "877d229db8492dca33b8a58c5304cc4667a85066ff0bae457a1af47e4ecf732f",
+    "data/current_oslo_travel2009/toi_2009_key_report.pdf": "e6b2dbd98d5bb3c70e3043f6ae785288db3246065786df27cd6cdff12fbdb960",
+    "data/current_oslo_travel2009/report.txt": "d91e6f6de6de33e896c0d4d9b6186830f1f0596e445ed0cace0bac896cecf72f",
+    "data/current_oslo_travel2009/toi_2009_commute_factsheet.pdf.metadata.json": "c5ee7f7bef710f376685004f1547c02bd26d39c2172108fd43835dd904b9b4d9",
+    "data/current_zurich_fte_bound/staff.html": "da2c691b78c05834913f5573110802144581888f40719f32604f208ad994a28b",
+    "data/current_zurich_fte_bound/README.md": "b30335404c4926fbca0ebcf7637c167667241e4279c2f5992f0905647da8ddd5",
+    "data/current_zurich_fte_bound/pocket.html": "0b09ac5c1988084d4d4426167469d40cf52628466fed13bcedb509ff83921106",
+    "data/current_zurich_fte_bound/survey.html": "af997ab037715a89362e7b411d88a537ff0fd7125deed53443b7fe36d349e1f5",
+    "data/current_zurich_fte_bound/pupils.html": "80b00e5295375992f5dfcdf3e8e39c06d20c1b371a42ccded2619a06ff4cd593",
+    "data/current_zurich_fte_bound/provenance.json": "3fbd1651beb01d0531e2076c3a90d798ebff87c363bb320541a4a03c71334416"
+  },
+  "protected_at_run": {
+    "/data/projects/HiMCM/research/2026-a/design/task4_user_current_model.json": "1583851c5570fcf6694b1820eeccc1337821a9eac2dcd9b13ff90931ed553412",
+    "/data/projects/HiMCM/research/2026-a/design/task4_user_current_extensions.json": "93846335ccb796f0410813a6a3f3406db432fa1551d65658d7ca7bcd7a4a3c02",
+    "/data/projects/HiMCM/research/2026-a/design/task4_user_current_review.json": "f9c7280106ba54d3bf69de7833589e2ebdd8adb50a1a5ec87dd95f01aff365c6",
+    "/data/projects/HiMCM/research/2026-a/design/task4_user_current_delivery.json": "b9b09f74e290aa5302cb4e11d7ca64c8074c7a5324131e61237f2fe8bd002bef",
+    "/data/projects/HiMCM-Overleaf/main.tex": "c6e8bab4cf48939c9a52f9a3c63e3c46d79561248eec2af143e10b39705e3454",
+    "/data/projects/HiMCM-Overleaf/mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
+    "/data/projects/HiMCM-Overleaf/ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
+    "/data/projects/HiMCM-Overleaf/figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
+    "/data/projects/HiMCM-Overleaf/figures/identification_matrix.pdf": "dfee08dabba094a88a427e4172ee4dbebed93684e9120ab312900df8aa5c56e4",
+    "/data/projects/HiMCM-Overleaf/figures/score_intervals.pdf": "f16bdb7d67121bc041df888593e785173bc784b4ee2f84c9d98f76d93d84240d",
+    "/data/projects/HiMCM-Overleaf/figures/walktime_context.pdf": "6f4ff894842277139db41d2a318b5da6358e02a74525d0d588a3c384a11e99db"
+  },
+  "scope": "Deterministic withdrawal of only Oslo travel information; not a correction, new observation, duration distribution, calibrated error or forecast."
+}

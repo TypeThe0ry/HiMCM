@@ -30,5 +30,12 @@
   "supersedes": "V202 science and preceding current manuscript",
   "historical_cases": "Six V137 historical country/age/fairness CSV files byte-identical; no synthetic same-country pair in the primary16; no age survey or observed future trend",
   "paper_verification": "results/current_paper_review/current_verification.json",
-  "shared_main_entry": "../HiMCM-Overleaf/main.tex"
+  "shared_main_entry": "../HiMCM-Overleaf/main.tex",
+  "source_scope_addendum": {
+    "script": "scripts/task4_current_oslo_commute_scope.py",
+    "results": "results/current_oslo_commute_scope",
+    "verification": "results/current_oslo_commute_scope/verification.json",
+    "changes_primary_bounds": false,
+    "MC_replayed": false
+  }
 }

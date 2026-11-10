@@ -1,4 +1,4 @@
-"""Independent scalar audit of V202 conditional acquisition limits."""
+"""Independent scalar audit of V203 conditional acquisition limits."""
 import hashlib
 import json
 import math
@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from scipy.optimize import brentq
-from task4_user_v202_revision import revised_bounds
+from task4_user_v203_revision import revised_bounds
 from task4_v5_model import ROOT, NAMES
 
 OUT=ROOT/'results/current_priority'
@@ -34,8 +34,8 @@ def main():
     summary=json.loads((OUT/'summary.json').read_text())
     hashes=summary['source_sha256']
     for p,h in hashes.items(): assert sha(ROOT/p)==h,p
-    snapshot=json.loads((ROOT/'design/task4_user_v202_snapshot.json').read_text())['source_sha256']
-    assert len(snapshot)==476
+    snapshot=json.loads((ROOT/'design/task4_user_v203_snapshot.json').read_text())['source_sha256']
+    assert len(snapshot)==548
     for p,h in snapshot.items(): assert hashes[p]==h and sha(ROOT/p)==h,p
     source=ROOT/'data/task4_v117_team_intake/city_indicators.csv'
     assert sha(source)=='430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c'
@@ -69,7 +69,7 @@ def main():
         l,u=scalar_scores(lo,w),scalar_scores(hi,w);d=decision(l,u);bases[ref]=(l,u,d)
         record=next(r for r in summary['baseline'] if r['weight_reference']==ref)
         close(record['minimax_regret'],d[1]);close(record['mean_score_interval_width'],(u-l).mean())
-        assert record['conservative_recommendation']==';'.join(cities[k] for k in d[3])=='Zurich'
+        assert record['conservative_recommendation']==';'.join(cities[k] for k in d[3])==('Oslo' if ref=='fixed' else 'Zurich')
         assert record['possible_champions']==int(d[2].sum())==16
     for row in priority.itertuples():
         ref,city,ind=row.weight_reference,row.city,row.indicator;i=cities.index(city);j=NAMES.index(ind)
@@ -105,33 +105,33 @@ def main():
             np.testing.assert_array_equal(u,bases[ref][1])
             assert item.possible_count==int(d[2].sum())
             assert item.conservative_recommendation==';'.join(cities[k] for k in d[3])
-    old=pd.read_csv(OUT/'previous_V200.csv',float_precision='round_trip')
-    paired=priority.merge(old,on=key,suffixes=('_current','_V200'),validate='one_to_one')
+    old=pd.read_csv(OUT/'previous_V202.csv',float_precision='round_trip')
+    paired=priority.merge(old,on=key,suffixes=('_current','_V202'),validate='one_to_one')
     assert len(paired)==96
     for name in ['guaranteed_exact_resolution_regret_reduction','best_possible_exact_resolution_regret_reduction','optimistic_champion_exclusions']:
-        paired[name+'_change']=paired[name+'_current']-paired[name+'_V200']
+        paired[name+'_change']=paired[name+'_current']-paired[name+'_V202']
     pd.testing.assert_frame_equal(paired,tables['previous_comparison'],check_exact=False,atol=2e-12,rtol=0)
     assert set(map(tuple, priority[key].to_numpy())) == set(map(tuple, old[key].to_numpy()))
-    changed = paired[paired.current_lower_current != paired.current_lower_V200]
+    changed = paired[paired.current_lower_current != paired.current_lower_V202]
     assert len(changed) == 2 and set(changed.weight_reference) == set(references)
-    assert set(changed[['city', 'indicator']].itertuples(index=False, name=None)) == {('Singapore', 'public_pool_density')}
-    from task4_user_v200_revision import revised_bounds as old_bounds
+    assert set(changed[['city', 'indicator']].itertuples(index=False, name=None)) == {('Oslo', 'public_transport_density')}
+    from task4_user_v202_revision import revised_bounds as old_bounds
     _, old_lo, old_hi = old_bounds()
     delta = np.argwhere(lo != old_lo)
     assert len(delta) == 1
     ii, jj = delta[0]
-    assert (cities[ii], NAMES[jj]) == ('Singapore', 'public_pool_density')
-    close(changed.current_lower_V200, [old_lo[ii,jj]]*2)
+    assert (cities[ii], NAMES[jj]) == ('Oslo', 'public_transport_density')
+    close(changed.current_lower_V202, [old_lo[ii,jj]]*2)
     close(changed.current_lower_current, [lo[ii,jj]]*2)
     np.testing.assert_array_equal(hi, old_hi)
-    assert (paired.current_upper_current == paired.current_upper_V200).all()
-    assert (paired.current_information_current == paired.current_information_V200).all()
+    assert (paired.current_upper_current == paired.current_upper_V202).all()
+    assert (paired.current_information_current == paired.current_information_V202).all()
     nav = [f'design/task4_user_current_{n}.json' for n in ['model','extensions','review','delivery']]
     assert all(p in hashes and sha(ROOT/p) == hashes[p] for p in nav)
     _,a,b=revised_bounds();np.testing.assert_array_equal(original,np.stack([a,b]))
     for p,h in hashes.items():assert sha(ROOT/p)==h,p
     assert all(sha(Path(p)) == h for p,h in paper_hashes.items())
-    report=dict(paper_file_sha256=paper_hashes,status='pass',science='V202 bindings unchanged',paper='not modified',exact_information_envelopes=96,endpoint_cases=192,lower_only_cases=480,dense_interior_probes=interior,independent_scalar_evaluations=count,weights_once_in_squared_norm=True,self_excluded_regret_and_champion_checks=True,unchanged_160_bounds=True,immutable_snapshot_bindings=476,original_CSV_sha256=sha(source),current_four_navigation_hashes_unchanged=True,comparison_rows=96,changed_bounds_rows=2,changed_information_rows=0,primary_admissions=0,actual_score_width_reduction=0,source_sha256={str(p.relative_to(ROOT)):sha(p) for p in [Path(__file__),OUT/'summary.json',*[OUT/(n+'.csv') for n in tables]]})
+    report=dict(paper_file_sha256=paper_hashes,status='pass',science='V203 bindings unchanged',paper='not modified',exact_information_envelopes=96,endpoint_cases=192,lower_only_cases=480,dense_interior_probes=interior,independent_scalar_evaluations=count,weights_once_in_squared_norm=True,self_excluded_regret_and_champion_checks=True,unchanged_160_bounds=True,immutable_snapshot_bindings=548,original_CSV_sha256=sha(source),current_four_navigation_hashes_unchanged=True,comparison_rows=96,changed_bounds_rows=2,changed_information_rows=0,primary_admissions=0,actual_score_width_reduction=0,source_sha256={str(p.relative_to(ROOT)):sha(p) for p in [Path(__file__),OUT/'summary.json',*[OUT/(n+'.csv') for n in tables]]})
     (OUT/'verification.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))
 if __name__=='__main__':main()

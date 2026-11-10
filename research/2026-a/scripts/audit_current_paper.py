@@ -5,7 +5,7 @@ import numpy as np,pandas as pd
 from task4_user_v203_revision import revised_bounds
 from task4_v5_model import NAMES,weights
 from audit_task4_v193 import values,norm
-R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-v203-build'); O=R/'results/current_paper_review'
+R=Path(__file__).resolve().parents[1]; H=R.parents[1]; P=R.parents[2]/'HiMCM-Overleaf'; A=R/'results/current_paper_assets'; B=Path('/data/scratch/himcm-current-oslo-scope-build'); O=R/'results/current_paper_review'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def read(p):return json.loads(p.read_text())
 def frame(p):return pd.read_csv(p,float_precision='round_trip')
@@ -101,7 +101,7 @@ def main():
  assert 'equal weights select oslo, zurich and oslo' in summary
  assert 'oslo is the cautious recommendation under baseline and education-priority weights' in news
  assert 'zurich is selected when all ten measures receive equal weight' in news
- assert 'baseline weights also select oslo in all three scenarios' in news
+ assert 'baseline weights select oslo in all three scenarios' in news
  assert 'zurich under living pressure' in news
  for phrase in ['626 on-street bus stop groups','replaces the earlier subset of 89 metro stations', 'rather than being added to it','supplied 2025 population', 'restoring the earlier subset selects zurich under both baseline and equal weights', 'largest possible shortfall', 'smallest such shortfall', 'not forecasts']:
   assert phrase in news,phrase
@@ -129,6 +129,31 @@ def main():
  for ref in ['fixed','equal']:
   row=next(x for x in scenarios if x['scenario']=='withdraw_Oslo_bus_refinement' and x['weight_reference']==ref)
   assert row['minimax_choices']==['Zurich']
+ scope=read(R/'results/current_oslo_commute_scope/verification.json')
+ assert scope['status'].startswith('PASS') and scope['science_bindings_unchanged']==548 and scope['independent_scalar_city_weight_cases']==64
+ for source in scope['raw_responses']:assert sha(R/source['file'])==source['sha256'] and source['recorded_http_status']==200
+ for source,digest in scope['source_sha256'].items():assert sha(R/source)==digest,source
+ record=read(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json');indicator=record['dimension']['indic_ur']['category']['index']['TT1019V']
+ assert record['value'][str(indicator)]==31 and record['dimension']['cities']['category']['label']['NO001C']=='Oslo (greater city)' and 'status' not in record
+ sb=frame(R/'results/current_oslo_commute_scope/bounds.csv');sr=frame(R/'results/current_oslo_commute_scope/ranks.csv')
+ for scenario in ['retained_V203','withdraw_Oslo_commute_proxy']:
+  bl=sb[sb.scenario.eq(scenario)].set_index(['city','indicator']).loc[pd.MultiIndex.from_product([cities,NAMES])]
+  ll=bl.lower.to_numpy().reshape(16,10);hh=bl.upper.to_numpy().reshape(16,10);wanted=l.copy()
+  if scenario=='withdraw_Oslo_commute_proxy':wanted[cities.index('Oslo'),NAMES.index('travel')]=0
+  np.testing.assert_array_equal(ll,wanted);np.testing.assert_array_equal(hh,h)
+  for ref,w in [('fixed',weights(.1)),('equal',np.full(10,.1))]:
+   aa,bb,rr=values(ll,hh,w);v=sr[sr.scenario.eq(scenario)&sr.weight_reference.eq(ref)].set_index('city').loc[cities]
+   for col,arr in [('score_lower',aa),('score_upper',bb),('max_regret',rr)]:np.testing.assert_allclose(v[col],arr,atol=1e-11,rtol=0)
+   expected=['Zurich'] if scenario=='withdraw_Oslo_commute_proxy' or ref=='equal' else ['Oslo']
+   assert v.index[v.decision_rank.eq(1)].tolist()==expected and v.possible_champion.sum()==16 and v.necessary_champion.sum()==0
+   row=next(x for x in scope['comparisons'] if x['scenario']==scenario and x['weight_reference']==ref)
+   assert row['recommendation']==expected and row['possible_champions']==16 and row['necessary_champions']==0
+ assert '31' in full and '2009' in full and 'greater city' in full
+ assert 'commute proxy alone selects zurich under both' in summary
+ assert 'work-commute proxy selects zurich under both weight sets' in news
+ assert 'commute proxy alone selects zurich under both weights; all sixteen remain possible champions and none is necessary' in full
+ assert 'matches establish neither the team' in full and 'nor the historical boundary' in full
+ assert 'oslo' in summary and 'zurich' in summary and 'oslo' in news and 'zurich' in news
  refs=set(re.findall(r'\\bibcite\{([^}]+)\}',aux));assert refs==current
  cited={k.strip() for g in re.findall(r'\\cite\{([^}]+)\}',tex) for k in g.split(',')};assert cited<=refs,cited-refs
  nodes=ET.fromstring(subprocess.check_output(['pdftotext','-bbox',str(pdf),'-'])).findall('.//{*}page');assert len(nodes)==len(pages)
@@ -138,6 +163,6 @@ def main():
    top=[w for w in words if float(w.get('yMin'))<65];assert any(w.text=='Team' and 70<float(w.get('xMin'))<74 for w in top) and any(w.text=='Page' and float(w.get('xMin'))>450 for w in top) and any(w.text=='18213' for w in top);assert f'Page {i+1} of {len(pages)}' in norm(pages[i])
   else:assert '18213' in pages[0]
  assert not any(x in log for x in ['Overfull','undefined','LaTeX Warning'])
- result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
+ result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
  O.mkdir(exist_ok=True);(O/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

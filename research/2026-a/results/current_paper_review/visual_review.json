@@ -1,20 +1,17 @@
 {
   "status": "pass",
-  "pdf_sha256": "5fb49a9d7752305740ccb0bc187992cd09a6e082988673855809f9e2980bc501",
-  "render": "/data/scratch/himcm-current-v203-delivery-render",
+  "pdf_sha256": "ce4fb81c308bcb829a5a637462bfed3e585edcb00eec1f42559e44a15206096f",
+  "render": "/data/scratch/himcm-current-oslo-scope-render",
   "reviewed": [
-    "all27page contact overview before News-only expansion",
-    "full new matrix page9",
-    "full ranking table and score figure page11",
-    "full final418word News page19"
+    "all27page contact overview",
+    "full page13 source sensitivity",
+    "full page19 news"
   ],
-  "other26_pages_96dpi_identical_after_news_expansion": true,
-  "news_words": 418,
   "checks": [
-    "nativeLetter headers emptyfooters",
-    "readable uncroppedtwo numericalfigures",
-    "one-page nontechnicalnews includes model process and scope",
-    "resident satellite3Dpage16 retained"
+    "nativeheaders emptyfooters",
+    "newOslo-onlywithdrawal outcome readable",
+    "source qualifications retained",
+    "unchangedfourfigures"
   ],
-  "scope": "Local manual layout review and26page exact96dpi equality; online preview and team acceptance excluded"
+  "scope": "Local layout review; onlinepreview andteamacceptance unverified"
 }

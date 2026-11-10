@@ -12,7 +12,9 @@
 
 Overleaf只有main.tex、四图、原类／参考库和简短说明；GitHub paper/current/镜像七依赖＋PDF。27=25正文参考＋2AI、61引用，18213暂用；卫星3D图16、新闻19。旧985文件与队友原main已逐字节归档；原类／参考库／队友内容不改。线上编译、真实注册、全队AI及比赛提交未核，仍12实质待办。
 
-下一轮先把V202的48格优先级重基至V203，不重复626源提取／829聚类／四站服务查询／旧师资失败路线。数据失败就跳过，不发送外部联系请求。分别fetch、审diff、commit/push并核远端HEAD；Overleaf仍只覆盖同一main，不上传研究版本稿。
+48格96行采集表已按V203重基独审；固定ZurichPTR/旅时保证各1.280259，等权2.793694/2.735096，Oslo旅时最有利完整识别最多排除4/3城，非实际改善。下一轮按新表选匹配来源，不重复626源提取／829聚类／四站服务查询／旧师资失败路线。数据失败就跳过，不发送外部联系请求。分别fetch、审diff、commit/push并核远端HEAD；Overleaf仍只覆盖同一main，不上传研究版本稿。
+
+新增Oslo2009来源范围检验：Eurostat31.0/2009NO001C当前标签greater city，匹配非来源/历史边界证明；TØI26不替换。只撤回Oslo travel至[0,1]两权重均Zurich，16/0；主V203仍fixedOslo/equalZurich。摘要/数据/5.5/新闻已披露。新source-scope64case独审与7原件见results/current_oslo_commute_scope/；current_verification另绑定22文件，核心548冻结不改。Zurich新FTE页面无合法城市数值对，0准入。
 
 ## 冻结恢复档案（以下为历史，不作为当前入口）
 

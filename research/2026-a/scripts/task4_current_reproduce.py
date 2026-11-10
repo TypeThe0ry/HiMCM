@@ -135,6 +135,8 @@ def main():
   for n,h in base.tracked_hashes(paper).items():protected[str(paper/n)]=h
   proof_path=research/registry['research_verification'];delivery_path=research/delivery['research_verification']
   expected=read(proof_path);d=read(delivery_path)
+  for n,h in expected.get('additional_source_scope_sha256',{}).items():
+   require(sha(analysis/n)==h,'Additional source-scope file differs: '+n);protected[str(analysis/n)]=h
   require(expected['status']==d['status']=='pass' and expected['pdf_sha256']==d['pdf_sha256']==registry['pdf_sha256'],'Current paper/delivery checks not bound')
   expected=dict(expected,news_pages=d['news_pages'],compiled_references=d['compiled_references'])
   for n,h in expected['current_files_sha256'].items():
