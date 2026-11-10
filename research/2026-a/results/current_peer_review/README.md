@@ -1,0 +1,9 @@
+# Targeted scientific and source-claim review
+
+Two independent reviews examined the current formulas and their evidence scope. Neither demonstrated a new material mathematical or source-claim error in the inspected passages. One clarity issue was resolved: the conclusion now states that **14 fixed-weight decision ranks change against midpoint completion**, matching the comparison already defined in the methods and Summary.
+
+The paper audit independently recalculates the midpoint score ranks and interval-regret ranks for all 16 cities under both weight references; both comparisons change 14 ranks. The exact source guard allows this single owned conclusion clause and preserves every other byte relative to Overleaf commit `7eebfe1`. Only page 18 changes in both text and 96 dpi raster comparison; the other 26 pages, four figure files and AI appendix remain unchanged. The paper remains 27 pages, with 25 main/reference pages and two provisional AI pages.
+
+`review.json` records the reviewed baseline hashes, examined claims, one finding and its resolution. The mathematical review examined endpoint/regret formulas, future moment bounds, declared shock interpretation and Monte Carlo coverage for the specified export family. The source review examined commute proxies, teacher workload, resident-grid measures, historical country cases and recommendation wording. Neither review independently certified every raw input, replayed all simulations or solved every age/fairness optimization. No new observations, calibrated error rates or source corrections are asserted.
+
+This is a targeted AI-assisted review, not external acceptance or final team approval. Requested model labels are recorded without claiming an attested serving build. Registration, full-team AI documentation, original measurement provenance and online compilation remain governed by the current delivery checklist.

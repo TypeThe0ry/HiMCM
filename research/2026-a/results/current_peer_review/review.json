@@ -1,0 +1,64 @@
+{
+  "status": "reviewed_scoped",
+  "recorded_utc": "2026-11-10T10:21:25.720801+00:00",
+  "method": "Two independent AI-assisted targeted reviews plus parent comparator recalculation and rendered check",
+  "requested_model_label": "gpt-6.1-terra",
+  "serving_model_build_verified": false,
+  "reviewed_baseline_overleaf_commit": "7eebfe1537e031088e00a8767263328031a9cfe3",
+  "reviewed_baseline_source_sha256": "cb29987df03e0fbfea9d8a598cd61eb31f9db23e8066941958b9a7a852b84571",
+  "reviewed_baseline_pdf_sha256": "7c9d00a144c7d2ffec96149e9904e66aca301d85aa4a7be3ce99f0b9d55fd10a",
+  "math_review": {
+    "examined": [
+      "Fixed-ideal TOPSIS endpoint monotonicity, regret and possible champions",
+      "Future moment outer bounds and declared shock-law interpretation",
+      "Hoeffding coverage for2064exportedmeans/37settings",
+      "Logical historical Istanbul joint-gap construction"
+    ],
+    "result": "No demonstrated material mathematical error in examined claims",
+    "not_certified": [
+      "Original raw-data accuracy",
+      "Replay of all simulations",
+      "Numerical fairness/age optimizations and threshold roots"
+    ],
+    "coverage_family": "2,064 exported means in 37 settings, excluding the separate primary 108-setting Monte Carlo family"
+  },
+  "source_claim_review": {
+    "examined": [
+      "Work-commute means/geography and lineage qualification",
+      "Teaching FTE/precision conventions",
+      "Resident Learning POIs versus student/pool access",
+      "Historical country provider/period/headcount scope",
+      "Abstract, conclusion and news recommendation qualifiers"
+    ],
+    "result": "No newly substantiated material evidence-claim mismatch in examined passages",
+    "not_certified": [
+      "Every original source receipt",
+      "All 112 retained point measurements",
+      "Team or competition submission readiness"
+    ]
+  },
+  "finding": {
+    "severity": "clarity",
+    "location": "Owned conclusion, main.tex line747",
+    "before": "the interval revision changes 14 decision ranks",
+    "issue": "Comparator and weight reference are implicit in the conclusion",
+    "resolution": "State fixed-weight ranks against midpoint completion explicitly; no number changes"
+  },
+  "resolution_verification": {
+    "source_change": "Exact single-clause replacement relative to reviewed baseline; all other manuscript source unchanged",
+    "midpoint_comparison_rank_changes": {
+      "fixed": 14,
+      "equal": 14
+    },
+    "changed_text_and_raster_pages": [
+      18
+    ],
+    "unchanged_other_pages": 26,
+    "new_source_sha256": "7a1c37acdb54cc5fa051db22a613a8de575f83d8a2e0fe23bcd14a9b8101b9a0",
+    "new_pdf_sha256": "40aaf07fdec6a08f236e7bf8b4585da3002cd90fe8e0333137e6bad506d3e280",
+    "independent_paper_verification_sha256": "99d7340a471af8a35c5d6f696717d4a6f458bee5576e002387f9bf45abec85ae"
+  },
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "Targeted scientific and evidence-claim review. Absence of a found material error is not exhaustive external validation or proof of every measurement."
+}

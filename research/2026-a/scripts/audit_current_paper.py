@@ -32,10 +32,10 @@ def main():
  prior_refs=set(re.findall(r'\\bibitem\{([^}]+)\}',prior_tex)); assert len(prior_refs)==61 and prior_refs<=current
  assert re.search(r'tcn\s*=\s*18213',tex)
  ai='\\section*{Report on Use of AI Tools}'
- owned_baseline=subprocess.check_output(['git','-C',str(P),'show','b83aeab:main.tex'],text=True)
- start='\\subsection{Perturbing weights';end_marker='\\subsection{Within-city fairness and growth stages}'
- assert tex[:tex.index(start)]==owned_baseline[:owned_baseline.index(start)]
- assert tex[tex.index(end_marker):]==owned_baseline[owned_baseline.index(end_marker):]
+ owned_baseline=subprocess.check_output(['git','-C',str(P),'show','7eebfe1:main.tex'],text=True)
+ old_conclusion=r'\TotalWidthReduction\%; the interval revision changes 14 decision ranks.'
+ new_conclusion=r'\TotalWidthReduction\%; against midpoint completion, the interval revision changes 14 fixed-weight decision ranks.'
+ assert owned_baseline.count(old_conclusion)==1 and tex==owned_baseline.replace(old_conclusion,new_conclusion)
  point_proof=read(R/'results/current_point_error/verification.json');assert point_proof['status']=='pass' and point_proof['point_cells']==112 and point_proof['unchanged_interval_cells']==48
  point_paths=dict(point_proof['source_sha256'])
  for name,digest in point_paths.items():assert sha(R/name)==digest,name
@@ -88,12 +88,17 @@ def main():
  dynamic=['CurrentMeanWidth','TotalWidthReduction','LatestEvidenceChange','RevisionRankChanges','SummaryWeightMC','MethodComparison','FutureDeterministic','FutureThresholds','PreferenceResults','PreferenceEvidenceChange','EvidenceThresholdCheck','MonteCarloInterpretation','MCBaseMeans','MCSettings','MCPairComparisons','MCCertifiedPairs','MCUnresolvedPairs','MCUniqueMinSettings','MCFrequencyHalfWidthPP','MCRankHalfWidth']
  for key in dynamic:assert macros[key]==am[key],key
  f,l,h=revised_bounds();cities=f.city.tolist();assert [int((l==h).sum()),int(((l<h)&((l>0)|(h<1))).sum()),int(((l==0)&(h==1)).sum())]==[112,37,11]
- ranks=frame(R/'results/task4_user_v203_revision/current_ranks.csv');widths={}
+ ranks=frame(R/'results/task4_user_v203_revision/current_ranks.csv');widths={};midpoint_changes={}
  for ref,w in [('fixed',weights(.1)),('equal',np.full(10,.1))]:
   a,b,r=values(l,h,w);v=ranks[ranks.weight_reference.eq(ref)].set_index('city').loc[cities]
   for col,arr in [('score_lower',a),('score_upper',b),('max_regret',r)]:np.testing.assert_allclose(v[col],arr,atol=1e-11,rtol=0)
   assert v.index[v.decision_rank.eq(1)].tolist()==(['Oslo'] if ref=='fixed' else ['Zurich']) and v.possible_champion.sum()==16 and v.necessary_champion.sum()==0
   widths[ref]=float(np.mean(b-a))
+  midpoint_score=values((l+h)/2,(l+h)/2,w)[0]
+  midpoint_rank=pd.Series(midpoint_score).rank(ascending=False,method='min').to_numpy()
+  interval_rank=pd.Series(r).rank(method='min').to_numpy()
+  midpoint_changes[ref]=int(np.count_nonzero(midpoint_rank!=interval_rank))
+  assert midpoint_changes[ref]==14
  assert macros['CurrentMeanWidth']==f"{widths['fixed']:.5f}"
  expected=ranks[ranks.weight_reference.eq('fixed')].set_index(['city','weight_reference']).sort_index();actual=frame(A/'source_intervals.csv').set_index(['city','weight_reference']).sort_index();pd.testing.assert_frame_equal(actual,expected,check_exact=True)
  for r in expected.sort_values('decision_rank').itertuples():assert f'{r.decision_rank} & {r.Index[0]} & {r.score_lower:.2f}--{r.score_upper:.2f} & {r.max_regret:.2f}' in tex,r.Index
@@ -212,6 +217,8 @@ def main():
  assert 'commute proxy alone selects zurich under both weights; all sixteen remain possible champions and none is necessary' in full
  assert 'matches establish neither the team' in full and 'nor the historical boundary' in full
  assert 'oslo' in summary and 'zurich' in summary and 'oslo' in news and 'zurich' in news
+ conclusion=rendered(tex.split('\\section{Conclusion and decision use}',1)[1].split('\\clearpage',1)[0])
+ assert 'against midpoint completion, the interval revision changes 14 fixed-weight decision ranks' in conclusion
  student=read(R/'results/current_oslo_student_review/verification.json');assert student['status']=='pass scoped source review' and student['primary_admissions']==0
  for name,digest in student['source_sha256'].items():assert sha(R/name)==digest,name
  for phrase in ['66%','41%','70%','32%','cross-sectional']:
@@ -237,6 +244,6 @@ def main():
    top=[w for w in words if float(w.get('yMin'))<65];assert any(w.text=='Team' and 70<float(w.get('xMin'))<74 for w in top) and any(w.text=='Page' and float(w.get('xMin'))>450 for w in top) and any(w.text=='18213' for w in top);assert f'Page {i+1} of {len(pages)}' in norm(pages[i])
   else:assert '18213' in pages[0]
  assert not any(x in log for x in ['Overfull','undefined','LaTeX Warning'])
- result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; includes bound independent single-point withdrawal proof; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),point_error_source_sha256=point_paths,withdrawal_source_sha256=withdrawal_paths,owned_edit_scope='Only6.3changedrelativeb83aeab; other source including AI appendix unchanged',ai_source_sha256=ai_paths,student_source_audit_sha256=sha(R/'results/current_oslo_student_review/verification.json'),student_source_sha256=student['source_sha256'],figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
+ result=dict(status='pass',scope='Independent local numeric, selected text, preservation and PDF geometry audit; includes bound independent single-point withdrawal proof; excludes online compilation, visual review, source requalification and final team acceptance.',v203_bindings=len(snapshot['source_sha256']),inherited_v202_bindings=476,reference_keys=len(current),point_error_source_sha256=point_paths,withdrawal_source_sha256=withdrawal_paths,owned_edit_scope='Exact conclusion comparator clause only relative7eebfe1; all other source unchanged',midpoint_comparison_rank_changes=midpoint_changes,ai_source_sha256=ai_paths,student_source_audit_sha256=sha(R/'results/current_oslo_student_review/verification.json'),student_source_sha256=student['source_sha256'],figure_minimum_fonts=fonts,mean_score_interval_widths=widths,main_and_reference_pages=end,total_pages=len(pages),actual_registration_verified=False,pdf_sha256=sha(pdf),main_sha256=sha(P/'main.tex'),oslo_source_scope_verification_sha256=sha(R/'results/current_oslo_commute_scope/verification.json'),oslo_source_scope_summary_sha256=sha(R/'results/current_oslo_commute_scope/summary.json'),oslo_eurostat_sha256=sha(R/'data/current_oslo_travel2009/eurostat_NO001C_2009.json'),spatial_audit_sha256=sha(R/'results/current_oslo_spatial_review/verification.json'),spatial_source_sha256={str(p.relative_to(R)):sha(p) for p in [R/'data/current_oslo_spatial/6494_hexes.zip',R/'data/current_oslo_spatial/download.json',R/'data/task4_access/city_index.json',R/'data/task4_access/9808_hexes.zip',R/'visuals/current_spatial/build.py',R/'visuals/current_spatial/render.py',R/'visuals/current_spatial/metrics.json',R/'visuals/current_spatial/imagery_manifest.json',R/'visuals/current_spatial/fallback_manifest.json',R/'visuals/current_spatial/oslo_imagery_manifest.json',R/'visuals/current_spatial/city_walktime.pdf']},assets_sha256={n:sha(P/'figures'/n) for n in ['identification_matrix.pdf','score_intervals.pdf']})
  emit_report(result,args,canonical,H)
 if __name__=='__main__':main()

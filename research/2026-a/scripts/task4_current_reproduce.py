@@ -132,6 +132,12 @@ def main():
   for path in paths:require(str(path.relative_to(analysis)) not in science,'Mutable registry in immutable science')
   for name,h in science.items():require(sha(analysis/name)==h,'Science hash differs: '+name)
   protected={str(p):sha(p) for p in paths}
+  if registry.get('focused_peer_review'):
+   peer=research/registry['focused_peer_review']
+   require(sha(peer)==registry['focused_peer_review_sha256'],'Focused peer review hash differs')
+   peer_report=read(peer)
+   require(peer_report['resolution_verification']['new_pdf_sha256']==registry['pdf_sha256'] and peer_report['resolution_verification']['new_source_sha256']==sha(paper/'main.tex'),'Focused peer review applies to a different manuscript')
+   protected[str(peer)]=sha(peer)
   for n,h in base.tracked_hashes(paper).items():protected[str(paper/n)]=h
   proof_path=research/registry['research_verification'];delivery_path=research/delivery['research_verification']
   expected=read(proof_path);d=read(delivery_path)
