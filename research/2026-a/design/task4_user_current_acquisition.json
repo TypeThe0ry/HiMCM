@@ -403,7 +403,7 @@
     "ledger": "results/current_point_source_ledger/ledger.csv",
     "review_priority": "results/current_point_source_ledger/review_priority.csv",
     "verification": "results/current_point_source_ledger/verification.json",
-    "verification_sha256": "42aa94d46e32f509edd1cfa257c840f2e737b0de6929abe80250843823a13ffb",
+    "verification_sha256": "e7dd5267d1f9c1d78dc4fa6f10bc9eb003b5dc7f74320016cfc8ef015efcb048",
     "point_utility_cells": 112,
     "classification_counts": {
       "not_included_in_bounded_classification": 56,
@@ -676,5 +676,27 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Prior-source routing gap repaired; publishedFTE and compulsorycensusdesign retained; alltargetactivity/reference/outwardprecisionguarantees unproven; no inferred error or source substitution"
+  },
+  "oslo_HE_identity_completion": {
+    "sources": "data/current_oslo_he_identity_completion/README.md",
+    "results": "results/current_oslo_he_identity_completion",
+    "verification": "results/current_oslo_he_identity_completion/verification.json",
+    "verification_sha256": "6ea249983b9e9b93bc110c2cf8727221b5cb63992a08dc7fa5e96263d372fccd",
+    "prior_identity_matches": 25,
+    "national_identity_matches": 27,
+    "newly_bridged_codes": [
+      "1404",
+      "1405"
+    ],
+    "identity_matches_among_positive_each_period": 25,
+    "location_discrepancy_codes": [
+      "1405"
+    ],
+    "original25_lineage_verified": false,
+    "city_count_corrected": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Combined-archive provider identities and separate location flag; no institutional accreditation forprogramme-onlycolleges or municipalinventory certification"
   }
 }

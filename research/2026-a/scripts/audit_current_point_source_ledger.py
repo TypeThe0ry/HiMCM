@@ -41,12 +41,15 @@ def main():
             assert not followup['exact_value_match'] and not followup['original_lineage_verified'] and not followup['target_scope_verified']
         elif (city,indicator) in [('Oslo','pm25'),('Oslo','research_he_density'),('Zurich','homicide_rate')]:state='reviewed_lineage_unresolved'
         if (city,indicator)==('Oslo','research_he_density'):
-            report=read(R/'results/current_oslo_dbh_accreditation_review/verification.json')
-            assert report['national_identity_matches']==25 and report['registry_codes_checked']==27
-            assert report['identity_matches_among_positive_each_period']==23 and report['identity23_is_not_mode23']
-            assert report['unresolved_codes']==['1404','1405'] and not report['original25_lineage_verified']
+            report=read(R/'results/current_oslo_he_identity_completion/verification.json')
+            assert report['national_identity_matches']==27 and report['registry_codes_checked']==27
+            assert report['identity_matches_among_positive_each_period']==25 and report['inherited_rows_preserved']==25
+            assert report['newly_bridged_codes']==['1404','1405'] and not report['original25_lineage_verified']
+            assert report['programme_only_new_identities'] and report['address_discrepancy_codes']==['1405']
+            assert not report['city_count_corrected']
             for n,h in report['source_sha256'].items():assert sha(R/n)==h,n
-            assert x['evidence']=='data/current_oslo_dbh_accreditation/README.md' and 'Identity23is a different set' in x['scope_detail']
+            assert x['evidence']=='data/current_oslo_he_identity_completion/README.md'
+            assert 'programme-only' in x['scope_detail'] and 'Bærum3201' in x['scope_detail']
         assert x['classification']==state;counts[state]+=1
         assert x['measurement_fully_certified']==x['original_extraction_lineage_verified']=='False'
         if x['evidence']:assert (R/x['evidence']).is_file()
