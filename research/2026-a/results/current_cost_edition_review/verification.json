@@ -1,0 +1,141 @@
+{
+  "status": "pass",
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 77,
+  "withdrawal_evidence_entries_checked": 10,
+  "paper_dependencies_each_copy": 7,
+  "current_PDF_unchanged": true,
+  "edition_entries_checked": 24,
+  "independent_source_reader": "HTMLParser versus regex classifier",
+  "source_cells_checked": 96,
+  "source_match_counts": {
+    "cli": {
+      "2026": 0,
+      "mid": 0,
+      "current": 13
+    },
+    "pir": {
+      "2026": 1,
+      "mid": 0,
+      "current": 15
+    }
+  },
+  "unmatched_original_points": [
+    {
+      "city": "Zurich",
+      "indicator": "cli",
+      "submitted": 117.8
+    },
+    {
+      "city": "Paris",
+      "indicator": "cli",
+      "submitted": 73.3
+    },
+    {
+      "city": "Oslo",
+      "indicator": "cli",
+      "submitted": 92.9
+    },
+    {
+      "city": "London",
+      "indicator": "pir",
+      "submitted": 11.8
+    }
+  ],
+  "independent_scalar_cases": 128,
+  "bound_rows_checked": 640,
+  "contrasts": [
+    {
+      "edition": "2026",
+      "weight_reference": "fixed",
+      "changed_decision_ranks": 6,
+      "changed_cities": [
+        "Vienna",
+        "Zurich",
+        "Paris",
+        "Madrid",
+        "Warsaw",
+        "Singapore"
+      ],
+      "mean_width_change": -0.006879995822899332,
+      "largest_absolute_lower_score_change": 0.6793063886633632,
+      "largest_absolute_upper_score_change": 0.9036795095472598
+    },
+    {
+      "edition": "mid",
+      "weight_reference": "fixed",
+      "changed_decision_ranks": 2,
+      "changed_cities": [
+        "Paris",
+        "Madrid"
+      ],
+      "mean_width_change": -0.042233991984524266,
+      "largest_absolute_lower_score_change": 0.8669809068252547,
+      "largest_absolute_upper_score_change": 1.163171766938845
+    },
+    {
+      "edition": "current",
+      "weight_reference": "fixed",
+      "changed_decision_ranks": 0,
+      "changed_cities": [],
+      "mean_width_change": 0.00047967717307706437,
+      "largest_absolute_lower_score_change": 0.019790550167805065,
+      "largest_absolute_upper_score_change": 0.026054203248136787
+    },
+    {
+      "edition": "2026",
+      "weight_reference": "equal",
+      "changed_decision_ranks": 0,
+      "changed_cities": [],
+      "mean_width_change": -0.00977645754161216,
+      "largest_absolute_lower_score_change": 0.5947998227875786,
+      "largest_absolute_upper_score_change": 0.8192804832825118
+    },
+    {
+      "edition": "mid",
+      "weight_reference": "equal",
+      "changed_decision_ranks": 0,
+      "changed_cities": [],
+      "mean_width_change": -0.0470164197648657,
+      "largest_absolute_lower_score_change": 0.7586384182546411,
+      "largest_absolute_upper_score_change": 1.0553670681932346
+    },
+    {
+      "edition": "current",
+      "weight_reference": "equal",
+      "changed_decision_ranks": 0,
+      "changed_cities": [],
+      "mean_width_change": 0.0004680595677299948,
+      "largest_absolute_lower_score_change": 0.01735001552989246,
+      "largest_absolute_upper_score_change": 0.023571103917305436
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "source_sha256": {
+    "data/current_all16_cost_editions/README.md": "466140a19d771d07a3dc3ba6f2ffbca91f97317c7e0244a53162eeb04a465016",
+    "data/current_all16_cost_editions/comparison.csv": "33114bb6c0f16f0f8b252abae76f49ac266fe02c1d368c9ee587346e14f194e4",
+    "data/current_all16_cost_editions/extract.py": "1d3fda9c2e3d3a839918e1dd4bb38066d59a91a79b70fb4ef56efdbe0a9947ff",
+    "data/current_all16_cost_editions/summary.json": "6665d9d47f89af516d6cddcc177af702a90350147c49d8689a9d0b4cdaaf953c",
+    "results/current_cost_edition_review/README.md": "b4903707f46519c6cae2d1506a5b8c1645d1bff2bb1885bad16545988931a0d4",
+    "results/current_cost_edition_review/peer_review.json": "16e18d0343f81b06c07e488a39c0a1ef92ddf2f60736bac6ed32a01110553697",
+    "results/current_cost_edition_review/summary.json": "2d7fac3c93ff2dbcdd766906b057ec9d2d1ab2a92959ace20f41a9aa60978664",
+    "results/current_cost_edition_review/bounds.csv": "85b9546934280f5c0a59514e89178f7f0b5a7f3c8b80ea0a439a93f63104e94d",
+    "results/current_cost_edition_review/ranks.csv": "a87d0d40c441d715368be40f3c93fc9630c46b4425b987cf7dc6c36651efeff6",
+    "results/current_cost_edition_review/edition_values.csv": "e160c4b753bf0ea51a70a11d949876de6f0ea5883fdd51fb1b82a374e48402ff",
+    "scripts/audit_current_cost_editions.py": "533be34e02c9f9da7f110bcee10c4b9cbd6356d8554ad114ed6b0d9694d5d2d9",
+    "scripts/task4_current_cost_editions.py": "40902996b76c7d267c9b6d8b10cb011e9859d14e13f67cdfb36e5689da103e20",
+    "scripts/audit_current_oslo_cost_ptr_sources.py": "3a6da9c9edaaede65cb589b608dcd5b66c57ad729c401490f598f83057a45120",
+    "scripts/audit_current_broadband_definition.py": "34ebc0316d70434a6bb106450b8e2c3e36fc2c39a81ded16d8e7e6f2302c8260",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+    "data/city_matrix_25_audit/sources/cost-of-living_2026.html": "09f4959edae8b771566eb57d832795d4253776aaf2a2114c63e321f7be9b9b3b",
+    "data/city_matrix_25_audit/sources/property-investment_2026.html": "e54bbe6a8821b3c371301c179278c8d8da26bbb54261a9d007afe4315dcd00aa",
+    "data/city_matrix_25_audit/sources/cost-of-living_mid.html": "f3eb608fa3dc6fb68987f0c8881da133406037485d97f0d161eb897ab62741e2",
+    "data/city_matrix_25_audit/sources/property-investment_mid.html": "92a0176a95cd723e77680d7ccdd9cd5796aa64662800f6ffaceb3654cf865dfa",
+    "data/city_matrix_25_audit/sources/cost-of-living_current.html": "30d4e4d9f5d69d5e8f3327770bb68bcab4106600dbc645cdffb18b3826836dd3",
+    "data/city_matrix_25_audit/sources/property-investment_current.html": "ec7175d68c137f335e69581633e687ad59b3cfb685c686f61c5f9d23ee6765a0",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/city_matrix_25_audit/provenance.json": "06a9c369b34af54f7ff234d49880adcccf6851a591eeaf9b010884de878607de"
+  },
+  "scope": "Edition-defined source alternatives; original input lineage and municipal geography remain unverified. No time trend, calendar-year measurement, student-budget validation or precision gain established. Primary values, intervals, weights, manuscript and PDF preserved; no Monte Carlo replay."
+}

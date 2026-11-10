@@ -1,0 +1,227 @@
+{
+  "primary_model": "V203 unchanged",
+  "scenario": "Replace only the32cost/housing points by matching named-city values from one archived publisher edition at a time",
+  "editions": [
+    "2026",
+    "mid",
+    "current"
+  ],
+  "targeted_point_cells": 32,
+  "actually_changed_point_cells": {
+    "2026": 31,
+    "mid": 32,
+    "current": 4
+  },
+  "other128cells_unchanged": true,
+  "rank_rows": 128,
+  "bound_rows": 640,
+  "publisher_value_rows": 96,
+  "cases": [
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "top_three": [
+        "Oslo",
+        "Zurich",
+        "Singapore"
+      ],
+      "mean_width": 15.82232695332216,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "retained_V203",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "top_three": [
+        "Zurich",
+        "Oslo",
+        "Singapore"
+      ],
+      "mean_width": 18.39181162388826,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "2026",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "top_three": [
+        "Oslo",
+        "Singapore",
+        "Zurich"
+      ],
+      "mean_width": 15.81544695749926,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "2026",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "top_three": [
+        "Zurich",
+        "Oslo",
+        "Singapore"
+      ],
+      "mean_width": 18.382035166346647,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "mid",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "top_three": [
+        "Oslo",
+        "Zurich",
+        "Singapore"
+      ],
+      "mean_width": 15.780092961337635,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "mid",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "top_three": [
+        "Zurich",
+        "Oslo",
+        "Singapore"
+      ],
+      "mean_width": 18.344795204123393,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "current",
+      "weight_reference": "fixed",
+      "recommendations": [
+        "Oslo"
+      ],
+      "top_three": [
+        "Oslo",
+        "Zurich",
+        "Singapore"
+      ],
+      "mean_width": 15.822806630495236,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    },
+    {
+      "scenario": "current",
+      "weight_reference": "equal",
+      "recommendations": [
+        "Zurich"
+      ],
+      "top_three": [
+        "Zurich",
+        "Oslo",
+        "Singapore"
+      ],
+      "mean_width": 18.39227968345599,
+      "possible_champions": 16,
+      "necessary_champions": 0
+    }
+  ],
+  "contrasts": [
+    {
+      "edition": "2026",
+      "weight_reference": "fixed",
+      "changed_decision_ranks": 6,
+      "changed_cities": [
+        "Vienna",
+        "Zurich",
+        "Paris",
+        "Madrid",
+        "Warsaw",
+        "Singapore"
+      ],
+      "mean_width_change": -0.006879995822899332,
+      "largest_absolute_lower_score_change": 0.6793063886633632,
+      "largest_absolute_upper_score_change": 0.9036795095472598
+    },
+    {
+      "edition": "mid",
+      "weight_reference": "fixed",
+      "changed_decision_ranks": 2,
+      "changed_cities": [
+        "Paris",
+        "Madrid"
+      ],
+      "mean_width_change": -0.042233991984524266,
+      "largest_absolute_lower_score_change": 0.8669809068252547,
+      "largest_absolute_upper_score_change": 1.163171766938845
+    },
+    {
+      "edition": "current",
+      "weight_reference": "fixed",
+      "changed_decision_ranks": 0,
+      "changed_cities": [],
+      "mean_width_change": 0.00047967717307706437,
+      "largest_absolute_lower_score_change": 0.019790550167805065,
+      "largest_absolute_upper_score_change": 0.026054203248136787
+    },
+    {
+      "edition": "2026",
+      "weight_reference": "equal",
+      "changed_decision_ranks": 0,
+      "changed_cities": [],
+      "mean_width_change": -0.00977645754161216,
+      "largest_absolute_lower_score_change": 0.5947998227875786,
+      "largest_absolute_upper_score_change": 0.8192804832825118
+    },
+    {
+      "edition": "mid",
+      "weight_reference": "equal",
+      "changed_decision_ranks": 0,
+      "changed_cities": [],
+      "mean_width_change": -0.0470164197648657,
+      "largest_absolute_lower_score_change": 0.7586384182546411,
+      "largest_absolute_upper_score_change": 1.0553670681932346
+    },
+    {
+      "edition": "current",
+      "weight_reference": "equal",
+      "changed_decision_ranks": 0,
+      "changed_cities": [],
+      "mean_width_change": 0.0004680595677299948,
+      "largest_absolute_lower_score_change": 0.01735001552989246,
+      "largest_absolute_upper_score_change": 0.023571103917305436
+    }
+  ],
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "source_sha256": {
+    "data/city_matrix_25_audit/sources/cost-of-living_2026.html": "09f4959edae8b771566eb57d832795d4253776aaf2a2114c63e321f7be9b9b3b",
+    "data/city_matrix_25_audit/sources/property-investment_2026.html": "e54bbe6a8821b3c371301c179278c8d8da26bbb54261a9d007afe4315dcd00aa",
+    "data/city_matrix_25_audit/sources/cost-of-living_mid.html": "f3eb608fa3dc6fb68987f0c8881da133406037485d97f0d161eb897ab62741e2",
+    "data/city_matrix_25_audit/sources/property-investment_mid.html": "92a0176a95cd723e77680d7ccdd9cd5796aa64662800f6ffaceb3654cf865dfa",
+    "data/city_matrix_25_audit/sources/cost-of-living_current.html": "30d4e4d9f5d69d5e8f3327770bb68bcab4106600dbc645cdffb18b3826836dd3",
+    "data/city_matrix_25_audit/sources/property-investment_current.html": "ec7175d68c137f335e69581633e687ad59b3cfb685c686f61c5f9d23ee6765a0",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "data/city_matrix_25_audit/provenance.json": "06a9c369b34af54f7ff234d49880adcccf6851a591eeaf9b010884de878607de",
+    "scripts/audit_current_oslo_cost_ptr_sources.py": "3a6da9c9edaaede65cb589b608dcd5b66c57ad729c401490f598f83057a45120",
+    "scripts/task4_current_cost_editions.py": "40902996b76c7d267c9b6d8b10cb011e9859d14e13f67cdfb36e5689da103e20"
+  },
+  "output_sha256": {
+    "ranks.csv": "a87d0d40c441d715368be40f3c93fc9630c46b4425b987cf7dc6c36651efeff6",
+    "bounds.csv": "85b9546934280f5c0a59514e89178f7f0b5a7f3c8b80ea0a439a93f63104e94d",
+    "edition_values.csv": "e160c4b753bf0ea51a70a11d949876de6f0ea5883fdd51fb1b82a374e48402ff"
+  },
+  "scope": "Source-edition sensitivity, not an input correction, temporal trend, annual-calendar measurement, original extraction lineage, household-budget validation or municipal-boundary harmonization. Fixed ideal points, original weights and other128ranges retained; no Monte Carlo replay or missing-data admission. Current is the archived snapshot, not a live table."
+}

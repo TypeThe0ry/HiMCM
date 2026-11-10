@@ -1,0 +1,32 @@
+{
+  "status": "reviewed_scoped",
+  "requested_model": "gpt-6.1-terra",
+  "serving_build_verified": false,
+  "recorded_utc": "2026-11-10T12:31:47.099759+00:00",
+  "examined": [
+    "Controlled source-edition generator and summary",
+    "Selected source rows and scenario metadata",
+    "Interpretation and preservation requirements"
+  ],
+  "conclusion": "Source-edition sensitivity supported; retainedV203 is the comparator. Annualfixed6rankchanges,Mid-Year2,Current0;equal0. Recommendations stable within these settings, not unique dominance.",
+  "requirements_preserved": [
+    "OriginalCSVandprimaryrules unchanged",
+    "Bothcostfields selectedwithin each declarededition",
+    "Current is an archived snapshot, annual2026 is a publication edition"
+  ],
+  "interpretation_limits": [
+    "Not a time trend or full-calendar-year measure",
+    "Indices are not a validated household/student budget",
+    "Namedcity matching doesnotestablishmunicipalboundaries or originalCSVlineage",
+    "Model interval-width shifts are not precision improvements"
+  ],
+  "not_certified": [
+    "Independent extraction and full numeric audit",
+    "Wholepaper",
+    "Originalmeasurementmatrix or finalteam/competitionreadiness"
+  ],
+  "reviewed_inputs_sha256": {
+    "scripts/task4_current_cost_editions.py": "40902996b76c7d267c9b6d8b10cb011e9859d14e13f67cdfb36e5689da103e20",
+    "results/current_cost_edition_review/summary.json": "2d7fac3c93ff2dbcdd766906b057ec9d2d1ab2a92959ace20f41a9aa60978664"
+  }
+}

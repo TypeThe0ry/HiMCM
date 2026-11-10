@@ -128,5 +128,65 @@
       "results/current_all16_broadband_review/verification.json": "e85eb6cbdfb80f1aee778a22fd6977b526d0fd10b2387aecbf4d31ec84fbe060"
     },
     "scope": "Publisher-field classification and one-point source-definition diagnostic; no source correction or primary mutation, no exact rolling-window or boundary certification, no Monte Carlo replay."
+  },
+  "cost_source_edition_sensitivity": {
+    "script": "scripts/task4_current_cost_editions.py",
+    "results": "results/current_cost_edition_review",
+    "audit": "results/current_cost_edition_review/verification.json",
+    "primary_evidence": "V203 unchanged",
+    "targeted_points": 32,
+    "available_source_values": 96,
+    "actual_point_changes": {
+      "2026": 31,
+      "mid": 32,
+      "current": 4
+    },
+    "fixed_rank_changes": {
+      "2026": 6,
+      "mid": 2,
+      "current": 0
+    },
+    "equal_rank_changes": {
+      "2026": 0,
+      "mid": 0,
+      "current": 0
+    },
+    "recommendations_all_editions": {
+      "fixed": [
+        "Oslo"
+      ],
+      "equal": [
+        "Zurich"
+      ]
+    },
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "source_sha256": {
+      "data/current_all16_cost_editions/README.md": "466140a19d771d07a3dc3ba6f2ffbca91f97317c7e0244a53162eeb04a465016",
+      "data/current_all16_cost_editions/comparison.csv": "33114bb6c0f16f0f8b252abae76f49ac266fe02c1d368c9ee587346e14f194e4",
+      "data/current_all16_cost_editions/extract.py": "1d3fda9c2e3d3a839918e1dd4bb38066d59a91a79b70fb4ef56efdbe0a9947ff",
+      "data/current_all16_cost_editions/summary.json": "6665d9d47f89af516d6cddcc177af702a90350147c49d8689a9d0b4cdaaf953c",
+      "results/current_cost_edition_review/README.md": "b4903707f46519c6cae2d1506a5b8c1645d1bff2bb1885bad16545988931a0d4",
+      "results/current_cost_edition_review/peer_review.json": "16e18d0343f81b06c07e488a39c0a1ef92ddf2f60736bac6ed32a01110553697",
+      "results/current_cost_edition_review/summary.json": "2d7fac3c93ff2dbcdd766906b057ec9d2d1ab2a92959ace20f41a9aa60978664",
+      "results/current_cost_edition_review/bounds.csv": "85b9546934280f5c0a59514e89178f7f0b5a7f3c8b80ea0a439a93f63104e94d",
+      "results/current_cost_edition_review/ranks.csv": "a87d0d40c441d715368be40f3c93fc9630c46b4425b987cf7dc6c36651efeff6",
+      "results/current_cost_edition_review/edition_values.csv": "e160c4b753bf0ea51a70a11d949876de6f0ea5883fdd51fb1b82a374e48402ff",
+      "scripts/audit_current_cost_editions.py": "533be34e02c9f9da7f110bcee10c4b9cbd6356d8554ad114ed6b0d9694d5d2d9",
+      "scripts/task4_current_cost_editions.py": "40902996b76c7d267c9b6d8b10cb011e9859d14e13f67cdfb36e5689da103e20",
+      "scripts/audit_current_oslo_cost_ptr_sources.py": "3a6da9c9edaaede65cb589b608dcd5b66c57ad729c401490f598f83057a45120",
+      "scripts/audit_current_broadband_definition.py": "34ebc0316d70434a6bb106450b8e2c3e36fc2c39a81ded16d8e7e6f2302c8260",
+      "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+      "data/city_matrix_25_audit/sources/cost-of-living_2026.html": "09f4959edae8b771566eb57d832795d4253776aaf2a2114c63e321f7be9b9b3b",
+      "data/city_matrix_25_audit/sources/property-investment_2026.html": "e54bbe6a8821b3c371301c179278c8d8da26bbb54261a9d007afe4315dcd00aa",
+      "data/city_matrix_25_audit/sources/cost-of-living_mid.html": "f3eb608fa3dc6fb68987f0c8881da133406037485d97f0d161eb897ab62741e2",
+      "data/city_matrix_25_audit/sources/property-investment_mid.html": "92a0176a95cd723e77680d7ccdd9cd5796aa64662800f6ffaceb3654cf865dfa",
+      "data/city_matrix_25_audit/sources/cost-of-living_current.html": "30d4e4d9f5d69d5e8f3327770bb68bcab4106600dbc645cdffb18b3826836dd3",
+      "data/city_matrix_25_audit/sources/property-investment_current.html": "ec7175d68c137f335e69581633e687ad59b3cfb685c686f61c5f9d23ee6765a0",
+      "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+      "data/city_matrix_25_audit/provenance.json": "06a9c369b34af54f7ff234d49880adcccf6851a591eeaf9b010884de878607de",
+      "results/current_cost_edition_review/verification.json": "abe2d8b3716fc4f4dfb7e356a18f42afa5a599333c6218e4ff217a2477bddca5"
+    },
+    "scope": "Publisher-edition alternatives against retainedV203, not a time trend, full-calendar measurement, input correction or precision improvement; other128ranges/weights/anchors preserved. No Monte Carlo replay or manuscript change."
   }
 }

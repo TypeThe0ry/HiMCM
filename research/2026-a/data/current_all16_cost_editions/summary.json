@@ -1,0 +1,73 @@
+{
+  "input": "research/2026-a/data/task4_v117_team_intake/city_indicators.csv",
+  "source_files": {
+    "research/2026-a/data/city_matrix_25_audit/sources/cost-of-living_2026.html": {
+      "sha256": "09f4959edae8b771566eb57d832795d4253776aaf2a2114c63e321f7be9b9b3b",
+      "bytes": 209877
+    },
+    "research/2026-a/data/city_matrix_25_audit/sources/cost-of-living_mid.html": {
+      "sha256": "f3eb608fa3dc6fb68987f0c8881da133406037485d97f0d161eb897ab62741e2",
+      "bytes": 235756
+    },
+    "research/2026-a/data/city_matrix_25_audit/sources/cost-of-living_current.html": {
+      "sha256": "30d4e4d9f5d69d5e8f3327770bb68bcab4106600dbc645cdffb18b3826836dd3",
+      "bytes": 295475
+    },
+    "research/2026-a/data/city_matrix_25_audit/sources/property-investment_2026.html": {
+      "sha256": "e54bbe6a8821b3c371301c179278c8d8da26bbb54261a9d007afe4315dcd00aa",
+      "bytes": 194478
+    },
+    "research/2026-a/data/city_matrix_25_audit/sources/property-investment_mid.html": {
+      "sha256": "92a0176a95cd723e77680d7ccdd9cd5796aa64662800f6ffaceb3654cf865dfa",
+      "bytes": 193816
+    },
+    "research/2026-a/data/city_matrix_25_audit/sources/property-investment_current.html": {
+      "sha256": "ec7175d68c137f335e69581633e687ad59b3cfb685c686f61c5f9d23ee6765a0",
+      "bytes": 267205
+    }
+  },
+  "scope": {
+    "cities": 16,
+    "indicators": [
+      "cli",
+      "pir"
+    ],
+    "cells_expected": 96,
+    "cells_available": 96,
+    "missing_cells_by_indicator_edition": {
+      "cli_2026": 0,
+      "cli_mid": 0,
+      "cli_current": 0,
+      "pir_2026": 0,
+      "pir_mid": 0,
+      "pir_current": 0
+    }
+  },
+  "exact_match_counts_by_indicator_edition": {
+    "cli": {
+      "2026": 0,
+      "mid": 0,
+      "current": 13
+    },
+    "pir": {
+      "2026": 1,
+      "mid": 0,
+      "current": 15
+    }
+  },
+  "exact_match_row_counts": {
+    "cli": 13,
+    "pir": 15
+  },
+  "lineage_unknowns": [
+    "Original CSV does not identify source URL, retrieval date, table cell, Numbeo edition, or extraction method for CLI/PIR.",
+    "City boundary equivalence between the CSV entries and Numbeo rows is not documented.",
+    "Input year 2026 does not establish that values were measured over calendar year 2026."
+  ],
+  "source_labels": {
+    "2026": "Numbeo annual 2026 edition, not a claim of calendar-year measurement",
+    "mid": "Numbeo 2026 Mid-Year edition",
+    "current": "Current table copied to archive Nov 7, 2026; not live current data"
+  },
+  "matching": "Exact displayed city and country after explicit country alias map only; repeated exact values may match multiple editions. A nonmatch is not evidence the input is erroneous; absent source cells remain blank, never zero."
+}

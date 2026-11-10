@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 27,
+    "routes": 28,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -347,6 +347,53 @@
     "original_extraction_lineages_established": 0,
     "controlled_alternative": "Only Singapore 667.71 mean to476.02 median; primary unchanged",
     "all_decision_ranks_unchanged": true,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false
+  },
+  "all16_cost_edition_review": {
+    "data": "data/current_all16_cost_editions",
+    "results": "results/current_cost_edition_review",
+    "verification": "results/current_cost_edition_review/verification.json",
+    "verification_sha256": "abe2d8b3716fc4f4dfb7e356a18f42afa5a599333c6218e4ff217a2477bddca5",
+    "input_points_checked": 32,
+    "source_values_checked": 96,
+    "original_points_with_exact_publisher_match": 28,
+    "unmatched_original_points": [
+      {
+        "city": "Zurich",
+        "indicator": "cli",
+        "submitted": 117.8
+      },
+      {
+        "city": "Paris",
+        "indicator": "cli",
+        "submitted": 73.3
+      },
+      {
+        "city": "Oslo",
+        "indicator": "cli",
+        "submitted": 92.9
+      },
+      {
+        "city": "London",
+        "indicator": "pir",
+        "submitted": 11.8
+      }
+    ],
+    "original_extraction_lineages_established": 0,
+    "controlled_alternatives": "Three common publisher editions, only cost/housing fields replaced in temporary copies",
+    "fixed_rank_changes": [
+      6,
+      2,
+      0
+    ],
+    "equal_rank_changes": [
+      0,
+      0,
+      0
+    ],
+    "recommendations_unchanged": true,
     "primary_admissions": 0,
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false
