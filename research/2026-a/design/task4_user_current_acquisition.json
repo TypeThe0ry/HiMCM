@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 30,
+    "routes": 31,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -438,5 +438,30 @@
     "primary_admissions": 0,
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false
+  },
+  "all16_ROR_education_roster_review": {
+    "data": "data/current_all16_ror_rosters",
+    "verification": "results/current_all16_ror_review/verification.json",
+    "verification_sha256": "d516aae6ec2e83c020f45ed3e4255d74ce8d037fce20a56d8405c8023f3cd377",
+    "source_snapshot": "ROR v2.14 2026-10-06; archived access date2026-11-07",
+    "JSON_records_examined": 144717,
+    "matched_unique_ROR_IDs": 1008,
+    "cities_checked": 16,
+    "exact_count_matches": 4,
+    "different_counts": 12,
+    "Oslo_submitted_count": 25,
+    "Oslo_ROR_education_city_label_count": 28,
+    "Singapore_city_label_count": 118,
+    "Singapore_country_count": 120,
+    "CSV_first_location_omissions": {
+      "London": "01fj67v51",
+      "Paris": "0563zdp54"
+    },
+    "original_extraction_lineages_verified": 0,
+    "accredited_HE_counts_verified": 0,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Offline JSON any-location education-tag diagnostic, not accredited HE inventory or polygon coverage. Primary original counts retained; existing point ledger not reclassified by this separate review."
   }
 }
