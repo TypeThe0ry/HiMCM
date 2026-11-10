@@ -1,0 +1,596 @@
+[
+  {
+    "utc": "2026-11-10T21:08:56.640866+00:00",
+    "url": "https://www.hsl.fi/hsl/avoin-data",
+    "request_headers": {},
+    "status": 403,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:08:57 GMT",
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "body": "hsl_open_data.html",
+    "sha256": "e82ec053790c235b066e21f4380560cc25483fb566bf85c96c1e88f791f73ab7",
+    "bytes": 5431
+  },
+  {
+    "utc": "2026-11-10T21:08:57.224421+00:00",
+    "url": "https://digitransit.fi/en/developers/apis/",
+    "request_headers": {},
+    "status": 403,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:08:57 GMT",
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "body": "digitransit_api.html",
+    "sha256": "d82fc6d8d31483e3dd7714b3173a394cb57c0445d085084b1acbcc9f94de632a",
+    "bytes": 5450
+  },
+  {
+    "utc": "2026-11-10T21:08:58.903795+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "method": "HEAD",
+    "status": 200,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:08:58 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "87852429",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39"
+    },
+    "body": null
+  },
+  {
+    "utc": "2026-11-10T21:08:58.904014+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=87852407-87852428",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:00 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "22",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 87852407-87852428/87852429"
+    },
+    "body": "range_000.bin",
+    "sha256": "c3d83bab1b22bd1c7a329ee5f1c7641fce1510b742608fe21f80302a4ef474d2",
+    "bytes": 22
+  },
+  {
+    "utc": "2026-11-10T21:09:02.563191+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=87852387-87852406",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:02 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "20",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 87852387-87852406/87852429"
+    },
+    "body": "range_001.bin",
+    "sha256": "531f87ae0efdb45c9b27dcbc95655b5e9d478454cc019c6138d4a8528e8a09d6",
+    "bytes": 20
+  },
+  {
+    "utc": "2026-11-10T21:09:02.609992+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=87850800-87852406",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:02 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "1607",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 87850800-87852406/87852429"
+    },
+    "body": "range_002.bin",
+    "sha256": "adff94d47f590977fdfe981d4c9393fddc6ac2a0ee26ec8f48f83aab4e27d9f9",
+    "bytes": 1607
+  },
+  {
+    "utc": "2026-11-10T21:09:02.656220+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=4576932-4576961",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:02 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "30",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 4576932-4576961/87852429"
+    },
+    "body": "range_003.bin",
+    "sha256": "e532e7d51aca043beb61920ebace1cb4e339bedd3660c10a34c6c02f23cc942d",
+    "bytes": 30
+  },
+  {
+    "utc": "2026-11-10T21:09:02.876954+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=4576962-4576970",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:02 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "9",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 4576962-4576970/87852429"
+    },
+    "body": "range_004.bin",
+    "sha256": "d31cba30da3ace50114412a77e3051a3ae40a5825e4493e80c86ba750771dfff",
+    "bytes": 9
+  },
+  {
+    "utc": "2026-11-10T21:09:02.912603+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=4576971-4774341",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:02 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "197371",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 4576971-4774341/87852429"
+    },
+    "body": "range_005.bin",
+    "sha256": "94fd7b36389bf93166654ac14c6682ffdc76eb6611995caf466b2c35a17fab69",
+    "bytes": 197371
+  },
+  {
+    "utc": "2026-11-10T21:09:02.973245+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=38874-38903",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:02 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "30",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 38874-38903/87852429"
+    },
+    "body": "range_006.bin",
+    "sha256": "e26c67e4e2fdae39a1fd418a16e73517db883da569ad787128ece590d54187b2",
+    "bytes": 30
+  },
+  {
+    "utc": "2026-11-10T21:09:03.008381+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=38904-38915",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "12",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 38904-38915/87852429"
+    },
+    "body": "range_007.bin",
+    "sha256": "d2b7118544e26c3067fe787df0a5310814ba8c27168112add1f8e469ba96be39",
+    "bytes": 12
+  },
+  {
+    "utc": "2026-11-10T21:09:03.045973+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=38916-66983",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "28068",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 38916-66983/87852429"
+    },
+    "body": "range_008.bin",
+    "sha256": "f71945c77afd87772470ea5554d208da509f57cfdf276005b966edc688f67c93",
+    "bytes": 28068
+  },
+  {
+    "utc": "2026-11-10T21:09:03.088278+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=66984-67013",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "30",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 66984-67013/87852429"
+    },
+    "body": "range_009.bin",
+    "sha256": "b59e794d9869cace29b0a0d3e56dcbea31d99e0f48605a57cb7c107284a7c185",
+    "bytes": 30
+  },
+  {
+    "utc": "2026-11-10T21:09:03.122435+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=67014-67031",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "18",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 67014-67031/87852429"
+    },
+    "body": "range_010.bin",
+    "sha256": "0a7423306a79670166ffe0173503a45678166b32d6a7c658999b81b8edae94e2",
+    "bytes": 18
+  },
+  {
+    "utc": "2026-11-10T21:09:03.154281+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=67032-79649",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "12618",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 67032-79649/87852429"
+    },
+    "body": "range_011.bin",
+    "sha256": "f0f0e794000080457313249a69451cb95154074933c3043fc0ef03047d41f864",
+    "bytes": 12618
+  },
+  {
+    "utc": "2026-11-10T21:09:03.190244+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=82290-82319",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "30",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 82290-82319/87852429"
+    },
+    "body": "range_012.bin",
+    "sha256": "97a22415ee139836d7b19a4aab59b2e3b44d505582d39467b3861c96e3b06571",
+    "bytes": 30
+  },
+  {
+    "utc": "2026-11-10T21:09:03.228164+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=82320-82332",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "13",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 82320-82332/87852429"
+    },
+    "body": "range_013.bin",
+    "sha256": "462573aac1e4893656f489b41dc56796c8230a0801bd7aac69fd69cfce1dcaf0",
+    "bytes": 13
+  },
+  {
+    "utc": "2026-11-10T21:09:03.264932+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=82333-82463",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "131",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 82333-82463/87852429"
+    },
+    "body": "range_014.bin",
+    "sha256": "a8047f4548347231fefc30d9f4b2c475e823bae9250fc2befb16578785b07f4f",
+    "bytes": 131
+  },
+  {
+    "utc": "2026-11-10T21:09:03.304126+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=82464-82493",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "30",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 82464-82493/87852429"
+    },
+    "body": "range_015.bin",
+    "sha256": "12e1a3ba4a375498e217549e6dce9d58905bbcf0d9539f73af8dd537088280e3",
+    "bytes": 30
+  },
+  {
+    "utc": "2026-11-10T21:09:03.567489+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=82494-82503",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "10",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 82494-82503/87852429"
+    },
+    "body": "range_016.bin",
+    "sha256": "198051eb80d99ed93f813ae8a0835c9d681923c25166eb952794007578926eeb",
+    "bytes": 10
+  },
+  {
+    "utc": "2026-11-10T21:09:03.605548+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=82504-90773",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "8270",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 82504-90773/87852429"
+    },
+    "body": "range_017.bin",
+    "sha256": "99cdbb89fabb9384743a3d67a497bb026a7f8bfcb833ebfb7fec37e7425e147b",
+    "bytes": 8270
+  },
+  {
+    "utc": "2026-11-10T21:09:15.238000+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "method": "HEAD",
+    "status": 200,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:15 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "87852429",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39"
+    },
+    "body": null
+  },
+  {
+    "utc": "2026-11-10T21:09:15.246867+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=173-202",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:17 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "30",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 173-202/87852429"
+    },
+    "body": "range_173_202.bin",
+    "sha256": "4e0fd198eda9908403368b25ff16bc38af0900793984d2e9d97bdc9eca8bc9a5",
+    "bytes": 30
+  },
+  {
+    "utc": "2026-11-10T21:09:17.432658+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=203-211",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:17 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "9",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 203-211/87852429"
+    },
+    "body": "range_203_211.bin",
+    "sha256": "f2bdfdcd1389a07afbf16bdf0fe749f92ef25e7748aefe162ebdd994501d615d",
+    "bytes": 9
+  },
+  {
+    "utc": "2026-11-10T21:09:17.663053+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=212-38873",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:17 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "38662",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 212-38873/87852429"
+    },
+    "body": "range_212_38873.bin",
+    "sha256": "be9a03590974a1118fccc9ff069fb3fe46662866bcb397415d5d2bd7fa144d3b",
+    "bytes": 38662
+  },
+  {
+    "utc": "2026-11-10T21:09:17.891005+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=4774342-4774371",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:17 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "30",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 4774342-4774371/87852429"
+    },
+    "body": "range_4774342_4774371.bin",
+    "sha256": "b970b200b1ac398e62bf3afa8259d13ca4d42ecf57681bc15982ff1fc266bf82",
+    "bytes": 30
+  },
+  {
+    "utc": "2026-11-10T21:09:19.439413+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=4774372-4774385",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:19 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "14",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 4774372-4774385/87852429"
+    },
+    "body": "range_4774372_4774385.bin",
+    "sha256": "fda0c06fd6aa7d9dd3b7cbb3b8b7157b405a754fe8e8a56317edd4ed443b0840",
+    "bytes": 14
+  },
+  {
+    "utc": "2026-11-10T21:09:19.769611+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=4774386-4796933",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:19 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "22548",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 4774386-4796933/87852429"
+    },
+    "body": "range_4774386_4796933.bin",
+    "sha256": "fcf2d4b563328ac518e92f34f72dc41f8be9bc4c0b2b55bc9de14c1dfbf14046",
+    "bytes": 22548
+  },
+  {
+    "utc": "2026-11-10T21:09:19.819029+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=84099040-84099069",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:19 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "30",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 84099040-84099069/87852429"
+    },
+    "body": "range_84099040_84099069.bin",
+    "sha256": "8aa066dd25d129fe466cad26459b924bf213712cebc9383c1093350d46c17b6f",
+    "bytes": 30
+  },
+  {
+    "utc": "2026-11-10T21:09:19.894600+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=84099070-84099078",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:19 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "9",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 84099070-84099078/87852429"
+    },
+    "body": "range_84099070_84099078.bin",
+    "sha256": "4b54a6624f82bd356f4e82d9ae96a28d73fce1139420b9230c93d02da81d714d",
+    "bytes": 9
+  },
+  {
+    "utc": "2026-11-10T21:09:19.977172+00:00",
+    "url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "request_headers": {
+      "Range": "bytes=84099079-85961337",
+      "If-Match": "0x8DF3EDD9ABACD39"
+    },
+    "status": 206,
+    "response_headers": {
+      "Date": "Tue, 10 Nov 2026 21:09:19 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "1862259",
+      "Last-Modified": "Tue, 10 Nov 2026 03:49:21 GMT",
+      "ETag": "0x8DF3EDD9ABACD39",
+      "Content-Range": "bytes 84099079-85961337/87852429"
+    },
+    "body": "range_84099079_85961337.bin",
+    "sha256": "4365fe0fbbfd0ed1bd7cbc350030d73f8f96abc9562a89527335eac93aac7d9f",
+    "bytes": 1862259
+  }
+]

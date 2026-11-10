@@ -1,0 +1,63 @@
+[
+  {
+    "file": "nta_gtfs_catalogue.json",
+    "url": "https://data.gov.ie/api/3/action/package_show?id=nta-gtfs",
+    "final_url": "https://data.gov.ie/api/3/action/package_show?id=nta-gtfs",
+    "utc": "2026-11-10T21:09:07.240274+00:00",
+    "status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "content_length_header": "12161",
+    "bytes": 12161,
+    "sha256": "b40a54a8a1cb5b5665acf25c568aba0c1d81d035b65e55f5f7d318ddf4a515f8"
+  },
+  {
+    "file": "nta_developer_gtfs.html",
+    "url": "https://developer.nationaltransport.ie/GTFS",
+    "final_url": "https://developer.nationaltransport.ie/GTFS",
+    "utc": "2026-11-10T21:09:07.916382+00:00",
+    "status": 200,
+    "content_type": "text/html",
+    "content_length_header": null,
+    "bytes": 6237,
+    "sha256": "64554cc54c079d5cdae1b40def5847befff7329fffe1a5bf2cd0395d358c901b"
+  },
+  {
+    "file": "irish_netex_examples.html",
+    "url": "https://netex.ie/examplesStop.htm",
+    "final_url": "https://netex.ie/examplesStop.htm",
+    "utc": "2026-11-10T21:09:09.077447+00:00",
+    "status": 200,
+    "content_type": "text/html",
+    "content_length_header": null,
+    "bytes": 9460,
+    "sha256": "55367d2a04d8bd867269a59fd9518e849f487bac42042767d43e0f8256e8bbaa"
+  },
+  {
+    "file": null,
+    "url": "https://netex.ie/doc/EIRE_NP/NTA-NeTEx-1-Spec-2021.10.20-v1.0.pdf",
+    "utc": "2026-11-10T21:09:09.338554+00:00",
+    "error": "Body exceeds 5 MB acquisition cap"
+  },
+  {
+    "file": "gtfs_all_response.bin",
+    "url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip",
+    "final_url": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip",
+    "utc": "2026-11-10T21:09:09.418424+00:00",
+    "status": 403,
+    "content_type": "text/plain",
+    "content_length_header": "13",
+    "bytes": 13,
+    "sha256": "58404bdf6dc25c24fedd979469e69bfb8dc9ebca64a469929a858a12b12b9c30"
+  },
+  {
+    "file": "gtfs_realtime_response.bin",
+    "url": "https://www.transportforireland.ie/transitData/Data/GTFS_Realtime.zip",
+    "final_url": "https://www.transportforireland.ie/transitData/Data/GTFS_Realtime.zip",
+    "utc": "2026-11-10T21:09:10.138021+00:00",
+    "status": 403,
+    "content_type": "text/plain",
+    "content_length_header": "13",
+    "bytes": 13,
+    "sha256": "58404bdf6dc25c24fedd979469e69bfb8dc9ebca64a469929a858a12b12b9c30"
+  }
+]

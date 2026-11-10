@@ -1,0 +1,107 @@
+{
+  "status": "pass, bounded independent review",
+  "cases": 128,
+  "max_absolute_scalar_csv_error": 1.4210854715202004e-14,
+  "checks": [
+    {
+      "reference": "fixed",
+      "scenario": "retained",
+      "winner": "Oslo",
+      "margin": 1.1863617370461554,
+      "target_regrets": {
+        "Helsinki": 22.77512625870576,
+        "Dublin": 21.04921803431497
+      },
+      "mean_width": 15.776782727425475
+    },
+    {
+      "reference": "fixed",
+      "scenario": "Dublin",
+      "winner": "Oslo",
+      "margin": 1.1863617370461554,
+      "target_regrets": {
+        "Helsinki": 22.77512625870576,
+        "Dublin": 17.2833831021851
+      },
+      "mean_width": 15.541418044167358
+    },
+    {
+      "reference": "fixed",
+      "scenario": "Helsinki",
+      "winner": "Oslo",
+      "margin": 1.1863617370461554,
+      "target_regrets": {
+        "Helsinki": 18.938877724528325,
+        "Dublin": 21.04921803431497
+      },
+      "mean_width": 15.537017194039386
+    },
+    {
+      "reference": "fixed",
+      "scenario": "Helsinki+Dublin",
+      "winner": "Oslo",
+      "margin": 1.1863617370461554,
+      "target_regrets": {
+        "Helsinki": 18.938877724528325,
+        "Dublin": 17.2833831021851
+      },
+      "mean_width": 15.301652510781269
+    },
+    {
+      "reference": "equal",
+      "scenario": "retained",
+      "winner": "Zurich",
+      "margin": 0.04521949030134209,
+      "target_regrets": {
+        "Helsinki": 25.505830361494283,
+        "Dublin": 24.577827652830045
+      },
+      "mean_width": 18.302120833594717
+    },
+    {
+      "reference": "equal",
+      "scenario": "Dublin",
+      "winner": "Zurich",
+      "margin": 0.04521949030134209,
+      "target_regrets": {
+        "Helsinki": 25.505830361494283,
+        "Dublin": 17.143858325639336
+      },
+      "mean_width": 17.837497750645298
+    },
+    {
+      "reference": "equal",
+      "scenario": "Helsinki",
+      "winner": "Zurich",
+      "margin": 0.04521949030134209,
+      "target_regrets": {
+        "Helsinki": 17.98807997365374,
+        "Dublin": 24.577827652830045
+      },
+      "mean_width": 17.832261434354685
+    },
+    {
+      "reference": "equal",
+      "scenario": "Helsinki+Dublin",
+      "winner": "Zurich",
+      "margin": 0.04521949030134209,
+      "target_regrets": {
+        "Helsinki": 17.98807997365374,
+        "Dublin": 17.143858325639336
+      },
+      "mean_width": 17.367638351405265
+    }
+  ],
+  "source_digests_sha256": {
+    "scripts/task4_current_two_city_transit_ceiling.py": "93699767cf533d741607034ad509faf96a4e65e09c6450164f6e070bf7970edf",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/task4_user_v204_revision.py": "98212495822c17a7424507c8d6384eda20c3f254d8803114b042d3ef04a070c0",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "results/current_two_city_transit_ceiling/city_cases.csv": "ddf4e1a27b9686eb8ee998f098ee1188304755906a0d40fe034d81e4daa5081b",
+    "results/current_two_city_transit_ceiling/verification.json": "8341d33052b2b9664aee986128c335c8006babbfe2204131cccd8db5b0a69e87",
+    "results/current_two_city_transit_ceiling/README.md": "20cf67d9bc84d8060844255058b020c9140f3723bf0eb867313b601d9d64385d"
+  },
+  "all_recorded_source_digests_match": true,
+  "proof": "Nonnegative weights make the score nondecreasing in each utility: its positive-ideal complement distance decreases and negative-ideal distance increases. Fixed U makes exclusive regret R_i=max(0,max_{k != i} U_k-L_i); increasing a target lower score affects only its own regret. At the joint endpoint both target regrets exceed the unchanged non-target winner; other competitors are unchanged. Every possible-champion inequality U_i>=max_{k != i} L_k holds at the joint endpoint, so it holds throughout the box. Every necessary inequality L_i>=max_{k != i} U_k fails at that endpoint, so it fails throughout, since all L_i elsewhere are no larger. Comparisons use model tolerance 1e-12. Exclusive regret follows independent city intervals; if i is itself the maximal upper, including its own U would overstate attainable regret.",
+  "scope": "Conditional on V204 inputs, fixed upper bounds, independent city score intervals and the two stated weights. Utility 1 is a limiting relaxation, not an observed or finite count. No claim about full ranks, changing upper bounds, other inputs, or external evidence. Upstream data correctness was not audited; source digests checked for drift, not scientific validity. No primary model mutation performed."
+}

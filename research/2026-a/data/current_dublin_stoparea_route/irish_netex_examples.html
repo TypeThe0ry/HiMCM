@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>NeTEx Stop Examples for Irish Profile</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="e-GMS.aggregation" scheme="PROAS" content="schema">
+    <meta name="DCTERMS.audience" scheme="e-GMSAES" content="e-service developers">
+    <meta name="e-gms.aggregation" scheme="proas" content="schema">
+    <meta name="DCTERMS.audience" scheme="e-GMSAES" content="e-service developers">
+    <meta name="DC.coverage  content=Ireland">
+    <meta name="DC.creator" content="Created for  NeTEx  1.1 by Steam Intellect Limited,  Nicholas Knowles,  mailto:schemer@netex.uk.org">
+    <meta name="DC.date.created" content="2020-07-15">
+    <meta name="DC.date.modified" content="2020-08-10">
+    <meta name="DC.description" content="Examples of encoding stop data in NeTEx.">
+    <meta name="DC.format" content="HTML">
+    <meta name="DC.format.medium" scheme="IMT" content="text/html">
+    <meta name="DC.language" scheme="ISO 639-2/T" content="eng">
+    <meta name="DC.publisher" content="Steam Intellect">
+    <meta name="DC.rights.copyright" content="National Transport Authority 2020">
+    <meta name="DC.rights" content="Unclassified">
+    <meta name="DC.source" content="Derived from NeTEx -XMl content web site pages">
+    <meta name="e-GMS.status" content="Version 1.1 Draft for approval">
+    <meta name="eGMS.subject.category" scheme="GCL" content="Arts, recreation and travel, Tourism, Travel (tourism), Transport,
+Public transport, Bus services, Coach services, Bus stops and stationsRail transport, Infrastructure (railways), Railway stations and track, Train services, Underground trainsRoads and road transport,   Vehicles (road use)">
+    <meta name="DC.title" content="Irish Profile Stop  Examples  for NeTEx, an XML protocol for PT  data exchange.">
+    <meta name="DC.type" scheme="e-GMSTES" content="Standard">
+    <link rel="Stylesheet" href="style/shared.css" type="text/css">
+    <style type="text/css">
+.navhdg {
+  font-weight: bold;
+  color: #3333ff;
+}
+
+</style> </head>
+  <body>
+    <table style="width: 863px; height: 400px;" cellspacing="0" cellpadding="0"
+      border="0">
+      <tbody>
+        <tr>
+          <td> <a href="http://www.netex.ie"><img src="images/netex.jpg" height="116"
+                width="176" border="0"></a>
+            <p align="center"><span>&nbsp;</span><span><strong style="color: #0000FF;  "><br>
+                </strong></span></p>
+          </td>
+          <td>
+            <h1>Irish NeTEx Profile Examples</h1>
+            <h2>Data Examples – Stops</h2>
+          </td>
+        </tr>
+        <tr>
+          <td id="nav" height="300">
+            <p class="navhdg">NeTEx Eire</p>
+            <ul>
+              <li><a href="index.htm">Home</a></li>
+              <li><a href="overview.htm">Overview</a></li>
+              <li><a href="profile.htm">Profile specification</a></li>
+              <li><a href="schema.htm">Downloads &amp; Schema</a></li>
+              <li class="current">Examples</li>
+              <ul>
+                <li><a href="examplesOperator.htm">Operators</a></li>
+                <li><a href="examplesPlace.htm">Topographic Places</a></li>
+                <li class="current">Stops</li>
+                <ul>
+                  <li class="current">NaPTAN</li>
+                  <li><a href="examplesStationInfo.htm">Station Info</a></li>
+                </ul>
+                <li> Timetables</li>
+                <ul>
+                  <li><a href="examplesTimetableGTFS.htm"> GTFS</a></li>
+                  <li><a href="examplesTimetableVDV452.htm">VDV452</a></li>
+                  <li><a href="examplesTimetableHRDF.htm">HaFas</a></li>
+                </ul>
+              </ul>
+              <li><a href="history.htm">History</a></li>
+              <li><a href="termsOfUse.htm">Terms of Use</a></li>
+              <li><a href="contact.htm">Contact</a></li>
+            </ul>
+            <p class="navhdg">Related Standards</p>
+            <ul>
+              <li><a href="http://netex-cen.eu/">CEN NeTEx</a></li>
+              <li><a href="http://www.transmodel-cen.eu/">CEN Transmodel</a></li>
+              <li><a href="https://www.vdv.de/siri.aspx">SIRI</a></li>
+            </ul>
+            <p class="navhdg">Official sites</p>
+            <ul>
+              <li><a href="http://netex.uk/">UK NeTEx Profile</a></li>
+              <li><a href="https://www.vdv.de/netex.aspx">VDV NeTEx Profile</a></li>
+              <li><a href="https://www.cen.eu/Pages/default.aspx">CEN</a></li>
+            </ul>
+          </td>
+          <td id="content" height="400"><a name="v1.0a"></a>
+            <h3>Stop Data</h3>
+            <h4>Summary of mapping of Irish NaPTAN Stop data to NeTEx</h4>
+            <p> For timetables references to stops: </p>
+            <br>
+            <table class="grid signature" width="100%">
+              <tbody>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td> NaPTAN </td>
+                  <td><br>
+                  </td>
+                  <td>NeTEx</td>
+                </tr>
+                <tr>
+                  <td><strong>Rail, bus and coach&nbsp; station</strong>s,</td>
+                  <td><em><strong>StopArea </strong></em></td>
+                  <td>?</td>
+                  <td>SCHEDULED STOP POINT + STOP AREA..</td>
+                </tr>
+                <tr>
+                  <td><strong>On-street stops</strong></td>
+                  <td><em><strong>StopArea</strong></em></td>
+                  <td>?</td>
+                  <td>STOP AREA</td>
+                </tr>
+                <tr>
+                  <td>O<strong>n-street stops</strong></td>
+                  <td><em><strong>StopPoint </strong></em></td>
+                  <td>?</td>
+                  <td>SCHEDULED STOP POINT</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <p>Additionally, for physical stop data </p>
+            <table class="grid signature" width="100%">
+              <tbody>
+                <tr>
+                  <td><br>
+                  </td>
+                  <td> <strong></strong>NaPTAN </td>
+                  <td><br>
+                  </td>
+                  <td>NeTEx</td>
+                </tr>
+                <tr>
+                  <td><strong>Rail, bus and coach&nbsp; station</strong>s,</td>
+                  <td><em><strong>StopArea </strong></em></td>
+                  <td>?</td>
+                  <td>STOP PLACE, and STOP PLACE ENTRANCE.</td>
+                </tr>
+                <tr>
+                  <td><strong>On-street stops</strong></td>
+                  <td><em><strong>StopArea</strong></em></td>
+                  <td>?</td>
+                  <td>STOP PLACE. If there is no NaPTAN <em><strong>StopArea </strong></em>for
+                    a <em><strong>StopPoint,</strong></em><strong></strong> (or
+                    pair of points) &nbsp; one is created with the same name.</td>
+                </tr>
+                <tr>
+                  <td><strong>On-street stops</strong></td>
+                  <td><em><strong>StopPoint </strong></em></td>
+                  <td>?</td>
+                  <td>QUAY</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li>A STOP PLACE ASSIGNMENT can be used to associate a given
+                SCHEDULED STOP POINT with a given STOP PLACE and QUAY</li>
+            </ul>
+            <h3>Examples</h3>
+            <h4> Example as NeTEx </h4>
+            <ol>
+              <li><strong>Example XML documents with some Irish NaPTAN stops
+                  encoded in NeTEx format</strong>
+                <ul>
+                  <li> <a href="../netexie/schema/1.10/examples/standards/nta/NTA-PI-01_EI_NTA_STOP_NaPTAN-XXMinimal_2020801.xml">
+                      NTA-PI-01_EI_NTA_STOP_NaPTAN-XXMinimal_2020801.xml<br>
+                    </a></li>
+                  <li> <a href="../netexie/schema/1.10/examples/standards/nta/NTA-PI-01_EI_NTA_STOP_NaPTAN-XX_2020801.xml">
+                      NTA-PI-01_EI_NTA_STOP_NaPTAN-XX_2020801.xml<br>
+                    </a></li>
+                </ul>
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <tr id="footer">
+          <td style="text-align: center;" height="82"><a href="http://https://www.nationaltransport.ie/">
+            </a> <a href="http://www.netex.ei"><img src="images/ntaheader.png"
+                style="width: 172px; height: 112px;" border="0"></a> </td>
+          <td height="82">
+            <p><a href="http://www.cenorm.be/cenorm/index.htm"> <img src="images/logos/cen.jpg"
+                  style="width: 339px; height: 76px;"></a><img src="images/logos/eulogo.jpg"
+                style="width: 111px; height: 78px;"></p>
+            <p><a href="termsOfUse.htm">© Copyright NTA 2020<br>
+              </a>Page last Updated 2020/09/15</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

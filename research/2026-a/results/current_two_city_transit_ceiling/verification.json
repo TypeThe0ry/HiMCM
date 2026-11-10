@@ -1,0 +1,161 @@
+{
+  "status": "pass bounded acquisition ceiling",
+  "primary_model": "V204 unchanged",
+  "targets": [
+    "Helsinki",
+    "Dublin"
+  ],
+  "indicator": "public_transport_density",
+  "checks": [
+    {
+      "weight_reference": "fixed",
+      "scenario": "retained",
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.776782727425475,
+      "minimax_regret": 15.751955386687115,
+      "strict_choice_margin": 1.1863617370461554
+    },
+    {
+      "weight_reference": "fixed",
+      "scenario": "Dublin",
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.541418044167358,
+      "minimax_regret": 15.751955386687115,
+      "strict_choice_margin": 1.1863617370461554
+    },
+    {
+      "weight_reference": "fixed",
+      "scenario": "Helsinki",
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.537017194039386,
+      "minimax_regret": 15.751955386687115,
+      "strict_choice_margin": 1.1863617370461554
+    },
+    {
+      "weight_reference": "fixed",
+      "scenario": "Helsinki+Dublin",
+      "recommendation": [
+        "Oslo"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 15.301652510781269,
+      "minimax_regret": 15.751955386687115,
+      "strict_choice_margin": 1.1863617370461554
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "retained",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 18.302120833594717,
+      "minimax_regret": 15.760638509295092,
+      "strict_choice_margin": 0.04521949030134209
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "Dublin",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 17.837497750645298,
+      "minimax_regret": 15.760638509295092,
+      "strict_choice_margin": 0.04521949030134209
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "Helsinki",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 17.832261434354685,
+      "minimax_regret": 15.760638509295092,
+      "strict_choice_margin": 0.04521949030134209
+    },
+    {
+      "weight_reference": "equal",
+      "scenario": "Helsinki+Dublin",
+      "recommendation": [
+        "Zurich"
+      ],
+      "possible_champions": 16,
+      "necessary_champions": 0,
+      "mean_width": 17.367638351405265,
+      "minimax_regret": 15.760638509295092,
+      "strict_choice_margin": 0.04521949030134209
+    }
+  ],
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "design/task4_user_v204_snapshot.json": "71258047ac31c291d8304d3b1116659ac7a8e39ec2aa3bdff69a5c47d91ded52",
+    "scripts/task4_acquisition_limits.py": "a630708efa92554749362358dc1575c99f1c1563089e7a9c98c3e79c041de925",
+    "scripts/task4_ahp_mc_baseline.py": "7b51be6f7ca47e2ea6c77fcdbb227a7611d8804eaf17d9040776edb94398f99a",
+    "scripts/task4_cape_town_revision.py": "ae2136c2ba968c18d702201388054165afd71732f190ff137cae68b8a2a6c75a",
+    "scripts/task4_champion_acquisition.py": "7e78869d99547a94f984a7cabcfb55d00e949d5e64d9c9ac7f7a03c0e4d7744f",
+    "scripts/task4_cohort_outcomes.py": "098fb20a84c3774068a30bb42b45795db6cf17082e04db03261000073ff5b22f",
+    "scripts/task4_combined_evidence.py": "81b40759ad2e3ab203918e9ba277c5f6fa71295fa3e68558cc93eea71729bd7e",
+    "scripts/task4_continuous_preferences.py": "c9708384465a16460593a09c5bc0c69f317b0b13d16b8c0648dfb45c38555012",
+    "scripts/task4_continuous_recommendation.py": "250741357508722b52d15059653c9bed776d1ef2bd9a7cbb34a1327c7d7484d9",
+    "scripts/task4_current_model.py": "4ba4eef7a4994a7e8801190c76e59c20d3c0c591806933d4d6d7919a51acbe93",
+    "scripts/task4_current_two_city_transit_ceiling.py": "93699767cf533d741607034ad509faf96a4e65e09c6450164f6e070bf7970edf",
+    "scripts/task4_delhi_school_revision.py": "f7b352fb944afe74d3f72ae824e38b3ccac323746f50cd8e059447e13453f020",
+    "scripts/task4_education_year_update.py": "7d47e599e9d2d8f12aaa2c6f0fe227ee88f453fcbe9ba3169d7998e3398b32fe",
+    "scripts/task4_interval_decision.py": "7e53787bea4cc5915b8fb5fc0900287d328094da406e00a3f796edfae8e675b7",
+    "scripts/task4_melbourne_observed_travel.py": "27816a7b41a06a40aa5272a729f2847208df901caa5c14e20292239e4462c205",
+    "scripts/task4_robust_acquisition.py": "735dd4a59839731feec959bb13b257d8d53e530c6b445ec3412eda247317c6ce",
+    "scripts/task4_roster_coverage_comparison.py": "6706b77ea4735072da72352f07defd105c6a089ddb6711b6990def8236d89d88",
+    "scripts/task4_saopaulo_age_revision.py": "595385712603cc460af7a6b38055b6477864551bcaa6b754f2e15d8cefcf7b6a",
+    "scripts/task4_school_stage_revision.py": "cd0dea90e93435ebb1087edae8bb718693a4ac30161ce4818cc0ec1865946fd1",
+    "scripts/task4_singapore_coverage_revision.py": "0b78e6a5e06a3028e1a178a48f7e12c1d77bc9ae83a963793a4ae1ef8e84e576",
+    "scripts/task4_tokyo_coverage_revision.py": "c58d6f0669fc8df48124d5a95998b377b2a90c0781267906830624d34f5d287a",
+    "scripts/task4_tokyo_official_revision.py": "7cd6f6aad317a31e434a212b20e71574c33ecfc75a44eaafcb5ab23d672d74f3",
+    "scripts/task4_travel_evidence_index.py": "cb2a4d2604c5fb3b721915ae055ec2c0a6bf2d0492088dcd0bd829acdedc65d2",
+    "scripts/task4_user_city_indicators.py": "7d529ee3a617a5d3399baaa8a0eb97b0bb222da0c47b75f05acffa880291ef0a",
+    "scripts/task4_user_v118_revision.py": "da0c3776e118e3fc6959ece686579118cb7acb26686f475f4584b3bc1ac9ba24",
+    "scripts/task4_user_v120_revision.py": "334919482a8be4c54f23276c54b8b9b6b59498062c2896c644dc61a38a5eee86",
+    "scripts/task4_user_v121_revision.py": "2dc0d8944154364eb7046ce806f7d45b3f22626eea4dcfd2d1c17e796fd26cfc",
+    "scripts/task4_user_v124_revision.py": "77c17f5a453665cb9b91683caa7145ab6c3e217222f6b8d2fb9b0b99af684a3a",
+    "scripts/task4_user_v127_revision.py": "5a9409552c4af7d75f5e671127d49165ea8d8f204c26214fd64c8867ff8f5a5a",
+    "scripts/task4_user_v130_revision.py": "9a3f59ca17bf9708c50858f1a10471eb2fe6e0610729205c720aeceb15004e33",
+    "scripts/task4_user_v136_revision.py": "32b4db94bcb4c3d5af1b190734eb49129b2d82f6755b37323d0e7619e4924efe",
+    "scripts/task4_user_v154_revision.py": "93a74868a2dfed8e8249ec2498ef7699630e28508606b8ad8675b74e5ba77c30",
+    "scripts/task4_user_v181_revision.py": "68886cb17834b1bc2517aa84e36a13ed2affaaa1a97b311bf20c4a7479c08d61",
+    "scripts/task4_user_v192_revision.py": "df5bebdd6d280a3e8b7ebb3f57a7ed8ea48ccc966230fc411904bfd38f863ccf",
+    "scripts/task4_user_v197_revision.py": "06232c86e8d51105475e61195069837e18b7f8025dc5265854d4b3c613b497c0",
+    "scripts/task4_user_v200_revision.py": "7674043ca1febb4034fbe6a895ae71661945890724865282ac1d52dd0413d42e",
+    "scripts/task4_user_v202_revision.py": "0881aa4265f752b0523365e142f3c133eedb31e90ff0aac37973e23683eb029e",
+    "scripts/task4_user_v203_revision.py": "9a0e3a41b194c491967f368538199e1ea26a354178a286fb8081e953d81f7d7d",
+    "scripts/task4_user_v204_revision.py": "98212495822c17a7424507c8d6384eda20c3f254d8803114b042d3ef04a070c0",
+    "scripts/task4_v5_model.py": "7c54f26c55affd67b288cdf1f35f9fb042dc22406894955b0a9b55fcb33147e1",
+    "scripts/task4_v6_model.py": "15f879a269b276bee92b4ff1416abb791b6082c35117f1ecc7b418a952b859e8",
+    "scripts/task4_v7_model.py": "c647c1e6a821dc00b1692e789f8827a2e49cb0e52943e6441ca3ccb3607eff6f"
+  },
+  "output_sha256": {
+    "city_cases.csv": "ddf4e1a27b9686eb8ee998f098ee1188304755906a0d40fe034d81e4daa5081b"
+  },
+  "scalar_city_cases": 128,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "changes_primary_model": false,
+  "changes_manuscript": false,
+  "scope": "Hypothetical lower-bound refinements only; all upper bounds and other cells fixed. The utility-one endpoint is a relaxation, not a finite stop count or observed evidence. Endpoint monotonicity certifies unchanged strict conservative choices and 16 possible/0 necessary throughout the two-coordinate lower-bound box. It does not certify full rankings, other data/weight changes, or absence of value for narrowing individual city scores."
+}

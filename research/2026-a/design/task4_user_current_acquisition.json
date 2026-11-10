@@ -87,7 +87,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 37,
+    "routes": 53,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -942,5 +942,22 @@
     "verification_sha256": "5955c34709e7ffaaa9ef385e326994487481ea56ad4e098ce2cac9ad6f27e8f5",
     "peer_review": "results/current_zurich_transit_boundary_followup/peer_review.json",
     "peer_review_sha256": "64fc3642b6d3d68534376b2964a1df2c75f1ce52501a8e0ba7d4658b7cb7a7b5"
+  },
+  "two_city_transit_feasibility": {
+    "sources": [
+      "data/current_helsinki_stoparea_route/FINDINGS.md",
+      "data/current_dublin_stoparea_route/README.md"
+    ],
+    "verification": "results/current_two_city_transit_routes/verification.json",
+    "verification_sha256": "6178f21623ddf25bf924fa6b35ac8059deb6eaaa60fb4ef737cb47579b9dacc9",
+    "ceiling_verification": "results/current_two_city_transit_ceiling/verification.json",
+    "ceiling_verification_sha256": "8341d33052b2b9664aee986128c335c8006babbfe2204131cccd8db5b0a69e87",
+    "peer_review": "results/current_two_city_transit_ceiling/peer_review.json",
+    "peer_review_sha256": "f69ff1ab9393252124a1cfa3f5a25a736b5694dad05995b863d57dd04c46d677",
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "next_action": "Bounded routes closed pending HSL physical-area semantics or authorized Dublin populated feed. Joint transit lower-bound refinement alone cannot change choices or16/0 under retained V204 inputs. Prioritize matched decision-relevant education/travel evidence."
   }
 }
