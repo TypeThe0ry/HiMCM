@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 31,
+    "routes": 32,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -463,5 +463,30 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Offline JSON any-location education-tag diagnostic, not accredited HE inventory or polygon coverage. Primary original counts retained; existing point ledger not reclassified by this separate review."
+  },
+  "Oslo_HE_national_identity_crosswalk": {
+    "data": "data/current_oslo_he_crosswalk",
+    "verification": "results/current_oslo_he_crosswalk_review/verification.json",
+    "verification_sha256": "f757970b69bd971c5356564245b1f7941c4cc4efd8e2bff77168be3cf29833ed",
+    "archived_national_roster_entries": 48,
+    "archived_national_category_counts": [
+      11,
+      9,
+      15,
+      13
+    ],
+    "separate_January2026_national_total": 49,
+    "ROR_Oslo_label_records": 28,
+    "national_identity_matches": 16,
+    "institutionally_accredited_category_matches": 15,
+    "programme_only_category_matches": 1,
+    "unmatched_under_declared_identity_rules": 12,
+    "new_official_HTTP200_bodies": 3,
+    "municipal_HE_inventory_verified": false,
+    "original25_lineage_verified": false,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Identity matches to named national categories do not establish city inventory coverage. Unmatched is not ineligible. Original CSV25/34.4density and existing112point ledger retained."
   }
 }
