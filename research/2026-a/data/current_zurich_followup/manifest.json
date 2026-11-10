@@ -1,0 +1,38 @@
+[
+  {
+    "file": "zurich_teacher_gender.html",
+    "source_url": "https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/bevoelkerung/gleichstellung/bildung-berufswahl/lehrkraefte.html",
+    "final_url": "https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/bevoelkerung/gleichstellung/bildung-berufswahl/lehrkraefte.html",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "retrieved_utc": "2026-11-10T04:36:26.229024+00:00",
+    "bytes": 30051,
+    "sha256": "cf0621f44265a5fe6529a294989cad768dcbbf0b4abade17429224b5239d105a",
+    "scope": "2024 teacher employment gender proportions by school type, city and canton Z\u00fcrich; no compatible teacher FTE and pupil denominator on page",
+    "admission_decision": "reject: gender proportions do not establish a city school-resource teacher FTE/pupil ratio"
+  },
+  {
+    "file": "bfs_commute_2022.pdf",
+    "source_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/31525916/master",
+    "final_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/31525916/master",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "retrieved_utc": "2026-11-10T04:36:28.312145+00:00",
+    "bytes": 3056261,
+    "sha256": "94348a3c604c5f9e72b2238f839525030f5c4595693c64577e4cfdb8cc142e7e",
+    "scope": "Switzerland 2022 work commuters, one-way travel-time bins; national mean 29.6 minutes",
+    "admission_decision": "reject: national 2022 distribution not the retained Z\u00fcrich 39.9-minute observation population"
+  },
+  {
+    "file": "teacher_gender_chart.csv",
+    "source_url": "https://www.stadt-zuerich.ch/content/dam/web/de/politik-verwaltung/statistik-und-daten/daten/bevoelkerung/gleichstellung/chart32a.csv",
+    "final_url": "https://www.stadt-zuerich.ch/content/dam/web/de/politik-verwaltung/statistik-und-daten/daten/bevoelkerung/gleichstellung/chart32a.csv",
+    "http_status": 200,
+    "content_type": "text/csv;charset=utf-8",
+    "retrieved_utc": "2026-11-10T04:38:24.455896+00:00",
+    "bytes": 420,
+    "sha256": "c02ddf59b3b620a4e12d017121244c3ce6881e7a18f12f6c18aca16c1be6645a",
+    "scope": "Linked underlying chart schema stufe,sex,wert: seven school-type groups with female/male percentages; no teacher headcounts, teaching FTE or pupil count",
+    "admission_decision": "reject: gender percentages alone cannot establish matched teaching FTE or pupil-teacher ratio"
+  }
+]

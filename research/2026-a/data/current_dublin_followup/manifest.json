@@ -1,0 +1,36 @@
+{
+  "search_queries": [
+    "site:gov.ie Ireland post primary school individual school teaching full time equivalent enrolment Dublin city statistics school",
+    "site:cso.ie Dublin city post primary school pupil teacher ratio teaching full time equivalent school level"
+  ],
+  "records": [
+    {
+      "url": "https://data.gov.ie/en_GB/dataset/schools-in-dublin-region?package_type=dataset",
+      "final_url": "https://data.gov.ie/en_GB/dataset/schools-in-dublin-region?package_type=dataset",
+      "retrieved_utc": "2026-11-10T04:36:48.153628+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "filename": "dublin_region_catalogue.html",
+      "sha256": "d664ed74c183250635036320c819ebb01b57f0d3ccfcf80e7bcc56d61d215c2d",
+      "bytes": 33588,
+      "scope": "2019/20 Dublin region school catalogue; council-area filter; enrolments, no established teaching FTE"
+    },
+    {
+      "url": "https://www.gov.ie/en/department-of-education/collections/data-on-individual-schools/",
+      "retrieved_utc": "2026-11-10T04:36:49.347712+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "scope": "Individual-school enrolment reports; no published school teaching FTE identified"
+    },
+    {
+      "url": "https://data.smartdublin.ie/dataset/b5ccf3b7-0eea-4dc9-acda-617e9463e5e4/resource/7879d601-710c-4969-a576-9ad5cd80d2bb/download/post-primary-schools-2019-2020-1.xlsx",
+      "final_url": "https://data.smartdublin.ie/dataset/b5ccf3b7-0eea-4dc9-acda-617e9463e5e4/resource/7879d601-710c-4969-a576-9ad5cd80d2bb/download/post-primary-schools-2019-2020-1.xlsx",
+      "retrieved_utc": "2026-11-10T04:37:41.031093+00:00",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "filename": "post_primary_2019_2020.xlsx",
+      "sha256": "539779c6b1ce3aef7c3b17e8a8d4204d6134235e8d92bc114f5a463c24d1b84a",
+      "bytes": 41250,
+      "scope": "2019/20 Dublin-region post-primary school resource; inspect fields for teaching FTE"
+    }
+  ]
+}

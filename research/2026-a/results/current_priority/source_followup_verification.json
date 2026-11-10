@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "primary": "V202 unchanged",
+  "successful_originals": [
+    {
+      "directory": "current_zurich_followup",
+      "file": "zurich_teacher_gender.html",
+      "sha256": "cf0621f44265a5fe6529a294989cad768dcbbf0b4abade17429224b5239d105a",
+      "bytes": 30051,
+      "http_status": 200
+    },
+    {
+      "directory": "current_zurich_followup",
+      "file": "bfs_commute_2022.pdf",
+      "sha256": "94348a3c604c5f9e72b2238f839525030f5c4595693c64577e4cfdb8cc142e7e",
+      "bytes": 3056261,
+      "http_status": 200
+    },
+    {
+      "directory": "current_zurich_followup",
+      "file": "teacher_gender_chart.csv",
+      "sha256": "c02ddf59b3b620a4e12d017121244c3ce6881e7a18f12f6c18aca16c1be6645a",
+      "bytes": 420,
+      "http_status": 200
+    },
+    {
+      "directory": "current_dublin_followup",
+      "file": "dublin_region_catalogue.html",
+      "sha256": "d664ed74c183250635036320c819ebb01b57f0d3ccfcf80e7bcc56d61d215c2d",
+      "bytes": 33588,
+      "http_status": 200
+    },
+    {
+      "directory": "current_dublin_followup",
+      "file": "post_primary_2019_2020.xlsx",
+      "sha256": "539779c6b1ce3aef7c3b17e8a8d4204d6134235e8d92bc114f5a463c24d1b84a",
+      "bytes": 41250,
+      "http_status": 200
+    }
+  ],
+  "manifests_sha256": {
+    "current_zurich_followup": "39d45a7047139302040dcfee6490799002b477cbd120fc162a0048269d160af0",
+    "current_dublin_followup": "678fef2e747a8ed8fc258239e8cbe993b7e3eb3292f020a208098701756da48e"
+  },
+  "teacher_gender_chart_fields": [
+    "stufe",
+    "sex",
+    "wert"
+  ],
+  "teacher_gender_chart_rows": 14,
+  "dublin_workbook_headings": [
+    "Roll Number",
+    "Official School Name",
+    "Address 1",
+    "Address 2",
+    "Address 3",
+    "Address 4",
+    "County",
+    "Local Authority",
+    "Eircode",
+    "Principal Name",
+    "Email",
+    "Phone",
+    "DEIS (Y/N)",
+    "Gaeltacht Area Location (Y/N)",
+    "Island Location (Y/N)",
+    "Fee Paying School (Y/N)",
+    "Pupil Attendance Type",
+    "School Gender - Post Primary",
+    "Irish Classification - Post Primary",
+    "Post Primary School Type",
+    "Ethos/Religion",
+    "FEMALE",
+    "MALE",
+    "TOTAL (2019-20)"
+  ],
+  "blocked_capture_status": 403,
+  "immutable_science_bindings": 476,
+  "paper_dependencies": 7,
+  "primary_admissions": 0,
+  "actual_width_reduction": 0,
+  "scope": "Captured bytes and selected content/schema assertions; no proof of universal data absence or independent validation of all provider statistics",
+  "script_sha256": "4e5acaebcd7c5bd8414498f34edcda6dc93ba8e5468674b24cda8fcf6bcf84a3"
+}

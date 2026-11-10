@@ -10,7 +10,7 @@
 
 当前地图来源见[CURRENT_SPATIAL_UPDATE.md](CURRENT_SPATIAL_UPDATE.md)；当前审计results/current_paper_review/current_verification.json与verification.json；当前交付同目录delivery_verification.json：48项／61锚点／12实质待办。单main本地27页全部文字及灰度像素与独审稿一致，985归档、当前镜像、原生页眉空页脚通过。服务器预览未核；真实注册、全队AI与最终比赛提交保持待验证。冻结版本审计指向归档旧路径，不按旧P目录直接重跑。
 
-居民网格卫星／定量3D图仍在第16页，新闻第19页一页。当前476科学绑定、独立核查与交付记录见results/current_paper_review/；早期V202科学审查的staged标记保留创建时点，当前注册表决定启用状态。下一轮将旧V200的48不确定格采集价值重基至V202；OCBC已准入，不重复迁移。失败来源跳过，不发送外部联系请求。分别fetch、审diff、commit/push并核远端HEAD；在线编译预览未核。
+居民网格卫星／定量3D图仍在第16页，新闻第19页一页。当前476科学绑定、独立核查与交付记录见results/current_paper_review/；早期V202科学审查的staged标记保留创建时点，当前注册表决定启用状态。48不确定格采集价值已重基至V202并独审，见CURRENT_DATA_UPDATE.md与results/current_priority/verification.json；OCBC已准入，不重复迁移。Zurich性别比例页及底层CSV、全国2022通勤分布和Dublin2019–20仅学生数表均无法匹配，0准入；本轮5份新原件审查见source_followup_verification.json。下一轮跳过这些失败来源，不发送外部联系请求。分别fetch、审diff、commit/push并核远端HEAD；在线编译预览未核。
 
 ## 冻结恢复档案（以下为历史，不作为当前入口）
 
