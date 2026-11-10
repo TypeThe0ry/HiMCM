@@ -1,0 +1,15 @@
+{
+  "status": "pass bounded independent source review",
+  "reviewer": "gpt-6-luna subagent tbz_packet_check",
+  "source_sha256": {
+    "data/current_zurich_tbz_workload_route/report2024.pdf": "12b89332a94bfdc43ac64eb43ae838ff68c25aeb1ec7a7720661f9ef8183aca6",
+    "data/current_zurich_tbz_workload_route/report2024.txt": "6e4b120e91bb2e8aec6fe7e1c4121aa6c97499675821c155dd51c8345e3c99fc"
+  },
+  "checks": [
+    "Full pdftotext -layout output byte-identical to archived extraction",
+    "PDF pages33–34 match printed33–34:3132+427=3559 basic vocational learners;240 continuing-education students",
+    "173 is Lehrpersonen inkl.Abteilungsleitung, a person count; no matched teaching FTE/workload allocation in the staff block"
+  ],
+  "primary_admissions": 0,
+  "scope": "Read-only archived source review; no new network, model or manuscript edits."
+}
