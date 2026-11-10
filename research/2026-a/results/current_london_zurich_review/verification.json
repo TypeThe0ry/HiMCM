@@ -1,0 +1,59 @@
+{
+  "status": "pass scoped source review",
+  "new_successful_HTTP_bodies": 2,
+  "new_blocked_HTTP403_body": 1,
+  "independent_readers": {
+    "workbook": "Standard-library OOXML shared strings, header9 and row14261",
+    "broadband": "HTMLParser compared with separate regex extractor; city-row byte coordinates and download header checked"
+  },
+  "reused_original_workbooks": 1,
+  "school_record": {
+    "URN": 140564,
+    "row": 14261,
+    "classroom_teacher_FTE_published": 11.2,
+    "leadership_FTE_published": 6.6,
+    "all_teacher_FTE_published": 17.8,
+    "strict_target_stage_lower_bound_verified": false
+  },
+  "London_complete_pupil_upper_bound_verified": false,
+  "London_PTR_utility": [
+    0,
+    1
+  ],
+  "Zurich_broadband": {
+    "publisher_match_Mbps": 286.35,
+    "statistic": "fixed broadband median download",
+    "publication_label": "September 2026",
+    "rolling_period": "Previous three months per page; exact city-row start/end unverified",
+    "original_input_lineage_verified": false,
+    "municipal_boundary_equivalence_verified": false
+  },
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "core_bindings_checked": 548,
+  "supplemental_bindings_checked": 77,
+  "withdrawal_evidence_entries_checked": 10,
+  "edition_evidence_entries_checked": 24,
+  "paper_dependencies_each_copy": 7,
+  "current_PDF_unchanged": true,
+  "source_sha256": {
+    "data/current_london_teacher_envelope/README.md": "df904ffde19ec7725704ddb44972e32a8b2f65ad18833fec31d77acf96adf160",
+    "data/current_london_teacher_envelope/offline_record.json": "fc2f33b2be7dc58f74297143f1940bab6f4addbbdcf31df013719c3384711b53",
+    "data/current_london_teacher_envelope/raw/pupil_census.html": "78faf47e6ef61e37e0f863e9ee195328045c621d9e0686b5b4c9ae99468153b2",
+    "data/current_london_teacher_envelope/raw/school_register.html": "03579cf65b2c40fb6cfb017f91bb6a5d5ea83be8a4a2b1e6276d9d42cc4b2426",
+    "data/current_london_teacher_envelope/raw/workforce_catalogue.html": "b79e092a76c3c11cc52f7e81315a6fb79e26b53fd0fd36c6719f502f49b9bb5d",
+    "data/current_london_teacher_envelope/receipts.json": "9ce5075af361ef58f711fa0b72053b915d5a2dc7c9f4d02eca34a2402aee36a5",
+    "data/current_london_teacher_envelope/scope.json": "5fea059e165077b0729c18098472043f4355e57cd0c4bdc202db67d0ab3cee90",
+    "data/current_zurich_broadband_source/README.md": "a8d802b54ffe1b6aedfca1d6fd5113ce5e0d93b16f6377483f3cbc58763d4dee",
+    "data/current_zurich_broadband_source/extract.py": "5ce5335923f31c6c592b5dedf825a411a35f1d0a2b174ba88dd99b3c3e0ea2fb",
+    "data/current_zurich_broadband_source/scope.json": "261ac8e136ebb087ce757acde4ac66a0bd2ea8e8cd404953bedefd36864d07de",
+    "data/current_zurich_broadband_source/source_reuse_receipt.json": "44dd86ad5f6aa920a22a9c4ee21403e81e9c7ae973bbd1c18ea7d11affc48934",
+    "data/task4_v36_london/workforce.xlsx": "8a90bb200fa76c3ba8d4a0a87d8e7258ae61bce5ee766586e2527e202a1d368e",
+    "data/task4_v36_london/manifest.json": "44dbf28763c07f40b3cc09abc467af113a39284fc63a6dbfd5135d9020ed159c",
+    "data/task4_v5_resources/ookla_global_index.html": "fe1747fc44f1273eaf43e8acda26c6c3e6ab48d4e614716a551f937446b02e9b",
+    "data/task4_v5_resources/manifest.json": "bff1974aba03afc70fd629219e316d64df175839f6c18e7f88af7f272a48b946",
+    "scripts/audit_current_london_zurich_sources.py": "174e9935fcb5e6c938ee562fae8805e4abc81919f2a9231e913e7e58f613b6e1",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3"
+  },
+  "scope": "Actual published school FTE row and exact publisher broadband match; no complete city teacher ratio, FTE contact-hour conversion, original input lineage, municipal-boundary certification, new observation or paper/model change. Reference-pair proxy is distinct from common-date measurement; neither resolves the incomplete all-provider pupil envelope."
+}

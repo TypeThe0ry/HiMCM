@@ -84,7 +84,7 @@
   },
   "source_route_index": {
     "file": "design/task4_current_source_routes.csv",
-    "routes": 24,
+    "routes": 26,
     "scope": "Selected reviewed high-priority missing-cell and retained-point source routes; not an exhaustive source inventory",
     "purpose": "Avoid repeating documented incompatible/failed requests; reopen with new matching evidence"
   },
@@ -309,5 +309,31 @@
     "actual_primary_width_reduction": 0,
     "changes_manuscript": false,
     "scope": "Independent source values/definitions documented without certifying the original input measurement matrix or replacing user values."
+  },
+  "london_teacher_and_zurich_broadband_followup": {
+    "data": [
+      "data/current_london_teacher_envelope",
+      "data/current_zurich_broadband_source"
+    ],
+    "verification": "results/current_london_zurich_review/verification.json",
+    "verification_sha256": "23c096c843419fee0caee54854a369ff5bbc24d2b25bce5c760c771c903fb8e3",
+    "new_successful_HTTP_bodies": 2,
+    "new_blocked_HTTP403_body": 1,
+    "reused_original_workbook": true,
+    "published_classroom_teacher_FTE_candidate": 11.2,
+    "verified_target_stage_teacher_lower_bound": false,
+    "complete_pupil_upper_bound": false,
+    "London_PTR_utility": [
+      0,
+      1
+    ],
+    "Zurich_publisher_value_match": 286.35,
+    "Zurich_publisher_field": "fixed broadband median download",
+    "publication_label": "September2026,rolling previous3months perpage",
+    "original_CSV_extraction_lineages_established": 0,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "changes_manuscript": false,
+    "scope": "Compatible contract teachingFTE permitted; no contact-hour conversion required. Official Jan/NovPTR reference-pair convention is not same-date measurement. Source row and broadband field verified without constructing an unsupported city interval."
   }
 }

@@ -1,0 +1,13 @@
+# London teacher-envelope source check
+
+The archived November 2024 school workforce table identifies a real school-specific candidate: **11.2 classroom-teacher contract FTE** at King's College London Maths School, URN 140564, separately from 6.6 leadership-teacher FTE. The row records Lambeth, Inner London, and a 16–19 free school. This is a newly located record in an existing original workbook, not a new observation or a citywide teacher total. Exact cells, headers and source hash are in [offline_record.json](offline_record.json).
+
+**No city bound is admitted; London's teacher-ratio utility remains [0,1].** A pupil upper bound covering all target providers, including relevant FE routes, has not been established. The candidate's target-stage duty allocation and a strict one-sided publication-rounding envelope also remain unverified. Actual compatible contract teaching FTE is permitted by the retained model; it need not be converted to classroom contact hours.
+
+If a verified teacher subset supplies T_min > 0 and a compatible complete pupil superset supplies N_max, the city pupil/teacher ratio is at most N_max/T_min, giving utility at least 15/(15+N_max/T_min). The teacher and pupil scopes must correspond to the declared reference basis. This investigation supplies neither verified bound and constructs no numeric interval.
+
+Three direct official routes are archived. The school-register request returned HTTP 403 and supplies no current register record. The workforce catalogue and January 2025 school-pupil release returned HTTP 200. The census covers state-funded and independent school categories; the reviewed release does not establish a pupil superset covering all relevant FE and other providers. It cannot alone supply N_max.
+
+The pupil release explicitly defines its published PTR using January pupil census and November teacher census. That supports a declared reference-pair proxy, not contemporaneous measurement; different dates alone do not invalidate that published convention. No common-date coverage envelope or complete all-provider pupil cap is established here. The lack of a complete cap independently prevents admission under either reference interpretation.
+
+[receipts.json](receipts.json) distinguishes the two successful page bodies from the blocked response. The workbook is referenced at its existing archive path rather than copied. Search snippets are leads, not original school-register evidence. No CSV, weights, rules, model, manuscript or prior source file was changed. Existing V36, V62, V63 and V118 routes remain distinct; none is claimed as a new download.

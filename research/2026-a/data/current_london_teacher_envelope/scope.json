@@ -1,0 +1,21 @@
+{
+  "route": "national pupil upper bound / London upper-secondary actual teacher-FTE lower bound",
+  "status": "not established",
+  "main_admitted": false,
+  "teacher_lower_bound": null,
+  "pupil_upper_bound": null,
+  "utility_interval": [
+    0,
+    1
+  ],
+  "failures": [
+    "School-level classroom teacher FTE observed but exact stage allocation and strict one-sided rounding not established",
+    "National school census does not establish all target FE and other provider coverage"
+  ],
+  "teacher_candidate_fte_published": 11.2,
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "reference_pair_scope": "DfE explicitly defines its published PTR using January pupil census and November teacher census. Such a declared reference-pair proxy is not rejected solely for differing dates; neither same-date containment nor complete coverage of the required pupil superset is established here.",
+  "contract_FTE_permitted": true,
+  "contact_hours_conversion_required": false
+}

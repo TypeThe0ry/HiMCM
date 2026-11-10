@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "city_csv_label": "Zurich",
+  "publisher_city_label": "Zürich",
+  "country": "Switzerland",
+  "indicator": "fixed broadband download speed",
+  "publisher_measure_field": "fixedMedian",
+  "statistic": "median",
+  "direction": "download",
+  "network": "fixed broadband",
+  "publisher_value_mbps": 286.35,
+  "publisher_rank": 18,
+  "publication_label": "September 2026",
+  "period_note": "Publisher page says results are updated mid-month for the previous three months; retained page does not state exact start/end dates for this city row.",
+  "source_url": "https://www.speedtest.net/global-index",
+  "archive_access_date": "2026-11-07",
+  "archive_access_utc": null,
+  "original_csv_extraction_url": null,
+  "original_csv_extraction_time": null,
+  "archive_file": "data/task4_v5_resources/ookla_global_index.html",
+  "source_sha256": {
+    "data/task4_v5_resources/ookla_global_index.html": "fe1747fc44f1273eaf43e8acda26c6c3e6ab48d4e614716a551f937446b02e9b",
+    "data/task4_v5_resources/manifest.json": "bff1974aba03afc70fd629219e316d64df175839f6c18e7f88af7f272a48b946",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c"
+  },
+  "publisher_row_html": "<tr class=\"data-result results\" data-index-number=\"18\">\n                                  <td class=\"rank actual-rank\">18</td>\n                                  <td class=\"rank rank-change\"><span class=\"tooltip positive\"title=\"Up 3 places since last month\">+3</span></td>\n                                  <td class=\"country\">\n                                    <a href=\"/global-index/switzerland?city=Zürich#fixed\">Zürich</a>, <span class=\"country_display\">Switzerland</span>\n                                  </td>\n                  \n                  \n                                  <td class=\"speed\">286.35</td>\n                                </tr>",
+  "extraction_coordinates": {
+    "section_id": "column-fixedMedian",
+    "row_link": "href=\"/global-index/switzerland?city=Zürich#fixed\"",
+    "line_start_1based": 9662,
+    "line_end_1based": 9671,
+    "byte_start_0based": 699264,
+    "byte_end_exclusive": 699923,
+    "html_cells": [
+      "18",
+      "+3",
+      "Zürich , Switzerland",
+      "286.35"
+    ]
+  },
+  "source_footer": "Results are updated mid-month for the previous three months.",
+  "submitted_value_matches_publisher": true,
+  "original_csv_extraction_lineage_verified": false,
+  "municipal_boundary_equivalence_verified": false,
+  "primary_admissions": 0,
+  "model_or_paper_changed": false,
+  "scope": "Exact publisher value, field and publication-label match. It does not establish the original CSV extraction route, exact city-row measurement dates, representativeness, or equivalence between the publisher city geography and Zurich city proper."
+}
