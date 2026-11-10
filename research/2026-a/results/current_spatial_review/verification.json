@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "scope": "Independent offline geometry/numeric/provenance and local compiled layout audit; original POI ground truth, individual access and online Overleaf compile not certified",
+  "pdf_sha256": "00c48b8809172e46d86f93111355388b89342dc17a693b7bada84639b854c4e2",
+  "main_tex_sha256": "7abf9e3e550583dc70b39d6b11b015fac94edb4cef6b06d97645d90faf20a200",
+  "total_pages": 27,
+  "main_reference_pages": 25,
+  "ai_pages": 2,
+  "figure_page": 16,
+  "news_page": 19,
+  "reference_count": 59,
+  "header_and_footer": "Pages 2 onward checked Team # 18213 and Page x of y; footer content not machine-certified; registration provisional",
+  "minimum_figure_font_pt_poppler_rounded": 9.333333333333334,
+  "figure_pdf_sha256": "6f4ff894842277139db41d2a318b5da6358e02a74525d0d588a3c384a11e99db",
+  "figure_source_and_overleaf_identical": true,
+  "metrics": [
+    {
+      "city": "Singapore",
+      "zip_sha256": "9545a8cc4c6be66bd6528a3dc17ea06d67fdcd6c9622c0f62c2a29351b7a3f27",
+      "total_cells": 5400,
+      "positive_cells": 3657,
+      "unknown_residents": 0.0,
+      "retained_residents": 5826786.0,
+      "within30_residents": 5484655.0,
+      "within30_share": 0.9412830675435824,
+      "max_minutes": 147.22,
+      "bounds_epsg3857": [
+        11531858.603690077,
+        138227.11000066964,
+        11579401.626451693,
+        165070.24276512186
+      ],
+      "scale_bar_km_wgs84_approx": 5.00000928952444
+    },
+    {
+      "city": "Zurich",
+      "zip_sha256": "06667b28f0b4d729ae21626d2262a2da3be969ee24607535cd5a9bf622c578b1",
+      "total_cells": 845,
+      "positive_cells": 703,
+      "unknown_residents": 0.0,
+      "retained_residents": 401551.56637847703,
+      "within30_residents": 401412.7400657225,
+      "within30_share": 0.9996542752553387,
+      "max_minutes": 33.47,
+      "bounds_epsg3857": [
+        939551.712990451,
+        5993548.351735476,
+        960735.2243214995,
+        6014083.287703035
+      ],
+      "scale_bar_km_wgs84_approx": 2.0036348320286153
+    }
+  ],
+  "manifest_sha256": {
+    "imagery_manifest.json": "e61b24336226383b09f5878869b4e622a351ec05e2cdb754184324a65d6d6457",
+    "fallback_manifest.json": "1d74de67888a19c146459a452843458ca0d51989f28b8025b1e08027563af36d"
+  },
+  "raw_imagery_sha256": {
+    "imagery/singapore_2024-06-27.png": "0f60da64778c25377c15069448919bcb918455d15431019aaef6e7542233f372",
+    "imagery/singapore_2024-06-22.png": "0f60da64778c25377c15069448919bcb918455d15431019aaef6e7542233f372",
+    "imagery/singapore_2024-06-17.png": "0f60da64778c25377c15069448919bcb918455d15431019aaef6e7542233f372",
+    "imagery/zurich_2024-06-27.png": "9584803a24303b139cf0350fab177748ef3a295f8882aff42dc59db781d7c964",
+    "imagery/zurich_2024-06-22.png": "0f60da64778c25377c15069448919bcb918455d15431019aaef6e7542233f372",
+    "imagery/zurich_2024-06-17.png": "0f60da64778c25377c15069448919bcb918455d15431019aaef6e7542233f372",
+    "imagery/singapore_modis_2024-06-27.png": "9d10afb3a3321ab22618bc564e8c52bfd08b5847a0b6399d504ba27aba2a7ca2"
+  },
+  "snapshot_sha256": "b233c3915f151f02bb9c52c7e897a56efa07ea4705d2a69a585779975e15f5b0",
+  "science_bindings_checked": 407,
+  "science_binding_mismatches": {},
+  "figure_claims": "Modelled grid mean to 20 generic Learning POIs, not student trips or pool access; snapshot 2026-11-07; source city dates unknown; Zurich WMS request date is not verified granule acquisition",
+  "limitations": "Scale bars approximate WGS84 east-west distance at stated latitude; 3D heights and colors share 0\u2013150 min; no physical elevation. Visual occlusion and full-page legibility require visual review."
+}

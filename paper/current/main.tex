@@ -24,9 +24,23 @@ keywordsinsheet=true,titlepage=false,abstract=true}
 \hypersetup{pdftitle={Choosing a City for High-School Life with Incomplete Evidence},pdfauthor={}}
 \graphicspath{{./}{figures/}}
 % V201 manuscript assets from V200 evidence and controlled extensions; historical cases retained.
-\newcommand{\EquityCase}{A separate Shanghai school-resource case uses 16 districts, 235,542 regular senior-secondary pupils and 23,999 full-time teachers in the 2025 school year. The pooled utility is 0.604481; the student-weighted mean of district utilities is 0.603267. Ordering districts by resource utility and averaging the bottom 20\% of pupil mass, with fractional inclusion of the boundary district, gives 0.580954, 0.022313 below the weighted mean. These are district-homogeneous school-location resource scenarios, not observed individual teacher exposure or resident accessibility \cite{shanghai}.  }
-\newcommand{\AgeCase}{A historical Istanbul household survey offers current-high-school groups aged 14--15 and 16--18. Their travel-utility marginal bounds overlap: $[0.35961,0.55711]$ and $[0.29347,0.59346]$, respectively. They include unknown durations and optional members; shared unknown-age mass means their extrema need not be jointly attainable. They describe 2012 broad groups, not exact ages fourteen and eighteen today. Singapore's MOE table records 38,555 students aged fourteen and only 165 aged eighteen at the start of 2020 still in secondary schooling; the latter is not an all-eighteen-year-old resident denominator. These counts cannot be joined to census school-stage travel bins without a matching population/reference-day table \cite{istanbul,sgage}.  }
-\newcommand{\CountryInterpretation}{Phoenix has higher retained affordability utilities than New York. Mumbai has the higher PM$_{2.5}$ utility, while Delhi has higher living-cost, housing, school-resource and broadband utilities in the retained evidence. The cases inherit the historical study's geographic and educational scope; their score pairs overlap, so neither case identifies a necessary overall winner.  }
+\newcommand{\EquityCase}{A separate 2025 Shanghai school-location case covers 16 districts,
+235,542 regular senior-secondary pupils and 23,999 full-time teachers.
+Pooled resource utility is 0.604481 and the pupil-weighted district mean is
+0.603267. The bottom 20\% of pupil mass, with fractional boundary inclusion,
+has mean 0.580954, a gap of 0.022313. These district-homogeneous resource
+utilities measure neither individual teacher exposure nor resident access
+\cite{shanghai}.}
+\newcommand{\AgeCase}{Istanbul's 2012 household survey provides current-high-school
+age groups 14--15 and 16--18. Their travel-utility marginal bounds overlap:
+$[0.35961,0.55711]$ and $[0.29347,0.59346]$. Unknown durations, optional members
+and shared unknown-age mass mean these extrema need not be jointly attainable.
+They do not identify today's exact ages fourteen and eighteen. Singapore's
+2020 MOE table records 38,555 fourteen-year-olds and 165 eighteen-year-olds
+in secondary schooling. The latter is not a resident denominator; these counts
+cannot join census school-stage travel bins without matched populations and
+reference days \cite{istanbul,sgage}.}
+\newcommand{\CountryInterpretation}{Phoenix has higher retained affordability utilities than New York. Mumbai has the higher PM$_{2.5}$ utility; Delhi leads in living-cost, housing, school-resource and broadband utilities. Both score pairs overlap. }
 \newcommand{\CaseReferences}{\bibitem{shanghai} Shanghai Municipal Education Commission. Regular secondary-school pupil and teacher tables, school year 2025. \url{https://edu.sh.gov.cn/xxgk2_zhzw_tjsj_01/20260610/890926a33cbf443d9abf07c6f65b7734.html}. \bibitem{istanbul} Istanbul Metropolitan Municipality. 2012 household transport survey, official data-portal response resource \texttt{a75118db-28c9-4fdf-b367-d5933b7bb810}; questionnaire, report and nonidentifying aggregate audit archived. \bibitem{sgage} Singapore Ministry of Education. Secondary enrolment by level and age, 2020. \url{https://data.gov.sg/datasets/d_cc84fc751ef5106d9e26cfdbf61776c8/view}.  }
 \newcommand{\CurrentMeanWidth}{15.95813}
 \newcommand{\TotalWidthReduction}{15.16}
@@ -646,12 +660,37 @@ Citywide facilities per resident measure supply. Student access additionally
 depends on fees, opening hours, transport, disability access and location;
 identifying its distribution requires matched students and qualifying facilities.
 
-\EquityCase
+An auxiliary spatial view retains the residents and generic Learning POIs in
+Bruno et al.'s published grids \cite{brunogrids}. In Singapore, 94.13\% of retained
+residents live in cells with modelled mean walking time at most 30 minutes to
+20 Learning POIs; Zurich's share is 99.97\% (Figure~\ref{fig:walktime-context}).
+These grid means describe neither student trips nor access to the counted pools;
+they remain separate from the primary scores.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\linewidth]{figures/walktime_context.pdf}
+\caption{Modelled access to general learning facilities in retained resident grids.
+Colours and heights encode each cell's mean walking time to 20 Learning POIs,
+using a common 0--150 minute scale; height is not terrain or buildings.
+The labelled percentages weight qualifying cells by retained resident population.
+The cities have different horizontal extents, and empty cells are not a water mask.
+Zurich's NASA HLS S30/GIBS background was requested for 27 June 2024;
+cloud remains visible, and Singapore has no satellite backdrop \cite{nasagibs}.
+Grids are the author-platform snapshot accessed 7 November 2026; underlying
+city input dates are unstated. They do not measure high-school or pool access
+\cite{brunogrids}.}
+\label{fig:walktime-context}
+\end{figure}
+
+\EquityCase\par
+\begin{samepage}
 For districts $d$ with pupil counts $n_d$ and pupil--teacher ratios $r_d$,
 the pupil-weighted utility is
 $\bar u=\sum_d n_d\,15/(15+r_d)/\sum_dn_d$.
 Its difference from pooled utility reflects aggregation; school-location data
 establish neither resident travel access nor policy effects.
+\par\end{samepage}
 
 For Istanbul's retained 2012 high-school cohort aged 14--18, let $L_{0.2}$
 be the lowest-20\% weighted mean travel utility, with fractional boundary
@@ -670,7 +709,7 @@ supports these historical feasibility results, not current facility-use estimate
 
 \AgeCase
 
-The shared-membership constraint permits both historical age-group orderings. For younger-minus-older mean travel utility, the joint closure is $[-0.23330,0.26325]$, assigning the shared unknown-age mass once. Two separate completions with unknown utilities 0.05 and 0.95 give contrasts $+0.23842$ and $-0.20848$. Both use finite durations and allocate the shared mass to the younger group. The closure endpoints allow zero utility as a limiting value; the two reversals use strictly interior values. These are feasibility constructions within the retained 2012 aggregate uncertainty set, not observed age effects.
+Assigning shared unknown-age mass once gives younger-minus-older mean travel utility the joint closure $[-0.23330,0.26325]$. Two finite-duration completions use unknown utilities 0.05 and 0.95, allocate the shared mass to the younger group, and yield contrasts $+0.23842$ and $-0.20848$. Closure endpoints allow zero utility as a limit; the interior reversals are feasibility constructions for the retained 2012 aggregates, not observed age effects.
 
 
 Comparing exact ages fourteen and eighteen requires matched resident utilities
@@ -703,10 +742,10 @@ neither pair identifies a necessary overall winner \cite{legacycase,numbeocase,w
 
 
 \CountryInterpretation
-Affordability contrasts use Numbeo's 2025 named-city aggregates
-\cite{numbeocase}; the Mumbai--Delhi air contrast uses 2021 WHO monitoring
-means \cite{whocase}. These source scopes are retained in the case source index.
-These descriptive contrasts do not identify a national causal effect.
+Affordability uses Numbeo's 2025 named-city aggregates \cite{numbeocase};
+Mumbai--Delhi air uses 2021 WHO monitoring means \cite{whocase}.
+The retained historical city and education scopes identify neither a necessary
+winner nor a national causal effect.
 
 \FloatBarrier
 
@@ -719,37 +758,21 @@ revision changes 13 decision ranks. Families can compare priorities and source b
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
 \section*{A city choice built around a student's day}
+Our comparison of sixteen cities across ten aspects of high-school life gives students and families a starting point for weighing everyday trade-offs. Under the retained team inputs, Zurich is the cautious recommendation; an education-focused profile points to Singapore. The priorities are analyst-designed using the Analytic Hierarchy Process (AHP), not drawn from a student survey.
 
-Under the retained team inputs, Zurich is the cautious recommendation emerging from our comparison of sixteen cities for high-school life. An alternative that places greater emphasis on education points to Singapore. Together, these findings offer students and families a practical starting point: a city comparison that connects everyday opportunities with personal priorities while keeping gaps in the evidence visible.
+The measures cover teaching resources, higher education, air quality, safety, housing and living costs, transport stops, journey time, internet access and swimming facilities. Missing or partial figures remain ranges instead of being filled with invented averages. The recommendation compares each city's largest possible shortfall against a stronger alternative within those ranges. Zurich has the smallest such shortfall under baseline priorities and when all ten measures receive equal weight. All sixteen cities remain possible leaders; the comparison does not establish one certain winner.
 
-For a teenager, choosing a city involves the school day and the hours around it. Teaching resources, nearby higher education, clean air, safety, housing and living costs, transport, journey times, internet access and swimming facilities can all matter. Our study brings these ten considerations into one framework. Its purpose is to help families examine trade-offs, rather than assume that the same place will suit every student.
+\subsection*{Clearer records, more useful choices}
 
-\subsection*{A cautious recommendation with a clear meaning}
+Additional evidence for twenty-five previously missing entries narrows the average city-score range by about fifteen per cent while preserving the team's original values and scoring rules. Source definitions matter too: Vienna's broad transport register includes depot objects not confirmed as passenger stops, while a cross-check confirms 99 metro station areas. Prague's city list gives 57 metro complexes when interchanges count once and a closed station is omitted. Records span different years, and some describe city resources rather than a teenager's experience.
 
-The comparison uses common scoring yardsticks and a stated balance of priorities. Where a figure is missing or describes part of a city's resources, the model keeps a range of possible scores. An unknown figure therefore remains open rather than being replaced with an invented average. Each city's overall result is a range, reflecting the information available under the model's assumptions.
+Source checks show where a recommendation depends on a particular input. Treating Zurich's unverified homicide-rate figure as unknown points to Singapore under baseline priorities and Oslo under equal priorities. Setting aside Zurich's general work-commute proxy points to Singapore under baseline priorities, while equal priorities retain Zurich. That proxy does not describe high-school journeys; the supplied figures remain in the baseline.
 
-The recommendation asks how far a selected city could fall behind a better-scoring alternative within those ranges. Zurich has the smallest worst-case shortfall under the baseline priorities. It also remains the cautious recommendation when all ten considerations receive equal weight. This makes it a useful place to begin a broad comparison; all sixteen cities nevertheless remain possible leaders within the retained evidence ranges. The study has not established a single certain winner.
+Counts describe resource supply, not a student's access. A stop count does not show walking distance, service, fares or accessible routes; a pool count does not show fees, opening hours or neighbourhood reach. Families and planners can check these conditions alongside school options, budgets and daily routes.
 
-\subsection*{Better evidence makes the comparison more useful}
+\subsection*{Scenarios for planning}
 
-Official records become useful when their boundaries and units are clear. Vienna's broad transport register contains depot objects whose status as passenger stops is unproved. Cross-checking the operator list with a separate city map confirms 99 metro station areas. Prague's city list supplies 57 metro complexes after interchanges are counted once and a closed station is omitted. These examples show why a useful inventory needs more than a headline total.
-
-Across twenty-five previously missing entries, additional evidence reduced the average width of the city score ranges by about 15 per cent. The original submitted values and scoring rules stayed in place. Narrower ranges make the comparison more informative, while the full set of possible leaders shows that further evidence could still change the conclusion. The records span different years, and some describe school or city resources rather than the experience of a particular teenager.
-
-\newpage
-\subsection*{Students' priorities can change the recommendation}
-
-In an education-focused comparison, the relative emphasis on teaching resources and the density of higher-education institutions is doubled before the priorities are balanced again. Singapore then becomes the cautious recommendation. This is an illustrative choice made by the analysts, not a finding from a student survey. It gives a family a concrete way to explore how a stronger educational emphasis changes its shortlist.
-
-City totals also need a local check. A transport-stop inventory leaves questions about walking distance, service frequency, fares and accessible routes. A pool count leaves questions about entry fees, opening hours and which neighbourhoods the facilities serve. These are useful questions for families and city planners to investigate before treating resource supply as equal access. The study does not measure an individual student's benefit from adding a stop, teacher or pool.
-
-\subsection*{Use future scenarios to ask better questions}
-
-The study also examines three hypothetical changes: expanding selected resources, increasing living and travel pressures, and reducing selected educational, air-quality and travel burdens. When the affected quantities change uniformly by ten per cent, resource expansion selects Singapore under baseline priorities; Zurich remains the recommendation in the other scenarios and under equal priorities. Repeated simulations explore what happens when the assumed changes differ across cities. They test chosen scenarios; they do not predict a future year or estimate a city's real chance of being best.
-
-Checking a specific source can change the shortlist: treating Zurich's unverified homicide-rate figure as unknown points to Singapore under the original priorities and Oslo with equal priorities. Separately setting aside Zurich's general work-commute proxy also points to Singapore under the original priorities; equal priorities retain Zurich. The supplied figures remain in the baseline; these checks test which information the recommendation depends on.
-
-A family's next step is to pair the city comparison with its own school options, budget, daily route and preferred activities. Students can give education more emphasis, examine the affordability trade-offs, and check whether nearby opportunities fit their routines. The model makes those choices easier to discuss: a clear starting recommendation, room for different priorities, and an explicit view of the evidence needed for a more personal decision.
+In hypothetical tests where affected quantities change uniformly by ten per cent, resource expansion selects Singapore under baseline priorities; Zurich remains the recommendation in the living-pressure and balanced-improvement scenarios and under equal priorities. Repeated simulations vary the assumed changes across cities. These are conditional model outcomes, not forecasts or estimates of a city's real chance of being best. A family can use the comparison to discuss priorities and identify local information needed for a decision that fits a student's routine.
 \label{news-end}
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{References}
@@ -957,6 +980,15 @@ CC BY (version unspecified).
 Locates 21 M1 and 18 M2 station appearances within Warsaw; the shared interchange
 is consolidated using the operator directories.
 \url{https://www.gov.pl/attachment/2b7775c0-aa52-487e-809a-66df1b991b59}.
+\bibitem{brunogrids} M. Bruno, H. P. Monteiro Melo, B. Campanelli and V. Loreto.
+A universal framework for inclusive 15-minute cities. \textit{Nature Cities},
+1, 633--641, 2024. \url{https://doi.org/10.1038/s44284-024-00119-4}.
+Author-platform resident grids for Singapore and Zurich, accessed 7 November 2026:
+\url{https://whatif.sonycsl.it/15mincity/}.
+\bibitem{nasagibs} NASA. Harmonized Landsat Sentinel-2 S30 product and
+Global Imagery Browse Services WMS documentation.
+\url{https://hls.gsfc.nasa.gov/products-description/s30/};
+\url{https://nasa-gibs.github.io/gibs-api-docs/access-basics/}.
 \end{thebibliography}
 \label{main-end}
 \clearpage

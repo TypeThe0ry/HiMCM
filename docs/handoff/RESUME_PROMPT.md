@@ -4,13 +4,13 @@
 
 当前16城×10：design/task4_user_current_model.json与current_extensions.json登记V200；407不可变绑定，用户CSV SHA430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c保持。112点／37部分／11全未知，25不同补充键。Singapore具名库存7→25，22剔除告示场馆敏感性；非全部开放或青少年可达，保留2024人口6036900与2026捕获年份。其他159格／全部上界／权重／区间规则保持。
 
-当前论文V201：Overleaf只有根main.tex及三图、原类／参考库和简短说明；GitHub paper/current/镜像六个编译依赖＋PDF。27页＝25正文参考＋2暂定AI，57引用，18213暂用。所有标题／Summary／主题在实际main。用户最新要求本地与远程同步、版本控制全在GitHub；不得恢复Overleaf多版本drafts或根入口。旧985文件已逐字节转存paper/history/overleaf_before_single_main_20261110/，队友原main哈希40a63df3cb2b0e2524fbbe4f7fd19d904851bc4e2e3b7b99d50d477a4da7f0c1保持。
+当前论文V201：Overleaf只有根main.tex及四图、原类／参考库和简短说明；GitHub paper/current/镜像七个编译依赖＋PDF。27页＝25正文参考＋2暂定AI，59引用，18213暂用。所有标题／Summary／主题在实际main。用户最新要求本地与远程同步、版本控制全在GitHub；不得恢复Overleaf多版本drafts或根入口。旧985文件已逐字节转存paper/history/overleaf_before_single_main_20261110/，队友原main哈希40a63df3cb2b0e2524fbbe4f7fd19d904851bc4e2e3b7b99d50d477a4da7f0c1保持。
 
 固定均宽15.9581344706、等权18.6603896972；Zurich保守、16可能／0必要。教育优先和固定资源扩展Singapore；κ100 ZH/Oslo/SG条件频率43.62/18.18/37.80%。单Zurich均值40.52675分钟、联合箱1.57080%／63.44548%，绑定SG／Oslo。基准期望均秩排序未由通用界区分，4259明确／181未区分、17唯一最小组。AHP非学生调查、未来非拟合趋势。
 
-当前审计results/task4_v201_review/current_verification.json；当前交付current_delivery_verification.json：47项／58锚点／12实质待办。单main本地27页全部文字及灰度像素与独审稿一致，985归档、当前镜像、原生页眉空页脚通过。服务器预览未核；真实注册、全队AI与最终比赛提交保持待验证。冻结版本审计指向归档旧路径，不按旧P目录直接重跑。
+当前地图与版面更新见[CURRENT_SPATIAL_UPDATE.md](CURRENT_SPATIAL_UPDATE.md)；审计results/current_spatial_review/current_verification.json与verification.json；当前交付同目录delivery_verification.json：48项／61锚点／12实质待办。单main本地27页全部文字及灰度像素与独审稿一致，985归档、当前镜像、原生页眉空页脚通过。服务器预览未核；真实注册、全队AI与最终比赛提交保持待验证。冻结版本审计指向归档旧路径，不按旧P目录直接重跑。
 
-下一轮先按[V201_VISUAL_NEXT.md](V201_VISUAL_NEXT.md)取真实卫星／合理3D素材并更新同一main；然后按V200重基48不确定格采集价值，失败路线跳过。不要重复V199采集、V200全研究或V201迁移。分别fetch、审diff、commit/push并核远端HEAD。
+居民网格卫星／定量3D图已入第16页，新闻已压成第19页一页；原数值与关键条件保留。下一轮按V200重基48不确定格采集价值，失败路线跳过。不要重复V199采集、V200全研究或V201迁移。分别fetch、审diff、commit/push并核远端HEAD。
 
 ## 冻结恢复档案（以下为历史，不作为当前入口）
 

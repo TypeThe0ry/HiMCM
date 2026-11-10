@@ -1,4 +1,6 @@
-# Next figure revision: satellite and quantitative 3D
+Current status: the first figure is in the sole main, page16. See [current implementation and verification](CURRENT_SPATIAL_UPDATE.md). The following acquisition inventory is retained as the pre-implementation plan; current source records are in `research/2026-a/visuals/current_spatial/`.
+
+# Satellite and quantitative3D: first figure delivered
 
 The user requested satellite and three-dimensional figures with stronger art direction. This remains an active deliverable after the V200/V201 numerical migration. The visual inventory below prevents an attractive map from changing the measured research object.
 

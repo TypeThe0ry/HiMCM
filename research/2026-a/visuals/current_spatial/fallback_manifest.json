@@ -1,0 +1,27 @@
+{
+  "city": "Singapore",
+  "requested_date": "2024-06-27",
+  "product_date": "not independently verified; daily WMS request",
+  "url": "https://gibs.earthdata.nasa.gov/wms/epsg3857/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=MODIS_Terra_CorrectedReflectance_TrueColor&STYLES=&SRS=EPSG%3A3857&BBOX=11531858.603690077%2C138227.11000066964%2C11579401.626451693%2C165070.24276512186&WIDTH=1000&HEIGHT=800&FORMAT=image%2Fpng&TIME=2024-06-27&TRANSPARENT=TRUE",
+  "layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+  "bounds_3857": [
+    11531858.603690077,
+    138227.11000066964,
+    11579401.626451693,
+    165070.24276512186
+  ],
+  "crs": "EPSG:3857",
+  "pixels": [
+    1000,
+    800
+  ],
+  "source_resolution_m": 250,
+  "retrieval_utc": "2026-11-10T03:20:12.850167+00:00",
+  "license": "NASA imagery generally not copyrighted in US; NASA media usage guidelines apply",
+  "http_status": 200,
+  "path": "imagery/singapore_modis_2024-06-27.png",
+  "sha256": "9d10afb3a3321ab22618bc564e8c52bfd08b5847a0b6399d504ba27aba2a7ca2",
+  "alpha_coverage": 1.0,
+  "rgb_std": 37.471725156045046,
+  "bytes": 54984
+}
