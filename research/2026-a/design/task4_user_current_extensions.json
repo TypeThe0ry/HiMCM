@@ -61,5 +61,32 @@
     "MC_replayed": false,
     "calibrated_error_rate": false,
     "scope": "Expanded uncertainty-box minimax policy, not every realized perturbed dataset or exact unique crossing"
+  },
+  "point_withdrawal_addendum": {
+    "script": "scripts/task4_current_point_withdrawal.py",
+    "results": "results/current_point_withdrawal",
+    "verification": "results/current_point_withdrawal/verification.json",
+    "point_cells_matching_original": 112,
+    "prior_interval_cells_unchanged": 48,
+    "cases": 224,
+    "rank_rows": 3584,
+    "changed_minimax_recommendation_cases": {
+      "fixed": 10,
+      "equal": 35
+    },
+    "changes_primary_bounds": false,
+    "changes_manuscript": false,
+    "MC_replayed": false,
+    "calibrated_error_rate": false,
+    "scope": "One retained point utility at a time replaced by [0,1] as a source-priority ignorance stress; deterministic case counts are not probabilities or evidence of incorrect measurements.",
+    "source_sha256": {
+      "scripts/task4_current_point_withdrawal.py": "61fa8f87c9a77b2f87e46f85a4c22fcfda429289be88b37d743dc545cd39e711",
+      "scripts/audit_current_point_withdrawal.py": "3a28f459127d4bbdccc520af5fe40d03cf6450d09a0a9d67849e918fe6eae6db",
+      "results/current_point_withdrawal/README.md": "63e3fa51c1c7254f29c0fb97407d58db9a769e8472c61dbe3dd6e6ff1973cca6",
+      "results/current_point_withdrawal/cases.csv": "2bf0a71d9310bc4218b75a75a082fabbfe9d405f60571717f47c8f900938f0ba",
+      "results/current_point_withdrawal/ranks.csv": "c35221ab63a8d2f1750f591fe51f4f5c2c129d0d65c728f7d982bc6f3e71e45c",
+      "results/current_point_withdrawal/summary.json": "73f5192cd5806cffcb28216195ababe1a9b472b647801d21ec85bc86fece2314",
+      "results/current_point_withdrawal/verification.json": "533b3c3d0b3e35bab0699399c685465fcbc0efca545e80e7c4be6815788bf264"
+    }
   }
 }

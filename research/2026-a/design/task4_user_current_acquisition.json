@@ -174,5 +174,20 @@
     "next_needed": "Matched city school-location upper-secondary teaching FTE and pupils, or observation-specific Zurich work-duration bins and geography. Prepared aggregate specification remains unsent.",
     "independent_workbook_verification": "results/current_staff_duration_review/workbook_verification.json",
     "independent_workbook_verification_sha256": "cd481ee3310422ec1791326fe699dd31aa4f7232d97d79c3fdadd1a69d46f45a"
+  },
+  "retained_point_source_priority": {
+    "diagnostic": "results/current_point_withdrawal",
+    "verification": "results/current_point_withdrawal/verification.json",
+    "verification_sha256": "533b3c3d0b3e35bab0699399c685465fcbc0efca545e80e7c4be6815788bf264",
+    "role": "Source verification priorities for retained values, separate from missing-cell collection value",
+    "priority_examples": [
+      "Oslo research_he_density",
+      "Oslo pm25",
+      "Oslo fixed_broadband_mbps",
+      "Zurich homicide_rate"
+    ],
+    "primary_admissions": 0,
+    "actual_score_width_reduction": 0,
+    "scope": "Extreme single-point ignorance stress does not establish any measurement error or authorize a change to user inputs."
   }
 }

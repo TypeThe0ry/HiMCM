@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "arithmetic": "independent scalar math.sqrt, binary64; absolute tolerance 2e-10, recommendation tolerance 1e-12",
+  "point_cells_matching_original": 112,
+  "fixed_interval_cells": 48,
+  "cases_checked": 224,
+  "rank_rows_checked": 3584,
+  "changed_recommendation_cases": {
+    "fixed": 10,
+    "equal": 35
+  },
+  "snapshot_hashes_checked": 548,
+  "supplement_hashes_checked": 77,
+  "paper_resources_and_mirror_sha256": {
+    "main.tex": "077e9132dccb5fbe68245b0ec7d95f877df0aa173425f2c17de00955ec95ea36",
+    "ref.bib": "0a82d553ffec7877154f0db9822910c306454a037bcdc6a33db01aec81b927df",
+    "mcmthesis.cls": "61e67800e7129c5f0266d2a52606ed3c98b4733d68e2bdbd5a02e4cff97f0aec",
+    "figures/country_contrasts.pdf": "0ff8fdb2c1183b630a01af84e52b81605a812054eead5e7fa03eb2a568be82de",
+    "figures/identification_matrix.pdf": "dfee08dabba094a88a427e4172ee4dbebed93684e9120ab312900df8aa5c56e4",
+    "figures/score_intervals.pdf": "f16bdb7d67121bc041df888593e785173bc784b4ee2f84c9d98f76d93d84240d",
+    "figures/walktime_context.pdf": "633d2e00c7dfb15a5f7088c3e39eda50e4de4a51bf31c61dc86dedda2d01beef"
+  },
+  "scope": "Hypothetical withdrawal to [0,1] represents ignorance stress, not evidence of an erroneous observation or correction to the primary model.",
+  "source_sha256": {
+    "scripts/audit_current_point_withdrawal.py": "3a28f459127d4bbdccc520af5fe40d03cf6450d09a0a9d67849e918fe6eae6db",
+    "scripts/task4_audit_output.py": "d6ff84475f70f1bae88bde3c8779498f90f37f3796827b1bfbf9479980324aa3",
+    "results/current_point_withdrawal/summary.json": "73f5192cd5806cffcb28216195ababe1a9b472b647801d21ec85bc86fece2314",
+    "results/current_point_withdrawal/cases.csv": "2bf0a71d9310bc4218b75a75a082fabbfe9d405f60571717f47c8f900938f0ba",
+    "results/current_point_withdrawal/ranks.csv": "c35221ab63a8d2f1750f591fe51f4f5c2c129d0d65c728f7d982bc6f3e71e45c"
+  }
+}

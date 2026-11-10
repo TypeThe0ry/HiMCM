@@ -1,0 +1,40 @@
+{
+  "primary_model": "V203 unchanged",
+  "point_cells": 112,
+  "existing_interval_cells_held_fixed": 48,
+  "weight_references": 2,
+  "cases": 224,
+  "rank_rows": 3584,
+  "baseline": {
+    "fixed": {
+      "choices": [
+        "Oslo"
+      ],
+      "minimax_regret": 15.751955386687115,
+      "mean_width": 15.82232695332216
+    },
+    "equal": {
+      "choices": [
+        "Zurich"
+      ],
+      "minimax_regret": 15.760638509295092,
+      "mean_width": 18.39181162388826
+    }
+  },
+  "changed_recommendation_cases": {
+    "equal": 35,
+    "fixed": 10
+  },
+  "primary_admissions": 0,
+  "actual_primary_width_reduction": 0,
+  "scope": "Each stress replaces exactly one retained point utility by [0,1]. Ignorance is hypothetical, not evidence of an erroneous measurement, empirical error probability or a new primary model. Cases prioritize source review; they do not authorize changing the original CSV.",
+  "source_sha256": {
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/task4_current_point_withdrawal.py": "61fa8f87c9a77b2f87e46f85a4c22fcfda429289be88b37d743dc545cd39e711",
+    "design/task4_user_v203_snapshot.json": "c0d70e2288c2230bb8fbaf3aa4b54e4be3f43e47bdddea16ccf8497cc362105e"
+  },
+  "output_sha256": {
+    "cases.csv": "2bf0a71d9310bc4218b75a75a082fabbfe9d405f60571717f47c8f900938f0ba",
+    "ranks.csv": "c35221ab63a8d2f1750f591fe51f4f5c2c129d0d65c728f7d982bc6f3e71e45c"
+  }
+}
