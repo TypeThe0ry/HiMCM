@@ -1,0 +1,46 @@
+{
+  "input_sha256": {
+    "results/current_prague_bus_crosswalk/witness.csv": "2e2f4a656f945785e58f4aa5857928700b0117e65690b2c906fa7588e07d24eb",
+    "results/current_prague_bus_crosswalk/link_diagnostics.csv": "575a1e02edab6fe7b7ebaee42b4b7a21b6122902925b4bab55399b5070c4c96c",
+    "results/current_prague_bus_node_candidate/all_link_occurrences.csv": "18bad771129ef30c5c70e33db2187dfb5abe5508ba27a2515fdb92ae657b51d9",
+    "data/current_prague_node_semantics/pid_stops.json": "f372f85b730fe86d5e12f09374cf14e0794857b96848e9b1ddcfbeaaef9849a0",
+    "data/current_prague_node_semantics/pid_stops_schema.xsd": "706b7a3a298583ebd0363ad5c12381eb392c9cfd482c75a17ed2818b4edca295",
+    "data/current_prague_node_semantics/pid_opendata.html": "74cec068a381592825edfab6d0fc4a7924c05a296adaa9a0dcf3ecbbda88f133",
+    "data/current_prague_node_semantics/manifest.json": "ca10e1b7eb603158e201e1fb5e4874a0bb349e24691e6e660e3bf1078eff97ef",
+    "results/current_transport_identity/bus_subset_audit.json": "568fa5890cbff5a91ee04022f39c46c5c9984c5c69444fea19211f717e32c37e"
+  },
+  "current_generatedAt": "2026-11-10T04:12:17",
+  "candidate_nodes": 942,
+  "witness_exact_archive_and_current_group_matches": 942,
+  "candidate_groups": 999,
+  "candidate_poles": 2597,
+  "candidate_poles_with_node_prefix_mismatch": 0,
+  "candidate_groups_with_missing_or_zero_cis": 0,
+  "groups_per_candidate_node": {
+    "1": 892,
+    "2": 45,
+    "3": 4,
+    "5": 1
+  },
+  "candidate_node_group_municipalities": {
+    "Praha": 999
+  },
+  "witness_municipalities": {
+    "Praha": 942
+  },
+  "cross_node_keys": {
+    "name_exact": {
+      "keys_involving_candidate": 5
+    },
+    "name_normalized": {
+      "keys_involving_candidate": 5
+    },
+    "idosName": {},
+    "uniqueName": {},
+    "cis": {},
+    "pole_id": {},
+    "gtfs_id": {},
+    "coordinates": {}
+  },
+  "definitions": "Collisions compare exact field values across all source records and report keys involving >=1 candidate node; normalized names use Unicode NFKC, casefold and whitespace normalization. Coordinates compare exact numeric lat/lon of poles. CIS zero or missing is excluded. None of these alone authorizes a merge."
+}

@@ -505,5 +505,40 @@
     "paper_peer_review_sha256": "629c55ccdd58e78771a0357611c229ce1e7bc0b19eef9a538f875d821c2d7187",
     "paper_verification": "results/current_ai_continuation2_paper/verification.json",
     "paper_verification_sha256": "ec385dfd6d1d09125c53c52222e9fb537d7eb71cd7b6130ce13ee9fe64e4ccc1"
+  },
+  "Prague_V205_scientific_staging": {
+    "version": "V205",
+    "activation_status": "staged_not_active",
+    "current_active_primary": "V204",
+    "module": "task4_user_v205_revision",
+    "factory": "revised_bounds",
+    "admissions": "design/task4_user_v205_admissions.json",
+    "admissions_sha256": "ac252a4af2a11058a6d11fb0706ab295222676291b1dfc052982a63c5f607f67",
+    "snapshot": "design/task4_user_v205_snapshot.json",
+    "snapshot_sha256": "20d6e76bd05d51d600c4f5acd9a5c535cf6b98440c6fa791495fdced4f660110",
+    "scientific_verification": "results/task4_v205_transition/verification.json",
+    "scientific_verification_sha256": "7bb155b6b5b3e9d3fa3af41ad4403d46e4f58fa30c320d14c00cfeef52fea846",
+    "source_peer_review": "results/current_prague_service_review/peer_review.json",
+    "source_peer_review_sha256": "cc89c3460ca47b332c534297866199cbf5a118d8a10b1d4b7476e5b1230e8c32",
+    "source_defined_scheduled_nodes": 942,
+    "ordinary_nodes": 50,
+    "additional_driver_request_nodes": 892,
+    "retained_metro_lower": 57,
+    "other159_lower_and_all160_upper_preserved": true,
+    "primary_cases": 31,
+    "primary_MC_settings": 186,
+    "draws_per_setting": 10000,
+    "extension_MC_settings": 37,
+    "precision_base_means": 2064,
+    "rank_pairs": 4440,
+    "primary_admissions": 0,
+    "actual_primary_width_reduction": 0,
+    "staged_mean_width_reduction": {
+      "fixed": 0.14615082605197038,
+      "equal": 0.2872118754673494
+    },
+    "changes_primary_model": false,
+    "changes_manuscript": false,
+    "next_action": "Controlledresearch/paper migration assessment fromfullyauditedstage. Do not repeatcompletedunit/GTFSqualification orsourcefetch. Preserve892publicdriver-requestcondition, 57metro fallback,source-definedunit,datedsupply/mixedyearscope. Sourceandscienceproofs frozen; navigation hashes in scienceproof describepre-registrationstate."
   }
 }

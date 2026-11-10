@@ -1,0 +1,127 @@
+{
+  "unit_review": {
+    "status": "pass scoped source-defined unit, not physical census",
+    "candidate_nodes": 942,
+    "groups": 999,
+    "poles": 2597,
+    "groups_per_node": {
+      "1": 892,
+      "2": 45,
+      "3": 4,
+      "5": 1
+    },
+    "all_poles_node_prefixed": true,
+    "all_groups_municipality_praha": true,
+    "cross_node_collisions": {
+      "cis": {},
+      "idosName": {},
+      "uniqueName": {},
+      "pole_id": {},
+      "gtfs_id": {},
+      "coordinates": {},
+      "name_exact": {
+        "Háje": [
+          "286",
+          "9658"
+        ],
+        "Krakov": [
+          "371",
+          "6895"
+        ],
+        "Lhotka": [
+          "329",
+          "4351",
+          "9848"
+        ],
+        "Nové Dvory": [
+          "2531",
+          "494",
+          "6660"
+        ],
+        "Višňová": [
+          "5773",
+          "935"
+        ]
+      },
+      "name_normalized": {
+        "háje": [
+          "286",
+          "9658"
+        ],
+        "krakov": [
+          "371",
+          "6895"
+        ],
+        "lhotka": [
+          "329",
+          "4351",
+          "9848"
+        ],
+        "nové dvory": [
+          "2531",
+          "494",
+          "6660"
+        ],
+        "višňová": [
+          "5773",
+          "935"
+        ]
+      }
+    },
+    "scope": "Exact and normalized identifier/coordinate collision screens cannot prove absence of physical splitting or identical physical granularity to Oslo."
+  },
+  "checked_sha256": {
+    "results/current_prague_unit_qualification/receipt.json": "b247c3316a9d2d77b4abbebbe61529189fc3c0bc053e5ea9c2f5b5b944e2f1c2",
+    "results/current_prague_unit_qualification/README.md": "100d7bba615946b9aa69f8f01018122d705f76d39a393314d5ced2fe479f420e",
+    "results/current_prague_unit_qualification/audit.py": "a19e9292c0196152290942d82acab758370f0569a05443ee4b7ac2ac97457f0d",
+    "results/current_prague_unit_qualification/candidate_groups.csv": "ea626bfa4dace3fb3563232e617999b2d3c6503e1d89f2273687ca77f8b3784d",
+    "results/current_prague_unit_qualification/cross_node_collisions.csv": "2d892814243d09e963a83a72d0eaef558c09460a2759f8c8f1a3ceec2bbe3c32",
+    "results/current_prague_gtfs_service/extract.py": "8b50eff9d3a81523e956da8b6305a6e24d58ca91e1edfb62200ed86dcd48f566",
+    "results/current_prague_gtfs_service/receipt.json": "930dbe66c100457fe4e109cebde0deefe7c35311577160e0857c22d494307022",
+    "results/current_prague_gtfs_service/public_witness.csv": "eb97ea9691fde400f34deb509b8494c035f5fb4eb259200b9a9710fe5825a1c0",
+    "results/current_prague_gtfs_service/pair_diagnostics.csv": "81b29259dd32b020949527fe7b0a88260da766a3291819dd0dbcb9b2bddfed1a",
+    "results/current_prague_gtfs_service/node_diagnostics.csv": "802ef1083703b5ba2726d299a40ff809fe62401998ee3b263540dd613234ea90",
+    "data/current_prague_gtfs_service/pid_request_stop.html": "d44f227734a6ab2f126b0b2eb814a14711571a83f603693d2aa568dc588395ae",
+    "data/current_prague_gtfs_service/PID_GTFS_20261110.zip": "dfde0f0d8b662795bbce2adc185c676b5d1a0cc9c0a18f8373cc4a46374c111a",
+    "results/current_prague_gtfs_service/README.md": "657a671624d2c1bfcedb069f55f3acfa55ab25b0c59d7228eb86544942b1e080",
+    "data/current_prague_gtfs_service/pid_request_stop_headers.txt": "06a0604f2221d832abae5de330d2e3d91e78383b279ac08d08f473a120e4a127",
+    "data/current_prague_gtfs_service/download_headers.txt": "cf3b15439406bf43ad7027a06ead7f816d511f1633a9ae4f885bb1fbb705f033"
+  },
+  "unit_recorded_source_hashes_match": true,
+  "service_review": {
+    "archive_sha256": "dfde0f0d8b662795bbce2adc185c676b5d1a0cc9c0a18f8373cc4a46374c111a",
+    "feed_period": [
+      "20261110",
+      "20261123"
+    ],
+    "service_date": "20261110",
+    "candidate_pairs": 3669,
+    "ordinary_0_nodes": 50,
+    "driver_3_nodes": 926,
+    "driver_3_only_nodes": 892,
+    "ordinary_or_driver_nodes": 942,
+    "phone_2_nodes": 0,
+    "pair_status": {
+      "driver_3": 3531,
+      "ordinary_0": 136,
+      "no_eligible_active_public_stop_time": 2
+    },
+    "public_witness_rows_independently_verified": 942,
+    "witness_kind_counts": {
+      "3": 892,
+      "0": 50
+    },
+    "witness_trip_operation_types": {
+      "1": 942
+    },
+    "method": "Independently joined candidate node/post/visible-route pairs to GTFS ASW fields, zone_region_type=1 and pole location type, bus route 100–250 with nonnight/nonreplacement flags, active Tuesday calendar with date exceptions, and stop times having pickup or dropoff 0 or 3. Each exported public witness exact trip/stop/sequence, times, route and access fields verified against raw ZIP.",
+    "scope": "Code 3 is driver arrangement, not ordinary 0. PID source explicitly describes passenger signal at all bus stops beginning 29 June 2024; it supports public request-stop reading, not universal accessibility. This checks one service date, not year-round service or unchanged 9 November identity. Night field absent in original JSON remains unknown; GTFS route flag separately filtered. Physical census and primary admission not established.",
+    "all_public_witness_json_archived_link_locators_checked": true,
+    "selected_witness_codes": {
+      "0/0": 50,
+      "3/3": 892
+    },
+    "packaged_archive_sha256_matches": true
+  },
+  "service_recorded_hashes_match": true
+}

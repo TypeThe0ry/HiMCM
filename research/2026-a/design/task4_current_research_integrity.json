@@ -313,10 +313,29 @@
     "results/current_prague_source_review/peer_review.json": {
       "expand_source_maps": [],
       "scope": "Independent lxml parse, crosswalk and scalar review; checked digests recorded separately and producer source maps expanded."
+    },
+    "design/task4_user_v205_admissions.json": {
+      "expand_source_maps": [
+        "source_hashes"
+      ]
+    },
+    "design/task4_user_v205_snapshot.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/task4_v205_transition/verification.json": {
+      "expand_source_maps": [
+        "source_sha256"
+      ]
+    },
+    "results/current_prague_service_review/peer_review.json": {
+      "expand_source_maps": [],
+      "scope": "Independent rawGTFS service and unit review; checked digests recorded separately, fullsource files bound in V205manifest/snapshot."
     }
   },
   "live_source_sha256": {
-    "design/task4_current_source_routes.csv": "0a82dccc62a0aefb869d790d22ef51f9225e59fd3b56766b7c9503f224d98cf1"
+    "design/task4_current_source_routes.csv": "b68ad2b3f818cf0ceebecf1c584cbc8c495907171cdfba88dbdd66655584e7e8"
   },
   "historical_sources": [
     {

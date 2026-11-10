@@ -1,0 +1,117 @@
+{
+  "version": "V205 staged research",
+  "status": "pass",
+  "activation_status": "staged_not_active",
+  "current_primary": "V204",
+  "changed_lower_cells": 1,
+  "other159_lower_cells_and_all160_upper_cells_exact": true,
+  "off_switch_basic_combinations": 64,
+  "source_manifest_bindings": 29,
+  "public_nodes": 942,
+  "ordinary_nodes": 50,
+  "driver_request_nodes": 892,
+  "request_withheld_lower_count": 57,
+  "primary_bound_cases": 31,
+  "independent_scalar_city_cases": 1520,
+  "independent_primary_MC_rows": 2976,
+  "primary_MC_settings_replayed": 186,
+  "draws_per_setting": 10000,
+  "protected": {
+    "scientific_files_checked": 658,
+    "paper": {
+      "core_bindings_checked": 548,
+      "supplemental_bindings_checked": 77,
+      "withdrawal_evidence_entries_checked": 10,
+      "paper_dependencies_each_copy": 7,
+      "current_PDF_unchanged": true
+    },
+    "navigation_sha256": {
+      "design/task4_user_current_review.json": "ba3242c5f2e09d570758c1237fc6cf1ddb4cb40f56f4bfecf4b17b9649158c41",
+      "design/task4_user_current_extensions.json": "17b7c2d5b44e5eaf15f7ef764320b5053ec992bd70d0cba9f890e56488270b26",
+      "design/task4_user_current_delivery.json": "9b1fcb7bd5ab4dcaddb4238cd9760dbcb1752c41e4868c2ea37f215185ca126d"
+    },
+    "v204_snapshot_sha256": "71258047ac31c291d8304d3b1116659ac7a8e39ec2aa3bdff69a5c47d91ded52"
+  },
+  "extension_structure_tables": 20,
+  "independent_preference_MC_rows": 144,
+  "independent_future_shock_MC_rows": 192,
+  "independent_future_weight_MC_rows": 256,
+  "independent_future_threshold_scan_points": 3232,
+  "precision_and_mean_rank_audit": {
+    "base_means": 2064,
+    "settings": 37,
+    "familywise_alpha": 0.05,
+    "derived_pairs": 4440,
+    "certified_pairs": 4278,
+    "unresolved_pairs": 162,
+    "unique_minimum_settings": 22
+  },
+  "interior_witness_weight_cases": 32,
+  "homicide_checks": [
+    {
+      "reference": "fixed",
+      "status": "no_crossing_in_interval",
+      "endpoint_gaps": [
+        0.4464707779630004,
+        8.078661007117333
+      ]
+    },
+    {
+      "reference": "equal",
+      "status": "crossing_found",
+      "endpoint_gaps": [
+        -0.6770898633001394,
+        7.800764703715082
+      ]
+    }
+  ],
+  "staged_result_and_producer_sha256": {
+    "results/task4_user_v205_revision/mc_city_summary.csv": "1b3b191f30b7d0843318d645ab9146bd018202af072154781a559d0899695f4f",
+    "results/task4_user_v205_revision/utility_bounds.csv": "d70f4b4b0292b2aa2dba9a8997f8b37eff071820034c01e1d8321312e061fc95",
+    "results/task4_user_v205_revision/all_ranks.csv": "f3452006e563c71949dcd5244486033fe96ecec6bdc5c8b0a04deb1f68848c42",
+    "results/task4_user_v205_revision/current_ranks.csv": "fcf5eb5a315103021f10adc774c224d031c3d0c3ffdea3a0fba06fd592690ee6",
+    "results/task4_user_v205_revision/summary.json": "24895e73b1dcbc4823498a47fb1ff3f76b01f192719e5c2a99e6d24c80b44a12",
+    "results/task4_user_v205_extensions/summary.json": "3c2e9646be3ea0ca5a0be3a184577dc64a795ce270b087bac8cc5569ff5ab6e5",
+    "results/task4_user_v205_extensions/mean_rank_comparisons/pairs.csv": "18230cc6547b4e08efc289689f9848b2fe97225938d959ebeed97c524a826311",
+    "results/task4_user_v205_extensions/mean_rank_comparisons/settings.csv": "f51c86272148d6a9ec522e65dd94903181a1e335901bcca6caa87c754cd98402",
+    "results/task4_user_v205_extensions/mean_rank_comparisons/cities.csv": "42500e2669aa59917f2598550bbc84f4abbdcf1a0f2287ee755e4d6613ce4000",
+    "results/task4_user_v205_extensions/mean_rank_comparisons/summary.json": "5dfb3d7053a252632dcfd65901b0222d9e6aa243985e0fe2c939acb305d501ff",
+    "results/task4_user_v205_extensions/diagnostics/witness_cases.csv": "e3e3d747b1b0f941ce6851b2447b8e8d1ec4ec17b1f3f669d59676d6a296c1b3",
+    "results/task4_user_v205_extensions/diagnostics/vintage_ranks.csv": "7e010e5ff2e4d5e4772696cbe2ef0bd249e46d76f3a89f636cec0d9963f9728c",
+    "results/task4_user_v205_extensions/diagnostics/summary.json": "34c2bbfd4d81c0ac26e2c3966d6354b850e128451e17a768c31992449e86173a",
+    "results/task4_user_v205_extensions/diagnostics/witness_utilities.csv": "bed3fbef8ee5dc16ecc19984d2aee61dfe3bd145226111122c6e2eecec4f6847",
+    "results/task4_user_v205_extensions/method/method_components.csv": "73cd9a465d5057b79e5632acbea35d21fed245b793f5fc77743ec37129b4ff85",
+    "results/task4_user_v205_extensions/method/shanghai_district_resources.csv": "1dd303f0fb9ddf7413051764b4790716717e48c7d8f94cc95467f89652e6f818",
+    "results/task4_user_v205_extensions/method/country_indicator_bounds.csv": "45e8d580be838d7a5f355cf2d6e188ec2ac08c145c486fd87e600d2499527b65",
+    "results/task4_user_v205_extensions/method/singapore2020_secondary_exact_age_counts.csv": "5569790bf18c6543454ef1c84d86faa632a53b19126fd85a1482ff859a7dc560",
+    "results/task4_user_v205_extensions/method/method_ranks.csv": "298c4d9b014cb2bee006fcff11ba8b0f407736f81b57bd192300780725b8a411",
+    "results/task4_user_v205_extensions/method/country_score_comparison.csv": "a4bba5c713fdc97e146518268461cb5d9074bc8fd6226d679c5d7a36d87aa3fa",
+    "results/task4_user_v205_extensions/method/summary.json": "ad1121987ed43b0e2ff7c5e812acb69701d01a772a01958602645e5bd154eedc",
+    "results/task4_user_v205_extensions/method/user16_country_coverage.csv": "5627fcafcd902d3ca9c14d80026d75c2637192d62445f61da3061a3957507e4e",
+    "results/task4_user_v205_extensions/method/istanbul_historical_age_groups.csv": "b4072312d9cedb8b657c1836465f8471a1f20b96aa15d136f07f351884c2f34b",
+    "results/task4_user_v205_extensions/mc_precision/published_examples.csv": "d80f2b6f4915fc52280246d3bfd7a1e40d87a5c0c59667f929399ad129a092b3",
+    "results/task4_user_v205_extensions/mc_precision/mean_bounds.csv": "0456be61e0f5369e6f29f472606a0f067cd40ee347cb6ab76bc9cf76ea76f191",
+    "results/task4_user_v205_extensions/mc_precision/summary.json": "4b355ddc52a4e092f89c72bd0ea2a7231bc0ebc662c414bcc99b8590d9689fe8",
+    "results/task4_user_v205_extensions/preferences/scenario_matrices.json": "3551255c7e595d98dcd1782cf6562a33fcff1511593c4ae51d864cd003988271",
+    "results/task4_user_v205_extensions/preferences/weights.csv": "e7955f1b5635f201c119b931fc488997238cfcc422859f1bd49a6c3f9ef8f0f8",
+    "results/task4_user_v205_extensions/preferences/mc_city_summary.csv": "d10dd1f27e7c4e792dbb11f0fb3d12b5de8cd6d5e4389c7b7a2436e197bdb7e8",
+    "results/task4_user_v205_extensions/preferences/ranks.csv": "8bb32bb777abadff0a19ea7f56841af1ff9edc5126fc7bdfd2b153c648cc401f",
+    "results/task4_user_v205_extensions/preferences/summary.json": "62637759afe1ee0bc2fa579bc30d47df2585c483ea28644847258ca5a80cb132",
+    "results/task4_user_v205_extensions/future/thresholds.csv": "df73f7c1577caef3b54590bda57b1c49ccb28eefa8e9f3519bd501bba5261b03",
+    "results/task4_user_v205_extensions/future/weight_mc_city_summary.csv": "4cdc04731d017cbc1f486275ea400e99366e6f7b986a5b56a00c99abbda691db",
+    "results/task4_user_v205_extensions/future/utility_bounds.csv": "af6d3697187b53df69600f0986fc9aa5097314ffba3e7fc9c272752982d9cf9e",
+    "results/task4_user_v205_extensions/future/threshold_scan.csv": "3143eb0cca9956ec86efc45d5b96afbd74090e1e095ede1a499f172657516cc1",
+    "results/task4_user_v205_extensions/future/ranks.csv": "6c9c2630aabe2a58738c0089c0d023aae63c0b6fddace004f4cb3a107bacfad4",
+    "results/task4_user_v205_extensions/future/future_mc_city_summary.csv": "42c2554653f658862c715c1a804345bdae81223cb9d8143e933872481a47eeee",
+    "results/task4_user_v205_extensions/future/summary.json": "8bdc727b9dcbd790406428832ebabdf09b444e959937f1e74d723779d0bc55d1",
+    "design/task4_user_v205_admissions.json": "ac252a4af2a11058a6d11fb0706ab295222676291b1dfc052982a63c5f607f67",
+    "scripts/task4_user_v205_revision.py": "d27c17dd635b2483d1c7be63dde0a7896ca568e4505af7f81e0264000be962a9",
+    "scripts/task4_v205_extensions.py": "cb8ded415e5f57611f6cc4ad66b2583e1695013e59a9f2dbb651f14ef4653f18"
+  },
+  "source_sha256": {
+    "design/task4_user_v205_admissions.json": "ac252a4af2a11058a6d11fb0706ab295222676291b1dfc052982a63c5f607f67",
+    "data/task4_v117_team_intake/city_indicators.csv": "430e550093ef33bf8994b7d243ec6932bc7d4cc205e1ea81ac34c985157adf3c",
+    "scripts/audit_task4_v205.py": "dd9bb1af413f651aeba44c58237048c48c1647b58d7c0b0d7c067a3b6a9e587b"
+  },
+  "scope": "Scheduled source-defined PID node witnesses dated 2026-11-10, population 2025, with driver-request condition. Provider unit and geography are not interchangeable with other cities; simulation frequencies are conditional, not actual operation or real-world win probabilities."
+}

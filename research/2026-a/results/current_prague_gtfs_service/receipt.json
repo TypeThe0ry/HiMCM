@@ -1,0 +1,88 @@
+{
+  "source_url": "https://data.pid.cz/PID_GTFS.zip",
+  "archive_path": "data/current_prague_gtfs_service/PID_GTFS_20261110.zip",
+  "external_archive_path": "/data/datasets/HiMCM/source_archives/PID_GTFS_20261110.zip",
+  "member_crc32": {
+    "agency.txt": "563ac67e",
+    "calendar.txt": "8ca59348",
+    "calendar_dates.txt": "ce030e6c",
+    "fare_attributes.txt": "080aa9c0",
+    "fare_rules.txt": "d0186f65",
+    "feed_info.txt": "c0af6236",
+    "levels.txt": "0b31575b",
+    "pathways.txt": "35893760",
+    "routes.txt": "9fbedd7d",
+    "route_stops.txt": "47262f41",
+    "route_sub_agencies.txt": "3438afcb",
+    "shapes.txt": "7ed30916",
+    "stops.txt": "0754a933",
+    "stop_times.txt": "c2c10ad4",
+    "transfers.txt": "bc59622f",
+    "trips.txt": "cd3da086",
+    "vehicle_allocations.txt": "baad0915",
+    "vehicle_boardings.txt": "e0609cd4",
+    "vehicle_categories.txt": "b5264867",
+    "vehicle_couplings.txt": "b539266c"
+  },
+  "archive_bytes": 46539657,
+  "archive_sha256": "dfde0f0d8b662795bbce2adc185c676b5d1a0cc9c0a18f8373cc4a46374c111a",
+  "archive_http_status": 200,
+  "archive_etag": "\"2c62389-65fe36f03d140\"",
+  "last_modified": "Tue, 10 Nov 2026 03:11:25 GMT",
+  "http_date_utc": "Tue, 10 Nov 2026 21:41:23 GMT",
+  "feed_info": {
+    "feed_publisher_name": "ROPID",
+    "feed_publisher_url": "https://pid.cz",
+    "feed_lang": "cs",
+    "feed_start_date": "20261110",
+    "feed_end_date": "20261123",
+    "feed_contact_email": "opendata@pid.cz"
+  },
+  "service_date": "20261110",
+  "weekday": "Tuesday",
+  "input_sha256": {
+    "results/current_prague_bus_crosswalk/link_diagnostics.csv": "575a1e02edab6fe7b7ebaee42b4b7a21b6122902925b4bab55399b5070c4c96c",
+    "data/current_prague_node_semantics/pid_stops.json": "f372f85b730fe86d5e12f09374cf14e0794857b96848e9b1ddcfbeaaef9849a0"
+  },
+  "gtfs_member_sha256": {
+    "feed_info.txt": "eb3fcee09e1394bc32fbe83af348973dc081587a1a82dc8d6ef02daa676a2085",
+    "stops.txt": "ae950669c52e488757fd6206ec0a5074947ddfc92d2757030fe94cbee939e6b0",
+    "routes.txt": "27c755b4bb7fbce8ce5a5d19f49807e3e7b7f67287d4a923f80d27921b533cc8",
+    "trips.txt": "3dd4cb1b2a4d59e3b4687d7a2cd5978cf6dea258628de0fe700f13b49c2c7bae",
+    "calendar.txt": "ff3604d6ba511d2ab211d49a6e2c2dfd7ef5d21854bca0a7aea69c7419badba7",
+    "calendar_dates.txt": "a990f68dda46870bdc4de1cd7634022f0a351b066f89fcf732d37abad4be2f52",
+    "stop_times.txt": "ac379de0dd9fdfef23aa49ead69a52ff7d68dec42a4b2dde6d68d9b0882d023e"
+  },
+  "candidate_nodes": 942,
+  "ordinary_0_nodes": 50,
+  "driver_3_nodes": 926,
+  "driver_3_only_nodes": 892,
+  "ordinary_or_driver_nodes": 942,
+  "phone_2_nodes": 0,
+  "no_ordinary_or_driver_nodes": 0,
+  "candidate_pole_route_pairs": 3669,
+  "pair_status_counts": {
+    "driver_3": 3531,
+    "ordinary_0": 136,
+    "no_eligible_active_public_stop_time": 2
+  },
+  "stop_time_diagnostics": {
+    "matching_stop_times": 426692,
+    "active_service": 274177,
+    "no_regular_public_access": 263309,
+    "driver_arrangement": 263309,
+    "inactive_service": 152515,
+    "public_regular": 10868
+  },
+  "public_witness_exception_types": {
+    "none": 942
+  },
+  "output_sha256": {
+    "witness.csv": "1bdb2425e6177e256d70a63e0a575fce70ea1bf895d611e94370a1e742e5a375",
+    "conditional_witness.csv": "08b2da721d479d6e0c909719efa9a0f95f83239e5b4f0624c56f314e7d8baa5c",
+    "phone_witness.csv": "3d2c18644287bec37b6904f9ea7e97fd7659ab57667be95f9c37c9dfe8ab9fa0",
+    "public_witness.csv": "eb97ea9691fde400f34deb509b8494c035f5fb4eb259200b9a9710fe5825a1c0",
+    "pair_diagnostics.csv": "81b29259dd32b020949527fe7b0a88260da766a3291819dd0dbcb9b2bddfed1a",
+    "node_diagnostics.csv": "802ef1083703b5ba2726d299a40ff809fe62401998ee3b263540dd613234ea90"
+  }
+}

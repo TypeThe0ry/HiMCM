@@ -1,0 +1,18 @@
+{
+  "version": "V205",
+  "activation_status": "staged_not_active",
+  "settings": 37,
+  "unordered_within_setting_pairs": 4440,
+  "certified_pairs": 4278,
+  "unresolved_pairs": 162,
+  "settings_with_unique_smallest_expected_mean_rank": 22,
+  "inherited_common_event_base_means": 2064,
+  "inherited_familywise_alpha": 0.05,
+  "additional_multiplicity_penalty": false,
+  "scope": "Conditional simulation expected decision ranks; simultaneous mean boxes do not represent real-world city win probabilities.",
+  "arithmetic": "[L_a-U_b,U_a-L_b], 1e-12 guard",
+  "input_sha256": {
+    "mean_bounds.csv": "0456be61e0f5369e6f29f472606a0f067cd40ee347cb6ab76bc9cf76ea76f191",
+    "precision_summary.json": "4b355ddc52a4e092f89c72bd0ea2a7231bc0ebc662c414bcc99b8590d9689fe8"
+  }
+}
