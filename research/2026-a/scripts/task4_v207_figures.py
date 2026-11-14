@@ -10,11 +10,13 @@ from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.patches import Rectangle
 from task4_v5_model import ROOT, NAMES, score
 from task4_user_v205_revision import revised_bounds
-from task4_v207_ahp import ahp_weights, CATEGORIES, OUT as RES, bounds
+from task4_v207_ahp import ahp_weights, CATEGORIES, OUT as RES, bounds, PTR_FILL, PTR_MEDIAN_FILL, TRAVEL_FILL
+from matplotlib.patches import Polygon
 from audit_task4_v203 import raw_map
 from task4_v207_flags import flag, COUNTRY
 
 FIG = ROOT.parents[2] / 'HiMCM-Overleaf/figures'
+PROXY = {(c, 'upper_secondary_ptr') for c in list(PTR_FILL) + PTR_MEDIAN_FILL} | {(c, 'travel') for c in TRAVEL_FILL}
 # Figures kept out of the paper for now (TT 11-14), ready to re-insert.
 SPARE = ROOT / 'results/task4_v207_ahp/spare_figures'
 for f in font_manager.findSystemFonts():
@@ -67,6 +69,10 @@ def heatmap(f, lo, hi, main):
             txt = f'{v:.2f}'
             col = 'white' if (v > .80 or v < .15) else INK
             ax.text(j + .5, i + .5, txt, ha='center', va='center', fontsize=9, color=col)
+            if H[i, j] - L[i, j] > 1e-12:  # utility range: corner triangle
+                ax.add_patch(Polygon([(j + .72, i + .04), (j + .96, i + .04), (j + .96, i + .38)], color=INK, lw=0))
+            if (main.city.iloc[i], cols[j]) in PROXY:  # proxy value: dashed outline
+                ax.add_patch(Rectangle((j + .06, i + .08), .88, .84, fill=False, edgecolor=INK, lw=1.0, ls=(0, (2, 1.5))))
     for j in range(m + 1):
         ax.axvline(j, color='white', lw=2 if j % 2 == 0 else .8)
     for i in range(n + 1):
@@ -88,6 +94,12 @@ def heatmap(f, lo, hi, main):
     cax = fig.add_axes([.20, .05, .36, .018])
     cb = fig.colorbar(plt.cm.ScalarMappable(cmap=SPECTRUM, norm=plt.Normalize(0, 1)), cax=cax, orientation='horizontal')
     cb.outline.set_visible(False); cb.set_ticks([0, .5, 1]); cb.ax.set_xticklabels(['0 worst', '0.5 at anchor', '1 best'])
+    lg = fig.add_axes([.60, .02, .38, .07]); lg.set_xlim(0, 10); lg.set_ylim(0, 2); lg.axis('off')
+    lg.add_patch(Rectangle((0, 1.1), .9, .8, facecolor='#e3f1e8', lw=0))
+    lg.add_patch(Polygon([(.65, 1.15), (.88, 1.15), (.88, 1.45)], color=INK, lw=0))
+    lg.text(1.2, 1.5, 'utility range (midpoint shown)', va='center', fontsize=9, color=MUTED)
+    lg.add_patch(Rectangle((0, .1), .9, .8, facecolor='#e3f1e8', edgecolor=INK, lw=1.0, ls=(0, (2, 1.5))))
+    lg.text(1.2, .5, 'proxy value (national or survey)', va='center', fontsize=9, color=MUTED)
     fig.savefig(FIG / 'indicator_compare.pdf'); plt.close(fig)
 
 
@@ -186,3 +198,189 @@ if __name__ == '__main__':
     radars(main)
     need = future(f, lo, hi, w, main)
     print(json.dumps({k: v for k, v in need.items()}, indent=0))
+
+
+COORDS = {'Vienna': (48.21, 16.37), 'Zurich': (47.37, 8.54), 'Helsinki': (60.17, 24.94), 'Berlin': (52.52, 13.40),
+          'London': (51.51, -0.13), 'Amsterdam': (52.37, 4.90), 'Stockholm': (59.33, 18.07), 'Paris': (48.86, 2.35),
+          'Madrid': (40.42, -3.70), 'Milan': (45.46, 9.19), 'Dublin': (53.35, -6.26), 'Oslo': (59.91, 10.75),
+          'Prague': (50.08, 14.44), 'Warsaw': (52.23, 21.01), 'Singapore': (1.35, 103.82), 'Tokyo': (35.68, 139.69)}
+# label offsets in degrees (dx, dy) to keep names clear of each other
+OFFS = {'London': (-.6, .0), 'Amsterdam': (.5, 1.3), 'Paris': (-.6, -.5), 'Zurich': (-.6, -.8), 'Milan': (.6, -.8),
+        'Berlin': (.6, -.8), 'Prague': (.6, -.6), 'Vienna': (.6, -.7), 'Warsaw': (.6, .7), 'Dublin': (-.6, .5),
+        'Oslo': (-.6, .5), 'Stockholm': (.6, -.8), 'Helsinki': (.6, .6), 'Madrid': (.6, -.7),
+        'Singapore': (.7, .0), 'Tokyo': (-.7, -.9)}
+
+
+def city_map(main):
+    import shapefile
+    shp = shapefile.Reader(str(ROOT / 'visuals/cartography/vector_data/ne_10m_land/ne_10m_land.shp'))
+    rank = main.set_index('city')['rank']
+    fig = plt.figure(figsize=(6.5, 4.1))
+    axE = fig.add_axes([.0, .0, .70, 1.0]); axA = fig.add_axes([.71, .30, .29, .62])
+    views = [(axE, (-12, 32), (35, 64.5), 'Europe: 14 cities'), (axA, (96, 146), (-4, 44), 'Asia: 2 cities')]
+    for ax, (x0, x1), (y0, y1), title in views:
+        ax.set_facecolor('#eaf2fb')
+        for s in shp.shapes():
+            bx = s.bbox
+            if bx[2] < x0 - 5 or bx[0] > x1 + 5 or bx[3] < y0 - 5 or bx[1] > y1 + 5:
+                continue
+            pts = np.array(s.points); parts = list(s.parts) + [len(pts)]
+            for a, b in zip(parts[:-1], parts[1:]):
+                ax.fill(pts[a:b, 0], pts[a:b, 1], color='#f4f3ef', ec='#c9c7bf', lw=.4)
+        ax.set_xlim(x0, x1); ax.set_ylim(y0, y1)
+        ax.set_aspect(1 / np.cos(np.radians((y0 + y1) / 2)))
+        ax.set_xticks([]); ax.set_yticks([])
+        for sp in ax.spines.values():
+            sp.set_color('#c9c7bf'); sp.set_linewidth(.6)
+        ax.text(.02, .98, title, transform=ax.transAxes, va='top', fontsize=10, weight='bold', color=INK)
+        k = (x1 - x0) / (ax.get_position().width * 6.5) / (44 / (.70 * 6.5))  # degrees per inch, Europe = 1
+        for c, (lat, lon) in COORDS.items():
+            if not (x0 < lon < x1 and y0 < lat < y1):
+                continue
+            r = int(rank[c]); col = SERIES[0] if r <= 3 else MUTED
+            ax.scatter(lon, lat, s=34 if r <= 3 else 20, color=col, ec='white', lw=.8, zorder=10)
+            dx, dy = OFFS[c]; dx *= k; dy *= k
+            ha = 'left' if dx > 0 else 'right'
+            fw, fh = 1.55 * k, .78 * k
+            fx = lon + dx if dx > 0 else lon + dx - fw
+            flag(ax, COUNTRY[c], fx, lat + dy - fh / 2, fw, fh)
+            tx = fx + fw + .35 * k if dx > 0 else fx - .35 * k
+            ax.text(tx, lat + dy, f'{c} ({r})', ha=ha, va='center', fontsize=9, color=INK,
+                    weight='bold' if r <= 3 else 'normal', zorder=11)
+    fig.text(.715, .22, 'Number in brackets: final rank', fontsize=9, color=MUTED)
+    fig.text(.715, .15, 'Blue dot: top three', fontsize=9, color=SERIES[0])
+    fig.savefig(FIG / 'city_map.pdf'); plt.close(fig)
+
+
+if __name__ == '__main__' and 'map' in __import__('sys').argv:
+    city_map(data()[4])
+
+
+def weight_donut():
+    w, info = ahp_weights()
+    cat_names = [c for c, _ in CATEGORIES]
+    cw = [info['category_weights'][c] for c in cat_names]
+    base = ['#2a78d6', '#eda100', '#1baf7a', '#6250d6', '#eb6834']
+    from matplotlib.colors import to_rgb
+    def tint(c, t):
+        r = np.array(to_rgb(c)); return tuple(r + (1 - r) * t)
+    inner_cols, outer, outer_cols, outer_lab = [], [], [], []
+    for (name, ms), col in zip(CATEGORIES, base):
+        inner_cols.append(col)
+        for k, m in enumerate(ms):
+            outer.append(w[NAMES.index(m)]); outer_cols.append(tint(col, .35 + .3 * k))
+            outer_lab.append((SHORT[m].replace('/\n', '/').replace('\n', ' ').replace('- ', ''), w[NAMES.index(m)]))
+    fig, ax = plt.subplots(figsize=(6.5, 3.6))
+    fig.subplots_adjust(left=.0, right=1, top=1, bottom=0)
+    wo, _ = ax.pie(outer, radius=1.0, colors=outer_cols, startangle=90, counterclock=False,
+                   wedgeprops=dict(width=.32, edgecolor='white', linewidth=1.5))
+    ax.pie(cw, radius=.68, colors=inner_cols, startangle=90, counterclock=False,
+           wedgeprops=dict(width=.3, edgecolor='white', linewidth=1.5))
+    # category weights printed inside the inner ring
+    ang0 = 90
+    for c, v in zip(cat_names, cw):
+        mid = np.radians(ang0 - v * 180); ang0 -= v * 360
+        ax.text(.53 * np.cos(mid), .53 * np.sin(mid), f'{v:.2f}', ha='center', va='center', fontsize=9.5,
+                color='white', weight='bold')
+    items = []
+    for wedge, (lab, v) in zip(wo, outer_lab):
+        a = np.radians((wedge.theta1 + wedge.theta2) / 2)
+        items.append([np.cos(a), np.sin(a), 1.15 * np.sin(a), lab, v])
+    for side in (1, -1):
+        grp = sorted([it for it in items if np.sign(it[0]) == side], key=lambda it: it[2])
+        for i in range(1, len(grp)):  # keep labels at least 0.2 apart vertically
+            grp[i][2] = max(grp[i][2], grp[i - 1][2] + .2)
+    for x, y, ty, lab, v in items:
+        ax.annotate(f'{lab} {v:.3f}', xy=(x, y), xytext=(1.3 * np.sign(x), ty),
+                    ha='left' if x > 0 else 'right', va='center', fontsize=9, color=INK,
+                    arrowprops=dict(arrowstyle='-', color='#b9b8b2', lw=.6, shrinkA=0, shrinkB=2))
+    ax.text(0, 0, 'AHP\nweights', ha='center', va='center', fontsize=10, weight='bold', color=INK, linespacing=1)
+    handles = [plt.Rectangle((0, 0), 1, 1, color=c) for c in base]
+    ax.legend(handles, [CAT_SHORT[c] for c in cat_names], loc='lower left', bbox_to_anchor=(.0, .0),
+              frameon=False, fontsize=9, handlelength=1, title='Category (inner ring)', title_fontsize=9)
+    ax.set_aspect('equal'); ax.set_xlim(-3.9, 2.7); ax.set_ylim(-1.25, 1.35)
+    fig.savefig(FIG / 'ahp_weights.pdf'); plt.close(fig)
+
+
+if __name__ == '__main__' and 'donut' in __import__('sys').argv:
+    weight_donut()
+
+
+RAW = [('homicide_per_100k', 'Homicides per 100,000', False, '{:.2f}'),
+       ('pm25_ugm3', 'PM2.5 (µg/m³)', False, '{:.1f}'),
+       ('cli', 'Living-cost index', False, '{:.0f}'),
+       ('pir', 'House price / income', False, '{:.1f}'),
+       ('broadband_mbps', 'Broadband (Mbps)', True, '{:.0f}'),
+       ('he_per_million', 'Higher-ed. per million', True, '{:.0f}')]
+
+
+def raw_multiples(f):
+    from task4_v207_ahp import ZURICH_HOMICIDE
+    df = f.set_index('city').copy()
+    df.loc['Zurich', 'homicide_per_100k'] = round(ZURICH_HOMICIDE, 2)
+    fig, axes = plt.subplots(2, 3, figsize=(6.5, 7.6))
+    fig.subplots_adjust(left=.01, right=.99, top=.93, bottom=.02, wspace=.06, hspace=.10)
+    fig.text(.01, .975, 'Green: best three   Red: worst three   (cities sorted best to worst)', fontsize=9, color=MUTED, va='center')
+    for ax, (col, title, benefit, fmt) in zip(axes.ravel(), RAW):
+        v = df[col].astype(float).sort_values(ascending=not benefit)  # best first
+        n = len(v); srt = np.sort(v.values)
+        vmax = srt[-1] if srt[-1] < 3 * srt[-2] else 1.25 * srt[-2]  # cap one extreme outlier
+        W = 1.3 * vmax; x0 = -W * .47 / .53  # bars start 47% across the panel, after flag and name
+        for i, (c, x) in enumerate(v.items()):
+            colr = '#1baf7a' if i < 3 else ('#e34948' if i >= n - 3 else '#c4c3bd')
+            ax.barh(i, min(x, vmax), left=0, height=.7, color=colr)
+            lab = fmt.format(x) + ('»' if x > vmax else '')
+            ax.text(min(x, vmax) + .02 * vmax, i, lab, ha='left', va='center', fontsize=9, color=MUTED)
+            ax.text(-.03 * W, i, c, ha='right', va='center', fontsize=9, color=INK)
+            flag(ax, COUNTRY[c], x0 + .005 * W, i + .3, .12 * W, -.6)
+        ax.set_xlim(x0, W); ax.set_ylim(n - .4, -1.6); ax.axis('off')
+        ax.text(x0, -1.25, title, fontsize=10, weight='bold', color=INK, va='center')
+    fig.savefig(FIG / 'raw_compare.pdf'); plt.close(fig)
+
+
+def robustness_fig(main):
+    s = json.loads((RES / 'summary.json').read_text())
+    iv = pd.DataFrame(s['interval_ahp']).set_index('city').loc[main.city]
+    fig = plt.figure(figsize=(6.5, 4.3))
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.35, 1], left=.15, right=.97, top=.88, bottom=.24, wspace=.32)
+    ax = fig.add_subplot(gs[0]); y = np.arange(len(iv))
+    top3 = set(main.city[:3])
+    for i, (c, r) in enumerate(iv.iterrows()):
+        col = SERIES[0] if c in top3 else '#9c9b95'
+        ax.plot([r.score_lower, r.score_upper], [i, i], color=col, lw=3.2, alpha=.45, solid_capstyle='round')
+        ax.scatter(r.score, i, s=26, color=col, zorder=3, edgecolor='white', lw=.6)
+    ax.axvline(iv.score_lower.max(), color='#e34948', lw=.8, ls=(0, (3, 2)))
+    ax.text(iv.score_lower.max() + .3, len(iv) - .6, 'best guaranteed\nscore (Zurich)', fontsize=9, color='#e34948', va='bottom')
+    ax.set_yticks(y); ax.set_yticklabels([f'{r}  {c}' for r, c in zip(main['rank'], main.city)])
+    ax.set_ylim(len(iv) - .4, -.6); ax.tick_params(length=0)
+    ax.grid(axis='x', color=GRID, lw=.5); ax.set_axisbelow(True)
+    for sp in ['top', 'right', 'left']:
+        ax.spines[sp].set_visible(False)
+    ax.set_xlabel('TOPSIS score: range and representative value')
+    ax.set_title('A   Score ranges', loc='left', fontsize=10.5, weight='bold')
+    ax = fig.add_subplot(gs[1])
+    ks = ['20', '100', '500']
+    names = ['Zurich', 'Madrid', 'Singapore']
+    left = np.zeros(3)
+    for k, c in enumerate(names + ['Other']):
+        vals = np.array([100 * (s['dirichlet'][kk]['first'].get(c, 0) if c != 'Other' else
+                                1 - sum(s['dirichlet'][kk]['first'].get(n, 0) for n in names)) for kk in ks])
+        ax.barh(range(3), vals, left=left, height=.6, color=(SERIES + ['#c4c3bd'])[k] if k < 3 else '#c4c3bd', label=c)
+        for j, v in enumerate(vals):
+            if v > 8:
+                ax.text(left[j] + v / 2, j, f'{v:.0f}%', ha='center', va='center', fontsize=9, color='white', weight='bold')
+        left += vals
+    ax.set_yticks(range(3)); ax.set_yticklabels([f'κ = {k}' for k in ks]); ax.set_ylim(2.5, -.5)
+    ax.set_xlim(0, 100); ax.set_xticks([0, 50, 100]); ax.set_xticklabels(['0', '50%', '100%'])
+    ax.tick_params(length=0)
+    for sp in ['top', 'right', 'left']:
+        ax.spines[sp].set_visible(False)
+    ax.set_xlabel('Share of weight draws ranked first')
+    ax.set_title('B   Random AHP weights', loc='left', fontsize=10.5, weight='bold')
+    ax.legend(loc='upper left', bbox_to_anchor=(-.02, -.2), ncol=2, frameon=False, fontsize=9, handlelength=1, columnspacing=.8, handletextpad=.3)
+    fig.savefig(FIG / 'robustness.pdf'); plt.close(fig)
+
+
+if __name__ == '__main__' and 'extra' in __import__('sys').argv:
+    d = data()
+    raw_multiples(d[0]); robustness_fig(d[4])
