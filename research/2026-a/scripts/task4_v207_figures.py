@@ -247,8 +247,6 @@ def city_map(main):
             tx = fx + fw + .35 * k if dx > 0 else fx - .35 * k
             ax.text(tx, lat + dy, f'{c} ({r})', ha=ha, va='center', fontsize=9, color=INK,
                     weight='bold' if r <= 3 else 'normal', zorder=11)
-    fig.text(.715, .22, 'Number in brackets: final rank', fontsize=9, color=MUTED)
-    fig.text(.715, .15, 'Blue dot: top three', fontsize=9, color=SERIES[0])
     fig.savefig(FIG / 'city_map.pdf'); plt.close(fig)
 
 
