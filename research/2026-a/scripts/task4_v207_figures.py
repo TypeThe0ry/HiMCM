@@ -69,10 +69,6 @@ def heatmap(f, lo, hi, main):
             txt = f'{v:.2f}'
             col = 'white' if (v > .80 or v < .15) else INK
             ax.text(j + .5, i + .5, txt, ha='center', va='center', fontsize=9, color=col)
-            if H[i, j] - L[i, j] > 1e-12:  # utility range: corner triangle
-                ax.add_patch(Polygon([(j + .72, i + .04), (j + .96, i + .04), (j + .96, i + .38)], color=INK, lw=0))
-            if (main.city.iloc[i], cols[j]) in PROXY:  # proxy value: dashed outline
-                ax.add_patch(Rectangle((j + .06, i + .08), .88, .84, fill=False, edgecolor=INK, lw=1.0, ls=(0, (2, 1.5))))
     for j in range(m + 1):
         ax.axvline(j, color='white', lw=2 if j % 2 == 0 else .8)
     for i in range(n + 1):
@@ -94,12 +90,6 @@ def heatmap(f, lo, hi, main):
     cax = fig.add_axes([.20, .05, .36, .018])
     cb = fig.colorbar(plt.cm.ScalarMappable(cmap=SPECTRUM, norm=plt.Normalize(0, 1)), cax=cax, orientation='horizontal')
     cb.outline.set_visible(False); cb.set_ticks([0, .5, 1]); cb.ax.set_xticklabels(['0 worst', '0.5 at anchor', '1 best'])
-    lg = fig.add_axes([.60, .02, .38, .07]); lg.set_xlim(0, 10); lg.set_ylim(0, 2); lg.axis('off')
-    lg.add_patch(Rectangle((0, 1.1), .9, .8, facecolor='#e3f1e8', lw=0))
-    lg.add_patch(Polygon([(.65, 1.15), (.88, 1.15), (.88, 1.45)], color=INK, lw=0))
-    lg.text(1.2, 1.5, 'utility range (midpoint shown)', va='center', fontsize=9, color=MUTED)
-    lg.add_patch(Rectangle((0, .1), .9, .8, facecolor='#e3f1e8', edgecolor=INK, lw=1.0, ls=(0, (2, 1.5))))
-    lg.text(1.2, .5, 'proxy value (national or survey)', va='center', fontsize=9, color=MUTED)
     fig.savefig(FIG / 'indicator_compare.pdf'); plt.close(fig)
 
 
