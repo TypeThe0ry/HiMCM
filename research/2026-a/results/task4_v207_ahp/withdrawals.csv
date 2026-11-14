@@ -1,0 +1,11 @@
+scenario,cells,weight,midpoint_first,midpoint_top3,regret_first,mean_width
+baseline,0,ahp,['Zurich'],"['Zurich', 'Madrid', 'Singapore']",['Zurich'],8.316865390711968
+baseline,0,equal,['Zurich'],"['Zurich', 'Oslo', 'Paris']",['Zurich'],13.6592146370213
+pre2020_points,13,ahp,['Zurich'],"['Zurich', 'Madrid', 'Singapore']",['Zurich'],16.661000590960853
+pre2020_points,13,equal,['Zurich'],"['Zurich', 'Oslo', 'Paris']",['Zurich'],19.888975450283244
+after2025_points,64,ahp,['Madrid'],"['Madrid', 'Zurich', 'Singapore']",['Singapore'],27.93899519797309
+after2025_points,64,equal,['Zurich'],"['Zurich', 'Oslo', 'Prague']",['Zurich'],42.813500505349936
+non_ok_points,28,ahp,['Milan'],"['Milan', 'Madrid', 'Singapore']",['Milan'],24.476755712424293
+non_ok_points,28,equal,['Zurich'],"['Zurich', 'Oslo', 'Paris']",['Paris'],26.979650989195754
+union_points,95,ahp,['Milan'],"['Milan', 'Singapore', 'Madrid']",['Singapore'],46.32788322328413
+union_points,95,equal,['Milan'],"['Milan', 'Singapore', 'Zurich']",['Singapore'],59.18638907105529

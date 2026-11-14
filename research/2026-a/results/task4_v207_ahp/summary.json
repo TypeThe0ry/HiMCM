@@ -1,0 +1,804 @@
+{
+ "version": "V207 staged",
+ "base": "V205 bounds + Zurich homicide model value + 11 national/survey fills",
+ "ptr_median_fill": 13.449999999999996,
+ "ahp": {
+  "category_matrix": [
+   [
+    1.0,
+    3.0,
+    1.0,
+    3.0,
+    4.0
+   ],
+   [
+    0.333333,
+    1.0,
+    0.333333,
+    1.0,
+    2.0
+   ],
+   [
+    1.0,
+    3.0,
+    1.0,
+    3.0,
+    4.0
+   ],
+   [
+    0.333333,
+    1.0,
+    0.333333,
+    1.0,
+    2.0
+   ],
+   [
+    0.25,
+    0.5,
+    0.25,
+    0.5,
+    1.0
+   ]
+  ],
+  "category_weights": {
+   "Safety and environment": 0.340431,
+   "Cost of living": 0.12314,
+   "Education": 0.340431,
+   "Mobility": 0.12314,
+   "Daily life": 0.072858
+  },
+  "lambda_max": 5.026387413492749,
+  "CI": 0.0065968533731872725,
+  "CR": 0.005890047654631493,
+  "local_weights": {
+   "homicide_rate": 0.6666666666666667,
+   "pm25": 0.3333333333333333,
+   "cost_living_index": 0.5,
+   "price_income_ratio": 0.5,
+   "upper_secondary_ptr": 0.75,
+   "research_he_density": 0.25,
+   "travel": 0.6666666666666667,
+   "public_transport_density": 0.3333333333333333,
+   "fixed_broadband_mbps": 0.6666666666666667,
+   "public_pool_density": 0.3333333333333333
+  }
+ },
+ "weights": {
+  "homicide_rate": 0.226954,
+  "pm25": 0.113477,
+  "cost_living_index": 0.06157,
+  "price_income_ratio": 0.06157,
+  "upper_secondary_ptr": 0.255323,
+  "research_he_density": 0.085108,
+  "public_transport_density": 0.041047,
+  "travel": 0.082094,
+  "fixed_broadband_mbps": 0.048572,
+  "public_pool_density": 0.024286
+ },
+ "comparison": {
+  "ahp": {
+   "midpoint_order": [
+    "Zurich",
+    "Madrid",
+    "Singapore",
+    "Milan",
+    "Dublin",
+    "Paris",
+    "Helsinki",
+    "Prague",
+    "Oslo",
+    "London",
+    "Berlin",
+    "Stockholm",
+    "Warsaw",
+    "Vienna",
+    "Tokyo",
+    "Amsterdam"
+   ],
+   "midpoint_scores": {
+    "Vienna": 54.36,
+    "Zurich": 64.54,
+    "Helsinki": 58.72,
+    "Berlin": 55.63,
+    "London": 56.13,
+    "Amsterdam": 45.17,
+    "Stockholm": 55.43,
+    "Paris": 60.76,
+    "Madrid": 63.31,
+    "Milan": 61.12,
+    "Dublin": 60.79,
+    "Oslo": 57.55,
+    "Prague": 58.4,
+    "Warsaw": 54.46,
+    "Singapore": 62.53,
+    "Tokyo": 54.02
+   },
+   "regret_choice": [
+    "Zurich"
+   ],
+   "regret_order": [
+    "Zurich",
+    "Singapore",
+    "Madrid",
+    "Milan",
+    "Dublin",
+    "Paris",
+    "Prague",
+    "Oslo",
+    "Helsinki",
+    "Berlin",
+    "London",
+    "Vienna",
+    "Stockholm",
+    "Tokyo",
+    "Warsaw",
+    "Amsterdam"
+   ],
+   "possible_champions": 9,
+   "necessary_champions": 0,
+   "mean_width": 8.316865390711968
+  },
+  "equal": {
+   "midpoint_order": [
+    "Zurich",
+    "Oslo",
+    "Paris",
+    "Dublin",
+    "Prague",
+    "Singapore",
+    "Helsinki",
+    "Madrid",
+    "Stockholm",
+    "Milan",
+    "Warsaw",
+    "Vienna",
+    "Berlin",
+    "London",
+    "Tokyo",
+    "Amsterdam"
+   ],
+   "midpoint_scores": {
+    "Vienna": 58.12,
+    "Zurich": 65.86,
+    "Helsinki": 60.45,
+    "Berlin": 56.74,
+    "London": 56.63,
+    "Amsterdam": 51.91,
+    "Stockholm": 59.73,
+    "Paris": 61.65,
+    "Madrid": 60.18,
+    "Milan": 58.88,
+    "Dublin": 61.6,
+    "Oslo": 62.86,
+    "Prague": 61.22,
+    "Warsaw": 58.22,
+    "Singapore": 60.91,
+    "Tokyo": 53.65
+   },
+   "regret_choice": [
+    "Zurich"
+   ],
+   "regret_order": [
+    "Zurich",
+    "Oslo",
+    "Prague",
+    "Singapore",
+    "Paris",
+    "Dublin",
+    "Madrid",
+    "Helsinki",
+    "Vienna",
+    "Stockholm",
+    "Milan",
+    "Warsaw",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Tokyo"
+   ],
+   "possible_champions": 15,
+   "necessary_champions": 0,
+   "mean_width": 13.6592146370213
+  },
+  "old_fixed": {
+   "midpoint_order": [
+    "Zurich",
+    "Dublin",
+    "Madrid",
+    "Paris",
+    "Oslo",
+    "Helsinki",
+    "Singapore",
+    "Stockholm",
+    "Prague",
+    "Warsaw",
+    "Milan",
+    "Vienna",
+    "London",
+    "Berlin",
+    "Tokyo",
+    "Amsterdam"
+   ],
+   "midpoint_scores": {
+    "Vienna": 56.95,
+    "Zurich": 64.01,
+    "Helsinki": 60.37,
+    "Berlin": 56.77,
+    "London": 56.83,
+    "Amsterdam": 51.78,
+    "Stockholm": 59.23,
+    "Paris": 60.97,
+    "Madrid": 60.98,
+    "Milan": 58.04,
+    "Dublin": 62.48,
+    "Oslo": 60.78,
+    "Prague": 59.17,
+    "Warsaw": 58.23,
+    "Singapore": 59.7,
+    "Tokyo": 53.92
+   },
+   "regret_choice": [
+    "Zurich"
+   ],
+   "regret_order": [
+    "Zurich",
+    "Dublin",
+    "Oslo",
+    "Singapore",
+    "Madrid",
+    "Paris",
+    "Prague",
+    "Helsinki",
+    "Stockholm",
+    "Vienna",
+    "Milan",
+    "Warsaw",
+    "Berlin",
+    "London",
+    "Amsterdam",
+    "Tokyo"
+   ],
+   "possible_champions": 15,
+   "necessary_champions": 0,
+   "mean_width": 10.612694845807374
+  }
+ },
+ "dirichlet": {
+  "20": {
+   "first": {
+    "Vienna": 0.0001,
+    "Zurich": 0.5625,
+    "Helsinki": 0.0005,
+    "Berlin": 0.0,
+    "London": 0.0,
+    "Amsterdam": 0.0,
+    "Stockholm": 0.0,
+    "Paris": 0.0005,
+    "Madrid": 0.2996,
+    "Milan": 0.017,
+    "Dublin": 0.0274,
+    "Oslo": 0.0,
+    "Prague": 0.002,
+    "Warsaw": 0.0,
+    "Singapore": 0.0904,
+    "Tokyo": 0.0
+   },
+   "top3": {
+    "Vienna": 0.0024,
+    "Zurich": 0.9332,
+    "Helsinki": 0.0229,
+    "Berlin": 0.0,
+    "London": 0.0,
+    "Amsterdam": 0.0,
+    "Stockholm": 0.001,
+    "Paris": 0.1327,
+    "Madrid": 0.7541,
+    "Milan": 0.2724,
+    "Dublin": 0.2685,
+    "Oslo": 0.021,
+    "Prague": 0.0355,
+    "Warsaw": 0.0002,
+    "Singapore": 0.5561,
+    "Tokyo": 0.0
+   },
+   "mean_rank": {
+    "Vienna": 12.634,
+    "Zurich": 1.713,
+    "Helsinki": 7.3,
+    "Berlin": 11.596,
+    "London": 10.941,
+    "Amsterdam": 15.931,
+    "Stockholm": 11.835,
+    "Paris": 4.903,
+    "Madrid": 2.735,
+    "Milan": 5.419,
+    "Dublin": 4.745,
+    "Oslo": 8.884,
+    "Prague": 7.661,
+    "Warsaw": 12.715,
+    "Singapore": 4.011,
+    "Tokyo": 12.977
+   }
+  },
+  "100": {
+   "first": {
+    "Vienna": 0.0,
+    "Zurich": 0.8276,
+    "Helsinki": 0.0,
+    "Berlin": 0.0,
+    "London": 0.0,
+    "Amsterdam": 0.0,
+    "Stockholm": 0.0,
+    "Paris": 0.0,
+    "Madrid": 0.1645,
+    "Milan": 0.0,
+    "Dublin": 0.0001,
+    "Oslo": 0.0,
+    "Prague": 0.0,
+    "Warsaw": 0.0,
+    "Singapore": 0.0078,
+    "Tokyo": 0.0
+   },
+   "top3": {
+    "Vienna": 0.0,
+    "Zurich": 0.9986,
+    "Helsinki": 0.0,
+    "Berlin": 0.0,
+    "London": 0.0,
+    "Amsterdam": 0.0,
+    "Stockholm": 0.0,
+    "Paris": 0.0252,
+    "Madrid": 0.9718,
+    "Milan": 0.0857,
+    "Dublin": 0.1384,
+    "Oslo": 0.0,
+    "Prague": 0.0004,
+    "Warsaw": 0.0,
+    "Singapore": 0.7799,
+    "Tokyo": 0.0
+   },
+   "mean_rank": {
+    "Vienna": 13.681,
+    "Zurich": 1.185,
+    "Helsinki": 7.344,
+    "Berlin": 11.602,
+    "London": 10.442,
+    "Amsterdam": 16.0,
+    "Stockholm": 12.054,
+    "Paris": 5.035,
+    "Madrid": 2.14,
+    "Milan": 4.854,
+    "Dublin": 4.911,
+    "Oslo": 8.822,
+    "Prague": 7.713,
+    "Warsaw": 13.312,
+    "Singapore": 3.102,
+    "Tokyo": 13.802
+   }
+  },
+  "500": {
+   "first": {
+    "Vienna": 0.0,
+    "Zurich": 0.9871,
+    "Helsinki": 0.0,
+    "Berlin": 0.0,
+    "London": 0.0,
+    "Amsterdam": 0.0,
+    "Stockholm": 0.0,
+    "Paris": 0.0,
+    "Madrid": 0.0129,
+    "Milan": 0.0,
+    "Dublin": 0.0,
+    "Oslo": 0.0,
+    "Prague": 0.0,
+    "Warsaw": 0.0,
+    "Singapore": 0.0,
+    "Tokyo": 0.0
+   },
+   "top3": {
+    "Vienna": 0.0,
+    "Zurich": 1.0,
+    "Helsinki": 0.0,
+    "Berlin": 0.0,
+    "London": 0.0,
+    "Amsterdam": 0.0,
+    "Stockholm": 0.0,
+    "Paris": 0.0,
+    "Madrid": 1.0,
+    "Milan": 0.0012,
+    "Dublin": 0.0129,
+    "Oslo": 0.0,
+    "Prague": 0.0,
+    "Warsaw": 0.0,
+    "Singapore": 0.9859,
+    "Tokyo": 0.0
+   },
+   "mean_rank": {
+    "Vienna": 13.87,
+    "Zurich": 1.013,
+    "Helsinki": 7.266,
+    "Berlin": 11.294,
+    "London": 10.032,
+    "Amsterdam": 16.0,
+    "Stockholm": 11.829,
+    "Paris": 5.253,
+    "Madrid": 2.051,
+    "Milan": 4.606,
+    "Dublin": 5.127,
+    "Oslo": 8.986,
+    "Prague": 7.746,
+    "Warsaw": 13.566,
+    "Singapore": 2.952,
+    "Tokyo": 14.409
+   }
+  }
+ },
+ "vikor": {
+  "ahp": {
+   "order": [
+    "Madrid",
+    "Zurich",
+    "Paris",
+    "Dublin",
+    "Singapore",
+    "Prague",
+    "Milan",
+    "Berlin",
+    "London",
+    "Vienna",
+    "Stockholm",
+    "Helsinki",
+    "Oslo",
+    "Tokyo",
+    "Warsaw",
+    "Amsterdam"
+   ],
+   "Q": {
+    "Vienna": 0.3725,
+    "Zurich": 0.0598,
+    "Helsinki": 0.442,
+    "Berlin": 0.3389,
+    "London": 0.3464,
+    "Amsterdam": 0.9221,
+    "Stockholm": 0.441,
+    "Paris": 0.1049,
+    "Madrid": 0.0,
+    "Milan": 0.2514,
+    "Dublin": 0.158,
+    "Oslo": 0.474,
+    "Prague": 0.1984,
+    "Warsaw": 0.9184,
+    "Singapore": 0.1862,
+    "Tokyo": 0.5579
+   },
+   "advantage": false,
+   "stability": true
+  },
+  "equal": {
+   "order": [
+    "Oslo",
+    "Vienna",
+    "Paris",
+    "Zurich",
+    "Dublin",
+    "Helsinki",
+    "Prague",
+    "Stockholm",
+    "Madrid",
+    "Berlin",
+    "Singapore",
+    "Warsaw",
+    "Milan",
+    "London",
+    "Amsterdam",
+    "Tokyo"
+   ],
+   "Q": {
+    "Vienna": 0.2039,
+    "Zurich": 0.5,
+    "Helsinki": 0.5989,
+    "Berlin": 0.7395,
+    "London": 0.86,
+    "Amsterdam": 0.9187,
+    "Stockholm": 0.6554,
+    "Paris": 0.2066,
+    "Madrid": 0.7149,
+    "Milan": 0.8004,
+    "Dublin": 0.508,
+    "Oslo": 0.0946,
+    "Prague": 0.6065,
+    "Warsaw": 0.7844,
+    "Singapore": 0.7804,
+    "Tokyo": 1.0
+   },
+   "advantage": true,
+   "stability": false
+  }
+ },
+ "future_first": {
+  "balanced_improvement": [
+   "Zurich",
+   "Madrid",
+   "Singapore"
+  ],
+  "living_pressure": [
+   "Zurich",
+   "Madrid",
+   "Singapore"
+  ],
+  "resource_expansion": [
+   "Zurich",
+   "Madrid",
+   "Singapore"
+  ],
+  "today": [
+   "Zurich",
+   "Madrid",
+   "Singapore"
+  ]
+ },
+ "preferences": {
+  "education_priority": {
+   "weights": {
+    "homicide_rate": 0.1693,
+    "pm25": 0.0847,
+    "cost_living_index": 0.0459,
+    "price_income_ratio": 0.0459,
+    "upper_secondary_ptr": 0.381,
+    "research_he_density": 0.127,
+    "public_transport_density": 0.0306,
+    "travel": 0.0612,
+    "fixed_broadband_mbps": 0.0362,
+    "public_pool_density": 0.0181
+   },
+   "top5": [
+    [
+     "Zurich",
+     63.32
+    ],
+    [
+     "Madrid",
+     62.1
+    ],
+    [
+     "Singapore",
+     61.28
+    ],
+    [
+     "Paris",
+     61.17
+    ],
+    [
+     "Milan",
+     60.54
+    ]
+   ],
+   "regret_first": [
+    "Zurich"
+   ]
+  },
+  "independent_living": {
+   "weights": {
+    "homicide_rate": 0.2021,
+    "pm25": 0.101,
+    "cost_living_index": 0.0548,
+    "price_income_ratio": 0.0548,
+    "upper_secondary_ptr": 0.2273,
+    "research_he_density": 0.0758,
+    "public_transport_density": 0.0731,
+    "travel": 0.1462,
+    "fixed_broadband_mbps": 0.0432,
+    "public_pool_density": 0.0216
+   },
+   "top5": [
+    [
+     "Zurich",
+     65.01
+    ],
+    [
+     "Madrid",
+     63.3
+    ],
+    [
+     "Singapore",
+     61.62
+    ],
+    [
+     "Milan",
+     61.25
+    ],
+    [
+     "Dublin",
+     61.07
+    ]
+   ],
+   "regret_first": [
+    "Zurich"
+   ]
+  }
+ },
+ "ahp_vs_equal": {
+  "kendall_tau": 0.5166666666666667,
+  "cities_rank_changed": 12,
+  "equal_order": [
+   "Zurich",
+   "Oslo",
+   "Paris",
+   "Dublin",
+   "Prague",
+   "Singapore",
+   "Helsinki",
+   "Madrid",
+   "Stockholm",
+   "Milan",
+   "Warsaw",
+   "Vienna",
+   "Berlin",
+   "London",
+   "Tokyo",
+   "Amsterdam"
+  ]
+ },
+ "interval_ahp": [
+  {
+   "city": "Vienna",
+   "score": 54.358,
+   "score_lower": 50.425,
+   "score_upper": 57.631,
+   "max_regret": 16.758,
+   "decision_rank": 12,
+   "possible_champion": false
+  },
+  {
+   "city": "Zurich",
+   "score": 64.538,
+   "score_lower": 60.537,
+   "score_upper": 67.183,
+   "max_regret": 6.051,
+   "decision_rank": 1,
+   "possible_champion": true
+  },
+  {
+   "city": "Helsinki",
+   "score": 58.722,
+   "score_lower": 53.914,
+   "score_upper": 62.37,
+   "max_regret": 13.269,
+   "decision_rank": 9,
+   "possible_champion": true
+  },
+  {
+   "city": "Berlin",
+   "score": 55.634,
+   "score_lower": 50.994,
+   "score_upper": 59.419,
+   "max_regret": 16.19,
+   "decision_rank": 10,
+   "possible_champion": false
+  },
+  {
+   "city": "London",
+   "score": 56.134,
+   "score_lower": 50.963,
+   "score_upper": 60.349,
+   "max_regret": 16.22,
+   "decision_rank": 11,
+   "possible_champion": false
+  },
+  {
+   "city": "Amsterdam",
+   "score": 45.174,
+   "score_lower": 41.357,
+   "score_upper": 49.105,
+   "max_regret": 25.826,
+   "decision_rank": 16,
+   "possible_champion": false
+  },
+  {
+   "city": "Stockholm",
+   "score": 55.433,
+   "score_lower": 50.347,
+   "score_upper": 59.586,
+   "max_regret": 16.836,
+   "decision_rank": 13,
+   "possible_champion": false
+  },
+  {
+   "city": "Paris",
+   "score": 60.761,
+   "score_lower": 55.739,
+   "score_upper": 64.393,
+   "max_regret": 11.445,
+   "decision_rank": 6,
+   "possible_champion": true
+  },
+  {
+   "city": "Madrid",
+   "score": 63.312,
+   "score_lower": 58.492,
+   "score_upper": 66.589,
+   "max_regret": 8.691,
+   "decision_rank": 3,
+   "possible_champion": true
+  },
+  {
+   "city": "Milan",
+   "score": 61.116,
+   "score_lower": 56.24,
+   "score_upper": 64.601,
+   "max_regret": 10.944,
+   "decision_rank": 4,
+   "possible_champion": true
+  },
+  {
+   "city": "Dublin",
+   "score": 60.792,
+   "score_lower": 56.165,
+   "score_upper": 64.125,
+   "max_regret": 11.018,
+   "decision_rank": 5,
+   "possible_champion": true
+  },
+  {
+   "city": "Oslo",
+   "score": 57.551,
+   "score_lower": 54.337,
+   "score_upper": 60.057,
+   "max_regret": 12.846,
+   "decision_rank": 8,
+   "possible_champion": false
+  },
+  {
+   "city": "Prague",
+   "score": 58.404,
+   "score_lower": 54.68,
+   "score_upper": 61.239,
+   "max_regret": 12.504,
+   "decision_rank": 7,
+   "possible_champion": true
+  },
+  {
+   "city": "Warsaw",
+   "score": 54.457,
+   "score_lower": 47.416,
+   "score_upper": 61.235,
+   "max_regret": 19.768,
+   "decision_rank": 15,
+   "possible_champion": true
+  },
+  {
+   "city": "Singapore",
+   "score": 62.526,
+   "score_lower": 59.422,
+   "score_upper": 65.106,
+   "max_regret": 7.762,
+   "decision_rank": 2,
+   "possible_champion": true
+  },
+  {
+   "city": "Tokyo",
+   "score": 54.017,
+   "score_lower": 48.059,
+   "score_upper": 59.17,
+   "max_regret": 19.124,
+   "decision_rank": 14,
+   "possible_champion": false
+  }
+ ],
+ "homicide_withdrawals": {
+  "withdraw_Amsterdam_homicide": {
+   "rank": 15,
+   "first": "Zurich"
+  },
+  "withdraw_Zurich_homicide": {
+   "rank": 8,
+   "first": "Madrid"
+  }
+ },
+ "zurich_homicide": {
+  "model_value": 0.45358159365892936,
+  "supplied": 0.14,
+  "tie_rate": 0.6860838093484372,
+  "rank_with_supplied": null
+ }
+}
