@@ -384,3 +384,31 @@ def robustness_fig(main):
 if __name__ == '__main__' and 'extra' in __import__('sys').argv:
     d = data()
     raw_multiples(d[0]); robustness_fig(d[4])
+
+
+def workflow():
+    from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
+    steps = [('1  Data', '16 cities\n10 indicators\nofficial records\nand proxies', '#2a78d6'),
+             ('2  Utilities', 'every value\nmapped to 0-1\nwith a fixed\nreference level', '#1baf7a'),
+             ('3  AHP', 'five categories\ncompared from a\nstudent view\nCR = 0.006', '#eda100'),
+             ('4  TOPSIS', 'distance to the\nbest and worst\nprofile, 0-100\nZurich first', '#eb6834'),
+             ('5  Checks', 'score ranges\nwithdrawals\nrandom weights\nVIKOR, 2035', '#6250d6')]
+    fig, ax = plt.subplots(figsize=(6.5, 1.5))
+    fig.subplots_adjust(left=0, right=1, top=1, bottom=0)
+    ax.set_xlim(0, 100); ax.set_ylim(0, 24); ax.axis('off')
+    w, gap = 17.6, 2.9
+    for k, (title, body, col) in enumerate(steps):
+        x = .4 + k * (w + gap)
+        ax.add_patch(FancyBboxPatch((x, .5), w, 23, boxstyle='round,pad=0,rounding_size=1.6', fc='white', ec=col, lw=1.4))
+        ax.add_patch(FancyBboxPatch((x, 18), w, 5.5, boxstyle='round,pad=0,rounding_size=1.6', fc=col, ec=col, lw=1.4))
+        ax.add_patch(Rectangle((x, 18), w, 2, color=col, lw=0))
+        ax.text(x + w / 2, 20.7, title, ha='center', va='center', fontsize=9.5, weight='bold', color='white')
+        ax.text(x + w / 2, 9.2, body, ha='center', va='center', fontsize=9, color=INK, linespacing=1.15)
+        if k < len(steps) - 1:
+            ax.add_patch(FancyArrowPatch((x + w + .3, 11), (x + w + gap - .3, 11), arrowstyle='-|>', mutation_scale=9,
+                                         color=MUTED, lw=1.1))
+    fig.savefig(FIG / 'workflow.pdf'); plt.close(fig)
+
+
+if __name__ == '__main__' and 'workflow' in __import__('sys').argv:
+    workflow()
