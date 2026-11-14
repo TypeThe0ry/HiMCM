@@ -400,3 +400,76 @@ def workflow():
 
 if __name__ == '__main__' and 'workflow' in __import__('sys').argv:
     workflow()
+
+
+def weight_sensitivity():
+    f, lo, hi = bounds(); w, _ = ahp_weights(); mid = (lo + hi) / 2; cities = f.city.tolist()
+    ms = np.exp(np.linspace(np.log(.25), np.log(4), 41))
+    hl = {'Zurich': SERIES[0], 'Madrid': SERIES[1], 'Singapore': SERIES[2], 'Milan': SERIES[3]}
+    fig, axes = plt.subplots(1, 5, figsize=(6.5, 2.55), sharey=True)
+    fig.subplots_adjust(left=.075, right=.99, top=.80, bottom=.24, wspace=.10)
+    rows = []
+    for ax, (name, members) in zip(axes, CATEGORIES):
+        idx = [NAMES.index(m) for m in members]
+        S = []
+        for m in ms:
+            ww = w.copy(); ww[idx] *= m; ww /= ww.sum(); S.append(score(mid, ww))
+        S = np.array(S)
+        for k, c in enumerate(cities):
+            if c in hl:
+                continue
+            ax.plot(ms, S[:, k], color='#d6d5cf', lw=.8)
+        for c, col in hl.items():
+            ax.plot(ms, S[:, cities.index(c)], color=col, lw=1.8)
+        lead = [cities[i] for i in S.argmax(1)]
+        sw = [m for m, a, b in zip(ms[1:], lead[:-1], lead[1:]) if a != b]
+        for m in sw:
+            ax.axvline(m, color=MUTED, lw=.7, ls=(0, (2, 2)))
+            ax.text(m * 1.05, 69.2, f'×{m:.1f}', fontsize=9, color=MUTED, va='top')
+        rows.append(dict(category=name, leader_switch=[round(float(m), 2) for m in sw], leaders=sorted(set(lead))))
+        ax.axvline(1, color=INK, lw=.6)
+        ax.set_xscale('log'); ax.set_xticks([.25, 1, 4]); ax.set_xticklabels(['¼', '1', '4'])
+        ax.minorticks_off(); ax.set_ylim(50, 70); ax.tick_params(length=0)
+        ax.grid(axis='y', color=GRID, lw=.5); ax.set_axisbelow(True)
+        for sp in ['top', 'right']:
+            ax.spines[sp].set_visible(False)
+        ax.set_title(CAT_SHORT[name], fontsize=9.5, weight='bold')
+    axes[0].set_ylabel('TOPSIS score')
+    fig.text(.53, .105, 'Multiplier on one category weight (others rescaled; 1 = AHP weights)', ha='center', fontsize=9, color=MUTED)
+    lg = fig.add_axes([.17, 0, .72, .075]); lg.axis('off')
+    fw_, fh_ = fig.get_size_inches(); pos = lg.get_position(); lw_in, lh_in = pos.width * fw_, pos.height * fh_
+    lg.set_xlim(0, lw_in); lg.set_ylim(0, lh_in)  # inches, so flags keep their shape
+    for k, (c, col) in enumerate(hl.items()):
+        x = k * lw_in / 4
+        lg.plot([x + .1, x + .32], [lh_in / 2] * 2, color=col, lw=1.8)
+        flag(lg, COUNTRY[c], x + .4, lh_in / 2 - .06, .18, .12)
+        lg.text(x + .64, lh_in / 2, c, va='center', fontsize=9, color=INK)
+    fig.savefig(FIG / 'weight_sensitivity.pdf'); plt.close(fig)
+    (RES / 'weight_sensitivity.json').write_text(json.dumps(rows, indent=1))
+    return rows
+
+
+def category_champions(main):
+    cats = [c for c, _ in CATEGORIES]
+    W, H = 6.5, 2.35
+    fig, axes = plt.subplots(1, 5, figsize=(W, H))
+    fig.subplots_adjust(left=.01, right=.99, top=.98, bottom=.02, wspace=.08)
+    medal = ['#d4a017', '#9ea3a8', '#b87333']
+    for ax, cat, col in zip(axes, cats, ['#2a78d6', '#eda100', '#1baf7a', '#6250d6', '#eb6834']):
+        pos = ax.get_position(); aw, ah = pos.width * W, pos.height * H  # axes size in inches
+        ax.set_xlim(0, aw); ax.set_ylim(0, ah); ax.axis('off')  # 1 data unit = 1 inch: no distortion
+        ax.add_patch(Rectangle((0, ah - .27), aw, .27, color=col, lw=0))
+        ax.text(aw / 2, ah - .135, CAT_SHORT[cat], ha='center', va='center', fontsize=9.5, weight='bold', color='white')
+        top = main.set_index('city')[cat].sort_values(ascending=False).head(3)
+        for k, (c, v) in enumerate(top.items()):
+            y = ah - .62 - k * .62
+            ax.add_patch(plt.Circle((.12, y), .085, color=medal[k]))
+            ax.text(.12, y, str(k + 1), ha='center', va='center', fontsize=9, color='white', weight='bold')
+            flag(ax, COUNTRY[c], .26, y - .09, .27, .18)
+            ax.text(.6, y + .07, c, va='center', fontsize=9, color=INK, weight='bold' if k == 0 else 'normal')
+            ax.text(.6, y - .1, f'score {v:.2f}', va='center', fontsize=9, color=MUTED)
+    fig.savefig(FIG / 'category_champions.pdf'); plt.close(fig)
+
+
+if __name__ == '__main__' and 'more' in __import__('sys').argv:
+    print(weight_sensitivity()); category_champions(data()[4])

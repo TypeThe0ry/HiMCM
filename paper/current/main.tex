@@ -24,6 +24,7 @@ keywordsinsheet=true,titlepage=false,abstract=true}
 \hypersetup{pdftitle={Choosing a City for High-School Life with Incomplete Evidence},pdfauthor={}}
 \graphicspath{{./}{figures/}}
 
+\renewcommand{\topfraction}{.92}\renewcommand{\bottomfraction}{.8}\renewcommand{\textfraction}{.06}\renewcommand{\floatpagefraction}{.88}\setcounter{topnumber}{3}\setcounter{totalnumber}{5}
 \begin{document}
 \begin{abstract}
 Which of these sixteen cities best supports everyday life for a high schooler?
@@ -115,7 +116,6 @@ $r$ & Raw-value multiplier in a development scenario\\\bottomrule
 \end{tabular}
 
 \section{Indicator construction and city selection}
-\FloatBarrier
 \subsection{City selection}\label{sec:citychoice}
 We compare sixteen cities: Amsterdam, Berlin, Dublin, Helsinki, London, Madrid,
 Milan, Oslo, Paris, Prague, Singapore, Stockholm, Tokyo, Vienna, Warsaw and
@@ -171,7 +171,6 @@ Safety & Low recorded homicide rates (Singapore, Tokyo, Oslo) alongside higher r
 \end{tabular}
 \end{table}
 
-\FloatBarrier
 \subsection{Indicator system}\label{sec:indicators}
 We group the ten indicators into five categories, with two indicators in each.
 Table~\ref{tab:indicators} gives their units, preferred directions, anchors and
@@ -258,7 +257,6 @@ supply of 52 institutions per million.
 \caption{Indicator utilities for the sixteen cities, ordered by final score and grouped by category. Colour is utility from 0 (worst) to 1 (best). Flags mark countries.}\label{fig:indicator-compare}
 \end{figure}
 
-\FloatBarrier
 \subsection{Data sources and filled values}
 We build the comparison from the team table, retaining its source years and
 boundaries \cite{teamtable}. Table~\ref{tab:sources} lists the main sources.
@@ -314,7 +312,6 @@ We turn the city data into a ranking through the steps in Figure~\ref{fig:workfl
 \includegraphics[width=\linewidth]{figures/workflow.pdf}
 \caption{Model workflow: raw city data become utilities, AHP sets the weights, TOPSIS gives the representative score and ranking, and robustness checks test the result.}\label{fig:workflow}
 \end{figure}
-\FloatBarrier
 \subsection{Determining indicator weights (AHP)}
 \textbf{Step 1: Set up the hierarchy.}
 We use the analytic hierarchy process (AHP) to weight five categories and
@@ -377,7 +374,6 @@ printed beside each slice. Safety and environment and education each receive
 0.340.}\label{tab:ahp-weights}
 \end{figure}
 
-\FloatBarrier
 \subsection{TOPSIS scoring}
 \textbf{Step 1: Form the utility matrix.}
 We use each utility range's midpoint on the shared 0--1 scale for the representative score:
@@ -415,7 +411,6 @@ $\ell_i$ and $h_i$ to bound it:
  \label{eq:score-range}
 \end{equation}
 
-\FloatBarrier
 \subsection{Scoring results and interpretation}
 Zurich leads with a representative score of 64.5, followed by Madrid and
 Singapore (Table~\ref{tab:baseline}). Figure~\ref{fig:radar} compares
@@ -462,7 +457,18 @@ each pair of indicators using its local AHP weights.}
 \label{fig:radar}
 \end{figure}
 
-\FloatBarrier
+Zurich's lead comes from balance: it wins no category outright, but places
+second in safety and environment, mobility and daily life
+(Figure~\ref{fig:champions}). The category leaders differ, giving families
+with one strong priority a reason to look beyond the overall ranking.
+
+\begin{figure}[!htbp]\centering
+\includegraphics[width=\linewidth]{figures/category_champions.pdf}
+\caption{The three highest category scores in each of the five categories.
+Scores combine the two indicator utilities using their local AHP weights
+and run from 0 to 1. Zurich places second in three categories.}\label{fig:champions}
+\end{figure}
+
 \subsection{A significant revision: from equal weights to AHP weights}
 Our revision gives safety and schooling more influence. Equal weights assign
 every indicator 0.1; under AHP, safety and environment and education each receive
@@ -473,7 +479,6 @@ Zurich, Oslo, Paris and Dublin to Zurich, Madrid, Singapore and Milan.
 Twelve of sixteen cities change rank; Kendall's $\tau=0.517$ measures their
 agreement. Zurich stays first.
 
-\FloatBarrier
 \subsection{Robustness of the recommendation}\label{sec:sourcepolicy}
 \textbf{Score bounds and maximum regret.} We test utility ranges and weights
 in Figure~\ref{fig:robust}. Maximum regret is the most a city could trail its
@@ -539,6 +544,19 @@ $w\sim\operatorname{Dirichlet}(\kappa w_{\mathrm{AHP}})$. Zurich leads in
 larger $\kappa$ keeps weights closer to AHP. Zurich also stays first when
 we double education or mobility weights separately.
 
+When we multiply one category's AHP weight by $1/4$ to $4$ and rescale the
+others, Zurich stays first throughout the range for four categories
+(Figure~\ref{fig:wsens}). Madrid overtakes it when the cost-of-living weight
+reaches about $2.3$ times its AHP value.
+
+\begin{figure}[!htbp]\centering
+\includegraphics[width=\linewidth]{figures/weight_sensitivity.pdf}
+\caption{Representative scores as one category's AHP weight changes at a
+time, with the other weights rescaled to keep their total at one. Zurich,
+Madrid, Singapore and Milan are coloured; other cities are grey. The dashed
+line marks the cost-of-living multiplier where Madrid overtakes Zurich.}\label{fig:wsens}
+\end{figure}
+
 \textbf{Compromise ranking.} VIKOR balances total and largest shortfalls using
 the same utilities and weights. We scale shortfalls between the best and worst
 observed utilities, then equally combine the normalized weighted total and
@@ -548,7 +566,6 @@ and Zurich as close alternatives.
 
 \FloatBarrier
 \section{Model revision and extension}
-\FloatBarrier
 \subsection{Looking ahead to 2035}
 We test more public services (S1), higher costs and congestion (S2), and
 smaller classes, cleaner air and faster travel (S3) as possible 2035 scenarios.
@@ -573,7 +590,6 @@ time. S3: 10\% fewer pupils per teacher, lower PM$_{2.5}$ and shorter travel tim
 \label{fig:future}
 \end{figure}
 
-\FloatBarrier
 \subsection{Within-city fairness and growth stages}
 Citywide supply can mask differences in access and age. Figure~\ref{fig:walktime}
 shows walking-time context from resident grids \cite{brunogrids}. Istanbul's 2012
@@ -588,6 +604,28 @@ positively \cite{osloyouth2023}.
 \end{figure}
 
 \FloatBarrier
+\section{Strengths and weaknesses}
+\textbf{Strengths}
+\begin{itemize}
+\item Our AHP weights reflect student priorities and pass a consistency check.
+\item Every value is traced to a source record or labelled as a proxy,
+including values recorded in the team table.
+\item Zurich stays first across the 31 source-variant checks, many weight
+changes and all three 2035 scenarios.
+\item Clear tiers and visuals help a family compare cities and their trade-offs.
+\end{itemize}
+
+\textbf{Weaknesses}
+\begin{itemize}
+\item The AHP judgements are our team's, rather than a survey of students.
+\item We use 11 proxies, and some team-table values lack original source links.
+\item Zurich's lead depends on a homicide rate calculated from two offences.
+\item With 14 of 16 cities in Europe, the ranking does not transfer to cities
+outside this set.
+\end{itemize}
+Next, we would survey students to set the weights and collect city-level
+teacher data.
+
 \section{Conclusion and decision use}
 We recommend Zurich among these sixteen cities for its safety and education
 scores under our team's high-schooler priorities. It leads with AHP and equal
