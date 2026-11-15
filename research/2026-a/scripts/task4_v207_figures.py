@@ -143,7 +143,7 @@ def future(f, lo, hi, w, main):
     for c in main.city[1:]:
         i = cities.index(c); need[c] = None
         for cut in np.arange(0, .951, .005):
-            F = np.ones((16, 10)); F[i, idx] = 1 - cut
+            F = np.ones((len(cities), 10)); F[i, idx] = 1 - cut
             a, b = raw_map(lo, hi, F, means); s = score((a + b) / 2, w)
             if s[i] >= s[zi]:
                 need[c] = cut; break
@@ -159,7 +159,7 @@ def future(f, lo, hi, w, main):
     axes = axes.ravel()
     fig.subplots_adjust(left=.01, right=.99, top=.90, bottom=.07, wspace=.10, hspace=.42)
     same = all((rk.loc[main.city[top:], k] == rk.loc[main.city[top:], 'today']).all() for k, _ in scen)
-    fig.text(.01, .012, (f'Ranks {top + 1}-16 keep their order in every scenario. ' if same else '') + 'Box: rank changed.', fontsize=9, color=MUTED)
+    fig.text(.01, .012, (f'Ranks {top + 1}-{len(p)} keep their order in every scenario. ' if same else '') + 'Box: rank changed.', fontsize=9, color=MUTED)
     for ax, (k, title, sub) in zip(axes, boards):
         b6 = p[k].sort_values(ascending=False).head(top)
         O = 42  # bars start here; a bar of length v-40 encodes the score
@@ -420,8 +420,8 @@ if __name__ == '__main__' and 'workflow' in __import__('sys').argv:
 def weight_sensitivity():
     f, lo, hi = bounds(); w, _ = ahp_weights(); mid = (lo + hi) / 2; cities = f.city.tolist()
     ms = np.exp(np.linspace(np.log(.25), np.log(4), 41))
-    hl = {'Zurich': '#d52b1e', 'Madrid': '#e0a800', 'Singapore': '#f08080', 'Milan': '#009246'}  # flag colours
-    ls_ = {'Singapore': (0, (3, 1.5))}
+    hl = {'Zurich': '#d52b1e', 'Madrid': '#e0a800', 'Singapore': '#1a9e5c', 'Milan': '#6250d6'}  # flag colours
+    ls_ = {}
     fig, axes = plt.subplots(1, 5, figsize=(6.5, 2.55), sharey=True)
     fig.subplots_adjust(left=.075, right=.99, top=.80, bottom=.24, wspace=.10)
     rows = []
@@ -553,7 +553,7 @@ def news_podium():
     W, H = 3.14, 1.42  # column width of the news spread (TT 11-15 magazine layout)
     fig = plt.figure(figsize=(W, H)); ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, W); ax.set_ylim(0, H); ax.axis('off')
     podium = [('Madrid', 2, 63.3, 'Best value', '#e0a800', .62), ('Zurich', 1, 65.2, 'Best all-round', '#d52b1e', .8),
-              ('Singapore', 3, 62.5, 'Safest streets', '#ef3340', .5)]
+              ('Singapore', 3, 62.5, 'Safest streets', '#1a9e5c', .5)]
     for k, (c, r, sc, tag, col, h) in enumerate(podium):
         w = .94; x = .06 + k * (w + .09)
         ax.add_patch(FancyBboxPatch((x, .05), w, h, boxstyle='round,pad=0,rounding_size=.05', fc=col, ec='none'))
@@ -578,21 +578,21 @@ if __name__ == '__main__' and 'podium' in __import__('sys').argv:
 def news_glance(main):
     cats = [c for c, _ in CATEGORIES]
     m = main.set_index('city')
-    cities = [('Zurich', '#d52b1e'), ('Madrid', '#e0a800'), ('Singapore', '#ef3340')]
-    W, H = 5.6, 1.3
+    cities = [('Zurich', '#d52b1e'), ('Madrid', '#e0a800'), ('Singapore', '#1a9e5c')]
+    W, H = 6.5, 1.8
     fig, axes = plt.subplots(1, 5, figsize=(W, H), sharey=True)
-    fig.subplots_adjust(left=.19, right=.99, top=.78, bottom=.08, wspace=.12)
+    fig.subplots_adjust(left=.15, right=.985, top=.8, bottom=.05, wspace=.16)
     for ax, cat in zip(axes, cats):
         for i, (c, col) in enumerate(cities):
             v = float(m.loc[c, cat])
-            ax.barh(i, v, height=.62, color=col, alpha=.95 if c != 'Singapore' else .7)
-            ax.text(v + .02, i, f'{v:.2f}', va='center', fontsize=9, color=INK)
-        ax.set_xlim(0, 1.05); ax.set_ylim(2.5, -.5); ax.set_xticks([])
+            ax.barh(i, v, height=.62, color=col, alpha=.95)
+            ax.text(v + .02, i, f'{v:.2f}', va='center', fontsize=10, color=INK)
+        ax.set_xlim(0, 1.22); ax.set_ylim(2.5, -.5); ax.set_xticks([])
         for sp in ax.spines.values():
             sp.set_visible(False)
         ax.axvline(0, color=MUTED, lw=.8); ax.tick_params(axis='y', length=0)
-        ax.set_title(CAT_SHORT[cat], fontsize=9.5, weight='bold', color=INK)
-    axes[0].set_yticks(range(3)); axes[0].set_yticklabels([c for c, _ in cities], fontsize=9.5)
+        ax.set_title(CAT_SHORT[cat], fontsize=10.5, weight='bold', color=INK)
+    axes[0].set_yticks(range(3)); axes[0].set_yticklabels([c for c, _ in cities], fontsize=10.5)
     axes[0].tick_params(axis='y', length=0, pad=24)
     pos = axes[0].get_position(); fw, fh = fig.get_size_inches()
     for i, (c, _) in enumerate(cities):

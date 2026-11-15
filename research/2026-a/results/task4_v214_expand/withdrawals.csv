@@ -1,0 +1,11 @@
+scenario,cells,weight,midpoint_first,midpoint_top3,regret_first,mean_width
+baseline,0,ahp,['Luxembourg'],"['Luxembourg', 'Zurich', 'Macao SAR']",['Luxembourg'],8.153818047300135
+baseline,0,equal,['Luxembourg'],"['Luxembourg', 'Reykjavik', 'Zurich']",['Luxembourg'],13.080386345098006
+pre2020_points,13,ahp,['Luxembourg'],"['Luxembourg', 'Zurich', 'Macao SAR']",['Luxembourg'],11.258612540416
+pre2020_points,13,equal,['Luxembourg'],"['Luxembourg', 'Reykjavik', 'Zurich']",['Reykjavik'],15.398436880265242
+after2025_points,64,ahp,['Luxembourg'],"['Luxembourg', 'Macao SAR', 'Reykjavik']",['Luxembourg'],15.486645116162137
+after2025_points,64,equal,['Luxembourg'],"['Luxembourg', 'Reykjavik', 'Macao SAR']",['Reykjavik'],23.96449346291792
+non_ok_points,28,ahp,['Luxembourg'],"['Luxembourg', 'Macao SAR', 'Reykjavik']",['Luxembourg'],14.156822200667198
+non_ok_points,28,equal,['Luxembourg'],"['Luxembourg', 'Reykjavik', 'Macao SAR']",['Reykjavik'],18.01437959464309
+union_points,95,ahp,['Luxembourg'],"['Luxembourg', 'Macao SAR', 'Reykjavik']",['Luxembourg'],22.287474297731322
+union_points,95,equal,['Luxembourg'],"['Luxembourg', 'Reykjavik', 'Macao SAR']",['Reykjavik'],29.998282136730356

@@ -1,0 +1,11 @@
+scenario,cells,weight,midpoint_first,midpoint_top3,regret_first,mean_width
+baseline,0,ahp,['Zurich'],"['Zurich', 'Macao SAR', 'Madrid']",['Zurich'],8.354803889634308
+baseline,0,equal,['Zurich'],"['Zurich', 'Oslo', 'Macao SAR']",['Zurich'],13.473743926154993
+pre2020_points,13,ahp,['Zurich'],"['Zurich', 'Macao SAR', 'Madrid']",['Macao SAR'],11.61105177265826
+pre2020_points,13,equal,['Zurich'],"['Zurich', 'Macao SAR', 'Oslo']",['Zurich'],15.904870097184045
+after2025_points,64,ahp,['Macao SAR'],"['Macao SAR', 'Dubai', 'Zurich']",['Macao SAR'],16.045329839904216
+after2025_points,64,equal,['Macao SAR'],"['Macao SAR', 'Zurich', 'Copenhagen']",['Macao SAR'],24.88878309850271
+non_ok_points,28,ahp,['Macao SAR'],"['Macao SAR', 'Milan', 'Dubai']",['Macao SAR'],14.650637513897323
+non_ok_points,28,equal,['Macao SAR'],"['Macao SAR', 'Zurich', 'Oslo']",['Macao SAR'],18.648419773238867
+union_points,95,ahp,['Macao SAR'],"['Macao SAR', 'Dubai', 'Milan']",['Macao SAR'],23.177906786427993
+union_points,95,equal,['Macao SAR'],"['Macao SAR', 'Copenhagen', 'Toronto']",['Macao SAR'],31.216902927135273

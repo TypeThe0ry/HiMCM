@@ -1,0 +1,109 @@
+{
+ "gates": [
+  [
+   "homicide",
+   3.0
+  ],
+  [
+   "pm25",
+   25.0
+  ],
+  [
+   "pir",
+   20.0
+  ]
+ ],
+ "excluded": {
+  "Vienna": [
+   "homicide"
+  ],
+  "Milan": [
+   "pm25"
+  ],
+  "Singapore": [
+   "pir"
+  ],
+  "Tokyo": [
+   "pm25"
+  ],
+  "New York": [
+   "homicide"
+  ],
+  "Los Angeles": [
+   "homicide"
+  ],
+  "Chicago": [
+   "homicide"
+  ],
+  "San Francisco": [
+   "homicide"
+  ],
+  "Beijing": [
+   "pm25",
+   "pir"
+  ],
+  "Shenzhen": [
+   "pir"
+  ],
+  "Guangzhou": [
+   "pir"
+  ],
+  "Hong Kong SAR": [
+   "pir"
+  ],
+  "New Delhi": [
+   "pm25"
+  ],
+  "Mumbai": [
+   "pm25",
+   "pir"
+  ],
+  "Sao Paulo": [
+   "homicide"
+  ],
+  "Mexico City": [
+   "homicide"
+  ],
+  "Buenos Aires": [
+   "pir"
+  ],
+  "Dubai": [
+   "pm25"
+  ],
+  "Abu Dhabi": [
+   "pm25"
+  ],
+  "Cairo": [
+   "pm25"
+  ],
+  "Johannesburg": [
+   "homicide"
+  ],
+  "Nairobi": [
+   "homicide"
+  ],
+  "Seoul": [
+   "pir"
+  ]
+ },
+ "feasible_order": [
+  "Zurich",
+  "Macao SAR",
+  "Madrid",
+  "Dublin",
+  "Paris",
+  "Helsinki",
+  "Copenhagen",
+  "Prague",
+  "Oslo",
+  "Toronto",
+  "Kuala Lumpur",
+  "London",
+  "Amsterdam",
+  "Berlin",
+  "Stockholm",
+  "Sydney",
+  "Warsaw",
+  "Istanbul"
+ ]
+}

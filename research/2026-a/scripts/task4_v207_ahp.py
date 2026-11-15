@@ -225,7 +225,7 @@ def main():
     means = filled_means
     fut = []
     for scen, ch in {'today': {}, **SCENARIOS_2035}.items():
-        a, b = raw_map(lo, hi, factors_for((16, 10), ch), means)
+        a, b = raw_map(lo, hi, factors_for((len(cities), 10), ch), means)
         t = table(cities, a, b, w)
         for r in t.itertuples():
             fut.append(dict(scenario=scen, city=r.city, score=r.score, rank=r.rank, regret_rank=r.decision_rank))
@@ -256,7 +256,11 @@ def main():
     def gap(rate):
         a, b = lo.copy(), hi.copy(); a[zi, 0] = b[zi, 0] = 2 / (2 + rate)
         s_ = score((a + b) / 2, w); return s_[zi] - np.delete(s_, zi).max()
-    summary['zurich_homicide'] = dict(model_value=ZURICH_HOMICIDE, supplied=0.14, tie_rate=brentq(gap, 0, 20),
+    try:
+        tie = brentq(gap, 0, 20)
+    except ValueError:
+        tie = None  # Zurich is not first at any rate in [0, 20]
+    summary['zurich_homicide'] = dict(model_value=ZURICH_HOMICIDE, supplied=0.14, tie_rate=tie,
                                       rank_with_supplied=None)
     (OUT / 'summary.json').write_text(json.dumps(summary, indent=1, default=float))
     print(json.dumps(dict(ahp=dict(CR=info['CR'], cw=info['category_weights']), weights=summary['weights']), indent=1))

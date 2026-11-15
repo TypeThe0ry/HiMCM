@@ -4,7 +4,7 @@
 \documentclass{mcmthesis}
 \mcmsetup{CTeX=false,tcn=18213,problem=A,sheet=true,titleinsheet=true,
 keywordsinsheet=true,titlepage=false,abstract=true}
-\usepackage{palatino,microtype,ragged2e,placeins,url,xurl,multicol}
+\usepackage{palatino,microtype,ragged2e,placeins,url,xurl,multicol,lettrine}
 \definecolor{Ink}{HTML}{1B1B1B}\definecolor{Navy}{HTML}{184F95}\definecolor{Brick}{HTML}{B3261E}
 \definecolor{Mist}{HTML}{EEF3FA}\definecolor{Line}{HTML}{C5D0E0}\definecolor{Muted}{HTML}{52514E}
 \usepackage[font=small,labelfont={bf,sf,color=Navy},labelsep=period,skip=5pt]{caption}
@@ -41,29 +41,32 @@ keywordsinsheet=true,titlepage=false,abstract=true}
 \renewcommand{\topfraction}{.92}\renewcommand{\bottomfraction}{.8}\renewcommand{\textfraction}{.06}\renewcommand{\floatpagefraction}{.88}\setcounter{topnumber}{3}\setcounter{totalnumber}{5}
 \begin{document}
 \begin{abstract}
-Which of these sixteen cities best supports everyday life for a high schooler?
-We group ten measures into safety and environment, cost of living, education,
-mobility and daily life. We set priorities with AHP from a high-schooler's
-point of view, then use TOPSIS to give each city a score from 0 to 100.
+Which city best supports everyday life for a high schooler? We compare 44 cities
+using ten indicators across safety and environment, cost of living, education,
+mobility and daily life. We set student priorities with AHP, convert mixed
+city records and labelled proxies into utility ranges, and use TOPSIS to
+calculate representative scores from 0 to 100.
 
-Zurich ranks first at 65.2, followed by Madrid at 63.3 and Singapore at 62.5.
-Zurich's balance of safety, education, mobility and daily-life resources gives
-it a 1.8-point lead over Madrid.
+Among the 44 cities, Luxembourg ranks first, with Zurich a clear second.
+Their representative scores are 68.9 and 65.2, followed by Macao SAR at 63.9,
+Reykjavik at 63.7 and Madrid at 63.3.
 
-After applying must-have thresholds, Zurich and Madrid remain first and second
-after four cities that fail a threshold are excluded. Across three family
-profiles, Zurich and Madrid are the top two each time.
+Luxembourg leads in all 31 source-variant checks and all withdrawal tests,
+under both AHP and equal weights. It also ranks first in 99.97\% of random
+weightings at concentration 100, all three family profiles, all three
+hypothetical 2035 scenarios, and the VIKOR comparison. Its maximum regret is
+1.7 points. After must-have thresholds exclude 24 cities, the same five cities
+head the feasible shortlist.
 
-The recommendation is conditional. Zurich remains first in all 31 source-variant
-checks, leads in 93.4\% of 10,000 AHP-centred weight draws at concentration 100,
-and has the smallest maximum regret at 5.4 points. Madrid takes first place if
-Zurich's homicide value is treated as unknown or if the cost-of-living weight is
-raised to about three times our AHP value. The three 2035 scenarios keep Zurich,
-Madrid and Singapore in the top three.
+The main condition concerns Luxembourg's evidence. With about 138,000 residents,
+it has few city-level series, and homicide, pupils per teacher and broadband
+use national proxies. Treating those three cells as unknown over $[0,1]$
+puts Zurich first and Luxembourg sixteenth, with a representative score of 57.2.
+The random-weight share describes our declared preference experiment; the
+2035 scenarios describe assumed changes.
 
-We recommend Zurich, with Madrid as a close second choice. Families should
-shortlist Zurich, Madrid and Singapore, then check school eligibility, language,
-cultural fit and other factors outside our ten indicators.
+Families should shortlist Luxembourg, Zurich, Macao SAR, Reykjavik and Madrid,
+then check admission, language and cost against their own circumstances.
 
 \begin{keywords}
 high-school city choice; AHP; TOPSIS; interval evidence; maximum regret; student priorities.
@@ -83,7 +86,7 @@ document a significant model revision and communicate the result in a news
 article.
 
 \subsection{Our approach}
-We follow five steps. We select sixteen cities and ten indicators; convert each
+We follow five steps. We select 44 cities and ten indicators; convert each
 indicator to a comparable utility while recording proxies and ranges; set
 student priorities with AHP; calculate a TOPSIS ranking; and test the result
 with source checks, weight changes, uncertainty intervals and 2035 scenarios.
@@ -94,15 +97,14 @@ The workflow is shown in Figure~\ref{fig:workflow}.
 \end{figure}
 
 \subsection{What makes a city suitable for high-school life?}
-The recommendation applies to these sixteen high-income cities, fourteen of
-them in Europe. We compare one capital or major city per country on ten measures
-that describe a teenager's everyday choices:
+The recommendation applies to our 44-city global sample. We compare capitals
+and major cities on ten measures that describe a teenager's everyday choices:
 \begin{itemize}
 \item safety and environment protect students during ordinary trips and school days;
 \item cost of living captures whether a family can sustain housing and daily expenses;
 \item education measures the teaching capacity and nearby higher-education options that shape learning;
 \item mobility reflects how easily a 14--18-year-old can reach school, activities and services;
-\item daily life uses broadband and public pools because comparable city-level counts exist for every city.
+\item daily life uses broadband and public pools to describe digital access and recreational supply.
 \end{itemize}
 We considered libraries, parks, youth culture, friendships, language and cultural
 fit, but comparable city-level counts or consistent measures were unavailable;
@@ -112,8 +114,8 @@ needs and budget. We express each measure as a utility from 0 to 1, with higher
 values preferred. The \textbf{representative score} is the TOPSIS score at the
 midpoint of each cell's utility range.
 
-Compared with equal weights, thirteen cities change rank, while Zurich remains
-first. The appended AI-use report describes assistance with research,
+Compared with equal weights, 41 of 44 cities change rank, while Luxembourg
+remains first. The appended AI-use report describes assistance with research,
 calculations and writing \cite{exa}.
 
 \section{Assumptions and their role}
@@ -121,9 +123,9 @@ We make the following practical assumptions so that the model describes an
 ordinary student's decision rather than an abstract city average.
 \begin{enumerate}
 \item \textbf{The student lives with family in the city centre and attends a public upper-secondary school.} \emph{Justification.} This gives the city-wide indicators a common everyday setting and keeps the school comparison at the same stage.
-\item \textbf{City-wide statistics represent what a typical student experiences.} \emph{Justification.} Comparable neighbourhood-level records are not available for all sixteen cities, so a common city boundary is the most consistent basis for comparison.
+\item \textbf{City-wide statistics represent what a typical student experiences.} \emph{Justification.} Comparable neighbourhood-level records are not available for all 44 cities, so we use each indicator's stated boundary and label broader proxies.
 \item \textbf{The latest available source year describes current conditions.} \emph{Justification.} The data come from different release schedules; retaining each source year is more transparent than inventing a common observation date.
-\item \textbf{A national proxy represents the city when no city record exists.} \emph{Justification.} Labelled proxies keep the matrix complete while allowing their influence to be checked in the sensitivity analysis.
+\item \textbf{A national or metropolitan proxy represents the city when no city record exists.} \emph{Justification.} Labelled proxies retain geographic scope, and a remaining single gap takes the median available utility for that indicator. Sensitivity checks examine the recommendation under alternative evidence treatments.
 \item \textbf{A family weighs the five categories as in our AHP matrix.} We assign safety and education 0.340 each, cost and mobility 0.123 each, and daily life 0.073. \emph{Justification.} The declared priorities make the decision rule reproducible, and the family profiles test how other reasonable priorities change the shortlist.
 \item \textbf{The ten indicators are sufficiently distinct to be added.} \emph{Justification.} Pairing two indicators within each category captures different parts of the student's experience while avoiding repeated measures where the available data overlap.
 \item \textbf{Costs are judged against a typical local family budget.} \emph{Justification.} The living-cost and price-to-income measures capture recurring burdens faced by a family choosing where to live, while individual fees and allowances remain outside the city comparison.
@@ -153,58 +155,110 @@ $r$ & Raw-value multiplier in a development scenario & unitless\\\bottomrule
 
 \section{Indicator construction and city selection}
 \subsection{City selection}\label{sec:citychoice}
-We compare sixteen cities: Amsterdam, Berlin, Dublin, Helsinki, London, Madrid,
-Milan, Oslo, Paris, Prague, Singapore, Stockholm, Tokyo, Vienna, Warsaw and
-Zurich. We choose one capital or major city per country with a comparable
-official record, which keeps national data systems from being counted several
-times while retaining city-level evidence for the decision. The set spans cost,
-climate, population size, safety and transit, as Table~\ref{tab:cityset} shows.
-Sixteen cities exceed COMAP's minimum of ten, and every cell in the matrix has a
-documented value, a labelled proxy or a utility range.
-Figure~\ref{fig:citymap} shows their locations and final ranks.
+We compare 44 cities, retaining the original sixteen and adding 28. We choose
+the largest or a representative city from the GDP top-10 and GDP-per-capita
+top-10 economies, add further US and Chinese cities, and extend regional
+coverage. The set includes four US cities, Shanghai, Beijing, Shenzhen and
+Guangzhou, and Hong Kong SAR and Macao SAR. Table~\ref{tab:cityset} shows its
+spread across the dimensions the indicators measure.
+
+We use the UN Degree of Urbanisation as a common international yardstick.
+A city, or urban centre, is a contiguous cluster of 1~km$^2$ grid cells with
+at least 1,500 residents per km$^2$ and at least 50,000 residents in total.
+The UN Statistical Commission adopted the method in March 2020, following
+joint development by the EU, OECD, UN-Habitat, World Bank, FAO and ILO. It
+complements national definitions, which remain in use.\footnote{European Commission et al.,
+\emph{Applying the Degree of Urbanisation} (2021).
+\url{https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/ks-02-20-499}.}
+All 44 candidates qualify. Indicator records retain their stated municipal,
+metropolitan or national scope; the definition establishes city eligibility.
+
+We exclude a candidate if two or more indicators remain missing after a
+targeted search. This removes Moscow, Doha and Bangkok. Shanghai remains after
+sources establish a 39-minute commute and 883 swimming venues, or 3.56 per
+100,000 residents. A remaining single gap takes the median available utility
+for that indicator. Every retained cell therefore has a value, a labelled
+proxy or fill, or a utility range. Table~\ref{tab:cityprofile} counts these
+labels; Figure~\ref{fig:citymap} locates the original sample.
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/city_map.pdf}
-\caption{The 16 candidate cities, with national flags and final ranks in brackets; blue dots mark the top three.}\label{fig:citymap}
+\caption{Geographic reference for the 44 cities, with each city's rank in the representative score. Table~\ref{tab:cityprofile} lists their populations and evidence counts.}\label{fig:citymap}
 \end{figure}
 
-We prioritize city records, using national statistics or surveys as labelled
-proxies when a city record is unavailable (Section~4.3). Table~\ref{tab:cityprofile}
-counts the evidence labels, and withdrawal tests examine team-table values
-without original links in Section~\ref{sec:sourcepolicy}.
+\begin{table}[!htbp]\centering
+\caption{Profiles of all 44 cities and evidence counts. D: direct; R: non-proxy ranges; P: proxies or fills.}\label{tab:cityprofile}
+\begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{2pt}
+\begin{minipage}[t]{.49\linewidth}\centering
+\begin{tabular}{@{}llrccc@{}}
+\toprule \hd{City} & \hd{Country} & \hd{Pop. (year)} & \hd{D} & \hd{R} & \hd{P}\\\midrule
+Abu Dhabi & UAE & 4,135,985 (2024) & 4 & 3 & 3\\
+Amsterdam & Netherlands & 941,927 (2025) & 7 & 2 & 1\\
+Beijing & China & 21,800,000 (2025) & 5 & 2 & 3\\
+Berlin & Germany & 3,700,577 (2025) & 8 & 2 & 0\\
+Buenos Aires & Argentina & 3,121,707 (2022) & 7 & 1 & 2\\
+Cairo & Egypt & 10,427,030 (2025) & 6 & 1 & 3\\
+Chicago & US & 2,731,585 (2025) & 6 & 2 & 2\\
+Copenhagen & Denmark & 667,099 (2025) & 4 & 2 & 4\\
+Dubai & UAE & 4,248,200 (2024) & 3 & 3 & 4\\
+Dublin & Ireland & 592,713 (2022) & 7 & 2 & 1\\
+Guangzhou & China & 19,101,000 (2025) & 4 & 2 & 4\\
+Helsinki & Finland & 694,392 (2025) & 7 & 2 & 1\\
+Hong Kong SAR & China & 7,534,200 (2024) & 7 & 2 & 1\\
+Istanbul & Turkey & 15,754,053 (2025) & 6 & 2 & 2\\
+Johannesburg & S. Africa & 4,803,262 (2022) & 7 & 1 & 2\\
+Kuala Lumpur & Malaysia & 2,074,100 (2025) & 6 & 2 & 2\\
+London & UK & 9,122,909 (2025) & 7 & 2 & 1\\
+Los Angeles & US & 3,869,089 (2025) & 7 & 2 & 1\\
+Luxembourg & Luxembourg & 137,696 (2025) & 4 & 3 & 3\\
+Macao SAR & China & 688,900 (2025) & 6 & 2 & 2\\
+Madrid & Spain & 3,527,924 (2025) & 7 & 2 & 1\\
+Mexico City & Mexico & 9,358,381 (2025) & 6 & 2 & 2\\
+\bottomrule\end{tabular}\end{minipage}\hfill
+\begin{minipage}[t]{.49\linewidth}\centering
+\begin{tabular}{@{}llrccc@{}}
+\toprule \hd{City} & \hd{Country} & \hd{Pop. (year)} & \hd{D} & \hd{R} & \hd{P}\\\midrule
+Milan & Italy & 1,399,079 (2025) & 6 & 3 & 1\\
+Mumbai & India & 12,442,373 (2011) & 5 & 3 & 2\\
+Nairobi & Kenya & 4,397,073 (2019) & 4 & 2 & 4\\
+New Delhi & India & 21,752,070 (2025) & 5 & 2 & 3\\
+New York & US & 8,584,629 (2025) & 5 & 2 & 3\\
+Oslo & Norway & 727,797 (2025) & 8 & 2 & 0\\
+Paris & France & 2,103,778 (2023) & 7 & 2 & 1\\
+Prague & Czechia & 1,407,084 (2025) & 7 & 3 & 0\\
+Reykjavik & Iceland & 138,772 (2025) & 4 & 2 & 4\\
+San Francisco & US & 826,079 (2025) & 6 & 2 & 2\\
+Sao Paulo & Brazil & 11,895,578 (2024) & 6 & 2 & 2\\
+Seoul & S. Korea & 9,579,177 (2025) & 7 & 2 & 1\\
+Shanghai & China & 24,802,600 (2024) & 4 & 3 & 3\\
+Shenzhen & China & 18,248,500 (2025) & 4 & 2 & 4\\
+Singapore & Singapore & 6,036,900 (2024) & 7 & 3 & 0\\
+Stockholm & Sweden & 999,200 (2025) & 6 & 4 & 0\\
+Sydney & Australia & 5,231,147 (2021) & 4 & 2 & 4\\
+Tokyo & Japan & 9,983,365 (2026) & 7 & 2 & 1\\
+Toronto & Canada & 3,273,119 (2024) & 5 & 2 & 3\\
+Vienna & Austria & 2,028,399 (2025) & 8 & 1 & 1\\
+Warsaw & Poland & 1,863,800 (2024) & 7 & 2 & 1\\
+Zurich & Switzerland & 440,935 (2025) & 6 & 3 & 1\\
+\bottomrule\end{tabular}\end{minipage}
+\par\smallskip
+\textbf{Total: 259 direct, 95 non-proxy ranges, 86 proxies or fills.}
+Proxy or fill status takes precedence in these counts, including for travel
+proxies that also have utility ranges. Populations retain source boundaries
+and years. US, UK and UAE abbreviate country names.
+\endgroup
+\end{table}
 
 \begin{table}[!htbp]\centering
-\caption{City profiles and evidence labels.}\label{tab:cityprofile}
-\begingroup\footnotesize\setlength{\tabcolsep}{7pt}\zebra
-\begin{tabular}{@{}l l r r r r@{}}
-\toprule \hd{City} & \hd{Country} & \hd{Pop. (year)} & \hd{Direct} & \hd{Ranges} & \hd{Proxies}\\\midrule
-Vienna & Austria & 2,028,399 (2025) & 8 & 1 & 1\\
-Zurich & Switzerland & 440,935 (2025) & 6 & 3 & 1\\
-Helsinki & Finland & 694,392 (2025) & 7 & 2 & 1\\
-Berlin & Germany & 3,700,577 (2025) & 8 & 2 & 0\\
-London & United Kingdom & 9,122,909 (2025) & 7 & 2 & 1\\
-Amsterdam & Netherlands & 941,927 (2025) & 7 & 2 & 1\\
-Stockholm & Sweden & 999,200 (2025) & 6 & 4 & 0\\
-Paris & France & 2,103,778 (2023) & 7 & 2 & 1\\
-Madrid & Spain & 3,527,924 (2025) & 7 & 2 & 1\\
-Milan & Italy & 1,399,079 (2025) & 6 & 3 & 1\\
-Dublin & Ireland & 592,713 (2022) & 7 & 2 & 1\\
-Oslo & Norway & 727,797 (2025) & 8 & 2 & 0\\
-Prague & Czechia & 1,407,084 (2025) & 7 & 3 & 0\\
-Warsaw & Poland & 1,863,800 (2024) & 7 & 2 & 1\\
-Singapore & Singapore & 6,036,900 (2024) & 7 & 3 & 0\\
-Tokyo & Japan & 9,983,365 (2026) & 7 & 2 & 1\\
-\midrule \textbf{Total} &  &  & \textbf{112} & \textbf{37} & \textbf{11}\\
-\bottomrule\end{tabular}\endgroup
-\par\vspace{10pt}
-\caption{The sixteen cities distribute across the dimensions the indicators measure.}\label{tab:cityset}
-\begingroup\small\zebra
+\caption{The global sample spans different costs, scales and daily-life conditions. Utilities use range midpoints.}\label{tab:cityset}
+\begingroup\footnotesize\zebra
 \begin{tabular}{@{}p{.2\linewidth}>{\raggedright\arraybackslash}p{.76\linewidth}@{}}
 \toprule \hd{Dimension} & \hd{Span within the set}\\\midrule
-Cost of living & Moderate: Warsaw, Prague, Madrid, Berlin; high: Zurich, Oslo, London, Singapore\\
-Climate & Northern: Oslo, Helsinki, Stockholm; continental: Berlin, Vienna, Warsaw, Prague; maritime: London, Dublin, Amsterdam; warm: Madrid, Milan, Singapore, Tokyo\\
-Scale & Mid-size: Zurich, Oslo, Helsinki, Dublin; large: Tokyo, London, Paris\\
-Mobility & Cycling/tram: Amsterdam, Berlin, Prague, Vienna; metro: Tokyo, Paris, London\\
-Safety & Low recorded homicide: Singapore, Tokyo, Oslo; higher rates elsewhere\\
+Regional coverage & Europe; North and South America; East, South and Southeast Asia; the Gulf; Africa; Oceania\\
+Living costs & Utility: 0.46 in Zurich to 0.84 in Cairo; New Delhi and Mumbai also have lower measured costs\\
+Scale & Luxembourg: 137,696 residents (2025); Shanghai: 24,802,600 (2024), using source populations\\
+Teaching resources & Pupils-per-teacher utility: 0.33 in Johannesburg to 0.70 in Dubai and Abu Dhabi, with proxies labelled\\
+Transport supply & Stop-supply utility: 0.50 in Mumbai to 0.96 in Luxembourg; incomplete inventories give lower bounds\\
+Safety & Homicide utility: 0.04 in Johannesburg to 0.97 in Singapore\\
 \bottomrule
 \end{tabular}\endgroup
 \end{table}
@@ -280,23 +334,22 @@ durations. We use work-commute means to describe general travel conditions
 and Singapore's school-stage bins to form a separate utility range
 \cite{eurostatcommute,singapore}.
 
-The cities differ across indicators (Figure~\ref{fig:indicator-compare}). Singapore and Milan have the highest
-homicide utilities, 0.97 and 0.89. Zurich's recalculated rate gives utility
-0.85, while Amsterdam's 1.44 per 100,000 gives utility 0.58. Madrid has the
-lowest pupil-teacher proxy ratio, 9.6 pupils per teacher, and utility 0.61.
-Figure~\ref{fig:raw} shows the raw values, including Zurich's higher-education
-supply of 52 institutions per million.
-
-The raw-value figure keeps each indicator in its original unit and ranks cities
-separately, so it shows the observed spread and the best and worst city for each
-measure. The heat map applies the common 0--1 utility scale to the same cities
-and orders them by final rank, so it shows how the indicators combine under our
-weights. Reading both distinguishes a strong result in one unit from a strong
-overall position.
+The cities differ across indicators. Singapore and Milan have the highest
+homicide utilities, 0.97 and 0.89. Luxembourg's national proxy gives 0.87;
+Zurich's recalculated rate gives 0.85. Dubai and Abu Dhabi have the highest
+pupils-per-teacher utility, 0.70, also from national proxies. These differences
+show why one strong indicator need not determine the overall ranking.
+Figures~\ref{fig:raw} and~\ref{fig:indicator-compare} illustrate the raw and
+utility scales for the original sample; the expanded comparison uses the same
+anchors and weights.
 
 \subsection{Data sources and filled values}
-We build the comparison from the team table, retaining its source years and
-boundaries \cite{teamtable}. Table~\ref{tab:sources} lists the main sources.
+We retain the original team table's source years and boundaries \cite{teamtable}
+and add public police and statistical records, IQAir/WHO air-quality data,
+Numbeo's 2025 edition, OECD/UNESCO and national education statistics,
+operator station lists, Ookla speed records and city pool directories.
+Table~\ref{tab:sources} groups these sources by indicator.
+
 We apply three rules to keep measurements comparable:
 \begin{enumerate}
 \item Count each station once, excluding separate platforms and repeated line
@@ -304,35 +357,34 @@ entries. Warsaw's 21 M1 and 18 M2 entries give 38 stations after merging the
 shared \'Swi\k{e}tokrzyska interchange \cite{warsawmetro}.
 \item Match school stage before dividing pupils by teacher FTE. Prague's totals
 therefore remove lower-gymnasium pupils and teachers \cite{prague}.
-\item Recalculate the homicide inputs from official records. Zurich's value is
-the two-year mean of one completed offence in 2024 and two in 2025, divided by
-the 2025 population of 440,935, giving 0.34 per 100,000 \cite{zhpks2025}.
-Amsterdam's value is the CBS total of 68 homicide victims over 2018--2022,
-averaged over five years and divided by the 2025 population of 941,927, giving
-1.44 per 100,000 \cite{cbshomicide2022}.
+\item Recalculate homicide rates from official records. Zurich's two-year mean
+of one completed offence in 2024 and two in 2025, divided by its 2025 population
+of 440,935, gives 0.34 per 100,000 \cite{zhpks2025}. Amsterdam's 68 victims over
+2018--2022, averaged over five years and divided by its 2025 population of
+941,927, gives 1.44 per 100,000 \cite{cbshomicide2022}.
 \end{enumerate}
-We count 38 distinct stations in Tokyo's Oedo directory within the 23 wards.
-Oslo's inventory uses parent stop groups; we exclude the questioned Tveten bru
-entry because its closure is unconfirmed \cite{enturstop}.
+Tokyo's Oedo directory contributes 38 distinct stations within the 23 wards.
+Oslo uses parent stop groups and excludes the questioned Tveten bru entry
+\cite{enturstop}. Incomplete provider inventories set lower bounds; mean
+commutes produce the utility ranges in Equation~\ref{eq:travel-range}.
 
-We fill gaps with 11 proxy cells. Six are Eurostat national pupil-teacher
-ratios from table educ\_\allowbreak uoe\_\allowbreak perp04
-(ISCED 3, 2024): Helsinki 17.4, Amsterdam 16.4, Dublin 14.2, Paris 11.5,
-Milan 10.6 and Madrid 9.6. The two median pupil-teacher proxies, for Zurich and London, use 13.45. Three survey travel means enter as utility ranges:
-Vienna 32 minutes, Tokyo 47.5 minutes from the 2021 Japanese time-use survey,
-and Warsaw 27 minutes \cite{warsaw2022}.
-
-Our matrix contains 160 entries: 123 single values, including proxies, and
-37 utility ranges. Zurich's homicide recalculation is separate from the 11 proxies.
+The original sixteen retain 11 proxy cells, including six Eurostat national
+pupils-per-teacher ratios and the median ratio of 13.45 for Zurich and London.
+The expansion adds 13 median-utility fills: Macao SAR's price-to-income ratio;
+higher-education density in Toronto, Copenhagen and Reykjavik; and pool density
+in New York, Beijing, Shenzhen, Guangzhou, New Delhi, Mexico City, Dubai,
+Nairobi and Kuala Lumpur. Each fill uses the median utility of cities with an
+available value for that indicator. Across the 440 cells, Table~\ref{tab:cityprofile}
+separates 259 direct values, 95 non-proxy ranges and 86 proxies or fills.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/raw_compare.pdf}
-\caption{Raw values for the six indicators with complete city records, ordered from best to worst within each indicator. The best three cities are green and the worst three red; flags identify countries. Homicides are shown per 100,000: Zurich is 0.34 and Amsterdam is 1.44, while the highest three are Berlin (2.10), Stockholm (2.52) and Vienna (3.91). Higher-education supply is institutions per million.}\label{fig:raw}
+\caption{Raw values for six indicators across the 44 cities, ordered within each indicator. Green marks the best three and red the worst three; flags identify countries. Higher-education supply is institutions per million.}\label{fig:raw}
 \end{figure}
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/indicator_compare.pdf}
-\caption{Indicator utilities for the sixteen cities, ordered by final score and grouped by category. Colour is utility from 0 (worst) to 1 (best). Flags mark countries.}\label{fig:indicator-compare}
+\caption{Indicator utilities for the 44 cities, ordered by representative score and grouped by category. Colour is utility from 0 (worst) to 1 (best). Flags mark countries.}\label{fig:indicator-compare}
 \end{figure}
 
 \begin{table}[!htbp]\centering
@@ -340,16 +392,16 @@ Our matrix contains 160 entries: 123 single values, including proxies, and
 \begingroup\footnotesize\setlength{\tabcolsep}{4pt}\zebra
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{.17\linewidth}>{\raggedright\arraybackslash}p{.45\linewidth}>{\raggedright\arraybackslash}p{.12\linewidth}>{\raggedright\arraybackslash}p{.2\linewidth}@{}}
 \toprule \hd{Indicator} & \hd{Main sources} & \hd{Year(s)} & \hd{Short note} \\\midrule
-Homicide rate & Team table; Zurich police statistics \cite{teamtable,zhpks2025}; CBS recount for Amsterdam \cite{cbshomicide2022} & 2018--2025 & City rates recalculated \\
-PM$_{2.5}$ & Team table & 2021--2025 & Monitoring scopes retained \\
-Living-cost index & Team table \cite{teamtable} & 2025--2026 & Source year retained \\
-Housing price-to-income & Team table; Oslo property-price archive \cite{teamtable,numbeooslo2026} & 2025--2026 & City boundaries retained \\
-Upper-secondary pupils per teacher & Team table; national and city education records, represented by Prague and Singapore sources; Eurostat proxy fills \cite{teamtable,prague,singapore} & 2024--2026 & Stage matched; proxies labelled \\
-Higher-education institutions & Team table; school and post-secondary directories \cite{teamtable,deppmatch,deppdirectory} & 2025--2026 & Providers counted once \\
-Mean travel/commute time & Team table; Eurostat city series; Warsaw school-trip survey; Singapore census bins \cite{teamtable,eurostatcommute,warsaw2022,singapore} & 2011--2024 & Means become ranges \\
-Public-transport stops & City operator inventories, represented by Oslo, London, Singapore and Warsaw records \cite{enturstop,tflinventory,sgbus_lta,warsawmetro} & 2024--2026 & Stations counted once \\
-Fixed broadband speed & Team table & 2025--2026 & Test window retained \\
-Public swimming pools & Team table; municipal and operator inventories, represented by Stockholm and Singapore records \cite{teamtable,stockpool,sgpool_directory} & 2025--2026 & Provider coverage may be incomplete \\
+Homicide rate & Team table; police and statistical offices; UNODC/World Bank series \cite{teamtable,zhpks2025,cbshomicide2022} & 2018--2025 & City rates and labelled national proxies \\
+PM$_{2.5}$ & Team table; IQAir/WHO; city monitoring offices & 2021--2025 & Monitoring scope retained \\
+Living-cost index & Team table; Numbeo 2025 edition \cite{teamtable} & 2025--2026 & Edition retained \\
+Housing price-to-income & Team table; Numbeo 2025 edition; Oslo archive \cite{numbeooslo2026} & 2025--2026 & One median-utility fill \\
+Upper-secondary pupils per teacher & City and national education offices; Eurostat, OECD and UNESCO \cite{prague,singapore} & 2022--2026 & Stage matched; proxies labelled \\
+Higher-education institutions & Education registers; official and university directories \cite{deppmatch,deppdirectory} & 2019--2026 & Coverage bounds; three fills \\
+Mean travel/commute time & Census and city travel surveys; Eurostat; national commuting reports \cite{eurostatcommute,warsaw2022,singapore} & 2011--2026 & Means become ranges \\
+Public-transport stops & Operator station lists; municipal stop inventories \cite{enturstop,tflinventory,sgbus_lta,warsawmetro} & 2021--2026 & Distinct stops; coverage bounds \\
+Fixed broadband speed & Team table; Ookla Speedtest records & 2023--2026 & City or labelled national scope \\
+Public swimming pools & Municipal and operator directories \cite{stockpool,sgpool_directory} & 2023--2026 & Coverage bounds; nine fills \\
 \bottomrule
 \end{tabular}\endgroup
 \end{table}
@@ -456,157 +508,210 @@ $\ell_i$ and $h_i$ to bound it:
 \end{equation}
 
 \subsection{Scoring results and interpretation}
-Zurich leads with a representative score of 65.2, ahead of Madrid by
-1.8 points, with Singapore third (Table~\ref{tab:baseline}). Travel utilities sit in a narrow band because we know mean travel times rather than detailed route distributions, so this category separates cities weakly. Figure~\ref{fig:radar} compares
-ranks 1--3, 7--9 and 14--16 as examples from each tier.
+Among the 44 cities, Luxembourg ranks first, with Zurich a clear second.
+Luxembourg scores 68.9, 3.8 points above Zurich (65.2); Macao SAR (63.9),
+Reykjavik (63.7) and Madrid (63.3) complete the leading cluster. The visible
+score breaks define descriptive tiers: Luxembourg alone is Tier 1; Zurich--Madrid
+(ranks 2--5, 63.3--65.2) is Tier 2; Dubai--Paris (ranks 6--11, 60.8--62.6)
+is Tier 3; Helsinki--Oslo (ranks 12--16, 57.6--58.7) is Tier 4;
+Guangzhou--Tokyo (ranks 17--32, 54.0--57.0) is Tier 5; and Seoul--Johannesburg
+(ranks 33--44, 36.9--52.2) is Tier 6. These bands follow gaps in the ordered
+scores, so they are a screening aid rather than a claim that adjacent cities
+are interchangeable.
 
 \begin{table}[!htbp]\centering
-\caption{Representative scores under AHP weights, using the midpoint of each utility range.}
-\label{tab:baseline}
-\begingroup\small\setlength{\tabcolsep}{5pt}\zebra
-\begin{tabular}{rlrl@{\qquad}rlrl}\toprule
-\hd{Rank} & \hd{City} & \hd{Score} & \hd{Tier} & \hd{Rank} & \hd{City} & \hd{Score} & \hd{Tier}\\\midrule
-\textbf{1} & \textbf{Zurich} & \textbf{65.2} & \textbf{Top} & 9 & Oslo & 57.6 & Middle\\
-\textbf{2} & \textbf{Madrid} & \textbf{63.3} & \textbf{Top} & 10 & London & 56.1 & Bottom\\
-\textbf{3} & \textbf{Singapore} & \textbf{62.5} & \textbf{Top} & 11 & Amsterdam & 56.0 & Bottom\\
-4 & Milan & 61.1 & Middle & 12 & Berlin & 55.6 & Bottom\\
-5 & Dublin & 60.8 & Middle & 13 & Stockholm & 55.4 & Bottom\\
-6 & Paris & 60.8 & Middle & 14 & Warsaw & 54.5 & Bottom\\
-7 & Helsinki & 58.7 & Middle & 15 & Vienna & 54.4 & Bottom\\
-8 & Prague & 58.4 & Middle & 16 & Tokyo & 54.0 & Bottom\\
+\caption{Representative scores for all 44 cities under AHP weights. Tier labels follow visible score gaps: T1 (68.9), T2 (63.3--65.2), T3 (60.8--62.6), T4 (57.6--58.7), T5 (54.0--57.0) and T6 (36.9--52.2).}\label{tab:baseline}
+\begingroup\scriptsize\setlength{\tabcolsep}{1pt}\zebra
+\begin{tabular}{rlrc@{\qquad}rlrc@{\qquad}rlrc}
+\toprule
+\hd{Rank}&\hd{City}&\hd{Score}&\hd{Tier}&\hd{Rank}&\hd{City}&\hd{Score}&\hd{Tier}&\hd{Rank}&\hd{City}&\hd{Score}&\hd{Tier}\\\midrule
+\textbf{1}&\textbf{Luxembourg}&\textbf{68.9}&\textbf{T1}&16&Oslo&57.6&T4&31&San Francisco&54.3&T5\\
+\textbf{2}&\textbf{Zurich}&\textbf{65.2}&\textbf{T2}&17&Guangzhou&57.0&T5&32&Tokyo&54.0&T5\\
+\textbf{3}&\textbf{Macao SAR}&\textbf{63.9}&\textbf{T2}&18&Toronto&57.0&T5&33&Seoul&52.2&T6\\
+\textbf{4}&\textbf{Reykjavik}&\textbf{63.7}&\textbf{T2}&19&Kuala Lumpur&56.8&T5&34&New York&51.4&T6\\
+\textbf{5}&\textbf{Madrid}&\textbf{63.3}&\textbf{T2}&20&London&56.1&T5&35&Los Angeles&49.9&T6\\
+6&Dubai&62.6&T3&21&Amsterdam&56.0&T5&36&Chicago&49.3&T6\\
+7&Singapore&62.5&T3&22&Beijing&55.8&T5&37&Cairo&49.1&T6\\
+8&Abu Dhabi&61.4&T3&23&Shenzhen&55.6&T5&38&Istanbul&47.0&T6\\
+9&Milan&61.1&T3&24&Berlin&55.6&T5&39&Sao Paulo&45.9&T6\\
+10&Dublin&60.8&T3&25&Stockholm&55.4&T5&40&New Delhi&45.5&T6\\
+11&Paris&60.8&T3&26&Sydney&54.9&T5&41&Mexico City&44.7&T6\\
+12&Helsinki&58.7&T4&27&Buenos Aires&54.7&T5&42&Mumbai&44.3&T6\\
+13&Copenhagen&58.7&T4&28&Shanghai&54.6&T5&43&Nairobi&41.5&T6\\
+14&Prague&58.4&T4&29&Warsaw&54.5&T5&44&Johannesburg&36.9&T6\\
+15&Hong Kong SAR&57.6&T4&30&Vienna&54.4&T5&&&&\\
 \bottomrule\end{tabular}\endgroup\end{table}
 
-\textbf{Top tier.} Zurich's advantage over Madrid comes from the categories with the largest weights. Zurich scores 0.78 in safety and environment, 0.61 in education, 0.70 in mobility and 0.78 in daily life, compared with Madrid's 0.73, 0.59, 0.63 and 0.67. Madrid is cheaper (0.53 versus Zurich's 0.45), but that category has weight 0.123, so the advantage does not offset Zurich's lead in safety, schooling and everyday conditions. Singapore has the highest safety score (0.81) and almost matches Zurich in daily life (0.80), yet its housing utility is 0.31 and its travel utility is 0.41. Those two low inputs pull down its cost and mobility categories, leaving it third at 62.5.
+\textbf{Leading tier.} Luxembourg is strong in every category: safety and
+environment 0.80, cost of living 0.57, education 0.62, mobility 0.79 and daily
+life 0.71. Zurich follows with 0.78, 0.45, 0.61, 0.70 and 0.78. Macao SAR and
+Reykjavik gain from mobility (0.78 and 0.82), while Madrid combines balanced
+safety (0.73), education (0.59) and daily life (0.67). Luxembourg's lead is
+therefore broad rather than driven by one category.
 
-\textbf{Middle tier.} Ranks 4--9, Milan through Oslo, score 57.6--61.1, starting
-1.4 points below Singapore. Dublin and Paris are lifted by education: their education category scores are 0.59 and 0.63, supported by higher-education density values of 0.83 and 0.82. Their overall profiles therefore remain competitive even when safety, cost or mobility is less prominent. Helsinki scores 0.66 for safety and environment and 0.52 for education; Prague scores 0.62 for education and 0.54 for safety and environment.
+\textbf{Middle tiers.} Dubai is sixth at 62.6, with the strongest cost score
+among the leading cities (0.62); Singapore is seventh and leads safety (0.81)
+and daily life (0.80), but its cost score is 0.42. Abu Dhabi is strong in cost
+(0.63) and mobility (0.78). From Milan through Oslo, scores narrow to 57.6--61.1,
+so education and mobility provide the practical distinctions families should
+check against their own needs.
 
-\textbf{Bottom tier.} London, Amsterdam, Berlin, Stockholm, Warsaw, Vienna
-and Tokyo occupy ranks 10--16, scoring 54.0--56.1. The 2.1-point span is narrow because small advantages in cost, mobility or daily life offset weaker safety or education in different cities. Vienna scores 0.63 for education but 0.41 for safety and environment; Warsaw scores 0.56 for cost of living and 0.47 for education. For a family, the tiers are a screening aid: the top tier suits a balanced shortlist, the middle tier offers specific strengths worth matching to a child's needs, and the bottom tier requires a clear reason to accept its trade-offs.
+\textbf{Lower tiers.} The long T5 band (54.0--57.0) contains cities whose
+category trade-offs are close, including Guangzhou, Toronto, London and Tokyo.
+T6 spans a wider range because safety, air quality and housing costs separate
+Seoul and New York from the lower-scoring cities. The table is therefore best
+used to build a shortlist before checking a specific school, neighbourhood and
+route.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/radar_tiers.pdf}
-\caption{Representative cities chosen to contrast tiers: the whole top tier
-(ranks 1--3), the lower end of the middle tier (7--9), and the lowest three
-cities (14--16: Warsaw, Vienna and Tokyo). Each axis is
-stretched from the lowest city (centre) to the highest city (outer ring) among
-all sixteen; the dashed line is the sixteen-city mean. Category scores combine
- each pair of indicators using its local AHP weights.}
-\label{fig:radar}
+\caption{Representative cities chosen to contrast the leading, middle and
+lower tiers. Category scores combine each indicator pair using its local AHP
+weights.}\label{fig:radar}
 \end{figure}
 
-Zurich's lead comes from balance: it wins no category outright, but places
-second in safety and environment, mobility and daily life
-(Figure~\ref{fig:champions}). Singapore leads safety and environment and
-daily life, Warsaw leads cost of living, Vienna leads education, and Oslo
-leads mobility. Families with one strong priority may choose differently.
+The category leaders reinforce the same pattern. Luxembourg is first overall,
+while Singapore leads safety and environment and daily life; Reykjavik leads
+mobility; and Dubai leads cost of living. No single category winner determines
+the overall order because safety and education together carry 0.681 of the AHP
+weight.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/category_champions.pdf}
 \caption{The three highest category scores in each of the five categories.
-Scores combine the two indicator utilities using their local AHP weights
-and run from 0 to 1. Zurich places second in three categories.}\label{fig:champions}
+Scores combine the two indicator utilities using their local AHP weights.}
+\label{fig:champions}
 \end{figure}
 
 \subsection{Significant revisions}
-\textbf{Preference revision.} Our first revision gives safety and schooling more influence. Equal weights assign every indicator 0.1; under AHP, safety and environment and education each receive 0.340, cost and mobility 0.123 each, and daily life 0.073. With utilities, anchors and scoring unchanged, the leading four shift from Zurich, Oslo, Paris and Dublin to Zurich, Madrid, Singapore and Milan. Thirteen of sixteen cities change rank; Kendall's $\tau=0.450$ measures their agreement. Zurich stays first.
+\textbf{Preference revision.} Equal weights change 41 of 44 city ranks
+(Kendall's $\tau=0.624$). The equal-weight top five are Luxembourg, Reykjavik,
+Zurich, Macao SAR and Oslo, compared with Luxembourg, Zurich, Macao SAR,
+Reykjavik and Madrid under AHP. Luxembourg remains first, so the headline is
+stable while the order below it reflects the family's priorities.
 
-\textbf{Structural revision with must-have thresholds.} We next screen cities before TOPSIS so that a severe weakness cannot be offset by strengths elsewhere. A city is excluded when homicide exceeds 3 per 100,000, PM$_{2.5}$ exceeds 25~$\mu$g/m$^3$ (the WHO 2021 interim target 2), or house price-to-income exceeds 20. This removes Vienna (homicide 3.91), Milan (PM$_{2.5}$ 28.1), Tokyo (PM$_{2.5}$ 28.4) and Singapore (price-to-income 22.3). The feasible ranking is Zurich, Madrid, Dublin, Paris, Helsinki, Prague, Oslo, London, Amsterdam, Berlin, Stockholm and Warsaw.
+\textbf{Structural revision with must-have thresholds.} We exclude a city when
+homicide exceeds 3 per 100,000, PM$_{2.5}$ exceeds 25~$\mu$g/m$^3$, or house
+price-to-income exceeds 20. Twenty-three of 44 cities fail at least one gate.
+The feasible top five are Luxembourg, Zurich, Macao SAR, Reykjavik and Madrid;
+the full feasible order is reported in the gate file. This screen keeps a
+large strength in one category from compensating for a severe threshold
+violation in another.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/gate_revision.pdf}
-\caption{Must-have thresholds applied before TOPSIS. Each row shows a city's baseline rank and representative score; the right column gives its new rank after the thresholds, or the threshold it fails (red).}\label{fig:gate}
+\caption{Must-have thresholds applied before TOPSIS. The 44-city baseline is
+shown by representative score; cities failing a threshold are excluded from
+the feasible order.}\label{fig:gate}
 \end{figure}
 
-The gate changes the decision structure while retaining the same utilities and AHP priorities. Families can set their own must-have thresholds before ranking the cities that remain feasible.
-
 \subsection{Sensitivity analysis}\label{sec:sourcepolicy}
-The baseline is useful because its assumptions can be changed one at a time. We organise those checks by weights, family priorities, data and method.
+The baseline is useful because its assumptions can be changed one at a time.
+We organise those checks by weights, family priorities, data and method.
 
 \subsubsection*{Sensitivity to weights}
-For one-category multipliers from $1/4$ to $4$, Zurich stays first for four categories (Figure~\ref{fig:wsens}); Madrid overtakes it when the cost-of-living weight reaches 3.03 times its AHP value. We also draw weights from $w\sim\operatorname{Dirichlet}(\kappa w_{\mathrm{AHP}})$. Zurich leads in 69.0\%, 93.4\% and 100.0\% at concentrations $\kappa=20,100,500$; larger $\kappa$ keeps weights closer to AHP. These are controlled priority checks, not probabilities that Zurich is best for every student.
+AHP-centred Dirichlet draws put Luxembourg first in 91.28\%, 99.97\% and
+100.00\% of draws at concentrations $\kappa=20,100,500$; Zurich's shares are
+4.11\%, 0.03\% and 0.00\%. These controlled priority checks describe the
+stability of the model around its declared weights.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/weight_sensitivity.pdf}
-\caption{Representative scores as one category's AHP weight changes at a
-time, with the other weights rescaled to keep their total at one. Zurich,
-Madrid, Singapore and Milan are coloured; other cities are grey. The dashed
-line marks the cost-of-living multiplier where Madrid overtakes Zurich.}\label{fig:wsens}
+\caption{Representative scores as one category's AHP weight changes at a time,
+with other weights rescaled to sum to one.}\label{fig:wsens}
 \end{figure}
 
 \subsubsection*{Sensitivity to family profiles}
-Each profile changes a small, visible set of category judgements from Table~\ref{tab:ahp-categories}; unchanged judgements remain at baseline. The resulting weights, consistency ratios and top three are:
+Each profile changes a small, visible set of category judgements; unchanged
+judgements remain at baseline. The resulting weights, consistency ratios and
+top three are:
 
 \begin{table}[!htbp]\centering
-\caption{Family-profile judgements that differ from baseline, resulting category weights and top three cities. Pair labels use S, C, E, M and D from Table~\ref{tab:ahp-categories}.}\label{tab:profiles}
-\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\zebra
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.14\linewidth}>{\raggedright\arraybackslash}p{.28\linewidth}>{\raggedright\arraybackslash}p{.24\linewidth}>{\raggedleft\arraybackslash}p{.06\linewidth}>{\raggedright\arraybackslash}p{.2\linewidth}@{}}\toprule
-\hd{Profile} & \hd{Changed judgements} & \hd{Weights S/C/E/M/D} & \hd{$CR$} & \hd{Top three}\\\midrule
-Safety-first & S:C=5, S:E=3, S:M=5, S:D=7, E:M=1, E:D=2 & .537/.127/.141/.127/.068 & .0072 & Zurich 68.0; Madrid 65.8; Singapore 65.6\\
-Budget-first & S:C=.5, S:M=2, S:D=3, C:E=2, C:M=3, C:D=5, E:M=2, E:D=3 & .212/.387/.212/.119/.069 & .0039 & Madrid 60.1; Zurich 59.2; Dublin 59.0\\
-Independent-mobility & S:C=1, S:M=.5, S:D=2, C:M=.5, E:M=.5, E:D=2, M:D=4 & .182/.182/.182/.364/.091 & 0.000 & Zurich 64.3; Madrid 62.2; Oslo 61.3\\
-\bottomrule\end{tabular}\endgroup
-\end{table}
+\caption{Family profiles, category weights, consistency ratios and top three
+cities.}\label{tab:profiles}
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\zebra
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.17\linewidth}>{\raggedright\arraybackslash}p{.28\linewidth}>{\raggedleft\arraybackslash}p{.07\linewidth}>{\raggedright\arraybackslash}p{.39\linewidth}@{}}\toprule
+\hd{Profile}&\hd{Weights S/C/E/M/D}&\hd{CR}&\hd{Top three cities}\\midrule
+Safety-first&.537/.127/.141/.127/.068&.0072&Luxembourg 72.0; Zurich 68.0; Madrid 65.8\\
+Budget-first&.212/.387/.212/.119/.069&.0039&Luxembourg 65.4; Dubai 62.4; Abu Dhabi 62.3\\
+Independent-mobility&.182/.182/.182/.364/.091&0.000&Luxembourg 69.6; Reykjavik 67.8; Macao SAR 66.5\\
+\bottomrule\end{tabular}\endgroup\end{table}
 
-The safety-first profile represents a family that puts personal security and environmental conditions ahead of other categories. The budget-first profile represents a family that must keep housing and daily costs manageable. The independent-mobility profile represents a family whose teenager needs to travel around the city with less reliance on adults. Zurich and Madrid remain the top two in every profile, while the third place changes with the family's priority.
+Luxembourg remains first for all three family profiles. The second and third
+places change when a family gives cost or independent travel more weight, which
+is why the shortlist should include Zurich, Macao SAR, Reykjavik and Madrid.
 
 \subsubsection*{Sensitivity to data}
-Utility ranges and maximum regret show how much the ranking can move when inputs vary. Maximum regret is the most a city could trail its best rival when every utility range works against it:
-\begin{equation}
- R_i=\max\left\{0,\max_{k\ne i}U_k-L_i\right\}.
- \label{eq:regret}
-\end{equation}
-Zurich's score range is 61.2--67.8, compared with 58.5--66.6 for Madrid and 59.4--65.1 for Singapore. Zurich has the smallest maximum regret, 5.4 points, followed by Singapore at 8.3 and Madrid at 9.3. With each utility range allowed to reach its endpoints independently, nine cities could be first.
+Utility ranges give Luxembourg a score of 66.1--70.6 and maximum regret 1.7;
+Reykjavik spans 61.7--65.2 with regret 9.0; Macao SAR spans 61.5--65.6 with
+regret 9.1; and Zurich spans 61.2--67.8 with regret 9.5. Four cities can be
+first when every utility range is allowed to reach its endpoint independently.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/robustness.pdf}
-\caption{Robustness of the recommendation. Panel A shows each city's score interval as a light bar and its representative score as a dot; the top three are blue and the dashed line is Zurich's lower bound. Panel B shows the share of AHP-centred Dirichlet weight draws in which Zurich, Madrid, Singapore or another city ranks first at concentrations 20, 100 and 500.}\label{fig:robust}
+\caption{Robustness of the recommendation. Panel A shows score intervals and
+representative scores; Panel B shows first-place shares for AHP-centred
+Dirichlet draws at concentrations 20, 100 and 500.}\label{fig:robust}
 \end{figure}
 
-The homicide threshold is a useful stress point. Zurich stays first up to about 0.69 per 100,000, where Madrid draws level. The baseline value is 0.34, using the mean of one completed offence in 2024 and two in 2025 over the 2025 population of 440,935 \cite{zhpks2025}. Withdrawing this value, using utility range $[0,1]$ for an unknown, puts Zurich eighth and Madrid first. Amsterdam now uses 1.44 per 100,000 from 68 CBS homicide victims over 2018--2022, averaged annually over the 2025 population of 941,927 \cite{cbshomicide2022}. Withdrawing Amsterdam's value puts it fifteenth and leaves Zurich first.
-
-We also replace selected point cells with utility range $[0,1]$. Table~\ref{tab:vintage} reports the resulting winners.
+The withdrawal tests keep Luxembourg first under both AHP and equal weights for
+pre-2020 points (13 cells), post-2025 points (64), non-OK points (28) and their
+95-cell union. Withdrawing Zurich's homicide cell puts Zurich at rank 14 and
+still leaves Luxembourg first; withdrawing Amsterdam's homicide cell puts
+Amsterdam at rank 31 and leaves Luxembourg first.
 
 \begin{table}[!htbp]\centering
-\caption{First city after withdrawing dated or flagged point cells.}
-\label{tab:vintage}
-\begingroup\small\zebra\setlength{\tabcolsep}{8pt}
+\caption{First city after withdrawing dated or flagged point cells.}\label{tab:vintage}
+\begingroup\small\zebra\setlength{\tabcolsep}{6pt}
 \begin{tabular}{l r l l}\toprule
-\hd{Withdrawn group} & \hd{Cells} & \hd{First (AHP)} & \hd{First (equal weights)}\\\midrule
-Before 2020 & 13 & Zurich & Zurich\\
-After 2025 & 64 & Zurich & Zurich\\
-Flagged entries & 28 & Milan & Zurich\\
-Union of the three groups & 95 & Milan & Milan\\
-\bottomrule
+\hd{Withdrawn group}&\hd{Cells}&\hd{First (AHP)}&\hd{First (equal weights)}\\midrule
+Before 2020&13&Luxembourg&Luxembourg\\
+After 2025&64&Luxembourg&Luxembourg\\
+Non-OK points&28&Luxembourg&Luxembourg\\
+Union of the three groups&95&Luxembourg&Luxembourg\\
+\bottomrule\end{tabular}\endgroup\end{table}
+
+Luxembourg is first in all 31 source-variant cases under both AHP and equal
+weights (Table~\ref{tab:variants}).
+
+\begin{table}[!htbp]\centering
+\caption{The 31 source-variant cases in nine groups.}\label{tab:variants}
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\zebra
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedleft\arraybackslash}p{.07\linewidth}>{\raggedright\arraybackslash}p{.48\linewidth}>{\raggedright\arraybackslash}p{.1\linewidth}@{}}\toprule
+\hd{Group}&\hd{Cases}&\hd{What changes}&\hd{First city}\\midrule
+Before-update baseline&1&Pre-refinement baseline&Luxembourg\\
+Current comparison&1&Current source refinements&Luxembourg\\
+Prague bus inventory&2&Withdraw refinement; omit request-stop witnesses&Luxembourg\\
+Vienna bus inventory&11&Withdraw refinement; omit selected route witnesses&Luxembourg\\
+Oslo bus inventory&5&Withdraw refinement; omit rail replacements, Midtstuen and service flags; add Tveten bru&Luxembourg\\
+Singapore pools&5&Withdraw OCBC, directory or supplements; omit notice venues&Luxembourg\\
+Zurich pools&1&Withdraw refinement&Luxembourg\\
+Metro inventories&4&Withdraw Tokyo, Warsaw, both or Amsterdam mapped inventory&Luxembourg\\
+Travel&1&Withdraw Singapore school-stage proxy&Luxembourg\\midrule
+\textbf{Total}&\textbf{31}&\textbf{Luxembourg}\\bottomrule
 \end{tabular}\endgroup\end{table}
 
-Zurich leads under AHP and equal weights in the baseline, and under AHP in all 31 source-variant checks (Table~\ref{tab:variants}). These checks change counting rules and sources; the withdrawal tests above replace larger groups of cells.
-
-\begin{table}[!htbp]\centering
-\caption{The 31 source-variant cases in nine groups, including the before-update and current comparison cases.}\label{tab:variants}
-\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\zebra
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedleft\arraybackslash}p{.07\linewidth}>{\raggedright\arraybackslash}p{.48\linewidth}>{\raggedright\arraybackslash}p{.1\linewidth}@{}}
-\toprule \hd{Group} & \hd{Cases} & \hd{What changes} & \hd{First city}\\\midrule
-Before-update baseline & 1 & Pre-refinement baseline & Zurich\\
-Current comparison & 1 & Current source refinements & Zurich\\
-Prague bus inventory & 2 & Withdraw refinement; omit request-stop witnesses & Zurich\\
-Vienna bus inventory & 11 & Withdraw refinement; omit selected route witnesses & Zurich\\
-Oslo bus inventory & 5 & Withdraw refinement; omit rail replacements, Midtstuen and service flags; add Tveten bru & Zurich\\
-Singapore pools & 5 & Withdraw OCBC, directory or supplements; omit notice venues & Zurich\\
-Zurich pools & 1 & Withdraw refinement & Zurich\\
-Metro inventories & 4 & Withdraw Tokyo, Warsaw, both or Amsterdam mapped inventory & Zurich\\
-Travel & 1 & Withdraw Singapore school-stage proxy & Zurich\\\midrule
-\textbf{Total} & \textbf{31} & & \textbf{Zurich}\\\bottomrule
-\end{tabular}\endgroup
-\end{table}
-
 \subsubsection*{Sensitivity to method}
-VIKOR combines normalized total and largest shortfalls using the same utilities and weights \cite{vikor}. Madrid, Zurich and Singapore lead; Madrid meets the stability condition, but its lead is below the required $1/(16-1)$ advantage, leaving Madrid and Zurich as close alternatives.
+VIKOR ranks Luxembourg, Madrid and Abu Dhabi first three. It satisfies both the
+acceptable-advantage and stability conditions, so the leading recommendation
+also survives a method change.
 
 \subsection{Why the ranking is more than our opinion}
-As an external comparison, Mercer's *Quality of Living City Ranking 2024* covers 11 of our 16 cities and also places Zurich first \footnote{Mercer, ``Quality of Living City Ranking 2024,'' 2024, \url{https://www.mercer.com/en-ie/about/newsroom/2024-quality-of-living-city-ranking/}.}. Across the shared cities, agreement is weak and negative (Spearman $-0.35$, $p=0.28$): Mercer ranks Vienna, Amsterdam and Berlin high and Madrid low because it emphasizes expatriate infrastructure and stability, whereas our index focuses on a teenager's safety, schooling and costs. The shared first place supports Zurich as a credible recommendation while showing that the two indices answer different questions.
+Mercer's \emph{Quality of Living City Ranking 2024} covers 11 shared cities.
+Across those cities, agreement is weak and negative (Spearman $-0.35$,
+$p=0.28$); both lists place Zurich first among the shared cities, while
+Luxembourg is not in the Mercer list we read. The comparison supports Zurich as
+a credible second choice and shows that the two indices answer different
+questions.\footnote{Mercer, ``Quality of Living City Ranking 2024,'' 2024,
+\url{https://www.mercer.com/en-ie/about/newsroom/2024-quality-of-living-city-ranking/}.}
 
-Our priorities are judgments, and the AHP matrix makes them visible. Anyone can change them and recalculate the ranking with the same utilities and rule. The answer changes in clear ways: treating Zurich's homicide value as unknown puts Madrid first, as does giving cost of living about three times its AHP weight. Families should shortlist Zurich, Madrid and Singapore, then use their own priorities and school-access requirements to choose. We recommend Zurich, with Madrid as a close second choice.
+Luxembourg's main caveat is data scale. Luxembourg City has about 137,696
+residents, so three cells use national proxies: homicide, pupils per teacher
+and broadband. Treating those three cells as unknown over utility range
+$[0,1]$ moves Luxembourg to rank 16 (score 57.2) and puts Zurich first. The
+headline therefore combines a clear current leader with a concrete check for
+families: confirm local school, admission, language and cost information before
+choosing.
 
 \section{Extension: looking ahead to 2035}
 \subsection{Stress tests for 2035}
@@ -622,173 +727,164 @@ S1 adds 10\% to higher-education institutions, transit stops and pools; S2
 raises living costs, housing price-to-income and travel time by 10\%; and S3
 reduces pupils per teacher, PM$_{2.5}$ and travel time by 10\%.
 
-The leading order is unchanged: Zurich, Madrid and Singapore remain first,
-second and third in all three cases. Paris moves ahead of Dublin under S3,
-while the other ranks stay in place. Scores move by 0.1--0.3 points in S1,
-fall by 0.4--0.5 in S2 and rise by 1.0--1.1 in S3. These results show how the
-recommendation responds to common changes in services, prices and conditions;
-they do not estimate what any one city will achieve by 2035.
-
+Luxembourg, Zurich and Macao SAR remain first, second and third in all
+three cases. Luxembourg scores 69.2 under resource expansion, 68.5 under
+living pressure and 70.0 under balanced improvement; Zurich scores 65.3,
+64.7 and 66.3, respectively. Macao SAR scores 64.2, 63.5 and 65.0.
+The leading shortlist therefore survives these common changes in services,
+prices and conditions. These cases describe conditional responses to shared
+shocks; they do not estimate individual cities' paths to 2035.
 
 \FloatBarrier
 \section{Strengths and weaknesses}
-The model makes its priorities visible and lets a family change them. The
-AHP checks, source checks, family profiles and clear figures connect the final
-shortlist to decisions a student and family can discuss. We also separate
-reported values, team-table entries and proxies, so a reader can see where the
-comparison is strongest and where a local check is needed.
+The model connects a family's priorities to an explicit, reproducible shortlist.
+Fixed utility anchors let us expand the comparison to 44 cities without changing
+the method or weights. Source checks, withdrawal tests and family profiles show
+which recommendations survive changes in evidence and priorities. The distinction
+between reported values, proxies and unknown values makes local follow-up clear.
 
-The result still depends on our team's priorities, the ten selected indicators
-and their utility anchors. Eight teacher ratios and three travel values have
-no direct city record, and some team-table cells have limited source detail;
-the interval analysis shows how much those gaps can move a score. Zurich's
-small homicide count can change the leader when that value is treated as
-unknown \cite{zhpks2025}. Thresholds screen out unacceptable safety, air-quality
-and housing conditions, but school eligibility, fees and neighbourhood routes
-remain family checks. City averages also hide differences between districts,
-and 14 of the 16 cities are in Europe, so the conclusion applies to this
-high-income comparison set rather than to every possible destination.
+Luxembourg's lead depends on three national proxies: homicide, pupils per teacher
+and broadband. With about 138,000 residents, the city has few city-level series.
+Treating all three cells as unknown over $[0,1]$ puts Luxembourg sixteenth at
+57.2 and Zurich first. This is the main evidence condition behind our recommendation.
+Thirteen single gaps elsewhere use the median utility of cities with a value.
+The ten indicators and our team's priorities define the comparison; city averages
+also hide differences between schools and neighbourhoods. Admission, language,
+fees and the actual school route therefore remain family checks.
 
 \section{Conclusion and decision use}
-Zurich is our recommended first choice, with Madrid as the closest alternative
-and Singapore as a useful third option. Zurich's representative score is 65.2,
-its maximum regret is the smallest at 5.4 points, and it ranks first in 93.4\%
-of AHP-centred weight draws at $\kappa=100$. The 31 source and counting
-variants also leave Zurich first. Together, these checks support a conservative
-shortlist rather than a claim that one city suits every family.
+Among the 44 cities, Luxembourg ranks first, with Zurich a clear second.
+Their representative scores are 68.9 and 65.2, followed by Macao SAR at 63.9,
+Reykjavik at 63.7 and Madrid at 63.3. Luxembourg has the smallest maximum regret,
+1.7 points, and leads all 31 source-variant checks, the withdrawal tests and
+99.97\% of AHP-centred random weightings at $\kappa=100$. It also leads under
+all three family profiles, all 2035 scenarios, VIKOR and the must-have thresholds.
+These checks support Luxembourg as the first city to investigate under the
+stated evidence assumptions.
 
-Madrid leads under two clear changes to the decision. If Zurich's homicide
-value is withdrawn as unknown, Madrid becomes first. Madrid also becomes first
-when the cost-of-living weight is raised to 3.03 times its baseline value. The
-same evidence gives practical advice by family type: a safety-first family
-should start with Zurich (68.0) and Madrid (65.8); a budget-first family should
-start with Madrid (60.1), then Zurich (59.2) and Dublin (59.0); and a
-mobility-first family should start with Zurich (64.3), then Madrid (62.2) and
-Oslo (61.3). These are priority-specific shortlists, not separate universal
-winners.
+Families should shortlist Luxembourg, Zurich, Macao SAR, Reykjavik and Madrid.
+The safety-first profile puts Luxembourg (72.0), Zurich (68.0) and Madrid (65.8)
+first; the budget-first profile favours Luxembourg (65.4), Dubai (62.4) and
+Abu Dhabi (62.3); and independent mobility favours Luxembourg (69.6),
+Reykjavik (67.8) and Macao SAR (66.5). Dubai and Abu Dhabi fail the air-quality
+threshold, illustrating why preferences and must-have conditions should be
+checked together.
 
-The scope is sixteen high-income cities, ten indicators and the source years
-listed in the data section. Before choosing, a family should confirm school
-admission, language, fees, housing, neighbourhood safety and the student's
-usual route. Those checks turn a transparent city comparison into a decision
-for one student's actual life.
+Before choosing, a family should confirm admission, language, school fees,
+housing costs and neighbourhood routes. The national-proxy test identifies
+Zurich as the first alternative when Luxembourg's local evidence is required.
+The ranking gives families a focused starting point for those school and
+household decisions.
 
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
 \begingroup\small
-\definecolor{NewsRed}{HTML}{B3261E}\definecolor{NewsPaper}{HTML}{F5F1EA}
+\definecolor{NewsRed}{HTML}{D52B1E}\definecolor{NewsGold}{HTML}{E0A800}\definecolor{NewsGreen}{HTML}{1A9E5C}\definecolor{NewsPaper}{HTML}{F5F1EA}
 \setlength{\parskip}{0pt}\setlength{\columnsep}{18pt}\setlength{\columnseprule}{0.3pt}\renewcommand{\columnseprulecolor}{\color{Line}}
-\setlength{\multicolsep}{2pt}
-\newcommand\kicker[1]{\par\vspace{4pt}{\sffamily\bfseries\color{NewsRed}\MakeUppercase{#1}}\par\nobreak\vspace{2pt}}
+\setlength{\multicolsep}{2pt}\renewcommand{\LettrineFontHook}{\sffamily\bfseries\color{NewsRed}}
+\newcommand\kicker[1]{\par\vspace{6pt}\noindent{\color{NewsRed}\rule[0.4ex]{16pt}{1.3pt}}\hspace{5pt}{\sffamily\bfseries\color{NewsRed}\MakeUppercase{#1}}\par\nobreak\vspace{2.5pt}}
 \newcommand\newsphoto[3]{\begin{minipage}[t]{.3215\linewidth}\raggedright\setlength{\parskip}{0pt}
-\includegraphics[width=\linewidth,trim=0 115 0 115,clip]{figures/#1}\par\nointerlineskip\vspace{-17pt}%
-\noindent\hspace*{5pt}\colorbox{NewsRed}{\strut\sffamily\bfseries\footnotesize\color{white}\MakeUppercase{#2}}\par\vspace{3pt}
-{\fontsize{6.3}{7.5}\selectfont\color{Muted}Photo: #3\par}\end{minipage}}
+\includegraphics[width=\linewidth,trim=0 135 0 135,clip]{figures/#1}\par\nointerlineskip\vspace{-17pt}%
+\noindent\hspace*{5pt}\colorbox{#3}{\strut\sffamily\bfseries\footnotesize\color{white}\MakeUppercase{#2}}\par\end{minipage}}
 % masthead
-\noindent{\color{NewsRed}\rule{\linewidth}{4pt}}\par\nointerlineskip\vspace{3pt}
-\noindent{\sffamily\bfseries\large THE BEST CITY FOR A HIGH SCHOOLER}\hfill{\sffamily\footnotesize\color{NewsRed}SPECIAL REPORT\quad\textcolor{Muted}{$\cdot$}\quad NOV 2026}\par\vspace{2pt}
-\noindent{\color{Ink}\rule{\linewidth}{0.5pt}}\par\vspace{9pt}
-{\fontsize{25}{27}\selectfont\bfseries\noindent Zurich leads, but Madrid makes a strong case on cost\par}\vspace{6pt}
-{\fontsize{10.5}{12.5}\selectfont\itshape\color{Muted}\noindent A sixteen-city comparison finds a strong all-round choice in Zurich,
-a lower-cost challenger in Madrid and a disciplined third option in Singapore.\par}\vspace{6pt}
+\noindent{\color{NewsRed}\rule{\linewidth}{5pt}}\par\nointerlineskip\vspace{4pt}
+\noindent\colorbox{NewsRed}{\strut\sffamily\bfseries\footnotesize\color{white}SPECIAL REPORT}\hspace{8pt}{\sffamily\bfseries\large THE BEST CITY FOR A HIGH SCHOOLER}\hfill{\sffamily\footnotesize\color{Muted}NOVEMBER 2026}\par\vspace{3pt}
+\noindent{\color{Ink}\rule{\linewidth}{0.5pt}}\par\vspace{10pt}
+{\fontsize{25}{27}\selectfont\bfseries\RaggedRight\noindent Luxembourg leads 44 cities, with Zurich a clear second\par}\vspace{6pt}
+{\fontsize{10.5}{12.5}\selectfont\itshape\color{Muted}\noindent Our expanded comparison puts Luxembourg first and Macao SAR third,
+with a five-city shortlist for families to investigate.\par}\vspace{7pt}
 % hero photo strip
-\noindent\newsphoto{news_zurich.jpg}{Zurich}{JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons}\hfill
-\newsphoto{news_madrid.jpg}{Madrid}{Diego Delso, CC BY-SA 4.0, Wikimedia Commons}\hfill
-\newsphoto{news_singapore.jpg}{Singapore}{Diego Delso, CC BY-SA 4.0, Wikimedia Commons}\par\vspace{4pt}
+\noindent\newsphoto{news_zurich.jpg}{Zurich}{NewsRed}\hfill\newsphoto{news_madrid.jpg}{Madrid}{NewsGold}\hfill\newsphoto{news_singapore.jpg}{Singapore}{NewsGreen}\par\vspace{2pt}
+\noindent{\fontsize{6.3}{7.5}\selectfont\sffamily\color{Muted}Photos: Zurich, JoachimKohler-HB; Madrid and Singapore, Diego Delso; all CC BY-SA 4.0, Wikimedia Commons.\par}\vspace{3pt}
 \noindent{\color{Line}\rule{\linewidth}{0.4pt}}\par\vspace{1pt}
 \begin{multicols}{2}
-\setlength{\parskip}{2.5pt}
+\fontsize{10}{12.1}\selectfont\setlength{\parskip}{2.6pt}
 \noindent\includegraphics[width=\columnwidth]{figures/news_podium.pdf}\par\vspace{3pt}
 \begin{figure*}[t]
 \noindent{\color{NewsRed}\rule{\linewidth}{1.2pt}}\par\vspace{3pt}
-{\sffamily\bfseries\color{NewsRed}\noindent AT A GLANCE}\quad{\sffamily\footnotesize\color{Muted}How the top three compare on the five everyday categories (0 = worst city, 1 = best)}\par\smallskip
-\centerline{\includegraphics[width=5.6in]{figures/news_glance.pdf}}\par\vspace{1pt}
+{\sffamily\bfseries\color{NewsRed}\noindent AT A GLANCE}\quad{\sffamily\footnotesize\color{Muted}Zurich, Madrid and Singapore across five everyday categories (0--1 utility)}\par\smallskip
+\noindent\includegraphics[width=\linewidth]{figures/news_glance.pdf}\par\vspace{3pt}
 \noindent{\color{Line}\rule{\linewidth}{0.4pt}}\vspace{-6pt}
 \end{figure*}
-Choosing a city for high school means choosing much more than a skyline. A
+\lettrine[lines=3,lhang=0.05,nindent=0pt,findent=3pt,slope=0pt]{C}{hoosing} a city for high school means choosing much more than a skyline. A
 student needs a safe trip to school, reliable transport, a school with enough
 teachers, manageable housing and food costs, and places to spend an afternoon.
-Our comparison of sixteen cities puts Zurich first, Madrid second and Singapore
-third. Zurich scores 65.2, Madrid 63.3 and Singapore 62.5. The gap between the
-first two is 1.8 points, close enough that a family's budget and priorities can
-change the order.
+Among the 44 cities, Luxembourg ranks first, with Zurich a clear second.
+Luxembourg scores 68.9, Zurich 65.2 and Macao SAR 63.9. The first-to-second
+gap is 3.7 points. Reykjavik and Madrid complete the shortlist of cities that
+also meet our basic safety, air-quality and housing requirements.
 \kicker{The shortlist}
-Zurich is the best all-round match in our comparison. It combines strong safety,
-school resources, transport and daily facilities, although living there costs
-more. Madrid is the practical challenger. Its lower living costs help it stay
-close to Zurich, and it becomes the leader when cost matters about three times
-as much as it does in the main comparison. Singapore is third in the full
-ranking. It performs well on safety and daily facilities, but its housing
-price-to-income ratio exceeds the basic affordability limit used in our second
-check.
-\par\vspace{5pt}
-\noindent{\color{NewsRed}\rule{\columnwidth}{0.8pt}}\par\vspace{3pt}
-{\centering\itshape\fontsize{11}{13.5}\selectfont\color{Ink}``Zurich offers a balanced school week. Madrid offers more room in the household budget.''\par}\vspace{3pt}
-\noindent{\color{NewsRed}\rule{\columnwidth}{0.8pt}}\par\vspace{2pt}
+Luxembourg offers the strongest overall balance in this comparison. Safety,
+school resources and transport support its lead, while its cost measures score
+better than Zurich's. Zurich remains a clear second, with strong daily
+facilities and higher-education resources. Macao SAR is third, helped by its
+mobility and broadband measures. Reykjavik and Madrid give families further
+choices when travel needs, school access or the household budget point elsewhere.
+Check which city offers a suitable school and an affordable home.
+\par\vspace{7pt}
+\noindent{\color{NewsRed}\vrule width 3pt}\hspace{9pt}\parbox{\dimexpr\columnwidth-12pt}{\itshape\fontsize{11.5}{13.5}\selectfont\color{Ink}``Start with Luxembourg and Zurich, then match the shortlist to a real school and home.''}\par\vspace{5pt}
 \kicker{A day in the life}
-In Zurich, a student can plan a school day around short, dependable trips,
-strong broadband and many nearby services. The city's safety and school
-measures lift its score across several parts of the comparison. The trade-off
-appears at home: a family must be ready for higher living and housing costs.
-Zurich is the city for a family that values a steady routine and wants the
-widest balance across the ten measures.
+In Luxembourg, a family can start with the practical shape of a school day.
+The reported average commute is 27.8 minutes, and the transit inventory records
+at least 636 stops per 100,000 residents. The commute measure describes workers rather than students. Air pollution averages 7.7 micrograms of PM$_{2.5}$ per cubic metre.
+A family should map its own school journey and check the local classroom.
 
-In Madrid, the morning route and school day still score well, while the cost
-measures are friendlier to a family budget. A teenager can use the same city
-network for school, clubs and errands, and the lower cost position keeps Madrid
-close to Zurich even when several other cities score well on education or
-mobility. Madrid is the city to inspect first when rent, food and daily spending
-set the limit.
+In Zurich, a student benefits from strong safety, higher-education resources,
+broadband and pool provision in our comparison. Living and housing
+costs score less favourably than in Luxembourg, so check the home budget early. Zurich is also the leading alternative when Luxembourg's
+national proxies are treated as unknown.
 
-In Singapore, the student benefits from a strong safety result, good broadband
-and useful everyday facilities. The city remains third because affordability
-puts pressure on the family decision. A Singapore shortlist should therefore
-begin with a real housing search and a check of school fees, not just the city's
-headline strengths.
+In Macao SAR, mobility and broadband are useful starting points for a family
+planning independent travel and study. Its mobility utility is close to
+Luxembourg's, and its broadband utility is higher. The housing price-to-income
+value is a median utility fill, so the family needs a local housing check.
+Check the school, language of instruction and journey from home.
 \kicker{How we built the ranking}
-We began with ten facts that can be compared across the cities. They cover
-safety and air quality, living costs, education, travel, public transport,
-broadband and swimming pools. We converted each fact to a common 0-to-1 scale,
-where a larger value means a better situation. For example, a lower crime rate
-or shorter trip earns a higher mark, while more transport stops or faster
-broadband also earns a higher mark.
+We compared ten indicators covering safety, air quality, living costs,
+education, transport, broadband and pools. Each becomes a 0-to-1 utility,
+where a larger value means better conditions. Lower crime and shorter trips
+earn higher marks, as do more transport stops and faster broadband.
 
-We then gave the facts different importance. Safety and education receive the
-largest shares because they shape an ordinary school week. Cost and mobility
-come next, and broadband and pools receive smaller shares. The final score is a
-weighted balance: a city scores well when it is close to the best observed
-conditions across many measures, not just one exceptional result. We also
-applied minimum standards for safety, air quality and housing before presenting
-the feasible shortlist.
+Safety and education receive the largest weights because they shape a school
+week. The final score measures a city's balance across the indicators against
+fixed reference conditions. We also apply minimum standards for safety,
+air quality and housing to form the feasible shortlist.
 \kicker{What could change the answer}
-The ranking is designed to show where a decision is stable and where a family
-should look closer. Zurich stays first through all 31 alternative source and
-counting choices. It also leads in 93.4\% of the controlled priority draws at
-the main concentration. The result changes in two understandable situations.
-If Zurich's homicide figure is left unknown, Madrid moves to first. If a family
-cares about living costs about three times more than our baseline, Madrid also
-moves ahead. These are useful prompts for a family's own conversation.
+Luxembourg stays first in all 31 source-variant checks and the withdrawal
+tests. It also leads in 99.97\% of the random weightings near our main priorities.
+This is a test frequency, not a probability of family preference. All three family profiles also keep it first.
 
-The 2035 exercise gives the same leading three under common changes in services,
-prices, school conditions and air quality. It is a way to ask ``what if?''
-about the ranking, not a promise about the future. A city average can also miss
-a particular neighbourhood, school or route. Families should replace the
-average with the details of the address and school they are considering.
+The main question is whether national figures describe the city closely enough.
+Luxembourg uses national proxies for homicide, pupils per teacher and broadband.
+If we treat those three values as unknown, Luxembourg moves to sixteenth with
+57.2 and Zurich becomes first. Families who need city-level evidence should
+check these measures before accepting the lead.
 
-Next, check admission rules, price the home and school fees, and trace the real school route. The right city is the one whose school day fits the student and whose budget the family can sustain.
+The 2035 exercise keeps Luxembourg, Zurich and Macao SAR in the same leading
+order under common changes in services, prices, schools and air quality. These hypothetical scenarios show responses to specified changes.
+
+Next, check admission rules and language, price the home and school fees, and
+trace the real school route. The choice must fit the student's school day and the family's budget.
 \end{multicols}
-\vspace{6pt}
-\newlength\advw\setlength\advw{\dimexpr(\linewidth-119.5pt)/3\relax}\setlength{\tabcolsep}{0pt}
-\newcommand\card[2]{\rule{0pt}{2.6ex}{\sffamily\bfseries #1}\par\vspace{2pt}#2\rule[-1.4ex]{0pt}{0pt}}
-\noindent\begin{tabular}{@{}>{\columncolor{NewsRed}[0pt][4pt]\raggedright\arraybackslash}m{54pt}@{\hspace{12pt}}%
->{\columncolor{NewsRed}[0pt][0pt]}m{2.5pt}@{\hspace{5pt}}>{\columncolor{NewsPaper}[5pt][5pt]\raggedright\arraybackslash}m{\advw}@{\hspace{13pt}}%
->{\columncolor{NewsRed}[0pt][0pt]}m{2.5pt}@{\hspace{5pt}}>{\columncolor{NewsPaper}[5pt][5pt]\raggedright\arraybackslash}m{\advw}@{\hspace{13pt}}%
->{\columncolor{NewsRed}[0pt][0pt]}m{2.5pt}@{\hspace{5pt}}>{\columncolor{NewsPaper}[5pt][5pt]\raggedright\arraybackslash}m{\advw}@{\hspace{5pt}}}
-{\sffamily\bfseries\color{white}Advice for families, by priority} &
- & \card{Safety first}{Start with Zurich, then Madrid and Singapore.} &
- & \card{Budget first}{Start with Madrid, then Zurich and Dublin.} &
- & \card{Getting around first}{Start with Zurich, then Madrid and Oslo.}\\
-\end{tabular}\par
+\vspace{12pt}
+% key numbers strip
+\newcommand\stat[2]{\begin{minipage}[t]{.235\linewidth}\raggedright\setlength{\parskip}{0pt}
+{\color{NewsRed}\rule{\linewidth}{1.2pt}}\par\vspace{2pt}
+{\sffamily\bfseries\fontsize{15.5}{17}\selectfont\color{Ink}#1}\par\vspace{1pt}
+{\sffamily\footnotesize\color{Muted}#2\par}\end{minipage}}
+\noindent{\color{NewsRed}\rule[0.4ex]{16pt}{1.3pt}}\hspace{5pt}{\sffamily\bfseries\color{NewsRed}KEY NUMBERS}\par\vspace{4pt}
+\noindent\stat{68.9\,\textcolor{Muted}{/}\,65.2\,\textcolor{Muted}{/}\,63.9}{Luxembourg, Zurich and Macao SAR: the top three of 44}\hfill
+\stat{3.7 points}{The gap between first and second}\hfill
+\stat{31 of 31}{Source-variant checks in which Luxembourg stays first}\hfill
+\stat{99.97\%}{Random weightings near our main priorities led by Luxembourg}\par
+\vspace{14pt}
+% advice band
+\setlength{\fboxsep}{5pt}%
+\noindent\colorbox{NewsRed}{\parbox{\dimexpr\linewidth-2\fboxsep}{\strut\sffamily\bfseries\color{white}ADVICE FOR FAMILIES, BY PRIORITY}}\par\nointerlineskip
+\newcommand\card[4]{\colorbox{NewsPaper}{\parbox[t][#4][t]{\dimexpr.3233\linewidth-2\fboxsep}{\setlength{\parskip}{0pt}\raggedright{\sffamily\bfseries\color{NewsRed}#1}\par\vspace{2pt}#2\par\vspace{2pt}{\footnotesize\color{black!65}#3}}}}
+\noindent\card{Safety first}{Luxembourg, then Zurich and Madrid.}{Scores in order: 72.0, 68.0, 65.8.}{58pt}\hfill
+\card{Budget first}{Luxembourg, Dubai, Abu Dhabi; check air quality.}{Scores in order: 65.4, 62.4, 62.3.}{58pt}\hfill
+\card{Getting around first}{Luxembourg, Reykjavik, Macao SAR.}{Scores in order: 69.6, 67.8, 66.5.}{58pt}\par
 \endgroup
 \label{news-end}
 \clearpage
@@ -863,6 +959,13 @@ show the question asked, a short answer excerpt and how the team used it.\cite{e
 \textbf{How we used and checked it:} We used Mercer as an external comparison, not as a replacement for the student-focused index. We checked the published city ranks, matched only the shared cities and reported the difference in what the two rankings measure.
 
 
+
+\paragraph{OpenAI Codex CLI, new-city data collection | 15 November 2026}
+\textbf{Question (excerpt):} ``YOUR PART: indicators population, homicide\_per\_100k, pm25\_ugm3, cli, pir for all 9 new cities.''
+
+\textbf{Answer (excerpt):} ``Created part\_a.csv with 45 rows covering all 9 cities $\times$ 5 indicators.'' The answer also stated: ``Four values remain blank where sources could not be independently fetched.''
+
+\textbf{How we used and checked it:} Codex supported the data-collection round requested for 27 new cities; this excerpt records one regional batch. We retained source links and missing-value notes, then used the final source register and recomputed results after targeted follow-up searches, exclusions and median utility fills. The final comparison contains 44 cities. The quoted batch output is an intermediate collection record.
 
 Usage by other team members: to be added by the team before submission.
 
