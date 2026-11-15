@@ -54,7 +54,7 @@ def heatmap(f, lo, hi, main):
     J = [NAMES.index(m) for m in cols]
     L, H = lo[np.ix_(order, J)], hi[np.ix_(order, J)]
     M = (L + H) / 2
-    fig, ax = plt.subplots(figsize=(6.5, 5.6))
+    fig, ax = plt.subplots(figsize=(6.5, 5.1))
     fig.subplots_adjust(left=.20, right=.985, top=.80, bottom=.12)
     n, m = M.shape
     for i in range(n):
@@ -306,7 +306,7 @@ def raw_multiples(f):
     from task4_v207_ahp import ZURICH_HOMICIDE, AMSTERDAM_HOMICIDE
     df = f.set_index('city').copy()
     df.loc['Zurich', 'homicide_per_100k'] = round(ZURICH_HOMICIDE, 2); df.loc['Amsterdam', 'homicide_per_100k'] = round(AMSTERDAM_HOMICIDE, 2)
-    fig, axes = plt.subplots(2, 3, figsize=(6.5, 7.6))
+    fig, axes = plt.subplots(2, 3, figsize=(6.5, 6.5))
     fig.subplots_adjust(left=.01, right=.99, top=.93, bottom=.02, wspace=.06, hspace=.10)
     fig.text(.01, .975, 'Green: best three   Red: worst three   (cities sorted best to worst)', fontsize=9, color=MUTED, va='center')
     for ax, (col, title, benefit, fmt) in zip(axes.ravel(), RAW):
@@ -473,3 +473,42 @@ def category_champions(main):
 
 if __name__ == '__main__' and 'more' in __import__('sys').argv:
     print(weight_sensitivity()); category_champions(data()[4])
+
+
+GATES = [('homicide', 'homicide > 3 per 100,000', 3.0), ('pm25', 'PM2.5 > 25 µg/m³', 25.0), ('pir', 'house price/income > 20', 20.0)]
+
+
+def gate_revision():
+    from task4_v207_ahp import ZURICH_HOMICIDE, AMSTERDAM_HOMICIDE
+    f, lo, hi = bounds(); w, _ = ahp_weights(); mid = (lo + hi) / 2; cities = f.city.tolist()
+    raw = f.set_index('city')
+    vals = {'homicide': raw.homicide_per_100k.astype(float).copy(), 'pm25': raw.pm25_ugm3.astype(float), 'pir': raw.pir.astype(float)}
+    vals['homicide']['Zurich'] = ZURICH_HOMICIDE; vals['homicide']['Amsterdam'] = AMSTERDAM_HOMICIDE
+    fail = {c: [lab for k, lab, t in GATES if vals[k][c] > t] for c in cities}
+    s = score(mid, w); order = [cities[i] for i in np.argsort(-s)]
+    feas = [c for c in order if not fail[c]]
+    (RES / 'gate_revision.json').write_text(json.dumps(dict(gates=[(k, t) for k, _, t in GATES], excluded={c: v for c, v in fail.items() if v},
+                                                            feasible_order=feas, scores={c: round(float(s[cities.index(c)]), 2) for c in order}), indent=1))
+    fig, ax = plt.subplots(figsize=(6.5, 3.9))
+    fig.subplots_adjust(left=.02, right=.98, top=.9, bottom=.02)
+    ax.set_xlim(0, 10); ax.set_ylim(16.8, -.6); ax.axis('off')
+    ax.text(1.6, -.45, 'Baseline AHP-TOPSIS', fontsize=10.5, weight='bold', ha='center')
+    ax.text(7.2, -.45, 'After must-have thresholds', fontsize=10.5, weight='bold', ha='center')
+    for i, c in enumerate(order):
+        y = i + .5; col = SERIES[0] if c in ('Zurich', 'Madrid') else INK
+        flag(ax, COUNTRY[c], .1, y + .22, .32, -.44)
+        ax.text(.55, y, f'{i + 1:>2}  {c}', va='center', fontsize=9.5, color=INK if not fail[c] else MUTED)
+        ax.text(3.0, y, f'{s[cities.index(c)]:.1f}', va='center', ha='right', fontsize=9, color=MUTED)
+        if fail[c]:
+            ax.text(3.4, y, 'excluded: ' + ', '.join(fail[c]), va='center', fontsize=9, color='#c0392b')
+        else:
+            j = feas.index(c)
+            ax.plot([3.25, 6.0], [y, j + .5], color='#b9b8b2' if c not in ('Zurich', 'Madrid') else SERIES[0], lw=.9 if c not in ('Zurich', 'Madrid') else 1.6)
+            flag(ax, COUNTRY[c], 6.15, j + .5 + .22, .32, -.44)
+            ax.text(6.6, j + .5, f'{j + 1:>2}  {c}', va='center', fontsize=9.5, color=INK, weight='bold' if j < 2 else 'normal')
+    fig.savefig(FIG / 'gate_revision.pdf'); plt.close(fig)
+    return fail, feas
+
+
+if __name__ == '__main__' and 'gate' in __import__('sys').argv:
+    print(gate_revision())

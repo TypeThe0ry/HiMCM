@@ -1,0 +1,62 @@
+{
+ "gates": [
+  [
+   "homicide",
+   3.0
+  ],
+  [
+   "pm25",
+   25.0
+  ],
+  [
+   "pir",
+   20.0
+  ]
+ ],
+ "excluded": {
+  "Vienna": [
+   "homicide > 3 per 100,000"
+  ],
+  "Milan": [
+   "PM2.5 > 25 \u00b5g/m\u00b3"
+  ],
+  "Singapore": [
+   "house price/income > 20"
+  ],
+  "Tokyo": [
+   "PM2.5 > 25 \u00b5g/m\u00b3"
+  ]
+ },
+ "feasible_order": [
+  "Zurich",
+  "Madrid",
+  "Dublin",
+  "Paris",
+  "Helsinki",
+  "Prague",
+  "Oslo",
+  "London",
+  "Amsterdam",
+  "Berlin",
+  "Stockholm",
+  "Warsaw"
+ ],
+ "scores": {
+  "Zurich": 65.15,
+  "Madrid": 63.31,
+  "Singapore": 62.53,
+  "Milan": 61.12,
+  "Dublin": 60.79,
+  "Paris": 60.76,
+  "Helsinki": 58.72,
+  "Prague": 58.4,
+  "Oslo": 57.55,
+  "London": 56.13,
+  "Amsterdam": 56.0,
+  "Berlin": 55.63,
+  "Stockholm": 55.43,
+  "Warsaw": 54.46,
+  "Vienna": 54.36,
+  "Tokyo": 54.02
+ }
+}

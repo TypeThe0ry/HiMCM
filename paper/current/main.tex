@@ -36,6 +36,10 @@ Zurich ranks first at 65.2, followed by Madrid at 63.3 and Singapore at 62.5.
 Zurich's balance of safety, education, mobility and daily-life resources gives
 it a 1.8-point lead over Madrid.
 
+After applying must-have thresholds, Zurich and Madrid remain first and second
+after four cities that fail a threshold are excluded. Across three family
+profiles, Zurich and Madrid are the top two each time.
+
 The recommendation is conditional. Zurich remains first in all 31 source-variant
 checks, leads in 93.4\% of 10,000 AHP-centred weight draws at concentration 100,
 and has the smallest maximum regret at 5.4 points. Madrid takes first place if
@@ -76,27 +80,27 @@ The workflow is shown in Figure~\ref{fig:workflow}.
 \end{figure}
 
 \subsection{What makes a city suitable for high-school life?}
-A student's school day depends on safe surroundings, affordable living,
-teaching resources and convenient travel. We compare sixteen cities, one per
-country, on ten everyday measures. Under our high-schooler priorities, Zurich
-leads Madrid by 1.8 points. We test how source choices, uncertain inputs and
-different priorities affect this recommendation in Section~\ref{sec:sourcepolicy}.
+The recommendation applies to these sixteen high-income cities, fourteen of
+them in Europe. We compare one capital or major city per country on ten measures
+that describe a teenager's everyday choices:
+\begin{itemize}
+\item safety and environment protect students during ordinary trips and school days;
+\item cost of living captures whether a family can sustain housing and daily expenses;
+\item education measures the teaching capacity and nearby higher-education options that shape learning;
+\item mobility reflects how easily a 14--18-year-old can reach school, activities and services;
+\item daily life uses broadband and public pools because comparable city-level counts exist for every city.
+\end{itemize}
+We considered libraries, parks, youth culture, friendships, language and cultural
+fit, but comparable city-level counts or consistent measures were unavailable;
+these remain outside the ten indicators. City totals also omit fees, eligibility
+and neighbourhood routes, so families should check those details against their
+needs and budget. We express each measure as a utility from 0 to 1, with higher
+values preferred. The \textbf{representative score} is the TOPSIS score at the
+midpoint of each cell's utility range.
 
-We express each measure as a utility from 0 to 1, with higher values preferred. The \textbf{representative score} is the TOPSIS score calculated
-at the midpoint of each cell's utility range.
-
-\subsection{Criterion selection and contribution}
-Our criteria cover safety, air quality, housing and living costs, teaching
-resources, higher education, transport stops, journey time, broadband and pools (Table~\ref{tab:indicators}). Friendships,
-language and cultural fit depend on the student, and comparable surveys of
-wellbeing and discrimination were unavailable. City totals also omit fees,
-eligibility and neighbourhood routes. Families should check these factors
-against their needs and budget.
-
-We give pupils per teacher more AHP weight than pools because schooling shapes
-daily life. Compared with equal weights, thirteen cities change rank, while
-Zurich remains first. The appended AI-use report describes
-assistance with research, calculations and writing \cite{openai,exa}.
+Compared with equal weights, thirteen cities change rank, while Zurich remains
+first. The appended AI-use report describes assistance with research,
+calculations and writing \cite{openai,exa}.
 
 \section{Assumptions and their role}
 \begin{enumerate}
@@ -148,9 +152,7 @@ official record, which keeps national data systems from being counted several
 times while retaining city-level evidence for the decision. The set spans cost,
 climate, population size, safety and transit, as Table~\ref{tab:cityset} shows.
 Sixteen cities exceed COMAP's minimum of ten, and every cell in the matrix has a
-documented value, a labelled proxy or a utility range. Fourteen cities are
-European and all are in high-income economies, so the recommendation applies to
-this defined candidate set.
+documented value, a labelled proxy or a utility range.
 Figure~\ref{fig:citymap} shows their locations and final ranks.
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/city_map.pdf}
@@ -410,7 +412,7 @@ We use each utility range's midpoint on the shared 0--1 scale for the representa
 \end{equation}
 
 \textbf{Step 2: Find the distance to the ideal.}
-We measure weighted shortfalls from the all-one ideal; smaller $D_i^+$ is better \cite{topsis}:
+We measure weighted shortfalls from the all-one ideal; smaller $D_i^+$ is better \cite{topsis}. Because every utility already uses the same 0--1 scale with fixed anchors, the ideal stays at all ones and the worst profile at all zeros when a city is added or removed:
 \begin{equation}
  D_i^+=\sqrt{\sum_{j=1}^{10}w_j(1-u_{ij})^2}.
  \label{eq:distance-ideal}
@@ -440,7 +442,7 @@ $\ell_i$ and $h_i$ to bound it:
 
 \subsection{Scoring results and interpretation}
 Zurich leads with a representative score of 65.2, ahead of Madrid by
-1.8 points, with Singapore third (Table~\ref{tab:baseline}). Figure~\ref{fig:radar} compares
+1.8 points, with Singapore third (Table~\ref{tab:baseline}). Travel utilities sit in a narrow band because we know mean travel times rather than detailed route distributions, so this category separates cities weakly. Figure~\ref{fig:radar} compares
 ranks 1--3, 7--9 and 14--16 as examples from each tier.
 
 \begin{table}[!htbp]\centering
@@ -498,17 +500,32 @@ Scores combine the two indicator utilities using their local AHP weights
 and run from 0 to 1. Zurich places second in three categories.}\label{fig:champions}
 \end{figure}
 
-\subsection{A significant revision: from equal weights to AHP weights}
-Our revision gives safety and schooling more influence. Equal weights assign
-every indicator 0.1; under AHP, safety and environment and education each receive
-0.340, cost and mobility 0.123 each, and daily life 0.073.
+\subsection{Significant revisions}
+\textbf{Preference revision.} Our first revision gives safety and schooling more influence. Equal weights assign every indicator 0.1; under AHP, safety and environment and education each receive 0.340, cost and mobility 0.123 each, and daily life 0.073. With utilities, anchors and scoring unchanged, the leading four shift from Zurich, Oslo, Paris and Dublin to Zurich, Madrid, Singapore and Milan. Thirteen of sixteen cities change rank; Kendall's $\tau=0.450$ measures their agreement. Zurich stays first.
 
-With utilities, anchors and scoring unchanged, the leading four shift from
-Zurich, Oslo, Paris and Dublin to Zurich, Madrid, Singapore and Milan.
-Thirteen of sixteen cities change rank; Kendall's $\tau=0.450$ measures their
-agreement. Zurich stays first.
+\textbf{Structural revision with must-have thresholds.} We next screen cities before TOPSIS so that a severe weakness cannot be offset by strengths elsewhere. A city is excluded when homicide exceeds 3 per 100,000, PM$_{2.5}$ exceeds 25~$\mu$g/m$^3$ (the WHO 2021 interim target 2), or house price-to-income exceeds 20. This removes Vienna (homicide 3.91), Milan (PM$_{2.5}$ 28.1), Tokyo (PM$_{2.5}$ 28.4) and Singapore (price-to-income 22.3). The feasible ranking is Zurich, Madrid, Dublin, Paris, Helsinki, Prague, Oslo, London, Amsterdam, Berlin, Stockholm and Warsaw.
+
+\begin{figure}[!htbp]\centering
+\includegraphics[width=\linewidth]{figures/gate_revision.pdf}
+\caption{Must-have thresholds applied before TOPSIS. Baseline ranks are shown on the left, with excluded cities marked by the failed threshold; feasible ranks are shown on the right and connected to their baseline positions.}\label{fig:gate}
+\end{figure}
+
+The gate changes the decision structure while retaining the same utilities and AHP priorities. Families can set their own must-have thresholds before ranking the cities that remain feasible.
 
 \subsection{Robustness of the recommendation}\label{sec:sourcepolicy}
+\textbf{Family profiles.} The same framework can reflect different family priorities. We built three transparent AHP profiles; all have $CR<0.01$, and Zurich and Madrid are the top two in every profile.
+
+\begin{table}[!htbp]\centering
+\caption{Family profiles and their top three cities. The key weight is the profile's most emphasized category.}\label{tab:profiles}
+\begingroup\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lll}\toprule
+Profile & Key weight & Top three\\\midrule
+Safety-first & Safety 0.537 & Zurich 68.0; Madrid 65.8; Singapore 65.6\\
+Budget-first & Cost 0.387 & Madrid 60.1; Zurich 59.2; Dublin 59.0\\
+Independent-mobility & Mobility 0.364 & Zurich 64.3; Madrid 62.2; Oslo 61.3\\
+\bottomrule\end{tabular}\endgroup
+\end{table}
+
 \textbf{Score bounds and maximum regret.} We test utility ranges and weights
 in Figure~\ref{fig:robust}. Maximum regret is the most a city could trail its
 best rival when every utility range works against it:
@@ -579,10 +596,7 @@ $w\sim\operatorname{Dirichlet}(\kappa w_{\mathrm{AHP}})$. Zurich leads in
 larger $\kappa$ keeps weights closer to AHP. Zurich also stays first in the
 education-priority and independent-living preference checks.
 
-When we multiply one category's AHP weight by $1/4$ to $4$ and rescale the
-others, Zurich stays first throughout the range for four categories
-(Figure~\ref{fig:wsens}). Madrid overtakes it when the cost-of-living weight
-exceeds about $3.0$ times its AHP value.
+For one-category multipliers from $1/4$ to $4$, Zurich stays first for four categories (Figure~\ref{fig:wsens}); Madrid overtakes it when the cost-of-living weight exceeds about $3.0$ times its AHP value.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figures/weight_sensitivity.pdf}
@@ -592,32 +606,13 @@ Madrid, Singapore and Milan are coloured; other cities are grey. The dashed
 line marks the cost-of-living multiplier where Madrid overtakes Zurich.}\label{fig:wsens}
 \end{figure}
 
-\textbf{Compromise ranking.} VIKOR balances total and largest shortfalls using
-the same utilities and weights. We scale shortfalls between the best and worst
-observed utilities, then equally combine the normalized weighted total and
-maximum \cite{vikor}. Madrid, Zurich and Singapore lead. Madrid meets the stability
-condition; its lead is below the required $1/(16-1)$ advantage, leaving Madrid
-and Zurich as close alternatives.
+\textbf{Compromise ranking.} VIKOR combines normalized total and largest shortfalls using the same utilities and weights \cite{vikor}. Madrid, Zurich and Singapore lead; Madrid meets the stability condition, but its lead is below the required $1/(16-1)$ advantage, leaving Madrid and Zurich as close alternatives.
 
 \subsection{Why the ranking is more than our opinion}
-A reader can check both the evidence and the choices behind our ranking.
-The inputs come from public records and the supplied city table, with
-sources, years and labelled proxies listed in Table~\ref{tab:sources}.
-Readers can judge whether each measure fits their own situation.
+As an external comparison, Mercer's *Quality of Living City Ranking 2024* covers 11 of our 16 cities and also places Zurich first \footnote{Mercer, ``Quality of Living City Ranking 2024,'' 2024, \url{https://www.mercer.com/en-ie/about/newsroom/2024-quality-of-living-city-ranking/}.}. Across the shared cities, agreement is weak and negative (Spearman $-0.35$, $p=0.28$): Mercer ranks Vienna, Amsterdam and Berlin high and Madrid low because it emphasizes expatriate infrastructure and stability, whereas our index focuses on a teenager's safety, schooling and costs. The shared first place supports Zurich as a credible recommendation while showing that the two indices answer different questions.
 
-Our priorities are judgments, and the AHP comparison makes them visible.
-The matrix explains the greater weight on safety and education; its
-consistency check tests whether the comparisons agree. Anyone can change
-them and recalculate the ranking with the same utilities and scoring rule.
-
-Several checks test how much the result depends on our choices. Zurich leads in all 31 source-variant checks and 93.4\% of the
-weight draws at $\kappa=100$. It remains first across the tested changes to
-four category weights; Madrid overtakes when the cost-of-living weight is
-about three times our AHP value. Zurich has the smallest maximum regret,
-while VIKOR identifies Madrid and Zurich as close alternatives. The three
-2035 scenarios retain Zurich, Madrid and Singapore as the top three.
-These checks cover different sources of disagreement, although the broader
-withdrawals in Table~\ref{tab:vintage} also show when Milan takes first.
+Our priorities are judgments, and the AHP matrix makes them visible. Anyone
+can change them and recalculate the ranking with the same utilities and rule.
 
 The answer can therefore change in clear ways: treating Zurich's homicide
 value as unknown puts Madrid first, as does giving cost of living about
@@ -626,32 +621,25 @@ not the chance that a city is best for every student. Families should
 shortlist Zurich, Madrid and Singapore, then use their own priorities and
 school-access requirements to choose. We recommend Zurich, with Madrid as a close second choice.
 
-\FloatBarrier
 \section{Extension: looking ahead to 2035}
-\subsection{Looking ahead to 2035}
-We test more public services (S1), higher costs and congestion (S2), and
-smaller classes, cleaner air and faster travel (S3) as possible 2035 scenarios.
-S1 increases higher-education institutions, transit stops and pools by 10\%;
-S2 increases living costs, housing price-to-income and travel time by 10\%;
+\subsection{Stress tests for 2035}
+Our 2035 scenarios are stress tests, not forecasts. Every city receives
+the same hypothetical changes, with formulas, anchors and weights fixed:
+S1 adds 10\% more higher-education institutions, transit stops and pools;
+S2 raises living costs, housing price-to-income and travel time by 10\%;
 S3 reduces pupils per teacher, PM$_{2.5}$ and travel time by 10\%.
-These hypothetical changes use the same formulas, anchors and weights in every city.
-We use these scenarios to explore common changes; they do not estimate each
-city's development.
 
-Zurich, Madrid and Singapore stay first, second and third in all three
-scenarios. Figure~\ref{fig:future} shows the top six: Paris moves from sixth
-to fifth under S3, just ahead of Dublin. Checking all sixteen cities gives no
-other rank changes. Across the cities, more services add 0.1--0.3 points,
-higher costs and congestion subtract 0.4--0.5, and smaller classes with
-cleaner air and faster travel add 1.0--1.1.
+Zurich, Madrid and Singapore remain first, second and third.
+Figure~\ref{fig:future} shows the top six; Paris passes Dublin from sixth
+to fifth under S3. The all-city calculation finds no other rank changes.
+Across cities, S1 adds 0.1--0.3 points, S2 subtracts 0.4--0.5,
+and S3 adds 1.0--1.1. These shocks test ranking sensitivity without
+predicting individual cities' development.
 
 \begin{figure}[!htbp]\centering
 \includegraphics[width=5.4in]{figures/future_2035.pdf}
-\caption{Top six cities today and under three hypothetical 2035 scenarios.
-Bars show representative scores; numbers give changes from today, and boxes
-mark changed ranks. S1: 10\% more higher-education institutions, transit stops
-and pools. S2: 10\% higher living costs, housing price-to-income and travel
-time. S3: 10\% fewer pupils per teacher, lower PM$_{2.5}$ and shorter travel time.}
+\caption{Top six cities under the 2035 stress tests. Bars show representative
+scores; numbers give changes from today, and boxes mark changed ranks.}
 \label{fig:future}
 \end{figure}
 
@@ -659,97 +647,80 @@ time. S3: 10\% fewer pupils per teacher, lower PM$_{2.5}$ and shorter travel tim
 \section{Strengths and weaknesses}
 \textbf{Strengths}
 \begin{itemize}
-\item Our AHP weights state our team's priorities and pass a consistency check.
-\item We distinguish source records, team-table entries and proxies in our tests.
-\item Zurich leads in all 31 source-variant checks and three 2035 scenarios.
-\item Clear tiers and visuals help a family compare cities and their trade-offs.
+\item Our consistent AHP judgements state team priorities, and the revisions
+and family profiles make those priorities testable.
+\item We distinguish source records, team-table entries and proxies.
+\item Clear tiers and visuals help families compare trade-offs.
 \end{itemize}
 
 \textbf{Weaknesses}
 \begin{itemize}
-\item The AHP judgements are our team's, rather than a survey of students.
-Indicator choices and utility anchors also shape the scores.
+\item AHP judgements are our team's, rather than surveyed preferences.
+Indicator choices and utility anchors also shape scores.
 \item School and travel proxies fill data gaps; some team-table entries lack
 source links. Independent utility ranges can combine extremes that may not
 occur together.
 \item Small homicide counts in Zurich can change the recommendation \cite{zhpks2025}.
-\item Scoring is compensatory: strong categories can offset weak ones. Families
-should first set must-have thresholds for safety, affordability and school access.
+\item Must-have thresholds handle compensation for safety, air quality and
+housing costs; school access still needs checking.
 \item City averages hide differences in access between neighbourhoods and age groups.
 \item With 14 of 16 cities in Europe, our comparison has a narrow geographic scope.
 \end{itemize}
-Next, we would survey students to set the weights and collect city-level
-teacher data.
 
 \section{Conclusion and decision use}
 We recommend Zurich, with Madrid as a close second choice.
-Under our stated priorities, Zurich's safety, education, transport and daily
-facilities balance its higher costs. Its representative score is 65.2, and its
-maximum regret is the smallest at 5.4 points. It leads in 93.4\% of the weight
-draws at $\kappa=100$.
-
-Madrid takes first place if Zurich's homicide value is treated as unknown,
-or if the cost-of-living weight rises to about three times our AHP value.
-Withdrawing flagged entries or the union of dated and flagged entries puts
-Milan first (Table~\ref{tab:vintage}). Families should shortlist Zurich,
-Madrid and Singapore, apply their must-have thresholds, then compare actual
-schools, admission rules, fees and daily routes. The ranking helps focus
-those checks on cities that suit the family's priorities.
+Zurich's safety, education, transport and daily facilities balance higher costs:
+representative score 65.2, smallest maximum regret 5.4 points, and first
+in 93.4\% of weight draws at $\kappa=100$.
+Families should screen the Zurich, Madrid and Singapore shortlist against
+must-haves, then check schools, admission rules, fees and daily routes.
 
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
-\section*{A city choice built around a student's day}
-Picture the journey from the front door to the classroom, then to a swim after
-school. For a family choosing a city, those ordinary journeys matter.
-We recommend Zurich, with Madrid as a close second choice.
-In our comparison of sixteen cities, Zurich scores 65.2, Madrid 63.3 and
-Singapore 62.5. Zurich's lead over Madrid is 1.8 points.
+\section*{Zurich leads, but Madrid makes a strong case on cost}
+Zurich, then Madrid, then Singapore: that is our shortlist for a family
+choosing a city for high-school life. Madrid can take the lead if living and
+housing costs matter about three times as much as in our main comparison.
+Among sixteen cities, Zurich scores 65.2, Madrid 63.3 and Singapore 62.5,
+leaving a 1.8-point gap between the leading pair.
 
-\subsection*{What matters during a school day?}
-We compared ten everyday measures, from safety and air quality to teaching
-resources, housing costs and transport. Broadband and swimming facilities
-also count because a student's day continues after lessons end. Our team
-gave safety and education the greatest influence.
+We scored ten everyday measures, weighted by what matters most to a teenager.
 
-Zurich comes first because its combination of safety, school resources,
-transport and daily facilities balances its higher costs. Madrid offers a
-strong alternative with lower living costs in our data.
-Singapore completes the leading group, with strong safety and daily facilities.
-The choice depends on what a family needs from these different strengths.
+\subsection*{What makes the leading cities stand out?}
+Zurich's mix of safety, school resources, transport and daily facilities
+balances its higher costs. Madrid offers lower living costs in our data,
+while Singapore combines strong safety with good everyday facilities.
+These differences matter when a family works out what a school day will cost
+and how easily a student can get around.
 
-We checked whether different ways of counting stops and pools or measuring
-travel would change our choice. Zurich stays first in all 31 checks.
-However, setting aside entries with data concerns puts Milan first.
-This gives families a reason to check the information that matters most to
-their own decision, especially safety and school access.
+A city must also meet the family's basic needs. We added minimum standards
+for safety, air quality and housing costs before comparing the remaining
+cities. Zurich stays first and Madrid second. Singapore falls out because
+its housing price-to-income ratio exceeds our limit. Its place on the
+original shortlist is a reason to examine housing costs closely.
 
-\subsection*{Why Madrid deserves a close look}
-Madrid takes first place when we treat Zurich's homicide figure as unknown.
-The Zurich rate we use is 0.34 per 100,000 residents: the average of one
-completed homicide offence in 2024 and two in 2025, divided by the 2025
-population of 440,935 \cite{zhpks2025}. Small counts can shift the rate from
-year to year. Zurich keeps its lead until the rate reaches about 0.69 per
-100,000.
+\subsection*{How we checked it}
+We tried different counting rules for facilities, changed family priorities
+and tested minimum standards. Zurich leads under all 31 alternative counting
+and source choices. Zurich and Madrid fill the leading places for families
+focused on safety, budgets or independent travel; Madrid wins the budget
+comparison. Some missing information matters more: leaving Zurich's homicide
+figure unknown puts Madrid first, while setting aside entries with data
+concerns puts Milan first. The shortlist gives families a starting point
+for checking the facts that matter to them.
 
-Cost can also change the choice. Madrid moves ahead when we give living and
-housing costs about three times their original importance in our comparison.
-For a family working within a tight budget, that is a useful question to
-ask before arranging visits: how much room is there for housing, travel
-and after-school activities?
+\subsection*{Try the school day before choosing}
+Begin with the household budget and school admission requirements. Then
+look at the journey from home to school and the trip back after clubs.
+Can the student make those journeys independently? Are activities affordable,
+and will school fees leave enough room for everyday spending?
 
-\subsection*{Making the choice personal}
-Start with Zurich, Madrid and Singapore, then set your must-haves. A high
-overall score can balance a weak area with a strong one, so a family should
-check its budget, school eligibility and safety needs before comparing scores.
-
-A school visit and a trial journey can help settle a close choice. Can the
-student catch the bus after a club finishes? Are pool fees affordable?
-Language, friendships and wellbeing deserve attention alongside the numbers.
-
-Our three possible 2035 scenarios keep the same leading group when services,
-costs, schools and air quality change. They are ways to explore the future.
-The final choice should come back to a school and a daily routine that work
-for the student.
+A visit can answer questions that a city average cannot. Language,
+friendships and wellbeing belong in the conversation alongside safety,
+class sizes and travel times. Our future stress tests keep the same leading
+group under common changes to services, costs, schools and air quality;
+they do not predict how the cities will develop. The final choice should
+fit the student's school and daily routine.
 \label{news-end}
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{References}
