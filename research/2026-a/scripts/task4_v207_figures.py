@@ -303,9 +303,9 @@ RAW = [('homicide_per_100k', 'Homicides per 100,000', False, '{:.2f}'),
 
 
 def raw_multiples(f):
-    from task4_v207_ahp import ZURICH_HOMICIDE
+    from task4_v207_ahp import ZURICH_HOMICIDE, AMSTERDAM_HOMICIDE
     df = f.set_index('city').copy()
-    df.loc['Zurich', 'homicide_per_100k'] = round(ZURICH_HOMICIDE, 2)
+    df.loc['Zurich', 'homicide_per_100k'] = round(ZURICH_HOMICIDE, 2); df.loc['Amsterdam', 'homicide_per_100k'] = round(AMSTERDAM_HOMICIDE, 2)
     fig, axes = plt.subplots(2, 3, figsize=(6.5, 7.6))
     fig.subplots_adjust(left=.01, right=.99, top=.93, bottom=.02, wspace=.06, hspace=.10)
     fig.text(.01, .975, 'Green: best three   Red: worst three   (cities sorted best to worst)', fontsize=9, color=MUTED, va='center')

@@ -29,7 +29,11 @@ WITHIN = {'Safety and environment': 2, 'Cost of living': 1, 'Education': 3,
           'Mobility': 2, 'Daily life': 2}
 # Zurich homicide: supplied 0.14 has no verified denominator. Modelling value from the
 # city police PKS 2025 count of completed homicide offences (2) over the 2025 population.
-ZURICH_HOMICIDE = 2 / 440935 * 1e5
+# 2024-2025 mean of completed homicide offences in the city police statistics (1 and 2).
+ZURICH_HOMICIDE = 1.5 / 440935 * 1e5
+# Amsterdam: the supplied numerator (340) is not reproduced by CBS; use the CBS 2018-2022
+# total of 68 homicide victims as a five-year mean over the retained 2025 population.
+AMSTERDAM_HOMICIDE = 68 / 5 / 941927 * 1e5
 
 
 # Fills for the 11 cells without city data (modelling assumptions, stated in the paper).
@@ -47,6 +51,8 @@ def bounds(override=True, fill=True):
     if override:
         i = cities.index('Zurich')
         lo[i, 0] = hi[i, 0] = 2 / (2 + ZURICH_HOMICIDE)
+        k = cities.index('Amsterdam')
+        lo[k, 0] = hi[k, 0] = 2 / (2 + AMSTERDAM_HOMICIDE)
     if fill:
         j = NAMES.index('upper_secondary_ptr')
         for c, x in PTR_FILL.items():
@@ -186,7 +192,7 @@ def main():
     cr = []
     zi = cities.index('Zurich')
     for label, a, b in cases:
-        a, b = a.copy(), b.copy(); a[zi, 0] = b[zi, 0] = lo[zi, 0]
+        a, b = a.copy(), b.copy(); a[zi, 0] = b[zi, 0] = lo[zi, 0]; ai = cities.index('Amsterdam'); a[ai, 0] = b[ai, 0] = lo[ai, 0]
         full = (b - a) >= 1; a[full], b[full] = lo[full], hi[full]
         t = table(cities, a, b, w)
         cr.append(dict(case=label, midpoint_first=t.loc[t['rank'].eq(1), 'city'].tolist(),
