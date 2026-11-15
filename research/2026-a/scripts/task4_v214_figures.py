@@ -78,6 +78,9 @@ def _land(ax, shp, x0, x1, y0, y1):
         sp.set_color('#c9c7bf'); sp.set_linewidth(.6)
 
 
+MEDAL = {1: '#c9a227', 2: '#9aa0a6', 3: '#b0703a'}  # gold, silver, bronze for the top three
+
+
 def _label(ax, c, r, lon, lat, dx, dy, kx, ky, flagged=True, bold=False, col=INK, text=None):
     """Flag + 'City (rank)' (or `text`) next to a dot; dx, dy in inches, kx/ky degrees per inch."""
     ha = 'left' if dx > 0 else 'right'
@@ -91,7 +94,9 @@ def _label(ax, c, r, lon, lat, dx, dy, kx, ky, flagged=True, bold=False, col=INK
         tx = fx + fw + .04 * kx if dx > 0 else fx - .04 * kx
     else:
         tx = x
-    ax.text(tx, y, text, ha=ha, va='center', fontsize=9, color=col, weight='bold' if bold else 'normal', zorder=11)
+    box = dict(boxstyle='round,pad=.22,rounding_size=.35', fc=MEDAL[r], ec='none') if text == f'{c} ({r})' and r in MEDAL else None
+    ax.text(tx + (.03 * kx if box and dx > 0 else -.07 * kx if box else 0), y, text, ha=ha, va='center', fontsize=9,
+            color='white' if box else col, weight='bold' if bold else 'normal', zorder=11, bbox=box)
 
 
 def city_map(main):
@@ -108,8 +113,8 @@ def city_map(main):
     kx = (wx1 - wx0) / (pos.width * W); ky = (wy1 - wy0) / (pos.height * H)
     axW.add_patch(Rectangle((EU[0], EU[2]), EU[1] - EU[0], EU[3] - EU[2], fill=False, ec=INK, lw=.8, ls=(0, (3, 2)), zorder=12))
     n_eu = sum(EU[0] < lon < EU[1] and EU[2] < lat < EU[3] for c, (lat, lon) in COORDS.items() if c in rank.index)
-    axW.text(EU[1] + .3 * kx, EU[2] + 2, f'Europe inset\n({n_eu} cities)', fontsize=9, color=INK, va='bottom', ha='left', zorder=12, linespacing=.95)
-    offs = {'Reykjavik': (-.08, -.1), 'Macao SAR': (-.1, -.22), 'Singapore': (.1, -.08), 'Dubai': (-.1, .16), 'Abu Dhabi': (-.1, -.2)}
+    axW.text(EU[1] + .06 * kx, EU[3], f'Europe inset\n({n_eu} cities)', fontsize=9, color=INK, va='top', ha='left', zorder=12, linespacing=.95)
+    offs = {'Reykjavik': (-.08, -.1), 'Macao SAR': (-.1, -.22), 'Singapore': (.1, -.08), 'Dubai': (.1, .24), 'Abu Dhabi': (-.1, -.2)}
     noffs = {'Hong Kong SAR': (.06, -.06), 'Shenzhen': (.06, .06), 'Guangzhou': (-.06, .06), 'Toronto': (.04, .07), 'New York': (.06, -.04),
              'Chicago': (-.07, .0), 'San Francisco': (.05, .05), 'Los Angeles': (.05, -.06), 'Mexico City': (-.06, -.02),
              'Sao Paulo': (.06, 0), 'Buenos Aires': (-.06, -.02), 'Cairo': (-.06, .03), 'Istanbul': (-.06, .04), 'Johannesburg': (.06, 0),
@@ -120,7 +125,7 @@ def city_map(main):
             continue
         r = int(rank[c]); in_eu = EU[0] < lon < EU[1] and EU[2] < lat < EU[3]
         hot = c in top10
-        axW.scatter(lon, lat, s=24 if hot else 11, color=SERIES[0] if hot else '#6e6d68', ec='white', lw=.6, zorder=10)
+        axW.scatter(lon, lat, s=46 if r in MEDAL else 24 if hot else 11, color=MEDAL.get(r, SERIES[0] if hot else '#6e6d68'), ec='white', lw=.8, zorder=10)
         if in_eu:
             continue
         if hot:
@@ -129,10 +134,15 @@ def city_map(main):
         else:
             dx, dy = noffs.get(c, (.06, 0)); _label(axW, c, r, lon, lat, dx, dy, kx, ky, flagged=False, col=MUTED, text=str(r))
     axW.text(.008, .975, f'All {len(main)} cities', transform=axW.transAxes, va='top', fontsize=10, weight='bold', color=INK)
-    axW.scatter([.012], [.885], transform=axW.transAxes, s=24, color=SERIES[0], ec='white', lw=.6, clip_on=False)
-    axW.text(.03, .885, 'top 10: name and rank', transform=axW.transAxes, va='center', fontsize=9, color=INK)
-    axW.scatter([.012], [.815], transform=axW.transAxes, s=11, color='#6e6d68', ec='white', lw=.6, clip_on=False)
-    axW.text(.03, .815, f'ranks 11-{len(main)}: rank only, names below', transform=axW.transAxes, va='center', fontsize=9, color=INK)
+    lx, ly = .012, .40
+    for k, col in enumerate(MEDAL.values()):
+        axW.scatter([lx + k * .022], [ly], transform=axW.transAxes, s=40, color=col, ec='white', lw=.8, clip_on=False, zorder=12)
+    axW.text(lx + .066, ly, 'top 3: gold, silver, bronze', transform=axW.transAxes, va='center', fontsize=9, color=INK)
+    axW.scatter([lx], [ly - .07], transform=axW.transAxes, s=24, color=SERIES[0], ec='white', lw=.6, clip_on=False)
+    axW.text(lx + .02, ly - .07, 'ranks 4-10: name and rank', transform=axW.transAxes, va='center', fontsize=9, color=INK)
+    axW.scatter([lx], [ly - .14], transform=axW.transAxes, s=11, color='#6e6d68', ec='white', lw=.6, clip_on=False)
+    axW.text(lx + .02, ly - .14, f'ranks 11-{len(main)}: rank only,', transform=axW.transAxes, va='center', fontsize=9, color=INK)
+    axW.text(lx + .02, ly - .21, 'names in the list below', transform=axW.transAxes, va='center', fontsize=9, color=INK)
     # Europe inset
     axE = fig.add_axes([0, 0, .38, .465]); ex0, ex1, ey0, ey1 = EU
     _land(axE, shp, ex0, ex1, ey0, ey1)
@@ -140,15 +150,22 @@ def city_map(main):
     kx = (ex1 - ex0) / (pos.width * W); ky = (ey1 - ey0) / (pos.height * H)
     axE.text(.02, .975, 'Europe', transform=axE.transAxes, va='top', fontsize=10, weight='bold', color=INK)
     eoffs = {'London': (-.06, -.04), 'Amsterdam': (-.03, .07), 'Paris': (-.06, -.04), 'Zurich': (.09, -.1), 'Milan': (.09, -.1),
-             'Berlin': (.06, .03), 'Prague': (.06, -.02), 'Vienna': (.06, -.03), 'Warsaw': (.06, .0), 'Dublin': (.08, .1),
+             'Berlin': (.06, .03), 'Prague': (.06, -.02), 'Vienna': (.06, .0), 'Warsaw': (.06, .0), 'Dublin': (.08, .1),
              'Oslo': (-.06, .02), 'Stockholm': (.06, .0), 'Helsinki': (-.08, .1), 'Madrid': (.09, -.1),
-             'Copenhagen': (.08, .1), 'Luxembourg': (.08, -.08), 'Istanbul': (-.06, .02), 'Reykjavik': (.08, 0)}
+             'Copenhagen': (.08, .1), 'Luxembourg': (0, 0), 'Istanbul': (-.06, .02), 'Reykjavik': (.08, 0)}
     for c, (lat, lon) in COORDS.items():
         if c not in rank.index or not (ex0 < lon < ex1 and ey0 < lat < ey1):
             continue
         r = int(rank[c]); hot = c in top10
-        axE.scatter(lon, lat, s=24 if hot else 11, color=SERIES[0] if hot else '#6e6d68', ec='white', lw=.6, zorder=10)
+        axE.scatter(lon, lat, s=46 if r in MEDAL else 24 if hot else 11, color=MEDAL.get(r, SERIES[0] if hot else '#6e6d68'), ec='white', lw=.8, zorder=10)
         dx, dy = eoffs[c]
+        if c == 'Luxembourg':  # central Europe is crowded: label sits in the Bay of Biscay with a leader
+            lx, ly = -12.4, 43.3
+            axE.plot([lon, lx + 9.5], [lat, ly + .1 * ky], color=MUTED, lw=.6, zorder=9)
+            flag(axE, COUNTRY[c], lx, ly - .075 * ky, .22 * kx, .15 * ky)
+            axE.text(lx + .29 * kx, ly, f'{c} ({r})', ha='left', va='center', fontsize=9, color='white', weight='bold', zorder=11,
+                     bbox=dict(boxstyle='round,pad=.22,rounding_size=.35', fc=MEDAL[r], ec='none'))
+            continue
         _label(axE, c, r, lon, lat, dx, dy, kx, ky, flagged=hot, bold=r <= 3, col=INK if hot else MUTED, text=None if hot else str(r))
     # ranks 11-43 as a flagged list in three columns
     axL = fig.add_axes([.395, 0, .605, .465]); axL.set_xlim(0, .605 * W); axL.set_ylim(.465 * H, 0); axL.axis('off')
