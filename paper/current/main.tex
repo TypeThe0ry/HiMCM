@@ -1,21 +1,35 @@
 % HiMCM 2026 Problem A manuscript.
 % Provisional template control number; actual registration unverified. Shared class unchanged.
+\PassOptionsToPackage{table}{xcolor}
 \documentclass{mcmthesis}
 \mcmsetup{CTeX=false,tcn=18213,problem=A,sheet=true,titleinsheet=true,
 keywordsinsheet=true,titlepage=false,abstract=true}
 \usepackage{palatino,microtype,ragged2e,placeins,url,xurl,multicol}
+\definecolor{Ink}{HTML}{1B1B1B}\definecolor{Navy}{HTML}{184F95}\definecolor{Brick}{HTML}{B3261E}
+\definecolor{Mist}{HTML}{EEF3FA}\definecolor{Line}{HTML}{C5D0E0}\definecolor{Muted}{HTML}{52514E}
+\usepackage[font=small,labelfont={bf,sf,color=Navy},labelsep=period,skip=5pt]{caption}
 \setlength{\headheight}{16pt}\urlstyle{same}\emergencystretch=3em\hyphenpenalty=500
 \AtBeginDocument{\setlength{\parindent}{0pt}\setlength{\parskip}{0.5\baselineskip}}
 \setlength{\tabcolsep}{5pt}
 \widowpenalty=10000\clubpenalty=10000
 \setcounter{tocdepth}{2}
+% ---- visual system: one palette, sans headings, booktabs tables with light zebra rows
+\newcommand\hd[1]{{\sffamily\bfseries\color{Navy}#1}}          % table header cell
+\newcommand\zebra{\rowcolors{2}{Mist}{white}}                    % light alternate rows
+\newcommand\grouprow[2]{\multicolumn{#1}{@{}l@{}}{\cellcolor{Mist}\sffamily\bfseries\footnotesize\color{Navy}#2}}
+\captionsetup[table]{position=top,skip=4pt}
 \makeatletter
+\newcommand\secstyle[1]{\vbox{\sffamily\Large\bfseries\color{Navy}#1\nointerlineskip\vskip.45ex{\color{Line}\hrule height .7pt}}}
+\renewcommand\section{\@startsection{section}{1}{\z@}{-2.6ex \@plus -1ex \@minus -.2ex}{1.2ex \@plus .2ex}{\secstyle}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}{-1.8ex \@plus -.8ex \@minus -.2ex}{.6ex \@plus .2ex}{\sffamily\large\bfseries\color{Ink}}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}{-1.4ex \@plus -.6ex \@minus -.2ex}{.4ex}{\sffamily\normalsize\bfseries\color{Navy}}}
+\renewcommand\@seccntformat[1]{{\color{Brick}\csname the#1\endcsname}\hspace{.7em}}
 \renewcommand\tableofcontents{%
-\centerline{\rmfamily\Large\bfseries\contentsname%
+\centerline{\sffamily\Large\bfseries\color{Navy}\contentsname%
 \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
 \vskip 3ex\@starttoc{toc}}
 \renewcommand{\l@section}{\def\@pnumwidth{2.3em}\def\@tocrmarg{2.3em}%
-\bfseries\@dottedtocline{1}{1.5em}{2.3em}}
+\sffamily\bfseries\@dottedtocline{1}{1.5em}{2.3em}}
 \renewcommand{\l@subsection}{\normalfont\@dottedtocline{2}{3.0em}{3.2em}}
 \renewcommand{\@dotsep}{1}
 \makeatother
@@ -116,25 +130,26 @@ ordinary student's decision rather than an abstract city average.
 \end{enumerate}
 
 \section{Notation}
-\begin{tabular}{@{}p{.17\linewidth}p{.62\linewidth}p{.16\linewidth}@{}}
-\toprule Symbol & Meaning & Unit\\\midrule
-\multicolumn{3}{@{}l}{\textbf{Data}}\\
+{\small
+\begin{tabular}{@{}p{.15\linewidth}p{.52\linewidth}>{\raggedright\arraybackslash}p{.28\linewidth}@{}}
+\toprule \hd{Symbol} & \hd{Meaning} & \hd{Unit}\\\midrule
+\grouprow{3}{Data}\\
 $x,a$ & Observed indicator value and reference level & indicator unit\\
 $c,P,d$ & Count, population and density & count; people; per million or per 100,000\\
 $t,q$ & Travel duration and travel utility & minutes; $[0,1]$\\
-$u,u_{ij}$ & Utility for city $i$ and indicator $j$ & $[0,1]$\\\midrule
-\multicolumn{3}{@{}l}{\textbf{Weights}}\\
-$w_j$ & Weight of indicator $j$ & unitless\\\midrule
-\multicolumn{3}{@{}l}{\textbf{Scores}}\\
+$u,u_{ij}$ & Utility for city $i$ and indicator $j$ & $[0,1]$\\
+\grouprow{3}{Weights}\\
+$w_j$ & Weight of indicator $j$ & unitless\\
+\grouprow{3}{Scores}\\
 $D_i^+,D_i^-$ & Distances from the ideal and worst profiles & unitless\\
-$S_i$ & TOPSIS score for city $i$ & $[0,100]$\\\midrule
-\multicolumn{3}{@{}l}{\textbf{Uncertainty}}\\
+$S_i$ & TOPSIS score for city $i$ & $[0,100]$\\
+\grouprow{3}{Uncertainty}\\
 $\ell_{ij},h_{ij}$ & Lower and upper utility bounds & $[0,1]$\\
 $L_i,U_i$ & Lower and upper score bounds & $[0,100]$\\
 $R_i$ & Maximum regret for city $i$ & score points\\
 $\kappa$ & Concentration of the declared Dirichlet weights & unitless\\
 $r$ & Raw-value multiplier in a development scenario & unitless\\\bottomrule
-\end{tabular}
+\end{tabular}\par}
 
 \section{Indicator construction and city selection}
 \subsection{City selection}\label{sec:citychoice}
@@ -159,9 +174,9 @@ without original links in Section~\ref{sec:sourcepolicy}.
 
 \begin{table}[!htbp]\centering
 \caption{City profiles and evidence labels.}\label{tab:cityprofile}
-\begingroup\scriptsize\setlength{\tabcolsep}{3pt}
+\begingroup\footnotesize\setlength{\tabcolsep}{7pt}\zebra
 \begin{tabular}{@{}l l r r r r@{}}
-\toprule City & Country & Pop. (year) & Direct & Ranges & Proxies\\\midrule
+\toprule \hd{City} & \hd{Country} & \hd{Pop. (year)} & \hd{Direct} & \hd{Ranges} & \hd{Proxies}\\\midrule
 Vienna & Austria & 2,028,399 (2025) & 8 & 1 & 1\\
 Zurich & Switzerland & 440,935 (2025) & 6 & 3 & 1\\
 Helsinki & Finland & 694,392 (2025) & 7 & 2 & 1\\
@@ -178,19 +193,20 @@ Prague & Czechia & 1,407,084 (2025) & 7 & 3 & 0\\
 Warsaw & Poland & 1,863,800 (2024) & 7 & 2 & 1\\
 Singapore & Singapore & 6,036,900 (2024) & 7 & 3 & 0\\
 Tokyo & Japan & 9,983,365 (2026) & 7 & 2 & 1\\
-\midrule Total &  &  & 112 & 37 & 11\\
+\midrule \textbf{Total} &  &  & \textbf{112} & \textbf{37} & \textbf{11}\\
 \bottomrule\end{tabular}\endgroup
-\par\vspace{8pt}
+\par\vspace{10pt}
 \caption{The sixteen cities distribute across the dimensions the indicators measure.}\label{tab:cityset}
-\begin{tabular}{@{}p{.28\linewidth}p{.68\linewidth}@{}}
-\toprule Dimension & Span within the set\\\midrule
+\begingroup\small\zebra
+\begin{tabular}{@{}p{.2\linewidth}>{\raggedright\arraybackslash}p{.76\linewidth}@{}}
+\toprule \hd{Dimension} & \hd{Span within the set}\\\midrule
 Cost of living & Moderate: Warsaw, Prague, Madrid, Berlin; high: Zurich, Oslo, London, Singapore\\
 Climate & Northern: Oslo, Helsinki, Stockholm; continental: Berlin, Vienna, Warsaw, Prague; maritime: London, Dublin, Amsterdam; warm: Madrid, Milan, Singapore, Tokyo\\
 Scale & Mid-size: Zurich, Oslo, Helsinki, Dublin; large: Tokyo, London, Paris\\
 Mobility & Cycling/tram: Amsterdam, Berlin, Prague, Vienna; metro: Tokyo, Paris, London\\
 Safety & Low recorded homicide: Singapore, Tokyo, Oslo; higher rates elsewhere\\
 \bottomrule
-\end{tabular}
+\end{tabular}\endgroup
 \end{table}
 
 \subsection{Indicator system}\label{sec:indicators}
@@ -199,23 +215,23 @@ Table~\ref{tab:indicators} gives their units, preferred directions and anchors. 
 
 \begin{table}[!htbp]\centering
 \caption{Indicator definitions and utility anchors.}\label{tab:indicators}
-\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.18\linewidth}>{\raggedright\arraybackslash}p{.27\linewidth}>{\raggedright\arraybackslash}p{.18\linewidth}>{\raggedright\arraybackslash}p{.13\linewidth}>{\raggedright\arraybackslash}p{.16\linewidth}@{}}
-\toprule Category & Indicator & Unit & Better when & Anchor $a$\\\midrule
-Safety and environment & Homicide rate & Deaths per 100,000 & Lower & 2 per 100,000\\
- & PM$_{2.5}$ concentration & $\mu$g/m$^3$ & Lower & 15 $\mu$g/m$^3$\\\midrule
-Cost of living & Living-cost index & Index points & Lower & 100 points\\
- & Housing price-to-income ratio & Ratio & Lower & 10\\\midrule
-Education & Upper-secondary pupils per teacher & Pupils per teacher FTE & Lower & 15 pupils/FTE\\
- & Higher-education institutions & Institutions per million & Higher & 10 per million\\\midrule
-Mobility & Mean travel/commute time & Minutes & Lower & 30-minute decay scale\\
- & Public-transport stops & Stops per 100,000 & Higher & 50 per 100,000\\\midrule
-Daily life & Fixed broadband speed & Mbps & Higher & 100 Mbps\\
- & Public swimming pools & Venues per 100,000 & Higher & 1 per 100,000\\
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.17\linewidth}>{\raggedright\arraybackslash}p{.29\linewidth}>{\raggedright\arraybackslash}p{.19\linewidth}>{\raggedright\arraybackslash}p{.11\linewidth}>{\raggedright\arraybackslash}p{.17\linewidth}@{}}
+\toprule \hd{Category} & \hd{Indicator} & \hd{Unit} & \hd{Better when} & \hd{Anchor $a$}\\\midrule
+\rowcolor{Mist}\textbf{Safety and environment} & Homicide rate & Deaths per 100,000 & Lower & 2 per 100,000\\
+\rowcolor{Mist} & PM$_{2.5}$ concentration & $\mu$g/m$^3$ & Lower & 15 $\mu$g/m$^3$\\
+\textbf{Cost of living} & Living-cost index & Index points & Lower & 100 points\\
+ & Housing price-to-income ratio & Ratio & Lower & 10\\
+\rowcolor{Mist}\textbf{Education} & Upper-secondary pupils per teacher & Pupils per teacher FTE & Lower & 15 pupils/FTE\\
+\rowcolor{Mist} & Higher-education institutions & Institutions per million & Higher & 10 per million\\
+\textbf{Mobility} & Mean travel/commute time & Minutes & Lower & 30-minute decay scale\\
+ & Public-transport stops & Stops per 100,000 & Higher & 50 per 100,000\\
+\rowcolor{Mist}\textbf{Daily life} & Fixed broadband speed & Mbps & Higher & 100 Mbps\\
+\rowcolor{Mist} & Public swimming pools & Venues per 100,000 & Higher & 1 per 100,000\\
 \bottomrule
 \end{tabular}\endgroup
 \par\smallskip
-\emph{Data treatment.} City records are used where available; proxy fills are labelled. Survey travel means and incomplete provider counts create utility ranges, and the Zurich homicide value is recalculated from official records. Detailed source years and boundary rules appear below.
+{\footnotesize\emph{Data treatment.} City records are used where available; proxy fills are labelled. Survey travel means and incomplete provider counts create utility ranges, and the Zurich homicide value is recalculated from official records. Detailed source years and boundary rules appear below.\par}
 \end{table}
 
 We reward larger values for benefit indicators using
@@ -271,16 +287,6 @@ lowest pupil-teacher proxy ratio, 9.6 pupils per teacher, and utility 0.61.
 Figure~\ref{fig:raw} shows the raw values, including Zurich's higher-education
 supply of 52 institutions per million.
 
-\begin{figure}[!htbp]\centering
-\includegraphics[width=\linewidth]{figures/raw_compare.pdf}
-\caption{Raw values for the six indicators with complete city records, ordered from best to worst within each indicator. The best three cities are green and the worst three red; flags identify countries. Homicides are shown per 100,000: Zurich is 0.34 and Amsterdam is 1.44, while the highest three are Berlin (2.10), Stockholm (2.52) and Vienna (3.91). Higher-education supply is institutions per million.}\label{fig:raw}
-\end{figure}
-
-\begin{figure}[!htbp]\centering
-\includegraphics[width=\linewidth]{figures/indicator_compare.pdf}
-\caption{Indicator utilities for the sixteen cities, ordered by final score and grouped by category. Colour is utility from 0 (worst) to 1 (best). Flags mark countries.}\label{fig:indicator-compare}
-\end{figure}
-
 The raw-value figure keeps each indicator in its original unit and ranks cities
 separately, so it shows the observed spread and the best and worst city for each
 measure. The heat map applies the common 0--1 utility scale to the same cities
@@ -319,11 +325,21 @@ and Warsaw 27 minutes \cite{warsaw2022}.
 Our matrix contains 160 entries: 123 single values, including proxies, and
 37 utility ranges. Zurich's homicide recalculation is separate from the 11 proxies.
 
+\begin{figure}[!htbp]\centering
+\includegraphics[width=\linewidth]{figures/raw_compare.pdf}
+\caption{Raw values for the six indicators with complete city records, ordered from best to worst within each indicator. The best three cities are green and the worst three red; flags identify countries. Homicides are shown per 100,000: Zurich is 0.34 and Amsterdam is 1.44, while the highest three are Berlin (2.10), Stockholm (2.52) and Vienna (3.91). Higher-education supply is institutions per million.}\label{fig:raw}
+\end{figure}
+
+\begin{figure}[!htbp]\centering
+\includegraphics[width=\linewidth]{figures/indicator_compare.pdf}
+\caption{Indicator utilities for the sixteen cities, ordered by final score and grouped by category. Colour is utility from 0 (worst) to 1 (best). Flags mark countries.}\label{fig:indicator-compare}
+\end{figure}
+
 \begin{table}[!htbp]\centering
 \caption{Sources and years by indicator.}\label{tab:sources}
-\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
-\begin{tabular}{@{}p{.18\linewidth}p{.42\linewidth}p{.13\linewidth}p{.21\linewidth}@{}}
-\toprule Indicator & Main sources & Year(s) & Short note \\\midrule
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\zebra
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.17\linewidth}>{\raggedright\arraybackslash}p{.45\linewidth}>{\raggedright\arraybackslash}p{.12\linewidth}>{\raggedright\arraybackslash}p{.2\linewidth}@{}}
+\toprule \hd{Indicator} & \hd{Main sources} & \hd{Year(s)} & \hd{Short note} \\\midrule
 Homicide rate & Team table; Zurich police statistics \cite{teamtable,zhpks2025}; CBS recount for Amsterdam \cite{cbshomicide2022} & 2018--2025 & City rates recalculated \\
 PM$_{2.5}$ & Team table & 2021--2025 & Monitoring scopes retained \\
 Living-cost index & Team table \cite{teamtable} & 2025--2026 & Source year retained \\
@@ -338,8 +354,6 @@ Public swimming pools & Team table; municipal and operator inventories, represen
 \end{tabular}\endgroup
 \end{table}
 
-
-\FloatBarrier
 \section{Establishing the baseline evaluation model}
 We now apply the ranking steps introduced in Figure~\ref{fig:workflow}.
 \subsection{Determining indicator weights (AHP)}
@@ -355,15 +369,16 @@ broadband and pools. Table~\ref{tab:ahp-categories} uses Saaty's 1--9 scale:
 \begin{table}[!htbp]\centering
 \caption{Pairwise category comparisons from our student viewpoint. S: safety and
 environment; C: cost of living; E: education; M: mobility; D: daily life.}\label{tab:ahp-categories}
+\begingroup\zebra\setlength{\tabcolsep}{9pt}
 \begin{tabular}{lccccc}
-\toprule Category & S & C & E & M & D\\\midrule
+\toprule \hd{Category} & \hd{S} & \hd{C} & \hd{E} & \hd{M} & \hd{D}\\\midrule
 Safety and environment & 1 & 3 & 1 & 3 & 4\\
 Cost of living & $1/3$ & 1 & $1/3$ & 1 & 2\\
 Education & 1 & 3 & 1 & 3 & 4\\
 Mobility & $1/3$ & 1 & $1/3$ & 1 & 2\\
 Daily life & $1/4$ & $1/2$ & $1/4$ & $1/2$ & 1\\
 \bottomrule
-\end{tabular}
+\end{tabular}\endgroup
 \end{table}
 
 \textbf{Step 3: Calculate category weights and check consistency.}
@@ -448,9 +463,9 @@ ranks 1--3, 7--9 and 14--16 as examples from each tier.
 \begin{table}[!htbp]\centering
 \caption{Representative scores under AHP weights, using the midpoint of each utility range.}
 \label{tab:baseline}
-\begingroup\setlength{\tabcolsep}{3pt}
+\begingroup\small\setlength{\tabcolsep}{5pt}\zebra
 \begin{tabular}{rlrl@{\qquad}rlrl}\toprule
-Rank & City & Score & Tier & Rank & City & Score & Tier\\\midrule
+\hd{Rank} & \hd{City} & \hd{Score} & \hd{Tier} & \hd{Rank} & \hd{City} & \hd{Score} & \hd{Tier}\\\midrule
 \textbf{1} & \textbf{Zurich} & \textbf{65.2} & \textbf{Top} & 9 & Oslo & 57.6 & Middle\\
 \textbf{2} & \textbf{Madrid} & \textbf{63.3} & \textbf{Top} & 10 & London & 56.1 & Bottom\\
 \textbf{3} & \textbf{Singapore} & \textbf{62.5} & \textbf{Top} & 11 & Amsterdam & 56.0 & Bottom\\
@@ -524,12 +539,12 @@ Each profile changes a small, visible set of category judgements from Table~\ref
 
 \begin{table}[!htbp]\centering
 \caption{Family-profile judgements that differ from baseline, resulting category weights and top three cities. Pair labels use S, C, E, M and D from Table~\ref{tab:ahp-categories}.}\label{tab:profiles}
-\begingroup\scriptsize\setlength{\tabcolsep}{2.5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.15\linewidth}>{\raggedright\arraybackslash}p{.36\linewidth}>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedright\arraybackslash}p{.22\linewidth}@{}}\toprule
-Profile & Changed judgements & Weights; $CR$ & Top three\\\midrule
-Safety-first & S:C=5, S:E=3, S:M=5, S:D=7, E:M=1, E:D=2 & .537/.127/.141/.127/.068; .0072 & Zurich 68.0; Madrid 65.8; Singapore 65.6\\
-Budget-first & S:C=.5, S:M=2, S:D=3, C:E=2, C:M=3, C:D=5, E:M=2, E:D=3 & .212/.387/.212/.119/.069; .0039 & Madrid 60.1; Zurich 59.2; Dublin 59.0\\
-Independent-mobility & S:C=1, S:M=.5, S:D=2, C:M=.5, E:M=.5, E:D=2, M:D=4 & .182/.182/.182/.364/.091; 0.000 & Zurich 64.3; Madrid 62.2; Oslo 61.3\\
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\zebra
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.14\linewidth}>{\raggedright\arraybackslash}p{.28\linewidth}>{\raggedright\arraybackslash}p{.24\linewidth}>{\raggedleft\arraybackslash}p{.06\linewidth}>{\raggedright\arraybackslash}p{.2\linewidth}@{}}\toprule
+\hd{Profile} & \hd{Changed judgements} & \hd{Weights S/C/E/M/D} & \hd{$CR$} & \hd{Top three}\\\midrule
+Safety-first & S:C=5, S:E=3, S:M=5, S:D=7, E:M=1, E:D=2 & .537/.127/.141/.127/.068 & .0072 & Zurich 68.0; Madrid 65.8; Singapore 65.6\\
+Budget-first & S:C=.5, S:M=2, S:D=3, C:E=2, C:M=3, C:D=5, E:M=2, E:D=3 & .212/.387/.212/.119/.069 & .0039 & Madrid 60.1; Zurich 59.2; Dublin 59.0\\
+Independent-mobility & S:C=1, S:M=.5, S:D=2, C:M=.5, E:M=.5, E:D=2, M:D=4 & .182/.182/.182/.364/.091 & 0.000 & Zurich 64.3; Madrid 62.2; Oslo 61.3\\
 \bottomrule\end{tabular}\endgroup
 \end{table}
 
@@ -555,22 +570,23 @@ We also replace selected point cells with utility range $[0,1]$. Table~\ref{tab:
 \begin{table}[!htbp]\centering
 \caption{First city after withdrawing dated or flagged point cells.}
 \label{tab:vintage}
+\begingroup\small\zebra\setlength{\tabcolsep}{8pt}
 \begin{tabular}{l r l l}\toprule
-Withdrawn group & Cells & First (AHP) & First (equal weights)\\\midrule
+\hd{Withdrawn group} & \hd{Cells} & \hd{First (AHP)} & \hd{First (equal weights)}\\\midrule
 Before 2020 & 13 & Zurich & Zurich\\
 After 2025 & 64 & Zurich & Zurich\\
 Flagged entries & 28 & Milan & Zurich\\
 Union of the three groups & 95 & Milan & Milan\\
 \bottomrule
-\end{tabular}\end{table}
+\end{tabular}\endgroup\end{table}
 
 Zurich leads under AHP and equal weights in the baseline, and under AHP in all 31 source-variant checks (Table~\ref{tab:variants}). These checks change counting rules and sources; the withdrawal tests above replace larger groups of cells.
 
 \begin{table}[!htbp]\centering
 \caption{The 31 source-variant cases in nine groups, including the before-update and current comparison cases.}\label{tab:variants}
-\begingroup\scriptsize\setlength{\tabcolsep}{2.5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.22\linewidth}r>{\raggedright\arraybackslash}p{.57\linewidth}l@{}}
-\toprule Group & Cases & What changes & First city\\\midrule
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\zebra
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedleft\arraybackslash}p{.07\linewidth}>{\raggedright\arraybackslash}p{.48\linewidth}>{\raggedright\arraybackslash}p{.1\linewidth}@{}}
+\toprule \hd{Group} & \hd{Cases} & \hd{What changes} & \hd{First city}\\\midrule
 Before-update baseline & 1 & Pre-refinement baseline & Zurich\\
 Current comparison & 1 & Current source refinements & Zurich\\
 Prague bus inventory & 2 & Withdraw refinement; omit request-stop witnesses & Zurich\\
@@ -580,7 +596,7 @@ Singapore pools & 5 & Withdraw OCBC, directory or supplements; omit notice venue
 Zurich pools & 1 & Withdraw refinement & Zurich\\
 Metro inventories & 4 & Withdraw Tokyo, Warsaw, both or Amsterdam mapped inventory & Zurich\\
 Travel & 1 & Withdraw Singapore school-stage proxy & Zurich\\\midrule
-Total & 31 & & Zurich\\\bottomrule
+\textbf{Total} & \textbf{31} & & \textbf{Zurich}\\\bottomrule
 \end{tabular}\endgroup
 \end{table}
 
@@ -594,6 +610,12 @@ Our priorities are judgments, and the AHP matrix makes them visible. Anyone can 
 
 \section{Extension: looking ahead to 2035}
 \subsection{Stress tests for 2035}
+\begin{figure}[!htbp]\centering
+\includegraphics[width=5.4in]{figures/future_2035.pdf}
+\caption{Top six cities under the 2035 stress tests. Bars show representative
+scores; numbers give changes from today, and boxes mark changed ranks.}
+\label{fig:future}
+\end{figure}
 The 2035 cases are structured stress tests, not forecasts. We apply the same
 changes to every city while keeping the formulas, anchors and priorities fixed.
 S1 adds 10\% to higher-education institutions, transit stops and pools; S2
@@ -607,12 +629,6 @@ fall by 0.4--0.5 in S2 and rise by 1.0--1.1 in S3. These results show how the
 recommendation responds to common changes in services, prices and conditions;
 they do not estimate what any one city will achieve by 2035.
 
-\begin{figure}[!htbp]\centering
-\includegraphics[width=5.4in]{figures/future_2035.pdf}
-\caption{Top six cities under the 2035 stress tests. Bars show representative
-scores; numbers give changes from today, and boxes mark changed ranks.}
-\label{fig:future}
-\end{figure}
 
 \FloatBarrier
 \section{Strengths and weaknesses}
@@ -659,17 +675,36 @@ for one student's actual life.
 
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
-{\small
-\definecolor{NewsRed}{HTML}{B3261E}\definecolor{NewsInk}{HTML}{1E1E1E}\definecolor{NewsPaper}{HTML}{F7F4EE}
-\noindent{\color{NewsRed}\rule{\linewidth}{3pt}}\\[-2pt]
-\noindent{\sffamily\bfseries\large\color{NewsInk}THE BEST CITY FOR A HIGH SCHOOLER}\hfill{\sffamily\small\color{NewsRed}NOV 2026}\\[-6pt]
-\noindent{\color{NewsInk}\rule{\linewidth}{0.6pt}}\par\medskip
-{\fontsize{19}{22}\selectfont\bfseries\noindent Zurich leads, but Madrid makes a strong case on cost\par}\medskip
-{\itshape\noindent A sixteen-city comparison finds a strong all-round choice in Zurich,
-a lower-cost challenger in Madrid and a disciplined third option in Singapore.\par}\medskip
-\centerline{\includegraphics[width=4.2in]{figures/news_podium.pdf}}\par\vspace{-2pt}
+\begingroup\small
+\definecolor{NewsRed}{HTML}{B3261E}\definecolor{NewsPaper}{HTML}{F5F1EA}
+\setlength{\parskip}{0pt}\setlength{\columnsep}{18pt}\setlength{\columnseprule}{0.3pt}\renewcommand{\columnseprulecolor}{\color{Line}}
+\setlength{\multicolsep}{2pt}
+\newcommand\kicker[1]{\par\vspace{4pt}{\sffamily\bfseries\color{NewsRed}\MakeUppercase{#1}}\par\nobreak\vspace{2pt}}
+\newcommand\newsphoto[3]{\begin{minipage}[t]{.3215\linewidth}\raggedright\setlength{\parskip}{0pt}
+\includegraphics[width=\linewidth,trim=0 115 0 115,clip]{figures/#1}\par\nointerlineskip\vspace{-17pt}%
+\noindent\hspace*{5pt}\colorbox{NewsRed}{\strut\sffamily\bfseries\footnotesize\color{white}\MakeUppercase{#2}}\par\vspace{3pt}
+{\fontsize{6.3}{7.5}\selectfont\color{Muted}Photo: #3\par}\end{minipage}}
+% masthead
+\noindent{\color{NewsRed}\rule{\linewidth}{4pt}}\par\nointerlineskip\vspace{3pt}
+\noindent{\sffamily\bfseries\large THE BEST CITY FOR A HIGH SCHOOLER}\hfill{\sffamily\footnotesize\color{NewsRed}SPECIAL REPORT\quad\textcolor{Muted}{$\cdot$}\quad NOV 2026}\par\vspace{2pt}
+\noindent{\color{Ink}\rule{\linewidth}{0.5pt}}\par\vspace{9pt}
+{\fontsize{25}{27}\selectfont\bfseries\noindent Zurich leads, but Madrid makes a strong case on cost\par}\vspace{6pt}
+{\fontsize{10.5}{12.5}\selectfont\itshape\color{Muted}\noindent A sixteen-city comparison finds a strong all-round choice in Zurich,
+a lower-cost challenger in Madrid and a disciplined third option in Singapore.\par}\vspace{6pt}
+% hero photo strip
+\noindent\newsphoto{news_zurich.jpg}{Zurich}{JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons}\hfill
+\newsphoto{news_madrid.jpg}{Madrid}{Diego Delso, CC BY-SA 4.0, Wikimedia Commons}\hfill
+\newsphoto{news_singapore.jpg}{Singapore}{Diego Delso, CC BY-SA 4.0, Wikimedia Commons}\par\vspace{4pt}
+\noindent{\color{Line}\rule{\linewidth}{0.4pt}}\par\vspace{1pt}
 \begin{multicols}{2}
-\setlength{\parskip}{3pt}
+\setlength{\parskip}{2.5pt}
+\noindent\includegraphics[width=\columnwidth]{figures/news_podium.pdf}\par\vspace{3pt}
+\begin{figure*}[t]
+\noindent{\color{NewsRed}\rule{\linewidth}{1.2pt}}\par\vspace{3pt}
+{\sffamily\bfseries\color{NewsRed}\noindent AT A GLANCE}\quad{\sffamily\footnotesize\color{Muted}How the top three compare on the five everyday categories (0 = worst city, 1 = best)}\par\smallskip
+\centerline{\includegraphics[width=5.6in]{figures/news_glance.pdf}}\par\vspace{1pt}
+\noindent{\color{Line}\rule{\linewidth}{0.4pt}}\vspace{-6pt}
+\end{figure*}
 Choosing a city for high school means choosing much more than a skyline. A
 student needs a safe trip to school, reliable transport, a school with enough
 teachers, manageable housing and food costs, and places to spend an afternoon.
@@ -677,7 +712,7 @@ Our comparison of sixteen cities puts Zurich first, Madrid second and Singapore
 third. Zurich scores 65.2, Madrid 63.3 and Singapore 62.5. The gap between the
 first two is 1.8 points, close enough that a family's budget and priorities can
 change the order.
-\par\smallskip{\sffamily\bfseries\color{NewsRed}\MakeUppercase{The shortlist}}\par\nobreak\smallskip
+\kicker{The shortlist}
 Zurich is the best all-round match in our comparison. It combines strong safety,
 school resources, transport and daily facilities, although living there costs
 more. Madrid is the practical challenger. Its lower living costs help it stay
@@ -686,9 +721,11 @@ as much as it does in the main comparison. Singapore is third in the full
 ranking. It performs well on safety and daily facilities, but its housing
 price-to-income ratio exceeds the basic affordability limit used in our second
 check.
-
-\medskip\noindent\colorbox{NewsPaper}{\parbox{\dimexpr\columnwidth-2\fboxsep}{\centering\itshape ``Zurich offers a balanced school week. Madrid offers more room in the household budget.''\par}}\medskip
-\par\smallskip{\sffamily\bfseries\color{NewsRed}\MakeUppercase{A day in the life}}\par\nobreak\smallskip
+\par\vspace{5pt}
+\noindent{\color{NewsRed}\rule{\columnwidth}{0.8pt}}\par\vspace{3pt}
+{\centering\itshape\fontsize{11}{13.5}\selectfont\color{Ink}``Zurich offers a balanced school week. Madrid offers more room in the household budget.''\par}\vspace{3pt}
+\noindent{\color{NewsRed}\rule{\columnwidth}{0.8pt}}\par\vspace{2pt}
+\kicker{A day in the life}
 In Zurich, a student can plan a school day around short, dependable trips,
 strong broadband and many nearby services. The city's safety and school
 measures lift its score across several parts of the comparison. The trade-off
@@ -708,13 +745,7 @@ and useful everyday facilities. The city remains third because affordability
 puts pressure on the family decision. A Singapore shortlist should therefore
 begin with a real housing search and a check of school fees, not just the city's
 headline strengths.
-\end{multicols}
-\vfill\pagebreak
-{\sffamily\bfseries\color{NewsRed}\noindent AT A GLANCE}\quad{\sffamily\small How the top three compare on the five everyday categories (0 = worst city, 1 = best)}\par\smallskip
-\centerline{\includegraphics[width=5.6in]{figures/news_glance.pdf}}\par\smallskip
-\begin{multicols}{2}
-\setlength{\parskip}{3pt}
-\par\smallskip{\sffamily\bfseries\color{NewsRed}\MakeUppercase{How we built the ranking}}\par\nobreak\smallskip
+\kicker{How we built the ranking}
 We began with ten facts that can be compared across the cities. They cover
 safety and air quality, living costs, education, travel, public transport,
 broadband and swimming pools. We converted each fact to a common 0-to-1 scale,
@@ -729,8 +760,7 @@ weighted balance: a city scores well when it is close to the best observed
 conditions across many measures, not just one exceptional result. We also
 applied minimum standards for safety, air quality and housing before presenting
 the feasible shortlist.
-
-\par\smallskip{\sffamily\bfseries\color{NewsRed}\MakeUppercase{What could change the answer}}\par\nobreak\smallskip
+\kicker{What could change the answer}
 The ranking is designed to show where a decision is stable and where a family
 should look closer. Zurich stays first through all 31 alternative source and
 counting choices. It also leads in 93.4\% of the controlled priority draws at
@@ -747,11 +777,19 @@ average with the details of the address and school they are considering.
 
 Next, check admission rules, price the home and school fees, and trace the real school route. The right city is the one whose school day fits the student and whose budget the family can sustain.
 \end{multicols}
-\noindent{\sffamily\bfseries\color{NewsRed}ADVICE FOR FAMILIES BY PRIORITY}\par\smallskip
-\noindent\begin{minipage}[t]{.32\linewidth}\colorbox{NewsPaper}{\parbox{\dimexpr\linewidth-2\fboxsep}{\sffamily\bfseries Safety first\par\normalfont\rmfamily\small\raggedright Start with Zurich, then Madrid and Singapore.}}\end{minipage}\hfill
-\begin{minipage}[t]{.32\linewidth}\colorbox{NewsPaper}{\parbox{\dimexpr\linewidth-2\fboxsep}{\sffamily\bfseries Budget first\par\normalfont\rmfamily\small\raggedright Start with Madrid, then Zurich and Dublin.}}\end{minipage}\hfill
-\begin{minipage}[t]{.32\linewidth}\colorbox{NewsPaper}{\parbox{\dimexpr\linewidth-2\fboxsep}{\sffamily\bfseries Getting around first\par\normalfont\rmfamily\small\raggedright Start with Zurich, then Madrid and Oslo.}}\end{minipage}\par\smallskip
-}
+\vspace{6pt}
+\newlength\advw\setlength\advw{\dimexpr(\linewidth-119.5pt)/3\relax}\setlength{\tabcolsep}{0pt}
+\newcommand\card[2]{\rule{0pt}{2.6ex}{\sffamily\bfseries #1}\par\vspace{2pt}#2\rule[-1.4ex]{0pt}{0pt}}
+\noindent\begin{tabular}{@{}>{\columncolor{NewsRed}[0pt][4pt]\raggedright\arraybackslash}m{54pt}@{\hspace{12pt}}%
+>{\columncolor{NewsRed}[0pt][0pt]}m{2.5pt}@{\hspace{5pt}}>{\columncolor{NewsPaper}[5pt][5pt]\raggedright\arraybackslash}m{\advw}@{\hspace{13pt}}%
+>{\columncolor{NewsRed}[0pt][0pt]}m{2.5pt}@{\hspace{5pt}}>{\columncolor{NewsPaper}[5pt][5pt]\raggedright\arraybackslash}m{\advw}@{\hspace{13pt}}%
+>{\columncolor{NewsRed}[0pt][0pt]}m{2.5pt}@{\hspace{5pt}}>{\columncolor{NewsPaper}[5pt][5pt]\raggedright\arraybackslash}m{\advw}@{\hspace{5pt}}}
+{\sffamily\bfseries\color{white}Advice for families, by priority} &
+ & \card{Safety first}{Start with Zurich, then Madrid and Singapore.} &
+ & \card{Budget first}{Start with Madrid, then Zurich and Dublin.} &
+ & \card{Getting around first}{Start with Zurich, then Madrid and Oslo.}\\
+\end{tabular}\par
+\endgroup
 \label{news-end}
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{References}
