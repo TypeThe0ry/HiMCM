@@ -3,7 +3,7 @@
 \documentclass{mcmthesis}
 \mcmsetup{CTeX=false,tcn=18213,problem=A,sheet=true,titleinsheet=true,
 keywordsinsheet=true,titlepage=false,abstract=true}
-\usepackage{palatino,microtype,ragged2e,placeins,url,xurl}
+\usepackage{palatino,microtype,ragged2e,placeins,url,xurl,multicol}
 \setlength{\headheight}{16pt}\urlstyle{same}\emergencystretch=3em\hyphenpenalty=500
 \AtBeginDocument{\setlength{\parindent}{0pt}\setlength{\parskip}{0.5\baselineskip}}
 \setlength{\tabcolsep}{5pt}
@@ -659,10 +659,17 @@ for one student's actual life.
 
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{News article}\label{news-start}
-\section*{Zurich leads, but Madrid makes a strong case on cost}
-\textit{A sixteen-city comparison finds a strong all-round choice in Zurich,
-a lower-cost challenger in Madrid and a disciplined third option in Singapore.}
-
+{\small
+\definecolor{NewsRed}{HTML}{B3261E}\definecolor{NewsInk}{HTML}{1E1E1E}\definecolor{NewsPaper}{HTML}{F7F4EE}
+\noindent{\color{NewsRed}\rule{\linewidth}{3pt}}\\[-2pt]
+\noindent{\sffamily\bfseries\large\color{NewsInk}THE BEST CITY FOR A HIGH SCHOOLER}\hfill{\sffamily\small\color{NewsRed}NOV 2026}\\[-6pt]
+\noindent{\color{NewsInk}\rule{\linewidth}{0.6pt}}\par\medskip
+{\fontsize{19}{22}\selectfont\bfseries\noindent Zurich leads, but Madrid makes a strong case on cost\par}\medskip
+{\itshape\noindent A sixteen-city comparison finds a strong all-round choice in Zurich,
+a lower-cost challenger in Madrid and a disciplined third option in Singapore.\par}\medskip
+\centerline{\includegraphics[width=4.2in]{figures/news_podium.pdf}}\par\vspace{-2pt}
+\begin{multicols}{2}
+\setlength{\parskip}{3pt}
 Choosing a city for high school means choosing much more than a skyline. A
 student needs a safe trip to school, reliable transport, a school with enough
 teachers, manageable housing and food costs, and places to spend an afternoon.
@@ -670,8 +677,7 @@ Our comparison of sixteen cities puts Zurich first, Madrid second and Singapore
 third. Zurich scores 65.2, Madrid 63.3 and Singapore 62.5. The gap between the
 first two is 1.8 points, close enough that a family's budget and priorities can
 change the order.
-
-\subsection*{The shortlist}
+\par\smallskip{\sffamily\bfseries\color{NewsRed}\MakeUppercase{The shortlist}}\par\nobreak\smallskip
 Zurich is the best all-round match in our comparison. It combines strong safety,
 school resources, transport and daily facilities, although living there costs
 more. Madrid is the practical challenger. Its lower living costs help it stay
@@ -681,13 +687,8 @@ ranking. It performs well on safety and daily facilities, but its housing
 price-to-income ratio exceeds the basic affordability limit used in our second
 check.
 
-The shortlist has a useful message for families: the top three are close in
-several everyday measures, but they solve different problems. Zurich offers a
-balanced school week. Madrid offers more room in the household budget.
-Singapore offers a compact, well-connected setting whose housing bill deserves
-careful attention.
-
-\subsection*{A day in the life}
+\medskip\noindent\colorbox{NewsPaper}{\parbox{\dimexpr\columnwidth-2\fboxsep}{\centering\itshape ``Zurich offers a balanced school week. Madrid offers more room in the household budget.''\par}}\medskip
+\par\smallskip{\sffamily\bfseries\color{NewsRed}\MakeUppercase{A day in the life}}\par\nobreak\smallskip
 In Zurich, a student can plan a school day around short, dependable trips,
 strong broadband and many nearby services. The city's safety and school
 measures lift its score across several parts of the comparison. The trade-off
@@ -707,8 +708,13 @@ and useful everyday facilities. The city remains third because affordability
 puts pressure on the family decision. A Singapore shortlist should therefore
 begin with a real housing search and a check of school fees, not just the city's
 headline strengths.
-
-\subsection*{How we built the ranking}
+\end{multicols}
+\vfill\pagebreak
+{\sffamily\bfseries\color{NewsRed}\noindent AT A GLANCE}\quad{\sffamily\small How the top three compare on the five everyday categories (0 = worst city, 1 = best)}\par\smallskip
+\centerline{\includegraphics[width=5.6in]{figures/news_glance.pdf}}\par\smallskip
+\begin{multicols}{2}
+\setlength{\parskip}{3pt}
+\par\smallskip{\sffamily\bfseries\color{NewsRed}\MakeUppercase{How we built the ranking}}\par\nobreak\smallskip
 We began with ten facts that can be compared across the cities. They cover
 safety and air quality, living costs, education, travel, public transport,
 broadband and swimming pools. We converted each fact to a common 0-to-1 scale,
@@ -724,7 +730,7 @@ conditions across many measures, not just one exceptional result. We also
 applied minimum standards for safety, air quality and housing before presenting
 the feasible shortlist.
 
-\subsection*{What could change the answer}
+\par\smallskip{\sffamily\bfseries\color{NewsRed}\MakeUppercase{What could change the answer}}\par\nobreak\smallskip
 The ranking is designed to show where a decision is stable and where a family
 should look closer. Zurich stays first through all 31 alternative source and
 counting choices. It also leads in 93.4\% of the controlled priority draws at
@@ -739,23 +745,18 @@ about the ranking, not a promise about the future. A city average can also miss
 a particular neighbourhood, school or route. Families should replace the
 average with the details of the address and school they are considering.
 
-\subsection*{Advice for families by priority}
-A safety-first family should begin with Zurich, then Madrid and Singapore. A
-budget-first family should begin with Madrid, followed by Zurich and Dublin.
-A mobility-first family should begin with Zurich, followed by Madrid and Oslo.
-The third choice changes because each family is asking a different question;
-the top two remain the same in these profiles.
-
-The next step is practical. Check admission rules and language, price the home
-and school fees, trace the student's route at the times it will actually be
-used, and ask whether clubs and friends are reachable without an adult. This
-comparison identifies where to start. The final city should be the one whose
-school day fits the student and whose budget the family can sustain.
+Next, check admission rules, price the home and school fees, and trace the real school route. The right city is the one whose school day fits the student and whose budget the family can sustain.
+\end{multicols}
+\noindent{\sffamily\bfseries\color{NewsRed}ADVICE FOR FAMILIES BY PRIORITY}\par\smallskip
+\noindent\begin{minipage}[t]{.32\linewidth}\colorbox{NewsPaper}{\parbox{\dimexpr\linewidth-2\fboxsep}{\sffamily\bfseries Safety first\par\normalfont\rmfamily\small\raggedright Start with Zurich, then Madrid and Singapore.}}\end{minipage}\hfill
+\begin{minipage}[t]{.32\linewidth}\colorbox{NewsPaper}{\parbox{\dimexpr\linewidth-2\fboxsep}{\sffamily\bfseries Budget first\par\normalfont\rmfamily\small\raggedright Start with Madrid, then Zurich and Dublin.}}\end{minipage}\hfill
+\begin{minipage}[t]{.32\linewidth}\colorbox{NewsPaper}{\parbox{\dimexpr\linewidth-2\fboxsep}{\sffamily\bfseries Getting around first\par\normalfont\rmfamily\small\raggedright Start with Zurich, then Madrid and Oslo.}}\end{minipage}\par\smallskip
+}
 \label{news-end}
 \clearpage
 \phantomsection\addcontentsline{toc}{section}{References}
 \begin{thebibliography}{99}
-\raggedright\footnotesize
+\raggedright\small
 \setlength{\parskip}{0pt}\setlength{\itemsep}{-2pt}\setlength{\parsep}{0pt}\interlinepenalty=10000
 \bibitem{teamtable} Team-supplied sixteen-city indicator table, November 2026.
 \bibitem{saaty} T. L. Saaty, ``The analytic hierarchy process,'' \textit{Mathematical Modelling} 9(3--5), 161--176 (1987). \url{https://doi.org/10.1016/0270-0255(87)90473-8}.

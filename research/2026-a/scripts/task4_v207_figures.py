@@ -576,3 +576,61 @@ def gate_revision():
 
 if __name__ == '__main__' and 'gate' in __import__('sys').argv:
     print(gate_revision())
+
+
+def news_podium():
+    from matplotlib.patches import FancyBboxPatch
+    W, H = 4.2, 1.55
+    fig = plt.figure(figsize=(W, H)); ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, W); ax.set_ylim(0, H); ax.axis('off')
+    podium = [('Madrid', 2, 63.3, 'Best value', '#e0a800', .62), ('Zurich', 1, 65.2, 'Best all-round', '#d52b1e', .8),
+              ('Singapore', 3, 62.5, 'Safest streets', '#ef3340', .5)]
+    for k, (c, r, sc, tag, col, h) in enumerate(podium):
+        w = 1.25; x = .1 + k * (w + .12)
+        ax.add_patch(FancyBboxPatch((x, .05), w, h, boxstyle='round,pad=0,rounding_size=.05', fc=col, ec='none'))
+        ax.text(x + w / 2, .05 + h - .17, str(r), ha='center', va='center', fontsize=14, weight='bold', color='white')
+        ax.text(x + w / 2, .05 + h - .37, f'{sc:.1f} points', ha='center', va='center', fontsize=9, color='white', weight='bold')
+        if h > .6:
+            ax.text(x + w / 2, .15, tag, ha='center', va='center', fontsize=9, color='white', style='italic')
+        else:
+            ax.text(x + w / 2, .05 + h + .48, tag, ha='center', va='center', fontsize=9, color=MUTED, style='italic')
+        flag(ax, COUNTRY[c], x + w / 2 - .18, .05 + h + .06, .36, .24)
+        ax.text(x + w / 2, .05 + h + (.62 if h > .7 else .33 + .32), c, ha='center', va='center', fontsize=11, weight='bold', color=INK) if False else None
+        ax.text(x + w / 2 + (0 if h > .7 else 0), .05 + h + .42 if h > .7 else .05 + h + .42, c if h > .6 else '', ha='center', va='center', fontsize=11, weight='bold', color=INK)
+        if h <= .6:
+            ax.text(x + w / 2, .05 + h + .72, c, ha='center', va='center', fontsize=11, weight='bold', color=INK)
+    fig.savefig(FIG / 'news_podium.pdf'); plt.close(fig)
+
+
+if __name__ == '__main__' and 'podium' in __import__('sys').argv:
+    news_podium()
+
+
+def news_glance(main):
+    cats = [c for c, _ in CATEGORIES]
+    m = main.set_index('city')
+    cities = [('Zurich', '#d52b1e'), ('Madrid', '#e0a800'), ('Singapore', '#ef3340')]
+    W, H = 5.6, 1.5
+    fig, axes = plt.subplots(1, 5, figsize=(W, H), sharey=True)
+    fig.subplots_adjust(left=.19, right=.99, top=.80, bottom=.08, wspace=.12)
+    for ax, cat in zip(axes, cats):
+        for i, (c, col) in enumerate(cities):
+            v = float(m.loc[c, cat])
+            ax.barh(i, v, height=.62, color=col, alpha=.95 if c != 'Singapore' else .7)
+            ax.text(v + .02, i, f'{v:.2f}', va='center', fontsize=9, color=INK)
+        ax.set_xlim(0, 1.05); ax.set_ylim(2.5, -.5); ax.set_xticks([])
+        for sp in ax.spines.values():
+            sp.set_visible(False)
+        ax.axvline(0, color=MUTED, lw=.8); ax.tick_params(axis='y', length=0)
+        ax.set_title(CAT_SHORT[cat], fontsize=9.5, weight='bold', color=INK)
+    axes[0].set_yticks(range(3)); axes[0].set_yticklabels([c for c, _ in cities], fontsize=9.5)
+    axes[0].tick_params(axis='y', length=0, pad=24)
+    pos = axes[0].get_position(); fw, fh = fig.get_size_inches()
+    for i, (c, _) in enumerate(cities):
+        ya = pos.y0 + pos.height * (2.5 - i) / 3.0
+        fa = fig.add_axes([pos.x0 - .045, ya - .045, .035, .09]); fa.set_xlim(0, 1); fa.set_ylim(0, 1); fa.axis('off')
+        flag(fa, COUNTRY[c], 0, .2, 1, .6)
+    fig.savefig(FIG / 'news_glance.pdf'); plt.close(fig)
+
+
+if __name__ == '__main__' and 'glance' in __import__('sys').argv:
+    news_glance(data()[4])
