@@ -13,7 +13,8 @@ from task4_user_v205_revision import revised_bounds
 from task4_v207_ahp import ahp_weights, CATEGORIES, OUT as RES, bounds, PTR_FILL, PTR_MEDIAN_FILL, TRAVEL_FILL
 from matplotlib.patches import Polygon
 from audit_task4_v203 import raw_map
-from task4_v207_flags import flag, COUNTRY
+from task4_v207_flags import flag, COUNTRY, flag_bar
+COUNTRY_CODE = COUNTRY
 
 FIG = ROOT.parents[2] / 'HiMCM-Overleaf/figures'
 PROXY = {(c, 'upper_secondary_ptr') for c in list(PTR_FILL) + PTR_MEDIAN_FILL} | {(c, 'travel') for c in TRAVEL_FILL}
@@ -165,8 +166,12 @@ def future(f, lo, hi, w, main):
         for y_, (c, v) in enumerate(b6.items()):
             ax.text(36.5, y_, f'{y_ + 1}', va='center', ha='right', fontsize=10, color=INK, weight='bold')
             flag(ax, COUNTRY[c], 37.5, y_ + .27, 3.3, -.54)  # y axis is inverted
-            ax.barh(y_, v - 40, left=O, height=.72, color=pal.get(c, '#c4c3bd'))
-            ax.text(O + .8, y_, c, va='center', ha='left', fontsize=9, color='white', weight='bold')
+            fw_, fh_ = fig.get_size_inches(); ps = ax.get_position()
+            ux_, uy_ = ps.width * fw_ / (80.5 - 33), ps.height * fh_ / (top + .2)
+            flag_bar(ax, COUNTRY_CODE[c], O, v - 40, y_ - .36, .72, ux_, uy_)
+            tt = ax.text(O + (1.9 * .72 * uy_ / ux_ if COUNTRY_CODE[c] in ('CH', 'SG') else .8), y_, c, va='center', ha='left',
+                         fontsize=9, color='white', weight='bold', zorder=7)
+            tt.set_path_effects([__import__('matplotlib.patheffects', fromlist=['x']).withStroke(linewidth=2.2, foreground='#333333')])
             ax.text(O + v - 40 + .5, y_, f'{v:.1f}', va='center', ha='left', fontsize=9.5, color=INK, weight='bold')
             if k != 'today':
                 d = v - p.loc[c, 'today']

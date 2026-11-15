@@ -94,3 +94,33 @@ def _draw(ax, code, x, y, w, h):
             _rect(ax, x, y + h / 2 - th / 2, w, th, col, 8)
             _rect(ax, x + w / 2 - th * w / h / 1.5 / 2, y, th * w / h / 1.5, h, col, 8)
     ax.add_patch(Rectangle((x, y), w, h, fill=False, edgecolor='#9c9b95', lw=.4, zorder=9))
+
+
+def flag_bar(ax, code, x0, w, y_top, h, ux, uy):
+    """Fill a bar (data coords, y_top = visually upper edge on an inverted axis) with a flag pattern.
+
+    ux, uy are inches per data unit, so crosses and crescents keep their shape on long bars.
+    """
+    from matplotlib.patches import Ellipse
+    R = lambda xx, yy, ww, hh, col, z=3: ax.add_patch(Rectangle((xx, yy), ww, hh, facecolor=col, edgecolor='none', zorder=z))
+    third = lambda cols: [R(x0 + w * i / 3, y_top, w / 3, h, c) for i, c in enumerate(cols)]
+    hin = abs(h) * uy
+    if code == 'CH':
+        R(x0, y_top, w, h, '#d52b1e'); arm, bar = .55 * hin, .18 * hin
+        cx, cy = x0 + .9 * hin / ux, y_top + h / 2
+        R(cx - bar / ux / 2, cy - arm / uy / 2, bar / ux, arm / uy, 'white', 4)
+        R(cx - arm / ux / 2, cy - bar / uy / 2, arm / ux, bar / uy, 'white', 4)
+    elif code == 'ES':
+        R(x0, y_top, w, h, '#aa151b'); R(x0, y_top + h / 4, w, h / 2, '#f1bf00', 4)
+    elif code == 'SG':
+        R(x0, y_top, w, h / 2, '#ef3340'); R(x0, y_top + h / 2, w, h / 2, 'white')
+        ax.add_patch(Rectangle((x0, y_top), w, h, fill=False, edgecolor='#ef3340', lw=.6, zorder=5))
+        r = .17 * hin; cx, cy = x0 + 1.6 * r / ux, y_top + h / 4
+        ax.add_patch(Ellipse((cx, cy), 2 * r / ux, 2 * r / uy, color='white', zorder=4))
+        ax.add_patch(Ellipse((cx + .45 * r / ux, cy), 2 * r / ux, 2 * r / uy, color='#ef3340', zorder=4))
+    elif code == 'IT': third(['#009246', '#f4f5f0', '#ce2b37'])
+    elif code == 'IE': third(['#169b62', '#f4f5f0', '#ff883e'])
+    elif code == 'FR': third(['#002395', '#f4f5f0', '#ed2939'])
+    else:
+        R(x0, y_top, w, h, '#c4c3bd')
+    ax.add_patch(Rectangle((x0, y_top), w, h, fill=False, edgecolor='#9c9b95', lw=.5, zorder=6))
