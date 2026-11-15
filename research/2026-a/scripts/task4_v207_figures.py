@@ -405,7 +405,8 @@ if __name__ == '__main__' and 'workflow' in __import__('sys').argv:
 def weight_sensitivity():
     f, lo, hi = bounds(); w, _ = ahp_weights(); mid = (lo + hi) / 2; cities = f.city.tolist()
     ms = np.exp(np.linspace(np.log(.25), np.log(4), 41))
-    hl = {'Zurich': SERIES[0], 'Madrid': SERIES[1], 'Singapore': SERIES[2], 'Milan': SERIES[3]}
+    hl = {'Zurich': '#d52b1e', 'Madrid': '#e0a800', 'Singapore': '#f08080', 'Milan': '#009246'}  # flag colours
+    ls_ = {'Singapore': (0, (3, 1.5))}
     fig, axes = plt.subplots(1, 5, figsize=(6.5, 2.55), sharey=True)
     fig.subplots_adjust(left=.075, right=.99, top=.80, bottom=.24, wspace=.10)
     rows = []
@@ -420,12 +421,12 @@ def weight_sensitivity():
                 continue
             ax.plot(ms, S[:, k], color='#d6d5cf', lw=.8)
         for c, col in hl.items():
-            ax.plot(ms, S[:, cities.index(c)], color=col, lw=1.8)
+            ax.plot(ms, S[:, cities.index(c)], color=col, lw=1.8, ls=ls_.get(c, '-'))
         lead = [cities[i] for i in S.argmax(1)]
         sw = [m for m, a, b in zip(ms[1:], lead[:-1], lead[1:]) if a != b]
         for m in sw:
             ax.axvline(m, color=MUTED, lw=.7, ls=(0, (2, 2)))
-            ax.text(m * 1.05, 69.2, f'×{m:.1f}', fontsize=9, color=MUTED, va='top')
+            ax.text(m / 1.06, 69.2, f'×{m:.1f}', fontsize=9, color=MUTED, va='top', ha='right')
         rows.append(dict(category=name, leader_switch=[round(float(m), 2) for m in sw], leaders=sorted(set(lead))))
         ax.axvline(1, color=INK, lw=.6)
         ax.set_xscale('log'); ax.set_xticks([.25, 1, 4]); ax.set_xticklabels(['¼', '1', '4'])
@@ -441,7 +442,7 @@ def weight_sensitivity():
     lg.set_xlim(0, lw_in); lg.set_ylim(0, lh_in)  # inches, so flags keep their shape
     for k, (c, col) in enumerate(hl.items()):
         x = k * lw_in / 4
-        lg.plot([x + .1, x + .32], [lh_in / 2] * 2, color=col, lw=1.8)
+        lg.plot([x + .1, x + .32], [lh_in / 2] * 2, color=col, lw=1.8, ls=ls_.get(c, '-'))
         flag(lg, COUNTRY[c], x + .4, lh_in / 2 - .06, .18, .12)
         lg.text(x + .64, lh_in / 2, c, va='center', fontsize=9, color=INK)
     fig.savefig(FIG / 'weight_sensitivity.pdf'); plt.close(fig)
