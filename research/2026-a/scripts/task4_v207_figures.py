@@ -580,12 +580,12 @@ if __name__ == '__main__' and 'gate' in __import__('sys').argv:
 
 def news_podium():
     from matplotlib.patches import FancyBboxPatch
-    W, H = 4.2, 1.55
+    W, H = 3.14, 1.42  # column width of the news spread (TT 11-15 magazine layout)
     fig = plt.figure(figsize=(W, H)); ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, W); ax.set_ylim(0, H); ax.axis('off')
     podium = [('Madrid', 2, 63.3, 'Best value', '#e0a800', .62), ('Zurich', 1, 65.2, 'Best all-round', '#d52b1e', .8),
               ('Singapore', 3, 62.5, 'Safest streets', '#ef3340', .5)]
     for k, (c, r, sc, tag, col, h) in enumerate(podium):
-        w = 1.25; x = .1 + k * (w + .12)
+        w = .94; x = .06 + k * (w + .09)
         ax.add_patch(FancyBboxPatch((x, .05), w, h, boxstyle='round,pad=0,rounding_size=.05', fc=col, ec='none'))
         ax.text(x + w / 2, .05 + h - .17, str(r), ha='center', va='center', fontsize=14, weight='bold', color='white')
         ax.text(x + w / 2, .05 + h - .37, f'{sc:.1f} points', ha='center', va='center', fontsize=9, color='white', weight='bold')
@@ -609,9 +609,9 @@ def news_glance(main):
     cats = [c for c, _ in CATEGORIES]
     m = main.set_index('city')
     cities = [('Zurich', '#d52b1e'), ('Madrid', '#e0a800'), ('Singapore', '#ef3340')]
-    W, H = 5.6, 1.5
+    W, H = 5.6, 1.3
     fig, axes = plt.subplots(1, 5, figsize=(W, H), sharey=True)
-    fig.subplots_adjust(left=.19, right=.99, top=.80, bottom=.08, wspace=.12)
+    fig.subplots_adjust(left=.19, right=.99, top=.78, bottom=.08, wspace=.12)
     for ax, cat in zip(axes, cats):
         for i, (c, col) in enumerate(cities):
             v = float(m.loc[c, cat])
