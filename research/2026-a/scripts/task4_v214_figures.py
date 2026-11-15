@@ -220,7 +220,7 @@ def heatmap(f, lo, hi, main):
     cb = fig.colorbar(plt.cm.ScalarMappable(cmap=SPECTRUM, norm=plt.Normalize(0, 1)), cax=cax, orientation='horizontal')
     cb.outline.set_visible(False); cb.set_ticks([0, .5, 1]); cb.ax.set_xticklabels(['0 worst', '0.5 at anchor', '1 best'], fontsize=9)
     cb.ax.tick_params(length=0, pad=2)
-    fig.text(.985, .024, 'Cells: midpoint utility; single gaps median-filled', fontsize=9, color=MUTED, va='center', ha='right')
+    fig.text(.985, .024, 'Cells: utility, 0 worst to 1 best', fontsize=9, color=MUTED, va='center', ha='right')
     fig.savefig(FIG / 'indicator_compare.pdf'); plt.close(fig)
 
 
@@ -231,7 +231,7 @@ def raw_multiples(f):
     best, worst = 8, 4
     fig, axes = plt.subplots(2, 3, figsize=(6.5, 5.2))
     fig.subplots_adjust(left=.01, right=.99, top=.947, bottom=.015, wspace=.06, hspace=.14)
-    fig.text(.01, .978, 'Best eight and worst four cities per indicator (rank among the cities with a record). Green: best three   Red: worst four',
+    fig.text(.01, .978, f'Best eight and worst four of the {len(df)} cities per indicator.   Green: best three   Red: worst four',
              fontsize=9, color=MUTED, va='center')
     for ax, (col, title, benefit, fmt) in zip(axes.ravel(), F.RAW):
         v = df[col].astype(float).dropna().sort_values(ascending=not benefit)  # best first
