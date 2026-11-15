@@ -65,6 +65,8 @@ def _band(ax, x0, y0, x1, y1, th, col):
 def flag(ax, code, x, y, w, h, clip=True):
     """Draw flag `code` with lower-left corner (x, y) and size (w, h) in data units."""
     n0 = len(ax.patches)
+    if h > 0 and ax.yaxis_inverted():  # keep flags upright on inverted y axes
+        y, h = y + h, -h
     _draw(ax, code, x, y, w, h)
     if not clip:
         for patch in ax.patches[n0:]:
