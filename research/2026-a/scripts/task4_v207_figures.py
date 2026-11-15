@@ -349,23 +349,63 @@ def robustness_fig(main):
     ax = fig.add_subplot(gs[1])
     ks = ['20', '100', '500']
     names = ['Zurich', 'Madrid', 'Singapore']
+    import matplotlib.patheffects as pe
+    from matplotlib.patches import Ellipse
+    ax.set_yticks(range(3)); ax.set_yticklabels([f'κ = {k}' for k in ks]); ax.set_ylim(2.5, -.5)
+    ax.set_xlim(0, 100); ax.set_xticks([0, 50, 100]); ax.set_xticklabels(['0', '50%', '100%'])
+    fw, fh = fig.get_size_inches(); pos = ax.get_position()
+    ux, uy = pos.width * fw / 100, pos.height * fh / 3.0  # inches per data unit
+    H = .6
+
+    def seg(c, x0, w, y):
+        top, bot = y - H / 2, y + H / 2  # y axis inverted: top has the smaller value
+        R = lambda xx, yy, ww, hh, col, z=3: ax.add_patch(Rectangle((xx, yy), ww, hh, facecolor=col, edgecolor='none', zorder=z))
+        if c == 'Zurich':
+            R(x0, top, w, H, '#d52b1e')
+            hin = H * uy; arm, bar = .55 * hin, .18 * hin
+            if w * ux > 1.3 * hin:
+                cx = x0 + min(w / 4, 1.2 * hin / ux)
+                R(cx - bar / ux / 2, y - arm / uy / 2, bar / ux, arm / uy, 'white', 4)
+                R(cx - arm / ux / 2, y - bar / uy / 2, arm / ux, bar / uy, 'white', 4)
+        elif c == 'Madrid':
+            R(x0, top, w, H, '#aa151b'); R(x0, top + H / 4, w, H / 2, '#f1bf00', 4)
+        elif c == 'Singapore':
+            R(x0, top, w, H / 2, '#ef3340'); R(x0, y, w, H / 2, 'white')
+            ax.add_patch(Rectangle((x0, top), w, H, fill=False, edgecolor='#ef3340', lw=.6, zorder=5))
+            r = .17 * H * uy  # crescent radius in inches
+            if w * ux > 3 * r:
+                cx, cy = x0 + 1.6 * r / ux, top + H / 4
+                ax.add_patch(Ellipse((cx, cy), 2 * r / ux, 2 * r / uy, color='white', zorder=4))
+                ax.add_patch(Ellipse((cx + .45 * r / ux, cy), 2 * r / ux, 2 * r / uy, color='#ef3340', zorder=4))
+        else:
+            R(x0, top, w, H, '#c4c3bd')
     left = np.zeros(3)
     for k, c in enumerate(names + ['Other']):
         vals = np.array([100 * (s['dirichlet'][kk]['first'].get(c, 0) if c != 'Other' else
                                 1 - sum(s['dirichlet'][kk]['first'].get(n, 0) for n in names)) for kk in ks])
-        ax.barh(range(3), vals, left=left, height=.6, color=(SERIES + ['#c4c3bd'])[k] if k < 3 else '#c4c3bd', label=c)
         for j, v in enumerate(vals):
+            if v > 0:
+                seg(c, left[j], v, j)
             if v > 8:
-                ax.text(left[j] + v / 2, j, f'{v:.0f}%', ha='center', va='center', fontsize=9, color='white', weight='bold')
+                t = ax.text(left[j] + v / 2 + (v / 8 if c == 'Zurich' else 0), j, f'{v:.0f}%', ha='center', va='center', fontsize=9,
+                            color='white', weight='bold', zorder=6)
+                t.set_path_effects([pe.withStroke(linewidth=2.2, foreground='#333333')])
         left += vals
-    ax.set_yticks(range(3)); ax.set_yticklabels([f'κ = {k}' for k in ks]); ax.set_ylim(2.5, -.5)
-    ax.set_xlim(0, 100); ax.set_xticks([0, 50, 100]); ax.set_xticklabels(['0', '50%', '100%'])
     ax.tick_params(length=0)
     for sp in ['top', 'right', 'left']:
         ax.spines[sp].set_visible(False)
     ax.set_xlabel('Share of weight draws ranked first')
     ax.set_title('B   Random AHP weights', loc='left', fontsize=10.5, weight='bold')
-    ax.legend(loc='upper left', bbox_to_anchor=(-.02, -.2), ncol=2, frameon=False, fontsize=9, handlelength=1, columnspacing=.8, handletextpad=.3)
+    lg = fig.add_axes([pos.x0, .01, pos.width, .12]); lg.axis('off')
+    lw_in, lh_in = pos.width * fw, .12 * fh
+    lg.set_xlim(0, lw_in); lg.set_ylim(0, lh_in)
+    for k, c in enumerate(names + ['Other']):
+        x, yy = (k % 2) * lw_in / 2, lh_in * (.72 if k < 2 else .25)
+        if c == 'Other':
+            lg.add_patch(Rectangle((x, yy - .06), .18, .12, color='#c4c3bd'))
+        else:
+            flag(lg, COUNTRY[c], x, yy - .06, .18, .12)
+        lg.text(x + .25, yy, c, va='center', fontsize=9, color=INK)
     fig.savefig(FIG / 'robustness.pdf'); plt.close(fig)
 
 
