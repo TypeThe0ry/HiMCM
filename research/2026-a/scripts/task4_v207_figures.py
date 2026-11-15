@@ -535,23 +535,41 @@ def gate_revision():
     feas = [c for c in order if not fail[c]]
     (RES / 'gate_revision.json').write_text(json.dumps(dict(gates=[(k, t) for k, _, t in GATES], excluded={c: v for c, v in fail.items() if v},
                                                             feasible_order=feas, scores={c: round(float(s[cities.index(c)]), 2) for c in order}), indent=1))
-    fig, ax = plt.subplots(figsize=(6.5, 3.9))
-    fig.subplots_adjust(left=.02, right=.98, top=.9, bottom=.02)
-    ax.set_xlim(0, 10); ax.set_ylim(16.8, -.6); ax.axis('off')
-    ax.text(1.6, -.45, 'Baseline AHP-TOPSIS', fontsize=10.5, weight='bold', ha='center')
-    ax.text(7.2, -.45, 'After must-have thresholds', fontsize=10.5, weight='bold', ha='center')
+    from matplotlib.patches import FancyBboxPatch
+    short = {'homicide > 3 per 100,000': 'homicide {v:.2f}>3', 'PM2.5 > 25 µg/m³': 'PM2.5 {v:.1f}>25',
+             'house price/income > 20': 'price/income {v:.1f}>20'}
+    key = {'homicide > 3 per 100,000': 'homicide', 'PM2.5 > 25 µg/m³': 'pm25', 'house price/income > 20': 'pir'}
+    W, Hh = 6.5, 4.6
+    fig, ax = plt.subplots(figsize=(W, Hh))
+    fig.subplots_adjust(left=.01, right=.99, top=.93, bottom=.01)
+    ax.set_xlim(0, W * .98); ax.set_ylim(16.3, -.9); ax.axis('off')
+    uy = .92 * Hh / 17.2  # inches per row unit
+    ax.text(.05, -.55, 'Baseline rank', fontsize=9.5, weight='bold', color=INK)
+    ax.text(2.35, -.55, 'Representative score', fontsize=9.5, weight='bold', color=INK)
+    ax.text(4.75, -.55, 'New rank after thresholds', fontsize=9.5, weight='bold', color=INK)
+    smin, smax = 50, 66
     for i, c in enumerate(order):
-        y = i + .5; col = SERIES[0] if c in ('Zurich', 'Madrid') else INK
-        flag(ax, COUNTRY[c], .1, y + .22, .32, -.44)
-        ax.text(.55, y, f'{i + 1:>2}  {c}', va='center', fontsize=9.5, color=INK if not fail[c] else MUTED)
-        ax.text(3.0, y, f'{s[cities.index(c)]:.1f}', va='center', ha='right', fontsize=9, color=MUTED)
-        if fail[c]:
-            ax.text(3.4, y, 'excluded: ' + ', '.join(fail[c]), va='center', fontsize=9, color='#c0392b')
+        y = i + .5; sc = s[cities.index(c)]; out = bool(fail[c])
+        if i % 2 == 0:
+            ax.add_patch(Rectangle((0, i + .02), W * .98, .96, color='#f6f5f2', lw=0, zorder=0))
+        col = MUTED if out else INK
+        ax.text(.32, y, f'{i + 1}', ha='right', va='center', fontsize=9.5, color=col)
+        fh_ = .14 / uy; flag(ax, COUNTRY[c], .42, y + fh_ / 2, .21, -fh_)  # 0.3 x 0.2 in; y axis inverted
+        ax.text(.75, y, c, va='center', fontsize=9.5, color=col)
+        x0, x1 = 2.35, 4.35; bw = (sc - smin) / (smax - smin) * (x1 - x0)
+        ax.add_patch(Rectangle((x0, y - .28), bw, .56, color='#c4c3bd' if out else ('#d52b1e' if c == 'Zurich' else '#e0a800' if c == 'Madrid' else '#8cc5d6'), lw=0))
+        ax.text(x0 + bw + .05, y, f'{sc:.1f}', va='center', fontsize=9, color=col)
+        if out:
+            lab = short[fail[c][0]].format(v=vals[key[fail[c][0]]][c])
+            ax.add_patch(FancyBboxPatch((4.75, y - .3), 1.6, .6, boxstyle='round,pad=0,rounding_size=.12', fc='#fbe3e1', ec='#e34948', lw=.8))
+            ax.text(4.75 + .8, y, 'out: ' + lab, ha='center', va='center', fontsize=9, color='#a5281f')
         else:
             j = feas.index(c)
-            ax.plot([3.25, 6.0], [y, j + .5], color='#b9b8b2' if c not in ('Zurich', 'Madrid') else SERIES[0], lw=.9 if c not in ('Zurich', 'Madrid') else 1.6)
-            flag(ax, COUNTRY[c], 6.15, j + .5 + .22, .32, -.44)
-            ax.text(6.6, j + .5, f'{j + 1:>2}  {c}', va='center', fontsize=9.5, color=INK, weight='bold' if j < 2 else 'normal')
+            from matplotlib.patches import Ellipse
+            ax.add_patch(Ellipse((4.95, y), .2, .2 / uy, color=('#d52b1e' if c == 'Zurich' else '#e0a800' if c == 'Madrid' else '#3f88c0')))
+            ax.text(4.95, y, str(j + 1), ha='center', va='center', fontsize=9, color='white', weight='bold')
+            mv = (i + 1) - (j + 1)
+            ax.text(5.25, y, ('same rank' if mv == 0 else f'up {mv}'), va='center', fontsize=9, color=MUTED)
     fig.savefig(FIG / 'gate_revision.pdf'); plt.close(fig)
     return fail, feas
 
